@@ -1,0 +1,62 @@
+---
+title: DocumentSharingLocations (SOAP)
+manager: sethgros
+ms.date: 09/17/2015
+ms.audience: Developer
+ms.topic: reference
+localization_priority: Normal
+ms.assetid: 394f6015-721b-4800-9286-039d430f09b3
+description: Das DocumentSharingLocations-Element enthält eine Liste von Standort und Metadateninformationen für ein Dokument sharing-Location.
+ms.openlocfilehash: 72d1ae9f01ad45441b4e255f2fb6353be2dc8d28
+ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 06/15/2018
+ms.locfileid: "19758086"
+---
+# <a name="documentsharinglocations-soap"></a><span data-ttu-id="4bded-103">DocumentSharingLocations (SOAP)</span><span class="sxs-lookup"><span data-stu-id="4bded-103">DocumentSharingLocations (SOAP)</span></span>
+
+<span data-ttu-id="4bded-104">Das **DocumentSharingLocations** -Element enthält eine Liste von Standort und Metadateninformationen für ein Dokument sharing-Location.</span><span class="sxs-lookup"><span data-stu-id="4bded-104">The **DocumentSharingLocations** element contains a list of location and metadata information for a document sharing location.</span></span> 
+  
+```XML
+<DocumentSharingLocations>
+   <DocumentSharingLocation />
+</DocumentSharingLocations>
+```
+
+ <span data-ttu-id="4bded-105">**DocumentSharingLocations**</span><span class="sxs-lookup"><span data-stu-id="4bded-105">**DocumentSharingLocations**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="4bded-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="4bded-106">Attributes and elements</span></span>
+
+<span data-ttu-id="4bded-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="4bded-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+  
+### <a name="attributes"></a><span data-ttu-id="4bded-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="4bded-108">Attributes</span></span>
+
+<span data-ttu-id="4bded-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="4bded-109">None.</span></span>
+  
+### <a name="child-elements"></a><span data-ttu-id="4bded-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="4bded-110">Child elements</span></span>
+
+|<span data-ttu-id="4bded-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="4bded-111">**Element**</span></span>|<span data-ttu-id="4bded-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="4bded-112">**Description**</span></span>|
+|:-----|:-----|
+|[<span data-ttu-id="4bded-113">DocumentSharingLocation (SOAP)</span><span class="sxs-lookup"><span data-stu-id="4bded-113">DocumentSharingLocation (SOAP)</span></span>](documentsharinglocation-soap.md) <br/> |<span data-ttu-id="4bded-114">Enthält den Speicherort und die Metadaten für ein Dokument sharing-Location.</span><span class="sxs-lookup"><span data-stu-id="4bded-114">Contains the location and metadata for a document sharing location.</span></span>  <br/> |
+   
+### <a name="parent-elements"></a><span data-ttu-id="4bded-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="4bded-115">Parent elements</span></span>
+
+|<span data-ttu-id="4bded-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="4bded-116">**Element**</span></span>|<span data-ttu-id="4bded-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="4bded-117">**Description**</span></span>|
+|:-----|:-----|
+|[<span data-ttu-id="4bded-118">DocumentSharingLocationCollectionSetting (SOAP)</span><span class="sxs-lookup"><span data-stu-id="4bded-118">DocumentSharingLocationCollectionSetting (SOAP)</span></span>](documentsharinglocationcollectionsetting-soap.md) <br/> |<span data-ttu-id="4bded-119">Stellt einen Benutzer festlegen, d. h. eine Auflistung von Speicherorten und Metadaten Freigabe Dokumentation dar.</span><span class="sxs-lookup"><span data-stu-id="4bded-119">Represents a user setting that is a collection of documentation sharing locations and metadata.</span></span>  <br/> |
+   
+## <a name="element-information"></a><span data-ttu-id="4bded-120">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="4bded-120">Element information</span></span>
+
+|||
+|:-----|:-----|
+|<span data-ttu-id="4bded-121">Namespace</span><span class="sxs-lookup"><span data-stu-id="4bded-121">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="4bded-122">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="4bded-122">Schema Name</span></span>  <br/> |<span data-ttu-id="4bded-123">AutoErmittlung-schema</span><span class="sxs-lookup"><span data-stu-id="4bded-123">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="4bded-124">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="4bded-124">Validation File</span></span>  <br/> |<span data-ttu-id="4bded-125">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="4bded-125">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="4bded-126">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="4bded-126">Can be Empty</span></span>  <br/> |<span data-ttu-id="4bded-127">True</span><span class="sxs-lookup"><span data-stu-id="4bded-127">True</span></span>  <br/> |
+   
+## <a name="see-also"></a><span data-ttu-id="4bded-128">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4bded-128">See also</span></span>
+
+- [<span data-ttu-id="4bded-129">GetUserSettings-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="4bded-129">GetUserSettings operation (SOAP)</span></span>](getusersettings-operation-soap.md)
+- [<span data-ttu-id="4bded-130">AutoErmittlung Webdienstverweis für Exchange</span><span class="sxs-lookup"><span data-stu-id="4bded-130">Autodiscover web service reference for Exchange</span></span>](autodiscover-web-service-reference-for-exchange.md)
+- [<span data-ttu-id="4bded-131">SOAP-Autodiscover XML-Elemente für Exchange 2013</span><span class="sxs-lookup"><span data-stu-id="4bded-131">SOAP Autodiscover XML elements for Exchange 2013</span></span>](soap-autodiscover-xml-elements-for-exchange-2013.md)
+
