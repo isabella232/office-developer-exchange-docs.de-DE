@@ -1,26 +1,30 @@
 ---
-title: IsExternalMailbox
+title: UmEnabled
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
-ms.assetid: 5cc83174-e684-42c8-b72a-f82d3de3bb2f
-description: Das IsExternalMailbox -Element gibt an, ob das Postfach befindet sich außerhalb des Unternehmens.
-ms.openlocfilehash: cf9f71e9b955cffd1bebefd5f23acba66ba1b894
+api_name:
+- UmEnabled
+api_type:
+- schema
+ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
+description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
+ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/15/2018
-ms.locfileid: "19830010"
+ms.locfileid: "19839281"
 ---
-# <a name="isexternalmailbox"></a>IsExternalMailbox
+# <a name="umenabled"></a>UmEnabled
 
-Das **IsExternalMailbox** -Element gibt an, ob das Postfach befindet sich außerhalb des Unternehmens. 
+Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
   
 ```XML
-<IsExternalMailbox>true | false</IsExternalMailbox>
+<UmEnabled>true | false</UmEnabled>
 ```
 
  **Boolean**
@@ -38,15 +42,17 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[SearchableMailbox](searchablemailbox.md)
-  
+|**Element**|**Beschreibung**|
+|:-----|:-----|
+|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
+   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **IsExternalMailbox** -Element gibt an, dass das Postfach in einer externen Organisation ist. Der Wert **false** gibt an, dass das Postfach in der Organisation ist. 
+Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element wurde in Exchange Server 2013 eingeführt.
+Dieses Element ist erforderlich.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -57,7 +63,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

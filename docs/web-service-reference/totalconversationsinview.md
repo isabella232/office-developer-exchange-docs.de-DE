@@ -1,35 +1,29 @@
 ---
-title: GetUserRetentionPolicyTagsResponseMessage
+title: TotalConversationsInView
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
-ms.assetid: 9991d6e0-8c31-4e73-8af3-da4298474b66
-description: Das GetUserRetentionPolicyTagsResponseMessage-Element gibt die Antwortnachricht für eine Anforderung GetUserRetentionPolicyTags.
-ms.openlocfilehash: db73cb7f1922d845c9565753ff8d4917b82b1259
+ms.assetid: fc82c00b-979c-4d1b-a5ca-7268dbce634a
+description: Das TotalConversationsInView-Element enthält die Anzahl der Unterhaltungen in einer Antwort FindConversation zurückgegeben.
+ms.openlocfilehash: de04c50fab929e590fe4b55472a1d2fa8305c596
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/15/2018
-ms.locfileid: "19829701"
+ms.locfileid: "19839244"
 ---
-# <a name="getuserretentionpolicytagsresponsemessage"></a>GetUserRetentionPolicyTagsResponseMessage
+# <a name="totalconversationsinview"></a>TotalConversationsInView
 
-Das **GetUserRetentionPolicyTagsResponseMessage** -Element gibt die Antwortnachricht für eine Anforderung **GetUserRetentionPolicyTags** . 
+Das **TotalConversationsInView** -Element enthält die Anzahl der Unterhaltungen in einer Antwort **FindConversation** zurückgegeben. 
   
 ```XML
-<GetUserRetentionPolicyTagsResponseMessage>
-   <MessageText/>
-   <ResponseCode/>
-   <DescriptiveLinkKey/>
-   <MessageXml/>
-   <RetentionPolicyTags/>
-</GetUserRetentionPolicyTagsResponseMessage>
+<TotalConversationsInView></TotalConversationsInView>
 ```
 
- **GetUserRetentionPolicyTagsResponseMessageType**
+ **int**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -40,11 +34,15 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [RetentionPolicyTags](retentionpolicytags.md)
+Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[ResponseMessages](responsemessages.md)
+[FindConversationResponse](findconversationresponse.md)
+  
+## <a name="text-value"></a>Textwert
+
+Der Textwert des **TotalConversationsInView** -Elements ist die Anzahl der Unterhaltungen in einer Antwort **FindConversation** zurückgegeben. 
   
 ## <a name="remarks"></a>Hinweise
 
@@ -59,6 +57,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
 |Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
-|Kann leer sein  <br/> |false  <br/> |
+|Kann leer sein  <br/> ||
    
 
