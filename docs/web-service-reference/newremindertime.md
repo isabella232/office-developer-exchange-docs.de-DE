@@ -1,33 +1,29 @@
 ---
-title: UmEnabled
+title: NewReminderTime
 manager: sethgros
-ms.date: 09/17/2015
+ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
-api_name:
-- UmEnabled
-api_type:
-- schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: ff1b6b1c-3557-41d4-8aa6-9528fdb3a21a
+description: Das NewReminderTime-Element gibt eine neue Zeit für eine Erinnerung.
+ms.openlocfilehash: 9f3f509942c673c916cc646cd9519240aef6ea06
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19830531"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="newremindertime"></a>NewReminderTime
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **NewReminderTime** -Element gibt eine neue Zeit für eine Erinnerung. 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<NewReminderTime/>
 ```
 
- **Boolean**
+ **string**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,17 +38,15 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|**Element**|**Beschreibung**|
-|:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
-   
+[ReminderItemAction](reminderitemaction.md)
+  
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Der Textwert der **NewReminderTime** -Element ist ein neues Zeitintervall für die Erinnerung. Das **NewReminderTime** -Element wird verwendet, wenn das [ActionType](actiontype-reminderactiontype.md) -Element, um die Erinnerung verzögert **erneut erinnern**, festgelegt ist. Der Wert der **NewReminderTime** muss größer als der durch die [GetReminders Vorgang](getreminders-operation.md)zurückgegebenen [ReminderTime](remindertime.md) sein.
   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
+Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -67,6 +61,9 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
    
 ## <a name="see-also"></a>Siehe auch
 
+
+
+[ReminderItemAction](reminderitemaction.md)
 
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)

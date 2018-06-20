@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: Name (Nachrichtenverfolgung)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,28 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- Name
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: a1669f6d-53f3-4849-9b30-56909aaeac82
+description: Das Name-Element darstellt, der Name der Eigenschaft für eine Nachricht Nachverfolgen der Bericht.
+ms.openlocfilehash: c905df03842de47b2bcbd62897aa9a8cf464cc6d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19830501"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="name-message-tracking"></a>Name (Nachrichtenverfolgung)
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **Name** -Element darstellt, der Name der Eigenschaft für eine Nachricht Nachverfolgen der Bericht. 
   
-```XML
-<UmEnabled>true | false</UmEnabled>
+```xml
+<Name/>
 ```
 
- **Boolean**
+**String**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,17 +45,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
+|[TrackingPropertyType](trackingpropertytype.md) <br/> |Stellt ein Name-Wert-Paar von Zeichenfolgen, die zum Erstellen von Eigenschaften für nachrichtenverfolgungsberichte verwendet wird.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Ein Textwert ist erforderlich, wenn dieses Element verwendet wird.
   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
+Dieses Element kann höchstens einmal im [TrackingPropertyType](trackingpropertytype.md) -Element auftreten. 
   
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -66,8 +67,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
-
-
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: OutOfOffice
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,30 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- OutOfOffice
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: fe1256ab-5c0f-467d-abb3-b38a2dc312ae
+description: Das OutOfOffice-Element darstellt, die Antwortnachricht und einer Zeitdauer für die Response-Nachricht senden.
+ms.openlocfilehash: 4e1e06ee332c44aeba03e1343c8c3258a2c9631e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19830675"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="outofoffice"></a>OutOfOffice
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **OutOfOffice** -Element darstellt, die Antwortnachricht und einer Zeitdauer für die Response-Nachricht senden. 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<OutOfOffice>
+   <ReplyBody/>
+   <Duration/>
+</OutOfOffice>
 ```
 
- **Boolean**
+ **OutOfOfficeMailTip**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -38,22 +41,23 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-Keine.
-  
+|**Element**|**Beschreibung**|
+|:-----|:-----|
+|[ReplyBody](replybody.md) <br/> |Enthält eine Nachricht Out of Office (ABWESEND) und die Sprache für die Nachricht verwendet.  <br/> |
+|[Dauer (' UserOofSettings ')](duration-useroofsettings.md) <br/> |Enthält die Dauer, die der Status ABWESEND aktiviert ist, wenn das Element [OofState](oofstate.md) auf geplante Tasks festgelegt ist.  <br/> |
+   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
+|[E-Mail-Infos](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Infos.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Keine.
   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
-  
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="element-information"></a>Informationen zum Element

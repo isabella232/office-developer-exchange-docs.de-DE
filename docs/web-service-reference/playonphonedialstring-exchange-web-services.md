@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: PlayOnPhoneDialString (Exchange Web Services)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- PlayOnPhoneDialString
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 02b77f6a-042d-49a9-9445-342885c43e99
+description: Das PlayOnPhoneDialString-Element gibt die Wiedergabe über Telefon DFÜ-Zeichenfolge.
+ms.openlocfilehash: 0bc61d6dc32cd0db80599348f1d04c62774954d7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19830827"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="playonphonedialstring-exchange-web-services"></a>PlayOnPhoneDialString (Exchange Web Services)
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **PlayOnPhoneDialString** -Element gibt die Wiedergabe über Telefon DFÜ-Zeichenfolge. 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<PlayOnPhoneDialString/>
 ```
 
- **Boolean**
+ **string**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -48,7 +48,7 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Der Textwert für dieses Element ist die Wiedergabe über Telefon DFÜ-Zeichenfolge.
   
 ## <a name="remarks"></a>Hinweise
 

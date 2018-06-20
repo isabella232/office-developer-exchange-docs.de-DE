@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: Punkt
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,35 +7,39 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- Period
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 2f9cf6af-c531-4d7d-90c9-1a1db504d890
+description: Period-Element definiert die Namen sowie die Uhrzeitoffset und eindeutiger Bezeichner für eine bestimmte Phase der Zeitzone.
+ms.openlocfilehash: 3b5d5877e6d9baffdfe536a0feec3b25b6d2883f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19830726"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="period"></a>Punkt
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+**Period** -Element definiert die Namen sowie die Uhrzeitoffset und eindeutiger Bezeichner für eine bestimmte Phase der Zeitzone. 
   
-```XML
-<UmEnabled>true | false</UmEnabled>
+```xml
+<Period Bias="" Name="" Id=""/>
 ```
 
- **Boolean**
+ **PeriodType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
   
 ### <a name="attributes"></a>Attribute
 
-Keine.
-  
+|**Attribut**|**Beschreibung**|
+|:-----|:-----|
+|Bias  <br/> |Ein Duration-Wert, der den Uhrzeit-Offset für den Zeitraum von koordinierte Weltzeit (UTC) darstellt.  <br/> |
+|Name  <br/> |Ein String-Wert, der den beschreibenden Namen des Zeitraums darstellt.  <br/> |
+|Id  <br/> |Ein String-Wert, der den Bezeichner für den Zeitraum darstellt.  <br/> |
+   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 Keine.
@@ -44,16 +48,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
+|[Perioden](periods.md) <br/> |Stellt ein Array von Zeiträumen, mit die den Uhrzeit-Offset in verschiedenen Phasen der Zeitzone definiert.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Keine.
   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
-  
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="element-information"></a>Informationen zum Element

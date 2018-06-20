@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: SharingEffectiveRights (PermissionReadAccessType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- SharingEffectiveRights
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 808bb4a1-aa2d-48c5-94b3-551b52c348bd
+description: Das SharingEffectiveRights-Element gibt an, die Berechtigungen, die der Benutzer für die Kontaktdaten aufweist, die gemeinsam genutzt wird.
+ms.openlocfilehash: 19e67827dd2dbff6fb70423980d670da5cc257a3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19831486"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="sharingeffectiverights-permissionreadaccesstype"></a>SharingEffectiveRights (PermissionReadAccessType)
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **SharingEffectiveRights** -Element gibt an, die Berechtigungen, die der Benutzer für die Kontaktdaten aufweist, die gemeinsam genutzt wird. 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<SharingEffectiveRights>None | FullDetails</SharingEffectiveRights >
 ```
 
- **Boolean**
+ **PermissionReadAccessType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,16 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Kontakteordner, der in einem Postfach enthalten ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Die folgende Tabelle enthält die möglichen Werte für das **SharingEffectiveRights** -Element. 
   
+**Text-Elementwerte SharingEffectiveRights**
+
+|**Wert**|**Beschreibung**|
+|:-----|:-----|
+|Keine  <br/> |Gibt an, dass der Benutzer nicht über die Berechtigung zum Lesen von Elementen in den Ordner verfügt.  <br/> |
+|FullDetails  <br/> |Gibt an, dass der Benutzer die Berechtigung zum Lesen aller Elemente im Ordner verfügt.  <br/> |
+   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
-  
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="element-information"></a>Informationen zum Element

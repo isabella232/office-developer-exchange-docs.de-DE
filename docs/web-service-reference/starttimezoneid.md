@@ -1,33 +1,30 @@
 ---
-title: UmEnabled
+title: StartTimeZoneId
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
-api_name:
-- UmEnabled
-api_type:
-- schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: f4adfc48-2d51-4d2d-9ddc-b91c3e96cb02
+description: Das StartTimeZoneId-Element gibt die Zeitzone an, in dem eine Besprechung erfolgt.
+ms.openlocfilehash: d131a4cad3076c1ed4044dbcbe49f1dfa4ed5ccf
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19831567"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="starttimezoneid"></a>StartTimeZoneId
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **StartTimeZoneId** -Element gibt die Zeitzone an, in dem eine Besprechung erfolgt. 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<StartTimeZoneId></StartTimeZoneId>
 ```
 
- **Boolean**
+**string**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,17 +39,15 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|**Element**|**Beschreibung**|
-|:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
-   
+[CalendarItem](calendaritem.md) | [MeetingRequest](meetingrequest.md)
+  
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Der Textwert des **StartTimeZoneId** -Elements ist die Zeitzonenbezeichner der Zeitzone, die in der [Start](start.md) -Element verwendet. 
   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
+Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -63,11 +58,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
-|Leer kann sein  <br/> |False  <br/> |
+|Kann leer sein  <br/> ||
    
-## <a name="see-also"></a>Siehe auch
-
-
-
-- [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

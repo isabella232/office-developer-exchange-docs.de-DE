@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: MustDisplayComment
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- MustDisplayComment
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 11d4d3c3-4652-4ed4-9b29-a0b5f85b82b7
+description: Das MustDisplayComment-Element gibt an, ob der Kommentar verwaltete Ordner angezeigt werden muss.
+ms.openlocfilehash: 9a7e6a88b77ff9f1fd82507b8320898c195cd190
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19830502"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="mustdisplaycomment"></a>MustDisplayComment
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **MustDisplayComment** -Element gibt an, ob der Kommentar verwaltete Ordner angezeigt werden muss. 
   
-```XML
-<UmEnabled>true | false</UmEnabled>
+```xml
+<MustDisplayComment/>
 ```
 
  **Boolean**
@@ -44,17 +44,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
+|[ManagedFolderInformation](managedfolderinformation.md) <br/> |Enthält Informationen zu einem verwalteten Ordner.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Der Textwert stellt einen Boolean-Wert. Der Wert **true** gibt an, dass der Kommentar angezeigt werden muss; der Wert **false** gibt an, dass der Kommentar nicht vorhanden ist, angezeigt werden soll. 
   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
-  
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -63,10 +61,13 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
-|Leer kann sein  <br/> |False  <br/> |
+|Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
+
+
+[CreateManagedFolder-Vorgang](createmanagedfolder-operation.md)
 
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)

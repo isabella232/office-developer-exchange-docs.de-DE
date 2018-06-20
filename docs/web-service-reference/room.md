@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: Raum
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,33 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- Room
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: a2cde8b8-2d31-4ebf-8171-f4dfd650d079
+description: Das Element Raum stellt einen Besprechungsraum.
+ms.openlocfilehash: e064a458b5a9265fc9dad63c87c641eaf47d7062
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19831242"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="room"></a>Raum
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das Element **Raum** stellt einen Besprechungsraum. 
+  
+[Chatrooms](rooms.md)
+  
+[Raum](room.md)
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<Room>
+   <Id/>
+</Room>
 ```
 
- **Boolean**
+ **RoomType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -38,22 +44,18 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-Keine.
-  
+|**Element**|**Beschreibung**|
+|:-----|:-----|
+|[ID (EmailAddressType)](id-emailaddresstype.md) <br/> |Ein Bezeichner, der eine e-Mail-Adresse enthält und Anzeigename, der dem Besprechungsraum darstellt.  <br/> |
+   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
+|[Chatrooms](rooms.md) <br/> |Definiert eine Liste von Besprechungsräumen eines allgemeinen Features, wie er im gleichen Gebäude sitzen zugeordnet.  <br/> |
    
-## <a name="text-value"></a>Textwert
-
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
-  
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
-  
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="element-information"></a>Informationen zum Element
@@ -67,6 +69,9 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
    
 ## <a name="see-also"></a>Siehe auch
 
+
+
+[GetRooms-Vorgang](getrooms-operation.md)
 
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)

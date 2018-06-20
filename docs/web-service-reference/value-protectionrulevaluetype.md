@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: Wert (ProtectionRuleValueType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,28 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- Value
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: b039bd6e-2198-47cf-9c78-a5e8b9d51c98
+description: Das Value-Element identifiziert eine einzelne Empfänger oder Absender Abteilung.
+ms.openlocfilehash: 6173f94dcfb83eafd62e35f185a5e8c669d50f6c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19839487"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="value-protectionrulevaluetype"></a>Wert (ProtectionRuleValueType)
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **Value** -Element identifiziert eine einzelne Empfänger oder Absender Abteilung. 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<Value/>
 ```
 
- **Boolean**
+**ProtectionRuleValueType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,16 +45,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
+|[RecipientIs](recipientis.md) <br/> |Gibt an, dass alle Empfänger der e-Mail-Nachricht mit der angegebenen Empfänger im untergeordneten **Wert** übereinstimmt.  <br/> |
+|[SenderDepartments](senderdepartments.md) <br/> |Gibt an, dass die Abteilung des Absenders einer der angegebenen Abteilungen im untergeordneten **Wert** übereinstimmt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Dieses Element muss einen nicht leeren Zeichenfolgenwert enthalten.
   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
-  
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="element-information"></a>Informationen zum Element
@@ -66,8 +66,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
-
-
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

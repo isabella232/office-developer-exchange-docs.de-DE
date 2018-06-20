@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: PlayOnPhoneEnabled
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- PlayOnPhoneEnabled
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 6f800912-be4c-46f9-aa1e-dff0bbf877c5
+description: Das PlayOnPhoneEnabled-Element gibt an, ob das Wiedergabe über Telefon-Feature aktiviert ist.
+ms.openlocfilehash: 1a6c5c41a4fe723f37d07ad0151dfbd6512cf4f7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19830829"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="playonphoneenabled"></a>PlayOnPhoneEnabled
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **PlayOnPhoneEnabled** -Element gibt an, ob das Wiedergabe über Telefon-Feature aktiviert ist. 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<PlayOnPhoneEnabled>true | false</PlayOnPhoneEnabled>
 ```
 
  **Boolean**
@@ -44,11 +44,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
+|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Enthält Konfigurationsinformationen für den Unified Messaging-Dienst.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Das **PlayOnPhoneEnabled** -Element hat den Wert **true** , wenn Wiedergabe über Telefon für das Konto aktiviert ist; Andernfalls ist der Wert **false**.
   
 ## <a name="remarks"></a>Hinweise
 

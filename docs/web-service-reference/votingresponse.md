@@ -1,33 +1,29 @@
 ---
-title: UmEnabled
+title: VotingResponse
 manager: sethgros
-ms.date: 09/17/2015
+ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
-api_name:
-- UmEnabled
-api_type:
-- schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 7dae4db5-28d3-4b81-b071-458c814c36b9
+description: Das VotingResponse-Element gibt gesendete stimmen. Dieses Element ist nur für Antworten auf Abstimmungsoptionen Anforderungsnachrichten, nicht für Antworten auf Genehmigungen vorhanden.
+ms.openlocfilehash: 865b24a4f7ec1cc7b53d4928b04f071cddf5fbfc
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19839508"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="votingresponse"></a>VotingResponse
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **VotingResponse** -Element gibt gesendete stimmen. Dieses Element ist nur für Antworten auf Abstimmungsoptionen Anforderungsnachrichten, nicht für Antworten auf Genehmigungen vorhanden. 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<VotingResponse />
 ```
 
- **Boolean**
+ **string**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,17 +38,15 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|**Element**|**Beschreibung**|
-|:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
-   
+[VotingInformation](votinginformation.md)
+  
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Der Textwert der **VotingResponse** -Element ist der Abstimmung übermittelt. 
   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
+Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -63,10 +57,13 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
-|Leer kann sein  <br/> |False  <br/> |
+|Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
+
+
+[VotingInformation](votinginformation.md)
 
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)

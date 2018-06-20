@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: UnreadCount
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- UnreadCount
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 53b22647-1453-4707-9ea0-6a8369748d56
+description: Das UnreadCount-Element enthält die Anzahl der ungelesenen Elemente in einem Ordner.
+ms.openlocfilehash: fbe887f8f6d83fbcf48ed9593b3d19322a7f48be
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19839326"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="unreadcount"></a>UnreadCount
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **UnreadCount** -Element enthält die Anzahl der ungelesenen Elemente in einem Ordner. 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<UnreadCount/>
 ```
 
- **Boolean**
+ **xs: int**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,16 +44,18 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
+|[Unterhaltung (ConversationType)](conversation-conversationtype.md) <br/> |Stellt eine einfache Unterhaltung dar.  <br/> |
+|[Folder](folder.md) <br/> |Stellt einen Ordner in einem Postfach an.  <br/> |
+|[ModifiedEvent](modifiedevent.md) <br/> |Stellt ein Ereignis, bei denen eines Elements oder Ordners geändert wird.  <br/> |
+|["SearchFolder"](searchfolder.md) <br/> |Stellt einen Suchordner in einem Postfach an.  <br/> |
+|[TasksFolder](tasksfolder.md) <br/> |Stellt einen Ordner in einem Postfach an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Der Textwert stellt einen ganzzahligen Wert dar. Diese Eigenschaft ist schreibgeschützt.
   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
-  
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="element-information"></a>Informationen zum Element

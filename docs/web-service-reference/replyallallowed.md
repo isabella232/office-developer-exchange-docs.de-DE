@@ -1,30 +1,26 @@
 ---
-title: UmEnabled
+title: ReplyAllAllowed
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
-api_name:
-- UmEnabled
-api_type:
-- schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: d22f68cf-b18b-45d0-a9ff-414b7db0e67e
+description: Das ReplyAllAllowed-Element gibt an, ob eine Antwort, die alle ist für die Verwaltung von Informationsrechten zulässig Daten verwaltet.
+ms.openlocfilehash: cf814e6f27a734afc51b633bf832126a57d7ca5f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19831105"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="replyallallowed"></a>ReplyAllAllowed
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **ReplyAllAllowed** -Element gibt an, ob eine Antwort, die alle ist für die Verwaltung von Informationsrechten zulässig Daten verwaltet. 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<ReplyAllAllowed> true | false </ReplyAllAllowed>
 ```
 
  **Boolean**
@@ -42,17 +38,15 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|**Element**|**Beschreibung**|
-|:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
-   
+[RightsManagementLicenseData](rightsmanagementlicensedata.md)
+  
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Der Textwert **true** für das **ReplyAllAllowed** -Element gibt an, dass eine Antwort, die alle ist zulässig, für die Rechte Daten verwaltet. Der Wert **false** gibt an, dass eine Antwort, die alle nicht zulässig ist. 
   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
+Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -63,11 +57,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
-|Leer kann sein  <br/> |False  <br/> |
+|Kann leer sein  <br/> ||
    
-## <a name="see-also"></a>Siehe auch
-
-
-
-- [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

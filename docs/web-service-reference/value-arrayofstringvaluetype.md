@@ -1,33 +1,30 @@
 ---
-title: UmEnabled
+title: Wert (ArrayOfStringValueType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
-api_name:
-- UmEnabled
-api_type:
-- schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 83865da6-0bcd-445a-ba3c-0eff481b14ab
+description: Das Value-Element gibt einen Wert in einem Array von Persona-Eigenschaften, die ein Array Marken zugeordnet.
+ms.openlocfilehash: 0475dc1a58f48f1fd774d01c0da39e53dbcc4bc3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19839471"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="value-arrayofstringvaluetype"></a>Wert (ArrayOfStringValueType)
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **Value** -Element gibt einen Wert in einem Array von Persona-Eigenschaften, die ein Array Marken zugeordnet. 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<Value></Value>
 ```
 
- **Boolean**
+**string**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,17 +39,15 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|**Element**|**Beschreibung**|
-|:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
-   
+[Werte (ArrayOfStringValueType)](values-arrayofstringvaluetype.md)
+  
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Der Textwert der **Value** -Element ist ein Wert in einem Array von Persona-Eigenschaften, die ein Array Marken zugeordnet. 
   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
+Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -63,11 +58,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
-|Leer kann sein  <br/> |False  <br/> |
+|Kann leer sein  <br/> ||
    
-## <a name="see-also"></a>Siehe auch
-
-
-
-- [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

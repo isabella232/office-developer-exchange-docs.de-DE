@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: Pfad
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- Path
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 5829149e-7bfe-4820-bcc6-910e9264acc9
+description: Das Path-Element ist der Basis Schematyp für alle Eigenschaftenbezeichner. Dieser Typ ist abstrakt und treten direkt in Instanzdokumente.
+ms.openlocfilehash: a5a1ca5179ccf339e5a1f15621c92e2870f4f2d9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19830700"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="path"></a>Pfad
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **Path** -Element ist der Basis Schematyp für alle Eigenschaftenbezeichner. Dieser Typ ist abstrakt und treten direkt in Instanzdokumente. 
   
-```XML
-<UmEnabled>true | false</UmEnabled>
+```xml
+<Path/>
 ```
 
- **Boolean**
+ **BasePathToElementType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,19 +42,21 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|**Element**|**Beschreibung**|
-|:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
-   
-## <a name="text-value"></a>Textwert
-
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Keine.
   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
+Die folgenden Elemente werden verwendet, um für das Element **Pfad** ersetzen: 
   
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
+- [FieldURI](fielduri.md)
+    
+- [IndexedFieldURI](indexedfielduri.md)
+    
+- [ExceptionFieldURI](exceptionfielduri.md)
+    
+- [ExtendedFieldURI](extendedfielduri.md)
+    
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 ## <a name="element-information"></a>Informationen zum Element
 

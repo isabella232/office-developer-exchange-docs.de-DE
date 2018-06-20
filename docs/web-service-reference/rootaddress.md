@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: RootAddress
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- RootAddress
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 1dbb130a-e4eb-4baf-ae07-2568a8375bff
+description: Das Element RootAddress stellt die erste Adresse, die das Ereignis für ein Ereignis RecipientTrackingEvent beginnt.
+ms.openlocfilehash: afe544d6ee8dea4cb416ad033ed2cd68976ec087
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19831250"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="rootaddress"></a>RootAddress
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das Element **RootAddress** stellt die erste Adresse, die das Ereignis für ein Ereignis [RecipientTrackingEvent](recipienttrackingevent.md) beginnt. 
   
-```XML
-<UmEnabled>true | false</UmEnabled>
+```xml
+<RootAddress/>
 ```
 
- **Boolean**
+ **NonEmptyStringType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,17 +44,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Enthält Informationen für ein einzelnes Ereignis für einen Empfänger.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Der Textwert ist die Adresse, die das Ereignis Tracking beginnt.
   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
-  
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -67,6 +65,9 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
    
 ## <a name="see-also"></a>Siehe auch
 
+
+
+[GetMessageTrackingReport-Vorgang](getmessagetrackingreport-operation.md)
 
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)

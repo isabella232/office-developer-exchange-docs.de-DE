@@ -1,33 +1,29 @@
 ---
-title: UmEnabled
+title: ReminderGroup
 manager: sethgros
-ms.date: 09/17/2015
+ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
-api_name:
-- UmEnabled
-api_type:
-- schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 3e23c2a1-05d8-4fec-897c-f684a5b97e4c
+description: Das ReminderGroup-Element gibt an, ob die Erinnerung für ein Kalenderelement oder einer Aufgabe ist.
+ms.openlocfilehash: d9d31cdab482d04149428021ad44cc742108053a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19831060"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="remindergroup"></a>ReminderGroup
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **ReminderGroup** -Element gibt an, ob die Erinnerung für ein Kalenderelement oder einer Aufgabe ist. 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<ReminderGroup> Calendar | Task </ReminderGroup>
 ```
 
- **Boolean**
+ **ReminderGroupType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,17 +38,15 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|**Element**|**Beschreibung**|
-|:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
-   
+[Reminder](reminder.md)
+  
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Der Textwert des **ReminderGroup** -Elements ist die Gruppentyp der Erinnerung. Der Textwert der **Kalender** gibt an, dass die Erinnerung für ein Kalenderelement ist. Der Textwert der **Aufgabe** gibt an, dass die Erinnerung für ein Aufgabenelement ist. 
   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
+Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -67,6 +61,9 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
    
 ## <a name="see-also"></a>Siehe auch
 
+
+
+[Reminder](reminder.md)
 
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)

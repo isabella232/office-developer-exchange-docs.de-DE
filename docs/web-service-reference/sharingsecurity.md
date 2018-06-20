@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: SharingSecurity
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- SharingSecurity
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: d4831cac-a8f9-419a-ac42-481e34230cba
+description: Das SharingSecurity-Element wird in der Kopfzeile (SOAP = Simple Object Access Protocol) für Kalender oder Freigeben von Kontaktinformationen verwendet.
+ms.openlocfilehash: fa6719b5bd2bf5388c3da6befd50f4a302d4c3d8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19831482"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="sharingsecurity"></a>SharingSecurity
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **SharingSecurity** -Element wird in der Kopfzeile (SOAP = Simple Object Access Protocol) für Kalender oder Freigeben von Kontaktinformationen verwendet. 
   
-```XML
-<UmEnabled>true | false</UmEnabled>
+```xml
+<SharingSecurity/>
 ```
 
- **Boolean**
+ **EncryptedDataContainerType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,19 +42,11 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|**Element**|**Beschreibung**|
-|:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
-   
-## <a name="text-value"></a>Textwert
-
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Keine.
   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
-  
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
+Das Schema, das dieses Element beschreibt befindet sich das virtuelle IIS-Verzeichnis, dass Hosts Exchange-Webdienste des Computers, auf dem Microsoft Exchange Server ausgeführt wird die Clientzugriffs-Serverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zum Element
 

@@ -1,33 +1,29 @@
 ---
-title: UmEnabled
+title: ProposedEnd
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
-api_name:
-- UmEnabled
-api_type:
-- schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: a8b574dd-ce26-424f-b0f5-3311d93a4806
+description: Das ProposedEnd-Element gibt die vorgeschlagenen Endzeit einer Besprechung.
+ms.openlocfilehash: fd2a6813f3a936785adc8fcea289cb547d52c8c0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19830901"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="proposedend"></a>ProposedEnd
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **ProposedEnd** -Element gibt die vorgeschlagenen Endzeit einer Besprechung. 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<ProposedEnd></ProposedEnd>
 ```
 
- **Boolean**
+ **dateTime**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,17 +38,15 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|**Element**|**Beschreibung**|
-|:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
-   
+[MeetingResponse](meetingresponse.md)
+  
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Der Textwert des **ProposedEnd** -Elements ist die vorgeschlagenen Endzeit vom Organisator der Besprechung Teilnehmer gesendet. 
   
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
+Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -63,11 +57,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
-|Leer kann sein  <br/> |False  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
-## <a name="see-also"></a>Siehe auch
-
-
-
-- [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

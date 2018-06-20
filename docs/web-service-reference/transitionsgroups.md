@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: TransitionsGroups
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- TransitionsGroups
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: ad0849f8-5158-4a23-9c36-a49f5be1d1e1
+description: Das TransitionsGroups-Element stellt ein Array von Zeitzone Übergang Gruppen.
+ms.openlocfilehash: 546dd3c96187bf9f1ebf574b37b689e26e3af997
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19839264"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="transitionsgroups"></a>TransitionsGroups
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **TransitionsGroups** -Element stellt ein Array von Zeitzone Übergang Gruppen. 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<TransitionsGroups>
+   <TransitionsGroup/>
+</TransitionsGroups>
 ```
 
- **Boolean**
+ **ArrayOfTransitionsGroupsType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -38,22 +40,20 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-Keine.
-  
+|**Element**|**Beschreibung**|
+|:-----|:-----|
+|[TransitionsGroup](transitionsgroup.md) <br/> |Stellt ein Array von Zeitzone Übergänge.  <br/> |
+   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
+|[StartTimeZone-Zeitzone](starttimezone.md) <br/> |Definiert die Zeitzone für die Startzeit eines [CalendarItem](calendaritem.md) oder [MeetingRequest](meetingrequest.md).  <br/> |
+|[EndTimeZone](endtimezone.md) <br/> |Definiert die Zeitzone für die Endzeit eines [CalendarItem](calendaritem.md) oder [MeetingRequest](meetingrequest.md).  <br/> |
+|[Zeitzonendefinition](timezonedefinition.md) <br/> |Definiert eine Zeitzone.  <br/> |
    
-## <a name="text-value"></a>Textwert
-
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
-  
 ## <a name="remarks"></a>Hinweise
 
-Dieses Element ist erforderlich.
-  
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="element-information"></a>Informationen zum Element
