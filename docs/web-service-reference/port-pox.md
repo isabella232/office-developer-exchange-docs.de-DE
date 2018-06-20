@@ -1,0 +1,68 @@
+---
+title: Port (POX)
+manager: sethgros
+ms.date: 09/17/2015
+ms.audience: Developer
+ms.topic: reference
+localization_priority: Normal
+api_type:
+- schema
+ms.assetid: 4046821a-d6f3-4764-82be-4011221ce7a3
+description: Das Port-Element gibt den Port, der Verbindung mit dem Speicher verwendet wird.
+ms.openlocfilehash: f5a2155d97061a87fdf819549ec29898efe4d201
+ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19830842"
+---
+# <a name="port-pox"></a><span data-ttu-id="e4e21-103">Port (POX)</span><span class="sxs-lookup"><span data-stu-id="e4e21-103">Port (POX)</span></span>
+
+<span data-ttu-id="e4e21-104">Das **Port** -Element gibt den Port, der Verbindung mit dem Speicher verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="e4e21-104">The **Port** element specifies the port that is used to connect to the store.</span></span> 
+  
+[<span data-ttu-id="e4e21-105">AutoErmittlung (POX)</span><span class="sxs-lookup"><span data-stu-id="e4e21-105">AutoDiscover (POX)</span></span>](autodiscover-pox.md)
+  
+[<span data-ttu-id="e4e21-106">Response (POX)</span><span class="sxs-lookup"><span data-stu-id="e4e21-106">Response (POX)</span></span>](response-pox.md)
+  
+[<span data-ttu-id="e4e21-107">Konto (POX)</span><span class="sxs-lookup"><span data-stu-id="e4e21-107">Account (POX)</span></span>](account-pox.md)
+  
+[<span data-ttu-id="e4e21-108">Protokoll (POX)</span><span class="sxs-lookup"><span data-stu-id="e4e21-108">Protocol (POX)</span></span>](protocol-pox.md)
+  
+[<span data-ttu-id="e4e21-109">Port (POX)</span><span class="sxs-lookup"><span data-stu-id="e4e21-109">Port (POX)</span></span>](port-pox.md)
+  
+```xml
+<Port/>
+```
+
+## <a name="attributes-and-elements"></a><span data-ttu-id="e4e21-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="e4e21-110">Attributes and elements</span></span>
+
+<span data-ttu-id="e4e21-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="e4e21-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+  
+### <a name="attributes"></a><span data-ttu-id="e4e21-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="e4e21-112">Attributes</span></span>
+
+<span data-ttu-id="e4e21-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="e4e21-113">None.</span></span>
+  
+### <a name="child-elements"></a><span data-ttu-id="e4e21-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e4e21-114">Child elements</span></span>
+
+<span data-ttu-id="e4e21-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="e4e21-115">None.</span></span>
+  
+### <a name="parent-elements"></a><span data-ttu-id="e4e21-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e4e21-116">Parent elements</span></span>
+
+|<span data-ttu-id="e4e21-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="e4e21-117">**Element**</span></span>|<span data-ttu-id="e4e21-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="e4e21-118">**Description**</span></span>|
+|:-----|:-----|
+|[<span data-ttu-id="e4e21-119">Protokoll (POX)</span><span class="sxs-lookup"><span data-stu-id="e4e21-119">Protocol (POX)</span></span>](protocol-pox.md) <br/> |<span data-ttu-id="e4e21-120">Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.</span><span class="sxs-lookup"><span data-stu-id="e4e21-120">Contains the specifications for connecting a client to the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>  <br/> |
+   
+## <a name="text-value"></a><span data-ttu-id="e4e21-121">Textwert</span><span class="sxs-lookup"><span data-stu-id="e4e21-121">Text value</span></span>
+
+<span data-ttu-id="e4e21-122">Der Textwert stellt den Port, der Zugriff auf den Exchange-Server verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="e4e21-122">The text value represents the port that is used to access the Exchange server.</span></span>
+  
+## <a name="remarks"></a><span data-ttu-id="e4e21-123">Hinweise</span><span class="sxs-lookup"><span data-stu-id="e4e21-123">Remarks</span></span>
+
+<span data-ttu-id="e4e21-124">Der Wert für **Port** wird nicht verwendet, wenn das [Server (POX)](server-pox.md) -Element eine URL enthält.</span><span class="sxs-lookup"><span data-stu-id="e4e21-124">The **Port** value is not used if the [Server (POX)](server-pox.md) element contains a URL.</span></span> 
+  
+## <a name="see-also"></a><span data-ttu-id="e4e21-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e4e21-125">See also</span></span>
+
+
+
+[<span data-ttu-id="e4e21-126">POX Autodiscover XML-Elemente für Exchange</span><span class="sxs-lookup"><span data-stu-id="e4e21-126">POX Autodiscover XML elements for Exchange</span></span>](pox-autodiscover-xml-elements-for-exchange.md)
+
