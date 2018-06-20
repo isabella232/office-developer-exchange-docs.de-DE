@@ -1,0 +1,71 @@
+---
+title: DiscoverySearchConfiguration
+manager: sethgros
+ms.date: 09/17/2015
+ms.audience: Developer
+ms.topic: reference
+ms.prod: office-online-server
+localization_priority: Normal
+ms.assetid: 085384f9-dca4-4534-82e2-dd782471d0da
+description: Das DiscoverySearchConfiguration-Element gibt die Konfiguration für eDiscovery-Suche.
+ms.openlocfilehash: 11bf90d8fe73bb0b308deb7ae51f1443488f87e2
+ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19758029"
+---
+# <a name="discoverysearchconfiguration"></a>DiscoverySearchConfiguration
+
+Das **DiscoverySearchConfiguration** -Element gibt die Konfiguration für eDiscovery-Suche. 
+  
+```XML
+<DiscoverySearchConfiguration>
+    <SearchId></SearchId>
+    <SearchQuery></SearchQuery>
+    <SearchableMailboxes></SearchableMailboxes>
+</DiscoverySearchConfiguration>
+```
+
+ **DiscoverySearchConfigurationType**
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+
+In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
+  
+### <a name="attributes"></a>Attribute
+
+Keine.
+  
+### <a name="child-elements"></a>Untergeordnete Elemente
+
+|**Element**|**Beschreibung**|
+|:-----|:-----|
+|[Such](searchid.md) <br/> |Gibt den Bezeichner der Suche.  <br/> |
+|[SearchQuery](searchquery.md) <br/> |Gibt den Namen einer eDiscovery-Suchabfrage.  <br/> |
+|[SearchableMailboxes](searchablemailboxes.md) <br/> |Enthält eine Liste der Postfächer aus einer Anforderung **GetSearchableMailboxes** zurückgegeben.  <br/> |
+   
+### <a name="parent-elements"></a>Übergeordnete Elemente
+
+|**Element**|**Beschreibung**|
+|:-----|:-----|
+|[DiscoverySearchConfigurations](discoverysearchconfigurations.md) <br/> |Gibt ein Array von **DiscoverySearchConfiguration** -Elementen.  <br/> |
+   
+## <a name="remarks"></a>Hinweise
+
+Dieses Element wurde in Exchange Server 2013 eingeführt.
+  
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
+  
+## <a name="element-information"></a>Informationen zum Element
+
+|||
+|:-----|:-----|
+|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Name des Schemas  <br/> |Nachrichtenschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Kann leer sein  <br/> ||
+   
+## <a name="see-also"></a>Siehe auch
+
+- [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
+
