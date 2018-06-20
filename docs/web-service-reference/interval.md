@@ -1,0 +1,78 @@
+---
+title: Intervall
+manager: sethgros
+ms.date: 09/17/2015
+ms.audience: Developer
+ms.topic: reference
+ms.prod: office-online-server
+localization_priority: Normal
+api_name:
+- Interval
+api_type:
+- schema
+ms.assetid: d0c97a5f-96be-40c6-b7d4-abf4c3870adf
+description: Das Intervall-Element definiert das Intervall zwischen zwei aufeinander folgenden Terminserien.
+ms.openlocfilehash: 55d26b5b1b51aca3effa93a2e6852c1ae57ef4b0
+ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19829962"
+---
+# <a name="interval"></a><span data-ttu-id="b3382-103">Intervall</span><span class="sxs-lookup"><span data-stu-id="b3382-103">Interval</span></span>
+
+<span data-ttu-id="b3382-104">Das **Intervall** -Element definiert das Intervall zwischen zwei aufeinander folgenden Terminserien.</span><span class="sxs-lookup"><span data-stu-id="b3382-104">The **Interval** element defines the interval between two consecutive recurring items.</span></span> 
+  
+```xml
+<Interval/>
+```
+
+ <span data-ttu-id="b3382-105">**int**</span><span class="sxs-lookup"><span data-stu-id="b3382-105">**int**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="b3382-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="b3382-106">Attributes and elements</span></span>
+
+<span data-ttu-id="b3382-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="b3382-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+  
+### <a name="attributes"></a><span data-ttu-id="b3382-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="b3382-108">Attributes</span></span>
+
+<span data-ttu-id="b3382-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="b3382-109">None.</span></span>
+  
+### <a name="child-elements"></a><span data-ttu-id="b3382-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="b3382-110">Child elements</span></span>
+
+<span data-ttu-id="b3382-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="b3382-111">None.</span></span>
+  
+### <a name="parent-elements"></a><span data-ttu-id="b3382-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="b3382-112">Parent elements</span></span>
+
+|<span data-ttu-id="b3382-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="b3382-113">**Element**</span></span>|<span data-ttu-id="b3382-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="b3382-114">**Description**</span></span>|
+|:-----|:-----|
+|[<span data-ttu-id="b3382-115">AbsoluteMonthlyRecurrence</span><span class="sxs-lookup"><span data-stu-id="b3382-115">AbsoluteMonthlyRecurrence</span></span>](absolutemonthlyrecurrence.md) <br/> |<span data-ttu-id="b3382-116">Stellt ein monatliches Serienmuster dar.</span><span class="sxs-lookup"><span data-stu-id="b3382-116">Represents a monthly recurrence pattern.</span></span>  <br/> |
+|[<span data-ttu-id="b3382-117">DailyRegeneration</span><span class="sxs-lookup"><span data-stu-id="b3382-117">DailyRegeneration</span></span>](dailyregeneration.md) <br/> |<span data-ttu-id="b3382-118">Beschreibt die Häufigkeit in Tagen, in denen eine Aufgabe neu erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="b3382-118">Describes the frequency, in days, in which a task is regenerated.</span></span>  <br/> |
+|[<span data-ttu-id="b3382-119">DailyRecurrence</span><span class="sxs-lookup"><span data-stu-id="b3382-119">DailyRecurrence</span></span>](dailyrecurrence.md) <br/> |<span data-ttu-id="b3382-120">Beschreibt die Häufigkeit in Tagen, in denen eine Aufgabe wiederholt ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="b3382-120">Describes the frequency, in days, in which a task recurs.</span></span>  <br/> |
+|[<span data-ttu-id="b3382-121">MonthlyRegeneration</span><span class="sxs-lookup"><span data-stu-id="b3382-121">MonthlyRegeneration</span></span>](monthlyregeneration.md) <br/> |<span data-ttu-id="b3382-122">Beschreibt die Häufigkeit in Monaten, in denen eine Aufgabe neu erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="b3382-122">Describes the frequency, in months, in which a task is regenerated.</span></span>  <br/> |
+|[<span data-ttu-id="b3382-123">RelativeMonthlyRecurrence</span><span class="sxs-lookup"><span data-stu-id="b3382-123">RelativeMonthlyRecurrence</span></span>](relativemonthlyrecurrence.md) <br/> |<span data-ttu-id="b3382-124">Beschreibt ein relativen Monatliches Muster für einen sich wiederholenden Vorgang.</span><span class="sxs-lookup"><span data-stu-id="b3382-124">Describes a relative monthly pattern for a recurring task.</span></span>  <br/> |
+|[<span data-ttu-id="b3382-125">WeeklyRecurrence</span><span class="sxs-lookup"><span data-stu-id="b3382-125">WeeklyRecurrence</span></span>](weeklyrecurrence.md) <br/> |<span data-ttu-id="b3382-126">Beschreibt die Häufigkeit in Wochen, in dem die Tage, an denen eine Aufgabe wiederholt ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="b3382-126">Describes the frequency, in weeks, in which and the days on which a task recurs.</span></span>  <br/> |
+|[<span data-ttu-id="b3382-127">WeeklyRegeneration</span><span class="sxs-lookup"><span data-stu-id="b3382-127">WeeklyRegeneration</span></span>](weeklyregeneration.md) <br/> |<span data-ttu-id="b3382-128">Beschreibt die Häufigkeit in Wochen, in denen eine Aufgabe neu erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="b3382-128">Describes the frequency, in weeks, in which a task is regenerated.</span></span>  <br/> |
+|[<span data-ttu-id="b3382-129">YearlyRegeneration</span><span class="sxs-lookup"><span data-stu-id="b3382-129">YearlyRegeneration</span></span>](yearlyregeneration.md) <br/> |<span data-ttu-id="b3382-130">Beschreibt die Häufigkeit in Jahre, in denen eine Aufgabe neu erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="b3382-130">Describes the frequency, in years, in which a task is regenerated.</span></span>  <br/> |
+   
+## <a name="text-value"></a><span data-ttu-id="b3382-131">Textwert</span><span class="sxs-lookup"><span data-stu-id="b3382-131">Text value</span></span>
+
+<span data-ttu-id="b3382-132">Ein Textwert, der eine ganze Zahl darstellt, ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b3382-132">A text value that represents an integer is required.</span></span>
+  
+## <a name="remarks"></a><span data-ttu-id="b3382-133">Hinweise</span><span class="sxs-lookup"><span data-stu-id="b3382-133">Remarks</span></span>
+
+<span data-ttu-id="b3382-134">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="b3382-134">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+  
+## <a name="element-information"></a><span data-ttu-id="b3382-135">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="b3382-135">Element information</span></span>
+
+|||
+|:-----|:-----|
+|<span data-ttu-id="b3382-136">Namespace</span><span class="sxs-lookup"><span data-stu-id="b3382-136">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="b3382-137">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="b3382-137">Schema name</span></span>  <br/> |<span data-ttu-id="b3382-138">Schematypen</span><span class="sxs-lookup"><span data-stu-id="b3382-138">Types schema</span></span>  <br/> |
+|<span data-ttu-id="b3382-139">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="b3382-139">Validation file</span></span>  <br/> |<span data-ttu-id="b3382-140">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="b3382-140">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="b3382-141">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="b3382-141">Can be empty</span></span>  <br/> |<span data-ttu-id="b3382-142">False</span><span class="sxs-lookup"><span data-stu-id="b3382-142">False</span></span>  <br/> |
+   
+## <a name="see-also"></a><span data-ttu-id="b3382-143">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b3382-143">See also</span></span>
+
+
+
+- [<span data-ttu-id="b3382-144">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="b3382-144">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+
