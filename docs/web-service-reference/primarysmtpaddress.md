@@ -16,7 +16,7 @@ ms.openlocfilehash: d33bf22af4ddf6b2f6d8d8d434168264acfaea7c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19830881"
 ---
 # <a name="primarysmtpaddress"></a>PrimarySmtpAddress
@@ -52,7 +52,7 @@ Keine.
 
 Ein Textwert, der eine SMTP-Adresse darstellt, ist erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Exchange Web Services erfordert, dass durch die primäre SMTP-Adresse des Postfachs Postfächer identifiziert werden. Proxy oder alternative Adressen werden nicht akzeptiert.
   

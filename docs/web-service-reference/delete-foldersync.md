@@ -16,7 +16,7 @@ ms.openlocfilehash: 5cad36c6fcff782195fdb285e2d3c4f3c5ec0f1e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19757899"
 ---
 # <a name="delete-foldersync"></a>Delete (FolderSync)
@@ -57,7 +57,7 @@ Keine.
 |:-----|:-----|
 |[Änderungen (Hierarchie)](changes-hierarchy.md) <br/> |Enthält eine sequenzierten Array von Änderungstypen, die den Typ der Unterschiede zwischen den Ordnern auf dem Client und die Ordner auf dem Computer mit Microsoft Exchange Server 2007 darstellen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Exchange 2007-Computers, der die Clientzugriffs-Serverrolle installiert ist.
   

@@ -1,5 +1,5 @@
 ---
-title: SendItemResponse
+title: CreateFolder
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,29 +7,30 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- SendItemResponse
+- CreateFolder
 api_type:
 - schema
-ms.assetid: 26ac41c7-57d9-473e-ab7a-bae93e1d2aba
-description: Das SendItemResponse-Element definiert eine Antwort auf eine an den SendItem.
-ms.openlocfilehash: 41f450e1d4c95f7ba389adcaa2ed7e18ea74d61c
+ms.assetid: 110bada1-517b-4bd6-870d-7086dc879e5d
+description: Das CreateFolder-Element definiert eine Anforderung an einen Ordner im Exchange-Speicher zu erstellen.
+ms.openlocfilehash: e30af23b8ed8669053b94be460d62fbf7abf24c9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/21/2018
-ms.locfileid: "19831339"
+ms.locfileid: "19757753"
 ---
-# <a name="senditemresponse"></a>SendItemResponse
+# <a name="createfolder"></a>CreateFolder
 
-Das **SendItemResponse** -Element definiert eine Antwort auf eine an den SendItem. 
+Das **CreateFolder** -Element definiert eine Anforderung an einen Ordner im Exchange-Speicher zu erstellen. 
   
 ```xml
-<SendItemResponse>
-   <ResponseMessages/>
-</SendItemResponse>
+<CreateFolder>
+   <ParentFolderId/>
+   <Folders/>
+</CreateFolder>
 ```
 
- **SendItemResponseType**
+ **CreateFolderType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,7 +43,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) <br/> |Das Element, das den Speicherort angibt, in der neue Ordner erstellt.  <br/> |
+|[Ordner](folders-ex15websvcsotherref.md) <br/> |Das Element, das zu erstellende Ordner enthält.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -59,16 +61,14 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
 |Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[SendItem Operation](senditem-operation.md)
-  
-[SendItem](senditem.md)
+[CreateFolder Operation](createfolder-operation.md)
 
 
-- [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
+[Erstellen von Ordnern (Exchange Web Services)](http://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
 

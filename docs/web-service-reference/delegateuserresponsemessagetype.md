@@ -16,7 +16,7 @@ ms.openlocfilehash: ac99e0ca219fc1f1e117f9288d895e27a1df4700
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19757900"
 ---
 # <a name="delegateuserresponsemessagetype"></a>DelegateUserResponseMessageType
@@ -59,7 +59,7 @@ Keine.
 |:-----|:-----|
 |[ResponseMessages (ArrayOfDelegateUserResponseMessageType)](responsemessages-arrayofdelegateuserresponsemessagetype.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Delegaten Management-Anforderung.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, der Exchange-Server, mit die Clientzugriffs-Serverrolle installiert ausgeführt wird.
   

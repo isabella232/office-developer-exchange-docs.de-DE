@@ -1,32 +1,31 @@
 ---
-title: BusinessPhoneNumbers2
+title: FileAses
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
-ms.assetid: f335ea74-9b5b-4224-9475-40ef33fe76bd
-description: Das BusinessPhoneNumbers2-Element gibt ein Array von BusinessPhoneNumber2-Elementen und die Bezeichner der ihre Marken Quelle für die zugeordneten Rolle.
-ms.openlocfilehash: 8a03e102223e5542d6a672c4f47305cef84b850b
+ms.assetid: f81efc37-bb70-4d52-a614-cec87d1b0f04
+description: Das FileAses-Element gibt ein Array von StringAttributedValue-Elementen und die Bezeichner der ihre Marken Quelle für die zugeordneten Rolle.
+ms.openlocfilehash: e660c74135dca9a2eb58b3486e0d2e19f85e012f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/21/2018
-ms.locfileid: "19757524"
+ms.locfileid: "19758416"
 ---
-# <a name="businessphonenumbers2"></a>BusinessPhoneNumbers2
+# <a name="fileases"></a>FileAses
 
-Das **BusinessPhoneNumbers2** -Element gibt ein Array von **BusinessPhoneNumber2** -Elementen und die Bezeichner der ihre Marken Quelle für die zugeordneten Rolle. 
+Das **FileAses** -Element gibt ein Array von **StringAttributedValue** -Elementen und die Bezeichner der ihre Marken Quelle für die zugeordneten Rolle. 
   
 ```XML
-<BusinessPhoneNumbers2>
-    <Value></Value>
-    <Attributions></Attributions>
-</BusinessPhoneNumbers2>
+<FileAses>
+    <StringAttributedValue/>
+</FileAses>
 ```
 
- **ArrayOfPhoneNumberAttributedValuesType**
+ **ArrayOfStringAttributedValuesType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -39,8 +38,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Wert (PersonaPhoneNumberType)](value-personaphonenumbertype.md) <br/> |Gibt eine Telefoninformationen Anzahl und Typ und eine Reihe von Marken zugeordnet ist.  <br/> |
-|[Hinweise (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md) <br/> |Gibt ein Array von Marken für zugeordneten **Wert** Elements an.  <br/> |
+|[StringAttributedValue](stringattributedvalue.md) <br/> |Gibt eine Instanz in ein Array von Attributen, die einer Rolle-Element zugeordnet ist.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
