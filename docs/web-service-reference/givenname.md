@@ -16,7 +16,7 @@ ms.openlocfilehash: a9c8e6b075a480bc54414d0ead11918a50223b56
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19829710"
 ---
 # <a name="givenname"></a>Vorname
@@ -50,7 +50,7 @@ Keine.
 
 Ein Textwert, der den Namen eines Kontakts angegebenen darstellt ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Eine angegebene Name ist in der Regel Vornamen der Person ein.
   
