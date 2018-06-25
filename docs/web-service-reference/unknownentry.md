@@ -16,59 +16,59 @@ ms.openlocfilehash: 11939ad39c83ac2d15ec7fface6f530d3f60e12a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19839322"
 ---
-# <a name="unknownentry"></a><span data-ttu-id="75cb3-104">UnknownEntry</span><span class="sxs-lookup"><span data-stu-id="75cb3-104">UnknownEntry</span></span>
+# <a name="unknownentry"></a><span data-ttu-id="1debf-104">UnknownEntry</span><span class="sxs-lookup"><span data-stu-id="1debf-104">UnknownEntry</span></span>
 
-<span data-ttu-id="75cb3-105">Das **UnknownEntry** -Element stellt einen einzelnes unbekannte Berechtigungseintrag, der gegen den Verzeichnisdienst Active Directory nicht aufgelöst werden kann.</span><span class="sxs-lookup"><span data-stu-id="75cb3-105">The **UnknownEntry** element represents a single unknown permission entry that cannot be resolved against the Active Directory directory service.</span></span> <span data-ttu-id="75cb3-106">Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="75cb3-106">This element was introduced in Microsoft Exchange Server 2007 Service Pack 1 (SP1).</span></span> 
+<span data-ttu-id="1debf-105">Das **UnknownEntry** -Element stellt einen einzelnes unbekannte Berechtigungseintrag, der gegen den Verzeichnisdienst Active Directory nicht aufgelöst werden kann.</span><span class="sxs-lookup"><span data-stu-id="1debf-105">The **UnknownEntry** element represents a single unknown permission entry that cannot be resolved against the Active Directory directory service.</span></span> <span data-ttu-id="1debf-106">Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="1debf-106">This element was introduced in Microsoft Exchange Server 2007 Service Pack 1 (SP1).</span></span> 
   
 ```xml
 <UnknownEntry/>
 ```
 
- <span data-ttu-id="75cb3-107">**string**</span><span class="sxs-lookup"><span data-stu-id="75cb3-107">**string**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="75cb3-108">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="75cb3-108">Attributes and elements</span></span>
+ <span data-ttu-id="1debf-107">**string**</span><span class="sxs-lookup"><span data-stu-id="1debf-107">**string**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="1debf-108">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="1debf-108">Attributes and elements</span></span>
 
-<span data-ttu-id="75cb3-109">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="75cb3-109">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="1debf-109">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="1debf-109">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="75cb3-110">Attribute</span><span class="sxs-lookup"><span data-stu-id="75cb3-110">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="1debf-110">Attribute</span><span class="sxs-lookup"><span data-stu-id="1debf-110">Attributes</span></span>
 
-<span data-ttu-id="75cb3-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="75cb3-111">None.</span></span>
+<span data-ttu-id="1debf-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="1debf-111">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="75cb3-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="75cb3-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="1debf-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1debf-112">Child elements</span></span>
 
-<span data-ttu-id="75cb3-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="75cb3-113">None.</span></span>
+<span data-ttu-id="1debf-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="1debf-113">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="75cb3-114">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="75cb3-114">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="1debf-114">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1debf-114">Parent elements</span></span>
 
-|<span data-ttu-id="75cb3-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="75cb3-115">**Element**</span></span>|<span data-ttu-id="75cb3-116">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="75cb3-116">**Description**</span></span>|
+|<span data-ttu-id="1debf-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="1debf-115">**Element**</span></span>|<span data-ttu-id="1debf-116">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="1debf-116">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="75cb3-117">UnknownEntries</span><span class="sxs-lookup"><span data-stu-id="75cb3-117">UnknownEntries</span></span>](unknownentries.md) <br/> |<span data-ttu-id="75cb3-118">Enthält ein Array von unbekannten Berechtigungseinträge, die anhand von Active Directory nicht aufgelöst werden kann.</span><span class="sxs-lookup"><span data-stu-id="75cb3-118">Contains an array of unknown permission entries that cannot be resolved against Active Directory.</span></span> <span data-ttu-id="75cb3-119">Dieses Element wurde in Exchange 2007 SP1 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="75cb3-119">This element was introduced in Exchange 2007 SP1.</span></span>  <br/> |
+|[<span data-ttu-id="1debf-117">UnknownEntries</span><span class="sxs-lookup"><span data-stu-id="1debf-117">UnknownEntries</span></span>](unknownentries.md) <br/> |<span data-ttu-id="1debf-118">Enthält ein Array von unbekannten Berechtigungseinträge, die anhand von Active Directory nicht aufgelöst werden kann.</span><span class="sxs-lookup"><span data-stu-id="1debf-118">Contains an array of unknown permission entries that cannot be resolved against Active Directory.</span></span> <span data-ttu-id="1debf-119">Dieses Element wurde in Exchange 2007 SP1 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="1debf-119">This element was introduced in Exchange 2007 SP1.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="75cb3-120">Textwert</span><span class="sxs-lookup"><span data-stu-id="75cb3-120">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="1debf-120">Textwert</span><span class="sxs-lookup"><span data-stu-id="1debf-120">Text value</span></span>
 
-<span data-ttu-id="75cb3-121">Der Textwert stellt einen Berechtigungseintrag, der anhand von Active Directory nicht aufgelöst werden kann.</span><span class="sxs-lookup"><span data-stu-id="75cb3-121">The text value represents a permission entry that cannot be resolved against Active Directory.</span></span> <span data-ttu-id="75cb3-122">Der Textwert stellt eine Sicherheits-ID (SID).</span><span class="sxs-lookup"><span data-stu-id="75cb3-122">The text value represents a security identifier (SID).</span></span>
+<span data-ttu-id="1debf-121">Der Textwert stellt einen Berechtigungseintrag, der anhand von Active Directory nicht aufgelöst werden kann.</span><span class="sxs-lookup"><span data-stu-id="1debf-121">The text value represents a permission entry that cannot be resolved against Active Directory.</span></span> <span data-ttu-id="1debf-122">Der Textwert stellt eine Sicherheits-ID (SID).</span><span class="sxs-lookup"><span data-stu-id="1debf-122">The text value represents a security identifier (SID).</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="75cb3-123">Hinweise</span><span class="sxs-lookup"><span data-stu-id="75cb3-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1debf-123">Hinweise</span><span class="sxs-lookup"><span data-stu-id="1debf-123">Remarks</span></span>
 
-<span data-ttu-id="75cb3-124">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="75cb3-124">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="1debf-124">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="1debf-124">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="75cb3-125">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="75cb3-125">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="1debf-125">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="1debf-125">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="75cb3-126">Namespace</span><span class="sxs-lookup"><span data-stu-id="75cb3-126">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="75cb3-127">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="75cb3-127">Schema Name</span></span>  <br/> |<span data-ttu-id="75cb3-128">Schematypen</span><span class="sxs-lookup"><span data-stu-id="75cb3-128">Types schema</span></span>  <br/> |
-|<span data-ttu-id="75cb3-129">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="75cb3-129">Validation File</span></span>  <br/> |<span data-ttu-id="75cb3-130">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="75cb3-130">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="75cb3-131">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="75cb3-131">Can be Empty</span></span>  <br/> |<span data-ttu-id="75cb3-132">False</span><span class="sxs-lookup"><span data-stu-id="75cb3-132">False</span></span>  <br/> |
+|<span data-ttu-id="1debf-126">Namespace</span><span class="sxs-lookup"><span data-stu-id="1debf-126">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="1debf-127">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="1debf-127">Schema Name</span></span>  <br/> |<span data-ttu-id="1debf-128">Schematypen</span><span class="sxs-lookup"><span data-stu-id="1debf-128">Types schema</span></span>  <br/> |
+|<span data-ttu-id="1debf-129">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="1debf-129">Validation File</span></span>  <br/> |<span data-ttu-id="1debf-130">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="1debf-130">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="1debf-131">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="1debf-131">Can be Empty</span></span>  <br/> |<span data-ttu-id="1debf-132">False</span><span class="sxs-lookup"><span data-stu-id="1debf-132">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="75cb3-133">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="75cb3-133">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1debf-133">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1debf-133">See also</span></span>
 
 
 
-- [<span data-ttu-id="75cb3-134">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="75cb3-134">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="1debf-134">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="1debf-134">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
 
-[<span data-ttu-id="75cb3-135">Setting Folder-Level Permissions</span><span class="sxs-lookup"><span data-stu-id="75cb3-135">Setting Folder-Level Permissions</span></span>](http://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+[<span data-ttu-id="1debf-135">Setting Folder-Level Permissions</span><span class="sxs-lookup"><span data-stu-id="1debf-135">Setting Folder-Level Permissions</span></span>](http://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 
