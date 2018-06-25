@@ -16,7 +16,7 @@ ms.openlocfilehash: e3792d136849b19c38e85e877b19bea046676fb5
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19839221"
 ---
 # <a name="timezone-item"></a>TimeZone (Element)
@@ -51,7 +51,7 @@ Keine.
 
 Der Textwert beschreibt eine Zeitzone. Diese Eigenschaft ist schreibgeschützt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
