@@ -16,7 +16,7 @@ ms.openlocfilehash: 269c1176913cd642f93987462286dd1fee3a7339
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757914"
 ---
 # <a name="deletedoccurrences"></a>DeletedOccurrences
@@ -51,7 +51,7 @@ Keine.
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Dieses Element ist gültig, wenn der Wert der RecurringMaster-Text für das [CalendarItemType](calendaritemtype.md) -Element verwendet wird. 
   

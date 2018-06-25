@@ -10,7 +10,7 @@ ms.openlocfilehash: 5e4d95058808adf8db159000bdf90c1f92945338
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756902"
 ---
 # <a name="delete-appointments-in-a-recurring-series-by-using-ews-in-exchange"></a>Löschen der Termine in einer Terminserie mithilfe der EWS in Exchange

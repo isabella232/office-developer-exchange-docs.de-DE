@@ -12,7 +12,7 @@ ms.openlocfilehash: 7541fa6330ee96f7791febfabc672dbcf0e95b54
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758361"
 ---
 # <a name="extendedproperty-pathtoextendedfieldtype"></a>ExtendedProperty (PathToExtendedFieldType)
@@ -85,7 +85,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |ShortArray  <br/> |Gibt ein Array von **kurzen** Werte an.  <br/> |
 |SystemTime  <br/> |Gibt einen Zeitwert System an.  <br/> |
 |SystemTimeArray  <br/> |Gibt ein Array von Zeitwerte System an.  <br/> |
-|String  <br/> |Gibt eine Zeichenfolge an.  <br/> |
+|Zeichenfolge  <br/> |Gibt eine Zeichenfolge an.  <br/> |
 |StringArray  <br/> |Gibt ein Array von Zeichenfolgen an.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente

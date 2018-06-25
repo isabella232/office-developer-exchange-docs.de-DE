@@ -16,7 +16,7 @@ ms.openlocfilehash: 41f8c67cb5619b258c2190532036a60a523a0ff2
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757861"
 ---
 # <a name="datetimereceived"></a>DateTimeReceived
@@ -61,7 +61,7 @@ Keine.
 
 Der Textwert stellt die Zeit in der ein Element in einem Postfach empfangen werden. Diese Eigenschaft ist schreibgeschützt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

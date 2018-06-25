@@ -16,7 +16,7 @@ ms.openlocfilehash: 39c8c8ef84ff445e8f44ebb9f2285ccfc42353a7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758554"
 ---
 # <a name="from"></a>Von
@@ -63,7 +63,7 @@ Keine.
 |[CancelCalendarItem](cancelcalendaritem.md) <br/> |Stellt das Antwortobjekt, das Sie eine Besprechung absagen verwendet wird.  <br/> |
 |[PostItem-Objekt](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Speicher. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Dieses Element wird für "Senden im Auftrag von" e-Mail-Nachrichten verwendet.
   

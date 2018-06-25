@@ -16,7 +16,7 @@ ms.openlocfilehash: 3f4f72224269717325d2fbf56f0a25fab20352a4
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757697"
 ---
 # <a name="conversationindex"></a>ConversationIndex
@@ -63,7 +63,7 @@ Keine.
 
 Der Textwert stellt einen binären Bezeichner **Base64Binary** -Format dar. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Exchange-Servers, der die Clientzugriffs-Serverrolle installiert ist.
   

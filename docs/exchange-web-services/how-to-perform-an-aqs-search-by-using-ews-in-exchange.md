@@ -10,7 +10,7 @@ ms.openlocfilehash: dc859e24fa80cd5627477182979c9cc9527818d6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756997"
 ---
 # <a name="perform-an-aqs-search-by-using-ews-in-exchange"></a>Führen Sie eine AQS-Suche mithilfe der EWS in Exchange
@@ -40,16 +40,16 @@ Wenn Sie ein Wert ohne ein Schlüsselwort angegeben wird, werden alle indizierte
 
 |**Schlüsselwort**|**Werttyp**|**Beispiel**|
 |:-----|:-----|:-----|
-|subject  <br/> |String  <br/> |Betreff: Projekt  <br/> |
-|body  <br/> |String  <br/> |Body: Verkaufszahlen  <br/> |
-|Anlage  <br/> |String  <br/> |Anhang: Bericht  <br/> |
-|in  <br/> |String  <br/> |an: "Sadie Daniels"  <br/> |
-|Von  <br/> |String  <br/> |von: hoffe  <br/> |
-|cc  <br/> |String  <br/> |cc: "Ronnie Sturgis"  <br/> |
-|bcc  <br/> |String  <br/> |Bcc:mack  <br/> |
-|participants  <br/> |String  <br/> |Teilnehmer: sadie  <br/> |
+|subject  <br/> |Zeichenfolge  <br/> |Betreff: Projekt  <br/> |
+|body  <br/> |Zeichenfolge  <br/> |Body: Verkaufszahlen  <br/> |
+|Anlage  <br/> |Zeichenfolge  <br/> |Anhang: Bericht  <br/> |
+|in  <br/> |Zeichenfolge  <br/> |an: "Sadie Daniels"  <br/> |
+|Von  <br/> |Zeichenfolge  <br/> |von: hoffe  <br/> |
+|cc  <br/> |Zeichenfolge  <br/> |cc: "Ronnie Sturgis"  <br/> |
+|bcc  <br/> |Zeichenfolge  <br/> |Bcc:mack  <br/> |
+|participants  <br/> |Zeichenfolge  <br/> |Teilnehmer: sadie  <br/> |
 |category  <br/> |String  <br/> |Kategorie: Projekt  <br/> |
-|Wichtigkeit  <br/> |String  <br/> |Wichtigkeit: hoch  <br/> |
+|Wichtigkeit  <br/> |Zeichenfolge  <br/> |Wichtigkeit: hoch  <br/> |
 |Art  <br/> |Elementtyp  <br/> |Art-Besprechungen:  <br/> |
 |gesendet  <br/> |Date  <br/> |gesendet: 12/10/2013  <br/> |
 |empfangen  <br/> |Date  <br/> |empfangen: gestern  <br/> |

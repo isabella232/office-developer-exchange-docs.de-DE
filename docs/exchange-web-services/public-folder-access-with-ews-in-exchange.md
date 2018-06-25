@@ -10,7 +10,7 @@ ms.openlocfilehash: cfa089ba617dc760ed12883590e141debb5ecd9b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757126"
 ---
 # <a name="public-folder-access-with-ews-in-exchange"></a>Zugriff auf Öffentliche Ordner mit EWS in Exchange

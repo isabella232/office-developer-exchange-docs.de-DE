@@ -16,7 +16,7 @@ ms.openlocfilehash: 73912bc1981c5d54040f7c4a563ad805916fe721
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757605"
 ---
 # <a name="constant"></a>Konstante
@@ -49,7 +49,7 @@ Keine.
 |[Enthält](contains.md) <br/> |Stellt einen Suchausdruck dar, der bestimmt, ob eine angegebene Eigenschaft den angegebenen konstanten Zeichenfolgewert enthält.  <br/> |
 |[FieldURIOrConstant](fielduriorconstant.md) <br/> |Stellt eine Eigenschaft oder einen konstanten Wert dar, der beim Vergleich mit einer anderen Eigenschaft verwendet werden soll.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der String-Wert in das **Value** -Attribut muss in den Typ umgewandelt werden können, die mit der verglichen werden soll. Wenn Sie eine Datum/Uhrzeit-Eigenschaft mit einem konstanten Wert verglichen werden, muss der Zeichenfolgenwert beispielsweise einen Datum/Uhrzeit darstellen. 
   

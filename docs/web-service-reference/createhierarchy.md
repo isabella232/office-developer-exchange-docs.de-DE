@@ -16,7 +16,7 @@ ms.openlocfilehash: a5b428fe453dbc31761309b017367a7d25a01b76
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757765"
 ---
 # <a name="createhierarchy"></a>CreateHierarchy
@@ -50,7 +50,7 @@ Keine.
 
 Der Textwert **true** gibt an, dass ein Client eine Hierarchietabelle erstellen kann. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft wird nur auf Folder-Objekten verwendet.
   

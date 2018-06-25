@@ -12,7 +12,7 @@ ms.openlocfilehash: b695806f543827d78aea139ffcbd7e4af58b9fef
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757227"
 ---
 # <a name="addentityfeedback-operation"></a>AddEntityFeedback-Vorgang
@@ -68,13 +68,13 @@ Die Soap-Anforderung enthält ein einzelnes Element **EntityFeedbackEntries**. D
 |**ClientEventTimeLocal** <br/> |Ja  <br/> |Die lokale Uhrzeit des Ereignisses auf dem Client aufgetreten ist.  <br/> |DateTime  <br/> |
 |**ClientId** <br/> |Ja  <br/> |Der Typ des Clients (z. B. Outlook, OWA usw.).  <br/> |ClientIDType-Aufzählung  <br/> |
 |**ClientSessionId** <br/> |Ja  <br/> |GUID, identifiziert die ID der Sitzung. Auf dem Client generiert.  <br/> |GUID  <br/> |
-|**ClientVersion** <br/> |Ja  <br/> |Version des Clients (z. B. 15.01.0101.000).  <br/> |String  <br/> |
+|**ClientVersion** <br/> |Ja  <br/> |Version des Clients (z. B. 15.01.0101.000).  <br/> |Zeichenfolge  <br/> |
 |**EntityAddSource** <br/> |Nein  <br/> |Quelle für EntityAded (z. B., EntityRelevanceAPI, Typen, eingefügt werden).  <br/> |EntityAddSource-Aufzählung  <br/> |
 |**EntrySequenceNumber** <br/> |Ja  <br/> |Inkrementelle eine ganze Zahl pro Sitzung. Zum Auffinden von Datenverlusten verwendet.  <br/> |Int  <br/> |
-|**EventType** <br/> |Ja  <br/> |Typ des Ereignisses (z. B., Entität hinzugefügt, entfernt Entität).  <br/> |String  <br/> |
+|**EventType** <br/> |Ja  <br/> |Typ des Ereignisses (z. B., Entität hinzugefügt, entfernt Entität).  <br/> |Zeichenfolge  <br/> |
 |**JSONPropertyBag** <br/> |Nein  <br/> |Zusätzliche Eigenschaften, die das Ereignis (JSON Blob Schlüssel/Wert-Paare) zugeordnet.  <br/> |JSON Blob  <br/> |
 |**TargetEntityList** <br/> |Nein  <br/> |Liste der Entitäten, die mit dem Ereignis verknüpft ist.  <br/> |JSON-Zeichenfolge  <br/> |
-|**Transaktions-ID** <br/> |Nein  <br/> |ID (GUID) korrelieren der ID im abfrageprotokolle.  <br/> |String  <br/> |
+|**Transaktions-ID** <br/> |Nein  <br/> |ID (GUID) korrelieren der ID im abfrageprotokolle.  <br/> |Zeichenfolge  <br/> |
    
 ### <a name="successful-addentityfeedback-operation-response"></a>Erfolgreiche AddEntityFeedback Vorgangsantwort
 

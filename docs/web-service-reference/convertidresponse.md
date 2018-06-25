@@ -16,7 +16,7 @@ ms.openlocfilehash: 80299afebcebf15546b0fdbe14f0b08960527a47
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757712"
 ---
 # <a name="convertidresponse"></a>ConvertIdResponse
@@ -48,7 +48,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Antwortnachrichten, die innerhalb des [ResponseMessages](responsemessages.md) -Elements enthalten sind, werden Instanzen des Objekts ConvertIdResponseMessageType. 
   

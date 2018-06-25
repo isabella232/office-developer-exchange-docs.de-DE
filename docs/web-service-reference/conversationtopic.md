@@ -16,7 +16,7 @@ ms.openlocfilehash: 30b919dec3e65ca1961aac3f9c11c72cf97d707f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757713"
 ---
 # <a name="conversationtopic"></a>ConversationTopic
@@ -64,7 +64,7 @@ Keine.
 
 Der Textwert stellt das Thema für Unterhaltungsthreads dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Das Unterhaltungsthema wird in der Regel den Betreff der ersten E-mail-Nachricht in einem Thread.
   

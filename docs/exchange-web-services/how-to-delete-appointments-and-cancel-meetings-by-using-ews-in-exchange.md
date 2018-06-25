@@ -10,7 +10,7 @@ ms.openlocfilehash: bd7eac803fedffc51133324259f68fd25652fcff
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756886"
 ---
 # <a name="delete-appointments-and-cancel-meetings-by-using-ews-in-exchange"></a>Löschen von Terminen und Abbrechen an Besprechungen mithilfe von EWS in Exchange

@@ -12,7 +12,7 @@ ms.openlocfilehash: 75fee4bd793497b1758bb848c7aa7dcc4d1a4e8e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757239"
 ---
 # <a name="address-contacttype"></a>Adresse (Kontakttyp den)

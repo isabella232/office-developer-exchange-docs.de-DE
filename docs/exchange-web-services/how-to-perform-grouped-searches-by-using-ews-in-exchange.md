@@ -10,7 +10,7 @@ ms.openlocfilehash: 63a796e2c724351c15287a5596a9a063954f8b40
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756977"
 ---
 # <a name="perform-grouped-searches-by-using-ews-in-exchange"></a>Führen Sie gruppierte Suchvorgänge in Exchange mithilfe der Exchange-Webdienste aus

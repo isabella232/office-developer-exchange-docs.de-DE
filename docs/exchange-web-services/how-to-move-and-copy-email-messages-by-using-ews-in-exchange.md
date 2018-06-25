@@ -10,7 +10,7 @@ ms.openlocfilehash: 16f0604a16785c34dd04bdabedeedd331668a479
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756966"
 ---
 # <a name="move-and-copy-email-messages-by-using-ews-in-exchange"></a>Verschieben und Kopieren von e-Mail-Nachrichten mithilfe der EWS in Exchange
