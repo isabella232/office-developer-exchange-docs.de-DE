@@ -12,33 +12,33 @@ ms.openlocfilehash: 2b1267ce6822c7bad05ad2ef88547ba75c632ab0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19829700"
 ---
-# <a name="getuserretentionpolicytags-operation"></a><span data-ttu-id="1e31e-103">GetUserRetentionPolicyTags-Vorgang</span><span class="sxs-lookup"><span data-stu-id="1e31e-103">GetUserRetentionPolicyTags operation</span></span>
+# <a name="getuserretentionpolicytags-operation"></a><span data-ttu-id="4e1ae-103">GetUserRetentionPolicyTags-Vorgang</span><span class="sxs-lookup"><span data-stu-id="4e1ae-103">GetUserRetentionPolicyTags operation</span></span>
 
-<span data-ttu-id="1e31e-104">Hier finden Sie Informationen zum **GetUserRetentionPolicyTags** EWS-Vorgang.</span><span class="sxs-lookup"><span data-stu-id="1e31e-104">Find information about the **GetUserRetentionPolicyTags** EWS operation.</span></span> 
+<span data-ttu-id="4e1ae-104">Hier finden Sie Informationen zum **GetUserRetentionPolicyTags** EWS-Vorgang.</span><span class="sxs-lookup"><span data-stu-id="4e1ae-104">Find information about the **GetUserRetentionPolicyTags** EWS operation.</span></span> 
   
-<span data-ttu-id="1e31e-105">Der Vorgang **GetUserRetentionPolicyTags** Ruft eine Liste aller Standard, Systemordner und persönliche Tags, einen Benutzer mithilfe einer Systemrichtlinie zugeordnet sind oder vom Benutzer übernommen wurden.</span><span class="sxs-lookup"><span data-stu-id="1e31e-105">The **GetUserRetentionPolicyTags** operation gets a list of all default, system folder, and personal tags that are associated with a user by means of a system policy or that were applied by the user.</span></span> 
+<span data-ttu-id="4e1ae-105">Der Vorgang **GetUserRetentionPolicyTags** Ruft eine Liste aller Standard, Systemordner und persönliche Tags, einen Benutzer mithilfe einer Systemrichtlinie zugeordnet sind oder vom Benutzer übernommen wurden.</span><span class="sxs-lookup"><span data-stu-id="4e1ae-105">The **GetUserRetentionPolicyTags** operation gets a list of all default, system folder, and personal tags that are associated with a user by means of a system policy or that were applied by the user.</span></span> 
   
-<span data-ttu-id="1e31e-106">Dieser Vorgang wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="1e31e-106">This operation was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="4e1ae-106">Dieser Vorgang wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="4e1ae-106">This operation was introduced in Exchange Server 2013.</span></span>
   
-## <a name="using-the-getuserretentionpolicytags-operation"></a><span data-ttu-id="1e31e-107">Verwenden des GetUserRetentionPolicyTags-Vorgangs</span><span class="sxs-lookup"><span data-stu-id="1e31e-107">Using the GetUserRetentionPolicyTags operation</span></span>
+## <a name="using-the-getuserretentionpolicytags-operation"></a><span data-ttu-id="4e1ae-107">Verwenden des GetUserRetentionPolicyTags-Vorgangs</span><span class="sxs-lookup"><span data-stu-id="4e1ae-107">Using the GetUserRetentionPolicyTags operation</span></span>
 
-<span data-ttu-id="1e31e-108">Dieser Vorgang gibt den Anzeigenamen, Aufbewahrung ID, Aufbewahrungszeitraum, Aufbewahrung Typ, Aufbewahrungsaktion, und Beschreibung Tags und die Werte für die Eigenschaften **IsVisible**, **OptedInto**und **IsArchive** zurück.</span><span class="sxs-lookup"><span data-stu-id="1e31e-108">This operation returns the display name, retention ID, retention period, retention type, retention action, and description tags, and the values for the **IsVisible**, **OptedInto**, and **IsArchive** properties.</span></span> 
+<span data-ttu-id="4e1ae-108">Dieser Vorgang gibt den Anzeigenamen, Aufbewahrung ID, Aufbewahrungszeitraum, Aufbewahrung Typ, Aufbewahrungsaktion, und Beschreibung Tags und die Werte für die Eigenschaften **IsVisible**, **OptedInto**und **IsArchive** zurück.</span><span class="sxs-lookup"><span data-stu-id="4e1ae-108">This operation returns the display name, retention ID, retention period, retention type, retention action, and description tags, and the values for the **IsVisible**, **OptedInto**, and **IsArchive** properties.</span></span> 
   
-### <a name="getuserretentionpolicytags-operation-soap-headers"></a><span data-ttu-id="1e31e-109">GetUserRetentionPolicyTags Vorgang SOAP-Header</span><span class="sxs-lookup"><span data-stu-id="1e31e-109">GetUserRetentionPolicyTags operation SOAP headers</span></span>
+### <a name="getuserretentionpolicytags-operation-soap-headers"></a><span data-ttu-id="4e1ae-109">GetUserRetentionPolicyTags Vorgang SOAP-Header</span><span class="sxs-lookup"><span data-stu-id="4e1ae-109">GetUserRetentionPolicyTags operation SOAP headers</span></span>
 
-<span data-ttu-id="1e31e-110">Der Vorgang **GetUserRetentionPolicyTags** können die SOAP-Header, die in der folgenden Tabelle aufgelistet sind.</span><span class="sxs-lookup"><span data-stu-id="1e31e-110">The **GetUserRetentionPolicyTags** operation can use the SOAP headers that are listed in the following table.</span></span> 
+<span data-ttu-id="4e1ae-110">Der Vorgang **GetUserRetentionPolicyTags** können die SOAP-Header, die in der folgenden Tabelle aufgelistet sind.</span><span class="sxs-lookup"><span data-stu-id="4e1ae-110">The **GetUserRetentionPolicyTags** operation can use the SOAP headers that are listed in the following table.</span></span> 
   
-|<span data-ttu-id="1e31e-111">**Headername**</span><span class="sxs-lookup"><span data-stu-id="1e31e-111">**Header name**</span></span>|<span data-ttu-id="1e31e-112">**Element**</span><span class="sxs-lookup"><span data-stu-id="1e31e-112">**Element**</span></span>|<span data-ttu-id="1e31e-113">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="1e31e-113">**Description**</span></span>|
+|<span data-ttu-id="4e1ae-111">**Headername**</span><span class="sxs-lookup"><span data-stu-id="4e1ae-111">**Header name**</span></span>|<span data-ttu-id="4e1ae-112">**Element**</span><span class="sxs-lookup"><span data-stu-id="4e1ae-112">**Element**</span></span>|<span data-ttu-id="4e1ae-113">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="4e1ae-113">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="1e31e-114">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="1e31e-114">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="1e31e-115">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="1e31e-115">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="1e31e-p101">Gibt die Schemaversion für die Vorgangsanforderung an. Dies gilt für eine Anforderung.</span><span class="sxs-lookup"><span data-stu-id="1e31e-p101">Identifies the schema version for the operation request. This is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="1e31e-118">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="1e31e-118">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="1e31e-119">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="1e31e-119">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="1e31e-p102">Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dies gilt für eine Antwort.</span><span class="sxs-lookup"><span data-stu-id="1e31e-p102">Identifies the version of the server that responded to the request. This is applicable to a response.</span></span>  <br/> |
+|<span data-ttu-id="4e1ae-114">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="4e1ae-114">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="4e1ae-115">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="4e1ae-115">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="4e1ae-p101">Gibt die Schemaversion für die Vorgangsanforderung an. Dies gilt für eine Anforderung.</span><span class="sxs-lookup"><span data-stu-id="4e1ae-p101">Identifies the schema version for the operation request. This is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="4e1ae-118">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="4e1ae-118">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="4e1ae-119">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="4e1ae-119">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="4e1ae-p102">Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dies gilt für eine Antwort.</span><span class="sxs-lookup"><span data-stu-id="4e1ae-p102">Identifies the version of the server that responded to the request. This is applicable to a response.</span></span>  <br/> |
    
-## <a name="getuserretentionpolicytags-operation-request-example"></a><span data-ttu-id="1e31e-122">GetUserRetentionPolicyTags Vorgang anforderungsbeispiel</span><span class="sxs-lookup"><span data-stu-id="1e31e-122">GetUserRetentionPolicyTags operation request example</span></span>
+## <a name="getuserretentionpolicytags-operation-request-example"></a><span data-ttu-id="4e1ae-122">GetUserRetentionPolicyTags Vorgang anforderungsbeispiel</span><span class="sxs-lookup"><span data-stu-id="4e1ae-122">GetUserRetentionPolicyTags operation request example</span></span>
 
-<span data-ttu-id="1e31e-123">Im folgenden Beispiel wird eine **GetUserRetentionPolicyTags** Vorgang Anforderung veranschaulicht eine Liste der Kategorien für den aktuellen Benutzer abzurufen.</span><span class="sxs-lookup"><span data-stu-id="1e31e-123">The following example of a **GetUserRetentionPolicyTags** operation request shows how to get a list of tags for the current user.</span></span> 
+<span data-ttu-id="4e1ae-123">Im folgenden Beispiel wird eine **GetUserRetentionPolicyTags** Vorgang Anforderung veranschaulicht eine Liste der Kategorien für den aktuellen Benutzer abzurufen.</span><span class="sxs-lookup"><span data-stu-id="4e1ae-123">The following example of a **GetUserRetentionPolicyTags** operation request shows how to get a list of tags for the current user.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -56,13 +56,13 @@ ms.locfileid: "19829700"
 </soap:Envelope>
 ```
 
-<span data-ttu-id="1e31e-124">Die Anforderung SOAP-Text enthält das folgende Element:</span><span class="sxs-lookup"><span data-stu-id="1e31e-124">The request SOAP body contains the following element:</span></span>
+<span data-ttu-id="4e1ae-124">Die Anforderung SOAP-Text enthält das folgende Element:</span><span class="sxs-lookup"><span data-stu-id="4e1ae-124">The request SOAP body contains the following element:</span></span>
   
-- [<span data-ttu-id="1e31e-125">GetUserRetentionPolicyTags</span><span class="sxs-lookup"><span data-stu-id="1e31e-125">GetUserRetentionPolicyTags</span></span>](getuserretentionpolicytags.md)
+- [<span data-ttu-id="4e1ae-125">GetUserRetentionPolicyTags</span><span class="sxs-lookup"><span data-stu-id="4e1ae-125">GetUserRetentionPolicyTags</span></span>](getuserretentionpolicytags.md)
     
-## <a name="successful-getuserretentionpolicytags-operation-response"></a><span data-ttu-id="1e31e-126">Erfolgreiche GetUserRetentionPolicyTags Vorgangsantwort</span><span class="sxs-lookup"><span data-stu-id="1e31e-126">Successful GetUserRetentionPolicyTags operation response</span></span>
+## <a name="successful-getuserretentionpolicytags-operation-response"></a><span data-ttu-id="4e1ae-126">Erfolgreiche GetUserRetentionPolicyTags Vorgangsantwort</span><span class="sxs-lookup"><span data-stu-id="4e1ae-126">Successful GetUserRetentionPolicyTags operation response</span></span>
 
-<span data-ttu-id="1e31e-127">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetUserRetentionPolicyTags** Vorgang an.</span><span class="sxs-lookup"><span data-stu-id="1e31e-127">The following example shows a successful response to a **GetUserRetentionPolicyTags** operation request.</span></span> 
+<span data-ttu-id="4e1ae-127">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetUserRetentionPolicyTags** Vorgang an.</span><span class="sxs-lookup"><span data-stu-id="4e1ae-127">The following example shows a successful response to a **GetUserRetentionPolicyTags** operation request.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -157,41 +157,41 @@ ms.locfileid: "19829700"
 
 ```
 
-<span data-ttu-id="1e31e-128">Die Antwort SOAP-Text enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="1e31e-128">The response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="4e1ae-128">Die Antwort SOAP-Text enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="4e1ae-128">The response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="1e31e-129">GetUserRetentionPolicyTagsResponse</span><span class="sxs-lookup"><span data-stu-id="1e31e-129">GetUserRetentionPolicyTagsResponse</span></span>](getuserretentionpolicytagsresponse.md)
+- [<span data-ttu-id="4e1ae-129">GetUserRetentionPolicyTagsResponse</span><span class="sxs-lookup"><span data-stu-id="4e1ae-129">GetUserRetentionPolicyTagsResponse</span></span>](getuserretentionpolicytagsresponse.md)
     
-- [<span data-ttu-id="1e31e-130">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="1e31e-130">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="4e1ae-130">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="4e1ae-130">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="1e31e-131">RetentionPolicyTags</span><span class="sxs-lookup"><span data-stu-id="1e31e-131">RetentionPolicyTags</span></span>](retentionpolicytags.md)
+- [<span data-ttu-id="4e1ae-131">RetentionPolicyTags</span><span class="sxs-lookup"><span data-stu-id="4e1ae-131">RetentionPolicyTags</span></span>](retentionpolicytags.md)
     
-- [<span data-ttu-id="1e31e-132">RetentionPolicyTag</span><span class="sxs-lookup"><span data-stu-id="1e31e-132">RetentionPolicyTag</span></span>](retentionpolicytag.md)
+- [<span data-ttu-id="4e1ae-132">RetentionPolicyTag</span><span class="sxs-lookup"><span data-stu-id="4e1ae-132">RetentionPolicyTag</span></span>](retentionpolicytag.md)
     
-- [<span data-ttu-id="1e31e-133">DisplayName (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="1e31e-133">DisplayName (string)</span></span>](displayname-string.md)
+- [<span data-ttu-id="4e1ae-133">DisplayName (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="4e1ae-133">DisplayName (string)</span></span>](displayname-string.md)
     
-- [<span data-ttu-id="1e31e-134">Retentionid vom</span><span class="sxs-lookup"><span data-stu-id="1e31e-134">RetentionId</span></span>](retentionid.md)
+- [<span data-ttu-id="4e1ae-134">Retentionid vom</span><span class="sxs-lookup"><span data-stu-id="4e1ae-134">RetentionId</span></span>](retentionid.md)
     
-- [<span data-ttu-id="1e31e-135">RetentionPeriod</span><span class="sxs-lookup"><span data-stu-id="1e31e-135">RetentionPeriod</span></span>](retentionperiod.md)
+- [<span data-ttu-id="4e1ae-135">RetentionPeriod</span><span class="sxs-lookup"><span data-stu-id="4e1ae-135">RetentionPeriod</span></span>](retentionperiod.md)
     
-- [<span data-ttu-id="1e31e-136">Typ (ElcFolderType)</span><span class="sxs-lookup"><span data-stu-id="1e31e-136">Type (ElcFolderType)</span></span>](type-elcfoldertype.md)
+- [<span data-ttu-id="4e1ae-136">Typ (ElcFolderType)</span><span class="sxs-lookup"><span data-stu-id="4e1ae-136">Type (ElcFolderType)</span></span>](type-elcfoldertype.md)
     
-- [<span data-ttu-id="1e31e-137">RetentionAction</span><span class="sxs-lookup"><span data-stu-id="1e31e-137">RetentionAction</span></span>](retentionaction.md)
+- [<span data-ttu-id="4e1ae-137">RetentionAction</span><span class="sxs-lookup"><span data-stu-id="4e1ae-137">RetentionAction</span></span>](retentionaction.md)
     
-- [<span data-ttu-id="1e31e-138">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1e31e-138">Description</span></span>](description.md)
+- [<span data-ttu-id="4e1ae-138">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4e1ae-138">Description</span></span>](description.md)
     
-- [<span data-ttu-id="1e31e-139">IsVisible</span><span class="sxs-lookup"><span data-stu-id="1e31e-139">IsVisible</span></span>](isvisible.md)
+- [<span data-ttu-id="4e1ae-139">IsVisible</span><span class="sxs-lookup"><span data-stu-id="4e1ae-139">IsVisible</span></span>](isvisible.md)
     
-- [<span data-ttu-id="1e31e-140">OptedInto</span><span class="sxs-lookup"><span data-stu-id="1e31e-140">OptedInto</span></span>](optedinto.md)
+- [<span data-ttu-id="4e1ae-140">OptedInto</span><span class="sxs-lookup"><span data-stu-id="4e1ae-140">OptedInto</span></span>](optedinto.md)
     
-- [<span data-ttu-id="1e31e-141">IsArchive</span><span class="sxs-lookup"><span data-stu-id="1e31e-141">IsArchive</span></span>](isarchive.md)
+- [<span data-ttu-id="4e1ae-141">IsArchive</span><span class="sxs-lookup"><span data-stu-id="4e1ae-141">IsArchive</span></span>](isarchive.md)
     
-## <a name="getuserretentionpolicytags-operation-error-response"></a><span data-ttu-id="1e31e-142">GetUserRetentionPolicyTags Vorgang Fehlerantwort</span><span class="sxs-lookup"><span data-stu-id="1e31e-142">GetUserRetentionPolicyTags operation error response</span></span>
+## <a name="getuserretentionpolicytags-operation-error-response"></a><span data-ttu-id="4e1ae-142">GetUserRetentionPolicyTags Vorgang Fehlerantwort</span><span class="sxs-lookup"><span data-stu-id="4e1ae-142">GetUserRetentionPolicyTags operation error response</span></span>
 
-<span data-ttu-id="1e31e-143">Fehlercodes, die für EWS generisch sind, finden Sie unter [ResponseCode](responsecode.md).</span><span class="sxs-lookup"><span data-stu-id="1e31e-143">For error codes that are generic to EWS, see [ResponseCode](responsecode.md).</span></span>
+<span data-ttu-id="4e1ae-143">Fehlercodes, die für EWS generisch sind, finden Sie unter [ResponseCode](responsecode.md).</span><span class="sxs-lookup"><span data-stu-id="4e1ae-143">For error codes that are generic to EWS, see [ResponseCode](responsecode.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="1e31e-144">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1e31e-144">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4e1ae-144">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4e1ae-144">See also</span></span>
 
 
 
-[<span data-ttu-id="1e31e-145">Aufbewahrungsrichtlinien in Exchange-Webdienste</span><span class="sxs-lookup"><span data-stu-id="1e31e-145">Retention policies in EWS</span></span>](http://msdn.microsoft.com/library/a132872f-0228-4bcb-aac2-bf64fb07e58e%28Office.15%29.aspx)
+[<span data-ttu-id="4e1ae-145">Aufbewahrungsrichtlinien in Exchange-Webdienste</span><span class="sxs-lookup"><span data-stu-id="4e1ae-145">Retention policies in EWS</span></span>](http://msdn.microsoft.com/library/a132872f-0228-4bcb-aac2-bf64fb07e58e%28Office.15%29.aspx)
 

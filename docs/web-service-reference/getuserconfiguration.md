@@ -16,12 +16,12 @@ ms.openlocfilehash: 81f2ca4995de69d6547412ec699a2ceaddcce385
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19829688"
 ---
-# <a name="getuserconfiguration"></a><span data-ttu-id="1bcaa-103">GetUserConfiguration</span><span class="sxs-lookup"><span data-stu-id="1bcaa-103">GetUserConfiguration</span></span>
+# <a name="getuserconfiguration"></a><span data-ttu-id="bd39a-103">GetUserConfiguration</span><span class="sxs-lookup"><span data-stu-id="bd39a-103">GetUserConfiguration</span></span>
 
-<span data-ttu-id="1bcaa-104">Das **GetUserConfiguration** -Element darstellen eine Anforderung an eine Benutzer-Konfigurationsobjekt abrufen.</span><span class="sxs-lookup"><span data-stu-id="1bcaa-104">The **GetUserConfiguration** element represent a request to get a user configuration object.</span></span> 
+<span data-ttu-id="bd39a-104">Das **GetUserConfiguration** -Element darstellen eine Anforderung an eine Benutzer-Konfigurationsobjekt abrufen.</span><span class="sxs-lookup"><span data-stu-id="bd39a-104">The **GetUserConfiguration** element represent a request to get a user configuration object.</span></span> 
   
 ```XML
 <GetUserConfiguration>
@@ -30,46 +30,46 @@ ms.locfileid: "19829688"
 </GetUserConfiguration>
 ```
 
- <span data-ttu-id="1bcaa-105">**GetUserConfigurationType**</span><span class="sxs-lookup"><span data-stu-id="1bcaa-105">**GetUserConfigurationType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="1bcaa-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="1bcaa-106">Attributes and elements</span></span>
+ <span data-ttu-id="bd39a-105">**GetUserConfigurationType**</span><span class="sxs-lookup"><span data-stu-id="bd39a-105">**GetUserConfigurationType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="bd39a-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="bd39a-106">Attributes and elements</span></span>
 
-<span data-ttu-id="1bcaa-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="1bcaa-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="bd39a-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="bd39a-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="1bcaa-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="1bcaa-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="bd39a-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="bd39a-108">Attributes</span></span>
 
-<span data-ttu-id="1bcaa-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="1bcaa-109">None.</span></span>
+<span data-ttu-id="bd39a-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="bd39a-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="1bcaa-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1bcaa-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="bd39a-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="bd39a-110">Child elements</span></span>
 
-|<span data-ttu-id="1bcaa-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="1bcaa-111">**Element**</span></span>|<span data-ttu-id="1bcaa-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="1bcaa-112">**Description**</span></span>|
+|<span data-ttu-id="bd39a-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="bd39a-111">**Element**</span></span>|<span data-ttu-id="bd39a-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="bd39a-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="1bcaa-113">UserConfigurationName</span><span class="sxs-lookup"><span data-stu-id="1bcaa-113">UserConfigurationName</span></span>](userconfigurationname.md) <br/> |<span data-ttu-id="1bcaa-114">Der Name eines Benutzers Configuration-Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="1bcaa-114">Represents the name of a user configuration object.</span></span> <span data-ttu-id="1bcaa-115">Dieses Element muss in einer Anforderung GetUserConfiguration vorhanden sein.</span><span class="sxs-lookup"><span data-stu-id="1bcaa-115">This element must be present in a GetUserConfiguration request.</span></span>  <br/> |
-|[<span data-ttu-id="1bcaa-116">UserConfigurationProperties</span><span class="sxs-lookup"><span data-stu-id="1bcaa-116">UserConfigurationProperties</span></span>](userconfigurationproperties.md) <br/> |<span data-ttu-id="1bcaa-117">Gibt die Benutzer Konfiguration-Eigenschaft zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1bcaa-117">Specifies the user configuration property types to return.</span></span> <span data-ttu-id="1bcaa-118">Dieses Element muss in einer Anforderung GetUserConfiguration vorhanden sein.</span><span class="sxs-lookup"><span data-stu-id="1bcaa-118">This element must be present in a GetUserConfiguration request.</span></span>  <br/> |
+|[<span data-ttu-id="bd39a-113">UserConfigurationName</span><span class="sxs-lookup"><span data-stu-id="bd39a-113">UserConfigurationName</span></span>](userconfigurationname.md) <br/> |<span data-ttu-id="bd39a-114">Der Name eines Benutzers Configuration-Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="bd39a-114">Represents the name of a user configuration object.</span></span> <span data-ttu-id="bd39a-115">Dieses Element muss in einer Anforderung GetUserConfiguration vorhanden sein.</span><span class="sxs-lookup"><span data-stu-id="bd39a-115">This element must be present in a GetUserConfiguration request.</span></span>  <br/> |
+|[<span data-ttu-id="bd39a-116">UserConfigurationProperties</span><span class="sxs-lookup"><span data-stu-id="bd39a-116">UserConfigurationProperties</span></span>](userconfigurationproperties.md) <br/> |<span data-ttu-id="bd39a-117">Gibt die Benutzer Konfiguration-Eigenschaft zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="bd39a-117">Specifies the user configuration property types to return.</span></span> <span data-ttu-id="bd39a-118">Dieses Element muss in einer Anforderung GetUserConfiguration vorhanden sein.</span><span class="sxs-lookup"><span data-stu-id="bd39a-118">This element must be present in a GetUserConfiguration request.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="1bcaa-119">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1bcaa-119">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="bd39a-119">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="bd39a-119">Parent elements</span></span>
 
-<span data-ttu-id="1bcaa-120">Keine.</span><span class="sxs-lookup"><span data-stu-id="1bcaa-120">None.</span></span>
+<span data-ttu-id="bd39a-120">Keine.</span><span class="sxs-lookup"><span data-stu-id="bd39a-120">None.</span></span>
   
-## <a name="text-value"></a><span data-ttu-id="1bcaa-121">Textwert</span><span class="sxs-lookup"><span data-stu-id="1bcaa-121">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="bd39a-121">Textwert</span><span class="sxs-lookup"><span data-stu-id="bd39a-121">Text value</span></span>
 
-<span data-ttu-id="1bcaa-122">Keine.</span><span class="sxs-lookup"><span data-stu-id="1bcaa-122">None.</span></span>
+<span data-ttu-id="bd39a-122">Keine.</span><span class="sxs-lookup"><span data-stu-id="bd39a-122">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="1bcaa-123">Hinweise</span><span class="sxs-lookup"><span data-stu-id="1bcaa-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bd39a-123">Hinweise</span><span class="sxs-lookup"><span data-stu-id="bd39a-123">Remarks</span></span>
 
-<span data-ttu-id="1bcaa-124">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="1bcaa-124">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="bd39a-124">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="bd39a-124">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="1bcaa-125">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="1bcaa-125">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="bd39a-125">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="bd39a-125">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="1bcaa-126">Namespace</span><span class="sxs-lookup"><span data-stu-id="1bcaa-126">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="1bcaa-127">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="1bcaa-127">Schema Name</span></span>  <br/> |<span data-ttu-id="1bcaa-128">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="1bcaa-128">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="1bcaa-129">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="1bcaa-129">Validation File</span></span>  <br/> |<span data-ttu-id="1bcaa-130">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="1bcaa-130">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="1bcaa-131">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="1bcaa-131">Can be Empty</span></span>  <br/> |<span data-ttu-id="1bcaa-132">False</span><span class="sxs-lookup"><span data-stu-id="1bcaa-132">False</span></span>  <br/> |
+|<span data-ttu-id="bd39a-126">Namespace</span><span class="sxs-lookup"><span data-stu-id="bd39a-126">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="bd39a-127">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="bd39a-127">Schema Name</span></span>  <br/> |<span data-ttu-id="bd39a-128">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="bd39a-128">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="bd39a-129">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="bd39a-129">Validation File</span></span>  <br/> |<span data-ttu-id="bd39a-130">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="bd39a-130">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="bd39a-131">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="bd39a-131">Can be Empty</span></span>  <br/> |<span data-ttu-id="bd39a-132">False</span><span class="sxs-lookup"><span data-stu-id="bd39a-132">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="1bcaa-133">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1bcaa-133">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bd39a-133">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="bd39a-133">See also</span></span>
 
 
 
-- [<span data-ttu-id="1bcaa-134">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="1bcaa-134">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="bd39a-134">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="bd39a-134">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

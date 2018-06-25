@@ -16,20 +16,20 @@ ms.openlocfilehash: a8f947d37c1335f1eaba5550a2b3a0aece0246ee
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19829735"
 ---
-# <a name="globalitemclasses"></a><span data-ttu-id="32381-103">GlobalItemClasses</span><span class="sxs-lookup"><span data-stu-id="32381-103">GlobalItemClasses</span></span>
+# <a name="globalitemclasses"></a><span data-ttu-id="d5a94-103">GlobalItemClasses</span><span class="sxs-lookup"><span data-stu-id="d5a94-103">GlobalItemClasses</span></span>
 
-<span data-ttu-id="32381-104">Das **GlobalItemClasses** -Element enthält eine Liste der Artikelklassen, die die Element-Klassen der Unterhaltungselemente in einem Postfach darstellt.</span><span class="sxs-lookup"><span data-stu-id="32381-104">The **GlobalItemClasses** element contains a list of item classes that represents all the item classes of the conversation items in a mailbox.</span></span> 
+<span data-ttu-id="d5a94-104">Das **GlobalItemClasses** -Element enthält eine Liste der Artikelklassen, die die Element-Klassen der Unterhaltungselemente in einem Postfach darstellt.</span><span class="sxs-lookup"><span data-stu-id="d5a94-104">The **GlobalItemClasses** element contains a list of item classes that represents all the item classes of the conversation items in a mailbox.</span></span> 
   
-[<span data-ttu-id="32381-105">FindConversationResponse</span><span class="sxs-lookup"><span data-stu-id="32381-105">FindConversationResponse</span></span>](findconversationresponse.md)
+[<span data-ttu-id="d5a94-105">FindConversationResponse</span><span class="sxs-lookup"><span data-stu-id="d5a94-105">FindConversationResponse</span></span>](findconversationresponse.md)
   
-[<span data-ttu-id="32381-106">Conversations</span><span class="sxs-lookup"><span data-stu-id="32381-106">Conversations</span></span>](conversations-ex15websvcsotherref.md)
+[<span data-ttu-id="d5a94-106">Conversations</span><span class="sxs-lookup"><span data-stu-id="d5a94-106">Conversations</span></span>](conversations-ex15websvcsotherref.md)
   
-[<span data-ttu-id="32381-107">Unterhaltung (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="32381-107">Conversation (ConversationType)</span></span>](conversation-conversationtype.md)
+[<span data-ttu-id="d5a94-107">Unterhaltung (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="d5a94-107">Conversation (ConversationType)</span></span>](conversation-conversationtype.md)
   
-[<span data-ttu-id="32381-108">GlobalItemClasses</span><span class="sxs-lookup"><span data-stu-id="32381-108">GlobalItemClasses</span></span>](globalitemclasses.md)
+[<span data-ttu-id="d5a94-108">GlobalItemClasses</span><span class="sxs-lookup"><span data-stu-id="d5a94-108">GlobalItemClasses</span></span>](globalitemclasses.md)
   
 ```XML
 <GlobalItemClasses>
@@ -37,52 +37,52 @@ ms.locfileid: "19829735"
 </GlobalItemClasses>
 ```
 
- <span data-ttu-id="32381-109">**ArrayOfItemClassType**</span><span class="sxs-lookup"><span data-stu-id="32381-109">**ArrayOfItemClassType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="32381-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="32381-110">Attributes and elements</span></span>
+ <span data-ttu-id="d5a94-109">**ArrayOfItemClassType**</span><span class="sxs-lookup"><span data-stu-id="d5a94-109">**ArrayOfItemClassType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="d5a94-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="d5a94-110">Attributes and elements</span></span>
 
-<span data-ttu-id="32381-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="32381-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="d5a94-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="d5a94-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="32381-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="32381-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="d5a94-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="d5a94-112">Attributes</span></span>
 
-<span data-ttu-id="32381-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="32381-113">None.</span></span>
+<span data-ttu-id="d5a94-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="d5a94-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="32381-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="32381-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="d5a94-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="d5a94-114">Child elements</span></span>
 
-|<span data-ttu-id="32381-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="32381-115">**Element**</span></span>|<span data-ttu-id="32381-116">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="32381-116">**Description**</span></span>|
+|<span data-ttu-id="d5a94-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="d5a94-115">**Element**</span></span>|<span data-ttu-id="d5a94-116">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="d5a94-116">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="32381-117">ItemClass</span><span class="sxs-lookup"><span data-stu-id="32381-117">ItemClass</span></span>](itemclass.md) <br/> |<span data-ttu-id="32381-118">Die Nachrichtenklasse eines Elements darstellt.</span><span class="sxs-lookup"><span data-stu-id="32381-118">Represents the message class of an item.</span></span>  <br/> |
+|[<span data-ttu-id="d5a94-117">ItemClass</span><span class="sxs-lookup"><span data-stu-id="d5a94-117">ItemClass</span></span>](itemclass.md) <br/> |<span data-ttu-id="d5a94-118">Die Nachrichtenklasse eines Elements darstellt.</span><span class="sxs-lookup"><span data-stu-id="d5a94-118">Represents the message class of an item.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="32381-119">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="32381-119">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="d5a94-119">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="d5a94-119">Parent elements</span></span>
 
-|<span data-ttu-id="32381-120">**Element**</span><span class="sxs-lookup"><span data-stu-id="32381-120">**Element**</span></span>|<span data-ttu-id="32381-121">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="32381-121">**Description**</span></span>|
+|<span data-ttu-id="d5a94-120">**Element**</span><span class="sxs-lookup"><span data-stu-id="d5a94-120">**Element**</span></span>|<span data-ttu-id="d5a94-121">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="d5a94-121">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="32381-122">Unterhaltung (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="32381-122">Conversation (ConversationType)</span></span>](conversation-conversationtype.md) <br/> |<span data-ttu-id="32381-123">Stellt eine einfache Unterhaltung dar.</span><span class="sxs-lookup"><span data-stu-id="32381-123">Represents a single conversation.</span></span>  <br/> |
+|[<span data-ttu-id="d5a94-122">Unterhaltung (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="d5a94-122">Conversation (ConversationType)</span></span>](conversation-conversationtype.md) <br/> |<span data-ttu-id="d5a94-123">Stellt eine einfache Unterhaltung dar.</span><span class="sxs-lookup"><span data-stu-id="d5a94-123">Represents a single conversation.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="32381-124">Textwert</span><span class="sxs-lookup"><span data-stu-id="32381-124">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="d5a94-124">Textwert</span><span class="sxs-lookup"><span data-stu-id="d5a94-124">Text value</span></span>
 
-<span data-ttu-id="32381-125">Keine.</span><span class="sxs-lookup"><span data-stu-id="32381-125">None.</span></span>
+<span data-ttu-id="d5a94-125">Keine.</span><span class="sxs-lookup"><span data-stu-id="d5a94-125">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="32381-126">Hinweise</span><span class="sxs-lookup"><span data-stu-id="32381-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d5a94-126">Hinweise</span><span class="sxs-lookup"><span data-stu-id="d5a94-126">Remarks</span></span>
 
-<span data-ttu-id="32381-127">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="32381-127">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="d5a94-127">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="d5a94-127">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="32381-128">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="32381-128">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="d5a94-128">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="d5a94-128">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="32381-129">Namespace</span><span class="sxs-lookup"><span data-stu-id="32381-129">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="32381-130">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="32381-130">Schema name</span></span>  <br/> |<span data-ttu-id="32381-131">Schematypen</span><span class="sxs-lookup"><span data-stu-id="32381-131">Types schema</span></span>  <br/> |
-|<span data-ttu-id="32381-132">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="32381-132">Validation file</span></span>  <br/> |<span data-ttu-id="32381-133">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="32381-133">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="32381-134">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="32381-134">Can be empty</span></span>  <br/> |<span data-ttu-id="32381-135">False</span><span class="sxs-lookup"><span data-stu-id="32381-135">False</span></span>  <br/> |
+|<span data-ttu-id="d5a94-129">Namespace</span><span class="sxs-lookup"><span data-stu-id="d5a94-129">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="d5a94-130">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="d5a94-130">Schema name</span></span>  <br/> |<span data-ttu-id="d5a94-131">Schematypen</span><span class="sxs-lookup"><span data-stu-id="d5a94-131">Types schema</span></span>  <br/> |
+|<span data-ttu-id="d5a94-132">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="d5a94-132">Validation file</span></span>  <br/> |<span data-ttu-id="d5a94-133">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="d5a94-133">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="d5a94-134">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="d5a94-134">Can be empty</span></span>  <br/> |<span data-ttu-id="d5a94-135">False</span><span class="sxs-lookup"><span data-stu-id="d5a94-135">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="32381-136">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="32381-136">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d5a94-136">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d5a94-136">See also</span></span>
 
 
 
-[<span data-ttu-id="32381-137">FindConversation Operation</span><span class="sxs-lookup"><span data-stu-id="32381-137">FindConversation operation</span></span>](findconversation-operation.md)
+[<span data-ttu-id="d5a94-137">FindConversation Operation</span><span class="sxs-lookup"><span data-stu-id="d5a94-137">FindConversation operation</span></span>](findconversation-operation.md)
   
-[<span data-ttu-id="32381-138">ApplyConversationAction-Vorgang</span><span class="sxs-lookup"><span data-stu-id="32381-138">ApplyConversationAction operation</span></span>](applyconversationaction-operation.md)
+[<span data-ttu-id="d5a94-138">ApplyConversationAction-Vorgang</span><span class="sxs-lookup"><span data-stu-id="d5a94-138">ApplyConversationAction operation</span></span>](applyconversationaction-operation.md)
 
 
-[<span data-ttu-id="32381-139">Conversations in EWS</span><span class="sxs-lookup"><span data-stu-id="32381-139">Conversations in EWS</span></span>](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+[<span data-ttu-id="d5a94-139">Conversations in EWS</span><span class="sxs-lookup"><span data-stu-id="d5a94-139">Conversations in EWS</span></span>](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

@@ -16,56 +16,56 @@ ms.openlocfilehash: 26f14ee7c9d4de267733bca11f7884d1d391b3dd
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19829807"
 ---
-# <a name="hasquota"></a><span data-ttu-id="97829-103">HasQuota</span><span class="sxs-lookup"><span data-stu-id="97829-103">HasQuota</span></span>
+# <a name="hasquota"></a><span data-ttu-id="b4108-103">HasQuota</span><span class="sxs-lookup"><span data-stu-id="b4108-103">HasQuota</span></span>
 
-<span data-ttu-id="97829-104">Das **HasQuota** -Element gibt an, ob der verwaltete Ordner ein Kontingent definiert wurde.</span><span class="sxs-lookup"><span data-stu-id="97829-104">The **HasQuota** element indicates whether the managed folder has a quota.</span></span> 
+<span data-ttu-id="b4108-104">Das **HasQuota** -Element gibt an, ob der verwaltete Ordner ein Kontingent definiert wurde.</span><span class="sxs-lookup"><span data-stu-id="b4108-104">The **HasQuota** element indicates whether the managed folder has a quota.</span></span> 
   
 ```xml
 <HasQuota/>
 ```
 
- <span data-ttu-id="97829-105">**Boolean**</span><span class="sxs-lookup"><span data-stu-id="97829-105">**Boolean**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="97829-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="97829-106">Attributes and elements</span></span>
+ <span data-ttu-id="b4108-105">**Boolean**</span><span class="sxs-lookup"><span data-stu-id="b4108-105">**Boolean**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="b4108-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="b4108-106">Attributes and elements</span></span>
 
-<span data-ttu-id="97829-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="97829-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="b4108-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="b4108-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="97829-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="97829-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="b4108-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="b4108-108">Attributes</span></span>
 
-<span data-ttu-id="97829-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="97829-109">None.</span></span>
+<span data-ttu-id="b4108-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="b4108-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="97829-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="97829-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="b4108-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="b4108-110">Child elements</span></span>
 
-<span data-ttu-id="97829-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="97829-111">None.</span></span>
+<span data-ttu-id="b4108-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="b4108-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="97829-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="97829-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="b4108-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="b4108-112">Parent elements</span></span>
 
-|<span data-ttu-id="97829-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="97829-113">**Element**</span></span>|<span data-ttu-id="97829-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="97829-114">**Description**</span></span>|
+|<span data-ttu-id="b4108-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="b4108-113">**Element**</span></span>|<span data-ttu-id="b4108-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="b4108-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="97829-115">ManagedFolderInformation</span><span class="sxs-lookup"><span data-stu-id="97829-115">ManagedFolderInformation</span></span>](managedfolderinformation.md) <br/> |<span data-ttu-id="97829-116">Enthält Informationen zu einem verwalteten Ordner.</span><span class="sxs-lookup"><span data-stu-id="97829-116">Contains information about a managed folder.</span></span>  <br/> |
+|[<span data-ttu-id="b4108-115">ManagedFolderInformation</span><span class="sxs-lookup"><span data-stu-id="b4108-115">ManagedFolderInformation</span></span>](managedfolderinformation.md) <br/> |<span data-ttu-id="b4108-116">Enthält Informationen zu einem verwalteten Ordner.</span><span class="sxs-lookup"><span data-stu-id="b4108-116">Contains information about a managed folder.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="97829-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="97829-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="b4108-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="b4108-117">Text value</span></span>
 
-<span data-ttu-id="97829-118">Der Textwert stellt einen Boolean-Wert.</span><span class="sxs-lookup"><span data-stu-id="97829-118">The text value represents a Boolean value.</span></span> <span data-ttu-id="97829-119">Der Wert **true** gibt an, dass der Ordner ein Kontingent definiert wurde; der Wert **false** gibt an, dass der Ordner nicht über ein Kontingent verfügt.</span><span class="sxs-lookup"><span data-stu-id="97829-119">A value of **true** indicates that the folder has a quota; a value of **false** indicates that the folder does not have a quota.</span></span> 
+<span data-ttu-id="b4108-118">Der Textwert stellt einen Boolean-Wert.</span><span class="sxs-lookup"><span data-stu-id="b4108-118">The text value represents a Boolean value.</span></span> <span data-ttu-id="b4108-119">Der Wert **true** gibt an, dass der Ordner ein Kontingent definiert wurde; der Wert **false** gibt an, dass der Ordner nicht über ein Kontingent verfügt.</span><span class="sxs-lookup"><span data-stu-id="b4108-119">A value of **true** indicates that the folder has a quota; a value of **false** indicates that the folder does not have a quota.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="97829-120">Hinweise</span><span class="sxs-lookup"><span data-stu-id="97829-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b4108-120">Hinweise</span><span class="sxs-lookup"><span data-stu-id="b4108-120">Remarks</span></span>
 
-<span data-ttu-id="97829-121">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="97829-121">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="b4108-121">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="b4108-121">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="97829-122">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="97829-122">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="b4108-122">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="b4108-122">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="97829-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="97829-123">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="97829-124">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="97829-124">Schema name</span></span>  <br/> |<span data-ttu-id="97829-125">Schematypen</span><span class="sxs-lookup"><span data-stu-id="97829-125">Types schema</span></span>  <br/> |
-|<span data-ttu-id="97829-126">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="97829-126">Validation file</span></span>  <br/> |<span data-ttu-id="97829-127">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="97829-127">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="97829-128">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="97829-128">Can be empty</span></span>  <br/> |<span data-ttu-id="97829-129">False</span><span class="sxs-lookup"><span data-stu-id="97829-129">False</span></span>  <br/> |
+|<span data-ttu-id="b4108-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="b4108-123">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="b4108-124">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="b4108-124">Schema name</span></span>  <br/> |<span data-ttu-id="b4108-125">Schematypen</span><span class="sxs-lookup"><span data-stu-id="b4108-125">Types schema</span></span>  <br/> |
+|<span data-ttu-id="b4108-126">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="b4108-126">Validation file</span></span>  <br/> |<span data-ttu-id="b4108-127">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="b4108-127">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="b4108-128">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="b4108-128">Can be empty</span></span>  <br/> |<span data-ttu-id="b4108-129">False</span><span class="sxs-lookup"><span data-stu-id="b4108-129">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="97829-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="97829-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b4108-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b4108-130">See also</span></span>
 
 
 
-- [<span data-ttu-id="97829-131">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="97829-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="b4108-131">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="b4108-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
