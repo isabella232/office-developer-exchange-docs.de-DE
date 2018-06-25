@@ -16,63 +16,63 @@ ms.openlocfilehash: c3719b12b7e3e2f83a9454c7b68432b375d78614
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19830395"
 ---
-# <a name="maxchangesreturned"></a><span data-ttu-id="a0941-103">MaxChangesReturned</span><span class="sxs-lookup"><span data-stu-id="a0941-103">MaxChangesReturned</span></span>
+# <a name="maxchangesreturned"></a><span data-ttu-id="81164-103">MaxChangesReturned</span><span class="sxs-lookup"><span data-stu-id="81164-103">MaxChangesReturned</span></span>
 
-<span data-ttu-id="a0941-104">Das **MaxChangesReturned** -Element beschreibt die maximale Anzahl von Änderungen, die in einer Synchronisierung Antwort zurückgegeben werden kann.</span><span class="sxs-lookup"><span data-stu-id="a0941-104">The **MaxChangesReturned** element describes the maximum number of changes that can be returned in a synchronization response.</span></span> 
+<span data-ttu-id="81164-104">Das **MaxChangesReturned** -Element beschreibt die maximale Anzahl von Änderungen, die in einer Synchronisierung Antwort zurückgegeben werden kann.</span><span class="sxs-lookup"><span data-stu-id="81164-104">The **MaxChangesReturned** element describes the maximum number of changes that can be returned in a synchronization response.</span></span> 
   
-[<span data-ttu-id="a0941-105">SyncFolderItems</span><span class="sxs-lookup"><span data-stu-id="a0941-105">SyncFolderItems</span></span>](syncfolderitems.md)
+[<span data-ttu-id="81164-105">SyncFolderItems</span><span class="sxs-lookup"><span data-stu-id="81164-105">SyncFolderItems</span></span>](syncfolderitems.md)
   
-[<span data-ttu-id="a0941-106">MaxChangesReturned</span><span class="sxs-lookup"><span data-stu-id="a0941-106">MaxChangesReturned</span></span>](maxchangesreturned.md)
+[<span data-ttu-id="81164-106">MaxChangesReturned</span><span class="sxs-lookup"><span data-stu-id="81164-106">MaxChangesReturned</span></span>](maxchangesreturned.md)
   
 ```xml
 <MaxChangesReturned/>
 ```
 
- <span data-ttu-id="a0941-107">**int**</span><span class="sxs-lookup"><span data-stu-id="a0941-107">**int**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="a0941-108">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="a0941-108">Attributes and elements</span></span>
+ <span data-ttu-id="81164-107">**int**</span><span class="sxs-lookup"><span data-stu-id="81164-107">**int**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="81164-108">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="81164-108">Attributes and elements</span></span>
 
-<span data-ttu-id="a0941-109">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="a0941-109">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="81164-109">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="81164-109">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="a0941-110">Attribute</span><span class="sxs-lookup"><span data-stu-id="a0941-110">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="81164-110">Attribute</span><span class="sxs-lookup"><span data-stu-id="81164-110">Attributes</span></span>
 
-<span data-ttu-id="a0941-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="a0941-111">None.</span></span>
+<span data-ttu-id="81164-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="81164-111">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="a0941-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a0941-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="81164-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="81164-112">Child elements</span></span>
 
-<span data-ttu-id="a0941-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="a0941-113">None.</span></span>
+<span data-ttu-id="81164-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="81164-113">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="a0941-114">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a0941-114">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="81164-114">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="81164-114">Parent elements</span></span>
 
-|<span data-ttu-id="a0941-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="a0941-115">**Element**</span></span>|<span data-ttu-id="a0941-116">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="a0941-116">**Description**</span></span>|
+|<span data-ttu-id="81164-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="81164-115">**Element**</span></span>|<span data-ttu-id="81164-116">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="81164-116">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="a0941-117">SyncFolderItems</span><span class="sxs-lookup"><span data-stu-id="a0941-117">SyncFolderItems</span></span>](syncfolderitems.md) <br/> |<span data-ttu-id="a0941-118">Definiert eine Anforderung zum Synchronisieren von Elementen in einem Ordner von Exchange-Speicher.</span><span class="sxs-lookup"><span data-stu-id="a0941-118">Defines a request to synchronize items in an Exchange store folder.</span></span>  <br/> |
+|[<span data-ttu-id="81164-117">SyncFolderItems</span><span class="sxs-lookup"><span data-stu-id="81164-117">SyncFolderItems</span></span>](syncfolderitems.md) <br/> |<span data-ttu-id="81164-118">Definiert eine Anforderung zum Synchronisieren von Elementen in einem Ordner von Exchange-Speicher.</span><span class="sxs-lookup"><span data-stu-id="81164-118">Defines a request to synchronize items in an Exchange store folder.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="a0941-119">Textwert</span><span class="sxs-lookup"><span data-stu-id="a0941-119">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="81164-119">Textwert</span><span class="sxs-lookup"><span data-stu-id="81164-119">Text value</span></span>
 
-<span data-ttu-id="a0941-120">Der Textwert stellt eine ganze Zahl, die die maximale Anzahl von Elementen wird beschrieben, die in einem Aufruf der einzelnen Synchronisation zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="a0941-120">The text value represents an integer that describes the maximum number of items that are returned in a single synchronization call.</span></span> <span data-ttu-id="a0941-121">Der Wert muss zwischen 1 und 512, inklusive.</span><span class="sxs-lookup"><span data-stu-id="a0941-121">The value must be between 1 and 512, inclusive.</span></span>
+<span data-ttu-id="81164-120">Der Textwert stellt eine ganze Zahl, die die maximale Anzahl von Elementen wird beschrieben, die in einem Aufruf der einzelnen Synchronisation zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="81164-120">The text value represents an integer that describes the maximum number of items that are returned in a single synchronization call.</span></span> <span data-ttu-id="81164-121">Der Wert muss zwischen 1 und 512, inklusive.</span><span class="sxs-lookup"><span data-stu-id="81164-121">The value must be between 1 and 512, inclusive.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="a0941-122">Hinweise</span><span class="sxs-lookup"><span data-stu-id="a0941-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="81164-122">Hinweise</span><span class="sxs-lookup"><span data-stu-id="81164-122">Remarks</span></span>
 
-<span data-ttu-id="a0941-123">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="a0941-123">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="81164-123">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="81164-123">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="a0941-124">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="a0941-124">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="81164-124">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="81164-124">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="a0941-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="a0941-125">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="a0941-126">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="a0941-126">Schema name</span></span>  <br/> |<span data-ttu-id="a0941-127">Schematypen</span><span class="sxs-lookup"><span data-stu-id="a0941-127">Types schema</span></span>  <br/> |
-|<span data-ttu-id="a0941-128">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="a0941-128">Validation file</span></span>  <br/> |<span data-ttu-id="a0941-129">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="a0941-129">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="a0941-130">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="a0941-130">Can be empty</span></span>  <br/> |<span data-ttu-id="a0941-131">False</span><span class="sxs-lookup"><span data-stu-id="a0941-131">False</span></span>  <br/> |
+|<span data-ttu-id="81164-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="81164-125">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="81164-126">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="81164-126">Schema name</span></span>  <br/> |<span data-ttu-id="81164-127">Schematypen</span><span class="sxs-lookup"><span data-stu-id="81164-127">Types schema</span></span>  <br/> |
+|<span data-ttu-id="81164-128">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="81164-128">Validation file</span></span>  <br/> |<span data-ttu-id="81164-129">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="81164-129">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="81164-130">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="81164-130">Can be empty</span></span>  <br/> |<span data-ttu-id="81164-131">False</span><span class="sxs-lookup"><span data-stu-id="81164-131">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="a0941-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a0941-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="81164-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="81164-132">See also</span></span>
 
 
 
-[<span data-ttu-id="a0941-133">SyncFolderItems-Vorgang</span><span class="sxs-lookup"><span data-stu-id="a0941-133">SyncFolderItems operation</span></span>](syncfolderitems-operation.md)
+[<span data-ttu-id="81164-133">SyncFolderItems-Vorgang</span><span class="sxs-lookup"><span data-stu-id="81164-133">SyncFolderItems operation</span></span>](syncfolderitems-operation.md)
 
 
-- [<span data-ttu-id="a0941-134">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="a0941-134">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="81164-134">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="81164-134">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

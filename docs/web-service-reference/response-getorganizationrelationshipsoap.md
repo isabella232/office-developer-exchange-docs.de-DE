@@ -11,12 +11,12 @@ ms.openlocfilehash: 97bef9ab9f0b860e62646703c35d539b7922a65a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19831174"
 ---
-# <a name="response-getorganizationrelationship-soap"></a><span data-ttu-id="42db4-105">Antwort (GetOrganizationRelationship) (SOAP)</span><span class="sxs-lookup"><span data-stu-id="42db4-105">Response (GetOrganizationRelationship) (SOAP)</span></span>
+# <a name="response-getorganizationrelationship-soap"></a><span data-ttu-id="f3ca1-105">Antwort (GetOrganizationRelationship) (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f3ca1-105">Response (GetOrganizationRelationship) (SOAP)</span></span>
 
-<span data-ttu-id="42db4-106">Das **Antwort** -Element enthält die [GetOrganizationRelationshipSettings-Vorgang (SOAP)](getorganizationrelationshipsettings-operation-soap.md) Antwort-Informationen.</span><span class="sxs-lookup"><span data-stu-id="42db4-106">The **Response** element contains the [GetOrganizationRelationshipSettings operation (SOAP)](getorganizationrelationshipsettings-operation-soap.md) response information.</span></span> <span data-ttu-id="42db4-107">Das **Antwort** -Element ist nur zur internen Verwendung.</span><span class="sxs-lookup"><span data-stu-id="42db4-107">The **Response** element is for internal use only.</span></span> <span data-ttu-id="42db4-108">Dieses Element wird von Clients nicht verwendet.</span><span class="sxs-lookup"><span data-stu-id="42db4-108">This element is not used by clients.</span></span> 
+<span data-ttu-id="f3ca1-106">Das **Antwort** -Element enthält die [GetOrganizationRelationshipSettings-Vorgang (SOAP)](getorganizationrelationshipsettings-operation-soap.md) Antwort-Informationen.</span><span class="sxs-lookup"><span data-stu-id="f3ca1-106">The **Response** element contains the [GetOrganizationRelationshipSettings operation (SOAP)](getorganizationrelationshipsettings-operation-soap.md) response information.</span></span> <span data-ttu-id="f3ca1-107">Das **Antwort** -Element ist nur zur internen Verwendung.</span><span class="sxs-lookup"><span data-stu-id="f3ca1-107">The **Response** element is for internal use only.</span></span> <span data-ttu-id="f3ca1-108">Dieses Element wird von Clients nicht verwendet.</span><span class="sxs-lookup"><span data-stu-id="f3ca1-108">This element is not used by clients.</span></span> 
   
 ```XML
 <GetOrganizationRelationshipSettingsResponse>
@@ -26,43 +26,43 @@ ms.locfileid: "19831174"
 </GetOrganizationRelationshipSettingResponse>
 ```
 
- <span data-ttu-id="42db4-109">**GetOrganizationRelationshipSettingsResponse**</span><span class="sxs-lookup"><span data-stu-id="42db4-109">**GetOrganizationRelationshipSettingsResponse**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="42db4-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="42db4-110">Attributes and elements</span></span>
+ <span data-ttu-id="f3ca1-109">**GetOrganizationRelationshipSettingsResponse**</span><span class="sxs-lookup"><span data-stu-id="f3ca1-109">**GetOrganizationRelationshipSettingsResponse**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="f3ca1-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="f3ca1-110">Attributes and elements</span></span>
 
-<span data-ttu-id="42db4-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="42db4-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="f3ca1-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="f3ca1-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="42db4-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="42db4-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="f3ca1-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="f3ca1-112">Attributes</span></span>
 
-<span data-ttu-id="42db4-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="42db4-113">None.</span></span>
+<span data-ttu-id="f3ca1-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="f3ca1-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="42db4-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="42db4-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="f3ca1-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f3ca1-114">Child elements</span></span>
 
-|<span data-ttu-id="42db4-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="42db4-115">**Element**</span></span>|<span data-ttu-id="42db4-116">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="42db4-116">**Description**</span></span>|
+|<span data-ttu-id="f3ca1-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="f3ca1-115">**Element**</span></span>|<span data-ttu-id="f3ca1-116">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f3ca1-116">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="42db4-117">ErrorCode (SOAP)</span><span class="sxs-lookup"><span data-stu-id="42db4-117">ErrorCode (SOAP)</span></span>](errorcode-soap.md) <br/> |<span data-ttu-id="42db4-118">Stellt einen Fehlercode, der von den AutoErmittlungsdienst zurückgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="42db4-118">Represents an error code that is returned by the Autodiscover service.</span></span>  <br/> |
-|[<span data-ttu-id="42db4-119">ErrorMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="42db4-119">ErrorMessage (SOAP)</span></span>](errormessage-soap.md) <br/> |<span data-ttu-id="42db4-120">Stellt eine Nachricht, die ein Fehlercode zugeordnet ist, die von den AutoErmittlungsdienst zurückgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="42db4-120">Represents a message that is associated with an error code that is returned by the Autodiscover service.</span></span>  <br/> |
-|[<span data-ttu-id="42db4-121">OrganizationRelationshipSettingsCollection (SOAP)</span><span class="sxs-lookup"><span data-stu-id="42db4-121">OrganizationRelationshipSettingsCollection (SOAP)</span></span>](organizationrelationshipsettingscollection-soap.md) <br/> |<span data-ttu-id="42db4-122">Stellt eine Liste von organisationsbeziehungen, die mit die Abfrage übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="42db4-122">Represents a list of organization relationships that match the query.</span></span>  <br/> |
+|[<span data-ttu-id="f3ca1-117">ErrorCode (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f3ca1-117">ErrorCode (SOAP)</span></span>](errorcode-soap.md) <br/> |<span data-ttu-id="f3ca1-118">Stellt einen Fehlercode, der von den AutoErmittlungsdienst zurückgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="f3ca1-118">Represents an error code that is returned by the Autodiscover service.</span></span>  <br/> |
+|[<span data-ttu-id="f3ca1-119">ErrorMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f3ca1-119">ErrorMessage (SOAP)</span></span>](errormessage-soap.md) <br/> |<span data-ttu-id="f3ca1-120">Stellt eine Nachricht, die ein Fehlercode zugeordnet ist, die von den AutoErmittlungsdienst zurückgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="f3ca1-120">Represents a message that is associated with an error code that is returned by the Autodiscover service.</span></span>  <br/> |
+|[<span data-ttu-id="f3ca1-121">OrganizationRelationshipSettingsCollection (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f3ca1-121">OrganizationRelationshipSettingsCollection (SOAP)</span></span>](organizationrelationshipsettingscollection-soap.md) <br/> |<span data-ttu-id="f3ca1-122">Stellt eine Liste von organisationsbeziehungen, die mit die Abfrage übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="f3ca1-122">Represents a list of organization relationships that match the query.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="42db4-123">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="42db4-123">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="f3ca1-123">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f3ca1-123">Parent elements</span></span>
 
-<span data-ttu-id="42db4-124">Keine.</span><span class="sxs-lookup"><span data-stu-id="42db4-124">None.</span></span>
+<span data-ttu-id="f3ca1-124">Keine.</span><span class="sxs-lookup"><span data-stu-id="f3ca1-124">None.</span></span>
   
-## <a name="text-value"></a><span data-ttu-id="42db4-125">Textwert</span><span class="sxs-lookup"><span data-stu-id="42db4-125">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="f3ca1-125">Textwert</span><span class="sxs-lookup"><span data-stu-id="f3ca1-125">Text value</span></span>
 
-<span data-ttu-id="42db4-126">Keine.</span><span class="sxs-lookup"><span data-stu-id="42db4-126">None.</span></span>
+<span data-ttu-id="f3ca1-126">Keine.</span><span class="sxs-lookup"><span data-stu-id="f3ca1-126">None.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="42db4-127">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="42db4-127">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="f3ca1-127">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="f3ca1-127">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="42db4-128">Namespace</span><span class="sxs-lookup"><span data-stu-id="42db4-128">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|<span data-ttu-id="42db4-129">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="42db4-129">Schema Name</span></span>  <br/> |<span data-ttu-id="42db4-130">AutoErmittlung-schema</span><span class="sxs-lookup"><span data-stu-id="42db4-130">Autodiscover schema</span></span>  <br/> |
-|<span data-ttu-id="42db4-131">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="42db4-131">Validation File</span></span>  <br/> |<span data-ttu-id="42db4-132">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="42db4-132">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="42db4-133">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="42db4-133">Can be Empty</span></span>  <br/> |<span data-ttu-id="42db4-134">True</span><span class="sxs-lookup"><span data-stu-id="42db4-134">True</span></span>  <br/> |
+|<span data-ttu-id="f3ca1-128">Namespace</span><span class="sxs-lookup"><span data-stu-id="f3ca1-128">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="f3ca1-129">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="f3ca1-129">Schema Name</span></span>  <br/> |<span data-ttu-id="f3ca1-130">AutoErmittlung-schema</span><span class="sxs-lookup"><span data-stu-id="f3ca1-130">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="f3ca1-131">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="f3ca1-131">Validation File</span></span>  <br/> |<span data-ttu-id="f3ca1-132">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="f3ca1-132">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="f3ca1-133">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="f3ca1-133">Can be Empty</span></span>  <br/> |<span data-ttu-id="f3ca1-134">True</span><span class="sxs-lookup"><span data-stu-id="f3ca1-134">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="42db4-135">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="42db4-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f3ca1-135">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f3ca1-135">See also</span></span>
 
 
 
-[<span data-ttu-id="42db4-136">GetOrganizationRelationshipSettings-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="42db4-136">GetOrganizationRelationshipSettings operation (SOAP)</span></span>](getorganizationrelationshipsettings-operation-soap.md)
+[<span data-ttu-id="f3ca1-136">GetOrganizationRelationshipSettings-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f3ca1-136">GetOrganizationRelationshipSettings operation (SOAP)</span></span>](getorganizationrelationshipsettings-operation-soap.md)
 

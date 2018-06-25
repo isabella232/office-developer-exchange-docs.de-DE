@@ -12,51 +12,51 @@ ms.openlocfilehash: 735be6a0f6ec53bd0e270fa7a4d5dc43af926b88
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19830200"
 ---
-# <a name="lastattempttime"></a><span data-ttu-id="c732c-103">LastAttemptTime</span><span class="sxs-lookup"><span data-stu-id="c732c-103">LastAttemptTime</span></span>
+# <a name="lastattempttime"></a><span data-ttu-id="bfee7-103">LastAttemptTime</span><span class="sxs-lookup"><span data-stu-id="bfee7-103">LastAttemptTime</span></span>
 
-<span data-ttu-id="c732c-104">Das **LastAttemptTime** -Element enthält die Uhrzeit und das Datum, an dem der letzte Versuch zum Indizieren des Elements vorgenommen wurde.</span><span class="sxs-lookup"><span data-stu-id="c732c-104">The **LastAttemptTime** element contains the time and date at which the last attempt to index the item was made.</span></span> 
+<span data-ttu-id="bfee7-104">Das **LastAttemptTime** -Element enthält die Uhrzeit und das Datum, an dem der letzte Versuch zum Indizieren des Elements vorgenommen wurde.</span><span class="sxs-lookup"><span data-stu-id="bfee7-104">The **LastAttemptTime** element contains the time and date at which the last attempt to index the item was made.</span></span> 
   
 ```XML
 <LastAttemptTime></LastAttemptTime>
 ```
 
- <span data-ttu-id="c732c-105">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="c732c-105">**dateTime**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="c732c-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="c732c-106">Attributes and elements</span></span>
+ <span data-ttu-id="bfee7-105">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="bfee7-105">**dateTime**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="bfee7-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="bfee7-106">Attributes and elements</span></span>
 
-<span data-ttu-id="c732c-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="c732c-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="bfee7-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="bfee7-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="c732c-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="c732c-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="bfee7-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="bfee7-108">Attributes</span></span>
 
-<span data-ttu-id="c732c-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="c732c-109">None.</span></span>
+<span data-ttu-id="bfee7-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="bfee7-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="c732c-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="c732c-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="bfee7-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="bfee7-110">Child elements</span></span>
 
-<span data-ttu-id="c732c-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="c732c-111">None.</span></span>
+<span data-ttu-id="bfee7-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="bfee7-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="c732c-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="c732c-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="bfee7-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="bfee7-112">Parent elements</span></span>
 
-[<span data-ttu-id="c732c-113">NonIndexableItemDetail</span><span class="sxs-lookup"><span data-stu-id="c732c-113">NonIndexableItemDetail</span></span>](nonindexableitemdetail.md)
+[<span data-ttu-id="bfee7-113">NonIndexableItemDetail</span><span class="sxs-lookup"><span data-stu-id="bfee7-113">NonIndexableItemDetail</span></span>](nonindexableitemdetail.md)
   
-## <a name="text-value"></a><span data-ttu-id="c732c-114">Textwert</span><span class="sxs-lookup"><span data-stu-id="c732c-114">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="bfee7-114">Textwert</span><span class="sxs-lookup"><span data-stu-id="bfee7-114">Text value</span></span>
 
-<span data-ttu-id="c732c-115">Der Textwert des Elements **LastAttemptTime** stellt eine Uhrzeit und das Datum, an dem der letzte Versuch zum Indizieren des Elements vorgenommen wurde.</span><span class="sxs-lookup"><span data-stu-id="c732c-115">The text value of the **LastAttemptTime** element represents a time and date at which the last attempt to index the item was made.</span></span> 
+<span data-ttu-id="bfee7-115">Der Textwert des Elements **LastAttemptTime** stellt eine Uhrzeit und das Datum, an dem der letzte Versuch zum Indizieren des Elements vorgenommen wurde.</span><span class="sxs-lookup"><span data-stu-id="bfee7-115">The text value of the **LastAttemptTime** element represents a time and date at which the last attempt to index the item was made.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="c732c-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="c732c-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bfee7-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="bfee7-116">Remarks</span></span>
 
-<span data-ttu-id="c732c-117">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="c732c-117">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="bfee7-117">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="bfee7-117">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="c732c-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="c732c-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="bfee7-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="bfee7-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="c732c-119">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="c732c-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="bfee7-119">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="bfee7-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="c732c-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="c732c-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="c732c-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="c732c-121">Schema name</span></span>  <br/> |<span data-ttu-id="c732c-122">Schematypen</span><span class="sxs-lookup"><span data-stu-id="c732c-122">Types schema</span></span>  <br/> |
-|<span data-ttu-id="c732c-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="c732c-123">Validation file</span></span>  <br/> |<span data-ttu-id="c732c-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="c732c-124">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="c732c-125">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="c732c-125">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="bfee7-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="bfee7-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="bfee7-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="bfee7-121">Schema name</span></span>  <br/> |<span data-ttu-id="bfee7-122">Schematypen</span><span class="sxs-lookup"><span data-stu-id="bfee7-122">Types schema</span></span>  <br/> |
+|<span data-ttu-id="bfee7-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="bfee7-123">Validation file</span></span>  <br/> |<span data-ttu-id="bfee7-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="bfee7-124">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="bfee7-125">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="bfee7-125">Can be empty</span></span>  <br/> ||
    
 

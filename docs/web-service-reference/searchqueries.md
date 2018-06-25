@@ -12,12 +12,12 @@ ms.openlocfilehash: 182f1ba63b4226ea4ff6445ae9f039197dec38a5
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19831316"
 ---
-# <a name="searchqueries"></a><span data-ttu-id="1dd4f-103">SearchQueries</span><span class="sxs-lookup"><span data-stu-id="1dd4f-103">SearchQueries</span></span>
+# <a name="searchqueries"></a><span data-ttu-id="a7990-103">SearchQueries</span><span class="sxs-lookup"><span data-stu-id="a7990-103">SearchQueries</span></span>
 
-<span data-ttu-id="1dd4f-104">Das **SearchQueries** -Element enthält eine Liste der Postfächer und zugeordneten Abfragen für Discovery-Suche.</span><span class="sxs-lookup"><span data-stu-id="1dd4f-104">The **SearchQueries** element contains a list of mailboxes and associated queries for discovery search.</span></span> 
+<span data-ttu-id="a7990-104">Das **SearchQueries** -Element enthält eine Liste der Postfächer und zugeordneten Abfragen für Discovery-Suche.</span><span class="sxs-lookup"><span data-stu-id="a7990-104">The **SearchQueries** element contains a list of mailboxes and associated queries for discovery search.</span></span> 
   
 ```XML
 <SearchQueries>
@@ -26,35 +26,35 @@ ms.locfileid: "19831316"
 ```
 
  ****
-## <a name="attributes-and-elements"></a><span data-ttu-id="1dd4f-105">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="1dd4f-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="a7990-105">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="a7990-105">Attributes and elements</span></span>
 
-<span data-ttu-id="1dd4f-106">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="1dd4f-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="a7990-106">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="a7990-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="1dd4f-107">Attribute</span><span class="sxs-lookup"><span data-stu-id="1dd4f-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="a7990-107">Attribute</span><span class="sxs-lookup"><span data-stu-id="a7990-107">Attributes</span></span>
 
-<span data-ttu-id="1dd4f-108">Keine.</span><span class="sxs-lookup"><span data-stu-id="1dd4f-108">None.</span></span>
+<span data-ttu-id="a7990-108">Keine.</span><span class="sxs-lookup"><span data-stu-id="a7990-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="1dd4f-109">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1dd4f-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="a7990-109">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a7990-109">Child elements</span></span>
 
-[<span data-ttu-id="1dd4f-110">MailboxQuery</span><span class="sxs-lookup"><span data-stu-id="1dd4f-110">MailboxQuery</span></span>](mailboxquery.md)
+[<span data-ttu-id="a7990-110">MailboxQuery</span><span class="sxs-lookup"><span data-stu-id="a7990-110">MailboxQuery</span></span>](mailboxquery.md)
   
-### <a name="parent-elements"></a><span data-ttu-id="1dd4f-111">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1dd4f-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="a7990-111">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a7990-111">Parent elements</span></span>
 
-<span data-ttu-id="1dd4f-112">[SearchMailboxes](searchmailboxes.md) | [SearchMailboxesResult](searchmailboxesresult.md)</span><span class="sxs-lookup"><span data-stu-id="1dd4f-112">[SearchMailboxes](searchmailboxes.md) | [SearchMailboxesResult](searchmailboxesresult.md)</span></span>
+<span data-ttu-id="a7990-112">[SearchMailboxes](searchmailboxes.md) | [SearchMailboxesResult](searchmailboxesresult.md)</span><span class="sxs-lookup"><span data-stu-id="a7990-112">[SearchMailboxes](searchmailboxes.md) | [SearchMailboxesResult](searchmailboxesresult.md)</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="1dd4f-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="1dd4f-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a7990-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="a7990-113">Remarks</span></span>
 
-<span data-ttu-id="1dd4f-114">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="1dd4f-114">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="a7990-114">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="a7990-114">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="1dd4f-115">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="1dd4f-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="a7990-115">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="a7990-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="1dd4f-116">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="1dd4f-116">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="a7990-116">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="a7990-116">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="1dd4f-117">Namespace</span><span class="sxs-lookup"><span data-stu-id="1dd4f-117">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="1dd4f-118">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="1dd4f-118">Schema name</span></span>  <br/> |<span data-ttu-id="1dd4f-119">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="1dd4f-119">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="1dd4f-120">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="1dd4f-120">Validation file</span></span>  <br/> |<span data-ttu-id="1dd4f-121">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="1dd4f-121">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="1dd4f-122">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="1dd4f-122">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="a7990-117">Namespace</span><span class="sxs-lookup"><span data-stu-id="a7990-117">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="a7990-118">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="a7990-118">Schema name</span></span>  <br/> |<span data-ttu-id="a7990-119">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="a7990-119">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="a7990-120">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="a7990-120">Validation file</span></span>  <br/> |<span data-ttu-id="a7990-121">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="a7990-121">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="a7990-122">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="a7990-122">Can be empty</span></span>  <br/> ||
    
 

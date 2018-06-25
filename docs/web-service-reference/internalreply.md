@@ -16,12 +16,12 @@ ms.openlocfilehash: ac5e9eadac7f45c233007ffb05f4d2430875ec52
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19829955"
 ---
-# <a name="internalreply"></a><span data-ttu-id="df738-103">InternalReply</span><span class="sxs-lookup"><span data-stu-id="df738-103">InternalReply</span></span>
+# <a name="internalreply"></a><span data-ttu-id="00a7c-103">InternalReply</span><span class="sxs-lookup"><span data-stu-id="00a7c-103">InternalReply</span></span>
 
-<span data-ttu-id="df738-104">Das **InternalReply** -Element enthält, die Out of Office (OOF) Antwort an andere Benutzer in der Domäne oder der vertrauenswürdigen Domänen des Benutzers gesendet.</span><span class="sxs-lookup"><span data-stu-id="df738-104">The **InternalReply** element contains the out of office (OOF) response sent to other users in the user's domain or trusted domains.</span></span> 
+<span data-ttu-id="00a7c-104">Das **InternalReply** -Element enthält, die Out of Office (OOF) Antwort an andere Benutzer in der Domäne oder der vertrauenswürdigen Domänen des Benutzers gesendet.</span><span class="sxs-lookup"><span data-stu-id="00a7c-104">The **InternalReply** element contains the out of office (OOF) response sent to other users in the user's domain or trusted domains.</span></span> 
   
 ```XML
 <InternalReply>
@@ -29,37 +29,37 @@ ms.locfileid: "19829955"
 </InternalReply>
 ```
 
- <span data-ttu-id="df738-105">**ReplyBody**</span><span class="sxs-lookup"><span data-stu-id="df738-105">**ReplyBody**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="df738-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="df738-106">Attributes and elements</span></span>
+ <span data-ttu-id="00a7c-105">**ReplyBody**</span><span class="sxs-lookup"><span data-stu-id="00a7c-105">**ReplyBody**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="00a7c-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="00a7c-106">Attributes and elements</span></span>
 
-<span data-ttu-id="df738-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="df738-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="00a7c-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="00a7c-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="df738-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="df738-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="00a7c-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="00a7c-108">Attributes</span></span>
 
-|<span data-ttu-id="df738-109">**Attribut**</span><span class="sxs-lookup"><span data-stu-id="df738-109">**Attribute**</span></span>|<span data-ttu-id="df738-110">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="df738-110">**Description**</span></span>|
+|<span data-ttu-id="00a7c-109">**Attribut**</span><span class="sxs-lookup"><span data-stu-id="00a7c-109">**Attribute**</span></span>|<span data-ttu-id="00a7c-110">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="00a7c-110">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="df738-111">XML: lang</span><span class="sxs-lookup"><span data-stu-id="df738-111">xml:lang</span></span>  <br/> |<span data-ttu-id="df738-112">Gibt die Sprache, in der Nachricht **InternalReply** verwendet.</span><span class="sxs-lookup"><span data-stu-id="df738-112">Specifies the language used in the **InternalReply** message.</span></span> <span data-ttu-id="df738-113">Die möglichen Werte dieses Attributs werden durch IETF RFC 3066 definiert.</span><span class="sxs-lookup"><span data-stu-id="df738-113">The possible values of this attribute are defined by IETF RFC 3066.</span></span>  <br/> |
+|<span data-ttu-id="00a7c-111">XML: lang</span><span class="sxs-lookup"><span data-stu-id="00a7c-111">xml:lang</span></span>  <br/> |<span data-ttu-id="00a7c-112">Gibt die Sprache, in der Nachricht **InternalReply** verwendet.</span><span class="sxs-lookup"><span data-stu-id="00a7c-112">Specifies the language used in the **InternalReply** message.</span></span> <span data-ttu-id="00a7c-113">Die möglichen Werte dieses Attributs werden durch IETF RFC 3066 definiert.</span><span class="sxs-lookup"><span data-stu-id="00a7c-113">The possible values of this attribute are defined by IETF RFC 3066.</span></span>  <br/> |
    
-### <a name="child-elements"></a><span data-ttu-id="df738-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="df738-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="00a7c-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="00a7c-114">Child elements</span></span>
 
-|<span data-ttu-id="df738-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="df738-115">**Element**</span></span>|<span data-ttu-id="df738-116">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="df738-116">**Description**</span></span>|
+|<span data-ttu-id="00a7c-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="00a7c-115">**Element**</span></span>|<span data-ttu-id="00a7c-116">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="00a7c-116">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="df738-117">Nachricht (Verfügbarkeit)</span><span class="sxs-lookup"><span data-stu-id="df738-117">Message (Availability)</span></span>](message-availability.md) <br/> |<span data-ttu-id="df738-118">Enthält die Antwort OOF.</span><span class="sxs-lookup"><span data-stu-id="df738-118">Contains the OOF response.</span></span>  <br/> |
+|[<span data-ttu-id="00a7c-117">Nachricht (Verfügbarkeit)</span><span class="sxs-lookup"><span data-stu-id="00a7c-117">Message (Availability)</span></span>](message-availability.md) <br/> |<span data-ttu-id="00a7c-118">Enthält die Antwort OOF.</span><span class="sxs-lookup"><span data-stu-id="00a7c-118">Contains the OOF response.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="df738-119">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="df738-119">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="00a7c-119">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="00a7c-119">Parent elements</span></span>
 
-|<span data-ttu-id="df738-120">**Element**</span><span class="sxs-lookup"><span data-stu-id="df738-120">**Element**</span></span>|<span data-ttu-id="df738-121">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="df738-121">**Description**</span></span>|
+|<span data-ttu-id="00a7c-120">**Element**</span><span class="sxs-lookup"><span data-stu-id="00a7c-120">**Element**</span></span>|<span data-ttu-id="00a7c-121">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="00a7c-121">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="df738-122">' UserOofSettings '</span><span class="sxs-lookup"><span data-stu-id="df738-122">UserOofSettings</span></span>](useroofsettings.md) <br/> |<span data-ttu-id="df738-123">Gibt die OOF-Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="df738-123">Specifies the OOF settings.</span></span>  <br/> <span data-ttu-id="df738-124">Es folgt der XPath-Ausdruck, der dieses Element:</span><span class="sxs-lookup"><span data-stu-id="df738-124">The following is the XPath expression to this element:</span></span>  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
-|[<span data-ttu-id="df738-125">OofSettings</span><span class="sxs-lookup"><span data-stu-id="df738-125">OofSettings</span></span>](oofsettings.md) <br/> |<span data-ttu-id="df738-126">Enthält die OOF-Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="df738-126">Contains the OOF settings.</span></span>  <br/> <span data-ttu-id="df738-127">Es folgt der XPath-Ausdruck, der dieses Element:</span><span class="sxs-lookup"><span data-stu-id="df738-127">The following is the XPath expression to this element:</span></span>  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
+|[<span data-ttu-id="00a7c-122">' UserOofSettings '</span><span class="sxs-lookup"><span data-stu-id="00a7c-122">UserOofSettings</span></span>](useroofsettings.md) <br/> |<span data-ttu-id="00a7c-123">Gibt die OOF-Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="00a7c-123">Specifies the OOF settings.</span></span>  <br/> <span data-ttu-id="00a7c-124">Es folgt der XPath-Ausdruck, der dieses Element:</span><span class="sxs-lookup"><span data-stu-id="00a7c-124">The following is the XPath expression to this element:</span></span>  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[<span data-ttu-id="00a7c-125">OofSettings</span><span class="sxs-lookup"><span data-stu-id="00a7c-125">OofSettings</span></span>](oofsettings.md) <br/> |<span data-ttu-id="00a7c-126">Enthält die OOF-Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="00a7c-126">Contains the OOF settings.</span></span>  <br/> <span data-ttu-id="00a7c-127">Es folgt der XPath-Ausdruck, der dieses Element:</span><span class="sxs-lookup"><span data-stu-id="00a7c-127">The following is the XPath expression to this element:</span></span>  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="df738-128">Hinweise</span><span class="sxs-lookup"><span data-stu-id="df738-128">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="00a7c-128">Hinweise</span><span class="sxs-lookup"><span data-stu-id="00a7c-128">Remarks</span></span>
 
-<span data-ttu-id="df738-129">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="df738-129">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="00a7c-129">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="00a7c-129">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="example"></a><span data-ttu-id="df738-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="df738-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="00a7c-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="00a7c-130">Example</span></span>
 
-<span data-ttu-id="df738-131">Im folgenden Beispiel wird eine Anforderung SetUserOofSettings legt die [OofState](oofstate.md) auf **aktiviert**, wird die Dauer der OOF für 10 Tage, und die internen und externen Abwesenheitsnachrichten.</span><span class="sxs-lookup"><span data-stu-id="df738-131">The following example of a SetUserOofSettings request sets the [OofState](oofstate.md) to **Enabled**, sets the duration of OOF for 10 days, and sets the internal and external OOF messages.</span></span>
+<span data-ttu-id="00a7c-131">Im folgenden Beispiel wird eine Anforderung SetUserOofSettings legt die [OofState](oofstate.md) auf **aktiviert**, wird die Dauer der OOF für 10 Tage, und die internen und externen Abwesenheitsnachrichten.</span><span class="sxs-lookup"><span data-stu-id="00a7c-131">The following example of a SetUserOofSettings request sets the [OofState](oofstate.md) to **Enabled**, sets the duration of OOF for 10 days, and sets the internal and external OOF messages.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -90,20 +90,20 @@ ms.locfileid: "19829955"
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a><span data-ttu-id="df738-132">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="df738-132">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="00a7c-132">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="00a7c-132">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="df738-133">Namespace</span><span class="sxs-lookup"><span data-stu-id="df738-133">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="df738-134">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="df738-134">Schema Name</span></span>  <br/> |<span data-ttu-id="df738-135">Schematypen</span><span class="sxs-lookup"><span data-stu-id="df738-135">Types schema</span></span>  <br/> |
-|<span data-ttu-id="df738-136">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="df738-136">Validation File</span></span>  <br/> |<span data-ttu-id="df738-137">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="df738-137">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="df738-138">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="df738-138">Can be Empty</span></span>  <br/> |<span data-ttu-id="df738-139">False</span><span class="sxs-lookup"><span data-stu-id="df738-139">False</span></span>  <br/> |
+|<span data-ttu-id="00a7c-133">Namespace</span><span class="sxs-lookup"><span data-stu-id="00a7c-133">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="00a7c-134">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="00a7c-134">Schema Name</span></span>  <br/> |<span data-ttu-id="00a7c-135">Schematypen</span><span class="sxs-lookup"><span data-stu-id="00a7c-135">Types schema</span></span>  <br/> |
+|<span data-ttu-id="00a7c-136">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="00a7c-136">Validation File</span></span>  <br/> |<span data-ttu-id="00a7c-137">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="00a7c-137">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="00a7c-138">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="00a7c-138">Can be Empty</span></span>  <br/> |<span data-ttu-id="00a7c-139">False</span><span class="sxs-lookup"><span data-stu-id="00a7c-139">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="df738-140">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="df738-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="00a7c-140">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="00a7c-140">See also</span></span>
 
 
 
-[<span data-ttu-id="df738-141">GetUserOofSettings-Vorgang</span><span class="sxs-lookup"><span data-stu-id="df738-141">GetUserOofSettings operation</span></span>](getuseroofsettings-operation.md)
+[<span data-ttu-id="00a7c-141">GetUserOofSettings-Vorgang</span><span class="sxs-lookup"><span data-stu-id="00a7c-141">GetUserOofSettings operation</span></span>](getuseroofsettings-operation.md)
   
-[<span data-ttu-id="df738-142">SetUserOofSettings-Vorgang</span><span class="sxs-lookup"><span data-stu-id="df738-142">SetUserOofSettings operation</span></span>](setuseroofsettings-operation.md)
+[<span data-ttu-id="00a7c-142">SetUserOofSettings-Vorgang</span><span class="sxs-lookup"><span data-stu-id="00a7c-142">SetUserOofSettings operation</span></span>](setuseroofsettings-operation.md)
 

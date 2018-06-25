@@ -16,61 +16,61 @@ ms.openlocfilehash: 25a60b44dbdca89d431dc202f06acb3055958a72
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19830109"
 ---
-# <a name="isteamtask"></a><span data-ttu-id="72fee-103">IsTeamTask</span><span class="sxs-lookup"><span data-stu-id="72fee-103">IsTeamTask</span></span>
+# <a name="isteamtask"></a><span data-ttu-id="8f723-103">IsTeamTask</span><span class="sxs-lookup"><span data-stu-id="8f723-103">IsTeamTask</span></span>
 
-<span data-ttu-id="72fee-104">Das **IsTeamTask** -Element gibt an, ob die Aufgabe im Besitz eines Teams ist.</span><span class="sxs-lookup"><span data-stu-id="72fee-104">The **IsTeamTask** element indicates whether the task is owned by a team.</span></span> 
+<span data-ttu-id="8f723-104">Das **IsTeamTask** -Element gibt an, ob die Aufgabe im Besitz eines Teams ist.</span><span class="sxs-lookup"><span data-stu-id="8f723-104">The **IsTeamTask** element indicates whether the task is owned by a team.</span></span> 
   
 ```xml
 <IsTeamTask/>
 ```
 
- <span data-ttu-id="72fee-105">**Boolean**</span><span class="sxs-lookup"><span data-stu-id="72fee-105">**Boolean**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="72fee-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="72fee-106">Attributes and elements</span></span>
+ <span data-ttu-id="8f723-105">**Boolean**</span><span class="sxs-lookup"><span data-stu-id="8f723-105">**Boolean**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="8f723-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="8f723-106">Attributes and elements</span></span>
 
-<span data-ttu-id="72fee-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="72fee-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="8f723-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="8f723-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="72fee-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="72fee-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="8f723-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="8f723-108">Attributes</span></span>
 
-<span data-ttu-id="72fee-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="72fee-109">None.</span></span>
+<span data-ttu-id="8f723-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="8f723-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="72fee-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="72fee-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="8f723-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="8f723-110">Child elements</span></span>
 
-<span data-ttu-id="72fee-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="72fee-111">None.</span></span>
+<span data-ttu-id="8f723-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="8f723-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="72fee-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="72fee-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="8f723-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="8f723-112">Parent elements</span></span>
 
-|<span data-ttu-id="72fee-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="72fee-113">**Element**</span></span>|<span data-ttu-id="72fee-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="72fee-114">**Description**</span></span>|
+|<span data-ttu-id="8f723-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="8f723-113">**Element**</span></span>|<span data-ttu-id="8f723-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="8f723-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="72fee-115">Aufgabe</span><span class="sxs-lookup"><span data-stu-id="72fee-115">Task</span></span>](task.md) <br/> |<span data-ttu-id="72fee-116">Stellt eine Aufgabe im Exchange-Informationsspeicher dar.</span><span class="sxs-lookup"><span data-stu-id="72fee-116">Represents a task in the Exchange store.</span></span>  <br/> |
+|[<span data-ttu-id="8f723-115">Aufgabe</span><span class="sxs-lookup"><span data-stu-id="8f723-115">Task</span></span>](task.md) <br/> |<span data-ttu-id="8f723-116">Stellt eine Aufgabe im Exchange-Informationsspeicher dar.</span><span class="sxs-lookup"><span data-stu-id="8f723-116">Represents a task in the Exchange store.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="72fee-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="72fee-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="8f723-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="8f723-117">Text value</span></span>
 
-<span data-ttu-id="72fee-118">Der Textwert stellt einen Boolean-Wert, der angibt, ob eine Aufgabe im Besitz eines Teams ist.</span><span class="sxs-lookup"><span data-stu-id="72fee-118">The text value represents a Boolean value that indicates whether a task is owned by a team.</span></span> <span data-ttu-id="72fee-119">Dies ist eine schreibgeschützte Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="72fee-119">This is a read-only property.</span></span>
+<span data-ttu-id="8f723-118">Der Textwert stellt einen Boolean-Wert, der angibt, ob eine Aufgabe im Besitz eines Teams ist.</span><span class="sxs-lookup"><span data-stu-id="8f723-118">The text value represents a Boolean value that indicates whether a task is owned by a team.</span></span> <span data-ttu-id="8f723-119">Dies ist eine schreibgeschützte Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="8f723-119">This is a read-only property.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="72fee-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="72fee-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8f723-120">Hinweise</span><span class="sxs-lookup"><span data-stu-id="8f723-120">Remarks</span></span>
 
-<span data-ttu-id="72fee-121">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="72fee-121">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="8f723-121">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="8f723-121">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="72fee-122">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="72fee-122">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="8f723-122">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="8f723-122">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="72fee-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="72fee-123">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="72fee-124">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="72fee-124">Schema Name</span></span>  <br/> |<span data-ttu-id="72fee-125">Schematypen</span><span class="sxs-lookup"><span data-stu-id="72fee-125">Types schema</span></span>  <br/> |
-|<span data-ttu-id="72fee-126">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="72fee-126">Validation File</span></span>  <br/> |<span data-ttu-id="72fee-127">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="72fee-127">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="72fee-128">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="72fee-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="72fee-129">False</span><span class="sxs-lookup"><span data-stu-id="72fee-129">False</span></span>  <br/> |
+|<span data-ttu-id="8f723-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="8f723-123">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="8f723-124">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="8f723-124">Schema Name</span></span>  <br/> |<span data-ttu-id="8f723-125">Schematypen</span><span class="sxs-lookup"><span data-stu-id="8f723-125">Types schema</span></span>  <br/> |
+|<span data-ttu-id="8f723-126">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="8f723-126">Validation File</span></span>  <br/> |<span data-ttu-id="8f723-127">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="8f723-127">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="8f723-128">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="8f723-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="8f723-129">False</span><span class="sxs-lookup"><span data-stu-id="8f723-129">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="72fee-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="72fee-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8f723-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="8f723-130">See also</span></span>
 
 
 
-- [<span data-ttu-id="72fee-131">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="72fee-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="8f723-131">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="8f723-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
 
-[<span data-ttu-id="72fee-132">Erstellen von Aufgaben</span><span class="sxs-lookup"><span data-stu-id="72fee-132">Creating Tasks</span></span>](http://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
+[<span data-ttu-id="8f723-132">Erstellen von Aufgaben</span><span class="sxs-lookup"><span data-stu-id="8f723-132">Creating Tasks</span></span>](http://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
   
-[<span data-ttu-id="72fee-133">Deleting Tasks</span><span class="sxs-lookup"><span data-stu-id="72fee-133">Deleting Tasks</span></span>](http://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
+[<span data-ttu-id="8f723-133">Deleting Tasks</span><span class="sxs-lookup"><span data-stu-id="8f723-133">Deleting Tasks</span></span>](http://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
 
