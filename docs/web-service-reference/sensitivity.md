@@ -16,7 +16,7 @@ ms.openlocfilehash: 08413e51d77611880d85fece192bcc5c2471c182
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19831352"
 ---
 # <a name="sensitivity"></a>Vertraulichkeit
@@ -73,7 +73,7 @@ Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses El
     
 - Vertraulich
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -12,7 +12,7 @@ ms.openlocfilehash: ecea1dac44526fee7c439cd5e1eb318c38d274f6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19830833"
 ---
 # <a name="policynudgerulesconfiguration"></a>PolicyNudgeRulesConfiguration
@@ -40,7 +40,7 @@ Keine.
 
 [ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Das **PolicyNudgeRulesConfiguration** -Element, das Inhalt nicht ist definiert das Exchange-Webdienste-Schema. 
   

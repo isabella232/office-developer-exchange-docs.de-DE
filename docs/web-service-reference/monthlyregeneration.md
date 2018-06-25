@@ -16,7 +16,7 @@ ms.openlocfilehash: 3de8ab5a6a2134ad5c596bf2bcb073d881c89746
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19830488"
 ---
 # <a name="monthlyregeneration"></a>MonthlyRegeneration
@@ -50,7 +50,7 @@ Keine.
 |:-----|:-----|
 |[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Serieninformationen für wiederkehrende Aufgaben enthält.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

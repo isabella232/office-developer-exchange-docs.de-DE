@@ -16,7 +16,7 @@ ms.openlocfilehash: e3db685fc4e72e4332eab4a95afb5f844d04c35e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19830097"
 ---
 # <a name="isreadreceiptrequested"></a>IsReadReceiptRequested
@@ -62,7 +62,7 @@ Keine.
 
 Der Textwert **true** gibt an, dass eine lesebestätigung vom Empfänger des Elements angefordert wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 **IsReadReceiptRequested** auf **true**festgelegt ist, sendet eine lesebestätigung [IsRead](isread.md) auf **true** festlegen. Der Empfänger kann lesebestätigungen unterdrücken, durch das Senden von [SuppressReadReceipt](suppressreadreceipt.md) -Response-Objekt vor dem Festlegen der **IsRead** -Eigenschaft. 
   
