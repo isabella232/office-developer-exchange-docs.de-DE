@@ -16,20 +16,20 @@ ms.openlocfilehash: 15c21bef90fdc4cbc6cd65512cdc078fcdf31e60
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758728"
 ---
-# <a name="getmailtips-operation"></a><span data-ttu-id="7b63e-103">GetMailTips-Vorgang</span><span class="sxs-lookup"><span data-stu-id="7b63e-103">GetMailTips operation</span></span>
+# <a name="getmailtips-operation"></a><span data-ttu-id="4bf38-103">GetMailTips-Vorgang</span><span class="sxs-lookup"><span data-stu-id="4bf38-103">GetMailTips operation</span></span>
 
-<span data-ttu-id="7b63e-104">Der Vorgang **GetMailTips** Ruft die e-Mail-Tipps Informationen für das angegebene Postfach ab.</span><span class="sxs-lookup"><span data-stu-id="7b63e-104">The **GetMailTips** operation gets the mail tips information for the specified mailbox.</span></span> 
+<span data-ttu-id="4bf38-104">Der Vorgang **GetMailTips** Ruft die e-Mail-Tipps Informationen für das angegebene Postfach ab.</span><span class="sxs-lookup"><span data-stu-id="4bf38-104">The **GetMailTips** operation gets the mail tips information for the specified mailbox.</span></span> 
   
-## <a name="getmailtips-request-example"></a><span data-ttu-id="7b63e-105">Anforderungsbeispiel GetMailTips</span><span class="sxs-lookup"><span data-stu-id="7b63e-105">GetMailTips request example</span></span>
+## <a name="getmailtips-request-example"></a><span data-ttu-id="4bf38-105">Anforderungsbeispiel GetMailTips</span><span class="sxs-lookup"><span data-stu-id="4bf38-105">GetMailTips request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="7b63e-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7b63e-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="4bf38-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4bf38-106">Description</span></span>
 
-<span data-ttu-id="7b63e-107">Der Client erstellt die Anforderung XML und sendet es an den Server.</span><span class="sxs-lookup"><span data-stu-id="7b63e-107">The client constructs the request XML and sends it to the server.</span></span> <span data-ttu-id="7b63e-108">Die Anforderung identifiziert, die der Client sendet als das Postfach zum Abrufen der e-Mail-Infos für, und welche e-Mail-Infos angefordert werden.</span><span class="sxs-lookup"><span data-stu-id="7b63e-108">The request identifies who the client is sending as, the mailbox to retrieve the mail tips for, and what mail tips are requested.</span></span> <span data-ttu-id="7b63e-109">In diesem Beispiel fordert der Client an, dass alle e-Mail-Infos für das ausgewählte Postfach zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="7b63e-109">In this example, the client requests that all mail tips be returned for the selected mailbox.</span></span>
+<span data-ttu-id="4bf38-107">Der Client erstellt die Anforderung XML und sendet es an den Server.</span><span class="sxs-lookup"><span data-stu-id="4bf38-107">The client constructs the request XML and sends it to the server.</span></span> <span data-ttu-id="4bf38-108">Die Anforderung identifiziert, die der Client sendet als das Postfach zum Abrufen der e-Mail-Infos für, und welche e-Mail-Infos angefordert werden.</span><span class="sxs-lookup"><span data-stu-id="4bf38-108">The request identifies who the client is sending as, the mailbox to retrieve the mail tips for, and what mail tips are requested.</span></span> <span data-ttu-id="4bf38-109">In diesem Beispiel fordert der Client an, dass alle e-Mail-Infos für das ausgewählte Postfach zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="4bf38-109">In this example, the client requests that all mail tips be returned for the selected mailbox.</span></span>
   
-### <a name="code"></a><span data-ttu-id="7b63e-110">Code</span><span class="sxs-lookup"><span data-stu-id="7b63e-110">Code</span></span>
+### <a name="code"></a><span data-ttu-id="4bf38-110">Code</span><span class="sxs-lookup"><span data-stu-id="4bf38-110">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -58,25 +58,25 @@ ms.locfileid: "19758728"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a><span data-ttu-id="7b63e-111">Anfordern von Elementen</span><span class="sxs-lookup"><span data-stu-id="7b63e-111">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="4bf38-111">Anfordern von Elementen</span><span class="sxs-lookup"><span data-stu-id="4bf38-111">Request elements</span></span>
 
-<span data-ttu-id="7b63e-112">Die folgenden Elemente sind in der Anforderung enthalten:</span><span class="sxs-lookup"><span data-stu-id="7b63e-112">The following elements are included in the request:</span></span>
+<span data-ttu-id="4bf38-112">Die folgenden Elemente sind in der Anforderung enthalten:</span><span class="sxs-lookup"><span data-stu-id="4bf38-112">The following elements are included in the request:</span></span>
   
-- [<span data-ttu-id="7b63e-113">GetMailTips</span><span class="sxs-lookup"><span data-stu-id="7b63e-113">GetMailTips</span></span>](getmailtips.md)
+- [<span data-ttu-id="4bf38-113">GetMailTips</span><span class="sxs-lookup"><span data-stu-id="4bf38-113">GetMailTips</span></span>](getmailtips.md)
     
-- [<span data-ttu-id="7b63e-114">SendingAs</span><span class="sxs-lookup"><span data-stu-id="7b63e-114">SendingAs</span></span>](sendingas.md)
+- [<span data-ttu-id="4bf38-114">SendingAs</span><span class="sxs-lookup"><span data-stu-id="4bf38-114">SendingAs</span></span>](sendingas.md)
     
-- [<span data-ttu-id="7b63e-115">Empfänger (ArrayOfRecipientsType)</span><span class="sxs-lookup"><span data-stu-id="7b63e-115">Recipients (ArrayOfRecipientsType)</span></span>](recipients-arrayofrecipientstype.md)
+- [<span data-ttu-id="4bf38-115">Empfänger (ArrayOfRecipientsType)</span><span class="sxs-lookup"><span data-stu-id="4bf38-115">Recipients (ArrayOfRecipientsType)</span></span>](recipients-arrayofrecipientstype.md)
     
-- [<span data-ttu-id="7b63e-116">MailTipsRequested</span><span class="sxs-lookup"><span data-stu-id="7b63e-116">MailTipsRequested</span></span>](mailtipsrequested.md)
+- [<span data-ttu-id="4bf38-116">MailTipsRequested</span><span class="sxs-lookup"><span data-stu-id="4bf38-116">MailTipsRequested</span></span>](mailtipsrequested.md)
     
-## <a name="successful-getmailtips-response-example"></a><span data-ttu-id="7b63e-117">Erfolgreiche GetMailTips antwortbeispiel</span><span class="sxs-lookup"><span data-stu-id="7b63e-117">Successful GetMailTips response example</span></span>
+## <a name="successful-getmailtips-response-example"></a><span data-ttu-id="4bf38-117">Erfolgreiche GetMailTips antwortbeispiel</span><span class="sxs-lookup"><span data-stu-id="4bf38-117">Successful GetMailTips response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="7b63e-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7b63e-118">Description</span></span>
+### <a name="description"></a><span data-ttu-id="4bf38-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4bf38-118">Description</span></span>
 
-<span data-ttu-id="7b63e-119">Das folgende (SOAP = Simple Object Access Protocol)-Body-Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **GetMailTips** .</span><span class="sxs-lookup"><span data-stu-id="7b63e-119">The following Simple Object Access Protocol (SOAP) body example shows a successful response to the **GetMailTips** request.</span></span> 
+<span data-ttu-id="4bf38-119">Das folgende (SOAP = Simple Object Access Protocol)-Body-Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **GetMailTips** .</span><span class="sxs-lookup"><span data-stu-id="4bf38-119">The following Simple Object Access Protocol (SOAP) body example shows a successful response to the **GetMailTips** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="7b63e-120">Code</span><span class="sxs-lookup"><span data-stu-id="7b63e-120">Code</span></span>
+### <a name="code"></a><span data-ttu-id="4bf38-120">Code</span><span class="sxs-lookup"><span data-stu-id="4bf38-120">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?> 
@@ -122,19 +122,19 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a><span data-ttu-id="7b63e-121">Antwortelemente</span><span class="sxs-lookup"><span data-stu-id="7b63e-121">Response elements</span></span>
+### <a name="response-elements"></a><span data-ttu-id="4bf38-121">Antwortelemente</span><span class="sxs-lookup"><span data-stu-id="4bf38-121">Response elements</span></span>
 
-<span data-ttu-id="7b63e-122">Die folgenden Elemente werden in der Antwort enthalten:</span><span class="sxs-lookup"><span data-stu-id="7b63e-122">The following elements are included in the response:</span></span>
+<span data-ttu-id="4bf38-122">Die folgenden Elemente werden in der Antwort enthalten:</span><span class="sxs-lookup"><span data-stu-id="4bf38-122">The following elements are included in the response:</span></span>
   
-- [<span data-ttu-id="7b63e-123">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="7b63e-123">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="4bf38-123">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="4bf38-123">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="7b63e-124">E-Mail-Infos</span><span class="sxs-lookup"><span data-stu-id="7b63e-124">MailTips</span></span>](mailtips.md)
+- [<span data-ttu-id="4bf38-124">E-Mail-Infos</span><span class="sxs-lookup"><span data-stu-id="4bf38-124">MailTips</span></span>](mailtips.md)
     
-## <a name="see-also"></a><span data-ttu-id="7b63e-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7b63e-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4bf38-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4bf38-125">See also</span></span>
 
 
 
-[<span data-ttu-id="7b63e-126">EWS-Operationen in Exchange</span><span class="sxs-lookup"><span data-stu-id="7b63e-126">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+[<span data-ttu-id="4bf38-126">EWS-Operationen in Exchange</span><span class="sxs-lookup"><span data-stu-id="4bf38-126">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
   
-- [<span data-ttu-id="7b63e-127">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="7b63e-127">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="4bf38-127">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="4bf38-127">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

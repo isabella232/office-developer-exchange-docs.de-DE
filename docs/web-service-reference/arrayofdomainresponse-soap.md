@@ -13,12 +13,12 @@ ms.openlocfilehash: 7dec7f4e3df2fd0d7d1fcd4f08bc74a2b432af1b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757381"
 ---
-# <a name="arrayofdomainresponse-soap"></a><span data-ttu-id="39eca-103">ArrayOfDomainResponse (SOAP)</span><span class="sxs-lookup"><span data-stu-id="39eca-103">ArrayOfDomainResponse (SOAP)</span></span>
+# <a name="arrayofdomainresponse-soap"></a><span data-ttu-id="e567d-103">ArrayOfDomainResponse (SOAP)</span><span class="sxs-lookup"><span data-stu-id="e567d-103">ArrayOfDomainResponse (SOAP)</span></span>
 
-<span data-ttu-id="39eca-104">Das **ArrayOfDomainResponse** -Element enthält ein Array von Antworten für jede angeforderte Domäne Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="39eca-104">The **ArrayOfDomainResponse** element contains an array of responses for each requested domain's settings.</span></span> 
+<span data-ttu-id="e567d-104">Das **ArrayOfDomainResponse** -Element enthält ein Array von Antworten für jede angeforderte Domäne Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="e567d-104">The **ArrayOfDomainResponse** element contains an array of responses for each requested domain's settings.</span></span> 
   
 ```XML
 <ArrayOfDomainResponse>
@@ -26,39 +26,39 @@ ms.locfileid: "19757381"
 </ArrayOfDomainResponse>
 ```
 
- <span data-ttu-id="39eca-105">**ArrayOfDomainResponse**</span><span class="sxs-lookup"><span data-stu-id="39eca-105">**ArrayOfDomainResponse**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="39eca-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="39eca-106">Attributes and elements</span></span>
+ <span data-ttu-id="e567d-105">**ArrayOfDomainResponse**</span><span class="sxs-lookup"><span data-stu-id="e567d-105">**ArrayOfDomainResponse**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="e567d-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="e567d-106">Attributes and elements</span></span>
 
-<span data-ttu-id="39eca-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="39eca-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="e567d-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="e567d-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="39eca-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="39eca-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="e567d-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="e567d-108">Attributes</span></span>
 
-<span data-ttu-id="39eca-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="39eca-109">None.</span></span>
+<span data-ttu-id="e567d-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="e567d-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="39eca-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="39eca-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="e567d-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e567d-110">Child elements</span></span>
 
-|<span data-ttu-id="39eca-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="39eca-111">**Element**</span></span>|<span data-ttu-id="39eca-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="39eca-112">**Description**</span></span>|
+|<span data-ttu-id="e567d-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="e567d-111">**Element**</span></span>|<span data-ttu-id="e567d-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="e567d-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="39eca-113">DomainResponse (SOAP)</span><span class="sxs-lookup"><span data-stu-id="39eca-113">DomainResponse (SOAP)</span></span>](domainresponse-soap.md) <br/> |<span data-ttu-id="39eca-114">Enthält die angeforderten Einstellungen für die angegebene Domäne.</span><span class="sxs-lookup"><span data-stu-id="39eca-114">Contains the requested settings for the specified domain.</span></span>  <br/> |
+|[<span data-ttu-id="e567d-113">DomainResponse (SOAP)</span><span class="sxs-lookup"><span data-stu-id="e567d-113">DomainResponse (SOAP)</span></span>](domainresponse-soap.md) <br/> |<span data-ttu-id="e567d-114">Enthält die angeforderten Einstellungen für die angegebene Domäne.</span><span class="sxs-lookup"><span data-stu-id="e567d-114">Contains the requested settings for the specified domain.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="39eca-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="39eca-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="e567d-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e567d-115">Parent elements</span></span>
 
-<span data-ttu-id="39eca-116">Keine.</span><span class="sxs-lookup"><span data-stu-id="39eca-116">None.</span></span>
+<span data-ttu-id="e567d-116">Keine.</span><span class="sxs-lookup"><span data-stu-id="e567d-116">None.</span></span>
   
-## <a name="text-value"></a><span data-ttu-id="39eca-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="39eca-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="e567d-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="e567d-117">Text value</span></span>
 
-<span data-ttu-id="39eca-118">Keine.</span><span class="sxs-lookup"><span data-stu-id="39eca-118">None.</span></span>
+<span data-ttu-id="e567d-118">Keine.</span><span class="sxs-lookup"><span data-stu-id="e567d-118">None.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="39eca-119">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="39eca-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="e567d-119">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="e567d-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="39eca-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="39eca-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|<span data-ttu-id="39eca-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="39eca-121">Schema Name</span></span>  <br/> |<span data-ttu-id="39eca-122">AutoErmittlung-schema</span><span class="sxs-lookup"><span data-stu-id="39eca-122">Autodiscover schema</span></span>  <br/> |
-|<span data-ttu-id="39eca-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="39eca-123">Validation File</span></span>  <br/> |<span data-ttu-id="39eca-124">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="39eca-124">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="39eca-125">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="39eca-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="39eca-126">True</span><span class="sxs-lookup"><span data-stu-id="39eca-126">True</span></span>  <br/> |
+|<span data-ttu-id="e567d-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="e567d-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="e567d-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="e567d-121">Schema Name</span></span>  <br/> |<span data-ttu-id="e567d-122">AutoErmittlung-schema</span><span class="sxs-lookup"><span data-stu-id="e567d-122">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="e567d-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="e567d-123">Validation File</span></span>  <br/> |<span data-ttu-id="e567d-124">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="e567d-124">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="e567d-125">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="e567d-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="e567d-126">True</span><span class="sxs-lookup"><span data-stu-id="e567d-126">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="39eca-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="39eca-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e567d-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e567d-127">See also</span></span>
 
-- [<span data-ttu-id="39eca-128">GetDomainSettings-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="39eca-128">GetDomainSettings operation (SOAP)</span></span>](getdomainsettings-operation-soap.md)
+- [<span data-ttu-id="e567d-128">GetDomainSettings-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="e567d-128">GetDomainSettings operation (SOAP)</span></span>](getdomainsettings-operation-soap.md)
 

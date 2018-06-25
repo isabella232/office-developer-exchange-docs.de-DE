@@ -13,12 +13,12 @@ ms.openlocfilehash: 6ecd23bc556ca32d724581a28cc7c117c6853207
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758107"
 ---
-# <a name="domainsettingerrors-soap"></a><span data-ttu-id="8f44f-103">DomainSettingErrors (SOAP)</span><span class="sxs-lookup"><span data-stu-id="8f44f-103">DomainSettingErrors (SOAP)</span></span>
+# <a name="domainsettingerrors-soap"></a><span data-ttu-id="642f3-103">DomainSettingErrors (SOAP)</span><span class="sxs-lookup"><span data-stu-id="642f3-103">DomainSettingErrors (SOAP)</span></span>
 
-<span data-ttu-id="8f44f-104">Das **DomainSettingsErrors** -Element enthält Fehlerinformationen für Einstellungen, die nicht zurückgegeben werden kann.</span><span class="sxs-lookup"><span data-stu-id="8f44f-104">The **DomainSettingsErrors** element contains error information for settings that could not be returned.</span></span> 
+<span data-ttu-id="642f3-104">Das **DomainSettingsErrors** -Element enthält Fehlerinformationen für Einstellungen, die nicht zurückgegeben werden kann.</span><span class="sxs-lookup"><span data-stu-id="642f3-104">The **DomainSettingsErrors** element contains error information for settings that could not be returned.</span></span> 
   
 ```XML
 <DomainSettingsErrors>
@@ -26,41 +26,41 @@ ms.locfileid: "19758107"
 </DomainSettingsErrors>
 ```
 
- <span data-ttu-id="8f44f-105">**DomainSettingsErrors**</span><span class="sxs-lookup"><span data-stu-id="8f44f-105">**DomainSettingsErrors**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="8f44f-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="8f44f-106">Attributes and elements</span></span>
+ <span data-ttu-id="642f3-105">**DomainSettingsErrors**</span><span class="sxs-lookup"><span data-stu-id="642f3-105">**DomainSettingsErrors**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="642f3-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="642f3-106">Attributes and elements</span></span>
 
-<span data-ttu-id="8f44f-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="8f44f-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="642f3-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="642f3-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="8f44f-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="8f44f-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="642f3-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="642f3-108">Attributes</span></span>
 
-<span data-ttu-id="8f44f-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="8f44f-109">None.</span></span>
+<span data-ttu-id="642f3-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="642f3-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="8f44f-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="8f44f-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="642f3-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="642f3-110">Child elements</span></span>
 
-|<span data-ttu-id="8f44f-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="8f44f-111">**Element**</span></span>|<span data-ttu-id="8f44f-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="8f44f-112">**Description**</span></span>|
+|<span data-ttu-id="642f3-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="642f3-111">**Element**</span></span>|<span data-ttu-id="642f3-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="642f3-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="8f44f-113">DomainSettingError (SOAP)</span><span class="sxs-lookup"><span data-stu-id="8f44f-113">DomainSettingError (SOAP)</span></span>](domainsettingerror-soap.md) <br/> |<span data-ttu-id="8f44f-114">Stellt einen Fehler, die beim Abrufen einer domäneneinstellung dar.</span><span class="sxs-lookup"><span data-stu-id="8f44f-114">Represents an error that occurred while retrieving a domain setting.</span></span> <span data-ttu-id="8f44f-115">Dies stellt einen Fehler aus einer [GetDomainSettings-Vorgang (SOAP)](getdomainsettings-operation-soap.md) Vorgang Anforderung dar.</span><span class="sxs-lookup"><span data-stu-id="8f44f-115">This represents an error from a [GetDomainSettings operation (SOAP)](getdomainsettings-operation-soap.md) operation request.</span></span>  <br/> |
+|[<span data-ttu-id="642f3-113">DomainSettingError (SOAP)</span><span class="sxs-lookup"><span data-stu-id="642f3-113">DomainSettingError (SOAP)</span></span>](domainsettingerror-soap.md) <br/> |<span data-ttu-id="642f3-114">Stellt einen Fehler, die beim Abrufen einer domäneneinstellung dar.</span><span class="sxs-lookup"><span data-stu-id="642f3-114">Represents an error that occurred while retrieving a domain setting.</span></span> <span data-ttu-id="642f3-115">Dies stellt einen Fehler aus einer [GetDomainSettings-Vorgang (SOAP)](getdomainsettings-operation-soap.md) Vorgang Anforderung dar.</span><span class="sxs-lookup"><span data-stu-id="642f3-115">This represents an error from a [GetDomainSettings operation (SOAP)](getdomainsettings-operation-soap.md) operation request.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="8f44f-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="8f44f-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="642f3-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="642f3-116">Parent elements</span></span>
 
-|<span data-ttu-id="8f44f-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="8f44f-117">**Element**</span></span>|<span data-ttu-id="8f44f-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="8f44f-118">**Description**</span></span>|
+|<span data-ttu-id="642f3-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="642f3-117">**Element**</span></span>|<span data-ttu-id="642f3-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="642f3-118">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="8f44f-119">DomainResponse (SOAP)</span><span class="sxs-lookup"><span data-stu-id="8f44f-119">DomainResponse (SOAP)</span></span>](domainresponse-soap.md) <br/> |<span data-ttu-id="8f44f-120">Enthält die angeforderten Einstellungen für die angegebene Domäne.</span><span class="sxs-lookup"><span data-stu-id="8f44f-120">Contains the requested settings for the specified domain.</span></span>  <br/> |
+|[<span data-ttu-id="642f3-119">DomainResponse (SOAP)</span><span class="sxs-lookup"><span data-stu-id="642f3-119">DomainResponse (SOAP)</span></span>](domainresponse-soap.md) <br/> |<span data-ttu-id="642f3-120">Enthält die angeforderten Einstellungen für die angegebene Domäne.</span><span class="sxs-lookup"><span data-stu-id="642f3-120">Contains the requested settings for the specified domain.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="8f44f-121">Textwert</span><span class="sxs-lookup"><span data-stu-id="8f44f-121">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="642f3-121">Textwert</span><span class="sxs-lookup"><span data-stu-id="642f3-121">Text value</span></span>
 
-<span data-ttu-id="8f44f-122">Keine.</span><span class="sxs-lookup"><span data-stu-id="8f44f-122">None.</span></span>
+<span data-ttu-id="642f3-122">Keine.</span><span class="sxs-lookup"><span data-stu-id="642f3-122">None.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="8f44f-123">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="8f44f-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="642f3-123">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="642f3-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="8f44f-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="8f44f-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|<span data-ttu-id="8f44f-125">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="8f44f-125">Schema Name</span></span>  <br/> |<span data-ttu-id="8f44f-126">AutoErmittlung-schema</span><span class="sxs-lookup"><span data-stu-id="8f44f-126">Autodiscover schema</span></span>  <br/> |
-|<span data-ttu-id="8f44f-127">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="8f44f-127">Validation File</span></span>  <br/> |<span data-ttu-id="8f44f-128">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="8f44f-128">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="8f44f-129">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="8f44f-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="8f44f-130">True</span><span class="sxs-lookup"><span data-stu-id="8f44f-130">True</span></span>  <br/> |
+|<span data-ttu-id="642f3-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="642f3-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="642f3-125">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="642f3-125">Schema Name</span></span>  <br/> |<span data-ttu-id="642f3-126">AutoErmittlung-schema</span><span class="sxs-lookup"><span data-stu-id="642f3-126">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="642f3-127">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="642f3-127">Validation File</span></span>  <br/> |<span data-ttu-id="642f3-128">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="642f3-128">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="642f3-129">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="642f3-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="642f3-130">True</span><span class="sxs-lookup"><span data-stu-id="642f3-130">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="8f44f-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="8f44f-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="642f3-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="642f3-131">See also</span></span>
 
-- [<span data-ttu-id="8f44f-132">GetDomainSettings-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="8f44f-132">GetDomainSettings operation (SOAP)</span></span>](getdomainsettings-operation-soap.md)
+- [<span data-ttu-id="642f3-132">GetDomainSettings-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="642f3-132">GetDomainSettings operation (SOAP)</span></span>](getdomainsettings-operation-soap.md)
 

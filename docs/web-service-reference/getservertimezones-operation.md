@@ -16,30 +16,30 @@ ms.openlocfilehash: 9b202d510a599c9082d075228be4c479a2086753
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758802"
 ---
-# <a name="getservertimezones-operation"></a><span data-ttu-id="5b391-103">GetServerTimeZones-Vorgang</span><span class="sxs-lookup"><span data-stu-id="5b391-103">GetServerTimeZones operation</span></span>
+# <a name="getservertimezones-operation"></a><span data-ttu-id="8eb6c-103">GetServerTimeZones-Vorgang</span><span class="sxs-lookup"><span data-stu-id="8eb6c-103">GetServerTimeZones operation</span></span>
 
-<span data-ttu-id="5b391-104">Der Vorgang **GetServerTimeZones** zurückgegeben Informationen aus Zeitzonendefinitionen, die auf einem Exchange-Server zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="5b391-104">The **GetServerTimeZones** operation returns information from time zone definitions that are available on an Exchange server.</span></span> 
+<span data-ttu-id="8eb6c-104">Der Vorgang **GetServerTimeZones** zurückgegeben Informationen aus Zeitzonendefinitionen, die auf einem Exchange-Server zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="8eb6c-104">The **GetServerTimeZones** operation returns information from time zone definitions that are available on an Exchange server.</span></span> 
   
-## <a name="soap-headers"></a><span data-ttu-id="5b391-105">SOAP-Header</span><span class="sxs-lookup"><span data-stu-id="5b391-105">SOAP Headers</span></span>
+## <a name="soap-headers"></a><span data-ttu-id="8eb6c-105">SOAP-Header</span><span class="sxs-lookup"><span data-stu-id="8eb6c-105">SOAP Headers</span></span>
 
-<span data-ttu-id="5b391-106">Der Vorgang **GetServerTimeZones** können die SOAP-Header, die aufgeführt und in der folgenden Tabelle beschrieben.</span><span class="sxs-lookup"><span data-stu-id="5b391-106">The **GetServerTimeZones** operation can use the SOAP headers that are listed and described in the following table.</span></span> 
+<span data-ttu-id="8eb6c-106">Der Vorgang **GetServerTimeZones** können die SOAP-Header, die aufgeführt und in der folgenden Tabelle beschrieben.</span><span class="sxs-lookup"><span data-stu-id="8eb6c-106">The **GetServerTimeZones** operation can use the SOAP headers that are listed and described in the following table.</span></span> 
   
-|<span data-ttu-id="5b391-107">**Header**</span><span class="sxs-lookup"><span data-stu-id="5b391-107">**Header**</span></span>|<span data-ttu-id="5b391-108">**Element**</span><span class="sxs-lookup"><span data-stu-id="5b391-108">**Element**</span></span>|<span data-ttu-id="5b391-109">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="5b391-109">**Description**</span></span>|
+|<span data-ttu-id="8eb6c-107">**Header**</span><span class="sxs-lookup"><span data-stu-id="8eb6c-107">**Header**</span></span>|<span data-ttu-id="8eb6c-108">**Element**</span><span class="sxs-lookup"><span data-stu-id="8eb6c-108">**Element**</span></span>|<span data-ttu-id="8eb6c-109">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="8eb6c-109">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="5b391-110">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="5b391-110">MailboxCulture</span></span>  <br/> |[<span data-ttu-id="5b391-111">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="5b391-111">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="5b391-112">Gibt die RFC3066-Kultur an, die für den Zugriff auf das Postfach verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="5b391-112">Identifies the RFC3066 culture to be used to access the mailbox.</span></span>  <br/> |
-|<span data-ttu-id="5b391-113">RequestVersion</span><span class="sxs-lookup"><span data-stu-id="5b391-113">RequestVersion</span></span>  <br/> |[<span data-ttu-id="5b391-114">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="5b391-114">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="5b391-115">Gibt die Schemaversion für die Vorgangsanforderung an.</span><span class="sxs-lookup"><span data-stu-id="5b391-115">Identifies the schema version for the operation request.</span></span>  <br/> |
-|<span data-ttu-id="5b391-116">ServerVersion</span><span class="sxs-lookup"><span data-stu-id="5b391-116">ServerVersion</span></span>  <br/> |[<span data-ttu-id="5b391-117">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="5b391-117">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="5b391-118">Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.</span><span class="sxs-lookup"><span data-stu-id="5b391-118">Identifies the version of the server that responded to the request.</span></span>  <br/> |
+|<span data-ttu-id="8eb6c-110">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="8eb6c-110">MailboxCulture</span></span>  <br/> |[<span data-ttu-id="8eb6c-111">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="8eb6c-111">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="8eb6c-112">Gibt die RFC3066-Kultur an, die für den Zugriff auf das Postfach verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="8eb6c-112">Identifies the RFC3066 culture to be used to access the mailbox.</span></span>  <br/> |
+|<span data-ttu-id="8eb6c-113">RequestVersion</span><span class="sxs-lookup"><span data-stu-id="8eb6c-113">RequestVersion</span></span>  <br/> |[<span data-ttu-id="8eb6c-114">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="8eb6c-114">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="8eb6c-115">Gibt die Schemaversion für die Vorgangsanforderung an.</span><span class="sxs-lookup"><span data-stu-id="8eb6c-115">Identifies the schema version for the operation request.</span></span>  <br/> |
+|<span data-ttu-id="8eb6c-116">ServerVersion</span><span class="sxs-lookup"><span data-stu-id="8eb6c-116">ServerVersion</span></span>  <br/> |[<span data-ttu-id="8eb6c-117">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="8eb6c-117">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="8eb6c-118">Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.</span><span class="sxs-lookup"><span data-stu-id="8eb6c-118">Identifies the version of the server that responded to the request.</span></span>  <br/> |
    
-## <a name="getservertimezones-request-examples"></a><span data-ttu-id="5b391-119">GetServerTimeZones-anforderungsbeispiele</span><span class="sxs-lookup"><span data-stu-id="5b391-119">GetServerTimeZones request examples</span></span>
+## <a name="getservertimezones-request-examples"></a><span data-ttu-id="8eb6c-119">GetServerTimeZones-anforderungsbeispiele</span><span class="sxs-lookup"><span data-stu-id="8eb6c-119">GetServerTimeZones request examples</span></span>
 
-### <a name="getting-the-name-and-identifier-of-each-time-zone"></a><span data-ttu-id="5b391-120">Abrufen der Namen und Bezeichner der einzelnen Zeitzonen</span><span class="sxs-lookup"><span data-stu-id="5b391-120">Getting the Name and Identifier of Each Time Zone</span></span>
+### <a name="getting-the-name-and-identifier-of-each-time-zone"></a><span data-ttu-id="8eb6c-120">Abrufen der Namen und Bezeichner der einzelnen Zeitzonen</span><span class="sxs-lookup"><span data-stu-id="8eb6c-120">Getting the Name and Identifier of Each Time Zone</span></span>
 
-<span data-ttu-id="5b391-121">Im folgenden Codebeispiel wird veranschaulicht, wie die Namen und Bezeichner für die Zeitzonen Eastern Standard Time und Pazifik Normalzeit abgerufen.</span><span class="sxs-lookup"><span data-stu-id="5b391-121">The following code example shows how to retrieve the name and identifier for the Eastern Standard Time and Pacific Standard Time time zones.</span></span>
+<span data-ttu-id="8eb6c-121">Im folgenden Codebeispiel wird veranschaulicht, wie die Namen und Bezeichner für die Zeitzonen Eastern Standard Time und Pazifik Normalzeit abgerufen.</span><span class="sxs-lookup"><span data-stu-id="8eb6c-121">The following code example shows how to retrieve the name and identifier for the Eastern Standard Time and Pacific Standard Time time zones.</span></span>
   
-### <a name="code"></a><span data-ttu-id="5b391-122">Code</span><span class="sxs-lookup"><span data-stu-id="5b391-122">Code</span></span>
+### <a name="code"></a><span data-ttu-id="8eb6c-122">Code</span><span class="sxs-lookup"><span data-stu-id="8eb6c-122">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -61,15 +61,15 @@ ms.locfileid: "19758802"
 </soap:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="5b391-123">Kommentare</span><span class="sxs-lookup"><span data-stu-id="5b391-123">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="8eb6c-123">Kommentare</span><span class="sxs-lookup"><span data-stu-id="8eb6c-123">Comments</span></span>
 
-<span data-ttu-id="5b391-124">Jedes Element [Id (TimeZone)](id-timezone.md) enthält den Bezeichner des einer Zeitzonendefinition angefordert wird.</span><span class="sxs-lookup"><span data-stu-id="5b391-124">Each [Id (TimeZone)](id-timezone.md) element contains the identifier of a time zone definition that is being requested.</span></span> <span data-ttu-id="5b391-125">Um die Informationen für alle Zeitzonen anzufordern, ausgelassen werden Sie, das [Ids](ids.md) -Element aus der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="5b391-125">To request information for all time zones, omit the [Ids](ids.md) element from the request.</span></span> 
+<span data-ttu-id="8eb6c-124">Jedes Element [Id (TimeZone)](id-timezone.md) enthält den Bezeichner des einer Zeitzonendefinition angefordert wird.</span><span class="sxs-lookup"><span data-stu-id="8eb6c-124">Each [Id (TimeZone)](id-timezone.md) element contains the identifier of a time zone definition that is being requested.</span></span> <span data-ttu-id="8eb6c-125">Um die Informationen für alle Zeitzonen anzufordern, ausgelassen werden Sie, das [Ids](ids.md) -Element aus der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="8eb6c-125">To request information for all time zones, omit the [Ids](ids.md) element from the request.</span></span> 
   
-### <a name="getting-the-full-definition-of-each-time-zone"></a><span data-ttu-id="5b391-126">Erste vollständige Definition der einzelnen Zeitzonen</span><span class="sxs-lookup"><span data-stu-id="5b391-126">Getting the Full Definition of Each Time Zone</span></span>
+### <a name="getting-the-full-definition-of-each-time-zone"></a><span data-ttu-id="8eb6c-126">Erste vollständige Definition der einzelnen Zeitzonen</span><span class="sxs-lookup"><span data-stu-id="8eb6c-126">Getting the Full Definition of Each Time Zone</span></span>
 
-<span data-ttu-id="5b391-127">Im folgenden Codebeispiel wird veranschaulicht, wie die Vollzeit Zone Definition für die Zeitzone Eastern Standard Time abgerufen.</span><span class="sxs-lookup"><span data-stu-id="5b391-127">The following code example shows how to retrieve the full time zone definition for the Eastern Standard Time time zone.</span></span>
+<span data-ttu-id="8eb6c-127">Im folgenden Codebeispiel wird veranschaulicht, wie die Vollzeit Zone Definition für die Zeitzone Eastern Standard Time abgerufen.</span><span class="sxs-lookup"><span data-stu-id="8eb6c-127">The following code example shows how to retrieve the full time zone definition for the Eastern Standard Time time zone.</span></span>
   
-### <a name="code"></a><span data-ttu-id="5b391-128">Code</span><span class="sxs-lookup"><span data-stu-id="5b391-128">Code</span></span>
+### <a name="code"></a><span data-ttu-id="8eb6c-128">Code</span><span class="sxs-lookup"><span data-stu-id="8eb6c-128">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -90,17 +90,17 @@ ms.locfileid: "19758802"
 </soap:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="5b391-129">Kommentare</span><span class="sxs-lookup"><span data-stu-id="5b391-129">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="8eb6c-129">Kommentare</span><span class="sxs-lookup"><span data-stu-id="8eb6c-129">Comments</span></span>
 
-<span data-ttu-id="5b391-130">Jedes Element [Id (TimeZone)](id-timezone.md) enthält den Bezeichner des einer Zeitzonendefinition angefordert wird.</span><span class="sxs-lookup"><span data-stu-id="5b391-130">Each [Id (TimeZone)](id-timezone.md) element contains the identifier of a time zone definition that is being requested.</span></span> <span data-ttu-id="5b391-131">Um die Informationen für alle Zeitzonen anzufordern, ausgelassen werden Sie, das [Ids](ids.md) -Element aus der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="5b391-131">To request information for all time zones, omit the [Ids](ids.md) element from the request.</span></span> 
+<span data-ttu-id="8eb6c-130">Jedes Element [Id (TimeZone)](id-timezone.md) enthält den Bezeichner des einer Zeitzonendefinition angefordert wird.</span><span class="sxs-lookup"><span data-stu-id="8eb6c-130">Each [Id (TimeZone)](id-timezone.md) element contains the identifier of a time zone definition that is being requested.</span></span> <span data-ttu-id="8eb6c-131">Um die Informationen für alle Zeitzonen anzufordern, ausgelassen werden Sie, das [Ids](ids.md) -Element aus der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="8eb6c-131">To request information for all time zones, omit the [Ids](ids.md) element from the request.</span></span> 
   
-## <a name="getservertimezones-response-examples"></a><span data-ttu-id="5b391-132">Beispiele für GetServerTimeZones Antwort</span><span class="sxs-lookup"><span data-stu-id="5b391-132">GetServerTimeZones response examples</span></span>
+## <a name="getservertimezones-response-examples"></a><span data-ttu-id="8eb6c-132">Beispiele für GetServerTimeZones Antwort</span><span class="sxs-lookup"><span data-stu-id="8eb6c-132">GetServerTimeZones response examples</span></span>
 
-### <a name="receiving-the-time-zone-name-and-identifier-only"></a><span data-ttu-id="5b391-133">Die Zeitzonennamen und Bezeichner empfangen nur</span><span class="sxs-lookup"><span data-stu-id="5b391-133">Receiving the Time Zone Name and Identifier Only</span></span>
+### <a name="receiving-the-time-zone-name-and-identifier-only"></a><span data-ttu-id="8eb6c-133">Die Zeitzonennamen und Bezeichner empfangen nur</span><span class="sxs-lookup"><span data-stu-id="8eb6c-133">Receiving the Time Zone Name and Identifier Only</span></span>
 
-<span data-ttu-id="5b391-134">Das folgende Beispiel einer Antwort **GetServerTimeZones** zeigt eine erfolgreiche Antwort auf eine **GetServerTimeZones** an, in der das **ReturnFullTimeZoneData** -Attribut auf **false**festgelegt wurde.</span><span class="sxs-lookup"><span data-stu-id="5b391-134">The following example of a **GetServerTimeZones** response shows a successful response to a **GetServerTimeZones** request in which the **ReturnFullTimeZoneData** attribute was set to **false**.</span></span> <span data-ttu-id="5b391-135">Die Antwort enthält den Namen und Bezeichner für die Zeitzonen Eastern Standard Time und Pazifik Normalzeit.</span><span class="sxs-lookup"><span data-stu-id="5b391-135">The response contains the name and identifier for the Eastern Standard Time and Pacific Standard Time time zones.</span></span>
+<span data-ttu-id="8eb6c-134">Das folgende Beispiel einer Antwort **GetServerTimeZones** zeigt eine erfolgreiche Antwort auf eine **GetServerTimeZones** an, in der das **ReturnFullTimeZoneData** -Attribut auf **false**festgelegt wurde.</span><span class="sxs-lookup"><span data-stu-id="8eb6c-134">The following example of a **GetServerTimeZones** response shows a successful response to a **GetServerTimeZones** request in which the **ReturnFullTimeZoneData** attribute was set to **false**.</span></span> <span data-ttu-id="8eb6c-135">Die Antwort enthält den Namen und Bezeichner für die Zeitzonen Eastern Standard Time und Pazifik Normalzeit.</span><span class="sxs-lookup"><span data-stu-id="8eb6c-135">The response contains the name and identifier for the Eastern Standard Time and Pacific Standard Time time zones.</span></span>
   
-### <a name="code"></a><span data-ttu-id="5b391-136">Code</span><span class="sxs-lookup"><span data-stu-id="5b391-136">Code</span></span>
+### <a name="code"></a><span data-ttu-id="8eb6c-136">Code</span><span class="sxs-lookup"><span data-stu-id="8eb6c-136">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -132,11 +132,11 @@ ms.locfileid: "19758802"
 </soap:Envelope>
 ```
 
-### <a name="receiving-a-full-time-zone-definition"></a><span data-ttu-id="5b391-137">Die Definition eines Vollzeit Zone empfangen</span><span class="sxs-lookup"><span data-stu-id="5b391-137">Receiving a Full Time Zone Definition</span></span>
+### <a name="receiving-a-full-time-zone-definition"></a><span data-ttu-id="8eb6c-137">Die Definition eines Vollzeit Zone empfangen</span><span class="sxs-lookup"><span data-stu-id="8eb6c-137">Receiving a Full Time Zone Definition</span></span>
 
-<span data-ttu-id="5b391-138">Das folgende Beispiel einer Antwort **GetServerTimeZones** zeigt eine erfolgreiche Antwort auf eine **GetServerTimeZones** an, in der das **ReturnFullTimeZoneData** -Attribut auf **true**festgelegt wurde.</span><span class="sxs-lookup"><span data-stu-id="5b391-138">The following example of a **GetServerTimeZones** response shows a successful response to a **GetServerTimeZones** request in which the **ReturnFullTimeZoneData** attribute was set to **true**.</span></span> <span data-ttu-id="5b391-139">Die Antwort enthält die Definition des Vollzeit-Zone für die Zeitzone Eastern Standard Time.</span><span class="sxs-lookup"><span data-stu-id="5b391-139">The response contains the full time zone definition for the Eastern Standard Time time zone.</span></span>
+<span data-ttu-id="8eb6c-138">Das folgende Beispiel einer Antwort **GetServerTimeZones** zeigt eine erfolgreiche Antwort auf eine **GetServerTimeZones** an, in der das **ReturnFullTimeZoneData** -Attribut auf **true**festgelegt wurde.</span><span class="sxs-lookup"><span data-stu-id="8eb6c-138">The following example of a **GetServerTimeZones** response shows a successful response to a **GetServerTimeZones** request in which the **ReturnFullTimeZoneData** attribute was set to **true**.</span></span> <span data-ttu-id="8eb6c-139">Die Antwort enthält die Definition des Vollzeit-Zone für die Zeitzone Eastern Standard Time.</span><span class="sxs-lookup"><span data-stu-id="8eb6c-139">The response contains the full time zone definition for the Eastern Standard Time time zone.</span></span>
   
-### <a name="code"></a><span data-ttu-id="5b391-140">Code</span><span class="sxs-lookup"><span data-stu-id="5b391-140">Code</span></span>
+### <a name="code"></a><span data-ttu-id="8eb6c-140">Code</span><span class="sxs-lookup"><span data-stu-id="8eb6c-140">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -217,18 +217,18 @@ ms.locfileid: "19758802"
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="5b391-141">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="5b391-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8eb6c-141">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="8eb6c-141">See also</span></span>
 
 
 
-[<span data-ttu-id="5b391-142">GetServerTimeZones</span><span class="sxs-lookup"><span data-stu-id="5b391-142">GetServerTimeZones</span></span>](getservertimezones.md)
+[<span data-ttu-id="8eb6c-142">GetServerTimeZones</span><span class="sxs-lookup"><span data-stu-id="8eb6c-142">GetServerTimeZones</span></span>](getservertimezones.md)
   
-[<span data-ttu-id="5b391-143">GetServerTimeZonesResponse</span><span class="sxs-lookup"><span data-stu-id="5b391-143">GetServerTimeZonesResponse</span></span>](getservertimezonesresponse.md)
+[<span data-ttu-id="8eb6c-143">GetServerTimeZonesResponse</span><span class="sxs-lookup"><span data-stu-id="8eb6c-143">GetServerTimeZonesResponse</span></span>](getservertimezonesresponse.md)
   
- <span data-ttu-id="5b391-144">**GetServerTimeZonesType**</span><span class="sxs-lookup"><span data-stu-id="5b391-144">**GetServerTimeZonesType**</span></span>
+ <span data-ttu-id="8eb6c-144">**GetServerTimeZonesType**</span><span class="sxs-lookup"><span data-stu-id="8eb6c-144">**GetServerTimeZonesType**</span></span>
 
 
-[<span data-ttu-id="5b391-145">EWS-Operationen in Exchange</span><span class="sxs-lookup"><span data-stu-id="5b391-145">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+[<span data-ttu-id="8eb6c-145">EWS-Operationen in Exchange</span><span class="sxs-lookup"><span data-stu-id="8eb6c-145">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
   
-- [<span data-ttu-id="5b391-146">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="5b391-146">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="8eb6c-146">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="8eb6c-146">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

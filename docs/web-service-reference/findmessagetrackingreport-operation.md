@@ -16,16 +16,16 @@ ms.openlocfilehash: 103655b1c190f43bd11cfd3bfeabc22422d726a1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758469"
 ---
-# <a name="findmessagetrackingreport-operation"></a><span data-ttu-id="b5d87-103">FindMessageTrackingReport-Vorgang</span><span class="sxs-lookup"><span data-stu-id="b5d87-103">FindMessageTrackingReport operation</span></span>
+# <a name="findmessagetrackingreport-operation"></a><span data-ttu-id="cc0a8-103">FindMessageTrackingReport-Vorgang</span><span class="sxs-lookup"><span data-stu-id="cc0a8-103">FindMessageTrackingReport operation</span></span>
 
-<span data-ttu-id="b5d87-104">Der Vorgang **FindMessageTrackingReport** sucht nach Nachrichten, die den angegebenen Kriterien entsprechen.</span><span class="sxs-lookup"><span data-stu-id="b5d87-104">The **FindMessageTrackingReport** operation finds messages that meet the specified criteria.</span></span> 
+<span data-ttu-id="cc0a8-104">Der Vorgang **FindMessageTrackingReport** sucht nach Nachrichten, die den angegebenen Kriterien entsprechen.</span><span class="sxs-lookup"><span data-stu-id="cc0a8-104">The **FindMessageTrackingReport** operation finds messages that meet the specified criteria.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="b5d87-105">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b5d87-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cc0a8-105">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="cc0a8-105">See also</span></span>
 
-- [<span data-ttu-id="b5d87-106">EWS-Operationen in Exchange</span><span class="sxs-lookup"><span data-stu-id="b5d87-106">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+- [<span data-ttu-id="cc0a8-106">EWS-Operationen in Exchange</span><span class="sxs-lookup"><span data-stu-id="cc0a8-106">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
   
-- [<span data-ttu-id="b5d87-107">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="b5d87-107">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="cc0a8-107">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="cc0a8-107">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

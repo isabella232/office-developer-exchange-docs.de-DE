@@ -12,43 +12,43 @@ ms.openlocfilehash: f75b89dbb6e948431d56acb9baa93fe4d4a1d939
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757235"
 ---
-# <a name="addnewimcontacttogroup-operation"></a><span data-ttu-id="a1351-103">AddNewImContactToGroup-Vorgang</span><span class="sxs-lookup"><span data-stu-id="a1351-103">AddNewImContactToGroup operation</span></span>
+# <a name="addnewimcontacttogroup-operation"></a><span data-ttu-id="bb648-103">AddNewImContactToGroup-Vorgang</span><span class="sxs-lookup"><span data-stu-id="bb648-103">AddNewImContactToGroup operation</span></span>
 
-<span data-ttu-id="a1351-104">Hier finden Sie Informationen zum **AddNewImContactToGroup** EWS-Vorgang.</span><span class="sxs-lookup"><span data-stu-id="a1351-104">Find information about the **AddNewImContactToGroup** EWS operation.</span></span> 
+<span data-ttu-id="bb648-104">Hier finden Sie Informationen zum **AddNewImContactToGroup** EWS-Vorgang.</span><span class="sxs-lookup"><span data-stu-id="bb648-104">Find information about the **AddNewImContactToGroup** EWS operation.</span></span> 
   
-<span data-ttu-id="a1351-105">Der Vorgang **AddNewImContactToGroup** hinzugefügt ein Instant messaging (IM)-Gruppe einen neuen Kontakt.</span><span class="sxs-lookup"><span data-stu-id="a1351-105">The **AddNewImContactToGroup** operation adds a new contact to an instant messaging (IM) group.</span></span> 
+<span data-ttu-id="bb648-105">Der Vorgang **AddNewImContactToGroup** hinzugefügt ein Instant messaging (IM)-Gruppe einen neuen Kontakt.</span><span class="sxs-lookup"><span data-stu-id="bb648-105">The **AddNewImContactToGroup** operation adds a new contact to an instant messaging (IM) group.</span></span> 
   
-<span data-ttu-id="a1351-106">Dieser Vorgang wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="a1351-106">This operation was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="bb648-106">Dieser Vorgang wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="bb648-106">This operation was introduced in Exchange Server 2013.</span></span>
   
-## <a name="using-the-addnewimcontacttogroup-operation"></a><span data-ttu-id="a1351-107">Verwenden des AddNewImContactToGroup-Vorgangs</span><span class="sxs-lookup"><span data-stu-id="a1351-107">Using the AddNewImContactToGroup operation</span></span>
+## <a name="using-the-addnewimcontacttogroup-operation"></a><span data-ttu-id="bb648-107">Verwenden des AddNewImContactToGroup-Vorgangs</span><span class="sxs-lookup"><span data-stu-id="bb648-107">Using the AddNewImContactToGroup operation</span></span>
 
-<span data-ttu-id="a1351-108">Die **AddNewImContactToGroup** -Operation verwendet die folgenden drei Argumente an einen neuen Kontakt zu einer Instant Messaging-Gruppe hinzufügen:</span><span class="sxs-lookup"><span data-stu-id="a1351-108">The **AddNewImContactToGroup** operation takes the following three arguments to add a new contact to an IM group:</span></span> 
+<span data-ttu-id="bb648-108">Die **AddNewImContactToGroup** -Operation verwendet die folgenden drei Argumente an einen neuen Kontakt zu einer Instant Messaging-Gruppe hinzufügen:</span><span class="sxs-lookup"><span data-stu-id="bb648-108">The **AddNewImContactToGroup** operation takes the following three arguments to add a new contact to an IM group:</span></span> 
   
-- <span data-ttu-id="a1351-109">**ImAddress** - Eigenschaft, identifiziert die Sofortnachrichtenadresse des Kontakts.</span><span class="sxs-lookup"><span data-stu-id="a1351-109">**ImAddress** property - Identifies the contact's IM address.</span></span> <span data-ttu-id="a1351-110">Diese Eigenschaft ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="a1351-110">This property is required.</span></span> 
+- <span data-ttu-id="bb648-109">**ImAddress** - Eigenschaft, identifiziert die Sofortnachrichtenadresse des Kontakts.</span><span class="sxs-lookup"><span data-stu-id="bb648-109">**ImAddress** property - Identifies the contact's IM address.</span></span> <span data-ttu-id="bb648-110">Diese Eigenschaft ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="bb648-110">This property is required.</span></span> 
     
-- <span data-ttu-id="a1351-111">**DisplayName** -Eigenschaft – identifiziert den Namen des Kontakts anzeigen.</span><span class="sxs-lookup"><span data-stu-id="a1351-111">**DisplayName** property - Identifies the contact's display name.</span></span> 
+- <span data-ttu-id="bb648-111">**DisplayName** -Eigenschaft – identifiziert den Namen des Kontakts anzeigen.</span><span class="sxs-lookup"><span data-stu-id="bb648-111">**DisplayName** property - Identifies the contact's display name.</span></span> 
     
-- <span data-ttu-id="a1351-112">**GroupId** -Eigenschaft – identifiziert die Gruppe, der der Kontakt hinzugefügt wird.</span><span class="sxs-lookup"><span data-stu-id="a1351-112">**GroupId** property - Identifies the group that the contact is added to.</span></span> 
+- <span data-ttu-id="bb648-112">**GroupId** -Eigenschaft – identifiziert die Gruppe, der der Kontakt hinzugefügt wird.</span><span class="sxs-lookup"><span data-stu-id="bb648-112">**GroupId** property - Identifies the group that the contact is added to.</span></span> 
     
-<span data-ttu-id="a1351-113">Dieser Vorgang gibt die Rolle des Kontakts, den Sie der Gruppe hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="a1351-113">This operation returns the persona of the contact that was added to the group.</span></span>
+<span data-ttu-id="bb648-113">Dieser Vorgang gibt die Rolle des Kontakts, den Sie der Gruppe hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="bb648-113">This operation returns the persona of the contact that was added to the group.</span></span>
   
-### <a name="addnewimcontacttogroup-operation-soap-headers"></a><span data-ttu-id="a1351-114">AddNewImContactToGroup Vorgang SOAP-Header</span><span class="sxs-lookup"><span data-stu-id="a1351-114">AddNewImContactToGroup operation SOAP headers</span></span>
+### <a name="addnewimcontacttogroup-operation-soap-headers"></a><span data-ttu-id="bb648-114">AddNewImContactToGroup Vorgang SOAP-Header</span><span class="sxs-lookup"><span data-stu-id="bb648-114">AddNewImContactToGroup operation SOAP headers</span></span>
 
-<span data-ttu-id="a1351-115">Der Vorgang **AddNewImContactToGroup** können die SOAP-Header, die in der folgenden Tabelle aufgelistet sind.</span><span class="sxs-lookup"><span data-stu-id="a1351-115">The **AddNewImContactToGroup** operation can use the SOAP headers that are listed in the following table.</span></span> 
+<span data-ttu-id="bb648-115">Der Vorgang **AddNewImContactToGroup** können die SOAP-Header, die in der folgenden Tabelle aufgelistet sind.</span><span class="sxs-lookup"><span data-stu-id="bb648-115">The **AddNewImContactToGroup** operation can use the SOAP headers that are listed in the following table.</span></span> 
   
-|<span data-ttu-id="a1351-116">**Headername**</span><span class="sxs-lookup"><span data-stu-id="a1351-116">**Header name**</span></span>|<span data-ttu-id="a1351-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="a1351-117">**Element**</span></span>|<span data-ttu-id="a1351-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="a1351-118">**Description**</span></span>|
+|<span data-ttu-id="bb648-116">**Headername**</span><span class="sxs-lookup"><span data-stu-id="bb648-116">**Header name**</span></span>|<span data-ttu-id="bb648-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="bb648-117">**Element**</span></span>|<span data-ttu-id="bb648-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="bb648-118">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="a1351-119">**Impersonation**</span><span class="sxs-lookup"><span data-stu-id="a1351-119">**Impersonation**</span></span> <br/> |[<span data-ttu-id="a1351-120">"ExchangeImpersonation"</span><span class="sxs-lookup"><span data-stu-id="a1351-120">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="a1351-121">Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt.</span><span class="sxs-lookup"><span data-stu-id="a1351-121">Identifies the user whom the client application is impersonating.</span></span> <span data-ttu-id="a1351-122">Diese Kopfzeile gilt für eine Anforderung.</span><span class="sxs-lookup"><span data-stu-id="a1351-122">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="a1351-123">**MailboxCulture**</span><span class="sxs-lookup"><span data-stu-id="a1351-123">**MailboxCulture**</span></span> <br/> |[<span data-ttu-id="a1351-124">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="a1351-124">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="a1351-125">Bezeichnet die Kultur gemäß Definition in RFC 3066, "Tags for the Identification des Languages", um Zugriff auf das Postfach verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="a1351-125">Identifies the culture, as defined in RFC 3066, "Tags for the Identification of Languages", to be used to access the mailbox.</span></span> <span data-ttu-id="a1351-126">Diese Kopfzeile gilt für eine Anforderung.</span><span class="sxs-lookup"><span data-stu-id="a1351-126">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="a1351-127">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="a1351-127">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="a1351-128">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="a1351-128">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="a1351-129">Gibt die Schemaversion für die Vorgangsanforderung an.</span><span class="sxs-lookup"><span data-stu-id="a1351-129">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="a1351-130">Diese Kopfzeile gilt für eine Anforderung.</span><span class="sxs-lookup"><span data-stu-id="a1351-130">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="a1351-131">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="a1351-131">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="a1351-132">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="a1351-132">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="a1351-133">Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.</span><span class="sxs-lookup"><span data-stu-id="a1351-133">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="a1351-134">Diese Kopfzeile gilt für eine Antwort.</span><span class="sxs-lookup"><span data-stu-id="a1351-134">This header is applicable to a response.</span></span>  <br/> |
+|<span data-ttu-id="bb648-119">**Impersonation**</span><span class="sxs-lookup"><span data-stu-id="bb648-119">**Impersonation**</span></span> <br/> |[<span data-ttu-id="bb648-120">"ExchangeImpersonation"</span><span class="sxs-lookup"><span data-stu-id="bb648-120">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="bb648-121">Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt.</span><span class="sxs-lookup"><span data-stu-id="bb648-121">Identifies the user whom the client application is impersonating.</span></span> <span data-ttu-id="bb648-122">Diese Kopfzeile gilt für eine Anforderung.</span><span class="sxs-lookup"><span data-stu-id="bb648-122">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="bb648-123">**MailboxCulture**</span><span class="sxs-lookup"><span data-stu-id="bb648-123">**MailboxCulture**</span></span> <br/> |[<span data-ttu-id="bb648-124">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="bb648-124">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="bb648-125">Bezeichnet die Kultur gemäß Definition in RFC 3066, "Tags for the Identification des Languages", um Zugriff auf das Postfach verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="bb648-125">Identifies the culture, as defined in RFC 3066, "Tags for the Identification of Languages", to be used to access the mailbox.</span></span> <span data-ttu-id="bb648-126">Diese Kopfzeile gilt für eine Anforderung.</span><span class="sxs-lookup"><span data-stu-id="bb648-126">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="bb648-127">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="bb648-127">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="bb648-128">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="bb648-128">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="bb648-129">Gibt die Schemaversion für die Vorgangsanforderung an.</span><span class="sxs-lookup"><span data-stu-id="bb648-129">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="bb648-130">Diese Kopfzeile gilt für eine Anforderung.</span><span class="sxs-lookup"><span data-stu-id="bb648-130">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="bb648-131">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="bb648-131">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="bb648-132">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="bb648-132">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="bb648-133">Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.</span><span class="sxs-lookup"><span data-stu-id="bb648-133">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="bb648-134">Diese Kopfzeile gilt für eine Antwort.</span><span class="sxs-lookup"><span data-stu-id="bb648-134">This header is applicable to a response.</span></span>  <br/> |
    
-## <a name="addnewimcontacttogroup-operation-request-example-add-a-new-im-contact-to-a-group"></a><span data-ttu-id="a1351-135">AddNewImContactToGroup Vorgang-anforderungsbeispiel: Hinzufügen ein neues Kontakts Sofortnachrichten zu einer Gruppe</span><span class="sxs-lookup"><span data-stu-id="a1351-135">AddNewImContactToGroup operation request example: Add a new IM contact to a group</span></span>
+## <a name="addnewimcontacttogroup-operation-request-example-add-a-new-im-contact-to-a-group"></a><span data-ttu-id="bb648-135">AddNewImContactToGroup Vorgang-anforderungsbeispiel: Hinzufügen ein neues Kontakts Sofortnachrichten zu einer Gruppe</span><span class="sxs-lookup"><span data-stu-id="bb648-135">AddNewImContactToGroup operation request example: Add a new IM contact to a group</span></span>
 
-<span data-ttu-id="a1351-136">Im folgenden Beispiel wird ein **AddNewImContactToGroup** Vorgang Anforderung veranschaulicht das Hinzufügen ein neues Kontakts zu einer vorhandenen Gruppe Instant Messaging.</span><span class="sxs-lookup"><span data-stu-id="a1351-136">The following example of an **AddNewImContactToGroup** operation request shows how to add a new contact to an existing IM group.</span></span> <span data-ttu-id="a1351-137">Der Wert des **GroupId** -Eigenschaft für dieses Beispiel wurde von Ergebnissen der [AddImGroup-Vorgang](addimgroup-operation.md)zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="a1351-137">The **GroupId** property value for this example was returned from results of the [AddImGroup operation](addimgroup-operation.md).</span></span> <span data-ttu-id="a1351-138">Die **ExchangeStoreId** -Eigenschaft enthält den Wert des **GroupId** -Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="a1351-138">The **ExchangeStoreId** property contains the **GroupId** property value.</span></span> 
+<span data-ttu-id="bb648-136">Im folgenden Beispiel wird ein **AddNewImContactToGroup** Vorgang Anforderung veranschaulicht das Hinzufügen ein neues Kontakts zu einer vorhandenen Gruppe Instant Messaging.</span><span class="sxs-lookup"><span data-stu-id="bb648-136">The following example of an **AddNewImContactToGroup** operation request shows how to add a new contact to an existing IM group.</span></span> <span data-ttu-id="bb648-137">Der Wert des **GroupId** -Eigenschaft für dieses Beispiel wurde von Ergebnissen der [AddImGroup-Vorgang](addimgroup-operation.md)zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="bb648-137">The **GroupId** property value for this example was returned from results of the [AddImGroup operation](addimgroup-operation.md).</span></span> <span data-ttu-id="bb648-138">Die **ExchangeStoreId** -Eigenschaft enthält den Wert des **GroupId** -Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="bb648-138">The **ExchangeStoreId** property contains the **GroupId** property value.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -74,24 +74,24 @@ ms.locfileid: "19757235"
 ```
 
 > [!NOTE]
-> <span data-ttu-id="a1351-139">Der **GroupId** -Wert wurde gekürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="a1351-139">The **GroupId** value has been shortened to preserve readability.</span></span> 
+> <span data-ttu-id="bb648-139">Der **GroupId** -Wert wurde gekürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="bb648-139">The **GroupId** value has been shortened to preserve readability.</span></span> 
   
-<span data-ttu-id="a1351-140">Die Anforderung SOAP-Text enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="a1351-140">The request SOAP body contains the following elements:</span></span>
+<span data-ttu-id="bb648-140">Die Anforderung SOAP-Text enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="bb648-140">The request SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="a1351-141">AddNewImContactToGroup</span><span class="sxs-lookup"><span data-stu-id="a1351-141">AddNewImContactToGroup</span></span>](addnewimcontacttogroup.md)
+- [<span data-ttu-id="bb648-141">AddNewImContactToGroup</span><span class="sxs-lookup"><span data-stu-id="bb648-141">AddNewImContactToGroup</span></span>](addnewimcontacttogroup.md)
     
-- [<span data-ttu-id="a1351-142">ImAddress (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="a1351-142">ImAddress (String)</span></span>](imaddress-string.md)
+- [<span data-ttu-id="bb648-142">ImAddress (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="bb648-142">ImAddress (String)</span></span>](imaddress-string.md)
     
-- [<span data-ttu-id="a1351-143">DisplayName (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="a1351-143">DisplayName (string)</span></span>](displayname-string.md)
+- [<span data-ttu-id="bb648-143">DisplayName (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="bb648-143">DisplayName (string)</span></span>](displayname-string.md)
     
-- [<span data-ttu-id="a1351-144">GroupId</span><span class="sxs-lookup"><span data-stu-id="a1351-144">GroupId</span></span>](groupid.md)
+- [<span data-ttu-id="bb648-144">GroupId</span><span class="sxs-lookup"><span data-stu-id="bb648-144">GroupId</span></span>](groupid.md)
     
-## <a name="successful-addnewimcontacttogroup-operation-response"></a><span data-ttu-id="a1351-145">Erfolgreiche AddNewImContactToGroup Vorgangsantwort</span><span class="sxs-lookup"><span data-stu-id="a1351-145">Successful AddNewImContactToGroup operation response</span></span>
+## <a name="successful-addnewimcontacttogroup-operation-response"></a><span data-ttu-id="bb648-145">Erfolgreiche AddNewImContactToGroup Vorgangsantwort</span><span class="sxs-lookup"><span data-stu-id="bb648-145">Successful AddNewImContactToGroup operation response</span></span>
 
-<span data-ttu-id="a1351-146">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung des **AddNewImContactToGroup** -Vorgang.</span><span class="sxs-lookup"><span data-stu-id="a1351-146">The following example shows a successful response to an **AddNewImContactToGroup** operation request.</span></span> <span data-ttu-id="a1351-147">Die Antwort enthält die Rolle des neu erstellten Kontakts an.</span><span class="sxs-lookup"><span data-stu-id="a1351-147">The response contains the persona of the newly created contact.</span></span> <span data-ttu-id="a1351-148">Der Kontakt wird in den Ordner Schnellkontakte im Exchange hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="a1351-148">The contact is added to the Quick Contacts folder in Exchange.</span></span> 
+<span data-ttu-id="bb648-146">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung des **AddNewImContactToGroup** -Vorgang.</span><span class="sxs-lookup"><span data-stu-id="bb648-146">The following example shows a successful response to an **AddNewImContactToGroup** operation request.</span></span> <span data-ttu-id="bb648-147">Die Antwort enthält die Rolle des neu erstellten Kontakts an.</span><span class="sxs-lookup"><span data-stu-id="bb648-147">The response contains the persona of the newly created contact.</span></span> <span data-ttu-id="bb648-148">Der Kontakt wird in den Ordner Schnellkontakte im Exchange hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="bb648-148">The contact is added to the Quick Contacts folder in Exchange.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="a1351-149">Bezeichner wurden gekürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="a1351-149">Identifiers have been shortened to preserve readability.</span></span> 
+> <span data-ttu-id="bb648-149">Bezeichner wurden gekürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="bb648-149">Identifiers have been shortened to preserve readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -190,71 +190,71 @@ ms.locfileid: "19757235"
 </s:Envelope>
 ```
 
-<span data-ttu-id="a1351-150">Die Antwort SOAP-Text enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="a1351-150">The response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="bb648-150">Die Antwort SOAP-Text enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="bb648-150">The response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="a1351-151">AddNewImContactToGroupResponse</span><span class="sxs-lookup"><span data-stu-id="a1351-151">AddNewImContactToGroupResponse</span></span>](addnewimcontacttogroupresponse.md)
+- [<span data-ttu-id="bb648-151">AddNewImContactToGroupResponse</span><span class="sxs-lookup"><span data-stu-id="bb648-151">AddNewImContactToGroupResponse</span></span>](addnewimcontacttogroupresponse.md)
     
-- [<span data-ttu-id="a1351-152">Rolle</span><span class="sxs-lookup"><span data-stu-id="a1351-152">Persona</span></span>](persona.md)
+- [<span data-ttu-id="bb648-152">Rolle</span><span class="sxs-lookup"><span data-stu-id="bb648-152">Persona</span></span>](persona.md)
     
-- [<span data-ttu-id="a1351-153">PersonaId</span><span class="sxs-lookup"><span data-stu-id="a1351-153">PersonaId</span></span>](personaid.md)
+- [<span data-ttu-id="bb648-153">PersonaId</span><span class="sxs-lookup"><span data-stu-id="bb648-153">PersonaId</span></span>](personaid.md)
     
-- [<span data-ttu-id="a1351-154">PersonaType</span><span class="sxs-lookup"><span data-stu-id="a1351-154">PersonaType</span></span>](personatype.md)
+- [<span data-ttu-id="bb648-154">PersonaType</span><span class="sxs-lookup"><span data-stu-id="bb648-154">PersonaType</span></span>](personatype.md)
     
-- [<span data-ttu-id="a1351-155">CreationTime</span><span class="sxs-lookup"><span data-stu-id="a1351-155">CreationTime</span></span>](creationtime.md)
+- [<span data-ttu-id="bb648-155">CreationTime</span><span class="sxs-lookup"><span data-stu-id="bb648-155">CreationTime</span></span>](creationtime.md)
     
-- [<span data-ttu-id="a1351-156">DisplayName (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="a1351-156">DisplayName (string)</span></span>](displayname-string.md)
+- [<span data-ttu-id="bb648-156">DisplayName (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="bb648-156">DisplayName (string)</span></span>](displayname-string.md)
     
-- [<span data-ttu-id="a1351-157">DisplayNameFirstLast</span><span class="sxs-lookup"><span data-stu-id="a1351-157">DisplayNameFirstLast</span></span>](displaynamefirstlast.md)
+- [<span data-ttu-id="bb648-157">DisplayNameFirstLast</span><span class="sxs-lookup"><span data-stu-id="bb648-157">DisplayNameFirstLast</span></span>](displaynamefirstlast.md)
     
-- [<span data-ttu-id="a1351-158">DisplayNameLastFirst</span><span class="sxs-lookup"><span data-stu-id="a1351-158">DisplayNameLastFirst</span></span>](displaynamelastfirst.md)
+- [<span data-ttu-id="bb648-158">DisplayNameLastFirst</span><span class="sxs-lookup"><span data-stu-id="bb648-158">DisplayNameLastFirst</span></span>](displaynamelastfirst.md)
     
-- [<span data-ttu-id="a1351-159">FileAsId</span><span class="sxs-lookup"><span data-stu-id="a1351-159">FileAsId</span></span>](fileasid.md)
+- [<span data-ttu-id="bb648-159">FileAsId</span><span class="sxs-lookup"><span data-stu-id="bb648-159">FileAsId</span></span>](fileasid.md)
     
-- [<span data-ttu-id="a1351-160">EmailAddress (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="a1351-160">EmailAddress (EmailAddressType)</span></span>](emailaddress-emailaddresstype.md)
+- [<span data-ttu-id="bb648-160">EmailAddress (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="bb648-160">EmailAddress (EmailAddressType)</span></span>](emailaddress-emailaddresstype.md)
     
-- [<span data-ttu-id="a1351-161">Name (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="a1351-161">Name (EmailAddressType)</span></span>](name-emailaddresstype.md)
+- [<span data-ttu-id="bb648-161">Name (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="bb648-161">Name (EmailAddressType)</span></span>](name-emailaddresstype.md)
     
-- [<span data-ttu-id="a1351-162">Adresse (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="a1351-162">Address (string)</span></span>](address-string.md)
+- [<span data-ttu-id="bb648-162">Adresse (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="bb648-162">Address (string)</span></span>](address-string.md)
     
-- [<span data-ttu-id="a1351-163">RoutingType (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="a1351-163">RoutingType (EmailAddressType)</span></span>](routingtype-emailaddresstype.md)
+- [<span data-ttu-id="bb648-163">RoutingType (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="bb648-163">RoutingType (EmailAddressType)</span></span>](routingtype-emailaddresstype.md)
     
-- [<span data-ttu-id="a1351-164">ImAddress (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="a1351-164">ImAddress (String)</span></span>](imaddress-string.md)
+- [<span data-ttu-id="bb648-164">ImAddress (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="bb648-164">ImAddress (String)</span></span>](imaddress-string.md)
     
-- [<span data-ttu-id="a1351-165">RelevanceScore</span><span class="sxs-lookup"><span data-stu-id="a1351-165">RelevanceScore</span></span>](relevancescore.md)
+- [<span data-ttu-id="bb648-165">RelevanceScore</span><span class="sxs-lookup"><span data-stu-id="bb648-165">RelevanceScore</span></span>](relevancescore.md)
     
-- [<span data-ttu-id="a1351-166">Hinweise (ArrayOfPersonaAttributionsType)</span><span class="sxs-lookup"><span data-stu-id="a1351-166">Attributions (ArrayOfPersonaAttributionsType)</span></span>](attributions-arrayofpersonaattributionstype.md)
+- [<span data-ttu-id="bb648-166">Hinweise (ArrayOfPersonaAttributionsType)</span><span class="sxs-lookup"><span data-stu-id="bb648-166">Attributions (ArrayOfPersonaAttributionsType)</span></span>](attributions-arrayofpersonaattributionstype.md)
     
-- [<span data-ttu-id="a1351-167">Zuweisung (PersonaAttributionType)</span><span class="sxs-lookup"><span data-stu-id="a1351-167">Attribution (PersonaAttributionType)</span></span>](attribution-personaattributiontype.md)
+- [<span data-ttu-id="bb648-167">Zuweisung (PersonaAttributionType)</span><span class="sxs-lookup"><span data-stu-id="bb648-167">Attribution (PersonaAttributionType)</span></span>](attribution-personaattributiontype.md)
     
-- [<span data-ttu-id="a1351-168">ID (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="a1351-168">ID (String)</span></span>](id-string.md)
+- [<span data-ttu-id="bb648-168">ID (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="bb648-168">ID (String)</span></span>](id-string.md)
     
-- [<span data-ttu-id="a1351-169">SourceId</span><span class="sxs-lookup"><span data-stu-id="a1351-169">SourceId</span></span>](sourceid.md)
+- [<span data-ttu-id="bb648-169">SourceId</span><span class="sxs-lookup"><span data-stu-id="bb648-169">SourceId</span></span>](sourceid.md)
     
-- [<span data-ttu-id="a1351-170">IsWritable</span><span class="sxs-lookup"><span data-stu-id="a1351-170">IsWritable</span></span>](iswritable.md)
+- [<span data-ttu-id="bb648-170">IsWritable</span><span class="sxs-lookup"><span data-stu-id="bb648-170">IsWritable</span></span>](iswritable.md)
     
-- [<span data-ttu-id="a1351-171">IsQuickContact</span><span class="sxs-lookup"><span data-stu-id="a1351-171">IsQuickContact</span></span>](isquickcontact.md)
+- [<span data-ttu-id="bb648-171">IsQuickContact</span><span class="sxs-lookup"><span data-stu-id="bb648-171">IsQuickContact</span></span>](isquickcontact.md)
     
-- [<span data-ttu-id="a1351-172">IsHidden</span><span class="sxs-lookup"><span data-stu-id="a1351-172">IsHidden</span></span>](ishidden.md)
+- [<span data-ttu-id="bb648-172">IsHidden</span><span class="sxs-lookup"><span data-stu-id="bb648-172">IsHidden</span></span>](ishidden.md)
     
-- [<span data-ttu-id="a1351-173">FolderId</span><span class="sxs-lookup"><span data-stu-id="a1351-173">FolderId</span></span>](folderid.md)
+- [<span data-ttu-id="bb648-173">FolderId</span><span class="sxs-lookup"><span data-stu-id="bb648-173">FolderId</span></span>](folderid.md)
     
-- [<span data-ttu-id="a1351-174">DisplayNames</span><span class="sxs-lookup"><span data-stu-id="a1351-174">DisplayNames</span></span>](displaynames.md)
+- [<span data-ttu-id="bb648-174">DisplayNames</span><span class="sxs-lookup"><span data-stu-id="bb648-174">DisplayNames</span></span>](displaynames.md)
     
-- [<span data-ttu-id="a1351-175">StringAttributedValue</span><span class="sxs-lookup"><span data-stu-id="a1351-175">StringAttributedValue</span></span>](stringattributedvalue.md)
+- [<span data-ttu-id="bb648-175">StringAttributedValue</span><span class="sxs-lookup"><span data-stu-id="bb648-175">StringAttributedValue</span></span>](stringattributedvalue.md)
     
-- [<span data-ttu-id="a1351-176">Wert (ArrayOfStringValueType)</span><span class="sxs-lookup"><span data-stu-id="a1351-176">Value (ArrayOfStringValueType)</span></span>](value-arrayofstringvaluetype.md)
+- [<span data-ttu-id="bb648-176">Wert (ArrayOfStringValueType)</span><span class="sxs-lookup"><span data-stu-id="bb648-176">Value (ArrayOfStringValueType)</span></span>](value-arrayofstringvaluetype.md)
     
-- [<span data-ttu-id="a1351-177">FileAsIds</span><span class="sxs-lookup"><span data-stu-id="a1351-177">FileAsIds</span></span>](fileasids.md)
+- [<span data-ttu-id="bb648-177">FileAsIds</span><span class="sxs-lookup"><span data-stu-id="bb648-177">FileAsIds</span></span>](fileasids.md)
     
-- [<span data-ttu-id="a1351-178">Emails1</span><span class="sxs-lookup"><span data-stu-id="a1351-178">Emails1</span></span>](emails1.md)
+- [<span data-ttu-id="bb648-178">Emails1</span><span class="sxs-lookup"><span data-stu-id="bb648-178">Emails1</span></span>](emails1.md)
     
-- [<span data-ttu-id="a1351-179">EmailAddressAttributedValue</span><span class="sxs-lookup"><span data-stu-id="a1351-179">EmailAddressAttributedValue</span></span>](emailaddressattributedvalue.md)
+- [<span data-ttu-id="bb648-179">EmailAddressAttributedValue</span><span class="sxs-lookup"><span data-stu-id="bb648-179">EmailAddressAttributedValue</span></span>](emailaddressattributedvalue.md)
     
-- [<span data-ttu-id="a1351-180">ImAddresses</span><span class="sxs-lookup"><span data-stu-id="a1351-180">ImAddresses</span></span>](imaddresses.md)
+- [<span data-ttu-id="bb648-180">ImAddresses</span><span class="sxs-lookup"><span data-stu-id="bb648-180">ImAddresses</span></span>](imaddresses.md)
     
-## <a name="addnewimcontacttogroup-operation-error-response"></a><span data-ttu-id="a1351-181">AddNewImContactToGroup Vorgang Fehlerantwort</span><span class="sxs-lookup"><span data-stu-id="a1351-181">AddNewImContactToGroup operation error response</span></span>
+## <a name="addnewimcontacttogroup-operation-error-response"></a><span data-ttu-id="bb648-181">AddNewImContactToGroup Vorgang Fehlerantwort</span><span class="sxs-lookup"><span data-stu-id="bb648-181">AddNewImContactToGroup operation error response</span></span>
 
-<span data-ttu-id="a1351-182">Das folgende Beispiel zeigt eine Fehlerantwort an eine **AddNewImContactToGroup** Vorgang Anforderung.</span><span class="sxs-lookup"><span data-stu-id="a1351-182">The following example shows an error response to a **AddNewImContactToGroup** operation request.</span></span> <span data-ttu-id="a1351-183">Dies ist eine Antwort auf eine Anforderung zum Hinzufügen eines Kontakts zu einer Gruppe, die nicht in der anfordernden Person Postfach befindet.</span><span class="sxs-lookup"><span data-stu-id="a1351-183">This is a response to a request to add a contact to a group that is not in the requester's mailbox.</span></span> 
+<span data-ttu-id="bb648-182">Das folgende Beispiel zeigt eine Fehlerantwort an eine **AddNewImContactToGroup** Vorgang Anforderung.</span><span class="sxs-lookup"><span data-stu-id="bb648-182">The following example shows an error response to a **AddNewImContactToGroup** operation request.</span></span> <span data-ttu-id="bb648-183">Dies ist eine Antwort auf eine Anforderung zum Hinzufügen eines Kontakts zu einer Gruppe, die nicht in der anfordernden Person Postfach befindet.</span><span class="sxs-lookup"><span data-stu-id="bb648-183">This is a response to a request to add a contact to a group that is not in the requester's mailbox.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -285,34 +285,34 @@ ms.locfileid: "19757235"
 </s:Envelope>
 ```
 
-<span data-ttu-id="a1351-184">Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="a1351-184">The error response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="bb648-184">Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="bb648-184">The error response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="a1351-185">AddNewImContactToGroupResponse</span><span class="sxs-lookup"><span data-stu-id="a1351-185">AddNewImContactToGroupResponse</span></span>](addnewimcontacttogroupresponse.md)
+- [<span data-ttu-id="bb648-185">AddNewImContactToGroupResponse</span><span class="sxs-lookup"><span data-stu-id="bb648-185">AddNewImContactToGroupResponse</span></span>](addnewimcontacttogroupresponse.md)
     
-- [<span data-ttu-id="a1351-186">MessageText</span><span class="sxs-lookup"><span data-stu-id="a1351-186">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="bb648-186">MessageText</span><span class="sxs-lookup"><span data-stu-id="bb648-186">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="a1351-187">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="a1351-187">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="bb648-187">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="bb648-187">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="a1351-188">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="a1351-188">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="bb648-188">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="bb648-188">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-- [<span data-ttu-id="a1351-189">MessageXml</span><span class="sxs-lookup"><span data-stu-id="a1351-189">MessageXml</span></span>](messagexml.md)
+- [<span data-ttu-id="bb648-189">MessageXml</span><span class="sxs-lookup"><span data-stu-id="bb648-189">MessageXml</span></span>](messagexml.md)
     
-<span data-ttu-id="a1351-190">Zusätzliche Fehlercodes, die für EWS generisch und für diese Operation spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).</span><span class="sxs-lookup"><span data-stu-id="a1351-190">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
+<span data-ttu-id="bb648-190">Zusätzliche Fehlercodes, die für EWS generisch und für diese Operation spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).</span><span class="sxs-lookup"><span data-stu-id="bb648-190">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="a1351-191">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a1351-191">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bb648-191">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="bb648-191">See also</span></span>
 
 
 
-[<span data-ttu-id="a1351-192">AddImGroup-Vorgang</span><span class="sxs-lookup"><span data-stu-id="a1351-192">AddImGroup operation</span></span>](addimgroup-operation.md)
+[<span data-ttu-id="bb648-192">AddImGroup-Vorgang</span><span class="sxs-lookup"><span data-stu-id="bb648-192">AddImGroup operation</span></span>](addimgroup-operation.md)
   
-[<span data-ttu-id="a1351-193">AddImContactToGroup-Vorgang</span><span class="sxs-lookup"><span data-stu-id="a1351-193">AddImContactToGroup operation</span></span>](addimcontacttogroup-operation.md)
+[<span data-ttu-id="bb648-193">AddImContactToGroup-Vorgang</span><span class="sxs-lookup"><span data-stu-id="bb648-193">AddImContactToGroup operation</span></span>](addimcontacttogroup-operation.md)
   
-[<span data-ttu-id="a1351-194">AddImGroup-Vorgang</span><span class="sxs-lookup"><span data-stu-id="a1351-194">AddImGroup operation</span></span>](addimgroup-operation.md)
+[<span data-ttu-id="bb648-194">AddImGroup-Vorgang</span><span class="sxs-lookup"><span data-stu-id="bb648-194">AddImGroup operation</span></span>](addimgroup-operation.md)
   
-[<span data-ttu-id="a1351-195">RemoveImGroup-Vorgang</span><span class="sxs-lookup"><span data-stu-id="a1351-195">RemoveImGroup operation</span></span>](removeimgroup-operation.md)
+[<span data-ttu-id="bb648-195">RemoveImGroup-Vorgang</span><span class="sxs-lookup"><span data-stu-id="bb648-195">RemoveImGroup operation</span></span>](removeimgroup-operation.md)
   
-[<span data-ttu-id="a1351-196">SetImGroup-Vorgang</span><span class="sxs-lookup"><span data-stu-id="a1351-196">SetImGroup operation</span></span>](setimgroup-operation.md)
+[<span data-ttu-id="bb648-196">SetImGroup-Vorgang</span><span class="sxs-lookup"><span data-stu-id="bb648-196">SetImGroup operation</span></span>](setimgroup-operation.md)
 
 
-[<span data-ttu-id="a1351-197">Benutzer und Kontakte in EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="a1351-197">People and contacts in EWS in Exchange</span></span>](http://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
+[<span data-ttu-id="bb648-197">Benutzer und Kontakte in EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="bb648-197">People and contacts in EWS in Exchange</span></span>](http://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
 

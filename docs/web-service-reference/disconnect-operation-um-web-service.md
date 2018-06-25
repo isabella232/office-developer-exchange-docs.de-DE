@@ -15,20 +15,20 @@ ms.openlocfilehash: 1e04e65fa1951a6aa46e2c8b6dd5fe524c84a8fc
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758018"
 ---
-# <a name="disconnect-operation-um-web-service"></a><span data-ttu-id="1005c-103">Trennen Sie (UM-Webdienst)</span><span class="sxs-lookup"><span data-stu-id="1005c-103">Disconnect operation (UM web service)</span></span>
+# <a name="disconnect-operation-um-web-service"></a><span data-ttu-id="27d29-103">Trennen Sie (UM-Webdienst)</span><span class="sxs-lookup"><span data-stu-id="27d29-103">Disconnect operation (UM web service)</span></span>
 
-<span data-ttu-id="1005c-104">Der Trennvorgang beendet den Anruf, der durch die angegebene [CallId (UM-Webdienst)](callid-um-web-service.md)bezeichnet wird.</span><span class="sxs-lookup"><span data-stu-id="1005c-104">The Disconnect operation terminates the call that is identified by the specified [CallId (UM web service)](callid-um-web-service.md).</span></span>
+<span data-ttu-id="27d29-104">Der Trennvorgang beendet den Anruf, der durch die angegebene [CallId (UM-Webdienst)](callid-um-web-service.md)bezeichnet wird.</span><span class="sxs-lookup"><span data-stu-id="27d29-104">The Disconnect operation terminates the call that is identified by the specified [CallId (UM web service)](callid-um-web-service.md).</span></span>
   
-## <a name="disconnect-request-example"></a><span data-ttu-id="1005c-105">Trennen Sie anforderungsbeispiel</span><span class="sxs-lookup"><span data-stu-id="1005c-105">Disconnect request example</span></span>
+## <a name="disconnect-request-example"></a><span data-ttu-id="27d29-105">Trennen Sie anforderungsbeispiel</span><span class="sxs-lookup"><span data-stu-id="27d29-105">Disconnect request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="1005c-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1005c-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="27d29-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="27d29-106">Description</span></span>
 
-<span data-ttu-id="1005c-107">Das folgende Beispiel für eine Anforderung zum Trennen der veranschaulicht das Formular einer Anforderung an eine Verbindung zu trennen.</span><span class="sxs-lookup"><span data-stu-id="1005c-107">The following example of a Disconnect request shows how to form a request to disconnect a call.</span></span>
+<span data-ttu-id="27d29-107">Das folgende Beispiel für eine Anforderung zum Trennen der veranschaulicht das Formular einer Anforderung an eine Verbindung zu trennen.</span><span class="sxs-lookup"><span data-stu-id="27d29-107">The following example of a Disconnect request shows how to form a request to disconnect a call.</span></span>
   
-### <a name="code"></a><span data-ttu-id="1005c-108">Code</span><span class="sxs-lookup"><span data-stu-id="1005c-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="27d29-108">Code</span><span class="sxs-lookup"><span data-stu-id="27d29-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -41,13 +41,13 @@ ms.locfileid: "19758018"
 </soap:Envelope>
 ```
 
-## <a name="successful-disconnect-response-example"></a><span data-ttu-id="1005c-109">Erfolgreiche Verbindung trennen antwortbeispiel</span><span class="sxs-lookup"><span data-stu-id="1005c-109">Successful Disconnect response example</span></span>
+## <a name="successful-disconnect-response-example"></a><span data-ttu-id="27d29-109">Erfolgreiche Verbindung trennen antwortbeispiel</span><span class="sxs-lookup"><span data-stu-id="27d29-109">Successful Disconnect response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="1005c-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1005c-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="27d29-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="27d29-110">Description</span></span>
 
-<span data-ttu-id="1005c-111">Das folgende Beispiel einer Antwort trennen zeigt eine Antwort auf die Anforderung zum Trennen.</span><span class="sxs-lookup"><span data-stu-id="1005c-111">The following example of a Disconnect response shows a response to the Disconnect request.</span></span>
+<span data-ttu-id="27d29-111">Das folgende Beispiel einer Antwort trennen zeigt eine Antwort auf die Anforderung zum Trennen.</span><span class="sxs-lookup"><span data-stu-id="27d29-111">The following example of a Disconnect response shows a response to the Disconnect request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="1005c-112">Code</span><span class="sxs-lookup"><span data-stu-id="1005c-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="27d29-112">Code</span><span class="sxs-lookup"><span data-stu-id="27d29-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -58,9 +58,9 @@ ms.locfileid: "19758018"
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="1005c-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1005c-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="27d29-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="27d29-113">See also</span></span>
 
-- [<span data-ttu-id="1005c-114">Trennen Sie (UM-Webdienst)</span><span class="sxs-lookup"><span data-stu-id="1005c-114">Disconnect (UM web service)</span></span>](disconnect-um-web-service.md) 
-- [<span data-ttu-id="1005c-115">DisconnectResponse (UM-Webdienst)</span><span class="sxs-lookup"><span data-stu-id="1005c-115">DisconnectResponse (UM web service)</span></span>](disconnectresponse-um-web-service.md) 
-- [<span data-ttu-id="1005c-116">CallId (UM-Webdienst)</span><span class="sxs-lookup"><span data-stu-id="1005c-116">CallId (UM web service)</span></span>](callid-um-web-service.md)
+- [<span data-ttu-id="27d29-114">Trennen Sie (UM-Webdienst)</span><span class="sxs-lookup"><span data-stu-id="27d29-114">Disconnect (UM web service)</span></span>](disconnect-um-web-service.md) 
+- [<span data-ttu-id="27d29-115">DisconnectResponse (UM-Webdienst)</span><span class="sxs-lookup"><span data-stu-id="27d29-115">DisconnectResponse (UM web service)</span></span>](disconnectresponse-um-web-service.md) 
+- [<span data-ttu-id="27d29-116">CallId (UM-Webdienst)</span><span class="sxs-lookup"><span data-stu-id="27d29-116">CallId (UM web service)</span></span>](callid-um-web-service.md)
 

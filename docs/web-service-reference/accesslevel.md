@@ -12,65 +12,65 @@ ms.openlocfilehash: 1bf0a191fad529b555117e4ff992c352615bc79b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758362"
 ---
-# <a name="accesslevel"></a><span data-ttu-id="56d5a-103">AccessLevel</span><span class="sxs-lookup"><span data-stu-id="56d5a-103">AccessLevel</span></span>
+# <a name="accesslevel"></a><span data-ttu-id="36cb6-103">AccessLevel</span><span class="sxs-lookup"><span data-stu-id="36cb6-103">AccessLevel</span></span>
 
-<span data-ttu-id="56d5a-104">Das Element **AccessLevel** gibt die Zugriffsebene für eine onlinebesprechung umwandeln.</span><span class="sxs-lookup"><span data-stu-id="56d5a-104">The **AccessLevel** element specifies the access level for an online meeting.</span></span> 
+<span data-ttu-id="36cb6-104">Das Element **AccessLevel** gibt die Zugriffsebene für eine onlinebesprechung umwandeln.</span><span class="sxs-lookup"><span data-stu-id="36cb6-104">The **AccessLevel** element specifies the access level for an online meeting.</span></span> 
   
 ```XML
 <AccessLevel/>
 ```
 
- <span data-ttu-id="56d5a-105">**OnlineMeetingSettingsType**</span><span class="sxs-lookup"><span data-stu-id="56d5a-105">**OnlineMeetingSettingsType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="56d5a-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="56d5a-106">Attributes and elements</span></span>
+ <span data-ttu-id="36cb6-105">**OnlineMeetingSettingsType**</span><span class="sxs-lookup"><span data-stu-id="36cb6-105">**OnlineMeetingSettingsType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="36cb6-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="36cb6-106">Attributes and elements</span></span>
 
-<span data-ttu-id="56d5a-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="56d5a-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="36cb6-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="36cb6-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="56d5a-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="56d5a-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="36cb6-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="36cb6-108">Attributes</span></span>
 
-<span data-ttu-id="56d5a-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="56d5a-109">None.</span></span>
+<span data-ttu-id="36cb6-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="36cb6-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="56d5a-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="56d5a-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="36cb6-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="36cb6-110">Child elements</span></span>
 
-<span data-ttu-id="56d5a-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="56d5a-111">None.</span></span>
+<span data-ttu-id="36cb6-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="36cb6-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="56d5a-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="56d5a-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="36cb6-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="36cb6-112">Parent elements</span></span>
 
-|<span data-ttu-id="56d5a-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="56d5a-113">**Element**</span></span>|<span data-ttu-id="56d5a-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="56d5a-114">**Description**</span></span>|
+|<span data-ttu-id="36cb6-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="36cb6-113">**Element**</span></span>|<span data-ttu-id="36cb6-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="36cb6-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="56d5a-115">OnlineMeetingSettings</span><span class="sxs-lookup"><span data-stu-id="56d5a-115">OnlineMeetingSettings</span></span>](onlinemeetingsettings.md) <br/> |<span data-ttu-id="56d5a-116">Gibt die Optionen für onlinebesprechungen.</span><span class="sxs-lookup"><span data-stu-id="56d5a-116">Specifies the settings for online meetings.</span></span>  <br/> |
+|[<span data-ttu-id="36cb6-115">OnlineMeetingSettings</span><span class="sxs-lookup"><span data-stu-id="36cb6-115">OnlineMeetingSettings</span></span>](onlinemeetingsettings.md) <br/> |<span data-ttu-id="36cb6-116">Gibt die Optionen für onlinebesprechungen.</span><span class="sxs-lookup"><span data-stu-id="36cb6-116">Specifies the settings for online meetings.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="56d5a-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="56d5a-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="36cb6-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="36cb6-117">Text value</span></span>
 
-<span data-ttu-id="56d5a-118">Die folgende Tabelle enthält die Textwerte für das Element **AccessLevel** .</span><span class="sxs-lookup"><span data-stu-id="56d5a-118">The following table lists the text values for the **AccessLevel** element.</span></span> 
+<span data-ttu-id="36cb6-118">Die folgende Tabelle enthält die Textwerte für das Element **AccessLevel** .</span><span class="sxs-lookup"><span data-stu-id="36cb6-118">The following table lists the text values for the **AccessLevel** element.</span></span> 
   
-<span data-ttu-id="56d5a-119">**Text-Elementwerte AccessLevel**</span><span class="sxs-lookup"><span data-stu-id="56d5a-119">**AccessLevel element text values**</span></span>
+<span data-ttu-id="36cb6-119">**Text-Elementwerte AccessLevel**</span><span class="sxs-lookup"><span data-stu-id="36cb6-119">**AccessLevel element text values**</span></span>
 
-|<span data-ttu-id="56d5a-120">**Wert**</span><span class="sxs-lookup"><span data-stu-id="56d5a-120">**Value**</span></span>|<span data-ttu-id="56d5a-121">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="56d5a-121">**Description**</span></span>|
+|<span data-ttu-id="36cb6-120">**Wert**</span><span class="sxs-lookup"><span data-stu-id="36cb6-120">**Value**</span></span>|<span data-ttu-id="36cb6-121">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="36cb6-121">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="56d5a-122">Jeder</span><span class="sxs-lookup"><span data-stu-id="56d5a-122">Everyone</span></span>  <br/> |<span data-ttu-id="56d5a-123">Die Zugriffsebene ist für alle geöffnet.</span><span class="sxs-lookup"><span data-stu-id="56d5a-123">The access level is open to all.</span></span>  <br/> |
-|<span data-ttu-id="56d5a-124">Interne</span><span class="sxs-lookup"><span data-stu-id="56d5a-124">Internal</span></span>  <br/> |<span data-ttu-id="56d5a-125">Die Zugriffsebene ist nur intern.</span><span class="sxs-lookup"><span data-stu-id="56d5a-125">The access level is internal only.</span></span>  <br/> |
-|<span data-ttu-id="56d5a-126">Eingeladen</span><span class="sxs-lookup"><span data-stu-id="56d5a-126">Invited</span></span>  <br/> |<span data-ttu-id="56d5a-127">Die Zugriffsebene ist nur eingeladene Teilnehmer.</span><span class="sxs-lookup"><span data-stu-id="56d5a-127">The access level is invited participants only.</span></span>  <br/> |
-|<span data-ttu-id="56d5a-128">Gesperrt</span><span class="sxs-lookup"><span data-stu-id="56d5a-128">Locked</span></span>  <br/> |<span data-ttu-id="56d5a-129">Die Zugriffsebene ist gesperrt.</span><span class="sxs-lookup"><span data-stu-id="56d5a-129">The access level is locked.</span></span>  <br/> |
+|<span data-ttu-id="36cb6-122">Jeder</span><span class="sxs-lookup"><span data-stu-id="36cb6-122">Everyone</span></span>  <br/> |<span data-ttu-id="36cb6-123">Die Zugriffsebene ist für alle geöffnet.</span><span class="sxs-lookup"><span data-stu-id="36cb6-123">The access level is open to all.</span></span>  <br/> |
+|<span data-ttu-id="36cb6-124">Interne</span><span class="sxs-lookup"><span data-stu-id="36cb6-124">Internal</span></span>  <br/> |<span data-ttu-id="36cb6-125">Die Zugriffsebene ist nur intern.</span><span class="sxs-lookup"><span data-stu-id="36cb6-125">The access level is internal only.</span></span>  <br/> |
+|<span data-ttu-id="36cb6-126">Eingeladen</span><span class="sxs-lookup"><span data-stu-id="36cb6-126">Invited</span></span>  <br/> |<span data-ttu-id="36cb6-127">Die Zugriffsebene ist nur eingeladene Teilnehmer.</span><span class="sxs-lookup"><span data-stu-id="36cb6-127">The access level is invited participants only.</span></span>  <br/> |
+|<span data-ttu-id="36cb6-128">Gesperrt</span><span class="sxs-lookup"><span data-stu-id="36cb6-128">Locked</span></span>  <br/> |<span data-ttu-id="36cb6-129">Die Zugriffsebene ist gesperrt.</span><span class="sxs-lookup"><span data-stu-id="36cb6-129">The access level is locked.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="56d5a-130">Hinweise</span><span class="sxs-lookup"><span data-stu-id="56d5a-130">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="36cb6-130">Hinweise</span><span class="sxs-lookup"><span data-stu-id="36cb6-130">Remarks</span></span>
 
-<span data-ttu-id="56d5a-131">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="56d5a-131">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="36cb6-131">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="36cb6-131">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-<span data-ttu-id="56d5a-132">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="56d5a-132">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="36cb6-132">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="36cb6-132">This element was introduced in Exchange Server 2013.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="56d5a-133">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="56d5a-133">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="36cb6-133">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="36cb6-133">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="56d5a-134">Namespace</span><span class="sxs-lookup"><span data-stu-id="56d5a-134">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="56d5a-135">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="56d5a-135">Schema name</span></span>  <br/> |<span data-ttu-id="56d5a-136">Typschema</span><span class="sxs-lookup"><span data-stu-id="56d5a-136">Type schema</span></span>  <br/> |
-|<span data-ttu-id="56d5a-137">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="56d5a-137">Validation file</span></span>  <br/> |<span data-ttu-id="56d5a-138">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="56d5a-138">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="56d5a-139">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="56d5a-139">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="36cb6-134">Namespace</span><span class="sxs-lookup"><span data-stu-id="36cb6-134">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="36cb6-135">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="36cb6-135">Schema name</span></span>  <br/> |<span data-ttu-id="36cb6-136">Typschema</span><span class="sxs-lookup"><span data-stu-id="36cb6-136">Type schema</span></span>  <br/> |
+|<span data-ttu-id="36cb6-137">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="36cb6-137">Validation file</span></span>  <br/> |<span data-ttu-id="36cb6-138">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="36cb6-138">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="36cb6-139">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="36cb6-139">Can be empty</span></span>  <br/> ||
    
-## <a name="see-also"></a><span data-ttu-id="56d5a-140">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="56d5a-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="36cb6-140">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="36cb6-140">See also</span></span>
 
-- [<span data-ttu-id="56d5a-141">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="56d5a-141">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="36cb6-141">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="36cb6-141">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
