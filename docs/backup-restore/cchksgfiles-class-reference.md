@@ -76,6 +76,6 @@ ms.locfileid: "19756805"
 ## <a name="see-also"></a><span data-ttu-id="4fc47-140">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4fc47-140">See also</span></span>
 
 - [<span data-ttu-id="4fc47-141">Exchange Online und Exchange-Entwicklung</span><span class="sxs-lookup"><span data-stu-id="4fc47-141">Exchange Online and Exchange development</span></span>](../exchange-server-development.md)
-- [<span data-ttu-id="4fc47-142">Sicherung, Wiederherstellung und Notfallwiederherstellung</span><span class="sxs-lookup"><span data-stu-id="4fc47-142">Backup, Restore, and Disaster Recovery</span></span>](http://technet.microsoft.com/en-us/library/dd876874)
+- [<span data-ttu-id="4fc47-142">Sicherung, Wiederherstellung und Notfallwiederherstellung</span><span class="sxs-lookup"><span data-stu-id="4fc47-142">Backup, Restore, and Disaster Recovery</span></span>](http://technet.microsoft.com/de-de/library/dd876874)
     
 

@@ -734,6 +734,6 @@ ms.locfileid: "19757182"
 
 - [<span data-ttu-id="544e6-463">Exchange-Verwaltungsshell Eingabe- und Ausgabedateien Typen</span><span class="sxs-lookup"><span data-stu-id="544e6-463">Exchange Management Shell cmdlet input and output types</span></span>](exchange-management-shell-cmdlet-input-and-output-types.md)    
 - [<span data-ttu-id="544e6-464">Abrufen einer Liste von e-Mail-Benutzer mithilfe der Exchange-Verwaltungsshell</span><span class="sxs-lookup"><span data-stu-id="544e6-464">Get a list of mail users by using the Exchange Management Shell</span></span>](how-to-get-a-list-of-mail-users-by-using-the-exchange-management-shell.md)    
-- [<span data-ttu-id="544e6-465">Exchange 2013-cmdlets</span><span class="sxs-lookup"><span data-stu-id="544e6-465">Exchange 2013 cmdlets</span></span>](http://technet.microsoft.com/en-us/library/bb124413%28v=exchg.150%29.aspx)
+- [<span data-ttu-id="544e6-465">Exchange 2013-cmdlets</span><span class="sxs-lookup"><span data-stu-id="544e6-465">Exchange 2013 cmdlets</span></span>](http://technet.microsoft.com/de-de/library/bb124413%28v=exchg.150%29.aspx)
     
 

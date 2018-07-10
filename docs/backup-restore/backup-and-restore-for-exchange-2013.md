@@ -54,7 +54,7 @@ ms.locfileid: "19756801"
     
 ## <a name="see-also"></a><span data-ttu-id="dedc8-148">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="dedc8-148">See also</span></span>
 
-- [<span data-ttu-id="dedc8-149">Volumeschattenkopie-Dienst (Windows)</span><span class="sxs-lookup"><span data-stu-id="dedc8-149">Volume Shadow Copy Service (Windows)</span></span>](http://msdn.microsoft.com/en-us/library/windows/desktop/bb968832%28v=vs.85%29.aspx)   
+- [<span data-ttu-id="dedc8-149">Volumeschattenkopie-Dienst (Windows)</span><span class="sxs-lookup"><span data-stu-id="dedc8-149">Volume Shadow Copy Service (Windows)</span></span>](http://msdn.microsoft.com/de-de/library/windows/desktop/bb968832%28v=vs.85%29.aspx)   
 - [<span data-ttu-id="dedc8-150">Erkunden von verwalteter EWS-API, EWS und Webdiensten in Exchange</span><span class="sxs-lookup"><span data-stu-id="dedc8-150">Explore the EWS Managed API, EWS, and web services in Exchange</span></span>](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)  
 - [<span data-ttu-id="dedc8-151">Exchange-Verwaltungsshell</span><span class="sxs-lookup"><span data-stu-id="dedc8-151">Exchange Management Shell</span></span>](../management/exchange-management-shell.md)   
 - [<span data-ttu-id="dedc8-152">Transport-Agents in Exchange</span><span class="sxs-lookup"><span data-stu-id="dedc8-152">Transport agents in Exchange</span></span>](../transport-agents/transport-agents-in-exchange-2013.md) 

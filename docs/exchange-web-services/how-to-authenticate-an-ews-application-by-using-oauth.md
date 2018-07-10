@@ -32,7 +32,7 @@ ms.locfileid: "19756861"
   
 - <span data-ttu-id="07824-113">Ein [Office 365-Entwicklerkonto](http://office.microsoft.com/compare-office-365-for-business-plans-FX102918419.aspx.aspx).</span><span class="sxs-lookup"><span data-stu-id="07824-113">An [Office 365 developer account](http://office.microsoft.com/compare-office-365-for-business-plans-FX102918419.aspx.aspx).</span></span> <span data-ttu-id="07824-114">Ein Testkonto können Sie Ihre Anwendung testen</span><span class="sxs-lookup"><span data-stu-id="07824-114">You can use a trial account to test your application</span></span>
     
-- <span data-ttu-id="07824-115">Der [Azure AD Authentication Bibliothek für .NET](http://msdn.microsoft.com/en-us/library/office/jj573266.aspx.aspx).</span><span class="sxs-lookup"><span data-stu-id="07824-115">The [Azure AD Authentication Library for .NET](http://msdn.microsoft.com/en-us/library/office/jj573266.aspx.aspx).</span></span>
+- <span data-ttu-id="07824-115">Der [Azure AD Authentication Bibliothek für .NET](http://msdn.microsoft.com/de-de/library/office/jj573266.aspx.aspx).</span><span class="sxs-lookup"><span data-stu-id="07824-115">The [Azure AD Authentication Library for .NET](http://msdn.microsoft.com/de-de/library/office/jj573266.aspx.aspx).</span></span>
     
 - <span data-ttu-id="07824-116">[Die EWS Managed API](https://github.com/officedev/ews-managed-api.aspx).</span><span class="sxs-lookup"><span data-stu-id="07824-116">[The EWS Managed API](https://github.com/officedev/ews-managed-api.aspx).</span></span>
 

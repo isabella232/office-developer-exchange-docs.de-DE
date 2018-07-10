@@ -42,7 +42,7 @@ ms.locfileid: "19830144"
   
 ## <a name="text-value"></a><span data-ttu-id="7987a-114">Textwert</span><span class="sxs-lookup"><span data-stu-id="7987a-114">Text value</span></span>
 
-<span data-ttu-id="7987a-115">Der Textwert kann "Unbegrenzt" oder den Zeichenfolgenwert, der einen beliebigen Wert [Timespan](http://msdn.microsoft.com/en-us/library/1ecy8h51%28v=vs.110%29.aspx) sein.</span><span class="sxs-lookup"><span data-stu-id="7987a-115">The text value can be "Unlimited" or the string value of any [Timespan](http://msdn.microsoft.com/en-us/library/1ecy8h51%28v=vs.110%29.aspx) value.</span></span> 
+<span data-ttu-id="7987a-115">Der Textwert kann "Unbegrenzt" oder den Zeichenfolgenwert, der einen beliebigen Wert [Timespan](http://msdn.microsoft.com/de-de/library/1ecy8h51%28v=vs.110%29.aspx) sein.</span><span class="sxs-lookup"><span data-stu-id="7987a-115">The text value can be "Unlimited" or the string value of any [Timespan](http://msdn.microsoft.com/de-de/library/1ecy8h51%28v=vs.110%29.aspx) value.</span></span> 
   
 ## <a name="remarks"></a><span data-ttu-id="7987a-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="7987a-116">Remarks</span></span>
 

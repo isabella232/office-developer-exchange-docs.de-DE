@@ -24,7 +24,7 @@ ms.locfileid: "19757927"
 <span data-ttu-id="a2663-104">Über den **DeleteItem**-Vorgang können Elemente im Exchange-Speicher gelöscht werden.</span><span class="sxs-lookup"><span data-stu-id="a2663-104">The **DeleteItem** operation deletes items in the Exchange store.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="a2663-p101">[!HINWEIS] Für einen **DeleteItem**-Vorgang wird eine Fehlerantwort inklusive des ErrorCannotDeleteObject-Fehlercodes zurückgegeben, wenn ein Stellvertreter versucht, ein Element im Postfach eines Prinzipals zu löschen, indem er für DisposalType MoveToDeletedItems festlegt. Zum Löschen eines Elements durch Verschieben in den Ordner „Gelöschte Elemente" muss ein Stellvertreter die [MoveItem Operation](moveitem-operation.md) verwenden.</span><span class="sxs-lookup"><span data-stu-id="a2663-p101">An error response that includes the ErrorCannotDeleteObject error code will be returned for a **DeleteItem** operation when a delegate tries to delete an item in the principal's mailbox by setting the DisposalType to MoveToDeletedItems. To delete an item by moving it to the Deleted Items folder, a delegate must use the [MoveItem operation](moveitem-operation.md).</span></span> 
+> <span data-ttu-id="a2663-p101">Für einen **DeleteItem**-Vorgang wird eine Fehlerantwort inklusive des ErrorCannotDeleteObject-Fehlercodes zurückgegeben, wenn ein Stellvertreter versucht, ein Element im Postfach eines Prinzipals zu löschen, indem er für DisposalType MoveToDeletedItems festlegt. Zum Löschen eines Elements durch Verschieben in den Ordner „Gelöschte Elemente" muss ein Stellvertreter die [MoveItem Operation](moveitem-operation.md) verwenden.</span><span class="sxs-lookup"><span data-stu-id="a2663-p101">An error response that includes the ErrorCannotDeleteObject error code will be returned for a **DeleteItem** operation when a delegate tries to delete an item in the principal's mailbox by setting the DisposalType to MoveToDeletedItems. To delete an item by moving it to the Deleted Items folder, a delegate must use the [MoveItem operation](moveitem-operation.md).</span></span> 
   
 ## <a name="deleteitem-request-example"></a><span data-ttu-id="a2663-107">DeleteItem anforderungsbeispiel</span><span class="sxs-lookup"><span data-stu-id="a2663-107">DeleteItem request example</span></span>
 
@@ -33,7 +33,7 @@ ms.locfileid: "19757927"
 <span data-ttu-id="a2663-109">Im folgenden Beispiel einer **DeleteItem**-Anforderung wird veranschaulicht, wie ein Element endgültig aus einem Postfach gelöscht werden kann.</span><span class="sxs-lookup"><span data-stu-id="a2663-109">The following example of a **DeleteItem** request shows how to perform a hard delete of an item from a mailbox.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="a2663-110">[!HINWEIS] Die Element-ID wurde zur besseren Lesbarkeit gekürzt.</span><span class="sxs-lookup"><span data-stu-id="a2663-110">The item ID has been shortened to preserve readability.</span></span> 
+> <span data-ttu-id="a2663-110">Die Element-ID wurde zur besseren Lesbarkeit gekürzt.</span><span class="sxs-lookup"><span data-stu-id="a2663-110">The item ID has been shortened to preserve readability.</span></span> 
   
 ### <a name="code"></a><span data-ttu-id="a2663-111">Code</span><span class="sxs-lookup"><span data-stu-id="a2663-111">Code</span></span>
 
