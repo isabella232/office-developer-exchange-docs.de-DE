@@ -3912,7 +3912,7 @@
                     - name: YomiLastNames
                       href: web-service-reference/yomilastnames.md
             - name: Referenz zur verwalteten EWS-API
-              href: 'https://msdn.microsoft.com/EN-US/library/jj220535(v=exchg.80).aspx'
+              href: 'https://msdn.microsoft.com/de-de/library/jj220535(v=exchg.80).aspx'
             - name: AutoErmittlung Webdienstreferenz
               href: web-service-reference/autodiscover-web-service-reference-for-exchange.md
               items:
@@ -4424,7 +4424,7 @@
                     - name: TelephoneAccessFolderEmail (UM-Webdienst)
                       href: web-service-reference/telephoneaccessfolderemail-um-web-service.md
             - name: Referenz zu automatisch generierten EWS-Proxys
-              href: 'https://msdn.microsoft.com/EN-US/library/jj190899(v=exchg.150).aspx'
+              href: 'https://msdn.microsoft.com/de-de/library/jj190899(v=exchg.150).aspx'
     - name: Exchange-Verwaltungsshell
       href: management/exchange-management-shell.md
       items:
@@ -4536,4 +4536,4 @@
             - name: CChkSGFiles.PgnoFromFileOffset-Funktion
               href: backup-restore/cchksgfiles-pgnofromfileoffset-function.md
     - name: Server-API-Referenz
-      href: 'https://msdn.microsoft.com/en-us/library/dn186243(v=exchg.150).aspx'
+      href: 'https://msdn.microsoft.com/de-de/library/dn186243(v=exchg.150).aspx'
