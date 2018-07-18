@@ -8,7 +8,7 @@ ms.assetid: e6fd5c23-0ba5-4a7b-bdde-4a553447069f
 description: Erstellen Sie Ihre erste Anwendung mithilfe von Exchange-Webdienste (EWS) in Exchange.
 ms.openlocfilehash: 911495c74f4c74114a86b1a3a98c9200db338b34
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756849"
@@ -25,7 +25,7 @@ Sie können EWS-Vorgänge unter jedem Betriebssystem und in jeder Sprache aufruf
 
 Wenn Sie bereits über ein Exchange-Postfachkonto verfügen, können Sie diesen Schritt überspringen. Andernfalls können Sie mit einer der folgenden Methoden ein Exchange-Postfach für Ihre erste EWS-Anwendung einrichten:
   
-- [Besorgen Sie sich eine Office 365-Entwicklerwebsite ](http://msdn.microsoft.com/en-us/library/office/fp179924.aspx)(empfohlen). Dies ist die schnellste Methode zum Erhalten eines Exchange-Postfachs.
+- [Besorgen Sie sich eine Office 365-Entwicklerwebsite ](http://msdn.microsoft.com/de-DE/library/office/fp179924.aspx)(empfohlen). Dies ist die schnellste Methode zum Erhalten eines Exchange-Postfachs.
     
 - Laden Sie [Exchange Server](http://office.microsoft.com/en-us/exchange/microsoft-exchange-try-or-buy-exchange-we-can-help-you-decide-FX103746846.aspx?WT%2Eintid1=ODC%5FENUS%5FFX103472230%5FXT103965589) herunter.
     
@@ -436,7 +436,7 @@ Falls Probleme mit der Anwendung auftreten, [veröffentlichen Sie eine Frage ode
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Erste Schritte mit Webdiensten in Exchange](start-using-web-services-in-exchange.md)   
+- [Verwenden von Webdiensten in Exchange](start-using-web-services-in-exchange.md)   
 - [Erkunden von verwalteter EWS-API, EWS und Webdiensten in Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md) 
 - [Übersicht über den EWS-Cliententwurf für Exchange](ews-client-design-overview-for-exchange.md)   
 - [Entwickeln von Webdienstclients für Exchange](develop-web-service-clients-for-exchange.md)  
