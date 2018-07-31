@@ -12,22 +12,20 @@ api_type:
 - schema
 ms.assetid: 5cb43b02-d444-4d9c-9075-cdc5a4427daf
 description: Das ItemChange-Element enthält eine Element-ID und die Updates auf das Element anwenden.
-ms.openlocfilehash: d10ce96cacb0be7411c4e8230ebc9b2803b7a5b1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 42484c8deecb106e05023215342af3c7d996d852
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830145"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353511"
 ---
 # <a name="itemchange"></a>ItemChange
 
 Das **ItemChange** -Element enthält eine Element-ID und die Updates auf das Element anwenden. 
   
-[UpdateItem](updateitem.md)
-  
-[ItemChanges](itemchanges.md)
-  
-[ItemChange](itemchange.md)
+- [UpdateItem](updateitem.md) 
+- [ItemChanges](itemchanges.md)
+- [ItemChange](itemchange.md)
   
 ```xml
 <ItemChange>
@@ -36,7 +34,22 @@ Das **ItemChange** -Element enthält eine Element-ID und die Updates auf das Ele
 </ItemChange>
 ```
 
- **ItemChangeType**
+```xml
+<ItemChange>
+   <OccurrenceItemId>...</OccurrenceItemId>
+   <Updates>...</Updates>
+</ItemChange>
+```
+
+```xml
+<ItemChange>
+   <RecurringMasterItemId>...</RecurringMasterItemId>
+   <Updates>...</Updates>
+</ItemChange>
+```
+
+**ItemChangeType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -58,7 +71,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemChanges](itemchanges.md) <br/> |Enthält ein Array von [ItemChange](itemchange.md) -Elementen, die Elemente und die Updates auf Elemente anwenden zu identifizieren.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/UpdateItem/ItemChanges` <br/> |
+|[ItemChanges](itemchanges.md) <br/> |Enthält ein Array von [ItemChange](itemchange.md) -Elementen, die Elemente und die Updates auf Elemente anwenden zu identifizieren.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/UpdateItem/ItemChanges` <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
@@ -77,7 +90,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
    
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[UpdateItem Operation](updateitem-operation.md)
+- [UpdateItem-Vorgang](updateitem-operation.md)
 

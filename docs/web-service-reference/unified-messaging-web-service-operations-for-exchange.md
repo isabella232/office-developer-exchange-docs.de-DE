@@ -11,12 +11,12 @@ api_type:
 - schema
 ms.assetid: d92455bd-24e8-4255-9f93-2bdeff00d42d
 description: Hier finden Sie im Exchange Referenzinformationen für Unified Messaging Web Service-Vorgänge.
-ms.openlocfilehash: 21d3469d752ff6cdca4ed4ea9151daca52d51e9f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: bd86a4ab2de58e5f04a8d37f17196040bcf38b97
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839287"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354358"
 ---
 # <a name="unified-messaging-web-service-operations-for-exchange"></a>Unified Messaging Web Service-Vorgänge für Exchange
 
@@ -25,31 +25,23 @@ Hier finden Sie im Exchange Referenzinformationen für Unified Messaging Web Ser
 Der Unified Messaging-Webdienst bietet viele Vorgänge, mit die Clientanwendungen zum Lesen und Unified Messaging-Eigenschaften ändern, wiedergeben Voice Mail-Nachrichten, Grußformeln aufzeichnen und Postfachelemente über Telefoniegeräte bestimmen können. Die Artikel in diesem Abschnitt enthalten Informationen über die allgemeine Struktur der Anfrage und-Antwort Nachrichten für die Vorgänge. Diese Artikel enthalten Beispiele, in denen allgemeine Nachricht Strukturen anzeigen. In diesen Beispielen können Sie erfahren Sie, was Sie mit einem Unified Messaging-webdienstanforderung möglich.
   
 > [!NOTE]
->  Exchange beginnend mit Exchange 2010-Versionen, sollten Sie die Unified Messaging-Vorgänge verwenden, die in der [Exchange-Webdienste (EWS)](http://msdn.microsoft.com/library/60285497-0c4e-4e51-84e1-34dd6d89a5d8%28Office.15%29.aspx) anstelle der Unified Messaging-Webdienst, aus den folgenden Gründen zur Verfügung stehen: > des EWS-basierte Unified Messaging-Funktionen haben erstklassige Unterstützung in die EWS Managed API. > In Exchange beginnend mit Exchange 2010-Versionen werden neue Unified Messaging-Features für EWS jedoch nicht für den Unified Messaging-Webdienst hinzugefügt. 
+> Exchange beginnend mit Exchange 2010-Versionen wird empfohlen, dass Sie die Unified Messaging-Vorgänge verwenden, die in der [Exchange-Webdienste (EWS)](http://msdn.microsoft.com/library/60285497-0c4e-4e51-84e1-34dd6d89a5d8%28Office.15%29.aspx) anstelle der Unified Messaging-Webdienst, aus den folgenden Gründen verfügbar sind: 
+> - EWS-basierte Unified Messaging-Funktionen haben erstklassige Unterstützung in die EWS Managed API. 
+> - In Versionen von Exchange, beginnend mit Exchange 2010 werden neue Unified Messaging-Features für EWS jedoch nicht für den Unified Messaging-Webdienst hinzugefügt. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 <a name="bk_InThisSection"> </a>
 
-- [Trennen Sie (UM-Webdienst)](disconnect-operation-um-web-service.md)
-    
-- [GetCallInfo-Vorgang (UM-Webdienst)](getcallinfo-operation-um-web-service.md)
-    
-- [GetUMProperties-Vorgang (UM-Webdienst)](getumproperties-operation-um-web-service.md)
-    
-- [IsUMEnabled-Vorgang (UM-Webdienst)](isumenabled-operation-um-web-service.md)
-    
-- [PlayOnPhone-Vorgang (UM-Webdienst)](playonphone-operation-um-web-service.md)
-    
-- [PlayOnPhoneGreeting-Vorgang (UM-Webdienst)](playonphonegreeting-operation-um-web-service.md)
-    
-- [ResetPIN-Vorgang (UM-Webdienst)](resetpin-operation-um-web-service.md)
-    
-- [SetMissedCallNotificationEnabled-Vorgang (UM-Webdienst)](setmissedcallnotificationenabled-operation-um-web-service.md)
-    
-- [SetOofStatus-Vorgang (UM-Webdienst)](setoofstatus-operation-um-web-service.md)
-    
-- [SetPlayOnPhoneDialString-Vorgang (UM-Webdienst)](setplayonphonedialstring-operation-um-web-service.md)
-    
+- [Disconnect-Vorgange (UM-Webdienst)](disconnect-operation-um-web-service.md)    
+- [GetCallInfo-Vorgang (UM-Webdienst)](getcallinfo-operation-um-web-service.md)   
+- [GetUMProperties-Vorgang (UM-Webdienst)](getumproperties-operation-um-web-service.md)   
+- [IsUMEnabled-Vorgang (UM-Webdienst)](isumenabled-operation-um-web-service.md)   
+- [PlayOnPhone-Vorgang (UM-Webdienst)](playonphone-operation-um-web-service.md)   
+- [PlayOnPhoneGreeting-Vorgang (UM-Webdienst)](playonphonegreeting-operation-um-web-service.md)   
+- [ResetPIN-Vorgang (UM-Webdienst)](resetpin-operation-um-web-service.md)   
+- [SetMissedCallNotificationEnabled-Vorgang (UM-Webdienst)](setmissedcallnotificationenabled-operation-um-web-service.md)  
+- [SetOofStatus-Vorgang (UM-Webdienst)](setoofstatus-operation-um-web-service.md)    
+- [SetPlayOnPhoneDialString-Vorgang (UM-Webdienst)](setplayonphonedialstring-operation-um-web-service.md)   
 - [SetTelephoneAccessFolderEmail-Vorgang (UM-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md)
     
 ## <a name="see-also"></a>Siehe auch

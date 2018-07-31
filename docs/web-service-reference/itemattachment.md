@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 089ee599-f45e-46f5-a18a-5cfb3d2851ff
 description: Das ItemAttachment-Element stellt ein Exchange-Element, das mit einem anderen Exchange-Element zugeordnet ist.
-ms.openlocfilehash: 87e0331664f1fdf8857afc78500014d138f05401
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 7bd3d22430fe04f1b28ae240102500609fe8d703
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830137"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353147"
 ---
 # <a name="itemattachment"></a>ItemAttachment
 
@@ -37,7 +37,120 @@ Das **ItemAttachment** -Element stellt ein Exchange-Element, das mit einem ander
 </ItemAttachment>
 ```
 
- **ItemAttachmentType**
+```xml
+<ItemAttachment>
+   <AttachmentId/>
+   <Name/>
+   <ContentType/>
+   <ContentId/>
+   <ContentLocation/>
+   <Size/>
+   <LastModifiedTime/>
+   <IsInline/>
+   <Message/>
+</ItemAttachment>
+```
+
+```xml
+<ItemAttachment>
+   <AttachmentId/>
+   <Name/>
+   <ContentType/>
+   <ContentId/>
+   <ContentLocation/>
+   <Size/>
+   <LastModifiedTime/>
+   <IsInline/>
+   <CalendarItem/>
+</ItemAttachment>
+```
+
+```xml
+<ItemAttachment>
+   <AttachmentId/>
+   <Name/>
+   <ContentType/>
+   <ContentId/>
+   <ContentLocation/>
+   <Size/>
+   <LastModifiedTime/>
+   <IsInline/>
+   <Contact/>
+</ItemAttachment>
+```
+
+```xml
+<ItemAttachment>
+   <AttachmentId/>
+   <Name/>
+   <ContentType/>
+   <ContentId/>
+   <ContentLocation/>
+   <Size/>
+   <LastModifiedTime/>
+   <IsInline/>
+   <Task/>
+</ItemAttachment>
+```
+
+```xml
+<ItemAttachment>
+   <AttachmentId/>
+   <Name/>
+   <ContentType/>
+   <ContentId/>
+   <ContentLocation/>
+   <Size/>
+   <LastModifiedTime/>
+   <IsInline/>
+   <MeetingMessage/>
+</ItemAttachment>
+```
+
+```xml
+<ItemAttachment>
+   <AttachmentId/>
+   <Name/>
+   <ContentType/>
+   <ContentId/>
+   <ContentLocation/>
+   <Size/>
+   <LastModifiedTime/>
+   <IsInline/>
+   <MeetingRequest/>
+</ItemAttachment>
+```
+
+```xml
+<ItemAttachment>
+   <AttachmentId/>
+   <Name/>
+   <ContentType/>
+   <ContentId/>
+   <ContentLocation/>
+   <Size/>
+   <LastModifiedTime/>
+   <IsInline/>
+   <MeetingResponse/>
+</ItemAttachment>
+```
+
+```xml
+<ItemAttachment>
+   <AttachmentId/>
+   <Name/>
+   <ContentType/>
+   <ContentId/>
+   <ContentLocation/>
+   <Size/>
+   <LastModifiedTime/>
+   <IsInline/>
+   <MeetingCancellation/>
+</ItemAttachment>
+```
+
+**ItemAttachmentType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -51,15 +164,15 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[AttachmentId](attachmentid.md) <br/> |Identifiziert die Anlage.  <br/> |
-|[Name ("AttachmentType")](name-attachmenttype.md) <br/> |Stellt den Namen der Anlage an.  <br/> |
+|[Name (AttachmentType)](name-attachmenttype.md) <br/> |Stellt den Namen der Anlage an.  <br/> |
 |[ContentType](contenttype.md) <br/> |Beschreibt den Multipurpose Internet Mail Extensions (MIME) gescannt.  <br/> |
 |[ContentId](contentid.md) <br/> |Stellt einen Bezeichner für den Inhalt der Anlage dar. [ContentId](contentid.md) kann auf einen beliebigen Zeichenfolgenwert festgelegt werden. Anwendungen können [ContentId](contentid.md) um eigene Kennung Mechanismen zu implementieren.  <br/> |
 |[ContentLocation](contentlocation.md) <br/> |Enthält den URI Uniform Resource Identifier (), die den Speicherort des Inhalts der Anlage entspricht.  <br/> |
 |[Size](size.md) <br/> |Stellt die Größe des Dateianlage in Bytes.  <br/> |
-|[ZuletztGeändertUm](lastmodifiedtime.md) <br/> |Darstellt, wenn die Anlage zuletzt geändert wurde.  <br/> |
+|[LastModifiedTime](lastmodifiedtime.md) <br/> |Darstellt, wenn die Anlage zuletzt geändert wurde.  <br/> |
 |[IsInline](isinline.md) <br/> |Stellt dar, ob die Anlage Inline innerhalb eines Elements angezeigt wird.  <br/> |
 |[Element](item.md) <br/> |Stellt eine generische Exchange Element Anlage.  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Stellt eine Anlage Exchange e-Mail-Nachricht dar.  <br/> |
+|[Meldung](message-ex15websvcsotherref.md) <br/> |Stellt eine Anlage Exchange e-Mail-Nachricht dar.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Anlage Element Exchange-Kalender darstellt.  <br/> |
 |[Contact](contact.md) <br/> |Anlage Kontaktelement Exchange darstellt.  <br/> |
 |[Aufgabe](task.md) <br/> |Stellt eine Exchange-Task-Anlage.  <br/> |
@@ -92,8 +205,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
-
-
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

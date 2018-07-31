@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b53ed47a-3d01-4c4e-ad32-fb0532872aad
 description: Lernen Sie .NET Framework-Klassen, mit denen Sie in Ihrer Exchange-können 2013 Transport-Agents zum Lesen, schreiben und Ändern von Nachrichten.
-ms.openlocfilehash: c2a5d764140b86ddec49d51ec969aab63eb34f19
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: a39d6ecaeb837ce2760d762107e78aa8d4f09f7c
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757206"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354008"
 ---
 # <a name="reading-and-modifying-messages-in-the-exchange-2013-transport-pipeline"></a>Lesen und Ändern von Nachrichten in der Transportpipeline Exchange 2013
 
@@ -89,7 +89,7 @@ Der iCalendar-Namespace stellt einen Vorwärtscursor Reader und Writer für iCal
   
 Die Klassen [CalendarReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.aspx) und [CalendarWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarWriter.aspx) dienen zum Lesen und Schreiben von iCalendar Streaming von Daten. 
   
-Die CalendarReader nimmt einen lesbaren [Stream-Objekt](https://msdn.microsoft.com/library/System.IO.Stream.aspx) als Argument an den Konstruktoren. Die Methoden [ReadFirstChildComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadFirstChildComponent.aspx) , [ReadNextSiblingComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadNextSiblingComponent.aspx) und [ReadNextComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadNextComponent.aspx) können dann nacheinander die iCalendar-Komponenten in der Datenstrom zugreifen. Basierend auf dem Wert, den Sie für die [ComplianceMode](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ComplianceMode.aspx) -Eigenschaft festgelegt haben, Fehler im iCalendar-Stream eine Ausnahme ausgelöst oder bewirkt, dass die [ComplianceStatus](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ComplianceStatus.aspx) -Eigenschaft auf einen anderen Wert als [konform](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarComplianceStatus.Compliant.aspx) festgelegt werden. Sie können diese Eigenschaft zum Ermitteln von Problemen mit eingehenden iCalendar-Daten überprüfen. 
+Die CalendarReader nimmt einen lesbaren [Stream-Objekt](https://msdn.microsoft.com/library/System.IO.Stream.aspx) als Argument an den Konstruktoren. Die Methoden [ReadFirstChildComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadFirstChildComponent.aspx), [ReadNextSiblingComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadNextSiblingComponent.aspx)und [ReadNextComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadNextComponent.aspx) können dann nacheinander die iCalendar-Komponenten in der Datenstrom zugreifen. Basierend auf dem Wert, den Sie für die [ComplianceMode](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ComplianceMode.aspx) -Eigenschaft festgelegt haben, Fehler im iCalendar-Stream eine Ausnahme ausgelöst oder bewirkt, dass die [ComplianceStatus](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ComplianceStatus.aspx) -Eigenschaft auf einen anderen Wert als [konform](https://msdn.microsoft.com/en-us/library/microsoft.exchange.data.contenttypes.icalendar.calendarcompliancestatus.aspx)festgelegt werden. Sie können diese Eigenschaft zum Ermitteln von Problemen mit eingehenden iCalendar-Daten überprüfen. 
   
 Die [CalendarWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarWriter.aspx) -Klasse verwendet einen schreibbaren [Stream-Objekt](https://msdn.microsoft.com/library/System.IO.Stream.aspx) als Argument an den Konstruktoren. 
   
@@ -116,7 +116,7 @@ Die Klassen [MimeReader](https://msdn.microsoft.com/library/Microsoft.Exchange.D
   
 Die [MimeDocument](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeDocument.aspx) -Klasse kapselt DOM. Die Klassen [MimeReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeReader.aspx) und [MimeWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeWriter.aspx) darstellen Zustand Computern. Wird aufgerufen, ihre basierend auf der Eingabe empfangen und die Methoden Zustände ändert. Zahlen von 2 bis 5 werden vereinfachte Zustand Übergang Diagramme, die für das Objekt [MimeReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeReader.aspx) zeigen, welche Methoden zulässig sind, rufen Sie jeden Zustand und den Status mit der führt. 
   
-Führen Sie die Pfeile für die von einem Zustand zum nächsten, ruft die Methode besagt oder Rückgabewerte, die dazu führen, den Zustand dass, ändern, um diese Diagramme zu verwenden. Angenommen Sie im ersten Diagramm, dass Sie am Anfang des Datenstroms sind, zu der die MimeReader gehört, die Sie erstellt haben. Wenn Sie auf den Status des Part-Kopfzeilen erhalten möchten, rufen Sie eine der [ReadNextPart](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeReader.ReadNextPart.aspx) oder [ReadFirstChildPart](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeReader.ReadFirstChildPart.aspx) , in dieser Reihenfolge aus. Wenn Header (d. h., wenn der MIME wohlgeformt ist) vorhanden sind, geben Sie in den Status des Part-Kopfzeilen ein. Andernfalls wird eine Ausnahme ausgelöst. 
+Führen Sie die Pfeile für die von einem Zustand zum nächsten, ruft die Methode besagt oder Rückgabewerte, die dazu führen, den Zustand dass, ändern, um diese Diagramme zu verwenden. Angenommen Sie im ersten Diagramm, dass Sie am Anfang des Datenstroms sind, zu der die MimeReader gehört, die Sie erstellt haben. Wenn Sie auf den Status des Part-Kopfzeilen erhalten möchten, rufen Sie eine der [ReadNextPart](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeReader.ReadNextPart.aspx) oder [ReadFirstChildPart](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeReader.ReadFirstChildPart.aspx), in dieser Reihenfolge aus. Wenn Header (d. h., wenn der MIME wohlgeformt ist) vorhanden sind, geben Sie in den Status des Part-Kopfzeilen ein. Andernfalls wird eine Ausnahme ausgelöst. 
   
 **Abbildung 2. Vereinfachte Statusübergangsdiagramm für MimeReader-Objekte**
 

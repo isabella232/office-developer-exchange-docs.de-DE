@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: b3c6ea3a-9ead-44b9-9d99-64ecf12bde23
 description: Das ExtendedFieldURI -Element identifiziert eine erweiterte MAPI-Eigenschaft.
-ms.openlocfilehash: 8d946aec8ae2c5e6bb4ca3f1d8ee74250262d373
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 50ce46652863b0c534d09d58d4b9f7c8095deef2
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758345"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353791"
 ---
 # <a name="extendedfielduri"></a>ExtendedFieldURI
 
@@ -27,7 +27,8 @@ Das **ExtendedFieldURI** -Element identifiziert eine erweiterte MAPI-Eigenschaft
 <ExtendedFieldURI DistinguishedPropertySetId="" PropertySetId="" PropertyTag="" PropertyName="" PropertyId="" PropertyType="" />
 ```
 
- **PathToExtendedFieldType**
+**PathToExtendedFieldType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -36,12 +37,12 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**DistinguishedPropertySetId** <br/> |Definiert die bekannten Eigenschaftensatz-IDs für extended MAPI-Eigenschaften.  <br/> Wenn dieses Attribut verwendet wird, können nicht die Attribute **PropertySetId** und **PropertyTag** verwendet werden. Dieses Attribut muss entweder die **PropertyId** oder **PropertyName** -Attribut und das **PropertyType** -Attribut verwendet werden.  <br/> Die **DistinguishedPropertySetId** Attributtabelle weiter unten in diesem Thema werden die möglichen Werte für dieses Attribut aufgelistet.  <br/> Dieses Attribut ist optional.  <br/> |
-|**PropertySetId** <br/> |MAPI-Eigenschaft oder Namespace erweitert, durch die identifizierende GUID identifiziert.  <br/> Wenn dieses Attribut verwendet wird, kann nicht das Attribut **DistinguishedPropertySetId** und **PropertyTag** verwendet werden. Dieses Attribut muss entweder die **PropertyId** oder **PropertyName** -Attribut und das **PropertyType** -Attribut verwendet werden.  <br/> Dieses Attribut ist optional.  <br/> |
-|**' PropertyTag '** <br/> |Identifiziert das Eigenschafts-Tag ohne die Typ-Teil des Tags an. Die **PropertyTag** kann als eine Hexadezimalzahl oder eine kurze ganze Zahl dargestellt werden.  <br/> Der Bereich zwischen 0 x 8000 und 0xFFFE stellt das benutzerdefinierte Eigenschaften der Zellbereich. Wenn eine Postfachdatenbank eine benutzerdefinierte Eigenschaft zum ersten Mal findet, wird diese benutzerdefinierte Eigenschaft ein Eigenschaftentag innerhalb der benutzerdefinierten Eigenschaft 0 x 8000 0xFFFE. Ein Tag für die angegebene benutzerdefinierte Eigenschaft unterscheiden sich höchstwahrscheinlich in Datenbanken. Daher kann eine benutzerdefinierte Eigenschaft Anforderung von Eigenschaftentag verschiedene Eigenschaften in verschiedenen Datenbanken zurück. Die Verwendung des Attributs **PropertyTag** ist unzulässig für benutzerdefinierte Eigenschaften. Verwenden Sie stattdessen die **PropertySetId** -Attribut und das Attribut **PropertyName** oder **PropertyId**.  <br/> > [!IMPORTANT]> Zugriff auf eine benutzerdefinierte Eigenschaft zwischen 0 x 8000 und 0xFFFE mithilfe der GUID + Name-ID.           Wenn das Attribut **' PropertyTag '** verwendet wird, können nicht die Attribute **DistinguishedPropertySetId**, **PropertySetId**, **PropertyName**und **PropertyId** verwendet werden.  <br/> Dieses Attribut ist optional.  <br/> > [!NOTE]> Sie können keine Eigenschaft Tag-Attribut für Eigenschaften innerhalb des benutzerdefinierten Bereichs 0 x 8000 0xFFFE verwenden. Sie müssen in diesem Fall eine benannte Eigenschaft verwenden.           |
-|**PropertyName** <br/> |Identifiziert eine erweiterte Eigenschaft anhand des Namens. Diese Eigenschaft muss mit **DistinguishedPropertySetId** oder **PropertySetId**kombiniert werden. <br/> Wenn dieses Attribut verwendet wird, können nicht die Attribute **PropertyId** und **PropertyTag** verwendet werden.  <br/> Dieses Attribut ist optional.  <br/> |
-|**PropertyId** <br/> |Identifiziert eine erweiterte Eigenschaft anhand seiner Versendung-ID In den decimal oder hexadezimale kann die Verteiler-ID identifiziert werden. Diese Eigenschaft muss mit **DistinguishedPropertySetId** oder **PropertySetId**kombiniert werden. <br/> Wenn dieses Attribut verwendet wird, können nicht die Attribute **PropertyName** und **PropertyTag** verwendet werden.  <br/> Dieses Attribut ist optional.  <br/> |
-|**PropertyType** <br/> |Den Eigenschaftentyp eines Tags Eigenschaft darstellt. Dies entspricht dem Unwichtigstes Wort in einem Eigenschaftentag.  <br/> Die Tabelle PropertyType-Attribut weiter unten in diesem Thema enthält die möglichen Werte für dieses Attribut.  <br/> Dieses Attribut ist erforderlich.  <br/> |
+|**DistinguishedPropertySetId** <br/> |Definiert die bekannten Eigenschaftensatz-IDs für extended MAPI-Eigenschaften.<br/><br/>Wenn dieses Attribut verwendet wird, können nicht die Attribute **PropertySetId** und **PropertyTag** verwendet werden. Dieses Attribut muss entweder die **PropertyId** oder **PropertyName** -Attribut und das **PropertyType** -Attribut verwendet werden.  <br/><br/>Die **DistinguishedPropertySetId** Attributtabelle weiter unten in diesem Thema werden die möglichen Werte für dieses Attribut aufgelistet.<br/><br/>Dieses Attribut ist optional.  <br/> |
+|**PropertySetId** <br/> |MAPI-Eigenschaft oder Namespace erweitert, durch die identifizierende GUID identifiziert.<br/><br/>Wenn dieses Attribut verwendet wird, kann nicht das Attribut **DistinguishedPropertySetId** und **PropertyTag** verwendet werden. Dieses Attribut muss entweder die **PropertyId** oder **PropertyName** -Attribut und das **PropertyType** -Attribut verwendet werden.  <br/><br/>Dieses Attribut ist optional.  <br/> |
+|**' PropertyTag '** <br/> |Identifiziert das Eigenschafts-Tag ohne die Typ-Teil des Tags an. Die **PropertyTag** kann als eine Hexadezimalzahl oder eine kurze ganze Zahl dargestellt werden.  <br/><br/>Der Bereich zwischen 0 x 8000 und 0xFFFE stellt das benutzerdefinierte Eigenschaften der Zellbereich. Wenn eine Postfachdatenbank eine benutzerdefinierte Eigenschaft zum ersten Mal findet, wird diese benutzerdefinierte Eigenschaft ein Eigenschaftentag innerhalb der benutzerdefinierten Eigenschaft 0 x 8000 0xFFFE. Ein Tag für die angegebene benutzerdefinierte Eigenschaft unterscheiden sich höchstwahrscheinlich in Datenbanken. Daher kann eine benutzerdefinierte Eigenschaft Anforderung von Eigenschaftentag verschiedene Eigenschaften in verschiedenen Datenbanken zurück. Die Verwendung des Attributs **PropertyTag** ist unzulässig für benutzerdefinierte Eigenschaften. Verwenden Sie stattdessen die **PropertySetId** -Attribut und das Attribut **PropertyName** oder **PropertyId**.  <br/><br/>**Wichtig**: Zugriff auf eine benutzerdefinierte Eigenschaft zwischen 0 x 8000 und 0xFFFE mithilfe der GUID + Name-ID. Wenn das Attribut **' PropertyTag '** verwendet wird, können nicht die Attribute **DistinguishedPropertySetId**, **PropertySetId**, **PropertyName**und **PropertyId** verwendet werden.<br/><br/>Dieses Attribut ist optional.<br/><br/>**Hinweis**: für Eigenschaften innerhalb des benutzerdefinierten Bereichs 0 x 8000 0xFFFE keine Eigenschaft Tag-Attribut verwenden. Sie müssen in diesem Fall eine benannte Eigenschaft verwenden.           |
+|**PropertyName** <br/> |Identifiziert eine erweiterte Eigenschaft anhand des Namens. Diese Eigenschaft muss mit **DistinguishedPropertySetId** oder **PropertySetId**kombiniert werden. <br/><br/>Wenn dieses Attribut verwendet wird, können nicht die Attribute **PropertyId** und **PropertyTag** verwendet werden.<br/><br/>Dieses Attribut ist optional.  <br/> |
+|**PropertyId** <br/> |Identifiziert eine erweiterte Eigenschaft anhand seiner Versendung-ID In den decimal oder hexadezimale kann die Verteiler-ID identifiziert werden. Diese Eigenschaft muss mit **DistinguishedPropertySetId** oder **PropertySetId**kombiniert werden. <br/><br/>Wenn dieses Attribut verwendet wird, können nicht die Attribute **PropertyName** und **PropertyTag** verwendet werden.<br/><br/>Dieses Attribut ist optional.  <br/> |
+|**<ui>PropertyType</ui>** <br/> |Den Eigenschaftentyp eines Tags Eigenschaft darstellt. Dies entspricht dem Unwichtigstes Wort in einem Eigenschaftentag.<br/><br/>Die Tabelle PropertyType-Attribut weiter unten in diesem Thema enthält die möglichen Werte für dieses Attribut.<br/><br/>Dieses Attribut ist erforderlich.  <br/> |
    
 #### <a name="distinguishedpropertysetid-attribute"></a>DistinguishedPropertySetId-Attribut
 
@@ -97,7 +98,7 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[ExtendedProperty](extendedproperty.md) <br/> |Erweiterte Eigenschaften für Ordner und Elemente identifiziert.  <br/> |
-|[AdditionalProperties](additionalproperties.md) <br/> | Zusätzliche Eigenschaften identifiziert.  <br/>  Folgende XPath-Ausdrücke werden für dieses Element verwendet:  <br/>  `/FindFolder/FolderShape/AdditionalProperties` <br/>  `/GetFolder/FolderShape/AdditionalProperties` <br/>  `/SyncFolderHierarchy/FolderShape/AdditionalProperties` <br/>  `/GetItem/ItemShape/AdditionalProperties` <br/>  `/FindItem/ItemShape/AdditionalProperties` <br/>  `/SyncFolderItems/ItemShape/AdditionalProperties` <br/>  `/GetAttachment/AttachmentShape/AdditionalProperties` <br/> |
+|[AdditionalProperties](additionalproperties.md) <br/> | Zusätzliche Eigenschaften identifiziert.<br/><br/>Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>`/FindFolder/FolderShape/AdditionalProperties` <br/>  `/GetFolder/FolderShape/AdditionalProperties` <br/>  `/SyncFolderHierarchy/FolderShape/AdditionalProperties` <br/>  `/GetItem/ItemShape/AdditionalProperties` <br/>  `/FindItem/ItemShape/AdditionalProperties` <br/>  `/SyncFolderItems/ItemShape/AdditionalProperties` <br/>  `/GetAttachment/AttachmentShape/AdditionalProperties` <br/> |
 |[SetItemField](setitemfield.md) <br/> |Stellt eine Aktualisierung auf eine einzelne Eigenschaft eines Elements in einer [UpdateItem Operation](updateitem-operation.md)dar.  <br/> |
 |[SetFolderField](setfolderfield.md) <br/> |Stellt eine Aktualisierung auf eine einzelne Eigenschaft in einem Ordner in einer [UpdateFolder-Vorgang](updatefolder-operation.md)dar.  <br/> |
 |[DeleteItemField](deleteitemfield.md) <br/> |Stellt einen Löschvorgang für eine bestimmte Eigenschaft aus einem Element löschen, während ein [UpdateItem Operation](updateitem-operation.md)dar.  <br/> |
@@ -106,7 +107,7 @@ Keine.
 |[AppendToFolderField](appendtofolderfield.md) <br/> |Gibt Daten an, die während einer [UpdateFolder-Vorgang](updatefolder-operation.md) an eine Ordnereigenschaft angefügt werden sollen.  <br/> |
 |[Exists](exists.md) <br/> |Stellt einen Suchausdruck dar, der **true** zurückgibt, wenn die angegebene Eigenschaft zu einem Element vorhanden ist.  <br/> |
 |[FieldURIOrConstant](fielduriorconstant.md) <br/> |Stellt eine Eigenschaft oder einen konstanten Wert dar, der beim Vergleich mit einer anderen Eigenschaft verwendet werden soll.  <br/> |
-|["IsEqualTo"](isequalto.md) <br/> |Stellt einen Suchausdruck dar, der eine Eigenschaft mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und **true** ausgibt, wenn sie gleich sind.  <br/> |
+|[IsEqualTo](isequalto.md) <br/> |Stellt einen Suchausdruck dar, der eine Eigenschaft mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und **true** ausgibt, wenn sie gleich sind.  <br/> |
 |[IsGreaterThan](isgreaterthan.md) <br/> |Stellt einen Suchausdruck dar, der eine Eigenschaft mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und **true** zurückgibt, wenn die erste Eigenschaft größer ist.  <br/> |
 |[IsGreaterThanOrEqualTo](isgreaterthanorequalto.md) <br/> |Stellt einen Suchausdruck dar, der eine Eigenschaft mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und **true** zurückgibt, wenn die erste Eigenschaft größer oder gleich der zweiten ist.  <br/> |
 |[IsLessThan](islessthan.md) <br/> |Stellt einen Suchausdruck dar, der eine Eigenschaft mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und **true** zurückgibt, wenn die erste Eigenschaft kleiner als die zweite ist.  <br/> |
@@ -123,7 +124,9 @@ Einige Attribute können nicht in Kombination mit anderen Attribute verwendet we
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 > [!NOTE]
-> [!HINWEIS] In Microsoft .NET ist ein Long-Wert eine 64-Bit-Ganzzahl mit Vorzeichen, während in MAPI und COM, einen Long-Wert ist eine 32-Bit-Ganzzahl. Die meisten Entwickler werden Microsoft.NET Framework verwenden, um die Exchange-Webdienste-Clientanwendungen zu entwickeln. Daher die .NET Benennung wird anstelle der MAPI benennen. Beispielsweise ist die PR_MESSAGE_FLAGS MAPI-Eigenschaft, 0x0E07, ein PT_LONG. In .NET gilt dies eine ganze Zahl. Eine erweiterte Eigenschaft für PR_MESSAGE_FLAGS ist definiert als \< T:ExtendedFieldURI ' PropertyTag ' = "0x0E07" PropertyType = "Ganze Zahl" / \>. 
+> [!HINWEIS] In Microsoft .NET ist ein Long-Wert eine 64-Bit-Ganzzahl mit Vorzeichen, während in MAPI und COM, einen Long-Wert ist eine 32-Bit-Ganzzahl. Die meisten Entwickler werden Microsoft.NET Framework verwenden, um die Exchange-Webdienste-Clientanwendungen zu entwickeln. Daher die .NET Benennung wird anstelle der MAPI benennen.
+> 
+> Beispielsweise ist die PR_MESSAGE_FLAGS MAPI-Eigenschaft, 0x0E07, eine PT\_Typ LONG. In .NET gilt dies eine ganze Zahl. Eine erweiterte Eigenschaft für PR_MESSAGE_FLAGS ist definiert als `<t:ExtendedFieldURI PropertyTag="0x0E07" PropertyType="Integer"/>`. 
   
 ## <a name="example"></a>Beispiel
 
@@ -180,12 +183,7 @@ Im folgenden Beispiel wird eine Anforderung erstellt ein Element, das zwei benut
    
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[FieldURI](fielduri.md)
-  
-[IndexedFieldURI](indexedfielduri.md)
-
-
+- [FieldURI](fielduri.md)
+- [IndexedFieldURI](indexedfielduri.md)
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

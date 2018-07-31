@@ -12,26 +12,22 @@ api_type:
 - schema
 ms.assetid: 47ed8edb-2a94-471b-b965-93f91456252e
 description: Das Update-Element identifiziert einen einzelnen Ordner, in den lokalen Client-Speicher zu aktualisieren.
-ms.openlocfilehash: 6d4a6233df41ea95e1fd9b394502bfb2728bddb6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: bf49741b2478edff450f114dc1464a0528072bea
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839337"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353504"
 ---
 # <a name="update-foldersync"></a>Update (FolderSync)
 
 **Update** -Elements bezeichnet einen einzelnen Ordner, in den lokalen Client-Speicher zu aktualisieren. 
   
-[SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)
-  
-[ResponseMessages](responsemessages.md)
-  
-[SyncFolderHierarchyResponseMessage](syncfolderhierarchyresponsemessage.md)
-  
-[Änderungen (Hierarchie)](changes-hierarchy.md)
-  
-[Update (FolderSync)](update-foldersync.md)
+- [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md) 
+- [ResponseMessages](responsemessages.md) 
+- [SyncFolderHierarchyResponseMessage](syncfolderhierarchyresponsemessage.md)  
+- [Änderungen (Hierarchie)](changes-hierarchy.md) 
+- [Update (FolderSync)](update-foldersync.md)
   
 ```xml
 <Update>
@@ -39,7 +35,32 @@ ms.locfileid: "19839337"
 </Update>
 ```
 
- **SyncFolderHierarchyCreateOrUpdateType**
+```xml
+<Update>
+   <CalendarFolder/>
+</Update>
+```
+
+```xml
+<Update>
+   <ContactsFolder/>
+</Update>
+```
+
+```xml
+<Update>
+   <TasksFolder/>
+</Update>
+```
+
+```xml
+<Update>
+   <SearchFolder/>
+</Update>
+```
+
+**SyncFolderHierarchyCreateOrUpdateType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -55,7 +76,7 @@ Keine.
 |[Folder](folder.md) <br/> |Definiert den Ordner, um das Erstellen, abrufen, suchen, synchronisieren oder zu aktualisieren.  <br/> |
 |[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner, der in erster Linie Kalenderelemente enthält.  <br/> |
 |[ContactsFolder](contactsfolder.md) <br/> |Stellt einem Kontaktordner in einem Postfach an.  <br/> |
-|["SearchFolder"](searchfolder.md) <br/> |Stellt einen Suchordner, der in einem Postfach enthalten ist.  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner, der in einem Postfach enthalten ist.  <br/> |
 |[TasksFolder](tasksfolder.md) <br/> |Stellt eine Aufgabe Ordner t Thcontained in einem Postfach ist.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
@@ -79,10 +100,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
    
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[SyncFolderItems-Vorgang](syncfolderitems-operation.md)
-
-
+- [SyncFolderItems-Vorgang](syncfolderitems-operation.md)
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

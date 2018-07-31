@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e6fd5c23-0ba5-4a7b-bdde-4a553447069f
 description: Erstellen Sie Ihre erste Anwendung mithilfe von Exchange-Webdienste (EWS) in Exchange.
-ms.openlocfilehash: 911495c74f4c74114a86b1a3a98c9200db338b34
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 06606bdc2b37c8bf65b8b10dc7a516bdc911b256
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756849"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353777"
 ---
 # <a name="get-started-with-ews-client-applications"></a>Erste Schritte mit EWS-Clientanwendungen
 
@@ -31,7 +31,7 @@ Wenn Sie bereits über ein Exchange-Postfachkonto verfügen, können Sie diesen 
     
 Nachdem Sie sichergestellt haben, dass Sie E-Mails von Ihrem Exchange-Server senden und empfangen können, sind Sie zum Einrichten der Entwicklungsumgebung bereit. Sie können Outlook Web App verwenden, um zu überprüfen, ob Sie E-Mails senden können.
   
-Sie müssen außerdem die URL des EWS-Endpunkts für Ihren Server kennen. Verwenden Sie in einer Produktionsumgebung die [AutoErmittlung](autodiscover-for-exchange.md) zur Ermittlung der EWS-URL. Die Beispiele in diesem Artikel verwenden die Office 365-EWS-Endpunkt-URL "https://outlook.office365.com/EWS/Exchange.asmx". Im Abschnitt [Nächste Schritte](#bk_next) finden Sie Links zu weiteren Informationen über die AutoErmittlung, wenn Sie bereit sind. 
+Sie müssen außerdem die URL des EWS-Endpunkts für Ihren Server kennen. Verwenden Sie in einer Produktionsumgebung die [AutoErmittlung](autodiscover-for-exchange.md) zur Ermittlung der EWS-URL. Die Beispiele in diesem Artikel verwenden die Office 365-EWS-Endpunkt-URL "`https://outlook.office365.com/EWS/Exchange.asmx`". Im Abschnitt [Nächste Schritte](#bk_next) finden Sie Links zu weiteren Informationen über die AutoErmittlung, wenn Sie bereit sind. 
   
 Wenn Sie Ihre Anwendung mit einem Exchange-Server testen, der über das selbstsignierte Standardzertifikat verfügt, müssen Sie eine [Zertifikatüberprüfungsmethode](how-to-validate-a-server-certificate-for-the-ews-managed-api.md) erstellen, die die Sicherheitsanforderungen Ihrer Organisation erfüllt. 
   

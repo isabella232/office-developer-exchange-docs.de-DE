@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: bd6a4265-ad40-43f6-bcc4-0bf5df4e984c
 description: Das ToFolderId-Element darstellt, den Zielordner für eine kopierte oder verschobene Element oder einen Ordner.
-ms.openlocfilehash: a48309f0b7f5c9bf667fc2eb653a0502832bc996
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 9d2fd6c177711cfe3a5d3415320440259e2f5289
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839222"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353658"
 ---
 # <a name="tofolderid"></a>ToFolderId
 
@@ -29,7 +29,14 @@ Das **ToFolderId** -Element darstellt, den Zielordner für eine kopierte oder ve
 </ToFolderId>
 ```
 
- **TargetFolderIdType**
+```xml
+<ToFolderId>
+   <DistinguishedFolderId/>
+</ToFolderId>
+```
+
+**TargetFolderIdType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -49,10 +56,10 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MoveFolder](movefolder.md) <br/> |Definiert eine Anforderung an einen Ordner im Exchange-Speicher zu verschieben.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/MoveFolder` <br/> |
-|[CopyFolder](copyfolder.md) <br/> |Definiert eine Anforderung an einen Ordner im Exchange-Speicher zu kopieren.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/CopyFolder` <br/> |
-|[MoveItem](moveitem.md) <br/> |Definiert eine Anforderung an ein Element im Exchange-Speicher zu verschieben.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/MoveItem` <br/> |
-|[CopyItem](copyitem.md) <br/> |Definiert eine Anforderung an ein Element im Exchange-Speicher zu kopieren.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/CopyItem` <br/> |
+|[MoveFolder](movefolder.md) <br/> |Definiert eine Anforderung an einen Ordner im Exchange-Speicher zu verschieben.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/MoveFolder` <br/> |
+|[CopyFolder](copyfolder.md) <br/> |Definiert eine Anforderung an einen Ordner im Exchange-Speicher zu kopieren.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/CopyFolder` <br/> |
+|[MoveItem](moveitem.md) <br/> |Definiert eine Anforderung an ein Element im Exchange-Speicher zu verschieben.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/MoveItem` <br/> |
+|[CopyItem](copyitem.md) <br/> |Definiert eine Anforderung an ein Element im Exchange-Speicher zu kopieren.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/CopyItem` <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
@@ -69,13 +76,8 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
    
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[MoveFolder-Vorgang](movefolder-operation.md)
-  
-[CopyFolder-Vorgang](copyfolder-operation.md)
-  
-[MoveItem Operation](moveitem-operation.md)
-  
-[CopyItem Operation](copyitem-operation.md)
+- [MoveFolder-Vorgang](movefolder-operation.md)  
+- [CopyFolder-Vorgang](copyfolder-operation.md) 
+- [MoveItem-Vorgang](moveitem-operation.md) 
+- [CopyItem-Vorgang](copyitem-operation.md)
 

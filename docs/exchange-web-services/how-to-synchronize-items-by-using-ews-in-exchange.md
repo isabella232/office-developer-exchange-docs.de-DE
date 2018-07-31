@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 886e7d35-9096-480b-8a8c-a7db27da06c2
 description: Erfahren Sie, wie Sie verwenden die EWS Managed API oder EWS zum Abrufen einer Liste aller Elemente in einem Ordner oder eine Liste der Änderungen, die aufgetreten sind in einem Ordner, um den Client synchronisieren.
-ms.openlocfilehash: ce29a77cee595c2358441e4a22d32d45e78c6e60
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 8763c053463e4787741ef992ddb99d29be4192fc
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757002"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353784"
 ---
 # <a name="synchronize-items-by-using-ews-in-exchange"></a>Synchronisieren von Elementen mithilfe von EWS in Exchange
 
@@ -107,6 +107,8 @@ Das folgende Beispiel zeigt die XML-Anforderung an die ursprüngliche Liste der 
 </soap:Envelope>
 ```
 
+<a name="bk_responsesyncfolderitems"> </a>
+
 Das folgende Beispiel zeigt die XML-Antwort, die vom Server zurückgegeben wird, nachdem die **SyncFolderItems** Vorgang Anforderung vom Client verarbeitet. Die erste Antwort enthält [Erstellen](http://msdn.microsoft.com/library/cb5e64a2-66a5-4447-921e-7c13efb8f6bf%28Office.15%29.aspx) von Elementen für fünf Elemente, da alle Elemente neu während einer anfänglichen Synchronisierung gelten. Die Werte für einige Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt, und einige Ordner wurden aus Platzgründen nicht eingeschlossen. 
   
 ```XML
@@ -176,7 +178,7 @@ Rufen Sie nach der die Liste der neuen Elemente auf dem Server, [die Elemente au
 ## <a name="get-the-changes-since-the-last-sync-by-using-ews"></a>Abrufen von Änderungen seit der letzten Synchronisierung mithilfe der Exchange-Webdienste
 <a name="bk_ewsexamplec"> </a>
 
-Das folgende Beispiel zeigt die XML-Anforderung an die Liste der Änderungen auf Elemente im Posteingang abrufen, indem Sie den Vorgang [SyncFolderItems](http://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) . Dies ist auch, dass die EWS Managed API, wenn gesendet die XML-Anfrage [Abrufen der Liste der Änderungen an den Posteingang](#bk_cesyncongoingewsma). In diesem Beispiel wird den [Synchronisierungsstatus](http://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) Elementwert auf den Wert in der [vorherigen Antwort](http://msdn.microsoft.com/library/886e7d35-9096-480b-8a8c-a7db27da06c2bk_ewsexamplea%28Office.15%29.aspx)zurückgegeben. Und zur Veranschaulichung in diesem Beispiel wird das Element [BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) **AllProperties** anstelle von **IdOnly** zum Anzeigen der zusätzlichen Eigenschaften zurückgegeben. Festlegen der [BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) -Elements auf **IdOnly** ist eine [bewährte Methode Synchronisierung](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices). Der Wert der **Synchronisierungsstatus** wurde zur besseren Lesbarkeit gekürzt. 
+Das folgende Beispiel zeigt die XML-Anforderung an die Liste der Änderungen auf Elemente im Posteingang abrufen, indem Sie den Vorgang [SyncFolderItems](http://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) . Dies ist auch, dass die EWS Managed API, wenn gesendet die XML-Anfrage [Abrufen der Liste der Änderungen an den Posteingang](#bk_cesyncongoingewsma). In diesem Beispiel wird den [Synchronisierungsstatus](http://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) Elementwert auf den Wert in der [vorherigen Antwort](#bk_responsesyncfolderitems)zurückgegeben. Und zur Veranschaulichung in diesem Beispiel wird das Element [BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) **AllProperties** anstelle von **IdOnly** zum Anzeigen der zusätzlichen Eigenschaften zurückgegeben. Festlegen der [BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) -Elements auf **IdOnly** ist eine [bewährte Methode Synchronisierung](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices). Der Wert der **Synchronisierungsstatus** wurde zur besseren Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

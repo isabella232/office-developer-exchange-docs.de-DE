@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 0790a3f2-cb31-4036-a757-7821aa0722cb
 description: Das Condition-Element identifiziert die Bedingung, die erfüllt sein muss, für die Aktionsteil der Regel ausgeführt werden.
-ms.openlocfilehash: ed605946f99aa63416337cd0e731c931176a8ed4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: d49f2984799b15c0499af59abecbb34abe15f7c3
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757589"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353560"
 ---
 # <a name="condition"></a>Bedingung
 
@@ -29,7 +29,32 @@ Das **Condition** -Element identifiziert die Bedingung, die erfüllt sein muss, 
 </Condition>
 ```
 
- **ProtectionRuleConditionType**
+```xml
+<Condition> 
+    <SenderDepartments/> 
+</Condition>
+```
+
+```xml
+<Condition> 
+    <True/> 
+</Condition>
+```
+
+```xml
+<Condition> 
+    <Recipients/> 
+</Condition>
+```
+
+```xml
+<Condition> 
+    <And/> 
+</Condition>
+```
+
+**ProtectionRuleConditionType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -72,8 +97,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
-
-
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

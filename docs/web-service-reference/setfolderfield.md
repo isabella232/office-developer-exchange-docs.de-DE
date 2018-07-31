@@ -12,25 +12,125 @@ api_type:
 - schema
 ms.assetid: 8c69db7b-54b5-4ae2-abca-4d6e0937a790
 description: Das SetFolderField-Element stellt ein Update, das den Wert für eine einzelne Eigenschaft für einen Ordner in einem Vorgang UpdateFolder fest.
-ms.openlocfilehash: 1919c335197c83999875a17397e9c9d4405d1e3f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: ed5c055c697865d5eb728d269c6f4c7ce60f4b5c
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831407"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353287"
 ---
 # <a name="setfolderfield"></a>SetFolderField
 
 Das **SetFolderField** -Element stellt ein Update, das den Wert für eine einzelne Eigenschaft für einen Ordner in einem Vorgang UpdateFolder fest. 
-  
+
 ```xml
 <SetFolderField>
    <FieldURI/>
    <Folder/>
 </SetFolderField>
 ```
+  
+```xml
+<SetFolderField>
+   <IndexedFieldURI/> 
+   <SearchFolder/> 
+</SetFolderField>
+```
 
- **SetFolderFieldType**
+```xml
+<SetFolderField>
+   <FieldURI/> 
+   <TasksFolder/>
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <ExtendedFieldURI/> 
+   <CalendarFolder/> 
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <ExtendedFieldURI/> 
+   <SearchFolder/>
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <ExtendedFieldURI/> 
+   <Folder/> 
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+    <IndexedFieldURI/> 
+    <TasksFolder/>
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <FieldURI/> 
+   <SearchFolder/>
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <FieldURI/> 
+   <CalendarFolder/> 
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <ExtendedFieldURI/> 
+   <TasksFolder/> 
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <IndexedFieldURI/> 
+   <CalendarFolder/> 
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <IndexedFieldURI/> 
+   <Folder/>
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+    <FieldURI/> 
+    <ContactsFolder/>
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <ExtendedFieldURI/> 
+   <ContactsFolder/>
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <IndexedFieldURI/> 
+   <ContactsFolder/> 
+</SetFolderField>
+```
+
+
+**SetFolderFieldType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -49,7 +149,7 @@ Keine.
 |[Folder](folder.md) <br/> |Gibt einen Ordner aktualisieren.  <br/> |
 |[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner, der in erster Linie Kalenderelemente enthält.  <br/> |
 |[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Kontakteordner in einem Postfach an.  <br/> |
-|["SearchFolder"](searchfolder.md) <br/> |Stellt einen Suchordner, der in einem Postfach enthalten ist.  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner, der in einem Postfach enthalten ist.  <br/> |
 |[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner, der in einem Postfach enthalten ist.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
@@ -75,10 +175,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
    
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[UpdateFolder-Vorgang](updatefolder-operation.md)
-
-
+- [UpdateFolder-Vorgang](updatefolder-operation.md)
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

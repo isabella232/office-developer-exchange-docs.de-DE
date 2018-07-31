@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: b5d85eb2-5e15-4d01-ad49-6289e735ad8a
 description: Das IsLessThanOrEqualTo-Element darstellt, die mit entweder einen konstanten Wert einer Eigenschaft oder eine andere Eigenschaft vergleicht und gibt true, wenn die erste Eigenschaft kleiner als oder gleich dem zweiten ist Suchbegriff.
-ms.openlocfilehash: 9aeb688ec68e13635ac3083119899bcd55045f7a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 8e312505b467952b5503b8ad51ed3fd62e92ad09
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830043"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353483"
 ---
 # <a name="islessthanorequalto"></a>IsLessThanOrEqualTo
 
@@ -30,7 +30,22 @@ Das **IsLessThanOrEqualTo** -Element darstellt, die vergleicht eine Eigenschaft 
 </IsLessThanOrEqualTo>
 ```
 
- **IsLessThanOrEqualToType**
+```xml
+<IsLessThanOrEqualTo>
+   <IndexedFieldURI/> 
+   <FieldURIOrConstant/>
+</IsLessThanOrEqualTo>
+```
+
+```xml
+<IsLessThanOrEqualTo>
+   <ExtendedFieldURI/> 
+   <FieldURIOrConstant/>
+</IsLessThanOrEqualTo>
+```
+
+**IsLessThanOrEqualToType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -71,8 +86,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
-
-
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

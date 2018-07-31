@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: d598f0a6-e296-423f-8ce5-3da57cfd8189
 description: Das Standard-Element darstellt, Datum und Uhrzeit, wann die Zeit von Sommerzeit zu Normalzeit wechselt.
-ms.openlocfilehash: 1c9be4cf35773583078bc8e16ddf44433d3ad98c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: c121e959f243d982cfe50ed6b4ef39a82dae2cc8
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831536"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353434"
 ---
 # <a name="standard"></a>Standard
 
@@ -31,7 +31,16 @@ Das **Standard** -Element darstellt, Datum und Uhrzeit, wann die Zeit von Sommer
 </Standard>
 ```
 
- **TimeChangeType**
+```xml
+<Standard TimeZoneName="">
+   <Offset/>
+   <AbsoluteDate/>
+   <Time/>
+</Standard>
+```
+
+**TimeChangeType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -71,8 +80,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
-
-
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

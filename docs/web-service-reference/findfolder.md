@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: b8a59740-d978-454c-9629-a10792385ba0
 description: Das FindFolder-Element definiert eine Anforderung zum Suchen von Ordnern in einem Postfach.
-ms.openlocfilehash: d41283547c443e38e2e87379a7224df9c89f901d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 69fbaebc5615ac7d19512770658cde83e4d352df
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758443"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353532"
 ---
 # <a name="findfolder"></a>FindFolder
 
@@ -32,7 +32,17 @@ Das **FindFolder** -Element definiert eine Anforderung zum Suchen von Ordnern in
 </FindFolder>
 ```
 
- **FindFolderType**
+```xml
+<FindFolder Traversal="Shallow/Deep/SoftDeleted">
+   <FolderShape/>
+   <FractionalPageFolderView/>
+   <Restriction/>
+   <ParentFolderIds/>
+</FindFolder>
+```
+
+**FindFolderType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -73,7 +83,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 
 Im folgenden Beispiel wird eine Anforderung FindFolder veranschaulicht eine Anforderung an alle Ordner befindet sich im Posteingang suchen bilden.
   
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
   xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
@@ -101,7 +111,5 @@ Im folgenden Beispiel wird eine Anforderung FindFolder veranschaulicht eine Anfo
    
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[FindFolder Operation](findfolder-operation.md)
+- [FindFolder-Vorgang](findfolder-operation.md)
 

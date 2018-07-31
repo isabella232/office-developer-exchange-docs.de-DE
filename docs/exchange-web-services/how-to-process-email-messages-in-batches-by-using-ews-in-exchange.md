@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 96390f92-cab1-4de6-9ec2-a55678fc20af
 description: Informationen Sie zum Erstellen, abrufen, aktualisieren und Löschen von e-Mail-Nachrichten in einem einzigen Aufruf im Batchmodus durch Verwenden der EWS Managed API oder EWS in Exchange.
-ms.openlocfilehash: 30ebbdf4c92111df629c7662987e301d167336e2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: b7dcc8f0961a34061b0476e2136193bf21731d99
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757005"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354043"
 ---
 # <a name="process-email-messages-in-batches-by-using-ews-in-exchange"></a>Verarbeiten von e-Mail-Nachrichten in Batches mithilfe von EWS in Exchange
 
@@ -26,7 +26,7 @@ Sie können die EWS Managed API verwenden oder EWS Batches von e-Mail-Nachrichte
 |Erstellen von e-Mail-Nachrichten in batches  <br/> |[ExchangeService.CreateItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
 |Abrufen von e-Mail-Nachrichten in batches  <br/> |[ExchangeService.BindToItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
 |Aktualisieren von e-Mail-Nachrichten in batches  <br/> |[ExchangeService.UpdateItems](http://msdn.microsoft.com/en-us/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
-|Löschen von e-Mail-Nachrichten in batches  <br/> |[ExchangeService.DeleteItems](http://msdn.microsoft.com/en-us/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) <br/> |
+|Löschen von e-Mail-Nachrichten in batches  <br/> |[ExchangeService.DeleteItems](http://msdn.microsoft.com/en-us/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
    
 In diesem Artikel erfahren Sie, wie Sie grundlegende Aufgaben für Batches von e-Mail-Nachrichten mithilfe der EWS Managed API oder EWS abschließen.
   
@@ -419,7 +419,7 @@ public static void BatchDeleteEmailItems(ExchangeService service, Collection<Ite
 ## <a name="delete-email-messages-in-batches-by-using-ews"></a>Löschen von e-Mail-Nachrichten in Batches mithilfe der Exchange-Webdienste
 <a name="bk_deleteews"> </a>
 
-Sie können e-Mail-Nachrichten in Batches mit löschen [DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) EWS-Vorgangs, wie im folgenden Codebeispiel dargestellt. Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die EWS Managed API zum [Löschen von e-Mail-Nachrichten in Batches](#bk_deleteewsma)verwenden.
+Sie können e-Mail-Nachrichten in Batches mit löschen [DeleteItem](../web-service-reference/deleteitem-operation.md) EWS-Vorgangs, wie im folgenden Codebeispiel dargestellt. Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die EWS Managed API zum [Löschen von e-Mail-Nachrichten in Batches](#bk_deleteewsma)verwenden.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -491,6 +491,6 @@ Das **ResponseClass** -Attribut wird zum **Erfolg** , wenn die e-Mail-Nachricht 
     
 - [Verschieben und Kopieren von e-Mail-Nachrichten mithilfe der EWS in Exchange](how-to-move-and-copy-email-messages-by-using-ews-in-exchange.md)
     
-- [Konsequenzen für Batchanforderungen EWS-Einschränkung](ews-throttling-in-exchange.md#bk_ThrottlingBatch)
+- [Auswirkungen von Einschränkungen für EWS-Batchanforderungen](ews-throttling-in-exchange.md#bk_ThrottlingBatch)
     
 

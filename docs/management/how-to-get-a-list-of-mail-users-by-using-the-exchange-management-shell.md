@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8b790dc8-5c4f-4acf-bbe7-63523395fbe7
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe von Exchange-Verwaltungsshell-Cmdlets ein Tool erstellen, das eine Liste von Exchange-Postfachbenutzern zurückgibt.
-ms.openlocfilehash: 6f64330a11e372bffbea2fcd88bcfa0231ec0f28
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: e9493571e98760e5a11674db9a552111c1ec29b2
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757140"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354001"
 ---
 # <a name="get-a-list-of-mail-users-by-using-the-exchange-management-shell"></a>Abrufen einer Liste von e-Mail-Benutzer mithilfe der Exchange-Verwaltungsshell
 
@@ -53,21 +53,21 @@ Die Methode zum Herstellen einer Verbindung mit einem Remoterunspace zur Verwend
   
 |**Authentifizierungsmethode**|**Betrifft**|**URI**|
 |:-----|:-----|:-----|
-|[Verbinden Sie mit einer remote-Runspace auf Exchange Online mithilfe von Standardauthentifizierung](#bk_basic) <br/> |Exchange Online-Server  <br/> |`https://outlook.office365.com/PowerShell-LiveID`<br/><br/>`https://<server>/PowerShell-LiveID`  <br/> |
-|[Verbinden Sie mit einer remote-Runspace mithilfe von Zertifikatauthentifizierung](#bk_cert) <br/> |Exchange Online- und Exchange lokal-Server  <br/> |`https://outlook.office365.com/PowerShell`<br/><br/>`https://<server>/PowerShell`<br/><br/>`http://<server>/PowerShell`  <br/> |
-|[Verbinden Sie mit einer remote-Runspace auf einem Exchange-Server mithilfe von Kerberos-Authentifizierung](#bk_Kerberos) <br/> |Exchange Online- und Exchange lokal-Server  <br/> |`https://<server>/PowerShell`<br/><br/>`http://<server>/PowerShell`  <br/> |
+|[Herstellen einer Verbindung mit einem Remoterunspace in Exchange Online mithilfe der Standardauthentifizierung](#bk_basic) <br/> |Exchange Online-Server  <br/> |`https://outlook.office365.com/PowerShell-LiveID`<br/><br/>`https://<server>/PowerShell-LiveID`  <br/> |
+|[Herstellen einer Verbindung mit einem Remoterunspace mithilfe der Zertifikatauthentifizierung](#bk_cert) <br/> |Exchange Online- und Exchange lokal-Server  <br/> |`https://outlook.office365.com/PowerShell`<br/><br/>`https://<server>/PowerShell`<br/><br/>`http://<server>/PowerShell`  <br/> |
+|[Herstellen einer Verbindung mit einem Remoterunspace auf einem Exchange-Server mithilfe der Kerberos-Authentifizierung](#bk_Kerberos) <br/> |Exchange Online- und Exchange lokal-Server  <br/> |`https://<server>/PowerShell`<br/><br/>`http://<server>/PowerShell`  <br/> |
 
 <a name="bk_basic"> </a>
 
 ### <a name="connect-to-a-remote-runspace-on-exchange-online-by-using-basic-authentication"></a>Herstellen einer Verbindung mit einem Remoterunspace in Exchange Online mithilfe der Standardauthentifizierung
 
-Im folgenden Codebeispiel wird definiert die **GetUsersUsingBasicAuth** -Methode, die ein Exchange-Verwaltungsshell-Runspace auf einem Remoteserver Exchange Online erstellt, mithilfe der Standardauthentifizierung. Anschließend ruft die Methode die **GetUserInformation** -Methode, wie im Abschnitt [Abrufen einer Liste von Postfachbenutzern aus einer remote-Runspace](#bk_remote), definiert, um eine Liste der Benutzer auf dem Remoteserver zurückzugeben.
+Im folgenden Codebeispiel wird die **GetUsersUsingBasicAuth**-Methode definiert, die unter Verwendung der Standardauthentifizierung einen Exchange-Verwaltungsshell-Runspace auf einem Exchange Online-Remoteserver erstellt. Anschließend ruft die Methode die **GetUserInformation**-Methode auf, wie im Abschnitt [Abrufen einer Liste von Postfachbenutzern aus einem Remoterunspace](#bk_remote) definiert, um eine Liste der Benutzer auf dem Remoteserver zurückzugeben.
   
 This method requires the following parameters:
   
--  **liveIDConnectionUri** &ndash; Eine Zeichenfolge, die den URI des Exchange Online-Servers enthält, die die Anwendung zu authentifizieren. Wenn Exchange Online in Office 365 ausgeführt wird, ist der URI https://outlook.office365.com/PowerShell-LiveID; Andernfalls ist der URI https://\<Servername\>/PowerShell-LiveID. 
+-  **liveIDConnectionUri** &ndash; Eine Zeichenfolge, die den URI des Exchange Online-Servers enthält, die die Anwendung zu authentifizieren. Wenn Exchange Online in Office 365 ausgeführt wird, ist der URI `https://outlook.office365.com/PowerShell-LiveID`; Andernfalls ist der URI `https://<servername>/PowerShell-LiveID`. 
     
--  **schemaUri** &ndash; Eine Zeichenfolge, die den URI des Schemadokuments enthält, die das Exchange-Verwaltungsshell-Schema definiert. Das Schema-URI ist http://schemas.microsoft.com/powershell/Microsoft.Exchange. 
+-  **schemaUri** &ndash; Eine Zeichenfolge, die den URI des Schemadokuments enthält, die das Exchange-Verwaltungsshell-Schema definiert. Das Schema-URI ist `http://schemas.microsoft.com/powershell/Microsoft.Exchange`. 
     
 -  **Anmeldeinformationen** &ndash; Ein [PSCredential](http://msdn.microsoft.com/en-us/library/system.management.automation.pscredential%28VS.85%29.aspx) -Objekt, das die Anmeldeinformationen des Benutzers enthält, die die Anwendung ausgeführt wird. 
     
@@ -107,7 +107,7 @@ public Collection<PSObject> GetUsersUsingBasicAuth(
 
 ### <a name="connect-to-a-remote-runspace-by-using-certificate-authentication"></a>Herstellen einer Verbindung mit einem Remoterunspace mithilfe der Zertifikatauthentifizierung
 
-Im folgenden Codebeispiel wird definiert die **GetUsersUsingCertificate** -Methode, die ein Exchange-Verwaltungsshell-Runspace auf einem Remoteserver erstellt, mit einem Zertifikat. Anschließend ruft die Methode die **GetUserInformation** -Methode, wie im Abschnitt [Abrufen einer Liste von Postfachbenutzern aus einer remote-Runspace](#bk_remote), definiert, um eine Liste der Benutzer auf dem Remoteserver zurückzugeben.
+Im folgenden Codebeispiel wird die **GetUsersUsingCertificate**-Methode definiert, die unter Verwendung einer Zertifikatauthentifizierung einen Exchange-Verwaltungsshell-Runspace auf einem Remoteserver erstellt. Anschließend ruft die Methode die **GetUserInformation**-Methode auf, wie im Abschnitt [Abrufen einer Liste von Postfachbenutzern aus einem Remoterunspace](#bk_remote) definiert, um eine Liste der Benutzer auf dem Remoteserver zurückzugeben.
   
 This method requires the following parameters:
   
@@ -160,7 +160,7 @@ public Collection<PSObject> GetUsersUsingCertificate(
 
 ### <a name="connect-to-a-remote-runspace-on-an-exchange-server-by-using-kerberos-authentication"></a>Herstellen einer Verbindung mit einem Remoterunspace auf einem Exchange-Server mithilfe der Kerberos-Authentifizierung
 
-Im folgenden Codebeispiel wird definiert die **GetUsersUsingKerberos** -Methode, die ein Exchange-Verwaltungsshell-Runspace auf einem Remoteserver erstellt, mithilfe der Kerberos-Authentifizierung. Anschließend ruft die Methode die **GetUserInformation** -Methode, wie im Abschnitt [Abrufen einer Liste von Postfachbenutzern aus einer remote-Runspace](#bk_remote), definiert, um eine Liste der Benutzer auf dem Remoteserver zurückzugeben.
+Im folgenden Codebeispiel wird die **GetUsersUsingKerberos**-Methode definiert, die unter Verwendung der Kerberos-Authentifizierung einen Exchange-Verwaltungsshell-Runspace auf einem Remoteserver erstellt. Anschließend ruft die Methode die **GetUserInformation**-Methode auf, wie im Abschnitt [Abrufen einer Liste von Postfachbenutzern aus einem Remoterunspace](#bk_remote) definiert, um eine Liste der Benutzer auf dem Remoteserver zurückzugeben.
   
 This method requires the following parameters:
   
@@ -253,7 +253,7 @@ Die **GetUserInformation** -Methode wird nicht mehr als _Count_ Postfachbenutzer
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen von Exchange-Verwaltungsshell-tools](create-exchange-management-shell-tools.md)   
+- [Erstellen von Exchange-Verwaltungsshell-Tools](create-exchange-management-shell-tools.md)   
 - [Verwenden Sie die Exchange-Verwaltungsshell-Cmdlet-Antwort](how-to-use-the-exchange-management-shell-cmdlet-response.md)
     
 

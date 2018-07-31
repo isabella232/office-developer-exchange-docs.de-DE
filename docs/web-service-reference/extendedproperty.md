@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: f9701409-b620-4afe-b9ee-4c1e95507af7
 description: Das ExtendedProperty-Element identifiziert extended MAPI-Eigenschaften für Ordner und Elemente.
-ms.openlocfilehash: 6a0aecc732ef634c2258127fca89b19461e25762
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 9a6c44e953cab4900e4b75eb42bdf4d8633e58f9
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758351"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353728"
 ---
 # <a name="extendedproperty"></a>ExtendedProperty
 
@@ -30,7 +30,15 @@ Das **ExtendedProperty** -Element identifiziert extended MAPI-Eigenschaften für
 </ExtendedProperty>
 ```
 
- **ExtendedPropertyType**
+```xml
+<ExtendedProperty>
+   <ExtendedFieldURI/>
+   <Value/>
+</ExtendedProperty>
+```
+
+**ExtendedPropertyType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -65,7 +73,7 @@ Keine.
 |[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner, der in erster Linie Kalenderelemente enthält.  <br/> |
 |[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Kontakteordner in einem Postfach an.  <br/> |
 |[Folder](folder.md) <br/> |Stellt einen Ordner zu erstellen, abrufen, suchen, synchronisieren oder zu aktualisieren.  <br/> |
-|["SearchFolder"](searchfolder.md) <br/> |Stellt einen Suchordner, der in einem Postfach enthalten ist.  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner, der in einem Postfach enthalten ist.  <br/> |
 |[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner, der in einem Postfach enthalten ist.  <br/> |
    
 ## <a name="remarks"></a>Hinweise
@@ -82,8 +90,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
-
-
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

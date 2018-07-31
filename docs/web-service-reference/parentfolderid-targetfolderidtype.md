@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 0e3e6e5f-06d0-499b-8ca4-d36036521658
 description: Das ParentFolderId-Element identifiziert den Ordner in der erstellt wird, eines neuen Ordners oder den Ordner für den Vorgang FindConversation suchen.
-ms.openlocfilehash: 61072e1dd3321beb5f3b76d9accf20530b443796
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 8e80b9b342274a8b2004838ebd16f8425a2d3fa3
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830686"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353826"
 ---
 # <a name="parentfolderid-targetfolderidtype"></a>ParentFolderId (TargetFolderIdType)
 
@@ -26,6 +26,12 @@ Das **ParentFolderId** -Element identifiziert den Ordner in der erstellt wird, e
 ```xml
 <ParentFolderId>
    <DistinguishedFolderId/>
+</ParentFolderId>
+```
+
+```xml
+<ParentFolderId>
+   <FolderId/> 
 </ParentFolderId>
 ```
 
@@ -76,7 +82,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
    
 ## <a name="see-also"></a>Siehe auch
 
-- [CreateFolder Operation](createfolder-operation.md)
-- [FindConversation Operation](findconversation-operation.md)
+- [CreateFolder-Vorgang](createfolder-operation.md)
+- [FindConversation-Vorgang](findconversation-operation.md)
 - [Erstellen von Ordnern (Exchange Web Services)](http://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
 

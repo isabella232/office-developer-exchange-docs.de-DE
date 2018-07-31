@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 57c6ff23-5c2c-42ee-824b-5a1b6dafab8c
 description: Hier finden Sie Informationen über die GetUserRetentionPolicyTags EWS Vorgang.
-ms.openlocfilehash: 2b1267ce6822c7bad05ad2ef88547ba75c632ab0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: faf3553c5dd426b522659029bda6819c55f2708d
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829700"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353231"
 ---
 # <a name="getuserretentionpolicytags-operation"></a>GetUserRetentionPolicyTags-Vorgang
 
@@ -169,7 +169,7 @@ Die Antwort SOAP-Text enthält die folgenden Elemente:
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-- [Retentionid vom](retentionid.md)
+- [RetentionId](retentionid.md)
     
 - [RetentionPeriod](retentionperiod.md)
     
@@ -189,9 +189,3 @@ Die Antwort SOAP-Text enthält die folgenden Elemente:
 
 Fehlercodes, die für EWS generisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
-## <a name="see-also"></a>Siehe auch
-
-
-
-[Aufbewahrungsrichtlinien in Exchange-Webdienste](http://msdn.microsoft.com/library/a132872f-0228-4bcb-aac2-bf64fb07e58e%28Office.15%29.aspx)
-

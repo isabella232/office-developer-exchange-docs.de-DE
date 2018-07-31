@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 3893be6a-49a7-49f6-bf53-c7f819ec3f87
 description: Das DeleteItemField-Element stellt einen Vorgang zum Löschen einer bestimmten Eigenschaft aus einem Element während eines Anrufs UpdateItem dar.
-ms.openlocfilehash: 2388bd10379211a31890b7c4f27920431ce444c8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 571227eece8f717c1bf5da27cfab8ae50dfe3572
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757928"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353882"
 ---
 # <a name="deleteitemfield"></a>DeleteItemField
 
@@ -35,7 +35,20 @@ Das **DeleteItemField** -Element stellt einen Vorgang zum Löschen einer bestimm
 </DeleteItemField>
 ```
 
- **DeleteItemFieldType**
+```xml
+<DeleteItemField>
+   <IndexedFieldURI/> 
+</DeleteItemField>
+```
+
+```xml
+<DeleteItemField>
+   <ExtendedFieldURI/>
+</DeleteItemField>
+```
+
+**DeleteItemFieldType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -56,7 +69,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Updates (Element)](updates-item.md) <br/> |Enthält eine Reihe von Elementen, definieren anfügen, festlegen und Löschen von Änderungen an Elementeigenschaften.  <br/><br/>Es folgt der XPath-Ausdruck, der dieses Element:<br/>`/UpdateItem/ItemChanges/ItemChange[i]/Updates` <br/> |
+|[Updates (Element)](updates-item.md) <br/> |Enthält eine Reihe von Elementen, definieren anfügen, festlegen und Löschen von Änderungen an Elementeigenschaften.  <br/><br/>Für dieses Element wird folgender XPath-Ausdruck verwendet: <br/>`/UpdateItem/ItemChanges/ItemChange[i]/Updates` <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
@@ -73,5 +86,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
    
 ## <a name="see-also"></a>Siehe auch
 
-- [UpdateItem Operation](updateitem-operation.md)
+- [UpdateItem-Vorgang](updateitem-operation.md)
 

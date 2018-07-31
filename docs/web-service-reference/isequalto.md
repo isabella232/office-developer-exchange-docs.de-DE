@@ -1,5 +1,5 @@
 ---
-title: "\"IsEqualTo\""
+title: IsEqualTo
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,14 +12,14 @@ api_type:
 - schema
 ms.assetid: 48e7e067-049c-4184-8026-071e6f558e8a
 description: Das Element "IsEqualTo" stellt einen Search-Ausdruck, der mit entweder einen konstanten Wert einer Eigenschaft oder eine andere Eigenschaft vergleicht und wird zu True ausgewertet, falls diese gleich sind.
-ms.openlocfilehash: a7a7deed79c271be74bb2ff16dd86605d468721b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 733032819e6875fa878c1cd631d173a1c48ecdfe
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830013"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353161"
 ---
-# <a name="isequalto"></a>"IsEqualTo"
+# <a name="isequalto"></a>IsEqualTo
 
 Das Element **"IsEqualTo"** stellt einen Search-Ausdruck, der mit entweder einen konstanten Wert einer Eigenschaft oder eine andere Eigenschaft vergleicht und wird zu True ausgewertet, falls diese gleich sind. 
   
@@ -30,7 +30,22 @@ Das Element **"IsEqualTo"** stellt einen Search-Ausdruck, der mit entweder einen
 </IsEqualTo>
 ```
 
- **IsEqualToType**
+```xml
+<IsEqualTo>
+   <ExtendedFieldURI/>
+   <FieldURIOrConstant/>
+</IsEqualTo>
+```
+
+```xml
+<IsEqualTo>
+   <IndexedFieldURI/> 
+   <FieldURIOrConstant/>
+</IsEqualTo>
+```
+
+**IsEqualToType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -73,8 +88,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
-
-
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

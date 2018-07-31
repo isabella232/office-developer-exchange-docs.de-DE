@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 476d059d-c243-43e9-b475-319fc413ade2
 description: Das Contains-Element stellt einen Search-Ausdruck, der bestimmt, ob eine bestimmte Eigenschaft den angegebenen Konstante String-Wert enthält.
-ms.openlocfilehash: 083efdf32cd32bea6964361b5b558480aa937280
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: b25b69aadf2c331527a17ad81ed46f61aa7b93c2
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757642"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354288"
 ---
 # <a name="contains"></a>Enthält
 
@@ -30,7 +30,23 @@ Das **Contains** -Element stellt einen Search-Ausdruck, der bestimmt, ob eine be
 </Contains>
 ```
 
- **ContainsExpressionType**
+```xml
+<Contains ContainmentMode="" ContainmentComparison="">
+   <ExtendedFieldURI/>
+   <Constant/>
+</Contains>
+```
+
+```xml
+<Contains ContainmentMode="" ContainmentComparison="">
+   <IndexedFieldURI/>
+   <Constant/>
+</Contains>
+```
+
+
+**ContainsExpressionType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -99,8 +115,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
-
-
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

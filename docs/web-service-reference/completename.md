@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 22d30d1f-a84d-48bb-ad8f-ce13f8e76604
 description: Das Element CompleteName stellt den vollständigen Namen eines Kontakts.
-ms.openlocfilehash: 1f6c9ba68fe941f848d0e250a39aea6894fca61e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: bca6f7e0eb915841673d00b5485da2f0f9794e80
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757580"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354260"
 ---
 # <a name="completename"></a>CompleteName
 
@@ -52,9 +52,9 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Title](title.md) <br/> |Stellt den Titel eines Kontakts an.  <br/> |
-|[Vorname](firstname.md) <br/> |Stellt den Vornamen des Kontakts an.  <br/> |
+|[FirstName](firstname.md) <br/> |Stellt den Vornamen des Kontakts an.  <br/> |
 |[MiddleName](middlename.md) <br/> |Stellt den Vornamen eines Kontakts an.  <br/> |
-|[Nachname](lastname.md) <br/> |Stellt den Nachnamen eines Kontakts an.  <br/> |
+|[LastName](lastname.md) <br/> |Stellt den Nachnamen eines Kontakts an.  <br/> |
 |[Suffix](suffix.md) <br/> |Stellt ein Suffix für den Namen eines Kontakts dar.  <br/> |
 |[Initialen](initials.md) <br/> |Stellt die Initialen eines Kontakts an.  <br/> |
 |[FullName](fullname.md) <br/> |Stellt den vollständigen Namen eines Kontakts an.  <br/> |
@@ -70,7 +70,7 @@ Keine.
    
 ## <a name="remarks"></a>Hinweise
 
-Die [CompleteName](completename.md) -Eigenschaft ist Teil des [Standard](https://msdn.microsoft.com/library/ExchangeWebServices.DefaultShapeNamesType.Default.aspx) -Shapes. In der ursprünglich freigegebenen Version von Microsoft Exchange Server 2007 wird die [CompleteName](completename.md) -Eigenschaft durch den [GetItem Operation](getitem-operation.md), aber nicht die [FindItem Vorgang](finditem-operation.md)zurückgegeben. Beginnend mit Exchange Server 2007 Service Pack 1 (SP1), gibt die [FindItem Vorgang](finditem-operation.md) auch die [CompleteName](completename.md) -Eigenschaft mit dem [Standard](https://msdn.microsoft.com/library/ExchangeWebServices.DefaultShapeNamesType.Default.aspx) -Shape zurück. Diese Änderung wirkt sich nicht auf das Schema aus. 
+Die CompleteName-Eigenschaft ist Teil des [Standard](https://docs.microsoft.com/en-us/dotnet/api/exchangewebservices.defaultshapenamestype?view=exchange-ews-proxy) -Shapes. In der ursprünglich freigegebenen Version von Microsoft Exchange Server 2007 wird die CompleteName-Eigenschaft durch den [GetItem Operation](getitem-operation.md), aber nicht die [FindItem Vorgang](finditem-operation.md)zurückgegeben. Beginnend mit Exchange Server 2007 Service Pack 1 (SP1), gibt die [FindItem Vorgang](finditem-operation.md) auch die CompleteName-Eigenschaft mit dem [Standard](https://docs.microsoft.com/en-us/dotnet/api/exchangewebservices.defaultshapenamestype?view=exchange-ews-proxy) -Shape zurück. Diese Änderung wirkt sich nicht auf das Schema aus. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -85,17 +85,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
    
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[CompleteNameType](https://msdn.microsoft.com/library/ExchangeWebServices.CompleteNameType.aspx)
-  
-[CompleteName](https://msdn.microsoft.com/library/ExchangeWebServices.ContactItemType.CompleteName.aspx)
-  
-[contactsCompleteName](https://msdn.microsoft.com/library/ExchangeWebServices.UnindexedFieldURIType.contactsCompleteName.aspx)
-
-
+- [CompleteNameType](https://msdn.microsoft.com/library/ExchangeWebServices.CompleteNameType.aspx)
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
-
-
-[Creating Contacts (Exchange Web Services)](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
+- [Creating Contacts (Exchange Web Services)](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
 

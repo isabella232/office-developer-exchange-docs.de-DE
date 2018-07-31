@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0c700af8-2792-4d3f-8571-8860e0550d8e
 description: Hier finden Sie Informationen darüber, wie die Transport-Agent Pipeline und Rolle Serverarchitektur in Exchange 2013 beeinflussen Transport-Agent-Entwicklung und die Klassen, die Sie verwenden können, um Transport-Agents zu entwickeln.
-ms.openlocfilehash: 9ddee0d68c9104357f84322b2cce7c5f2576d871
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 6f7a03e16b260117c6ee27b86ec0e55b5346e301
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757205"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353707"
 ---
 # <a name="transport-agent-concepts-in-exchange-2013"></a>Transport-Agent Konzepte in Exchange 2013
 
@@ -100,7 +100,7 @@ Die folgende Tabelle enthält die Klassen, von denen für jeden Agent abgeleitet
 |Agenttyp  <br/> |Factory-Basisklasse  <br/> |Agent-Basisklasse  <br/> |
 |SMTP-Empfang  <br/> |[SmtpReceiveAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx) <br/> |[SmtpReceiveAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.aspx) <br/> |
 |Routing  <br/> |[RoutingAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.RoutingAgentFactory.aspx) <br/> |[RoutingAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.RoutingAgent.aspx) <br/> |
-|Übermittlung  <br/> |[DeliveryAgentFactory\<Manager\>](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgentFactory`1.aspx) <br/> |[DeliveryAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgent.aspx) <br/> |
+|Übermittlung  <br/> |[DeliveryAgentFactory\<Manager\>](https://msdn.microsoft.com/en-us/library/dd877550(v=exchg.150).aspx) <br/> |[DeliveryAgent](https://msdn.microsoft.com/en-us/library/microsoft.exchange.data.transport.delivery.deliveryagent(v=exchg.150).aspx) <br/> |
    
 Diese Factory und Agent Basisklassen stellen Eigenschaften und Methoden, mit denen Sie Zugriff auf Transport-Ereignisse und Nachrichten. Implementieren Sie Klassen in der Agents, die von diesen Klassen erben. Überschreiben Sie die **Hilfe von CreateAgent** -Methode in der Agent-Klasse abgeleitet Zuordnungsinstanz, damit eine neue Instanz des Agent-Klasse zurückgegeben. 
   

@@ -1,19 +1,19 @@
 ---
-title: Mithilfe von AutoErmittlung Verbindungspunkte suchen
+title: Verwenden der AutoErmittlung für die Suche nach Verbindungspunkten
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 03896542-549b-4c45-973c-98f9025ea26c
 description: Erfahren Sie, wie Sie den AutoErmittlungsdienst verwenden, um die Clientanwendung an den richtigen Exchange-Server zu leiten.
-ms.openlocfilehash: 653fcd1c094c23c3e89e903b7194b96720802b51
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: eb3fb3664e5789638c097a43cf48f757bb0713ae
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757011"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353980"
 ---
-# <a name="use-autodiscover-to-find-connection-points"></a>Mithilfe von AutoErmittlung Verbindungspunkte suchen
+# <a name="use-autodiscover-to-find-connection-points"></a>Verwenden der AutoErmittlung für die Suche nach Verbindungspunkten
 
 Erfahren Sie, wie Sie den AutoErmittlungsdienst verwenden, um die Clientanwendung an den richtigen Exchange-Server zu leiten.
   
@@ -25,24 +25,23 @@ Informationen zum e-Mail-Adresse Konfigurationseinstellungen erhalten möchten f
 > Der Prozess für die Suche nach den richtigen Endpunkt ist Teil der Anforderung für Benutzer oder eine domäneneinstellungen. Der AutoErmittlungsdienst verwendet eine Reihe von Antworten umleiten, um die Clientanwendung auf den richtigen Endpunkt für eine e-Mail-Adresse zu senden. 
   
 Eines der folgenden Exchange-Entwicklungstechnologien können Sie den AutoErmittlungsdienst zugreifen:
-  
-> [!NOTE]
-> Weitere Informationen über diese Exchange-Entwicklungstechnologien finden Sie unter [Durchsuchen die EWS Managed API, EWS, und Web services im Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md). 
-  
+
 - Die verwaltete API der Exchange-Webdienste (Exchange Web Services, EWS)
     
 - EWS
     
-    Bei Verwendung von EWS können Sie die folgenden Methoden zum Abrufen von Benutzereinstellungen verwenden:
+Bei Verwendung von EWS können Sie die folgenden Methoden zum Abrufen von Benutzereinstellungen verwenden:
     
-  - Den SOAP-basierten AutoErmittlungsdienst
+- Den SOAP-basierten AutoErmittlungsdienst
     
-  - Den XML-AutoErmittlungsdienst (POX)
+- Den XML-AutoErmittlungsdienst (POX)
     
-  - Einen automatisch vom SOAP- oder XML-AutoErmittlungdienst generierten Proxy
+- Einen automatisch vom SOAP- oder XML-AutoErmittlungdienst generierten Proxy
     
-    Weitere Informationen zu diesen Methoden finden Sie unter [AutoErmittlung für Exchange](autodiscover-for-exchange.md).
-    
+Weitere Informationen zu diesen Methoden finden Sie unter [AutoErmittlung für Exchange](autodiscover-for-exchange.md).
+
+Weitere Informationen über diese Exchange-Entwicklungstechnologien finden Sie unter [Durchsuchen die EWS Managed API, EWS, und Web services im Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md). 
+
 Die verwaltete EWS-API stellt eine objektbasierte Schnittstelle für das Abrufen von Benutzereinstellungen bereit. Wenn die Clientanwendung verwalteten Code verwendet, wird empfohlen, die verwaltete EWS-API zu verwenden. Die verwaltete EWS-API-Schnittstelle ist besser für ein einfaches Objektmodell optimiert als der typische automatisch generierte Webdienstproxy. 
   
 Bei Verwendung von EWS empfehlen wir die Verwendung des SOAP-AutoErmittlungsdiensts, da dieser eine umfassendere Sammlung von Funktionen als der POX-AutoErmittlungsdienst unterstützt.
@@ -131,7 +130,8 @@ Das folgende Beispiel zeigt eine XML-Anforderung, die mit dem AutoErmittlungsdie
 
 Der AutoErmittlungsdienst reagiert mit einem von zwei Umleitungsantworten: eine HTTP 302-Umleitung oder SOAP-Antwort-Umleitung. Wenn die Antwort vom Exchange-Server eine HTTP 302-Umleitung ist, sollte die Clientanwendung überprüfen, ob die Umleitung Adresse zulässig ist, und führen Sie dann die Umleitung Antwort.
   
-> [! Sicherheitshinweis] Kriterien für die Validierung einer Antwort Umleitung finden Sie unter [AutoErmittlung für Exchange](autodiscover-for-exchange.md). 
+> [!IMPORTANT]
+> Kriterien für eine Antwort Umleitung zu überprüfen finden Sie unter [AutoErmittlung für Exchange](autodiscover-for-exchange.md). 
   
 Wenn der AutoErmittlungsdienst eine Umleitung Antwort vom [ErrorCode](http://msdn.microsoft.com/library/0bb00cee-c66b-4f34-b99d-355458f5e83b%28Office.15%29.aspx) -Element des **UserResponse** -Elements angegeben zurückgibt sollten Ihre Client-Anwendung das **RedirectTarget** -Element verwenden, um eine neue Anforderung Einstellungen zu erstellen, die ist in der Antwort Umleitung angegebenen Server gesendet. Das folgende Beispiel zeigt eine Umleitung Antwort vom Server. 
   
@@ -254,19 +254,14 @@ Wenn die Client-Anwendung an den richtigen Endpunkt für den AutoErmittlungsdien
 
 Suchen den Endpunkt gemäß der AutoErmittlung-Prozesses gibt die angeforderte Domäne oder benutzereinstellungen zurück. Informationen zum Treffen einer Anforderung für spezielle Einstellungen finden Sie unter den folgenden Artikeln:
   
-- [Abrufen von domäneneinstellungen aus einem Exchange-server](how-to-get-domain-settings-from-an-exchange-server.md)
-    
+- [Abrufen von domäneneinstellungen aus einem Exchange-server](how-to-get-domain-settings-from-an-exchange-server.md)    
 - [Abrufen von benutzereinstellungen aus Exchange mithilfe der AutoErmittlung](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
     
 ## <a name="see-also"></a>Siehe auch
 
-
-- [Einrichten Ihrer EWS-Anwendung](setting-up-your-ews-application.md)
-    
-- [AutoErmittlung für Exchange](autodiscover-for-exchange.md)
-    
-- [AutoErmittlung Webdienstverweis für Exchange](http://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)
-    
+- [Einrichten Ihrer EWS-Anwendung](setting-up-your-ews-application.md)   
+- [AutoErmittlung für Exchange](autodiscover-for-exchange.md)    
+- [AutoErmittlung Webdienstverweis für Exchange](http://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)    
 - [EWS-Referenz für Exchange](http://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)
     
 

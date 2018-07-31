@@ -1,5 +1,5 @@
 ---
-title: Schließt
+title: Excludes
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,14 +12,14 @@ api_type:
 - schema
 ms.assetid: bbaeddf6-9a67-4ee0-af99-7a7a5bbdc0e1
 description: Das Element ausgeschlossen führt eine bitweise Maske der angegebenen Eigenschaft und einen angegebenen Wert.
-ms.openlocfilehash: 73e4eb782a4f54c113ea9a9b67fcf185a9028153
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: febd4171210319d8f7e475f9879c5f895f508713
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758307"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354386"
 ---
-# <a name="excludes"></a>Schließt
+# <a name="excludes"></a>Excludes
 
 Das Element **ausgeschlossen** führt eine bitweise Maske der angegebenen Eigenschaft und einen angegebenen Wert. 
   
@@ -30,7 +30,22 @@ Das Element **ausgeschlossen** führt eine bitweise Maske der angegebenen Eigens
 </Excludes>
 ```
 
- **ExcludesType**
+```xml
+<Excludes>
+   <ExtendedFieldURI/> 
+   <Bitmask/>
+</Excludes>
+```
+
+```xml
+<Excludes>
+   <IndexedFieldURI/> 
+   <Bitmask/>
+</Excludes>
+```
+
+**ExcludesType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -59,13 +74,13 @@ Keine.
    
 ## <a name="remarks"></a>Hinweise
 
- **Ausgeschlossen** lösen auf **true fest,** Wenn eine AND-Operation für die folgenden auf 0 aufgelöst wird: 
+**Ausgeschlossen** lösen auf **true fest,** Wenn eine AND-Operation für die folgenden auf 0 aufgelöst wird: 
   
 1. Die bitweise Wert für die Eigenschaft
     
 2. Der Bitmaskenwert für die-Eigenschaft
     
- **Ausgeschlossen** kann nur auf eine Eigenschaft angewendet werden, die einen ganzzahligen Wert hat. Wenn der Eigenschaftentyp etwas anderes als eine ganze Zahl ist, wird ein Fehlercode des **ErrorUnsupportedPathForQuery** in der Antwort zurückgegeben. 
+**Ausgeschlossen** kann nur auf eine Eigenschaft angewendet werden, die einen ganzzahligen Wert hat. Wenn der Eigenschaftentyp etwas anderes als eine ganze Zahl ist, wird ein Fehlercode des **ErrorUnsupportedPathForQuery** in der Antwort zurückgegeben. 
   
 Sie können den umgekehrten Vorgang durch Aufrufen von Not(Excludes) ausführen.
   
@@ -81,8 +96,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
-
-
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

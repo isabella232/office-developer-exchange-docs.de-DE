@@ -11,12 +11,12 @@ api_type:
 - schema
 ms.assetid: 83afea8a-c716-41df-9eb2-e1000357afb6
 description: Hier finden Sie Verweis Inhalte für den Webdienst Unified Messaging (UM) in Exchange.
-ms.openlocfilehash: 12ee91c5a8b7e1ba23b937f142a9ae2835697fef
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 9e124f504ecee517edc51610696f06729904d75f
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839292"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354274"
 ---
 # <a name="unified-messaging-web-service-reference-for-exchange"></a>Unified Messaging-webdienstreferenz für Exchange
 
@@ -27,15 +27,16 @@ Der Webdienst für Unified Messaging (UM) bietet einen Erweiterungspunkt, mit de
 Den AutoErmittlungsdienst können Sie die URL auf die Webdienst-Endpunkt UM abzurufen. Weitere Informationen zur AutoErmittlung finden Sie unter [AutoErmittlung für Exchange](../exchange-web-services/autodiscover-for-exchange.md).
   
 > [!NOTE]
->  Exchange beginnend mit Exchange 2010-Versionen, sollten Sie die Unified Messaging-Vorgänge verwenden, die in der [Exchange-Webdienste (EWS)](http://msdn.microsoft.com/library/60285497-0c4e-4e51-84e1-34dd6d89a5d8%28Office.15%29.aspx) anstelle des UM-Webdiensts aus den folgenden Gründen zur Verfügung stehen: > des EWS-basierte UM Features haben Erstklassige Unterstützung in die EWS Managed API. > In Exchange beginnend mit Exchange 2010-Versionen werden neue UM-Features für EWS jedoch nicht für den Unified Messaging-Webdienst hinzugefügt. 
+>  Exchange beginnend mit Exchange 2010-Versionen wird empfohlen, dass Sie die Unified Messaging-Vorgänge verwenden, die in der [Exchange-Webdienste (EWS)](http://msdn.microsoft.com/library/60285497-0c4e-4e51-84e1-34dd6d89a5d8%28Office.15%29.aspx) anstelle des UM-Webdiensts aus den folgenden Gründen verfügbar sind: 
+> - Der EWS-basierte UM Features haben erstklassige Unterstützung in die EWS Managed API. 
+> - In Versionen von Exchange, beginnend mit Exchange 2010 werden neue UM-Features für EWS jedoch nicht für den Unified Messaging-Webdienst hinzugefügt. 
   
 Des UM-Webdiensts muss eine explizite Schema nicht.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 <a name="bk_InThisSection"> </a>
 
-- [Unified Messaging Web Service-Vorgänge für Exchange](unified-messaging-web-service-operations-for-exchange.md)
-    
+- [Unified Messaging Web Service-Vorgänge für Exchange](unified-messaging-web-service-operations-for-exchange.md)   
 - [Unified Messaging Web Service XML-Elemente für Exchange](unified-messaging-web-service-xml-elements-for-exchange.md)
     
 ## <a name="see-also"></a>Siehe auch

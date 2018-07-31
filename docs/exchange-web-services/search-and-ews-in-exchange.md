@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 9fa5b836-857e-401d-9450-51e7dbc69104
 description: Erfahren Sie, wie Sie Elemente im Exchange mithilfe der EWS Managed API oder EWS zu suchen.
-ms.openlocfilehash: da24258ba94b842fa97fff92148620344c939f05
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 1a8ed6be71d88a02c4ef935864ca15888df90a38
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757130"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354057"
 ---
 # <a name="search-and-ews-in-exchange"></a>Suche und EWS in Exchange
 
@@ -115,8 +115,8 @@ Festlegen der Durchlauf für die Ansicht steuert die projekttiefe und den Umfang
 |:-----|:-----|:-----|
 |Flach  <br/> |Elemente und Ordner  <br/> |Flache Suchvorgänge können nur direkte untergeordnete Elemente des Ordners, der durchsucht wird.  <br/> |
 |Tief  <br/> |Elemente (nur bei Suchordnern) und Ordner  <br/> |Tiefe Suchvorgänge rekursiv Suchen der durchsuchte Ordner und Unterordner.  <br/> |
-|Verknüpft ist  <br/> |Items  <br/> |Zugehörige suchen umfassen nur zugeordnete Elemente aus dem Ordner, der durchsucht wird. Zugeordnete Elemente sind ausgeblendete Elemente im Ordner.  <br/> |
-|SoftDeleted  <br/> |Elemente und Ordner  <br/> |Dieses Typs durchqueren ist veraltet. SoftDeleted suchen umfassen nur Elemente in der muss. Die Dumpster wurde durch den [Ordner "wiederherstellbare Elemente"](http://technet.microsoft.com/en-us/library/ee364755%28v=exchg.150%29.aspx(Office.15).aspx) in Exchange Online, Exchange Online als Teil von Office 365 und Exchange beginnend mit Exchange 2010-Versionen ersetzt.  <br/> |
+|Verknüpft ist  <br/> |Elemente  <br/> |Zugehörige suchen umfassen nur zugeordnete Elemente aus dem Ordner, der durchsucht wird. Zugeordnete Elemente sind ausgeblendete Elemente im Ordner.  <br/> |
+|SoftDeleted  <br/> |Elemente und Ordner  <br/> |Dieses Typs durchqueren ist veraltet. SoftDeleted suchen umfassen nur Elemente in der muss. Die Dumpster wurde durch den [Ordner "wiederherstellbare Elemente"](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder) in Exchange Online, Exchange Online als Teil von Office 365 und Exchange beginnend mit Exchange 2010-Versionen ersetzt.  <br/> |
    
 ## <a name="managing-search-results"></a>Verwalten von Suchergebnissen
 <a name="bk_ManageSearchResults"> </a>
@@ -188,10 +188,10 @@ static void CreateSearchFolder(ExchangeService service)
 
 - [Entwickeln von Webdienstclients für Exchange](develop-web-service-clients-for-exchange.md)
     
-- [Ordner "wiederherstellbare Elemente"](http://technet.microsoft.com/en-us/library/ee364755%28v=exchg.150%29.aspx(Office.15).aspx)
+- [Ordner "wiederherstellbare Elemente"](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder)
     
 - [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)
     
-- [Drosselung Richtlinienparameter, die Einfluss auf EWS-Suchvorgänge](ews-throttling-in-exchange.md#bk_ThrottlingSearch)
+- [Einschränkungsrichtlinienparameter mit Auswirkung auf EWS-Suchvorgänge](ews-throttling-in-exchange.md#bk_ThrottlingSearch)
     
 

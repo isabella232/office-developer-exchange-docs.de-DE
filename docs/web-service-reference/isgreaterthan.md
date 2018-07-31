@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: a6e9d462-cfa7-40ec-903e-128c95050352
 description: Das IsGreaterThan-Element stellt einen Search-Ausdruck, der mit entweder einen konstanten Wert einer Eigenschaft oder eine andere Eigenschaft vergleicht und gibt true, wenn die erste Eigenschaft größer ist.
-ms.openlocfilehash: f36ad646e6c2d415d14d4311a9971a56a85a3121
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: dfa7c221bb04e59f1ae12eeb5b9f2e1f09aea3ce
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830031"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353490"
 ---
 # <a name="isgreaterthan"></a>IsGreaterThan
 
@@ -30,7 +30,22 @@ Das **IsGreaterThan** -Element stellt einen Search-Ausdruck, der eine Eigenschaf
 </IsGreaterThan>
 ```
 
- **IsGreaterThanType**
+```xml
+<IsGreaterThan>
+   <IndexedFieldURI/> 
+   <FieldURIOrConstant/>
+</IsGreaterThan>
+```
+
+```xml
+<IsGreaterThan>
+   <ExtendedFieldURI/>
+   <FieldURIOrConstant/>
+</IsGreaterThan>
+```
+
+**IsGreaterThanType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -71,8 +86,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
-
-
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

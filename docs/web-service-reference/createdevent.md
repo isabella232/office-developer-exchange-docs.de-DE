@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: f0e53a53-c352-42a5-8280-cd808b0e961b
 description: Das CreatedEvent-Element stellt ein Ereignis in der eines Elements oder Ordners erstellt wird.
-ms.openlocfilehash: f52516090d0789b4dd9fc1ced824786ce000e885
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 791b8af87c0cc8ae7f07850e3a6fedd9975a251e
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757748"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353175"
 ---
 # <a name="createdevent"></a>CreatedEvent
 
@@ -32,7 +32,17 @@ Das **CreatedEvent** -Element stellt ein Ereignis in der eines Elements oder Ord
 </CreatedEvent>
 ```
 
- **BaseObjectChangedEventType**
+```xml
+<CreatedEvent>
+   <Watermark/>
+   <TimeStamp/>
+   <FolderId/>
+   <ParentFolderId/>
+</CreatedEvent>
+```
+
+**BaseObjectChangedEventType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -45,8 +55,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Wasserzeichen](watermark.md) <br/> |Stellt eine Textmarke Ereignis in der Tabelle der Postfach-Ereignisse dar.  <br/> |
-|[Zeitstempel](timestamp.md) <br/> |Stellt den Zeitstempel der erstellte Elements oder Ordners Postfach-Ereignis.  <br/> |
+|[Watermark](watermark.md) <br/> |Stellt eine Textmarke Ereignis in der Tabelle der Postfach-Ereignisse dar.  <br/> |
+|[TimeStamp](timestamp.md) <br/> |Stellt den Zeitstempel der erstellte Elements oder Ordners Postfach-Ereignis.  <br/> |
 |[FolderId](folderid.md) <br/> |Den Bezeichner des erstellten Ordners darstellt.  <br/> |
 |[ItemId](itemid.md) <br/> |Den Bezeichner, der das erstellte Element darstellt.  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des übergeordneten Ordners der erstellte Element oder des Ordners.  <br/> |
@@ -72,16 +82,9 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
    
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[Vorgang abonnieren](subscribe-operation.md)
-  
-[GetEvents-Vorgang](getevents-operation.md)
-  
-[Vorgang des Kündigens von Abonnements](unsubscribe-operation.md)
-
-
-[Mithilfe von Pullabonnements](http://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
-  
-[Ereignisbenachrichtigungen in Exchange-Webdienste](http://msdn.microsoft.com/library/4fd4b351-d35c-4ccc-9ed9-878932ab9d50%28Office.15%29.aspx)
+- [Vorgang abonnieren](subscribe-operation.md)  
+- [GetEvents-Vorgang](getevents-operation.md)  
+- [Vorgang des Kündigens von Abonnements](unsubscribe-operation.md)
+- [Mithilfe von Pullabonnements](http://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx) 
+- [Ereignisbenachrichtigungen in Exchange-Webdienste](http://msdn.microsoft.com/library/4fd4b351-d35c-4ccc-9ed9-878932ab9d50%28Office.15%29.aspx)
 

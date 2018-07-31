@@ -12,26 +12,22 @@ api_type:
 - schema
 ms.assetid: 4e204446-1c80-44f9-b93b-77ce630a01a5
 description: Das Update-Element identifiziert ein einzelnes Element in den Speicher des lokalen Client aktualisieren.
-ms.openlocfilehash: ef1bd46906152affbe54372472766afc2a6ae8c1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: bf560f18184151a3f17d7016d05cdb725db934ae
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839339"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353630"
 ---
 # <a name="update-itemsync"></a>Update (ItemSync)
 
 **Update** -Elements gibt ein einzelnes Element in den Speicher des lokalen Client aktualisieren. 
   
-[SyncFolderItemsResponse](syncfolderitemsresponse.md)
-  
-[ResponseMessages](responsemessages.md)
-  
-[SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md)
-  
-[Änderungen (Elemente)](changes-items.md)
-  
-[Update (ItemSync)](update-itemsync.md)
+- [SyncFolderItemsResponse](syncfolderitemsresponse.md) 
+- [ResponseMessages](responsemessages.md)  
+- [SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md)  
+- [Änderungen (Elemente)](changes-items.md)  
+- [Update (ItemSync)](update-itemsync.md)
   
 ```xml
 <Update>
@@ -39,7 +35,62 @@ ms.locfileid: "19839339"
 </Update>
 ```
 
- **SyncFolderItemsCreateOrUpdateType**
+```xml
+<Update>
+   <MeetingRequest/>
+</Update>
+```
+
+```xml
+<Update>
+   <MeetingCancellation/>
+</Update>
+```
+
+```xml
+<Update>
+   <Task/>
+</Update>
+```
+
+```xml
+<Update>
+   <CalendarItem/>
+</Update>
+```
+
+```xml
+<Update>
+   <MeetingResponse/>
+</Update>
+```
+
+```xml
+<Update>
+   <Message/>
+</Update>
+```
+
+```xml
+<Update>
+   <DistributionList/>
+</Update>
+```
+
+```xml
+<Update>
+   <MeetingMessage/>
+</Update>
+```
+
+```xml
+<Update>
+   <Contact/> 
+</Update>
+```
+
+**SyncFolderItemsCreateOrUpdateType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -53,7 +104,7 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Item](item.md) <br/> |Stellt ein generisches Exchange-Element zu aktualisieren.  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Stellt eine E-mail-Nachricht Exchange zu aktualisieren.  <br/> |
+|[Meldung](message-ex15websvcsotherref.md) <br/> |Stellt eine E-mail-Nachricht Exchange zu aktualisieren.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element des Exchange-Kalender zu aktualisieren.  <br/> |
 |[Contact](contact.md) <br/> |Stellt ein Exchange-Kontaktelement zu aktualisieren.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste aktualisieren.  <br/> |
@@ -84,10 +135,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
    
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[SyncFolderItems-Vorgang](syncfolderitems-operation.md)
-
-
+- [SyncFolderItems-Vorgang](syncfolderitems-operation.md)
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

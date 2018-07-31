@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: fb2952e2-cbfe-43ac-b746-f071faa7665c
 description: Informationen Sie zum Erstellen, abrufen, aktualisieren oder löschen, indem Sie die EWS Managed API oder EWS in Exchange Batches von Kalenderelementen in einem einzigen Aufruf.
-ms.openlocfilehash: 2c92b492d9b51d0a5ac3140af22e5527e7bf19be
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: e18e74490b536c07e90c64f76f81c98b4eab6024
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757001"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353847"
 ---
 # <a name="process-calendar-items-in-batches-in-exchange"></a>Verarbeiten von Kalenderelementen in Batches in Exchange
 
@@ -26,7 +26,7 @@ Sie können die EWS Managed API verwenden oder EWS Batches von Terminen und Besp
 |Erstellen von Kalenderelementen in batches  <br/> |[CreateItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
 |Abrufen von Kalenderelementen in batches  <br/> |[BindToItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
 |Aktualisieren von Kalenderelementen in batches  <br/> |[UpdateItems](http://msdn.microsoft.com/en-us/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
-|Löschen von Kalenderelementen in Batches  <br/> |[DeleteItems](http://msdn.microsoft.com/en-us/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) <br/> |
+|Löschen von Kalenderelementen in Batches  <br/> |[DeleteItems](http://msdn.microsoft.com/en-us/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
    
 In diesem Artikel erfahren Sie, wie Sie grundlegende Aufgaben für Batches von Kalenderelementen mithilfe des EWS Managed API oder EWS abschließen.
   
@@ -698,7 +698,7 @@ Wenn die **DeleteItems** -Methode der zweites Mal aufgerufen wird, wird keine Au
 ## <a name="delete-calendar-items-in-batches-by-using-ews"></a>Löschen von Kalenderelementen in Batches mithilfe der Exchange-Webdienste
 <a name="bk_deleteews"> </a>
 
-Sie können Kalenderelemente in Batches mit löschen [DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) EWS-Vorgangs, wie im folgenden Codebeispiel dargestellt. Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die EWS Managed API zum [Löschen von Kalenderelementen in Batches](#bk_deleteewsma)verwenden. 
+Sie können Kalenderelemente in Batches mit löschen [DeleteItem](../web-service-reference/deleteitem-operation.md) EWS-Vorgangs, wie im folgenden Codebeispiel dargestellt. Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die EWS Managed API zum [Löschen von Kalenderelementen in Batches](#bk_deleteewsma)verwenden. 
   
 Die Attribute **ItemId** und **ChangeKey** werden zur besseren Lesbarkeit gekürzt. 
   
@@ -844,6 +844,6 @@ Das **ResponseClass** -Attribut wird zum **Erfolg** , wenn das Kalenderelement e
     
 - [Verarbeiten von Kalenderelementen in Batches in Exchange](how-to-process-calendar-items-in-batches-in-exchange.md)
     
-- [Konsequenzen für Batchanforderungen EWS-Einschränkung](ews-throttling-in-exchange.md#bk_ThrottlingBatch)
+- [Auswirkungen von Einschränkungen für EWS-Batchanforderungen](ews-throttling-in-exchange.md#bk_ThrottlingBatch)
     
 

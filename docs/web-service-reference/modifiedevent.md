@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: ca1309f4-2df7-4289-811c-75c3db0e7072
 description: Das ModifiedEvent-Element stellt ein Ereignis in der eines Elements oder Ordners geändert wird.
-ms.openlocfilehash: fb464fb0a270d8ca7d33d40e5425e260970b2f1e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 2e9fb870396d49efb5cdf307a502b4111c2e507e
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830482"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353812"
 ---
 # <a name="modifiedevent"></a>ModifiedEvent
 
@@ -33,7 +33,18 @@ Das **ModifiedEvent** -Element stellt ein Ereignis in der eines Elements oder Or
 </ModifiedEvent>
 ```
 
- **ModifiedEventType**
+```xml
+<ModifiedEvent>
+   <Watermark/>
+   <TimeStamp/>
+   <ItemId/> 
+   <ParentFolderId/>
+   <UnreadCount/>
+</ModifiedEvent>
+```
+
+**ModifiedEventType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -46,8 +57,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Wasserzeichen](watermark.md) <br/> |Stellt eine Textmarke Ereignis in der Tabelle der Postfach-Ereignisse dar.  <br/> |
-|[Zeitstempel](timestamp.md) <br/> |Den Zeitstempel des geänderten Elements oder Ordners Postfach-Ereignisses darstellt.  <br/> |
+|[Watermark](watermark.md) <br/> |Stellt eine Textmarke Ereignis in der Tabelle der Postfach-Ereignisse dar.  <br/> |
+|[TimeStamp](timestamp.md) <br/> |Den Zeitstempel des geänderten Elements oder Ordners Postfach-Ereignisses darstellt.  <br/> |
 |[FolderId](folderid.md) <br/> |Den Bezeichner des geänderten Ordners darstellt.  <br/> |
 |[ItemId](itemid.md) <br/> |Den Bezeichner des geänderten Elements darstellt.  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |Den Bezeichner des übergeordneten Ordners des geänderten Elements oder Ordners darstellt.  <br/> |
@@ -76,11 +87,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
    
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[Vorgang abonnieren](subscribe-operation.md)
-  
-[GetEvents-Vorgang](getevents-operation.md)
-  
-[Vorgang des Kündigens von Abonnements](unsubscribe-operation.md)
+- [Vorgang abonnieren](subscribe-operation.md)  
+- [GetEvents-Vorgang](getevents-operation.md)  
+- [Vorgang des Kündigens von Abonnements](unsubscribe-operation.md)
 

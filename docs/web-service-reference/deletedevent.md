@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: c4565eb4-b537-466c-b1ff-11602533812b
 description: Das DeletedEvent-Element stellt ein Ereignis in der eines Elements oder Ordners gelöscht wird.
-ms.openlocfilehash: f06ca0727916f415c648e876f88bf7eacef5a5ff
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 5ddc909ffc9c74ea6b423610e915d5b9ff9bff43
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757911"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354407"
 ---
 # <a name="deletedevent"></a>DeletedEvent
 
@@ -28,6 +28,15 @@ Das **DeletedEvent** -Element stellt ein Ereignis in der eines Elements oder Ord
    <Watermark/>
    <TimeStamp/>
    <ItemId/>
+   <ParentFolderId/>
+</DeletedEvent>
+```
+
+```xml
+<DeletedEvent>
+   <Watermark/>
+   <TimeStamp/>
+   <FolderId/>
    <ParentFolderId/>
 </DeletedEvent>
 ```
@@ -46,8 +55,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Wasserzeichen](watermark.md) <br/> |Stellt eine Textmarke Ereignis in der Tabelle der Postfach-Ereignisse dar.  <br/> |
-|[Zeitstempel](timestamp.md) <br/> |Den Zeitstempel des ein gelöschtes Postfach-Ereignis Elements oder Ordners darstellt.  <br/> |
+|[Watermark](watermark.md) <br/> |Stellt eine Textmarke Ereignis in der Tabelle der Postfach-Ereignisse dar.  <br/> |
+|[TimeStamp](timestamp.md) <br/> |Den Zeitstempel des ein gelöschtes Postfach-Ereignis Elements oder Ordners darstellt.  <br/> |
 |[FolderId](folderid.md) <br/> |Den Bezeichner des gelöschten Ordners darstellt.  <br/> |
 |[ItemId](itemid.md) <br/> |Den Bezeichner des gelöschten Elements darstellt.  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des übergeordneten Ordners des gelöschten Elements oder Ordners vor dem Löschen.  <br/> |

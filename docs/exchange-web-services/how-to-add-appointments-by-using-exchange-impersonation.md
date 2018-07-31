@@ -1,19 +1,19 @@
 ---
-title: Hinzufügen von Terminen mithilfe der Exchange-Identitätswechsel
+title: Hinzufügen von Terminen mit Exchange-Identitätswechsel
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 78d5e51b-900f-4302-b9a8-fdc9aa4b65a5
 description: Informationen Sie zur Verwendung des Identitätswechsels mit dem EWS Managed API oder EWS in Exchange Benutzerkalendern Termine hinzu.
-ms.openlocfilehash: fe737658b88aca66d8b4c2860245db000888ba17
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: ab10a7d65a5603a84e12d918dd54198927d88b8a
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756881"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353455"
 ---
-# <a name="add-appointments-by-using-exchange-impersonation"></a>Hinzufügen von Terminen mithilfe der Exchange-Identitätswechsel
+# <a name="add-appointments-by-using-exchange-impersonation"></a>Hinzufügen von Terminen mit Exchange-Identitätswechsel
 
 Informationen Sie zur Verwendung des Identitätswechsels mit dem EWS Managed API oder EWS in Exchange Benutzerkalendern Termine hinzu.
   
@@ -193,14 +193,14 @@ Dies ist wiederum den gleichen XML-Code, die zurückgegeben wird, wenn Sie die *
     
 - [ApplicationImpersonation-Rolle](http://technet.microsoft.com/en-us/library/dd776119%28v=exchg.150%29.aspx)
     
-- [Konfigurieren des Identitätswechsels](how-to-configure-impersonation.md)
+- [Konfigurieren eines Identitätswechsels](how-to-configure-impersonation.md)
     
-- [Identifizieren Sie das Konto Identität](how-to-identify-the-account-to-impersonate.md)
+- [Identifizieren des Kontos für Identitätswechsel](how-to-identify-the-account-to-impersonate.md)
     
 - [Erstellen von Terminen und Besprechungen mithilfe von EWS in Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
     
-- [CreateItem-Vorgang (Kalenderelement)](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx)
+- [CreateItem-Vorgang (Kalenderelement)](../web-service-reference/createitem-operation-calendar-item.md)
     
-- [ExchangeService.ImpersonatedUserId-Eigenschaft](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid.aspx.aspx)
+- [ExchangeService.ImpersonatedUserId-Eigenschaft](https://docs.microsoft.com/en-us/dotnet/api/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid?view=exchange-ews-api)
     
 

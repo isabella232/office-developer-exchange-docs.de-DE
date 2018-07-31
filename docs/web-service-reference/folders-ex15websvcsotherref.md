@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 8e71cb44-1df6-444a-add7-0c1363863f65
 description: Das Ordner-Element enthält ein Array von Ordnern, die im Ordner Vorgänge verwendet werden.
-ms.openlocfilehash: e1b9e337f633dbf6fda159c28725d3fb8dcd55a6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 34372f2480825c7a9977eeae8e730c201307f36b
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758512"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353588"
 ---
 # <a name="folders"></a>Ordner
 
@@ -29,7 +29,32 @@ Das **Ordner** -Element enthält ein Array von Ordnern, die im Ordner Vorgänge 
 </Folders>
 ```
 
- **ArrayOfFoldersType** oder **NonEmptyArrayOfFoldersType**
+```xml
+<Folders>
+   <ContactsFolder/> 
+</Folders>
+```
+
+```xml
+<Folders>
+   <TasksFolder/>
+</Folders>
+```
+
+```xml
+<Folders>
+   <CalendarFolder/>
+</Folders>
+```
+
+```xml
+<Folders>
+   <SearchFolder/> 
+</Folders>
+```
+
+**ArrayOfFoldersType** oder **NonEmptyArrayOfFoldersType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -45,7 +70,7 @@ Keine.
 |[Folder](folder.md) <br/> |Gibt einen Ordner erstellen, abrufen, suchen, synchronisieren oder zu aktualisieren.  <br/> |
 |[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner, der in erster Linie Kalenderelemente enthält.  <br/> |
 |[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Kontakteordner in einem Postfach an.  <br/> |
-|["SearchFolder"](searchfolder.md) <br/> |Stellt einen Suchordner in einem Postfach enthalten.  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner in einem Postfach enthalten.  <br/> |
 |[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner in einem Postfach an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
@@ -79,7 +104,5 @@ Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichni
    
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)
+- [ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)
 

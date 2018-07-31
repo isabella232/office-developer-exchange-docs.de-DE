@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: c2f3c6a5-e8ea-4375-b41a-686a6f238d33
 description: Hier erfahren Sie, wie und wann zum Aktualisieren von Konfigurationsinformationen für Ihre Exchange-Verbindung mit der AutoErmittlung.
-ms.openlocfilehash: ef3b61781cbafa6e7b873336a050c0b8c33a28ec
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 764909fbe5e4cd62ba6e05bfa4b2c417ef41a9ae
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757012"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353056"
 ---
 # <a name="refresh-configuration-information-by-using-autodiscover"></a>Aktualisieren von Konfigurationsinformationen mithilfe der AutoErmittlung
 
@@ -67,12 +67,12 @@ Aktualisiert die zwischengespeicherten Konfigurationsinformationen kann mit eini
 |:-----|:-----|:-----|
 |DNS- oder Fehler bei Fehlern<br/><br/> Beispiel: Hostname konnte nicht gefunden werden.  <br/> |[ServiceRemoteException](https://msdn.microsoft.com/library/Microsoft.Exchange.WebServices.Data.ServiceRemoteException.aspx) <br/> |Etwaige Fehler, der angibt, dass der Server nicht gefunden oder nicht erreicht werden konnte möglicherweise durch Versuch der AutoErmittlung behoben werden. <br/><br/> Ihrer zwischengespeicherte EWS-Endpunkt möglicherweise nicht mehr gültig sein, und möglicherweise AutoErmittlung können Sie auf den neuen Server verweisen.  <br/> |
 |HTTP-Status-Fehler<br/><br/> Beispiel: 503 Dienst nicht verfügbar  <br/> |[ServiceRemoteException](https://msdn.microsoft.com/library/Microsoft.Exchange.WebServices.Data.ServiceRemoteException.aspx) <br/> |HTTP-Status Fehler können auftreten, verschiedene Ursachen haben.<br/><br/> Jedoch ist es ratsam, versuchen Sie es AutoErmittlung, um festzustellen, ob eine neue EWS-Endpunkts für den Benutzer zur Verfügung steht.  <br/> |
-|EWS-Fehlercodes <br/><br/> Beispiel: ErrorConnectionFailed <br/> |[ResponseCodeType](https://msdn.microsoft.com/library/Microsoft.Exchange.WebServices.Data.ResponseCodeType.aspx) <br/> | Die meisten EWS-Fehlercodes rechtfertigen nicht aktualisieren Ihre Konfigurationsinformationen.<br/><br/> Allerdings geben Sie die folgenden insbesondere, dass die Konfigurationsinformationen aktualisiert werden muss:<br/>- **ErrorConnectionFailed** <br/>- **ErrorMailboxMoveInProgress** <br/> |
+|EWS-Fehlercodes <br/><br/> Beispiel: ErrorConnectionFailed <br/> |[ResponseCodeType](../web-service-reference/responsecode.md) <br/> | Die meisten EWS-Fehlercodes rechtfertigen nicht aktualisieren Ihre Konfigurationsinformationen.<br/><br/> Allerdings geben Sie die folgenden insbesondere, dass die Konfigurationsinformationen aktualisiert werden muss:<br/>- **ErrorConnectionFailed** <br/>- **ErrorMailboxMoveInProgress** <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 - [AutoErmittlung für Exchange](autodiscover-for-exchange.md)  
-- [Generieren Sie eine Liste von Endpunkten für die AutoErmittlung](how-to-generate-a-list-of-autodiscover-endpoints.md)   
+- [Generieren einer Liste mit AutoErmittlungs-Endpunkten](how-to-generate-a-list-of-autodiscover-endpoints.md)   
 - [Abrufen von benutzereinstellungen aus Exchange mithilfe der AutoErmittlung](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
     
 

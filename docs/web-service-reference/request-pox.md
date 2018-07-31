@@ -9,25 +9,31 @@ api_type:
 - schema
 ms.assetid: da54eb32-7ce5-4384-9893-255a2243a959
 description: Das angeforderte Element enthält die Anforderung an den AutoErmittlungsdienst.
-ms.openlocfilehash: ed6b0a80e83e160287f382a881dc5405bfb47a37
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 3f5d5258a92840fe79c4936370323b78aa4715b3
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831124"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354428"
 ---
 # <a name="request-pox"></a>Anforderung (POX)
 
 Das **angeforderte** Element enthält die Anforderung an den AutoErmittlungsdienst. 
   
-[AutoErmittlung (POX)](autodiscover-pox.md)
-  
-[Anforderung (POX)](request-pox.md)
+- [AutoErmittlung (POX)](autodiscover-pox.md) 
+- [Anforderung (POX)](request-pox.md)
   
 ```xml
 <Request>
    <AcceptableResponseSchema/>
    <EMailAddress/>
+</Request>
+```
+
+```xml
+<Request>
+   <AcceptableResponseSchema/> 
+   <LegacyDN/>
 </Request>
 ```
 
@@ -55,7 +61,5 @@ Keine.
    
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[POX Autodiscover XML-Elemente für Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+- [POX Autodiscover XML-Elemente für Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

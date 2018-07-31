@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 3645fa03-236d-4e5f-b8b9-5d98f7f35fa2
 description: Das SyncFolderId-Element darstellt, den Ordner, der zu synchronisierenden Elemente enthält.
-ms.openlocfilehash: 45a4a62c7d269861555089019db259eacab26ef0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: c90a20095ca4706f0c6edae3e98eaadd6024d817
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839147"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354400"
 ---
 # <a name="syncfolderid"></a>SyncFolderId
 
@@ -29,7 +29,14 @@ Das **SyncFolderId** -Element darstellt, den Ordner, der zu synchronisierenden E
 </SyncFolderId>
 ```
 
- **TargetFolderIdType**
+```xml
+<SyncFolderId>
+   <DistinguishedFolderId/> 
+</SyncFolderId>
+```
+
+**TargetFolderIdType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -67,10 +74,6 @@ Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichni
    
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[SyncFolderItems-Vorgang](syncfolderitems-operation.md)
-
-
+- [SyncFolderItems-Vorgang](syncfolderitems-operation.md)
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

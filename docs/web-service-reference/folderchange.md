@@ -12,22 +12,20 @@ api_type:
 - schema
 ms.assetid: 23279750-131b-4e1a-b7d1-be235c4e0891
 description: FolderChange-Element stellt eine Auflistung von Änderungen in einem gemeinsamen Ordner ausgeführt werden.
-ms.openlocfilehash: 3f8b42ff4ac88eaef53d1d4ec1d61212bc14b8c7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: f25defa9974f7b5dd0c683c7657983741890d45d
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758505"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354330"
 ---
 # <a name="folderchange"></a>FolderChange
 
 **FolderChange** -Element stellt eine Auflistung von Änderungen in einem gemeinsamen Ordner ausgeführt werden. 
   
-[UpdateFolder](updatefolder.md)
-  
-[FolderChanges](folderchanges.md)
-  
-[FolderChange](folderchange.md)
+- [UpdateFolder](updatefolder.md) 
+- [FolderChanges](folderchanges.md) 
+- [FolderChange](folderchange.md)
   
 ```xml
 <FolderChange>
@@ -36,7 +34,15 @@ ms.locfileid: "19758505"
 </FolderChange>
 ```
 
- **FolderChangeType**
+```xml
+<FolderChange>
+   <DistinguishedFolderId/>
+   <Updates/>
+</FolderChange>
+```
+
+**FolderChangeType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -57,7 +63,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderChanges](folderchanges.md) <br/> |Stellt eine Auflistung von Änderungen für einen Ordner.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/UpdateFolder/FolderChanges` <br/> |
+|[FolderChanges](folderchanges.md) <br/> |Stellt eine Auflistung von Änderungen für einen Ordner.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/UpdateFolder/FolderChanges` <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
@@ -74,7 +80,5 @@ Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichni
    
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[UpdateFolder-Vorgang](updatefolder-operation.md)
+- [UpdateFolder-Vorgang](updatefolder-operation.md)
 

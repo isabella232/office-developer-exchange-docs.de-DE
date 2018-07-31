@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 572f8b40-dfa8-47bc-b0c1-e1a7138506fd
 description: Das MovedEvent-Element stellt ein Ereignis in der eines Elements oder Ordners von einem übergeordneten Ordner in einer anderen übergeordneten Ordner verschoben wird.
-ms.openlocfilehash: a375f421ca9159103e47b515729316b21149c68a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 07f9c02ea194187a9fdfb1e27b19eb311392f51f
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830479"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353259"
 ---
 # <a name="movedevent"></a>MovedEvent
 
@@ -34,7 +34,20 @@ Das **MovedEvent** -Element stellt ein Ereignis in der eines Elements oder Ordne
 </MovedEvent>
 ```
 
- **MovedCopiedEventType**
+```xml
+<MovedEvent>
+   <Watermark/>
+   <TimeStamp/>
+   <FolderId/>
+   <ParentFolderId/>
+   <OldFolderId/>
+   <OldParentFolderId/>
+</MovedEvent>
+```
+
+
+**MovedCopiedEventType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -47,8 +60,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Wasserzeichen](watermark.md) <br/> |Stellt eine Textmarke Ereignisse in der Tabelle der Postfach-Ereignisse dar.  <br/> |
-|[Zeitstempel](timestamp.md) <br/> |Stellt den Zeitstempel der ein Element-Ordner Postfach-Ereignis.  <br/> |
+|[Watermark](watermark.md) <br/> |Stellt eine Textmarke Ereignisse in der Tabelle der Postfach-Ereignisse dar.  <br/> |
+|[TimeStamp](timestamp.md) <br/> |Stellt den Zeitstempel der ein Element-Ordner Postfach-Ereignis.  <br/> |
 |[FolderId](folderid.md) <br/> |Den Bezeichner des verschobenen Ordners darstellt.  <br/> |
 |[ItemId](itemid.md) <br/> |Stellt die das verschobene Element-ID an.  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des Ordners, die das verschobene Element oder Ordner enthält.  <br/> |
@@ -77,11 +90,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
    
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[Vorgang abonnieren](subscribe-operation.md)
-  
-[GetEvents-Vorgang](getevents-operation.md)
-  
-[Vorgang des Kündigens von Abonnements](unsubscribe-operation.md)
+- [Vorgang abonnieren](subscribe-operation.md) 
+- [GetEvents-Vorgang](getevents-operation.md) 
+- [Vorgang des Kündigens von Abonnements](unsubscribe-operation.md)
 

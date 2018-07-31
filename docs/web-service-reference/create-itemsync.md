@@ -1,5 +1,5 @@
 ---
-title: Erstellen (ItemSync)
+title: Create (ItemSync)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,26 +12,22 @@ api_type:
 - schema
 ms.assetid: cb5e64a2-66a5-4447-921e-7c13efb8f6bf
 description: Das Create-Element identifiziert ein einzelnes Element in der lokalen Client-Speicher zu erstellen.
-ms.openlocfilehash: 39056bcaab3577b1b729421118a45571910922fc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: d49e54c64f7bd53dcb296d998a856c20570d81be
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757737"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353945"
 ---
-# <a name="create-itemsync"></a>Erstellen (ItemSync)
+# <a name="create-itemsync"></a>Create (ItemSync)
 
 Das **Create** -Element identifiziert ein einzelnes Element in der lokalen Client-Speicher zu erstellen. 
   
-[SyncFolderItemsResponse](syncfolderitemsresponse.md)
-  
-[ResponseMessages](responsemessages.md)
-  
-[SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md)
-  
-[Änderungen (Elemente)](changes-items.md)
-  
-[Erstellen (ItemSync)](create-itemsync.md)
+- [SyncFolderItemsResponse](syncfolderitemsresponse.md) 
+- [ResponseMessages](responsemessages.md) 
+- [SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md) 
+- [Änderungen (Elemente)](changes-items.md) 
+- [Create (ItemSync)](create-itemsync.md)
   
 ```xml
 <Create>
@@ -39,7 +35,62 @@ Das **Create** -Element identifiziert ein einzelnes Element in der lokalen Clien
 </Create>
 ```
 
- **SyncFolderItemsCreateOrUpdateType**
+```xml
+<Create>
+   <Task/> 
+</Create>
+```
+
+```xml
+<Create>
+   <MeetingResponse/>
+</Create>
+```
+
+```xml
+<Create>
+   <CalendarItem/>
+</Create>
+```
+
+```xml
+<Create>
+   <MeetingMessage/>
+</Create>
+```
+
+```xml
+<Create>
+   <DistributionList/>
+</Create>
+```
+
+```xml
+<Create>
+   <MeetingCancellation/>
+</Create>
+```
+
+```xml
+<Create>
+   <MeetingRequest/> 
+</Create>
+```
+
+```xml
+<Create>
+   <Message/> 
+</Create>
+```
+
+```xml
+<Create>
+   <Contact/> 
+</Create>
+```
+
+**SyncFolderItemsCreateOrUpdateType**
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -53,7 +104,7 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Item](item.md) <br/> |So erstellen Sie ein generisches Exchange-Element darstellt.  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |So erstellen Sie eine Exchange E-mail-Nachricht darstellt.  <br/> |
+|[Meldung](message-ex15websvcsotherref.md) <br/> |So erstellen Sie eine Exchange E-mail-Nachricht darstellt.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |So erstellen Sie ein Exchange-Kalender-Element darstellt.  <br/> |
 |[Contact](contact.md) <br/> |So erstellen Sie ein Exchange-Kontaktelement darstellt.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |So erstellen Sie eine Verteilerliste darstellt.  <br/> |
@@ -84,10 +135,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
    
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[SyncFolderItems-Vorgang](syncfolderitems-operation.md)
-
-
+- [SyncFolderItems-Vorgang](syncfolderitems-operation.md)
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

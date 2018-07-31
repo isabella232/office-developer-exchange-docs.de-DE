@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 42412265-3968-468a-a8c2-7e8af3c6deb9
 description: Erfahren Sie, wie Termine und Besprechungen zu löschen, indem Sie die EWS Managed API oder EWS in Exchange.
-ms.openlocfilehash: bd7eac803fedffc51133324259f68fd25652fcff
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: c71272bf753432a9f343adc917b444424fe3ba33
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756886"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354078"
 ---
 # <a name="delete-appointments-and-cancel-meetings-by-using-ews-in-exchange"></a>Löschen von Terminen und Abbrechen an Besprechungen mithilfe von EWS in Exchange
 
@@ -23,13 +23,14 @@ Der wesentliche Unterschied zwischen Besprechungen und Terminen ist, dass Bespre
 
 |**EWS Managed API-Methode**|**EWS-Vorgang**|**Funktionsweise**|
 |:-----|:-----|:-----|
-|[Appointment.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) <br/> |Löscht einen Termin an.  <br/> |
-|[Appointment.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[CreateItem (Kalenderelement)](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) <br/> |Löscht eine Besprechung.  <br/> |
+|[Appointment.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |Löscht einen Termin an.  <br/> |
+|[Appointment.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[CreateItem (Kalenderelement)](../web-service-reference/createitem-operation-calendar-item.md) <br/> |Löscht eine Besprechung.  <br/> |
    
-Beachten Sie, dass beim Löschen eines Termins mithilfe der Exchange-Webdienste den Vorgang [DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) verwenden, aber wenn Sie eine Besprechung zu löschen, verwenden Sie die [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) Operation. Dies mag nicht besonders intuitiv, aber es ist, müssen Sie eine Besprechung erstellen Response-Objekt zum Senden von Besprechungsabsagen Nachrichten an die Teilnehmer. 
-  
-## <a name="delete-an-appointment-by-using-the-ews-managed-api"></a>Löschen eines Termins mithilfe der EWS Managed API
+Beachten Sie, dass beim Löschen eines Termins mithilfe der Exchange-Webdienste den Vorgang [DeleteItem](../web-service-reference/deleteitem-operation.md) verwenden, aber wenn Sie eine Besprechung zu löschen, verwenden Sie die [CreateItem](../web-service-reference/createitem-operation-calendar-item.md) Operation. Dies mag nicht besonders intuitiv, aber es ist, müssen Sie eine Besprechung erstellen Response-Objekt zum Senden von Besprechungsabsagen Nachrichten an die Teilnehmer. 
+
 <a name="bk_DeleteApptEWSMA"> </a>
+
+## <a name="delete-an-appointment-by-using-the-ews-managed-api"></a>Löschen eines Termins mithilfe der EWS Managed API
 
 Im folgenden Codebeispiel wird veranschaulicht, wie Sie die [Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) -Methode, um einen Termin aus den Kalenderordner zu löschen und die [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) -Methode, um sicherzustellen, dass der Termin gelöscht wurde, indem Sie im Ordner "Gelöschte Elemente" gesucht. 
   
@@ -63,7 +64,7 @@ Wie Sie sehen können, Löschen einen Termin ist einfach und ziemlich erwartet. 
 
 Die Anforderung und Antwort-XML in den folgenden Beispielen werden von der EWS Managed API-Code in das [Löschen eines Termins mithilfe der EWS Managed API](#bk_DeleteApptEWSMA)-Aufrufe entsprechen. Die Anforderung und Antwort wird XML, das überprüft, ob das Terminelement im Ordner "Gelöschte Elemente" ist ebenfalls angezeigt.
   
-Das folgende Beispiel zeigt die XML-Anforderung für den Vorgang [DeleteItem](http://msdn.microsoft.com/library/e2152410-41ce-1fe7-8169-f206d5081ebc%28Office.15%29.aspx) , um einen Termin zu löschen. 
+Das folgende Beispiel zeigt die XML-Anforderung für den Vorgang [DeleteItem](../web-service-reference/deleteitem-operation.md) , um einen Termin zu löschen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -86,7 +87,7 @@ Das folgende Beispiel zeigt die XML-Anforderung für den Vorgang [DeleteItem](ht
 
 ```
 
-Das folgende Beispiel zeigt die Antwort-XML, das von der [DeleteItem Vorgang](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx)zurückgegeben wird. Die Attribute **ItemId** und **ChangeKey** werden zur besseren Lesbarkeit gekürzt. 
+Das folgende Beispiel zeigt die Antwort-XML, das von der Operation [DeleteItem](../web-service-reference/deleteitem-operation.md) zurückgegeben wird. Die Attribute **ItemId** und **ChangeKey** werden zur besseren Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
