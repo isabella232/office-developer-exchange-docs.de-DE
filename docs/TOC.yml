@@ -70,7 +70,7 @@
                   href: exchange-web-services/improving-performance-when-using-autodiscover-for-exchange.md
             - name: Mail-Apps für Outlook und EWS
               href: exchange-web-services/mail-apps-for-outlook-and-ews-in-exchange.md
-            - name: Office 365-REST-APIs
+            - name: Microsoft Graph-REST-APIs
               href: exchange-web-services/office-365-rest-apis-for-mail-calendars-and-contacts.md
             - name: Lizenzinformationen
               href: exchange-web-services/license-information.md
