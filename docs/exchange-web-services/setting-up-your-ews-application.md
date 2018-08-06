@@ -8,7 +8,7 @@ ms.assetid: 0d45e347-f832-478d-b078-7c2852c0d204
 description: Finden Sie Informationen zu den Aufgaben, die Sie erledigen müssen, um Anwendungen zu erstellen, die die verwaltete EWS-API oder EWS verwenden, um mit Exchange zu kommunizieren.
 ms.openlocfilehash: b8f402d3c4555f971b08fd891b5b64ca49a57e0d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757119"
@@ -25,14 +25,14 @@ Wenn Sie eine Clientanwendung erstellen, die Webdienste auf Exchange Online, Exc
     
 - [Steuern des Clientanwendungszugriffs auf EWS in Exchange](controlling-client-application-access-to-ews-in-exchange.md)
     
-- [Verwalten des Benutzerzugriffs in Exchange mithilfe der Exchange-Webdienste](managing-user-access-by-using-ews-in-exchange.md)
+- [Verwalten des Benutzerzugriffs mithilfe von EWS in Exchange](managing-user-access-by-using-ews-in-exchange.md)
     
-- [Überprüfen eines Zertifikats für die EWS Managed API](how-to-validate-a-server-certificate-for-the-ews-managed-api.md)
+- [Überprüfen ein Serverzertifikats für die verwaltete EWS-API](how-to-validate-a-server-certificate-for-the-ews-managed-api.md)
     
 ## <a name="see-also"></a>Siehe auch
 
 
-- [Erste Schritte mit Webdiensten in Exchange](start-using-web-services-in-exchange.md)
+- [Verwenden von Webdiensten in Exchange](start-using-web-services-in-exchange.md)
     
 - [Übersicht über den EWS-Cliententwurf für Exchange](ews-client-design-overview-for-exchange.md)
     

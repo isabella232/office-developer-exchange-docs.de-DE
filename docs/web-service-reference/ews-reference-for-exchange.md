@@ -10,7 +10,7 @@ ms.assetid: 2a873474-1bb2-4cb1-a556-40e8c4159f4a
 description: Suchen von Verweisinformationen für EWS-XML-Elemente und WSDL-Vorgänge in Exchange
 ms.openlocfilehash: 32717929aad4af7c1ce6010b58b48d4059c91b22
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758284"
@@ -32,7 +32,7 @@ Der WSDL-Operationsinhalt in diesem Abschnitt bietet einen Überblick und Anford
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Referenz für Webdienste für Exchange](web-services-reference-for-exchange.md)
+- [Webdienstreferenz für Exchange](web-services-reference-for-exchange.md)
 - [Erkunden von EWS Managed API, EWS und Webdiensten in Exchange](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)
 - [Erste Schritte mit Webdiensten in Exchange](../exchange-web-services/start-using-web-services-in-exchange.md)
     

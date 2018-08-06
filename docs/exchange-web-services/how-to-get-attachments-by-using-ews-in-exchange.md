@@ -1,21 +1,21 @@
 ---
-title: Abrufen von Anlagen im Exchange mithilfe der Exchange-Webdienste
+title: Abrufen von Anlagen mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 12ce3cc0-a201-42e4-93e1-1f57961ff711
-description: Hier erhalten Sie Informationen zum Abrufen von Anlagen aus EWS mithilfe der verwalteten EWS-API oder von EWS in Exchange
+description: Hier erhalten Sie Informationen zum Abrufen von Anlagen aus EWS mithilfe der verwalteten EWS-API oder von EWS in Exchange.
 ms.openlocfilehash: 2e1b3cfb346abd068695f66b01f9e34f1f5ff03f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756897"
 ---
-# <a name="get-attachments-by-using-ews-in-exchange"></a>Abrufen von Anlagen im Exchange mithilfe der Exchange-Webdienste
+# <a name="get-attachments-by-using-ews-in-exchange"></a>Abrufen von Anlagen mithilfe von EWS in Exchange
 
-Hier erhalten Sie Informationen zum Abrufen von Anlagen aus EWS mithilfe der verwalteten EWS-API oder von EWS in Exchange
+Hier erhalten Sie Informationen zum Abrufen von Anlagen aus EWS mithilfe der verwalteten EWS-API oder von EWS in Exchange.
   
 Sie können Anlagen von einem Elemente mithilfe der verwalteten EWS-API oder mithilfe von EWS abrufen. Da der ursprüngliche Aufruf zum Abrufen eines Elements nur Metadaten zu der Anlagenauflistung in dem Element enthält, ist das Abrufen von Anlagen immer ein Prozess mit Schritten. Zuerst wird das Element abgerufen. Dann wird die Anlage abgerufen.
   
@@ -23,15 +23,15 @@ Sie können Anlagen von einem Elemente mithilfe der verwalteten EWS-API oder mit
 
 |**Aufgabe**|**EWS Managed API-Methode**|**EWS-Vorgang**|
 |:-----|:-----|:-----|
-|Abrufen von Elementanlagen  <br/> |[Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) followed by [ItemAttachment.Load](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.itemattachment.load%28v=exchg.80%29.aspx) <br/> |[GetItem ](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) gefolgt von [GetAttachment ](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) <br/> |
-|Abrufen von Dateianlagen  <br/> |[Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) followed by [FileAttachment.Load](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.fileattachment.load%28v=exchg.80%29.aspx) <br/> |[GetItem ](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) gefolgt von [GetAttachment ](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) <br/> |
+|Abrufen von Elementanlagen  <br/> |[Item.Bind](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) followed by [ItemAttachment.Load](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.itemattachment.load%28v=exchg.80%29.aspx) <br/> |[GetItem ](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) gefolgt von [GetAttachment ](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) <br/> |
+|Abrufen von Dateianlagen  <br/> |[Item.Bind](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) followed by [FileAttachment.Load](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.fileattachment.load%28v=exchg.80%29.aspx) <br/> |[GetItem ](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) gefolgt von [GetAttachment ](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) <br/> |
    
 ## <a name="get-attachments-from-an-email-by-using-the-ews-managed-api"></a>Abrufen von Anlagen aus einer E-Mail mithilfe der verwalteten EWS-API
 <a name="bk_getattachewsma"> </a>
 
-Im folgenden Codebeispiel wird veranschaulicht, wie ein ["EmailMessage"](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) -Objekt abrufen, indem Sie mithilfe der Methode **zu binden** , und klicken Sie dann die Anlage-Auflistung durchlaufen, und rufen Sie die **FileAttachment.Load** oder **ItemAttachment.Load** -Methode auf jedem Attachment-Objekt nach Bedarf. Jede Dateianlage wird in den Ordner C:\temp\ gespeichert, und jede Anlage des Elements in den Arbeitsspeicher geladen wird. Informationen zum Speichern einer Elementanlage finden Sie unter [Speichern eine angefügte e-Mail mithilfe der EWS Managed API](#bk_saveitemattach).
+Im folgenden Codebeispiel wird gezeigt, wie ein [EmailMessage](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx)-Objekt mithilfe der **Bind**-Methode abgerufen wird und wie dann die Anlagensammlung durchlaufen und die Methode **FileAttachment.Load** oder **ItemAttachment.Load** für jede Anlage aufgerufen wird. Jede Dateianlage wird im Ordner „C:\temp\“ gespeichert, und jede Elementanlage wird in den Speicher geladen. Informationen dazu, wie Sie eine Elementanlage speichern, finden Sie unter [Speichern einer E-Mail-Nachricht mithilfe der verwalteten EWS-API](#bk_saveitemattach).
   
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist, dass **itemId** die [ItemId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) der Nachricht ist, von der Anlagen abgerufen werden, und dass der Benutzer für einen Exchange-Server authentifiziert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist, dass **itemId** die [ItemId](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) der Nachricht ist, von der Anlagen abgerufen werden, und dass der Benutzer für einen Exchange-Server authentifiziert wurde. 
   
 ```cs
 public static void GetAttachmentsFromEmail(ExchangeService service, ItemId itemId)
@@ -96,7 +96,7 @@ Im folgenden Codebeispiel wird veranschaulicht, wie der [GetItem](http://msdn.mi
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **GetItem**-Anforderung mit einer [GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx)-Wert **NoError** umfasst, der angibt, dass die E-Mail erfolgreich abgerufen wurde, sowie [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx)-Werte der vorhandenen Anlagen. 
+Der Server antwortet auf die **GetItem**-Anforderung mit einer [GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](http://msdn.microsoft.com/de-DE/library/aa580757%28v=exchg.150%29.aspx)-Wert **NoError** umfasst, der angibt, dass die E-Mail erfolgreich abgerufen wurde, sowie [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx)-Werte der vorhandenen Anlagen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -171,7 +171,7 @@ Da Sie nun über die [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-6
 </soap:Envelope>
 ```
 
-Beim Abrufen einer Elementanlage reagiert der Server auf die **GetAttachment**-Anforderung mit einer [GetAttachmentResponse](http://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx)-Wert von **NoError** umfasst, der angibt, dass die Anlage erfolgreich abgerufen wurde, sowie alle Elemente für das angefügte Element, in diesem Fall eine E-Mai-Nachricht.
+Beim Abrufen einer Elementanlage reagiert der Server auf die **GetAttachment**-Anforderung mit einer [GetAttachmentResponse](http://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](http://msdn.microsoft.com/de-DE/library/aa580757%28v=exchg.150%29.aspx)-Wert von **NoError** umfasst, der angibt, dass die Anlage erfolgreich abgerufen wurde, sowie alle Elemente für das angefügte Element, in diesem Fall eine E-Mai-Nachricht.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -259,7 +259,7 @@ Beim Abrufen einer Elementanlage reagiert der Server auf die **GetAttachment**-A
 </s:Envelope>
 ```
 
-Beim Abrufen einer Dateianlage reagiert der Server auf die **GetAttachment**-Anforderung mit einer [GetAttachmentResponse](http://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx)-Wert von **NoError** umfasst, der angibt, dass die Anlage erfolgreich abgerufen wurde, sowie alle Elemente der Dateianlage.
+Beim Abrufen einer Dateianlage reagiert der Server auf die **GetAttachment**-Anforderung mit einer [GetAttachmentResponse](http://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](http://msdn.microsoft.com/de-DE/library/aa580757%28v=exchg.150%29.aspx)-Wert von **NoError** umfasst, der angibt, dass die Anlage erfolgreich abgerufen wurde, sowie alle Elemente der Dateianlage.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -299,7 +299,7 @@ Beim Abrufen einer Dateianlage reagiert der Server auf die **GetAttachment**-Anf
 ## <a name="save-an-attached-email-by-using-the-ews-managed-api"></a>Speichern einer E-Mail-Nachricht mithilfe der verwalteten EWS-API
 <a name="bk_saveitemattach"> </a>
 
-Um den Inhalt der e-Mail-Anlage die EWS Managed API speichern zu können, müssen Sie die [' MimeContent '](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) in einer Datei zu speichern. Auf diese Weise, verlieren Sie alle erweiterten Eigenschaften für das Element, wie beispielsweise nachverfolgungsflag und Kategorien festgelegt. In diesem Beispiel wird die e-Mail-Anlage an die in den Ordner C:\temp\. 
+Um den Inhalt einer E-Mail-Anlage mithilfe der verwalteten EWS-API zu speichern, müssen Sie den [MimeContent](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) in einer Datei speichern. Dabei gehen alle erweiterten Eigenschaften verloren, die für das Element festgelegt wurden, z. B. Nachverfolgungskennzeichnungen und Kategorien. In diesem Beispiel wird die E-Mail-Anlage im Ordner „C:\temp\“ gespeichert. 
   
 Beachten Sie, dass Sie die Elementanlage nicht in einen anderen Ordner verschieben oder kopieren können, da die Elementanlage kein stark typisiertes Element ist. Wenn Sie also versuchen, eine Anlage in einen anderen Ordner zu verschieben, verwenden Sie das folgende Codebeispiel, und [importieren Sie dann die Datei](how-to-import-items-by-using-ews-in-exchange.md) in einen anderen Ordner. 
   
@@ -328,10 +328,10 @@ public static void SaveEmailAttachment(ExchangeService service, ItemId itemId)
 ## <a name="see-also"></a>Siehe auch
 
 
-- [Attachments and EWS in Exchange](attachments-and-ews-in-exchange.md)
+- [Anlagen und EWS in Exchange](attachments-and-ews-in-exchange.md)
     
-- [Hinzufügen von Anlagen im Exchange mithilfe der Exchange-Webdienste](how-to-add-attachments-by-using-ews-in-exchange.md)
+- [Hinzufügen von Anlagen mithilfe von EWS in Exchange](how-to-add-attachments-by-using-ews-in-exchange.md)
     
-- [Löschen von Anlagen mithilfe der EWS in Exchange](how-to-delete-attachments-by-using-ews-in-exchange.md)
+- [Löschen von Anlagen mithilfe von EWS in Exchange](how-to-delete-attachments-by-using-ews-in-exchange.md)
     
 

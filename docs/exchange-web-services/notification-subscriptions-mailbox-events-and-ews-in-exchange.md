@@ -8,7 +8,7 @@ ms.assetid: 76136f28-0dad-4ecc-9dd7-a45a1861e4b0
 description: Erfahren Sie mehr über Benachrichtigungsabonnements und Postfachereignisse in EWS in Exchange.
 ms.openlocfilehash: 4f466c6cc01af410807948a9fec40c2af399c3e3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757123"
@@ -35,23 +35,23 @@ EWS umfasst drei Abonnementtypen, die unabhängig voneinander arbeiten, um den C
 ## <a name="what-ews-events-can-i-subscribe-to"></a>Welche EWS-Ereignisse kann ich abonnieren?
 <a name="bk_eventtypes"> </a>
 
-Die von Clients abonnierten Typen von EWS-Ereignissen werden von der [EventType](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.eventtype%28v=exchg.80%29.aspx)-Enumeration für die EWS Managed API oder das [EventType](http://msdn.microsoft.com/library/04b70f9e-c226-4130-958e-0db0275cf58b%28Office.15%29.aspx)-Element für EWS definiert. Die folgenden EWS-Ereignisse können abonniert werden: 
+Die von Clients abonnierten Typen von EWS-Ereignissen werden von der [EventType](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.eventtype%28v=exchg.80%29.aspx)-Enumeration für die EWS Managed API oder das [EventType](http://msdn.microsoft.com/library/04b70f9e-c226-4130-958e-0db0275cf58b%28Office.15%29.aspx)-Element für EWS definiert. Die folgenden EWS-Ereignisse können abonniert werden: 
   
-- NewMail - Eine neue Nachricht ist im Posteingang eingegangen.
+- NewMail – Eine neue Nachricht ist im Posteingang eingegangen.
     
 - Deleted - Eine Nachricht wurde dauerhaft aus dem Posteingang gelöscht. Weitere Informationen zu Benachrichtigungen über gelöschte Elemente finden Sie unter [Löschen von Elementen mithilfe von EWS in Exchange](deleting-items-by-using-ews-in-exchange.md) und [Ziehen Sie Benachrichtigungen für EWS Postfach löschen-bezogenen Ereignisse in Exchange](pull-notifications-for-ews-deletion-related-mailbox-events-in-exchange.md).
     
-- Modified - Ein Element oder Ordner wurde geändert.
+- Modified – Ein Element oder Ordner wurde geändert.
     
-- Moved - Ein Element oder Ordner wurde verschoben. 
+- Moved – Ein Element oder Ordner wurde verschoben. 
     
-- Copied - Ein Element oder Ordner wurde kopiert.
+- Copied – Ein Element oder Ordner wurde kopiert.
     
-- Created - Ein Element oder Ordner wurde erstellt. 
+- Created – Ein Element oder Ordner wurde erstellt. 
     
 - FreeBusyChanged - Die Frei/Gebucht-Informationen eines Benutzers wurden geändert.
     
-Ein weiterer EWS-Ereignistyp, das Status-Ereignis, wird vom [EventType](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.eventtype%28v=exchg.80%29.aspx)-Element definiert, dieses Ereignis wird jedoch nicht abonniert. Es wird vielmehr vom Server gesendet, um den Status des Clients für Streaming- und Pushbenachrichtigungen zu überprüfen. Der Client muss auf dieses Ereignis reagieren, da sonst eine Zeitüberschreitung auftritt. 
+Ein weiterer EWS-Ereignistyp, das Status-Ereignis, wird vom [EventType](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.eventtype%28v=exchg.80%29.aspx)-Element definiert, dieses Ereignis wird jedoch nicht abonniert. Es wird vielmehr vom Server gesendet, um den Status des Clients für Streaming- und Pushbenachrichtigungen zu überprüfen. Der Client muss auf dieses Ereignis reagieren, da sonst eine Zeitüberschreitung auftritt. 
   
 Eine einzige Benutzeraktion führt häufig zur Erstellung mehrerer Benachrichtigungen. Die folgende Abbildung zeigt zur Veranschaulichung einige häufige Szenarien und die für jedes Szenarion erstellten Benachrichtigungen. Clienteinstellungen haben Auswirkungen auf die empfangenen Benachrichtigungen, daher ist dies keine vollständige Liste aller Konfigurationsoptionen und der sich daraus ergebenden Benachrichtigungen.
   
@@ -79,7 +79,7 @@ Streamingbenachrichtigungen basieren auf einer hängenden Get-Anforderung an den
 
 ![Abbildung der Funktionsweise von Streamingbenachrichtigungen. So richten Sie Streamingbenachrichtigungen ein: 1. Abonnieren, 2. Verbindung öffnen, 3. Auf Ereignisse warten, 4. Ereignisse empfangen, 3,4, und 5 wiederholen, 5. Verbindung schließen oder beibehalten, 6. Abo aufheben oder Zeitlimit.](media/Exchange2013_Notifications_StreamSub.png)
   
-Informationen zum Erstellen von streaming Benachrichtigungen finden Sie unter [Stream-Benachrichtigungen bezüglich Postfach Ereignisse im Exchange mithilfe der Exchange-Webdienste](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md).
+Informationen zum Erstellen von Streamingbenachrichtigungen finden Sie unter [Streamingbenachrichtigungen zu Postfachereignissen mithilfe von EWS in Exchange](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md).
   
 ### <a name="ews-pull-notifications"></a>EWS-Pullbenachrichtigungen
 <a name="bk_pullnotif"> </a>
@@ -90,7 +90,7 @@ Pullbenachrichtigungen basieren darauf, dass der Client in einem vom Client verw
 
 ![Abbildung der Funktionsweise von Pullbenachrichtigungen. So richten Sie Pullbenachrichtigungen ein: 1. Abonnieren, 2. GetEvents senden, 3. Antwort empfangen, 2 und 3 wiederholen, 4. Verbindung schließen oder beibehalten, 5. Abo aufheben oder Zeitlimit.](media/Exchange2013_Notifications_PullSub.png)
   
-Informationen zum Erstellen von Pull-Benachrichtigungen finden Sie unter [Pull-Benachrichtigungen bezüglich Postfach Ereignisse im Exchange mithilfe der Exchange-Webdienste](how-to-pull-notifications-about-mailbox-events-by-using-ews-in-exchange.md).
+Informationen zum Erstellen von Pullbenachrichtigungen finden Sie unter [Pullbenachrichtigungen zu Postfachereignissne mithilfe von EWS in Exchange](how-to-pull-notifications-about-mailbox-events-by-using-ews-in-exchange.md).
   
 ### <a name="ews-push-notifications"></a>EWS-Pushbenachrichtigungen
 <a name="bk_pushnotif"> </a>
@@ -110,29 +110,29 @@ Je nach Typ des Abonnements, das Sie erstellen möchten, steht Ihnen eine Reihe 
   
 **Tabelle 2. Vorgänge und Methoden für das Abonnieren von Benachrichtigungen**
 
-|**Abonnementtyp**|**EWS-Vorgang**|**EWS Managed API-Methoden**|**Funktionsweise**|
+|**Abonnementtyp**|**EWS-Vorgang**|**EWS Managed API-Methoden**|**Funktion der Einstellung**|
 |:-----|:-----|:-----|:-----|
-|Streaming  <br/> |[Vorgang abonnieren](http://msdn.microsoft.com/library/f17c3d08-c79e-41f1-ba31-6e41e7aafd87%28Office.15%29.aspx) <br/> |[ExchangeService.BeginSubscribeToStreamingNotifications-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.beginsubscribetostreamingnotifications%28v=exchg.80%29.aspx) <br/> [ExchangeService.BeginSubscribeToStreamingNotificationsOnAllFolders-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.beginsubscribetostreamingnotificationsonallfolders%28v=exchg.80%29.aspx) <br/> [ExchangeService.SubscribeToStreamingNotificationsOnAllFolders-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.subscribetostreamingnotifications%28v=exchg.80%29.aspx) <br/> |Erstellt eine Anforderung zum Abonnieren von Streamingbenachrichtigungen.  <br/> |
-|Pull  <br/> |[Vorgang abonnieren](http://msdn.microsoft.com/library/f17c3d08-c79e-41f1-ba31-6e41e7aafd87%28Office.15%29.aspx) <br/> |[ExchangeService.BeginSubscribeToPullNotifications-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.beginsubscribetopullnotifications%28v=exchg.80%29.aspx) <br/> [ExchangeService.BeginSubscribeToPullNotificationsOnAllFolders-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.beginsubscribetopullnotificationsonallfolders%28v=exchg.80%29.aspx) <br/> [ExchangeService.SubscribeToPullNotifications-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.subscribetopullnotifications%28v=exchg.80%29.aspx) <br/> [ExchangeService.SubscribeToPullNotificationsOnAllFolders-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.subscribetopullnotificationsonallfolders%28v=exchg.80%29.aspx) <br/> |Erstellt eine Anforderung zum Abonnieren von Pullbenachrichtigungen.  <br/> |
-|Push  <br/> |[Vorgang abonnieren](http://msdn.microsoft.com/library/f17c3d08-c79e-41f1-ba31-6e41e7aafd87%28Office.15%29.aspx) <br/> |[ExchangeService.BeginSubscribeToPushNotifications-Überladungsmethode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.beginsubscribetopushnotifications%28v=exchg.80%29.aspx) <br/> [ExchangeService.BeginSubscribeToPushNotificationsOnAllFolders-Überladungsmethode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.beginsubscribetopushnotificationsonallfolders%28v=exchg.80%29.aspx) <br/> [ExchangeService.SubscribeToPushNotifications-Überladungsmethode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.subscribetopushnotifications%28v=exchg.80%29.aspx) <br/> [ExchangeService.SubscribeToPushNotificationsOnAllFolders-Überladungsmethode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.subscribetopushnotificationsonallfolders%28v=exchg.80%29.aspx) <br/> |Erstellt eine Anforderung zum Abonnieren von Pushbenachrichtigungen.  <br/> |
+|Streaming  <br/> |[Vorgang abonnieren](http://msdn.microsoft.com/library/f17c3d08-c79e-41f1-ba31-6e41e7aafd87%28Office.15%29.aspx) <br/> |[ExchangeService.BeginSubscribeToStreamingNotifications-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.beginsubscribetostreamingnotifications%28v=exchg.80%29.aspx) <br/> [ExchangeService.BeginSubscribeToStreamingNotificationsOnAllFolders-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.beginsubscribetostreamingnotificationsonallfolders%28v=exchg.80%29.aspx) <br/> [ExchangeService.SubscribeToStreamingNotificationsOnAllFolders-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.subscribetostreamingnotifications%28v=exchg.80%29.aspx) <br/> |Erstellt eine Anforderung zum Abonnieren von Streamingbenachrichtigungen.  <br/> |
+|Pull  <br/> |[Vorgang abonnieren](http://msdn.microsoft.com/library/f17c3d08-c79e-41f1-ba31-6e41e7aafd87%28Office.15%29.aspx) <br/> |[ExchangeService.BeginSubscribeToPullNotifications-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.beginsubscribetopullnotifications%28v=exchg.80%29.aspx) <br/> [ExchangeService.BeginSubscribeToPullNotificationsOnAllFolders-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.beginsubscribetopullnotificationsonallfolders%28v=exchg.80%29.aspx) <br/> [ExchangeService.SubscribeToPullNotifications-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.subscribetopullnotifications%28v=exchg.80%29.aspx) <br/> [ExchangeService.SubscribeToPullNotificationsOnAllFolders-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.subscribetopullnotificationsonallfolders%28v=exchg.80%29.aspx) <br/> |Erstellt eine Anforderung zum Abonnieren von Pullbenachrichtigungen.  <br/> |
+|Push  <br/> |[Vorgang abonnieren](http://msdn.microsoft.com/library/f17c3d08-c79e-41f1-ba31-6e41e7aafd87%28Office.15%29.aspx) <br/> |[ExchangeService.BeginSubscribeToPushNotifications-Überladungsmethode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.beginsubscribetopushnotifications%28v=exchg.80%29.aspx) <br/> [ExchangeService.BeginSubscribeToPushNotificationsOnAllFolders-Überladungsmethode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.beginsubscribetopushnotificationsonallfolders%28v=exchg.80%29.aspx) <br/> [ExchangeService.SubscribeToPushNotifications-Überladungsmethode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.subscribetopushnotifications%28v=exchg.80%29.aspx) <br/> [ExchangeService.SubscribeToPushNotificationsOnAllFolders-Überladungsmethode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.subscribetopushnotificationsonallfolders%28v=exchg.80%29.aspx) <br/> |Erstellt eine Anforderung zum Abonnieren von Pushbenachrichtigungen.  <br/> |
    
 ## <a name="how-do-i-get-ews-events"></a>Wie kann ich EWS-Ereignisse abrufen?
 <a name="bk_getevents"> </a>
 
 Nachdem das Abonnement erstellt wurde, ist die Art, wie die tatsächlichen Ereignisse an den Client gesendet werden,vom Abonnementtyp abhängig. 
   
-Für Streamingbenachrichtigungen muss eine Streamingabonnementverbindung erstellt werden, und das Abonnement wird dann zu der Verbindung hinzugefügt. Weitere Informationen über diesen Vorgang in [Stream-Benachrichtigungen zu Postfach-Ereignissen mithilfe der Exchange-Webdienste im Exchange](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md). 
+Für Streamingbenachrichtigungen muss eine Streamingabonnementverbindung erstellt werden, und das Abonnement wird dann zu der Verbindung hinzugefügt. Weitere Informationen zu diesem Prozess finden Sie unter [Streamingbenachrichtigungen zu Postfachereignissen mithilfe von EWS in Exchange](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md). 
   
-Für Pullbenachrichtigungen wurde das Abonnementobjekt initialisiert, als das Abonnement erstellt wurde, Sie müssen daher nur die **GetEvent** -Methode oder -Operation aufrufen, um die Ereignisse vom Server abzurufen. Weitere Informationen finden Sie unter [Pull-Benachrichtigungen bezüglich Postfach Ereignisse im Exchange mithilfe der Exchange-Webdienste](how-to-pull-notifications-about-mailbox-events-by-using-ews-in-exchange.md). 
+Für Pullbenachrichtigungen wurde das Abonnementobjekt initialisiert, als das Abonnement erstellt wurde, Sie müssen daher nur die **GetEvent** -Methode oder -Operation aufrufen, um die Ereignisse vom Server abzurufen. Weitere Informationen hierzu finden Sie unter [Pullbenachrichtigungen zu Postfachereignissen mithilfe von EWS in Exchange](how-to-pull-notifications-about-mailbox-events-by-using-ews-in-exchange.md). 
   
 In der folgenden Tabelle sind die Vorgänge und Klassen aufgeführt, die zum Abrufen von Ereignissen erforderlich sind. 
   
 **Tabelle 3. Elemente und Klassen für das Herstellen einer Verbindung und das Abrufen von Ereignissen**
 
-|**Abonnementtyp**|**EWS-Vorgang**|**EWS Managed API-Methode**|**Funktionsweise**|
+|**Abonnementtyp**|**EWS-Vorgang**|**EWS Managed API-Methode**|**Funktion der Einstellung**|
 |:-----|:-----|:-----|:-----|
-|Streaming  <br/> |[GetStreamingEvents-Vorgang](http://msdn.microsoft.com/library/8da95423-72bc-4034-90a8-162eedcd059b%28Office.15%29.aspx) <br/> |[StreamingSubscriptionConnection.AddSubscription-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.streamingsubscriptionconnection.addsubscription%28v=exchg.80%29.aspx) <br/> |Erstellt eine hängende Get-Anforderung auf dem Server, auf die geantwortet wird, wenn Ereignisse auftreten.  <br/> |
-|Pull  <br/> |[GetEvents-Vorgang](http://msdn.microsoft.com/library/f268efe5-9a1a-41a2-b6a6-51fcde7720a1%28Office.15%29.aspx) <br/> |[PullSubscription.GetEvents-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.pullsubscription.getevents%28v=exchg.80%29.aspx) <br/> |Ruft Pullbenachrichtigungsereignisse vom Server ab.  <br/> |
+|Streaming  <br/> |[GetStreamingEvents-Vorgang](http://msdn.microsoft.com/library/8da95423-72bc-4034-90a8-162eedcd059b%28Office.15%29.aspx) <br/> |[StreamingSubscriptionConnection.AddSubscription-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.streamingsubscriptionconnection.addsubscription%28v=exchg.80%29.aspx) <br/> |Erstellt eine hängende Get-Anforderung auf dem Server, auf die geantwortet wird, wenn Ereignisse auftreten.  <br/> |
+|Pull  <br/> |[GetEvents-Vorgang](http://msdn.microsoft.com/library/f268efe5-9a1a-41a2-b6a6-51fcde7720a1%28Office.15%29.aspx) <br/> |[PullSubscription.GetEvents-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.pullsubscription.getevents%28v=exchg.80%29.aspx) <br/> |Ruft Pullbenachrichtigungsereignisse vom Server ab.  <br/> |
 |Push  <br/> |Nicht zutreffend.  <br/> |Nicht zutreffend.  <br/> |Pushbenachrichtigungen werden automatisch an den Webdienst-Listener (die in der Abonnementanforderung angegebene Callback-URL) gesendet. Es müssen keine zusätzlichen Methoden oder Operationen aufgerufen werden.  <br/> |
    
 ## <a name="how-do-i-unsubscribe-to-notifications"></a>Wie kann ich ein Abonnement von Benachrichtigungen kündigen?
@@ -144,8 +144,8 @@ Die folgende Tabelle enthält die Methoden, mit deren Hilfe Sie alle Abonnementt
 
 |**Abonnementtyp**|**EWS**|**EWS Managed API**||
 |:-----|:-----|:-----|:-----|
-|Streaming  <br/> |[Vorgang des Kündigens von Abonnements](http://msdn.microsoft.com/library/994a9d2b-1501-4804-90f0-12bd914496ec%28Office.15%29.aspx) <br/> |[StreamingSubscription.BeginUnsubscribe-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.streamingsubscription.beginunsubscribe%28v=exchg.80%29.aspx) <br/> [StreamingSubscription.EndUnsubscribe-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.streamingsubscription.endunsubscribe%28v=exchg.80%29.aspx) <br/> [StreamingSubscription.Unsubscribe-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.streamingsubscription.unsubscribe%28v=exchg.80%29.aspx) <br/> ||
-|Pull  <br/> |[Vorgang des Kündigens von Abonnements](http://msdn.microsoft.com/library/994a9d2b-1501-4804-90f0-12bd914496ec%28Office.15%29.aspx) <br/> |[PullSubscription.BeginUnsubscribe-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.pullsubscription.beginunsubscribe%28v=exchg.80%29.aspx) <br/> [PullSubscription.EndUnsubscribe-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.pullsubscription.endunsubscribe%28v=exchg.80%29.aspx) <br/> [PullSubscription.Unsubscribe-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.pullsubscription.unsubscribe%28v=exchg.80%29.aspx) <br/> ||
+|Streaming  <br/> |[Vorgang des Kündigens von Abonnements](http://msdn.microsoft.com/library/994a9d2b-1501-4804-90f0-12bd914496ec%28Office.15%29.aspx) <br/> |[StreamingSubscription.BeginUnsubscribe-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.streamingsubscription.beginunsubscribe%28v=exchg.80%29.aspx) <br/> [StreamingSubscription.EndUnsubscribe-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.streamingsubscription.endunsubscribe%28v=exchg.80%29.aspx) <br/> [StreamingSubscription.Unsubscribe-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.streamingsubscription.unsubscribe%28v=exchg.80%29.aspx) <br/> ||
+|Pull  <br/> |[Vorgang des Kündigens von Abonnements](http://msdn.microsoft.com/library/994a9d2b-1501-4804-90f0-12bd914496ec%28Office.15%29.aspx) <br/> |[PullSubscription.BeginUnsubscribe-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.pullsubscription.beginunsubscribe%28v=exchg.80%29.aspx) <br/> [PullSubscription.EndUnsubscribe-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.pullsubscription.endunsubscribe%28v=exchg.80%29.aspx) <br/> [PullSubscription.Unsubscribe-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.pullsubscription.unsubscribe%28v=exchg.80%29.aspx) <br/> ||
 |Push  <br/> |Gibt **Unsubscribe** im [StatusFrequency](http://msdn.microsoft.com/library/917474e2-a426-4166-b825-53783a41dad4%28Office.15%29.aspx)-Element der [SendNotificationResponseMessage](http://msdn.microsoft.com/library/2c6d681b-67ac-4331-bc6b-a2e709b638e3%28Office.15%29.aspx) zurück <br/> |Nicht zutreffend. Lassen Sie für das Abonnement stattdessen ein Timeout auftreten.  <br/> ||
    
 Alternativ können Sie für jedes der Abonnements eine Zeitüberschreitung auftreten lassen. 
@@ -154,9 +154,9 @@ Alternativ können Sie für jedes der Abonnements eine Zeitüberschreitung auftr
 
 |**Abonnementtyp**|**Timeoutwert in EWS**|**Timeoutwert in der EWS Managed API**|**Timeoutverarbeitung**|
 |:-----|:-----|:-----|:-----|
-|Streaming  <br/> |[ConnectionTimeout](http://msdn.microsoft.com/library/14da68a0-bcca-4281-a774-47644baa4ee9%28Office.15%29.aspx)-Element  <br/> | *lifetime*  -Parameter des [StreamingSubscriptionConnection](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.streamingsubscriptionconnection.streamingsubscriptionconnection%28v=exchg.80%29.aspx)-Konstruktors  <br/> |Bei der EWS Managed API wird nach Ablauf des Timeoutswerts das [OnDisconnect](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.streamingsubscriptionconnection.ondisconnect%28v=exchg.80%29.aspx)-Ereignis ausgelöst. Wenn die [StreamingSubscriptionConnection.Open](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.streamingsubscriptionconnection.open%28v=exchg.80%29.aspx)-Methode nicht aufgerufen wird, wird die Verbindung geschlossen.  <br/> Bei EWS gibt nach Ablauf des Timeoutwerts die [GetUserConfigurationResponse](http://msdn.microsoft.com/library/5e418c91-c836-4de0-a80d-f0dad0c684d7%28Office.15%29.aspx)-Nachricht den Wert [ConnectionStatus](http://msdn.microsoft.com/library/4300f9d6-8bf9-48c2-9f07-d80197864e17%28Office.15%29.aspx) "Geschlossen" zurück.  <br/> |
-|Pull  <br/> |[Timeout](http://msdn.microsoft.com/library/c2e1ca5a-6667-4f6f-aac4-89de33bddc54%28Office.15%29.aspx)-Element  <br/> | *timeout*  -Parameter der [SubscribeToPullNotification](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.subscribetopullnotifications%28v=exchg.80%29.aspx)-Methode  <br/> |Nachdem der Timeoutwert abgelaufen ist, löscht der Server das Abonnement.  <br/> |
-|Push  <br/> |[StatusFrequency](http://msdn.microsoft.com/library/917474e2-a426-4166-b825-53783a41dad4%28Office.15%29.aspx)-Element  <br/> | *frequency*  -Parameter der [SubscribeToPushNotification](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.subscribetopushnotifications%28v=exchg.80%29.aspx)-Methode  <br/> |Wenn der Server keine Antwort auf eine Pushbenachrichtigung oder ein Statusping erhält, wird das Senden der Nachricht mehrere Male erneut versucht, bevor das Senden der Benachrichtiungen beendet wird. Weitere Informationen finden Sie unter [StatusFrequency](http://msdn.microsoft.com/library/917474e2-a426-4166-b825-53783a41dad4%28Office.15%29.aspx).  <br/> |
+|Streaming  <br/> |[ConnectionTimeout](http://msdn.microsoft.com/library/14da68a0-bcca-4281-a774-47644baa4ee9%28Office.15%29.aspx)-Element  <br/> | *lifetime*  -Parameter des [StreamingSubscriptionConnection](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.streamingsubscriptionconnection.streamingsubscriptionconnection%28v=exchg.80%29.aspx)-Konstruktors  <br/> |Bei der EWS Managed API wird nach Ablauf des Timeoutswerts das [OnDisconnect](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.streamingsubscriptionconnection.ondisconnect%28v=exchg.80%29.aspx)-Ereignis ausgelöst. Wenn die [StreamingSubscriptionConnection.Open](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.streamingsubscriptionconnection.open%28v=exchg.80%29.aspx)-Methode nicht aufgerufen wird, wird die Verbindung geschlossen.  <br/> Bei EWS gibt nach Ablauf des Timeoutwerts die [GetUserConfigurationResponse](http://msdn.microsoft.com/library/5e418c91-c836-4de0-a80d-f0dad0c684d7%28Office.15%29.aspx)-Nachricht den Wert [ConnectionStatus](http://msdn.microsoft.com/library/4300f9d6-8bf9-48c2-9f07-d80197864e17%28Office.15%29.aspx) "Geschlossen" zurück.  <br/> |
+|Pull  <br/> |[Timeout](http://msdn.microsoft.com/library/c2e1ca5a-6667-4f6f-aac4-89de33bddc54%28Office.15%29.aspx)-Element  <br/> | *timeout*  -Parameter der [SubscribeToPullNotification](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.subscribetopullnotifications%28v=exchg.80%29.aspx)-Methode  <br/> |Nachdem der Timeoutwert abgelaufen ist, löscht der Server das Abonnement.  <br/> |
+|Push  <br/> |[StatusFrequency](http://msdn.microsoft.com/library/917474e2-a426-4166-b825-53783a41dad4%28Office.15%29.aspx)-Element  <br/> | *frequency*  -Parameter der [SubscribeToPushNotification](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.subscribetopushnotifications%28v=exchg.80%29.aspx)-Methode  <br/> |Wenn der Server keine Antwort auf eine Pushbenachrichtigung oder ein Statusping erhält, wird das Senden der Nachricht mehrere Male erneut versucht, bevor das Senden der Benachrichtiungen beendet wird. Weitere Informationen finden Sie unter [StatusFrequency](http://msdn.microsoft.com/library/917474e2-a426-4166-b825-53783a41dad4%28Office.15%29.aspx).  <br/> |
    
 ## <a name="can-i-limit-subscriptions"></a>Kann ich Abonnements einschränken?
 <a name="bk_limitsubs"> </a>
@@ -166,13 +166,13 @@ In einer lokalen Bereitstellung können Sie die Anzahl von Abonnements pro Benut
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 <a name="bk_limitsubs"> </a>
 
-- [Stream-Benachrichtigungen bezüglich Postfach Ereignisse mithilfe von EWS in Exchange](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md)
+- [Streambenachrichtigungen zu Postfachereignissen mithilfe von EWS in Exchange](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md)
     
-- [Ziehen Sie Benachrichtigungen über Ereignisse Postfach mithilfe der EWS in Exchange](how-to-pull-notifications-about-mailbox-events-by-using-ews-in-exchange.md)
+- [Pullbenachrichtigungen zu Postfachereignissen mithilfe von EWS in Exchange](how-to-pull-notifications-about-mailbox-events-by-using-ews-in-exchange.md)
     
 - [Verwalten von Affinität zwischen einer Gruppe von Abonnements und dem Postfachserver in Exchange](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md)
     
-- [Fehlerbehandlung Benachrichtigung-bezogene in EWS in Exchange](handling-notification-related-errors-in-ews-in-exchange.md)
+- [Umgang von Fehlern im Zusammenhang mit Benachrichtigungen in EWS in Exchange](handling-notification-related-errors-in-ews-in-exchange.md)
     
 ## <a name="see-also"></a>Siehe auch
 

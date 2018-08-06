@@ -14,7 +14,7 @@ ms.assetid: cf6fd871-9a65-4f34-8557-c8c71dd7ce09
 description: Suchen nach Informationen zu in Exchange verfügbaren EWS-Vorgängen
 ms.openlocfilehash: c56c3be746138cec251836fcb61ee3738d168869
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758308"
@@ -23,7 +23,7 @@ ms.locfileid: "19758308"
 
 Suchen nach Informationen zu in Exchange verfügbaren EWS-Vorgängen
   
-Exchange-Webdienste stellen viele Vorgänge bereit, mit denen Sie auf Informationen aus dem Exchange-Speicher zugreifen können. Die Artikel in diesem Abschnitt stellen Informationen zur Gesamtstruktur der Anforderungen, Antworten und Fehlerantwortnachrichten für EWS-Vorgänge und XML-Beispiele für die einzelnen Vorgänge bereit. Sie stellen eine Übersicht zu den Nachrichtenstrukturen bereit, die zwischen Client und Server gesendet werden. Anhand dieser Informationen können Sie Nachrichtenstrukturen debuggen und nach Informationen zu den Funktionen in EWS-Anforderungen suchen. Weitere Informationen über welche XML-Struktur darstellt, finden Sie - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md).
+Exchange-Webdienste stellen viele Vorgänge bereit, mit denen Sie auf Informationen aus dem Exchange-Speicher zugreifen können. Die Artikel in diesem Abschnitt stellen Informationen zur Gesamtstruktur der Anforderungen, Antworten und Fehlerantwortnachrichten für EWS-Vorgänge und XML-Beispiele für die einzelnen Vorgänge bereit. Sie stellen eine Übersicht zu den Nachrichtenstrukturen bereit, die zwischen Client und Server gesendet werden. Sie können diese Informationen zu Debuggen von Nachrichtenstrukturen und zum Suchen von Informationen darüber verwenden, was Sie in einer EWS-Anforderung ausführen können. Weitere Informationen dazu, was die XML-Struktur darstellt, finden Sie unter [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md).
   
 Alle EWS-Funktionen beziehen sich auf eine Version des Schemas. In neuen Versionen von Exchange Server oder Exchange Online werden neue EWS-Schemaversionen eingeführt. Das [RequestServerVersion](requestserverversion.md)-Element enthält ein **Version**-Attribut, das der Schemaversion die Serverversion zuordnet. In diesem Artikel werden Informationen dazu bereitgestellt, wann die einzelnen Vorgänge eingeführt wurden. Für bestimmte Funktionen innerhalb eines Vorgangs ist möglicherweise eine spätere Version des Diensts erforderlich. Die Schemas mit Versionsangabe sind so implementiert, dass Clients, die für eine ältere Version von EWS vorgesehen sind, auch mit neueren EWS-Versionen funktionieren. 
   
@@ -56,38 +56,38 @@ In der folgenden Tabelle sind die Exchange-Postfachdatenvorgänge aufgeführt.
 |**Name des Vorgangs**|**Eingeführt in**|
 |:-----|:-----|
 |[ArchiveItem-Vorgang](archiveitem-operation.md) <br/> |Exchange 2013  <br/> |
-|[CreateItem Operation](createitem-operation.md) <br/> |Exchange 2007  <br/> |
-|[CopyItem Operation](copyitem-operation.md) <br/> |Exchange 2007  <br/> |
-|[DeleteItem-Operation](deleteitem-operation.md) <br/> |Exchange 2007  <br/> |
-|[FindItem-Vorgang](finditem-operation.md) <br/> |Exchange 2007  <br/> |
-|[GetItem Operation](getitem-operation.md) <br/> |Exchange 2007  <br/> |
+|[CreateItem Operation](createitem-operation.md) <br/> |Exchange 2007  <br/> |
+|[CopyItem Operation](copyitem-operation.md) <br/> |Exchange 2007  <br/> |
+|[DeleteItem-Operation](deleteitem-operation.md) <br/> |Exchange 2007  <br/> |
+|[FindItem-Vorgang](finditem-operation.md) <br/> |Exchange 2007  <br/> |
+|[GetItem Operation](getitem-operation.md) <br/> |Exchange 2007  <br/> |
 |[MarkAllItemsAsRead-Vorgang](markallitemsasread-operation.md) <br/> |Exchange 2013  <br/> |
-|[MoveItem Operation](moveitem-operation.md) <br/> |Exchange 2007  <br/> |
-|[SendItem Operation](senditem-operation.md) <br/> |Exchange 2007  <br/> |
-|[UpdateItem Operation](updateitem-operation.md) <br/> |Exchange 2007  <br/> |
+|[MoveItem Operation](moveitem-operation.md) <br/> |Exchange 2007  <br/> |
+|[SendItem Operation](senditem-operation.md) <br/> |Exchange 2007  <br/> |
+|[UpdateItem Operation](updateitem-operation.md) <br/> |Exchange 2007  <br/> |
    
 In der folgenden Tabelle sind die Exchange-Postfachdatenordnervorgänge aufgeführt.
   
 |**Name des Vorgangs**|**Eingeführt in**|
 |:-----|:-----|
-|[CreateFolder Operation](createfolder-operation.md) <br/> |Exchange 2007  <br/> |
+|[CreateFolder Operation](createfolder-operation.md) <br/> |Exchange 2007  <br/> |
 |[CreateFolderPath-Vorgang](createfolderpath-operation.md) <br/> |Exchange 2013  <br/> |
-|[CreateManagedFolder-Vorgang](createmanagedfolder-operation.md) <br/> |Exchange 2007. Diese Funktion wurde in Versionen von Exchange ab Exchange 2010 herabgestuft. Informationen zur Migration hin zur Verwendung von Aufbewahrungstags und -richtlinien für die Verwaltung von Nachrichtendatensätzen finden Sie unter [Migrieren von verwalteten Ordnern](http://technet.microsoft.com/en-us/library/dd298032%28v=exchg.141%29.aspx).  <br/> |
-|[CopyFolder-Vorgang](copyfolder-operation.md) <br/> |Exchange 2007  <br/> |
-|[DeleteFolder-Vorgang](deletefolder-operation.md) <br/> |Exchange 2007  <br/> |
+|[CreateManagedFolder-Vorgang](createmanagedfolder-operation.md) <br/> |Exchange 2007. Diese Funktion wurde in Versionen von Exchange ab Exchange 2010 herabgestuft. Informationen zur Migration hin zur Verwendung von Aufbewahrungstags und -richtlinien für die Verwaltung von Nachrichtendatensätzen finden Sie unter [Migrieren von verwalteten Ordnern](http://technet.microsoft.com/de-DE/library/dd298032%28v=exchg.141%29.aspx).  <br/> |
+|[CopyFolder-Vorgang](copyfolder-operation.md) <br/> |Exchange 2007  <br/> |
+|[DeleteFolder-Vorgang](deletefolder-operation.md) <br/> |Exchange 2007  <br/> |
 |[EmptyFolder-Vorgang](emptyfolder-operation.md) <br/> |Exchange 2010  <br/> |
-|[FindFolder Operation](findfolder-operation.md) <br/> |Exchange 2007  <br/> |
-|[GetFolder Operation](getfolder-operation.md) <br/> |Exchange 2007  <br/> |
-|[MoveFolder-Vorgang](movefolder-operation.md) <br/> |Exchange 2007  <br/> |
-|[UpdateFolder-Vorgang](updatefolder-operation.md) <br/> |Exchange 2007  <br/> |
+|[FindFolder Operation](findfolder-operation.md) <br/> |Exchange 2007  <br/> |
+|[GetFolder Operation](getfolder-operation.md) <br/> |Exchange 2007  <br/> |
+|[MoveFolder-Vorgang](movefolder-operation.md) <br/> |Exchange 2007  <br/> |
+|[UpdateFolder-Vorgang](updatefolder-operation.md) <br/> |Exchange 2007  <br/> |
    
 In der folgenden Tabelle sind die Exchange-Postfachdatenanlagenvorgänge aufgeführt.
   
 |**Name des Vorgangs**|**Eingeführt in**|
 |:-----|:-----|
-|[CreateAttachment-Vorgang](createattachment-operation.md) <br/> |Exchange 2007  <br/> |
-|[GetAttachment-Vorgang](getattachment-operation.md) <br/> |Exchange 2007  <br/> |
-|[DeleteAttachment-Vorgang](deleteattachment-operation.md) <br/> |Exchange 2007  <br/> |
+|[CreateAttachment-Vorgang](createattachment-operation.md) <br/> |Exchange 2007  <br/> |
+|[GetAttachment-Vorgang](getattachment-operation.md) <br/> |Exchange 2007  <br/> |
+|[DeleteAttachment-Vorgang](deleteattachment-operation.md) <br/> |Exchange 2007  <br/> |
    
 In der folgenden Tabelle sind die Exchange-Postfacherinnerungsvorgänge aufgeführt.
   
@@ -109,10 +109,10 @@ In der folgenden Tabelle sind die Exchange-Postfachdatenhilfsprogrammvorgänge a
 |**Name des Vorgangs**|**Eingeführt in**|
 |:-----|:-----|
 |[ConvertId-Vorgang](convertid-operation.md) <br/> |Exchange 2007 Service Pack 1  <br/> |
-|[Der ExpandDL-Vorgang](expanddl-operation.md) <br/> |Exchange 2007  <br/> |
+|[Der ExpandDL-Vorgang](expanddl-operation.md) <br/> |Exchange 2007  <br/> |
 |[GetUserPhoto-Vorgang](getuserphoto-operation.md) <br/> |Exchange 2013. Dieser Vorgang besitzt eine REST- und SOAP-Implementierung.  <br/> |
 |[MarkAsJunk Operation](markasjunk-operation.md) <br/> |Exchange 2013  <br/> |
-|[ResolveNames-Vorgang](resolvenames-operation.md) <br/> |Exchange 2007  <br/> |
+|[ResolveNames-Vorgang](resolvenames-operation.md) <br/> |Exchange 2007  <br/> |
 |[GetPasswordExpirationDate-Vorgang](getpasswordexpirationdate-operation.md) <br/> |Exchange 2010 SP1  <br/> |
    
 ## <a name="availability-operations"></a>Verfügbarkeitsvorgänge
@@ -124,11 +124,11 @@ In der folgenden Tabelle werden die Verfügbarkeitsvorgänge aufgeführt.
   
 |**Name des Vorgangs**|**Eingeführt in**|
 |:-----|:-----|
-|[GetUserAvailability-Vorgang](getuseravailability-operation.md) <br/> |Exchange 2007  <br/> |
+|[GetUserAvailability-Vorgang](getuseravailability-operation.md) <br/> |Exchange 2007  <br/> |
 |[GetRoomLists-Vorgang](getroomlists-operation.md) <br/> |Exchange 2010  <br/> |
 |[GetRooms-Vorgang](getrooms-operation.md) <br/> |Exchange 2010  <br/> |
-|[GetUserOofSettings-Vorgang](getuseroofsettings-operation.md) <br/> |Exchange 2007  <br/> |
-|[SetUserOofSettings-Vorgang](setuseroofsettings-operation.md) <br/> |Exchange 2007  <br/> |
+|[GetUserOofSettings-Vorgang](getuseroofsettings-operation.md) <br/> |Exchange 2007  <br/> |
+|[SetUserOofSettings-Vorgang](setuseroofsettings-operation.md) <br/> |Exchange 2007  <br/> |
    
 ## <a name="bulk-transfer-operations"></a>Massenübertragungsvorgänge
 <a name="bk_bulk_transfer"> </a>
@@ -214,10 +214,10 @@ In der folgenden Tabelle sind die Benachrichtigungsvorgänge aufgeführt.
   
 |**Name des Vorgangs**|**Eingeführt in**|
 |:-----|:-----|
-|[GetEvents-Vorgang](getevents-operation.md) <br/> |Exchange 2007  <br/> |
+|[GetEvents-Vorgang](getevents-operation.md) <br/> |Exchange 2007  <br/> |
 |[GetStreamingEvents-Vorgang](getstreamingevents-operation.md) <br/> |Exchange 2010 SP1  <br/> |
-|[Vorgang abonnieren](subscribe-operation.md) <br/> |Exchange 2007  <br/> |
-|[Vorgang des Kündigens von Abonnements](unsubscribe-operation.md) <br/> |Exchange 2007  <br/> |
+|[Vorgang abonnieren](subscribe-operation.md) <br/> |Exchange 2007  <br/> |
+|[Vorgang des Kündigens von Abonnements](unsubscribe-operation.md) <br/> |Exchange 2007  <br/> |
    
 ## <a name="persona-operations"></a>Persona-Vorgänge
 <a name="bk_personas"> </a>
@@ -274,8 +274,8 @@ In der folgenden Tabelle sind die Synchronisierungsvorgänge aufgeführt.
   
 |**Name des Vorgangs**|**Eingeführt in**|
 |:-----|:-----|
-|[SyncFolderHierarchy-Vorgang](syncfolderhierarchy-operation.md) <br/> |Exchange 2007  <br/> |
-|[SyncFolderItems-Vorgang](syncfolderitems-operation.md) <br/> |Exchange 2007  <br/> |
+|[SyncFolderHierarchy-Vorgang](syncfolderhierarchy-operation.md) <br/> |Exchange 2007  <br/> |
+|[SyncFolderItems-Vorgang](syncfolderitems-operation.md) <br/> |Exchange 2007  <br/> |
    
 ## <a name="time-zone-operation"></a>Zeitzonenvorgänge
 <a name="bk_timezone"> </a>

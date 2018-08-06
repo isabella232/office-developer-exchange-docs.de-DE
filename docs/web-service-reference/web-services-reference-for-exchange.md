@@ -8,7 +8,7 @@ ms.assetid: 6c969133-6036-448b-af39-a3caf9917e98
 description: Suchen Sie nach Referenzinformationen für Webdienste in Exchange.
 ms.openlocfilehash: 417ade6956ee5e09fe7ad63f09e59f0079d58613
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19839515"
@@ -30,7 +30,7 @@ Dieser Abschnitt enthält Referenzinformationen für die APIs, die auf Exchange 
 - [EWS-Objektmodellen für Exchange generiert.](http://msdn.microsoft.com/library/67d7d831-9c53-46da-80e4-18f562e71284%28Office.15%29.aspx): Enthält die API-Referenz für die automatisch generierten Proxyklassen im ExchangeWebServices-Namespace. 
     
     > [!NOTE]
-    > [!HINWEIS] Für Clients, die auf Versionen von .NET Framework ab .NET Framework 3.5 basieren, wird empfohlen, die EWS Managed API zu verwenden, um auf EWS zuzugreifen. Weitere Informationen finden Sie unter [Erste Schritte mit verwalteten EWS-API-Clientanwendungen](http://msdn.microsoft.com/library/c2267733-6f4f-49e5-9614-1e4a24c3af1a%28Office.15%29.aspx). 
+    > Für Clients, die auf Versionen von .NET Framework ab .NET Framework 3.5 basieren, wird empfohlen, die EWS Managed API zu verwenden, um auf EWS zuzugreifen. Weitere Informationen finden Sie unter [Erste Schritte mit verwalteten EWS-API-Clientanwendungen](http://msdn.microsoft.com/library/c2267733-6f4f-49e5-9614-1e4a24c3af1a%28Office.15%29.aspx). 
   
 Informationen dazu, welche Gruppe von APIs Sie verwenden sollten, finden Sie unter [Übersicht über den EWS-Cliententwurf für Exchange](http://msdn.microsoft.com/library/b26f67aa-7c66-4d7d-98b3-746f26ab37f4%28Office.15%29.aspx).
   

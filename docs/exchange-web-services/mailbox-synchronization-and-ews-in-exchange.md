@@ -1,179 +1,179 @@
 ---
-title: Postfach-Synchronisierung und EWS in Exchange
+title: Synchronisierung von Postfächern und EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: decf1eee-9743-44f3-9333-b3a01af3683e
-description: Informieren Sie sich die Funktionsweise der Postfach-Synchronisierung bei Verwendung von EWS zum Zugreifen auf Exchange.
+description: Erfahren Sie, wie die Postfachsynchronisierung funktioniert, wenn Sie EWS zum Zugreifen auf Exchange verwenden.
 ms.openlocfilehash: 7bca2f7b754dcceee99e4bc24519f6e4f6423ae7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757045"
 ---
-# <a name="mailbox-synchronization-and-ews-in-exchange"></a>Postfach-Synchronisierung und EWS in Exchange
+# <a name="mailbox-synchronization-and-ews-in-exchange"></a>Synchronisierung von Postfächern und EWS in Exchange
 
-Informieren Sie sich die Funktionsweise der Postfach-Synchronisierung bei Verwendung von EWS zum Zugreifen auf Exchange.
+Erfahren Sie, wie die Postfachsynchronisierung funktioniert, wenn Sie EWS zum Zugreifen auf Exchange verwenden.
   
-EWS in Exchange werden zwei Arten der Synchronisierung Postfachinhalt abgerufen und in der Inhalt von Postfächern geändert:
+EWS in Exchange verwendet zwei Synchronisierungsarten zum Abrufen von Postfachinhalten und Änderungen an Postfachinhalten:
   
 - Synchronisierung von Ordnern
     
-- Element-Synchronisierung
+- Synchronisierung von Elementen
     
-In diesem Artikel lernen Sie sowohl Synchronisierungstypen, Funktionsweise der Synchronisierung, Entwurfsmuster Synchronisierung und bewährte Methoden Synchronisierung.
+In diesem Artikel erfahren Sie mehr über die beiden Synchronisierungsarten, die Funktionsweise der Synchronisierung, Entwurfsmuster für die Synchronisierung sowie bewährte Methoden für die Synchronisierung.
   
-## <a name="folder-and-item-synchronization"></a>Ordner- und Synchronisierung
+## <a name="folder-and-item-synchronization"></a>Synchronisierung von Ordnern und Elementen
 <a name="bk_typesofsyncs"> </a>
 
-Synchronisierung Ordner synchronisiert wird eine Ordnerstruktur oder Ordner-Hierarchie. Element-Synchronisierung synchronisiert wird, die Elemente in einem Ordner. Beim Synchronisieren von Elementen müssen Sie jeden Ordner im Postfach unabhängig voneinander zu synchronisieren. EWS oder die EWS Managed API können in Ihrer Anwendung Sie die Ordner und Element-Synchronisierung implementieren.
+Bei der Ordnersynchronisierung wird eine Ordnerstruktur oder Ordnerhierarchie synchronisiert. Bei der Elementsynchronisierung werden die Elemente in einem Ordner synchronisiert. Wenn Sie Elemente synchronisieren, müssen Sie jeden Ordner im Postfach separat synchronisieren. Sie können EWS oder die verwaltete EWS-API in Ihrer Anwendung verwenden, um sowohl die Ordner- als auch die Elementsynchronisierung zu implementieren.
   
-**In Tabelle 1. EWS-Vorgänge und EWS Managed API-Methoden zum Synchronisieren von Ordnern und Elementen**
+**Tabelle 1: EWS-Vorgänge und von EWS verwaltete API-Methoden zum Synchronisieren von Ordnern und Elementen**
 
-|**EWS-Vorgang**|**EWS Managed API-Methode**|
+|**EWS-Vorgang**|**Von EWS verwaltete API-Methode**|
 |:-----|:-----|
-|[SyncFolderHierarchy](http://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) <br/> |[ExchangeService.SyncFolderHierarchy-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderhierarchy%28v=exchg.80%29.aspx) <br/> |
-|[SyncFolderItems](http://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) <br/> |[ExchangeService.SyncFolderItems-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) <br/> |
+|[SyncFolderHierarchy](http://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) <br/> |[ExchangeService.SyncFolderHierarchy-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderhierarchy%28v=exchg.80%29.aspx) <br/> |
+|[SyncFolderItems](http://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) <br/> |[ExchangeService.SyncFolderItems-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) <br/> |
    
-Der Bereich der Synchronisierung, die auftritt, unterscheidet sich je nachdem, ob es einen anfänglichen oder eine laufende Sync, wie folgt:
+Der Umfang der ausgeführten Synchronisierung variiert in Abhängigkeit davon, ob es sich um eine erste oder eine fortlaufende Synchronisierung handelt:
   
-- Eine anfängliche Synchronisierung synchronisiert alle Ordner oder Elemente auf dem Server an den Client. Nach der ersten Synchronisierung hat der Client einen Synchronisierungsstatus, den für zukünftige Synchronisierungen gespeichert. Der Synchronisierungsstatus stellt alle Änderungen auf dem Server, den der Server an den Client kommuniziert.
+- Bei einer ersten Synchronisierung werden alle Ordner oder Elemente auf dem Server auf den Client synchronisiert. Nach der ersten Synchronisierung weist der Client einen Synchronisierungsstatus auf, der für zukünftige Synchronisierungen gespeichert wird. Der Synchronisierungsstatus stellt alle Änderungen auf dem Server dar, die der Server an den Client kommuniziert hat.
     
-- Laufende Synchronisierung synchronisieren Sie alle Elemente oder Ordner, die hinzugefügt, gelöscht oder seit der vorherigen Synchronisierung geändert wurden. Der Server nutzt die Synchronisierungsstatus die Änderungen an den Client während der laufenden Synchronisierung Schleifen Unwichtigstes berechnet werden sollen.
+- Bei fortlaufenden Synchronisierungen werden alle Elemente oder Ordner synchronisiert, die hinzugefügt, gelöscht oder seit der vorherigen Synchronisierung geändert wurden. Der Server verwendet den Synchronisierungsstatus, um die Änderungen zu berechnen, die während der laufenden Synchronisierungsschleifen an den Client gemeldet werden.
     
-Jede Synchronisierungsmethode oder der Vorgang gibt eine Liste der Änderungen nicht, den Ordner oder die Nachricht, die geändert zurück. Über die folgenden Änderungstypen werden Änderungen an Elemente und Ordner aufgeführt:
+Jede Synchronisierungsmethode oder jeder Vorgang gibt eine Liste von Änderungen zurück, und nicht den eigentlichen Ordner oder die Nachricht, der bzw. die geändert wurde. Änderungen an Elementen und Ordnern werden anhand der folgenden Änderungstypen gemeldet:
   
-- Erstellen – Gibt an, dass eine neues Element oder einen Ordner auf dem Client erstellt werden soll.
+- Erstellen – Gibt an, dass ein neues Element oder ein neuer Ordner auf dem Client erstellt werden soll.
     
-- Update – Gibt an, dass eines Elements oder Ordners auf dem Client geändert werden soll.
+- Aktualisieren – Gibt an, dass ein neues Element oder ein neuer Ordner auf dem Client geändert werden soll.
     
-- Löschen – Gibt an, dass eines Elements oder Ordners auf dem Client gelöscht werden soll.
+- Löschen – Gibt an, dass ein Element oder ein Ordner auf dem Client gelöscht werden soll.
     
-- ReadStateChange für EWS oder ReadFlagChange für die EWS Managed API – gibt an, dass, die den Zustand "gelesen" des Artikels aus ungelesene zum Lesen oder Lesen auf ungelesene geändert hat.
+- ReadStateChange für EWS oder ReadFlagChange für die verwaltete EWS-API – Gibt an, dass der Lesestatus des Elements geändert wurde, entweder von ungelesen zu gelesen oder von gelesen zu ungelesen.
     
-In Exchange Online, Exchange Online als Teil von Office 365 und Exchange beginnend mit Exchange 2010 SP2-Versionen werden Elemente und Ordner in der Reihenfolge von absteigend zurückgegeben. In früheren Versionen von Exchange werden Elemente und Ordner vom ältesten zum neuesten zurückgegeben.
+In Exchange Online, Exchange Online als Teil von Office 365 und Versionen von Exchange ab Exchange 2010 SP2 werden Elemente und Ordner in der Reihenfolge vom neuesten zum ältesten Element/Ordner zurückgegeben. In früheren Versionen von Exchange werden Elemente und Ordner in der Reihenfolge vom ältesten zum neuesten Element/Ordner zurückgegeben.
   
-## <a name="how-does-ews-synchronization-work"></a>Funktionsweise der EWS-Synchronisierung?
+## <a name="how-does-ews-synchronization-work"></a>Wie funktioniert die EWS-Synchronisierung?
 <a name="bk_howdoesitwork"> </a>
 
-Kurz gesagt, wenn Sie ein Postfach zum ersten Mal synchronisiert sind, verwenden Sie das Verfahren wie in Abbildung 1 dargestellt. Obwohl Sie andere [Synchronisierung Entwurfsmuster](mailbox-synchronization-and-ews-in-exchange.md#bk_syncpatterns)verwenden können, sollten diesem Ansatz für skalierbare Applications.
+Kurz zusammengefasst: Wenn Sie ein Postfach zum ersten Mal synchronisieren, verwenden Sie den Vorgang, wie in Abbildung 1 dargestellt. Sie können zwar andere [Synchronisierungsentwurfsmuster](mailbox-synchronization-and-ews-in-exchange.md#bk_syncpatterns) verwenden, dieser Ansatz wird jedoch für skalierbare Anwendungen empfohlen.
   
-**Abbildung 1. Entwurfsmuster für die anfängliche Synchronisierung**
+**Abbildung 1. Entwurfsmuster für erste Synchronisierung**
 
 ![Abbildung des Entwurfsmusters für die anfängliche Synchronisierung. Der Client ruft "SyncFolderHierarchy" und "Load" oder "GetItem" zum Abrufen der Ordner und dann "SyncFolderItems" und "LoadPropertiesForItems" oder "GetItem" zum Abrufen der Elemente in allen Ordnern auf.](media/Exchange2013_SyncInitial.png)
   
-Wenn Sie eine vorhandene Synchronisierungsstatus auf dem Client zum verwenden um ein Postfachs zu synchronisieren, wird empfohlen, dass Sie das Entwurfsmuster implementieren, wie in Abbildung 2 dargestellt. 
+Wenn Sie einen vorhandenen Synchronisierungsstatus auf dem Client verwenden, um ein Postfach zu synchronisieren, wird empfohlen, dass Sie das in Abbildung 2 dargestellte Entwurfsmuster implementieren. 
   
-**Abbildung 2. Laufende Synchronisierung Entwurfsmuster**
+**Abbildung 2. Entwurfsmuster für fortlaufende Synchronisierung**
 
 ![Abbildung des Entwurfsmusters für die fortlaufende Synchronisierung. Ein Client empfängt eine Benachrichtigung, ruft anschließend "SyncFolderHierarchy" oder "SyncFolderItems" auf, ruft die Eigenschaften ab, aktualisiert dann den Client oder aktualisiert das Lesekennzeichen auf dem Client.](media/Exchange2013_Sync_Ongoing.png)
   
-## <a name="synchronization-design-patterns"></a>Entwurfsmuster für die Synchronisierung
+## <a name="synchronization-design-patterns"></a>Synchronisierungsentwurfsmuster
 <a name="bk_syncpatterns"> </a>
 
-Sie können eine der zwei Entwurfsmuster für die Synchronisierung in der Anwendung, um Ihre Postfächer auf dem aktuellen Stand zu halten: Benachrichtigung-basierte Synchronisation oder der Synchronisierung nur Ansatz.
+Sie können eines der beiden Synchronisierungsentwurfsmuster in Ihrer Anwendung verwenden, um Ihre Postfächer auf dem neuesten Stand zu halten: benachrichtigungsbasierte Synchronisierung oder der Ansatz, bei dem nur eine Synchronisierung ausgeführt wird.
   
-Benachrichtigung-basierte Synchronisierung nutzt wie in [Abbildung 2](mailbox-synchronization-and-ews-in-exchange.md#bk_howdoesitwork)dargestellt zu warnen, den Clients zum Tätigen eines Anrufs auf die EWS Managed API [SyncFolderItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) oder [SyncFolderHierarchy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderhierarchy%28v=exchg.80%29.aspx) -Methode oder die EWS [SyncFolderHierarchy Benachrichtigungen ](http://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx)oder [SyncFolderItems](http://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) Vorgänge. Diese Art von Synchronisierung wird im Allgemeinen für skalierbare Applikationen empfohlen, aber möglicherweise nicht am besten für jeden Benutzer. Benachrichtigung-basierte Synchronisation hat die folgenden Vorteile: 
+Die benachrichtigungsbasierte Synchronisation, wie in [Abbildung 2](mailbox-synchronization-and-ews-in-exchange.md#bk_howdoesitwork) dargestellt, basiert auf Benachrichtigungen, um den Client darauf aufmerksam zu machen, dass er die Methoden [SyncFolderItems](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) oder [ SyncFolderHierarchy](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderhierarchy%28v=exchg.80%29.aspx) der verwalteten EWS-API oder die Vorgänge [SyncFolderHierarchy](http://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) oder [SyncFolderItems](http://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) von EWS aufrufen soll. Diese Art von Synchronisierung wird im Allgemeinen für skalierbare Anwendungen empfohlen, ist aber möglicherweise nicht für alle Benutzer optimal geeignet. Die benachrichtigungsbasierte Synchronisierung weist die folgenden Vorteile auf: 
   
-- Benachrichtigungen werden optimiert, um Anrufe an die Exchange-Back-End-Datenbank zu reduzieren. Ereignis Warteschlangen und Abonnements werden von den Mailbox-Server (oder den Clientzugriffsserver in Exchange 2010 und Exchange 2007) verwaltet. die Verwaltung der Ereignisse und Abonnements verwendet jedoch weniger Ressourcen als die Alternative häufigere Synchronisierung Anrufe an die Exchange-Datenbank. Darüber hinaus muss Exchange bestimmte [Richtlinien Drosselung](ews-throttling-in-exchange.md) für Benachrichtigungen und Abonnements, um Konsum von Ressourcen zu schützen. 
+- Benachrichtigungen sind so optimiert, dass die Anzahl von Aufrufen der Back-End-Exchange-Datenbank reduziert wird. Ereigniswarteschlangen und Abonnements werden vom Postfachserver (bzw. vom Clientzugriffsserver in Exchange 2010 und Exchange 2007) verwaltet. Die Verwaltung der Ereignisse und Abonnements verwendet jedoch weniger Ressourcen als die Alternative, die in häufigeren Synchronisierungsaufrufen der Exchange-Datenbank besteht. Exchange verfügt darüber hinaus über bestimmte [Einschränkungsrichtlinien](ews-throttling-in-exchange.md) für Benachrichtigungen und Abonnements, um den Verbrauch von Ressourcen zu schützen. 
     
-Es gibt jedoch auch einige Nachteile der Verwendung von Benachrichtigung-basierte Synchronisation:
+Es gibt bei der benachrichtigungsbasierten Synchronisierung jedoch auch einige Nachteile:
   
-- Benachrichtigungen sind lauten, da die meisten Szenarien mehrere Benachrichtigungen für einen Benutzer beabsichtigt beinhalten. Dies gilt insbesondere für den Ordner Kalender. Beispielsweise bei eine Besprechungsanfrage empfangen wird, werden mehrere Element- und Benachrichtigungen erstellt einschließlich einer benachrichtigungs an das Element und ein weiteres so ändern Sie das Element erstellen. Eine Möglichkeit zum Abwehren von diesen Nachteil ist um eine Verzögerung von einigen Sekunden in Ihren Anruf [Laden](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceobject.load%28v=exchg.80%29.aspx), [LoadPropertiesForItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.loadpropertiesforitems%28v=exchg.80%29.aspx), [GetItem](http://msdn.microsoft.com/en-us/library/exchange/aa565934%28v=exchg.150%29.aspx.aspx)oder [GetFolder](http://msdn.microsoft.com/en-us/library/exchange/aa580274%28v=exchg.150%29.aspx.aspx) zu erstellen. Im Fall einer Besprechungsanfrage Wenn Sie Anrufe an die **GetItem** Operation sofort vorgenommen haben Sie durch Aufrufen von das Element und ein weiteres so ändern Sie das Element erstellen möglicherweise. Rufen Sie stattdessen durch verzögern des Anrufs, Sie können den **GetItem** -Vorgang und die Änderungen, die die Erstellung und die Änderung des Elements gleichzeitig umfassen erhalten möchten. 
+- Benachrichtigungen sind sehr komplex, da in den meisten Szenarien mehrere Benachrichtigungen für eine Beabsichtigung des Benutzers verwendet werden. Dies gilt insbesondere für den Ordner „Kalender“. Wenn beispielsweise eine einzelne Besprechungsanfrage empfangen wird, werden mehrere Element- und Ordnerbenachrichtigungen erstellt, einschließlich einer Benachrichtigung zum Erstellen des Elements sowie eine weitere Benachrichtigung zum Ändern des Elements. Eine Möglichkeit, um diesen Nachteil zu verhindern, besteht darin, eine Verzögerung von ein paar Sekunden in den [Load](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.serviceobject.load%28v=exchg.80%29.aspx)-, [LoadPropertiesForItems](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.loadpropertiesforitems%28v=exchg.80%29.aspx)-, [GetItem](http://msdn.microsoft.com/de-DE/library/exchange/aa565934%28v=exchg.150%29.aspx.aspx)- oder [GetFolder](http://msdn.microsoft.com/de-DE/library/exchange/aa580274%28v=exchg.150%29.aspx.aspx)-Aufruf einzubauen. Wenn Sie im Falle einer Besprechungsanfrage unmittelbar Aufrufe des **GetItem**-Vorgangs vorgenommen haben, haben Sie vielleicht einen Aufruf zum Erstellen des Elements und einen weiteren zum Ändern des Elements. Durch Verzögern des Aufrufs können Sie stattdessen den **GetItem**-Vorgang einmal aufrufen und dadurch gleichzeitig die Änderungen abrufen, die mit dem Erstellen und Ändern des Elements einhergehen. 
     
-- Benachrichtigungen werden in der Warteschlange auf dem Postfachserver und Abonnements auf dem Postfachserver gespeichert sind. Wenn der Postfachserver, der das Abonnement verwaltet nicht verfügbar ist, verlieren Sie alle neuen Benachrichtigungen, Ihr Postfach wird nicht synchronisieren und Sie erneut auf die Benachrichtigungen abonnieren müssen.
+- Benachrichtigungen werden auf dem Postfachserver in der Warteschlange platziert, und Abonnements werden auf dem E-Mail-Server gespeichert. Wenn der Postfachserver, der das Abonnement verwaltet, nicht verfügbar ist, gehen alle neuen Benachrichtigungen verloren, das Postfach wird nicht synchronisiert, und Sie müssen die Benachrichtigungen erneut abonnieren.
     
-- Sie müssen zum Planen von Strategien zur Risikominderung, Benachrichtigungen fehl. Auf diese Weise die zweite Methode, die Synchronisierung nur Entwurfsmuster, da es nur erfordert, dass der Client den Synchronisierungsstatus verwalten ausfallsicherer als Benachrichtigung-basierte Synchronisierung wird – es sind keine Probleme mit Affinität an den Postfachserver Verwalten von Abonnements aus.
+- Sie müssen Lösungsstrategien planen für den Fall, dass Benachrichtigungen fehlschlagen. Der zweite Ansatz, das Entwurfsmuster, das nur die Synchronisierung umfasst, ist daher stabiler als die benachrichtigungsbasierte Synchronisierung, da hier der Client nur den Synchronisierungsstatus aufrechterhalten muss – es gibt keine Probleme mit Affinität zum Postfachserver, der das Abonnement verwaltet.
     
-Wenn implementiert wie empfohlen, stützt sich auf das Benachrichtigung-basiertes Abonnement Entwurfsmuster: 
+Wenn die benachrichtigungsbasierte Synchronisierung wie empfohlen implementiert wird, basiert dieses Entwurfsmuster auf Folgendem: 
   
-- Benachrichtigungen zu bestimmen, *Wenn* die Daten geändert. 
+- Benachrichtigungen, um zu ermitteln, *wann* die Daten geändert wurden. 
     
-- EWS Managed API, **SyncFolderHierarchy** oder **SyncFolderItems** -Methoden oder die EWS- **SyncFolderHierarchy** oder **SyncFolderItems** Vorgänge zu bestimmen, *welche* geändert werden soll, die Anzahl der zurückgegebenen Sync Ereignisse optimieren. Ein neues Element erstellt, aktualisiert oder gelöscht wurde? Das ist, müssen Sie wissen, von diesen Methoden verlassen Sie sich nicht auf diese Eigenschaft eine Liste der Änderungen. (Keine **GetItem** oder ein **LoadPropertiesForItems** Anruf auf alle Elemente oder Ordner zurückgegeben werden). 
+- Auf den Methoden **SyncFolderHierarchy** oder **SyncFolderItems** der verwalteten EWS-API oder auf den Vorgängen **SyncFolderHierarchy** oder **SyncFolderItems** von EWS, um zu bestimmen, *was* geändert wurde, wodurch die Anzahl zurückgegebener Synchronisierungsereignisse optimiert wird. Wurde ein neues Element erstellt, aktualisiert oder gelöscht? Das ist alles, was Sie von diesen Methoden wissen müssen. Sie sind für die Eigenschaftenlisten von Änderungen nicht auf die Methoden angewiesen. (Führen Sie keinen **GetItem**- oder **LoadPropertiesForItems**-Aufruf für alle zurückgegebenen Elemente oder Ordner aus). 
     
-- Mit der **Last** oder **LoadPropertiesForItems** in die EWS Managed API oder die EWS **GetItem** Operation um zu bestimmen, *wie* die Daten geändert und zum Abrufen von Eigenschaften vom Server nach Bedarf organisieren Batchanforderungen basiert Klicken Sie auf die Menge der Daten, die zurückgegeben wird. Einen Vergleich der Eigenschaften auf dem Client und diese nur zurückgegebene aus dem Server, und schließlich das Erstellen, löschen oder Ändern von des Elements oder Ordners auf dem Client folgt. 
+- Verwenden Sie die Methoden **Load** oder **LoadPropertiesForItems** in der verwalteten EWS-API oder den **GetItem**-Vorgang von EWS, um zu ermitteln *wie* die Daten geändert wurden und um bei Bedarf Eigenschaften vom Server abzurufen, wodurch Batchanforderungen basierend auf der Datenmenge organisiert werden, die zurückgegeben werden. Darauf folgt ein Vergleich der Eigenschaften auf dem Client mit denjenigen, die soeben vom Server zurückgegeben wurden und letztendlich das Erstellen, Löschen oder Ändern des Elements oder Ordners auf dem Client. 
     
-Der Synchronisierung nur Ansatz beruht vollständig auf die Methoden **SyncFolderItems** und **SyncFolderHierarchy** EWS Managed API oder **SyncFolderHierarchy** oder **SyncFolderItems** EWS-Vorgänge, die Sie entweder aufrufen können kontinuierlich oder als ein Ereignis. Vor- und Nachteile dieser Option sowie sind. Der Synchronisierung nur Ansatz ist stabiler, weil der Synchronisierungsstatus auf dem Client auf Postfachebene gespeichert wird und eine eindeutige Beziehung zwischen den Synchronisierungsstatus und alle auf der Postfachserver, der die Benachrichtigungsabonnement verwaltet nicht erforderlich ist. Der Synchronisierung Ansatz kann einen Postfach Failover aufgrund dessen Unabhängigkeit vom Postfachserver überstehen. Der Synchronisierung Ansatz erhöht jedoch Wartezeit für den Benutzer, da Elemente für eine einzelne Intervallen oder zeitweilig unterbrochenen synchronisiert werden – nicht in Echtzeit beim Eintreffen Elemente. Dieser Ansatz ist auch teurer, da Sie tätigen Anrufe an die Exchange-Datenbank, wenn es möglich ist, dass keine Änderungen aufgetreten sind. 
+Der Ansatz, bei dem nur die Synchronisierung ausgeführt wird, basiert vollständig auf den Methoden **SyncFolderItems** und **SyncFolderHierarchy** der verwalteten EWS-API oder auf den EWS-Vorgängen **SyncFolderHierarchy** oder **SyncFolderItems**, die Sie entweder fortlaufend oder als zeitlich festgelegtes Ereignis aufrufen. Auch für diesen Ansatz gibt es Vor- und Nachteile. Der Ansatz, bei dem nur die Synchronisierung ausgeführt wird, ist stabiler, weil der Synchronisierungsstatus auf dem Client unter der Postfachebene gespeichert wird und keine eindeutige Beziehung zwischen dem Synchronisierungsstatus und einem Postfachserver erforderlich ist, der das Benachrichtigungsabonnement verwaltet. Die Synchronisierungsansatz kann aufgrund seiner Unabhängigkeit vom Postfachserver ein Postfachfailover überleben. Durch den Synchronisierungsansatz wird jedoch die Latenz für den Benutzer erhöht, da Elemente zeitgesteuert oder zeitweilig synchronisiert werden und nicht in Echtzeit beim Eintreffen von Elementen. Dieser Ansatz ist auch teurer, da Sie Aufrufe der Exchange-Datenbank ausführen, auch wenn möglicherweise keine Änderungen aufgetreten sind. 
   
-## <a name="synchronization-best-practices"></a>Bewährte Methoden für Synchronisierung
+## <a name="synchronization-best-practices"></a>Bewährte Methoden für die Synchronisierung
 <a name="bk_bestpractices"> </a>
 
-Extrem skalierbar handelt wird empfohlen, dass Sie die folgenden bewährten Methoden, um die Postfächer in Ihrer Anwendung synchronisieren anwenden:
+Für stark skalierbare Anwendungen empfehlen wir, dass Sie die folgenden bewährten Methoden zum Synchronisieren von Postfächern in Ihrer Anwendung anwenden:
   
-- Wenn die EWS Managed API **SyncFolderItems** oder **SyncFolderHierarchy** -Methode aufrufen, verwenden Sie den _IdOnly_ -Wert für den Parameter _PropertySet_ oder wenn die EWS mit **SyncFolderHierarchy** oder **SyncFolderItems** Vorgänge verwenden Sie den **IdOnly** -Wert für den [BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) -Wert um Anrufe an die Exchange-Datenbank zu verringern. Rufen Sie die weitere Eigenschaften, die Sie in den Eigenschaftensatz, der **SyncFolderItems** oder **SyncFolderHierarchy** anfordern, Weitere Back-End-erstellten Anrufe. Ein neuer Anruf RPC erfolgt für jedes Eigenschaftswert angefordert, während nur ein RPC-Aufruf ausgeführt wird, zum Abrufen aller für eine Anforderung - unabhängig davon, die Anzahl der Ergebnisse auf Bericht **Artikelnummern ein.** . Damit eine **IdOnly** -Anforderung während führt zu eine Eigenschaft Eigenschaftensammlung Anforderung für den Betreff und der Absender in drei Datenbank Aufrufen einer Datenbankaufruf, führt: eines für den **Betreff**, den **Absender**und die **ItemId**.
+- Verwenden Sie beim Aufrufen der **SyncFolderItems**- oder **SyncFolderHierarchy**-Methode der verwalteten EWS-API den Wert _IdOnly_ für den _propertySet_-Parameter, oder verwenden Sie bei Verwendung der EWS-Vorgänge **SyncFolderHierarchy** oder **SyncFolderItems** den Wert **IdOnly** für den Wert [BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx), um Aufrufe der Exchange-Datenbank zu reduzieren. Je mehr Eigenschaften Sie im Eigenschaftensatz des **SyncFolderItems**- oder **SyncFolderHierarchy**-Aufrufs anfordern, desto mehr Back-End-Aufrufe werden erstellt. Für jeden angeforderten Eigenschaftenwert wird ein neuer RPC-Aufruf erstellt, wohingegen nur ein RPC-Aufruf vorgenommen wird, um alle **ItemIds** einer Anforderung abzurufen – unabhängig von der Anzahl zu meldender Ergebnisse. Eine **IdOnly**-Anforderung führt also zu einem Datenbankaufruf, wohingegen eine Anforderung eines Eigenschaftenbehälters für den Betreff und den Absender zu drei Datenbankaufrufen führt: einer für **Subject**, einer für **Sender** und einer für **ItemId**.
     
-- Rufen Sie nicht die EWS Managed API **Laden** oder **LoadPropertiesForItems** Methoden EWS **GetItem** oder der **GetFolder** -Vorgänge, für jedes Element in einer Antwort Synchronisierung. Analysieren Sie stattdessen die Ergebnisse; Änderungen am Status von Änderungen gesucht, die alle Eigenschaften abgerufen werden sollen, die keine erfordern wie gelesen werden. Wenn eine Antwort auf eine Änderung Zustand "gelesen" enthält, aktualisieren Sie einfach das Flag auf dem Client, und Sie fertig sind. keine Notwendigkeit, alle Elementeigenschaften erhalten möchten. Und stellen Sie sicher, dass Sie duplizieren keine Aufwand stammt vom selben Client ändern. Angenommen, wenn die Synchronisierung Antwort das Löschen eines Elements enthält und der Löschvorgang auf dem lokalen Client erfolgt, müssen Sie erneut Löschen der Nachricht oder alle Eigenschaften für dieses Element abrufen. 
+- Rufen Sie nicht die Methoden **Load** oder **LoadPropertiesForItems** der verwalteten EWS-API oder die EWS-Vorgänge **GetItem** oder **GetFolder** für jedes Element in einer Synchronisierungsantwort auf. Analysieren Sie stattdessen die Ergebnisse; suchen Sie nach Änderungen, für die nicht alle Eigenschaften abgerufen werden müssen, z. B. Änderungen des Lesestatus. Wenn eine Antwort eine Änderung des Lesestatus enthält, aktualisieren Sie einfach die Kennzeichnung auf dem Client und schon sind Sie fertig. Sie müssen nicht alle Elementeigenschaften abrufen. Und stellen Sie sicher, dass Sie sich nicht zusätzlichen Aufwand machen, indem Sie Änderungen erstellen, die vom selben Client stammten. Wenn die Synchronisierungsantwort beispielsweise das Löschen eines Elements enthält, und das Löschen erfolgte auf dem lokalen Client, so müssen Sie die Nachricht nicht erneut löschen oder alle Eigenschaften für dieses Element abrufen. 
     
-- Vermeiden Sie die erste gedrosselt, die folgenden Schritte durch:
+- Vermeiden Sie Einschränkungen, indem Sie folgendermaßen vorgehen:
     
-  - Wenn Sie die EWS Managed API **LoadPropertiesForItems** -Methode oder die EWS **GetItem** Operation die Elemente in einem Batch abgerufen aufrufen, führen Sie nicht zu viele Elemente in Ihrer Anforderung batch; Andernfalls erhalten Sie möglicherweise [gedrosselt](ews-throttling-in-exchange.md). Es wird empfohlen, dass Sie 10 Elemente pro Batch einschließen.
+  - Wenn Sie die **LoadPropertiesForItems**-Methode der verwalteten EWS-API oder den EWS-Vorgang **GetItem** aufrufen, um die Elemente in einem Batch abzurufen, fügen Sie nicht zu viele Elemente in Ihre Anforderung ein; andernfalls kommt es zu einer [Drosselung](ews-throttling-in-exchange.md). Wir empfehlen, 10 Elemente pro Batch einzuschließen.
     
-  - Stellen Sie nicht zu viele Anfragen zu kurz Zeit. Dies wird auch dazu führen, dass Einschränkung, und die Antwortzeit, anstatt kürzen Sie ihn. 
+  - Stellen Sie nicht zu viele Anforderungen in zu kurzer Zeit. Dies führt auch zu einer Drosselung und zu einer längeren Reaktionszeit. 
     
-  - Wenn Sie Elemente Batchverarbeitung, batch-alle Elemente mit den gleichen Werten für die Attribute **Id** und **ChangeKey** des [FolderId](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) -Elements. 
+  - Bei der Batchverarbeitung von Elementen sollten Sie alle Elemente mit denselben Werten für die Attribute **Id** und **ChangeKey** des [FolderId](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx)-Elements in einem Batch zusammenfassen. 
     
-  - Wenn Sie die Schritte aus gedrosselt erhalten möchten, beenden Sie zusenden. Erneutes Senden Anfragen wird die Wiederherstellung Mühe verlängert. Stattdessen warten Sie auf der Rückseite Zeit an, die ablaufen aus, und versuchen Sie erneut Ihr Synchronisierungsanfragen zu senden.
+  - Wenn es zu einer Einschränkung kommt, beenden Sie das Senden von Anforderungen. Durch erneutes Senden von Anforderungen dauert die Wiederherstellung länger. Warten Sie stattdessen, bis die Sperrzeit abgelaufen ist, und versuchen Sie dann erneut, Ihre Synchronisierungsanforderungen zu senden.
     
-- Je nach Typ der [Benachrichtigungsereignis](notification-subscriptions-mailbox-events-and-ews-in-exchange.md#bk_eventtypes) empfangen: 
+- In Abhängigkeit vom Typ des empfangenen [Benachrichtigungsereignisses](notification-subscriptions-mailbox-events-and-ews-in-exchange.md#bk_eventtypes): 
     
-  - Rufen Sie für Ereignisse **NewMail** oder **geändert** die EWS Managed API **SyncFolderItems** -Methode oder der EWS- **SyncFolderItems** Vorgang ein, da Benachrichtigungen keine **ChangeKey**bereitstellen und Benachrichtigungen nicht Zustand "gelesen Legende" ändert.
+  - Rufen Sie für **NewMail**- oder **Modified**-Ereignisse die **SyncFolderItems**-Methode der verwalteten EWS-API oder den EWS-Vorgang **SyncFolderItems** auf, da Benachrichtigungen keinen **ChangeKey** bereitstellen und keine Änderungen des Lesestatus aufrufen.
     
-  - Für **Gelöschte** Ereignisse Wenn die Benachrichtigungsabonnement vor den vorherigen Sync aktiv war, löschen Sie einfach das Ereignis lokal. Sie müssen nicht die EWS Managed API **SyncFolderItems** -Methode oder der Vorgang EWS **SyncFolderItems** unmittelbar nach der Löschvorgang aufrufen. 
+  - Wenn das Benachrichtigungsabonnement vor der vorherigen Synchronisierung aktiv war, können Sie bei **Deleted**-Ereignissen das Ereignis einfach lokal löschen. Sie müssen die **SyncFolderItems**-Methode der verwalteten EWS-API oder den EWS-Vorgang **SyncFolderItems** nicht unmittelbar nach dem Löschen aufrufen. 
     
-  - Wenn ein Ereignis **geändert** von einer Änderung Zustand "gelesen" verursacht wurde, nicht rufen Sie die EWS Managed API **LoadPropertiesForItems** -Methode oder die EWS **GetItem** Operation auf, ändern Sie einfach die Kennzeichen für das Element. 
+  - Wenn ein **Modified**-Ereignis von einer Änderung des Lesestatus verursacht wurde, rufen Sie nicht die **LoadPropertiesForItems**-Methode der verwalteten EWS-API oder den EWS-Vorgang **GetItem** auf, ändern Sie nur die Kennzeichnung des Elements. 
     
-- Bei der Synchronisierung von Kalenderdaten gehen Sie wie folgt vor:
+- Gehen Sie bei der Synchronisierung von Kalenderdaten wie folgt vor:
     
-  - Verwenden Sie einen ähnlichen Synchronisierung Benachrichtigung-basierten Ansatz. Da **SyncFolderItem** keine Kalender Logik enthält, verwenden Sie die EWS Managed API [FindAppointments](http://msdn.microsoft.com/en-us/library/dd633767%28v=exchg.80%29.aspx) -Methode oder die EWS- [Vorgang FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) mit das [CalendarView](http://msdn.microsoft.com/library/a4a953b8-0710-416c-95ef-59e51eba9982%28Office.15%29.aspx) -Element Termine zwischen zwei Datumsangaben anzeigen und dann Rufen Sie die EWS Managed API **LoadPropertiesForItems** -Methode oder die EWS **GetItem** Operation, die Elementeigenschaften für das Kalenderelement abgerufen. 
+  - Verwenden Sie einen Ansatz, der der benachrichtigungsbasierten Synchronisierung ähnlich ist. Da **SyncFolderItem** keine Kalenderlogik umfasst, verwenden Sie die [FindAppointments](http://msdn.microsoft.com/de-DE/library/dd633767%28v=exchg.80%29.aspx)-Methode der verwalteten EWS-API oder den EWS-Vorgang [FindItem Vorgang](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) mit dem [CalendarView](http://msdn.microsoft.com/library/a4a953b8-0710-416c-95ef-59e51eba9982%28Office.15%29.aspx)-Element, um Termine zwischen zwei Datumsangaben anzuzeigen, und rufen Sie dann die **LoadPropertiesForItems**-Methode der verwalteten EWS-API oder den EWS-Vorgang **GetItem** auf, um die Elementeigenschaften für das Kalenderelement abzurufen. 
     
-  - Führen Sie Abrufe nicht mit der EWS Managed API **FindAppointments** -Methode oder der Vorgang EWS **FindItem** und ein **CalendarView** -Element. 
+  - Führen Sie keine Abfragen mithilfe der **FindAppointments**-Methode der verwalteten EWS-API oder des EWS-Vorgangs **FindItem** Vorgang mit einem **CalendarView**-Element durch. 
     
 - Bei der Synchronisierung von Suchordnern:
     
-  - Verwenden Sie einen ähnlichen Synchronisierung Benachrichtigung-basierten Ansatz. 
+  - Verwenden Sie einen Ansatz, der der benachrichtigungsbasierten Synchronisierung ähnlich ist. 
     
-  - Verwenden Sie Benachrichtigungen, um zu bestimmen, wann Daten ändert.
+  - Verwenden Sie Benachrichtigungen, um zu ermitteln, wann Daten geändert wurden.
     
-  - Da Sie in einem Suchordner **SyncFolderItem** verwenden können, verwenden Sie eine sortierte und ausgelagerten EWS Managed API [FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) -Methode oder EWS **FindItem** Vorgang mit dem [FractionalPageItemView](http://msdn.microsoft.com/library/4111afec-35e7-4c6f-b291-9bbba603f633%28Office.15%29.aspx) und [SortOrder](http://msdn.microsoft.com/library/c2413f0b-8c03-46ae-9990-13338b3c53a6%28Office.15%29.aspx) -Element, um zu bestimmen Was geändert. 
+  - Da Sie **SyncFolderItem** nicht in einem Suchordner verwenden können, verwenden Sie eine sortierte und ausgelagerte [FindItems](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)-Methode der verwalteten EWS-API oder den EWS-Vorgang **FindItem** mit festgelegtem [FractionalPageItemView](http://msdn.microsoft.com/library/4111afec-35e7-4c6f-b291-9bbba603f633%28Office.15%29.aspx)- und [SortOrder](http://msdn.microsoft.com/library/c2413f0b-8c03-46ae-9990-13338b3c53a6%28Office.15%29.aspx)-Element, um zu ermitteln, was sich geändert hat. 
     
-  - Verwenden Sie die EWS Managed API **LoadPropertiesForItems** -Methode oder die EWS **GetItem** Operation zum Abrufen von Daten. 
+  - Verwenden Sie die **LoadPropertiesForItems**-Methode der verwalteten EWS-API oder den EWS-Vorgang **GetItem** zum Abrufen von Daten. 
     
 ## <a name="filtered-synchronization"></a>Gefilterte Synchronisierung
 <a name="bk_filteredsync"> </a>
 
-Die EWS Managed API **SyncFolderItems** -Methode und der EWS- **SyncFolderItems** -Vorgang können Sie bestimmte Elemente, basierend auf deren Artikelnummern ein., durch Festlegen des _IgnoreItemIds_ -Parameters in die EWS Managed API oder das [ignorieren](http://msdn.microsoft.com/library/7789eec5-ceec-43f2-84d5-d0d15b734076%28Office.15%29.aspx) ignorieren Element in der Exchange-Webdienste. Dies ist ideal, wenn, beispielsweise Personen in einer e-Mail-Nachricht für alle Benutzer im Unternehmen gesendet Antworten beginnen. 
+Dank der **SyncFolderItems**-Methode der verwalteten EWS-API und des EWS-Vorgangs **SyncFolderItems** können Sie bestimmte Elemente basierend auf deren ItemIds ignorieren, indem Sie den _ignoreItemIds_-Parameter in der verwalteten EWS-API oder das [Ignore](http://msdn.microsoft.com/library/7789eec5-ceec-43f2-84d5-d0d15b734076%28Office.15%29.aspx)-Element in EWS ignorieren. Dies ist ideal, wenn Personen in einer E-Mail-Nachricht, die an alle Mitarbeiter im Unternehmen gesendet wurde, allen antworten möchten. 
   
-Vielleicht, kann ich meine Benachrichtigungen Filtern (und daher nur auslösen Synchronisierung) Wenn bestimmte Eigenschaften geändert werden? Obwohl, die angemessene, scheint, da Benachrichtigungsabonnements auf die Art der Änderung basieren (erstellen, aktualisieren und löschen), und nicht die Eigenschaft aktualisiert wird, kann nicht gefiltert werden Benachrichtigungen auf diese Weise. Stattdessen können Sie Folgendes:
+Sie fragen sich vielleicht, ob Sie Benachrichtigungen filtern (und damit nur die Synchronisierung auslösen) können, wenn sich bestimmte Eigenschaften ändern. Dies erscheint zwar sinnvoll, da Benachrichtigungsabonnements auf dem Typ der Änderung (Erstellen, Aktualisieren, Löschen) basieren und nicht auf der aktualisierten Eigenschaft, es ist aber nicht möglich, Benachrichtigungen derart zu filtern. Sie können stattdessen Folgendes tun:
   
-- Verwenden Sie das Entwurfsmuster Benachrichtigung-basiertes Abonnement.
+- Verwenden Sie das benachrichtigungsbasierte Entwurfsmuster.
     
-- Rufen Sie die EWS Managed API **SyncFolderItems** und **SyncFolderHierarchy** Methoden mehrmals mit dem _PropertySet_ -Parameter auf _IdOnly_ festgelegt, um Ihre Synchronisierungsstatus aktuellen Datensatz zu machen. Oder wenn EWS verwenden möchten, rufen Sie die **SyncFolderHierarchy** und **SyncFolderItems** Vorgänge wiederholt mit dem Wert **BaseShape** **IdOnly**. 
+- Rufen Sie die Methoden **SyncFolderItems** und **SyncFolderHierarchy** der verwalteten EWS-API wiederholt auf, wobei der _propertySet_-Parameter auf _IdOnly_ festgelegt ist, damit Ihr Synchronisierungsstatus aktualisiert wird. Wenn Sie EWS verwenden, rufen Sie die Vorgänge **SyncFolderHierarchy** und **SyncFolderItems** wiederholt auf, wobei der Wert **BaseShape** auf **IdOnly** festgelegt ist. 
     
-- Verwerfen die Antwort (durch nicht analysieren oder führen Sie eine beliebige Eigenschaft Vergleiche).
+- Verwerfen Sie die Antwort (analysieren Sie sie nicht, und führen Sie keine Eigenschaftenvergleiche durch).
     
-- Verwenden Sie die EWS Managed API **FindItems** -Methode oder der Vorgang EWS **FindItem** und Sortieren und Seite der Elemente im gefilterten Bereich vorab gefüllt, die Sie interessieren. 
+- Verwenden Sie **FindItems**-Methode der verwalteten EWS-API oder den EWS-Vorgang **FindItem**, und führen Sie eine Sortierung und Auslagerung aus, um die Elemente in dem gefilterten Bereich, der für Sie relevant ist, vorab zu füllen. 
     
-- Verwenden der Synchronisierungsstatus weiterhin rufen Sie die EWS Managed API **SyncFolderItems** -Methode oder der Vorgang EWS **SyncFolderItems** , aber nur die Änderungen im Satz gefilterte Element überwachen. Wenn neue Elemente erstellt wurden, müssen Sie überprüfen, ob diese neue Elemente innerhalb der gefilterten Bereich befinden. 
+- Verwenden Sie den Synchronisierungsstatus, um dann die **SyncFolderItems**-Methode der verwalteten EWS-API oder den EWS-Vorgang **SyncFolderItems** aufzurufen, aber überwachen Sie nur die Änderungen in dem gefilterten Elementsatz. Wenn neue Elemente erstellt werden, müssen Sie prüfen, ob sich diese neuen Elemente in Ihrem gefilterten Bereich befinden. 
     
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 <a name="bk_filteredsync"> </a>
 
-- [Synchronisieren von Ordnern in Exchange mithilfe der Exchange-Webdienste](how-to-synchronize-folders-by-using-ews-in-exchange.md)
+- [Synchronisieren von Ordnern unter Verwendung von EWS in Exchange](how-to-synchronize-folders-by-using-ews-in-exchange.md)
     
-- [Synchronisieren von Elementen mithilfe von EWS in Exchange](how-to-synchronize-items-by-using-ews-in-exchange.md)
+- [Synchronisieren von Elementen unter Verwendung von EWS in Exchange](how-to-synchronize-items-by-using-ews-in-exchange.md)
     
-- [Fehlerbehandlung Synchronisierung-bezogene in EWS in Exchange](handling-synchronization-related-errors-in-ews-in-exchange.md)
+- [Umgang mit Fehlern im Zusammenhang mit der Synchronisierung in EWS in Exchange](handling-synchronization-related-errors-in-ews-in-exchange.md)
     
 ## <a name="see-also"></a>Siehe auch
 
 
 - [Entwickeln von Webdienstclients für Exchange](develop-web-service-clients-for-exchange.md)
     
-- [SyncFolderItems-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx)
+- [SyncFolderItems-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx)
     
-- [SyncFolderHierarchy-Methode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderhierarchy%28v=exchg.80%29.aspx)
+- [SyncFolderHierarchy-Methode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderhierarchy%28v=exchg.80%29.aspx)
     
 - [SyncFolderHierarchy-Vorgang](http://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx)
     

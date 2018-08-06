@@ -14,7 +14,7 @@ ms.assetid: ebad6aae-16e7-44de-ae63-a95b24539729
 description: Informationen zum FindItem-EWS-Vorgang.
 ms.openlocfilehash: b033ac2930981819a20f1336d40058a5f7c03b89
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758463"
@@ -54,7 +54,7 @@ Der **FindItem**-Vorgang gibt nur die ersten 512 Byte einer beliebigen streamfä
 - Das Feld [Organisator](organizer.md) für die Elemente im Kalender 
     
 > [!NOTE]
-> [!HINWEIS] Der **FindItem**-Vorgang kann Ergebnisse in einem [CalendarView](calendarview.md)-Element zurückgeben. Das **CalendarView**-Element gibt einzelne Kalenderelemente und alle Vorkommen wiederkehrender Besprechungen zurück. Wenn ein **CalendarView**-Element nicht verwendet wird, werden einzelne Kalenderelemente und wiederkehrende Masterterminserien zurückgegeben. Die Vorkommen müssen von der Masterterminserie aus erweitert werden, wenn ein **CalendarView**-Element nicht verwendet wird. 
+> Der **FindItem**-Vorgang kann Ergebnisse in einem [CalendarView](calendarview.md)-Element zurückgeben. Das **CalendarView**-Element gibt einzelne Kalenderelemente und alle Vorkommen wiederkehrender Besprechungen zurück. Wenn ein **CalendarView**-Element nicht verwendet wird, werden einzelne Kalenderelemente und wiederkehrende Masterterminserien zurückgegeben. Die Vorkommen müssen von der Masterterminserie aus erweitert werden, wenn ein **CalendarView**-Element nicht verwendet wird. 
   
 Der **FindItem**-Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
@@ -63,7 +63,7 @@ Der **FindItem**-Vorgang kann die SOAP-Header verwenden, die in der folgenden Ta
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**DateTimePrecision** <br/> |[DateTimePrecision](datetimeprecision.md) <br/> |Gibt die Auflösung der Daten-/Uhrzeitwerte in Antworten vom Server an, entweder in Sekunden oder in Millisekunden. Dies gilt für eine Anforderung.  <br/> |
-|**Impersonation** <br/> |["ExchangeImpersonation"](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dies gilt für eine Anforderung.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dies gilt für eine Anforderung.  <br/> |
 |**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Gibt die RFC3066-Kultur an, die für den Zugriff auf das Postfach verwendet wird. Dies gilt für eine Anforderung.  <br/> |
 |**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dies gilt für eine Anforderung.  <br/> |
 |**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dies gilt für eine Antwort.  <br/> |
@@ -220,7 +220,7 @@ Exchange-Versionen ab Hauptversion 15, die mit Build 15.0.898.11 enden, geben ei
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Finding Items](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+- [Suchen von Elementen](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
     
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
     

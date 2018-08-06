@@ -14,7 +14,7 @@ ms.assetid: 4653466a-a596-456f-bbff-7da4ef1d18d3
 description: Suchen nach Verweisinformationen für EWS-XML-Elemente in Exchange
 ms.openlocfilehash: 046a985ae4696616d28a0891ffe0aa8cc0552307
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758296"
@@ -36,7 +36,7 @@ Die Schemadateien, die die EWS-XML-Elemente beschreiben, stellen eine allgemeine
 Die EWS-WSDL-Datei „services.wsdl" erfüllt nicht vollständig den WSDL-Standard, da sie keine WSDL-Dienstdefinition enthält. Das liegt daran, dass EWS nicht dafür ausgelegt ist, auf einem Computer gehostet zu werden, der über eine vordefinierte Adresse verfügt. Sie können den AutoErmittlung-Dienst verwenden, um die EWS-Endpunktadresse abzurufen. Einige clientseitige Objektmodellgeneratoren analysieren die WSDL-Datei und können einen Fehlerstatus ausgeben, da die WSDL-Datei keine WSDL-Dienstdefinition enthält. Wenn der Objektmodellgenerator einen Fehler ausgibt, können Sie eine Platzhalter-WSDL-Dienstdefinition einfügen.
   
 > [!TIP]
-> [!TIPP] Wenn Sie zum Entwickeln einer Anwendung .NET Framework einsetzen, empfehlen wir, die [verwaltete EWS-API](http://aka.ms/ews-managed-api-readme) zu verwenden, statt einen Objektmodellgenerator. Die verwaltete EWS-API stellt ein einfaches Objektmodell zum Verarbeiten der Serialisierung und Deserialisierung der EWS-XML. Weitere Informationen finden Sie unter [Erste Schritte mit verwalteten EWS-API-Clientanwendungen](http://msdn.microsoft.com/library/c2267733-6f4f-49e5-9614-1e4a24c3af1a%28Office.15%29.aspx). 
+> Wenn Sie zum Entwickeln einer Anwendung .NET Framework einsetzen, empfehlen wir, die [verwaltete EWS-API](http://aka.ms/ews-managed-api-readme) zu verwenden, statt einen Objektmodellgenerator. Die verwaltete EWS-API stellt ein einfaches Objektmodell zum Verarbeiten der Serialisierung und Deserialisierung der EWS-XML. Weitere Informationen finden Sie unter [Erste Schritte mit verwalteten EWS-API-Clientanwendungen](http://msdn.microsoft.com/library/c2267733-6f4f-49e5-9614-1e4a24c3af1a%28Office.15%29.aspx). 
   
 Die messages.xsd-Schemadatei enthält die Elementdefinitionen für Elemente auf oberster Ebene im SOAP-Text. Mit Ausnahme der Fehlerantwortcodes dienen die meisten Definitionen in der Datei „messages.xsd" für einen bestimmten Vorgang. Das types.xsd-Schema enthält die Definitionen für die SOAP-Header und alle häufig verwendeten Definitionen, die bei mehreren Vorgängen gleich sind.
   

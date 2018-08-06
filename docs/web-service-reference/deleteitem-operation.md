@@ -14,7 +14,7 @@ ms.assetid: 3e26c416-fa12-476e-bfd2-5c1f4bb7b348
 description: Über den DeleteItem-Vorgang können Elemente im Exchange-Speicher gelöscht werden.
 ms.openlocfilehash: 87d7853daa5db0cd87b3f6469c228a584b4d9caf
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757927"
@@ -24,16 +24,16 @@ ms.locfileid: "19757927"
 Über den **DeleteItem**-Vorgang können Elemente im Exchange-Speicher gelöscht werden. 
   
 > [!NOTE]
-> [!HINWEIS] Für einen **DeleteItem**-Vorgang wird eine Fehlerantwort inklusive des ErrorCannotDeleteObject-Fehlercodes zurückgegeben, wenn ein Stellvertreter versucht, ein Element im Postfach eines Prinzipals zu löschen, indem er für DisposalType MoveToDeletedItems festlegt. Zum Löschen eines Elements durch Verschieben in den Ordner „Gelöschte Elemente" muss ein Stellvertreter die [MoveItem Operation](moveitem-operation.md) verwenden. 
+> Für einen **DeleteItem**-Vorgang wird eine Fehlerantwort inklusive des ErrorCannotDeleteObject-Fehlercodes zurückgegeben, wenn ein Stellvertreter versucht, ein Element im Postfach eines Prinzipals zu löschen, indem er für DisposalType MoveToDeletedItems festlegt. Zum Löschen eines Elements durch Verschieben in den Ordner „Gelöschte Elemente" muss ein Stellvertreter die [MoveItem Operation](moveitem-operation.md) verwenden. 
   
-## <a name="deleteitem-request-example"></a>DeleteItem anforderungsbeispiel
+## <a name="deleteitem-request-example"></a>DeleteItem-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
 Im folgenden Beispiel einer **DeleteItem**-Anforderung wird veranschaulicht, wie ein Element endgültig aus einem Postfach gelöscht werden kann. 
   
 > [!NOTE]
-> [!HINWEIS] Die Element-ID wurde zur besseren Lesbarkeit gekürzt. 
+> Die Element-ID wurde zur besseren Lesbarkeit gekürzt. 
   
 ### <a name="code"></a>Code
 
@@ -57,13 +57,13 @@ In der Anforderung werden folgende Elemente verwendet:
   
 - [DeleteItem](deleteitem.md)
     
-- [Artikelnummern ein.](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
-Zum Suchen nach Optionen für die Antwortnachricht des **DeleteItem**-Vorgangs können Sie die Schemahierarchie durchsuchen. Beginnen Sie bei dem [DeleteItem](deleteitem.md)-Element. 
+Um weitere Optionen für die Anforderungsnachricht des **DeleteItem**-Vorgangs zu finden, sehen Sie sich die Schemahierarchie an. Beginnen Sie beim [DeleteItem](deleteitem.md)-Element. 
   
-## <a name="successful-deleteitem-response"></a>Erfolgreiche DeleteItem Antwort
+## <a name="successful-deleteitem-response"></a>Erfolgreiche DeleteItem-Antwort
 
 ### <a name="description"></a>Beschreibung
 
@@ -94,7 +94,7 @@ Im folgenden Beispiel wird eine erfolgreiche Antwort auf eine **DeleteItem**-Anf
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -108,9 +108,9 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-Andere Optionen für die Antwortnachricht des **DeleteItem**-Vorgangs finden Sie in der Schemahierarchie. Beginnen Sie beim [DeleteItemResponse](deleteitemresponse.md)-Element. 
+Um weitere Optionen für die Antwortnachricht des **DeleteItem**-Vorgangs zu finden, sehen Sie sich die Schemahierarchie an. Beginnen Sie beim [DeleteItemResponse](deleteitemresponse.md)-Element. 
   
-## <a name="deleteitem-error-response"></a>DeleteItem Fehlerantwort
+## <a name="deleteitem-error-response"></a>DeleteItem-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
@@ -143,7 +143,7 @@ Im folgenden Beispiel wird eine Fehlerantwort auf eine **DeleteItem**-Anforderun
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
@@ -166,7 +166,7 @@ Andere Optionen für die Fehlerantwortnachricht des **DeleteItem**-Vorgangs find
 ## <a name="see-also"></a>Siehe auch
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
-- [Deleting Contacts](http://msdn.microsoft.com/library/fcc3dc84-cd3e-455e-a1a7-ae6921c9b588%28Office.15%29.aspx)  
+- [Löschen von Kontakten](http://msdn.microsoft.com/library/fcc3dc84-cd3e-455e-a1a7-ae6921c9b588%28Office.15%29.aspx)  
 - [Deleting E-mail Messages](http://msdn.microsoft.com/library/c40f2f0b-dae0-412f-b716-727e8c0949b4%28Office.15%29.aspx) 
 - [Deleting Tasks](http://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
 

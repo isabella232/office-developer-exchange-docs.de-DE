@@ -11,7 +11,7 @@ ms.assetid: 08c6c5a2-a67a-4141-a8bd-1b5d560b90a7
 description: Die Antwort der AutoErmittlung enthält eine Antwort auf die AutoErmittlung-Anforderung, die eine Liste der URLs enthält, die zum Erstellen einer Bindung zu den Exchange-Webdiensten verwendet werden.
 ms.openlocfilehash: d9f8a5cc86efaa4dceda7385164872ecc5409252
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19830863"
@@ -20,7 +20,7 @@ ms.locfileid: "19830863"
 
 Die Antwort der AutoErmittlung enthält eine Antwort auf die AutoErmittlung-Anforderung, die eine Liste der URLs enthält, die zum Erstellen einer Bindung zu den Exchange-Webdiensten verwendet werden.
   
-## <a name="autodiscover-response-example"></a>AutoErmittlung antwortbeispiel
+## <a name="autodiscover-response-example"></a>AutoErmittlung-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
@@ -72,7 +72,7 @@ Im folgenden Beispiel ist eine erfolgreiche AutoErmittlung-Antwort dargestellt.
 </Autodiscover>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
 Verwenden Sie zum Erstellen einer Bindung zu den Exchange-Webdiensten die vom [ASUrl (POX)](asurl-pox.md)-Element identifizierte URL. 
   
@@ -122,7 +122,7 @@ Folgende Elemente werden im Antworttext verwendet:
     
 - [OWAUrl (POX)](owaurl-pox.md)
     
-## <a name="autodiscover-error-response-example"></a>AutoErmittlung-Fehler antwortbeispiel
+## <a name="autodiscover-error-response-example"></a>Autoermittlung-Fehlerantwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
@@ -143,9 +143,9 @@ Im folgenden Beispiel ist eine Fehlerantwort für die AutoErmittlung dargestellt
 </Autodiscover>
 ```
 
-### <a name="error-response-element"></a>Fehler Response (Element)
+### <a name="error-response-element"></a>Fehlerantwortelement
 
-Folgende Elemente werden im Antworttext verwendet:
+In der Antwort werden folgende Elemente verwendet:
   
 - [AutoErmittlung (POX)](autodiscover-pox.md)
     
@@ -162,6 +162,6 @@ Folgende Elemente werden im Antworttext verwendet:
 ## <a name="see-also"></a>Siehe auch
 
 - [POX-Anforderung der AutoErmittlung für Exchange](pox-autodiscover-request-for-exchange.md)
-- [POX AutoErmittlung Webdienstverweis für Exchange](pox-autodiscover-web-service-reference-for-exchange.md) 
+- [Referenz zum POX-AutoErmittlungwebdienst für Exchange](pox-autodiscover-web-service-reference-for-exchange.md) 
 - [POX Autodiscover XML-Elemente für Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Abrufen von domäneneinstellungen aus einem Exchange-server
+title: Abrufen von Domäneneinstellungen von einem Exchange-Server
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,12 +8,12 @@ ms.assetid: 2f9acb81-5135-4f72-94e8-65c235d725e6
 description: Erfahren Sie, wie Sie Domäneneinstellungen von einem Exchange-Server mithilfe des AutoErmittlungsdiensts abrufen.
 ms.openlocfilehash: 0dd990cc82762936e7827115685ce0178eafb5ae
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756896"
 ---
-# <a name="get-domain-settings-from-an-exchange-server"></a>Abrufen von domäneneinstellungen aus einem Exchange-server
+# <a name="get-domain-settings-from-an-exchange-server"></a>Abrufen von Domäneneinstellungen von einem Exchange-Server
 
 Erfahren Sie, wie Sie Domäneneinstellungen von einem Exchange-Server mithilfe des AutoErmittlungsdiensts abrufen.
   
@@ -60,7 +60,7 @@ Bevor Sie eine Anwendung erstellen, die eine Verbindung mit dem AutoErmittlungsd
 - Ein Konto, das berechtigt ist, EWS zu verwenden. Informationen zum Konfigurieren eines Kontos finden Sie unter [Steuern des Clientanwendungszugriffs auf EWS in Exchange](controlling-client-application-access-to-ews-in-exchange.md).
     
 > [!NOTE]
-> [!HINWEIS] Wenn Sie die verwaltete EWS-API verwenden, müssen Sie in einigen Fällen einen Zertifikatüberprüfungsrückruf bereitstellen. Auch bei einigen generierten Proxybibliotheken, wie den von Visual Studio erstellten, benötigen Sie möglicherweise einen Zertifikatüberprüfungsrückruf. Weitere Informationen finden Sie unter [Validate ein Serverzertifikat für die EWS Managed API](how-to-validate-a-server-certificate-for-the-ews-managed-api.md). 
+> Wenn Sie die verwaltete EWS-API verwenden, müssen Sie in einigen Fällen einen Zertifikatüberprüfungsrückruf bereitstellen. Auch bei einigen generierten Proxybibliotheken, wie den von Visual Studio erstellten, benötigen Sie möglicherweise einen Zertifikatüberprüfungsrückruf. Weitere Informationen finden Sie unter [Überprüfen eines Serverzertifikats für die verwaltete EWS-API](how-to-validate-a-server-certificate-for-the-ews-managed-api.md). 
   
 ### <a name="core-concepts-for-getting-domain-settings"></a>Kernkonzepte für das Abrufen von Domäneneinstellungen
 <a name="bk_Core"> </a>
@@ -70,9 +70,9 @@ Bevor Sie den AutoErmittlungsdienst zum Abrufen von Domäneneinstellungen verwen
 |**Konzept**|**Beschreibung**|
 |:-----|:-----|
 |[AutoErmittlung für Exchange](autodiscover-for-exchange.md) <br/> |Bietet eine Übersicht über die Funktionsweise des AutoErmittlungsdiensts.  <br/> |
-|[Mithilfe von AutoErmittlung Verbindungspunkte suchen](how-to-use-autodiscover-to-find-connection-points.md) <br/> |Beschreibt den vom AutoErmittlungsdienst verwendeten Prozess zum Umleiten Ihrer Clientanwendung an den richtigen Dienstendpunkt.  <br/> |
+|[Verwenden der AutoErmittlung für die Suche nach Verbindungspunkten](how-to-use-autodiscover-to-find-connection-points.md) <br/> |Beschreibt den vom AutoErmittlungsdienst verwendeten Prozess zum Umleiten Ihrer Clientanwendung an den richtigen Dienstendpunkt.  <br/> |
    
-Wenn Sie die verwaltete EWS-API benutzen, verwenden Sie die Klasse [Microsoft.Exchange.WebServices.Data.ExchangeService](http://msdn.microsoft.com/en-us/library/exchange/dd635811%28v=exchg.80%29.aspx) im Namespace [Microsoft.Exchange.WebServices.Data](http://msdn.microsoft.com/en-us/library/exchange/dd633907%28v=exchg.80%29.aspx), um Ihre Verbindungen mit EWS zu verwalten. In den Codebeispielen in diesem Abschnitt wird davon ausgegangen, dass Sie in Ihrem Code auf die folgenden Namespaces verweisten: 
+Wenn Sie die verwaltete EWS-API benutzen, verwenden Sie die Klasse [Microsoft.Exchange.WebServices.Data.ExchangeService](http://msdn.microsoft.com/de-DE/library/exchange/dd635811%28v=exchg.80%29.aspx) im Namespace [Microsoft.Exchange.WebServices.Data](http://msdn.microsoft.com/de-DE/library/exchange/dd633907%28v=exchg.80%29.aspx), um Ihre Verbindungen mit EWS zu verwalten. In den Codebeispielen in diesem Abschnitt wird davon ausgegangen, dass Sie in Ihrem Code auf die folgenden Namespaces verweisten: 
   
 - **System.Net**
     
@@ -81,7 +81,7 @@ Wenn Sie die verwaltete EWS-API benutzen, verwenden Sie die Klasse [Microsoft.Ex
 ## <a name="get-domain-settings-by-using-the-ews-managed-api"></a>Abrufen von Domäneneinstellungen mithilfe der verwalteten EWS-API
 <a name="bk_Managed"> </a>
 
-Wenn Sie die verwaltete EWS-API benutzen, können Sie die Methode [Microsoft.Exchange.WebServices.Data.AutodiscoverSettings.GetUserSettings](http://msdn.microsoft.com/en-us/library/exchange/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) des Objekts [Microsoft.Exchange.WebServices.Data.AutodiscoverService](http://msdn.microsoft.com/en-us/library/exchange/dd634321%28v=exchg.80%29.aspx) verwenden, um die Anforderung zu generieren, mit der Konfigurationsinformationen für eine Domäne abgerufen werden, wie im folgenden Beispiel gezeigt. In diesem Beispiel werden nur einige der möglichen Domäneneinstellungen abgerufen und nur die abgerufenen Einstellungen vom Server zurückgegeben. 
+Wenn Sie die verwaltete EWS-API benutzen, können Sie die Methode [Microsoft.Exchange.WebServices.Data.AutodiscoverSettings.GetUserSettings](http://msdn.microsoft.com/de-DE/library/exchange/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) des Objekts [Microsoft.Exchange.WebServices.Data.AutodiscoverService](http://msdn.microsoft.com/de-DE/library/exchange/dd634321%28v=exchg.80%29.aspx) verwenden, um die Anforderung zu generieren, mit der Konfigurationsinformationen für eine Domäne abgerufen werden, wie im folgenden Beispiel gezeigt. In diesem Beispiel werden nur einige der möglichen Domäneneinstellungen abgerufen und nur die abgerufenen Einstellungen vom Server zurückgegeben. 
   
 ```cs
 AutodiscoverService autodiscoverService = new AutodiscoverService("domain.contoso.com");
@@ -196,7 +196,7 @@ Das folgende Beispiel zeigt die XML-Antwort, die vom Server zurückgegeben wird,
 
 Domäneneinstellungen stellen die grundlegenden Informationen bereit, die der Client für die Verbindung mit EWS benötigt. Sie können diese Informationen verwenden, um eine Verbindung mit EWS herzustellen, oder Sie können zusätzliche Konfigurationseinstellungen für ein E-Mail-Konto vom Server abrufen. Weitere Informationen finden Sie im folgenden Artikel:
   
-- [Abrufen von benutzereinstellungen aus Exchange mithilfe der AutoErmittlung](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
+- [Abrufen von Benutzereinstellungen von Exchange mithilfe der AutoErmittlung](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,52 +1,52 @@
 ---
-title: Abrufen von benutzereinstellungen aus Exchange mithilfe der AutoErmittlung
+title: Abrufen von Benutzereinstellungen von Exchange mithilfe der AutoErmittlung
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 6d90c305-4802-4e18-8d52-f60349feaa8d
-description: Hier erfahren Sie, wie benutzerkonfigurationseinstellungen von einem Exchange-Server durch Verwendung der AutoErmittlung abgerufen.
+description: Erfahren Sie, wie Sie Benutzerkonfigurationseinstellungen von einem Exchange-Server mithilfe der AutoErmittlung abrufen.
 ms.openlocfilehash: f37de55d6681bcdef381561b166adf209d3919a9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756898"
 ---
-# <a name="get-user-settings-from-exchange-by-using-autodiscover"></a>Abrufen von benutzereinstellungen aus Exchange mithilfe der AutoErmittlung
+# <a name="get-user-settings-from-exchange-by-using-autodiscover"></a>Abrufen von Benutzereinstellungen von Exchange mithilfe der AutoErmittlung
 
-Hier erfahren Sie, wie benutzerkonfigurationseinstellungen von einem Exchange-Server durch Verwendung der AutoErmittlung abgerufen.
+Erfahren Sie, wie Sie Benutzerkonfigurationseinstellungen von einem Exchange-Server mithilfe der AutoErmittlung abrufen.
   
-AutoErmittlung vereinfacht Anwendungskonfiguration durch den einfachen Zugriff auf Informationen aus der Benutzerkonfiguration mit nur die e-Mail-Adresse des Benutzers und-Kennwort an. Eine [Anzahl von Konfigurationseinstellungen für die Benutzer](http://msdn.microsoft.com/library/43db26e1-f7be-49fd-b26b-fc1b10bd3458%28Office.15%29.aspx) sind über AutoErmittlung, wie des Benutzers Anzeigename oder externen Webdienst-URL verfügbar. 
+Die AutoErmittlung vereinfacht die Anwendungskonfiguration, indem sie einfachen Zugriff auf die Benutzerkonfigurationsinformationen bietet und dabei nur die E-Mail-Adresse und das Kennwort des Benutzers verwendet. Über die AutoErmittlung [steht eine Reihe von Benutzerkonfigurationseinstellungen](http://msdn.microsoft.com/library/43db26e1-f7be-49fd-b26b-fc1b10bd3458%28Office.15%29.aspx) zur Verfügung, beispielsweise der Anzeigenamen des Benutzers oder eine externe Webdienst-URL. 
   
-Eines der folgenden Entwicklungstechnologien können Sie benutzereinstellungen aus den AutoErmittlungsdienst abzurufen:
+Sie können eine der folgenden Entwicklungstechnologien verwenden, um Benutzereinstellungen über den AutoErmittlungsdienst abzurufen:
   
-- Der [Erste Schritte mit EWS Managed API-Clientanwendungen](get-started-with-ews-managed-api-client-applications.md)
+- [Erste Schritte mit verwalteten EWS-API-Clientanwendungen](get-started-with-ews-managed-api-client-applications.md)
     
-- Der [AutoErmittlung für SOAP-Webdienst](http://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx)
+- [SOAP-AutoErmittlungswebdienst](http://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx)
     
-- Der [Webdienst POX AutoErmittlung](http://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx)
+- [POX-AutoErmittlungswebdienst](http://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx)
     
-Die verwaltete EWS-API stellt eine objektbasierte Schnittstelle für das Abrufen von Benutzereinstellungen bereit. Wenn die Clientanwendung verwalteten Code verwendet, wird empfohlen, die verwaltete EWS-API zu verwenden. Wenn Sie die EWS Managed API verwenden, bestimmen Sie, ob die Einstellungen, die Sie in der [Microsoft.Exchange.WebServices.Autodiscover.UserSettingName](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.autodiscover.usersettingname%28v=EXCHG.80%29.aspx) -Aufzählung verfügbar sind. Wenn sie nicht möchten, empfiehlt es sich, die SOAP- oder POX AutoErmittlung-Dienste verwenden. 
+Die verwaltete EWS-API bietet eine objektbasierte Oberfläche zum Abrufen von Benutzereinstellungen. Wenn Ihre Clientanwendung verwalteten Code verwendet, empfehlen wir, dass Sie die verwaltete EWS-API verwenden. Wenn Sie die verwaltete EWS-API verwenden, ermitteln Sie, ob die von Ihnen benötigten Einstellungen in der [Microsoft.Exchange.WebServices.Autodiscover.UserSettingName](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.autodiscover.usersettingname%28v=EXCHG.80%29.aspx)-Enumeration verfügbar sind. Ist dies nicht der Fall, können Sie den SOAP- oder POX-AutoErmittlungsdienst verwenden. 
   
-Wenn Sie einen Webdienst verwenden, empfehlen wir, dass Sie den SOAP-AutoErmittlungsdienst verwenden, da es eine umfangreichere Features als POX AutoErmittlungsdienst unterstützt. Wenn der SOAP-AutoErmittlungsdienst nicht verfügbar ist, ist der POX AutoErmittlungsdienst eine gute Alternative.
+Bei Verwendung eines Webdiensts empfehlen wir die Verwendung des SOAP-AutoErmittlungsdiensts, da dieser eine umfassendere Sammlung von Funktionen als der POX-AutoErmittlungsdienst unterstützt. Wenn der SOAP-AutoErmittlungsdienst nicht verfügbar ist, ist der POX-AutoErmittlungsdienst eine gute Alternative.
   
-## <a name="set-up-to-get-user-settings"></a>Einrichten von benutzereinstellungen abrufen
+## <a name="set-up-to-get-user-settings"></a>Einrichtung zum Abrufen der Benutzereinstellungen
 <a name="bk_Prereq"> </a>
 
-Bevor Sie benutzereinstellungen abrufen, indem Sie den AutoErmittlungsdienst, stellen Sie sicher, dass Sie Zugriff auf die folgenden haben:
+Bevor Sie mithilfe des AutoErmittlungsdiensts Benutzereinstellungen abrufen, stellen Sie sicher, dass Sie Zugriff auf Folgendes haben:
   
-- Wenn Sie die EWS Managed API oder POX-basierte AutoErmittlungsdienst, Exchange Online, Exchange Online als Teil von Office 365 oder einen Server mit einer Version von Exchange, beginnend mit Exchange 2007 SP1 verwenden. 
+- Bei Verwendung der EWS-API oder des POX-basierten AutoErmittlungsdienst Exchange Online, Exchange Online als Teil von Office 365 oder einen Server mit einer Version von Exchange ab Exchange 2007 SP1. 
     
-- Wenn Sie die SOAP-basierte AutoErmittlungsdienst, Exchange Online oder eine Version von Exchange, beginnend mit Exchange 2010 verwenden.
+- Bei Verwendung des SOAP-basierten AutoErmittlungsdiensts Exchange Online oder eine Version von Exchange ab Exchange 2010.
     
 > [!NOTE]
-> Wenn Sie die EWS Managed API verwenden, müssen Sie unter Umständen [eine Rückrufmethode des Zertifikat-Validierung bereitstellen](how-to-validate-a-server-certificate-for-the-ews-managed-api.md) . Möglicherweise benötigen Sie auch eine Zertifikat Validierung Rückrufmethode mit einigen generierten Proxys Bibliotheken, beispielsweise von Visual Studio erstellt. 
+> Wenn Sie die verwaltete EWS-API verwenden, müssen Sie in einigen Fällen eine [Methode für den Zertifikatüberprüfungsrückruf](how-to-validate-a-server-certificate-for-the-ews-managed-api.md) bereitstellen. Auch bei einigen generierten Proxybibliotheken, wie den von Visual Studio erstellten, benötigen Sie möglicherweise eine Methode für den Zertifikatüberprüfungsrückruf. 
   
-## <a name="get-user-settings-by-using-the-ews-managed-api"></a>Rufen Sie benutzereinstellungen ab, indem Sie die EWS Managed API
+## <a name="get-user-settings-by-using-the-ews-managed-api"></a>Abrufen von Benutzereinstellungen mithilfe der verwalteten EWS-API
 <a name="bk_Managed"> </a>
 
-Die [GetUserSettings](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) -Methode können Sie die Konfigurationsinformationen für einen Benutzer abrufen, wie im folgenden Beispiel dargestellt. In diesem Beispiel können Sie ein Array von benutzereinstellungen zurückzugebenden (aus den verfügbaren in der [UserSettingName](http://msdn.microsoft.com/en-us/library/exchange/microsoft.exchange.webservices.autodiscover.usersettingname%28v=exchg.80%29.aspx) -Enumeration) angeben, und die Methode vor, Umleitungsantworten vom Exchange-Server. 
+Sie können die [GetUserSettings](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx)-Methode zum Abrufen von Konfigurationsinformationen für einen Benutzer verwenden, wie im folgenden Beispiel gezeigt. In diesem Beispiel können Sie (aus den in der [UserSettingName](http://msdn.microsoft.com/de-DE/library/exchange/microsoft.exchange.webservices.autodiscover.usersettingname%28v=exchg.80%29.aspx)-Enumeration verfügbaren Einstellungen) ein Array von Benutzereinstellungen angeben, die zurückgegeben werden sollen. Die Methode folgt daraufhin den Umleitungsantworten des Exchange-Servers. 
   
 ```cs
 using System;
@@ -82,7 +82,7 @@ public static GetUserSettingsResponse GetUserSettings(
 }
 ```
 
-Sie können jedes Schlüssel/Wert-Paar im Array Einstellungen Benutzer Zugriff auf zurückgegebene Auflistung analysieren. Das folgende Beispiel zeigt, wie Sie die einzelnen zurückgegebenen Elemente analysieren und den Namen und Wert der einzelnen Schlüssel-Wert-Paare anzeigen.
+Sie können die zurückgegebene Sammlung analysieren, um auf die einzelnen Schlüssel-Wert-Paare im Benutzereinstellungsarray zuzugreifen. Das folgende Beispiel zeigt, wie Sie die einzelnen zurückgegebenen Elemente analysieren und den Namen und Wert der einzelnen Schlüssel-Wert-Paare anzeigen.
   
 ```cs
 // Display each retrieved value. The settings are part of a key/value pair.
@@ -93,21 +93,21 @@ foreach (KeyValuePair<UserSettingName, Object> usersetting in userresponse.Setti
 }
 ```
 
-Alternativ können Sie den Wert einer bestimmten Einstellung abrufen. Die Einstellung **UserDisplayName** werden im folgenden Beispiel angezeigt werden soll. 
+Alternativ können Sie den Wert einer bestimmten Einstellung abrufen. Im folgenden Beispiel soll die Einstellung **ExternalEwsUrl** angezeigt werden. 
   
 ```cs
 // Display a specific setting, such as UserDisplayName.
 Console.WriteLine(userresponse.Settings[UserSettingName.UserDisplayName]);
 ```
 
-## <a name="get-user-settings-by-using-soap-autodiscover"></a>Abrufen von benutzereinstellungen unter Verwendung von SOAP-AutoErmittlung
+## <a name="get-user-settings-by-using-soap-autodiscover"></a>Abrufen von Benutzereinstellungen mithilfe der SOAP-AutoErmittlung
 <a name="bk_SOAP"> </a>
 
-Wenn Sie nicht die EWS Managed API verwenden, wird empfohlen, dass Sie den AutoErmittlung SOAP-Webdienst verwenden. Verwenden Sie nur den POX AutoErmittlung-Webdienst auf, wenn der AutoErmittlung SOAP-Webdienst treten Fehler auf oder nicht verfügbar ist. 
+Wenn Sie nicht die verwaltete EWS-API verwenden, empfehlen wir, dass Sie den SOAP-AutoErmittlungswebdienst verwenden. Verwenden Sie den POX-AutoErmittlungswebdienst nur, wenn der SOAP-AutoErmittlungswebdienst fehlschlägt oder nicht verfügbar ist. 
   
-Wenn Sie benutzereinstellungen erhalten möchten, verwenden Sie die [GetUserSettings-Vorgang (SOAP)](http://msdn.microsoft.com/library/758d965c-ef63-4de4-9120-e293abf14ff8%28Office.15%29.aspx). Die angeforderten Einstellungen werden als [UserSetting Elemente](http://msdn.microsoft.com/library/aac6dc31-edd2-49d7-b845-1df4d77da58c%28Office.15%29.aspx)zurückgegeben.
+Um Benutzereinstellungen abzurufen, verwenden Sie den [GetUserSettings-Vorgang (SOAP)](http://msdn.microsoft.com/library/758d965c-ef63-4de4-9120-e293abf14ff8%28Office.15%29.aspx). Die angeforderten Einstellungen werden als [UserSetting-Elemente](http://msdn.microsoft.com/library/aac6dc31-edd2-49d7-b845-1df4d77da58c%28Office.15%29.aspx) zurückgegeben.
   
-Das folgende Beispiel zeigt eine AutoErmittlung SOAP-Anforderung an benutzereinstellungen vom Server abgerufen werden.
+Das folgende Beispiel zeigt eine Anforderung der SOAP-AutoErmittlung zum Abrufen von Benutzereinstellungen vom Server.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -151,7 +151,7 @@ Das folgende Beispiel zeigt eine AutoErmittlung SOAP-Anforderung an benutzereins
 </soap:Envelope>
 ```
 
-Das folgende Beispiel zeigt die SOAP-Antwort, die vom Server zurückgegeben wird, nachdem die Anforderung vom Client analysiert. Die Antwort enthält nur die Einstellungen, die angefordert werden, sofern sie vorhanden sind.
+Das folgende Beispiel zeigt die SOAP-Antwort, die vom Server zurückgegeben wird, nachdem die Anforderung vom Client analysiert wurde. Die Antwort enthält nur die Einstellungen, die angefordert werden, wenn diese vorhanden sind.
   
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:a="http://www.w3.org/2005/08/addressing">
@@ -249,12 +249,12 @@ Das folgende Beispiel zeigt die SOAP-Antwort, die vom Server zurückgegeben wird
 </s:Envelope
 ```
 
-## <a name="get-user-settings-by-using-pox-autodiscover"></a>Abrufen von benutzereinstellungen mithilfe von POX AutoErmittlung
+## <a name="get-user-settings-by-using-pox-autodiscover"></a>Abrufen von Benutzereinstellungen mithilfe der POX-AutoErmittlung
 <a name="bk_POX"> </a>
 
-Obwohl es wird empfohlen, dass Sie den AutoErmittlung SOAP-Webdienst verwenden, wird der Webdienst POX AutoErmittlung backup empfohlen für die Fälle, wenn SOAP nicht verfügbar ist. Beispielsweise Exchange 2007 bietet keine Unterstützung der AutoErmittlung für SOAP-Webdienst, wenn Sie Exchange 2007 abzielen, müssen Sie den Webdienst POX AutoErmittlung verwenden. Im Gegensatz zu den AutoErmittlung SOAP-Webdienst ist die spezielle Einstellungen anfordern des AutoErmittlungsdiensts POX nicht zulässig. Stattdessen gibt der Server eine vollständige Liste der verfügbaren Einstellungen als untergeordnete Elemente des [Protokoll-Element](http://msdn.microsoft.com/library/f77e4d66-6fdd-4999-9339-f7d7f9c86f44%28Office.15%29.aspx)zurück.
+Wir empfehlen zwar die Verwendung des SOAP-AutoErmittlungswebdiensts, der POX-AutoErmittlungswebdienst ist aber eine gute Sicherungsoption für Fälle, in denen SOAP nicht verfügbar ist. Exchange 2007 unterstützt den SOAP-AutoErmittlungswebdienst beispielsweise nicht, wenn Sie also auf Exchange 2007 abzielen, müssen Sie den POX-AutoErmittlungswebdienst verwenden. Im Gegensatz zum SOAP-AutoErmittlungswebdienst ist es beim POX-AutoErmittlungswebdienst nicht zulässig, bestimmte Einstellungen anzufordern. Stattdessen gibt der Server eine vollständige Liste verfügbarer Einstellungen als untergeordnete Elemente des [Protocol-Elements](http://msdn.microsoft.com/library/f77e4d66-6fdd-4999-9339-f7d7f9c86f44%28Office.15%29.aspx) zurück.
   
-Das folgende Beispiel zeigt eine Anforderung POX AutoErmittlung benutzereinstellungen vom Server abrufen. Im folgende XML wird über HTTP POST an den Server gesendet.
+Das folgende Beispiel zeigt eine Anforderung der POX-AutoErmittlung zum Abrufen von Benutzereinstellungen vom Server. Der folgende XML-Code wird über eine HTTP-POST-Nachricht an den Server gesendet.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -336,17 +336,17 @@ Das folgende Beispiel zeigt die POX-Antwort, die vom Server zurückgegeben wird.
 ## <a name="next-steps"></a>Nächste Schritte
 <a name="bk_Next"> </a>
 
-Nachdem Sie die erforderlichen Konfigurationsschritte Details für Ihre Benutzer vom Server abgerufen haben, können Sie für die Kommunikation mit Exchange um dieselben Berechtigungen wie die Anwendung ausführen muss. Der nächste Schritt hängt wie Sie mit Exchange kommunizieren und was Sie erreichen möchten. Wenn Sie einige Inspiration benötigen und EWS verwenden, untersuchen Sie möglicherweise einige Vorschläge für die [Exchange-101-Codebeispiele](http://code.msdn.microsoft.com/exchange/Exchange-2013-101-Code-3c38582c) . 
+Nachdem Sie die erforderlichen Konfigurationsdetails für Ihren Benutzer vom Server abgerufen haben, können Sie mit Exchange kommunizieren, damit die Aktionen ausgeführt werden, die Ihre Anwendung ausführen soll. Ihre nächste Aktion ist davon abhängig, wie Sie mit Exchange kommunizieren und was Sie erzielen möchten. Wenn Sie ein wenig Inspiration benötigen und EWS verwenden, können Sie sich in den [101 Codebeispielen für Exchange](http://code.msdn.microsoft.com/exchange/Exchange-2013-101-Code-3c38582c) einige Anregungen holen. 
   
 ## <a name="see-also"></a>Siehe auch
 
 
 - [AutoErmittlung für Exchange](autodiscover-for-exchange.md)
     
-- [Exchange-Webdienste (EWS) Managed-API](http://msdn.microsoft.com/en-us/library/exchange/jj220535%28v=exchg.80%29.aspx)
+- [Verwaltete API der Exchange-Webdienste (Exchange Web Services, EWS)](http://msdn.microsoft.com/de-DE/library/exchange/jj220535%28v=exchg.80%29.aspx)
     
-- [SOAP-Webdienst-Verweis für die AutoErmittlung für Exchange](http://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx)
+- [Referenz zum SOAP-AutoErmittlungwebdienst für Exchange](http://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx)
     
-- [POX AutoErmittlung Webdienstverweis für Exchange](http://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx)
+- [Referenz zum POX-AutoErmittlungwebdienst für Exchange](http://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx)
     
 

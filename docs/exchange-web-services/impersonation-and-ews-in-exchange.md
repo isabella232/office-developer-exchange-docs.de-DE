@@ -8,7 +8,7 @@ ms.assetid: 7e1ea63c-eb29-43d2-827f-2f2b1846483b
 description: Erfahren Sie mehr über den Identitätswechsel und wann er in Ihren Exchange-Dienstanwendungen eingesetzt werden kann.
 ms.openlocfilehash: f8a215874475034f0d147b80a05cae414e6438f9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757015"
@@ -51,15 +51,15 @@ Mit dem Identitätswechsel kann ein Aufrufer einen Identitätswechsel für ein a
     
 - In der Regel wird die **ApplicationImpersonation**-Rolle einem Dienstkonto gewährt, das einer bestimmten Anwendung oder eine Gruppe von Anwendungen zugeordnet ist, statt einem Benutzerkonto. Sie können beliebig viele Dienstkonten erstellen. 
     
-Sie können weitere Informationen über die [Konfiguration des Identitätswechsels](how-to-configure-impersonation.md) lesen, Sie sollten jedoch mit Ihrem Exchange-Administrator zusammenarbeiten, um zu gewährleisten, dass die erforderlichen Dienstkonten mit den [Berechtigungen und dem Zugriff](http://technet.microsoft.com/en-us/library/dd351175%28v=exchg.150%29.aspx) erstellt werden, der die Sicherheitsanforderungen Ihres Unternehmens erfüllt. 
+Sie können weitere Informationen über die [Konfiguration des Identitätswechsels](how-to-configure-impersonation.md) lesen, Sie sollten jedoch mit Ihrem Exchange-Administrator zusammenarbeiten, um zu gewährleisten, dass die erforderlichen Dienstkonten mit den [Berechtigungen und dem Zugriff](http://technet.microsoft.com/de-DE/library/dd351175%28v=exchg.150%29.aspx) erstellt werden, der die Sicherheitsanforderungen Ihres Unternehmens erfüllt. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [Konfigurieren des Identitätswechsels](how-to-configure-impersonation.md)
+- [Konfigurieren eines Identitätswechsels](how-to-configure-impersonation.md)
     
-- [Identifizieren Sie das Konto Identität](how-to-identify-the-account-to-impersonate.md)
+- [Identifizieren des Kontos für Identitätswechsel](how-to-identify-the-account-to-impersonate.md)
     
-- [Hinzufügen von Terminen mithilfe der Exchange-Identitätswechsel](how-to-add-appointments-by-using-exchange-impersonation.md)
+- [Hinzufügen von Terminen mit Exchange-Identitätswechsel](how-to-add-appointments-by-using-exchange-impersonation.md)
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -68,6 +68,6 @@ Sie können weitere Informationen über die [Konfiguration des Identitätswechse
     
 - [Stellvertretungszugriff und EWS in Exchange](delegate-access-and-ews-in-exchange.md)
     
-- [Exchange 2013-Berechtigungen](http://technet.microsoft.com/en-us/library/dd351175%28v=exchg.150%29.aspx)
+- [Exchange 2013-Berechtigungen](http://technet.microsoft.com/de-DE/library/dd351175%28v=exchg.150%29.aspx)
     
 

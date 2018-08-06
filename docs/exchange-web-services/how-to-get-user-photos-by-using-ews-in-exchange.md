@@ -1,5 +1,5 @@
 ---
-title: Abrufen von benutzerfotos mithilfe der EWS in Exchange
+title: Abrufen von Benutzerfotos mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -8,12 +8,12 @@ ms.assetid: f86d1099-1f57-47dc-abf2-4d5ae4e900a9
 description: Erfahren Sie, wie Sie Benutzerfotos abrufen können, die mit einem Postfach oder einem Kontakt verknüpft sind, indem Sie die verwaltete EWS-API oder EWS in Exchange verwenden.
 ms.openlocfilehash: f0f5cddd41fc563fb9ed38e75b505830a3992411
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756929"
 ---
-# <a name="get-user-photos-by-using-ews-in-exchange"></a>Abrufen von benutzerfotos mithilfe der EWS in Exchange
+# <a name="get-user-photos-by-using-ews-in-exchange"></a>Abrufen von Benutzerfotos mithilfe von EWS in Exchange
 
 Erfahren Sie, wie Sie Benutzerfotos abrufen können, die mit einem Postfach oder einem Kontakt verknüpft sind, indem Sie die verwaltete EWS-API oder EWS in Exchange verwenden.
   
@@ -25,12 +25,12 @@ Zum Abrufen von Fotos aus Postfächern oder den Active Directory-Domänendienste
 
 |**Kontakttyp**|**Zu verwendende Technologie**|
 |:-----|:-----|
-|Postfach-Benutzerfoto  <br/> |[Abrufen eines Postfach-Benutzerfotos mithilfe von REST](#bk_REST)<br/><br/> [Abrufen einer benutzerfoto mithilfe der Exchange-Webdienste](#bk_EWS) <br/> |
-|Kontakt-Benutzerfoto  <br/> |[Rufen Sie ein benutzerfoto des Kontakts mithilfe der EWS Managed API ab](#bk_EWSMA)<br/><br/> [Abrufen einer benutzerfoto mithilfe der Exchange-Webdienste](#bk_EWS) <br/> |
+|Postfach-Benutzerfoto  <br/> |[Abrufen eines Benutzerfotos eines Postfachs mithilfe von REST](#bk_REST)<br/><br/> [Abrufen eines Benutzerfotos mithilfe von EWS](#bk_EWS) <br/> |
+|Kontakt-Benutzerfoto  <br/> |[Abrufen eines Benutzerfotos eines Kontakts mithilfe der verwalteten EWS-API](#bk_EWSMA)<br/><br/> [Abrufen eines Benutzerfotos mithilfe von EWS](#bk_EWS) <br/> |
 
 <a name="bk_REST"> </a>
 
-## <a name="get-a-mailbox-user-photo-by-using-rest"></a>Abrufen eines Postfach-Benutzerfotos mithilfe von REST
+## <a name="get-a-mailbox-user-photo-by-using-rest"></a>Abrufen eines Benutzerfotos eines Postfachs mithilfe von REST
 
 Sie können Benutzerfotos von einem Exchange-Server mit einer standardmäßigen HTTPS- **GET**-Anforderung abrufen. Geben Sie in der Anforderung die E-Mail-Kontoadresse und einen Größencode für das Bild an, wie im folgenden Beispiel veranschaulicht. 
   
@@ -43,7 +43,7 @@ Verwenden Sie den AutoErmittlungsdienst-[GetUserSettings](how-to-get-user-settin
 In den Größencodes wird die Höhe und Breite des Bilds in Pixel angegeben. Der Größencode **HR48x48** gibt beispielsweise ein Bild zurück, das 48 Pixel hoch und 48 Pixel breit ist. Die möglichen Werte für den Größencodeparameter entsprechen den möglichen Werten für das [SizeRequested](http://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx)-Element. Wenn die Anforderung eine nicht verfügbare Größe angibt, wird das größtmögliche Foto zurückgegeben. Wenn kein Foto auf dem Exchange-Server gespeichert ist, wird das in AD DS für das Konto gespeicherte Bild zurückgegeben. 
   
 > [!NOTE]
-> [!HINWEIS] Der **HR48x48**-Größencode gibt immer das AD DS-Vorschaubild zurück, falls verfügbar. 
+> Der **HR48x48**-Größencode gibt immer das AD DS-Vorschaubild zurück, falls verfügbar. 
   
 Im folgenden Beispiel wird veranschaulicht, wie Sie die GET-Anforderung verwenden können, um das Benutzerfoto für Sadie abzurufen und auf Ihrem lokalen Computer zu speichern.
   
@@ -74,7 +74,7 @@ Die Anforderung gibt eine HTTP-Antwort zurück.
 
 <a name="bk_REST"> </a>
 
-## <a name="cache-user-photos"></a>Cache benutzerfotos
+## <a name="cache-user-photos"></a>Zwischenspeichern von Benutzerfotos
 
 Exchange gibt die Daten mit dem Inhaltstyp Bild/jpeg und einer Sammlung von Headerwerten zurück. Der **ETag**-Header ähnelt einem Änderungsschlüssel. Der Wert ist eine Zeichenfolge, der den letzten Zeitpunkt darstellt, zu dem das Foto aktualisiert wurde. **ETag** bleibt für das Benutzerfoto gleich, bis das Foto geändert wird. Sie können diesen **ETag**-Wert in der HTTPS- **GET**-Anforderung in einem **If-None-Match**-Header an den Server senden. Wenn sich das Foto seit der letzten Anforderung nicht geändert hat, antwortet der Server mit einer HTTP 304-Antwort, in der Entsprechendes angegeben ist. Das heißt, Sie können das zuvor angeforderte und gespeicherte Foto verwenden, statt ein neues nutzen zu müssen. 
 
@@ -84,7 +84,7 @@ Exchange gibt die Daten mit dem Inhaltstyp Bild/jpeg und einer Sammlung von Head
 
 Ihre Anwendung kann die verwaltete EWS-API zum Abrufen von Fotos für Kontakte, wenn der Kontakt in einem Kontaktordner im Postfach des Benutzers gespeichert ist. Suchen Sie dazu nach dem **ItemId** für den Kontakt, den Sie verwenden möchten. Nachdem Sie eine Bindung zu diesem Kontakt erstellt haben, können Sie ihn in die Anlagensammlung laden. Wenn zu dem Kontakt ein Foto vorhanden ist, befindet sich das Foto unter den Anlagen. Gehen Sie die Anlagensammmlung durch und überprüfen Sie den Wert der **IsContactPhoto**-Eigenschaft. Nachdem Sie das Kontaktfoto gefunden haben, können Sie es auf Ihrem lokalen Computer speichern, und Ihre Anwendung kann darauf zugreifen. 
   
-Im folgenden Beispiel wird dieser Prozess veranschaulicht. In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer sich an einem Exchange-Server authentifizieren kann. 
+Im folgenden Beispiel wird dieser Prozess veranschaulicht. In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer sich an einem Exchange-Server authentifizieren kann. 
   
 ```cs
 private static void GetContactPhoto(ExchangeService service, string ItemId)
@@ -114,7 +114,7 @@ private static void GetContactPhoto(ExchangeService service, string ItemId)
 
 <a name="bk_EWS"> </a>
 
-## <a name="get-a-user-photo-by-using-ews"></a>Abrufen einer benutzerfoto mithilfe der Exchange-Webdienste
+## <a name="get-a-user-photo-by-using-ews"></a>Abrufen eines Benutzerfotos mithilfe von EWS
 
 Wenn Sie ein Benutzerfoto aus AD DS abrufen, können Sie die [GetUserPhoto](http://msdn.microsoft.com/library/f6e8143d-4235-428e-8f9c-ab6e9b1cfa6e%28Office.15%29.aspx)- (wenn die E-Mail-Adresse bekannt ist) oder die [ResolveNames](http://msdn.microsoft.com/library/6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb%28Office.15%29.aspx)-Operation verwenden (wenn die E-Mail-Adresse nicht bekannt ist). Wenn Sie ein Benutzerfoto aus einem Kontaktordner im Postfach abrufen, verwenden Sie die [GetItem](http://msdn.microsoft.com/library/6b96dace-1260-4b83-869a-7c31c5583daa%28Office.15%29.aspx) -Operation gefolgt von der [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx)-Operation. In beiden Fällen wird das Foto als Base64-codierte Zeichenfolge in der XML-Antwort zurückgegeben. 
   
@@ -337,7 +337,7 @@ Im folgenden Beispiel wird die XML-Antwort mit den Informationen zu der angeford
 
 <a name="bk_EWS"> </a>
 
-## <a name="decode-a-base64-encoded-string"></a>Dekodiert eine Base64-codierte Zeichenfolge
+## <a name="decode-a-base64-encoded-string"></a>Decodieren einer Base64-codierten Zeichenfolge
 
 Unabhängig von der zum Abrufen eines Benutzerfotos verwendeten Operation müssen Sie die Zeichenfolge decodieren, damit Sie sie in Ihrer Anwendung verwenden können. Im folgenden Beispiel wird veranschaulicht, wie die Zeichenfolge decodiert und anschließend auf Ihrem lokalen Computer gespeichert werden kann, sodass Ihre Anwendung zu einem späteren Zeitpunkt darauf zugreifen kann.
   
@@ -359,8 +359,8 @@ using (FileStream file = new FileStream(ContactName + ".jpg", FileMode.Create, S
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Benutzer und Kontakte in EWS in Exchange](people-and-contacts-in-ews-in-exchange.md)    
-- [Lösen Sie mehrdeutige Namen auf, mithilfe von EWS in Exchange 2013](how-to-resolve-ambiguous-names-by-using-ews-in-exchange-2013.md)    
-- [Prozess Kontakte in Batches mithilfe der EWS in Exchange](how-to-process-contacts-in-batches-by-using-ews-in-exchange.md)
+- [Personen und Kontakte in EWS in Exchange](people-and-contacts-in-ews-in-exchange.md)    
+- [Auflösen von mehrdeutigen Namen mithilfe der EWS Exchange 2013](how-to-resolve-ambiguous-names-by-using-ews-in-exchange-2013.md)    
+- [Verarbeiten von Kontakten in Batches mithilfe von EWS in Exchange](how-to-process-contacts-in-batches-by-using-ews-in-exchange.md)
     
 

@@ -1,5 +1,5 @@
 ---
-title: Suchen Sie nach AutoErmittlung-Endpunkten mithilfe von SCP-Suche in Exchange
+title: Suchen nach AutoErmittlungs-Endpunkten mit der SCP-Suche in Exchange
 manager: kelbow
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,12 +8,12 @@ ms.assetid: b24228a8-5127-4bac-aef0-9c9e8843c9ff
 description: Erfahren Sie, wie Sie AutoErmittlungs-SCP-Objekte in Active Directory-Domänendienste (AD DS) suchen und verwenden, um AutoErmittlungsendpunkt-URLs für die Verwendung mit dem Exchange-AutoErmittlungsdienst zu suchen.
 ms.openlocfilehash: 59fd316d0aa0feea81b60c279040da018c51b47d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756885"
 ---
-# <a name="find-autodiscover-endpoints-by-using-scp-lookup-in-exchange"></a>Suchen Sie nach AutoErmittlung-Endpunkten mithilfe von SCP-Suche in Exchange
+# <a name="find-autodiscover-endpoints-by-using-scp-lookup-in-exchange"></a>Suchen nach AutoErmittlungs-Endpunkten mit der SCP-Suche in Exchange
 
 Erfahren Sie, wie Sie AutoErmittlungs-SCP-Objekte in Active Directory-Domänendienste (AD DS) suchen und verwenden, um AutoErmittlungsendpunkt-URLs für die Verwendung mit dem Exchange-AutoErmittlungsdienst zu suchen.
   
@@ -50,11 +50,11 @@ Der erste Schritte bei der Suche nach in AD DS veröffentlichten AutoErmittlungs
     
 ### <a name="to-locate-autodiscover-scp-objects"></a>So suchen Sie nach AutoErmittlungs-SCP-Objekten
 
-1. In der **configurationNamingContext** -Eigenschaft des DSE-Stammeintrags in AD DS finden Sie den Pfad zum Konfigurationsbenennungskontext für die Domäne. Zum Lesen dieser Eigenschaft können Sie die [DirectoryEntry](http://msdn2.microsoft.com/EN-US/library/z9cddzaa)-Klasse oder jede andere API verwenden, die auf AD DS zugreifen kann. 
+1. In der **configurationNamingContext** -Eigenschaft des DSE-Stammeintrags in AD DS finden Sie den Pfad zum Konfigurationsbenennungskontext für die Domäne. Zum Lesen dieser Eigenschaft können Sie die [DirectoryEntry](http://msdn2.microsoft.com/de-DE/library/z9cddzaa)-Klasse oder jede andere API verwenden, die auf AD DS zugreifen kann. 
     
 2. Suchen Sie im Konfigurationsbenennungskontext nach SCP-Objekten, deren **keywords** -Eigenschaft entweder die GUID des SCP-Zeigers oder die GUID der SCP-URL enthält. 
     
-3. Überprüfen Sie die SCP-Objekten Sie gefunden für ein SCP-Zeiger, der auf die Domäne des Benutzers ausgelegt ist, Überprüfen der **Keywords** -Eigenschaft für einen Eintrag gleich `"Domain=<domain>"`. Angenommen, wenn die e-Mail-Adresse des Benutzers elvin@contoso.com ist, Sie sieht für einen Zeiger SCP mit einem Eintrag in der **Keywords** -Eigenschaft, die gleich ist `"Domain=contoso.com"`. Wenn ein passendes SCP-Zeiger gefunden wird, verwerfen Sie den Satz von SCP-Objekten, und beginnen Sie mit Schritt 1 mit dem Wert der Eigenschaft **ServiceBindingInformation** wie des Servers für den Eintrag Root-DSE herstellen über. 
+3. Überprüfen Sie die SCP-Objekte, die Sie für einen SCP-Zeiger gefunden haben, der sich im Bereich der Benutzerdomäne befindet, indem Sie die **keywords**-Eigenschaft auf einen Eintrag gleich `"Domain=<domain>"` überprüfen. Wenn z. B. die E-Mail-Adresse des Benutzers „elvin@contoso.com“ lautet, suchen Sie nach einem SCP-Zeiger mit einem Eintrag in der **keywords**-Eigenschaft, der gleich `"Domain=contoso.com"` ist. Wenn ein übereinstimmender SCP-Zeiger gefunden wird, verwerfen sie den Satz von SCP-Objekten, und beginnen Sie erneut mit Schritt 1, und verwenden Sie dabei den Wert der **ServiceBindingInformation**-Eigenschaft als Server zum Herstellen einer Verbindung mit dem Stamm-DSE-Eintrag. 
     
 4. Wenn Sie keine SCP-Zeiger finden, die der Domäne des Benutzers zugeordnet sind, überprüfen Sie, ob andere SCP-Zeiger vorhanden sind, die keiner Domäne zugeordnet sind, und speichern Sie den Wert der **serviceBindingInformation** -Eigenschaft als „Ausweichserver" für den Fall, das der aktuelle Server keine Ergebnisse zurückgibt. 
     
@@ -69,11 +69,11 @@ Sie können wie folgt eine priorisierte Liste der URLs von AutoErmittlungsendpun
     
 2. Überprüfen Sie die **keywords** -Eigenschaft für jede SCP-URL im Satz der gefundenen SCP-Objekte, und weisen Sie der URL gemäß den folgenden Regeln eine Priorität zu: 
     
-  - **Keywords** -Eigenschaft enthält einen Wert von `"Site=<site name>"`, wobei `<site name>` entspricht, die der Namen des Active Directory-Standort Sie im vorherigen Schritt abgerufen weisen Sie der URL die Priorität 1. 
+  - Wenn die **keywords**-Eigenschaft den Wert `"Site=<site name>"`, enthält, wobei `<site name>` dem Namen des Active Directory-Standorts entspricht, den Sie im vorherigen Schritt abgerufen haben, weisen Sie der URL die Priorität 1 zu. 
     
-  - Wenn die **Keywords** -Eigenschaft nicht Eintrag mit einem Wert enthält, die mit beginnt `"Site="`, weisen Sie der URL eine Priorität von 2. 
+  - Wenn die **keywords**-Eigenschaft keinen Eintrag enthält, dessen Wert mit `"Site="`, beginnt, weisen Sie der URL die Priorität 2 zu. 
     
-  - **Keywords** -Eigenschaft enthält einen Wert von `"Site=<site name>`, wobei `<site name>` nicht gleich der Name der Active Directory-Standort, die Sie im vorherigen Schritt abgerufen wird, weisen Sie der URL eine Priorität von 3. 
+  - Wenn die **keywords**-Eigenschaft einen Wert `"Site=<site name>` enthält, wobei `<site name>` nicht dem Namen des Active Directory-Standorts entspricht, den Sie im vorherigen Schritt ermittelt haben, weisen Sie der URL die Priorität 3 zu. 
     
 ## <a name="code-example-performing-an-scp-lookup"></a>Codebeispiel: Durchführen einer SCP-Suche
 <a name="bk_CodeExample"> </a>
@@ -325,7 +325,7 @@ namespace ScpLookup
 
 Im nächsten Schritt des AutoErmittlungsprozesses werden AutoErmittlungsanforderungen an die gefundenen URLs gesendet, beginnend mit URLs der Priorität 1, gefolgt von URLs der Priorität 2 und schließlich URLs der Priorität 3. Weitere Informationen über das Senden von AutoErmittlungsanforderungen und die Verarbeitung von Antworten finden Sie in den folgenden Artikeln:
   
-- [Abrufen von benutzereinstellungen aus Exchange mithilfe der AutoErmittlung](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
+- [Abrufen von Benutzereinstellungen von Exchange mithilfe der AutoErmittlung](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
     
 - [Behandeln von AutoErmittlungs-Fehlermeldungen](handling-autodiscover-error-messages.md)
     

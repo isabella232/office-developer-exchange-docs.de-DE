@@ -8,7 +8,7 @@ ms.assetid: 899ba15b-336d-4f9b-8563-318c61e43713
 description: Hier finden Sie Informationen zum Entwickeln von EWS- und Webdienst-Clientanwendungen für Exchange.
 ms.openlocfilehash: 2b8b032124e45dda7c83932d519ffb87bcdb5514
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756817"
@@ -63,7 +63,7 @@ In den Artikeln dieses Abschnitts wird erläutert, wie EWS und Webdienste in Ihr
     
 - [Tools und Ressourcen für die Problembehandlung bei EWS-Anwendungen für Exchange](tools-and-resources-for-troubleshooting-ews-applications-for-exchange.md)
     
-- [Überprüfen der Ergebnisse eines EWS oder EWS verwalteten API-Aufrufs](verifying-the-results-of-an-ews-or-ews-managed-api-call.md)
+- [Überprüfen der Ergebnisse eines EWS- oder verwalteten EWS-API-Aufrufs](verifying-the-results-of-an-ews-or-ews-managed-api-call.md)
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -14,7 +14,7 @@ ms.assetid: befc70fd-51cb-4258-884c-80c9050f0e82
 description: Das Mailbox-Element bezeichnet ein E-Mail-aktiviertes Active Directory-Objekt.
 ms.openlocfilehash: e9fa21f3678249a9ac13d567b88beaf0177f989f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19830258"
@@ -57,7 +57,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Der ExpandDL](expanddl.md) <br/> |Definiert eine Anforderung zum Erweitern einer Verteilerliste. <br/> <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet: ` /ExpandDL ` <br/> |
+|[ExpandDL](expanddl.md) <br/> |Definiert eine Anforderung zum Erweitern einer Verteilerliste. <br/> <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet: ` /ExpandDL ` <br/> |
 |[ToRecipients](torecipients.md) <br/> |Enthält eine Reihe von Benutzern eines Elements.  <br/> |
 |[CcRecipients](ccrecipients.md) <br/> |Stellt eine Auflistung der Empfänger dar, die eine Kopie der Nachricht erhalten.  <br/> |
 |[BccRecipients](bccrecipients.md) <br/> |Stellt eine Auflistung der Empfänger dar, die eine Blindkopie (Bcc) einer E-Mail erhalten sollen.  <br/> |
@@ -82,7 +82,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)- und [ItemId](itemid.md)-Element bezeichnen ein Postfach oder eine Verteilerliste. 
 
@@ -96,7 +96,7 @@ Ein anderes Element, [Postfach (Verfügbarkeit)](mailbox-availability.md), stell
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|

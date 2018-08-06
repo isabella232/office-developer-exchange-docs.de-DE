@@ -1,23 +1,23 @@
 ---
-title: Legen Sie die Exchange-Webdienste-URL mithilfe der EWS Managed API
+title: Festlegen der EWS-Dienst-URL mithilfe der verwalteten EWS-API
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: cddf6525-1c04-484b-a911-56c2f0f1f7b6
-description: In diesem Artikel finden Sie Informationen zum Festlegen der EWS-Dienst-URL in der verwalteten EWS-API-Anwendung.
+description: Informationen zum Festlegen der EWS-Dienst-URL in Ihrer EWS Managed API-Anwendung.
 ms.openlocfilehash: e1a414f7c6f13bd61a58403c9d2be546c0226a69
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756993"
 ---
-# <a name="set-the-ews-service-url-by-using-the-ews-managed-api"></a>Legen Sie die Exchange-Webdienste-URL mithilfe der EWS Managed API
+# <a name="set-the-ews-service-url-by-using-the-ews-managed-api"></a>Festlegen der EWS-Dienst-URL mithilfe der verwalteten EWS-API
 
-In diesem Artikel finden Sie Informationen zum Festlegen der EWS-Dienst-URL in der verwalteten EWS-API-Anwendung.
+Informationen zum Festlegen der EWS-Dienst-URL in Ihrer EWS Managed API-Anwendung.
   
-Die Dienst-URL ist die Adresse, über die Exchange mit Exchange-Webdienste (EWS) kommuniziert. Wenn die verwaltete EWS-API-Anwendung über diese Adresse und entsprechenden Zugriff zum [Kommunizieren mit EWS](how-to-communicate-with-ews-by-using-the-ews-managed-api.md) verfügt, kann sie Aufrufe an die [ExchangeService-Klasse](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) durchführen. Die Dienst-URL für einen lokalen Exchange-Server kann wie folgt aussehen. 
+Die Dienst-URL ist die Adresse, über die Exchange mit Exchange-Webdienste (EWS) kommuniziert. Wenn die verwaltete EWS-API-Anwendung über diese Adresse und entsprechenden Zugriff zum [Kommunizieren mit EWS](how-to-communicate-with-ews-by-using-the-ews-managed-api.md) verfügt, kann sie Aufrufe an die [ExchangeService-Klasse](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) durchführen. Die Dienst-URL für einen lokalen Exchange-Server kann wie folgt aussehen. 
   
 ```HTML
 https://computer.domain.contoso.com/EWS/Exchange.asmx
@@ -28,7 +28,7 @@ Sie können die EWS-URL in der Anwendung auf verschiedene Weise festlegen. Empfo
 ## <a name="set-the-ews-service-url-by-using-the-autodiscover-service"></a>Festlegen der EWS-Dienst-URL mithilfe des AutoErmittlungsdiensts
 <a name="bk_SetURLusingAutoDiscover"> </a>
 
-Die [AutodiscoverUrl](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.autodiscoverurl%28v=exchg.80%29.aspx)-Methode verwendet die E-Mail-Adresse zum Festlegen des [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Endpunkts und ermöglicht es der Anwendung, alle in den **ExchangeService** -Proxyklassen enthaltenen Methoden zu verwenden. Im folgenden Beispiel wird die Verwendung der **AutodiscoverURL** -Methode veranschaulicht. 
+Die [AutodiscoverUrl](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.autodiscoverurl%28v=exchg.80%29.aspx)-Methode verwendet die E-Mail-Adresse zum Festlegen des [ExchangeService](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Endpunkts und ermöglicht es der Anwendung, alle in den **ExchangeService** -Proxyklassen enthaltenen Methoden zu verwenden. Im folgenden Beispiel wird die Verwendung der **AutodiscoverURL** -Methode veranschaulicht. 
   
 ```cs
 // Create the binding.
@@ -58,9 +58,9 @@ service.Url = new Uri("https://computername.domain.contoso.com/EWS/Exchange.asmx
 ## <a name="see-also"></a>Siehe auch
 
 - [Erste Schritte mit verwalteten EWS-API-Clientanwendungen](get-started-with-ews-managed-api-client-applications.md)   
-- [Einrichten der Entwicklungsumgebung für Exchange-Anwendung](setting-up-your-exchange-application-development-environment.md)   
+- [Einrichten der Umgebung der Exchange-Anwendungsentwicklung](setting-up-your-exchange-application-development-environment.md)   
 - [Steuern des Zugriffs auf EWS in Exchange](how-to-control-access-to-ews-in-exchange.md) 
-- [Kommunizieren Sie mit Exchange-Webdienste mithilfe der EWS Managed API](how-to-communicate-with-ews-by-using-the-ews-managed-api.md)  
-- [Mithilfe von AutoErmittlung Verbindungspunkte suchen](how-to-use-autodiscover-to-find-connection-points.md)
+- [Kommunizieren mit EWS unter Verwendung der verwalteten EWS-API](how-to-communicate-with-ews-by-using-the-ews-managed-api.md)  
+- [Verwenden der AutoErmittlung für die Suche nach Verbindungspunkten](how-to-use-autodiscover-to-find-connection-points.md)
     
 
