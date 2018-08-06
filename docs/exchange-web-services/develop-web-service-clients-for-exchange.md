@@ -8,68 +8,68 @@ ms.assetid: 899ba15b-336d-4f9b-8563-318c61e43713
 description: Hier finden Sie Informationen zum Entwickeln von EWS- und Webdienst-Clientanwendungen für Exchange.
 ms.openlocfilehash: 2b8b032124e45dda7c83932d519ffb87bcdb5514
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756817"
 ---
-# <a name="develop-web-service-clients-for-exchange"></a><span data-ttu-id="7d430-103">Entwickeln von Webdienstclients für Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-103">Develop web service clients for Exchange</span></span>
+# <a name="develop-web-service-clients-for-exchange"></a><span data-ttu-id="e6c16-103">Entwickeln von Webdienstclients für Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-103">Develop web service clients for Exchange</span></span>
 
-<span data-ttu-id="7d430-104">Hier finden Sie Informationen zum Entwickeln von EWS- und Webdienst-Clientanwendungen für Exchange.</span><span class="sxs-lookup"><span data-stu-id="7d430-104">Find information to help you develop EWS and web service client applications for Exchange.</span></span>
+<span data-ttu-id="e6c16-104">Hier finden Sie Informationen zum Entwickeln von EWS- und Webdienst-Clientanwendungen für Exchange.</span><span class="sxs-lookup"><span data-stu-id="e6c16-104">Find information to help you develop EWS and web service client applications for Exchange.</span></span>
   
-<span data-ttu-id="7d430-105">In den Artikeln dieses Abschnitts wird erläutert, wie EWS und Webdienste in Ihren Exchange-Clientanwendungen für Exchange Online, Exchange Online als Teil von Office 365 und lokale Versionen von Exchange ab Exchange 2013 verwendet werden. Außerdem werden Beispiele für die Durchführung bestimmter Aufgaben bereitgestellt.</span><span class="sxs-lookup"><span data-stu-id="7d430-105">The articles in this section explain how to use EWS and web services in your Exchange client applications for Exchange Online, Exchange Online as part of Office 365, and on-premises versions of Exchange starting with Exchange 2013, and provide examples that show you how to perform specific tasks.</span></span> 
+<span data-ttu-id="e6c16-105">In den Artikeln dieses Abschnitts wird erläutert, wie EWS und Webdienste in Ihren Exchange-Clientanwendungen für Exchange Online, Exchange Online als Teil von Office 365 und lokale Versionen von Exchange ab Exchange 2013 verwendet werden. Außerdem werden Beispiele für die Durchführung bestimmter Aufgaben bereitgestellt.</span><span class="sxs-lookup"><span data-stu-id="e6c16-105">The articles in this section explain how to use EWS and web services in your Exchange client applications for Exchange Online, Exchange Online as part of Office 365, and on-premises versions of Exchange starting with Exchange 2013, and provide examples that show you how to perform specific tasks.</span></span> 
   
-## <a name="in-this-section"></a><span data-ttu-id="7d430-106">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="7d430-106">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="e6c16-106">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="e6c16-106">In this section</span></span>
 
-- [<span data-ttu-id="7d430-107">Archivierung in EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-107">Archiving in EWS in Exchange</span></span>](archiving-in-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-107">Archivierung in EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-107">Archiving in EWS in Exchange</span></span>](archiving-in-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-108">Attachments and EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-108">Attachments and EWS in Exchange</span></span>](attachments-and-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-108">Attachments and EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-108">Attachments and EWS in Exchange</span></span>](attachments-and-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-109">Kalender und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-109">Calendars and EWS in Exchange</span></span>](calendars-and-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-109">Kalender und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-109">Calendars and EWS in Exchange</span></span>](calendars-and-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-110">Stellvertretungszugriff und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-110">Delegate access and EWS in Exchange</span></span>](delegate-access-and-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-110">Stellvertretungszugriff und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-110">Delegate access and EWS in Exchange</span></span>](delegate-access-and-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-111">Verteilergruppen und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-111">Distribution groups and EWS in Exchange</span></span>](distribution-groups-and-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-111">Verteilergruppen und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-111">Distribution groups and EWS in Exchange</span></span>](distribution-groups-and-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-112">eDiscovery in EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-112">eDiscovery in EWS in Exchange</span></span>](ediscovery-in-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-112">eDiscovery in EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-112">eDiscovery in EWS in Exchange</span></span>](ediscovery-in-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-113">E-Mail- und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-113">Email and EWS in Exchange</span></span>](email-and-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-113">E-Mail- und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-113">Email and EWS in Exchange</span></span>](email-and-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-114">Ordner und Elemente in EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-114">Folders and items in EWS in Exchange</span></span>](folders-and-items-in-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-114">Ordner und Elemente in EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-114">Folders and items in EWS in Exchange</span></span>](folders-and-items-in-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-115">Bezeichner in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-115">Identifiers in Exchange</span></span>](ews-identifiers-in-exchange.md)
+- [<span data-ttu-id="e6c16-115">Bezeichner in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-115">Identifiers in Exchange</span></span>](ews-identifiers-in-exchange.md)
     
-- [<span data-ttu-id="7d430-116">Identitätswechsel und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-116">Impersonation and EWS in Exchange</span></span>](impersonation-and-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-116">Identitätswechsel und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-116">Impersonation and EWS in Exchange</span></span>](impersonation-and-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-117">Posteingangsverwaltung und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-117">Inbox management and EWS in Exchange</span></span>](inbox-management-and-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-117">Posteingangsverwaltung und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-117">Inbox management and EWS in Exchange</span></span>](inbox-management-and-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-118">Benachrichtigungsabonnements, Postfachereignisse und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-118">Notification subscriptions, mailbox events, and EWS in Exchange</span></span>](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-118">Benachrichtigungsabonnements, Postfachereignisse und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-118">Notification subscriptions, mailbox events, and EWS in Exchange</span></span>](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-119">Benutzer und Kontakte in EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-119">People and contacts in EWS in Exchange</span></span>](people-and-contacts-in-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-119">Benutzer und Kontakte in EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-119">People and contacts in EWS in Exchange</span></span>](people-and-contacts-in-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-120">Persistent Anwendungseinstellungen in EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-120">Persistent application settings in EWS in Exchange</span></span>](persistent-application-settings-in-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-120">Persistent Anwendungseinstellungen in EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-120">Persistent application settings in EWS in Exchange</span></span>](persistent-application-settings-in-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-121">Eigenschaften und erweiterte Eigenschaften in EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-121">Properties and extended properties in EWS in Exchange</span></span>](properties-and-extended-properties-in-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-121">Eigenschaften und erweiterte Eigenschaften in EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-121">Properties and extended properties in EWS in Exchange</span></span>](properties-and-extended-properties-in-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-122">Eigenschaftensätze und Antwort shapes in EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-122">Property sets and response shapes in EWS in Exchange</span></span>](property-sets-and-response-shapes-in-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-122">Eigenschaftensätze und Antwort shapes in EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-122">Property sets and response shapes in EWS in Exchange</span></span>](property-sets-and-response-shapes-in-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-123">Zugriff auf Öffentliche Ordner mit EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-123">Public folder access with EWS in Exchange</span></span>](public-folder-access-with-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-123">Zugriff auf Öffentliche Ordner mit EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-123">Public folder access with EWS in Exchange</span></span>](public-folder-access-with-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-124">Suche und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-124">Search and EWS in Exchange</span></span>](search-and-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-124">Suche und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-124">Search and EWS in Exchange</span></span>](search-and-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-125">Postfachsynchronisierung und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-125">Mailbox synchronization and EWS in Exchange</span></span>](mailbox-synchronization-and-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-125">Postfachsynchronisierung und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-125">Mailbox synchronization and EWS in Exchange</span></span>](mailbox-synchronization-and-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-126">Zeitzonen und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-126">Time zones and EWS in Exchange</span></span>](time-zones-and-ews-in-exchange.md)
+- [<span data-ttu-id="e6c16-126">Zeitzonen und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-126">Time zones and EWS in Exchange</span></span>](time-zones-and-ews-in-exchange.md)
     
-- [<span data-ttu-id="7d430-127">Tools und Ressourcen für die Problembehandlung bei EWS-Anwendungen für Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-127">Tools and resources for troubleshooting EWS applications for Exchange</span></span>](tools-and-resources-for-troubleshooting-ews-applications-for-exchange.md)
+- [<span data-ttu-id="e6c16-127">Tools und Ressourcen für die Problembehandlung bei EWS-Anwendungen für Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-127">Tools and resources for troubleshooting EWS applications for Exchange</span></span>](tools-and-resources-for-troubleshooting-ews-applications-for-exchange.md)
     
-- [<span data-ttu-id="7d430-128">Überprüfen der Ergebnisse eines EWS oder EWS verwalteten API-Aufrufs</span><span class="sxs-lookup"><span data-stu-id="7d430-128">Verifying the results of an EWS or EWS Managed API call</span></span>](verifying-the-results-of-an-ews-or-ews-managed-api-call.md)
+- [<span data-ttu-id="e6c16-128">Überprüfen der Ergebnisse eines EWS- oder verwalteten EWS-API-Aufrufs</span><span class="sxs-lookup"><span data-stu-id="e6c16-128">Verifying the results of an EWS or EWS Managed API call</span></span>](verifying-the-results-of-an-ews-or-ews-managed-api-call.md)
     
-## <a name="see-also"></a><span data-ttu-id="7d430-129">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7d430-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e6c16-129">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e6c16-129">See also</span></span>
 
-- [<span data-ttu-id="7d430-130">Erkunden von verwalteter EWS-API, EWS und Webdiensten in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-130">Explore the EWS Managed API, EWS, and web services in Exchange</span></span>](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)     
-- [<span data-ttu-id="7d430-131">Erste Schritte mit Webdiensten in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-131">Start using web services in Exchange</span></span>](start-using-web-services-in-exchange.md)  
-- [<span data-ttu-id="7d430-132">Übersicht über den EWS-Cliententwurf für Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-132">EWS client design overview for Exchange</span></span>](ews-client-design-overview-for-exchange.md)  
-- [<span data-ttu-id="7d430-133">Referenz für Webdienste für Exchange</span><span class="sxs-lookup"><span data-stu-id="7d430-133">Web services reference for Exchange</span></span>](../web-service-reference/web-services-reference-for-exchange.md)
+- [<span data-ttu-id="e6c16-130">Erkunden von verwalteter EWS-API, EWS und Webdiensten in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-130">Explore the EWS Managed API, EWS, and web services in Exchange</span></span>](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)     
+- [<span data-ttu-id="e6c16-131">Erste Schritte mit Webdiensten in Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-131">Start using web services in Exchange</span></span>](start-using-web-services-in-exchange.md)  
+- [<span data-ttu-id="e6c16-132">Übersicht über den EWS-Cliententwurf für Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-132">EWS client design overview for Exchange</span></span>](ews-client-design-overview-for-exchange.md)  
+- [<span data-ttu-id="e6c16-133">Referenz für Webdienste für Exchange</span><span class="sxs-lookup"><span data-stu-id="e6c16-133">Web services reference for Exchange</span></span>](../web-service-reference/web-services-reference-for-exchange.md)
     
 
