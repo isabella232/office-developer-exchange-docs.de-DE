@@ -1,53 +1,53 @@
 ---
-title: Behandeln von Fehlermeldungen für die AutoErmittlung
+title: Behandeln von AutoErmittlungs-Fehlermeldungen
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e5939ec2-1100-4174-8a88-5a6e09b60b23
-description: Lernen Sie die verschiedenen Typen von AutoErmittlung Fehler und wie Sie mit diesen vorgehen.
+description: Erfahren Sie mehr über die unterschiedlichen Arten von Fehlern bei der AutoErmittlung und wie damit umzugehen ist.
 ms.openlocfilehash: fcafc799f4d35e92159d2913845474ecf7bc5657
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756840"
 ---
-# <a name="handling-autodiscover-error-messages"></a>Behandeln von Fehlermeldungen für die AutoErmittlung
+# <a name="handling-autodiscover-error-messages"></a>Behandeln von AutoErmittlungs-Fehlermeldungen
 
-Lernen Sie die verschiedenen Typen von AutoErmittlung Fehler und wie Sie mit diesen vorgehen.
+Erfahren Sie mehr über die unterschiedlichen Arten von Fehlern bei der AutoErmittlung und wie damit umzugehen ist.
   
-AutoErmittlung ermöglicht der Anwendung, um Konfigurationsinformationen automatisch abzurufen, und es funktioniert hervorragend. Allerdings gehen Sie Dinge planmäßig nicht immer. Sehen wir uns die häufige Fehler, die auftreten können, und Sie können wie behandeln sie minimieren auffordern, Ihre Benutzer Ihre Client manuell konfiguriert werden müssen.
+Die AutoErmittlung ermöglicht es Anwendungen, Konfigurationsinformationen automatisch abzurufen, und dies funktioniert hervorragend. Aber es läuft nicht immer alles nach Plan. Schauen wir uns die gängigen Fehler an, die auftreten können, und wie Sie diese behandeln können, um den Benutzer so wenig wie möglich auffordern zu müssen, den Client manuell zu konfigurieren.
   
-## <a name="http-status-errors"></a>HTTP-Status-Fehler
+## <a name="http-status-errors"></a>HTTP-Statusfehler
 <a name="bk_HttpErrors"> </a>
 
-Der erste Typ von Fehler, die auftreten können, wenn AutoErmittlung-Anforderungen senden, ist der HTTP-Status. Wenn der HTTP-Status in Ihre Antwort etwas anderes als 200 (OK) ist, enthält Antwort Nutzlast keine die Antwort der AutoErmittlung gesuchte wurden. Zur Vereinfachung können wir nicht 200 Statuscodes in drei Kategorien gruppieren.
+Der erste Fehlertyp, der möglicherweise beim Senden von AutoErmittlung-Anforderungen auftritt, ist der HTTP-Status. Wenn der HTTP-Status in Ihrer Antwort anders als 200 (OK) lautet, enthält die Nutzlast der Antwort nicht die gewünschte Antwort der AutoErmittlung. Der Einfachheit halber können Nicht-200 Statuscodes in drei Kategorien gruppiert werden.
   
-**In Tabelle 1. HTTP-Statuscodes**
+**Tabelle 1: HTTP-Statuscodes**
 
-|**Statuscode**|**Art des Fehlers**|**Behandlung von...**|
+|**Statuscode**|**Fehlertyp**|**Behandlung**|
 |:-----|:-----|:-----|
-|301 oder 302  <br/> |Umleiten von Fehler  <br/> |Anzeigen Sie Ihrer Anforderung an dem URI in der "Location"-HTTP-Antwortheader enthalten sind. Weitere Informationen hierzu finden Sie unter [Behandlung umleiten Fehler](#bk_HandlingRedirects).  <br/> |
-|401  <br/> |Des Fehlers  <br/> |Da der [AutoErmittlung-Prozesses](autodiscover-for-exchange.md) mehrere potenzielle URLs versucht umfasst, konnte dies auf eine URL, die nur für den nächsten zu Ihrer Anmeldeinformationen akzeptiert haben abgerufen werden. Aus diesem Grund sollten nicht Sie einen einzelnen 401-Fehler, um anzugeben, dass die Anmeldeinformationen ungültig sind, berücksichtigen. Wenn Sie mehrere URLs 401-Fehler erhalten, sollten Sie den Benutzer auffordern, ihr Kennwort erneut einzugeben, (falls möglich).  <br/> |
-|Alle anderen nicht 200-status  <br/> |Ungültige AutoErmittlung-Endpunkt-Fehler  <br/> |Berücksichtigen Sie die URL ein, der anderen nicht 200 Statuscode ungültig liegend zurückgibt, und weiterhin versuchen den nächsten URL in der Liste.  <br/> |
+|301 oder 302  <br/> |Fehler beim Umleiten  <br/> |Senden Sie Ihre Anforderung erneut an den im HTTP-Antwortheader „Location“ enthaltenen URI. Weitere Informationen finden Sie unter [Behandlung von Umleitungsfehlern](#bk_HandlingRedirects).  <br/> |
+|401  <br/> |Fehler „Nicht autorisiert“  <br/> |Da der [AutoErmittlungs-Prozess](autodiscover-for-exchange.md) das Ausprobieren mehrerer potenzieller URLs umfasst, könnte dieser Fehler bei einer URL lediglich deswegen angezeigt werden, dass Ihre Anmeldeinformationen bei der nächsten akzeptiert werden. Aus diesem Grund sollten Sie bei einem einzigen 401-Fehler nicht davon ausgehen, dass die Anmeldeinformationen ungültig sind. Wenn Sie jedoch von mehreren URLs 401-Fehler erhalten, sollten Sie den Benutzer vielleicht auffordern, sein Kennwort (falls möglich) erneut einzugeben.  <br/> |
+|Alle anderen Nicht-200-Status  <br/> |Fehler „Ungültiger AutoErmittlungs-Endpunkt“  <br/> |Gehen Sie davon aus, dass die URL, bei der andere Nicht-200-Statuscodes zurückgegeben werden, ungültig ist, und fahren Sie mit der nächsten URL in Ihrer Liste fort.  <br/> |
    
-## <a name="autodiscover-errors"></a>AutoErmittlung-Fehler
+## <a name="autodiscover-errors"></a>AutoErmittlungs-Fehler
 <a name="bk_AutodiscoverErrors"> </a>
 
-Auch wenn Sie nach dem Senden einer Anforderung der AutoErmittlung 200 (OK) Statuscode erhalten möchten, nicht bedeuten, dass der Server die Informationen gesendet, die Sie benötigen. Der Status 200 bedeutet nur, dass Sie eine Antwort der AutoErmittlung haben und diese Antwort möglicherweise einen Fehler in der Nutzlast enthält. Der Speicherort der die Fehlerinformationen hängt davon ab, ob das Format SOAP oder POX ist.
+Selbst wenn Sie nach dem Senden einer AutoErmittlungs-Anforderung einen 200-Statuscode (OK) erhalten, bedeutet das nicht, dass der Server die von Ihnen benötigten Informationen gesendet hat. Der Status 200 bedeutet nur, dass Sie von der AutoErmittlung eine Antwort erhalten haben und dass diese Antwort möglicherweise einen Fehler innerhalb der Nutzlast enthält. Der Speicherort der Fehlerinformationen variiert in Abhängigkeit davon, ob das Format SOAP oder POX ist.
   
-### <a name="soap-autodiscover-errors"></a>SOAP-AutoErmittlung-Fehler
+### <a name="soap-autodiscover-errors"></a>SOAP-AutoErmittlungs-Fehler
 
-Für die SOAP-AutoErmittlung kann die Antwort ein oder mehrere [ErrorCode (SOAP)](http://msdn.microsoft.com/library/5e5ec861-0191-4ecb-a906-47ce8ed96381%28Office.15%29.aspx) Elemente an verschiedenen Orten enthalten. Sie können in der Regel eine als untergeordnetes Element des Elements [Antwort (SOAP)](http://msdn.microsoft.com/library/4c2bcdeb-95ce-4ffa-bd83-118af53b534f%28Office.15%29.aspx) und eine als untergeordnetes Element jedes [UserResponse (SOAP)](http://msdn.microsoft.com/library/5007b1ba-bfcc-40d7-b1cb-e32fbaf54ffd%28Office.15%29.aspx) -Elements in der Antwort erwarten. Auch kann eine als untergeordnetes Element eines [UserSettingError (SOAP)](http://msdn.microsoft.com/library/abb175c5-4f38-4dcc-81e3-b511686862eb%28Office.15%29.aspx) -Elements auftreten, wenn diese vorhanden ist. Im Kontext des Fehlers hängt davon ab, wo sich das **ErrorCode** -Element, wie folgt befindet: 
+Für die SOAP-AutoErmittlung kann die Antwort ein oder mehrere [ErrorCode (SOAP)](http://msdn.microsoft.com/library/5e5ec861-0191-4ecb-a906-47ce8ed96381%28Office.15%29.aspx)-Elemente an unterschiedlichen Stellen enthalten. In der Regel ist eines ein untergeordnetes Element des [Response (SOAP)](http://msdn.microsoft.com/library/4c2bcdeb-95ce-4ffa-bd83-118af53b534f%28Office.15%29.aspx)-Elements und eines ein untergeordnetes Element der einzelnen [UserResponse (SOAP)](http://msdn.microsoft.com/library/5007b1ba-bfcc-40d7-b1cb-e32fbaf54ffd%28Office.15%29.aspx)-Elemente in der Antwort. Vielleicht tritt eines auch als untergeordnetes Element eines [UserSettingError (SOAP)](http://msdn.microsoft.com/library/abb175c5-4f38-4dcc-81e3-b511686862eb%28Office.15%29.aspx)-Elements auf, falls vorhanden. Der Kontext des Fehlercodes ist davon abhängig, wo sich das **ErrorCode**-Element befindet: 
   
-- Als untergeordnetes Element des Elements **Antwort** stellt das **ErrorCode** -Element einen Fehler auf, der für die gesamte Anforderung gilt. 
+- Das **ErrorCode**-Element stellt als untergeordnetes Element des **Response**-Elements einen Fehler dar, der für die gesamte Anforderung gilt. 
     
-- Als untergeordnetes Element des Elements **UserResponse** stellt er einen Fehler, der nur für diesen bestimmte Benutzer gilt. 
+- Als untergeordnetes Element des **UserResponse**-Elements stellt es einen Fehler dar, der nur für diesen bestimmten Benutzer gilt. 
     
-- Als untergeordnetes Element des **UserSettingError** -Elements stellt er einen Fehler, der für eine bestimmte Einstellung gilt, das angefordert wurde. 
+- Als untergeordnetes Element des **UserSettingError**-Elements stellt es einen Fehler dar, der für eine bestimmte Einstellung gilt, die angefordert wurde. 
     
-Sehen Sie ein Beispiel für eine Antwort an. In diesem Beispiel hat das **ErrorCode** -Element unter dem Element **Antwort** Wert "NoError", die Erfolg angibt. Das **ErrorCode** -Element unter dem **UserResponse** -Element hat jedoch den Wert "RedirectAddress", die angibt, dass für diesen Benutzer ist ein Fehler aufgetreten. 
+Werfen wir einen Blick auf ein Beispiel für eine Antwort. In diesem Beispiel weist das **ErrorCode**-Element unter dem **Response**-Element den Wert „NoError“ auf, der auf allgemeinen Erfolg hindeutet. Das **ErrorCode**-Element unter dem **UserResponse**-Element weist jedoch den Wert „RedirectAddress“ auf, was auf einen Fehler hinweist, der für diesen bestimmten Benutzer aufgetreten ist. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -84,30 +84,30 @@ Sehen Sie ein Beispiel für eine Antwort an. In diesem Beispiel hat das **ErrorC
 </s:Envelope>
 ```
 
-Im Artikel [ErrorCode (SOAP)](http://msdn.microsoft.com/library/5e5ec861-0191-4ecb-a906-47ce8ed96381%28Office.15%29.aspx) enthält eine vollständige Liste der möglichen Fehler. Geben Sie an, die meisten dieser Fehler kann nicht behoben, aber nur einige besondere Behandlung rechtfertigen. 
+Der Artikel [ErrorCode (SOAP)](http://msdn.microsoft.com/library/5e5ec861-0191-4ecb-a906-47ce8ed96381%28Office.15%29.aspx) enthält eine vollständige Liste möglicher Fehler. Bei den meisten Fehlern handelt es sich um nicht behebbare Fehler, einige können jedoch auf spezielle Weise behandelt werden. 
   
-**In Tabelle 2. SOAP-Autodisover ErrorCode-Werte**
+**Tabelle 2. ErrorCode-Werte der SOAP-AutoErmittlung**
 
-|**ErrorCode-Wert**|**Behandlung von...**|
+|**ErrorCode-Wert**|**Behandlung**|
 |:-----|:-----|
-|RedirectAddress  <br/> |[Neustarten der AutoErmittlung mit einer neuen e-Mail-Adresse](#bk_RestartAutodiscover) mit der e-Mail-Adresse in das Element [RedirectTarget (SOAP)](http://msdn.microsoft.com/library/f8162724-cf9a-4543-a1ad-5846c8b10bfa%28Office.15%29.aspx) .  <br/> |
-|RedirectUrl  <br/> |[Erneutes Senden der Anforderung an eine neue URL](#bk_ResendRequest) , an die URL im **RedirectTarget** -Element.  <br/> |
-|ServerBusy  <br/> |Wiederholen Sie diese URL nach einer kleinen Verzögerung. Sie können warten Sie einen bestimmten Zeitraum oder verschieben einfach an das Ende der Liste der URLs und Testen Sie diese URL. Wenn Sie diese Fehlermeldung mehrere Male über eine URL angezeigt wird, sollten Sie die URL ungültig ist.  <br/> |
+|RedirectAddress  <br/> |[Neustarten der AutoErmittlung mit einer neuen E-Mail-Adresse](#bk_RestartAutodiscover) mit der E-Mail-Adresse im [RedirectTarget (SOAP)](http://msdn.microsoft.com/library/f8162724-cf9a-4543-a1ad-5846c8b10bfa%28Office.15%29.aspx)-Element.  <br/> |
+|RedirectUrl  <br/> |[Erneutes Senden Ihrer Anforderung an eine neue URL](#bk_ResendRequest) an die URL im **RedirectTarget**-Element.  <br/> |
+|ServerBusy  <br/> |Wiederholen dieser URL nach eine kurzen Verzögerung. Sie können eine festgelegte Zeit warten oder diese URL einfach an das Ende Ihrer Liste mit URLs verschieben, die Sie ausprobieren. Wenn Sie diese Fehlermeldung mehrmals von einer URL erhalten, sollten Sie diese URL als ungültig betrachten.  <br/> |
    
-### <a name="pox-autodiscover-errors"></a>POX AutoErmittlung-Fehler
+### <a name="pox-autodiscover-errors"></a>POX-AutoErmittlungs-Fehler
 
-Der AutoErmittlungsdienst POX meldet Fehler ein wenig anders aus. Nicht wiederherstellbaren Fehler sind im [Fehler (POX)](http://msdn.microsoft.com/library/91c63b62-ab68-4c32-a2f7-5a87c188335b%28Office.15%29.aspx) -Element enthalten. Im Artikel [ErrorCode (POX)](http://msdn.microsoft.com/library/064d73e4-45b7-4797-828e-9df590830db8%28Office.15%29.aspx) enthält eine vollständige Liste der möglichen Fehlercodes. 
+Der POX-AutoErmittlungsdienst meldet Fehler etwas anders. Nicht behebbare Fehler sind im [Error (POX)](http://msdn.microsoft.com/library/91c63b62-ab68-4c32-a2f7-5a87c188335b%28Office.15%29.aspx)-Element enthalten. Der Artikel [ErrorCode (POX)](http://msdn.microsoft.com/library/064d73e4-45b7-4797-828e-9df590830db8%28Office.15%29.aspx) enthält eine vollständige Liste möglicher Fehlercodes. 
   
-Umleitung Fehler sind in der [Aktion (POX)](http://msdn.microsoft.com/library/a3462c6b-453c-462a-830d-f29ee4a2babb%28Office.15%29.aspx) -Element enthalten. Jeder Wert des **Action** -Elements als "Einstellungen" gibt eine Umleitung Fehler an. 
+Umleitungsfehler sind im [Action (POX)](http://msdn.microsoft.com/library/a3462c6b-453c-462a-830d-f29ee4a2babb%28Office.15%29.aspx)-Element enthalten. Jeder Wert des **Action**-Elements, der nicht „settings“ lautet, deutet auf einen Umleitungsfehler hin. 
   
-**Tabelle 3. POX Autodisover ErrorCode-Werte**
+**Tabelle 3. ErrorCode-Werte der POX-AutoErmittlung**
 
-|**Aktionswert**|**Behandlung von...**|
+|**Aktionswert**|**Behandlung**|
 |:-----|:-----|
-|redirectAddr  <br/> |[Neustarten der AutoErmittlung mit einer neuen e-Mail-Adresse](#bk_RestartAutodiscover) mit der e-Mail-Adresse in das Element [RedirectAddr (POX)](http://msdn.microsoft.com/library/0e9fa6b6-7991-4dc1-a59a-48e5f8e041e4%28Office.15%29.aspx) .  <br/> |
-|redirectUrl  <br/> |[Erneutes Senden der Anforderung an eine neue URL](#bk_ResendRequest) , an die URL im Element [RedirectUrl (POX)](http://msdn.microsoft.com/library/c54f310f-8c99-4c37-8e73-ac87722b6229%28Office.15%29.aspx) .  <br/> |
+|redirectAddr  <br/> |[Neustarten der AutoErmittlung mit einer neuen E-Mail-Adresse](#bk_RestartAutodiscover) mit der E-Mail-Adresse im [RedirectAddr (POX)](http://msdn.microsoft.com/library/0e9fa6b6-7991-4dc1-a59a-48e5f8e041e4%28Office.15%29.aspx)-Element.  <br/> |
+|redirectUrl  <br/> |[Erneutes Senden Ihrer Anforderung an eine neue URL](#bk_ResendRequest) an die URL im [RedirectUrl (POX)](http://msdn.microsoft.com/library/c54f310f-8c99-4c37-8e73-ac87722b6229%28Office.15%29.aspx)-Element.  <br/> |
    
-In diesem Beispiel hat das **Action** -Element den Wert "RedirectAddr", die angibt, dass eine neue Anforderung mit der neuen e-Mail-Adresse im **RedirectAddr** -Element enthaltenen gesendet werden sollen. 
+In diesem Beispiel weist das **Action**-Element den Wert „redirectAddr“ auf, was darauf hindeutet, dass eine neue Anforderung mit der neuen E-Mail-Adresse gesendet werden sollte, die sich im **RedirectAddr**-Element befindet. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -121,45 +121,45 @@ In diesem Beispiel hat das **Action** -Element den Wert "RedirectAddr", die angi
 </Autodiscover>
 ```
 
-## <a name="handling-redirect-errors"></a>Nächster Schritt: Fehlerbehandlung
+## <a name="handling-redirect-errors"></a>Behandlung von Umleitungsfehlern
 <a name="bk_HandlingRedirects"> </a>
 
-Sie können die Umleitung Fehlerszenarien auf zwei Arten behandeln:
+Szenarien mit Umleitungsfehlern können auf zweierlei Weise behandelt werden:
   
-- Durch einen Neustart AutoErmittlung mit einer neuen e-Mail-Adresse ein.
+- Durch einen Neustart der AutoErmittlung mit einer neuen E-Mail-Adresse.
     
-- Durch erneutes Senden der Anforderung an einer neuen URL.
+- Durch erneutes Senden der Anforderung an eine neue URL.
     
-Beide Szenarien erfordern, dass einige Überprüfung vor dem fortfahren.
+Beide Szenarien erfordern einige Überprüfungen, bevor Sie fortfahren.
   
-### <a name="restarting-autodiscover-with-a-new-email-address"></a>Neustarten der AutoErmittlung mit einer neuen e-Mail-Adresse
+### <a name="restarting-autodiscover-with-a-new-email-address"></a>Neustarten der AutoErmittlung mit einer neuen E-Mail-Adresse
 <a name="bk_RestartAutodiscover"> </a>
 
-Wenn Sie eine neue e-Mail-Adresse in eine AutoErmittlung abrufen Antwort umleiten, stellen Sie zuerst sicher, dass die neue e-Mail-Adresse, die in der Umleitung Fehlerantwort bereitgestellt wurde nicht dieselbe Adresse ist, die Sie in der Anforderung gesendet, die den Fehler verursacht hat. Wenn dies der Fall, sollten nicht neu starten AutoErmittlung und stattdessen die URL, die die Antwort um ungültige werden generiert.
+Wenn Sie eine neue E-Mail-Adresse in einer Umleitungsantwort der AutoErmittlung abrufen, überprüfen Sie zunächst, dass die neue E-Mail-Adresse, die in der Umleitungsfehlerantwort bereitgestellt wurde, nicht die gleiche Adresse wie diejenige ist, die Sie in der Anforderung gesendet haben, die zu einem Fehler führte. Ist dies der Fall, sollten Sie die AutoErmittlung nicht neu starten; betrachten Sie die URL, die die Antwort generierte, als ungültig.
   
-Wenn die neue e-Mail-Adresse ist, Verwerfen der vorhandenen Liste der potenziellen AutoErmittlung-Endpunkt-URLs und zum Generieren einer neuen Liste basierend auf der neuen e-Mail-Adresse.
+Wenn die neue E-Mail-Adresse anders lautet, verwerfen Sie die vorhandene Liste potenzieller URLs für AutoErmittlungs-Endpunkte, und generieren Sie eine neue Liste basierend auf der neuen E-Mail-Adresse.
   
-### <a name="resending-your-request-to-a-new-url"></a>Erneutes Senden der Anforderung an einer neuen URL
+### <a name="resending-your-request-to-a-new-url"></a>Erneutes Senden der Anforderung an eine neue URL
 <a name="bk_ResendRequest"> </a>
 
-Wenn Sie eine neue URL in einer Antwort der AutoErmittlung umleiten möchten, sollten Sie zuerst die URL wie folgt überprüfen:
+Wenn Sie eine neue E-Mail-Adresse in einer Umleitungsantwort der AutoErmittlung abrufen, sollten Sie die URL zunächst wie folgt überprüfen:
   
 - Stellen Sie sicher, dass die URL eine HTTPS-URL ist.
     
-- Stellen Sie sicher, dass Sie keinen Fehler aus dieser URL mit der aktuellen e-Mail-Adresse vor erhalten haben.
+- Stellen Sie sicher, dass Sie zuvor keinen Fehler von dieser URL mit der aktuellen E-Mail-Adresse erhalten haben.
     
-- Gegebenenfalls der Anwendung informieren Sie den Benutzer über die Umleitung zu und ihre Zustimmung folgen die Umleitung.
+- Informieren Sie den Benutzer über die Umleitung, und holen Sie sich dessen Berechtigung zum Folgen der Umleitung, wenn dies für Ihre Anwendung zutrifft.
     
-- Senden einer Anforderung an die URL, und [Stellen Sie sicher, dass das SSL-Zertifikat vom Server bereitgestellten gültig ist](how-to-validate-a-server-certificate-for-the-ews-managed-api.md).
+- Senden Sie eine Anforderung an die URL, und [überprüfen Sie, dass das SSL-Zertifikat gültig ist](how-to-validate-a-server-certificate-for-the-ews-managed-api.md).
     
-Falls die URL war erfolgreich, senden Sie die Anforderung an diesen neuen URL.
+Wenn die URL die Überprüfung besteht, senden Sie die Anforderung erneute an diese neue URL.
   
 ## <a name="see-also"></a>Siehe auch
 
 
 - [AutoErmittlung für Exchange](autodiscover-for-exchange.md)
     
-- [Suchen Sie nach AutoErmittlung-Endpunkten mithilfe von SCP-Suche in Exchange](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md)
+- [Suchen nach AutoErmittlungs-Endpunkten mit der SCP-Suche in Exchange](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md)
     
 - [ErrorCode (SOAP)](http://msdn.microsoft.com/library/5e5ec861-0191-4ecb-a906-47ce8ed96381%28Office.15%29.aspx)
     
