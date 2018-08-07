@@ -1,37 +1,37 @@
 ---
-title: Senden von e-Mail-Nachrichten mithilfe der EWS in Exchange
+title: Senden von E-Mail-Nachrichten mit EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5290fafe-8b51-4275-a27e-baf497fc969c
-description: Erfahren Sie, wie neue oder Draft e-Mail-Nachrichten senden oder eine verzögerte e-Mail-Nachricht zu senden, indem Sie verwenden die EWS Managed API oder EWS in Exchange.
+description: Erfahren Sie, wie neue E-Mail-Nachrichten oder Entwürfe oder eine verzögerte E-Mail-Nachricht mithilfe der verwalteten EWS-API oder mithilfe von EWS in Exchange gesendet werden.
 ms.openlocfilehash: f09babfcc420d4cbc563ed6605ba555fd9f8c7e9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756992"
 ---
-# <a name="send-email-messages-by-using-ews-in-exchange"></a>Senden von e-Mail-Nachrichten mithilfe der EWS in Exchange
+# <a name="send-email-messages-by-using-ews-in-exchange"></a>Senden von E-Mail-Nachrichten mit EWS in Exchange
 
-Erfahren Sie, wie neue oder Draft e-Mail-Nachrichten senden oder eine verzögerte e-Mail-Nachricht zu senden, indem Sie verwenden die EWS Managed API oder EWS in Exchange.
+Erfahren Sie, wie neue E-Mail-Nachrichten oder Entwürfe oder eine verzögerte E-Mail-Nachricht mithilfe der verwalteten EWS-API oder mithilfe von EWS in Exchange gesendet werden.
   
-Ob Sie die EWS Managed API oder EWS verwenden, können Sie auf zwei Arten von e-Mail-Nachrichten senden. Sie können eine vorhandene Nachricht, wie eine Nachricht im Ordner Entwürfe gespeichert senden, oder Sie können das Erstellen und senden eine e-Mail in einem Schritt. Die Methoden und Vorgänge, die Sie verwenden, um die Nachricht zu senden sind gleich, ob Sie sofort senden einer Nachricht, oder Senden einer Nachricht verzögerte.
+Unabhängig davon, ob Sie die verwaltete EWS-API oder EWS verwenden, können Sie E-Mail-Nachrichten auf zweierlei Weise senden. Sie können entweder eine vorhandene Nachricht, z. B. eine im Ordner „Entwürfe“ gespeicherte Nachricht, senden, oder Sie können eine E-Mail in einem Schritt erstellen und senden. Die Methoden und Vorgänge, die Sie zum Senden der Nachricht verwenden, sind die gleichen, unabhängig davon, ob Sie die Nachricht sofort oder später senden.
   
-**In Tabelle 1. EWS Managed API-Methoden und EWS-Vorgänge für das Senden von e-Mail-Nachrichten**
+**Tabelle 1. Methoden der verwalteten EWS-API-Methoden und EWS-Vorgänge zum Senden von E-Mail-Nachrichten**
 
 |**Aufgabe**|**EWS Managed API-Methode**|**EWS-Vorgang**|
 |:-----|:-----|:-----|
-|Eine neue e-Mail-Nachricht senden  <br/> |[EmailMessage.SendAndSaveCopy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
-|Senden Sie eine vorhandene e-Mail-Nachricht  <br/> |[EmailMessage.Send](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.send%28v=exchg.80%29.aspx) <br/> |[SendItem](http://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) <br/> |
+|Senden einer neuen E-Mail-Nachricht  <br/> |[EmailMessage.SendAndSaveCopy](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
+|Senden einer vorhandenen E-Mail-Nachricht  <br/> |[EmailMessage.Send](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.emailmessage.send%28v=exchg.80%29.aspx) <br/> |[SendItem](http://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) <br/> |
    
-## <a name="send-a-new-email-message-by-using-the-ews-managed-api"></a>Senden Sie eine neue e-Mail-Nachricht mithilfe der EWS Managed API
+## <a name="send-a-new-email-message-by-using-the-ews-managed-api"></a>Senden einer neuen E-Mail-Nachricht mithilfe der verwalteten EWS-API
 <a name="bk_sendnewewsma"> </a>
 
-Im folgenden Codebeispiel wird veranschaulicht, wie das Objekt ["EmailMessage"](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) verwenden, um eine e-Mail-Nachricht und die [SendAndSaveCopy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx) -Methode, um die Nachricht an den Empfänger senden, und speichern Sie die Nachricht im Ordner "Gesendete Elemente" zu erstellen. 
+Im folgenden Codebeispiel wird gezeigt, wie Sie das [EmailMessage](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx)-Objekt zum Erstellen einer E-Mail-Nachricht und die [SendAndSaveCopy](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx)-Methode zum Senden der Nachricht an den Empfänger und zum Speichern der Nachricht im Ordner „Gesendete Objekte“ verwenden. 
   
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und dass der Benutzer mit einem Exchange-Server authentifiziert wurde. 
   
 ```cs
 // Create an email message and provide it with connection 
@@ -47,10 +47,10 @@ message.SendAndSaveCopy();
 Console.WriteLine("An email with the subject '" + message.Subject + "' has been sent to '" + message.ToRecipients[0] + "' and saved in the SendItems folder.");
 ```
 
-## <a name="send-a-new-email-message-by-using-ews"></a>Senden Sie eine neue e-Mail-Nachricht mithilfe der Exchange-Webdienste
+## <a name="send-a-new-email-message-by-using-ews"></a>Senden einer neuen E-Mail-Nachricht mit EWS
 <a name="bk_sendnewews"> </a>
 
-Im folgenden Codebeispiel wird veranschaulicht, wie mithilfe den [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) -Vorgang mit dem Wert **"MessageDisposition"** **SendAndSaveCopy** Erstellen einer e-Mail-Nachricht, die Nachricht an den Empfänger senden und speichern Sie die Nachricht im Ordner "Gesendete Elemente". Dies ist auch die XML-Anfrage, dass die EWS Managed API, wenn gesendet Sie [eine neue e-Mail-Nachricht senden](#bk_sendnewewsma).
+Im folgenden Codebeispiel wird gezeigt, wie der [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx)-Vorgang mit dem**MessageDisposition**-Wert **SendAndSaveCopy** verwendet wird, um eine E-Mail-Nachricht zu erstellen, die Nachricht an den Empfänger zu senden und die Nachricht im Ordner „Gesendete Objekte“ zu speichern. Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie [eine neue E-Mail senden](#bk_sendnewewsma).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -82,16 +82,16 @@ Im folgenden Codebeispiel wird veranschaulicht, wie mithilfe den [CreateItem](ht
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **CreateItem**-Anforderung mit einer [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx)-Wert **NoError** umfasst, der angibt, dass die E-Mail erfolgreich erstellt wurde, und die [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) der neu erstellten Nachricht enthält. 
+Der Server antwortet auf die **CreateItem**-Anforderung mit einer [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](http://msdn.microsoft.com/de-DE/library/aa580757%28v=exchg.150%29.aspx)-Wert **NoError** umfasst, der angibt, dass die E-Mail erfolgreich erstellt wurde, und die [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) der neu erstellten Nachricht enthält. 
   
-## <a name="send-a-draft-email-message-by-using-the-ews-managed-api"></a>Senden Sie den Entwurf einer e-Mail-Nachricht mithilfe der EWS Managed API
+## <a name="send-a-draft-email-message-by-using-the-ews-managed-api"></a>Senden einer Entwurfs-E-Mail-Nachricht mithilfe der verwalteten EWS-API
 <a name="bk_senddraftewsma"> </a>
 
-Im folgenden Codebeispiel wird veranschaulicht, wie eine Nachricht senden, die im Ordner Entwürfe gespeichert wurde, siehe [Erstellen einer e-Mail-Nachricht mithilfe der EWS Managed API](email-and-ews-in-exchange.md#bk_createewsma). Zunächst verwenden Sie die [Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) -Methode zum Abrufen der Nachricht, und verwenden Sie die Methode [Send](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.send%28v=exchg.80%29.aspx) die e-Mail-Nachricht senden, wie im folgenden Codebeispiel dargestellt. Beachten Sie, dass diese Methode nicht die gesendete Nachricht im Ordner "Gesendete Elemente" gespeichert wird. 
+Im folgenden Codebeispiel wird gezeigt, wie eine Nachricht gesendet wird, die im Entwurfsordner gespeichert wurde, wie unter [Erstellen einer E-Mail-Nachricht mithilfe der verwalteten EWS-API](email-and-ews-in-exchange.md#bk_createewsma) dargestellt. Verwenden Sie zunächst die [Bind](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx)-Methode, um die Nachricht abzurufen, und verwenden Sie dann die [Send](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.emailmessage.send%28v=exchg.80%29.aspx)-Methode, um die E-Mail-Nachricht zu senden, wie im folgenden Beispiel gezeigt. Beachten Sie, dass bei dieser Methode die gesendete Nachricht nicht im Ordner „Gesendete Objekte“ gespeichert wird. 
   
-In diesem Fall werden die Eigenschaften [EmailMessageSchema.Subject](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.itemschema.subject%28v=exchg.80%29.aspx) und [EmailMessageSchema.ToRecipients](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessageschema.torecipients%28v=exchg.80%29.aspx) der [PropertySet](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) hinzugefügt, damit die Werte in der Konsolenausgabe aufgenommen werden können. 
+In diesem Fall werden die Eigenschaften [EmailMessageSchema.Subject](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.itemschema.subject%28v=exchg.80%29.aspx) und [EmailMessageSchema.ToRecipients](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.emailmessageschema.torecipients%28v=exchg.80%29.aspx) dem [PropertySet](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) hinzugefügt, damit die Werte in die Konsolenausgabe eingeschlossen werden können. 
   
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und dass der Benutzer mit einem Exchange-Server authentifiziert wurde. 
   
 ```cs
 // As a best practice, create a property set that limits the properties returned by the Bind method to only those that are required.
@@ -104,14 +104,14 @@ message.Send();
 Console.WriteLine("An email with the subject '" + message.Subject + "' has been sent to '" + message.ToRecipients[0] + "'.");
 ```
 
-## <a name="send-a-draft-email-message-by-using-ews"></a>Senden Sie den Entwurf einer e-Mail-Nachricht mithilfe der Exchange-Webdienste
+## <a name="send-a-draft-email-message-by-using-ews"></a>Senden einer Entwurfs-E-Mail-Nachricht mithilfe von EWS
 <a name="bk_senddraftews"> </a>
 
-Die folgenden Codebeispiele zeigen, wie eine Nachricht senden, die zuvor im Ordner "Entwürfe" gespeichert wurde, wie in [Erstellen einer e-Mail-Nachricht mithilfe der Exchange-Webdienste](email-and-ews-in-exchange.md#bk_createews)dargestellt. Zunächst mit dem die [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) Operation zum Abrufen der e-Mail-Nachricht zu senden. Verwenden Sie, um die e-Mail-Nachricht an Empfänger senden, und speichern Sie es im Ordner "Gesendete Elemente" [den SendItem](http://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) -Vorgang. 
+Die folgenden Codebeispiele zeigen, wie eine Nachricht gesendet wird, die zuvor im Ordner „Entwürfe“ gespeichert wurde, wie in [Erstellen eine E-Mail-Nachricht mithilfe von EWS](email-and-ews-in-exchange.md#bk_createews) dargestellt. Verwenden Sie zuerst den [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx)-Vorgang, um die zu sendende E-Mail abzurufen. Verwenden Sie dann den [SendItem](http://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx)-Vorgang, um die E-Mail an Empfänger zu senden und sie im Ordner „Entwürfe“ zu speichern. 
   
-Die erste Nachricht, die Meldung **GetItem** Request gibt die [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) Entwurf e-Mail-Nachricht für die Bindung, und Elemente im [ItemShape](http://msdn.microsoft.com/library/c5604161-bbc0-40bc-ad75-ff7e837d745f%28Office.15%29.aspx) -Element zu begrenzen der Ergebnisse in der Antwort **GetItem** aufzunehmen. Das **ItemShape** -Element hat eine [BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) von **IdOnly**und [AdditionalProperties](http://msdn.microsoft.com/library/7a269aed-dcfd-4c3e-9e14-094e53828101%28Office.15%29.aspx) -Element enthält die [FieldURI](http://msdn.microsoft.com/library/24af8e3b-3074-4c8c-8d0a-52446508d044%28Office.15%29.aspx) Werte für die **Subject** -Eigenschaft von der Item-Schema und die **ToRecipients** die Eigenschaft aus der Nachrichtenschema, was bedeutet, dass nur die **ItemId**, [Betreff](http://msdn.microsoft.com/library/c140d6c2-deb1-4f67-a908-9397197c4ae7%28Office.15%29.aspx)und [ToRecipients](http://msdn.microsoft.com/library/72dc3be8-30bb-4ae1-acf4-fb94ff490631%28Office.15%29.aspx) -Elemente in der Antwort an den Client zurückgegeben werden. Weitere Informationen zum Beschränken in Anrufe und die Bedeutung des Elements **BaseShape** zurückgegebenen Werte sind finden Sie unter [Eigenschaftensätze und Antwort shapes in EWS in Exchange](property-sets-and-response-shapes-in-ews-in-exchange.md).
+Die erste Nachricht, die **GetItem**-Anforderungsnachricht, gibt die [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) des Entwurfs für die Bindung an, und die Elemente im [ItemShape](http://msdn.microsoft.com/library/c5604161-bbc0-40bc-ad75-ff7e837d745f%28Office.15%29.aspx)-Element beschränken die Ergebnisse so, dass sie in die **GetItem**-Antwort eingeschlossen werden können. Das **ItemShape**-Element weist die [BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) **IdOnly** auf, und das [AdditionalProperties](http://msdn.microsoft.com/library/7a269aed-dcfd-4c3e-9e14-094e53828101%28Office.15%29.aspx)-Element umfasst die [FieldURI](http://msdn.microsoft.com/library/24af8e3b-3074-4c8c-8d0a-52446508d044%28Office.15%29.aspx)-Werte für die **Subject**-Eigenschaft aus dem Item-Schema und die **ToRecipients**-Eigenschaft aus dem Message-Schema, was bedeutet, dass nur die Elemente **ItemId**, [Subject](http://msdn.microsoft.com/library/c140d6c2-deb1-4f67-a908-9397197c4ae7%28Office.15%29.aspx) und [ToRecipients](http://msdn.microsoft.com/library/72dc3be8-30bb-4ae1-acf4-fb94ff490631%28Office.15%29.aspx) in der Antwort an den Client zurückgegeben werden. Weitere Informationen zur Einschränkung der in Aufrufen zurückgegebenen Werte und zur Bedeutung des **BaseShape**-Elements finden Sie unter [Eigenschaftensätze und Antwortshapes in EWS in Exchange](property-sets-and-response-shapes-in-ews-in-exchange.md).
   
-Dies ist auch die XML-Anfrage, die durch die EWS Managed API, beim Aufrufen der Methode [zu binden gesendet wird](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) . Die Werte einiger Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt. 
+Dies ist auch die XML-Anforderung, die von der verwalteten EWS-API gesendet wird, wenn die [bind](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx)-Methode aufgerufen wird. Die Werte einiger Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -139,7 +139,7 @@ Dies ist auch die XML-Anfrage, die durch die EWS Managed API, beim Aufrufen der 
 </soap:Envelope>
 ```
 
-Im folgenden Beispiel wird die XML-Antwort veranschaulicht, die der Server zurückgibt, nachdem er die **GetItem**-Operation verarbeitet. Die Antwort gibt an, dass die e-Mail-Nachricht erfolgreich abgerufen wurde und besteht aus den **Betreff** und **ToRecipient** Elementen wie gewünscht. Die Werte für einige Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt, und einige Ordner wurden aus Platzgründen nicht eingeschlossen. 
+Das folgende Beispiel zeigt die XML-Antwort, die der Server zurückgibt, nachdem der **GetItem**-Vorgang verarbeitet wurde. Die Antwort weist darauf hin, dass die E-Mail-Nachricht erfolgreich abgerufen wurde, und enthält, wie angefordert, die Elemente **Subject** und **ToRecipient**. Die Werte einiger Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -184,7 +184,7 @@ Im folgenden Beispiel wird die XML-Antwort veranschaulicht, die der Server zurü
 </s:Envelope>
 ```
 
-Die zweite Nachricht, die **SendItem** Anforderungsnachricht gibt an, die [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) der e-Mail-Nachricht senden, sowie [des SavedItemFolderId](http://msdn.microsoft.com/library/4b8b475c-9ca5-48c9-acb0-8848b53be1ce%28Office.15%29.aspx), die Ordner, in dem das gesendete Element gespeichert angibt.
+Die zweite Nachricht, die **SendItem**-Anforderungsnachricht, gibt die [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) der zu sendenden E-Mail sowie die [SavedItemFolderId](http://msdn.microsoft.com/library/4b8b475c-9ca5-48c9-acb0-8848b53be1ce%28Office.15%29.aspx) an, die den Ordner angibt, in dem das gesendete Objekt gespeichert werden soll.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -209,14 +209,14 @@ Die zweite Nachricht, die **SendItem** Anforderungsnachricht gibt an, die [ItemI
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die Anforderung **den SendItem** mit einer [SendItemResponse](http://msdn.microsoft.com/library/26ac41c7-57d9-473e-ab7a-bae93e1d2aba%28Office.15%29.aspx) -Nachricht, die enthält den Wert [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **noError zurück**, der angibt, dass die e-Mail erfolgreich gesendet wurde.
+Der Server antwortet auf die **SendItem**-Anforderung mit einer [SendItemResponse](http://msdn.microsoft.com/library/26ac41c7-57d9-473e-ab7a-bae93e1d2aba%28Office.15%29.aspx)-Nachricht, die den [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)-Wert **NoError** enthält, was darauf hinweist, dass die E-Mail erfolgreich gesendet wurde.
   
-## <a name="send-a-delayed-email-message-by-using-the-ews-managed-api"></a>Senden Sie eine verzögerte e-Mail-Nachricht mithilfe der EWS Managed API
+## <a name="send-a-delayed-email-message-by-using-the-ews-managed-api"></a>Senden einer verzögerten E-Mail-Nachricht mithilfe der verwalteten EWS-API
 <a name="bk_senddelayedewsma"> </a>
 
-Im folgenden Codebeispiel wird veranschaulicht, wie das Objekt ["EmailMessage"](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) verwenden, um eine e-Mail-Nachricht, die [ExtendedPropertyDefinition](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.extendedpropertydefinition%28v=exchg.80%29.aspx) -Klasse zum Erstellen einer Eigenschaftendefinition für die Eigenschaft [PidTagDeferredSendTime](http://msdn.microsoft.com/en-us/library/cc840017.aspx) (0x3FEF0040) zu erstellen und die [SendAndSaveCopy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx) -Methode, um eine verzögerte Nachricht senden, und speichern Sie die Nachricht im Ordner "Gesendete Elemente". 
+Im folgenden Codebeispiel wird gezeigt, wie das [EmailMessage](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx)-Objekt zum Erstellen einer E-Mail-Nachricht, die [ExtendedPropertyDefinition](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.extendedpropertydefinition%28v=exchg.80%29.aspx)-Klasse zum Erstellen einer Eigenschaftsdefinition für die [PidTagDeferredSendTime](http://msdn.microsoft.com/de-DE/library/cc840017.aspx)-Eigenschaft (0x3FEF0040) und die [SendAndSaveCopy](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx)-Methode zum Senden einer verzögerten Nachricht und zum Speichern der Nachricht im Ordner „Entwürfe“ verwendet wird. 
   
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und dass der Benutzer mit einem Exchange-Server authentifiziert wurde. 
   
 ```cs
 // Create a new email message. 
@@ -244,10 +244,10 @@ Console.WriteLine("The email message will be sent at: " + sendTime + ".");
 message.SendAndSaveCopy();
 ```
 
-## <a name="send-a-delayed-email-message-by-using-ews"></a>Senden Sie eine verzögerte e-Mail-Nachricht mithilfe der Exchange-Webdienste
+## <a name="send-a-delayed-email-message-by-using-ews"></a>Senden einer verzögerten E-Mail-Nachricht mithilfe von EWS
 <a name="bk_senddelayedews"> </a>
 
-Im folgenden Codebeispiel wird veranschaulicht, wie mit der [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) -Vorgang mit dem Wert **"MessageDisposition"** **SendAndSaveCopy** eine e-Mail-Nachricht, das [ExtendedProperty](http://msdn.microsoft.com/library/f9701409-b620-4afe-b9ee-4c1e95507af7%28Office.15%29.aspx) -Element zum Erstellen einer Eigenschaftendefinition für die [Erstellen PidTagDeferredSendTime](http://msdn.microsoft.com/en-us/library/cc840017.aspx) (0x3FEF0040)-Eigenschaft, um eine Zeit zum Senden der Nachricht sowie [des SavedItemFolderId](http://msdn.microsoft.com/library/4b8b475c-9ca5-48c9-acb0-8848b53be1ce%28Office.15%29.aspx) -Elements, um die gesendete Nachricht im Ordner "Gesendete Elemente" Speichern festzulegen. 
+Im folgenden Codebeispiel wird gezeigt, wie der [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx)-Vorgang mit dem **MessageDisposition**-Wert **SendAndSaveCopy** zum Erstellen einer E-Mail-Nachricht, das [ ExtendedProperty](http://msdn.microsoft.com/library/f9701409-b620-4afe-b9ee-4c1e95507af7%28Office.15%29.aspx)-Element zum Erstellen einer Eigenschaftsdefinition für die [PidTagDeferredSendTime](http://msdn.microsoft.com/de-DE/library/cc840017.aspx)-Eigenschaft (0x3FEF0040) zum Festlegen einer Uhrzeit für das Senden der Nachricht und das [ SavedItemFolderId](http://msdn.microsoft.com/library/4b8b475c-9ca5-48c9-acb0-8848b53be1ce%28Office.15%29.aspx)-Element zum Speichern der gesendeten Nachricht im Ordner „Gesendete Objekte“ verwendet wird. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -292,8 +292,8 @@ Der Server antwortet auf die **CreateItem**-Anforderung mit einer [CreateItemRes
 ## <a name="see-also"></a>Siehe auch
 
 
-- [E-Mail- und EWS in Exchange](email-and-ews-in-exchange.md)
+- [E-Mails und EWS in Exchange](email-and-ews-in-exchange.md)
     
-- [Reagieren Sie auf e-Mail-Nachrichten mithilfe der EWS in Exchange](how-to-respond-to-email-messages-by-using-ews-in-exchange.md)
+- [Antworten auf E-Mail-Nachrichten mithilfe von EWS in Exchange](how-to-respond-to-email-messages-by-using-ews-in-exchange.md)
     
 
