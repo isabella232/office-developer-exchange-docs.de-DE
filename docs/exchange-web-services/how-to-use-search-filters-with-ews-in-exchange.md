@@ -1,21 +1,21 @@
 ---
-title: Verwenden Sie Suchfilter mit EWS in Exchange
+title: Verwenden von Suchfiltern mit EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 20fc6d2d-41c2-4490-98b8-c52513977fef
-description: Erfahren Sie, wie man Suchfilter mit der verwalteten EWS-API oder EWS in Exchange verwendet.
+description: Erfahren Sie, wie Sie mit der verwalteten EWS-API oder mit EWS in Exchange Suchfilter verwenden.
 ms.openlocfilehash: 0652c36fd610c2f9dfe22b55323b368997137e0c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757023"
 ---
-# <a name="use-search-filters-with-ews-in-exchange"></a>Verwenden Sie Suchfilter mit EWS in Exchange
+# <a name="use-search-filters-with-ews-in-exchange"></a>Verwenden von Suchfiltern mit EWS in Exchange
 
-Erfahren Sie, wie man Suchfilter mit der verwalteten EWS-API oder EWS in Exchange verwendet.
+Erfahren Sie, wie Sie mit der verwalteten EWS-API oder mit EWS in Exchange Suchfilter verwenden.
   
 Suchfilter sind das primäre Tool zum Ausdrücken von Suchkriterien in Ihrer verwalteten EWS-API oder EWS-Anwendung. Für folgende Vorgänge empfehlen wir Suchfilter statt [Abfragezeichenfolgen](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md) zu verwenden:
   
@@ -35,19 +35,19 @@ Suchfilter sind Ihre einzige Option, wenn Sie einen der folgenden Vorgänge ausf
 ## <a name="determine-what-type-of-search-filter-you-need"></a>Bestimmen der benötigten Suchfiltertypen
 <a name="bk_SelectFilter"> </a>
 
-Bevor Sie einen Suchfilter erstellen, müssen Sie zunächst die benötigten Suchfiltertypen bestimmen. Die Filtertypen sind als nachfolgende Klassen der [SearchFilter](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter%28v=exchg.80%29.aspx)-Klasse in der verwalteten EWS-API, und als untergeordnete Elemente des [Restriction](http://msdn.microsoft.com/library/77f19014-d112-4999-8e83-ecc32a117a73%28Office.15%29.aspx)-Elements in EWS implementiert. 
+Bevor Sie einen Suchfilter erstellen, müssen Sie zunächst die benötigten Suchfiltertypen bestimmen. Die Filtertypen sind als nachfolgende Klassen der [SearchFilter](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.searchfilter%28v=exchg.80%29.aspx)-Klasse in der verwalteten EWS-API, und als untergeordnete Elemente des [Restriction](http://msdn.microsoft.com/library/77f19014-d112-4999-8e83-ecc32a117a73%28Office.15%29.aspx)-Elements in EWS implementiert. 
   
 **Tabelle 1. Suchfiltertypen**
 
 |**Filtertyp**|**Verwaltete EWS-API-Klasse**|**EWS-Element**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-|"Enthält"-Filter  <br/> |[ContainsSubstring](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.containssubstring%28v=exchg.80%29.aspx) <br/> |[Enthält](http://msdn.microsoft.com/library/476d059d-c243-43e9-b475-319fc413ade2%28Office.15%29.aspx) <br/> |Der beste Filtertyp für Zeichenfolgevergleiche. Damit können Sie die Groß-/Kleinschreibung überwachen, angeben, ob Leerzeichen ignoriert werden, und den Aufnahmemodus festlegen.  <br/> |
-|Bitmaskenfilter  <br/> |[ExcludesBitmask](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.excludesbitmask%28v=exchg.80%29.aspx) <br/> |[Schließt](http://msdn.microsoft.com/library/bbaeddf6-9a67-4ee0-af99-7a7a5bbdc0e1%28Office.15%29.aspx) <br/> |Damit können Sie nach ganzzahlige Eigenschaften als Bitmasken suchen und nur Ergebnisse zurückgeben, bei denen Bits entsprechend der angegebenen Bitmaske nicht festgelegt sind.  <br/> |
-|"Vorhanden"-Filter  <br/> |[Exists](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.exists%28v=exchg.80%29.aspx) <br/> |[Exists](http://msdn.microsoft.com/library/55d568bd-8dbc-4d50-b9d7-54b74a54d4b5%28Office.15%29.aspx) <br/> |Gibt alle Elemente zurück, bei denen die angegebene Eigenschaft vorhanden ist, unabhängig des Werts.  <br/> |
-|Gleichheitsfilter  <br/> |["IsEqualTo"](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.isequalto%28v=exchg.80%29.aspx) <br/> [IsNotEqualTo](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.isnotequalto%28v=exchg.80%29.aspx) <br/> |["IsEqualTo"](http://msdn.microsoft.com/library/48e7e067-049c-4184-8026-071e6f558e8a%28Office.15%29.aspx) <br/> [IsNotEqualTo](http://msdn.microsoft.com/library/e2eff26c-3403-45cd-bb74-1eb98c7dbfcd%28Office.15%29.aspx) <br/> |Vergleicht den Wert der angegebenen Eigenschaft mit einem angegebenen Konstantenwert oder dem Wert einer anderen Eigenschaft und gibt alle Elemente mit einem gleichen Wert (im Falle eines **IsEqualTo**-Filters) oder einen nicht gleichen Wert (im Falle eines **IsNotEqualTo**-Filters) zurück.  <br/> |
-|Relationaler Testfilter  <br/> |[IsGreaterThan](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.isgreaterthan%28v=exchg.80%29.aspx) <br/> [IsGreaterThanOrEqualTo](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.isgreaterthanorequalto%28v=exchg.80%29.aspx) <br/> [IsLessThan](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.islessthan%28v=exchg.80%29.aspx) <br/> [IsLessThanOrEqualTo](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.islessthanorequalto%28v=exchg.80%29.aspx) <br/> |[IsGreaterThan](http://msdn.microsoft.com/library/a6e9d462-cfa7-40ec-903e-128c95050352%28Office.15%29.aspx) <br/> [IsGreaterThanOrEqualTo](http://msdn.microsoft.com/library/373cc954-314d-40e2-be03-cc08aefc0d5b%28Office.15%29.aspx) <br/> [IsLessThan](http://msdn.microsoft.com/library/2550469b-6e5d-45a5-9ecc-090d1b409296%28Office.15%29.aspx) <br/> [IsLessThanOrEqualTo](http://msdn.microsoft.com/library/b5d85eb2-5e15-4d01-ad49-6289e735ad8a%28Office.15%29.aspx) <br/> |Gibt alle Elemente zurück, die für die angegebene Eigenschaft in der entsprechenden Beziehung einen Wert für einen angegebenen Konstantenwert oder eine andere Eigenschaft besitzen. Ein **IsGreaterThan**-Filter gibt alle Elemente zurück, die einen höheren Wert besitzen als der angegebene Wert in der angegebenen Eigenschaft.  <br/> |
-|Aufhebungsfilter  <br/> |[Not](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.not%28v=exchg.80%29.aspx) <br/> |[not](http://msdn.microsoft.com/library/1aa16318-7e90-4b19-bce8-dd1a20a66223%28Office.15%29.aspx) <br/> |Hebt das Ergebnis der anderen Filter auf.  <br/> |
-|Zusammengesetzter Filter  <br/> |[SearchFilterCollection](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.searchfiltercollection%28v=exchg.80%29.aspx) <br/> |[Und](http://msdn.microsoft.com/library/790246c2-37ad-49a8-91b9-6186d743b011%28Office.15%29.aspx) <br/> [- oder -](http://msdn.microsoft.com/library/4876d83a-73a3-4953-9d95-3048e6b76ccb%28Office.15%29.aspx) <br/> |Kombiniert mehrere Filter, damit komplexere Suchkriterien möglich sind.  <br/> |
+|"Enthält"-Filter  <br/> |[ContainsSubstring](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.searchfilter.containssubstring%28v=exchg.80%29.aspx) <br/> |[Enthält](http://msdn.microsoft.com/library/476d059d-c243-43e9-b475-319fc413ade2%28Office.15%29.aspx) <br/> |Der beste Filtertyp für Zeichenfolgevergleiche. Damit können Sie die Groß-/Kleinschreibung überwachen, angeben, ob Leerzeichen ignoriert werden, und den Aufnahmemodus festlegen.  <br/> |
+|Bitmaskenfilter  <br/> |[ExcludesBitmask](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.searchfilter.excludesbitmask%28v=exchg.80%29.aspx) <br/> |[Schließt](http://msdn.microsoft.com/library/bbaeddf6-9a67-4ee0-af99-7a7a5bbdc0e1%28Office.15%29.aspx) <br/> |Damit können Sie nach ganzzahlige Eigenschaften als Bitmasken suchen und nur Ergebnisse zurückgeben, bei denen Bits entsprechend der angegebenen Bitmaske nicht festgelegt sind.  <br/> |
+|"Vorhanden"-Filter  <br/> |[Exists](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.searchfilter.exists%28v=exchg.80%29.aspx) <br/> |[Exists](http://msdn.microsoft.com/library/55d568bd-8dbc-4d50-b9d7-54b74a54d4b5%28Office.15%29.aspx) <br/> |Gibt alle Elemente zurück, bei denen die angegebene Eigenschaft vorhanden ist, unabhängig des Werts.  <br/> |
+|Gleichheitsfilter  <br/> |[IsEqualTo](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.searchfilter.isequalto%28v=exchg.80%29.aspx) <br/> [IsNotEqualTo](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.searchfilter.isnotequalto%28v=exchg.80%29.aspx) <br/> |[IsEqualTo](http://msdn.microsoft.com/library/48e7e067-049c-4184-8026-071e6f558e8a%28Office.15%29.aspx) <br/> [IsNotEqualTo](http://msdn.microsoft.com/library/e2eff26c-3403-45cd-bb74-1eb98c7dbfcd%28Office.15%29.aspx) <br/> |Vergleicht den Wert der angegebenen Eigenschaft mit einem angegebenen Konstantenwert oder dem Wert einer anderen Eigenschaft und gibt alle Elemente mit einem gleichen Wert (im Falle eines **IsEqualTo**-Filters) oder einen nicht gleichen Wert (im Falle eines **IsNotEqualTo**-Filters) zurück.  <br/> |
+|Relationaler Testfilter  <br/> |[IsGreaterThan](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.searchfilter.isgreaterthan%28v=exchg.80%29.aspx) <br/> [IsGreaterThanOrEqualTo](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.searchfilter.isgreaterthanorequalto%28v=exchg.80%29.aspx) <br/> [IsLessThan](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.searchfilter.islessthan%28v=exchg.80%29.aspx) <br/> [IsLessThanOrEqualTo](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.searchfilter.islessthanorequalto%28v=exchg.80%29.aspx) <br/> |[IsGreaterThan](http://msdn.microsoft.com/library/a6e9d462-cfa7-40ec-903e-128c95050352%28Office.15%29.aspx) <br/> [IsGreaterThanOrEqualTo](http://msdn.microsoft.com/library/373cc954-314d-40e2-be03-cc08aefc0d5b%28Office.15%29.aspx) <br/> [IsLessThan](http://msdn.microsoft.com/library/2550469b-6e5d-45a5-9ecc-090d1b409296%28Office.15%29.aspx) <br/> [IsLessThanOrEqualTo](http://msdn.microsoft.com/library/b5d85eb2-5e15-4d01-ad49-6289e735ad8a%28Office.15%29.aspx) <br/> |Gibt alle Elemente zurück, die für die angegebene Eigenschaft in der entsprechenden Beziehung einen Wert für einen angegebenen Konstantenwert oder eine andere Eigenschaft besitzen. Ein **IsGreaterThan**-Filter gibt alle Elemente zurück, die einen höheren Wert besitzen als der angegebene Wert in der angegebenen Eigenschaft.  <br/> |
+|Aufhebungsfilter  <br/> |[Not](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.searchfilter.not%28v=exchg.80%29.aspx) <br/> |[not](http://msdn.microsoft.com/library/1aa16318-7e90-4b19-bce8-dd1a20a66223%28Office.15%29.aspx) <br/> |Hebt das Ergebnis der anderen Filter auf.  <br/> |
+|Zusammengesetzter Filter  <br/> |[SearchFilterCollection](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.searchfilter.searchfiltercollection%28v=exchg.80%29.aspx) <br/> |[Und](http://msdn.microsoft.com/library/790246c2-37ad-49a8-91b9-6186d743b011%28Office.15%29.aspx) <br/> [- oder -](http://msdn.microsoft.com/library/4876d83a-73a3-4953-9d95-3048e6b76ccb%28Office.15%29.aspx) <br/> |Kombiniert mehrere Filter, damit komplexere Suchkriterien möglich sind.  <br/> |
    
 ### <a name="contains-filter"></a>"Enthält"-Filter
 
@@ -56,7 +56,7 @@ Ein "Enthält"-Filter ist die beste Wahl zum Durchsuchen von Zeichenfolgeneigens
 #### <a name="contains-filter-in-the-ews-managed-api"></a>Der "Enthält"-Filter in der verwalteten EWS-API
 <a name="bk_ContainsEWSMA"> </a>
 
-Wenn Sie die verwaltete EWS-API verwenden, legen Sie den Aufnahmemodus fest, indem Sie die [ContainmentMode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.containssubstring.containmentmode%28v=exchg.80%29.aspx)-Eigenschaft der [ContainsSubstring](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.containssubstring%28v=exchg.80%29.aspx)-Klasse verwenden, und Sie legen den Vergleichsmodus fest, indem Sie die [ComparisonMode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.containssubstring.comparisonmode%28v=exchg.80%29.aspx)-Eigenschaft der **ContainsSubstring**-Klasse verwenden. In den folgenden Beispielen wird veranschaulicht, wie Sie einen Suchfilter erstellen, der das Betrefffeld der Elemente nach der Teilzeichenfolge „Besprechungsnotizen" durchsucht. In diesem Beispiel wird die Groß-/Kleinschreibung ignoriert, Leerzeichen jedoch nicht. 
+Wenn Sie die verwaltete EWS-API verwenden, legen Sie den Aufnahmemodus fest, indem Sie die [ContainmentMode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.searchfilter.containssubstring.containmentmode%28v=exchg.80%29.aspx)-Eigenschaft der [ContainsSubstring](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.searchfilter.containssubstring%28v=exchg.80%29.aspx)-Klasse verwenden, und Sie legen den Vergleichsmodus fest, indem Sie die [ComparisonMode](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.searchfilter.containssubstring.comparisonmode%28v=exchg.80%29.aspx)-Eigenschaft der **ContainsSubstring**-Klasse verwenden. In den folgenden Beispielen wird veranschaulicht, wie Sie einen Suchfilter erstellen, der das Betrefffeld der Elemente nach der Teilzeichenfolge „Besprechungsnotizen" durchsucht. In diesem Beispiel wird die Groß-/Kleinschreibung ignoriert, Leerzeichen jedoch nicht. 
   
 ```cs
 // Find all items with a subject that contain the substring
@@ -322,12 +322,12 @@ Im folgenden Beispiel wird veranschaulicht, wie EWS zum Erstellen eines Suchfilt
 
 Folgende verwaltete EWS-API-Methoden verwenden Suchfilter:
   
-- [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)
-- [ExchangeService.FindFolders](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)
-- [Folder.FindFolders](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)
-- [Folder.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx)
+- [ExchangeService.FindItems](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)
+- [ExchangeService.FindFolders](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)
+- [Folder.FindFolders](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)
+- [Folder.FindItems](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx)
     
-Im folgenden Beispiel wird die **ExchangeService.FindItems**-Methode verwendet; die gleichen Regeln und Konzepte gelten jedoch für alle Methoden. In diesem Beispiel wird eine Methode mit der Bezeichnung **SearchWithFilter** definiert. Als Parameter ist ein [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt, ein [WellKnownFolderName](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx)-Objekt und ein [SearchFilter](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter%28v=exchg.80%29.aspx)-Objekt erforderlich. In diesem Beispiel wird davon ausgegangen, dass das **ExchangeService**-Objekt mit gültigen Werten in den [Credentials](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx)- und [Url](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx)-Eigenschaften initialisiert wurde. Die **SearchFilter**-Klasse ist die Basisklasse für alle verschiedenen Suchfilter. 
+Im folgenden Beispiel wird die **ExchangeService.FindItems**-Methode verwendet; die gleichen Regeln und Konzepte gelten jedoch für alle Methoden. In diesem Beispiel wird eine Methode mit der Bezeichnung **SearchWithFilter** definiert. Als Parameter ist ein [ExchangeService](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt, ein [WellKnownFolderName](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx)-Objekt und ein [SearchFilter](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.searchfilter%28v=exchg.80%29.aspx)-Objekt erforderlich. In diesem Beispiel wird davon ausgegangen, dass das **ExchangeService**-Objekt mit gültigen Werten in den [Credentials](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx)- und [Url](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx)-Eigenschaften initialisiert wurde. Die **SearchFilter**-Klasse ist die Basisklasse für alle verschiedenen Suchfilter. 
   
 ```cs
 using Microsoft.Exchange.WebServices.Data
@@ -504,21 +504,21 @@ Im folgenden Beispiel wird die Antwort vom Server einschließlich der Suchergebn
 ## <a name="next-steps"></a>Nächste Schritte
 <a name="bk_ExampleEWS"> </a>
 
-Nun, da Sie mit der Verwendung von Suchfiltern in einfachen Suchen vertraut sind, können Sie mit den erweiterten Suchmethoden fortfahren.
+Da Sie nun mit der Verwendung von Suchfiltern in einfachen Suchen vertraut sind, können Sie mit fortschrittlicheren Suchtechniken fortfahren.
   
-- [Führen Sie gruppierte Suchvorgänge in Exchange mithilfe der Exchange-Webdienste aus](how-to-perform-grouped-searches-by-using-ews-in-exchange.md)
+- [Durchführen gruppierter Suchen mithilfe von EWS in Exchange](how-to-perform-grouped-searches-by-using-ews-in-exchange.md)
     
-- [Führen Sie seitenweise durch Verwenden von EWS in Exchange](how-to-perform-paged-searches-by-using-ews-in-exchange.md)
+- [Durchführen seitenweiter Suchen mithilfe von EWS in Exchange](how-to-perform-paged-searches-by-using-ews-in-exchange.md)
     
 ## <a name="see-also"></a>Siehe auch
 
 - [Suche und EWS in Exchange](search-and-ews-in-exchange.md)    
-- [Führen Sie eine AQS-Suche mithilfe der EWS in Exchange](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md)   
-- [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)    
-- [ExchangeService.FindFolders](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)    
-- [Folder.FindFolders](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)    
-- [Folder.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx)    
-- [FindFolder Operation](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)   
+- [Durchführen einer AQS-Suche mithilfe von EWS in Exchange](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md)   
+- [ExchangeService.FindItems](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)    
+- [ExchangeService.FindFolders](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)    
+- [Folder.FindFolders](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)    
+- [Folder.FindItems](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx)    
+- [FindFolder-Vorgang](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)   
 - [FindItem-Vorgang](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
     
 

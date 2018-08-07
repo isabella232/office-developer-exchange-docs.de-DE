@@ -8,7 +8,7 @@ ms.assetid: e1b07a92-0595-4bf1-bd6b-c07e66a8c923
 description: Suchen Sie nach Informationen für Ihre ersten Schritte mit EWS und anderen Webdiensten in Exchange.
 ms.openlocfilehash: 2f203c5634c29105feb39220c3ebdd9624bb49ec
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19757127"
@@ -17,7 +17,7 @@ ms.locfileid: "19757127"
 
 Suchen Sie nach Informationen für Ihre ersten Schritte mit EWS und anderen Webdiensten in Exchange.
   
-Geben Sie Zugriff auf Postfachdaten in Exchange Online, Exchange Online als Teil von Office 365 und lokale Versionen von Exchange beginnend mit Exchange Server 2007 gespeichert und können Sie benutzerdefinierte Anwendungen erstellen, die Sie können die [Webdienste in Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md) Verwenden Sie diese Informationen gemäß den Anforderungen Ihrer Organisation zu verwalten. Während der Bereich der EWS- und Web-dienstanwendungen, die Sie erstellen können praktisch unbegrenzt ist, wenden Sie bestimmte grundlegende Konzepte für jede Art von Anwendung. Dieser Abschnitt enthält Informationen zu den grundlegenden Konzepten, die Sie benötigen, um die Uhrzeit des gültigkeitsbeginns EWS und andere Webdienste im Exchange mit vertraut sein. 
+Die [Webdienste in Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md) ermöglichen Zugriff auf Postfachdaten, die in Exchange Online, Exchange Online als Teil von Office 365 und lokalen Versionen von Exchange ab Exchange Server 2007 gespeichert sind. Mithilfe der Webdienste können Sie benutzerdefinierte Anwendungen erstellen, die Sie zum Verwalten dieser Informationen gemäß den Anforderungen Ihrer Organisation verwenden können. Der Umfang von EWS und Webdienstanwendungen ist zwar praktisch unendlich, für alle Typen von Anwendungen gelten jedoch bestimmte grundlegende Konzepte. Dieser Abschnitt enthält Informationen zu den Grundbegriffen, mit denen Sie vertraut sein müssen, um mit der Verwendung von EWS und anderen Webdiensten in Exchange beginnen zu können. 
   
 ## <a name="build-your-knowledge"></a>Ihre Kenntnisse erweitern
 <a name="bk_Knowledge"> </a>
@@ -34,7 +34,7 @@ Unabhängig davon, ob Sie .NET Framework oder eine andere Plattform für die Ent
 |[Einrichtung](setting-up-your-ews-application.md) <br/> |Finden Sie Informationen zu den Aufgaben, die Sie erledigen müssen, um Anwendungen zu erstellen, die die verwaltete EWS-API oder EWS verwenden, um mit Exchange zu kommunizieren.  <br/> |
 |[Authentifizierung](authentication-and-ews-in-exchange.md) <br/> |Erfahren Sie mehr über die Authentifizierungsoptionen für die Herstellung einer Verbindung mit Exchange Online und lokalen Bereitstellungen von Exchange.  <br/> |
 |[AutoErmittlung](autodiscover-for-exchange.md) <br/> |Erfahren Sie mehr über die Sammlung von Diensten, mit denen Sie den URL-Endpunkt ermitteln können, an dem das Konto eines Benutzers über EWS auf Informationen zugreifen kann.  <br/> |
-|[Postfachserver](http://technet.microsoft.com/en-us/library/jj150491%28v=exchg.150%29.aspx) <br/> |Erfahren Sie mehr über das primäre Informationsrepository, das einem EWS-Client zur Verfügung gestellt wird. EWS hat Zugriff auf eine beschränkte Sammlung von Informationen, die in Active Directory-Domänendiensten (AD DS) gespeichert sind.  <br/> |
+|[Postfachserver](http://technet.microsoft.com/de-DE/library/jj150491%28v=exchg.150%29.aspx) <br/> |Erfahren Sie mehr über das primäre Informationsrepository, das einem EWS-Client zur Verfügung gestellt wird. EWS hat Zugriff auf eine beschränkte Sammlung von Informationen, die in Active Directory-Domänendiensten (AD DS) gespeichert sind.  <br/> |
 |[Mail-Apps für Outlook und EWS](mail-apps-for-outlook-and-ews-in-exchange.md) <br/> |In diesem Artikel finden Sie Informationen über Mail-Apps für Outlook und ihre Zusammenarbeit mit EWS in Exchange.  <br/> |
 |[Office 365-REST-APIs für E-Mail, Kalender und Kontakte](office-365-rest-apis-for-mail-calendars-and-contacts.md) <br/> |Erfahren Sie mehr über die Office 365-APIs, die Sie verwenden können, um auf E-Mails, Kalender und Kontakte in Exchange Online als Teil von Office 365 zuzugreifen.  <br/> |
 |[Die verwaltete EWS-API](get-started-with-ews-managed-api-client-applications.md) <br/> |Informieren Sie sich über die bevorzugte Client-API für .NET Framework-Entwickler.  <br/> |
@@ -54,7 +54,7 @@ Codebeispiele und Beispiele, die zeigen, wie Sie mit EWS und anderen Webdiensten
   
 - [Exchange-Codebeispiele](http://code.msdn.microsoft.com/exchange)
     
-- [CodePlex (engl.)](http://www.codeplex.com/)
+- [CodePlex](http://www.codeplex.com/)
     
 - [Dokumentation zur Exchange-API](develop-web-service-clients-for-exchange.md)
     
@@ -67,7 +67,7 @@ Wenn Sie kein .NET Framework-Entwickler sind, stehen zahlreiche Clientbibliothek
 ## <a name="ask-questions-and-solve-problems"></a>Fragen stellen und Probleme lösen
 <a name="questions"> </a>
 
-Benötigen Sie Hilfe Erledigung und finden Sie nicht Antworten? Sie können das [Exchange-Entwicklungsforum](http://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrdevelopment) durchsuchen, um herauszufinden, ob eine andere Person dasselbe Problem hatte und gelöst hat. Eine Community von Mitwirkenden hat Hunderte von Fragen zur Exchange-Entwicklung beantwortet. Sie finden außerdem Websites, Foren und Blogs von Drittanbietern, die Informationen zur Exchange-Entwicklung und möglicherweise die Lösung bereitstellen, nach der Sie suchen. 
+Sie benötigen Hilfe bei Ihren Aufgaben und finden keine Antworten? Durchsuchen Sie das [Exchange-Entwicklungsforum](http://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrdevelopment), um herauszufinden, ob jemand anders auch dasselbe Problem hatte und dieses gelöst hat. Eine Community von Mitwirkenden hat Hunderte von Fragen zur Exchange-Entwicklung beantwortet. Sie finden außerdem Websites, Foren und Blogs von Drittanbietern, die Informationen zur Exchange-Entwicklung und möglicherweise die Lösung bereitstellen, nach der Sie suchen. 
   
 Wenden Sie sich an den [Microsoft-Support](https://support.microsoft.com/), wenn Sie weitere Unterstützung benötigen. Das Exchange Developer-Supportteam ist mit erfahrenen Profis besetzt, die Ihre Fragen zur Exchange-Entwicklung beantworten können. 
   

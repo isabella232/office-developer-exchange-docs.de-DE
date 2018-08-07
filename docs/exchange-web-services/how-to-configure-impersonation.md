@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren des Identitätswechsels
+title: Konfigurieren eines Identitätswechsels
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,12 +8,12 @@ ms.assetid: efcef39f-e26d-4eed-95ac-36a5bf8c089f
 description: Erfahren Sie, wie Sie einem Dienstkonto mithilfe der Exchange-Verwaltungsshell die Identitätswechselrolle gewähren können.
 ms.openlocfilehash: 57ccef48a7553bcc06e3b3ae940b376b8555ef84
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19756875"
 ---
-# <a name="configure-impersonation"></a>Konfigurieren des Identitätswechsels
+# <a name="configure-impersonation"></a>Konfigurieren eines Identitätswechsels
 
 Erfahren Sie, wie Sie einem Dienstkonto mithilfe der Exchange-Verwaltungsshell die Identitätswechselrolle gewähren können. 
   
@@ -25,13 +25,13 @@ Exchange Online, Exchange Online als Teil von Office 365 und Versionen von Excha
 
 Verwenden Sie oder Ihr Exchange-Serveradministrator beim Zuweisen der **ApplicationImpersonation**-Rolle folgende Parameter des **New-ManagementRoleAssignment**-Cmdlets: 
   
--  _Name_ &ndash; Den Anzeigenamen der rollenzuweisung. Beim Zuweisen einer Rolle erfolgt ein Eintrag in der RBAC-Rollenliste. Sie können Rollenzuweisungen mithilfe des [Get-ManagementRoleAssignment](http://msdn.microsoft.com/library/a3a6ee46-061b-444a-8639-43a416309445.aspx)-Cmdlets verifizieren. 
+-  _Name_ &ndash; Der Anzeigename der Rollenzuweisung. Jedes Mal, wenn eine Rolle zugewiesen wird, wird ein Eintrag in der Liste der RBAC-Rollen vorgenommen. Verwenden Sie das Cmdlet [Get-ManagementRoleAssignment](http://msdn.microsoft.com/library/a3a6ee46-061b-444a-8639-43a416309445.aspx), um Rollenzuweisungen zu überprüfen. 
     
--  _Rolle_ &ndash; Der RBAC-Rolle zuweisen. Beim Einrichten des Identitätswechsels weisen Sie die **ApplicationImpersonation**-Rolle zu. 
+-  _Role_ &ndash; Die zuzuweisende RBAC-Rolle. Beim Einrichten des Identitätswechsels weisen Sie die **ApplicationImpersonation**-Rolle zu. 
     
--  _Benutzer_ &ndash; Das Dienstkonto. 
+-  _User_ &ndash; Das Dienstkonto. 
     
--  _CustomRecipientScope_ &ndash; Des Umfangs der Benutzer, die das Dienstkonto imitieren kann. Das Dienstkonto kann nur Benutzer innerhalb des angegebenen Umfangs imitieren. Wenn kein Umfang angegeben ist, wird dem Dienstkonto die **ApplicationImpersonation**-Rolle für alle Benutzer in einem Unternehmen gewährt. Sie können benutzerdefinierte Verwaltungsbereiche mithilfe des [New-ManagementScope](http://msdn.microsoft.com/library/1ea1f474-69d6-48c0-9beb-bfa4442c5dab.aspx)-Cmdlets angeben. 
+-  _CustomRecipientScope_ &ndash; Der Benutzerumfang, den das Benutzerkonto imitieren kann. Das Dienstkonto darf den Identitätswechsel nur für andere Benutzer innerhalb des angegebenen Bereichs zulassen. Wenn kein Umfang angegeben ist, wird dem Dienstkonto die **ApplicationImpersonation**-Rolle für alle Benutzer in einem Unternehmen gewährt. Sie können benutzerdefinierte Verwaltungsbereiche mithilfe des [New-ManagementScope](http://msdn.microsoft.com/library/1ea1f474-69d6-48c0-9beb-bfa4442c5dab.aspx)-Cmdlets angeben. 
     
 Bevor Sie den Identitätswechsel konfigurieren, benötigen Sie Folgendes:
   
@@ -61,7 +61,7 @@ Bevor Sie den Identitätswechsel konfigurieren, benötigen Sie Folgendes:
     New-ManagementScope -Name:scopeName -RecipientRestrictionFilter:recipientFilter
    ```
 
-   Der Parameter _RecipientRestrictionFilter_ des Cmdlets **New-ManagementScope** definiert die Member des Bereichs. Sie können die Eigenschaften des **Identity**-Objekts verwenden, um den Filter zu erstellen. Das folgende Beispiel ist ein Filter, der das Ergebnis auf einen einzelnen Benutzer mit dem Benutzernamen „John" begrenzt. 
+   Der _RecipientRestrictionFilter_-Parameter des **New-ManagementScope**-Cmdlets definiert die Elemente des Bereichs. Sie können die Eigenschaften des **Identity**-Objekt verwenden, um den Filter zu erstellen. Das folgende Beispiel ist ein Filter, der das Ergebnis auf einen einzelnen Benutzer mit dem Benutzernamen „John" begrenzt. 
     
    ```powershell
    Name -eq "john"
@@ -80,7 +80,7 @@ Nachdem der Administrator die Identitätswechsel-Berechtigungen gewährt hat, k�
 ## <a name="see-also"></a>Siehe auch
 
 - [Identitätswechsel und EWS in Exchange](impersonation-and-ews-in-exchange.md)
-- [ApplicationImpersonation-Rolle](http://technet.microsoft.com/en-us/library/dd776119%28v=exchg.150%29.aspx)   
+- [ApplicationImpersonation-Rolle](http://technet.microsoft.com/de-DE/library/dd776119%28v=exchg.150%29.aspx)   
 - [New-ManagementRoleAssignment](http://msdn.microsoft.com/library/34d4f2e3-f2c5-49e1-a6a9-1366da65a78c.aspx)    
 - [Get-ManagementRoleAssignment](http://msdn.microsoft.com/library/a3a6ee46-061b-444a-8639-43a416309445.aspx)
     
