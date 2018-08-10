@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 240d1776-7adc-46cd-9099-88ffeba0a8aa
 description: Erfahren Sie, wie sie die verwaltete EWS-API und EWS in Exchange verwenden können, um einen Stellvertretungszugriff für die Postfächer der Benutzer bereitzustellen.
-ms.openlocfilehash: 0416ed1889a7c235a35cb49290d39d3ccfc28c49
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.openlocfilehash: 344255d86a51e13b21f1eda5113d292395d7cb8f
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756838"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354050"
 ---
 # <a name="delegate-access-and-ews-in-exchange"></a>Stellvertretungszugriff und EWS in Exchange
 
@@ -33,11 +33,11 @@ Am besten funktionieren die Stellvertretung und Ordnerberechtigungen, wenn Sie n
   
 Wenn es darum geht, Nachrichten zu senden oder Besprechungen zu planen, können Stellvertretern „Senden im Auftrag von"-Berechtigungen erteilt werden, sodass dem Empfänger einer E-Mail oder Besprechungsanfrage, die von einem Stellvertreter gesendet wurde, „ *vertreten*  im Auftrag von  *Postfachbesitzer*  " angezeigt wird, wenn er die E-Mail oder Besprechungsanfrage in Outlook empfängt. Das Einbeziehen des „Senden im Auftrag von"-Texts ist ein Client-Implementierungsdetail - und kann erstellt werden, indem die Werte „von" und „Absender" verwendet werden. Der „von"-Wert gibt den Postfachbesitzer an und der „Absender"-Wert gibt den Stellvertreter an, der die Nachricht gesendet hat. Wenn ein Dienstkonto, das die Identität eines Benutzers darstellt, eine E-Mail sendet oder eine Besprechung für den Postfachbesitzer plant, wird die Nachricht als der Nachrichtenbesitzer gesendet. Es gibt keine Möglichkeit für den Empfänger, herauszufinden, ob die Nachricht vom Dienstkonto gesendet wurde. Benutzer, denen Ordnerberechtigungen und kein Stellvertretungszugriff gewährt wurden, können „Senden als" oder „Senden im Auftrag von" eines Postfachbenutzers nicht nutzen. Sie haben Zugriff auf die Postfachordner und können möglicherweise Elemente in den Ordnern erstellen, die Elemente jedoch nicht senden. 
   
-Wann die Ordnerberechtigungen am besten direkt geändert werden sollten? In der Regel wenn Sie einem Benutzer Zugriff auf einen Ordner gewähren, ihm jedoch keine „Senden im Auftrag von"-Berechtigungen gewähren möchten, Ihre Berechtigungsanforderungen nicht den verwalteten [DelegateFolderPermissionLevel](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.delegatefolderpermissionlevel%28v=exchg.80%29.aspx)-EWS-API-Enumerationswerten oder [PermissionLevel](http://msdn.microsoft.com/library/87978600-3523-451e-a725-ef092c543e2a%28Office.15%29.aspx)-EWS-Elementwerten zugeordnet sind oder wenn Sie einen Benutzerzugriff auf einen einzelnen benutzerdefinierten Ordner bereitstellen möchten. 
+Wann die Ordnerberechtigungen am besten direkt geändert werden sollten? In der Regel wenn Sie einem Benutzer Zugriff auf einen Ordner gewähren, ihm jedoch keine „Senden im Auftrag von"-Berechtigungen gewähren möchten, Ihre Berechtigungsanforderungen nicht den verwalteten [DelegateFolderPermissionLevel](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.delegatefolderpermissionlevel%28v=exchg.80%29.aspx)-EWS-API-Enumerationswerten oder [PermissionLevel](http://msdn.microsoft.com/library/87978600-3523-451e-a725-ef092c543e2a%28Office.15%29.aspx)-EWS-Elementwerten zugeordnet sind oder wenn Sie einen Benutzerzugriff auf einen einzelnen benutzerdefinierten Ordner bereitstellen möchten. 
   
-Wenn Sie nur zum Ändern von Berechtigungen für Ordner dieses Ziel zu erreichen müssen und müssen nicht Stellvertreter hinzufügen (d. h., nicht benötigten Berechtigungen "Senden im Auftrag von"), finden Sie unter [Festlegen von Berechtigungen für einen anderen Benutzer mithilfe der EWS in Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md). 
+Wenn Sie nur die Ordnerberechtigungen ändern müssen, um Ihr Ziel zu erreichen, und keinen Stellvertreter hinzufügen müssen (d. h. Sie benötigen keine „Senden im Auftrag von"-Berechtigungen), finden Sie weitere Informationen unter [Festlegen von Ordnerberechtigungen für einen anderen Benutzer mithilfe der EWS in Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md). 
   
-Beachten Sie, dass Sie auch [Outlook](http://office.microsoft.com/en-us/outlook-help/allow-someone-else-to-manage-your-mail-and-calendar-HA102749417.aspx) oder die [Exchange Server-PowerShell (Exchange-Verwaltungsshell)](https://docs.microsoft.com/en-us/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps) verwenden können, um Delegieren des Zugriffs einzurichten. 
+Beachten Sie, dass Sie auch [Outlook](http://office.microsoft.com/de-DE/outlook-help/allow-someone-else-to-manage-your-mail-and-calendar-HA102749417.aspx) oder die [Exchange Server-PowerShell (Exchange-Verwaltungsshell)](https://docs.microsoft.com/en-us/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps) verwenden können, um den Stellvertretungszugriff einzurichten. 
   
 ## <a name="how-does-delegate-access-work"></a>Wie funktioniert der Stellvertretungszugriff?
 
@@ -45,22 +45,22 @@ Mit dem Stellvertretungszugriff können Benutzer auf einige oder alle Ordner des
   
 - Kalender
     
-- Aufgaben
+- Tasks
     
 - Posteingang
     
 - Kontakte
     
-- Anmerkungen
+- Hinweise
     
 - Journal
     
 Wenn ein Benutzer Stellvertreterzugriff auf einen oder mehrere dieser Ordner hat, kann er Elemente in diesem Ordner erstellen, abrufen, aktualisieren, löschen, kopieren und suchen, je nachdem, welche [Berechtigungen](#bk_delegateperms) für den Ordner festgelegt sind. Wie die Anwendung diese Aktionen durchführt, hängt davon ab, ob ein [expliziter](#bk_explicit) oder [impliziter](#bk_implicit) Zugriff erforderlich ist. 
   
-## <a name="delegate-permissions"></a>Stellvertretungsberechtigungen
+## <a name="delegate-permissions"></a>Berechtigungen der Stellvertretung
 <a name="bk_delegateperms"> </a>
 
-Wenn ein Administrator oder Postfachbesitzer einem Postfach einen Stellvertreter hinzufügt, er außerdem die Berechtigungsstufe für einen oder mehrere Ordner festlegen. Wenn eine Berechtigungsstufe für einen Ordner nicht festgelegt ist, lautet der Berechtigungswert standardmäßig Keine. Mehrere Benutzer können die gleichen Berechtigungsstufen für einen Ordner besitzen, und Benutzer können unterschiedliche Berechtigungsstufen für verschiedene Ordner haben. Wenn Sie die verwaltete EWS-API verwenden, verwenden Sie die [DelegateUser.Permissions](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.delegateuser.permissions%28v=exchg.80%29.aspx)-Eigenschaft, die für jeden Ordner einen der [DelegateFolderPermissionLevel](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.delegatefolderpermissionlevel%28v=exchg.80%29.aspx)-Enumerationswerte enthält, um Vertretungsberechtigungen für Ordner einzurichten. Wenn Sie EWS verwenden, verwenden Sie das [DelegatePermissions](http://msdn.microsoft.com/library/292badc7-bab3-4368-9d7c-9a8b7edb279b%28Office.15%29.aspx)-Element zum Festlegen von Vertretungsberechtigungen, und das [PermissionLevel](http://msdn.microsoft.com/library/87978600-3523-451e-a725-ef092c543e2a%28Office.15%29.aspx)-Element zum Definieren der Berechtigungsstufe. 
+Wenn ein Administrator oder Postfachbesitzer einem Postfach einen Stellvertreter hinzufügt, er außerdem die Berechtigungsstufe für einen oder mehrere Ordner festlegen. Wenn eine Berechtigungsstufe für einen Ordner nicht festgelegt ist, lautet der Berechtigungswert standardmäßig Keine. Mehrere Benutzer können die gleichen Berechtigungsstufen für einen Ordner besitzen, und Benutzer können unterschiedliche Berechtigungsstufen für verschiedene Ordner haben. Wenn Sie die verwaltete EWS-API verwenden, verwenden Sie die [DelegateUser.Permissions](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.delegateuser.permissions%28v=exchg.80%29.aspx)-Eigenschaft, die für jeden Ordner einen der [DelegateFolderPermissionLevel](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.delegatefolderpermissionlevel%28v=exchg.80%29.aspx)-Enumerationswerte enthält, um Vertretungsberechtigungen für Ordner einzurichten. Wenn Sie EWS verwenden, verwenden Sie das [DelegatePermissions](http://msdn.microsoft.com/library/292badc7-bab3-4368-9d7c-9a8b7edb279b%28Office.15%29.aspx)-Element zum Festlegen von Vertretungsberechtigungen, und das [PermissionLevel](http://msdn.microsoft.com/library/87978600-3523-451e-a725-ef092c543e2a%28Office.15%29.aspx)-Element zum Definieren der Berechtigungsstufe. 
   
 **Tabelle 2. Stellvertreter-Berechtigungsstufen**
 
@@ -68,11 +68,11 @@ Wenn ein Administrator oder Postfachbesitzer einem Postfach einen Stellvertreter
 |:-----|:-----|
 |Keine  <br/> |Dies ist der Standardwert für alle Ordner.  <br/> |
 |Autor  <br/> |Ein Stellvertreter kann Elemente lesen und erstellen sowie erstellte Elemente ändern und löschen. Beispielsweise kann ein Vertreter Aufgabenanfragen und Besprechungsanfragen direkt im Aufgaben- oder Kalenderordner des Postfachbesitzers erstellen, und dann eines der Elemente im Auftrag des Postfachbesitzers versenden.  <br/> |
-|Herausgeber  <br/> |Ein Stellvertreter kann alles tun, was ein Autor kann und außerdem die Elemente ändern und löschen, die der Postfachbesitzer erstellt hat.  <br/> |
-|Prüfer  <br/> |Ein Stellvertreter kann Elemente lesen; ein Stellvertreter mit Prüferberechtigungen kann beispielsweise Nachrichten im Posteingang einer anderen Person lesen.  <br/> |
+|Editor  <br/> |Ein Stellvertreter kann alles tun, was ein Autor kann und außerdem die Elemente ändern und löschen, die der Postfachbesitzer erstellt hat.  <br/> |
+|Reviewer  <br/> |Ein Stellvertreter kann Elemente lesen; ein Stellvertreter mit Prüferberechtigungen kann beispielsweise Nachrichten im Posteingang einer anderen Person lesen.  <br/> |
 |Benutzerdefiniert  <br/> |Der Postfachbesitzer hat dem Stellvertreter einen benutzerdefinierten Satz von Berechtigungen gewährt.  <br/> |
    
-Die verwaltete [DelgateUser.ViewPrivateItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.delegateuser.viewprivateitems%28v=exchg.80%29.aspx) EWS-API-Eigenschaft und das [ViewPrivateItems](http://msdn.microsoft.com/library/80b949ac-440c-4a01-b428-ebafb5b1b802%28Office.15%29.aspx)-EWS-Element ist eine globale Einstellung, die Auswirkungen auf alle Ordner des Postfachbesitzers hat, einschließlich aller Nachrichten-, Kontakte-, Kalender-, Aufgaben-, Anmerkungen- und Journal-Ordner. Sie können keinen Zugriff auf private Elemente in nur einem Ordner zulassen. 
+Die verwaltete [DelgateUser.ViewPrivateItems](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.delegateuser.viewprivateitems%28v=exchg.80%29.aspx) EWS-API-Eigenschaft und das [ViewPrivateItems](http://msdn.microsoft.com/library/80b949ac-440c-4a01-b428-ebafb5b1b802%28Office.15%29.aspx)-EWS-Element ist eine globale Einstellung, die Auswirkungen auf alle Ordner des Postfachbesitzers hat, einschließlich aller Nachrichten-, Kontakte-, Kalender-, Aufgaben-, Anmerkungen- und Journal-Ordner. Sie können keinen Zugriff auf private Elemente in nur einem Ordner zulassen. 
   
 ## <a name="explicit-access"></a>Expliziter Zugriff
 <a name="bk_explicit"> </a>
@@ -90,17 +90,17 @@ Sie können den expliziten Zugriff in vielen verschiedenen Szenarien festlegen. 
 ### <a name="explicit-access-and-the-ews-managed-api"></a>Expliziter Zugriff und die verwaltete EWS-API
 <a name="bk_explicitewsma"> </a>
 
-Sie können den expliziten Stellvertretungszugriff mithilfe einer der folgenden überladenen Methoden initiieren, die einen [FolderId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx)-Eingabeparameter zum Identifizieren des Zielordners nutzen: 
+Sie können den expliziten Stellvertretungszugriff mithilfe einer der folgenden überladenen Methoden initiieren, die einen [FolderId](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx)-Eingabeparameter zum Identifizieren des Zielordners nutzen: 
   
-- [Folder.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx)
+- [Folder.Bind](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx)
     
-- [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)
+- [ExchangeService.FindItems](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)
     
-- [ExchangeService.FindAppointments](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.findappointments%28v=exchg.80%29.aspx)
+- [ExchangeService.FindAppointments](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.findappointments%28v=exchg.80%29.aspx)
     
-- [ExchangeService.FindFolders](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)
+- [ExchangeService.FindFolders](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)
     
-- Und vieles mehr!
+- Und mehr!
     
 Sie können den **FolderId** -Parameter in jeder dieser Methoden folgendermaßen verwenden, um den Zielordner des Postfachbesitzers zu identifizieren. 
   
@@ -138,34 +138,34 @@ Wenn ein Stellvertreter beispielsweise die ID eines Ordners des Postfachbesitzer
   
 ### <a name="implicit-access-and-the-ews-managed-api"></a>Impliziter Zugriff und die verwaltete EWS-API
 
-Wenn eine Element-ID von der [FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)-Methode abgerufen wurde, kann die Element-ID in einem nachfolgenden [Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx)-Methodenaufruf verwendet werden, um eine Bindung an das Element zu erstellen. Anschließend können Sie die [Item.Update](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.item.update%28v=exchg.80%29.aspx)-, [Item.Delete](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.item.delete%28v=exchg.80%29.aspx)- oder [Item.Copy](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.item.copy%28v=exchg.80%29.aspx)-Methode aufrufen - oder einen beliebigen Methodenaufruf verwenden, für den ggf. eine Element-ID erforderlich ist, damit die Aufgabe abgeschlossen werden kann. Solange der Stellvertreter über die entsprechenden Berechtigungen für den Ordner verfügt, der das Element enthält (und, falls zutreffend, den Ordner, in den das Element verschoben wird), kann der Stellvertreter entsprechend seiner Berechtigungsstufen Änderungen daran vornehmen. 
+Wenn eine Element-ID von der [FindItems](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)-Methode abgerufen wurde, kann die Element-ID in einem nachfolgenden [Item.Bind](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx)-Methodenaufruf verwendet werden, um eine Bindung an das Element zu erstellen. Anschließend können Sie die [Item.Update](http://msdn.microsoft.com/de-DE/library/office/microsoft.exchange.webservices.data.item.update%28v=exchg.80%29.aspx)-, [Item.Delete](http://msdn.microsoft.com/de-DE/library/office/microsoft.exchange.webservices.data.item.delete%28v=exchg.80%29.aspx)- oder [Item.Copy](http://msdn.microsoft.com/de-DE/library/office/microsoft.exchange.webservices.data.item.copy%28v=exchg.80%29.aspx)-Methode aufrufen - oder einen beliebigen Methodenaufruf verwenden, für den ggf. eine Element-ID erforderlich ist, damit die Aufgabe abgeschlossen werden kann. Solange der Stellvertreter über die entsprechenden Berechtigungen für den Ordner verfügt, der das Element enthält (und, falls zutreffend, den Ordner, in den das Element verschoben wird), kann der Stellvertreter entsprechend seiner Berechtigungsstufen Änderungen daran vornehmen. 
   
 ### <a name="implicit-access-and-ews"></a>Impliziter Zugriff und EWS
 
-Wenn eine Element-ID von der [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)-Operation abgerufen wurde, kann die Element-ID in nachfolgenden [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)-Operationen verwendet werden, um eine Bindung zum Element zu erstellen. Anschließend können Sie die [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx)-, [DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx)- oder [CopyItem](http://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx)-Operation - oder eine beliebige Operation aufrufen, für die ggf. eine Element-ID erforderlich ist, damit die Aufgabe abgeschlossen werden kann. Solange der Stellvertreter über die entsprechenden Berechtigungen für den Ordner verfügt, der das Element enthält (und, falls zutreffend, den Ordner, in den das Element verschoben wird), kann der Stellvertreter entsprechend seiner Berechtigungsstufen Änderungen daran vornehmen. 
+Wenn eine Element-ID von der [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)-Operation abgerufen wurde, kann die Element-ID in nachfolgenden [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)-Operationen verwendet werden, um eine Bindung zum Element zu erstellen. Anschließend können Sie die [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx)-, [DeleteItem](../web-service-reference/deleteitem-operation.md)- oder [CopyItem](http://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx)-Operation - oder eine beliebige Operation aufrufen, für die ggf. eine Element-ID erforderlich ist, damit die Aufgabe abgeschlossen werden kann. Solange der Stellvertreter über die entsprechenden Berechtigungen für den Ordner verfügt, der das Element enthält (und, falls zutreffend, den Ordner, in den das Element verschoben wird), kann der Stellvertreter entsprechend seiner Berechtigungsstufen Änderungen daran vornehmen. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 <a name="bk_implicit"> </a>
 
-- [Hinzufügen und Entfernen von Stellvertretungen mithilfe von EWS in Exchange](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md)
+- [Hinzufügen und Entfernen von Delegaten mithilfe der EWS in Exchange](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md)
     
-- [Zugriff auf einen Kalender als Stellvertretung mithilfe der EWS in Exchange](how-to-access-a-calendar-as-a-delegate-by-using-ews-in-exchange.md)
+- [Zugriff auf einen Kalender als Delegat mithilfe der EWS in Exchange](how-to-access-a-calendar-as-a-delegate-by-using-ews-in-exchange.md)
     
-- [Access-Kontakte als Stellvertretung mithilfe der EWS in Exchange](how-to-access-contacts-as-a-delegate-by-using-ews-in-exchange.md)
+- [Zugriff auf Kontakte als Delegat mithilfe der EWS in Exchange](how-to-access-contacts-as-a-delegate-by-using-ews-in-exchange.md)
     
-- [Access-e-Mail eine Stellvertretung mithilfe der EWS in Exchange](how-to-access-email-as-a-delegate-by-using-ews-in-exchange.md)
+- [Zugreifen auf E-Mails als Stellvertretung mithilfe der EWS in Exchange](how-to-access-email-as-a-delegate-by-using-ews-in-exchange.md)
     
-- [Legen Sie Berechtigungen für einen anderen Benutzer mithilfe der EWS in Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)
+- [Festlegen von Ordnerberechtigungen für einen anderen Benutzer mithilfe der EWS in Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)
     
-- [Fehlerbehandlung Delegierung-bezogene in EWS in Exchange](handling-delegation-related-errors-in-ews-in-exchange.md)
+- [Umgang mit Fehlern in Exchange im Zusammenhang mit Löschungen in EWS](handling-delegation-related-errors-in-ews-in-exchange.md)
     
 ## <a name="see-also"></a>Siehe auch
 
 
 - [Entwickeln von Webdienstclients für Exchange](develop-web-service-clients-for-exchange.md)
     
-- [Einen Stellvertreter die Verwaltung der E-Mails und des Kalenders vornehmen lassen](http://office.microsoft.com/en-us/outlook-help/allow-someone-else-to-manage-your-mail-and-calendar-HA102749417.aspx)
+- [Einen Stellvertreter die Verwaltung der E-Mails und des Kalenders vornehmen lassen](http://office.microsoft.com/de-DE/outlook-help/allow-someone-else-to-manage-your-mail-and-calendar-HA102749417.aspx)
     
-- [Add- MailboxPermission](http://technet.microsoft.com/en-us/library/bb124097%28v=exchg.150%29.aspx)
+- [Add- MailboxPermission](http://technet.microsoft.com/de-DE/library/bb124097%28v=exchg.150%29.aspx)
     
 

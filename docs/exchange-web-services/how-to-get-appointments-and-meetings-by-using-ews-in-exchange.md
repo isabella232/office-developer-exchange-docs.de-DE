@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1bae582a-8cb3-4e77-be2a-7e107fad26fe
-description: Hier erhalten Sie Informationen zum Abrufen von Terminen und Besprechungen mithilfe der verwalteten EWS-API oder von EWS in Exchange
-ms.openlocfilehash: 0f5eb135142e807f30f48f01d7948fbdbf147ac2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+description: Hier erhalten Sie Informationen zum Abrufen von Terminen und Besprechungen mithilfe der verwalteten EWS-API oder von EWS in Exchange.
+ms.openlocfilehash: c78d70ca2266bd192b82f644d902ad8c958d2d4a
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756892"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353693"
 ---
 # <a name="get-appointments-and-meetings-by-using-ews-in-exchange"></a>Abrufen von Terminen und Besprechungen mithilfe von EWS in Exchange
 
-Hier erhalten Sie Informationen zum Abrufen von Terminen und Besprechungen mithilfe der verwalteten EWS-API oder von EWS in Exchange
+Hier erhalten Sie Informationen zum Abrufen von Terminen und Besprechungen mithilfe der verwalteten EWS-API oder von EWS in Exchange.
   
-Mit der [CalendarFolder.FindAppointments](http://msdn.microsoft.com/en-us/library/dd636179%28v=exchg.80%29.aspx) verwalteten EWS-API-Methode oder dem [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)-EWS-Vorgang können Sie Termine und Besprechungen aus dem Kalenderordner abrufen. 
+Mit der [CalendarFolder.FindAppointments](http://msdn.microsoft.com/de-DE/library/dd636179%28v=exchg.80%29.aspx) verwalteten EWS-API-Methode oder dem [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)-EWS-Vorgang können Sie Termine und Besprechungen aus dem Kalenderordner abrufen. 
   
 ## <a name="get-appointments-by-using-the-ews-managed-api"></a>Abrufen von Terminen mithilfe der verwalteten EWS-API
 <a name="bk_retrieveappsEWSMA"> </a>
@@ -50,19 +50,24 @@ Im folgenden Codebeispiel wird veranschaulicht, wie Sie die verwaltete EWS-API z
 
 ```
 
+<br/>
+
 Das Codebeispiel gibt die folgende Ausgabe zurück:
   
-Die ersten fünf Termine in Ihrem Kalender zwischen 21.08.2013 und 20.09.2013 sind die folgenden: 
+```text
+The first five appointments on your calendar from 8/21/2013 to 9/20/2013 are: 
   
-Betreff: Besprechung des Contoso-Entwicklerteams Start: 21.08.2013 12:30:00 Ende: 21.08.2013 13:00:00
+Subject: Contoso devs team meeting Start: 8/21/2013 12:30:00 PM End: 8/21/2013 1:00:00 PM
   
-Betreff: Tägliche Statusbesprechung Start: 21.08.2013 13:00:00 Ende: 21.08.2013 14:00:00
+Subject: Daily status meeting Start: 8/21/2013 1:00:00 PM End: 8/21/2013 2:00:00 PM
   
-Betreff: Lunch mit dem Salesteam Start: 21.08.2013 14:30:00 Ende: 21.08.2013 15:30:00
+Subject: Lunch with sales team Start: 8/21/2013 2:30:00 PM End: 8/21/2013 3:30:00 PM
   
-Betreff: Tennis im Club Start: 22.08.2013 11:00:00 Ende: 22.08.2013 12:00:00
+Subject: Tennis at the club Start: 8/22/2013 11:00:00 AM End: 8/22/2013 12:00:00 PM
   
-Betreff: Onlineschulungswebcast: 22.08.2013 14:00:00 Ende: 22.08.2013 15:00:00
+Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
+```
+
 ## <a name="get-appointments-by-using-ews"></a>Abrufen von Terminen mithilfe von EWS
 <a name="bk_xml"> </a>
 
@@ -89,6 +94,8 @@ Das folgende XML zeigt eine [GetFolder](http://msdn.microsoft.com/library/355bcf
   </soap:Body>
 </soap:Envelope>
 ```
+
+<br/>
 
 Das folgende XML zeigt die **GetFolder**-Antwort. Beachten Sie, dass die **FolderID** - und **ChangeKey** -Attribute aus Lesbarkeitsgründen gekürzt wurden. 
   
@@ -119,6 +126,8 @@ Das folgende XML zeigt die **GetFolder**-Antwort. Beachten Sie, dass die **Folde
 </s:Envelope>
 ```
 
+<br/>
+
 Das folgende XML zeigt die **FindItem**-Anforderung zum Zurückgeben der angeforderten Termine. Beachten Sie, dass die **FolderID** - und **ChangeKey** -Attribute aus Lesbarkeitsgründen gekürzt wurden. 
   
 ```XML
@@ -148,6 +157,8 @@ Das folgende XML zeigt die **FindItem**-Anforderung zum Zurückgeben der angefor
   </soap:Body>
 </soap:Envelope>
 ```
+
+<br/>
 
 Das folgende XML zeigt die **FindItem**-Antwort. Beachten Sie, dass die **ItemID** - und **ChangeKey** -Attribute aus Lesbarkeitsgründen gekürzt wurden. 
   
@@ -211,21 +222,17 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 ## <a name="recurring-meetings-and-the-calendar-view"></a>Besprechungsserien und die Kalenderansicht
 <a name="bk_recurring"> </a>
 
-Der Kalenderordner unterscheidet sich in gewisser Weise von anderen Ordnern in einem Postfach, da Serienelemente in Besprechungsserien und Ausnahmen von diesen Besprechungsserien keine Elemente im Postfach darstellen, sondern intern als Anlagen in einer übergeordneten Besprechungsserie gespeichert werden. Das heißt: Obwohl sie eine EWS-Anforderung erstellen können, die Werte in einem bestimmten Bereich zwischen **Start** und **Ende** mithilfe der überladenen **FindItems** -Methoden der verwalteten EWS-API wie [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) oder des [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)-Vorgangs von EWS abruft, wird EWS nicht in der Anlagentabelle jedes Kalenderelements nach Ausnahmen und Serienelementen suchen. 
+Der Kalenderordner unterscheidet sich in gewisser Weise von anderen Ordnern in einem Postfach, da Serienelemente in Besprechungsserien und Ausnahmen von diesen Besprechungsserien keine Elemente im Postfach darstellen, sondern intern als Anlagen in einer übergeordneten Besprechungsserie gespeichert werden. Das heißt: Obwohl sie eine EWS-Anforderung erstellen können, die Werte in einem bestimmten Bereich zwischen **Start** und **Ende** mithilfe der überladenen **FindItems** -Methoden der verwalteten EWS-API wie [ExchangeService.FindItems](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) oder des [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)-Vorgangs von EWS abruft, wird EWS nicht in der Anlagentabelle jedes Kalenderelements nach Ausnahmen und Serienelementen suchen. 
   
-Stattdessen möchten Sie eine  *Datenansicht*  auf zwei SQL-Tabellen mithilfe eines [CalendarView](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx)-Objekts anwenden. Aus Leistungsgründen wird empfohlen, die [PropertySet](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx)-Eigenschaft zum Einschränken der Antwortgröße durch Angeben der zurückzugebenden Anzahl von Terminen oder Besprechungen sowie von bestimmten Eigenschaften zu verwenden. 
+Stattdessen möchten Sie eine  *Datenansicht*  auf zwei SQL-Tabellen mithilfe eines [CalendarView](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx)-Objekts anwenden. Aus Leistungsgründen wird empfohlen, die [PropertySet](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx)-Eigenschaft zum Einschränken der Antwortgröße durch Angeben der zurückzugebenden Anzahl von Terminen oder Besprechungen sowie von bestimmten Eigenschaften zu verwenden. 
   
 ## <a name="see-also"></a>Siehe auch
 <a name="bk_additional"> </a>
 
-- [Kalender und EWS in Exchange](calendars-and-ews-in-exchange.md)
-    
-- [Erstellen von Terminen und Besprechungen mithilfe von EWS in Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
-    
-- [Aktualisieren von Terminen und Besprechungen mithilfe von EWS in Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
-    
-- [Löschen von Terminen und Abbrechen an Besprechungen mithilfe von EWS in Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
-    
+- [Kalender und EWS in Exchange](calendars-and-ews-in-exchange.md)   
+- [Erstellen von Terminen und Besprechungen mithilfe von EWS in Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)  
+- [Aktualisieren von Terminen und Besprechungen mithilfe von EWS in Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)  
+- [Löschen von Terminen und Absagen von Besprechungen mithilfe von EWS in Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md) 
 - [Entwickeln von Webdienstclients für Exchange](develop-web-service-clients-for-exchange.md)
     
 

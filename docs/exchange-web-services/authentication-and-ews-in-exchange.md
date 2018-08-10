@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 9a83df96-aca0-42b3-b8f5-2b414f0363f1
 description: Hier finden Sie Informationen, die Sie dabei unterstützen, den richtigen Authentifizierungsstandard für Ihre EWS-Anwendung für Exchange zu finden.
-ms.openlocfilehash: c81b29cbe9aa3c658a8f776876366fd0875b2669
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.openlocfilehash: a4aae4678f1d6ffa5c08350f0bcccce5a4885f20
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756820"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353665"
 ---
 # <a name="authentication-and-ews-in-exchange"></a>Authentifizierung und EWS in Exchange
 
@@ -41,17 +41,17 @@ Wir empfehlen die Verwendung des OAuth-Standards für alle neuen Anwendungen, di
 |:-----|:-----|
 | OAuth ist ein Authentifizierungsprotokoll nach Branchenstandard.<br/><br/>Die Authentifizierung wird durch einen Drittanbieter verwaltet. Ihre Anwendung muss keine Exchange-Anmeldeinformationen sammeln und speichern.<br/><br/>Hierum müssen Sie sich also nicht kümmern. Ihre Anwendung enthält nur ein verdecktes Token vom Authentifizierungsanbieter. Daher wird bei einer Sicherheitsverletzung nur das Token aufgedeckt, jedoch keine Exchange-Anmeldeinformationen des Benutzers.  <br/> | OAuth ist von einem Drittpartei-Authentifizierungsanbieter abhängig. Dies kann zusätzliche Kosten für Ihr Unternehmen oder Ihre Kunden verursachen.<br/><br/>Der OAuth-Standard ist schwieriger zu implementieren als die Standardauthentifizierung.<br/><br/>Um OAuth implementieren zu können, müssen Sie Ihre Anwendung sowohl mit dem Authentifizierungsanbieter als auch dem Exchange-Server integrieren.  <br/> |
    
-Um die Nachteile zu minimieren, können Sie die [Microsoft Azure AD Authentication Library](http://msdn.microsoft.com/library/a03f39fa-7ba4-4182-a98e-55562a64b8f3%28Office.15%29.aspx) (ADAL) zum Authentifizieren von Benutzern bei den Active Directory Domain Services (AD DS) in der Cloud oder lokal verwenden und dann Zugriffstoken zum Sichern der Aufrufe an den Exchange-Server verwenden. Für Exchange Online sind vom Azure Active Directory-Dienst ausgegebene Token erforderlich, was von ADAL unterstützt wird. Sie können jedoch jede Drittanbieterbibliothek verwenden. 
+Um die Nachteile zu minimieren, können Sie die [Microsoft Azure AD Authentication Library](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) zum Authentifizieren von Benutzern bei den Active Directory Domain Services (AD DS) in der Cloud oder lokal verwenden und dann Zugriffstoken zum Sichern der Aufrufe an den Exchange-Server verwenden. Für Exchange Online sind vom Azure Active Directory-Dienst ausgegebene Token erforderlich, was von ADAL unterstützt wird. Sie können jedoch jede Drittanbieterbibliothek verwenden. 
   
 Weitere Informationen über die Verwendung der OAuth-Authentifizierung in der EWS-Anwendung finden Sie in den folgenden Ressourcen:
   
-- [Office 365-Testversion](http://office.microsoft.com/compare-office-365-for-business-plans-FX102918419.aspx?CR_CC=200061904&amp;WT.srch=1&amp;WT.mc_ID=PS_bing_O365Comm_office%20365%20trial_Text) zum Einrichten eines Exchange-Servers zum Testen der Clientanwendung.
+- [Office 365-Testversion](https://docs.microsoft.com/de-DE/office/developer-program/office-365-developer-program) zum Einrichten eines Exchange-Servers zum Testen der Clientanwendung.
     
-- [Azure AD Authentication Library für .NET](http://msdn.microsoft.com/library/a03f39fa-7ba4-4182-a98e-55562a64b8f3%28Office.15%29.aspx)
+- [Azure AD Authentication Library für .NET](https://docs.microsoft.com/de-DE/azure/active-directory/develop/active-directory-authentication-libraries)
     
 - [Konfigurieren von Azure Active Directory](http://msdn.microsoft.com/library/055e1155-2d4d-4c85-b44e-d406872ba595%28Office.15%29.aspx) zum Aktivieren Ihrer Anwendung für die Verwendung von OAuth-Tokens zur Authentifizierung.
     
-- Überprüfen Sie im Beispielcode im [Authentifizieren einer EWS-Anwendung mithilfe von OAuth](how-to-authenticate-an-ews-application-by-using-oauth.md) beispielsweise Code, die Sie untersuchen können. 
+- Beispielcode finden Sie unter [Authentifizieren einer EWS-Anwendung mit OAuth](how-to-authenticate-an-ews-application-by-using-oauth.md). 
     
 ## <a name="ntlm-authentication"></a>NTLM-Authentifizierung
 
@@ -61,7 +61,7 @@ Die NTLM-Authentifizierung ist nur für lokale Exchange-Server verfügbar. Für 
 
 |**Vorteile**|**Nachteile**|
 |:-----|:-----|
-| Ist sofort einsatzbereit zur Verwendung mit dem Exchange-Server. Sie können den Zugriff auf Exchange-Dienste konfigurieren, indem Sie ein [Exchange Management Shell-Cmdlet](how-to-control-access-to-ews-in-exchange.md) verwenden.  <br/><br/>Verwenden Sie das [CredentialCache](http://msdn2.microsoft.com/EN-US/library/615e0wsd)-Objekt von .NET Framework, um die Anmeldeinformationen des Benutzers automatisch abzurufen.<br/><br/>[Es sind Codebeispiele unter](http://code.msdn.microsoft.com/office/Exchange-2013-101-Code-3c38582c) verfügbar, die die Anmeldeinformationen des angemeldeten Benutzers für die Authentifizierung bei einem lokalen Exchange-Server verwenden.  <br/> | Benutzer müssen bei einer Domäne angemeldet sein, um die NTLM-Authentifizierung verwenden zu können.<br/><br/>Es kann schwierig sein, auf E-Mail-Konten zuzugreifen, die nicht dem Domänenkonto des Benutzers zugeordnet sind.<br/><br/>Dienstanwendungen müssen über ein Domänenkonto verfügen, um die NTLM-Authentifizierung nutzen zu können.  <br/> |
+| Ist sofort einsatzbereit zur Verwendung mit dem Exchange-Server. Sie können den Zugriff auf Exchange-Dienste konfigurieren, indem Sie ein [Exchange Management Shell-Cmdlet](how-to-control-access-to-ews-in-exchange.md) verwenden.  <br/><br/>Verwenden Sie das [CredentialCache](http://msdn2.microsoft.com/de-DE/library/615e0wsd)-Objekt von .NET Framework, um die Anmeldeinformationen des Benutzers automatisch abzurufen.<br/><br/>[Es sind Codebeispiele unter](http://code.msdn.microsoft.com/office/Exchange-2013-101-Code-3c38582c) verfügbar, die die Anmeldeinformationen des angemeldeten Benutzers für die Authentifizierung bei einem lokalen Exchange-Server verwenden.  <br/> | Benutzer müssen bei einer Domäne angemeldet sein, um die NTLM-Authentifizierung verwenden zu können.<br/><br/>Es kann schwierig sein, auf E-Mail-Konten zuzugreifen, die nicht dem Domänenkonto des Benutzers zugeordnet sind.<br/><br/>Dienstanwendungen müssen über ein Domänenkonto verfügen, um die NTLM-Authentifizierung nutzen zu können.  <br/> |
    
 ## <a name="basic-authentication"></a>Standardauthentifizierung
 
@@ -77,7 +77,7 @@ Sie müssen entscheiden, ob die Standardauthentifizierung die Sicherheitsanforde
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Erste Schritte mit Webdiensten in Exchange](start-using-web-services-in-exchange.md)   
+- [Verwenden von Webdiensten in Exchange](start-using-web-services-in-exchange.md)   
 - [Hinzufügen von Anmeldungen zur Webanwendung mit Microsoft Azure AD](http://msdn.microsoft.com/library/055e1155-2d4d-4c85-b44e-d406872ba595%28Office.15%29.aspx)    
 - [Steuern des Zugriffs auf EWS in Exchange](how-to-control-access-to-ews-in-exchange.md)    
 - [Steuern des Clientanwendungszugriffs auf EWS in Exchange](controlling-client-application-access-to-ews-in-exchange.md)    

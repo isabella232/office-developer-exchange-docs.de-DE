@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b26f67aa-7c66-4d7d-98b3-746f26ab37f4
 description: Lernen Sie die Entwurfsaspekte für die Entwicklung mit EWS für Exchange kennen.
-ms.openlocfilehash: ea0e1ad3f8402d19a6163f3320a2a17f08f3ea2a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.openlocfilehash: 10e1c78bdd93dc5aede6e3f9337aa70b0214b770
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756837"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353903"
 ---
 # <a name="ews-client-design-overview-for-exchange"></a>Übersicht über den EWS-Cliententwurf für Exchange
 
@@ -24,17 +24,17 @@ Dieser Artikel enthält eine Übersicht über das Entwerfen einer Exchange-Webdi
 
 Bevor Sie mit der Entwicklung Ihrer Anwendung beginnen, müssen Sie überlegen, ob EWS die richtige API für Sie ist. Wenn Sie für Exchange Server oder Exchange Online entwickeln, ist EWS die bevorzugte Clientzugriffstechnologie. Die Entwicklung des Clientzugriffs für Exchange-Versionen ab Exchange 2007 konzentrierte sich primär auf EWS. Neue in Outlook implementierte Clientzugriffsfunktionen verwenden EWS, darunter auch die in Exchange 2007 eingeführten Features „Abwesend" und „Verfügbarkeit" sowie die Features „E-Mail-Info" und „GetRooms" aus Exchange 2010. Dies stellt eine konsequente Investition in EWS für interne und externe Partner dar, die Exchange-Clientanwendungen entwickeln.
   
-EWS ist die primäre Clientzugriffs-API für Ihre Exchange-Clientanwendungen. In einigen Fällen empfiehlt sich jedoch eventuell der Einsatz anderer Exchange-APIs für die Entwicklung von Clientanwendungen. So bietet z. B. Exchange ActiveSync die folgenden Vorteile gegenüber EWS:
+EWS ist die primäre Clientzugriffs-API für Ihre Exchange-Clientanwendungen. In einigen Fällen empfiehlt sich jedoch eventuell der Einsatz anderer Exchange-APIs für die Entwicklung von Clientanwendungen. So bietet z. B. Exchange ActiveSync die folgenden Vorteile gegenüber EWS:
   
 - Die XML-Struktur wurde mit Tokens versehen, um Exchange ActiveSync zu einem kompakteren Protokoll zu machen.  
 - Exchange ActiveSync enthält einen Richtlinienmechanismus zum Steuern des Clientzugriffs und zum Bereitstellen anderer robuster Unternehmenslösungen für mobile Nachrichten.
     
 > [!NOTE]
-> [!HINWEIS] Zum Entwickeln von Exchange ActiveSync-Clients benötigen Sie eine Lizenz. Informationen zu den Unterschieden zwischen Exchange ActiveSync und EWS finden Sie unter [Wählen zwischen Exchange ActiveSync und Exchange-Webdienste (EWS)](http://msdn.microsoft.com/en-us/library/dn144954%28v=exchg.140%29.aspx). 
+> Sie benötigen eine Lizenz zum Entwickeln von Exchange ActiveSync-Clients. Informationen zu den Unterschieden zwischen Exchange ActiveSync und EWS finden Sie unter [Entscheidung zwischen Exchange ActiveSync und Exchange-Webdienste (EWS)](http://msdn.microsoft.com/de-DE/library/dn144954%28v=exchg.140%29.aspx). 
   
 MAPI-RPC über HTTP ist eine weitere Programmieroption für Exchange-Clientanwendungen. MAPI-RPC über HTTP bietet jedoch keine intuitive Schnittstelle für die Kommunikation zwischen Clients und dem Server.
   
-Weitere Informationen zu Exchange-Entwicklungstechnologien finden Sie unter [Durchsuchen die EWS Managed API, EWS, und Web services im Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md).
+Weitere Informationen über Exchange-Entwicklungstechnologien finden Sie unter [Erkunden von verwalteter EWS-API, EWS und Webdiensten in Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md).
   
 ## <a name="options-for-ews-client-development"></a>Optionen für die Entwicklung von EWS-Clients
 <a name="EWSClientOptions"> </a>
@@ -62,7 +62,7 @@ Beachten Sie jedoch, dass die verwaltete EWS-API keine vollständige Lösung ist
   
 - Sie können das .NET Framework für die Entwicklung verwenden.
 - Sie implementiert die AutoErmittlung sowie die meisten Teile des EWS-Objektmodells.
-- Sie implementiert clientseitige Geschäftslogik für die Zusammenarbeit mit EWS in der [ExchangeService](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Klasse. 
+- Sie implementiert clientseitige Geschäftslogik für die Zusammenarbeit mit EWS in der [ExchangeService](http://msdn.microsoft.com/de-DE/library/office/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Klasse. 
     
 Sie können die EWS-Webdienst-API aus folgenden Gründen anstelle der verwalteten EWS-API verwenden:
   
@@ -73,16 +73,16 @@ Sie können die EWS-Webdienst-API aus folgenden Gründen anstelle der verwaltete
 Weitere Informationen finden Sie unter [Erste Schritte mit verwalteten EWS-API-Clientanwendungen](get-started-with-ews-managed-api-client-applications.md).
   
 > [!NOTE]
-> Die EWS Managed API ist jetzt als open-Source-Projekt auf [GitHub](http://aka.ms/ews-managed-api-github)verfügbar. Sie können die open-Source-Bibliothek zu verwenden: 
+> Die verwaltete EWS-API steht nun als Open Source-Projekt auf [GitHub](http://aka.ms/ews-managed-api-github) zur Verfügung. Sie können die Open Source-Bibliothek für Folgendes verwenden: 
 > - Implementieren von Programmfehlerbehebungen und Verbesserungen in die API 
 > - Abrufen von Fehlerbehebungen und Verbesserungen, bevor diese in einer offiziellen Version verfügbar sind
 > - Zugreifen auf die umfassendste und aktuellste Implementierung der API, um sie als Referenz zu verwenden oder neue Bibliotheken auf neuen Plattformen zu erstellen
 > 
-> Wir freuen uns auf Ihre [Beiträge](https://github.com/OfficeDev/ews-managed-api/blob/master/CONTRIBUTING.md) über GitHub. 
+> Wir freuen uns über Ihre [Beiträge](https://github.com/OfficeDev/ews-managed-api/blob/master/CONTRIBUTING.md) über GitHub. 
   
 ### <a name="ews-java-api"></a>Java-API der EWS
 
-Die Java-API der EWS ist ein Open Source-Projekt auf [GitHub](https://github.com/OfficeDev/ews-java-api), das von der Community aktualisiert und erweitert werden kann. Sie ähnelt stilistisch der [verwalteten EWS-API](http://msdn.microsoft.com/en-us/library/office/jj220535%28v=exchg.80%29.aspx) und verwendet EWS-SOAP-Anforderungen und - Antworten über das Netzwerk. Obwohl Sie mit der Java-API der EWS nicht auf alle [EWS-SOAP-Vorgänge](http://msdn.microsoft.com/library/cf6fd871-9a65-4f34-8557-c8c71dd7ce09%28Office.15%29.aspx) zugreifen können, setzen wir mit der [aktuellen Erstellung](http://blogs.office.com/2014/08/28/open-sourcing-exchange-web-services-ews-java-api/) des Open Source-Projekts auf die Community, um diese Lücke zu schließen. Beachten Sie, dass der Microsoft-Support mit einem entsprechenden Supportvertrag alle Fragen im Zusammenhang mit dem EWS-SOAP-Protokoll, nicht jedoch mit der Java-API für EWS beantwortet. Die Java-API für EWS steht zum Download und für Communitybeiträge auf [GitHub](https://github.com/OfficeDev/ews-java-api) zur Verfügung.
+Die Java-API der EWS ist ein Open Source-Projekt auf [GitHub](https://github.com/OfficeDev/ews-java-api), das von der Community aktualisiert und erweitert werden kann. Sie ähnelt stilistisch der [verwalteten EWS-API](http://msdn.microsoft.com/de-DE/library/office/jj220535%28v=exchg.80%29.aspx) und verwendet EWS-SOAP-Anforderungen und - Antworten über das Netzwerk. Obwohl Sie mit der Java-API der EWS nicht auf alle [EWS-SOAP-Vorgänge](http://msdn.microsoft.com/library/cf6fd871-9a65-4f34-8557-c8c71dd7ce09%28Office.15%29.aspx) zugreifen können, setzen wir mit der [aktuellen Erstellung](http://blogs.office.com/2014/08/28/open-sourcing-exchange-web-services-ews-java-api/) des Open Source-Projekts auf die Community, um diese Lücke zu schließen. Beachten Sie, dass der Microsoft-Support mit einem entsprechenden Supportvertrag alle Fragen im Zusammenhang mit dem EWS-SOAP-Protokoll, nicht jedoch mit der Java-API für EWS beantwortet. Die Java-API für EWS steht zum Download und für Communitybeiträge auf [GitHub](https://github.com/OfficeDev/ews-java-api) zur Verfügung.
   
 ### <a name="ews-autogenerated-proxies"></a>Automatisch generierte EWS-Proxys
 
@@ -120,23 +120,17 @@ Informationen zu den in den einzelnen EWS-Schemaversionen verfügbaren Features 
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 <a name="bk_inthissection"> </a>
 
-- [Verfügbarkeit von Web Service-API in Exchange und die EWS Managed API](web-service-api-feature-availability-in-exchange-and-the-ews-managed-api.md)
-    
-- [EWS-Schemaversionen in Exchange](ews-schema-versions-in-exchange.md)
-    
-- [Konfigurationsoptionen für EWS in Exchange](configuration-options-for-ews-in-exchange.md)
-    
-- [Vergleich der Exchange Online und Exchange lokalen Clientprogrammierung](comparing-exchange-online-and-exchange-on-premises-client-programming.md)
-    
-- [EWS-Einschränkung in Exchange](ews-throttling-in-exchange.md)
-    
-- [Redistribution Anforderungen für die EWS Managed API](redistribution-requirements-for-the-ews-managed-api.md)
-    
-- [Instrumentieren Client-Anfragen für EWS und REST in Exchange](instrumenting-client-requests-for-ews-and-rest-in-exchange.md)
+- [Verfügbarkeit von Web Service-API in Exchange und die EWS Managed API](web-service-api-feature-availability-in-exchange-and-the-ews-managed-api.md)   
+- [EWS-Schemaversionen in Exchange](ews-schema-versions-in-exchange.md)  
+- [Konfigurationsoptionen für EWS in Exchange](configuration-options-for-ews-in-exchange.md)  
+- [Vergleich der Exchange Online und Exchange lokalen Clientprogrammierung](comparing-exchange-online-and-exchange-on-premises-client-programming.md)   
+- [EWS-Einschränkung in Exchange](ews-throttling-in-exchange.md)  
+- [Redistribution Anforderungen für die EWS Managed API](redistribution-requirements-for-the-ews-managed-api.md)  
+- [Handhaben von Clientanforderungen für EWS und REST in Exchange](instrumenting-client-requests-for-ews-and-rest-in-exchange.md)
     
 ## <a name="see-also"></a>Siehe auch
  
-- [Erste Schritte mit Webdiensten in Exchange](start-using-web-services-in-exchange.md)
+- [Verwenden von Webdiensten in Exchange](start-using-web-services-in-exchange.md)
 - [Entwickeln von Webdienstclients für Exchange](develop-web-service-clients-for-exchange.md) 
 - [EWS-Anwendungstypen](ews-application-types.md)
     
