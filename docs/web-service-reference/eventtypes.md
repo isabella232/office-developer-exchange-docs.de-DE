@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 29ded9e5-f191-4aa3-bc3e-500de2fc8818
 description: EventTypes-Element enthält eine Auflistung von Benachrichtigung Ereignistypen, die zum Erstellen eines Abonnements verwendet werden.
-ms.openlocfilehash: f4c622376f6b607ed390511d7bb5f0f723889420
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 7ea783dc0bf73abf992616b1f86c7621c5b36fc8
+ms.sourcegitcommit: 25cbbc6707e4ec0621c5c46baf7fe49be42d3297
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758280"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "25440837"
 ---
 # <a name="eventtypes"></a>EventTypes
 
@@ -60,7 +60,7 @@ Keine.
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
