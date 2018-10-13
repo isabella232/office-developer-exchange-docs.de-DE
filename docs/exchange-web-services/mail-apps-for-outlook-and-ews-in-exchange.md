@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 821c8eb9-bb58-42e8-9a3a-61ca635cba59
 description: In diesem Artikel finden Sie Informationen über Outlook-Add-Ins und ihre Zusammenarbeit mit EWS in Exchange.
-ms.openlocfilehash: fc004108c7f31ea6475d61f4e2cd2289b13d27f5
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.openlocfilehash: 7eae834fe0bb93e2e94f094e811ab6cf002fc71b
+ms.sourcegitcommit: 42eecc78e7aed7e95f73370d6c39ab8f4e96bf68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353637"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25541638"
 ---
 # <a name="outlook-add-ins-and-ews-in-exchange"></a>Outlook-Add-Ins und EWS in Exchange
 
@@ -36,13 +36,13 @@ Die Mail-Apps-Schnittstelle ist Teil der JavaScript-API für Office. Mithilfe de
 
 Mithilfe von Mail-Apps können Sie die Benutzeroberfläche von Outlook Web App für Ihre Benutzer anpassen; zum Anpassen des "Erscheinungsbilds" von Outlook Web App lesen Sie die folgenden Artikel im TechNet:
 
-- [Erstellen eines Designs für Outlook Web App](http://technet.microsoft.com/de-DE/library/bb201700%28v=exchg.150%29.aspx)
+- [Erstellen eines Designs für Outlook Web App](http://technet.microsoft.com/en-us/library/bb201700%28v=exchg.150%29.aspx)
 
-- [Anpassen der Seiten für Anmeldung, Sprachauswahl und Fehler für Outlook Web App](http://technet.microsoft.com/de-DE/library/ee633483%28v=exchg.150%29.aspx)
+- [Anpassen der Seiten für Anmeldung, Sprachauswahl und Fehler für Outlook Web App](http://technet.microsoft.com/en-us/library/ee633483%28v=exchg.150%29.aspx)
 
 Ihre Organisation kann Mail-Apps auf einem internen Server installieren, um den Zugriff auf autorisierte Benutzer zu beschränken; alternativ können Sie und andere Mail-App-Entwickler Mail-Apps im [Office Store](http://office.microsoft.com/store/) zum allgemeinen Verkauf veröffentlichen. Jeder Benutzer, auf dessen Gerät Outlook ausgeführt wird, kann Mail-Apps aus dem Marketplace herunterladen und diese installieren und verwenden.
 
-Weitere Informationen zum Erstellen von Mail-Apps finden Sie in der [Dokumentation zu Outlook-Add-Ins](/outlook/add-ins/index.md) oder im Beispiel zum [Durchführen einer EWS-Anforderung](http://code.msdn.microsoft.com/exchange/Mail-apps-for-Outlook-Make-770b2528).
+Weitere Informationen zum Erstellen von Mail-Apps finden Sie in der [Dokumentation zu Outlook-Add-Ins](/outlook/add-ins) oder im Beispiel zum [Durchführen einer EWS-Anforderung](http://code.msdn.microsoft.com/exchange/Mail-apps-for-Outlook-Make-770b2528).
 
 ## <a name="ews-and-outlook-add-ins"></a>EWS und Outlook-Add-Ins
 
@@ -54,7 +54,7 @@ Wie jede andere Anwendung benötigt eine Mail-App Berechtigungen. Der Administra
 
 - [Gewähren von EWS-Zugriff](controlling-client-application-access-to-ews-in-exchange.md) für die Mail-App-Benutzer
 
-- [Festlegen von "OAuthAuthentication" auf "True"](http://technet.microsoft.com/de-DE/library/aa997233%28v=exchg.150%29.aspx) im EWS-Verzeichnis des Clientzugriffsservers
+- [Festlegen von "OAuthAuthentication" auf "True"](http://technet.microsoft.com/en-us/library/aa997233%28v=exchg.150%29.aspx) im EWS-Verzeichnis des Clientzugriffsservers
 
 Sie müssen außerdem sicherstellen, dass Ihre App die Lesen/Schreiben-Berechtigung für das Postfach im Apps für Office-[Berechtigungsmodell](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md) anfordert.
 
@@ -79,15 +79,15 @@ Das Dienstrückruftoken ist ein nicht transparentes Token, das der Drittanbieter
 
 - [Methode Mailbox.makeEwsRequestAsync (JavaScript-API für Office)](http://msdn.microsoft.com/library/2ec380e0-4a67-4146-92a6-6a39f65dc6f2%28Office.15%29.aspx)
 
-- [Outlook-Add-Ins](https://docs.microsoft.com/de-DE/outlook/add-ins/)
+- [Outlook-Add-Ins](https://docs.microsoft.com/outlook/add-ins)
 
 - [Methode Mailbox.getUserIdentityTokenAsync (JavaScript-API für Office)](http://msdn.microsoft.com/library/c658518b-6867-41a0-99cf-810303e4c539%28Office.15%29.aspx)
 
 - [Authentifizieren eines Outlook-Add-Ins mithilfe von Exchange-Identitätstoken](http://msdn.microsoft.com/library/c0520a1e-d9ba-495a-a99f-6816d7d2a23e%28Office.15%29.aspx)
 
-- [Grundlegendes zu Berechtigungen bei Outlook-Add-Ins](https://docs.microsoft.com/de-DE/outlook/add-ins/understanding-outlook-add-in-permissions)
+- [Grundlegendes zu Berechtigungen bei Outlook-Add-Ins](https://docs.microsoft.com/en-us/outlook/add-ins/understanding-outlook-add-in-permissions)
 
-- [Set-WebServicesVirtualDirectory](http://technet.microsoft.com/de-DE/library/aa997233%28v=exchg.150%29.aspx)
+- [Set-WebServicesVirtualDirectory](http://technet.microsoft.com/en-us/library/aa997233%28v=exchg.150%29.aspx)
 
 - [Outlook-Add-Ins: Stellen einer EWS-Anforderung](http://code.msdn.microsoft.com/office/Mail-apps-for-Outlook-Make-770b2528)
 
