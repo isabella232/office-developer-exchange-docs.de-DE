@@ -6,16 +6,16 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: ef3ef966-b24b-4f38-816f-0a10bed0103e
-description: Der Vorgang GetOrganizationRelationshipSetting Ruft die Einstellungen aus alle übereinstimmenden OrganizationRelationships mit mindestens eine Domäne in der DomainNames-Eigenschaft, die mindestens einem zugeordnet ist, die im Token EmailAddress beanspruchen. Der GetOrganizationRelationshipSetting Vorgang ist nur zur internen Verwendung. Dieser Vorgang wird nicht von Clients verwendet.
-ms.openlocfilehash: 7bd716822b33698c7055058f39af44d05ba4700b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Mit dem GetOrganizationRelationshipSetting-Vorgang werden die Einstellungen aus allen übereinstimmenden OrganizationRelationships abgerufen, die mindestens eine Domäne in der Domainnamen-Eigenschaft aufweisen, die mindestens einem e-maile-webanspruch im Token zugeordnet ist. Der GetOrganizationRelationshipSetting-Vorgang ist nur für die interne Verwendung. Dieser Vorgang wird von Clients nicht verwendet.
+ms.openlocfilehash: bf3a249b1380f60dced985acbfae5a6aa0e8ac8a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758744"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44452748"
 ---
-# <a name="getorganizationrelationshipsettings-operation-soap"></a><span data-ttu-id="afc87-105">GetOrganizationRelationshipSettings-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="afc87-105">GetOrganizationRelationshipSettings operation (SOAP)</span></span>
+# <a name="getorganizationrelationshipsettings-operation-soap"></a><span data-ttu-id="f3a71-105">GetOrganizationRelationshipSettings-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f3a71-105">GetOrganizationRelationshipSettings operation (SOAP)</span></span>
 
-<span data-ttu-id="afc87-106">Der Vorgang **GetOrganizationRelationshipSetting** Ruft die Einstellungen aus alle übereinstimmenden OrganizationRelationships mit mindestens eine Domäne in der **DomainNames** -Eigenschaft, die in mindestens in einem **EmailAddress** Forderung zugeordnet die Token.</span><span class="sxs-lookup"><span data-stu-id="afc87-106">The **GetOrganizationRelationshipSetting** operation retrieves the settings from all matching OrganizationRelationships that have at least one domain in the **DomainNames** property that maps to at least to one **EmailAddress** claim in the token.</span></span> <span data-ttu-id="afc87-107">Der **GetOrganizationRelationshipSetting** Vorgang ist nur zur internen Verwendung.</span><span class="sxs-lookup"><span data-stu-id="afc87-107">The **GetOrganizationRelationshipSetting** operation is for internal use only.</span></span> <span data-ttu-id="afc87-108">Dieser Vorgang wird nicht von Clients verwendet.</span><span class="sxs-lookup"><span data-stu-id="afc87-108">This operation is not used by clients.</span></span> 
+<span data-ttu-id="f3a71-106">Mit dem **GetOrganizationRelationshipSetting** -Vorgang werden die Einstellungen aus allen übereinstimmenden OrganizationRelationships abgerufen, die mindestens eine Domäne in der **Domainnamen** -Eigenschaft aufweisen, die mindestens einem e-maile- **webanspruch im** Token zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="f3a71-106">The **GetOrganizationRelationshipSetting** operation retrieves the settings from all matching OrganizationRelationships that have at least one domain in the **DomainNames** property that maps to at least to one **EmailAddress** claim in the token.</span></span> <span data-ttu-id="f3a71-107">Der **GetOrganizationRelationshipSetting** -Vorgang ist nur für die interne Verwendung.</span><span class="sxs-lookup"><span data-stu-id="f3a71-107">The **GetOrganizationRelationshipSetting** operation is for internal use only.</span></span> <span data-ttu-id="f3a71-108">Dieser Vorgang wird von Clients nicht verwendet.</span><span class="sxs-lookup"><span data-stu-id="f3a71-108">This operation is not used by clients.</span></span> 
   
 

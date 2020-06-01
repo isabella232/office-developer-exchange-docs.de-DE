@@ -11,34 +11,34 @@ api_name:
 api_type:
 - schema
 ms.assetid: 93e44690-be2d-4fdb-96a8-4ded3c193aed
-description: Der Vorgang DeleteUserConfiguration Löscht eine Benutzer-Konfigurationsobjekt für einen Ordner.
-ms.openlocfilehash: 033134a7e16aa8e7a3d6b928141012b646863a68
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der DeleteUserConfiguration-Vorgang löscht ein Benutzer Konfigurationsobjekt für einen Ordner.
+ms.openlocfilehash: 064e1ace2c2f51783431ce42670b2a4fd8146b54
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757933"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44451467"
 ---
-# <a name="deleteuserconfiguration-operation"></a><span data-ttu-id="aa2df-103">DeleteUserConfiguration-Vorgang</span><span class="sxs-lookup"><span data-stu-id="aa2df-103">DeleteUserConfiguration operation</span></span>
+# <a name="deleteuserconfiguration-operation"></a><span data-ttu-id="176ed-103">DeleteUserConfiguration-Vorgang</span><span class="sxs-lookup"><span data-stu-id="176ed-103">DeleteUserConfiguration operation</span></span>
 
-<span data-ttu-id="aa2df-104">Der Vorgang **DeleteUserConfiguration** Löscht eine Benutzer-Konfigurationsobjekt für einen Ordner.</span><span class="sxs-lookup"><span data-stu-id="aa2df-104">The **DeleteUserConfiguration** operation deletes a user configuration object on a folder.</span></span> 
+<span data-ttu-id="176ed-104">Der **DeleteUserConfiguration** -Vorgang löscht ein Benutzer Konfigurationsobjekt für einen Ordner.</span><span class="sxs-lookup"><span data-stu-id="176ed-104">The **DeleteUserConfiguration** operation deletes a user configuration object on a folder.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="aa2df-105">Der Vorgang **DeleteUserConfiguration** wird ein Ereignis für das Ereignis Benachrichtigungssystem ausgelöst.</span><span class="sxs-lookup"><span data-stu-id="aa2df-105">The **DeleteUserConfiguration** operation will trigger a move event for the event notification system.</span></span> <span data-ttu-id="aa2df-106">Das Benutzerobjekt Konfiguration wird verschoben werden, um die Dumpster.</span><span class="sxs-lookup"><span data-stu-id="aa2df-106">The user configuration object will be moved to the dumpster.</span></span> 
+> <span data-ttu-id="176ed-105">Durch den **DeleteUserConfiguration** -Vorgang wird ein Verschiebe Ereignis für das Ereignis Benachrichtigungssystem ausgelöst.</span><span class="sxs-lookup"><span data-stu-id="176ed-105">The **DeleteUserConfiguration** operation will trigger a move event for the event notification system.</span></span> <span data-ttu-id="176ed-106">Das Benutzer Konfigurationsobjekt wird in den Papierkorb verschoben.</span><span class="sxs-lookup"><span data-stu-id="176ed-106">The user configuration object will be moved to the dumpster.</span></span> 
   
-## <a name="deleteuserconfiguration-request-example"></a><span data-ttu-id="aa2df-107">Anforderungsbeispiel DeleteUserConfiguration</span><span class="sxs-lookup"><span data-stu-id="aa2df-107">DeleteUserConfiguration request example</span></span>
+## <a name="deleteuserconfiguration-request-example"></a><span data-ttu-id="176ed-107">DeleteUserConfiguration-Anforderungs Beispiel</span><span class="sxs-lookup"><span data-stu-id="176ed-107">DeleteUserConfiguration request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="aa2df-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="aa2df-108">Description</span></span>
+### <a name="description"></a><span data-ttu-id="176ed-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="176ed-108">Description</span></span>
 
-<span data-ttu-id="aa2df-109">Im folgenden Beispiel wird eine Anforderung **DeleteUserConfiguration** veranschaulicht eine Anforderung zum Löschen einer Benutzer-Konfigurationsobjekt auf den Ordner "Entwürfe" bilden.</span><span class="sxs-lookup"><span data-stu-id="aa2df-109">The following example of a **DeleteUserConfiguration** request shows how to form a request to delete a user configuration object on the Drafts folder.</span></span> 
+<span data-ttu-id="176ed-109">Im folgenden Beispiel einer **DeleteUserConfiguration** -Anforderung wird gezeigt, wie Sie eine Anforderung zum Löschen eines Benutzer Konfigurationsobjekts im Ordner "Entwürfe" bilden.</span><span class="sxs-lookup"><span data-stu-id="176ed-109">The following example of a **DeleteUserConfiguration** request shows how to form a request to delete a user configuration object on the Drafts folder.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="aa2df-110">Code</span><span class="sxs-lookup"><span data-stu-id="aa2df-110">Code</span></span>
+### <a name="code"></a><span data-ttu-id="176ed-110">Code</span><span class="sxs-lookup"><span data-stu-id="176ed-110">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
@@ -54,13 +54,13 @@ ms.locfileid: "19757933"
 </soap:Envelope>
 ```
 
-## <a name="deleteuserconfiguration-response-example"></a><span data-ttu-id="aa2df-111">DeleteUserConfiguration antwortbeispiel</span><span class="sxs-lookup"><span data-stu-id="aa2df-111">DeleteUserConfiguration response example</span></span>
+## <a name="deleteuserconfiguration-response-example"></a><span data-ttu-id="176ed-111">DeleteUserConfiguration-Antwortbeispiel</span><span class="sxs-lookup"><span data-stu-id="176ed-111">DeleteUserConfiguration response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="aa2df-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="aa2df-112">Description</span></span>
+### <a name="description"></a><span data-ttu-id="176ed-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="176ed-112">Description</span></span>
 
-<span data-ttu-id="aa2df-113">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **DeleteUserConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="aa2df-113">The following example shows a successful response to the **DeleteUserConfiguration** request.</span></span> 
+<span data-ttu-id="176ed-113">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **DeleteUserConfiguration** -Anforderung.</span><span class="sxs-lookup"><span data-stu-id="176ed-113">The following example shows a successful response to the **DeleteUserConfiguration** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="aa2df-114">Code</span><span class="sxs-lookup"><span data-stu-id="aa2df-114">Code</span></span>
+### <a name="code"></a><span data-ttu-id="176ed-114">Code</span><span class="sxs-lookup"><span data-stu-id="176ed-114">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -71,15 +71,15 @@ ms.locfileid: "19757933"
                          MajorBuildNumber="639" 
                          MinorBuildNumber="20" 
                          Version="Exchange2010" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:DeleteUserConfigurationResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:DeleteUserConfigurationResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:DeleteUserConfigurationResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -90,8 +90,8 @@ ms.locfileid: "19757933"
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="aa2df-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="aa2df-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="176ed-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="176ed-115">See also</span></span>
 
-- [<span data-ttu-id="aa2df-116">EWS-Operationen in Exchange</span><span class="sxs-lookup"><span data-stu-id="aa2df-116">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md) 
-- [<span data-ttu-id="aa2df-117">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="aa2df-117">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="176ed-116">EWS-Operationen in Exchange</span><span class="sxs-lookup"><span data-stu-id="176ed-116">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md) 
+- [<span data-ttu-id="176ed-117">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="176ed-117">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
