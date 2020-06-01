@@ -1,5 +1,5 @@
 ---
-title: SharePointUrl (MasterMailboxType)
+title: SharePointUrl (Master Mailbox Type)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,38 +7,38 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2c0e86ed-8156-48de-9b22-c627db273e1e
-description: Das Element SharePointUrl (MasterMailboxType) ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: 6f919b21bf43a94b318da5b6a56d5df5db5338c2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SharePointUrl (Master Mailbox Type)-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: a4c9f83c8717f9f96293faf3fbc944bad693fe7a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831479"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458614"
 ---
-# <a name="sharepointurl-mastermailboxtype"></a><span data-ttu-id="6dd06-103">SharePointUrl (MasterMailboxType)</span><span class="sxs-lookup"><span data-stu-id="6dd06-103">SharePointUrl (MasterMailboxType)</span></span>
+# <a name="sharepointurl-mastermailboxtype"></a><span data-ttu-id="cd19e-103">SharePointUrl (Master Mailbox Type)</span><span class="sxs-lookup"><span data-stu-id="cd19e-103">SharePointUrl (MasterMailboxType)</span></span>
 
-<span data-ttu-id="6dd06-104">Das Element **SharePointUrl (MasterMailboxType)** ist nur zur internen Verwendung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="6dd06-104">The **SharePointUrl (MasterMailboxType)** element is intended for internal use only.</span></span> 
+<span data-ttu-id="cd19e-104">Das **SharePointUrl (Master Mailbox Type)-** Element ist nur für die interne Verwendung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="cd19e-104">The **SharePointUrl (MasterMailboxType)** element is intended for internal use only.</span></span> 
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="6dd06-105">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="6dd06-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="cd19e-105">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="cd19e-105">Attributes and elements</span></span>
 
-<span data-ttu-id="6dd06-106">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="6dd06-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="cd19e-106">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="cd19e-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="6dd06-107">Attribute</span><span class="sxs-lookup"><span data-stu-id="6dd06-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="cd19e-107">Attribute</span><span class="sxs-lookup"><span data-stu-id="cd19e-107">Attributes</span></span>
 
-<span data-ttu-id="6dd06-108">Keine.</span><span class="sxs-lookup"><span data-stu-id="6dd06-108">None.</span></span>
+<span data-ttu-id="cd19e-108">Keine.</span><span class="sxs-lookup"><span data-stu-id="cd19e-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="6dd06-109">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="6dd06-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="cd19e-109">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="cd19e-109">Child elements</span></span>
 
-<span data-ttu-id="6dd06-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="6dd06-110">None.</span></span>
+<span data-ttu-id="cd19e-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="cd19e-110">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="6dd06-111">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="6dd06-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="cd19e-111">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="cd19e-111">Parent elements</span></span>
 
-<span data-ttu-id="6dd06-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="6dd06-112">None.</span></span>
+<span data-ttu-id="cd19e-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="cd19e-112">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="6dd06-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="6dd06-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cd19e-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="cd19e-113">Remarks</span></span>
 
-<span data-ttu-id="6dd06-114">Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="6dd06-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="cd19e-114">Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="cd19e-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
   
-<span data-ttu-id="6dd06-115">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="6dd06-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="cd19e-115">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="cd19e-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
 

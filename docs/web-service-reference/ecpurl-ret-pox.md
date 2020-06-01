@@ -6,61 +6,61 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5f090fd2-b0c4-4ca0-a959-1433d73a2069
-description: Das Element EcpUrl ret gibt eine partielle URL, die kombiniert werden kann, mit dem EcpUrl (POX) Elementwert generiert eine URL, die Einstellungen für einen e-Mail-aktivierten Benutzer Zugriff auf verwendet werden können.
-ms.openlocfilehash: 366a7a79c0f3c19b2cfef21c01826e62b0e95793
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EcpUrl-ret-Element gibt eine partielle URL an, die mit dem Wert des EcpUrl (POX)-Elements kombiniert werden kann, um eine URL zu generieren, die für den Zugriff auf Aufbewahrungstags Einstellungen für einen e-Mail-aktivierten Benutzer verwendet werden kann.
+ms.openlocfilehash: 1f6878dc58bb01fca6a56fdd645efd3363a3d442
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758133"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458691"
 ---
-# <a name="ecpurl-ret-pox"></a><span data-ttu-id="f1009-103">EcpUrl-ret (POX)</span><span class="sxs-lookup"><span data-stu-id="f1009-103">EcpUrl-ret (POX)</span></span>
+# <a name="ecpurl-ret-pox"></a><span data-ttu-id="54fda-103">EcpUrl-ret (POX)</span><span class="sxs-lookup"><span data-stu-id="54fda-103">EcpUrl-ret (POX)</span></span>
 
-<span data-ttu-id="f1009-104">Das Element **EcpUrl ret** gibt eine partielle URL, die kombiniert werden kann, mit dem [EcpUrl (POX)](ecpurl-pox.md) Elementwert generiert eine URL, die Einstellungen für einen e-Mail-aktivierten Benutzer Zugriff auf verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="f1009-104">The **EcpUrl-ret** element specifies a partial URL that can be combined with the [EcpUrl (POX)](ecpurl-pox.md) element's value to generate a URL that can be used to access retention tag settings for a mail-enabled user.</span></span> 
+<span data-ttu-id="54fda-104">Das **EcpUrl-ret-** Element gibt eine partielle URL an, die mit dem Wert des [EcpUrl (POX)](ecpurl-pox.md) -Elements kombiniert werden kann, um eine URL zu generieren, die für den Zugriff auf Aufbewahrungstags Einstellungen für einen e-Mail-aktivierten Benutzer verwendet werden kann.</span><span class="sxs-lookup"><span data-stu-id="54fda-104">The **EcpUrl-ret** element specifies a partial URL that can be combined with the [EcpUrl (POX)](ecpurl-pox.md) element's value to generate a URL that can be used to access retention tag settings for a mail-enabled user.</span></span> 
   
-[<span data-ttu-id="f1009-105">AutoErmittlung (POX)</span><span class="sxs-lookup"><span data-stu-id="f1009-105">AutoDiscover (POX)</span></span>](autodiscover-pox.md)
+[<span data-ttu-id="54fda-105">AutoErmittlung (POX)</span><span class="sxs-lookup"><span data-stu-id="54fda-105">AutoDiscover (POX)</span></span>](autodiscover-pox.md)
   
-[<span data-ttu-id="f1009-106">Response (POX)</span><span class="sxs-lookup"><span data-stu-id="f1009-106">Response (POX)</span></span>](response-pox.md)
+[<span data-ttu-id="54fda-106">Response (POX)</span><span class="sxs-lookup"><span data-stu-id="54fda-106">Response (POX)</span></span>](response-pox.md)
   
-[<span data-ttu-id="f1009-107">Konto (POX)</span><span class="sxs-lookup"><span data-stu-id="f1009-107">Account (POX)</span></span>](account-pox.md)
+[<span data-ttu-id="54fda-107">Konto (POX)</span><span class="sxs-lookup"><span data-stu-id="54fda-107">Account (POX)</span></span>](account-pox.md)
   
-[<span data-ttu-id="f1009-108">Protokoll (POX)</span><span class="sxs-lookup"><span data-stu-id="f1009-108">Protocol (POX)</span></span>](protocol-pox.md)
+[<span data-ttu-id="54fda-108">Protokoll (POX)</span><span class="sxs-lookup"><span data-stu-id="54fda-108">Protocol (POX)</span></span>](protocol-pox.md)
   
-[<span data-ttu-id="f1009-109">EcpUrl-ret (POX)</span><span class="sxs-lookup"><span data-stu-id="f1009-109">EcpUrl-ret (POX)</span></span>](ecpurl-ret-pox.md)
+[<span data-ttu-id="54fda-109">EcpUrl-ret (POX)</span><span class="sxs-lookup"><span data-stu-id="54fda-109">EcpUrl-ret (POX)</span></span>](ecpurl-ret-pox.md)
   
 ```XML
 <EcpUrl-ret/>
 ```
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="f1009-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="f1009-110">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="54fda-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="54fda-110">Attributes and elements</span></span>
 
-<span data-ttu-id="f1009-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="f1009-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="54fda-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="54fda-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="f1009-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="f1009-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="54fda-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="54fda-112">Attributes</span></span>
 
-<span data-ttu-id="f1009-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="f1009-113">None.</span></span>
+<span data-ttu-id="54fda-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="54fda-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="f1009-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f1009-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="54fda-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="54fda-114">Child elements</span></span>
 
-<span data-ttu-id="f1009-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="f1009-115">None.</span></span>
+<span data-ttu-id="54fda-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="54fda-115">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="f1009-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f1009-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="54fda-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="54fda-116">Parent elements</span></span>
 
-|<span data-ttu-id="f1009-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="f1009-117">**Element**</span></span>|<span data-ttu-id="f1009-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f1009-118">**Description**</span></span>|
+|<span data-ttu-id="54fda-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="54fda-117">**Element**</span></span>|<span data-ttu-id="54fda-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="54fda-118">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="f1009-119">Protokoll (POX)</span><span class="sxs-lookup"><span data-stu-id="f1009-119">Protocol (POX)</span></span>](protocol-pox.md) <br/> |<span data-ttu-id="f1009-120">Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.</span><span class="sxs-lookup"><span data-stu-id="f1009-120">Contains the specifications for connecting a client to the computer that is running Microsoft Exchange Server that has the Client Access server role installed.</span></span>  <br/> |
+|[<span data-ttu-id="54fda-119">Protokoll (POX)</span><span class="sxs-lookup"><span data-stu-id="54fda-119">Protocol (POX)</span></span>](protocol-pox.md) <br/> |<span data-ttu-id="54fda-120">Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.</span><span class="sxs-lookup"><span data-stu-id="54fda-120">Contains the specifications for connecting a client to the computer that is running Microsoft Exchange Server that has the Client Access server role installed.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="f1009-121">Textwert</span><span class="sxs-lookup"><span data-stu-id="f1009-121">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="54fda-121">Textwert</span><span class="sxs-lookup"><span data-stu-id="54fda-121">Text value</span></span>
 
-<span data-ttu-id="f1009-122">Der Textwert stellt eine partielle URL, die kombiniert werden kann, mit dem [EcpUrl (POX)](ecpurl-pox.md) Elementwert generiert eine URL, die Einstellungen für den Benutzer Zugriff auf verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="f1009-122">The text value represents a partial URL that can be combined with the [EcpUrl (POX)](ecpurl-pox.md) element's value to generate a URL that can be used to access retention tag settings for the user.</span></span> 
+<span data-ttu-id="54fda-122">Der Textwert stellt eine partielle URL dar, die mit dem [EcpUrl (POX)](ecpurl-pox.md) -Elementwert kombiniert werden kann, um eine URL zu generieren, die für den Zugriff auf Aufbewahrungstags Einstellungen für den Benutzer verwendet werden kann.</span><span class="sxs-lookup"><span data-stu-id="54fda-122">The text value represents a partial URL that can be combined with the [EcpUrl (POX)](ecpurl-pox.md) element's value to generate a URL that can be used to access retention tag settings for the user.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="f1009-123">Hinweise</span><span class="sxs-lookup"><span data-stu-id="f1009-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="54fda-123">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="54fda-123">Remarks</span></span>
 
-<span data-ttu-id="f1009-124">Das **EcpUrl ret** -Element ist ein optionales untergeordnetes Element des **Protokoll** -Elements.</span><span class="sxs-lookup"><span data-stu-id="f1009-124">The **EcpUrl-ret** element is an optional child element of the **Protocol** element.</span></span> 
+<span data-ttu-id="54fda-124">Das **EcpUrl-ret-** Element ist ein optionales untergeordnetes Element des **Protocol** -Elements.</span><span class="sxs-lookup"><span data-stu-id="54fda-124">The **EcpUrl-ret** element is an optional child element of the **Protocol** element.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="f1009-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f1009-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="54fda-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="54fda-125">See also</span></span>
 
 
 
-[<span data-ttu-id="f1009-126">POX Autodiscover XML-Elemente für Exchange</span><span class="sxs-lookup"><span data-stu-id="f1009-126">POX Autodiscover XML elements for Exchange</span></span>](pox-autodiscover-xml-elements-for-exchange.md)
+[<span data-ttu-id="54fda-126">POX Autodiscover XML-Elemente für Exchange</span><span class="sxs-lookup"><span data-stu-id="54fda-126">POX Autodiscover XML elements for Exchange</span></span>](pox-autodiscover-xml-elements-for-exchange.md)
 

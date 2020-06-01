@@ -11,64 +11,64 @@ api_name:
 api_type:
 - schema
 ms.assetid: db28dbcb-d051-4e5c-a9c2-4b8d5149b4e1
-description: Das ShowExternalRecipientCount-Element gibt an, ob Consumer des Vorgangs GetMailTips müssen e-Mail-Infos anzeigen, die die Anzahl der externe Empfänger angeben, zu denen eine Nachricht adressiert ist.
-ms.openlocfilehash: 1fd3ceb629689c560dc60afe01f0413602f79a0d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ShowExternalRecipientCount-Element gibt an, ob Consumer des GetMailTips-Vorgangs e-Mail-Tipps anzeigen müssen, die die Anzahl der externen Empfänger angeben, an die eine Nachricht adressiert wird.
+ms.openlocfilehash: fc32e5c4a95f0e33b5532af9c77d31bd6446e641
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831491"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460470"
 ---
-# <a name="showexternalrecipientcount"></a><span data-ttu-id="47301-103">ShowExternalRecipientCount</span><span class="sxs-lookup"><span data-stu-id="47301-103">ShowExternalRecipientCount</span></span>
+# <a name="showexternalrecipientcount"></a><span data-ttu-id="cc62f-103">ShowExternalRecipientCount</span><span class="sxs-lookup"><span data-stu-id="cc62f-103">ShowExternalRecipientCount</span></span>
 
-<span data-ttu-id="47301-104">Das **ShowExternalRecipientCount** -Element gibt an, ob Consumer der [GetMailTips Vorgang](getmailtips-operation.md) müssen e-Mail-Infos anzeigen, die die Anzahl der externe Empfänger angeben, zu denen eine Nachricht adressiert ist.</span><span class="sxs-lookup"><span data-stu-id="47301-104">The **ShowExternalRecipientCount** element indicates whether consumers of the [GetMailTips operation](getmailtips-operation.md) have to show mail tips that indicate the number of external recipients to which a message is addressed.</span></span> 
+<span data-ttu-id="cc62f-104">Das **ShowExternalRecipientCount** -Element gibt an, ob Consumer des [GetMailTips-Vorgangs](getmailtips-operation.md) e-Mail-Tipps anzeigen müssen, die die Anzahl der externen Empfänger angeben, an die eine Nachricht adressiert wird.</span><span class="sxs-lookup"><span data-stu-id="cc62f-104">The **ShowExternalRecipientCount** element indicates whether consumers of the [GetMailTips operation](getmailtips-operation.md) have to show mail tips that indicate the number of external recipients to which a message is addressed.</span></span> 
   
 ```XML
 <ShowExternalRecipientCount>true | false</ShowExternalRecipientCount>
 ```
 
- <span data-ttu-id="47301-105">**Boolean**</span><span class="sxs-lookup"><span data-stu-id="47301-105">**Boolean**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="47301-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="47301-106">Attributes and elements</span></span>
+ <span data-ttu-id="cc62f-105">**Boolescher Wert**</span><span class="sxs-lookup"><span data-stu-id="cc62f-105">**Boolean**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="cc62f-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="cc62f-106">Attributes and elements</span></span>
 
-<span data-ttu-id="47301-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="47301-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="cc62f-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="cc62f-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="47301-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="47301-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="cc62f-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="cc62f-108">Attributes</span></span>
 
-<span data-ttu-id="47301-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="47301-109">None.</span></span>
+<span data-ttu-id="cc62f-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="cc62f-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="47301-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="47301-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="cc62f-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="cc62f-110">Child elements</span></span>
 
-<span data-ttu-id="47301-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="47301-111">None.</span></span>
+<span data-ttu-id="cc62f-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="cc62f-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="47301-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="47301-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="cc62f-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="cc62f-112">Parent elements</span></span>
 
-|<span data-ttu-id="47301-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="47301-113">**Element**</span></span>|<span data-ttu-id="47301-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="47301-114">**Description**</span></span>|
+|<span data-ttu-id="cc62f-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="cc62f-113">**Element**</span></span>|<span data-ttu-id="cc62f-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="cc62f-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="47301-115">MailTipsConfiguration (MailTipsServiceConfiguration)</span><span class="sxs-lookup"><span data-stu-id="47301-115">MailTipsConfiguration (MailTipsServiceConfiguration)</span></span>](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |<span data-ttu-id="47301-116">Enthält Konfigurationsinformationen für den e-Mail-Dienst Tipps Service.</span><span class="sxs-lookup"><span data-stu-id="47301-116">Contains service configuration information for the mail tips service.</span></span>  <br/> |
+|[<span data-ttu-id="cc62f-115">MailTipsConfiguration (MailTipsServiceConfiguration)</span><span class="sxs-lookup"><span data-stu-id="cc62f-115">MailTipsConfiguration (MailTipsServiceConfiguration)</span></span>](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |<span data-ttu-id="cc62f-116">Enthält Dienstkonfigurationsinformationen für den e-Mail-Spitzen Dienst.</span><span class="sxs-lookup"><span data-stu-id="cc62f-116">Contains service configuration information for the mail tips service.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="47301-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="47301-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="cc62f-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="cc62f-117">Text value</span></span>
 
-<span data-ttu-id="47301-118">Der Textwert der dieses Element ist **true** , wenn die Consumer der [GetMailTips Vorgang](getmailtips-operation.md) müssen e-Mail-Infos anzeigen, die die Anzahl der externe Empfänger angeben, zu denen eine Nachricht adressiert ist.</span><span class="sxs-lookup"><span data-stu-id="47301-118">The text value of this element is **true** if consumers of the [GetMailTips operation](getmailtips-operation.md) have to show mail tips that indicate the number of external recipients to which a message is addressed.</span></span> <span data-ttu-id="47301-119">Der Wert ist **false** , wenn Consumer der [GetMailTips Vorgang](getmailtips-operation.md) keinen e-Mail-Infos anzeigen, die die Anzahl der externe Empfänger angeben, zu denen eine Nachricht adressiert ist.</span><span class="sxs-lookup"><span data-stu-id="47301-119">The value is **false** if consumers of the [GetMailTips operation](getmailtips-operation.md) do not have to show mail tips that indicate the number of external recipients to which a message is addressed.</span></span> 
+<span data-ttu-id="cc62f-118">Der Textwert dieses Elements ist **true** , wenn Consumer des [GetMailTips-Vorgangs](getmailtips-operation.md) e-Mail-Tipps anzeigen müssen, die die Anzahl der externen Empfänger angeben, an die eine Nachricht adressiert wird.</span><span class="sxs-lookup"><span data-stu-id="cc62f-118">The text value of this element is **true** if consumers of the [GetMailTips operation](getmailtips-operation.md) have to show mail tips that indicate the number of external recipients to which a message is addressed.</span></span> <span data-ttu-id="cc62f-119">Der Wert ist **false** , wenn Consumer des [GetMailTips-Vorgangs](getmailtips-operation.md) keine e-Mail-Tipps anzeigen müssen, die die Anzahl der externen Empfänger angeben, an die eine Nachricht adressiert wird.</span><span class="sxs-lookup"><span data-stu-id="cc62f-119">The value is **false** if consumers of the [GetMailTips operation](getmailtips-operation.md) do not have to show mail tips that indicate the number of external recipients to which a message is addressed.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="47301-120">Hinweise</span><span class="sxs-lookup"><span data-stu-id="47301-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cc62f-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="cc62f-120">Remarks</span></span>
 
-<span data-ttu-id="47301-121">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="47301-121">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="cc62f-121">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="cc62f-121">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="47301-122">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="47301-122">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="cc62f-122">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="cc62f-122">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="47301-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="47301-123">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="47301-124">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="47301-124">Schema Name</span></span>  <br/> |<span data-ttu-id="47301-125">Schematypen</span><span class="sxs-lookup"><span data-stu-id="47301-125">Types schema</span></span>  <br/> |
-|<span data-ttu-id="47301-126">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="47301-126">Validation File</span></span>  <br/> |<span data-ttu-id="47301-127">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="47301-127">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="47301-128">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="47301-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="47301-129">False</span><span class="sxs-lookup"><span data-stu-id="47301-129">False</span></span>  <br/> |
+|<span data-ttu-id="cc62f-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="cc62f-123">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="cc62f-124">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="cc62f-124">Schema Name</span></span>  <br/> |<span data-ttu-id="cc62f-125">Schematypen</span><span class="sxs-lookup"><span data-stu-id="cc62f-125">Types schema</span></span>  <br/> |
+|<span data-ttu-id="cc62f-126">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="cc62f-126">Validation File</span></span>  <br/> |<span data-ttu-id="cc62f-127">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="cc62f-127">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="cc62f-128">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="cc62f-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="cc62f-129">False</span><span class="sxs-lookup"><span data-stu-id="cc62f-129">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="47301-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="47301-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cc62f-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="cc62f-130">See also</span></span>
 
 
 
-[<span data-ttu-id="47301-131">GetMailTips-Vorgang</span><span class="sxs-lookup"><span data-stu-id="47301-131">GetMailTips operation</span></span>](getmailtips-operation.md)
+[<span data-ttu-id="cc62f-131">GetMailTips-Vorgang</span><span class="sxs-lookup"><span data-stu-id="cc62f-131">GetMailTips operation</span></span>](getmailtips-operation.md)
 
 
-- [<span data-ttu-id="47301-132">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="47301-132">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="cc62f-132">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="cc62f-132">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

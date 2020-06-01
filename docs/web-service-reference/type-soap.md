@@ -1,5 +1,5 @@
 ---
-title: Typ (SOAP)
+title: Type (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,59 +8,59 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: bf12f857-5a2e-48fc-83a5-096a44204fd8
-description: Das Type-Element stellt die alternative Postfachtyp.
-ms.openlocfilehash: 1aff509144492d369b2f4c71ace2972e6f0e96cf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Type-Element stellt den alternativen Postfachtyp dar.
+ms.openlocfilehash: b94ab77b384fbc0658678225d1116568a63c73c2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839275"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458894"
 ---
-# <a name="type-soap"></a><span data-ttu-id="f35c1-103">Typ (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f35c1-103">Type (SOAP)</span></span>
+# <a name="type-soap"></a><span data-ttu-id="1f94e-103">Type (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1f94e-103">Type (SOAP)</span></span>
 
-<span data-ttu-id="f35c1-104">Das **Type** -Element stellt die alternative Postfachtyp.</span><span class="sxs-lookup"><span data-stu-id="f35c1-104">The **Type** element represents the alternate mailbox type.</span></span> 
+<span data-ttu-id="1f94e-104">Das **Type** -Element stellt den alternativen Postfachtyp dar.</span><span class="sxs-lookup"><span data-stu-id="1f94e-104">The **Type** element represents the alternate mailbox type.</span></span> 
   
 ```XML
 <Type/>
 ```
 
- <span data-ttu-id="f35c1-105">**string**</span><span class="sxs-lookup"><span data-stu-id="f35c1-105">**string**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="f35c1-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="f35c1-106">Attributes and elements</span></span>
+ <span data-ttu-id="1f94e-105">**Zeichenfolge**</span><span class="sxs-lookup"><span data-stu-id="1f94e-105">**string**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="1f94e-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="1f94e-106">Attributes and elements</span></span>
 
-<span data-ttu-id="f35c1-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="f35c1-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="1f94e-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="1f94e-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="f35c1-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="f35c1-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="1f94e-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="1f94e-108">Attributes</span></span>
 
-<span data-ttu-id="f35c1-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="f35c1-109">None.</span></span>
+<span data-ttu-id="1f94e-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="1f94e-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="f35c1-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f35c1-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="1f94e-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1f94e-110">Child elements</span></span>
 
-<span data-ttu-id="f35c1-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="f35c1-111">None.</span></span>
+<span data-ttu-id="1f94e-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="1f94e-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="f35c1-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f35c1-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="1f94e-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1f94e-112">Parent elements</span></span>
 
-|<span data-ttu-id="f35c1-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="f35c1-113">**Element**</span></span>|<span data-ttu-id="f35c1-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f35c1-114">**Description**</span></span>|
+|<span data-ttu-id="1f94e-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="1f94e-113">**Element**</span></span>|<span data-ttu-id="1f94e-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="1f94e-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="f35c1-115">AlternateMailbox (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f35c1-115">AlternateMailbox (SOAP)</span></span>](alternatemailbox-soap.md) <br/> |<span data-ttu-id="f35c1-116">Stellt eine alternative Postfach an.</span><span class="sxs-lookup"><span data-stu-id="f35c1-116">Represents an alternate mailbox.</span></span>  <br/> |
+|[<span data-ttu-id="1f94e-115">AlternateMailbox (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1f94e-115">AlternateMailbox (SOAP)</span></span>](alternatemailbox-soap.md) <br/> |<span data-ttu-id="1f94e-116">Stellt ein alternatives Postfach dar.</span><span class="sxs-lookup"><span data-stu-id="1f94e-116">Represents an alternate mailbox.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="f35c1-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="f35c1-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="1f94e-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="1f94e-117">Text value</span></span>
 
-<span data-ttu-id="f35c1-118">Der Textwert der **Type** -Element wird der alternative Postfachtyp.</span><span class="sxs-lookup"><span data-stu-id="f35c1-118">The text value of the **Type** element is the alternate mailbox type.</span></span> 
+<span data-ttu-id="1f94e-118">Der Textwert des **Type** -Elements ist der Alternative Postfachtyp.</span><span class="sxs-lookup"><span data-stu-id="1f94e-118">The text value of the **Type** element is the alternate mailbox type.</span></span> 
   
-## <a name="element-information"></a><span data-ttu-id="f35c1-119">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="f35c1-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="1f94e-119">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="1f94e-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="f35c1-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="f35c1-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|<span data-ttu-id="f35c1-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="f35c1-121">Schema Name</span></span>  <br/> |<span data-ttu-id="f35c1-122">AutoErmittlung-schema</span><span class="sxs-lookup"><span data-stu-id="f35c1-122">Autodiscover schema</span></span>  <br/> |
-|<span data-ttu-id="f35c1-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="f35c1-123">Validation File</span></span>  <br/> |<span data-ttu-id="f35c1-124">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="f35c1-124">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="f35c1-125">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="f35c1-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="f35c1-126">True</span><span class="sxs-lookup"><span data-stu-id="f35c1-126">True</span></span>  <br/> |
+|<span data-ttu-id="1f94e-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="1f94e-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="1f94e-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="1f94e-121">Schema Name</span></span>  <br/> |<span data-ttu-id="1f94e-122">Auto Ermittlungs Schema</span><span class="sxs-lookup"><span data-stu-id="1f94e-122">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="1f94e-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="1f94e-123">Validation File</span></span>  <br/> |<span data-ttu-id="1f94e-124">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="1f94e-124">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="1f94e-125">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="1f94e-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="1f94e-126">True</span><span class="sxs-lookup"><span data-stu-id="1f94e-126">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="f35c1-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f35c1-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1f94e-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1f94e-127">See also</span></span>
 
 
 
-[<span data-ttu-id="f35c1-128">AutoErmittlung Webdienstverweis für Exchange</span><span class="sxs-lookup"><span data-stu-id="f35c1-128">Autodiscover web service reference for Exchange</span></span>](autodiscover-web-service-reference-for-exchange.md)
+[<span data-ttu-id="1f94e-128">AutoErmittlung Webdienstverweis für Exchange</span><span class="sxs-lookup"><span data-stu-id="1f94e-128">Autodiscover web service reference for Exchange</span></span>](autodiscover-web-service-reference-for-exchange.md)
   
-[<span data-ttu-id="f35c1-129">SOAP-Autodiscover XML-Elemente für Exchange 2013</span><span class="sxs-lookup"><span data-stu-id="f35c1-129">SOAP Autodiscover XML elements for Exchange 2013</span></span>](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[<span data-ttu-id="1f94e-129">XML-Elemente der SOAP-AutoErmittlung für Exchange 2013</span><span class="sxs-lookup"><span data-stu-id="1f94e-129">SOAP Autodiscover XML elements for Exchange 2013</span></span>](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

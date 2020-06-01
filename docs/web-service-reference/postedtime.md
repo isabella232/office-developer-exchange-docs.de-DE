@@ -1,5 +1,5 @@
 ---
-title: PostedTime
+title: Gebucht
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,61 +11,61 @@ api_name:
 api_type:
 - schema
 ms.assetid: e8b3813c-fc7e-4674-a4c6-6818c13d2bcf
-description: Das PostedTime-Element darstellt, die Zeit an, der ein PostItem-Objekt veröffentlicht wurde. Dieses Element ist schreibgeschützt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 8280fc26c534b280d0f30f663b6cc3a3958036c5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das gebuchte Time-Element stellt die Uhrzeit dar, zu der ein PostItem-Element bereitgestellt wurde. Dieses Element ist schreibgeschützt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: 5fc670bfee97a46700bc4442d489696a4489f88a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830860"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459195"
 ---
-# <a name="postedtime"></a><span data-ttu-id="9f7c1-105">PostedTime</span><span class="sxs-lookup"><span data-stu-id="9f7c1-105">PostedTime</span></span>
+# <a name="postedtime"></a><span data-ttu-id="494a3-105">Gebucht</span><span class="sxs-lookup"><span data-stu-id="494a3-105">PostedTime</span></span>
 
-<span data-ttu-id="9f7c1-106">Das **PostedTime** -Element darstellt, die Zeit an, der ein [PostItem-Objekt](postitem.md) veröffentlicht wurde.</span><span class="sxs-lookup"><span data-stu-id="9f7c1-106">The **PostedTime** element represents the time at which a [PostItem](postitem.md) was posted.</span></span> <span data-ttu-id="9f7c1-107">Dieses Element ist schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="9f7c1-107">This element is read-only.</span></span> <span data-ttu-id="9f7c1-108">Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="9f7c1-108">This element was introduced in Microsoft Exchange Server 2007 Service Pack 1 (SP1).</span></span> 
+<span data-ttu-id="494a3-106">Das **gebuchte** Time-Element stellt die Uhrzeit dar, zu der ein [PostItem](postitem.md) -Element bereitgestellt wurde.</span><span class="sxs-lookup"><span data-stu-id="494a3-106">The **PostedTime** element represents the time at which a [PostItem](postitem.md) was posted.</span></span> <span data-ttu-id="494a3-107">Dieses Element ist schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="494a3-107">This element is read-only.</span></span> <span data-ttu-id="494a3-108">Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="494a3-108">This element was introduced in Microsoft Exchange Server 2007 Service Pack 1 (SP1).</span></span> 
   
 ```xml
 <PostedTime/>
 ```
 
- <span data-ttu-id="9f7c1-109">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="9f7c1-109">**dateTime**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="9f7c1-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="9f7c1-110">Attributes and elements</span></span>
+ <span data-ttu-id="494a3-109">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="494a3-109">**dateTime**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="494a3-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="494a3-110">Attributes and elements</span></span>
 
-<span data-ttu-id="9f7c1-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="9f7c1-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="494a3-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="494a3-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="9f7c1-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="9f7c1-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="494a3-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="494a3-112">Attributes</span></span>
 
-<span data-ttu-id="9f7c1-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="9f7c1-113">None.</span></span>
+<span data-ttu-id="494a3-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="494a3-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="9f7c1-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="9f7c1-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="494a3-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="494a3-114">Child elements</span></span>
 
-<span data-ttu-id="9f7c1-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="9f7c1-115">None.</span></span>
+<span data-ttu-id="494a3-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="494a3-115">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="9f7c1-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="9f7c1-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="494a3-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="494a3-116">Parent elements</span></span>
 
-|<span data-ttu-id="9f7c1-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="9f7c1-117">**Element**</span></span>|<span data-ttu-id="9f7c1-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="9f7c1-118">**Description**</span></span>|
+|<span data-ttu-id="494a3-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="494a3-117">**Element**</span></span>|<span data-ttu-id="494a3-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="494a3-118">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="9f7c1-119">PostItem-Objekt</span><span class="sxs-lookup"><span data-stu-id="9f7c1-119">PostItem</span></span>](postitem.md) <br/> |<span data-ttu-id="9f7c1-120">Stellt ein PostItem-Objekt im Exchange-Speicher.</span><span class="sxs-lookup"><span data-stu-id="9f7c1-120">Represents a PostItem in the Exchange store.</span></span> <span data-ttu-id="9f7c1-121">Dieses Element wurde in Exchange 2007 SP1 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="9f7c1-121">This element was introduced in Exchange 2007 SP1.</span></span>  <br/> |
+|[<span data-ttu-id="494a3-119">PostItem</span><span class="sxs-lookup"><span data-stu-id="494a3-119">PostItem</span></span>](postitem.md) <br/> |<span data-ttu-id="494a3-120">Stellt ein PostItem im Exchange-Informationsspeicher dar.</span><span class="sxs-lookup"><span data-stu-id="494a3-120">Represents a PostItem in the Exchange store.</span></span> <span data-ttu-id="494a3-121">Dieses Element wurde in Exchange 2007 SP1 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="494a3-121">This element was introduced in Exchange 2007 SP1.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="9f7c1-122">Textwert</span><span class="sxs-lookup"><span data-stu-id="9f7c1-122">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="494a3-122">Textwert</span><span class="sxs-lookup"><span data-stu-id="494a3-122">Text value</span></span>
 
-<span data-ttu-id="9f7c1-123">Der Textwert ist einen datetime-Wert, der darstellt, wenn ein **PostItem-Objekt** veröffentlicht wurde.</span><span class="sxs-lookup"><span data-stu-id="9f7c1-123">The text value is a dateTime that represents when a **PostItem** was posted.</span></span> <span data-ttu-id="9f7c1-124">Diese Eigenschaft ist schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="9f7c1-124">This property is read-only.</span></span> 
+<span data-ttu-id="494a3-123">Der Textwert ist ein DateTime-Wert, der darstellt, wann ein **PostItem** gepostet wurde.</span><span class="sxs-lookup"><span data-stu-id="494a3-123">The text value is a dateTime that represents when a **PostItem** was posted.</span></span> <span data-ttu-id="494a3-124">Diese Eigenschaft ist schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="494a3-124">This property is read-only.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="9f7c1-125">Hinweise</span><span class="sxs-lookup"><span data-stu-id="9f7c1-125">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="494a3-125">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="494a3-125">Remarks</span></span>
 
-<span data-ttu-id="9f7c1-126">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="9f7c1-126">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="494a3-126">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="494a3-126">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="9f7c1-127">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="9f7c1-127">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="494a3-127">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="494a3-127">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="9f7c1-128">Namespace</span><span class="sxs-lookup"><span data-stu-id="9f7c1-128">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="9f7c1-129">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="9f7c1-129">Schema Name</span></span>  <br/> |<span data-ttu-id="9f7c1-130">Schematypen</span><span class="sxs-lookup"><span data-stu-id="9f7c1-130">Types schema</span></span>  <br/> |
-|<span data-ttu-id="9f7c1-131">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="9f7c1-131">Validation File</span></span>  <br/> |<span data-ttu-id="9f7c1-132">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="9f7c1-132">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="9f7c1-133">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="9f7c1-133">Can be Empty</span></span>  <br/> |<span data-ttu-id="9f7c1-134">False</span><span class="sxs-lookup"><span data-stu-id="9f7c1-134">False</span></span>  <br/> |
+|<span data-ttu-id="494a3-128">Namespace</span><span class="sxs-lookup"><span data-stu-id="494a3-128">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="494a3-129">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="494a3-129">Schema Name</span></span>  <br/> |<span data-ttu-id="494a3-130">Schematypen</span><span class="sxs-lookup"><span data-stu-id="494a3-130">Types schema</span></span>  <br/> |
+|<span data-ttu-id="494a3-131">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="494a3-131">Validation File</span></span>  <br/> |<span data-ttu-id="494a3-132">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="494a3-132">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="494a3-133">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="494a3-133">Can be Empty</span></span>  <br/> |<span data-ttu-id="494a3-134">False</span><span class="sxs-lookup"><span data-stu-id="494a3-134">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="9f7c1-135">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="9f7c1-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="494a3-135">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="494a3-135">See also</span></span>
 
 
 
-- [<span data-ttu-id="9f7c1-136">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="9f7c1-136">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="494a3-136">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="494a3-136">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

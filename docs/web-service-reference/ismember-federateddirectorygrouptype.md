@@ -7,38 +7,38 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8c610de4-3853-478f-860c-873c4c1bf6ca
-description: Das Element IsMember (FederatedDirectoryGroupType) ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: a605b2e3adaa51c3160743450f069c72e245a0d6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IsMember (FederatedDirectoryGroupType)-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 36140b5cb9a7d6ad4224ea357d376bcaae5b333a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830054"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459293"
 ---
-# <a name="ismember-federateddirectorygrouptype"></a><span data-ttu-id="9897a-103">IsMember (FederatedDirectoryGroupType)</span><span class="sxs-lookup"><span data-stu-id="9897a-103">IsMember (FederatedDirectoryGroupType)</span></span>
+# <a name="ismember-federateddirectorygrouptype"></a><span data-ttu-id="711da-103">IsMember (FederatedDirectoryGroupType)</span><span class="sxs-lookup"><span data-stu-id="711da-103">IsMember (FederatedDirectoryGroupType)</span></span>
 
-<span data-ttu-id="9897a-104">Das Element **IsMember (FederatedDirectoryGroupType)** ist nur zur internen Verwendung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="9897a-104">The **IsMember (FederatedDirectoryGroupType)** element is intended for internal use only.</span></span> 
+<span data-ttu-id="711da-104">Das **IsMember (FederatedDirectoryGroupType)-** Element ist nur für die interne Verwendung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="711da-104">The **IsMember (FederatedDirectoryGroupType)** element is intended for internal use only.</span></span> 
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="9897a-105">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="9897a-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="711da-105">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="711da-105">Attributes and elements</span></span>
 
-<span data-ttu-id="9897a-106">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="9897a-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="711da-106">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="711da-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="9897a-107">Attribute</span><span class="sxs-lookup"><span data-stu-id="9897a-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="711da-107">Attribute</span><span class="sxs-lookup"><span data-stu-id="711da-107">Attributes</span></span>
 
-<span data-ttu-id="9897a-108">Keine.</span><span class="sxs-lookup"><span data-stu-id="9897a-108">None.</span></span>
+<span data-ttu-id="711da-108">Keine.</span><span class="sxs-lookup"><span data-stu-id="711da-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="9897a-109">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="9897a-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="711da-109">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="711da-109">Child elements</span></span>
 
-<span data-ttu-id="9897a-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="9897a-110">None.</span></span>
+<span data-ttu-id="711da-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="711da-110">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="9897a-111">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="9897a-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="711da-111">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="711da-111">Parent elements</span></span>
 
-<span data-ttu-id="9897a-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="9897a-112">None.</span></span>
+<span data-ttu-id="711da-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="711da-112">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="9897a-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="9897a-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="711da-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="711da-113">Remarks</span></span>
 
-<span data-ttu-id="9897a-114">Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="9897a-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="711da-114">Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="711da-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
   
-<span data-ttu-id="9897a-115">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="9897a-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="711da-115">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="711da-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
 

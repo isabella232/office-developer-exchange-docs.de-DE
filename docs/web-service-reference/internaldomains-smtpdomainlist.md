@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0f2cbb05-338d-4302-8871-a06e78b33f98
-description: Das InternalDomains-Element identifiziert in der Liste von internen SMTP-Domänen der Organisation.
-ms.openlocfilehash: f37a31f4348a7eb0024656489f249dec349bc67b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das InternalDomains-Element gibt die Liste der internen SMTP-Domänen der Organisation an.
+ms.openlocfilehash: ec7ef2d72ae922c751f8f50b72ff7d6b31b212ca
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829953"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459966"
 ---
-# <a name="internaldomains-smtpdomainlist"></a><span data-ttu-id="1ec70-103">InternalDomains (SmtpDomainList)</span><span class="sxs-lookup"><span data-stu-id="1ec70-103">InternalDomains (SmtpDomainList)</span></span>
+# <a name="internaldomains-smtpdomainlist"></a><span data-ttu-id="752aa-103">InternalDomains (SmtpDomainList)</span><span class="sxs-lookup"><span data-stu-id="752aa-103">InternalDomains (SmtpDomainList)</span></span>
 
-<span data-ttu-id="1ec70-104">Das **InternalDomains** -Element identifiziert in der Liste von internen SMTP-Domänen der Organisation.</span><span class="sxs-lookup"><span data-stu-id="1ec70-104">The **InternalDomains** element identifies the list of internal SMTP domains of the organization.</span></span> 
+<span data-ttu-id="752aa-104">Das **InternalDomains** -Element gibt die Liste der internen SMTP-Domänen der Organisation an.</span><span class="sxs-lookup"><span data-stu-id="752aa-104">The **InternalDomains** element identifies the list of internal SMTP domains of the organization.</span></span> 
   
 ```XML
 <InternalDomains>
@@ -29,50 +29,50 @@ ms.locfileid: "19829953"
 </InternalDomains>
 ```
 
- <span data-ttu-id="1ec70-105">**SmtpDomainList**</span><span class="sxs-lookup"><span data-stu-id="1ec70-105">**SmtpDomainList**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="1ec70-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="1ec70-106">Attributes and elements</span></span>
+ <span data-ttu-id="752aa-105">**SmtpDomainList**</span><span class="sxs-lookup"><span data-stu-id="752aa-105">**SmtpDomainList**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="752aa-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="752aa-106">Attributes and elements</span></span>
 
-<span data-ttu-id="1ec70-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="1ec70-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="752aa-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="752aa-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="1ec70-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="1ec70-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="752aa-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="752aa-108">Attributes</span></span>
 
-<span data-ttu-id="1ec70-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="1ec70-109">None.</span></span>
+<span data-ttu-id="752aa-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="752aa-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="1ec70-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1ec70-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="752aa-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="752aa-110">Child elements</span></span>
 
-|<span data-ttu-id="1ec70-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="1ec70-111">**Element**</span></span>|<span data-ttu-id="1ec70-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="1ec70-112">**Description**</span></span>|
+|<span data-ttu-id="752aa-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="752aa-111">**Element**</span></span>|<span data-ttu-id="752aa-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="752aa-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="1ec70-113">Domain</span><span class="sxs-lookup"><span data-stu-id="1ec70-113">Domain</span></span>](domain.md) <br/> |<span data-ttu-id="1ec70-114">Gibt eine einzelne SMTP-Domäne.</span><span class="sxs-lookup"><span data-stu-id="1ec70-114">Identifies a single SMTP domain.</span></span>  <br/> |
+|[<span data-ttu-id="752aa-113">Domäne</span><span class="sxs-lookup"><span data-stu-id="752aa-113">Domain</span></span>](domain.md) <br/> |<span data-ttu-id="752aa-114">Identifiziert eine einzelne SMTP-Domäne.</span><span class="sxs-lookup"><span data-stu-id="752aa-114">Identifies a single SMTP domain.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="1ec70-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1ec70-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="752aa-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="752aa-115">Parent elements</span></span>
 
-|<span data-ttu-id="1ec70-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="1ec70-116">**Element**</span></span>|<span data-ttu-id="1ec70-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="1ec70-117">**Description**</span></span>|
+|<span data-ttu-id="752aa-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="752aa-116">**Element**</span></span>|<span data-ttu-id="752aa-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="752aa-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="1ec70-118">MailTipsConfiguration (MailTipsServiceConfiguration)</span><span class="sxs-lookup"><span data-stu-id="1ec70-118">MailTipsConfiguration (MailTipsServiceConfiguration)</span></span>](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |<span data-ttu-id="1ec70-119">Enthält Konfigurationsinformationen für den e-Mail-Dienst Tipps Service.</span><span class="sxs-lookup"><span data-stu-id="1ec70-119">Contains service configuration information for the mail tips service.</span></span>  <br/> |
-|[<span data-ttu-id="1ec70-120">ProtectionRulesConfiguration</span><span class="sxs-lookup"><span data-stu-id="1ec70-120">ProtectionRulesConfiguration</span></span>](protectionrulesconfiguration.md) <br/> |<span data-ttu-id="1ec70-121">Enthält Konfigurationsinformationen für den Schutz Regeln Dienst Service.</span><span class="sxs-lookup"><span data-stu-id="1ec70-121">Contains service configuration information for the protection rules service.</span></span>  <br/> |
+|[<span data-ttu-id="752aa-118">MailTipsConfiguration (MailTipsServiceConfiguration)</span><span class="sxs-lookup"><span data-stu-id="752aa-118">MailTipsConfiguration (MailTipsServiceConfiguration)</span></span>](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |<span data-ttu-id="752aa-119">Enthält Dienstkonfigurationsinformationen für den e-Mail-Spitzen Dienst.</span><span class="sxs-lookup"><span data-stu-id="752aa-119">Contains service configuration information for the mail tips service.</span></span>  <br/> |
+|[<span data-ttu-id="752aa-120">ProtectionRulesConfiguration</span><span class="sxs-lookup"><span data-stu-id="752aa-120">ProtectionRulesConfiguration</span></span>](protectionrulesconfiguration.md) <br/> |<span data-ttu-id="752aa-121">Enthält Dienstkonfigurationsinformationen für den Schutz Regeldienst.</span><span class="sxs-lookup"><span data-stu-id="752aa-121">Contains service configuration information for the protection rules service.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="1ec70-122">Textwert</span><span class="sxs-lookup"><span data-stu-id="1ec70-122">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="752aa-122">Textwert</span><span class="sxs-lookup"><span data-stu-id="752aa-122">Text value</span></span>
 
-<span data-ttu-id="1ec70-123">Keine.</span><span class="sxs-lookup"><span data-stu-id="1ec70-123">None.</span></span>
+<span data-ttu-id="752aa-123">Keine.</span><span class="sxs-lookup"><span data-stu-id="752aa-123">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="1ec70-124">Hinweise</span><span class="sxs-lookup"><span data-stu-id="1ec70-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="752aa-124">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="752aa-124">Remarks</span></span>
 
-<span data-ttu-id="1ec70-125">Dieses Element ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="1ec70-125">This element is required.</span></span> 
+<span data-ttu-id="752aa-125">Dieses Element ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="752aa-125">This element is required.</span></span> 
   
-<span data-ttu-id="1ec70-126">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="1ec70-126">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="752aa-126">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="752aa-126">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="1ec70-127">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="1ec70-127">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="752aa-127">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="752aa-127">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="1ec70-128">Namespace</span><span class="sxs-lookup"><span data-stu-id="1ec70-128">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="1ec70-129">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="1ec70-129">Schema Name</span></span>  <br/> |<span data-ttu-id="1ec70-130">Schematypen</span><span class="sxs-lookup"><span data-stu-id="1ec70-130">Types schema</span></span>  <br/> |
-|<span data-ttu-id="1ec70-131">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="1ec70-131">Validation File</span></span>  <br/> |<span data-ttu-id="1ec70-132">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="1ec70-132">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="1ec70-133">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="1ec70-133">Can be Empty</span></span>  <br/> |<span data-ttu-id="1ec70-134">False</span><span class="sxs-lookup"><span data-stu-id="1ec70-134">False</span></span>  <br/> |
+|<span data-ttu-id="752aa-128">Namespace</span><span class="sxs-lookup"><span data-stu-id="752aa-128">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="752aa-129">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="752aa-129">Schema Name</span></span>  <br/> |<span data-ttu-id="752aa-130">Schematypen</span><span class="sxs-lookup"><span data-stu-id="752aa-130">Types schema</span></span>  <br/> |
+|<span data-ttu-id="752aa-131">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="752aa-131">Validation File</span></span>  <br/> |<span data-ttu-id="752aa-132">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="752aa-132">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="752aa-133">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="752aa-133">Can be Empty</span></span>  <br/> |<span data-ttu-id="752aa-134">False</span><span class="sxs-lookup"><span data-stu-id="752aa-134">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="1ec70-135">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1ec70-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="752aa-135">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="752aa-135">See also</span></span>
 
 
 
-- [<span data-ttu-id="1ec70-136">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="1ec70-136">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="752aa-136">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="752aa-136">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
