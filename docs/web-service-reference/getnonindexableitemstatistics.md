@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dd16d1fb-d82d-42e5-b64a-bc6c19c48fa8
-description: Das GetNonIndexableItemStatistics-Element gibt eine Anforderung zum Nonindexable Element Statistiken abrufen.
-ms.openlocfilehash: 4e6f9a0ba94e9946a3910661810bc2c9e748ba9f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetNonIndexableItemStatistics-Element gibt eine Anforderung zum Abrufen von nicht indizierten Element Statistiken an.
+ms.openlocfilehash: 4b605379f20f5558566f1cfbad9ef1aa33b6fce6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758740"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44452790"
 ---
 # <a name="getnonindexableitemstatistics"></a>GetNonIndexableItemStatistics
 
-Das **GetNonIndexableItemStatistics** -Element gibt eine Anforderung zum Nonindexable Element Statistiken abrufen. 
+Das **GetNonIndexableItemStatistics** -Element gibt eine Anforderung zum Abrufen von nicht indizierten Element Statistiken an. 
   
 ```XML
 <GetNonIndexableItemStatistics>
@@ -38,25 +38,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Postfächer (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md) <br/> |Gibt ein Array von Elementen des **Postfachs** an.  <br/> |
+|[Postfächer (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md) <br/> |Gibt ein Array von **Post Fach** Elementen an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5f24dc30-3ac2-4c82-9dfc-be9dbdb585be
-description: Das MailboxStat-Element gibt Statistiken für ein Postfach von Discovery-Suche durchsucht.
-ms.openlocfilehash: 692f15904467ce192074b14f7c2a742b3e76de8e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MailboxStat-Element gibt die Statistik für ein Postfach an, das von der Ermittlungs Suche durchsucht wurde.
+ms.openlocfilehash: 417f63f5e1aa34c2157b1d5ad868461113afec7b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830296"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44451432"
 ---
 # <a name="mailboxstat"></a>MailboxStat
 
-Das **MailboxStat** -Element gibt Statistiken für ein Postfach von Discovery-Suche durchsucht. 
+Das **MailboxStat** -Element gibt die Statistik für ein Postfach an, das von der Ermittlungs Suche durchsucht wurde. 
   
 ```XML
 <MailboxStat>
@@ -40,23 +40,23 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[MailboxId](mailboxid.md) | [DisplayName (String)](displayname-string.md) | [ItemCount](itemcount.md) | [Größe (long)](size-long.md)
+[Post Fach-Nr](mailboxid.md)  |  [DisplayName (Zeichenfolge)](displayname-string.md)  |  [ItemCount](itemcount.md)  |  [Größe (lang)](size-long.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [MailboxStats](mailboxstats.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |

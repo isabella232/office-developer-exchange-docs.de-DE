@@ -1,5 +1,5 @@
 ---
-title: Überprüfen der Integrität mithilfe der API für CHKSGFILES in Exchange 2013
+title: Überprüfen der Integrität der Sicherung mithilfe der CHKSGFILES-API in Exchange 2013
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,35 +7,35 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 607cbeb9-0a02-4079-8a4d-34bdeb560224
-description: Erfahren Sie, wie die CHKSGFILES-API verwenden, um eine Sicherung der Exchange-Speicher in Exchange 2013 zu überprüfen.
-ms.openlocfilehash: 968484cd5bb7439730685643683e1d850bec33ca
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Erfahren Sie, wie Sie mithilfe der CHKSGFILES-API eine Sicherung der Exchange-Informationsspeicher in Exchange 2013 überprüfen.
+ms.openlocfilehash: c101413793cf3b952d3db3e0f792c8bcf2dd9fc9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756807"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44452860"
 ---
-# <a name="validate-backup-integrity-by-using-the-chksgfiles-api-in-exchange-2013"></a>Überprüfen der Integrität mithilfe der API für CHKSGFILES in Exchange 2013
+# <a name="validate-backup-integrity-by-using-the-chksgfiles-api-in-exchange-2013"></a>Überprüfen der Integrität der Sicherung mithilfe der CHKSGFILES-API in Exchange 2013
 
-Erfahren Sie, wie die CHKSGFILES-API verwenden, um eine Sicherung der Exchange-Speicher in Exchange 2013 zu überprüfen.
+Erfahren Sie, wie Sie mithilfe der CHKSGFILES-API eine Sicherung der Exchange-Informationsspeicher in Exchange 2013 überprüfen.
   
 **Gilt für:** Exchange Server 2013 
   
-Während der Sicherungsvorgänge Volume Shadow Copy Service (VSS) verwaltet kann nicht Exchange Server 2013 lesen Sie jede Datenbankdatei in seiner Gesamtheit und überprüfen Sie die Prüfsummenintegrität. Aus diesem Grund sollten Sie Ihre backup-Anwendung die Datenbank- und Transaktionsprotokolldateien Log File Integrität zu überprüfen. Es wird empfohlen, dass Ihre backup-Anwendung überprüfen, ob die physische Konsistenz von der Shadow Copy-Satz vor dem Exchange-Writer informiert werden, dass die Sicherung abgeschlossen ist. Nach einer erfolgreichen Sicherung aktualisiert Exchange-Speicher die Kopfzeilen der gesicherten Datenbanken, um die letzte erfolgreiche Sicherung Zeiten und Transaktionsprotokolle vom Server entfernt wiederzugeben, die nicht mehr benötigt werden, aus der letzten erfolgreichen Sicherung vorwärts bereitzustellen.
+Während von dem Volumeschattenkopie-Dienst (Volume Shadow Copy Service, VSS) verwaltete Sicherungsvorgänge können Exchange Server 2013 nicht jede Datenbankdatei vollständig lesen und die Prüfsummenintegrität überprüfen. Daher empfiehlt es sich, dass Ihre Sicherungsanwendung die Integrität der Datenbank-und Transaktionsprotokolldatei überprüft. Es wird empfohlen, dass Ihre Sicherungsanwendung die physische Konsistenz des Shadow Copy-Satzes überprüft, bevor der Exchange-Writer informiert wird, dass die Sicherung abgeschlossen ist. Nach einer erfolgreichen Sicherung aktualisiert der Exchange-Informationsspeicher die Kopfzeilen der gesicherten Datenbanken so, dass die letzten erfolgreichen Sicherungszeiten wiedergegeben werden, und entfernt Transaktionsprotokolle von dem Server, die für das Rollforward von der letzten erfolgreichen Sicherung nicht mehr benötigt werden.
   
-## <a name="prerequisites-for-validating-backup-integrity"></a>Erforderliche Komponenten zum Überprüfen der Integrität
+## <a name="prerequisites-for-validating-backup-integrity"></a>Voraussetzungen für die Überprüfung der Integrität der Sicherung
 
-Bevor die Anwendung die Integrität Ihrer Sicherung überprüfen kann, benötigen Sie Zugriff auf die folgenden:
+Bevor Ihre Anwendung die Integrität ihrer Sicherung validieren kann, benötigen Sie Zugriff auf Folgendes:
   
-- Speichern von Dateien aus Ihrer Exchange-Sicherung.
-- Eine Version von Visual Studio beginnend mit Visual Studio 2010.
-- Die CHKSGFILES Bibliothek und Header-Dateien. Sie können die Bibliothek und Header-Dateien aus dem [Microsoft Download Center](http://www.microsoft.com/en-us/download/details.aspx?id=36802)herunterladen.
+- Dateien aus Ihrer Exchange-Informationsspeicher Sicherung.
+- Eine Version von Visual Studio, die mit Visual Studio 2010 beginnt.
+- Die CHKSGFILES-Bibliothek und die Headerdateien. Sie können die Bibliotheks-und Headerdateien aus dem [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=36802)herunterladen.
     
-## <a name="validate-backup-integrity"></a>Überprüfen der Integrität
+## <a name="validate-backup-integrity"></a>Überprüfen der Integrität der Sicherung
 
-Das folgende Verfahren beschreibt, wie Überprüfen der Integrität der Daten in die Sicherung und Wiederherstellung von Anwendung.
+Im folgenden Verfahren wird beschrieben, wie die Datenintegrität in der Sicherungs-und Wiederherstellungsanwendung überprüft wird.
   
-### <a name="to-validate-backup-integrity"></a>Überprüfen der Integrität
+### <a name="to-validate-backup-integrity"></a>So überprüfen Sie die Integrität der Sicherung
 
 1. Erstellen Sie eine neue Instanz der **CChkSGFiles** -Klasse. 
    
@@ -51,7 +51,7 @@ Das folgende Verfahren beschreibt, wie Überprüfen der Integrität der Daten in
    }
    ```
 
-   Die ersten Codezeilen ein Error-Objekt erstellen und Anfangswert auf Erfolg festlegen und erstellen ein Objekt, das die Gültigkeit der Datenbank überprüft. Die [CChkSGFiles.New-Funktion](cchksgfiles-new-function.md) erstellt dann eine neue Instanz der **CChkSGFiles** -Klasse. Eine schnelle Überprüfung des neuen Objekts angibt, ob beim Erstellen die neue Instanz Probleme aufgetreten ist. 
+   In den ersten Codezeilen wird ein Error-Objekt erstellt und sein anfänglicher Wert auf Success festgelegt, und es wird ein Objekt erstellt, das die Gültigkeit der Datenbank überprüft. Anschließend erstellt die [CChkSGFiles. New-Funktion](cchksgfiles-new-function.md) eine neue Instanz der **CChkSGFiles** -Klasse. Eine Schnellüberprüfung des neuen Objekts gibt an, ob beim Erstellen der neuen Instanz Probleme aufgetreten sind. 
     
 2. Initialisieren Sie das **CChkSGFiles** -Objekt. 
    
@@ -63,9 +63,9 @@ Das folgende Verfahren beschreibt, wie Überprüfen der Integrität der Daten in
    wszBaseName ) );
    ```
    
-   Weitere Informationen zu den Parametern finden Sie unter [CChkSGFiles.ErrInit-Funktion](cchksgfiles-errinit-function.md).
+   Weitere Informationen zu den Parametern finden Sie unter [CChkSGFiles. ErrInit-Funktion](cchksgfiles-errinit-function.md).
    
-3. Verwenden Sie die [CChkSGFiles.ErrCheckDbHeaders-Funktion](cchksgfiles-errcheckdbheaders-function.md) , um die Datenbankintegrität überprüfen, indem Sie die Datenbank-Kopfzeilen überprüfen.
+3. Verwenden Sie die [CChkSGFiles. ErrCheckDbHeaders-Funktion](cchksgfiles-errcheckdbheaders-function.md) , um die Integrität der Datenbank zu überprüfen, indem Sie die Datenbankheader überprüfen.
    
    ```cpp
    err = pcchecksgfiles->ErrCheckDbHeaders(
@@ -86,9 +86,9 @@ Das folgende Verfahren beschreibt, wie Überprüfen der Integrität der Daten in
    }
    ```
    
-   Weitere Informationen zu den Parametern finden Sie unter [CChkSGFiles.ErrCheckDbHeaders-Funktion](cchksgfiles-errcheckdbheaders-function.md).
+   Weitere Informationen zu den Parametern finden Sie unter [CChkSGFiles. ErrCheckDbHeaders-Funktion](cchksgfiles-errcheckdbheaders-function.md).
    
-4. Behandeln von Fehlern und mit der [CChkSGFiles.Delete-Funktion](cchksgfiles-delete-function.md) können Sie die **CChkSGFiles** -Klasse aus dem Speicher zu entfernen. 
+4. Behandeln Sie Fehler, und verwenden Sie die [CChkSGFiles. Delete-Funktion](cchksgfiles-delete-function.md) , um die **CChkSGFiles** -Klasse aus dem Arbeitsspeicher zu entfernen. 
    
    ```cpp
    HandleError:
@@ -97,8 +97,8 @@ Das folgende Verfahren beschreibt, wie Überprüfen der Integrität der Daten in
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Referenz für die CChkSGFiles](cchksgfiles-class-reference.md)
-- [Erstellen von Sicherung und Wiederherstellen von Anwendungen für Exchange 2013](build-backup-and-restore-applications-for-exchange-2013.md)
-- [Sicherung und Wiederherstellung Konzepte für Exchange 2013](backup-and-restore-concepts-for-exchange-2013.md)
+- [CChkSGFiles-Klassenreferenz](cchksgfiles-class-reference.md)
+- [Erstellen von Sicherungs-und Wiederherstellungsanwendungen für Exchange 2013](build-backup-and-restore-applications-for-exchange-2013.md)
+- [Sichern und Wiederherstellen von Konzepten für Exchange 2013](backup-and-restore-concepts-for-exchange-2013.md)
     
 

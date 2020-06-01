@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4e8aa3b3-4bfc-40c3-b96b-9f7062b09309
-description: Das GetOrganizationRelationshipSettingsRequest-Element stellt die Parameter für einen Aufruf der GetOrganizationRelationshipSettings-Vorgang (SOAP) Vorgang dar. Das GetOrganizationRelationshipSettingsRequest-Element ist nur zur internen Verwendung. Dieses Element wird von Clients nicht verwendet.
-ms.openlocfilehash: 451506d53212ddca416f5b797624688f511988d0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetOrganizationRelationshipSettingsRequest-Element stellt die Parameter eines Aufrufs an den GetOrganizationRelationshipSettings-Vorgang (SOAP) dar. Das GetOrganizationRelationshipSettingsRequest-Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet.
+ms.openlocfilehash: 053bbb8cbe2ccdcf6d544ab1fc92bb81765997e1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758747"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44452734"
 ---
 # <a name="getorganizationrelationshipsettingsrequest-soap"></a>GetOrganizationRelationshipSettingsRequest (SOAP)
 
-Das **GetOrganizationRelationshipSettingsRequest** -Element stellt die Parameter für einen Aufruf der [GetOrganizationRelationshipSettings-Vorgang (SOAP)](getorganizationrelationshipsettings-operation-soap.md) Vorgang dar. Das **GetOrganizationRelationshipSettingsRequest** -Element ist nur zur internen Verwendung. Dieses Element wird von Clients nicht verwendet. 
+Das **GetOrganizationRelationshipSettingsRequest** -Element stellt die Parameter eines Aufrufs an den [GetOrganizationRelationshipSettings-Vorgang (SOAP)](getorganizationrelationshipsettings-operation-soap.md) dar. Das **GetOrganizationRelationshipSettingsRequest** -Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet. 
   
 ```XML
 <GetOrganizationRelationshipSettingsRequest>
@@ -37,20 +37,20 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Domänen (SOAP)](domains-soap.md) <br/> |Stellt eine Sammlung von Bezeichnern Domäne dar.  <br/> |
+|[Domänen (SOAP)](domains-soap.md) <br/> |Stellt eine Auflistung von Domänen-IDs dar.  <br/> |
 |||
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

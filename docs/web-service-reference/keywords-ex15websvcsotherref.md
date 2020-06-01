@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c466c845-9806-4a9a-8ba6-ee908b80d012
-description: Das Schlüsselwörter-Element gibt die Schlüsselwörter für die Suche FindMailboxStatisticsByKeywords Vorgang an.
-ms.openlocfilehash: fc12756c54bfc457e8b9124d932ff7c5178719b2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Schlüsselworts-Element gibt Schlüsselwörter für eine FindMailboxStatisticsByKeywords-Vorgangs Suche an.
+ms.openlocfilehash: d23840c4b651f5d4f42f36a0307a0fe5b25471f4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830192"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44451635"
 ---
 # <a name="keywords"></a>Schlüsselwörter
 
-Das **Schlüsselwörter** -Element gibt die Schlüsselwörter für die Suche **FindMailboxStatisticsByKeywords** Vorgang an. 
+Das **Schlüsselworts** -Element gibt Schlüsselwörter für eine **FindMailboxStatisticsByKeywords** -Vorgangs Suche an. 
   
 ```XML
 <KeyWords>
@@ -42,7 +42,7 @@ Keine.
 
 [FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -11,34 +11,34 @@ api_name:
 api_type:
 - schema
 ms.assetid: 93e44690-be2d-4fdb-96a8-4ded3c193aed
-description: Der Vorgang DeleteUserConfiguration Löscht eine Benutzer-Konfigurationsobjekt für einen Ordner.
-ms.openlocfilehash: 033134a7e16aa8e7a3d6b928141012b646863a68
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der DeleteUserConfiguration-Vorgang löscht ein Benutzer Konfigurationsobjekt für einen Ordner.
+ms.openlocfilehash: 064e1ace2c2f51783431ce42670b2a4fd8146b54
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757933"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44451467"
 ---
 # <a name="deleteuserconfiguration-operation"></a>DeleteUserConfiguration-Vorgang
 
-Der Vorgang **DeleteUserConfiguration** Löscht eine Benutzer-Konfigurationsobjekt für einen Ordner. 
+Der **DeleteUserConfiguration** -Vorgang löscht ein Benutzer Konfigurationsobjekt für einen Ordner. 
   
 > [!IMPORTANT]
-> Der Vorgang **DeleteUserConfiguration** wird ein Ereignis für das Ereignis Benachrichtigungssystem ausgelöst. Das Benutzerobjekt Konfiguration wird verschoben werden, um die Dumpster. 
+> Durch den **DeleteUserConfiguration** -Vorgang wird ein Verschiebe Ereignis für das Ereignis Benachrichtigungssystem ausgelöst. Das Benutzer Konfigurationsobjekt wird in den Papierkorb verschoben. 
   
-## <a name="deleteuserconfiguration-request-example"></a>Anforderungsbeispiel DeleteUserConfiguration
+## <a name="deleteuserconfiguration-request-example"></a>DeleteUserConfiguration-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung **DeleteUserConfiguration** veranschaulicht eine Anforderung zum Löschen einer Benutzer-Konfigurationsobjekt auf den Ordner "Entwürfe" bilden. 
+Im folgenden Beispiel einer **DeleteUserConfiguration** -Anforderung wird gezeigt, wie Sie eine Anforderung zum Löschen eines Benutzer Konfigurationsobjekts im Ordner "Entwürfe" bilden. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
@@ -54,11 +54,11 @@ Im folgenden Beispiel wird eine Anforderung **DeleteUserConfiguration** veransch
 </soap:Envelope>
 ```
 
-## <a name="deleteuserconfiguration-response-example"></a>DeleteUserConfiguration antwortbeispiel
+## <a name="deleteuserconfiguration-response-example"></a>DeleteUserConfiguration-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **DeleteUserConfiguration** . 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **DeleteUserConfiguration** -Anforderung. 
   
 ### <a name="code"></a>Code
 
@@ -71,15 +71,15 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **Dele
                          MajorBuildNumber="639" 
                          MinorBuildNumber="20" 
                          Version="Exchange2010" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:DeleteUserConfigurationResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:DeleteUserConfigurationResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:DeleteUserConfigurationResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>

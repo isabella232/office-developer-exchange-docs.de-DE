@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 8649ea14-672f-43c9-b10a-a2b02efd5867
 description: Das ForwardAsAttachmentToRecipients -Element gibt an, die E-mail-Adressen, an die Nachrichten als Anlage weitergeleitet werden sollen.
-ms.openlocfilehash: 04d4f9c6228e6d0ab34a6eff5d5751f461a57e19
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: bf8c3563460eea811602074bf16f9253b4610832
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758525"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44453336"
 ---
 # <a name="forwardasattachmenttorecipients"></a>ForwardAsAttachmentToRecipients
 
@@ -54,17 +54,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
