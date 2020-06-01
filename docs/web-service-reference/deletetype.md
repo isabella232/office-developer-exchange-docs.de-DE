@@ -1,5 +1,5 @@
 ---
-title: DeleteType
+title: Deletetypeharddelete
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,22 +11,22 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6e3136cd-9cb4-493a-aa85-9678f719002d
-description: Das DeleteType-Element gibt an, wie Elemente in einer Unterhaltung gelöscht werden.
-ms.openlocfilehash: abaa0c3d8b7001b2f42a38d1c82475edba32d2c5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das deleteType-Element gibt an, wie Elemente in einer Unterhaltung gelöscht werden.
+ms.openlocfilehash: 199f7afc29fe866865509d2fb90d24944113d5c0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757930"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44442633"
 ---
-# <a name="deletetype"></a>DeleteType
+# <a name="deletetype"></a>Deletetypeharddelete
 
-Das **DeleteType** -Element gibt an, wie Elemente in einer Unterhaltung gelöscht werden. 
+Das **deleteType** -Element gibt an, wie Elemente in einer Unterhaltung gelöscht werden. 
   
 - [ApplyConversationAction](applyconversationaction.md)  
 - [ConversationActions](conversationactions.md)  
-- [ConversationAction](conversationaction.md)  
-- [DeleteType](deletetype.md)
+- [Unterhaltung](conversationaction.md)  
+- [Deletetypeharddelete](deletetype.md)
   
 ```XML
 <DeleteType> HardDelete | MoveToDeletedItems | SoftDelete </DeleteType>
@@ -49,27 +49,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ConversationAction](conversationaction.md) <br/> |Enthält eine einzelne Aktion auf einem einzelnen Gespräch angewendet werden soll.  <br/> |
+|[Unterhaltung](conversationaction.md) <br/> |Enthält eine einzelne Aktion, die auf eine einzelne Unterhaltung angewendet werden soll.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **DeleteType** -Element gibt an, wie Elemente in einer Unterhaltung gelöscht werden. Im folgenden sind die möglichen Textwerte: 
+Der Textwert des **deleteType** -Elements gibt an, wie Elemente in einer Unterhaltung gelöscht werden. Im folgenden sind die möglichen Text Werte zu finden: 
   
-- HardDelete - gibt an, dass Elemente in einer Unterhaltung dauerhaft aus der Postfachdatenbank entfernt werden.
+- HardDelete – gibt an, dass Elemente in einer Unterhaltung dauerhaft aus der Postfachdatenbank entfernt werden.
     
-- MoveToDeleteItems - gibt an, dass Elemente in einer Unterhaltung in den Ordner Gelöschte Objekte verschoben werden.
+- MoveToDeleteItems – gibt an, dass Elemente in einer Unterhaltung in den Ordner "Gelöschte Elemente" verschoben werden.
     
-- SoftDelete - gibt an, dass Elemente in einer Unterhaltung in verschoben werden die Dumpster Wenn die Dumpster ist aktiviert.
+- SoftDelete – gibt an, dass Elemente in einer Unterhaltung in den Papierkorb verschoben werden, wenn der Papierkorb aktiviert ist.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

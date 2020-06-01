@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: f1b812c3-ae8b-4d89-92e2-41d2fe51e32f
-description: Das ServiceHome-Element enthält die URL der Startseite des Internet-Dienstanbieters (ISP).
-ms.openlocfilehash: 312eea2c021750327cc09cf65f111fc868e16608
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ServiceHome-Element enthält die URL der Startseite des Internetdienstanbieters (Internet Service Provider, ISP).
+ms.openlocfilehash: 1e4a40cbc97167dc2cf79ccbfcacff988794c3a0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831388"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44439112"
 ---
 # <a name="servicehome-pox"></a>ServiceHome (POX)
 
-Das **ServiceHome** -Element enthält die URL der Startseite des Internet-Dienstanbieters (ISP). 
+Das **ServiceHome** -Element enthält die URL der Startseite des Internetdienstanbieters (Internet Service Provider, ISP). 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -48,11 +48,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Konto (POX)](account-pox.md) <br/> |Gibt die kontoeinstellungen für den Benutzer an.  <br/> |
+|[Konto (POX)](account-pox.md) <br/> |Gibt Kontoeinstellungen für den Benutzer an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt die URL der Startseite des Internetdienstanbieters.
+Der Textwert stellt die URL der Startseite des Internetdienstanbieters dar.
   
 ## <a name="see-also"></a>Siehe auch
 

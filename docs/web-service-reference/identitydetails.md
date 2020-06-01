@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d6fa8d08-20f4-4440-8973-c9ca74d42512
-description: Das IdentityDetails-Element ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: 172e1ef1df6766b6a6af1741461da88d45851059
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IdentityDetails-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: cb657ec7548c27497f7587edbd0a231d10baf344
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829852"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44442213"
 ---
 # <a name="identitydetails"></a>IdentityDetails
 
-Das **IdentityDetails** -Element ist nur zur internen Verwendung vorgesehen. 
+Das **IdentityDetails** -Element ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

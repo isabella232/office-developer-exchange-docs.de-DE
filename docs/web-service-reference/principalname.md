@@ -1,5 +1,5 @@
 ---
-title: "' PrincipalName '"
+title: PrincipalName
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 88c142d4-0bc7-43ea-a997-d7200664d900
-description: Das Element ' PrincipalName ' stellt den Benutzerprinzipalnamen (UPN) des Kontos, das für den Exchange-Identitätswechsel verwendet werden.
-ms.openlocfilehash: d8557ce0435a11a5602372517db1f576028a9c97
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PrincipalName-Element stellt den Benutzerprinzipalnamen (User Principal Name, UPN) des Kontos dar, das für den Exchange-Identitätswechsel verwendet werden soll.
+ms.openlocfilehash: 31412c1461264e28bf8d52c957a457e8d1e847ef
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830882"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44440190"
 ---
-# <a name="principalname"></a>' PrincipalName '
+# <a name="principalname"></a>PrincipalName
 
-Das Element **' PrincipalName '** stellt den Benutzerprinzipalnamen (UPN) des Kontos, das für den Exchange-Identitätswechsel verwendet werden. 
+Das **PrincipalName** -Element stellt den Benutzerprinzipalnamen (User Principal Name, UPN) des Kontos dar, das für den Exchange-Identitätswechsel verwendet werden soll. 
   
 ```xml
 <PrincipalName/>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ConnectingSID](connectingsid.md) <br/> |Gibt ein Konto Identitätswechsel bei Verwendung der "ExchangeImpersonation" SOAP-Header.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
+|[ConnectingSID](connectingsid.md) <br/> |Stellt ein Konto für den Identitätswechsel dar, wenn Sie den SOAP-ExchangeImpersonation-Header verwenden.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt den UPN eines Benutzers. Dieser Wert auf das Benutzerobjekt in Active Directory-Verzeichnisdienst vorhanden ist. Dieses Webpart enthält den Benutzeranmeldenamen und einen Domänennamen, die die Domäne gibt an, in dem das Benutzerkonto befindet sich im folgenden Format: `someone@example.com`.
+Der Wert Text stellt den UPN eines Benutzers dar. Dieser Wert ist für das Benutzerobjekt im Active Directory Verzeichnisdienst vorhanden. Dieser enthält den Benutzeranmeldenamen und einen Domänennamen, der die Domäne identifiziert, in der sich das Benutzerkonto befindet, im folgenden Format: `someone@example.com` .
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -70,5 +70,5 @@ Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichni
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Server-zu-Server-Autorisierung in Exchange-Webdienste](http://msdn.microsoft.com/library/f1610a20-672d-448b-8c00-5b0fbcaf31cb%28Office.15%29.aspx)
+[Server-zu-Server-Autorisierung in EWS](https://msdn.microsoft.com/library/f1610a20-672d-448b-8c00-5b0fbcaf31cb%28Office.15%29.aspx)
 
