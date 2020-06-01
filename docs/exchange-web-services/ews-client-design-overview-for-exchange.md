@@ -3,15 +3,15 @@ title: Übersicht über den EWS-Cliententwurf für Exchange
 manager: sethgros
 ms.date: 3/11/2016
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: b26f67aa-7c66-4d7d-98b3-746f26ab37f4
 description: Lernen Sie die Entwurfsaspekte für die Entwicklung mit EWS für Exchange kennen.
-ms.openlocfilehash: 10e1c78bdd93dc5aede6e3f9337aa70b0214b770
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+localization_priority: Priority
+ms.openlocfilehash: 0ac4fe1be0800008af572ebc296e004aa29d8daf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353903"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455422"
 ---
 # <a name="ews-client-design-overview-for-exchange"></a>Übersicht über den EWS-Cliententwurf für Exchange
 
@@ -30,7 +30,7 @@ EWS ist die primäre Clientzugriffs-API für Ihre Exchange-Clientanwendungen. In
 - Exchange ActiveSync enthält einen Richtlinienmechanismus zum Steuern des Clientzugriffs und zum Bereitstellen anderer robuster Unternehmenslösungen für mobile Nachrichten.
     
 > [!NOTE]
-> Sie benötigen eine Lizenz zum Entwickeln von Exchange ActiveSync-Clients. Informationen zu den Unterschieden zwischen Exchange ActiveSync und EWS finden Sie unter [Entscheidung zwischen Exchange ActiveSync und Exchange-Webdienste (EWS)](http://msdn.microsoft.com/de-DE/library/dn144954%28v=exchg.140%29.aspx). 
+> Sie benötigen eine Lizenz zum Entwickeln von Exchange ActiveSync-Clients. Informationen zu den Unterschieden zwischen Exchange ActiveSync und EWS finden Sie unter [Entscheidung zwischen Exchange ActiveSync und Exchange-Webdienste (EWS)](https://msdn.microsoft.com/library/dn144954%28v=exchg.140%29.aspx). 
   
 MAPI-RPC über HTTP ist eine weitere Programmieroption für Exchange-Clientanwendungen. MAPI-RPC über HTTP bietet jedoch keine intuitive Schnittstelle für die Kommunikation zwischen Clients und dem Server.
   
@@ -48,7 +48,7 @@ Für die Entwicklung für Exchange mithilfe von EWS stehen mehrere Optionen zur 
     
 ### <a name="ews-managed-api"></a>Verwaltete EWS-API
 
-Die [verwaltete EWS-API](http://aka.ms/ews-managed-api-readme) ist ein benutzerdefinierter Webdienstclient und die standardmäßige Clientzugriffs-API für .NET Framework-Anwendungen. 
+Die [verwaltete EWS-API](https://aka.ms/ews-managed-api-readme) ist ein benutzerdefinierter Webdienstclient und die standardmäßige Clientzugriffs-API für .NET Framework-Anwendungen. 
   
 Im Folgenden werden einige Vorteile der Verwendung der verwalteten EWS-API aufgeführt:
   
@@ -62,7 +62,7 @@ Beachten Sie jedoch, dass die verwaltete EWS-API keine vollständige Lösung ist
   
 - Sie können das .NET Framework für die Entwicklung verwenden.
 - Sie implementiert die AutoErmittlung sowie die meisten Teile des EWS-Objektmodells.
-- Sie implementiert clientseitige Geschäftslogik für die Zusammenarbeit mit EWS in der [ExchangeService](http://msdn.microsoft.com/de-DE/library/office/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Klasse. 
+- Sie implementiert clientseitige Geschäftslogik für die Zusammenarbeit mit EWS in der [ExchangeService](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Klasse. 
     
 Sie können die EWS-Webdienst-API aus folgenden Gründen anstelle der verwalteten EWS-API verwenden:
   
@@ -73,7 +73,7 @@ Sie können die EWS-Webdienst-API aus folgenden Gründen anstelle der verwaltete
 Weitere Informationen finden Sie unter [Erste Schritte mit verwalteten EWS-API-Clientanwendungen](get-started-with-ews-managed-api-client-applications.md).
   
 > [!NOTE]
-> Die verwaltete EWS-API steht nun als Open Source-Projekt auf [GitHub](http://aka.ms/ews-managed-api-github) zur Verfügung. Sie können die Open Source-Bibliothek für Folgendes verwenden: 
+> Die verwaltete EWS-API steht nun als Open Source-Projekt auf [GitHub](https://aka.ms/ews-managed-api-github) zur Verfügung. Sie können die Open Source-Bibliothek für Folgendes verwenden: 
 > - Implementieren von Programmfehlerbehebungen und Verbesserungen in die API 
 > - Abrufen von Fehlerbehebungen und Verbesserungen, bevor diese in einer offiziellen Version verfügbar sind
 > - Zugreifen auf die umfassendste und aktuellste Implementierung der API, um sie als Referenz zu verwenden oder neue Bibliotheken auf neuen Plattformen zu erstellen
@@ -82,7 +82,8 @@ Weitere Informationen finden Sie unter [Erste Schritte mit verwalteten EWS-API-C
   
 ### <a name="ews-java-api"></a>Java-API der EWS
 
-Die Java-API der EWS ist ein Open Source-Projekt auf [GitHub](https://github.com/OfficeDev/ews-java-api), das von der Community aktualisiert und erweitert werden kann. Sie ähnelt stilistisch der [verwalteten EWS-API](http://msdn.microsoft.com/de-DE/library/office/jj220535%28v=exchg.80%29.aspx) und verwendet EWS-SOAP-Anforderungen und - Antworten über das Netzwerk. Obwohl Sie mit der Java-API der EWS nicht auf alle [EWS-SOAP-Vorgänge](http://msdn.microsoft.com/library/cf6fd871-9a65-4f34-8557-c8c71dd7ce09%28Office.15%29.aspx) zugreifen können, setzen wir mit der [aktuellen Erstellung](http://blogs.office.com/2014/08/28/open-sourcing-exchange-web-services-ews-java-api/) des Open Source-Projekts auf die Community, um diese Lücke zu schließen. Beachten Sie, dass der Microsoft-Support mit einem entsprechenden Supportvertrag alle Fragen im Zusammenhang mit dem EWS-SOAP-Protokoll, nicht jedoch mit der Java-API für EWS beantwortet. Die Java-API für EWS steht zum Download und für Communitybeiträge auf [GitHub](https://github.com/OfficeDev/ews-java-api) zur Verfügung.
+Die Java-API der EWS ist ein Open Source-Projekt auf [GitHub](https://github.com/OfficeDev/ews-java-api), das von der Community aktualisiert und erweitert werden kann. Sie ähnelt stilistisch der [verwalteten EWS-API](https://msdn.microsoft.com/library/office/jj220535%28v=exchg.80%29.aspx) und verwendet EWS-SOAP-Anforderungen und - Antworten über das Netzwerk. Obwohl Sie mit der Java-API der EWS nicht auf alle [EWS-SOAP-Vorgänge](https://msdn.microsoft.com/library/cf6fd871-9a65-4f34-8557-c8c71dd7ce09%28Office.15%29.aspx) zugreifen können, setzen wir mit der [aktuellen Erstellung](https://blogs.office.com/2014/08/28/open-sourcing-exchange-web-services-ews-java-api/) des Open Source-Projekts auf die Community, um diese Lücke zu schließen. Beachten Sie, dass der Microsoft-Support mit einem entsprechenden Supportvertrag alle Fragen im Zusammenhang mit dem EWS-SOAP-Protokoll, nicht jedoch mit der Java-API für EWS beantwortet. Die Java-API für EWS steht zum Download und für Communitybeiträge auf [GitHub](https://github.com/OfficeDev/ews-java-api) zur Verfügung.
+
   
 ### <a name="ews-autogenerated-proxies"></a>Automatisch generierte EWS-Proxys
 

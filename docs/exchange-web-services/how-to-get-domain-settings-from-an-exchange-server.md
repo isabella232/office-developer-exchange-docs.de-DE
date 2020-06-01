@@ -3,15 +3,15 @@ title: Abrufen von Domäneneinstellungen von einem Exchange-Server
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 2f9acb81-5135-4f72-94e8-65c235d725e6
 description: Erfahren Sie, wie Sie Domäneneinstellungen von einem Exchange-Server mithilfe des AutoErmittlungsdiensts abrufen.
-ms.openlocfilehash: 0dd990cc82762936e7827115685ce0178eafb5ae
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: e77810089b77f614f6bca064b2e5cf6bde2bff7c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756896"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455807"
 ---
 # <a name="get-domain-settings-from-an-exchange-server"></a>Abrufen von Domäneneinstellungen von einem Exchange-Server
 
@@ -72,7 +72,7 @@ Bevor Sie den AutoErmittlungsdienst zum Abrufen von Domäneneinstellungen verwen
 |[AutoErmittlung für Exchange](autodiscover-for-exchange.md) <br/> |Bietet eine Übersicht über die Funktionsweise des AutoErmittlungsdiensts.  <br/> |
 |[Verwenden der AutoErmittlung für die Suche nach Verbindungspunkten](how-to-use-autodiscover-to-find-connection-points.md) <br/> |Beschreibt den vom AutoErmittlungsdienst verwendeten Prozess zum Umleiten Ihrer Clientanwendung an den richtigen Dienstendpunkt.  <br/> |
    
-Wenn Sie die verwaltete EWS-API benutzen, verwenden Sie die Klasse [Microsoft.Exchange.WebServices.Data.ExchangeService](http://msdn.microsoft.com/de-DE/library/exchange/dd635811%28v=exchg.80%29.aspx) im Namespace [Microsoft.Exchange.WebServices.Data](http://msdn.microsoft.com/de-DE/library/exchange/dd633907%28v=exchg.80%29.aspx), um Ihre Verbindungen mit EWS zu verwalten. In den Codebeispielen in diesem Abschnitt wird davon ausgegangen, dass Sie in Ihrem Code auf die folgenden Namespaces verweisten: 
+Wenn Sie die verwaltete EWS-API benutzen, verwenden Sie die Klasse [Microsoft.Exchange.WebServices.Data.ExchangeService](https://msdn.microsoft.com/library/exchange/dd635811%28v=exchg.80%29.aspx) im Namespace [Microsoft.Exchange.WebServices.Data](https://msdn.microsoft.com/library/exchange/dd633907%28v=exchg.80%29.aspx), um Ihre Verbindungen mit EWS zu verwalten. In den Codebeispielen in diesem Abschnitt wird davon ausgegangen, dass Sie in Ihrem Code auf die folgenden Namespaces verweisten: 
   
 - **System.Net**
     
@@ -81,7 +81,7 @@ Wenn Sie die verwaltete EWS-API benutzen, verwenden Sie die Klasse [Microsoft.Ex
 ## <a name="get-domain-settings-by-using-the-ews-managed-api"></a>Abrufen von Domäneneinstellungen mithilfe der verwalteten EWS-API
 <a name="bk_Managed"> </a>
 
-Wenn Sie die verwaltete EWS-API benutzen, können Sie die Methode [Microsoft.Exchange.WebServices.Data.AutodiscoverSettings.GetUserSettings](http://msdn.microsoft.com/de-DE/library/exchange/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) des Objekts [Microsoft.Exchange.WebServices.Data.AutodiscoverService](http://msdn.microsoft.com/de-DE/library/exchange/dd634321%28v=exchg.80%29.aspx) verwenden, um die Anforderung zu generieren, mit der Konfigurationsinformationen für eine Domäne abgerufen werden, wie im folgenden Beispiel gezeigt. In diesem Beispiel werden nur einige der möglichen Domäneneinstellungen abgerufen und nur die abgerufenen Einstellungen vom Server zurückgegeben. 
+Wenn Sie die verwaltete EWS-API benutzen, können Sie die Methode [Microsoft.Exchange.WebServices.Data.AutodiscoverSettings.GetUserSettings](https://msdn.microsoft.com/library/exchange/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) des Objekts [Microsoft.Exchange.WebServices.Data.AutodiscoverService](https://msdn.microsoft.com/library/exchange/dd634321%28v=exchg.80%29.aspx) verwenden, um die Anforderung zu generieren, mit der Konfigurationsinformationen für eine Domäne abgerufen werden, wie im folgenden Beispiel gezeigt. In diesem Beispiel werden nur einige der möglichen Domäneneinstellungen abgerufen und nur die abgerufenen Einstellungen vom Server zurückgegeben. 
   
 ```cs
 AutodiscoverService autodiscoverService = new AutodiscoverService("domain.contoso.com");
@@ -119,17 +119,17 @@ Das folgende Beispiel zeigt eine SOAP-XML-Anforderung zum Abrufen beider Domäne
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+<soap:Envelope xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
         xmlns:wsa="http://www.w3.org/2005/08/addressing" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+        xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <a:RequestedServerVersion>Exchange2013</a:RequestedServerVersion>
-    <wsa:Action>http://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetDomainSettings</wsa:Action>
+    <wsa:Action>https://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetDomainSettings</wsa:Action>
     <wsa:To>https://autodiscover.exchange.microsoft.com/autodiscover/autodiscover.svc</wsa:To>
   </soap:Header>
   <soap:Body>
-    <a:GetDomainSettingsRequestMessage xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <a:GetDomainSettingsRequestMessage xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <a:Request>
         <a:Domains>
           <a:Domain>domain</a:Domain>
@@ -148,12 +148,12 @@ Das folgende Beispiel zeigt eine SOAP-XML-Anforderung zum Abrufen beider Domäne
 Das folgende Beispiel zeigt die XML-Antwort, die vom Server zurückgegeben wird, nachdem die Anforderung vom Client analysiert wurde.
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" 
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/" 
         xmlns:a="http://www.w3.org/2005/08/addressing">
   <s:Header>
-    <a:Action s:mustUnderstand="1">http://schemas.microsoft.com/exchange/2010/
+    <a:Action s:mustUnderstand="1">https://schemas.microsoft.com/exchange/2010/
           Autodiscover/Autodiscover/GetDomainSettingsResponse</a:Action>
-    <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+    <h:ServerVersionInfo xmlns:h="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
           xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
       <h:MajorVersion>15</h:MajorVersion>
       <h:MinorVersion>0</h:MinorVersion>
@@ -163,7 +163,7 @@ Das folgende Beispiel zeigt die XML-Antwort, die vom Server zurückgegeben wird,
     </h:ServerVersionInfo>
   </s:Header>
   <s:Body>
-    <GetDomainSettingsResponseMessage xmlns="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <GetDomainSettingsResponseMessage xmlns="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <Response xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <ErrorCode>NoError</ErrorCode>
         <ErrorMessage />
@@ -203,8 +203,8 @@ Domäneneinstellungen stellen die grundlegenden Informationen bereit, die der Cl
 
 - [Einrichten Ihrer EWS-Anwendung](setting-up-your-ews-application.md)
     
-- [AutoErmittlung Webdienstverweis für Exchange](http://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)
+- [AutoErmittlung Webdienstverweis für Exchange](https://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)
     
-- [EWS-Referenz für Exchange](http://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)
+- [EWS-Referenz für Exchange](https://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)
     
 

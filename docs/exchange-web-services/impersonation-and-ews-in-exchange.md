@@ -3,15 +3,15 @@ title: Identitätswechsel und EWS in Exchange
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 7e1ea63c-eb29-43d2-827f-2f2b1846483b
 description: Erfahren Sie mehr über den Identitätswechsel und wann er in Ihren Exchange-Dienstanwendungen eingesetzt werden kann.
-ms.openlocfilehash: f8a215874475034f0d147b80a05cae414e6438f9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: 8151b3d83421786d99ee0c82eaf4f7a5c0721f25
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757015"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466612"
 ---
 # <a name="impersonation-and-ews-in-exchange"></a>Identitätswechsel und EWS in Exchange
 
@@ -51,7 +51,7 @@ Mit dem Identitätswechsel kann ein Aufrufer einen Identitätswechsel für ein a
     
 - In der Regel wird die **ApplicationImpersonation**-Rolle einem Dienstkonto gewährt, das einer bestimmten Anwendung oder eine Gruppe von Anwendungen zugeordnet ist, statt einem Benutzerkonto. Sie können beliebig viele Dienstkonten erstellen. 
     
-Sie können weitere Informationen über die [Konfiguration des Identitätswechsels](how-to-configure-impersonation.md) lesen, Sie sollten jedoch mit Ihrem Exchange-Administrator zusammenarbeiten, um zu gewährleisten, dass die erforderlichen Dienstkonten mit den [Berechtigungen und dem Zugriff](http://technet.microsoft.com/de-DE/library/dd351175%28v=exchg.150%29.aspx) erstellt werden, der die Sicherheitsanforderungen Ihres Unternehmens erfüllt. 
+Sie können weitere Informationen über die [Konfiguration des Identitätswechsels](how-to-configure-impersonation.md) lesen, Sie sollten jedoch mit Ihrem Exchange-Administrator zusammenarbeiten, um zu gewährleisten, dass die erforderlichen Dienstkonten mit den [Berechtigungen und dem Zugriff](https://technet.microsoft.com/library/dd351175%28v=exchg.150%29.aspx) erstellt werden, der die Sicherheitsanforderungen Ihres Unternehmens erfüllt. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
@@ -68,6 +68,6 @@ Sie können weitere Informationen über die [Konfiguration des Identitätswechse
     
 - [Stellvertretungszugriff und EWS in Exchange](delegate-access-and-ews-in-exchange.md)
     
-- [Exchange 2013-Berechtigungen](http://technet.microsoft.com/de-DE/library/dd351175%28v=exchg.150%29.aspx)
+- [Exchange 2013-Berechtigungen](https://technet.microsoft.com/library/dd351175%28v=exchg.150%29.aspx)
     
 

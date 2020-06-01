@@ -3,15 +3,15 @@ title: EWS-Anwendungen und die Exchange-Architektur
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: c10f308a-65bb-4a0b-8fdd-b4a61503f0fd
 description: Erfahren Sie mehr über die Funktionsweise von EWS innerhalb der Exchange-Architektur und finden Sie heraus, welche Protokolle EWS verwendet.
-ms.openlocfilehash: 1fbc1e68edbca829555fbbf1b9f0bc4723da9524
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: 15f396664ea46e53a4603a617c9bf679400af160
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756843"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456086"
 ---
 # <a name="ews-applications-and-the-exchange-architecture"></a>EWS-Anwendungen und die Exchange-Architektur
 
@@ -36,7 +36,7 @@ Abbildung 2 zeigt die gleichen Kommunikationspfade wie in Abbildung 1, die von E
   
 Folgende Komponenten werden in den Diagrammen gezeigt:
   
-1. EWS-Anwendung – kann ein [Client, Portal oder eine Dienstanwendung](ews-application-types.md) sein und kann auf einem Client oder auf einem lokalen Exchange-Clientzugriffsserver installiert sein. Wenn Sie die verwaltete EWS-API verwenden, um die EWS-Anwendung zu entwickeln, müssen die verwalteten EWS-Assemblys auf dem Client installiert sein und [von der Anwendung verteilt werden](redistribution-requirements-for-the-ews-managed-api.md).
+1. EWS-Anwendung – kann ein [Client, Portal oder eine Dienstanwendung](ews-application-types.md) und kann auf einem Client oder auf einem lokalen Exchange-Clientzugriffsserver installiert sein. Wenn Sie die verwaltete EWS-API verwenden, um die EWS-Anwendung zu entwickeln, müssen die verwalteten EWS-Assemblys auf dem Client installiert sein und [von der Anwendung verteilt werden](redistribution-requirements-for-the-ews-managed-api.md).
     
 2. Die SOAP-XML-Nachricht – eine XML-Nachricht in einem SOAP-Umschlag, eingebettet in einer HTTP/S-Nachricht, die der „Datei Services.wsdl“ auf dem Clientzugriffsserver entspricht. HTTPS empfiehlt sich für Exchange lokal und ist für Exchange Online erforderlich.  
     

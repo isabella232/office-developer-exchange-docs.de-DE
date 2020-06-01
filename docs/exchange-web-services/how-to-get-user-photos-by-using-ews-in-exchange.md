@@ -3,15 +3,15 @@ title: Abrufen von Benutzerfotos mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: f86d1099-1f57-47dc-abf2-4d5ae4e900a9
 description: Erfahren Sie, wie Sie Benutzerfotos abrufen können, die mit einem Postfach oder einem Kontakt verknüpft sind, indem Sie die verwaltete EWS-API oder EWS in Exchange verwenden.
-ms.openlocfilehash: f0f5cddd41fc563fb9ed38e75b505830a3992411
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: 14f2bc6bef1ce3c3529f03e213e3ada7c45a5a71
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756929"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455786"
 ---
 # <a name="get-user-photos-by-using-ews-in-exchange"></a>Abrufen von Benutzerfotos mithilfe von EWS in Exchange
 
@@ -40,7 +40,7 @@ https://Exchange Server/ews/Exchange.asmx/s/GetUserPhoto?email=email address&amp
 
 Verwenden Sie den AutoErmittlungsdienst-[GetUserSettings](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)-Vorgang, um die **ExternalEwsUrl**-Einstellung abzurufen, die die URL des Endpunkts der Exchange-Webdienste (EWS) und den Speicherort des **Exchange.asmx** HTTP-Handlers, der die Benutzerfotos zurückgibt. 
   
-In den Größencodes wird die Höhe und Breite des Bilds in Pixel angegeben. Der Größencode **HR48x48** gibt beispielsweise ein Bild zurück, das 48 Pixel hoch und 48 Pixel breit ist. Die möglichen Werte für den Größencodeparameter entsprechen den möglichen Werten für das [SizeRequested](http://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx)-Element. Wenn die Anforderung eine nicht verfügbare Größe angibt, wird das größtmögliche Foto zurückgegeben. Wenn kein Foto auf dem Exchange-Server gespeichert ist, wird das in AD DS für das Konto gespeicherte Bild zurückgegeben. 
+In den Größencodes wird die Höhe und Breite des Bilds in Pixel angegeben. Der Größencode **HR48x48** gibt beispielsweise ein Bild zurück, das 48 Pixel hoch und 48 Pixel breit ist. Die möglichen Werte für den Größencodeparameter entsprechen den möglichen Werten für das [SizeRequested](https://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx)-Element. Wenn die Anforderung eine nicht verfügbare Größe angibt, wird das größtmögliche Foto zurückgegeben. Wenn kein Foto auf dem Exchange-Server gespeichert ist, wird das in AD DS für das Konto gespeicherte Bild zurückgegeben. 
   
 > [!NOTE]
 > Der **HR48x48**-Größencode gibt immer das AD DS-Vorschaubild zurück, falls verfügbar. 
@@ -84,7 +84,7 @@ Exchange gibt die Daten mit dem Inhaltstyp Bild/jpeg und einer Sammlung von Head
 
 Ihre Anwendung kann die verwaltete EWS-API zum Abrufen von Fotos für Kontakte, wenn der Kontakt in einem Kontaktordner im Postfach des Benutzers gespeichert ist. Suchen Sie dazu nach dem **ItemId** für den Kontakt, den Sie verwenden möchten. Nachdem Sie eine Bindung zu diesem Kontakt erstellt haben, können Sie ihn in die Anlagensammlung laden. Wenn zu dem Kontakt ein Foto vorhanden ist, befindet sich das Foto unter den Anlagen. Gehen Sie die Anlagensammmlung durch und überprüfen Sie den Wert der **IsContactPhoto**-Eigenschaft. Nachdem Sie das Kontaktfoto gefunden haben, können Sie es auf Ihrem lokalen Computer speichern, und Ihre Anwendung kann darauf zugreifen. 
   
-Im folgenden Beispiel wird dieser Prozess veranschaulicht. In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer sich an einem Exchange-Server authentifizieren kann. 
+Im folgenden Beispiel wird dieser Prozess veranschaulicht. In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer sich an einem Exchange-Server authentifizieren kann. 
   
 ```cs
 private static void GetContactPhoto(ExchangeService service, string ItemId)
@@ -116,19 +116,19 @@ private static void GetContactPhoto(ExchangeService service, string ItemId)
 
 ## <a name="get-a-user-photo-by-using-ews"></a>Abrufen eines Benutzerfotos mithilfe von EWS
 
-Wenn Sie ein Benutzerfoto aus AD DS abrufen, können Sie die [GetUserPhoto](http://msdn.microsoft.com/library/f6e8143d-4235-428e-8f9c-ab6e9b1cfa6e%28Office.15%29.aspx)- (wenn die E-Mail-Adresse bekannt ist) oder die [ResolveNames](http://msdn.microsoft.com/library/6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb%28Office.15%29.aspx)-Operation verwenden (wenn die E-Mail-Adresse nicht bekannt ist). Wenn Sie ein Benutzerfoto aus einem Kontaktordner im Postfach abrufen, verwenden Sie die [GetItem](http://msdn.microsoft.com/library/6b96dace-1260-4b83-869a-7c31c5583daa%28Office.15%29.aspx) -Operation gefolgt von der [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx)-Operation. In beiden Fällen wird das Foto als Base64-codierte Zeichenfolge in der XML-Antwort zurückgegeben. 
+Wenn Sie ein Benutzerfoto aus AD DS abrufen, können Sie die [GetUserPhoto](https://msdn.microsoft.com/library/f6e8143d-4235-428e-8f9c-ab6e9b1cfa6e%28Office.15%29.aspx)- (wenn die E-Mail-Adresse bekannt ist) oder die [ResolveNames](https://msdn.microsoft.com/library/6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb%28Office.15%29.aspx)-Operation verwenden (wenn die E-Mail-Adresse nicht bekannt ist). Wenn Sie ein Benutzerfoto aus einem Kontaktordner im Postfach abrufen, verwenden Sie die [GetItem](https://msdn.microsoft.com/library/6b96dace-1260-4b83-869a-7c31c5583daa%28Office.15%29.aspx) -Operation gefolgt von der [GetAttachment](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx)-Operation. In beiden Fällen wird das Foto als Base64-codierte Zeichenfolge in der XML-Antwort zurückgegeben. 
   
 ### <a name="get-a-mailbox-user-photo-by-using-the-getuserphoto-operation"></a>Abrufen eines Benutzerfotos für ein Postfach mithilfe der GetUserPhoto-Operation
 
-Das Verwenden der **GetUserPhoto**-Operation ist selbsterklärend. Geben Sie in der XML-Anforderung die E-Mail-Adresse des Benutzers und die [Größe des zurückzugebenden Fotos](http://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx) an (im [SizeRequested](http://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx)-Element). In der folgenden XML-Beispielanforderung wird veranschaulicht, wie ein Foto für Sadie Daniels abgerufen werden kann, das 360 Pixel breit und 360 Pixel hoch ist. 
+Das Verwenden der **GetUserPhoto**-Operation ist selbsterklärend. Geben Sie in der XML-Anforderung die E-Mail-Adresse des Benutzers und die [Größe des zurückzugebenden Fotos](https://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx) an (im [SizeRequested](https://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx)-Element). In der folgenden XML-Beispielanforderung wird veranschaulicht, wie ein Foto für Sadie Daniels abgerufen werden kann, das 360 Pixel breit und 360 Pixel hoch ist. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013 "/>
    </soap:Header>
@@ -142,15 +142,15 @@ Das Verwenden der **GetUserPhoto**-Operation ist selbsterklärend. Geben Sie in 
 
 ```
 
-Im Folgenden finden Sie die XML-Antwort. Das Base64-codierte Foto ist im [PictureData](http://msdn.microsoft.com/library/1124eac3-ebf2-4b81-96d3-96838c840433%28Office.15%29.aspx)-Element (der Inhalt wurde zur besseren Lesbarkeit gekürzt) enthalten. 
+Im Folgenden finden Sie die XML-Antwort. Das Base64-codierte Foto ist im [PictureData](https://msdn.microsoft.com/library/1124eac3-ebf2-4b81-96d3-96838c840433%28Office.15%29.aspx)-Element (der Inhalt wurde zur besseren Lesbarkeit gekürzt) enthalten. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <GetUserPhotoResponse ResponseClass="Success" 
-         xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+         xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <HasChanged>true</HasChanged>
       <PictureData>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAg... wATRRRSuB//2Q==</PictureData>
@@ -162,15 +162,15 @@ Im Folgenden finden Sie die XML-Antwort. Das Base64-codierte Foto ist im [Pictur
 
 ### <a name="get-a-mailbox-user-photo-by-using-the-resolvenames-operation"></a>Abrufen eins Benutzerfotos für ein Postfach mithilfe der ResolveNames-Operation
 
-Wenn Sie die E-Mail-Adresse des Benutzers nicht kennen, für den Sie ein Foto abrufen, können [die ResolveNames-Operation](how-to-resolve-ambiguous-names-by-using-ews-in-exchange-2013.md) verwenden, um Kandidaten für eine möglicher Übereinstimmung abzurufen. Wenn Sie für das **ContactDataShape**-Attribut des [ResolveNames](http://msdn.microsoft.com/library/c85207e1-1315-443b-94ec-2b58f405076b%28Office.15%29.aspx)-Elements „AllProperties" angeben, werden für die einzelnen Kandidaten viele Daten einschließlich der Benutzerfotos zurückgegeben. Im folgenden Beispiel wird die XML-Anforderung zum Auflösen des Namens „Sadie" und Zurückgeben aller Eigenschaften für die einzelnen Kandidaten veranschaulicht. 
+Wenn Sie die E-Mail-Adresse des Benutzers nicht kennen, für den Sie ein Foto abrufen, können [die ResolveNames-Operation](how-to-resolve-ambiguous-names-by-using-ews-in-exchange-2013.md) verwenden, um Kandidaten für eine möglicher Übereinstimmung abzurufen. Wenn Sie für das **ContactDataShape**-Attribut des [ResolveNames](https://msdn.microsoft.com/library/c85207e1-1315-443b-94ec-2b58f405076b%28Office.15%29.aspx)-Elements „AllProperties" angeben, werden für die einzelnen Kandidaten viele Daten einschließlich der Benutzerfotos zurückgegeben. Im folgenden Beispiel wird die XML-Anforderung zum Auflösen des Namens „Sadie" und Zurückgeben aller Eigenschaften für die einzelnen Kandidaten veranschaulicht. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
 <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>  
@@ -186,11 +186,11 @@ Es werden viele Daten in der Antwort zurückgegeben. Im folgenden Beispiel werde
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:ResolveNamesResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:ResolveNamesResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:ResolveNamesResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -229,10 +229,10 @@ Sie können zum Abrufen von Fotos aus den in Ihrem Postfach gespeicherten Kontak
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetItem xmlns='http://schemas.microsoft.com/exchange/services/2006/messages'>
+    <GetItem xmlns='https://schemas.microsoft.com/exchange/services/2006/messages'>
       <ItemShape>
         <t:BaseShape>AllProperties</t:BaseShape>
       </ItemShape>
@@ -245,15 +245,15 @@ Sie können zum Abrufen von Fotos aus den in Ihrem Postfach gespeicherten Kontak
 
 ```
 
-Suchen Sie nach dem [HasPicture](http://msdn.microsoft.com/library/922a43fe-01bd-49f2-9261-e00e4699b8da%28Office.15%29.aspx)-Element, um zu überprüfen, ob dem Kontakt ein Foto zugeordnet ist. Durchsuchen Sie anschließend die Anlagensammlung nach demjenigen, bei dem ein Wert für das [IsContactPhoto](http://msdn.microsoft.com/library/ae36b5f9-a787-4863-9dbc-258ad724801d%28Office.15%29.aspx)-Element „true" lautet. Im folgenden Antwortbeispiel werden nur die relevanten Daten dargestellt. Die ID-Werte sind zur besseren Lesbarkeit gekürzt. 
+Suchen Sie nach dem [HasPicture](https://msdn.microsoft.com/library/922a43fe-01bd-49f2-9261-e00e4699b8da%28Office.15%29.aspx)-Element, um zu überprüfen, ob dem Kontakt ein Foto zugeordnet ist. Durchsuchen Sie anschließend die Anlagensammlung nach demjenigen, bei dem ein Wert für das [IsContactPhoto](https://msdn.microsoft.com/library/ae36b5f9-a787-4863-9dbc-258ad724801d%28Office.15%29.aspx)-Element „true" lautet. Im folgenden Antwortbeispiel werden nur die relevanten Daten dargestellt. Die ID-Werte sind zur besseren Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -293,11 +293,11 @@ Verwenden Sie als Nächstes die **GetAttachment**-Operation mit der **Attachment
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetAttachment xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetAttachment xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <AttachmentShape/>
       <AttachmentIds>
          <t:AttachmentId Id="1LGlhgpgoA="/>
@@ -308,15 +308,15 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 
 ```
 
-Im folgenden Beispiel wird die XML-Antwort mit den Informationen zu der angeforderten Anlage veranschaulicht. Das [Inhalts](http://msdn.microsoft.com/library/24f8c54a-505f-4fc0-b7e7-93ad50b97070%28Office.15%29.aspx)-Element enthält die Base64-codierte Zeichenfolge für das Benutzerfoto, die in diesem Beispiel zur besseren Lesbarkeit gekürzt wurde. 
+Im folgenden Beispiel wird die XML-Antwort mit den Informationen zu der angeforderten Anlage veranschaulicht. Das [Inhalts](https://msdn.microsoft.com/library/24f8c54a-505f-4fc0-b7e7-93ad50b97070%28Office.15%29.aspx)-Element enthält die Base64-codierte Zeichenfolge für das Benutzerfoto, die in diesem Beispiel zur besseren Lesbarkeit gekürzt wurde. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>

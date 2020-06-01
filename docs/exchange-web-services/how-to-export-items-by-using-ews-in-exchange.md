@@ -3,15 +3,15 @@ title: Exportieren von Elementen mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: e93ee68c-e134-4469-9070-fba404d46cb4
 description: Informationen zum Exportieren von Terminen, E-Mails, Kontakten, Aufgaben und anderen Elementen mithilfe der verwalteten EWS-API oder EWS in Exchange.
-ms.openlocfilehash: 65b5b2ef1eba66877d5b6f6c3d4237a26a254196
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: a01c9487821958b06ec162f2aee27e2d2804eaaf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756894"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455884"
 ---
 # <a name="export-items-by-using-ews-in-exchange"></a>Exportieren von Elementen mithilfe von EWS in Exchange
 
@@ -34,12 +34,12 @@ In diesem Artikel wird gezeigt, wie die verschiedenen Optionen zum Exportieren v
 ## <a name="export-an-item-into-a-custom-format"></a>Exportieren eines Elements in ein benutzerdefiniertes Format
 <a name="bk_exportcustom"> </a>
 
-Sie können die Ergebnisse eines verwalteten [Item.Bind](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getewsma)-EWS-API-Methodenaufrufs verwenden oder die Ergebnisse eines [GetItem](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getews)-EWS-Vorgangs in einem Format analysieren, das mit den Anforderungen Ihrer Anwendung funktioniert. Verwenden Sie diese Option, wenn Sie Elemente exportieren, um Sie in eine Datenbank, CSV-Datei, ein anderes Format oder ein anderes System zu importieren. Sie können das Element sogar in Form der Element-EWS-XML speichern. Das kann nützlich sein, da viele Systeme über eine XML-Analysefunktion verfügen. Wir empfehlen Ihnen, die **Item.Bind**-Methode oder den **GetItem**-Vorgang (ohne die [Item.MimeContent](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx)-Eigenschaft) zu verwenden, da Sie anhand dieser Option die Kontrolle darüber haben, welche Eigenschaften exportiert werden. 
+Sie können die Ergebnisse eines verwalteten [Item.Bind](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getewsma)-EWS-API-Methodenaufrufs verwenden oder die Ergebnisse eines [GetItem](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getews)-EWS-Vorgangs in einem Format analysieren, das mit den Anforderungen Ihrer Anwendung funktioniert. Verwenden Sie diese Option, wenn Sie Elemente exportieren, um Sie in eine Datenbank, CSV-Datei, ein anderes Format oder ein anderes System zu importieren. Sie können das Element sogar in Form der Element-EWS-XML speichern. Das kann nützlich sein, da viele Systeme über eine XML-Analysefunktion verfügen. Wir empfehlen Ihnen, die **Item.Bind**-Methode oder den **GetItem**-Vorgang (ohne die [Item.MimeContent](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx)-Eigenschaft) zu verwenden, da Sie anhand dieser Option die Kontrolle darüber haben, welche Eigenschaften exportiert werden. 
   
 ## <a name="export-items-with-full-fidelity"></a>Exportieren von Elementen mit vollständiger Genauigkeit
 <a name="bk_exportfullfidelity"> </a>
 
-Wenn Sie Elemente mit vollständiger Genauigkeit exportieren möchten, können Sie den [ExportItems](http://msdn.microsoft.com/library/e2846abb-0b16-4732-bbd8-038a674672f6%28Office.15%29.aspx)-EWS-Vorgang verwenden. Durch den **ExportItems**-Vorgang werden die Elemente als Datenstrom exportiert. Dieser Datenstrom dient nicht zur Analyse, kann jedoch als Sicherung auf Elementebene verwendet werden, die dann zurück in ein Exchange-Postfach importiert werden kann. Sie können viele Elemente in eine **ExportItems**-Anforderung aufnehmen, wir empfehlen jedoch, nicht mehr als 100 Elemente in die einzelnen Aufrufe einzufügen. Da die verwaltete EWS-API den **ExportItems**-Vorgang nicht implementiert, müssen Sie zum Senden der Webanforderungen eine Routine schreiben, wenn sie die verwaltete EWS-API verwenden. Optional können Sie die [Item.Bind](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx)-Methode verwenden, um Metadaten zu dem Element abzurufen, sodass Sie Informationen zu dem Datenstrom indizieren und speichern können. 
+Wenn Sie Elemente mit vollständiger Genauigkeit exportieren möchten, können Sie den [ExportItems](https://msdn.microsoft.com/library/e2846abb-0b16-4732-bbd8-038a674672f6%28Office.15%29.aspx)-EWS-Vorgang verwenden. Durch den **ExportItems**-Vorgang werden die Elemente als Datenstrom exportiert. Dieser Datenstrom dient nicht zur Analyse, kann jedoch als Sicherung auf Elementebene verwendet werden, die dann zurück in ein Exchange-Postfach importiert werden kann. Sie können viele Elemente in eine **ExportItems**-Anforderung aufnehmen, wir empfehlen jedoch, nicht mehr als 100 Elemente in die einzelnen Aufrufe einzufügen. Da die verwaltete EWS-API den **ExportItems**-Vorgang nicht implementiert, müssen Sie zum Senden der Webanforderungen eine Routine schreiben, wenn sie die verwaltete EWS-API verwenden. Optional können Sie die [Item.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx)-Methode verwenden, um Metadaten zu dem Element abzurufen, sodass Sie Informationen zu dem Datenstrom indizieren und speichern können. 
   
 Wir empfehlen Ihnen, zum Exportieren von Elementen den **ExportItems**-Vorgang zu verwenden, die Sie anschließend in ein Exchange-Postfach importieren möchten. 
   
@@ -49,9 +49,9 @@ Im folgenden Beispiel wird aufgezeigt, wie Sie den **ExportItems**-Vorgang verwe
 <?xml version="1.0" encoding="utf-8" ?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-      xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-      xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+      xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+      xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013"/>
   </soap:Header>
@@ -65,13 +65,13 @@ Im folgenden Beispiel wird aufgezeigt, wie Sie den **ExportItems**-Vorgang verwe
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **ExportItems**-Anforderung mit einem [ExportItemsResponse](http://msdn.microsoft.com/library/ef44354b-fbdb-4f7c-b6bd-b27f56a1d018%28Office.15%29.aspx)-Element, das einen [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)-Elementwert von **NoError** enthält, der angibt, dass das Element erfolgreich exportiert wurde. Die Antwort enthält außerdem die Element-ID des exportierten Elements und den Datenstrom, der die exportierten Inhalte enthält. Im folgenden Beispiel wird der SOAP-Text veranschaulicht, der das exportierte Element enthält.
+Der Server antwortet auf die **ExportItems**-Anforderung mit einem [ExportItemsResponse](https://msdn.microsoft.com/library/ef44354b-fbdb-4f7c-b6bd-b27f56a1d018%28Office.15%29.aspx)-Element, das einen [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)-Elementwert von **NoError** enthält, der angibt, dass das Element erfolgreich exportiert wurde. Die Antwort enthält außerdem die Element-ID des exportierten Elements und den Datenstrom, der die exportierten Inhalte enthält. Im folgenden Beispiel wird der SOAP-Text veranschaulicht, der das exportierte Element enthält.
   
 ```XML
 <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <m:ExportItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  <m:ExportItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
     <m:ResponseMessages>
       <m:ExportItemsResponseMessage ResponseClass="Success">
         <m:ResponseCode>NoError</m:ResponseCode>
@@ -90,12 +90,12 @@ Der Server antwortet auf die **ExportItems**-Anforderung mit einem [ExportItemsR
 ## <a name="use-the-mime-stream-to-export-into-common-file-formats"></a>Verwenden des MIME-Stroms zum Exportieren in gängige Dateiformate
 <a name="bk_exportfullfidelity"> </a>
 
-Sie können die verwaltete [Item.Bind](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx)-EWS-API-Methode oder den [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)-EWS-Vorgang verwenden, um eine MIME-Darstellung eines Elements abzurufen. Da Exchange die MIME-Inhalte der einzelnen Elemente nicht speichert, muss es die Datenbank-Darstellung der einzelnen Elemente in den MIME-Strom konvertieren. Da diese Konvertierung sehr ressourcenintensiv ist, wird nicht empfohlen, den MIME-Strom für viele Elemente anzufordern. Beachten Sie außerdem, dass der MIME-Strom eine begrenzte Anzahl von Eigenschaften enthält; Sie müssen möglicherweise andere Optionen in Betracht ziehen, wenn die Eigenschaftengruppe nicht die erforderlichen Eigenschaften enthält. 
+Sie können die verwaltete [Item.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx)-EWS-API-Methode oder den [GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)-EWS-Vorgang verwenden, um eine MIME-Darstellung eines Elements abzurufen. Da Exchange die MIME-Inhalte der einzelnen Elemente nicht speichert, muss es die Datenbank-Darstellung der einzelnen Elemente in den MIME-Strom konvertieren. Da diese Konvertierung sehr ressourcenintensiv ist, wird nicht empfohlen, den MIME-Strom für viele Elemente anzufordern. Beachten Sie außerdem, dass der MIME-Strom eine begrenzte Anzahl von Eigenschaften enthält; Sie müssen möglicherweise andere Optionen in Betracht ziehen, wenn die Eigenschaftengruppe nicht die erforderlichen Eigenschaften enthält. 
   
 ### <a name="use-the-ews-managed-api-to-export-an-email-into-an-eml-and-mht-file-by-using-the-mime-stream"></a>Verwenden Sie zum Exportieren einer E-Mail in eine EML- und MHT-Datei die verwaltete EWS-API, indem Sie den MIME-Strom verwenden
 <a name="bk_exportemailmime"> </a>
 
-Outlook und andere gängige E-Mail-Anwendungen können das EML-Dateiformat öffnen. Im folgenden Beispiel wird veranschaulicht, wie Sie eine E-Mail mithilfe des MIME-Stroms exportieren können, und den MIME-Strom zum Erstellen einer EML- und MIME-HTML-Datei (MHT) verwenden können. In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist, und der Benutzer sich an einem Exchange-Server authentifizieren kann. 
+Outlook und andere gängige E-Mail-Anwendungen können das EML-Dateiformat öffnen. Im folgenden Beispiel wird veranschaulicht, wie Sie eine E-Mail mithilfe des MIME-Stroms exportieren können, und den MIME-Strom zum Erstellen einer EML- und MIME-HTML-Datei (MHT) verwenden können. In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist, und der Benutzer sich an einem Exchange-Server authentifizieren kann. 
   
 ```cs
 private static void ExportMIMEEmail(ExchangeService service)
@@ -132,7 +132,7 @@ private static void ExportMIMEEmail(ExchangeService service)
 
 Outlook und andere gängige Kalenderanwendungen können das iCal-Dateiformat (ICS) öffnen. Im folgenden Beispiel wird veranschaulicht, wie ein Termin mithilfe des MIME-Stroms exportiert, und der MIME-Strom zum Erstellen einer iCal-Datei verwendet werden kann. Beachten Sie, dass viele Eigenschaften nicht mit dem MIME-Strom exportiert werden, dazu gehören auch Teilnehmer und anhangsbezogene Eigenschaften. Sie können andere Eigenschaften aus EWS aufnehmen, indem Sie sie anfordern und in der iCal-Datei als private Erweiterungen speichern. Diese privaten Erweiterungen erhalten das Präfix „x-". 
   
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist, und der Benutzer sich an einem Exchange-Server authentifizieren kann. In diesem Beispiel wird außerdem davon ausgegangen, dass Sie einen Termin mit dem Betreff „Finanzplanung 2015" im Kalender-Ordner besitzen. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist, und der Benutzer sich an einem Exchange-Server authentifizieren kann. In diesem Beispiel wird außerdem davon ausgegangen, dass Sie einen Termin mit dem Betreff „Finanzplanung 2015" im Kalender-Ordner besitzen. 
   
 ```cs
 private static void ExportMIMEAppointment(ExchangeService service)
@@ -162,7 +162,7 @@ private static void ExportMIMEAppointment(ExchangeService service)
 
 Outlook und andere gängige Kontaktverwaltungsanwendungen können das vCard-Dateiformat (VCF) öffnen. Im folgenden Beispiel wird veranschaulicht, wie Sie einen Kontakt mit dem MIME-Strom exportieren, und den MIME-Strom zum Erstellen einer vCard verwenden können. Sie können andere Eigenschaften aus EWS aufnehmen, indem Sie sie anfordern und in der vCard als private Erweiterungen speichern. Diese Erweiterungen erhalten das Präfix „x-". 
   
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist, und der Benutzer sich mit einem Exchange-Server authentifizieren kann. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist, und der Benutzer sich mit einem Exchange-Server authentifizieren kann. 
   
 ```cs
 private static void ExportMIMEContact(ExchangeService service)
@@ -188,7 +188,7 @@ private static void ExportMIMEContact(ExchangeService service)
 ```
 
 > [!NOTE]
-> Sie können vCard-Dateien nicht mithilfe der **MimeContent** -Eigenschaft importieren. Sie können Kontakte mithilfe der verwalteten [Contact.Save](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.contact.save%28v=exchg.80%29.aspx)-EWS-API-Methode oder dem [CreateItem](http://msdn.microsoft.com/library/417e994b-0a17-4c24-9527-04796b80b029%28Office.15%29.aspx)-EWS-Vorgang importieren. 
+> Sie können vCard-Dateien nicht mithilfe der **MimeContent** -Eigenschaft importieren. Sie können Kontakte mithilfe der verwalteten [Contact.Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact.save%28v=exchg.80%29.aspx)-EWS-API-Methode oder dem [CreateItem](https://msdn.microsoft.com/library/417e994b-0a17-4c24-9527-04796b80b029%28Office.15%29.aspx)-EWS-Vorgang importieren. 
   
 ### <a name="use-ews-to-export-any-item-by-using-the-mime-stream"></a>Verwenden Sie EWS zum Exportieren eines beliebigen Elements mithilfe des MIME-Stroms
 <a name="bk_exportewsmime"> </a>
@@ -198,9 +198,9 @@ Verwenden Sie den **GetItem**-Vorgang zum Abrufen des MIME-Stroms eines Elements
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -222,22 +222,22 @@ Im folgenden Beispiel wird die Antwort auf eine Anforderung zum Abrufen des MIME
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" 
                          MinorVersion="0" 
                          MajorBuildNumber="893" 
                          MinorBuildNumber="17" 
                          Version="V2_10" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>

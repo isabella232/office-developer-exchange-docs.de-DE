@@ -3,15 +3,15 @@ title: Entwickeln von Webdienstclients für Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 899ba15b-336d-4f9b-8563-318c61e43713
 description: Hier finden Sie Informationen zum Entwickeln von EWS- und Webdienst-Clientanwendungen für Exchange.
-ms.openlocfilehash: 2b8b032124e45dda7c83932d519ffb87bcdb5514
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: 25a54ca5c836715cfdde5ac44dafb383e851107d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756817"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456108"
 ---
 # <a name="develop-web-service-clients-for-exchange"></a>Entwickeln von Webdienstclients für Exchange
 

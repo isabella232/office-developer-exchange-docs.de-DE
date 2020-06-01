@@ -3,15 +3,15 @@ title: Suchen nach AutoErmittlungs-Endpunkten mit der SCP-Suche in Exchange
 manager: kelbow
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: b24228a8-5127-4bac-aef0-9c9e8843c9ff
 description: Erfahren Sie, wie Sie AutoErmittlungs-SCP-Objekte in Active Directory-Domänendienste (AD DS) suchen und verwenden, um AutoErmittlungsendpunkt-URLs für die Verwendung mit dem Exchange-AutoErmittlungsdienst zu suchen.
-ms.openlocfilehash: 59fd316d0aa0feea81b60c279040da018c51b47d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: c0c0364a7d69364e12db902f1f22d65c4b5a0cc5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756885"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455877"
 ---
 # <a name="find-autodiscover-endpoints-by-using-scp-lookup-in-exchange"></a>Suchen nach AutoErmittlungs-Endpunkten mit der SCP-Suche in Exchange
 
@@ -37,7 +37,7 @@ Außerdem sollten Sie sich vor Beginn mit einigen grundlegenden Konzepten vertra
 |**Artikel**|**Thema**|
 |:-----|:-----|
 |[AutoErmittlung für Exchange](autodiscover-for-exchange.md) <br/> |Funktionsweise des AutoErmittlungsdiensts  <br/> |
-|[Veröffentlichen mit Dienstverbindungspunkten](http://msdn.microsoft.com/library/3544aa64-ecb0-48a1-ae49-05247a983842%28Office.15%29.aspx) <br/> |Verwendung von SCP-Objekten zum Veröffentlichen von dienstspezifischen Daten  <br/> |
+|[Veröffentlichen mit Dienstverbindungspunkten](https://msdn.microsoft.com/library/3544aa64-ecb0-48a1-ae49-05247a983842%28Office.15%29.aspx) <br/> |Verwendung von SCP-Objekten zum Veröffentlichen von dienstspezifischen Daten  <br/> |
    
 ## <a name="locate-autodiscover-scp-objects-in-ad-ds"></a>Suchen von AutoErmittlungs-SCP-Objekten in AD DS
 <a name="bk_LocateScpObjects"> </a>
@@ -50,7 +50,7 @@ Der erste Schritte bei der Suche nach in AD DS veröffentlichten AutoErmittlungs
     
 ### <a name="to-locate-autodiscover-scp-objects"></a>So suchen Sie nach AutoErmittlungs-SCP-Objekten
 
-1. In der **configurationNamingContext** -Eigenschaft des DSE-Stammeintrags in AD DS finden Sie den Pfad zum Konfigurationsbenennungskontext für die Domäne. Zum Lesen dieser Eigenschaft können Sie die [DirectoryEntry](http://msdn2.microsoft.com/de-DE/library/z9cddzaa)-Klasse oder jede andere API verwenden, die auf AD DS zugreifen kann. 
+1. In der **configurationNamingContext** -Eigenschaft des DSE-Stammeintrags in AD DS finden Sie den Pfad zum Konfigurationsbenennungskontext für die Domäne. Zum Lesen dieser Eigenschaft können Sie die [DirectoryEntry](https://msdn2.microsoft.com/library/z9cddzaa)-Klasse oder jede andere API verwenden, die auf AD DS zugreifen kann. 
     
 2. Suchen Sie im Konfigurationsbenennungskontext nach SCP-Objekten, deren **keywords** -Eigenschaft entweder die GUID des SCP-Zeigers oder die GUID der SCP-URL enthält. 
     

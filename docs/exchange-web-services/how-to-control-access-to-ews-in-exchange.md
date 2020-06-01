@@ -3,15 +3,15 @@ title: Steuern des Zugriffs auf EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 61e29e54-e3e5-404a-84c0-93b61a25ca58
 description: Erfahren Sie, wie der Zugriff auf EWS für Benutzer, Anwendungen oder die gesamte Organisation gesteuert wird.
-ms.openlocfilehash: 956c28faba105ecf2a6b1452abe629ea2fc930e1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: bd65b099ab15c1514945d8a1cfa4e9b1428a4755
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756870"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456878"
 ---
 # <a name="control-access-to-ews-in-exchange"></a>Steuern des Zugriffs auf EWS in Exchange
 
@@ -24,10 +24,10 @@ Unabhängig davon, ob Sie die verwaltete EWS-API oder EWS direkt in Ihrer Anwend
 
 Mit den folgenden Cmdlets der Exchange-Verwaltungsshell können Sie die aktuelle Zugriffskonfiguration anzeigen und EWS-Zugriffssteuerungen festlegen:
   
-- [Get-CASMailbox](http://technet.microsoft.com/de-DE/library/bb124754.aspx): Zeigt an, welche Parameter für ein bestimmtes Postfach festgelegt sind.   
-- [Set-CASMailbox](http://technet.microsoft.com/de-DE/library/bb125264.aspx): Legt Parameter für ein bestimmtes Postfach fest.    
-- [Get-OrganizationConfig](http://technet.microsoft.com/de-DE/library/aa997571.aspx): Zeigt die Parameter für die gesamte Organisation an.    
-- [Set-OrganizationConfig](http://technet.microsoft.com/de-DE/library/aa997443.aspx): Legt die Parameter für die gesamte Organisation fest. 
+- [Get-CASMailbox](https://technet.microsoft.com/library/bb124754.aspx): Zeigt an, welche Parameter für ein bestimmtes Postfach festgelegt sind.   
+- [Set-CASMailbox](https://technet.microsoft.com/library/bb125264.aspx): Legt Parameter für ein bestimmtes Postfach fest.    
+- [Get-OrganizationConfig](https://technet.microsoft.com/library/aa997571.aspx): Zeigt die Parameter für die gesamte Organisation an.    
+- [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443.aspx): Legt die Parameter für die gesamte Organisation fest. 
 
 <a name="bk_Examples"> </a>
 
@@ -52,8 +52,7 @@ Werfen wir einen Blick auf einige Szenarien, in denen gezeigt wird, wie Sie den 
 
 - [Einrichten Ihrer EWS-Anwendung](setting-up-your-ews-application.md)    
 - [Steuern des Clientanwendungszugriffs auf EWS in Exchange](controlling-client-application-access-to-ews-in-exchange.md)   
-- 
-  [Exchange Server-PowerShell (Exchange-Verwaltungsshell)](https://docs.microsoft.com/en-us/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps) 
-- [Windows PowerShell](http://msdn.microsoft.com/de-DE/library/dd835506%28v=vs.85%29.aspx)
+- [Exchange Server-PowerShell (Exchange-Verwaltungsshell)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps) 
+- [Windows PowerShell](https://msdn.microsoft.com/library/dd835506%28v=vs.85%29.aspx)
     
 

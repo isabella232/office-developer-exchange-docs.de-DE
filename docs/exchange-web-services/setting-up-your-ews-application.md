@@ -3,15 +3,15 @@ title: Einrichten Ihrer EWS-Anwendung
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 0d45e347-f832-478d-b078-7c2852c0d204
 description: Finden Sie Informationen zu den Aufgaben, die Sie erledigen müssen, um Anwendungen zu erstellen, die die verwaltete EWS-API oder EWS verwenden, um mit Exchange zu kommunizieren.
-ms.openlocfilehash: b8f402d3c4555f971b08fd891b5b64ca49a57e0d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: ff5b21a1636a1c4cc1ef6256989e72ba7c21c96d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757119"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463811"
 ---
 # <a name="setting-up-your-ews-application"></a>Einrichten Ihrer EWS-Anwendung
 
