@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: a88dada9-c527-43a7-b2d3-31aad330def9
-description: Das GlobalLastDeliveryTime-Element enthält die Zeit der Zustellung der Nachricht, die zuletzt in dieser Unterhaltung in allen Ordnern im Postfach empfangen wurde.
-ms.openlocfilehash: fded5cd1891a406f0979cf4bec7321779d70ab3a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GlobalLastDeliveryTime-Element enthält die Zustellungszeit der Nachricht, die zuletzt in dieser Unterhaltung über alle Ordner im Postfach empfangen wurde.
+ms.openlocfilehash: b6d4d7c1d51c206e44973a717d25df4066845ada
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829733"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459412"
 ---
 # <a name="globallastdeliverytime"></a>GlobalLastDeliveryTime
 
-Das **GlobalLastDeliveryTime** -Element enthält die Zeit der Zustellung der Nachricht, die zuletzt in dieser Unterhaltung in allen Ordnern im Postfach empfangen wurde. 
+Das **GlobalLastDeliveryTime** -Element enthält die Zustellungszeit der Nachricht, die zuletzt in dieser Unterhaltung über alle Ordner im Postfach empfangen wurde. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -56,17 +56,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **GlobalLastDeliveryTime** -Elements ist das Datum und die Uhrzeit der Nachricht, die zuletzt in dieser Unterhaltung in allen Ordnern im Postfach empfangen wurde. 
+Der Textwert des **GlobalLastDeliveryTime** -Elements ist das Datum und die Uhrzeit der Nachricht, die zuletzt in dieser Unterhaltung über alle Ordner im Postfach empfangen wurde. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt. Das Schema, das dieses Element beschreibt befindet sich in dem virtuellen IIS-Verzeichnis, die Exchange-Webdienste gehostet wird.
+Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt. Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, in dem Exchange Webdienste gehostet wird.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
@@ -80,5 +80,5 @@ Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt. D
 [ApplyConversationAction-Vorgang](applyconversationaction-operation.md)
 
 
-[Conversations in EWS](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+[Conversations in EWS](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

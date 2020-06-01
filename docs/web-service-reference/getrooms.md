@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 82a737c7-da41-4777-8ad8-89851a0b602b
-description: Das GetRooms-Element ist das Stammelement im eine Anforderung an eine Liste der Räume innerhalb einer bestimmten Raumliste abrufen.
-ms.openlocfilehash: a787097752cfeee9489e5f118549c2d939ba4c9a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das getrooms-Element ist das Stammelement in einer Anforderung zum Abrufen einer Liste von Räumen in einer bestimmten Raumliste.
+ms.openlocfilehash: 77fde5980a03d4c0509344933b0901cb21ab7197
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758793"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458593"
 ---
 # <a name="getrooms"></a>GetRooms
 
-Das **GetRooms** -Element ist das Stammelement im eine Anforderung an eine Liste der Räume innerhalb einer bestimmten Raumliste abrufen. 
+Das **getrooms** -Element ist das Stammelement in einer Anforderung zum Abrufen einer Liste von Räumen in einer bestimmten Raumliste. 
   
 ```XML
 <GetRooms>
@@ -29,7 +29,7 @@ Das **GetRooms** -Element ist das Stammelement im eine Anforderung an eine Liste
 </GetRooms>
 ```
 
- **GetRoomsType**
+ **Getroomtype**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RoomList](roomlist.md) <br/> |Stellt eine e-Mail-Adresse, die eine Liste von Besprechungsräumen identifiziert.  <br/> |
+|[RoomList](roomlist.md) <br/> |Stellt eine e-Mail-Adresse dar, die eine Liste von Besprechungsräumen identifiziert.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,17 +52,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

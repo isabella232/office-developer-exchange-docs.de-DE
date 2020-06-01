@@ -1,5 +1,5 @@
 ---
-title: CreateItem Operation
+title: CreateItem-Vorgang
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 78a52120-f1d0-4ed7-8748-436e554f75b6
-description: Der Vorgang CreateItem erstellt Elemente im Exchange-Speicher.
-ms.openlocfilehash: 7e1808c685cdbaa1e8867aa7425b2cc52218d001
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der CreateItem-Vorgang erstellt Elemente in der Exchange-Informationsspeicher.
+ms.openlocfilehash: f6aaa9ed8e8257f19780492d6137fb015c1b6136
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757781"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458866"
 ---
-# <a name="createitem-operation"></a>CreateItem Operation
+# <a name="createitem-operation"></a>CreateItem-Vorgang
 
-Der Vorgang CreateItem erstellt Elemente im Exchange-Speicher.
+Der CreateItem-Vorgang erstellt Elemente in der Exchange-Informationsspeicher.
   
-## <a name="using-the-createitem-operation"></a>Verwenden den CreateItem-Vorgang
+## <a name="using-the-createitem-operation"></a>Verwenden des CreateItem-Vorgangs
 
-Den CreateItem-Vorgang können Sie Folgendes erstellen:
+Sie können den CreateItem-Vorgang verwenden, um Folgendes zu erstellen:
   
-- Kalenderelementen (engl.)
+- Kalenderelemente
     
 - E-Mails
     
@@ -37,30 +37,30 @@ Den CreateItem-Vorgang können Sie Folgendes erstellen:
     
 - Kontakte
     
-Weitere Informationen finden Sie unter [CreateItem Operation (Kalenderelement)](createitem-operation-calendar-item.md), [CreateItem-Vorgang (e-Mail-Nachricht)](createitem-operation-email-message.md), [CreateItem-Vorgang (Besprechungsanfrage)](createitem-operation-meeting-request.md), [CreateItem-Vorgang (Aufgabe)](createitem-operation-task.md)und [CreateItem-Vorgang (Kontakt) ](createitem-operation-contact.md).
+Weitere Informationen finden Sie unter [CreateItem-Vorgang (Kalenderelement)](createitem-operation-calendar-item.md), CreateItem-Vorgang [(e-Mail-Nachricht)](createitem-operation-email-message.md), [CreateItem-Vorgang (Besprechungsanfrage)](createitem-operation-meeting-request.md), CreateItem-Vorgang [(Aufgabe)](createitem-operation-task.md)und [CreateItem-Vorgang (Kontakt)](createitem-operation-contact.md).
   
-Die CreateItem Operation unterstützt die Verwendung von Antwort-Objekten. Antwortobjekte unterstützen die Annahme und Ablehnung von Besprechungen und die Behandlung von Abstimmungsoptionen Schaltflächen, die in einer standard-e-Mail-Nachricht enthalten sind. Die folgende Tabelle enthält die Antwortobjekte, die in der CreateItem Operation behandelt werden.
+Der CreateItem-Vorgang unterstützt die Verwendung von Response-Objekten. Antwortobjekte unterstützen die Akzeptanz und Ablehnung von Besprechungen und die Handhabung von Abstimmungsschaltflächen, die in einer Standard-e-Mail-Nachricht enthalten sind. In der folgenden Tabelle sind die Response-Objekte aufgeführt, die im CreateItem-Vorgang behandelt werden.
   
-|**Response-Objekt**|**Aktion**|
+|**Response-Objekt**|**Action**|
 |:-----|:-----|
-|AcceptItem  <br/> |Annehmen von Besprechungsanfragen.  <br/> |
-|CancelCalendarItem  <br/> |Stornieren einer Besprechung. Dies unterscheidet sich von löschen alle Teilnehmer, da es für den Organisator die Besprechung auch gelöscht.  <br/> |
+|AcceptItem  <br/> |Annehmen einer Besprechungsanfrage.  <br/> |
+|CancelCalendarItem  <br/> |Stornieren einer Besprechung. Dies unterscheidet sich vom Löschen aller Teilnehmer, da die Besprechung auch für den Organisator gelöscht wird.  <br/> |
 |DeclineItem  <br/> |Ablehnen einer Besprechungsanfrage.  <br/> |
-|ForwardItem  <br/> |Senden Sie eine Besprechungsanfrage an eine andere Person als eine Besprechungsanfrage.  <br/> |
+|ForwardItem  <br/> |Senden Sie eine Besprechungsanfrage als Besprechungsanfrage an eine andere Person.  <br/> |
 |RemoveItem  <br/> |Entfernen einer abgebrochenen Besprechung aus dem Kalender.  <br/> |
-|ReplyAllToItem  <br/> |Senden einer Nachricht, die den Textkörper der ursprünglichen Besprechungsanfrage an alle Teilnehmer der Besprechung enthält.  <br/> |
-|ReplyToItem  <br/> |Senden einer Nachricht, die den Textkörper der ursprünglichen Besprechungsanfrage an den Absender der Besprechungsanfrage enthält.  <br/> |
-|SendReadReceipt  <br/> |Senden Sie eine lesebestätigung an den Absender der Besprechungsanfrage.  <br/> |
-|TentativelyAcceptItem  <br/> |Mit Vorbehalt annehmen einer Besprechungsanfrage.  <br/> |
+|ReplyAllToItem  <br/> |Senden Sie eine Nachricht, die den Textkörper der ursprünglichen Besprechungsanfrage enthält, an alle Teilnehmer der Besprechung.  <br/> |
+|ReplyToItem  <br/> |Senden Sie eine Nachricht, die den Textkörper der ursprünglichen Besprechungsanfrage enthält, an den Absender der Besprechungsanfrage.  <br/> |
+|SendReadReceipt  <br/> |Senden Sie eine Lesebestätigung an den Absender der Besprechungsanfrage.  <br/> |
+|TentativelyAcceptItem  <br/> |Akzeptieren Sie eine Besprechungsanfrage mit Vorbehalt.  <br/> |
    
-Die CreateItem Operation unterstützt auch zusätzliche Besprechung-Objekte. Die folgende Tabelle enthält zusätzliche-Objekten, die CreateItem Operation unterstützt.
+Der CreateItem-Vorgang unterstützt auch zusätzliche Besprechungsobjekte. In der folgenden Tabelle sind zusätzliche Objekte aufgeführt, die vom CreateItem-Vorgang unterstützt werden.
   
-|**Meeting-Objekt**|**Beschreibung**|
+|**Besprechungsobjekt**|**Beschreibung**|
 |:-----|:-----|
-|Meeting-Nachricht  <br/> |Stellt eine Besprechungsnachricht im Exchange-Speicher. Dies ist das Basisobjekt für die Besprechung Objekte.  <br/> |
+|Besprechungsnachricht  <br/> |Stellt eine Besprechungsnachricht im Exchange-Informationsspeicher dar. Dies ist das Basisobjekt für die anderen Besprechungsobjekte.  <br/> |
 |Besprechungsanfrage  <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
-|Antwort auf Besprechungsanfrage  <br/> |Stellt eine Besprechungsantwort im Exchange-Informationsspeicher dar.  <br/> |
-|Besprechungsabsagen  <br/> |Stellt eine Besprechungsabsage im Exchange-Informationsspeicher dar.  <br/> |
+|Besprechungsantwort  <br/> |Stellt eine Besprechungsantwort im Exchange-Informationsspeicher dar.  <br/> |
+|Besprechungs Abbruch  <br/> |Stellt eine Besprechungsabsage im Exchange-Informationsspeicher dar.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

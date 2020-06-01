@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: a5ee2504-db84-49ee-870c-cca9269f2e26
-description: Das Element EndDateRecurrence beschreibt das Startdatum und das Enddatum des ein Element Serienmuster.
-ms.openlocfilehash: 73450bf69c6b122e806d85011975159e348ad740
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EndDateRecurrence-Element beschreibt das Startdatum und das Enddatum eines Element Serienmusters.
+ms.openlocfilehash: e8ae72012e5bcac8d8b2a06b6d3a9b3a7caf30d7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758234"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460148"
 ---
 # <a name="enddaterecurrence"></a>EndDateRecurrence
 
-Das Element **EndDateRecurrence** beschreibt das Startdatum und das Enddatum des ein Element Serienmuster. 
+Das **EndDateRecurrence** -Element beschreibt das Startdatum und das Enddatum eines Element Serienmusters. 
   
 ```xml
 <EndDateRecurrence>
@@ -43,25 +43,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StartDate (Serie)](startdate-recurrence.md) <br/> |Stellt das Startdatum einer Aufgabenserie oder Kalenderelement.  <br/> |
-|[EndDate (Serie)](enddate-recurrence.md) <br/> |Stellt das Enddatum einer Aufgabenserie oder Kalenderelement.  <br/> |
+|[StartDate (Serie)](startdate-recurrence.md) <br/> |Stellt das Startdatum eines periodischen Vorgangs oder Kalenderelements dar.  <br/> |
+|[EndDate (Serie)](enddate-recurrence.md) <br/> |Stellt das Enddatum eines periodischen Vorgangs oder Kalenderelements dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Serie (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Das Serienmuster für Kalenderelemente und Besprechungsanfragen enthält.  <br/> |
-|[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Das Serienmuster für wiederkehrende Aufgaben enthält.  <br/> |
+|[Serie (serietype)](recurrence-recurrencetype.md) <br/> |Enthält das Serienmuster für Kalenderelemente und Besprechungsanfragen.  <br/> |
+|[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Enthält das Serienmuster für wiederkehrende Vorgänge.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

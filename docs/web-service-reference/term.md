@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1a796535-7e83-4aa8-850a-d217059050f8
-description: Term-Elements gibt einen hervorgehobenen Begriff in einer Antwort FindConversation oder FindItem an.
-ms.openlocfilehash: cef2ecd7c51b61ccff2c7261a7a612095047956c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Term-Element gibt einen hervorgehobenen Ausdruck in einer FindConversation-oder FindItem-Antwort an.
+ms.openlocfilehash: fb102e21d6e7866110735cacd60cd2c3c68a9675
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839177"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459490"
 ---
 # <a name="term"></a>Begriff
 
-**Term** -Elements gibt einen hervorgehobenen Begriff in einer Antwort **FindConversation** oder **FindItem** an. 
+Das **Term** -Element gibt einen hervorgehobenen Ausdruck in einer **FindConversation** -oder **FindItem** -Antwort an. 
   
 ```XML
 <Term>
@@ -37,23 +37,23 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[Bereich (HighlightTermType)](scope-highlighttermtype.md) | [Wert](value.md)
+[Bereich (HighlightTermType)](scope-highlighttermtype.md)  |  [Wert](value.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [HighlightTerms](highlightterms.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

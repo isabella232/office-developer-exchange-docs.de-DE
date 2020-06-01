@@ -1,5 +1,5 @@
 ---
-title: TimeOffset
+title: Offset
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b70bf498-cc3a-4fa6-8236-514acb973b33
-description: Das TimeOffset-Element stellt Offset der von der koordinierten Weltzeit (UTC) für den Übergang zur Zeitzone dar.
-ms.openlocfilehash: 46b1b2c8eec9bae871b4dafe43036e9d725075ae
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Time Offset-Element stellt den Zeitversatz zwischen der koordinierten Weltzeit (Coordinated Universal Time, UTC) für den Zeitzonenübergang dar.
+ms.openlocfilehash: 8cfd43477f0548227204da9ebc6d7e9307786845
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839189"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460288"
 ---
-# <a name="timeoffset"></a>TimeOffset
+# <a name="timeoffset"></a>Offset
 
-Das **TimeOffset** -Element stellt Offset der von der koordinierten Weltzeit (UTC) für den Übergang zur Zeitzone dar. 
+Das Time **Offset** -Element stellt den Zeitversatz zwischen der koordinierten Weltzeit (Coordinated Universal Time, UTC) für den Zeitzonenübergang dar. 
   
 ```XML
 <TimeOffset/>
@@ -44,22 +44,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RecurringDateTransition](recurringdatetransition.md) <br/> |Stellt einen Zeitzone Übergang dar, der einem bestimmten Datum pro Jahr auftritt.  <br/> |
-|[RecurringDayTransition](recurringdaytransition.md) <br/> |Stellt einen Zeitzone Übergang dar, bei dem gleichen Tag pro Jahr auftritt.  <br/> |
+|[RecurringDateTransition](recurringdatetransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der jedes Jahr an einem bestimmten Datum auftritt.  <br/> |
+|[RecurringDayTransition](recurringdaytransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der an demselben Tag jedes Jahr erfolgt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **TimeOffset** -Element wird eine Dauer, die UTC-Zeitoffset für den Übergang zur Zeitzone angibt. 
+Der Textwert des Time **Offset** -Elements ist eine Dauer, die den Zeitversatz von UTC für den Zeitzonenübergang angibt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

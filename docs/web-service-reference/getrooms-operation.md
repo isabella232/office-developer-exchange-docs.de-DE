@@ -11,34 +11,34 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5501ddc0-3bfa-4da6-8e15-4223ca5499a3
-description: Der Vorgang GetRooms Ruft die Räume innerhalb der angegebenen Raumliste ab.
-ms.openlocfilehash: 3718c476881ae8aa538646464e7c61845d849562
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der getrooms-Vorgang ruft die Räume in der angegebenen Raumliste ab.
+ms.openlocfilehash: 4cb124b96637b9fcdca15595faebb2ce4d304de0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758792"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460547"
 ---
 # <a name="getrooms-operation"></a>GetRooms-Vorgang
 
-Der Vorgang **GetRooms** Ruft die Räume innerhalb der angegebenen Raumliste ab. 
+Der **getrooms** -Vorgang ruft die Räume in der angegebenen Raumliste ab. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der Vorgang **GetRooms** können die SOAP-Header, die aufgeführt und in der folgenden Tabelle beschrieben. 
+Der **getrooms** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Identitätswechsel  <br/> |["ExchangeImpersonation"](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt.  <br/> |
+|Identitätswechsel  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt.  <br/> |
 |MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Gibt die RFC3066-Kultur an, die für den Zugriff auf das Postfach verwendet wird.  <br/> |
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="getrooms-request-example"></a>Anforderungsbeispiel GetRooms
+## <a name="getrooms-request-example"></a>Getrooms-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Es folgt ein Beispiel für eine **GetRooms** -Anforderung, die die Räume versehen werden, die eine Raumliste zugeordnet sind. 
+Nachfolgend sehen Sie ein Beispiel für eine **getrooms** -Anforderung, die die Räume abruft, die einer Raumliste zugeordnet sind. 
   
 ### <a name="code"></a>Code
 
@@ -46,8 +46,8 @@ Es folgt ein Beispiel für eine **GetRooms** -Anforderung, die die Räume verseh
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version ="Exchange2010_SP1"/>
   </soap:Header>
@@ -73,11 +73,11 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
-## <a name="successful-getrooms-response-example"></a>Erfolgreiche GetRooms antwortbeispiel
+## <a name="successful-getrooms-response-example"></a>Erfolgreiches getrooms-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Die folgende Antwort zeigt die e-Mail-Adressinformationen für die Chatrooms, die die Raumliste zugeordnet sind.
+Die folgende Antwort zeigt die e-Mail-Adressinformationen für die Räume, die der Raumliste zugeordnet sind.
   
 ### <a name="code"></a>Code
 
@@ -85,13 +85,13 @@ Die folgende Antwort zeigt die e-Mail-Adressinformationen für die Chatrooms, di
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="14" MinorVersion="1" MajorBuildNumber="164" MinorBuildNumber="0" Version="Exchange2010_SP1" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+    <h:ServerVersionInfo MajorVersion="14" MinorVersion="1" MajorBuildNumber="164" MinorBuildNumber="0" Version="Exchange2010_SP1" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <GetRoomsResponse ResponseClass="Success" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetRoomsResponse ResponseClass="Success" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
-      <m:Rooms xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
-        <t:Room xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:Rooms xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
+        <t:Room xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
           <t:Id>
             <t:Name>Room01</t:Name>
             <t:EmailAddress>Room01@contoso.com</t:EmailAddress>
@@ -99,7 +99,7 @@ Die folgende Antwort zeigt die e-Mail-Adressinformationen für die Chatrooms, di
             <t:MailboxType>Mailbox</t:MailboxType>
           </t:Id>
         </t:Room>
-        <t:Room xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+        <t:Room xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
           <t:Id>
             <t:Name>Room02</t:Name>
             <t:EmailAddress>Room02@contoso.com</t:EmailAddress>
@@ -113,7 +113,7 @@ Die folgende Antwort zeigt die e-Mail-Adressinformationen für die Chatrooms, di
 </s:Envelope>
 ```
 
-### <a name="successful-getrooms-response-elements"></a>Erfolgreiche GetRooms Antwortelemente
+### <a name="successful-getrooms-response-elements"></a>Erfolgreiche getrooms-Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -127,7 +127,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Raum](room.md)
     
-- [Name (EmailAddress)](name-emailaddress.md)
+- [Name (e-mailemail)](name-emailaddress.md)
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
@@ -135,11 +135,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [MailboxType](mailboxtype.md)
     
-## <a name="getrooms-error-response-example"></a>Antwortbeispiel GetRooms-Fehler
+## <a name="getrooms-error-response-example"></a>Getrooms-Fehlerantwort Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort durch den Versuch zum Abrufen von Informationen für eine nicht vorhandene Raumliste Raum verursacht.
+Das folgende Beispiel zeigt eine Fehlermeldung, die durch den Versuch verursacht wurde, Rauminformationen für eine nicht vorhandene Raumliste zu erhalten.
   
 ### <a name="code"></a>Code
 
@@ -147,10 +147,10 @@ Das folgende Beispiel zeigt eine Fehlerantwort durch den Versuch zum Abrufen von
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="14" MinorVersion="1" MajorBuildNumber="164" MinorBuildNumber="0" Version="Exchange2010_SP1" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+    <h:ServerVersionInfo MajorVersion="14" MinorVersion="1" MajorBuildNumber="164" MinorBuildNumber="0" Version="Exchange2010_SP1" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <GetRoomsResponse ResponseClass="Error" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetRoomsResponse ResponseClass="Error" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <MessageText>No results were found.</MessageText>
       <ResponseCode>ErrorNameResolutionNoResults</ResponseCode>
       <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -159,7 +159,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort durch den Versuch zum Abrufen von
 </s:Envelope>
 ```
 
-### <a name="getrooms-error-response-elements"></a>Antwortelemente GetRooms Fehler
+### <a name="getrooms-error-response-elements"></a>Getrooms-Fehlerantwort Elemente
 
 In der Antwort werden folgende Elemente verwendet:
   

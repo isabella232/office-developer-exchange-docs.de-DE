@@ -1,5 +1,5 @@
 ---
-title: Anforderung (GetFederationInformation) (SOAP)
+title: Request (GetFederationInformation) (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: beeb5371-f57b-4346-9753-035dd42c6bee
-description: Das angeforderte Element stellt eine Anforderung GetFederationInformationRequest (SOAP).
-ms.openlocfilehash: 0fb9301c2f318aa2c27155675dd3c43b41aabecd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Request-Element stellt eine GetFederationInformationRequest (SOAP)-Anforderung dar.
+ms.openlocfilehash: dbd88537d03f6325cf0025d08c63ae486544d705
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831119"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459581"
 ---
-# <a name="request-getfederationinformation-soap"></a>Anforderung (GetFederationInformation) (SOAP)
+# <a name="request-getfederationinformation-soap"></a>Request (GetFederationInformation) (SOAP)
 
-Das **angeforderte** Element stellt eine Anforderung [GetFederationInformationRequest (SOAP)](getfederationinformationrequest-soap.md) . 
+Das **Request** -Element stellt eine [GetFederationInformationRequest (SOAP)-](getfederationinformationrequest-soap.md) Anforderung dar. 
   
 ```XML
 <Request>
@@ -39,26 +39,26 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Domäne (GetFederationInformation) (SOAP)](domain-getfederationinformationsoap.md) <br/> |Identifiziert die Domäne, die eine verbundvertrauensstellung hat.  <br/> |
+|[Domäne (GetFederationInformation) (SOAP)](domain-getfederationinformationsoap.md) <br/> |Identifiziert die Domäne, die über eine Verbundvertrauensstellung verfügt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetFederationInformationRequestMessage (SOAP)](getfederationinformationrequestmessage-soap.md) <br/> |Bereitet einen Aufruf an den Server auf Anforderung Konfigurationsdaten für den Sicherheitstokendienst (STS).  <br/> |
+|[GetFederationInformationRequestMessage (SOAP)](getfederationinformationrequestmessage-soap.md) <br/> |Bereitet einen Aufruf an den Server vor, um Konfigurationsdaten für den Sicherheitstokendienst (Security Token Service, STS) anzufordern.  <br/> |
    
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Arbeiten mit der AutoErmittlung](http://msdn.microsoft.com/library/39726b67-2eb2-451b-9307-cfd0b518b55c%28Office.15%29.aspx)
+[Arbeiten mit der AutoErmittlung](https://msdn.microsoft.com/library/39726b67-2eb2-451b-9307-cfd0b518b55c%28Office.15%29.aspx)
 

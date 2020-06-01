@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 837bb372-39eb-48ae-9c09-0d2552511f93
-description: Das Teilnehmer-Element gibt die Empfänger einer Einladung zu einer Besprechung.
-ms.openlocfilehash: 22d88bb092b416c553144496e133680b53f5d30e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das attenders-Element gibt die Empfänger einer Einladung zu einer Besprechung an.
+ms.openlocfilehash: 3a63bdf7e49309697ac503be5f4c95eb805b9635
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757403"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460330"
 ---
 # <a name="attendees"></a>Teilnehmer
 
-Das **Teilnehmer** -Element gibt die Empfänger einer Einladung zu einer Besprechung. 
+Das **attenders** -Element gibt die Empfänger einer Einladung zu einer Besprechung an. 
   
 ```XML
 <Attendees>
@@ -38,7 +38,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[EmailUser](emailuser.md) <br/> |Gibt eine e-Mail-Empfänger oder Active Directory-Kontakt.  <br/> |
+|[EmailUser](emailuser.md) <br/> |Gibt einen e-Mail-Empfänger oder Active Directory Kontakt an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -46,19 +46,19 @@ Keine.
 |:-----|:-----|
 |[MeetingSuggestion](meetingsuggestion.md) <br/> |Gibt eine vorgeschlagene Besprechung an.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

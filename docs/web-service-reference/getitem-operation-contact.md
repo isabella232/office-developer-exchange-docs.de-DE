@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6b96dace-1260-4b83-869a-7c31c5583daa
-description: Die GetItem Operation wird verwendet, um die Kontaktelemente aus Exchange-Speicher abzurufen.
-ms.openlocfilehash: 8d7436421f0c54a49345e8ef6b37cb442bca4277
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetItem-Vorgang wird zum Abrufen von Kontaktelementen aus dem Exchange-Informationsspeicher verwendet.
+ms.openlocfilehash: 93e8dbe28e130ab64d4b8d12d2befde1f77ae8fa
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758716"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460022"
 ---
 # <a name="getitem-operation-contact"></a>GetItem-Vorgang (Kontakt)
 
-Die GetItem Operation wird verwendet, um die Kontaktelemente aus Exchange-Speicher abzurufen.
+Der GetItem-Vorgang wird zum Abrufen von Kontaktelementen aus dem Exchange-Informationsspeicher verwendet.
   
-## <a name="getitem-contact-request-example"></a>Anforderungsbeispiel GetItem (Kontakt)
+## <a name="getitem-contact-request-example"></a>GetItem (Contact)-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird veranschaulicht, wie ein Element aus dem Exchange-Speicher abgerufen.
+Im folgenden Beispiel wird gezeigt, wie ein Element aus dem Exchange-Informationsspeicher abgerufen wird.
   
 ### <a name="code"></a>Code
 
@@ -35,9 +35,9 @@ Im folgenden Beispiel wird veranschaulicht, wie ein Element aus dem Exchange-Spe
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetItem xmlns='http://schemas.microsoft.com/exchange/services/2006/messages'>
+    <GetItem xmlns='https://schemas.microsoft.com/exchange/services/2006/messages'>
       <ItemShape>
         <t:BaseShape>AllProperties</t:BaseShape>
       </ItemShape>
@@ -49,12 +49,12 @@ Im folgenden Beispiel wird veranschaulicht, wie ein Element aus dem Exchange-Spe
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Die Anforderung zum Abrufen eines Elements aus dem Exchange-Speicher hat dieselbe Form für alle Elementtypen. Die Antworten auf Anforderungen für andere Elemente werden abweichen, da verschiedene Elemente basierend auf der Antwort Shapes unterschiedliche Informationen zurückgeben.
+Die Anforderung zum Abrufen eines Elements aus dem Exchange-Informationsspeicher verwendet dasselbe Formular für alle Elementtypen. Die Antworten auf Anforderungen für unterschiedliche Elemente unterscheiden sich, da unterschiedliche Elemente basierend auf den Antwort-Shapes unterschiedliche Informationen zurückgeben.
   
 > [!NOTE]
-> Der Elementbezeichner wurde gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Element-ID wurde verkürzt, um die Lesbarkeit beizubehalten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -66,15 +66,15 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [BaseShape](baseshape.md)
     
-- [Artikelnummern ein.](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
-## <a name="successful-getitem-contact-response"></a>Antwort erfolgreich GetItem (Kontakt)
+## <a name="successful-getitem-contact-response"></a>Erfolgreiche GetItem-Antwort (Kontakt)
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Codebeispiel zeigt eine erfolgreiche Antwort GetItem für die **AllProperties**[BaseShape](baseshape.md).
+Das folgende Codebeispiel zeigt eine erfolgreiche GetItem-Antwort für die **allproperties**-[BaseShape](baseshape.md).
   
 ### <a name="code"></a>Code
 
@@ -85,12 +85,12 @@ Das folgende Codebeispiel zeigt eine erfolgreiche Antwort GetItem für die **All
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -151,13 +151,13 @@ Das folgende Codebeispiel zeigt eine erfolgreiche Antwort GetItem für die **All
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Der Elementbezeichner wurde gekürzt, um die Lesbarkeit zu erhalten.
+Die Element-ID wurde verkürzt, um die Lesbarkeit beizubehalten.
   
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
-Die folgenden Elemente werden in der Antwort für eine GetItem-Anforderung mit einem Shape Antwort des **AllProperties** für ein Kontaktelement verwendet. 
+Die folgenden Elemente werden in der Antwort für eine GetItem-Anforderung mit der Antwort Form **allproperties** für ein Kontaktelement verwendet. 
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -169,9 +169,9 @@ Die folgenden Elemente werden in der Antwort für eine GetItem-Anforderung mit e
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
-- [Contact](contact.md)
+- [Kontakt](contact.md)
     
 - [ItemId](itemid.md)
     
@@ -179,21 +179,21 @@ Die folgenden Elemente werden in der Antwort für eine GetItem-Anforderung mit e
     
 - [ItemClass](itemclass.md)
     
-- [Vertraulichkeit](sensitivity.md)
+- [Sensitivity](sensitivity.md)
     
 - [Body](body.md)
     
 - [DateTimeReceived](datetimereceived.md)
     
-- [Size](size.md)
+- [Größe](size.md)
     
 - [Importance](importance.md)
     
-- [IsSubmitted](issubmitted.md)
+- [Issubmitted](issubmitted.md)
     
 - [IsDraft](isdraft.md)
     
-- [IsFromMe](isfromme.md)
+- [Isfromme](isfromme.md)
     
 - [IsResend](isresend.md)
     
@@ -201,7 +201,7 @@ Die folgenden Elemente werden in der Antwort für eine GetItem-Anforderung mit e
     
 - [DateTimeSent](datetimesent.md)
     
-- ["Datetimecreated"](datetimecreated.md)
+- [DateTimeCreated](datetimecreated.md)
     
 - [HasAttachments](hasattachments.md)
     
@@ -213,27 +213,27 @@ Die folgenden Elemente werden in der Antwort für eine GetItem-Anforderung mit e
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-- [Vorname](givenname.md)
+- [GivenName](givenname.md)
     
 - [Initialen](initials.md)
     
-- [CompleteName](completename.md)
+- [Completename](completename.md)
     
-- [Vorname](firstname.md)
+- [FirstName](firstname.md)
     
-- [Nachname](lastname.md)
+- [LastName](lastname.md)
     
 - [FullName](fullname.md)
     
-- [Firma](companyname.md)
+- [CompanyName](companyname.md)
     
 - [EmailAddresses](emailaddresses.md)
     
-- [Eintrag (EmailAddress)](entry-emailaddress.md)
+- [Eintrag (e-mailemail)](entry-emailaddress.md)
     
 - [PhysicalAddresses](physicaladdresses.md)
     
-- [Eintrag (physikalische Adresse)](entry-physicaladdress.md)
+- [Eintrag (PhysicalAddress)](entry-physicaladdress.md)
     
 - [Straße](street.md)
     
@@ -245,13 +245,13 @@ Die folgenden Elemente werden in der Antwort für eine GetItem-Anforderung mit e
     
 - [PhoneNumbers](phonenumbers.md)
     
-- [Eintrag ("PhoneNumber")](entry-phonenumber.md)
+- [Eingabe (Faxnummer)](entry-phonenumber.md)
     
 - [JobTitle](jobtitle.md)
     
 - [Nachname](surname.md)
     
-## <a name="invalid-getitem-contact-request-example"></a>Ungültige GetItem (Kontakt) anforderungsbeispiel
+## <a name="invalid-getitem-contact-request-example"></a>Ungültiges GetItem (Contact)-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
@@ -263,9 +263,9 @@ Das folgende Codebeispiel zeigt eine ungültige Anforderung.
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetItem xmlns='http://schemas.microsoft.com/exchange/services/2006/messages'>
+    <GetItem xmlns='https://schemas.microsoft.com/exchange/services/2006/messages'>
       <ItemShape>
         <t:BaseShape>AllProperties</t:BaseShape>
         <t:IncludeMimeContent>true</t:IncludeMimeContent>
@@ -278,15 +278,15 @@ Das folgende Codebeispiel zeigt eine ungültige Anforderung.
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Element-IDs wurden gekürzt, um die Lesbarkeit zu erhalten.
+Element-IDs wurden verkürzt, um die Lesbarkeit zu erhalten.
   
 ## <a name="getitem-contact-error-response"></a>Fehlerantwort GetItem (Kontakt)
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Codebeispiel zeigt eine Fehlerantwort an eine Anforderung GetItem (Kontakt).
+Im folgenden Codebeispiel wird eine Fehlerantwort auf eine GetItem-Anforderung (Contact) angezeigt.
   
 ### <a name="code"></a>Code
 
@@ -297,12 +297,12 @@ Das folgende Codebeispiel zeigt eine Fehlerantwort an eine Anforderung GetItem (
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Error">
           <m:MessageText>Mime conversion is not supported for this item type.</m:MessageText>
@@ -316,7 +316,7 @@ Das folgende Codebeispiel zeigt eine Fehlerantwort an eine Anforderung GetItem (
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
@@ -334,13 +334,13 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[GetItem Operation](getitem-operation.md)
+[GetItem-Vorgang](getitem-operation.md)
 
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)

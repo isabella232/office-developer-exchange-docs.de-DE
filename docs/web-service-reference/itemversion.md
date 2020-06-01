@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dd8275df-11ad-4d24-95c4-291b123e8509
-description: Das ItemVersion-Element ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: 7ffbe1727cef9e4b78b951ba5c2b3c1303502280
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ItemVersion-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 94d45e98f144840138ef3bc21c0a98d0196543b1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830162"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459272"
 ---
 # <a name="itemversion"></a>ItemVersion
 
-Das **ItemVersion** -Element ist nur zur internen Verwendung vorgesehen. 
+Das **ItemVersion** -Element ist nur für die interne Verwendung vorgesehen. 
   
 ```XML
 <ItemVersion />
@@ -40,7 +40,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

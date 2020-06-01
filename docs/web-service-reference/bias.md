@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ae10aa44-e6d3-483d-a3e6-bb9c45966810
-description: Bias-Element stellt den Offset vom Offset (Coordinated Universal Time, UTC) vom für Standardzeit und Sommerzeit Bias (UTC)-Element identifiziert. Dieser Wert wird in Minuten angegeben.
-ms.openlocfilehash: 770bf97b030ac1293595560bc269f54896e35a15
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Bias-Element stellt den Offset vom UTC-Offset (Coordinated Universal Time) dar, der durch das Element Bias (UTC) für Standardzeit und Sommerzeit bestimmt wird. Dieser Wert wird in Minuten angegeben.
+ms.openlocfilehash: 6c9dce88f3eece9c793fb018114f07a85c7cb89b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757447"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460239"
 ---
 # <a name="bias"></a>Bias
 
-**Bias** -Element stellt den Offset vom Offset (Coordinated Universal Time, UTC) vom für Standardzeit und Sommerzeit [Bias (UTC)](bias-utc.md) -Element identifiziert. Dieser Wert wird in Minuten angegeben. 
+Das **Bias** -Element stellt den Offset vom UTC-Offset (Coordinated Universal Time) dar, der durch das Element [Bias (UTC)](bias-utc.md) für Standardzeit und Sommerzeit bestimmt wird. Dieser Wert wird in Minuten angegeben. 
   
 ```xml
 <Bias>...</Bias>
@@ -45,23 +45,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StandardTime](standardtime.md) <br/> | Stellt einen Abstand von dem Zeitpunkt relativ zur UTC, dargestellt durch das Element [Bias (UTC)](bias-utc.md) . Dieses Element enthält auch Informationen über den Wechsel zur Standardzeit von Sommerzeit Regionen, in dem Sommerzeit beobachtet wird.<br/><br/>Es folgen die XPath-Ausdrücke auf das [StandardTime](standardtime.md) -Element:<br/><br/>   `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/StandardTime` <br/><br/> `/GetUserAvailabilityRequest/TimeZone/StandardTime` <br/> |
-|[DaylightTime](daylighttime.md) <br/> | Stellt einen Abstand von dem Zeitpunkt relativ zur UTC, dargestellt durch das Element [Bias (UTC)](bias-utc.md) Regionen, in dem Sommerzeit beobachtet wird. Dieses Element enthält auch Informationen dazu, wann der Übergang von Normalzeit zu Sommerzeit auftritt.  <br/><br/>Es folgen die XPath-Ausdrücke auf das [DaylightTime](daylighttime.md) -Element:<br/><br/> `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/DaylightTime` <br/><br/> `/GetUserAvailabilityRequest/TimeZone/DaylightTime` <br/> |
+|[Standard Time](standardtime.md) <br/> | Stellt einen Offset von der Zeit relativ zu UTC dar, dargestellt durch das [Bias-Element (UTC)](bias-utc.md) . Dieses Element enthält auch Informationen zum Übergang zur Standardzeit von Sommerzeit in Regionen, in denen die Sommerzeit beobachtet wird.<br/><br/>Im folgenden finden Sie die XPath-Ausdrücke für das [Standard](standardtime.md) Time-Element:<br/><br/>   `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/StandardTime` <br/><br/> `/GetUserAvailabilityRequest/TimeZone/StandardTime` <br/> |
+|[DaylightTime](daylighttime.md) <br/> | Stellt einen Offset von der Zeit relativ zu UTC dar, dargestellt durch das [Bias-Element (UTC)](bias-utc.md) in Regionen, in denen die Sommerzeit beobachtet wird. Dieses Element enthält auch Informationen darüber, wann der Übergang zur Sommerzeit aus der Standardzeit erfolgt.  <br/><br/>Im folgenden finden Sie die XPath-Ausdrücke für das [Daylight](daylighttime.md) -Element:<br/><br/> `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/DaylightTime` <br/><br/> `/GetUserAvailabilityRequest/TimeZone/DaylightTime` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der Textwert stellt eine ganze Zahl.
+Ein Textwert ist erforderlich. Der Wert Text stellt eine ganze Zahl dar.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Offset verwendet, um die Ortszeit bestimmen kann nur mithilfe eines der **Bias** Elemente bereitgestellt werden. Die Summe der Werte von dem Bias-Element zur Verfügung gestellt, durch das [DaylightTime](daylighttime.md) -Element oder das [StandardTime](standardtime.md) -Element plus [Weltzeit (UTC) Bias](bias-utc.md) -Element identifiziert die Ortszeit. 
+Der zum Bestimmen der Ortszeit verwendete Offset kann nur von einem der **Bias** -Elemente bereitgestellt werden. Die Summe der Werte des Bias-Elements, die vom [Daylight](daylighttime.md) -Element oder dem [Standard](standardtime.md) Time-Element sowie dem [Bias-Element (UTC)](bias-utc.md) bereitgestellt werden, gibt die Ortszeit an. 
   
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt einen Teil einer XML-Anforderung, die einen Benutzer, von der wem Sommerzeit angibt durch Anpassen der UTC-Offset von 60 Minuten verwendet. Dadurch wird effektiv die Verschiebung 420 Minuten von UTC.
+Das folgende Beispiel zeigt einen Teil einer XML-Anforderung, die einen Benutzer identifiziert, der die Sommerzeit beobachtet, indem er den Offset von UTC um-60 Minuten anpasst. Dadurch wird die Bias 420 Minuten von UTC effektiv.
   
 ```xml
-<TimeZone xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+<TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
   <Bias>480</Bias>
   <StandardTime>
     <Bias>0</Bias>
@@ -80,11 +80,11 @@ Das folgende Beispiel zeigt einen Teil einer XML-Anforderung, die einen Benutzer
 </TimeZone>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -92,5 +92,5 @@ Das folgende Beispiel zeigt einen Teil einer XML-Anforderung, die einen Benutzer
 ## <a name="see-also"></a>Siehe auch
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)
-- [Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

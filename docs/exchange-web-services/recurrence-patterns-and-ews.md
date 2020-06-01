@@ -5,87 +5,87 @@ ms.date: 03/9/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: fd9ef706-1e01-49fa-af6f-2f6d3e173c16
-description: Informationen Sie zu Serienmuster und sich wiederholenden Reihe im Exchange ein.
-ms.openlocfilehash: ac10e9b9a347abb5907b77f0e0e7315e4e86d97a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Erfahren Sie mehr über Serienmuster und wiederkehrende Datenreihen in Exchange.
+ms.openlocfilehash: 681dfee7e0a66a483b8638810da5e4e0ac0f05ac
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757128"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459328"
 ---
 # <a name="recurrence-patterns-and-ews"></a>Serienmuster und EWS
 
-Informationen Sie zu Serienmuster und sich wiederholenden Reihe im Exchange ein.
+Erfahren Sie mehr über Serienmuster und wiederkehrende Datenreihen in Exchange.
   
-Eine Terminserie ist ein Termin oder eine Besprechung, die nach einem definierten Muster wiederholt. Eine Terminserie kann entweder eine bestimmte Anzahl von Vorkommen oder kann auf unbestimmte Zeit wiederholen. Darüber hinaus kann sich wiederholenden Reihe Ausnahmen verfügen, die folgen nicht das Muster der restlichen vorkommen, und kann vorkommen, die aus dem Muster gelöscht wurden aufweisen. Die EWS Managed API und EWS können sich wiederholenden Reihe und deren zugeordneten Kalenderelemente entwickelt.
+Eine wiederkehrende Reihe ist ein Termin oder eine Besprechung, die nach einem definierten Muster wiederholt wird. Eine wiederkehrende Datenreihe kann entweder eine bestimmte Anzahl von Vorkommen aufweisen oder unbegrenzt wiederholt werden. Darüber hinaus kann eine wiederkehrende Reihe Ausnahmen aufweisen, die nicht dem Muster der restlichen Vorkommen entsprechen und möglicherweise vorkommen aufweisen, die aus dem Muster gelöscht wurden. Sie können die verwaltete EWS-API und EWS verwenden, um mit wiederkehrenden Datenreihen und deren zugeordneten Kalenderelementen zu arbeiten.
   
 ## <a name="recurring-calendar-items"></a>Wiederkehrende Kalenderelemente
 
-Alle Elemente im Kalender werden in der folgenden vier Kategorien unterteilt:
+Alle Kalenderelemente fallen in eine der folgenden vier Kategorien:
   
 - Nicht wiederkehrende Kalenderelemente
     
-- Wiederkehrende Master-Shapes
+- Wiederkehrende Master
     
-- Vorkommen in einer Reihe
+- Vorkommen in einer Datenreihe
     
-- Geänderte Vorkommen in einer Reihe, bezeichnet als Ausnahmen
+- Geänderte Vorkommen in einer Datenreihe, die als Ausnahmen bezeichnet werden
     
-In diesem Artikel werden die drei Typen von Kalenderelementen betrachten wir, die Teil einer Serie sind.
+In diesem Artikel sehen wir uns die drei Arten von Kalenderelementen an, die Teil einer wiederkehrenden Reihe sind.
   
-Es ist hilfreich, zu verstehen, wie sich wiederholenden Reihe implementiert werden, auf dem Exchange-Server. Anstatt für jedes Vorkommen einer separaten separate Element in einer Terminserie zu erstellen, erstellt der Server nur ein Element im Kalender als wiederkehrenden Master bezeichnet. Das Format eines sich wiederholenden Master ist ein Termin nicht wiederkehrende durch die hinzugefügte Muster Serieninformationen sehr ähnlich. Der Server generiert dann basierende auf das Serienmuster als Antwort auf Clientanforderungen für Informationen zum Kalendertermin, unter Verwendung der sogenannten Erweiterung vorkommen. Diese generierten Vorkommen werden auf dem Server nicht dauerhaft gespeichert. Dies ist wichtig zu verstehen, da die Möglichkeit, die Sie für Kalenderelemente suchen bestimmt, welche Informationen Sie erhalten und gibt an, ob die Erweiterung erfolgt.
+Es ist hilfreich zu verstehen, wie wiederkehrende Datenreihen auf dem Exchange-Server implementiert werden. Anstatt ein separates unterschiedliches Element für jedes Vorkommen in einer Terminserie zu erstellen, erstellt der Server nur ein tatsächliches Element im Kalender, das als wiederkehrendes Master-Objekt bezeichnet wird. Das Format eines wiederkehrenden Masters ähnelt einem Termin mit Wiederholungsmuster Informationen sehr ähnlich wie eine Terminserie. Der Server generiert dann basierend auf dem Serienmuster als Reaktion auf Clientanforderungen für Termininformationen unter Verwendung eines Prozesses namens Expansion Ereignisse. Diese generierten vorkommen werden nicht dauerhaft auf dem Server gespeichert. Dies ist wichtig zu verstehen, da die Art und Weise, wie Sie nach Kalenderelementen suchen, bestimmt, welche Informationen Sie erhalten und ob eine Erweiterung erfolgt.
   
 ## <a name="recurrence-patterns"></a>Serienmuster
 
-Die Hauptinformationen in einer Terminserie, die Erweiterung ermöglicht ist das Serienmuster. Das Serienmuster gefunden wird, auf dem sich wiederholenden Master und beschreibt einen Satz von Kriterien für die Berechnung basierend auf Datum und Uhrzeit des wiederkehrenden Master vorkommen.
+Das Schlüsselelement für eine wiederkehrende Reihe, die eine Erweiterung ermöglicht, ist das Serienmuster. Das Serienmuster wird im wiederkehrenden Master gefunden und beschreibt einen Satz von Kriterien für die Berechnung von Vorkommen basierend auf dem Datum und der Uhrzeit des wiederkehrenden Masters.
   
-**In Tabelle 1. Serienmuster verfügbar**
+**Tabelle 1. Verfügbare Serienmuster**
 
 |**Verwaltete EWS-API-Klasse**|**EWS-Element**|**Beispiele**|
 |:-----|:-----|:-----|
-|[Recurrence.DailyPattern](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.dailypattern%28v=exchg.80%29.aspx) <br/> |[DailyRecurrence](http://msdn.microsoft.com/library/0aaf265d-b723-49c6-8e9c-9ba60141e9ab%28Office.15%29.aspx) <br/> |Wiederholen Sie täglich aus.  <br/> Wiederholen Sie jeden zweiten Tag.  <br/> |
-|[Recurrence.MonthlyPattern](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.monthlypattern%28v=exchg.80%29.aspx) <br/> |[AbsoluteMonthlyRecurrence](http://msdn.microsoft.com/library/178fa0ae-9dfc-417f-933c-d657d31c2161%28Office.15%29.aspx) <br/> |Wiederholen Sie jeden Monat am zehnten Tag des Monats.  <br/> Wiederholen Sie alle zwei Monate am zwanzig ersten Tag des Monats.  <br/> |
-|[Recurrence.RelativeMonthlyPattern](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.relativemonthlypattern%28v=exchg.80%29.aspx) <br/> |[RelativeMonthlyRecurrence](http://msdn.microsoft.com/library/a76595db-7460-44ac-ac2a-53241caa33a7%28Office.15%29.aspx) <br/> |Wiederholen Sie die am zweiten Dienstag des Monats.  <br/> Wiederholen Sie die dem dritten Donnerstag des Monats alle drei Monate.  <br/> |
-|[Recurrence.RelativeYearlyPattern](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.relativeyearlypattern%28v=exchg.80%29.aspx) <br/> |[RelativeYearlyRecurrence](http://msdn.microsoft.com/library/25b67876-9979-4a30-a637-357ea10a93b8%28Office.15%29.aspx) <br/> |Wiederholen Sie am ersten Montag August jedes Jahr.  <br/> |
-|[Recurrence.WeeklyPattern](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.weeklypattern%28v=exchg.80%29.aspx) <br/> |[WeeklyRecurrence](http://msdn.microsoft.com/library/69c41dd5-597c-45bc-be3f-e2f2b5615aa3%28Office.15%29.aspx) <br/> |Wiederholen Sie jeden Montag.  <br/> Wiederholen Sie jeden Dienstag und Donnerstag alle zwei Wochen.  <br/> |
-|[Recurrence.YearlyPattern](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.yearlypattern%28v=exchg.80%29.aspx) <br/> |[AbsoluteYearlyRecurrence](http://msdn.microsoft.com/library/96f53e2c-3893-4f6e-a78a-ac179f45c5db%28Office.15%29.aspx) <br/> |Wiederholen Sie am 1. September jedes Jahr.  <br/> |
+|[Serie. DailyPattern](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.recurrence.dailypattern%28v=exchg.80%29.aspx) <br/> |[DailyRecurrence](https://msdn.microsoft.com/library/0aaf265d-b723-49c6-8e9c-9ba60141e9ab%28Office.15%29.aspx) <br/> |Jeden Tag wiederholen.  <br/> Jeden zweiten Tag wiederholen.  <br/> |
+|[Serie. MonthlyPattern](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.recurrence.monthlypattern%28v=exchg.80%29.aspx) <br/> |[AbsoluteMonthlyRecurrence](https://msdn.microsoft.com/library/178fa0ae-9dfc-417f-933c-d657d31c2161%28Office.15%29.aspx) <br/> |Wiederholen Sie jeden Monat am zehnten Tag des Monats.  <br/> Wiederholen Sie jeden zweiten Monat am 21. Tag des Monats.  <br/> |
+|[Serie. RelativeMonthlyPattern](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.recurrence.relativemonthlypattern%28v=exchg.80%29.aspx) <br/> |[RelativeMonthlyRecurrence](https://msdn.microsoft.com/library/a76595db-7460-44ac-ac2a-53241caa33a7%28Office.15%29.aspx) <br/> |Am zweiten Dienstag jedes Monats wiederholen.  <br/> Wiederholen Sie diese Schritte am dritten Donnerstag des Monats alle drei Monate.  <br/> |
+|[Serie. RelativeYearlyPattern](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.recurrence.relativeyearlypattern%28v=exchg.80%29.aspx) <br/> |[RelativeYearlyRecurrence](https://msdn.microsoft.com/library/25b67876-9979-4a30-a637-357ea10a93b8%28Office.15%29.aspx) <br/> |Wiederholen Sie diesen Vorgang am ersten Montag im August jedes Jahres.  <br/> |
+|[Serie. WeeklyPattern](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.recurrence.weeklypattern%28v=exchg.80%29.aspx) <br/> |[WeeklyRecurrence](https://msdn.microsoft.com/library/69c41dd5-597c-45bc-be3f-e2f2b5615aa3%28Office.15%29.aspx) <br/> |Jeden Montag wiederholen.  <br/> Wiederholen Sie jeden Dienstag und Donnerstag jede zweite Woche.  <br/> |
+|[Serie. YearlyPattern](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.recurrence.yearlypattern%28v=exchg.80%29.aspx) <br/> |[AbsoluteYearlyRecurrence](https://msdn.microsoft.com/library/96f53e2c-3893-4f6e-a78a-ac179f45c5db%28Office.15%29.aspx) <br/> |Wiederholen Sie diesen Vorgang am 1. September jedes Jahr.  <br/> |
    
-Der andere wichtige Informationen für ein Serienmuster ist, wenn das Serienmuster endet. Dies kann als eine festgelegte Anzahl von vorkommen, als ein Enddatum oder dass kein Ende ausgedrückt werden.
+Die andere wichtige Information für ein Serienmuster ist, wenn die Serie endet. Dies kann entweder als festgelegte Anzahl von vorkommen als Enddatum oder als kein Ende angegeben werden.
   
-**In Tabelle 2. Optionen für das Ende einer Terminserie**
+**Tabelle 2. Optionen für das Ende einer Terminserie**
 
-|**EWS Managed API-Methode /-Eigenschaft**|**EWS-Element**|**Beschreibung**|
+|**Verwaltete EWS-API-Methode/-Eigenschaft**|**EWS-Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Recurrence.NumberOfOccurrences](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.numberofoccurrences%28v=exchg.80%29.aspx) <br/> |[NumberedRecurrence](http://msdn.microsoft.com/library/53746909-ef21-4764-8715-a7769b943cca%28Office.15%29.aspx) <br/> |Der Wert dieser Eigenschaft oder eines Elements gibt die Anzahl von vorkommen.  <br/> |
-|[Recurrence.EndDate](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.enddate%28v=exchg.80%29.aspx) <br/> |[EndDateRecurrence](http://msdn.microsoft.com/library/a5ee2504-db84-49ee-870c-cca9269f2e26%28Office.15%29.aspx) <br/> |Das letzte Vorkommen in der Datenreihe liegt am oder vor dem angegebenen Datum die durch diese Eigenschaft oder eines Elements.  <br/> |
-|[Recurrence.HasEnd](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.hasend%28v=exchg.80%29.aspx) <br/> [Recurrence.NeverEnds](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.neverends%28v=exchg.80%29.aspx) <br/> |[NoEndRecurrence](http://msdn.microsoft.com/library/ab2ebd9c-388e-45f1-abf9-56e293ef123b%28Office.15%29.aspx) <br/> |Die Datenreihe, weist kein Ende.  <br/> |
+|[Serie. NumberOfOccurrences](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.recurrence.numberofoccurrences%28v=exchg.80%29.aspx) <br/> |[NumberedRecurrence](https://msdn.microsoft.com/library/53746909-ef21-4764-8715-a7769b943cca%28Office.15%29.aspx) <br/> |Der Wert dieser Eigenschaft oder dieses Elements gibt die Anzahl der Vorkommen an.  <br/> |
+|[Serie. EndDate](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.recurrence.enddate%28v=exchg.80%29.aspx) <br/> |[EndDateRecurrence](https://msdn.microsoft.com/library/a5ee2504-db84-49ee-870c-cca9269f2e26%28Office.15%29.aspx) <br/> |Das letzte Vorkommen in der Datenreihe fällt auf oder vor dem durch diese Eigenschaft oder dieses Element angegebenen Datum.  <br/> |
+|[Serie. HasEnd](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.recurrence.hasend%28v=exchg.80%29.aspx) <br/> [Serie. NeverEnds](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.recurrence.neverends%28v=exchg.80%29.aspx) <br/> |[NoEndRecurrence](https://msdn.microsoft.com/library/ab2ebd9c-388e-45f1-abf9-56e293ef123b%28Office.15%29.aspx) <br/> |Die Reihe hat kein Ende.  <br/> |
    
-## <a name="expanded-vs-non-expanded-views"></a>Im Vergleich zu Ansichten nicht erweiterten erweitert
+## <a name="expanded-vs-non-expanded-views"></a>Erweiterte vs. nicht erweiterte Ansichten
 
-Verwendung der **FindAppointments** -Methode in die EWS Managed API (oder mit einem **CalendarView** -Element im EWS-Vorgangs **FindItem** ) Ruft den Erweiterungsprozess. Dies Blendet master Terminserien aus dem Ergebnissatz und stattdessen stellt eine erweiterte Ansicht dieser Serie. Vorkommen und Ausnahmen auf der sich wiederholenden Master, die in die Parameter der Kalenderansicht fallen sind im Resultset enthalten. Dagegen mithilfe der **FindItems** -Methode in die EWS Managed API (oder die Operation **FindItem** mit einem **IndexedPageItemView** oder **FractionalPageItemView** -Element im EWS) wird keine aufgerufen Erweiterung Prozesses und der Vorkommen und Ausnahmen sind nicht enthalten. Sehen wir uns ein Beispiel für die beiden Methoden verglichen. 
+Durch die Verwendung der **FindAppointments** -Methode im verwaltete EWS-API (oder des **FindItem** -Vorgangs mit einem **CalendarView** -Element in EWS) wird der Erweiterungsprozess aufgerufen. Dadurch werden wiederkehrende Mastertermine aus dem Resultset ausgeblendet und stattdessen eine erweiterte Ansicht dieser wiederkehrenden Datenreihe dargestellt. Das Vorkommen von und Ausnahmen für den wiederkehrenden Master, die innerhalb der Parameter der Kalenderansicht liegen, sind im Resultset enthalten. Umgekehrt wird mithilfe der **FindItems** -Methode im verwaltete EWS-API (oder dem **FindItem** -Vorgang mit einem **IndexedPageItemView** -oder **FractionalPageItemView** -Element in EWS) der Erweiterungsprozess nicht aufgerufen, und es werden keine vorkommen und Ausnahmen angegeben. Sehen wir uns ein Beispiel an, in dem die beiden Methoden verglichen werden. 
   
-**Tabelle 3. Methoden und Vorgänge für die Suche nach Terminen**
+**Tabelle 3. Methoden und Vorgänge zum Suchen von Terminen**
 
-|**EWS Managed API-Methode**|**EWS-Vorgang**|**Erweitert die Datenreihe?**|**Elemente, die in Suchergebnissen enthalten**|
+|**EWS Managed API-Methode**|**EWS-Vorgang**|**Erweitert die Datenreihe?**|**In Ergebnissen enthaltene Elemente**|
 |:-----|:-----|:-----|:-----|
-|[ExchangeService.FindAppointments](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.findappointments%28v=exchg.80%29.aspx) <br/> |[FindItem Vorgang](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) mit einem [CalendarView](http://msdn.microsoft.com/library/a4a953b8-0710-416c-95ef-59e51eba9982%28Office.15%29.aspx) -element  <br/> |Ja  <br/> |Nicht wiederkehrende Termine einzelnen Vorkommen von sich wiederholenden Reihe und Ausnahmen von sich wiederholenden Reihe  <br/> |
-|[ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) <br/> |[FindItem Vorgang](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) mit einer [IndexedPageItemView](http://msdn.microsoft.com/library/6d1b0b04-cc35-4a57-bd7a-824136d14fda%28Office.15%29.aspx) Element oder [FractionalPageItemView](http://msdn.microsoft.com/library/4111afec-35e7-4c6f-b291-9bbba603f633%28Office.15%29.aspx) -element  <br/> |Nein  <br/> |Nicht wiederkehrende Termine und Terminserien Master-Shape  <br/> |
+|[ExchangeService.FindAppointments](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findappointments%28v=exchg.80%29.aspx) <br/> |[FindItem-Vorgang](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) mit einem [CalendarView](https://msdn.microsoft.com/library/a4a953b8-0710-416c-95ef-59e51eba9982%28Office.15%29.aspx) -Element  <br/> |Ja  <br/> |Nicht wiederkehrende Termine, einzelne Vorkommen von Terminserien und Ausnahmen für wiederkehrende Datenreihen  <br/> |
+|[ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) <br/> |[FindItem-Vorgang](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) mit einem [IndexedPageItemView](https://msdn.microsoft.com/library/6d1b0b04-cc35-4a57-bd7a-824136d14fda%28Office.15%29.aspx) -Element oder einem [FractionalPageItemView](https://msdn.microsoft.com/library/4111afec-35e7-4c6f-b291-9bbba603f633%28Office.15%29.aspx) -Element  <br/> |Nein  <br/> |Nicht wiederkehrende Termine und wiederkehrende Mastertermine  <br/> |
    
-Sadie hat sich ihr Son bei schwimmen Team gerade angemeldet. Das Team weist Practice jeden Mittwoch Morgen um 8:30 Uhr, beginnend mit der letzten Practice wird am 6. August 2. Juli. Nicht möchte, praktischen vergessen, fügt Sadie eine Terminserie auf ihren Kalender aus, um ihn zu erinnern.
+Sadie hat ihren Sohn soeben für das Swim-Team unterschrieben. Das Team übt jeden Mittwoch Vormittag um 8:30 Uhr aus, beginnend am 2. Juli, wobei die letzte Übung am 6. August stattfindet. Wenn Sie nicht die Praxis vergessen möchten, fügt Sadie eine Terminserie zu Ihrem Kalender hinzu, um Sie zu erinnern.
   
-**In Tabelle 4. Terminserie des Sadie**
+**Tabelle 4. Sadies Terminserie**
 
-|**Termin dar**|**Wert**|
+|**Terminfeld**|**Wert**|
 |:-----|:-----|
-|Subject  <br/> |Schwimmen Team-Methode  <br/> |
-|Beginn  <br/> |2 Juli 2014 8:30 Uhr ausgeführt.  <br/> |
-|Ende  <br/> |2 Juli 2014 10:00 Uhr  <br/> |
-|Wiederholt  <br/> |Jeden Mittwoch  <br/> |
-|Letzte Vorkommen  <br/> |6 August 2014 8:30 Uhr ausgeführt.  <br/> |
+|Betreff  <br/> |Swim-Team Praxis  <br/> |
+|Start  <br/> |2. Juli 2014 8:30 Uhr  <br/> |
+|Ende  <br/> |2. Juli 2014 10:00 Uhr  <br/> |
+|Auftritt  <br/> |Jeden Mittwoch  <br/> |
+|Letztes vorkommen  <br/> |6. August 2014 8:30 Uhr  <br/> |
    
-Ein schnellen Blick auf einen Kalender zeigt, dass das Team insgesamt sechs Methoden hat. Jedoch keine sechs verschiedene Terminelemente vorhanden sind, im Kalender. Stattdessen wird nur ein Master-Shape Terminserie, der Datenreihe darstellt.
+Ein kurzer Blick in einen Kalender zeigt, dass das Team insgesamt sechs Methoden hat. Es gibt jedoch nicht sechs unterschiedliche Termin Elemente im Kalender. Stattdessen gibt es nur einen wiederkehrenden Mastertermin, der die Datenreihe darstellt.
   
-Jetzt sehen wir uns finden von Terminen Sadie Kalender, die innerhalb des Monats Juli auftreten. Im folgenden Codebeispiel wird verwendet die **FindItems** -Methode in der Exchange-Managed-API zum Erstellen einer nicht erweiterten Ansicht des Sadies Kalenders. 
+Schauen wir uns nun die Suche nach Terminen für Sadies Kalender an, die innerhalb des Monats Juli stattfinden. Im folgenden Codebeispiel wird die **FindItems** -Methode in der Exchange Managed API verwendet, um eine nicht erweiterte Ansicht von Sadies Kalender zu erstellen. 
   
 ```cs
 PropertySet propSet = new PropertySet(AppointmentSchema.Subject,
@@ -114,14 +114,14 @@ foreach(Item appt in results.Items)
 }
 ```
 
-Dieser Code führt die folgenden [FindItem Vorgang](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) -Anforderung mit einem [IndexedPageItemView](http://msdn.microsoft.com/library/6d1b0b04-cc35-4a57-bd7a-824136d14fda%28Office.15%29.aspx) -Element. 
+Dieser Code ergibt die folgende [FindItem-Vorgangs](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) Anforderung mit einem [IndexedPageItemView](https://msdn.microsoft.com/library/6d1b0b04-cc35-4a57-bd7a-824136d14fda%28Office.15%29.aspx) -Element. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -165,21 +165,21 @@ Dieser Code führt die folgenden [FindItem Vorgang](http://msdn.microsoft.com/li
 </soap:Envelope>
 ```
 
-Die Antwort des Servers enthält nur ein einzelnes Element, das sich wiederholenden Master-Shape, von dem Elementwert [CalendarItemType](http://msdn.microsoft.com/library/1feb0788-adf7-4a7c-830c-005214ad930f%28Office.15%29.aspx) des **RecurringMaster**angegeben. Der Wert des Elements [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) wurde zur besseren Lesbarkeit gekürzt. 
+Die Antwort des Servers enthält nur ein einzelnes Element, den wiederkehrenden Master, der durch den [CalendarItemType](https://msdn.microsoft.com/library/1feb0788-adf7-4a7c-830c-005214ad930f%28Office.15%29.aspx) -Elementwert von **RecurringMaster**angegeben wird. Der Wert des [ItemID](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) -Elements wurde zur Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="939" MinorBuildNumber="16" Version="V2_11" 
-        xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-        xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
         xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:FindItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:FindItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -202,7 +202,7 @@ Die Antwort des Servers enthält nur ein einzelnes Element, das sich wiederholen
 </s:Envelope>
 ```
 
-Jetzt Vergleichen wir mit einer erweiterten Ansicht. Im folgenden Codebeispiel wird die **FindAppointments** -Methode in die EWS Managed API zum Erstellen einer erweiterten Ansicht Sadies Kalenders verwendet. 
+Lassen Sie uns nun mit einer erweiterten Ansicht vergleichen. Im folgenden Codebeispiel wird die **FindAppointments** -Methode im verwaltete EWS-API verwendet, um eine erweiterte Ansicht von Sadies Kalender zu erstellen. 
   
 ```cs
 PropertySet propSet = new PropertySet(AppointmentSchema.Subject,
@@ -220,14 +220,14 @@ foreach(Appointment appt in results.Items)
 }
 ```
 
-Dieser Code führt die folgenden [FindItem Vorgang](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) -Anforderung mit einem [CalendarView](http://msdn.microsoft.com/library/a4a953b8-0710-416c-95ef-59e51eba9982%28Office.15%29.aspx) -Element. 
+Dieser Code ergibt die folgende [FindItem-Vorgangs](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) Anforderung mit einem [CalendarView](https://msdn.microsoft.com/library/a4a953b8-0710-416c-95ef-59e51eba9982%28Office.15%29.aspx) -Element. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -255,21 +255,21 @@ Dieser Code führt die folgenden [FindItem Vorgang](http://msdn.microsoft.com/li
 </soap:Envelope>
 ```
 
-Diesmal enthält die Antwort vom Server fünf vorkommen, einen für jeden Mittwoch im Juli. Auf diese Elemente, die alle Elemente [CalendarItemType](http://msdn.microsoft.com/library/1feb0788-adf7-4a7c-830c-005214ad930f%28Office.15%29.aspx) aufweisen Wert **Vorkommen**. Beachten Sie, dass das wiederkehrende Master-Shape nicht in der Antwort vorhanden ist. Die Werte der [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) Elemente wurden zur besseren Lesbarkeit gekürzt. 
+Dieses Mal umfasst die Serverantwort fünf vorkommen, eine für jeden Mittwoch im Juli. Die [CalendarItemType](https://msdn.microsoft.com/library/1feb0788-adf7-4a7c-830c-005214ad930f%28Office.15%29.aspx) -Elemente für diese Elemente weisen alle den Wert " **vorkommen**" auf. Beachten Sie, dass die wiederkehrende Master in der Antwort nicht vorhanden ist. Die Werte der [ItemID](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) -Elemente wurden zur Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="939" MinorBuildNumber="16" Version="V2_11" 
-        xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-        xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
         xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:FindItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:FindItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -324,23 +324,23 @@ Diesmal enthält die Antwort vom Server fünf vorkommen, einen für jeden Mittwo
 </s:Envelope>
 ```
 
-Nachdem Sie ein wiederkehrendes Master-Shape, das Auftreten eines Serientermins oder eine Ausnahme haben, können Sie immer für [die anderen verwandten Elemente abzurufen](how-to-access-a-recurring-series-by-using-ews-in-exchange.md). Sie können erhält ein Vorkommen oder eine Ausnahmebedingung, das sich wiederholenden Master-Shape abrufen und umgekehrt.
+Nachdem Sie eine wiederkehrende Master, ein vorkommen oder eine Ausnahme haben, können Sie immer [die anderen verwandten Elemente abrufen](how-to-access-a-recurring-series-by-using-ews-in-exchange.md). Wenn ein vorkommen oder eine Ausnahme vorliegt, können Sie den wiederkehrenden Master abrufen und umgekehrt.
   
-## <a name="working-with-recurring-calendar-items"></a>Arbeiten mit sich wiederholenden Kalenderelementen (engl.)
+## <a name="working-with-recurring-calendar-items"></a>Arbeiten mit wiederkehrenden Kalenderelementen
 
-Sie verwenden die gleichen Methoden und Vorgänge sich wiederholenden Reihe entwickelt, wie Sie verwenden, um eine nicht wiederkehrende Kalenderelemente entwickelt. Der Unterschied besteht darin, je nach dem Element, das Sie verwenden, um das Aufrufen von Methoden oder Vorgänge, die Aktionen, mit denen Sie auf die gesamte Datenreihe oder nur ein einzelnes Vorkommen anwenden können. [Aktionen, die für die periodische Master](how-to-update-a-recurring-series-by-using-ews-in-exchange.md) gilt für alle Vorkommen in der Datenreihe während [Aktionen, um ein einzelnes Vorkommen oder eine Ausnahme](how-to-update-a-recurring-series-by-using-ews.md) nur diese Vorkommen oder Ausnahme zugewiesen wird. 
+Sie verwenden alle gleichen Methoden und Vorgänge, um mit wiederkehrenden Datenreihen zu arbeiten, während Sie mit nicht wiederkehrenden Kalenderelementen arbeiten. Der Unterschied besteht darin, dass abhängig vom Element, das Sie zum Aufrufen dieser Methoden oder Vorgänge verwenden, die von Ihnen ausgeführten Aktionen auf die gesamte Datenreihe oder nur auf ein einzelnes Vorkommen angewendet werden können. [Aktionen, die im wiederkehrenden Master ausgeführt](how-to-update-a-recurring-series-by-using-ews-in-exchange.md) werden, gelten für alle Vorkommen in der Datenreihe, während Aktionen, die [zu einem einzelnen vorkommen oder einer Ausnahme ausgeführt](how-to-update-a-recurring-series-by-using-ews.md) werden, nur auf dieses vorkommen oder jede Ausnahme zutreffen. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [Zugriff auf eine Terminserie mithilfe von EWS in Exchange](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)
+- [Zugreifen auf eine Terminserie mithilfe von EWS in Exchange](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Erstellen einer Terminserie mithilfe der EWS in Exchange](how-to-create-a-recurring-series-by-using-ews-in-exchange.md)
+- [Erstellen einer Terminserie mithilfe von EWS in Exchange](how-to-create-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Löschen der Termine in einer Terminserie mithilfe der EWS in Exchange](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md)
+- [Löschen von Terminen in einer Terminserie mithilfe von EWS in Exchange](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Aktualisieren einer Terminserie mithilfe der Exchange-Webdienste](how-to-update-a-recurring-series-by-using-ews.md)
+- [Aktualisieren einer Terminserie mithilfe von EWS](how-to-update-a-recurring-series-by-using-ews.md)
     
-- [Aktualisieren einer Terminserie mithilfe der EWS in Exchange](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
+- [Aktualisieren einer Terminserie mithilfe von EWS in Exchange](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
     
 ## <a name="see-also"></a>Siehe auch
 

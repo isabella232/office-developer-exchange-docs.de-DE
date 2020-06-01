@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c07f3ddb-874b-4d30-a60e-7e5c7793bb6f
-description: Das FreeBusyViewOptions-Element gibt den Typ der Frei/Gebucht-Informationen in der Antwort zurückgegeben.
-ms.openlocfilehash: 703fc6a3625d24cf874a785600e13ee4505b506f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FreeBusyViewOptions-Element gibt den Typ der Frei/Gebucht-Informationen an, die in der Antwort zurückgegeben werden.
+ms.openlocfilehash: b67d3f461e0edaa82f074f75b0c1c54efc8af4d0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758547"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459574"
 ---
 # <a name="freebusyviewoptions"></a>FreeBusyViewOptions
 
-Das **FreeBusyViewOptions** -Element gibt den Typ der Frei/Gebucht-Informationen in der Antwort zurückgegeben. 
+Das **FreeBusyViewOptions** -Element gibt den Typ der Frei/Gebucht-Informationen an, die in der Antwort zurückgegeben werden. 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -49,34 +49,34 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Zeitfenster](timewindow.md) <br/> |Gibt die Zeitspanne für die Verfügbarkeit Benutzerinformationen abgefragt.  <br/> |
-|[MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) <br/> |Stellt den Zeitunterschied zwischen zwei aufeinanderfolgenden Slots in der Ansicht **FreeBusyMerged** .  <br/> |
-|[RequestedView](requestedview.md) <br/> |Definiert den Typ von Kalenderinformationen, die ein Client anfordert.  <br/> |
+|[TimeWindow](timewindow.md) <br/> |Gibt den Zeitraum an, der für die Informationen zur Benutzerverfügbarkeit abgefragt wird.  <br/> |
+|[MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) <br/> |Stellt den Zeitunterschied zwischen zwei aufeinanderfolgenden Slots in der **FreeBusyMerged** -Ansicht dar.  <br/> |
+|[RequestedView](requestedview.md) <br/> |Definiert den Typ von Kalenderinformationen, die von einem Client angefordert werden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |Enthält die Argumente, die zum Abrufen von Informationen zur Verfügbarkeit der Benutzer verwendet. Dies ist eine Stammelements.  <br/> Es folgt der XPath-Ausdruck für dieses Element:  <br/>  `/GetUserAvailabilityRequest` <br/> |
+|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |Enthält die Argumente, die zum Abrufen von Informationen zur Benutzerverfügbarkeit verwendet werden. Dies ist ein Stammelement.  <br/> Es folgt der XPath für dieses Element:  <br/>  `/GetUserAvailabilityRequest` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element ist nicht erforderlich, und kann nur einmal auftreten, wenn verwendet. Dieser Wert kann null sein, wenn der Wert des Elements [SuggestionsViewOptions](suggestionsviewoptions.md) nicht null ist. 
+Dieses Element ist nicht erforderlich und kann nur einmal auftreten, wenn es verwendet wird. Dieser Wert kann NULL sein, wenn der Wert des [SuggestionsViewOptions](suggestionsviewoptions.md) -Elements nicht NULL ist. 
   
 > [!NOTE]
-> Das Schema, das dieses Element beschreibt befindet sich im Verzeichnis /epi/ des Computers, auf dem Microsoft® Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist. 
+> Das Schema, das dieses Element beschreibt, befindet sich im/EPI/-Verzeichnis des Computers, auf dem Microsoft® Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist. 
   
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel ruft eine Liste von Besprechungen und einem Stream Frei/Gebucht-Informationen alle 60 Minuten.
+Im folgenden Beispiel wird eine Liste der Besprechungen und eines frei/gebucht-Streams in 60-Minuten-Intervallen abgerufen.
   
 ```
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <GetUserAvailabilityRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <TimeZone xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetUserAvailabilityRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Bias>480</Bias>
         <StandardTime>
           <Bias>0</Bias>
@@ -94,7 +94,7 @@ Das folgende Beispiel ruft eine Liste von Besprechungen und einem Stream Frei/Ge
         </DaylightTime>
       </TimeZone>
       <MailboxDataArray>
-        <MailboxData xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <MailboxData xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Email>
             <Name></Name>
             <Address>someone@ExServer.example.com</Address>
@@ -105,7 +105,7 @@ Das folgende Beispiel ruft eine Liste von Besprechungen und einem Stream Frei/Ge
           <ExcludeNonWorkingHours>false</ExcludeNonWorkingHours>
         </MailboxData>
       </MailboxDataArray>
-      <FreeBusyViewOptions xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <FreeBusyViewOptions xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <TimeWindow>
           <StartTime>2006-02-06T00:00:00</StartTime>
           <EndTime>2006-02-25T23:59:59</EndTime>
@@ -118,11 +118,11 @@ Das folgende Beispiel ruft eine Liste von Besprechungen und einem Stream Frei/Ge
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -134,5 +134,5 @@ Das folgende Beispiel ruft eine Liste von Besprechungen und einem Stream Frei/Ge
 [GetUserAvailability-Vorgang](getuseravailability-operation.md)
 
 
-[Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

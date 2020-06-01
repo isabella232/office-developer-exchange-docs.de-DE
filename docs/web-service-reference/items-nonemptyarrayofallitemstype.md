@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d61ef1cc-ddfc-480a-9625-7b436cb33ae0
-description: Das Items-Element enthält eine Gruppe von Elementen zu erstellen.
-ms.openlocfilehash: 3b1ce7092bb6d37f23792fbf1ecb1f77b63f2afd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Items-Element enthält eine Gruppe von Elementen, die erstellt werden sollen.
+ms.openlocfilehash: 0f70f1fe4348b5b74cef6be6414618af1e3de260
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830160"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459854"
 ---
 # <a name="items-nonemptyarrayofallitemstype"></a>Elemente (NonEmptyArrayOfAllItemsType)
 
-Das **Items** -Element enthält eine Gruppe von Elementen zu erstellen. 
+Das **Items** -Element enthält eine Gruppe von Elementen, die erstellt werden sollen. 
   
 ```XML
 <Items>
@@ -63,55 +63,55 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Element](item.md) <br/> |Stellt ein Element im Exchange-Informationsspeicher dar.  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Stellt eine Exchange-e-Mail-Nachricht dar.  <br/> |
+|[Nachricht](message-ex15websvcsotherref.md) <br/> |Stellt eine Exchange-e-Mail-Nachricht dar.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
-|[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechungsnachricht im Exchange-Speicher.  <br/> |
+|[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechungsnachricht im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine Besprechungsabsage im Exchange-Informationsspeicher dar.  <br/> |
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
-|[ReplyToItem](replytoitem.md) <br/> |Enthält eine Antwort an den Absender eines Elements in der Exchange-Speicher.  <br/> |
+|[ReplyToItem](replytoitem.md) <br/> |Enthält eine Antwort an den Absender eines Elements in der Exchange-Informationsspeicher.  <br/> |
 |[ForwardItem](forwarditem.md) <br/> |Enthält ein Exchange-Speicher-Element an Empfänger weitergeleitet.  <br/> |
-|[ReplyAllToItem](replyalltoitem.md) <br/> |Enthält eine Antwort an den Absender und alle gefundenen Empfänger eines Elements in der Exchange-Speicher.  <br/> |
+|[ReplyAllToItem](replyalltoitem.md) <br/> |Enthält eine Antwort an den Absender und alle identifizierten Empfänger eines Elements in der Exchange-Informationsspeicher.  <br/> |
 |[AcceptItem](acceptitem.md) <br/> |Stellt eine Accept-Antwort auf eine Besprechungsanfrage.  <br/> |
 |[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |Stellt eine mit Vorbehalt Antworten auf eine Besprechungsanfrage.  <br/> |
 |[DeclineItem](declineitem.md) <br/> |Stellt eine ablehnen Antwort auf eine Besprechungsanfrage.  <br/> |
 |[CancelCalendarItem](cancelcalendaritem.md) <br/> |Stellt das Antwortobjekt, das Sie eine Besprechung absagen verwendet wird.  <br/> |
-|[RemoveItem](removeitem.md) <br/> |Stellt ein Response-Objekt, das verwendet wird, um ein Besprechungselement zu entfernen, wenn eine Nachricht MeetingCancellation empfangen wird.  <br/> |
-|[PostReplyItem](postreplyitem.md) <br/> |Eine Antwort auf eine Post-Element enthält.  <br/> |
-|[SuppressReadReceipt](suppressreadreceipt.md) <br/> |Verwendet, um lesebestätigungen unterdrücken.  <br/> |
-|[AcceptSharingInvitation](acceptsharinginvitation.md) <br/> |Verwendet, um eine Einladung annehmen, die Zugriff auf einen anderen Benutzer Kalender oder Kontaktdaten ermöglicht.  <br/> |
+|[RemoveItem](removeitem.md) <br/> |Stellt ein Response-Objekt dar, das zum Entfernen eines Besprechungselements verwendet wird, wenn eine MeetingCancellation-Nachricht empfangen wird.  <br/> |
+|[PostReplyItem](postreplyitem.md) <br/> |Enthält eine Antwort auf ein Post-Element.  <br/> |
+|[SuppressReadReceipt](suppressreadreceipt.md) <br/> |Wird verwendet, um Lesebestätigungen zu unterdrücken.  <br/> |
+|[AcceptSharingInvitation](acceptsharinginvitation.md) <br/> |Wird verwendet, um eine Einladung zu akzeptieren, die den Zugriff auf die Kalender-oder Kontaktdaten eines anderen Benutzers zulässt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CreateItem](createitem.md) <br/> |Definiert die Anforderung zum Erstellen eines Elements im Exchange-Speicher.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:`/CreateItem` <br/> |
-|[ConversationNode](conversationnode.md) <br/> |Gibt einen einzelnen Knoten in einer Unterhaltung.  <br/> |
+|[CreateItem](createitem.md) <br/> |Definiert die Anforderung zum Erstellen eines Elements im Exchange-Informationsspeicher.  <br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/CreateItem` <br/> |
+|[ConversationNode](conversationnode.md) <br/> |Identifiziert einen einzelnen Knoten in einer Unterhaltung.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[CreateFolder Operation](createfolder-operation.md)
+[CreateFolder-Vorgang](createfolder-operation.md)
   
-[CreateItem Operation](createitem-operation.md)
+[CreateItem-Vorgang](createitem-operation.md)
 
 
-[Erstellen von Ordnern (Exchange Web Services)](http://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
+[Erstellen von Ordnern (Exchange Webdienste)](https://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
 

@@ -1,5 +1,5 @@
 ---
-title: EmailText fest (SetEncryptionConfigurationType)
+title: EmailText (SetEncryptionConfigurationType)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: df981e16-c8b2-416f-90dc-9732065a20bf
-description: Das Element emailText fest (SetEncryptionConfigurationType) ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: 8d63aa6f640053fec91b9a4627dbef1ade127a43
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EmailText (SetEncryptionConfigurationType)-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 38cf4082a47366a1549df31424cd4cdc189c6ae9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758204"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460183"
 ---
-# <a name="emailtext-setencryptionconfigurationtype"></a>EmailText fest (SetEncryptionConfigurationType)
+# <a name="emailtext-setencryptionconfigurationtype"></a>EmailText (SetEncryptionConfigurationType)
 
-Das Element **emailText fest (SetEncryptionConfigurationType)** ist nur zur internen Verwendung vorgesehen. 
+Das **EmailText (SetEncryptionConfigurationType)-** Element ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

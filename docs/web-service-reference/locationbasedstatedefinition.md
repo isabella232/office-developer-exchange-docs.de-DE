@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2bb2cb78-e168-414e-8d07-414ab5c69185
-description: Das LocationBasedStateDefinition-Element ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: 378d57418156e09ab0ce0bb33d4dc8e6cfdb53b1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das LocationBasedStateDefinition-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: dd1e97b2071eeb82f7c9032b83ea52f83ee4a1ec
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830240"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460302"
 ---
 # <a name="locationbasedstatedefinition"></a>LocationBasedStateDefinition
 
-Das **LocationBasedStateDefinition** -Element ist nur zur internen Verwendung vorgesehen. 
+Das **LocationBasedStateDefinition** -Element ist nur für die interne Verwendung vorgesehen. 
   
 ```XML
 <LocationBasedStateDefinition />
@@ -39,7 +39,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

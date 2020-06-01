@@ -7,50 +7,50 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5a10aa5e-3f25-4ec3-a0b9-284c30918a1f
-description: Hier finden Sie Informationen über die CreateFolderPath EWS Vorgang.
-ms.openlocfilehash: 22561e5086c144e25d7e04b68ec6674b87c4718d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier finden Sie Informationen zum CreateFolderPath-EWS-Vorgang.
+ms.openlocfilehash: a8d42cbef854d900c5fb6b72c730dd1e2b903aec
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757761"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458901"
 ---
 # <a name="createfolderpath-operation"></a>CreateFolderPath-Vorgang
 
-Hier finden Sie Informationen zum **CreateFolderPath** EWS-Vorgang. 
+Hier finden Sie Informationen zum **CreateFolderPath** -EWS-Vorgang. 
   
-Der Vorgang **CreateFolderPath** erstellt eine Ordnerhierarchie. 
+Mit dem **CreateFolderPath** -Vorgang wird eine Ordnerhierarchie erstellt. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-createfolderpath-operation"></a>Verwenden des CreateFolderPath-Vorgangs
 
-Die **CreateFolderPath** Vorgang Anforderung akzeptiert ein Array von Ordnern und einen Bezeichner der übergeordneten Ordner und erstellt eine Ordnerhierarchie basierend auf der Reihenfolge der Ordner im Array. 
+Die **CreateFolderPath** -Vorgangsanforderung verwendet ein Array von Ordnern und eine übergeordnete Ordner-ID und erstellt eine Ordnerhierarchie basierend auf der Reihenfolge der Ordner im Array. 
   
-### <a name="createfolderpath-operation-soap-headers"></a>CreateFolderPath Vorgang SOAP-Header
+### <a name="createfolderpath-operation-soap-headers"></a>SOAP-Header des CreateFolderPath-Vorgangs
 
-Der Vorgang **CreateFolderPath** können die SOAP-Header, die in der folgenden Tabelle aufgelistet sind. 
+Der **CreateFolderPath** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |["ExchangeImpersonation"](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Bezeichnet die Kultur gemäß Definition in RFC 3066, "Tags for the Identification des Languages", um Zugriff auf das Postfach verwendet werden. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden sollen. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
-|**TimeZoneContext** <br/> |[TimeZoneContext](timezonecontext.md) <br/> |Gibt den Bereich Zeitzone für **DateTime** -Eigenschaften. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
+|**TimeZoneContext** <br/> |[TimeZoneContext](timezonecontext.md) <br/> |Gibt den Zeit zonenbereich für **DateTime** -Eigenschaften an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
    
-## <a name="createfolderpath-operation-request-example-create-a-folder-hierarchy"></a>CreateFolderPath Vorgang-anforderungsbeispiel: erstellen eine Ordnerhierarchie
+## <a name="createfolderpath-operation-request-example-create-a-folder-hierarchy"></a>CreateFolderPath-Vorgangs Anforderungs Beispiel: Erstellen einer Ordnerhierarchie
 
-Im folgenden Beispiel wird eine **CreateFolderPath** Vorgang Anforderung zeigt, wie eine Ordnerhierarchie erstellen, die drei Ordner ist in den Standardordner Posteingang. 
+Im folgenden Beispiel einer **CreateFolderPath** -Vorgangsanforderung wird gezeigt, wie Sie eine Ordnerhierarchie erstellen, die drei Ordner tief im standardmäßigen Posteingangsordner ist. 
   
 > [!NOTE]
-> Bezeichner für alle Elemente aus, und Ändern von Schlüsseln in diesem Artikel wurde gekürzt, um die Lesbarkeit zu erhalten. 
+> Alle Element-IDs und Änderungsschlüssel in diesem Artikel wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
       <t:MailboxCulture>en-US</t:MailboxCulture>
@@ -80,7 +80,7 @@ Im folgenden Beispiel wird eine **CreateFolderPath** Vorgang Anforderung zeigt, 
 
 ```
 
-Die Anforderung SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
   
 - [CreateFolderPath](createfolderpath.md)
     
@@ -94,9 +94,9 @@ Die Anforderung SOAP-Text enthält die folgenden Elemente:
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-## <a name="successful-createfolderpath-operation-response"></a>Erfolgreiche CreateFolderPath Vorgangsantwort
+## <a name="successful-createfolderpath-operation-response"></a>Erfolgreiche Reaktion des CreateFolderPath-Vorgangs
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **CreateFolderPath** Vorgang Anforderung zum Erstellen eines Ordners drei Hierarchieordner in den Standardordner Posteingang. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **CreateFolderPath** -Vorgangsanforderung zum Erstellen einer Ordnerhierarchie mit drei Ordnern, die sich tief im Standardordner "Posteingang" befinden. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -107,14 +107,14 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **CreateFolderPat
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:CreateFolderPathResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:CreateFolderPathResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:CreateFolderPathResponseMessage ResponseClass="Success">
                <m:ResponseCode>NoError</m:ResponseCode>
@@ -159,7 +159,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **CreateFolderPat
 
 ```
 
-Die Antwort SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Antworttext Körper enthält die folgenden Elemente:
   
 - [CreateFolderPathResponse](createfolderpathresponse.md)
     
@@ -177,15 +177,15 @@ Die Antwort SOAP-Text enthält die folgenden Elemente:
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-- [TotalCount](totalcount.md)
+- [Total count](totalcount.md)
     
 - [ChildFolderCount](childfoldercount.md)
     
 - [UnreadCount](unreadcount.md)
     
-## <a name="createfolderpath-operation-error-response"></a>CreateFolderPath Vorgang Fehlerantwort
+## <a name="createfolderpath-operation-error-response"></a>Fehlerantwort des CreateFolderPath-Vorgangs
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine **CreateFolderPath** Vorgang Anforderung. Dies ist eine Antwort auf eine Anforderung zum Erstellen von zwei Ordnern, von denen die erste keine Display Name-Eigenschaft festgelegt. Der erste Ordner in der Hierarchie kann nicht erstellt werden, ohne eine Display Name-Eigenschaft, und der zweite Ordner kann nicht erstellt werden, da nicht des übergeordneten Ordners in der Hierarchie erstellt wurde. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **CreateFolderPath** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Erstellen von zwei Ordnern, von denen die erste nicht über eine Anzeigename-Eigenschaft festgelegt ist. Der erste Ordner in der Hierarchiekann nicht ohne eine Anzeigename-Eigenschaft erstellt werden, und der zweite Ordner kann nicht erstellt werden, da der übergeordnete Ordner in der Hierarchie nicht erstellt wurde. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -195,15 +195,15 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **CreateFolderPath** Vorg
                            MajorBuildNumber="556" 
                            MinorBuildNumber="14" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:CreateFolderPathResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:CreateFolderPathResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:CreateFolderPathResponseMessage ResponseClass="Error">
                <m:MessageText>The folder save operation failed due to invalid property values.</m:MessageText>
@@ -227,7 +227,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **CreateFolderPath** Vorg
 
 ```
 
-Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
+Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
   
 - [CreateFolderPathResponse](createfolderpathresponse.md)
     
@@ -241,18 +241,18 @@ Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [MessageXml](messagexml.md)
+- [Messagexml verwendet](messagexml.md)
     
 - [FieldURI](fielduri.md)
     
 - [Ordner](folders-ex15websvcsotherref.md)
     
-Zusätzliche Fehlercodes, die für EWS generisch und für diese Operation spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
+Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 
 - [EWS-Operationen in Exchange](ews-operations-in-exchange.md)
     
-- [FindFolder Operation](findfolder-operation.md)
+- [FindFolder-Vorgang](findfolder-operation.md)
     
 

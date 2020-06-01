@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: a2cde8b8-2d31-4ebf-8171-f4dfd650d079
-description: Das Element Raum stellt einen Besprechungsraum.
-ms.openlocfilehash: e064a458b5a9265fc9dad63c87c641eaf47d7062
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Room-Element stellt einen Besprechungsraum dar.
+ms.openlocfilehash: 3d5d587853e435016fdff6b9d268892a35fea825
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831242"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460533"
 ---
 # <a name="room"></a>Raum
 
-Das Element **Raum** stellt einen Besprechungsraum. 
+Das **Room** -Element stellt einen Besprechungsraum dar. 
   
 [Chatrooms](rooms.md)
   
@@ -33,7 +33,7 @@ Das Element **Raum** stellt einen Besprechungsraum.
 </Room>
 ```
 
- **RoomType**
+ **Zimmertyp**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -46,23 +46,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ID (EmailAddressType)](id-emailaddresstype.md) <br/> |Ein Bezeichner, der eine e-Mail-Adresse enthält und Anzeigename, der dem Besprechungsraum darstellt.  <br/> |
+|[ID (e-mailemailtype)](id-emailaddresstype.md) <br/> |Ein Bezeichner, der eine e-Mail-Adresse und einen Anzeigenamen enthält, der den Besprechungsraum darstellt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Chatrooms](rooms.md) <br/> |Definiert eine Liste von Besprechungsräumen eines allgemeinen Features, wie er im gleichen Gebäude sitzen zugeordnet.  <br/> |
+|[Chatrooms](rooms.md) <br/> |Definiert eine Liste von Besprechungsräumen, die einem gemeinsamen Feature zugeordnet sind, beispielsweise sich im selben Gebäude befinden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

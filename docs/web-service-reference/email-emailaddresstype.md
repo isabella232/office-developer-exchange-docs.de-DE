@@ -1,5 +1,5 @@
 ---
-title: E-Mail (EmailAddressType)
+title: E-Mail (e-Mail-Adresse)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,22 +11,22 @@ api_name:
 api_type:
 - schema
 ms.assetid: dfffa1d5-2c3c-4f56-af63-5853df462e58
-description: Das E-Mail-Element darstellt, den Postfachbenutzer für eine Abfrage GetUserAvailability.
-ms.openlocfilehash: 0e7848d7c4f5001ed86b06d11af1d7623b4bf1f0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das e-Mail-Element stellt den Postfachbenutzer für eine GetUserAvailability-Abfrage dar.
+ms.openlocfilehash: 2ed8de9c011a385ec6c4ebd2f8d1d47304343a0e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758153"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459230"
 ---
-# <a name="email-emailaddresstype"></a>E-Mail (EmailAddressType)
+# <a name="email-emailaddresstype"></a>E-Mail (e-Mail-Adresse)
 
-Das **E-Mail** -Element darstellt, den Postfachbenutzer für eine Abfrage GetUserAvailability. 
+Das **e-Mail-** Element stellt den Postfachbenutzer für eine GetUserAvailability-Abfrage dar. 
   
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)  
 - [MailboxDataArray](mailboxdataarray.md) 
 - [MailboxData](mailboxdata.md) 
-- [E-Mail (EmailAddressType)](email-emailaddresstype.md)
+- [E-Mail (e-Mail-Adresse)](email-emailaddresstype.md)
   
 ```xml
 <Email>
@@ -49,25 +49,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Name (EmailAddress)](name-emailaddress.md) <br/> |Stellt den Anzeigenamen des Postfachbenutzers an.  <br/> |
-|[Adresse (Zeichenfolge)](address-string.md) <br/> |Stellt die e-Mail-Adresse des Postfachbenutzers an.  <br/> |
-|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Stellt das routing-Protokoll für die Nachricht an.  <br/> |
+|[Name (e-mailemail)](name-emailaddress.md) <br/> |Stellt den Anzeigenamen des Postfachbenutzers dar.  <br/> |
+|[Address (Zeichenfolge)](address-string.md) <br/> |Stellt die e-Mail-Adresse des Postfachbenutzers dar.  <br/> |
+|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Stellt das Routingprotokoll für die Nachricht dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MailboxData](mailboxdata.md) <br/> |Stellt eine einzelne Postfachbenutzer und Optionen für den Typ der Daten zu den Postfachbenutzer zurückgegeben werden soll.  <br/> Es folgt der XPath-Ausdruck für dieses Element:  <br/>  `/GetUserAvailabilityRequest/MailboxDataArray[i]/MailboxData` <br/> |
+|[MailboxData](mailboxdata.md) <br/> |Stellt einen einzelnen Postfachbenutzer und Optionen für den Typ der Daten dar, die über den Postfachbenutzer zurückgegeben werden sollen.  <br/> Es folgt der XPath für dieses Element:  <br/>  `/GetUserAvailabilityRequest/MailboxDataArray[i]/MailboxData` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich im Verzeichnis /EWS/ des Computers, auf dem MicrosoftExchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im Verzeichnis/EWS/"aus des Computers mit Microsoft Exchange Server 2007, auf dem die Client Zugriffs-Serverrolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -76,5 +76,5 @@ Das Schema, das dieses Element beschreibt befindet sich im Verzeichnis /EWS/ des
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)  
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
-- [Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

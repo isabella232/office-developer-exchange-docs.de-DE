@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dbf1499c-90ff-4649-a80e-f36bebb0c136
-description: Group (MailboxAssociationType)-Elements ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: 9f309f6f09f809e99f66a9ff098e0f257ad39b80
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Group (MailboxAssociationType)-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 468cf8e6a099fb572fb14677db06f282abba3a41
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829760"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458663"
 ---
 # <a name="group-mailboxassociationtype"></a>Gruppe (MailboxAssociationType)
 
-**Group (MailboxAssociationType)** -Elements ist nur zur internen Verwendung vorgesehen. 
+Das **Group (MailboxAssociationType)-** Element ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

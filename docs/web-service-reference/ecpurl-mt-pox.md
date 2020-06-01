@@ -1,22 +1,22 @@
 ---
-title: EcpUrl-Mt (POX)
+title: EcpUrl-MT (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5221745b-572c-44a5-afdb-41b58af44971
-description: Das EcpUrl Mt-Element gibt eine partielle URL, die mit dem EcpUrl (POX) Elementwert generiert eine URL, die verwendet werden können, für den e-Mail-Nachricht Nachverfolgen der Einstellungen für einen e-Mail-aktivierten Benutzer Zugriff auf kombiniert werden kann.
-ms.openlocfilehash: 13954a4dab8e81f4ba75b3578e6ba7f67f4b8b96
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EcpUrl-MT-Element gibt eine partielle URL an, die mit dem Wert des EcpUrl (POX)-Elements kombiniert werden kann, um eine URL zu generieren, die für den Zugriff auf e-Mail-Nachrichtenverfolgungseinstellungen für einen e-Mail-aktivierten Benutzer verwendet werden kann.
+ms.openlocfilehash: 097811add5635bca14c659814652bca244a1398d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758118"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458712"
 ---
-# <a name="ecpurl-mt-pox"></a>EcpUrl-Mt (POX)
+# <a name="ecpurl-mt-pox"></a>EcpUrl-MT (POX)
 
-Das **EcpUrl Mt** -Element gibt eine partielle URL, die mit dem [EcpUrl (POX)](ecpurl-pox.md) Elementwert generiert eine URL, die verwendet werden können, für den e-Mail-Nachricht Nachverfolgen der Einstellungen für einen e-Mail-aktivierten Benutzer Zugriff auf kombiniert werden kann. 
+Das **EcpUrl-MT-** Element gibt eine partielle URL an, die mit dem Wert des [EcpUrl (POX)](ecpurl-pox.md) -Elements kombiniert werden kann, um eine URL zu generieren, die für den Zugriff auf e-Mail-Nachrichtenverfolgungseinstellungen für einen e-Mail-aktivierten Benutzer verwendet werden kann. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -26,7 +26,7 @@ Das **EcpUrl Mt** -Element gibt eine partielle URL, die mit dem [EcpUrl (POX)](e
   
 [Protokoll (POX)](protocol-pox.md)
   
-[EcpUrl-Mt (POX)](ecpurl-mt-pox.md)
+[EcpUrl-MT (POX)](ecpurl-mt-pox.md)
   
 ```XML
 <EcpUrl-mt/>
@@ -48,22 +48,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt eine partielle URL, die kombiniert werden kann, mit der [EcpUrl (POX)](ecpurl-pox.md) Element Wert generiert eine URL, die Zugriff auf e-Mails Nachverfolgen der Einstellungen für den Benutzer verwendet werden können. Der Wert des Elements **EcpUrl Mt** enthält Parameter enthaltenen ' <' und ' >' Zeichen, die vom Client ersetzt werden, wie in der folgenden Tabelle dargestellt. 
+Der Textwert stellt eine partielle URL dar, die mit dem [EcpUrl (POX)](ecpurl-pox.md) -Elementwert kombiniert werden kann, um eine URL zu generieren, die für den Zugriff auf e-Mail-Tracking-Einstellungen für den Benutzer verwendet werden kann. Der Wert des **EcpUrl-MT-** Elements enthält Parameter, die in "<"-und ">"-Zeichen enthalten sind, die durch den Client ersetzt werden, wie in der folgenden Tabelle dargestellt. 
   
 |**Parameter**|**Ersetzen durch**|
 |:-----|:-----|
 | _IsOwa_ <br/> |n  <br/> |
-| _MsgID_ <br/> |Internetnachricht-ID der Nachricht nachverfolgt werden durch die Kopfzeile Nachrichten-ID angegeben wird.  <br/> |
+| _MsgID_ <br/> |Internet Nachrichten-ID der Nachricht, die nachverfolgt werden soll, wie im Message-ID-Header angegeben.  <br/> |
 | _MBX_ <br/> |Die SMTP-Adresse des Postfachbesitzers.  <br/> |
-| _Absender_ <br/> |Die SMTP-Adresse des Absenders der Nachricht.  <br/> |
+| _Sender_ <br/> |Die SMTP-Adresse des Absenders der Nachricht.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **EcpUrl Mt** -Element ist ein optionales untergeordnetes Element des **Protokoll** -Elements. 
+Das **EcpUrl-MT-** Element ist ein optionales untergeordnetes Element des **Protocol** -Elements. 
   
 ## <a name="see-also"></a>Siehe auch
 

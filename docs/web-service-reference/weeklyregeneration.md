@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f128fdaa-ca3d-4614-8e55-f25e76a67b6c
-description: Das WeeklyRegeneration-Element beschreibt die Häufigkeit in Wochen, in denen eine Aufgabe neu erstellt wird.
-ms.openlocfilehash: 36cd3cc5c180f2b2cf53708e7787d0595f518def
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das WeeklyRegeneration-Element beschreibt die Häufigkeit in Wochen, in der eine Aufgabe neu generiert wird.
+ms.openlocfilehash: dc333e051fd2213942e629a3f2764c72abfaeba5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839535"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459749"
 ---
 # <a name="weeklyregeneration"></a>WeeklyRegeneration
 
-Das **WeeklyRegeneration** -Element beschreibt die Häufigkeit in Wochen, in denen eine Aufgabe neu erstellt wird. 
+Das **WeeklyRegeneration** -Element beschreibt die Häufigkeit in Wochen, in der eine Aufgabe neu generiert wird. 
   
 ```xml
 <WeeklyRegeneration>
@@ -42,23 +42,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Intervall](interval.md) <br/> |Definiert das Intervall in Wochen, da der Vorgang abgeschlossen wurde, nach dem eine neue Aufgabe neu generiert wird.  <br/> |
+|[Intervall](interval.md) <br/> |Definiert das Intervall in Wochen, seit der Vorgang abgeschlossen wurde, nach dem eine neue Aufgabe neu generiert wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Serieninformationen für wiederkehrende Aufgaben enthält.  <br/> |
+|[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Enthält Serieninformationen für wiederkehrende Vorgänge.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

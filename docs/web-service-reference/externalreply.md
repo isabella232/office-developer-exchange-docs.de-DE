@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cbcfa469-242c-4f98-8f4f-2c9bcbe69f5a
-description: Das ExternalReply-Element enthält, die Out of Office (OOF)-Antwort, die an Adressen außerhalb der Domäne oder der vertrauenswürdigen Domänen des Empfängers gesendet wird.
-ms.openlocfilehash: f318b34c98dd42487b8ca3791ba915fb91d629a5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ExternalReply-Element enthält die Abwesenheitsantwort, die an Adressen außerhalb der Domäne des Empfängers oder der vertrauenswürdigen Domänen gesendet wird.
+ms.openlocfilehash: c3381979e5e6aad51f9ae2bb3e661003ef793be6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758397"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458761"
 ---
 # <a name="externalreply"></a>ExternalReply
 
-Das **ExternalReply** -Element enthält, die Out of Office (OOF)-Antwort, die an Adressen außerhalb der Domäne oder der vertrauenswürdigen Domänen des Empfängers gesendet wird. 
+Das **ExternalReply** -Element enthält die Abwesenheitsantwort, die an Adressen außerhalb der Domäne des Empfängers oder der vertrauenswürdigen Domänen gesendet wird. 
   
 ```XML
 <ExternalReply>
@@ -38,40 +38,40 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|XML: lang  <br/> |Gibt die Sprache, in der Nachricht **ExternalReply** verwendet. Die möglichen Werte für dieses Attribut sind durch IETF RFC 3066 definiert.  <br/> |
+|XML: lang  <br/> |Gibt die Sprache an, die in der **ExternalReply** -Nachricht verwendet wird. Die möglichen Werte für dieses Attribut werden durch IETF RFC 3066 definiert.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Nachricht (Verfügbarkeit)](message-availability.md) <br/> |Enthält die Antwort OOF.  <br/> |
+|[Message (Verfügbarkeit)](message-availability.md) <br/> |Enthält die Abwesenheitsantwort.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[' UserOofSettings '](useroofsettings.md) <br/> |Gibt die OOF-Einstellungen.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
-|[OofSettings](oofsettings.md) <br/> |Enthält die OOF-Einstellungen.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |Gibt die Abwesenheitseinstellungen an.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[OofSettings](oofsettings.md) <br/> |Enthält die OOF-Einstellungen.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird eine Anforderung SetUserOofSettings legt die [OofState](oofstate.md) auf **aktiviert**, wird die Dauer der OOF auf 10 Tage, und die internen und externen Abwesenheitsnachrichten.
+Im folgenden Beispiel einer SetUserOofSettings-Anforderung wird die [OofState](oofstate.md) auf **Enabled**festgelegt, die Dauer OOF auf 10 Tage festgelegt und die internen und externen Abwesenheitsnachrichten festgelegt.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -90,11 +90,11 @@ Im folgenden Beispiel wird eine Anforderung SetUserOofSettings legt die [OofStat
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

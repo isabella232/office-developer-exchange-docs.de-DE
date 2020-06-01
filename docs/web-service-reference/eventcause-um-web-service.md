@@ -1,5 +1,5 @@
 ---
-title: EventCause (UM-Webdienst)
+title: EventCause (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,21 +10,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7b3c1db8-cad4-4050-a50d-b06f065db530
-description: Das EventCause-Element enthält einen Wert, der angibt, die Ursache für ein Aufrufereignis in eine Antwort auf eine GetCallInfo-Vorgang (UM-Webdienst) an.
-ms.openlocfilehash: dd73d93527bebb3b522ad0a6cdae5b9faee1a6a9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EventCause-Element enthält einen Wert, der die Ursache für ein Anruf Ereignis in einer Antwort auf eine Anforderung des GetCallInfo-Vorgangs (um-Webdienst) angibt.
+ms.openlocfilehash: 9d49fd4b16236d0dd87889fbbd039f2e271a5968
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758277"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458677"
 ---
-# <a name="eventcause-um-web-service"></a>EventCause (UM-Webdienst)
+# <a name="eventcause-um-web-service"></a>EventCause (um-Webdienst)
 
-Das **EventCause** -Element enthält einen Wert, der die Ursache für einen Anruf-Ereignis in einer Antwort auf eine Anforderung [GetCallInfo-Vorgang (UM-Webdienst)](getcallinfo-operation-um-web-service.md) angibt. 
+Das **EventCause** -Element enthält einen Wert, der die Ursache für ein Anruf Ereignis in einer Antwort auf eine Anforderung des [GetCallInfo-Vorgangs (um-Webdienst)](getcallinfo-operation-um-web-service.md) angibt. 
   
-[GetCallInfoResponse (UM-Webdienst)](getcallinforesponse-um-web-service.md)
+[GetCallInfoResponse (um-Webdienst)](getcallinforesponse-um-web-service.md)
   
-[EventCause (UM-Webdienst)](eventcause-um-web-service.md)
+[EventCause (um-Webdienst)](eventcause-um-web-service.md)
   
 ```xml
 <GetCallInfoResponse>
@@ -49,7 +49,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetCallInfoResponse (UM-Webdienst)](getcallinforesponse-um-web-service.md) <br/> |Definiert eine Antwort auf eine [GetCallInfo-Vorgang (UM-Webdienst)](getcallinfo-operation-um-web-service.md) an.  <br/> |
+|[GetCallInfoResponse (um-Webdienst)](getcallinforesponse-um-web-service.md) <br/> |Definiert eine Antwort auf eine [GetCallInfo-Vorgangsanforderung (um-Webdienst)](getcallinfo-operation-um-web-service.md) .  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
@@ -59,24 +59,24 @@ Ein Textwert ist erforderlich. Im Folgenden sind die möglichen Werte aufgeführ
     
 - UserBusy
     
-- NoAnswer
+- Noanswer
     
 - Andere
     
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[GetCallInfo-Vorgang (UM-Webdienst)](getcallinfo-operation-um-web-service.md)
+[GetCallInfo-Vorgang (um-Webdienst)](getcallinfo-operation-um-web-service.md)
   
-[GetCallInfoResponse (UM-Webdienst)](getcallinforesponse-um-web-service.md)
+[GetCallInfoResponse (um-Webdienst)](getcallinforesponse-um-web-service.md)
 

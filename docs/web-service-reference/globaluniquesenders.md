@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6bd9e9cb-19c8-45af-b211-dfb8a6003b1b
-description: Das GlobalUniqueSender-Element enthält eine Liste von allen Absendern der Unterhaltungselemente im Postfach.
-ms.openlocfilehash: 72dec056880c41ac9e79235dddb3c82102580a31
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GlobalUniqueSender-Element enthält eine Liste aller Absender von Unterhaltungselementen im Postfach.
+ms.openlocfilehash: 0e85e201017e175a9ffc6b923976020d4157d5b7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829751"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459063"
 ---
 # <a name="globaluniquesenders"></a>GlobalUniqueSenders
 
-Das **GlobalUniqueSender** -Element enthält eine Liste von allen Absendern der Unterhaltungselemente im Postfach. 
+Das **GlobalUniqueSender** -Element enthält eine Liste aller Absender von Unterhaltungselementen im Postfach. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -50,7 +50,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[String](string.md) <br/> |Enthält einen einzelnen Gespräch Absender.  <br/> |
+|[String](string.md) <br/> |Enthält einen einzelnen Unterhaltungs Absender.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -62,15 +62,15 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
@@ -84,5 +84,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 [ApplyConversationAction-Vorgang](applyconversationaction-operation.md)
 
 
-[Conversations in EWS](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+[Conversations in EWS](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

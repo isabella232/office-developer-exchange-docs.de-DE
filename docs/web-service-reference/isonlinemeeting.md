@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: c29df676-0f3a-4694-a42f-522c6d16872f
-description: IsOnlineMeeting-Element gibt an, ob die Besprechung online ist.
-ms.openlocfilehash: 5a56b0b9828d6f6bec83fc0ad0f8f9579b471a72
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IsOnlineMeeting-Element gibt an, ob die Besprechung Online ist.
+ms.openlocfilehash: d2d60c8a51ad7e03c33b57709d9173e79d162268
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830061"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460400"
 ---
 # <a name="isonlinemeeting"></a>IsOnlineMeeting
 
-**IsOnlineMeeting** -Element gibt an, ob die Besprechung online ist. 
+Das **IsOnlineMeeting** -Element gibt an, ob die Besprechung Online ist. 
   
 ```xml
 <IsOnlineMeeting/>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -49,19 +49,19 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der einen booleschen Wert darstellt ist erforderlich, wenn dieses Element verwendet wird. Der Wert **true** gibt an, dass die Besprechung online ist. Der Wert **false** gibt an, dass die Besprechung nicht online ist. 
+Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich, wenn dieses Element verwendet wird. Der Wert **true** gibt an, dass die Besprechung Online ist. Der Wert **false** gibt an, dass die Besprechung nicht online ist. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die IsOnlineMeeting-Eigenschaft kann für den Organisator Kalenderelement lesen geschrieben werden. Es ist schreibgeschützt, für Besprechungsanfragen und Kalenderelemente Teilnehmer.
+Die IsOnlineMeeting-Eigenschaft ist für das Kalenderelement des Organisators schreibgeschützt. Er ist schreibgeschützt für Besprechungsanfragen und für die Kalenderelemente von Teilnehmern.
   
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem MicrosoftExchange 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange 2007 ausgeführt wird, auf dem die Client Zugriffs-Serverrolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

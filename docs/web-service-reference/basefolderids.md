@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bdaa6093-f960-469a-b338-0e75aaa536c6
-description: Das Element BaseFolderIds stellt die Auflistung von Ordnern, die durchsucht werden wird, um den Inhalt des ein Suchordner bestimmen.
-ms.openlocfilehash: 960e4d9c1d6eb37bf988bf163e696cbba3e1ef6f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das BaseFolderIds-Element stellt die Auflistung von Ordnern dar, die abgebaut werden, um den Inhalt eines Suchordners zu bestimmen.
+ms.openlocfilehash: 97159ec1ded685e63aafedfaf90a06eff39adaab
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757424"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460267"
 ---
 # <a name="basefolderids"></a>BaseFolderIds
 
-Das Element **BaseFolderIds** stellt die Auflistung von Ordnern, die durchsucht werden wird, um den Inhalt des ein Suchordner bestimmen. 
+Das **BaseFolderIds** -Element stellt die Auflistung von Ordnern dar, die abgebaut werden, um den Inhalt eines Suchordners zu bestimmen. 
   
 ```xml
 <BaseFolderIds>
@@ -43,26 +43,26 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Enthält den Schlüssel-ID und Ändern eines Ordners.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifiziert MicrosoftExchange Server 2007-Ordner, die nach Namen verwiesen werden können.  <br/> |
+|[FolderId](folderid.md) <br/> |Enthält den Bezeichner und den Änderungsschlüssel eines Ordners.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifiziert Microsoft Exchange Server 2007-Ordner, auf die über den Namen verwiesen werden kann.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SearchParameters](searchparameters.md) <br/> |Stellt die Parameter, die einen Suchordner definieren.  <br/> |
+|[SearchParameters](searchparameters.md) <br/> |Stellt die Parameter dar, die einen Suchordner definieren.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **BaseFolderIds** -Element muss mindestens ein [FolderId](folderid.md) oder [DistinguishedFolderId](distinguishedfolderid.md) -Element enthalten. 
+Das **BaseFolderIds** -Element muss mindestens ein [Folder](folderid.md) -oder [DistinguishedFolderId](distinguishedfolderid.md) -Element enthalten. 
   
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

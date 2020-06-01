@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e2b4cf8c-5d43-4cd8-b86d-cc27a5d2f095
-description: Das RequestedView-Element definiert den Typ des Kalenderinformationen, die ein Client anfordert.
-ms.openlocfilehash: 7710227720264432c325f95da894cbbbd4748dc0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RequestedView-Element definiert den Typ von Kalenderinformationen, die ein Client anfordert.
+ms.openlocfilehash: bc4f863841fc5a7d1d23f0bd4c7c2895d2593a2d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831145"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459160"
 ---
 # <a name="requestedview"></a>RequestedView
 
-Das **RequestedView** -Element definiert den Typ des Kalenderinformationen, die ein Client anfordert. 
+Das **RequestedView** -Element definiert den Typ von Kalenderinformationen, die ein Client anfordert. 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -50,70 +50,70 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FreeBusyViewOptions](freebusyviewoptions.md) <br/> |Gibt den Typ des Frei/Gebucht-Informationen in der Antwort zurückgegeben.  <br/> Es folgt der XPath-Ausdruck für dieses Element:  <br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions` <br/> |
+|[FreeBusyViewOptions](freebusyviewoptions.md) <br/> |Gibt den Typ der Frei/Gebucht-Informationen an, die in der Antwort zurückgegeben werden.  <br/> Es folgt der XPath für dieses Element:  <br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Die folgende Tabelle enthält die möglichen Werte für dieses Element.
+Ein Textwert ist erforderlich. In der folgenden Tabelle sind die möglichen Werte für dieses Element aufgeführt.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Keine  <br/> |Dieser Wert ist nicht gültig für Anfragen. Dieser Wert gilt für Antworten.  <br/> |
-|MergedOnly  <br/> |Stellt einen aggregierten Frei/Gebucht-Stream. In gesamtstrukturübergreifenden-Szenarien, in denen die Zielbenutzer in einer Gesamtstruktur keine Verfügbarkeitsdienst konfiguriert haben, ruft der Verfügbarkeitsdienst des Antragstellers des Zielbenutzers Frei/Gebucht-Informationen aus dem öffentlichen Ordner mit Frei/Gebucht-Informationen. Da Öffentliche Ordner nur Frei/Gebucht-Informationen in zusammengeführte Formular gespeichert werden sollen, ist **MergedOnly** die einzige verfügbare Informationen.  <br/> |
-|FreeBusy  <br/> |Stellt die Vorversion Statusinformationen: frei, gebucht, mit Vorbehalt und OOF. Dazu gehören auch die Start-/Endzeiten der Termine. Diese Ansicht ist umfangreicher als die Vorversion Frei/Gebucht-Informationen anzeigen, da einzelne Besprechung starten und beenden Sie Zeiten anstelle einer aggregierten Frei/Gebucht-Stream bereitgestellt.  <br/> |
-|FreeBusyMerged  <br/> |Stellt alle Eigenschaften in **FreeBusy** mit einen Datenstrom zusammengeführten Frei/Gebucht-Informationen.  <br/> |
-|Detailliert  <br/> |Stellt die Vorversion Statusinformationen: frei, gebucht, mit Vorbehalt und OOF; die Start-/Endzeiten der Termine; und verschiedene Eigenschaften des Termins wie Betreff, Ort und Bedeutung. Diese angeforderten Ansicht zurück die maximale Datenmenge, der anfordernde Benutzer Berechtigungen aufweist. Wenn zusammengeführten Frei/Gebucht-Informationen nur verfügbar ist, werden als mit anfordernde Informationen für Benutzer in einer Microsoft Exchange Server 2003-Gesamtstruktur **MergedOnly** zurückgegeben. Andernfalls wird **FreeBusy** oder **Detailed** zurückgegeben werden soll.  <br/> |
-|DetailedMerged  <br/> |Stellt alle Eigenschaften in **Detailed** mit einen Datenstrom zusammengeführten Frei/Gebucht-Informationen. Wenn zusammengeführten Frei/Gebucht-Informationen nur verfügbar ist, wird **MergedOnly** zurückgegeben. Andernfalls wird **FreeBusyMerged** oder **DetailedMerged** zurückgegeben werden.  <br/> |
+|Keine  <br/> |Dieser Wert ist für Anforderungen ungültig. Dieser Wert ist für Antworten gültig.  <br/> |
+|MergedOnly  <br/> |Stellt einen aggregierten frei/gebucht-Datenstrom dar. Bei gesamtstrukturübergreifenden Szenarien, in denen für den Zielbenutzer in einer Gesamtstruktur kein Verfügbarkeitsdienst konfiguriert ist, ruft der Verfügbarkeitsdienst des Anforderers die Frei/Gebucht-Informationen des Zielbenutzers aus dem öffentlichen Frei/Gebucht-Ordner ab. Da öffentliche Ordner nur Frei/Gebucht-Informationen im zusammengeführten Formular speichern, ist **MergedOnly** die einzigen verfügbaren Informationen.  <br/> |
+|FreeBusy  <br/> |Stellt die Legacy Statusinformationen dar: frei, beschäftigt, vorläufig und OOF. Dies umfasst auch die Anfangs-und Endzeiten der Termine. Diese Ansicht ist reicher als die Legacy-Frei/Gebucht-Ansicht, da anstelle eines aggregierten frei/gebucht-Streams einzelne Start-und Endzeiten für Besprechungen bereitgestellt werden.  <br/> |
+|FreeBusyMerged  <br/> |Stellt alle Eigenschaften in **freebusy** mit einem Strom von zusammengeführten Frei/Gebucht-Informationen dar.  <br/> |
+|Detaillierte  <br/> |Stellt die Legacy Statusinformationen dar: frei, beschäftigt, vorläufig und OOF; die Start-und Endzeit Zeiten der Termine; und verschiedene Eigenschaften des Termins wie Betreff, Ort und Wichtigkeit. In dieser angeforderten Ansicht wird die maximale Menge an Informationen zurückgegeben, für die der anfordernde Benutzer privilegiert ist. Wenn zusammengeführte Frei/Gebucht-Informationen nur verfügbar sind, wie beim Anfordern von Informationen für Benutzer in einer Microsoft Exchange Server 2003 Gesamtstruktur, wird **MergedOnly** zurückgegeben. Andernfalls wird **freebusy** oder **detailed** zurückgegeben.  <br/> |
+|DetailedMerged  <br/> |Stellt alle Eigenschaften im **Detail** mit einem Stream von zusammengeführten Frei/Gebucht-Informationen dar. Wenn zusammengeführte Frei/Gebucht-Informationen nur verfügbar sind, wird **MergedOnly** zurückgegeben. Andernfalls wird **FreeBusyMerged** oder **DetailedMerged** zurückgegeben.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Wert von diesem Element festgelegt, wird mit dem [FreeBusyViewType](freebusyviewtype.md) -Element in der Antwort zurückgegeben. 
+Der von diesem Element festgelegte Wert wird mit dem [FreeBusyViewType](freebusyviewtype.md) -Element in der Antwort zurückgegeben. 
   
-Die folgende Tabelle zeigt, was für die anderen Ansichtstypen und der entsprechenden MAPI-Eigenschaft zurückgegeben wird. Jede Ansichtstyp baut auf der vorhergehenden Ansichtstyp.
+In der folgenden Tabelle wird gezeigt, was für die verschiedenen Ansichtstypen und die entsprechende MAPI-Eigenschaft zurückgegeben wird. Jeder Ansichtstyp basiert auf dem vorherigen Ansichtstyp.
   
-|**Frei/Gebucht-Ansichtstyp**|**Eigenschaften**|**MAPI-Calendar-Eigenschaft**|
+|**Typ der Frei/Gebucht-Ansicht**|**Eigenschaften**|**MAPI Calendar-Eigenschaft**|
 |:-----|:-----|:-----|
 |**MergedOnly** <br/> |MergedFreeBusyStream  <br/> ||
-|**FreeBusy** <br/> |Klassische status  <br/> |PropTag (0x80860003)  <br/> |
-|**FreeBusy** <br/> |Arbeitszeiten  <br/> ||
-|**FreeBusy** <br/> |Startzeit  <br/> |PR_START_DATE  <br/> |
-|**FreeBusy** <br/> |Endzeit  <br/> |PR_END_DATE  <br/> |
-|**FreeBusyMerged** <br/> |Klassische status  <br/> |PropTag (0x80860003)  <br/> |
-|**FreeBusyMerged** <br/> |Arbeitszeiten  <br/> ||
-|**FreeBusyMerged** <br/> |Startzeit  <br/> |PR_START_DATE  <br/> |
-|**FreeBusyMerged** <br/> |Endzeit  <br/> |PR_END_DATE  <br/> |
+|**FreeBusy** <br/> |Klassischer Status  <br/> |Eigenschaftstag (0x80860003)  <br/> |
+|**FreeBusy** <br/> |Arbeitsstunden  <br/> ||
+|**FreeBusy** <br/> |Start time  <br/> |PR_START_DATE  <br/> |
+|**FreeBusy** <br/> |End time  <br/> |PR_END_DATE  <br/> |
+|**FreeBusyMerged** <br/> |Klassischer Status  <br/> |Eigenschaftstag (0x80860003)  <br/> |
+|**FreeBusyMerged** <br/> |Arbeitsstunden  <br/> ||
+|**FreeBusyMerged** <br/> |Start time  <br/> |PR_START_DATE  <br/> |
+|**FreeBusyMerged** <br/> |End time  <br/> |PR_END_DATE  <br/> |
 |**FreeBusyMerged** <br/> |MergedFreeBusyStream  <br/> ||
-|**Detaillierte** <br/> |Klassische status  <br/> |PropTag (0x80860003)  <br/> |
-|**Detaillierte** <br/> |Arbeitszeiten  <br/> ||
-|**Detaillierte** <br/> |Startzeit  <br/> |PR_START_DATE  <br/> |
-|**Detaillierte** <br/> |Endzeit  <br/> |PR_END_DATE  <br/> |
-|**Detaillierte** <br/> |Subject  <br/> |PR_SUBJECT  <br/> |
-|**Detaillierte** <br/> |Speicherort  <br/> |PR_LOCATION  <br/> |
-|**Detaillierte** <br/> |Eintrag Id(unless private)  <br/> ||
+|**Detaillierte** <br/> |Klassischer Status  <br/> |Eigenschaftstag (0x80860003)  <br/> |
+|**Detaillierte** <br/> |Arbeitsstunden  <br/> ||
+|**Detaillierte** <br/> |Start time  <br/> |PR_START_DATE  <br/> |
+|**Detaillierte** <br/> |End time  <br/> |PR_END_DATE  <br/> |
+|**Detaillierte** <br/> |Betreff  <br/> |PR_SUBJECT  <br/> |
+|**Detaillierte** <br/> |Standort  <br/> |PR_LOCATION  <br/> |
+|**Detaillierte** <br/> |Entry-ID (sofern nicht privat)  <br/> ||
 |**Detaillierte** <br/> |Private Kennzeichnung  <br/> ||
-|**Detaillierte** <br/> |IsMeeting  <br/> ||
+|**Detaillierte** <br/> |Ismeeting  <br/> ||
 |**Detaillierte** <br/> |IsRecurring  <br/> ||
-|**Detaillierte** <br/> |IsException  <br/> ||
-|**Detaillierte** <br/> |IsReminderSet  <br/> ||
-|**DetailedMerged** <br/> |Klassische status  <br/> |PropTag (0x80860003)  <br/> |
-|**DetailedMerged** <br/> |Arbeitszeiten  <br/> ||
-|**DetailedMerged** <br/> |Startzeit  <br/> |PR_START_DATE  <br/> |
-|**DetailedMerged** <br/> |Endzeit  <br/> |PR_END_DATE  <br/> |
-|**DetailedMerged** <br/> |Subject  <br/> |PR_SUBJECT  <br/> |
-|**DetailedMerged** <br/> |Speicherort  <br/> |PR_LOCATION  <br/> |
-|**DetailedMerged** <br/> |Eintrag Id(unless private)  <br/> ||
+|**Detaillierte** <br/> |Isexception  <br/> ||
+|**Detaillierte** <br/> |Reminder  <br/> ||
+|**DetailedMerged** <br/> |Klassischer Status  <br/> |Eigenschaftstag (0x80860003)  <br/> |
+|**DetailedMerged** <br/> |Arbeitsstunden  <br/> ||
+|**DetailedMerged** <br/> |Start time  <br/> |PR_START_DATE  <br/> |
+|**DetailedMerged** <br/> |End time  <br/> |PR_END_DATE  <br/> |
+|**DetailedMerged** <br/> |Betreff  <br/> |PR_SUBJECT  <br/> |
+|**DetailedMerged** <br/> |Standort  <br/> |PR_LOCATION  <br/> |
+|**DetailedMerged** <br/> |Entry-ID (sofern nicht privat)  <br/> ||
 |**DetailedMerged** <br/> |Private Kennzeichnung  <br/> ||
 |**DetailedMerged** <br/> |MergedFreeBusyStream  <br/> ||
-|**DetailedMerged** <br/> |IsMeeting  <br/> ||
+|**DetailedMerged** <br/> |Ismeeting  <br/> ||
 |**DetailedMerged** <br/> |IsRecurring  <br/> ||
-|**DetailedMerged** <br/> |IsException  <br/> ||
-|**DetailedMerged** <br/> |IsReminderSet  <br/> ||
+|**DetailedMerged** <br/> |Isexception  <br/> ||
+|**DetailedMerged** <br/> |Reminder  <br/> ||
    
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -125,5 +125,5 @@ Die folgende Tabelle zeigt, was für die anderen Ansichtstypen und der entsprech
 [GetUserAvailability-Vorgang](getuseravailability-operation.md)
 
 
-[Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

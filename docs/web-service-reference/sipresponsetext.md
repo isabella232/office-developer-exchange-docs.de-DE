@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 359a9085-50c0-4c94-8a12-216339ba2018
-description: Das SIPResponseText-Element gibt den SIP-Antworttext.
-ms.openlocfilehash: 3856275c74b51e29db5884ed490715e9f286eb8b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SIPResponseText-Element gibt den SIP-Antworttext an.
+ms.openlocfilehash: 6249e4bb651ba62eb99537d0cdec5bea60670f61
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831502"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460463"
 ---
 # <a name="sipresponsetext"></a>SIPResponseText
 
-Das **SIPResponseText** -Element gibt den SIP-Antworttext. 
+Das **SIPResponseText** -Element gibt den SIP-Antworttext an. 
   
 ```xml
 <SIPResponseText/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -48,17 +48,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Text für den SIP-Antwort.
+Der SIP-Antworttext.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich im Verzeichnis /ews/ des Computers, der Exchange-Server, mit die Clientzugriffs-Serverrolle installiert ausgeführt wird.
+Das Schema, das dieses Element beschreibt, befindet sich im Verzeichnis/EWS/"aus des Computers, auf dem Exchange Server mit installierter Client Zugriffs-Server Rolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0bb00cee-c66b-4f34-b99d-355458f5e83b
-description: Das ErrorCode-Element darstellt, Validierungscode Fehler eine Regel, die beschreibt, was Fehler bei Überprüfung für jede Regel Prädikat oder Aktion.
-ms.openlocfilehash: ed8e2fa72b0eb007925742e6d194f3a391b3f3cb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ErrorCode-Element stellt einen Fehlercode für die Regelüberprüfung dar, der beschreibt, welche fehlgeschlagene Validierung für jedes Regelprädikat oder jede Aktion ausgeführt wurde.
+ms.openlocfilehash: 6432aeee786d74a9afcb346cb66765f9001257de
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758268"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460078"
 ---
 # <a name="errorcode"></a>ErrorCode
 
-Das **ErrorCode** -Element darstellt, Validierungscode Fehler eine Regel, die beschreibt, was Fehler bei Überprüfung für jede Regel Prädikat oder Aktion. 
+Das **errorCode** -Element stellt einen Fehlercode für die Regelüberprüfung dar, der beschreibt, welche fehlgeschlagene Validierung für jedes Regelprädikat oder jede Aktion ausgeführt wurde. 
   
 ```XML
 <ErrorCode/>
@@ -40,7 +40,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Fehler](error.md) <br/> |Stellt einen einzelnen Gültigkeitsprüfungsfehler auf eine bestimmte Regel Eigenschaftswert, Prädikat Eigenschaftswert oder Aktionswert-Eigenschaft.  <br/> |
+|[Fehler](error.md) <br/> |Stellt einen einzelnen Validierungsfehler für einen bestimmten Regel Eigenschaftswert, einen Prädikateigenschaftswert oder einen Action-Eigenschaftswert dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
@@ -68,13 +68,13 @@ Der Textwert für dieses Element ist auf eine der folgenden Zeichenfolgen beschr
     
 - InvalidSizeRange
     
-- InvalidValue
+- Invalidvalue
     
 - MessageClassificationNotFound
     
-- MissingAction
+- Missing
     
-- MissingParameter
+- Missparameter
     
 - MissingRangeValue
     
@@ -94,17 +94,17 @@ Der Textwert für dieses Element ist auf eine der folgenden Zeichenfolgen beschr
     
 - UnsupportedRule
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -1,5 +1,5 @@
 ---
-title: GetUMPropertiesResponse (UM-Webdienst)
+title: GetUMPropertiesResponse (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: fcd93ce5-7403-46a9-b46e-56d2ebdd2f79
-description: Das GetUMPropertiesResponse-Element definiert eine Antwort auf eine GetUMProperties-Vorgang (UM-Webdienst) an.
-ms.openlocfilehash: c0df872ad6b8e6541fa750ab87f4c1e5f0118b00
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetUMPropertiesResponse-Element definiert eine Antwort auf eine Anforderung des GetUMProperties-Vorgangs (um-Webdienst).
+ms.openlocfilehash: 3247489a305c694c10764d7a0c6f02b1fad51ebf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829685"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459125"
 ---
-# <a name="getumpropertiesresponse-um-web-service"></a>GetUMPropertiesResponse (UM-Webdienst)
+# <a name="getumpropertiesresponse-um-web-service"></a>GetUMPropertiesResponse (um-Webdienst)
 
-Das **GetUMPropertiesResponse** -Element definiert eine Antwort auf eine [GetUMProperties-Vorgang (UM-Webdienst)](getumproperties-operation-um-web-service.md) an. 
+Das **GetUMPropertiesResponse** -Element definiert eine Antwort auf eine Anforderung des [GetUMProperties-Vorgangs (um-Webdienst)](getumproperties-operation-um-web-service.md) . 
   
-[GetUMPropertiesResponse (UM-Webdienst)](getumpropertiesresponse-um-web-service.md)
+[GetUMPropertiesResponse (um-Webdienst)](getumpropertiesresponse-um-web-service.md)
   
 ```xml
 <GetUMPropertiesResponse>
@@ -47,10 +47,10 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MissedCallNotificationEnabled (UM-Webdienst)](missedcallnotificationenabled-um-web-service.md) <br/> |Gibt an, ob Benachrichtigungen über verpasste Anrufe aktiviert sind.  <br/> |
-|[PlayOnPhoneDialString (UM-Webdienst)](playonphonedialstring-um-web-service.md) <br/> |Enthält die Standardzeichenfolge Zugriffsnummern für den [PlayOnPhone Betrieb (UM-Webdienst)](playonphone-operation-um-web-service.md) und [PlayOnPhoneGreeting-Vorgang (UM-Webdienst)](playonphonegreeting-operation-um-web-service.md)verwenden.  <br/> |
-|[TelephoneAccessNumbers (UM-Webdienst)](telephoneaccessnumbers-um-web-service.md) <br/> |Enthält die Liste von Telefonnummern, mit denen der Benutzer über ein Telefon Zugriff auf Unified Messaging.  <br/> |
-|[TelephoneAccessFolderEmail (UM-Webdienst)](telephoneaccessfolderemail-um-web-service.md) <br/> |Enthält den Bezeichner für den e-Mail-Ordner aus dem Unified Messaging Nachrichten über das Telefon gelesen werden.  <br/> |
+|[MissedCallNotificationEnabled (um-Webdienst)](missedcallnotificationenabled-um-web-service.md) <br/> |Gibt an, ob Benachrichtigungen über verpasste Anrufe aktiviert sind.  <br/> |
+|[PlayOnPhoneDialString (um-Webdienst)](playonphonedialstring-um-web-service.md) <br/> |Enthält die standardmäßige Wählzeichenfolge, die für den [PlayOnPhone-Vorgang (um-Webdienst)](playonphone-operation-um-web-service.md) und den [PlayOnPhoneGreeting-Vorgang (um-Webdienst)](playonphonegreeting-operation-um-web-service.md)verwendet werden soll.  <br/> |
+|[TelephoneAccessNumbers (um-Webdienst)](telephoneaccessnumbers-um-web-service.md) <br/> |Enthält die Liste der Telefonnummern, die der Benutzer für den Zugriff auf Unified Messaging über ein Telefon verwenden kann.  <br/> |
+|[TelephoneAccessFolderEmail (um-Webdienst)](telephoneaccessfolderemail-um-web-service.md) <br/> |Enthält den Bezeichner für den e-Mail-Ordner, aus dem Unified Messaging Nachrichten über das Telefon lesen kann.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -60,18 +60,18 @@ Keine.
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[GetUMProperties-Vorgang (UM-Webdienst)](getumproperties-operation-um-web-service.md)
+[GetUMProperties-Vorgang (um-Webdienst)](getumproperties-operation-um-web-service.md)
 

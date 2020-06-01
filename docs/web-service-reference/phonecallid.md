@@ -1,5 +1,5 @@
 ---
-title: PhoneCallId
+title: Anrufer
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 79e31a4c-fc84-4802-8761-470df8d63694
-description: Das PhoneCallId-Element gibt den Bezeichner der eines Telefonanrufs. Dieses Element ist erforderlich.
-ms.openlocfilehash: 1886d9510fe254c016779166efccc9882fd77d2c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Anruf-ID-Element gibt den Bezeichner eines Telefonanrufs an. Dieses Element ist erforderlich.
+ms.openlocfilehash: 3e4b9dba5e8be6e45a0c16508531fbc6cf91c170
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830757"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459700"
 ---
-# <a name="phonecallid"></a>PhoneCallId
+# <a name="phonecallid"></a>Anrufer
 
-Das **PhoneCallId** -Element gibt den Bezeichner der eines Telefonanrufs. Dieses Element ist erforderlich. 
+Das **Anruf** -ID-Element gibt den Bezeichner eines Telefonanrufs an. Dieses Element ist erforderlich. 
   
 ```xml
 <PhoneCallId Id="" />
@@ -36,7 +36,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|Id  <br/> |Identifiziert den Anruf zu trennen. Dieses Attribut ist erforderlich.  <br/> |
+|Id  <br/> |Gibt den Telefonanruf an, der getrennt werden soll. Dieses Attribut ist erforderlich.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -46,21 +46,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DisconnectPhoneCall](disconnectphonecall.md) <br/> |Stellt eine Anforderung an eine Verbindung zu trennen.  <br/> |
-|[GetPhoneCallInformation](getphonecallinformation.md) <br/> |Stellt eine Anforderung zum Abrufen von Informationen entgegengenommen wurde.  <br/> |
-|[PlayOnPhoneResponse (Exchange Web Services)](playonphoneresponse-exchange-web-services.md) <br/> |Definiert eine Antwort auf eine PlayOnPhone an.  <br/> |
+|[DisconnectPhoneCall](disconnectphonecall.md) <br/> |Stellt eine Anforderung zum Trennen eines Anrufs dar.  <br/> |
+|[GetPhoneCallInformation](getphonecallinformation.md) <br/> |Stellt eine Anforderung zum Abrufen von Telefonanruf Informationen dar.  <br/> |
+|[PlayOnPhoneResponse (Exchange Webdienste)](playonphoneresponse-exchange-web-services.md) <br/> |Definiert eine Antwort auf eine PlayOnPhone-Anforderung.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

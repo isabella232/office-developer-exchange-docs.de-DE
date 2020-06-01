@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cce5344c-b622-44d4-bc14-a0de346c9335
-description: Das SearchArchiveOnly-Element gibt an, ob nur das Archivpostfach nicht indizierbaren Elemente durchsucht wird.
-ms.openlocfilehash: ac9d3262784d8052486c631ef3e99e650d4757c7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SearchArchiveOnly-Element gibt an, ob nur das Archivpostfach nach nicht indizierten Elementen durchsucht wird.
+ms.openlocfilehash: 9014044ed06c697cc43dd62103d7a1a907bda5a8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831293"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460498"
 ---
 # <a name="searcharchiveonly"></a>SearchArchiveOnly
 
-Das **SearchArchiveOnly** -Element gibt an, ob nur das Archivpostfach nicht indizierbaren Elemente durchsucht wird. 
+Das **SearchArchiveOnly** -Element gibt an, ob nur das Archivpostfach nach nicht indizierten Elementen durchsucht wird. 
   
 ```xml
 <SearchArchiveOnly>true | false</SearchArchiveOnly>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,21 +42,21 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **SearchArchiveOnly** -Element gibt an, dass die Suche nicht indizierbaren Element nur für das Archivpostfach ausgeführt wird. Der Textwert **false** gibt an, dass die Suche für das primäre Postfach und Archivpostfach ausgeführt wird. 
+Der Textwert **true** für das **SearchArchiveOnly** -Element gibt an, dass die Suche nicht indiziert Elemente nur für das Archivpostfach ausgeführt wird. Der Textwert **false** gibt an, dass die Suche für das primäre Postfach und das Archivpostfach ausgeführt wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

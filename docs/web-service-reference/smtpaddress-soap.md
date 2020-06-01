@@ -6,23 +6,23 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e833351c-4bd9-4937-8752-c743a7ce57ea
-description: Das SmtpAddress-Element darstellt, das alternative Postfach SMTP-Adresse.
-ms.openlocfilehash: a5ece8906d337f356126f1bcb2c349699f41831d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SmtpAddress-Element stellt die Alternative Post Fach SMTP-Adresse dar.
+ms.openlocfilehash: 53238caef1287536de838f4167e8937c182b41b0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831508"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459013"
 ---
 # <a name="smtpaddress-soap"></a>SmtpAddress (SOAP)
 
-Das **SmtpAddress** -Element darstellt, das alternative Postfach SMTP-Adresse. 
+Das **SmtpAddress** -Element stellt die Alternative Post Fach SMTP-Adresse dar. 
   
 ```XML
 <SmtpAddress/>
 ```
 
-**string**
+**Zeichenfolge**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -40,23 +40,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AlternateMailbox (SOAP)](alternatemailbox-soap.md) <br/> |Stellt eine alternative Postfach an.  <br/> |
+|[AlternateMailbox (SOAP)](alternatemailbox-soap.md) <br/> |Stellt ein alternatives Postfach dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **SmtpAddress** -Elements ist die e-Mail-Adresse des Postfachs Alternative. 
+Der Textwert des **SmtpAddress** -Elements ist die SMTP-e-Mail-Adresse des alternativen Postfachs. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 - [AutoErmittlung Webdienstverweis für Exchange](autodiscover-web-service-reference-for-exchange.md)
-- [SOAP-Autodiscover XML-Elemente für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+- [XML-Elemente der SOAP-AutoErmittlung für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

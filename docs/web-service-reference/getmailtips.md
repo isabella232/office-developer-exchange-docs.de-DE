@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4a24ff79-f1ae-43a1-9ac2-49baf3eaa173
-description: Das GetMailTips-Element darstellt, die Empfänger und die Typen der e-Mail-Infos abgerufen.
-ms.openlocfilehash: aad3b3d9dd578d0c92bf7d48ee8b78b58c63e23d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetMailTips-Element stellt die Empfänger und Typen von e-Mail-Tipps dar, die abgerufen werden sollen.
+ms.openlocfilehash: 8ff71ed5d52f713e11188b07c8c93aeee7dfa44d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758727"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458635"
 ---
 # <a name="getmailtips"></a>GetMailTips
 
-Das **GetMailTips** -Element darstellt, die Empfänger und die Typen der e-Mail-Infos abgerufen. 
+Das **GetMailTips** -Element stellt die Empfänger und Typen von e-Mail-Tipps dar, die abgerufen werden sollen. 
   
 ```XML
 <GetMailTips>
@@ -44,9 +44,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SendingAs](sendingas.md) <br/> |Enthält eine e-Mail-Adresse, der ein Benutzer versucht, als zu senden.  <br/> |
-|[Empfänger (ArrayOfRecipientsType)](recipients-arrayofrecipientstype.md) <br/> |Enthält eine Liste von Empfängern für e-Mail-Infos zu überprüfen.  <br/> |
-|[MailTipsRequested](mailtipsrequested.md) <br/> |Enthält die Typen von e-Mail-Infos aus dem Dienst angefordert.  <br/> |
+|[Absender](sendingas.md) <br/> |Enthält eine e-Mail-Adresse, die ein Benutzer zu senden versucht.  <br/> |
+|[Recipients (ArrayOfRecipientsType)](recipients-arrayofrecipientstype.md) <br/> |Enthält eine Liste der Empfänger, die nach e-Mail-Tipps suchen.  <br/> |
+|[MailTipsRequested](mailtipsrequested.md) <br/> |Enthält die Typen von e-Mail-Tipps, die vom Dienst angefordert werden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -56,17 +56,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

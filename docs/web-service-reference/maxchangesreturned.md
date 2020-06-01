@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f471db84-a666-4dfa-9993-8ca9113a0384
-description: Das MaxChangesReturned-Element beschreibt die maximale Anzahl von Änderungen, die in einer Synchronisierung Antwort zurückgegeben werden kann.
-ms.openlocfilehash: c3719b12b7e3e2f83a9454c7b68432b375d78614
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MaxChangesReturned-Element beschreibt die maximale Anzahl von Änderungen, die in einer Synchronisierungsantwort zurückgegeben werden können.
+ms.openlocfilehash: caf96b6e95f2e63d0e544ead26fbea18cd637861
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830395"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460085"
 ---
 # <a name="maxchangesreturned"></a>MaxChangesReturned
 
-Das **MaxChangesReturned** -Element beschreibt die maximale Anzahl von Änderungen, die in einer Synchronisierung Antwort zurückgegeben werden kann. 
+Das **MaxChangesReturned** -Element beschreibt die maximale Anzahl von Änderungen, die in einer Synchronisierungsantwort zurückgegeben werden können. 
   
 [SyncFolderItems](syncfolderitems.md)
   
@@ -48,21 +48,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SyncFolderItems](syncfolderitems.md) <br/> |Definiert eine Anforderung zum Synchronisieren von Elementen in einem Ordner von Exchange-Speicher.  <br/> |
+|[SyncFolderItems](syncfolderitems.md) <br/> |Definiert eine Anforderung zum Synchronisieren von Elementen in einem Exchange-Informationsspeicher Ordner.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt eine ganze Zahl, die die maximale Anzahl von Elementen wird beschrieben, die in einem Aufruf der einzelnen Synchronisation zurückgegeben werden. Der Wert muss zwischen 1 und 512, inklusive.
+Der Wert Text stellt eine ganze Zahl dar, die die maximale Anzahl von Elementen beschreibt, die in einem einzelnen Synchronisierungsaufruf zurückgegeben werden. Der Wert muss zwischen 1 und 512 liegen, einschließlich.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

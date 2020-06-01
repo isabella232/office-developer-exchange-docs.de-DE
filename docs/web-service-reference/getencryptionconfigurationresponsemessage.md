@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 47fa2a32-6089-4897-8fca-f1827359d49c
-description: Die GetEncryptionConfigurationResponseMessage ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: fb778d3435fbae56034d15fb2df377f804fa5c2b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetEncryptionConfigurationResponseMessage ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 131b0b0b530c1b2765abf0d168d774b4d0d5f7bc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758645"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458726"
 ---
 # <a name="getencryptionconfigurationresponsemessage"></a>GetEncryptionConfigurationResponseMessage
 
-Die **GetEncryptionConfigurationResponseMessage** ist nur zur internen Verwendung vorgesehen. 
+Das **GetEncryptionConfigurationResponseMessage** ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

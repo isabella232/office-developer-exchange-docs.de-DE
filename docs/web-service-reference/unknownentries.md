@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 107ec73e-083a-4956-9d37-33d4734cc157
-description: Das UnknownEntries-Element enthält ein Array von unbekannten Berechtigungseinträge, die gegen den Verzeichnisdienst Active Directory nicht aufgelöst werden kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 306e5f226a56694bb1ff32362f77e7dff80865ad
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UnknownEntries-Element enthält ein Array von unbekannten Berechtigungseinträgen, die nicht für den Active Directory Verzeichnisdienst aufgelöst werden können. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: 68cb2518b895ca0a74e6b9ed649ee92b7502ab05
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839320"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459419"
 ---
 # <a name="unknownentries"></a>UnknownEntries
 
-Das **UnknownEntries** -Element enthält ein Array von unbekannten Berechtigungseinträge, die gegen den Verzeichnisdienst Active Directory nicht aufgelöst werden kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **UnknownEntries** -Element enthält ein Array von unbekannten Berechtigungseinträgen, die nicht für den Active Directory Verzeichnisdienst aufgelöst werden können. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <UnknownEntries>
@@ -42,26 +42,26 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UnknownEntry](unknownentry.md) <br/> |Stellt einen einzelnen unbekannte Berechtigungseintrag, der anhand von Active Directory nicht aufgelöst werden kann. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[UnknownEntry](unknownentry.md) <br/> |Stellt einen einzelnen unbekannten Berechtigungseintrag dar, der nicht für Active Directory aufgelöst werden kann. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) <br/> |Enthält alle Berechtigungen, die für einen Ordner konfiguriert sind. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[PermissionSet (permissionsettype)](permissionset-permissionsettype.md) <br/> |Enthält alle Berechtigungen, die für einen Ordner konfiguriert sind. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
 |[PermissionSet (CalendarPermissionSetType)](permissionset-calendarpermissionsettype.md) <br/> |Enthält alle Berechtigungen, die für einen Kalenderordner konfiguriert sind. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können unbekannte Einträge aus einem Ordner mit der UpdateFolder-Operation mit dem [SetFolderField](setfolderfield.md) Element löschen. Die unbekannte Einträge werden gelöscht, wenn Sie mithilfe der Option SetFolderField des Vorgangs UpdateFolder PermissionSet zurücksetzen. Exchange-Webdienste unterstützt nicht das Löschen der einzelnen Einträge. 
+Sie können unbekannte Einträge aus einem Ordner löschen, indem Sie den UpdateFolder-Vorgang mit dem [setfolderfield](setfolderfield.md) -Element verwenden. Die unbekannten Einträge werden gelöscht, wenn Sie das PermissionSet mithilfe der Option setfolderfield des UpdateFolder-Vorgangs zurücksetzen. Das Löschen einzelner Einträge wird von Exchange Webdienste nicht unterstützt. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -76,5 +76,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Setting Folder-Level Permissions](http://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+[Setting Folder-Level Permissions](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

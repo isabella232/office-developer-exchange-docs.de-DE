@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cfff7a11-7b3a-4995-9815-afedd45ebb0f
-description: Das ConflictingMeetings-Element identifiziert alle Kalenderelemente, die mit einem bestimmten Zeitpunkt treffen in Konflikt stehen.
-ms.openlocfilehash: 1d2558dba41ec3e7ae2711bb2dc26f54cada827a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ConflictingMeetings-Element identifiziert alle Kalenderelemente, die mit einer Besprechungszeit in Konflikt stehen.
+ms.openlocfilehash: dc897c9dc33117d379d89bb9bb41104ca02def1f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757596"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460176"
 ---
 # <a name="conflictingmeetings"></a>ConflictingMeetings
 
-Das **ConflictingMeetings** -Element identifiziert alle Kalenderelemente, die mit einem bestimmten Zeitpunkt treffen in Konflikt stehen. 
+Das **ConflictingMeetings** -Element identifiziert alle Kalenderelemente, die mit einer Besprechungszeit in Konflikt stehen. 
   
 ```xml
 <ConflictingMeetings>
@@ -51,20 +51,20 @@ Keine.
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn dieses Element verwendet wird, muss es einen oder mehrere untergeordnete Elemente enthalten.
+Wenn dieses Element verwendet wird, muss es ein oder mehrere untergeordnete Elemente enthalten.
   
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
 > [!NOTE]
-> Obwohl weitere untergeordnete Elemente pro das Schema gültig sind, ist das [CalendarItem](calendaritem.md) -Element das einzige untergeordnete Element, bei dem Exchange-Webdienste (EWS) innerhalb des Elements **ConflictingMeetings** zurückgegeben wird. In diesem Thema wird keine untergeordneten Elemente aufgelistet, die dem Schema gültig sind, aber nicht von EWS zurückgegeben. 
+> Obwohl zusätzliche untergeordnete Elemente pro Schema gültig sind, ist das [CalendarItem](calendaritem.md) -Element das einzige untergeordnete Element, das Exchange-Webdienste innerhalb des **ConflictingMeetings** -Elements zurückgibt. In diesem Thema werden keine untergeordneten Elemente aufgeführt, die für das Schema gültig sind, aber nicht von EWS zurückgegeben werden. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

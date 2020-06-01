@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e37963f4-af9e-4481-b389-16175711e66d
-description: Das DeleteFolder-Element definiert eine Anforderung zum Löschen von Ordnern aus einem Postfach im Exchange-Speicher.
-ms.openlocfilehash: d31f98f26f537104e40b303de4199f45c65f49c7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DeleteFolder-Element definiert eine Anforderung zum Löschen von Ordnern aus einem Postfach im Exchange-Informationsspeicher.
+ms.openlocfilehash: eb705a47b78b19c79b2e87561ba3696ed40e09cd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757920"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458768"
 ---
 # <a name="deletefolder"></a>DeleteFolder
 
-Das **DeleteFolder** -Element definiert eine Anforderung zum Löschen von Ordnern aus einem Postfach im Exchange-Speicher. 
+Das **DeleteFolder** -Element definiert eine Anforderung zum Löschen von Ordnern aus einem Postfach im Exchange-Informationsspeicher. 
   
 ```XML
 <DeleteFolder DeleteType="">
@@ -38,21 +38,21 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**DeleteType** <br/> |Beschreibt, wie ein Ordner gelöscht wird. Dieses Attribut ist erforderlich.  <br/> |
+|**Deletetypeharddelete** <br/> |Beschreibt, wie ein Ordner gelöscht wird. Dieses Attribut ist erforderlich.  <br/> |
    
 #### <a name="deletetype-attribute"></a>DeleteType-Attribut
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |HardDelete  <br/> |Ein Ordner wird dauerhaft aus dem Speicher entfernt.  <br/> |
-|SoftDelete  <br/> |In ein Ordner verschoben die Dumpster Wenn die Dumpster ist aktiviert.  <br/> |
-|MoveToDeletedItems  <br/> |Ein Ordner wird in den Ordner Gelöschte Objekte verschoben.  <br/> |
+|SoftDelete  <br/> |Wenn der Papierkorb aktiviert ist, wird ein Ordner in den Papierkorb verschoben.  <br/> |
+|MoveToDeletedItems  <br/> |Ein Ordner wird in den Ordner "Gelöschte Elemente" verschoben.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderIds](folderids.md) <br/> |Enthält ein Array von Bezeichnern für Ordner, die zum Identifizieren der zu löschenden Ordner verwendet werden.  <br/> |
+|[FolderIds](folderids.md) <br/> |Enthält ein Array von Ordner Bezeichnern, die zum Identifizieren von zu löschenden Ordnern verwendet werden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -62,19 +62,19 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Optionen **MoveToDeletedItems** und **HardDelete** sind transaktional, was bedeutet, dass jeweils ein Webdienstaufruf abgeschlossen ist, die Datenbank hat das Element in den Ordner Gelöschte Objekte verschoben oder dauerhaft entfernt das Element aus der Exchange-Datenbank. Dieses Verhalten gilt für MicrosoftExchange Server 2007 und Exchange Server 2010. 
+Die **MoveToDeletedItems** -und **HardDelete** -Optionen sind transaktional, was bedeutet, dass die Datenbank zum Zeitpunkt des Abschlusses eines Webdienstaufrufs das Element in den Ordner "Gelöschte Elemente" verschoben oder das Element endgültig aus der Exchange-Datenbank entfernt hat. Dieses Verhalten ist für Microsoft Exchange Server 2007 und Exchange Server 2010 identisch. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

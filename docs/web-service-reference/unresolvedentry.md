@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5ac6116a-3b24-40f8-a877-dbe9a6935919
-description: Das UnresolvedEntry-Element enthält den Namen des einen Kontakt oder Verteilerliste aus, zu beheben.
-ms.openlocfilehash: 98b447cd49685b49f73f75f12d921a65749be245
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UnresolvedEntry-Element enthält den Namen eines Kontakts oder einer Verteilerliste, die aufgelöst werden soll.
+ms.openlocfilehash: 0f157c1be6c327187456a795c4c1000b8c35b620
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839324"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459840"
 ---
 # <a name="unresolvedentry"></a>UnresolvedEntry
 
-Das **UnresolvedEntry** -Element enthält den Namen des einen Kontakt oder Verteilerliste aus, zu beheben. 
+Das **UnresolvedEntry** -Element enthält den Namen eines Kontakts oder einer Verteilerliste, die aufgelöst werden soll. 
   
 [ResolveNames](resolvenames.md)
   
@@ -48,23 +48,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResolveNames](resolvenames.md) <br/> |Definiert eine Anforderung zum Auflösen von Names nicht eindeutig.  <br/> |
+|[ResolveNames](resolvenames.md) <br/> |Definiert eine Anforderung zum Auflösen eindeutiger Namen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert gibt den Namen einer öffentlichen Liste Kontakts oder der Verteilergruppe. Die minimale Länge der Zeichenfolge ist ein Zeichen.
+Der Wert Text stellt den Namen eines öffentlichen Kontakts oder einer Verteilerliste dar. Die minimale Länge der Zeichenfolge ist ein Zeichen.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Textwert der dieses Element dient zum Auflösen von Namen für die folgenden Felder:
+Der Textwert dieses Elements wird zum Auflösen von Namen in den folgenden Feldern verwendet:
   
 - Vorname
     
 - Nachname
     
-- Anzeigename
+- Distinguished Name (DN)
     
-- Vollständiger name
+- Vollständiger Name
     
 - Office
     
@@ -72,17 +72,17 @@ Der Textwert der dieses Element dient zum Auflösen von Namen für die folgenden
     
 - SMTP-Adresse
     
-E-Mail-Adressen mit vorangestellter routing Typen, wie die SMTP- oder Sip, werden in einem mehrwertigen Array gespeichert. Den [ResolveNames Vorgang](resolvenames-operation.md) ausführt eine teilweise Übereinstimmung mit jeder Wert eines Arrays aus, wenn Sie den Routingtyp am Anfang der aufgelöste Name, beispielsweise "sip:User1@Contoso.com" hinzufügen. Wenn Sie eine Routingtyp nicht angeben, wird **ResolveNames** -Vorgang standardmäßig auf den Routingtyp von smtp, es zu einer primären SMTP-Adresse-Eigenschaft entspricht und nicht durchsucht das mehrwertige Array. 
+E-Mail-Adressen mit vorfixierten Routing Typen wie SMTP oder SIP werden in einem mehrwertigen Array gespeichert. Der [ResolveNames-Vorgang](resolvenames-operation.md) führt eine partielle Übereinstimmung mit jedem Wert dieses Arrays aus, wenn Sie den Routingtyp am Anfang des nicht aufgelösten namens hinzufügen, beispielsweise "SIP:user1@contoso.com". Wenn Sie keinen Routingtyp angeben, wird der **ResolveNames** -Vorgang standardmäßig auf den Routingtyp von SMTP festgelegt, mit einer primären SMTP-Adress Eigenschaft abgeglichen und nicht mit dem mehrwertigen Array durchsucht. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -1,5 +1,5 @@
 ---
-title: Untergeordnete Objekte
+title: Untergeordnetes Element
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,16 +12,16 @@ api_type:
 - schema
 ms.assetid: ceaffddd-f9bc-43ea-b348-a20fdade738f
 description: Das untergeordnete Element enthält die Namen der untergeordneten Elemente eines Kontakts.
-ms.openlocfilehash: 9b1e06529fcf74850755daefc299242cfbf81f1e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: de398c93590a4a9ae93b6aa46994c9295d051b84
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757562"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460225"
 ---
-# <a name="children"></a>Untergeordnete Objekte
+# <a name="children"></a>Untergeordnetes Element
 
-Das **untergeordnete** Element enthält die Namen der untergeordneten Elemente eines Kontakts. 
+Das unter **geordnete** Element enthält die Namen der untergeordneten Elemente eines Kontakts. 
   
 ```xml
 <Children>
@@ -48,17 +48,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Kontaktperson](contact.md) <br/> |Stellt einen Kontakt in der Exchange-Speicher.  <br/> |
+|[Kontaktperson](contact.md) <br/> |Stellt einen Kontakt im Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

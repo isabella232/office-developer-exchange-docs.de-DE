@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3c486a38-06da-4382-ad20-664d067d76ac
-description: Das OofState-Element wird zum Abrufen oder Festlegen des Status des Benutzers Out of Office (OOF) verwendet.
-ms.openlocfilehash: f97c050aec102b384fa4d98e6dee43befd4dc9ca
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das OofState-Element wird verwendet, um den Abwesenheit (Out of Office, OOF) Zustand des Benutzers abzurufen oder festzulegen.
+ms.openlocfilehash: 6aef7d989ee6978019a483f2673895e68a88a7c5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830651"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459735"
 ---
 # <a name="oofstate"></a>OofState
 
-Das **OofState** -Element wird zum Abrufen oder Festlegen des Status des Benutzers Out of Office (OOF) verwendet. 
+Das **OofState** -Element wird verwendet, um den Abwesenheit (Out of Office, OOF) Zustand des Benutzers abzurufen oder festzulegen. 
   
 ```xml
 <OofState>Disabled or Enabled or Scheduled</OofState>
@@ -44,42 +44,42 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[' UserOofSettings '](useroofsettings.md) <br/> |Gibt die OOF-Einstellungen.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
-|[OofSettings](oofsettings.md) <br/> |Enthält die OOF-Einstellungen.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |Gibt die Abwesenheitseinstellungen an.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[OofSettings](oofsettings.md) <br/> |Enthält die OOF-Einstellungen.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich für das **OofState** -Element. Die folgende Liste enthält die möglichen Werte für dieses Element: 
+Für das **OofState** -Element ist ein Textwert erforderlich. Die folgende Liste enthält die möglichen Werte für dieses Element: 
   
-- **Deaktiviert**
+- **Disabled**
     
 - **Enabled**
     
 - **Geplant**
     
-**Geplante** Wert gibt an, dass während eines Zeitraums vom [Dauer (' UserOofSettings ')](duration-useroofsettings.md) -Element identifiziert der Status ABWESEND auf **aktiviert** festgelegt wurde. 
+Der Wert **Scheduled** gibt an, dass der Abwesenheitsstatus während eines Zeitraums, der durch das Element [Duration (UserOofSettings)](duration-useroofsettings.md) angegeben ist, auf **aktiviert** festgelegt ist. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element ist in der SetUsersOofSettingRequest-Nachricht und die Nachricht GetUserOofSettingResponse erforderlich.
+Dieses Element ist sowohl in der SetUsersOofSettingRequest-Nachricht als auch in der GetUserOofSettingResponse-Nachricht erforderlich.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird eine Anforderung SetUserOofSettings ermöglicht die **OofState**.
+Im folgenden Beispiel einer SetUserOofSettings-Anforderung wird das **OofState**aktiviert.
   
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -98,11 +98,11 @@ Im folgenden Beispiel wird eine Anforderung SetUserOofSettings ermöglicht die *
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 16026595-26f8-4770-8a6d-0d3e4157effd
-description: Das EndDate-Element darstellt, das Enddatum des einen sich wiederholenden Vorgang oder ein Kalenderelement, das den Mustertyp EndDateRecurrence verfügt.
-ms.openlocfilehash: b8570a069fc0a2d05044a9c85ab2d5c39d70ccdf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das enddate-Element stellt das Enddatum einer wiederkehrenden Aufgabe oder eines Kalenderelements dar, das den Mustertyp EndDateRecurrence aufweist.
+ms.openlocfilehash: 53d9b04faf1d8f740c858080b5fcbeadf577df0d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758221"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460162"
 ---
 # <a name="enddate-recurrence"></a>EndDate (Serie)
 
-Das **EndDate** -Element darstellt, das Enddatum des einen sich wiederholenden Vorgang oder ein Kalenderelement, das den Mustertyp EndDateRecurrence verfügt. 
+Das **EndDate-Element stellt** das Enddatum einer wiederkehrenden Aufgabe oder eines Kalenderelements dar, das den Mustertyp EndDateRecurrence aufweist. 
   
 ```xml
 <EndDate/>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[EndDateRecurrence](enddaterecurrence.md) <br/> |Beschreibt das Startdatum und das Enddatum des ein Element Serienmuster.  <br/> |
+|[EndDateRecurrence](enddaterecurrence.md) <br/> |Beschreibt das Startdatum und das Enddatum eines Element Serienmusters.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der ein Datum darstellt ist erforderlich, wenn dieses Element verwendet wird. Der Wert darf nicht größer als 1 September 4500 00:00:00.
+Ein Text-Wert, der ein Datum darstellt, ist erforderlich, wenn dieses Element verwendet wird. Der Wert darf nicht größer sein als 1. September 4500 00:00:00.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

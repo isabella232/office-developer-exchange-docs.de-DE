@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c49816b1-dbb5-4716-86c7-30790e86f30e
-description: Das UpdateItemInRecoverableItems-Element gibt eine Anforderung zum Aktualisieren eines Elements in wiederherstellbare Elemente.
-ms.openlocfilehash: 768de4bb8abe4780ab520405bae3149b8f17637c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UpdateItemInRecoverableItems-Element gibt eine Anforderung an, ein Element in Wiederherstellungs fähigen Elementen zu aktualisieren.
+ms.openlocfilehash: f3dae55097c613b84a80795185baad559e312b90
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839373"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459784"
 ---
 # <a name="updateiteminrecoverableitems"></a>UpdateItemInRecoverableItems
 
-Das **UpdateItemInRecoverableItems** -Element gibt eine Anforderung zum Aktualisieren eines Elements in wiederherstellbare Elemente. 
+Das **UpdateItemInRecoverableItems** -Element gibt eine Anforderung an, ein Element in Wiederherstellungs fähigen Elementen zu aktualisieren. 
   
 ```XML
 <UpdateItemInRecoverableItems>
@@ -39,25 +39,25 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[ItemId](itemid.md) | [Updates (Element)](updates-item.md) | [Anlagen](attachments-ex15websvcsotherref.md) | [MakeItemImmutable](makeitemimmutable.md)
+[ItemID](itemid.md)  |  [Updates (Element)](updates-item.md)  |  [Anlagen](attachments-ex15websvcsotherref.md)  |  [MakeItemImmutable](makeitemimmutable.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |
    
 

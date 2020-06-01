@@ -1,5 +1,5 @@
 ---
-title: GroupingAction (ItemType)
+title: GROUPING (ItemType)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 655175bd-8a3b-4dfc-8881-84e4927c1df1
-description: Das Element GroupingAction (ItemType) ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: aa252ad41f933eeb05b722d3143b680bc3910985
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Element GroupingName (ItemType) ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: a442800f98ca3f7691d801d33e5d28d706a34b26
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829759"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460477"
 ---
-# <a name="groupingaction-itemtype"></a>GroupingAction (ItemType)
+# <a name="groupingaction-itemtype"></a>GROUPING (ItemType)
 
-Das Element **GroupingAction (ItemType)** ist nur zur internen Verwendung vorgesehen. 
+Das Element **GroupingName (ItemType)** ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

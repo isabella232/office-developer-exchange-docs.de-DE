@@ -1,5 +1,5 @@
 ---
-title: ContactIds
+title: Die
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c444f818-412b-41ac-9523-50246e50eae0
-description: Die enthaltenen Element ein Array von ContactIds wenden Sie sich an das Elementbezeichner.
-ms.openlocfilehash: 8580a1aca908f0b116ef8011a8d81e6c967fc3b4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Contacts-Element enthält ein Array von Kontaktelement-IDs.
+ms.openlocfilehash: 5c3b5621808a6931760433148e0cfe3239cd75f1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757613"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460190"
 ---
-# <a name="contactids"></a>ContactIds
+# <a name="contactids"></a>Die
 
-Das **ContactIds** -Element enthält ein Array von Bezeichnern Kontaktelement. 
+Das Contacts-Element enthält ein Array von **Kontaktelement-** IDs. 
   
 ```XML
 <ContactIds>
@@ -39,25 +39,25 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[ItemId](itemid.md) | [OccurrenceItemId](occurrenceitemid.md) | [RecurringMasterItemId](recurringmasteritemid.md) | [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
+[ItemID](itemid.md)  |  [OccurrenceItemId](occurrenceitemid.md)  |  [RecurringMasterItemId](recurringmasteritemid.md)  |  [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [GetImItems](getimitems.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |
    
 

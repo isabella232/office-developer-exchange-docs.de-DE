@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fee3f1f9-e868-49fa-a554-7ff096964718
-description: Status-Element gibt den Sperrstatus für ein Postfach an.
-ms.openlocfilehash: c40dc865d2b305ac86fa40d536e2d516a14260ab
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Status-Element gibt den Aufbewahrungs Status für ein Postfach an.
+ms.openlocfilehash: cecfdfaf67b00b6f8cf02188e7a4df7062a732e4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831579"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459987"
 ---
 # <a name="status-holdstatustype"></a>Status (HoldStatusType)
 
-**Status** -Element gibt den Sperrstatus für ein Postfach an. 
+Das **Status** -Element gibt den Aufbewahrungs Status für ein Postfach an. 
   
 ```XML
 <Status> NotOnHold | Pending | OnHold | PartialHold | Failed </Status>
@@ -42,29 +42,29 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **Status** -Element wird der Sperrstatus eines Postfachs an. **Status** -Element kann die Werte in der folgenden Liste haben. 
+Der Textwert des **Status** -Elements ist der Aufbewahrungs Status eines Postfachs. Das **Status** -Element kann die Werte in der folgenden Liste aufweisen. 
   
-> NotOnHold - ist das Postfach nicht in der Warteschleife.
+> NotOnHold – das Postfach ist nicht in der Warteschleife.
     
-> Ausstehende - wurde das Postfach entweder platziert oder in der Warteschleife veröffentlicht wird. 
+> Ausstehend – das Postfach wird ausstehend oder in der Warteschleife freigegeben. 
     
-> Vortext - Haltebereich wurde erfolgreich an das Postfach angewendet. 
+> OnHold – der Aufbewahrungsort wurde erfolgreich auf das Postfach angewendet. 
     
-> PartialHold - Haltebereich wurde erfolgreich für Postfächer, jedoch nicht für alle Postfächer angewendet.
+> PartialHold – der Aufbewahrungsort wurde erfolgreich auf einige Postfächer angewendet, jedoch nicht auf alle Postfächer.
     
-> Fehler bei - konnte der Haltestatus an das Postfach anwenden.
+> Fehler: der Haltestatus konnte nicht auf das Postfach angewendet werden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

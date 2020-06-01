@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 709dbe53-6141-41f8-a2b9-a399bae47991
-description: Das AuthPackage-Element gibt das Authentifizierungsschema, das verwendet wird, wenn der Exchange-Server authentifiziert, die die Postfach-Serverrolle installiert ist.
-ms.openlocfilehash: 120ec00ac82166ae2002a8fbac0edf9a1e23afc7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AuthPackage-Element gibt das Authentifizierungsschema an, das bei der Authentifizierung mit dem Exchange-Server verwendet wird, auf dem die Postfachserverrolle installiert ist.
+ms.openlocfilehash: 5317cf49d354a558417829e1d1b5b67cd6874309
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757410"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459104"
 ---
 # <a name="authpackage-pox"></a>AuthPackage (POX)
 
-Das **AuthPackage** -Element gibt das Authentifizierungsschema, das verwendet wird, wenn der Exchange-Server authentifiziert, die die Postfach-Serverrolle installiert ist. 
+Das **AuthPackage** -Element gibt das Authentifizierungsschema an, das bei der Authentifizierung mit dem Exchange-Server verwendet wird, auf dem die Postfachserverrolle installiert ist. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,27 +50,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Clientzugriffsserver an.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Clientzugriffsserver.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert gibt das Authentifizierungsschema, das verwendet wird, wenn auf dem Postfachserver zu authentifizieren. Im Folgenden sind die möglichen Werte aufgeführt:
+Der Wert Text gibt das Authentifizierungsschema an, das bei der Authentifizierung mit dem Postfachserver verwendet wird. Im Folgenden sind die möglichen Werte aufgeführt:
   
-- grundlegende
+- Basic
 - Kerbtray
 - kerbntlm
 - NTLM
 - certificate
-- Verhandeln
+- aushandeln
 - nego2
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **AuthPackage** -Element wird nur verwendet, wenn das Element [Typ (POX)](type-pox.md) ein Textwerts EXCH oder AUSDR vorhanden ist. 
+Das **AuthPackage** -Element wird nur verwendet, wenn der [Typ (POX)-](type-pox.md) Element den Textwert von "$" oder "expr" aufweist. 
   
 ### <a name="version-differences"></a>Versionsunterschiede
 
-Office 365, Exchange Online und lokale Versionen von Exchange beginnend mit erstellen 15.00.0995.014 zurück Wert "aushandeln" nur, wenn der Server so konfiguriert ist, dass aushandeln-Authentifizierung verwenden und der Client einen [X-ClientCanHandle](pox-autodiscover-request-for-exchange.md) -Header enthält, "Aushandeln" enthält. 
+Office 365, Exchange Online und lokale Versionen von Exchange, beginnend mit Build 15.00.0995.014, geben nur dann den Wert "Negotiate" zurück, wenn der Server für die Verwendung der Negotiate-Authentifizierung konfiguriert ist und der Client einen [X-ClientCanHandle-](pox-autodiscover-request-for-exchange.md) Header mit "Negotiate" enthält. 
   
 ## <a name="see-also"></a>Siehe auch
 

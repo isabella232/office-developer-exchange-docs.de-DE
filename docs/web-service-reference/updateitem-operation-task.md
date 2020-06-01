@@ -1,5 +1,5 @@
 ---
-title: UpdateItem-Vorgang (Aufgabe)
+title: UpdateItem-Vorgang (Vorgang)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,39 +11,39 @@ api_name:
 api_type:
 - schema
 ms.assetid: b0a7f114-d040-40eb-a8f3-05ea6489e472
-description: Der Vorgang UpdateItem wird verwendet, um Eigenschaften für Aufgabenelemente im Exchange-Speicher zu aktualisieren.
-ms.openlocfilehash: d6f966fa663300b476383a136d30cf611d6bfb9b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der UpdateItem-Vorgang wird zum Aktualisieren von Aufgabenelementeigenschaften in der Exchange-Informationsspeicher verwendet.
+ms.openlocfilehash: 0041af114d11fd9577037dd154e40b84e8483c35
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839376"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459805"
 ---
-# <a name="updateitem-operation-task"></a>UpdateItem-Vorgang (Aufgabe)
+# <a name="updateitem-operation-task"></a>UpdateItem-Vorgang (Vorgang)
 
-Der Vorgang UpdateItem wird verwendet, um Eigenschaften für Aufgabenelemente im Exchange-Speicher zu aktualisieren.
+Der UpdateItem-Vorgang wird zum Aktualisieren von Aufgabenelementeigenschaften in der Exchange-Informationsspeicher verwendet.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können Exchange-Webdienste Aufgabenanfragen senden. Exchange-Webdienste können Aufgabenanfragen zurückzugeben, die vom MicrosoftOfficeOutlook erstellt werden. Wenn bereits eine Aufgabenanfrage gesendet wurde, wird eine Anforderung zum Aktualisieren der Aufgabe einen Fehler zurück.
+Sie können keine Aufgabenanforderungen mithilfe von Exchange Webdienste senden. Exchange Webdienste kann Aufgabenanforderungen zurückgeben, die von MicrosoftOfficeOutlook erstellt werden. Wenn bereits eine Aufgabenanfrage gesendet wurde, gibt eine Anforderung zum Aktualisieren der Aufgabe einen Fehler zurück.
   
-## <a name="updating-the-current-occurrence-of-a-recurring-task"></a>Aktualisieren das aktuelle Vorkommen einer wiederkehrenden Aufgabe
+## <a name="updating-the-current-occurrence-of-a-recurring-task"></a>Aktualisieren des aktuellen Vorkommens einer wiederkehrenden Aufgabe
 
-Das Ergebnis einer UpdateItem Operation für wiederkehrende Aufgaben unterscheidet sich von das Ergebnis des Vorgangs UpdateItem für einen einzelnen, einer einmaligen Vorgang. Änderungen an einem Vorkommen einer Aufgabenserie verursachen einmalige Aufgaben generiert werden soll, wenn die folgenden Updates vorgenommen werden:
+Das Ergebnis einer UpdateItem-Operation bei wiederkehrenden Vorgängen unterscheidet sich vom Ergebnis des UpdateItem-Vorgangs für einen einzelnen, nicht wiederkehrenden Vorgang. Änderungen an einem Vorkommen einer wiederkehrenden Aufgabe führen dazu, dass einmalige Vorgänge generiert werden, wenn die folgenden Updates vorgenommen werden:
   
-1. Die Statuseigenschaft des einer wiederkehrenden Aufgabe erzeugt oder nonregenerating wird auf **abgeschlossen**festgelegt.
+1. Die Status-Eigenschaft eines regenerierenden oder nonregenerating wiederkehrenden Tasks wird auf **Completed**festgelegt.
     
-2. Das Start- oder Enddatum des einer nonregenerating wiederkehrenden Aufgabe geändert wird.
+2. Das Startdatum oder das Enddatum eines wiederkehrenden nonregenerating-Vorgangs wird geändert.
     
-Beispielsweise, wenn eine Anforderung **UpdateItem** den abgeschlossen-Wert, der einen sich wiederholenden Vorgang auf **true**festgelegt wird, muss die **UpdateItemResponse** enthalten, eine neue-Id und ChangeKey, die einen neu erstellten einmaligen Vorgang darstellen. Die Id, die in der Anforderung enthalten war noch gültig ist, und die Aufgabenserie, die durch diese Id dargestellt ist wurde aktualisiert, um das nächste Vorkommen darstellen. Die ChangeKey, die in der Anforderung enthalten war ist nicht mehr gültig, da sich wiederholenden Vorgang aktualisiert wurde. 
+Wenn beispielsweise eine **UpdateItem** -Anforderung den completed-Wert einer wiederkehrenden Aufgabe auf **true**festgelegt wird, enthält die **UpdateItemResponse** eine neue ID und ChangeKey, die eine neu erstellte einmalige Aufgabe darstellen. Die in der Anforderung enthaltene ID ist weiterhin gültig, und die wiederkehrende Aufgabe, die durch diese ID dargestellt wird, wurde aktualisiert und stellt das nächste Vorkommen dar. Die in der Anforderung enthaltene ChangeKey ist nicht mehr gültig, da die wiederkehrende Aufgabe aktualisiert wurde. 
   
-Die [GetItem-Vorgang](getitem-operation.md) können Sie um die neuesten **ChangeKey** für die sich wiederholenden Vorgang zu erhalten. 
+Sie können den [GetItem-Vorgang](getitem-operation.md) verwenden, um die neuesten **ChangeKey** für den wiederkehrenden Vorgang abzurufen. 
   
-Für einen einzelnen Aufgaben oder für das letzte Vorkommen einer Aufgabenserie, gibt die Antwort UpdateItem dieselbe **Id** , die es übergeben wurde, und gibt Sie zurück, dass der zugeordnete **ChangeKey**aktualisiert.
+Bei nicht wiederkehrenden Vorgängen oder beim letzten Auftreten einer wiederkehrenden Aufgabe gibt die UpdateItem-Antwort dieselbe **ID** zurück, die an Sie übergeben wurde, und gibt die zugeordnete aktualisierte **ChangeKey**zurück.
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[UpdateItem Operation](updateitem-operation.md)
+[UpdateItem-Vorgang](updateitem-operation.md)
 

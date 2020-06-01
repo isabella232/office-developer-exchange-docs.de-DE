@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 962036c9-9b13-4669-bed2-2502c0f5aabe
-description: Das RequestedVersion-Element gibt die minimale Service-Version, die der Client die Anforderung auf verarbeitet werden möchte.
-ms.openlocfilehash: 0d8682c33790d2d26001512ad9e2191ae52074d0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RequestedVersion-Element gibt die minimale Dienstversion an, für die der Client die Anforderung verarbeiten möchte.
+ms.openlocfilehash: ded276b3eb2c70b6edd39ca12289098de2b3faea
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831134"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459167"
 ---
 # <a name="requestedversion-soap"></a>RequestedVersion (SOAP)
 
-Das **RequestedVersion** -Element gibt die minimale Service-Version, die der Client die Anforderung auf verarbeitet werden möchte. 
+Das **RequestedVersion** -Element gibt die minimale Dienstversion an, für die der Client die Anforderung verarbeiten möchte. 
   
 ```XML
 <RequestedVersion/>
@@ -41,24 +41,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Anforderung (SOAP)](request-soap.md) <br/> |Enthält die angeforderten Konfigurationseinstellungen und die Zielbenutzer.  <br/> |
-|[Anforderung (GetDomainSettings) (SOAP)](request-getdomainsettingssoap.md) <br/> |Stellt eine Anforderung an die domäneneinstellungen abrufen.  <br/> |
+|[Request (SOAP)](request-soap.md) <br/> |Enthält die angeforderten Konfigurationseinstellungen und die Zielbenutzer.  <br/> |
+|[Request (GetDomainSettings) (SOAP)](request-getdomainsettingssoap.md) <br/> |Stellt eine Anforderung zum Abrufen von Domäneneinstellungen dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Der Textwert für das **RequestedVersion** -Element kann Exchange2010, Exchange2010_SP1, Exchange2010_SP2 oder Exchange2013 sein.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn dieses Element nicht vorhanden ist, wird die neueste Service Version verwendet.
+Wenn dieses Element nicht vorhanden ist, wird die neueste Dienstversion verwendet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

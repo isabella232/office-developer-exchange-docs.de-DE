@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 2f0f77bd-4cbe-4c02-880d-a93b387141d9
-description: Das AcceptableResponseSchema-Element identifiziert das Schema für eine Antwort der AutoErmittlung.
-ms.openlocfilehash: 16444b6b3e17c6774416f90a5a056d0e8025287d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AcceptableResponseSchema-Element identifiziert das Schema für eine Auto Ermittlungs Antwort.
+ms.openlocfilehash: ffc06f33144af7c8f06e81a12bcb5077719b15b8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758366"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460407"
 ---
 # <a name="acceptableresponseschema-pox"></a>AcceptableResponseSchema (POX)
 
-Das **AcceptableResponseSchema** -Element identifiziert das Schema für eine Antwort der AutoErmittlung. 
+Das **AcceptableResponseSchema** -Element identifiziert das Schema für eine Auto Ermittlungs Antwort. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,7 +50,7 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert gibt den Speicherort des Schemas für die AutoErmittlung Antwort.
+Der Textwert gibt den Speicherort des Antwort Schemas für die AutoErmittlung an.
   
 ## <a name="see-also"></a>Siehe auch
 

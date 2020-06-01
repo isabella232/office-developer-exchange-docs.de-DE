@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8bcec699-e771-4f38-b7d9-61f324af1b4e
-description: Das GlobalImportance-Element enthält die aggregierte Bedeutung für alle Unterhaltungselemente in einem Postfach.
-ms.openlocfilehash: c9cdcf20fd3e6eca9ab501cbc747544a4d7b7ded
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GlobalImportance-Element enthält die aggregierte Wichtigkeit für alle Unterhaltungselemente in einem Postfach.
+ms.openlocfilehash: c760168afa3edac20ca0ae7bc677610d8456d178
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829731"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459447"
 ---
 # <a name="globalimportance"></a>GlobalImportance
 
-Das **GlobalImportance** -Element enthält die aggregierte Bedeutung für alle Unterhaltungselemente in einem Postfach. 
+Das **GlobalImportance** -Element enthält die aggregierte Wichtigkeit für alle Unterhaltungselemente in einem Postfach. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -56,23 +56,23 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Es folgen die möglichen Werte für dieses Element:
+Ein Textwert ist erforderlich. Im folgenden sind die möglichen Werte für dieses Element angegeben:
   
-- Low
+- Niedrig
     
-- Standard
+- Normal
     
-- High
+- Hoch
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
@@ -86,5 +86,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 [ApplyConversationAction-Vorgang](applyconversationaction-operation.md)
 
 
-[Conversations in EWS](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+[Conversations in EWS](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

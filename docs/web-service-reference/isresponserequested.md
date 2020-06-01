@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 8cb874ed-a538-4de6-ab22-2631092dcdd0
 description: Das IsResponseRequested-Element gibt an, ob eine Antwort auf ein Element angefordert wird.
-ms.openlocfilehash: fb1fed51ad53c0eb19eddd42b34e9e83b476cbe3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 51bfda5ffa97baed6285a995b6877ec65183c2a2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830102"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459931"
 ---
 # <a name="isresponserequested"></a>IsResponseRequested
 
@@ -27,7 +27,7 @@ Das **IsResponseRequested** -Element gibt an, ob eine Antwort auf ein Element an
 <IsResponseRequested/>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -56,15 +56,15 @@ Keine.
 
 Der Textwert **true** gibt an, dass eine Antwort angefordert wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

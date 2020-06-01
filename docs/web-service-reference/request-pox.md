@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: da54eb32-7ce5-4384-9893-255a2243a959
-description: Das angeforderte Element enthält die Anforderung an den AutoErmittlungsdienst.
-ms.openlocfilehash: 3f5d5258a92840fe79c4936370323b78aa4715b3
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das Request-Element enthält die Anforderung an den AutoErmittlungsdienst.
+ms.openlocfilehash: bc215d614441ed8f12c0f1490f4abdbb7b574ad0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354428"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459546"
 ---
 # <a name="request-pox"></a>Anforderung (POX)
 
-Das **angeforderte** Element enthält die Anforderung an den AutoErmittlungsdienst. 
+Das **Request** -Element enthält die Anforderung an den AutoErmittlungsdienst. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md) 
 - [Anforderung (POX)](request-pox.md)
@@ -49,15 +49,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AcceptableResponseSchema (POX)](acceptableresponseschema-pox.md) <br/> |Das Schema für eine Antwort der AutoErmittlung identifiziert.  <br/> |
-|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Identifiziert die e-Mail-Adresse des Benutzers an.  <br/> |
-|[LegacyDN (POX)](legacydn-pox.md) <br/> |Postfach eines Benutzers identifiziert anhand der legacy-DN.  <br/> |
+|[AcceptableResponseSchema (POX)](acceptableresponseschema-pox.md) <br/> |Gibt das Schema für eine Auto Ermittlungs Antwort an.  <br/> |
+|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Gibt die e-Mail-Adresse des Benutzers an.  <br/> |
+|[LegacyDN (POX)](legacydn-pox.md) <br/> |Identifiziert das Postfach eines Benutzers anhand des Distinguished Name-Legacy namens.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AutoErmittlung (POX)](autodiscover-pox.md) <br/> |Das Stammelement in einer autoermittlungsanforderung für die.  <br/> |
+|[AutoErmittlung (POX)](autodiscover-pox.md) <br/> |Das Stammelement in einer Auto Ermittlungsanforderung.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

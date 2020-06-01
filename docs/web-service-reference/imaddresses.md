@@ -1,5 +1,5 @@
 ---
-title: ImAddresses
+title: Imaddresses
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 29f614a7-7fe6-47fa-b5f2-8feff106aa99
-description: Das Element ImAddresses stellt eine Sammlung von instant messaging-Adressen für einen Kontakt.
-ms.openlocfilehash: e8c7a22e8537a4526594042905f7bb8454238bf1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das imaddresses-Element stellt eine Auflistung von Instant Messaging-Adressen für einen Kontakt dar.
+ms.openlocfilehash: 24ff74d29c918d71116e25e097878b6e4e0a8ead
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829861"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460428"
 ---
-# <a name="imaddresses"></a>ImAddresses
+# <a name="imaddresses"></a>Imaddresses
 
-Das Element **ImAddresses** stellt eine Sammlung von instant messaging-Adressen für einen Kontakt. 
+Das **imaddresses** -Element stellt eine Auflistung von Instant Messaging-Adressen für einen Kontakt dar. 
   
 ```xml
 <ImAddresses>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Eintrag (IMAddress)](entry-imaddress.md) <br/> |Stellt ein Instant messaging-Adresse für einen Kontakt.  <br/> |
+|[Eintrag (imaddresse)](entry-imaddress.md) <br/> |Stellt eine Instant Messaging-Adresse für einen Kontakt dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -50,15 +50,15 @@ Keine.
 |:-----|:-----|
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

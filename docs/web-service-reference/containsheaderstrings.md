@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5f68427b-990a-4a27-bfb3-fce3115b02d7
-description: Das ContainsHeaderStrings-Element gibt an, die Zeichenfolgen, die in den Kopfzeilen der eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende angezeigt werden müssen.
-ms.openlocfilehash: 360870d63853a0e79f801cc2f17473b1a1b28c25
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ContainsHeaderStrings-Element gibt die Zeichenfolgen an, die in den Kopfzeilen eingehender Nachrichten angezeigt werden müssen, damit die Bedingung oder Ausnahme zutrifft.
+ms.openlocfilehash: 23e3d0e7cff9c78edbac10a6275514af93cab325
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757647"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458992"
 ---
 # <a name="containsheaderstrings"></a>ContainsHeaderStrings
 
-Das **ContainsHeaderStrings** -Element gibt an, die Zeichenfolgen, die in den Kopfzeilen der eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende angezeigt werden müssen. 
+Das **ContainsHeaderStrings** -Element gibt die Zeichenfolgen an, die in den Kopfzeilen eingehender Nachrichten angezeigt werden müssen, damit die Bedingung oder Ausnahme zutrifft. 
   
 ```XML
 <ContainsHeaderStrings>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[String](string.md) <br/> |Stellt eine Zeichenfolge, die Nachrichtenkopfzeilen in Reihenfolge für die Bedingung oder Ausnahme anwenden vorhanden sein muss.  <br/> |
+|[String](string.md) <br/> |Stellt eine Zeichenfolge dar, die in Nachrichtenkopfzeilen angezeigt werden muss, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -55,17 +55,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

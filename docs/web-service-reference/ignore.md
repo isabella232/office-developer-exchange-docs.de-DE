@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7789eec5-ceec-43f2-84d5-d0d15b734076
-description: Das ignorieren-Element identifiziert Elemente, während der Synchronisierung zu überspringen.
-ms.openlocfilehash: 0ecff9bfeb1257552b7e52c0115e9e814edecd4b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Ignore-Element identifiziert Elemente, die während der Synchronisierung übersprungen werden sollen.
+ms.openlocfilehash: b65d11d8c7655279dac0e7d3cbd13f8a9317540c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829858"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458572"
 ---
 # <a name="ignore"></a>Ignorieren
 
-Das **ignorieren** -Element identifiziert Elemente, während der Synchronisierung zu überspringen. 
+Das **Ignore** -Element identifiziert Elemente, die während der Synchronisierung übersprungen werden sollen. 
   
 [SyncFolderItems](syncfolderitems.md)
   
-[Ignorieren](ignore.md)
+[Ignore](ignore.md)
   
 ```xml
 <Ignore>
@@ -46,25 +46,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und Ändern eines Elements in der Exchange-Speicher.  <br/> |
+|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel eines Elements in der Exchange-Informationsspeicher.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SyncFolderItems](syncfolderitems.md) <br/> |Definiert eine Anforderung zum Synchronisieren von Elementen in einem Ordner von Exchange-Speicher.  <br/> |
+|[SyncFolderItems](syncfolderitems.md) <br/> |Definiert eine Anforderung zum Synchronisieren von Elementen in einem Exchange-Informationsspeicher Ordner.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

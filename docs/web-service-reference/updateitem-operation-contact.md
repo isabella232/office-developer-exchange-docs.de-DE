@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 298fdd71-a83d-4407-9728-4f0a8e2d857c
-description: Der Vorgang UpdateItem wird verwendet, um Eigenschaften für Kontaktelemente im Exchange-Speicher zu aktualisieren.
-ms.openlocfilehash: f2a501ce8e69068cd30b58011adf4defc68ce365
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der UpdateItem-Vorgang wird zum Aktualisieren der Eigenschaften von Kontaktelementen in der Exchange-Informationsspeicher verwendet.
+ms.openlocfilehash: 66e1b91ea3154d8a501339aed7b398970e8f5392
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839372"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459826"
 ---
 # <a name="updateitem-operation-contact"></a>UpdateItem-Vorgang (Kontakt)
 
-Der Vorgang UpdateItem wird verwendet, um Eigenschaften für Kontaktelemente im Exchange-Speicher zu aktualisieren.
+Der UpdateItem-Vorgang wird zum Aktualisieren der Eigenschaften von Kontaktelementen in der Exchange-Informationsspeicher verwendet.
   
-## <a name="updateitem-contact-request-example"></a>Anforderungsbeispiel UpdateItem (Kontakt)
+## <a name="updateitem-contact-request-example"></a>UpdateItem (Kontakt)-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Codebeispiel wird veranschaulicht, wie die e-Mail-Adresse eines Kontakts zu aktualisieren.
+Im folgenden Codebeispiel wird veranschaulicht, wie die e-Mail-Adresse eines Kontakts aktualisiert wird.
   
 ### <a name="code"></a>Code
 
@@ -36,9 +36,9 @@ Im folgenden Codebeispiel wird veranschaulicht, wie die e-Mail-Adresse eines Kon
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
- xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <UpdateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
+    <UpdateItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
                 ConflictResolution="AlwaysOverwrite">
       <ItemChanges>
         <t:ItemChange>
@@ -60,9 +60,9 @@ Im folgenden Codebeispiel wird veranschaulicht, wie die e-Mail-Adresse eines Kon
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Der Elementbezeichner wurde gekürzt, um die Lesbarkeit zu erhalten.
+Die Element-ID wurde verkürzt, um die Lesbarkeit beizubehalten.
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -82,17 +82,17 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [IndexedFieldURI](indexedfielduri.md)
     
-- [Contact](contact.md)
+- [Kontakt](contact.md)
     
 - [EmailAddresses](emailaddresses.md)
     
-- [Eintrag (EmailAddress)](entry-emailaddress.md)
+- [Eintrag (e-mailemail)](entry-emailaddress.md)
     
-## <a name="successful-updateitem-contact-response"></a>Antwort erfolgreich UpdateItem (Kontakt)
+## <a name="successful-updateitem-contact-response"></a>Erfolgreiche UpdateItem-Antwort (Kontakt)
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Codebeispiel zeigt eine erfolgreiche Antwort UpdateItem.
+Das folgende Codebeispiel zeigt eine erfolgreiche UpdateItem-Antwort.
   
 ### <a name="code"></a>Code
 
@@ -103,12 +103,12 @@ Das folgende Codebeispiel zeigt eine erfolgreiche Antwort UpdateItem.
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <UpdateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <UpdateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:UpdateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -124,11 +124,11 @@ Das folgende Codebeispiel zeigt eine erfolgreiche Antwort UpdateItem.
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Der Elementbezeichner wurde gekürzt, um die Lesbarkeit zu erhalten.
+Die Element-ID wurde verkürzt, um die Lesbarkeit beizubehalten.
   
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -144,11 +144,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
-- [Contact](contact.md)
+- [Kontakt](contact.md)
     
 - [ItemId](itemid.md)
     
-## <a name="invalid-updateitem-contact-request-example"></a>Ungültige UpdateItem (Kontakt) anforderungsbeispiel
+## <a name="invalid-updateitem-contact-request-example"></a>Ungültiges UpdateItem (Contact)-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
@@ -161,9 +161,9 @@ Das folgende Codebeispiel zeigt eine ungültige Anforderung.
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
- xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <UpdateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
+    <UpdateItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
                 ConflictResolution="AlwaysOverwrite">
       <ItemChanges>
         <t:ItemChange>
@@ -185,15 +185,15 @@ Das folgende Codebeispiel zeigt eine ungültige Anforderung.
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Der Elementbezeichner wurde gekürzt, um die Lesbarkeit zu erhalten.
+Die Element-ID wurde verkürzt, um die Lesbarkeit beizubehalten.
   
-## <a name="updateitem-contact-error-response"></a>Fehlerantwort UpdateItem (Kontakt)
+## <a name="updateitem-contact-error-response"></a>UpdateItem (Kontakt)-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Codebeispiel zeigt eine Fehlerantwort auf eine Anforderung UpdateItem (Kontakt).
+Das folgende Codebeispiel zeigt eine Fehlerantwort auf eine UpdateItem (Contact)-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -201,30 +201,30 @@ Das folgende Codebeispiel zeigt eine Fehlerantwort auf eine Anforderung UpdateIt
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <soap:Fault>
       <soap:faultcode>Client</soap:faultcode>
       <soap:faultstring>The request failed schema validation.</soap:faultstring>
       <detail>
-        <e:ResponseCode xmlns:e="http://schemas.microsoft.com/exchange/services/2006/errors">ErrorSchemaValidation</e:ResponseCode>
-        <e:Message xmlns:e="http://schemas.microsoft.com/exchange/services/2006/errors">The 'Key' attribute is invalid - The value 'EmailAddress4' is invalid according to its data type 'http://schemas.microsoft.com/exchange/services/2006/types:EmailAddressKeyType' - The Enumeration constraint failed.</e:Message>
-        <e:Line xmlns:e="http://schemas.microsoft.com/exchange/services/2006/errors">17</e:Line>
-        <e:Position xmlns:e="http://schemas.microsoft.com/exchange/services/2006/errors">19</e:Position>
+        <e:ResponseCode xmlns:e="https://schemas.microsoft.com/exchange/services/2006/errors">ErrorSchemaValidation</e:ResponseCode>
+        <e:Message xmlns:e="https://schemas.microsoft.com/exchange/services/2006/errors">The 'Key' attribute is invalid - The value 'EmailAddress4' is invalid according to its data type 'https://schemas.microsoft.com/exchange/services/2006/types:EmailAddressKeyType' - The Enumeration constraint failed.</e:Message>
+        <e:Line xmlns:e="https://schemas.microsoft.com/exchange/services/2006/errors">17</e:Line>
+        <e:Position xmlns:e="https://schemas.microsoft.com/exchange/services/2006/errors">19</e:Position>
       </detail>
     </soap:Fault>
   </soap:Body>
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Einige Elemente, die in der SOAP-Body einer Fehlerantwort verwendet werden, die durch ein Schemavalidierungsfehler verursacht wird sind nicht in den Nachrichten oder Arten-Schemas definiert. Das **Detail** -Element enthält Informationen zu dem Fehler. Das [ResponseCode](responsecode.md) -Element enthält den Fehlercode. Das [Nachricht](message-ex15websvcsotherref.md) -Element enthält eine Beschreibung für den Fehler, sofern verfügbar. Das **Zeile** -Element beschreibt die Zeilennummer, in dem der Schema-Validierungsfehler aufgetreten ist. Das **Position** -Element beschreibt die Position der äußersten linken Zeichen des XML-Dokuments aus. 
+Einige Elemente, die im SOAP-Textkörper einer Fehlerantwort verwendet werden, die durch einen Schemaüberprüfungsfehler verursacht wird, sind nicht in den Schemas "Nachrichten" oder "Typen" definiert. Das **Detail** -Element enthält Informationen zum Fehler. Das [Response Code](responsecode.md) -Element enthält den Fehlercode. Das [Message](message-ex15websvcsotherref.md) -Element enthält eine Erklärung für den Fehler, sofern einer verfügbar ist. Das Element " **Position** " beschreibt die Nummer der Nummer, in der der Schemaüberprüfungsfehler aufgetreten ist. Das **Position** -Element beschreibt die Position vom äußersten linken Zeichen des XML-Dokuments. 
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[UpdateItem Operation](updateitem-operation.md)
+[UpdateItem-Vorgang](updateitem-operation.md)
 

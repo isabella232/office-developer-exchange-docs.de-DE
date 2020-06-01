@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0ffad7a6-8e1b-452b-9d87-8e0f6c77f0a6
-description: Das BaseOffset-Element darstellt, die stündlich offset von koordinierte Weltzeit (UTC) für die aktuelle Zeitzone.
-ms.openlocfilehash: 56fc136537b7d5370074a0e6d492f214da3fd960
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das BaseOffset-Element stellt den stündlichen Offset der koordinierten Weltzeit (Coordinated Universal Time, UTC) der aktuellen Zeitzone dar.
+ms.openlocfilehash: 1e29f123dfac2e29807e0a2077d47adb14844f4e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757435"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460260"
 ---
 # <a name="baseoffset"></a>BaseOffset
 
-Das **BaseOffset** -Element darstellt, die stündlich offset von koordinierte Weltzeit (UTC) für die aktuelle Zeitzone. 
+Das **BaseOffset** -Element stellt den stündlichen Offset der koordinierten Weltzeit (Coordinated Universal Time, UTC) der aktuellen Zeitzone dar. 
   
 ```xml
 <BaseOffset/>
@@ -44,17 +44,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MeetingTimeZone](meetingtimezone.md) <br/> |Stellt die Zeitzone des Speicherorts, in die Besprechung gehostet wird.  <br/> |
+|[MeetingTimeZone](meetingtimezone.md) <br/> |Stellt die Zeitzone des Speicherorts dar, an dem die Besprechung gehostet wird.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

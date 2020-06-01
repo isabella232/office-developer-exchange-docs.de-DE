@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cc583723-54d1-4a17-8c1f-6586f70fdefd
-description: Das GetItemResponseMessage-Element enthält den Status und das Ergebnis einer Anforderung GetItem Operation.
-ms.openlocfilehash: 0c8527258d4637ede053e189dfb918b910c859d6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetItemResponseMessage-Element enthält den Status und das Ergebnis einer einzelnen GetItem-Vorgangsanforderung.
+ms.openlocfilehash: bd25a82641259e1546bad6eef5c2f6f8f03e98cb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758726"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458670"
 ---
 # <a name="getitemresponsemessage"></a>GetItemResponseMessage
 
-Das **GetItemResponseMessage** -Element enthält, der Status und das Ergebnis einer einzelnen Anforderung [GetItem Operation](getitem-operation.md) . 
+Das **GetItemResponseMessage** -Element enthält den Status und das Ergebnis einer einzelnen [GetItem-Vorgangs](getitem-operation.md) Anforderung. 
   
 - [GetItemResponse](getitemresponse.md) 
 - [ResponseMessages](responsemessages.md)
@@ -47,47 +47,47 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**ResponseClass** <br/> | Beschreibt den Status einer Antwort [GetItem Operation](getitem-operation.md) . <br/><br/>Die folgenden Werte sind für dieses Attribut gültig:<br/><br/>-Success<br/>-Warnung<br/>-Fehler |
+|**ResponseClass** <br/> | Beschreibt den Status einer [GetItem-Vorgangs](getitem-operation.md) Antwort. <br/><br/>Die folgenden Werte sind für dieses Attribut gültig:<br/><br/>-Success<br/>-Warnung<br/>-Error |
    
-#### <a name="responseclass-attribute-values"></a>Attributwerte ResponseClass
+#### <a name="responseclass-attribute-values"></a>ResponseClass-Attributwerte
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |**Success** <br/> |Beschreibt eine Anforderung, die erfüllt ist.  <br/> |
-|**Warning** <br/> | Beschreibt eine Anforderung, die nicht verarbeitet wurde. Eine Warnung kann zurückgegeben werden, wenn ein Fehler aufgetreten ist, während ein Element in der Anforderung verarbeitet wurde und nachfolgenden Elemente nicht verarbeitet werden konnte.<br/><br/>Es folgen Beispiele für Datenquellen für Warnungen:<br/><br/>-Der Exchange-Speicher ist während der Batchaktualisierung offline.<br/>-Active Directory-Domänendienste (AD DS) ist offline.<br/>-Postfächer werden verschoben.<br/>-MDB ist offline.<br/>-Kennwort ist abgelaufen.  <br/>-Kontingent überschritten wird. |
-|**Fehler** <br/> | Beschreibt eine Anforderung, die nicht gewährleistet werden kann.<br/><br/>Es folgen Beispiele für Datenquellen für Fehler:<br/><br/>-Ungültige Attribute oder Elemente<br/>-Attribute oder Elemente außerhalb des gültigen Bereichs<br/>-Unbekanntes tag<br/>-Attribut oder ein Element im Kontext ist ungültig.<br/>-Nicht autorisierten Zugriff von jedem Client versucht<br/>-Server-Side-Fehler als Reaktion auf einen gültigen mithilfe der clientseitigen Anruf<br/><br/>Informationen zu dem Fehler kann in den Elementen [ResponseCode](responsecode.md) und [MessageText](messagetext.md) gefunden werden. |
+|**Warning** <br/> | Beschreibt eine Anforderung, die nicht verarbeitet wurde. Eine Warnung wird möglicherweise zurückgegeben, wenn ein Fehler aufgetreten ist, während ein Element in der Anforderung verarbeitet wurde und nachfolgende Elemente nicht verarbeitet werden konnten.<br/><br/>Im folgenden sind Beispiele für Quellen für Warnungen aufgeführt:<br/><br/>-Der Exchange-Informationsspeicher ist während des Batches offline.<br/>-Active Directory-Domänendienste (AD DS) ist offline.<br/>-Postfächer werden verschoben.<br/>-MDB ist offline.<br/>-Password ist abgelaufen.  <br/>-Kontingent wird überschritten. |
+|**Error** <br/> | Beschreibt eine Anforderung, die nicht erfüllt werden kann.<br/><br/>Im folgenden finden Sie Beispiele für Fehlerquellen:<br/><br/>-Ungültige Attribute oder Elemente<br/>-Attribute oder Elemente außerhalb des Bereichs<br/>-Unbekanntes Tag<br/>-Attribut oder Element im Kontext ungültig<br/>-Nicht autorisierter Zugriff durch einen Client versucht<br/>-Server seitiger Fehler als Reaktion auf einen gültigen clientseitigen Anruf<br/><br/>Informationen zum Fehler finden Sie in den Elementen [Response Code](responsecode.md) und [MessageText](messagetext.md) . |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MessageText](messagetext.md) <br/> |Enthält einen beschreibenden Text für den Status der Antwort.  <br/> |
-|[ResponseCode](responsecode.md) <br/> |Enthält einen Fehlercode, der den jeweiligen Fehler identifiziert, bei dem die Anforderung auftrat.  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Derzeit nicht verwendet und ist für die zukünftige Verwendung reserviert. Es enthält einen Wert von 0.  <br/> |
-|[MessageXml](messagexml.md) <br/> |Bietet zusätzliche Fehlerantwortinformationen.  <br/> |
-|[Elemente](items.md) <br/> |Enthält ein Array der zurückgegebenen Elemente an.  <br/> |
+|[MessageText](messagetext.md) <br/> |Enthält eine Textbeschreibung des Status der Antwort.  <br/> |
+|[ResponseCode](responsecode.md) <br/> |Stellt einen Fehlercode bereit, der den spezifischen Fehler identifiziert, der bei der Anforderung aufgetreten ist.  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Wird derzeit nicht verwendet und ist für die zukünftige Verwendung reserviert. Sie enthält den Wert 0.  <br/> |
+|[Messagexml verwendet](messagexml.md) <br/> |Bietet zusätzliche Fehlerantwortinformationen.  <br/> |
+|[Items](items.md) <br/> |Enthält ein Array zurückgegebener Elemente.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 - [GetItem](getitem.md)
-- [GetItem Operation](getitem-operation.md)
+- [GetItem-Vorgang](getitem-operation.md)
 

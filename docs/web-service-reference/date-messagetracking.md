@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3b684b12-3e43-4012-a8c9-8fb8c43387b4
-description: Das Date-Element darstellt, das Datum und die Uhrzeit des Ereignisses.
-ms.openlocfilehash: af5a512064e384f2f3e196c12e48be5f2d5caae2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Date-Element stellt das Datum und die Uhrzeit dar, zu der das Ereignis aufgetreten ist.
+ms.openlocfilehash: 0851c0785072f24868b17a828f34a47861441d22
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757852"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459265"
 ---
 # <a name="date-messagetracking"></a>Datum (MessageTracking)
 
-Das **Date** -Element darstellt, das Datum und die Uhrzeit des Ereignisses. 
+Das **Date** -Element stellt das Datum und die Uhrzeit dar, zu der das Ereignis aufgetreten ist. 
   
 ```XML
 <Date/>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Enthält Details für ein bestimmtes Ereignis in den Nachrichtenverfolgungsbericht.  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Enthält Details für ein bestimmtes Ereignis im Überwachungsbericht.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -1,5 +1,5 @@
 ---
-title: InternalId
+title: Interne-Nr
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c179db1a-95c9-40da-bd3f-0bed548c0325
-description: Das InternalId-Element stellt einen ganzzahligen Wert für die Ereignis-ID an.
-ms.openlocfilehash: db547b05268d5ae2dc11be1f80a51f59b9d8e396
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Internal-ID-Element stellt einen ganzzahligen Wert für die Ereignis Identifikation dar.
+ms.openlocfilehash: 66d5852e104de843911b46a225154ebd991e2220
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829941"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459938"
 ---
-# <a name="internalid"></a>InternalId
+# <a name="internalid"></a>Interne-Nr
 
-Das **InternalId** -Element stellt einen ganzzahligen Wert für die Ereignis-ID an. 
+Das **internal** -ID-Element stellt einen ganzzahligen Wert für die Ereignis Identifikation dar. 
   
 ```XML
 <InternalId/>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Enthält Informationen für ein einzelnes Ereignis für einen Empfänger.  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Enthält Informationen zu einem einzelnen Ereignis für einen Empfänger.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert, der eine ganze Zahl darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

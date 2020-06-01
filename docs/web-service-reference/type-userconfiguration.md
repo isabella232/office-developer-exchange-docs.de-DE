@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d09a9621-6950-451a-90dc-920af9cab35c
-description: Das Type-Element gibt eine Wörterbuch-Objekttyp an.
-ms.openlocfilehash: 01729f0b5cb71989aef550abb08346cfe9a35789
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Type-Element gibt einen Dictionary-Objekttyp an.
+ms.openlocfilehash: ea196e070279bb809cc2e4c2a51dd2453dd9b331
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839273"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458873"
 ---
 # <a name="type-userconfiguration"></a>Typ (UserConfiguration)
 
-Das **Type** -Element gibt eine Wörterbuch-Objekttyp an. 
+Das **Type** -Element gibt einen Dictionary-Objekttyp an. 
   
 ```xml
 <Type>DateTime or Boolean or Byte or String or Integer32 or UnsignedInteger32 or Integer64 or UnsignedInteger64 or StringArray or ByteArray</Type> 
@@ -44,19 +44,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DictionaryKey](dictionarykey.md) <br/> |Gibt den Wörterbuchschlüssel für eine Wörterbucheigenschaft.  <br/> |
-|[DictionaryValue](dictionaryvalue.md) <br/> |Gibt den Wörterbuchwert für eine Wörterbucheigenschaft.  <br/> |
+|[DictionaryKey](dictionarykey.md) <br/> |Gibt den Wörterbuchschlüssel für eine Dictionary-Eigenschaft an.  <br/> |
+|[Dictionaryvalue](dictionaryvalue.md) <br/> |Gibt den Wert des Wörterbuchs für eine Dictionary-Eigenschaft an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Die folgende Tabelle enthält die möglichen Werte für das **Type** -Element. 
+In der folgenden Tabelle sind die möglichen Werte für das **Type** -Element aufgeführt. 
   
-**Typ-Elementwerte**
+**Type-Elementwerte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |DateTime  <br/> ||
-|Boolean  <br/> ||
+|Boolesch  <br/> ||
 |Byte  <br/> ||
 |Zeichenfolge  <br/> ||
 |Integer32  <br/> ||
@@ -64,17 +64,17 @@ Die folgende Tabelle enthält die möglichen Werte für das **Type** -Element.
 |Integer64  <br/> ||
 |UnsignedInteger64  <br/> ||
 |StringArray  <br/> ||
-|ByteArray  <br/> ||
+|Bytearray  <br/> ||
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

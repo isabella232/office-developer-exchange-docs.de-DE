@@ -6,23 +6,23 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: a287b9c3-7fb6-4f2f-a8dc-15d4bc32394c
-description: Das Element FreeBusyAccessLevel stellt die FreeBusyAccessLevel-Eigenschaft. Das FreeBusyAccessLevel-Element ist nur zur internen Verwendung. Dieses Element wird von Clients nicht verwendet.
-ms.openlocfilehash: c978608982a2795af1683b4b2121435a02149935
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FreeBusyAccessLevel-Element stellt die FreeBusyAccessLevel-Eigenschaft dar. Das FreeBusyAccessLevel-Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet.
+ms.openlocfilehash: 7ff0c6c72f924a2f1f8eee0dd152d19f6a8745e9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758540"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460050"
 ---
 # <a name="freebusyaccesslevel-soap"></a>FreeBusyAccessLevel (SOAP)
 
-Das Element **FreeBusyAccessLevel** stellt die **FreeBusyAccessLevel** -Eigenschaft. Das **FreeBusyAccessLevel** -Element ist nur zur internen Verwendung. Dieses Element wird von Clients nicht verwendet. 
+Das **FreeBusyAccessLevel** -Element stellt die **FreeBusyAccessLevel** -Eigenschaft dar. Das **FreeBusyAccessLevel** -Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet. 
   
 ```XML
 <FreeBusyAccessLevel/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -39,19 +39,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste von organisationsbeziehungen für eine einzelne Organisation.  <br/> |
+|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste von Organisationsbeziehungen für eine einzelne Organisation dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element gibt die maximale Größe der Frei/Gebucht-Informationen Details, die in der Antwort zurückgegeben werden, und gibt den Umfang der Frei/Gebucht-Daten, die extern gemeinsam genutzt werden. 
+Dieses Element gibt die maximale Anzahl von Frei/Gebucht-Details an, die in der Antwort zurückgegeben werden, und gibt die Ebene der Frei/Gebucht-Daten an, die extern freigegeben werden. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

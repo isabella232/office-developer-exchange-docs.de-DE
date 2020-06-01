@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 742a46a0-2475-45a0-b44f-90639a3f5a43
-description: Das CreateItemResponse-Element definiert eine Antwort auf eine CreateItem-Anforderungen.
-ms.openlocfilehash: a05f222721e5b16695415e74a8e77e0fec495ef5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CreateItemResponse-Element definiert eine Antwort auf eine CreateItem-Anforderung.
+ms.openlocfilehash: af7349888a2f194a8f4ff1043ec8c38a90b3dfff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757783"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458845"
 ---
 # <a name="createitemresponse"></a>CreateItemResponse
 
-Das **CreateItemResponse** -Element definiert eine Antwort auf eine CreateItem-Anforderungen. 
+Das **CreateItemResponse** -Element definiert eine Antwort auf eine CreateItem-Anforderung. 
   
 ```xml
 <CreateItemResponse>
@@ -42,30 +42,30 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[CreateItem Operation](createitem-operation.md)
+[CreateItem-Vorgang](createitem-operation.md)
   
 [CreateItem](createitem.md)
 

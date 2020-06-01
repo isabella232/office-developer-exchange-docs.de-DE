@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cdfc4edd-463c-409b-9bef-6fb915d00b99
-description: Das StartTime (ReminderMessageDataType)-Element gibt die Startzeit des Elements, der für die Erinnerung ist.
-ms.openlocfilehash: 2e3226d4a611a3abd46e7d6d73e800b74dd31f59
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das StartTime-Element (ReminderMessageDataType) gibt die Startzeit des Elements an, für das die Erinnerung gilt.
+ms.openlocfilehash: bdd940656d5441a0a36cfcef8f4e0b5db1474a7a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831561"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458999"
 ---
 # <a name="starttime-remindermessagedatatype"></a>StartTime (ReminderMessageDataType)
 
-Das **StartTime (ReminderMessageDataType)** -Element gibt die Startzeit des Elements, der für die Erinnerung ist. 
+Das StartTime **-Element (ReminderMessageDataType)** gibt die Startzeit des Elements an, für das die Erinnerung gilt. 
   
 ```XML
 <StartTime/>
@@ -43,19 +43,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **StartTime (ReminderMessageDataType)** -Elements ist, dass die Startzeit des Elements die Erinnerung für ist. 
+Der Textwert des StartTime-Elements **(ReminderMessageDataType)** ist die Startzeit des Elements, für das die Erinnerung gilt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e86f98b6-83b5-4530-80eb-dc5df42e2c62
-description: Das SizeRequested-Element enthält die Größe des angeforderten Fotos für einen Vorgang GetUserPhoto.
-ms.openlocfilehash: 43e422512b1e8f06e410e533e9ae1dc49283d5f6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SizeRequested-Element enthält die angeforderte Fotogröße für einen GetUserPhoto-Vorgang.
+ms.openlocfilehash: 2e79bbb158fa9a22cbd3ec08fcd6e60429e113b4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831504"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460456"
 ---
 # <a name="sizerequested"></a>SizeRequested
 
-Das **SizeRequested** -Element enthält die Größe des angeforderten Fotos für einen Vorgang **GetUserPhoto** . 
+Das **SizeRequested** -Element enthält die angeforderte Fotogröße für einen **GetUserPhoto** -Vorgang. 
   
 ```XML
 <SizeRequested>HR48x48 | HR64x64 | HR96X96 | HR120X120 | HR240X240 | HR360X360 | HR432X432 | HR504X504 | HR648X648</SizeRequested>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **SizeRequested** -Elements ist die Größe des angeforderten Fotos eines digitalen Bilds vom Server zurückgegeben. Die folgende Tabelle zeigt die Textwerte für das **SizeRequested** -Element. 
+Der Textwert des **SizeRequested** -Elements ist die angeforderte Fotogröße eines digitalen Bilds, das vom Server zurückgegeben wird. In der folgenden Tabelle werden die Textwerte für das **SizeRequested** -Element aufgeführt. 
   
-|**Wert**|**Bedeutung**|
+|**Value**|**Bedeutung**|
 |:-----|:-----|
 |HR48x48  <br/> |Das Bild ist 48 Pixel hoch und 48 Pixel breit.  <br/> |
 |HR64x64  <br/> |Das Bild ist 64 Pixel hoch und 64 Pixel breit.  <br/> |
@@ -56,19 +56,19 @@ Der Textwert des **SizeRequested** -Elements ist die Größe des angeforderten F
 |HR504x504  <br/> |Das Bild ist 504 Pixel hoch und 504 Pixel breit.  <br/> |
 |HR648x648  <br/> |Das Bild ist 648 Pixel hoch und 648 Pixel breit.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

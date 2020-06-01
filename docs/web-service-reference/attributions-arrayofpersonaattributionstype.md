@@ -1,5 +1,5 @@
 ---
-title: Hinweise (ArrayOfPersonaAttributionsType)
+title: Zuordnungen (ArrayOfPersonaAttributionsType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f61d843c-bca5-4c88-9667-fd03d2a963a1
-description: Das Element Marken gibt ein Array von Informationen für eine oder mehrere Kontakte oder Active Directory-Empfänger in der zugeordneten Rolle aggregiert.
-ms.openlocfilehash: 52fecb4e4381d5e9dbbaf7134fa18068ba15f6ec
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Attributes-Element gibt ein Array von Zuordnungsinformationen für einen oder mehrere Kontakte oder Active Directory Empfänger an, die in der zugeordneten Rolle aggregiert sind.
+ms.openlocfilehash: a9883e06a8adbd5c9d3bc7e1edd28c62418df653
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757406"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460323"
 ---
-# <a name="attributions-arrayofpersonaattributionstype"></a>Hinweise (ArrayOfPersonaAttributionsType)
+# <a name="attributions-arrayofpersonaattributionstype"></a>Zuordnungen (ArrayOfPersonaAttributionsType)
 
-Das Element **Marken** gibt ein Array von Informationen für eine oder mehrere Kontakte oder Active Directory-Empfänger in der zugeordneten Rolle aggregiert. 
+Das **Attributes** -Element gibt ein Array von Zuordnungsinformationen für einen oder mehrere Kontakte oder Active Directory Empfänger an, die in der zugeordneten Rolle aggregiert sind. 
   
 ```XML
 <Attributions>
@@ -38,27 +38,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Zuweisung (PersonaAttributionType)](attribution-personaattributiontype.md) <br/> |Gibt eine Instanz in ein Array von Attributen für ein **PersonaType** -Element.  <br/> |
+|[Attribution (PersonaAttributionType)](attribution-personaattributiontype.md) <br/> |Gibt eine Instanz in einem Array von Attributen für ein **personatype** -Element an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Rolle](persona.md) <br/> |Gibt einen Satz von Persona Daten von einer Anforderung **GetPersona** zurückgegeben.  <br/> |
+|[Persona](persona.md) <br/> |Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

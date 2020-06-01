@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 15790d5a-5134-457b-8f2b-d9dee1f807a2
-description: Bias-Element stellt den allgemeinen Offset von koordinierte Weltzeit (UTC). Dieser Wert wird in Minuten angegeben.
-ms.openlocfilehash: 43613593565ca15be97bd2a98dbe5c512dbe5fc7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Bias-Element stellt den allgemeinen Offset von koordinierter Weltzeit (Coordinated Universal Time, UTC) dar. Dieser Wert wird in Minuten angegeben.
+ms.openlocfilehash: d95284aa28e59542d1a1ee40686163138b015702
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757443"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460246"
 ---
 # <a name="bias-utc"></a>Bias (UTC)
 
-**Bias** -Element stellt den allgemeinen Offset von koordinierte Weltzeit (UTC). Dieser Wert wird in Minuten angegeben. 
+Das **Bias** -Element stellt den allgemeinen Offset von koordinierter Weltzeit (Coordinated Universal Time, UTC) dar. Dieser Wert wird in Minuten angegeben. 
   
 ```xml
 <TimeZone>
@@ -47,22 +47,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[TimeZone (Verfügbarkeit)](timezone-availability.md) <br/> | Der Container, der die Datum-Uhrzeit-Informationen der Anforderung identifiziert. Dieses Element enthält Informationen über den Wechsel zwischen Standardzeit und Sommerzeit.  <br/><br/>Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>   `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone` <br/><br/>`/GetUserAvailabilityRequest/TimeZone` <br/> |
+|[Zeitzone (Verfügbarkeit)](timezone-availability.md) <br/> | Der Container, der die Datum-Uhrzeit-Informationen der Anforderung angibt. Dieses Element enthält Informationen über den Übergang zwischen Standardzeit und Sommerzeit.  <br/><br/>Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>   `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone` <br/><br/>`/GetUserAvailabilityRequest/TimeZone` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der Textwert stellt eine ganze Zahl.
+Ein Textwert ist erforderlich. Der Wert Text stellt eine ganze Zahl dar.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Ein zweites [Bias](bias.md) -Element im Schema stellt den Offset vom Offset (Coordinated Universal Time, UTC). 
+Ein zweites [Bias](bias.md) -Element im Schema stellt den Offset des Offsets für koordinierte Weltzeit (Coordinated Universal Time, UTC) dar. 
   
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt einen Teil einer XML-Anforderung, die einen Offset von 8 Stunden aus UTC in die Clientanwendung identifiziert.
+Das folgende Beispiel zeigt einen Teil einer XML-Anforderung, die einen Offset von 8 Stunden von UTC in der Clientanwendung identifiziert.
   
 ```xml
-<TimeZone xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+<TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
   <Bias>480</Bias>
   <StandardTime>
     <Bias>0</Bias>
@@ -81,11 +81,11 @@ Das folgende Beispiel zeigt einen Teil einer XML-Anforderung, die einen Offset v
 </TimeZone>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -94,5 +94,5 @@ Das folgende Beispiel zeigt einen Teil einer XML-Anforderung, die einen Offset v
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)  
 - [Bias](bias.md)
-- [Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

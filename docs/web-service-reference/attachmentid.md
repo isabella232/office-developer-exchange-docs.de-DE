@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 55a5fd77-60d1-40fa-8144-770600cedc6a
-description: Das Element AttachmentId identifiziert eine Anlage Element oder eine Datei. Dieses Element wird in CreateAttachment Antworten verwendet.
-ms.openlocfilehash: 2910503d1661ca3aaeeb4e319deb39f6b57c5c0a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Attachments-Element identifiziert ein Element oder eine Dateianlage. Dieses Element wird in CreateAttachment-Antworten verwendet.
+ms.openlocfilehash: b5dc9299b615f0fc01b8afcbaabf0ec7996e53d1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757393"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459111"
 ---
 # <a name="attachmentid"></a>AttachmentId
 
-Das Element **AttachmentId** identifiziert eine Anlage Element oder eine Datei. Dieses Element wird in CreateAttachment Antworten verwendet. 
+Das **Attachments** -Element identifiziert ein Element oder eine Dateianlage. Dieses Element wird in CreateAttachment-Antworten verwendet. 
   
 ```xml
 <AttachmentId Id="" RootItemId="" RootItemChangeKey="" />
@@ -36,9 +36,9 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Id** <br/> |Gibt die eindeutige ID der Anlage an.  <br/> |
-|**RootItemId** <br/> |Gibt den eindeutigen Bezeichner des Elements Stamm-Speicher, dem die Anlage angefügt werden.  <br/> |
-|**RootItemChangeKey** <br/> |Identifiziert die Key ändern des Elements Stamm-Speicher, dem die Anlage angefügt werden.  <br/> |
+|**Id** <br/> |Gibt den eindeutigen Bezeichner der Anlage an.  <br/> |
+|**RootItemId** <br/> |Gibt den eindeutigen Bezeichner des Stammspeicher Elements an, an das die Anlage angefügt ist.  <br/> |
+|**RootItemChangeKey** <br/> |Gibt den Änderungsschlüssel des Stammspeicher Elements an, an das die Anlage angefügt ist.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -48,22 +48,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange-Element, das mit einem anderen Exchange-Element zugeordnet ist.  <br/> |
-|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei, die ein Element in der Exchange-Informationsspeicher zugeordnet ist.  <br/> |
+|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange-Element dar, das an ein anderes Exchange-Element angefügt ist.  <br/> |
+|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die an ein Element im Exchange-Informationsspeicher angefügt ist.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Es ist wichtig, beachten Sie, dass wenn eine Anlage erstellt wird, der Key ändern die Stamm-Elements geändert wird.
+Es ist wichtig zu beachten, dass beim Erstellen einer Anlage der Änderungsschlüssel des Stammelements geändert wird.
   
-Das Element [AttachmentId (GetAttachment und DeleteAttachment)](attachmentid-getattachment-and-deleteattachment.md) wird in DeleteAttachment und GetAttachment Anforderungen verwendet. 
+Das [Attachment-Element (GetAttachment und DeleteAttachment-)](attachmentid-getattachment-and-deleteattachment.md) wird in DeleteAttachment--und GetAttachment-Anforderungen verwendet. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: 75fee92a-a7f8-4a62-ad2b-17acbaada186
-description: Der Vorgang GetSharingFolder Ruft den lokalen Ordner Bezeichner eines angegebenen freigegebenen Ordners ab.
-ms.openlocfilehash: 23adb10b22623fcbc1dd6b33bd674afafdaa8b19
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetSharingFolder-Vorgang ruft den lokalen Ordner Bezeichner eines angegebenen freigegebenen Ordners ab.
+ms.openlocfilehash: cf66eb390b0287e89bb8402f26a2e728868a2b18
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829670"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460512"
 ---
 # <a name="getsharingfolder-operation"></a>GetSharingFolder-Vorgang
 
-Der Vorgang **GetSharingFolder** Ruft den lokalen Ordner Bezeichner eines angegebenen freigegebenen Ordners ab. 
+Der **GetSharingFolder** -Vorgang ruft den lokalen Ordner Bezeichner eines angegebenen freigegebenen Ordners ab. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der Vorgang **GetSharingFolder** können die SOAP-Header, die aufgeführt und in der folgenden Tabelle beschrieben. 
+Der **GetSharingFolder** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="getsharingfolder-request-example"></a>Anforderungsbeispiel GetSharingFolder
+## <a name="getsharingfolder-request-example"></a>GetSharingFolder-Anforderungs Beispiel
 
-### <a name="getting-the-local-folder-identifier-by-specifying-the-sharedfolderid-element-of-the-folder-being-shared"></a>Abrufen des lokalen Ordner Bezeichners durch das SharedFolderId-Element des freigegebenen Ordners angeben
+### <a name="getting-the-local-folder-identifier-by-specifying-the-sharedfolderid-element-of-the-folder-being-shared"></a>Aufrufen der lokalen Ordner-ID durch Angabe des SharedFolderId-Elements des freigegebenen Ordners
 
-Im folgenden Codebeispiel wird veranschaulicht, wie auf eine Anforderung an den Bezeichner der den lokalen Ordner, der entspricht in dem Ordner abrufen, die gegenwärtig freigegebenen bilden. Der Ordner, der gegenwärtig freigegebenen wird identifiziert, durch die SMTP-Adresse des Postfachs an, die den Ordner enthält, der gemeinsam genutzt werden und das [SharedFolderId](sharedfolderid.md) -Element, das den Bezeichner des Ordners darstellt. In diesem Beispiel gehört user1@contoso.com der Ordner, der freigegeben ist. 
+Im folgenden Codebeispiel wird gezeigt, wie eine Anforderung zum Abrufen des Bezeichners des lokalen Ordners erstellt wird, der dem freizugebenden Ordner entspricht. Der freigegebene Ordner wird durch die SMTP-Adresse des Postfachs identifiziert, das den freizugebenden Ordner und das [SharedFolderId](sharedfolderid.md) -Element enthält, das den Bezeichner dieses Ordners darstellt. In diesem Beispiel befindet sich der Ordner, der freigegeben wird, im Besitz von user1@contoso.com. 
   
 ### <a name="code"></a>Code
 
@@ -45,8 +45,8 @@ Im folgenden Codebeispiel wird veranschaulicht, wie auf eine Anforderung an den 
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010"/>
   </soap:Header>
@@ -59,9 +59,9 @@ Im folgenden Codebeispiel wird veranschaulicht, wie auf eine Anforderung an den 
 </soap:Envelope>
 ```
 
-### <a name="getting-the-local-folder-identifier-by-specifying-the-datatype-element-of-the-folder-being-shared"></a>Abrufen des lokalen Ordner Bezeichners durch Angeben der DataType-Element des freigegebenen Ordners
+### <a name="getting-the-local-folder-identifier-by-specifying-the-datatype-element-of-the-folder-being-shared"></a>Aufrufen der lokalen Ordner-ID durch Angabe des DataType-Elements des freigegebenen Ordners
 
-Im folgenden Codebeispiel wird veranschaulicht, wie auf eine Anforderung an den Bezeichner der den lokalen Ordner, der entspricht in dem Ordner abrufen, die gegenwärtig freigegebenen bilden. Der Ordner, der gegenwärtig freigegebenen wird identifiziert, durch die SMTP-Adresse des Postfachs an, die den Ordner enthält, der gemeinsam genutzt werden und die [DataType](datatype.md) -Element, das den Typ der Daten in diesem Ordner darstellt. In diesem Beispiel ist der Ordner, der gegenwärtig freigegebenen Ordner Kontakte, der Besitzer user1@contoso.com ist. 
+Im folgenden Codebeispiel wird gezeigt, wie eine Anforderung zum Abrufen des Bezeichners des lokalen Ordners erstellt wird, der dem freizugebenden Ordner entspricht. Der freigegebene Ordner wird durch die SMTP-Adresse des Postfachs identifiziert, das den freizugebenden Ordner und das [DataType](datatype.md) -Element enthält, das den Typ der Daten in diesem Ordner darstellt. In diesem Beispiel ist der Ordner, der freigegeben wird, der Ordner Kontakte, der user1@contoso.com gehört. 
   
 ### <a name="code"></a>Code
 
@@ -70,8 +70,8 @@ Im folgenden Codebeispiel wird veranschaulicht, wie auf eine Anforderung an den 
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010"/>
   </soap:Header>
@@ -84,15 +84,15 @@ Im folgenden Codebeispiel wird veranschaulicht, wie auf eine Anforderung an den 
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
 Informationen zu den möglichen Werten des **DataType** -Elements finden Sie unter [DataType](datatype.md).
   
-## <a name="successful-getsharingfolder-response"></a>Erfolgreiche GetSharingFolder Antwort
+## <a name="successful-getsharingfolder-response"></a>Erfolgreiche GetSharingFolder-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **GetSharingFolder** . Das **Id** -Attribut des Elements [SharingFolderId](sharingfolderid.md) stellt den Bezeichner des lokalen Ordner in die Beziehung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetSharingFolder** -Anforderung. Das **ID-** Attribut des [SharingFolderId](sharingfolderid.md) -Elements stellt den Bezeichner des lokalen Ordners in der Freigabebeziehung dar. 
   
 ### <a name="code"></a>Code
 
@@ -107,13 +107,13 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **Get
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <GetSharingFolderResponseMessage ResponseClass="Success"
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:SharingFolderId Id="AAMkAD=" ChangeKey="AwAAA=" />
     </GetSharingFolderResponseMessage>
@@ -121,11 +121,11 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **Get
 </soap:Envelope>
 ```
 
-## <a name="getsharingfolder-error-response"></a>Fehlerantwort GetSharingFolder
+## <a name="getsharingfolder-error-response"></a>GetSharingFolder-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetSharingFolder** -Anforderung. In diesem Beispiel wird der Fehler aufgetreten ist, da die Anforderung der [SharingFolderId](sharingfolderid.md) und die [DataType](datatype.md) -Elements angegeben. Beachten Sie, dass nur ein oder andere dieser zwei Elemente, jedoch nicht beide angegeben werden kann. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetSharingFolder** -Anforderung. In diesem Beispiel ist der Fehler aufgetreten, da die Anforderung sowohl die [SharingFolderId](sharingfolderid.md) -als auch die [DataType](datatype.md) -Elemente angegeben hat. Beachten Sie, dass nur das eine oder andere dieser beiden Elemente angegeben werden kann, jedoch nicht beides. 
   
 ### <a name="code"></a>Code
 
@@ -140,13 +140,13 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetSharingFolder** -Anf
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <GetSharingFolderResponseMessage ResponseClass="Error" 
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:MessageText>Either DataType or SharedFolderId must be specified, but not both.</m:MessageText>
       <m:ResponseCode>ErrorInvalidGetSharingFolderRequest</m:ResponseCode>
       <m:DescriptiveLinkKey>0</m:DescriptiveLinkKey>

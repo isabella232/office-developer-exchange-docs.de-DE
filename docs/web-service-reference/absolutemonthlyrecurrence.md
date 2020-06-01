@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 178fa0ae-9dfc-417f-933c-d657d31c2161
 description: Das AbsoluteMonthlyRecurrence-Element stellt ein monatliches Serienmuster dar.
-ms.openlocfilehash: f4613fa71a9164c45b60a82f675959817cd4bdd5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 3176cd30a1cfe7b2310f960ce377ab7a277e795a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758357"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460435"
 ---
 # <a name="absolutemonthlyrecurrence"></a>AbsoluteMonthlyRecurrence
 
@@ -43,25 +43,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DayOfMonth](dayofmonth.md) <br/> |Beschreibt den Tag im Monat, den eine Terminserie auftritt. Der Bereich der Werte für diese Eigenschaft ist 1 und 31. Wenn dieser Wert für einen bestimmten Monat größer als die Anzahl der Tage des Monats ist, wird der letzte Tag des Monats für diese Eigenschaft verwendet.  <br/> |
-|[Intervall](interval.md) <br/> |Definiert das Intervall zwischen zwei aufeinander folgenden Terminserien. Beispielsweise tritt das **Intervall** -Element den Wert 5 hat, das Serienelement alle 5 Monate. Der gültige Wertebereich liegt zwischen 1 und 99.  <br/> |
+|[DayOfMonth](dayofmonth.md) <br/> |Beschreibt den Tag in einem Monat, an dem ein wiederkehrendes Element auftritt. Der Wertebereich für diese Eigenschaft ist 1 bis 31. Wenn dieser Wert für einen bestimmten Monat größer ist als die Anzahl der Tage im Monat, wird der letzte Tag des Monats für diese Eigenschaft angenommen.  <br/> |
+|[Intervall](interval.md) <br/> |Definiert das Intervall zwischen zwei aufeinander folgenden wiederkehrenden Elementen. Wenn das **Interval** -Element beispielsweise den Wert 5 aufweist, tritt das wiederkehrende Element alle 5 Monate auf. Der Bereich der gültigen Werte liegt zwischen 1 und 99.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Serieninformationen für wiederkehrende Aufgaben enthält.  <br/> |
-|[Serie (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Das Serienmuster für Kalenderelemente und Besprechungsanfragen enthält.  <br/> |
+|[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Enthält Serieninformationen für wiederkehrende Vorgänge.  <br/> |
+|[Serie (serietype)](recurrence-recurrencetype.md) <br/> |Enthält das Serienmuster für Kalenderelemente und Besprechungsanfragen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

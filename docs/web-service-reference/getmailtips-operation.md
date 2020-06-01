@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 025483ec-a9f3-4735-8a95-d26e30ea7974
-description: Der Vorgang GetMailTips Ruft die e-Mail-Tipps Informationen für das angegebene Postfach ab.
-ms.openlocfilehash: 15c21bef90fdc4cbc6cd65512cdc078fcdf31e60
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetMailTips-Vorgang ruft die Informationen zu den e-Mail-Infos für das angegebene Postfach ab.
+ms.openlocfilehash: 41a4bb99ee7ae4e416ec8a106968bb7869e60345
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758728"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458656"
 ---
 # <a name="getmailtips-operation"></a>GetMailTips-Vorgang
 
-Der Vorgang **GetMailTips** Ruft die e-Mail-Tipps Informationen für das angegebene Postfach ab. 
+Der **GetMailTips** -Vorgang ruft die Informationen zu den e-Mail-Infos für das angegebene Postfach ab. 
   
-## <a name="getmailtips-request-example"></a>Anforderungsbeispiel GetMailTips
+## <a name="getmailtips-request-example"></a>GetMailTips-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Der Client erstellt die Anforderung XML und sendet es an den Server. Die Anforderung identifiziert, die der Client sendet als das Postfach zum Abrufen der e-Mail-Infos für, und welche e-Mail-Infos angefordert werden. In diesem Beispiel fordert der Client an, dass alle e-Mail-Infos für das ausgewählte Postfach zurückgegeben werden.
+Der Client erstellt den Anforderungs-XML-Code und sendet ihn an den Server. Die Anforderung identifiziert, wen der Client sendet, das Postfach, für das die e-Mail-Tipps abgerufen werden sollen und welche e-Mail-Tipps angefordert werden. In diesem Beispiel fordert der Client an, dass alle e-Mail-Tipps für das ausgewählte Postfach zurückgegeben werden.
   
 ### <a name="code"></a>Code
 
@@ -36,12 +36,12 @@ Der Client erstellt die Anforderung XML und sendet es an den Server. Die Anforde
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
         xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
         xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
-        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"> 
+        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"> 
   <soap:Header> 
     <t:RequestServerVersion Version="Exchange2010" /> 
   </soap:Header> 
   <soap:Body> 
-    <GetMailTips xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"> 
+    <GetMailTips xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"> 
       <SendingAs> 
         <t:EmailAddress> user1@contoso.com </t:EmailAddress> 
         <t:RoutingType>SMTP</t:RoutingType> 
@@ -64,17 +64,17 @@ Die folgenden Elemente sind in der Anforderung enthalten:
   
 - [GetMailTips](getmailtips.md)
     
-- [SendingAs](sendingas.md)
+- [Absender](sendingas.md)
     
-- [Empfänger (ArrayOfRecipientsType)](recipients-arrayofrecipientstype.md)
+- [Recipients (ArrayOfRecipientsType)](recipients-arrayofrecipientstype.md)
     
 - [MailTipsRequested](mailtipsrequested.md)
     
-## <a name="successful-getmailtips-response-example"></a>Erfolgreiche GetMailTips antwortbeispiel
+## <a name="successful-getmailtips-response-example"></a>Erfolgreiches GetMailTips-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende (SOAP = Simple Object Access Protocol)-Body-Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **GetMailTips** . 
+Das folgende Simple Object Access Protocol (SOAP) Body-Beispiel zeigt eine erfolgreiche Antwort auf die **GetMailTips** -Anforderung. 
   
 ### <a name="code"></a>Code
 
@@ -83,37 +83,37 @@ Das folgende (SOAP = Simple Object Access Protocol)-Body-Beispiel zeigt eine erf
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"> 
   <s:Header> 
     <h:ServerVersionInfo MajorVersion="14" MinorVersion="0" MajorBuildNumber="536" MinorBuildNumber="0" Version="Exchange2010" 
-xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"/> 
   </s:Header> 
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"> 
-    <GetMailTipsResponse ResponseClass="Success" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"> 
+    <GetMailTipsResponse ResponseClass="Success" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"> 
       <ResponseCode>NoError</ResponseCode> 
       <ResponseMessages> 
         <MailTipsResponseMessageType ResponseClass="Success"> 
         <ResponseCode>NoError</ResponseCode> 
-        <m:MailTips xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"> 20 / 29 [MS-OXWMT] — v20100517 Mail Tips Web Service Extensions Copyright © 2010 Microsoft Corporation. Release: Monday, May 17, 2010 
-          <t:RecipientAddress xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"> 
+        <m:MailTips xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"> 20 / 29 [MS-OXWMT] — v20100517 Mail Tips Web Service Extensions Copyright © 2010 Microsoft Corporation. Release: Monday, May 17, 2010 
+          <t:RecipientAddress xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"> 
           <t:Name/> 
           <t:EmailAddress>user2@contoso.com</t:EmailAddress> 
           <t:RoutingType>SMTP</t:RoutingType> 
           </t:RecipientAddress> 
-          <t:PendingMailTips xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/> 
-          <t:OutOfOffice xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"> 
+          <t:PendingMailTips xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/> 
+          <t:OutOfOffice xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"> 
             <t:ReplyBody> 
               <t:Message/> 
             </t:ReplyBody> 
           </t:OutOfOffice> 
-          <t:MailboxFull xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">false</t:MailboxFull> 
-          <t:CustomMailTip xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">Hello World Mailtips</t:CustomMailTip> 
-          <t:TotalMemberCount xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">1</t:TotalMemberCount> 
-          <t:ExternalMemberCount xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">0</t:ExternalMemberCount> 
-          <t:MaxMessageSize xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">10485760</t:MaxMessageSize> 
-          <t:DeliveryRestricted xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">false</t:DeliveryRestricted> 
-          <t:IsModerated xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">false</t:IsModerated> 
-          <t:InvalidRecipient xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">false</t:InvalidRecipient> 
+          <t:MailboxFull xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">false</t:MailboxFull> 
+          <t:CustomMailTip xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">Hello World Mailtips</t:CustomMailTip> 
+          <t:TotalMemberCount xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">1</t:TotalMemberCount> 
+          <t:ExternalMemberCount xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">0</t:ExternalMemberCount> 
+          <t:MaxMessageSize xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">10485760</t:MaxMessageSize> 
+          <t:DeliveryRestricted xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">false</t:DeliveryRestricted> 
+          <t:IsModerated xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">false</t:IsModerated> 
+          <t:InvalidRecipient xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">false</t:InvalidRecipient> 
         </m:MailTips> 
         </MailTipsResponseMessageType> 
       </ResponseMessages> 
@@ -122,13 +122,13 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a>Antwortelemente
+### <a name="response-elements"></a>Response-Elemente
 
-Die folgenden Elemente werden in der Antwort enthalten:
+Die Antwort enthält die folgenden Elemente:
   
 - [ResponseCode](responsecode.md)
     
-- [E-Mail-Infos](mailtips.md)
+- [E-Mail-Info](mailtips.md)
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 267fe5aa-f9b1-4d4c-ac11-0f2e50ec2627
-description: Das DataType-Element beschreibt die Art der Daten, die von einem freigegebenen Ordner gemeinsam verwendet werden.
-ms.openlocfilehash: b1adac8e3029abd64df96ab1560706babe4b12f2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DataType-Element beschreibt den Typ der Daten, die von einem freigegebenen Ordner gemeinsam verwendet werden.
+ms.openlocfilehash: a7df8d38e10f0ab31038d790d8f35208d1be66d5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757862"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458831"
 ---
 # <a name="datatype"></a>DataType
 
-Das **DataType** -Element beschreibt die Art der Daten, die von einem freigegebenen Ordner gemeinsam verwendet werden. 
+Das **DataType** -Element beschreibt den Typ der Daten, die von einem freigegebenen Ordner gemeinsam verwendet werden. 
   
 ```xml
 <DataType>Calendar or Contacts</DataType>
@@ -45,11 +45,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetSharingFolder](getsharingfolder.md) <br/> |Definiert eine Anforderung an den lokalen Ordner Bezeichner eines angegebenen freigegebenen Ordners abzurufen.  <br/> |
+|[GetSharingFolder](getsharingfolder.md) <br/> |Definiert eine Anforderung zum Abrufen der lokalen Ordner-ID eines angegebenen freigegebenen Ordners.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Die folgende Tabelle enthält die möglichen Werte für die **DataType** -Element. 
+In der folgenden Tabelle sind die möglichen Werte für das **DataType** -Element aufgeführt. 
   
 **DataType-Elementwerte**
 
@@ -58,17 +58,17 @@ Die folgende Tabelle enthält die möglichen Werte für die **DataType** -Elemen
 |Kalender  <br/> |Gibt an, dass der freigegebene Ordner Kalenderinformationen enthält.  <br/> |
 |Kontakte  <br/> |Gibt an, dass der freigegebene Ordner Kontaktinformationen enthält.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

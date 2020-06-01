@@ -1,5 +1,5 @@
 ---
-title: DaysOfWeek (DayOfWeekType)
+title: DaysOfWeek (dayofweektype)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: ba8f990d-d37d-403d-b31f-55e5208c8ad5
-description: Das DaysOfWeek-Element beschreibt die Wochentage, die in Artikel Serienmuster verwendet werden.
-ms.openlocfilehash: a7afb0aeb650284739d559164f06590fc5266c57
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DaysOfWeek-Element beschreibt Wochentage, die in Element Serien Mustern verwendet werden.
+ms.openlocfilehash: 44552350679df1fec3d237d9b09f1a5feb9cc4b6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757888"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458824"
 ---
-# <a name="daysofweek-dayofweektype"></a>DaysOfWeek (DayOfWeekType)
+# <a name="daysofweek-dayofweektype"></a>DaysOfWeek (dayofweektype)
 
-Das **DaysOfWeek** -Element beschreibt die Wochentage, die in Artikel Serienmuster verwendet werden. 
+Das **DaysOfWeek** -Element beschreibt Wochentage, die in Element Serien Mustern verwendet werden. 
   
 ```xml
 <DaysOfWeek/>
 ```
 
-**DayOfWeekType**
+**Dayofweektype**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -45,8 +45,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |Wird ein relativer jährliches Serienmuster beschrieben.  <br/> |
-|[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |Beschreibt ein monatliches Serienmuster relative.  <br/> |
+|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |Beschreibt ein relatives jährliches Serienmuster.  <br/> |
+|[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |Beschreibt ein relatives monatliches Serienmuster.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
@@ -59,19 +59,19 @@ Ein Textwert ist erforderlich. Im Folgenden sind die möglichen Werte aufgeführ
 - Donnerstag    
 - Freitag    
 - Samstag    
-- Tag (in der TimeChangePatternTypes nicht verwendet)    
-- Weekday (in der TimeChangePatternTypes nicht verwendet)    
+- Tag (nicht in der TimeChangePatternTypes verwendet)    
+- Wochentag (wird nicht in der TimeChangePatternTypes verwendet)    
 - WeekendDay (in der TimeChangePatternTypes nicht verwendet)
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0f2cbb05-338d-4302-8871-a06e78b33f98
-description: Das InternalDomains-Element identifiziert in der Liste von internen SMTP-Domänen der Organisation.
-ms.openlocfilehash: f37a31f4348a7eb0024656489f249dec349bc67b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das InternalDomains-Element gibt die Liste der internen SMTP-Domänen der Organisation an.
+ms.openlocfilehash: ec7ef2d72ae922c751f8f50b72ff7d6b31b212ca
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829953"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459966"
 ---
 # <a name="internaldomains-smtpdomainlist"></a>InternalDomains (SmtpDomainList)
 
-Das **InternalDomains** -Element identifiziert in der Liste von internen SMTP-Domänen der Organisation. 
+Das **InternalDomains** -Element gibt die Liste der internen SMTP-Domänen der Organisation an. 
   
 ```XML
 <InternalDomains>
@@ -42,30 +42,30 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Domain](domain.md) <br/> |Gibt eine einzelne SMTP-Domäne.  <br/> |
+|[Domäne](domain.md) <br/> |Identifiziert eine einzelne SMTP-Domäne.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |Enthält Konfigurationsinformationen für den e-Mail-Dienst Tipps Service.  <br/> |
-|[ProtectionRulesConfiguration](protectionrulesconfiguration.md) <br/> |Enthält Konfigurationsinformationen für den Schutz Regeln Dienst Service.  <br/> |
+|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |Enthält Dienstkonfigurationsinformationen für den e-Mail-Spitzen Dienst.  <br/> |
+|[ProtectionRulesConfiguration](protectionrulesconfiguration.md) <br/> |Enthält Dienstkonfigurationsinformationen für den Schutz Regeldienst.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element ist erforderlich. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

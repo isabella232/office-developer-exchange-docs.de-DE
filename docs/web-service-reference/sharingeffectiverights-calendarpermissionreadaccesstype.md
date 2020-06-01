@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b519f642-a9ef-4300-92e6-ed8202855fde
-description: Das SharingEffectiveRights-Element gibt an, die Berechtigungen, die der Benutzer für die Kalenderdaten verfügt, die gemeinsam genutzt wird.
-ms.openlocfilehash: e7d2aa061650c33d27de042ae8a6348f9a7d3430
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SharingEffectiveRights-Element gibt die Berechtigungen an, die der Benutzer für die Kalenderdaten verwendet, die freigegeben werden.
+ms.openlocfilehash: 5581e9cc001608a124ae94e69eba836f6fd98520
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831480"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458579"
 ---
 # <a name="sharingeffectiverights-calendarpermissionreadaccesstype"></a>SharingEffectiveRights (CalendarPermissionReadAccessType)
 
-Das **SharingEffectiveRights** -Element gibt an, die Berechtigungen, die der Benutzer für die Kalenderdaten verfügt, die gemeinsam genutzt wird. 
+Das **SharingEffectiveRights** -Element gibt die Berechtigungen an, die der Benutzer für die Kalenderdaten verwendet, die freigegeben werden. 
   
 ```XML
 <SharingEffectiveRights>None | TimeOnly | TimeAndSubjectAndLocation | FullDetails</SharingEffectiveRights>
@@ -44,28 +44,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner, der in erster Linie Kalenderelemente enthält.  <br/> |
+|[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner dar, der in erster Linie Kalenderelemente enthält.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Die folgende Tabelle enthält die möglichen Werte für das **SharingEffectiveRights** -Element. 
+In der folgenden Tabelle sind die möglichen Werte für das **SharingEffectiveRights** -Element aufgeführt. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Keine  <br/> |Gibt an, dass der Benutzer die Berechtigung zum Anzeigen von Elementen im Kalender nicht vorhanden ist.  <br/> |
-|TimeOnly  <br/> |Gibt an, dass der Benutzer die Berechtigung zum Anzeigen der nur Frei/Gebucht-Zeit im Kalender hat.  <br/> |
-|TimeAndSubjectAndLocation  <br/> |Gibt an, dass der Benutzer über die Berechtigung zum Anzeigen von Frei/Gebucht-Zeit in den Kalender und den Betreff und Ort von Terminen verfügt.  <br/> |
-|FullDetails  <br/> |Gibt an, dass der Benutzer die Berechtigung zum Anzeigen aller Elemente im Kalender, einschließlich der Frei/Gebucht-Zeit und Betreff, Ort und Details von Terminen verfügt.  <br/> |
+|Keine  <br/> |Gibt an, dass der Benutzer nicht über die Berechtigung zum Anzeigen von Elementen im Kalender verfügt.  <br/> |
+|Nur einmal  <br/> |Gibt an, dass der Benutzer berechtigt ist, nur die Frei/Gebucht-Zeit im Kalender anzuzeigen.  <br/> |
+|TimeAndSubjectAndLocation  <br/> |Gibt an, dass der Benutzer über die Berechtigung zum Anzeigen der Frei/Gebucht-Zeit im Kalender sowie Betreff und Ort von Terminen verfügt.  <br/> |
+|FullDetails  <br/> |Gibt an, dass der Benutzer über die Berechtigung zum Anzeigen aller Elemente im Kalender verfügt, einschließlich Frei/Gebucht-Zeit und Betreff, Ort und Details von Terminen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

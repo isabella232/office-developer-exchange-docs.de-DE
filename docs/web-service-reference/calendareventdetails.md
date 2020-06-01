@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2dca0192-b91b-4154-aa09-84da74e875e9
-description: Das Element CalendarEventDetails enthält zusätzliche Informationen zu einem Kalenderereignis.
-ms.openlocfilehash: 8df4f3ed4f66c7dcba00e1f0c5b0c383075da0a0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CalendarEventDetails-Element stellt zusätzliche Informationen zu einem Calendar-Ereignis bereit.
+ms.openlocfilehash: 3e1dbba00bce4a1fdc53f3330527764c516890ab
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757523"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459069"
 ---
 # <a name="calendareventdetails"></a>CalendarEventDetails
 
-Das Element **CalendarEventDetails** enthält zusätzliche Informationen zu einem Kalenderereignis. 
+Das **CalendarEventDetails** -Element stellt zusätzliche Informationen zu einem Calendar-Ereignis bereit. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -63,36 +63,36 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ID](id.md) <br/> |Stellt die Eintrags-ID des Kalenderelements an.  <br/> |
-|[Betreff (CalendarEventDetails)](subject-calendareventdetails.md) <br/> |Stellt den Betreff des Kalenderelements an.  <br/> |
-|[Speicherort (CalendarEventDetails)](location-calendareventdetails.md) <br/> |Stellt die Position des Kalenderelements.  <br/> |
-|[IsMeeting (CalendarEventDetails)](ismeeting-calendareventdetails.md) <br/> |Gibt an, ob das Kalenderereignis gehört zu einer Besprechung oder eines Termins.  <br/> |
-|[IsRecurring (CalendarEventDetails)](isrecurring-calendareventdetails.md) <br/> |Gibt an, ob das Kalenderereignis eine Instanz eines sich wiederholenden Kalenderelements oder ein einzelnes Kalenderelement ist.  <br/> |
-|[IsException](isexception.md) <br/> |Gibt an, ob eine Instanz eines sich wiederholenden Kalenderelements aus der Master-Shapes geändert wird.  <br/> |
-|[IsReminderSet](isreminderset.md) <br/> |Gibt an, ob eine Erinnerung für das Ereignis festgelegt wurde.  <br/> |
+|[ID](id.md) <br/> |Stellt die Eintrags-ID des Kalenderelements dar.  <br/> |
+|[Betreff (CalendarEventDetails)](subject-calendareventdetails.md) <br/> |Stellt den Betreff des Kalenderelements dar.  <br/> |
+|[Speicherort (CalendarEventDetails)](location-calendareventdetails.md) <br/> |Stellt das Feld Location des Kalenderelements dar.  <br/> |
+|[Ismeeting (CalendarEventDetails)](ismeeting-calendareventdetails.md) <br/> |Gibt an, ob es sich bei dem Kalenderereignis um eine Besprechung oder einen Termin handelt.  <br/> |
+|[Iswiederkehr (CalendarEventDetails)](isrecurring-calendareventdetails.md) <br/> |Gibt an, ob das Kalenderereignis eine Instanz eines wiederkehrenden Kalenderelements oder eines einzelnen Kalenderelements ist.  <br/> |
+|[Isexception](isexception.md) <br/> |Gibt an, ob eine Instanz eines wiederkehrenden Kalenderelements aus dem Master geändert wird.  <br/> |
+|[Reminder](isreminderset.md) <br/> |Gibt an, ob für das Calendar-Ereignis eine Erinnerung festgelegt wurde.  <br/> |
 |[IsPrivate](isprivate.md) <br/> |Gibt an, ob das Kalenderelement privat ist.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CalendarEvent](calendarevent.md) <br/> |Stellt eine einzelne Kalender Element vorkommen.  <br/> Es folgt der 2.0 XPath-Ausdruck, der dieses Element:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
+|[CalendarEvent](calendarevent.md) <br/> |Stellt ein eindeutiges Kalenderelement vorkommen dar.  <br/> Im folgenden finden Sie den XPath 2,0-Ausdruck für dieses Element:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-All die untergeordneten Elemente sind in der Reihenfolge aufgeführt, in denen sie anfallen. 
+Alle untergeordneten Elemente werden in der Reihenfolge aufgeführt, in der Sie auftreten. 
   
-Wenn das Element [IsPrivate](isprivate.md) auf **true**festgelegt ist, werden alle anderen Elemente im [CalendarEventDetails](calendareventdetails.md) -Element nicht in der Antwort zurückgegeben. 
+Wenn das [IsPrivate](isprivate.md) -Element auf **true**festgelegt ist, werden alle anderen Elemente im [CalendarEventDetails](calendareventdetails.md) -Element nicht in der Antwort zurückgegeben. 
   
-GetUserAvailability-Vorgang gibt keine Anrufer detaillierte Informationen zurück, wenn der Aufrufer Lesezugriff auf Kalender des Zielbenutzers verfügt. Sie können mithilfe der Exchange-Verwaltungsshell Zugriffsberechtigungen festlegen.
+Der GetUserAvailability-Vorgang gibt keine detaillierten Anrufer-Informationen zurück, es sei denn, der Aufrufer verfügt über Lesezugriff auf den Kalender des Zielbenutzers. Sie können Zugriffsberechtigungen mithilfe der Exchange-Verwaltungsshell festlegen.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -106,5 +106,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

@@ -1,5 +1,5 @@
 ---
-title: Status (UM-Webdienst - SetOofStatus)
+title: Status (um-Webdienst – SetOofStatus)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,21 +10,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 893bcff1-ccdc-493f-b366-ce8a68c813bd
-description: Status-Element definiert den Wert in der Anforderung einer SetOofStatus-Operation (UM-Webdienst) verwenden.
-ms.openlocfilehash: 57b4f8fe1a64341b1c2ae0a06bc98f1c9cfd28c4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Status-Element definiert den Wert, der in einer SetOofStatus-Vorgangsanforderung (um-Webdienst) verwendet werden soll.
+ms.openlocfilehash: 865152baf28c22578664e16db2dcd5f82a04af98
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831583"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459980"
 ---
-# <a name="status-um-web-service---setoofstatus"></a>Status (UM-Webdienst - SetOofStatus)
+# <a name="status-um-web-service---setoofstatus"></a>Status (um-Webdienst – SetOofStatus)
 
-**Status** -Element definiert den Wert in einer Anforderung [SetOofStatus-Vorgang (UM-Webdienst)](setoofstatus-operation-um-web-service.md) verwenden. 
+Das **Status** -Element definiert den Wert, der in einer [SetOofStatus-Vorgangsanforderung (um-Webdienst)](setoofstatus-operation-um-web-service.md) verwendet werden soll. 
   
-[SetOofStatus (UM-Webdienst)](setoofstatus-um-web-service.md)
+[SetOofStatus (um-Webdienst)](setoofstatus-um-web-service.md)
   
-[Status (UM-Webdienst - SetOofStatus)](status-um-web-servicesetoofstatus.md)
+[Status (um-Webdienst – SetOofStatus)](status-um-web-servicesetoofstatus.md)
   
 ```xml
 <SetOofStatus>
@@ -32,7 +32,7 @@ ms.locfileid: "19831583"
 </SetOofStatus>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -49,28 +49,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SetOofStatus (UM-Webdienst)](setoofstatus-um-web-service.md) <br/> |Definiert eine Anforderung an den Unified Messaging Out of Office (OOF) Status für den Benutzer festlegen, die die Anforderung stellt.  <br/> |
+|[SetOofStatus (um-Webdienst)](setoofstatus-um-web-service.md) <br/> |Definiert eine Anforderung zum Festlegen des Status von Unified Messaging Abwesenheit (Out of Office, OOF) für den Benutzer, der die Anforderung stellt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein boolescher Wert ist erforderlich. Im Folgenden sind die möglichen Werte aufgeführt:
   
-- True
+- Wahr
     
-- False
+- Falsch
     
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[SetOofStatus-Vorgang (UM-Webdienst)](setoofstatus-operation-um-web-service.md)
+[SetOofStatus-Vorgang (um-Webdienst)](setoofstatus-operation-um-web-service.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bb15f9a7-8ea5-4765-9877-762c3f98bf50
-description: Das Timeout-Element gibt die Zeitdauer, bevor ein Pullabonnement vom Server ein Timeout aufgetreten ist.
-ms.openlocfilehash: 23b210dcdd87f2388aecec246068f12ec6c69a78
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Timeout-Element gibt die Zeitdauer vor dem Timeout eines Pullabonnements durch den Server an.
+ms.openlocfilehash: b5b0e77d794080cd8e0da1e14acf4cb059b80b08
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839186"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460281"
 ---
 # <a name="timeout-duration"></a>Timeout (Dauer)
 
-Das **Timeout** -Element gibt die Zeitdauer, bevor ein Pullabonnement vom Server ein Timeout aufgetreten ist. 
+Das **Timeout** -Element gibt die Zeitdauer vor dem Timeout eines Pullabonnements durch den Server an. 
   
 ```XML
 <Timeout></Timeout>
@@ -42,19 +42,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **Timeout** -Element ist die Zeitdauer in Minuten ein, bevor ein Pullabonnement vom Server ein Timeout aufgetreten ist. Der Mindestwert ist 1. Der Höchstwert ist 1440. 
+Der Textwert des **Timeout** -Elements ist die Zeitdauer in Minuten, bevor ein Pullabonnement vom Server überschritten wird. Der Minimalwert ist 1; der Höchstwert ist 1440. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

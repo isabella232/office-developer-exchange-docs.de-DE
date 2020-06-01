@@ -1,5 +1,5 @@
 ---
-title: GetUMProperties (UM-Webdienst)
+title: GetUMProperties (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 19873b72-ec12-4811-ae5f-6b61f2dbf0cc
-description: Das GetUMProperties-Element definiert die Anforderung einer GetUMProperties-Operation (UM-Webdienst).
-ms.openlocfilehash: bfae288c341bc5d3605282cf78393ef7dceed494
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetUMProperties-Element definiert eine GetUMProperties-Vorgangsanforderung (um-Webdienst).
+ms.openlocfilehash: 2cab45ec6b1058f459b65992cf7345f1be171ce7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829680"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459132"
 ---
-# <a name="getumproperties-um-web-service"></a>GetUMProperties (UM-Webdienst)
+# <a name="getumproperties-um-web-service"></a>GetUMProperties (um-Webdienst)
 
-Das **GetUMProperties** -Element definiert eine Anforderung [GetUMProperties-Vorgang (UM-Webdienst)](getumproperties-operation-um-web-service.md) . 
+Das **GetUMProperties** -Element definiert eine [GetUMProperties-Vorgangsanforderung (um-Webdienst)](getumproperties-operation-um-web-service.md) . 
   
-[GetUMProperties (UM-Webdienst)](getumproperties-um-web-service.md)
+[GetUMProperties (um-Webdienst)](getumproperties-um-web-service.md)
   
 ```xml
 <GetUMProperties />
@@ -49,18 +49,18 @@ Keine.
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[GetUMProperties-Vorgang (UM-Webdienst)](getumproperties-operation-um-web-service.md)
+[GetUMProperties-Vorgang (um-Webdienst)](getumproperties-operation-um-web-service.md)
 

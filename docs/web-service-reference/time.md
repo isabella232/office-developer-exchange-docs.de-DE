@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: c4b98be7-141c-4ba8-97ef-9ad1ed19f61f
-description: Time-Element stellt die Tageszeit Übergang zu und von Standardzeit und Sommerzeit einer Zeitzone.
-ms.openlocfilehash: 716487fb7ed64dbaa6fa97caf1ea608e4673d2ef
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Time-Element stellt die Übergangszeit von Tag zu und von Standardzeit und Sommerzeit dar.
+ms.openlocfilehash: 97c89fbcbdb85fcdd4d32a1d44075ac42adef053
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839188"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460295"
 ---
-# <a name="time"></a>Zeit
+# <a name="time"></a>Time
 
-**Time** -Element stellt die Tageszeit Übergang zu und von Standardzeit und Sommerzeit einer Zeitzone. 
+Das **time** -Element stellt die Übergangszeit von Tag zu und von Standardzeit und Sommerzeit dar. 
   
 ```xml
 <Time>...</Time>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,22 +44,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StandardTime](standardtime.md) <br/> | Stellt einen Abstand von dem Zeitpunkt relativ zur koordinierten Weltzeit (UTC) dargestellt durch das Element [Bias (UTC)](bias-utc.md) . Dieses Element enthält auch Informationen über den Wechsel zur Standardzeit von Sommerzeit Regionen, in dem Sommerzeit beobachtet wird.  <br/><br/>  Es folgen die XPath-Ausdrücke auf das [StandardTime](standardtime.md) -Element: <br/> <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/StandardTime`<br/> <br/>  `/GetUserAvailabilityRequest/TimeZone/StandardTime` <br/> |
-|[DaylightTime](daylighttime.md) <br/> | Stellt einen Abstand von dem Zeitpunkt relativ zur UTC, dargestellt durch das Element [Bias (UTC)](bias-utc.md) Regionen, in dem Sommerzeit beobachtet wird. Dieses Element enthält auch Informationen dazu, wann der Übergang von Normalzeit zu Sommerzeit auftritt.  <br/><br/>  Es folgen die XPath-Ausdrücke auf das [DaylightTime](daylighttime.md) -Element:  <br/><br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/DaylightTime` <br/><br/>  `/GetUserAvailabilityRequest/TimeZone/DaylightTime` <br/> |
+|[Standard Time](standardtime.md) <br/> | Stellt einen Offset von der Zeit relativ zur koordinierten Weltzeit (Coordinated Universal Time, UTC) dar, dargestellt durch das Element [Bias (UTC)](bias-utc.md) . Dieses Element enthält auch Informationen zum Übergang zur Standardzeit von Sommerzeit in Regionen, in denen die Sommerzeit beobachtet wird.  <br/><br/>  Im folgenden finden Sie die XPath-Ausdrücke für das [Standard](standardtime.md) Time-Element: <br/> <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/StandardTime`<br/> <br/>  `/GetUserAvailabilityRequest/TimeZone/StandardTime` <br/> |
+|[DaylightTime](daylighttime.md) <br/> | Stellt einen Offset von der Zeit relativ zu UTC dar, dargestellt durch das [Bias-Element (UTC)](bias-utc.md) in Regionen, in denen die Sommerzeit beobachtet wird. Dieses Element enthält auch Informationen darüber, wann der Übergang zur Sommerzeit aus der Standardzeit erfolgt.  <br/><br/>  Im folgenden finden Sie die XPath-Ausdrücke für das [Daylight](daylighttime.md) -Element:  <br/><br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/DaylightTime` <br/><br/>  `/GetUserAvailabilityRequest/TimeZone/DaylightTime` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert darstellt, Stunden, Minuten und Sekunden im folgenden Format: hh: mm:.
+Der Wert Text stellt Stunden, Minuten und Sekunden im folgenden Format dar: hh: mm: SS.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-**Time** -Element im [DaylightTime](daylighttime.md) -Element auftritt, stellt die Tageszeit des Übergangs von Sommerzeit auf Normalzeit dar. [Time](time.md) -Element im [StandardTime](standardtime.md) -Element auftritt, stellt die Tageszeit des Übergangs von der Standardzeit zur Sommerzeit dar. 
+Wenn das **time** -Element im [Sommer](daylighttime.md) Zeitelement auftritt, stellt dies die Tageszeit dar, zu der der Übergang von Sommerzeit zu Standardzeit erfolgt. Wenn das [time](time.md) -Element im [Standard](standardtime.md) Time-Element auftritt, stellt dies die Tageszeit dar, zu der der Übergang von Standardzeit zu Sommerzeit erfolgt. 
   
-Dieses Element hat eine minimale Vorkommen von 0 (null) und eine maximale Vorkommen eines.
+Dieses Element hat ein Mindestvorkommen von 0 (null) und ein Maximum des Auftretens von 1.
   
 ## <a name="example"></a>Beispiel
 
-Der folgende Teil einer Anforderung stellt eine Übergangszeit 2 Uhr von der Standardzeit zur Sommerzeit.
+Der folgende Teil einer Anforderung stellt eine Übergangszeit von 2 Uhr dar. von Standardzeit zu Sommerzeit.
   
 ```xml
 <StandardTime>
@@ -71,11 +71,11 @@ Der folgende Teil einer Anforderung stellt eine Übergangszeit 2 Uhr von der Sta
 </StandardTime
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -83,5 +83,5 @@ Der folgende Teil einer Anforderung stellt eine Übergangszeit 2 Uhr von der Sta
 ## <a name="see-also"></a>Siehe auch
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)
-- [Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

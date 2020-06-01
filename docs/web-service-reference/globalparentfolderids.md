@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8f5fcbcb-05ed-462a-99cf-a6b112a4aef6
-description: Das GlobalParentFolderIds-Element gibt den Bezeichner der globalen übergeordneten Ordner.
-ms.openlocfilehash: b0ff9ab00f3e46351b5a2db9bc4b6282fa4385cd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GlobalParentFolderIds-Element gibt die Bezeichner der globalen übergeordneten Ordner an.
+ms.openlocfilehash: 11c520fa0f4a1ed6d6c9d694b407e39cd036b9cd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829747"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459097"
 ---
 # <a name="globalparentfolderids"></a>GlobalParentFolderIds
 
-Das **GlobalParentFolderIds** -Element gibt den Bezeichner der globalen übergeordneten Ordner. 
+Das **GlobalParentFolderIds** -Element gibt die Bezeichner der globalen übergeordneten Ordner an. 
   
 ```XML
 <GlobalParentFolderIds>
@@ -39,8 +39,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Enthält den Schlüssel-ID und Ändern eines Ordners.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Bezeichnet die Ordner, die nach Namen verwiesen werden können.  <br/> |
+|[FolderId](folderid.md) <br/> |Enthält den Bezeichner und den Änderungsschlüssel eines Ordners.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifiziert Ordner, auf die über den Namen verwiesen werden kann.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -48,19 +48,19 @@ Keine.
 |:-----|:-----|
 |[Unterhaltung (ConversationType)](conversation-conversationtype.md) <br/> |Stellt eine einfache Unterhaltung dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 680173e1-e916-466b-b573-5a3182316345
-description: Der Vorgang GetServerTimeZones zurückgegeben Informationen aus Zeitzonendefinitionen, die auf einem Exchange-Server zur Verfügung stehen.
-ms.openlocfilehash: 9b202d510a599c9082d075228be4c479a2086753
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetServerTimeZones-Vorgang gibt Informationen aus den Zeitzonendefinitionen zurück, die auf einem Exchange-Server verfügbar sind.
+ms.openlocfilehash: 1afe7fe13501af4a14f72c731703fe41e1f33049
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758802"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460540"
 ---
 # <a name="getservertimezones-operation"></a>GetServerTimeZones-Vorgang
 
-Der Vorgang **GetServerTimeZones** zurückgegeben Informationen aus Zeitzonendefinitionen, die auf einem Exchange-Server zur Verfügung stehen. 
+Der **GetServerTimeZones** -Vorgang gibt Informationen aus den Zeitzonendefinitionen zurück, die auf einem Exchange-Server verfügbar sind. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der Vorgang **GetServerTimeZones** können die SOAP-Header, die aufgeführt und in der folgenden Tabelle beschrieben. 
+Der **GetServerTimeZones** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -33,11 +33,11 @@ Der Vorgang **GetServerTimeZones** können die SOAP-Header, die aufgeführt und 
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="getservertimezones-request-examples"></a>GetServerTimeZones-anforderungsbeispiele
+## <a name="getservertimezones-request-examples"></a>GetServerTimeZones-Anforderungs Beispiele
 
-### <a name="getting-the-name-and-identifier-of-each-time-zone"></a>Abrufen der Namen und Bezeichner der einzelnen Zeitzonen
+### <a name="getting-the-name-and-identifier-of-each-time-zone"></a>Aufrufen des Namens und der ID jeder Zeitzone
 
-Im folgenden Codebeispiel wird veranschaulicht, wie die Namen und Bezeichner für die Zeitzonen Eastern Standard Time und Pazifik Normalzeit abgerufen.
+Im folgenden Codebeispiel wird gezeigt, wie der Name und der Bezeichner für die Zeit Zonen Eastern Standard Time und Pacific Standard Time abgerufen werden.
   
 ### <a name="code"></a>Code
 
@@ -45,8 +45,8 @@ Im folgenden Codebeispiel wird veranschaulicht, wie die Namen und Bezeichner fü
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010"/>
   </soap:Header>
@@ -61,13 +61,13 @@ Im folgenden Codebeispiel wird veranschaulicht, wie die Namen und Bezeichner fü
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Jedes Element [Id (TimeZone)](id-timezone.md) enthält den Bezeichner des einer Zeitzonendefinition angefordert wird. Um die Informationen für alle Zeitzonen anzufordern, ausgelassen werden Sie, das [Ids](ids.md) -Element aus der Anforderung. 
+Jedes [ID-Element (TimeZone)](id-timezone.md) enthält den Bezeichner einer Zeitzonendefinition, die angefordert wird. Wenn Sie Informationen zu allen Zeitzonen anfordern möchten, lassen Sie das [IDs](ids.md) -Element aus der Anforderung weglassen. 
   
-### <a name="getting-the-full-definition-of-each-time-zone"></a>Erste vollständige Definition der einzelnen Zeitzonen
+### <a name="getting-the-full-definition-of-each-time-zone"></a>Aufrufen der vollständigen Definition jeder Zeitzone
 
-Im folgenden Codebeispiel wird veranschaulicht, wie die Vollzeit Zone Definition für die Zeitzone Eastern Standard Time abgerufen.
+Im folgenden Codebeispiel wird gezeigt, wie Sie die voll Zeitzonendefinition für die Zeit Zeitzone Eastern Standard Time abrufen.
   
 ### <a name="code"></a>Code
 
@@ -75,8 +75,8 @@ Im folgenden Codebeispiel wird veranschaulicht, wie die Vollzeit Zone Definition
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010"/>
   </soap:Header>
@@ -90,15 +90,15 @@ Im folgenden Codebeispiel wird veranschaulicht, wie die Vollzeit Zone Definition
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Jedes Element [Id (TimeZone)](id-timezone.md) enthält den Bezeichner des einer Zeitzonendefinition angefordert wird. Um die Informationen für alle Zeitzonen anzufordern, ausgelassen werden Sie, das [Ids](ids.md) -Element aus der Anforderung. 
+Jedes [ID-Element (TimeZone)](id-timezone.md) enthält den Bezeichner einer Zeitzonendefinition, die angefordert wird. Wenn Sie Informationen zu allen Zeitzonen anfordern möchten, lassen Sie das [IDs](ids.md) -Element aus der Anforderung weglassen. 
   
-## <a name="getservertimezones-response-examples"></a>Beispiele für GetServerTimeZones Antwort
+## <a name="getservertimezones-response-examples"></a>GetServerTimeZones-Antwort Beispiele
 
-### <a name="receiving-the-time-zone-name-and-identifier-only"></a>Die Zeitzonennamen und Bezeichner empfangen nur
+### <a name="receiving-the-time-zone-name-and-identifier-only"></a>Empfangen des Zeitzonennamens und des Bezeichners
 
-Das folgende Beispiel einer Antwort **GetServerTimeZones** zeigt eine erfolgreiche Antwort auf eine **GetServerTimeZones** an, in der das **ReturnFullTimeZoneData** -Attribut auf **false**festgelegt wurde. Die Antwort enthält den Namen und Bezeichner für die Zeitzonen Eastern Standard Time und Pazifik Normalzeit.
+Das folgende Beispiel einer **GetServerTimeZones** -Antwort zeigt eine erfolgreiche Antwort auf eine **GetServerTimeZones** -Anforderung, in der das **ReturnFullTimeZoneData** -Attribut auf **false**festgelegt wurde. Die Antwort enthält den Namen und den Bezeichner für die Zeit Zonen Eastern Standard Time und Pacific Standard Time.
   
 ### <a name="code"></a>Code
 
@@ -113,11 +113,11 @@ Das folgende Beispiel einer Antwort **GetServerTimeZones** zeigt eine erfolgreic
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetServerTimeZonesResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetServerTimeZonesResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetServerTimeZonesResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</ResponseCode>
@@ -132,9 +132,9 @@ Das folgende Beispiel einer Antwort **GetServerTimeZones** zeigt eine erfolgreic
 </soap:Envelope>
 ```
 
-### <a name="receiving-a-full-time-zone-definition"></a>Die Definition eines Vollzeit Zone empfangen
+### <a name="receiving-a-full-time-zone-definition"></a>Empfangen einer voll Zeit Zonen Definition
 
-Das folgende Beispiel einer Antwort **GetServerTimeZones** zeigt eine erfolgreiche Antwort auf eine **GetServerTimeZones** an, in der das **ReturnFullTimeZoneData** -Attribut auf **true**festgelegt wurde. Die Antwort enthält die Definition des Vollzeit-Zone für die Zeitzone Eastern Standard Time.
+Das folgende Beispiel einer **GetServerTimeZones** -Antwort zeigt eine erfolgreiche Antwort auf eine **GetServerTimeZones** -Anforderung, in der das **ReturnFullTimeZoneData** -Attribut auf **true**festgelegt wurde. Die Antwort enthält die Definition der vollständigen Zeitzone für die Zeit Zeitzone Eastern Standard Time.
   
 ### <a name="code"></a>Code
 
@@ -149,11 +149,11 @@ Das folgende Beispiel einer Antwort **GetServerTimeZones** zeigt eine erfolgreic
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetServerTimeZonesResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetServerTimeZonesResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetServerTimeZonesResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</ResponseCode>

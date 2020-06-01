@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6081777a-ae91-43d2-bf83-f3742030aa70
-description: ReminderTime-Element gibt die Zeitspanne für die Erinnerung angezeigt werden.
-ms.openlocfilehash: b72dd8d6252f41268263579d867a03e460c4ed6a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Reminder-Element gibt die Zeit an, zu der die Erinnerung erfolgt.
+ms.openlocfilehash: e5a1194af43e038a608bf928313909519e7d44e7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831075"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460029"
 ---
 # <a name="remindertime"></a>ReminderTime
 
-**ReminderTime** -Element gibt die Zeitspanne für die Erinnerung angezeigt werden. 
+Das **Reminder** -Element gibt die Zeit an, zu der die Erinnerung erfolgt. 
   
 ```XML
 <ReminderTime/>
@@ -42,19 +42,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ReminderTime** -Elements ist die Zeit für die Erinnerung angezeigt werden. 
+Der Textwert des **Reminder** -Elements ist die Zeit, zu der die Erinnerung stattfinden soll. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ef4b1aba-a55d-4d64-ac80-5d4e6c4e72bd
-description: Das GetClientExtensionResponse-Element enthält die Antwort, um Konfigurationsinformationen zu einer app zu erhalten.
-ms.openlocfilehash: 523a103ec9397b0dce08aa47b074303c9e6ac897
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetClientExtensionResponse-Element enthält die Antwort zum Abrufen von Konfigurationsinformationen zu einer App.
+ms.openlocfilehash: 65c1995fe75b3894607d27ed65548fbbdce0664a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758600"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459518"
 ---
 # <a name="getclientextensionresponse"></a>GetClientExtensionResponse
 
-Das **GetClientExtensionResponse** -Element enthält die Antwort, um Konfigurationsinformationen zu einer app zu erhalten. 
+Das **GetClientExtensionResponse** -Element enthält die Antwort zum Abrufen von Konfigurationsinformationen zu einer App. 
   
 ```XML
 <GetClientExtensionResponse>
@@ -41,25 +41,25 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [ClientExtensions](clientextensions.md) | [RawMasterTableXml](rawmastertablexml.md)
+[MessageText](messagetext.md)  |  [Response Code](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [Messagexml verwendet](messagexml.md)  |  [ClientExtensions](clientextensions.md)  |  [RawMasterTableXml](rawmastertablexml.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |
    
 

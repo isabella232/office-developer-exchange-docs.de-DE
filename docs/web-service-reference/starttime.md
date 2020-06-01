@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1fac7937-7a06-4d66-9d2a-14423bcb3b37
-description: Das StartTime-Element stellt den Anfang des einer bestimmten Zeitspanne.
-ms.openlocfilehash: 4346797d755bb6e577e1cacb8bec656a7562bf1f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das StartTime-Element stellt den Anfang einer Zeitspanne dar.
+ms.openlocfilehash: 16bee698b65dc512a709e2af9ddfe8629347fee3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831560"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458565"
 ---
 # <a name="starttime"></a>StartTime
 
-Das **StartTime** -Element stellt den Anfang des einer bestimmten Zeitspanne. 
+Das **StartTime-Element stellt** den Anfang einer Zeitspanne dar. 
   
 ```xml
 <StartTime/
@@ -45,29 +45,29 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Zeitfenster](timewindow.md) <br/> |Gibt die Zeitspanne für die Verfügbarkeit Benutzerinformationen abgefragt.  <br/><br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/><br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions/TimeWindow` <br/> |
-|[DetailedSuggestionsWindow](detailedsuggestionswindow.md) <br/> |Gibt die Zeitspanne, die ausführliche Informationen zum vorgeschlagenen Besprechungszeiten abgefragt wird.  <br/><br/> Es folgt der XPath-Ausdruck, der dieses Element: <br/> <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions/DetailedSuggestionsWindow` <br/> |
-|[Dauer (' UserOofSettings ')](duration-useroofsettings.md) <br/> | Gibt die Dauer, für die der Status von Office (OOF) aktiviert ist, wenn das Element [OofState](oofstate.md) auf **Geplante Tasks**festgelegt ist.  <br/><br/>  Im folgenden sind die möglichen XPath-Ausdrücke auf dieses Element: <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/Duration` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/Duration` <br/> |
-|[CalendarEvent](calendarevent.md) <br/> |Stellt eine einzelne Kalender Element vorkommen. Dies ist für Verfügbarkeit Abfragen verwendet. Das **Werte von StartTime** -Element ist im **CalendarEvent** -Element erforderlich. Das **Werte von StartTime** -Element im **CalendarEvent** -Element ist eindeutig den **CalendarEvent** -Typ, obwohl es Facetten dieselben Werte enthält, die die **Werte von StartTime** -Elemente in der **Dauer** Typ enthalten.  <br/><br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/> <br/> `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
+|[TimeWindow](timewindow.md) <br/> |Gibt den Zeitraum an, der für die Informationen zur Benutzerverfügbarkeit abgefragt wird.  <br/><br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/><br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions/TimeWindow` <br/> |
+|[DetailedSuggestionsWindow](detailedsuggestionswindow.md) <br/> |Gibt den Zeitraum an, der nach detaillierten Informationen zu vorgeschlagenen Besprechungszeiten abgefragt wird.  <br/><br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:  <br/> <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions/DetailedSuggestionsWindow` <br/> |
+|[Dauer (UserOofSettings)](duration-useroofsettings.md) <br/> | Gibt die Dauer an, für die der Abwesenheit (Out of Office, OOF) Status aktiviert ist, wenn das [OofState](oofstate.md) -Element auf **Scheduled**festgelegt ist.  <br/><br/>  Im folgenden sind die möglichen XPath-Ausdrücke für dieses Element angegeben: <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/Duration` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/Duration` <br/> |
+|[CalendarEvent](calendarevent.md) <br/> |Stellt ein eindeutiges Kalenderelement vorkommen dar. Dies wird für Verfügbarkeitsabfragen verwendet. Das **StartTime** -Element ist im **CalendarEvent** -Element erforderlich. Das **StartTime** -Element im **CalendarEvent** -Element ist für den **CalendarEvent** -Typ eindeutig, obwohl es dieselben Facet-Werte enthält, die die **StartTime** -Elemente im **Duration** -Typ enthalten.  <br/><br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/> <br/> `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert ist erforderlich.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das [EndTime](endtime.md) -Element darstellt, das Ende des Zeitraums. 
+Das [EndTime](endtime.md) -Element stellt das Ende der Zeitspanne dar. 
   
-Das Schema enthält viele [StartTime](starttime.md) Elemente. 
+Das Schema enthält viele [StartTime](starttime.md) -Elemente. 
   
 > [!NOTE]
 > Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -75,5 +75,5 @@ Das Schema enthält viele [StartTime](starttime.md) Elemente.
 ## <a name="see-also"></a>Siehe auch
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)
-- [Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

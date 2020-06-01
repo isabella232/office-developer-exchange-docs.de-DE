@@ -1,5 +1,5 @@
 ---
-title: Zeitstempel
+title: Timestamp
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5eae859a-5a74-4bf6-b196-d1b2fd38501a
-description: Das Timestamp-Element darstellt, den Zeitstempel des Postfach-Ereignisses.
-ms.openlocfilehash: d020d9a4cf3a128d26e0ff2b83be9f3deb024339
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Timestamp-Element stellt den Zeitstempel eines Post Fach Ereignisses dar.
+ms.openlocfilehash: f2280d4eab67b603963c4f0a7468bf35a2b63a88
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839255"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459889"
 ---
-# <a name="timestamp"></a>Zeitstempel
+# <a name="timestamp"></a>Timestamp
 
-Das **Timestamp** -Element darstellt, den Zeitstempel des Postfach-Ereignisses. 
+Das **timestamp** -Element stellt den Zeitstempel eines Post Fach Ereignisses dar. 
   
 ```xml
 <TimeStamp/>
@@ -44,28 +44,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CopiedEvent](copiedevent.md) <br/> |Stellt ein Ereignis eines Elements oder Ordners, in dem kopiert wird.  <br/> |
-|[CreatedEvent](createdevent.md) <br/> |Stellt ein Ereignis eines Elements oder Ordners, in dem erstellt wird.  <br/> |
-|[DeletedEvent](deletedevent.md) <br/> |Stellt ein Ereignis, bei denen eines Elements oder Ordners gelöscht wird.  <br/> |
-|[ModifiedEvent](modifiedevent.md) <br/> |Stellt ein Ereignis, bei denen eines Elements oder Ordners geändert wird.  <br/> |
-|[MovedEvent](movedevent.md) <br/> |Stellt ein Ereignis, auf dem eines Elements oder Ordners aus einem übergeordneten Ordner in einen anderen übergeordneten Ordner verschoben wird.  <br/> |
-|[NewMailEvent](newmailevent.md) <br/> |Stellt ein Ereignis ausgelöst, indem eine neue e-Mail-Element in einem Postfach an.  <br/> |
+|[CopiedEvent](copiedevent.md) <br/> |Stellt ein Ereignis dar, in dem ein Element oder ein Ordner kopiert wird.  <br/> |
+|[CreatedEvent](createdevent.md) <br/> |Stellt ein Ereignis dar, in dem ein Element oder ein Ordner erstellt wird.  <br/> |
+|[DeletedEvent](deletedevent.md) <br/> |Stellt ein Ereignis dar, bei dem ein Element oder ein Ordner gelöscht wird.  <br/> |
+|[ModifiedEvent](modifiedevent.md) <br/> |Stellt ein Ereignis dar, in dem ein Element oder ein Ordner geändert wird.  <br/> |
+|[MovedEvent](movedevent.md) <br/> |Stellt ein Ereignis dar, bei dem ein Element oder ein Ordner von einem übergeordneten Ordner in einen anderen übergeordneten Ordner verschoben wird.  <br/> |
+|[NewMailEvent](newmailevent.md) <br/> |Stellt ein Ereignis dar, das durch ein neues e-Mail-Element in einem Postfach ausgelöst wird.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Diese Eigenschaft ist schreibgeschützt.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element ist in erster Linie für die Verwendung in Client Bestimmung der Häufigkeit Ereignis verfügbar. Dies ist nicht in [StatusEvent](statusevent.md)vorhanden.
+Dieses Element steht in erster Linie zur Verwendung in der Client Ermittlung der Ereignishäufigkeit zur Verfügung. Dies ist in [StatusEvent](statusevent.md)nicht vorhanden.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
