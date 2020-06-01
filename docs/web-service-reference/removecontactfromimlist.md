@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 41a7c520-a9ce-4548-9ff7-0ac756523d65
-description: Das Element RemoveContactFromImList stellt eine Anforderung zum Entfernen einer Instant messaging-Kontakt aus allen Gruppen für instant messaging.
-ms.openlocfilehash: c98b44ba829137006c9aeb231e3f3439deec4687
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RemoveContactFromImList-Element stellt eine Anforderung zum Entfernen eines sofortnachrichtenkontakts aus allen Chatgruppen dar.
+ms.openlocfilehash: 192f3d28f5f5004300b6b3f2dfcaebf1f3225e76
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831078"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458460"
 ---
-# <a name="removecontactfromimlist"></a><span data-ttu-id="78b6e-103">RemoveContactFromImList</span><span class="sxs-lookup"><span data-stu-id="78b6e-103">RemoveContactFromImList</span></span>
+# <a name="removecontactfromimlist"></a><span data-ttu-id="b0785-103">RemoveContactFromImList</span><span class="sxs-lookup"><span data-stu-id="b0785-103">RemoveContactFromImList</span></span>
 
-<span data-ttu-id="78b6e-104">Das Element **RemoveContactFromImList** stellt eine Anforderung zum Entfernen einer Instant messaging-Kontakt aus allen Gruppen für instant messaging.</span><span class="sxs-lookup"><span data-stu-id="78b6e-104">The **RemoveContactFromImList** element represents a request to remove an instant messaging contact from all instant messaging groups.</span></span> 
+<span data-ttu-id="b0785-104">Das **RemoveContactFromImList** -Element stellt eine Anforderung zum Entfernen eines sofortnachrichtenkontakts aus allen Chatgruppen dar.</span><span class="sxs-lookup"><span data-stu-id="b0785-104">The **RemoveContactFromImList** element represents a request to remove an instant messaging contact from all instant messaging groups.</span></span> 
   
 ```XML
 <RemoveContactFromImList>
@@ -25,36 +25,36 @@ ms.locfileid: "19831078"
 </RemoveContactFromImList>
 ```
 
- <span data-ttu-id="78b6e-105">**RemoveContactFromImListType**</span><span class="sxs-lookup"><span data-stu-id="78b6e-105">**RemoveContactFromImListType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="78b6e-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="78b6e-106">Attributes and elements</span></span>
+ <span data-ttu-id="b0785-105">**RemoveContactFromImListType**</span><span class="sxs-lookup"><span data-stu-id="b0785-105">**RemoveContactFromImListType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="b0785-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="b0785-106">Attributes and elements</span></span>
 
-<span data-ttu-id="78b6e-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="78b6e-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="b0785-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="b0785-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="78b6e-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="78b6e-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="b0785-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="b0785-108">Attributes</span></span>
 
-<span data-ttu-id="78b6e-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="78b6e-109">None.</span></span>
+<span data-ttu-id="b0785-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="b0785-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="78b6e-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="78b6e-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="b0785-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="b0785-110">Child elements</span></span>
 
-[<span data-ttu-id="78b6e-111">ContactId</span><span class="sxs-lookup"><span data-stu-id="78b6e-111">ContactId</span></span>](contactid.md)
+[<span data-ttu-id="b0785-111">ContactId</span><span class="sxs-lookup"><span data-stu-id="b0785-111">ContactId</span></span>](contactid.md)
   
-### <a name="parent-elements"></a><span data-ttu-id="78b6e-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="78b6e-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="b0785-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="b0785-112">Parent elements</span></span>
 
-<span data-ttu-id="78b6e-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="78b6e-113">None.</span></span>
+<span data-ttu-id="b0785-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="b0785-113">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="78b6e-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="78b6e-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b0785-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="b0785-114">Remarks</span></span>
 
-<span data-ttu-id="78b6e-115">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="78b6e-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="b0785-115">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="b0785-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="78b6e-116">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="78b6e-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="b0785-116">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="b0785-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="78b6e-117">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="78b6e-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="b0785-117">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="b0785-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="78b6e-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="78b6e-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="78b6e-119">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="78b6e-119">Schema name</span></span>  <br/> |<span data-ttu-id="78b6e-120">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="78b6e-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="78b6e-121">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="78b6e-121">Validation file</span></span>  <br/> |<span data-ttu-id="78b6e-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="78b6e-122">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="78b6e-123">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="78b6e-123">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="b0785-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="b0785-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="b0785-119">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="b0785-119">Schema name</span></span>  <br/> |<span data-ttu-id="b0785-120">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="b0785-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="b0785-121">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="b0785-121">Validation file</span></span>  <br/> |<span data-ttu-id="b0785-122">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="b0785-122">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="b0785-123">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="b0785-123">Can be empty</span></span>  <br/> ||
    
 

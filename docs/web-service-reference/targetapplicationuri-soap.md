@@ -6,57 +6,57 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e13c0edd-2ab1-49bb-a993-54a8db2dfbb9
-description: Das TargetApplicationUri-Element definiert die URI-Zielanwendung. Das TargetApplicationUri-Element ist nur zur internen Verwendung. Dieses Element wird von Clients nicht verwendet.
-ms.openlocfilehash: fa401d4c1e8c1460804f116d840fe21129957852
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das TargetApplicationUri-Element definiert den URI der Zielanwendung. Das TargetApplicationUri-Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet.
+ms.openlocfilehash: 88968aac604b77cd057dbc69c396227a489ac9a8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839157"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457088"
 ---
-# <a name="targetapplicationuri-soap"></a><span data-ttu-id="a3de8-105">TargetApplicationUri (SOAP)</span><span class="sxs-lookup"><span data-stu-id="a3de8-105">TargetApplicationUri (SOAP)</span></span>
+# <a name="targetapplicationuri-soap"></a><span data-ttu-id="f4106-105">TargetApplicationUri (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f4106-105">TargetApplicationUri (SOAP)</span></span>
 
-<span data-ttu-id="a3de8-106">Das **TargetApplicationUri** -Element definiert die URI-Zielanwendung.</span><span class="sxs-lookup"><span data-stu-id="a3de8-106">The **TargetApplicationUri** element defines the target application URI.</span></span> <span data-ttu-id="a3de8-107">Das **TargetApplicationUri** -Element ist nur zur internen Verwendung.</span><span class="sxs-lookup"><span data-stu-id="a3de8-107">The **TargetApplicationUri** element is for internal use only.</span></span> <span data-ttu-id="a3de8-108">Dieses Element wird von Clients nicht verwendet.</span><span class="sxs-lookup"><span data-stu-id="a3de8-108">This element is not used by clients.</span></span> 
+<span data-ttu-id="f4106-106">Das **TargetApplicationUri** -Element definiert den URI der Zielanwendung.</span><span class="sxs-lookup"><span data-stu-id="f4106-106">The **TargetApplicationUri** element defines the target application URI.</span></span> <span data-ttu-id="f4106-107">Das **TargetApplicationUri** -Element ist nur für die interne Verwendung.</span><span class="sxs-lookup"><span data-stu-id="f4106-107">The **TargetApplicationUri** element is for internal use only.</span></span> <span data-ttu-id="f4106-108">Dieses Element wird nicht von Clients verwendet.</span><span class="sxs-lookup"><span data-stu-id="f4106-108">This element is not used by clients.</span></span> 
   
 ```XML
 <TargetApplicationUri/>
 ```
 
- <span data-ttu-id="a3de8-109">**anyURI**</span><span class="sxs-lookup"><span data-stu-id="a3de8-109">**anyURI**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="a3de8-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="a3de8-110">Attributes and elements</span></span>
+ <span data-ttu-id="f4106-109">**anyURI**</span><span class="sxs-lookup"><span data-stu-id="f4106-109">**anyURI**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="f4106-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="f4106-110">Attributes and elements</span></span>
 
-<span data-ttu-id="a3de8-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="a3de8-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="f4106-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="f4106-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="a3de8-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="a3de8-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="f4106-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="f4106-112">Attributes</span></span>
 
-<span data-ttu-id="a3de8-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="a3de8-113">None.</span></span>
+<span data-ttu-id="f4106-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="f4106-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="a3de8-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a3de8-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="f4106-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f4106-114">Child elements</span></span>
 
-<span data-ttu-id="a3de8-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="a3de8-115">None.</span></span>
+<span data-ttu-id="f4106-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="f4106-115">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="a3de8-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a3de8-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="f4106-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f4106-116">Parent elements</span></span>
 
-|<span data-ttu-id="a3de8-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="a3de8-117">**Element**</span></span>|<span data-ttu-id="a3de8-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="a3de8-118">**Description**</span></span>|
+|<span data-ttu-id="f4106-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="f4106-117">**Element**</span></span>|<span data-ttu-id="f4106-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f4106-118">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="a3de8-119">OrganizationRelationshipSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="a3de8-119">OrganizationRelationshipSettings (SOAP)</span></span>](organizationrelationshipsettings-soap.md) <br/> |<span data-ttu-id="a3de8-120">Stellt eine Liste von organisationsbeziehungen für eine einzelne Organisation</span><span class="sxs-lookup"><span data-stu-id="a3de8-120">Represents a list of organization relationships for a single organization</span></span>  <br/> |
+|[<span data-ttu-id="f4106-119">OrganizationRelationshipSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f4106-119">OrganizationRelationshipSettings (SOAP)</span></span>](organizationrelationshipsettings-soap.md) <br/> |<span data-ttu-id="f4106-120">Stellt eine Liste von Organisationsbeziehungen für eine einzelne Organisation dar.</span><span class="sxs-lookup"><span data-stu-id="f4106-120">Represents a list of organization relationships for a single organization</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="a3de8-121">Hinweise</span><span class="sxs-lookup"><span data-stu-id="a3de8-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f4106-121">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f4106-121">Remarks</span></span>
 
-<span data-ttu-id="a3de8-122">Dieses Element definiert den Ziel-URI der externen Organisation.</span><span class="sxs-lookup"><span data-stu-id="a3de8-122">This element defines the target URI of the external organization.</span></span>
+<span data-ttu-id="f4106-122">Dieses Element definiert den Ziel-URI der externen Organisation.</span><span class="sxs-lookup"><span data-stu-id="f4106-122">This element defines the target URI of the external organization.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="a3de8-123">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="a3de8-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="f4106-123">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="f4106-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="a3de8-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="a3de8-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|<span data-ttu-id="a3de8-125">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="a3de8-125">Schema Name</span></span>  <br/> |<span data-ttu-id="a3de8-126">AutoErmittlung-schema</span><span class="sxs-lookup"><span data-stu-id="a3de8-126">Autodiscover schema</span></span>  <br/> |
-|<span data-ttu-id="a3de8-127">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="a3de8-127">Validation File</span></span>  <br/> |<span data-ttu-id="a3de8-128">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="a3de8-128">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="a3de8-129">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="a3de8-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="a3de8-130">True</span><span class="sxs-lookup"><span data-stu-id="a3de8-130">True</span></span>  <br/> |
+|<span data-ttu-id="f4106-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="f4106-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="f4106-125">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="f4106-125">Schema Name</span></span>  <br/> |<span data-ttu-id="f4106-126">Auto Ermittlungs Schema</span><span class="sxs-lookup"><span data-stu-id="f4106-126">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="f4106-127">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="f4106-127">Validation File</span></span>  <br/> |<span data-ttu-id="f4106-128">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="f4106-128">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="f4106-129">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="f4106-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="f4106-130">True</span><span class="sxs-lookup"><span data-stu-id="f4106-130">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="a3de8-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a3de8-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f4106-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f4106-131">See also</span></span>
 
 
 
-[<span data-ttu-id="a3de8-132">GetOrganizationRelationshipSettings-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="a3de8-132">GetOrganizationRelationshipSettings operation (SOAP)</span></span>](getorganizationrelationshipsettings-operation-soap.md)
+[<span data-ttu-id="f4106-132">GetOrganizationRelationshipSettings-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f4106-132">GetOrganizationRelationshipSettings operation (SOAP)</span></span>](getorganizationrelationshipsettings-operation-soap.md)
 

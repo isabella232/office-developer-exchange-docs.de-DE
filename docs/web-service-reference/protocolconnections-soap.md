@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: afcacecd-f081-4419-a6d5-e45070839f9a
-description: Das ProtocolConnections-Element enthält null oder mehr Protokoll Verbindungen.
-ms.openlocfilehash: 9938669bc62d5554338e48ce59ca92755ba13d64
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ProtocolConnections-Element enthält NULL oder mehr Protokoll Verbindungen.
+ms.openlocfilehash: 6272bdf3aec8ba6572b07659416413c393954d93
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830921"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457760"
 ---
-# <a name="protocolconnections-soap"></a><span data-ttu-id="f1906-103">ProtocolConnections (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f1906-103">ProtocolConnections (SOAP)</span></span>
+# <a name="protocolconnections-soap"></a><span data-ttu-id="dd06d-103">ProtocolConnections (SOAP)</span><span class="sxs-lookup"><span data-stu-id="dd06d-103">ProtocolConnections (SOAP)</span></span>
 
-<span data-ttu-id="f1906-104">Das **ProtocolConnections** -Element enthält null oder mehr Protokoll Verbindungen.</span><span class="sxs-lookup"><span data-stu-id="f1906-104">The **ProtocolConnections** element contains zero or more protocol connections.</span></span> 
+<span data-ttu-id="dd06d-104">Das **ProtocolConnections** -Element enthält NULL oder mehr Protokoll Verbindungen.</span><span class="sxs-lookup"><span data-stu-id="dd06d-104">The **ProtocolConnections** element contains zero or more protocol connections.</span></span> 
   
 ```XML
 <ProtocolConnections>
@@ -26,47 +26,47 @@ ms.locfileid: "19830921"
 </ProtocolConnections>
 ```
 
- <span data-ttu-id="f1906-105">**ProtocolConnections**</span><span class="sxs-lookup"><span data-stu-id="f1906-105">**ProtocolConnections**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="f1906-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="f1906-106">Attributes and elements</span></span>
+ <span data-ttu-id="dd06d-105">**ProtocolConnections**</span><span class="sxs-lookup"><span data-stu-id="dd06d-105">**ProtocolConnections**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="dd06d-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="dd06d-106">Attributes and elements</span></span>
 
-<span data-ttu-id="f1906-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="f1906-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="dd06d-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="dd06d-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="f1906-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="f1906-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="dd06d-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="dd06d-108">Attributes</span></span>
 
-<span data-ttu-id="f1906-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="f1906-109">None.</span></span>
+<span data-ttu-id="dd06d-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="dd06d-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="f1906-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f1906-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="dd06d-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="dd06d-110">Child elements</span></span>
 
-|<span data-ttu-id="f1906-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="f1906-111">**Element**</span></span>|<span data-ttu-id="f1906-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f1906-112">**Description**</span></span>|
+|<span data-ttu-id="dd06d-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="dd06d-111">**Element**</span></span>|<span data-ttu-id="dd06d-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="dd06d-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="f1906-113">ProtocolConnections (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f1906-113">ProtocolConnections (SOAP)</span></span>](protocolconnections-soap.md) <br/> |<span data-ttu-id="f1906-114">Enthält null oder mehr Protocol-Verbindungen.</span><span class="sxs-lookup"><span data-stu-id="f1906-114">Contains zero or more protocol connections.</span></span>  <br/> |
+|[<span data-ttu-id="dd06d-113">ProtocolConnections (SOAP)</span><span class="sxs-lookup"><span data-stu-id="dd06d-113">ProtocolConnections (SOAP)</span></span>](protocolconnections-soap.md) <br/> |<span data-ttu-id="dd06d-114">Enthält NULL oder mehr Protokoll Verbindungen.</span><span class="sxs-lookup"><span data-stu-id="dd06d-114">Contains zero or more protocol connections.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="f1906-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f1906-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="dd06d-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="dd06d-115">Parent elements</span></span>
 
-|<span data-ttu-id="f1906-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="f1906-116">**Element**</span></span>|<span data-ttu-id="f1906-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f1906-117">**Description**</span></span>|
+|<span data-ttu-id="dd06d-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="dd06d-116">**Element**</span></span>|<span data-ttu-id="dd06d-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="dd06d-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="f1906-118">ProtocolConnectionCollectionSetting (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f1906-118">ProtocolConnectionCollectionSetting (SOAP)</span></span>](protocolconnectioncollectionsetting-soap.md) <br/> |<span data-ttu-id="f1906-119">Stellt eine Auflistung von Einstellungen für die Server Protocol-Verbindung dar.</span><span class="sxs-lookup"><span data-stu-id="f1906-119">Represents a collection of server protocol connection settings.</span></span>  <br/> |
+|[<span data-ttu-id="dd06d-118">ProtocolConnectionCollectionSetting (SOAP)</span><span class="sxs-lookup"><span data-stu-id="dd06d-118">ProtocolConnectionCollectionSetting (SOAP)</span></span>](protocolconnectioncollectionsetting-soap.md) <br/> |<span data-ttu-id="dd06d-119">Stellt eine Auflistung von Verbindungseinstellungen für das Serverprotokoll dar.</span><span class="sxs-lookup"><span data-stu-id="dd06d-119">Represents a collection of server protocol connection settings.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="f1906-120">Textwert</span><span class="sxs-lookup"><span data-stu-id="f1906-120">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="dd06d-120">Textwert</span><span class="sxs-lookup"><span data-stu-id="dd06d-120">Text value</span></span>
 
-<span data-ttu-id="f1906-121">Keine.</span><span class="sxs-lookup"><span data-stu-id="f1906-121">None.</span></span>
+<span data-ttu-id="dd06d-121">Keine.</span><span class="sxs-lookup"><span data-stu-id="dd06d-121">None.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="f1906-122">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="f1906-122">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="dd06d-122">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="dd06d-122">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="f1906-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="f1906-123">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|<span data-ttu-id="f1906-124">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="f1906-124">Schema Name</span></span>  <br/> |<span data-ttu-id="f1906-125">AutoErmittlung-schema</span><span class="sxs-lookup"><span data-stu-id="f1906-125">Autodiscover schema</span></span>  <br/> |
-|<span data-ttu-id="f1906-126">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="f1906-126">Validation File</span></span>  <br/> |<span data-ttu-id="f1906-127">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="f1906-127">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="f1906-128">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="f1906-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="f1906-129">True</span><span class="sxs-lookup"><span data-stu-id="f1906-129">True</span></span>  <br/> |
+|<span data-ttu-id="dd06d-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="dd06d-123">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="dd06d-124">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="dd06d-124">Schema Name</span></span>  <br/> |<span data-ttu-id="dd06d-125">Auto Ermittlungs Schema</span><span class="sxs-lookup"><span data-stu-id="dd06d-125">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="dd06d-126">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="dd06d-126">Validation File</span></span>  <br/> |<span data-ttu-id="dd06d-127">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="dd06d-127">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="dd06d-128">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="dd06d-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="dd06d-129">True</span><span class="sxs-lookup"><span data-stu-id="dd06d-129">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="f1906-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f1906-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="dd06d-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="dd06d-130">See also</span></span>
 
 
 
-[<span data-ttu-id="f1906-131">GetUserSettings-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f1906-131">GetUserSettings operation (SOAP)</span></span>](getusersettings-operation-soap.md)
+[<span data-ttu-id="dd06d-131">GetUserSettings-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="dd06d-131">GetUserSettings operation (SOAP)</span></span>](getusersettings-operation-soap.md)
   
-[<span data-ttu-id="f1906-132">GetDomainSettings-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f1906-132">GetDomainSettings operation (SOAP)</span></span>](getdomainsettings-operation-soap.md)
+[<span data-ttu-id="dd06d-132">GetDomainSettings-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="dd06d-132">GetDomainSettings operation (SOAP)</span></span>](getdomainsettings-operation-soap.md)
   
-[<span data-ttu-id="f1906-133">GetFederationInformation-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="f1906-133">GetFederationInformation operation (SOAP)</span></span>](getfederationinformation-operation-soap.md)
+[<span data-ttu-id="dd06d-133">GetFederationInformation-Vorgang (SOAP)</span><span class="sxs-lookup"><span data-stu-id="dd06d-133">GetFederationInformation operation (SOAP)</span></span>](getfederationinformation-operation-soap.md)
 

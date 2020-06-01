@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 00566965-6cbd-4f31-9fa9-85b3e5559c0c
-description: Das GetNonIndexableItemDetailsResponseMessage-Element gibt die Antwortnachricht für eine Anforderung GetNonIndexableItemDetails.
-ms.openlocfilehash: 8df67294c17f9c9b786e73647878ad5b3586d788
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetNonIndexableItemDetailsResponseMessage-Element gibt die Antwortnachricht für eine GetNonIndexableItemDetails-Anforderung an.
+ms.openlocfilehash: 4cf6b422cc29b20b09d05ea45628fa7133b437b2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758739"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456521"
 ---
-# <a name="getnonindexableitemdetailsresponsemessage"></a><span data-ttu-id="87cd6-103">GetNonIndexableItemDetailsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="87cd6-103">GetNonIndexableItemDetailsResponseMessage</span></span>
+# <a name="getnonindexableitemdetailsresponsemessage"></a><span data-ttu-id="5561d-103">GetNonIndexableItemDetailsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="5561d-103">GetNonIndexableItemDetailsResponseMessage</span></span>
 
-<span data-ttu-id="87cd6-104">Das **GetNonIndexableItemDetailsResponseMessage** -Element gibt die Antwortnachricht für eine Anforderung **GetNonIndexableItemDetails** .</span><span class="sxs-lookup"><span data-stu-id="87cd6-104">The **GetNonIndexableItemDetailsResponseMessage** element specifies the response message for a **GetNonIndexableItemDetails** request.</span></span> 
+<span data-ttu-id="5561d-104">Das **GetNonIndexableItemDetailsResponseMessage** -Element gibt die Antwortnachricht für eine **GetNonIndexableItemDetails** -Anforderung an.</span><span class="sxs-lookup"><span data-stu-id="5561d-104">The **GetNonIndexableItemDetailsResponseMessage** element specifies the response message for a **GetNonIndexableItemDetails** request.</span></span> 
   
 ```XML
 <GetNonIndexableItemDetailsResponseMessage>
@@ -29,36 +29,36 @@ ms.locfileid: "19758739"
 </GetNonIndexableItemDetailsResponseMessage>
 ```
 
- <span data-ttu-id="87cd6-105">**GetNonIndexableItemDetailsResponseMessageType**</span><span class="sxs-lookup"><span data-stu-id="87cd6-105">**GetNonIndexableItemDetailsResponseMessageType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="87cd6-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="87cd6-106">Attributes and elements</span></span>
+ <span data-ttu-id="5561d-105">**GetNonIndexableItemDetailsResponseMessageType**</span><span class="sxs-lookup"><span data-stu-id="5561d-105">**GetNonIndexableItemDetailsResponseMessageType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="5561d-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="5561d-106">Attributes and elements</span></span>
 
-<span data-ttu-id="87cd6-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="87cd6-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="5561d-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="5561d-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="87cd6-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="87cd6-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="5561d-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="5561d-108">Attributes</span></span>
 
-<span data-ttu-id="87cd6-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="87cd6-109">None.</span></span>
+<span data-ttu-id="5561d-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="5561d-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="87cd6-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="87cd6-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="5561d-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="5561d-110">Child elements</span></span>
 
-<span data-ttu-id="87cd6-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [NonIndexableItemDetailsResult](nonindexableitemdetailsresult.md)</span><span class="sxs-lookup"><span data-stu-id="87cd6-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [NonIndexableItemDetailsResult](nonindexableitemdetailsresult.md)</span></span>
+<span data-ttu-id="5561d-111">[MessageText](messagetext.md)  |  [Response Code](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [Messagexml verwendet](messagexml.md)  |  [NonIndexableItemDetailsResult](nonindexableitemdetailsresult.md)</span><span class="sxs-lookup"><span data-stu-id="5561d-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [NonIndexableItemDetailsResult](nonindexableitemdetailsresult.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="87cd6-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="87cd6-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="5561d-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="5561d-112">Parent elements</span></span>
 
-[<span data-ttu-id="87cd6-113">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="87cd6-113">ResponseMessages</span></span>](responsemessages.md)
+[<span data-ttu-id="5561d-113">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="5561d-113">ResponseMessages</span></span>](responsemessages.md)
   
-## <a name="remarks"></a><span data-ttu-id="87cd6-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="87cd6-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5561d-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="5561d-114">Remarks</span></span>
 
-<span data-ttu-id="87cd6-115">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="87cd6-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="5561d-115">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="5561d-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="87cd6-116">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="87cd6-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="5561d-116">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="5561d-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="87cd6-117">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="87cd6-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="5561d-117">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="5561d-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="87cd6-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="87cd6-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="87cd6-119">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="87cd6-119">Schema name</span></span>  <br/> |<span data-ttu-id="87cd6-120">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="87cd6-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="87cd6-121">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="87cd6-121">Validation file</span></span>  <br/> |<span data-ttu-id="87cd6-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="87cd6-122">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="87cd6-123">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="87cd6-123">Can be empty</span></span>  <br/> |<span data-ttu-id="87cd6-124">false</span><span class="sxs-lookup"><span data-stu-id="87cd6-124">false</span></span>  <br/> |
+|<span data-ttu-id="5561d-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="5561d-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="5561d-119">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="5561d-119">Schema name</span></span>  <br/> |<span data-ttu-id="5561d-120">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="5561d-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="5561d-121">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="5561d-121">Validation file</span></span>  <br/> |<span data-ttu-id="5561d-122">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="5561d-122">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="5561d-123">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="5561d-123">Can be empty</span></span>  <br/> |<span data-ttu-id="5561d-124">false</span><span class="sxs-lookup"><span data-stu-id="5561d-124">false</span></span>  <br/> |
    
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 412d0683-2819-40c5-a0ae-f613499a7b66
-description: Das Element UpdateFolder stellt die Operation, die verwendet wird, um Eigenschaften für einen angegebenen Ordner zu aktualisieren.
-ms.openlocfilehash: 9a86bf6b3b5917600b3b09f23b3ee4e9cdc0364f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UpdateFolder-Element stellt den Vorgang dar, der zum Aktualisieren der Eigenschaften für einen angegebenen Ordner verwendet wird.
+ms.openlocfilehash: 124ffd02a5ea2e7bf6f21cc7009dde08837906f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839349"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457046"
 ---
-# <a name="updatefolder"></a><span data-ttu-id="398ed-103">UpdateFolder</span><span class="sxs-lookup"><span data-stu-id="398ed-103">UpdateFolder</span></span>
+# <a name="updatefolder"></a><span data-ttu-id="7925a-103">UpdateFolder</span><span class="sxs-lookup"><span data-stu-id="7925a-103">UpdateFolder</span></span>
 
-<span data-ttu-id="398ed-104">Das Element **UpdateFolder** stellt die Operation, die verwendet wird, um Eigenschaften für einen angegebenen Ordner zu aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="398ed-104">The **UpdateFolder** element represents the operation that is used to update properties for a specified folder.</span></span> 
+<span data-ttu-id="7925a-104">Das **UpdateFolder** -Element stellt den Vorgang dar, der zum Aktualisieren der Eigenschaften für einen angegebenen Ordner verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="7925a-104">The **UpdateFolder** element represents the operation that is used to update properties for a specified folder.</span></span> 
   
 ```xml
 <UpdateFolder>
@@ -29,41 +29,41 @@ ms.locfileid: "19839349"
 </UpdateFolder>
 ```
 
- <span data-ttu-id="398ed-105">**UpdateFolderType**</span><span class="sxs-lookup"><span data-stu-id="398ed-105">**UpdateFolderType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="398ed-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="398ed-106">Attributes and elements</span></span>
+ <span data-ttu-id="7925a-105">**UpdateFolderType**</span><span class="sxs-lookup"><span data-stu-id="7925a-105">**UpdateFolderType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="7925a-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="7925a-106">Attributes and elements</span></span>
 
-<span data-ttu-id="398ed-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="398ed-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="7925a-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="7925a-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="398ed-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="398ed-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="7925a-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="7925a-108">Attributes</span></span>
 
-<span data-ttu-id="398ed-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="398ed-109">None.</span></span>
+<span data-ttu-id="7925a-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="7925a-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="398ed-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="398ed-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="7925a-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="7925a-110">Child elements</span></span>
 
-|<span data-ttu-id="398ed-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="398ed-111">**Element**</span></span>|<span data-ttu-id="398ed-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="398ed-112">**Description**</span></span>|
+|<span data-ttu-id="7925a-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="7925a-111">**Element**</span></span>|<span data-ttu-id="7925a-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="7925a-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="398ed-113">FolderChanges</span><span class="sxs-lookup"><span data-stu-id="398ed-113">FolderChanges</span></span>](folderchanges.md) <br/> |<span data-ttu-id="398ed-114">Enthält eine Auflistung von Änderungen für einen angegebenen Ordner.</span><span class="sxs-lookup"><span data-stu-id="398ed-114">Contains a collection of changes for a specified folder.</span></span>  <br/> |
+|[<span data-ttu-id="7925a-113">FolderChanges</span><span class="sxs-lookup"><span data-stu-id="7925a-113">FolderChanges</span></span>](folderchanges.md) <br/> |<span data-ttu-id="7925a-114">Enthält eine Auflistung von Änderungen für einen angegebenen Ordner.</span><span class="sxs-lookup"><span data-stu-id="7925a-114">Contains a collection of changes for a specified folder.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="398ed-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="398ed-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="7925a-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="7925a-115">Parent elements</span></span>
 
-<span data-ttu-id="398ed-116">Keine.</span><span class="sxs-lookup"><span data-stu-id="398ed-116">None.</span></span>
+<span data-ttu-id="7925a-116">Keine.</span><span class="sxs-lookup"><span data-stu-id="7925a-116">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="398ed-117">Hinweise</span><span class="sxs-lookup"><span data-stu-id="398ed-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7925a-117">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="7925a-117">Remarks</span></span>
 
-<span data-ttu-id="398ed-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="398ed-118">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="7925a-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="7925a-118">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="398ed-119">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="398ed-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="7925a-119">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="7925a-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="398ed-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="398ed-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="398ed-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="398ed-121">Schema Name</span></span>  <br/> |<span data-ttu-id="398ed-122">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="398ed-122">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="398ed-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="398ed-123">Validation File</span></span>  <br/> |<span data-ttu-id="398ed-124">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="398ed-124">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="398ed-125">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="398ed-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="398ed-126">False</span><span class="sxs-lookup"><span data-stu-id="398ed-126">False</span></span>  <br/> |
+|<span data-ttu-id="7925a-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="7925a-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="7925a-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="7925a-121">Schema Name</span></span>  <br/> |<span data-ttu-id="7925a-122">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="7925a-122">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="7925a-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="7925a-123">Validation File</span></span>  <br/> |<span data-ttu-id="7925a-124">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="7925a-124">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="7925a-125">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="7925a-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="7925a-126">False</span><span class="sxs-lookup"><span data-stu-id="7925a-126">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="398ed-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="398ed-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7925a-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7925a-127">See also</span></span>
 
 
 
-[<span data-ttu-id="398ed-128">UpdateFolder-Vorgang</span><span class="sxs-lookup"><span data-stu-id="398ed-128">UpdateFolder operation</span></span>](updatefolder-operation.md)
+[<span data-ttu-id="7925a-128">UpdateFolder-Vorgang</span><span class="sxs-lookup"><span data-stu-id="7925a-128">UpdateFolder operation</span></span>](updatefolder-operation.md)
 

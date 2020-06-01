@@ -11,31 +11,31 @@ api_name:
 api_type:
 - schema
 ms.assetid: b4b2701a-4a23-4acc-8c75-19f7955ad7ae
-description: Der Vorgang GetInboxRules werden Exchange-Webdienste Posteingangsregeln in das identifizierte Postfach des Benutzers abgerufen.
-ms.openlocfilehash: f8a5068b1f189cc6fd5feef6dfec29204a0b8887
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetInboxRules-Vorgang verwendet Exchange Webdienste zum Abrufen von Posteingangsregeln im Postfach des identifizierten Benutzers.
+ms.openlocfilehash: f4c4c03f55c9f32be4a067024f4387888edd5fe9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758698"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457935"
 ---
-# <a name="getinboxrules-operation"></a><span data-ttu-id="d5998-103">GetInboxRules-Vorgang</span><span class="sxs-lookup"><span data-stu-id="d5998-103">GetInboxRules operation</span></span>
+# <a name="getinboxrules-operation"></a><span data-ttu-id="07013-103">GetInboxRules-Vorgang</span><span class="sxs-lookup"><span data-stu-id="07013-103">GetInboxRules operation</span></span>
 
-<span data-ttu-id="d5998-104">Der Vorgang **GetInboxRules** werden Exchange-Webdienste Posteingangsregeln in das identifizierte Postfach des Benutzers abgerufen.</span><span class="sxs-lookup"><span data-stu-id="d5998-104">The **GetInboxRules** operation uses Exchange Web Services to retrieve Inbox rules in the identified user's mailbox.</span></span> 
+<span data-ttu-id="07013-104">Der **GetInboxRules** -Vorgang verwendet Exchange Webdienste zum Abrufen von Posteingangsregeln im Postfach des identifizierten Benutzers.</span><span class="sxs-lookup"><span data-stu-id="07013-104">The **GetInboxRules** operation uses Exchange Web Services to retrieve Inbox rules in the identified user's mailbox.</span></span> 
   
-## <a name="getinboxrules-request-example"></a><span data-ttu-id="d5998-105">Anforderungsbeispiel GetInboxRules</span><span class="sxs-lookup"><span data-stu-id="d5998-105">GetInboxRules request example</span></span>
+## <a name="getinboxrules-request-example"></a><span data-ttu-id="07013-105">GetInboxRules-Anforderungs Beispiel</span><span class="sxs-lookup"><span data-stu-id="07013-105">GetInboxRules request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="d5998-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d5998-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="07013-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="07013-106">Description</span></span>
 
-<span data-ttu-id="d5998-107">Das folgende Beispiel zeigt die Anforderung XML, das der Client an den Server sendet.</span><span class="sxs-lookup"><span data-stu-id="d5998-107">The following example shows the request XML that the client sends to the server.</span></span> <span data-ttu-id="d5998-108">Die Anforderung identifiziert den Benutzer im [MailboxSmtpAddress](mailboxsmtpaddress.md) -Element.</span><span class="sxs-lookup"><span data-stu-id="d5998-108">The request identifies the user in the [MailboxSmtpAddress](mailboxsmtpaddress.md) element.</span></span> <span data-ttu-id="d5998-109">Alle Posteingangsregeln für den identifizierten Benutzer sind in der Antwort zurückgegeben werden soll.</span><span class="sxs-lookup"><span data-stu-id="d5998-109">All Inbox rules for the identified user are to be returned in the response.</span></span> 
+<span data-ttu-id="07013-107">Das folgende Beispiel zeigt den Anforderungs-XML-Code, den der Client an den Server sendet.</span><span class="sxs-lookup"><span data-stu-id="07013-107">The following example shows the request XML that the client sends to the server.</span></span> <span data-ttu-id="07013-108">Die Anforderung identifiziert den Benutzer im [MailboxSmtpAddress](mailboxsmtpaddress.md) -Element.</span><span class="sxs-lookup"><span data-stu-id="07013-108">The request identifies the user in the [MailboxSmtpAddress](mailboxsmtpaddress.md) element.</span></span> <span data-ttu-id="07013-109">Alle Posteingangsregeln für den identifizierten Benutzer werden in der Antwort zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="07013-109">All Inbox rules for the identified user are to be returned in the response.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="d5998-110">Code</span><span class="sxs-lookup"><span data-stu-id="d5998-110">Code</span></span>
+### <a name="code"></a><span data-ttu-id="07013-110">Code</span><span class="sxs-lookup"><span data-stu-id="07013-110">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+        xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
         xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010_SP1" />
@@ -48,22 +48,22 @@ ms.locfileid: "19758698"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a><span data-ttu-id="d5998-111">Anfordern von Elementen</span><span class="sxs-lookup"><span data-stu-id="d5998-111">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="07013-111">Anfordern von Elementen</span><span class="sxs-lookup"><span data-stu-id="07013-111">Request elements</span></span>
 
-<span data-ttu-id="d5998-112">Die Anforderung enthält das folgende optionale Element:</span><span class="sxs-lookup"><span data-stu-id="d5998-112">The request includes the following optional element:</span></span>
+<span data-ttu-id="07013-112">Die Anforderung enthält das folgende optionale Element:</span><span class="sxs-lookup"><span data-stu-id="07013-112">The request includes the following optional element:</span></span>
   
-- [<span data-ttu-id="d5998-113">MailboxSmtpAddress</span><span class="sxs-lookup"><span data-stu-id="d5998-113">MailboxSmtpAddress</span></span>](mailboxsmtpaddress.md)
+- [<span data-ttu-id="07013-113">MailboxSmtpAddress</span><span class="sxs-lookup"><span data-stu-id="07013-113">MailboxSmtpAddress</span></span>](mailboxsmtpaddress.md)
     
-## <a name="successful-getinboxrules-response-example"></a><span data-ttu-id="d5998-114">Erfolgreiche GetInboxRules antwortbeispiel</span><span class="sxs-lookup"><span data-stu-id="d5998-114">Successful GetInboxRules response example</span></span>
+## <a name="successful-getinboxrules-response-example"></a><span data-ttu-id="07013-114">Erfolgreiches GetInboxRules-Antwortbeispiel</span><span class="sxs-lookup"><span data-stu-id="07013-114">Successful GetInboxRules response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="d5998-115">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d5998-115">Description</span></span>
+### <a name="description"></a><span data-ttu-id="07013-115">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="07013-115">Description</span></span>
 
-<span data-ttu-id="d5998-116">Das folgende (SOAP = Simple Object Access Protocol)-Body-Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **GetInboxRules** .</span><span class="sxs-lookup"><span data-stu-id="d5998-116">The following Simple Object Access Protocol (SOAP) body example shows a successful response to the **GetInboxRules** request.</span></span> <span data-ttu-id="d5998-117">In diesem Beispiel enthält die Antwort eine Regel.</span><span class="sxs-lookup"><span data-stu-id="d5998-117">In this example, the response includes one rule.</span></span> 
+<span data-ttu-id="07013-116">Das folgende Simple Object Access Protocol (SOAP) Body-Beispiel zeigt eine erfolgreiche Antwort auf die **GetInboxRules** -Anforderung.</span><span class="sxs-lookup"><span data-stu-id="07013-116">The following Simple Object Access Protocol (SOAP) body example shows a successful response to the **GetInboxRules** request.</span></span> <span data-ttu-id="07013-117">In diesem Beispiel enthält die Antwort eine Regel.</span><span class="sxs-lookup"><span data-stu-id="07013-117">In this example, the response includes one rule.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="d5998-118">Die Werte der **Id** und die **ChangeKey** Attribute des Elements [FolderId](folderid.md) wurden gekürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="d5998-118">The values of the **Id** and the **ChangeKey** attributes of the [FolderId](folderid.md) element have been shortened to preserve readability.</span></span> 
+> <span data-ttu-id="07013-118">Die Werte der ID und der **ChangeKey** -Attribute des [Folder](folderid.md) **-ID** -Elements wurden verkürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="07013-118">The values of the **Id** and the **ChangeKey** attributes of the [FolderId](folderid.md) element have been shortened to preserve readability.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="d5998-119">Code</span><span class="sxs-lookup"><span data-stu-id="d5998-119">Code</span></span>
+### <a name="code"></a><span data-ttu-id="07013-119">Code</span><span class="sxs-lookup"><span data-stu-id="07013-119">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -73,19 +73,19 @@ ms.locfileid: "19758698"
         MinorVersion="1" MajorBuildNumber="139"
         MinorBuildNumber="0"
         Version="Exchange2010_SP1"
-        xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-        xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+        xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+        xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <GetInboxRulesResponse ResponseClass="Success"
-        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <OutlookRuleBlobExists>true</OutlookRuleBlobExists>
       <InboxRules>
-        <Rule xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <Rule xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <RuleId>dCsAAABjzvA=</RuleId>
           <DisplayName>MoveInterestingToJunk</DisplayName>
           <Priority>1</Priority>
@@ -107,21 +107,21 @@ ms.locfileid: "19758698"
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a><span data-ttu-id="d5998-120">Antwortelemente</span><span class="sxs-lookup"><span data-stu-id="d5998-120">Response elements</span></span>
+### <a name="response-elements"></a><span data-ttu-id="07013-120">Response-Elemente</span><span class="sxs-lookup"><span data-stu-id="07013-120">Response elements</span></span>
 
-<span data-ttu-id="d5998-121">Die folgenden Elemente werden in der Antwort enthalten:</span><span class="sxs-lookup"><span data-stu-id="d5998-121">The following elements are included in the response:</span></span>
+<span data-ttu-id="07013-121">Die Antwort enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="07013-121">The following elements are included in the response:</span></span>
   
-- [<span data-ttu-id="d5998-122">GetInboxRulesResponse</span><span class="sxs-lookup"><span data-stu-id="d5998-122">GetInboxRulesResponse</span></span>](getinboxrulesresponse.md)
+- [<span data-ttu-id="07013-122">GetInboxRulesResponse</span><span class="sxs-lookup"><span data-stu-id="07013-122">GetInboxRulesResponse</span></span>](getinboxrulesresponse.md)
     
-- [<span data-ttu-id="d5998-123">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="d5998-123">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="07013-123">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="07013-123">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="d5998-124">OutlookRuleBlobExists</span><span class="sxs-lookup"><span data-stu-id="d5998-124">OutlookRuleBlobExists</span></span>](outlookruleblobexists.md)
+- [<span data-ttu-id="07013-124">OutlookRuleBlobExists</span><span class="sxs-lookup"><span data-stu-id="07013-124">OutlookRuleBlobExists</span></span>](outlookruleblobexists.md)
     
-- [<span data-ttu-id="d5998-125">InboxRules</span><span class="sxs-lookup"><span data-stu-id="d5998-125">InboxRules</span></span>](inboxrules.md)
+- [<span data-ttu-id="07013-125">InboxRules</span><span class="sxs-lookup"><span data-stu-id="07013-125">InboxRules</span></span>](inboxrules.md)
     
-## <a name="see-also"></a><span data-ttu-id="d5998-126">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d5998-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="07013-126">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="07013-126">See also</span></span>
 
 
 
-[<span data-ttu-id="d5998-127">UpdateInboxRules-Vorgang</span><span class="sxs-lookup"><span data-stu-id="d5998-127">UpdateInboxRules operation</span></span>](updateinboxrules-operation.md)
+[<span data-ttu-id="07013-127">UpdateInboxRules-Vorgang</span><span class="sxs-lookup"><span data-stu-id="07013-127">UpdateInboxRules operation</span></span>](updateinboxrules-operation.md)
 

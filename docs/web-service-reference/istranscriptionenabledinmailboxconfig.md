@@ -7,42 +7,42 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 730f008d-b624-4369-a385-69e8e5964c9c
-description: Das IsTranscriptionEnabledInMailboxConfig-Element ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: b925becddedba87d38e130fda213c4f8ae4eeb70
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IsTranscriptionEnabledInMailboxConfig-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 32cacd2f9daf71c0a26a7967c2b40ddef2e3d3a6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830106"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458243"
 ---
-# <a name="istranscriptionenabledinmailboxconfig"></a><span data-ttu-id="a953e-103">IsTranscriptionEnabledInMailboxConfig</span><span class="sxs-lookup"><span data-stu-id="a953e-103">IsTranscriptionEnabledInMailboxConfig</span></span>
+# <a name="istranscriptionenabledinmailboxconfig"></a><span data-ttu-id="1f138-103">IsTranscriptionEnabledInMailboxConfig</span><span class="sxs-lookup"><span data-stu-id="1f138-103">IsTranscriptionEnabledInMailboxConfig</span></span>
 
-<span data-ttu-id="a953e-104">Das **IsTranscriptionEnabledInMailboxConfig** -Element ist nur zur internen Verwendung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="a953e-104">The **IsTranscriptionEnabledInMailboxConfig** element is intended for internal use only.</span></span> 
+<span data-ttu-id="1f138-104">Das **IsTranscriptionEnabledInMailboxConfig** -Element ist nur für die interne Verwendung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="1f138-104">The **IsTranscriptionEnabledInMailboxConfig** element is intended for internal use only.</span></span> 
   
 ```XML
 <IsTranscriptionEnabledInMailboxConfig />
 ```
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="a953e-105">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="a953e-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="1f138-105">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="1f138-105">Attributes and elements</span></span>
 
-<span data-ttu-id="a953e-106">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="a953e-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="1f138-106">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="1f138-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="a953e-107">Attribute</span><span class="sxs-lookup"><span data-stu-id="a953e-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="1f138-107">Attribute</span><span class="sxs-lookup"><span data-stu-id="1f138-107">Attributes</span></span>
 
-<span data-ttu-id="a953e-108">Keine.</span><span class="sxs-lookup"><span data-stu-id="a953e-108">None.</span></span>
+<span data-ttu-id="1f138-108">Keine.</span><span class="sxs-lookup"><span data-stu-id="1f138-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="a953e-109">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a953e-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="1f138-109">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1f138-109">Child elements</span></span>
 
-<span data-ttu-id="a953e-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="a953e-110">None.</span></span>
+<span data-ttu-id="1f138-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="1f138-110">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="a953e-111">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a953e-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="1f138-111">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1f138-111">Parent elements</span></span>
 
-<span data-ttu-id="a953e-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="a953e-112">None.</span></span>
+<span data-ttu-id="1f138-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="1f138-112">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="a953e-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="a953e-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1f138-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="1f138-113">Remarks</span></span>
 
-<span data-ttu-id="a953e-114">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="a953e-114">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="1f138-114">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="1f138-114">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="a953e-115">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="a953e-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="1f138-115">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="1f138-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
 

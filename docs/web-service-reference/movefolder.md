@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f2bb0a73-94d7-4bc7-8902-bd9c69120221
-description: Das MoveFolder-Element definiert eine Anforderung an einen Ordner im Exchange-Speicher zu verschieben.
-ms.openlocfilehash: 42a990ced18cc13c7694042df786d33c018f346c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MoveFolder-Element definiert eine Anforderung zum Migrieren eines Ordners in der Exchange-Informationsspeicher.
+ms.openlocfilehash: d2fe33a6d7893d45fa116a1516fcc6ab2dea3bcf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830485"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457291"
 ---
-# <a name="movefolder"></a><span data-ttu-id="e418b-103">MoveFolder</span><span class="sxs-lookup"><span data-stu-id="e418b-103">MoveFolder</span></span>
+# <a name="movefolder"></a><span data-ttu-id="3f845-103">MoveFolder</span><span class="sxs-lookup"><span data-stu-id="3f845-103">MoveFolder</span></span>
 
-<span data-ttu-id="e418b-104">Das **MoveFolder** -Element definiert eine Anforderung an einen Ordner im Exchange-Speicher zu verschieben.</span><span class="sxs-lookup"><span data-stu-id="e418b-104">The **MoveFolder** element defines a request to move a folder in the Exchange store.</span></span> 
+<span data-ttu-id="3f845-104">Das **MoveFolder** -Element definiert eine Anforderung zum Migrieren eines Ordners in der Exchange-Informationsspeicher.</span><span class="sxs-lookup"><span data-stu-id="3f845-104">The **MoveFolder** element defines a request to move a folder in the Exchange store.</span></span> 
   
 ```xml
 <MoveFolder>
@@ -30,42 +30,42 @@ ms.locfileid: "19830485"
 </MoveFolder>
 ```
 
- <span data-ttu-id="e418b-105">**MoveFolderType**</span><span class="sxs-lookup"><span data-stu-id="e418b-105">**MoveFolderType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="e418b-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="e418b-106">Attributes and elements</span></span>
+ <span data-ttu-id="3f845-105">**MoveFolderType**</span><span class="sxs-lookup"><span data-stu-id="3f845-105">**MoveFolderType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="3f845-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="3f845-106">Attributes and elements</span></span>
 
-<span data-ttu-id="e418b-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="e418b-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="3f845-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="3f845-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="e418b-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="e418b-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="3f845-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="3f845-108">Attributes</span></span>
 
-<span data-ttu-id="e418b-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="e418b-109">None.</span></span>
+<span data-ttu-id="3f845-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="3f845-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="e418b-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e418b-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="3f845-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="3f845-110">Child elements</span></span>
 
-|<span data-ttu-id="e418b-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="e418b-111">**Element**</span></span>|<span data-ttu-id="e418b-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="e418b-112">**Description**</span></span>|
+|<span data-ttu-id="3f845-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="3f845-111">**Element**</span></span>|<span data-ttu-id="3f845-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="3f845-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="e418b-113">ToFolderId</span><span class="sxs-lookup"><span data-stu-id="e418b-113">ToFolderId</span></span>](tofolderid.md) <br/> |<span data-ttu-id="e418b-114">Stellt den Zielordner für einen Ordner verschoben.</span><span class="sxs-lookup"><span data-stu-id="e418b-114">Represents the destination folder for a moved folder.</span></span>  <br/> |
-|[<span data-ttu-id="e418b-115">FolderIds</span><span class="sxs-lookup"><span data-stu-id="e418b-115">FolderIds</span></span>](folderids.md) <br/> |<span data-ttu-id="e418b-116">Enthält ein Array der Ordner an, in den das Element [ToFolderId](tofolderid.md) identifizierten Ordner verschieben.</span><span class="sxs-lookup"><span data-stu-id="e418b-116">Contains an array of folders to move to the folder identified by the [ToFolderId](tofolderid.md) element.</span></span>  <br/> |
+|[<span data-ttu-id="3f845-113">Tofolder-Datei</span><span class="sxs-lookup"><span data-stu-id="3f845-113">ToFolderId</span></span>](tofolderid.md) <br/> |<span data-ttu-id="3f845-114">Stellt den Zielordner für einen verschobenen Ordner dar.</span><span class="sxs-lookup"><span data-stu-id="3f845-114">Represents the destination folder for a moved folder.</span></span>  <br/> |
+|[<span data-ttu-id="3f845-115">FolderIds</span><span class="sxs-lookup"><span data-stu-id="3f845-115">FolderIds</span></span>](folderids.md) <br/> |<span data-ttu-id="3f845-116">Enthält ein Array von Ordnern, die in den durch das [tofolder](tofolderid.md) -Element identifizierten Ordner zu navigieren.</span><span class="sxs-lookup"><span data-stu-id="3f845-116">Contains an array of folders to move to the folder identified by the [ToFolderId](tofolderid.md) element.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="e418b-117">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e418b-117">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="3f845-117">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="3f845-117">Parent elements</span></span>
 
-<span data-ttu-id="e418b-118">Keine.</span><span class="sxs-lookup"><span data-stu-id="e418b-118">None.</span></span>
+<span data-ttu-id="3f845-118">Keine.</span><span class="sxs-lookup"><span data-stu-id="3f845-118">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="e418b-119">Hinweise</span><span class="sxs-lookup"><span data-stu-id="e418b-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3f845-119">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="3f845-119">Remarks</span></span>
 
-<span data-ttu-id="e418b-120">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="e418b-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="3f845-120">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="3f845-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="e418b-121">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="e418b-121">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="3f845-121">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="3f845-121">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="e418b-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="e418b-122">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="e418b-123">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="e418b-123">Schema Name</span></span>  <br/> |<span data-ttu-id="e418b-124">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="e418b-124">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="e418b-125">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="e418b-125">Validation File</span></span>  <br/> |<span data-ttu-id="e418b-126">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="e418b-126">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="e418b-127">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="e418b-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="e418b-128">False</span><span class="sxs-lookup"><span data-stu-id="e418b-128">False</span></span>  <br/> |
+|<span data-ttu-id="3f845-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="3f845-122">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="3f845-123">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="3f845-123">Schema Name</span></span>  <br/> |<span data-ttu-id="3f845-124">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="3f845-124">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="3f845-125">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="3f845-125">Validation File</span></span>  <br/> |<span data-ttu-id="3f845-126">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="3f845-126">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="3f845-127">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="3f845-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="3f845-128">False</span><span class="sxs-lookup"><span data-stu-id="3f845-128">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="e418b-129">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e418b-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3f845-129">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="3f845-129">See also</span></span>
 
 
 
-[<span data-ttu-id="e418b-130">MoveFolder-Vorgang</span><span class="sxs-lookup"><span data-stu-id="e418b-130">MoveFolder operation</span></span>](movefolder-operation.md)
+[<span data-ttu-id="3f845-130">MoveFolder-Vorgang</span><span class="sxs-lookup"><span data-stu-id="3f845-130">MoveFolder operation</span></span>](movefolder-operation.md)
 

@@ -12,61 +12,61 @@ api_type:
 - schema
 ms.assetid: 96d81d6e-4b75-43ad-b151-2dd4fd57db94
 description: Das IsVoicemail -Element gibt an, ob eingehende Nachrichten Voicemailnachrichten in Reihenfolge für die Bedingung oder Ausnahme angewendet werden müssen.
-ms.openlocfilehash: 513498301aa65eaf0cac5769c940eeedf5c9e629
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 8c60513a54cbf2398fde4b71ab1fbcf8a5efb608
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830136"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458138"
 ---
-# <a name="isvoicemail"></a><span data-ttu-id="c0a10-103">IsVoicemail</span><span class="sxs-lookup"><span data-stu-id="c0a10-103">IsVoicemail</span></span>
+# <a name="isvoicemail"></a><span data-ttu-id="725c8-103">IsVoicemail</span><span class="sxs-lookup"><span data-stu-id="725c8-103">IsVoicemail</span></span>
 
-<span data-ttu-id="c0a10-104">Das **IsVoicemail** -Element gibt an, ob eingehende Nachrichten Voicemailnachrichten in Reihenfolge für die Bedingung oder Ausnahme angewendet werden müssen.</span><span class="sxs-lookup"><span data-stu-id="c0a10-104">The **IsVoicemail** element indicates whether incoming messages must be voice mail messages in order for the condition or exception to apply.</span></span> 
+<span data-ttu-id="725c8-104">Das **IsVoicemail** -Element gibt an, ob eingehende Nachrichten Voicemailnachrichten in Reihenfolge für die Bedingung oder Ausnahme angewendet werden müssen.</span><span class="sxs-lookup"><span data-stu-id="725c8-104">The **IsVoicemail** element indicates whether incoming messages must be voice mail messages in order for the condition or exception to apply.</span></span> 
   
 ```XML
 <IsVoicemail>true | false</IsVoicemail>
 ```
 
- <span data-ttu-id="c0a10-105">**Boolean**</span><span class="sxs-lookup"><span data-stu-id="c0a10-105">**Boolean**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="c0a10-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="c0a10-106">Attributes and elements</span></span>
+ <span data-ttu-id="725c8-105">**Boolean**</span><span class="sxs-lookup"><span data-stu-id="725c8-105">**Boolean**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="725c8-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="725c8-106">Attributes and elements</span></span>
 
-<span data-ttu-id="c0a10-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="c0a10-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="725c8-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="725c8-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="c0a10-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="c0a10-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="725c8-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="725c8-108">Attributes</span></span>
 
-<span data-ttu-id="c0a10-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="c0a10-109">None.</span></span>
+<span data-ttu-id="725c8-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="725c8-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="c0a10-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="c0a10-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="725c8-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="725c8-110">Child elements</span></span>
 
-<span data-ttu-id="c0a10-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="c0a10-111">None.</span></span>
+<span data-ttu-id="725c8-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="725c8-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="c0a10-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="c0a10-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="725c8-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="725c8-112">Parent elements</span></span>
 
-|<span data-ttu-id="c0a10-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="c0a10-113">**Element**</span></span>|<span data-ttu-id="c0a10-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="c0a10-114">**Description**</span></span>|
+|<span data-ttu-id="725c8-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="725c8-113">**Element**</span></span>|<span data-ttu-id="725c8-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="725c8-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="c0a10-115">Bedingungen</span><span class="sxs-lookup"><span data-stu-id="c0a10-115">Conditions</span></span>](conditions.md) <br/> |<span data-ttu-id="c0a10-116">Stellt die Bedingungen dar, bei deren Erfüllung die Regelaktionen für eine Regel ausgelöst werden.</span><span class="sxs-lookup"><span data-stu-id="c0a10-116">Represents the conditions that, when fulfilled, will trigger the rule actions for a rule.</span></span>  <br/> |
-|[<span data-ttu-id="c0a10-117">Ausnahmen</span><span class="sxs-lookup"><span data-stu-id="c0a10-117">Exceptions</span></span>](exceptions.md) <br/> |<span data-ttu-id="c0a10-118">Stellt die Ausnahmen, die alle verfügbaren Regel Ausnahmebedingungen für eine Posteingangsregel darstellen.</span><span class="sxs-lookup"><span data-stu-id="c0a10-118">Represents the exceptions that represent all the available rule exception conditions for an Inbox rule.</span></span>  <br/> |
+|[<span data-ttu-id="725c8-115">Bedingungen</span><span class="sxs-lookup"><span data-stu-id="725c8-115">Conditions</span></span>](conditions.md) <br/> |<span data-ttu-id="725c8-116">Stellt die Bedingungen dar, bei deren Erfüllung die Regelaktionen für eine Regel ausgelöst werden.</span><span class="sxs-lookup"><span data-stu-id="725c8-116">Represents the conditions that, when fulfilled, will trigger the rule actions for a rule.</span></span>  <br/> |
+|[<span data-ttu-id="725c8-117">Ausnahmen</span><span class="sxs-lookup"><span data-stu-id="725c8-117">Exceptions</span></span>](exceptions.md) <br/> |<span data-ttu-id="725c8-118">Stellt die Ausnahmen, die alle verfügbaren Regel Ausnahmebedingungen für eine Posteingangsregel darstellen.</span><span class="sxs-lookup"><span data-stu-id="725c8-118">Represents the exceptions that represent all the available rule exception conditions for an Inbox rule.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="c0a10-119">Textwert</span><span class="sxs-lookup"><span data-stu-id="c0a10-119">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="725c8-119">Textwert</span><span class="sxs-lookup"><span data-stu-id="725c8-119">Text value</span></span>
 
-<span data-ttu-id="c0a10-p101">Der Textwert **true** gibt an, dass die Nachricht eine Voicemailnachricht in Reihenfolge für die Bedingung oder Ausnahme angewendet werden muss. Der Wert **false** gibt an, dass die Nachricht keine Voicemailnachricht in Reihenfolge für die Bedingung oder Ausnahme angewendet werden muss.</span><span class="sxs-lookup"><span data-stu-id="c0a10-p101">A text value of **true** indicates that the message must be a voice mail message in order for the condition or exception to apply. A value of **false** indicates that the message must not be a voice mail message in order for the condition or exception to apply.</span></span> 
+<span data-ttu-id="725c8-p101">Der Textwert **true** gibt an, dass die Nachricht eine Voicemailnachricht in Reihenfolge für die Bedingung oder Ausnahme angewendet werden muss. Der Wert **false** gibt an, dass die Nachricht keine Voicemailnachricht in Reihenfolge für die Bedingung oder Ausnahme angewendet werden muss.</span><span class="sxs-lookup"><span data-stu-id="725c8-p101">A text value of **true** indicates that the message must be a voice mail message in order for the condition or exception to apply. A value of **false** indicates that the message must not be a voice mail message in order for the condition or exception to apply.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="c0a10-122">Hinweise</span><span class="sxs-lookup"><span data-stu-id="c0a10-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="725c8-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="725c8-122">Remarks</span></span>
 
-<span data-ttu-id="c0a10-123">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="c0a10-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="725c8-123">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="725c8-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="c0a10-124">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="c0a10-124">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="725c8-124">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="725c8-124">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="c0a10-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="c0a10-125">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="c0a10-126">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="c0a10-126">Schema Name</span></span>  <br/> |<span data-ttu-id="c0a10-127">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="c0a10-127">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="c0a10-128">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="c0a10-128">Validation File</span></span>  <br/> |<span data-ttu-id="c0a10-129">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="c0a10-129">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="c0a10-130">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="c0a10-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="c0a10-131">True</span><span class="sxs-lookup"><span data-stu-id="c0a10-131">True</span></span>  <br/> |
+|<span data-ttu-id="725c8-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="725c8-125">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="725c8-126">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="725c8-126">Schema Name</span></span>  <br/> |<span data-ttu-id="725c8-127">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="725c8-127">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="725c8-128">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="725c8-128">Validation File</span></span>  <br/> |<span data-ttu-id="725c8-129">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="725c8-129">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="725c8-130">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="725c8-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="725c8-131">True</span><span class="sxs-lookup"><span data-stu-id="725c8-131">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="c0a10-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="c0a10-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="725c8-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="725c8-132">See also</span></span>
 
 
 
-- [<span data-ttu-id="c0a10-133">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="c0a10-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="725c8-133">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="725c8-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
