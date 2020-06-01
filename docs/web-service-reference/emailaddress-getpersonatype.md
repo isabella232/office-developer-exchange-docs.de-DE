@@ -1,5 +1,5 @@
 ---
-title: EmailAddress (GetPersonaType)
+title: E-mailemail (getpersonatype)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 052055b5-4630-40ed-9b24-9e7f4bf7ba1d
-description: Das EmailAddress (GetPersonaType)-Element gibt die e-Mail-Adresse, die die Rolle zugeordnet.
-ms.openlocfilehash: a28a4a61a9719875fe99e1c950bcd3ec3af9ab13
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Address-Element (getpersonatype) gibt die e-Mail-Adresse an, die der Rolle zugeordnet ist.
+ms.openlocfilehash: b58f61202cd94ff282b21138b47b40887b38752a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758159"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463454"
 ---
-# <a name="emailaddress-getpersonatype"></a><span data-ttu-id="4dd24-103">EmailAddress (GetPersonaType)</span><span class="sxs-lookup"><span data-stu-id="4dd24-103">EmailAddress (GetPersonaType)</span></span>
+# <a name="emailaddress-getpersonatype"></a><span data-ttu-id="084fa-103">E-mailemail (getpersonatype)</span><span class="sxs-lookup"><span data-stu-id="084fa-103">EmailAddress (GetPersonaType)</span></span>
 
-<span data-ttu-id="4dd24-104">Das **EmailAddress (GetPersonaType)** -Element gibt die e-Mail-Adresse, die die Rolle zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="4dd24-104">The **EmailAddress (GetPersonaType)** element specifies the email address associated with the persona.</span></span> 
+<span data-ttu-id="084fa-104">Das Address-Element **(getpersonatype)** gibt die e-Mail-Adresse an, die der Rolle zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="084fa-104">The **EmailAddress (GetPersonaType)** element specifies the email address associated with the persona.</span></span> 
   
 ```XML
 <EmailAddress>
@@ -30,40 +30,40 @@ ms.locfileid: "19758159"
 </EmailAddress>>
 ```
 
- <span data-ttu-id="4dd24-105">**EmailAddressType**</span><span class="sxs-lookup"><span data-stu-id="4dd24-105">**EmailAddressType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="4dd24-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="4dd24-106">Attributes and elements</span></span>
+ <span data-ttu-id="084fa-105">**EmailAddressType**</span><span class="sxs-lookup"><span data-stu-id="084fa-105">**EmailAddressType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="084fa-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="084fa-106">Attributes and elements</span></span>
 
-<span data-ttu-id="4dd24-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="4dd24-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="084fa-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="084fa-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="4dd24-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="4dd24-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="084fa-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="084fa-108">Attributes</span></span>
 
-<span data-ttu-id="4dd24-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="4dd24-109">None.</span></span>
+<span data-ttu-id="084fa-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="084fa-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="4dd24-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="4dd24-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="084fa-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="084fa-110">Child elements</span></span>
 
-<span data-ttu-id="4dd24-111">[Name (Zeichenfolge)](name-string.md) | [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) | [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md) | [MailboxType](mailboxtype.md) | [ItemId](itemid.md) | [OriginalDisplayName](originaldisplayname.md)</span><span class="sxs-lookup"><span data-stu-id="4dd24-111">[Name (string)](name-string.md) | [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) | [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md) | [MailboxType](mailboxtype.md) | [ItemId](itemid.md) | [OriginalDisplayName](originaldisplayname.md)</span></span>
+<span data-ttu-id="084fa-111">[Name (Zeichenfolge)](name-string.md)  |  [E-mailemail (NonEmptyStringType)](emailaddress-nonemptystringtype.md)  |  [Routingtype (e-mailemailtype)](routingtype-emailaddresstype.md)  |  [Mailboxtype](mailboxtype.md)  |  [ItemID](itemid.md)  |  [OriginalDisplayName](originaldisplayname.md)</span><span class="sxs-lookup"><span data-stu-id="084fa-111">[Name (string)](name-string.md) | [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) | [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md) | [MailboxType](mailboxtype.md) | [ItemId](itemid.md) | [OriginalDisplayName](originaldisplayname.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="4dd24-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="4dd24-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="084fa-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="084fa-112">Parent elements</span></span>
 
-[<span data-ttu-id="4dd24-113">GetPersona</span><span class="sxs-lookup"><span data-stu-id="4dd24-113">GetPersona</span></span>](getpersona.md)
+[<span data-ttu-id="084fa-113">GetPersona</span><span class="sxs-lookup"><span data-stu-id="084fa-113">GetPersona</span></span>](getpersona.md)
   
-## <a name="remarks"></a><span data-ttu-id="4dd24-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="4dd24-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="084fa-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="084fa-114">Remarks</span></span>
 
-<span data-ttu-id="4dd24-115">Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="4dd24-115">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="084fa-115">Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="084fa-115">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
   
-<span data-ttu-id="4dd24-116">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="4dd24-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="084fa-116">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="084fa-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="4dd24-117">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="4dd24-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="084fa-117">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="084fa-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="4dd24-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="4dd24-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="4dd24-119">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="4dd24-119">Schema Name</span></span>  <br/> |<span data-ttu-id="4dd24-120">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="4dd24-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="4dd24-121">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="4dd24-121">Validation File</span></span>  <br/> |<span data-ttu-id="4dd24-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="4dd24-122">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="4dd24-123">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="4dd24-123">Can be Empty</span></span>  <br/> |<span data-ttu-id="4dd24-124">True</span><span class="sxs-lookup"><span data-stu-id="4dd24-124">True</span></span>  <br/> |
+|<span data-ttu-id="084fa-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="084fa-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="084fa-119">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="084fa-119">Schema Name</span></span>  <br/> |<span data-ttu-id="084fa-120">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="084fa-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="084fa-121">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="084fa-121">Validation File</span></span>  <br/> |<span data-ttu-id="084fa-122">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="084fa-122">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="084fa-123">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="084fa-123">Can be Empty</span></span>  <br/> |<span data-ttu-id="084fa-124">True</span><span class="sxs-lookup"><span data-stu-id="084fa-124">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="4dd24-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4dd24-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="084fa-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="084fa-125">See also</span></span>
 
-- [<span data-ttu-id="4dd24-126">GetPersona</span><span class="sxs-lookup"><span data-stu-id="4dd24-126">GetPersona</span></span>](getpersona.md)
-- [<span data-ttu-id="4dd24-127">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="4dd24-127">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="084fa-126">GetPersona</span><span class="sxs-lookup"><span data-stu-id="084fa-126">GetPersona</span></span>](getpersona.md)
+- [<span data-ttu-id="084fa-127">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="084fa-127">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

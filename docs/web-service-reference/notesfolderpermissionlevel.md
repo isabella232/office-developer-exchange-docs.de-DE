@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 76a2520c-f453-4fd7-b3eb-1c5f4666680a
-description: Das NotesFolderPermissionLevel-Element enthält die Berechtigungen für den Standardordner Notizen. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: dd8644210692e0c342079d055ddf00b8d9283d7d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das NotesFolderPermissionLevel-Element enthält die Berechtigungen für den standardmäßigen Notizenordner. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: 205802592a1fc01451b4fc497e9e0c4c66afd478
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830552"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462626"
 ---
-# <a name="notesfolderpermissionlevel"></a><span data-ttu-id="32517-104">NotesFolderPermissionLevel</span><span class="sxs-lookup"><span data-stu-id="32517-104">NotesFolderPermissionLevel</span></span>
+# <a name="notesfolderpermissionlevel"></a><span data-ttu-id="b7867-104">NotesFolderPermissionLevel</span><span class="sxs-lookup"><span data-stu-id="b7867-104">NotesFolderPermissionLevel</span></span>
 
-<span data-ttu-id="32517-105">Das **NotesFolderPermissionLevel** -Element enthält die Berechtigungen für den Standardordner Notizen.</span><span class="sxs-lookup"><span data-stu-id="32517-105">The **NotesFolderPermissionLevel** element contains the permissions for the default Notes folder.</span></span> <span data-ttu-id="32517-106">Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="32517-106">This element was introduced in Microsoft Exchange Server 2007 Service Pack 1 (SP1).</span></span> 
+<span data-ttu-id="b7867-105">Das **NotesFolderPermissionLevel** -Element enthält die Berechtigungen für den standardmäßigen Notizenordner.</span><span class="sxs-lookup"><span data-stu-id="b7867-105">The **NotesFolderPermissionLevel** element contains the permissions for the default Notes folder.</span></span> <span data-ttu-id="b7867-106">Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="b7867-106">This element was introduced in Microsoft Exchange Server 2007 Service Pack 1 (SP1).</span></span> 
   
 ```xml
 <NotesFolderPermissionLevel>
@@ -29,63 +29,63 @@ ms.locfileid: "19830552"
 </NotesFolderPermissionLevel>
 ```
 
- <span data-ttu-id="32517-107">**DelegateFolderPermissionLevelType**</span><span class="sxs-lookup"><span data-stu-id="32517-107">**DelegateFolderPermissionLevelType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="32517-108">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="32517-108">Attributes and elements</span></span>
+ <span data-ttu-id="b7867-107">**DelegateFolderPermissionLevelType**</span><span class="sxs-lookup"><span data-stu-id="b7867-107">**DelegateFolderPermissionLevelType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="b7867-108">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="b7867-108">Attributes and elements</span></span>
 
-<span data-ttu-id="32517-109">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="32517-109">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="b7867-109">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="b7867-109">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="32517-110">Attribute</span><span class="sxs-lookup"><span data-stu-id="32517-110">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="b7867-110">Attribute</span><span class="sxs-lookup"><span data-stu-id="b7867-110">Attributes</span></span>
 
-<span data-ttu-id="32517-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="32517-111">None.</span></span>
+<span data-ttu-id="b7867-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="b7867-111">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="32517-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="32517-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="b7867-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="b7867-112">Child elements</span></span>
 
-<span data-ttu-id="32517-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="32517-113">None.</span></span>
+<span data-ttu-id="b7867-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="b7867-113">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="32517-114">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="32517-114">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="b7867-114">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="b7867-114">Parent elements</span></span>
 
-|<span data-ttu-id="32517-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="32517-115">**Element**</span></span>|<span data-ttu-id="32517-116">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="32517-116">**Description**</span></span>|
+|<span data-ttu-id="b7867-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="b7867-115">**Element**</span></span>|<span data-ttu-id="b7867-116">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="b7867-116">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="32517-117">DelegatePermissions</span><span class="sxs-lookup"><span data-stu-id="32517-117">DelegatePermissions</span></span>](delegatepermissions.md) <br/> |<span data-ttu-id="32517-118">Die Stellvertretung die berechtigungseinstellungen auf Poolebene für einen Benutzer enthält.</span><span class="sxs-lookup"><span data-stu-id="32517-118">Contains the delegate permission level settings for a user.</span></span> <span data-ttu-id="32517-119">Dieses Element wurde in Exchange 2007 SP1 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="32517-119">This element was introduced in Exchange 2007 SP1.</span></span>  <br/> |
+|[<span data-ttu-id="b7867-117">DelegatePermissions</span><span class="sxs-lookup"><span data-stu-id="b7867-117">DelegatePermissions</span></span>](delegatepermissions.md) <br/> |<span data-ttu-id="b7867-118">Enthält die Einstellungen für die Stell Vertretungs Berechtigungsstufe für einen Benutzer.</span><span class="sxs-lookup"><span data-stu-id="b7867-118">Contains the delegate permission level settings for a user.</span></span> <span data-ttu-id="b7867-119">Dieses Element wurde in Exchange 2007 SP1 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="b7867-119">This element was introduced in Exchange 2007 SP1.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="32517-120">Textwert</span><span class="sxs-lookup"><span data-stu-id="32517-120">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="b7867-120">Textwert</span><span class="sxs-lookup"><span data-stu-id="b7867-120">Text value</span></span>
 
-<span data-ttu-id="32517-121">Die folgende Tabelle enthält die Textwerte, die die Berechtigungsstufen darstellen.</span><span class="sxs-lookup"><span data-stu-id="32517-121">The following table lists the text values that represent the permission levels.</span></span>
+<span data-ttu-id="b7867-121">In der folgenden Tabelle sind die Textwerte aufgeführt, die die Berechtigungsstufen darstellen.</span><span class="sxs-lookup"><span data-stu-id="b7867-121">The following table lists the text values that represent the permission levels.</span></span>
   
-<span data-ttu-id="32517-122">**Ebene Text Berechtigungswerte**</span><span class="sxs-lookup"><span data-stu-id="32517-122">**Permission level text values**</span></span>
+<span data-ttu-id="b7867-122">**Text Werte für Berechtigungsstufen**</span><span class="sxs-lookup"><span data-stu-id="b7867-122">**Permission level text values**</span></span>
 
-|<span data-ttu-id="32517-123">**Berechtigungsstufe**</span><span class="sxs-lookup"><span data-stu-id="32517-123">**Permission level**</span></span>|<span data-ttu-id="32517-124">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="32517-124">**Description**</span></span>|
+|<span data-ttu-id="b7867-123">**Berechtigungsstufe**</span><span class="sxs-lookup"><span data-stu-id="b7867-123">**Permission level**</span></span>|<span data-ttu-id="b7867-124">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="b7867-124">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="32517-125">Keine</span><span class="sxs-lookup"><span data-stu-id="32517-125">None</span></span>  <br/> |<span data-ttu-id="32517-126">Stellvertretungsbenutzers verfügt über keine Access-Berechtigungen auf den Ordner "Notizen".</span><span class="sxs-lookup"><span data-stu-id="32517-126">The delegate user has no access permissions to the Notes folder.</span></span>  <br/> |
-|<span data-ttu-id="32517-127">Prüfer</span><span class="sxs-lookup"><span data-stu-id="32517-127">Reviewer</span></span>  <br/> |<span data-ttu-id="32517-128">Stellvertretungsbenutzers kann Elemente im Ordner "Notizen" lesen.</span><span class="sxs-lookup"><span data-stu-id="32517-128">The delegate user can read items in the Notes folder.</span></span>  <br/> |
-|<span data-ttu-id="32517-129">Autor</span><span class="sxs-lookup"><span data-stu-id="32517-129">Author</span></span>  <br/> |<span data-ttu-id="32517-130">Stellvertretungsbenutzers lesen und Erstellen von Elementen im Ordner "Notizen".</span><span class="sxs-lookup"><span data-stu-id="32517-130">The delegate user can read and create items in the Notes folder.</span></span>  <br/> |
-|<span data-ttu-id="32517-131">Herausgeber</span><span class="sxs-lookup"><span data-stu-id="32517-131">Editor</span></span>  <br/> |<span data-ttu-id="32517-132">Stellvertretungsbenutzers kann lesen, erstellen und Ändern von Elementen im Ordner "Notizen".</span><span class="sxs-lookup"><span data-stu-id="32517-132">The delegate user can read, create, and modify items in the Notes folder.</span></span>  <br/> |
-|<span data-ttu-id="32517-133">Benutzerdefiniert</span><span class="sxs-lookup"><span data-stu-id="32517-133">Custom</span></span>  <br/> |<span data-ttu-id="32517-134">Stellvertretungsbenutzers verfügt über benutzerdefinierten Zugriff für den Ordner "Notizen".</span><span class="sxs-lookup"><span data-stu-id="32517-134">The delegate user has custom access permissions to the Notes folder.</span></span>  <br/> |
+|<span data-ttu-id="b7867-125">Keine</span><span class="sxs-lookup"><span data-stu-id="b7867-125">None</span></span>  <br/> |<span data-ttu-id="b7867-126">Der Stellvertreter Benutzer verfügt über keine Zugriffsberechtigungen für den Ordner Notizen.</span><span class="sxs-lookup"><span data-stu-id="b7867-126">The delegate user has no access permissions to the Notes folder.</span></span>  <br/> |
+|<span data-ttu-id="b7867-127">Reviewer</span><span class="sxs-lookup"><span data-stu-id="b7867-127">Reviewer</span></span>  <br/> |<span data-ttu-id="b7867-128">Der Stellvertreter kann Elemente im Ordner "Notizen" lesen.</span><span class="sxs-lookup"><span data-stu-id="b7867-128">The delegate user can read items in the Notes folder.</span></span>  <br/> |
+|<span data-ttu-id="b7867-129">Ursprung</span><span class="sxs-lookup"><span data-stu-id="b7867-129">Author</span></span>  <br/> |<span data-ttu-id="b7867-130">Der Stellvertreter Benutzer kann Elemente im Ordner "Notizen" lesen und erstellen.</span><span class="sxs-lookup"><span data-stu-id="b7867-130">The delegate user can read and create items in the Notes folder.</span></span>  <br/> |
+|<span data-ttu-id="b7867-131">Editor</span><span class="sxs-lookup"><span data-stu-id="b7867-131">Editor</span></span>  <br/> |<span data-ttu-id="b7867-132">Der Stellvertreter Benutzer kann Elemente im Ordner "Notizen" lesen, erstellen und ändern.</span><span class="sxs-lookup"><span data-stu-id="b7867-132">The delegate user can read, create, and modify items in the Notes folder.</span></span>  <br/> |
+|<span data-ttu-id="b7867-133">Benutzerdefiniert</span><span class="sxs-lookup"><span data-stu-id="b7867-133">Custom</span></span>  <br/> |<span data-ttu-id="b7867-134">Der Stellvertreter Benutzer verfügt über benutzerdefinierte Zugriffsberechtigungen für den Ordner Notizen.</span><span class="sxs-lookup"><span data-stu-id="b7867-134">The delegate user has custom access permissions to the Notes folder.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="32517-135">Hinweise</span><span class="sxs-lookup"><span data-stu-id="32517-135">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b7867-135">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="b7867-135">Remarks</span></span>
 
-<span data-ttu-id="32517-136">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="32517-136">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="b7867-136">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="b7867-136">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="32517-137">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="32517-137">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="b7867-137">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="b7867-137">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="32517-138">Namespace</span><span class="sxs-lookup"><span data-stu-id="32517-138">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="32517-139">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="32517-139">Schema Name</span></span>  <br/> |<span data-ttu-id="32517-140">Schematypen</span><span class="sxs-lookup"><span data-stu-id="32517-140">Types schema</span></span>  <br/> |
-|<span data-ttu-id="32517-141">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="32517-141">Validation File</span></span>  <br/> |<span data-ttu-id="32517-142">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="32517-142">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="32517-143">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="32517-143">Can be Empty</span></span>  <br/> |<span data-ttu-id="32517-144">False</span><span class="sxs-lookup"><span data-stu-id="32517-144">False</span></span>  <br/> |
+|<span data-ttu-id="b7867-138">Namespace</span><span class="sxs-lookup"><span data-stu-id="b7867-138">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="b7867-139">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="b7867-139">Schema Name</span></span>  <br/> |<span data-ttu-id="b7867-140">Schematypen</span><span class="sxs-lookup"><span data-stu-id="b7867-140">Types schema</span></span>  <br/> |
+|<span data-ttu-id="b7867-141">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="b7867-141">Validation File</span></span>  <br/> |<span data-ttu-id="b7867-142">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="b7867-142">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="b7867-143">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="b7867-143">Can be Empty</span></span>  <br/> |<span data-ttu-id="b7867-144">False</span><span class="sxs-lookup"><span data-stu-id="b7867-144">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="32517-145">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="32517-145">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b7867-145">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b7867-145">See also</span></span>
 
 
 
-[<span data-ttu-id="32517-146">AddDelegate-Vorgang</span><span class="sxs-lookup"><span data-stu-id="32517-146">AddDelegate operation</span></span>](adddelegate-operation.md)
+[<span data-ttu-id="b7867-146">AddDelegate-Vorgang</span><span class="sxs-lookup"><span data-stu-id="b7867-146">AddDelegate operation</span></span>](adddelegate-operation.md)
   
-[<span data-ttu-id="32517-147">UpdateDelegate-Vorgang</span><span class="sxs-lookup"><span data-stu-id="32517-147">UpdateDelegate operation</span></span>](updatedelegate-operation.md)
+[<span data-ttu-id="b7867-147">UpdateDelegate-Vorgang</span><span class="sxs-lookup"><span data-stu-id="b7867-147">UpdateDelegate operation</span></span>](updatedelegate-operation.md)
 
 
-- [<span data-ttu-id="32517-148">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="32517-148">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="b7867-148">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="b7867-148">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
 
-[<span data-ttu-id="32517-149">Hinzufügen von Stellvertretungen</span><span class="sxs-lookup"><span data-stu-id="32517-149">Adding Delegates</span></span>](http://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+[<span data-ttu-id="b7867-149">Hinzufügen von Stellvertretungen</span><span class="sxs-lookup"><span data-stu-id="b7867-149">Adding Delegates</span></span>](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

@@ -11,61 +11,61 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6fd41b7b-6c83-43b6-8b16-0bdb3d173d73
-description: Das StartDateTime-Element gibt das Startdatum und die Uhrzeit für eine Regel oder eine Suche.
-ms.openlocfilehash: 4bc32ed5626d692fc73dfa8bd7c46923aba72f9e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das startdate-Element gibt das Startdatum und die Startzeit für eine Regel oder eine Suche an.
+ms.openlocfilehash: 28b78fad87abb1148cfe49fee4f9bb98f822eae5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831552"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462843"
 ---
-# <a name="startdatetime"></a><span data-ttu-id="41dfb-103">StartDateTime</span><span class="sxs-lookup"><span data-stu-id="41dfb-103">StartDateTime</span></span>
+# <a name="startdatetime"></a><span data-ttu-id="cc85c-103">StartDateTime</span><span class="sxs-lookup"><span data-stu-id="cc85c-103">StartDateTime</span></span>
 
-<span data-ttu-id="41dfb-104">Das **StartDateTime** -Element gibt das Startdatum und die Uhrzeit für eine Regel oder eine Suche.</span><span class="sxs-lookup"><span data-stu-id="41dfb-104">The **StartDateTime** element specifies the start date and time for a rule or a search.</span></span> 
+<span data-ttu-id="cc85c-104">Das startdate **-Element gibt das Start** Datum und die Startzeit für eine Regel oder eine Suche an.</span><span class="sxs-lookup"><span data-stu-id="cc85c-104">The **StartDateTime** element specifies the start date and time for a rule or a search.</span></span> 
   
 ```XML
 <StartDate/>
 ```
 
-<span data-ttu-id="41dfb-105">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="41dfb-105">**dateTime**</span></span>
+<span data-ttu-id="cc85c-105">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="cc85c-105">**dateTime**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="41dfb-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="41dfb-106">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="cc85c-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="cc85c-106">Attributes and elements</span></span>
 
-<span data-ttu-id="41dfb-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="41dfb-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="cc85c-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="cc85c-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="41dfb-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="41dfb-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="cc85c-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="cc85c-108">Attributes</span></span>
 
-<span data-ttu-id="41dfb-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="41dfb-109">None.</span></span>
+<span data-ttu-id="cc85c-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="cc85c-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="41dfb-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="41dfb-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="cc85c-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="cc85c-110">Child elements</span></span>
 
-<span data-ttu-id="41dfb-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="41dfb-111">None.</span></span>
+<span data-ttu-id="cc85c-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="cc85c-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="41dfb-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="41dfb-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="cc85c-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="cc85c-112">Parent elements</span></span>
 
-|<span data-ttu-id="41dfb-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="41dfb-113">**Element**</span></span>|<span data-ttu-id="41dfb-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="41dfb-114">**Description**</span></span>|
+|<span data-ttu-id="cc85c-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="cc85c-113">**Element**</span></span>|<span data-ttu-id="cc85c-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="cc85c-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="41dfb-115">FindMessageTrackingReport</span><span class="sxs-lookup"><span data-stu-id="41dfb-115">FindMessageTrackingReport</span></span>](findmessagetrackingreport.md) <br/> |<span data-ttu-id="41dfb-116">Gibt Kriterien für die Typen von Nachrichten suchen.</span><span class="sxs-lookup"><span data-stu-id="41dfb-116">Specifies criteria for the types of messages to find.</span></span>  <br/> |
-|[<span data-ttu-id="41dfb-117">WithinDateRange</span><span class="sxs-lookup"><span data-stu-id="41dfb-117">WithinDateRange</span></span>](withindaterange.md) <br/> |<span data-ttu-id="41dfb-118">Gibt den Datumsbereich, in dem eingehende Nachrichten müssen in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende empfangen wurden.</span><span class="sxs-lookup"><span data-stu-id="41dfb-118">Specifies the date range within which incoming messages have to have been received in order for the condition or exception to apply.</span></span>  <br/> |
+|[<span data-ttu-id="cc85c-115">FindMessageTrackingReport</span><span class="sxs-lookup"><span data-stu-id="cc85c-115">FindMessageTrackingReport</span></span>](findmessagetrackingreport.md) <br/> |<span data-ttu-id="cc85c-116">Gibt Kriterien für die Typen von Nachrichten an, die gesucht werden sollen.</span><span class="sxs-lookup"><span data-stu-id="cc85c-116">Specifies criteria for the types of messages to find.</span></span>  <br/> |
+|[<span data-ttu-id="cc85c-117">WithinDateRange</span><span class="sxs-lookup"><span data-stu-id="cc85c-117">WithinDateRange</span></span>](withindaterange.md) <br/> |<span data-ttu-id="cc85c-118">Gibt den Datumsbereich an, innerhalb dessen eingehende Nachrichten empfangen werden müssen, damit die Bedingung oder Ausnahme zutrifft.</span><span class="sxs-lookup"><span data-stu-id="cc85c-118">Specifies the date range within which incoming messages have to have been received in order for the condition or exception to apply.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="41dfb-119">Textwert</span><span class="sxs-lookup"><span data-stu-id="41dfb-119">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="cc85c-119">Textwert</span><span class="sxs-lookup"><span data-stu-id="cc85c-119">Text value</span></span>
 
- <span data-ttu-id="41dfb-120">Ein Textwert, der einen Datum/Uhrzeit darstellt ist erforderlich, wenn dieses Element verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="41dfb-120">A text value that represents a date/time is required if this element is used.</span></span> 
+ <span data-ttu-id="cc85c-120">Ein Textwert, der eine Datum/Uhrzeit darstellt, ist erforderlich, wenn dieses Element verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="cc85c-120">A text value that represents a date/time is required if this element is used.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="41dfb-121">Hinweise</span><span class="sxs-lookup"><span data-stu-id="41dfb-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cc85c-121">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="cc85c-121">Remarks</span></span>
 
-<span data-ttu-id="41dfb-122">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="41dfb-122">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="cc85c-122">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="cc85c-122">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="41dfb-123">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="41dfb-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="cc85c-123">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="cc85c-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="41dfb-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="41dfb-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="41dfb-125">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="41dfb-125">Schema Name</span></span>  <br/> |<span data-ttu-id="41dfb-126">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="41dfb-126">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="41dfb-127">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="41dfb-127">Validation File</span></span>  <br/> |<span data-ttu-id="41dfb-128">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="41dfb-128">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="41dfb-129">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="41dfb-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="41dfb-130">False</span><span class="sxs-lookup"><span data-stu-id="41dfb-130">False</span></span>  <br/> |
+|<span data-ttu-id="cc85c-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="cc85c-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="cc85c-125">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="cc85c-125">Schema Name</span></span>  <br/> |<span data-ttu-id="cc85c-126">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="cc85c-126">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="cc85c-127">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="cc85c-127">Validation File</span></span>  <br/> |<span data-ttu-id="cc85c-128">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="cc85c-128">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="cc85c-129">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="cc85c-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="cc85c-130">False</span><span class="sxs-lookup"><span data-stu-id="cc85c-130">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="41dfb-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="41dfb-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cc85c-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="cc85c-131">See also</span></span>
 
-- [<span data-ttu-id="41dfb-132">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="41dfb-132">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="cc85c-132">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="cc85c-132">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

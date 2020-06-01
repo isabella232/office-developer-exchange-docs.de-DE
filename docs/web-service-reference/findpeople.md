@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 12c70441-77b9-4619-8e66-1b7e3a63ba48
-description: 'Das FindPeople-Element gibt einen Satz von Daten in einer Anforderung FindPeople verwendet. Die Daten enthalten, 0 (null) oder mehrere der folgenden Elemente: eine Rolle Form (optional), einem indizierten Element Seitenansicht, eine Einschränkung (optional), eine Aggregation Einschränkung (optional), eine Sortierreihenfolge (optional), eine Id des übergeordneten Ordners und eine Abfragezeichenfolge (optional).'
-ms.openlocfilehash: 79c8a4324cd217232442b781c33223296d8015e5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 'Das FindPeople-Element gibt eine Gruppe von Daten an, die in einer FindPeople-Anforderung verwendet werden. Die Daten enthalten keine oder mehrere der folgenden Elemente: eine persona-Form (optional), eine indizierte Seitenelement Ansicht, eine Einschränkung (optional), eine Aggregations Einschränkung (optional), eine Sortierreihenfolge (optional), eine übergeordnete Ordner-ID und eine Abfragezeichenfolge (optional).'
+ms.openlocfilehash: 4777601b7146ec857b5c79fa9d4ced59a7247889
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758473"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462901"
 ---
-# <a name="findpeople"></a><span data-ttu-id="9cb38-104">FindPeople</span><span class="sxs-lookup"><span data-stu-id="9cb38-104">FindPeople</span></span>
+# <a name="findpeople"></a><span data-ttu-id="da28b-104">FindPeople</span><span class="sxs-lookup"><span data-stu-id="da28b-104">FindPeople</span></span>
 
-<span data-ttu-id="9cb38-105">Das **FindPeople** -Element gibt einen Satz von Daten in einer Anforderung FindPeople verwendet.</span><span class="sxs-lookup"><span data-stu-id="9cb38-105">The **FindPeople** element specifies a set of data used in a FindPeople request.</span></span> <span data-ttu-id="9cb38-106">Die Daten enthalten, 0 (null) oder mehrere der folgenden Elemente: eine Rolle Form (optional), einem indizierten Element Seitenansicht, eine Einschränkung (optional), eine Aggregation Einschränkung (optional), eine Sortierreihenfolge (optional), eine Id des übergeordneten Ordners und eine Abfragezeichenfolge (optional).</span><span class="sxs-lookup"><span data-stu-id="9cb38-106">The data includes zero or more of the following elements: a persona shape (optional), an indexed page item view, a restriction (optional), an aggregation restriction (optional), a sort order (optional), a parent folder Id, and a query string (optional).</span></span> 
+<span data-ttu-id="da28b-105">Das **FindPeople** -Element gibt eine Gruppe von Daten an, die in einer FindPeople-Anforderung verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="da28b-105">The **FindPeople** element specifies a set of data used in a FindPeople request.</span></span> <span data-ttu-id="da28b-106">Die Daten enthalten keine oder mehrere der folgenden Elemente: eine persona-Form (optional), eine indizierte Seitenelement Ansicht, eine Einschränkung (optional), eine Aggregations Einschränkung (optional), eine Sortierreihenfolge (optional), eine übergeordnete Ordner-ID und eine Abfragezeichenfolge (optional).</span><span class="sxs-lookup"><span data-stu-id="da28b-106">The data includes zero or more of the following elements: a persona shape (optional), an indexed page item view, a restriction (optional), an aggregation restriction (optional), a sort order (optional), a parent folder Id, and a query string (optional).</span></span> 
   
 ```XML
 <FindPeople>
@@ -31,36 +31,36 @@ ms.locfileid: "19758473"
 </FindPeople>
 ```
 
- <span data-ttu-id="9cb38-107">**FindPeopleType**</span><span class="sxs-lookup"><span data-stu-id="9cb38-107">**FindPeopleType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="9cb38-108">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="9cb38-108">Attributes and elements</span></span>
+ <span data-ttu-id="da28b-107">**FindPeopleType**</span><span class="sxs-lookup"><span data-stu-id="da28b-107">**FindPeopleType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="da28b-108">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="da28b-108">Attributes and elements</span></span>
 
-<span data-ttu-id="9cb38-109">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="9cb38-109">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="da28b-109">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="da28b-109">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="9cb38-110">Attribute</span><span class="sxs-lookup"><span data-stu-id="9cb38-110">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="da28b-110">Attribute</span><span class="sxs-lookup"><span data-stu-id="da28b-110">Attributes</span></span>
 
-<span data-ttu-id="9cb38-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="9cb38-111">None.</span></span>
+<span data-ttu-id="da28b-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="da28b-111">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="9cb38-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="9cb38-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="da28b-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="da28b-112">Child elements</span></span>
 
-<span data-ttu-id="9cb38-113">[PersonaShape](personashape.md) | [IndexedPageItemView](indexedpageitemview.md) | [Einschränkung](restriction.md) | [AggregationRestriction](aggregationrestriction.md) | [SortOrder](sortorder.md) | [ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)  |  [ QueryString (QueryStringType)](querystring-querystringtype.md)</span><span class="sxs-lookup"><span data-stu-id="9cb38-113">[PersonaShape](personashape.md) | [IndexedPageItemView](indexedpageitemview.md) | [Restriction](restriction.md) | [AggregationRestriction](aggregationrestriction.md) | [SortOrder](sortorder.md) | [ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) | [QueryString (QueryStringType)](querystring-querystringtype.md)</span></span>
+<span data-ttu-id="da28b-113">[PersonaShape](personashape.md)  |  [IndexedPageItemView](indexedpageitemview.md)  |  [Einschränkung](restriction.md)  |  [AggregationRestriction](aggregationrestriction.md)  |  [Sortierreihenfolge](sortorder.md)  |  [Parentfolderid (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)  |  [QueryString (](querystring-querystringtype.md) querystringtype)</span><span class="sxs-lookup"><span data-stu-id="da28b-113">[PersonaShape](personashape.md) | [IndexedPageItemView](indexedpageitemview.md) | [Restriction](restriction.md) | [AggregationRestriction](aggregationrestriction.md) | [SortOrder](sortorder.md) | [ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) | [QueryString (QueryStringType)](querystring-querystringtype.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="9cb38-114">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="9cb38-114">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="da28b-114">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="da28b-114">Parent elements</span></span>
 
-<span data-ttu-id="9cb38-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="9cb38-115">None.</span></span>
+<span data-ttu-id="da28b-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="da28b-115">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="9cb38-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="9cb38-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="da28b-116">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="da28b-116">Remarks</span></span>
 
-<span data-ttu-id="9cb38-117">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="9cb38-117">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="da28b-117">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="da28b-117">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="9cb38-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="9cb38-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="da28b-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="da28b-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="9cb38-119">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="9cb38-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="da28b-119">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="da28b-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="9cb38-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="9cb38-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="9cb38-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="9cb38-121">Schema name</span></span>  <br/> |<span data-ttu-id="9cb38-122">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="9cb38-122">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="9cb38-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="9cb38-123">Validation file</span></span>  <br/> |<span data-ttu-id="9cb38-124">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="9cb38-124">messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="9cb38-125">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="9cb38-125">Can be empty</span></span>  <br/> |<span data-ttu-id="9cb38-126">false</span><span class="sxs-lookup"><span data-stu-id="9cb38-126">false</span></span>  <br/> |
+|<span data-ttu-id="da28b-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="da28b-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="da28b-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="da28b-121">Schema name</span></span>  <br/> |<span data-ttu-id="da28b-122">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="da28b-122">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="da28b-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="da28b-123">Validation file</span></span>  <br/> |<span data-ttu-id="da28b-124">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="da28b-124">messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="da28b-125">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="da28b-125">Can be empty</span></span>  <br/> |<span data-ttu-id="da28b-126">false</span><span class="sxs-lookup"><span data-stu-id="da28b-126">false</span></span>  <br/> |
    
 

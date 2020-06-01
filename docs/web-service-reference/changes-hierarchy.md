@@ -11,25 +11,25 @@ api_name:
 api_type:
 - schema
 ms.assetid: 918a0d1f-90a5-4eef-9592-07e15bef94e6
-description: Das Änderungen-Element enthält eine sequenzierten Array von Änderungstypen, die den Typ der Unterschiede zwischen den Ordnern auf dem Client und die Ordner auf dem Computer mit Microsoft Exchange Server 2007 darstellen.
-ms.openlocfilehash: 15e4f9f37c5e4a4083260dcf379a49beb2260030
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Changes-Element enthält ein sequenziertes Array von Änderungstypen, die die Art der Unterschiede zwischen den Ordnern auf dem Client und den Ordnern auf dem Computer mit Microsoft Exchange Server 2007 darstellen.
+ms.openlocfilehash: a296d87f23e85d42b4c8c858e92eddfb586a8324
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757565"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463272"
 ---
-# <a name="changes-hierarchy"></a><span data-ttu-id="1b599-103">Änderungen (Hierarchie)</span><span class="sxs-lookup"><span data-stu-id="1b599-103">Changes (Hierarchy)</span></span>
+# <a name="changes-hierarchy"></a><span data-ttu-id="cb6e1-103">Änderungen (Hierarchie)</span><span class="sxs-lookup"><span data-stu-id="cb6e1-103">Changes (Hierarchy)</span></span>
 
-<span data-ttu-id="1b599-104">Das **Änderungen** -Element enthält eine sequenzierten Array von Änderungstypen, die den Typ der Unterschiede zwischen den Ordnern auf dem Client und die Ordner auf dem Computer mit Microsoft Exchange Server 2007 darstellen.</span><span class="sxs-lookup"><span data-stu-id="1b599-104">The **Changes** element contains a sequenced array of change types that represent the type of differences between the folders on the client and the folders on the computer that is running Microsoft Exchange Server 2007.</span></span> 
+<span data-ttu-id="cb6e1-104">Das **Changes** -Element enthält ein sequenziertes Array von Änderungstypen, die die Art der Unterschiede zwischen den Ordnern auf dem Client und den Ordnern auf dem Computer mit Microsoft Exchange Server 2007 darstellen.</span><span class="sxs-lookup"><span data-stu-id="cb6e1-104">The **Changes** element contains a sequenced array of change types that represent the type of differences between the folders on the client and the folders on the computer that is running Microsoft Exchange Server 2007.</span></span> 
   
-[<span data-ttu-id="1b599-105">SyncFolderHierarchyResponse</span><span class="sxs-lookup"><span data-stu-id="1b599-105">SyncFolderHierarchyResponse</span></span>](syncfolderhierarchyresponse.md)
+[<span data-ttu-id="cb6e1-105">SyncFolderHierarchyResponse</span><span class="sxs-lookup"><span data-stu-id="cb6e1-105">SyncFolderHierarchyResponse</span></span>](syncfolderhierarchyresponse.md)
   
-[<span data-ttu-id="1b599-106">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="1b599-106">ResponseMessages</span></span>](responsemessages.md)
+[<span data-ttu-id="cb6e1-106">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="cb6e1-106">ResponseMessages</span></span>](responsemessages.md)
   
-[<span data-ttu-id="1b599-107">SyncFolderHierarchyResponseMessage</span><span class="sxs-lookup"><span data-stu-id="1b599-107">SyncFolderHierarchyResponseMessage</span></span>](syncfolderhierarchyresponsemessage.md)
+[<span data-ttu-id="cb6e1-107">SyncFolderHierarchyResponseMessage</span><span class="sxs-lookup"><span data-stu-id="cb6e1-107">SyncFolderHierarchyResponseMessage</span></span>](syncfolderhierarchyresponsemessage.md)
   
-[<span data-ttu-id="1b599-108">Änderungen (Hierarchie)</span><span class="sxs-lookup"><span data-stu-id="1b599-108">Changes (Hierarchy)</span></span>](changes-hierarchy.md)
+[<span data-ttu-id="cb6e1-108">Änderungen (Hierarchie)</span><span class="sxs-lookup"><span data-stu-id="cb6e1-108">Changes (Hierarchy)</span></span>](changes-hierarchy.md)
   
 ```xml
 <Changes>
@@ -39,54 +39,54 @@ ms.locfileid: "19757565"
 </Changes>
 ```
 
- <span data-ttu-id="1b599-109">**SyncFolderHierarchyChangesType**</span><span class="sxs-lookup"><span data-stu-id="1b599-109">**SyncFolderHierarchyChangesType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="1b599-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="1b599-110">Attributes and elements</span></span>
+ <span data-ttu-id="cb6e1-109">**SyncFolderHierarchyChangesType**</span><span class="sxs-lookup"><span data-stu-id="cb6e1-109">**SyncFolderHierarchyChangesType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="cb6e1-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="cb6e1-110">Attributes and elements</span></span>
 
-<span data-ttu-id="1b599-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="1b599-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="cb6e1-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="cb6e1-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="1b599-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="1b599-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="cb6e1-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="cb6e1-112">Attributes</span></span>
 
-<span data-ttu-id="1b599-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="1b599-113">None.</span></span>
+<span data-ttu-id="cb6e1-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="cb6e1-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="1b599-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1b599-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="cb6e1-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="cb6e1-114">Child elements</span></span>
 
-|<span data-ttu-id="1b599-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="1b599-115">**Element**</span></span>|<span data-ttu-id="1b599-116">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="1b599-116">**Description**</span></span>|
+|<span data-ttu-id="cb6e1-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="cb6e1-115">**Element**</span></span>|<span data-ttu-id="cb6e1-116">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="cb6e1-116">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="1b599-117">Erstellen (FolderSync)</span><span class="sxs-lookup"><span data-stu-id="1b599-117">Create (FolderSync)</span></span>](create-foldersync.md) <br/> |<span data-ttu-id="1b599-118">Gibt einen einzelnen Ordner im lokalen Client-Speicher zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="1b599-118">Identifies a single folder to create in the local client store.</span></span>  <br/> |
-|[<span data-ttu-id="1b599-119">Update (FolderSync)</span><span class="sxs-lookup"><span data-stu-id="1b599-119">Update (FolderSync)</span></span>](update-foldersync.md) <br/> |<span data-ttu-id="1b599-120">Gibt einen einzelnen Ordner, in den lokalen Client-Speicher zu aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="1b599-120">Identifies a single folder to update in the local client store.</span></span>  <br/> |
-|[<span data-ttu-id="1b599-121">Delete (FolderSync)</span><span class="sxs-lookup"><span data-stu-id="1b599-121">Delete (FolderSync)</span></span>](delete-foldersync.md) <br/> |<span data-ttu-id="1b599-122">Gibt einen einzelnen Ordner im lokalen Client-Speicher zu löschen.</span><span class="sxs-lookup"><span data-stu-id="1b599-122">Identifies a single folder to delete in the local client store.</span></span>  <br/> |
+|[<span data-ttu-id="cb6e1-117">Erstellen (FolderSync)</span><span class="sxs-lookup"><span data-stu-id="cb6e1-117">Create (FolderSync)</span></span>](create-foldersync.md) <br/> |<span data-ttu-id="cb6e1-118">Gibt einen einzelnen Ordner an, der im lokalen Clientspeicher erstellt werden soll.</span><span class="sxs-lookup"><span data-stu-id="cb6e1-118">Identifies a single folder to create in the local client store.</span></span>  <br/> |
+|[<span data-ttu-id="cb6e1-119">Update (FolderSync)</span><span class="sxs-lookup"><span data-stu-id="cb6e1-119">Update (FolderSync)</span></span>](update-foldersync.md) <br/> |<span data-ttu-id="cb6e1-120">Gibt einen einzelnen Ordner an, der im lokalen Clientspeicher aktualisiert werden soll.</span><span class="sxs-lookup"><span data-stu-id="cb6e1-120">Identifies a single folder to update in the local client store.</span></span>  <br/> |
+|[<span data-ttu-id="cb6e1-121">Delete (FolderSync)</span><span class="sxs-lookup"><span data-stu-id="cb6e1-121">Delete (FolderSync)</span></span>](delete-foldersync.md) <br/> |<span data-ttu-id="cb6e1-122">Identifiziert einen einzelnen Ordner, der im lokalen Clientspeicher gelöscht werden soll.</span><span class="sxs-lookup"><span data-stu-id="cb6e1-122">Identifies a single folder to delete in the local client store.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="1b599-123">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1b599-123">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="cb6e1-123">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="cb6e1-123">Parent elements</span></span>
 
-|<span data-ttu-id="1b599-124">**Element**</span><span class="sxs-lookup"><span data-stu-id="1b599-124">**Element**</span></span>|<span data-ttu-id="1b599-125">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="1b599-125">**Description**</span></span>|
+|<span data-ttu-id="cb6e1-124">**Element**</span><span class="sxs-lookup"><span data-stu-id="cb6e1-124">**Element**</span></span>|<span data-ttu-id="cb6e1-125">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="cb6e1-125">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="1b599-126">SyncFolderHierarchyResponseMessage</span><span class="sxs-lookup"><span data-stu-id="1b599-126">SyncFolderHierarchyResponseMessage</span></span>](syncfolderhierarchyresponsemessage.md) <br/> |<span data-ttu-id="1b599-127">Enthält den Status und das Ergebnis einer Anforderung SyncFolderHierarchy.</span><span class="sxs-lookup"><span data-stu-id="1b599-127">Contains the status and result of a SyncFolderHierarchy request.</span></span>  <br/> |
+|[<span data-ttu-id="cb6e1-126">SyncFolderHierarchyResponseMessage</span><span class="sxs-lookup"><span data-stu-id="cb6e1-126">SyncFolderHierarchyResponseMessage</span></span>](syncfolderhierarchyresponsemessage.md) <br/> |<span data-ttu-id="cb6e1-127">Enthält den Status und das Ergebnis einer SyncFolderHierarchy-Anforderung.</span><span class="sxs-lookup"><span data-stu-id="cb6e1-127">Contains the status and result of a SyncFolderHierarchy request.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="1b599-128">Textwert</span><span class="sxs-lookup"><span data-stu-id="1b599-128">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="cb6e1-128">Textwert</span><span class="sxs-lookup"><span data-stu-id="cb6e1-128">Text value</span></span>
 
-<span data-ttu-id="1b599-129">Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="1b599-129">A text value that represents a Boolean value is required.</span></span>
+<span data-ttu-id="cb6e1-129">Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="cb6e1-129">A text value that represents a Boolean value is required.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="1b599-130">Hinweise</span><span class="sxs-lookup"><span data-stu-id="1b599-130">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cb6e1-130">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="cb6e1-130">Remarks</span></span>
 
-<span data-ttu-id="1b599-131">Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Exchange 2007-Computers, der die Clientzugriffs-Serverrolle installiert ist.</span><span class="sxs-lookup"><span data-stu-id="1b599-131">The schema that describes this element is located in the EWS virtual directory of the Exchange 2007 computer that has the Client Access server role installed.</span></span>
+<span data-ttu-id="cb6e1-131">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Exchange 2007 Computers, auf dem die Client Zugriffs-Serverrolle installiert ist.</span><span class="sxs-lookup"><span data-stu-id="cb6e1-131">The schema that describes this element is located in the EWS virtual directory of the Exchange 2007 computer that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="1b599-132">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="1b599-132">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="cb6e1-132">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="cb6e1-132">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="1b599-133">Namespace</span><span class="sxs-lookup"><span data-stu-id="1b599-133">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="1b599-134">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="1b599-134">Schema name</span></span>  <br/> |<span data-ttu-id="1b599-135">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="1b599-135">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="1b599-136">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="1b599-136">Validation file</span></span>  <br/> |<span data-ttu-id="1b599-137">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="1b599-137">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="1b599-138">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="1b599-138">Can be empty</span></span>  <br/> |<span data-ttu-id="1b599-139">False</span><span class="sxs-lookup"><span data-stu-id="1b599-139">False</span></span>  <br/> |
+|<span data-ttu-id="cb6e1-133">Namespace</span><span class="sxs-lookup"><span data-stu-id="cb6e1-133">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="cb6e1-134">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="cb6e1-134">Schema name</span></span>  <br/> |<span data-ttu-id="cb6e1-135">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="cb6e1-135">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="cb6e1-136">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="cb6e1-136">Validation file</span></span>  <br/> |<span data-ttu-id="cb6e1-137">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="cb6e1-137">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="cb6e1-138">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="cb6e1-138">Can be empty</span></span>  <br/> |<span data-ttu-id="cb6e1-139">False</span><span class="sxs-lookup"><span data-stu-id="cb6e1-139">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="1b599-140">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1b599-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cb6e1-140">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="cb6e1-140">See also</span></span>
 
 
 
-[<span data-ttu-id="1b599-141">SyncFolderHierarchy-Vorgang</span><span class="sxs-lookup"><span data-stu-id="1b599-141">SyncFolderHierarchy operation</span></span>](syncfolderhierarchy-operation.md)
+[<span data-ttu-id="cb6e1-141">SyncFolderHierarchy-Vorgang</span><span class="sxs-lookup"><span data-stu-id="cb6e1-141">SyncFolderHierarchy operation</span></span>](syncfolderhierarchy-operation.md)
 
 
-[<span data-ttu-id="1b599-142">EWS-Referenz für Exchange</span><span class="sxs-lookup"><span data-stu-id="1b599-142">EWS reference for Exchange</span></span>](ews-reference-for-exchange.md)
+[<span data-ttu-id="cb6e1-142">EWS-Referenz für Exchange</span><span class="sxs-lookup"><span data-stu-id="cb6e1-142">EWS reference for Exchange</span></span>](ews-reference-for-exchange.md)
   
-- [<span data-ttu-id="1b599-143">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="1b599-143">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="cb6e1-143">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="cb6e1-143">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
