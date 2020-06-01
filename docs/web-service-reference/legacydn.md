@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 72cec5ec-8485-431c-95b7-b9c2247669d6
-description: Das Element LegacyDN identifiziert ein Postfach durch seine legacy-DN.
-ms.openlocfilehash: 8cd0aeb3018a6a45a3b7172d83ac0899a012b353
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das LegacyDN-Element identifiziert ein Postfach anhand seines Legacy Distinguished Name.
+ms.openlocfilehash: b5eb23d285925f97cc25f53b56bca669bbbb5840
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830238"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463237"
 ---
 # <a name="legacydn"></a>LegacyDN
 
-Das Element **LegacyDN** identifiziert ein Postfach durch seine legacy-DN. 
+Das **LegacyDN** -Element identifiziert ein Postfach anhand seines Legacy Distinguished Name. 
   
 ```XML
 <LegacyDN></LegacyDN>
 ```
 
-**string**
+**Zeichenfolge**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -43,19 +43,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **LegacyDN** -Element ist das legacy-DN der Zielpostfach. 
+Der Textwert des **LegacyDN** -Elements ist der Legacy Distinguished Name des Zielpostfachs. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

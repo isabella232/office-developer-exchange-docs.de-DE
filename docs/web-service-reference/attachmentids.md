@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 46ce3ad7-4b20-43ae-8c63-39f1e3c2666b
-description: Das AttachmentIds-Element enthält ein Array mit den IDs der Anlage.
-ms.openlocfilehash: f205aefe6a7dc4ec208e8a96b8a6b47094aa741b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AttachmentIds-Element enthält ein Array von Anlagen-IDs.
+ms.openlocfilehash: cff1cb5658690fd6dd2c6a7812e1f600a4c80e29
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757396"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464252"
 ---
 # <a name="attachmentids"></a>AttachmentIds
 
-Das **AttachmentIds** -Element enthält ein Array mit den IDs der Anlage. 
+Das **AttachmentIds** -Element enthält ein Array von Anlagen-IDs. 
   
 ```xml
 <AttachmentIds>
@@ -42,26 +42,26 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AttachmentId (GetAttachment und DeleteAttachment)](attachmentid-getattachment-and-deleteattachment.md) <br/> |Das Element, das eine Anlage identifiziert.  <br/> |
+|[Attachment-Nr (GetAttachment und DeleteAttachment-)](attachmentid-getattachment-and-deleteattachment.md) <br/> |Das-Element, das eine einzelne Anlage identifiziert.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DeleteAttachment](deleteattachment.md) <br/> |Das Element, das eine Anforderung zum Löschen einer Anlage aus dem Exchange-Speicher definiert.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/DeleteAttachment` <br/> |
-|[GetAttachment](getattachment.md) <br/> |Das Element, das eine Anforderung an eine Anlage aus dem Exchange-Speicher abrufen definiert.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetAttachment` <br/> |
+|[DeleteAttachment-](deleteattachment.md) <br/> |Das-Element, das eine Anforderung zum Löschen einer Anlage aus dem Exchange-Informationsspeicher definiert.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/DeleteAttachment` <br/> |
+|[GetAttachment](getattachment.md) <br/> |Das-Element, das eine Anforderung zum Abrufen einer Anlage aus dem Exchange-Informationsspeicher definiert.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetAttachment` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

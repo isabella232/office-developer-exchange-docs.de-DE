@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e7efbbe1-6629-4d11-bed1-ed899e3f9d77
-description: Das DisplayName-Element definiert den Anzeigenamen eines Ordners, Kontakt, Verteilerliste, Stellvertretungsbenutzers, Standort oder Regel.
-ms.openlocfilehash: 53f4e083d9e6617206e383d4408e08ed7ea0fe08
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DisplayName-Element definiert den Anzeigenamen eines Ordners, Kontakts, einer Verteilerliste, eines Stellvertreters, eines Orts oder einer Regel.
+ms.openlocfilehash: 9b566ec1938ec206e45cddf9c7f00083af2d8a9c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758048"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463616"
 ---
 # <a name="displayname-string"></a>DisplayName (Zeichenfolge)
 
-Das **DisplayName** -Element definiert den Anzeigenamen eines Ordners, Kontakt, Verteilerliste, Stellvertretungsbenutzers, Standort oder Regel. 
+Das **Display** Name-Element definiert den Anzeigenamen eines Ordners, Kontakts, einer Verteilerliste, eines Stellvertreters, eines Orts oder einer Regel. 
   
 ```XML
 <DisplayName/>
@@ -44,38 +44,38 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Kalenderordner in einem Postfach an.  <br/> |
+|[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Kalenderordner in einem Postfach dar.  <br/> |
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
-|[ContactsFolder](contactsfolder.md) <br/> |Stellt einem Kontaktordner in einem Postfach an.  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Kontaktordner in einem Postfach dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
-|[Folder](folder.md) <br/> |Stellt einen Ordner in einem Postfach an.  <br/> |
-|[Regel (RuleType)](rule-ruletype.md) <br/> |Stellt eine Regel in dem Postfach eines Benutzers.  <br/> |
-|["SearchFolder"](searchfolder.md) <br/> |Stellt einen Suchordner in einem Postfach an.  <br/> |
-|[TasksFolder](tasksfolder.md) <br/> |Stellt einen Ordner in einem Postfach an.  <br/> |
-|[Benutzer-ID](userid.md) <br/> |Identifiziert ein Stellvertreter oder ein Benutzer mit Zugriffsberechtigungen für Ordner.  <br/> |
+|[Folder](folder.md) <br/> |Stellt einen Ordner in einem Postfach dar.  <br/> |
+|[Regel (RuleType)](rule-ruletype.md) <br/> |Stellt eine Regel im Postfach eines Benutzers dar.  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner in einem Postfach dar.  <br/> |
+|[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner in einem Postfach dar.  <br/> |
+|[UserId](userid.md) <br/> |Identifiziert einen Stellvertreter Benutzer oder einen Benutzer, der über Ordnerzugriffsberechtigungen verfügt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der den Anzeigenamen darstellt ist erforderlich, wenn dieses Element verwendet wird.
+Ein Textwert, der den Anzeigenamen darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird gezeigt, wie auf einen neuen Ordner erstellen und die DisplayName des Ordners "TestFolder" festgelegt.
+Im folgenden Beispiel wird gezeigt, wie ein neuer Ordner erstellt und der DisplayName des Ordners auf "TestFolder" festgelegt wird.
   
 ```cs
 FolderType folder = new FolderType();
 folder.DisplayName = "TestFolder";
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

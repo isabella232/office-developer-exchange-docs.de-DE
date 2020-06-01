@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1d18f98c-6457-45e9-a934-32da20885ac6
-description: Das Element Unterhaltungen enthält ein Array von Unterhaltungen, die in der Antwort FindConversation zurückgegeben werden.
-ms.openlocfilehash: cd36364bd975d1464af9a1114c64c29543b4ec47
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Conversations-Element enthält ein Array von Unterhaltungen, die in der FindConversation-Antwort zurückgegeben werden.
+ms.openlocfilehash: 8af1023db51dd955c544422520ec5565f09f5372
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757711"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463797"
 ---
 # <a name="conversations"></a>Unterhaltungen
 
-Das Element **Unterhaltungen** enthält ein Array von Unterhaltungen, die in der Antwort **FindConversation** zurückgegeben werden. 
+Das **Conversations** -Element enthält ein Array von Unterhaltungen, die in der **FindConversation** -Antwort zurückgegeben werden. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -52,31 +52,31 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindConversationResponse](findconversationresponse.md) <br/> |Definiert eine Antwort auf eine **FindConversation** an.  <br/> |
+|[FindConversationResponse](findconversationresponse.md) <br/> |Definiert eine Antwort auf eine **FindConversation** -Anforderung.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[FindConversation Operation](findconversation-operation.md)
+[FindConversation-Vorgang](findconversation-operation.md)
 
 
-[Conversations in EWS](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+[Conversations in EWS](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

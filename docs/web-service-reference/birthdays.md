@@ -1,5 +1,5 @@
 ---
-title: Geburtstage
+title: Geburtstag
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5a84c19e-57cd-448e-af4f-c8005fd5f2a2
-description: Das Element Geburtstage gibt ein Array von Geburtstage, als Zeichenfolgen und die Bezeichner der ihre Marken Quelle für die zugehörige Rolle gespeichert.
-ms.openlocfilehash: 2511a2acf0eb2eb24f06e98a1c660d289687bd02
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das birthdays-Element gibt ein Array von Geburtstagen an, die als Zeichenfolgen gespeichert werden, und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete Persona.
+ms.openlocfilehash: aa85febd84c32ae87e0822ce47fd99f445b6fe9e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757448"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462759"
 ---
-# <a name="birthdays"></a>Geburtstage
+# <a name="birthdays"></a>Geburtstag
 
-Das Element **Geburtstage** gibt ein Array von Geburtstage, als Zeichenfolgen und die Bezeichner der ihre Marken Quelle für die zugehörige Rolle gespeichert. 
+Das **birthdays** -Element gibt ein Array von Geburtstagen an, die als Zeichenfolgen gespeichert werden, und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete Persona. 
   
 ```XML
 <Birthdays>
@@ -38,27 +38,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StringAttributedValue](stringattributedvalue.md) <br/> |Gibt eine Instanz in ein Array von Attributen, die einer Rolle-Element zugeordnet ist.  <br/> |
+|[StringAttributedValue](stringattributedvalue.md) <br/> |Gibt eine Instanz in einem Array von Attributen an, die mit einem Persona-Element verknüpft sind.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Rolle](persona.md) <br/> |Gibt einen Satz von Persona Daten von einer Anforderung **GetPersona** zurückgegeben.  <br/> |
+|[Persona](persona.md) <br/> |Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

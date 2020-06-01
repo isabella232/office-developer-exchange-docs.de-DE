@@ -7,47 +7,47 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 446106b7-ff2d-4107-90c1-29f4d38ba128
-description: Hier finden Sie Informationen über die FindPeople EWS Vorgang.
-ms.openlocfilehash: 97c34d7df590d20513e8f1ad476d62f16815a42b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier finden Sie Informationen zum FindPeople-EWS-Vorgang.
+ms.openlocfilehash: ab5edc3f140e34123ce1f009c401ddd61a0e2598
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758474"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462908"
 ---
 # <a name="findpeople-operation"></a>FindPeople-Vorgang
 
-Hier finden Sie Informationen zum **FindPeople** EWS-Vorgang. 
+Hier finden Sie Informationen zum **FindPeople** -EWS-Vorgang. 
   
-Der Vorgang **FindPeople** alle Persona-Objekte aus einem angegebenen Kontakteordner zurückgegeben oder abgerufen Kontakte, die mit eine Zeichenfolge der angegebenen Abfrage übereinstimmen. 
+Der **FindPeople** -Vorgang gibt alle Persona-Objekte aus einem angegebenen Kontaktordner zurück oder ruft Kontakte ab, die mit einer angegebenen Abfragezeichenfolge übereinstimmen. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-findpeople-operation"></a>Verwenden des FindPeople-Vorgangs
 
-Der Vorgang **FindPeople** gibt aggregierten Kontaktinformationen zurück. 
+Der **FindPeople** -Vorgang gibt aggregierte Kontaktinformationen zurück. 
   
-Der Vorgang **FindPeople** basiert auf der vorhandenen Funktionalität der [Einschränkung](restriction.md) und [BaseShape](baseshape.md) komplexen Typen durch Hinzufügen einer Einschränkung Aggregation und die Möglichkeit, zusätzliche Eigenschaften zurückgeben. Mithilfe einer Einschränkung kann einen Client wie beispielsweise "nur Ergebnisse zurück, die eine IM-Adresse haben" Filter angeben. Das Standardverhalten für die Suche beruht auf das angegebene Postfach des Benutzers persönliche und der globalen Adressliste (GAL). Bei der Suche der globalen Adressliste als primäre Suchordner müssen Sie eine Abfragezeichenfolge anstelle einer Einschränkung angeben, da dieser Vorgang nicht, zum Durchsuchen der globalen Adressliste zulässt. 
+Der **FindPeople** -Vorgang basiert auf der vorhandenen Funktionalität der komplexen Typen [Restriction](restriction.md) und [BaseShape](baseshape.md) , indem eine Aggregations Einschränkung hinzugefügt und zusätzliche Eigenschaften zurückgegeben werden können. Mithilfe einer Einschränkung kann ein Client Filter wie "nur Ergebnisse mit einer Chat Adresse zurückgeben" angeben. Das Standardsuchverhalten zielt sowohl auf das persönliche Postfach des angegebenen Benutzers als auch auf die globale Adressliste (GAL) ab. Wenn Sie die GAL als primären Suchordner durchsuchen, müssen Sie anstelle einer Einschränkung eine Abfragezeichenfolge angeben, da diese Operation nicht das Durchsuchen der GAL zulässt. 
   
-### <a name="findpeople-operation-soap-headers"></a>FindPeople Vorgang SOAP-Header
+### <a name="findpeople-operation-soap-headers"></a>SOAP-Header des FindPeople-Vorgangs
 
-Der Vorgang **FindPeople** können die SOAP-Header, die in der folgenden Tabelle aufgelistet sind. 
+Der **FindPeople** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |["ExchangeImpersonation"](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
    
-## <a name="findpeople-operation-request-example"></a>FindPeople Vorgang anforderungsbeispiel
+## <a name="findpeople-operation-request-example"></a>FindPeople-Vorgangsanforderung (Beispiel)
 
-Im folgenden Beispiel wird eine **FindPeople** Vorgang Anforderung zeigt, wie die ersten 100 Kontakte aus dem Ordner Kontakte zurückgegeben. 
+Im folgenden Beispiel einer **FindPeople** -Vorgangsanforderung wird gezeigt, wie die ersten 100-Kontakte aus dem Ordner Kontakte zurückgegeben werden. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -62,7 +62,7 @@ Im folgenden Beispiel wird eine **FindPeople** Vorgang Anforderung zeigt, wie di
 </soap:Envelope>
 ```
 
-Die Anforderung SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
   
 - [FindPeople](findpeople.md)
     
@@ -72,13 +72,13 @@ Die Anforderung SOAP-Text enthält die folgenden Elemente:
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-Im folgenden Beispiel wird eine **FindPeople** Vorgang Anforderung veranschaulicht die ersten 100 Kontakte aus der globalen Adressliste zurückgeben, indem Sie eine Abfragezeichenfolge. Festlegen der **DistinguishedFolderId** "Verzeichnis" wird die globalen Adressliste als primäre Datenquelle Rollen gesucht. 
+Im folgenden Beispiel einer **FindPeople** -Vorgangsanforderung wird gezeigt, wie die ersten 100-Kontakte aus der GAL mithilfe einer Abfragezeichenfolge zurückgegeben werden. Durch Festlegen von **DistinguishedFolderId** auf "Directory" wird die GAL als primäre Quelle für Personas durchsucht. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -101,9 +101,9 @@ Im folgenden Beispiel wird eine **FindPeople** Vorgang Anforderung veranschaulic
 </soap:Envelope>
 ```
 
-## <a name="successful-findpeople-operation-response"></a>Erfolgreiche FindPeople Vorgangsantwort
+## <a name="successful-findpeople-operation-response"></a>Erfolgreiche Reaktion des FindPeople-Vorgangs
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **FindPeople** Vorgang an. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **FindPeople** -Vorgangsanforderung. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?><s:Envelope 
@@ -114,18 +114,18 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **FindPeople** Vo
                          MajorBuildNumber="349" 
                          MinorBuildNumber="0" 
                          Version="Exchange2013" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <FindPeopleResponse ResponseClass="Success" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <People>
-        <Persona xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <Persona xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <PersonaId Id="AAQkAGQ1MjJjMTBkLTc4Y2UtNDA5Ny04ZjU5LWI3MTYzNGNkZmRkYQAQAOjFqObcLmtOlzlRnHdXQjo=" />
           <CreationTime>2012-01-11T22:25:37Z</CreationTime>
           <DisplayName>Terry Adams</DisplayName>
@@ -160,7 +160,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **FindPeople** Vo
 </s:Envelope>
 ```
 
-Die Antwort SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Antworttext Körper enthält die folgenden Elemente:
   
 - [FindPeopleResponse](findpeopleresponse.md)
     
@@ -168,7 +168,7 @@ Die Antwort SOAP-Text enthält die folgenden Elemente:
     
 - [Personen](people.md)
     
-- [Rolle](persona.md)
+- [Persona](persona.md)
     
 - [PersonaId](personaid.md)
     
@@ -182,31 +182,31 @@ Die Antwort SOAP-Text enthält die folgenden Elemente:
     
 - [FileAs](fileas.md)
     
-- [Vorname](givenname.md)
+- [GivenName](givenname.md)
     
 - [Nachname](surname.md)
     
-- [EmailAddresses (ArrayOfEmailAddressesType)](emailaddresses-arrayofemailaddressestype.md)
+- [Emails (ArrayOfEmailAddressesType)](emailaddresses-arrayofemailaddressestype.md)
     
-- [EmailAddress (EmailAddressType)](emailaddress-emailaddresstype.md)
+- [E-mailemail (e-)](emailaddress-emailaddresstype.md)
     
 - [Name (EmailAddressType)](name-emailaddresstype.md)
     
-- [EmailAddress (EmailAddressType)](emailaddress-emailaddresstype.md)
+- [E-mailemail (e-)](emailaddress-emailaddresstype.md)
     
-- [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
+- [Routingtype (e-mailemailtype)](routingtype-emailaddresstype.md)
     
 - [RelevanceScore](relevancescore.md)
     
 - [TotalNumberOfPeopleInView](totalnumberofpeopleinview.md)
     
-## <a name="findpeople-operation-error-response"></a>FindPeople Vorgang Fehlerantwort
+## <a name="findpeople-operation-error-response"></a>Fehlerantwort des FindPeople-Vorgangs
 
-Fehlercodes, die für EWS generisch sind, finden Sie unter [ResponseCode](responsecode.md).
+Informationen zu Fehlercodes, die für EWS allgemein sind, finden Sie unter [Response Code](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Benutzer und Kontakte in EWS in Exchange](http://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
+- [Personen und Kontakte in EWS in Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     
 - [GetPersona-Vorgang](getpersona-operation.md)
     

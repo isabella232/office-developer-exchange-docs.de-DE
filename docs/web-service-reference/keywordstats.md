@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 79b24034-6456-4c9c-adf6-03d06024c4e8
-description: Das KeywordStats-Element gibt eine Liste von Elementen für einen oder mehrere KeywordStat.
-ms.openlocfilehash: d1f68059375fc0359b46d60b0184adc268d8fffb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das KeywordStats-Element gibt eine Liste mit einem oder mehreren KeywordStat-Elementen an.
+ms.openlocfilehash: bf471c1712a96b44dbc533a2cb26e32546a6db38
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830193"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463293"
 ---
 # <a name="keywordstats"></a>KeywordStats
 
-Das **KeywordStats** -Element gibt eine Liste von Elementen für einen oder mehrere **KeywordStat** . 
+Das **KeywordStats** -Element gibt eine Liste mit einem oder mehreren **KeywordStat** -Elementen an. 
   
 ```XML
 <KeywordStats>
@@ -42,7 +42,7 @@ Keine.
 
 [SearchMailboxesResult](searchmailboxesresult.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

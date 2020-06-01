@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 42c04f3b-abaa-4197-a3d6-d21677ffb1c0
-description: Das BaseShape-Element identifiziert die Gruppe von Eigenschaften in einer Antwort Elements oder Ordners zurückgegeben werden sollen.
-ms.openlocfilehash: 69b27d23fd75d4c1a274f31dfa419b759dbb2bbe
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das BaseShape-Element gibt die Gruppe von Eigenschaften an, die in einer Element-oder Ordner Antwort zurückgegeben werden sollen.
+ms.openlocfilehash: 9b3f00ff94fbfe6ad6373b16ad95eb9136f81c64
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757439"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464490"
 ---
 # <a name="baseshape"></a>BaseShape
 
-Das **BaseShape** -Element identifiziert die Gruppe von Eigenschaften in einer Antwort Elements oder Ordners zurückgegeben werden sollen. 
+Das **BaseShape** -Element gibt die Gruppe von Eigenschaften an, die in einer Element-oder Ordner Antwort zurückgegeben werden sollen. 
   
 ```xml
 <BaseShape>IdOnly or Default or AllProperties</BaseShape>
@@ -38,55 +38,55 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-Keine
+Keines
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderShape](foldershape.md) <br/> | Identifiziert die Ordnereigenschaften in der Antwort GetFolder, FindFolder oder SyncFolderHierarchy aufzunehmen.<br/><br/>Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>`/GetFolder/FolderShape` <br/>  `/FindFolder/FolderShape` <br/>  `/SyncFolderHierarchy/FolderShape` <br/> |
-|[ItemShape](itemshape.md) <br/> | Identifiziert die Elementeigenschaften und den Inhalt in einer Antwort GetItem, FindItem oder SyncFolderItems aufzunehmen.<br/><br/>Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>`/GetItem/ItemShape` <br/>  `/FindItem/ItemShape` <br/>  `/SyncFolderItems/ItemShape` <br/> |
+|[FolderShape](foldershape.md) <br/> | Identifiziert die Ordner Eigenschaften, die in die GetFolder-, FindFolder-oder SyncFolderHierarchy-Antwort eingeschlossen werden sollen.<br/><br/>Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>`/GetFolder/FolderShape` <br/>  `/FindFolder/FolderShape` <br/>  `/SyncFolderHierarchy/FolderShape` <br/> |
+|[ItemShape](itemshape.md) <br/> | Identifiziert die Elementeigenschaften und Inhalte, die in einer GetItem-, FindItem-oder SyncFolderItems-Antwort enthalten sein sollen.<br/><br/>Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>`/GetItem/ItemShape` <br/>  `/FindItem/ItemShape` <br/>  `/SyncFolderItems/ItemShape` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Die folgende Tabelle enthält die möglichen Textwerte.
+Ein Textwert ist erforderlich. In der folgenden Tabelle sind die möglichen Text Werte aufgeführt.
   
-**Textwerte für das BaseShape-element**
+**Textwerte für das BaseShape-Element**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|IdOnly  <br/> |Gibt nur die ID Elements oder Ordners zurück.  <br/> |
-|Standard  <br/> |Gibt einen Satz von Eigenschaften, die als Standard für das Element oder Ordner definiert sind.  <br/> |
-|AllProperties  <br/> |Gibt die Eigenschaften, die für die durch die Ebene des Exchange-Geschäftslogik verwendet, um einen Ordner zu erstellen.  <br/> |
+|IdOnly  <br/> |Gibt nur die Element-oder Ordner-ID zurück.  <br/> |
+|Standard  <br/> |Gibt eine Reihe von Eigenschaften zurück, die als Standard für das Element oder den Ordner definiert sind.  <br/> |
+|AllProperties  <br/> |Gibt alle Eigenschaften zurück, die von der Exchange-Geschäftslogikschicht zum Erstellen eines Ordners verwendet werden.  <br/> |
    
-Die folgende Tabelle enthält die Standardeigenschaften, die für eine Anforderung FindFolder zurückgegeben werden. Alle Unterordner eines bestimmten Ordners werden namentlich in der Reihenfolge zurückgegeben.
+In der folgenden Tabelle sind die Standardeigenschaften aufgeführt, die für eine FindFolder-Anforderung zurückgegeben werden. Alle Unterordner eines bestimmten Ordners werden in der Reihenfolge nach Namen zurückgegeben.
   
 **Standardeigenschaften**
 
 |**Folder**|**Standardeigenschaften**|
 |:-----|:-----|
-|Posteingang  <br/> |FolderId, Anzeigename, ungelesenen, Gesamtzahl, Anzahl der Unterordner  <br/> |
-|Kontakte  <br/> |FolderId, Anzeigename, Gesamtzahl, Anzahl der Unterordner  <br/> |
-|Kalender  <br/> |FolderId, Anzeigename, Anzahl der Unterordner  <br/> |
-|Entwürfe  <br/> |FolderId, Anzeigename, ungelesenen, Gesamtzahl, Anzahl der Unterordner  <br/> |
-|Gelöschte Elemente  <br/> |FolderId, Anzeigename, ungelesenen, Gesamtzahl, Anzahl der Unterordner  <br/> |
-|Andere Ordner  <br/> |FolderId, Anzeigename, ungelesenen, Gesamtzahl, Anzahl der Unterordner  <br/> |
-|Postausgang  <br/> |FolderId, Anzeigename, ungelesenen, Gesamtzahl, Anzahl der Unterordner  <br/> |
-|Aufgaben  <br/> |FolderId Anzeigename überfälligen Count, Gesamtzahl, Anzahl der Unterordner  <br/> |
-|Anmerkungen  <br/> |FolderId, Anzeigename, Gesamtzahl, Anzahl der Unterordner  <br/> |
+|Posteingang  <br/> |Ordner-Nr, Anzeigename, ungelesene Anzahl, Gesamtanzahl, Unterordner Anzahl  <br/> |
+|Kontakte  <br/> |Ordner-und Anzeigename, Gesamtanzahl, Unterordner Anzahl  <br/> |
+|Kalender  <br/> |Ordner-und Anzeigename, Unterordner Anzahl  <br/> |
+|Entwürfe  <br/> |Ordner-Nr, Anzeigename, ungelesene Anzahl, Gesamtanzahl, Unterordner Anzahl  <br/> |
+|Gelöschte Elemente  <br/> |Ordner-Nr, Anzeigename, ungelesene Anzahl, Gesamtanzahl, Unterordner Anzahl  <br/> |
+|Andere Ordner  <br/> |Ordner-Nr, Anzeigename, ungelesene Anzahl, Gesamtanzahl, Unterordner Anzahl  <br/> |
+|Postausgang  <br/> |Ordner-Nr, Anzeigename, ungelesene Anzahl, Gesamtanzahl, Unterordner Anzahl  <br/> |
+|Aufgaben  <br/> |Ordner-und Anzeigename, überfällige Anzahl, Gesamtanzahl, Unterordner Anzahl  <br/> |
+|Notes  <br/> |Ordner-und Anzeigename, Gesamtanzahl, Unterordner Anzahl  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie zum Zurückgeben von Eigenschaften zusätzlich zu den durch das [BaseShape](baseshape.md) -Element, das [AdditionalProperties](additionalproperties.md) -Element ein. 
+Verwenden Sie das [AdditionalProperties](additionalproperties.md) -Element, um zusätzlich zu den durch das [BaseShape](baseshape.md) -Element identifizierten Eigenschaften zurückzugeben. 
   
 ## <a name="example"></a>Beispiel
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <FindFolder Traversal="Shallow" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindFolder Traversal="Shallow" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <FolderShape>
         <t:BaseShape>Default</t:BaseShape>
       </FolderShape>
@@ -98,11 +98,11 @@ Verwenden Sie zum Zurückgeben von Eigenschaften zusätzlich zu den durch das [B
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

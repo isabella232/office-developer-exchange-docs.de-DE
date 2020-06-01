@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: c55b7bf5-3702-4923-b7c9-b0928cde1de2
-description: Das UMUrl-Element gibt die URL der besten Instanz des Unified Messaging-Webdiensts für einen e-Mail-aktivierten Benutzer.
-ms.openlocfilehash: f6259430bf9c53c8d0670cdab0dcec4cc6f18213
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UMUrl-Element gibt die URL der besten Instanz des Unified Messaging-Webdiensts für einen e-Mail-aktivierten Benutzer an.
+ms.openlocfilehash: c80f874e13ac3909ee51bbc63dded100a1e41524
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839280"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463027"
 ---
 # <a name="umurl-pox"></a>UMUrl (POX)
 
-Das **UMUrl** -Element gibt die URL der besten Instanz des Unified Messaging-Webdiensts für einen e-Mail-aktivierten Benutzer. 
+Das **UMUrl** -Element gibt die URL der besten Instanz des Unified Messaging-Webdiensts für einen e-Mail-aktivierten Benutzer an. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,11 +50,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert gibt die URL des Exchange-Servers, der die Unified Messaging-Serverrolle, die für eine Topologie mit Exchange installiert ist.
+Der Wert Text gibt die URL des Exchange-Servers an, auf dem die Unified Messaging-Serverrolle für eine Exchange-Topologie installiert ist.
   
 ## <a name="see-also"></a>Siehe auch
 

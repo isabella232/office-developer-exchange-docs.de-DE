@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 04b999af-0b27-4e6d-a8b1-400955a1afaa
-description: Das DeliverMeetingRequests-Element definiert, wie Besprechungsanfragen zwischen den Delegaten und dem Prinzipalnamen behandelt werden. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 803bd2da72bdb21b507a59cc11635a40d4431acf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DeliverMeetingRequests-Element definiert, wie Besprechungsanfragen zwischen der Stellvertretung und dem Prinzipal verarbeitet werden. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: 3998443613437bca2267678f7bc2c5584b779135
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757947"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463678"
 ---
 # <a name="delivermeetingrequests"></a>DeliverMeetingRequests
 
-Das **DeliverMeetingRequests** -Element definiert, wie Besprechungsanfragen zwischen den Delegaten und dem Prinzipalnamen behandelt werden. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **DeliverMeetingRequests** -Element definiert, wie Besprechungsanfragen zwischen der Stellvertretung und dem Prinzipal verarbeitet werden. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```XML
 <DeliverMeetingRequests>DelegatesOnly or DelegatesAndMe or DelegatesAndSendInformationToMe or NoForward</DeliverMeetingRequests>
@@ -46,34 +46,34 @@ Keine.
 |:-----|:-----|
 |[AddDelegate](adddelegate.md) <br/> |Definiert eine Anforderung zum Hinzufügen von Stellvertretern für ein Postfach. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
 |[UpdateDelegate](updatedelegate.md) <br/> |Definiert eine Anforderung zum Aktualisieren von Stellvertretern in einem Postfach. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
-|[GetDelegateResponse](getdelegateresponse.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung GetDelegate. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[GetDelegateResponse](getdelegateresponse.md) <br/> |Enthält den Status und das Ergebnis einer getdelegate-Anforderung. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Die folgende Tabelle enthält die möglichen Werte für das **DeliverMeetingRequests** -Element. 
+In der folgenden Tabelle sind die möglichen Werte für das **DeliverMeetingRequests** -Element aufgeführt. 
   
 **DeliverMeetingRequests-Elementwerte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|DelegatesOnly  <br/> |Besprechungsanfragen werden an die Stellvertretung weitergeleitet und in den Ordner Gelöschte Elemente im Postfach des Prinzipals verschoben.  <br/> |
-|DelegatesAndMe  <br/> |Besprechungsanfragen an die Stellvertretung weitergeleitet werden und im Ordner "Posteingang" im Postfach des Prinzipals bleiben.  <br/> |
-|DelegatesAndSendInformationToMe  <br/> |Besprechungsanfragen an die Stellvertretung weitergeleitet werden und im Ordner "Posteingang" im Postfach des Prinzipals bleiben, aber die Schaltflächen mit Vorbehalt, annehmen und Ablehnen nicht in der Microsoft Office Outlook-Lesebereich angezeigt.  <br/> |
-|NoForward  <br/> |Besprechungsanfragen werden nicht an die Stellvertretung weitergeleitet.  <br/> |
+|DelegatesOnly  <br/> |Besprechungsanfragen werden an die Stellvertretung weitergeleitet und in den Ordner "Gelöschte Elemente" im Postfach des Prinzipals verschoben.  <br/> |
+|DelegatesAndMe  <br/> |Besprechungsanfragen werden an die Stellvertretung weitergeleitet und verbleiben im Posteingangsordner im Postfach des Prinzipals.  <br/> |
+|DelegatesAndSendInformationToMe  <br/> |Besprechungsanfragen werden an die Stellvertretung weitergeleitet und verbleiben im Posteingangsordner im Postfach des Prinzipals, die Schaltflächen akzeptieren, vorläufig und ablehnen werden im Lesebereich Microsoft Office Outlook nicht angezeigt.  <br/> |
+|Noforward  <br/> |Besprechungsanfragen werden nicht an die Stellvertretung weitergeleitet.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Einstellung **DeliverMeetingRequests** wirkt sich auf alle Delegaten im Postfach des Prinzipals. 
+Die **DeliverMeetingRequests** -Einstellung wirkt sich auf alle Delegaten im Postfach eines Prinzipals aus. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -82,5 +82,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 - [UpdateDelegate-Vorgang](updatedelegate-operation.md)  
 - [GetDelegate-Vorgang](getdelegate-operation.md)
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
-- [Hinzufügen von Stellvertretungen](http://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+- [Hinzufügen von Stellvertretungen](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

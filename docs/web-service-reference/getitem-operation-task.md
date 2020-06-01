@@ -11,27 +11,27 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8265dd06-1752-4470-8074-5f0e3e970f52
-description: Die GetItem Operation wird verwendet, um Aufgaben aus dem Exchange-Speicher abzurufen.
-ms.openlocfilehash: 412710f32ed8702e1a28a596833c3a7e47e3ed76
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetItem-Vorgang wird zum Abrufen von Aufgaben aus dem Exchange-Informationsspeicher verwendet.
+ms.openlocfilehash: 17a23d4c2a35761e831610f3514c980a5a67e12b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758724"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463335"
 ---
 # <a name="getitem-operation-task"></a>GetItem-Vorgang (Aufgabe)
 
-Die GetItem Operation wird verwendet, um Aufgaben aus dem Exchange-Speicher abzurufen.
+Der GetItem-Vorgang wird zum Abrufen von Aufgaben aus dem Exchange-Informationsspeicher verwendet.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Format der Anforderung GetItem für Aufgaben ist identisch mit GetItem für jeden anderen Elementtyp. Der einzige Unterschied ist, in denen zusätzliche Eigenschaften in der Antwort Form angefordert werden können. Zusätzlichen Eigenschaften muss entweder aufgabenbezogenen Eigenschaften oder erweiterte Eigenschaften.
+Das Format der GetItem-Anforderung für Aufgaben ist identisch mit GetItem für alle anderen Elementtypen. Der einzige Unterschied besteht darin, dass im Antwort-Shape zusätzliche Eigenschaften angefordert werden können. Solche zusätzlichen Eigenschaften müssen entweder aufgabenbezogene Eigenschaften oder erweiterte Eigenschaften sein.
   
-## <a name="task-getitem-request-example"></a>Aufgabe GetItem-anforderungsbeispiel
+## <a name="task-getitem-request-example"></a>Aufgaben-GetItem-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung GetItem zeigt, wie ein Aufgabenelement abgerufen.
+Im folgenden Beispiel einer GetItem-Anforderung wird gezeigt, wie ein Aufgabenelement abgerufen wird.
   
 ### <a name="code"></a>Code
 
@@ -40,10 +40,10 @@ Im folgenden Beispiel wird eine Anforderung GetItem zeigt, wie ein Aufgabeneleme
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <ItemShape>
         <t:BaseShape>AllProperties</t:BaseShape>
       </ItemShape>
@@ -55,10 +55,10 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
 > [!NOTE]
-> Die Element-ID und Key ändern wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -70,15 +70,15 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [BaseShape](baseshape.md)
     
-- [Artikelnummern ein.](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
-## <a name="task-getitem-response-example"></a>Aufgabe GetItem antwortbeispiel
+## <a name="task-getitem-response-example"></a>Aufgaben-GetItem-Antwort (Beispiel)
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung GetItem.
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine GetItem-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -89,12 +89,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung GetIt
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="662" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -133,12 +133,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung GetIt
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
 > [!NOTE]
-> Das Element und Ordner-IDs und Ändern von Schlüsseln wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Element-und Ordner Bezeichner und die Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -152,7 +152,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
 - [Aufgabe](task.md)
     
@@ -164,21 +164,21 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Betreff](subject.md)
     
-- [Vertraulichkeit](sensitivity.md)
+- [Sensitivity](sensitivity.md)
     
 - [Body](body.md)
     
 - [DateTimeReceived](datetimereceived.md)
     
-- [Size](size.md)
+- [Größe](size.md)
     
 - [Importance](importance.md)
     
-- [IsSubmitted](issubmitted.md)
+- [Issubmitted](issubmitted.md)
     
 - [IsDraft](isdraft.md)
     
-- [IsFromMe](isfromme.md)
+- [Isfromme](isfromme.md)
     
 - [IsResend](isresend.md)
     
@@ -186,7 +186,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [DateTimeSent](datetimesent.md)
     
-- ["Datetimecreated"](datetimecreated.md)
+- [DateTimeCreated](datetimecreated.md)
     
 - [HasAttachments](hasattachments.md)
     
@@ -208,12 +208,12 @@ In der Antwort werden folgende Elemente verwendet:
 
 
 
-[GetItem Operation](getitem-operation.md)
+[GetItem-Vorgang](getitem-operation.md)
 
 
-[Erstellen von Aufgaben](http://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
+[Erstellen von Aufgaben](https://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
   
-[Aktualisieren der Vorgänge](http://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
+[Aktualisieren von Aufgaben](https://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
   
-[Deleting Tasks](http://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
+[Deleting Tasks](https://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
 

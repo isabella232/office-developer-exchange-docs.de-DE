@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 05989915-121c-4f26-93cc-af8d454ab442
-description: Das DeliveryRestricted-Element gibt an, ob Einschränkungen Übermittlung des Absenders der Nachricht verhindern Erreichen des Empfängers.
-ms.openlocfilehash: ba1c6e00b93c9e442a427fe98a5e15bf5fe1effd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DeliveryRestricted-Element gibt an, ob zustellungseinschränkungen verhindern, dass die Nachricht des Absenders den Empfänger erreichen kann.
+ms.openlocfilehash: 58fc85873326179d7745db4ba7d4854a76ced6a7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757950"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462689"
 ---
 # <a name="deliveryrestricted"></a>DeliveryRestricted
 
-Das **DeliveryRestricted** -Element gibt an, ob Einschränkungen Übermittlung des Absenders der Nachricht verhindern Erreichen des Empfängers. 
+Das **DeliveryRestricted** -Element gibt an, ob zustellungseinschränkungen verhindern, dass die Nachricht des Absenders den Empfänger erreichen kann. 
   
 ```XML
 <DeliveryRestricted>true | false</DeliveryRestricted>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[E-Mail-Infos](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Infos.  <br/> |
+|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Tipps dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der dieses Element ist **true** , wenn die Zustellung Einschränkungen des Absenders der Nachricht verhindern Erreichen des Empfängers. Der Wert ist **false** , wenn Delivery Restrictions, nicht verhindert, dass der Nachricht des Absenders Erreichen des Empfängers. 
+Der Textwert dieses Elements ist **true** , wenn zustellungseinschränkungen verhindert werden, dass die Nachricht des Absenders den Empfänger erreicht. Der Wert ist **false** , wenn zustellungseinschränkungen nicht verhindern, dass die Nachricht des Absenders den Empfänger erreichen kann. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

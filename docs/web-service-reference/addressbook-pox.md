@@ -1,22 +1,22 @@
 ---
-title: AddressBook (POX)
+title: Adressbuch (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: b2d62fd0-741c-4a41-9762-cc7d0ff01c9c
-description: Das AddressBook-Element enthält die Spezifikationen für die Verbindung eines Clients mit der Adressbuchserver mithilfe des MAPI/HTTP-Protokolls.
-ms.openlocfilehash: c30f0ee7c36de7e63157d07d003a11187d661fd7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das addressbook-Element enthält die Spezifikationen für die Verbindung eines Clients mit dem Adressbuchserver mithilfe des MAPI/http-Protokolls.
+ms.openlocfilehash: 0967ac123cd3bb0086fd004ea0d0d37c08d2e037
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757237"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463636"
 ---
-# <a name="addressbook-pox"></a>AddressBook (POX)
+# <a name="addressbook-pox"></a>Adressbuch (POX)
 
-Das **AddressBook** -Element enthält die Spezifikationen für die Verbindung eines Clients mit der Adressbuchserver mithilfe des MAPI/HTTP-Protokolls. 
+Das **addressbook** -Element enthält die Spezifikationen für die Verbindung eines Clients mit dem Adressbuchserver mithilfe des MAPI/http-Protokolls. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -26,7 +26,7 @@ Das **AddressBook** -Element enthält die Spezifikationen für die Verbindung ei
   
 [Protokoll (POX)](protocol-pox.md)
   
-[AddressBook (POX)](addressbook-pox.md)
+[Adressbuch (POX)](addressbook-pox.md)
   
 ```XML
 <AddressBook>
@@ -47,20 +47,20 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ExternalUrl (POX)](externalurl-pox.md) <br/> |Enthält die URL, die zum Adressbuch von außerhalb des Netzwerks der Organisation zugreifen, indem Sie mit dem MAPI/HTTP-Protokoll verwendet werden soll.  <br/> |
-|[InternalUrl (POX)](internalurl-pox.md) <br/> |Enthält die URL, die zum Adressbuch von innerhalb des Netzwerks der Organisation zugreifen, indem Sie mit dem MAPI/HTTP-Protokoll verwendet werden soll.  <br/> |
+|[ExternalURL (POX)](externalurl-pox.md) <br/> |Enthält die URL, die verwendet werden sollte, um über das MAPI/http-Protokoll von außerhalb des Netzwerks des Unternehmens auf das Adressbuch zuzugreifen.  <br/> |
+|[InternalURL (POX)](internalurl-pox.md) <br/> |Enthält die URL, die für den Zugriff auf das Adressbuch im Netzwerk des Unternehmens mithilfe des MAPI/http-Protokolls verwendet werden sollte.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Clientzugriffsserver an.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Clientzugriffsserver.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-**AddressBook** -Element ist in einer Antwort, die ein [Protokoll (POX)](protocol-pox.md) -Element mit dem **Type** -Attributwert "MapiHttp" ist vorhanden. 
+Das **addressbook** -Element ist in einer Antwort vorhanden, die ein [Protocol (POX)-](protocol-pox.md) Element mit dem **Type** -Attributwert "mapiHttp" aufweist. 
   
-**AddressBook** -Element wird von Clients, mit die die MAPI/HTTP-Protokoll und das Ziel Exchange Online, Exchange Online als Teil von Office 365, implementiert und lokale Versionen von Exchange, beginnend mit erstellen 15.00.0847.032 (Exchange Server 2013 SP1) . 
+Das **addressbook** -Element steht für Clients zur Verfügung, die das MAPI/http-Protokoll und die Ziel Exchange Online implementieren, Exchange Online im Rahmen von Office 365 und lokalen Versionen von Exchange, beginnend mit Build 15.00.0847.032 (Exchange Server 2013 SP1). 
   
 ## <a name="see-also"></a>Siehe auch
 

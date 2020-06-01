@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 268805b5-baf7-4826-b92e-cb9f9f5792ea
-description: Das DomainStringSetting-Element stellt eine Einstellung für dessen, die Wert vom Typ String ist.
-ms.openlocfilehash: 860a2d60f55c22e0404be5f0dd0d1fec41fe48f2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DomainStringSetting-Element stellt eine Domäneneinstellung dar, deren Wert vom Typ String ist.
+ms.openlocfilehash: 791c4598d9f1ed471c3ce3b6083498b5da0f2b72
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758101"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463587"
 ---
 # <a name="domainstringsetting-soap"></a>DomainStringSetting (SOAP)
 
-Das **DomainStringSetting** -Element stellt eine Einstellung für dessen, die Wert vom Typ String ist. 
+Das **DomainStringSetting** -Element stellt eine Domäneneinstellung dar, deren Wert vom Typ String ist. 
   
 ```XML
 <DomainStringSetting>
@@ -41,7 +41,7 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Name (SOAP)](name-soap.md) <br/> |Stellt den Namen einer Einstellung dar.  <br/> |
-|[Wert (SOAP)](value-soap.md) <br/> |Stellt einen Benutzer Einstellung-Wert.  <br/> |
+|[Wert (SOAP)](value-soap.md) <br/> |Stellt einen Benutzer Einstellungswert dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -51,13 +51,13 @@ Keine.
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

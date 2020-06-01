@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: dab23ed1-7fcf-4870-a634-f39d0742923a
-description: Das DisplayName-Element stellt den Namen des Benutzers anzeigen.
-ms.openlocfilehash: 7e4e5b1a97b8e627454a192a3fec2b8a02520a66
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DisplayName-Element stellt den Anzeigenamen des Benutzers dar.
+ms.openlocfilehash: 14522080a519d12a05567e4a65cba8ea00098b7d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758053"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463657"
 ---
 # <a name="displayname-pox"></a>DisplayName (POX)
 
-Das **DisplayName** -Element stellt den Namen des Benutzers anzeigen. 
+Das **Display** Name-Element stellt den Anzeigenamen des Benutzers dar. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md) 
 - [Response (POX)](response-pox.md) 
@@ -45,11 +45,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Benutzer (POX)](user-pox.md) <br/> |Benutzerspezifische Informationen enthält.  <br/> |
+|[Benutzer (POX)](user-pox.md) <br/> |Enthält benutzerspezifische Informationen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt den Namen des Benutzers anzeigen.
+Der Wert Text stellt den Anzeigenamen des Benutzers dar.
   
 ## <a name="see-also"></a>Siehe auch
 

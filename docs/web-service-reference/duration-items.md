@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c6a9bafd-a15b-4b04-8070-6e0a693f9683
-description: Das Dauer-Element darstellt, die Dauer der ein Kalenderelement.
-ms.openlocfilehash: e0992688f8fbaf8a9dea0e21e3dbea43ef2d161b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Duration-Element stellt die Dauer eines Kalenderelements dar.
+ms.openlocfilehash: 2434ae081fcdd0fa06f0ffbc016537691132a4cf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758117"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463552"
 ---
 # <a name="duration-items"></a>Dauer (Elemente)
 
-Das **Dauer** -Element darstellt, die Dauer der ein Kalenderelement. 
+Das **Duration** -Element stellt die Dauer eines Kalenderelements dar. 
   
 ```xml
 <Duration/>
@@ -49,17 +49,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt die Dauer der ein Kalenderelement. Diese Eigenschaft ist schreibgeschützt.
+Der Wert Text stellt die Dauer eines Kalenderelements dar. Diese Eigenschaft ist schreibgeschützt.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d5b6a099-3b87-44ef-a197-8198730ff72d
-description: Das ArchiveSourceFolderId-Element gibt die Id des Quellordners für das Archivelement.
-ms.openlocfilehash: b7a5097de734777a71559703ed2d54199edd952e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ArchiveSourceFolderId-Element gibt die ID des Quellordners für das Archivelement an.
+ms.openlocfilehash: 403f40cb4529cf72f07b8a04c0803d757c24e470
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757378"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463384"
 ---
 # <a name="archivesourcefolderid"></a>ArchiveSourceFolderId
 
-Das **ArchiveSourceFolderId** -Element gibt die Id des Quellordners für das Archivelement. 
+Das **ArchiveSourceFolderId** -Element gibt die ID des Quellordners für das Archivelement an. 
   
 ```XML
 <ArchiveSourceFolderId>
@@ -38,25 +38,25 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[FolderId](folderid.md) | [DistinguishedFolderId](distinguishedfolderid.md) | [AddressListId](addresslistid.md)
+[Ordner-Nr](folderid.md)  |  [DistinguishedFolderId](distinguishedfolderid.md)  |  [AddressList](addresslistid.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [ArchiveItem](archiveitem.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |
    
 

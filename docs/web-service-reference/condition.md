@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0790a3f2-cb31-4036-a757-7821aa0722cb
-description: Das Condition-Element identifiziert die Bedingung, die erfüllt sein muss, für die Aktionsteil der Regel ausgeführt werden.
-ms.openlocfilehash: d49f2984799b15c0499af59abecbb34abe15f7c3
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das Condition-Element gibt die Bedingung an, die erfüllt sein muss, damit der Aktions Teil der Regel ausgeführt wird.
+ms.openlocfilehash: 2aea11197f072a4dbe21292bb47075d6f273d31b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353560"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463223"
 ---
 # <a name="condition"></a>Bedingung
 
-Das **Condition** -Element identifiziert die Bedingung, die erfüllt sein muss, für die Aktionsteil der Regel ausgeführt werden. 
+Das **Condition** -Element gibt die Bedingung an, die erfüllt sein muss, damit der Aktions Teil der Regel ausgeführt wird. 
   
 ```xml
 <Condition>
@@ -68,30 +68,30 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[AllInternal](allinternal.md) <br/> |Ergibt **true** , wenn alle Empfänger einer e-Mail-Nachricht für die Organisation des Absenders intern sind.  <br/> |
-|[Und (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Gibt an, dass alle untergeordneten Elemente übereinstimmen müssen, damit zu **true**ausgewertet werden. Gibt an, dass mehr als ein Protection untergeordneten regelbedingung sein muss.  <br/> |
-|[RecipientIs](recipientis.md) <br/> |Gibt an, dass alle Empfänger der E-mail-Nachricht mit der angegebenen Empfänger im untergeordneten [Wert (ProtectionRuleValueType)](value-protectionrulevaluetype.md) entspricht.  <br/> |
-|[SenderDepartments](senderdepartments.md) <br/> |Gibt an, dass die Abteilung des Absenders einer der angegebenen Abteilungen im untergeordneten [Wert (ProtectionRuleValueType)](value-protectionrulevaluetype.md) übereinstimmt.  <br/> |
-|[True](true.md) <br/> |Gibt eine Bedingung, die immer entspricht.  <br/> |
+|[Und (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Gibt an, dass alle untergeordneten Elemente übereinstimmen müssen, damit Sie zu **true**ausgewertet werden. Gibt an, dass mehr als eine untergeordnete Schutz Regelbedingung vorhanden sein muss.  <br/> |
+|[Empfängerist](recipientis.md) <br/> |Gibt an, dass jeder Empfänger der e-Mail-Nachricht mit einem der angegebenen Empfänger in den untergeordneten [Wert (ProtectionRuleValueType)](value-protectionrulevaluetype.md) -Elementen übereinstimmt.  <br/> |
+|[SenderDepartments](senderdepartments.md) <br/> |Gibt an, dass die Abteilung des Absenders mit einer der angegebenen Abteilungen in den untergeordneten [Wertelementen (ProtectionRuleValueType)](value-protectionrulevaluetype.md) übereinstimmt.  <br/> |
+|[True](true.md) <br/> |Gibt eine Bedingung an, die immer übereinstimmt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Rule](rule.md) <br/> |Enthält eine einzelne Schutzregel.  <br/> |
+|[Rule](rule.md) <br/> |Enthält eine einzelne Schutz Regel.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

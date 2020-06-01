@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: a00f7f56-d7f1-429d-ae02-97043718c864
-description: Das CalendarEventArray-Element enthält eine Reihe von eindeutigen Kalender Element vorkommen, die den angeforderten Benutzer Verfügbarkeit darstellen.
-ms.openlocfilehash: 2e56b7b2b94e12401ba708dfca94101064d625e1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CalendarEventArray-Element enthält eine Reihe von eindeutigen Kalenderelement vorkommen, die die Verfügbarkeit des angeforderten Benutzers darstellen.
+ms.openlocfilehash: 6badba2477a9d48c6d109740de454e2815d3c211
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757522"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463370"
 ---
 # <a name="calendareventarray"></a>CalendarEventArray
 
-Das **CalendarEventArray** -Element enthält eine Reihe von eindeutigen Kalender Element vorkommen, die den angeforderten Benutzer Verfügbarkeit darstellen. 
+Das **CalendarEventArray** -Element enthält eine Reihe von eindeutigen Kalenderelement vorkommen, die die Verfügbarkeit des angeforderten Benutzers darstellen. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -52,25 +52,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CalendarEvent](calendarevent.md) <br/> |Stellt eine einzelne Kalender Element vorkommen.  <br/> |
+|[CalendarEvent](calendarevent.md) <br/> |Stellt ein eindeutiges Kalenderelement vorkommen dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FreeBusyView](freebusyview.md) <br/> |Enthält Informationen zur Verfügbarkeit für einen bestimmten Benutzer.  <br/> Es folgt der 2.0 XPath-Ausdruck, der dieses Element:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView` <br/> |
+|[FreeBusyView](freebusyview.md) <br/> |Enthält Verfügbarkeitsinformationen für einen bestimmten Benutzer.  <br/> Im folgenden finden Sie den XPath 2,0-Ausdruck für dieses Element:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die von diesem Element bereitgestellte Detailebene, hängt von der Requestor gewährten Berechtigungen. Dieses Element ist enthalten, wenn das Element [FreeBusyViewType](freebusyviewtype.md) auf **Frei/Gebucht**, **FreeBusyMerged**, **Detailed**oder **DetailedMerged**festgelegt ist. Dieses Element enthält keine untergeordneten Elemente keinen, wenn keine Elemente im Kalender in die angeforderte Zeitfenster vorhanden sind. 
+Die von diesem Element bereitgestellte Detailebene hängt von den Berechtigungen ab, die dem Requestor erteilt werden. Dieses Element ist enthalten, wenn das [FreeBusyViewType](freebusyviewtype.md) -Element auf **freebusy**, **FreeBusyMerged**, **detailed**oder **DetailedMerged**festgelegt ist. Dieses Element enthält keine untergeordneten Elemente, wenn im angeforderten Zeitfenster keine Kalenderelemente vorhanden sind. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -84,5 +84,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

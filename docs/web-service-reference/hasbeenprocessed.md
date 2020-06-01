@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 46d4af8e-0f11-4a74-9365-1d983731fed8
-description: Das HasBeenProcessed-Element gibt an, ob eine Besprechungsnachricht Element verarbeitet wurde.
-ms.openlocfilehash: cccd3b2258490fcbe902bcd391f25b0be2fe7c26
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das HasBeenProcessed-Element gibt an, ob ein Besprechungsnachrichten Element verarbeitet wurde.
+ms.openlocfilehash: 7251ca86e07a0b72c186c65094b6469331dfd12e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829796"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462893"
 ---
 # <a name="hasbeenprocessed"></a>HasBeenProcessed
 
-Das **HasBeenProcessed** -Element gibt an, ob eine Besprechungsnachricht Element verarbeitet wurde. 
+Das **HasBeenProcessed** -Element gibt an, ob ein Besprechungsnachrichten Element verarbeitet wurde. 
   
 ```xml
 <HasBeenProcessed/>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -51,17 +51,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass die Besprechungsnachricht verarbeitet wurden. 
+Der Textwert **true** gibt an, dass die Besprechungsnachricht verarbeitet wurde. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

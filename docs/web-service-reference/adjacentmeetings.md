@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 50a9c381-9166-476e-8421-29e51b94499b
 description: Das AdjacentMeetings-Element identifiziert alle Kalenderelemente, die an eine Besprechungszeit angrenzen.
-ms.openlocfilehash: 9ab818f4f67c32c01101cc595ccb92424a872ef0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 7c89095e24af799df22a848be06a0fd65d53be7f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757244"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463580"
 ---
 # <a name="adjacentmeetings"></a>AdjacentMeetings
 
@@ -51,18 +51,18 @@ Keine.
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
 > [!NOTE]
-> Obwohl weitere untergeordnete Elemente pro das Schema gültig sind, ist das [CalendarItem](calendaritem.md) -Element das einzige untergeordnete Element, bei dem Exchange-Webdienste (EWS) innerhalb des Elements **AdjacentMeetings** zurückgegeben wird. In diesem Thema wird keine untergeordneten Elemente aufgelistet, die dem Schema gültig sind, aber nicht von EWS zurückgegeben. 
+> Obwohl zusätzliche untergeordnete Elemente pro Schema gültig sind, ist das [CalendarItem](calendaritem.md) -Element das einzige untergeordnete Element, das Exchange-Webdienste innerhalb des **AdjacentMeetings** -Elements zurückgibt. In diesem Thema werden keine untergeordneten Elemente aufgeführt, die für das Schema gültig sind, aber nicht von EWS zurückgegeben werden. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

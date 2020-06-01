@@ -1,5 +1,5 @@
 ---
-title: Zuweisung (PersonaAttributionType)
+title: Attribution (PersonaAttributionType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dc59e17e-baea-4617-8ca1-4382a89de0d7
-description: Zuweisung-Element gibt eine Instanz in ein Array von Attributen für ein PersonaType-Element.
-ms.openlocfilehash: 0e800c92c75bf0c475d4bffd33d6ab49f9ad9a9a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Attribution-Element gibt eine Instanz in einem Array von Attributen für ein personatype-Element an.
+ms.openlocfilehash: 05b0d41c116f2ed7b8dbb3ac44108bb879256b5c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757407"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464175"
 ---
-# <a name="attribution-personaattributiontype"></a>Zuweisung (PersonaAttributionType)
+# <a name="attribution-personaattributiontype"></a>Attribution (PersonaAttributionType)
 
-**Zuweisung** -Element gibt eine Instanz in ein Array von Attributen für ein **PersonaType** -Element. 
+Das **Attribution** -Element gibt eine Instanz in einem Array von Attributen für ein **personatype** -Element an. 
   
 ```XML
 <Attribution>
@@ -44,33 +44,33 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ID (Zeichenfolge)](id-string.md) <br/> |Gibt eine Zeichenfolge, die eine app oder eines Attributes in einer Rolle eindeutig identifiziert.  <br/> |
-|[SourceId](sourceid.md) <br/> |Gibt den Bezeichner des Kontakts oder der Active Directory-Empfänger.  <br/> |
-|[DisplayName (Zeichenfolge)](displayname-string.md) <br/> |Der Anzeigename eines Ordners, Kontakt, Verteilerliste, Stellvertretungsbenutzers oder Regel definiert.  <br/> |
-|[IsWritable](iswritable.md) <br/> |Gibt an, ob die zugrunde liegende Kontakt oder eine Active Directory-Empfänger geschrieben werden kann.  <br/> |
-|[IsQuickContact](isquickcontact.md) <br/> |Gibt einen Boolean-Wert, der angibt, ob die zugrunde liegende Kontakt oder eine Active Directory-Empfänger ein schnelles Kontakt ist.  <br/> |
-|[IsHidden](ishidden.md) <br/> |Enthält einen booleschen Wert, der angibt, ob die zugrunde liegende Kontakt oder eine Active Directory-Empfänger ausgeblendet oder als Teil der Rolle angezeigt werden soll.  <br/> |
-|[FolderId](folderid.md) <br/> |Enthält den Schlüssel-ID und Ändern eines Ordners.  <br/> |
+|[ID (Zeichenfolge)](id-string.md) <br/> |Gibt eine Zeichenfolge an, die eine APP oder eine Attribution in einer Persona eindeutig identifiziert.  <br/> |
+|[SourceId](sourceid.md) <br/> |Gibt den Bezeichner des Kontakts oder Active Directory Empfängers an.  <br/> |
+|[DisplayName (Zeichenfolge)](displayname-string.md) <br/> |Definiert den Anzeigenamen eines Ordners, Kontakts, einer Verteilerliste, eines Stellvertreter Benutzers oder einer Regel.  <br/> |
+|[Isschreibbar](iswritable.md) <br/> |Gibt an, ob der zugrunde liegende Kontakt oder Active Directory Empfänger in geschrieben werden kann.  <br/> |
+|[IsQuickContact](isquickcontact.md) <br/> |Gibt einen booleschen Wert an, der angibt, ob der zugrunde liegende Kontakt oder Active Directory Empfänger ein schnell Kontakt ist.  <br/> |
+|[IsHidden](ishidden.md) <br/> |Enthält einen booleschen Wert, der angibt, ob der zugrunde liegende Kontakt oder Active Directory Empfänger ausgeblendet oder als Teil der Rolle angezeigt werden soll.  <br/> |
+|[FolderId](folderid.md) <br/> |Enthält den Bezeichner und den Änderungsschlüssel eines Ordners.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Hinweise (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md) <br/> |Gibt ein Array von Informationen für eine oder mehrere Kontakte oder active Directory (AD) Empfänger in der zugeordneten Rolle aggregiert.  <br/> |
+|[Zuordnungen (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md) <br/> |Gibt ein Array mit Zuordnungsinformationen für einen oder mehrere der Kontakte oder Active Directory-Empfänger (AD) an, die in der zugeordneten Rolle aggregiert sind.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

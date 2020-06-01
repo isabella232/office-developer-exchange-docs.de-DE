@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0e524a09-86f8-4a71-ac5c-66527ae70790
-description: Das GetUserPhoto-Element enthält die Anforderung an das Foto des Benutzers abzurufen.
-ms.openlocfilehash: 1fa1db6d903f83ad54ffadb188ba79ee178de797
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetUserPhoto-Element enthält die Anforderung zum Abrufen des Fotos eines Benutzers.
+ms.openlocfilehash: 64b0ec67abd70fb237549eb0fed1968275c615ba
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829695"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463909"
 ---
 # <a name="getuserphoto"></a>GetUserPhoto
 
-Das **GetUserPhoto** -Element enthält die Anforderung an das Foto des Benutzers abzurufen. 
+Das **GetUserPhoto** -Element enthält die Anforderung zum Abrufen des Fotos eines Benutzers. 
   
 ```XML
 <GetUserPhoto>
@@ -37,25 +37,25 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[E-Mail (Zeichenfolge)](email-string.md) | [SizeRequested](sizerequested.md)
+[E-Mail (Zeichenfolge)](email-string.md)  |  [SizeRequested](sizerequested.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

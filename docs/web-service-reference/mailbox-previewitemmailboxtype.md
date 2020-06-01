@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e898d737-b6e4-4403-9c2c-aec52a48a83d
-description: Das Postfach-Element enthält die Postfach-ID und primäre Simple Mail Transfer Protocol (SMTP)-Adresse des Benutzers.
-ms.openlocfilehash: 1b6669928015bc880806479d294a4063034a559f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Mailbox-Element enthält die Postfach-ID und die primäre Simple Mail Transfer Protocol (SMTP) Adresse des Benutzers.
+ms.openlocfilehash: 4dc5ee45c00945c30a699daa0158c96679189ab1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830255"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463895"
 ---
 # <a name="mailbox-previewitemmailboxtype"></a>Postfach (PreviewItemMailboxType)
 
-Das **Postfach** -Element enthält die Postfach-ID und primäre Simple Mail Transfer Protocol (SMTP)-Adresse des Benutzers. 
+Das **Mailbox** -Element enthält die Postfach-ID und die primäre Simple Mail Transfer Protocol (SMTP) Adresse des Benutzers. 
   
 ```XML
 <Mailbox>
@@ -38,23 +38,23 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[MailboxId](mailboxid.md) | [PrimarySmtpAddress (Zeichenfolge)](primarysmtpaddress-string.md)
+[Post Fach-Nr](mailboxid.md)  |  [PrimarySmtpAddress (Zeichenfolge)](primarysmtpaddress-string.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [SearchPreviewItem](searchpreviewitem.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |

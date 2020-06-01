@@ -1,5 +1,5 @@
 ---
-title: ConferenceType
+title: Conferencetype
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6bcf6c18-2695-44b1-aabe-dadc52b2633a
-description: Das ConferenceType-Element beschreibt die Art der Konferenzen, die mit einem Kalenderelement ausgeführt wird.
-ms.openlocfilehash: d312420606c5e1914fe321ae7c7c512f0833199c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das conferencetype-Element beschreibt die Art der Konferenz, die mit einem Kalenderelement durchgeführt wird.
+ms.openlocfilehash: 482fc09d709e2b151b255107af59cb98de236aec
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757590"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463930"
 ---
-# <a name="conferencetype"></a>ConferenceType
+# <a name="conferencetype"></a>Conferencetype
 
-Das **ConferenceType** -Element beschreibt die Art der Konferenzen, die mit einem Kalenderelement ausgeführt wird. 
+Das **conferencetype** -Element beschreibt die Art der Konferenz, die mit einem Kalenderelement durchgeführt wird. 
   
 ```xml
 <ConferenceType/>
@@ -49,7 +49,7 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der eine ganze Zahl darstellt, ist erforderlich, wenn dieses Element verwendet wird. Es folgen die möglichen Werte für dieses Element:
+Ein Textwert, der einen ganzzahligen Wert darstellt, ist erforderlich, wenn dieses Element verwendet wird. Im folgenden sind die möglichen Werte für dieses Element angegeben:
   
 - 0 = NetMeeting
     
@@ -57,17 +57,17 @@ Ein Textwert, der eine ganze Zahl darstellt, ist erforderlich, wenn dieses Eleme
     
 - 2 = Chat
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-**Meetingworkspaceurl (** Eigenschaft) kann für den Organisator Kalenderelement lesen geschrieben werden. Es ist schreibgeschützt, für Besprechungsanfragen und für Elemente im Kalender des Teilnehmers. 
+Die **MeetingWorkspaceUrl** -Eigenschaft ist für das Kalenderelement des Organisators schreibgeschützt. Er ist schreibgeschützt für Besprechungsanfragen und Kalenderelemente des Teilnehmers. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

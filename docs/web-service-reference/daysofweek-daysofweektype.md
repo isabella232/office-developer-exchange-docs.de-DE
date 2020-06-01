@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c56f997d-28f3-4590-97b0-cb71f016dbe4
-description: Das DaysOfWeek-Element beschreibt die Wochentage, die in Artikel Serienmuster verwendet werden.
-ms.openlocfilehash: 0b730ff5a7bc9aa6b324fc080022d056c5342296
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DaysOfWeek-Element beschreibt Wochentage, die in Element Serien Mustern verwendet werden.
+ms.openlocfilehash: 3036cbe3f93ff87b9a4d5dc7bf164e3e952b06fd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757887"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463720"
 ---
 # <a name="daysofweek-daysofweektype"></a>DaysOfWeek (DaysOfWeekType)
 
-Das **DaysOfWeek** -Element beschreibt die Wochentage, die in Artikel Serienmuster verwendet werden. 
+Das **DaysOfWeek** -Element beschreibt Wochentage, die in Element Serien Mustern verwendet werden. 
   
 ```XML
 <DaysOfWeek/>
@@ -58,21 +58,21 @@ Ein Textwert ist erforderlich. Im Folgenden sind die möglichen Werte aufgeführ
 - Donnerstag    
 - Freitag    
 - Samstag    
-- Tag (dieser Wert ist nicht gültig für ein wöchentliches Serienmuster)    
-- Weekday (dieser Wert ist nicht gültig für ein wöchentliches Serienmuster)    
-- (Dieser Wert ist nicht gültig für ein wöchentliches Serienmuster) WeekendDay
+- Tag (dieser Wert ist für ein wöchentliches Serienmuster ungültig)    
+- Wochentag (dieser Wert ist für ein wöchentliches Serienmuster ungültig)    
+- WeekendDay (dieser Wert ist für ein wöchentliches Serienmuster ungültig)
     
-Ein wöchentliches Serienmuster kann mehrere Werte enthalten. Werte werden durch ein Leerzeichen voneinander getrennt. Beispielsweise wird der Textwert für eine wöchentliche Serie dienstags und donnerstags, "Dienstag Donnerstag" sein.
+Ein wöchentliches Serienmuster kann mehrere Werte enthalten. Werte werden durch ein Leerzeichengetrennt. Bei einer wöchentlichen Wiederholung dienstags und donnerstags ist der Textwert beispielsweise "Dienstag Donnerstag".
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

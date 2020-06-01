@@ -1,22 +1,22 @@
 ---
-title: EcpUrl-tm (POX)
+title: EcpUrl-TM (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3f35d5ac-55be-4d3a-ad03-7d6e9349d923
-description: Das EcpUrl tm-Element gibt eine partielle URL, die mit dem EcpUrl (POX) Elementwert generiert eine URL, die verwendet werden können, greifen Sie auf eine Liste aller Postfächer für Website, ein e-Mail-aktivierten Benutzer derzeit gehört kombiniert werden kann.
-ms.openlocfilehash: 786459cab98f8c169f768b6ef850792e8111761a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EcpUrl-TM-Element gibt eine partielle URL an, die mit dem Wert des EcpUrl (POX)-Elements kombiniert werden kann, um eine URL zu generieren, die für den Zugriff auf eine Liste aller Website Postfächer verwendet werden kann, in denen ein e-Mail-aktivierter Benutzer derzeit Mitglied ist.
+ms.openlocfilehash: 8d4c787e2eeae5300cd0496f199ea71baace98ba
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758129"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463545"
 ---
-# <a name="ecpurl-tm-pox"></a>EcpUrl-tm (POX)
+# <a name="ecpurl-tm-pox"></a>EcpUrl-TM (POX)
 
-Das **EcpUrl tm** -Element gibt eine partielle URL, die mit dem [EcpUrl (POX)](ecpurl-pox.md) Elementwert generiert eine URL, die verwendet werden können, greifen Sie auf eine Liste aller Postfächer für Website, ein e-Mail-aktivierten Benutzer derzeit gehört kombiniert werden kann. 
+Das **EcpUrl-TM-** Element gibt eine partielle URL an, die mit dem Wert des [EcpUrl (POX)](ecpurl-pox.md) -Elements kombiniert werden kann, um eine URL zu generieren, die für den Zugriff auf eine Liste aller Website Postfächer verwendet werden kann, in denen ein e-Mail-aktivierter Benutzer derzeit Mitglied ist. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -26,7 +26,7 @@ Das **EcpUrl tm** -Element gibt eine partielle URL, die mit dem [EcpUrl (POX)](e
   
 [Protokoll (POX)](protocol-pox.md)
   
-[EcpUrl-tm (POX)](ecpurl-tm-pox.md)
+[EcpUrl-TM (POX)](ecpurl-tm-pox.md)
   
 ```XML
 <EcpUrl-tm/>
@@ -48,15 +48,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt eine partielle URL, die mit dem [EcpUrl (POX)](ecpurl-pox.md) Elementwert generiert eine URL, die verwendet werden kann, eine Liste der websitepostfächer für den Benutzer Zugriff auf kombiniert werden kann. 
+Der Textwert stellt eine partielle URL dar, die mit dem [EcpUrl (POX)](ecpurl-pox.md) -Elementwert kombiniert werden kann, um eine URL zu generieren, die für den Zugriff auf eine Liste von Website Postfächern für den Benutzer verwendet werden kann. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **EcpUrl tm** -Element ist ein optionales untergeordnetes Element des **Protokoll** -Elements. 
+Das **EcpUrl-TM-** Element ist ein optionales untergeordnetes Element des **Protocol** -Elements. 
   
 ## <a name="see-also"></a>Siehe auch
 

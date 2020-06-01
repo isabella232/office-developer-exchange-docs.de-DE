@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: e60e525f-c136-469a-b68b-b3dc01f400a6
-description: Das IsReadReceipt-Element gibt an, ob eingehende Nachrichten Empfangsbestätigungen in Reihenfolge für die Bedingung oder Ausnahme anzuwendende gelesen werden müssen.
-ms.openlocfilehash: 78714aafb116a609a69d77b3b4f0fd15695bda34
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IsReadReceipt-Element gibt an, ob eingehende Nachrichten Lesebestätigungen sein müssen, damit die Bedingung oder Ausnahme zutrifft.
+ms.openlocfilehash: e86a7776bc43204dae9fc92f21d4304255ddb888
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830094"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463902"
 ---
 # <a name="isreadreceipt"></a>IsReadReceipt
 
-Das **IsReadReceipt** -Element gibt an, ob eingehende Nachrichten Empfangsbestätigungen in Reihenfolge für die Bedingung oder Ausnahme anzuwendende gelesen werden müssen. 
+Das **IsReadReceipt** -Element gibt an, ob eingehende Nachrichten Lesebestätigungen sein müssen, damit die Bedingung oder Ausnahme zutrifft. 
   
 ```XML
 <IsReadReceipt> true | false</IsReadReceipt>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -49,19 +49,19 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass die Nachricht eine lesebestätigung in der Reihenfolge für die Bedingung oder Ausnahme angewendet werden muss. Wenn die Nachricht nicht vorhanden ist, um eine lesebestätigung für die Bedingung oder Ausnahme angewendet werden, ist der Wert **false**.
+Der Textwert **true** gibt an, dass die Nachricht eine Lesebestätigung sein muss, damit die Bedingung oder Ausnahme zutrifft. Wenn die Nachricht nicht eine Lesebestätigung sein muss, damit die Bedingung oder Ausnahme angewendet wird, ist der Wert **false**.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

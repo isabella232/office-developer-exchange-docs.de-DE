@@ -1,22 +1,22 @@
 ---
-title: EcpUrl-TmEditing (POX)
+title: EcpUrl-tmEditing (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1fbc2ea9-3f94-441b-ab42-647326bf0021
-description: Das EcpUrl TmEditing-Element gibt eine partielle URL, die kombiniert werden kann, mit dem EcpUrl (POX) Elementwert generiert eine URL, die zum Bearbeiten eines vorhandenen Website-Postfachs verwendet werden kann.
-ms.openlocfilehash: 29b27ffe9ef3c18a3b6471ca4a42956a43a5aaa6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EcpUrl-tmEditing-Element gibt eine partielle URL an, die mit dem Wert des EcpUrl (POX)-Elements kombiniert werden kann, um eine URL zu generieren, die zum Bearbeiten eines vorhandenen websitepostfachs verwendet werden kann.
+ms.openlocfilehash: 5d6c6b8e8f73d113cfde3570065435927ffbae05
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758130"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463538"
 ---
-# <a name="ecpurl-tmediting-pox"></a>EcpUrl-TmEditing (POX)
+# <a name="ecpurl-tmediting-pox"></a>EcpUrl-tmEditing (POX)
 
-Das **EcpUrl TmEditing** -Element gibt eine partielle URL, die kombiniert werden kann, mit dem [EcpUrl (POX)](ecpurl-pox.md) Elementwert generiert eine URL, die zum Bearbeiten eines vorhandenen Website-Postfachs verwendet werden kann. 
+Das **EcpUrl-tmEditing-** Element gibt eine partielle URL an, die mit dem Wert des [EcpUrl (POX)](ecpurl-pox.md) -Elements kombiniert werden kann, um eine URL zu generieren, die zum Bearbeiten eines vorhandenen websitepostfachs verwendet werden kann. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -26,7 +26,7 @@ Das **EcpUrl TmEditing** -Element gibt eine partielle URL, die kombiniert werden
   
 [Protokoll (POX)](protocol-pox.md)
   
-[EcpUrl-TmEditing (POX)](ecpurl-tmediting-pox.md)
+[EcpUrl-tmEditing (POX)](ecpurl-tmediting-pox.md)
   
 ```XML
 <EcpUrl-tmEditing/>
@@ -48,20 +48,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt eine partielle URL, die kombiniert werden kann, mit dem [EcpUrl (POX)](ecpurl-pox.md) Elementwert generiert eine URL, die zum Bearbeiten eines vorhandenen Website-Postfachs verwendet werden kann. Der Wert des **EcpUrl TmEditing** -Elements enthält Parameter enthaltenen ' <' und ' >' Zeichen, die vom Client ersetzt werden, wie in der folgenden Tabelle dargestellt. 
+Der Textwert stellt eine partielle URL dar, die mit dem [EcpUrl (POX)](ecpurl-pox.md) -Elementwert kombiniert werden kann, um eine URL zu generieren, die zum Bearbeiten eines vorhandenen websitepostfachs verwendet werden kann. Der Wert des **EcpUrl-tmEditing-** Elements enthält Parameter, die in "<"-und ">"-Zeichen enthalten sind, die durch den Client ersetzt werden, wie in der folgenden Tabelle dargestellt. 
   
 |**Parameter**|**Ersetzen durch**|
 |:-----|:-----|
-| 
-  _ID_ <br/> |Die SMTP-e-Mail-Adresse oder die X500 distinguished Name des websitepostfachs.  <br/> |
+| _Id_ <br/> |Die SMTP-e-Mail-Adresse oder der Distinguished Name x500 des websitepostfachs.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **EcpUrl TmEditing** -Element ist ein optionales untergeordnetes Element des **Protokoll** -Elements. 
+Das **EcpUrl-tmEditing-** Element ist ein optionales untergeordnetes Element des **Protocol** -Elements. 
   
 ## <a name="see-also"></a>Siehe auch
 

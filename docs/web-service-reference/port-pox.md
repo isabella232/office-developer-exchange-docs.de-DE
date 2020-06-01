@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 4046821a-d6f3-4764-82be-4011221ce7a3
-description: Das Port-Element gibt den Port, der Verbindung mit dem Speicher verwendet wird.
-ms.openlocfilehash: f5a2155d97061a87fdf819549ec29898efe4d201
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Port-Element gibt den Port an, der zum Herstellen einer Verbindung mit dem Speicher verwendet wird.
+ms.openlocfilehash: 2da59e03a57b44fb12d14368d1b585ba845eacfe
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830842"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464014"
 ---
 # <a name="port-pox"></a>Port (POX)
 
-Das **Port** -Element gibt den Port, der Verbindung mit dem Speicher verwendet wird. 
+Das **Port** -Element gibt den Port an, der zum Herstellen einer Verbindung mit dem Speicher verwendet wird. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,15 +50,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt den Port, der Zugriff auf den Exchange-Server verwendet wird.
+Der Wert Text stellt den Port dar, der für den Zugriff auf den Exchange-Server verwendet wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Wert für **Port** wird nicht verwendet, wenn das [Server (POX)](server-pox.md) -Element eine URL enthält. 
+Der **Portwert** wird nicht verwendet, wenn das [Server (POX)-](server-pox.md) Element eine URL enthält. 
   
 ## <a name="see-also"></a>Siehe auch
 

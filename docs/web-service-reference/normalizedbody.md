@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bfb813e4-642d-4f1b-9e91-1fee89dbd083
-description: Das NormalizedBody-Element gibt eine HTML-Darstellung der die Body-Eigenschaft eines Elements als Fragment, das in einem anderen HTML-Text eingefügt werden kann.
-ms.openlocfilehash: 07c2176d2c8a7473c06b7e42f8bcbbe6670581ef
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das NormalizedBody-Element gibt eine HTML-Darstellung der Body-Eigenschaft eines Elements als Fragment an, das in einen anderen HTML-Textkörper eingefügt werden kann.
+ms.openlocfilehash: fb249794bccfeed198e7a3230ab53c66893dcf96
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830548"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462668"
 ---
 # <a name="normalizedbody"></a>NormalizedBody
 
-Das **NormalizedBody** -Element gibt eine HTML-Darstellung der die **Body** -Eigenschaft eines Elements als Fragment, das in einem anderen HTML-Text eingefügt werden kann. 
+Das **NormalizedBody** -Element gibt eine HTML-Darstellung der **Body** -Eigenschaft eines Elements als Fragment an, das in einen anderen HTML-Textkörper eingefügt werden kann. 
   
 ```XML
 <NormalizedBody BodyType="Text | HTML" IsTruncated="true | false"></NormalizedBody>
@@ -32,8 +32,8 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|BodyType  <br/> |Gibt den Typ des Hauptteils an. Der Wert der **Text** für das **BodyType** -Attribut gibt an, dass der Text in nur-Text-Format ist. Der Wert von **HTML** für das **BodyType** -Attribut gibt an, dass der Textkörper in HTML-Formular ist. Das Attribut **BodyType** ist erforderlich.  <br/> |
-|IsTruncated  <br/> |Gibt an, dass der Inhalt des Body abgeschnitten worden sein. Der Textwert **false** für das **IsTruncated** -Attribut gibt an, dass der Inhalt des Body nicht abgeschnitten worden sein. Normalisierte Textkörper werden abgeschnitten, wenn die normalisierte Textkörper Länge länger als der Wert im [MaximumBodySize](maximumbodysize.md) -Element festgelegt ist.  <br/> |
+|BodyType  <br/> |Gibt den Typ des Texts an. Der Wert des **Texts** für das **BodyType** -Attribut gibt an, dass sich der Textkörper in nur-Text-Form befindet. Der Wert von **HTML** für das **BodyType** -Attribut gibt an, dass sich der Text im HTML-Format befindet. Das **BodyType** -Attribut ist erforderlich.  <br/> |
+|IsTruncated  <br/> |Gibt an, dass der Textkörper Inhalt abgeschnitten wurde. Der Textwert **false** für das Attribut **IsTruncated** gibt an, dass der Inhalt des Texts nicht abgeschnitten wurde. Der normalisierte Text wird abgeschnitten, wenn die normalisierte Körperlänge länger ist als der im [MaximumBodySize](maximumbodysize.md) -Element festgelegte Wert.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -41,23 +41,23 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Element](item.md) | [Nachricht](message-ex15websvcsotherref.md) | [MeetingMessage](meetingmessage.md) | [MeetingRequest](meetingrequest.md) | [MeetingResponse](meetingresponse.md) | [MeetingCancellation](meetingcancellation.md) | [Aufgabe](task.md) | [PostItem-Objekt ](postitem.md)  |  [CalendarItem](calendaritem.md) | [Kontakt](contact.md) | [DistributionList](distributionlist.md)
+[Element](item.md)  |  [Nachricht](message-ex15websvcsotherref.md)  |  [MeetingMessage](meetingmessage.md)  |  [MeetingRequest](meetingrequest.md)  |  [MeetingResponse](meetingresponse.md)  |  [MeetingCancellation](meetingcancellation.md)  |  [Aufgabe](task.md)  |  [PostItem](postitem.md)  |  [CalendarItem](calendaritem.md)  |  [Kontaktinformationen](contact.md)  |  [Verteilerliste](distributionlist.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **NormalizedBody** -Elements ist die normalisierte Textkörper des Elements. 
+Der Textwert des **NormalizedBody** -Elements ist der normalisierte Text des Elements. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

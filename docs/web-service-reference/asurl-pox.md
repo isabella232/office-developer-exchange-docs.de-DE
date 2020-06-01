@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 6727f282-ec4c-4e61-8414-e7ba5f9865e7
-description: Das ASUrl-Element gibt die URL der besten Endpunktinstanz von Exchange Verfügbarkeit-Webdienste für einen e-Mail-aktivierten Benutzer.
-ms.openlocfilehash: fd765049aaccd93f2d6269375420f571108825a2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das vom asurl-Element gibt die URL der besten Endpunkt Instanz der Exchange-Verfügbarkeits Webdienste für einen e-Mail-aktivierten Benutzer an.
+ms.openlocfilehash: 62fc3c18b2c41bb131ec5bc8546089b73f247f99
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757391"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464420"
 ---
 # <a name="asurl-pox"></a>ASUrl (POX)
 
-Das **ASUrl** -Element gibt die URL der besten Endpunktinstanz von Exchange Verfügbarkeit-Webdienste für einen e-Mail-aktivierten Benutzer. 
+Das **vom asurl** -Element gibt die URL der besten Endpunkt Instanz der Exchange-Verfügbarkeits Webdienste für einen e-Mail-aktivierten Benutzer an. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,11 +50,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert enthält die URL, die den Verfügbarkeitsdienst Zugriff auf verwendet wird.
+Der Text-Wert enthält die URL, die für den Zugriff auf den Verfügbarkeitsdienst verwendet wird.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -8,23 +8,23 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: ae97c802-f6ef-46da-b774-ca0a5feb664f
-description: Das AuthenticationMethods-Element werden die Authentifizierungsmethoden beschrieben, die für eine Webclient verfügbar sind.
-ms.openlocfilehash: d5b1e73a336edebacca76d63e6c470492be694f3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AuthenticationMethods-Element beschreibt die Authentifizierungsmethoden, die für einen Webclient verfügbar sind.
+ms.openlocfilehash: 5891cd53c306a0a3927579813f8095e4c67ab74d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757409"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463972"
 ---
 # <a name="authenticationmethods-soap"></a>AuthenticationMethods (SOAP)
 
-Das **AuthenticationMethods** -Element werden die Authentifizierungsmethoden beschrieben, die für eine Webclient verfügbar sind. 
+Das **AuthenticationMethods** -Element beschreibt die Authentifizierungsmethoden, die für einen Webclient verfügbar sind. 
   
 ```XML
 <AuthenticationMethods/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -41,19 +41,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[WebClientUrl (SOAP)](webclienturl-soap.md) <br/> |Stellt die URL des Outlook Web App-Clients.  <br/> |
+|[WebClientUrl (SOAP)](webclienturl-soap.md) <br/> |Stellt die URL des Outlook Web App Clients dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Der Textwert des **AuthenticationMethods** -Elements ist die URL des Outlook Web App-Clients. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

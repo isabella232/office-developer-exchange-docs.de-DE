@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9b0a03f2-3282-46e1-b1a0-cbb9a0fbe9bb
-description: Das AggregateOn-Element darstellt, die Eigenschaft, die verwendet wird, um die Reihenfolge der gruppierten Elemente für eine gruppierte FindItem Resultset zu bestimmen.
-ms.openlocfilehash: fe14de23e6a4c90d826200cae927427acfccc3c8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AggregateOn-Element stellt die Eigenschaft dar, die verwendet wird, um die Reihenfolge von gruppierten Elementen für ein gruppiertes FindItem-Resultset festzulegen.
+ms.openlocfilehash: 04359c187ef11538d64f8f0d3ea2fe84bc3d048b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757247"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463566"
 ---
 # <a name="aggregateon"></a>AggregateOn
 
-Das **AggregateOn** -Element darstellt, die Eigenschaft, die verwendet wird, um die Reihenfolge der gruppierten Elemente für eine gruppierte FindItem Resultset zu bestimmen. 
+Das **AggregateOn** -Element stellt die Eigenschaft dar, die verwendet wird, um die Reihenfolge von gruppierten Elementen für ein gruppiertes FindItem-Resultset festzulegen. 
   
 - [FindItem](finditem.md)  
 - [GroupBy](groupby.md)
@@ -55,39 +55,39 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Aggregate** <br/> | Gibt den maximalen oder den minimalen Wert der Eigenschaft identifiziert durch das [FieldURI](fielduri.md) -Element, das für die Reihenfolge der Gruppen von Elementen verwendet wird.<br/><br/>Im Folgenden sind die möglichen Werte aufgeführt:  <br/><br/>-Minimum  <br/>-Maximum  <br/> |
+|**Aggregate** <br/> | Gibt den maximalen oder minimalen Wert der Eigenschaft an, die durch das [FieldURI](fielduri.md) -Element identifiziert wird, das für die Sortierung der Gruppen von Elementen verwendet wird.<br/><br/>Im Folgenden sind die möglichen Werte aufgeführt:  <br/><br/>-Minimum  <br/>-Maximum  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifiziert die Eigenschaften von URI häufig verwiesen wird.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Einzelne Elemente eines Wörterbuchs identifiziert.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Bezeichnet die extended MAPI-Eigenschaften zum Abrufen oder festlegen, oder erstellen.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member eines Wörterbuchs.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert erweiterte MAPI-Eigenschaften zum Abrufen, festlegen oder erstellen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GroupBy](groupby.md) <br/> |Gibt beliebige Gruppen für FindItem Abfragen an.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:`/FindItem/GroupBy` <br/> |
+|[GroupBy](groupby.md) <br/> |Gibt willkürliche Gruppierungen für FindItem-Abfragen an.  <br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/FindItem/GroupBy` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der [Vorgang FindItem](finditem-operation.md) können gruppierte Ergebnisse zurück. Innerhalb einer gruppierten Ergebnisse werden alle Elemente, die den gleichen Wert für einen bestimmten Gruppierungseigenschaft aufweisen zusammengefasst und als untergeordnete Elemente dieser Gruppe vorgelegt. Wenn Sie nach Absender gruppiert, sind beispielsweise alle E-mails organisiert, separate basierend auf in Gruppen, ob sie vom Absender A, B Absender usw. sind. Diese Gruppen sind untergeordnete Elemente der Gruppe der Absender. 
+Der [FindItem-Vorgang](finditem-operation.md) kann gruppierte Ergebnisse zurückgeben. In gruppierten Ergebnissen werden alle Elemente, die den gleichen Wert für eine bestimmte Gruppierungseigenschaft aufweisen, zusammen gesammelt und als untergeordnete Elemente dieser Gruppe dargestellt. Wenn Sie beispielsweise nach Absender gruppieren, werden alle e-Mails abhängig davon, ob Sie von Absender a, Absender B und so weiter sind, in separaten Gruppen organisiert. Diese Gruppen sind untergeordnete Elemente der Absendergruppe. 
   
-Jede dieser Gruppen innerhalb der Gruppe Absender enthält eine Auflistung von Elementen, wie die tatsächlichen e-Mail-Nachrichten, die von einem einzelnen Absender stammt. Sie können das [SortOrder](sortorder.md) -Element zum Sortieren der Elemente in einer Gruppe verwenden. Sortieren Sie die Eigenschaftswerte eines Elements auf der Grundlage Gruppen müssen Sie jedoch Aggregation verwenden. 
+Jede der Gruppen innerhalb der Absendergruppe enthält eine Sammlung von Elementen, beispielsweise die tatsächlichen e-Mails, die von jedem Absender stammen. Sie können das Sortier [Reihenfolge](sortorder.md) -Element verwenden, um die Elemente innerhalb einer Gruppe zu sortieren. Um die Gruppen basierend auf den Eigenschaftswerten eines Elements zu sortieren, müssen Sie jedoch Aggregation verwenden. 
   
-Mit Aggregation basiert die Reihenfolge der Gruppen auf eine bestimmte Eigenschaft der Elemente in der Gruppe. Wenn Sie zum Sortieren der Elemente in einer Gruppe Aggregation verwenden, müssen Sie eine repräsentative-Eigenschaft, um die Gruppen sortieren identifizieren. Das **AggregateOn** -Element können Sie die repräsentative-Eigenschaft angeben. 
+Bei Aggregation basiert die Reihenfolge der Gruppen auf einer bestimmten Eigenschaft der Elemente in der Gruppe. Wenn Sie mithilfe von Aggregation Elemente innerhalb einer Gruppe Sortieren, müssen Sie eine repräsentative Eigenschaft angeben, nach der die Gruppen sortiert werden sollen. Sie können das **AggregateOn** -Element verwenden, um die Representative-Eigenschaft anzugeben. 
   
-Wenn eine repräsentative Eigenschaft identifiziert wird, wird das **aggregierte** Attribut verwendet, um anzugeben, ob die Gruppen nach die maximale oder den minimalen Wert der angegebenen Eigenschaft sortiert werden. Wenn das **Aggregate** -Attribut auf Maximum festgelegt ist, werden die Gruppen sortiert beginnend mit dem größten Wert für die **AggregateOn** -Eigenschaft. Wenn das **Aggregate** -Attribut auf mindestens festgelegt ist, werden die Gruppen sortiert beginnend mit dem kleinsten Wert für die **AggregateOn** -Eigenschaft. 
+Wenn eine repräsentative Eigenschaft identifiziert wird, wird das **Aggregate** -Attribut verwendet, um anzugeben, ob die Gruppen entsprechend dem maximalen oder dem kleinsten Wert der angegebenen Eigenschaft sortiert werden. Wenn das **Aggregate** -Attribut auf Maximum festgelegt ist, werden die Gruppen beginnend mit dem größten Wert für die **AggregateOn** -Eigenschaft sortiert. Wenn das **Aggregate** -Attribut auf Minimum festgelegt ist, werden die Gruppen beginnend mit dem kleinsten Wert für die **AggregateOn** -Eigenschaft sortiert. 
   
-Angenommen, wenn Sie eine gruppierte Abfrage FindItem, ausstellen, Gruppieren nach Absender möchten, aber Sie die Gruppen, damit die Gruppe mit den neuesten e-Mail-Nachricht im Vordergrund ist bestellen möchten, Sie können Gruppieren nach Absender und Aggregat auf Datum/Uhrzeit mit **aggregierte** empfangen -Attribut des Maximum. 
+Wenn Sie beispielsweise eine FindItem-gruppierte Abfrage ausgeben möchten, die nach Absender gruppiert wird, Sie die Gruppen jedoch so sortieren möchten, dass die Gruppe mit der neuesten e-Mail-Nachricht im Vordergrund ist, können Sie nach Absender und Aggregat nach Datum/Uhrzeit, die mit einem **Aggregate** -Attribut von Maximum empfangen wurde, gruppieren. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt einen gruppierten FindItem Anforderung und Antwort. Das Beispiel zeigt eine Anforderung zum Zurückgeben von Elementen, die von der **ConversationTopic** -Eigenschaft gruppiert. Zwei Gruppen, A und B werden in absteigender Reihenfolge basierend auf den Höchstwert der [DateTimeReceived](datetimereceived.md) -Eigenschaft zurückgegeben. 
+Das folgende Beispiel zeigt eine gruppierte FindItem-Anforderung und-Antwort. Das Beispiel zeigt eine Anforderung zum Zurückgeben von Elementen, die von der **ConversationTopic** -Eigenschaft gruppiert werden. Zwei Gruppen, A und B, werden in absteigender Reihenfolge basierend auf dem Höchstwert der [DateTimeReceived](datetimereceived.md) -Eigenschaft zurückgegeben. 
   
 ```XML
 <!-- EXAMPLE REQUEST -->
@@ -95,10 +95,10 @@ Das folgende Beispiel zeigt einen gruppierten FindItem Anforderung und Antwort. 
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <FindItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+    <FindItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                 Traversal="Shallow">
       <ItemShape>
         <t:BaseShape>IdOnly</t:BaseShape>
@@ -127,12 +127,12 @@ Das folgende Beispiel zeigt einen gruppierten FindItem Anforderung und Antwort. 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="652" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:FindItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -187,16 +187,16 @@ Das folgende Beispiel zeigt einen gruppierten FindItem Anforderung und Antwort. 
 </soap:Envelope>
 ```
 
-Verwenden Sie zum Sortieren der Elemente in einer Gruppe das [SortOrder](sortorder.md) -Element ein. 
+Wenn Sie die Elemente in einer Gruppe sortieren möchten, verwenden Sie das Sortier [Reihenfolge](sortorder.md) -Element. 
   
 > [!NOTE]
-> Die Element-IDs und Ändern von Schlüsseln wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Element-IDs und Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -205,5 +205,5 @@ Verwenden Sie zum Sortieren der Elemente in einer Gruppe das [SortOrder](sortord
 
 - [FindItem-Vorgang](finditem-operation.md)
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
-- [Finding Items](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+- [Finding Items](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 153cc420-d2fe-42f1-afb2-9a31ee09a750
-description: Das Benachrichtigungen-Element enthält ein Array von Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.
-ms.openlocfilehash: f576bf579c91b77dcde8646a6af7fdc47145aef7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Notifications-Element enthält ein Array von Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.
+ms.openlocfilehash: 88fc56ba6e672e3dea7a1d31f7cc1fda018b9a15
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830550"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462619"
 ---
 # <a name="notifications"></a>Benachrichtigungen
 
-Das **Benachrichtigungen** -Element enthält ein Array von Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind. 
+Das **Notifications** -Element enthält ein Array von Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind. 
   
 ```xml
 <Notifications>
@@ -48,30 +48,30 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetStreamingEventsResponseMessage](getstreamingeventsresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen Anforderung [GetStreamingEvents Vorgang](getstreamingevents-operation.md) .  <br/> |
+|[GetStreamingEventsResponseMessage](getstreamingeventsresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [GetStreamingEvents-Vorgangs](getstreamingevents-operation.md) Anforderung.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages und http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Name des Schemas  <br/> |Nachrichten-schema Typen-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd; Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages und https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Name des Schemas  <br/> |Nachrichtenschema; Typenschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd; Types. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[GetFolder Operation](getfolder-operation.md)
+[GetFolder-Vorgang](getfolder-operation.md)
   
 [DeleteFolder-Vorgang](deletefolder-operation.md)
   

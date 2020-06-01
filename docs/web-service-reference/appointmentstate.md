@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ab3f5d04-ace1-4a15-9107-cefa6c41abc7
-description: Das AppointmentState-Element gibt den Status des Termins.
-ms.openlocfilehash: 05e92a3fea10a84518b0680c425011a91bc43d93
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AppointmentState-Element gibt den Status des Termins an.
+ms.openlocfilehash: 8b0e827d02e9051f31d43199503dc286c50e2125
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757364"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463475"
 ---
 # <a name="appointmentstate"></a>AppointmentState
 
-Das **AppointmentState** -Element gibt den Status des Termins. 
+Das **AppointmentState** -Element gibt den Status des Termins an. 
   
 ```XML
 <AppointmentState/>
@@ -49,26 +49,26 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Dieses Element enthält einen Textwert, dass stellt Bits festgelegt. Dies ist Integer-Formular. Dieses Element ist schreibgeschützt. Es wird nur in einer Antwort zurückgegeben werden.
+Dieses Element enthält einen Textwert, der festgelegte Bits darstellt. Dies ist eine ganzzahlige Form. Dieses Element ist schreibgeschützt. Sie wird nur in einer Antwort zurückgegeben.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Ganzzahlwert, der zurückgegeben wird, stellt die Termin Zustand Bitmaske dar. Die folgende Tabelle beschreibt jedes Bit.
+Der zurückgegebene ganzzahlige Wert stellt die Bitmaske des Terminstatus dar. In der folgenden Tabelle werden die einzelnen Bit beschrieben.
   
 |**Name**|**Bit**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Keine  <br/> |0x0000  <br/> |Keine Flags es wurden festgelegt. Dies ist nur für einen Termin verwendet, die nicht Teilnehmer enthalten ist.  <br/> |
+|Keine  <br/> |0x0000  <br/> |Es wurden keine Flags festgelegt. Dies wird nur für einen Termin verwendet, der keine Teilnehmer enthält.  <br/> |
 |Besprechung  <br/> |0x0001  <br/> |Dieser Termin ist eine Besprechung.  <br/> |
 |Auszahlung  <br/> |0x0002  <br/> |Dieser Termin wurde empfangen.  <br/> |
 |Abgebrochen  <br/> |0x0004  <br/> |Dieser Termin wurde abgebrochen.  <br/> |
    
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

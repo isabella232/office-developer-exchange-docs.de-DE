@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 43e12e8b-5629-4f5f-9cbd-a99084d8460f
-description: Das Element CreateUserConfiguration stellt eine Anforderung zum Erstellen einer Benutzer-Konfigurationsobjekt.
-ms.openlocfilehash: dcf3acc356110b993bdb7f4f83245753835f299f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CreateUserConfiguration-Element stellt eine Anforderung zum Erstellen eines Benutzer Konfigurationsobjekts dar.
+ms.openlocfilehash: 1d9194baf309936cb4be088a7ff56250dfa349cc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757807"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463776"
 ---
 # <a name="createuserconfiguration"></a>CreateUserConfiguration
 
-Das Element **CreateUserConfiguration** stellt eine Anforderung zum Erstellen einer Benutzer-Konfigurationsobjekt. 
+Das **CreateUserConfiguration** -Element stellt eine Anforderung zum Erstellen eines Benutzer Konfigurationsobjekts dar. 
   
 ```xml
 <CreateUserConfiguration>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserConfiguration](userconfiguration.md) <br/> |Stellt einen einzelnen Benutzer-Konfigurationsobjekt.  <br/> |
+|[UserConfiguration](userconfiguration.md) <br/> |Stellt ein einzelnes Benutzer Konfigurationsobjekt dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,17 +52,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

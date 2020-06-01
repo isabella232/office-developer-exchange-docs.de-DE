@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 14da68a0-bcca-4281-a774-47644baa4ee9
-description: ConnectionTimeout-Element gibt die Anzahl der Minuten ein, um eine Verbindung zu halten.
-ms.openlocfilehash: 2bb40ba502853c70ef107c4c740fdfe7073abe31
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ConnectionTimeout-Element gibt die Anzahl der Minuten an, die eine Verbindung geöffnet bleiben soll.
+ms.openlocfilehash: 671e3cf5466ee8b3543036811708bd7f54afdcce
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757601"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463853"
 ---
 # <a name="connectiontimeout"></a>ConnectionTimeout
 
-**ConnectionTimeout** -Element gibt die Anzahl der Minuten ein, um eine Verbindung zu halten. 
+Das **ConnectionTimeout** -Element gibt die Anzahl der Minuten an, die eine Verbindung geöffnet bleiben soll. 
   
 [GetStreamingEvents-Vorgang](getstreamingevents-operation.md)
   
@@ -48,21 +48,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetStreamingEvents](getstreamingevents.md) <br/> |Definiert eine Anforderung zum Abrufen von ereignisbenachrichtigungen aus einer streaming-Verbindung.  <br/> |
+|[GetStreamingEvents](getstreamingevents.md) <br/> |Definiert eine Anforderung zum Abrufen von Ereignisbenachrichtigungen aus einer streamingverbindung.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt eine ganze Zahl, die die maximale Anzahl von Minuten ein, um eine streaming Verbindung geöffnet bleiben beschreibt. Der Wert muss zwischen 1 und 30, inklusive.
+Der Textwert stellt eine ganze Zahl dar, die die maximale Anzahl von Minuten beschreibt, die eine streamingverbindung geöffnet bleiben soll. Der Wert muss zwischen 1 und 30 einschließlich sein.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

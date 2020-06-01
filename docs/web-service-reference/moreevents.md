@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 76a7ea58-a44f-49b8-baba-d21302d742ad
-description: Das MoreEvents-Element gibt an, ob es sind mehr Ereignisse in der Warteschlange an den Client übermittelt werden.
-ms.openlocfilehash: cc3f7ed3b4b5f5ce27a9d45d508506bfa62e5086
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MoreEvents-Element gibt an, ob weitere Ereignisse in der Warteschlange vorhanden sind, die an den Client übermittelt werden sollen.
+ms.openlocfilehash: fd12dd2e2e64ce1711e553ba5eb29bd0eb64c892
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830489"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462731"
 ---
 # <a name="moreevents"></a>MoreEvents
 
-Das **MoreEvents** -Element gibt an, ob es sind mehr Ereignisse in der Warteschlange an den Client übermittelt werden. 
+Das **MoreEvents** -Element gibt an, ob weitere Ereignisse in der Warteschlange vorhanden sind, die an den Client übermittelt werden sollen. 
   
 ```xml
 <MoreEvents/>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -48,21 +48,21 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt einen Boolean-Wert. Der Wert **true** gibt an, dass mehr Ereignisse in der Warteschlange befinden. Der Wert **false** gibt an, dass keine weiteren Ereignisse in der Warteschlange befinden. Diese Eigenschaft ist schreibgeschützt. 
+Der Wert Text stellt einen booleschen Wert dar. Der Wert **true** gibt an, dass sich weitere Ereignisse in der Warteschlange befinden. Der Wert **false** gibt an, dass sich keine weiteren Ereignisse in der Warteschlange befinden. Diese Eigenschaft ist schreibgeschützt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Im Fall von Pull-Benachrichtigungen gibt ein **true** -Wert in diesem Element an den Client, dass eine andere GetEvents Anforderung ausgegeben werden soll, wenn Sie die verbleibenden Ereignisse erhalten möchten. Unter der Annahme, dass die Client-Spezifikationen minimale Wartezeit für ereignisbenachrichtigungen benötigen, sollten GetEvents Anforderungen einer continuous nacheinander fortgesetzt, bis ein **false** **MoreEvents** Wert zurückgegeben wird. 
+Im Fall von Pull-Benachrichtigungen gibt ein Wert **true** in diesem Element an den Client an, dass eine andere GetEvents-Anforderung ausgegeben werden soll, um die restlichen Ereignisse abzurufen. Unter der Voraussetzung, dass die Client Spezifikationen eine minimale Wartezeit für Ereignisbenachrichtigungen erfordern, sollten GetEvents-Anforderungen in einer kontinuierlichen Reihenfolge fortgesetzt werden, bis ein **falscher** **MoreEvents** -Wert zurückgegeben wird. 
   
-Im Fall von Pushbenachrichtigungen gibt der Wert **true** für **MoreEvents** an den Client, dass eine weitere Benachrichtigung-Anforderung an den Client gesendet wird die verbleibenden Ereignisse zu übermitteln. Ähnlich wie bei Pull Benachrichtigungen, werden diese weiteren Anforderungen kontinuierliche nacheinander fortgesetzt, bis die Ereigniswarteschlange auf dem Clientzugriffsserver leer ist. 
+Im Fall von Push-Benachrichtigungen gibt ein **echter** Wert für **MoreEvents** dem Client an, dass eine andere Benachrichtigungsanforderung an den Client gesendet wird, um die verbleibenden Ereignisse zuzustellen. Ähnlich wie Pull-Benachrichtigungen werden diese nachverfolgungsanforderungen in Folge fortgesetzt, bis die Ereigniswarteschlange auf dem Client Zugriffsserver leer ist. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

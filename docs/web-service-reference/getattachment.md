@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9443cf96-b451-4530-b868-490dff798673
-description: Das GetAttachment-Element ist das Stammelement im eine Anforderung an eine Anlage aus dem Exchange-Speicher abzurufen.
-ms.openlocfilehash: fb639c86a0654e8f9e9601310f7c2f5b0fc7d729
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetAttachment-Element ist das Stammelement in einer Anforderung zum Abrufen einer Anlage aus dem Exchange-Informationsspeicher.
+ms.openlocfilehash: d03d086ff443db87b0104a2ec83599eb9eaea6b9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758582"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463979"
 ---
 # <a name="getattachment"></a>GetAttachment
 
-Das **GetAttachment** -Element ist das Stammelement im eine Anforderung an eine Anlage aus dem Exchange-Speicher abzurufen. 
+Das **GetAttachment** -Element ist das Stammelement in einer Anforderung zum Abrufen einer Anlage aus dem Exchange-Informationsspeicher. 
   
 ```xml
 <GetAttachment>
@@ -30,7 +30,7 @@ Das **GetAttachment** -Element ist das Stammelement im eine Anforderung an eine 
 </GetAttachment>
 ```
 
- **GetAttachmentType**
+ **Getattachmenttype**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -43,26 +43,26 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AttachmentShape](attachmentshape.md) <br/> |Zusätzliche erweiterte Elementeigenschaften in einer Antwort auf eine Anforderung [GetAttachment](getattachment.md) zurückzugebenden identifiziert. Dieses Element ist optional.  <br/> |
-|[AttachmentIds](attachmentids.md) <br/> |Ein Array mit den IDs der Anlage enthält.  <br/> |
+|[AttachmentShape](attachmentshape.md) <br/> |Identifiziert zusätzliche erweiterte Elementeigenschaften, die in einer Antwort auf eine [GetAttachment](getattachment.md) -Anforderung zurückgegeben werden sollen. Dieses Element ist optional.  <br/> |
+|[AttachmentIds](attachmentids.md) <br/> |Enthält ein Array von Anlagen Bezeichnern.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das [AttachmentShape](attachmentshape.md) -Element ist nicht erforderlich, um die in der Antwort zurückgegebenen Eigenschaften zu identifizieren. Die [-Vorgangs GetAttachment](getattachment-operation.md) gibt den Namen, ContentType, ContentId, ContentLocation und die Content-Eigenschaften für Dateianlagen zurück. Für Anlagen sind die zurückgegebenen Eigenschaften den Namen, ContentType, ContentId, ContentLocation und alle die angefügte Eigenschaften des Elements. Dies ist gleichbedeutend mit mithilfe des AllProperties-Basis-Shapes in einer [GetItem](getitem.md) -Anforderung. 
+Das [AttachmentShape](attachmentshape.md) -Element ist nicht erforderlich, um die Eigenschaften zu identifizieren, die in der Antwort zurückgegeben werden. Der [GetAttachment-Vorgang](getattachment-operation.md) gibt den Namen, den ContentType, die Inhalts-ContentLocation und die Inhaltseigenschaften für Dateianlagen zurück. Bei Element Anlagen sind die zurückgegebenen Eigenschaften der Name, der ContentType, die Inhalts-ContentLocation und alle Eigenschaften des angefügten Elements. Dies entspricht der Verwendung des allproperties-Basis-Shapes in einer [GetItem](getitem.md) -Anforderung. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

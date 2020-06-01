@@ -1,22 +1,22 @@
 ---
-title: EcpUrl-TmHiding (POX)
+title: EcpUrl-tmHiding (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 9b9ae15b-3ac1-45ac-85ba-38c7231fe508
-description: Das EcpUrl TmHiding-Element gibt eine partielle URL, die kombiniert werden kann, mit dem EcpUrl (POX) Elementwert generiert eine URL, die die Benutzer von einem websitepostfach Kündigen des Abonnements verwendet werden können.
-ms.openlocfilehash: 461e9780dbd657ba0ba8b9ce9ea4fe902cba9698
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EcpUrl-tmHiding-Element gibt eine partielle URL an, die mit dem Wert des EcpUrl (POX)-Elements kombiniert werden kann, um eine URL zu generieren, die zum Aufheben des Abonnements des Benutzers von einem websitepostfach verwendet werden kann.
+ms.openlocfilehash: 68b949db8b8d98caddbac3b9f96c5d5e55b104b7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758132"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463531"
 ---
-# <a name="ecpurl-tmhiding-pox"></a>EcpUrl-TmHiding (POX)
+# <a name="ecpurl-tmhiding-pox"></a>EcpUrl-tmHiding (POX)
 
-Das **EcpUrl TmHiding** -Element gibt eine partielle URL, die kombiniert werden kann, mit dem [EcpUrl (POX)](ecpurl-pox.md) Elementwert generiert eine URL, die die Benutzer von einem websitepostfach Kündigen des Abonnements verwendet werden können. 
+Das **EcpUrl-tmHiding-** Element gibt eine partielle URL an, die mit dem Wert des [EcpUrl (POX)](ecpurl-pox.md) -Elements kombiniert werden kann, um eine URL zu generieren, die zum Aufheben des Abonnements des Benutzers von einem websitepostfach verwendet werden kann. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -26,7 +26,7 @@ Das **EcpUrl TmHiding** -Element gibt eine partielle URL, die kombiniert werden 
   
 [Protokoll (POX)](protocol-pox.md)
   
-[EcpUrl-TmHiding (POX)](ecpurl-tmhiding-pox.md)
+[EcpUrl-tmHiding (POX)](ecpurl-tmhiding-pox.md)
   
 ```XML
 <EcpUrl-tmHiding/>
@@ -48,20 +48,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt eine partielle URL, die kombiniert werden kann, mit dem [EcpUrl (POX)](ecpurl-pox.md) Elementwert generiert eine URL, die die Benutzer von einem websitepostfach Kündigen des Abonnements verwendet werden können. Der Wert des **EcpUrl TmHiding** -Elements enthält Parameter enthaltenen ' <' und ' >' Zeichen, die vom Client ersetzt werden, wie in der folgenden Tabelle dargestellt. 
+Der Textwert stellt eine partielle URL dar, die mit dem [EcpUrl (POX)](ecpurl-pox.md) -Elementwert kombiniert werden kann, um eine URL zu generieren, die zum Aufheben des Abonnements des Benutzers von einem websitepostfach verwendet werden kann. Der Wert des **EcpUrl-tmHiding-** Elements enthält Parameter, die in "<"-und ">"-Zeichen enthalten sind, die durch den Client ersetzt werden, wie in der folgenden Tabelle dargestellt. 
   
 |**Parameter**|**Ersetzen durch**|
 |:-----|:-----|
-| 
-  _ID_ <br/> |Die SMTP-e-Mail-Adresse oder die X500 distinguished Name des websitepostfachs.  <br/> |
+| _Id_ <br/> |Die SMTP-e-Mail-Adresse oder der Distinguished Name x500 des websitepostfachs.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **EcpUrl TmHiding** -Element ist ein optionales untergeordnetes Element des **Protokoll** -Elements. 
+Das **EcpUrl-tmHiding-** Element ist ein optionales untergeordnetes Element des **Protocol** -Elements. 
   
 ## <a name="see-also"></a>Siehe auch
 

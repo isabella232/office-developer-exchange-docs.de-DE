@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: abce5b3e-971d-42fc-aeea-caa7202214de
-description: Das RetentionPolicyType-Element gibt an, welche Richtlinie Aufbewahrung auf Elemente in einer Unterhaltung angewendet wird.
-ms.openlocfilehash: dacb3fa75611cbd6e6e29eab7c791dfd8964c9ec
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RetentionPolicyType-Element gibt den Aufbewahrungs Richtlinientyp an, der auf Elemente in einer Unterhaltung angewendet wird.
+ms.openlocfilehash: 3900718f10e1e11d5864ebf7e64a3e1e22aa45c7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831229"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462871"
 ---
 # <a name="retentionpolicytype"></a>RetentionPolicyType
 
-Das **RetentionPolicyType** -Element gibt an, welche Richtlinie Aufbewahrung auf Elemente in einer Unterhaltung angewendet wird. 
+Das **RetentionPolicyType** -Element gibt den Aufbewahrungs Richtlinientyp an, der auf Elemente in einer Unterhaltung angewendet wird. 
   
 ```XML
 <RetentionPolicyType> Delete | Archive </RetentionPolicyType>
@@ -38,23 +38,23 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[ConversationAction](conversationaction.md)
+[Unterhaltung](conversationaction.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **RetentionPolicyType** -Elements ist die Aufbewahrung auf Elemente in einer Unterhaltung angewendet. Der Textwert der **Löschen** gibt an, dass die Elemente in der Unterhaltung gelöscht werden, wenn das Anhalten der Aufbewahrungszeit läuft ab. Der Textwert der **Archive** gibt an, dass die Elemente in der Unterhaltung in das Archivpostfach verschoben werden, wenn das Anhalten der Aufbewahrungszeit läuft ab. 
+Der Textwert des **RetentionPolicyType** -Elements ist der Aufbewahrungs, der auf Elemente in einer Unterhaltung angewendet wird. Der Textwert von **Delete** gibt an, dass die Elemente in der Unterhaltung gelöscht werden, wenn die Aufbewahrungsdauer abläuft. Der Textwert von **Archive** gibt an, dass die Elemente in der Unterhaltung nach Ablauf der Aufbewahrungsdauer in das Archivpostfach verschoben werden. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5e7c5687-cb9e-4f0b-ac8f-b82591914a39
-description: Das ApprovalDecision-Element gibt die Entscheidung getroffen auf eine Genehmigung Request-Nachricht.
-ms.openlocfilehash: 4ca73813440200e5d2fb9f920d81459d8cd5e4ec
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ApprovalDecision-Element gibt die Entscheidung an, die in einer Genehmigungs Anforderungsnachricht getroffen wurde.
+ms.openlocfilehash: a8dc168edec882ba97cdea764f8d20c71ed85f8a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757363"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463447"
 ---
 # <a name="approvaldecision"></a>ApprovalDecision
 
-Das **ApprovalDecision** -Element gibt die Entscheidung getroffen auf eine Genehmigung Request-Nachricht. 
+Das **ApprovalDecision** -Element gibt die Entscheidung an, die in einer Genehmigungs Anforderungsnachricht getroffen wurde. 
   
 ```XML
 <ApprovalDecision> 1 | 2 </ApprovalDecision>
@@ -42,19 +42,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ApprovalDecision** -Elements ist, wenn genehmigt 1 und 2 wurde abgelehnt. 
+Der Textwert des **ApprovalDecision** -Elements ist 1, wenn genehmigt, und 2, wenn er abgelehnt wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |

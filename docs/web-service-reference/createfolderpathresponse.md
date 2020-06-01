@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 569eaca5-6761-4f5d-aa19-2bf3ac584ae3
-description: Das Element CreateFolderPathResponse wird verwendet, um ein Ordnerpfad zurückzugeben.
-ms.openlocfilehash: f6cc8e63aec4cd7868fffa1a4b7c312c741d9c60
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CreateFolderPathResponse-Element wird verwendet, um einen Ordnerpfad zurückzugeben.
+ms.openlocfilehash: 3cb8fb15e8850c4ae14082dfdc01c62225879a4a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757763"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463790"
 ---
 # <a name="createfolderpathresponse"></a>CreateFolderPathResponse
 
-Das Element **CreateFolderPathResponse** wird verwendet, um ein Ordnerpfad zurückzugeben. 
+Das **CreateFolderPathResponse** -Element wird verwendet, um einen Ordnerpfad zurückzugeben. 
   
 ```XML
 <CreateFolderPathResponse>
@@ -42,19 +42,19 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |
    
 

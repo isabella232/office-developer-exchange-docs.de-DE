@@ -1,5 +1,5 @@
 ---
-title: EmailAddress (EmailAddressType)
+title: E-mailemail (e-)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0cdabfcb-7658-4c7d-bb03-1e776ed11e43
-description: Das EmailAddress-Element gibt die vollständig aufgelöste SMTP-Adresse für das websitepostfach oder die zugeordneten Rolle.
-ms.openlocfilehash: c31a37fc0dbdcc2b501b82346a17a0a3b4775556
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Address-Element gibt die vollständig aufgelöste SMTP-Adresse für das websitepostfach oder die zugehörige Rolle an.
+ms.openlocfilehash: 8b04b75e91cc16be7f88c9a0ac08c5e36855056e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758158"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463461"
 ---
-# <a name="emailaddress-emailaddresstype"></a>EmailAddress (EmailAddressType)
+# <a name="emailaddress-emailaddresstype"></a>E-mailemail (e-)
 
-Das **EmailAddress** -Element gibt die vollständig aufgelöste SMTP-Adresse für das websitepostfach oder die zugeordneten Rolle. 
+Das Address **-Element gibt die voll** ständig aufgelöste SMTP-Adresse für das websitepostfach oder die zugehörige Rolle an. 
   
 ```xml
 <EmailAddress>
@@ -42,35 +42,35 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Name (Zeichenfolge)](name-string.md) <br/> |Gibt einen Suchbegriff Einschränkung und Schlüssel oder den Namen eines e-Mail-Benutzers an.  <br/> |
-|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Definiert die primäre SMTP-Adresse eines Postfachbenutzers an.  <br/> |
-|[RoutingType (EmailAddressType)](routingtype-emailaddresstype.md) <br/> |Gibt an, welche routing von e-Mail-Adresse.  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |Stellt den Typ des Postfachs an, das die e-Mail-Adresse dargestellt wird.  <br/> |
-|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und Ändern eines Elements in der Exchange-Speicher.  <br/> |
+|[Name (Zeichenfolge)](name-string.md) <br/> |Gibt einen Such Einschränkungsnamen oder-Schlüssel oder den Namen eines e-Mail-Benutzers an.  <br/> |
+|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Definiert die primäre SMTP-Adresse eines Postfachbenutzers.  <br/> |
+|[Routingtype (e-mailemailtype)](routingtype-emailaddresstype.md) <br/> |Gibt den Routingtyp einer e-Mail-Adresse an.  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |Stellt den Typ des Postfachs dar, der durch die e-Mail-Adresse dargestellt wird.  <br/> |
+|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel eines Elements in der Exchange-Informationsspeicher.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Rolle](persona.md) <br/> |Gibt einen Satz von Persona Daten von einer Anforderung **GetPersona** zurückgegeben.  <br/> |
+|[Persona](persona.md) <br/> |Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element ist optional.
   
-Das **EmailAddress** -Element ist für Clients, die Exchange Online und Versionen von Microsoft Exchange Server beginnend mit Exchange 2013 abzielen. 
+Das **Email** -Element ist für Clients gültig, die Exchange Online und Versionen von Exchange Server, die mit Exchange 2013 beginnen, abzielen. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

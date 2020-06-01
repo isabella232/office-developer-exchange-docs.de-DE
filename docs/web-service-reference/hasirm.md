@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fedc04e0-cfd2-4652-a2a8-51de859ae847
-description: Das HasIrm-Element gibt an, ob mindestens eine Nachricht in der Unterhaltung und der aktuelle Ordner ein IRM-geschützten Nachricht ist.
-ms.openlocfilehash: c129370d7920da7cf1f9f32eed2f075e6c21cf8b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das HasIrm-Element gibt an, ob mindestens eine Nachricht in der Unterhaltung und der aktuelle Ordner eine IRM-geschützte Nachricht ist.
+ms.openlocfilehash: 1596610ed5f6b2bac353900624fbec9140aaa693
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829803"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462780"
 ---
 # <a name="hasirm"></a>HasIrm
 
-Das **HasIrm** -Element gibt an, ob mindestens eine Nachricht in der Unterhaltung und der aktuelle Ordner ein IRM-geschützten Nachricht ist. 
+Das **HasIrm** -Element gibt an, ob mindestens eine Nachricht in der Unterhaltung und der aktuelle Ordner eine IRM-geschützte Nachricht ist. 
   
 ```XML
 <HasIrm> true | false </HasIrm>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,19 +42,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **HasIrm** -Element ist **true** , wenn mindestens eine Nachricht in der Unterhaltung und den aktuellen Ordner IRM hat. Andernfalls ist der Wert **false**.
+Der Textwert des **HasIrm** -Elements ist **true** , wenn mindestens eine Nachricht in der Unterhaltung und der aktuelle Ordner über IRM verfügt. Andernfalls ist der Wert **false**.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |

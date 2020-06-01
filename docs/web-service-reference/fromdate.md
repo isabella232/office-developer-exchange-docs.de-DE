@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cbb1320c-479e-4bd3-a462-4ab14c24b1c5
-description: Das FromDate-Element gibt das Datum, an dem die Nachricht gesendet wurde.
-ms.openlocfilehash: edc3f8ada87c64ccc3eeeb8a7467e7e050a30ce1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FromDate-Element gibt das Datum an, an dem die Nachricht gesendet wurde.
+ms.openlocfilehash: c08873a11915f4e82ad5b6f62423d0abdb9a429b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758555"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463062"
 ---
 # <a name="fromdate"></a>FromDate
 
-Das **FromDate** -Element gibt das Datum, an dem die Nachricht gesendet wurde. 
+Das **FromDate** -Element gibt das Datum an, an dem die Nachricht gesendet wurde. 
   
 ```XML
 <FromDate></FromDate>
@@ -40,23 +40,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md) <br/> |Gibt eine Anforderung an die Postfachstatistiken nach Schlüsselwort suchen.  <br/> |
+|[FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md) <br/> |Gibt eine Anforderung an, nach Postfachstatistiken nach Stichwort zu suchen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **FromDate** -Element ist das Datum und die Uhrzeit, zu der eine Nachricht gesendet wurde. 
+Der Textwert des **FromDate** -Elements ist das Datum und die Uhrzeit, zu der eine Nachricht gesendet wurde. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

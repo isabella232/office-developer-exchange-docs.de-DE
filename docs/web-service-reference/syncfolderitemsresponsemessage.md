@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f58e773f-94a7-4729-90f0-ac4c71b4ba59
-description: Das SyncFolderItemsResponseMessage-Element enthält den Status und das Ergebnis einer Anforderung SyncFolderItems Vorgang.
-ms.openlocfilehash: 9bb32232143df56ad9de93480e10a5941e68025a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SyncFolderItemsResponseMessage-Element enthält den Status und das Ergebnis einer einzelnen SyncFolderItems-Vorgangsanforderung.
+ms.openlocfilehash: 87de1b679fad4affa29a6dfdea72f5312b9191d5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839156"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463041"
 ---
 # <a name="syncfolderitemsresponsemessage"></a>SyncFolderItemsResponseMessage
 
-Das **SyncFolderItemsResponseMessage** -Element enthält, der Status und das Ergebnis einer einzelnen Anforderung [SyncFolderItems Vorgang](syncfolderitems-operation.md) . 
+Das **SyncFolderItemsResponseMessage** -Element enthält den Status und das Ergebnis einer einzelnen [SyncFolderItems-Vorgangs](syncfolderitems-operation.md) Anforderung. 
   
 - [SyncFolderItemsResponse](syncfolderitemsresponse.md) 
 - [ResponseMessages](responsemessages.md)
@@ -48,45 +48,45 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**ResponseClass** <br/> | Beschreibt den Status einer Antwort [SyncFolderItems Vorgang](syncfolderitems-operation.md) . <br/><br/>Die folgenden Werte sind für dieses Attribut gültig: <br/> <br/>-Success  <br/>-Warnung  <br/>-Fehler  <br/> |
+|**ResponseClass** <br/> | Beschreibt den Status einer [SyncFolderItems-Vorgangs](syncfolderitems-operation.md) Antwort. <br/><br/>Die folgenden Werte sind für dieses Attribut gültig: <br/> <br/>-Success  <br/>-Warnung  <br/>-Error  <br/> |
    
 #### <a name="responseclass-attribute"></a>ResponseClass-Attribut
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |**Success** <br/> |Beschreibt eine Anforderung, die erfüllt ist.  <br/> |
-|**Warning** <br/> | Beschreibt eine Anforderung, die nicht verarbeitet wurde. Eine Warnung kann zurückgegeben werden, wenn während der Verarbeitung eines Elements in der Anforderung ist ein Fehler aufgetreten und nachfolgenden Elemente können nicht verarbeitet werden. <br/><br/>Es folgen Beispiele für die Quellen der Warnungen:  <br/><br/>-Der Exchange-Speicher ist während der Batchaktualisierung offline.  <br/>-Active Directory-Domänendienste (AD DS) ist offline.  <br/>-Postfächern verschoben wurden.  <br/>-Die Nachrichtendatenbank (MDB) ist offline.  <br/>-Ein Kennwort ist abgelaufen.  <br/>-Ein Kontingent überschritten wurde.  <br/> |
-|**Fehler** <br/> | Beschreibt eine Anforderung, die nicht gewährleistet werden kann. <br/><br/>Es folgen Beispiele für Datenquellen von Fehlern:  <br/><br/>-Ungültige Attribute oder Elemente  <br/>-Attribute oder Elemente, die sich außerhalb des gültigen Bereichs befinden.  <br/>-Eine unbekannte Marke  <br/>-Eines Attributs oder Elements, das nicht im Kontext gültig ist.  <br/>-Alle Versuch nicht autorisierten Zugriff von jedem client  <br/>-Alle serverseitigen Fehler als Reaktion auf einen gültigen mithilfe der clientseitigen Anruf  <br/>  <br/>Informationen zu dem Fehler kann in den Elementen [ResponseCode](responsecode.md) und [MessageText](messagetext.md) gefunden werden.  <br/> |
+|**Warning** <br/> | Beschreibt eine Anforderung, die nicht verarbeitet wurde. Wenn beim Verarbeiten eines Elements in der Anforderung ein Fehler aufgetreten ist und nachfolgende Elemente nicht verarbeitet werden können, wird möglicherweise eine Warnung zurückgegeben. <br/><br/>Im folgenden sind Beispiele für Quellen von Warnungen aufgeführt:  <br/><br/>-Der Exchange-Informationsspeicher ist während des Batches offline.  <br/>-Active Directory-Domänendienste (AD DS) ist offline.  <br/>-Postfächer wurden verschoben.  <br/>-Die Nachrichtendatenbank (MDB) ist offline.  <br/>-Ein Kennwort ist abgelaufen.  <br/>-Ein Kontingent wurde überschritten.  <br/> |
+|**Error** <br/> | Beschreibt eine Anforderung, die nicht erfüllt werden kann. <br/><br/>Im folgenden finden Sie Beispiele für Fehlerquellen:  <br/><br/>-Ungültige Attribute oder Elemente  <br/>-Attribute oder Elemente außerhalb des gültigen Bereichs  <br/>-Ein unbekanntes Tag  <br/>-Ein Attribut oder Element, das im Kontext ungültig ist  <br/>-Alle nicht autorisierten Zugriffsversuche durch einen Client  <br/>-Ein serverseitiger Fehler als Reaktion auf einen gültigen clientseitigen Anruf  <br/>  <br/>Informationen zum Fehler finden Sie in den Elementen [Response Code](responsecode.md) und [MessageText](messagetext.md) .  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MessageText](messagetext.md) <br/> |Enthält einen beschreibenden Text für den Status der Antwort.  <br/> |
-|[ResponseCode](responsecode.md) <br/> |Enthält einen Fehlercode, der den jeweiligen Fehler identifiziert, bei dem die Anforderung auftrat.  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Derzeit nicht verwendet und ist für die zukünftige Verwendung reserviert. Es enthält den Wert 0.  <br/> |
-|[MessageXml](messagexml.md) <br/> |Bietet zusätzliche Fehlerantwortinformationen.  <br/> |
-|[Synchronisierungsstatus](syncstate-ex15websvcsotherref.md) <br/> |Enthält eine base64-codierten Format von der Synchronisierung von Daten, die nach jeder Anforderung erfolgreich aktualisiert werden. Dies wird verwendet, um den Synchronisierungsstatus zu identifizieren.  <br/> |
-|[IncludesLastItemInRange](includeslastiteminrange.md) <br/> |Gibt an, ob das letzte Element synchronisieren in der Antwort aufgenommen wurde.  <br/> |
-|[Änderungen (Elemente)](changes-items.md) <br/> |Enthält ein Array Sequenz von Dateitypen ändern, die die Typen der Unterschiede zwischen den Elementen auf dem Client und der Elemente auf dem Exchange-Server darstellen.  <br/> |
+|[MessageText](messagetext.md) <br/> |Enthält eine Textbeschreibung des Status der Antwort.  <br/> |
+|[ResponseCode](responsecode.md) <br/> |Stellt einen Fehlercode bereit, der den spezifischen Fehler identifiziert, der bei der Anforderung aufgetreten ist.  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Wird derzeit nicht verwendet und ist für die zukünftige Verwendung reserviert. Sie enthält den Wert 0.  <br/> |
+|[Messagexml verwendet](messagexml.md) <br/> |Bietet zusätzliche Fehlerantwortinformationen.  <br/> |
+|[Von "SyncState](syncstate-ex15websvcsotherref.md) <br/> |Enthält eine Base64-codierte Form der Synchronisierungsdaten, die nach jeder erfolgreichen Anforderung aktualisiert wird. Dies wird verwendet, um den Synchronisierungsstatus zu identifizieren.  <br/> |
+|[IncludesLastItemInRange](includeslastiteminrange.md) <br/> |Gibt an, ob das letzte zu synchronisierende Element in die Antwort eingeschlossen wurde.  <br/> |
+|[Änderungen (Elemente)](changes-items.md) <br/> |Enthält ein Sequenz Array von Änderungstypen, die die Arten von Unterschieden zwischen den Elementen auf dem Client und den Elementen auf dem Exchange-Server darstellen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

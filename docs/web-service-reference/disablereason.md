@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f41b5be6-9b79-4e83-8cdb-aa779e13cb3f
-description: Das DisableReason-Element gibt den Grund für die Deaktivierung einer app.
-ms.openlocfilehash: f900bd1b98b294900f767c778b9c5f87f74042ca
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DisableReason-Element gibt den Grund für das Deaktivieren einer APP an.
+ms.openlocfilehash: 1406d69647bde5389dc9bb61adf7537a57d5adfc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758011"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463671"
 ---
 # <a name="disablereason"></a>DisableReason
 
-Das **DisableReason** -Element gibt den Grund für die Deaktivierung einer app. 
+Das **DisableReason** -Element gibt den Grund für das Deaktivieren einer APP an. 
   
 ```XML
 <DisableReason> NoReason | OutlookClientPerformance | OWAClientPerformance | MobileClientPerformance </DisableReason>
@@ -40,32 +40,32 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DisableApp](disableapp.md) <br/> |Gibt eine Anforderung an eine app zu deaktivieren.  <br/> |
+|[DisableApp](disableapp.md) <br/> |Gibt eine Anforderung zum Deaktivieren einer APP an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-**DisableReason Elementwert text**
+**DisableReason-Element Text Wert**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|NoReason  <br/> |Kein Grund angegeben  <br/> |
-|OutlookClientPerformance  <br/> |Zum Verbessern der Leistung der e-Mail-Client.  <br/> |
-|OWAClientPerformance  <br/> |Zur Verbesserung der Leistung von Web app-Client.  <br/> |
-|MobileClientPerformance  <br/> |Zum Verbessern der Leistung von mobilen Clients.  <br/> |
+|Noreason  <br/> |Kein Grund angegeben  <br/> |
+|OutlookClientPerformance  <br/> |Zur Verbesserung der Leistung von e-Mail-Clients.  <br/> |
+|OWAClientPerformance  <br/> |Zur Verbesserung der Leistung von webapp-Clients.  <br/> |
+|MobileClientPerformance  <br/> |Um die Leistung des mobilen Clients zu verbessern.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

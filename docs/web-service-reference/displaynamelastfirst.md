@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d392e138-a514-4bce-81b1-1f484e353d1c
-description: Das DisplayNameLastFirst-Element gibt den Anzeigenamen der zugeordneten Rolle im Format, Nachname Vorname.
-ms.openlocfilehash: 68ebf0e91e216cffa1ba8db425de248f0d4e77b7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DisplayNameLastFirst-Element gibt den Anzeigenamen der zugeordneten Persona in Format, Nachname und Vorname an.
+ms.openlocfilehash: d569a87ce77a4f1840ed4f865e671399726ede78
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758067"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463160"
 ---
 # <a name="displaynamelastfirst"></a>DisplayNameLastFirst
 
-Das **DisplayNameLastFirst** -Element gibt den Anzeigenamen der zugeordneten Rolle im Format "Nachname", "Vorname". 
+Das **DisplayNameLastFirst** -Element gibt den Anzeigenamen der zugeordneten Persona im Format "Nachname", "Vorname" an. 
   
 ```XML
 <DisplayNameLastFirst></DisplayNameLastFirst>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -40,25 +40,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Rolle](persona.md) <br/> |Gibt einen Satz von Persona Daten von einer Anforderung **GetPersona** zurückgegeben.  <br/> |
+|[Persona](persona.md) <br/> |Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **DisplayNameLastFirst** -Element ist ein Zeichenfolgenwert, der den Anzeigenamen zunächst mit dem Nachnamen angibt. 
+Der Textwert des **DisplayNameLastFirst** -Elements ist ein String-Wert, der den Anzeigenamen mit dem Namen First angibt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

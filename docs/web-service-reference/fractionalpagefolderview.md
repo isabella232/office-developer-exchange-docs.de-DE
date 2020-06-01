@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ef681f8a-136a-4c0e-ade6-ddcdbf2d85ad
-description: Das FractionalPageFolderView-Element wird beschrieben, in der Seitenansicht startet und die maximale Anzahl von Ordnern in einer Anforderung FindFolder zurückgegeben.
-ms.openlocfilehash: 3cb5f8333634a0c484ae3ce6a6256631cff57cc5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FractionalPageFolderView-Element beschreibt, wo die ausgelagerte Ansicht beginnt und die maximale Anzahl von Ordnern, die in einer FindFolder-Anforderung zurückgegeben werden.
+ms.openlocfilehash: a8627c6277b49655d3933679128b844118633cda
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758531"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463069"
 ---
 # <a name="fractionalpagefolderview"></a>FractionalPageFolderView
 
-Das **FractionalPageFolderView** -Element wird beschrieben, in der Seitenansicht startet und die maximale Anzahl von Ordnern in einer Anforderung [FindFolder](findfolder.md) zurückgegeben. 
+Das **FractionalPageFolderView** -Element beschreibt, wo die ausgelagerte Ansicht beginnt und die maximale Anzahl von Ordnern, die in einer [FindFolder](findfolder.md) -Anforderung zurückgegeben werden. 
   
 [FindFolder](findfolder.md)
   
@@ -40,9 +40,9 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**"MaxEntriesReturned"** <br/> |Gibt die maximale Anzahl der in der Antwort [FindFolder](findfolder.md) zurückzugebender Ergebnisse an. Dieses Attribut ist optional.  <br/> |
-|**Zähler** <br/> |Stellt den Zähler für den Bruch Offset vom Anfang des Resultsets dar. Dieses Attribut ist erforderlich. Der Zähler muss kleiner oder gleich der Nenner. Dieses Attribut muss es sich um einen ganzzahligen Wert darstellen, der gleich oder größer als 0 (null) ist. Weitere Informationen finden Sie unter "Hinweise" weiter unten in diesem Thema.  <br/> |
-|**Nenner** <br/> |Stellt dar, die als Nenner für den Bruch Offset ab dem Anfang der Gesamtzahl der Ordner im Resultset. Dieses Attribut ist erforderlich. Dieses Attribut muss auf einen ganzzahligen Wert darstellen, der größer als 1 ist. Weitere Informationen finden Sie unter "Hinweise" weiter unten in diesem Thema.  <br/> |
+|**MaxEntriesReturned** <br/> |Gibt die maximale Anzahl von Ergebnissen an, die in der [FindFolder](findfolder.md) -Antwort zurückgegeben werden. Dieses Attribut ist optional.  <br/> |
+|**Zähler** <br/> |Stellt den Zaehler des Bruchs Offsets vom Anfang des Resultsets dar. Dieses Attribut ist erforderlich. Der Zähler muss gleich oder kleiner als der Nenner sein. Dieses Attribut muss einen ganzzahligen Wert darstellen, der größer oder gleich NULL ist. Weitere Informationen finden Sie weiter unten in diesem Thema unter Hinweise.  <br/> |
+|**Nenner** <br/> |Stellt den Nenner des Bruchs Offsets vom Anfang der Gesamtzahl der Ordner im Resultset dar. Dieses Attribut ist erforderlich. Dieses Attribut muss einen ganzzahligen Wert darstellen, der größer als 1 ist. Weitere Informationen finden Sie weiter unten in diesem Thema unter Hinweise.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -52,34 +52,34 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindFolder](findfolder.md) <br/> |Definiert eine Anforderung zum Ordner in einem Postfach zu identifizieren.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/FindFolder` <br/> |
+|[FindFolder](findfolder.md) <br/> |Definiert eine Anforderung zum Identifizieren von Ordnern in einem Postfach.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/FindFolder` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Seitenansicht Offset vom Beginn des Satzes mit gefundenen Ordnern wird durch eine Bruchzahl beschrieben. Der Anteil, die durch die **Zähler** und **Nenner** Attribute definiert ist, beschreibt, an die Seite mit Informationen beginnt. Wenn **Zähler** vier und **Nenner** fünf entspricht, befindet die Seite der zurückgegebenen Informationen beginnt am einen Eintrag vier Fünftel die Art und Weise in der Ergebnismenge. 
+Der Offset der Seitenansicht vom Anfang der Gruppe gefundener Ordner wird durch einen Bruch beschrieben. Der Bruch, der durch die Attribute **Zaehler** und **Nenner** definiert ist, beschreibt, wo die Informationsseite beginnt. Wenn der **Zähler** beispielsweise vier und der **Nenner** gleich fünf ist, beginnt die Seite mit den zurückgegebenen Informationen bei einem Eintrag, der sich auf vier Fünftel der Methode in der Ergebnismenge befand. 
   
-Wenn die Teiler gleich 0 (null) ausgewertet wird, gibt an, dass den Anfang des die Ergebnisse festzulegen. Wenn der Bruchteil eines ergibt, gibt an, dass das Ende des Resultsets.
+Wenn der Bruch auf 0 (null) ausgewertet wird, wird der Anfang des Resultsets angegeben. Wenn der Bruch zu 1 ausgewertet wird, gibt dies das Ende der Ergebnismenge an.
   
 > [!NOTE]
-> Der Anteil den Anfangspunkt der Seite darstellt, werden nicht wie viele Ergebnisse im Resultset zurückgegeben. 
+> Der Bruch stellt den Startpunkt der Seite dar, nicht wie viele Ergebnisse in der Ergebnismenge zurückgegeben werden. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[FindFolder Operation](findfolder-operation.md)
+[FindFolder-Vorgang](findfolder-operation.md)
 
 
-[Suchen nach Ordnern](http://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
+[Suchen von Ordnern](https://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
 

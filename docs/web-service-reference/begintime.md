@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2a60c89c-9c21-4041-9593-b244ac1608ef
-description: BeginTime-Element gibt den Beginn des Zeitraums Abfrage Erinnerungen.
-ms.openlocfilehash: c6204dc0395e012cf511e6183856215b0d5ea6da
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das BeginTime-Element gibt den Anfang der Zeitspanne an, für die Erinnerungen abgefragt werden sollen.
+ms.openlocfilehash: 4f926b8e4931c187cd4d5b97d6182d609bc15a1b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757440"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463377"
 ---
 # <a name="begintime"></a>BeginTime
 
-**BeginTime** -Element gibt den Beginn des Zeitraums Abfrage Erinnerungen. 
+Das **BeginTime** -Element gibt den Anfang der Zeitspanne an, für die Erinnerungen abgefragt werden sollen. 
   
 ```XML
 <BeginTime/>
@@ -42,21 +42,21 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **BeginTime** -Elements ist, dass die Anfangszeit des Elements die Erinnerung für ist. 
+Der Textwert des **BeginTime** -Elements ist die Anfangszeit des Elements, für das die Erinnerung gilt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

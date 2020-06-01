@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 7cd63ac2-3441-4ed4-915b-6f90af4b28fc
 description: Das Exceptions-Element identifiziert die Ausnahmen, die alle verfügbaren Regel Ausnahmebedingungen für eine Posteingangsregel darstellen.
-ms.openlocfilehash: b875b4dc0029bb9e0bc2bb50c41569fb72ef9268
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 1afc2980391ee588f9b9b813b87c2c699de3a6df
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758301"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463356"
 ---
 # <a name="exceptions"></a>Ausnahmen
 
@@ -75,62 +75,62 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Categories](categories-ex15websvcsotherref.md) <br/> |Enthält die Kategorien, die auf eine eingehende Nachricht in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende angewendet werden müssen.  <br/> |
-|[ContainsBodyStrings](containsbodystrings.md) <br/> |Gibt die Zeichenfolgen, die im Textkörper der eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende angezeigt werden müssen.  <br/> |
-|[ContainsHeaderStrings](containsheaderstrings.md) <br/> |Indicaqtes Zeichenfolgen, die in den Kopfzeilen der eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende vorhanden sein müssen.  <br/> |
-|[ContainsRecipientStrings](containsrecipientstrings.md) <br/> |Gibt die Zeichenfolgen, die die **ToRecipients** oder **CcRecipients** Eigenschaften der eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende vorhanden sein müssen.  <br/> |
-|[ContainsSenderStrings](containssenderstrings.md) <br/> |Gibt die Zeichenfolgen, die in der Eigenschaft **aus** der eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende angezeigt werden müssen.  <br/> |
-|[ContainsSubjectOrBodyStrings](containssubjectorbodystrings.md) <br/> |Gibt die Zeichenfolgen, die im Text oder den Betreff der eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende angezeigt werden müssen.  <br/> |
-|[ContainsSubjectStrings](containssubjectstrings.md) <br/> |Gibt die Zeichenfolgen, die den Betreff der eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende vorhanden sein müssen.  <br/> |
-|[FlaggedForAction](flaggedforaction.md) <br/> |Gibt die Kennzeichen für den Aktionswert, die angezeigt werden, muss auf eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anwenden.  <br/> |
-|[FromAddresses](fromaddresses.md) <br/> |Gibt die E-mail-Adressen aus denen eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende gesendet werden müssen.  <br/> |
-|[FromConnectedAccounts](fromconnectedaccounts.md) <br/> |Stellt die Namen der e-Mail-Konten aus denen eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende zusammengefasst wurden verfügen müssen.  <br/> |
-|[HasAttachments](hasattachments.md) <br/> |Gibt an, ob eingehende Nachrichten mit Anlagen in der Reihenfolge für die Bedingung oder Ausnahme angewendet haben.  <br/> |
-|[Importance](importance.md) <br/> |Gibt die Bedeutung, die versehen ist in eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anwenden.  <br/> |
-|[IsApprovalRequest](isapprovalrequest.md) <br/> |Gibt an, ob eingehende Nachrichten Genehmigung Anforderungen in der Reihenfolge für die Bedingung oder Ausnahme angewendet werden müssen.  <br/> |
-|[IsAutomaticForward](isautomaticforward.md) <br/> |Gibt an, ob eingehende Nachrichten automatische Weiterleitungen in Reihenfolge für die Bedingung oder Ausnahme angewendet werden müssen.  <br/> |
-|[IsAutomaticReply](isautomaticreply.md) <br/> |Gibt an, ob eingehende Nachrichten automatische Antworten in der Reihenfolge für die Bedingung oder Ausnahme angewendet werden müssen.  <br/> |
-|[IsEncrypted](isencrypted.md) <br/> |Gibt an, ob eingehende Nachrichten S/MIME verschlüsselt in der Reihenfolge für die Bedingung oder Ausnahme angewendet werden müssen.  <br/> |
-|[IsMeetingRequest](ismeetingrequest.md) <br/> |Gibt an, ob eingehende Nachrichten Anforderungen in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende meeting werden müssen.  <br/> |
-|[IsMeetingResponse](ismeetingresponse.md) <br/> |Gibt an, ob eingehende Nachrichten Antworten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende meeting werden müssen.  <br/> |
-|[IsNDR](isndr.md) <br/> |Gibt an, ob eingehende Nachrichten Unzustellbarkeitsberichte (NDR) müssen in der Reihenfolge für die Bedingung oder Ausnahme anwenden.  <br/> |
-|[IsPermissionControlled](ispermissioncontrolled.md) <br/> |Gibt an, ob eingehende Nachrichten Berechtigung gesteuert (RMS geschützte) in der Reihenfolge für die Bedingung oder Ausnahme angewendet werden muss  <br/> |
-|[IsReadReceipt](isreadreceipt.md) <br/> |Gibt an, ob eingehende Nachrichten Empfangsbestätigungen in Reihenfolge für die Bedingung oder Ausnahme anzuwendende gelesen werden müssen.  <br/> |
-|[IsSigned](issigned.md) <br/> |Gibt an, ob eingehende Nachrichten, dass in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende S/MIME signiert sein müssen.  <br/> |
-|[IsVoicemail](isvoicemail.md) <br/> |Gibt an, ob eingehende Nachrichten Voicemailnachrichten in Reihenfolge für die Bedingung oder Ausnahme angewendet werden müssen.  <br/> |
-|[ItemClasses](itemclasses.md) <br/> |Stellt die Element-Klassen, die auf eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende gekennzeichnet sein müssen.  <br/> |
-|[MessageClassifications](messageclassifications.md) <br/> |Stellt die Nachrichtenklassifikationen, die auf eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende gekennzeichnet sein müssen.  <br/> |
-|[NotSentToMe](notsenttome.md) <br/> |Gibt an, ob der Besitzer des Postfachs nicht in der **ToRecipients** -Eigenschaft der eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme angewendet werden muss.  <br/> |
-|[SentCcMe](sentccme.md) <br/> |Gibt an, ob der Besitzer des Postfachs in die **CcRecipients** -Eigenschaft des eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme angewendet werden.  <br/> |
-|[SentOnlyToMe](sentonlytome.md) <br/> |Gibt an, ob der Besitzer des Postfachs das einzige Objekt in der **ToRecipients** -Eigenschaft des eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme angewendet werden.  <br/> |
-|[SentToAddresses](senttoaddresses.md) <br/> |Gibt die E-mail-Adressen, die eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende an gesendet wurden.  <br/> |
-|[SentToMe](senttome.md) <br/> |Gibt an, ob der Besitzer des Postfachs in die **ToRecipients** -Eigenschaft des eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme angewendet werden.  <br/> |
-|[SentToOrCcMe](senttoorccme.md) <br/> |Gibt an, ob der Besitzer des Postfachs in einem **ToRecipients** oder **CcRecipients** -Eigenschaft des eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme angewendet werden.  <br/> |
-|[Vertraulichkeit](sensitivity.md) <br/> |Gibt an, die Vertraulichkeit, die auf eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende gekennzeichnet sein muss.  <br/> |
-|[WithinDateRange](withindaterange.md) <br/> |Gibt den Datumsbereich, in dem eingehende Nachrichten müssen in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende empfangen wurden.  <br/> |
-|[WithinSizeRange](withinsizerange.md) <br/> |Gibt die minimale und maximale Größe, die eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme angewendet werden müssen.  <br/> |
+|[Categories](categories-ex15websvcsotherref.md) <br/> |Enthält die Kategorien, die auf eine eingehende Nachricht angewendet werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[ContainsBodyStrings](containsbodystrings.md) <br/> |Gibt die Zeichenfolgen an, die im Textkörper von eingehenden Nachrichten angezeigt werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[ContainsHeaderStrings](containsheaderstrings.md) <br/> |Indicaqtes die Zeichenfolgen, die in den Kopfzeilen eingehender Nachrichten angezeigt werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[ContainsRecipientStrings](containsrecipientstrings.md) <br/> |Gibt die Zeichenfolgen an, die entweder in der **torecipients** -oder der **CcRecipients** -Eigenschaft der eingehenden Nachrichten angezeigt werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[ContainsSenderStrings](containssenderstrings.md) <br/> |Gibt die Zeichenfolgen an, die in der **from** -Eigenschaft eingehender Nachrichten angezeigt werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[ContainsSubjectOrBodyStrings](containssubjectorbodystrings.md) <br/> |Gibt die Zeichenfolgen an, die entweder im Textkörper oder im Betreff eingehender Nachrichten angezeigt werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[ContainsSubjectStrings](containssubjectstrings.md) <br/> |Gibt die Zeichenfolgen an, die im Betreff eingehender Nachrichten angezeigt werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[FlaggedForAction](flaggedforaction.md) <br/> |Gibt das Flag für Action-Wert an, das in eingehenden Nachrichten angezeigt werden muss, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[FromAddresses](fromaddresses.md) <br/> |Gibt die e-Mail-Adressen an, aus denen eingehende Nachrichten gesendet werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[FromConnectedAccounts](fromconnectedaccounts.md) <br/> |Stellt die e-Mail-Kontonamen dar, aus denen eingehende Nachrichten aggregiert werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[HasAttachments](hasattachments.md) <br/> |Gibt an, ob eingehende Nachrichten Anlagen aufweisen müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[Importance](importance.md) <br/> |Gibt die Wichtigkeit für eingehende Nachrichten an, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[IsApprovalRequest](isapprovalrequest.md) <br/> |Gibt an, ob eingehende Nachrichten Genehmigungsanforderungen sein müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[IsAutomaticForward](isautomaticforward.md) <br/> |Gibt an, ob eingehende Nachrichten automatisch weitergeleitet werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[IsAutomaticReply](isautomaticreply.md) <br/> |Gibt an, ob eingehende Nachrichten automatische Antworten sein müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[IsEncrypted](isencrypted.md) <br/> |Gibt an, ob eingehende Nachrichten S/MIME verschlüsselt sein müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[IsMeetingRequest](ismeetingrequest.md) <br/> |Gibt an, ob eingehende Nachrichten Besprechungsanfragen sein müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[IsMeetingResponse](ismeetingresponse.md) <br/> |Gibt an, ob eingehende Nachrichten Antworten erfüllen müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[IsNDR](isndr.md) <br/> |Gibt an, ob eingehende Nachrichten nicht Zustellungsberichte sein müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[IsPermissionControlled](ispermissioncontrolled.md) <br/> |Gibt an, ob eingehende Nachrichten berechtigungsgesteuert (RMS protected) sein müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[IsReadReceipt](isreadreceipt.md) <br/> |Gibt an, ob eingehende Nachrichten Lesebestätigungen sein müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[IsSigned](issigned.md) <br/> |Gibt an, ob eingehende Nachrichten S/MIME signiert sein müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[IsVoicemail](isvoicemail.md) <br/> |Gibt an, ob eingehende Nachrichten Voicemail-Nachrichten sein müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[ItemClasses](itemclasses.md) <br/> |Stellt die Elementklassen dar, die für eingehende Nachrichten gestempelt werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[MessageClassifications](messageclassifications.md) <br/> |Stellt die Nachrichtenklassifikationen dar, die für eingehende Nachrichten gestempelt werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[NotSentToMe](notsenttome.md) <br/> |Gibt an, ob der Besitzer des Postfachs nicht in der **torecipients** -Eigenschaft der eingehenden Nachrichten sein darf, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[SentCcMe](sentccme.md) <br/> |Gibt an, ob der Besitzer des Postfachs in der **CcRecipients** -Eigenschaft der eingehenden Nachrichten sein muss, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[SentOnlyToMe](sentonlytome.md) <br/> |Gibt an, ob der Besitzer des Postfachs der einzige in der **torecipients** -Eigenschaft der eingehenden Nachrichten sein muss, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[SentToAddresses](senttoaddresses.md) <br/> |Gibt die e-Mail-Adressen an, an die eingehende Nachrichten gesendet wurden, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[SentToMe](senttome.md) <br/> |Gibt an, ob der Besitzer des Postfachs in der **torecipients** -Eigenschaft der eingehenden Nachrichten sein muss, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[SentToOrCcMe](senttoorccme.md) <br/> |Gibt an, ob der Besitzer des Postfachs entweder eine **torecipients** -oder eine **CcRecipients** -Eigenschaft eingehender Nachrichten sein muss, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[Sensitivity](sensitivity.md) <br/> |Gibt die Empfindlichkeit an, die für eingehende Nachrichten gestempelt werden muss, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[WithinDateRange](withindaterange.md) <br/> |Gibt den Datumsbereich an, innerhalb dessen eingehende Nachrichten empfangen werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[WithinSizeRange](withinsizerange.md) <br/> |Gibt die Mindest-und Höchstgröße an, die eingehende Nachrichten aufweisen müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Regel (RuleType)](rule-ruletype.md) <br/> |Enthält eine einzelne Regel und stellt eine Regel in dem Postfach eines Benutzers.  <br/> |
+|[Regel (RuleType)](rule-ruletype.md) <br/> |Enthält eine einzelne Regel und stellt eine Regel im Postfach eines Benutzers dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die regelprädikate werden als regelbedingungen oder Ausnahmen verwendet.
+Die Regelprädikate werden als Regelbedingungen oder Ausnahmen verwendet.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
@@ -139,7 +139,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 
 
 
-[Bedingungen](conditions.md)
+[Bedingungen:](conditions.md)
 
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)

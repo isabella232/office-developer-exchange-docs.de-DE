@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 115d4a5d-0c90-45d5-a3a3-4e61d80df78a
-description: Das CreateUserConfigurationResponse-Element definiert eine Antwort auf eine einzelne Anforderung CreateUserConfiguration.
-ms.openlocfilehash: b2ccbe6468481522536b4f0c3d5a4183b9887add
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CreateUserConfigurationResponse-Element definiert eine Antwort auf eine einzelne CreateUserConfiguration-Anforderung.
+ms.openlocfilehash: d1b3e2a0ab156c5175f9c1e676866690c33ace9f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757810"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463769"
 ---
 # <a name="createuserconfigurationresponse"></a>CreateUserConfigurationResponse
 
-Das **CreateUserConfigurationResponse** -Element definiert eine Antwort auf eine einzelne Anforderung **CreateUserConfiguration** . 
+Das **CreateUserConfigurationResponse** -Element definiert eine Antwort auf eine einzelne **CreateUserConfiguration** -Anforderung. 
   
 ```xml
 <CreateUserConfigurationResponse>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,17 +52,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

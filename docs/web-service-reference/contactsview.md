@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8534f44b-a5af-4a9f-9621-23a3eff5f9d8
-description: Das ContactsView-Element definiert eine Suche für Kontaktelemente basierend auf alphabetische Anzeigenamen.
-ms.openlocfilehash: e578eb4dd0042b8c478e883c7fa54d7f2e984229
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ContactsView-Element definiert eine Suche nach Kontaktelementen basierend auf alphabetischen Anzeigenamen.
+ms.openlocfilehash: 23c3fe13c44cdd0e5a054ecb3378bc3d633e55aa
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757636"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463818"
 ---
 # <a name="contactsview"></a>ContactsView
 
-Das **ContactsView** -Element definiert eine Suche für Kontaktelemente basierend auf alphabetische Anzeigenamen. 
+Das **ContactsView** -Element definiert eine Suche nach Kontaktelementen basierend auf alphabetischen Anzeigenamen. 
   
 [FindItem](finditem.md)
   
@@ -41,9 +41,9 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**"MaxEntriesReturned"** <br/> |Beschreibt die maximale Anzahl der in der Antwort [FindItem](finditem.md) zurückzugebender Ergebnisse an.  <br/> |
-|**InitialName** <br/> |Definiert den ersten Namen in der Kontaktliste in der Antwort zurückgegeben. Wenn der angegebene anfänglichen Name nicht in der Kontaktliste auf den Namen des nächsten alphabetische ist, wie durch die kulturellen Kontext definiert werden zurückgegeben außer, wenn der nächste Name nach **FinalName wird**. Wenn das Attribut **InitialName** ausgelassen wird, enthält die Antwort eine Liste von Kontakten, die mit der erste Name in der Kontaktliste beginnt. Dieses Attribut ist optional.  <br/> |
-|**FinalName** <br/> |Definiert den Nachnamen in der Kontaktliste in der Antwort zurückgegeben. Wenn das Attribut **FinalName** ausgelassen wird, enthält die Antwort alle nachfolgenden Kontakte in der angegebenen Sortierreihenfolge. Ist der angegebene endgültige Name nicht in der Kontaktliste, wird der Name des nächsten alphabetische gemäß Definition durch die kulturellen Kontext ausgeschlossen werden.  <br/><br/>Beispielsweise wenn FinalName = "Name", aber Name ist nicht in der Kontaktliste, Kontakte, die Anzeigenamen der Name1 oder NAME nicht enthalten sein.  <br/><br/>Dieses Attribut ist optional.  <br/> |
+|**MaxEntriesReturned** <br/> |Beschreibt die maximale Anzahl von Ergebnissen, die in der [FindItem](finditem.md) -Antwort zurückgegeben werden.  <br/> |
+|**Initialname** <br/> |Definiert den ersten Namen in der Kontaktliste, der in der Antwort zurückgegeben werden soll. Wenn sich der angegebene ursprüngliche Name nicht in der Kontaktliste befindet, wird der nächste alphabetische Name im Kultur Kontext zurückgegeben, außer wenn der nächste Name nach **finalname**kommt. Wenn das **Initial** Name-Attribut nicht angegeben wird, enthält die Antwort eine Liste von Kontakten, die mit dem ersten Namen in der Kontaktliste beginnt. Dieses Attribut ist optional.  <br/> |
+|**Finalname** <br/> |Definiert den letzten Namen in der Kontaktliste, der in der Antwort zurückgegeben werden soll. Wenn das **finalname** -Attribut nicht angegeben wird, enthält die Antwort alle nachfolgenden Kontakte in der angegebenen Sortierreihenfolge. Wenn sich der angegebene endgültige Name nicht in der Kontaktliste befindet, wird der nächste alphabetische Name im Kultur Kontext ausgeschlossen.  <br/><br/>Wenn beispielsweise finalname = "Name", aber Name nicht in der Kontaktliste enthalten ist, werden Kontakte mit Anzeigenamen von Name1 oder Name nicht einbezogen.  <br/><br/>Dieses Attribut ist optional.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -53,24 +53,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindItem](finditem.md) <br/> |Definiert eine Anforderung zum Suchen von Elementen in einem Postfach an.<br/><br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/FindItem` <br/> |
+|[FindItem](finditem.md) <br/> |Definiert eine Anforderung zum Suchen von Elementen in einem Postfach.<br/><br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/FindItem` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird eine Anforderung veranschaulicht, wie die ersten drei Kontakte, beginnend mit der Kontakt den Anzeigenamen des Kelly Rollin auf Suchen.
+Im folgenden Beispiel einer Anforderung wird veranschaulicht, wie die ersten drei Kontakte, beginnend mit dem Kontakt mit dem Anzeigenamen von Kelly Rollin, gefunden werden.
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <FindItem Traversal="Shallow" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindItem Traversal="Shallow" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ItemShape>
         <t:BaseShape>IdOnly</t:BaseShape>
         <t:AdditionalProperties>
@@ -91,17 +91,17 @@ Im folgenden Beispiel wird eine Anforderung veranschaulicht, wie die ersten drei
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 - [FindItem-Vorgang](finditem-operation.md)
-- [Finding Items](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+- [Finding Items](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

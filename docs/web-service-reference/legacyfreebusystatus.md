@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ee5f3046-b79f-4f68-9455-1a688cee2745
-description: Das LegacyFreeBusyStatus-Element darstellt, den Frei/Gebucht-Status des Kalenderelements.
-ms.openlocfilehash: 681d7256dbef09c6c43d33ea1fc92b5d05e73a41
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das LegacyFreeBusyStatus-Element stellt den Frei/Gebucht-Status des Kalenderelements dar.
+ms.openlocfilehash: ecbcae0862c9c02c0a4a61012816e4c2c6ea07b7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830247"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463230"
 ---
 # <a name="legacyfreebusystatus"></a>LegacyFreeBusyStatus
 
-Das **LegacyFreeBusyStatus** -Element darstellt, den Frei/Gebucht-Status des Kalenderelements. 
+Das **LegacyFreeBusyStatus** -Element stellt den Frei/Gebucht-Status des Kalenderelements dar. 
   
 ```xml
 <LegacyFreeBusyStatus/>
@@ -50,24 +50,24 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Es wird ein Textwert für dieses Element erforderlich. Es folgen die möglichen Textwerte für dieses Element:
+Für dieses Element ist ein Textwert erforderlich. Im folgenden sind die möglichen Text Werte für dieses Element angegeben:
   
-- Kostenlos 
-- Mit Vorbehalt
+- Frei 
+- Vorläufige
 - Gebucht
-- ABWESEND
+- Abwesenheits
 - WorkingElsewhere
 - NoData
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

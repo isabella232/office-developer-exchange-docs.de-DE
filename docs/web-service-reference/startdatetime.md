@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6fd41b7b-6c83-43b6-8b16-0bdb3d173d73
-description: Das StartDateTime-Element gibt das Startdatum und die Uhrzeit für eine Regel oder eine Suche.
-ms.openlocfilehash: 4bc32ed5626d692fc73dfa8bd7c46923aba72f9e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das startdate-Element gibt das Startdatum und die Startzeit für eine Regel oder eine Suche an.
+ms.openlocfilehash: 28b78fad87abb1148cfe49fee4f9bb98f822eae5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831552"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462843"
 ---
 # <a name="startdatetime"></a>StartDateTime
 
-Das **StartDateTime** -Element gibt das Startdatum und die Uhrzeit für eine Regel oder eine Suche. 
+Das startdate **-Element gibt das Start** Datum und die Startzeit für eine Regel oder eine Suche an. 
   
 ```XML
 <StartDate/>
@@ -45,24 +45,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |Gibt Kriterien für die Typen von Nachrichten suchen.  <br/> |
-|[WithinDateRange](withindaterange.md) <br/> |Gibt den Datumsbereich, in dem eingehende Nachrichten müssen in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende empfangen wurden.  <br/> |
+|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |Gibt Kriterien für die Typen von Nachrichten an, die gesucht werden sollen.  <br/> |
+|[WithinDateRange](withindaterange.md) <br/> |Gibt den Datumsbereich an, innerhalb dessen eingehende Nachrichten empfangen werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
- Ein Textwert, der einen Datum/Uhrzeit darstellt ist erforderlich, wenn dieses Element verwendet wird. 
+ Ein Textwert, der eine Datum/Uhrzeit darstellt, ist erforderlich, wenn dieses Element verwendet wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

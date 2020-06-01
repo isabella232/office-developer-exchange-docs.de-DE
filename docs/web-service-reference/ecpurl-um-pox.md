@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 455c77c6-c03f-49a7-a8ca-aa0023b6e73b
-description: Das Element EcpUrl um gibt eine partielle URL, die mit dem EcpUrl (POX) Elementwert generiert eine URL, die verwendet werden können, Voicemail-Einstellungen für einen e-Mail-aktivierten Benutzer Zugriff auf kombiniert werden kann.
-ms.openlocfilehash: 5f9be67f02703bbdfeb114eda13c5ce59f83290d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EcpUrl-um-Element gibt eine partielle URL an, die mit dem Wert des EcpUrl (POX)-Elements kombiniert werden kann, um eine URL zu generieren, die für den Zugriff auf Voicemaileinstellungen für e-Mail-aktivierte Benutzer verwendet werden kann.
+ms.openlocfilehash: 0fa3d42113d7d9accd6bba3d3b065477baf4d484
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758131"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463489"
 ---
 # <a name="ecpurl-um-pox"></a>EcpUrl-um (POX)
 
-Das Element **EcpUrl um** gibt eine partielle URL, die mit dem [EcpUrl (POX)](ecpurl-pox.md) Elementwert generiert eine URL, die verwendet werden können, Voicemail-Einstellungen für einen e-Mail-aktivierten Benutzer Zugriff auf kombiniert werden kann. 
+Das **EcpUrl-um-** Element gibt eine partielle URL an, die mit dem Wert des [EcpUrl (POX)](ecpurl-pox.md) -Elements kombiniert werden kann, um eine URL zu generieren, die für den Zugriff auf Voicemaileinstellungen für e-Mail-aktivierte Benutzer verwendet werden kann. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -48,15 +48,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt eine partielle URL, die mit dem [EcpUrl (POX)](ecpurl-pox.md) Elementwert generiert eine URL, die verwendet werden können, Voicemail-Einstellungen für den Benutzer Zugriff auf kombiniert werden kann. 
+Der Textwert stellt eine partielle URL dar, die mit dem [EcpUrl (POX)](ecpurl-pox.md) -Elementwert kombiniert werden kann, um eine URL zu generieren, die für den Zugriff auf Voicemaileinstellungen für den Benutzer verwendet werden kann. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **EcpUrl-um** -Element ist ein optionales untergeordnetes Element des **Protokoll** -Elements. 
+Das **EcpUrl-um-** Element ist ein optionales untergeordnetes Element des **Protocol** -Elements. 
   
 ## <a name="see-also"></a>Siehe auch
 

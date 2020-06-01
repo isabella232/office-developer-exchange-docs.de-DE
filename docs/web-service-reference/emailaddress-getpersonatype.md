@@ -1,5 +1,5 @@
 ---
-title: EmailAddress (GetPersonaType)
+title: E-mailemail (getpersonatype)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 052055b5-4630-40ed-9b24-9e7f4bf7ba1d
-description: Das EmailAddress (GetPersonaType)-Element gibt die e-Mail-Adresse, die die Rolle zugeordnet.
-ms.openlocfilehash: a28a4a61a9719875fe99e1c950bcd3ec3af9ab13
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Address-Element (getpersonatype) gibt die e-Mail-Adresse an, die der Rolle zugeordnet ist.
+ms.openlocfilehash: b58f61202cd94ff282b21138b47b40887b38752a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758159"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463454"
 ---
-# <a name="emailaddress-getpersonatype"></a>EmailAddress (GetPersonaType)
+# <a name="emailaddress-getpersonatype"></a>E-mailemail (getpersonatype)
 
-Das **EmailAddress (GetPersonaType)** -Element gibt die e-Mail-Adresse, die die Rolle zugeordnet. 
+Das Address-Element **(getpersonatype)** gibt die e-Mail-Adresse an, die der Rolle zugeordnet ist. 
   
 ```XML
 <EmailAddress>
@@ -41,25 +41,25 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[Name (Zeichenfolge)](name-string.md) | [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) | [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md) | [MailboxType](mailboxtype.md) | [ItemId](itemid.md) | [OriginalDisplayName](originaldisplayname.md)
+[Name (Zeichenfolge)](name-string.md)  |  [E-mailemail (NonEmptyStringType)](emailaddress-nonemptystringtype.md)  |  [Routingtype (e-mailemailtype)](routingtype-emailaddresstype.md)  |  [Mailboxtype](mailboxtype.md)  |  [ItemID](itemid.md)  |  [OriginalDisplayName](originaldisplayname.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [GetPersona](getpersona.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

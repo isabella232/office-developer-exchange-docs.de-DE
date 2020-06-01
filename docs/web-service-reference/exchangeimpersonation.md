@@ -1,5 +1,5 @@
 ---
-title: "\"ExchangeImpersonation\""
+title: ExchangeImpersonation
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: d8cbac49-47d0-4745-a2a7-545d33f8da93
-description: Das Element "ExchangeImpersonation" wird im SOAP-Header einer Anforderung verwendet. Wenn dieses Element vorhanden ist, versucht der Aufrufer, das Benutzerkonto zu imitieren, das in der "ExchangeImpersonation"-Element enthalten ist.
-ms.openlocfilehash: aedeff22cda865ce1eec80dab9760d49fdc178f7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ExchangeImpersonation-Element wird im SOAP-Header einer Anforderung verwendet. Wenn dieses Element vorhanden ist, versucht der Aufrufer, das im ExchangeImpersonation-Element enthaltene Konto zu imitieren.
+ms.openlocfilehash: 188219d95453dc45378c6ca65ab93c2de7db4eac
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758299"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463349"
 ---
-# <a name="exchangeimpersonation"></a>"ExchangeImpersonation"
+# <a name="exchangeimpersonation"></a>ExchangeImpersonation
 
-Das Element **"ExchangeImpersonation"** wird im SOAP-Header einer Anforderung verwendet. Wenn dieses Element vorhanden ist, versucht der Aufrufer, das Benutzerkonto zu imitieren, das in der **"ExchangeImpersonation"** -Element enthalten ist. 
+Das **ExchangeImpersonation** -Element wird im SOAP-Header einer Anforderung verwendet. Wenn dieses Element vorhanden ist, versucht der Aufrufer, das im **ExchangeImpersonation** -Element enthaltene Konto zu imitieren. 
   
-["ExchangeImpersonation"](exchangeimpersonation.md)
+[ExchangeImpersonation](exchangeimpersonation.md)
   
 ```xml
 <ExchangeImpersonation>
@@ -44,23 +44,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ConnectingSID](connectingsid.md) <br/> |Gibt ein Konto Identitätswechsel bei Verwendung der "ExchangeImpersonation" SOAP-Header.  <br/> |
+|[ConnectingSID](connectingsid.md) <br/> |Stellt ein Konto für den Identitätswechsel dar, wenn Sie den SOAP-ExchangeImpersonation-Header verwenden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das aufrufende Konto muss die **ms-Exch-Impersonation** direkt auf dem Clientzugriffsserver und das **ms-Exch-MayImpersonate** Recht auf entweder haben die Postfachdatenbank, die das Postfach Identität enthält oder den Active Directory-Benutzer/Kontakt -Objekt. 
+Das Anruf Konto muss über das **ms-exch-impersonation** direkt auf dem Client Zugriffsserver und dem **MS-Wechsel-MayImpersonate** -direkt in der Postfachdatenbank, in der das Postfach enthalten ist, den Identitätswechsel oder das Benutzer-Kontaktobjekt Active Directory. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
@@ -69,5 +69,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 
 
 
-[Server-zu-Server-Autorisierung in Exchange-Webdienste](http://msdn.microsoft.com/library/f1610a20-672d-448b-8c00-5b0fbcaf31cb%28Office.15%29.aspx)
+[Server-zu-Server-Autorisierung in EWS](https://msdn.microsoft.com/library/f1610a20-672d-448b-8c00-5b0fbcaf31cb%28Office.15%29.aspx)
 

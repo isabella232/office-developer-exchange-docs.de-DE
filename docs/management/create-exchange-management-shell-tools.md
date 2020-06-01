@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Exchange-Verwaltungsshell-tools
+title: Erstellen von Exchange-Verwaltungsshell Tools
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,45 +7,46 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 46e4812f-37a8-449f-bd37-bc4a94605db9
-description: Hier finden Sie Informationen zu ersten Schritten beim Erstellen der Exchange-Verwaltungsshell-Tools für Exchange.
-ms.openlocfilehash: e8414460007f333e50c9d596bf977792977b1e4e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier finden Sie Informationen zu den ersten Schritten beim Erstellen von Exchange-Verwaltungsshell Tools für Exchange.
+ms.openlocfilehash: c6e11fa5b55aa514b12f4f52bc9346ac213d3781
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757132"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463727"
 ---
-# <a name="create-exchange-management-shell-tools"></a>Erstellen von Exchange-Verwaltungsshell-tools
+# <a name="create-exchange-management-shell-tools"></a>Erstellen von Exchange-Verwaltungsshell Tools
 
-Hier finden Sie Informationen zu ersten Schritten beim Erstellen der Exchange-Verwaltungsshell-Tools für Exchange.
+Hier finden Sie Informationen zu den ersten Schritten beim Erstellen von Exchange-Verwaltungsshell Tools für Exchange.
 
 **Gilt für:** Exchange Online | Exchange Server 2013 | Office 365
   
-Die Exchange-Verwaltungsshell bietet einen umfassenden Satz von Befehlen, basierend auf der Windows PowerShell-Plattform für die Verwaltung von Exchange Online, Exchange Online als Teil von Office 365 oder eine lokale Version von Exchange, beginnend mit Exchange 2013. Exchange-Verwaltungsshell-Befehlen können Sie die Verwaltung eines Servers durch die Befehle direkt ausgeführt oder mithilfe von Befehlsskripts automatisieren.
+Das Exchange-Verwaltungsshell bietet eine umfangreiche Reihe von Befehlen auf der Grundlage der Windows PowerShell Plattform zum Verwalten von Exchange Online, Exchange Online im Rahmen von Office 365 oder einer lokalen Exchange-Version, die mit Exchange 2013 beginnt. Sie können Exchange-Verwaltungsshell Befehle verwenden, um die Verwaltung eines Servers zu automatisieren, indem Sie die Befehle direkt ausführen oder Befehlsskripts verwenden.
   
-Wenn Sie Exchange-Verwaltungsshell-Befehle in einer hosting-Anwendung, wie eine administrative Anwendung verwenden, die der Administrator Desktop oder über eine webbasierte Anwendung ausgeführt wird, können Sie Exchange-Verwaltungsshell-Cmdlets von Anrufen in der Visual Basic oder C#-Anwendung zum Verwalten von eines Exchange-Servers.
+Wenn Sie Exchange-Verwaltungsshell Befehle aus einer Hostanwendung wie einer Verwaltungsanwendung, die auf dem Desktop des Administrators oder über eine webbasierte Anwendung läuft, verwenden möchten, können Sie Exchange-Verwaltungsshell-Cmdlets in der Visual Basic-oder C#-Anwendung aufrufen, um einen Exchange-Server zu verwalten.
   
-## <a name="get-started-with-exchange-management-shell-tools"></a>Erste Schritte mit Exchange-Verwaltungsshell-tools
+## <a name="get-started-with-exchange-management-shell-tools"></a>Erste Schritte mit Exchange-Verwaltungsshell Tools
 <a name="SP15GettingStartedTemplate_WhatDoYouNeed"> </a>
 
-Wenn Sie mit der Erstellung von Windows PowerShell-hostanwendungen vertraut sind, und sehen Sie ein Beispiel, das zeigt, wie der Exchange-Verwaltungsshell-Cmdlets aus einer Anwendung aufzurufen, oder sehen Sie ein Beispiel für die Typen von Anwendungen, die Sie erstellen können, über die Exchange möchten -Verwaltungsshell-Cmdlets finden Sie unter [Abrufen einer Liste von e-Mail-Benutzer mithilfe der Exchange-Verwaltungsshell](how-to-get-a-list-of-mail-users-by-using-the-exchange-management-shell.md).
+Wenn Sie mit dem Erstellen Windows PowerShell Hostanwendungen vertraut sind und ein Beispiel sehen möchten, das zeigt, wie die Exchange-Verwaltungsshell-Cmdlets aus einer Anwendung aufgerufen werden, oder um ein Beispiel für die Typen von Anwendungen anzuzeigen, die Sie mithilfe der Exchange-Verwaltungsshell-Cmdlets erstellen können, lesen Sie [Abrufen einer Liste von e-Mail-Benutzern mithilfe der Exchange-Verwaltungsshell](how-to-get-a-list-of-mail-users-by-using-the-exchange-management-shell.md).
   
-Die Exchange-Verwaltungsshell-Cmdlets sind Erweiterungen für Windows PowerShell, eine vorgangsbasierte Befehlszeilenshell und Skriptsprache, die speziell für die Systemadministration konzipiert ist. Windows PowerShell basiert auf .NET Framework und bietet eine objektorientierte-API für das Cmdlet Anbieter und Host-Anwendungsentwickler. Weitere Informationen zu den Windows PowerShell-Programmierung finden Sie in der [Windows PowerShell-SDK](http://msdn.microsoft.com/en-us/library/dd835506%28VS.85%29.aspx).
+Die Exchange-Verwaltungsshell-Cmdlets sind Erweiterungen für Windows PowerShell, eine aufgabenbasierte Befehlszeilen-Shell und Skriptsprache, die speziell für die Systemverwaltung entwickelt wurde. Windows PowerShell baut auf dem .NET Framework auf und stellt eine objektorientierte API für Cmdlet-, Anbieter-und Host Anwendungsentwickler bereit. Weitere Informationen zur Windows PowerShell Programmierung finden Sie im [Windows PowerShell SDK](https://msdn.microsoft.com/library/dd835506%28VS.85%29.aspx).
   
-Die Exchange-Verwaltungsshell-Cmdlets annehmen und Zurückgeben von Objekten. Eine Liste der Exchange-Verwaltungsshell-Cmdlets und ihre Eingabe- und Typen finden Sie unter [Exchange-Verwaltungsshell-Cmdlet ein- und Ausgabe Typen](exchange-management-shell-cmdlet-input-and-output-types.md).
+Die Exchange-Verwaltungsshell-Cmdlets akzeptieren und geben Objekte zurück. Eine Liste der Cmdlets der Exchange-Verwaltungsshell und deren Eingabe-und Ausgabetypen finden Sie unter [Exchange-Verwaltungsshell Cmdlet Input and Output Types](exchange-management-shell-cmdlet-input-and-output-types.md).
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [Neue und aktualisierte Exchange-Verwaltungsshell-cmdlets](new-and-updated-exchange-management-shell-cmdlets.md)  
-- [Exchange-Verwaltungsshell Eingabe- und Ausgabedateien Typen](exchange-management-shell-cmdlet-input-and-output-types.md)
-- [Abrufen einer Liste von e-Mail-Benutzer mithilfe der Exchange-Verwaltungsshell](how-to-get-a-list-of-mail-users-by-using-the-exchange-management-shell.md)
-- [Verwenden Sie die Exchange-Verwaltungsshell-Cmdlet-Antwort](how-to-use-the-exchange-management-shell-cmdlet-response.md)
+- [Neue und aktualisierte Exchange-Verwaltungsshell-Cmdlets](new-and-updated-exchange-management-shell-cmdlets.md)  
+- [Eingabe- und Ausgabetypen für Cmdlets der Exchange-Verwaltungsshell](exchange-management-shell-cmdlet-input-and-output-types.md)
+- [Abrufen einer Liste von e-Mail-Benutzern mithilfe der Exchange-Verwaltungsshell](how-to-get-a-list-of-mail-users-by-using-the-exchange-management-shell.md)
+- [Verwenden der Antwort des Exchange-Verwaltungsshell-Cmdlets](how-to-use-the-exchange-management-shell-cmdlet-response.md)
 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Exchange-Verwaltungsshell-namespaces](exchange-management-shell-namespaces.md)  
-- [Exchange Server-PowerShell (Exchange-Verwaltungsshell)](https://docs.microsoft.com/en-us/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps)  
-- [Windows PowerShell](http://msdn.microsoft.com/en-us/library/dd835506%28v=vs.85%29.aspx)
+- [Exchange-Verwaltungsshell Namespaces](exchange-management-shell-namespaces.md)  
+- 
+  [Exchange Server-PowerShell (Exchange-Verwaltungsshell)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps)  
+- [Windows PowerShell](https://msdn.microsoft.com/library/dd835506%28v=vs.85%29.aspx)
     
 

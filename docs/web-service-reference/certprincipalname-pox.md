@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: a24092c9-58be-4008-92c4-68ec5c6c0fa6
-description: Das Element CertPrincipalName gibt den Prinzipal Secure Sockets Layer (SSL) Zertifikat-Namen, der von der Microsoft Exchange Server 2007-Organisation Herstellen einer Verbindung mit SSL erforderlich ist.
-ms.openlocfilehash: d2766b16a3e8a1bcd013de332d9c07f709fcf949
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CertPrincipalName-Element gibt den Secure Sockets Layer (SSL) zertifikatprinzipalnamen an, der zum Herstellen einer Verbindung mit der Microsoft Exchange Server 2007 Organisation mithilfe von SSL erforderlich ist.
+ms.openlocfilehash: fb2a1c8577bce41945b669be56f2a94a2c4dca26
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757560"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463342"
 ---
 # <a name="certprincipalname-pox"></a>CertPrincipalName (POX)
 
-Das Element **CertPrincipalName** gibt den Prinzipal Secure Sockets Layer (SSL) Zertifikat-Namen, der von der Microsoft Exchange Server 2007-Organisation Herstellen einer Verbindung mit SSL erforderlich ist. 
+Das **CertPrincipalName** -Element gibt den Secure Sockets Layer (SSL) zertifikatprinzipalnamen an, der zum Herstellen einer Verbindung mit der Microsoft Exchange Server 2007 Organisation mithilfe von SSL erforderlich ist. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,17 +50,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer mit Exchange 2007, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange 2007 ausgeführt wird, auf dem die Clientzugriffs-Serverrolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert gibt den SSL-Zertifikat principal Name, der von der Microsoft Exchange-Organisation Herstellen einer Verbindung mit SSL erforderlich ist.
+Der Text-Wert gibt den Namen des SSL-Zertifikat Prinzipals an, der zum Herstellen einer Verbindung mit der Microsoft Exchange Organisation mithilfe von SSL erforderlich ist.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn das Element **CertPrincipalName** nicht angegeben wird, ist die Standardeinstellung auf Msstd:SERVER, festlegen SERVER ist, auf dem der Wert, der im [Server (POX)](server-pox.md) -Element angegeben ist. Angenommen, wenn der SERVER als example.com angegeben ist, und **CertPrincipalName** mit [SSL (POX)](ssl-pox.md) eingeschaltet ist leer, wäre der Standardwert der **CertPrincipalName** msstd:example.com. 
+Wenn das **CertPrincipalName** -Element nicht angegeben ist, wird standardmäßig auf msstd: Server festgelegt, wobei Server der Wert ist, der im [Server (POX)-](server-pox.md) Element angegeben ist. Wenn beispielsweise Server als example.com angegeben ist und **CertPrincipalName** mit aktiviertem [SSL (POX)](ssl-pox.md) leer gelassen wird, lautet der Standardwert von **CertPrincipalName** msstd:example. com. 
   
-Wenn **keines** angegeben ist, wird Windows den Prinzipal Zertifikatnamen entsprechend den Informationen im Thema [Dienstprinzipalnamen](http://go.microsoft.com/fwlink/?LinkId=93417) auf MSDN überprüfen. 
+Wenn **None** angegeben ist, überprüft Windows den zertifikatprinzipalnamen gemäß den Informationen, die im Thema [Principal Names](https://go.microsoft.com/fwlink/?LinkId=93417) auf MSDN gefunden werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

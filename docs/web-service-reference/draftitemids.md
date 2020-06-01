@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c228f7e7-6dc8-476d-9b8c-99cd5b6f9f0c
-description: Das DraftItemIds-Element enthält ein Array der Element-IDs zu Entwurfselemente in einer Unterhaltung.
-ms.openlocfilehash: f6639b20641ff68fff989d2de5fa4ec2c550d5ce
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DraftItemIds-Element enthält ein Array von Element-IDs zum Entwerfen von Elementen in einer Unterhaltung.
+ms.openlocfilehash: 5e635e354c9d2d768bab5efaafafde272fe568d3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758105"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463573"
 ---
 # <a name="draftitemids"></a>DraftItemIds
 
-Das **DraftItemIds** -Element enthält ein Array der Element-IDs zu Entwurfselemente in einer Unterhaltung. 
+Das **DraftItemIds** -Element enthält ein Array von Element-IDs zum Entwerfen von Elementen in einer Unterhaltung. 
   
 ```XML
 <DraftItemIds>
@@ -39,23 +39,23 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[ItemId](itemid.md) | [OccurrenceItemId](occurrenceitemid.md) | [RecurringMasterItemId](recurringmasteritemid.md) | [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
+[ItemID](itemid.md)  |  [OccurrenceItemId](occurrenceitemid.md)  |  [RecurringMasterItemId](recurringmasteritemid.md)  |  [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [Unterhaltung (ConversationType)](conversation-conversationtype.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

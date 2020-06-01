@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6fd8a6b8-d813-43ff-991b-0e9e782fe00e
-description: CopyToFolder-Element gibt den Bezeichner des Ordners die e-Mail, die auf Elemente kopiert werden können.
-ms.openlocfilehash: b641c23b7aed11ae85157e2ed01cfa9d61d07e0a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CopyToFolder-Element gibt den Bezeichner des Ordners an, in den e-Mail-Elemente kopiert werden können.
+ms.openlocfilehash: 7cdda0f9769f909255c9b76f78ac7094a8dfc8f8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757728"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463174"
 ---
 # <a name="copytofolder"></a>CopyToFolder
 
-**CopyToFolder** -Element gibt den Bezeichner des Ordners die e-Mail, die auf Elemente kopiert werden können. 
+Das **CopyToFolder** -Element gibt den Bezeichner des Ordners an, in den e-Mail-Elemente kopiert werden können. 
   
 ```XML
 <CopyToFolder>
@@ -43,8 +43,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Enthält den Bezeichner des Zielordners für eine kopierte oder verschobene Element oder einen Ordner.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Gibt einen benannten Zielordner für eine kopierte oder verschobene Element oder einen Ordner.  <br/> |
+|[FolderId](folderid.md) <br/> |Enthält den Bezeichner eines Zielordners für ein kopiertes oder verschobenes Element oder einen verschobenen Ordner.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Gibt einen benannten Zielordner für ein kopiertes oder verschobenes Element oder einen Ordner an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -56,17 +56,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

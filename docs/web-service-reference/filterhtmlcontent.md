@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2f9358a0-de1d-4544-9aa0-d9f6519f3b5f
-description: Das FilterHtmlContent-Element gibt an, ob potenziell unsichere HTML-Inhalte aus eines Elements oder einer Anlage gefiltert wird.
-ms.openlocfilehash: db181eff9586061d728a5e4ef55a78f4955b5713
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FilterHtmlContent-Element gibt an, ob potenziell unsicherer HTML-Inhalt von einem Element oder einer Anlage gefiltert wird.
+ms.openlocfilehash: 28e3be86b550c3f330fbb6846b64732b5674304d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758427"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462675"
 ---
 # <a name="filterhtmlcontent"></a>FilterHtmlContent
 
-Das **FilterHtmlContent** -Element gibt an, ob potenziell unsichere HTML-Inhalte aus eines Elements oder einer Anlage gefiltert wird. 
+Das **FilterHtmlContent** -Element gibt an, ob potenziell unsicherer HTML-Inhalt von einem Element oder einer Anlage gefiltert wird. 
   
 ```xml
 <FilterHtmlContent>true or false</FilterHtmlContent>
@@ -44,24 +44,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AttachmentShape](attachmentshape.md) <br/> | Bezeichnet die zusätzliche Eigenschaften in einer Antwort auf eine Anforderung [GetAttachment](getattachment.md) zurückgegeben werden sollen.  <br/><br/>  Es folgt der XPath-Ausdruck, der dieses Element: <br/> <br/>  `/GetAttachment/AttachmentShape` <br/> |
-|[ItemShape](itemshape.md) <br/> | Identifiziert die Elementeigenschaften und den Inhalt in einer Antwort GetItem, FindItem oder SyncFolderItems aufzunehmen.  <br/> <br/> Folgende XPath-Ausdrücke werden für dieses Element verwendet: <br/> <br/>  `/GetItem/ItemShape`<br/> <br/>  `/FindItem/ItemShape`<br/> <br/>  `/SyncFolderItems/ItemShape` <br/> |
+|[AttachmentShape](attachmentshape.md) <br/> | Identifiziert zusätzliche Eigenschaften, die in einer Antwort auf eine [GetAttachment](getattachment.md) -Anforderung zurückgegeben werden sollen.  <br/><br/>  Für dieses Element wird folgender XPath-Ausdruck verwendet:  <br/> <br/>  `/GetAttachment/AttachmentShape` <br/> |
+|[ItemShape](itemshape.md) <br/> | Identifiziert die Elementeigenschaften und Inhalte, die in einer GetItem-, FindItem-oder SyncFolderItems-Antwort enthalten sein sollen.  <br/> <br/> Folgende XPath-Ausdrücke werden für dieses Element verwendet: <br/> <br/>  `/GetItem/ItemShape`<br/> <br/>  `/FindItem/ItemShape`<br/> <br/>  `/SyncFolderItems/ItemShape` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Dieses Element kann **true** oder **false**sein. Der Standardwert ist **false**. Dies ist ein Boolean-Datentyp.
+Dieses Element kann entweder **true** oder **false**sein. Der Standardwert ist **false**. Dies ist ein boolescher Datentyp.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element ist optional.
   
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, der Exchange-Server, mit die Clientzugriffs-Serverrolle installiert ausgeführt wird.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server mit installierter Client Zugriffs-Server Rolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

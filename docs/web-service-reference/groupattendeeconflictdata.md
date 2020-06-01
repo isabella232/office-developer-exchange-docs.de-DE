@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: fd8bf19a-298b-4135-93e8-ead3db7e1142
-description: Das GroupAttendeeConflictData-Element enthält aggregierte Konfliktinformationen über die Anzahl der Benutzer, die verfügbar sind, die Anzahl der Benutzer, die Konflikte und die Anzahl der Benutzer, die keine Informationen zur Verfügbarkeit in einer Verteilerliste für auf ein Vorgeschlagene Besprechungszeit.
-ms.openlocfilehash: 382b4d866c95de98bd444cd6226d71813889d4f4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GroupAttendeeConflictData-Element enthält aggregierte Konfliktinformationen über die Anzahl der verfügbaren Benutzer, die Anzahl der Benutzer mit Konflikten sowie die Anzahl der Benutzer, die in einer Verteilerliste keine Verfügbarkeitsinformationen für eine vorgeschlagene Besprechungszeit haben.
+ms.openlocfilehash: c75a4e6f8fdff7fb2514f448350fee9f1acb9775
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829757"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462929"
 ---
 # <a name="groupattendeeconflictdata"></a>GroupAttendeeConflictData
 
-Das **GroupAttendeeConflictData** -Element enthält aggregierte Konfliktinformationen über die Anzahl der Benutzer, die verfügbar sind, die Anzahl der Benutzer, die Konflikte und die Anzahl der Benutzer, die keine Informationen zur Verfügbarkeit in einer Verteilerliste für einen Zeitraum vorgeschlagenen Besprechung. 
+Das **GroupAttendeeConflictData** -Element enthält aggregierte Konfliktinformationen über die Anzahl der verfügbaren Benutzer, die Anzahl der Benutzer mit Konflikten sowie die Anzahl der Benutzer, die in einer Verteilerliste keine Verfügbarkeitsinformationen für eine vorgeschlagene Besprechungszeit haben. 
   
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 - [SuggestionsResponse](suggestionsresponse.md)
@@ -55,28 +55,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[NumberOfMembers](numberofmembers.md) <br/> |Die Anzahl von Benutzern, Ressourcen und Chatrooms in einer Verteilerliste darstellt.  <br/> |
-|[NumberOfMembersAvailable](numberofmembersavailable.md) <br/> |Stellt die Anzahl der Mitglieder der Verteilerliste, die für einen Zeitraum vorgeschlagenen Besprechung zur Verfügung stehen. Dieses Element stellt Member für die der Status **frei**ist.  <br/> |
-|[NumberOfMembersWithConflict](numberofmemberswithconflict.md) <br/> |Stellt die Anzahl der Mitglieder der Verteilerliste, die einen Konflikt mit einer vorgeschlagenen Besprechungszeit haben. Dieses Element stellt Mitglieder, die den Status **beschäftigt**, **ABWESEND**oder **mit Vorbehalt** aufweisen.  <br/> |
-|[NumberOfMembersWithNoData](numberofmemberswithnodata.md) <br/> |Stellt die Anzahl der Mitglieder, die nicht veröffentlichte Frei/Gebucht-Daten mit einer vorgeschlagenen Besprechung Uhrzeit verglichen verfügen. Dieses Element stellt die Mitglieder von Verteilerlisten, die zu groß ist oder Mitglieder, die **Keine Daten** Status aufweisen.  <br/> |
+|[NumberOfMembers](numberofmembers.md) <br/> |Stellt die Anzahl der Benutzer, Ressourcen und Räume in einer Verteilerliste dar.  <br/> |
+|[NumberOfMembersAvailable](numberofmembersavailable.md) <br/> |Stellt die Anzahl der Verteilerlistenmitglieder dar, die für eine vorgeschlagene Besprechungszeit zur Verfügung stehen. Dieses Element stellt Elemente dar, für die der Status **frei**ist.  <br/> |
+|[NumberOfMembersWithConflict](numberofmemberswithconflict.md) <br/> |Gibt die Anzahl der Verteilerlistenmitglieder an, die einen Konflikt mit einer vorgeschlagenen Besprechungszeit haben. Dieses Element stellt Elemente dar, die den Status " **beschäftigt**", " **Abwesend**" oder " **vorläufig** " aufweisen.  <br/> |
+|[NumberOfMembersWithNoData](numberofmemberswithnodata.md) <br/> |Gibt die Anzahl der Gruppenmitglieder an, die keine Frei/Gebucht-Daten veröffentlicht haben, die mit einer vorgeschlagenen Besprechungszeit verglichen werden sollen. Dieses Element stellt Elemente einer Verteilerliste dar, die zu groß sind, oder Mitglieder, die **keinen Daten** Status aufweisen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AttendeeConflictDataArray](attendeeconflictdataarray.md) <br/> |Enthält ein Array von Conflict-Daten für die abgefragte Teilnehmer bei der [GetUserAvailability-Vorgang](getuseravailability-operation.md)identifiziert.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray` <br/> |
+|[AttendeeConflictDataArray](attendeeconflictdataarray.md) <br/> |Enthält ein Array von Konfliktdaten für abgefragte Teilnehmer, die im [GetUserAvailability-Vorgang](getuseravailability-operation.md)identifiziert wurden.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **GroupAttendeeConflictData** -Element wird in der Antwort vorhanden ist, wenn ein Teilnehmer in der [GetUserAvailabilityRequest](getuseravailabilityrequest.md) in einer Verteilerliste aufgelöst wird. Das **GroupAttendeeConflictData** -Element identifiziert drei Zustände für Mitglieder von Verteilerlisten: verfügbar, Konflikt, oder keine Daten. Verteilerlistenerweiterung unterstützt bis zu 100 Elemente. Aus diesem Grund kann das [NumberOfMembers](numberofmembers.md) -Element ein Maximum von bis zu 100 Mitgliedern enthalten. Die Erweiterung der Verteilerliste ist rekursiv. Wenn eine Verteilerliste eine Verteilerliste untergeordneten enthält, die das mehr als 100 Mitgliedern die Mitgliedschaft insgesamt übergeordneten erweitert, die untergeordneten Verteilerliste nicht erweitert werden und wird als nur ein Eintrag für die Anzahl der [NumberOfMembersWithNoData](numberofmemberswithnodata.md) zählen. Wenn eine Verteilerliste untergeordneten erweitert werden kann und die gesamte übergeordnete Mitgliedschaft wird nicht mehr als 100 Mitgliedern erweitert, deren Mitgliedschaft wird erweitert, und die untergeordneten Elemente des Elements **GroupAttendeeConflictData** die Elementanzahl hinzugefügt werden. 
+Das **GroupAttendeeConflictData** -Element ist in der Antwort vorhanden, wenn ein Teilnehmer im [GetUserAvailabilityRequest](getuseravailabilityrequest.md) in eine Verteilerliste aufgelöst wird. Das **GroupAttendeeConflictData** -Element identifiziert drei Zustände für Mitglieder einer Verteilerliste: verfügbar, widersprüchlich oder keine Daten. Die Erweiterung für Verteilerlisten unterstützt bis zu 100 Mitglieder. Das [NumberOfMembers](numberofmembers.md) -Element kann daher maximal 100 Mitglieder enthalten. Die Erweiterung der Verteilerliste ist rekursiv. Wenn eine Verteilerliste eine untergeordnete Verteilerliste enthält, die die gesamte übergeordnete Mitgliedschaft auf über 100 Mitglieder erweitert, wird die untergeordnete Verteilerliste nicht erweitert und wird als ein einzelner Eintrag der [NumberOfMembersWithNoData](numberofmemberswithnodata.md) -Elementanzahl gezählt. Wenn eine untergeordnete Verteilerliste erweitert werden kann und die gesamte übergeordnete Mitgliedschaft nicht auf mehr als 100 Mitglieder erweitert wird, wird die Mitgliedschaft erweitert, und die Mitgliederanzahl wird den untergeordneten Elementen des **GroupAttendeeConflictData** -Elements hinzugefügt. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -85,5 +85,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
-- [Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

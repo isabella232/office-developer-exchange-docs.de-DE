@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7763d11a-b338-4a02-8a01-938859c05dfb
-description: Das AutoDiscoverSMTPAddress-Element enthält die SMTP-Adresse des Benutzers, die für die AutoErmittlung-Prozesses verwendet wird.
-ms.openlocfilehash: 6f44fc30fcf96bc059aa9412f5c3c5b8f596d2fc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AutoDiscoverSMTPAddress-Element enthält die SMTP-Adresse des Benutzers, die für den Auto Ermittlungsprozess verwendet wird.
+ms.openlocfilehash: cd40fac8b7ab4eaa9ea50e82d6fc8bdbd4c3c7b1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757419"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463951"
 ---
 # <a name="autodiscoversmtpaddress-pox"></a>AutoDiscoverSMTPAddress (POX)
 
-Das **AutoDiscoverSMTPAddress** -Element enthält die SMTP-Adresse des Benutzers, die für die AutoErmittlung-Prozesses verwendet wird. 
+Das **AutoDiscoverSMTPAddress** -Element enthält die SMTP-Adresse des Benutzers, die für den Auto Ermittlungsprozess verwendet wird. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -46,15 +46,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Benutzer (POX)](user-pox.md) <br/> |Benutzerspezifische Informationen enthält.  <br/> |
+|[Benutzer (POX)](user-pox.md) <br/> |Enthält benutzerspezifische Informationen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt SMTP-Adresse des Benutzers, die für die AutoErmittlung-Prozesses verwendet wird.
+Der Wert Text stellt die SMTP-Adresse des Benutzers dar, die für den Auto Ermittlungsprozess verwendet wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **AutoDiscoverSMTPAddress** -Element ist ein optionales untergeordnetes Element des **Benutzer** -Elements. 
+Das **AutoDiscoverSMTPAddress** -Element ist ein optionales untergeordnetes Element des **User** -Elements. 
   
 ## <a name="see-also"></a>Siehe auch
 

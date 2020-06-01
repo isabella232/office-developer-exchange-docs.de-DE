@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5e7712c8-372a-4a16-be64-360c5ff3961a
-description: Das IsInline-Element darstellt, ob die Anlage Inline innerhalb eines Elements angezeigt wird.
-ms.openlocfilehash: f2f9093777a3914de067ef63827de6cf354fc12d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IsInline-Element stellt dar, ob die Anlage Inline in einem Element angezeigt wird.
+ms.openlocfilehash: 2b3b6392fe8867ae9782dcb7211c17f4f4d9becd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830042"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464210"
 ---
 # <a name="isinline"></a>IsInline
 
-Das **IsInline** -Element darstellt, ob die Anlage Inline innerhalb eines Elements angezeigt wird. 
+Das **IsInline** -Element stellt dar, ob die Anlage Inline in einem Element angezeigt wird. 
   
 ```xml
 <IsInline>true or false</IsInline>
@@ -44,22 +44,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei, die ein Element in der Exchange-Informationsspeicher zugeordnet ist.  <br/> |
-|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange-Element, das mit einem anderen Exchange-Element zugeordnet ist.  <br/> |
+|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die an ein Element im Exchange-Informationsspeicher angefügt ist.  <br/> |
+|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange-Element dar, das an ein anderes Exchange-Element angefügt ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Dieses Element kann **true** oder **false**sein. Der Standardwert ist **false**.
+Dieses Element kann entweder **true** oder **false**sein. Der Standardwert ist **false**.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

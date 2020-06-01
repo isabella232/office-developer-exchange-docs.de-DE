@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 73d7943d-d361-4f8b-9948-d85f886efa1a
-description: Der Vorgang ApplyConversationAction legt einen einmaligen oder Nachfassen Aktion bei allen Elementen in einer Unterhaltung. Der Vorgang ApplyConversationAction können Sie kategorisieren, verschieben, kopieren, löschen und Festlegen der Zustand "gelesen" für alle Elemente in einer Unterhaltung. Aktionen können auch in einer Unterhaltung neue Nachrichten festgelegt werden.
-ms.openlocfilehash: 2a485b84ee87aec2ed807e3f4f0901b83432fa0a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der ApplyConversationAction-Vorgang legt eine einmalige oder Nachverfolgungsaktion für alle Elemente in einer Unterhaltung fest. Mit dem ApplyConversationAction-Vorgang können Sie den Status "lesen" für alle Elemente in einer Unterhaltung kategorisieren, verlagern, kopieren, löschen und festlegen. Aktionen können auch für neue Nachrichten in einer Unterhaltung festgelegt werden.
+ms.openlocfilehash: cdab239a5b0b1406d2ce31f4604e4737d037cd7e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757308"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463503"
 ---
 # <a name="applyconversationaction-operation"></a>ApplyConversationAction-Vorgang
 
-Der Vorgang **ApplyConversationAction** legt einen einmaligen oder Nachfassen Aktion bei allen Elementen in einer Unterhaltung. Der Vorgang **ApplyConversationAction** können Sie kategorisieren, verschieben, kopieren, löschen und Festlegen der Zustand "gelesen" für alle Elemente in einer Unterhaltung. Aktionen können auch in einer Unterhaltung neue Nachrichten festgelegt werden. 
+Der **ApplyConversationAction** -Vorgang legt eine einmalige oder Nachverfolgungsaktion für alle Elemente in einer Unterhaltung fest. Mit dem **ApplyConversationAction** -Vorgang können Sie den Status "lesen" für alle Elemente in einer Unterhaltung kategorisieren, verlagern, kopieren, löschen und festlegen. Aktionen können auch für neue Nachrichten in einer Unterhaltung festgelegt werden. 
   
-## <a name="applyconversationaction-request-example"></a>Anforderungsbeispiel ApplyConversationAction
+## <a name="applyconversationaction-request-example"></a>ApplyConversationAction-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird einer Anforderung **ApplyConversationAction** veranschaulicht, wie Elemente in der angegebenen Unterhaltung in einen anderen Ordner verschoben. Elemente, die die Unterhaltung hinzugefügt werden, werden auch in den angegebenen Ordner verschoben werden. 
+Im folgenden Beispiel einer **ApplyConversationAction** -Anforderung wird gezeigt, wie die Elemente in der angegebenen Unterhaltung in einen anderen Ordner verschoben werden. Elemente, die der Unterhaltung hinzugefügt werden, werden ebenfalls in den angegebenen Ordner verschoben. 
   
 ### <a name="code"></a>Code
 
@@ -36,8 +36,8 @@ Im folgenden Beispiel wird einer Anforderung **ApplyConversationAction** veransc
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010_SP1" />
   </soap:Header>
@@ -57,15 +57,15 @@ Im folgenden Beispiel wird einer Anforderung **ApplyConversationAction** veransc
 </soap:Envelope>
 ```
 
-### <a name="remarks"></a>Hinweise
+### <a name="remarks"></a>Bemerkungen
 
-Der Bezeichner Unterhaltung und Ordner wurden gekürzt, um die Lesbarkeit zu erhalten.
+Die Konversations-und Ordner Bezeichner wurden verkürzt, um die Lesbarkeit zu erhalten.
   
-## <a name="applyconversationaction-response-example"></a>ApplyConversationAction antwortbeispiel
+## <a name="applyconversationaction-response-example"></a>ApplyConversationAction-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **ApplyConversationAction** . 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **ApplyConversationAction** -Anforderung. 
   
 ### <a name="code"></a>Code
 
@@ -78,15 +78,15 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **App
                          MajorBuildNumber="91" 
                          MinorBuildNumber="0" 
                          Version="Exchange2010_SP1" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:ApplyConversationActionResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:ApplyConversationActionResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:ApplyConversationActionResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -102,5 +102,5 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **App
 - [ApplyConversationAction-Vorgang](applyconversationaction-operation.md)
 - [EWS-Operationen in Exchange](ews-operations-in-exchange.md)
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
-- [Conversations in EWS](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+- [Conversations in EWS](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 538b7a85-11d7-4daa-8458-09b540760e8b
 description: Das Element HasAttachments stellt eine Eigenschaft, die auf true festgelegt ist, wenn ein Element mindestens eine Anlage sichtbar hat oder wenn eine Unterhaltung mit mindestens ein Element enthält, die eine Anlage enthält. Diese Eigenschaft ist schreibgeschützt.
-ms.openlocfilehash: e76e0ecbb357396540f0d1649cf5062edfb18660
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: cc4e4ec0eac1c749723facc8cd780da41b0d8150
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829801"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462922"
 ---
 # <a name="hasattachments"></a>HasAttachments
 
@@ -62,17 +62,17 @@ Keine.
 
 Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich. Der Wert **true** bedeutet, dass das Element oder eine Unterhaltung mindestens eine Anlage sichtbar hat. Ein Wert **false** bedeutet, dass das Element oder die Unterhaltung keine Anlagen enthält auf, oder nur Anlagen ausgeblendet wurde. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **HasAttachments** -Eigenschaft wird von der MAPI-Eigenschaft vom Typ Boolean **AllAttachmentsHidden** berechnet. Wenn ein Element eine Anlage nicht verfügt, wird die **AllAttachmentsHidden** -Eigenschaft ist nicht vorhanden. Wenn alle Anlagen für das Element ausgeblendet sind, ist die **AllAttachmentsHidden** -Eigenschaft **true**. Die **AllAttachmentsHidden** -Eigenschaft ist **false**, wenn sie mindestens eine Anlage hat und mindestens einer der Anlagen sichtbar ist. Verwenden Sie die **AllAttachmentsHidden** MAPI-Eigenschaft für suchen, gruppieren und Sortieren von Elementen. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

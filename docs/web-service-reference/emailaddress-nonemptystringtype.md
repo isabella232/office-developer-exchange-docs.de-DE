@@ -10,17 +10,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c0c708d1-b016-4902-a294-9af44aea2050
-description: Das EmailAddress-Element definiert die primäre SMTP-Adresse eines Postfachbenutzers an.
-ms.openlocfilehash: fcf2839c1e2e40a22d6b6a856608f52f2c9c2a1a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Address-Element definiert die primäre SMTP-Adresse eines Postfachbenutzers.
+ms.openlocfilehash: fcc3e650d5fc32344022ed6f015d4096a4461f63
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758165"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463132"
 ---
 # <a name="emailaddress-nonemptystringtype"></a>EmailAddress (NonEmptyStringType)
 
-Das **EmailAddress** -Element definiert die primäre SMTP-Adresse eines Postfachbenutzers an. 
+Das Address **-Element definiert die primäre** SMTP-Adresse eines Postfachbenutzers. 
   
 ```XML
 <EmailAddress/>
@@ -43,25 +43,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ActingAs](actingas.md) <br/> |Identifiziert, die der Anrufer als sendet.  <br/> |
-|[Postfach](mailbox.md) <br/> | Identifiziert eine vollständig aufgelöster E-mail-Adresse.  <br/><br/>Im folgenden sind einige XPath-Ausdrücke auf dieses Element:<br/><br/>`/CreateItem/ParentFolderId/DistinguishedFolderId/Mailbox`<br/><br/>`/CreateFolder/ParentFolderId/DistinguishedFolderId/Mailbox`<br/><br/>`CreateItem/Items/AcceptItem/ToRecipients/Mailbox`<br/><br/>`SyncFolderItemsResponseMessage/Changes/Create/CalendarItem/ConflictingMeetings/AcceptItem/CcRecipients/Mailbox`<br/><br/>Im folgenden sind zusätzliche übergeordnete Elemente des Postfach-Elements:<br/><br/>- [BccRecipients](bccrecipients.md) <br/>- [ReplyTo](replyto.md) <br/>- [Absender](sender.md) <br/>- [Von](from.md) <br/>- [Organizer](organizer.md) <br/>- [DistinguishedFolderId](distinguishedfolderid.md) <br/>- [Lösung](resolution.md) <br/>- [DLExpansion](dlexpansion.md) <br/>- [Teilnehmer](attendee.md) <br/> |
-|[RoomList](roomlist.md) <br/> |Eine Liste der Besprechungsräumen von e-Mail-Adresse identifiziert.  <br/> |
+|[Actingies](actingas.md) <br/> |Gibt an, wen der Anrufer sendet.  <br/> |
+|[Postfach](mailbox.md) <br/> | Identifiziert eine vollständig aufgelöste e-Mail-Adresse.  <br/><br/>Im folgenden finden Sie einige XPath-Ausdrücke für dieses Element:<br/><br/>`/CreateItem/ParentFolderId/DistinguishedFolderId/Mailbox`<br/><br/>`/CreateFolder/ParentFolderId/DistinguishedFolderId/Mailbox`<br/><br/>`CreateItem/Items/AcceptItem/ToRecipients/Mailbox`<br/><br/>`SyncFolderItemsResponseMessage/Changes/Create/CalendarItem/ConflictingMeetings/AcceptItem/CcRecipients/Mailbox`<br/><br/>Im folgenden sind zusätzliche übergeordnete Elemente des Mailbox-Elements angegeben:<br/><br/>- [BccRecipients](bccrecipients.md) <br/>- [ReplyTo](replyto.md) <br/>- [Absender](sender.md) <br/>- [Von](from.md) <br/>- [Organisator](organizer.md) <br/>- [DistinguishedFolderId](distinguishedfolderid.md) <br/>- [Lösung](resolution.md) <br/>- [DLExpansion](dlexpansion.md) <br/>- [Teilnehmer](attendee.md) <br/> |
+|[RoomList](roomlist.md) <br/> |Identifiziert eine Liste von Besprechungsräumen per e-Mail-Adresse.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert, der eine SMTP-Adresse darstellt, ist erforderlich.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **EmailAddress** -Element kann SMTP darstellen oder legacy-Exchange-distinguished Name (DN)-Adressen. Das **EmailAddress** -Element ist das einzige erforderliche [Postfach](mailbox.md) -Element. 
+Das **Address** -Element kann SMTP-oder Legacy-Exchange Distinguished Name (auch als DN bekannt)-Adressen darstellen. Das Element " **Email** " ist das einzige erforderliche [Post Fach](mailbox.md) Element. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

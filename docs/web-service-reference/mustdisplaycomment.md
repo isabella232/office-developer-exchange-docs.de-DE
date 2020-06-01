@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 11d4d3c3-4652-4ed4-9b29-a0b5f85b82b7
-description: Das MustDisplayComment-Element gibt an, ob der Kommentar verwaltete Ordner angezeigt werden muss.
-ms.openlocfilehash: 9a7e6a88b77ff9f1fd82507b8320898c195cd190
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MustDisplayComment-Element gibt an, ob der Kommentar des verwalteten Ordners angezeigt werden muss.
+ms.openlocfilehash: e86b0c6e2c1d7c3cc00561c17c82b3be82d81242
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830502"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463209"
 ---
 # <a name="mustdisplaycomment"></a>MustDisplayComment
 
-Das **MustDisplayComment** -Element gibt an, ob der Kommentar verwaltete Ordner angezeigt werden muss. 
+Das **MustDisplayComment** -Element gibt an, ob der Kommentar des verwalteten Ordners angezeigt werden muss. 
   
 ```xml
 <MustDisplayComment/>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -48,17 +48,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt einen Boolean-Wert. Der Wert **true** gibt an, dass der Kommentar angezeigt werden muss; der Wert **false** gibt an, dass der Kommentar nicht vorhanden ist, angezeigt werden soll. 
+Der Wert Text stellt einen booleschen Wert dar. Der Wert **true** gibt an, dass der Kommentar angezeigt werden muss; der Wert **false** gibt an, dass der Kommentar nicht angezeigt werden muss. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

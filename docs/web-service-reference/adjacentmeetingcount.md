@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 35045024-f6e1-47d1-89be-f100b7b4f3c7
-description: Das Element AdjacentMeetingCount stellt die Gesamtzahl der Kalenderelemente, die an eine Besprechungszeit angrenzen.
-ms.openlocfilehash: a00468bec392498745fe778b627259a79d6027bf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AdjacentMeetingCount-Element stellt die Gesamtzahl von Kalenderelementen dar, die an eine Besprechungszeit angrenzen.
+ms.openlocfilehash: 145010b345c3f9792a37c0662b87649b7f20a618
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757242"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463594"
 ---
 # <a name="adjacentmeetingcount"></a>AdjacentMeetingCount
 
-Das Element **AdjacentMeetingCount** stellt die Gesamtzahl der Kalenderelemente, die an eine Besprechungszeit angrenzen. 
+Das **AdjacentMeetingCount** -Element stellt die Gesamtzahl von Kalenderelementen dar, die an eine Besprechungszeit angrenzen. 
   
 ```xml
 <AdjacentMeetingCount/>
@@ -51,15 +51,15 @@ Keine.
 
 Ein Textwert, der eine ganze Zahl darstellt, ist erforderlich.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 736fb305-9528-4be8-ad37-65d7556edbf2
-description: Das DeletedOccurrences-Element enthält ein Array von gelöschten Vorkommen eines sich wiederholenden Kalenderelements an.
-ms.openlocfilehash: 269c1176913cd642f93987462286dd1fee3a7339
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DeletedOccurrences-Element enthält ein Array von gelöschten Vorkommen eines wiederkehrenden Kalenderelements.
+ms.openlocfilehash: be39ff95b5529481a36b7549e638818a20e01283
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757914"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463706"
 ---
 # <a name="deletedoccurrences"></a>DeletedOccurrences
 
-Das **DeletedOccurrences** -Element enthält ein Array von gelöschten Vorkommen eines sich wiederholenden Kalenderelements an. 
+Das **DeletedOccurrences** -Element enthält ein Array von gelöschten Vorkommen eines wiederkehrenden Kalenderelements. 
   
 ```xml
 <DeletedOccurrences>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DeletedOccurrence](deletedoccurrence.md) <br/> |Stellt eine gelöschte Vorkommen eines sich wiederholenden Kalenderelements an.  <br/> |
+|[DeletedOccurrence](deletedoccurrence.md) <br/> |Stellt ein gelöschtes Vorkommen eines wiederkehrenden Kalenderelements dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -51,17 +51,17 @@ Keine.
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element ist gültig, wenn der Wert der RecurringMaster-Text für das [CalendarItemType](calendaritemtype.md) -Element verwendet wird. 
+Dieses Element ist gültig, wenn der RecurringMaster-Textwert für das [CalendarItemType](calendaritemtype.md) -Element verwendet wird. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
