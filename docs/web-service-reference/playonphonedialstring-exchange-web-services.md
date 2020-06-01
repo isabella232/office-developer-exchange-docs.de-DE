@@ -1,5 +1,5 @@
 ---
-title: PlayOnPhoneDialString (Exchange Web Services)
+title: PlayOnPhoneDialString (Exchange Webdienste)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 02b77f6a-042d-49a9-9445-342885c43e99
-description: Das PlayOnPhoneDialString-Element gibt die Wiedergabe über Telefon DFÜ-Zeichenfolge.
-ms.openlocfilehash: 0bc61d6dc32cd0db80599348f1d04c62774954d7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PlayOnPhoneDialString-Element identifiziert die Wählzeichenfolge für die Wiedergabe bei anrufen.
+ms.openlocfilehash: 310934895295af179e651b94c33dfb86d0f94e1d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830827"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466220"
 ---
-# <a name="playonphonedialstring-exchange-web-services"></a>PlayOnPhoneDialString (Exchange Web Services)
+# <a name="playonphonedialstring-exchange-web-services"></a>PlayOnPhoneDialString (Exchange Webdienste)
 
-Das **PlayOnPhoneDialString** -Element gibt die Wiedergabe über Telefon DFÜ-Zeichenfolge. 
+Das **PlayOnPhoneDialString** -Element identifiziert die Wählzeichenfolge für die Wiedergabe bei anrufen. 
   
 ```XML
 <PlayOnPhoneDialString/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,23 +44,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
+|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Enthält Dienstkonfigurationsinformationen für den Unified Messaging-Dienst.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert für dieses Element ist die Wiedergabe über Telefon DFÜ-Zeichenfolge.
+Der Textwert für dieses Element ist die Wählzeichenfolge für die Wiedergabe bei anrufen.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element ist erforderlich.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

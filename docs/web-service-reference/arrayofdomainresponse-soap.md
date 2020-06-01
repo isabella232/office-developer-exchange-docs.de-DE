@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 6dbd9221-e019-4981-bcdb-ea370331f407
-description: Das ArrayOfDomainResponse-Element enthält ein Array von Antworten für jede angeforderte Domäne Einstellungen.
-ms.openlocfilehash: 7dec7f4e3df2fd0d7d1fcd4f08bc74a2b432af1b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ArrayOfDomainResponse-Element enthält ein Array von Antworten für die Einstellungen jeder angeforderten Domäne.
+ms.openlocfilehash: 382a62ed14e7015c2a25f06b6f9cfc1be4f9e66b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757381"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44466017"
 ---
 # <a name="arrayofdomainresponse-soap"></a>ArrayOfDomainResponse (SOAP)
 
-Das **ArrayOfDomainResponse** -Element enthält ein Array von Antworten für jede angeforderte Domäne Einstellungen. 
+Das **ArrayOfDomainResponse** -Element enthält ein Array von Antworten für die Einstellungen jeder angeforderten Domäne. 
   
 ```XML
 <ArrayOfDomainResponse>
@@ -49,13 +49,13 @@ Keine.
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

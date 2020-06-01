@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: da03b877-37c6-4ecb-8549-c639f140302e
-description: Das MailboxHoldResult-Element enthält das Ergebnis der Anforderung GetHoldOnMailboxes.
-ms.openlocfilehash: 333a2d2d4a30a63a78660d167cefe75653f8ea82
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MailboxHoldResult-Element enthält das Ergebnis der GetHoldOnMailboxes-Anforderung.
+ms.openlocfilehash: 3895c1351587db45881c661809a19dad1929b4a9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830289"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466395"
 ---
 # <a name="mailboxholdresult"></a>MailboxHoldResult
 
-Das **MailboxHoldResult** -Element enthält das Ergebnis der Anforderung **GetHoldOnMailboxes** . 
+Das **MailboxHoldResult** -Element enthält das Ergebnis der **GetHoldOnMailboxes** -Anforderung. 
   
 ```XML
 <MailboxHoldResult>
@@ -39,25 +39,25 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[HoldId](holdid.md) | [Abfrage](query.md) | [MailboxHoldStatuses](mailboxholdstatuses.md)
+[Haltestatus](holdid.md)  |  [Abfrage](query.md)  |  [MailboxHoldStatuses](mailboxholdstatuses.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

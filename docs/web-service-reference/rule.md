@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c30f3851-bd56-4473-9106-dc85e9619486
-description: Rule-Element enthält eine einzelne Schutzregel.
-ms.openlocfilehash: 9abbb70381c214211172d2d5ba1ed43ee4797f17
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Rule-Element enthält eine einzelne Schutz Regel.
+ms.openlocfilehash: 6c18a2bd026893cd333bc7007203abf04a6f0be7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831263"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44465001"
 ---
 # <a name="rule"></a>Regel
 
-**Rule** -Element enthält eine einzelne Schutzregel. 
+Das **rule** -Element enthält eine einzelne Schutz Regel. 
   
 ```XML
 <Rule Name="" UserOverridable=="" Priority="">
@@ -39,36 +39,36 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Name** <br/> |Gibt den Namen der Regel. Ein erforderliches Attribut vom Typ String mit einer Mindestlänge 1.  <br/> |
-|**UserOverridable** <br/> |Gibt an, ob die Regel zwingend erforderlich ist. Wenn die Regel zwingend erforderlich ist, muss der Wert dieses Attributs **false**sein. Ein erforderliches Attribut vom Typ Boolean.  <br/> |
-|**Priority** <br/> |Gibt die Priorität der Regel an. Ein erforderliches Attribut vom Typ Int mit minimalen Wert 1.  <br/> |
+|**Name** <br/> |Gibt den Namen der Regel an. Ein erforderliches Attribut vom Typ String mit einer minimalen Länge von 1.  <br/> |
+|**UserOverridable** <br/> |Gibt an, ob die Regel obligatorisch ist. Wenn die Regel obligatorisch ist, muss dieser Attributwert auf **false festgelegt**sein. Ein erforderliches Attribut vom Typ Boolean.  <br/> |
+|**Priority** <br/> |Gibt die Regelpriorität an. Ein erforderliches Attribut vom Typ int mit einem Minimalwert von 1.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Bedingung](condition.md) <br/> |Gibt die Bedingung, die erfüllt sein muss, für die Aktionsteil der Regel ausgeführt werden.  <br/> |
-|[Aktion (ProtectionRuleActionType)](action-protectionruleactiontype.md) <br/> |Gibt an, welche Aktion ausgeführt werden muss, wenn der Bedingungsteil der Regel übereinstimmt.  <br/> |
+|[Bedingung](condition.md) <br/> |Gibt die Bedingung an, die erfüllt sein muss, damit der Aktions Teil der Regel ausgeführt wird.  <br/> |
+|[Action (ProtectionRuleActionType)](action-protectionruleactiontype.md) <br/> |Gibt an, welche Aktion ausgeführt werden muss, wenn der Bedingungsteil der Regel übereinstimmt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Regeln](rules-ex15websvcsotherref.md) <br/> |Enthält ein Array von Regeln für den Schutz.  <br/> |
+|[Regeln](rules-ex15websvcsotherref.md) <br/> |Enthält ein Array von Schutzregeln.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

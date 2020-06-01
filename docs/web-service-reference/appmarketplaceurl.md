@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c228877b-5a0e-49b7-b82e-043bc786c80f
-description: Das AppMarketplaceUrl-Element gibt die URL für den app-Marketplace.
-ms.openlocfilehash: f8e6c4bc3c4fc5713ccc2e0d16f13f039722c441
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AppMarketplaceUrl-Element gibt die URL für den App-Marketplace an.
+ms.openlocfilehash: 7e924edcf49d1716f4d9dc251c1294f595d27525
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757357"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44466038"
 ---
 # <a name="appmarketplaceurl"></a>AppMarketplaceUrl
 
-Das **AppMarketplaceUrl** -Element gibt die URL für den app-Marketplace. 
+Das **AppMarketplaceUrl** -Element gibt die URL für den App-Marketplace an. 
   
 ```XML
 <AppMarketplaceUrl></AppMarketplaceUrl>
 ```
 
- **xs: String**
+ **xs: Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -40,25 +40,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetAppMarketplaceUrlResponse](getappmarketplaceurlresponse.md) <br/> |Gibt die Antwort-Meldung für eine **GetAppMarketplaceUrl** -Anforderung.  <br/> |
+|[GetAppMarketplaceUrlResponse](getappmarketplaceurlresponse.md) <br/> |Gibt die Antwortnachricht für eine **GetAppMarketplaceUrl** -Anforderung an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **AppMarketplaceUrl** -Elements ist die URL für den app-Marketplace. 
+Der Textwert des **AppMarketplaceUrl** -Elements ist die URL für den App-Marketplace. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

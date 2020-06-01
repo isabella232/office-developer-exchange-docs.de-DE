@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: fdfe6059-a861-4fa2-a20e-ee6ab820bee9
-description: Das Element WebClientUrls stellt eine benutzereinstellung für, die eine Sammlung von WebClientUrl (SOAP)-Elementen enthält.
-ms.openlocfilehash: 8d5d6aec67ab183743d7aae9f5d1f303d2949cd0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das WebClientUrls-Element stellt eine Benutzereinstellung dar, die eine Auflistung von WebClientUrl-Elementen (SOAP) enthält.
+ms.openlocfilehash: 80c8ab36e30146c78f4bdb4f40eb9f87a335199c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839521"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464924"
 ---
 # <a name="webclienturls-soap"></a>WebClientUrls (SOAP)
 
-Das Element **WebClientUrls** stellt eine benutzereinstellung für, die eine Sammlung von [WebClientUrl (SOAP)](webclienturl-soap.md) -Elementen enthält. 
+Das **WebClientUrls** -Element stellt eine Benutzereinstellung dar, die eine Auflistung von [WebClientUrl-Elementen (SOAP)](webclienturl-soap.md) enthält. 
   
 [UserSetting (SOAP)](usersetting-soap.md)
   
@@ -46,21 +46,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[WebClientUrl (SOAP)](webclienturl-soap.md) <br/> |Stellt eine Exchange-Client-URL.  <br/> |
+|[WebClientUrl (SOAP)](webclienturl-soap.md) <br/> |Stellt eine Exchange-Client-URL dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserSetting (SOAP)](usersetting-soap.md) <br/> |Stellt eine Antwort auf eine Anforderung GetUserSettings.  <br/> |
+|[UserSetting (SOAP)](usersetting-soap.md) <br/> |Stellt eine Antwort auf eine GetUserSettings-Anforderung dar.  <br/> |
    
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

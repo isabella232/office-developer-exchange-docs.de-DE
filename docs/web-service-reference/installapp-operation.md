@@ -7,47 +7,47 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 596eae95-3e78-489a-8bb2-d2dd4a026405
-description: Hier finden Sie Informationen über die InstallApp EWS Vorgang.
-ms.openlocfilehash: ccc5d2dde949070bae905ff1ebb182c892f07fcb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier finden Sie Informationen zum InstallApp-EWS-Vorgang.
+ms.openlocfilehash: ae6aab7f7176aa827bafa9abf1aa67d458d309d2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829951"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465688"
 ---
 # <a name="installapp-operation"></a>InstallApp-Vorgang
 
-Hier finden Sie Informationen zum **InstallApp** EWS-Vorgang. 
+Hier finden Sie Informationen zum **InstallApp** -EWS-Vorgang. 
   
-Der Vorgang **InstallApp** Installation eine Mail-app für Outlook in einem Postfach. 
+Mit dem **InstallApp** -Vorgang wird eine Mail-App für Outlook in einem Postfach installiert. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-installapp-operation"></a>Verwenden des InstallApp-Vorgangs
 
-Der Vorgang **InstallApp** erhält ein einzelnes Argument, das zum Installieren eine Mail-app identifiziert. Das Argument enthält das base64-codierten Manifest für eine Mail-app. 
+Der **InstallApp** -Vorgang verwendet ein einzelnes Argument, das eine zu installierende Mail-App identifiziert. Das Argument enthält das Base64-codierte Manifest für eine Mail-app. 
   
-### <a name="installapp-operation-soap-headers"></a>InstallApp Vorgang SOAP-Header
+### <a name="installapp-operation-soap-headers"></a>SOAP-Header des InstallApp-Vorgangs
 
-Der Vorgang **InstallApp** können die SOAP-Header, die in der folgenden Tabelle aufgelistet sind. 
+Der **InstallApp** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
    
-## <a name="installapp-operation-request-example-install-a-mail-app-in-a-mailbox"></a>InstallApp Vorgang-anforderungsbeispiel: installieren eine Mail-app in einem Postfach
+## <a name="installapp-operation-request-example-install-a-mail-app-in-a-mailbox"></a>InstallApp-Vorgangs Anforderungs Beispiel: Installieren einer Mail-app in einem Postfach
 
-Im folgenden Beispiel wird ein **InstallApp** Vorgang Anforderung veranschaulicht, wie eine Mail-app für Outlook zu installieren. App-Manifest kann mit der [GetAppManifests Vorgang](getappmanifests-operation.md)gefunden werden.
+Im folgenden Beispiel einer **InstallApp** -Vorgangsanforderung wird gezeigt, wie eine Mail-App für Outlook installiert wird. Das App-Manifest kann mithilfe des GetAppManifests- [Vorgangs](getappmanifests-operation.md)gefunden werden.
   
 > [!NOTE]
-> Base64-codierten app-Manifest wurde willkürlich um Erhaltung der Lesbarkeit abgeschnitten und ein gültiges Manifest nicht darstellt. 
+> Das Base64-codierte App-Manifest wurde willkürlich abgeschnitten, um die Lesbarkeit zu erhalten, und stellt kein gültiges Manifest dar. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -60,15 +60,15 @@ Im folgenden Beispiel wird ein **InstallApp** Vorgang Anforderung veranschaulich
 
 ```
 
-Die Anforderung SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
   
 - [InstallApp](installapp.md)
     
 - [Manifest](manifest.md)
     
-## <a name="successful-installapp-operation-response"></a>Erfolgreiche InstallApp Vorgangsantwort
+## <a name="successful-installapp-operation-response"></a>Erfolgreiche Reaktion des InstallApp-Vorgangs
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **InstallApp** Vorgang, um eine Mail-app zu installieren. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **InstallApp** -Vorgangsanforderung zum Installieren einer Mail-app. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -79,30 +79,30 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **Ins
                            MajorBuildNumber="556" 
                            MinorBuildNumber="14" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <InstallAppResponse ResponseClass="Success" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
       </InstallAppResponse>
    </s:Body>
 </s:Envelope>
 ```
 
-Die Antwort SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Antworttext Körper enthält die folgenden Elemente:
   
 - [InstallAppResponse](installappresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-## <a name="installapp-operation-error-response"></a>InstallApp Vorgang Fehlerantwort
+## <a name="installapp-operation-error-response"></a>Fehlerantwort des InstallApp-Vorgangs
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine **InstallApp** Vorgang Anforderung. Dies ist eine Antwort auf eine Anforderung, die eine ungültige Manifestdatei enthält. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **InstallApp** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung, die ein ungültiges Manifest enthält. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -113,15 +113,15 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **InstallApp** Vorgang An
                            MajorBuildNumber="556" 
                            MinorBuildNumber="14" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <InstallAppResponse ResponseClass="Error" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <MessageText>This app can't be installed. Missing OfficeApp element.</MessageText>
          <ResponseCode>ErrorInternalServerError</ResponseCode>
          <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -131,7 +131,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **InstallApp** Vorgang An
 
 ```
 
-Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
+Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
   
 - [InstallAppResponse](installappresponse.md)
     

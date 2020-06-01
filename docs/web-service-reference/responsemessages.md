@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2071bed8-ea66-4627-aa4f-a1d9a025cf3d
-description: Das ResponseMessages-Element enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.
-ms.openlocfilehash: dc56476447cceac4eca56c171b148ac1ed177cb3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ResponseMessages-Element enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.
+ms.openlocfilehash: 93d83fbba3ea4bfe33f574eea7991157a4f10b88
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831203"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465401"
 ---
 # <a name="responsemessages"></a>ResponseMessages
 
-Das **ResponseMessages** -Element enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung. 
+Das **ResponseMessages** -Element enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung. 
   
 ```XML
 <ResponseMessages>
@@ -315,109 +315,109 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[CopyFolderResponseMessage](copyfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen CopyFolder-Anforderung.  <br/> |
-|[CopyItemResponseMessage](copyitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer "CopyItem" Anforderung.  <br/> |
-|[CreateAttachmentResponseMessage](createattachmentresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer CreateAttachment Anforderung.  <br/> |
+|[CopyItemResponseMessage](copyitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen CopyItem-Anforderung.  <br/> |
+|[CreateAttachmentResponseMessage](createattachmentresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen CreateAttachment-Anforderung.  <br/> |
 |[CreateFolderResponseMessage](createfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen CreateFolder-Anforderung.  <br/> |
 |[CreateItemResponseMessage](createitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen CreateItem-Anforderung.  <br/> |
-|[CreateManagedFolderResponseMessage](createmanagedfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer CreateManagedFolder Anforderung.  <br/> |
-|[DeleteAttachmentResponseMessage](deleteattachmentresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer DeleteAttachment Anforderung.  <br/> |
+|[CreateManagedFolderResponseMessage](createmanagedfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen CreateManagedFolder-Anforderung.  <br/> |
+|[DeleteAttachmentResponseMessage](deleteattachmentresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen DeleteAttachment--Anforderung.  <br/> |
 |[DeleteFolderResponseMessage](deletefolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen DeleteFolder-Anforderung.  <br/> |
-|[DeleteItemResponseMessage](deleteitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer DeleteItem Anforderung.  <br/> |
+|[DeleteItemResponseMessage](deleteitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen DeleteItem-Anforderung.  <br/> |
 |[EmptyFolderResponseMessage](emptyfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [EmptyFolder](emptyfolder.md) -Anforderung.  <br/> |
-|[ExpandDLResponseMessage](expanddlresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung der ExpandDL.  <br/> |
-|[FindFolderResponseMessage](findfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer FindFolder Anforderung.  <br/> |
-|[FindItemResponseMessage](finditemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer FindItem Anforderung.  <br/> |
-|[GetAttachmentResponseMessage](getattachmentresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer GetAttachment Anforderung.  <br/> |
-|[UploadItemsResponseMessage](uploaditemsresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer UploadItems Anforderung.  <br/> |
-|[ExportItemsResponseMessage](exportitemsresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer ExportItems Anforderung.  <br/> |
-|[GetEventsResponseMessage](geteventsresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer GetEvents Anforderung.  <br/> |
-|[GetStreamingEventsResponseMessage](getstreamingeventsresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer GetStreamingEvents Anforderung.  <br/> |
+|[ExpandDLResponseMessage](expanddlresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen ExpandDL-Anforderung.  <br/> |
+|[FindFolderResponseMessage](findfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen FindFolder-Anforderung.  <br/> |
+|[FindItemResponseMessage](finditemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen FindItem-Anforderung.  <br/> |
+|[GetAttachmentResponseMessage](getattachmentresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen GetAttachment-Anforderung.  <br/> |
+|[UploadItemsResponseMessage](uploaditemsresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer einzelnen UploadItems-Anforderung.  <br/> |
+|[ExportItemsResponseMessage](exportitemsresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer einzelnen Export Items-Anforderung.  <br/> |
+|[GetEventsResponseMessage](geteventsresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen GetEvents-Anforderung.  <br/> |
+|[GetStreamingEventsResponseMessage](getstreamingeventsresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen GetStreamingEvents-Anforderung.  <br/> |
 |[GetFolderResponseMessage](getfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen GetFolder-Anforderung.  <br/> |
 |[GetItemResponseMessage](getitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen GetItem-Anforderung.  <br/> |
 |[MoveFolderResponseMessage](movefolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen MoveFolder-Anforderung.  <br/> |
 |[MoveItemResponseMessage](moveitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen MoveItem-Anforderung.  <br/> |
-|[ResolveNamesResponseMessage](resolvenamesresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung ResolveNames.  <br/> |
-|[SendItemResponseMessage](senditemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung den SendItem.  <br/> |
-|[SendNotificationResponseMessage](sendnotificationresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer SendNotification Anforderung.  <br/> |
-|[SubscribeResponseMessage](subscriberesponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen Subscribe-Anforderung.  <br/> |
-|[SyncFolderHierarchyResponseMessage](syncfolderhierarchyresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung SyncFolderHierarchy.  <br/> |
-|[SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung SyncFolderItems.  <br/> |
-|[UnsubscribeResponseMessage](unsubscriberesponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung zum Abmelden.  <br/> |
-|[UpdateFolderResponseMessage](updatefolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer UpdateFolder Anforderung.  <br/> |
-|[UpdateItemResponseMessage](updateitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer UpdateItem Anforderung.  <br/> |
-|[ConvertIdResponseMessage](convertidresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung ConvertId.  <br/> |
-|[GetSharingMetadataResponseMessage](getsharingmetadataresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer Anforderung GetSharingMetadata.  <br/> |
-|[RefreshSharingFolderResponseMessage](refreshsharingfolderresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer Anforderung RefreshSharingFolder.  <br/> |
-|[GetSharingFolderResponseMessage](getsharingfolderresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer Anforderung GetSharingFolder.  <br/> |
-|[CreateUserConfigurationResponseMessage](createuserconfigurationresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer Anforderung CreateUserConfiguration.  <br/> |
-|[DeleteUserConfigurationResponseMessage](deleteuserconfigurationresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer Anforderung DeleteUserConfiguration.  <br/> |
-|[GetUserConfigurationResponseMessage](getuserconfigurationresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer Anforderung GetUserConfiguration.  <br/> |
-|[UpdateUserConfigurationResponseMessage](updateuserconfigurationresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer Anforderung UpdateUserConfiguration.  <br/> |
-|[GetRoomListsResponse](getroomlistsresponse.md) <br/> |Enthält den Status und die Ergebnisse einer Anforderung GetRoomLists.  <br/> |
-|[GetRoomsResponse](getroomsresponse.md) <br/> |Enthält den Status und die Ergebnisse einer Anforderung GetRooms.  <br/> |
-|[GetRemindersResponse](getremindersresponse.md) <br/> |Enthält den Status und die Ergebnisse einer Anforderung GetReminders.  <br/> |
-|[PerformReminderActionResponse](performreminderactionresponse.md) <br/> |Enthält den Status und die Ergebnisse einer Anforderung PerformReminderAction.  <br/> |
-|[GetServerTimeZonesResponseMessage](getservertimezonesresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer GetServerTimeZones Anforderung.  <br/> |
-|[ApplyConversationActionResponseMessage](applyconversationactionresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer Anforderung [ApplyConversationAction Vorgang](applyconversationaction-operation.md) .  <br/> |
+|[ResolveNamesResponseMessage](resolvenamesresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer ResolveNames-Anforderung.  <br/> |
+|[SendItemResponseMessage](senditemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen SendItem-Anforderung.  <br/> |
+|[Sendnotificationresponsemessage zurück](sendnotificationresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen SendNotification-Anforderung.  <br/> |
+|[SubscribeResponseMessage](subscriberesponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen subscribe-Anforderung.  <br/> |
+|[SyncFolderHierarchyResponseMessage](syncfolderhierarchyresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer SyncFolderHierarchy-Anforderung.  <br/> |
+|[SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer SyncFolderItems-Anforderung.  <br/> |
+|[UnsubscribeResponseMessage](unsubscriberesponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen unsubscribe-Anforderung.  <br/> |
+|[UpdateFolderResponseMessage](updatefolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen UpdateFolder-Anforderung.  <br/> |
+|[UpdateItemResponseMessage](updateitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen UpdateItem-Anforderung.  <br/> |
+|[ConvertIdResponseMessage](convertidresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Convert-Anforderung.  <br/> |
+|[GetSharingMetadataResponseMessage](getsharingmetadataresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer GetSharingMetadata-Anforderung.  <br/> |
+|[RefreshSharingFolderResponseMessage](refreshsharingfolderresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer RefreshSharingFolder-Anforderung.  <br/> |
+|[GetSharingFolderResponseMessage](getsharingfolderresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer GetSharingFolder-Anforderung.  <br/> |
+|[CreateUserConfigurationResponseMessage](createuserconfigurationresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer CreateUserConfiguration-Anforderung.  <br/> |
+|[DeleteUserConfigurationResponseMessage](deleteuserconfigurationresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer DeleteUserConfiguration-Anforderung.  <br/> |
+|[GetUserConfigurationResponseMessage](getuserconfigurationresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer GetUserConfiguration-Anforderung.  <br/> |
+|[UpdateUserConfigurationResponseMessage](updateuserconfigurationresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer UpdateUserConfiguration-Anforderung.  <br/> |
+|[GetRoomListsResponse](getroomlistsresponse.md) <br/> |Enthält den Status und die Ergebnisse einer GetRoomLists-Anforderung.  <br/> |
+|[GetRoomsResponse](getroomsresponse.md) <br/> |Enthält den Status und die Ergebnisse einer getrooms-Anforderung.  <br/> |
+|[GetRemindersResponse](getremindersresponse.md) <br/> |Enthält den Status und die Ergebnisse einer reerinnerungs-Anforderung.  <br/> |
+|[PerformReminderActionResponse](performreminderactionresponse.md) <br/> |Enthält den Status und die Ergebnisse einer PerformReminderAction-Anforderung.  <br/> |
+|[GetServerTimeZonesResponseMessage](getservertimezonesresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen GetServerTimeZones-Anforderung.  <br/> |
+|[ApplyConversationActionResponseMessage](applyconversationactionresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer [ApplyConversationAction-Vorgangs](applyconversationaction-operation.md) Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CopyFolderResponse](copyfolderresponse.md) <br/> |Definiert eine Antwort auf eine CopyFolder an.  <br/> |
-|[CopyItemResponse](copyitemresponse.md) <br/> |Definiert eine Antwort auf eine CopyItem an.  <br/> |
-|[CreateAttachmentResponse](createattachmentresponse.md) <br/> |Definiert eine Antwort auf eine CreateAttachment an.  <br/> |
-|[CreateFolderResponse](createfolderresponse.md) <br/> |Definiert eine Antwort auf eine CreateFolder an.  <br/> |
-|[CreateItemResponse](createitemresponse.md) <br/> |Definiert eine Antwort auf eine CreateItem-Anforderungen.  <br/> |
-|[CreateManagedFolderResponse](createmanagedfolderresponse.md) <br/> |Definiert eine Antwort auf eine CreateManagedFolder an.  <br/> |
-|[DeleteAttachmentResponse](deleteattachmentresponse.md) <br/> |Definiert eine Antwort auf eine DeleteAttachment an.  <br/> |
-|[DeleteFolderResponse](deletefolderresponse.md) <br/> |Definiert eine Antwort auf eine DeleteFolder an.  <br/> |
-|[DeleteItemResponse](deleteitemresponse.md) <br/> |Definiert eine Antwort auf eine DeleteItem an.  <br/> |
-|[EmptyFolderResponse](emptyfolderresponse.md) <br/> |Definiert eine Antwort auf eine Anforderung EmptyFolder.  <br/> |
-|[ExpandDLResponse](expanddlresponse.md) <br/> |Definiert eine Antwort auf eine Anforderung der ExpandDL.  <br/> |
-|[ExportItemsResponse](exportitemsresponse.md) <br/> |Stellt die Antwort auf eine einzelne ExportItems an.  <br/> |
-|[FindFolderResponse](findfolderresponse.md) <br/> |Definiert eine Antwort auf eine FindFolder an.  <br/> |
-|[FindItemResponse](finditemresponse.md) <br/> |Definiert eine Antwort auf eine FindItem an.  <br/> |
-|[GetAttachmentResponse](getattachmentresponse.md) <br/> |Definiert eine Antwort auf eine GetAttachment an.  <br/> |
-|[GetEventsResponse](geteventsresponse.md) <br/> |Definiert eine Antwort auf eine GetEvents an.  <br/> |
-|[GetStreamingEventsResponse](getstreamingeventsresponse.md) <br/> |Definiert eine Antwort auf eine GetStreamingEvents an.  <br/> |
-|[GetFolderResponse](getfolderresponse.md) <br/> |Definiert eine Antwort auf eine GetFolder an.  <br/> |
-|[GetItemResponse](getitemresponse.md) <br/> |Definiert eine Antwort auf eine GetItem an.  <br/> |
-|[MoveFolderResponse](movefolderresponse.md) <br/> |Definiert eine Antwort auf eine MoveFolder an.  <br/> |
-|[MoveItemResponse](moveitemresponse.md) <br/> |Definiert eine Antwort auf eine MoveItem an.  <br/> |
-|[ResolveNamesResponse](resolvenamesresponse.md) <br/> |Definiert eine Antwort auf eine ResolveNames an.  <br/> |
-|[SendItemResponse](senditemresponse.md) <br/> |Definiert eine Antwort auf eine an den SendItem.  <br/> |
-|[SendNotificationResult](sendnotificationresult.md) <br/> |Definiert eine Antwort auf eine SendNotification an.  <br/> |
-|[SubscribeResponse](subscriberesponse.md) <br/> |Definiert eine Antwort auf die Subscribe-Anforderung an.  <br/> |
-|[SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md) <br/> |Definiert eine Antwort auf eine SyncFolderHierarchy an.  <br/> |
-|[SyncFolderItemsResponse](syncfolderitemsresponse.md) <br/> |Definiert eine Antwort auf eine SyncFolderItems an.  <br/> |
-|[UnsubscribeResponse](unsubscriberesponse.md) <br/> |Definiert eine Antwort auf eine Anforderung zum Abmelden.  <br/> |
-|[UpdateFolderResponse](updatefolderresponse.md) <br/> |Definiert eine Antwort auf eine Anforderung UpdateFolder.  <br/> |
-|[UpdateItemResponse](updateitemresponse.md) <br/> |Definiert eine Antwort auf eine Anforderung UpdateItem.  <br/> |
-|[ConvertIdResponse](convertidresponse.md) <br/> |Enthält eine Antwort auf eine ConvertId an.  <br/> |
-|[GetServerTimeZonesResponse](getservertimezonesresponse.md) <br/> |Definiert eine Antwort auf eine GetServerTimeZones an.  <br/> |
-|[CreateUserConfigurationResponse](createuserconfigurationresponse.md) <br/> |Definiert eine Antwort auf eine CreateUserConfiuration an.  <br/> |
-|[DeleteUserConfigurationResponse](deleteuserconfigurationresponse.md) <br/> |Definiert eine Antwort auf eine DeleteUserConfiguration an.  <br/> |
-|[GetUserConfigurationResponse](getuserconfigurationresponse.md) <br/> |Definiert eine Antwort auf eine GetUserConfiguration an.  <br/> |
-|[UpdateUserConfigurationResponse](updateuserconfigurationresponse.md) <br/> |Definiert eine Antwort auf eine Anforderung UpdateUserConfiguration.  <br/> |
-|[ApplyConversationActionResponse](applyconversationactionresponse.md) <br/> |Definiert eine Antwort auf eine Anforderung [ApplyConversationAction Vorgang](applyconversationaction-operation.md) .  <br/> |
-|[GetPasswordExpirationDateResponse](getpasswordexpirationdateresponse.md) <br/> |Definiert eine Antwort auf eine [GetPasswordExpirationDate Vorgang](getpasswordexpirationdate-operation.md) Vorgang an.  <br/> |
+|[CopyFolderResponse](copyfolderresponse.md) <br/> |Definiert eine Antwort auf eine CopyFolder-Anforderung.  <br/> |
+|[CopyItemResponse](copyitemresponse.md) <br/> |Definiert eine Antwort auf eine CopyItem-Anforderung.  <br/> |
+|[CreateAttachmentResponse](createattachmentresponse.md) <br/> |Definiert eine Antwort auf eine CreateAttachment-Anforderung.  <br/> |
+|[CreateFolderResponse](createfolderresponse.md) <br/> |Definiert eine Antwort auf eine CreateFolder-Anforderung.  <br/> |
+|[CreateItemResponse](createitemresponse.md) <br/> |Definiert eine Antwort auf eine CreateItem-Anforderung.  <br/> |
+|[CreateManagedFolderResponse](createmanagedfolderresponse.md) <br/> |Definiert eine Antwort auf eine CreateManagedFolder-Anforderung.  <br/> |
+|[DeleteAttachmentResponse](deleteattachmentresponse.md) <br/> |Definiert eine Antwort auf eine DeleteAttachment--Anforderung.  <br/> |
+|[DeleteFolderResponse](deletefolderresponse.md) <br/> |Definiert eine Antwort auf eine DeleteFolder-Anforderung.  <br/> |
+|[DeleteItemResponse](deleteitemresponse.md) <br/> |Definiert eine Antwort auf eine DeleteItem-Anforderung.  <br/> |
+|[EmptyFolderResponse](emptyfolderresponse.md) <br/> |Definiert eine Antwort auf eine EmptyFolder-Anforderung.  <br/> |
+|[ExpandDLResponse](expanddlresponse.md) <br/> |Definiert eine Antwort auf eine ExpandDL-Anforderung.  <br/> |
+|[ExportItemsResponse](exportitemsresponse.md) <br/> |Stellt die Antwort auf eine einzelne Export Items-Anforderung dar.  <br/> |
+|[FindFolderResponse](findfolderresponse.md) <br/> |Definiert eine Antwort auf eine FindFolder-Anforderung.  <br/> |
+|[FindItemResponse](finditemresponse.md) <br/> |Definiert eine Antwort auf eine FindItem-Anforderung.  <br/> |
+|[GetAttachmentResponse](getattachmentresponse.md) <br/> |Definiert eine Antwort auf eine GetAttachment-Anforderung.  <br/> |
+|[GetEventsResponse](geteventsresponse.md) <br/> |Definiert eine Antwort auf eine GetEvents-Anforderung.  <br/> |
+|[GetStreamingEventsResponse](getstreamingeventsresponse.md) <br/> |Definiert eine Antwort auf eine GetStreamingEvents-Anforderung.  <br/> |
+|[GetFolderResponse](getfolderresponse.md) <br/> |Definiert eine Antwort auf eine GetFolder-Anforderung.  <br/> |
+|[GetItemResponse](getitemresponse.md) <br/> |Definiert eine Antwort auf eine GetItem-Anforderung.  <br/> |
+|[MoveFolderResponse](movefolderresponse.md) <br/> |Definiert eine Antwort auf eine MoveFolder-Anforderung.  <br/> |
+|[MoveItemResponse](moveitemresponse.md) <br/> |Definiert eine Antwort auf eine MoveItem-Anforderung.  <br/> |
+|[ResolveNamesResponse](resolvenamesresponse.md) <br/> |Definiert eine Antwort auf eine ResolveNames-Anforderung.  <br/> |
+|[SendItemResponse](senditemresponse.md) <br/> |Definiert eine Antwort auf eine SendItem-Anforderung.  <br/> |
+|[SendNotificationResult](sendnotificationresult.md) <br/> |Definiert eine Antwort auf eine SendNotification-Anforderung.  <br/> |
+|[SubscribeResponse](subscriberesponse.md) <br/> |Definiert eine Antwort auf eine subscribe-Anforderung.  <br/> |
+|[SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md) <br/> |Definiert eine Antwort auf eine SyncFolderHierarchy-Anforderung.  <br/> |
+|[SyncFolderItemsResponse](syncfolderitemsresponse.md) <br/> |Definiert eine Antwort auf eine SyncFolderItems-Anforderung.  <br/> |
+|[UnsubscribeResponse](unsubscriberesponse.md) <br/> |Definiert eine Antwort auf eine unsubscribe-Anforderung.  <br/> |
+|[UpdateFolderResponse](updatefolderresponse.md) <br/> |Definiert eine Antwort auf eine UpdateFolder-Anforderung.  <br/> |
+|[UpdateItemResponse](updateitemresponse.md) <br/> |Definiert eine Antwort auf eine UpdateItem-Anforderung.  <br/> |
+|[ConvertIdResponse](convertidresponse.md) <br/> |Enthält eine Antwort auf eine Convert-Anforderung.  <br/> |
+|[GetServerTimeZonesResponse](getservertimezonesresponse.md) <br/> |Definiert eine Antwort auf eine GetServerTimeZones-Anforderung.  <br/> |
+|[CreateUserConfigurationResponse](createuserconfigurationresponse.md) <br/> |Definiert eine Antwort auf eine CreateUserConfiuration-Anforderung.  <br/> |
+|[DeleteUserConfigurationResponse](deleteuserconfigurationresponse.md) <br/> |Definiert eine Antwort auf eine DeleteUserConfiguration-Anforderung.  <br/> |
+|[GetUserConfigurationResponse](getuserconfigurationresponse.md) <br/> |Definiert eine Antwort auf eine GetUserConfiguration-Anforderung.  <br/> |
+|[UpdateUserConfigurationResponse](updateuserconfigurationresponse.md) <br/> |Definiert eine Antwort auf eine UpdateUserConfiguration-Anforderung.  <br/> |
+|[ApplyConversationActionResponse](applyconversationactionresponse.md) <br/> |Definiert eine Antwort auf eine [ApplyConversationAction-Vorgangs](applyconversationaction-operation.md) Anforderung.  <br/> |
+|[GetPasswordExpirationDateResponse](getpasswordexpirationdateresponse.md) <br/> |Definiert eine Antwort auf eine [GetPasswordExpirationDate-Vorgangs](getpasswordexpirationdate-operation.md) Anforderung.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

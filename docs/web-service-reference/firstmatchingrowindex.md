@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dc63c2c2-40df-4eac-b8c2-1c72c87f9e6f
-description: Das FirstMatchingRowIndex-Element ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: 921df9d324981b6652f780b5c9bc63280d16d001
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FirstMatchingRowIndex-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 30608327dd02933600ecf0189d7e61bf5cdb020e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758482"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466346"
 ---
 # <a name="firstmatchingrowindex"></a>FirstMatchingRowIndex
 
-Das **FirstMatchingRowIndex** -Element ist nur zur internen Verwendung vorgesehen. 
+Das **FirstMatchingRowIndex** -Element ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

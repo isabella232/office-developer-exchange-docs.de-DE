@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 53f59054-8f68-4eaa-be9c-ccfc9383bcf2
-description: Rules-Element enthält ein Array von Regeln für den Schutz.
-ms.openlocfilehash: 5d511f977f3eb3273dc43f56356a059985b2a929
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das rules-Element enthält ein Array von Schutzregeln.
+ms.openlocfilehash: d848abfe0c97d07836f28bc75806f506c5433d44
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831269"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464938"
 ---
 # <a name="rules"></a>Regeln
 
-**Rules** -Element enthält ein Array von Regeln für den Schutz. 
+Das **Rules** -Element enthält ein Array von Schutzregeln. 
   
 ```xml
 <Rules>   <Rule/></Rules>
@@ -40,23 +40,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Rule](rule.md) <br/> |Enthält eine einzelne Schutzregel. Dieses Element kann NULL oder mehrere Male vorkommen. Dieses Element tritt Male, wenn keine Regeln für den Schutz von der Organisation definiert sind. Es tritt ein oder mehrere Male, wenn mindestens eine Regel, die von der Organisation definiert ist.  <br/> |
+|[Rule](rule.md) <br/> |Enthält eine einzelne Schutz Regel. Dieses Element kann 0 oder mehr Male vorkommen. Dieses Element tritt null mal auf, wenn keine Schutzregeln durch die Organisation definiert sind. Es tritt mindestens einmal auf, wenn mindestens eine Regel von der Organisation definiert wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ProtectionRulesConfiguration](protectionrulesconfiguration.md) <br/> |Konfiguration für den Schutz Regeln Dienst enthält.  <br/> |
+|[ProtectionRulesConfiguration](protectionrulesconfiguration.md) <br/> |Enthält die Dienstkonfiguration für den Schutz Regeldienst.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

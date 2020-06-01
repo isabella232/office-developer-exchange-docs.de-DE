@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9e571021-d58f-424b-8db2-48cf683533dc
-description: Das Element WebClientEditFormQueryString stellt eine URL zu verketten an den Endpunkt Outlook Web App so bearbeiten Sie ein Element in Outlook Web App.
-ms.openlocfilehash: a7503c3896899e8d2da6aced7b8d259f9b8aaceb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das WebClientEditFormQueryString-Element stellt eine URL dar, die mit dem Outlook Web App-Endpunkt verkettet werden soll, um ein Element in Outlook Web App zu bearbeiten.
+ms.openlocfilehash: d6f20d1342746a764f754a6b20633a7bded3f6c1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839517"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464987"
 ---
 # <a name="webclienteditformquerystring"></a>WebClientEditFormQueryString
 
-Das Element **WebClientEditFormQueryString** stellt eine URL zu verketten an den Endpunkt Outlook Web App so bearbeiten Sie ein Element in Outlook Web App. 
+Das **WebClientEditFormQueryString** -Element stellt eine URL dar, die mit dem Outlook Web App-Endpunkt verkettet werden soll, um ein Element in Outlook Web App zu bearbeiten. 
   
 ```XML
 <WebClientEditFormQueryString/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -53,24 +53,24 @@ Keine.
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort im Exchange-Informationsspeicher dar.  <br/> |
 |[Message](message-ex15websvcsotherref.md) <br/> |Stellt eine Exchange-E-Mail-Nachricht dar.  <br/> |
-|[PostItem-Objekt](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Speicher.  <br/> |
+|[PostItem](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Informationsspeicher dar.  <br/> |
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert, der eine Zeichenfolge darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die Informationen aus dem [WebClientReadFormQueryString](webclientreadformquerystring.md) -Element für Versionen von Exchange, beginnend mit Exchange Server 2013, einschließlich Exchange Online ein Entwurf-Element in Outlook Web App zu öffnen, und klicken Sie dann mithilfe der Benutzeroberfläche zum Bearbeiten des Entwurfs-Elements. Das Element **WebClientEditFormQueryString** gilt nicht für Versionen von Exchange, beginnend mit Exchange Server 2013, einschließlich Exchange Online. 
+Verwenden Sie für Exchange-Versionen, die mit Exchange Server 2013 beginnen, einschließlich Exchange Online, die Informationen aus dem [WebClientReadFormQueryString](webclientreadformquerystring.md) -Element, um ein Entwurfselement in Outlook Web App zu öffnen, und verwenden Sie dann die Benutzeroberfläche zum Bearbeiten des Entwurfs Elements. Das **WebClientEditFormQueryString** -Element gilt nicht für Exchange-Versionen, die mit Exchange Server 2013 beginnen, einschließlich Exchange Online. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

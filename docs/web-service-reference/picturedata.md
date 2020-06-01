@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1124eac3-ebf2-4b81-96d3-96838c840433
-description: Das PictureData-Element enthält den Datenstrom Bild.
-ms.openlocfilehash: fb1dcd6ba2ea2b84cd7abd460adc31d3d86e8d87
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PictureData-Element enthält den Stream von Bild Daten.
+ms.openlocfilehash: 1d131e88a4927b0b0d3d873ea73973389b46e615
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830822"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466255"
 ---
 # <a name="picturedata"></a>PictureData
 
-Das **PictureData** -Element enthält den Datenstrom Bild. 
+Das **PictureData** -Element enthält den Stream von Bild Daten. 
   
 ```XML
 <PictureData></PictureData>
@@ -42,21 +42,21 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **PictureData** -Element ist die base64-codierten Datenstrom Bild. 
+Der Textwert des **PictureData** -Elements ist der Base64-codierte Stream von Bild Daten. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

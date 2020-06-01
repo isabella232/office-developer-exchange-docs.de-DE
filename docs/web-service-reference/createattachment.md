@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e33b403a-b7d3-48ee-8d24-6b7abf0d70bc
-description: Das CreateAttachment-Element definiert eine Anforderung an eine Anlage zu einem Element in der Exchange-Speicher zu erstellen.
-ms.openlocfilehash: d403eb5ca15623d3a973f7b224dbcde5529cf1bc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CreateAttachment-Element definiert eine Anforderung zum Erstellen einer Anlage für ein Element in der Exchange-Informationsspeicher.
+ms.openlocfilehash: 4cba1b8865dae5da58b9617b249a29314c67331a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757741"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466437"
 ---
 # <a name="createattachment"></a>CreateAttachment
 
-Das **CreateAttachment** -Element definiert eine Anforderung an eine Anlage zu einem Element in der Exchange-Speicher zu erstellen. 
+Das **CreateAttachment** -Element definiert eine Anforderung zum Erstellen einer Anlage für ein Element in der Exchange-Informationsspeicher. 
   
 ```xml
 <CreateAttachment>
@@ -30,7 +30,7 @@ Das **CreateAttachment** -Element definiert eine Anforderung an eine Anlage zu e
 </CreateAttachment>
 ```
 
- **CreateAttachmentType**
+ **Createattachmenttype**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -43,28 +43,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ParentItemId](parentitemid.md) <br/> |Gibt das übergeordnete Exchange Store-Element, das die erstellte Anlage enthält. Das [ParentItemId](parentitemid.md) -Element muss die ID des einer realen Exchange-Datenspeicherelement bereitstellen. Echte Store Elemente können mithilfe der [GetItem Operation](getitem-operation.md)abgerufen werden. Anlagen werden mithilfe des [Vorgangs GetAttachment](getattachment-operation.md)abgerufen. Ein Fehler tritt auf, wenn die [ParentItemId](parentitemid.md) die ID der Dateianlage zu einer übergeben wird. Wenn die [ParentItemId](parentitemid.md) die ID der Elementanlage vorhandenes darstellt, fügt den [CreateAttachment Vorgang](createattachment-operation.md) die neue Anlage in die vorhandene Anlage.  <br/> Dieses Element ist für den [Vorgang CreateAttachment](createattachment-operation.md)erforderlich.  <br/> |
-|[Anlagen](attachments-ex15websvcsotherref.md) <br/> |Enthält die Elemente oder Dateien eines Elements in der Exchange-Speicher an.  <br/> |
+|[ParentItemId](parentitemid.md) <br/> |Gibt das übergeordnete Exchange-Informationsspeicher Element an, das die erstellte Anlage enthält. Das [ParentItemId](parentitemid.md) -Element muss die ID eines echten Exchange-Informationsspeicher Elements bereitstellen. Reale Speicherelemente können mithilfe des [GetItem-Vorgangs](getitem-operation.md)abgerufen werden; Anlagen werden mithilfe des [GetAttachment-Vorgangs](getattachment-operation.md)abgerufen. Wenn dem [ParentItemId](parentitemid.md) die ID einer Dateianlage übergeben wird, tritt ein Fehler auf. Wenn der [ParentItemId](parentitemid.md) die ID einer vorhandenen Elementanlage darstellt, fügt der CreateAttachment- [Vorgang](createattachment-operation.md) die neue Anlage zu der vorhandenen Anlage hinzu.  <br/> Dieses Element ist für den [CreateAttachment-Vorgang](createattachment-operation.md)erforderlich.  <br/> |
+|[Anlagen](attachments-ex15websvcsotherref.md) <br/> |Enthält die Elemente oder Dateien, die an ein Element im Exchange-Informationsspeicher angefügt werden sollen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Elementanlage ist nicht als Store Element vorhanden. Es ist nur als Anlage zu einem Element oder eine andere Anlage vorhanden. Anlagen können nur mithilfe der [GetAttachment](getattachment.md) -Anforderung abgerufen werden. 
+Eine Elementanlage ist nicht als Speicherelement vorhanden. Sie ist nur als Anlage für ein Element oder eine andere Anlage vorhanden. Element Anlagen können nur mithilfe der [GetAttachment](getattachment.md) -Anforderung abgerufen werden. 
   
-Die folgenden elementanlagen können erstellt werden:
+Die folgenden Element Anlagen können erstellt werden:
   
 - Element
     
-- Nachricht
+- Meldung
     
 - CalendarItem
     
 - Kontakt
     
-- Aufgabe
+- Vorgang
     
 - MeetingMessage
     
@@ -74,17 +74,17 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird gezeigt, wie zu erstellen, und fügen Sie ein Element mit einem anderen Element im Exchange-Speicher.
+Das folgende Beispiel zeigt, wie Sie ein Element erstellen und an ein anderes Element im Exchange-Informationsspeicher anfügen.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateAttachment xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <CreateAttachment xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <ParentItemId Id="ASkAS"/>
       <Attachments>
         <t:ItemAttachment>
@@ -101,13 +101,13 @@ Im folgenden Beispiel wird gezeigt, wie zu erstellen, und fügen Sie ein Element
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

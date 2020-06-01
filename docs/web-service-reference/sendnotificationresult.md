@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: fa9d6202-fa66-4f10-9858-53f4f1ce14bc
-description: Das SendNotificationResult-Element enthält die Antwort von einer Clientanwendung aus auf eine Push-Benachrichtigung an.
-ms.openlocfilehash: 9acaa396430cf4e06a9c996834874d19dcab50ac
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SendNotificationResult-Element enthält die Antwort einer Clientanwendung auf eine Push-Benachrichtigung.
+ms.openlocfilehash: 4ee9a0dda3d887f8fbfa2c2b34a9a077e7af37ba
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831350"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464889"
 ---
 # <a name="sendnotificationresult"></a>SendNotificationResult
 
-Das **SendNotificationResult** -Element enthält die Antwort von einer Clientanwendung aus auf eine Push-Benachrichtigung an. 
+Das **SendNotificationResult** -Element enthält die Antwort einer Clientanwendung auf eine Push-Benachrichtigung. 
   
 ```xml
 <SendNotificationResult>
@@ -48,17 +48,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

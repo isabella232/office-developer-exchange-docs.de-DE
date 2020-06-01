@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8037bbe5-a37f-4f77-8209-27a94f9095ef
-description: Das MailTipsRequested-Element enthält die Arten von e-Mail-Infos aus dem Dienst angefordert.
-ms.openlocfilehash: fa2bef394ea8473aa65bdc2f1d39c0794186fdc6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MailTipsRequested-Element enthält die Typen von e-Mail-Tipps, die vom Dienst angefordert werden.
+ms.openlocfilehash: bcb2ebf15e628a04e8507f938d385cf113f2f2a3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830348"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465898"
 ---
 # <a name="mailtipsrequested"></a>MailTipsRequested
 
-Das **MailTipsRequested** -Element enthält die Arten von e-Mail-Infos aus dem Dienst angefordert. 
+Das **MailTipsRequested** -Element enthält die Typen von e-Mail-Tipps, die vom Dienst angefordert werden. 
   
 ```XML
 <MailTipsRequested/>
@@ -44,36 +44,36 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetMailTips](getmailtips.md) <br/> |Enthält die Empfänger und Typen von e-Mail-Infos abgerufen.  <br/> |
+|[GetMailTips](getmailtips.md) <br/> |Enthält die Empfänger und Typen von e-Mail-Tipps, die abgerufen werden sollen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Die folgende Tabelle enthält die möglichen Werte für das **MailTipsRequested** -Element. 
+In der folgenden Tabelle sind die möglichen Werte für das **MailTipsRequested** -Element aufgeführt. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Alle  <br/> |Stellt alle verfügbaren e-Mail-Infos.  <br/> |
-|OutOfOfficeMessage  <br/> |Stellt die Nachricht Out of Office (OOF) dar.  <br/> |
-|MailboxFullStatus  <br/> |Stellt den Status für ein Postfach, das voll ist.  <br/> |
-|CustomMailTip  <br/> |Stellt eine benutzerdefinierte e-Mail-Info.  <br/> |
-|ExternalMemberCount  <br/> |Die Anzahl der externen Elemente darstellt.  <br/> |
-|TotalMemberCount  <br/> |Stellt die Anzahl aller Elemente.  <br/> |
-|MaxMessageSize  <br/> |Stellt die maximale Größe von Nachrichten, die ein Empfänger akzeptieren kann.  <br/> |
-|DeliveryRestriction  <br/> |Gibt an, ob Einschränkungen Übermittlung des Absenders der Nachricht verhindern Erreichen des Empfängers.  <br/> |
-|ModerationStatus  <br/> |Gibt an, ob der Absender der Nachricht von einem Moderator überprüft werden.  <br/> |
+|Alle  <br/> |Stellt alle verfügbaren e-Mail-Tipps dar.  <br/> |
+|OutOfOfficeMessage  <br/> |Stellt die Abwesenheit (Out of Office, OOF) Meldung dar.  <br/> |
+|MailboxFullStatus  <br/> |Stellt den Status für ein vollständiges Postfach dar.  <br/> |
+|CustomMailTip  <br/> |Stellt einen benutzerdefinierten e-Mail-Tipp dar.  <br/> |
+|ExternalMemberCount  <br/> |Stellt die Anzahl externer Member dar.  <br/> |
+|TotalMemberCount  <br/> |Stellt die Anzahl aller Elemente dar.  <br/> |
+|MaxMessageSize  <br/> |Stellt die maximale Nachrichtengröße dar, die ein Empfänger annehmen kann.  <br/> |
+|DeliveryRestriction  <br/> |Gibt an, ob durch Übermittlungseinschränkungen verhindert wird, dass die Nachricht des Absenders den Empfänger erreicht.  <br/> |
+|ModerationStatus  <br/> |Gibt an, ob die Nachricht des Absenders von einem Moderator überprüft wird.  <br/> |
 |InvalidRecipient  <br/> |Gibt an, ob der Empfänger ungültig ist.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

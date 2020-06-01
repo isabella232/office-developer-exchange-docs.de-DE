@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 569ab552-5616-444a-a7f5-de366a684a34
-description: Das Element RestrictedGroupSids stellt eine Auflistung von eingeschränkte Gruppen von Token des Benutzers an.
-ms.openlocfilehash: fcfee809261c7ed0a4e0d092c091841fec641e46
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RestrictedGroupSids-Element stellt eine Auflistung von eingeschränkten Gruppen aus dem Token eines Benutzers dar.
+ms.openlocfilehash: 739a73d2ac4bdbbee03650d035271b5c8d9ea25a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831201"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465359"
 ---
 # <a name="restrictedgroupsids"></a>RestrictedGroupSids
 
-Das Element **RestrictedGroupSids** stellt eine Auflistung von eingeschränkte Gruppen von Token des Benutzers an. 
+Das **RestrictedGroupSids** -Element stellt eine Auflistung von eingeschränkten Gruppen aus dem Token eines Benutzers dar. 
   
 ```xml
 <RestrictedGroupSids>
@@ -42,23 +42,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RestrictedGroupIdentifier](restrictedgroupidentifier.md) <br/> |Stellt die Gruppe Sicherheits-ID (SID) und Attribute für eine eingeschränkte Gruppe.  <br/> |
+|[RestrictedGroupIdentifier](restrictedgroupidentifier.md) <br/> |Stellt die sid (Group Security Identifier) und die Attribute für eine eingeschränkte Gruppe dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SerializedSecurityContext](serializedsecuritycontext.md) <br/> |In den SOAP-Header verwendet für tokenserialisierung für Server-zu-Server-Authentifizierung. Tokenserialisierung wird nicht unterstützt.  <br/> |
+|[SerializedSecurityContext](serializedsecuritycontext.md) <br/> |Wird im SOAP-Header für die Token-Serialisierung in der Server-zu-Server-Authentifizierung verwendet. Die Serialisierung von Token wird nicht unterstützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

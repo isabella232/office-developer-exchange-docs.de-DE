@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a2192ff3-25c9-424a-ae4a-506ab7b0993d
-description: Das ProposedStart-Element gibt die vorgeschlagenen Startzeit einer Besprechung.
-ms.openlocfilehash: e98ff895b50140262a68f09c5914ef5db20bd08d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ProposedStart-Element gibt die vorgeschlagene Startzeit einer Besprechung an.
+ms.openlocfilehash: 607129fb16c25bf19e98a40e624aa528478a21f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830909"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465548"
 ---
 # <a name="proposedstart"></a>ProposedStart
 
-Das **ProposedStart** -Element gibt die vorgeschlagenen Startzeit einer Besprechung. 
+Das **ProposedStart** -Element gibt die vorgeschlagene Startzeit einer Besprechung an. 
   
 ```XML
 <ProposedStart></ProposedStart>
@@ -42,19 +42,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ProposedStart** -Elements ist die vorgeschlagenen Startzeit vom Organisator der Besprechung Teilnehmer gesendet. 
+Der Textwert des **ProposedStart** -Elements ist die vorgeschlagene Startzeit, die von einem Teilnehmer an den Besprechungsorganisator gesendet wurde. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |

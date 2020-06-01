@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2b6005a6-56a9-4848-b998-32908c13e2e2
-description: Das IsOutOfDate-Element gibt an, ob eine Besprechungsnachricht, Anforderung, Antwort oder Abbruch veraltet ist.
-ms.openlocfilehash: 0a6b2670cc3eb260002821bab31d652177902de1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IsOutOfDate-Element gibt an, ob eine Besprechungsnachricht, eine Anforderung, eine Antwort oder eine Absage veraltet ist.
+ms.openlocfilehash: b50b021e48789ba63016582450404b5da3ff86e1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830110"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466549"
 ---
 # <a name="isoutofdate"></a>IsOutOfDate
 
-Das **IsOutOfDate** -Element gibt an, ob eine Besprechungsnachricht, Anforderung, Antwort oder Abbruch veraltet ist. 
+Das **IsOutOfDate** -Element gibt an, ob eine Besprechungsnachricht, eine Anforderung, eine Antwort oder eine Absage veraltet ist. 
   
 ```xml
 <IsOutOfDate/>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -53,15 +53,15 @@ Keine.
 
 Der Textwert **true** gibt an, dass das Besprechungselement veraltet ist. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

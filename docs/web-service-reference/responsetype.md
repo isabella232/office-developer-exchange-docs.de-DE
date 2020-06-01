@@ -1,5 +1,5 @@
 ---
-title: ResponseType
+title: Response Type
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cdc09dda-ce20-4504-880d-9da6025ca812
-description: ResponseType-Element stellt den Typ der Empfänger Antwort, die für eine Besprechung empfangen wird.
-ms.openlocfilehash: fcfd47cb988ee00303b2c4205cb3d058cb6599b2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ResponseType-Element stellt den Typ der Empfängerantwort dar, die für eine Besprechung empfangen wird.
+ms.openlocfilehash: ef8183b71e267a20427873ca44b269b828686cbe
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831200"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465394"
 ---
-# <a name="responsetype"></a>ResponseType
+# <a name="responsetype"></a>Response Type
 
-**ResponseType** -Element stellt den Typ der Empfänger Antwort, die für eine Besprechung empfangen wird. 
+Das **ResponseType** -Element stellt den Typ der Empfängerantwort dar, die für eine Besprechung empfangen wird. 
   
 ```xml
 <ResponseType/>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Attendee](attendee.md) <br/> |Stellt Teilnehmer und Ressourcen für eine Besprechung.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Stellt einen Besprechungsabsage im Exchange-Speicher  <br/> |
-|[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechungsnachricht im Exchange-Speicher.  <br/> |
+|[Teilnehmer](attendee.md) <br/> |Stellt Teilnehmer und Ressourcen für eine Besprechung dar.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine Besprechungsabsage in der Exchange-Informationsspeicher  <br/> |
+|[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechungsnachricht im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort im Exchange-Informationsspeicher dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses Element:
+Ein Textwert ist erforderlich. Im folgenden sind die möglichen Text Werte für dieses Element angegeben:
   
 - Unbekannt
     
 - Organisator
     
-- Mit Vorbehalt
+- Vorläufige
     
 - Annehmen
     
@@ -66,15 +66,15 @@ Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses El
     
 - NoResponseReceived
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 8949a9b7-1871-4031-9a86-61636e695e4c
-description: Das OABUrl-Element gibt die URL Offline Address Book Konfiguration für eine Exchange-Topologie.
-ms.openlocfilehash: dda622e24892f2a8f0b2186483683ff6d3c28a22
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das OABUrl-Element gibt die URL des Offline Adressbuch-Konfigurations Servers für eine Exchange-Topologie an.
+ms.openlocfilehash: ea6efc3160a130a2293fa09534bfd0f76171e7cd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830633"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465891"
 ---
 # <a name="oaburl-pox"></a>OABUrl (POX)
 
-Das **OABUrl** -Element gibt die URL Offline Address Book Konfiguration für eine Exchange-Topologie. 
+Das **OABUrl** -Element gibt die URL des Offline Adressbuch-Konfigurations Servers für eine Exchange-Topologie an. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,11 +50,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert gibt die Offline Address Book Konfiguration Server-URL für eine Exchange-Topologie.
+Der Wert Text gibt die URL des Offline Adressbuch-Konfigurations Servers für eine Exchange-Topologie an.
   
 ## <a name="see-also"></a>Siehe auch
 

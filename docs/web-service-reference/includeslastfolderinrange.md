@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 95837904-17be-49b7-831c-de4fb20fccfb
-description: Das IncludesLastFolderInRange-Element gibt an, ob das letzte Element synchronisieren in der Antwort aufgenommen wurde.
-ms.openlocfilehash: 6c4af5b394ee2fab6bc98f7bb6afa9ee80551869
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IncludesLastFolderInRange-Element gibt an, ob das letzte zu synchronisierende Element in die Antwort eingeschlossen wurde.
+ms.openlocfilehash: 9ba401cf639ef7988fa7a1437a64d09ff54c5960
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829908"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466451"
 ---
 # <a name="includeslastfolderinrange"></a>IncludesLastFolderInRange
 
-Das **IncludesLastFolderInRange** -Element gibt an, ob das letzte Element synchronisieren in der Antwort aufgenommen wurde. 
+Das **IncludesLastFolderInRange** -Element gibt an, ob das letzte zu synchronisierende Element in die Antwort eingeschlossen wurde. 
   
 [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)
   
@@ -35,7 +35,7 @@ Das **IncludesLastFolderInRange** -Element gibt an, ob das letzte Element synchr
 <IncludesLastFolderInRange/>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -52,23 +52,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SyncFolderHierarchyResponseMessage](syncfolderhierarchyresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung SyncFolderHierarchy.  <br/> |
+|[SyncFolderHierarchyResponseMessage](syncfolderhierarchyresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer SyncFolderHierarchy-Anforderung.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

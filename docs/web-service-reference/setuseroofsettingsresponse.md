@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8aa4025b-38df-4d63-a6a5-c3b932bec26e
-description: Das SetUserOofSettingsResponse-Element enthält das Ergebnis der versucht, eine Nachricht SetUserOofSettingsRequest.
-ms.openlocfilehash: ab2eaaad1b7b094baad724ec56f4c26280f1f15f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SetUserOofSettingsResponse-Element enthält das Ergebnis eines SetUserOofSettingsRequest-Nachrichten Versuchs.
+ms.openlocfilehash: 9b02d905f82488965f5ae0514a52eb6062aaff7d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831471"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466129"
 ---
 # <a name="setuseroofsettingsresponse"></a>SetUserOofSettingsResponse
 
-Das **SetUserOofSettingsResponse** -Element enthält das Ergebnis der versucht, eine Nachricht [SetUserOofSettingsRequest](setuseroofsettingsrequest.md) . 
+Das **SetUserOofSettingsResponse** -Element enthält das Ergebnis eines [SetUserOofSettingsRequest](setuseroofsettingsrequest.md) -Nachrichten Versuchs. 
   
 ```xml
 <SetUserOofSettingsResponse>
@@ -42,23 +42,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessage](responsemessage.md) <br/> |Enthält beschreibende Informationen über den Antwortstatus.  <br/> |
+|[ResponseMessage](responsemessage.md) <br/> |Enthält beschreibende Informationen zum Antwortstatus.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

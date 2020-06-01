@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 7335b1c1-0b47-4452-a8cb-d19cddcfc281
-description: Das Element MajorBuildNumber stellt Haupt-Buildnummer für den Server.
-ms.openlocfilehash: 2d6520b65f75c9fa14d236c99e96523baa3ddfb5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MajorBuildNumber-Element stellt die Haupt Buildnummer für den Server dar.
+ms.openlocfilehash: 60a8cbeb4b689da85bbb72c2d93759799b913f2f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830329"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465884"
 ---
 # <a name="majorbuildnumber-soap"></a>MajorBuildNumber (SOAP)
 
-Das Element **MajorBuildNumber** stellt Haupt-Buildnummer für den Server. 
+Das **MajorBuildNumber** -Element stellt die Haupt Buildnummer für den Server dar. 
   
 ```XML
 <MajorBuildNumber/>
@@ -41,19 +41,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |Enthält die Version des Servers, der die Anforderung verarbeitet.  <br/> |
+|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |Enthält die Version des Servers, der die Anforderung verarbeitet hat.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der MajorBuildNumber-Element ist eine ganze Zahl, die die Hauptversionsnummer darstellt Buildnummer des Servers, der die Anforderung verarbeitet.
+Der Textwert des MajorBuildNumber-Elements ist eine ganze Zahl, die die Haupt Erstellungsnummer des Servers darstellt, der die Anforderung verarbeitet hat.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

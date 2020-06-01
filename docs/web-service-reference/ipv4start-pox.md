@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 3e3a47b8-22fa-4b07-a3ef-0b92ac69d36c
-description: Das IPv4Start-Element identifiziert den Anfang des einen Bereich von IP-Version 4 (IPv4)-Adressen, die zur Identifizierung von eines Computers in einem Netzwerk verwendet werden.
-ms.openlocfilehash: ffe299c8339998e7cccef0e46e0d15994d70a4b1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IPv4Start-Element gibt den Start eines Bereichs von IPv4-Adressen (IP Version 4) an, die zum Identifizieren eines Computers in einem Netzwerk verwendet werden.
+ms.openlocfilehash: 6bba98ce55e67aed7c301c87f98559688d41b5e5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829960"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466409"
 ---
 # <a name="ipv4start-pox"></a>IPv4Start (POX)
 
-Das **IPv4Start** -Element identifiziert den Anfang des einen Bereich von IP-Version 4 (IPv4)-Adressen, die zur Identifizierung von eines Computers in einem Netzwerk verwendet werden. 
+Das **IPv4Start** -Element gibt den Start eines Bereichs von IPv4-Adressen (IP Version 4) an, die zum Identifizieren eines Computers in einem Netzwerk verwendet werden. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -52,11 +52,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[NetworkRequirements (POX)](networkrequirements-pox.md) <br/> |Enthält die Kriterien, die verwendet werden, um festzustellen, ob der Client-Computer in einem Netzwerk befindet, die die Internetdienstanbieters (ISP) erfüllt Anforderungen, um mit dem Server herstellen.  <br/> |
+|[NetworkRequirements (POX)](networkrequirements-pox.md) <br/> |Enthält die Kriterien, die verwendet werden, um zu bestimmen, ob sich der Clientcomputer in einem Netzwerk befindet, das die Anforderungen des Internet Dienstanbieters erfüllt, um eine Verbindung mit dem Server herzustellen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt eine IPv4-Adresse dar.
+Der Wert Text stellt eine IPv4-Adresse dar.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Empfänger (ArrayOfSmtpAddressType)
+title: Recipients (ArrayOfSmtpAddressType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cf68417d-85cf-49e0-857a-f987d3675344
-description: Das Empfänger-Element gibt ein Array von Empfänger einer Nachricht.
-ms.openlocfilehash: 8490988043b1e06fd3a8f553fcefaeb2e90e9d31
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Recipients-Element gibt ein Array von Empfängern einer Nachricht an.
+ms.openlocfilehash: 4c2478a81836c2e52baad9c928d112108679b837
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830988"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465506"
 ---
-# <a name="recipients-arrayofsmtpaddresstype"></a>Empfänger (ArrayOfSmtpAddressType)
+# <a name="recipients-arrayofsmtpaddresstype"></a>Recipients (ArrayOfSmtpAddressType)
 
-Das **Empfänger** -Element gibt ein Array von Empfänger einer Nachricht. 
+Das **Recipients** -Element gibt ein Array von Empfängern einer Nachricht an. 
   
 ```xml
 <Recipients>   <SmtpAddress/></Recipients>
@@ -40,25 +40,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SmtpAddress](smtpaddress.md) <br/> |Stellt die Simple Mail Transfer Protocol (SMTP) Empfängeradresse eines Kalenders oder Kontakt Freigabeanfrage dar.  <br/> |
+|[SmtpAddress](smtpaddress.md) <br/> |Stellt die Simple Mail Transfer Protocol (SMTP) Empfängeradresse einer Kalender-oder Kontaktfreigabe Anforderung dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetSharingMetadata](getsharingmetadata.md) <br/> |Definiert eine Anforderung an ein undurchsichtiger Authentifizierungstoken erhalten möchten, die die Einladung zur Freigabe identifiziert.  <br/> |
+|[GetSharingMetadata](getsharingmetadata.md) <br/> |Definiert eine Anforderung zum Abrufen eines nicht transparenten Authentifizierungstokens, das die Freigabeeinladung identifiziert.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle IIS-Verzeichnis, dass Hosts Exchange-Webdienste des Computers, auf dem Microsoft Exchange Server ausgeführt wird die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, in dem Exchange Webdienste des Computers gehostet wird, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

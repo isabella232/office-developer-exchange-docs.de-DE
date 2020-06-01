@@ -1,5 +1,5 @@
 ---
-title: "\"Assignees\""
+title: Empfängern
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 20ef18c2-daa0-4f65-a515-e84e9993a77f
-description: Das Element "assignees" gibt die Personen, die eine Aufgabe zugewiesen ist.
-ms.openlocfilehash: 5fc301cd77268213e95fd33a2a2f36dbe218b512
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Element "assigners" gibt die Personen an, denen eine Aufgabe zugewiesen ist.
+ms.openlocfilehash: 3e98273e859dbe2128b0ad3b4df42c8016fd3bc5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757385"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464714"
 ---
-# <a name="assignees"></a>"Assignees"
+# <a name="assignees"></a>Empfängern
 
-Das Element **"assignees"** gibt die Personen, die eine Aufgabe zugewiesen ist. 
+Das Element " **assigners** " gibt die Personen an, denen eine Aufgabe zugewiesen ist. 
   
 ```XML
 <Assignees>
@@ -39,28 +39,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Name (EmailAddress)](name-emailaddress.md) <br/> |Stellt den Anzeigenamen des Postfachbenutzers an.  <br/> |
-|[Benutzer-ID (Zeichenfolge)](userid-string.md) <br/> |Gibt die Benutzer-ID eines e-Mail-Benutzers an.  <br/> |
+|[Name (e-mailemail)](name-emailaddress.md) <br/> |Stellt den Anzeigenamen des Postfachbenutzers dar.  <br/> |
+|[UserID (Zeichenfolge)](userid-string.md) <br/> |Gibt die Benutzer-ID eines e-Mail-Benutzers an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[TaskSuggestion](tasksuggestion.md) <br/> |Gibt einen vorgeschlagenen Vorgang an.  <br/> |
+|[TaskSuggestion](tasksuggestion.md) <br/> |Gibt eine vorgeschlagene Aufgabe an.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

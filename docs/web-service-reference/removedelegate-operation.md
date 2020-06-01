@@ -11,47 +11,47 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1d42d5ff-8fde-4f8a-b18d-57b1ef7a946a
-description: Der Vorgang RemoveDelegate entfernt eine oder mehrere Stellvertretungen aus dem Postfach eines Benutzers.
-ms.openlocfilehash: 6f3371d19bd8a7fd967d4959d85037ae6b51f6aa
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Mit dem RemoveDelegate-Vorgang werden mindestens eine Stellvertretung aus dem Postfach eines Benutzers entfernt.
+ms.openlocfilehash: b2e342225e7e79c44dcd86b76b4b7d47b16b860b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831088"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466598"
 ---
 # <a name="removedelegate-operation"></a>RemoveDelegate-Vorgang
 
-Der Vorgang **RemoveDelegate** entfernt eine oder mehrere Stellvertretungen aus dem Postfach eines Benutzers. 
+Mit dem **RemoveDelegate** -Vorgang werden mindestens eine Stellvertretung aus dem Postfach eines Benutzers entfernt. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der Vorgang **RemoveDelegate** können die SOAP-Header, die aufgeführt und in der folgenden Tabelle beschrieben. 
+Der **RemoveDelegate** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Identitätswechsel  <br/> |["ExchangeImpersonation"](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt.  <br/> |
+|Identitätswechsel  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt.  <br/> |
 |MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Gibt die RFC3066-Kultur an, die für den Zugriff auf das Postfach verwendet wird.  <br/> |
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="removedelegate-request-example"></a>Anforderungsbeispiel RemoveDelegate
+## <a name="removedelegate-request-example"></a>RemoveDelegate-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Codebeispiel wird veranschaulicht, wie zwei Delegaten von Benutzer1 Postfach zu entfernen. In diesem Beispiel wird eine Stellvertretung mithilfe der Stellvertretung primäre SMTP-Adresse entfernt, und anderen wird mithilfe der Stellvertretung Sicherheits-ID (SID) entfernt.
+Im folgenden Codebeispiel wird gezeigt, wie zwei Delegaten aus dem von Benutzer1-Postfach entfernt werden. In diesem Beispiel wird ein Delegat mithilfe der primären SMTP-Adresse der Stellvertretung entfernt, und der andere wird mithilfe der Sicherheits-ID (SID) der Stellvertretung entfernt.
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1"/>
   </soap:Header>
   <soap:Body>
-    <RemoveDelegate xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <RemoveDelegate xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <Mailbox>
         <t:EmailAddress>user1@example.com</t:EmailAddress>
       </Mailbox>
@@ -68,15 +68,15 @@ Im folgenden Codebeispiel wird veranschaulicht, wie zwei Delegaten von Benutzer1
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Der Vorgang **RemoveDelegate** erfordert keinen den angegebenen Delegaten Benutzer über ein Postfach verfügen oder in den Active Directory-Verzeichnisdienst vorhanden sein. Der Vorgang **RemoveDelegate** erfolgreich, wenn der Eintrag Delegaten verwaist ist. 
+Für den **RemoveDelegate** -Vorgang ist es nicht erforderlich, dass der angegebene Stellvertreter Benutzer über ein Postfach verfügt oder im Active Directory Verzeichnisdienst vorhanden ist. Der **RemoveDelegate** -Vorgang kann erfolgreich ausgeführt werden, wenn der Delegat-Eintrag verwaist ist. 
   
-## <a name="removedelegate-response-example"></a>RemoveDelegate antwortbeispiel
+## <a name="removedelegate-response-example"></a>RemoveDelegate-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel einer Antwort **RemoveDelegate** zeigt eine erfolgreiche Antwort auf eine Anforderung **RemoveDelegate** . Die Antwort enthält ein **DelegateUserResponseMessageType** -Element für jeden Delegaten, die aus dem Postfach entfernt wird. 
+Das folgende Beispiel einer **RemoveDelegate** -Antwort zeigt eine erfolgreiche Antwort auf eine **RemoveDelegate** -Anforderung. Die Antwort enthält ein **DelegateUserResponseMessageType** -Element für jeden Delegaten, der aus dem Postfach entfernt wird. 
   
 ### <a name="code"></a>Code
 
@@ -91,12 +91,12 @@ Das folgende Beispiel einer Antwort **RemoveDelegate** zeigt eine erfolgreiche A
                          MajorBuildNumber="206" 
                          MinorBuildNumber="0" 
                          Version="Exchange2007_SP1" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <m:RemoveDelegateResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <m:RemoveDelegateResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                               ResponseClass="Success" 
-                              xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+                              xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:ResponseMessages>
         <m:DelegateUserResponseMessageType ResponseClass="Success">
@@ -111,11 +111,11 @@ Das folgende Beispiel einer Antwort **RemoveDelegate** zeigt eine erfolgreiche A
 </soap:Envelope>
 ```
 
-## <a name="removedelegate-error-response-example"></a>Antwortbeispiel RemoveDelegate-Fehler
+## <a name="removedelegate-error-response-example"></a>RemoveDelegate-Fehlerantwort Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Fehlerantwort **RemoveDelegate** zeigt die Ergebnisse einer Anforderung für eine Stellvertretung entfernen möchten, die nicht vorhanden ist. 
+Das folgende Beispiel einer **RemoveDelegate** -Fehlerantwort zeigt die Ergebnisse einer Anforderung zum Entfernen eines nicht vorhandenen Delegaten. 
   
 ### <a name="code"></a>Code
 
@@ -130,12 +130,12 @@ Im folgenden Beispiel wird eine Fehlerantwort **RemoveDelegate** zeigt die Ergeb
                          MajorBuildNumber="206"
                          MinorBuildNumber="0"
                          Version="Exchange2007_SP1"
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <m:RemoveDelegateResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+    <m:RemoveDelegateResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                               ResponseClass="Success"
-                              xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+                              xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:ResponseMessages>
         <m:DelegateUserResponseMessageType ResponseClass="Error">

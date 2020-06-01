@@ -1,5 +1,5 @@
 ---
-title: CChkSGFiles.ErrTerm-Funktion
+title: CChkSGFiles. ErrTerm-Funktion
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,22 +11,22 @@ api_name:
 api_type:
 - dllExport
 ms.assetid: eea20a55-4a2a-4209-ae79-dc1ee1cd631b
-description: 'Zuletzt geändert: 25 Februar 2013'
-ms.openlocfilehash: 099ec33663baa2414a0c28b90364523b6191c697
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 'Letzte Änderung: 25. Februar 2013'
+ms.openlocfilehash: 12b07fba69054d327c7250bbf83e4c77016e8b3f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756808"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466199"
 ---
-# <a name="cchksgfileserrterm-function"></a>CChkSGFiles.ErrTerm-Funktion
+# <a name="cchksgfileserrterm-function"></a>CChkSGFiles. ErrTerm-Funktion
   
 **Gilt für:** Exchange Server 2003 | Exchange Server 2007 | Exchange Server 2010 | Exchange Server 2013
   
-Bietet einen allgemeinen Status der Überprüfung Datenbank- und Protokolldateien, die angibt, ob die Datenbankseiten und Protokolle erfolgreich überprüft wurden.
+Stellt einen allgemeinen Status der Datenbank-und Protokoll Überprüfung bereit, der angibt, ob alle Datenbankseiten und Protokolle erfolgreich überprüft wurden.
   
 > [!IMPORTANT]
-> Speichergruppen sind nicht verfügbar in Exchange 2013. Für die Abwärtskompatibilität mit Datenbanken und Speichergruppen in Exchange-Versionen vor Exchange Server 2010 können mit der API für CHKSGFILES Speichergruppen angeben. Wenn Sie für CHKSGFILES in Exchange 2013-Datenbanken ausführen, sollten Sie Parameter festlegen, die einen Gruppenbezeichner Speicher auf eine leere Zeichenfolge angeben. 
+> Speichergruppen stehen in Exchange 2013 nicht zur Verfügung. Aus Gründen der Abwärtskompatibilität mit Datenbanken und Speichergruppen in Exchange-Versionen, die älter als Exchange Server 2010 sind, können Sie mit der CHKSGFILES-API Speichergruppen angeben. Wenn Sie CHKSGFILES für Exchange 2013 Datenbanken ausführen, sollten Sie Parameter festlegen, die einen Speichergruppen Bezeichner in eine leere Zeichenfolge angeben. 
   
 ```cs
 Vitual ERRErrTerm 
@@ -40,30 +40,30 @@ Vitual ERRErrTerm
 
 ### <a name="ulflags"></a>ulFlags
   
-Optionale Eingabeparameter. Dieser Wert ist für die zukünftige Verwendung reserviert. Der durch diesen Parameter übergebene Wert muss 0 (null) sein.
+Optionaler Eingabeparameter. Dieser Wert ist für die zukünftige Verwendung reserviert. Der von diesem Parameter übergebene Wert sollte 0 (null) sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Ein Fehlercode aus der [ERR](cchksgfiles-err-enumeration.md) -Aufzählung. 
+Ein Fehlercode aus der [Err](cchksgfiles-err-enumeration.md) -Aufzählung. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Objekt **CChkSGFiles** bestimmt, ob alle Datenbanken, die mit der Funktion **ErrInit** registriert tatsächlich aktiviert wurden. Dieses Objekt verwendet der **ErrCheckDbPages** -Funktion zu überprüfen, ob die gleiche Anzahl von Datenbank, die Seiten von der Funktion **ErrCheckDbHeaders** identifizierten tatsächlich überprüft wurden. Wenn die richtige Anzahl von Seiten in jeder Datenbank nicht erfolgreich aktiviert sind, gibt die **ErrTerm** -Funktion einen Fehler zurück. 
+Das **CChkSGFiles** -Objekt bestimmt, ob alle Datenbanken, die mit der **ErrInit** -Funktion registriert wurden, tatsächlich überprüft wurden. Dieses Objekt verwendet die **ErrCheckDbPages** -Funktion, um zu überprüfen, ob die gleiche Anzahl von Datenbankseiten, die von der **ErrCheckDbHeaders** -Funktion identifiziert wurden, tatsächlich überprüft wurde. Wenn die richtige Anzahl von Seiten in jeder Datenbank nicht erfolgreich überprüft wird, gibt die **ErrTerm** -Funktion einen Fehler zurück. 
   
-Wenn die Anzahl von Datenbankseiten mit **ErrCheckDbPages** überprüft kleiner als der mit **ErrCheckDbHeaders**angegeben ist, diese Funktion erstellt einen Fehler im Windows-Ereignisprotokoll und **ErrTerm** gibt einen Fehler zurück. 
+Wenn die Anzahl der mit **ErrCheckDbPages** geprüften Datenbankseiten kleiner als die von **ErrCheckDbHeaders**ist, erstellt diese Funktion einen Fehler im Windows-Ereignisprotokoll, und **ErrTerm** gibt einen Fehler zurück. 
   
-Wenn die Anzahl von Datenbankseiten überprüft mit **ErrCheckDbPages** größer als der mit **ErrCheckDbHeaders**angegeben ist, erstellt diese Funktion eine Warnung in der Windows-Ereignisprotokoll, um anzugeben, dass die Anwendung unnötig einige überprüft werden mehr als einmal Datenbankseiten. In diesem Fall ist erfolgreich, jedoch die **ErrTerm** -Funktion. 
+Wenn die Anzahl der mit **ErrCheckDbPages** überprüften Datenbankseiten größer als der von **ErrCheckDbHeaders**ist, wird mit dieser Funktion eine Warnung im Windows-Ereignisprotokoll erstellt, um anzugeben, dass die Anwendung möglicherweise unnötig viele Datenbankseiten mehr als einmal überprüft. In diesem Fall ist die **ErrTerm** -Funktion jedoch erfolgreich. 
   
-Das Objekt **CChkSGFiles** bestimmt auch, ob die Protokolldateien mit **ErrInit** registriert tatsächlich aktiviert wurden. Wenn nicht alle Protokolle wurden erfolgreich überprüft, die **ErrTerm** -Funktion gibt einen Fehler zurück. 
+Das **CChkSGFiles** -Objekt bestimmt auch, ob die bei **ErrInit** registrierten Protokolldateien tatsächlich überprüft wurden. Wenn nicht alle Protokolle erfolgreich überprüft wurden, gibt die **ErrTerm** -Funktion einen Fehler zurück. 
   
-Wenn **ErrTerm** einen Fehler zurückgibt, werden der erste Fehler, die, den es findet, den Obwohl den Status der Überprüfung für alle Datenbanken, die mit **ErrInit**registriert überprüft.
+Wenn **ErrTerm** einen Fehler zurückgibt, ist dies der erste gefundene Fehler, auch wenn der Überprüfungsstatus für alle mit **ErrInit**registrierten Datenbanken überprüft wird.
   
-Wenn Sie für CHKSGFILES in multithreaded-Anwendung verwenden, müssen Sie die **ErrTerm** -Funktion in den einzelnen Thread Teil der Anwendung aufrufen, und Sie erreichen sie mehr als einmal für jedes Objekt **CCheckSGFiles** . 
+Wenn Sie CHKSGFILES in einer Multithread-Anwendung verwenden, müssen Sie die **ErrTerm** -Funktion im Single-Thread-Teil der Anwendung aufrufen, und Sie können Sie für jedes **CCheckSGFiles** -Objekt nicht mehr als einmal aufrufen. 
   
 ## <a name="requirements"></a>Anforderungen
 
-Exchange 2013 umfasst nur eine 64-Bit-Version von CHKSGFILES.
+Exchange 2013 enthält nur eine 64-Bit-Version von CHKSGFILES.
   
-Das Konto, unter die Anwendung ausgeführt wird, benötigen Lesezugriff auf die Datenbank und die Protokolldateien, die überprüft werden sollen.
+Das Konto, unter dem die Anwendung betrieben wird, muss über Lesezugriffsberechtigungen für die zu überprüfenden Datenbank-und Protokolldateien verfügen.
   
 

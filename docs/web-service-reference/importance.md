@@ -1,5 +1,5 @@
 ---
-title: Wichtigkeit
+title: Importance
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1557f59a-41f2-43fb-9ded-88f3ec5c76cb
-description: Das Bedeutung Element beschreibt die Bedeutung eines Elements oder die aggregierten Bedeutung aller Elemente in einer Unterhaltung im aktuellen Ordner.
-ms.openlocfilehash: 3a58a4da1b26fee0c2aa1d085c3181d7d26f7259
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Element Wichtigkeit beschreibt die Wichtigkeit eines Elements oder die aggregierte Wichtigkeit aller Elemente in einer Unterhaltung im aktuellen Ordner.
+ms.openlocfilehash: c49d6e84a41f1eb546eef19e2e7279fdb30b48e4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829891"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464791"
 ---
-# <a name="importance"></a>Wichtigkeit
+# <a name="importance"></a>Importance
 
-Das **Bedeutung** Element beschreibt die Bedeutung eines Elements oder die aggregierten Bedeutung aller Elemente in einer Unterhaltung im aktuellen Ordner. 
+Das Element **Wichtigkeit** beschreibt die Wichtigkeit eines Elements oder die aggregierte Wichtigkeit aller Elemente in einer Unterhaltung im aktuellen Ordner. 
   
 ```XML
 <Importance/>
@@ -49,7 +49,7 @@ Keine.
 |[Unterhaltung (ConversationType)](conversation-conversationtype.md) <br/> |Stellt eine einfache Unterhaltung dar.  <br/> |
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
-|[Ausnahmen](exceptions.md) <br/> |Stellt die Ausnahmen, die alle verfügbaren Regel Ausnahmebedingungen für die Posteingangsregel an darstellen.  <br/> |
+|[Ausnahmen](exceptions.md) <br/> |Stellt die Ausnahmen dar, die alle verfügbaren Regel Ausnahmebedingungen für die Posteingangsregel darstellen.  <br/> |
 |[Element](item.md) <br/> |Stellt ein Element im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine Besprechungsabsage im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechung im Exchange-Informationsspeicher dar.  <br/> |
@@ -61,23 +61,23 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Es folgen die möglichen Werte für dieses Element:
+Ein Textwert ist erforderlich. Im folgenden sind die möglichen Werte für dieses Element angegeben:
   
-- Low
+- Niedrig
     
-- Standard
+- Normal
     
-- High
+- Hoch
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

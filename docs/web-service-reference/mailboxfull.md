@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 38b28c9b-9da2-4d6a-9cda-9c393986575b
-description: Das MailboxFull-Element gibt an, ob das Postfach des Empfängers voll ist.
-ms.openlocfilehash: 8e2c9e01b93af03e875834724a942cd9b17a73f3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MailboxFull-Element gibt an, ob das Postfach für den Empfänger voll ist.
+ms.openlocfilehash: f336f1eda122bb170aafb22a028e3faf84f4d782
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830286"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465975"
 ---
 # <a name="mailboxfull"></a>MailboxFull
 
-Das **MailboxFull** -Element gibt an, ob das Postfach des Empfängers voll ist. 
+Das **MailboxFull** -Element gibt an, ob das Postfach für den Empfänger voll ist. 
   
 ```XML
 <MailboxFull>true | false</MailboxFull>
 ```
 
-**Boolean**
+**Boolescher Wert**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -45,21 +45,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[E-Mail-Infos](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Infos.  <br/> |
+|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Tipps dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Dieses Element kann **true** oder **false**sein. Der Wert **true** gibt an, dass das Postfach seine Kapazität erreicht hat. der Wert **false** gibt an, dass sie nicht die Kapazität erreicht hat. 
+Dieses Element kann entweder **true** oder **false**sein. Der Wert **true** gibt an, dass das Postfach seine Kapazität erreicht hat; der Wert **false** gibt an, dass die Kapazität nicht erreicht wurde. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

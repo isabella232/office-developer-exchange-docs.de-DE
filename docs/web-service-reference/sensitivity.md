@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d872423a-c26e-4675-9028-23361fb4a43d
-description: Sensitivity-Element gibt die Vertraulichkeitsstufe eines Elements an.
-ms.openlocfilehash: 08413e51d77611880d85fece192bcc5c2471c182
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Sensitivity-Element gibt die Empfindlichkeitsstufe eines Elements an.
+ms.openlocfilehash: 92352e59da9b5f0e51b650d2a6fb36575f6542be
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831352"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466542"
 ---
 # <a name="sensitivity"></a>Vertraulichkeit
 
-**Sensitivity** -Element gibt die Vertraulichkeitsstufe eines Elements an. 
+Das **Sensitivity** -Element gibt die Empfindlichkeitsstufe eines Elements an. 
   
 ```XML
 <Sensitivity/>
@@ -50,8 +50,8 @@ Keine.
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
 |[DeclineItem](declineitem.md) <br/> |Stellt eine ablehnen Antwort auf eine Besprechungsanfrage.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
-|[Ausnahmen](exceptions.md) <br/> |Stellt alle verfügbaren Regel Ausnahmebedingungen für eine Posteingangsregel an.  <br/> |
-|[Element](item.md) <br/> |Stellt ein generisches Exchange-Element.  <br/> |
+|[Ausnahmen](exceptions.md) <br/> |Stellt alle verfügbaren Regel Ausnahmebedingungen für eine Posteingangsregel dar.  <br/> |
+|[Element](item.md) <br/> |Stellt ein generisches Exchange-Element dar.  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine Besprechungsabsage im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
@@ -63,25 +63,25 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses Element:
+Ein Textwert ist erforderlich. Im folgenden sind die möglichen Text Werte für dieses Element angegeben:
   
-- Standard
-    
-- Persönlich
+- Normal
     
 - Privat
     
+- Private
+    
 - Vertraulich
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

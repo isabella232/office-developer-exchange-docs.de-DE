@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9ae6351a-2c60-4715-a489-5681a13641f9
-description: RecipientAddress-Element darstellt, das Postfach des Empfängers.
-ms.openlocfilehash: 10928ac206227cfc21bd83ab5bfa9a55aad354e7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RecipientAddress-Element stellt das Postfach des Empfängers dar.
+ms.openlocfilehash: f4b6edd034dd91471e6496f6b0cca65bd3ffb69a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830974"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465849"
 ---
 # <a name="recipientaddress"></a>RecipientAddress
 
-**RecipientAddress** -Element darstellt, das Postfach des Empfängers. 
+Das **RecipientAddress** -Element stellt das Postfach des Empfängers dar. 
   
 ```xml
 <RecipientAddress>
@@ -48,25 +48,25 @@ Keine.
 |:-----|:-----|
 |[Name (EmailAddressType)](name-emailaddresstype.md) <br/> |Stellt den Namen des Postfachbenutzers dar. Dieses Element ist optional.  <br/> |
 |[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Definiert die Simple Mail Transfer Protocol (SMTP)-Adresse eines Postfachbenutzers. Dieses Element ist optional.  <br/> |
-|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Stellt das routing-Protokoll für den Empfänger an. Der Standard lautet SMTP. Dieses Element ist optional.  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |Stellt den Typ des Postfachs an, das die e-Mail-Adresse dargestellt wird.  <br/> |
+|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Stellt das Routingprotokoll für den Empfänger dar. Der Standard lautet SMTP. Dieses Element ist optional.  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |Stellt den Typ des Postfachs dar, der durch die e-Mail-Adresse dargestellt wird.  <br/> |
 |[ItemId](itemid.md) <br/> |Definiert den Elementbezeichner eines Kontakts oder die private Verteilungsliste für Empfänger aus dem Kontaktordner eines Benutzers. Dieses Element ist optional.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[E-Mail-Infos](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Infos.  <br/> |
+|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Tipps dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

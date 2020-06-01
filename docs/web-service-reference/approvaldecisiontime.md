@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e70f1a3d-03cf-4252-804f-3eef0ce4a1a9
-description: Das ApprovalDecisionTime-Element gibt die Zeit an, an der die Entscheidung Genehmigung vorgenommen wurde.
-ms.openlocfilehash: 1f5358c6bde32233eaf650e7a0677e74324e557c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ApprovalDecisionTime-Element gibt den Zeitpunkt an, zu dem die Genehmigungsentscheidung getroffen wurde.
+ms.openlocfilehash: 2c76d949d366050139978586cd9e784f2728d767
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757366"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464784"
 ---
 # <a name="approvaldecisiontime"></a>ApprovalDecisionTime
 
-Das **ApprovalDecisionTime** -Element gibt die Zeit an, an der die Entscheidung Genehmigung vorgenommen wurde. 
+Das **ApprovalDecisionTime** -Element gibt den Zeitpunkt an, zu dem die Genehmigungsentscheidung getroffen wurde. 
   
 ```XML
 <ApprovalDecisionTime />
@@ -42,19 +42,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ApprovalDecisionTime** -Elements darstellt, die Uhrzeit und das Datum, an dem die Entscheidung Genehmigung vorgenommen wurde. 
+Der Textwert des **ApprovalDecisionTime** -Elements stellt die Uhrzeit und das Datum dar, an dem die Genehmigungsentscheidung getroffen wurde. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |

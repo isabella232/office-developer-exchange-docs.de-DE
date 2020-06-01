@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3efb7abb-0e91-4d8a-9fa2-3dec8bd17c30
-description: Das ManagedFolderId-Element enthält die ID des verwalteten Ordner.
-ms.openlocfilehash: acdb69f82678633baff12c46494c39015c36d233
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ManagedFolderId-Element enthält die Ordner-ID des verwalteten Ordners.
+ms.openlocfilehash: eacfe580342e6667fd9fc84ad953a5e4070b6ed7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830340"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465821"
 ---
 # <a name="managedfolderid"></a>ManagedFolderId
 
-Das **ManagedFolderId** -Element enthält die ID des verwalteten Ordner. 
+Das **ManagedFolderId** -Element enthält die Ordner-ID des verwalteten Ordners. 
   
 ```xml
 <ManagedFolderId/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -48,19 +48,19 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Es wird ein Textwert für dieses Element erforderlich.
+Für dieses Element ist ein Textwert erforderlich.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-**ManagedFolderId** -ID-Wert entspricht dem **Guid** -Eigenschaft, die von abgerufen wird die `Get-ManagedFolder` Microsoft Windows Powershell-Befehl. Es ist auch der Wert des Attributs **Objekt-GUID** für den verwalteten Ordner in den Active Directory-Verzeichnisdienst. 
+Der Wert des **ManagedFolderId** -Bezeichners entspricht der **GUID** -Eigenschaft, die vom `Get-ManagedFolder` Microsoft Windows PowerShell-Befehl abgerufen wird. Es ist auch der Wert des **objectGUID** -Attributs für den verwalteten Ordner im Active Directory Verzeichnisdienst. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
@@ -75,7 +75,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Löschen von Ordnern](http://msdn.microsoft.com/library/1958add5-5071-4239-adb2-40f7a7d74aee%28Office.15%29.aspx)
+[Löschen von Ordnern](https://msdn.microsoft.com/library/1958add5-5071-4239-adb2-40f7a7d74aee%28Office.15%29.aspx)
   
-[Hinzufügen von verwalteten Ordnern](http://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
+[Hinzufügen von verwalteten Ordnern](https://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
 

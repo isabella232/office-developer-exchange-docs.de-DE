@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 542e7b90-eafe-4711-a9d7-71bbc30d9646
 description: Das IsPartiallyIndexed-Element gibt an, ob das Element teilweise indiziert ist.
-ms.openlocfilehash: e780fac23aeec1d80e547a47b322073fecdc2a0b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 4bf0c3e5dd7b75a90ac087958fbceda334306af1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830082"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466486"
 ---
 # <a name="ispartiallyindexed"></a>IsPartiallyIndexed
 
@@ -23,7 +23,7 @@ Das **IsPartiallyIndexed** -Element gibt an, ob das Element teilweise indiziert 
 <IsPartiallyIndexed>true | false</IsPartiallyIndexed>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,19 +42,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **IsPartiallyIndexed** -Element gibt an, dass das Postfach Element teilweise indiziert ist. Der Wert **false** gibt an, dass das Postfach-Element nicht teilweise indiziert ist. 
+Der Textwert **true** für das **IsPartiallyIndexed** -Element gibt an, dass das Postfachelement teilweise indiziert ist. Der Wert **false** gibt an, dass das Postfachelement nicht teilweise indiziert ist. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |

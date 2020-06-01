@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d5eea7a8-c40d-42a6-8e0d-67f3252496cf
-description: Das Type-Element gibt den Zahlentyp postalische Adresse oder Telefonnummer, beispielsweise HomeorBusiness.
-ms.openlocfilehash: b2262a01b03922e36daa3b13436f1e070918b72c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Type-Element gibt den Typ der Postanschrift oder Telefonnummer an, beispielsweise HomeorBusiness.
+ms.openlocfilehash: 83dd6576e8a365be61c4e6d2f3afc8a59aba92a6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839272"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465716"
 ---
 # <a name="type-string"></a>Typ (Zeichenfolge)
 
-Das **Type** -Element gibt den Typ der Adresse oder Telefonnummer, beispielsweise "Start" oder "Business". 
+Das **Type** -Element gibt den Typ der Postanschrift oder Telefonnummer an, beispielsweise "Home" oder "Business". 
   
 ```XML
 <Type></Type>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -38,23 +38,23 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Telefon](phone.md) | [PhoneNumber](phonenumber.md) | [Wert (PersonaPostalAddressType)](value-personapostaladdresstype.md) | [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
+[Telefonnummer](phone.md)  |  Telefonnummer [PhoneNumber](phonenumber.md)  |  [Wert (PersonaPostalAddressType)](value-personapostaladdresstype.md)  |  [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **Type** -Element ist der Typ einer Adresse oder Telefonnummer. Beispielsweise sind die Werte "Start" oder "Business" erwartete Werte für das **Type** -Element. 
+Der Textwert des **Type** -Elements ist der Typ einer Postadresse oder Telefonnummer. Die Werte "Home" oder "Business" sind beispielsweise erwartete Werte für das **Type** -Element. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 463ed78c-bf82-4cd8-971a-d18425e9e7be
-description: Das SyncFolderItems-Element definiert eine Anforderung zum Synchronisieren von Elementen in einem Ordner von Exchange-Speicher.
-ms.openlocfilehash: 368e19babfccaeab40380103495c63d30647905c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SyncFolderItems-Element definiert eine Anforderung zum Synchronisieren von Elementen in einem Exchange-Informationsspeicher Ordner.
+ms.openlocfilehash: 0fa5b1544d5627d1423287369e72f97662c28d12
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839150"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465149"
 ---
 # <a name="syncfolderitems"></a>SyncFolderItems
 
-Das **SyncFolderItems** -Element definiert eine Anforderung zum Synchronisieren von Elementen in einem Ordner von Exchange-Speicher. 
+Das **SyncFolderItems** -Element definiert eine Anforderung zum Synchronisieren von Elementen in einem Exchange-Informationsspeicher Ordner. 
   
 ```xml
 <SyncFolderItems>
@@ -46,28 +46,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemShape](itemshape.md) <br/> |Identifiziert die Elementeigenschaften und den Inhalt in einer Antwort SyncFolderItems aufzunehmen. Dieses Element ist erforderlich.  <br/> |
-|[SyncFolderId](syncfolderid.md) <br/> |Stellt den Ordner, der zu synchronisierenden Elemente enthält. Dieses Element ist erforderlich.  <br/> |
-|[Synchronisierungsstatus](syncstate-ex15websvcsotherref.md) <br/> |Enthält eine base64-codierten Format von der Synchronisierung von Daten, die nach jeder Anforderung erfolgreich aktualisiert werden. Dies wird verwendet, um den Synchronisierungsstatus zu identifizieren. Dieses Element ist optional.  <br/> |
-|[Ignorieren](ignore.md) <br/> |Identifiziert Elemente, während der Synchronisierung zu überspringen. Dieses Element ist optional.  <br/> |
-|[MaxChangesReturned](maxchangesreturned.md) <br/> |Beschreibt die maximale Anzahl von Änderungen, die in einer Synchronisierung Antwort zurückgegeben werden kann. Dieses Element ist erforderlich.  <br/> |
-|[SyncScope](syncscope.md) <br/> |Gibt an, ob nur Elemente oder Elemente und verknüpften Ordnerinformationen in eine Synchronisierung Antwort zurückgegeben werden. Dieses Element ist optional.  <br/> |
+|[ItemShape](itemshape.md) <br/> |Identifiziert die Elementeigenschaften und Inhalte, die in einer SyncFolderItems-Antwort enthalten sein sollen. Dieses Element ist erforderlich.  <br/> |
+|[SyncFolderId](syncfolderid.md) <br/> |Stellt den Ordner dar, der die zu synchronisierenden Elemente enthält. Dieses Element ist erforderlich.  <br/> |
+|[Von "SyncState](syncstate-ex15websvcsotherref.md) <br/> |Enthält eine Base64-codierte Form der Synchronisierungsdaten, die nach jeder erfolgreichen Anforderung aktualisiert wird. Dies wird verwendet, um den Synchronisierungsstatus zu identifizieren. Dieses Element ist optional.  <br/> |
+|[Ignore](ignore.md) <br/> |Identifiziert Elemente, die während der Synchronisierung übersprungen werden sollen. Dieses Element ist optional.  <br/> |
+|[MaxChangesReturned](maxchangesreturned.md) <br/> |Beschreibt die maximale Anzahl von Änderungen, die in einer Synchronisierungsantwort zurückgegeben werden können. Dieses Element ist erforderlich.  <br/> |
+|[SyncScope](syncscope.md) <br/> |Gibt an, ob nur Elemente oder Elemente und Ordner zugeordnete Informationen in einer Synchronisierungsantwort zurückgegeben werden. Dieses Element ist optional.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Name des Schemas  <br/> |Nachrichten-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Name des Schemas  <br/> |Nachrichtenschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

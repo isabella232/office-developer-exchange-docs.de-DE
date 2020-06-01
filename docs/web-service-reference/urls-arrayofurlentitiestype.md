@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c39744ea-0cee-4954-8653-8279d6b10161
-description: Das Urls-Element gibt ein Array von URLs, die das Ergebnis der entitätenextraktion aus einem Element im Postfach sind.
-ms.openlocfilehash: 2a0c1305050a638d0e125ab2740eb0799d30350a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das URLs-Element gibt ein Array von URLs an, die das Ergebnis der Entitäts Extraktion aus einem Element im Postfach sind.
+ms.openlocfilehash: 0d30c05c23f8d2c9617244c40dc36f6faa222312
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839430"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466528"
 ---
 # <a name="urls-arrayofurlentitiestype"></a>URLs (ArrayOfUrlEntitiesType)
 
-Das **Urls** -Element gibt ein Array von URLs, die das Ergebnis der entitätenextraktion aus einem Element im Postfach sind. 
+Das **URLs** -Element gibt ein Array von URLs an, die das Ergebnis der Entitäts Extraktion aus einem Element im Postfach sind. 
   
 ```XML
 <Urls>
@@ -42,17 +42,17 @@ Keine.
 
 [EntityExtractionResult](entityextractionresult.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c143a6ec-62ad-4d48-b844-b1ad88054bc1
-description: Das UserConfigurationProperties-Element gibt die Eigenschaftentypen in einem Vorgang GetUserConfiguration abgerufen.
-ms.openlocfilehash: 4f993765bb7c36f28a41a3f2fa7e28698a3f709e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UserConfigurationProperties-Element gibt die Eigenschaftentypen an, die in einem GetUserConfiguration-Vorgang abgerufen werden sollen.
+ms.openlocfilehash: af6bee64516a7410d96ecc7581e8e819f550ddc1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839440"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466493"
 ---
 # <a name="userconfigurationproperties"></a>UserConfigurationProperties
 
-Das **UserConfigurationProperties** -Element gibt die Eigenschaftentypen in einem Vorgang GetUserConfiguration abgerufen. 
+Das **UserConfigurationProperties** -Element gibt die Eigenschaftentypen an, die in einem GetUserConfiguration-Vorgang abgerufen werden sollen. 
   
 ```xml
 <UserConfigurationProperties>Id | Dictionary | XmlData | BinaryData | All</UserConfigurationProperties>
@@ -44,31 +44,31 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUserConfiguration](getuserconfiguration.md) <br/> |Gibt eine Anforderung zum Abrufen einer Benutzer-Konfigurationsobjekt.  <br/> |
+|[GetUserConfiguration](getuserconfiguration.md) <br/> |Gibt eine Anforderung zum Abrufen eines Benutzer Konfigurationsobjekts an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Die folgende Tabelle enthält die möglichen Werte für das **UserConfigurationProperties** -Element. 
+In der folgenden Tabelle sind die möglichen Werte für das **UserConfigurationProperties** -Element aufgeführt. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Id  <br/> |Gibt die ID-Eigenschaft an.  <br/> |
-|Dictionary  <br/> |Gibt die Eigenschaftentypen Wörterbuch an.  <br/> |
-|XmlData  <br/> |Gibt die Typen von XML-Daten an.  <br/> |
-|BinaryData  <br/> |Gibt Binärdaten Eigenschaftentypen.  <br/> |
-|Alle  <br/> |Gibt den Bezeichner, Wörterbuch, XML-Daten und Eigenschaftentypen Binärdaten.  <br/> |
+|Id  <br/> |Gibt die Identifier-Eigenschaft an.  <br/> |
+|Wörterbuch  <br/> |Gibt Wörterbucheigenschaften Typen an.  <br/> |
+|XMLDATA  <br/> |Gibt XML-Dateneigenschaften Typen an.  <br/> |
+|BinaryData  <br/> |Gibt binäre Dateneigenschaften Typen an.  <br/> |
+|Alle  <br/> |Gibt die Typenbezeichner, Wörterbuch, XML-Daten und Binärdaten an.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

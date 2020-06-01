@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 628acf0b-3ebc-42f1-8ce2-7a02b4c8141f
-description: Das SetUserOofSettingsRequest-Element enthält die Argumente verwendet, um ein Postfach des Benutzers Out of Office (OOF) Einstellungen festzulegen.
-ms.openlocfilehash: ed54bb1d066da7b15605fb81931a6ef75dfc61bf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SetUserOofSettingsRequest-Element enthält die Argumente, mit denen die Abwesenheit (Out of Office, OOF) Einstellungen eines Postfachbenutzers festgelegt werden.
+ms.openlocfilehash: 10edc9809fd72f80c316de1c6688eaedec4f93df
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831474"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466150"
 ---
 # <a name="setuseroofsettingsrequest"></a>SetUserOofSettingsRequest
 
-Das **SetUserOofSettingsRequest** -Element enthält die Argumente verwendet, um ein Postfach des Benutzers Out of Office (OOF) Einstellungen festzulegen. 
+Das **SetUserOofSettingsRequest** -Element enthält die Argumente, mit denen die Abwesenheit (Out of Office, OOF) Einstellungen eines Postfachbenutzers festgelegt werden. 
   
 ```xml
 <SetUserOofSettingsRequest>
@@ -43,32 +43,32 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Postfach (Verfügbarkeit)](mailbox-availability.md) <br/> |Identifiziert den Postfachbenutzer für eine Anforderung SetUserOofSettings oder GetUserOofSettings.  <br/> |
-|[' UserOofSettings '](useroofsettings.md) <br/> |Gibt die OOF-Einstellungen.  <br/> |
+|[Postfach (Verfügbarkeit)](mailbox-availability.md) <br/> |Identifiziert den Postfachbenutzer für eine SetUserOofSettings-oder GetUserOofSettings-Anforderung.  <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |Gibt die Abwesenheitseinstellungen an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird eine Anforderung SetUserOofSettings legt eine OOF-Einstellung für zehn Tage fest.
+Im folgenden Beispiel einer SetUserOofSettings-Anforderung wird eine Abwesenheitseinstellung für zehn Tage festgelegt.
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -87,13 +87,13 @@ Im folgenden Beispiel wird eine Anforderung SetUserOofSettings legt eine OOF-Ein
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

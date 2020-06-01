@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a255edd9-9904-4fd7-8be6-db692c74202d
-description: Das GetFederatedDirectoryGroupResponse-Element ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: badde5c6360deb399cbc35707008822962e9c1c5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetFederatedDirectoryGroupResponse-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 10453322db2e94788115bd6d363c936044d53d49
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758667"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466178"
 ---
 # <a name="getfederateddirectorygroupresponse"></a>GetFederatedDirectoryGroupResponse
 
-Das **GetFederatedDirectoryGroupResponse** -Element ist nur zur internen Verwendung vorgesehen. 
+Das **GetFederatedDirectoryGroupResponse** -Element ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

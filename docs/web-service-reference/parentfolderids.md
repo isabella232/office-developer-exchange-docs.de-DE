@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e7998023-e5e0-465c-91fa-2aa6d1559f64
-description: Das ParentFolderIds-Element identifiziert Ordner für die FindItem und FindFolder Vorgänge zu suchen.
-ms.openlocfilehash: 7c4dcc98d1cabc8e97f2846880c73111dd307dfb
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das ParentFolderIds-Element identifiziert Ordner für die zu durchsuchenden FindItem-und FindFolder-Vorgänge.
+ms.openlocfilehash: 6bc4b9cfe96c6c83cbeb623ec176e33177356bbc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354169"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465429"
 ---
 # <a name="parentfolderids"></a>ParentFolderIds
 
-Das **ParentFolderIds** -Element identifiziert Ordner für die FindItem und FindFolder Vorgänge zu suchen. 
+Das **ParentFolderIds** -Element identifiziert Ordner für die zu durchsuchenden FindItem-und FindFolder-Vorgänge. 
   
 ```xml
 <ParentFolderIds>
@@ -49,29 +49,29 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Enthält den Schlüssel-ID und Ändern eines Ordners. Das **ParentFolderIds** -Element muss dieses Element oder das [DistinguishedFolderId](distinguishedfolderid.md) -Element verwenden.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifiziert die Microsoft Exchange Server 2007-Ordner, die nach Namen verwiesen werden können. Das **ParentFolderIds** -Element muss dieses Element oder die [FolderId](folderid.md) -Element verwenden.  <br/> |
+|[FolderId](folderid.md) <br/> |Enthält den Bezeichner und den Änderungsschlüssel eines Ordners. Das **ParentFolderIds** -Element muss entweder dieses Element oder das [DistinguishedFolderId](distinguishedfolderid.md) -Element verwenden.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifiziert Microsoft Exchange Server 2007 Ordner, auf die über den Namen verwiesen werden kann. Das **ParentFolderIds** -Element muss entweder dieses Element oder das [folderin](folderid.md) -Element verwenden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindFolder](findfolder.md) <br/> |Definiert eine Anforderung zum Ordner in einem Postfach zu identifizieren.  <br/> |
-|[FindItem](finditem.md) <br/> |Definiert eine Anforderung zum Suchen von Elementen in einem Postfach an.  <br/> |
-|[ResolveNames](resolvenames.md) <br/> |Definiert eine Anforderung zum Auflösen von Names nicht eindeutig.  <br/> |
+|[FindFolder](findfolder.md) <br/> |Definiert eine Anforderung zum Identifizieren von Ordnern in einem Postfach.  <br/> |
+|[FindItem](finditem.md) <br/> |Definiert eine Anforderung zum Suchen von Elementen in einem Postfach.  <br/> |
+|[ResolveNames](resolvenames.md) <br/> |Definiert eine Anforderung zum Auflösen eindeutiger Namen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Element **ParentFolderIds** muss die [FolderId](folderid.md) oder das [DistinguishedFolderId](distinguishedfolderid.md) -Element verwenden. Für die Suche kann eine unbegrenzte Anzahl von Ordnern definiert werden. 
+Das **ParentFolderIds** -Element muss entweder die [Folder](folderid.md) -oder das [DistinguishedFolderId](distinguishedfolderid.md) -Element verwenden. Für die Suche kann eine unbegrenzte Anzahl von Ordnern definiert werden. 
   
 ## <a name="example"></a>Beispiel
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <FindFolder Traversal="Shallow" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindFolder Traversal="Shallow" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <FolderShape>
         <t:BaseShape>Default</t:BaseShape>
       </FolderShape>
@@ -83,13 +83,13 @@ Das Element **ParentFolderIds** muss die [FolderId](folderid.md) oder das [Disti
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

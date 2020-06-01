@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 259a1f62-b235-4964-88bf-2d1f1c05a563
-description: Rule-Element enthält eine einzige Regel und eine Regel im Postfach des Benutzers darstellt.
-ms.openlocfilehash: b1f9f058213543633335db11f03729964baf98ad
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Rule-Element enthält eine einzelne Regel und stellt eine Regel im Postfach eines Benutzers dar.
+ms.openlocfilehash: cdbd21df235a62a9e201e1eaae1d82a8ac10cdd2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831259"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44465079"
 ---
 # <a name="rule-ruletype"></a>Regel (RuleType)
 
-**Rule** -Element enthält eine einzige Regel und eine Regel im Postfach des Benutzers darstellt. 
+Das **rule** -Element enthält eine einzelne Regel und stellt eine Regel im Postfach eines Benutzers dar. 
   
 ```XML
 <Rule>
@@ -50,37 +50,37 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Regel-ID](ruleid.md) <br/> |Gibt die Kennung für die Regel an.  <br/> |
-|[DisplayName (Zeichenfolge)](displayname-string.md) <br/> |Enthält den Anzeigenamen einer Regel an.  <br/> |
-|[Priority](priority.md) <br/> |Gibt die Reihenfolge, in der ist eine Regel ausgeführt werden soll.  <br/> |
+|[RuleId](ruleid.md) <br/> |Gibt die Regel-ID an.  <br/> |
+|[DisplayName (Zeichenfolge)](displayname-string.md) <br/> |Enthält den Anzeigenamen einer Regel.  <br/> |
+|[Priority](priority.md) <br/> |Gibt die Reihenfolge an, in der eine Regel ausgeführt werden soll.  <br/> |
 |[IsEnabled](isenabled.md) <br/> |Gibt an, ob die Regel aktiviert ist.  <br/> |
-|[IsNotSupported](isnotsupported.md) <br/> |Gibt an, ob die Regel mit dem verwalteten Code-APIs nicht geändert werden kann.  <br/> |
+|[IsNotSupported](isnotsupported.md) <br/> |Gibt an, ob die Regel mit den APIs für verwalteten Code nicht geändert werden kann.  <br/> |
 |[IsInError](isinerror.md) <br/> |Gibt an, ob sich die Regel in einem Fehlerzustand befindet.  <br/> |
-|[Bedingungen](conditions.md) <br/> |Identifiziert die Bedingungen, die beim erfüllt, Regelaktionen für eine Regel ausgelöst wird.  <br/> |
-|[Ausnahmen](exceptions.md) <br/> |Identifiziert die Ausnahmen, die alle verfügbaren Regel Ausnahmebedingungen für die Posteingangsregel an darstellen.  <br/> |
-|[Aktionen](actions.md) <br/> |Stellt die Aktionen, die auf eine Nachricht durchgeführt werden, wenn die Bedingungen erfüllt sind.  <br/> |
+|[Bedingungen:](conditions.md) <br/> |Gibt die Bedingungen an, die bei der Erfüllung der Regelaktionen für eine Regel ausgelöst werden.  <br/> |
+|[Ausnahmen](exceptions.md) <br/> |Identifiziert die Ausnahmen, die alle verfügbaren Regel Ausnahmebedingungen für die Posteingangsregel darstellen.  <br/> |
+|[Aktionen](actions.md) <br/> |Stellt die Aktionen dar, die für eine Nachricht ausgeführt werden sollen, wenn die Bedingungen erfüllt sind.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[CreateRuleOperation](createruleoperation.md) <br/> |Stellt einen Vorgang zum Erstellen einer neuen Regel dar.  <br/> |
-|[InboxRules](inboxrules.md) <br/> |Stellt ein Array von Regeln in das Postfach des Benutzers an.  <br/> |
+|[InboxRules](inboxrules.md) <br/> |Stellt ein Array von Regeln im Postfach des Benutzers dar.  <br/> |
 |[SetRuleOperation](setruleoperation.md) <br/> |Stellt einen Vorgang zum Aktualisieren einer vorhandenen Regel dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |

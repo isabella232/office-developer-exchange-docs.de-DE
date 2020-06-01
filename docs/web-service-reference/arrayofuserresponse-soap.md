@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 3e5cf65c-8d0b-4fd9-8207-56c07f914acd
-description: Das ArrayOfUserResponse-Element enthält ein Array von Elementen UserResponse (SOAP).
-ms.openlocfilehash: 7fab572c5e783a09c37e07492ddcd55d5ba34c84
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ArrayOfUserResponse-Element enthält ein Array von User Response-Elementen (SOAP).
+ms.openlocfilehash: fb14b6cd714a0561e9c8e17bd1779d955ba16dfc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757382"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44466010"
 ---
 # <a name="arrayofuserresponse-soap"></a>ArrayOfUserResponse (SOAP)
 
-Das **ArrayOfUserResponse** -Element enthält ein Array von Elementen [UserResponse (SOAP)](userresponse-soap.md) . 
+Das **ArrayOfUserResponse** -Element enthält ein Array von [User Response-Elementen (SOAP)](userresponse-soap.md) . 
   
 ```XML
 <ArrayOfUserResponse>
@@ -39,7 +39,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserResponse (SOAP)](userresponse-soap.md) <br/> |Enthält die angeforderten Einstellungen für den angegebenen Benutzer.  <br/> |
+|[User Response (SOAP)](userresponse-soap.md) <br/> |Enthält die angeforderten Einstellungen für den angegebenen Benutzer.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -49,13 +49,13 @@ Keine.
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

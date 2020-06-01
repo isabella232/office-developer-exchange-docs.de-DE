@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0f92aa41-1499-4d96-a973-24529ec64d24
-description: Das PostalAddressAttributedValue-Element gibt eine Instanz des ein Array von Postadressen und deren zugeordneten Hinweise.
-ms.openlocfilehash: f2b8b9818e39780b934522910d016875dbe5af2e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PostalAddressAttributedValue-Element gibt eine Instanz eines Arrays von Postadressen und deren zugeordneten Zuschreibungen an.
+ms.openlocfilehash: bf5becca8ee0f143728010c5d0b1ed5a380838ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830854"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465380"
 ---
 # <a name="postaladdressattributedvalue"></a>PostalAddressAttributedValue
 
-Das **PostalAddressAttributedValue** -Element gibt eine Instanz des ein Array von Postadressen und deren zugeordneten Hinweise. 
+Das **PostalAddressAttributedValue** -Element gibt eine Instanz eines Arrays von Postadressen und deren zugeordneten Zuschreibungen an. 
   
 ```XML
 <PostalAddressAttributedValue>
@@ -37,23 +37,23 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[Wert (PersonaPostalAddressType)](value-personapostaladdresstype.md) | [Marken (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
+[Wert (PersonaPostalAddressType)](value-personapostaladdresstype.md)  |  [Zuordnungen (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[BusinessAddresses](businessaddresses.md) | [HomeAddresses](homeaddresses.md) | [OtherAddresses](otheraddresses.md)
+[BusinessAddresses](businessaddresses.md)  |  [HomeAddresses](homeaddresses.md)  |  [OtherAddresses](otheraddresses.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

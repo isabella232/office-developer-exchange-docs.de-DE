@@ -1,5 +1,5 @@
 ---
-title: TelephoneAccessNumbers (UM-Webdienst)
+title: TelephoneAccessNumbers (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,27 +10,27 @@ api_name:
 api_type:
 - schema
 ms.assetid: b8990f8a-12c4-4dac-b426-1a767cf95a6e
-description: Das TelephoneAccessNumbers-Element enthält einen Wert, der eine Liste von Telefonnummern handelt, mit denen Benutzer Zugriff auf Unified Messaging, wie in einer Antwort auf eine Anforderung GetUMProperties-Operation (UM-Webdienst) zurückgegeben.
-ms.openlocfilehash: c14ad2acfe860afbfdd95570075c2a36a8e21cab
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das TelephoneAccessNumbers-Element enthält einen Wert, bei dem es sich um eine Liste von Telefonnummern handelt, die Benutzer für den Zugriff auf Unified Messaging verwenden können, wie Sie in einer Antwort auf eine Anforderung des GetUMProperties-Vorgangs (um-Webdienst) zurückgegeben werden.
+ms.openlocfilehash: b39de192203526c059bcb7ac9b29b7193a8d5a65
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839171"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466640"
 ---
-# <a name="telephoneaccessnumbers-um-web-service"></a>TelephoneAccessNumbers (UM-Webdienst)
+# <a name="telephoneaccessnumbers-um-web-service"></a>TelephoneAccessNumbers (um-Webdienst)
 
-Das **TelephoneAccessNumbers** -Element enthält einen Wert, der eine Liste von Telefonnummern handelt, mit denen Benutzer Zugriff auf Unified Messaging, wie in einer Antwort auf eine Anforderung [GetUMProperties-Vorgang (UM-Webdienst)](getumproperties-operation-um-web-service.md) zurückgegeben. 
+Das **TelephoneAccessNumbers** -Element enthält einen Wert, bei dem es sich um eine Liste von Telefonnummern handelt, die Benutzer für den Zugriff auf Unified Messaging verwenden können, wie Sie in einer Antwort auf eine Anforderung des [GetUMProperties-Vorgangs (um-Webdienst)](getumproperties-operation-um-web-service.md) zurückgegeben werden. 
   
-[GetUMPropertiesResponse (UM-Webdienst)](getumpropertiesresponse-um-web-service.md)
+[GetUMPropertiesResponse (um-Webdienst)](getumpropertiesresponse-um-web-service.md)
   
-[TelephoneAccessNumbers (UM-Webdienst)](telephoneaccessnumbers-um-web-service.md)
+[TelephoneAccessNumbers (um-Webdienst)](telephoneaccessnumbers-um-web-service.md)
   
 ```xml
 <TelephoneAccessNumbers/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -47,24 +47,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUMPropertiesResponse (UM-Webdienst)](getumpropertiesresponse-um-web-service.md) <br/> |Definiert eine Antwort auf eine [GetUMProperties-Vorgang (UM-Webdienst)](getumproperties-operation-um-web-service.md) an.  <br/> |
+|[GetUMPropertiesResponse (um-Webdienst)](getumpropertiesresponse-um-web-service.md) <br/> |Definiert eine Antwort auf eine [GetUMProperties-Vorgangsanforderung (um-Webdienst)](getumproperties-operation-um-web-service.md) .  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert ist erforderlich.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[GetUMProperties-Vorgang (UM-Webdienst)](getumproperties-operation-um-web-service.md)
+[GetUMProperties-Vorgang (um-Webdienst)](getumproperties-operation-um-web-service.md)
 

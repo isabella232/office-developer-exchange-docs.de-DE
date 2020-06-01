@@ -1,5 +1,5 @@
 ---
-title: ResetPINResponse (UM-Webdienst)
+title: ResetPINResponse (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 42aac88f-8513-416d-8be4-77378b71a45b
-description: Das ResetPINResponse-Element definiert eine Antwort auf eine ResetPIN-Vorgang (UM-Webdienst) an.
-ms.openlocfilehash: 9c85909a5a03fd4c470468bd025a4de650472423
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ResetPINResponse-Element definiert eine Antwort auf eine Anforderung des ResetPIN-Vorgangs (um-Webdienst).
+ms.openlocfilehash: a30d75b91823ebc021cfffa4e77be04fc6cd7951
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831154"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44466206"
 ---
-# <a name="resetpinresponse-um-web-service"></a>ResetPINResponse (UM-Webdienst)
+# <a name="resetpinresponse-um-web-service"></a>ResetPINResponse (um-Webdienst)
 
-Das ResetPINResponse-Element definiert eine Antwort auf eine [ResetPIN-Vorgang (UM-Webdienst)](resetpin-operation-um-web-service.md) an. 
+Das ResetPINResponse-Element definiert eine Antwort auf eine Anforderung des [ResetPIN-Vorgangs (um-Webdienst)](resetpin-operation-um-web-service.md) . 
   
-[ResetPINResponse (UM-Webdienst)](resetpinresponse-um-web-service.md)
+[ResetPINResponse (um-Webdienst)](resetpinresponse-um-web-service.md)
   
 ```xml
 <ResetPINResponse />
@@ -49,18 +49,18 @@ Keine.
 
 Ein Textwert ist nicht erforderlich.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[ResetPIN-Vorgang (UM-Webdienst)](resetpin-operation-um-web-service.md)
+[ResetPIN-Vorgang (um-Webdienst)](resetpin-operation-um-web-service.md)
 

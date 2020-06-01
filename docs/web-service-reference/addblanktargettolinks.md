@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 30180298-2501-4369-9b8f-2f7663f02336
-description: Das AddBlankTargetToLinks-Element gibt an, dass das Zielattribut in HTML-Links werden festgelegt, um ein neues Fenster zu öffnen.
-ms.openlocfilehash: 8a47e44d89bcc84bc0e8b61d45f18ff3182f7870
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AddBlankTargetToLinks-Element gibt an, dass das target-Attribut in HTML-Links so festgelegt ist, dass ein neues Fenster geöffnet wird.
+ms.openlocfilehash: 1d4d36c1f4b98ebee96baea683c40527d2a9ec27
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757216"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465043"
 ---
 # <a name="addblanktargettolinks"></a>AddBlankTargetToLinks
 
-Das **AddBlankTargetToLinks** -Element gibt an, dass das Zielattribut in HTML-Links werden festgelegt, um ein neues Fenster zu öffnen. 
+Das **AddBlankTargetToLinks** -Element gibt an, dass das target-Attribut in HTML-Links so festgelegt ist, dass ein neues Fenster geöffnet wird. 
   
 ```XML
 <AddBlankTargetToLinks> true | false </AddBlankTargetToLinks>
@@ -41,13 +41,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemShape](itemshape.md) <br/> | Identifiziert die Elementeigenschaften und Inhalte in **GetItem**, **FindItem**, **GetConversationItems** oder **SyncFolderItems** Antwort enthalten.<br/><br/>  Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>  `/GetItem/ItemShape` <br/>  `/FindItem/ItemShape` <br/>  `/SyncFolderItems/ItemShape` <br/>  `/GetConversationItems/ItemShape` <br/> |
+|[ItemShape](itemshape.md) <br/> | Identifiziert die Elementeigenschaften und Inhalte, die in einer **GetItem**-, **FindItem**-, **GetConversationItems** -oder **SyncFolderItems** -Antwort enthalten sein sollen.<br/><br/>  Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>  `/GetItem/ItemShape` <br/>  `/FindItem/ItemShape` <br/>  `/SyncFolderItems/ItemShape` <br/>  `/GetConversationItems/ItemShape` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **AddBlankTargetToLinks** -Element gibt an, dass alle HTML-Links festgelegt wird, um ein neues Fenster zu öffnen. Der Wert **false** gibt an, dass HTML-Links im aktuellen Fenster geöffnet wird. 
+Der Textwert **true** für das **AddBlankTargetToLinks** -Element gibt an, dass alle HTML-Links festgelegt werden, um ein neues Fenster zu öffnen. Der Wert **false** gibt an, dass HTML-Links im aktuellen Fenster geöffnet werden. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element ist optional.
   
@@ -55,13 +55,13 @@ Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

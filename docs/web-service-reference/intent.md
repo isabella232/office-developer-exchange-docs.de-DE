@@ -1,5 +1,5 @@
 ---
-title: Zweck
+title: Absicht
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1e9a5bae-5b24-43cd-9b83-a21da58c9fdd
-description: Das Intent-Element ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: 4a9fe2dcabc3124f3f21a8edce46bf6e1591cc06
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Intent-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: bf82e7f1054a20de7e5ce8b9b0d5889669570a63
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829948"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465604"
 ---
-# <a name="intent"></a>Zweck
+# <a name="intent"></a>Absicht
 
-Das Element **beabsichtigt** ist nur zur internen Verwendung vorgesehen. 
+Das **Intent** -Element ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,17 +35,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

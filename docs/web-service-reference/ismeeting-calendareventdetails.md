@@ -1,5 +1,5 @@
 ---
-title: IsMeeting (CalendarEventDetails)
+title: Ismeeting (CalendarEventDetails)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: dd6900e4-e4a3-471a-909d-7240ebec501b
-description: Das IsMeeting-Element gibt an, ob das Kalenderereignis gehört zu einer Besprechung oder eines Termins.
-ms.openlocfilehash: f3f6e0cc5fbfe29e5a818d69794cbaf5b6855962
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ismeeting-Element gibt an, ob es sich bei dem Kalenderereignis um eine Besprechung oder einen Termin handelt.
+ms.openlocfilehash: b75dfba203177d6451f3847bf8d1f68014612e1c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830046"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465996"
 ---
-# <a name="ismeeting-calendareventdetails"></a>IsMeeting (CalendarEventDetails)
+# <a name="ismeeting-calendareventdetails"></a>Ismeeting (CalendarEventDetails)
 
-Das **IsMeeting** -Element gibt an, ob das Kalenderereignis gehört zu einer Besprechung oder eines Termins. 
+Das **ismeeting** -Element gibt an, ob es sich bei dem Kalenderereignis um eine Besprechung oder einen Termin handelt. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -37,7 +37,7 @@ Das **IsMeeting** -Element gibt an, ob das Kalenderereignis gehört zu einer Bes
   
 [CalendarEventDetails](calendareventdetails.md)
   
-[IsMeeting (CalendarEventDetails)](ismeeting-calendareventdetails.md)
+[Ismeeting (CalendarEventDetails)](ismeeting-calendareventdetails.md)
   
 ```xml
 <IsMeeting>true or false</IsMeeting>
@@ -60,23 +60,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CalendarEventDetails](calendareventdetails.md) <br/> |Enthält zusätzliche Informationen für ein Ereignis im Kalender.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
+|[CalendarEventDetails](calendareventdetails.md) <br/> |Enthält zusätzliche Informationen für ein Calendar-Ereignis.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert ist erforderlich, wenn dieses Element in der Antwort zurückgegeben wird. Dieses Element ist erforderlich, wenn das [CalendarEventDetails](calendareventdetails.md) -Element verwendet wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Unterschied zwischen einer Besprechung und eines Termins ist, dass eine Besprechung ein Kalenderelement ist, die Teilnehmer enthält. ein Termin ist ein Kalenderelement, die Teilnehmer nicht enthalten ist.
+Der Unterschied zwischen einer Besprechung und einem Termin besteht darin, dass es sich bei einer Besprechung um ein Kalenderelement handelt, das Teilnehmer enthält. ein Termin ist ein Kalenderelement, das keine Teilnehmer enthält.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -90,5 +90,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

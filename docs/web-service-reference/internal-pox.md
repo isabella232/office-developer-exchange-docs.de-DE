@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 69c22546-ebd6-4a03-b0b4-bbac72ec5551
-description: Das interne Element enthält die Auflistung von URLs, die ein Client zum Verbinden mit Exchange von innerhalb des Netzwerks der Organisation verwenden können.
-ms.openlocfilehash: 0dc5b679af98b52f15ef3b40181c2d97f102f373
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das internal-Element enthält die Auflistung von URLs, die ein Client für die Verbindung mit Exchange aus dem Netzwerk der Organisation verwenden kann.
+ms.openlocfilehash: 8164a018a11f9bae9c3abcbfebf6cf0694ca4183
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829946"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465597"
 ---
 # <a name="internal-pox"></a>Interne (POX)
 
-Das **Internal** -Element enthält die Auflistung von URLs, die ein Client zum Verbinden mit Exchange von innerhalb des Netzwerks der Organisation verwenden können. 
+Das **internal** -Element enthält die Auflistung von URLs, die ein Client für die Verbindung mit Exchange aus dem Netzwerk der Organisation verwenden kann. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -52,18 +52,18 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OWAUrl (POX)](owaurl-pox.md) <br/> |Beschreibt die URL und Authentifizierung Schema, das verwendet wird, auf einen bestimmten Computer zugreifen, der Microsoft Exchange Server ausgeführt wird, hat die Clientzugriffs-Serverrolle installiert, die Outlook Web Access gehostet wird.  <br/> |
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist. Dieses **Protokoll** -Element hat nur zwei untergeordnete Elemente: ein Element einer [Typ (POX)](type-pox.md) , das Verbindungsprotokoll und ein [ASUrl (POX)](asurl-pox.md) -Element, EWS-Endpunkts für den Webdienst Verfügbarkeit angeben.  <br/> |
+|[OWAUrl (POX)](owaurl-pox.md) <br/> |Beschreibt die URL und das Authentifizierungsschema, das für den Zugriff auf einen bestimmten Computer verwendet wird, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist, die Outlook Web Access hostet.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist. Dieses **Protokoll** Element hat nur zwei untergeordnete Elemente: ein [Type (POX)](type-pox.md) -Element, das das Verbindungsprotokoll angibt, und ein [vom asurl (POX)](asurl-pox.md) -Element, das den EWS-Endpunkt für den Verfügbarkeits-Webdienst angibt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **Internal** -Element ist ein optionales untergeordnetes Element des **Protokoll** -Elements. 
+Das **internal** -Element ist ein optionales untergeordnetes Element des **Protocol** -Elements. 
   
 ## <a name="see-also"></a>Siehe auch
 

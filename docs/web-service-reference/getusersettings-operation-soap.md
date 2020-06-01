@@ -8,39 +8,39 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 758d965c-ef63-4de4-9120-e293abf14ff8
-description: Der Vorgang GetUserSettings enthält eine Abfrage für Benutzer Client Access-Konfiguration.
-ms.openlocfilehash: 8bb8f766da3419ea33f89716e588a22d3924e1a4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetUserSettings-Vorgang enthält eine Abfrage für die Clientzugriffs Konfiguration von Benutzern.
+ms.openlocfilehash: e274fd4e1ca954ea25ea91a52e363c9a434b290a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829704"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466143"
 ---
 # <a name="getusersettings-operation-soap"></a>GetUserSettings-Vorgang (SOAP)
 
-Der Vorgang **GetUserSettings** enthält eine Abfrage für Benutzer Client Access-Konfiguration. 
+Der **GetUserSettings** -Vorgang enthält eine Abfrage für die Clientzugriffs Konfiguration von Benutzern. 
   
-## <a name="getusersettings-request-example"></a>Anforderungsbeispiel GetUserSettings
+## <a name="getusersettings-request-example"></a>GetUserSettings-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende XML-Beispiel zeigt einen AutoErmittlung-Anforderungstext, der Anforderungen des Benutzers Anzeigename, definierten Namen, bereitstellungs-ID, Postfachserver, distinguished Name des Postfachs, Active Directory-Server, Client Access Server-Version und unterstützte Exchange Web Services-Schemas.
+Das folgende XML-Beispiel zeigt einen Auto Ermittlungs Anforderungstext, der den Anzeigenamen, den Distinguished Name, die Bereitstellungs-ID, den Postfachserver, den Distinguished Name des Postfachs, Active Directory Server, die Client Zugriffsserver-Version und unterstützte Exchange Webdienste-Schemas anfordert.
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover"      
+<soap:Envelope xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover"      
                xmlns:wsa="http://www.w3.org/2005/08/addressing" 
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"      
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <a:RequestedServerVersion>Exchange2010</a:RequestedServerVersion>
-    <wsa:Action>http://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettings</wsa:Action>
+    <wsa:Action>https://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettings</wsa:Action>
     <wsa:To>https://myserver.contoso.com/autodiscover/autodiscover.svc</wsa:To>
   </soap:Header>
   <soap:Body>
-    <a:GetUserSettingsRequestMessage xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <a:GetUserSettingsRequestMessage xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <a:Request>
         <a:Users>
           <a:User>
@@ -66,13 +66,13 @@ Das folgende XML-Beispiel zeigt einen AutoErmittlung-Anforderungstext, der Anfor
 
 ### <a name="request-elements"></a>Anfordern von Elementen
 
-Die folgenden Elemente werden im Textkörper Anforderung verwendet:
+Die folgenden Elemente werden im Anforderungstext verwendet:
   
 - [GetUserSettingsRequestMessage (SOAP)](getusersettingsrequestmessage-soap.md)
     
 - [Postfach (SOAP)](mailbox-soap.md)
     
-- [Anforderung (SOAP)](request-soap.md)
+- [Request (SOAP)](request-soap.md)
     
 - [RequestedServerVersion (SOAP)](requestedserverversion-soap.md)
     
@@ -84,21 +84,21 @@ Die folgenden Elemente werden im Textkörper Anforderung verwendet:
     
 - [Benutzer (SOAP)](users-soap.md)
     
-## <a name="getusersettings-response-example"></a>GetUserSettings antwortbeispiel
+## <a name="getusersettings-response-example"></a>GetUserSettings-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort **GetUserSettings** . 
+Das folgende Beispiel zeigt eine erfolgreiche **GetUserSettings** -Antwort. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:a="http://www.w3.org/2005/08/addressing">
   <s:Header>
-    <a:Action s:mustUnderstand="1">http://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettingsResponse</a:Action>
+    <a:Action s:mustUnderstand="1">https://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettingsResponse</a:Action>
   </s:Header>
   <s:Body>
-  <GetUserSettingsResponseMessage xmlns="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+  <GetUserSettingsResponseMessage xmlns="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <Response xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <ErrorCode>NoError</ErrorCode>
         <ErrorMessage />
@@ -150,7 +150,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort **GetUserSettings** .
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a>Antwortelemente
+### <a name="response-elements"></a>Response-Elemente
 
 Folgende Elemente werden im Antworttext verwendet:
   
@@ -166,7 +166,7 @@ Folgende Elemente werden im Antworttext verwendet:
     
 - [Antwort (SOAP)](response-soap.md)
     
-- [UserResponse (SOAP)](userresponse-soap.md)
+- [User Response (SOAP)](userresponse-soap.md)
     
 - [UserResponses (SOAP)](userresponses-soap.md)
     
@@ -187,5 +187,5 @@ Folgende Elemente werden im Antworttext verwendet:
 [GetFederationInformation-Vorgang (SOAP)](getfederationinformation-operation-soap.md)
 
 
-[SOAP-Autodiscover XML-Elemente für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[XML-Elemente der SOAP-AutoErmittlung für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

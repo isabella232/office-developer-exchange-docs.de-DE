@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6947dd03-9727-4379-9b9d-42373fa120c7
-description: Das Element UserConfigurationName stellt den Namen eines Benutzers Configuration-Objekts. Der Benutzername des Configuration-Objekt ist der Bezeichner für eine Benutzer-Konfigurationsobjekt.
-ms.openlocfilehash: 33b3fc316a06b8088eb20a71788a9e6a3394d0d4
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das UserConfigurationName-Element stellt den Namen eines Benutzer Konfigurationsobjekts dar. Der Benutzer Konfigurationsobjekt Name ist der Bezeichner für ein Benutzer Konfigurationsobjekt.
+ms.openlocfilehash: 020b55919f7f81602a5eb072652d82168607d306
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354302"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466031"
 ---
 # <a name="userconfigurationname"></a>UserConfigurationName
 
-Das Element **UserConfigurationName** stellt den Namen eines Benutzers Configuration-Objekts. Der Benutzername des Configuration-Objekt ist der Bezeichner für eine Benutzer-Konfigurationsobjekt. 
+Das **UserConfigurationName** -Element stellt den Namen eines Benutzer Konfigurationsobjekts dar. Der Benutzer Konfigurationsobjekt Name ist der Bezeichner für ein Benutzer Konfigurationsobjekt. 
   
 ```XML
 <UserConfigurationName Name="">
@@ -45,36 +45,36 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Name** <br/> |Enthält einen String-Wert, der den Namen eines Benutzers Configuration-Objekts darstellt. Dieses Attribut ist erforderlich.  <br/> |
+|**Name** <br/> |Enthält einen String-Wert, der den Namen eines Benutzer Konfigurationsobjekts darstellt. Dieses Attribut ist erforderlich.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Stellt den Ordner Bezeichner des Ordners, der das Benutzerobjekt Konfiguration enthält.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Stellt einen definierten Ordnernamen des Ordners, der das Benutzerobjekt Konfiguration enthält.  <br/> |
+|[FolderId](folderid.md) <br/> |Stellt den Ordner Bezeichner des Ordners dar, der das Benutzer Konfigurationsobjekt enthält.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Stellt einen Distinguished Folder-Namen des Ordners dar, der das Benutzer Konfigurationsobjekt enthält.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DeleteUserConfiguration](deleteuserconfiguration.md) <br/> |Stellt eine Anforderung zum Löschen einer Benutzer-Konfigurationsobjekt.  <br/> |
-|[GetUserConfiguration](getuserconfiguration.md) <br/> |Eine Anforderung zum Abrufen eines Benutzers Konfiguration-Objekts darstellt.  <br/> |
-|[UserConfiguration](userconfiguration.md) <br/> |Definiert einen einzelnen Benutzer-Konfigurationsobjekt.  <br/> |
+|[DeleteUserConfiguration](deleteuserconfiguration.md) <br/> |Stellt eine Anforderung zum Löschen eines Benutzer Konfigurationsobjekts dar.  <br/> |
+|[GetUserConfiguration](getuserconfiguration.md) <br/> |Stellt eine Anforderung zum Abrufen eines Benutzer Konfigurationsobjekts dar.  <br/> |
+|[UserConfiguration](userconfiguration.md) <br/> |Definiert ein einzelnes Benutzer Konfigurationsobjekt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

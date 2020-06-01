@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c5e0582d-c1e1-453b-93ed-c31165c82697
-description: Das InstallAppResponse-Element gibt die Antwort auf eine Anforderung InstallApp.
-ms.openlocfilehash: 8e8da720b3a38e979b3d83810bb798350822146c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das InstallAppResponse-Element gibt die Antwort auf eine InstallApp-Anforderung an.
+ms.openlocfilehash: 0f7690e2df7e71c4e478dec191671af24f96294b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829942"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465667"
 ---
 # <a name="installappresponse"></a>InstallAppResponse
 
-Das **InstallAppResponse** -Element gibt die Antwort auf eine Anforderung **InstallApp** . 
+Das **InstallAppResponse** -Element gibt die Antwort auf eine **InstallApp** -Anforderung an. 
   
 ```xml
 <InstallAppResponse ResponseClass="">
@@ -37,46 +37,46 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|ResponseClass  <br/> |Gibt die Klasse der Antwort.  <br/> |
+|ResponseClass  <br/> |Gibt die Klasse der Antwort an.  <br/> |
    
 #### <a name="responseclass"></a>ResponseClass
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Erfolg  <br/> |Gibt Erfolg an.  <br/> |
-|Warning  <br/> |Gibt eine Warnung an.  <br/> |
-|Fehler  <br/> |Gibt einen Fehler an.  <br/> |
+|Erfolg  <br/> |Gibt den Erfolg an.  <br/> |
+|Warnung  <br/> |Gibt eine Warnung an.  <br/> |
+|Fehler (ungefährer Wortlaut)  <br/> |Gibt einen Fehler an.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Derzeit nicht verwendet wird und für die zukünftige Verwendung reserviert.  <br/> |
-|[MessageText](messagetext.md) <br/> |Enthält einen beschreibenden Text für den Status der Antwort.  <br/> |
-|[MessageXml](messagexml.md) <br/> |Bietet zusätzliche Fehlerantwortinformationen.  <br/> |
-|[ResponseCode](responsecode.md) <br/> |Enthält Statusinformationen über die Anforderung.  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Wird derzeit nicht verwendet und für die zukünftige Verwendung reserviert.  <br/> |
+|[MessageText](messagetext.md) <br/> |Enthält eine Textbeschreibung des Status der Antwort.  <br/> |
+|[Messagexml verwendet](messagexml.md) <br/> |Bietet zusätzliche Fehlerantwortinformationen.  <br/> |
+|[ResponseCode](responsecode.md) <br/> |Stellt Statusinformationen zur Anforderung bereit.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **GetAppManifestsResponseMessage** -Element ist für Clients, die Exchange Online und Versionen von Microsoft Exchange Server beginnend mit Exchange 2013 abzielen. 
+Das **GetAppManifestsResponseMessage** -Element gilt für Clients, die auf Exchange Online und Versionen von Exchange Server, beginnend mit Exchange 2013, abzielen. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

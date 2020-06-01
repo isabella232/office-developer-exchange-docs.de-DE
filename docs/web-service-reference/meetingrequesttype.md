@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bcd5c97c-19aa-4b1d-a8e8-e8c4bd473dd9
-description: Das MeetingRequestType-Element beschreibt die Art der Besprechungsanfrage.
-ms.openlocfilehash: 7269587e2fa72aeb9070a7b53ee9215829729329
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MeetingRequestType-Element beschreibt den Typ der Besprechungsanfrage.
+ms.openlocfilehash: e90c44dd4124d698ca5ef7655f6429a7167673e6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830432"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44465786"
 ---
 # <a name="meetingrequesttype"></a>MeetingRequestType
 
-Das **MeetingRequestType** -Element beschreibt die Art der Besprechungsanfrage. 
+Das **MeetingRequestType** -Element beschreibt den Typ der Besprechungsanfrage. 
   
 ```xml
 <MeetingRequestType/>
@@ -48,27 +48,27 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Die folgende Tabelle enthält die möglichen Textwerte für dieses Element.
+Ein Textwert ist erforderlich. In der folgenden Tabelle sind die möglichen Text Werte für dieses Element aufgeführt.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|FullUpdate  <br/> |Die Besprechungsanfrage identifiziert als eine vollständige Aktualisierung auf eine vorhandene Anforderung. Eine vollständige Aktualisierung wurde aktualisiert, Zeit und informative Inhalte aufweisen.  <br/> |
-|InformationalUpdate  <br/> |Identifiziert die Besprechungsanfrage als informative Inhalte aufweisen, enthält, die aktualisiert werden.  <br/> |
-|NewMeetingRequest  <br/> |Identifiziert die Besprechungsanfrage als eine neue Besprechungsanfrage.  <br/> |
-|Keine  <br/> |Gibt an, dass die Besprechungsanfrage Typ nicht definiert ist.  <br/> |
-|Veraltet  <br/> |Die Besprechungsanfrage als veraltet identifiziert.  <br/> |
-|PrincipalWantsCopy  <br/> |Gibt an, dass die Besprechungsanfrage zu einem Prinzipal gehört, die Besprechungsnachrichten an die Stellvertretung weitergeleitet und seinen Kopien wie Informationszwecken gekennzeichnet hat.  <br/> |
-|SilentUpdate  <br/> |Die Besprechungsanfrage identifiziert als eine automatische Aktualisierung einer vorhandenen Besprechung.  <br/> |
+|FullUpdate  <br/> |Identifiziert die Besprechungsanfrage als vollständige Aktualisierung einer vorhandenen Anforderung. Eine vollständige Aktualisierung enthält aktualisierte Zeit-und Informationsinhalte.  <br/> |
+|InformationalUpdate  <br/> |Identifiziert die Besprechungsanfrage als nur mit aktualisierten Informationsinhalten.  <br/> |
+|NewMeetingRequest  <br/> |Identifiziert die Besprechungsanfrage als neue Besprechungsanfrage.  <br/> |
+|Keine  <br/> |Gibt an, dass der Typ der Besprechungsanfrage nicht definiert ist.  <br/> |
+|Veraltete  <br/> |Identifiziert die Besprechungsanfrage als veraltet.  <br/> |
+|PrincipalWantsCopy  <br/> |Gibt an, dass die Besprechungsanfrage einem Prinzipal gehört, der Besprechungsnachrichten an eine Stellvertretung weitergeleitet hat und seine Kopien als Information markiert hat.  <br/> |
+|SilentUpdate  <br/> |Identifiziert die Besprechungsanfrage als eine unbeaufsichtigte Aktualisierung für eine vorhandene Besprechung.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 21181ba3-9626-4284-9717-0b1c16948e8f
-description: Das Element SharedFolderId stellt den Bezeichner des freigegebenen Ordner mit der ID der lokalen Ordner, für die durch die Anforderung einer GetSharingFolder-Operation zurückgegeben werden sollen.
-ms.openlocfilehash: 6d4e541ef3cae89e413efa8cc5f1beaf651dc4dd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SharedFolderId-Element stellt den Bezeichner des freigegebenen Ordners dar, für den der lokale Ordner Bezeichner von einer GetSharingFolder-Vorgangsanforderung zurückgegeben werden soll.
+ms.openlocfilehash: 546e148540708725bcf335f39bf69d193124d210
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831477"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466122"
 ---
 # <a name="sharedfolderid"></a>SharedFolderId
 
-Das Element **SharedFolderId** stellt den Bezeichner des freigegebenen Ordner mit der ID der lokalen Ordner, für die eine Anforderung [GetSharingFolder Vorgang](getsharingfolder-operation.md) zurückgegeben werden sollen. 
+Das **SharedFolderId** -Element stellt den Bezeichner des freigegebenen Ordners dar, für den der lokale Ordner Bezeichner von einer [GetSharingFolder-Vorgangs](getsharingfolder-operation.md) Anforderung zurückgegeben werden soll. 
   
 ```xml
 <SharedFolderId/>
@@ -44,23 +44,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetSharingFolder](getsharingfolder.md) <br/> |Definiert eine Anforderung an den lokalen Ordner Bezeichner eines angegebenen freigegebenen Ordners abzurufen.  <br/> |
+|[GetSharingFolder](getsharingfolder.md) <br/> |Definiert eine Anforderung zum Abrufen der lokalen Ordner-ID eines angegebenen freigegebenen Ordners.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist eine Zeichenfolge, die den Bezeichner des freigegebenen Ordners darstellt, der lokalen Ordner Bezeichner für die durch eine Anforderung [GetSharingFolder Vorgang](getsharingfolder-operation.md) zurückgegeben werden sollen. 
+Der Textwert ist eine Zeichenfolge, die den Bezeichner des freigegebenen Ordners darstellt, für den die lokale Ordner-ID von einer [GetSharingFolder-Vorgangs](getsharingfolder-operation.md) Anforderung zurückgegeben werden soll. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

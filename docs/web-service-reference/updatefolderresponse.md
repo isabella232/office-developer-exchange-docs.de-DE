@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 31f47739-dc9c-46ba-9e3f-cce25dc85e6e
-description: Das UpdateFolderResponse-Element definiert die Antwort auf eine Anforderung UpdateFolder.
-ms.openlocfilehash: be85d8567f02760423aaee51799a5ef8e13a1729
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UpdateFolderResponse-Element definiert die Antwort auf eine UpdateFolder-Anforderung.
+ms.openlocfilehash: 85b610d649b84c14e892ea81fe74ad53b331e67f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839352"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466619"
 ---
 # <a name="updatefolderresponse"></a>UpdateFolderResponse
 
-Das **UpdateFolderResponse** -Element definiert die Antwort auf eine Anforderung UpdateFolder. 
+Das **UpdateFolderResponse** -Element definiert die Antwort auf eine UpdateFolder-Anforderung. 
   
 ```xml
 <UpdateFolderResponse>
@@ -42,23 +42,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

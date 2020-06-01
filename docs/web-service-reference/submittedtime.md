@@ -1,5 +1,5 @@
 ---
-title: SubmittedTime
+title: Übermittelt
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 45c8fa36-c539-42ca-99dc-1ac33cc54afc
-description: Das SubmittedTime-Element darstellt, die Zeit, dass die Nachricht auf den Server eingegeben.
-ms.openlocfilehash: 89fc6400914495b8f1bd3994f17421d0ab079460
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das übermittelte Time-Element stellt die Uhrzeit dar, zu der die Nachricht in den Server eingegeben wurde.
+ms.openlocfilehash: bf9495aa700d2887d199eccb38289e0ebd2e8636
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831613"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465408"
 ---
-# <a name="submittedtime"></a>SubmittedTime
+# <a name="submittedtime"></a>Übermittelt
 
-Das **SubmittedTime** -Element darstellt, die Zeit, dass die Nachricht auf den Server eingegeben. 
+Das über **mittelte** Time-Element stellt die Uhrzeit dar, zu der die Nachricht in den Server eingegeben wurde. 
   
 ```XML
 <SubmittedTime/>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Ein einzelnes Nachricht Ergebnis für ein [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) -Element enthält.  <br/> |
+|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Enthält ein einzelnes Nachrichten Ergebnis für ein [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) -Element.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
- Ein Textwert, der einen Datum/Uhrzeit darstellt ist erforderlich, wenn dieses Element verwendet wird. 
+ Ein Textwert, der eine Datum/Uhrzeit darstellt, ist erforderlich, wenn dieses Element verwendet wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

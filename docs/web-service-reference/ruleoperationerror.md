@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b447e610-d37c-40d3-9158-aa108a9f248e
-description: Das Element RuleOperationError stellt einen Regel Vorgang-Fehler dar.
-ms.openlocfilehash: ff42addea0f55b13794e2c910d4d865ad0b17bc3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RuleOperationError-Element stellt einen Regel Vorgangs Fehler dar.
+ms.openlocfilehash: b5e0105a1fdb1564b3115a4c3a8411019f725483
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831265"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44464959"
 ---
 # <a name="ruleoperationerror"></a>RuleOperationError
 
-Das Element **RuleOperationError** stellt einen Regel Vorgang-Fehler dar. 
+Das **RuleOperationError** -Element stellt einen Regel Vorgangs Fehler dar. 
   
 ```XML
 <RuleOperationError>
@@ -43,30 +43,30 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OperationIndex](operationindex.md) <br/> |Gibt den Index des Vorgangs in der Anforderung, die der Regel Vorgang Fehler verursacht.  <br/> |
-|[ValidationErrors](validationerrors.md) <br/> |Stellt ein Array der Regel Validierungsfehler auf jede Regel dar, die einen Fehler aufweist.  <br/> |
+|[OperationIndex](operationindex.md) <br/> |Gibt den Index des Vorgangs in der Anforderung an, der den Regel Vorgangs Fehler verursacht hat.  <br/> |
+|[ValidationErrors](validationerrors.md) <br/> |Stellt ein Array von Regel Validierungsfehlern für jedes Regel Feld dar, das einen Fehler aufweist.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RuleOperationErrors](ruleoperationerrors.md) <br/> |Stellt ein Array der Regel Validierungsfehler auf jede Regel dar, die einen Fehler aufweist.  <br/> |
+|[RuleOperationErrors](ruleoperationerrors.md) <br/> |Stellt ein Array von Regel Validierungsfehlern für jedes Regel Feld dar, das einen Fehler aufweist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: a5d48fc1-b141-422c-bcb0-05d0f9ba90dd
-description: NetShowUrl-Element gibt die URL für eine Microsoft NetShow online-Besprechung.
-ms.openlocfilehash: 2440e6c1501331d715d0e5ceb31b3b928122f927
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das NetShowUrl-Element gibt die URL für eine Microsoft NetShow Online-Besprechung an.
+ms.openlocfilehash: 66e288a5e66eecf404698135cc3257085b852034
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830519"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466332"
 ---
 # <a name="netshowurl"></a>NetShowUrl
 
-**NetShowUrl** -Element gibt die URL für eine Microsoft NetShow online-Besprechung. 
+Das **NetShowUrl** -Element gibt die URL für eine Microsoft NetShow Online-Besprechung an. 
   
 ```xml
 <NetShowUrl/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -49,19 +49,19 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der eine URL darstellt, ist erforderlich, wenn dieses Element verwendet wird.
+Ein Text Wert, der eine URL darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese NetShowUrl-Eigenschaft kann für den Organisator Kalenderelement lesen geschrieben werden. Es ist schreibgeschützt, für Besprechungsanfragen und für die Teilnehmer.
+Diese NetShowUrl-Eigenschaft ist schreibgeschützt für das Kalenderelement des Organisators. Er ist schreibgeschützt für Besprechungsanfragen und für Teilnehmer.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

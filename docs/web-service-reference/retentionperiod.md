@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 49db6a4f-4a20-4495-8f76-d756cc895b66
-description: Das RetentionPeriod-Element gibt die Anzahl der Tage, die die Aufbewahrungsrichtlinie aktiviert ist.
-ms.openlocfilehash: cd1c667d21c4dd47ed282076ce7843150389c46e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RetentionPeriod-Element gibt die Anzahl der Tage an, für die die Aufbewahrungsrichtlinie gültig ist.
+ms.openlocfilehash: c9d049e2c1ed4e8abdec9faa7b8e365468d3d2ac
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831220"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465191"
 ---
 # <a name="retentionperiod"></a>RetentionPeriod
 
-Das **RetentionPeriod** -Element gibt die Anzahl der Tage, die die Aufbewahrungsrichtlinie aktiviert ist. 
+Das **RetentionPeriod** -Element gibt die Anzahl der Tage an, für die die Aufbewahrungsrichtlinie gültig ist. 
   
 ```XML
 <RetentionPeriod></RetentionPeriod>
 ```
 
- **ganze Zahl**
+ **Integer**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,19 +42,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **RetentionPeriod** -Element wird die Anzahl der Tage, die die Aufbewahrungsrichtlinie für ein Element aktiviert ist. 
+Der Textwert des **RetentionPeriod** -Elements ist die Anzahl der Tage, für die die Aufbewahrungsrichtlinie für ein Element gültig ist. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 28f552d8-6bb8-49b4-a45c-b2053670f1cc
-description: Das UsePOPAuth-Element gibt an, ob die Authentifizierungsinformationen angeben, die für einen POP3-Konto bereitgestellt wird auch für Simple Mail Transfer Protocol (SMTP) verwendet wird.
-ms.openlocfilehash: be03568d697b1f5461d49dba388a1d3f1008a67e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UsePOPAuth-Element gibt an, ob die Authentifizierungsinformationen, die für einen POP3-Kontotyp bereitgestellt werden, auch für Simple Mail Transfer Protocol (SMTP) verwendet werden.
+ms.openlocfilehash: 8d5bfffaab31c382ad43915e18b8a7a2b2737c21
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839428"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466507"
 ---
 # <a name="usepopauth-pox"></a>UsePOPAuth (POX)
 
-Das **UsePOPAuth** -Element gibt an, ob die Authentifizierungsinformationen angeben, die für einen POP3-Konto bereitgestellt wird auch für Simple Mail Transfer Protocol (SMTP) verwendet wird. 
+Das **UsePOPAuth** -Element gibt an, ob die Authentifizierungsinformationen, die für einen POP3-Kontotyp bereitgestellt werden, auch für Simple Mail Transfer Protocol (SMTP) verwendet werden. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,15 +50,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert gibt an, ob die Authentifizierungsinformationen angeben, die für einen POP3-Konto bereitgestellt wird auch für SMTP verwendet wird. Die möglichen Werte sind **aktiviert** und **deaktiviert**.
+Der Textwert gibt an, ob die Authentifizierungsinformationen, die für einen POP3-Kontotyp angegeben werden, auch für SMTP verwendet werden. Die möglichen Werte sind **ein** -und **ausgeschaltet**.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **UsePOPAuth** -Element wird nur verwendet, wenn [Type (POX)](type-pox.md) SMTP ist. 
+Das **UsePOPAuth** -Element wird nur verwendet, wenn der [Typ (POX)](type-pox.md) SMTP lautet. 
   
 ## <a name="see-also"></a>Siehe auch
 

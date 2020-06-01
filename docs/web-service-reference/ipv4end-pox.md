@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 2dff4e8f-4812-4fcf-8915-d64a69c89120
-description: Das IPv4End-Element identifiziert das Ende einer Reihe von IP-Version 4 (IPv4)-Adressen, die verwendet werden, um einen Computer im Netzwerk zu identifizieren.
-ms.openlocfilehash: 14e4cd23da4b737613311fa7ce24e129a496bb03
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IPv4End-Element identifiziert das Ende eines Bereichs von IPv4-Adressen (IP Version 4), die zum Identifizieren eines Computers im Netzwerk verwendet werden.
+ms.openlocfilehash: 296ea87436364b71e541f97c687a8f25e7f353a7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829968"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465555"
 ---
 # <a name="ipv4end-pox"></a>IPv4End (POX)
 
-Das **IPv4End** -Element identifiziert das Ende einer Reihe von IP-Version 4 (IPv4)-Adressen, die verwendet werden, um einen Computer im Netzwerk zu identifizieren. 
+Das **IPv4End** -Element identifiziert das Ende eines Bereichs von IPv4-Adressen (IP Version 4), die zum Identifizieren eines Computers im Netzwerk verwendet werden. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -52,11 +52,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[NetworkRequirements (POX)](networkrequirements-pox.md) <br/> |Enthält die Kriterien, die verwendet werden, um festzustellen, ob der Client-Computer in einem Netzwerk befindet, die die Internetdienstanbieters (ISP) erfüllt Anforderungen, um mit dem Server herstellen.  <br/> |
+|[NetworkRequirements (POX)](networkrequirements-pox.md) <br/> |Enthält die Kriterien, die verwendet werden, um zu bestimmen, ob sich der Clientcomputer in einem Netzwerk befindet, das die Anforderungen des Internet Dienstanbieters erfüllt, um eine Verbindung mit dem Server herzustellen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt eine IPv4-Adresse dar.
+Der Wert Text stellt eine IPv4-Adresse dar.
   
 ## <a name="see-also"></a>Siehe auch
 

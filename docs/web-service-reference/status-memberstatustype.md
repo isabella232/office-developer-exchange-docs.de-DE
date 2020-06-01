@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4f8a860b-0a48-4a0d-9a7a-69a0304aa747
-description: Status-Element enthält Informationen über den Status der Verteilung Listenmitglieder auf dem Server.
-ms.openlocfilehash: ef062433c80f0cca413c33012e1164b17e226faf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Status-Element enthält Informationen zum Status eines Verteilerlisten Elements auf dem Server.
+ms.openlocfilehash: bfa0c349d6af51c1b2238c9749d2656541d31906
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831580"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465464"
 ---
 # <a name="status-memberstatustype"></a>Status (MemberStatusType)
 
-**Status** -Element enthält Informationen über den Status der Verteilung Listenmitglieder auf dem Server. 
+Das **Status** -Element enthält Informationen zum Status eines Verteilerlisten Elements auf dem Server. 
   
 ```
 <Status>Unrecognized or Normal or Demoted</Status>
@@ -48,25 +48,25 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Die folgende Tabelle enthält die möglichen Werte für die **Status** -Element. 
+In der folgenden Tabelle sind die möglichen Werte für das **Status** -Element aufgeführt. 
   
 **Status-Elementwerte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Unbekannte  <br/> |Informationen zu Mitgliedern ist ungültig oder nicht erkannte.  <br/> |
-|Standard  <br/> |Memberinformationen in einer Verteilerliste ist Synchronisierung mit dem Objekt verwiesen wird.  <br/> |
-|Tiefer gestuft  <br/> |Das Objekt verwiesen wird, ist nicht verfügbar.  <br/> |
+|Unbekannte  <br/> |Mitgliedsinformationen sind ungültig oder nicht erkannt.  <br/> |
+|Normal  <br/> |Elementinformationen in einer Verteilerliste werden mit dem referenzierten Objekt synchronisiert.  <br/> |
+|Herabgestufte  <br/> |Das Objekt, auf das verwiesen wird, ist nicht verfügbar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

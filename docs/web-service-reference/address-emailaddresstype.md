@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 518641c8-7f6f-496c-86f9-341e7c1bb44c
-description: Das Address-Element stellt eine vollständig aufgelöster E-mail-Adresse dar.
-ms.openlocfilehash: 2a2d409edcc3a04bf82c6da0080183becfc9b25b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Address-Element stellt eine vollständig aufgelöste e-Mail-Adresse dar.
+ms.openlocfilehash: 591bc675165ec80f69407bd8ee19d16c9ddff15a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757307"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464903"
 ---
 # <a name="address-emailaddresstype"></a>Adresse (EmailAddressType)
 
-Das **Address** -Element stellt eine vollständig aufgelöster E-mail-Adresse dar. 
+Das **Address** -Element stellt eine vollständig aufgelöste e-Mail-Adresse dar. 
   
 ```XML
 <Address>
@@ -56,23 +56,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OriginalRecipients](originalrecipients.md) <br/> |Enthält eine Auflistung von E-mail-Adressen, die die ursprünglichen Empfänger einer Nachricht nachverfolgten darstellen.  <br/> |
-|[RoomLists](roomlists.md) <br/> |Enthält eine Liste von Besprechungsräumen in einer Organisation.  <br/> |
-|[SentToAddresses](senttoaddresses.md) <br/> |Enthält eine Liste von E-mail-Adressen, die eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende an gesendet wurden.  <br/> |
+|[Element originalrecipients](originalrecipients.md) <br/> |Enthält eine Auflistung von e-Mail-Adressen, die die ursprünglichen Empfänger einer nachverfolgten Nachricht darstellen.  <br/> |
+|[RoomLists](roomlists.md) <br/> |Enthält eine Liste der Besprechungsräume in einer Organisation.  <br/> |
+|[SentToAddresses](senttoaddresses.md) <br/> |Enthält eine Liste der e-Mail-Adressen, an die eingehende Nachrichten gesendet werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

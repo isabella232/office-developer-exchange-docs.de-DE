@@ -1,5 +1,5 @@
 ---
-title: IsOwner
+title: Isowner
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ea0f0afc-32fe-46cb-8530-62a6ce9490f6
-description: Das IsOwner-Element gibt an, ob der angegebene e-Mail-Benutzer den Besitzer ist.
-ms.openlocfilehash: aac3c2a599093282542025468d73c55ec4569e29
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das isowner-Element gibt an, ob der angegebene e-Mail-Benutzer der Besitzer ist.
+ms.openlocfilehash: 2dd085aba34052d95efd1e72edca7be4aba71155
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830080"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466521"
 ---
-# <a name="isowner"></a>IsOwner
+# <a name="isowner"></a>Isowner
 
-Das **IsOwner** -Element gibt an, ob der angegebene e-Mail-Benutzer den Besitzer ist. 
+Das **isowner** -Element gibt an, ob der angegebene e-Mail-Benutzer der Besitzer ist. 
   
 ```XML
 <IsOwner>true | false</IsOwner>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -40,25 +40,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RightsManagementLicenseData](rightsmanagementlicensedata.md) <br/> |Gibt Informationen zu den Rights Management-Lizenz.  <br/> |
+|[RightsManagementLicenseData](rightsmanagementlicensedata.md) <br/> |Gibt Informationen zur Rechteverwaltungslizenz an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **IsOwner** -Element gibt an, dass der Benutzer den Besitzer der Rechte für ein Element ausgegeben wird. Der Wert **false** gibt an, dass der Benutzer nicht der Besitzer der Rechte für ein Element ausgestellt ist. 
+Der Textwert **true** für das **isowner** -Element gibt an, dass der Benutzer der Besitzer von Rechten ist, die für ein Element ausgegeben werden. Der Wert **false** gibt an, dass der Benutzer nicht der Besitzer von Rechten ist, die für ein Element ausgestellt wurden. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

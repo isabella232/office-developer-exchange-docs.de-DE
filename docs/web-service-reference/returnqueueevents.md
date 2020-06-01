@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 69d22417-320c-4c6f-9fb4-2020f2480bb2
-description: Das ReturnQueueEvents-Element gibt an, dass die Person, die die Aufgabe ausgeführt wird in einer privilegierten Rolle ist.
-ms.openlocfilehash: 02f4ca86ffa14117105ec186ae039065cb626670
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ReturnQueueEvents-Element gibt an, dass die Person, die die Aufgabe ausführt, eine privilegierte Rolle besitzt.
+ms.openlocfilehash: 9d07bc8c3d32f1cd532febaf4ae04e4a2d31d243
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831233"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466591"
 ---
 # <a name="returnqueueevents"></a>ReturnQueueEvents
 
-Das **ReturnQueueEvents** -Element gibt an, dass die Person, die die Aufgabe ausgeführt wird in einer privilegierten Rolle ist. 
+Das **ReturnQueueEvents** -Element gibt an, dass die Person, die die Aufgabe ausführt, eine privilegierte Rolle besitzt. 
   
 ```XML
 <ReturnQueueEvents>true | false</ReturnQueueEvents>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,23 +44,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |Enthält die Anforderung für den [GetMessageTrackingReport Vorgang](getmessagetrackingreport-operation.md) zum Abrufen der vollständigen Nachricht Nachverfolgen der Bericht für den angegebenen ID.  <br/> |
+|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |Enthält die Anforderung für den [GetMessageTrackingReport-Vorgang](getmessagetrackingreport-operation.md) zum Abrufen des vollständigen Nachrichtenverfolgungsberichts für die angegebene ID.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich. Der Wert **true** gibt an, dass die Person, die die Aufgabe ausgeführt wird in einer privilegierten Rolle ist; der Wert **false** gibt an, dass die Person, die die Aufgabe ausgeführt wird nicht in einer privilegierten Rolle ist. 
+Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich. Der Wert **true** gibt an, dass die Person, die die Aufgabe ausführt, eine privilegierte Rolle hat; der Wert **false** gibt an, dass die Person, die die Aufgabe ausführt, keine privilegierte Rolle hat. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

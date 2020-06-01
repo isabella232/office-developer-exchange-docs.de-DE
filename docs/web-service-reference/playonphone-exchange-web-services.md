@@ -1,5 +1,5 @@
 ---
-title: PlayOnPhone (Exchange Web Services)
+title: PlayOnPhone (Exchange Webdienste)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 486612be-470c-4f99-929a-f2b283e055c1
-description: Das PlayOnPhone-Element eine Anforderung darstellt, auf einem Telefon ein Element gelesen.
-ms.openlocfilehash: 75493a31940ea609fd6cf454e91ca5881fb7e678
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PlayOnPhone-Element stellt eine Anforderung zum Lesen eines Elements auf einem Telefon dar.
+ms.openlocfilehash: e2c09a67255106ad9afddb86fa19b7a4a5762ee5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830816"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466248"
 ---
-# <a name="playonphone-exchange-web-services"></a>PlayOnPhone (Exchange Web Services)
+# <a name="playonphone-exchange-web-services"></a>PlayOnPhone (Exchange Webdienste)
 
-Das **PlayOnPhone** -Element eine Anforderung darstellt, auf einem Telefon ein Element gelesen. 
+Das **PlayOnPhone** -Element stellt eine Anforderung zum Lesen eines Elements auf einem Telefon dar. 
   
 ```xml
 <PlayOnPhone>   <ItemId/>   <DialString/></PlayOnPhone>
@@ -40,24 +40,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Stellt die ID eines Elements auf einem Telefon wiedergegeben. Dieses Element ist erforderlich.  <br/> |
-|[DialString (Exchange Web Services)](dialstring-exchange-web-services.md) <br/> |Stellt die Wählzeichenfolge der Telefonnummer an, die aufgerufen wird, um die Wiedergabe eines Elements per Telefon. Dieses Element ist erforderlich.  <br/> |
+|[ItemId](itemid.md) <br/> |Stellt den Bezeichner eines Elements dar, das auf einem Telefon wiedergegeben werden soll. Dieses Element ist erforderlich.  <br/> |
+|[Dialtype (Exchange Webdienste)](dialstring-exchange-web-services.md) <br/> |Stellt die Wählzeichenfolge der Telefonnummer dar, die aufgerufen wird, um ein Element per Telefon wiederzugeben. Dieses Element ist erforderlich.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

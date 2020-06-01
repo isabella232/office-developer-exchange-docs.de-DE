@@ -6,23 +6,23 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 70946a1a-a121-4b47-8e67-ccbc1a25b0f1
-description: Das ServiceUrl-Element darstellt, die URL eines Dokuments Freigabe-Webdienst.
-ms.openlocfilehash: a80cd43121d6a5f58e60ac6d03747c9ac32e4e7c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das serviceUrl-Element stellt die URL eines Webdiensts für die gemeinsame Nutzung von Dokumenten dar.
+ms.openlocfilehash: 14b553f53c9af3f746a111d6e48a443ba33646dc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831394"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465772"
 ---
 # <a name="serviceurl-soap"></a>ServiceUrl (SOAP)
 
-Das **ServiceUrl** -Element darstellt, die URL eines Dokuments Freigabe-Webdienst. 
+Das **serviceUrl** -Element stellt die URL eines Webdiensts für die gemeinsame Nutzung von Dokumenten dar. 
   
 ```XML
 <ServiceUrl />
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -39,19 +39,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DocumentSharingLocation (SOAP)](documentsharinglocation-soap.md) <br/> |Stellt Informationen zum Standort und Metadaten für ein Dokument sharing-Location.  <br/> |
+|[DocumentSharingLocation (SOAP)](documentsharinglocation-soap.md) <br/> |Stellt Speicherort-und Metadateninformationen für einen Dokumentfreigabe Speicherort dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ServiceUrl** -Elements ist die URL eines Dokuments Freigabe-Webdienst. 
+Der Textwert des **serviceUrl** -Elements ist die URL eines Webdiensts für die Freigabe von Dokumenten. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -63,5 +63,5 @@ Der Textwert des **ServiceUrl** -Elements ist die URL eines Dokuments Freigabe-W
 
 [AutoErmittlung Webdienstverweis für Exchange](autodiscover-web-service-reference-for-exchange.md)
   
-[SOAP-Autodiscover XML-Elemente für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[XML-Elemente der SOAP-AutoErmittlung für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

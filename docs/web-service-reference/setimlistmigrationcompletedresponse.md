@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7e9ab484-7100-422d-ab22-d8ddb97098c1
-description: Das Element SetImListMigrationCompletedResponse stellt eine Antwort auf eine Anforderung SetImListMigrationCompleted.
-ms.openlocfilehash: 2041a0e6b03305644c498ec36967f297f999d993
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SetImListMigrationCompletedResponse-Element stellt eine Antwort auf eine SetImListMigrationCompleted-Anforderung dar.
+ms.openlocfilehash: 66d85362319df1c88064130e99bba98f21b50db7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831430"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464819"
 ---
 # <a name="setimlistmigrationcompletedresponse"></a>SetImListMigrationCompletedResponse
 
-Das Element **SetImListMigrationCompletedResponse** stellt eine Antwort auf eine Anforderung **SetImListMigrationCompleted** . 
+Das **SetImListMigrationCompletedResponse** -Element stellt eine Antwort auf eine **SetImListMigrationCompleted** -Anforderung dar. 
   
 ```XML
 <SetImListMigrationCompletedResponse>
@@ -39,25 +39,25 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md)
+[MessageText](messagetext.md)  |  [Response Code](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [Messagexml verwendet](messagexml.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |
    
 

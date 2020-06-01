@@ -1,5 +1,5 @@
 ---
-title: IsAssociated
+title: Isassociated
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 637f0798-6680-487f-bcbf-aaddc4a74186
-description: Das IsAssociated-Element gibt an, ob das Element einem Ordner zugeordnet ist.
-ms.openlocfilehash: 4e376320489841ecf1b41087a14597e0212dea8c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das isassociated-Element gibt an, ob das Element einem Ordner zugeordnet ist.
+ms.openlocfilehash: 64a96a16d0303da3e0d8815fc51e6f5ffd342aa4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830004"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466087"
 ---
-# <a name="isassociated"></a>IsAssociated
+# <a name="isassociated"></a>Isassociated
 
-Das **IsAssociated** -Element gibt an, ob das Element einem Ordner zugeordnet ist. 
+Das **isassociated** -Element gibt an, ob das Element einem Ordner zugeordnet ist. 
   
 ```XML
 <IsAssociated/>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -53,23 +53,23 @@ Keine.
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort im Exchange-Informationsspeicher dar.  <br/> |
 |[Message](message-ex15websvcsotherref.md) <br/> |Stellt eine Exchange-E-Mail-Nachricht dar.  <br/> |
-|[PostItem-Objekt](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Speicher.  <br/> |
+|[PostItem](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Informationsspeicher dar.  <br/> |
 |[RemoveItem](removeitem.md) <br/> |Entfernt ein Element aus dem Exchange-Informationsspeicher.  <br/> |
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass das Element einem Ordner zugeordnet ist. der Wert **"false"** gibt an, dass das Element keinem Ordner zugeordnet ist. 
+Der Textwert **true** gibt an, dass das Element einem Ordner zugeordnet ist; der Wert **false** gibt an, dass das Element keinem Ordner zugeordnet ist. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

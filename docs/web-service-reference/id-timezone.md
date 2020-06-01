@@ -1,5 +1,5 @@
 ---
-title: ID (TimeZone)
+title: ID (Zeitzone)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4c7350b4-ffa1-4e7d-9433-80b4383bd0d2
-description: Das Id-Element identifiziert eine einzelne Zeitzonendefinition.
-ms.openlocfilehash: 4f2e18ca8a582a930cce9e0565821d9732daf555
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ID-Element identifiziert eine einzelne Zeitzonendefinition.
+ms.openlocfilehash: 18ded1c9c0b6f0219d6256ebe19b9b1f7173da2c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829854"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466136"
 ---
-# <a name="id-timezone"></a>ID (TimeZone)
+# <a name="id-timezone"></a>ID (Zeitzone)
 
-Das **Id** -Element identifiziert eine einzelne Zeitzonendefinition. 
+Das **ID-** Element identifiziert eine einzelne Zeitzonendefinition. 
   
 ```xml
 <Id>...</Id>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[IDs](ids.md) <br/> |Enthält ein Array mit den IDs der Zeitzone-Definition.  <br/> |
+|[IDs](ids.md) <br/> |Enthält ein Array von Zeit Zonen Definitions Bezeichnern.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der Textwert stellt den eindeutigen Bezeichner für die Zeitzonendefinition.
+Ein Textwert ist erforderlich. Der Wert Text stellt den eindeutigen Bezeichner für die Zeitzonendefinition dar.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

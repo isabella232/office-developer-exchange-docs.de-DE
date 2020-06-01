@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0043abd5-ba9c-4d67-8832-325f32bf7651
-description: Das SourceIds-Element enthält die Source-Bezeichner konvertiert.
-ms.openlocfilehash: c9ee9fd01367f714e1cb3770e2be5161cb45d98f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SourceIds-Element enthält die Quellbezeichner, die konvertiert werden sollen.
+ms.openlocfilehash: 1c4990f2185788c5cfaab5483cb6a54a0d850596
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831522"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466108"
 ---
 # <a name="sourceids"></a>SourceIds
 
-Das **SourceIds** -Element enthält die Source-Bezeichner konvertiert. 
+Das **SourceIds** -Element enthält die Quellbezeichner, die konvertiert werden sollen. 
   
 [ConvertId](convertid.md)
   
@@ -48,27 +48,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AlternateId](alternateid.md) <br/> |Beschreibt einen Bezeichner Elements oder Ordners zu konvertieren.  <br/> |
-|[AlternatePublicFolderId](alternatepublicfolderid.md) <br/> |Beschreibt einen Bezeichner für Öffentliche Ordner zu konvertieren.  <br/> |
-|[AlternatePublicFolderItemId](alternatepublicfolderitemid.md) <br/> |Beschreibt einen Bezeichner für Öffentliche Ordner zu konvertieren.  <br/> |
+|[AlternateId](alternateid.md) <br/> |Beschreibt eine Element-oder Ordner-ID, die konvertiert werden soll.  <br/> |
+|[AlternatePublicFolderId](alternatepublicfolderid.md) <br/> |Beschreibt einen Bezeichner für Öffentliche Ordner, der konvertiert werden soll.  <br/> |
+|[AlternatePublicFolderItemId](alternatepublicfolderitemid.md) <br/> |Beschreibt einen Elementbezeichner für Öffentliche Ordner, der konvertiert werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ConvertId](convertid.md) <br/> |Definiert eine Anforderung zum Element und Ordner Bezeichner zwischen Exchange unterstützt Formate konvertieren.  <br/> |
+|[ConvertId](convertid.md) <br/> |Definiert eine Anforderung zum Konvertieren von Element-und Ordner Bezeichnern zwischen von Exchange unterstützten Formaten.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -81,5 +81,5 @@ Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichni
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Konvertieren von Bezeichnern](http://msdn.microsoft.com/library/a5391746-b6ef-4f48-8fc8-8255258651aa%28Office.15%29.aspx)
+[Konvertieren von Bezeichnern](https://msdn.microsoft.com/library/a5391746-b6ef-4f48-8fc8-8255258651aa%28Office.15%29.aspx)
 

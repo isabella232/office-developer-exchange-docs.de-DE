@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e5387172-5b92-4bb1-8394-180e9c7ff771
-description: Das AllowExternalOof-Element enthält einen Wert, der angibt, den externe Out of Office (OOF) Testnachrichten gesendet werden.
-ms.openlocfilehash: 1c87a51676bf6e44b2e650a4e973d0ab89a52e31
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AllowExternalOof-Element enthält einen Wert, der angibt, an wen externe Abwesenheit (Out of Office, OOF) Nachrichten gesendet werden.
+ms.openlocfilehash: e4934bc4bc86e1f9f764279a13ecaeca073d9e5d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757258"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464812"
 ---
 # <a name="allowexternaloof"></a>AllowExternalOof
 
-Das **AllowExternalOof** -Element enthält einen Wert, der angibt, den externe Out of Office (OOF) Testnachrichten gesendet werden. 
+Das **AllowExternalOof** -Element enthält einen Wert, der angibt, an wen externe Abwesenheit (Out of Office, OOF) Nachrichten gesendet werden. 
   
 - [GetUserOofSettingsResponse](getuseroofsettingsresponse.md)
   
@@ -48,31 +48,31 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUserOofSettingsResponse](getuseroofsettingsresponse.md) <br/> |Enthält die Antwort Ergebnisse und OOF-Einstellungen für einen Benutzer.  <br/> |
+|[GetUserOofSettingsResponse](getuseroofsettingsresponse.md) <br/> |Enthält die Antwortergebnisse und die Abwesenheitseinstellungen für einen Benutzer.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Es wird ein Textwert für dieses Element erforderlich. Die folgende Tabelle enthält die möglichen Werte für dieses Element.
+Für dieses Element ist ein Textwert erforderlich. In der folgenden Tabelle sind die möglichen Werte für dieses Element aufgeführt.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|**None** <br/> |E-Mail-Absender außerhalb der Organisation das des Postfachbenutzers, die Senden von Nachrichten an die Benutzer werden keine externe OOF Nachricht beantwortet.  <br/> |
-|**Bekannte** <br/> |E-Mail-Absender außerhalb der Organisation das des Postfachbenutzers, die Senden von Nachrichten an den Benutzer nur eine externe OOF Nachrichtenantwort erhält, wenn der Absender in Exchange des Benutzers ist speichern Kontaktliste.  <br/> |
-|**All** <br/> |E-Mail-Absender außerhalb der Organisation das des Postfachbenutzers, die Senden von Nachrichten an die Benutzer erhalten eine externe OOF Nachrichtenantwort.  <br/> |
+|**Keine** <br/> |E-Mail-Absender außerhalb der Organisation des Postfachbenutzers, die Nachrichten an den Benutzer senden, erhalten keine externe Abwesenheitsnachrichten Antwort.  <br/> |
+|**Bezeichnet** <br/> |E-Mail-Absender außerhalb der Organisation des Postfachbenutzers, die Nachrichten an den Benutzer senden, erhalten nur dann eine externe Abwesenheitsnachrichten Antwort, wenn sich der Absender in der Exchange-Informationsspeicher Kontaktliste des Benutzers befindet.  <br/> |
+|**All** <br/> |E-Mail-Absender außerhalb der Organisation des Postfachbenutzers, die Nachrichten an den Benutzer senden, erhalten eine externe Abwesenheitsnachrichten Antwort.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element gibt den gleichen Datentyp wie das [ExternalAudience](externalaudience.md) -Element. 
+Dieses Element hat denselben Typ wie das [ExternalAudience](externalaudience.md) -Element. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

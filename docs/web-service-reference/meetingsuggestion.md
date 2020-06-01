@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d6012063-eb67-4e83-a4a6-33482685083f
-description: Das MeetingSuggestion-Element gibt eine vorgeschlagene Besprechung.
-ms.openlocfilehash: 35b618b32101ea36c35d87ca0737e4a7e04eb3a9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MeetingSuggestion-Element gibt eine vorgeschlagene Besprechung an.
+ms.openlocfilehash: 132ed907886c0ee9f3c4f46cc835d4b4fc6aa621
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830444"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466311"
 ---
 # <a name="meetingsuggestion"></a>MeetingSuggestion
 
-Das **MeetingSuggestion** -Element gibt eine vorgeschlagene Besprechung. 
+Das **MeetingSuggestion** -Element gibt eine vorgeschlagene Besprechung an. 
   
 ```XML
 <MeetingSuggestion>
@@ -41,23 +41,23 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[Teilnehmer](attendees.md) | [Speicherort](location.md) | [Betreff](subject.md) | ["meetingstring"](meetingstring.md) | [StartTime](starttime.md) | [EndTime](endtime.md)
+[Teilnehmer](attendees.md)  |  [Speicherort](location.md)  |  [Betreff](subject.md)  |  [Besprechungs Sammlung](meetingstring.md)  |  [Startzeit](starttime.md)  |  [EndTime](endtime.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-["Meetingsuggestions"](meetingsuggestions.md)
+[MeetingSuggestions](meetingsuggestions.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

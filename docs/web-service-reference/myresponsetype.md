@@ -1,5 +1,5 @@
 ---
-title: MyResponseType
+title: Myresponsetype
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9741b71d-a310-4520-81d5-3787a1ee630f
-description: Das MyResponseType-Element enthält den Status des oder der Antwort auf ein Kalenderelement.
-ms.openlocfilehash: 3be900ed6d2932699e3e83a0bca2918c016eb689
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das myresponsetype-Element enthält den Status oder die Antwort auf ein Kalenderelement.
+ms.openlocfilehash: 640b0595ac039cc3c119aa52aa6e791e5b695e87
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830497"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466626"
 ---
-# <a name="myresponsetype"></a>MyResponseType
+# <a name="myresponsetype"></a>Myresponsetype
 
-Das **MyResponseType** -Element enthält den Status des oder der Antwort auf ein Kalenderelement. 
+Das **myresponsetype** -Element enthält den Status oder die Antwort auf ein Kalenderelement. 
   
 ```xml
 <MyResponseType/>
@@ -49,13 +49,13 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses Element:
+Ein Textwert ist erforderlich. Im folgenden sind die möglichen Text Werte für dieses Element angegeben:
   
 - Unbekannt
     
 - Organisator
     
-- Mit Vorbehalt
+- Vorläufige
     
 - Annehmen
     
@@ -63,15 +63,15 @@ Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses El
     
 - NoResponseReceived
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

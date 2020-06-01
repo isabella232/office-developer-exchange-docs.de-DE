@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8ea77aa8-b93f-4287-be36-0a9da06e0946
-description: Das MessageTrackingSearchResult-Element enthält eine einzelne Nachricht Ergebnis für ein FindMessageTrackingReportResponse-Element.
-ms.openlocfilehash: ad4fb9d9e2266222303bd2015a7afba0bb46721b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MessageTrackingSearchResult-Element enthält ein einzelnes Nachrichten Ergebnis für ein FindMessageTrackingReportResponse-Element.
+ms.openlocfilehash: 27e70cd9e11b480ab6bbb9b28275f142da7c76ac
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830460"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466682"
 ---
 # <a name="messagetrackingsearchresult"></a>MessageTrackingSearchResult
 
-Das **MessageTrackingSearchResult** -Element enthält eine einzelne Nachricht Ergebnis für ein [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) -Element. 
+Das **MessageTrackingSearchResult** -Element enthält ein einzelnes Nachrichten Ergebnis für ein [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) -Element. 
   
 ```xml
 <MessageTrackingSearchResult>
@@ -50,35 +50,35 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Betreff](subject.md) <br/> |Der Betreff der e-Mail-Nachricht enthält.  <br/> |
-|[Absender (EmailAddressType)](sender-emailaddresstype.md) <br/> |Enthält die e-Mail-Nachricht Adresse des Absenders.  <br/> |
-|[PurportedSender](purportedsender.md) <br/> |Kontaktinformationen für den Absender einer e-Mail-Nachricht enthält.  <br/> |
-|[Empfänger (ArrayOfRecipientsType)](recipients-arrayofrecipientstype.md) <br/> |Enthält eine Liste von E-mail-Adressen, die diese Meldung erhalten.  <br/> |
-|[SubmittedTime](submittedtime.md) <br/> |Enthält die Zeit, die die Nachricht gesendet wurde.  <br/> |
-|[MessageTrackingReportId](messagetrackingreportid.md) <br/> |Enthält eine interne ID, die Nachricht in der Datenbank Transport identifiziert.  <br/> |
-|[PreviousHopServer](previoushopserver.md) <br/> |Enthält den Namen des Servers in der Gesamtstruktur, die zuvor die Nachricht akzeptiert.  <br/> |
-|[FirstHopServer](firsthopserver.md) <br/> |Enthält den Namen des Servers in der Gesamtstruktur, die zuerst die Nachricht akzeptiert.  <br/> |
-|[Eigenschaften (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md) <br/> |Enthält eine Liste der Eigenschaften für eine oder mehrere Tracking an.  <br/> |
+|[Betreff](subject.md) <br/> |Enthält den Betreff der e-Mail-Nachricht.  <br/> |
+|[Absender (e-mailemailtype)](sender-emailaddresstype.md) <br/> |Enthält die Adresse des Absenders des e-Mail-Nachrichten.  <br/> |
+|[PurportedSender](purportedsender.md) <br/> |Enthält Kontaktinformationen für den mutmaßlichen Absender einer e-Mail-Nachricht.  <br/> |
+|[Recipients (ArrayOfRecipientsType)](recipients-arrayofrecipientstype.md) <br/> |Enthält eine Liste der e-Mail-Adressen, die diese Nachricht erhalten haben.  <br/> |
+|[Übermittelt](submittedtime.md) <br/> |Enthält die Zeit, zu der die Nachricht übermittelt wurde.  <br/> |
+|[MessageTrackingReportId](messagetrackingreportid.md) <br/> |Enthält eine interne ID, die die Nachricht in der Transportdatenbank identifiziert.  <br/> |
+|[PreviousHopServer](previoushopserver.md) <br/> |Enthält den Namen des Servers in der Gesamtstruktur, der die Nachricht zuvor akzeptiert hat.  <br/> |
+|[FirstHopServer](firsthopserver.md) <br/> |Enthält den Namen des Servers in der Gesamtstruktur, der die Nachricht zuerst akzeptiert hat.  <br/> |
+|[Eigenschaften (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md) <br/> |Enthält eine Liste mit einer oder mehreren Überwachungseigenschaften.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MessageTrackingSearchResults](messagetrackingsearchresults.md) <br/> |Enthält eine Liste von Nachrichten, die den Suchkriterien entsprechen.  <br/> |
+|[MessageTrackingSearchResults](messagetrackingsearchresults.md) <br/> |Enthält eine Liste der Nachrichten, die den Suchkriterien entsprechen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

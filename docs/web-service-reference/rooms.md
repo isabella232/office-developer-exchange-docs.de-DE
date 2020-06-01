@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 57b6079a-3d83-4429-861e-c551e9e1a991
-description: Das Räume-Element ist eine Liste von einem oder mehreren Elementen, die Besprechungsräumen darstellen.
-ms.openlocfilehash: e95112d3d565da29c309e45710ffc0ea9b4d5064
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Rooms-Element ist eine Liste mit einem oder mehreren Elementen, die Besprechungsräume darstellen.
+ms.openlocfilehash: f8b60a9680f6abba459ebecc96613abfdd93766d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831249"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466185"
 ---
 # <a name="rooms"></a>Chatrooms
 
-Das **Räume** -Element ist eine Liste von einem oder mehreren Elementen, die Besprechungsräumen darstellen. 
+Das **rooms** -Element ist eine Liste mit einem oder mehreren Elementen, die Besprechungsräume darstellen. 
   
 [GetRoomsResponse](getroomsresponse.md)
   
@@ -44,7 +44,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Raum](room.md) <br/> |Definiert eine e-Mail-Adresse und den Anzeigenamen, die einen Besprechungsraum darstellt.  <br/> |
+|[Raum](room.md) <br/> |Definiert eine e-Mail-Adresse und einen Anzeigenamen, der einen Besprechungsraum darstellt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,17 +52,17 @@ Keine.
 |:-----|:-----|
 |[GetRoomsResponse](getroomsresponse.md) <br/> ||
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

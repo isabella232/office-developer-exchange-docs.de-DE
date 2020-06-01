@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 921ecc73-b7e2-40a7-8458-68f18dd5a13b
-description: Das InPlaceHoldConfigurationOnly-Element gibt an, ob Einbeziehung der Compliance-Konfiguration Archiv.
-ms.openlocfilehash: 3ad020a10e43d8f54e3d603906c856e01b1956eb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das InPlaceHoldConfigurationOnly-Element gibt an, ob die in-situ-Aufbewahrungs Konfiguration eingeschlossen werden soll.
+ms.openlocfilehash: ca364ee7d8a9e2e4a608f8f6c4ca5851fa7d4b64
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829934"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466101"
 ---
 # <a name="inplaceholdconfigurationonly"></a>InPlaceHoldConfigurationOnly
 
-Das **InPlaceHoldConfigurationOnly** -Element gibt an, ob Einbeziehung der Compliance-Konfiguration Archiv. 
+Das **InPlaceHoldConfigurationOnly** -Element gibt an, ob die in-situ-Aufbewahrungs Konfiguration eingeschlossen werden soll. 
   
 ```XML
 <InPlaceHoldConfigurationOnly>true | false</InPlaceHoldConfigurationOnly>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,21 +42,21 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **InPlaceHoldConfigurationOnly** -Element gibt an, dass die Konfiguration der Compliance-Archiv enthalten ist. Der Wert **false** gibt an, dass die Compliance-Archiv-Konfiguration nicht enthalten ist. 
+Der Textwert **true** für das **InPlaceHoldConfigurationOnly** -Element gibt an, dass die in-situ-Aufbewahrungs Konfiguration enthalten ist. Der Wert **false** gibt an, dass die in-situ-Aufbewahrungs Konfiguration nicht enthalten ist. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

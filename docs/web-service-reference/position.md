@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 46726ebb-a403-4793-8378-282aa7dc39d0
-description: Das Position-Element gibt die Position einer Entität aus einer Nachricht extrahiert haben.
-ms.openlocfilehash: 4bd8f3088891e918e13d5ef1ec8e3e5217cb3fa1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Position-Element gibt die Position einer Entität an, die aus einer Nachricht extrahiert wurde.
+ms.openlocfilehash: 9acd965c3e0c29f3fa91df338c0671749192b38b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830853"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465422"
 ---
 # <a name="position"></a>Position
 
-Das **Position** -Element gibt die Position einer Entität aus einer Nachricht extrahiert haben. 
+Das **Position** -Element gibt die Position einer Entität an, die aus einer Nachricht extrahiert wurde. 
   
 ```XML
 <Position> LatestReply | Other | Subject | Signature </Position>
@@ -38,31 +38,31 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[UrlEntity](urlentity.md) | [AddressEntity](addressentity.md) | [EmailAddressEntity](emailaddressentity.md) | [MeetingSuggestion](meetingsuggestion.md) | [Kontakt (Kontakttyp den)](contact-contacttype.md) | [Phone (PhoneEntityType)](phone-phoneentitytype.md)  |  [ TaskSuggestion](tasksuggestion.md)
+[UrlEntity](urlentity.md)  |  [AddressEntity](addressentity.md)  |  [EmailAddressEntity](emailaddressentity.md)  |  [MeetingSuggestion](meetingsuggestion.md)  |  [Kontakt (ContactType)](contact-contacttype.md)  |  [Telefon (PhoneEntityType)](phone-phoneentitytype.md)  |  [Task Suggestion](tasksuggestion.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Position** -Elements ist der Speicherort, von dem eine extrahierte Entität in der Quellnachricht stammt. Die Textwerte für das Element **Position** sind: 
+Der Textwert des **Position** -Elements ist die Position, an der eine extrahierte Entität in der Quellnachricht stammt. Die Textwerte für das **Position** -Element lauten wie folgt: 
   
-- **LatestReply** - die extrahierte Entität stammt aus der neuesten Antwort auf die Meldung. 
+- **LatestReply** – die extrahierte Entität stammt aus der letzten Antwort auf die Nachricht. 
     
-- **Andere** - die extrahierte Entität stammt aus einem nicht definierten Teil der Nachricht. 
+- **Other** -die extrahierte Entität stammt aus einem nicht definierten Teil der Nachricht. 
     
-- **Betreff** - die extrahierte Entität stammt aus der Betreff der Nachricht. 
+- **Betreff** – die extrahierte Entität stammt aus dem Nachrichtenbetreff. 
     
-- **Signatur** - die extrahierte Entität stammt aus der Nachrichtensignatur. 
+- **Signatur** – die extrahierte Entität stammt aus der Nachrichtensignatur. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

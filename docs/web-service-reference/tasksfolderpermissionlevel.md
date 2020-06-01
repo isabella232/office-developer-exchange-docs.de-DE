@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 0f70b79b-3443-4048-b410-692d4e2464fc
 description: Das TasksFolderPermissionLevel-Element enthält die Berechtigungen für den Standardordner Aufgaben. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 49807896f9175bafbef106c41d1c9dff8f6178c4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 6e3988698575f0c1f935922d1642829a1f1addf9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839161"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465331"
 ---
 # <a name="tasksfolderpermissionlevel"></a>TasksFolderPermissionLevel
 
@@ -47,31 +47,31 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DelegatePermissions](delegatepermissions.md) <br/> |Die Stellvertretung die berechtigungseinstellungen auf Poolebene für einen Benutzer enthält. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[DelegatePermissions](delegatepermissions.md) <br/> |Enthält die Einstellungen für die Stell Vertretungs Berechtigungsstufe für einen Benutzer. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Die folgende Tabelle enthält die Textwerte, die die Berechtigungsstufen darstellen.
+In der folgenden Tabelle sind die Textwerte aufgeführt, die die Berechtigungsstufen darstellen.
   
-**Ebene Text Berechtigungswerte**
+**Text Werte für Berechtigungsstufen**
 
 |**Berechtigungsstufe**|**Beschreibung**|
 |:-----|:-----|
-|Keine  <br/> |Stellvertretungsbenutzers verfügt über keine Access-Berechtigungen für den Ordner Aufgaben.  <br/> |
-|Prüfer  <br/> |Stellvertretungsbenutzers kann Elemente im Ordner "Aufgaben" lesen.  <br/> |
-|Autor  <br/> |Stellvertretungsbenutzers lesen und Erstellen von Elementen im Ordner Aufgaben.  <br/> |
-|Herausgeber  <br/> |Stellvertretungsbenutzers kann lesen, erstellen und Ändern von Elementen in den Ordner Aufgaben.  <br/> |
-|Benutzerdefiniert  <br/> |Stellvertretungsbenutzers hat benutzerdefinierte Zugriffsberechtigungen für den Ordner Aufgaben.  <br/> |
+|Keine  <br/> |Der Stellvertreter Benutzer verfügt über keine Zugriffsberechtigungen für den Ordner Aufgaben.  <br/> |
+|Reviewer  <br/> |Der Stellvertreter kann Elemente im Ordner "Aufgaben" lesen.  <br/> |
+|Ursprung  <br/> |Der Stellvertreter-Benutzer kann Elemente im Ordner "Aufgaben" lesen und erstellen.  <br/> |
+|Editor  <br/> |Der Stellvertreter Benutzer kann Elemente im Ordner "Aufgaben" lesen, erstellen und ändern.  <br/> |
+|Benutzerdefiniert  <br/> |Der Stellvertreter Benutzer verfügt über benutzerdefinierte Zugriffsberechtigungen für den Ordner Aufgaben.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -81,5 +81,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 - [AddDelegate-Vorgang](adddelegate-operation.md)
 - [UpdateDelegate-Vorgang](updatedelegate-operation.md)
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
-- [Hinzufügen von Stellvertretungen](http://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+- [Hinzufügen von Stellvertretungen](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

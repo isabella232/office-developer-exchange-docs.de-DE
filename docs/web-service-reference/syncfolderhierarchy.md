@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 55df4d01-e48e-4263-a851-78a66ad1093a
-description: Das SyncFolderHierarchy-Element definiert eine Anforderung zum Synchronisieren einer Ordnerhierarchie auf einem Client an.
-ms.openlocfilehash: f72640e5605dd83e92cd323cb00e4d2f64406245
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SyncFolderHierarchy-Element definiert eine Anforderung zum Synchronisieren einer Ordnerhierarchie auf einem Client.
+ms.openlocfilehash: 68b607dbf603e955f74dfaccadd3ce6c4c9fb6ab
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839146"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466647"
 ---
 # <a name="syncfolderhierarchy"></a>SyncFolderHierarchy
 
-Das **SyncFolderHierarchy** -Element definiert eine Anforderung zum Synchronisieren einer Ordnerhierarchie auf einem Client an. 
+Das **SyncFolderHierarchy** -Element definiert eine Anforderung zum Synchronisieren einer Ordnerhierarchie auf einem Client. 
   
 ```xml
 <SyncFolderHierarchy>
@@ -43,25 +43,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderShape](foldershape.md) <br/> |Gibt die Eigenschaften des Ordners in einer Antwort [SyncFolderHierarchy](syncfolderhierarchy.md) aufzunehmen.  <br/> |
-|[SyncFolderId](syncfolderid.md) <br/> |Stellt den Ordner, der zu synchronisierenden Elemente enthält. Dieses Element ist optional.  <br/> |
-|[Synchronisierungsstatus](syncstate-ex15websvcsotherref.md) <br/> |Enthält eine base64-codierten Format von der Synchronisierung von Daten, die nach jeder Anforderung erfolgreich aktualisiert werden. Dies wird verwendet, um den Synchronisierungsstatus zu identifizieren.  <br/> |
+|[FolderShape](foldershape.md) <br/> |Gibt die Ordner Eigenschaften an, die in eine [SyncFolderHierarchy](syncfolderhierarchy.md) -Antwort eingeschlossen werden sollen.  <br/> |
+|[SyncFolderId](syncfolderid.md) <br/> |Stellt den Ordner dar, der die zu synchronisierenden Elemente enthält. Dieses Element ist optional.  <br/> |
+|[Von "SyncState](syncstate-ex15websvcsotherref.md) <br/> |Enthält eine Base64-codierte Form der Synchronisierungsdaten, die nach jeder erfolgreichen Anforderung aktualisiert wird. Dies wird verwendet, um den Synchronisierungsstatus zu identifizieren.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

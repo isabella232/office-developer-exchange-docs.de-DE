@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 7f8cb6d6-4aac-4a1f-8bec-2dcb90fc1df6
-description: Das WebClientUrl-Element darstellt, die URL eines Exchange Web-Clients.
-ms.openlocfilehash: 649845018acee1706a96f9e37475a6d5c5fa0aa7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das WebClientUrl-Element stellt die URL eines Exchange-Webclients dar.
+ms.openlocfilehash: bcf9c8d4fe80de8af4c9500e5e850558a8451d4e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839526"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464973"
 ---
 # <a name="webclienturl-soap"></a>WebClientUrl (SOAP)
 
-Das **WebClientUrl** -Element darstellt, die URL eines Exchange Web-Clients. 
+Das **WebClientUrl** -Element stellt die URL eines Exchange-Webclients dar. 
   
 [UserSetting (SOAP)](usersetting-soap.md)
   
@@ -46,22 +46,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AuthenticationMethods (SOAP)](authenticationmethods-soap.md) <br/> |Stellt die Authentifizierungsmethode beim Zugriff auf die angegebene URL verwenden.  <br/> |
-|[URL (SOAP)](url-soap.md) <br/> |Stellt die Webadresse für die URL an.  <br/> |
+|[AuthenticationMethods (SOAP)](authenticationmethods-soap.md) <br/> |Stellt die Authentifizierungsmethode dar, die beim Zugriff auf die angegebene URL verwendet werden soll.  <br/> |
+|[URL (SOAP)](url-soap.md) <br/> |Stellt die Webadresse für die URL dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[WebClientUrls (SOAP)](webclienturls-soap.md) <br/> |Stellt eine benutzereinstellung für, die eine Sammlung von **WebClientUrl** Elementen enthält.  <br/> |
+|[WebClientUrls (SOAP)](webclienturls-soap.md) <br/> |Stellt eine Benutzereinstellung dar, die eine Auflistung von **WebClientUrl** -Elementen enthält.  <br/> |
    
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

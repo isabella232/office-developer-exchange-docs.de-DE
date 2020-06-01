@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7cbdbc21-5405-4cbc-8ca0-d7b0257927aa
-description: Das NonIndexableItemDetailsResult-Element gibt die Ergebnisse des GetNonIndexableItemDetails WSDL-Vorgangs.
-ms.openlocfilehash: 6e271f2cf0e37f26b945332c94167b6a42354115
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das NonIndexableItemDetailsResult-Element gibt die Ergebnisse des GetNonIndexableItemDetails-WSDL-Vorgangs an.
+ms.openlocfilehash: 647f58b5e7285af70bbfb3a203ba71c9a3ccebcc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830535"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465443"
 ---
 # <a name="nonindexableitemdetailsresult"></a>NonIndexableItemDetailsResult
 
-Das **NonIndexableItemDetailsResult** -Element gibt die Ergebnisse des **GetNonIndexableItemDetails** WSDL-Vorgangs. 
+Das **NonIndexableItemDetailsResult** -Element gibt die Ergebnisse des **GetNonIndexableItemDetails** -WSDL-Vorgangs an. 
   
 ```XML
 <NonIndexableItemDetailsResult>
@@ -37,25 +37,25 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[Elemente (ArrayOfNonIndexableItemDetailsType)](items-arrayofnonindexableitemdetailstype.md) , [FailedMailboxes](failedmailboxes.md)
+[Items (ArrayOfNonIndexableItemDetailsType)](items-arrayofnonindexableitemdetailstype.md) , [FailedMailboxes](failedmailboxes.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [GetNonIndexableItemDetailsResponse](getnonindexableitemdetailsresponse.md) , [GetNonIndexableItemDetailsResponseMessage](getnonindexableitemdetailsresponsemessage.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -1,5 +1,5 @@
 ---
-title: ResetPIN-Vorgang (UM-Webdienst)
+title: ResetPIN-Vorgang (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,27 +10,27 @@ api_name:
 api_type:
 - schema
 ms.assetid: c0f14a15-3389-4311-8bac-f87930c5f5d4
-description: Der Vorgang ResetPIN die PIN-Nummer (TUI Kennwort) in einen neuen zufällig ausgewählten Wert geändert.
-ms.openlocfilehash: e6417b86ce17c0d34fe857cf1209a18972cbef63
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der ResetPIN-Vorgang ändert die PIN (TUI Password) in einen neuen Zufallswert.
+ms.openlocfilehash: 8de64ce7a47e9c426f8eb9298e1ca00508fb616c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831146"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44465492"
 ---
-# <a name="resetpin-operation-um-web-service"></a>ResetPIN-Vorgang (UM-Webdienst)
+# <a name="resetpin-operation-um-web-service"></a>ResetPIN-Vorgang (um-Webdienst)
 
-Der Vorgang ResetPIN die PIN-Nummer (TUI Kennwort) in einen neuen zufällig ausgewählten Wert geändert.
+Der ResetPIN-Vorgang ändert die PIN (TUI Password) in einen neuen Zufallswert.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Vorgang ResetPIN erstellt eine neue PIN basierend auf PIN-Richtlinien. Wenn der Vorgang erfolgreich ist, wird eine E-mail-Nachricht, die die neue PIN an das Postfach des Benutzers gesendet. Wenn der Vorgang fehlschlägt, wird eine Ausnahme ausgelöst, die Informationen über den Fehler enthält.
+Mit dem ResetPIN-Vorgang wird eine neue PIN basierend auf den PIN-Richtlinien erstellt. Wenn der Vorgang erfolgreich war, wird eine e-Mail-Nachricht mit der neuen PIN an das Postfach des Benutzers gesendet. Wenn der Vorgang fehlschlägt, wird eine Ausnahme ausgelöst, die Informationen über den Fehler enthält.
   
-## <a name="resetpin-request-example"></a>Anforderungsbeispiel ResetPIN
+## <a name="resetpin-request-example"></a>ResetPIN-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung ResetPIN veranschaulicht eine Anforderung zum Zurücksetzen der PIN für ein Postfach zu bilden.
+Das folgende Beispiel einer ResetPIN-Anforderung zeigt, wie Sie eine Anforderung zum Zurücksetzen der PIN für ein Postfach bilden.
   
 ### <a name="code"></a>Code
 
@@ -38,16 +38,16 @@ Im folgenden Beispiel wird eine Anforderung ResetPIN veranschaulicht eine Anford
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <ResetPIN xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" />
+    <ResetPIN xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" />
   </soap:Body>
 </soap:Envelope>
 ```
 
-## <a name="successful-resetpin-response-example"></a>Erfolgreiche ResetPIN antwortbeispiel
+## <a name="successful-resetpin-response-example"></a>Erfolgreiches ResetPIN-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel einer Antwort ResetPIN zeigt eine Antwort auf die Anforderung ResetPIN.
+Im folgenden Beispiel einer ResetPIN-Antwort wird eine Antwort auf die ResetPIN-Anforderung angezeigt.
   
 ### <a name="code"></a>Code
 
@@ -55,7 +55,7 @@ Das folgende Beispiel einer Antwort ResetPIN zeigt eine Antwort auf die Anforder
 <?xml version="1.0" encoding="utf-8" ?> 
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Body>
-    <ResetPINResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" /> 
+    <ResetPINResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" /> 
   </soap:Body>
 </soap:Envelope>
 ```
@@ -64,7 +64,7 @@ Das folgende Beispiel einer Antwort ResetPIN zeigt eine Antwort auf die Anforder
 
 
 
-[ResetPIN (UM-Webdienst)](resetpin-um-web-service.md)
+[ResetPIN (um-Webdienst)](resetpin-um-web-service.md)
   
-[ResetPINResponse (UM-Webdienst)](resetpinresponse-um-web-service.md)
+[ResetPINResponse (um-Webdienst)](resetpinresponse-um-web-service.md)
 

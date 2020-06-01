@@ -1,5 +1,5 @@
 ---
-title: Retentionid vom
+title: Para retentionid vom
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 07be3c51-6537-49b5-b25d-ff51759aba1f
-description: Das retentionid vom-Element gibt den Aufbewahrungsrichtlinien-Tag-Bezeichner.
-ms.openlocfilehash: fdbf263288c7909a73616b81a92632bd8c097111
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Retention-ID-Element gibt den Bezeichner des Aufbewahrungstags an.
+ms.openlocfilehash: f32fa0ceb301fca88cb0275e99ee9417dea87d2e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831219"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465219"
 ---
-# <a name="retentionid"></a>Retentionid vom
+# <a name="retentionid"></a>Para retentionid vom
 
-Das **retentionid vom** -Element gibt den Aufbewahrungsrichtlinien-Tag-Bezeichner. 
+Das **Retention** -ID-Element gibt den Bezeichner des Aufbewahrungstags an. 
   
 ```XML
 <RetentionId></RetentionId>
 ```
 
- **GuidType**
+ **Guidtype**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,19 +42,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des Elements **retentionid vom** ist der Aufbewahrungsrichtlinien-Tag-ID in GUID-Form. 
+Der Textwert des Elements **Retention** -ID ist der Bezeichner des Aufbewahrungstags im GUID-Formular. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |

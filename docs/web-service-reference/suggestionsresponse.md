@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d25ca143-f80c-4458-b669-346fda29a5a7
-description: Das SuggestionsResponse-Element enthält Antwort Status Vorschlag und Daten für die angeforderte Besprechungsvorschläge.
-ms.openlocfilehash: 614b58a1df8e340c6be468ccddd3b37537d32591
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SuggestionsResponse-Element enthält Antwortstatus Informationen und Vorschlagsdaten für angeforderte Besprechungsvorschläge.
+ms.openlocfilehash: cba344f3f97777580c2cc6d296f110f20b550063
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839138"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466654"
 ---
 # <a name="suggestionsresponse"></a>SuggestionsResponse
 
-Das **SuggestionsResponse** -Element enthält Antwort Status Vorschlag und Daten für die angeforderte Besprechungsvorschläge. 
+Das **SuggestionsResponse** -Element enthält Antwortstatus Informationen und Vorschlagsdaten für angeforderte Besprechungsvorschläge. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -47,28 +47,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessage](responsemessage.md) <br/> |Enthält beschreibende Informationen über den Antwortstatus.  <br/> |
-|[SuggestionDayResultArray](suggestiondayresultarray.md) <br/> |Enthält ein Array von besprechungsvorschlägen nach Datum organisiert.  <br/> |
+|[ResponseMessage](responsemessage.md) <br/> |Enthält beschreibende Informationen zum Antwortstatus.  <br/> |
+|[SuggestionDayResultArray](suggestiondayresultarray.md) <br/> |Enthält ein Array von Besprechungs Vorschlägen nach Datum organisiert.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUserAvailabilityResponse](getuseravailabilityresponse.md) <br/> |Enthält Informationen zur Verfügbarkeit der angeforderten Benutzer.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetUserAvailabilityResponse` <br/> |
+|[GetUserAvailabilityResponse](getuseravailabilityresponse.md) <br/> |Enthält die Verfügbarkeitsinformationen der angeforderten Benutzer.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element ist nicht in einer Antwort GetUserAvailability enthalten, wenn [SuggestionsViewOptions](suggestionsviewoptions.md) nicht in der Besprechungsanfrage GetUserAvailability festgelegt ist. 
+Dieses Element ist nicht in einer GetUserAvailability-Antwort enthalten, wenn [SuggestionsViewOptions](suggestionsviewoptions.md) nicht in der GetUserAvailability-Anforderungsnachricht festgelegt ist. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -80,5 +80,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d4831cac-a8f9-419a-ac42-481e34230cba
-description: Das SharingSecurity-Element wird in der Kopfzeile (SOAP = Simple Object Access Protocol) für Kalender oder Freigeben von Kontaktinformationen verwendet.
-ms.openlocfilehash: fa6719b5bd2bf5388c3da6befd50f4a302d4c3d8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SharingSecurity-Element wird in der Simple Object Access Protocol (SOAP) Kopfzeile für die Kalender-oder Kontaktfreigabe verwendet.
+ms.openlocfilehash: 456190079cc539c170aa96e795031071b5d9f1ad
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831482"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466710"
 ---
 # <a name="sharingsecurity"></a>SharingSecurity
 
-Das **SharingSecurity** -Element wird in der Kopfzeile (SOAP = Simple Object Access Protocol) für Kalender oder Freigeben von Kontaktinformationen verwendet. 
+Das **SharingSecurity** -Element wird in der Simple Object Access Protocol (SOAP) Kopfzeile für die Kalender-oder Kontaktfreigabe verwendet. 
   
 ```xml
 <SharingSecurity/>
@@ -44,15 +44,15 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle IIS-Verzeichnis, dass Hosts Exchange-Webdienste des Computers, auf dem Microsoft Exchange Server ausgeführt wird die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, in dem Exchange Webdienste des Computers gehostet wird, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

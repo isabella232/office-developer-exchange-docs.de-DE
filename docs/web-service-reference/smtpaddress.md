@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 779305a6-ad1e-424e-8a69-4e3bef61d787
-description: SmtpAddress-Element stellt die Simple Mail Transfer Protocol (SMTP)-Adresse eines Kontos für den Identitätswechsel verwendet werden oder Simple Mail Transfer Protocol (SMTP) Empfängeradresse eines Kalenders oder Kontakt Freigabeanfrage dar.
-ms.openlocfilehash: 39588f0892cdcec819a1972547155730be5785f4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SmtpAddress-Element stellt die Simple Mail Transfer Protocol (SMTP) Adresse eines Kontos dar, das für den Identitätswechsel oder eine Simple Mail Transfer Protocol (SMTP) Empfängeradresse einer Kalender-oder Kontaktfreigabe Anforderung verwendet werden soll.
+ms.openlocfilehash: 915ff328cc384c1f2884e9fbea8c10c1ebc79288
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831511"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466689"
 ---
 # <a name="smtpaddress"></a>SmtpAddress
 
-**SmtpAddress** -Element stellt die Simple Mail Transfer Protocol (SMTP)-Adresse eines Kontos für den Identitätswechsel verwendet werden oder Simple Mail Transfer Protocol (SMTP) Empfängeradresse eines Kalenders oder Kontakt Freigabeanfrage dar. 
+Das **SmtpAddress** -Element stellt die Simple Mail Transfer Protocol (SMTP) Adresse eines Kontos dar, das für den Identitätswechsel oder eine Simple Mail Transfer Protocol (SMTP) Empfängeradresse einer Kalender-oder Kontaktfreigabe Anforderung verwendet werden soll. 
   
 ```xml
 <SmtpAddress/>
@@ -45,24 +45,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ConnectingSID](connectingsid.md) <br/> |Gibt ein Konto Identitätswechsel bei Verwendung der "ExchangeImpersonation" SOAP-Header.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
-|[InvalidRecipient](invalidrecipient.md) <br/> |Stellt einen ungültigen Empfänger für einen zum Freigeben von Kalendern oder Kontakt Freigabenachricht an.  <br/> |
-|[Empfänger (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) <br/> |Stellt eine Sammlung von Empfängern, die Zugriff auf den freigegebenen Ordner gewährt werden soll.  <br/> |
-|[GetSharingFolder](getsharingfolder.md) <br/> |Definiert eine Anforderung an den lokalen Ordner Bezeichner eines angegebenen freigegebenen Ordners abzurufen.  <br/> |
+|[ConnectingSID](connectingsid.md) <br/> |Stellt ein Konto für den Identitätswechsel dar, wenn Sie den SOAP-ExchangeImpersonation-Header verwenden.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
+|[InvalidRecipient](invalidrecipient.md) <br/> |Stellt einen ungültigen Empfänger für eine Kalenderfreigabe-oder Kontaktfreigabe Nachricht dar.  <br/> |
+|[Recipients (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) <br/> |Stellt eine Auflistung von Empfängern dar, denen Zugriff auf den freigegebenen Ordner gewährt wird.  <br/> |
+|[GetSharingFolder](getsharingfolder.md) <br/> |Definiert eine Anforderung zum Abrufen der lokalen Ordner-ID eines angegebenen freigegebenen Ordners.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert, der eine SMTP-Adresse darstellt, ist erforderlich.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle IIS-Verzeichnis, dass Hosts Exchange-Webdienste des Computers, auf dem Microsoft Exchange Server ausgeführt wird die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, in dem Exchange Webdienste des Computers gehostet wird, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

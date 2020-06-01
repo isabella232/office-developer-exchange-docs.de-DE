@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0e0fa898-69a4-4c57-8bb2-52f716b5b478
-description: Das Element IntendedFreeBusyStatus stellt den gewünschten Status für den Kalenderelement, das die Besprechungsanfrage zugeordnet ist.
-ms.openlocfilehash: 3254becf8c6885f7d6dc401ecf31da149e7de2d4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IntendedFreeBusyStatus-Element stellt den beabsichtigten Status für das Kalenderelement dar, das der Besprechungsanfrage zugeordnet ist.
+ms.openlocfilehash: c5502bcfb308aa2f02a9575ab43f80261b5fa4ed
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829945"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465618"
 ---
 # <a name="intendedfreebusystatus"></a>IntendedFreeBusyStatus
 
-Das Element **IntendedFreeBusyStatus** stellt den gewünschten Status für den Kalenderelement, das die Besprechungsanfrage zugeordnet ist. 
+Das **IntendedFreeBusyStatus** -Element stellt den beabsichtigten Status für das Kalenderelement dar, das der Besprechungsanfrage zugeordnet ist. 
   
 ```xml
 <IntendedFreeBusyStatus/>
@@ -48,27 +48,27 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Es folgen die möglichen Werte für dieses Element:
+Ein Textwert ist erforderlich. Im folgenden sind die möglichen Werte für dieses Element angegeben:
   
-- Kostenlos
+- Frei
     
-- Mit Vorbehalt
+- Vorläufige
     
 - Gebucht
     
-- ABWESEND
+- Abwesenheits
     
 - NoData
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

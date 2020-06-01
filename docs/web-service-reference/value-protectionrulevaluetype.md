@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b039bd6e-2198-47cf-9c78-a5e8b9d51c98
-description: Das Value-Element identifiziert eine einzelne Empfänger oder Absender Abteilung.
-ms.openlocfilehash: 6173f94dcfb83eafd62e35f185a5e8c669d50f6c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Value-Element identifiziert eine einzelne Empfänger-oder Absender Abteilung.
+ms.openlocfilehash: 908ea451800abc343fb6e4d4a4ed98d57223bd23
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839487"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465240"
 ---
 # <a name="value-protectionrulevaluetype"></a>Wert (ProtectionRuleValueType)
 
-Das **Value** -Element identifiziert eine einzelne Empfänger oder Absender Abteilung. 
+Das **value** -Element identifiziert eine einzelne Empfänger-oder Absender Abteilung. 
   
 ```XML
 <Value/>
@@ -45,22 +45,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RecipientIs](recipientis.md) <br/> |Gibt an, dass alle Empfänger der e-Mail-Nachricht mit der angegebenen Empfänger im untergeordneten **Wert** übereinstimmt.  <br/> |
-|[SenderDepartments](senderdepartments.md) <br/> |Gibt an, dass die Abteilung des Absenders einer der angegebenen Abteilungen im untergeordneten **Wert** übereinstimmt.  <br/> |
+|[Empfängerist](recipientis.md) <br/> |Gibt an, dass jeder Empfänger der e-Mail-Nachricht mit einem der angegebenen Empfänger in den untergeordneten **value** -Elementen übereinstimmt.  <br/> |
+|[SenderDepartments](senderdepartments.md) <br/> |Gibt an, dass die Abteilung des Absenders mit einer der angegebenen Abteilungen in den untergeordneten **value** -Elementen übereinstimmt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Dieses Element muss einen nicht leeren Zeichenfolgenwert enthalten.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

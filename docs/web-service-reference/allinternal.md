@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b7e5072f-5d9f-4ee0-b58b-4d75d878ea1c
-description: Das AllInternal-Element wird zu True ausgewertet, wenn alle Empfänger einer e-Mail-Nachricht für die Organisation des Absenders intern sind.
-ms.openlocfilehash: 0ffd4178e711e3117497eed682e3fd3e0594989b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das allinternal-Element ergibt true, wenn alle Empfänger einer e-Mail-Nachricht für die Organisation des Absenders intern sind.
+ms.openlocfilehash: c5ffe15eca5d680994acb62913ebf5effacce214
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757252"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464833"
 ---
 # <a name="allinternal"></a>AllInternal
 
-Das **AllInternal** -Element ergibt **true** , wenn alle Empfänger einer e-Mail-Nachricht intern für die Organisation des Absenders sind. 
+Das **allinternal** -Element ergibt **true** , wenn alle Empfänger einer e-Mail-Nachricht für die Organisation des Absenders intern sind. 
   
 ```xml
 <AllInternal/>
@@ -44,22 +44,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Bedingung](condition.md) <br/> |Gibt die Bedingung, die erfüllt sein muss, für die Aktionsteil der Regel ausgeführt werden.  <br/> |
-|[Und (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Gibt an, dass alle untergeordneten Elemente übereinstimmen müssen, damit zu **true**ausgewertet werden.  <br/> |
+|[Bedingung](condition.md) <br/> |Gibt die Bedingung an, die erfüllt sein muss, damit der Aktions Teil der Regel ausgeführt wird.  <br/> |
+|[Und (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Gibt an, dass alle untergeordneten Elemente übereinstimmen müssen, damit Sie zu **true**ausgewertet werden.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Das **AllInternal** -Element muss leer sein. 
+Das **allinternal** -Element muss leer sein. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

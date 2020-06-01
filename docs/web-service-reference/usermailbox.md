@@ -1,5 +1,5 @@
 ---
-title: UserMailbox
+title: User Mailbox
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,14 +8,14 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1d47141c-3c3f-45b8-90c5-33a44adb34b2
 description: Das UserMailbox -Element identifiziert ein Benutzerpostfach.
-ms.openlocfilehash: 9f359a2b0ba315c236d4bf189c3de321417bd390
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 9bb1b08320f5e6f4843383a8e3aff96fc3dcccad
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839449"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465317"
 ---
-# <a name="usermailbox"></a>UserMailbox
+# <a name="usermailbox"></a>User Mailbox
 
 Das **UserMailbox** -Element identifiziert ein Benutzerpostfach. 
   
@@ -43,17 +43,17 @@ Keine.
 
 [Postfächer (ArrayOfUserMailboxesType)](mailboxes-arrayofusermailboxestype.md) | [MailboxStatisticsSearchResult](mailboxstatisticssearchresult.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |true  <br/> |

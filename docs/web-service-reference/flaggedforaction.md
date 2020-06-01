@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6a08c48a-7b32-4754-8940-adbda55e8133
-description: Das FlaggedForAction-Element gibt die Kennzeichen für den Aktionswert, die angezeigt werden, muss auf eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anwenden.
-ms.openlocfilehash: 5b6e714512edcf12ded2c04f414d047b8622d305
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FlaggedForAction-Element gibt das Flag für Action-Wert an, das in eingehenden Nachrichten angezeigt werden muss, damit die Bedingung oder Ausnahme zutrifft.
+ms.openlocfilehash: f996dc4bcf30db32e1d73fb302ab137f0a6ad4d4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758497"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466241"
 ---
 # <a name="flaggedforaction"></a>FlaggedForAction
 
-Das **FlaggedForAction** -Element gibt die Kennzeichen für den Aktionswert, die angezeigt werden, muss auf eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anwenden. 
+Das **FlaggedForAction** -Element gibt das Flag für Action-Wert an, das in eingehenden Nachrichten angezeigt werden muss, damit die Bedingung oder Ausnahme zutrifft. 
   
 ```XML
 <FlaggedForAction/>
@@ -49,23 +49,23 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses Element:
+Ein Textwert ist erforderlich. Im folgenden sind die möglichen Text Werte für dieses Element angegeben:
   
-- Jede
+- Any
     
-- Aufruf
+- Anruf
     
 - DoNotForward
     
-- Nachverfolgung
+- FollowUp
     
 - FYI
     
-- Forward
+- Weiterleiten
     
 - NoResponseNecessary
     
-- Lesen
+- Read
     
 - Antworten
     
@@ -73,17 +73,17 @@ Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses El
     
 - Überprüfung
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

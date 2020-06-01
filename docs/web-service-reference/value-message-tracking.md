@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cb2f228f-775a-4c7d-82e7-41c7c953c808
-description: Das Value-Element darstellt, den Eigenschaftswert für eine Nachricht Bericht nachverfolgen.
-ms.openlocfilehash: 152e4fe61a4cff8013ae02900bd84bf244ae84a9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Value-Element stellt den Eigenschaftswert für einen Nachrichtenverfolgungsbericht dar.
+ms.openlocfilehash: 4f6b5cb9d82a35bbe010b36e409cdc9f3a70173d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839484"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465008"
 ---
 # <a name="value-message-tracking"></a>Wert (Nachrichtenverfolgung)
 
-Das **Value** -Element darstellt, den Eigenschaftswert für eine Nachricht Bericht nachverfolgen. 
+Das **value** -Element stellt den Eigenschaftswert für einen Nachrichtenverfolgungsbericht dar. 
   
 ```xml
 <Value/>
@@ -45,23 +45,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[TrackingPropertyType](trackingpropertytype.md) <br/> |Stellt ein Name-Wert-Paar von Zeichenfolgen, die zum Erstellen von Eigenschaften für nachrichtenverfolgungsberichte verwendet wird.  <br/> |
+|[TrackingPropertyType](trackingpropertytype.md) <br/> |Stellt ein Name-Wert-Paar von Zeichenfolgen dar, das zum Erstellen von Eigenschaften für Nachrichtenverfolgungsberichte verwendet wird.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Der Textwert ist optional.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element kann höchstens einmal im [TrackingPropertyType](trackingpropertytype.md) -Element auftreten. 
+Dieses Element kann im [TrackingPropertyType](trackingpropertytype.md) -Element höchstens einmal vorkommen. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

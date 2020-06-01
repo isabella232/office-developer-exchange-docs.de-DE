@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 86ef6012-2d3c-4058-9c43-5ddbea25f6ce
-description: YomiFirstName-Element gibt den Namen, der für die durchsuchbaren oder phonetische Schreibweise für Japanisch Vorname in Japan verwendet wird.
-ms.openlocfilehash: afcc91055d357c935c33c246e43e12bafd48ad10
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das YomiFirstName-Element stellt den Namen dar, der in Japan für die durchsuchbare oder phonetische Rechtschreibprüfung für einen japanischen Vornamen verwendet wird.
+ms.openlocfilehash: b059059fde9d5a455ea32113fa454de254598d29
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839574"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465128"
 ---
 # <a name="yomifirstname"></a>YomiFirstName
 
-**YomiFirstName** -Element gibt den Namen, der für die durchsuchbaren oder phonetische Schreibweise für Japanisch Vorname in Japan verwendet wird. 
+Das **YomiFirstName** -Element stellt den Namen dar, der in Japan für die durchsuchbare oder phonetische Rechtschreibprüfung für einen japanischen Vornamen verwendet wird. 
   
 ```xml
 <YomiFirstName/>
@@ -44,17 +44,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CompleteName](completename.md) <br/> |Stellt den vollständigen Namen eines Kontakts an.  <br/> |
+|[Completename](completename.md) <br/> |Stellt den vollständigen Namen eines Kontakts dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
@@ -66,5 +66,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Creating Contacts (Exchange Web Services)](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
+[Creating Contacts (Exchange Web Services)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
 
