@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6f1bcbfb-d7f6-4fa0-b6f8-681a0b067007
-description: Das SearchMailboxesResponseMessage-Element gibt die Antwortnachricht für eine Anforderung SearchMailboxes.
-ms.openlocfilehash: b9e16e5b45271b366dd5cc49537085dbc8234da0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SearchMailboxesResponseMessage-Element gibt die Antwortnachricht für eine SearchMailboxes-Anforderung an.
+ms.openlocfilehash: 342223b9a8cc7e91b97d637cb104f7bb160b7d5a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831297"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44448422"
 ---
-# <a name="searchmailboxesresponsemessage"></a><span data-ttu-id="2c4ff-103">SearchMailboxesResponseMessage</span><span class="sxs-lookup"><span data-stu-id="2c4ff-103">SearchMailboxesResponseMessage</span></span>
+# <a name="searchmailboxesresponsemessage"></a><span data-ttu-id="c7c46-103">SearchMailboxesResponseMessage</span><span class="sxs-lookup"><span data-stu-id="c7c46-103">SearchMailboxesResponseMessage</span></span>
 
-<span data-ttu-id="2c4ff-104">Das **SearchMailboxesResponseMessage** -Element gibt die Antwortnachricht für eine Anforderung **SearchMailboxes** .</span><span class="sxs-lookup"><span data-stu-id="2c4ff-104">The **SearchMailboxesResponseMessage** element specifies the response message for a **SearchMailboxes** request.</span></span> 
+<span data-ttu-id="c7c46-104">Das **SearchMailboxesResponseMessage** -Element gibt die Antwortnachricht für eine **SearchMailboxes** -Anforderung an.</span><span class="sxs-lookup"><span data-stu-id="c7c46-104">The **SearchMailboxesResponseMessage** element specifies the response message for a **SearchMailboxes** request.</span></span> 
   
 ```XML
 <SearchMailboxesResponseMessage>
@@ -29,36 +29,36 @@ ms.locfileid: "19831297"
 </SearchMailboxesResponseMessage>
 ```
 
- <span data-ttu-id="2c4ff-105">**SearchMailboxesResponseMessageType**</span><span class="sxs-lookup"><span data-stu-id="2c4ff-105">**SearchMailboxesResponseMessageType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="2c4ff-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="2c4ff-106">Attributes and elements</span></span>
+ <span data-ttu-id="c7c46-105">**SearchMailboxesResponseMessageType**</span><span class="sxs-lookup"><span data-stu-id="c7c46-105">**SearchMailboxesResponseMessageType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="c7c46-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="c7c46-106">Attributes and elements</span></span>
 
-<span data-ttu-id="2c4ff-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="2c4ff-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="c7c46-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="c7c46-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="2c4ff-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="2c4ff-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="c7c46-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="c7c46-108">Attributes</span></span>
 
-<span data-ttu-id="2c4ff-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="2c4ff-109">None.</span></span>
+<span data-ttu-id="c7c46-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="c7c46-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="2c4ff-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="2c4ff-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="c7c46-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="c7c46-110">Child elements</span></span>
 
-<span data-ttu-id="2c4ff-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [SearchMailboxesResult](searchmailboxesresult.md)</span><span class="sxs-lookup"><span data-stu-id="2c4ff-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [SearchMailboxesResult](searchmailboxesresult.md)</span></span>
+<span data-ttu-id="c7c46-111">[MessageText](messagetext.md)  |  [Response Code](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [Messagexml verwendet](messagexml.md)  |  [SearchMailboxesResult](searchmailboxesresult.md)</span><span class="sxs-lookup"><span data-stu-id="c7c46-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [SearchMailboxesResult](searchmailboxesresult.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="2c4ff-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="2c4ff-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="c7c46-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="c7c46-112">Parent elements</span></span>
 
-<span data-ttu-id="2c4ff-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="2c4ff-113">None.</span></span>
+<span data-ttu-id="c7c46-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="c7c46-113">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="2c4ff-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="2c4ff-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c7c46-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="c7c46-114">Remarks</span></span>
 
-<span data-ttu-id="2c4ff-115">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="2c4ff-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="c7c46-115">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="c7c46-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="2c4ff-116">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="2c4ff-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="c7c46-116">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="c7c46-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="2c4ff-117">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="2c4ff-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="c7c46-117">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="c7c46-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="2c4ff-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="2c4ff-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="2c4ff-119">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="2c4ff-119">Schema name</span></span>  <br/> |<span data-ttu-id="2c4ff-120">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="2c4ff-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="2c4ff-121">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="2c4ff-121">Validation file</span></span>  <br/> |<span data-ttu-id="2c4ff-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="2c4ff-122">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="2c4ff-123">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="2c4ff-123">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="c7c46-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="c7c46-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="c7c46-119">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="c7c46-119">Schema name</span></span>  <br/> |<span data-ttu-id="c7c46-120">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="c7c46-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="c7c46-121">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="c7c46-121">Validation file</span></span>  <br/> |<span data-ttu-id="c7c46-122">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="c7c46-122">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="c7c46-123">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="c7c46-123">Can be empty</span></span>  <br/> ||
    
 
