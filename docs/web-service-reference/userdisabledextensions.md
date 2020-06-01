@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c8294eee-6588-4e42-965d-c8261a4770c9
-description: Das UserDisabledExtensions-Element listet die deaktivierte apps.
-ms.openlocfilehash: 4d2935779626337c2b5132fe0556a6d707516223
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UserDisabledExtensions-Element listet die deaktivierten apps auf.
+ms.openlocfilehash: 42fd16f342e8c5a4f7a5526cb7513cf77ba8246f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839438"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44433679"
 ---
-# <a name="userdisabledextensions"></a><span data-ttu-id="b7b32-103">UserDisabledExtensions</span><span class="sxs-lookup"><span data-stu-id="b7b32-103">UserDisabledExtensions</span></span>
+# <a name="userdisabledextensions"></a><span data-ttu-id="72395-103">UserDisabledExtensions</span><span class="sxs-lookup"><span data-stu-id="72395-103">UserDisabledExtensions</span></span>
 
-<span data-ttu-id="b7b32-104">Das **UserDisabledExtensions** -Element listet die deaktivierte apps.</span><span class="sxs-lookup"><span data-stu-id="b7b32-104">The **UserDisabledExtensions** element lists the disabled apps.</span></span> 
+<span data-ttu-id="72395-104">Das **UserDisabledExtensions** -Element listet die deaktivierten apps auf.</span><span class="sxs-lookup"><span data-stu-id="72395-104">The **UserDisabledExtensions** element lists the disabled apps.</span></span> 
   
 ```XML
 <UserDisabledExtensions>
@@ -25,36 +25,36 @@ ms.locfileid: "19839438"
 </UserDisabledExtensions>
 ```
 
- <span data-ttu-id="b7b32-105">**ArrayOfStringsType**</span><span class="sxs-lookup"><span data-stu-id="b7b32-105">**ArrayOfStringsType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="b7b32-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="b7b32-106">Attributes and elements</span></span>
+ <span data-ttu-id="72395-105">**ArrayOfStringsType**</span><span class="sxs-lookup"><span data-stu-id="72395-105">**ArrayOfStringsType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="72395-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="72395-106">Attributes and elements</span></span>
 
-<span data-ttu-id="b7b32-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="b7b32-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="72395-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="72395-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="b7b32-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="b7b32-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="72395-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="72395-108">Attributes</span></span>
 
-<span data-ttu-id="b7b32-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="b7b32-109">None.</span></span>
+<span data-ttu-id="72395-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="72395-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="b7b32-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="b7b32-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="72395-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="72395-110">Child elements</span></span>
 
-[<span data-ttu-id="b7b32-111">String</span><span class="sxs-lookup"><span data-stu-id="b7b32-111">String</span></span>](string.md)
+[<span data-ttu-id="72395-111">String</span><span class="sxs-lookup"><span data-stu-id="72395-111">String</span></span>](string.md)
   
-### <a name="parent-elements"></a><span data-ttu-id="b7b32-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="b7b32-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="72395-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="72395-112">Parent elements</span></span>
 
-[<span data-ttu-id="b7b32-113">UserParameters</span><span class="sxs-lookup"><span data-stu-id="b7b32-113">UserParameters</span></span>](userparameters.md)
+[<span data-ttu-id="72395-113">User Parameters</span><span class="sxs-lookup"><span data-stu-id="72395-113">UserParameters</span></span>](userparameters.md)
   
-## <a name="remarks"></a><span data-ttu-id="b7b32-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="b7b32-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="72395-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="72395-114">Remarks</span></span>
 
-<span data-ttu-id="b7b32-115">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="b7b32-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="72395-115">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="72395-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="b7b32-116">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="b7b32-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="72395-116">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="72395-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="b7b32-117">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="b7b32-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="72395-117">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="72395-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="b7b32-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="b7b32-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="b7b32-119">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="b7b32-119">Schema name</span></span>  <br/> |<span data-ttu-id="b7b32-120">Schematypen</span><span class="sxs-lookup"><span data-stu-id="b7b32-120">Types schema</span></span>  <br/> |
-|<span data-ttu-id="b7b32-121">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="b7b32-121">Validation file</span></span>  <br/> |<span data-ttu-id="b7b32-122">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="b7b32-122">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="b7b32-123">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="b7b32-123">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="72395-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="72395-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="72395-119">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="72395-119">Schema name</span></span>  <br/> |<span data-ttu-id="72395-120">Schematypen</span><span class="sxs-lookup"><span data-stu-id="72395-120">Types schema</span></span>  <br/> |
+|<span data-ttu-id="72395-121">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="72395-121">Validation file</span></span>  <br/> |<span data-ttu-id="72395-122">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="72395-122">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="72395-123">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="72395-123">Can be empty</span></span>  <br/> ||
    
 
