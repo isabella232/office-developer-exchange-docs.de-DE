@@ -1,5 +1,5 @@
 ---
-title: Date
+title: Datum
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2f6bc090-fff4-45b1-8d7e-8fd6e060cce2
-description: Das Date-Element darstellt, das Datum, das die Zeiten vorgeschlagenen Besprechung enthält.
-ms.openlocfilehash: 98dc9d6c599222c819b2c9ed1bacd05758ae1655
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Date-Element stellt das Datum dar, das die vorgeschlagenen Besprechungszeiten enthält.
+ms.openlocfilehash: bcc152ed6aba94907189b5579b998815be45db16
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757853"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44443788"
 ---
-# <a name="date"></a>Date
+# <a name="date"></a>Datum
 
-Das **Date** -Element darstellt, das Datum, das die Zeiten vorgeschlagenen Besprechung enthält. 
+Das **Date** -Element stellt das Datum dar, das die vorgeschlagenen Besprechungszeiten enthält. 
   
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md) 
 - [SuggestionsResponse](suggestionsresponse.md) 
@@ -51,21 +51,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SuggestionDayResult](suggestiondayresult.md) <br/> |Stellt einen einzelnen Tag, der Zeiten der vorgeschlagenen Besprechung enthält.  <br/><br/>Es folgt der 2.0 XPath-Ausdruck, der dieses Element:<br/><br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]` <br/> |
+|[SuggestionDayResult](suggestiondayresult.md) <br/> |Stellt einen einzelnen Tag dar, der vorgeschlagene Besprechungszeiten enthält.  <br/><br/>Im folgenden finden Sie den XPath 2,0-Ausdruck für dieses Element:<br/><br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Überprüfen Sie die World Wide Web Consortium (W3C) Schema Datatype Empfehlungen für das Format für den primitiven DateTime-Datentyp.
+Ein Textwert ist erforderlich. Lesen Sie die Empfehlungen des W3C (World Wide webconsortium)-Schemas für das Format des primitiven datetime-Datentyps.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -74,5 +74,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md) 
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
-- [Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

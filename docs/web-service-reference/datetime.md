@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9c6ecd4c-779c-4fa5-8082-dd2bc0a751f4
-description: Das DateTime-Element darstellt, das Datum und Uhrzeit an der erfolgt der Übergang zur Zeitzone.
-ms.openlocfilehash: e8212e375a691a00b8d830dbd34c87a8eef91e53
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DateTime-Element stellt das Datum und die Uhrzeit dar, zu der der Zeitzonenübergang erfolgt.
+ms.openlocfilehash: 109fc1107ddf59d3e8aea12b267775503ac462ce
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757858"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44442878"
 ---
 # <a name="datetime"></a>DateTime
 
-Das **DateTime** -Element darstellt, das Datum und Uhrzeit an der erfolgt der Übergang zur Zeitzone. 
+Das **DateTime** -Element stellt das Datum und die Uhrzeit dar, zu der der Zeitzonenübergang erfolgt. 
   
 ```xml
 <DateTime/>
@@ -45,21 +45,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AbsoluteDateTransition](absolutedatetransition.md) <br/> |Stellt einen Zeitzone Übergang, die einem bestimmten Datum und zu einem bestimmten Zeitpunkt dar.  <br/> |
+|[AbsoluteDateTransition](absolutedatetransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der zu einem bestimmten Datum und zu einem bestimmten Zeitpunkt erfolgt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **DateTime** -Element darstellt, Datum und Uhrzeit an der erfolgt der Übergang zur Zeitzone. 
+Der Textwert des **DateTime** -Elements stellt das Datum und die Uhrzeit dar, zu der der Zeitzonenübergang erfolgt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
