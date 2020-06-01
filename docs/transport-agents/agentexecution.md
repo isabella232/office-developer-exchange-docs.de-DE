@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 600c4690-941c-45af-a906-5528748d09cd
-description: 'Zuletzt geändert: 17 September 2015'
-ms.openlocfilehash: 5848d52a68c8c3f747614015e49becb34bc4cfd8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 'Letzte Änderung: September 17, 2015'
+ms.openlocfilehash: 457257e59fb37659daf2f91b0fa5dfced5c48c03
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757167"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44446490"
 ---
 # <a name="agentexecution"></a>agentExecution
   
 **Gilt für:** Exchange Server 2013 
   
-Das **AgentExecution** -Element definiert die Zeit in Millisekunden an, für den Clientzugriff "oder" Postfach-Server zu warten, bis ein Agent zurückgeben, ein Ereignis, bevor in das Ereignisprotokoll geschrieben. 
+Das **agentExecution** -Element definiert die Zeit (in Millisekunden), die der Client Zugriffs-oder Postfachserver wartet, bis ein Agent von einem Ereignis zurückkehrt, bevor er in das Ereignisprotokoll schreibt. 
   
 - [Konfiguration](configuration.md)  
 - [Überwachung](monitoring.md)
@@ -33,7 +33,7 @@ Das **AgentExecution** -Element definiert die Zeit in Millisekunden an, für den
 <agentExecution timeLimitInMilliseconds="" />
 ```
 
-**AgentExecutionType (ComplexType)**
+**agentExecutionType (complexType)**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -43,7 +43,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**timeLimitInMilliseconds** <br/> |Eine positive ganze Zahl, die gibt die Zeit in Millisekunden an, für den Server zu warten, bis ein Agent zurückgeben, ein Ereignis, bevor eine Warnung in das Ereignisprotokoll geschrieben. Wenn dieser Wert zu klein ist, kann die Leistung verringern. Der vorgeschlagene Wert für dieses Attribut ist 300.000, die auf 5 Minuten entspricht.  <br/> |
+|**timeLimitInMilliseconds** <br/> |Ein positiver ganzzahliger Wert, der die Zeit in Millisekunden angibt, die der Server wartet, bis ein Agent von einem Ereignis zurückgegeben wird, bevor er eine Warnung in das Ereignisprotokoll schreibt. Die Leistung kann sinken, wenn dieser Wert zu klein ist. Der vorgeschlagene Wert für dieses Attribut ist 300.000, was 5 Minuten entspricht.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -53,18 +53,18 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Überwachung](monitoring.md) <br/> |Enthält Konfigurationsinformationen, die definiert, wann und wie der Front-End-Transport-Dienst oder den Transportdienst Agents überwacht, die installiert werden.  <br/> |
+|[Überwachung](monitoring.md) <br/> |Enthält Konfigurationsinformationen, die definieren, wie und wann der Front-End-Transport-Dienst oder der Transportdienst Agents überwacht, die installiert sind.  <br/> |
    
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |Diese Datei ist nicht auf einen Namespace definieren.  <br/> |
+|Namespace  <br/> |In dieser Datei wird kein Namespace definiert.  <br/> |
 |Name des Schemas  <br/> |Nicht verfügbar.  <br/> |
 |Überprüfungsdatei  <br/> |Nicht verfügbar.  <br/> |
-|Leer kann sein  <br/> |Falsch.  <br/> |
+|Leer kann sein  <br/> |"False".  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Agents Datei Konfigurationselemente für Exchange 2013](agents-configuration-file-elements-for-exchange-2013.md)
+- [Elemente der Konfigurationsdatei der Agents für Exchange 2013](agents-configuration-file-elements-for-exchange-2013.md)
 

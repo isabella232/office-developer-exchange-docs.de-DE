@@ -1,5 +1,5 @@
 ---
-title: E-Mail-Infos
+title: MailTips
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: ITPro
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c1cba493-bccc-4b8e-be8e-bfa8a8b10882
-description: Das e-Mail-Infos Element stellt Werte für verschiedene Arten von e-Mail-Infos.
-ms.openlocfilehash: 3a2e95225b09fd2d81db32f821ea3069ab7e7852
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MailTips-Element stellt Werte für verschiedene Arten von e-Mail-Tipps dar.
+ms.openlocfilehash: 9bacdea7b4f3108f700ed102025445e01a73e69d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830311"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44447596"
 ---
-# <a name="mailtips"></a>E-Mail-Infos
+# <a name="mailtips"></a>MailTips
 
-Das **e-Mail-Infos** Element stellt Werte für verschiedene Arten von e-Mail-Infos. 
+Das **MailTips** -Element stellt Werte für verschiedene Arten von e-Mail-Tipps dar. 
   
 ```XML
 <MailTips>
@@ -39,7 +39,7 @@ Das **e-Mail-Infos** Element stellt Werte für verschiedene Arten von e-Mail-Inf
 </MailTips>
 ```
 
- **E-Mail-Infos**
+ **E-Mail-Info**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -52,39 +52,39 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RecipientAddress](recipientaddress.md) <br/> |Das Postfach des Empfängers darstellt.  <br/> |
-|[PendingMailTips](pendingmailtips.md) <br/> |Gibt an, dass die e-Mail-Infos in diesem Element nicht ausgewertet werden konnte, bevor die Verarbeitung der Servertimeout abgelaufen.  <br/> |
-|[OutOfOffice](outofoffice.md) <br/> |Stellt die Antwortnachricht und einer Zeitdauer für die Response-Nachricht senden.  <br/> |
-|[MailboxFull](mailboxfull.md) <br/> |Gibt an, ob das Postfach des Empfängers voll ist.  <br/> |
-|[CustomMailTip](custommailtip.md) <br/> |Stellt eine benutzerdefinierte e-Mail-Info.  <br/> |
-|[TotalMemberCount](totalmembercount.md) <br/> |Stellt die Anzahl aller Elemente in einer Gruppe.  <br/> |
-|[ExternalMemberCount](externalmembercount.md) <br/> |Stellt die Anzahl der externen Elemente in einer Gruppe.  <br/> |
-|[MaxMessageSize](maxmessagesize.md) <br/> |Stellt die maximale Größe von Nachrichten, die der Empfänger akzeptieren kann.  <br/> |
-|[DeliveryRestricted](deliveryrestricted.md) <br/> |Gibt an, ob Einschränkungen Übermittlung des Absenders der Nachricht verhindern Erreichen des Empfängers.  <br/> |
-|[IsModerated](ismoderated.md) <br/> |Gibt an, ob das Postfach des Empfängers ist moderiert wird.  <br/> |
+|[RecipientAddress](recipientaddress.md) <br/> |Stellt das Postfach des Empfängers dar.  <br/> |
+|[PendingMailTips](pendingmailtips.md) <br/> |Gibt an, dass die e-Mail-Tipps in diesem Element nicht ausgewertet werden konnten, bevor das Verarbeitungstimeout des Servers abgelaufen war.  <br/> |
+|[OutOfOffice](outofoffice.md) <br/> |Stellt die Antwortnachricht und einen Zeitraum für das Senden der Antwortnachricht dar.  <br/> |
+|[MailboxFull](mailboxfull.md) <br/> |Gibt an, ob das Postfach für den Empfänger voll ist.  <br/> |
+|[CustomMailTip](custommailtip.md) <br/> |Stellt eine angepasste e-Mail-Tipp Nachricht dar.  <br/> |
+|[TotalMemberCount](totalmembercount.md) <br/> |Stellt die Anzahl aller Elemente in einer Gruppe dar.  <br/> |
+|[ExternalMemberCount](externalmembercount.md) <br/> |Stellt die Anzahl externer Mitglieder in einer Gruppe dar.  <br/> |
+|[MaxMessageSize](maxmessagesize.md) <br/> |Stellt die maximale Nachrichtengröße dar, die der Empfänger annehmen kann.  <br/> |
+|[DeliveryRestricted](deliveryrestricted.md) <br/> |Gibt an, ob durch Übermittlungseinschränkungen verhindert wird, dass die Nachricht des Absenders den Empfänger erreicht.  <br/> |
+|[Ismoderiert](ismoderated.md) <br/> |Gibt an, ob das Postfach des Empfängers moderiert wird.  <br/> |
 |[InvalidRecipient (e-Mail-Infos)](invalidrecipient-mailtips.md) <br/> |Gibt an, ob der Empfänger ungültig ist.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MailTipsResponseMessageType](mailtipsresponsemessagetype.md) <br/> |Stellt e-Mail-Tipps Einstellungen.  <br/> |
+|[MailTipsResponseMessageType](mailtipsresponsemessagetype.md) <br/> |Stellt Einstellungen für e-Mail-Tipps dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
