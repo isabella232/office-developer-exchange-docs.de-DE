@@ -1,5 +1,5 @@
 ---
-title: CChkSGFiles.ErrInit-Funktion
+title: CChkSGFiles. ErrInit-Funktion
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,19 +11,19 @@ api_name:
 api_type:
 - dllExport
 ms.assetid: 61bb3af1-8b51-4bae-8e25-90a4dc1226c5
-description: 'Zuletzt geändert: 03 März 2013'
-ms.openlocfilehash: d4b76933a747fe4bf084061cf080bc68264132ed
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 'Letzte Änderung: März 03, 2013'
+ms.openlocfilehash: c881691e7c1ba83a396e659f6aac0328625e49a5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756802"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457011"
 ---
-# <a name="cchksgfileserrinit-function"></a>CChkSGFiles.ErrInit-Funktion
+# <a name="cchksgfileserrinit-function"></a>CChkSGFiles. ErrInit-Funktion
   
 **Gilt für:** Exchange Server 2003 | Exchange Server 2007 | Exchange Server 2010 | Exchange Server 2013
   
-Initialisiert das **CChkSGFiles** -Objekt durch Angeben der Datenbanken überprüft werden soll und den Pfad und den Basisnamen des die Transaktionsprotokolldateien überprüft werden soll. Anwendungen sollte diese Funktion aufrufen, unmittelbar nach der erfolgreichen Aufruf der Funktion **neu** . 
+Initialisiert das **CChkSGFiles** -Objekt, indem die zu überprüfenden Datenbanken und der Pfad und der Basis Name der zu überprüfenden Transaktionsprotokolldateien angegeben werden. Anwendungen sollten diese Funktion sofort aufrufen, nachdem die **neue** Funktion erfolgreich aufgerufen wurde. 
   
 ```cs
 Vitual ERRErrInit  
@@ -39,48 +39,48 @@ Vitual ERRErrInit
 
 ## <a name="parameters"></a>Parameter
 
-### <a name="rgwszdb"></a>RgwszDb]
+### <a name="rgwszdb"></a>rgwszDb[]
   
-Input-Parameter. Ein Array, der angibt, die Datenbanken überprüft werden soll. Jedes Arrayelement ist eine Null terminierte Unicode-Zeichenfolge, die den Pfad und den Namen einer Datenbank überprüft werden soll.
+Eingabeparameter. Ein Array, das angibt, welche Datenbanken überprüft werden sollen. Jedes Array-Element ist eine mit NULL endende Unicode-Zeichenfolge, die den Pfad und den Dateinamen einer Datenbank enthält, die überprüft werden soll.
     
 ### <a name="cdb"></a>cDB
   
-Input-Parameter. Die Anzahl der gültige Datenbank Pfad Elementen im Array **RgwszDb** . 
+Eingabeparameter. Die Anzahl gültiger Datenbankpfad Elemente im **rgwszDb** -Array. 
     
 #### <a name="wszlogpath"></a>wszLogPath
   
-Input-Parameter. Der vollständige Pfad der die Transaktionsprotokolldateien in Form einer Null terminierte Unicode-Zeichenfolge überprüft werden soll.
+Eingabeparameter. Der vollständige Pfad der zu überprüfenden Transaktionsprotokolldateien in Form einer null-terminierten Unicode-Zeichenfolge.
     
 ### <a name="wszbasename"></a>wszBaseName
   
-Input-Parameter. Die drei Buchstaben Basisnamen der Transaktionsprotokolldateien in Form einer Null terminierte Unicode-Zeichenfolge.
+Eingabeparameter. Der dreistellige Basis Name der Exchange-Transaktionsprotokolldateien in Form einer null-terminierten Unicode-Zeichenfolge.
     
 ### <a name="ulflags"></a>ulFlags
   
-Optionale Eingabeparameter. Dieser Wert ist für die zukünftige Verwendung reserviert. Der durch diesen Parameter übergebene Wert muss 0 (null) sein.
+Optionaler Eingabeparameter. Dieser Wert ist für die zukünftige Verwendung reserviert. Der von diesem Parameter übergebene Wert sollte 0 (null) sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Ein Fehlercode aus der [ERR](cchksgfiles-err-enumeration.md) -Aufzählung. 
+Ein Fehlercode aus der [Err](cchksgfiles-err-enumeration.md) -Aufzählung. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Funktion **ErrInit** registriert die Datenbanken und Protokolldateien, die überprüft werden sollen. Diese Funktion muss aufgerufen werden, nachdem die **New** -Funktion wird aufgerufen, jedoch bevor andere **ChkSGFiles** aufgerufen. 
+Die **ErrInit** -Funktion registriert die Datenbanken und Protokolldateien, die überprüft werden sollen. Diese Funktion muss aufgerufen werden, nachdem die **neue** Funktion aufgerufen wurde, aber bevor eine andere **ChkSGFiles** -Funktion aufgerufen wird. 
   
-Sie müssen den Datenbanknamen und Pfad der Protokolldatei den Basisnamen als Null endende Unicode-Zeichenfolgen angeben.
+Sie müssen alle Datenbanknamen, den Protokolldateipfad und den Basisnamen als NULL-terminierte Unicode-Zeichenfolgen angeben.
   
-Sie können nur die Datenbankdateien überprüfen nur die Protokolldateien oder die Datenbank- und Protokolldateien Dateien. Jedoch muss beim Aufruf von dieser Funktion die Anwendung mindestens eine Entität zu überprüfenden angeben. Übergeben von 0 (null) für **cDB** und NULL für **WszLogPath** gibt einen Fehler zurück. 
+Sie können nur die Datenbankdateien, nur die Protokolldateien oder sowohl die Datenbank-als auch die Protokolldateien überprüfen. Wenn diese Funktion aufgerufen wird, muss die Anwendung jedoch mindestens eine Entität angeben, die überprüft werden soll. Durch die Übergabe von 0 (null) für **cDB** und NULL für **wszLogPath** wird ein Fehler zurückgegeben. 
   
-Wenn der Wert der **cDB** als 0 (null) ist, führt zu einem Fehler NULL für **RgwszDb** übergeben. Um die Datenbankdateien zu überprüfen, muss die Anwendung die Datenbanknamen bereitstellen. 
+Wenn der Wert von **cDB** nicht 0 (null) ist, führt die Übergabe von NULL für **rgwszDb** zu einem Fehler. Um die Datenbankdateien zu überprüfen, muss die Anwendung die Datenbanknamen bereitstellen. 
   
-Wenn Sie NULL für **WszBaseName** übergeben wird, aber **WszLogPath** ist nicht NULL, wird ein Fehler zurückgegeben. Eine Protokolldatei-Basisname ist immer erforderlich, beim Überprüfen der Protokolldateien. 
+Wenn NULL für **wszBaseName** übergeben wird, **wszLogPath** jedoch nicht NULL ist, wird ein Fehler zurückgegeben. Bei der Überprüfung von Protokolldateien ist immer ein Protokolldatei-Basis Name erforderlich. 
   
-Wenn Sie für CHKSGFILES in multithreaded-Anwendung verwenden, müssen Sie die **ErrInit** -Funktion in den einzelnen Thread Teil der Anwendung aufrufen und können Sie nur einmal für jede **CCheckSGFiles** -Objekt aufrufen. 
+Wenn Sie CHKSGFILES in einer Multithread-Anwendung verwenden, müssen Sie die **ErrInit** -Funktion im Single-Thread-Teil der Anwendung aufrufen, und Sie können Sie nur einmal für jedes **CCheckSGFiles** -Objekt aufrufen. 
   
 ## <a name="requirements"></a>Anforderungen
 
-Exchange 2013 umfasst nur eine 64-Bit-Version der CHKSGFILES-API.
+Exchange 2013 enthält nur eine 64-Bit-Version der CHKSGFILES-API.
   
-Das Konto, unter die Anwendung ausgeführt wird, benötigen Lesezugriff auf die Datenbank und die Protokolldateien, die überprüft werden sollen.
+Das Konto, unter dem die Anwendung betrieben wird, muss über Lesezugriffsberechtigungen für die zu überprüfenden Datenbank-und Protokolldateien verfügen.
   
 

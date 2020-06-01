@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: e066db95-6963-4507-a8d0-8efad287f550
-description: Der Vorgang CreateAttachment Anlage eines Elements oder einer Datei erstellt und fügt diese an das angegebene Element.
-ms.openlocfilehash: fed60275a007f2796c60d936def7a937e4982f29
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der CreateAttachment-Vorgang erstellt entweder ein Element oder eine Dateianlage und fügt es an das angegebene Element an.
+ms.openlocfilehash: 8028c56aa306774b54b39e5ee1ac0382b9113fa0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757739"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456570"
 ---
 # <a name="createattachment-operation"></a>CreateAttachment-Vorgang
 
-Der Vorgang CreateAttachment Anlage eines Elements oder einer Datei erstellt und fügt diese an das angegebene Element.
+Der CreateAttachment-Vorgang erstellt entweder ein Element oder eine Dateianlage und fügt es an das angegebene Element an.
   
-## <a name="file-createattachment-request-example"></a>Beispiel für die Datei CreateAttachment Anforderung
+## <a name="file-createattachment-request-example"></a>Datei-CreateAttachment-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung CreateAttachment veranschaulicht, wie eine Dateianlage zu erstellen.
+Im folgenden Beispiel einer CreateAttachment-Anforderung wird gezeigt, wie eine Dateianlage erstellt wird.
   
 ### <a name="code"></a>Code
 
@@ -36,10 +36,10 @@ Im folgenden Beispiel wird eine Anforderung CreateAttachment veranschaulicht, wi
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
 <soap:Body>
-  <CreateAttachment xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  <CreateAttachment xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
     <ParentItemId Id="AAAtAE..." ChangeKey="CQAAABYA..."/>
     <Attachments>
       <t:FileAttachment>
@@ -52,12 +52,12 @@ Im folgenden Beispiel wird eine Anforderung CreateAttachment veranschaulicht, wi
 </soap:Envelope>
 ```
 
-### <a name="comment"></a>Comment
+### <a name="comment"></a>Kommentar
 
-Ein Namen für die Anlage muss angegeben werden.
+Es muss ein Name für die Anlage angegeben werden.
   
 > [!NOTE]
-> Das übergeordnete Element-ID und Key ändern wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die übergeordnete Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -71,15 +71,15 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [FileAttachment](fileattachment.md)
     
-- [Name ("AttachmentType")](name-attachmenttype.md)
+- [Name (AttachmentType)](name-attachmenttype.md)
     
-- [Inhalt](content.md)
+- [Content](content.md)
     
-## <a name="successful-file-createattachment-response-example"></a>Erfolgreiche Datei CreateAttachment antwortbeispiel
+## <a name="successful-file-createattachment-response-example"></a>Beispiel für erfolgreiche Datei-CreateAttachment-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung CreateAttachment.
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateAttachment-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -90,12 +90,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung Create
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="653" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <CreateAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                              xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                              xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                              xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                              xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -111,11 +111,11 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung Create
 </soap:Envelope>
 ```
 
-### <a name="comment"></a>Comment
+### <a name="comment"></a>Kommentar
 
-Die Antwort enthält den Bezeichner der angehängten Datei. Sie enthält außerdem den Schlüssel-ID und ein Änderungsprotokoll das Stammelement. Die Element-IDs und Key ändern wurden gekürzt, um die Lesbarkeit zu erhalten.
+Die Antwort enthält den Bezeichner der angefügten Datei. Es enthält auch den Bezeichner und den Änderungsschlüssel des Stammelements. Die Element-IDs und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten.
   
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -135,11 +135,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [AttachmentId](attachmentid.md)
     
-## <a name="item-createattachment-request-example"></a>Element CreateAttachment anforderungsbeispiel
+## <a name="item-createattachment-request-example"></a>Element CreateAttachment-Anforderung (Beispiel)
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung CreateAttachment veranschaulicht, wie eine Elementanlage erstellen.
+Im folgenden Beispiel einer CreateAttachment-Anforderung wird gezeigt, wie eine Elementanlage erstellt wird.
   
 ### <a name="code"></a>Code
 
@@ -148,10 +148,10 @@ Im folgenden Beispiel wird eine Anforderung CreateAttachment veranschaulicht, wi
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateAttachment xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <CreateAttachment xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <ParentItemId Id="AAAtAE=" ChangeKey="CQAAABYA"/>
       <Attachments>
         <t:ItemAttachment>
@@ -166,11 +166,11 @@ Im folgenden Beispiel wird eine Anforderung CreateAttachment veranschaulicht, wi
 </soap:Envelope>
 ```
 
-### <a name="comment"></a>Comment
+### <a name="comment"></a>Kommentar
 
-Ein Namen für die Anlage muss angegeben werden.
+Es muss ein Name für die Anlage angegeben werden.
   
- **Hinweis** Das übergeordnete Element-ID und Key ändern wurden gekürzt, um die Lesbarkeit zu erhalten. 
+ **Hinweis:** Die übergeordnete Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -184,17 +184,17 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [ItemAttachment](itemattachment.md)
     
-- [Name ("AttachmentType")](name-attachmenttype.md)
+- [Name (AttachmentType)](name-attachmenttype.md)
     
-- [Message](message-ex15websvcsotherref.md)
+- [Nachricht](message-ex15websvcsotherref.md)
     
 - [Betreff](subject.md)
     
-## <a name="successful-item-createattachment-response-example"></a>Erfolgreiche Item CreateAttachment antwortbeispiel
+## <a name="successful-item-createattachment-response-example"></a>Erfolgreiches Element CreateAttachment-Antwort (Beispiel)
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung CreateAttachment.
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateAttachment-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -205,12 +205,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung Create
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="653" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <CreateAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                              xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                              xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                              xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                              xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -226,11 +226,11 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung Create
 </soap:Envelope>
 ```
 
-### <a name="comment"></a>Comment
+### <a name="comment"></a>Kommentar
 
-Die Antwort enthält den Bezeichner des neuen Anhang. Sie enthält außerdem den Schlüssel-ID und ein Änderungsprotokoll das Stammelement. Das Stammelement ist das Element, das die Anlage enthält. Die Element-IDs und Key ändern wurden gekürzt, um die Lesbarkeit zu erhalten.
+Die Antwort enthält den Bezeichner der neuen Anlage. Es enthält auch den Bezeichner und den Änderungsschlüssel des Stammelements. Das Stammelement ist das Element, das die Anlage enthält. Die Element-IDs und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten.
   
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -250,11 +250,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [AttachmentId](attachmentid.md)
     
-## <a name="createattachment-error-response-example"></a>Antwortbeispiel CreateAttachment-Fehler
+## <a name="createattachment-error-response-example"></a>Beispiel für eine CreateAttachment-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an die CreateAttachment-Anforderung. Der Fehler ist darauf zurückzuführen, dass der Name der Anlage nicht angegeben wurde.
+Das folgende Beispiel zeigt eine Fehlerantwort auf die CreateAttachment-Anforderung. Der Fehler ist darauf zurückzuführen, dass der Name der Anlage nicht angegeben wurde.
   
 ### <a name="code"></a>Code
 
@@ -265,12 +265,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort an die CreateAttachment-Anforderu
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="653" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <CreateAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                              xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                              xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                              xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                              xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateAttachmentResponseMessage ResponseClass="Error">
           <m:MessageText>Required property is missing.</m:MessageText>
@@ -287,7 +287,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an die CreateAttachment-Anforderu
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
@@ -305,15 +305,15 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [MessageXml](messagexml.md)
+- [Messagexml verwendet](messagexml.md)
     
 - [ExceptionFieldURI](exceptionfielduri.md)
     
 - [Anlagen](attachments-ex15websvcsotherref.md)
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn mehrere Anlagen auf ein Element in einem einzigen Roundtrip angefügt sind, ist die RootItemChangeKey in der letzten Antwortnachricht diejenige, die den neuen Änderungsschlüssel des Elements darstellt, die Anlagen wurde.
+Wenn mehrere Anlagen an ein Element in einem einzelnen Roundtrip angefügt werden, ist die RootItemChangeKey in der letzten Antwortnachricht diejenige, die den neuen Änderungsschlüssel des Elements darstellt, das die Anlagen enthält.
   
 ## <a name="see-also"></a>Siehe auch
 

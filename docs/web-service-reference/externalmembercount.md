@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bd0e82da-7391-4ba3-acb4-31d3517d51d0
-description: Das Element ExternalMemberCount stellt die Anzahl der externen Elemente in einer Gruppe.
-ms.openlocfilehash: 8848a455f7562c893a0ef4bb7c92c273699ce31c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ExternalMemberCount-Element stellt die Anzahl externer Elemente in einer Gruppe dar.
+ms.openlocfilehash: a01c28a009328e163e151bbf540e8298d27d998b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758393"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456920"
 ---
 # <a name="externalmembercount"></a>ExternalMemberCount
 
-Das Element **ExternalMemberCount** stellt die Anzahl der externen Elemente in einer Gruppe. 
+Das **ExternalMemberCount** -Element stellt die Anzahl externer Elemente in einer Gruppe dar. 
   
 ```XML
 <ExternalMemberCount/>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[E-Mail-Infos](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Infos.  <br/> |
+|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Tipps dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist eine ganze Zahl, die die Anzahl der externen Elemente in einer Gruppe darstellt.
+Der Textwert ist eine ganze Zahl, die die Anzahl externer Mitglieder in einer Gruppe darstellt.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

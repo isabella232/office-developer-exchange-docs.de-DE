@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f2bc0a61-7c50-4b36-828e-358dfc5b9ae1
-description: Das ExternalUserIdentity-Element identifiziert eine externe Stellvertretungsbenutzers oder ein externer Benutzer, der über Zugriffsberechtigungen für Ordner verfügt.
-ms.openlocfilehash: 08ca4500ba610150e9e673f1b63823dabf70d9ff
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ExternalUserIdentity-Element identifiziert einen externen Stellvertreter Benutzer oder einen externen Benutzer, der über Ordnerzugriffsberechtigungen verfügt.
+ms.openlocfilehash: b4432b29278b693b21e455a5245be0d96496ffe5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758398"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457949"
 ---
 # <a name="externaluseridentity"></a>ExternalUserIdentity
 
-Das **ExternalUserIdentity** -Element identifiziert eine externe Stellvertretungsbenutzers oder ein externer Benutzer, der über Zugriffsberechtigungen für Ordner verfügt. 
+Das **ExternalUserIdentity** -Element identifiziert einen externen Stellvertreter Benutzer oder einen externen Benutzer, der über Ordnerzugriffsberechtigungen verfügt. 
   
 ```xml
 <ExternalUserIdentity/>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Benutzer-ID](userid.md) <br/> |Identifiziert ein Stellvertreter oder ein Benutzer mit Zugriffsberechtigungen für Ordner.  <br/> |
+|[UserId](userid.md) <br/> |Identifiziert einen Stellvertreter Benutzer oder einen Benutzer, der über Ordnerzugriffsberechtigungen verfügt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

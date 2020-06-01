@@ -1,5 +1,5 @@
 ---
-title: ImAddress (Zeichenfolge)
+title: IMAddress (Zeichenfolge)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fa10fcdb-f947-4958-ad5a-afaed1661f52
-description: Das ImAddress-Element enthält die primäre Instant messaging-Adresse einer Rolle.
-ms.openlocfilehash: 3d4af2a7df14e68a2c829b1e8d0a18493fb06f55
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IMAddress-Element enthält die primäre Instant Messaging-Adresse einer Persona.
+ms.openlocfilehash: 2cfb8c7e0ccf5454fd5a201819882acbe0924e4a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829860"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456465"
 ---
-# <a name="imaddress-string"></a>ImAddress (Zeichenfolge)
+# <a name="imaddress-string"></a>IMAddress (Zeichenfolge)
 
-Das **ImAddress** -Element enthält die primäre Instant messaging-Adresse einer Rolle. 
+Das **IMAddress** -Element enthält die primäre Instant Messaging-Adresse einer Persona. 
   
 ```XML
 <ImAddress></ImAddress>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -38,23 +38,23 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Rolle](persona.md)
+[Persona](persona.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ImAddress** -Elements ist die primäre instant messaging-Adresse einer Rolle. 
+Der Textwert des **IMAddress** -Elements ist die primäre Instant Messaging-Adresse einer Persona. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

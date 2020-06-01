@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ffb4c13e-e7ea-4e6b-87a0-509ce5371100
-description: Das CopyItem-Element definiert eine Anforderung an ein Element in einem Postfach im Exchange-Speicher zu kopieren.
-ms.openlocfilehash: 08cc1b67f7c7d369263acfc4b3d13e8aa70d2d5f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CopyItem-Element definiert eine Anforderung zum Kopieren eines Elements in einem Postfach im Exchange-Informationsspeicher.
+ms.openlocfilehash: b9af1670fd580107de08ad3b950191399436388d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757726"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458502"
 ---
 # <a name="copyitem"></a>CopyItem
 
-Das **CopyItem** -Element definiert eine Anforderung an ein Element in einem Postfach im Exchange-Speicher zu kopieren. 
+Das **CopyItem** -Element definiert eine Anforderung zum Kopieren eines Elements in einem Postfach im Exchange-Informationsspeicher. 
   
 ```XML
 <CopyItem>
@@ -44,32 +44,32 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ToFolderId](tofolderid.md) <br/> |Stellt den Zielordner für ein Element kopiert.  <br/> |
-|[Artikelnummern ein.](itemids.md) <br/> |Enthält ein Array von identifizierten Elementen, die in den Ordner, dargestellt durch das Element [ToFolderId](tofolderid.md) kopieren.  <br/> |
-|[ReturnNewItemIds](returnnewitemids.md) <br/> |Gibt an, ob die Element-IDs der neuen Elemente in der Antwort zurückgegeben werden.  <br/> |
+|[Tofolder-Datei](tofolderid.md) <br/> |Stellt den Zielordner für ein kopiertes Element dar.  <br/> |
+|[ItemIds](itemids.md) <br/> |Enthält ein Array von identifizierten Elementen, das in den durch das [tofolder](tofolderid.md) -Element dargestellten Ordner kopiert werden soll.  <br/> |
+|[ReturnNewItemIds](returnnewitemids.md) <br/> |Gibt an, ob die Elementbezeichner neuer Elemente in der Antwort zurückgegeben werden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[CopyItem Operation](copyitem-operation.md)
+[CopyItem-Vorgang](copyitem-operation.md)
 
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)

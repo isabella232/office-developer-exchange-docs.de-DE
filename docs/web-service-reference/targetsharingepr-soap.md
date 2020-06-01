@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0115a740-9264-4e57-a410-197bb39e6c81
-description: Das Element TargetSharingEpr stellt die TargetSharingEpr-Eigenschaft. Das TargetSharingEpr-Element ist nur zur internen Verwendung.
-ms.openlocfilehash: 272133d4d8f6db260f37e2c6977be20f81fdc535
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das TargetSharingEpr-Element stellt die TargetSharingEpr-Eigenschaft dar. Das TargetSharingEpr-Element ist nur für die interne Verwendung.
+ms.openlocfilehash: 8cb8d114ae43dfc8ad76aebe87e0e920c16477f2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839159"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457081"
 ---
 # <a name="targetsharingepr-soap"></a>TargetSharingEpr (SOAP)
  
-Das Element **TargetSharingEpr** stellt die **TargetSharingEpr** -Eigenschaft. Das **TargetSharingEpr** -Element ist nur zur internen Verwendung. Dieses Element wird von Clients nicht verwendet. 
+Das **TargetSharingEpr** -Element stellt die **TargetSharingEpr** -Eigenschaft dar. Das **TargetSharingEpr** -Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet. 
   
 ```XML
 <TargetSharingEpr/>
@@ -40,19 +40,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste von organisationsbeziehungen für eine einzelne Organisation.  <br/> |
+|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste von Organisationsbeziehungen für eine einzelne Organisation dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element gibt die URL des Zielservers für die externe Organisation. 
+Dieses Element gibt die URL des Zielservers für die externe Organisation an. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

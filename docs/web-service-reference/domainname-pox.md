@@ -1,5 +1,5 @@
 ---
-title: DomainName (POX)
+title: Domänenname (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,23 +8,23 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 2b4af2b2-58b5-4f28-9cb3-c07a11377747
-description: Das DomainName-Element gibt die Domäne des Benutzers an.
-ms.openlocfilehash: c38d2e470bd174ab6dd7e5e1dd3eee23daea5e69
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Domain Name-Element gibt die Domäne des Benutzers an.
+ms.openlocfilehash: ff38d6a876e396317dedece0a81a9f9f0db0f587
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758092"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458425"
 ---
-# <a name="domainname-pox"></a>DomainName (POX)
+# <a name="domainname-pox"></a>Domänenname (POX)
 
-Das **DomainName** -Element gibt die Domäne des Benutzers an. 
+Das **Domain Name** -Element gibt die Domäne des Benutzers an. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md)  
 - [Response (POX)](response-pox.md)  
 - [Konto (POX)](account-pox.md) 
 - [Protokoll (POX)](protocol-pox.md) 
-- [DomainName (POX)](domainname-pox.md)
+- [Domänenname (POX)](domainname-pox.md)
   
 ```xml
 <DomainName/>
@@ -46,15 +46,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert gibt die Domäne des Benutzers an.
+Der Wert Text gibt die Domäne des Benutzers an.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn kein Wert angegeben ist, wird die Standardauthentifizierung die E-mail-Adresse als ein Benutzer Benutzerprinzipalnamens (UPN) Format verwenden. Beispiel: \<Username\>@\<Domäne\>.
+Wenn kein Wert angegeben ist, wird die Standardauthentifizierung verwendet, um die e-Mail-Adresse als Benutzerprinzipalnamen-Format (User Principal Name, UPN) zu verwenden. Beispiel: \<Username\> @ \<Domain\> .
   
 ## <a name="see-also"></a>Siehe auch
 

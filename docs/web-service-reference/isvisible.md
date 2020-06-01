@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 403acdd5-3b79-46f4-9894-ba57e10085e4
-description: IsVisible-Element gibt an, ob die Aufbewahrungsrichtlinie für Benutzer sichtbar ist.
-ms.openlocfilehash: c08b8a3d537c062d3a1a8ed59823bc0f74eea426
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IsVisible-Element gibt an, ob die Aufbewahrungsrichtlinie für Benutzer sichtbar ist.
+ms.openlocfilehash: 8cb8e99cef0f89d7ba6435690bd6d57b79a45bc8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830133"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458145"
 ---
 # <a name="isvisible"></a>IsVisible
 
-**IsVisible** -Element gibt an, ob die Aufbewahrungsrichtlinie für Benutzer sichtbar ist. 
+Das **IsVisible** -Element gibt an, ob die Aufbewahrungsrichtlinie für Benutzer sichtbar ist. 
   
 ```XML
 <IsVisible> true | false</IsVisible>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **IsVisible** -Element gibt an, dass die Aufbewahrungsrichtlinie für einen Benutzer sichtbar ist. Der Wert **false** gibt an, dass die Aufbewahrungsrichtlinie nicht für Benutzer angezeigt wird. 
+Der Textwert **true** für das **IsVisible** -Element gibt an, dass die Aufbewahrungsrichtlinie für einen Benutzer sichtbar ist. Der Wert **false** gibt an, dass die Aufbewahrungsrichtlinie für Benutzer nicht sichtbar ist. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

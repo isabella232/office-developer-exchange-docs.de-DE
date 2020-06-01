@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1b1c7288-2a98-4142-8961-4d2ebca5c37c
-description: Das GetRemindersResponse-Element gibt die Antwort auf eine GetReminders an.
-ms.openlocfilehash: 1882ab377365908c0bc272059ab4e007c43d788c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetRemindersResponse-Element gibt die Antwort auf eine reerinnerungers-Anforderung an.
+ms.openlocfilehash: 4e4d6a662d2b734b8bb93e3dd4b325bf6e46a6fc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758784"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458292"
 ---
 # <a name="getremindersresponse"></a>GetRemindersResponse
 
-Das **GetRemindersResponse** -Element gibt die Antwort auf eine **GetReminders** an. 
+Das **GetRemindersResponse** -Element gibt die Antwort auf eine **reerinnerungers** -Anforderung an. 
   
 ```XML
 <GetRemindersResponse>
@@ -43,19 +43,19 @@ Keine.
 
 [ResponseMessages](responsemessages.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

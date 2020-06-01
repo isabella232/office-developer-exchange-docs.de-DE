@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: fe1256ab-5c0f-467d-abb3-b38a2dc312ae
-description: Das OutOfOffice-Element darstellt, die Antwortnachricht und einer Zeitdauer für die Response-Nachricht senden.
-ms.openlocfilehash: f35b84d7a8a37c7a57b58c97fd0d37318bb50a33
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das OutOfOffice-Element stellt die Antwortnachricht und eine Dauer für das Senden der Antwortnachricht dar.
+ms.openlocfilehash: 082a81b62e2b783b302b3e749e0066131a46d73e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354267"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456899"
 ---
 # <a name="outofoffice"></a>OutOfOffice
 
-Das **OutOfOffice** -Element darstellt, die Antwortnachricht und einer Zeitdauer für die Response-Nachricht senden. 
+Das **OutOfOffice** -Element stellt die Antwortnachricht und eine Dauer für das Senden der Antwortnachricht dar. 
   
 ```XML
 <OutOfOffice>
@@ -50,28 +50,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ReplyBody](replybody.md) <br/> |Enthält eine Nachricht Out of Office (ABWESEND) und die Sprache für die Nachricht verwendet.  <br/> |
-|[Dauer (UserOofSettings)](duration-useroofsettings.md) <br/> |Enthält die Dauer, die der Status ABWESEND aktiviert ist, wenn das Element [OofState](oofstate.md) auf geplante Tasks festgelegt ist.  <br/> |
+|[ReplyBody](replybody.md) <br/> |Enthält eine Abwesenheit (Out of Office, OOF) Meldung und die für die Nachricht verwendete Sprache.  <br/> |
+|[Dauer (UserOofSettings)](duration-useroofsettings.md) <br/> |Enthält die Dauer, für die der Abwesenheitsstatus aktiviert ist, wenn das [OofState](oofstate.md) -Element auf Scheduled festgelegt ist.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MailTips](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Infos.  <br/> |
+|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Tipps dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

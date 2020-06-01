@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: cd693f1e-fed4-4eb9-8297-178906f47050
-description: Das ReferralPort-Element gibt den Port, der zum Abrufen eines Verweises auf ein Verzeichnis verwendet wird.
-ms.openlocfilehash: 5045c0c5a9f15d5a31ac2e884b942e00dfb1f520
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ReferralPort-Element gibt den Port an, der verwendet wird, um einen Verweis auf ein Verzeichnis zu erhalten.
+ms.openlocfilehash: 6b3968d7b2f252439d2dfbc647bd8337668cf818
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831037"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456794"
 ---
 # <a name="referralport-pox"></a>ReferralPort (POX)
 
-Das **ReferralPort** -Element gibt den Port, der zum Abrufen eines Verweises auf ein Verzeichnis verwendet wird. 
+Das **ReferralPort** -Element gibt den Port an, der verwendet wird, um einen Verweis auf ein Verzeichnis zu erhalten. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,15 +50,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt den Port, der Zugriff auf den Exchange-Server verwendet wird.
+Der Wert Text stellt den Port dar, der für den Zugriff auf den Exchange-Server verwendet wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **ReferralPort** -Element wird nur verwendet, wenn das Element [Typ (POX)](type-pox.md) EXCH oder Ausdruck gleich ist. 
+Das **ReferralPort** -Element wird nur verwendet, wenn der [Typ (POX)-](type-pox.md) Element mit dem Wert "$" oder "expr" identisch ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

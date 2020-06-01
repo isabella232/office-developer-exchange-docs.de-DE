@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: affd192e-8914-473f-9098-d9bdf898de2c
-description: Das Postfach-Element stellt den Postfachbenutzer für eine SetUserOofSettings oder GetUserOofSettings anfordern.
-ms.openlocfilehash: 2e901ae0df56542f56f247184254294735018468
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Mailbox-Element stellt den Postfachbenutzer für eine SetUserOofSettings-oder GetUserOofSettings-Anforderung dar.
+ms.openlocfilehash: 1bda6e8b90551b86b4e1c2711ac25693a65e5410
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830254"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458075"
 ---
 # <a name="mailbox-availability"></a>Postfach (Verfügbarkeit)
 
-Das **Postfach** -Element stellt den Postfachbenutzer für eine SetUserOofSettings oder GetUserOofSettings anfordern. 
+Das **Mailbox** -Element stellt den Postfachbenutzer für eine SetUserOofSettings-oder GetUserOofSettings-Anforderung dar. 
   
 ```xml
 <Mailbox>
@@ -45,28 +45,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Name (EmailAddress)](name-emailaddress.md) <br/> |Stellt den Anzeigenamen des Postfachbenutzers an. Dieses Element ist in der SetUserOofSettingsRequest optional. Die GetUserOofSettingsRequest gibt dieses Element zurück.  <br/> |
-|[Adresse (Zeichenfolge)](address-string.md) <br/> |Stellt die e-Mail-Adresse des Postfachbenutzers an. Dieses Element ist erforderlich.  <br/> |
-|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Stellt das routing-Protokoll für die Nachricht an. Dieses Element ist in der SetUserOofSettingsRequest optional. Die GetUserOofSettingsRequest gibt dieses Element zurück.  <br/> |
+|[Name (e-mailemail)](name-emailaddress.md) <br/> |Stellt den Anzeigenamen des Postfachbenutzers dar. Dieses Element ist in der SetUserOofSettingsRequest optional. Das GetUserOofSettingsRequest-Objekt gibt dieses Element zurück.  <br/> |
+|[Address (Zeichenfolge)](address-string.md) <br/> |Stellt die e-Mail-Adresse des Postfachbenutzers dar. Dieses Element ist erforderlich.  <br/> |
+|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Stellt das Routingprotokoll für die Nachricht dar. Dieses Element ist in der SetUserOofSettingsRequest optional. Das GetUserOofSettingsRequest-Objekt gibt dieses Element zurück.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUserOofSettingsRequest](getuseroofsettingsrequest.md) <br/> |Zum Abrufen von Einstellungen von Office (ABWESEND) und Nachrichten eines Postfachbenutzers verwendet.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetUserOofSettingsRequest` <br/> |
-|[SetUserOofSettingsRequest](setuseroofsettingsrequest.md) <br/> |Verwendet, um eines Postfachbenutzers OOF Einstellungen und Nachrichten festzulegen.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/SetUserOofSettingsRequest` <br/> |
+|[GetUserOofSettingsRequest](getuseroofsettingsrequest.md) <br/> |Dient zum Abrufen der Abwesenheit (Out of Office, OOF) Einstellungen und Nachrichten eines Postfachbenutzers.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserOofSettingsRequest` <br/> |
+|[SetUserOofSettingsRequest](setuseroofsettingsrequest.md) <br/> |Wird verwendet, um die Abwesenheitseinstellungen und-Nachrichten eines Postfachbenutzers festzulegen.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/SetUserOofSettingsRequest` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die E-mail-Adresse wird verwendet, um den Kalenderordner zu identifizieren, der die OOF Einstellungen enthält. 
+Die e-Mail-Adresse wird verwendet, um den Kalenderordner zu identifizieren, der die Abwesenheitseinstellungen enthält. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

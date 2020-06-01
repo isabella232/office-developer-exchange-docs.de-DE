@@ -1,41 +1,41 @@
 ---
-title: Erstellen Sie mithilfe der Exchange-Webdienste im Exchange ganztägige Ereignisse
+title: Erstellen von ganztägigen Ereignissen mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 0fcb484b-4ffc-41a5-aeed-8c797766b70c
-description: Erfahren Sie, wie ganztägige Ereignisse zu erstellen, indem Sie die EWS Managed API oder EWS in Exchange.
-ms.openlocfilehash: 0547fdf0ca92ba0648caeb5de6940d90d2a8ff46
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Informationen zum Erstellen von ganztägigen Ereignissen mithilfe der verwaltete EWS-API oder EWS in Exchange.
+ms.openlocfilehash: 6be638c17cc0e0c86fa6b4217169aa7259dfd4aa
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756873"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456864"
 ---
-# <a name="create-all-day-events-by-using-ews-in-exchange"></a>Erstellen Sie mithilfe der Exchange-Webdienste im Exchange ganztägige Ereignisse
+# <a name="create-all-day-events-by-using-ews-in-exchange"></a>Erstellen von ganztägigen Ereignissen mithilfe von EWS in Exchange
 
-Erfahren Sie, wie ganztägige Ereignisse zu erstellen, indem Sie die EWS Managed API oder EWS in Exchange.
+Informationen zum Erstellen von ganztägigen Ereignissen mithilfe der verwaltete EWS-API oder EWS in Exchange.
   
-Ganztägige Ereignisse bieten die Möglichkeit, etwas darstellen, die für einen ganzen Tag oder mehrere Tage geschieht – beispielsweise einen Feiertag oder Urlaubstage. Ganztägige Ereignisse mit dem EWS Managed API oder EWS erstellen, ist ein Kinderspiel. [Erstellen von Terminen](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md), vergleichbar mit ein paar geringfügige Änderungen ist.
+Ganztägige Ereignisse bieten eine Möglichkeit, etwas darzustellen, das für einen ganzen Tag oder mehrere Tage stattfindet (beispielsweise einen Feiertag oder Urlaubstage). Das Erstellen von ganztägigen Ereignissen mit dem verwaltete EWS-API oder EWS ist ein Kinderspiel. Es ist genau wie das [Erstellen von Terminen](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md), aber mit ein paar kleinen Änderungen.
   
-## <a name="setting-start-and-end-times"></a>Festlegen der Start- und Endzeiten
+## <a name="setting-start-and-end-times"></a>Festlegen der Anfangs-und Endzeiten
 
-Per Definition ganztägige Ereignisse Mitternacht für einen bestimmten Tag, und die End 24 Stunden (oder ein Vielfaches von 24 Stunden) weiter unten. Jedoch die EWS Managed API und EWS können Sie angeben, wie oft als Mitternacht beim ganztägige Ereignisse erstellen. Dies kann zu unbeabsichtigten Verhalten führen, wenn Sie nicht wissen, wie diese Zeiten auf dem Server übersetzt werden.
+Per Definition beginnen ganztägige Ereignisse an einem bestimmten Tag um Mitternacht und enden später 24 Stunden (oder ein Vielfaches von 24 Stunden). Mit dem verwaltete EWS-API und EWS können Sie jedoch beim Erstellen aller Day-Ereignisse andere Zeiten als Mitternacht angeben. Dies kann zu unerwünschtem Verhalten führen, wenn Sie nicht wissen, wie diese Zeiten auf dem Server übersetzt werden.
   
-Wenn eine Anforderung empfangen wird, erstellen Sie ein neues ganztägiges Ereignis mit Mitternacht (in der [Zeitzone des Anforderung oder Termin](time-zones-and-ews-in-exchange.md)) Anfangs- und/oder Endzeit, erhalten diese Zeiten Mitternacht in der entsprechenden Zeitzone nach den folgenden Regeln angepasst:
+Wenn eine Anforderung empfangen wird, um ein Neues ganztägiges Ereignis zu erstellen, das nicht Mitternacht (in der Zeitzone der [Anforderung oder des Termins](time-zones-and-ews-in-exchange.md)) beginnt und/oder endet, werden diese Zeiten entsprechend den folgenden Regeln auf Mitternacht in der entsprechenden Zeitzone angepasst:
   
-- Nicht-Mitternacht Anfangszeiten werden die Mitternacht vor der angegebenen Zeit angepasst. Beispielsweise ruft 1:00 PM 6. Juni auf 00:00 Uhr am 6. Juni korrigiert.
+- Startzeiten außerhalb der Mitternachtszeit werden vor der angegebenen Uhrzeit auf Mitternacht angepasst. Beispielsweise wird 1:00 Uhr am 6. Juni auf 12:00 Uhr am 6. Juni angepasst.
     
-- Endzeit nicht Mitternacht werden die Mitternacht nach dem angegebenen Zeitpunkt angepasst. Beispielsweise ruft 1:00 PM 6. Juni auf 00:00:00 Uhr 7. Juni korrigiert.
+- Endzeiten von nicht-Mitternacht werden nach der angegebenen Uhrzeit auf Mitternacht angepasst. Beispielsweise wird 1:00 Uhr am 6. Juni auf 12:00 Uhr am 7. Juni angepasst.
     
-Damit das ganztägige Ereignis, das Sie erstellen immer einschließlich Start- und Endzeit Zeitpunkt steht, die Sie angeben, aber möglicherweise zusätzliche Zeit in Anspruch der Benutzer angezeigt werden sollen, die die UMSCHALTTASTE gedrückt, um Mitternacht. Da der Server die Start- und Endzeit Zeit vor Mitternacht angepasst wird, wird empfohlen, dass Sie Ihre Zeit Start- und Endzeit Mitternacht zur Vermeidung von unbeabsichtigten Änderungen an die Zeiten angeben.
+Das ganztägige Ereignis, das Sie erstellen, ist also immer die Start-und Endzeit, die Sie angeben, aber möglicherweise zusätzliche Zeit im Kalender des Benutzers aufgrund der Verschiebung bis Mitternacht beansprucht. Da der Server die Start-und Endzeit auf Mitternacht anpassen wird, wird empfohlen, dass Sie die Start-und Endzeit um Mitternacht angeben, um unbeabsichtigte Änderungen an den Zeiten zu vermeiden.
   
-Es ist außerdem unbedingt Zeitzonen berücksichtigt ganztägige Ereignisse erstellen. Da der Exchange Server ein Mitternacht erzwingt Start- und Endzeit in der Zeitzone des Anforderung oder einem Termin, kann das anzeigen, ganztägigen Ereignis in einem Client konfiguriert für eine andere Zeitzone unerwarteten Ergebnissen führen. Je nach den Client kann es so aussehen als ganztägiges Ereignis mit zusätzlichen Tage, die Sie wollten nicht einschließen, oder nicht angezeigt werden als ein ganztägiges Ereignis vollständig. Aus diesem Grund wird empfohlen, dass Sie bei der Erstellung von ganztägige Ereignisse des Benutzers bevorzugte Zeitzone nach Möglichkeit verwenden.
+Bei der Erstellung von ganztägigen Ereignissen ist es auch wichtig, Zeitzonen zu berücksichtigen. Da der Exchange-Server eine Mitternachts Start-und-Endzeit in der Zeitzone der Anforderung oder des Termins erzwingt, kann das Anzeigen dieses ganztägigen Ereignisses in einem für eine andere Zeitzone konfigurierten Client unerwartete Ergebnisse liefern. Je nach Client kann es als ganztägiges Ereignis mit zusätzlichen Tagen angezeigt werden, die Sie nicht einschließen wollten, oder es wird möglicherweise nicht als ganztägiges Ereignis insgesamt angezeigt. Aus diesem Grund wird empfohlen, die bevorzugte Zeitzone des Benutzers zu verwenden, wenn immer möglich, wenn Sie ganztägige Ereignisse erstellen.
   
-## <a name="create-an-all-day-event-by-using-the-ews-managed-api"></a>Erstellen Sie ein ganztägiges Ereignis mithilfe der EWS Managed API
+## <a name="create-an-all-day-event-by-using-the-ews-managed-api"></a>Erstellen Sie ein ganztägiges Ereignis mithilfe der verwaltete EWS-API
 
-Im folgenden Beispiel wird veranschaulicht, wie die EWS Managed API verwenden, erstellen Sie ein ganztägiges Ereignis, ab dem Datum angegeben wird, indem der Parameter _StartDate_ und, jedoch nur für die Anzahl der Tage, die durch den Parameter _NumDays_ angegeben. Beachten Sie, dass der Termin in die Zeitzone, die durch die [ExchangeService.TimeZone](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.timezone%28v=exchg.80%29.aspx) -Eigenschaft angegebenen erstellt wird. In diesem Beispiel wird davon ausgegangen, dass das im _Dienst_ -Parameter übergebene [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt durch gültige Werte für die [Anmeldeinformationen](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) und [Url](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) -Eigenschaften initialisiert wurde. 
+Im folgenden Beispiel wird gezeigt, wie Sie mithilfe der verwaltete EWS-API ein ganztägiges Ereignis erstellen, beginnend mit dem durch den Parameter _StartDate_ angegebenen Datum und einer dauerhaften Anzahl von Tagen, die durch den _numDays_ -Parameter angegeben werden. Beachten Sie, dass der Termin in der Zeitzone erstellt wird, die durch die [Datei "ExchangeService. TimeZone](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.timezone%28v=exchg.80%29.aspx) -Eigenschaft angegeben wird. In diesem Beispiel wird davon ausgegangen, dass das [Datei "ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt, das im Parameter _Service_ übergeben wurde, mit gültigen Werten für die Eigenschaften [Credentials](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) und [URL](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) initialisiert wurde. 
   
 ```cs
 static void CreateAllDayAppointment(ExchangeService service, DateTime startDate, int numDays)
@@ -67,16 +67,16 @@ static void CreateAllDayAppointment(ExchangeService service, DateTime startDate,
 }
 ```
 
-## <a name="create-an-all-day-event-by-using-ews"></a>Erstellen Sie ein ganztägiges Ereignis mithilfe der Exchange-Webdienste
+## <a name="create-an-all-day-event-by-using-ews"></a>Erstellen eines ganztägigen Ereignisses mithilfe von EWS
 
-Das folgende Beispiel zeigt eine Anforderung EWS [CreateItem Operation](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) ein ganztägiges Ereignis erstellen. Der Termin wird in der Eastern Time-Zone erstellt, wie das [TimeZoneContext](http://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) -Element angegeben. Beachten Sie, dass der Zeitteil der Werte der Elemente [Start](http://msdn.microsoft.com/library/7cfe9979-c893-4f9b-b3a1-8f9e17515a4b%28Office.15%29.aspx) und [End](http://msdn.microsoft.com/library/72329821-32ff-495d-b6e5-fdc011003c2e%28Office.15%29.aspx) sind beide 04:00Z, die in der Eastern Time-Zone während der Sommerzeit Mitternacht konvertiert. 
+Das folgende Beispiel zeigt eine EWS- [CreateItem-Vorgangs](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) Anforderung zum Erstellen eines ganztägigen Ereignisses. Der Termin wird in der östlichen Zeitzone erstellt, wie vom [timezonecontext](https://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) -Element angegeben. Beachten Sie, dass der Zeitbereich der Werte für [Start](https://msdn.microsoft.com/library/7cfe9979-c893-4f9b-b3a1-8f9e17515a4b%28Office.15%29.aspx) das Start [-und](https://msdn.microsoft.com/library/72329821-32ff-495d-b6e5-fdc011003c2e%28Office.15%29.aspx) Endelement sowohl "04:00Z" ist, das in der östlichen Zeitzone während der Sommerzeit in Mitternacht konvertiert wird. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>

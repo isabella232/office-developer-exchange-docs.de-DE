@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 069474c9-10f7-4ac9-892b-c85d266cff7f
-description: Das GetClientIntentResponseMessage-Element ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: 431d2ae7e34ce2c81e689352daf57dd79374bb2e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetClientIntentResponseMessage-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 78cf70e37dc75a3db8849e29694fa6a4e4600dc9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758610"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458369"
 ---
 # <a name="getclientintentresponsemessage"></a>GetClientIntentResponseMessage
 
-Das **GetClientIntentResponseMessage** -Element ist nur zur internen Verwendung vorgesehen. 
+Das **GetClientIntentResponseMessage** -Element ist nur für die interne Verwendung vorgesehen. 
   
 ```XML
 <GetClientIntentResponseMessage />
@@ -40,19 +40,19 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

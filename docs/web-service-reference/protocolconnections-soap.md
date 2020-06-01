@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: afcacecd-f081-4419-a6d5-e45070839f9a
-description: Das ProtocolConnections-Element enthält null oder mehr Protokoll Verbindungen.
-ms.openlocfilehash: 9938669bc62d5554338e48ce59ca92755ba13d64
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ProtocolConnections-Element enthält NULL oder mehr Protokoll Verbindungen.
+ms.openlocfilehash: 6272bdf3aec8ba6572b07659416413c393954d93
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830921"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457760"
 ---
 # <a name="protocolconnections-soap"></a>ProtocolConnections (SOAP)
 
-Das **ProtocolConnections** -Element enthält null oder mehr Protokoll Verbindungen. 
+Das **ProtocolConnections** -Element enthält NULL oder mehr Protokoll Verbindungen. 
   
 ```XML
 <ProtocolConnections>
@@ -39,25 +39,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ProtocolConnections (SOAP)](protocolconnections-soap.md) <br/> |Enthält null oder mehr Protocol-Verbindungen.  <br/> |
+|[ProtocolConnections (SOAP)](protocolconnections-soap.md) <br/> |Enthält NULL oder mehr Protokoll Verbindungen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ProtocolConnectionCollectionSetting (SOAP)](protocolconnectioncollectionsetting-soap.md) <br/> |Stellt eine Auflistung von Einstellungen für die Server Protocol-Verbindung dar.  <br/> |
+|[ProtocolConnectionCollectionSetting (SOAP)](protocolconnectioncollectionsetting-soap.md) <br/> |Stellt eine Auflistung von Verbindungseinstellungen für das Serverprotokoll dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

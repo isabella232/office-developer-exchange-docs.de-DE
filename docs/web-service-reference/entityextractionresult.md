@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 643b99ab-ff90-4411-864c-1077623028d6
 description: Das EntityExtractionResult-Element gibt die EntityExtractionResult-Eigenschaft eines Elements an.
-ms.openlocfilehash: ef99629beb95f1e1123569fa99e3f495c1b56e95
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: f2f069717a5862adff3349090c35f95499d135f8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758255"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456955"
 ---
 # <a name="entityextractionresult"></a>EntityExtractionResult
 
@@ -44,33 +44,33 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Adressen (ArrayOfAddressEntitiesType)](addresses-arrayofaddressentitiestype.md) <br/> |Gibt ein Array von **AddressEntity** -Elementen.  <br/> |
-|["Meetingsuggestions"](meetingsuggestions.md) <br/> |Gibt ein Array von **MeetingSuggestion** -Elementen.  <br/> |
-|["Tasksuggestions"](tasksuggestions.md) <br/> |Gibt ein Array von **TaskSuggestion** -Elementen.  <br/> |
-|[EmailAddresses (ArrayOfEmailAddressEntitiesType)](emailaddresses-arrayofemailaddressentitiestype.md) <br/> |Gibt ein Array von Entitäten für e-Mail-Adresse.  <br/> |
-|[Kontakte (ArrayOfContactsType)](contacts-arrayofcontactstype.md) <br/> |Gibt ein Array von Kontakten.  <br/> |
-|[URLs (ArrayOfUrlEntitiesType)](urls-arrayofurlentitiestype.md) <br/> |Gibt ein Array von URLs.  <br/> |
-|[PhoneNumbers (ArrayOfPhoneEntitiesType)](phonenumbers-arrayofphoneentitiestype.md) <br/> |Gibt ein Array von Rufnummern.  <br/> |
+|[Adressen (ArrayOfAddressEntitiesType)](addresses-arrayofaddressentitiestype.md) <br/> |Gibt ein Array von **AddressEntity** -Elementen an.  <br/> |
+|[MeetingSuggestions](meetingsuggestions.md) <br/> |Gibt ein Array von **MeetingSuggestion** -Elementen an.  <br/> |
+|[TaskSuggestions](tasksuggestions.md) <br/> |Gibt ein Array von **Task Suggestion** -Elementen an.  <br/> |
+|[Emails (ArrayOfEmailAddressEntitiesType)](emailaddresses-arrayofemailaddressentitiestype.md) <br/> |Gibt ein Array von e-Mail-Adress Entitäten an.  <br/> |
+|[Kontakte (ArrayOfContactsType)](contacts-arrayofcontactstype.md) <br/> |Gibt ein Array von Kontakten an.  <br/> |
+|[URLs (ArrayOfUrlEntitiesType)](urls-arrayofurlentitiestype.md) <br/> |Gibt ein Array von URLs an.  <br/> |
+|[PhoneNumbers (ArrayOfPhoneEntitiesType)](phonenumbers-arrayofphoneentitiestype.md) <br/> |Gibt ein Array von Telefonnummern an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Item](item.md) <br/> |Stellt ein generisches Element im Exchange-Speicher.  <br/> |
+|[Item](item.md) <br/> |Stellt ein generisches Element in der Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

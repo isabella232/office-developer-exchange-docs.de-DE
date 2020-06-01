@@ -1,5 +1,5 @@
 ---
-title: Trennen Sie (UM-Webdienst)
+title: Trennen (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2f8c1e8c-3bd4-4988-96b9-735c347b29f7
-description: Das Disconnect-Element definiert eine Anforderung an eine Verbindung zu trennen.
-ms.openlocfilehash: 764532bdadd69caaa68406c84277197def3160af
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Disconnect-Element definiert eine Anforderung zum Trennen eines Anrufs.
+ms.openlocfilehash: a00d957927a7a97d12c0d8c0c662956a18529cde
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758035"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458453"
 ---
-# <a name="disconnect-um-web-service"></a>Trennen Sie (UM-Webdienst)
+# <a name="disconnect-um-web-service"></a>Trennen (um-Webdienst)
 
-Das **Disconnect** -Element definiert eine Anforderung an eine Verbindung zu trennen. 
+Das **Disconnect** -Element definiert eine Anforderung zum Trennen eines Anrufs. 
   
-- [Trennen Sie (UM-Webdienst)](disconnect-um-web-service.md)
+- [Trennen (um-Webdienst)](disconnect-um-web-service.md)
   
 ```xml
 <Disconnect>
@@ -43,7 +43,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CallId (UM-Webdienst)](callid-um-web-service.md) <br/> |Der Bezeichner des Anrufs zu trennen.  <br/> |
+|[Anrufdienst (um-Webdienst)](callid-um-web-service.md) <br/> |Der Bezeichner des Anrufs, der getrennt werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -53,19 +53,19 @@ Keine.
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Trennen Sie (UM-Webdienst)](disconnect-operation-um-web-service.md)  
-- [PlayOnPhone-Vorgang (UM-Webdienst)](playonphone-operation-um-web-service.md) 
-- [PlayOnPhoneGreeting-Vorgang (UM-Webdienst)](playonphonegreeting-operation-um-web-service.md)  
-- [CallId (UM-Webdienst)](callid-um-web-service.md)
+- [Trennungsvorgang (um-Webdienst)](disconnect-operation-um-web-service.md)  
+- [PlayOnPhone-Vorgang (um-Webdienst)](playonphone-operation-um-web-service.md) 
+- [PlayOnPhoneGreeting-Vorgang (um-Webdienst)](playonphonegreeting-operation-um-web-service.md)  
+- [Anrufdienst (um-Webdienst)](callid-um-web-service.md)
 

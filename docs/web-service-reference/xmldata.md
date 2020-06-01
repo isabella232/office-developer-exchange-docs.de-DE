@@ -1,5 +1,5 @@
 ---
-title: XmlData
+title: XMLDATA
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e47f1d32-3ee3-4a1d-b7f9-80973ed57bd4
-description: Das XmlData-Element enthält Inhalt für die XML-Eigenschaft für eine Benutzer-Konfigurationsobjekt.
-ms.openlocfilehash: 6cd14d9e3873dd3aac352dce82afb2c309477214
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das XMLDATA-Element enthält XML-Daten Eigenschafts Inhalt für ein Benutzer Konfigurationsobjekt.
+ms.openlocfilehash: 2fb3e2ccbb6e9ccc409a5d0cfdd895b2a63214ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839560"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457018"
 ---
-# <a name="xmldata"></a>XmlData
+# <a name="xmldata"></a>XMLDATA
 
-Das **XmlData** -Element enthält Inhalt für die XML-Eigenschaft für eine Benutzer-Konfigurationsobjekt. 
+Das **XMLDATA** -Element enthält XML-Daten Eigenschafts Inhalt für ein Benutzer Konfigurationsobjekt. 
   
 ```XML
 <XmlData/>
@@ -45,21 +45,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserConfiguration](userconfiguration.md) <br/> |Definiert einen einzelnen Benutzer-Konfigurationsobjekt.  <br/> |
+|[UserConfiguration](userconfiguration.md) <br/> |Definiert ein einzelnes Benutzer Konfigurationsobjekt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

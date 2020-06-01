@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 011cb38b-da3c-4b1b-8836-a6b212b511f6
-description: Das GetUserOofSettingsResponse-Element enthält die Antwortnachricht und die Einstellungen von Office (OOF) für einen Benutzer.
-ms.openlocfilehash: dc63b6d54471973ce5961a5a5ad6a23f6521fc0e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetUserOofSettingsResponse-Element enthält die Antwortnachricht und die Abwesenheit (Out of Office, OOF) Einstellungen für einen Benutzer.
+ms.openlocfilehash: f7f28c67fd36630ffb5294ab35c0fef2f467ba22
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829693"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457816"
 ---
 # <a name="getuseroofsettingsresponse"></a>GetUserOofSettingsResponse
 
-Das **GetUserOofSettingsResponse** -Element enthält die Antwortnachricht und die Einstellungen von Office (OOF) für einen Benutzer. 
+Das **GetUserOofSettingsResponse** -Element enthält die Antwortnachricht und die Abwesenheit (Out of Office, OOF) Einstellungen für einen Benutzer. 
   
 ```xml
 <GetUserOofSettingsResponse>
@@ -44,25 +44,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessage](responsemessage.md) <br/> |Enthält beschreibende Informationen über den Antwortstatus.  <br/> |
+|[ResponseMessage](responsemessage.md) <br/> |Enthält beschreibende Informationen zum Antwortstatus.  <br/> |
 |[OofSettings](oofsettings.md) <br/> |Enthält die OOF-Einstellungen.  <br/> |
-|[AllowExternalOof](allowexternaloof.md) <br/> |Enthält einen Wert, der angibt, den externe OOF Testnachrichten gesendet werden.  <br/> |
+|[AllowExternalOof](allowexternaloof.md) <br/> |Enthält einen Wert, der angibt, an wen externe Abwesenheitsnachrichten gesendet werden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

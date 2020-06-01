@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 3dfa0fc9-64bb-4d18-bff7-bf6b3bed4a0d
 description: Erfahren Sie, wie Sie Ihren Posteingang in Ihrer verwalteten EWS-API oder EWS-Anwendung mithilfe von Posteingangsregeln und der Liste der blockierten Absender verwalten können.
-ms.openlocfilehash: fe06c5ee87e2679506ca7247c5fc2c96912dee86
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: 7c88015386dc882f14184765e0046a866e8c0e10
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757019"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456316"
 ---
 # <a name="inbox-management-and-ews-in-exchange"></a>Posteingangsverwaltung und EWS in Exchange
 
@@ -31,9 +31,9 @@ Exchange-Postfächer verfügen über Features, mit denen Benutzer ihre eingehend
 
 Seien wir ehrlich: Nicht alle E-Mail-Nachrichten sind gleichberechtigt. Für jede E-Mail, die ein Benutzer von seinem Vorgesetzten erhält, gibt es eine von einer Internet-Videoverteilerliste für Katzenvideos, der er vor Jahren beigetreten und nie mehr verlassen hat. Katzenvideos sind zwar unterhaltsam, erzeugen aber riesige Datenmengen, sodass  wichtige Nachrichten einfach im Meer der Verteilungslisten-E-Mails in einem Posteingang verloren gehen können. Viele Benutzer verwenden Posteingangsregeln, um diese Nachrichten auszusortieren, damit der Posteingang übersichtlicher wird. Mit Exchange-Webdienste (EWS) kann Ihre Anwendung die Leistungsfähigkeit von Regeln optimal nutzen.
   
-Die verwaltete EWS-API stellt die Methoden [ExchangeService.GetInboxRules](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) und [ExchangeService.UpdateInboxRules](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) zum Arbeiten mit Regeln bereit. EWS liefert die Vorgänge [GetInboxRules](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) und [UpdateInboxRules](http://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx) zum Arbeiten mit Regeln. Beachten Sie jedoch, dass die verwaltete EWS-API und EWS die folgenden Einschränkungen beim Verwenden von Posteingangsregeln haben: 
+Die verwaltete EWS-API stellt die Methoden [ExchangeService.GetInboxRules](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) und [ExchangeService.UpdateInboxRules](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) zum Arbeiten mit Regeln bereit. EWS liefert die Vorgänge [GetInboxRules](https://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) und [UpdateInboxRules](https://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx) zum Arbeiten mit Regeln. Beachten Sie jedoch, dass die verwaltete EWS-API und EWS die folgenden Einschränkungen beim Verwenden von Posteingangsregeln haben: 
   
-- EWS kann nicht auf „Nur-Client“-Regeln oder Regeln zugreifen oder diese erstellen, die in Outlook für die Ausführung „nur auf diesem Computer“ festgelegt sind.
+- EWS kann nicht auf "Nur-Client"-Regeln oder Regeln zugreifen oder diese erstellen, die in Outlook für die Ausführung "nur auf diesem Computer" festgelegt sind.
     
 - Um die aktuellen Regeln mithilfe von EWS zu ändern, müssen Sie den Outlook-Regel-BLOB entfernen, sofern vorhanden. Dies bedeutet, dass durch das Verwenden von EWS zum Ändern von Regeln alle Regeln, die zuvor mithilfe von Outlook ausgeschaltet (deaktiviert) wurden, gelöscht werden.  
     
@@ -71,22 +71,22 @@ Die folgende Abbildung zeigt den Prozess, dem das Regelmodul folgt.
 ### <a name="putting-the-pieces-together---parts-of-a-rule"></a>Kombinieren der einzelnen Komponenten – Teile einer Regel
 <a name="bk_Pieces"> </a>
 
-Eine Möglichkeit zum Visualisieren der Teile einer Regel besteht darin, sich vorzustellen, dass Sie jemandem Anweisungen erteilen, der Ihre eingehenden E-Mails organisieren soll. Vielleicht sagen Sie zu dieser Person: „Beim Eintreffen von Nachrichten, die \<hier Bedingungen einfügen\< erfüllt, führen Sie \>Aktionen hier einfügen\> aus, es sei denn, die Nachricht \<hier Ausnahmen einfügen\>. Im Folgenden werden die einzelnen Teile genauer erläutert.
+Eine Möglichkeit zum Visualisieren der Teile einer Regel besteht darin, sich vorzustellen, dass Sie jemandem Anweisungen erteilen, der Ihre eingehenden E-Mails organisieren soll. Sie können dieser Person sagen: "Wenn eine Nachricht eintrifft, \<insert conditions here\> tun Sie dies \<insert actions here\> , es sei denn, die Nachricht \<insert exceptions here\> . Im Folgenden werden die einzelnen Teile genauer erläutert:
   
 #### <a name="conditions"></a>Bedingungen
 <a name="bk_Conditions"> </a>
 
-[Bedingungen](http://msdn.microsoft.com/library/f049a48c-9585-43f7-8549-0b8cb19a5eea%28Office.15%29.aspx) beschreiben, wann eine Regel angewendet werden soll. Während Sie die Bedingungen einer Regel auslassen können (was zu einer Regel führt, die für alle empfangenen Nachrichten gilt), haben Regeln sehr viel häufiger Bedingungen, die für eine Teilmenge der eingehenden Nachrichten gelten. Beispiele sind etwa "wenn eine Nachricht von Sadie eingeht" oder "wenn eine Nachricht an die Verteilerliste ‘Katzenvideos‘ gesendet wird". Regeln können mehrere Bedingungen haben. Wenn Regeln mehr als eine Bedingung haben, müssen alle Bedingungen erfüllt sein, damit das Regelmodul die angegebene Maßnahme ergreift. 
+[Bedingungen](https://msdn.microsoft.com/library/f049a48c-9585-43f7-8549-0b8cb19a5eea%28Office.15%29.aspx) beschreiben, wann eine Regel angewendet werden soll. Während Sie die Bedingungen einer Regel auslassen können (was zu einer Regel führt, die für alle empfangenen Nachrichten gilt), haben Regeln sehr viel häufiger Bedingungen, die für eine Teilmenge der eingehenden Nachrichten gelten. Beispiele sind etwa "wenn eine Nachricht von Sadie eingeht" oder "wenn eine Nachricht an die Verteilerliste ‘Katzenvideos‘ gesendet wird". Regeln können mehrere Bedingungen haben. Wenn Regeln mehr als eine Bedingung haben, müssen alle Bedingungen erfüllt sein, damit das Regelmodul die angegebene Maßnahme ergreift. 
   
 #### <a name="actions"></a>Aktionen
 <a name="bk_Actions"> </a>
 
-[Aktionen](http://msdn.microsoft.com/library/c5aa96b1-2d8b-422f-8c2f-f118572ab23f%28Office.15%29.aspx) beschreiben, was passiert, wenn eine Regel gilt. Beispiele sind "Verschieben der Nachricht in den Ordner 'Katzen'" oder "Kennzeichnen der Nachricht mit der Wichtigkeit 'Niedrig'". Regeln können mehrere Aktionen haben. Wenn Sie mehrere Aktionen für eine Regel angeben, werden alle Aktionen ausgeführt, wenn die Regel gilt. 
+[Aktionen](https://msdn.microsoft.com/library/c5aa96b1-2d8b-422f-8c2f-f118572ab23f%28Office.15%29.aspx) beschreiben, was passiert, wenn eine Regel gilt. Beispiele sind "Verschieben der Nachricht in den Ordner 'Katzen'" oder "Kennzeichnen der Nachricht mit der Wichtigkeit 'Niedrig'". Regeln können mehrere Aktionen haben. Wenn Sie mehrere Aktionen für eine Regel angeben, werden alle Aktionen ausgeführt, wenn die Regel gilt. 
   
 #### <a name="exceptions"></a>Ausnahmen
 <a name="bk_Exceptions"> </a>
 
-[Ausnahmen](http://msdn.microsoft.com/library/7cd63ac2-3441-4ed4-915b-6f90af4b28fc%28Office.15%29.aspx) beschreiben, wann eine Regel nicht gelten soll, auch wenn die in den Bedingungen angegebenen Kriterien erfüllt sind. Beispiele sind "außer wenn die Nachricht nur an mich gesendet wird" oder "außer wenn die Nachricht von Mama kommt". Eine Regel kann mehrere Ausnahmen haben. Wenn Regeln mehr als eine Ausnahme haben und beliebige dieser Ausnahmen erfüllt werde, wird die Regel nicht angewendet. 
+[Ausnahmen](https://msdn.microsoft.com/library/7cd63ac2-3441-4ed4-915b-6f90af4b28fc%28Office.15%29.aspx) beschreiben, wann eine Regel nicht gelten soll, auch wenn die in den Bedingungen angegebenen Kriterien erfüllt sind. Beispiele sind "außer wenn die Nachricht nur an mich gesendet wird" oder "außer wenn die Nachricht von Mama kommt". Eine Regel kann mehrere Ausnahmen haben. Wenn Regeln mehr als eine Ausnahme haben und beliebige dieser Ausnahmen erfüllt werde, wird die Regel nicht angewendet. 
   
 ### <a name="example-herding-those-cats"></a>Beispiel: Verwalten dieser Katzen
 <a name="bk_Example"> </a>
@@ -123,7 +123,7 @@ Die folgende Abbildung zeigt, wie die Regel auf eine eingehende E-Mail-Nachricht
 ## <a name="blocking-senders"></a>Blockieren von Absendern
 <a name="bk_Blocking"> </a>
 
-Obwohl Sie eine Regel erstellen können, die alle E-Mails von einem bestimmten Absender in den Junk-E-Mail-Ordner verschiebt, können Sie dazu auf die Liste blockierter Absender in den Junk-E-Optionen verwenden. Da es eine Höchstgrenze für die Anzahl der Regeln eines Benutzers gibt, ist es sinnvoll, die Liste blockierter Absender zu verwenden. Sie können [bestimmte E-Mail-Adressen aus der Liste blockierter Absender hinzufügen oder entfernen ](how-to-add-and-remove-email-addresses-from-blocked-senders-list-by-using-ews.md), indem Sie die [ExchangeService.MarkAsJunk](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx)-Methode der verwalteten EWS-API oder den EWS-Vorgang [MarkAsJunk](http://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx) verwenden. Beachten Sie, dass für den Zugriff auf die Liste blockierter Absender durch EWS das Postfach des Benutzers eine E-Mail-Nachricht von der E-Mail-Adresse enthalten muss, die Sie hinzufügen oder entfernen möchten. 
+Obwohl Sie eine Regel erstellen können, die alle E-Mails von einem bestimmten Absender in den Junk-E-Mail-Ordner verschiebt, können Sie dazu auf die Liste blockierter Absender in den Junk-E-Optionen verwenden. Da es eine Höchstgrenze für die Anzahl der Regeln eines Benutzers gibt, ist es sinnvoll, die Liste blockierter Absender zu verwenden. Sie können [bestimmte E-Mail-Adressen aus der Liste blockierter Absender hinzufügen oder entfernen ](how-to-add-and-remove-email-addresses-from-blocked-senders-list-by-using-ews.md), indem Sie die [ExchangeService.MarkAsJunk](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx)-Methode der verwalteten EWS-API oder den EWS-Vorgang [MarkAsJunk](https://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx) verwenden. Beachten Sie, dass für den Zugriff auf die Liste blockierter Absender durch EWS das Postfach des Benutzers eine E-Mail-Nachricht von der E-Mail-Adresse enthalten muss, die Sie hinzufügen oder entfernen möchten. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 <a name="bk_InThisSection"> </a>
@@ -137,10 +137,10 @@ Obwohl Sie eine Regel erstellen können, die alle E-Mails von einem bestimmten A
 
 - [Entwickeln von Webdienstclients für Exchange](develop-web-service-clients-for-exchange.md)
     
-- [GetInboxRules-Vorgang](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx)
+- [GetInboxRules-Vorgang](https://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx)
     
-- [UpdateInboxRules-Vorgang](http://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx)
+- [UpdateInboxRules-Vorgang](https://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx)
     
-- [MarkAsJunk-Vorgang](http://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx)
+- [MarkAsJunk-Vorgang](https://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx)
     
 

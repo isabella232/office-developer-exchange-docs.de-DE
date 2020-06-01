@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1c60dd64-a083-460a-9840-021d30f871d6
-description: Das ExpandDLResponse-Element definiert eine Antwort auf eine Anforderung an eine Verteilerliste erweitern.
-ms.openlocfilehash: dbcb0ff8e5c11460c070b8a87da53cecca279b88
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ExpandDLResponse-Element definiert eine Antwort auf eine Anforderung zum Erweitern einer Verteilerliste.
+ms.openlocfilehash: a5b162fe2c29f760b7499e9e946b700ce69be970
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758312"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456941"
 ---
 # <a name="expanddlresponse"></a>ExpandDLResponse
 
-Das **ExpandDLResponse** -Element definiert eine Antwort auf eine Anforderung an eine Verteilerliste erweitern. 
+Das **ExpandDLResponse** -Element definiert eine Antwort auf eine Anforderung zum Erweitern einer Verteilerliste. 
   
 [ExpandDLResponse](expanddlresponse.md)
   
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
@@ -67,7 +67,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 
 
 
-[Der ExpandDL](expanddl.md)
+[ExpandDL](expanddl.md)
   
-[Der ExpandDL-Vorgang](expanddl-operation.md)
+[ExpandDL-Vorgang](expanddl-operation.md)
 

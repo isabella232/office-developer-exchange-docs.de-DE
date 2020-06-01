@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a3ab9bcf-7dab-44f0-9ab6-b06543c0fdc2
-description: Das Element PostOfficeBox gibt Thepost Office Boxportion, der eine Postadresse an.
-ms.openlocfilehash: e2ec105accac380d27ebb4e7fc636cc538cad57f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PostOfficeBox-Element gibt thepost Office-boxportion einer Postadresse an.
+ms.openlocfilehash: dede39a7b053172157858686f8287466f982c4ab
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830861"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458026"
 ---
 # <a name="postofficebox"></a>PostOfficeBox
 
-Das Element **PostOfficeBox** gibt den Teil "Postfach" eine Postadresse. 
+Das **PostOfficeBox** -Element gibt den "Post Office Box"-Teil einer Postadresse an. 
   
 ```XML
 <PostOfficeBox></PostOfficeBox>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -38,23 +38,23 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md) | [Wert (PersonaPostalAddressType)](value-personapostaladdresstype.md)
+[PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)  |  [Wert (PersonaPostalAddressType)](value-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **PostOfficeBox** -Element ist ein Postfach-Bezeichner. 
+Der Textwert des **PostOfficeBox** -Elements ist eine Post Office-Feld-ID. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

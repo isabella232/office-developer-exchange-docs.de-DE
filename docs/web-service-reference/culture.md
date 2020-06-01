@@ -1,5 +1,5 @@
 ---
-title: Culture
+title: Kultur
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 71bd62c6-3fec-48db-9a5e-02121e9bc20b
-description: Das Element Kultur stellt die Kultur für ein bestimmtes Element in einem Postfach.
-ms.openlocfilehash: 0971397e5cc3fa27c986c67b6beffd4336640ad6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Culture-Element stellt die Kultur für ein bestimmtes Element in einem Postfach dar.
+ms.openlocfilehash: ee0fa4d25f3be769aff0a9a50c2f311ab6179b31
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757812"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458341"
 ---
-# <a name="culture"></a>Culture
+# <a name="culture"></a>Kultur
 
-Das Element **Kultur** stellt die Kultur für ein bestimmtes Element in einem Postfach. 
+Das **Culture** -Element stellt die Kultur für ein bestimmtes Element in einem Postfach dar. 
   
 ```xml
 <Culture/>
 ```
 
- **Language**
+ **Sprache**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -58,17 +58,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert gibt die Sprache an, die in der Exchange-Webdienste-Operationen verwendet wird. Kultur wird unter Verwendung der RFC 1766 Kultur-ID angegeben. En-US.
+Der Wert Text gibt die Sprache an, die in den Exchange-Webdienste Vorgängen verwendet wird. Kultur wird mithilfe des RFC 1766-Kulturbezeichners angegeben; Beispiel: en-US.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

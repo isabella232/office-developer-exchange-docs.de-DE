@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1b047e34-40f0-459f-ac9e-e9f8e7349479
-description: Der Vorgang RefreshSharingFolder aktualisiert den angegebenen lokalen Ordner mit den neuesten Daten aus dem Ordner, der gemeinsam genutzt wird.
-ms.openlocfilehash: 0037de28f0720b97cd51c58a6ee7e3c06e84d642
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der RefreshSharingFolder-Vorgang aktualisiert den angegebenen lokalen Ordner mit den neuesten Daten aus dem Ordner, der freigegeben wird.
+ms.openlocfilehash: dd7136ae82353841db09497d23eabe450c1c8b13
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831041"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456753"
 ---
 # <a name="refreshsharingfolder-operation"></a>RefreshSharingFolder-Vorgang
 
-Der Vorgang **RefreshSharingFolder** aktualisiert den angegebenen lokalen Ordner mit den neuesten Daten aus dem Ordner, der gemeinsam genutzt wird. 
+Der **RefreshSharingFolder** -Vorgang aktualisiert den angegebenen lokalen Ordner mit den neuesten Daten aus dem Ordner, der freigegeben wird. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der Vorgang **RefreshSharingFolder** können die SOAP-Header, die aufgeführt und in der folgenden Tabelle beschrieben. 
+Der **RefreshSharingFolder** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="refreshsharingfolder-request-example"></a>Anforderungsbeispiel RefreshSharingFolder
+## <a name="refreshsharingfolder-request-example"></a>RefreshSharingFolder-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird veranschaulicht, wie auf eine Anforderung an den angegebenen lokalen Ordner mit den neuesten Daten aus dem Ordner zu aktualisieren, die gegenwärtig freigegebenen bilden. Das [SharingFolderId](sharingfolderid.md) -Element gibt den Bezeichner des lokalen Ordners aktualisiert werden müssen. 
+Das folgende Beispiel zeigt, wie Sie eine Anforderung zum Aktualisieren des angegebenen lokalen Ordners mit den neuesten Daten aus dem freigegebenen Ordner bilden. Das [SharingFolderId](sharingfolderid.md) -Element gibt den Bezeichner des lokalen Ordners an, der aktualisiert werden soll. 
   
 ### <a name="code"></a>Code
 
@@ -45,13 +45,13 @@ Im folgenden Beispiel wird veranschaulicht, wie auf eine Anforderung an den ange
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010"/>
   </soap:Header>
   <soap:Body>
-    <RefreshSharingFolder xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <RefreshSharingFolder xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:SharingFolderId Id="AAMkAD=" ChangeKey="AwAAA=" />
     </RefreshSharingFolder>
   </soap:Body>
@@ -68,11 +68,11 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [SharingFolderId](sharingfolderid.md)
     
-## <a name="successful-refreshsharingfolder-response"></a>Erfolgreiche RefreshSharingFolder Antwort
+## <a name="successful-refreshsharingfolder-response"></a>Erfolgreiche RefreshSharingFolder-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **RefreshSharingFolder** . 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **RefreshSharingFolder** -Anforderung. 
   
 ### <a name="code"></a>Code
 
@@ -87,20 +87,20 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **Ref
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <RefreshSharingFolderResponseMessage ResponseClass="Success"
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
     </RefreshSharingFolderResponseMessage>
   </soap:Body>
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -110,11 +110,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-## <a name="refreshsharingfolder-error-response"></a>Fehlerantwort RefreshSharingFolder
+## <a name="refreshsharingfolder-error-response"></a>RefreshSharingFolder-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine **RefreshSharingFolder** -Anforderung. In diesem Beispiel wird die Anforderung **RefreshSharingFolder** ist fehlgeschlagen, da ein Abonnement, das den angegebenen lokalen Ordner entspricht, nicht gefunden wurde. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **RefreshSharingFolder** -Anforderung. In diesem Beispiel ist die **RefreshSharingFolder** -Anforderung fehlgeschlagen, da ein Abonnement, das dem angegebenen lokalen Ordner entspricht, nicht gefunden wurde. 
   
 ### <a name="code"></a>Code
 
@@ -129,13 +129,13 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **RefreshSharingFolder** 
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <RefreshSharingFolderResponseMessage ResponseClass="Error"
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:MessageText>Failed to synchronize the sharing folder.</m:MessageText>
       <m:ResponseCode>ErrorSharingSynchronizationFailed</m:ResponseCode>
       <m:DescriptiveLinkKey>0</m:DescriptiveLinkKey>
@@ -147,7 +147,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **RefreshSharingFolder** 
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
@@ -161,7 +161,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [MessageXml](messagexml.md)
+- [Messagexml verwendet](messagexml.md)
     
 ## <a name="see-also"></a>Siehe auch
 

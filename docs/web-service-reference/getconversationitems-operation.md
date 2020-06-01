@@ -1,5 +1,5 @@
 ---
-title: GetConversationItems operation
+title: GetConversationItems-Vorgang
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,48 +7,48 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8ae00a99-b37b-4194-829c-fe300db6ab99
-description: Hier finden Sie Informationen zum Vorgang GetConversationItems.
-ms.openlocfilehash: 9d9fb9cc04bcbb5846162c77c852defa51dff98b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier finden Sie Informationen zum GetConversationItems-Vorgang.
+ms.openlocfilehash: ddeb5386e56653a32ca2e6d212518704cd0f0c58
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758614"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457781"
 ---
-# <a name="getconversationitems-operation"></a>GetConversationItems operation
+# <a name="getconversationitems-operation"></a>GetConversationItems-Vorgang
 
-Hier finden Sie Informationen zum Vorgang **GetConversationItems** . 
+Hier finden Sie Informationen zum **GetConversationItems** -Vorgang. 
   
-Der Vorgang **GetConversationItems** Ruft einen oder mehrere Sätze von Elementen, die Knoten in einer Unterhaltung in angeordnet sind. 
+Der **GetConversationItems** -Vorgang ruft eine oder mehrere Gruppen von Elementen ab, die in einer Unterhaltung in Knoten organisiert sind. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-getconversationitems-operation"></a>Verwenden des GetConversationItems-Vorgangs
 
-Den **GetConversationItems** -Vorgang können Sie Elemente in Unterhaltungen für Primär- und archivpostfächer abgerufen. 
+Sie können den **GetConversationItems** -Vorgang verwenden, um Elemente in Unterhaltungen für primäre und Archivpostfächer abzurufen. 
   
-### <a name="getconversationitems-operation-soap-headers"></a>GetConversationItems Vorgang SOAP-Header
+### <a name="getconversationitems-operation-soap-headers"></a>SOAP-Header des GetConversationItems-Vorgangs
 
-Der Vorgang **GetConversationItems** können die SOAP-Header, die in der folgenden Tabelle aufgelistet sind. 
+Der **GetConversationItems** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |["ExchangeImpersonation"](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Der Mindestwert für dieses Element ist **Exchange2013**. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Der Minimalwert für dieses Element ist **Exchange2013**. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
    
-## <a name="getconversationitems-operation-request-example-get-items-in-a-single-conversation"></a>GetConversationItems Vorgang-anforderungsbeispiel: Abrufen von Elementen in einem einzelnen Gespräch
+## <a name="getconversationitems-operation-request-example-get-items-in-a-single-conversation"></a>GetConversationItems-Vorgangs Anforderungs Beispiel: Abrufen von Elementen in einer einzelnen Unterhaltung
 
-Im folgenden Beispiel wird eine **GetConversationItems** Vorgang Anforderung veranschaulicht, wie alle Unterhaltungselemente in einem einzelnen Gespräch, mit Ausnahme von Elementen befindet sich im Ordner Entwürfe und gelöschte Objekte abrufen. Jedes Element in der Antwort zurückgegebenen enthält eine Element-ID, einen Betreff und die Zeit, die das Element im Postfach empfangen wurde. 
+Im folgenden Beispiel einer **GetConversationItems** -Vorgangsanforderung wird gezeigt, wie alle Unterhaltungselemente in einer einzelnen Unterhaltung abgerufen werden, mit Ausnahme von Elementen, die sich in den Ordnern "Gelöschte Elemente" und "Entwürfe" befinden. Jedes in der Antwort zurückgegebene Element enthält eine Element-ID, einen Betreff und die Uhrzeit, zu der das Element im Postfach empfangen wurde. 
   
 > [!NOTE]
-> Bezeichner für alle Elemente aus, und Ändern von Schlüsseln in diesem Artikel wurde gekürzt, um die Lesbarkeit zu erhalten. 
+> Alle Element-IDs und Änderungsschlüssel in diesem Artikel wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
@@ -77,15 +77,15 @@ Im folgenden Beispiel wird eine **GetConversationItems** Vorgang Anforderung ver
 </soap:Envelope>
 ```
 
-In diesem Beispiel wird eine Anforderung **GetConversationItems** enthält keinen die folgenden Optionen: 
+In diesem Beispiel für eine **GetConversationItems** -Anforderung sind die folgenden Optionen nicht enthalten: 
   
-- Das Element [MaxItemsToReturn](maxitemstoreturn.md) , das die maximale Anzahl der Elemente in der Antwort zurückgegeben wird. 
+- Das [MaxItemsToReturn](maxitemstoreturn.md) -Element, mit dem die maximale Anzahl von Elementen festgelegt wird, die in der Antwort zurückgegeben werden sollen. 
     
-- Das [MailboxScope](mailboxscope.md) -Element, das festgelegt, dass den Postfach-Bereich durch zurück, der angibt, ob die **GetConversationItems** durchgeführt wird, auf das primäre Postfach, das Archivpostfach oder beide Postfächer ausgeführt werden. 
+- Das [MailboxScope](mailboxscope.md) -Element, das den Post Fachbereich festlegt, indem er angibt, ob der **GetConversationItems** -Vorgang für das primäre Postfach, das Archivpostfach oder beide Postfächer ausgeführt werden soll. 
     
-- Das Element [Synchronisierungsstatus (base64Binary)](syncstate-base64binary.md) , das den Synchronisierungsstatus nur Unterhaltungselementen abgerufen, die neue oder aktualisierte in der Unterhaltung sind festlegt. Dieses Element wird für jede Unterhaltung festgelegt. 
+- Das [von "SyncState (base64Binary)](syncstate-base64binary.md) -Element, das den Synchronisierungs Zustand so festlegt, dass nur Unterhaltungselemente abgerufen werden, die in der Unterhaltung neu oder aktualisiert sind. Dieses Element wird für jede Unterhaltung festgelegt. 
     
-Die Anforderung SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
   
 - [GetConversationItems](getconversationitems.md)
     
@@ -101,17 +101,17 @@ Die Anforderung SOAP-Text enthält die folgenden Elemente:
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-- [SortOrder (ConversationNodeSortOrder)](sortorder-conversationnodesortorder.md)
+- [Sortierreihenfolge (ConversationNodeSortOrder)](sortorder-conversationnodesortorder.md)
     
-- [Conversations](conversations-ex15websvcsotherref.md)
+- [Unterhaltungen](conversations-ex15websvcsotherref.md)
     
 - [Unterhaltung (ConversationRequestType)](conversation-conversationrequesttype.md)
     
 - [ConversationId](conversationid.md)
     
-## <a name="successful-getconversationitems-operation-response"></a>Erfolgreiche GetConversationItems Vorgangsantwort
+## <a name="successful-getconversationitems-operation-response"></a>Erfolgreiche Reaktion des GetConversationItems-Vorgangs
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung des **GetConversationItems** -Vorgang zum Abrufen von Elementen in einem einzelnen Gespräch. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetConversationItems** -Vorgangsanforderung zum Abrufen von Elementen in einer einzelnen Unterhaltung. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -122,15 +122,15 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung des *
                            MajorBuildNumber="545"
                            MinorBuildNumber="11"
                            Version="Exchange2013"
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:GetConversationItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:GetConversationItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:GetConversationItemsResponseMessage ResponseClass="Success">
                <m:ResponseCode>NoError</m:ResponseCode>
@@ -201,9 +201,9 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung des *
 </s:Envelope>
 ```
 
-Es wird empfohlen, dass Sie den Synchronisierungsstatus für nachfolgende **GetConversationItems** Vorgang Anforderungen speichern. 
+Es wird empfohlen, die von "SyncState für nachfolgende **GetConversationItems** -Vorgangsanforderungen zu speichern. 
   
-Die Antwort SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Antworttext Körper enthält die folgenden Elemente:
   
 - [GetConversationItemsResponse](getconversationitemsresponse.md)
     
@@ -217,7 +217,7 @@ Die Antwort SOAP-Text enthält die folgenden Elemente:
     
 - [ConversationId](conversationid.md)
     
-- [Synchronisierungsstatus (base64Binary)](syncstate-base64binary.md)
+- [Von "SyncState (base64Binary)](syncstate-base64binary.md)
     
 - [ConversationNodes](conversationnodes.md)
     
@@ -235,18 +235,18 @@ Die Antwort SOAP-Text enthält die folgenden Elemente:
     
 - [DateTimeReceived](datetimereceived.md)
     
-## <a name="getconversationitems-operation-error-response"></a>GetConversationItems Vorgang Fehlerantwort
+## <a name="getconversationitems-operation-error-response"></a>Fehlerantwort des GetConversationItems-Vorgangs
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetConversationItems** Vorgang Anforderung zum Abrufen von Elementen in einer Unterhaltung, die entweder nicht mehr vorhanden ist, im Postfach oder für die alle Unterhaltungselemente im Ordner gespeichert sind, die ignoriert werden. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetConversationItems** -Vorgangsanforderung zum Abrufen von Elementen in einer Unterhaltung, die entweder nicht mehr im Postfach vorhanden sind oder für die sich alle Unterhaltungselemente in ignorierten Ordnern befinden. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="556" MinorBuildNumber="8" Version="Exchange2013" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="556" MinorBuildNumber="8" Version="Exchange2013" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetConversationItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetConversationItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetConversationItemsResponseMessage ResponseClass="Error">
           <m:MessageText>The specified object was not found in the store.</m:MessageText>
@@ -265,6 +265,6 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetConversationItems** 
     
 - [ApplyConversationAction-Vorgang](applyconversationaction-operation.md)
     
-- [FindConversation Operation](findconversation-operation.md)
+- [FindConversation-Vorgang](findconversation-operation.md)
     
 

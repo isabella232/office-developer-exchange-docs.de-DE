@@ -1,5 +1,5 @@
 ---
-title: ActionType (HoldActionType)
+title: Action Type (HoldActionType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f50449b9-e73b-43c5-af96-6433bf434dce
-description: ActionType-Element gibt den Typ der Aktion für den Haltestatus an.
-ms.openlocfilehash: cb1cfa8a1306c4a6cacf5c82824d19cab57e7941
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Action Type-Element gibt den Typ der Aktion für den Haltebereich an.
+ms.openlocfilehash: 8f2796df818dac2bd285b055aa44fbcecd0de5e6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757210"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457858"
 ---
-# <a name="actiontype-holdactiontype"></a>ActionType (HoldActionType)
+# <a name="actiontype-holdactiontype"></a>Action Type (HoldActionType)
 
-**ActionType** -Element gibt den Typ der Aktion für den Haltestatus an. 
+Das **Action** Type-Element gibt den Typ der Aktion für den Haltebereich an. 
   
 ```XML
 <ActionType> Create | Update | Remove </ActionType>
@@ -42,19 +42,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **ActionType** -Element ist der Typ des Haltestatus für ein Postfach festgelegt. **Erstellen** ein Textwerts gibt an, dass es sich bei ein Haltestatus Postfach erstellt wird. Der **Aktualisierung** ein Textwerts gibt an, dass ein Haltestatus Postfach aktualisiert werden. Ein Textwert der **Entfernen** gibt an, dass ein Postfach Haltebereich entfernt wird. 
+Der Textwert des **Action** Type-Elements ist der für ein Postfach festgelegte haltetyp. Der Textwert **Create** gibt an, dass ein Postfachspeicher erstellt wird. Der Textwert **Update** gibt an, dass ein Postfachspeicher aktualisiert wird. Der Textwert **Remove** gibt an, dass ein Post Fach Haltestatus entfernt wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |

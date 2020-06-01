@@ -1,22 +1,22 @@
 ---
-title: EcpUrl-veröffentlichen (POX)
+title: EcpUrl-Publish (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: a51189db-f6e5-428d-833d-65a209204a5b
-description: Das Veröffentlichen von EcpUrl-Element gibt eine partielle URL, die mit dem EcpUrl (POX) Elementwert generiert eine URL, die verwendet werden können, für den Kalender veröffentlichen von Einstellungen für einen e-Mail-aktivierten Benutzer Zugriff auf kombiniert werden kann.
-ms.openlocfilehash: 82f55be3ce529f6e57db5ffe18bbdea609b13595
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EcpUrl-Publish-Element gibt eine partielle URL an, die mit dem Wert des EcpUrl (POX)-Elements kombiniert werden kann, um eine URL zu generieren, die für den Zugriff auf die Kalender Veröffentlichungseinstellungen für einen e-Mail-aktivierten Benutzer verwendet werden kann.
+ms.openlocfilehash: 98cac9132c1ba6e368be6337fbf3b522a02cb47a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758127"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458005"
 ---
-# <a name="ecpurl-publish-pox"></a>EcpUrl-veröffentlichen (POX)
+# <a name="ecpurl-publish-pox"></a>EcpUrl-Publish (POX)
 
-Das **Veröffentlichen von EcpUrl** -Element gibt eine partielle URL, die mit dem [EcpUrl (POX)](ecpurl-pox.md) Elementwert generiert eine URL, die verwendet werden können, für den Kalender veröffentlichen von Einstellungen für einen e-Mail-aktivierten Benutzer Zugriff auf kombiniert werden kann. 
+Das **EcpUrl-Publish-** Element gibt eine partielle URL an, die mit dem Wert des [EcpUrl (POX)](ecpurl-pox.md) -Elements kombiniert werden kann, um eine URL zu generieren, die für den Zugriff auf die Kalender Veröffentlichungseinstellungen für einen e-Mail-aktivierten Benutzer verwendet werden kann. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -26,7 +26,7 @@ Das **Veröffentlichen von EcpUrl** -Element gibt eine partielle URL, die mit de
   
 [Protokoll (POX)](protocol-pox.md)
   
-[EcpUrl-veröffentlichen (POX)](ecpurl-publish-pox.md)
+[EcpUrl-Publish (POX)](ecpurl-publish-pox.md)
   
 ```XML
 <EcpUrl-publish/>
@@ -48,15 +48,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt eine partielle URL, die zusammen mit dem Wert zum Generieren einer URL, die verwendet werden können, für den Kalender publishing Einstellungen für den Benutzer Zugriff auf das [EcpUrl (POX)](ecpurl-pox.md) -Element verwendet werden kann. 
+Der Textwert stellt eine partielle URL dar, die mit dem [EcpUrl (POX)](ecpurl-pox.md) -Elementwert kombiniert werden kann, um eine URL zu generieren, die für den Zugriff auf die Kalender Veröffentlichungseinstellungen für den Benutzer verwendet werden kann. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **Veröffentlichen von EcpUrl** -Element ist ein optionales untergeordnetes Element des **Protokoll** -Elements. 
+Das **EcpUrl-Publish-** Element ist ein optionales untergeordnetes Element des **Protocol** -Elements. 
   
 ## <a name="see-also"></a>Siehe auch
 

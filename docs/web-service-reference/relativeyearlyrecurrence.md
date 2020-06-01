@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 25b67876-9979-4a30-a637-357ea10a93b8
-description: Das RelativeYearlyRecurrence-Element wird ein relativer jährliches Serienmuster beschrieben.
-ms.openlocfilehash: ce8d2b134ce1fa34cbce8bd2fa921cab18d908a4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RelativeYearlyRecurrence-Element beschreibt ein relatives jährliches Serienmuster.
+ms.openlocfilehash: 2abe09ddfe52c24211ef5d0a392ddecaf15bf7bf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831057"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456729"
 ---
 # <a name="relativeyearlyrecurrence"></a>RelativeYearlyRecurrence
 
-Das **RelativeYearlyRecurrence** -Element wird ein relativer jährliches Serienmuster beschrieben. 
+Das **RelativeYearlyRecurrence** -Element beschreibt ein relatives jährliches Serienmuster. 
   
 ```xml
 <RelativeYearlyRecurrence>
@@ -44,28 +44,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DaysOfWeek (DayOfWeekType)](daysofweek-dayofweektype.md) <br/> |Beschreibt die Wochentage, die in Artikel Serienmuster verwendet werden.  <br/> |
-|[DayOfWeekIndex](dayofweekindex.md) <br/> |Beschreibt die Woche im Monat in ein jährliches Serienmuster relative verwendet wird.  <br/> |
-|[Month (Element Serie)](month-item-recurrence.md) <br/> |Beschreibt den Monat, wenn eine jährliche Terminserie erfolgt.  <br/> |
+|[DaysOfWeek (dayofweektype)](daysofweek-dayofweektype.md) <br/> |Beschreibt die Wochentage, die in Element Serien Mustern verwendet werden.  <br/> |
+|[DayOfWeekIndex](dayofweekindex.md) <br/> |Beschreibt, welche Woche in einem Monat in einem relativen jährlichen Serienmuster verwendet wird.  <br/> |
+|[Month (Elementserie)](month-item-recurrence.md) <br/> |Beschreibt den Monat, in dem ein jährliches wiederkehrendes Element auftritt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Serieninformationen für wiederkehrende Aufgaben enthält.  <br/> |
-|[Serie (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Das Serienmuster für Kalenderelemente und Besprechungsanfragen enthält.  <br/> |
-|[Standard](standard.md) <br/> |Das Datum und Zeitpunkt der Änderung die Zeit von Sommerzeit auf Normalzeit darstellt.  <br/> |
-|[Sommerzeit](daylight.md) <br/> |Das Datum und Zeitpunkt der Änderung die Zeit von Normalzeit auf Sommerzeit darstellt.  <br/> |
+|[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Enthält Serieninformationen für wiederkehrende Vorgänge.  <br/> |
+|[Serie (serietype)](recurrence-recurrencetype.md) <br/> |Enthält das Serienmuster für Kalenderelemente und Besprechungsanfragen.  <br/> |
+|[Standard](standard.md) <br/> |Stellt das Datum und die Uhrzeit dar, zu der sich die Zeit von Sommerzeit zu Standardzeit ändert.  <br/> |
+|[Sommer](daylight.md) <br/> |Stellt das Datum und die Uhrzeit dar, zu der die Zeit von Standardzeit zu Sommerzeit wechselt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

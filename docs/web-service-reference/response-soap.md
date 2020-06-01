@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 4c2bcdeb-95ce-4ffa-bd83-118af53b534f
-description: Das Antwort-Element enthält die Antwort auf einen GetUserSettings-Vorgang (SOAP), GetDomainSettings-Vorgang (SOAP) oder eine GetFederationInformation-Anforderung (SOAP)-Vorgang.
-ms.openlocfilehash: 240c8e1f904ad685b51c1f657b2bc18e14fd985e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Response-Element enthält die Antwort auf einen GetUserSettings-Vorgang (SOAP), einen GetDomainSettings-Vorgang (SOAP) oder eine SOAP-Anforderung (GetFederationInformation-Vorgang).
+ms.openlocfilehash: 90cb29dd4ce4026211a5b592f149c8190dc81d29
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831179"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456416"
 ---
 # <a name="response-soap"></a>Antwort (SOAP)
 
-Das **Antwort** -Element enthält die Antwort auf eine [GetUserSettings-Vorgang (SOAP)](getusersettings-operation-soap.md), [GetDomainSettings-Vorgang (SOAP)](getdomainsettings-operation-soap.md)oder eine Anforderung [GetFederationInformation-Vorgang (SOAP)](getfederationinformation-operation-soap.md) . 
+Das **Response** -Element enthält die Antwort auf einen [GetUserSettings-Vorgang (](getusersettings-operation-soap.md)SOAP), einen [GetDomainSettings-Vorgang (](getdomainsettings-operation-soap.md)SOAP) oder eine [SOAP-Anforderung (GetFederationInformation-Vorgang](getfederationinformation-operation-soap.md) ). 
   
 ```XML
 <Response>
@@ -41,29 +41,29 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |Stellt einen Fehlercode, der von den AutoErmittlungsdienst zurückgegeben wird.  <br/> |
-|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |Stellt eine Nachricht, die ein Fehlercode zugeordnet ist, die von den AutoErmittlungsdienst zurückgegeben wird.  <br/> |
+|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |Stellt einen Fehlercode dar, der vom AutoErmittlungsdienst zurückgegeben wird.  <br/> |
+|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |Stellt eine Meldung dar, die einem Fehlercode zugeordnet ist, der vom AutoErmittlungsdienst zurückgegeben wird.  <br/> |
 |[UserResponses (SOAP)](userresponses-soap.md) <br/> |Enthält die Konfigurationseinstellungen für jeden angeforderten Benutzer.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUserSettingsResponseMessage (SOAP)](getusersettingsresponsemessage-soap.md) <br/> |Definiert eine Antwort auf eine [GetUserSettingsRequest (SOAP)](getusersettingsrequest-soap.md) <br/> |
-|[GetDomainSettingsResponseMessage (SOAP)](getdomainsettingsresponsemessage-soap.md) <br/> |Definiert eine Antwort auf eine [GetDomainSettingsRequest (SOAP)](getdomainsettingsrequest-soap.md).  <br/> |
-|[GetFederationInformationResponseMessage (SOAP)](getfederationinformationresponsemessage-soap.md) <br/> |Definiert eine Antwort auf eine [GetFederationInformationRequest (SOAP)](getfederationinformationrequest-soap.md).  <br/> |
+|[GetUserSettingsResponseMessage (SOAP)](getusersettingsresponsemessage-soap.md) <br/> |Definiert eine Antwort auf ein [GetUserSettingsRequest (SOAP)](getusersettingsrequest-soap.md) <br/> |
+|[GetDomainSettingsResponseMessage (SOAP)](getdomainsettingsresponsemessage-soap.md) <br/> |Definiert eine Antwort auf ein [GetDomainSettingsRequest (SOAP)](getdomainsettingsrequest-soap.md).  <br/> |
+|[GetFederationInformationResponseMessage (SOAP)](getfederationinformationresponsemessage-soap.md) <br/> |Definiert eine Antwort auf ein [GetFederationInformationRequest (SOAP)](getfederationinformationrequest-soap.md).  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -75,5 +75,5 @@ Keine.
 
 [AutoErmittlung Webdienstverweis für Exchange](autodiscover-web-service-reference-for-exchange.md)
   
-[SOAP-Autodiscover XML-Elemente für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[XML-Elemente der SOAP-AutoErmittlung für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

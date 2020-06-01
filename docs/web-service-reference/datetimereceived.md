@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8f489bd4-2434-4d0a-91fe-1b5ba7eb5765
-description: Das DateTimeReceived-Element darstellt, das Datum und die Uhrzeit, die ein Element in einem Postfach empfangen wurde.
-ms.openlocfilehash: 41f8c67cb5619b258c2190532036a60a523a0ff2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DateTimeReceived-Element stellt das Datum und die Uhrzeit dar, zu denen ein Element in einem Postfach empfangen wurde.
+ms.openlocfilehash: ad57af46b0ff22c42bfa327532d13e79280dd8b0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757861"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456563"
 ---
 # <a name="datetimereceived"></a>DateTimeReceived
 
-Das **DateTimeReceived** -Element darstellt, das Datum und die Uhrzeit, die ein Element in einem Postfach empfangen wurde. 
+Das **DateTimeReceived** -Element stellt das Datum und die Uhrzeit dar, zu denen ein Element in einem Postfach empfangen wurde. 
   
 ```xml
 <DateTimeReceived/>
@@ -59,17 +59,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt die Zeit in der ein Element in einem Postfach empfangen werden. Diese Eigenschaft ist schreibgeschützt.
+Der Wert Text stellt die Zeit dar, zu der ein Element in einem Postfach empfangen wird. Diese Eigenschaft ist schreibgeschützt.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

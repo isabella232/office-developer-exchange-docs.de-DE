@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7ab6edd5-c7ed-4701-8de3-d7dc7ecfa9c2
-description: Das IsReadReceiptRequested-Element gibt an, ob der Absender eines Elements eine lesebestätigung anfordert.
-ms.openlocfilehash: e3db685fc4e72e4332eab4a95afb5f844d04c35e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IsReadReceiptRequested-Element gibt an, ob der Absender eines Elements eine Lesebestätigung anfordert.
+ms.openlocfilehash: ff0c512ef23b315d4de1194432408f5b408029d9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830097"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457788"
 ---
 # <a name="isreadreceiptrequested"></a>IsReadReceiptRequested
 
-Das **IsReadReceiptRequested** -Element gibt an, ob der Absender eines Elements eine lesebestätigung anfordert. 
+Das **IsReadReceiptRequested** -Element gibt an, ob der Absender eines Elements eine Lesebestätigung anfordert. 
   
 ```xml
 <IsReadReceiptRequested/>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -56,23 +56,23 @@ Keine.
 |[ReplyToItem](replytoitem.md) <br/> |Enthält eine Antwort an den Ersteller eines Elements in der Exchange-Speicher.  <br/> |
 |[ReplyAllToItem](replyalltoitem.md) <br/> |Enthält eine Antwort an alle identifizierten Empfänger eines Elements in der Exchange-Speicher.  <br/> |
 |[ForwardItem](forwarditem.md) <br/> |Enthält ein Exchange-Speicher-Element an Empfänger weitergeleitet.  <br/> |
-|[CancelCalendarItem](cancelcalendaritem.md) <br/> |Stellt dar, die alle die Antwort-Objekts verwendet, um eine Besprechung absagen.  <br/> |
+|[CancelCalendarItem](cancelcalendaritem.md) <br/> |Stellt das Response-Objekt dar, das zum Abbrechen einer Besprechung verwendet wird.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass eine lesebestätigung vom Empfänger des Elements angefordert wird. 
+Der Textwert **true** gibt an, dass vom Empfänger des Elements eine Lesebestätigung angefordert wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-**IsReadReceiptRequested** auf **true**festgelegt ist, sendet eine lesebestätigung [IsRead](isread.md) auf **true** festlegen. Der Empfänger kann lesebestätigungen unterdrücken, durch das Senden von [SuppressReadReceipt](suppressreadreceipt.md) -Response-Objekt vor dem Festlegen der **IsRead** -Eigenschaft. 
+Wenn **IsReadReceiptRequested** auf **true**festgelegt ist, wird durch Festlegen von [isread](isread.md) auf **true** eine Lesebestätigung gesendet. Der Empfänger kann Lesebestätigungen unterdrücken, indem er das [SuppressReadReceipt](suppressreadreceipt.md) -Antwortobjekt absendet, bevor die **isread** -Eigenschaft festgesetzt wird. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

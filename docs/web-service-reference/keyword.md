@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c1834b40-ab2a-4c67-a93a-eaadc9523fda
-description: Das Schlüsselwort-Element gibt ein einzelnes Schlüsselwort.
-ms.openlocfilehash: 4f99cb9d6c521ff4083550737b64b77927669aaf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Keyword-Element gibt ein einzelnes Schlüsselwort an.
+ms.openlocfilehash: cdb944aa7b5a8335d840555400381f1d863ded82
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830188"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458103"
 ---
 # <a name="keyword"></a>Schlüsselwort
 
-Das **Schlüsselwort** -Element gibt ein einzelnes Schlüsselwort. 
+Das **Keyword** -Element gibt ein einzelnes Schlüsselwort an. 
   
 ```XML
 <Keyword></Keyword>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **Schlüsselwort** -Element ist der Name der ein einzelnes Schlüsselwort, das eine einzelnes Schlüsselwort Statistik darstellt. 
+Der Textwert des **Schlüsselwort** Elements ist der Name eines einzelnen Schlüsselworts, das eine einzelne schlüsselwortstatistik darstellt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

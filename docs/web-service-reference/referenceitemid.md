@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8fd4bb12-a94b-43f5-be3b-f435684e311d
-description: Das ReferenceItemId-Element identifiziert das Element auf dem im Response-Objekt verweist.
-ms.openlocfilehash: d29f2dfec8f2c23fe0ac8c84d2bb9029fce613d2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ReferenceItemId-Element identifiziert das Element, auf das das Response-Objekt verweist.
+ms.openlocfilehash: 3b77d75de91af8ec8fb7ae2d507377d1d976febf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831032"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457228"
 ---
 # <a name="referenceitemid"></a>ReferenceItemId
 
-Das **ReferenceItemId** -Element identifiziert das Element auf dem im Response-Objekt verweist. 
+Das **ReferenceItemId** -Element identifiziert das Element, auf das das Response-Objekt verweist. 
   
 ```xml
 <ReferenceItemId Id="" ChangeKey="" />
 ```
 
- **ItemIdType**
+ **Itemidtype**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -36,8 +36,8 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Id** <br/> |Gibt ein bestimmtes Element in der Exchange-Speicher.  <br/> |
-|**ChangeKey** <br/> |Identifiziert eine bestimmte Version eines Elements an.  <br/> |
+|**Id** <br/> |Identifiziert ein bestimmtes Element in der Exchange-Informationsspeicher.  <br/> |
+|**ChangeKey** <br/> |Gibt eine bestimmte Version eines Elements an.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -48,25 +48,25 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[AcceptItem](acceptitem.md) <br/> |Stellt eine Accept-Antwort auf eine Besprechungsanfrage.  <br/> |
-|[AcceptSharingInvitation](acceptsharinginvitation.md) <br/> |Stellt eine Accept-Antwort auf eine freigabeeinladung dar.  <br/> |
+|[AcceptSharingInvitation](acceptsharinginvitation.md) <br/> |Stellt eine Annahme Antwort auf eine Freigabeeinladung dar.  <br/> |
 |[CancelCalendarItem](cancelcalendaritem.md) <br/> |Stellt das Antwortobjekt, das Sie eine Besprechung absagen verwendet wird.  <br/> |
 |[DeclineItem](declineitem.md) <br/> |Stellt eine ablehnen Antwort auf eine Besprechungsanfrage.  <br/> |
 |[ForwardItem](forwarditem.md) <br/> |Enthält ein Exchange-Speicher-Element an Empfänger weitergeleitet.  <br/> |
 |[RemoveItem](removeitem.md) <br/> |Entfernt ein Element aus dem Exchange-Informationsspeicher.  <br/> |
 |[ReplyAllToItem](replyalltoitem.md) <br/> |Enthält eine Antwort an alle identifizierten Empfänger eines Elements in der Exchange-Speicher.  <br/> |
 |[ReplyToItem](replytoitem.md) <br/> |Enthält eine Antwort an den Ersteller eines Elements in der Exchange-Speicher.  <br/> |
-|[SuppressReadReceipt](suppressreadreceipt.md) <br/> |Verwendet, um zum Lesen von bestätigungsanforderungen reagieren.  <br/> |
+|[SuppressReadReceipt](suppressreadreceipt.md) <br/> |Wird verwendet, um auf Lese Bestätigungsanforderungen zu reagieren.  <br/> |
 |[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |Stellt eine mit Vorbehalt Antworten auf eine Besprechungsanfrage.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle IIS-Verzeichnis, dass Hosts Exchange-Webdienste des Computers, auf dem Microsoft Exchange Server ausgeführt wird die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, in dem Exchange Webdienste des Computers gehostet wird, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

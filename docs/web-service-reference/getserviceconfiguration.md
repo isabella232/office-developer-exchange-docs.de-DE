@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: acbb29e4-d853-4302-8e32-7018775d54e4
 description: Das GetServiceConfiguration-Element definiert eine GetServiceConfiguration-Anforderung.
-ms.openlocfilehash: 7ff7124ff062f21a02fc69b86b7cc7367ba3fcb6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: e9357a9e3be22e129c4910c01231f9dbd22a2dbe
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829666"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457872"
 ---
 # <a name="getserviceconfiguration"></a>GetServiceConfiguration
 
@@ -43,8 +43,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ActingAs](actingas.md) <br/> |Identifiziert, die der Anrufer als sendet. Dieses Element ist optional. Wenn dieses Element nicht vorhanden ist, wird davon ausgegangen, dass der authentifizierte Benutzer die Absender werden. Das **ActingAs** -Element muss für die Anforderung des Absenders Hinweise eingeschlossen werden. Fehler ErrorInvalidArgument kann in einer Antwort zurückgegeben werden soll, wenn das **ActingAs** -Element nicht vorhanden ist, enthält keine Routingtyp, eine e-Mail-Adresse nicht umfasst, eine ungültige e-Mail-Adresse enthält, nicht an einen Benutzer in Active Directory-Domäne löst Services (AD DS), oder auf mehrere Benutzer in AD DS aufgelöst wird.  <br/> |
-|[RequestedConfiguration](requestedconfiguration.md) <br/> |Enthält die Konfigurationen für den angeforderten Dienst. Dieses Element ist erforderlich.  <br/> |
+|[Actingies](actingas.md) <br/> |Gibt an, wen der Anrufer sendet. Dieses Element ist optional. Wenn dieses Element nicht vorhanden ist, wird der authentifizierte Benutzer als Absender angenommen. Das **actings** -Element muss enthalten sein, um Absender Hinweise anzufordern. Ein ErrorInvalidArgument-Fehler kann in einer Antwort zurückgegeben werden, wenn das **actings** -Element fehlt, keinen Routingtyp enthält, keine e-Mail-Adresse enthält, eine ungültige e-Mail-Adresse auflöst, für einen Benutzer in Active Directory-Domänendienste (AD DS) nicht aufgelöst wird oder in AD DS in mehrere Benutzer aufgelöst wird.  <br/> |
+|[RequestedConfiguration](requestedconfiguration.md) <br/> |Enthält die angeforderten Dienstkonfigurationen. Dieses Element ist erforderlich.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -54,17 +54,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

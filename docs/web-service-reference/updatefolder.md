@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 412d0683-2819-40c5-a0ae-f613499a7b66
-description: Das Element UpdateFolder stellt die Operation, die verwendet wird, um Eigenschaften für einen angegebenen Ordner zu aktualisieren.
-ms.openlocfilehash: 9a86bf6b3b5917600b3b09f23b3ee4e9cdc0364f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UpdateFolder-Element stellt den Vorgang dar, der zum Aktualisieren der Eigenschaften für einen angegebenen Ordner verwendet wird.
+ms.openlocfilehash: 124ffd02a5ea2e7bf6f21cc7009dde08837906f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839349"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457046"
 ---
 # <a name="updatefolder"></a>UpdateFolder
 
-Das Element **UpdateFolder** stellt die Operation, die verwendet wird, um Eigenschaften für einen angegebenen Ordner zu aktualisieren. 
+Das **UpdateFolder** -Element stellt den Vorgang dar, der zum Aktualisieren der Eigenschaften für einen angegebenen Ordner verwendet wird. 
   
 ```xml
 <UpdateFolder>
@@ -48,17 +48,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

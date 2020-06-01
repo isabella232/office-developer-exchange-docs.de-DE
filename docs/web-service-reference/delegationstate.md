@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9dbb83ed-1ded-48f3-8e06-2489fc8b28d5
-description: DelegationState-Element stellt den Status eines delegierten Vorgangs.
-ms.openlocfilehash: 00b0e41ae223f1c70f9a3a21662e8858f8690a86
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DelegationState-Element stellt den Status einer Delegierten Aufgabe dar.
+ms.openlocfilehash: b938b5a2240283c265006dd47cd6ff475ad80978
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757898"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457368"
 ---
 # <a name="delegationstate"></a>DelegationState
 
-**DelegationState** -Element stellt den Status eines delegierten Vorgangs. 
+Das **DelegationState** -Element stellt den Status einer Delegierten Aufgabe dar. 
   
 ```xml
 <DelegationState/>
@@ -55,7 +55,7 @@ Dies ist eine schreibgeschützte Eigenschaft. Im Folgenden sind die möglichen W
     
 - OwnNew
     
-- Gehören
+- Im Besitz
     
 - Akzeptiert
     
@@ -63,17 +63,17 @@ Dies ist eine schreibgeschützte Eigenschaft. Im Folgenden sind die möglichen W
     
 - Max
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Exchange-Webdiensten in Microsoft Exchange Server 2007 unterstützt keine vorgangszuordnungen.
+Exchange Webdienste in Microsoft Exchange Server 2007 unterstützt keine Vorgangszuordnungen.
   
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Exchange 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange 2007 ausgeführt wird, auf dem die Client Zugriffs-Serverrolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

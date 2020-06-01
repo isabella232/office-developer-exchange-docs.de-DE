@@ -1,5 +1,5 @@
 ---
-title: Dauer (' UserOofSettings ')
+title: Dauer (UserOofSettings)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 01d67af3-658e-4acd-93e3-441ae827fdd3
-description: Das Dauer-Element gibt die Dauer, die außerhalb der Abwesenheitsstatus (OOF) aktiviert ist, wenn das Element OofState auf geplante Tasks festgelegt ist.
-ms.openlocfilehash: 62a5492372fd80173d58e965376b7c8c466825a6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Duration-Element gibt die Dauer an, für die der Abwesenheitsstatus aktiviert ist, wenn das OofState-Element auf Scheduled festgelegt ist.
+ms.openlocfilehash: 0ba0f1ea7498781c0cccb072c7ea0fa05414764c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758119"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457298"
 ---
-# <a name="duration-useroofsettings"></a>Dauer (' UserOofSettings ')
+# <a name="duration-useroofsettings"></a>Dauer (UserOofSettings)
 
-Das **Dauer** -Element gibt die Dauer, die außerhalb der Abwesenheitsstatus (OOF) aktiviert ist, wenn das Element [OofState](oofstate.md) **geplant**festgelegt ist.
+Das **Duration** -Element gibt die Dauer an, für die der Abwesenheitsstatus aktiviert ist, wenn das [OofState](oofstate.md) -Element auf **Scheduled**festgelegt ist.
   
 ```XML
 <Duration>
@@ -43,38 +43,38 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StartTime](starttime.md) <br/> |Stellt den Anfang des Zeitraums mit dem Abwesenheitsstatus in festgelegt. Dieses Element ist erforderlich.  <br/> |
-|[EndTime](endtime.md) <br/> |Stellt das Ende der Zeitspanne, die mit dem Abwesenheitsstatus in festgelegt. Dieses Element ist erforderlich.  <br/> |
+|[StartTime](starttime.md) <br/> |Stellt den Anfang der Zeitspanne fest, die mit einem Abwesenheitsstatus festgelegt wurde. Dieses Element ist erforderlich.  <br/> |
+|[EndTime](endtime.md) <br/> |Stellt das Ende der Zeitspanne fest, die mit einem Abwesenheitsstatus festgelegt wurde. Dieses Element ist erforderlich.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[' UserOofSettings '](useroofsettings.md) <br/> |Gibt die OOF-Einstellungen.  <br/><br/>Es folgt der XPath-Ausdruck, der dieses Element:<br/><br/>`/SetUserOofSettingsRequest/UserOofSettings` <br/> |
-|[OofSettings](oofsettings.md) <br/> |Enthält die OOF-Einstellungen.<br/><br/>Es folgt der XPath-Ausdruck, der dieses Element:<br/><br/>`/GetUserOofSettingsResponse/OofSettings` <br/> |
-|[OutOfOffice](outofoffice.md) <br/> |Definiert die Antwortnachricht Out of Office (ABWESEND) und eine Dauer für das Senden der Antwortnachricht für ein Postfach.  <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |Gibt die Abwesenheitseinstellungen an.  <br/><br/>Für dieses Element wird folgender XPath-Ausdruck verwendet: <br/><br/>`/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[OofSettings](oofsettings.md) <br/> |Enthält die OOF-Einstellungen.<br/><br/>Für dieses Element wird folgender XPath-Ausdruck verwendet: <br/><br/>`/GetUserOofSettingsResponse/OofSettings` <br/> |
+|[OutOfOffice](outofoffice.md) <br/> |Definiert die Abwesenheit (Out of Office, OOF) Antwortnachricht und eine Dauer für das Senden der Antwortnachricht für ein Postfach.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **Dauer** ist auch der Typ für die Elemente [DetailedSuggestionsWindow](detailedsuggestionswindow.md) [Zeitfenster](timewindow.md)und [OutOfOffice](outofoffice.md) . 
+Der Typ Duration ist auch der Typ für die Elemente [DetailedSuggestionsWindow](detailedsuggestionswindow.md), **Zeit** [Fenster](timewindow.md)und [OutOfOffice](outofoffice.md) . 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird eine Anforderung [SetUserOofSettings Vorgang](setuseroofsettings-operation.md) legt die [OofState](oofstate.md) auf **aktiviert**, die internen und externen OOF-Nachrichten und die Dauer der OOF für 10 Tage.
+Im folgenden Beispiel einer [SetUserOofSettings-Vorgangs](setuseroofsettings-operation.md) Anforderung wird die [OofState](oofstate.md) auf **Enabled**, die internen und externen Abwesenheitsnachrichten festgelegt und die Dauer von OOF für 10 Tage festgelegt.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -94,11 +94,11 @@ Im folgenden Beispiel wird eine Anforderung [SetUserOofSettings Vorgang](setuser
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

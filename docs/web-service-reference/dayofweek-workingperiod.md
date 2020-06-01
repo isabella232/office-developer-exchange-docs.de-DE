@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7a8a8cc1-392b-4db5-bb76-710477e31396
-description: DayOfWeek-Element enthält die Liste von Arbeitstagen für den Postfachbenutzer geplant.
-ms.openlocfilehash: a6a68017291ba13f45b3970307669222d583fcbb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DayOfWeek-Element enthält die Liste der Arbeitstage, die für den Postfachbenutzer geplant sind.
+ms.openlocfilehash: 06d4a7d5541b3b71fcbf9be9beb7512d06853283
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757884"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457445"
 ---
 # <a name="dayofweek-workingperiod"></a>DayOfWeek (WorkingPeriod)
 
-**DayOfWeek** -Element enthält die Liste von Arbeitstagen für den Postfachbenutzer geplant. 
+Das **DayOfWeek** -Element enthält die Liste der Arbeitstage, die für den Postfachbenutzer geplant sind. 
   
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)  
 - [FreeBusyResponseArray](freebusyresponsearray.md)  
@@ -54,11 +54,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[WorkingPeriod](workingperiod.md) <br/> |Enthält die Arbeitswoche Tage und Stunden des Postfachbenutzers.<br/><br/>Es folgt der XPath-Ausdruck, der dieses Element:<br/><br/>`/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/WorkingPeriodArray/WorkingPeriod[i[` <br/> |
+|[WorkingPeriod](workingperiod.md) <br/> |Enthält die Arbeitswochen Tage und Stunden des Postfachbenutzers.<br/><br/>Für dieses Element wird folgender XPath-Ausdruck verwendet: <br/><br/>`/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/WorkingPeriodArray/WorkingPeriod[i[` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert wird zurückgegeben, wenn der Postfachbenutzer Tage, die zur Darstellung der Arbeitswoche festgelegt hat. Es folgen die möglichen Werte für dieses Element:
+Ein Textwert wird zurückgegeben, wenn der Postfachbenutzer Tage festgelegt hat, um die Arbeitswoche darzustellen. Im folgenden sind die möglichen Werte für dieses Element angegeben:
   
 - Sonntag    
 - Montag    
@@ -68,19 +68,19 @@ Ein Textwert wird zurückgegeben, wenn der Postfachbenutzer Tage, die zur Darste
 - Freitag    
 - Samstag 
     
-Die Textwerte werden in dieser Reihenfolge zurückgegeben.
+Die Text Werte werden in dieser Reihenfolge zurückgegeben.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Es ist wichtig, beachten Sie, dass der Unterschied zwischen diesem Element und der Verfügbarkeit [(TimeZone) DayOfWeek](dayofweek-timezone.md) -Element der Typ ist. 
+Beachten Sie, dass der Unterschied zwischen diesem Element und dem Element der Verfügbarkeit [DayOfWeek (TimeZone)](dayofweek-timezone.md) der Typ ist. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -89,5 +89,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)  
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
-- [Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

@@ -1,5 +1,5 @@
 ---
-title: CChkSGFiles.PAGE_INFO-Struktur
+title: CChkSGFiles. PAGE_INFO-Struktur
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,19 +11,19 @@ api_name:
 api_type:
 - dllExport
 ms.assetid: 408335e1-6977-441f-bfad-ede791d1630c
-description: 'Zuletzt geändert: 22 Februar 2013'
-ms.openlocfilehash: fa66d253b4fc6bd5c29a39c5323f59bf323a906f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 'Letzte Änderung: 22. Februar 2013'
+ms.openlocfilehash: 5ec9f4303b26ea95b125adac6943945ae1276439
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757743"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456339"
 ---
-# <a name="cchksgfilespageinfo-struct"></a>CChkSGFiles.PAGE_INFO-Struktur
+# <a name="cchksgfilespage_info-struct"></a>CChkSGFiles. PAGE_INFO-Struktur
 
 **Gilt für:** Exchange Server 2003 | Exchange Server 2007 | Exchange Server 2010 | Exchange Server 2013
   
-Enthält Informationen für eine Exchange-Datenbank-Seite. Diese Struktur wird mit der **ErrCheckDbPages** -Funktion verwendet. 
+Speichert Informationen für eine Exchange-Datenbankseite. Diese Struktur wird mit der **ErrCheckDbPages** -Funktion verwendet. 
   
 ```cs
 Struct PAGE_INFO  
@@ -44,46 +44,46 @@ Struct PAGE_INFO
 
 ### <a name="ulpgno"></a>ulPgNo
   
-Nicht signierte lange. Logische Seitenzahl der Datenbankseite überprüft werden soll. Dieser Wert muss vor dem Aufruf von **ErrCheckDbPages**festgelegt werden. Wenn die Anwendung die Datei basierend auf Datei Offsets liest und muss daher diese Datei Offsets auf logische Seitenzahlen zuordnen, finden Sie die **PgnoFromFileOffset** -Methode hilfreich sein, die den Wert für dieses Feld zu ermitteln. Dieser Wert **ErrCheckDbPages** nicht geändert. 
+Lange ohne Vorzeichen. Logische Seitenzahl der zu überprüfenden Datenbankseite. Dieser Wert muss festgelegt werden, bevor **ErrCheckDbPages**aufgerufen wird. Wenn die Anwendung die Datei auf der Grundlage von Datei Offsets liest und diese Datei Offsets daher logischen Seitenzahlen zuordnen muss, finden Sie die **PgnoFromFileOffset** -Methode hilfreich, um den Wert für dieses Feld zu ermitteln. Dieser Wert wird von **ErrCheckDbPages** nicht geändert. 
     
 ### <a name="fpageisinitialized"></a>fPageIsInitialized 
   
-Boolean-Wert. TRUE gibt an, dass die Datenbankseite Daten enthält. Der Wert FALSE gibt an, dass die Seite nur Nullen enthält. **ErrCheckDbPages** legt diesen Wert fest. 
+Boolean. Der Wert true gibt an, dass die Datenbankseite Daten enthält. Der Wert false gibt an, dass die Seite nur Nullen enthält. **ErrCheckDbPages** legt diesen Wert fest. 
     
 ### <a name="fcorrectableerror"></a>fCorrectableError
   
-Boolean-Wert. Der Wert TRUE gibt an, dass es einer Nichtübereinstimmung der Prüfsumme der Seite Datenbank erkannt wurde, aber es einen behebbaren Fehler ist. **ErrCheckDbPages** legt diesen Wert fest. 
+Boolean. Der Wert true gibt an, dass auf der Datenbankseite ein Prüfsummen Konflikt festgestellt wurde, dass es sich jedoch um einen korrigierbaren Fehler handelt. **ErrCheckDbPages** legt diesen Wert fest. 
     
 ### <a name="checksumactual"></a>checksumActual
   
-64-Bit-Ganzzahl ohne Vorzeichen. Gibt den Prüfsummenwert in der Datenbank für diese logische Seite gespeichert. **ErrCheckDbPages** legt diesen Wert fest. 
+Vorzeichenlose 64-Bit-Ganzzahl. Gibt den in der Datenbank für diese logische Seite gespeicherten Prüfsummenwert an. **ErrCheckDbPages** legt diesen Wert fest. 
     
 ### <a name="checksumexpected"></a>checksumExpected
   
-64-Bit-Ganzzahl ohne Vorzeichen. Dies ist der erwartete Prüfsumme-Wert, der für die Datenbankseite berechnet wird. Es wird vom **ErrCheckDbPages**festgelegt. Wenn dieser Wert unterscheiden, die auf der Datenbankseite gespeichert ist (d. h., der Rückgabewert in **ChecksumActual**), **ErrCheckDbPages** werden anzugeben, dass ein Fehler auf dieser Datenbankseite gefunden wurde. 
+Vorzeichenlose 64-Bit-Ganzzahl. Dies ist der erwartete Prüfsummenwert, der für die Datenbankseite berechnet wird; Sie wird von **ErrCheckDbPages**festgelegt. Wenn sich dieser Wert von dem auf der Datenbankseite (also dem in **checksumActual**zurückgegebenen Wert) unterscheidet, gibt **ErrCheckDbPages** an, dass auf dieser Datenbankseite ein Fehler gefunden wurde. 
     
-### <a name="dbtime"></a>Zeitpunkt
+### <a name="dbtime"></a>dbTime
   
-64-Bit-Ganzzahl ohne Vorzeichen. **ErrCheckDbPages** wird dieser Member auf den Zeitstempel auf der Datenbankseite. 
+Vorzeichenlose 64-Bit-Ganzzahl. **ErrCheckDbPages** legt dieses Element auf den Zeitstempel auf der Datenbankseite fest. 
     
 ### <a name="checksumpagestructure"></a>checksumPageStructure 
   
-64-Bt-Ganzzahl ohne Vorzeichen. **ErrCheckDbPages** wird dieser Member auf den Wert berechnete Prüfsumme des Inhalts der Seite Ausschließen von Daten, die nicht erforderlich ist, wenn die logische Seite Gleichwertigkeit bestimmen. Beispielsweise ist es nicht erforderlich, die Datenwerte in nicht verwendeten Seite Datenbankspeicherplatzes berücksichtigt werden sollten. Dieser Member ist nur gültig, wenn die Werte **ChecksumActual** und **ChecksumExpected** entsprechen. 
+Unsigned 64-BT Integer. **ErrCheckDbPages** legt dieses Element auf den berechneten Prüfsummenwert des Inhalts der Seite mit Ausnahme von Daten fest, die bei der Bestimmung der Äquivalenz der logischen Seite nicht erforderlich sind. Beispielsweise ist es nicht erforderlich, die Datenwerte in nicht verwendeten Datenbankseiten zu überprüfen. Dieser Member ist nur gültig, wenn die **checksumActual** -und **checksumExpected** -Werte einander gleich sind. 
     
 ### <a name="ulflags"></a>ulFlags
   
-64-Bit-Ganzzahl ohne Vorzeichen. Reserviert für zukünftige Verwendung. Der Wert dieses Felds muss vor dem Aufruf von **ErrCheckDbPages**auf 0 (null) festgelegt werden.
+Vorzeichenlose 64-Bit-Ganzzahl. Reserviert für zukünftige Verwendung. Der Wert dieses Felds muss auf 0 (null) festgelegt werden, bevor **ErrCheckDbPages**aufgerufen wird.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Beim Aufruf der Funktion **ErrCheckDbPages** der **RgPageInfo** -Parameter ist ein Array von **Seite\_INFO** Strukturen. Es muss eine **Seite\_INFO** Struktur für jede Datenbankseite überprüft werden soll. 
+Beim Aufrufen der **ErrCheckDbPages** -Funktion ist der **rgPageInfo** -Parameter ein Array von **Seiten \_ Info** Strukturen. Es muss eine **Seiten \_ Info** Struktur für jede zu überprüfende Datenbankseite geben. 
   
-Die Anwendung den **UlPgno** Member muss auf den korrekten Wert festgelegt, und den **UlFlags** Member muss auch auf 0 (null) festgelegt werden, bevor **ErrCheckDbPages**aufgerufen. 
+Die Anwendung muss das **ulPgno** -Element auf den richtigen Wert festlegen und das **ulFlags** -Element auch auf 0 (null) festlegen, bevor **ErrCheckDbPages**aufgerufen wird. 
   
 ## <a name="requirements"></a>Anforderungen
 
 Exchange Server 2013 enthält nur eine 64-Bit-Version der CHKSGFILES-API.
   
-Das Konto, unter die Anwendung ausgeführt wird, benötigen Lesezugriff auf die Datenbank und die Protokolldateien, die überprüft werden sollen.
+Das Konto, unter dem die Anwendung betrieben wird, muss über Lesezugriffsberechtigungen für die zu überprüfenden Datenbank-und Protokolldateien verfügen.
   
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3395db81-fb2f-4951-8986-80b62e05432f
-description: Der Vorgang GetMessageTrackingReport Ruft Informationen zu den angegebenen Nachrichten nachverfolgen.
-ms.openlocfilehash: 0e2e26c2bbe98aff75817ab24f413b7f975e145a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetMessageTrackingReport-Vorgang ruft Nachverfolgungsinformationen zu den angegebenen Nachrichten ab.
+ms.openlocfilehash: 4ef5cae456455a441f38956e99b9982fc638ab66
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758733"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456556"
 ---
 # <a name="getmessagetrackingreport-operation"></a>GetMessageTrackingReport-Vorgang
 
-Der Vorgang **GetMessageTrackingReport** Ruft Informationen zu den angegebenen Nachrichten nachverfolgen. 
+Der **GetMessageTrackingReport** -Vorgang ruft Nachverfolgungsinformationen zu den angegebenen Nachrichten ab. 
   
 ## <a name="see-also"></a>Siehe auch
 

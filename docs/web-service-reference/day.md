@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d3b2dc66-486a-41d1-bff3-606f0bf92715
-description: Das Day-Element stellt den Tag des Monats auf der erfolgt der Übergang zur Zeitzone.
-ms.openlocfilehash: 01d1bf7833a89c0bb9a2b1af95ec8dfc627336d9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Day-Element stellt den Tag des Monats dar, in dem der Zeitzonenübergang erfolgt.
+ms.openlocfilehash: 8ee5ed2e996a6a4b84648df41faf2718784b9d30
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757872"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457480"
 ---
 # <a name="day"></a>Tag
 
-Das **Day** -Element stellt den Tag des Monats auf der erfolgt der Übergang zur Zeitzone. 
+Das **Day** -Element stellt den Tag des Monats dar, in dem der Zeitzonenübergang erfolgt. 
   
 ```xml
 <Day/>
@@ -45,21 +45,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RecurringDateTransition](recurringdatetransition.md) <br/> |Stellt einen Zeitzone Übergang dar, der einem bestimmten Datum pro Jahr auftritt.  <br/> |
+|[RecurringDateTransition](recurringdatetransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der jedes Jahr an einem bestimmten Datum auftritt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **Day** -Element ist eine ganze Zahl, die den Tag des Monats darstellt, auf dem der Übergang zur Zeitzone auftritt. 
+Der Textwert des **Day** -Elements ist eine ganze Zahl, die den Tag des Monats darstellt, in dem der Zeitzonenübergang erfolgt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

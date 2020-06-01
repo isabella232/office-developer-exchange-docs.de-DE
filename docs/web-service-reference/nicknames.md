@@ -1,5 +1,5 @@
 ---
-title: Spitznamen
+title: Nicknames
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bbafce39-7fc6-4099-bc27-b40c0ad44c77
-description: Das Spitznamen-Element gibt ein Array von Werten für Spitznamen und die Bezeichner der ihre Marken Quelle für die zugeordneten Rolle.
-ms.openlocfilehash: e798ce082da2ca963b4ef78a4f462a996bdff4df
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Nicknames-Element gibt ein Array von Nickname-Werten und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an.
+ms.openlocfilehash: c6b7de5e1c93797603a2950b4a9527c5d370f93d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830536"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457774"
 ---
-# <a name="nicknames"></a>Spitznamen
+# <a name="nicknames"></a>Nicknames
 
-Das **Spitznamen** -Element gibt ein Array von Werten für Spitznamen und die Bezeichner der ihre Marken Quelle für die zugeordneten Rolle. 
+Das **Nicknames** -Element gibt ein Array von Nickname-Werten und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an. 
   
 ```XML
 <Nicknames>
@@ -41,19 +41,19 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Rolle](persona.md)
+[Persona](persona.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

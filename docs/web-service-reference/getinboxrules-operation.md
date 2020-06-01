@@ -11,31 +11,31 @@ api_name:
 api_type:
 - schema
 ms.assetid: b4b2701a-4a23-4acc-8c75-19f7955ad7ae
-description: Der Vorgang GetInboxRules werden Exchange-Webdienste Posteingangsregeln in das identifizierte Postfach des Benutzers abgerufen.
-ms.openlocfilehash: f8a5068b1f189cc6fd5feef6dfec29204a0b8887
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetInboxRules-Vorgang verwendet Exchange Webdienste zum Abrufen von Posteingangsregeln im Postfach des identifizierten Benutzers.
+ms.openlocfilehash: f4c4c03f55c9f32be4a067024f4387888edd5fe9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758698"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457935"
 ---
 # <a name="getinboxrules-operation"></a>GetInboxRules-Vorgang
 
-Der Vorgang **GetInboxRules** werden Exchange-Webdienste Posteingangsregeln in das identifizierte Postfach des Benutzers abgerufen. 
+Der **GetInboxRules** -Vorgang verwendet Exchange Webdienste zum Abrufen von Posteingangsregeln im Postfach des identifizierten Benutzers. 
   
-## <a name="getinboxrules-request-example"></a>Anforderungsbeispiel GetInboxRules
+## <a name="getinboxrules-request-example"></a>GetInboxRules-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt die Anforderung XML, das der Client an den Server sendet. Die Anforderung identifiziert den Benutzer im [MailboxSmtpAddress](mailboxsmtpaddress.md) -Element. Alle Posteingangsregeln für den identifizierten Benutzer sind in der Antwort zurückgegeben werden soll. 
+Das folgende Beispiel zeigt den Anforderungs-XML-Code, den der Client an den Server sendet. Die Anforderung identifiziert den Benutzer im [MailboxSmtpAddress](mailboxsmtpaddress.md) -Element. Alle Posteingangsregeln für den identifizierten Benutzer werden in der Antwort zurückgegeben. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+        xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
         xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010_SP1" />
@@ -54,14 +54,14 @@ Die Anforderung enthält das folgende optionale Element:
   
 - [MailboxSmtpAddress](mailboxsmtpaddress.md)
     
-## <a name="successful-getinboxrules-response-example"></a>Erfolgreiche GetInboxRules antwortbeispiel
+## <a name="successful-getinboxrules-response-example"></a>Erfolgreiches GetInboxRules-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende (SOAP = Simple Object Access Protocol)-Body-Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **GetInboxRules** . In diesem Beispiel enthält die Antwort eine Regel. 
+Das folgende Simple Object Access Protocol (SOAP) Body-Beispiel zeigt eine erfolgreiche Antwort auf die **GetInboxRules** -Anforderung. In diesem Beispiel enthält die Antwort eine Regel. 
   
 > [!NOTE]
-> Die Werte der **Id** und die **ChangeKey** Attribute des Elements [FolderId](folderid.md) wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Werte der ID und der **ChangeKey** -Attribute des [Folder](folderid.md) **-ID** -Elements wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ### <a name="code"></a>Code
 
@@ -73,19 +73,19 @@ Das folgende (SOAP = Simple Object Access Protocol)-Body-Beispiel zeigt eine erf
         MinorVersion="1" MajorBuildNumber="139"
         MinorBuildNumber="0"
         Version="Exchange2010_SP1"
-        xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-        xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+        xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+        xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <GetInboxRulesResponse ResponseClass="Success"
-        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <OutlookRuleBlobExists>true</OutlookRuleBlobExists>
       <InboxRules>
-        <Rule xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <Rule xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <RuleId>dCsAAABjzvA=</RuleId>
           <DisplayName>MoveInterestingToJunk</DisplayName>
           <Priority>1</Priority>
@@ -107,9 +107,9 @@ Das folgende (SOAP = Simple Object Access Protocol)-Body-Beispiel zeigt eine erf
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a>Antwortelemente
+### <a name="response-elements"></a>Response-Elemente
 
-Die folgenden Elemente werden in der Antwort enthalten:
+Die Antwort enthält die folgenden Elemente:
   
 - [GetInboxRulesResponse](getinboxrulesresponse.md)
     

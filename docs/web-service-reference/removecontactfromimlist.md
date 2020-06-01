@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 41a7c520-a9ce-4548-9ff7-0ac756523d65
-description: Das Element RemoveContactFromImList stellt eine Anforderung zum Entfernen einer Instant messaging-Kontakt aus allen Gruppen für instant messaging.
-ms.openlocfilehash: c98b44ba829137006c9aeb231e3f3439deec4687
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RemoveContactFromImList-Element stellt eine Anforderung zum Entfernen eines sofortnachrichtenkontakts aus allen Chatgruppen dar.
+ms.openlocfilehash: 192f3d28f5f5004300b6b3f2dfcaebf1f3225e76
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831078"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458460"
 ---
 # <a name="removecontactfromimlist"></a>RemoveContactFromImList
 
-Das Element **RemoveContactFromImList** stellt eine Anforderung zum Entfernen einer Instant messaging-Kontakt aus allen Gruppen für instant messaging. 
+Das **RemoveContactFromImList** -Element stellt eine Anforderung zum Entfernen eines sofortnachrichtenkontakts aus allen Chatgruppen dar. 
   
 ```XML
 <RemoveContactFromImList>
@@ -42,19 +42,19 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

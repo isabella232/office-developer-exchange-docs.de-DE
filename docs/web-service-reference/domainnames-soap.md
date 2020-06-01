@@ -1,22 +1,22 @@
 ---
-title: DomainNames (SOAP)
+title: Domainnamen (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 79ffc3f9-25c4-40b5-84ce-09a3c5f892fa
-description: Das Element DomainNames stellt die Domain Names-Auflistung dar. Das DomainNames-Element ist nur zur internen Verwendung. Dieses Element wird von Clients nicht verwendet.
-ms.openlocfilehash: 45d256f3d5a57028a04572ad67d4be0786ca39e7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Domainnamen-Element stellt die Domain Names-Auflistung dar. Das Domainnamen-Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet.
+ms.openlocfilehash: 0b425b3cd4c0e7cb2427920d61feb04010a3b123
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758089"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458418"
 ---
-# <a name="domainnames-soap"></a>DomainNames (SOAP)
+# <a name="domainnames-soap"></a>Domainnamen (SOAP)
 
-Das Element **DomainNames** stellt die Domain Names-Auflistung dar. Das **DomainNames** -Element ist nur zur internen Verwendung. Dieses Element wird von Clients nicht verwendet. 
+Das **Domainnamen** -Element stellt die Domain Names-Auflistung dar. Das **Domainnamen** -Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet. 
   
 ```XML
 <DomainNames>
@@ -24,7 +24,7 @@ Das Element **DomainNames** stellt die Domain Names-Auflistung dar. Das **Domain
 </DomainNames>
 ```
 
- **DomainNames**
+ **Domainnamen**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -37,29 +37,29 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Domänen (SOAP)](domains-soap.md) <br/> |Stellt eine Sammlung von Domänen, die von den [GetDomainSettings-Vorgang (SOAP)](getdomainsettings-operation-soap.md), [GetFederationInformation-Vorgang (SOAP)](getfederationinformation-operation-soap.md)oder den [GetOrganizationRelationshipSettings-Vorgang (SOAP)](getorganizationrelationshipsettings-operation-soap.md)zurückgegeben werden.  <br/> |
+|[Domänen (SOAP)](domains-soap.md) <br/> |Stellt eine Auflistung von Domänen dar, die vom [GetDomainSettings-Vorgang (](getdomainsettings-operation-soap.md)SOAP), [GetFederationInformation-Vorgang (](getfederationinformation-operation-soap.md)SOAP) oder dem [GetOrganizationRelationshipSettings-Vorgang (SOAP)](getorganizationrelationshipsettings-operation-soap.md)zurückgegeben werden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste von organisationsbeziehungen für eine einzelne Organisation.  <br/> |
+|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste von Organisationsbeziehungen für eine einzelne Organisation dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element stellt die SMTP-Domänen der externen Organisationen.
+Dieses Element stellt die SMTP-Domänen der externen Organisationen dar.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

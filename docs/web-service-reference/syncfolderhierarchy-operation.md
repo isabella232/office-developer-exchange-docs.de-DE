@@ -11,35 +11,35 @@ api_name:
 api_type:
 - schema
 ms.assetid: b31916b1-bc6c-4451-a475-b7c5417f752d
-description: Der Vorgang SyncFolderHierarchy synchronisiert Ordner zwischen dem Computer mit Microsoft Exchange Server 2010 und dem Client.
-ms.openlocfilehash: 33c886d5eec64a9ff2ccc667eedfc2d4cc8dcfd5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Mit dem SyncFolderHierarchy-Vorgang werden die Ordner zwischen dem Computer mit Microsoft Exchange Server 2010 und dem Client synchronisiert.
+ms.openlocfilehash: 1c7ad2413064161ba54e8a7a30bfcd6f23f218bd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839145"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456430"
 ---
 # <a name="syncfolderhierarchy-operation"></a>SyncFolderHierarchy-Vorgang
 
-Der Vorgang SyncFolderHierarchy synchronisiert Ordner zwischen dem Computer mit Microsoft Exchange Server 2010 und dem Client.
+Mit dem SyncFolderHierarchy-Vorgang werden die Ordner zwischen dem Computer mit Microsoft Exchange Server 2010 und dem Client synchronisiert.
   
 > [!NOTE]
-> Der Vorgang SyncFolderHierarchy gibt keine Ordner zurück, wenn die Eigenschaften [UnreadCount](unreadcount.md) oder [TotalCount](totalcount.md) geändert haben. 
+> Der SyncFolderHierarchy-Vorgang gibt keine Ordner zurück, wenn sich die Eigenschaften [UnreadCount](unreadcount.md) oder [Total count](totalcount.md) geändert haben. 
   
-## <a name="syncfolderhierarchy-request-example"></a>Anforderungsbeispiel SyncFolderHierarchy
+## <a name="syncfolderhierarchy-request-example"></a>SyncFolderHierarchy-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung SyncFolderHierarchy veranschaulicht, wie einen Client synchronisieren Ordnerhierarchie mit dem Exchange-Server. Dieses Beispiel zeigt eine Ordnerhierarchie, die bereits mindestens einmal synchronisiert wurde. Das [Synchronisierungsstatus](syncstate-ex15websvcsotherref.md) -Element ist nicht in der Anforderung für den ersten Versuch, einen Client mit dem Exchange Server synchronisiert enthalten. Die erste Anforderung gibt alle Ordner im Postfach zurück. Das [Synchronisierungsstatus](syncstate-ex15websvcsotherref.md) -Element wird in der [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)zurückgegeben werden soll. Dieses Element wird verwendet, um den Status für nachfolgende SyncFolderHierarchy Anforderungen zu synchronisieren.
+Im folgenden Beispiel einer SyncFolderHierarchy-Anforderung wird gezeigt, wie eine Clientordner Hierarchie mit dem Exchange-Server synchronisiert wird. Dieses Beispiel zeigt eine Ordnerhierarchie, die bereits mindestens einmal synchronisiert wurde. Das [von "SyncState](syncstate-ex15websvcsotherref.md) -Element ist nicht in der Anforderung für den ersten Versuch, einen Client mit dem Exchange-Server zu synchronisieren, enthalten. Die erste Anforderung gibt alle Ordner im Postfach zurück. Das [von "SyncState](syncstate-ex15websvcsotherref.md) -Element wird in der [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)zurückgegeben. Dieses Element wird verwendet, um den Status für nachfolgende SyncFolderHierarchy-Anforderungen zu synchronisieren.
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <SyncFolderHierarchy  xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SyncFolderHierarchy  xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <FolderShape>
         <t:BaseShape>AllProperties</t:BaseShape>
       </FolderShape>
@@ -49,9 +49,9 @@ Im folgenden Beispiel wird eine Anforderung SyncFolderHierarchy veranschaulicht,
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Die base64-codierten [Synchronisierungsstatus](syncstate-ex15websvcsotherref.md) Elementdaten wurde um Erhaltung der Lesbarkeit gekürzt. 
+Die Base64-codierten Daten des [von "SyncState](syncstate-ex15websvcsotherref.md) -Elements wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -63,16 +63,16 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [BaseShape](baseshape.md)
     
-- [Synchronisierungsstatus](syncstate-ex15websvcsotherref.md)
+- [Von "SyncState](syncstate-ex15websvcsotherref.md)
     
 > [!NOTE]
-> Das Schema, das diese Elemente beschreibt, befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem MicrosoftExchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist. 
+> Das Schema, in dem diese Elemente beschrieben werden, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Serverrolle installiert ist. 
   
-## <a name="successful-syncfolderhierarchy-response"></a>Erfolgreiche SyncFolderHierarchy Antwort
+## <a name="successful-syncfolderhierarchy-response"></a>Erfolgreiche SyncFolderHierarchy-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung SyncFolderHierarchy. In diesem Beispiel wurde ein neuer Ordner synchronisiert.
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die SyncFolderHierarchy-Anforderung. In diesem Beispiel wurde ein neuer Ordner synchronisiert.
   
 ### <a name="code"></a>Code
 
@@ -84,12 +84,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung SyncFo
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" 
                          MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SyncFolderHierarchyResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                 xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                                 xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SyncFolderHierarchyResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                 xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                                 xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SyncFolderHierarchyResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -115,11 +115,11 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung SyncFo
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Der [Synchronisierungsstatus](syncstate-ex15websvcsotherref.md) Element base64-codierten Daten und im Ordner Bezeichner wurden gekürzt, um die Lesbarkeit zu erhalten. 
+Die Base64-codierten Daten des [von "SyncState](syncstate-ex15websvcsotherref.md) -Elements und die Ordner-ID-Daten wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -133,7 +133,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Synchronisierungsstatus](syncstate-ex15websvcsotherref.md)
+- [Von "SyncState](syncstate-ex15websvcsotherref.md)
     
 - [IncludesLastFolderInRange](includeslastfolderinrange.md)
     
@@ -151,17 +151,17 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-- [TotalCount](totalcount.md)
+- [Total count](totalcount.md)
     
 - [ChildFolderCount](childfoldercount.md)
     
 - [UnreadCount](unreadcount.md)
     
-## <a name="syncfolderhierarchy-error-response"></a>Fehlerantwort SyncFolderHierarchy
+## <a name="syncfolderhierarchy-error-response"></a>SyncFolderHierarchy-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine SyncFolderHierarchy-Anforderung. Dieser Fehler wurde durch eine ungültige Synchronisierungsstatus verursacht.
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine SyncFolderHierarchy-Anforderung. Dieser Fehler wurde durch ein ungültiges von "SyncState verursacht.
   
 ### <a name="code"></a>Code
 
@@ -173,12 +173,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine SyncFolderHierarchy-Anfor
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" 
                          MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SyncFolderHierarchyResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                 xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                                 xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SyncFolderHierarchyResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                 xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                                 xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SyncFolderHierarchyResponseMessage ResponseClass="Error">
           <m:MessageText>Synchronization state data is corrupted or otherwise invalid.</m:MessageText>
@@ -193,7 +193,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine SyncFolderHierarchy-Anfor
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
@@ -211,7 +211,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Synchronisierungsstatus](syncstate-ex15websvcsotherref.md)
+- [Von "SyncState](syncstate-ex15websvcsotherref.md)
     
 - [IncludesLastFolderInRange](includeslastfolderinrange.md)
     

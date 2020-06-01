@@ -11,39 +11,39 @@ api_name:
 api_type:
 - schema
 ms.assetid: fe136881-a804-456a-8552-8a1bea5eb9c8
-description: Der CreateItem-Vorgang wird verwendet, um Antworten auf Besprechungsanfragen.
-ms.openlocfilehash: a8aea688e46376906554952ce8ec45022cf613e9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der CreateItem-Vorgang wird verwendet, um auf Besprechungsanfragen zu reagieren.
+ms.openlocfilehash: f9e6bd1742e6a30d08736ea67c0ff80b7a18e88a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757779"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457109"
 ---
 # <a name="createitem-operation-meeting-request"></a>CreateItem-Vorgang (Besprechungsanfrage)
 
-Der CreateItem-Vorgang wird verwendet, um Antworten auf Besprechungsanfragen.
+Der CreateItem-Vorgang wird verwendet, um auf Besprechungsanfragen zu reagieren.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Vorgang CreateItem bietet drei Optionen für die Reaktion auf eine Besprechungsanfrage: annehmen, mit Vorbehalt annehmen oder ablehnen. 
+Der CreateItem-Vorgang bietet drei Optionen für die Antwort auf eine Besprechungsanfrage: akzeptieren, mit Vorbehalt annehmen oder ablehnen. 
   
-## <a name="accept-meeting-request-example"></a>Anforderungsbeispiel Besprechung akzeptieren
+## <a name="accept-meeting-request-example"></a>Beispiel für die Annahme einer Besprechungsanfrage
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt, wie Sie zum Annehmen einer Besprechungsanfrage Einladung anfordern.
+Das folgende Beispiel zeigt, wie Sie eine Einladung zur Besprechungsanfrage annehmen.
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
+    <CreateItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
                 MessageDisposition="SendAndSaveCopy">
       <Items>
-        <AcceptItem xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <AcceptItem xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <ReferenceItemId Id="AAAlAFVzZ"
                            ChangeKey="CwAAABYAA"/>
         </AcceptItem>
@@ -53,13 +53,13 @@ Das folgende Beispiel zeigt, wie Sie zum Annehmen einer Besprechungsanfrage Einl
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Mit Vorbehalt annehmen oder ablehnen die Besprechungsanfrage, verwenden Sie die Elemente [TentativelyAcceptItem](tentativelyacceptitem.md) oder [DeclineItem](declineitem.md) anstelle der [AcceptItem](acceptitem.md) -Element. 
+Um die Besprechungsanfrage vorläufig anzunehmen oder abzulehnen, verwenden Sie die [TentativelyAcceptItem](tentativelyacceptitem.md) -oder [DeclineItem](declineitem.md) -Elemente anstelle des [AcceptItem](acceptitem.md) -Elements. 
   
-Die Element-ID und Key ändern wurden gekürzt, um die Lesbarkeit zu erhalten.
+Die Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten.
   
-### <a name="accepting-meeting-request-elements"></a>Akzeptieren die Besprechung Anforderung Elemente
+### <a name="accepting-meeting-request-elements"></a>Akzeptieren von Elementen der Besprechungsanfrage
 
 In der Anforderung werden folgende Elemente verwendet:
   
@@ -71,7 +71,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [ReferenceItemId](referenceitemid.md)
     
-## <a name="successful-accept-meeting-response-example"></a>Erfolgreiche Besprechung akzeptieren antwortbeispiel
+## <a name="successful-accept-meeting-response-example"></a>Beispiel für erfolgreiche Annahme einer Besprechungsantwort
 
 ### <a name="description"></a>Beschreibung
 
@@ -86,12 +86,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateItem-Anforde
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -103,7 +103,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateItem-Anforde
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -117,13 +117,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
-## <a name="accept-meeting-error-response-example"></a>Akzeptieren Sie die Besprechung Fehler antwortbeispiel
+## <a name="accept-meeting-error-response-example"></a>Beispiel für die Annahme einer Besprechungs Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an CreateItem-Anforderungen. Der Fehler tritt bei dem Versuch, eine Besprechungsanfrage annehmen können, die nicht gefunden werden kann im Exchange-Speicher.
+Das folgende Beispiel zeigt eine Fehlerantwort auf CreateItem-Anforderung. Der Fehler wird durch den Versuch verursacht, eine Besprechungsanfrage anzunehmen, die im Exchange-Informationsspeicher nicht gefunden werden kann.
   
 ### <a name="code"></a>Code
 
@@ -134,12 +134,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort an CreateItem-Anforderungen. Der 
   xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Error">
           <m:MessageText>The specified object was not found in the store.</m:MessageText>
@@ -153,7 +153,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an CreateItem-Anforderungen. Der 
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
@@ -171,13 +171,13 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[CreateItem Operation](createitem-operation.md)
+[CreateItem-Vorgang](createitem-operation.md)
   
 [CreateItem-Vorgang (Kalenderelement)](createitem-operation-calendar-item.md)
 

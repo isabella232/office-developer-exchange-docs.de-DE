@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 630cdbb5-d1c7-422c-924a-abf5738e9e5e
-description: Endpoint-Element gibt den Security token Service-Endpunkt.
-ms.openlocfilehash: 85e1ad785b35649238ac3944f51472addf617c20
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Endpoint-Element gibt den Sicherheitstoken-Dienstendpunkt an.
+ms.openlocfilehash: 93659bbefa4a95063304cf3abad81cb61767070a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758237"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458397"
 ---
 # <a name="endpoint-soap"></a>Endpunkt (SOAP)
 
-**Endpoint** -Element gibt den Security token Service-Endpunkt. 
+Das **EndPoint** -Element gibt den Sicherheitstoken-Dienstendpunkt an. 
   
 ```XML
 <Endpoint/>
@@ -33,7 +33,7 @@ Keine
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-Keine
+Keines
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -43,19 +43,19 @@ Keine
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt den Endpunkt für den Security token-Webdienst.
+Der Textwert stellt den Endpunkt des Sicherheitstoken-Webdiensts dar.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Endpunkt ist für die Kommunikation mit den Security token-Webdienst verwendet.
+Der Endpunkt wird für die Kommunikation mit dem Webdienst für Sicherheitstoken verwendet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 

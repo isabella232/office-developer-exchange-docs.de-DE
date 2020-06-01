@@ -11,34 +11,34 @@ api_name:
 api_type:
 - schema
 ms.assetid: 55d451f9-547f-44ac-872e-9cb220ea7b7c
-description: Der Vorgang GetRoomLists Ruft die Chatroom-Listen, die in der Exchange-Organisation verfügbar sind.
-ms.openlocfilehash: 139a669bfc6b7c4bc9bd9c07f9f9cf52954860c0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Mit dem GetRoomLists-Vorgang werden die Raumlisten abgerufen, die in der Exchange-Organisation zur Verfügung stehen.
+ms.openlocfilehash: d1393a6a5e99b7e0a7e354d2b7dd035d04356ec2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758788"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458278"
 ---
 # <a name="getroomlists-operation"></a>GetRoomLists-Vorgang
 
-Der Vorgang **GetRoomLists** Ruft die Chatroom-Listen, die in der Exchange-Organisation verfügbar sind. 
+Mit dem **GetRoomLists** -Vorgang werden die Raumlisten abgerufen, die in der Exchange-Organisation zur Verfügung stehen. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der Vorgang **GetRoomLists** können die SOAP-Header, die aufgeführt und in der folgenden Tabelle beschrieben. 
+Der **GetRoomLists** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Identitätswechsel  <br/> |["ExchangeImpersonation"](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt.  <br/> |
+|Identitätswechsel  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt.  <br/> |
 |MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Gibt die RFC3066-Kultur an, die für den Zugriff auf das Postfach verwendet wird.  <br/> |
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="getroomlists-request-example"></a>Anforderungsbeispiel GetRoomLists
+## <a name="getroomlists-request-example"></a>GetRoomLists-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Es folgt ein Beispiel für eine **GetRoomLists** -Anforderung, die die Chatroom Listen zurückgibt, die auf dem Server verfügbar sind. 
+Im folgenden finden Sie ein Beispiel für eine **GetRoomLists** -Anforderung, die die auf dem Server verfügbaren Raumlisten zurückgibt. 
   
 ### <a name="code"></a>Code
 
@@ -46,8 +46,8 @@ Es folgt ein Beispiel für eine **GetRoomLists** -Anforderung, die die Chatroom 
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version ="Exchange2010_SP1"/>
   </soap:Header>
@@ -64,11 +64,11 @@ Das folgende Element wird in der Anforderung verwendet:
   
 - [GetRoomLists](getroomlists.md)
     
-## <a name="successful-getroomlists-response-example"></a>Erfolgreiche GetRoomLists antwortbeispiel
+## <a name="successful-getroomlists-response-example"></a>Erfolgreiches GetRoomLists-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Es folgt ein Beispiel für eine Antwort auf eine **GetRoomLists** an. Diese Antwort enthält eine Raumliste auf dem Server. 
+Im folgenden finden Sie ein Beispiel für eine Antwort auf eine **GetRoomLists** -Anforderung. Diese Antwort zeigt eine Raumliste auf dem Server. 
   
 ### <a name="code"></a>Code
 
@@ -76,13 +76,13 @@ Es folgt ein Beispiel für eine Antwort auf eine **GetRoomLists** an. Diese Antw
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="14" MinorVersion="1" MajorBuildNumber="164" MinorBuildNumber="0" Version="Exchange2010_SP1" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+    <h:ServerVersionInfo MajorVersion="14" MinorVersion="1" MajorBuildNumber="164" MinorBuildNumber="0" Version="Exchange2010_SP1" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <GetRoomListsResponse ResponseClass="Success" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetRoomListsResponse ResponseClass="Success" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
-      <m:RoomLists xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
-        <t:Address xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:RoomLists xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
+        <t:Address xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
           <t:Name>Room List</t:Name>
           <t:EmailAddress>RoomList@contoso.com</t:EmailAddress>
           <t:RoutingType>SMTP</t:RoutingType>
@@ -95,7 +95,7 @@ Es folgt ein Beispiel für eine Antwort auf eine **GetRoomLists** an. Diese Antw
 
 ```
 
-### <a name="successful-getroomlists-response-elements"></a>Erfolgreiche GetRoomLists Antwortelemente
+### <a name="successful-getroomlists-response-elements"></a>Erfolgreiche GetRoomLists-Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -113,11 +113,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [MailboxType](mailboxtype.md)
     
-### <a name="getroomlists-error-response-example"></a>Antwortbeispiel GetRoomLists-Fehler
+### <a name="getroomlists-error-response-example"></a>GetRoomLists-Fehlerantwort Beispiel
 
 #### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt die Antwort auf ein Versuch, Raumlisten von einem Server abzurufen, die keinen Raumlisten definiert.
+Das folgende Beispiel zeigt die Antwort auf einen Versuch, Raumlisten von einem Server zu erhalten, auf dem keine Raumlisten definiert sind.
   
 #### <a name="code"></a>Code
 
@@ -125,19 +125,19 @@ Das folgende Beispiel zeigt die Antwort auf ein Versuch, Raumlisten von einem Se
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="14" MinorVersion="1" MajorBuildNumber="164" MinorBuildNumber="0" Version="Exchange2010_SP1" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+    <h:ServerVersionInfo MajorVersion="14" MinorVersion="1" MajorBuildNumber="164" MinorBuildNumber="0" Version="Exchange2010_SP1" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <GetRoomListsResponse ResponseClass="Success" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetRoomListsResponse ResponseClass="Success" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
-      <m:RoomLists xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"/>
+      <m:RoomLists xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"/>
     </GetRoomListsResponse>
   </s:Body>
 </s:Envelope>
 
 ```
 
-#### <a name="getroomlists-error-response-elements"></a>Antwortelemente GetRoomLists Fehler
+#### <a name="getroomlists-error-response-elements"></a>GetRoomLists-Fehlerantwort Elemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   

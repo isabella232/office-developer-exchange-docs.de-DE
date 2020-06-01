@@ -1,53 +1,53 @@
 ---
-title: Vorschlagen einer neuen Besprechungszeit mithilfe der EWS in Exchange
+title: Vorschlagen einer neuen Besprechungszeit mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: d5ac8e5b-3876-4f20-b4d3-44505e066042
-description: Erfahren Sie, wie in der Exchange-Clientanwendung Besprechungszeiten vorschlagen mithilfe der EWS in Exchange.
-ms.openlocfilehash: f9edd8511332474a728635a6aa369a772da24786
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Erfahren Sie, wie Sie neue Besprechungszeiten in Ihrer Exchange-Clientanwendung mithilfe von EWS in Exchange vorschlagen.
+ms.openlocfilehash: 4f001bb82d2325624b567412620283619b51f25b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756981"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456811"
 ---
-# <a name="propose-a-new-meeting-time-by-using-ews-in-exchange"></a>Vorschlagen einer neuen Besprechungszeit mithilfe der EWS in Exchange
+# <a name="propose-a-new-meeting-time-by-using-ews-in-exchange"></a>Vorschlagen einer neuen Besprechungszeit mithilfe von EWS in Exchange
 
-Erfahren Sie, wie in der Exchange-Clientanwendung Besprechungszeiten vorschlagen mithilfe der EWS in Exchange.
+Erfahren Sie, wie Sie neue Besprechungszeiten in Ihrer Exchange-Clientanwendung mithilfe von EWS in Exchange vorschlagen.
   
-Das neue Feature Zeit für vorschlagen ermöglicht es den Teilnehmern Besprechungszeiten Organisator der Besprechung als Teil des Exchange-Kalender Workflows vorschlagen. Wenn ein Teilnehmer eine neue Besprechung vorschlägt, kann der Organisator verwenden der vorgeschlagene neue Besprechungszeit zum Aktualisieren der Besprechung und Aktualisierungen an alle Teilnehmer senden. Bevor Sie Teilnehmer Besprechungszeiten vorschlagen aktivieren können, müssen Sie bestimmen, ob der Organisator für Vorschläge für neue Zeit zulässt. In diesem Artikel wird beschrieben, wie um festzustellen, ob Sie ein neues vorschlagen können Zeit- und wie Sie EWS verwenden, um eine neue Zeit vorschlagen.
+Mit dem Feature neue Zeit vorschlagen können Teilnehmer dem Besprechungsorganisator neue Besprechungszeiten als Teil des Exchange-Kalender Workflows vorschlagen. Wenn ein Teilnehmer eine neue Besprechung vorschlägt, kann der Organisator die vorgeschlagene neue Besprechungszeit verwenden, um die Besprechung zu aktualisieren und Updates an alle Teilnehmer zu senden. Bevor Sie Teilnehmern die Möglichkeit geben, neue Besprechungszeiten vorzuschlagen, müssen Sie ermitteln, ob der Organisator neue Zeit Vorschläge zulässt. In diesem Artikel wird beschrieben, wie Sie bestimmen können, ob Sie eine neue Zeit vorschlagen und wie Sie EWS verwenden, um eine neue Zeit anzubieten.
   
 > [!NOTE]
-> [!HINWEIS] Die verwaltete EWS-API implementiert diese Funktion nicht. 
+> Die verwaltete EWS-API implementiert diese Funktion nicht. 
   
-## <a name="determine-whether-you-can-propose-a-new-time-for-a-meeting-by-using-ews"></a>Bestimmen Sie, ob Sie eine neue Zeit für eine Besprechung vorschlagen können mithilfe der Exchange-Webdienste
+## <a name="determine-whether-you-can-propose-a-new-time-for-a-meeting-by-using-ews"></a>Ermitteln, ob Sie eine neue Zeit für eine Besprechung mithilfe von EWS vorschlagen können
 <a name="bk_Determine"> </a>
 
-Bevor Sie eine neue Zeit für eine Besprechung vorschlagen können, müssen Sie hier finden einen Verweis auf diese Besprechung und festzustellen, ob der Organisator der Besprechung die Besprechung zur Unterstützung von neue Zeit Vorschläge konfiguriert. Sie können einen Verweis auf eine Besprechung erhalten, indem Sie eines der folgenden: 
+Bevor Sie eine neue Zeit für eine Besprechung vorschlagen können, müssen Sie einen Verweis auf diese Besprechung finden und bestimmen, ob der Besprechungsorganisator die Besprechung so konfiguriert hat, dass neue Zeit Vorschläge unterstützt werden. Sie können einen Verweis auf eine Besprechung erhalten, indem Sie einen der folgenden Schritte ausführen: 
   
-- Suchen nach der Besprechungsanfrage im Posteingang
+- Suchen der Besprechungsanfrage im Posteingang
     
-- Suchen den Termin im Kalender
+- Suchen des Termins im Kalender
     
-Gehen Sie folgendermaßen vor, um einen Verweis Besprechung zu erhalten:
+Führen Sie die folgenden Schritte aus, um eine Besprechungs Referenz zu finden:
   
-1. Verwenden Sie [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) EWS-Vorgangs (oder die [Folder.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.finditems%28v=EXCHG.80%29.aspx) EWS Managed API-Methode) zum Suchen nach der-Ziel meeting Anforderung oder Kalenderelement. Alternativ können Sie [SyncFolderItems](http://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) EWS-Vorgangs verwenden, um den Bezeichner des Ziels meeting Anforderung oder Kalenderelement abzurufen. 
+1. Verwenden Sie den [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) -EWS-Vorgang (oder die [Folder. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.finditems%28v=EXCHG.80%29.aspx) verwaltete EWS-API-Methode), um die Ziel-Besprechungsanfrage oder das Kalenderelement zu finden. Alternativ können Sie den [SyncFolderItems](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) -EWS-Vorgang verwenden, um den Bezeichner der Ziel-Besprechungsanfrage oder des Kalenderelements abzurufen. 
     
-2. Analysieren Sie die Ergebnisse der **FindItem** -Vorgang (oder **Folder.FindItems** -Methode) zum Abrufen der Elementbezeichner des Besprechungselements. 
+2. Analysieren Sie die Ergebnisse des **FindItem** -Vorgangs (oder der **Folder. FindItems** -Methode), um den Elementbezeichner des Besprechungselements abzurufen. 
     
-3. Verwenden Sie den [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) -EWS-Vorgang, um die Antwortobjekte für die Besprechung abzurufen. 
+3. Verwenden Sie den [GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) -EWS-Vorgang, um die Response-Objekte für die Besprechung abzurufen. 
     
-Das folgende XML zeigt, was gesendet wird, um die Antwortobjekte für ein Element anzufordern.
+Der folgende XML-Code zeigt, was gesendet wird, um die Response-Objekte für ein Element anzufordern.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
     <t:MailboxCulture>en-US</t:MailboxCulture>
@@ -71,25 +71,25 @@ Das folgende XML zeigt, was gesendet wird, um die Antwortobjekte für ein Elemen
 </soap:Envelope>
 ```
 
-**GetItem** Operation Antwort sieht ungefähr wie die folgende XML-Code, wenn Sie die Element-ID, die Besprechung starten und Endzeit, die Antwort objektauflistung anfordern und der Organisator vorgeschlagenen Änderungen an die Besprechungszeit ermöglicht. Die Antwort-Auflistung-Objekt, das durch das [ResponseObjects](http://msdn.microsoft.com/library/ad29e064-3f3d-4b7b-aa4c-9ec27326381d%28Office.15%29.aspx) -Element dargestellt wird, enthält den Satz von Antworten, die für das Kalenderelement gültig sind. Das **ProposeNewTime** -Element ist ein Antwortobjekt, der angibt, dass der Benutzer eine neue Zeit für die Besprechung vorschlagen kann. Die [AcceptItem](http://msdn.microsoft.com/library/05a15431-77e1-411a-a16b-5481d364d3cc%28Office.15%29.aspx) [TentativelyAcceptItem](http://msdn.microsoft.com/library/ce6f50ef-ad8a-47e4-915a-487b2ef7a2e0%28Office.15%29.aspx)und [DeclineItem](http://msdn.microsoft.com/library/2d8d2389-924e-4d03-a324-35d56cf0d6b1%28Office.15%29.aspx) -Elemente darstellen, die Antwortobjekte, die Sie verwenden können, der Besprechungsorganisator eine neue Besprechungszeit vorschlagen. 
+Die **GetItem** -Vorgangs Antwort sieht ähnlich wie beim folgenden XML-Code aus, wenn Sie die Element-ID, die Start-und Endzeit der Besprechung, die Auflistung der Antwortobjekte anfordern und die vorgeschlagene Änderung an der Besprechungszeit durch den Organisator ermöglicht wird. Die Response-Objektsammlung, die durch das [ResponseObjects](https://msdn.microsoft.com/library/ad29e064-3f3d-4b7b-aa4c-9ec27326381d%28Office.15%29.aspx) -Element dargestellt wird, enthält die Gruppe von Antworten, die für das Kalenderelement gültig sind. Das **ProposeNewTime** -Element ist ein Response-Objekt, das angibt, dass der Benutzer eine neue Zeit für die Besprechung vorschlagen kann. Die [AcceptItem](https://msdn.microsoft.com/library/05a15431-77e1-411a-a16b-5481d364d3cc%28Office.15%29.aspx)-, [TentativelyAcceptItem](https://msdn.microsoft.com/library/ce6f50ef-ad8a-47e4-915a-487b2ef7a2e0%28Office.15%29.aspx)-und [DeclineItem](https://msdn.microsoft.com/library/2d8d2389-924e-4d03-a324-35d56cf0d6b1%28Office.15%29.aspx) -Elemente stellen die Response-Objekte dar, die Sie verwenden können, um dem Besprechungsorganisator eine neue Besprechungszeit vorzuschlagen. 
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" 
                          MinorVersion="0" 
                          MajorBuildNumber="815" 
                          MinorBuildNumber="6" 
                          Version="V2_7" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -117,16 +117,16 @@ Das folgende XML zeigt, was gesendet wird, um die Antwortobjekte für ein Elemen
 </s:Envelope>
 ```
 
-## <a name="propose-a-new-meeting-time-by-using-ews"></a>Vorschlagen einer neuen Besprechungszeit mithilfe der Exchange-Webdienste
+## <a name="propose-a-new-meeting-time-by-using-ews"></a>Vorschlagen einer neuen Besprechungszeit mithilfe von EWS
 <a name="bk_Propose"> </a>
 
-Wenn Sie ein Antwortobjekt **ProposeNewTime** erhalten, wenn Sie die **GetItem** Operation verwendet, um ein Kalenderelement oder einer Besprechungsanfrage erhalten möchten, können Sie mit einer vorgeschlagenen neuen Besprechungszeit reagieren. Wenn Sie eine **ProposeNewTime** Response-Objekt nicht erhalten haben, werden Sie kann nicht als Teil des Workflows Kalender eine neue Besprechungszeit vorschlagen. Sie können jedoch auf der Organisator eine neuen Besprechungszeit anfordern antworten. Ein Antwortobjekt **ProposeNewTime** gemeldet werden, können Sie durch einen Verweis auf den Bezeichner für die Besprechung reagieren und vorschlagen eine neuen Besprechungszeit an den Organisator. Dies ist, in dem das Antwortobjekt **ProposeNewTime** dem normalen Reaktionszeit Objekt Muster unterscheidet, dass Sie nicht mit einem **ProposeNewTime** Antwortobjekt Antworten. Verwenden Sie eine der anderen meeting Antwortobjekte wie **AcceptItem**, **TentativelyAcceptItem**oder **DeclineItem**, eine neue Besprechung vorschlagen. In diesem Beispiel wird das **AcceptItem** Response-Objekt. 
+Wenn Sie ein **ProposeNewTime** -Antwortobjekt erhalten haben, als Sie den **GetItem** -Vorgang zum Abrufen eines Kalenderelements oder einer Besprechungsanfrage verwendet haben, können Sie mit einer vorgeschlagenen neuen Besprechungszeit Antworten. Wenn Sie kein **ProposeNewTime** -Antwortobjekt erhalten haben, können Sie im Rahmen des Kalender Workflows keine neue Besprechungszeit vorschlagen. Sie können jedoch dem Organisator Antworten, um eine neue Besprechungszeit anzufordern. Wenn Sie ein **ProposeNewTime** -Antwortobjekt erhalten, können Sie auf die Besprechung Antworten, indem Sie auf Ihren Bezeichner verweisen, und dem Organisator eine neue Besprechungszeit vorschlagen. Hier unterscheidet sich das **ProposeNewTime** -Antwortobjekt von dem typischen Antwortobjekt Muster darin, dass Sie nicht mit einem **ProposeNewTime** -Antwortobjekt Antworten. Sie verwenden eines der anderen Besprechungsantwort Objekte wie **AcceptItem**, **TentativelyAcceptItem**oder **DeclineItem**, um eine neue Besprechung vorzuschlagen. In diesem Beispiel wird das **AcceptItem** -Antwortobjekt verwendet. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
-<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+<soap:Envelope xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013"/>
   </soap:Header>
@@ -145,25 +145,25 @@ Wenn Sie ein Antwortobjekt **ProposeNewTime** erhalten, wenn Sie die **GetItem**
 </soap:Envelope>
 ```
 
-Die Antwort auf diese Anforderung enthält die ID des Kalenderelements an, das Kalender des Teilnehmers hinzugefügt wurde, und eine Kopie der Besprechungsanfrage, die im Ordner für die Teilnehmer Gelöschte Objekte getätigt wurde. Die Response-Nachricht mit dem neuen Uhrzeit Vorschlag wurde auch im Ordner für die Teilnehmer gesendete Objekte gespeichert (müssen Sie die Besprechung suchen Antwortnachricht zu handhaben darauf).
+Die Antwort auf diese Anforderung enthält den Bezeichner des Kalenderelements, das dem Kalender des Teilnehmers hinzugefügt wurde, und eine Kopie der Besprechungsanfrage, die im Ordner Gelöschte Elemente des Teilnehmers eingefügt wurde. Die Antwortnachricht mit dem neuen Zeitvorschlag wurde auch im Ordner "Gesendete Elemente" des Teilnehmers gespeichert (Sie müssen die Antwortnachricht für die Besprechung finden, damit ein Handle darauf abgerufen wird).
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" 
                          MinorVersion="0" 
                          MajorBuildNumber="815" 
                          MinorBuildNumber="6" 
                          Version="V2_7" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -182,28 +182,28 @@ Die Antwort auf diese Anforderung enthält die ID des Kalenderelements an, das K
 </s:Envelope>
 ```
 
-Der Organisator erhalten eine [MeetingResponse](http://msdn.microsoft.com/library/9f798e79-dafd-4d4d-9967-95fd8e5c0502%28Office.15%29.aspx) -Nachricht, wenn der Teilnehmer mit einer vorgeschlagenen neuen Besprechungszeit antwortet. Die **MeetingResponse** -Nachricht enthält die vorgeschlagene neue Besprechung Startzeit und Endzeit und die ID des zugeordneten Kalenderelements im Kalender des Organisierer vorhanden. Der Organisator kann diese Informationen verwenden, um ihre vorhandene Kalenderelement für die Besprechung zu aktualisieren. Es folgt der Workflow für den Organisator Antworten auf eine **MeetingResponse** -Nachrichten, die eine neue Besprechungszeit vorgeschlagen: 
+Der Organisator erhält eine [MeetingResponse](https://msdn.microsoft.com/library/9f798e79-dafd-4d4d-9967-95fd8e5c0502%28Office.15%29.aspx) -Nachricht, wenn der Teilnehmer mit einer vorgeschlagenen neuen Besprechungszeit antwortet. Die **MeetingResponse** -Nachricht enthält die vorgeschlagene neue Start Zeit für die Besprechung und die Endzeit sowie den Bezeichner des zugeordneten Kalenderelements im Kalender des Organisators. Der Organisator kann diese Informationen verwenden, um das vorhandene Kalenderelement für die Besprechung zu aktualisieren. Im folgenden finden Sie den Workflow für den Organisator, der auf eine **MeetingResponse** -Nachricht antwortet, die eine neue Besprechungszeit vorschlägt: 
   
-1. Bestimmen Sie, ob die **ProposedStart** oder **ProposedEnd** -Elemente in der **MeetingResponse**festgelegt wurden. Wenn dies der Fall ist, fahren Sie mit Schritt 2. Wenn dies nicht der Fall ist, wird die Nachricht **MeetingResponse** nur gibt an, ob der Teilnehmer hat akzeptiert, mit Vorbehalt angenommen oder die Besprechung wurde abgesagt. 
+1. Bestimmen Sie, ob die **ProposedStart** -oder **ProposedEnd** -Elemente in der **MeetingResponse**festgelegt wurden. Wenn dies der Fall ist, fahren Sie mit Schritt 2 fort. Wenn dies nicht der Fall ist, gibt die **MeetingResponse** -Nachricht nur an, ob der Teilnehmer die Besprechung akzeptiert, mit Vorbehalt angenommen oder abgelehnt hat. 
     
-2. Rufen Sie vorhandene Kalenderelement der Organisator für die Besprechung, mithilfe des EWS-Bezeichners im **AssociatedCalendarItemId** Element zurückgegeben. 
+2. Abrufen des vorhandenen Kalenderelements des Organisators für die Besprechung mithilfe der EWS-ID, die im **AssociatedCalendarItemId** -Element zurückgegeben wird. 
     
-3. Vergleichen Sie die ursprünglichen Start- und Endzeit mit vorgeschlagenen neuen Besprechungszeit. Wenn die vorgeschlagene neue Besprechungszeit an den Organisator akzeptabel ist, fahren Sie mit Schritt 4. Der Organisator der Besprechung Anderenfalls kann entweder ignorieren die Uhrzeit der vorgeschlagenen Besprechung oder senden eine e-Mail-Antwort an die Teilnehmer, die die neue Besprechungszeit vorgeschlagen.
+3. Vergleichen Sie die ursprüngliche Anfangs-und Endzeit mit der vorgeschlagenen neuen Besprechungszeit. Wenn die vorgeschlagene neue Besprechungszeit für den Organisator akzeptabel ist, fahren Sie mit Schritt 4 fort. Andernfalls kann der Besprechungsorganisator entweder die vorgeschlagene Besprechungszeit ignorieren oder eine e-Mail-Antwort an den Teilnehmer senden, der die neue Besprechungszeit vorgeschlagen hat.
     
-4. (Optional) Führen Sie einen Anruf [GetUserAvailability](http://msdn.microsoft.com/library/8da17226-5d3a-4525-9ffa-d83730f47bb1%28Office.15%29.aspx) EWS-Vorgang, um herauszufinden, ob die vorgeschlagene Zeit für alle Teilnehmer, einschließlich der Postfächer Raum- und Ressource funktioniert. (Sie können die [ExchangeService.GetUserAvailability](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.getuseravailability%28v=exchg.80%29.aspx) EWS Managed API-Methode auch verwenden, dazu.) 
+4. Optional Führen Sie einen [GetUserAvailability](https://msdn.microsoft.com/library/8da17226-5d3a-4525-9ffa-d83730f47bb1%28Office.15%29.aspx) -EWS-Vorgangsaufruf aus, um herauszufinden, ob die vorgeschlagene Zeit für alle Teilnehmer, einschließlich Raum-und Ressourcenpostfächern funktionieren soll. (Sie können dazu auch die verwaltete EWS-API-Methode [Datei "ExchangeService. GetUserAvailability](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getuseravailability%28v=exchg.80%29.aspx) verwenden.) 
     
-5. Der Organisator kann dann aktualisieren Sie ihre Besprechung mit der vorgeschlagenen Besprechungszeiten und senden die Updates an alle Teilnehmer mithilfe der [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) EWS-Vorgang (oder die [Appointment.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.update%28v=exchg.80%29.aspx) EWS Managed API-Methode). 
+5. Der Organisator kann dann seine Besprechung mit den neuen vorgeschlagenen Besprechungszeiten aktualisieren und die Updates an alle Teilnehmer mit dem [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) -EWS-Vorgang (oder der [Termin. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.update%28v=exchg.80%29.aspx) verwaltete EWS-API-Methode) senden. 
     
-Die folgende Abbildung zeigt den Prozess, der zwischen der Organisator der Besprechung, die Teilnehmer und der Exchange-Server, der die EWS-Aufrufe behandelt.
+In der folgenden Abbildung ist der Prozess dargestellt, der zwischen dem Besprechungsorganisator, dem Teilnehmer und dem Exchange-Server stattfindet, der die EWS-Anrufe verarbeitet hat.
   
-**Abbildung 1. Prozess zum Vorschlagen einer neuen Besprechungszeit**
+**Abbildung 1. Prozess für das vorschlagen einer neuen Besprechungszeit**
 
 ![In der Abbildung wird der Workflow zwischen dem Organisator, Exchange und einem Teilnehmer dargestellt, wenn eine neue Besprechungszeit vorgeschlagen wird. Wenn der Organisator neue Vorschläge für Besprechungen zulässt, kann ein Teilnehmer eine neue Besprechungszeit mit einem Antwortobjekt vorschlagen.](media/Ex_ProposeNewMeetingTime.png)
   
 ## <a name="version-differences"></a>Versionsunterschiede
 <a name="bk_Behavior"> </a>
 
-Das neue Feature Zeit für vorschlagen wurde in Exchange Buildversion 15.00.0800.007 eingeführt. In früheren Versionen von Exchange müssen Benutzer EWS-Anwendung senden eine separate e-Mail an den Organisator der Besprechung eine andere Besprechungszeit anfordern. 
+Das Feature "neue Zeit vorschlagen" wurde in Exchange Build Version 15.00.0800.007 eingeführt. In früheren Versionen von Exchange müssen Benutzer von EWS-Anwendungen eine separate e-Mail an den Besprechungsorganisator senden, um eine andere Besprechungszeit anzufordern. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -216,6 +216,6 @@ Das neue Feature Zeit für vorschlagen wurde in Exchange Buildversion 15.00.0800
     
 - [Aktualisieren von Terminen und Besprechungen mithilfe von EWS in Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
     
-- [Löschen von Terminen und Abbrechen an Besprechungen mithilfe von EWS in Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
+- [Löschen von Terminen und Absagen von Besprechungen mithilfe von EWS in Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
     
 

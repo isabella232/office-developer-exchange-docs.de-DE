@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 916b1cbb-f2e3-471d-84b0-e33467616652
-description: Das Element SuggestionDayResult stellt einen einzelnen Tag, der vorgeschlagenen Besprechungszeiten enthält.
-ms.openlocfilehash: 7b75258a9e70f1ec6feed6a0b18beb76f356c7f4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SuggestionDayResult-Element stellt einen einzelnen Tag dar, der vorgeschlagene Besprechungszeiten enthält.
+ms.openlocfilehash: af907b62acefb4913814907722b98d326bd0535b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839135"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457991"
 ---
 # <a name="suggestiondayresult"></a>SuggestionDayResult
 
-Das Element **SuggestionDayResult** stellt einen einzelnen Tag, der vorgeschlagenen Besprechungszeiten enthält. 
+Das **SuggestionDayResult** -Element stellt einen einzelnen Tag dar, der vorgeschlagene Besprechungszeiten enthält. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -52,25 +52,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Date](date.md) <br/> |Stellt das Datum, das die Zeiten vorgeschlagenen Besprechung enthält.  <br/> |
-|[DayQuality](dayquality.md) <br/> |Stellt die Qualität des Tages für, wie oft Qualität vorgeschlagenen Besprechung enthält.  <br/> |
-|[SuggestionArray](suggestionarray.md) <br/> |Enthält ein Array von besprechungsvorschlägen.  <br/> |
+|[Date](date.md) <br/> |Stellt das Datum dar, das die vorgeschlagenen Besprechungszeiten enthält.  <br/> |
+|[DayQuality](dayquality.md) <br/> |Stellt die Qualität des Tages für das enthalten von Qualität vorgeschlagene Besprechungszeiten dar.  <br/> |
+|[SuggestionArray](suggestionarray.md) <br/> |Enthält ein Array von Besprechungs Vorschlägen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SuggestionDayResultArray](suggestiondayresultarray.md) <br/> |Enthält ein Array von besprechungsvorschlägen nach Datum organisiert.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray` <br/> |
+|[SuggestionDayResultArray](suggestiondayresultarray.md) <br/> |Enthält ein Array von Besprechungs Vorschlägen nach Datum organisiert.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -84,5 +84,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

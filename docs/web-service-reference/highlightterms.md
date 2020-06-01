@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ce4a2978-fd0c-41a4-ae65-aa6f5dc9a0f9
-description: Das HighlightTerms-Element identifiziert die hervorgehobenen Begriffe, die in einem Vorgang FindItem und einer Antwort auf einen Vorgang FindConversation zurückgegeben.
-ms.openlocfilehash: c075e63674bc08773925a2a540a1c2434423926d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das HighlightTerms-Element identifiziert die hervorgehobenen Ausdrücke, die in einer FindItem-Operation zurückgegeben werden, und eine FindConversation-Vorgangs Antwort.
+ms.openlocfilehash: c55ffc010dc0cfb09403433aaf8a0809a26f71a3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829808"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457634"
 ---
 # <a name="highlightterms"></a>HighlightTerms
 
-Das **HighlightTerms** -Element identifiziert die hervorgehobenen Begriffe, die in einem Vorgang **FindItem** und einer Antwort auf einen Vorgang **FindConversation** zurückgegeben. 
+Das **HighlightTerms** -Element identifiziert die hervorgehobenen Ausdrücke, die in einer **FindItem** -Operation zurückgegeben werden, und eine **FindConversation** -Vorgangs Antwort. 
   
 ```XML
 <HighlightTerms>
@@ -40,21 +40,21 @@ Begriff
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[FindConversationResponse](findconversationresponse.md) | [FindItemResponseMessage](finditemresponsemessage.md)
+[FindConversationResponse](findconversationresponse.md)  |  [FindItemResponseMessage](finditemresponsemessage.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

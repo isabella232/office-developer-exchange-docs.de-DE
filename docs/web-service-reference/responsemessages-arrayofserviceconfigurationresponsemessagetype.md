@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c7cfa0d1-fcb2-441f-8489-3a549da33b34
-description: Das ResponseMessages-Element enthält ein Array von Service Configuration Antwortnachrichten.
-ms.openlocfilehash: af8a6db8d6e9d3ec76b532a81ef2a7392dcfde7a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ResponseMessages-Element enthält ein Array von Dienst Konfigurations Antwortnachrichten.
+ms.openlocfilehash: cf271224141ffeb6dc00069abf430ab33d3ca2fa
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831194"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457452"
 ---
 # <a name="responsemessages-arrayofserviceconfigurationresponsemessagetype"></a>ResponseMessages (ArrayOfServiceConfigurationResponseMessageType)
 
-Das **ResponseMessages** -Element enthält ein Array von Service Configuration Antwortnachrichten. 
+Das **ResponseMessages** -Element enthält ein Array von Dienst Konfigurations Antwortnachrichten. 
   
 ```XML
 <ResponseMessages>
@@ -42,29 +42,29 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |Konfigurationseinstellungen für enthält. Dieses Element ist erforderlich.  <br/> |
+|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |Enthält Dienst Konfigurationseinstellungen. Dieses Element ist erforderlich.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetServiceConfigurationResponse](getserviceconfigurationresponse.md) <br/> |Definiert eine Antwort auf eine GetServiceConfiguration an.  <br/> |
+|[GetServiceConfigurationResponse](getserviceconfigurationresponse.md) <br/> |Definiert eine Antwort auf eine GetServiceConfiguration-Anforderung.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

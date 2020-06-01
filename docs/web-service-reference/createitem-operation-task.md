@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 12c5da4d-290c-4a8a-a965-0bf5d55c7978
-description: Der Vorgang CreateItem erstellt Aufgabenelementen im Exchange-Speicher.
-ms.openlocfilehash: 5a5203202071ae9391faa9348902424317ee96d1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der CreateItem-Vorgang erstellt Aufgabenelemente in der Exchange-Informationsspeicher.
+ms.openlocfilehash: 502108843193e7ed8377b0fade9e106ef3d1976c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757780"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457102"
 ---
 # <a name="createitem-operation-task"></a>CreateItem-Vorgang (Aufgabe)
 
-Der Vorgang CreateItem erstellt Aufgabenelementen im Exchange-Speicher.
+Der CreateItem-Vorgang erstellt Aufgabenelemente in der Exchange-Informationsspeicher.
   
-## <a name="task-createitem-request"></a>CreateItem Aufgabenanfrage
+## <a name="task-createitem-request"></a>Aufgaben-CreateItem-Anforderung
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung CreateItem veranschaulicht, wie ein Aufgabenelement in einem Postfach zu erstellen.
+Im folgenden Beispiel einer CreateItem-Anforderung wird gezeigt, wie ein Aufgabenelement in einem Postfach erstellt wird.
   
 ### <a name="code"></a>Code
 
@@ -36,10 +36,10 @@ Im folgenden Beispiel wird eine Anforderung CreateItem veranschaulicht, wie ein 
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <CreateItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                 MessageDisposition="SaveOnly">
       <Items>
         <t:Task>
@@ -53,29 +53,29 @@ Im folgenden Beispiel wird eine Anforderung CreateItem veranschaulicht, wie ein 
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Anforderungen für wiederkehrende Aufgaben werden geändert, wenn sie von dem Computer empfangen werden, die Microsoft Exchange Server 2007 ausgeführt wird, dem die Clientzugriffs-Serverrolle installiert ist. Die folgenden Änderungen auftreten:
+Anforderungen für wiederkehrende Aufgaben werden geändert, wenn Sie von dem Computer empfangen werden, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist. Die folgenden Änderungen treten auf:
   
-- Für die Eigenschaft ["StartDate" (Wiederholung)](startdate-recurrence.md) von den Serienbereich des Vorgangs wird nur das Datum gespeichert. Die Zeitkomponente werden abgeschnitten. 
+- Nur das Datum wird für die StartDate-Eigenschaft [(Serie)](startdate-recurrence.md) des Serien Bereichs des Vorgangs gespeichert. Der Zeitbereich wird abgeschnitten. 
     
-- [StartDate (Serie)](startdate-recurrence.md) -Eigenschaft kann je nach das Serienmuster angepasst werden. Wenn beispielsweise das Serienmuster wie jeden Montag angegeben ist und das Startdatum auf 26. Oktober 2006 festgelegt ist, ist ein Donnerstag, StartDate angepasst ist und dem 30. Oktober 2006, das den nächsten Montag ist. 
+- Die [StartDate-Eigenschaft (Serie)](startdate-recurrence.md) kann abhängig vom Serienmuster angepasst werden. Wenn beispielsweise das Serienmuster jeden Montag angegeben wird und das Startwert auf den 26. Oktober 2006 festgelegt ist, was ein Donnerstag ist, wird StartDate auf den 30. Oktober 2006 eingestellt, was der nächste Montag ist. 
     
-- Wenn die [StartDate](startdate.md) -Eigenschaft des Vorgangs festgelegt ist, wird es entsprechend dem [StartDate (Wiederholung)](startdate-recurrence.md) von den Serienbereich aktualisiert. [DueDate](duedate.md) -Eigenschaft des Vorgangs wird ebenfalls aktualisiert basierend auf den neuen [StartDate](startdate.md).
+- Wenn die [StartDate](startdate.md) -Eigenschaft des Vorgangs festgelegt ist, wird Sie entsprechend der [StartDate (Serie)](startdate-recurrence.md) des Serien Bereichs aktualisiert. Die [DueDate](duedate.md) -Eigenschaft des Tasks wird auch basierend auf dem neuen [StartDate](startdate.md)aktualisiert.
     
-- Wenn die [StartDate](startdate.md) nicht festgelegt ist, wird nur die [DueDate](duedate.md) -Eigenschaft aktualisiert, damit die [StartDate (Wiederholung)](startdate-recurrence.md) von den Serienbereich übereinstimmt. 
+- Wenn das [Startwert nicht](startdate.md) festgelegt ist, wird nur die [DueDate](duedate.md) -Eigenschaft so aktualisiert, dass Sie der [StartDate (Serie)](startdate-recurrence.md) des Serien Bereichs entspricht. 
     
-Die folgende Tabelle enthält die Änderungen, die einen sich wiederholenden Vorgang der Clientzugriffsserver gemacht werden, die ein Task.Recurrence.Pattern eines jeden Montag hat.
+In der folgenden Tabelle sind die Änderungen aufgeführt, die der Client Zugriffsserver für eine wiederkehrende Aufgabe vornimmt, die ein Task. Serie. Pattern jedes montags aufweist.
   
-**Änderungen an einer Aufgabenserie**
+**Änderungen an einer wiederkehrenden Aufgabe**
 
-|**Eigenschaft**|**Originalwert**|**Aktualisierte Wert**|
+|**Eigenschaft**|**Ursprünglicher Wert**|**Aktualisierter Wert**|
 |:-----|:-----|:-----|
-|Task.StartDate  <br/> |1. Januar 2006  <br/> |30 Oktober 2006  <br/> |
-|Task.DueDate  <br/> |3. Januar 2006  <br/> |1. November 2006  <br/> |
-|Task.Recurrence.Range.StartDate  <br/> |26. Oktober 2006  <br/> |30 Oktober 2006  <br/> |
+|Task. StartDate  <br/> |1. Januar 2006  <br/> |30. Oktober 2006  <br/> |
+|Task. DueDate  <br/> |3. Januar 2006  <br/> |1. November 2006  <br/> |
+|Task. Serie. Range. StartDate  <br/> |26. Oktober 2006  <br/> |30. Oktober 2006  <br/> |
    
-Wenn Sie ein Zielordner nicht angegeben wird, werden Aufgabenelementen standardmäßig im Ordner "Aufgaben" erstellt.
+Wenn ein Zielordner nicht angegeben ist, werden die Aufgabenelemente standardmäßig im Ordner Aufgaben erstellt.
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -93,7 +93,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Status](status.md)
     
-## <a name="successful-task-createitem-response"></a>Erfolgreicher CreateItem Antwort
+## <a name="successful-task-createitem-response"></a>Erfolgreiche Aufgabe CreateItem-Antwort
 
 ### <a name="description"></a>Beschreibung
 
@@ -108,12 +108,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateItem-Anforde
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="653" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -129,9 +129,9 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateItem-Anforde
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
-Die folgenden Elemente werden in der Antwort enthalten:
+Die Antwort enthält die folgenden Elemente:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -153,12 +153,12 @@ Die folgenden Elemente werden in der Antwort enthalten:
 
 
 
-[CreateItem Operation](createitem-operation.md)
+[CreateItem-Vorgang](createitem-operation.md)
 
 
-[Erstellen von Aufgaben](http://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
+[Erstellen von Aufgaben](https://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
   
-[Aktualisieren der Vorgänge](http://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
+[Aktualisieren von Aufgaben](https://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
   
-[Deleting Tasks](http://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
+[Deleting Tasks](https://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 54dd748a-23a5-4ea2-88f2-b74c68a3c48f
-description: Das Reminder-Element gibt eine Erinnerung für einen Vorgang oder ein Kalenderelement.
-ms.openlocfilehash: cfa1160bd25f5045a3da5a98f081c9dcb3debe7b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Reminder-Element gibt eine Erinnerung für eine Aufgabe oder ein Kalenderelement an.
+ms.openlocfilehash: 71e54d920a169b8060d22bb7d7d294208c344c2e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831056"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457487"
 ---
 # <a name="reminder"></a>Erinnerung
 
-Das **Reminder** -Element gibt eine Erinnerung für einen Vorgang oder ein Kalenderelement. 
+Das **Reminder** -Element gibt eine Erinnerung für eine Aufgabe oder ein Kalenderelement an. 
   
 ```XML
 <Reminder>
@@ -34,7 +34,7 @@ Das **Reminder** -Element gibt eine Erinnerung für einen Vorgang oder ein Kalen
 
 ```
 
- **ReminderType**
+ **Reminder**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -45,23 +45,23 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[Betreff](subject.md) | [Speicherort](location.md) | [ReminderTime](remindertime.md) | [StartDate](startdate.md) | [EndDate (ReminderType)](enddate-remindertype.md) | [ItemId](itemid.md) | [RecurringMasterItemId (ItemIdType)](recurringmasteritemid-itemidtype.md)  |  [ReminderGroup](remindergroup.md) | [UID](uid.md)
+[Betreff](subject.md)  |  [Speicherort](location.md)  |  [Erinnerungsfunktion](remindertime.md)  |  [StartDate](startdate.md)  |  [EndDate (Reminder)](enddate-remindertype.md)  |  [ItemID](itemid.md)  |  [RecurringMasterItemId (itemidtype)](recurringmasteritemid-itemidtype.md)  |  [Reminder](remindergroup.md)  |  [UID](uid.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [Reminders](reminders.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

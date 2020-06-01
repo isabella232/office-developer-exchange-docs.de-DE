@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f4f958ed-9cf4-4ebf-9b01-e2df9a7cbd63
-description: Das GetPasswordExpirationDate-Element definiert eine Anforderung an das Kennwort Ablaufdatum für ein e-Mail-Konto zu erhalten. Dieses Element ist das Basiselement für den Vorgang der GetPasswordExpirationDate-Vorgang.
-ms.openlocfilehash: a9e0955566372f7b99c48c56e62ce2c5025f9f95
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetPasswordExpirationDate-Element definiert eine Anforderung zum Abrufen des Kennwortablauf Datums für ein e-Mail-Konto. Dieses Element ist das Basiselement für den GetPasswordExpirationDate-Vorgangs Vorgang.
+ms.openlocfilehash: ececbf51f71c7d87705d727229fce2314d922efb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758761"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456493"
 ---
 # <a name="getpasswordexpirationdate"></a>GetPasswordExpirationDate
 
-Das **GetPasswordExpirationDate** -Element definiert eine Anforderung an das Kennwort Ablaufdatum für ein e-Mail-Konto zu erhalten. Dieses Element ist das Basiselement für den Vorgang [GetPasswordExpirationDate Vorgang](getpasswordexpirationdate-operation.md) . 
+Das **GetPasswordExpirationDate** -Element definiert eine Anforderung zum Abrufen des Kennwortablauf Datums für ein e-Mail-Konto. Dieses Element ist das Basiselement für den [GetPasswordExpirationDate-Vorgangs](getpasswordexpirationdate-operation.md) Vorgang. 
   
 ```XML
 <GetPasswordExpirationDate>
@@ -38,25 +38,25 @@ Keine.
 
 |**Elementname**|**Beschreibung**|
 |:-----|:-----|
-|[MailboxSmtpAddress](mailboxsmtpaddress.md) <br/> |Stellt die e-Mail-Adresse des e-Mail-Kontos für die ist das Ablaufdatum für das Kennwort, das zurückgegeben werden.  <br/> |
+|[MailboxSmtpAddress](mailboxsmtpaddress.md) <br/> |Stellt die e-Mail-Adresse des e-Mail-Kontos dar, für das das Ablaufdatum des Kennworts zurückgegeben werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 Dieses Element wurde in Exchange Server 2010 Service Pack 2 (SP2) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

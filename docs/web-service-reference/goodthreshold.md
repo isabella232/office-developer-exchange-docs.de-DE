@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 68f607f5-7271-46a6-8ffc-91878185a683
-description: Das GoodThreshold-Element gibt den Prozentsatz der Teilnehmer, die den Zeitraum an, öffnen Sie in der Reihenfolge für den Zeitraum als eine gute Vorgeschlagene Besprechungszeit qualifizieren benötigen.
-ms.openlocfilehash: 8044cb2b52cb572fad8731253dffa34de9d097fa
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GoodThreshold-Element gibt den Prozentsatz der Teilnehmer an, für die der Zeitraum geöffnet sein muss, damit der Zeitraum als gute vorgeschlagene Besprechungszeit qualifiziert wird.
+ms.openlocfilehash: 34ea433ad7315d61df8cf8e22bae1166d3210af3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829746"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457312"
 ---
 # <a name="goodthreshold"></a>GoodThreshold
 
-Das **GoodThreshold** -Element gibt den Prozentsatz der Teilnehmer, die den Zeitraum an, öffnen Sie in der Reihenfolge für den Zeitraum als eine gute Vorgeschlagene Besprechungszeit qualifizieren benötigen. 
+Das **GoodThreshold** -Element gibt den Prozentsatz der Teilnehmer an, für die der Zeitraum geöffnet sein muss, damit der Zeitraum als gute vorgeschlagene Besprechungszeit qualifiziert wird. 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -50,24 +50,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Enthält die Optionen zum Abrufen von Besprechungsinformationen Vorschlag.  <br/> Es folgt der XPath-Ausdruck für dieses Element:  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
+|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Enthält die Optionen zum Abrufen von Informationen zu Besprechungs Vorschlägen.  <br/> Es folgt der XPath für dieses Element:  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Die erwartete ganzzahligen Werte liegen zwischen 0 und 50.
+Ein Textwert ist erforderlich. Die erwarteten ganzzahligen Werte liegen zwischen 0 und 50.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element ist erforderlich, wenn das [SuggestionsViewOptions](suggestionsviewoptions.md) -Element verwendet wird. Das Element **GoodThreshold** bestimmt auch an, welche Besprechungen Fair berücksichtigt werden. Es, die der Prozentsatz der Teilnehmer mit Konflikten handelt es sich um kleiner als der Schwellenwert gute und höher als 50 Prozent der vorgeschlagenen Besprechungszeit als Fair qualifiziert. Schwellenwert für die gute plus 50 entspricht den Prozentsatz, der den Schwellenwert für die gut/Fair definiert. 
+Dieses Element ist erforderlich, wenn das [SuggestionsViewOptions](suggestionsviewoptions.md) -Element verwendet wird. Das **GoodThreshold** -Element bestimmt auch, welche Besprechungen als angemessen betrachtet werden. IT der Prozentsatz der Teilnehmer mit Konflikten ist kleiner als der gute Schwellenwert und höher als 50 Prozent, die vorgeschlagene Besprechungszeit gilt als fair. Der gute Schwellenwert plus 50 entspricht dem Prozentsatz, der den Wert "Good/Fair" definiert. 
   
 > [!NOTE]
 > Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -79,5 +79,5 @@ Dieses Element ist erforderlich, wenn das [SuggestionsViewOptions](suggestionsvi
 [GetUserAvailability-Vorgang](getuseravailability-operation.md)
 
 
-[Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

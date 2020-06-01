@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f2bb0a73-94d7-4bc7-8902-bd9c69120221
-description: Das MoveFolder-Element definiert eine Anforderung an einen Ordner im Exchange-Speicher zu verschieben.
-ms.openlocfilehash: 42a990ced18cc13c7694042df786d33c018f346c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MoveFolder-Element definiert eine Anforderung zum Migrieren eines Ordners in der Exchange-Informationsspeicher.
+ms.openlocfilehash: d2fe33a6d7893d45fa116a1516fcc6ab2dea3bcf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830485"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457291"
 ---
 # <a name="movefolder"></a>MoveFolder
 
-Das **MoveFolder** -Element definiert eine Anforderung an einen Ordner im Exchange-Speicher zu verschieben. 
+Das **MoveFolder** -Element definiert eine Anforderung zum Migrieren eines Ordners in der Exchange-Informationsspeicher. 
   
 ```xml
 <MoveFolder>
@@ -43,24 +43,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ToFolderId](tofolderid.md) <br/> |Stellt den Zielordner für einen Ordner verschoben.  <br/> |
-|[FolderIds](folderids.md) <br/> |Enthält ein Array der Ordner an, in den das Element [ToFolderId](tofolderid.md) identifizierten Ordner verschieben.  <br/> |
+|[Tofolder-Datei](tofolderid.md) <br/> |Stellt den Zielordner für einen verschobenen Ordner dar.  <br/> |
+|[FolderIds](folderids.md) <br/> |Enthält ein Array von Ordnern, die in den durch das [tofolder](tofolderid.md) -Element identifizierten Ordner zu navigieren.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

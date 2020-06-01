@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e65ff6b2-3810-43ad-9728-27308891b193
 description: Informationen Sie über Möglichkeiten zur Verbesserung der Leistung von AutoErmittlung-Prozesses in der Anwendung.
-ms.openlocfilehash: d9eef3bdc76c16cf92bdbb39b36be067f0c06215
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 844b56084b4f0b5e49b4ee095688d58ce469baca
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757062"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456332"
 ---
 # <a name="improving-performance-when-using-autodiscover-for-exchange"></a>Verbessern der Leistung bei Verwendung der AutoErmittlung für Exchange
 
@@ -33,7 +33,7 @@ Auf der Oberfläche mag dies nicht wie viel. Was ist ein Szenario, in dem der Au
 
 Wenn SCP-Objekte vorhanden und gut konfiguriert haben, können sie die AutoErmittlung beschleunigen. In anderen Fällen können jedoch sie verlangsamen. Wenn SCP nicht in Ihrer Umgebung verwendet wird, überspringen Sie den gesamten SCP-Lookup-Teil des AutoErmittlung-Prozesses Zeit sparen.
   
-Die EWS Managed API ist das einfach: Legen Sie die [ExchangeService.EnableScpLookup](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.enablescplookup%28v=exchg.80%29.aspx) -Eigenschaft nur auf **false**, vor dem Aufrufen der [ExchangeService.AutodiscoverUrl](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.autodiscoverurl%28v=exchg.80%29.aspx) -Methode. Wenn Sie die [AutodiscoverService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice%28v=exchg.80%29.aspx) -Klasse verwenden, legen Sie die [AutodiscoverService.EnableScpLookup](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice.enablescplookup%28v=exchg.80%29.aspx) -Eigenschaft auf **false** vor dem Aufruf einer der Methoden. 
+Die EWS Managed API ist das einfach: Legen Sie die [ExchangeService.EnableScpLookup](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.enablescplookup%28v=exchg.80%29.aspx) -Eigenschaft nur auf **false**, vor dem Aufrufen der [ExchangeService.AutodiscoverUrl](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.autodiscoverurl%28v=exchg.80%29.aspx) -Methode. Wenn Sie die [AutodiscoverService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice%28v=exchg.80%29.aspx) -Klasse verwenden, legen Sie die [AutodiscoverService.EnableScpLookup](https://msdn.microsoft.com/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice.enablescplookup%28v=exchg.80%29.aspx) -Eigenschaft auf **false** vor dem Aufruf einer der Methoden. 
   
 ## <a name="use-autodiscover-less-often"></a>AutoErmittlung weniger häufig verwenden
 
@@ -43,9 +43,9 @@ Auch wenn Sie bereits zwischenspeichern, ausgewertet werden soll, wie lange Sie 
   
 ## <a name="minimize-requested-data"></a>Minimieren Sie die angeforderte Daten
 
-Bei Verwendung die **AutodiscoverService** -Klasse in die EWS Managed API oder des Vorgangs [GetUserSettings-Vorgang (SOAP)](http://msdn.microsoft.com/library/758d965c-ef63-4de4-9120-e293abf14ff8%28Office.15%29.aspx) mittels SOAP müssen Sie direkte Kontrolle darüber, welche Einstellungen in der Antwort zurückgegeben werden. Obwohl Sie ein paar Einstellungen anfordern können, sind wahrscheinlich, dass die Anwendung nur wenige von ihnen benötigt. Jede Einstellung, die Sie anfordern erfordert eine weitere Verarbeitung auf dem Server, d. h. mehr Zeit für eine Antwort wartet. Bewerten Sie die Einstellungen, die Sie anfordern, und zu vermeiden Sie, die Sie nicht benötigen. 
+Bei Verwendung die **AutodiscoverService** -Klasse in die EWS Managed API oder des Vorgangs [GetUserSettings-Vorgang (SOAP)](https://msdn.microsoft.com/library/758d965c-ef63-4de4-9120-e293abf14ff8%28Office.15%29.aspx) mittels SOAP müssen Sie direkte Kontrolle darüber, welche Einstellungen in der Antwort zurückgegeben werden. Obwohl Sie ein paar Einstellungen anfordern können, sind wahrscheinlich, dass die Anwendung nur wenige von ihnen benötigt. Jede Einstellung, die Sie anfordern erfordert eine weitere Verarbeitung auf dem Server, d. h. mehr Zeit für eine Antwort wartet. Bewerten Sie die Einstellungen, die Sie anfordern, und zu vermeiden Sie, die Sie nicht benötigen. 
   
-Wenn Sie die **ExchangeService.AutodiscoverUrl** -Methode in die EWS Managed API verwenden, können nicht Sie die Einstellungen ändern können. Diese Methode ist jedoch bereits relativ effiziente. Es werden nur die Einstellungen der **ExternalEwsUrl** und **InternalEwsUrl** aus der [UserSettingName-Enumeration](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.autodiscover.usersettingname%28v=exchg.80%29.aspx)angefordert.
+Wenn Sie die **ExchangeService.AutodiscoverUrl** -Methode in die EWS Managed API verwenden, können nicht Sie die Einstellungen ändern können. Diese Methode ist jedoch bereits relativ effiziente. Es werden nur die Einstellungen der **ExternalEwsUrl** und **InternalEwsUrl** aus der [UserSettingName-Enumeration](https://msdn.microsoft.com/library/microsoft.exchange.webservices.autodiscover.usersettingname%28v=exchg.80%29.aspx)angefordert.
   
 Wenn Sie den POX AutoErmittlungsdienst, [Sie können keine bestimmte Eigenschaften anfordern](autodiscover-for-exchange.md#bk_Options)verwenden.
   
@@ -54,12 +54,12 @@ Wenn Sie den POX AutoErmittlungsdienst, [Sie können keine bestimmte Eigenschaft
 
 - [AutoErmittlung für Exchange](autodiscover-for-exchange.md)
     
-- [Suchen Sie nach AutoErmittlung-Endpunkten mithilfe von SCP-Suche in Exchange](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md)
+- [Suchen nach AutoErmittlungs-Endpunkten mit der SCP-Suche in Exchange](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md)
     
 - [Aktualisieren von Konfigurationsinformationen mithilfe der AutoErmittlung](how-to-refresh-configuration-information-by-using-autodiscover.md)
     
-- [ExchangeService-Klasse](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)
+- [ExchangeService-Klasse](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)
     
-- [AutodiscoverService-Klasse](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice%28v=exchg.80%29.aspx)
+- [AutodiscoverService-Klasse](https://msdn.microsoft.com/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice%28v=exchg.80%29.aspx)
     
 

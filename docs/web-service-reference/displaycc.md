@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: af386e06-80f3-42c7-8b3c-1f7993c49d10
-description: Das Element DisplayCc stellt die Zeichenfolge, die für den Inhalt des im Feld "Cc" verwendet wird. Dies ist die verkettete Zeichenfolge alle Anzeigenamen der Cc-Empfänger.
-ms.openlocfilehash: 12f1839683445f224ebba9a3864f29412128d200
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DisplayCc-Element stellt die Anzeigezeichenfolge dar, die für den Inhalt des Felds CC verwendet wird. Dies ist die verkettete Zeichenfolge aller Anzeigenamen des CC-Empfängers.
+ms.openlocfilehash: 74e033751a464111a8451247d0bdb08c35b55708
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758039"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456542"
 ---
 # <a name="displaycc"></a>DisplayCc
 
-Das Element **DisplayCc** stellt die Zeichenfolge, die für den Inhalt des im Feld "Cc" verwendet wird. Dies ist die verkettete Zeichenfolge alle Anzeigenamen der Cc-Empfänger. 
+Das **DisplayCc** -Element stellt die Anzeigezeichenfolge dar, die für den Inhalt des Felds CC verwendet wird. Dies ist die verkettete Zeichenfolge aller Anzeigenamen des CC-Empfängers. 
   
 ```xml
 <DisplayCc/>
@@ -57,17 +57,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der die Anzeigezeichenfolge darstellt, die für den Inhalt des im Feld "Cc" verwendet wird.
+Der Wert Text stellt die Anzeigezeichenfolge dar, die für den Inhalt des Felds CC verwendet wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

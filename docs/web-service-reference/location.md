@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3fcf7133-ae1c-47b4-a187-660045f71df0
-description: Location-Elements darstellt, den Speicherort der eine Besprechung, einem Termin oder einer Rolle.
-ms.openlocfilehash: 0d2bc131763c4ffa399fe9397d247d89a84e0d1b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Location-Element stellt den Speicherort einer Besprechung, eines Termins oder einer Person dar.
+ms.openlocfilehash: 0063d5da23eb731835599f3e931e3c0cb2843ab7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830241"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458089"
 ---
-# <a name="location"></a>Speicherort
+# <a name="location"></a>Standort
 
-**Location** -Elements darstellt, den Speicherort der eine Besprechung, einem Termin oder einer Rolle. 
+Das **Location** -Element stellt den Speicherort einer Besprechung, eines Termins oder einer Person dar. 
   
 ```xml
 <Location/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -49,17 +49,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der den Speicherort einer Besprechung oder eines Termins darstellt, ist erforderlich.
+Ein Textwert, der den Ort einer Besprechung oder eines Termins darstellt, ist erforderlich.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

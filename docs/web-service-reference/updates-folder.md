@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b047e3a4-a5ab-4098-b7a0-273bc809e702
-description: Updates-Element enthält eine Reihe von Elementen, die definieren anfügen, festlegen und Löschen von Änderungen an den Eigenschaften des Ordners.
-ms.openlocfilehash: 31f25b1e88fb8756f189a6d75259dd4fc198582f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Updates-Element enthält eine Reihe von Elementen, die Append-, festlegen-und DELETE-Änderungen an Ordner Eigenschaften definieren.
+ms.openlocfilehash: 3282171dfc188a9d4735a19a97e80fe0e2f79b89
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839403"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457179"
 ---
 # <a name="updates-folder"></a>Updates (Ordner)
 
-**Updates** -Element enthält eine Reihe von Elementen, die definieren anfügen, festlegen und Löschen von Änderungen an den Eigenschaften des Ordners. 
+Das **Updates** -Element enthält eine Reihe von Elementen, die Append-, festlegen-und DELETE-Änderungen an Ordner Eigenschaften definieren. 
   
 - [UpdateFolder](updatefolder.md)
   
@@ -53,25 +53,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AppendToFolderField](appendtofolderfield.md) <br/> |Stellt Daten anfügen an eine Ordnereigenschaft während einer [UpdateFolder Vorgang](updatefolder-operation.md)dar.  <br/> |
+|[AppendToFolderField](appendtofolderfield.md) <br/> |Stellt Daten dar, die während eines [UpdateFolder-Vorgangs](updatefolder-operation.md)an eine Folder-Eigenschaft angefügt werden sollen.  <br/> |
 |[SetFolderField](setfolderfield.md) <br/> |Stellt eine Aktualisierung auf eine einzelne Eigenschaft in einem Ordner in einer [UpdateFolder-Vorgang](updatefolder-operation.md)dar.  <br/> |
-|[DeleteFolderField](deletefolderfield.md) <br/> |Stellt einen Vorgang zum Löschen einer bestimmten Eigenschaft aus einem Ordner während einer [UpdateFolder Vorgang](updatefolder-operation.md)dar.  <br/> |
+|[DeleteFolderField](deletefolderfield.md) <br/> |Stellt einen Vorgang zum Löschen einer bestimmten Eigenschaft aus einem Ordner während eines [UpdateFolder-Vorgangs](updatefolder-operation.md)dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderChange](folderchange.md) <br/> |Stellt eine Auflistung von Änderungen in einem gemeinsamen Ordner ausgeführt werden.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:`/UpdateFolder/FolderChanges/FolderChange[i]` <br/> |
+|[FolderChange](folderchange.md) <br/> |Stellt eine Auflistung von Änderungen dar, die für einen einzelnen Ordner ausgeführt werden sollen.  <br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/UpdateFolder/FolderChanges/FolderChange[i]` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

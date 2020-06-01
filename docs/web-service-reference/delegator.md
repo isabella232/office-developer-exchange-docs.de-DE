@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d359f7e8-765f-40ba-a7a0-9ce428f84523
-description: Delegator-Element enthält den Namen des Stellvertreters, die die Aufgabe zugewiesen.
-ms.openlocfilehash: 00d9c24e71037c10d7093883491242e665305295
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das delegator-Element enthält den Namen des Stellvertreters, der die Aufgabe zugewiesen hat.
+ms.openlocfilehash: 63f97838d732c29e1e434783e7a12cf45e195e76
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757897"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457361"
 ---
 # <a name="delegator"></a>Delegator
 
-**Delegator** -Element enthält den Namen des Stellvertreters, die die Aufgabe zugewiesen. 
+Das **delegator** -Element enthält den Namen des Stellvertreters, der die Aufgabe zugewiesen hat. 
   
 ```xml
 <Delegator/>
@@ -49,17 +49,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert gibt den Namen des Stellvertreters.
+Der Text-Wert steht für den Namen des Stellvertreters.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

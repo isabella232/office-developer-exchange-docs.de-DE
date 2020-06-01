@@ -1,5 +1,5 @@
 ---
-title: CreateHierarchy
+title: Createhierarchy
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 630b5610-1c19-4d4a-a5df-8cebb9afd2f4
-description: Das CreateHierarchy-Element gibt an, ob ein Client eine Hierarchietabelle erstellen kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: a5b428fe453dbc31761309b017367a7d25a01b76
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das createhierarchy-Element gibt an, ob ein Client eine Hierarchietabelle erstellen kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: 3fb0c34a8a148cc8336c70d643a21ecb6fef30b5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757765"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457522"
 ---
-# <a name="createhierarchy"></a>CreateHierarchy
+# <a name="createhierarchy"></a>Createhierarchy
 
-Das **CreateHierarchy** -Element gibt an, ob ein Client eine Hierarchietabelle erstellen kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **createhierarchy** -Element gibt an, ob ein Client eine Hierarchietabelle erstellen kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <CreateHierarchy>true or false</CreateHierarchy>
@@ -44,23 +44,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[EffectiveRights](effectiverights.md) <br/> |Die Rechte des Clients basierend auf die berechtigungseinstellungen für das Element oder Ordner enthält. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[EffectiveRights](effectiverights.md) <br/> |Enthält die Rechte des Clients basierend auf den Berechtigungseinstellungen für das Element oder den Ordner. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Der Textwert **true** gibt an, dass ein Client eine Hierarchietabelle erstellen kann. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft wird nur auf Folder-Objekten verwendet.
+Diese Eigenschaft wird nur für Folder-Objekte verwendet.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -72,5 +72,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Setting Folder-Level Permissions](http://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+[Setting Folder-Level Permissions](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

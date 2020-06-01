@@ -7,58 +7,58 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1b56f83f-3b87-4b55-8259-fde6692da681
-description: Hier finden Sie Informationen über die GetReminders EWS Vorgang.
-ms.openlocfilehash: 803dabf51b94dbd8fb01f2709a42ff59a597bfd1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier finden Sie Informationen zum reerinnerungs-EWS-Vorgang.
+ms.openlocfilehash: dcbe20c674d7524a7776d374fa6964899abf472f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758785"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458306"
 ---
 # <a name="getreminders-operation"></a>GetReminders-Vorgang
 
-Hier finden Sie Informationen zum **GetReminders** EWS-Vorgang. 
+Hier finden Sie Informationen zum **reerinnerungs** -EWS-Vorgang. 
   
-Der Vorgang des **GetReminders** Exchange-Webdienste (EWS) werden für Kalender und Erinnerungen abgerufen. 
+Mit **dem** Reminder-Exchange-Webdienste Vorgang werden Erinnerungen für Kalender-und Aufgabenelemente abgerufen. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
-## <a name="using-the-getreminders-operation"></a>Verwenden des GetReminders-Vorgangs
+## <a name="using-the-getreminders-operation"></a>Verwenden der reerinnerungs-Operation
 
-Der Vorgang **GetReminders** ruft Erinnerungen für aktuellen und zukünftigen Kalender und Aufgabenelementen im Postfach des Benutzers, je nach der Elementwerte in der Anforderung übergeben. Alle aktuellen und zukünftigen Kalenderelemente sowie Aufgaben, bei die eine Erinnerung festgelegt haben, kann die Operation abrufen. Privaten Kalenderelementen sind in Antworten enthalten. Aufgaben ohne Erinnerungen sind nicht in Antworten, noch werden e-Mails mit Erinnerungen oder Flags nachverfolgen. 
+Der **geterinnerungs** -Vorgang ruft Erinnerungen für aktuelle und zukünftige Kalender-und Aufgabenelemente im Postfach des Benutzers ab, abhängig von den in der Anforderung übergebenen Elementwerten. Mit dem Vorgang können alle aktuellen und zukünftigen Kalenderelemente sowie Aufgaben abgerufen werden, für die eine Erinnerung festgelegt wurde. Private Kalenderelemente werden in den Antworten eingeschlossen. Aufgaben ohne Erinnerungen werden in den Antworten nicht berücksichtigt, und es handelt sich auch nicht um e-Mails mit Erinnerungen oder Nachverfolgungskennzeichen. 
   
-Rufen Sie alle aktuelle Erinnerungen wird empfohlen, die [ReminderType](remindertype.md) an **Alle** und die [EndTime](endtime-remindermessagedatatype.md) auf die aktuelle Zeit festlegen. 
+Zum Abrufen aller aktuellen Erinnerungen empfiehlt es sich, den [Reminder](remindertype.md) auf " **all** " und " [EndTime](endtime-remindermessagedatatype.md) " auf die aktuelle Uhrzeit festzulegen. 
   
-Wenn die [BeginTime](begintime.md) und **EndTime für** Elemente in der Anforderung enthalten sind, die Antwort enthält Erinnerungen für alle Kalender und Aufgabenelementen, die zwischen auftreten haben eine Erinnerung, die zwischen den **BeginTime** und **EndTime**liegt.
+Wenn die [BeginTime](begintime.md) -und **EndTime** -Elemente in der Anforderung enthalten sind, enthält die Antwort Erinnerungen für alle Kalender-und Aufgabenelemente, die zwischen einer Erinnerung zwischen dem **BeginTime** und **EndTime**stattfinden.
   
-In der folgenden Tabelle wird das Verhalten des **ReminderType** -Elements beschrieben, wenn die Elemente **BeginTime** und **EndTime** enthalten sind. 
+In der folgenden Tabelle wird das Verhalten des **Reminder** -Elements beschrieben, wenn die Elemente **BeginTime** und **EndTime** enthalten sind. 
   
-|ReminderType ** Element Wert **|**Beschreibung**|
+|Reminder * *-Elementwert * *|**Beschreibung**|
 |:-----|:-----|
-|Alle  <br/> |Erinnerungen, die zwischen dem **BeginTime** und **EndTime**auftreten.  <br/> |
-|Aktuelle  <br/> |Erinnerungen zurückgegebene **Alle**, plus Erinnerungen, die älter als die angeforderte Zeitfenster sind Wenn das Ereignis noch laufende plus alle Termine unabhängig von Alter.  <br/> |
-|Alte  <br/> |Erinnerungen zurückgegebene **Alle**, minus Ereignisse, die noch nicht minus alle Termine abgeschlossen haben. Die Elemente **BeginTime** und **EndTime** müssen den **alten** Wert verwenden, festgelegt werden.  <br/> |
+|Alle  <br/> |Erinnerungen, die zwischen **BeginTime** und **EndTime**auftreten.  <br/> |
+|Current  <br/> |Erinnerungen, die von **allen**zurückgegeben werden, sowie Erinnerungen, die vor dem angeforderten Zeitfenster liegen, wenn das Ereignis noch nicht abgeschlossen ist, sowie alle Termine unabhängig vom Alter.  <br/> |
+|Alten  <br/> |Erinnerungen, die von **allen**zurückgegeben werden, minus Ereignisse, die noch nicht abgeschlossen wurden, abzüglich aller Termine. Die **BeginTime** -und **EndTime** -Elemente müssen festgelegt werden, um den **alten** Wert zu verwenden.  <br/> |
    
-### <a name="getreminders-operation-soap-headers"></a>GetReminders Vorgang SOAP-Header
+### <a name="getreminders-operation-soap-headers"></a>Reerinnerungs-Operation SOAP-Header
 
-Der Vorgang **GetReminders** können die SOAP-Header, die in der folgenden Tabelle aufgelistet sind. 
+Der **reerinnerungs** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |["ExchangeImpersonation"](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Bezeichnet die Kultur gemäß Definition in RFC 3066, "Tags for the Identification des Languages", um Zugriff auf das Postfach verwendet werden. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden sollen. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
    
-## <a name="getreminders-operation-request-example"></a>GetReminders Vorgang anforderungsbeispiel
+## <a name="getreminders-operation-request-example"></a>Reerinnerungs-Vorgangsanforderung (Beispiel)
 
-Im folgenden Beispiel wird eine **GetReminders** Vorgang Anforderung veranschaulicht, wie die ersten fünf Kalenderelemente abgerufen, die zwischen dem **BeginTime** und **EndTime**auftreten.
+Das folgende Beispiel einer **reerinnerungs** -Vorgangsanforderung zeigt, wie die ersten fünf Kalenderelemente abgerufen werden, die zwischen **BeginTime** und **EndTime**auftreten.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
@@ -72,26 +72,26 @@ Im folgenden Beispiel wird eine **GetReminders** Vorgang Anforderung veranschaul
 </soap:Envelope>
 ```
 
-Die Beispiel für eine Anforderung SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Beispiel Anforderungstext enthält die folgenden Elemente:
   
 - [GetReminders](getreminders.md)
     
 - [EndTime](endtime-remindermessagedatatype.md)
     
-- [ReminderType](remindertype.md)
+- [Reminder](remindertype.md)
     
-Der SOAP-Text kann auch die folgenden Elemente enthalten:
+Der SOAP-Textkörper kann auch die folgenden Elemente enthalten:
   
 - [BeginTime](begintime.md)
     
 - [MaxItems wird](maxitems.md)
     
-## <a name="successful-getreminders-operation-response"></a>Erfolgreiche GetReminders Vorgangsantwort
+## <a name="successful-getreminders-operation-response"></a>Erfolgreiche reerinnerungs-Vorgangs Antwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetReminders** Vorgang an. Die Antwort enthält eine Erinnerung für das Kalenderelement "Team-Meeting" und eine Erinnerung für die Aufgabe "Vorgang zum Senden von Besprechungsnotizen". 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Vorgangsanforderung von **reerinnerter** . Die Antwort enthält eine Erinnerung für das Kalenderelement "Team Besprechung" und eine Erinnerung an die Aufgabe "Besprechungsnotizen senden". 
   
 > [!NOTE]
-> Bezeichner wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Bezeichner wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -102,18 +102,18 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetReminders** 
                        MajorBuildNumber="918"
                        MinorBuildNumber="7"
                        Version="V2_10"
-                       xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                       xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <GetRemindersResponse ResponseClass="Success"
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <Reminders>
-        <Reminder xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <Reminder xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Subject>Team meeting</Subject>
           <Location />
           <ReminderTime>2014-04-15T21:00:00Z</ReminderTime>
@@ -125,7 +125,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetReminders** 
           <ReminderGroup>Calendar</ReminderGroup>
           <UID>6CF2FA62</UID>
         </Reminder>
-        <Reminder xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <Reminder xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Subject>Task to send meeting notes</Subject>
           <Location />
           <ReminderTime>2014-04-16T14:00:00Z</ReminderTime>
@@ -142,7 +142,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetReminders** 
 </s:Envelope>
 ```
 
-Die Antwort SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Antworttext Körper enthält die folgenden Elemente:
   
 - [GetRemindersResponse](getremindersresponse.md)
     
@@ -152,7 +152,7 @@ Die Antwort SOAP-Text enthält die folgenden Elemente:
     
 - [Betreff](subject.md)
     
-- [Ort](location-remindermessagedatatype.md)
+- [Standort](location-remindermessagedatatype.md)
     
 - [ReminderTime](remindertime.md)
     
@@ -164,13 +164,13 @@ Die Antwort SOAP-Text enthält die folgenden Elemente:
     
 - [RecurringMasterItemId](recurringmasteritemid.md)
     
-- [ReminderGroup](remindergroup.md)
+- [Reminder](remindergroup.md)
     
 - [UID](uid-remindertype.md)
     
-## <a name="getreminders-operation-error-response-example"></a>GetReminders Vorgang Fehler antwortbeispiel
+## <a name="getreminders-operation-error-response-example"></a>Reerinnerungs Operation-Fehlerantwort (Beispiel)
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetReminders** Vorgang Anforderung. Dies ist eine Antwort auf eine Anforderung, in der das Enddatum einer älteren Version als der Anfangstermin war. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **reerinnerungs** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung, bei der das Enddatum vor dem Startdatum lag. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -181,15 +181,15 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetReminders** Vorgang 
                        MajorBuildNumber="918"
                        MinorBuildNumber="7"
                        Version="V2_10"
-                       xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                       xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <GetRemindersResponse ResponseClass="Error"
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <MessageText>EndDate is earlier than StartDate</MessageText>
       <ResponseCode>ErrorInvalidOperation</ResponseCode>
       <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -198,7 +198,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetReminders** Vorgang 
 </s:Envelope>
 ```
 
-Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
+Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
   
 - [GetRemindersResponse](getremindersresponse.md)
     
@@ -208,7 +208,7 @@ Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Zusätzliche Fehlercodes, die für EWS generisch und für diese Operation spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
+Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

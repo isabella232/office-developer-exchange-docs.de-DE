@@ -1,5 +1,5 @@
 ---
-title: Items
+title: Elemente
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,14 +12,14 @@ api_type:
 - schema
 ms.assetid: 0811a73e-bf1f-4889-9219-73902dd47639
 description: Das Items-Element enthält ein Array von Elementen.
-ms.openlocfilehash: 241a56ee23e87d6a4320b93cc65b1f5aa1f60120
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 489e34ad0e4bcc2520febb3c213db970fa496051
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830163"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458131"
 ---
-# <a name="items"></a>Items
+# <a name="items"></a>Elemente
 
 Das **Items** -Element enthält ein Array von Elementen. 
   
@@ -57,38 +57,38 @@ Keine.
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
-|[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechungsnachricht im Exchange-Speicher.  <br/> |
+|[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechungsnachricht im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine Besprechungsabsage im Exchange-Informationsspeicher dar.  <br/> |
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
-|[PostItem-Objekt](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Speicher.  <br/> |
+|[PostItem](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Informationsspeicher dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CopyItemResponseMessage](copyitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung [CopyItem-Vorgang](copyitem-operation.md) .  <br/> |
-|[CreateItemResponseMessage](createitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen Anforderung [CreateItem Operation](createitem-operation.md) .  <br/> |
-|[GetItemResponseMessage](getitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung [GetItem Operation](getitem-operation.md) .  <br/> |
-|[GroupedItems](groupeditems.md) <br/> |Stellt eine Auflistung von Elementen, die das Ergebnis einer gruppierten [FindItem Vorgang](finditem-operation.md) sind aufrufen.  <br/> |
-|[MoveItemResponseMessage](moveitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung [MoveItem-Vorgang](moveitem-operation.md) .  <br/> |
-|[RootFolder (FindItemResponseMessage)](rootfolder-finditemresponsemessage.md) <br/> |Enthält die Ergebnisse der Suche in der ein einzelner Stammordner während einer [FindItem Vorgang](finditem-operation.md).  <br/> |
-|[UpdateItemResponseMessage](updateitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung [UpdateItem Vorgang](updateitem-operation.md) .  <br/> |
+|[CopyItemResponseMessage](copyitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer [CopyItem-Vorgangs](copyitem-operation.md) Anforderung.  <br/> |
+|[CreateItemResponseMessage](createitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [CreateItem-Vorgangs](createitem-operation.md) Anforderung.  <br/> |
+|[GetItemResponseMessage](getitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer [GetItem-Vorgangs](getitem-operation.md) Anforderung.  <br/> |
+|[GroupedItems](groupeditems.md) <br/> |Stellt eine Auflistung von Elementen dar, die das Ergebnis eines Aufrufs einer gruppierten [FindItem-Operation](finditem-operation.md) sind.  <br/> |
+|[MoveItemResponseMessage](moveitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer [MoveItem-Vorgangs](moveitem-operation.md) Anforderung.  <br/> |
+|[RootFolder (FindItemResponseMessage)](rootfolder-finditemresponsemessage.md) <br/> |Enthält die Ergebnisse einer Suche eines einzelnen Stammordners während eines FindItem- [Vorgangs](finditem-operation.md).  <br/> |
+|[UpdateItemResponseMessage](updateitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer [UpdateItem-Vorgangs](updateitem-operation.md) Anforderung.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Informationen über die Gruppe von Elementen in einer Anforderung [CreateItem-Vorgang](createitem-operation.md) finden Sie unter [Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md).
+Informationen zur Gruppe von Elementen in einer CreateItem- [Vorgangs](createitem-operation.md) Anforderung finden Sie unter [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md).
   
-[Nachrichtenelemente](message-ex15websvcsotherref.md) darstellen, E-mail-Nachrichten und andere Elemente, die vom Exchange-Webdienste (EWS) Schema nicht stark typisiert sind. Elemente wie IPM.Sharing- und IPM.InfoPath-Elemente werden als **Message**-Elemente zurückgegeben. Versionen von Exchange, beginnend mit Exchange Server 2010 zurück in Antworten nicht das Basiselement [Element](item.md) . 
+[Nachrichten](message-ex15websvcsotherref.md) Elemente stellen e-Mail-Nachrichten und alle anderen Elemente dar, die nicht stark vom Exchange-Webdienste Schema typisiert sind. Elemente wie IPM.Sharing- und IPM.InfoPath-Elemente werden als **Message**-Elemente zurückgegeben. Versionen von Exchange, die mit Exchange Server 2010 beginnen, geben das Basis [Element](item.md) Element nicht in den Antworten zurück. 
   
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Exchange ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange ausgeführt wird, auf dem die Client Zugriffs-Serverrolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

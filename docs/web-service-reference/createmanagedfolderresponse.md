@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 99062401-d356-4ce7-a5d0-c8c7aab99912
-description: Das CreateManagedFolderResponse-Element definiert eine Antwort auf eine CreateManagedFolder an.
-ms.openlocfilehash: fc486a197b7b0a0ed7310dda88d4bf8735f99876
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CreateManagedFolderResponse-Element definiert eine Antwort auf eine CreateManagedFolder-Anforderung.
+ms.openlocfilehash: a1983545f3279baeb4ec6a7a1ae56ee3501a1d82
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757794"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458352"
 ---
 # <a name="createmanagedfolderresponse"></a>CreateManagedFolderResponse
 
-Das **CreateManagedFolderResponse** -Element definiert eine Antwort auf eine CreateManagedFolder an. 
+Das **CreateManagedFolderResponse** -Element definiert eine Antwort auf eine CreateManagedFolder-Anforderung. 
   
 ```xml
 <CreateManagedFolderResponse>
@@ -42,23 +42,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

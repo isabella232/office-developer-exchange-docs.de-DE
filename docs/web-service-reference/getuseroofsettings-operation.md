@@ -11,39 +11,39 @@ api_name:
 api_type:
 - schema
 ms.assetid: 153e4440-495b-4972-9811-2fbea740142a
-description: Der Vorgang GetUserOofSettings ruft eines Postfachbenutzers Einstellungen von Office (ABWESEND) und Nachrichten ab.
-ms.openlocfilehash: 75a734999842cc33c213e02dc114f23372ae51fd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetUserOofSettings-Vorgang ruft die Abwesenheit (Out of Office, OOF) Einstellungen und Nachrichten eines Postfachbenutzers ab.
+ms.openlocfilehash: 622faa622b0ea231a6331ff62631885d4252c1f5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829691"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457697"
 ---
 # <a name="getuseroofsettings-operation"></a>GetUserOofSettings-Vorgang
 
-Der Vorgang **GetUserOofSettings** ruft eines Postfachbenutzers Einstellungen von Office (ABWESEND) und Nachrichten ab. 
+Der **GetUserOofSettings** -Vorgang ruft die Abwesenheit (Out of Office, OOF) Einstellungen und Nachrichten eines Postfachbenutzers ab. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der Vorgang **GetUserOofSettings** können die SOAP-Header, die aufgeführt und in der folgenden Tabelle beschrieben. 
+Der **GetUserOofSettings** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Identitätswechsel  <br/> |["ExchangeImpersonation"](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt.  <br/> |
+|Identitätswechsel  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
 ## <a name="using-the-getuseroofsettings-operation"></a>Verwenden des GetUserOofSettings-Vorgangs
 
-Der Vorgang **GetUserOofSettings** ermöglicht den Zugriff auf die OOF Einstellungen eines Benutzers. Ein Benutzer wird durch die e-Mail-Adresse des Benutzers identifiziert. Wenn die Abwesenheitsnachricht null ist und OOF aktiviert ist, wird keine Abwesenheitsnachricht gesendet. 
+Der **GetUserOofSettings** -Vorgang ermöglicht den Zugriff auf die Abwesenheitseinstellungen eines Benutzers. Ein Benutzer wird durch die e-Mail-Adresse des Benutzers identifiziert. Wenn die Abwesenheitsnachricht NULL ist und OOF aktiviert ist, wird keine Abwesenheitsnachricht gesendet. 
   
 > [!IMPORTANT]
-> Wenn die OOF Nachrichten durch MicrosoftOfficeOutlook festgelegt werden, wird dieser Vorgang die OOF Nachrichten im HTML-Format zurück. 
+> Wenn die Abwesenheitsnachrichten von MicrosoftOfficeOutlook festgelegt werden, werden durch diesen Vorgang die Abwesenheitsnachrichten im HTML-Format zurückgegeben. 
   
-## <a name="getuseroofsettings-request-example"></a>Anforderungsbeispiel GetUserOofSettings
+## <a name="getuseroofsettings-request-example"></a>GetUserOofSettings-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine **GetUserOofSettings** -Anforderung, die Informationen für einen Einzelbenutzer OOF abruft. 
+Das folgende Beispiel zeigt eine **GetUserOofSettings** -Anforderung, die die Abwesenheitsinformationen eines einzelnen Benutzers abruft. 
   
 ### <a name="code"></a>Code
 
@@ -53,8 +53,8 @@ Das folgende Beispiel zeigt eine **GetUserOofSettings** -Anforderung, die Inform
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <GetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns ="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns ="https://schemas.microsoft.com/exchange/services/2006/types">
         <Address>User1@example.com</Address>
       </Mailbox>
     </GetUserOofSettingsRequest>
@@ -70,13 +70,13 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Postfach (Verfügbarkeit)](mailbox-availability.md)
     
-- [Adresse (Zeichenfolge)](address-string.md)
+- [Address (Zeichenfolge)](address-string.md)
     
-## <a name="successful-getuseroofsettings-response-example"></a>Erfolgreiche GetUserOofSettings antwortbeispiel
+## <a name="successful-getuseroofsettings-response-example"></a>Erfolgreiches GetUserOofSettings-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt OOF deaktiviert mit OOF-Nachrichten.
+Das folgende Beispiel zeigt einen deaktivierten OOF-Zustand mit den OOF-Nachrichten.
   
 ### <a name="code"></a>Code
 
@@ -87,14 +87,14 @@ Das folgende Beispiel zeigt OOF deaktiviert mit OOF-Nachrichten.
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetUserOofSettingsResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetUserOofSettingsResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseMessage ResponseClass="Success">
         <ResponseCode>NoError</ResponseCode>
       </ResponseMessage>
-      <OofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <OofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Disabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -114,7 +114,7 @@ Das folgende Beispiel zeigt OOF deaktiviert mit OOF-Nachrichten.
 </soap:Envelope>
 ```
 
-### <a name="successful-getuseroofsettings-response-elements"></a>Erfolgreiche GetUserOofSettings Antwortelemente
+### <a name="successful-getuseroofsettings-response-elements"></a>Erfolgreiche GetUserOofSettings-Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -132,7 +132,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ExternalAudience](externalaudience.md)
     
-- [Dauer (' UserOofSettings ')](duration-useroofsettings.md)
+- [Dauer (UserOofSettings)](duration-useroofsettings.md)
     
 - [StartTime](starttime.md)
     
@@ -142,15 +142,15 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ExternalReply](externalreply.md)
     
-- [Message](message-ex15websvcsotherref.md)
+- [Nachricht](message-ex15websvcsotherref.md)
     
 - [AllowExternalOof](allowexternaloof.md)
     
-## <a name="getuseroofsettings-error-response-example"></a>Antwortbeispiel GetUserOofSettings-Fehler
+## <a name="getuseroofsettings-error-response-example"></a>GetUserOofSettings-Fehlerantwort Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort verursacht ein Versuch, einen anderen Benutzer OOF Informationen zugreifen.
+Das folgende Beispiel zeigt eine Fehlermeldung, die durch einen Versuch verursacht wurde, auf die OOF-Informationen eines anderen Benutzers zuzugreifen.
   
 ### <a name="code"></a>Code
 
@@ -161,7 +161,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort verursacht ein Versuch, einen and
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <soap:Fault>
@@ -169,7 +169,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort verursacht ein Versuch, einen and
       <faultstring>Microsoft.Exchange.Data.Storage.AccessDeniedException: User is not mailbox owner. User = S-1-5-21-3642464542-282065186-3871681729-1155, MailboxGuid = S-1-5-21-3642464542-282065186-3871681729-1156 ---> User is not mailbox owner. </faultstring>
       <faultactor>https://CAS01.example.com/EWS/Exchange.asmx</faultactor>
       <detail>
-        <ErrorCode xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">-2146233088</ErrorCode>
+        <ErrorCode xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">-2146233088</ErrorCode>
       </detail>
     </soap:Fault>
   </soap:Body>

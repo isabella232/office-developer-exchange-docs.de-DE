@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 26c55228-184e-4340-bd80-f86be56f3e7a
-description: Die Elemente TokenIssuers stellt die Auflistung TokenIssuer (SOAP) dar.
-ms.openlocfilehash: b070d85b32d5bce8461ac4e930329f237885bad7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Die TokenIssuers-Elemente stellt die TokenIssuer (SOAP)-Auflistung dar.
+ms.openlocfilehash: 352487ad3fd9c1ee7de756a109fb98a49d0cdcd7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839232"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457074"
 ---
 # <a name="tokenissuers-soap"></a>TokenIssuers (SOAP)
 
-Die Elemente **TokenIssuers** stellt die Auflistung [TokenIssuer (SOAP)](tokenissuer-soap.md) dar. 
+Die **TokenIssuers** -Elemente stellt die [TokenIssuer (SOAP)](tokenissuer-soap.md) -Auflistung dar. 
   
 ```XML
 <TokenIssuers>
@@ -37,25 +37,25 @@ Keine
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[TokenIssuer (SOAP)](tokenissuer-soap.md) <br/> |Gibt den [Uri (SOAP)](uri-soap.md) und [Endpunkt (SOAP)](endpoint-soap.md) für den Sicherheitstokendienst an.  <br/> |
+|[TokenIssuer (SOAP)](tokenissuer-soap.md) <br/> |Gibt den [URI (SOAP)](uri-soap.md) und den [Endpunkt (SOAP)](endpoint-soap.md) für den Sicherheitstokendienst an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetFederationInformationResponse (SOAP)](getfederationinformationresponse-soap.md) <br/> |Enthält die Antwort [GetFederationInformation-Vorgang (SOAP)](getfederationinformation-operation-soap.md) .  <br/> |
+|[GetFederationInformationResponse (SOAP)](getfederationinformationresponse-soap.md) <br/> |Enthält die [SOAP-Antwort (GetFederationInformation Operation)](getfederationinformation-operation-soap.md) .  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **TokenIssuers** stellt eine Sammlung von [TokenIssuer (SOAP)](tokenissuer-soap.md) -Elementen in der AutoErmittlung verwendet werden. 
+Das **TokenIssuers** stellt eine Auflistung von [TokenIssuer (SOAP)-](tokenissuer-soap.md) Elementen dar, die in der AutoDiscovery verwendet werden sollen. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -64,5 +64,5 @@ Die **TokenIssuers** stellt eine Sammlung von [TokenIssuer (SOAP)](tokenissuer-s
 
 [AutoErmittlung Webdienstverweis für Exchange](autodiscover-web-service-reference-for-exchange.md)
   
-[SOAP-Autodiscover XML-Elemente für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[XML-Elemente der SOAP-AutoErmittlung für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

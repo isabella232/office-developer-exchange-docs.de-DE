@@ -1,42 +1,42 @@
 ---
-title: Erstellen einer Terminserie mithilfe der EWS in Exchange
+title: Erstellen einer Terminserie mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 88ed6e87-25f7-4a54-83fa-d757a0ff2528
-description: Erfahren Sie, wie Besprechungsserien erstellen, indem Sie die EWS Managed API oder EWS in Exchange.
-ms.openlocfilehash: db25fd4c97755248ebbbc7637a71749f485f8fa8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Erfahren Sie, wie Sie wiederkehrende Besprechungen mithilfe der verwaltete EWS-API oder EWS in Exchange erstellen.
+ms.openlocfilehash: 1d04bd48c56a1a0e94eb1368166f776b3dfeb23a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756874"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456871"
 ---
-# <a name="create-a-recurring-series-by-using-ews-in-exchange"></a>Erstellen einer Terminserie mithilfe der EWS in Exchange
+# <a name="create-a-recurring-series-by-using-ews-in-exchange"></a>Erstellen einer Terminserie mithilfe von EWS in Exchange
 
-Erfahren Sie, wie Besprechungsserien erstellen, indem Sie die EWS Managed API oder EWS in Exchange.
+Erfahren Sie, wie Sie wiederkehrende Besprechungen mithilfe der verwaltete EWS-API oder EWS in Exchange erstellen.
   
-Erstellen eines Terminserie für einen Termins oder eine Besprechung nicht viel viel anders als [eine einzelne Instanz Termin oder eine Besprechung](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)erstellen. Sie müssen nur ein paar zusätzliche Serie-bezogene Eigenschaften Werte zugewiesen. Diese werden auf einer [ExchangeService.Appointment](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) [Serie](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.recurrence%28v=exchg.80%29.aspx) Objekts (Wenn Sie die EWS Managed API verwenden), eingestellt oder das [Serienmuster der](http://msdn.microsoft.com/library/5f164e5b-47b6-4242-b6b9-8d650090a831%28Office.15%29.aspx) untergeordnete Element eines [CalendarItem](http://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) -Elements (Wenn Sie Exchange-Webdienste verwenden). Eine Sache, berücksichtigen Sie beim Erstellen einer Terminserie statt einer Besprechung Einzel-Instanz ist, dass das Kalenderelement, das Sie erstellen das wiederkehrende Master-Shape für eine Datenreihe. Eine Reihe von Eigenschaften werden nur auf einem wiederkehrenden Master festgelegt. Diese Eigenschaften können Sie suchen, ändern oder löschen Sie einzelne Instanzen in einer Reihe. Aus diesem Grund ist es möglicherweise hilfreich, Nachverfolgen der die ID des wiederkehrenden Master-Shapes beim Erstellen einer Terminserie. 
+Das Erstellen einer Terminserie oder Besprechung ist nicht ganz so viel anders als das Erstellen [eines Termins oder einer Besprechung einer einzelnen Instanz](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md). Sie müssen nur einigen weiteren Serien bezogenen Eigenschaftenwerte zuweisen. Diese werden für das [Serien](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.recurrence%28v=exchg.80%29.aspx) Objekt eines [Datei "ExchangeService. Termin](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) Objekts (wenn Sie das verwaltete EWS-API verwenden) oder das untergeordnete [Serien](https://msdn.microsoft.com/library/5f164e5b-47b6-4242-b6b9-8d650090a831%28Office.15%29.aspx) Element eines [CalendarItem](https://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) -Elements (wenn Sie EWS verwenden) festgelegt. Eine Sache, die Sie beim Erstellen einer wiederkehrenden statt einer Besprechung mit einer einzelnen Instanz berücksichtigen müssen, ist, dass das von Ihnen erstellte Kalenderelement der wiederkehrende Master für eine Datenreihe ist. Eine Reihe von Eigenschaften wird nur für einen wiederkehrenden Master festgelegt. Diese Eigenschaften können Ihnen dabei helfen, einzelne Instanzen in einer Datenreihe zu finden, zu ändern oder zu löschen. Aus diesem Grund kann es hilfreich sein, die ID des wiederkehrenden Masters nachzuverfolgen, wenn Sie eine wiederkehrende Reihe erstellen. 
   
-**In Tabelle 1. Festlegen von Eigenschaften für wiederkehrende Kalenderelemente Master-Shape**
+**Tabelle 1. Eigenschaften, die für wiederkehrende Master Kalenderelemente festgelegt wurden**
 
-|**EWS Managed API-Klasse oder -Eigenschaft**|**EWS-XML-element**|**Beschreibung**|
+|**Verwaltete EWS-API Klasse oder Eigenschaft**|**EWS-XML-Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Serie-Klasse](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.recurrence%28v=exchg.80%29.aspx) <br/> Die **Serie** -Klasse ist die Basisklasse für eine Musterklasse abgeleitete, [IntervalPattern](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.recurrence.intervalpattern%28v=exchg.80%29.aspx), [RelativeYearlyPattern](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.recurrence.relativeyearlypattern%28v=exchg.80%29.aspx)oder [YearlyPattern](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.recurrence.yearlypattern%28v=exchg.80%29.aspx).  <br/> |[Serie (RecurrenceType)](http://msdn.microsoft.com/library/3d1c2c1c-4103-47ce-ad3c-ad16ec6e9b12%28Office.15%29.aspx) <br/> |Enthält die Serie-bezogene Informationen, einschließlich das Serienmuster (täglich, wöchentlich, monatlich, usw.), Start- und Endzeit, Datum, Anzahl von vorkommen, und so weiter.  <br/> |
-|[FirstOccurrence-Eigenschaft](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.firstoccurrence%28v=exchg.80%29.aspx) <br/> |[FirstOccurrence](http://msdn.microsoft.com/library/d6748860-ce0d-4d2e-b7e4-9ed834f1e45a%28Office.15%29.aspx) <br/> |Enthält die Start- und Endzeit und die Element-ID der ersten Besprechung in einer Reihe an.  <br/> |
-|[LastOccurrence-Eigenschaft](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.lastoccurrence%28v=exchg.80%29.aspx) <br/> |[LastOccurrence](http://msdn.microsoft.com/library/c9ef0fcb-4265-4e60-9986-fff0f211d00b%28Office.15%29.aspx) <br/> |Enthält die Start- und Endzeit und die Element-ID für die letzten Besprechung in einer Reihe an.  <br/> |
-|[ModifiedOccurrences-Eigenschaft](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.modifiedoccurrences%28v=exchg.80%29.aspx) <br/> |[ModifiedOccurrences](http://msdn.microsoft.com/library/552932fc-b3b4-486e-8d73-32c0bb10bd68%28Office.15%29.aspx) <br/> |Enthält den Satz aller Besprechungen in der Datenreihe, die aus der ursprünglichen Serienmuster geändert wurden.  <br/> |
-|[DeletedOccurrences-Eigenschaft](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.deletedoccurrences%28v=exchg.80%29.aspx) <br/> |[DeletedOccurrences](http://msdn.microsoft.com/library/736fb305-9528-4be8-ad37-65d7556edbf2%28Office.15%29.aspx) <br/> |Enthält den Satz aller Besprechungen in der Datenreihe, die aus der ursprünglichen Serienmuster gelöscht wurden.  <br/> |
+|[Serien Klasse](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.recurrence%28v=exchg.80%29.aspx) <br/> Die **Serien** Klasse ist die Basisklasse für eine abgeleitete Muster Klasse, entweder [IntervalPattern](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.recurrence.intervalpattern%28v=exchg.80%29.aspx), [RelativeYearlyPattern](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.recurrence.relativeyearlypattern%28v=exchg.80%29.aspx)oder [YearlyPattern](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.recurrence.yearlypattern%28v=exchg.80%29.aspx).  <br/> |[Serie (serietype)](https://msdn.microsoft.com/library/3d1c2c1c-4103-47ce-ad3c-ad16ec6e9b12%28Office.15%29.aspx) <br/> |Enthält Serien bezogene Informationen, einschließlich des Serienmusters (täglich, wöchentlich, monatlich usw.), Start-und Enddatum, Anzahl der Vorkommen usw.  <br/> |
+|[FirstOccurrence-Eigenschaft](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.firstoccurrence%28v=exchg.80%29.aspx) <br/> |[FirstOccurrence](https://msdn.microsoft.com/library/d6748860-ce0d-4d2e-b7e4-9ed834f1e45a%28Office.15%29.aspx) <br/> |Enthält die Anfangs-und Endzeiten sowie die Element-ID für die erste Besprechung in einer Datenreihe.  <br/> |
+|[LastOccurrence-Eigenschaft](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.lastoccurrence%28v=exchg.80%29.aspx) <br/> |[LastOccurrence](https://msdn.microsoft.com/library/c9ef0fcb-4265-4e60-9986-fff0f211d00b%28Office.15%29.aspx) <br/> |Enthält die Anfangs-und Endzeiten sowie die Element-ID für die letzte Besprechung in einer Datenreihe.  <br/> |
+|[ModifiedOccurrences-Eigenschaft](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.modifiedoccurrences%28v=exchg.80%29.aspx) <br/> |[ModifiedOccurrences](https://msdn.microsoft.com/library/552932fc-b3b4-486e-8d73-32c0bb10bd68%28Office.15%29.aspx) <br/> |Enthält die Gruppe aller Besprechungen in der Datenreihe, die aus dem ursprünglichen Serienmuster geändert wurden.  <br/> |
+|[DeletedOccurrences-Eigenschaft](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.deletedoccurrences%28v=exchg.80%29.aspx) <br/> |[DeletedOccurrences](https://msdn.microsoft.com/library/736fb305-9528-4be8-ad37-65d7556edbf2%28Office.15%29.aspx) <br/> |Enthält die Gruppe aller Besprechungen in der Datenreihe, die aus dem ursprünglichen Serienmuster gelöscht wurden.  <br/> |
    
-Da Besprechungen im Wesentlichen Termine, die Teilnehmer enthalten sind, werden die Codebeispiele in diesem Artikel veranschaulicht Besprechungsserien erstellen. Wenn Sie eine Terminserie erstellen möchten, können Sie in den Beispielen durch Entfernen von Code im Zusammenhang mit der Teilnehmer ändern.
+Da es sich bei Besprechungen im Wesentlichen um Termine handelt, die Teilnehmer umfassen, zeigen die Codebeispiele in diesem Artikel, wie wiederkehrende Besprechungen erstellt werden. Wenn Sie eine Terminserie erstellen möchten, können Sie die Beispiele ändern, indem Sie Code im Zusammenhang mit den Teilnehmern entfernen.
   
-## <a name="create-a-recurring-meeting-by-using-the-ews-managed-api"></a>Erstellen einer Besprechungsserie mithilfe der EWS Managed API
+## <a name="create-a-recurring-meeting-by-using-the-ews-managed-api"></a>Erstellen einer Besprechungsserie mithilfe der verwaltete EWS-API
 <a name="bk_CreateMtgEWSMA"> </a>
 
-Im folgenden Codebeispiel wird veranschaulicht, wie eine Besprechungsserie erstellen. Zunächst weisen Werte der Eigenschaften eines [Appointment-Objekts](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) verwendet, um das Erstellen einer Besprechung, und klicken Sie dann die [Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) -Methode verwenden, um sich wiederholenden Reihe für den Kalenderordner zu speichern und Senden von Besprechungsanfragen an die Teilnehmer. Verwenden Sie schließlich die [Appointment.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) -Methode, um sehen Sie sich auf dem sich wiederholenden Folienmaster für die soeben erstellte Terminserie festgelegten Werte. 
+Das folgende Codebeispiel zeigt, wie Sie eine Besprechungsserie erstellen. Weisen Sie zunächst den Eigenschaften eines [Termin Objekts](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) , das zum Erstellen einer Besprechung verwendet wird, Werte zu, und verwenden Sie dann die [Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) -Methode, um die wiederkehrende Reihe in Ihrem Kalenderordner zu speichern und Besprechungsanfragen an die Teilnehmer zu senden. Verwenden Sie schließlich die [Termin. Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) -Methode, um die Werte zu betrachten, die für den wiederkehrenden Master für die wiederkehrende Reihe festgelegt wurden, die Sie soeben erstellt haben. 
   
-In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben. In diesem Beispiel wird die Methode gibt die [Element-ID](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) der sich wiederholenden Reihe wiederkehrender Master-Shapes zurück. 
+In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben. Die Methode in diesem Beispiel gibt die [Element-ID](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) des wiederkehrenden Masters der wiederkehrenden Reihe zurück. 
   
 ```cs
 public static ItemId CreateARecurringMeeting(ExchangeService service)
@@ -90,17 +90,17 @@ public static ItemId CreateARecurringMeeting(ExchangeService service)
 
 ```
 
-## <a name="create-a-recurring-meeting-by-using-ews"></a>Erstellen einer Besprechungsserie mithilfe der Exchange-Webdienste
+## <a name="create-a-recurring-meeting-by-using-ews"></a>Erstellen einer Besprechungsserie mithilfe von EWS
 <a name="bk_CreateMtgEWS"> </a>
 
-Die Anforderung und Antwort-XML in den folgenden Beispielen werden zum [Erstellen einer Besprechungsserie mithilfe der EWS Managed API](#bk_CreateMtgEWSMA)-Aufrufe entsprechen. Beachten Sie, dass als Serie-spezifischen Werte auf die [Recurrence](http://msdn.microsoft.com/library/5f164e5b-47b6-4242-b6b9-8d650090a831%28Office.15%29.aspx) -Element festlegen, wird die Anforderung im Wesentlichen wie eine würden Sie verwenden, um einen Termin Einzel-Instanz zu erstellen. Das folgende Beispiel zeigt den Anforderungs-XML-Code beim Erstellen einer Besprechung mithilfe des [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx)-Vorgangs. 
+Der Anforderungs-und Antwort-XML-Code in den folgenden Beispielen entspricht den aufrufen, die zum [Erstellen einer Besprechungsserie mithilfe der verwaltete EWS-API](#bk_CreateMtgEWSMA)ausgeführt werden. Beachten Sie, dass die Anforderung im Wesentlichen identisch mit dem Festlegen von Serien spezifischen Werten für das [Serien](https://msdn.microsoft.com/library/5f164e5b-47b6-4242-b6b9-8d650090a831%28Office.15%29.aspx) Element ist, die Sie zum Erstellen eines Termins mit einer einzelnen Instanz verwenden würden. Das folgende Beispiel zeigt den Anforderungs-XML-Code beim Erstellen einer Besprechung mithilfe des [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx)-Vorgangs. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
     <t:TimeZoneContext>
@@ -203,21 +203,21 @@ Die Anforderung und Antwort-XML in den folgenden Beispielen werden zum [Erstelle
 
  Das folgende Beispiel zeigt den Antwort-XML-Code, der vom **CreateItem**-Vorgang zurückgegeben wird. 
   
-Die Attribute **ItemId** und **ChangeKey** werden zur besseren Lesbarkeit gekürzt. 
+Die Attribute **ItemID** und **ChangeKey** werden zur Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="893" MinorBuildNumber="10" 
-                         Version="V2_10" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         Version="V2_10" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -234,16 +234,16 @@ Die Attribute **ItemId** und **ChangeKey** werden zur besseren Lesbarkeit gekür
 
 ```
 
-Das folgende Beispiel zeigt die Anforderung XML, das generiert wird, wenn Sie die [GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) Operation verwenden und die **ItemId** für die Datenreihe, die Sie erstellt und request-Eigenschaften festlegen nur für ein wiederkehrendes Master-Shape zu bestätigen, dass die zurückgegebene **ItemId** der Server, die beim Erstellen einer Terminserie ist für ein wiederkehrendes Master. 
+Das folgende Beispiel zeigt den Anforderungs-XML-Code, der generiert wird, wenn Sie den [GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) -Vorgang und das **ItemID** -Objekt für die von Ihnen erstellte Datenreihe verwenden und Anforderungseigenschaften nur für einen wiederkehrenden Master festlegen, um zu bestätigen, dass die vom Server zurückgegebene **ItemID** beim Erstellen einer wiederkehrenden Reihe für eine wiederkehrende Masterseite gilt 
   
-Die Attribute **ItemId** und **ChangeKey** werden zur besseren Lesbarkeit gekürzt. 
+Die Attribute **ItemID** und **ChangeKey** werden zur Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
   </soap:Header>
@@ -272,21 +272,21 @@ Die Attribute **ItemId** und **ChangeKey** werden zur besseren Lesbarkeit gekür
 
  Das folgende Beispiel zeigt den Antwort-XML-Code, der vom **GetItem**-Vorgang zurückgegeben wird. 
   
-Die Attribute **ItemId** und **ChangeKey** werden zur besseren Lesbarkeit gekürzt. 
+Die Attribute **ItemID** und **ChangeKey** werden zur Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="893" MinorBuildNumber="10" 
-                         Version="V2_10" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         Version="V2_10" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -336,12 +336,12 @@ Die Attribute **ItemId** und **ChangeKey** werden zur besseren Lesbarkeit gekür
     
 - [Serienmuster und EWS](recurrence-patterns-and-ews.md)
     
-- [Zugriff auf eine Terminserie mithilfe von EWS in Exchange](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)
+- [Zugreifen auf eine Terminserie mithilfe von EWS in Exchange](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Löschen der Termine in einer Terminserie mithilfe der EWS in Exchange](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md)
+- [Löschen von Terminen in einer Terminserie mithilfe von EWS in Exchange](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Aktualisieren einer Terminserie mithilfe der Exchange-Webdienste](how-to-update-a-recurring-series-by-using-ews.md)
+- [Aktualisieren einer Terminserie mithilfe von EWS](how-to-update-a-recurring-series-by-using-ews.md)
     
-- [Aktualisieren einer Terminserie mithilfe der EWS in Exchange](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
+- [Aktualisieren einer Terminserie mithilfe von EWS in Exchange](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
     
 

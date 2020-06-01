@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c54cdeaf-6761-4d1a-a329-fb279f0e2a64
-description: Das Ids-Element enthält ein Array mit den IDs der Zeitzone-Definition.
-ms.openlocfilehash: e4f8afb1292b3cb9f3990d4613b7461050976a59
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IDs-Element enthält ein Array von Zeit Zonen Definitions Bezeichnern.
+ms.openlocfilehash: 1c5a6974c8d3abc318ff122f3db09d8c3472dc65
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829856"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457620"
 ---
 # <a name="ids"></a>IDs
 
-Das **Ids** -Element enthält ein Array mit den IDs der Zeitzone-Definition. 
+Das **IDs** -Element enthält ein Array von Zeit Zonen Definitions Bezeichnern. 
   
 ```XML
 <Ids>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ID (TimeZone)](id-timezone.md) <br/> |Das Element, das eine einzelne Zeitzonendefinition identifiziert.  <br/> |
+|[ID (Zeitzone)](id-timezone.md) <br/> |Das-Element, das eine einzelne Zeitzonendefinition identifiziert.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -50,13 +50,13 @@ Keine.
 |:-----|:-----|
 |[GetServerTimeZones](getservertimezones.md) <br/> |Definiert eine Anforderung zum Abrufen von Zeitzonendefinitionen vom Exchange-Server.  <br/> |
    
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

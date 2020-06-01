@@ -1,38 +1,38 @@
 ---
-title: Erstellen von Terminen in einer bestimmten Zeitzone mithilfe der EWS in Exchange
+title: Erstellen von Terminen in einer bestimmten Zeitzone mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e68aaa27-250e-4170-b099-077a979c127c
-description: Erfahren Sie, wie Termine in bestimmten Zeitzonen zu erstellen, indem Sie die EWS Managed API oder EWS in Exchange.
-ms.openlocfilehash: 1725498847f89a417b62a06fb8a3109af5c4deb0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Informationen zum Erstellen von Terminen in bestimmten Zeitzonen mithilfe der verwaltete EWS-API oder EWS in Exchange.
+ms.openlocfilehash: 9b1160a9d62ab092d1b60265eba1ad953be0032b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756883"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456857"
 ---
-# <a name="create-appointments-in-a-specific-time-zone-by-using-ews-in-exchange"></a>Erstellen von Terminen in einer bestimmten Zeitzone mithilfe der EWS in Exchange
+# <a name="create-appointments-in-a-specific-time-zone-by-using-ews-in-exchange"></a>Erstellen von Terminen in einer bestimmten Zeitzone mithilfe von EWS in Exchange
 
-Erfahren Sie, wie Termine in bestimmten Zeitzonen zu erstellen, indem Sie die EWS Managed API oder EWS in Exchange.
+Informationen zum Erstellen von Terminen in bestimmten Zeitzonen mithilfe der verwaltete EWS-API oder EWS in Exchange.
   
-Beim Erstellen eines Termins oder einer Besprechung auf einem Exchange-Kalender wird die Zeitzone verwendet, um die Anfangs- und Endzeiten angeben als Zeitzone für den Termin Erstellung gespeichert. Diese Zeitzone wird auch [interpretiert werden Datum und Uhrzeit Werte, die nicht über eine explizite Angabe einer Zeitzone verfügen](time-zones-and-ews-in-exchange.md), verwendet, daher es wichtig ist zu verstehen, die Optionen zum Angeben der Zeitzone.
+Wenn ein Termin oder eine Besprechung in einem Exchange-Kalender erstellt wird, wird die Zeitzone, die zum Angeben der Start-und Endzeit verwendet wird, als Erstellungs Zeitzone für den Termin gespeichert. Diese Zeitzone wird auch verwendet, um [Datums-und Uhrzeitwerte zu interpretieren, für die keine explizite Zeitzone angegeben](time-zones-and-ews-in-exchange.md)ist, daher ist es wichtig, die Optionen zum Angeben der Zeitzone zu verstehen.
   
-## <a name="creating-appointments-in-different-time-zones-by-using-the-ews-managed-api"></a>Erstellen von Terminen in unterschiedlichen Zeitzonen mithilfe der EWS Managed API
+## <a name="creating-appointments-in-different-time-zones-by-using-the-ews-managed-api"></a>Erstellen von Terminen in unterschiedlichen Zeitzonen mithilfe der verwaltete EWS-API
 
-Wenn Termine oder die EWS Managed API Besprechungen erstellen, müssen Sie drei Optionen zur Angabe der Time-Zone:
+Beim Erstellen von Terminen oder Besprechungen mit dem verwaltete EWS-API haben Sie drei Optionen zum Angeben der Zeitzone:
   
-- Verwenden die Zeitzone des Computers, auf dem die EWS Managed API ausgeführt wird, wenn Sie keinen an eine Zeitzone beim Erstellen des [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekts. 
+- Wenn Sie die Zeitzone des Computers verwenden möchten, auf dem ihr verwaltete EWS-API ausgeführt wird, geben Sie beim Erstellen des [Datei "ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekts keine Zeitzone an. 
     
-- Um eine bestimmte Zeitzone für alle Datum/Uhrzeit-Eigenschaften zu verwenden, geben einschließlich Eigenschaften beim Erstellen eines neuen Termins oder eine Besprechung, Sie eine Zeitzone in der Konstruktor für das **ExchangeService** -Objekt. 
+- Wenn Sie eine bestimmte Zeitzone für alle Date/Time-Eigenschaften, einschließlich der Eigenschaften beim Erstellen eines neuen Termins oder einer Besprechung, verwenden möchten, geben Sie im Konstruktor für das **Datei "ExchangeService** -Objekt eine Zeitzone an. 
     
-- Um eine andere Zeitzone als der in der [ExchangeService.TimeZone](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.timezone%28v=exchg.80%29.aspx) -Eigenschaft angegebene verwenden möchten, verwenden Sie die Eigenschaften [Appointment.StartTimeZone](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.starttimezone%28v=exchg.80%29.aspx) und [Appointment.EndTimeZone](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.endtimezone%28v=exchg.80%29.aspx) . 
+- Um eine andere Zeitzone als die in der [Datei "ExchangeService. TimeZone](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.timezone%28v=exchg.80%29.aspx) -Eigenschaft angegebene Zeitzone zu verwenden, verwenden Sie die Eigenschaften [Termin. StartTimeZone](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.starttimezone%28v=exchg.80%29.aspx) und [Termin. EndTimeZone](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.endtimezone%28v=exchg.80%29.aspx) . 
     
     > [!NOTE]
-    > **EndTimeZone** -Eigenschaft ist nur verfügbar, wenn die Eigenschaft [ExchangeService.RequestedServerVersion](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservicebase.requestedserverversion%28v=exchg.80%29.aspx) auf **Exchange2010** oder höher festgelegt ist. Wenn es nicht verfügbar ist, betrifft festlegen **StartTimeZone** sowohl der Anfangs- und Endzeiten des Termins. 
+    > Die **EndTimeZone** -Eigenschaft ist nur verfügbar, wenn die [Datei "ExchangeService. RequestedServerVersion](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.requestedserverversion%28v=exchg.80%29.aspx) -Eigenschaft auf **Exchange2010** oder höher festgelegt ist. Wenn er nicht verfügbar ist, gilt das Festlegen der **StartTimeZone** für die Start-und Endzeit des Termins. 
   
-Im folgenden Beispiel wird die EWS Managed API verwendet, um drei Termine zu erstellen. Jeder Termin ist in zwei Tagen, 1:00 Uhr in einem nicht angegebenen Zeitzone und End eine Stunde später starten festgelegt. Der erste Termin wird in der Zeitzone des Clientcomputers mithilfe von Standardverhalten EWS Managed API erstellt. Die zweite wird in der zentralen Zeitzone mithilfe der Eigenschaften **Appointment.StartTimeZone** und **Appointment.EndTimeZone** erstellt. Die dritte wird mithilfe der **ExchangeService.TimeZone** -Eigenschaft in der Mountain Standard Time-Zone erstellt. 
+Im folgenden Beispiel wird der verwaltete EWS-API verwendet, um drei Termine zu erstellen. Jeder Termin wird so festgelegt, dass er bei 1:00 Uhr zwei Tage ab jetzt in einer nicht angegebenen Zeitzone beginnt und eine Stunde später endet. Der erste Termin wird in der Zeitzone des Clientcomputers mithilfe des Standard verwaltete EWS-API Verhaltens erstellt. Die zweite wird mithilfe der Eigenschaften **Termin. StartTimeZone** und **Termin. EndTimeZone** in der zentralen Zeitzone erstellt. Der dritte wird in der Mountain-Zeitzone mithilfe der **Datei "ExchangeService. TimeZone** -Eigenschaft erstellt. 
   
 ```cs
 using Microsoft.Exchange.WebServices.Data;
@@ -124,26 +124,26 @@ static void CreateAppointments(string userEmail, SecureString userPass)
 }
 ```
 
-Wenn auf einem Clientcomputer in der Eastern Time-Zone konfiguriert wird in diesem Beispiel wird ausgeführt, und die drei Termine erstellt werden von einem Client in der Eastern Time-Zone konfiguriert sie 1:00 Uhr, angezeigt werden angezeigt: 00 Uhr und 3:00 Uhr fest.
+Wenn dieses Beispiel auf einem Clientcomputer ausgeführt wird, der in der Eastern Time-Zone konfiguriert wurde, und die drei von ihm erstellten Termine von einem in der Eastern Time-Zone konfigurierten Client angezeigt werden, werden diese auf 1:00 Uhr, 2:00 Uhr und 3:00 pm angezeigt.
   
-## <a name="creating-appointments-in-different-time-zones-by-using-ews"></a>Erstellen von Terminen in unterschiedlichen Zeitzonen mithilfe der Exchange-Webdienste
+## <a name="creating-appointments-in-different-time-zones-by-using-ews"></a>Erstellen von Terminen in unterschiedlichen Zeitzonen mithilfe von EWS
 
-Wenn Termine oder Besprechungen mithilfe von EWS erstellen, müssen Sie drei Optionen zur Angabe der Time-Zone:
+Beim Erstellen von Terminen oder Besprechungen mithilfe von EWS stehen Ihnen drei Optionen zum Angeben der Zeitzone zur Ver:
   
-- Keinen Sie koordinierte Weltzeit (UTC) für die Verwendung eines [TimeZoneContext](http://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) -Elements, [MeetingTimeZone](http://msdn.microsoft.com/library/413b47d9-8126-462c-9a4f-4e771a5e8889%28Office.15%29.aspx) -Element (nur Exchange 2007), oder [StartTimeZone](http://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx) und [EndTimeZone](http://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx) -Elemente (Exchange 2010 und höher) in der [ CreateItem Operation](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) Anforderung. 
+- Um koordinierte Weltzeit (Coordinated Universal Time, UTC) zu verwenden, fügen Sie kein [timezonecontext](https://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) -Element, [MeetingTimeZone](https://msdn.microsoft.com/library/413b47d9-8126-462c-9a4f-4e771a5e8889%28Office.15%29.aspx) -Element (nur Exchange 2007) oder [StartTimeZone](https://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx) -und [EndTimeZone](https://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx) -Elemente (Exchange 2010 und höher) in die [CreateItem-Vorgangs](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) Anforderung ein. 
     
-- Um eine bestimmte Zeitzone für alle Datum/Uhrzeit-Eigenschaften zu verwenden, geben einschließlich Eigenschaften beim Erstellen eines neuen Termins oder eine Besprechung, Sie eine Zeitzone im [TimeZoneContext](http://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) -Element in der Anforderung [CreateItem Operation](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) . 
+- Wenn Sie eine bestimmte Zeitzone für alle Date/Time-Eigenschaften, einschließlich der Eigenschaften beim Erstellen eines neuen Termins oder einer Besprechung, verwenden möchten, geben Sie im [timezonecontext](https://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) -Element in der [CreateItem-Vorgangs](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) Anforderung eine Zeitzone an. 
     
-- Fügen Sie für die Verwendung eine andere Zeitzone als der im [TimeZoneContext](http://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) -Element angegebene [TimeZoneContext](http://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) -Element, [MeetingTimeZone](http://msdn.microsoft.com/library/413b47d9-8126-462c-9a4f-4e771a5e8889%28Office.15%29.aspx) -Element (nur Exchange 2007) oder [StartTimeZone](http://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx) und [EndTimeZone](http://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx) Elemente ( Exchange 2010 und höher) in der Anforderung [CreateItem Operation](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) . 
+- Um eine andere Zeitzone als die im [timezonecontext](https://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) -Element angegebene Zeitzone zu verwenden, schließen Sie ein [timezonecontext](https://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) -Element, ein [MeetingTimeZone](https://msdn.microsoft.com/library/413b47d9-8126-462c-9a4f-4e771a5e8889%28Office.15%29.aspx) -Element (nur Exchange 2007) oder [StartTimeZone](https://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx) -und [EndTimeZone](https://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx) -Elemente (Exchange 2010 und höher) in die [CreateItem-Vorgangs](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) Anforderung ein. 
     
-Das folgende Beispiel [CreateItem Operation](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) Anforderung wird ein Termin mit UTC erstellt. Beachten Sie, dass das **TimeZoneContext** -Element, das **StartTimeZone** -Element und das **EndTimeZone** -Element nicht vorhanden sind. Die Werte für **Start** und **End** -Element werden in UTC ausgedrückt. 
+Im folgenden Beispiel wird mit der [CreateItem-Vorgangs](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) Anforderung ein Termin mithilfe von UTC erstellt. Beachten Sie, dass das **timezonecontext** -Element, das **StartTimeZone** -Element und das **EndTimeZone** -Element fehlen. Die Werte **Start** und **End** -Element werden in UTC ausgedrückt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
   </soap:Header>
@@ -162,14 +162,14 @@ Das folgende Beispiel [CreateItem Operation](http://msdn.microsoft.com/library/7
 </soap:Envelope>
 ```
 
-Das folgende Beispiel [CreateItem Operation](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) Anforderung mithilfe der **StartTimeZone** und **EndTimeZone** -Elemente an der zentralen Zeitzone für den Termin. Beachten Sie, dass das **TimeZoneContext** -Element nicht vorhanden ist. Falls es vorhanden sind, würde die Werte der Elemente **StartTimeZone** und **EndTimeZone** seinen Wert überschreiben. In diesem Fall werden **Start** und **End** -Elementwerte in UTC ausgedrückt. 
+Im folgenden Beispiel für die [CreateItem-Vorgangs](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) Anforderung werden die Elemente **StartTimeZone** und **EndTimeZone** verwendet, um die zentrale Zeitzone für den Termin anzugeben. Beachten Sie, dass das **timezonecontext** -Element nicht vorhanden ist. Wenn er jedoch vorhanden war, überschreiben die Werte der Elemente **StartTimeZone** und **EndTimeZone** seinen Wert. Wieder werden die **Start** - **und** Endelement Werte in UTC ausgedrückt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
   </soap:Header>
@@ -190,14 +190,14 @@ Das folgende Beispiel [CreateItem Operation](http://msdn.microsoft.com/library/7
 </soap:Envelope>
 ```
 
-Das folgende Beispiel [CreateItem Operation](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) Anforderung wird das **TimeZoneContext** -Element der Mountain Standard Time-Zone. Beachten Sie, dass die **StartTimeZone** und **EndTimeZone** -Elemente nicht vorhanden sind. In diesem Fall werden **Start** und **End** -Elementwerte in UTC ausgedrückt. 
+Im folgenden Beispiel für [CreateItem-Vorgangs](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) Anforderung wird das **timezonecontext** -Element auf die Mountain-Zeitzone festgelegt. Beachten Sie, dass die **StartTimeZone** -und **EndTimeZone** -Elemente nicht vorhanden sind. Wieder werden die **Start** - **und** Endelement Werte in UTC ausgedrückt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
     <t:TimeZoneContext>
@@ -219,18 +219,18 @@ Das folgende Beispiel [CreateItem Operation](http://msdn.microsoft.com/library/7
 </soap:Envelope>
 ```
 
-Wenn die drei Termine erstellt haben, nach dem vorherigen Beispiel EWS Anforderungen angezeigt werden, von einem Client in der Eastern Time-Zone konfiguriert sie 1:00 Uhr, angezeigt werden: 00 Uhr und 3:00 Uhr fest.
+Wenn die drei von den vorherigen EWS-Beispiel Anforderungen erstellten Termine von einem in der Eastern Time-Zone konfigurierten Client angezeigt werden, werden Sie um 1:00 Uhr, 2:00 Uhr und 3:00 Uhr angezeigt.
   
 ## 
 
-Nachdem Sie wissen, wie Termine in bestimmten Zeitzonen erstellen sollten Sie zu einer anderen [Zeitzonen auf vorhandene Termine zu aktualisieren](how-to-update-the-time-zone-for-an-appointment-by-using-ews-in-exchange.md) . 
+Da Sie nun wissen, wie Termine in bestimmten Zeitzonen erstellt werden, sollten Sie [die Zeitzonen für vorhandene Termine](how-to-update-the-time-zone-for-an-appointment-by-using-ews-in-exchange.md) auf eine andere aktualisieren. 
   
 ## <a name="see-also"></a>Siehe auch
 
 
 - [Zeitzonen und EWS in Exchange](time-zones-and-ews-in-exchange.md)
     
-- [Aktualisieren Sie die Zeitzone für einen Termin im Exchange mithilfe der Exchange-Webdienste](how-to-update-the-time-zone-for-an-appointment-by-using-ews-in-exchange.md)
+- [Aktualisieren der Zeitzone für einen Termin mithilfe von EWS in Exchange](how-to-update-the-time-zone-for-an-appointment-by-using-ews-in-exchange.md)
     
 - [Erstellen von Terminen und Besprechungen mithilfe von EWS in Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
     

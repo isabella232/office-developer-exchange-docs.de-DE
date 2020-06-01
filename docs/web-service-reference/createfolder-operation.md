@@ -1,5 +1,5 @@
 ---
-title: CreateFolder Operation
+title: CreateFolder-Vorgang
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6f6c334c-b190-4e55-8f0a-38f2a018d1b3
-description: Der CreateFolder-Vorgang erstellt Ordner, Kalenderordnern, Kontakteordner, Aufgaben Ordner und Suche Ordner.
-ms.openlocfilehash: 97156d4a3747cacbdcf9563d21d93a0aa44c3358
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der CreateFolder-Vorgang erstellt Ordner, Kalenderordner, Kontakteordner, Aufgabenordner und Suchordner.
+ms.openlocfilehash: 125a6d212e5eaf85ace71c048de809f3a05ba9b6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757758"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457550"
 ---
-# <a name="createfolder-operation"></a>CreateFolder Operation
+# <a name="createfolder-operation"></a>CreateFolder-Vorgang
 
-Der CreateFolder-Vorgang erstellt Ordner, Kalenderordnern, Kontakteordner, Aufgaben Ordner und Suche Ordner.
+Der CreateFolder-Vorgang erstellt Ordner, Kalenderordner, Kontakteordner, Aufgabenordner und Suchordner.
   
-## <a name="createfolder-request-example"></a>CreateFolder-anforderungsbeispiel
+## <a name="createfolder-request-example"></a>CreateFolder-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung CreateFolder veranschaulicht eine Anforderung zum Erstellen von zwei neue Ordner im Stamm Postfach bilden.
+Im folgenden Beispiel einer CreateFolder-Anforderung wird gezeigt, wie eine Anforderung zum Erstellen von zwei neuen Ordnern im Postfachstamm Formular erstellt wird.
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateFolder xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateFolder xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ParentFolderId>
         <t:DistinguishedFolderId Id="msgfolderroot"/>
       </ParentFolderId>
@@ -70,23 +70,23 @@ In der Anforderung werden folgende Elemente verwendet:
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
 > [!NOTE]
-> Das Schema, das diese Elemente beschreibt, befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem MicrosoftExchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist. 
+> Das Schema, in dem diese Elemente beschrieben werden, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Serverrolle installiert ist. 
   
-Um weitere Optionen für die Anforderung an die CreateFolder-Operation zu suchen, verwenden Sie die Schemahierarchie. Starten Sie die [CreateFolder](createfolder.md) -Element. 
+Um andere Optionen für die Anforderungsnachricht des CreateFolder-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [CreateFolder](createfolder.md) -Element. 
   
 > [!NOTE]
-> Wenn Sie einen Suchordner mit einer Einschränkung mithilfe der **Kalender: Organizer** -Eigenschaft erstellen, zurückgegebenen Gespräch Ordner nachfolgende Get die Einschränkung wieder mit der **Nachricht: aus** -Eigenschaft in seine Position. Diese beiden Eigenschaften zuordnen der gleichen zugrunde liegenden MAPI-Eigenschaft. 
+> Wenn Sie einen Suchordner mit einer Einschränkung mithilfe der **Calendar: Organizer** -Eigenschaft erstellen, wird durch einen nachfolgenden Aufruf des Get-Ordners die Einschränkung mit der **Message: from** -Eigenschaft an ihrer Stelle zurückgegeben. Diese beiden Eigenschaften sind der gleichen zugrunde liegenden MAPI-Eigenschaft zugeordnet. 
   
-Die CreateFolder-Operation unterstützt die Erstellung einer benutzerdefinierten Ordner-Klasse nur, wenn Sie des Ordners erstellen mithilfe eine generische Ordner "Type"-Element und das **FolderClass** -Element festgelegt. 
+Der CreateFolder-Vorgang unterstützt die Erstellung einer benutzerdefinierten ordnerklasse nur, wenn Sie den Ordner mithilfe eines generischen Folder Type-Elements erstellen und das **FolderClass** -Element festlegen. 
   
-## <a name="successful-createfolder-response-example"></a>Erfolgreiche CreateFolder-Antwort-Beispiel
+## <a name="successful-createfolder-response-example"></a>Erfolgreiches Beispiel für CreateFolder-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateFolder-Anforderung. In diesem Beispiel gibt die Antwort den IDs der neuen Ordner.
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateFolder-Anforderung. In diesem Beispiel gibt die Antwort die Bezeichner der neuen Ordner zurück.
   
 > [!NOTE]
-> Die Ordner-ID und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Ordner-ID und der Change-Schlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ### <a name="code"></a>Code
 
@@ -97,12 +97,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateFolder-Anfor
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -126,7 +126,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateFolder-Anfor
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -146,13 +146,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [FolderId](folderid.md)
     
-Wenn andere Optionen für die Antwortnachricht des Vorgangs CreateFolder suchen möchten, verwenden Sie die Schemahierarchie. Starten Sie das [CreateFolderResponse](createfolderresponse.md) -Element. 
+Um andere Optionen für die Antwortnachricht des CreateFolder-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [CreateFolderResponse](createfolderresponse.md) -Element. 
   
 ## <a name="createfolder-error-response"></a>CreateFolder-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine CreateFolder-Anforderung.
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine CreateFolder-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -163,12 +163,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine CreateFolder-Anforderung.
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateFolderResponseMessage ResponseClass="Error">
           <m:MessageText>A folder with the specified name already exists.</m:MessageText>
@@ -182,7 +182,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine CreateFolder-Anforderung.
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
@@ -202,7 +202,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [Ordner](folders-ex15websvcsotherref.md)
     
-Wenn andere Optionen für die Fehlermeldung Antwort des Vorgangs CreateFolder suchen möchten, verwenden Sie die Schemahierarchie. Starten Sie das [CreateFolderResponse](createfolderresponse.md) -Element. 
+Um andere Optionen für die Fehlerantwort Meldung des CreateFolder-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [CreateFolderResponse](createfolderresponse.md) -Element. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -210,13 +210,13 @@ Wenn andere Optionen für die Fehlermeldung Antwort des Vorgangs CreateFolder su
 
 [FindItem-Vorgang](finditem-operation.md)
   
-[FindFolder Operation](findfolder-operation.md)
+[FindFolder-Vorgang](findfolder-operation.md)
   
- **CreateFolderType**
+ **Createfoldertype**
 
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Erstellen von Ordnern (Exchange Web Services)](http://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
+[Erstellen von Ordnern (Exchange Webdienste)](https://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e5b4699a-476e-4053-bb52-873eb921c046
-description: Das ProtectionRulesConfiguration-Element enthält Konfigurationsinformationen für den Schutz Regeln Dienst Service.
-ms.openlocfilehash: 9c286fcf9752d591d53323f45a264f4bdd078c1c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ProtectionRulesConfiguration-Element enthält Dienstkonfigurationsinformationen für den Schutz Regeldienst.
+ms.openlocfilehash: e664fba78f170c9f4c59b49b3a08c0dd2e4ed4cd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830912"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456764"
 ---
 # <a name="protectionrulesconfiguration"></a>ProtectionRulesConfiguration
 
-Das **ProtectionRulesConfiguration** -Element enthält Konfigurationsinformationen für den Schutz Regeln Dienst Service. 
+Das **ProtectionRulesConfiguration** -Element enthält Dienstkonfigurationsinformationen für den Schutz Regeldienst. 
   
 ```XML
 <ProtectionRulesConfiguration RefreshInterval="">
@@ -39,38 +39,38 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**RefreshInterval** <br/> |Gibt an, wie oft in ganzen Stunden der Client-Schutzregeln vom Server anfordern soll. Dieses Attribut ist erforderlich, und der Wert muss eine ganze Zahl, die gleich oder größer als 1 ist.  <br/> |
+|**RefreshInterval** <br/> |Gibt an, wie oft der Client in ganzen Stunden Schutzregeln vom Server anfordern soll. Dieses Attribut ist erforderlich, und der Wert muss eine ganze Zahl sein, die größer oder gleich 1 ist.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Regeln](rules-ex15websvcsotherref.md) <br/> |Ein Array von Regeln für den Schutz. Dieses Element ist erforderlich.  <br/> |
-|[InternalDomains (SmtpDomainList)](internaldomains-smtpdomainlist.md) <br/> |Gibt die Liste der internen SMTP-Domänen der Organisation. Dieses Element ist erforderlich.  <br/> |
+|[Regeln](rules-ex15websvcsotherref.md) <br/> |Ein Array von Schutzregeln. Dieses Element ist erforderlich.  <br/> |
+|[InternalDomains (SmtpDomainList)](internaldomains-smtpdomainlist.md) <br/> |Gibt die Liste der internen SMTP-Domänen der Organisation an. Dieses Element ist erforderlich.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |Konfigurationseinstellungen für enthält.  <br/> |
+|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |Enthält Dienst Konfigurationseinstellungen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Liste der Regeln, interne Domänen und ein Aktualisierungsintervall besteht die Konfiguration für den Schutz-Regeln.
+Die Konfiguration des Schutz Regel Diensts besteht aus einer Liste von Regeln, internen Domänen und einem Aktualisierungsintervall.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

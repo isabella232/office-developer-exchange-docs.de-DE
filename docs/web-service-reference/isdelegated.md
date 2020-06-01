@@ -1,5 +1,5 @@
 ---
-title: IsDelegated
+title: Isdelegated wurde
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: c12907db-be80-4924-9469-8e58612cf42c
-description: Das IsDelegated-Element gibt an, ob eine Besprechung über ein Konto behandelt wurde, die Stellvertretungszugriff hat.
-ms.openlocfilehash: a6f42a57b2d0fdb760e4c36d3211ba57289a3c7c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das isdelegated-Element gibt an, ob eine Besprechung von einem Konto verarbeitet wurde, das über Stellvertretungszugriff verfügt.
+ms.openlocfilehash: 2c62b59665431d5ea203e972a506aa90afc76601
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830005"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456444"
 ---
-# <a name="isdelegated"></a>IsDelegated
+# <a name="isdelegated"></a>Isdelegated wurde
 
-Das **IsDelegated** -Element gibt an, ob eine Besprechung über ein Konto behandelt wurde, die Stellvertretungszugriff hat. 
+Das **isdelegated** -Element gibt an, ob eine Besprechung von einem Konto verarbeitet wurde, das über Stellvertretungszugriff verfügt. 
   
 ```xml
 <IsDelegated/>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -51,17 +51,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass die Besprechung über ein Konto behandelt wurde, die Stellvertretungszugriff hat. 
+Der Textwert **true** gibt an, dass die Besprechung von einem Konto verarbeitet wurde, das über Stellvertretungszugriff verfügt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

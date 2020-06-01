@@ -1,5 +1,5 @@
 ---
-title: ImAddress (NonEmptyStringType)
+title: Imaddresse (NonEmptyStringType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 13c7b0cc-f506-490b-adaa-3d01fc2400eb
-description: Das ImAddress-Element enthält die Instant messaging-Adresse eines neuen Kontakts, die eine instant messaging-Gruppe hinzugefügt werden soll.
-ms.openlocfilehash: 6c7912d71eb05de3f6bd805bfb27543c543d2be4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IMAddress-Element enthält die Instant Messaging-Adresse eines neuen Kontakts, der einer Sofortnachrichten Gruppe hinzugefügt wird.
+ms.openlocfilehash: eac3b6494f3f52dec007171462a95f9d7306530e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829859"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457606"
 ---
-# <a name="imaddress-nonemptystringtype"></a>ImAddress (NonEmptyStringType)
+# <a name="imaddress-nonemptystringtype"></a>Imaddresse (NonEmptyStringType)
 
-Das **ImAddress** -Element enthält die Instant messaging-Adresse eines neuen Kontakts, die eine instant messaging-Gruppe hinzugefügt werden soll. 
+Das **IMAddress** -Element enthält die Instant Messaging-Adresse eines neuen Kontakts, der einer Sofortnachrichten Gruppe hinzugefügt wird. 
   
 ```XML
 <ImAddress></ImAddress>
@@ -42,21 +42,21 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **ImAddress** -Element ist ein instant messaging-Adresse. 
+Der Textwert des **IMAddress** -Elements ist eine Instant Messaging-Adresse. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

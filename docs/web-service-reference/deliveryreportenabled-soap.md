@@ -6,23 +6,23 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2ab522bc-40ea-4e43-aa57-6d2562db35e9
-description: Das DeliveryReportEnabled-Element darstellt, das DeliveryReportEnabled()-Flag. Das DeliveryReportEnabled-Element ist nur zur internen Verwendung. Dieses Element wird von Clients nicht verwendet.
-ms.openlocfilehash: 089256a5f75ad92a4f11c5aaf3d175382eeee456
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DeliveryReportEnabled-Element stellt das DeliveryReportEnabled ()-Flag dar. Das DeliveryReportEnabled-Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet.
+ms.openlocfilehash: 2a163b3e6ceaa169cc8f76f395b7d501419a31ed
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757949"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458474"
 ---
 # <a name="deliveryreportenabled-soap"></a>DeliveryReportEnabled (SOAP)
 
-Das **DeliveryReportEnabled** -Element darstellt, das **DeliveryReportEnabled()** -Flag. Das **DeliveryReportEnabled** -Element ist nur zur internen Verwendung. Dieses Element wird von Clients nicht verwendet. 
+Das **DeliveryReportEnabled** -Element stellt das **DeliveryReportEnabled ()** -Flag dar. Das **DeliveryReportEnabled** -Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet. 
   
 ```XML
 <DeliveryReportEnabled>true | false</DeliveryReportEnabled>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -39,23 +39,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste von organisationsbeziehungen für eine einzelne Organisation.  <br/> |
+|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste von Organisationsbeziehungen für eine einzelne Organisation dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert True für das Element DeliveryReportEnabled gibt an, dass die Übermittlungsberichte von Benutzern in der Organisation verwendet werden können. Der Wert False gibt an, dass die Übermittlungsberichte unterdrückt werden soll.
+Der Textwert true für das DeliveryReportEnabled-Element gibt an, dass die Zustellungsberichte von Benutzern in der Organisation verwendet werden können. Der Wert false gibt an, dass die Zustellungsberichte unterdrückt werden sollen.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie dieses Element zulassen oder unterdrücken Übermittlungsberichte vom Server.
+Verwenden Sie dieses Element, um Zustellungsberichte vom Server zuzulassen oder zu unterdrücken.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

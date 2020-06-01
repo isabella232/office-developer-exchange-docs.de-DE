@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 187e009f-efaa-42a8-8962-329a645213ab
-description: Das RootFolder-Element enthält die Ergebnisse der Suche in der ein einzelner Stammordner während eines Vorgangs FindItem.
-ms.openlocfilehash: ea17369ef4efc4112a738b430c8f0dbab3886341
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RootFolder-Element enthält die Ergebnisse einer Suche eines einzelnen Stammordners während eines FindItem-Vorgangs.
+ms.openlocfilehash: 3bbab325dff26139739c50ef519b215aea620a0b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831254"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457130"
 ---
 # <a name="rootfolder-finditemresponsemessage"></a>RootFolder (FindItemResponseMessage)
 
-Das **RootFolder** -Element enthält die Ergebnisse der Suche in der ein einzelner Stammordner während einer [FindItem Vorgang](finditem-operation.md).
+Das **RootFolder** -Element enthält die Ergebnisse einer Suche eines einzelnen Stammordners während eines [FindItem-Vorgangs](finditem-operation.md).
   
 ```xml
 <RootFolder IndexedPagingOffset="" NumeratorOffset="" AbsoluteDenominator="" IncludesLastItemInRange="" TotalItemsInView="">
@@ -39,36 +39,36 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**IndexedPagingOffset** <br/> |Stellt den Index, der bei Verwendung eine indizierten Paging-Ansicht für die nächste Anforderung verwendet werden soll.  <br/> |
-|**NumeratorOffset** <br/> |Steht für den neuen Zähler-Wert für die nächste Anforderung verwendet werden soll, wenn Teiler Seitenansichten verwenden.  <br/> |
-|**AbsoluteDenominator** <br/> |Verwenden Sie für die nächste Anforderung bei Bruchzahlen Paging die nächste Nenner darstellt.  <br/> |
-|**IncludesLastItemInRange** <br/> |Gibt an, ob die aktuellen Ergebnisse das letzte Element in der Abfrage enthalten, so dass weitere paging nicht mehr benötigt wird.  <br/> |
-|**TotalItemsInView** <br/> |Stellt die Gesamtzahl der Elemente, die die Einschränkung übergeben. In einem gruppierten [FindItem Vorgang](finditem-operation.md)gibt das **TotalItemsInView** -Attribut die Gesamtanzahl der Elemente in der Ansicht plus die Gesamtzahl der Gruppen zurück.  <br/> |
+|**IndexedPagingOffset** <br/> |Stellt den nächsten Index dar, der bei der Verwendung einer indizierten Auslagerungs Ansicht für die nächste Anforderung verwendet werden soll.  <br/> |
+|**NumeratorOffset** <br/> |Stellt den neuen Zählerwert dar, der für die nächste Anforderung verwendet werden soll, wenn Bruch Seitenansichten verwendet werden.  <br/> |
+|**AbsoluteDenominator** <br/> |Stellt den nächsten Nenner dar, der für die nächste Anforderung bei Bruchzahlen verwendet wird.  <br/> |
+|**IncludesLastItemInRange** <br/> |Gibt an, ob die aktuellen Ergebnisse das letzte Element in der Abfrage enthalten, sodass kein weiteres Paging erforderlich ist.  <br/> |
+|**TotalItemsInView** <br/> |Stellt die Gesamtzahl der Elemente dar, die die Einschränkung übergeben. In einem gruppierten [FindItem-Vorgang](finditem-operation.md)gibt das **TotalItemsInView** -Attribut die Gesamtanzahl der Elemente in der Ansicht sowie die Gesamtzahl der Gruppen zurück.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Elemente](items.md) <br/> |Enthält ein Array von Elemente gefunden, die die Suchkriterien entsprechen, die in der Anforderung [FindItem Operation](finditem-operation.md) angegeben haben.  <br/> |
-|[Gruppen](groups.md) <br/> |Enthält eine Auflistung von Gruppen gefunden, die die Suche und Aggregation Kriterien, die in der Anforderung [FindItem Vorgang](finditem-operation.md) identifiziert haben.  <br/> |
+|[Items](items.md) <br/> |Enthält ein Array mit gefundenen Elementen, die die in der FindItem- [Vorgangs](finditem-operation.md) Anforderung angegebenen Suchkriterien aufweisen.  <br/> |
+|[Groups](groups.md) <br/> |Enthält eine Auflistung von Gruppen, die die Such-und Aggregations Kriterien aufweisen, die in der [FindItem-Vorgangs](finditem-operation.md) Anforderung angegeben sind.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindItemResponseMessage](finditemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung [FindItem Vorgang](finditem-operation.md) .  <br/> |
+|[FindItemResponseMessage](finditemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer [FindItem-Vorgangs](finditem-operation.md) Anforderung.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, der Exchange-Server, mit die Clientzugriffs-Serverrolle installiert ausgeführt wird.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server mit installierter Client Zugriffs-Server Rolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -88,5 +88,5 @@ Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichni
 [TotalItemsInView](https://msdn.microsoft.com/library/ExchangeWebServices.FindItemParentType.TotalItemsInView.aspx)
 
 
-[Finding Items](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+[Finding Items](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

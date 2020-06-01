@@ -1,5 +1,5 @@
 ---
-title: Der ExpandDL
+title: ExpandDL
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: affe84a5-ad98-4aba-83f4-8732938b763d
-description: Das Element der ExpandDL definiert eine Anforderung an eine Verteilerliste erweitern.
-ms.openlocfilehash: ef93ed4684427a74a4fd2c38b4020ecb743fbaaf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ExpandDL-Element definiert eine Anforderung zum Erweitern einer Verteilerliste.
+ms.openlocfilehash: 52b1ea1b51ce185c7a266e3002a4484e4b813bc0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758311"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456934"
 ---
-# <a name="expanddl"></a>Der ExpandDL
+# <a name="expanddl"></a>ExpandDL
 
-Das Element **der ExpandDL** definiert eine Anforderung an eine Verteilerliste erweitern. 
+Das **ExpandDL** -Element definiert eine Anforderung zum Erweitern einer Verteilerliste. 
   
 ```xml
 <ExpandDL>
@@ -42,30 +42,30 @@ Keine
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Postfach](mailbox.md) <br/> |Identifiziert eine vollständig aufgelöster E-mail-Adresse oder eine Verteilerliste. Dieses Postfach stellt die Verteilerliste zu erweitern.  <br/> |
+|[Postfach](mailbox.md) <br/> |Identifiziert eine vollständig aufgelöste e-Mail-Adresse oder eine Verteilerliste. Dieses Postfach stellt die zu erweiternde Verteilerliste dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Erweiterung der Verteilerliste wird nur für eine Verteilerliste ausgeführt werden. Eine Erweiterung der Verteilerliste ist nicht rekursiv.
+Eine Verteilerlistenerweiterung wird nur für eine einzelne Verteilerliste ausgeführt. Eine Verteilerlistenerweiterung ist nicht rekursiv.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Der ExpandDL-Vorgang](expanddl-operation.md)
+[ExpandDL-Vorgang](expanddl-operation.md)
 

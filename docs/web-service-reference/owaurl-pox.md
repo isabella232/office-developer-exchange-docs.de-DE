@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 450b86a1-1722-49f5-b541-16c1edc3db7a
-description: Das OWAUrl-Element beschreibt die URL und Authentifizierung Schema, das verwendet wird, auf einen bestimmten Computer zugreifen, der Microsoft Exchange Server 2007 ausgeführt wird, hat die Clientzugriffs-Serverrolle installiert, die Outlook Web Access gehostet wird.
-ms.openlocfilehash: 93d03506e2a74aa1b4ef6d2a49ccbda01cfc1f9a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das OWAUrl-Element beschreibt die URL und das Authentifizierungsschema, das verwendet wird, um auf einen bestimmten Computer zuzugreifen, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist, die Outlook Web Access hostet.
+ms.openlocfilehash: c0728af063cfbf1353eb7d3b81f5fcfe8b398f7d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830673"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457263"
 ---
 # <a name="owaurl-pox"></a>OWAUrl (POX)
 
-Das **OWAUrl** -Element beschreibt die URL und Authentifizierung Schema, das verwendet wird, auf einen bestimmten Computer zugreifen, der Microsoft Exchange Server 2007 ausgeführt wird, hat die Clientzugriffs-Serverrolle installiert, die Outlook Web Access gehostet wird. 
+Das **OWAUrl** -Element beschreibt die URL und das Authentifizierungsschema, das verwendet wird, um auf einen bestimmten Computer zuzugreifen, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist, die Outlook Web Access hostet. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -46,7 +46,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |:-----|:-----|
 |**AuthenticationMethod** <br/> |Beschreibt die Authentifizierungsmethoden für den Zugriff auf Outlook Web Access.  <br/> |
    
-#### <a name="authenticationmethod-attribute"></a>AuthenticationMethod--Attribut
+#### <a name="authenticationmethod-attribute"></a>AuthenticationMethod-Attribut
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
@@ -54,7 +54,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |FBA  <br/> |Formularbasierte Authentifizierung.  <br/> |
 |NTLM  <br/> |NTLM-Authentifizierung.  <br/> |
 |Digest  <br/> |Digest-Authentifizierung.  <br/> |
-|Standard  <br/> |Standardauthentifizierung.  <br/> |
+|Basic  <br/> |Standardauthentifizierung.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -64,11 +64,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Interne (POX)](internal-pox.md) <br/> |Enthält die Auflistung von Outlook Web Access-URLs, die ein Client herstellen kann, wenn es innerhalb der Firewall ist.  <br/> |
+|[Interne (POX)](internal-pox.md) <br/> |Enthält die Sammlung von Outlook Web Access-URLs, mit denen ein Client eine Verbindung herstellen kann, wenn er sich innerhalb der Firewall befindet.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt die URL für die Outlook Web Access-Dienst auf einem Clientzugriffsserver.
+Der Wert Text stellt die URL für den Outlook Web Access Dienst auf einem Client Zugriffsserver dar.
   
 ## <a name="see-also"></a>Siehe auch
 

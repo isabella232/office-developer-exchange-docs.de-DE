@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 53b6befb-a1b7-4f56-904a-9a32306570e3
-description: Das Besitzer-Element ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: 492125a80079350a88d8a4182e101b6cbd12c8f6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Owners-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 299871843a3755d98ac3658767bce1c13dfa5129
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830678"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457256"
 ---
 # <a name="owners"></a>Besitzer
 
-Das **Besitzer** -Element ist nur zur internen Verwendung vorgesehen. 
+Das **Owners** -Element ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

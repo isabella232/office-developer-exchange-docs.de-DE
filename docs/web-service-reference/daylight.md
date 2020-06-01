@@ -1,5 +1,5 @@
 ---
-title: Sommerzeit
+title: Sommer
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ea400839-fba8-4a5e-a5d1-9b677afc0ff9
-description: Das Sommerzeit-Element darstellt, Datum und Uhrzeit, wann die Zeit von Normalzeit zu Sommerzeit wechselt.
-ms.openlocfilehash: cdb6ed305f1d77a73b952f8c659991f3b2a8df7a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Tageslicht-Element stellt das Datum und die Uhrzeit dar, zu der die Zeit von Standardzeit zu Sommerzeit wechselt.
+ms.openlocfilehash: bf2041cb4677f837ddb5b399041f1c19a7b5f577
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757873"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457459"
 ---
-# <a name="daylight"></a>Sommerzeit
+# <a name="daylight"></a>Sommer
 
-Das **Sommerzeit** -Element darstellt, Datum und Uhrzeit, wann die Zeit von Normalzeit zu Sommerzeit wechselt. 
+Das **Tageslicht** -Element stellt das Datum und die Uhrzeit dar, zu der die Zeit von Standardzeit zu Sommerzeit wechselt. 
   
 ```xml
 <Daylight TimeZoneName="">
@@ -39,7 +39,7 @@ Das **Sommerzeit** -Element darstellt, Datum und Uhrzeit, wann die Zeit von Norm
 </Daylight>
 ```
 
-**TimeChangeType**
+**ChangeType**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -55,26 +55,26 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Offset](offset.md) <br/> |Beschreibt die [BaseOffset](baseoffset.md)-Offset. Die offset zusätzlich zu diesen Offset Base identifiziert das Zeitformat an, entsprechend gibt an, ob es eine Standard- oder Sommerzeit.  <br/> |
-|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |Beschreibt ein relative jährliches Serienmuster für eine Zeitzone Übergang Datumsformat an.  <br/> |
-|[AbsoluteDate](absolutedate.md) <br/> |Stellt dar, wenn die Zeit von Standard- oder Sommerzeit geändert wird.  <br/> |
-|[Zeit (TimeChangeType)](time-timechangetype.md) <br/> |Beschreibt, wenn die Zeit zwischen Standardzeit und Sommerzeit geändert wird.  <br/> |
+|[Offset](offset.md) <br/> |Beschreibt den Offset aus dem [BaseOffset](baseoffset.md). Der Basis Offset zusätzlich zu diesem Offset gibt die Zeit entsprechend der Standard-oder Sommerzeit an.  <br/> |
+|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |Beschreibt ein relatives jährliches Serienmuster für ein Zeit Zonen Übergangs-Datumsmuster.  <br/> |
+|[AbsoluteDate](absolutedate.md) <br/> |Stellt das Datum dar, an dem sich die Zeit von der Standard-oder Sommerzeit ändert.  <br/> |
+|[Zeit (Time ChangeType)](time-timechangetype.md) <br/> |Beschreibt die Zeit, zu der sich die Zeit zwischen Standardzeit und Sommerzeit ändert.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MeetingTimeZone](meetingtimezone.md) <br/> |Stellt die Zeitzone des Speicherorts, in die Besprechung gehostet wird.  <br/> |
+|[MeetingTimeZone](meetingtimezone.md) <br/> |Stellt die Zeitzone des Speicherorts dar, an dem die Besprechung gehostet wird.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

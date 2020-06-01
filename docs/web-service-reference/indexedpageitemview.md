@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6d1b0b04-cc35-4a57-bd7a-824136d14fda
-description: Das IndexedPageItemView-Element wird beschrieben, wie ausgelagerten Unterhaltung oder Element Informationen für einen FindItem oder FindConversation Vorgang Anforderung zurückgegeben.
-ms.openlocfilehash: f1743e22087158c1889977f03774fccbc5577390
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IndexedPageItemView-Element beschreibt, wie die Seiten Unterhaltung oder Elementinformationen für eine FindItem-Operation oder eine FindConversation-Vorgangsanforderung zurückgegeben werden.
+ms.openlocfilehash: 0a66f17855fd425082e3651886d3eeec4f217ac4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829919"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456913"
 ---
 # <a name="indexedpageitemview"></a>IndexedPageItemView
 
-Das **IndexedPageItemView** -Element wird beschrieben, wie ausgelagerten Unterhaltung oder Element Informationen für eine Anforderung [FindItem](finditem-operation.md) oder [FindConversation-Operation](findconversation-operation.md) zurückgegeben wird. 
+Das **IndexedPageItemView** -Element beschreibt, wie die Seiten Unterhaltung oder Elementinformationen für eine [FindItem-Operation](finditem-operation.md) oder eine [FindConversation-Vorgangs](findconversation-operation.md) Anforderung zurückgegeben werden. 
   
 ```XML
 <IndexedPageViewItemView MaxEntriesReturned="" Offset="" BasePoint=""/>
@@ -36,16 +36,16 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**"MaxEntriesReturned"** <br/> |Beschreibt die maximale Anzahl von Elementen oder Unterhaltungen in der Antwort zurückgegeben. Dieses Attribut ist optional.  <br/> |
-|**Offset** <br/> |Beschreibt die **Basispunkt**-Offset. Wenn **Basispunkt** Anfang gleich ist, ist der Offset positiv. Wenn **Basispunkt** End entspricht, wird der Offset behandelt, als wäre es negative. Dies bezeichnet, welches Element oder Unterhaltung werden zuerst in der Antwort übermittelt werden. Dieses Attribut ist erforderlich.  <br/> |
-|**Basispunkt** <br/> |Beschreibt, ob die Seite Elemente oder Unterhaltungen gestartet wird, aus der Anfang oder das Ende des Satzes von Elementen oder Unterhaltungen, die mithilfe der Suchkriterien gefunden werden. Vom Ende immer bemüht sucht rückwärts. Dieses Attribut ist erforderlich.  <br/> |
+|**MaxEntriesReturned** <br/> |Beschreibt die maximale Anzahl von Elementen oder Unterhaltungen, die in der Antwort zurückgegeben werden sollen. Dieses Attribut ist optional.  <br/> |
+|**Offset** <br/> |Beschreibt den Offset aus dem **Basepoint**. Wenn **Basepoint** gleich dem Anfang ist, ist der Offset positiv. Wenn **Basepoint** gleich End ist, wird der Offset so behandelt, als wäre er negativ. Dadurch wird angegeben, welches Element oder welche Unterhaltung als erstes in der Antwort zugestellt wird. Dieses Attribut ist erforderlich.  <br/> |
+|**Basepoint** <br/> |Beschreibt, ob die Seite von Elementen oder Unterhaltungen am Anfang oder am Ende der Gruppe von Elementen oder Unterhaltungen beginnt, die mit den Suchkriterien gefunden werden. Suche von Ende aus sucht immer rückwärts. Dieses Attribut ist erforderlich.  <br/> |
    
-#### <a name="basepoint-attribute"></a>Basispunkt-Attribut
+#### <a name="basepoint-attribute"></a>Basepoint-Attribut
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Anfang  <br/> |Die Seitenansicht beginnt am Anfang des gefundenen Unterhaltung oder Element.  <br/> |
-|Ende  <br/> |Die Seitenansicht beginnt am Ende der Unterhaltung oder Element gefundenen Menge.  <br/> |
+|Anfang  <br/> |Die ausgelagerte Ansicht beginnt am Anfang der gefundenen Unterhaltung oder des Elementsatzes.  <br/> |
+|Ende  <br/> |Die ausgelagerte Ansicht beginnt am Ende der gefundenen Unterhaltung oder des Elementsatzes.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -55,26 +55,26 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindItem](finditem.md) <br/> |Definiert eine Anforderung zum Suchen von Elementen in einem Postfach an.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/FindItem` <br/> |
-|[FindConversation](findconversation.md) <br/> |Definiert eine Anforderung an Unterhaltungen in einem Postfach suchen.  <br/> |
+|[FindItem](finditem.md) <br/> |Definiert eine Anforderung zum Suchen von Elementen in einem Postfach.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/FindItem` <br/> |
+|[FindConversation](findconversation.md) <br/> |Definiert eine Anforderung zum Suchen von Unterhaltungen in einem Postfach.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Suchvorgänge vom Ende umfasst das Verschieben in den Offset identifizierten Ursprung. Darüber hinaus wird der Mauszeiger durch die Anzahl der angeforderten Datensätze zurück verschoben. Beispielsweise wenn 100 Datensätze vorhanden sind und der Offset 25 vom Ende ist, beginnt für die Suche von 75. Wenn 10 Datensätze zurückgegeben werden, wird der Mauszeiger rückwärts verschoben, zusätzlich 10 65 Datensätze und Datensätze 65 bis 75 zurückgibt. Der nächste Index ist 64. Der nächste Offset vom Ende einer Seite wird 100 minus 64 was 36 entspricht. 36 ist der Wert für den nächsten Offset vom Ende zum Abrufen der nächsten Seite indizierten.
+Bei der Suche ab dem Ende wird der durch den Offset angegebene Ursprung verschoben. Darüber hinaus wird der Zeiger nach der Anzahl der angeforderten Datensätze zurück verschoben. Wenn beispielsweise 100 Datensätze vorhanden sind und der Offset 25 vom Ende ist, beginnt die Suche von 75. Wenn 10 Datensätze zurückgegeben werden, wird der Zeiger rückwärts um weitere 10 Datensätze nach 65 verschoben und gibt Datensätze 65 bis 75 zurück. Der nächste Index lautet 64. Der nächste Offset vom Ende für eine Seite ist 100 minus 64, was 36 entspricht. 36 ist der Wert für den nächsten Offset vom Ende, um die nächste indizierte Seite abzurufen.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt eine Anforderung [FindItem Vorgang](finditem-operation.md) . Jedes Element wird mit dem-ID und der Betreff zurückgegeben. Maximal sechs Elemente werden in der Antwort, gemäß dem Attribut **"MaxEntriesReturned"** zurückgegeben. Die Elemente werden in aufsteigender Reihenfolge gruppiert nach Priorität aufgeführt. Nach Betreff werden Elemente in einer Gruppe zusammengefasst. 
+Das folgende Beispiel zeigt eine [FindItem-Vorgangs](finditem-operation.md) Anforderung. Jedes Element wird mit seiner ID und seinem Betreff zurückgegeben. Es werden maximal sechs Elemente in der Antwort zurückgegeben, wie im **MaxEntriesReturned** -Attribut angegeben. Die Elemente werden in aufsteigender Reihenfolge nach Wichtigkeit gruppiert aufgelistet. Elemente in einer Gruppe werden nach Betreff aggregiert. 
   
 ```XML
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <FindItem Traversal="Shallow" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindItem Traversal="Shallow" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ItemShape>
         <t:BaseShape>IdOnly</t:BaseShape>
         <t:AdditionalProperties>
@@ -96,13 +96,13 @@ Das folgende Beispiel zeigt eine Anforderung [FindItem Vorgang](finditem-operati
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -114,5 +114,5 @@ Das folgende Beispiel zeigt eine Anforderung [FindItem Vorgang](finditem-operati
 [FindConversation Operation](findconversation-operation.md)
 
 
-[Finding Items](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+[Finding Items](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

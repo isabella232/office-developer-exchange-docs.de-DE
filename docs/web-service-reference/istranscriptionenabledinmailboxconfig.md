@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 730f008d-b624-4369-a385-69e8e5964c9c
-description: Das IsTranscriptionEnabledInMailboxConfig-Element ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: b925becddedba87d38e130fda213c4f8ae4eeb70
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IsTranscriptionEnabledInMailboxConfig-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 32cacd2f9daf71c0a26a7967c2b40ddef2e3d3a6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830106"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458243"
 ---
 # <a name="istranscriptionenabledinmailboxconfig"></a>IsTranscriptionEnabledInMailboxConfig
 
-Das **IsTranscriptionEnabledInMailboxConfig** -Element ist nur zur internen Verwendung vorgesehen. 
+Das **IsTranscriptionEnabledInMailboxConfig** -Element ist nur für die interne Verwendung vorgesehen. 
   
 ```XML
 <IsTranscriptionEnabledInMailboxConfig />
@@ -39,7 +39,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

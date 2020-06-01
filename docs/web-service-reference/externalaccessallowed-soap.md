@@ -6,23 +6,23 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 967df8c0-ee95-4202-b037-0c4b9fbbf5ee
-description: Das ExternalAccessAllowed-Element gibt an, ob ein Dokument sharing-Location außerhalb Verbindungen zur Verfügung steht.
-ms.openlocfilehash: 7d2a4027fe6de0c24191272d65605310af6a16bf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ExternalAccessAllowed-Element gibt an, ob ein Dokumentfreigabe Speicherort für externe Verbindungen verfügbar ist.
+ms.openlocfilehash: eb0ce0067a9ac9deea78b2778ce7f9e493ffb26f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758376"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457963"
 ---
 # <a name="externalaccessallowed-soap"></a>ExternalAccessAllowed (SOAP)
 
-Das **ExternalAccessAllowed** -Element gibt an, ob ein Dokument sharing-Location außerhalb Verbindungen zur Verfügung steht. 
+Das **ExternalAccessAllowed** -Element gibt an, ob ein Dokumentfreigabe Speicherort für externe Verbindungen verfügbar ist. 
   
 ```XML
 <ExternalAccessAllowed /> 
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -39,19 +39,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DocumentSharingLocation (SOAP)](documentsharinglocation-soap.md) <br/> |Stellt Informationen zum Standort und Metadaten für ein Dokument sharing-Location.  <br/> |
+|[DocumentSharingLocation (SOAP)](documentsharinglocation-soap.md) <br/> |Stellt Speicherort-und Metadateninformationen für einen Dokumentfreigabe Speicherort dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der boolesche Wert des **ExternalAccessAllowed** -Elements gibt an, ob der freigegebene Speicherort außerhalb Verbindungen zur Verfügung steht. 
+Der boolesche Wert des **ExternalAccessAllowed** -Elements gibt an, ob der Freigabespeicherort für externe Verbindungen verfügbar ist. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -63,5 +63,5 @@ Der boolesche Wert des **ExternalAccessAllowed** -Elements gibt an, ob der freig
 
 [AutoErmittlung Webdienstverweis für Exchange](autodiscover-web-service-reference-for-exchange.md)
   
-[SOAP-Autodiscover XML-Elemente für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[XML-Elemente der SOAP-AutoErmittlung für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

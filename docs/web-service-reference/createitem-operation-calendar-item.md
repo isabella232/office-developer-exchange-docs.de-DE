@@ -11,27 +11,27 @@ api_name:
 api_type:
 - schema
 ms.assetid: aa4a7c94-f668-4bd2-8079-c855f6ab17e1
-description: Der Vorgang CreateItem erstellt Kalenderelemente im Exchange-Speicher.
-ms.openlocfilehash: c2174dd806b922e640ef7afcab32b98c67c65b41
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der CreateItem-Vorgang erstellt Kalenderelemente in der Exchange-Informationsspeicher.
+ms.openlocfilehash: 535edf9fe567bc3063a5b853f01d604ea4c7eb95
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757775"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457501"
 ---
 # <a name="createitem-operation-calendar-item"></a>CreateItem-Vorgang (Kalenderelement)
 
-Der Vorgang CreateItem erstellt Kalenderelemente im Exchange-Speicher.
+Der CreateItem-Vorgang erstellt Kalenderelemente in der Exchange-Informationsspeicher.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Vorgang CreateItem erstellt Terminen, Besprechungen und Besprechungsanfragen. Wenn ein Kalenderelement ohne Teilnehmer erstellt wird, gilt die ein Termins. Wenn Teilnehmer angegeben sind, ist das Kalenderelement einer Besprechung. Bei eine Besprechung mithilfe des CreateItem-Vorgangs erstellt wird, werden Besprechungsanfragen automatisch an die identifizierte Teilnehmer gesendet, wenn das Attribut "SendMeetingInvitations" festgelegt ist, die Besprechungsanfragen senden.
+Mit dem CreateItem-Vorgang werden Termine, Besprechungen und Besprechungsanfragen erstellt. Wenn ein Kalenderelement ohne Teilnehmer erstellt wird, wird es als Termin betrachtet. Wenn Teilnehmer angegeben werden, handelt es sich beim Kalenderelement um eine Besprechung. Wenn eine Besprechung mithilfe des CreateItem-Vorgangs erstellt wird, werden Besprechungsanfragen automatisch an die identifizierten Teilnehmer gesendet, wenn das SendMeetingInvitations-Attribut so festgelegt ist, dass die Besprechungsanfragen gesendet werden.
   
-## <a name="createitem-calendar-item-request-example"></a>Anforderungsbeispiel CreateItem (Kalenderelement)
+## <a name="createitem-calendar-item-request-example"></a>CreateItem (Calendar Item)-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung CreateItem veranschaulicht das Erstellen einer Besprechung mit zwei erforderlichen Teilnehmer. Dieser Anforderung sendet die Besprechungsanfragen an die zwei Teilnehmer.
+Im folgenden Beispiel einer CreateItem-Anforderung wird gezeigt, wie Sie eine Besprechung mit zwei erforderlichen Teilnehmern erstellen. Durch diese Anforderung werden die Besprechungsanfragen an die beiden Teilnehmer gesendet.
   
 ### <a name="code"></a>Code
 
@@ -39,16 +39,16 @@ Im folgenden Beispiel wird eine Anforderung CreateItem veranschaulicht das Erste
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <CreateItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                 SendMeetingInvitations="SendToAllAndSaveCopy" >
       <SavedItemFolderId>
         <t:DistinguishedFolderId Id="calendar"/>
       </SavedItemFolderId>
       <Items>
-        <t:CalendarItem xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <t:CalendarItem xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Subject>Planning Meeting</Subject>
           <Body BodyType="Text">Plan the agenda for next week's meeting.</Body>
           <ReminderIsSet>true</ReminderIsSet>
@@ -77,9 +77,9 @@ Im folgenden Beispiel wird eine Anforderung CreateItem veranschaulicht das Erste
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Ein Beispiel dafür, wie Sie Antworten auf eine Besprechungsanfrage finden Sie im Thema [CreateItem-Vorgang (Besprechungsanfrage)](createitem-operation-meeting-request.md) . 
+Ein Beispiel dafür, wie Sie auf eine Besprechungsanfrage Antworten, finden Sie im Thema [CreateItem-Vorgang (Besprechungsanfrage)](createitem-operation-meeting-request.md) . 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -87,7 +87,7 @@ In der Anforderung werden folgende Elemente verwendet:
   
 - [CreateItem](createitem.md)
     
-- [Des SavedItemFolderId](saveditemfolderid.md)
+- [SavedItemFolderId](saveditemfolderid.md)
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
@@ -105,23 +105,23 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Start](start.md)
     
-- [Ende](end-ex15websvcsotherref.md)
+- [End](end-ex15websvcsotherref.md)
     
 - [IsAllDayEvent](isalldayevent.md)
     
 - [LegacyFreeBusyStatus](legacyfreebusystatus.md)
     
-- [Ort](location.md)
+- [Standort](location.md)
     
 - [RequiredAttendees](requiredattendees.md)
     
-- [Attendee](attendee.md)
+- [Teilnehmer](attendee.md)
     
 - [Postfach](mailbox.md)
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
-## <a name="successful-createitem-calendar-item-response"></a>Erfolgreiche CreateItem (Kalenderelement) Antwort
+## <a name="successful-createitem-calendar-item-response"></a>Erfolgreiche CreateItem-Antwort (Kalenderelement)
 
 ### <a name="description"></a>Beschreibung
 
@@ -136,12 +136,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateItem-Anforde
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -157,11 +157,11 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateItem-Anforde
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Die Elementattribute **-Id** und **ChangeKey** [ItemId](itemid.md) wurden gekürzt, um die Lesbarkeit zu erhalten. 
+Die [ItemID](itemid.md) **-Element-ID** und das **ChangeKey** -Attribut wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -175,7 +175,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
 - [CalendarItem](calendaritem.md)
     
@@ -185,5 +185,5 @@ In der Antwort werden folgende Elemente verwendet:
 
 
 
-[CreateItem Operation](createitem-operation.md)
+[CreateItem-Vorgang](createitem-operation.md)
 

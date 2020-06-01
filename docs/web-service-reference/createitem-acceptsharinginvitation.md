@@ -11,34 +11,34 @@ api_name:
 api_type:
 - schema
 ms.assetid: 710c893a-3037-4f04-b336-aefedd36c406
-description: Der CreateItem-Vorgang wird verwendet, um eine Einladung zum Austausch eines anderen Benutzers Kalender oder Kontaktdaten akzeptieren.
-ms.openlocfilehash: 993ef0402e624af69f632af5bdce4c02bd9d41f3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der CreateItem-Vorgang wird verwendet, um eine Einladung zur Freigabe von Kalender-oder Kontaktdaten eines anderen Benutzers zu akzeptieren.
+ms.openlocfilehash: eda846b72f42fe886497b355d9cddade7c5f4044
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757770"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457515"
 ---
 # <a name="createitem-acceptsharinginvitation"></a>CreateItem (AcceptSharingInvitation)
 
-Der **CreateItem** -Vorgang wird verwendet, um eine Einladung zum Austausch eines anderen Benutzers Kalender oder Kontaktdaten akzeptieren. 
+Der **CreateItem** -Vorgang wird verwendet, um eine Einladung zur Freigabe von Kalender-oder Kontaktdaten eines anderen Benutzers zu akzeptieren. 
   
-## <a name="accept-sharing-invitation-request-example"></a>Anforderungsbeispiel Freigabeeinladung akzeptieren
+## <a name="accept-sharing-invitation-request-example"></a>Beispiel für Freigabe Einladungsanforderung akzeptieren
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird gezeigt, wie eine Einladung zur Freigabe akzeptieren kann.
+Das folgende Beispiel zeigt, wie Sie eine Freigabeeinladung annehmen.
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Items xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-        <AcceptSharingInvitation xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <CreateItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Items xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+        <AcceptSharingInvitation xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <ReferenceItemId Id="AAAlAFVzZ" ChangeKey="CwAAABYAA" />
         </AcceptSharingInvitation>
       </Items>
@@ -53,7 +53,7 @@ In der Anforderung werden folgende Elemente verwendet:
   
 - [CreateItem](createitem.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
 - [AcceptSharingInvitation](acceptsharinginvitation.md)
     
@@ -61,13 +61,13 @@ In der Anforderung werden folgende Elemente verwendet:
     
 ### <a name="comments"></a>Kommentare
 
-Die Element-ID und Key ändern wurden gekürzt, um die Lesbarkeit zu erhalten.
+Die Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten.
   
-## <a name="successful-accept-sharing-invitation-response-example"></a>Erfolgreicher Freigabeeinladung annehmen antwortbeispiel
+## <a name="successful-accept-sharing-invitation-response-example"></a>Beispiel für die erfolgreiche Annahme von Freigabe Einladungsantworten
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **CreateItem** . 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **CreateItem** -Anforderung. 
   
 ### <a name="code"></a>Code
 
@@ -82,12 +82,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **Cre
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -99,7 +99,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **Cre
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -113,13 +113,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
-## <a name="accept-sharing-invitation-error-response-example"></a>Fehler bei der Freigabe Einladung antwortbeispiel akzeptieren
+## <a name="accept-sharing-invitation-error-response-example"></a>Beispiel für Fehler bei der Freigabeeinladung annehmen
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine **CreateItem** -Anforderungen. Der Fehler tritt bei dem Versuch, eine Einladung zur Freigabe annehmen können, die nicht gefunden werden kann im Exchange-Speicher. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **CreateItem** -Anforderung. Der Fehler wird durch den Versuch verursacht, eine Freigabeeinladung zu akzeptieren, die im Exchange-Informationsspeicher nicht gefunden werden kann. 
   
 ### <a name="code"></a>Code
 
@@ -134,12 +134,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **CreateItem** -Anforderu
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Error">
           <m:MessageText>The specified object was not found in the store.</m:MessageText>
@@ -153,7 +153,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **CreateItem** -Anforderu
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
@@ -171,11 +171,11 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[CreateItem Operation](createitem-operation.md)
+[CreateItem-Vorgang](createitem-operation.md)
 

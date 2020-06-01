@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ad29e064-3f3d-4b7b-aa4c-9ec27326381d
-description: Das ResponseObjects-Element enthält eine Auflistung aller Antwort-Objekte, die ein Element in der Exchange-Informationsspeicher zugeordnet sind.
-ms.openlocfilehash: b1d95063439f5089665d2aad97d747665caef0ca
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ResponseObjects-Element enthält eine Auflistung aller Response-Objekte, die einem Element in der Exchange-Informationsspeicher zugeordnet sind.
+ms.openlocfilehash: 675bfda4addb38535736efc0c790577ff4739108
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831197"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457438"
 ---
 # <a name="responseobjects"></a>ResponseObjects
 
-Das **ResponseObjects** -Element enthält eine Auflistung aller Antwort-Objekte, die ein Element in der Exchange-Informationsspeicher zugeordnet sind. 
+Das **ResponseObjects** -Element enthält eine Auflistung aller Response-Objekte, die einem Element in der Exchange-Informationsspeicher zugeordnet sind. 
   
 ```XML
 <ResponseObjects>
@@ -58,11 +58,11 @@ Keine.
 |[ReplyToItem](replytoitem.md) <br/> |Enthält eine Antwort an den Ersteller eines Elements in der Exchange-Speicher.  <br/> |
 |[ForwardItem](forwarditem.md) <br/> |Enthält ein Exchange-Speicher-Element an Empfänger weitergeleitet.  <br/> |
 |[ReplyAllToItem](replyalltoitem.md) <br/> |Enthält eine Antwort an alle identifizierten Empfänger eines Elements in der Exchange-Speicher.  <br/> |
-|[CancelCalendarItem](cancelcalendaritem.md) <br/> |Verwendet, um eine Besprechung absagen Response-Objekt darstellt.  <br/> |
+|[CancelCalendarItem](cancelcalendaritem.md) <br/> |Stellt das Antwortobjekt dar, das zum Abbrechen einer Besprechung verwendet wird.  <br/> |
 |[RemoveItem](removeitem.md) <br/> |Entfernt ein Element aus dem Exchange-Informationsspeicher.  <br/> |
-|[PostReplyItem](postreplyitem.md) <br/> |Eine Antwort auf eine Post-Element enthält. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
-|[SuppressReadReceipt](suppressreadreceipt.md) <br/> |Verwendet, um lesebestätigung Anfragen zu unterdrücken.  <br/> |
-|[AcceptSharingInvitation](acceptsharinginvitation.md) <br/> |Verwendet, um eine Einladung annehmen, die Zugriff auf einen anderen Benutzer Kalender oder Kontaktdaten ermöglicht.  <br/> |
+|[PostReplyItem](postreplyitem.md) <br/> |Enthält eine Antwort auf ein Post-Element. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
+|[SuppressReadReceipt](suppressreadreceipt.md) <br/> |Wird verwendet, um Lese Bestätigungsanforderungen zu unterdrücken.  <br/> |
+|[AcceptSharingInvitation](acceptsharinginvitation.md) <br/> |Wird verwendet, um eine Einladung zu akzeptieren, die den Zugriff auf die Kalender-oder Kontaktdaten eines anderen Benutzers zulässt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -80,15 +80,15 @@ Keine.
 |[RemoveItem](removeitem.md) <br/> |Entfernt ein Element aus dem Exchange-Informationsspeicher.  <br/> |
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

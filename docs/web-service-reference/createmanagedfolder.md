@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cfdf01a9-0191-47c7-a7ad-5254d8bdee4a
-description: Das CreateManagedFolder-Element definiert eine Anforderung zum Hinzufügen von verwalteter benutzerdefinierter Ordnern mit einem Postfach.
-ms.openlocfilehash: 4acc931de2a8665db092c3b309d914f0a3c67558
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CreateManagedFolder-Element definiert eine Anforderung zum Hinzufügen verwalteter benutzerdefinierter Ordner zu einem Postfach.
+ms.openlocfilehash: 01fe8b7341c38ad33089c56271434ad3f9a4e5f0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757792"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458362"
 ---
 # <a name="createmanagedfolder"></a>CreateManagedFolder
 
-Das **CreateManagedFolder** -Element definiert eine Anforderung zum Hinzufügen von verwalteter benutzerdefinierter Ordnern mit einem Postfach. 
+Das **CreateManagedFolder** -Element definiert eine Anforderung zum Hinzufügen verwalteter benutzerdefinierter Ordner zu einem Postfach. 
   
 ```xml
 <CreateManagedFolder>
@@ -43,33 +43,33 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderNames](foldernames.md) <br/> |Enthält ein Array von benannten verwaltete Ordner ein Postfach hinzu.  <br/> |
+|[FolderNames](foldernames.md) <br/> |Enthält ein Array benannter verwalteter Ordner, die einem Postfach hinzugefügt werden sollen.  <br/> |
 |[Postfach](mailbox.md) <br/> |Ein e-Mail-aktivierten Active Directory Directory Service-Objekt identifiziert.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Konto der Person ein, die die Anforderung stellt, muss FullAccess Berechtigungen für das Postfach verfügen, in dem die verwalteten Ordner erstellt werden. Parameters _ _ - AccessRights können mit dem Exchange-Verwaltungsshell- **Add-MailboxPermission** -Cmdlet Sie die Berechtigung FullAccess zuweisen. 
+Das Konto der Person, die die Anforderung macht, muss über FullAccess-Berechtigungen für das Postfach verfügen, in dem die verwalteten Ordner erstellt werden. Sie können den _-AccessRights _-Parameter mit dem Exchange-Verwaltungsshell **Add-MailboxPermission-** Cmdlet verwenden, um die FullAccess-Berechtigung zuzuweisen. 
   
-Obwohl Sie Exchange-Webdienste Hinzufügens von verwalteten Ordnern mit einem Postfach verwenden können, können Exchange-Webdienste Sie die Liste der verwalteten Ordner zugreifen, die verfügbar sind. Um eine Liste der verfügbaren verwalteten Ordner erhalten möchten, verwenden Sie das Cmdlet **Get-Managedfolder** Exchange-Verwaltungsshell. Verwalteten benutzerdefinierten Ordnern und verwalteten Standardordnern enthält die Liste, die vom **Cmdlet "Get-Managedfolder"** zurückgegeben wird. Sie können nur Ordner des Typs **Managedcustomfolder** an das Postfach mit der Operation CreateManagedFolder hinzufügen. 
+Obwohl Sie Exchange Webdienste verwenden können, um einem Postfach verwaltete Ordner hinzuzufügen, können Sie Exchange Webdienste nicht verwenden, um auf die Liste der verfügbaren verwalteten Ordner zuzugreifen. Um eine Liste der verfügbaren verwalteten Ordner zu erhalten, verwenden Sie das Cmdlet **Get-ManagedFolder** Exchange-Verwaltungsshell. Die Liste, die vom **Cmdlet Get-ManagedFolder** zurückgegeben wird, enthält sowohl verwaltete benutzerdefinierte Ordner als auch verwaltete Standardordner. Sie können dem Postfach nur Ordner vom Typ **ManagedCustomFolder** hinzufügen, indem Sie den CreateManagedFolder-Vorgang verwenden. 
   
 > [!NOTE]
-> Eine Liste der verwalteten Ordner erhalten mithilfe der API Verzeichnisdienste von Microsoft .NET Framework. 
+> Sie können auch eine Liste der verwalteten Ordner abrufen, indem Sie die DirectoryServices-API des Microsoft .NET Framework verwenden. 
   
-Die [FindFolder Vorgang](findfolder-operation.md) können Sie verwaltete Ordner in einem Postfach suchen. Verwaltete Ordner können unterschieden werden, indem Sie das [BaseShape](baseshape.md) -Element in der Anforderung auf AllProperties festlegen. Die Antwort enthält ein [ManagedFolderInformation](managedfolderinformation.md) -Element, um die verwalteten Ordner aus der Exchange-Speicherordner zu unterscheiden. Sie können verwaltete Ordnern auf dieselbe Weise löschen, andere Ordnertypen zu löschen. 
+Sie können den [FindFolder-Vorgang](findfolder-operation.md) verwenden, um verwaltete Ordner in einem Postfach zu suchen. Verwaltete Ordner können unterschieden werden, indem das [BaseShape](baseshape.md) -Element auf allproperties in der Anforderung festgelegt wird. Die Antwort enthält ein [ManagedFolderInformation](managedfolderinformation.md) -Element, um die verwalteten Ordner von den Exchange-Informationsspeicher Ordnern zu unterscheiden. Sie können verwaltete Ordner auf die gleiche Weise löschen, wie Sie andere Ordnertypen löschen. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -78,10 +78,10 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 
 [CreateManagedFolder-Vorgang](createmanagedfolder-operation.md)
   
-[FindFolder Operation](findfolder-operation.md)
+[FindFolder-Vorgang](findfolder-operation.md)
 
 
-[Suchen nach Ordnern](http://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
+[Suchen von Ordnern](https://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
   
-[Hinzufügen von verwalteten Ordnern](http://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
+[Hinzufügen von verwalteten Ordnern](https://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
 

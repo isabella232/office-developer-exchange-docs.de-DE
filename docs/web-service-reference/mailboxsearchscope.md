@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ef4a4203-61e5-46b8-9fa4-d1a10e785aa2
-description: Das MailboxSearchScope-Element gibt ein Postfach und einen Suchbereich für eine discoverysuche.
-ms.openlocfilehash: 657e6dfd4eb6c6c0eabb18546e7090c524e28e5e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MailboxSearchScope-Element gibt ein Postfach und einen Suchbereich für eine Ermittlungs Suche an.
+ms.openlocfilehash: 20f528ddfb4812de8468af33bcb0b47d7d851f1d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830297"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457186"
 ---
 # <a name="mailboxsearchscope"></a>MailboxSearchScope
 
-Das **MailboxSearchScope** -Element gibt ein Postfach und einen Suchbereich für eine discoverysuche. 
+Das **MailboxSearchScope** -Element gibt ein Postfach und einen Suchbereich für eine Ermittlungs Suche an. 
   
 ```XML
 <MailboxSearchScope>
@@ -38,23 +38,23 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[Postfach (String)](mailbox-string.md) | [SearchScope](searchscope.md)
+[Postfach (Zeichenfolge)](mailbox-string.md)  |  [SearchScope](searchscope.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [MailboxSearchScopes](mailboxsearchscopes.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

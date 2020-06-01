@@ -1,22 +1,22 @@
 ---
-title: Externe (POX)
+title: Extern (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8eed1f79-6eb3-4a88-80fb-d4edf9f34fda
-description: Externe Element enthält eine Auflistung von URLs, die ein Client zum Verbinden mit Exchange von außerhalb des Netzwerks der Organisation verwenden können.
-ms.openlocfilehash: 7f01fc29b5ce63b02de0a4a6e42887dcffbb4b82
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das externe Element enthält eine Sammlung von URLs, die ein Client für die Verbindung mit Exchange von außerhalb des Netzwerks der Organisation verwenden kann.
+ms.openlocfilehash: 45d7e72c5a43c5c468c1edd303a5e5ea8c2cb62e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758358"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457970"
 ---
-# <a name="external-pox"></a>Externe (POX)
+# <a name="external-pox"></a>Extern (POX)
 
-**Externes** Element enthält eine Auflistung von URLs, die ein Client zum Verbinden mit Exchange von außerhalb des Netzwerks der Organisation verwenden können. 
+Das **externe** Element enthält eine Sammlung von URLs, die ein Client für die Verbindung mit Exchange von außerhalb des Netzwerks der Organisation verwenden kann. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -26,7 +26,7 @@ ms.locfileid: "19758358"
   
 [Protokoll (POX)](protocol-pox.md)
   
-[Externe (POX)](external-pox.md)
+[Extern (POX)](external-pox.md)
   
 ```XML
 <External>
@@ -51,18 +51,18 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OWAUrl (POX)](owaurl-pox.md) <br/> |Beschreibt die URL und Authentifizierung Schema, das verwendet wird, auf einen bestimmten Computer zugreifen, der Microsoft Exchange Server ausgeführt wird, hat die Clientzugriffs-Serverrolle installiert, die Outlook Web Access gehostet wird.  <br/> |
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist. Dieses **Protokoll** -Element hat nur zwei untergeordnete Elemente: ein Element einer [Typ (POX)](type-pox.md) , das Verbindungsprotokoll und ein [ASUrl (POX)](asurl-pox.md) -Element, EWS-Endpunkts für den Webdienst Verfügbarkeit angeben.  <br/> |
+|[OWAUrl (POX)](owaurl-pox.md) <br/> |Beschreibt die URL und das Authentifizierungsschema, das für den Zugriff auf einen bestimmten Computer verwendet wird, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist, die Outlook Web Access hostet.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist. Dieses **Protokoll** Element hat nur zwei untergeordnete Elemente: ein [Type (POX)](type-pox.md) -Element, das das Verbindungsprotokoll angibt, und ein [vom asurl (POX)](asurl-pox.md) -Element, das den EWS-Endpunkt für den Verfügbarkeits-Webdienst angibt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-**Externes** Element ist ein optionales untergeordnetes Element des **Protokoll** -Elements. 
+Das **externe** Element ist ein optionales untergeordnetes Element des **Protocol** -Elements. 
   
 ## <a name="see-also"></a>Siehe auch
 

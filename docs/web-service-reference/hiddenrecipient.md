@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: a8209f75-0070-4424-8dcd-273cfd192728
-description: Das HiddenRecipient-Element gibt an, dass der Empfänger durch eine Organisationsrichtlinie hinzugefügt wurde, die von berechtigten Benutzern ausgeblendet werden sollen.
-ms.openlocfilehash: 73b2e3e39c675cf3e2bc56105b1e76009d4a2451
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das HiddenRecipient-Element gibt an, dass der Empfänger von einer Organisationsrichtlinie hinzugefügt wurde, die von unprivilegierten Benutzern ausgeblendet werden sollte.
+ms.openlocfilehash: bfe57fabc02ff00c801672b71ccdb0bf1b916bd9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829810"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457641"
 ---
 # <a name="hiddenrecipient"></a>HiddenRecipient
 
-Das **HiddenRecipient** -Element gibt an, dass der Empfänger durch eine Organisationsrichtlinie hinzugefügt wurde, die von berechtigten Benutzern ausgeblendet werden sollen. 
+Das **HiddenRecipient** -Element gibt an, dass der Empfänger von einer Organisationsrichtlinie hinzugefügt wurde, die von unprivilegierten Benutzern ausgeblendet werden sollte. 
   
 ```XML
 <HiddenRecipient>true | false</HiddenRecipient>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Enthält Informationen für ein einzelnes Ereignis für einen Empfänger.  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Enthält Informationen zu einem einzelnen Ereignis für einen Empfänger.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Dieses Element kann **true** oder **false**sein. Der Wert **true** gibt an, dass der Benutzer durch eine Organisationsrichtlinie hinzugefügt wurde. der Wert **false** gibt an, dass der Benutzer nicht durch eine Organisationsrichtlinie hinzugefügt wurde. 
+Dieses Element kann entweder **true** oder **false**sein. Der Wert **true** gibt an, dass der Benutzer von einer Organisationsrichtlinie hinzugefügt wurde; der Wert **false** gibt an, dass der Benutzer nicht von einer Organisationsrichtlinie hinzugefügt wurde. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 24099a88-4ab6-4bf3-8ed5-efec8e07b9b9
-description: Die DeleteAttachmentResponse definiert eine Antwort auf eine DeleteAttachment an.
-ms.openlocfilehash: f1a6b0ebba7257d02ceeea024486dc002d299dff
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DeleteAttachmentResponse definiert eine Antwort auf eine DeleteAttachment--Anforderung.
+ms.openlocfilehash: 352318ef54687b0d1d4ce73b075248b79238d555
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757903"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457326"
 ---
 # <a name="deleteattachmentresponse"></a>DeleteAttachmentResponse
 
-Die **DeleteAttachmentResponse** definiert eine Antwort auf eine DeleteAttachment an. 
+Das **DeleteAttachmentResponse** definiert eine Antwort auf eine DeleteAttachment--Anforderung. 
   
 ```xml
 <DeleteAttachmentResponse>
@@ -43,28 +43,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 - [DeleteAttachment-Vorgang](deleteattachment-operation.md)  
-- [DeleteAttachment](deleteattachment.md)
+- [DeleteAttachment-](deleteattachment.md)
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 

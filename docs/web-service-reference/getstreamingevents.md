@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: dbe83857-c4f8-4d98-813f-e03c289697a1
-description: Das GetStreamingEvents-Element darstellt, den Vorgang, der von Clients zum Anfordern von streaming Benachrichtigungen vom Server verwendet wird.
-ms.openlocfilehash: b07015541cf9c2fbbbc11ebc9f10421bdb9ee84f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetStreamingEvents-Element stellt den Vorgang dar, der von Clients zum Anfordern von Streaming-Benachrichtigungen vom Server verwendet wird.
+ms.openlocfilehash: ec133ecd69c05a2208e95f925133570af0233cf2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829679"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457319"
 ---
 # <a name="getstreamingevents"></a>GetStreamingEvents
 
-Das **GetStreamingEvents** -Element darstellt, den Vorgang, der von Clients zum Anfordern von streaming Benachrichtigungen vom Server verwendet wird. 
+Das **GetStreamingEvents** -Element stellt den Vorgang dar, der von Clients zum Anfordern von Streaming-Benachrichtigungen vom Server verwendet wird. 
   
 [GetStreamingEvents](getstreamingevents.md)
   
@@ -45,8 +45,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SubscriptionId (GetStreamingEvents)](subscriptionid-getstreamingevents.md) <br/> |Stellt den Bezeichner für ein Abonnement, das für Ereignisse abgefragt wird.  <br/> |
-|[ConnectionTimeout](connectiontimeout.md) <br/> |Stellt die Anzahl der Minuten, um eine Verbindung zu halten.  <br/> |
+|[Abonnement-GetStreamingEvents](subscriptionid-getstreamingevents.md) <br/> |Stellt den Bezeichner für ein Abonnement dar, das für Ereignisse abgefragt wird.  <br/> |
+|[ConnectionTimeout](connectiontimeout.md) <br/> |Gibt an, wie viele Minuten eine Verbindung geöffnet bleiben soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -56,17 +56,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

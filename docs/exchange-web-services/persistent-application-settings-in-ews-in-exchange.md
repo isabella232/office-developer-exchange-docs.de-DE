@@ -5,102 +5,102 @@ ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 394d4e70-8517-4073-809a-5b61780ff923
-description: Informationen Sie über die verschiedenen Optionen, dass die EWS Managed API oder EWS-Anwendung zum Erstellen von persistent benutzerdefinierte Anwendungseinstellungen in Exchange verwenden kann.
-ms.openlocfilehash: b384fd5608dc647950d7cd31e861e24c12e3316f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: In diesem Artikel erfahren Sie mehr über die verschiedenen Optionen, die Ihre verwaltete EWS-API oder EWS-Anwendung zum Erstellen beständiger benutzerdefinierter Anwendungseinstellungen in Exchange verwenden kann.
+ms.openlocfilehash: b1faa057e5a0c1a96498efcc23738c83d25ae986
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757121"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457403"
 ---
 # <a name="persistent-application-settings-in-ews-in-exchange"></a>Persistent Anwendungseinstellungen in EWS in Exchange
 
-Informationen Sie über die verschiedenen Optionen, dass die EWS Managed API oder EWS-Anwendung zum Erstellen von persistent benutzerdefinierte Anwendungseinstellungen in Exchange verwenden kann.
+In diesem Artikel erfahren Sie mehr über die verschiedenen Optionen, die Ihre verwaltete EWS-API oder EWS-Anwendung zum Erstellen beständiger benutzerdefinierter Anwendungseinstellungen in Exchange verwenden kann.
   
 
   
-Die einfachste Möglichkeit, benutzerdefinierte Client-Konfigurationen für ein Postfach oder Ordner und Elemente in einem Postfach synchron ist Anwendungseinstellungen auf einem Exchange-Server gespeichert werden. Sie können sicherstellen, dass diese Einstellungen für ein Postfach beibehalten werden, mithilfe einer der folgenden: 
+Die einfachste Möglichkeit, benutzerdefinierte Clientkonfigurationen für ein Postfach oder Ordner und Elemente in einem Postfach synchron zu halten, besteht darin, Anwendungseinstellungen auf einem Exchange-Server zu speichern. Sie können sicherstellen, dass diese Einstellungen für ein Postfach mit einem der folgenden Werte dauerhaft gespeichert werden: 
   
-- Konfiguration der Benutzerobjekte
+- Benutzer Konfigurationsobjekte
     
 - Erweiterte Eigenschaften
     
 - Benutzerdefinierte Elemente
     
-## <a name="what-are-my-options-for-creating-persistent-application-settings"></a>Was sind meine Optionen zum Erstellen von persistent Anwendungseinstellungen?
+## <a name="what-are-my-options-for-creating-persistent-application-settings"></a>Welche Optionen habe ich zum Erstellen von Einstellungen für beständige Anwendungen?
 <a name="Options"> </a>
 
-Konfiguration der Benutzerobjekte sind die beste Option zum Speichern von Konfigurationseinstellungen für den EWS-Clientanwendungen. Sie können auch Eigenschaften oder benutzerdefinierte Elemente oder eine Kombination aus allen drei erweitern. Wählen Sie die Option basierend auf den Bereich der Einstelllungen und gibt an, ob die Einstellungen für andere Clientanwendungen verfügbar sein müssen.
+Benutzer Konfigurationsobjekte sind die beste Option zum Speichern von Konfigurationseinstellungen für Ihre EWS-Clientanwendungen. Sie können auch Extend-Eigenschaften oder benutzerdefinierte Elemente oder eine Kombination aus allen drei verwenden. Wählen Sie Ihre Option basierend auf dem Bereich Ihrer Einstellungen und aus, ob Ihre Einstellungen für andere Anwendungen zur Verfügung stehen müssen.
   
-**In Tabelle 1. Empfohlene Optionen zum Erstellen von persistent Anwendungseinstellungen basierend auf Bereich**
+**Tabelle 1. Empfohlene Optionen zum Erstellen von Einstellungen für beständige Anwendungen basierend auf dem Bereich**
 
-|**Festlegen des Bereichs**|**Verwenden Sie...**|**Diensten zugegriffen wird.Handbuch herunterladen**|
+|**Festlegen des Bereichs**|**Verwendung**|**Zugriff durch**|
 |:-----|:-----|:-----|
-|Element  <br/> |Erweiterte Eigenschaft für ein vorhandenes Element.  <br/> |Alle EWS-Anwendung. Nur EWS-Clients, die die Eigenschaftenbezeichner kennen, können eine erweiterte Eigenschaft zugreifen.  <br/> |
-|Ordner  <br/> |Ein Benutzer-Konfigurationsobjekt für den Zielordner. Dies ist eine gute Möglichkeit zum Speichern von Einstellungen für die Ansicht für einen Ordner.  <br/> |Alle EWS-Anwendung.  <br/> |
-|Postfach  <br/> |Ein Benutzer-Konfigurationsobjekt auf den Standardordner Msgrootfolder.  <br/> |Alle EWS-Anwendung.  <br/> |
+|Element  <br/> |Eine erweiterte Eigenschaft für ein vorhandenes Element.  <br/> |Jede EWS-Anwendung. Nur EWS-Clients, die den Eigenschaftenbezeichner kennen, können auf eine erweiterte Eigenschaft zugreifen.  <br/> |
+|Ordner  <br/> |Ein Benutzer Konfigurationsobjekt für den Zielordner. Dies ist eine gute Möglichkeit, Ansichtseinstellungen für einen Ordner zu speichern.  <br/> |Jede EWS-Anwendung.  <br/> |
+|Postfach  <br/> |Ein Benutzer Konfigurationsobjekt im standardmäßigen msgrootfolder-Ordner.  <br/> |Jede EWS-Anwendung.  <br/> |
    
-### <a name="user-configuration-objects"></a>Konfiguration der Benutzerobjekte
+### <a name="user-configuration-objects"></a>Benutzer Konfigurationsobjekte
 <a name="UserConfig"> </a>
 
-Konfiguration der Benutzerobjekte sind spezielle Elemente, die Ordner in einem Postfach zugeordnet sind. Konfiguration Benutzerobjekte, auch bekannt als Elemente von Ordner verknüpft ist, sind in der Regel die beste Möglichkeit zum Speichern von Anwendungseinstellungen, insbesondere dann, wenn die Konfigurationsinformationen eines Ordners oder ein Postfach zugeordnet ist. Sie sind nicht in der Regel für Endbenutzer angezeigt. Da systemintern Datenströme und Wörterbücher Daten gespeichert werden können, werden sie zum Speichern von Konfigurationsinformationen ideal. Die beste Möglichkeit zum Benutzerobjekte Konfiguration verwenden werden eine Reihe von Konfigurationen in einem XML-Dokument zu speichern, und speichern Sie diese Informationen in einem Stream-Objekt die Benutzereigenschaften-Konfiguration ab.
+Benutzer Konfigurationsobjekte sind spezielle Elemente, die Ordnern in einem Postfach zugeordnet sind. Benutzer Konfigurationsobjekte, die auch als Ordner zugeordnete Elemente bezeichnet werden, sind in der Regel die beste Option zum Speichern von Anwendungseinstellungen, insbesondere dann, wenn die Konfigurationsinformationen einem Ordner oder einem Postfach zugeordnet sind. Sie werden normalerweise nicht für Endbenutzer aufgetaucht. Da Sie Datenströme und Daten Wörterbücher nativ speichern können, eignen Sie sich ideal zum Speichern von Konfigurationsinformationen. Die beste Möglichkeit zum Verwenden von Benutzer Konfigurationsobjekten besteht darin, eine Reihe von Konfigurationen in einem XML-Dokument zu speichern und diese Informationen dann in einer der Eigenschaften des Benutzerkonfigurationsdaten Stroms zu speichern.
   
-Konfiguration der Benutzerobjekte erfolgt anders als die anderen Typen von Elementen in einem Postfach gespeichert. Sie können die [Folder.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=EXCHG.80%29.aspx) EWS Managed API-Methode oder die [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) EWS-Vorgang nach allen Elementen gesucht, doch Sie müssen die Option **zugeordneter** Suche durchqueren verwenden, um Benutzerobjekte Konfiguration finden. Der **zugeordnete** Suche Durchlauf gibt an, dass die Ergebnisse der Konfiguration nur Benutzerobjekte enthalten soll. EWS enthält eine Reihe von Operationen, die für die Konfiguration der Benutzerobjekte spezifisch sind. 
+Der Zugriff auf Benutzer Konfigurationsobjekte erfolgt unterschiedlich als die anderen Elementtypen, die in einem Postfach gespeichert sind. Sie können die [Folder. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=EXCHG.80%29.aspx) verwaltete EWS-API-Methode oder den [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) -EWS-Vorgang verwenden, um nach allen Elementen zu suchen, aber Sie müssen die Option **zugeordnete** Such Traversal verwenden, um Benutzer Konfigurationsobjekte zu finden. Der **zugeordnete** Such Durchlauf gibt an, dass die Suchergebnisse nur Benutzer Konfigurationsobjekte enthalten sollen. EWS enthält eine Reihe von Vorgängen, die für Benutzer Konfigurationsobjekte spezifisch sind. 
   
-**In Tabelle 1. EWS-Vorgänge und EWS Managed API-Methoden zum Arbeiten mit der Konfiguration der Benutzerobjekte**
+**Tabelle 1. EWS-Vorgänge und verwaltete EWS-API Methoden zum Arbeiten mit Benutzer Konfigurationsobjekten**
 
-|**Gewünschte Aktion**|**Zu verwendender EWS-Vorgang**|**Verwenden Sie diese Methode EWS Managed API**|
+|**Gewünschte Aktion**|**Zu verwendender EWS-Vorgang**|**Verwenden Sie diese verwaltete EWS-API-Methode**|
 |:-----|:-----|:-----|
-|Erstellen Sie eine Benutzer-Konfigurationsobjekt  <br/> |[CreateUserConfiguration-Vorgang](http://msdn.microsoft.com/library/eb5b8ab6-9743-481c-aac9-f9aa889bd353%28Office.15%29.aspx) <br/> |[UserConfiguration.Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.userconfiguration.save%28v=exchg.80%29.aspx) <br/> |
-|Abrufen einer Benutzer-Konfigurationsobjekt  <br/> |[GetUserConfiguration-Vorgang](http://msdn.microsoft.com/library/71d50e3c-92bd-435f-8118-b28bb85f8138%28Office.15%29.aspx) <br/> |[UserConfiguration.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.userconfiguration.bind%28v=exchg.80%29.aspx) <br/> [UserConfiguration.Load](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.userconfiguration.load%28v=exchg.80%29.aspx) <br/> |
-|Aktualisieren einer Benutzer-Konfigurationsobjekt  <br/> |[UpdateUserConfiguration-Vorgang](http://msdn.microsoft.com/library/eda73b62-6a3a-43ae-8fd9-f30892811f27%28Office.15%29.aspx) <br/> |[UserConfiguration.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.userconfiguration.bind%28v=exchg.80%29.aspx) <br/> |
-|Löschen einer Benutzer-Konfigurationsobjekt  <br/> |[DeleteUserConfiguration-Vorgang](http://msdn.microsoft.com/library/93e44690-be2d-4fdb-96a8-4ded3c193aed%28Office.15%29.aspx) <br/> |[UserConfiguration.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.userconfiguration.delete%28v=exchg.80%29.aspx) <br/> |
+|Erstellen eines Benutzer Konfigurationsobjekts  <br/> |[CreateUserConfiguration-Vorgang](https://msdn.microsoft.com/library/eb5b8ab6-9743-481c-aac9-f9aa889bd353%28Office.15%29.aspx) <br/> |[UserConfiguration. Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.userconfiguration.save%28v=exchg.80%29.aspx) <br/> |
+|Abrufen eines Benutzer Konfigurationsobjekts  <br/> |[GetUserConfiguration-Vorgang](https://msdn.microsoft.com/library/71d50e3c-92bd-435f-8118-b28bb85f8138%28Office.15%29.aspx) <br/> |[UserConfiguration. Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.userconfiguration.bind%28v=exchg.80%29.aspx) <br/> [UserConfiguration. Laden](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.userconfiguration.load%28v=exchg.80%29.aspx) <br/> |
+|Aktualisieren eines Benutzer Konfigurationsobjekts  <br/> |[UpdateUserConfiguration-Vorgang](https://msdn.microsoft.com/library/eda73b62-6a3a-43ae-8fd9-f30892811f27%28Office.15%29.aspx) <br/> |[UserConfiguration. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.userconfiguration.bind%28v=exchg.80%29.aspx) <br/> |
+|Löschen eines Benutzer Konfigurationsobjekts  <br/> |[DeleteUserConfiguration-Vorgang](https://msdn.microsoft.com/library/93e44690-be2d-4fdb-96a8-4ded3c193aed%28Office.15%29.aspx) <br/> |[UserConfiguration. Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.userconfiguration.delete%28v=exchg.80%29.aspx) <br/> |
    
 > [!NOTE]
-> Benutzerobjekte-Konfiguration mithilfe des EWS erstellt haben, ein Präfix für den [ItemClass](http://msdn.microsoft.com/library/56020078-50b4-4880-894a-a9f234033cfb%28Office.15%29.aspx) , die mit "IPM. beginnt Konfiguration. ". Die **ItemClass** eines Benutzers Configuration-Objekts ist das Präfix des Benutzers Konfiguration-Objekt und Ihr Benutzername des Configuration-Objekts. Sie können die [Item.ItemClass](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.userconfiguration.delete%28v=exchg.80%29.aspx) EWS Managed API-Eigenschaft oder das **ItemClass** EWS-Element um für Benutzerobjekte Konfiguration zu suchen, die Sie definiert haben. 
+> Benutzer Konfigurationsobjekte, die mit EWS erstellt wurden, weisen ein [ItemClass](https://msdn.microsoft.com/library/56020078-50b4-4880-894a-a9f234033cfb%28Office.15%29.aspx) -Präfix auf, das mit "IPM beginnt. Konfiguration. ". Das **ItemClass** eines Benutzer Konfigurationsobjekts ist das Benutzer Konfigurationsobjekt Präfix und Ihr Benutzer Konfigurationsobjekt Name. Sie können die [Item. ItemClass](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.userconfiguration.delete%28v=exchg.80%29.aspx) verwaltete EWS-API-Eigenschaft oder das **ItemClass** -EWS-Element verwenden, um nach Benutzer Konfigurationsobjekten zu suchen, die Sie definiert haben. 
   
 ### <a name="extended-properties"></a>Erweiterte Eigenschaften
 <a name="ExtendedProperties"> </a>
 
-Wenn Sie Konfigurationsinformationen für Elemente speichern möchten, verwenden Sie [Erweiterte Eigenschaften](properties-and-extended-properties-in-ews-in-exchange.md) . EWS, im Gegensatz zu MAPI, gibt keinen Eigenschaftenbehälter für Elemente zurück. Dies bedeutet, dass ein EWS-Client den erweiterten Eigenschaftenbezeichner, um die Suche und Zugriff auf die erweiterte Eigenschaft wissen muss. Wenn Sie zum Speichern von Konfigurationsinformationen für Elemente als Benutzerobjekte Konfiguration müssen, kann die Nutzung der erweiterten Eigenschaften zum Erstellen von benutzerdefinierter Eigenschaften der Lösung für Sie sein. Erweiterte Eigenschaften können Sie zugreifen, und Speichern von Informationen auf Eigenschaften, die nicht Teil der standard-Eigenschaft für ein Element festgelegt sind. 
+Verwenden Sie [Erweiterte Eigenschaften](properties-and-extended-properties-in-ews-in-exchange.md) , wenn Sie Konfigurationsinformationen zu Elementen speichern möchten. Im Gegensatz zu MAPI gibt EWS keinen Eigenschaftenbehälter für Elemente zurück. Dies bedeutet, dass ein EWS-Client den erweiterten Eigenschaftenbezeichner kennen muss, um nach der erweiterten Eigenschaft zu suchen und darauf zuzugreifen. Wenn Sie Konfigurationsinformationen für andere Elemente als Benutzer Konfigurationsobjekte speichern müssen, ist die Lösung für Sie möglicherweise mithilfe erweiterter Eigenschaften zum Erstellen benutzerdefinierter Eigenschaften. Erweiterte Eigenschaften ermöglichen den Zugriff auf und das Speichern von Informationen zu Eigenschaften, die nicht Teil des Standard-Eigenschaftensatzes für ein Element sind. 
   
 > [!IMPORTANT]
-> Das Exchange-Datenbankschema verfügt über eine begrenzte Anzahl von Eigenschaften. Die maximale Anzahl von Eigenschaftenbezeichner für eine Exchange-Datenbank ist 32.767. Wenn Sie viele Einstellungen gespeichert werden erweiterte Eigenschaften verwenden, empfehlen wir, dass Sie einen einzelnen erweiterten Eigenschaft verwenden, um diese Einstellungen speichern, damit Sie diese Obergrenze nicht überschreiten. 
+> Das Exchange-Datenbankschema verfügt über eine begrenzte Anzahl von Eigenschaften. Die maximale Anzahl von Eigenschaftenbezeichnern für eine Exchange-Datenbank lautet 32.767. Wenn Sie erweiterte Eigenschaften zum Speichern vieler Einstellungen verwenden, wird empfohlen, dass Sie eine einzelne erweiterte Eigenschaft zum Speichern dieser Einstellungen verwenden, damit Sie diesen Höchstwert nicht überschreiten. 
   
-Sie können die [Item.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.update%28v=EXCHG.80%29.aspx) EWS Managed API-Methode oder die [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) EWS-Vorgang verwenden, um erweiterte Eigenschaften für Benutzerobjekte Konfiguration festzulegen. 
+Sie können die [Item. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.update%28v=EXCHG.80%29.aspx) verwaltete EWS-API-Methode oder den [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) -EWS-Vorgang verwenden, um erweiterte Eigenschaften für Benutzer Konfigurationsobjekte festzulegen. 
   
 ### <a name="custom-items"></a>Benutzerdefinierte Elemente
 <a name="CustomItems"> </a>
 
-Benutzerdefinierte Elemente können auch verwendet werden, um Informationen zu speichern. Eigenschaften der vorhandenen können zugewiesen werden, um Konfigurationsinformationen enthalten. Oder Sie können erweiterte Eigenschaften verwenden, um Ihre eigene Eigenschaften für die Anwendung zu definieren. Die Verwendung benutzerdefinierter Elemente zum Speichern der Konfiguration bietet folgende Vorteile: 
+Benutzerdefinierte Elemente können auch zum Speichern von Informationen verwendet werden. Die vorhandenen Elementeigenschaften können umfunktioniert werden, um Konfigurationsinformationen zu enthalten. Sie können auch erweiterte Eigenschaften verwenden, um Ihre eigenen Eigenschaften für Ihre Anwendung zu definieren. Die Verwendung benutzerdefinierter Elemente zum Speichern der Konfiguration bietet die folgenden Vorteile: 
   
-- Sie arbeiten für alle Versionen von Exchange, EWS unterstützen.
+- Sie funktionieren für alle Versionen von Exchange, die EWS unterstützen.
     
-- Wenn Sie erweiterte Eigenschaften für das Element nicht verwenden, wird das Budget der Eigenschaften von Exchange nicht berechnet.
+- Wenn Sie keine erweiterten Eigenschaften für das Element verwenden, wird das Budget von Exchange-Eigenschaften nicht aufgeladen.
     
-## <a name="where-should-i-store-my-application-settings"></a>Wo sollen die Einstellungen für meine Anwendung werden gespeichert?
+## <a name="where-should-i-store-my-application-settings"></a>Wo sollte ich meine Anwendungseinstellungen speichern?
 <a name="ApplicationSettingsLocation"> </a>
 
-Postfachordner und die darin enthaltenen Elemente befinden sich im Stammordner der Nachricht. Dieser Ordner wird durch den Wert [WellKnownFolderName.msgfolderroot](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) in die EWS Managed API identifiziert. MAPI-ausgedrückt ist dies das Äquivalent von IPM-Unterstruktur eines Postfachs. Konfiguration Benutzerobjekte sind häufig zur UI-basiertes Einstellungen zu erstellen, damit der Einstellungen für die Ansicht basierend auf den Ordner, der ein Benutzer den Zugriff auf ist eine Anwendung gerendert werden kann. Ansichtsoptionen für Ordner werden in der Regel auf eine Benutzer-Konfigurationsobjekt festgelegt, die dem Ordner zugeordnet ist. Aber in einigen Fällen möglicherweise sollen Einstelllungen global für die Anwendung. In diesem Fall können Sie Ihre Einstellungen im Stammordner Nachricht speichern. 
+Postfachordner und die darin enthaltenen Elemente befinden sich im Stamm Nachrichten Ordner. Dieser Ordner wird durch den [WellKnownFolderName. msgfolderroot-](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) Wert in der verwaltete EWS-API identifiziert. In MAPI-Ausdrücken entspricht dies der IPM-Unterstruktur eines Postfachs. Benutzer Konfigurationsobjekte werden häufig verwendet, um benutzeroberflächenbasierte Einstellungen zu erstellen, damit eine Anwendung Ansichtseinstellungen basierend auf dem Ordner rendern kann, auf den ein Benutzer zugreift. Ordnerbasierte Ansichtseinstellungen werden normalerweise für ein Benutzer Konfigurationsobjekt festgelegt, das dem Ordner zugeordnet ist. Es kann jedoch vorkommen, dass Sie die Einstellungen global für Ihre Anwendung festlegen möchten. In diesem Fall können Sie die Einstellungen im Stamm Nachrichten Ordner speichern. 
   
-Die meisten Benutzer sind nicht kennen und in der Regel nicht den Stammordner des Postfachs zuzugreifen. Dieser Ordner wird durch den Wert [WellKnownFolderName.root](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) in die EWS Managed API identifiziert. MAPI-ausgedrückt ist dies das Äquivalent von der IPM Unterstruktur eines Postfachs an. Informationen, die Endbenutzer direkt zugreifen werden im Postfach Stammordner gespeichert. Möglicherweise möchten Ihre Anwendung Einstellung in diesem Ordner gespeichert werden, da Clientanwendungen nicht in der Regel, es zugreifen. 
+Die meisten Benutzer kennen den Stamm Postfachordner nicht und greifen in der Regel nicht auf diesen zu. Dieser Ordner wird durch den Wert [WellKnownFolderName. root](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) im verwaltete EWS-API identifiziert. In MAPI-Ausdrücken entspricht dies der nicht-IPM-Unterstruktur eines Postfachs. Informationen, auf die Endbenutzer nicht direkt zugreifen, werden im Stamm Postfachordner gespeichert. Möglicherweise möchten Sie die Anwendungseinstellung in diesem Ordner speichern, da Clientanwendungen normalerweise nicht darauf zugreifen. 
   
 ## <a name="version-differences"></a>Versionsunterschiede
 <a name="VersionDifferences"> </a>
 
-Konfiguration der Benutzerobjekte sind in Exchange Online, Exchange Online als Teil von Office 365 und Exchange beginnend mit Exchange 2010-Versionen verfügbar.
+Benutzer Konfigurationsobjekte stehen auf Exchange Online zur Verfügung, Exchange Online im Rahmen von Office 365 und Exchange-Versionen, die mit Exchange 2010 beginnen.
   
 ## <a name="see-also"></a>Siehe auch
 
 
-- [Verwalten der permanenten Anwendungseinstellungen mithilfe von EWS in Exchange](how-to-manage-persistent-application-settings-by-using-ews-in-exchange.md)
+- [Persistente Anwendungseinstellungen mithilfe von EWS in Exchange verwalten](how-to-manage-persistent-application-settings-by-using-ews-in-exchange.md)
     
 - [Übersicht über den EWS-Cliententwurf für Exchange](ews-client-design-overview-for-exchange.md)
     
 - [Eigenschaften und erweiterte Eigenschaften in EWS in Exchange](properties-and-extended-properties-in-ews-in-exchange.md)
     
-- [Arbeiten Sie mit Ordnern in Exchange mithilfe der Exchange-Webdienste](how-to-work-with-folders-by-using-ews-in-exchange.md)
+- [Arbeiten mit Ordnern unter Verwendung von EWS in Exchange](how-to-work-with-folders-by-using-ews-in-exchange.md)
     
-- [Arbeiten Sie mit Exchange-Postfach-Elementen mithilfe von EWS in Exchange](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md)
+- [Arbeiten mit Exchange-Postfachelementen mithilfe von EWS in Exchange](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md)
     
 

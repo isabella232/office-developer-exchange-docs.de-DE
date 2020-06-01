@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 23538bca-738e-4319-944e-f459ff8a7eba
-description: Das YearlyRegeneration-Element beschreibt die Häufigkeit in Jahre, in denen eine Aufgabe neu erstellt wird.
-ms.openlocfilehash: d034be1ff70e92fd5e96118b9fd1eb3033737f6c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das YearlyRegeneration-Element beschreibt die Häufigkeit in Jahren, in der eine Aufgabe neu generiert wird.
+ms.openlocfilehash: 7a6796c433bc54d145d5a769e01f9bba46897735
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839561"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457879"
 ---
 # <a name="yearlyregeneration"></a>YearlyRegeneration
 
-Das **YearlyRegeneration** -Element beschreibt die Häufigkeit in Jahre, in denen eine Aufgabe neu erstellt wird. 
+Das **YearlyRegeneration** -Element beschreibt die Häufigkeit in Jahren, in der eine Aufgabe neu generiert wird. 
   
 ```xml
 <YearlyRegeneratingPatternType>
@@ -43,23 +43,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Intervall](interval.md) <br/> |Definiert das Intervall in Jahre, in denen eine neue Aufgabe nach dem Abschluss des Vorgangs erneut generiert wird.  <br/> |
+|[Intervall](interval.md) <br/> |Definiert das Intervall in Jahren, in dem eine neue Aufgabe nach Abschluss der Aufgabe neu generiert wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Serieninformationen für wiederkehrende Aufgaben enthält.  <br/> |
+|[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Enthält Serieninformationen für wiederkehrende Vorgänge.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

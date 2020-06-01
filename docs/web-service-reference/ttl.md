@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cfefc053-1e3c-46fb-8014-b56a654f2fb3
-description: Das Element TTL gibt die Zeit in Minuten, die das Token gültig ist.
-ms.openlocfilehash: 004c8ebe04ec5f1e1aeb8b961b0708f05295d8d8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das TTL-Element gibt die Zeit (in Minuten) an, für die das Token gültig ist.
+ms.openlocfilehash: 3d5b4ec7e2184035737dbc94f3bb1ad83eb3fef4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839270"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456395"
 ---
 # <a name="ttl"></a>TTL
 
-Das Element **TTL** gibt die Zeit in Minuten, die das Token gültig ist. 
+Das **TTL** -Element gibt die Zeit (in Minuten) an, für die das Token gültig ist. 
   
 ```XML
 <TTL></TTL>
 ```
 
- **ganze Zahl**
+ **Integer**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,19 +42,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **TTL** -Elements ist die Zeit in Minuten an, denen das Token gültig ist. 
+Der Textwert des **TTL** -Elements ist die Zeit in Minuten, für die das Token gültig ist. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

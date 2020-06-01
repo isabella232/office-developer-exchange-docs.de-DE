@@ -11,31 +11,31 @@ api_name:
 api_type:
 - schema
 ms.assetid: 71d50e3c-92bd-435f-8118-b28bb85f8138
-description: Der Vorgang GetUserConfiguration Ruft eine Benutzer-Konfigurationsobjekt aus einem Ordner ab.
-ms.openlocfilehash: 6c1cdf381126e54f9b9eeaed260e7c2b23b0b2a6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetUserConfiguration-Vorgang ruft ein Benutzer Konfigurationsobjekt aus einem Ordner ab.
+ms.openlocfilehash: fb28e88d1a47b0ea8f63ed33b1efacae8538e1c8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829687"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458208"
 ---
 # <a name="getuserconfiguration-operation"></a>GetUserConfiguration-Vorgang
 
-Der Vorgang **GetUserConfiguration** Ruft eine Benutzer-Konfigurationsobjekt aus einem Ordner ab. 
+Der **GetUserConfiguration** -Vorgang ruft ein Benutzer Konfigurationsobjekt aus einem Ordner ab. 
   
-## <a name="getuserconfiguration-request-example"></a>Anforderungsbeispiel GetUserConfiguration
+## <a name="getuserconfiguration-request-example"></a>GetUserConfiguration-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung **GetUserConfiguration** veranschaulicht eine Anforderung zum Abrufen einer Benutzer-Konfigurationsobjekt auf den Ordner "Entwürfe" bilden. 
+Im folgenden Beispiel einer **GetUserConfiguration** -Anforderung wird gezeigt, wie eine Anforderung zum Abrufen eines Benutzer Konfigurationsobjekts im Ordner "Entwürfe" erstellt wird. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
@@ -52,11 +52,11 @@ Im folgenden Beispiel wird eine Anforderung **GetUserConfiguration** veranschaul
 </soap:Envelope>
 ```
 
-## <a name="getuserconfiguration-response-example"></a>GetUserConfiguration antwortbeispiel
+## <a name="getuserconfiguration-response-example"></a>GetUserConfiguration-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **GetUserConfiguration** . 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetUserConfiguration** -Anforderung. 
   
 ### <a name="code"></a>Code
 
@@ -69,15 +69,15 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **GetU
                          MajorBuildNumber="639" 
                          MinorBuildNumber="20" 
                          Version="Exchange2010" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetUserConfigurationResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetUserConfigurationResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetUserConfigurationResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ff24ea15-0cd7-407d-a378-73ec16451870
-description: Das Element DeletedOccurrence stellt eine gelöschte Vorkommen eines sich wiederholenden Kalenderelements.
-ms.openlocfilehash: f12a2ba20f87f7803e492d8422b68c8ecdf9d797
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DeletedOccurrence-Element stellt ein gelöschtes Vorkommen eines wiederkehrenden Kalenderelements dar.
+ms.openlocfilehash: 814a81934786963ae5e7ea3a40406834c27b64ce
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757910"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457837"
 ---
 # <a name="deletedoccurrence"></a>DeletedOccurrence
 
-Das Element **DeletedOccurrence** stellt eine gelöschte Vorkommen eines sich wiederholenden Kalenderelements. 
+Das **DeletedOccurrence** -Element stellt ein gelöschtes Vorkommen eines wiederkehrenden Kalenderelements dar. 
   
 ```xml
 <DeletedOccurrence>
@@ -42,23 +42,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Start](start.md) <br/> |Die Anfangszeit der einen gelöschten Vorkommen eines wiederkehrenden Kalenderelements darstellt.  <br/> |
+|[Start](start.md) <br/> |Stellt die Startzeit eines gelöschten Auftretens eines wiederkehrenden Kalenderelements dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DeletedOccurrences](deletedoccurrences.md) <br/> |Enthält ein Array von gelöschten Vorkommen eines sich wiederholenden Kalenderelements an.  <br/> |
+|[DeletedOccurrences](deletedoccurrences.md) <br/> |Enthält ein Array von gelöschten Vorkommen eines wiederkehrenden Kalenderelements.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
