@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 481cdbc6-d5aa-49fa-a3fa-9d119d3dca99
-description: Das Element MergedFreeBusyIntervalInMinutes stellt den Zeitunterschied zwischen zwei aufeinanderfolgenden Slots in der Ansicht FreeBusyMerged.
-ms.openlocfilehash: 99c8c69424a0a9d9594005fdf6b2ceba53e6288a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MergedFreeBusyIntervalInMinutes-Element stellt den Zeitunterschied zwischen zwei aufeinanderfolgenden Slots in der FreeBusyMerged-Ansicht dar.
+ms.openlocfilehash: 6228ee5b66202634e6bb3b6c1ad6b8897a109d58
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830451"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468789"
 ---
 # <a name="mergedfreebusyintervalinminutes"></a>MergedFreeBusyIntervalInMinutes
 
-Das Element **MergedFreeBusyIntervalInMinutes** stellt den Zeitunterschied zwischen zwei aufeinanderfolgenden Slots in der Ansicht **FreeBusyMerged** . 
+Das **MergedFreeBusyIntervalInMinutes** -Element stellt den Zeitunterschied zwischen zwei aufeinanderfolgenden Slots in der **FreeBusyMerged** -Ansicht dar. 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -50,21 +50,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FreeBusyViewOptions](freebusyviewoptions.md) <br/> |Gibt den Typ des Frei/Gebucht-Informationen in der Antwort zurückgegeben.  <br/> Es folgt der XPath-Ausdruck für dieses Element:  <br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions` <br/> |
+|[FreeBusyViewOptions](freebusyviewoptions.md) <br/> |Gibt den Typ der Frei/Gebucht-Informationen an, die in der Antwort zurückgegeben werden.  <br/> Es folgt der XPath für dieses Element:  <br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der Textwert darstellt Zeit in Minuten. Der Standardwert ist 30 Minuten. 6 Minuten ist das kürzeste Intervall und einen Tag (1.440 Minuten) ist das maximale Intervall für dieses Element.
+Ein Textwert ist erforderlich. Der Textwert stellt die Zeit in Minuten dar. Der Standardwert beträgt 30 Minuten. Sechs Minuten sind das minimale Intervall und ein Tag (1440 Minuten) das maximale Intervall für dieses Element.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieser Wert wird nur dann, wenn das Element [RequestedView](requestedview.md) **MergedOnly**, **FreeBusyMerged**oder **DetailedMerge**gleich ist. Dies ist ein Integer-Datentyp. Der Stream, der die durch dieses Element definierten Intervallen enthält, wird im [MergedFreeBusy](mergedfreebusy.md) -Element zurückgegeben. 
+Dieser Wert wird nur verwendet, wenn das [RequestedView](requestedview.md) -Element gleich **MergedOnly**, **FreeBusyMerged**oder **DetailedMerge**ist. Dies ist ein Integer-Datentyp. Der Datenstrom, der die durch dieses Element definierten Intervalle enthält, wird im [MergedFreeBusy](mergedfreebusy.md) -Element zurückgegeben. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -78,5 +78,5 @@ Dieser Wert wird nur dann, wenn das Element [RequestedView](requestedview.md) **
 [GetUserOofSettings-Vorgang](getuseroofsettings-operation.md)
 
 
-[Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

@@ -11,39 +11,39 @@ api_name:
 api_type:
 - schema
 ms.assetid: c7ea0d68-9793-4144-b378-d99536776db9
-description: CopyFolder-Vorgang kopiert Ordner in einem Postfach.
-ms.openlocfilehash: a83444ff0927a3c8fe075c79d44d02357a737773
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der CopyFolder-Vorgang kopiert Ordner in einem Postfach.
+ms.openlocfilehash: 1f9a7a3f3ede2d3cf8f9d41677d8ce0487266f17
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757719"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468894"
 ---
 # <a name="copyfolder-operation"></a>CopyFolder-Vorgang
 
-CopyFolder-Vorgang kopiert Ordner in einem Postfach.
+Der CopyFolder-Vorgang kopiert Ordner in einem Postfach.
   
 ## <a name="using-the-copyfolder-operation"></a>Verwenden des CopyFolder-Vorgangs
 
-Der Vorgang CopyFolder ähnelt der [MoveFolder-Vorgang](movefolder-operation.md). Kopiert die angegebene Ordnern und gibt die **Id** und **ChangeKey** der kopierten Ordner. 
+Der CopyFolder-Vorgang ähnelt dem [MoveFolder-Vorgang](movefolder-operation.md). Er kopiert identifizierte Ordner und gibt die **ID** -und **ChangeKey** der kopierten Ordner zurück. 
   
-## <a name="copyfolder-request-example"></a>CopyFolder-anforderungsbeispiel
+## <a name="copyfolder-request-example"></a>CopyFolder-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung CopyFolder veranschaulicht, wie Ordner in den Ordner Posteingang zu kopieren.
+Im folgenden Beispiel einer CopyFolder-Anforderung wird gezeigt, wie Ordner in den Ordner Posteingang kopiert werden.
   
 > [!NOTE]
-> Der Wert des **Id** -Attributs des Elements [FolderId](folderid.md) wurde zur besseren Lesbarkeit gekürzt. 
+> Der Wert des ID-Attributs des [Folder](folderid.md) **-ID-** Elements wurde zur Lesbarkeit gekürzt. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CopyFolder xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CopyFolder xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ToFolderId>
         <t:DistinguishedFolderId Id="inbox"/>
       </ToFolderId>
@@ -56,9 +56,9 @@ Im folgenden Beispiel wird eine Anforderung CopyFolder veranschaulicht, wie Ordn
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Ordner können durch das [DistinguishedFolderId](distinguishedfolderid.md) -Element oder das [FolderId](folderid.md) -Element für die Verwendung in entweder die [ToFolderId](tofolderid.md) oder die [FolderIds](folderids.md) Elemente identifiziert werden. 
+Ordner können entweder durch das [DistinguishedFolderId](distinguishedfolderid.md) -Element oder das [Folder](folderid.md) -Element für die Verwendung in den [tofolder](tofolderid.md) -oder [FolderIds](folderids.md) -Elementen identifiziert werden. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -66,7 +66,7 @@ In der Anforderung werden folgende Elemente verwendet:
   
 - [CopyFolder](copyfolder.md)
     
-- [ToFolderId](tofolderid.md)
+- [Tofolder-Datei](tofolderid.md)
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
@@ -77,16 +77,16 @@ In der Anforderung werden folgende Elemente verwendet:
 > [!NOTE]
 > Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt. 
   
-Wenn andere Optionen für die Anforderungsnachricht des Vorgangs CopyFolder suchen möchten, verwenden Sie die Schemahierarchie. Starten Sie das [CopyFolder](copyfolder.md) -Element. 
+Um andere Optionen für die Anforderungsnachricht des CopyFolder-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [CopyFolder](copyfolder.md) -Element. 
   
 ## <a name="successful-copyfolder-response"></a>Erfolgreiche CopyFolder-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung CopyFolder. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CopyFolder-Anforderung. 
   
 > [!NOTE]
-> Die Ordner-ID und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Ordner-ID und der Change-Schlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ### <a name="code"></a>Code
 
@@ -97,12 +97,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung CopyFo
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CopyFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CopyFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CopyFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -118,11 +118,11 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung CopyFo
 </soap:Envelope>
 ```
 
-### <a name="comment"></a>Comment
+### <a name="comment"></a>Kommentar
 
-Das [FolderId](folderid.md) -Element, das in der Antwort zurückgegeben wird steht für den Ordner, der in den neuen Ordnerspeicherort kopiert wurde. 
+Das [folderin](folderid.md) -Element, das in der Antwort zurückgegeben wird, stellt den Ordner dar, der an den neuen Ordnerspeicherort kopiert wurde. 
   
-### <a name="response-elements"></a>Antwortelemente
+### <a name="response-elements"></a>Response-Elemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -142,13 +142,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [FolderId](folderid.md)
     
-Wenn andere Optionen für die Antwortnachricht des Vorgangs CopyFolder suchen möchten, verwenden Sie die Schemahierarchie. Starten Sie das [CopyFolderResponse](copyfolderresponse.md) -Element. 
+Um andere Optionen für die Antwortnachricht des CopyFolder-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [CopyFolderResponse](copyfolderresponse.md) -Element. 
   
 ## <a name="copyfolder-error-response"></a>CopyFolder-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine CopyFolder-Anforderung. Der Fehler aufgetreten, weil ein Ordner mit dem gleichen Anzeigenamen bereits vorhanden ist.
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine CopyFolder-Anforderung. Der Fehler ist aufgetreten, da bereits ein Ordner mit dem gleichen Anzeigenamen vorhanden ist.
   
 ### <a name="code"></a>Code
 
@@ -159,12 +159,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine CopyFolder-Anforderung. D
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CopyFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CopyFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CopyFolderResponseMessage ResponseClass="Error">
           <m:MessageText>The move or copy operation failed.</m:MessageText>
@@ -178,7 +178,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine CopyFolder-Anforderung. D
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
@@ -196,7 +196,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [Ordner](folders-ex15websvcsotherref.md)
     
-Wenn andere Optionen für die Fehlermeldung Antwort des Vorgangs CopyFolder suchen möchten, verwenden Sie die Schemahierarchie. Starten Sie das [CopyFolderResponse](copyfolderresponse.md) -Element. 
+Weitere Optionen für die Fehlerantwort Meldung des CopyFolder-Vorgangs finden Sie unter Durchsuchen der Schemahierarchie. Beginnen Sie mit dem [CopyFolderResponse](copyfolderresponse.md) -Element. 
   
 ## <a name="see-also"></a>Siehe auch
 

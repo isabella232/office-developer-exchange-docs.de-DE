@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: fd2b9545-7213-4427-95ae-71a155b75971
-description: Das Element UploadItems stellt eine Anforderung zum Hochladen von Elementen in einem Postfach.
-ms.openlocfilehash: d3cd69cdb744431daeede736c2e156c8ab92a79b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UploadItems-Element stellt eine Anforderung zum Hochladen von Elementen in ein Postfach dar.
+ms.openlocfilehash: 8fdb7253926e030085374b650e792349e598ee4a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839412"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468824"
 ---
 # <a name="uploaditems"></a>UploadItems
 
-Das Element **UploadItems** stellt eine Anforderung zum Hochladen von Elementen in einem Postfach. 
+Das **UploadItems** -Element stellt eine Anforderung zum Hochladen von Elementen in ein Postfach dar. 
   
 [UploadItems](uploaditems.md)
   
@@ -44,7 +44,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Elemente (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md) <br/> |Enthält ein Array von Elementen in einem Postfach hochladen.  <br/> |
+|[Elemente (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md) <br/> |Enthält ein Array von Elementen, die in ein Postfach hochgeladen werden sollen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -54,17 +54,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 93044d39-4489-456a-8cce-b6d69873348f
-description: Das Element UploadItemsResponse stellt eine Antwort auf eine einzelne Anforderung UploadItems.
-ms.openlocfilehash: 67b8f9aa7741c66ff792a036f8c18e8c1ae57b8f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UploadItemsResponse-Element stellt eine Antwort auf eine einzelne UploadItems-Anforderung dar.
+ms.openlocfilehash: 8f83c8239709052fe84d80834333d18bea51e489
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839414"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468817"
 ---
 # <a name="uploaditemsresponse"></a>UploadItemsResponse
 
-Das Element **UploadItemsResponse** stellt eine Antwort auf eine einzelne Anforderung UploadItems. 
+Das **UploadItemsResponse** -Element stellt eine Antwort auf eine einzelne UploadItems-Anforderung dar. 
   
 [UploadItemsResponse](uploaditemsresponse.md)
   
@@ -44,7 +44,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -54,17 +54,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

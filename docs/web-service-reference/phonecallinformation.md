@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: a0363c42-6d35-4074-bc17-946eb12736ff
-description: Das PhoneCallInformation-Element gibt die Statusinformationen für einen Telefonanruf.
-ms.openlocfilehash: e64e7b38b3801c60df8a966e95d980746533d3a4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PhoneCallInformation-Element gibt die Zustandsinformationen für einen Telefonanruf an.
+ms.openlocfilehash: 75370bccb841818a8302bdd055ad96fd16b2e8df
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830758"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468845"
 ---
 # <a name="phonecallinformation"></a>PhoneCallInformation
 
-Das **PhoneCallInformation** -Element gibt die Statusinformationen für einen Telefonanruf. 
+Das **PhoneCallInformation** -Element gibt die Zustandsinformationen für einen Telefonanruf an. 
   
 ```XML
 <PhoneCallInformation>
@@ -45,28 +45,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PhoneCallState](phonecallstate.md) <br/> |Gibt den Status für einen Telefonanruf. Dieses Element ist erforderlich.  <br/> |
-|[ConnectionFailureCause](connectionfailurecause.md) <br/> |Gibt die Ursache für ein Verbindungsfehler. Dieses Element ist erforderlich.  <br/> |
-|[SIPResponseText](sipresponsetext.md) <br/> |Gibt den SIP-Antworttext. Dieses Element ist optional.  <br/> |
-|[SIPResponseCode](sipresponsecode.md) <br/> |Gibt den SIP-Antwortcode. Dieses Element ist optional.  <br/> |
+|[PhoneCallState](phonecallstate.md) <br/> |Gibt den Status für einen Telefonanruf an. Dieses Element ist erforderlich.  <br/> |
+|[ConnectionFailureCause](connectionfailurecause.md) <br/> |Gibt die Ursache eines Verbindungsfehlers an. Dieses Element ist erforderlich.  <br/> |
+|[SIPResponseText](sipresponsetext.md) <br/> |Gibt den SIP-Antworttext an. Dieses Element ist optional.  <br/> |
+|[SIPResponseCode](sipresponsecode.md) <br/> |Gibt den SIP-Antwortcode an. Dieses Element ist optional.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetPhoneCallInformationResponse](getphonecallinformationresponse.md) <br/> |Definiert eine Antwort auf eine [GetPhoneCallInformation Vorgang](getphonecallinformation-operation.md) an.  <br/> |
+|[GetPhoneCallInformationResponse](getphonecallinformationresponse.md) <br/> |Definiert eine Antwort auf eine [GetPhoneCallInformation-Vorgangs](getphonecallinformation-operation.md) Anforderung.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

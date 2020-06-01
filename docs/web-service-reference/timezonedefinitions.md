@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9ca1584e-65b8-49ba-a408-e3e8597e6607
-description: Das TimeZoneDefinitions-Element stellt ein Array von Zeitzonendefinitionen.
-ms.openlocfilehash: 0bc1b69ef564bb4e239d9845a4b1a0133292ff12
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das TimeZoneDefinitions-Element stellt ein Array von Zeitzonendefinitionen dar.
+ms.openlocfilehash: 16a25eb4fdcad2554ebd19626d0a0bc7f6391ac5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839214"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468761"
 ---
 # <a name="timezonedefinitions"></a>TimeZoneDefinitions
 
-Das **TimeZoneDefinitions** -Element stellt ein Array von Zeitzonendefinitionen. 
+Das **TimeZoneDefinitions** -Element stellt ein Array von Zeitzonendefinitionen dar. 
   
 ```XML
 <TimeZoneDefinitions>
@@ -42,25 +42,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Zeitzonendefinition](timezonedefinition.md) <br/> |Gibt den Zeiträume und Übergänge, die eine Zeitzone definiert.  <br/> |
+|[TimeZoneDefinition](timezonedefinition.md) <br/> |Gibt die Punkte und Übergänge an, die eine Zeitzone definieren.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetServerTimeZonesResponseMessage](getservertimezonesresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung [GetServerTimeZones Vorgang](getservertimezones-operation.md) .  <br/> |
+|[GetServerTimeZonesResponseMessage](getservertimezonesresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer [GetServerTimeZones-Vorgangs](getservertimezones-operation.md) Anforderung.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

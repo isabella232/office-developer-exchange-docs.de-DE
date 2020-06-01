@@ -1,5 +1,5 @@
 ---
-title: ResetPIN (UM-Webdienst)
+title: ResetPIN (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 383f0735-1caa-4675-a6e1-6dba6c5b1a28
-description: Das ResetPIN-Element definiert die Anforderung einer ResetPIN-Operation (UM-Webdienst).
-ms.openlocfilehash: 3b6e68b7292d0c660c1980cc977981bef2a5e053
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ResetPIN-Element definiert eine ResetPIN-Vorgangsanforderung (um-Webdienst).
+ms.openlocfilehash: de175797b202219df994708680ac8ab750b02880
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831147"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468852"
 ---
-# <a name="resetpin-um-web-service"></a>ResetPIN (UM-Webdienst)
+# <a name="resetpin-um-web-service"></a>ResetPIN (um-Webdienst)
 
-Das ResetPIN-Element definiert eine Anforderung [ResetPIN-Vorgang (UM-Webdienst)](resetpin-operation-um-web-service.md) . 
+Das ResetPIN-Element definiert eine [ResetPIN-Vorgangsanforderung (um-Webdienst)](resetpin-operation-um-web-service.md) . 
   
-[ResetPIN (UM-Webdienst)](resetpin-um-web-service.md)
+[ResetPIN (um-Webdienst)](resetpin-um-web-service.md)
   
 ```xml
 <ResetPIN />
@@ -49,18 +49,18 @@ Keine.
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[ResetPIN-Vorgang (UM-Webdienst)](resetpin-operation-um-web-service.md)
+[ResetPIN-Vorgang (um-Webdienst)](resetpin-operation-um-web-service.md)
 

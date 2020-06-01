@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 468bfdd7-d5df-4bca-8f76-34bd5fb722bb
-description: Das TelUriAddress-Element enthält den tel Uniform Resource Identifier (URI) für einen Kontakt.
-ms.openlocfilehash: ffb165496b4da5e9b751bcafcfc4b8e221486dfe
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das TelUriAddress-Element enthält den Tel-URI (Uniform Resource Identifier) für einen Kontakt.
+ms.openlocfilehash: 967d21974ef789dec1d252e650c6391a07b6ac0e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839170"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468838"
 ---
 # <a name="teluriaddress"></a>TelUriAddress
 
-Das **TelUriAddress** -Element enthält den tel Uniform Resource Identifier (URI) für einen Kontakt. 
+Das **TelUriAddress** -Element enthält den Tel-URI (Uniform Resource Identifier) für einen Kontakt. 
   
 ```XML
 <TelUriAddress></TelUriAddress>
@@ -42,21 +42,21 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **TelUriAddress** -Elements ist die tel-URI für einen Kontakt. 
+Der Textwert des **TelUriAddress** -Elements ist der Tel-URI für einen Kontakt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 
