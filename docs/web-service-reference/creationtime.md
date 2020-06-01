@@ -7,56 +7,56 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 32fa8946-3d5d-4123-8127-efc2ac369553
-description: CreationTime-Element gibt an, wann die Rolle erstellt wurde.
-ms.openlocfilehash: 1ddf370d14c2e5ebc1d094abbe258b4da5b6a38a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das creationzeit-Element gibt an, wann die Persona erstellt wurde.
+ms.openlocfilehash: 81ad700121a48355426da7432de413daacef66cd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757814"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44443830"
 ---
-# <a name="creationtime"></a><span data-ttu-id="fa517-103">CreationTime</span><span class="sxs-lookup"><span data-stu-id="fa517-103">CreationTime</span></span>
+# <a name="creationtime"></a><span data-ttu-id="22493-103">CreationTime</span><span class="sxs-lookup"><span data-stu-id="22493-103">CreationTime</span></span>
 
-<span data-ttu-id="fa517-104">**CreationTime** -Element gibt an, wann die Rolle erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="fa517-104">The **CreationTime** element specifies when the persona was created.</span></span> 
+<span data-ttu-id="22493-104">Das **creationzeit** -Element gibt an, wann die Persona erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="22493-104">The **CreationTime** element specifies when the persona was created.</span></span> 
   
 ```XML
 <CreationTime></CreationTime>
 ```
 
- <span data-ttu-id="fa517-105">**DateTime**</span><span class="sxs-lookup"><span data-stu-id="fa517-105">**datetime**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="fa517-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="fa517-106">Attributes and elements</span></span>
+ <span data-ttu-id="22493-105">**DateTime**</span><span class="sxs-lookup"><span data-stu-id="22493-105">**datetime**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="22493-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="22493-106">Attributes and elements</span></span>
 
-<span data-ttu-id="fa517-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="fa517-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="22493-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="22493-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="fa517-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="fa517-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="22493-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="22493-108">Attributes</span></span>
 
-<span data-ttu-id="fa517-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="fa517-109">None.</span></span>
+<span data-ttu-id="22493-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="22493-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="fa517-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="fa517-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="22493-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="22493-110">Child elements</span></span>
 
-<span data-ttu-id="fa517-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="fa517-111">None.</span></span>
+<span data-ttu-id="22493-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="22493-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="fa517-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="fa517-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="22493-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="22493-112">Parent elements</span></span>
 
-[<span data-ttu-id="fa517-113">Rolle</span><span class="sxs-lookup"><span data-stu-id="fa517-113">Persona</span></span>](persona.md)
+[<span data-ttu-id="22493-113">Persona</span><span class="sxs-lookup"><span data-stu-id="22493-113">Persona</span></span>](persona.md)
   
-## <a name="text-value"></a><span data-ttu-id="fa517-114">Textwert</span><span class="sxs-lookup"><span data-stu-id="fa517-114">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="22493-114">Textwert</span><span class="sxs-lookup"><span data-stu-id="22493-114">Text value</span></span>
 
-<span data-ttu-id="fa517-115">Der Textwert der **CreationTime** -Element ist das Datum und die Uhrzeit, die eine Rolle erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="fa517-115">The text value of the **CreationTime** element is the date and time that a persona was created.</span></span> 
+<span data-ttu-id="22493-115">Der Textwert des **Creation** Time-Elements ist das Datum und die Uhrzeit, zu der eine Person erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="22493-115">The text value of the **CreationTime** element is the date and time that a persona was created.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="fa517-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="fa517-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="22493-116">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="22493-116">Remarks</span></span>
 
-<span data-ttu-id="fa517-117">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="fa517-117">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="22493-117">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="22493-117">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="fa517-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="fa517-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="22493-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="22493-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="fa517-119">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="fa517-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="22493-119">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="22493-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="fa517-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="fa517-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="fa517-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="fa517-121">Schema name</span></span>  <br/> |<span data-ttu-id="fa517-122">Schematypen</span><span class="sxs-lookup"><span data-stu-id="fa517-122">Types schema</span></span>  <br/> |
-|<span data-ttu-id="fa517-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="fa517-123">Validation file</span></span>  <br/> |<span data-ttu-id="fa517-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="fa517-124">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="fa517-125">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="fa517-125">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="22493-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="22493-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="22493-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="22493-121">Schema name</span></span>  <br/> |<span data-ttu-id="22493-122">Schematypen</span><span class="sxs-lookup"><span data-stu-id="22493-122">Types schema</span></span>  <br/> |
+|<span data-ttu-id="22493-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="22493-123">Validation file</span></span>  <br/> |<span data-ttu-id="22493-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="22493-124">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="22493-125">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="22493-125">Can be empty</span></span>  <br/> ||
    
 
