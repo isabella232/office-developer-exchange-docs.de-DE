@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8aa4025b-38df-4d63-a6a5-c3b932bec26e
-description: Das SetUserOofSettingsResponse-Element enthält das Ergebnis der versucht, eine Nachricht SetUserOofSettingsRequest.
-ms.openlocfilehash: ab2eaaad1b7b094baad724ec56f4c26280f1f15f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SetUserOofSettingsResponse-Element enthält das Ergebnis eines SetUserOofSettingsRequest-Nachrichten Versuchs.
+ms.openlocfilehash: 9b02d905f82488965f5ae0514a52eb6062aaff7d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831471"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466129"
 ---
-# <a name="setuseroofsettingsresponse"></a><span data-ttu-id="66cc6-103">SetUserOofSettingsResponse</span><span class="sxs-lookup"><span data-stu-id="66cc6-103">SetUserOofSettingsResponse</span></span>
+# <a name="setuseroofsettingsresponse"></a><span data-ttu-id="4c387-103">SetUserOofSettingsResponse</span><span class="sxs-lookup"><span data-stu-id="4c387-103">SetUserOofSettingsResponse</span></span>
 
-<span data-ttu-id="66cc6-104">Das **SetUserOofSettingsResponse** -Element enthält das Ergebnis der versucht, eine Nachricht [SetUserOofSettingsRequest](setuseroofsettingsrequest.md) .</span><span class="sxs-lookup"><span data-stu-id="66cc6-104">The **SetUserOofSettingsResponse** element contains the result of a [SetUserOofSettingsRequest](setuseroofsettingsrequest.md) message attempt.</span></span> 
+<span data-ttu-id="4c387-104">Das **SetUserOofSettingsResponse** -Element enthält das Ergebnis eines [SetUserOofSettingsRequest](setuseroofsettingsrequest.md) -Nachrichten Versuchs.</span><span class="sxs-lookup"><span data-stu-id="4c387-104">The **SetUserOofSettingsResponse** element contains the result of a [SetUserOofSettingsRequest](setuseroofsettingsrequest.md) message attempt.</span></span> 
   
 ```xml
 <SetUserOofSettingsResponse>
@@ -29,41 +29,41 @@ ms.locfileid: "19831471"
 <SetUserOofSettingsResponse>
 ```
 
- <span data-ttu-id="66cc6-105">**SetUserOofSettingsResponse**</span><span class="sxs-lookup"><span data-stu-id="66cc6-105">**SetUserOofSettingsResponse**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="66cc6-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="66cc6-106">Attributes and elements</span></span>
+ <span data-ttu-id="4c387-105">**SetUserOofSettingsResponse**</span><span class="sxs-lookup"><span data-stu-id="4c387-105">**SetUserOofSettingsResponse**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="4c387-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="4c387-106">Attributes and elements</span></span>
 
-<span data-ttu-id="66cc6-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="66cc6-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="4c387-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="4c387-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="66cc6-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="66cc6-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="4c387-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="4c387-108">Attributes</span></span>
 
-<span data-ttu-id="66cc6-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="66cc6-109">None.</span></span>
+<span data-ttu-id="4c387-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="4c387-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="66cc6-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="66cc6-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="4c387-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="4c387-110">Child elements</span></span>
 
-|<span data-ttu-id="66cc6-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="66cc6-111">**Element**</span></span>|<span data-ttu-id="66cc6-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="66cc6-112">**Description**</span></span>|
+|<span data-ttu-id="4c387-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="4c387-111">**Element**</span></span>|<span data-ttu-id="4c387-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="4c387-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="66cc6-113">ResponseMessage</span><span class="sxs-lookup"><span data-stu-id="66cc6-113">ResponseMessage</span></span>](responsemessage.md) <br/> |<span data-ttu-id="66cc6-114">Enthält beschreibende Informationen über den Antwortstatus.</span><span class="sxs-lookup"><span data-stu-id="66cc6-114">Provides descriptive information about the response status.</span></span>  <br/> |
+|[<span data-ttu-id="4c387-113">ResponseMessage</span><span class="sxs-lookup"><span data-stu-id="4c387-113">ResponseMessage</span></span>](responsemessage.md) <br/> |<span data-ttu-id="4c387-114">Enthält beschreibende Informationen zum Antwortstatus.</span><span class="sxs-lookup"><span data-stu-id="4c387-114">Provides descriptive information about the response status.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="66cc6-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="66cc6-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="4c387-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="4c387-115">Parent elements</span></span>
 
-<span data-ttu-id="66cc6-116">Keine.</span><span class="sxs-lookup"><span data-stu-id="66cc6-116">None.</span></span>
+<span data-ttu-id="4c387-116">Keine.</span><span class="sxs-lookup"><span data-stu-id="4c387-116">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="66cc6-117">Hinweise</span><span class="sxs-lookup"><span data-stu-id="66cc6-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="4c387-117">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="4c387-117">Remarks</span></span>
 
-<span data-ttu-id="66cc6-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="66cc6-118">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="4c387-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="4c387-118">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="66cc6-119">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="66cc6-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="4c387-119">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="4c387-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="66cc6-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="66cc6-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="66cc6-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="66cc6-121">Schema Name</span></span>  <br/> |<span data-ttu-id="66cc6-122">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="66cc6-122">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="66cc6-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="66cc6-123">Validation File</span></span>  <br/> |<span data-ttu-id="66cc6-124">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="66cc6-124">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="66cc6-125">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="66cc6-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="66cc6-126">False</span><span class="sxs-lookup"><span data-stu-id="66cc6-126">False</span></span>  <br/> |
+|<span data-ttu-id="4c387-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="4c387-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="4c387-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="4c387-121">Schema Name</span></span>  <br/> |<span data-ttu-id="4c387-122">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="4c387-122">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="4c387-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="4c387-123">Validation File</span></span>  <br/> |<span data-ttu-id="4c387-124">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="4c387-124">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="4c387-125">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="4c387-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="4c387-126">False</span><span class="sxs-lookup"><span data-stu-id="4c387-126">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="66cc6-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="66cc6-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4c387-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4c387-127">See also</span></span>
 
 
 
-[<span data-ttu-id="66cc6-128">SetUserOofSettings-Vorgang</span><span class="sxs-lookup"><span data-stu-id="66cc6-128">SetUserOofSettings operation</span></span>](setuseroofsettings-operation.md)
+[<span data-ttu-id="4c387-128">SetUserOofSettings-Vorgang</span><span class="sxs-lookup"><span data-stu-id="4c387-128">SetUserOofSettings operation</span></span>](setuseroofsettings-operation.md)
 

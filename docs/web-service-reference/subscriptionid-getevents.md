@@ -1,5 +1,5 @@
 ---
-title: SubscriptionId (GetEvents)
+title: Abonnement-Nr (GetEvents)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,70 +11,70 @@ api_name:
 api_type:
 - schema
 ms.assetid: 77c0abab-69e8-428e-8c20-22258e4ef71b
-description: Das Element SubscriptionId stellt den Bezeichner für ein Abonnement.
-ms.openlocfilehash: 8867b7da7c75cfd9d41f708c0481627d5186cc14
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Subscription-ID-Element stellt den Bezeichner für ein Abonnement dar.
+ms.openlocfilehash: e103386f466d65717878b4a6c811f3c3ad6e7c7d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831622"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465352"
 ---
-# <a name="subscriptionid-getevents"></a><span data-ttu-id="ae794-103">SubscriptionId (GetEvents)</span><span class="sxs-lookup"><span data-stu-id="ae794-103">SubscriptionId (GetEvents)</span></span>
+# <a name="subscriptionid-getevents"></a><span data-ttu-id="a0997-103">Abonnement-Nr (GetEvents)</span><span class="sxs-lookup"><span data-stu-id="a0997-103">SubscriptionId (GetEvents)</span></span>
 
-<span data-ttu-id="ae794-104">Das Element **SubscriptionId** stellt den Bezeichner für ein Abonnement.</span><span class="sxs-lookup"><span data-stu-id="ae794-104">The **SubscriptionId** element represents the identifier for a subscription.</span></span> 
+<span data-ttu-id="a0997-104">Das **Subscription** -ID-Element stellt den Bezeichner für ein Abonnement dar.</span><span class="sxs-lookup"><span data-stu-id="a0997-104">The **SubscriptionId** element represents the identifier for a subscription.</span></span> 
   
 ```xml
 <SubscriptionId/>
 ```
 
- <span data-ttu-id="ae794-105">**SubscriptionIdType**</span><span class="sxs-lookup"><span data-stu-id="ae794-105">**SubscriptionIdType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="ae794-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="ae794-106">Attributes and elements</span></span>
+ <span data-ttu-id="a0997-105">**SubscriptionIdType**</span><span class="sxs-lookup"><span data-stu-id="a0997-105">**SubscriptionIdType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="a0997-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="a0997-106">Attributes and elements</span></span>
 
-<span data-ttu-id="ae794-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="ae794-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="a0997-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="a0997-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="ae794-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="ae794-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="a0997-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="a0997-108">Attributes</span></span>
 
-<span data-ttu-id="ae794-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="ae794-109">None.</span></span>
+<span data-ttu-id="a0997-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="a0997-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="ae794-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="ae794-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="a0997-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a0997-110">Child elements</span></span>
 
-<span data-ttu-id="ae794-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="ae794-111">None.</span></span>
+<span data-ttu-id="a0997-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="a0997-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="ae794-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="ae794-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="a0997-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a0997-112">Parent elements</span></span>
 
-|<span data-ttu-id="ae794-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="ae794-113">**Element**</span></span>|<span data-ttu-id="ae794-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="ae794-114">**Description**</span></span>|
+|<span data-ttu-id="a0997-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="a0997-113">**Element**</span></span>|<span data-ttu-id="a0997-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="a0997-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="ae794-115">GetEvents</span><span class="sxs-lookup"><span data-stu-id="ae794-115">GetEvents</span></span>](getevents.md) <br/> |<span data-ttu-id="ae794-116">Stellt die Operation auf Anforderung-Benachrichtigungen vom Server von Pull-Clients verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="ae794-116">Represents the operation used by pull clients to request notifications from the server.</span></span>  <br/> |
-|[<span data-ttu-id="ae794-117">Benachrichtigung</span><span class="sxs-lookup"><span data-stu-id="ae794-117">Notification</span></span>](notification-ex15websvcsotherref.md) <br/> |<span data-ttu-id="ae794-118">Enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.</span><span class="sxs-lookup"><span data-stu-id="ae794-118">Contains information about the subscription and the events that have occurred since the last notification.</span></span>  <br/> |
-|[<span data-ttu-id="ae794-119">SubscribeResponseMessage</span><span class="sxs-lookup"><span data-stu-id="ae794-119">SubscribeResponseMessage</span></span>](subscriberesponsemessage.md) <br/> |<span data-ttu-id="ae794-120">Enthält den Status und das Ergebnis einer Subscribe-Anforderung.</span><span class="sxs-lookup"><span data-stu-id="ae794-120">Contains the status and result of a Subscribe request.</span></span>  <br/> |
-|[<span data-ttu-id="ae794-121">Melden Sie sich ab</span><span class="sxs-lookup"><span data-stu-id="ae794-121">Unsubscribe</span></span>](unsubscribe.md) <br/> |<span data-ttu-id="ae794-122">Enthält die Eigenschaften verwendet, um ein Abonnement zu kündigen.</span><span class="sxs-lookup"><span data-stu-id="ae794-122">Contains the properties used to unsubscribe from a subscription.</span></span>  <br/> |
+|[<span data-ttu-id="a0997-115">GetEvents</span><span class="sxs-lookup"><span data-stu-id="a0997-115">GetEvents</span></span>](getevents.md) <br/> |<span data-ttu-id="a0997-116">Stellt den Vorgang dar, der von Pull-Clients zum Anfordern von Benachrichtigungen vom Server verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="a0997-116">Represents the operation used by pull clients to request notifications from the server.</span></span>  <br/> |
+|[<span data-ttu-id="a0997-117">Benachrichtigung</span><span class="sxs-lookup"><span data-stu-id="a0997-117">Notification</span></span>](notification-ex15websvcsotherref.md) <br/> |<span data-ttu-id="a0997-118">Enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.</span><span class="sxs-lookup"><span data-stu-id="a0997-118">Contains information about the subscription and the events that have occurred since the last notification.</span></span>  <br/> |
+|[<span data-ttu-id="a0997-119">SubscribeResponseMessage</span><span class="sxs-lookup"><span data-stu-id="a0997-119">SubscribeResponseMessage</span></span>](subscriberesponsemessage.md) <br/> |<span data-ttu-id="a0997-120">Enthält den Status und das Ergebnis einer subscribe-Anforderung.</span><span class="sxs-lookup"><span data-stu-id="a0997-120">Contains the status and result of a Subscribe request.</span></span>  <br/> |
+|[<span data-ttu-id="a0997-121">Unsubscribe</span><span class="sxs-lookup"><span data-stu-id="a0997-121">Unsubscribe</span></span>](unsubscribe.md) <br/> |<span data-ttu-id="a0997-122">Enthält die Eigenschaften, mit denen das Abonnement eines Abonnements gekündigt wird.</span><span class="sxs-lookup"><span data-stu-id="a0997-122">Contains the properties used to unsubscribe from a subscription.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="ae794-123">Textwert</span><span class="sxs-lookup"><span data-stu-id="ae794-123">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="a0997-123">Textwert</span><span class="sxs-lookup"><span data-stu-id="a0997-123">Text value</span></span>
 
-<span data-ttu-id="ae794-124">Ein Textwert ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="ae794-124">A text value is required.</span></span> <span data-ttu-id="ae794-125">Der Textwert ist eine GUID.</span><span class="sxs-lookup"><span data-stu-id="ae794-125">The text value is a GUID.</span></span>
+<span data-ttu-id="a0997-124">Ein Textwert ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="a0997-124">A text value is required.</span></span> <span data-ttu-id="a0997-125">Der Textwert ist eine GUID.</span><span class="sxs-lookup"><span data-stu-id="a0997-125">The text value is a GUID.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ae794-126">Hinweise</span><span class="sxs-lookup"><span data-stu-id="ae794-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a0997-126">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="a0997-126">Remarks</span></span>
 
-<span data-ttu-id="ae794-127">Die GUID, die die Abonnement-ID darstellt wird vom Client Access Server generiert, wenn das Abonnement erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="ae794-127">The GUID that represents the subscription identifier is generated by the Client Access server when the subscription is created.</span></span>
+<span data-ttu-id="a0997-127">Die GUID, die die Abonnement-ID darstellt, wird vom Client Zugriffsserver generiert, wenn das Abonnement erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="a0997-127">The GUID that represents the subscription identifier is generated by the Client Access server when the subscription is created.</span></span>
   
-<span data-ttu-id="ae794-128">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="ae794-128">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="a0997-128">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="a0997-128">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="ae794-129">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="ae794-129">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="a0997-129">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="a0997-129">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="ae794-130">Namespace</span><span class="sxs-lookup"><span data-stu-id="ae794-130">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="ae794-131">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="ae794-131">Schema name</span></span>  <br/> |<span data-ttu-id="ae794-132">Nachrichten-schema</span><span class="sxs-lookup"><span data-stu-id="ae794-132">messages schema</span></span>  <br/> |
-|<span data-ttu-id="ae794-133">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="ae794-133">Validation file</span></span>  <br/> |<span data-ttu-id="ae794-134">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="ae794-134">messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="ae794-135">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="ae794-135">Can be empty</span></span>  <br/> |<span data-ttu-id="ae794-136">False</span><span class="sxs-lookup"><span data-stu-id="ae794-136">False</span></span>  <br/> |
+|<span data-ttu-id="a0997-130">Namespace</span><span class="sxs-lookup"><span data-stu-id="a0997-130">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="a0997-131">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="a0997-131">Schema name</span></span>  <br/> |<span data-ttu-id="a0997-132">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="a0997-132">messages schema</span></span>  <br/> |
+|<span data-ttu-id="a0997-133">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="a0997-133">Validation file</span></span>  <br/> |<span data-ttu-id="a0997-134">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="a0997-134">messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="a0997-135">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="a0997-135">Can be empty</span></span>  <br/> |<span data-ttu-id="a0997-136">False</span><span class="sxs-lookup"><span data-stu-id="a0997-136">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="ae794-137">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ae794-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a0997-137">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a0997-137">See also</span></span>
 
 
 
-[<span data-ttu-id="ae794-138">Vorgang abonnieren</span><span class="sxs-lookup"><span data-stu-id="ae794-138">Subscribe operation</span></span>](subscribe-operation.md)
+[<span data-ttu-id="a0997-138">Vorgang abonnieren</span><span class="sxs-lookup"><span data-stu-id="a0997-138">Subscribe operation</span></span>](subscribe-operation.md)
   
-[<span data-ttu-id="ae794-139">GetEvents-Vorgang</span><span class="sxs-lookup"><span data-stu-id="ae794-139">GetEvents operation</span></span>](getevents-operation.md)
+[<span data-ttu-id="a0997-139">GetEvents-Vorgang</span><span class="sxs-lookup"><span data-stu-id="a0997-139">GetEvents operation</span></span>](getevents-operation.md)
   
-[<span data-ttu-id="ae794-140">Vorgang des Kündigens von Abonnements</span><span class="sxs-lookup"><span data-stu-id="ae794-140">Unsubscribe operation</span></span>](unsubscribe-operation.md)
+[<span data-ttu-id="a0997-140">Vorgang des Kündigens von Abonnements</span><span class="sxs-lookup"><span data-stu-id="a0997-140">Unsubscribe operation</span></span>](unsubscribe-operation.md)
 

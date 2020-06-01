@@ -7,64 +7,64 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 46726ebb-a403-4793-8378-282aa7dc39d0
-description: Das Position-Element gibt die Position einer Entität aus einer Nachricht extrahiert haben.
-ms.openlocfilehash: 4bd8f3088891e918e13d5ef1ec8e3e5217cb3fa1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Position-Element gibt die Position einer Entität an, die aus einer Nachricht extrahiert wurde.
+ms.openlocfilehash: 9acd965c3e0c29f3fa91df338c0671749192b38b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830853"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465422"
 ---
-# <a name="position"></a><span data-ttu-id="cdfab-103">Position</span><span class="sxs-lookup"><span data-stu-id="cdfab-103">Position</span></span>
+# <a name="position"></a><span data-ttu-id="97d57-103">Position</span><span class="sxs-lookup"><span data-stu-id="97d57-103">Position</span></span>
 
-<span data-ttu-id="cdfab-104">Das **Position** -Element gibt die Position einer Entität aus einer Nachricht extrahiert haben.</span><span class="sxs-lookup"><span data-stu-id="cdfab-104">The **Position** element specifies the position of an entity extracted from a message.</span></span> 
+<span data-ttu-id="97d57-104">Das **Position** -Element gibt die Position einer Entität an, die aus einer Nachricht extrahiert wurde.</span><span class="sxs-lookup"><span data-stu-id="97d57-104">The **Position** element specifies the position of an entity extracted from a message.</span></span> 
   
 ```XML
 <Position> LatestReply | Other | Subject | Signature </Position>
 ```
 
- <span data-ttu-id="cdfab-105">**EmailPositionType**</span><span class="sxs-lookup"><span data-stu-id="cdfab-105">**EmailPositionType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="cdfab-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="cdfab-106">Attributes and elements</span></span>
+ <span data-ttu-id="97d57-105">**EmailPositionType**</span><span class="sxs-lookup"><span data-stu-id="97d57-105">**EmailPositionType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="97d57-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="97d57-106">Attributes and elements</span></span>
 
-<span data-ttu-id="cdfab-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="cdfab-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="97d57-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="97d57-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="cdfab-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="cdfab-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="97d57-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="97d57-108">Attributes</span></span>
 
-<span data-ttu-id="cdfab-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="cdfab-109">None.</span></span>
+<span data-ttu-id="97d57-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="97d57-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="cdfab-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="cdfab-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="97d57-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="97d57-110">Child elements</span></span>
 
-<span data-ttu-id="cdfab-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="cdfab-111">None.</span></span>
+<span data-ttu-id="97d57-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="97d57-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="cdfab-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="cdfab-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="97d57-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="97d57-112">Parent elements</span></span>
 
-<span data-ttu-id="cdfab-113">[UrlEntity](urlentity.md) | [AddressEntity](addressentity.md) | [EmailAddressEntity](emailaddressentity.md) | [MeetingSuggestion](meetingsuggestion.md) | [Kontakt (Kontakttyp den)](contact-contacttype.md) | [Phone (PhoneEntityType)](phone-phoneentitytype.md)  |  [ TaskSuggestion](tasksuggestion.md)</span><span class="sxs-lookup"><span data-stu-id="cdfab-113">[UrlEntity](urlentity.md) | [AddressEntity](addressentity.md) | [EmailAddressEntity](emailaddressentity.md) | [MeetingSuggestion](meetingsuggestion.md) | [Contact (ContactType)](contact-contacttype.md) | [Phone (PhoneEntityType)](phone-phoneentitytype.md) | [TaskSuggestion](tasksuggestion.md)</span></span>
+<span data-ttu-id="97d57-113">[UrlEntity](urlentity.md)  |  [AddressEntity](addressentity.md)  |  [EmailAddressEntity](emailaddressentity.md)  |  [MeetingSuggestion](meetingsuggestion.md)  |  [Kontakt (ContactType)](contact-contacttype.md)  |  [Telefon (PhoneEntityType)](phone-phoneentitytype.md)  |  [Task Suggestion](tasksuggestion.md)</span><span class="sxs-lookup"><span data-stu-id="97d57-113">[UrlEntity](urlentity.md) | [AddressEntity](addressentity.md) | [EmailAddressEntity](emailaddressentity.md) | [MeetingSuggestion](meetingsuggestion.md) | [Contact (ContactType)](contact-contacttype.md) | [Phone (PhoneEntityType)](phone-phoneentitytype.md) | [TaskSuggestion](tasksuggestion.md)</span></span>
   
-## <a name="text-value"></a><span data-ttu-id="cdfab-114">Textwert</span><span class="sxs-lookup"><span data-stu-id="cdfab-114">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="97d57-114">Textwert</span><span class="sxs-lookup"><span data-stu-id="97d57-114">Text value</span></span>
 
-<span data-ttu-id="cdfab-115">Der Textwert des **Position** -Elements ist der Speicherort, von dem eine extrahierte Entität in der Quellnachricht stammt.</span><span class="sxs-lookup"><span data-stu-id="cdfab-115">The text value of the **Position** element is the location where an extracted entity originated in the source message.</span></span> <span data-ttu-id="cdfab-116">Die Textwerte für das Element **Position** sind:</span><span class="sxs-lookup"><span data-stu-id="cdfab-116">The text values for the **Position** element are:</span></span> 
+<span data-ttu-id="97d57-115">Der Textwert des **Position** -Elements ist die Position, an der eine extrahierte Entität in der Quellnachricht stammt.</span><span class="sxs-lookup"><span data-stu-id="97d57-115">The text value of the **Position** element is the location where an extracted entity originated in the source message.</span></span> <span data-ttu-id="97d57-116">Die Textwerte für das **Position** -Element lauten wie folgt:</span><span class="sxs-lookup"><span data-stu-id="97d57-116">The text values for the **Position** element are:</span></span> 
   
-- <span data-ttu-id="cdfab-117">**LatestReply** - die extrahierte Entität stammt aus der neuesten Antwort auf die Meldung.</span><span class="sxs-lookup"><span data-stu-id="cdfab-117">**LatestReply** - the extracted entity originates from the latest reply to the message.</span></span> 
+- <span data-ttu-id="97d57-117">**LatestReply** – die extrahierte Entität stammt aus der letzten Antwort auf die Nachricht.</span><span class="sxs-lookup"><span data-stu-id="97d57-117">**LatestReply** - the extracted entity originates from the latest reply to the message.</span></span> 
     
-- <span data-ttu-id="cdfab-118">**Andere** - die extrahierte Entität stammt aus einem nicht definierten Teil der Nachricht.</span><span class="sxs-lookup"><span data-stu-id="cdfab-118">**Other** - the extracted entity originates from an undefined part of the message.</span></span> 
+- <span data-ttu-id="97d57-118">**Other** -die extrahierte Entität stammt aus einem nicht definierten Teil der Nachricht.</span><span class="sxs-lookup"><span data-stu-id="97d57-118">**Other** - the extracted entity originates from an undefined part of the message.</span></span> 
     
-- <span data-ttu-id="cdfab-119">**Betreff** - die extrahierte Entität stammt aus der Betreff der Nachricht.</span><span class="sxs-lookup"><span data-stu-id="cdfab-119">**Subject** - the extracted entity originates from the message subject.</span></span> 
+- <span data-ttu-id="97d57-119">**Betreff** – die extrahierte Entität stammt aus dem Nachrichtenbetreff.</span><span class="sxs-lookup"><span data-stu-id="97d57-119">**Subject** - the extracted entity originates from the message subject.</span></span> 
     
-- <span data-ttu-id="cdfab-120">**Signatur** - die extrahierte Entität stammt aus der Nachrichtensignatur.</span><span class="sxs-lookup"><span data-stu-id="cdfab-120">**Signature** - the extracted entity originates from the message signature.</span></span> 
+- <span data-ttu-id="97d57-120">**Signatur** – die extrahierte Entität stammt aus der Nachrichtensignatur.</span><span class="sxs-lookup"><span data-stu-id="97d57-120">**Signature** - the extracted entity originates from the message signature.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="cdfab-121">Hinweise</span><span class="sxs-lookup"><span data-stu-id="cdfab-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="97d57-121">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="97d57-121">Remarks</span></span>
 
-<span data-ttu-id="cdfab-122">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="cdfab-122">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="97d57-122">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="97d57-122">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="cdfab-123">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="cdfab-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="97d57-123">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="97d57-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="cdfab-124">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="cdfab-124">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="97d57-124">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="97d57-124">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="cdfab-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="cdfab-125">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="cdfab-126">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="cdfab-126">Schema name</span></span>  <br/> |<span data-ttu-id="cdfab-127">Schematypen</span><span class="sxs-lookup"><span data-stu-id="cdfab-127">Types schema</span></span>  <br/> |
-|<span data-ttu-id="cdfab-128">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="cdfab-128">Validation file</span></span>  <br/> |<span data-ttu-id="cdfab-129">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="cdfab-129">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="cdfab-130">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="cdfab-130">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="97d57-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="97d57-125">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="97d57-126">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="97d57-126">Schema name</span></span>  <br/> |<span data-ttu-id="97d57-127">Schematypen</span><span class="sxs-lookup"><span data-stu-id="97d57-127">Types schema</span></span>  <br/> |
+|<span data-ttu-id="97d57-128">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="97d57-128">Validation file</span></span>  <br/> |<span data-ttu-id="97d57-129">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="97d57-129">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="97d57-130">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="97d57-130">Can be empty</span></span>  <br/> ||
    
 

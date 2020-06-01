@@ -11,78 +11,78 @@ api_name:
 api_type:
 - schema
 ms.assetid: a67df9b9-8fdb-42de-b9c5-8377b71fa3d9
-description: Das Element AlternatePublicFolderItemId beschreibt einen Bezeichner für Öffentliche Ordner in einer anderen Bezeichner Format umwandeln. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 2240f3ff80c2c5b705611c3cf9286faa62d204cc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AlternatePublicFolderItemId-Element beschreibt einen Elementbezeichner für Öffentliche Ordner, der in ein anderes ID-Format konvertiert werden soll. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: 11a9fafec78a9bd14e4d98982fd38954d45e4d1a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757260"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464770"
 ---
-# <a name="alternatepublicfolderitemid"></a><span data-ttu-id="0ea07-104">AlternatePublicFolderItemId</span><span class="sxs-lookup"><span data-stu-id="0ea07-104">AlternatePublicFolderItemId</span></span>
+# <a name="alternatepublicfolderitemid"></a><span data-ttu-id="e4b25-104">AlternatePublicFolderItemId</span><span class="sxs-lookup"><span data-stu-id="e4b25-104">AlternatePublicFolderItemId</span></span>
 
-<span data-ttu-id="0ea07-105">Das Element **AlternatePublicFolderItemId** beschreibt einen Bezeichner für Öffentliche Ordner in einer anderen Bezeichner Format umwandeln.</span><span class="sxs-lookup"><span data-stu-id="0ea07-105">The **AlternatePublicFolderItemId** element describes a public folder item identifier to convert to another identifier format.</span></span> <span data-ttu-id="0ea07-106">Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="0ea07-106">This element was introduced in Microsoft Exchange Server 2007 Service Pack 1 (SP1).</span></span> 
+<span data-ttu-id="e4b25-105">Das **AlternatePublicFolderItemId** -Element beschreibt einen Elementbezeichner für Öffentliche Ordner, der in ein anderes ID-Format konvertiert werden soll.</span><span class="sxs-lookup"><span data-stu-id="e4b25-105">The **AlternatePublicFolderItemId** element describes a public folder item identifier to convert to another identifier format.</span></span> <span data-ttu-id="e4b25-106">Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="e4b25-106">This element was introduced in Microsoft Exchange Server 2007 Service Pack 1 (SP1).</span></span> 
   
-- [<span data-ttu-id="0ea07-107">ConvertId</span><span class="sxs-lookup"><span data-stu-id="0ea07-107">ConvertId</span></span>](convertid.md)
+- [<span data-ttu-id="e4b25-107">ConvertId</span><span class="sxs-lookup"><span data-stu-id="e4b25-107">ConvertId</span></span>](convertid.md)
   
-- [<span data-ttu-id="0ea07-108">SourceIds</span><span class="sxs-lookup"><span data-stu-id="0ea07-108">SourceIds</span></span>](sourceids.md)
+- [<span data-ttu-id="e4b25-108">SourceIds</span><span class="sxs-lookup"><span data-stu-id="e4b25-108">SourceIds</span></span>](sourceids.md)
   
-- [<span data-ttu-id="0ea07-109">AlternatePublicFolderItemId</span><span class="sxs-lookup"><span data-stu-id="0ea07-109">AlternatePublicFolderItemId</span></span>](alternatepublicfolderitemid.md)
+- [<span data-ttu-id="e4b25-109">AlternatePublicFolderItemId</span><span class="sxs-lookup"><span data-stu-id="e4b25-109">AlternatePublicFolderItemId</span></span>](alternatepublicfolderitemid.md)
   
 ```xml
 <AlternatePublicFolderItemId FolderId="" Format="" ItemId=""/>
 ```
 
- <span data-ttu-id="0ea07-110">**AlternatePublicFolderItemIdType**</span><span class="sxs-lookup"><span data-stu-id="0ea07-110">**AlternatePublicFolderItemIdType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="0ea07-111">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="0ea07-111">Attributes and elements</span></span>
+ <span data-ttu-id="e4b25-110">**AlternatePublicFolderItemIdType**</span><span class="sxs-lookup"><span data-stu-id="e4b25-110">**AlternatePublicFolderItemIdType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="e4b25-111">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="e4b25-111">Attributes and elements</span></span>
 
-<span data-ttu-id="0ea07-112">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="0ea07-112">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="e4b25-112">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="e4b25-112">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="0ea07-113">Attribute</span><span class="sxs-lookup"><span data-stu-id="0ea07-113">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="e4b25-113">Attribute</span><span class="sxs-lookup"><span data-stu-id="e4b25-113">Attributes</span></span>
 
-|<span data-ttu-id="0ea07-114">**Attribut**</span><span class="sxs-lookup"><span data-stu-id="0ea07-114">**Attribute**</span></span>|<span data-ttu-id="0ea07-115">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="0ea07-115">**Description**</span></span>|
+|<span data-ttu-id="e4b25-114">**Attribut**</span><span class="sxs-lookup"><span data-stu-id="e4b25-114">**Attribute**</span></span>|<span data-ttu-id="e4b25-115">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="e4b25-115">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="0ea07-116">FolderId</span><span class="sxs-lookup"><span data-stu-id="0ea07-116">FolderId</span></span>  <br/> |<span data-ttu-id="0ea07-117">Identifiziert den öffentlichen Ordner, der das öffentliche Ordner-Element enthält.</span><span class="sxs-lookup"><span data-stu-id="0ea07-117">Identifies the public folder that contains the public folder item.</span></span> <span data-ttu-id="0ea07-118">Dieses Attribut ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="0ea07-118">This attribute is required.</span></span>  <br/> |
-|<span data-ttu-id="0ea07-119">Format</span><span class="sxs-lookup"><span data-stu-id="0ea07-119">Format</span></span>  <br/> |<span data-ttu-id="0ea07-120">Gibt das Format, das der Öffentliche Ordner Elementbezeichner konvertieren beschreibt.</span><span class="sxs-lookup"><span data-stu-id="0ea07-120">Identifies the format that describes the public folder item identifier to convert.</span></span> <span data-ttu-id="0ea07-121">Dieses Attribut ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="0ea07-121">This attribute is required.</span></span>  <br/> |
-|<span data-ttu-id="0ea07-122">ItemId</span><span class="sxs-lookup"><span data-stu-id="0ea07-122">ItemId</span></span>  <br/> |<span data-ttu-id="0ea07-123">Bezeichner zu konvertierenden Elements für Öffentliche Ordner.</span><span class="sxs-lookup"><span data-stu-id="0ea07-123">Identifier the public folder item to convert.</span></span> <span data-ttu-id="0ea07-124">Dieses Attribut ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="0ea07-124">This attribute is required.</span></span>  <br/> |
+|<span data-ttu-id="e4b25-116">FolderId</span><span class="sxs-lookup"><span data-stu-id="e4b25-116">FolderId</span></span>  <br/> |<span data-ttu-id="e4b25-117">Gibt den öffentlichen Ordner an, der das Element für Öffentliche Ordner enthält.</span><span class="sxs-lookup"><span data-stu-id="e4b25-117">Identifies the public folder that contains the public folder item.</span></span> <span data-ttu-id="e4b25-118">Dieses Attribut ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="e4b25-118">This attribute is required.</span></span>  <br/> |
+|<span data-ttu-id="e4b25-119">Format</span><span class="sxs-lookup"><span data-stu-id="e4b25-119">Format</span></span>  <br/> |<span data-ttu-id="e4b25-120">Gibt das Format an, das den zu konvertierenden Elementbezeichner für Öffentliche Ordner beschreibt.</span><span class="sxs-lookup"><span data-stu-id="e4b25-120">Identifies the format that describes the public folder item identifier to convert.</span></span> <span data-ttu-id="e4b25-121">Dieses Attribut ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="e4b25-121">This attribute is required.</span></span>  <br/> |
+|<span data-ttu-id="e4b25-122">Itemid</span><span class="sxs-lookup"><span data-stu-id="e4b25-122">ItemId</span></span>  <br/> |<span data-ttu-id="e4b25-123">Bezeichner das Element des öffentlichen Ordners, das konvertiert werden soll.</span><span class="sxs-lookup"><span data-stu-id="e4b25-123">Identifier the public folder item to convert.</span></span> <span data-ttu-id="e4b25-124">Dieses Attribut ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="e4b25-124">This attribute is required.</span></span>  <br/> |
    
-#### <a name="format-attribute-values"></a><span data-ttu-id="0ea07-125">Format-Attributwerte</span><span class="sxs-lookup"><span data-stu-id="0ea07-125">Format attribute values</span></span>
+#### <a name="format-attribute-values"></a><span data-ttu-id="e4b25-125">Formatieren von Attributwerten</span><span class="sxs-lookup"><span data-stu-id="e4b25-125">Format attribute values</span></span>
 
-|<span data-ttu-id="0ea07-126">**Wert**</span><span class="sxs-lookup"><span data-stu-id="0ea07-126">**Value**</span></span>|<span data-ttu-id="0ea07-127">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="0ea07-127">**Description**</span></span>|
+|<span data-ttu-id="e4b25-126">**Wert**</span><span class="sxs-lookup"><span data-stu-id="e4b25-126">**Value**</span></span>|<span data-ttu-id="e4b25-127">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="e4b25-127">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="0ea07-128">EwsLegacyId</span><span class="sxs-lookup"><span data-stu-id="0ea07-128">EwsLegacyId</span></span>  <br/> |<span data-ttu-id="0ea07-129">Beschreibt Bezeichner, die in der ursprünglich freigegebenen Version von Exchange 2007 von Exchange-Webdienste erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="0ea07-129">Describes identifiers that are produced by Exchange Web Services in the initial release version of Exchange 2007.</span></span>  <br/> |
-|<span data-ttu-id="0ea07-130">EwsId</span><span class="sxs-lookup"><span data-stu-id="0ea07-130">EwsId</span></span>  <br/> |<span data-ttu-id="0ea07-131">Beschreibt Bezeichner, die von der Exchange-Webdienste beginnend mit Exchange 2007 SP1 erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="0ea07-131">Describes identifiers that are produced by Exchange Web Services starting with Exchange 2007 SP1.</span></span>  <br/> |
-|<span data-ttu-id="0ea07-132">EntryId</span><span class="sxs-lookup"><span data-stu-id="0ea07-132">EntryId</span></span>  <br/> |<span data-ttu-id="0ea07-133">MAPI-IDs, wie in der PR_ENTRYID-Eigenschaft beschreibt.</span><span class="sxs-lookup"><span data-stu-id="0ea07-133">Describes MAPI identifiers, as in the PR_ENTRYID property.</span></span>  <br/> |
-|<span data-ttu-id="0ea07-134">HexEntryId</span><span class="sxs-lookup"><span data-stu-id="0ea07-134">HexEntryId</span></span>  <br/> |<span data-ttu-id="0ea07-135">Beschreibt eine hexadezimal-codierte Darstellung der PR_ENTRYID-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="0ea07-135">Describes a hexadecimal-encoded representation of the PR_ENTRYID property.</span></span> <span data-ttu-id="0ea07-136">Dies ist das Format der Verfügbarkeit Kalender-Ereignis-IDs.</span><span class="sxs-lookup"><span data-stu-id="0ea07-136">This is the format of availability calendar event identifiers.</span></span>  <br/> |
-|<span data-ttu-id="0ea07-137">StoreId</span><span class="sxs-lookup"><span data-stu-id="0ea07-137">StoreId</span></span>  <br/> |<span data-ttu-id="0ea07-138">Beschreibt die Exchange-Speicher-IDs.</span><span class="sxs-lookup"><span data-stu-id="0ea07-138">Describes Exchange store identifiers.</span></span>  <br/> |
-|<span data-ttu-id="0ea07-139">OwaId</span><span class="sxs-lookup"><span data-stu-id="0ea07-139">OwaId</span></span>  <br/> |<span data-ttu-id="0ea07-140">Beschreibt einen Outlook Web Access-Bezeichner.</span><span class="sxs-lookup"><span data-stu-id="0ea07-140">Describes an Outlook Web Access identifier.</span></span>  <br/> |
+|<span data-ttu-id="e4b25-128">EwsLegacyId</span><span class="sxs-lookup"><span data-stu-id="e4b25-128">EwsLegacyId</span></span>  <br/> |<span data-ttu-id="e4b25-129">Beschreibt Bezeichner, die von Exchange Webdienste in der ersten Version von Exchange 2007 erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="e4b25-129">Describes identifiers that are produced by Exchange Web Services in the initial release version of Exchange 2007.</span></span>  <br/> |
+|<span data-ttu-id="e4b25-130">EwsId</span><span class="sxs-lookup"><span data-stu-id="e4b25-130">EwsId</span></span>  <br/> |<span data-ttu-id="e4b25-131">Beschreibt Bezeichner, die von Exchange Webdienste ab Exchange 2007 SP1 erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="e4b25-131">Describes identifiers that are produced by Exchange Web Services starting with Exchange 2007 SP1.</span></span>  <br/> |
+|<span data-ttu-id="e4b25-132">EntryId</span><span class="sxs-lookup"><span data-stu-id="e4b25-132">EntryId</span></span>  <br/> |<span data-ttu-id="e4b25-133">Beschreibt MAPI-IDs wie in der PR_ENTRYID-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="e4b25-133">Describes MAPI identifiers, as in the PR_ENTRYID property.</span></span>  <br/> |
+|<span data-ttu-id="e4b25-134">HexEntryId</span><span class="sxs-lookup"><span data-stu-id="e4b25-134">HexEntryId</span></span>  <br/> |<span data-ttu-id="e4b25-135">Beschreibt eine hexadezimal codierte Darstellung der PR_ENTRYID-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="e4b25-135">Describes a hexadecimal-encoded representation of the PR_ENTRYID property.</span></span> <span data-ttu-id="e4b25-136">Dies ist das Format der Ereignisbezeichner für den Verfügbarkeitskalender.</span><span class="sxs-lookup"><span data-stu-id="e4b25-136">This is the format of availability calendar event identifiers.</span></span>  <br/> |
+|<span data-ttu-id="e4b25-137">StoreId</span><span class="sxs-lookup"><span data-stu-id="e4b25-137">StoreId</span></span>  <br/> |<span data-ttu-id="e4b25-138">Beschreibt Exchange-Informationsspeicher Bezeichner.</span><span class="sxs-lookup"><span data-stu-id="e4b25-138">Describes Exchange store identifiers.</span></span>  <br/> |
+|<span data-ttu-id="e4b25-139">OwaId</span><span class="sxs-lookup"><span data-stu-id="e4b25-139">OwaId</span></span>  <br/> |<span data-ttu-id="e4b25-140">Beschreibt einen Outlook Web Access Bezeichner.</span><span class="sxs-lookup"><span data-stu-id="e4b25-140">Describes an Outlook Web Access identifier.</span></span>  <br/> |
    
-### <a name="child-elements"></a><span data-ttu-id="0ea07-141">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="0ea07-141">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="e4b25-141">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e4b25-141">Child elements</span></span>
 
-<span data-ttu-id="0ea07-142">Keine.</span><span class="sxs-lookup"><span data-stu-id="0ea07-142">None.</span></span>
+<span data-ttu-id="e4b25-142">Keine.</span><span class="sxs-lookup"><span data-stu-id="e4b25-142">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="0ea07-143">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="0ea07-143">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="e4b25-143">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e4b25-143">Parent elements</span></span>
 
-|<span data-ttu-id="0ea07-144">**Element**</span><span class="sxs-lookup"><span data-stu-id="0ea07-144">**Element**</span></span>|<span data-ttu-id="0ea07-145">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="0ea07-145">**Description**</span></span>|
+|<span data-ttu-id="e4b25-144">**Element**</span><span class="sxs-lookup"><span data-stu-id="e4b25-144">**Element**</span></span>|<span data-ttu-id="e4b25-145">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="e4b25-145">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="0ea07-146">SourceIds</span><span class="sxs-lookup"><span data-stu-id="0ea07-146">SourceIds</span></span>](sourceids.md) <br/> |<span data-ttu-id="0ea07-147">Enthält die Bezeichner der Quelle zu konvertieren.</span><span class="sxs-lookup"><span data-stu-id="0ea07-147">Contains the source identifiers to convert.</span></span> <span data-ttu-id="0ea07-148">Dieses Element wurde in Exchange 2007 SP1 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="0ea07-148">This element was introduced in Exchange 2007 SP1.</span></span>  <br/> |
+|[<span data-ttu-id="e4b25-146">SourceIds</span><span class="sxs-lookup"><span data-stu-id="e4b25-146">SourceIds</span></span>](sourceids.md) <br/> |<span data-ttu-id="e4b25-147">Enthält die Quellbezeichner, die konvertiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="e4b25-147">Contains the source identifiers to convert.</span></span> <span data-ttu-id="e4b25-148">Dieses Element wurde in Exchange 2007 SP1 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="e4b25-148">This element was introduced in Exchange 2007 SP1.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="0ea07-149">Hinweise</span><span class="sxs-lookup"><span data-stu-id="0ea07-149">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e4b25-149">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e4b25-149">Remarks</span></span>
 
-<span data-ttu-id="0ea07-150">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="0ea07-150">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="e4b25-150">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="e4b25-150">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="0ea07-151">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="0ea07-151">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="e4b25-151">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="e4b25-151">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="0ea07-152">Namespace</span><span class="sxs-lookup"><span data-stu-id="0ea07-152">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="0ea07-153">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="0ea07-153">Schema Name</span></span>  <br/> |<span data-ttu-id="0ea07-154">Schematypen</span><span class="sxs-lookup"><span data-stu-id="0ea07-154">Types schema</span></span>  <br/> |
-|<span data-ttu-id="0ea07-155">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="0ea07-155">Validation File</span></span>  <br/> |<span data-ttu-id="0ea07-156">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="0ea07-156">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="0ea07-157">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="0ea07-157">Can be Empty</span></span>  <br/> |<span data-ttu-id="0ea07-158">True</span><span class="sxs-lookup"><span data-stu-id="0ea07-158">True</span></span>  <br/> |
+|<span data-ttu-id="e4b25-152">Namespace</span><span class="sxs-lookup"><span data-stu-id="e4b25-152">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="e4b25-153">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="e4b25-153">Schema Name</span></span>  <br/> |<span data-ttu-id="e4b25-154">Schematypen</span><span class="sxs-lookup"><span data-stu-id="e4b25-154">Types schema</span></span>  <br/> |
+|<span data-ttu-id="e4b25-155">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="e4b25-155">Validation File</span></span>  <br/> |<span data-ttu-id="e4b25-156">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="e4b25-156">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="e4b25-157">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="e4b25-157">Can be Empty</span></span>  <br/> |<span data-ttu-id="e4b25-158">True</span><span class="sxs-lookup"><span data-stu-id="e4b25-158">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="0ea07-159">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="0ea07-159">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e4b25-159">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e4b25-159">See also</span></span>
 
-- [<span data-ttu-id="0ea07-160">ConvertId-Vorgang</span><span class="sxs-lookup"><span data-stu-id="0ea07-160">ConvertId operation</span></span>](convertid-operation.md)
-- [<span data-ttu-id="0ea07-161">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="0ea07-161">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
-- [<span data-ttu-id="0ea07-162">Konvertieren von Bezeichnern</span><span class="sxs-lookup"><span data-stu-id="0ea07-162">Converting Identifiers</span></span>](http://msdn.microsoft.com/library/a5391746-b6ef-4f48-8fc8-8255258651aa%28Office.15%29.aspx)
+- [<span data-ttu-id="e4b25-160">ConvertId-Vorgang</span><span class="sxs-lookup"><span data-stu-id="e4b25-160">ConvertId operation</span></span>](convertid-operation.md)
+- [<span data-ttu-id="e4b25-161">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="e4b25-161">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="e4b25-162">Konvertieren von Bezeichnern</span><span class="sxs-lookup"><span data-stu-id="e4b25-162">Converting Identifiers</span></span>](https://msdn.microsoft.com/library/a5391746-b6ef-4f48-8fc8-8255258651aa%28Office.15%29.aspx)
 

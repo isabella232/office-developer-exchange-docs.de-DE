@@ -1,5 +1,5 @@
 ---
-title: Zeit (TimeChangeType)
+title: Zeit (Time ChangeType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,62 +11,62 @@ api_name:
 api_type:
 - schema
 ms.assetid: be12e41e-6871-4f6b-b2d4-3dfa404f9ea1
-description: Time-Element wird beschrieben, wenn die Zeit zwischen Standardzeit und Sommerzeit geändert wird.
-ms.openlocfilehash: db44ef494561b75dc55c93229cec3901f04235ad
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Time-Element beschreibt die Zeit, in der sich die Zeit zwischen Standardzeit und Sommerzeit ändert.
+ms.openlocfilehash: c25d0bc3394fdfab42a29eab8b370bc4263618ed
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839181"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465737"
 ---
-# <a name="time-timechangetype"></a><span data-ttu-id="f5d72-103">Zeit (TimeChangeType)</span><span class="sxs-lookup"><span data-stu-id="f5d72-103">Time (TimeChangeType)</span></span>
+# <a name="time-timechangetype"></a><span data-ttu-id="66438-103">Zeit (Time ChangeType)</span><span class="sxs-lookup"><span data-stu-id="66438-103">Time (TimeChangeType)</span></span>
 
-<span data-ttu-id="f5d72-104">**Time** -Element wird beschrieben, wenn die Zeit zwischen Standardzeit und Sommerzeit geändert wird.</span><span class="sxs-lookup"><span data-stu-id="f5d72-104">The **Time** element describes the time when the time changes between standard time and daylight saving time.</span></span> 
+<span data-ttu-id="66438-104">Das **time** -Element beschreibt die Zeit, in der sich die Zeit zwischen Standardzeit und Sommerzeit ändert.</span><span class="sxs-lookup"><span data-stu-id="66438-104">The **Time** element describes the time when the time changes between standard time and daylight saving time.</span></span> 
   
 ```xml
 <Time/>
 ```
 
- <span data-ttu-id="f5d72-105">**Time**</span><span class="sxs-lookup"><span data-stu-id="f5d72-105">**Time**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="f5d72-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="f5d72-106">Attributes and elements</span></span>
+ <span data-ttu-id="66438-105">**Time**</span><span class="sxs-lookup"><span data-stu-id="66438-105">**Time**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="66438-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="66438-106">Attributes and elements</span></span>
 
-<span data-ttu-id="f5d72-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="f5d72-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="66438-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="66438-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="f5d72-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="f5d72-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="66438-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="66438-108">Attributes</span></span>
 
-<span data-ttu-id="f5d72-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="f5d72-109">None.</span></span>
+<span data-ttu-id="66438-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="66438-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="f5d72-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f5d72-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="66438-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="66438-110">Child elements</span></span>
 
-<span data-ttu-id="f5d72-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="f5d72-111">None.</span></span>
+<span data-ttu-id="66438-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="66438-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="f5d72-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f5d72-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="66438-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="66438-112">Parent elements</span></span>
 
-|<span data-ttu-id="f5d72-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="f5d72-113">**Element**</span></span>|<span data-ttu-id="f5d72-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f5d72-114">**Description**</span></span>|
+|<span data-ttu-id="66438-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="66438-113">**Element**</span></span>|<span data-ttu-id="66438-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="66438-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="f5d72-115">Sommerzeit</span><span class="sxs-lookup"><span data-stu-id="f5d72-115">Daylight</span></span>](daylight.md) <br/> |<span data-ttu-id="f5d72-116">Das Datum und Zeitpunkt der Änderung die Zeit von Sommerzeit auf Normalzeit darstellt.</span><span class="sxs-lookup"><span data-stu-id="f5d72-116">Represents the date and time when the time changes from daylight saving time to standard time.</span></span>  <br/> |
-|[<span data-ttu-id="f5d72-117">Standard</span><span class="sxs-lookup"><span data-stu-id="f5d72-117">Standard</span></span>](standard.md) <br/> |<span data-ttu-id="f5d72-118">Das Datum und Zeitpunkt der Änderung die Zeit von Sommerzeit auf Normalzeit darstellt.</span><span class="sxs-lookup"><span data-stu-id="f5d72-118">Represents the date and time when the time changes from daylight saving time to standard time.</span></span>  <br/> |
+|[<span data-ttu-id="66438-115">Sommer</span><span class="sxs-lookup"><span data-stu-id="66438-115">Daylight</span></span>](daylight.md) <br/> |<span data-ttu-id="66438-116">Stellt das Datum und die Uhrzeit dar, zu der sich die Zeit von Sommerzeit zu Standardzeit ändert.</span><span class="sxs-lookup"><span data-stu-id="66438-116">Represents the date and time when the time changes from daylight saving time to standard time.</span></span>  <br/> |
+|[<span data-ttu-id="66438-117">Standard</span><span class="sxs-lookup"><span data-stu-id="66438-117">Standard</span></span>](standard.md) <br/> |<span data-ttu-id="66438-118">Stellt das Datum und die Uhrzeit dar, zu der sich die Zeit von Sommerzeit zu Standardzeit ändert.</span><span class="sxs-lookup"><span data-stu-id="66438-118">Represents the date and time when the time changes from daylight saving time to standard time.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="f5d72-119">Textwert</span><span class="sxs-lookup"><span data-stu-id="f5d72-119">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="66438-119">Textwert</span><span class="sxs-lookup"><span data-stu-id="66438-119">Text value</span></span>
 
-<span data-ttu-id="f5d72-120">Der Textwert darstellt, wenn die Zeit zwischen Standardzeit und Sommerzeit geändert wird.</span><span class="sxs-lookup"><span data-stu-id="f5d72-120">The text value represents the time when the time changes between standard time and daylight saving time.</span></span>
+<span data-ttu-id="66438-120">Der Wert Text stellt die Zeit dar, in der sich die Zeit zwischen Standardzeit und Sommerzeit ändert.</span><span class="sxs-lookup"><span data-stu-id="66438-120">The text value represents the time when the time changes between standard time and daylight saving time.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="f5d72-121">Hinweise</span><span class="sxs-lookup"><span data-stu-id="f5d72-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="66438-121">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="66438-121">Remarks</span></span>
 
-<span data-ttu-id="f5d72-122">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="f5d72-122">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="66438-122">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="66438-122">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="f5d72-123">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="f5d72-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="66438-123">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="66438-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="f5d72-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="f5d72-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="f5d72-125">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="f5d72-125">Schema Name</span></span>  <br/> |<span data-ttu-id="f5d72-126">Schematypen</span><span class="sxs-lookup"><span data-stu-id="f5d72-126">Types schema</span></span>  <br/> |
-|<span data-ttu-id="f5d72-127">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="f5d72-127">Validation File</span></span>  <br/> |<span data-ttu-id="f5d72-128">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="f5d72-128">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="f5d72-129">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="f5d72-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="f5d72-130">False</span><span class="sxs-lookup"><span data-stu-id="f5d72-130">False</span></span>  <br/> |
+|<span data-ttu-id="66438-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="66438-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="66438-125">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="66438-125">Schema Name</span></span>  <br/> |<span data-ttu-id="66438-126">Schematypen</span><span class="sxs-lookup"><span data-stu-id="66438-126">Types schema</span></span>  <br/> |
+|<span data-ttu-id="66438-127">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="66438-127">Validation File</span></span>  <br/> |<span data-ttu-id="66438-128">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="66438-128">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="66438-129">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="66438-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="66438-130">False</span><span class="sxs-lookup"><span data-stu-id="66438-130">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="f5d72-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f5d72-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="66438-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="66438-131">See also</span></span>
 
 
 
-- [<span data-ttu-id="f5d72-132">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="f5d72-132">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="66438-132">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="66438-132">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

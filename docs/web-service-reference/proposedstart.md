@@ -7,56 +7,56 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a2192ff3-25c9-424a-ae4a-506ab7b0993d
-description: Das ProposedStart-Element gibt die vorgeschlagenen Startzeit einer Besprechung.
-ms.openlocfilehash: e98ff895b50140262a68f09c5914ef5db20bd08d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ProposedStart-Element gibt die vorgeschlagene Startzeit einer Besprechung an.
+ms.openlocfilehash: 607129fb16c25bf19e98a40e624aa528478a21f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830909"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465548"
 ---
-# <a name="proposedstart"></a><span data-ttu-id="ec69e-103">ProposedStart</span><span class="sxs-lookup"><span data-stu-id="ec69e-103">ProposedStart</span></span>
+# <a name="proposedstart"></a><span data-ttu-id="44bf5-103">ProposedStart</span><span class="sxs-lookup"><span data-stu-id="44bf5-103">ProposedStart</span></span>
 
-<span data-ttu-id="ec69e-104">Das **ProposedStart** -Element gibt die vorgeschlagenen Startzeit einer Besprechung.</span><span class="sxs-lookup"><span data-stu-id="ec69e-104">The **ProposedStart** element specifies the proposed start time of a meeting.</span></span> 
+<span data-ttu-id="44bf5-104">Das **ProposedStart** -Element gibt die vorgeschlagene Startzeit einer Besprechung an.</span><span class="sxs-lookup"><span data-stu-id="44bf5-104">The **ProposedStart** element specifies the proposed start time of a meeting.</span></span> 
   
 ```XML
 <ProposedStart></ProposedStart>
 ```
 
- <span data-ttu-id="ec69e-105">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="ec69e-105">**dateTime**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="ec69e-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="ec69e-106">Attributes and elements</span></span>
+ <span data-ttu-id="44bf5-105">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="44bf5-105">**dateTime**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="44bf5-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="44bf5-106">Attributes and elements</span></span>
 
-<span data-ttu-id="ec69e-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="ec69e-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="44bf5-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="44bf5-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="ec69e-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="ec69e-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="44bf5-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="44bf5-108">Attributes</span></span>
 
-<span data-ttu-id="ec69e-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="ec69e-109">None.</span></span>
+<span data-ttu-id="44bf5-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="44bf5-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="ec69e-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="ec69e-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="44bf5-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="44bf5-110">Child elements</span></span>
 
-<span data-ttu-id="ec69e-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="ec69e-111">None.</span></span>
+<span data-ttu-id="44bf5-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="44bf5-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="ec69e-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="ec69e-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="44bf5-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="44bf5-112">Parent elements</span></span>
 
-[<span data-ttu-id="ec69e-113">MeetingResponse</span><span class="sxs-lookup"><span data-stu-id="ec69e-113">MeetingResponse</span></span>](meetingresponse.md)
+[<span data-ttu-id="44bf5-113">MeetingResponse</span><span class="sxs-lookup"><span data-stu-id="44bf5-113">MeetingResponse</span></span>](meetingresponse.md)
   
-## <a name="text-value"></a><span data-ttu-id="ec69e-114">Textwert</span><span class="sxs-lookup"><span data-stu-id="ec69e-114">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="44bf5-114">Textwert</span><span class="sxs-lookup"><span data-stu-id="44bf5-114">Text value</span></span>
 
-<span data-ttu-id="ec69e-115">Der Textwert des **ProposedStart** -Elements ist die vorgeschlagenen Startzeit vom Organisator der Besprechung Teilnehmer gesendet.</span><span class="sxs-lookup"><span data-stu-id="ec69e-115">The text value of the **ProposedStart** element is the proposed start time sent by an attendee to the meeting organizer.</span></span> 
+<span data-ttu-id="44bf5-115">Der Textwert des **ProposedStart** -Elements ist die vorgeschlagene Startzeit, die von einem Teilnehmer an den Besprechungsorganisator gesendet wurde.</span><span class="sxs-lookup"><span data-stu-id="44bf5-115">The text value of the **ProposedStart** element is the proposed start time sent by an attendee to the meeting organizer.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="ec69e-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="ec69e-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="44bf5-116">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="44bf5-116">Remarks</span></span>
 
-<span data-ttu-id="ec69e-117">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="ec69e-117">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="44bf5-117">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="44bf5-117">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="ec69e-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="ec69e-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="44bf5-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="44bf5-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="ec69e-119">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="ec69e-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="44bf5-119">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="44bf5-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="ec69e-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="ec69e-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="ec69e-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="ec69e-121">Schema name</span></span>  <br/> |<span data-ttu-id="ec69e-122">Schematypen</span><span class="sxs-lookup"><span data-stu-id="ec69e-122">Types schema</span></span>  <br/> |
-|<span data-ttu-id="ec69e-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="ec69e-123">Validation file</span></span>  <br/> |<span data-ttu-id="ec69e-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="ec69e-124">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="ec69e-125">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="ec69e-125">Can be empty</span></span>  <br/> |<span data-ttu-id="ec69e-126">false</span><span class="sxs-lookup"><span data-stu-id="ec69e-126">false</span></span>  <br/> |
+|<span data-ttu-id="44bf5-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="44bf5-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="44bf5-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="44bf5-121">Schema name</span></span>  <br/> |<span data-ttu-id="44bf5-122">Schematypen</span><span class="sxs-lookup"><span data-stu-id="44bf5-122">Types schema</span></span>  <br/> |
+|<span data-ttu-id="44bf5-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="44bf5-123">Validation file</span></span>  <br/> |<span data-ttu-id="44bf5-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="44bf5-124">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="44bf5-125">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="44bf5-125">Can be empty</span></span>  <br/> |<span data-ttu-id="44bf5-126">false</span><span class="sxs-lookup"><span data-stu-id="44bf5-126">false</span></span>  <br/> |
    
 
