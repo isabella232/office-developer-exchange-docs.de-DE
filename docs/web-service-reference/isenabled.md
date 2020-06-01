@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: c7e3035e-a4ef-4c11-8cb0-214790a554ff
 description: Das IsEnabled-Element gibt an, ob die Regel aktiviert ist.
-ms.openlocfilehash: d0f0a77ec1ec952ac1cd9d9ad686ccfcb8f70c42
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 7a150dc4a27cf4ff7da9825d1daae2b747088539
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830000"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455310"
 ---
 # <a name="isenabled"></a>IsEnabled
 
@@ -27,7 +27,7 @@ Das **IsEnabled** -Element gibt an, ob die Regel aktiviert ist.
 <IsEnabled/>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,23 +44,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Regel (RuleType)](rule-ruletype.md) <br/> |Stellt eine Regel in das Postfach des Benutzers an.  <br/> |
+|[Regel (RuleType)](rule-ruletype.md) <br/> |Stellt eine Regel im Postfach des Benutzers dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass die Regel aktiviert ist und ausgeführt werden kann. Der Wert **false** gibt an, dass die Regel ausgeführt werden kann. 
+Der Textwert **true** gibt an, dass die Regel aktiviert ist und ausgeführt werden kann. Der Wert **false** gibt an, dass die Regel nicht ausgeführt werden kann. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

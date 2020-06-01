@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8e66979e-4e3b-4183-aaf5-a45d8380ede5
-description: Das LastResponseTime-Element darstellt, das Datum und Uhrzeit der neuesten Antwort empfangen.
-ms.openlocfilehash: 77f79d87be0b88f8c91c04438a2541643aad8858
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das LastResponseTime-Element stellt das Datum und die Uhrzeit der letzten empfangenen Antwort dar.
+ms.openlocfilehash: 45740d1a31d9b04bbc5062e7ff8b05629abd84c4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830205"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455380"
 ---
 # <a name="lastresponsetime"></a>LastResponseTime
 
-Das **LastResponseTime** -Element darstellt, das Datum und Uhrzeit der neuesten Antwort empfangen. 
+Das **LastResponseTime** -Element stellt das Datum und die Uhrzeit der letzten empfangenen Antwort dar. 
   
 ```xml
 <LastResponseTime/>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Attendee](attendee.md) <br/> |Stellt Teilnehmer und Ressourcen für eine Besprechung.  <br/> |
+|[Teilnehmer](attendee.md) <br/> |Stellt Teilnehmer und Ressourcen für eine Besprechung dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der Datum und Uhrzeit der neuesten Antwort darstellt, ist erforderlich.
+Ein Textwert, der das Datum und die Uhrzeit der letzten Antwort darstellt, ist erforderlich.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem MicrosoftExchange 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange 2007 ausgeführt wird, auf dem die Client Zugriffs-Serverrolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

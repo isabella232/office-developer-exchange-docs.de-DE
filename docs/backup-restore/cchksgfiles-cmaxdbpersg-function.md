@@ -1,5 +1,5 @@
 ---
-title: CChkSGFiles.CMaxDbPerSG-Funktion
+title: CChkSGFiles. CMaxDbPerSG-Funktion
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,19 +11,19 @@ api_name:
 api_type:
 - dllExport
 ms.assetid: 5871988b-a5d7-42cc-9b83-8fededb5072f
-description: 'Zuletzt geändert: 22 Februar 2013'
-ms.openlocfilehash: bf09074bab6dee13e97e8a59a22ae1b19522a5e5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 'Letzte Änderung: 22. Februar 2013'
+ms.openlocfilehash: b7c3517779eb07ef053c1dd4fa25544310fb3343
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757766"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455261"
 ---
-# <a name="cchksgfilescmaxdbpersg-function"></a>CChkSGFiles.CMaxDbPerSG-Funktion
+# <a name="cchksgfilescmaxdbpersg-function"></a>CChkSGFiles. CMaxDbPerSG-Funktion
 
 **Gilt für:** Exchange Server 2003 | Exchange Server 2007 | Exchange Server 2010 | Exchange Server 2013
   
-Gibt die maximale Anzahl von Datenbanken in einer einzelnen Exchange Server-Speichergruppe zulässig.
+Gibt die maximale Anzahl von Datenbanken zurück, die in einer einzelnen Exchange Server-Speichergruppe zulässig sind.
   
 ```cs
 Static ULONG  __stdcall CMaxDbPerSG  ();
@@ -32,22 +32,22 @@ Static ULONG  __stdcall CMaxDbPerSG  ();
 
 ## <a name="parameters"></a>Parameter
 
-None.
+Keine.
   
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-Die maximale Anzahl von Datenbanken, die der angegebene Exchange-Server pro Speichergruppe zulässt. Diese Funktion gibt 1 zurück, da Speichergruppen nicht Teil der Exchange 2013 sind.
+Die maximale Anzahl von Datenbanken, die der angegebene Exchange-Server pro Speichergruppe zulässt. Da Speichergruppen nicht Teil Exchange 2013 sind, gibt diese Funktion den Wert 1 zurück.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können das **CCheckSGFiles** -Objekt verwenden, um Datenbanken (und Transaktionsprotokolldateien) in nur einer Speichergruppe, überprüfen, damit der von der Funktion **CMaxDbPerSG** zurückgegebene Wert auch die maximale Anzahl von Datenbanken darstellt, die Sie mithilfe von überprüfen kann ein die Instanz der **CCheckSGFiles** -Klasse. 
+Mit dem **CCheckSGFiles** -Objekt können Sie Datenbanken (und Transaktionsprotokolldateien) nur in einer Speichergruppe validieren, sodass der von der **CMaxDbPerSG** -Funktion zurückgegebene Wert auch die maximale Anzahl von Datenbanken darstellt, die Sie überprüfen können, indem Sie eine Instanz der **CCheckSGFiles** -Klasse verwenden. 
   
-Beachten Sie, dass standardmäßig bis zu fünf Datenbanken pro Speichergruppe Exchange Server 2003 und Exchange Server 2007 ermöglichen.
+Beachten Sie, dass Exchange Server 2003 und Exchange Server 2007 standardmäßig maximal fünf Datenbanken pro Speichergruppe zulassen.
   
 ## <a name="requirements"></a>Anforderungen
 
-Exchange 2013 umfasst nur eine 64-Bit-Version der CHKSGFILES-API.
+Exchange 2013 enthält nur eine 64-Bit-Version der CHKSGFILES-API.
   
-Das Konto, unter die Anwendung ausgeführt wird, benötigen Lesezugriff auf die Datenbank und die Protokolldateien, die überprüft werden sollen.
+Das Konto, unter dem die Anwendung betrieben wird, muss über Lesezugriffsberechtigungen für die zu überprüfenden Datenbank-und Protokolldateien verfügen.
   
 

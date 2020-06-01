@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9f551ee4-d945-477c-b981-9554b197d26d
-description: DaylightTime-Element stellt einen Offset von dem Zeitpunkt relativ zur koordinierten Weltzeit (UTC), die durch die Verschiebung (UTC) Element Regionen dargestellt wird, in dem Sommerzeit beobachtet wird. Dieses Element enthält auch Informationen dazu, wann der Übergang von Normalzeit zu Sommerzeit auftritt.
-ms.openlocfilehash: 07ec4b1a5f84669aca33d46cdf1fa2e578f3b43b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Daylight-Element stellt einen Offset von der Zeit relativ zur koordinierten Weltzeit (Coordinated Universal Time, UTC) dar, die durch das Bias-Element (UTC) in Regionen dargestellt wird, in denen die Sommerzeit eingehaltenwird. Dieses Element enthält auch Informationen darüber, wann der Übergang zur Sommerzeit aus der Standardzeit erfolgt.
+ms.openlocfilehash: 350fcb4ce278f423c62fcc5ecaa160eda71e4a2c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757876"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455653"
 ---
 # <a name="daylighttime"></a>DaylightTime
 
-**DaylightTime** -Element stellt einen Offset von dem Zeitpunkt relativ zur koordinierten Weltzeit (UTC), die durch die [Verschiebung (UTC)](bias-utc.md) Element Regionen dargestellt wird, in dem Sommerzeit beobachtet wird. Dieses Element enthält auch Informationen dazu, wann der Übergang von Normalzeit zu Sommerzeit auftritt. 
+Das **Daylight** -Element stellt einen Offset von der Zeit relativ zur koordinierten Weltzeit (Coordinated Universal Time, UTC) dar, die durch das [Bias-Element (UTC)](bias-utc.md) in Regionen dargestellt wird, in denen die Sommerzeit eingehaltenwird. Dieses Element enthält auch Informationen darüber, wann der Übergang zur Sommerzeit aus der Standardzeit erfolgt. 
   
-- [TimeZone (Verfügbarkeit)](timezone-availability.md) 
+- [Zeitzone (Verfügbarkeit)](timezone-availability.md) 
 - [DaylightTime](daylighttime.md)
   
 ```xml
@@ -51,25 +51,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Bias](bias.md) <br/> |Stellt den Offset von der UTC-Offset, der durch das Element [Bias (UTC)](bias-utc.md) für Standardzeit und Sommerzeit identifiziert wird. Dieser Wert wird in Minuten angegeben.  <br/> |
-|[Time](time.md) <br/> |Stellt die Tageszeit Übergang zu und von Standardzeit und Sommerzeit einer Zeitzone.  <br/> |
-|[DayOrder](dayorder.md) <br/> |Stellt das _n_th Vorkommen des Tags, das im Element [DayOfWeek (TimeZone)](dayofweek-timezone.md) angegeben wird, die das Datum des Übergangs from und to Standardzeit und der Sommerzeit darstellt.  <br/> |
-|[Month](month.md) <br/> |Stellt den Übergang Monat des Jahres zu und von Standardzeit und Sommerzeit einer Zeitzone.  <br/> |
-|[DayOfWeek (TimeZone)](dayofweek-timezone.md) <br/> |Tritt für der Übergang zu und von Standardzeit und Sommerzeit Wochentag darstellt.  <br/> |
-|[Jahr](year.md) <br/> |Verwendet, um eine Zeitzone definiert, die sich je nach dem Jahr ändern. Dieses Element ist optional. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
+|[Bias](bias.md) <br/> |Stellt den Offset vom UTC-Offset dar, der durch das [Bias-Element (UTC)](bias-utc.md) für Standardzeit und Sommerzeit bestimmt wird. Dieser Wert wird in Minuten angegeben.  <br/> |
+|[Time](time.md) <br/> |Stellt die Übergangszeit von Tag zu und von Standardzeit und Sommerzeit dar.  <br/> |
+|[DayOrder](dayorder.md) <br/> |Stellt das _n_th Vorkommen des Tags dar, der im [DayOfWeek-Element (TimeZone)](dayofweek-timezone.md) angegeben ist, das das Datum des Übergangs von und zur Standardzeit und zur Sommerzeit darstellt.  <br/> |
+|[Month](month.md) <br/> |Stellt den Übergangs Monat des Jahres zu und von Standardzeit und Sommerzeit dar.  <br/> |
+|[DayOfWeek (Zeitzone)](dayofweek-timezone.md) <br/> |Stellt den Wochentag dar, an dem der Übergang zu und von Standardzeit und Sommerzeit erfolgt.  <br/> |
+|[Jahr](year.md) <br/> |Dient zum Definieren einer Zeitzone, die sich je nach Jahr ändert. Dieses Element ist optional. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[TimeZone (Verfügbarkeit)](timezone-availability.md) <br/> | Enthält Elemente, die Informationen zur Zeitzone zu identifizieren.<br/><br/>Dieses Element enthält auch Informationen über den Wechsel zwischen Standardzeit und Sommerzeit.<br/><br/>`/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone` <br/><br/>`/GetUserAvailabilityRequest/TimeZone` <br/> |
+|[Zeitzone (Verfügbarkeit)](timezone-availability.md) <br/> | Enthält Elemente, die Zeitzoneninformationen identifizieren.<br/><br/>Dieses Element enthält auch Informationen zum Übergang zwischen Standardzeit und Sommerzeit.<br/><br/>`/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone` <br/><br/>`/GetUserAvailabilityRequest/TimeZone` <br/> |
    
 ## <a name="example"></a>Beispiel
 
-Die folgende partielle GetUserAvailability Anforderung stellt eine Clientanwendung an einem Speicherort, der Sommerzeit erkennt.
+Die folgende partielle GetUserAvailability-Anforderung stellt eine Clientanwendung an einem Speicherort dar, der die Sommerzeit erkennt.
   
 ```xml
-<TimeZone xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+<TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
   <Bias>480</Bias>
   <StandardTime>
     <Bias>0</Bias>
@@ -88,11 +88,11 @@ Die folgende partielle GetUserAvailability Anforderung stellt eine Clientanwendu
 </TimeZone>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -100,5 +100,5 @@ Die folgende partielle GetUserAvailability Anforderung stellt eine Clientanwendu
 ## <a name="see-also"></a>Siehe auch
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)
-- [Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

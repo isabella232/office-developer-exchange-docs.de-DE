@@ -1,5 +1,5 @@
 ---
-title: CChkSGFiles.ErrCheckDbHeaders-Funktion
+title: CChkSGFiles. ErrCheckDbHeaders-Funktion
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,19 +11,19 @@ api_name:
 api_type:
 - dllExport
 ms.assetid: 75289cd2-35b1-4f75-a651-dce01f1ddda1
-description: 'Zuletzt geändert: 22 Februar 2013'
-ms.openlocfilehash: a407019063b34970e883a00ca4f4d730935d7cba
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 'Letzte Änderung: 22. Februar 2013'
+ms.openlocfilehash: a62c5940322d3d7a71f2db93214f1e970fc6859b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756810"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455247"
 ---
-# <a name="cchksgfileserrcheckdbheaders-function"></a>CChkSGFiles.ErrCheckDbHeaders-Funktion
+# <a name="cchksgfileserrcheckdbheaders-function"></a>CChkSGFiles. ErrCheckDbHeaders-Funktion
 
 **Gilt für:** Exchange Server 2003 | Exchange Server 2007 | Exchange Server 2010 | Exchange Server 2013 
   
-Überprüft die Kopfzeilen der Datenbankdateien, die von der Funktion **ErrInit** angegeben wurden. Diese Funktion gibt auch die Seitengröße und die Anzahl der Seiten in den einzelnen der angegebenen Datenbanken. 
+Überprüft die Header der Datenbankdateien, die von der **ErrInit** -Funktion angegeben wurden. Diese Funktion gibt auch die Seitengröße und die Anzahl der Seiten in jeder der angegebenen Datenbanken zurück. 
   
 ```cs
 Vitual ERRErrCheckDbHeaders  
@@ -40,40 +40,40 @@ Vitual ERRErrCheckDbHeaders
 
 ### <a name="pcbdbpagesize"></a>pcbDbPageSize 
   
-Output-Parameter. Das Seitenformat der einzelnen angegebenen Datenbanken, in Byte.
+Output-Parameter. Die Seitengröße jeder der angegebenen Datenbanken in Bytes.
     
 ### <a name="pcheaderpagesperdb"></a>pcHeaderPagesPerDb 
   
-Output-Parameter. Die Anzahl der Seiten am Anfang jeder angegebene Datenbank, die von der Datenbank-Engine für die interne Verwendung reserviert sind. Beachten Sie, dass *nicht* Durchlauf Kopfzeilenseiten an die Funktion **ErrCheckDbPages** für die Validierung sollten. 
+Output-Parameter. Die Anzahl der Seiten am Anfang jeder angegebenen Datenbank, die vom Datenbankmodul für die interne Verwendung reserviert werden. Beachten Sie, dass Sie *keine* Kopfzeilenseiten zur Validierung an die **ErrCheckDbPages** -Funktion übergeben sollten. 
     
 ### <a name="pidberrorencountered"></a>piDbErrorEncountered
   
-Output-Parameter. Wenn der Rückgabewert der Funktion einen Fehler weist darauf hin, wird dieser Parameter als Farbindex in der **ErrInit** -Funktion übergebenen Arrays **RgwszDb []** . Das indizierte Arrayelement steht für die Datenbank, in der der Fehler aufgetreten ist. Wenn die Funktion keinen Fehlerwert zurückgibt, ist dieser Parameterwert ungültig. 
+Output-Parameter. Wenn der Rückgabewert der Funktion einen Fehler angibt, ist dieser Parameter ein Index in das **rgwszDb []** -Array, das an die **ErrInit** -Funktion übergeben wird. Das indizierte Array-Element stellt die Datenbank dar, in der der Fehler aufgetreten ist. Wenn die Funktion keinen Fehlerwert zurückgibt, ist dieser Parameterwert ungültig. 
     
 ### <a name="ulflags"></a>ulFlags 
   
-Optionale Eingabeparameter. Dieser Wert ist für die zukünftige Verwendung reserviert. Der übergebene Wert muss 0 (null) sein.
+Optionaler Eingabeparameter. Dieser Wert ist für die zukünftige Verwendung reserviert. Der übergebene Wert sollte 0 (null) sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Diese Funktion gibt einen Fehlercode aus der [CChkSGFiles.ERR-Enumeration](cchksgfiles-err-enumeration.md).
+Diese Funktion gibt einen Fehlercode aus der [CChkSGFiles. err-Aufzählung](cchksgfiles-err-enumeration.md)zurück.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-**ErrCheckDbHeaders** überprüft, ob alle Datenbanken, die mit **ErrInit** registriert die gleiche Signatur und Datenbank Seite Protokollgröße verfügen. Sie können auch der niedrigste Wert des Parameters **GenMin** und der höchste Wert des Parameters **GenMax** verwenden, um die Protokolldateien zu bestimmen, die erforderlich sind, um alle registrierten Datenbanken auf einen clean Shutdown-Status zu bringen. 
+**ErrCheckDbHeaders** überprüft, ob alle mit **ErrInit** registrierten Datenbanken dieselbe Protokollsignatur und Datenbankseitengröße aufweisen. Sie können auch den niedrigsten **genMin** -Parameterwert und den höchsten Wert für den **genMax** -Parameter verwenden, um den Protokoll Dateiensatz zu ermitteln, die erforderlich sind, um alle registrierten Datenbanken in den Zustand "Clean Shutdown" zu versetzen. 
   
-Der Parameter **PiDbErrorEncountered** festgelegt ist, nur, wenn ein Fehler erkannt wird, wie eine ungleich NULL angegeben **ErrCheckDbHeaders** -Wert zurück. 
+Der **piDbErrorEncountered** -Parameter wird nur festgelegt, wenn ein Fehler erkannt wird, wie durch einen **ErrCheckDbHeaders** -Rückgabewert ungleich NULL angegeben. 
   
-Tritt ein Fehler in dieser Funktion wird ein Error-Ereignis in das Ereignisprotokoll Windows Fehler hinzugefügt werden.
+Wenn in dieser Funktion ein Fehler auftritt, wird dem Windows-Fehlerereignisprotokoll ein Error-Ereignis hinzugefügt.
   
-Sie können nur nach der **ErrInit** **ErrCheckDbHeaders** anrufen, und Sie müssen vor dem Aufruf von **ErrCheckDbPages** und **ErrCheckLogs**aufrufen.
+Sie können **ErrCheckDbHeaders** nur aufrufen, nachdem Sie **ErrInit**aufgerufen haben, und Sie müssen ihn aufrufen, bevor Sie **ErrCheckDbPages** und **ErrCheckLogs**aufrufen.
   
-Wenn Sie für CHKSGFILES in multithreaded-Anwendung verwenden, müssen Sie die **ErrCheckDbHeaders** -Funktion in den einzelnen Thread Teil aufrufen und können Sie nur einmal für jede **CCheckSGFiles** -Objekt aufrufen. 
+Wenn Sie CHKSGFILES in einer Multithread-Anwendung verwenden, müssen Sie die **ErrCheckDbHeaders** -Funktion im Einzelthread-Teil aufrufen, und Sie können Sie für jedes **CCheckSGFiles** -Objekt nur einmal aufrufen. 
   
 ## <a name="requirements"></a>Anforderungen
 
-Exchange 2013 umfasst nur eine 64-Bit-Version der CHKSGFILES-API.
+Exchange 2013 enthält nur eine 64-Bit-Version der CHKSGFILES-API.
   
-Das Konto, unter die Anwendung ausgeführt wird, benötigen Lesezugriff auf die Datenbank und die Protokolldateien, die überprüft werden sollen.
+Das Konto, unter dem die Anwendung betrieben wird, muss über Lesezugriffsberechtigungen für die zu überprüfenden Datenbank-und Protokolldateien verfügen.
   
 

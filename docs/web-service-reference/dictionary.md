@@ -1,5 +1,5 @@
 ---
-title: Dictionary
+title: Wörterbuch
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8309e468-115b-4d6e-b33c-c4719dcecc4c
-description: Das Dictionary-Element definiert eine Reihe von Einträgen in Wörterbuch-Eigenschaft für eine Benutzer-Konfigurationsobjekt.
-ms.openlocfilehash: 151abfe7a9a9ae05b8b61af87c33675e025920ec
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Dictionary-Element definiert eine Gruppe von Wörterbuch-Eigenschafts Einträgen für ein Benutzer Konfigurationsobjekt.
+ms.openlocfilehash: 8e5267717aab2317b2bc1581a775ead81025a08a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757977"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455667"
 ---
-# <a name="dictionary"></a>Dictionary
+# <a name="dictionary"></a>Wörterbuch
 
-Das **Dictionary** -Element definiert eine Reihe von Einträgen in Wörterbuch-Eigenschaft für eine Benutzer-Konfigurationsobjekt. 
+Das **Dictionary** -Element definiert eine Gruppe von Wörterbuch-Eigenschafts Einträgen für ein Benutzer Konfigurationsobjekt. 
   
 ```xml
 <Dictionary>
@@ -42,27 +42,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Der Wörterbucheintrag](dictionaryentry.md) <br/> |Gibt den Inhalt einer einzelnen Wörterbuch Eintrag-Eigenschaft.  <br/> |
+|[DictionaryEntry](dictionaryentry.md) <br/> |Gibt den Inhalt einer einzelnen Wörterbucheintrags Eigenschaft an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserConfiguration](userconfiguration.md) <br/> |Definiert einen einzelnen Benutzer-Konfigurationsobjekt.  <br/> |
+|[UserConfiguration](userconfiguration.md) <br/> |Definiert ein einzelnes Benutzer Konfigurationsobjekt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

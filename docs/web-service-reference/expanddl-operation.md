@@ -11,62 +11,62 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1f7837e7-9eff-4e10-9577-c40f7ed6af94
-description: Der Vorgang der ExpandDL werden sämtliche Mitglieder von Verteilerlisten verfügbar gemacht.
-ms.openlocfilehash: 4af6198ff15407b7fb71cdb4010ff6ce035460d0
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Der ExpandDL-Vorgang macht die vollständige Mitgliedschaft in Verteilerlisten verfügbar.
+ms.openlocfilehash: 8edaf057538e2c1136465f0ff7937c14477b2c47
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353742"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44454050"
 ---
 # <a name="expanddl-operation"></a>ExpandDL-Vorgang
 
-Der Vorgang der ExpandDL werden sämtliche Mitglieder von Verteilerlisten verfügbar gemacht.
+Der ExpandDL-Vorgang macht die vollständige Mitgliedschaft in Verteilerlisten verfügbar.
   
-## <a name="using-the-expanddl-web-method"></a>Verwenden der Web der ExpandDL-Methode
+## <a name="using-the-expanddl-web-method"></a>Verwenden der ExpandDL-Webmethode
 
-Der Vorgang der ExpandDL verwendet den Webdienst, der sich in besteht befindet. Diese Webdienstmethode akzeptiert ein [Postfach](mailbox.md) -Element, das entweder ein untergeordnetes Element [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) , für eine Erweiterung von Verteilerlisten öffentlichen oder ein untergeordnetes Element [ItemId](itemid.md) , für die Erweiterung von einem privaten enthalten kann Verteilerliste. 
+Der ExpandDL-Vorgang verwendet den Webdienst, der sich in Exchange. asmx befindet. Diese Webdienstmethode akzeptiert ein [Mailbox](mailbox.md) -Element, das entweder ein untergeordnetes e-Mail-Element [(NonEmptyStringType)](emailaddress-nonemptystringtype.md) für eine Erweiterung einer öffentlichen Verteilerliste oder ein untergeordnetes [ItemID](itemid.md) -Element für die Erweiterung einer privaten Verteilerliste enthalten kann. 
   
-Öffentliche Verteilerlisten können mithilfe einer der folgenden erweitert werden:
+Öffentliche Verteilerlisten können mithilfe einer der folgenden Optionen erweitert werden:
   
-1. Verteilung Liste alias
+1. Alias für Verteilerliste
     
-2. Die Adresse des Simple Mail Transfer Protocol (SMTP)
+2. Die SMTP-Adresse (Simple Mail Transfer Protocol)
     
 3. X400
     
 4. X500
     
-5. Exchange-Legacy-Adresse
+5. Exchange-Legacy Adresse
     
 6. Der Name der Verteilerliste
     
-7. Der Anzeigename
+7. Anzeigename
     
 > [!IMPORTANT]
-> Anzeigenamen sind nicht eindeutig. Mehrere Konten können demselben Anzeigenamen freigeben. 
+> Anzeigenamen sind nicht eindeutig. Mehrere Konten können denselben Anzeigenamen verwenden. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Rekursive Erweiterung wird nicht unterstützt. In einem einzigen Aufruf kann nur eine Verteilerliste erweitert werden. Wenn mehr als eine Verteilerliste die Kriterien übereinstimmen, meldet der Webdienst einen Fehler. Eine Clientanwendung können Auflösung nicht eindeutiger Namen (ANR), um mehrdeutige Verteilung aufgelistet und ausgewählt haben die richtige E-mail-Adresse der erforderlichen Verteilerliste als Parameter für den [Vorgang der ExpandDL](expanddl-operation.md)zu erhalten. Weitere Informationen finden Sie unter [ResolveNames Vorgang](resolvenames-operation.md).
+Die rekursive Erweiterung wird nicht unterstützt. In einem einzigen Aufruf kann nur eine Verteilerliste erweitert werden. Wenn mehr als eine Verteilerliste den Kriterien entspricht, meldet der Webdienst einen Fehler. Eine Clientanwendung kann die eindeutige Namensauflösung (ANR) verwenden, um nicht eindeutige Verteilerlisten zu finden, und dann die richtige e-Mail-Adresse der erforderlichen Verteilerliste als Parameter für den [ExpandDL-Vorgang](expanddl-operation.md)ausgewählt haben. Weitere Informationen finden Sie unter [ResolveNames-Vorgang](resolvenames-operation.md).
   
-Öffentliche Verteilerlisten befinden sich in Active Directory. Sie können eine beliebige e-Mail-aktivierten oder dynamische Verteilergruppe sein. Die Gruppe aus der Liste nicht ausgeblendet werden sollen, und jedes Element eine nicht leere E-mail-Adresse haben. Mitglieder der Verteilerliste können e-Mail-aktivierte Benutzer und Kontakte, öffentlichen Ordnern und e-Mail-aktivierten Verteilerlisten und dynamische Gruppen sein.
+Öffentliche Verteilerlisten befinden sich in Active Directory. Dabei kann es sich um eine beliebige e-Mail-aktivierte oder dynamische Verteilergruppe handeln. Die Gruppe sollte nicht aus der Adressliste ausgeblendet werden, und jedes Mitglied sollte eine nicht leere e-Mail-Adresse aufweisen. Mitglieder der Verteilerliste können e-Mail-aktivierte Benutzer und Kontakte, öffentliche Ordner und e-Mail-aktivierte Verteilerlisten und dynamische Gruppen sein.
   
-Private Verteilerlisten befinden sich im Ordner Kontakte des Postfachs eines Benutzers. Private Verteilerlisten haben keine e-Mail-Adressen, so dass ihre Store Element-IDs in einer Anforderung der ExpandDL verwendet werden. Mitglieder von Verteilerlisten private können eine beliebige e-Mail-aktivierten Benutzer, Kontakte oder Verteilerlisten aus Active Directory oder Kontakte oder private Verteilerlisten aus Kontakteordner eines Benutzers enthält.
+Private Verteilerlisten befinden sich im Ordner "Kontakte" des Postfachs eines Benutzers. Private Verteilerlisten verfügen nicht über e-Mail-Adressen, sodass Ihre Store Item Identifier in einer ExpandDL-Anforderung verwendet werden. Mitglieder einer privaten Verteilerliste können beliebige e-Mail-aktivierte Benutzer, Kontakte oder Verteilerlisten aus Active Directory oder Kontakte oder private Verteilerlisten aus dem Ordner Kontakte eines Benutzers sein.
   
-Element-IDs werden für Kontakte oder private Verteilerlisten in der Antwort zurückgegeben. Dies kann zum Abrufen von Informationen über das Objekt oder die Mitgliedschaft in einer privaten Verteilerliste erweitern verwendet werden.
+Bei Kontakten oder privaten Verteilerlisten werden die Elementbezeichner in der Antwort zurückgegeben. Dies kann verwendet werden, um Informationen über das Objekt abzurufen oder um die Mitgliedschaft in einer privaten Verteilerliste zu erweitern.
   
-## <a name="expanddl-private-distribution-list-request-example"></a>Anforderungsbeispiel der ExpandDL Private Verteilerliste
+## <a name="expanddl-private-distribution-list-request-example"></a>ExpandDL-Beispiel für private Verteilerlisten Anforderung
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird einer der ExpandDL Anforderung veranschaulicht eine Anforderung an eine Verteilerliste privat erweitert bilden.
+Im folgenden Beispiel einer ExpandDL-Anforderung wird gezeigt, wie Sie eine Anforderung zum Erweitern einer privaten Verteilerliste bilden.
   
 ### <a name="code"></a>Code
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013_SP1" />
   </soap:Header>
@@ -80,25 +80,25 @@ Im folgenden Beispiel wird einer der ExpandDL Anforderung veranschaulicht eine A
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Um eine private Verteilerliste zu erweitern, wird das [Postfach](mailbox.md) -Element das [ItemId](itemid.md) -Element enthalten, das eine private Verteilerliste in das Postfach des Benutzers bezeichnet. 
+Um eine private Verteilerliste zu erweitern, enthält das [Mailbox](mailbox.md) -Element das [ItemID](itemid.md) -Element, das eine private Verteilerliste im Postfach des Benutzers identifiziert. 
   
-## <a name="expanddl-public-distribution-list-request-example"></a>Öffentliche Verteilerliste der ExpandDL anforderungsbeispiel
+## <a name="expanddl-public-distribution-list-request-example"></a>ExpandDL-Beispiel für öffentliche Verteilerlisten Anforderung
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird einer der ExpandDL Anforderung veranschaulicht eine Anforderung an eine öffentliche Verteilerliste erweitern bilden. Im Beispiel wird die Verwendung eines Anzeigenamens erweitern eine Verteilerliste.
+Im folgenden Beispiel einer ExpandDL-Anforderung wird gezeigt, wie Sie eine Anforderung zum Erweitern einer öffentlichen Verteilerliste bilden. Das Beispiel zeigt die Verwendung eines Anzeigenamens zum Erweitern einer Verteilerliste.
   
 ### <a name="code"></a>Code
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <ExpandDL xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-              xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <ExpandDL xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+              xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
         <t:Mailbox>
           <t:EmailAddress>TheDistributionList</t:EmailAddress>
         </t:Mailbox>
@@ -107,9 +107,9 @@ Im folgenden Beispiel wird einer der ExpandDL Anforderung veranschaulicht eine A
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Die Antwort auf diese Anforderung wird **Postfach** Elemente enthalten, die jedes Postfach in der Verteilerliste zu identifizieren. Wenn eine Verteilerliste in einer Verteilerliste enthalten ist, muss eine separate Verteilerlistenerweiterung auf die eingebettete Verteilerliste ausgeführt werden. Wenn die Verteilerliste keine Mitglieder enthält, oder die angeforderte Verteilerliste ist nicht vorhanden, wird das Attribut **ResponseClass** einen Erfolg gleich Wert enthalten. 
+Die Antwort auf diese Anforderung enthält **Post Fach** Elemente, mit denen jedes Postfach in der Verteilerliste identifiziert wird. Wenn eine Verteilerliste in einer Verteilerliste enthalten ist, muss eine separate Verteilerlistenerweiterung für die eingebettete Verteilerliste ausgeführt werden. Wenn die Verteilerliste keine Mitglieder enthält oder die angeforderte Verteilerliste nicht vorhanden ist, enthält das **ResponseClass** -Attribut einen Wert, der Success entspricht. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -119,31 +119,31 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Postfach](mailbox.md)
     
-- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) wird verwendet, um öffentliche Verteilerlisten zu identifizieren. Das [ItemId](itemid.md) -Element wird verwendet, um private Verteilerlisten zu identifizieren. 
+- [Email Adressen (NonEmptyStringType)](emailaddress-nonemptystringtype.md) werden verwendet, um öffentliche Verteilerlisten zu identifizieren. Das [ItemID](itemid.md) -Element wird verwendet, um private Verteilerlisten zu identifizieren. 
     
 > [!NOTE]
-> Das Schema, das diese Elemente beschreibt, befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem MicrosoftExchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist. 
+> Das Schema, in dem diese Elemente beschrieben werden, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Serverrolle installiert ist. 
   
-## <a name="successful-expanddl-response-example"></a>Erfolgreiche der ExpandDL antwortbeispiel
+## <a name="successful-expanddl-response-example"></a>Erfolgreiches ExpandDL-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel für eine Antwort der ExpandDL zeigt eine Antwort auf die oben beschriebenen Anforderung. Die Erweiterung der Verteilerliste wird Folgendes beschrieben: 
+Das folgende Beispiel einer ExpandDL-Antwort zeigt eine Antwort auf die oben beschriebene Anforderung. Die Erweiterung der Verteilerliste beschreibt Folgendes: 
   
 - Die Anzahl der Mitglieder der Verteilerliste, die in der Antwort zurückgegeben werden.
     
 - Gibt an, ob die Antwort alle Mitglieder der Verteilerliste enthält.
     
-- Der Name des Postfachs an.
+- Der Name des Postfachs.
     
-- Die e-Mail-Adresse des Postfachs an.
+- Die e-Mail-Adresse des Postfachs.
     
 - Der Routingtyp für das Postfach.
     
 - Der Typ des Postfachs.
     
 > [!NOTE]
-> Der Name der Verteilerliste ist nicht in der Antwort enthalten; aus diesem Grund, Sie müssen den Namen aus der Anforderung mitverfolgen. 
+> Der Name der Verteilerliste ist nicht in der Antwort enthalten; aus diesem Grund müssen Sie den Namen aus der Anforderung weiter verfolgen. 
   
 ### <a name="code"></a>Code
 
@@ -155,12 +155,12 @@ Das folgende Beispiel für eine Antwort der ExpandDL zeigt eine Antwort auf die 
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" 
                          MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <ExpandDLResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <ExpandDLResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:ExpandDLResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -191,7 +191,7 @@ Das folgende Beispiel für eine Antwort der ExpandDL zeigt eine Antwort auf die 
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -213,17 +213,17 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
-- [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
+- [Routingtype (e-mailemailtype)](routingtype-emailaddresstype.md)
     
 - [MailboxType](mailboxtype.md)
     
-Wenn andere Optionen für die Antwortnachricht des Vorgangs der ExpandDL suchen möchten, verwenden Sie die Schemahierarchie. Starten Sie das [ExpandDLResponse](expanddlresponse.md) -Element. 
+Um andere Optionen für die Antwortnachricht des ExpandDL-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [ExpandDLResponse](expanddlresponse.md) -Element. 
   
-## <a name="expanddl-error-response"></a>Der ExpandDL Fehlerantwort
+## <a name="expanddl-error-response"></a>ExpandDL-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine Anforderung der ExpandDL.
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine ExpandDL-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -235,12 +235,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort auf eine Anforderung der ExpandDL
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" 
                          MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <ExpandDLResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <ExpandDLResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:ExpandDLResponseMessage ResponseClass="Error">
           <m:MessageText>No results are found.</m:MessageText>
@@ -253,7 +253,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort auf eine Anforderung der ExpandDL
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
@@ -271,7 +271,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Wenn andere Optionen für die Antwortnachricht des Vorgangs der ExpandDL suchen möchten, verwenden Sie die Schemahierarchie. Starten Sie das [ExpandDLResponse](expanddlresponse.md) -Element. 
+Um andere Optionen für die Antwortnachricht des ExpandDL-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [ExpandDLResponse](expanddlresponse.md) -Element. 
   
 ## <a name="see-also"></a>Siehe auch
 

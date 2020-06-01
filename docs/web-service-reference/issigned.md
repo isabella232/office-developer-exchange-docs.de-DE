@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: a4f90fe5-2834-4621-9aa3-b561f74d4674
-description: Das IsSigned-Element gibt an, ob eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende signiert werden müssen.
-ms.openlocfilehash: 33ff204260465490c701c6573ff4140967ac625a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IsSigned-Element gibt an, ob eingehende Nachrichten signiert werden müssen, damit die Bedingung oder Ausnahme zutrifft.
+ms.openlocfilehash: fe8551d01e6f9e813da8936f15b0b7ba1d4ce56c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830105"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455527"
 ---
 # <a name="issigned"></a>IsSigned
 
-Das **IsSigned** -Element gibt an, ob eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende signiert werden müssen. 
+Das **IsSigned** -Element gibt an, ob eingehende Nachrichten signiert werden müssen, damit die Bedingung oder Ausnahme zutrifft. 
   
 ```XML
 <IsSigned>true | false</IsSigned>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -49,19 +49,19 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass die Nachricht in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende signiert werden muss. Der Textwert **false** gibt an, dass die Nachricht nicht vorhanden ist, für die Bedingung oder Ausnahme anzuwendende signiert werden. 
+Der Textwert **true** gibt an, dass die Nachricht signiert werden muss, damit die Bedingung oder Ausnahme zutrifft. Der Textwert **false** gibt an, dass die Nachricht nicht für die Bedingung oder Ausnahme signiert werden muss, die angewendet werden soll. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

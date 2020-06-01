@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c9778823-f290-4827-ba19-5f391ed4f877
-description: Das Element MailboxScope bestimmt, ob eine Suche oder Fetch für eine Unterhaltung sollten und das primäre Postfach, Archivpostfach oder sowohl die primäre umfassen Postfach zu archivieren.
-ms.openlocfilehash: 89c9776079d686b114d6b744150f1c6df3711eab
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MailboxScope-Element gibt an, ob eine Suche oder ein Abruf für eine Unterhaltung entweder das primäre Postfach, das Archivpostfach oder sowohl das primäre als auch das Archivpostfach umfassen soll.
+ms.openlocfilehash: 92823c06d4fe186917c3cfb532eda821bd6a95a7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830293"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455373"
 ---
 # <a name="mailboxscope"></a>MailboxScope
 
-Das Element **MailboxScope** bestimmt, ob eine Suche oder Fetch für eine Unterhaltung sollten und das primäre Postfach, Archivpostfach oder sowohl die primäre umfassen Postfach zu archivieren. 
+Das **MailboxScope** -Element gibt an, ob eine Suche oder ein Abruf für eine Unterhaltung entweder das primäre Postfach, das Archivpostfach oder sowohl das primäre als auch das Archivpostfach umfassen soll. 
   
 ```XML
 <MailboxScope> PrimaryOnly | ArchiveOnly | All </MailboxScope>
@@ -39,25 +39,25 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[FindConversation](findconversation.md) | [GetConversationItems](getconversationitems.md) | [Unterhaltung (ConversationType)](conversation-conversationtype.md)
+[FindConversation](findconversation.md)  |  [GetConversationItems](getconversationitems.md)  |  Unter [Haltung (conversationtype)](conversation-conversationtype.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **MailboxScope** -Element entspricht der Bereich zum Suchen oder Abrufen von Elementen in einer Unterhaltung über entweder primären Postfächern, archivieren Postfächer oder Primär- und von archivpostfächern. Der Textwert **PrimaryOnly** gibt an, einen Bereich, der das primäre Postfach für einen Benutzer abzielt. Der Textwert **ArchiveOnly** gibt an, einen Bereich, der das Archivpostfach für einen Benutzer abzielt. Der Textwert **aller** gibt an, einen Bereich, der das primäre Postfach und Archivpostfach beruht. 
+Der Textwert des **MailboxScope** -Elements ist der Bereich zum Suchen oder erhalten von Elementen in einer Unterhaltung zwischen primären Postfächern, archivpostfächern oder sowohl primären als auch archivpostfächern. Der Textwert **Switch primaryonly** gibt einen Bereich an, der auf das primäre Postfach eines Benutzers abzielt. Der Textwert **Switch archiveonly** gibt einen Bereich an, der auf das Archivpostfach für einen Benutzer abzielt. Ein Textwert von **all** gibt einen Bereich an, der sowohl auf das primäre Postfach als auch auf das Archivpostfach zielt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |
    
 

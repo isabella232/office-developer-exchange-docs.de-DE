@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 0ba37d5b-3c19-4fdd-a196-b4723e6ba1b0
-description: Das AlternateMailboxCollectionSetting-Element enthält eine Auflistung von postfacheinstellungen für alternative.
-ms.openlocfilehash: 4abff2a36b3937a9a24e44104d18722b5e5b5ec5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AlternateMailboxCollectionSetting-Element enthält eine Auflistung von alternativen Postfacheinstellungen.
+ms.openlocfilehash: 549aa297ca44106e1539080c369d6e7060a0bd43
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757256"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456227"
 ---
 # <a name="alternatemailboxcollectionsetting-soap"></a>AlternateMailboxCollectionSetting (SOAP)
 
-Das **AlternateMailboxCollectionSetting** -Element enthält eine Auflistung von postfacheinstellungen für alternative. 
+Das **AlternateMailboxCollectionSetting** -Element enthält eine Auflistung von alternativen Postfacheinstellungen. 
   
 ```XML
 <AlternateMailboxCollectionSetting>
@@ -39,7 +39,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AlternateMailboxes (SOAP)](alternatemailboxes-soap.md) <br/> |Stellt eine Auflistung von alternativen Postfächern.  <br/> |
+|[AlternateMailboxes (SOAP)](alternatemailboxes-soap.md) <br/> |Stellt eine Auflistung von alternativen Postfächern dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -49,16 +49,16 @@ Keine.
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [SOAP-Webdienst-Verweis für die AutoErmittlung für Exchange](soap-autodiscover-web-service-reference-for-exchange.md)
+- [Referenz zum SOAP-AutoErmittlungwebdienst für Exchange](soap-autodiscover-web-service-reference-for-exchange.md)
 

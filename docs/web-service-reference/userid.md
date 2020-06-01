@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 244af9e0-bf3c-46b4-8bfa-9719a1ed3107
-description: UserId-Element identifiziert ein Stellvertreter oder ein Benutzer mit Zugriffsberechtigungen für Ordner.
-ms.openlocfilehash: 8e9867f5a8cdd62dd2dae55fbf527595ac14f46d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UserID-Element identifiziert einen Stellvertreter Benutzer oder einen Benutzer, der über Ordnerzugriffsberechtigungen verfügt.
+ms.openlocfilehash: 68075e335383835ddce9575d85ba5fa945ed305c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839445"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455541"
 ---
 # <a name="userid"></a>UserId
 
-**UserId** -Element identifiziert ein Stellvertreter oder ein Benutzer mit Zugriffsberechtigungen für Ordner. 
+Das **UserID** -Element identifiziert einen Stellvertreter Benutzer oder einen Benutzer, der über Ordnerzugriffsberechtigungen verfügt. 
   
 ```xml
 <UserId>
@@ -33,7 +33,7 @@ ms.locfileid: "19839445"
 </UserId>
 ```
 
- **UserIdType**
+ **Useridtype**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -46,34 +46,34 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SID](sid.md) <br/> |Stellt die Security Descriptor Definition Language (SDDL) Form die Sicherheits-ID (SID).  <br/> |
-|[PrimarySmtpAddress](primarysmtpaddress.md) <br/> |Stellt die primäre Simple Mail Transfer Protocol (SMTP)-Adresse eines Kontos für Stellvertretungszugriff verwendet werden soll.  <br/> |
-|[DisplayName (Zeichenfolge)](displayname-string.md) <br/> |Definiert den Anzeigenamen eines Ordners, Kontakt, Verteilerliste oder Stellvertretungsbenutzers.  <br/> |
-|[DistinguishedUser](distinguisheduser.md) <br/> |Anonyme und Benutzerkonten für Stellvertretungszugriff identifiziert.  <br/> |
-|[ExternalUserIdentity](externaluseridentity.md) <br/> |Identifiziert eine externe Stellvertretungsbenutzers oder ein externer Benutzer, der über Zugriffsberechtigungen für Ordner verfügt.  <br/> |
+|[SID](sid.md) <br/> |Stellt das SDDL-Formular (Security Descriptor Definition Language) der Sicherheits-ID (Security Identifier, SID) dar.  <br/> |
+|[PrimarySmtpAddress](primarysmtpaddress.md) <br/> |Stellt die primäre Simple Mail Transfer Protocol (SMTP) Adresse eines Kontos dar, das für den Stellvertretungszugriff verwendet werden soll.  <br/> |
+|[DisplayName (Zeichenfolge)](displayname-string.md) <br/> |Definiert den Anzeigenamen eines Ordners, Kontakts, einer Verteilerliste oder eines Stellvertreter Benutzers.  <br/> |
+|[DistinguishedUser](distinguisheduser.md) <br/> |Identifiziert anonyme und Standardbenutzerkonten für den Stellvertretungszugriff.  <br/> |
+|[ExternalUserIdentity](externaluseridentity.md) <br/> |Identifiziert einen externen stellvertretungsbenutzer oder einen externen Benutzer mit Ordnerzugriffsberechtigungen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Beauftragte Benutzer](delegateuser.md) <br/> |Identifiziert einen einzelnen Delegaten hinzufügen oder aktualisieren in einem Postfach.  <br/> |
+|[DelegateUser](delegateuser.md) <br/> |Bezeichnet einen einzelnen Delegaten, der in einem Postfach hinzugefügt oder aktualisiert werden soll.  <br/> |
 |[Berechtigung](permission.md) <br/> |Definiert den Zugriff, den ein Benutzer verfügt in einen Ordner.  <br/> |
 |[CalendarPermission](calendarpermission.md) <br/> |Definiert den, den ein Benutzer hat Zugriff auf einen Kalenderordner.  <br/> |
-|[Benutzer-IDs](userids.md) <br/> |Enthält ein Array von Benutzer als Stellvertreter zum Abrufen oder aus einem Prinzipal Postfach entfernen.  <br/> |
+|[UserIds](userids.md) <br/> |Enthält ein Array von Delegate-Benutzern, die aus dem Postfach eines Prinzipals abgerufen oder daraus entfernt werden sollen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -90,5 +90,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Hinzufügen von Stellvertretungen](http://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+[Hinzufügen von Stellvertretungen](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

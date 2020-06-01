@@ -1,39 +1,39 @@
 ---
-title: Aktualisieren einer Terminserie mithilfe der Exchange-Webdienste
+title: Aktualisieren einer Terminserie mithilfe von EWS
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 7e61bee9-4840-4773-a0a7-47b11e1fdf59
-description: Erfahren Sie, wie Termine in einer Terminserie ändern, indem Sie die EWS Managed API oder EWS in Exchange.
-ms.openlocfilehash: ecee78457d2e6f91483cf897cfb4976fbd83400c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Informationen zum Ändern von Terminen in einer Terminserie mithilfe der verwaltete EWS-API oder EWS in Exchange.
+ms.openlocfilehash: eb40dd60f28a6acf4395d3149744ce7321c34999
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757013"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455849"
 ---
-# <a name="update-a-recurring-series-by-using-ews"></a>Aktualisieren einer Terminserie mithilfe der Exchange-Webdienste
+# <a name="update-a-recurring-series-by-using-ews"></a>Aktualisieren einer Terminserie mithilfe von EWS
 
-Erfahren Sie, wie Termine in einer Terminserie ändern, indem Sie die EWS Managed API oder EWS in Exchange.
+Informationen zum Ändern von Terminen in einer Terminserie mithilfe der verwaltete EWS-API oder EWS in Exchange.
   
-Der EWS Managed API oder EWS können Sie eine Terminserie entweder [die gesamte Datenreihe aktualisieren](how-to-update-a-recurring-series-by-using-ews-in-exchange.md), oder durch ein einzelnes Vorkommen aktualisieren aktualisieren. In diesem Artikel wird wie ein einzelnes Vorkommen aktualisieren erläutert.
+Sie können die verwaltete EWS-API oder EWS verwenden, um eine wiederkehrende Datenreihe zu aktualisieren, indem Sie entweder [die gesamte Datenreihe aktualisieren](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)oder ein einzelnes Vorkommen aktualisieren. In diesem Artikel wird erläutert, wie ein einzelnes Vorkommen aktualisiert wird.
   
-Ändern eines Termins in einer Reihe ist [eine einzelne Instanz eines Termins ändern](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)sehr ähnlich. Verwenden Sie die gleichen Methoden und Vorgänge, aber Sie verwenden die Element-ID des Vorkommens, den Sie ändern möchten.
+Das Ändern eines einzelnen Termins in einer Datenreihe ähnelt dem [Ändern eines Termins für eine einzelne Instanz](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md). Sie verwenden dieselben Methoden und Vorgänge, verwenden jedoch die Element-ID des zu ändernden Vorkommens.
   
-Wenn Sie ein einzelnes Element in einer Reihe ändern, wird ein Array von geänderten Termine, der sich wiederholenden Masterseite für die Datenreihe zugeordnet, Vorkommen hinzugefügt. Sie können die [Appointment.ModifiedOccurrences](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.modifiedoccurrences%28v=exchg.80%29.aspx) EWS Managed API-Eigenschaft oder das [ModifiedOccurrences](http://msdn.microsoft.com/library/552932fc-b3b4-486e-8d73-32c0bb10bd68%28Office.15%29.aspx) EWS-Element verwenden, auf alle Termine in einer Serie zugreifen, die geändert wurden. 
+Wenn Sie ein einzelnes Vorkommen in einer Datenreihe ändern, wird dieses vorkommen einem Array von geänderten Terminen hinzugefügt, die dem wiederkehrenden Master für die Datenreihe zugeordnet sind. Sie können die verwaltete EWS-API-Eigenschaft von [Termin. ModifiedOccurrences](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.modifiedoccurrences%28v=exchg.80%29.aspx) oder das EWS-Element von [ModifiedOccurrences](https://msdn.microsoft.com/library/552932fc-b3b4-486e-8d73-32c0bb10bd68%28Office.15%29.aspx) verwenden, um auf alle Termine in einer Reihe zuzugreifen, die geändert wurden. 
   
-## <a name="modify-a-single-occurrence-in-a-series-by-using-the-ews-managed-api"></a>Ändern Sie ein einzelnes Element in einer Reihe, indem Sie die EWS Managed API
+## <a name="modify-a-single-occurrence-in-a-series-by-using-the-ews-managed-api"></a>Ändern eines einzelnen Vorkommens in einer Datenreihe mithilfe der verwaltete EWS-API
 
-So ändern Sie eine einzelne Instanz in einer Reihe Sie:
+Um eine einzelne Instanz in einer Datenreihe zu ändern, müssen Sie Folgendes tun:
   
-1. Binden Sie an das Vorkommen zu ändern, indem Sie entweder die [Appointment.BindToOccurrence](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.appointment.bindtooccurrence%28v=exchg.80%29.aspx) -Methode mit der Indexwert des Elements oder die [Appointment.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) -Methode mit der Vorkommen-ID. Sie erhalten diese ID aus der [ID-](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) Eigenschaft eines [Termins](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) -Objekts, das das Vorkommen entspricht, oder aus der [ItemId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.occurrenceinfo.itemid%28v=exchg.80%29.aspx) -Eigenschaft des [OccurrenceInfo](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.occurrenceinfo%28v=exchg.80%29.aspx) -Objekts, das das Vorkommen entspricht. 
+1. Binden Sie an das vorkommen, das Sie ändern möchten, indem Sie entweder die [Termin. BindToOccurrence](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.appointment.bindtooccurrence%28v=exchg.80%29.aspx) -Methode mit dem Indexwert des Elements oder die [Termin. Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) -Methode mit der ID des Ereignisses verwenden. Sie erhalten diese ID entweder aus der [ID](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) -Eigenschaft eines [Termin](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) Objekts, das dem Vorkommen entspricht, oder aus der [ItemID](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.occurrenceinfo.itemid%28v=exchg.80%29.aspx) -Eigenschaft des [OccurrenceInfo](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.occurrenceinfo%28v=exchg.80%29.aspx) -Objekts, das dem Vorkommen entspricht. 
     
-2. Aktualisieren Sie die Eigenschaften für das Vorkommen Appointment-Objekts.
+2. Aktualisieren der Eigenschaften des Termin Objekts des Ereignisses.
     
-3. Speichern Sie die Änderungen auf das Vorkommen eines Termins-Objekt mithilfe der [Appointment.Save](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) -Methode. 
+3. Speichern Sie die Änderungen am Terminobjekt des Ereignisses mithilfe der [Termin. Save](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) -Methode. 
     
-Im folgenden Beispiel einen Termin in einer Terminserie aktualisiert und stellt sicher, dass der geänderte Termin auf dem sich wiederholenden Master aktualisiert wird. In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben. Die `recurrenceMasterId` Parameter ist ein Bezeichner für das Vorkommen so ändern Sie die wiederkehrende Master zugeordnet sind. 
+Im folgenden Beispiel wird ein Termin in einer Terminserie aktualisiert und überprüft, ob der geänderte Termin im wiederkehrenden Master aktualisiert wird. In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben. Der `recurrenceMasterId` Parameter ist ein Bezeichner, der dem wiederkehrenden Master für das zu ändernde vorkommen zugeordnet ist. 
   
 ```cs
 public static ItemId ModifyARecurringSeries(ExchangeService service, ItemId recurrenceMasterId)
@@ -91,18 +91,18 @@ public static ItemId ModifyARecurringSeries(ExchangeService service, ItemId recu
 
 ```
 
-## <a name="modify-a-single-occurrence-in-a-series-by-using-ews"></a>Ändern Sie ein einzelnes Element in einer Reihe mithilfe der Exchange-Webdienste
+## <a name="modify-a-single-occurrence-in-a-series-by-using-ews"></a>Ändern eines einzelnen Vorkommens in einer Datenreihe mithilfe von EWS
 
-Ändern eine einzelne Instanz in einer Reihe ist im Wesentlichen das eine einzelne Instanz eines Termins ändern. Sie können das Vorkommen so ändern Sie mithilfe einer [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) oder ein [OccurrenceItemId](http://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) -Element angeben. 
+Das Ändern einer einzelnen Instanz in einer Datenreihe entspricht im Wesentlichen dem Ändern eines Termins für eine einzelne Instanz. Sie können das zu ändernde vorkommen angeben, indem Sie entweder ein [ItemID](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) -Element oder ein [OccurrenceItemId](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) -Element verwenden. 
   
-Das folgende Beispiel zeigt die XML-Anforderung, wenn Sie den Vorgang [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) verwenden, um das Auftreten eines Serientermins in einer Serie von Terminen zu aktualisieren. Die **ItemId** und **ChangeKey** werden zur besseren Lesbarkeit gekürzt. 
+Das folgende Beispiel zeigt den Anforderungs-XML-Code, wenn Sie den [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) -Vorgang verwenden, um ein Vorkommen in einer Terminserie mit Terminen zu aktualisieren. Die **ItemID** -und **ChangeKey** werden zur Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
   </soap:Header>
@@ -190,7 +190,7 @@ Das folgende Beispiel zeigt die XML-Anforderung, wenn Sie den Vorgang [UpdateIte
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **UpdateItem** Anforderung durch eine [UpdateItemResponse](http://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) Nachricht mit dem Wert [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **noError zurück**, der angibt, dass das Vorkommen erfolgreich aktualisiert wurde, und die [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) die aktualisierte Termin. 
+Der Server antwortet auf die **UpdateItem** -Anforderung mit einer [UpdateItemResponse](https://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Wert **noError**enthält, der angibt, dass das Vorkommen erfolgreich aktualisiert wurde, und die [ItemID](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) des aktualisierten Termins. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -201,12 +201,12 @@ Der Server antwortet auf die **UpdateItem** Anforderung durch eine [UpdateItemRe
     
 - [Serienmuster und EWS](recurrence-patterns-and-ews.md)
     
-- [Zugriff auf eine Terminserie mithilfe von EWS in Exchange](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)
+- [Zugreifen auf eine Terminserie mithilfe von EWS in Exchange](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Erstellen einer Terminserie mithilfe der EWS in Exchange](how-to-create-a-recurring-series-by-using-ews-in-exchange.md)
+- [Erstellen einer Terminserie mithilfe von EWS in Exchange](how-to-create-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Löschen der Termine in einer Terminserie mithilfe der EWS in Exchange](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md)
+- [Löschen von Terminen in einer Terminserie mithilfe von EWS in Exchange](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Aktualisieren einer Terminserie mithilfe der EWS in Exchange](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
+- [Aktualisieren einer Terminserie mithilfe von EWS in Exchange](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
     
 

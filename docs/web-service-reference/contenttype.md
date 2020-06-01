@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f91ff0df-0d8a-43ea-a188-d80f0e885f19
-description: ContentType-Element beschreibt die Multipurpose Internet Mail Extensions (MIME) gescannt.
-ms.openlocfilehash: 489df47343051623d5b6a98557f2bd434a5dad52
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ContentType-Element beschreibt den Multipurpose Internet Mail Extensions (MIME) Typ des Anlage Inhalts.
+ms.openlocfilehash: cb326bb761ea28e0e9f77501bf754c7c1f0318fb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757687"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455226"
 ---
 # <a name="contenttype"></a>ContentType
 
-**ContentType** -Element beschreibt die Multipurpose Internet Mail Extensions (MIME) gescannt. 
+Das **ContentType** -Element beschreibt den Multipurpose Internet Mail Extensions (MIME) Typ des Anlage Inhalts. 
   
 ```xml
 <ContentType/>
@@ -44,22 +44,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange-Element, das mit einem anderen Exchange-Element zugeordnet ist.  <br/> |
-|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei, die ein Element in der Exchange-Informationsspeicher zugeordnet ist.  <br/> |
+|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange-Element dar, das an ein anderes Exchange-Element angefügt ist.  <br/> |
+|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die an ein Element im Exchange-Informationsspeicher angefügt ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist ein Zeichenfolgenwert, der den Inhaltstyp der Anlage darstellt.
+Der Text-Wert ist ein String-Wert, der den Inhaltstyp der Anlage darstellt.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

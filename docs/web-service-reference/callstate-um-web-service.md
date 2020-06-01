@@ -1,5 +1,5 @@
 ---
-title: CallState (UM-Webdienst)
+title: CallState (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,21 +10,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 88670707-12f7-41c5-ac81-dda0c354a2cb
-description: Das CallState-Element enthält einen Wert, der den Status eines Aufrufs angibt.
-ms.openlocfilehash: e751c2e38783c6634a44d8e1b830a9224cdf300a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CallState-Element enthält einen Wert, der den Status eines Anrufs angibt.
+ms.openlocfilehash: 44614c460286ff49ebc2373263c1827c6be5cc08
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757547"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44454610"
 ---
-# <a name="callstate-um-web-service"></a>CallState (UM-Webdienst)
+# <a name="callstate-um-web-service"></a>CallState (um-Webdienst)
 
-Das **CallState** -Element enthält einen Wert, der den Status eines Aufrufs angibt. 
+Das **CallState** -Element enthält einen Wert, der den Status eines Anrufs angibt. 
   
-[GetCallInfoResponse (UM-Webdienst)](getcallinforesponse-um-web-service.md)
+[GetCallInfoResponse (um-Webdienst)](getcallinforesponse-um-web-service.md)
   
-[CallState (UM-Webdienst)](callstate-um-web-service.md)
+[CallState (um-Webdienst)](callstate-um-web-service.md)
   
 ```xml
 <CallState/>
@@ -47,42 +47,42 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetCallInfoResponse (UM-Webdienst)](getcallinforesponse-um-web-service.md) <br/> |Definiert eine Antwort auf eine [GetCallInfo-Vorgang (UM-Webdienst)](getcallinfo-operation-um-web-service.md).  <br/> |
+|[GetCallInfoResponse (um-Webdienst)](getcallinforesponse-um-web-service.md) <br/> |Definiert eine Antwort auf einen [GetCallInfo-Vorgang (um-Webdienst)](getcallinfo-operation-um-web-service.md).  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert ist erforderlich. Im Folgenden sind die möglichen Werte aufgeführt:
   
-- Im Leerlauf
+- Leerlauf
     
-- Connecting
+- Verbindung wird hergestellt
     
-- Benachrichtigt
+- Alarmiert
     
 - Verbunden
     
-- Verbindung getrennt
+- Disconnected
     
-- Eingehend
+- Eingehende
     
-- Übertragen von
+- Transfer
     
-- Weiterleitung
+- Weiterleitungs
     
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/message  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/message  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[GetCallInfo-Vorgang (UM-Webdienst)](getcallinfo-operation-um-web-service.md)
+[GetCallInfo-Vorgang (um-Webdienst)](getcallinfo-operation-um-web-service.md)
   
-[GetCallInfoResponse (UM-Webdienst)](getcallinforesponse-um-web-service.md)
+[GetCallInfoResponse (um-Webdienst)](getcallinforesponse-um-web-service.md)
 

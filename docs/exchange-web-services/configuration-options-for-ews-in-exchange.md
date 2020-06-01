@@ -5,61 +5,61 @@ ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: f6562639-9366-4a13-9fdb-2fa737833329
-description: Hier finden Sie Informationen zu Konfigurationseinstellungen, die Ihre EWS-Client zugreifen kann, und die konfigurierbaren Exchange-Einstellungen, die Ihre EWS-Client beeinflussen können.
-ms.openlocfilehash: d6c2866abf3dc16c77d84355afb9d86b0a9934c6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier finden Sie Informationen zu Konfigurationseinstellungen, auf die ihr EWS-Client zugreifen kann, und die konfigurierbaren Exchange-Einstellungen, die sich auf Ihren EWS-Client auswirken können.
+ms.openlocfilehash: 55f927b7b301bdfaa298bcd254b18a00cf1692d9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756824"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456157"
 ---
 # <a name="configuration-options-for-ews-in-exchange"></a>Konfigurationsoptionen für EWS in Exchange
 
-Hier finden Sie Informationen zu Konfigurationseinstellungen, die Ihre EWS-Client zugreifen kann, und die konfigurierbaren Exchange-Einstellungen, die Ihre EWS-Client beeinflussen können. 
+Hier finden Sie Informationen zu Konfigurationseinstellungen, auf die ihr EWS-Client zugreifen kann, und die konfigurierbaren Exchange-Einstellungen, die sich auf Ihren EWS-Client auswirken können. 
   
-Viele Konfigurationseinstellungen können beeinflusst die EWS-Clientanwendung. Diese Konfigurationseinstellungen sind entweder: 
+Viele Konfigurationseinstellungen können sich auf die Funktionen Ihrer EWS-Clientanwendung auswirken. Diese Konfigurationseinstellungen sind entweder: 
   
-- Schreibgeschützt oder vom Client lesen schreibgeschützt.
+- Schreibgeschützt oder Lese-/Schreibzugriff vom Client.
     
-- Zugreifen auf dem Exchange-Server, der Ihren EWS-Dienst gehostet wird.
+- Zugriff auf den Exchange-Server, auf dem der EWS-Dienst gehostet wird.
     
-Ein Client kann Einstellungen auf Exchange Online, Exchange Online als Teil von Office 365 und einem lokalen Exchange-Server zugreifen. Alle lokalen Exchange Server-Einstellungen stehen Exchange-Administratoren zur Verfügung. Allerdings sind nicht alle diese Einstellungen für Exchange Online-Mandantenadministratoren zur Verfügung. In diesem Artikel wird beschrieben, welche Konfiguration auf Clients, Exchange Server-Administratoren und Exchange Online-Mandanten Administratoren zugreifen können.
+Ein Client kann auf Einstellungen auf Exchange Online, Exchange Online im Rahmen von Office 365 und auf einem lokalen Exchange-Server zugreifen. Alle lokalen Exchange Server-Einstellungen stehen Exchange-Administratoren zur Verfügung. Allerdings stehen nicht alle diese Einstellungen für Exchange Online mandantenadministratoren zur Verfügung. In diesem Artikel wird beschrieben, auf welche Konfigurationseinstellungen Clients, Exchange Server Administratoren und Exchange Online mandantenadministratoren zugreifen können.
   
-## <a name="configuration-settings-that-clients-can-access"></a>Konfigurationseinstellungen, die Clients zugreifen können
+## <a name="configuration-settings-that-clients-can-access"></a>Konfigurationseinstellungen, auf die Clients zugreifen können
 
-Die Clientanwendung abgerufen und eine Reihe von Konfigurationsoptionen vom Exchange-Server. Konfigurationseinstellungen, die alle EWS-Anwendungen werden von den AutoErmittlungsdienst bereitgestellt. Andere Konfigurationseinstellungen werden für bestimmte Anwendungsszenarien verwendet. 
+Ihre Clientanwendung kann eine Reihe von Konfigurationsoptionen vom Exchange-Server abrufen und festlegen. Die Konfigurationseinstellungen, die alle EWS-Anwendungen benötigen, werden vom AutoErmittlungsdienst bereitgestellt. Andere Konfigurationseinstellungen werden für bestimmte Anwendungsszenarien verwendet. 
   
-**In Tabelle 1. Web-Service-Features, die Konfigurationsoptionen für EWS-Clients bereitstellen**
+**Tabelle 1. Webdienstfeatures, die Konfigurationsoptionen für EWS-Clients bereitstellen**
 
-|**Funktion**|**Beschreibung**|
+|**Feature**|**Beschreibung**|
 |:-----|:-----|
-|AutoErmittlungsdienst  <br/> |Der [AutoErmittlungsdienst](autodiscover-for-exchange.md) bietet Ihrer Client-Anwendungen mit Konfigurationsinformationen, damit Ihr Client automatisch selbst mit EWS kommunizieren kann.  <br/> |
-|Benutzerdefinierte Konfigurationsinformationen, die in einem Postfach gespeichert  <br/> |Sie können verschiedene Optionen zum [Speichern von benutzerdefinierten Konfigurationsinformationen](persistent-application-settings-in-ews-in-exchange.md) in Ihrem Postfach verwenden: Konfiguration Benutzerobjekte, benutzerdefinierte Elemente oder erweiterte Eigenschaften.  <br/> |
-|Delegieren der Verwaltung  <br/> | EWS bietet CRUD-Vorgänge für die Verwaltung delegieren des Zugriffs auf ein Postfach. Stellvertretungen handelt es sich Benutzer, die Berechtigung zum Postfach eines anderen Benutzers zugreifen auf erteilt wurden.<br/><br/>  Sie können die [Stellvertretung Verwaltungsvorgänge](http://msdn.microsoft.com/en-us/library/bb409286%28v=exchg.150%29.aspx#bk_delegate_management) Delegieren der Verwaltung mithilfe der Exchange-Webdienste oder, wenn Sie die EWS Managed API verwenden, können Sie die folgenden Methoden verwenden:<br/><br/>- [ExchangeService.AddDelegates](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.adddelegates%28v=exchg.80%29.aspx) <br/>- [ExchangeService.GetDelegates](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.getdelegates%28v=exchg.80%29.aspx) <br/>- [ExchangeService.UpdateDelegates](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.updatedelegates%28v=exchg.80%29.aspx) <br/>- [ExchangeService.RemoveDelegates](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.removedelegates%28v=exchg.80%29.aspx) <br/> |
-|Konfiguration von eDiscovery-Suche  <br/> |eDiscovery-Clientanwendungen können [Search-Konfigurationsinformationen](http://msdn.microsoft.com/library/8a54a6dc-110c-4972-a8bc-5ddb43c4b857%28Office.15%29.aspx) , die eine eDiscovery Search-Abfrage eine Liste der Postfächer durchsucht, abrufen und der Bezeichner des Postfachs Compliance-Archive.  <br/> |
-|Berechtigungen für Ordner  <br/> |Ordnerberechtigungen beschränkt, was ein Benutzer in einem öffentlichen Ordner möglich ist, und im Fall von Stellvertretungszugriff, welche Stellvertreter Möglichkeiten im Ordner eines anderen Benutzers. Die [Folder.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) -Methode oder der [GetFolder-Vorgang](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) können den Berechtigungssatz jedem Ordner, einschließlich öffentlichen Ordnern, freigegebene private Ordner oder Ordner für die Benutzer Stellvertretungszugriff haben Zugriff auf.  <br/> |
-|E-Mail-Infos, Unified Messaging oder -Schutzregeln  <br/> |Der [Vorgang GetServiceConfiguration](http://msdn.microsoft.com/library/070cbfe5-325a-4955-8e4a-8230ea0459a7%28Office.15%29.aspx) enthält nur-Lese- [Service-Konfigurationsinformationen](how-to-get-service-configuration-information-by-using-ews-in-exchange.md) für e-Mail-Infos, Unified Messaging und Regeln für den Schutz.  <br/> |
+|AutoErmittlungsdienst  <br/> |Der [AutoErmittlungsdienst](autodiscover-for-exchange.md) stellt ihren Clientanwendungen Konfigurationsinformationen zur Verfügung, damit der Client sich automatisch für die Kommunikation mit EWS konfigurieren kann.  <br/> |
+|In einem Postfach gespeicherte benutzerdefinierte Konfigurationsinformationen  <br/> |Sie können eine von mehreren Optionen verwenden, um [benutzerdefinierte Konfigurationsinformationen](persistent-application-settings-in-ews-in-exchange.md) in Ihrem Postfach zu speichern: Benutzer Konfigurationsobjekte, benutzerdefinierte Elemente oder erweiterte Eigenschaften.  <br/> |
+|Delegieren der Verwaltung  <br/> | EWS stellt CRUD-Vorgänge für die Verwaltung des Stellvertreter Zugriffs auf ein Postfach bereit. Stellvertretungen sind Benutzer, denen die Berechtigung für den Zugriff auf das Postfach eines anderen Benutzers erteilt wurde.<br/><br/>  Sie können die Delegate- [Verwaltungsvorgänge](https://msdn.microsoft.com/library/bb409286%28v=exchg.150%29.aspx#bk_delegate_management) verwenden, um die Stellvertretungs Verwaltung mithilfe von EWS zu aktivieren, oder wenn Sie die verwaltete EWS-API verwenden, können Sie die folgenden Methoden verwenden:<br/><br/>- [Datei "ExchangeService. adddelegates](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.adddelegates%28v=exchg.80%29.aspx) <br/>- [Datei "ExchangeService. getdelegates](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getdelegates%28v=exchg.80%29.aspx) <br/>- [Datei "ExchangeService. UpdateDelegates](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.updatedelegates%28v=exchg.80%29.aspx) <br/>- [Datei "ExchangeService. RemoveDelegates](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.removedelegates%28v=exchg.80%29.aspx) <br/> |
+|eDiscovery-Suchkonfiguration  <br/> |eDiscovery-Clientanwendungen können [Such Konfigurationsinformationen](https://msdn.microsoft.com/library/8a54a6dc-110c-4972-a8bc-5ddb43c4b857%28Office.15%29.aspx) abrufen, die eine eDiscovery-Suchabfrage, eine Liste mit durchsuchbaren Postfächern und den Bezeichner des in-Place-Postfachs enthält.  <br/> |
+|Ordnerberechtigungen  <br/> |Ordnerberechtigungen begrenzen, was ein Benutzer in einem öffentlichen Ordner ausführen kann, und im Fall von Stellvertretungs Zugriffen, was eine Stellvertretung im Ordner eines anderen Benutzers ausführen kann. Sie können entweder die [Folder. Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) -Methode oder den [GetFolder-Vorgang](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) verwenden, um auf den Berechtigungssätzen aller Ordner zuzugreifen, einschließlich öffentlicher Ordner, freigegebener privater Ordner oder Ordner, für die Benutzer über Stellvertretungszugriff verfügen.  <br/> |
+|E-Mail-Tipps, Unified Messaging oder Schutzregeln  <br/> |Der [GetServiceConfiguration-Vorgang](https://msdn.microsoft.com/library/070cbfe5-325a-4955-8e4a-8230ea0459a7%28Office.15%29.aspx) stellt schreibgeschützte [Dienstkonfigurationsinformationen](how-to-get-service-configuration-information-by-using-ews-in-exchange.md) für Mail-Tipps, Unified Messaging und Schutzregeln bereit.  <br/> |
    
-## <a name="configuration-settings-that-administrators-can-access-on-the-exchange-server"></a>Konfigurationseinstellungen, die Administratoren auf dem Exchange-Server zugreifen können
+## <a name="configuration-settings-that-administrators-can-access-on-the-exchange-server"></a>Konfigurationseinstellungen, auf die Administratoren auf dem Exchange-Server zugreifen können
 
-Die meisten Client Application Szenarien erfordern keine Änderungen an den Konfigurationseinstellungen für; Führen Sie jedoch einige Szenarien. Um eine Anwendung der mittleren Ebene, fungiert als Benutzer zu aktivieren, müssen Sie beispielsweise Exchange-Identitätswechsel auf dem Server festgelegt. Beachten Sie, dass einige Einstellungen nur auf Exchange-Servern am Standort zugegriffen werden können. Wenn Sie Exchange Online verwenden möchten, müssen die Clientanwendung entwickelt die Standardeinstellungen.
+Für die meisten Client Anwendungsszenarien sind keine Änderungen an den Serverkonfigurationseinstellungen erforderlich. Einige Szenarien werden jedoch durchführen. Wenn Sie beispielsweise eine Middle-Tier-Anwendung als Benutzer aktivieren möchten, müssen Sie den Exchange-Identitätswechsel auf dem Server festlegen. Beachten Sie, dass auf einige Einstellungen nur auf lokalen Exchange-Servern zugegriffen werden kann. Wenn Sie Exchange Online ausrichten, muss Ihre Clientanwendung möglicherweise mit den Standardeinstellungen arbeiten.
   
-**In Tabelle 2. Exchange Server-Konfigurationsoptionen, die Auswirkung auf EWS-clients**
+**Tabelle 2. Exchange Server-Konfigurationsoptionen, die EWS-Clients betreffen**
 
-|**Funktion**|**Von Exchange Online möglich?**|**Weitere Informationen finden Sie unter...**|
+|**Feature**|**Auf Exchange Online zugänglich?**|**Weitere Informationen finden Sie unter...**|
 |:-----|:-----|:-----|
-|Einstellungen für virtuelle Verzeichnisse (einschließlich Authentifizierung)  <br/> |Nein  <br/> |[Get-WebServicesVirtualDirectory](http://technet.microsoft.com/en-us/library/aa998810%28v=exchg.150%29.aspx) <br/> [Set-WebServicesVirtualDirectory](http://technet.microsoft.com/en-us/library/aa997233%28v=exchg.150%29.aspx) <br/> |
-|AutoErmittlung  <br/> |Nein  <br/> |[Get-AutodiscoverVirtualDirectory](http://technet.microsoft.com/en-us/library/aa996819%28v=exchg.150%29.aspx) <br/> [Set-AutodiscoverVirtualDirectory](http://technet.microsoft.com/en-us/library/aa998601%28v=exchg.150%29.aspx) <br/> |
-|Compliance  <br/> |Ja  <br/> |[Archivierung](http://technet.microsoft.com/en-us/library/dd979800%28v=exchg.150%29.aspx) <br/> [eDiscovery](http://technet.microsoft.com/en-us/library/dd298021%28v=exchg.150%29.aspx) <br/> [Anhalten der Aufbewahrungszeit](http://technet.microsoft.com/en-us/library/dd335168%28v=exchg.150%29.aspx) <br/> [Verhinderung von Datenverlust](http://technet.microsoft.com/en-us/library/jj150527%28v=exchg.150%29.aspx) <br/> |
-|Delegieren der Verwaltung  <br/> |Ja  <br/> |[Verwalten von Berechtigungen für Empfänger](http://technet.microsoft.com/en-us/library/jj919240%28v=exchg.150%29.aspx) <br/> |
-|Exchange-Identitätswechsel  <br/> |Ja  <br/> |[Konfigurieren des Exchange-Identitätswechsels](http://msdn.microsoft.com/en-us/library/bb204095%28EXCHG.140%29.aspx) <br/> |
-|E-Mail-Infos, Unified Messaging oder -Schutzregeln  <br/> |Ja  <br/> |[E-Mail-Infos](http://technet.microsoft.com/en-us/library/jj649091%28v=exchg.150%29.aspx) <br/> [Unified Messaging-Cmdlets](http://technet.microsoft.com/en-us/library/aa997665%28v=exchg.150%29.aspx) <br/> [Outlook-Schutzregeln](http://technet.microsoft.com/en-us/library/dd638178%28v=exchg.150%29.aspx) <br/> |
-|Drosselung  <br/> |Nein  <br/> |[Einschränkungseinstellungen für](ews-throttling-in-exchange.md) <br/> |
-|Filtern von Benutzer-agent  <br/> |Ja  <br/> |[Filtern von Benutzer-agent](how-to-control-access-to-ews-in-exchange.md) <br/> |
+|Einstellungen für das virtuelle Verzeichnis (einschließlich Authentifizierung)  <br/> |Nein  <br/> |[Get-WebServicesVirtualDirectory](https://technet.microsoft.com/library/aa998810%28v=exchg.150%29.aspx) <br/> [Set-WebServicesVirtualDirectory](https://technet.microsoft.com/library/aa997233%28v=exchg.150%29.aspx) <br/> |
+|AutoErmittlung  <br/> |Nein  <br/> |[Get-AutodiscoverVirtualDirectory](https://technet.microsoft.com/library/aa996819%28v=exchg.150%29.aspx) <br/> [Gruppe-AutodiscoverVirtualDirectory](https://technet.microsoft.com/library/aa998601%28v=exchg.150%29.aspx) <br/> |
+|Compliance  <br/> |Ja  <br/> |[Archivierung](https://technet.microsoft.com/library/dd979800%28v=exchg.150%29.aspx) <br/> [eDiscovery](https://technet.microsoft.com/library/dd298021%28v=exchg.150%29.aspx) <br/> [Anhalten der Aufbewahrungszeit](https://technet.microsoft.com/library/dd335168%28v=exchg.150%29.aspx) <br/> [Verhinderung von Datenverlust](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx) <br/> |
+|Delegieren der Verwaltung  <br/> |Ja  <br/> |[Manage Permissions for Recipients](https://technet.microsoft.com/library/jj919240%28v=exchg.150%29.aspx) <br/> |
+|Exchange-Identitätswechsel  <br/> |Ja  <br/> |[Konfigurieren des Exchange-Identitätswechsels](https://msdn.microsoft.com/library/bb204095%28EXCHG.140%29.aspx) <br/> |
+|E-Mail-Tipps, Unified Messaging oder Schutzregeln  <br/> |Ja  <br/> |[E-Mail-Info](https://technet.microsoft.com/library/jj649091%28v=exchg.150%29.aspx) <br/> [Unified Messaging-Cmdlets](https://technet.microsoft.com/library/aa997665%28v=exchg.150%29.aspx) <br/> [Outlook-Schutzregeln](https://technet.microsoft.com/library/dd638178%28v=exchg.150%29.aspx) <br/> |
+|Einschränkung  <br/> |Nein  <br/> |[Einschränkungseinstellungen](ews-throttling-in-exchange.md) <br/> |
+|Benutzer-Agent-Filterung  <br/> |Ja  <br/> |[Benutzer-Agent-Filterung](how-to-control-access-to-ews-in-exchange.md) <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Abrufen von Service-Konfigurationsinformationen mithilfe der EWS in Exchange](how-to-get-service-configuration-information-by-using-ews-in-exchange.md)
+- [Abrufen von Dienstkonfigurationsinformationen mithilfe von EWS in Exchange](how-to-get-service-configuration-information-by-using-ews-in-exchange.md)
 - [Übersicht über den EWS-Cliententwurf für Exchange](ews-client-design-overview-for-exchange.md)   
 - [Erste Schritte mit Webdiensten in Exchange](start-using-web-services-in-exchange.md)   
 - [Entwickeln von Webdienstclients für Exchange](develop-web-service-clients-for-exchange.md)

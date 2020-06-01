@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cd0eb239-6e7f-4a5a-b245-659f170550b7
-description: Das DayQuality-Element darstellt, die Qualität des Tages für, wie oft Qualität vorgeschlagenen Besprechung enthält.
-ms.openlocfilehash: 156d5bc58d481c9c812793da4722272ac76adaad
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DayQuality-Element stellt die Qualität des Tages für das enthalten von Qualität vorgeschlagene Besprechungszeiten.
+ms.openlocfilehash: 41cc8313dccb1a5172fefc167e6ed90a21109ec5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757885"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455114"
 ---
 # <a name="dayquality"></a>DayQuality
 
-Das **DayQuality** -Element darstellt, die Qualität des Tags, die Qualität vorgeschlagene Besprechungszeiten enthalten. 
+Das **DayQuality** -Element stellt die Qualität des Tages für das enthalten von Qualität vorgeschlagene Besprechungszeiten. 
   
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)  
 - [SuggestionsResponse](suggestionsresponse.md) 
@@ -51,26 +51,26 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SuggestionDayResult](suggestiondayresult.md) <br/> |Stellt einen einzelnen Tag, der Zeiten der vorgeschlagenen Besprechung enthält.  <br/><br/>Es folgt der 2.0 XPath-Ausdruck, der dieses Element:<br/><br/>`/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]` <br/> |
+|[SuggestionDayResult](suggestiondayresult.md) <br/> |Stellt einen einzelnen Tag dar, der vorgeschlagene Besprechungszeiten enthält.  <br/><br/>Im folgenden finden Sie den XPath 2,0-Ausdruck für dieses Element:<br/><br/>`/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Es folgen die möglichen Werte für dieses Element:
+Ein Textwert ist erforderlich. Im folgenden sind die möglichen Werte für dieses Element angegeben:
   
-- **Ausgezeichnet**   
-- **Eine gute**    
-- **Fair**    
-- **Schlechte**
+- **Hervorragend**   
+- **Gut**    
+- **Messe**    
+- **mangelhaft**
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -79,5 +79,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)  
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
-- [Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

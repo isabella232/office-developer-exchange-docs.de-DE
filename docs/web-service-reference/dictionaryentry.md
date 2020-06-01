@@ -1,5 +1,5 @@
 ---
-title: Der Wörterbucheintrag
+title: DictionaryEntry
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 531ea96a-d411-43e6-9fec-11fa2c959a30
-description: Das Element der Wörterbucheintrag gibt den Inhalt einer einzelnen Wörterbuch Eintrag-Eigenschaft.
-ms.openlocfilehash: 75d7dd1aa82a4cc6c363b9c787cfb15b4d15b656
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DictionaryEntry-Element gibt den Inhalt einer einzelnen Wörterbucheintrags Eigenschaft an.
+ms.openlocfilehash: 4c5d4c037f0c97b26d518d2f1386f71b31fa2d1f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757979"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455660"
 ---
-# <a name="dictionaryentry"></a>Der Wörterbucheintrag
+# <a name="dictionaryentry"></a>DictionaryEntry
 
-Das Element **der Wörterbucheintrag** gibt den Inhalt einer einzelnen Wörterbuch Eintrag-Eigenschaft. 
+Das **DictionaryEntry** -Element gibt den Inhalt einer einzelnen Wörterbucheintrags Eigenschaft an. 
   
 ```xml
 <DictionaryEntry>
@@ -43,28 +43,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DictionaryKey](dictionarykey.md) <br/> |Gibt den Wörterbuchschlüssel für eine Wörterbucheigenschaft.  <br/> |
-|[DictionaryValue](dictionaryvalue.md) <br/> |Gibt den Wörterbuchwert für eine Wörterbucheigenschaft.  <br/> |
+|[DictionaryKey](dictionarykey.md) <br/> |Gibt den Wörterbuchschlüssel für eine Dictionary-Eigenschaft an.  <br/> |
+|[Dictionaryvalue](dictionaryvalue.md) <br/> |Gibt den Wert des Wörterbuchs für eine Dictionary-Eigenschaft an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Wörterbuch](dictionary.md) <br/> |Definiert eine Reihe von Einträgen in Wörterbuch-Eigenschaft für eine Benutzer-Konfigurationsobjekt.  <br/> |
+|[Wörterbuch](dictionary.md) <br/> |Definiert eine Gruppe von Wörterbuch-Eigenschafts Einträgen für ein Benutzer Konfigurationsobjekt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -1,5 +1,5 @@
 ---
-title: Absender (EmailAddressType)
+title: Absender (e-mailemailtype)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 717eb6d0-d167-4b20-92e2-5d08b96186c4
-description: Das Absender-Element stellt die E-mail-Adresse für den Absender der Nachricht.
-ms.openlocfilehash: bac62412caf1044c13015f1d9d7ef63552747c1c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Sender-Element stellt die e-Mail-Adresse des Absenders der Nachricht dar.
+ms.openlocfilehash: 23a487f216a110796d40f3d3e86224c691acc004
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831320"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455324"
 ---
-# <a name="sender-emailaddresstype"></a>Absender (EmailAddressType)
+# <a name="sender-emailaddresstype"></a>Absender (e-mailemailtype)
 
-Das **Absender** -Element stellt die E-mail-Adresse für den Absender der Nachricht. 
+Das **Sender** -Element stellt die e-Mail-Adresse des Absenders der Nachricht dar. 
   
 ```XML
 <Sender>
@@ -47,32 +47,32 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Name (EmailAddressType)](name-emailaddresstype.md) <br/> |Stellt den Namen des Postfachbenutzers dar. Dieses Element ist optional.  <br/> |
-|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Definiert die primäre Simple Mail Transfer Protocol (SMTP)-Adresse eines Postfachbenutzers an. Dieses Element ist optional.  <br/> |
-|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Stellt das routing-Protokoll für den Empfänger an. Der Standardwert ist SMTP. Dieses Element ist optional.  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |Stellt den Typ des Postfachs an, das die e-Mail-Adresse dargestellt wird. Dieses Element ist optional.  <br/> |
+|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Definiert die primäre Simple Mail Transfer Protocol (SMTP) Adresse eines Postfachbenutzers. Dieses Element ist optional.  <br/> |
+|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Stellt das Routingprotokoll für den Empfänger dar. Der Standardwert ist SMTP. Dieses Element ist optional.  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |Stellt den Typ des Postfachs dar, der durch die e-Mail-Adresse dargestellt wird. Dieses Element ist optional.  <br/> |
 |[ItemId](itemid.md) <br/> |Definiert den Elementbezeichner eines Kontakts oder die private Verteilungsliste für Empfänger aus dem Kontaktordner eines Benutzers. Dieses Element ist optional.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |Gibt Kriterien für die Typen von Nachrichten suchen.  <br/> |
-|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Ein einzelnes Nachricht Ergebnis für ein [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) -Element enthält.  <br/> |
+|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |Gibt Kriterien für die Typen von Nachrichten an, die gesucht werden sollen.  <br/> |
+|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Enthält ein einzelnes Nachrichten Ergebnis für ein [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) -Element.  <br/> |
 |[MessageTrackingReport](messagetrackingreport.md) <br/> |Enthält eine Nachricht, die in einem [GetMessageTrackingReport-Vorgang](getmessagetrackingreport-operation.md)zurückgegeben wird.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

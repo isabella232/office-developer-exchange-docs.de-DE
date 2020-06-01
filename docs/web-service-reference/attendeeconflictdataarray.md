@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1d758547-28c5-4649-8334-427480c282d6
-description: Das AttendeeConflictDataArray-Element enthält ein Array von Conflict-Daten für die abgefragte Teilnehmer bei der Konflikte GetUserAvailability identifiziert.
-ms.openlocfilehash: 169312b8a3d37c014ba58fbfe094d786b134fc90
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AttendeeConflictDataArray-Element enthält ein Array von Konfliktdaten für abgefragte Teilnehmer, die im GetUserAvailability-Vorgang identifiziert wurden.
+ms.openlocfilehash: 770e8c00ca248ec3562180dc9d3626fd5b58f4d9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757401"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455800"
 ---
 # <a name="attendeeconflictdataarray"></a>AttendeeConflictDataArray
 
-Das **AttendeeConflictDataArray** -Element enthält ein Array von Conflict-Daten für die abgefragte Teilnehmer bei der [GetUserAvailability-Vorgang](getuseravailability-operation.md)identifiziert.
+Das **AttendeeConflictDataArray** -Element enthält ein Array von Konfliktdaten für abgefragte Teilnehmer, die im [GetUserAvailability-Vorgang](getuseravailability-operation.md)identifiziert wurden.
   
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -59,28 +59,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UnknownAttendeeConflictData](unknownattendeeconflictdata.md) <br/> |Stellt einen Teilnehmer nicht aufgelöst werden oder einen Teilnehmer, der nicht auf einen Benutzer, der Verteilerliste oder der Kontakt ist dar.  <br/> |
-|[IndividualAttendeeConflictData](individualattendeeconflictdata.md) <br/> |Enthält eines Benutzers oder Kontakts Frei/Gebucht-Status für ein Time-Fenster, das zur selben Zeit als die vorgeschlagenen auftritt, Besprechungszeit im [Vorschlag](suggestion.md) -Element identifiziert.  <br/> |
-|[TooBigGroupAttendeeConflictData](toobiggroupattendeeconflictdata.md) <br/> |Stellt einen Teilnehmer, die als Verteilerliste aufgelöst, die aufgrund ihrer Größe erweitern.  <br/> |
-|[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |Enthält Konfliktinformationen über die Anzahl von Benutzern zur Verfügung, die Anzahl der Benutzer, die Konflikte und die Anzahl der Benutzer, die nicht zu Ihrer Verfügbarkeit einsehen in einer Verteilerliste für eine vorgeschlagene Besprechungszeit verfügen aggregierte.  <br/> |
+|[UnknownAttendeeConflictData](unknownattendeeconflictdata.md) <br/> |Stellt einen nicht auflösbaren Teilnehmer oder Teilnehmer dar, der kein Benutzer, eine Verteilerliste oder ein Kontakt ist.  <br/> |
+|[IndividualAttendeeConflictData](individualattendeeconflictdata.md) <br/> |Enthält den Frei/Gebucht-Status eines Benutzers oder Kontakts für ein Zeitfenster, das gleichzeitig mit der im [Suggestion](suggestion.md) -Element identifizierten vorgeschlagenen Besprechungszeit auftritt.  <br/> |
+|[TooBigGroupAttendeeConflictData](toobiggroupattendeeconflictdata.md) <br/> |Stellt einen Teilnehmer dar, der als Verteilerliste aufgelöst wurde, der zu groß für die Erweiterung war.  <br/> |
+|[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |Enthält aggregierte Konfliktinformationen über die Anzahl der verfügbaren Benutzer, die Anzahl der Benutzer mit Konflikten sowie die Anzahl der Benutzer, die in einer Verteilerliste keine Verfügbarkeitsinformationen für eine vorgeschlagene Besprechungszeit haben.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Vorschlag](suggestion.md) <br/> |Stellt ein einzelnes meeting Zeit Vorschlag.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]` <br/> |
+|[Vorschlag](suggestion.md) <br/> |Stellt einen einzelnen Besprechungszeit Vorschlag dar.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Position jedes Elements in der **AttendeeConflictDataArray** entspricht der Position der abgefragten Teilnehmer im [MailboxDataArray](mailboxdataarray.md) -Element. Jeden abgefragte Teilnehmer muss eines der untergeordneten Elemente **AttendeeConflictDataArray** entsprechen. Diese Elemente darstellen einen einzelnen Konflikt mit der vorgeschlagenen Besprechungszeit im [Vorschlag](suggestion.md) -Element identifiziert. 
+Die Position der einzelnen Elemente in der **AttendeeConflictDataArray** entspricht der Position der abgefragten Teilnehmer im [MailboxDataArray](mailboxdataarray.md) -Element. Jeder abgefragte Teilnehmer muss einem der untergeordneten **AttendeeConflictDataArray** -Elemente entsprechen. Diese Elemente stellen einen einzelnen Konflikt mit der vorgeschlagenen Besprechungszeit dar, die im [Suggestion](suggestion.md) -Element angegeben ist. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -89,5 +89,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md) 
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
-- [Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

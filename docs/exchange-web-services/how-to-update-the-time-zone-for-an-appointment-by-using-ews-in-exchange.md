@@ -1,35 +1,35 @@
 ---
-title: Aktualisieren Sie die Zeitzone für einen Termin im Exchange mithilfe der Exchange-Webdienste
+title: Aktualisieren der Zeitzone für einen Termin mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: dc2240c1-5500-4d5c-97d5-09d63ffd30d5
-description: Hier erfahren Sie, wie die Zeitzone für einen Termin oder eine Besprechung zu aktualisieren, und verwenden die EWS Managed API oder EWS in Exchange.
-ms.openlocfilehash: 535eb9f546d9a4353408579f3a24750f32237699
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Erfahren Sie, wie Sie die Zeitzone für einen vorhandenen Termin oder eine Besprechung mithilfe der verwaltete EWS-API oder EWS in Exchange aktualisieren.
+ms.openlocfilehash: 064f99997b7c3d1197cb8d1ee6a24f8fb874f706
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757010"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455842"
 ---
-# <a name="update-the-time-zone-for-an-appointment-by-using-ews-in-exchange"></a>Aktualisieren Sie die Zeitzone für einen Termin im Exchange mithilfe der Exchange-Webdienste
+# <a name="update-the-time-zone-for-an-appointment-by-using-ews-in-exchange"></a>Aktualisieren der Zeitzone für einen Termin mithilfe von EWS in Exchange
 
-Hier erfahren Sie, wie die Zeitzone für einen Termin oder eine Besprechung zu aktualisieren, und verwenden die EWS Managed API oder EWS in Exchange.
+Erfahren Sie, wie Sie die Zeitzone für einen vorhandenen Termin oder eine Besprechung mithilfe der verwaltete EWS-API oder EWS in Exchange aktualisieren.
   
-Beim Erstellen eines Termins oder einer Besprechung auf einem Exchange-Kalender wird die Zeitzone verwendet, um die Anfangs- und Endzeiten angeben als Zeitzone für den Termin Erstellung gespeichert. Sie können diese Zeitzone mithilfe der EWS Managed API oder EWS ändern. Ändern der Zeitzone für einen Termin hat jedoch anderer Effekte auf dem Zeitpunkt der Start- und Endzeit des Termins.
+Wenn ein Termin oder eine Besprechung in einem Exchange-Kalender erstellt wird, wird die Zeitzone, die zum Angeben der Start-und Endzeit verwendet wird, als Erstellungs Zeitzone für den Termin gespeichert. Sie können diese Zeitzone mithilfe der verwaltete EWS-API oder EWS ändern. Das Ändern der Zeitzone eines Termins hat jedoch andere Auswirkungen auf die Anfangs-und Endzeit des Termins.
   
-Zeitwerte werden auf dem Exchange-Server als koordinieren Weltzeit (UTC) gespeichert. In diesem Fall 1:00 Uhr (13:00) Eastern Standard Time-Zone starten ein Termins festgelegt ist (UTC-05:00), dass der Wert als 6:00 Uhr (18:00) gespeichert wird, auf dem Server, vorausgesetzt, dass die Zeitzone in der Phase der Standardzeit ist. Wenn eines Termins in anderen Zeitzonen angezeigt wird, wird die entsprechende Anzahl von Stunden hinzugefügt oder entfernt der UTC-Wert, der die Zeitzone-spezifischen Zeit zu bestimmen. Angenommen, ein Termin eine Startzeit 1:00 Uhr weist Eastern (18:00 Uhr UTC), und von einem Client in der Pacific Standard Time-Zone angezeigt wird (UTC-08:00), das Zeitzone spezifische Startzeit für der Client 10:00 Uhr (18:00-08:00) wäre.
+Zeitwerte werden auf dem Exchange-Server in Coordinate Universal Time (UTC) gespeichert. Wenn also ein Termin für den Start um 1:00 Uhr (13:00) in der Eastern Time-Zone (UTC-05:00) festgelegt ist, wird dieser Wert auf dem Server als 6:00 pm (18:00) gespeichert, vorausgesetzt, die Zeitzone befindet sich in der Standardzeit Phase. Wenn dieser Termin in anderen Zeitzonen angezeigt wird, wird die entsprechende Anzahl von Stunden vom UTC-Wert hinzugefügt oder subtrahiert, um die Zeitzonenspezifische Zeit zu bestimmen. Wenn beispielsweise ein Termin um 1:00 Uhr Eastern (6:00 Uhr UTC) beginnt und von einem Client in der Pacific Time Zone (UTC-08:00) angezeigt wird, lautet die Zeitzonenspezifische Startzeit für diesen Client 10:00 am (18:00-08:00).
   
-Wenn Sie die Zeitzone des Termins aktualisieren, ohne die Start- und Endzeit Zeit aktualisieren, aktualisiert der Server die UTC-Werte gespeichert werden, auf dem Server, um die Start- und Endzeit Zeit als die gleichen Zeitzone-spezifischen Zeiten beizubehalten. Angenommen Sie, den 1:00 Uhr Eastern Termin. Die Zeit wird als 18:00 Uhr UTC auf dem Server gespeichert. Wenn die Zeitzone des Termins in der Pacific Standard Time-Zone geändert wird, verschiebt der Server die Startzeit für 1:00 Uhr Pacific (21:00 Uhr UTC).
+Wenn Sie die Zeitzone des Termins aktualisieren, ohne die Anfangs-und Endzeit zu aktualisieren, aktualisiert der Server die auf dem Server gespeicherten UTC-Werte, um die Start-und Endzeit als Zeitzonenspezifische Zeiten beizubehalten. Nehmen Sie beispielsweise den 1:00 PM Eastern-Termin in Frage. Die Uhrzeit wird auf dem Server als 18:00 UTC gespeichert. Wenn die Zeitzone des Termins in die Zeitzone Pacific Time geändert wird, verschiebt der Server die Startzeit auf 1:00 Uhr Pacific (21:00 UTC).
   
-Sie können dieses Verhalten ändern, indem Sie explizit festlegen der Start- und Endzeiten.
+Sie können dieses Verhalten ändern, indem Sie die Anfangs-und Endzeiten explizit festlegen.
   
-## <a name="updating-the-time-zone-on-an-existing-appointment-by-using-the-ews-managed-api"></a>Aktualisieren die Zeitzone auf einen vorhandenen Termin mithilfe der EWS Managed API
+## <a name="updating-the-time-zone-on-an-existing-appointment-by-using-the-ews-managed-api"></a>Aktualisieren der Zeitzone eines vorhandenen Termins mithilfe der verwaltete EWS-API
 
-Im folgenden Beispiel wird die EWS Managed API verwendet, so aktualisieren Sie die Zeitzone auf einen vorhandenen Termin in der zentralen Zeitzone durch Aktualisieren der **Appointment.StartTimeZone** und **Appointment.EndTimeZone** -Eigenschaften. Wenn der Parameter _ShiftAppointnment_ auf **true**festgelegt ist, festgelegt der Code nicht explizit die Anfangs- und Endzeiten für den Termin. In diesem Fall werden der Server die Anfangs- und Endzeiten zum aufbewahren zur gleichen Zeit relativ zur Zeitzone in die neue Zeitzone verschoben. Wenn Festlegung auf **"false"**, mit dem Code die Anfangs- und Endzeiten explizit um behalten den Termin zur selben Zeit in UTC konvertiert. 
+Im folgenden Beispiel wird der verwaltete EWS-API verwendet, um die Zeitzone eines vorhandenen Termins in die zentrale Zeitzone zu aktualisieren, indem die Eigenschaften **Termin. StartTimeZone** und **Termin. EndTimeZone** aktualisiert werden. Wenn der Parameter _shiftAppointnment_ auf **true**festgelegt ist, wird der Code nicht explizit die Start-und Endzeit für den Termin festgelegt. In diesem Fall verschiebt der Server die Start-und Endzeiten, um Sie in der neuen Zeitzone gleichzeitig zu den relativen Zeitpunkten zu halten. Bei Festlegung auf " **false**" wandelt der Code die Anfangs-und Endzeiten explizit um, damit der Termin in der UTC gleichzeitig bleibt. 
 
-In diesem Beispiel wird davon ausgegangen, dass das **ExchangeService**-Objekt mit gültigen Werten in den [Credentials](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx)- und [Url](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx)-Eigenschaften initialisiert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass das **ExchangeService**-Objekt mit gültigen Werten in den [Credentials](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx)- und [Url](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx)-Eigenschaften initialisiert wurde. 
   
 ```cs
 static void UpdateAppointmentTimeZone(ExchangeService service, ItemId apptId, bool shiftAppointment)
@@ -112,7 +112,7 @@ static void UpdateAppointmentTimeZone(ExchangeService service, ItemId apptId, bo
 }
 ```
 
-Wenn im Beispiel verwendet wird, um einen Termin zu aktualisieren, die 1:00 Uhr beginnt Eastern und 2:00 Uhr endet Eastern, mit dem Parameter _ShiftAppointment_ auf True festgelegt, und die [ExchangeService.TimeZone](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.timezone%28v=exchg.80%29.aspx) -Eigenschaft legen Sie auf der Eastern Time-Zone, die Ausgabe sieht wie folgt. 
+Wenn das Beispiel zum Aktualisieren eines Termins verwendet wird, der um 1:00 Uhr Ost beginnt und um 2:00 Uhr Eastern endet, wobei der _shiftAppointment_ -Parameter auf true festgelegt ist und die [Datei "ExchangeService. TimeZone](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.timezone%28v=exchg.80%29.aspx) -Eigenschaft auf die Eastern Time-Zone festgelegt ist, sieht die Ausgabe wie folgt aus. 
   
 ```MS-DOS
 Before update:
@@ -129,7 +129,7 @@ After update:
   End time zone: (UTC-06:00) Central Time (US &amp; Canada)
 ```
 
-Wenn im Beispiel verwendet wird, derselben Terminserie mit dem _ShiftAppointment_ -Parameter auf False festgelegt und mit der **TimeZone** -Eigenschaft legen Sie erneut auf die Eastern Standard Time-Zone aktualisieren, sieht die Ausgabe ein wenig anders aus. 
+Wenn das Beispiel verwendet wird, um den gleichen Termin mit dem _shiftAppointment_ -Parameter auf "false" zu aktualisieren, und wenn die **TimeZone** -Eigenschaft erneut auf die Eastern Time-Zone festgelegt wurde, sieht die Ausgabe etwas anders aus. 
   
 ```MS-DOS
 Before update:
@@ -146,18 +146,18 @@ After update:
   End time zone: (UTC-06:00) Central Time (US &amp; Canada)
 ```
 
-Beachten Sie, dass die Anfangs- und Endzeiten nicht geändert haben. Dies ist, da die Zeiten in der Eastern Zeit interpretiert werden zone (, da die Eigenschaft **"TimeZone"** Eastern Standard Time-Zone festgelegt ist), und die Zeitwerte wurden aktualisiert, um zu verhindern, dass den Termin verschoben. 
+Beachten Sie, dass sich die Anfangs-und Endzeiten nicht geändert haben. Dies liegt daran, dass die Zeiten in der östlichen Zeitzone interpretiert werden (da die **TimeZone** -Eigenschaft auf die Eastern Time-Zone festgelegt ist), und die Zeitwerte wurden aktualisiert, um zu verhindern, dass der Termin verschoben wird. 
   
-## <a name="updating-the-time-zone-on-an-existing-appointment-by-using-ews"></a>Aktualisieren die Zeitzone auf einen vorhandenen Termin mithilfe der Exchange-Webdienste
+## <a name="updating-the-time-zone-on-an-existing-appointment-by-using-ews"></a>Aktualisieren der Zeitzone eines vorhandenen Termins mithilfe von EWS
 
-Das folgende Beispiel EWS- [Vorgang UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) Anforderung aktualisiert die Zeitzone für einen Termin. In diesem Beispiel wird aktualisiert nur die Elemente [StartTimeZone](http://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx) und [EndTimeZone](http://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx) , sodass der Server die Anfangs- und Endzeiten des Termins aufrechtzuerhalten gleichzeitig Time-Zone-Relative in die neue Zeitzone verschoben werden. Der Wert des Elements **ItemId** wird zur besseren Lesbarkeit gekürzt. 
+Im folgenden Beispiel für die EWS- [UpdateItem-Vorgangs](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) Anforderung wird die Zeitzone eines Termins aktualisiert. In diesem Beispiel werden nur die [StartTimeZone](https://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx) -und [EndTimeZone](https://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx) -Elemente aktualisiert, sodass der Server die Start-und Endzeit des Termins verschiebt, um ihn zur gleichen Zeitzone-relativen Zeit in der neuen Zeitzone zu halten. Der Wert des **ItemID** -Elements wird zur Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
   </soap:Header>
@@ -187,14 +187,14 @@ Das folgende Beispiel EWS- [Vorgang UpdateItem](http://msdn.microsoft.com/librar
 </soap:Envelope>
 ```
 
-Die folgende Beispiel für eine Anforderung aktualisiert die Zeitzone des Termins, und auch die Anfangs- und Endzeiten aktualisiert, indem die **Start** und **End** Elemente explizit festlegen. Der Wert des Elements **ItemId** wird zur besseren Lesbarkeit gekürzt. 
+Im folgenden Beispiel wird die Zeitzone des Termins aktualisiert und auch die Start-und Endzeit durch explizites Festlegen der **Start** -und **End** -Elemente aktualisiert. Der Wert des **ItemID** -Elements wird zur Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
   </soap:Header>
@@ -239,7 +239,7 @@ Die folgende Beispiel für eine Anforderung aktualisiert die Zeitzone des Termin
 ## <a name="see-also"></a>Siehe auch
 
 - [Zeitzonen und EWS in Exchange](time-zones-and-ews-in-exchange.md)   
-- [Erstellen von Terminen in einer bestimmten Zeitzone mithilfe der EWS in Exchange](how-to-create-appointments-in-a-specific-time-zone-by-using-ews-in-exchange.md)   
+- [Erstellen von Terminen in einer bestimmten Zeitzone mithilfe von EWS in Exchange](how-to-create-appointments-in-a-specific-time-zone-by-using-ews-in-exchange.md)   
 - [Aktualisieren von Terminen und Besprechungen mithilfe von EWS in Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
     
 

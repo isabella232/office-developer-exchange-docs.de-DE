@@ -5,30 +5,30 @@ ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 78ae179b-ae4f-4f64-911a-e0c70e0fa314
-description: Informationen Sie zu Archivierung in EWS in Exchange.
-ms.openlocfilehash: bc282a7774bb74e57550bc663512987839324b83
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Erfahren Sie mehr über die Archivierung in EWS in Exchange.
+ms.openlocfilehash: b433b9f88905ee255720e8b341d560fa0e464975
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756813"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456213"
 ---
 # <a name="archiving-in-ews-in-exchange"></a>Archivierung in EWS in Exchange
 
-Informationen Sie zu Archivierung in EWS in Exchange.
+Erfahren Sie mehr über die Archivierung in EWS in Exchange.
   
-Archivpostfächer sind sekundäre Postfächer, die einem Benutzer zugeordnet sind. Archivpostfächer sind in der Regel zum Verwalten von Speichergrenzen für e-Mail verwendet. Beispielsweise könnte der älteren e-Mail-Elemente in regelmäßigen Abständen aus dem Posteingang in das Archivpostfach verschoben werden. 
+Archivpostfächer sind sekundäre Postfächer, die einem Benutzer zugeordnet sind. Archivpostfächer werden in der Regel zum Verwalten von e-Mail-Speichergrenzwerten verwendet. Beispielsweise können ältere e-Mail-Elemente in regelmäßigen Abständen aus dem Posteingang in das Archivpostfach verschoben werden. 
   
-Exchange Online, Exchange Online als Teil von Office 365 und Exchange Server 2013 eine Einführung in zwei neue Exchange-Webdienste (EWS)-Vorgänge, die Sie verwenden können, um eine Reihe von e-Mail-Elementen aus einem primären Postfach archivieren. Archivierung von Elementen im Posteingang auf diese Weise wird die Hierarchie der Ordner Elemente beibehalten. Darüber hinaus können archivpostfächer jetzt gespeichert werden, entweder lokal auf einem Client oder Remote, in eine Möglichkeit, die mit einem Ordnerpfad auf den Inhalt des Archivs zeigen hauptsächlich an einen Benutzer nicht transparent ist.
+Exchange Online, Exchange Online im Rahmen von Office 365 und Exchange Server 2013 Einführung zweier neuer Exchange-Webdienste Vorgänge, die Sie zum Archivieren einer Gruppe von e-Mail-Elementen aus einem primären Postfach verwenden können. Wenn Sie Posteingangs Elemente auf diese Weise archivieren, wird die Ordnerhierarchie der Elemente beibehalten. Darüber hinaus können Archivpostfächer nun entweder lokal auf einem Client oder Remote in einer für einen Benutzer undurchsichtigen Weise gespeichert werden, indem ein Ordnerpfad verwendet wird, um auf den Inhalt des Archivs zu deuten.
   
-## <a name="archiving-operations-in-ews"></a>Archivierung in Exchange-Webdienste
+## <a name="archiving-operations-in-ews"></a>Archivierungsvorgänge in EWS
 
-Die folgende Tabelle enthält die Archivierung Vorgänge, die in Exchange 2013 eingeführt wurden. 
+In der folgenden Tabelle sind die in Exchange 2013 eingeführten Archivierungsvorgänge aufgeführt. 
   
 |**Name des Vorgangs**|**Beschreibung**|
 |:-----|:-----|
-|[ArchiveItem](http://msdn.microsoft.com/library/1af216b3-13ea-498e-b4fc-23513755d731%28Office.15%29.aspx) <br/> |Verschiebt ein Element aus dem Hauptpostfach in das Archivpostfach.  <br/> |
-|[CreateFolderPath](http://msdn.microsoft.com/library/5a10aa5e-3f25-4ec3-a0b9-284c30918a1f%28Office.15%29.aspx) <br/> |Erstellt einen URI, der auf den Speicherort für das Archivpostfach verweist.  <br/> |
+|[ArchiveItem](https://msdn.microsoft.com/library/1af216b3-13ea-498e-b4fc-23513755d731%28Office.15%29.aspx) <br/> |Verschiebt ein Element aus dem primären Postfach in das Archivpostfach.  <br/> |
+|[CreateFolderPath](https://msdn.microsoft.com/library/5a10aa5e-3f25-4ec3-a0b9-284c30918a1f%28Office.15%29.aspx) <br/> |Erstellt einen URI, der auf den Speicherort für das Archivpostfach zeigt.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

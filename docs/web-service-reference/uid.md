@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: b1c43c1e-b773-4dd1-9a32-32b3b8efeaf9
-description: Das UID-Element wird ein Kalenderelement eindeutig identifiziert.
-ms.openlocfilehash: b2b371c885e5656a9e2b1b5afd28f65fa7e195de
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UID-Element identifiziert ein Kalenderelement eindeutig.
+ms.openlocfilehash: c2eb8d9cbb238132bdce2eedf7a41f90fcd20460
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839276"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455912"
 ---
 # <a name="uid"></a>UID
 
-Das **UID** -Element wird ein Kalenderelement eindeutig identifiziert. 
+Das **UID** -Element identifiziert ein Kalenderelement eindeutig. 
   
 ```xml
 <UID>   </UID>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -46,19 +46,19 @@ Keine.
 |:-----|:-----|
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechungsnachricht dar.  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanfrage an.  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Antwort auf Besprechungsanfrage.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Einen Besprechungsabsage darstellt.  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanfrage dar.  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort dar.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Stellt einen Besprechungs Abbruch dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt einen eindeutigen Bezeichner.
+Der Wert Text stellt einen eindeutigen Bezeichner dar.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

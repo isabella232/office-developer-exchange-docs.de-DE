@@ -1,42 +1,42 @@
 ---
-title: Fehlerbehandlung Synchronisierung-bezogene in EWS in Exchange
+title: Umgang mit Fehlern im Zusammenhang mit der Synchronisierung in EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a0807b90-645a-4ea6-aee1-96828df14be0
-description: Erfahren Sie, wie Synchronisierung-bezogene Behandlung von Fehlern in Anwendungen, die Sie entwickeln, indem Sie die EWS Managed API oder EWS in Exchange.
-ms.openlocfilehash: 6de27d585e467d900941f34b2210877d17205502
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Erfahren Sie, wie synchronisierungsbezogene Fehler in Anwendungen behandelt werden, die Sie mit dem verwaltete EWS-API oder EWS in Exchange entwickeln.
+ms.openlocfilehash: f62937ec444d64b0b358581371f1260f565215b3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756836"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455940"
 ---
-# <a name="handling-synchronization-related-errors-in-ews-in-exchange"></a>Fehlerbehandlung Synchronisierung-bezogene in EWS in Exchange
+# <a name="handling-synchronization-related-errors-in-ews-in-exchange"></a>Umgang mit Fehlern im Zusammenhang mit der Synchronisierung in EWS in Exchange
 
-Erfahren Sie, wie Synchronisierung-bezogene Behandlung von Fehlern in Anwendungen, die Sie entwickeln, indem Sie die EWS Managed API oder EWS in Exchange.
+Erfahren Sie, wie synchronisierungsbezogene Fehler in Anwendungen behandelt werden, die Sie mit dem verwaltete EWS-API oder EWS in Exchange entwickeln.
   
-Wenn Ihre Anwendung Elemente und Ordner synchronisiert wird, müssen Sie möglicherweise Synchronisierung-bezogene Fehler zu behandeln. Sie können diese Fehler zur Laufzeit oder während Sie die EWS-Anwendung entwickeln behandeln. Die meisten dieser Fehler werden durch die [ResponseCodeType](http://msdn.microsoft.com/en-us/library/exchangewebservices.responsecodetype%28v=exchg.80%29.aspx) -Aufzählung in die EWS Managed API und das [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) -Element in der Exchange-Webdienste (EWS) definiert. 
+Wenn Ihre Anwendung Elemente und Ordner synchronisiert, müssen Sie möglicherweise synchronisierungsbezogene Fehler behandeln. Sie können diese Fehler zur Laufzeit oder während der Entwicklung ihrer EWS-Anwendung behandeln. Die meisten dieser Fehler werden durch die [ResponseCodeType](https://msdn.microsoft.com/library/exchangewebservices.responsecodetype%28v=exchg.80%29.aspx) -Aufzählung in der verwaltete EWS-API und das [Response Code](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) -Element in Exchange-Webdienste definiert. 
   
-**In Tabelle 1. Sync-bezogene Fehler und deren Behandlung**
+**Tabelle 1. Synchronisierungsbezogene Fehler und deren Handhabung**
 
-|**Fehler**|**Tritt auf, wenn Sie versuchen...**|**Behandeln von...**|
+|**Error**|**Tritt auf, wenn Sie versuchen,...**|**Behandeln von...**|
 |:-----|:-----|:-----|
-|ErrorInvalidSyncStateData  <br/> | Synchronisieren Sie Elemente oder Ordner mithilfe von eine ungültige Sync-Statuswert.  <br/>  Schließen Sie einen Stammordner in Ihrer anfänglichen SyncFolderHierarchy Anforderung aus, wenn Ihre nachfolgende Anforderung einen Stammordner.  <br/>  Verwenden Sie unterschiedliche Stammordner in nachfolgenden Anforderungen.  <br/> | Sicherstellen, dass der Wert der Sync-Zustand, den Sie Übereinstimmungen Senden der Statuswert Sync während einer vorherigen Synchronisierung zurückgegeben.  <br/>  Sicherstellen, dass Sie den Synchronisierungsstatus beim Synchronisieren von Elementen, nicht für die Ordnerhierarchie senden und umgekehrt.  <br/>  Sicherstellen, dass Sie den Synchronisierungsstatus für den richtigen Stammordner senden.  <br/>  Sicherstellen, dass der gleichen Stammordner in jeder Anforderung angegeben ist.  <br/>  Sicherstellen, dass die vorherige Anforderung nicht einen Stammordner NULL, angegeben haben während die aktuelle Anforderung einen Stammordner der Stammzertifizierungsstellen enthält. NULL und die Stammwebsitesammlung sind nicht die gleiche Weise behandelt.  <br/> |
-|ErrorSyncFolderNotFound  <br/> |Synchronisieren von Unterordnern oder Elementen in einem Ordner, der auf dem Server nicht gefunden werden kann.  <br/> |Sicherstellen, dass des Ordners-ID in der Anforderung angegebene ermittelt eine Ordner-ID, die in einer vorherigen Sync-Antwort vom Server zurückgegeben.  <br/> |
-|ErrorTimeoutExpired  <br/> |Senden Sie zu viele Anforderungen.  <br/> |Begrenzen Ihre Batches auf 10 Elemente pro Batch von [gedrosselt](ews-throttling-in-exchange.md)zu vermeiden.  <br/> |
-|[ServiceResponseException](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponseexception%28v=exchg.80%29.aspx) <br/> |Verbinden Sie mit EWS auf, wenn der Server offline ist oder ein Problem mit der Konnektivität vorliegt.  <br/> |Überprüfen der Konnektivität mit dem Server, und wiederholen die Anforderung weiter unten. Dies ist wahrscheinlich eine vorübergehende Dienstfehler oder Netzwerkfehler.  <br/> |
+|ErrorInvalidSyncStateData  <br/> | Synchronisieren von Elementen oder Ordnern mithilfe eines ungültigen Synchronisierungsstatus Werts  <br/>  Schließen Sie einen Stammordner in Ihrer anfänglichen SyncFolderHierarchy-Anforderung aus, wenn die nachfolgende Anforderung einen Stammordner enthält.  <br/>  Verwenden Sie unterschiedliche Stammordner in nachfolgenden Anforderungen.  <br/> | Stellen Sie sicher, dass der von Ihnen gesendete Sync State-Wert dem Sync State-Wert entspricht, der während einer vorherigen Synchronisierung zurückgegeben wurde.  <br/>  Sicherstellen, dass Sie nicht den Synchronisierungsstatus für die Ordnerhierarchie senden, wenn Sie versuchen, Elemente zu synchronisieren, und umgekehrt.  <br/>  Stellen Sie sicher, dass Sie den Synchronisierungsstatus für den richtigen Stammordner senden.  <br/>  Sicherstellen, dass in jeder Anforderung derselbe Stammordner angegeben wird.  <br/>  Sicherstellen, dass die vorherige Anforderung keinen Stammordner NULL angegeben hat, während die aktuelle Anforderung einen Stammordner des Stammverzeichnisses enthält. NULL und root werden nicht gleich behandelt.  <br/> |
+|ErrorSyncFolderNotFound  <br/> |Synchronisieren von Unterordnern oder Elementen in einem Ordner, der auf dem Server nicht gefunden werden kann.  <br/> |Sicherstellen, dass die in der Anforderung angegebene Ordner-ID mit einer Ordner-ID übereinstimmt, die von dem Server in einer vorherigen Synchronisierungsantwort zurückgegeben wurde.  <br/> |
+|ErrorTimeoutExpired  <br/> |Senden Sie zu viele Anforderungen.  <br/> |Beschränken der Batches auf 10 Elemente pro Batch, um eine [Drosselung](ews-throttling-in-exchange.md)zu vermeiden.  <br/> |
+|[ServiceResponseException](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponseexception%28v=exchg.80%29.aspx) <br/> |Stellen Sie eine Verbindung mit EWS her, wenn der Server offline ist oder wenn ein Problem mit der Konnektivität vorliegt.  <br/> |Überprüfen der Konnektivität mit dem Server und erneutes Testen der Anforderung. Dies ist wahrscheinlich ein vorübergehender Dienstfehler oder Netzwerkfehler.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 - [Postfachsynchronisierung und EWS in Exchange](mailbox-synchronization-and-ews-in-exchange.md)
     
-- [Synchronisieren von Ordnern in Exchange mithilfe der Exchange-Webdienste](how-to-synchronize-folders-by-using-ews-in-exchange.md)
+- [Synchronisieren von Ordnern unter Verwendung von EWS in Exchange](how-to-synchronize-folders-by-using-ews-in-exchange.md)
     
-- [Synchronisieren von Elementen mithilfe von EWS in Exchange](how-to-synchronize-items-by-using-ews-in-exchange.md)
+- [Synchronisieren von Elementen unter Verwendung von EWS in Exchange](how-to-synchronize-items-by-using-ews-in-exchange.md)
     
-- [ServiceResponseException](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponseexception%28v=exchg.80%29.aspx)
+- [ServiceResponseException](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponseexception%28v=exchg.80%29.aspx)
     
 

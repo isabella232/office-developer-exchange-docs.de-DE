@@ -1,106 +1,106 @@
 ---
-title: Legen Sie Berechtigungen für einen anderen Benutzer mithilfe der EWS in Exchange
+title: Festlegen von Ordnerberechtigungen für einen anderen Benutzer mithilfe der EWS in Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 7eb81676-a780-4c56-b4f2-c4ed2697107d
-description: Erfahren Sie, wie Berechtigungsstufen für einen Ordner festlegen, indem verwenden die EWS Managed API oder EWS in Exchange.
-ms.openlocfilehash: 5bf570612d6349628e7f3abf858daa33daa13745
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier erfahren Sie, wie Sie Berechtigungsstufen für einen Ordner mithilfe der verwaltete EWS-API oder EWS in Exchange festlegen.
+ms.openlocfilehash: e25f1a49a430e8c95829d404fa53451b76cab167
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757004"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455870"
 ---
-# <a name="set-folder-permissions-for-another-user-by-using-ews-in-exchange"></a>Legen Sie Berechtigungen für einen anderen Benutzer mithilfe der EWS in Exchange
+# <a name="set-folder-permissions-for-another-user-by-using-ews-in-exchange"></a>Festlegen von Ordnerberechtigungen für einen anderen Benutzer mithilfe der EWS in Exchange
 
-Erfahren Sie, wie Berechtigungsstufen für einen Ordner festlegen, indem verwenden die EWS Managed API oder EWS in Exchange.
+Hier erfahren Sie, wie Sie Berechtigungsstufen für einen Ordner mithilfe der verwaltete EWS-API oder EWS in Exchange festlegen.
   
-Berechtigungen auf Ordnerebene können Benutzer einen oder mehrere Ordner im Postfach eines anderen Benutzers zugreifen. Ordnerberechtigungen ähneln Zugriff delegieren, jedoch unterscheiden sich wie folgt: 
+Berechtigungen auf Ordnerebene ermöglichen Benutzern den Zugriff auf einen oder mehrere Ordner im Postfach eines anderen Benutzers. Ordnerberechtigungen ähneln dem Stellvertretungszugriff, Sie unterscheiden sich jedoch folgendermaßen: 
   
-- Berechtigungen für Ordner aktivieren ein Benutzers zum "Senden im Auftrag von" und "Senden als" eines anderen Benutzers nicht. Sie ermöglichen nur Zugriff auf Ordner. Benutzer können Elemente in diesen Ordnern erstellen, aber er können nicht gesendet werden.
+- Ordnerberechtigungen ermöglichen einem Benutzer nicht, "im Auftrag von" oder "Senden als" einen anderen Benutzer zu senden. Sie ermöglichen nur den Zugriff auf Ordner. Benutzer können Elemente in diesen Ordnern erstellen, aber nicht senden.
     
-- Sie können Ordnerberechtigungen für alle Ordner im Postfach festlegen, aber Sie können nur eine Stellvertretung den Ordner Kalender, Kontakte, Posteingang, Journal, Notizen und Aufgaben hinzufügen.
+- Sie können Ordnerberechtigungen für einen beliebigen Ordner im Postfach festlegen, aber Sie können nur einen Stellvertreter zu den Ordnern Kalender, Kontakte, Posteingang, Journal, Notizen und Aufgaben hinzufügen.
     
-- Sie können eine Reihe von [Berechtigungen für einen bestimmten Ordner](#bk_folderperms)festlegen. Wenn Sie eine Stellvertretung hinzugefügt haben, können Sie nur [fünf Berechtigungsstufen](delegate-access-and-ews-in-exchange.md#bk_delegateperms)zuweisen.
+- Sie können eine Reihe von [Berechtigungen für einen bestimmten Ordner](#bk_folderperms)festlegen. Wenn Sie eine Stellvertretung hinzufügen, können Sie eine von nur [fünf Berechtigungsstufen](delegate-access-and-ews-in-exchange.md#bk_delegateperms)zuweisen.
     
-- Sie können legen Sie Berechtigungen für anonyme und Standard-Benutzer. Sie können nur Delegieren des Zugriffs auf ein e-Mail-aktiviertes Konto erteilen.
+- Sie können Ordnerberechtigungen für anonyme und Standardbenutzer festlegen. Sie können nur einem e-Mail-aktivierten Konto Stellvertretungszugriff gewähren.
     
-Wenn Sie mit Access Control Entries, (Zugriffssteuerungseinträge ACEs) und Discretionary Access Control Lists () vertraut sind, wissen Sie, dass ein Benutzer nur ein Satz von Berechtigungen für jeden Ordner ausführen kann. Wenn Sie versuchen, eine Reihe von Berechtigungen für einen Benutzer hinzuzufügen, und sie bereits eine Reihe von Berechtigungen besitzen, erhalten Sie einen Fehler. Wenn Sie hinzufügen, entfernen oder aktualisieren Sie die Berechtigungen für einen Ordner, Sie erhalten die aktuelle DACL, hinzufügen oder Entfernen von ACEs, und senden Sie die aktualisierte DACL. Sie können nicht mehrere ACEs für denselben Benutzer hinzufügen. Wenn Sie Berechtigungen mithilfe der EWS Managed API aktualisieren, müssen Sie aktuelle ACE des Benutzers zu entfernen, und fügen Sie ihrer neuen ACE der Auflistung. Wenn Sie Exchange-Webdienste verwenden, ersetzen Sie den vorherigen Satz von ACEs, die nur durch die neue.
+Wenn Sie mit Zugriffssteuerungseinträgen (ACEs) und Discretionary Access Control Lists (DACLs) vertraut sind, wissen Sie, dass ein Benutzer nur über einen Berechtigungssatz für jeden Ordner verfügen kann. Wenn Sie versuchen, eine Gruppe von Berechtigungen für einen Benutzer hinzuzufügen und bereits über eine Reihe von Berechtigungen verfügen, erhalten Sie eine Fehlermeldung. Wenn Sie Berechtigungen für einen Ordner hinzufügen, entfernen oder aktualisieren, erhalten Sie die aktuelle DACL, fügen ACEs hinzu oder entfernen Sie und senden dann die aktualisierte DACL. Sie können nicht mehrere ACEs für denselben Benutzer hinzufügen. Wenn Sie Berechtigungen mithilfe des verwaltete EWS-API aktualisieren, müssen Sie den aktuellen ACE des Benutzers entfernen und dann den neuen ACE zur Auflistung hinzufügen. Wenn Sie EWS verwenden, ersetzen Sie einfach den vorherigen ACEs-Datensatz durch die neuen.
   
-Wenn Sie mehrere Berechtigung Änderungen in einem einzelnen Ordner durchführen, können Sie batch hinzugefügt, entfernt oder Updates – Beachten Sie, dass Sie benutzeraktualisierungen in mehreren Ordnern batch ist nicht möglich. Ein Anruf ist erforderlich, um die Berechtigungen für einen einzelnen Ordner erhalten möchten, und ein zweiter Aufruf ist erforderlich, um die Berechtigungen für diesen Ordner zu aktualisieren. Wenn Sie hinzufügen, entfernen oder von Benutzerberechtigungen aktualisieren, verwenden Sie die gleichen zwei-Methodenaufrufen oder Vorgänge für jeden Vorgang.
+Wenn Sie mehrere Berechtigungsänderungen an einem einzelnen Ordner vornehmen, können Sie den Batch hinzufügen, entfernen oder aktualisieren – beachten Sie, dass Sie keine Benutzer Updates in mehreren Ordnern stapeln können. Ein Aufruf ist erforderlich, um die Berechtigungen für einen einzelnen Ordner abzurufen, und ein zweiter Aufruf ist erforderlich, um die Berechtigungen für diesen Ordner zu aktualisieren. Wenn Sie Benutzerberechtigungen hinzufügen, entfernen oder aktualisieren, verwenden Sie für jede Aufgabe dieselben zwei Methodenaufrufe oder-Vorgänge.
   
-**In Tabelle 1. EWS Managed API-Methoden und EWS-Vorgänge zum Festlegen von Berechtigungen für Ordner**
+**Tabelle 1. Verwaltete EWS-API Methoden und EWS-Vorgänge zum Festlegen von Ordnerberechtigungen**
 
-|Aktion|Verwenden Sie diese Methode EWS Managed API...|Verwenden Sie diese Operation EWS...|
+|Aktion|Verwenden Sie diese verwaltete EWS-API-Methode...|Verwenden Sie diesen EWS-Vorgang...|
 |:-----|:-----|:-----|
-|Aktivieren, entfernen oder Aktualisieren von Berechtigungen für Ordner  <br/> |[Folder.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) gefolgt von [Folder.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.reply%28v=exchg.80%29.aspx) <br/> |[GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) gefolgt von [UpdateFolder](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) <br/> |
-|Erstellen Sie einen Ordner, und definieren Sie Berechtigungen für Ordner  <br/> |[Folder.Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.save%28v=exchg.80%29.aspx) <br/> |[CreateFolder](http://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx) <br/> |
+|Aktivieren, entfernen oder Aktualisieren von Ordnerberechtigungen  <br/> |[Folder. Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) gefolgt von [Folder. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.reply%28v=exchg.80%29.aspx) <br/> |[GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) gefolgt von [UpdateFolder](https://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) <br/> |
+|Erstellen eines Ordners und Definieren von Ordnerberechtigungen  <br/> |[Folder.Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.save%28v=exchg.80%29.aspx) <br/> |[CreateFolder](https://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx) <br/> |
    
-## <a name="folder-permissions"></a>Berechtigungen für Ordner
+## <a name="folder-permissions"></a>Ordnerberechtigungen
 <a name="bk_folderperms"> </a>
 
-Sie haben eine Anzahl von Optionen, wenn es darum geht, Festlegen von Berechtigungen für einen bestimmten Ordner. Setzen Sie eine Berechtigungsstufe für einen Ordner, für jeden Benutzer, die eine Reihe von vordefinierten einzelne Berechtigungen der DACL hinzufügt, oder Sie können einzelne Berechtigungen für einen Ordner festlegen – jedoch nicht möglich, mischen und übereinstimmen.
+Sie haben etliche Optionen, wenn es darum geht, Ordnerberechtigungen für einen bestimmten Ordner festzulegen. Sie können eine Berechtigungsstufe für einen Ordner für jeden Benutzer festlegen, wodurch eine Reihe vordefinierter einzelner Berechtigungen zur DACL hinzugefügt wird, oder Sie können einzelne Berechtigungen für einen Ordner festlegen, jedoch keine Kombination aus-und abgleichen.
   
 Die folgenden einzelnen Berechtigungen sind verfügbar:
   
-- Erstellen können
-- Unterordner können erstellen werden.    
-- Ist der Besitzer des Ordners    
+- Erstellen kann
+- Unterordner können erstellt werden    
+- Ist Ordnerbesitzer    
 - Ordner ist sichtbar    
-- Ordner Kontakt    
-- Elemente bearbeiten    
+- Ist Ordner Kontakt    
+- Bearbeiten von Elementen    
 - Löschen von Elementen    
 - Elemente lesen
     
-Darüber hinaus stehen die folgenden Berechtigungsstufen, die definieren eine Teilmenge von einzelnen Berechtigungen und Werten, wie in Tabelle 2 gezeigt:
+Darüber hinaus stehen die folgenden Berechtigungsstufen zur Verfügung, die eine Teilmenge der einzelnen Berechtigungen und Werte definieren, wie in Tabelle 2 dargestellt:
   
 - Keine    
 - Besitzer    
-- Vom Typ PublishingEditor    
-- Herausgeber    
+- Publishing Editor    
+- Editor    
 - PublishingAuthor    
-- Autor    
-- NoneditingAuthor    
-- Prüfer    
-- Mitwirkender   
-- Benutzerdefinierte - dieser Wert kann nicht von der Anwendung festgelegt werden. Der Server legt diesen Wert, wenn die Anwendung benutzerdefinierte Zusammenstellung von einzelnen Berechtigungen enthält.    
-- FreeBusyTimeOnly - kann dies nur für Kalenderordner festgelegt werden.   
-- FreeBusyTimeAndSubjectAndLocation - kann dies nur für Kalenderordner festgelegt werden.
+- Ursprung    
+- Noneditingauthorcreateitems    
+- Reviewer    
+- Contributor   
+- Custom-dieser Wert kann nicht von der Anwendung festgelegt werden. Der Server legt diesen Wert fest, wenn die Anwendung eine benutzerdefinierte Auflistung einzelner Berechtigungen enthält.    
+- FreeBusyTimeOnly-Dies kann nur für Kalenderordner festgelegt werden.   
+- FreeBusyTimeAndSubjectAndLocation-Dies kann nur für Kalenderordner festgelegt werden.
     
-Die folgende Tabelle enthält die einzelnen Berechtigungen basierend auf Berechtigungsstufe standardmäßig angewendet werden.
+In der folgenden Tabelle wird gezeigt, welche einzelnen Berechtigungen standardmäßig basierend auf der Berechtigungsstufe angewendet werden.
   
-**In Tabelle 2. Einzelne Berechtigungen von Berechtigungsstufe**
+**Tabelle 2. Einzelne Berechtigungen nach Berechtigungsstufe**
 
-|Berechtigungsstufe|Elemente können erstellen werden.|Unterordner können erstellen werden.|Ist der Besitzer des Ordners|Ordner ist sichtbar|Ordner Kontakt|Elemente bearbeiten|Löschen von Elementen|Lesen von Elementen|
+|Berechtigungsstufe|Kann Elemente erstellen|Unterordner können erstellt werden|Ist Ordnerbesitzer|Ordner ist sichtbar|Ist Ordner Kontakt|Bearbeiten von Elementen|Löschen von Elementen|Elemente können gelesen werden|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|Keine  <br/> |False  <br/> |False  <br/> |False  <br/> |False  <br/> |False  <br/> |Keine  <br/> |Keine  <br/> |Keine  <br/> |
+|Keine  <br/> |Falsch  <br/> |Falsch  <br/> |Falsch  <br/> |Falsch  <br/> |Falsch  <br/> |Keine  <br/> |Keine  <br/> |Keine  <br/> |
 |Besitzer  <br/> |True  <br/> |True  <br/> |True  <br/> |True  <br/> |True  <br/> |Alle  <br/> |Alle  <br/> |FullDetails  <br/> |
-|Vom Typ PublishingEditor  <br/> |True  <br/> |True  <br/> |False  <br/> |True  <br/> |False  <br/> |Alle  <br/> |Alle  <br/> |FullDetails  <br/> |
-|Herausgeber  <br/> |True  <br/> |False  <br/> |False  <br/> |True  <br/> |False  <br/> |Alle  <br/> |Alle  <br/> |FullDetails  <br/> |
-|PublishingAuthor  <br/> |True  <br/> |True  <br/> |False  <br/> |True  <br/> |False  <br/> |Gehören  <br/> |Gehören  <br/> |FullDetails  <br/> |
-|Autor  <br/> |True  <br/> |False  <br/> |False  <br/> |True  <br/> |False  <br/> |Gehören  <br/> |Gehören  <br/> |FullDetails  <br/> |
-|NoneditingAuthor  <br/> |True  <br/> |False  <br/> |False  <br/> |True  <br/> |False  <br/> |Keine  <br/> |Gehören  <br/> |FullDetails  <br/> |
-|Prüfer  <br/> |False  <br/> |False  <br/> |False  <br/> |True  <br/> |False  <br/> |Keine  <br/> |Keine  <br/> |FullDetails  <br/> |
-|Mitwirkender  <br/> |True  <br/> |False  <br/> |False  <br/> |True  <br/> |False  <br/> |Keine  <br/> |Keine  <br/> |Keine  <br/> |
+|Publishing Editor  <br/> |True  <br/> |True  <br/> |False  <br/> |Wahr  <br/> |Falsch  <br/> |Alle  <br/> |Alle  <br/> |FullDetails  <br/> |
+|Editor  <br/> |Wahr  <br/> |Falsch  <br/> |False  <br/> |Wahr  <br/> |Falsch  <br/> |Alle  <br/> |Alle  <br/> |FullDetails  <br/> |
+|PublishingAuthor  <br/> |True  <br/> |True  <br/> |False  <br/> |Wahr  <br/> |Falsch  <br/> |Im Besitz  <br/> |Im Besitz  <br/> |FullDetails  <br/> |
+|Ursprung  <br/> |Wahr  <br/> |Falsch  <br/> |False  <br/> |Wahr  <br/> |Falsch  <br/> |Im Besitz  <br/> |Im Besitz  <br/> |FullDetails  <br/> |
+|Noneditingauthorcreateitems  <br/> |Wahr  <br/> |Falsch  <br/> |False  <br/> |Wahr  <br/> |Falsch  <br/> |Keine  <br/> |Im Besitz  <br/> |FullDetails  <br/> |
+|Reviewer  <br/> |Falsch  <br/> |Falsch  <br/> |False  <br/> |Wahr  <br/> |Falsch  <br/> |Keine  <br/> |Keine  <br/> |FullDetails  <br/> |
+|Contributor  <br/> |Wahr  <br/> |Falsch  <br/> |False  <br/> |Wahr  <br/> |Falsch  <br/> |Keine  <br/> |Keine  <br/> |Keine  <br/> |
    
-Wenn Sie in der Berechtigungen auf Ordnerebene Anforderung eine nicht benutzerdefinierte Berechtigungsstufe angeben, müssen Sie nicht die einzelnen Berechtigungen angeben. Wenn Sie eine einzelne Berechtigung angeben, wenn Sie eine Berechtigungsstufe festgelegt, wird ein Fehler **ErrorInvalidPermissionSettings** in der Antwort zurückgegeben werden. 
+Wenn Sie eine nicht benutzerdefinierte Berechtigungsstufe in der Berechtigungsanforderung auf Ordnerebene angeben, müssen Sie die einzelnen Berechtigungseinstellungen nicht angeben. Wenn Sie beim Festlegen einer Berechtigungsstufe eine einzelne Berechtigung angeben, wird in der Antwort ein **ErrorInvalidPermissionSettings** -Fehler zurückgegeben. 
   
-## <a name="adding-folder-permissions-by-using-the-ews-managed-api"></a>Hinzufügen von Berechtigungen für Ordner mithilfe der EWS Managed API
+## <a name="adding-folder-permissions-by-using-the-ews-managed-api"></a>Hinzufügen von Ordnerberechtigungen mithilfe der verwaltete EWS-API
 <a name="bk_enableewsma"> </a>
 
-Im folgenden Codebeispiel wird veranschaulicht, wie die EWS Managed API zu verwenden: 
+Im folgenden Codebeispiel wird die Verwendung der verwaltete EWS-API für Folgendes veranschaulicht: 
   
-- Erstellen Sie ein neues [FolderPermission](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folderpermission%28v=exchg.80%29.aspx) -Objekt für den neuen Benutzer. 
+- Erstellen Sie ein neues [FolderPermission](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderpermission%28v=exchg.80%29.aspx) -Objekt für den neuen Benutzer. 
     
-- Rufen Sie die aktuellen Berechtigungen für einen Ordner mit der Methode [zu binden](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) . 
+- Abrufen der aktuellen Berechtigungen für einen Ordner mithilfe der [Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) -Methode. 
     
-- Fügen Sie der neuen **FolderPermissions** der [Folder.Permissions](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.permissions%28v=exchg.80%29.aspx) -Eigenschaft. 
+- Fügen Sie die neue **FolderPermissions** der Eigenschaft [Folder. Permissions](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.permissions%28v=exchg.80%29.aspx) hinzu. 
     
-- Rufen Sie die [Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx) -Methode, um die neuen Berechtigungen auf dem Server zu speichern. 
+- Rufen Sie die [Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx) -Methode auf, um die neuen Berechtigungen auf dem Server zu speichern. 
     
-In diesem Beispiel wird davon ausgegangen, die **Service** ist ein gültiges [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt für den Besitzer des Postfachs und, die der Benutzer wurde an einen Exchange-Server authentifiziert wurden. 
+In diesem Beispiel wird davon ausgegangen, dass **Service** ein gültiges [Datei "ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt für den Postfachbesitzer ist und dass der Benutzer bei einem Exchange-Server authentifiziert wurde. 
   
 ```cs
 static void EnableFolderPermissions(ExchangeService service)
@@ -121,7 +121,7 @@ static void EnableFolderPermissions(ExchangeService service)
 }
 ```
 
-Die folgende Codezeile gibt die Berechtigungsstufe.
+In der folgenden Codezeile wird die Berechtigungsstufe angegeben.
   
 ```cs
     FolderPermission fldperm = new FolderPermission("sadie@contoso.com", FolderPermissionLevel.Editor);
@@ -137,23 +137,23 @@ fldperm.CanCreateSubFolders = true;
 …
 ```
 
-Sie können einige oder alle schreibbaren [Eigenschaften FolderPermission](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folderpermission_properties%28v=exchg.80%29.aspx) festlegen, wenn Sie ein **FolderPermission** -Objekt mit der eine benutzerdefinierte Berechtigungsstufe erstellen. Beachten Sie jedoch, dass die [FolderPermissionLevel](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folderpermissionlevel%28v=exchg.80%29.aspx) von der Anwendung nicht explizit auf **Custom** festgelegt ist. Die **FolderPermissionLevel** wird nur, wenn ein **FolderPermission** -Objekt erstellen und Festlegen von einzelnen Berechtigungen zu benutzerdefinierten festgelegt. 
+Sie können eine beliebige oder alle schreibbaren [FolderPermission-Eigenschaften](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderpermission_properties%28v=exchg.80%29.aspx) festlegen, wenn Sie ein **FolderPermission** -Objekt mit einer benutzerdefinierten Berechtigungsstufe erstellen. Beachten Sie jedoch, dass die [FolderPermissionLevel](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderpermissionlevel%28v=exchg.80%29.aspx) niemals explizit von der Anwendung auf **Custom** festgelegt wird. **FolderPermissionLevel** wird nur dann auf Custom festgelegt, wenn Sie ein **FolderPermission** -Objekt erstellen und einzelne Berechtigungen festlegen. 
   
-## <a name="adding-folder-permissions-by-using-ews"></a>Hinzufügen von Berechtigungen für Ordner mithilfe der Exchange-Webdienste
+## <a name="adding-folder-permissions-by-using-ews"></a>Hinzufügen von Ordnerberechtigungen mithilfe von EWS
 <a name="bk_enableews"> </a>
 
-Die folgenden EWS-Codebeispiele zeigen, wie zum Hinzufügen von Berechtigungen zu einem bestimmten Ordner durch Abrufen der aktuellen Berechtigungen und senden Sie dann eine Liste der neuen Berechtigungen.
+Die folgenden EWS-Codebeispiele zeigen, wie Sie Berechtigungen zu einem bestimmten Ordner hinzufügen, indem Sie die aktuellen Berechtigungen abrufen und dann eine Liste mit neuen Berechtigungen übermitteln.
   
-Der erste Schritt besteht, senden Sie eine [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) -Anforderung, wobei der Wert [DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) gibt den Ordner in dem zum Hinzufügen von Berechtigungen (in diesem Beispiel wird der Ordner "Gesendete Objekte") und der [FieldURI](http://msdn.microsoft.com/library/24af8e3b-3074-4c8c-8d0a-52446508d044%28Office.15%29.aspx) Wert enthält Ordner: PermissionSet. Diese Anforderung wird, werden die berechtigungseinstellungen für den angegebenen Ordner abgerufen. 
+Der erste Schritt besteht darin, eine [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) -Anforderung zu senden, wobei der [DistinguishedFolderId](https://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) -Wert den Ordner angibt, in dem Berechtigungen hinzugefügt werden sollen (der Ordner "Gesendete Elemente" in diesem Beispiel), und der [FieldURI](https://msdn.microsoft.com/library/24af8e3b-3074-4c8c-8d0a-52446508d044%28Office.15%29.aspx) -Wert enthält Folder: PermissionSet. Diese Anforderung Ruft die Berechtigungseinstellungen für den angegebenen Ordner ab. 
   
-Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die **Bind** -Methode zum [Hinzufügen von Berechtigungen für Ordner](#bk_enableewsma)aufrufen.
+Dies ist auch die XML-Anforderung, die vom verwaltete EWS-API gesendet wird, wenn Sie die **Bind** -Methode aufrufen, um [Ordnerberechtigungen hinzuzufügen](#bk_enableewsma).
   
 ```XML
   <?xml version="1.0" encoding="utf-8"?>
   <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                 xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                 xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                 xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+                 xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                 xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                 xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
     <soap:Header>
       <t:RequestServerVersion Version="Exchange2007_SP1" />
     </soap:Header>
@@ -173,26 +173,26 @@ Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die **Bi
   </soap:Envelope>
 ```
 
-Der Server antwortet auf die Anforderung **GetFolder** mit einer [GetFolderResponse](http://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx) -Nachricht, die enthält den Elementwert [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **noError zurück**, der angibt, dass der Ordner erfolgreich abgerufen wurde. Die Werte [FolderId](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) und [ParentFolderId](http://msdn.microsoft.com/library/258f4b1f-367e-4c7d-9c29-eb775a2398c7%28Office.15%29.aspx) wurden zur besseren Lesbarkeit gekürzt. 
+Der Server antwortet auf die **GetFolder** -Anforderung mit einer [GetFolderResponse](https://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Elementwert **noError**enthält, der angibt, dass der Ordner erfolgreich abgerufen wurde. Die [Ordner](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) -und [parentfolderid](https://msdn.microsoft.com/library/258f4b1f-367e-4c7d-9c29-eb775a2398c7%28Office.15%29.aspx) -Werte wurden zur Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="893"
                          MinorBuildNumber="17"
                          Version="V2_10"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -241,16 +241,16 @@ Der Server antwortet auf die Anforderung **GetFolder** mit einer [GetFolderRespo
 </s:Envelope>
 ```
 
-Verwenden Sie die **UpdateFolder** -Operation im nächsten Schritt die aktualisierte [PermissionSet](http://msdn.microsoft.com/library/6ac1bd17-a089-46bb-b9e6-f5b1dfe1076d%28Office.15%29.aspx)senden die die [Berechtigung](http://msdn.microsoft.com/library/b8d0429a-0e58-4480-9847-4901970c7033%28Office.15%29.aspx) für den neuen Benutzer enthält. Beachten Sie, dass das [SetFolderField](http://msdn.microsoft.com/library/8c69db7b-54b5-4ae2-abca-4d6e0937a790%28Office.15%29.aspx) -Element für den jeweiligen Ordner in den Vorgang [UpdateFolder](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) einschließlich die berechtigungseinstellungen für den Ordner überschrieben werden. Entsprechend wird die Option [DeleteFolderField](http://msdn.microsoft.com/library/f9c2187b-4c60-4358-b4b4-ede50eadae48%28Office.15%29.aspx) des Vorgangs **UpdateFolder** einschließlich auch die berechtigungseinstellungen für den Ordner gelöscht. 
+Verwenden Sie als nächstes den **UpdateFolder** -Vorgang, um das aktualisierte [PermissionSet](https://msdn.microsoft.com/library/6ac1bd17-a089-46bb-b9e6-f5b1dfe1076d%28Office.15%29.aspx)zu senden, das die [Berechtigung](https://msdn.microsoft.com/library/b8d0429a-0e58-4480-9847-4901970c7033%28Office.15%29.aspx) für den neuen Benutzer enthält. Beachten Sie, dass durch das Einschließen des [setfolderfield](https://msdn.microsoft.com/library/8c69db7b-54b5-4ae2-abca-4d6e0937a790%28Office.15%29.aspx) -Elements für den entsprechenden Ordner im [UpdateFolder](https://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) -Vorgang alle Berechtigungseinstellungen für den Ordner überschrieben werden. Ebenso werden mit der [DeleteFolderField](https://msdn.microsoft.com/library/f9c2187b-4c60-4358-b4b4-ede50eadae48%28Office.15%29.aspx) -Option des **UpdateFolder** -Vorgangs auch alle Berechtigungseinstellungen für den Ordner gelöscht. 
   
-Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die **Update** -Methode zum [Hinzufügen von Berechtigungen für Ordner](#bk_enableewsma)aufrufen.
+Dies ist auch die XML-Anforderung, die vom verwaltete EWS-API gesendet wird, wenn Sie die **Update** -Methode aufrufen, um [Ordnerberechtigungen hinzuzufügen](#bk_enableewsma).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -296,7 +296,7 @@ Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die **Up
 </soap:Envelope>
 ```
 
-Die folgende Codezeile gibt die Berechtigungsstufe.
+In der folgenden Codezeile wird die Berechtigungsstufe angegeben.
   
 ```xml
 <t:Permission>
@@ -326,26 +326,26 @@ Wenn Sie die benutzerdefinierte Berechtigungsstufe verwenden möchten, verwenden
 </t:Permission>
 ```
 
-Der Server antwortet auf die Anforderung **UpdateFolder** mit einer [UpdateFolderResponse](http://msdn.microsoft.com/library/31f47739-dc9c-46ba-9e3f-cce25dc85e6e%28Office.15%29.aspx) -Nachricht, die enthält den Elementwert [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **noError zurück**, der angibt, dass der Ordner erfolgreich aktualisiert wurde.
+Der Server antwortet auf die **UpdateFolder** -Anforderung mit einer [UpdateFolderResponse](https://msdn.microsoft.com/library/31f47739-dc9c-46ba-9e3f-cce25dc85e6e%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Elementwert **noError**enthält, der angibt, dass der Ordner erfolgreich aktualisiert wurde.
   
-## <a name="removing-folder-permissions-by-using-the-ews-managed-api"></a>Entfernen von Berechtigungen für Ordner mithilfe der EWS Managed API
+## <a name="removing-folder-permissions-by-using-the-ews-managed-api"></a>Entfernen von Ordnerberechtigungen mithilfe der verwaltete EWS-API
 <a name="bk_removeewsma"> </a>
 
-Im folgenden Codebeispiel wird veranschaulicht, wie die EWS Managed API verwenden, um alle Benutzerberechtigungen für einen bestimmten Ordner, mit Ausnahme der standardmäßigen und anonyme Berechtigungen durch entfernen:
+Im folgenden Codebeispiel wird gezeigt, wie Sie mithilfe der verwaltete EWS-API alle Benutzerberechtigungen für einen bestimmten Ordner mit Ausnahme der standardmäßigen und anonymen Berechtigungen entfernen:
   
-1. Abrufen der aktuellen Berechtigungen für einen Ordner mit der Methode **zu binden** . 
+1. Aufrufen der aktuellen Berechtigungen für einen Ordner mithilfe der **Bind** -Methode. 
     
-2. Die **Berechtigungen** -Auflistung durchlaufen, und Entfernen von Berechtigungen für einzelne Benutzer. 
+2. Durchlaufen der **Permissions** -Auflistung und Entfernen von Berechtigungen für einzelne Benutzer. 
     
 3. Aufrufen der **Update** -Methode, um die Änderungen zu speichern. 
     
-Dieses Beispiel entfernt alle Benutzerberechtigungen für einen Ordner. Wenn Sie in diesem Beispiel wird zum Entfernen von Berechtigungen für einen bestimmten Benutzer nur ändern möchten, ändern Sie die folgende Codezeile zum Identifizieren entweder des Anzeigenamen oder die SMTP-Adresse des Benutzers.
+In diesem Beispiel werden alle Benutzerberechtigungen für einen Ordner entfernt. Wenn Sie dieses Beispiel ändern möchten, um Berechtigungen nur für einen bestimmten Benutzer zu entfernen, ändern Sie die folgende Codezeile, um entweder den Anzeigenamen oder die SMTP-Adresse des Benutzers zu identifizieren.
   
 ```cs
 if (sentItemsFolder.Permissions[t].UserId.DisplayName != null || sentItemsFolder.Permissions[t].UserId.PrimarySmtpAddress != null)
 ```
 
-In diesem Beispiel wird davon ausgegangen, die **Service** ist ein gültiges [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt für den Besitzer des Postfachs und, die der Benutzer wurde an einen Exchange-Server authentifiziert wurden. 
+In diesem Beispiel wird davon ausgegangen, dass **Service** ein gültiges [Datei "ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt für den Postfachbesitzer ist und dass der Benutzer bei einem Exchange-Server authentifiziert wurde. 
   
 ```cs
 static void RemoveFolderPermissions(ExchangeService service)
@@ -374,21 +374,21 @@ static void RemoveFolderPermissions(ExchangeService service)
 }
 ```
 
-## <a name="removing-folder-permissions-by-using-ews"></a>Entfernen von Berechtigungen für Ordner mithilfe der Exchange-Webdienste
+## <a name="removing-folder-permissions-by-using-ews"></a>Entfernen von Ordnerberechtigungen mithilfe von EWS
 <a name="bk_removeews"> </a>
 
-Die folgenden EWS-Codebeispiele zeigen, wie alle Benutzerberechtigungen für einen bestimmten Ordner, mit Ausnahme der Standard- und anonymen Berechtigungen entfernen.
+Die folgenden EWS-Codebeispiele zeigen, wie Sie alle Benutzerberechtigungen für einen bestimmten Ordner mit Ausnahme der Standard-und anonymen Berechtigungen entfernen.
   
-Senden Sie zunächst eine [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) -Anforderung, in dem Ordner, in dem Entfernen von Berechtigungen (in diesem Beispiel wird der Ordner "Gesendete Objekte") gibt den [DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) -Wert und der Wert [FieldURI](http://msdn.microsoft.com/library/24af8e3b-3074-4c8c-8d0a-52446508d044%28Office.15%29.aspx) Ordner: PermissionSet enthält. Diese Anforderung wird die [PermissionSet](http://msdn.microsoft.com/library/6ac1bd17-a089-46bb-b9e6-f5b1dfe1076d%28Office.15%29.aspx) für den angegebenen Ordner abrufen. 
+Senden Sie zunächst eine [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) -Anforderung, wobei der [DistinguishedFolderId](https://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) -Wert den Ordner angibt, in dem Berechtigungen entfernt werden sollen (der Ordner "Gesendete Elemente" in diesem Beispiel), und der [FieldURI](https://msdn.microsoft.com/library/24af8e3b-3074-4c8c-8d0a-52446508d044%28Office.15%29.aspx) -Wert enthält Folder: PermissionSet. Diese Anforderung Ruft das [PermissionSet](https://msdn.microsoft.com/library/6ac1bd17-a089-46bb-b9e6-f5b1dfe1076d%28Office.15%29.aspx) für den angegebenen Ordner ab. 
   
-Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die **Bind** -Methode zum [Entfernen von Ordnerberechtigungen für](#bk_removeewsma)aufrufen.
+Dies ist auch die XML-Anforderung, die vom verwaltete EWS-API gesendet wird, wenn Sie die **Bind** -Methode aufrufen, um [Ordnerberechtigungen zu entfernen](#bk_removeewsma).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -412,26 +412,26 @@ Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die **Bi
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die Anforderung **GetFolder** mit einer [GetFolderResponse](http://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx) -Nachricht, die enthält den Elementwert [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **noError zurück**, der angibt, dass der Ordner erfolgreich abgerufen wurde. Die Werte der Elemente **FolderId** und **ParentFolderId** wurden zur besseren Lesbarkeit gekürzt. 
+Der Server antwortet auf die **GetFolder** -Anforderung mit einer [GetFolderResponse](https://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Elementwert **noError**enthält, der angibt, dass der Ordner erfolgreich abgerufen wurde. Die Werte der Elemente **Folder** -und **parentfolderid** wurden zur Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="893"
                          MinorBuildNumber="17"
                          Version="V2_10"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -512,16 +512,16 @@ Der Server antwortet auf die Anforderung **GetFolder** mit einer [GetFolderRespo
 </s:Envelope>
 ```
 
-Im nächsten Schritt verwenden Sie die **UpdateFolder** -Operation, um die aktualisierte **PermissionSet**Versand nicht die **Berechtigung** für den entfernten Benutzer enthalten ist. 
+Verwenden Sie als nächstes den **UpdateFolder** -Vorgang, um das aktualisierte **PermissionSet**zu senden, das nicht die **Berechtigung** für den entfernten Benutzer enthält. 
   
-Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die **Update** -Methode zum [Entfernen von Ordnerberechtigungen für](#bk_removeewsma)aufrufen.
+Dies ist auch die XML-Anforderung, die vom verwaltete EWS-API gesendet wird, wenn Sie die **Update** -Methode aufrufen, um [Ordnerberechtigungen zu entfernen](#bk_removeewsma).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -561,48 +561,48 @@ Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die **Up
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die Anforderung **UpdateFolder** mit einer **UpdateFolderResponse** -Nachricht, die enthält den Elementwert [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **noError zurück**, der angibt, dass die Aktualisierung erfolgreich war.
+Der Server antwortet auf die **UpdateFolder** -Anforderung mit einer **UpdateFolderResponse** -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Elementwert **noError**enthält, der angibt, dass das Update erfolgreich war.
   
-## <a name="updating-folder-permissions-by-using-the-ews-managed-api"></a>Aktualisieren von Berechtigungen für Ordner mithilfe der EWS Managed API
+## <a name="updating-folder-permissions-by-using-the-ews-managed-api"></a>Aktualisieren von Ordnerberechtigungen mithilfe der verwaltete EWS-API
 <a name="bk_updateewsma"> </a>
 
-Sie können auch die EWS Managed API Ordnerberechtigungen für einen bestimmten Ordner aktualisieren. So aktualisieren Sie die Berechtigungen: 
+Sie können die Ordnerberechtigungen für einen bestimmten Ordner auch mithilfe der verwaltete EWS-API aktualisieren. So aktualisieren Sie die Berechtigungen: 
   
-1. [Entfernen von Berechtigungen für den Ordner](#bk_removeewsma) für die veralteten Berechtigungen, aber rufen Sie nicht die **Update** -Methode (noch). 
+1. [Entfernen Sie die Ordnerberechtigungen](#bk_removeewsma) für die veralteten Berechtigungen, rufen Sie jedoch nicht die **Update** -Methode (noch) auf. 
     
-2. [Berechtigungen für die neue oder geänderte Benutzer hinzufügen](#bk_enableewsma).
+2. [Fügen Sie Ordnerberechtigungen für die neuen oder geänderten Benutzer hinzu](#bk_enableewsma).
     
-3. Rufen Sie die **Update** -Methode, um die Änderungen zu speichern. 
+3. Rufen Sie die **Update** -Methode auf, um die Änderungen zu speichern. 
     
-Wenn Sie versuchen, zwei Sätze von Berechtigungen für den gleichen Benutzer hinzufügen, erhalten Sie eine Fehlermeldung **ServiceResponseException** mit der folgenden Beschreibung: "der angegebenen Berechtigungssatz enthält doppelte Benutzer-IDs". In diesem Fall die aktuellen Berechtigungen aus der **Permission** -Auflistung entfernen und dann die neuen Berechtigungen auf der **Permission** -Auflistung hinzufügen. 
+Wenn Sie versuchen, zwei Berechtigungssätze für denselben Benutzer hinzuzufügen, wird ein **ServiceResponseException** -Fehler mit der folgenden Beschreibung angezeigt: "der angegebene Berechtigungssatz enthält doppelte userids". Entfernen Sie in diesem Fall die aktuellen Berechtigungen aus der **Permission** -Auflistung, und fügen Sie dann der **Permission** -Auflistung die neuen Berechtigungen hinzu. 
   
-## <a name="updating-folder-permissions-by-using-ews"></a>Aktualisieren von Berechtigungen für Ordner mithilfe der Exchange-Webdienste
+## <a name="updating-folder-permissions-by-using-ews"></a>Aktualisieren von Ordnerberechtigungen mithilfe von EWS
 <a name="bk_updateews"> </a>
 
-Sie können auch Berechtigungen für bestimmte Ordner aktualisieren, mithilfe der EWS durch die Kombination des Prozesses zum Entfernen sowie hinzufügen. So aktualisieren Sie die Berechtigungen: 
+Sie können die Ordnerberechtigungen für bestimmte Ordner auch mithilfe von EWS aktualisieren, indem Sie den Vorgang zum Entfernen und hinzufügen kombinieren. So aktualisieren Sie die Berechtigungen: 
   
-1. Abrufen von aktuellen Berechtigungen für den Ordner mithilfe des **GetFolder** -Vorgangs. 
+1. Dient zum Abrufen der aktuellen Berechtigungen des Ordners mithilfe des **GetFolder** -Vorgangs. 
     
-2. Senden Sie eine aktualisierte Liste von Berechtigungen mithilfe des **UpdateFolder** -Vorgangs. 
+2. Senden Sie eine aktualisierte Liste mit Berechtigungen mithilfe des **UpdateFolder** -Vorgangs. 
     
-Dies sind die gleichen zwei Vorgänge, die Sie mithilfe von EWS zum [Aktivieren](#bk_enableews) oder [Entfernen Sie den Zugriff](#bk_removeews) verwenden. Der einzige Unterschied ist, wenn Sie die **GetFolder** -Antwort erhalten, eine **Berechtigung** für Benutzer enthalten soll. Ersetzen Sie einfach, vorhandene **Permission** -Element mit dem neuen **Berechtigung** Element, und senden Sie den Vorgang **UpdateFolder** mit den neuen **Berechtigung** oder Werte. 
+Dabei handelt es sich um dieselben beiden Vorgänge, die Sie zum [aktivieren](#bk_enableews) oder [Entfernen des Zugriffs](#bk_removeews) mithilfe von EWS verwenden. Der einzige Unterschied besteht darin, dass, wenn Sie die **GetFolder** -Antwort erhalten, eine **Berechtigungs** Gruppe für den Benutzer enthalten ist. Ersetzen Sie einfach das vorhandene **Permission** -Element durch das neue **Permission** -Element, und senden Sie dann den **UpdateFolder** -Vorgang mit dem neuen **Berechtigungs** Wert oder den neuen Werten. 
   
-Wenn Sie versuchen, zwei Sätze von Berechtigungen für den gleichen Benutzer hinzufügen, erhalten Sie **ResponseCode** Wert **ErrorDuplicateUserIdsSpecified**. In diesem Fall entfernen Sie den Wert für veralteten Berechtigung für den Benutzer aus der Anforderung, und wiederholen Sie die Anforderung.
+Wenn Sie versuchen, zwei Berechtigungssätze für denselben Benutzer hinzuzufügen, erhalten Sie den **Response Code** -Wert **ErrorDuplicateUserIdsSpecified**. Entfernen Sie in diesem Fall den Wert veralteter Berechtigungen für den Benutzer aus der Anforderung, und wiederholen Sie die Anforderung.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Sie eine Benutzer die Berechtigung in einen bestimmten Ordner erteilen, kann der Benutzer eine Stellvertretung den Ordner zugreifen. Weitere Informationen finden Sie unter folgenden Themen:
+Nachdem Sie einem bestimmten Ordner eine Benutzerberechtigung erteilt haben, kann der Benutzer auf den Ordner als Stellvertreter zugreifen. Weitere Informationen finden Sie unter:
   
-- [Access-e-Mail eine Stellvertretung mithilfe der EWS in Exchange](how-to-access-email-as-a-delegate-by-using-ews-in-exchange.md)
+- [Zugreifen auf E-Mails als Stellvertretung mithilfe der EWS in Exchange](how-to-access-email-as-a-delegate-by-using-ews-in-exchange.md)
     
-- [Zugriff auf einen Kalender als Stellvertretung mithilfe der EWS in Exchange](how-to-access-a-calendar-as-a-delegate-by-using-ews-in-exchange.md)
+- [Zugriff auf einen Kalender als Delegat mithilfe der EWS in Exchange](how-to-access-a-calendar-as-a-delegate-by-using-ews-in-exchange.md)
     
-- [Access-Kontakte als Stellvertretung mithilfe der EWS in Exchange](how-to-access-contacts-as-a-delegate-by-using-ews-in-exchange.md)
+- [Zugriff auf Kontakte als Delegat mithilfe der EWS in Exchange](how-to-access-contacts-as-a-delegate-by-using-ews-in-exchange.md)
     
 ## <a name="see-also"></a>Siehe auch
 
 - [Stellvertretungszugriff und EWS in Exchange](delegate-access-and-ews-in-exchange.md)   
-- [Hinzufügen und Entfernen von Stellvertretungen mithilfe von EWS in Exchange](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md)    
+- [Hinzufügen und Entfernen von Delegaten mithilfe der EWS in Exchange](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md)    
 - [Ordner und Elemente in EWS in Exchange](folders-and-items-in-ews-in-exchange.md)
     
 

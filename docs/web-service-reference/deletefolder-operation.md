@@ -11,33 +11,33 @@ api_name:
 api_type:
 - schema
 ms.assetid: b0f92682-4895-4bcf-a4a1-e4c2e8403979
-description: DeleteFolder-Vorgang Ordnern aus einem Postfach gelöscht.
-ms.openlocfilehash: 0fd7c9d4b04a706dcdb83f41087eaa4f3d45f129
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der DeleteFolder-Vorgang löscht Ordner aus einem Postfach.
+ms.openlocfilehash: e9bb9199027c2af2cbbb664ef7ad4fa70b7ef718
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757917"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455744"
 ---
 # <a name="deletefolder-operation"></a>DeleteFolder-Vorgang
 
-**DeleteFolder** -Vorgang Ordnern aus einem Postfach gelöscht. 
+Der **DeleteFolder** -Vorgang löscht Ordner aus einem Postfach. 
   
-## <a name="deletefolder-request-example"></a>DeleteFolder-anforderungsbeispiel
+## <a name="deletefolder-request-example"></a>DeleteFolder-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel eine Anforderung **DeleteFolder** veranschaulicht eine Anforderung zum Löschen eines Ordners bilden. 
+Im folgenden Beispiel einer **DeleteFolder** -Anforderung wird gezeigt, wie Sie eine Anforderung zum Löschen eines Ordners bilden. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <DeleteFolder xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <DeleteFolder xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                   DeleteType="HardDelete" >
       <FolderIds>
         <t:FolderId Id="AS4AUnVz=" />
@@ -47,12 +47,12 @@ Im folgenden Beispiel eine Anforderung **DeleteFolder** veranschaulicht eine Anf
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-In diesem Beispiel werden ein harte löschen für den Ordner.
+In diesem Beispiel wird ein harter Löschvorgang für den Ordner ausgeführt.
   
 > [!NOTE]
-> Die Ordner-ID wurde gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Ordner-ID wurde verkürzt, um die Lesbarkeit zu erhalten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -65,15 +65,15 @@ In der Anforderung werden folgende Elemente verwendet:
 - [FolderId](folderid.md)
     
 > [!NOTE]
-> Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist. 
+> Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist. 
   
-Wenn andere Optionen für die Anforderungsnachricht des Vorgangs **DeleteFolder** suchen möchten, verwenden Sie die Schemahierarchie. Starten Sie das [DeleteFolder](deletefolder.md) -Element. 
+Um andere Optionen für die Anforderungsnachricht des **DeleteFolder** -Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [DeleteFolder](deletefolder.md) -Element. 
   
 ## <a name="successful-deletefolder-response"></a>Erfolgreiche DeleteFolder-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **DeleteFolder** . 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **DeleteFolder** -Anforderung. 
   
 ### <a name="code"></a>Code
 
@@ -84,12 +84,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **Dele
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <DeleteFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <DeleteFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:DeleteFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -100,7 +100,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **Dele
 </soap:Envelope>
 ```
 
-### <a name="response-elements"></a>Antwortelemente
+### <a name="response-elements"></a>Response-Elemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -114,13 +114,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-Wenn andere Optionen für die Antwortnachricht des Vorgangs **DeleteFolder** suchen möchten, verwenden Sie die Schemahierarchie. Starten Sie das [DeleteFolderResponse](deletefolderresponse.md) -Element. 
+Um andere Optionen für die Antwortnachricht des **DeleteFolder** -Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [DeleteFolderResponse](deletefolderresponse.md) -Element. 
   
 ## <a name="deletefolder-error-response"></a>DeleteFolder-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine **DeleteFolder** -Anforderung. Der Fehler wurde durch eine Anforderung an einen Ordner löschen, der nicht im Postfach vorhanden war. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **DeleteFolder** -Anforderung. Der Fehler wurde durch eine Anforderung zum Löschen eines Ordners verursacht, der nicht im Postfach vorhanden war. 
   
 ### <a name="code"></a>Code
 
@@ -131,12 +131,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **DeleteFolder** -Anforde
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <DeleteFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <DeleteFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:DeleteFolderResponseMessage ResponseClass="Error">
           <m:MessageText>The specified object was not found in the store.</m:MessageText>
@@ -149,11 +149,11 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **DeleteFolder** -Anforde
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-**DeleteFolder** -Vorgang kann nicht auf definierte Ordner verwendet werden. 
+Der **DeleteFolder** -Vorgang kann nicht für Distinguished Folders verwendet werden. 
   
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
@@ -171,10 +171,10 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Wenn andere Optionen für die Fehlermeldung Antwort des Vorgangs **DeleteFolder** suchen möchten, verwenden Sie die Schemahierarchie. Starten Sie das [DeleteFolderResponse](deletefolderresponse.md) -Element. 
+Weitere Optionen für die Fehlerantwort Meldung des **DeleteFolder** -Vorgangs finden Sie unter Durchsuchen der Schemahierarchie. Beginnen Sie mit dem [DeleteFolderResponse](deletefolderresponse.md) -Element. 
   
 ## <a name="see-also"></a>Siehe auch
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
-- [Löschen von Ordnern](http://msdn.microsoft.com/library/1958add5-5071-4239-adb2-40f7a7d74aee%28Office.15%29.aspx)
+- [Löschen von Ordnern](https://msdn.microsoft.com/library/1958add5-5071-4239-adb2-40f7a7d74aee%28Office.15%29.aspx)
 

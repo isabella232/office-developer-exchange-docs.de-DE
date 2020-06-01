@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 350d7b46-9260-41a7-8613-3cb8cc1b29a5
-description: 'Zuletzt geändert: 17 September 2015'
-ms.openlocfilehash: 1b5484467def0bf3d22ba0707357977d5ed461ff
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 'Letzte Änderung: September 17, 2015'
+ms.openlocfilehash: 5614ac2c6428da9b6845769a9335486d3ded5754
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757197"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455828"
 ---
 # <a name="monitoring"></a>Überwachung
   
 **Gilt für:** Exchange Server 2013
   
-Das **monitoring** -Element enthält Konfigurationsinformationen, die definiert, wie und wann die Front-End-Transport-Dienst oder den Transportdienst Agents überwacht, die installiert werden. 
+Das **Monitoring** -Element enthält Konfigurationsinformationen, die definieren, wie und wann der Front-End-Transport-Dienst oder der Transportdienst Agents überwacht, die installiert sind. 
   
 - [Konfiguration](configuration.md)  
 - [mexRuntime](mexruntime.md)  
@@ -36,7 +36,7 @@ Das **monitoring** -Element enthält Konfigurationsinformationen, die definiert,
 </monitoring>
 ```
 
-**MonitoringType (ComplexType)**
+**monitoringtype (complexType)**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -50,25 +50,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[agentExecution](agentexecution.md) <br/> |Definiert die Zeit in Millisekunden an, für den Clientzugriff oder dem Postfachserver zu warten, bis ein Agent zurückgeben, ein Ereignis, bevor in das Ereignisprotokoll geschrieben.  <br/> |
-|[messageSnapshot](messagesnapshot.md) <br/> |Enthält ein Attribut, das angibt, ob das Pipeline Tracing-Feature für den Clientzugriff oder dem Postfachserver aktiviert ist.  <br/> |
+|[agentExecution](agentexecution.md) <br/> |Definiert die Zeit (in Millisekunden) für den Client Zugriff oder den Postfachserver, um zu warten, bis ein Agent von einem Ereignis zurückkehrt, bevor er in das Ereignisprotokoll schreibt.  <br/> |
+|[messageSnapshot](messagesnapshot.md) <br/> |Enthält ein Attribut, das angibt, ob das Feature für die Pipelineablaufverfolgung für den Client Zugriffs-oder den Postfachserver aktiviert ist.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[mexRuntime](mexruntime.md) <br/> |Enthält Elemente, die definieren, Konfigurationsinformationen für die Überwachung durch den Agenten und Konfigurationsinformationen für SMTP und routing-Agents, die installiert werden.  <br/> |
+|[mexRuntime](mexruntime.md) <br/> |Enthält Elemente, die Konfigurationsinformationen für die Agent-Überwachung und Konfigurationsinformationen für die installierten SMTP-und Routing-Agents definieren.  <br/> |
    
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |Diese Datei ist nicht auf einen Namespace definieren.  <br/> |
+|Namespace  <br/> |In dieser Datei wird kein Namespace definiert.  <br/> |
 |Name des Schemas  <br/> |Nicht verfügbar.  <br/> |
 |Überprüfungsdatei  <br/> |Nicht verfügbar.  <br/> |
-|Leer kann sein  <br/> |Falsch.  <br/> |
+|Leer kann sein  <br/> |"False".  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Agents Datei Konfigurationselemente für Exchange 2013](agents-configuration-file-elements-for-exchange-2013.md)
+- [Elemente der Konfigurationsdatei der Agents für Exchange 2013](agents-configuration-file-elements-for-exchange-2013.md)
 

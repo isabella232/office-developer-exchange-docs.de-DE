@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6a819bff-b6fc-4082-b311-179267ae8b4f
-description: Das JoinOnlineMeetingUrl-Element gibt die URL, um an eine onlinebesprechung teilnehmen.
-ms.openlocfilehash: 642cfaccefc5342f705d9555377c7ec985c09f6c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das JoinOnlineMeetingUrl-Element gibt die URL an, an der eine Onlinebesprechung teilnehmen soll.
+ms.openlocfilehash: 57fb6c144d673f7e25b98e5450759f42312564a4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830187"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44454127"
 ---
 # <a name="joinonlinemeetingurl"></a>JoinOnlineMeetingUrl
 
-Das **JoinOnlineMeetingUrl** -Element gibt die URL, um an eine onlinebesprechung teilnehmen. 
+Das **JoinOnlineMeetingUrl** -Element gibt die URL an, an der eine Onlinebesprechung teilnehmen soll. 
   
 ```XML
 <JoinOnlineMeetingUrl></JoinOnlineMeetingUrl>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **JoinOnlineMeetingUrl** -Elements ist die URL der online-Besprechung. 
+Der Textwert des **JoinOnlineMeetingUrl** -Elements ist die URL der Onlinebesprechung. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

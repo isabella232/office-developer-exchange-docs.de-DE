@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 56020078-50b4-4880-894a-a9f234033cfb
-description: Das ItemClass-Element darstellt, die Nachrichtenklasse eines Elements.
-ms.openlocfilehash: 7f146a8472362b8f3cd4062a4af2ce452e204742
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ItemClass-Element stellt die Nachrichtenklasse eines Elements dar.
+ms.openlocfilehash: 31d46b2b41b4b22ca5afeb842d7b0e0d16677920
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830149"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455415"
 ---
 # <a name="itemclass"></a>ItemClass
 
-Das **ItemClass** -Element darstellt, die Nachrichtenklasse eines Elements. 
+Das **ItemClass** -Element stellt die Nachrichtenklasse eines Elements dar. 
   
 ```XML
 <ItemClass/>
@@ -50,8 +50,8 @@ Keine.
 |[Unterhaltung (ConversationType)](conversation-conversationtype.md) <br/> |Stellt eine einfache Unterhaltung dar.  <br/> |
 |[DeclineItem](declineitem.md) <br/> |Stellt eine ablehnen Antwort auf eine Besprechungsanfrage.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
-|[GlobalItemClasses](globalitemclasses.md) <br/> |Enthält eine Liste der Element-Klassen, die die Element-Klassen der Unterhaltungselemente in einem Postfach darstellt.  <br/> |
-|[Element](item.md) <br/> |Stellt ein generisches Exchange-Element.  <br/> |
+|[GlobalItemClasses](globalitemclasses.md) <br/> |Enthält eine Liste von Elementklassen, die alle Elementklassen der Unterhaltungselemente in einem Postfach darstellt.  <br/> |
+|[Element](item.md) <br/> |Stellt ein generisches Exchange-Element dar.  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine Besprechungsabsage im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
@@ -63,19 +63,19 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der den Typ des Elements entspricht möglicherweise erforderlich. Angenommen, Sie erstellen oder aktualisieren eine Nachricht, die IPM. Hinweis oder einer anderen Klasse, die mit einer Meldung konsistent ist ist erforderlich. Ein leerer Wert ist nicht zulässig. Wenn Sie erstellen oder Aktualisieren eines Elements, ein leerer Typ ist jedoch gültig.
+Möglicherweise ist ein Textwert erforderlich, der mit dem Typ des Elements übereinstimmt. Wenn Sie beispielsweise eine Nachricht erstellen oder aktualisieren, wird das IPM. Hinweis oder eine andere Klasse, die mit einer Nachricht konsistent ist, ist erforderlich. Ein leerer Wert ist nicht zulässig. Wenn Sie jedoch ein Element erstellen oder aktualisieren, ist ein leerer Typ gültig.
   
-Ein Fehler wird zurückgegeben, wenn die **ItemClass** auf einen Wert festgelegt ist, die mit den Elementtyp inkonsistent ist. Beispielsweise kann eine Nachricht **ItemClass** der **ItemClass** -Wert für einen Vorgang festgelegt werden. 
+Wenn das **ItemClass** auf einen Wert festgelegt ist, der mit dem Elementtyp inkonsistent ist, wird ein Fehler zurückgegeben. Beispielsweise kann die **ItemClass** einer Nachricht nicht auf den **ItemClass** -Wert für eine Aufgabe festgelegt werden. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |

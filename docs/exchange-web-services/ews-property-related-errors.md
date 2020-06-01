@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1c4c5969-7bdd-4021-be0e-cae99e86cf2c
 description: Hier finden Sie Informationen zur Behandlung von Fehlern in der Anwendung EWS-Eigenschaft im Zusammenhang.
-ms.openlocfilehash: f214ab40c3717178c6957a9da93bdf89999fc1d3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 5863ab4e06bd968aa38b6fdec471e09c5e23f54a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756834"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455408"
 ---
 # <a name="ews-property-related-errors"></a>EWS-Eigenschaft-bezogene Fehler
 
@@ -42,7 +42,7 @@ Die meisten EWS-Clientanwendungen werden Eigenschaften verwenden, d. h., dass Si
 |ErrorNoFolderClassOverride  <br/> |Legen Sie die Ordner-Klasse auf einen neuen Ordner, der nicht den Basisordner-Typ ist.  <br/> |Verwenden eine generische Ordnertyp, um die Klasse Ordner festzulegen.  <br/> |
 |ErrorNoPropertyTagForCustomProperties  <br/> |Eine benutzerdefinierte erweiterte Eigenschaft zu verweisen, indem dessen Eigenschafts-Tag.  <br/> |Aktualisieren den Code, um die benutzerdefinierten verweisen extended-Eigenschaft von Eigenschaftensatz-ID und den Eigenschaftennamen oder Versendung Eigenschaftenbezeichner.  <br/> |
 |ErrorObjectTypeChanged  <br/> |Festlegen Sie oder aktualisieren Sie die Item-Klasse für ein Element, das übereinstimmt mit dieses Schematyps.  <br/> |Aktualisieren von Code, der Item-Klasse den Elementtyp Schema übereinstimmt.  <br/> |
-|ErrorPropertyUpdate  <br/> |Aktualisieren Sie eine Eigenschaft mit einer Ungültiger Eigenschaftswert.  <br/> |Überprüfen vor dem Absenden in einer Anforderung [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) Wert der Eigenschaft.  <br/> |
+|ErrorPropertyUpdate  <br/> |Aktualisieren Sie eine Eigenschaft mit einer Ungültiger Eigenschaftswert.  <br/> |Überprüfen vor dem Absenden in einer Anforderung [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) Wert der Eigenschaft.  <br/> |
 |ErrorRequiredPropertyMissing  <br/> |Senden Sie eine CreateAttachment-Anforderung, die eine erforderliche Eigenschaft fehlt.  <br/> |Aktualisieren den Code, um die fehlenden Eigenschaftensatz gemäß der Eigenschaftenpfad in der Antwort zurückgegeben.  <br/> |
 |ErrorUnsupportedMapiPropertyType  <br/> |Verwenden Sie erweiterte Eigenschaftentypen-Objekt vom Typ, Objektarray, Fehler oder Null.  <br/> |Aktualisieren den Code, um die eingeschränkte erweiterte Eigenschaftentypen nicht verwendet werden.  <br/> |
 |ErrorUnsupportedPathForQuery  <br/> |Verwenden Sie einen Pfad nicht unterstützte Eigenschaft in einer Einschränkung für die Suche.  <br/> |Ändern die Einschränkung suchen, um den Eigenschaftentyp Pfad ausschließen.  <br/> |

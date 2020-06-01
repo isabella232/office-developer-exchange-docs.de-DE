@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 00422885-0e7b-4b50-a9ca-01f24ff9858f
-description: Das GetImItemListResponse-Element definiert eine Antwort auf eine GetImItemList an.
-ms.openlocfilehash: 60d0d9a36b89ad861a6c17702cf48da901138472
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetImItemListResponse-Element definiert eine Antwort auf eine GetImItemList-Anforderung.
+ms.openlocfilehash: e1e6e30bc1304cf4898b125d3a041c1f0a8a9ab6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758693"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456052"
 ---
 # <a name="getimitemlistresponse"></a>GetImItemListResponse
 
-Das **GetImItemListResponse** -Element definiert eine Antwort auf eine **GetImItemList** an. 
+Das **GetImItemListResponse** -Element definiert eine Antwort auf eine **GetImItemList** -Anforderung. 
   
 ```XML
 <GetImItemListResponse>
@@ -40,25 +40,25 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [ImItemList](imitemlist.md)
+[MessageText](messagetext.md)  |  [Response Code](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [Messagexml verwendet](messagexml.md)  |  [Imitemlist](imitemlist.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

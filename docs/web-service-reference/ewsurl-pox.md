@@ -1,22 +1,22 @@
 ---
-title: "\"Ewsurl\" (POX)"
+title: EwsUrl (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 73cebc8c-770a-4f1b-b93e-51e7e2f3e342
-description: Das Element "ewsurl" gibt die URL der besten Endpunktinstanz für die Exchange-Webdienste (EWS) für einen e-Mail-aktivierten Benutzer.
-ms.openlocfilehash: c968b13a069cdc15803c1eb491244b4dc1aa422f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EwsUrl-Element gibt die URL der besten Endpunkt Instanz für Exchange-Webdienste für einen e-Mail-aktivierten Benutzer an.
+ms.openlocfilehash: 295e65ddf14524a41c5cb714df78703dbf855a05
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758294"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44454351"
 ---
-# <a name="ewsurl-pox"></a>"Ewsurl" (POX)
+# <a name="ewsurl-pox"></a>EwsUrl (POX)
 
-Das Element **"ewsurl"** gibt die URL der besten Endpunktinstanz für die Exchange-Webdienste (EWS) für einen e-Mail-aktivierten Benutzer. 
+Das **EwsUrl** -Element gibt die URL der besten Endpunkt Instanz für Exchange-Webdienste für einen e-Mail-aktivierten Benutzer an. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -26,7 +26,7 @@ Das Element **"ewsurl"** gibt die URL der besten Endpunktinstanz für die Exchan
   
 [Protokoll (POX)](protocol-pox.md)
   
-["Ewsurl" (POX)](ewsurl-pox.md)
+[EwsUrl (POX)](ewsurl-pox.md)
   
 ```XML
 <EwsUrl/>
@@ -48,15 +48,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt die URL des EWS-Endpunkts für den Benutzer.
+Der Wert Text stellt die URL des EWS-Endpunkts für den Benutzer dar.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Element **"ewsurl"** ist ein optionales untergeordnetes Element des **Protokoll** -Elements. 
+Das **EwsUrl** -Element ist ein optionales untergeordnetes Element des **Protocol** -Elements. 
   
 ## <a name="see-also"></a>Siehe auch
 
