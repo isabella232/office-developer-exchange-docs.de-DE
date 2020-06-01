@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e0ee8f30-529b-4d87-8bc0-b6616e75fb6b
-description: Das ApplyConversationAction-Element definiert eine Anforderung an die Aktionen auf Elemente in einer Unterhaltung anwenden.
-ms.openlocfilehash: 1b672c6e6d2f60e50215417be7100e9cd77e2a58
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ApplyConversationAction-Element definiert eine Anforderung zum Anwenden von Aktionen auf Elemente in einer Unterhaltung.
+ms.openlocfilehash: 659b3392778bb1a318c3942a0c8e314f12110c12
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757355"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461688"
 ---
 # <a name="applyconversationaction"></a>ApplyConversationAction
 
-Das **ApplyConversationAction** -Element definiert eine Anforderung an die Aktionen auf Elemente in einer Unterhaltung anwenden. 
+Das **ApplyConversationAction** -Element definiert eine Anforderung zum Anwenden von Aktionen auf Elemente in einer Unterhaltung. 
   
 [ApplyConversationAction](applyconversationaction.md)
   
@@ -44,7 +44,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ConversationActions](conversationactions.md) <br/> |Enthält eine Auflistung von Unterhaltungen und die Aktionen darauf anwenden.  <br/> |
+|[ConversationActions](conversationactions.md) <br/> |Enthält eine Auflistung von Unterhaltungen und die Aktionen, die auf diese angewendet werden sollen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -54,17 +54,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

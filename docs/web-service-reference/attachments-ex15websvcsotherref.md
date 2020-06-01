@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b470e614-34bb-44f0-8790-7ddbdcbbd29d
-description: Das Element Anlagen enthält die Elemente oder Dateien, die ein Element in der Exchange-Informationsspeicher zugeordnet sind.
-ms.openlocfilehash: 8aa5c0849122f5ca83485459fce5d0fea449c974
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Attachments-Element enthält die Elemente oder Dateien, die an ein Element im Exchange-Informationsspeicher angefügt sind.
+ms.openlocfilehash: a9f79cd79f19e6226703c99c53c91efed600f495
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757398"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461534"
 ---
 # <a name="attachments"></a>Anlagen
 
-Das Element **Anlagen** enthält die Elemente oder Dateien, die ein Element in der Exchange-Informationsspeicher zugeordnet sind. 
+Das **Attachments** -Element enthält die Elemente oder Dateien, die an ein Element im Exchange-Informationsspeicher angefügt sind. 
   
 ```xml
 <Attachments>
@@ -43,19 +43,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange-Element, das mit einem anderen Exchange-Element zugeordnet ist.  <br/> |
-|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei, die ein Element in der Exchange-Informationsspeicher zugeordnet ist.  <br/> |
+|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange-Element dar, das an ein anderes Exchange-Element angefügt ist.  <br/> |
+|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die an ein Element im Exchange-Informationsspeicher angefügt ist.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CreateAttachment](createattachment.md) <br/> |Definiert eine Anforderung an eine Anlage zu einem Element in der Exchange-Speicher zu erstellen.<br/><br/> Es folgt der XPath-Ausdruck, der dieses Element:`/CreateAttachment` <br/> |
-|[AcceptItem](acceptitem.md) <br/> | Stellt eine Accept-Antwort auf eine Besprechungsanfrage.<br/><br/>Im folgenden sind einige der XPath-Ausdrücke auf dieses Element:<ul><li>`/CreateItem/Items`</li><li>`/MeetingRequest/ConflictingMeetings` </li><li>`/SetItemField/CalendarItem/ConflictingMeetings`</li><li>`/AppendToItemField/CalendarItem/ConflictingMeetings`</li><li>`/AcceptItem/Attachments/ItemAttachment/CalendarItem/ConflictingMeetings`</li><li>`/DeclineItem/Attachments/ItemAttachment/CalendarItem/ConflictingMeetings`</li><li>`/UpdateItem/ItemChanges/ItemChange/Updates/AppendToItemField/CalendarItem/AdjacentMeetings`</li><li>`/CreateAttachmentResponseMessage/Attachments/ItemAttachment/CalendarItem/AdjacentMeetings`</li><li>`/GetAttachmentResponseMessage/Attachments/ItemAttachment/CalendarItem/AdjacentMeetings`</li></ul> |
+|[CreateAttachment](createattachment.md) <br/> |Definiert eine Anforderung zum Erstellen einer Anlage für ein Element in der Exchange-Informationsspeicher.<br/><br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/CreateAttachment` <br/> |
+|[AcceptItem](acceptitem.md) <br/> | Stellt eine Accept-Antwort auf eine Besprechungsanfrage.<br/><br/>Im folgenden finden Sie einige der XPath-Ausdrücke für dieses Element:<ul><li>`/CreateItem/Items`</li><li>`/MeetingRequest/ConflictingMeetings` </li><li>`/SetItemField/CalendarItem/ConflictingMeetings`</li><li>`/AppendToItemField/CalendarItem/ConflictingMeetings`</li><li>`/AcceptItem/Attachments/ItemAttachment/CalendarItem/ConflictingMeetings`</li><li>`/DeclineItem/Attachments/ItemAttachment/CalendarItem/ConflictingMeetings`</li><li>`/UpdateItem/ItemChanges/ItemChange/Updates/AppendToItemField/CalendarItem/AdjacentMeetings`</li><li>`/CreateAttachmentResponseMessage/Attachments/ItemAttachment/CalendarItem/AdjacentMeetings`</li><li>`/GetAttachmentResponseMessage/Attachments/ItemAttachment/CalendarItem/AdjacentMeetings`</li></ul> |
 |[DeclineItem](declineitem.md) <br/> |Stellt eine ablehnen Antwort auf eine Besprechungsanfrage.  <br/> |
 |[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |Stellt eine mit Vorbehalt Antworten auf eine Besprechungsanfrage.  <br/> |
 |[RemoveItem](removeitem.md) <br/> |Entfernt ein Element aus dem Exchange-Informationsspeicher.  <br/> |
-|[Element](item.md) <br/> |Stellt ein generisches Exchange-Element.  <br/> |
+|[Element](item.md) <br/> |Stellt ein generisches Exchange-Element dar.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort im Exchange-Informationsspeicher dar.  <br/> |
@@ -65,20 +65,20 @@ Keine.
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
-|[CreateAttachmentResponseMessage](createattachmentresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer CreateAttachment Anforderung.  <br/> |
+|[CreateAttachmentResponseMessage](createattachmentresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen CreateAttachment-Anforderung.  <br/> |
 |[GetAttachmentResponseMessage](getattachmentresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer GetAttachment-Anforderung.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **Anlagen** Elemente über die gleichen untergeordneten Elemente aber basieren auf verschiedene Arten: **ArrayOfAttachmentsType** und **NonEmptyArrayOfAttachmentsType**. Die Datentypen definiert, ob eine untergeordnetes Element erforderlich ist. Die **ArrayOfAttachmentsType** wird nur in der Antwortnachricht verwendet. Es ist außerdem zu beachten, dass diese Elemente in der Nachrichten und der Typen Namespaces auftreten. 
+Die **Attachments** -Elemente weisen dieselben untergeordneten Elemente auf, basieren jedoch auf unterschiedlichen Typen: **ArrayOfAttachmentsType** und **NonEmptyArrayOfAttachmentsType**. Die Typen definieren, ob ein untergeordnetes Element erforderlich ist. Das **ArrayOfAttachmentsType** wird nur in der Antwortnachricht verwendet. Beachten Sie auch, dass diese Elemente sowohl im Messages-als auch im types-Namespace vorkommen. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

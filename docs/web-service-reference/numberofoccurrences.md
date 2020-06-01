@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9ec86ceb-b271-4718-97ca-b6a532ea7223
-description: Das NumberOfOccurrences-Element enthält die Anzahl der Vorkommen eines sich wiederholenden-Elements.
-ms.openlocfilehash: c18a20f14395aead304bd0158ff64c70e51ec165
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das NumberOfOccurrences-Element enthält die Anzahl der Vorkommen eines wiederkehrenden Elements.
+ms.openlocfilehash: f9b72611e87c5f2b98deb14c25988e574a324491
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830656"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462542"
 ---
 # <a name="numberofoccurrences"></a>NumberOfOccurrences
 
-Das **NumberOfOccurrences** -Element enthält die Anzahl der Vorkommen eines sich wiederholenden-Elements. 
+Das **NumberOfOccurrences** -Element enthält die Anzahl der Vorkommen eines wiederkehrenden Elements. 
   
 ```xml
 <NumberOfOccurrences/>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[NumberedRecurrence](numberedrecurrence.md) <br/> |Beschreibt das Startdatum und die Anzahl der Vorkommen eines sich wiederholenden-Elements.  <br/> |
+|[NumberedRecurrence](numberedrecurrence.md) <br/> |Beschreibt das Startdatum und die Anzahl der Vorkommen eines wiederkehrenden Elements.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist eine ganze Zahl, die die Anzahl der Vorkommen eines sich wiederholenden-Elements darstellt. Der Wert muss eine ganze Zahl im Bereich von 1 bis 999.
+Der Textwert ist eine ganze Zahl, die die Anzahl der Vorkommen eines wiederkehrenden Elements darstellt. Der Wert muss eine ganze Zahl im Bereich von 1 bis 999 sein.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

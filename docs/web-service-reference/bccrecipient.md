@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4ef0cff5-8a5a-4d76-9d2b-938774d8fc1b
-description: Das BccRecipient-Element stellt einen Empfänger eine Blindkopie (Bcc) einer e-Mail-Nachricht empfangen.
-ms.openlocfilehash: bed58536263196a61651493e92a4dcd1df3f5ec9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das BccRecipient-Element stellt einen Empfänger dar, der eine Blindkopie (BCC) einer e-Mail-Nachricht empfängt.
+ms.openlocfilehash: 8296af1d74338bdfb1f4cb7bc7449ad91a9cd531
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757434"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461527"
 ---
 # <a name="bccrecipient"></a>BccRecipient
 
-Das **BccRecipient** -Element stellt einen Empfänger eine Blindkopie (Bcc) einer e-Mail-Nachricht empfangen. 
+Das **BccRecipient** -Element stellt einen Empfänger dar, der eine Blindkopie (BCC) einer e-Mail-Nachricht empfängt. 
   
 ```XML
 <BccRecipient>true | false</BccRecipient>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Enthält Informationen für ein einzelnes Ereignis für einen Empfänger.  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Enthält Informationen zu einem einzelnen Ereignis für einen Empfänger.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Dieses Element kann **true** oder **false**sein. Der Wert **true** gibt an, dass der Empfänger blind Carbon Copy kopiert wird; der Wert **false** gibt an, dass der Empfänger nicht blind Carbon Copy kopiert ist. 
+Dieses Element kann entweder **true** oder **false**sein. Der Wert **true** gibt an, dass der Empfänger Blind Kohlenstoff kopiert ist; der Wert **false** gibt an, dass der Empfänger nicht Blind Carbon kopiert wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

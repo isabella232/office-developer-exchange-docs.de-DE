@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 340af0cd-9f12-44ab-b8f1-21d107c8d0c9
-description: Das Konstante Element identifiziert einen konstanten Wert in einer Einschränkung.
-ms.openlocfilehash: 73912bc1981c5d54040f7c4a563ad805916fe721
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das constant-Element identifiziert einen konstanten Wert in einer Einschränkung.
+ms.openlocfilehash: 6cb2eaa4227a8fd0985e8ff5a15d647c3bb1cd6a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757605"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461555"
 ---
 # <a name="constant"></a>Konstante
 
-Das **Konstanten** Element identifiziert einen konstanten Wert in einer Einschränkung. 
+Das **Constant** -Element identifiziert einen konstanten Wert in einer Einschränkung. 
   
 ```xml
 <Constant Value="" />
@@ -36,7 +36,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Value** <br/> |Gibt den Wert in die Einschränkung vergleichen.  <br/> |
+|**Wert** <br/> |Gibt den Wert an, der in der Einschränkung verglichen werden soll.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -49,17 +49,17 @@ Keine.
 |[Enthält](contains.md) <br/> |Stellt einen Suchausdruck dar, der bestimmt, ob eine angegebene Eigenschaft den angegebenen konstanten Zeichenfolgewert enthält.  <br/> |
 |[FieldURIOrConstant](fielduriorconstant.md) <br/> |Stellt eine Eigenschaft oder einen konstanten Wert dar, der beim Vergleich mit einer anderen Eigenschaft verwendet werden soll.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der String-Wert in das **Value** -Attribut muss in den Typ umgewandelt werden können, die mit der verglichen werden soll. Wenn Sie eine Datum/Uhrzeit-Eigenschaft mit einem konstanten Wert verglichen werden, muss der Zeichenfolgenwert beispielsweise einen Datum/Uhrzeit darstellen. 
+Der Zeichenfolgenwert im **value** -Attribut muss in den Typ Coercible werden, den Sie vergleichen möchten. Wenn Sie beispielsweise eine Date/Time-Eigenschaft mit einem konstanten Wert vergleichen, muss der Zeichenfolgenwert ein Datum/eine Uhrzeit darstellen. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 4e051617-4eea-47d0-871a-ea1f17a0f711
-description: Users-Element stellt eine Sammlung von E-mail-Adressen der Benutzer für die Einstellungen abgerufen werden soll.
-ms.openlocfilehash: d7655f0020a315dcb32adbbc58610ca0e630c1fc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das users-Element stellt eine Auflistung von e-Mail-Adressen der Benutzer dar, für die Einstellungen abgerufen werden sollen.
+ms.openlocfilehash: 851447a2918e365b7c5d8812a61c9d425d26ffa2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839464"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461898"
 ---
 # <a name="users-soap"></a>Benutzer (SOAP)
 
-**Users** -Element stellt eine Sammlung von E-mail-Adressen der Benutzer für die Einstellungen abgerufen werden soll. 
+Das **Users** -Element stellt eine Auflistung von e-Mail-Adressen der Benutzer dar, für die Einstellungen abgerufen werden sollen. 
   
 ```XML
 <Users>
@@ -39,26 +39,26 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Benutzer (SOAP)](user-soap.md) <br/> |Stellt die e-Mail-Adresse eines Benutzers an.  <br/> |
+|[Benutzer (SOAP)](user-soap.md) <br/> |Stellt die e-Mail-Adresse eines Benutzers dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUserSettingsRequest (SOAP)](getusersettingsrequest-soap.md) <br/> |Stellt eine Anforderung an die angegebene Einstellungen für einen oder mehrere Benutzer abzurufen.  <br/> |
-|[Anforderung (SOAP)](request-soap.md) <br/> |Enthält die angeforderten Konfigurationseinstellungen und die Zielbenutzer.  <br/> |
+|[GetUserSettingsRequest (SOAP)](getusersettingsrequest-soap.md) <br/> |Stellt eine Anforderung zum Abrufen der angegebenen Einstellungen für einen oder mehrere Benutzer dar.  <br/> |
+|[Request (SOAP)](request-soap.md) <br/> |Enthält die angeforderten Konfigurationseinstellungen und die Zielbenutzer.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

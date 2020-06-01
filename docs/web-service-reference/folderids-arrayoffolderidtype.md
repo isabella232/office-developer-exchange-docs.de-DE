@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4cc6b414-f702-4822-bb09-9771ab462700
 description: Das FolderIds-Element enthält eine Liste der Ordner Bezeichner.
-ms.openlocfilehash: 869856e807b688dbd7b1c4b4fb31f20f028010a0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 758801f528d8b2b33c9b4344fea77f2b90592bab
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758501"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461373"
 ---
 # <a name="folderids-arrayoffolderidtype"></a>FolderIds (ArrayOfFolderIdType)
 
@@ -40,19 +40,19 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Rolle](persona.md)
+[Persona](persona.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

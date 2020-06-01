@@ -1,5 +1,5 @@
 ---
-title: AttachmentId (GetAttachment und DeleteAttachment)
+title: Attachment-Nr (GetAttachment und DeleteAttachment-)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4bea1cb5-0a0f-4e14-9b09-f91af8cf9899
-description: Das Element AttachmentId identifiziert eine Anlage.
-ms.openlocfilehash: b0355b4a387c65e97fe973a1667e6b0a517ebf7e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Attachments-Element identifiziert eine einzelne Anlage.
+ms.openlocfilehash: 1096487490f6066f70d2da861b3015f0fbf5a68f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757395"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460855"
 ---
-# <a name="attachmentid-getattachment-and-deleteattachment"></a>AttachmentId (GetAttachment und DeleteAttachment)
+# <a name="attachmentid-getattachment-and-deleteattachment"></a>Attachment-Nr (GetAttachment und DeleteAttachment-)
 
-Das Element **AttachmentId** identifiziert eine Anlage. 
+Das **Attachments** -Element identifiziert eine einzelne Anlage. 
   
 ```xml
 <AttachmentId Id="" />
@@ -36,7 +36,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Id** <br/> |Gibt den Bezeichner der Anlage.  <br/> |
+|**Id** <br/> |Gibt die Anlagen-ID an.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -46,17 +46,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AttachmentIds](attachmentids.md) <br/> | Ein Array mit den IDs der Anlage enthält.<br/><br/>  Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>`/DeleteAttachment/AttachmentIds`<br/><br/>`/GetAttachment/AttachmentIds` <br/> |
+|[AttachmentIds](attachmentids.md) <br/> | Enthält ein Array von Anlagen Bezeichnern.<br/><br/>  Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>`/DeleteAttachment/AttachmentIds`<br/><br/>`/GetAttachment/AttachmentIds` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

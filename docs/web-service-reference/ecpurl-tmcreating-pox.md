@@ -1,22 +1,22 @@
 ---
-title: EcpUrl-TmCreating (POX)
+title: EcpUrl-tmCreating (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c942758e-5ff3-4acb-9080-b8672e56f696
-description: Das EcpUrl TmCreating-Element gibt eine partielle URL, die kombiniert werden kann, mit dem EcpUrl (POX) Elementwert generiert eine URL, die zum Erstellen eines neuen Postfachs für die Website verwendet werden können.
-ms.openlocfilehash: c7dbaf3f3954f9233b888957fe79bf6db7ae5880
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EcpUrl-tmCreating-Element gibt eine partielle URL an, die mit dem Wert des EcpUrl (POX)-Elements kombiniert werden kann, um eine URL zu generieren, die zum Erstellen eines neuen websitepostfachs verwendet werden kann.
+ms.openlocfilehash: 93ea3f5752dab0028c0732e5e79c5690e35bd059
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758128"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462059"
 ---
-# <a name="ecpurl-tmcreating-pox"></a>EcpUrl-TmCreating (POX)
+# <a name="ecpurl-tmcreating-pox"></a>EcpUrl-tmCreating (POX)
 
-Das **EcpUrl TmCreating** -Element gibt eine partielle URL, die kombiniert werden kann, mit dem [EcpUrl (POX)](ecpurl-pox.md) Elementwert generiert eine URL, die zum Erstellen eines neuen Postfachs für die Website verwendet werden können. 
+Das **EcpUrl-tmCreating-** Element gibt eine partielle URL an, die mit dem Wert des [EcpUrl (POX)](ecpurl-pox.md) -Elements kombiniert werden kann, um eine URL zu generieren, die zum Erstellen eines neuen websitepostfachs verwendet werden kann. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -26,7 +26,7 @@ Das **EcpUrl TmCreating** -Element gibt eine partielle URL, die kombiniert werde
   
 [Protokoll (POX)](protocol-pox.md)
   
-[EcpUrl-TmCreating (POX)](ecpurl-tmcreating-pox.md)
+[EcpUrl-tmCreating (POX)](ecpurl-tmcreating-pox.md)
   
 ```XML
 <EcpUrl-tmCreating/>
@@ -48,15 +48,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt eine partielle URL, die kombiniert werden kann, mit dem [EcpUrl (POX)](ecpurl-pox.md) Elementwert generiert eine URL, die zum Erstellen eines neuen Postfachs für die Website verwendet werden können. 
+Der Textwert stellt eine partielle URL dar, die mit dem [EcpUrl (POX)](ecpurl-pox.md) -Elementwert kombiniert werden kann, um eine URL zu generieren, die zum Erstellen eines neuen websitepostfachs verwendet werden kann. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **EcpUrl TmCreating** -Element ist ein optionales untergeordnetes Element des **Protokoll** -Elements. 
+Das **EcpUrl-tmCreating-** Element ist ein optionales untergeordnetes Element des **Protocol** -Elements. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dcff5ccc-31dc-4941-9f71-d6519133aebb
-description: Das ExportAllowed-Element gibt an, ob exportieren aktiviert ist.
-ms.openlocfilehash: 5c07941e0a79394bbdaa1a1f62b20adedfe7a9bf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ExportAllowed-Element gibt an, ob der Export aktiviert ist.
+ms.openlocfilehash: f5a9aa3040c45d535ef338010bb37bcedb797ffc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758320"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460631"
 ---
 # <a name="exportallowed"></a>ExportAllowed
 
-Das **ExportAllowed** -Element gibt an, ob exportieren aktiviert ist. 
+Das **ExportAllowed** -Element gibt an, ob der Export aktiviert ist. 
   
 ```XML
 <ExportAllowed>true | false</ExportAllowed>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -40,13 +40,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RightsManagementLicenseData](rightsmanagementlicensedata.md) <br/> |Gibt Informationen zu den Rights Management-Lizenz.  <br/> |
+|[RightsManagementLicenseData](rightsmanagementlicensedata.md) <br/> |Gibt Informationen zur Rechteverwaltungslizenz an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **ExportAllowed** -Element gibt an, dass exportieren zulässig ist. Der Wert **false** gibt an, dass exportieren nicht zulässig ist. 
+Der Textwert **true** für das **ExportAllowed** -Element gibt an, dass der Export zulässig ist. Der Wert **false** gibt an, dass der Exportvorgang nicht zulässig ist. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element ist optional.
   
@@ -54,13 +54,13 @@ Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

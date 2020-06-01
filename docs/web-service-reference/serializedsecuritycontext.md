@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: a02c4fc1-ed1a-40d9-a18e-6cfdae21a690
-description: Das SerializedSecurityContext-Element wird in der Kopfzeile (SOAP = Simple Object Access Protocol) für tokenserialisierung für Server-zu-Server-Authentifizierung verwendet. Tokenserialisierung wird nicht unterstützt.
-ms.openlocfilehash: c5590551dc0780d918b05902e4f48fb9d1390b59
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SerializedSecurityContext-Element wird in der Simple Object Access Protocol (SOAP) Kopfzeile für die Token-Serialisierung in der Server-zu-Server-Authentifizierung verwendet. Die Serialisierung von Token wird nicht unterstützt.
+ms.openlocfilehash: 58fea1c7f613315d59e81935561f92f318afc769
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831363"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462052"
 ---
 # <a name="serializedsecuritycontext"></a>SerializedSecurityContext
 
-Das **SerializedSecurityContext** -Element wird in der Kopfzeile (SOAP = Simple Object Access Protocol) für tokenserialisierung für Server-zu-Server-Authentifizierung verwendet. Tokenserialisierung wird nicht unterstützt. 
+Das **SerializedSecurityContext** -Element wird in der Simple Object Access Protocol (SOAP) Kopfzeile für die Token-Serialisierung in der Server-zu-Server-Authentifizierung verwendet. Die Serialisierung von Token wird nicht unterstützt. 
   
 ```xml
 <SerializedSecurityContext>
@@ -45,24 +45,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserSid](usersid.md) <br/> |Stellt die Security Descriptor Definition Language (SDDL) Formular der Benutzer Sicherheits-ID in einem serialisierten Sicherheit Kontext SOAP-Header.  <br/> |
-|[GroupSids](groupsids.md) <br/> |Stellt eine Auflistung von Sicherheits-IDs von Active Directory Directory Service Group-Objekt.  <br/> |
-|[RestrictedGroupSids](restrictedgroupsids.md) <br/> |Stellt die Gruppe Sicherheits-ID und die Attribute für eine eingeschränkte Gruppe.  <br/> |
-|[PrimarySmtpAddress](primarysmtpaddress.md) <br/> |Stellt die primäre Simple Mail Transfer Protocol (SMTP)-Adresse eines Kontos für Server-zu-Server-Autorisierung verwendet werden soll.  <br/> |
+|[UserSID](usersid.md) <br/> |Stellt das SDDL-Formular (Security Descriptor Definition Language) der Benutzer Sicherheits-ID in einem serialisierten Sicherheitskontext-SOAP-Header dar.  <br/> |
+|[GroupSids](groupsids.md) <br/> |Stellt eine Auflistung von Sicherheits-IDs für das Verzeichnisdienst-Gruppenobjekt Active Directory dar.  <br/> |
+|[RestrictedGroupSids](restrictedgroupsids.md) <br/> |Stellt die Gruppen Sicherheits-ID und die Attribute für eine eingeschränkte Gruppe dar.  <br/> |
+|[PrimarySmtpAddress](primarysmtpaddress.md) <br/> |Stellt die primäre Simple Mail Transfer Protocol (SMTP) Adresse eines Kontos dar, das für die Server-zu-Server-Autorisierung verwendet werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2007 ausgeführt wird, die die Clientzugriffsserver (CAS) Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs Server-Rolle (CAS) installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -74,5 +74,5 @@ Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichni
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Server-zu-Server-Autorisierung in Exchange-Webdienste](http://msdn.microsoft.com/library/f1610a20-672d-448b-8c00-5b0fbcaf31cb%28Office.15%29.aspx)
+[Server-zu-Server-Autorisierung in EWS](https://msdn.microsoft.com/library/f1610a20-672d-448b-8c00-5b0fbcaf31cb%28Office.15%29.aspx)
 

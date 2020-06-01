@@ -1,5 +1,5 @@
 ---
-title: CalendarUrl (MasterMailboxType)
+title: CalendarUrl (Master Mailbox Type)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7914995f-444b-4798-8c92-3c5b7d70042d
-description: Das Element CalendarUrl (MasterMailboxType) ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: 57e8c1133007b1ee204552edd59d16aa691f6dbe
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CalendarUrl (Master Mailbox Type)-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 249dcf3d42ccc5202a2a62bbbb67bc33a2fa2fff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757542"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460806"
 ---
-# <a name="calendarurl-mastermailboxtype"></a>CalendarUrl (MasterMailboxType)
+# <a name="calendarurl-mastermailboxtype"></a>CalendarUrl (Master Mailbox Type)
 
-Das Element **CalendarUrl (MasterMailboxType)** ist nur zur internen Verwendung vorgesehen. 
+Das **CalendarUrl (Master Mailbox Type)-** Element ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

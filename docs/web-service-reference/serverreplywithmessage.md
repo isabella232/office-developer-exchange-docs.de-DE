@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 113c6ff2-9592-44f0-b542-54e4d5122ccb
-description: Das ServerReplyWithMessage-Element gibt die ID der Vorlagennachricht, die als Antwort auf eingehende Nachrichten gesendet werden sollen.
-ms.openlocfilehash: f2d927ae18ac68523d4cdd173f0474fbbeb36c98
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ServerReplyWithMessage-Element gibt die ID der Vorlagen Nachricht an, die als Antwort auf eingehende Nachrichten gesendet werden soll.
+ms.openlocfilehash: faaa054018a17be3ff59b9fc385b3d846d39c3f1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831390"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461975"
 ---
 # <a name="serverreplywithmessage"></a>ServerReplyWithMessage
 
-Das **ServerReplyWithMessage** -Element gibt die ID der Vorlagennachricht, die als Antwort auf eingehende Nachrichten gesendet werden sollen. 
+Das **ServerReplyWithMessage** -Element gibt die ID der Vorlagen Nachricht an, die als Antwort auf eingehende Nachrichten gesendet werden soll. 
   
 ```XML
 <ServerReplyWithMessage>
@@ -29,7 +29,7 @@ Das **ServerReplyWithMessage** -Element gibt die ID der Vorlagennachricht, die a
 </ServerReplyWithMessage>
 ```
 
- **ItemIdType**
+ **Itemidtype**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Den eindeutigen Bezeichner und ein Änderungsprotokoll Schlüssel eines Elements in der Exchange-Speicher darstellt.  <br/> |
+|[ItemId](itemid.md) <br/> |Stellt den eindeutigen Bezeichner und den Änderungsschlüssel eines Elements in der Exchange-Informationsspeicher dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -54,17 +54,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

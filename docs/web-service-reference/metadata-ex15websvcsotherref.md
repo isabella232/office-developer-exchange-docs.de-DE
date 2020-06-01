@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c1cc609b-65ff-4998-8d2b-545f0fdcb54c
-description: Metadata-Element enthält die Metadaten für die Mail-app.
-ms.openlocfilehash: 8dd3a3db5a5e0afc1a23dad44d70fa3353c796f6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Metadata-Element enthält Metadaten zur Mail-app.
+ms.openlocfilehash: b7dd13936a25a43394b9a2d5eea8808fe08b4eb6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830459"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460589"
 ---
 # <a name="metadata"></a>Metadaten
 
-**Metadata** -Element enthält die Metadaten für die Mail-app. 
+Das **Metadata** -Element enthält Metadaten zur Mail-app. 
   
 ```XML
 <Metadata>
@@ -37,23 +37,23 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[EndNodeUrl](endnodeurl.md) | [AppStatus](appstatus-ex15websvcsotherref.md) | [ActionUrl](actionurl.md)
+[EndNodeUrl](endnodeurl.md)  |  [AppStatus](appstatus-ex15websvcsotherref.md)  |  [ActionUrl](actionurl.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [App](app.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> | http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> | https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Nicht zutreffend  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

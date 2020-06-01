@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 459ddb1c-8cff-4125-b6fa-dc93c183dee8
-description: Das HomeFaxes-Element gibt ein Array von Fax privat Zahlen und die Bezeichner der ihre Marken Quelle für die zugeordneten Rolle.
-ms.openlocfilehash: dd2cd8bba2c4cc7d08e88787d648e96ea996a251
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das HomeFaxes-Element gibt ein Array von privaten Faxnummern und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an.
+ms.openlocfilehash: d49eb9e12547e4011e4ba403cb898c0fe6e9bf02
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829840"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460848"
 ---
 # <a name="homefaxes"></a>HomeFaxes
 
-Das **HomeFaxes** -Element gibt ein Array von Fax privat Zahlen und die Bezeichner der ihre Marken Quelle für die zugeordneten Rolle. 
+Das **HomeFaxes** -Element gibt ein Array von privaten Faxnummern und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an. 
   
 ```XML
 <HomeFaxes>
@@ -38,27 +38,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PhoneNumberAttributedValue](phonenumberattributedvalue.md) <br/> |Enthält eine einzelne attributierten Telefonnummer für eine Rolle.  <br/> |
+|[PhoneNumberAttributedValue](phonenumberattributedvalue.md) <br/> |Enthält eine einzelne attributierte Telefonnummer für eine Person.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Rolle](persona.md) <br/> |Gibt einen Satz von Persona Daten von einer Anforderung **GetPersona** zurückgegeben.  <br/> |
+|[Persona](persona.md) <br/> |Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

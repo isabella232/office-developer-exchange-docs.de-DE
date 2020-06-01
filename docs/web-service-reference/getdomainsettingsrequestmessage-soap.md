@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 34913595-794c-4c62-9622-877f30931c73
-description: Das GetDomainSettingsRequestMessage-Element stellt eine Anforderung GetDomainSettings-Vorgang (SOAP)-Operation dar.
-ms.openlocfilehash: 24af4e3dc18c459f5669ba18f7b8c548fcc748fc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetDomainSettingsRequestMessage-Element stellt eine GetDomainSettings Operation (SOAP)-Vorgangsanforderung dar.
+ms.openlocfilehash: 71648e3df609edfce73ebccf372a82311c03d49d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758661"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462031"
 ---
 # <a name="getdomainsettingsrequestmessage-soap"></a>GetDomainSettingsRequestMessage (SOAP)
 
-Das **GetDomainSettingsRequestMessage** -Element stellt die Anforderung einer [GetDomainSettings-Vorgang (SOAP)](getdomainsettings-operation-soap.md) -Operation dar. 
+Das **GetDomainSettingsRequestMessage** -Element stellt eine [GetDomainSettings Operation (SOAP)-](getdomainsettings-operation-soap.md) Vorgangsanforderung dar. 
   
 ```XML
 <GetDomainSettingsRequestMessage>
@@ -38,7 +38,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Anforderung (GetDomainSettings) (SOAP)](request-getdomainsettingssoap.md) <br/> |Enthält eine Anforderung an die domäneneinstellungen zurückzugeben.  <br/> |
+|[Request (GetDomainSettings) (SOAP)](request-getdomainsettingssoap.md) <br/> |Enthält eine Anforderung zum Zurückgeben von Domäneneinstellungen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -48,13 +48,13 @@ Keine.
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

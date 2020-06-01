@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 24af8e3b-3074-4c8c-8d0a-52446508d044
 description: Das FieldURI-Element identifiziert Eigenschaften, auf die häufig vom URI verwiesen wird.
-ms.openlocfilehash: 82d1bd49819710fe54cfd9343bdd327798709954
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: 6b84e6ef0a5e33217677b7c92e0ef6dc32d68ac4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758460"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461233"
 ---
 # <a name="fielduri"></a>FieldURI
 
@@ -429,10 +429,10 @@ Das folgende Beispiel zeigt, wie das FieldURI-Element verwendet wird.
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <ItemShape>
         <t:BaseShape>IdOnly</t:BaseShape>
         <t:AdditionalProperties>
@@ -451,7 +451,7 @@ Das folgende Beispiel zeigt, wie das FieldURI-Element verwendet wird.
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

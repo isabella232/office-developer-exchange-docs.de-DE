@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2c98e7c6-09b0-47b3-bbf7-8c4ef9510280
-description: Das FileAsMapping-Element definiert, wie erstellen, was für einen Kontakt angezeigt wird.
-ms.openlocfilehash: 1ba0ae0daa56a72c29d8c0ccad64e3edae5f0b84
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FileAsMapping-Element definiert, wie die für einen Kontakt angezeigte Anzeige erstellt wird.
+ms.openlocfilehash: d846c0af0fbad4df9ee800fe136a4ffcc74c8608
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758428"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461037"
 ---
 # <a name="fileasmapping"></a>FileAsMapping
 
-Das **FileAsMapping** -Element definiert, wie erstellen, was für einen Kontakt angezeigt wird. 
+Das **FileAsMapping** -Element definiert, wie die für einen Kontakt angezeigte Anzeige erstellt wird. 
   
 ```xml
 <FileAsMapping/>
@@ -48,7 +48,7 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert für dieses Element ist auf die folgenden Werte vom Typ String beschränkt:
+Der Textwert für dieses Element ist auf einen der folgenden Zeichenfolgenwerte beschränkt:
   
 - Keine
     
@@ -56,13 +56,13 @@ Der Textwert für dieses Element ist auf die folgenden Werte vom Typ String besc
     
 - FirstSpaceLast
     
-- Unternehmen
+- Company
     
 - LastCommaFirstCompany
     
 - CompanyLastFirst
     
-- Nachn.vorn.
+- LastFirst
     
 - LastFirstCompany
     
@@ -84,17 +84,17 @@ Der Textwert für dieses Element ist auf die folgenden Werte vom Typ String besc
     
 - LastName
     
-- Leer
+- Empty
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
@@ -106,9 +106,9 @@ Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichni
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Creating Contacts (Exchange Web Services)](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
+[Creating Contacts (Exchange Web Services)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
   
-[Aktualisierung von Kontakten](http://msdn.microsoft.com/library/9a865953-b94a-4229-b632-2dee433314be%28Office.15%29.aspx)
+[Aktualisieren von Kontakten](https://msdn.microsoft.com/library/9a865953-b94a-4229-b632-2dee433314be%28Office.15%29.aspx)
   
-[Deleting Contacts](http://msdn.microsoft.com/library/fcc3dc84-cd3e-455e-a1a7-ae6921c9b588%28Office.15%29.aspx)
+[Deleting Contacts](https://msdn.microsoft.com/library/fcc3dc84-cd3e-455e-a1a7-ae6921c9b588%28Office.15%29.aspx)
 

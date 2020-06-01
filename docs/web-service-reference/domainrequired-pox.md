@@ -1,5 +1,5 @@
 ---
-title: Erforderlicher (POX)
+title: DomainRequired (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,23 +8,23 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 1f26b691-7331-4c7f-a92b-dfcc66c26963
-description: Erforderlicher-Element gibt an, ob die Domäne für die Authentifizierung erforderlich ist.
-ms.openlocfilehash: f314b9d27d1b4ee472d249ec49af1a785ff9ac25
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DomainRequired-Element gibt an, ob die Domäne für die Authentifizierung erforderlich ist.
+ms.openlocfilehash: 97d602c40b247f9a6650cc4440b53bf23c18482e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758088"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461324"
 ---
-# <a name="domainrequired-pox"></a>Erforderlicher (POX)
+# <a name="domainrequired-pox"></a>DomainRequired (POX)
 
-**Erforderlicher** -Element gibt an, ob die Domäne für die Authentifizierung erforderlich ist. 
+Das **DomainRequired** -Element gibt an, ob die Domäne für die Authentifizierung erforderlich ist. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md)  
 - [Response (POX)](response-pox.md) 
 - [Konto (POX)](account-pox.md)  
 - [Protokoll (POX)](protocol-pox.md)  
-- [Erforderlicher (POX)](domainrequired-pox.md)
+- [DomainRequired (POX)](domainrequired-pox.md)
   
 ```xml
 <DomainRequired>on or off</DomainRequired>
@@ -46,15 +46,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert gibt an, ob die Domäne für die Authentifizierung erforderlich ist. Die möglichen Werte sind **aktiviert** und **deaktiviert**. Ist der Wert **auf**, muss die nachfolgende Anforderung die Domäne für das Konto des Benutzers enthalten.
+Der Wert Text gibt an, ob die Domäne für die Authentifizierung erforderlich ist. Die möglichen Werte sind **ein** -und **ausgeschaltet**. Wenn der Wert **auf "on**" festgelegt ist, muss die nachfolgende Anforderung die Domäne des Benutzerkontos enthalten.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn die Domäne in die [LoginName (POX)](loginname-pox.md) Element nicht angegeben ist oder das **LoginName** -Element nicht angegeben wurde, muss der Benutzer die Domäne eingeben, bevor die Authentifizierung erfolgreich ausgeführt werden kann. 
+Wenn die Domäne nicht im [LoginName-](loginname-pox.md) Element angegeben ist oder das **LoginName** -Element nicht angegeben wurde, muss der Benutzer die Domäne eingeben, bevor die Authentifizierung erfolgreich ausgeführt wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

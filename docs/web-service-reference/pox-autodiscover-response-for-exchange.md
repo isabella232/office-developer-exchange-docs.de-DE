@@ -9,12 +9,12 @@ api_type:
 - schema
 ms.assetid: 08c6c5a2-a67a-4141-a8bd-1b5d560b90a7
 description: Die Antwort der AutoErmittlung enthält eine Antwort auf die AutoErmittlung-Anforderung, die eine Liste der URLs enthält, die zum Erstellen einer Bindung zu den Exchange-Webdiensten verwendet werden.
-ms.openlocfilehash: d9f8a5cc86efaa4dceda7385164872ecc5409252
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: 0d903d9829fa6dc1273d8b25a1eeb0b68700d5da
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830863"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462283"
 ---
 # <a name="pox-autodiscover-response-for-exchange"></a>POX-AutoErmittlungsantwort für Exchange
 
@@ -29,8 +29,8 @@ Im folgenden Beispiel ist eine erfolgreiche AutoErmittlung-Antwort dargestellt.
 ### <a name="code"></a>Code
 
 ```XML
-<Autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
-  <Response xmlns="http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a">
+<Autodiscover xmlns="https://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
+  <Response xmlns="https://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a">
     <User>
       <DisplayName>First Last</DisplayName>
       <LegacyDN>/o=contoso/ou=First Administrative Group/cn=Recipients/cn=iuser885646</LegacyDN>
@@ -132,8 +132,8 @@ Im folgenden Beispiel ist eine Fehlerantwort für die AutoErmittlung dargestellt
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<Autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
-  <Response xmlns="http://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
+<Autodiscover xmlns="https://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
+  <Response xmlns="https://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
     <Error Time="21:25:04.8897083" Id="4130155072">
       <ErrorCode>600</ErrorCode>
       <Message>Invalid Request</Message>

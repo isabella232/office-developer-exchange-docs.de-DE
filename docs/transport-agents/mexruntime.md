@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: eabb2f12-10a7-4ce2-ae4b-9c04010c765f
-description: 'Zuletzt geändert: 17 September 2015'
-ms.openlocfilehash: 4a34eedfc16d64cbfa67003ed23cf6eba2bb4bad
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 'Letzte Änderung: September 17, 2015'
+ms.openlocfilehash: f192965a8375eb46d1ca5b46d3b768a3299c284d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757201"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461835"
 ---
 # <a name="mexruntime"></a>mexRuntime
   
 **Gilt für:** Exchange Server 2013
   
-Das **MexRuntime** -Element enthält Elemente, die definieren, Konfigurationsinformationen für die Überwachung durch den Agenten und Konfigurationsinformationen für SMTP und routing-Agents, die installiert werden. 
+Das **mexRuntime** -Element enthält Elemente, die Konfigurationsinformationen für die Agent-Überwachung und Konfigurationsinformationen für die installierten SMTP-und Routing-Agents definieren. 
   
 - [Konfiguration](configuration.md)  
 - [mexRuntime](mexruntime.md)
@@ -35,7 +35,7 @@ Das **MexRuntime** -Element enthält Elemente, die definieren, Konfigurationsinf
 </mexRuntime>
 ```
 
-**MexRuntimeType (ComplexType)**
+**mexRuntimeType (complexType)**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -49,25 +49,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Überwachung](monitoring.md) <br/> |Enthält Konfigurationsinformationen, die definiert, wie und wann mit Transport Agents überwacht wird, die installiert werden.  <br/> |
-|[agentList](agentlist.md) <br/> |Enthält ein [Agent](agent.md) -Element für jeden Agent, installiert ist.  <br/> |
+|[Überwachung](monitoring.md) <br/> |Enthält Konfigurationsinformationen, die definieren, wie und wann der Transport Agents überwacht, die installiert werden.  <br/> |
+|[Agentliste](agentlist.md) <br/> |Enthält ein [Agent](agent.md) -Element für jeden Agent, der installiert ist.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Konfiguration](configuration.md) <br/> |Das Stammelement für die Konfigurationsdatei Agents.  <br/> |
+|[Konfiguration](configuration.md) <br/> |Das Stammelement für die Konfigurationsdatei der Agents.  <br/> |
    
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |Diese Datei ist nicht auf einen Namespace definieren.  <br/> |
+|Namespace  <br/> |In dieser Datei wird kein Namespace definiert.  <br/> |
 |Name des Schemas  <br/> |Nicht verfügbar.  <br/> |
 |Überprüfungsdatei  <br/> |Nicht verfügbar.  <br/> |
-|Leer kann sein  <br/> |Falsch.  <br/> |
+|Leer kann sein  <br/> |"False".  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Agents Datei Konfigurationselemente für Exchange 2013](agents-configuration-file-elements-for-exchange-2013.md)
+- [Elemente der Konfigurationsdatei der Agents für Exchange 2013](agents-configuration-file-elements-for-exchange-2013.md)
 

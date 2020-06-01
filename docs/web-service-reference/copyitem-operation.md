@@ -1,5 +1,5 @@
 ---
-title: CopyItem Operation
+title: CopyItem-Vorgang
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: bcc68f9e-d511-4c29-bba6-ed535524624a
-description: Der Vorgang CopyItem Elemente kopiert und werden die Elemente in einem anderen Ordner platziert.
-ms.openlocfilehash: 95d2371e9185aa25f40eaec37dda54276a54d321
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der CopyItem-Vorgang kopiert Elemente und fügt die Elemente in einen anderen Ordner ein.
+ms.openlocfilehash: ec07700a5ebbdc8774aa2134919634b8dfd02406
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757725"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462178"
 ---
-# <a name="copyitem-operation"></a>CopyItem Operation
+# <a name="copyitem-operation"></a>CopyItem-Vorgang
 
-Der Vorgang **CopyItem** Elemente kopiert und werden die Elemente in einem anderen Ordner platziert. 
+Der **CopyItem** -Vorgang kopiert Elemente und fügt die Elemente in einen anderen Ordner ein. 
   
-## <a name="copyitem-request-example"></a>CopyItem anforderungsbeispiel
+## <a name="copyitem-request-example"></a>CopyItem-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung **CopyItem** veranschaulicht das Formular einer Anforderung an ein Element in den Posteingang zu kopieren. 
+Im folgenden Beispiel einer **CopyItem** -Anforderung wird gezeigt, wie eine Anforderung zum Kopieren eines Elements in den Posteingang bildet. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CopyItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CopyItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ToFolderId>
         <t:DistinguishedFolderId Id="inbox"/>
       </ToFolderId>
@@ -48,10 +48,10 @@ Im folgenden Beispiel wird eine Anforderung **CopyItem** veranschaulicht das For
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
 > [!NOTE]
-> Die Ordner-ID und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Ordner-ID und der Change-Schlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -59,26 +59,26 @@ In der Anforderung werden folgende Elemente verwendet:
   
 - [CopyItem](copyitem.md)
     
-- [ToFolderId](tofolderid.md)
+- [Tofolder-Datei](tofolderid.md)
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-- [Artikelnummern ein.](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
 > [!NOTE]
-> Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist. 
+> Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist. 
   
-Wenn andere Optionen für die Anforderungsnachricht des Vorgangs **CopyItem** suchen möchten, verwenden Sie die Schemahierarchie. Starten Sie das [CopyItem](copyitem.md) -Element. 
+Um andere Optionen für die Anforderungsnachricht des **CopyItem** -Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [CopyItem](copyitem.md) -Element. 
   
-## <a name="successful-copyitem-response"></a>Erfolgreiche CopyItem Antwort
+## <a name="successful-copyitem-response"></a>Erfolgreiche CopyItem-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **"CopyItem"** . 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **CopyItem** -Anforderung. 
   
-Der Elementbezeichner des neuen Elements wird in der Antwortnachricht zurückgegeben. Element-IDs werden nicht auf Öffentliche Ordner **CopyItem** Vorgänge in Antworten für postfachübergreifenden oder Postfach zurückgegeben. 
+Die Element-ID des neuen Elements wird in der Antwortnachricht zurückgegeben. Element-IDs werden nicht in den Antworten für Postfächer-oder Postfach- **CopyItem** -Vorgänge im öffentlichen Ordner zurückgegeben. 
   
 ### <a name="code"></a>Code
 
@@ -89,12 +89,12 @@ Der Elementbezeichner des neuen Elements wird in der Antwortnachricht zurückgeg
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CopyItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CopyItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CopyItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -110,7 +110,7 @@ Der Elementbezeichner des neuen Elements wird in der Antwortnachricht zurückgeg
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -124,15 +124,15 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
-Wenn andere Optionen für die Antwortnachricht des Vorgangs **CopyItem** suchen möchten, verwenden Sie die Schemahierarchie. Starten Sie das [CopyItemResponse](copyitemresponse.md) -Element. 
+Um andere Optionen für die Antwortnachricht des **CopyItem** -Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [CopyItemResponse](copyitemresponse.md) -Element. 
   
-## <a name="copyitem-error-response"></a>CopyItem Fehlerantwort
+## <a name="copyitem-error-response"></a>CopyItem-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an einer **"CopyItem"** Anforderung. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **CopyItem** -Anforderung. 
   
 ### <a name="code"></a>Code
 
@@ -143,12 +143,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort an einer **"CopyItem"** Anforderu
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CopyItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CopyItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CopyItemResponseMessage ResponseClass="Error">
           <m:MessageText>Id is malformed.</m:MessageText>
@@ -162,7 +162,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an einer **"CopyItem"** Anforderu
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
@@ -180,9 +180,9 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
-Wenn andere Optionen für die Fehlermeldung Antwort des Vorgangs **CopyItem** suchen möchten, verwenden Sie die Schemahierarchie. Starten Sie das [CopyItemResponse](copyitemresponse.md) -Element. 
+Weitere Optionen für die Fehlerantwort Meldung des **CopyItem** -Vorgangs finden Sie unter Durchsuchen der Schemahierarchie. Beginnen Sie mit dem [CopyItemResponse](copyitemresponse.md) -Element. 
   
 ## <a name="see-also"></a>Siehe auch
 

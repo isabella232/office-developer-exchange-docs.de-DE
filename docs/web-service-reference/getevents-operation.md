@@ -11,39 +11,39 @@ api_name:
 api_type:
 - schema
 ms.assetid: f268efe5-9a1a-41a2-b6a6-51fcde7720a1
-description: Der Vorgang GetEvents wird von Pull-Abonnement-Clients auf Anforderung-Benachrichtigungen vom Client Access-Server verwendet. Die Antwort auf einen Vorgang GetEvents gibt ein Array von Elementen und Ereignisse, die in einem Postfach seit dem letzten die Benachrichtigung aufgetreten sind.
-ms.openlocfilehash: 1a23a9d570a4554e54becb7927f25dff89888c74
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetEvents-Vorgang wird von Pull-Abonnementclients verwendet, um Benachrichtigungen vom Client Zugriffsserver anzufordern. Die GetEvents-Vorgangs Antwort gibt ein Array von Elementen und Ereignissen zurück, die seit der letzten Benachrichtigung in einem Postfach aufgetreten sind.
+ms.openlocfilehash: 9258fd003c242911866aa7abbca5eba2b9582223
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758647"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462514"
 ---
 # <a name="getevents-operation"></a>GetEvents-Vorgang
 
-Der Vorgang **GetEvents** wird von Pull-Abonnement-Clients auf Anforderung-Benachrichtigungen vom Client Access-Server verwendet. Die Antwort auf einen Vorgang **GetEvents** gibt ein Array von Elementen und Ereignisse, die in einem Postfach seit dem letzten die Benachrichtigung aufgetreten sind. 
+Der **GetEvents** -Vorgang wird von Pull-Abonnementclients verwendet, um Benachrichtigungen vom Client Zugriffsserver anzufordern. Die **GetEvents** -Vorgangs Antwort gibt ein Array von Elementen und Ereignissen zurück, die seit der letzten Benachrichtigung in einem Postfach aufgetreten sind. 
   
 > [!IMPORTANT]
-> Der Vorgang **DeleteUserConfiguration** wird ein Ereignis für das Ereignis Benachrichtigungssystem ausgelöst. Das Benutzerobjekt Konfiguration wird verschoben werden, um die Dumpster. 
+> Durch den **DeleteUserConfiguration** -Vorgang wird ein Verschiebe Ereignis für das Ereignis Benachrichtigungssystem ausgelöst. Das Benutzer Konfigurationsobjekt wird in den Papierkorb verschoben. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Änderungen an Kalenderelemente möglicherweise die Generierung von mehreren Ereignisse. Diese Ereignisse sind das Ergebnis der temporäre Objekte, die zu erstellenden in das Postfach Frei/Gebucht-Daten Speicher Elemente als Teil des und/oder den normalen Betrieb Kalender geändert wird. Ereignisse für Element class "IPM. SchedulePlus.FreeBusy.BinaryData"sollte mithilfe Webdienstclients ignoriert werden. Diese temporäre Elemente werden gelöscht, nachdem sie erstellt wurden. aus diesem Grund, wenn versucht wird, diese Elemente abzurufen, wird ein Fehler zurückgegeben werden, dass die, die besagt, dass das Element nicht gefunden wurde.
+Änderungen an Kalenderelementen können zur Generierung von mehreren Ereignissen führen. Diese Ereignisse sind das Ergebnis von temporären Elementen, die im Postfach erstellt werden, und frei/gebucht-Datenspeicherelemente, die im Rahmen normaler Kalender Vorgänge geändert wurden, oder beides. Ereignisse für die Elementklasse "IPM. SchedulePlus. freebusy. BinaryData "sollte von Webdienstclients ignoriert werden. Diese temporären Elemente werden nach ihrer Erstellung gelöscht. Wenn also versucht wird, diese Elemente abzurufen, wird ein Fehler zurückgegeben, der besagt, dass das Element nicht gefunden wurde.
   
-## <a name="getevents-request-example"></a>GetEvents anforderungsbeispiel
+## <a name="getevents-request-example"></a>GetEvents-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird gezeigt, wie zum Anfordern der Ereignisse und Elemente, die mit einem Abonnement verknüpft sind, die durch die Abonnement-ID und Wasserzeichen identifiziert wird.
+Im folgenden Beispiel wird gezeigt, wie die Ereignisse und Elemente angefordert werden, die einem Abonnement zugeordnet sind, das durch die Abonnement-ID und das Wasserzeichen identifiziert wird.
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetEvents xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetEvents xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <SubscriptionId>f6bc657d-dde1-4f94-952d-143b95d6483d</SubscriptionId>
       <Watermark>AAAAAMAGAAAAAAAAAQ==</Watermark>
     </GetEvents>
@@ -51,21 +51,21 @@ Im folgenden Beispiel wird gezeigt, wie zum Anfordern der Ereignisse und Element
 </soap:Envelope>
 ```
 
-### <a name="getevents-request-elements"></a>GetEvents Anforderung Elemente
+### <a name="getevents-request-elements"></a>GetEvents-anforderungselemente
 
 In der Anforderung werden folgende Elemente verwendet:
   
 - [GetEvents](getevents.md)
     
-- [SubscriptionId (GetEvents)](subscriptionid-getevents.md)
+- [Abonnement-Nr (GetEvents)](subscriptionid-getevents.md)
     
-- [Wasserzeichen](watermark.md)
+- [Watermark](watermark.md)
     
-## <a name="successful-getevents-response-example"></a>Erfolgreiche GetEvents antwortbeispiel
+## <a name="successful-getevents-response-example"></a>Erfolgreiches GetEvents-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel einer Antwort zeigt eine Benachrichtigung über das Vorhandensein von zwei neue e-Mail-Nachrichten, seit die letzte Benachrichtigung-Anforderung an den Server gesendet wurde.
+Das folgende Beispiel einer Antwort zeigt eine Benachrichtigung über das vorhanden sein zweier neuer e-Mail-Nachrichten, seit die letzte Benachrichtigungsanforderung an den Server gesendet wurde.
   
 ### <a name="code"></a>Code
 
@@ -76,12 +76,12 @@ Das folgende Beispiel einer Antwort zeigt eine Benachrichtigung über das Vorhan
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetEventsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetEventsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetEventsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -109,12 +109,12 @@ Das folgende Beispiel einer Antwort zeigt eine Benachrichtigung über das Vorhan
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
 > [!NOTE]
-> Der Bezeichner Element und Ordner wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Element-und Ordner Bezeichner wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
-### <a name="getevents-response-elements"></a>GetEvents Antwortelemente
+### <a name="getevents-response-elements"></a>GetEvents-Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -130,7 +130,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Benachrichtigung](notification-ex15websvcsotherref.md)
     
-- [SubscriptionId (GetEvents)](subscriptionid-getevents.md)
+- [Abonnement-Nr (GetEvents)](subscriptionid-getevents.md)
     
 - [PreviousWatermark](previouswatermark.md)
     
@@ -138,21 +138,21 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [NewMailEvent](newmailevent.md)
     
-- [Wasserzeichen](watermark.md)
+- [Watermark](watermark.md)
     
-- [Zeitstempel](timestamp.md)
+- [Timestamp](timestamp.md)
     
 - [ItemId](itemid.md)
     
 - [ParentFolderId](parentfolderid.md)
     
-Wenn andere Optionen für die Antwortnachricht des Vorgangs **GetEvents** suchen möchten, verwenden Sie die Schemahierarchie. Starten Sie die [Benachrichtigung](notification-ex15websvcsotherref.md) -Element. 
+Um andere Optionen für die Antwortnachricht des **GetEvents** -Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [Benachrichtigungs](notification-ex15websvcsotherref.md) Element. 
   
-## <a name="getevents-error-response-example"></a>Antwortbeispiel GetEvents Fehler
+## <a name="getevents-error-response-example"></a>GetEvents-Fehlerantwort (Beispiel)
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine Anforderung **GetEvents** . 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetEvents** -Anforderung. 
   
 ### <a name="code"></a>Code
 
@@ -163,12 +163,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine Anforderung **GetEvents**
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetEventsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetEventsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetEventsResponseMessage ResponseClass="Error">
           <m:MessageText>Access is denied. Only the subscription owner may access the subscription.</m:MessageText>
@@ -181,21 +181,21 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine Anforderung **GetEvents**
 </soap:Envelope>
 ```
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Bei der Verarbeitung einer Anforderung **GetEvents** führt der Clientzugriffs-Server die folgenden Schritte aus: 
+Bei der Verarbeitung einer **GetEvents** -Anforderung führt der Client Zugriffsserver die folgenden Schritte aus: 
   
-1. Die SubscriptionID der Anforderung wird bestätigt, um ein gültiges Abonnement sein, das auf dem Client Access Server gehostet wird. Wenn sie nicht der Fall ist, schlägt der **GetEvents** -Aufruf. 
+1. Die Abonnement-Nr der Anforderung wird als gültiges Abonnement bestätigt, das auf dem Client Zugriffsserver gehostet wird. Wenn dies nicht der Fall ist, tritt beim **GetEvents** -Aufruf ein Fehler auf. 
     
-2. Die SMTP-Adresse des authentifizierten Benutzers für die Anforderung wird an die SMTP-Adresse des Benutzers verglichen, die das Abonnement erstellt hat. Wenn sie nicht übereinstimmen, schlägt die Anforderung **GetEvents** . 
+2. Die SMTP-Adresse des authentifizierten Benutzers für die Anforderung wird mit der SMTP-Adresse des Benutzers verglichen, der das Abonnement erstellt hat. Wenn Sie nicht übereinstimmen, schlägt die **GetEvents** -Anforderung fehl. 
     
-3. Die Abonnement-Warteschlange abgefragt wird für Ereignisse, die darauf warten, an den Client gesendet werden. Wenn die Warteschlange nicht leer ist, werden die ersten 50 Ereignisse aus der Warteschlange aus der Warteschlange abgerufen und in eine Benachrichtigung codiert.
+3. Die Abonnement Warteschlange wird für Ereignisse abgefragt, die darauf warten, an den Client gesendet zu werden. Wenn die Warteschlange nicht leer ist, werden die ersten 50-Ereignisse aus der Warteschlange aus der Warteschlange gezogen und in eine Benachrichtigung codiert.
     
-4. Wenn keine Ereignisse in der Warteschlange gefunden werden, wird ein StatusEvent generiert und in einer Benachrichtigungsantwort codiert.
+4. Wenn in der Warteschlange keine Ereignisse gefunden werden, wird ein StatusEvent generiert und in einer Benachrichtigungsantwort codiert.
     
 5. Die Benachrichtigungsantwort wird an den Client zurückgegeben.
     
-6. Die Ereignisse, die in der Benachrichtigung enthaltenen werden aus der Warteschlange Abonnement entfernt, und das Client Access Server lokale letzte Wasserzeichen für das Abonnement festgelegt ist, können Sie dem Wasserzeichen des letzten-Ereignisses, das zurückgegeben wird.
+6. Die Ereignisse, die in der Benachrichtigung enthalten sind, werden aus der Abonnement Warteschlange entfernt, und der lokale Client Zugriffsserver-letzte Wasserzeichen für das Abonnement wird auf das Wasserzeichen des letzten zurückgegebenen Ereignisses festgelegt.
     
 7. Der Timeout-Zeitgeber für das Abonnement wird zurückgesetzt.
     
@@ -208,5 +208,5 @@ Bei der Verarbeitung einer Anforderung **GetEvents** führt der Clientzugriffs-S
 [Vorgang des Kündigens von Abonnements](unsubscribe-operation.md)
 
 
-[Mithilfe von Pullabonnements](http://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
+[Verwenden von Pullabonnements](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
 

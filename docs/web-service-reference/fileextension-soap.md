@@ -1,28 +1,28 @@
 ---
-title: FileExtension (SOAP)
+title: Dateierweiterung (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1864182b-26f1-444e-b697-a654c2f68982
-description: FileExtension-Element stellt eine Erweiterung dar.
-ms.openlocfilehash: fb3af508d3b4033871f349eac35ddc270c9d9cb6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FileExtension-Element stellt eine Dateierweiterung dar.
+ms.openlocfilehash: a96a1eaa7339021188a768a980c13350be00e8ac
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758430"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461009"
 ---
-# <a name="fileextension-soap"></a>FileExtension (SOAP)
+# <a name="fileextension-soap"></a>Dateierweiterung (SOAP)
 
-**FileExtension** -Element stellt eine Erweiterung dar. 
+Das **FileExtension** -Element stellt eine Dateierweiterung dar. 
   
 ```XML
 <FileExtension/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -39,19 +39,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SupportedFileExtensions (SOAP)](supportedfileextensions-soap.md) <br/> |Enthält eine Liste der Dateierweiterungen in einem Dokument sharing-Location.  <br/> |
+|[SupportedFileExtensions (SOAP)](supportedfileextensions-soap.md) <br/> |Enthält eine Liste von Dateierweiterungen an einem Dokumentfreigabe Speicherort.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **FileExtension** -Element wird eine gültige Erweiterung für das Dokument sharing-Location. 
+Der Textwert des **FileExtension** -Elements ist eine gültige Dateierweiterung für den Dokumentfreigabe Speicherort. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -63,5 +63,5 @@ Der Textwert der **FileExtension** -Element wird eine gültige Erweiterung für 
 
 [AutoErmittlung Webdienstverweis für Exchange](autodiscover-web-service-reference-for-exchange.md)
   
-[SOAP-Autodiscover XML-Elemente für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[XML-Elemente der SOAP-AutoErmittlung für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

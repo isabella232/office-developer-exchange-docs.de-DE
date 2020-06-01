@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d2932d04-4427-4fc7-97a1-1c57cf736072
-description: Das OtherPhones2-Element gibt ein Array von Werten von Telefon und die Bezeichner der ihre Marken Quelle für die zugeordneten Rolle.
-ms.openlocfilehash: b00a8299b406ee3fd5ff8cbe5c4d861b8782beaf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das OtherPhones2-Element gibt ein Array von Telefon Werten und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an.
+ms.openlocfilehash: 3b33005e4001fd675c2ea2b6f8446648db23c8d0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830674"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462353"
 ---
 # <a name="otherphones2"></a>OtherPhones2
 
-Das **OtherPhones2** -Element gibt ein Array von Werten von Telefon und die Bezeichner der ihre Marken Quelle für die zugeordneten Rolle. 
+Das **OtherPhones2** -Element gibt ein Array von Telefon Werten und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an. 
   
 ```XML
 <OtherPhones2>
@@ -41,19 +41,19 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Rolle](persona.md)
+[Persona](persona.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

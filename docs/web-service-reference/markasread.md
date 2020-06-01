@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 404842e1-fbdb-480d-a1d8-ba1ab2c9fb1e
-description: Das MarkAsRead-Element gibt an, ob Nachrichten sind, als gelesen markiert werden soll.
-ms.openlocfilehash: b453ad73912e99b6fd3aed84b03a7d2fc2b6a294
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MarkAsRead-Element gibt an, ob Nachrichten als gelesen markiert werden sollen.
+ms.openlocfilehash: 691409a4eace8885d36f4b30b8eef1aca8c332a6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830355"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461765"
 ---
 # <a name="markasread"></a>MarkAsRead
 
-Das **MarkAsRead** -Element gibt an, ob Nachrichten sind, als gelesen markiert werden soll. 
+Das **MarkAsRead** -Element gibt an, ob Nachrichten als gelesen markiert werden sollen. 
   
 ```XML
 <MarkAsRead>true | false</MarkAsRead>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -48,19 +48,19 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass die Nachricht als gelesen markiert werden muss. Der Wert **false** gibt an, dass Nachrichten nicht als gelesen markiert werden müssen. 
+Der Textwert **true** gibt an, dass die Nachricht als gelesen markiert werden muss. Der Wert **false** gibt an, dass Nachrichten nicht als gelesen markiert werden dürfen. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cfe0f0ff-5fea-4db8-ac96-a5724c85ed2f
-description: Das FindMailboxStatisticsByKeywords-Element gibt eine Anforderung an die Postfachstatistiken nach Schlüsselwort suchen.
-ms.openlocfilehash: e667f13b66e439dca88d73a5e05d74846183928c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FindMailboxStatisticsByKeywords-Element gibt eine Anforderung zum Suchen nach Postfachstatistiken nach Schlüsselwort an.
+ms.openlocfilehash: e22c7d8dc849d3fd45d6cb158030cbd82119437e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758459"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462528"
 ---
 # <a name="findmailboxstatisticsbykeywords"></a>FindMailboxStatisticsByKeywords
 
-Das **FindMailboxStatisticsByKeywords** -Element gibt eine Anforderung an die Postfachstatistiken nach Schlüsselwort suchen. 
+Das **FindMailboxStatisticsByKeywords** -Element gibt eine Anforderung zum Suchen nach Postfachstatistiken nach Schlüsselwort an. 
   
 ```XML
 <FindMailboxStatisticsByKeywords>
@@ -48,33 +48,33 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Postfächer (ArrayOfUserMailboxesType)](mailboxes-arrayofusermailboxestype.md) <br/> |Enthält ein Array von Postfächern, die von den Haltestatus betroffen sind.  <br/> |
-|[Keywords](keywords-ex15websvcsotherref.md) <br/> |Gibt die Schlüsselwörter für die Suche.  <br/> |
-|[Language](language.md) <br/> |Enthält die Sprache für die Suchabfrage verwendet.  <br/> |
-|[Absender](senders.md) <br/> |Gibt ein Array von SMTP-Adressen.  <br/> |
-|[Empfänger (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) <br/> |Gibt ein Array von Empfänger einer Nachricht.  <br/> |
-|[FromDate](fromdate.md) <br/> |Gibt das Datum, das die Nachricht gesendet wurde.  <br/> |
-|[ToDate](todate.md) <br/> |Gibt das Datum, das die Nachricht empfangen wurde.  <br/> |
-|[MessageTypes](messagetypes.md) <br/> |Gibt ein Array von Nachrichten suchen.  <br/> |
-|[SearchDumpster](searchdumpster.md) <br/> |Gibt an, ob in gelöschte Elemente durchsuchen.  <br/> |
-|[IncludePersonalArchive](includepersonalarchive.md) <br/> |Gibt an, ob das persönliche Archiv in die Suche einzubeziehen.  <br/> |
-|[IncludeUnsearchableItems](includeunsearchableitems.md) <br/> |Gibt an, ob Elemente enthalten, die durchsucht werden kann.  <br/> |
+|[Postfächer (ArrayOfUserMailboxesType)](mailboxes-arrayofusermailboxestype.md) <br/> |Enthält ein Array von Postfächern, die vom Haltestatus betroffen sind.  <br/> |
+|[Schlüsselwörter](keywords-ex15websvcsotherref.md) <br/> |Gibt Stichwörter für eine Suche an.  <br/> |
+|[Sprache](language.md) <br/> |Enthält die für die Suchabfrage verwendete Sprache.  <br/> |
+|[Absender](senders.md) <br/> |Gibt ein Array von SMTP-Adressen an.  <br/> |
+|[Recipients (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) <br/> |Gibt ein Array von Empfängern einer Nachricht an.  <br/> |
+|[FromDate](fromdate.md) <br/> |Gibt das Datum an, an dem die Nachricht gesendet wurde.  <br/> |
+|[ToDate](todate.md) <br/> |Gibt das Datum an, an dem die Nachricht empfangen wurde.  <br/> |
+|[MessageTypes](messagetypes.md) <br/> |Gibt ein Array von Nachrichten an, die durchsucht werden sollen.  <br/> |
+|[SearchDumpster](searchdumpster.md) <br/> |Gibt an, ob in gelöschten Elementen gesucht werden soll.  <br/> |
+|[IncludePersonalArchive](includepersonalarchive.md) <br/> |Gibt an, ob das persönliche Archiv in die Suche einbezogen werden soll.  <br/> |
+|[Parameter IncludeUnsearchableItems](includeunsearchableitems.md) <br/> |Gibt an, ob Elemente eingeschlossen werden sollen, die nicht durchsucht werden können.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 24d10a15-b942-415e-9024-a6375708f326
-description: Der Vorgang GetAttachment wird verwendet, um vorhandene Anlagen für Elemente im Exchange-Speicher abzurufen.
-ms.openlocfilehash: c260033208bf49c60463c09041d8ffcc52a8f5c2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetAttachment-Vorgang wird verwendet, um vorhandene Anlagen für Elemente im Exchange-Informationsspeicher abzurufen.
+ms.openlocfilehash: ac7eafd61c62b077a8d20e5fd8d004924bf06cf1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758585"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461289"
 ---
 # <a name="getattachment-operation"></a>GetAttachment-Vorgang
 
-Der Vorgang GetAttachment wird verwendet, um vorhandene Anlagen für Elemente im Exchange-Speicher abzurufen.
+Der GetAttachment-Vorgang wird verwendet, um vorhandene Anlagen für Elemente im Exchange-Informationsspeicher abzurufen.
   
-## <a name="getattachment-request-example"></a>GetAttachment anforderungsbeispiel
+## <a name="getattachment-request-example"></a>GetAttachment-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird der GetAttachment Anforderung veranschaulicht, wie eine Anlage abgerufen.
+Das folgende Beispiel der GetAttachment-Anforderung zeigt, wie eine Anlage abgerufen wird.
   
 ### <a name="code"></a>Code
 
@@ -36,10 +36,10 @@ Im folgenden Beispiel wird der GetAttachment Anforderung veranschaulicht, wie ei
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetAttachment xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetAttachment xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <AttachmentShape/>
       <AttachmentIds>
         <t:AttachmentId Id="AAAtAEFkbWluaX..."/>
@@ -49,14 +49,14 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Das [AttachmentShape](attachmentshape.md) -Element können Sie angeben, welche Informationen über die Anlage zurückgegeben werden sollen. Ein leeres Element [AttachmentShape](attachmentshape.md) ist gültig und Ihre Anlagen ohne MIME-Inhaltstyp für das elementanlagen, mit dem Text Texttyp und ohne zusätzlichen Eigenschaften rendert. 
+Mit dem [AttachmentShape](attachmentshape.md) -Element können Sie angeben, welche Anlageninformationen zurückgegeben werden sollen. Ein leeres [AttachmentShape](attachmentshape.md) -Element ist gültig und rendert Ihre Anlagen ohne MIME-Inhalt für Element Anlagen, mit Textkörpertyp und ohne zusätzliche Eigenschaften. 
   
-Die [AttachmentIds](attachmentids.md) -Auflistung können Sie eine oder mehrere Anlagen Bezeichner zurückzugebenden angeben. Beachten Sie, dass diese vom Typ RequestAttachmentIdType, damit alle AttachmentIds, die Sie aus **CreateAttachment** erhalten die Attribute **RootItemId** und **RootItemChangeKey** verfügen müssen vor der Übergabe an **GetAttachment**entfernt.
+Die [AttachmentIds](attachmentids.md) -Auflistung ermöglicht es Ihnen, einen oder mehrere Anlagen Bezeichner anzugeben, die zurückgegeben werden sollen. Beachten Sie, dass diese vom Typ RequestAttachmentIdType sind, sodass bei allen AttachmentIds, die Sie von **CreateAttachment** erhalten, die Attribute **RootItemId** und **RootItemChangeKey** entfernt werden müssen, bevor Sie an **GetAttachment**übergeben werden.
   
 > [!NOTE]
-> Die Anlage-ID und Key ändern wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Anlagen-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -68,13 +68,13 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [AttachmentIds](attachmentids.md)
     
-- [AttachmentId (GetAttachment und DeleteAttachment)](attachmentid-getattachment-and-deleteattachment.md)
+- [Attachment-Nr (GetAttachment und DeleteAttachment-)](attachmentid-getattachment-and-deleteattachment.md)
     
-## <a name="getattachment-response-example"></a>GetAttachment antwortbeispiel
+## <a name="getattachment-response-example"></a>GetAttachment-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung GetAttachment. Dieses Beispiel gibt eine Dateianlage.
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine GetAttachment-Anforderung. In diesem Beispiel wird eine Dateianlage zurückgegeben.
   
 ### <a name="code"></a>Code
 
@@ -85,12 +85,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung GetAt
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="662" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <GetAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                           xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                           xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -108,11 +108,11 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung GetAt
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Die Antwortnachrichten für GetAttachment werden immer die vollständige Anlage enthalten. d. h., werden alle Eigenschaften immer eingeschlossen. Für Dateianlagen sind diese Eigenschaften [Name (AttachmentType)](name-attachmenttype.md), [ContentType](contenttype.md), [ContentId](contentid.md), [ContentLocation](contentlocation.md)und [Content](content.md). Für Anlagen, diese Eigenschaften sind [Name (AttachmentType)](name-attachmenttype.md), [ContentType](contenttype.md), [ContentId](contentid.md), [ContentLocation](contentlocation.md) und alle Eigenschaften des Elements, als ob die Form **AllProperties** verwendet wurden im Gespräch GetItem. Das [AttachmentShape](attachmentshape.md) -Element, kann falls vorhanden, so fordern Sie zusätzliche erweiterte Eigenschaften für das elementanlagen an eine Consumeranwendung ansetzt. 
+Die Antwortnachrichten für GetAttachment enthalten immer die vollständige Anlage; Dies bedeutet, dass alle Eigenschaften immer eingeschlossen werden. Für Dateianlagen sind diese Eigenschaften [Name (AttachmentType)](name-attachmenttype.md), [ContentType](contenttype.md), [Inhalts](contentid.md)- [ContentLocation](contentlocation.md)und [Inhalt](content.md). Für Element Anlagen sind diese Eigenschaften [Name (AttachmentType)](name-attachmenttype.md), [ContentType](contenttype.md), [Inhalts](contentid.md)- [ContentLocation](contentlocation.md) und alle Eigenschaften des Elements, als ob die **allproperties** -Form in einem GetItem-Aufruf verwendet wurde. Das [AttachmentShape](attachmentshape.md) -Element, falls vorhanden, ermöglicht einer Consumer-Anwendung, zusätzliche erweiterte Eigenschaften für Element Anlagen anzufordern. 
   
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -130,11 +130,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [FileAttachment](fileattachment.md)
     
-- [AttachmentId (GetAttachment und DeleteAttachment)](attachmentid-getattachment-and-deleteattachment.md)
+- [Attachment-Nr (GetAttachment und DeleteAttachment-)](attachmentid-getattachment-and-deleteattachment.md)
     
-- [Name ("AttachmentType")](name-attachmenttype.md)
+- [Name (AttachmentType)](name-attachmenttype.md)
     
-- [Inhalt](content.md)
+- [Content](content.md)
     
 ## <a name="see-also"></a>Siehe auch
 

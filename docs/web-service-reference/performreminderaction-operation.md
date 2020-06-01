@@ -7,48 +7,48 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c597bb0e-13b0-422e-9c23-970463e2a5c3
-description: Hier finden Sie Informationen über die PerformReminderAction EWS Vorgang.
-ms.openlocfilehash: 778fbb508413721f58cfcf9143a5296874e6cd1c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier finden Sie Informationen zum PerformReminderAction-EWS-Vorgang.
+ms.openlocfilehash: 4c069d541e9a42167c447a50c405399958d3608d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830722"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462290"
 ---
 # <a name="performreminderaction-operation"></a>PerformReminderAction-Vorgang
 
-Hier finden Sie Informationen zum **PerformReminderAction** EWS-Vorgang. 
+Hier finden Sie Informationen zum **PerformReminderAction** -EWS-Vorgang. 
   
-Der Vorgang des **PerformReminderAction** Exchange-Webdienste (EWS) initiiert eine Aktion schließen oder erneut erinnern auf eine Erinnerung. 
+Die **PerformReminderAction** -Exchange-Webdienste Operation initiiert eine Kündigungs-oder Snooze-Aktion für eine Erinnerung. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-performreminderaction-operation"></a>Verwenden des PerformReminderAction-Vorgangs
 
-Den Vorgang **PerformReminderAction** können Sie schließen oder erneut erinnern (Verzögerung) Erinnerungen durch den Vorgang [GetReminders](getreminders-operation.md) zurückgegeben. Um eine Erinnerung snooze, die [ActionType](actiontype-reminderactiontype.md) auf **erneut erinnern**, und legen Sie den [NewReminderTime](newremindertime.md) Wert auf einen Zeitpunkt höher als die aktuelle [ReminderTime](remindertime.md)andernfalls die **NewReminderTime** wird vom Server ignoriert. Wenn die Erinnerung für ein Vorkommen einer Besprechungsserie wird und der **erneut erinnern** Aktionen auf die Erinnerung mit einer **NewReminderTime** , die die Erinnerung an das nächste Vorkommen überschreitet, wird die Erinnerung effektiv geschlossen. 
+Sie können den **PerformReminderAction** -Vorgang verwenden, um Erinnerungen, die von der [geterinnerungs](getreminders-operation.md) -Operation zurückgegeben werden, zu schließen oder zu Snooze (Delay). Um eine Erinnerung zu snoozen, legen Sie den [Action](actiontype-reminderactiontype.md) Type auf **Snooze**fest, und legen Sie den Wert für die [neumahnung](newremindertime.md) auf einen Zeitpunkt nach der aktuellen [Erinnerungs](remindertime.md)Zeit fest, andernfalls wird die **neuerinnerung** vom Server ignoriert. Wenn es sich bei der Erinnerung um ein Auftreten einer Besprechungsserie handelt und die **Snooze** -Aktion in der Erinnerung mit einer Erinnerungszeit angezeigt **wird, die** über die Erinnerung an das nächste Vorkommen verfügt, wird die Erinnerung effektiv zurückgewiesen. 
   
-Um eine Erinnerung zu schließen, legen Sie die **ActionType** auf **Schließen**. Wenn der Server die Anforderung verarbeitet, ändert der Server den [IsReminderSet](isreminderset.md) Wert für das Element von **True** auf **false festgelegt**.
+Um eine Erinnerung zu schließen, legen Sie den **Action** Type auf **entlassen**fest. Wenn der Server die Anforderung verarbeitet, ändert der Server den [Reminder](isreminderset.md) -Wert für das Element von **true** in **false**.
   
-### <a name="performreminderaction-operation-soap-headers"></a>PerformReminderAction Vorgang SOAP-Header
+### <a name="performreminderaction-operation-soap-headers"></a>SOAP-Header des PerformReminderAction-Vorgangs
 
-Der Vorgang **PerformReminderAction** können die SOAP-Header, die in der folgenden Tabelle aufgelistet sind. 
+Der **PerformReminderAction** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |["ExchangeImpersonation"](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Bezeichnet die Kultur gemäß Definition in RFC 3066, "Tags for the Identification des Languages", um Zugriff auf das Postfach verwendet werden. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden sollen. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
    
-## <a name="performreminderaction-operation-request-example"></a>PerformReminderAction Vorgang anforderungsbeispiel
+## <a name="performreminderaction-operation-request-example"></a>PerformReminderAction-Vorgangsanforderung (Beispiel)
 
-Im folgenden Beispiel wird eine **PerformReminderAction** Vorgang Anforderung veranschaulicht eine aktuelle Erinnerung snooze, und legen Sie eine neue Erinnerungszeit. Beachten Sie, dass Sie die **ChangeKey** für die [ItemId](itemid.md) schließen müssen und die **NewReminderTime** auf einen Zeitpunkt höher als die durch den Vorgang [GetReminders](getreminders-operation.md) zurückgegebenen **ReminderTime** festgelegt werden muss. 
+Im folgenden Beispiel einer **PerformReminderAction** -Vorgangsanforderung wird gezeigt, wie eine aktuelle Erinnerung eingeschlummert und eine neue Erinnerungszeit festgelegt wird. Beachten Sie, dass Sie das **ChangeKey** -Objekt für [das Itemid](itemid.md) -Objekt einschließen müssen und die **Reminder** -Uhrzeit auf eine Zeitspanne festgelegt sein muss, die von der **Reminders** [-Operation zurück](getreminders-operation.md) gegeben wird. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
@@ -69,9 +69,9 @@ Im folgenden Beispiel wird eine **PerformReminderAction** Vorgang Anforderung ve
 ```
 
 > [!NOTE]
-> Der **ItemId** -Wert wurde gekürzt, um die Lesbarkeit zu erhalten. 
+> Der **ItemID** -Wert wurde verkürzt, um die Lesbarkeit beizubehalten. 
   
-Die Anforderung SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
   
 - [PerformReminderAction](performreminderaction.md)
     
@@ -83,11 +83,11 @@ Die Anforderung SOAP-Text enthält die folgenden Elemente:
     
 - [ItemId](itemid.md)
     
-- [NewReminderTime](newremindertime.md)
+- [Neuerinnerung](newremindertime.md)
     
-## <a name="successful-performreminderaction-operation-response"></a>Erfolgreiche PerformReminderAction Vorgangsantwort
+## <a name="successful-performreminderaction-operation-response"></a>Erfolgreiche Reaktion des PerformReminderAction-Vorgangs
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **PerformReminderAction** Vorgang an. Das **UpdatedItemIds** -Element enthält die **Artikelnummern ein.** des aktualisierten Kalenderelements. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **PerformReminderAction** -Vorgangsanforderung. Das **UpdatedItemIds** -Element enthält die **itemids** des aktualisierten Kalenderelements. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -98,15 +98,15 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **PerformReminder
                        MajorBuildNumber="921"
                        MinorBuildNumber="20"
                        Version="V2_10"
-                       xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                       xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <PerformReminderActionResponse ResponseClass="Success"
-                                   xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                   xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <UpdatedItemIds>
         <ItemId Id="vwAAAA=="
@@ -117,7 +117,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **PerformReminder
 </s:Envelope>
 ```
 
-Die Antwort SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Antworttext Körper enthält die folgenden Elemente:
   
 - [PerformReminderActionResponse](performreminderactionresponse.md)
     
@@ -127,9 +127,9 @@ Die Antwort SOAP-Text enthält die folgenden Elemente:
     
 - [ItemId](itemid.md)
     
-## <a name="performreminderaction-operation-error-response-example"></a>PerformReminderAction Vorgang Fehler antwortbeispiel
+## <a name="performreminderaction-operation-error-response-example"></a>PerformReminderAction-Operation-Fehlerantwort (Beispiel)
 
-Das folgende Beispiel zeigt eine Antwort auf eine **PerformReminderAction** Vorgang an, wenn auf dem Server keine Änderung vorgenommen wurde. Dies ist eine Antwort, in denen eine Anforderung gesendet wurde, aber keine **UpdatedItemIds** wurden zurückgegeben, was bedeutet, dass keine Erinnerungen geändert wurden. 
+Das folgende Beispiel zeigt eine Antwort auf eine **PerformReminderAction** -Vorgangsanforderung, wenn keine Änderung auf dem Server vorgenommen wurde. Dies ist eine Antwort, bei der eine Anforderung gesendet wurde, aber keine **UpdatedItemIds** zurückgegeben wurden, was bedeutet, dass keine Erinnerungen geändert wurden. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -140,15 +140,15 @@ Das folgende Beispiel zeigt eine Antwort auf eine **PerformReminderAction** Vorg
                        MajorBuildNumber="918"
                        MinorBuildNumber="7"
                        Version="V2_10"
-                       xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                       xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <PerformReminderActionResponse ResponseClass="Success"
-                                   xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                   xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <UpdatedItemIds />
     </PerformReminderActionResponse>
@@ -156,7 +156,7 @@ Das folgende Beispiel zeigt eine Antwort auf eine **PerformReminderAction** Vorg
 </s:Envelope>
 ```
 
-Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
+Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
   
 - [PerformReminderActionResponse](performreminderactionresponse.md)
     
@@ -164,7 +164,7 @@ Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
     
 - [UpdatedItemIds](updateditemids.md)
     
-Zusätzliche Fehlercodes, die für EWS generisch sind, finden Sie unter [ResponseCode](responsecode.md).
+Weitere Fehlercodes, die für EWS allgemein sind, finden Sie unter [Response Code](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2a89098b-d89b-4d01-827b-50be00f7cbe9
-description: Das GetServerTimeZones-Element ist das Stammelement im eine Anforderung zum Abrufen von Zeitzonendefinitionen vom Exchange-Server.
-ms.openlocfilehash: 1ad503ff312497189f57bce9a3670571aedad5ce
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetServerTimeZones-Element ist das Stammelement in einer Anforderung zum Abrufen von Zeitzonendefinitionen vom Exchange-Server.
+ms.openlocfilehash: 797e4543c94b0628242bcf544fe9a735ebaa5a63
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758804"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460939"
 ---
 # <a name="getservertimezones"></a>GetServerTimeZones
 
-Das **GetServerTimeZones** -Element ist das Stammelement im eine Anforderung zum Abrufen von Zeitzonendefinitionen vom Exchange-Server. 
+Das **GetServerTimeZones** -Element ist das Stammelement in einer Anforderung zum Abrufen von Zeitzonendefinitionen vom Exchange-Server. 
   
 ```xml
 <GetServerTimeZones ReturnFullTimeZoneData="">   <Ids/></GetServerTimeZones>
@@ -36,36 +36,36 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**ReturnFullTimeZoneData** <br/> |Gibt an, ob der [Vorgang GetServerTimeZones](getservertimezones-operation.md) die vollständige Definition oder nur die Namen und Bezeichner für jede Zeitzone zurückgegeben. Dieses Attribut ist optional. Der Standardwert ist **true**.  <br/> |
+|**ReturnFullTimeZoneData** <br/> |Gibt an, ob der [GetServerTimeZones-Vorgang](getservertimezones-operation.md) die vollständige Definition oder nur den Namen und den Bezeichner für jede Zeitzone zurückgibt. Dieses Attribut ist optional. Der Standardwert ist **true**.  <br/> |
    
 #### <a name="returnfulltimezonedata-attribute"></a>ReturnFullTimeZoneData-Attribut
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|**"true"** <br/> |Die vollständigen Definitionen für jede Zeitzone zurückzugeben.  <br/> |
-|**false** <br/> |Zurückgeben Sie nur den Namen und Bezeichner für jede Zeitzone.  <br/> |
+|**true** <br/> |Zurückgeben der vollständigen Definitionen für jede Zeitzone.  <br/> |
+|**false** <br/> |Geben Sie nur den Namen und den Bezeichner für jede Zeitzone zurück.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[IDs](ids.md) <br/> |Enthält ein Array der Zeitzone Definition Bezeichner, der die angeforderte Zeitzonendefinitionen angibt. Dieses Element ist optional. Wenn dieses Element nicht in der Anforderung [GetServerTimeZones Vorgang](getservertimezones-operation.md) enthalten ist, werden alle Zeitzonendefinitionen auf dem Server zur Verfügung stehen in der Antwort zurückgegeben.  <br/> |
+|[IDs](ids.md) <br/> |Enthält ein Array von Zeit Zonen Definitions Bezeichnern, die die angeforderten Zeitzonendefinitionen angeben. Dieses Element ist optional. Wenn dieses Element nicht in der GetServerTimeZones- [Vorgangs](getservertimezones-operation.md) Anforderung enthalten ist, werden alle auf dem Server verfügbaren Zeitzonendefinitionen in der Antwort zurückgegeben.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

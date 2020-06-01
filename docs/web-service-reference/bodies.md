@@ -1,5 +1,5 @@
 ---
-title: Texte
+title: Text
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a71a75f0-0b77-4cb9-8f9d-319de72fc1fd
-description: Das Bodies-Element gibt ein Array von BodyContentAttributedValue-Elementen.
-ms.openlocfilehash: 3316d25a567a791301c0e703a912ef28da42fa74
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Bodys-Element gibt ein Array von BodyContentAttributedValue-Elementen an.
+ms.openlocfilehash: d7087cf213d3c659a55458e021f4b8f0400efb1d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757464"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461513"
 ---
-# <a name="bodies"></a>Texte
+# <a name="bodies"></a>Text
 
-Das **Bodies** -Element gibt ein Array von **BodyContentAttributedValue** -Elementen. 
+Das **Bodys** -Element gibt ein Array von **BodyContentAttributedValue** -Elementen an. 
   
 ```XML
 <Bodies>
@@ -38,27 +38,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[BodyContentAttributedValue](bodycontentattributedvalue.md) <br/> |Gibt den Textkörperinhalt eines Elements an.  <br/> |
+|[BodyContentAttributedValue](bodycontentattributedvalue.md) <br/> |Gibt den Textkörper Inhalt eines Elements an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Rolle](persona.md) <br/> |Gibt einen Satz von Persona Daten von einer Anforderung **GetPersona** zurückgegeben.  <br/> |
+|[Persona](persona.md) <br/> |Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

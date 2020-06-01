@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 3038d106-9ac9-4ac7-bb43-96c783edbef5
 description: Das FreeBusyResponse-Element enthält die Frei/Gebucht-Informationen für einen einzelnen Postfachbenutzer.
-ms.openlocfilehash: 73e3972bb53d6bf59e5156098bad06bcde5f0155
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 45a3e12756f3cbf29b76b442f7103abc5fb9a833
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758539"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461926"
 ---
 # <a name="freebusyresponse"></a>FreeBusyResponse
 
@@ -49,28 +49,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessage](responsemessage.md) <br/> |Enthält beschreibende Informationen über den Antwortstatus.  <br/> |
-|[FreeBusyView](freebusyview.md) <br/> |Enthält Informationen zur Verfügbarkeit für einen bestimmten Benutzer.  <br/> |
+|[ResponseMessage](responsemessage.md) <br/> |Enthält beschreibende Informationen zum Antwortstatus.  <br/> |
+|[FreeBusyView](freebusyview.md) <br/> |Enthält Verfügbarkeitsinformationen für einen bestimmten Benutzer.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FreeBusyResponseArray](freebusyresponsearray.md) <br/> |Enthält Informationen zur Verfügbarkeit der angeforderten Benutzer und den Antwortstatus.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray` <br/> |
+|[FreeBusyResponseArray](freebusyresponsearray.md) <br/> |Enthält die Verfügbarkeitsinformationen der angeforderten Benutzer und den Antwortstatus.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element ist nicht in einer Antwort GetUserAvailability enthalten, wenn Frei/Gebucht-Informationen nicht angefordert wird.
+Dieses Element ist nicht in einer GetUserAvailability-Antwort enthalten, wenn keine Frei/Gebucht-Informationen angefordert werden.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -82,5 +82,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

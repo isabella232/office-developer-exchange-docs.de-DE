@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 244f4f46-a33d-4764-92e3-1bddb4dc6a49
-description: Das FolderShape-Element identifiziert die Ordnereigenschaften in einer Antwort GetFolder, FindFolder oder SyncFolderHierarchy aufzunehmen.
-ms.openlocfilehash: 8ebdd70ef13ee9f0cce9020b9212576cba782be4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FolderShape-Element identifiziert die Ordner Eigenschaften, die in einer GetFolder-, FindFolder-oder SyncFolderHierarchy-Antwort enthalten sein sollen.
+ms.openlocfilehash: f841fcc4570604c474387dfa24ec07c9d2784f62
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758524"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461345"
 ---
 # <a name="foldershape"></a>FolderShape
 
-Das **FolderShape** -Element identifiziert die Ordnereigenschaften in einer Antwort [GetFolder](getfolder.md), [FindFolder](findfolder.md)oder [SyncFolderHierarchy](syncfolderhierarchy.md) aufzunehmen. 
+Das **FolderShape** -Element identifiziert die Ordner Eigenschaften, die in einer [GetFolder](getfolder.md)-, [FindFolder](findfolder.md)-oder [SyncFolderHierarchy](syncfolderhierarchy.md) -Antwort enthalten sein sollen. 
   
 ```xml
 <FolderShape>
@@ -43,33 +43,33 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[BaseShape](baseshape.md) <br/> |Identifiziert die grundlegende Konfiguration von Eigenschaften in einer Antwort zurückgegeben werden sollen.  <br/> |
-|[AdditionalProperties](additionalproperties.md) <br/> |Bezeichnet die zusätzliche Eigenschaften, die in eine Antwort zurückgegeben.  <br/> |
+|[BaseShape](baseshape.md) <br/> |Gibt die grundlegende Konfiguration von Eigenschaften an, die in einer Antwort zurückgegeben werden sollen.  <br/> |
+|[AdditionalProperties](additionalproperties.md) <br/> |Identifiziert zusätzliche Eigenschaften, die in einer Antwort zurückgegeben werden sollen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindFolder](findfolder.md) <br/> |Definiert eine Anforderung zum Ordner in einem Postfach zu identifizieren.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/FindFolder` <br/> |
-|[GetFolder](getfolder.md) <br/> |Definiert eine Anforderung an einen Ordner aus dem Exchange-Speicher abzurufen.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetFolder` <br/> |
-|[SyncFolderHierarchy](syncfolderhierarchy.md) <br/> |Definiert eine Anforderung zum Synchronisieren einer Ordnerhierarchie auf einem Client an.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/SyncFolderHierarchy` <br/> |
+|[FindFolder](findfolder.md) <br/> |Definiert eine Anforderung zum Identifizieren von Ordnern in einem Postfach.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/FindFolder` <br/> |
+|[GetFolder](getfolder.md) <br/> |Definiert eine Anforderung zum Abrufen eines Ordners aus dem Exchange-Informationsspeicher.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetFolder` <br/> |
+|[SyncFolderHierarchy](syncfolderhierarchy.md) <br/> |Definiert eine Anforderung zum Synchronisieren einer Ordnerhierarchie auf einem Client.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/SyncFolderHierarchy` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **FolderShape** -Element ist ein erforderliches untergeordnetes Element des Elements [FindFolder](findfolder.md) . 
+Das **FolderShape** -Element ist ein erforderliches untergeordnetes Element des [FindFolder](findfolder.md) -Elements. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird eine Anforderung veranschaulicht, wie alle Ordner in der ersten Ebene des Ordners Posteingang zu suchen.
+Im folgenden Beispiel einer Anforderung wird veranschaulicht, wie alle Ordner gefunden werden, die sich auf der ersten Ebene des Posteingangsordners befinden.
   
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <FindFolder Traversal="Shallow" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindFolder Traversal="Shallow" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <FolderShape>
         <t:BaseShape>Default</t:BaseShape>
       </FolderShape>
@@ -81,13 +81,13 @@ Im folgenden Beispiel wird eine Anforderung veranschaulicht, wie alle Ordner in 
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -1,5 +1,5 @@
 ---
-title: ID (EmailAddressType)
+title: ID (e-mailemailtype)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3e1e37b5-5469-4447-ad1f-c2c6d4e0482f
-description: Das Id-Element identifiziert einen Besprechungsraum innerhalb der Exchange Server-Organisation.
-ms.openlocfilehash: 5cd62f6f4e5912d2ecccda352be15c6a3b24e06c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ID-Element identifiziert einen Besprechungsraum in der Exchange Server-Organisation.
+ms.openlocfilehash: aa09e7764746ac6bc283de2d13248d769aba75b7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829847"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460778"
 ---
-# <a name="id-emailaddresstype"></a>ID (EmailAddressType)
+# <a name="id-emailaddresstype"></a>ID (e-mailemailtype)
 
-Das **Id** -Element identifiziert einen Besprechungsraum innerhalb der Exchange Server-Organisation. 
+Das **ID-** Element identifiziert einen Besprechungsraum in der Exchange Server-Organisation. 
   
 [Raum](room.md)
   
-[ID (EmailAddressType)](id-emailaddresstype.md)
+[ID (e-mailemailtype)](id-emailaddresstype.md)
   
 ```xml
 <Id>
@@ -50,8 +50,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Name (EmailAddressType)](name-emailaddresstype.md) <br/> |Der Name der Besprechungsraum definiert. Dieses Element ist optional.  <br/> |
-|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Definiert die Adresse Simple Mail Transfer Protocol (SMTP), der einen Besprechungsraum. Dieses Element ist optional.  <br/> |
+|[Name (EmailAddressType)](name-emailaddresstype.md) <br/> |Definiert den Namen des Besprechungsraums. Dieses Element ist optional.  <br/> |
+|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Definiert die Simple Mail Transfer Protocol (SMTP) Adresse eines Besprechungsraums. Dieses Element ist optional.  <br/> |
 |[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Definiert die Weiterleitung, die für das Postfach verwendet wird. Der Standard lautet SMTP. Dieses Element ist optional.  <br/> |
 |[MailboxType](mailboxtype.md) <br/> |Definiert den Postfachtyp eines Postfachbenutzers. Dieses Element ist optional.  <br/> |
 |[ItemId](itemid.md) <br/> |Definiert den Elementbezeichner eines Kontakts oder die private Verteilungsliste für Empfänger aus dem Kontaktordner eines Benutzers. Dieses Element ist optional.  <br/> |
@@ -60,17 +60,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Raum](room.md) <br/> |Definiert einen Besprechungsraum in Exchange Server-Organisation.  <br/> |
+|[Raum](room.md) <br/> |Definiert einen Besprechungsraum in der Exchange Server-Organisation.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich in die EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

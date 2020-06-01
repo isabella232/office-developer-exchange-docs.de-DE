@@ -8,42 +8,42 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: a6f4a53d-d7f6-4ad1-8afb-78745c500eaa
-description: Der Vorgang GetDomainSettings werden die angegebenen Einstellungen der Domäne für den Benutzer abgerufen. AutoErmittlung zurückgegeben, die Domänen, die ermittelt werden und die angeforderten Einstellungen der Domänen.
-ms.openlocfilehash: 09b1d610cd415d2d9d7d0098354521ece86f5184
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetDomainSettings-Vorgang ruft die angegebenen Einstellungen der Domäne für den Benutzer ab. Die AutoErmittlung gibt die zu entdeckenden Domänen und die angeforderten Einstellungen dieser Domänen zurück.
+ms.openlocfilehash: fd655e088b73372bc1dd68a740ebc2b516d1804a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758649"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460967"
 ---
 # <a name="getdomainsettings-operation-soap"></a>GetDomainSettings-Vorgang (SOAP)
 
-Der Vorgang **GetDomainSettings** werden die angegebenen Einstellungen der Domäne für den Benutzer abgerufen. AutoErmittlung zurückgegeben, die Domänen, die ermittelt werden und die angeforderten Einstellungen der Domänen. 
+Der **GetDomainSettings** -Vorgang ruft die angegebenen Einstellungen der Domäne für den Benutzer ab. Die AutoErmittlung gibt die zu entdeckenden Domänen und die angeforderten Einstellungen dieser Domänen zurück. 
   
-## <a name="getdomainsettings-request-example"></a>Anforderungsbeispiel GetDomainSettings
+## <a name="getdomainsettings-request-example"></a>GetDomainSettings-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung **GetDomainSettings** zeigt eine Anforderung für einen Benutzer **"externalewsurl"** domäneneinstellungen. Der Client sendet diese Anforderung an den Server. 
+Im folgenden Beispiel einer **GetDomainSettings** -Anforderung wird eine Anforderung für die **ExternalEWSUrl** -Domäneneinstellungen eines Benutzers angezeigt. Der Client sendet diese Anforderung an den Server. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?> 
-<soap:Envelope xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover"
+<soap:Envelope xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover"
                xmlns:wsa="http://www.w3.org/2005/08/addressing"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"> 
     <soap:Header> 
         <a:RequestedServerVersion>Exchange2010</a:RequestedServerVersion>
-        <wsa:Action>http://schemas.microsoft.com/exchange/2010/
+        <wsa:Action>https://schemas.microsoft.com/exchange/2010/
             Autodiscover/Autodiscover/GetDomainSettings</wsa:Action>
         <wsa:To>
             https://autodiscover.exchange.microsoft.com/autodiscover/autodiscover.svc
         </wsa:To>
     </soap:Header> 
     <soap:Body> 
-        <a:GetDomainSettingsRequestMessage xmlns:a="http://schemas.microsoft.com
+        <a:GetDomainSettingsRequestMessage xmlns:a="https://schemas.microsoft.com
             /exchange/2010/Autodiscover"> 
             <a:Request> 
                 <a:Domains> 
@@ -64,7 +64,7 @@ In der Anforderung werden folgende Elemente verwendet:
   
 - [GetDomainSettingsRequestMessage (SOAP)](getdomainsettingsrequestmessage-soap.md)
     
-- [Anforderung (SOAP)](request-soap.md)
+- [Request (SOAP)](request-soap.md)
     
 - [Domänen (SOAP)](domains-soap.md)
     
@@ -74,7 +74,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Einstellung (SOAP)](setting-soap.md)
     
-## <a name="getdomainsettings-response-example"></a>GetDomainSettings antwortbeispiel
+## <a name="getdomainsettings-response-example"></a>GetDomainSettings-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
@@ -85,10 +85,10 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetDomainSetting
 ```XML
 //www.w3.org/2005/08/addressing"> 
     <s:Header> 
-        <a:Action s:mustUnderstand="1">http://schemas.microsoft.com/exchange/2010/ 
+        <a:Action s:mustUnderstand="1">https://schemas.microsoft.com/exchange/2010/ 
             Autodiscover/Autodiscover/GetDomainSettingsResponse
         </a:Action> 
-        <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+        <h:ServerVersionInfo xmlns:h="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
             xmlns:i="http://www.w3.org/2001/XMLSchema-instance"> 
         <h:MajorVersion>14</h:MajorVersion> 
         <h:MinorVersion>0</h:MinorVersion> 
@@ -98,7 +98,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetDomainSetting
         </h:ServerVersionInfo>
     </s:Header> 
     <s:Body> 
-        <GetDomainSettingsResponseMessage xmlns="http://schemas.microsoft.com/exchange/2010/Autodiscover"> 
+        <GetDomainSettingsResponseMessage xmlns="https://schemas.microsoft.com/exchange/2010/Autodiscover"> 
             <Response xmlns:i="http://www.w3.org/2001/XMLSchema-instance"> 
                 <ErrorCode>NoError</ErrorCode> 
                 <ErrorMessage /> 
@@ -122,7 +122,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetDomainSetting
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a>Antwortelemente
+### <a name="response-elements"></a>Response-Elemente
 
 In der Antwort werden folgende Elemente verwendet:
   

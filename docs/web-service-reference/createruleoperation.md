@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: e9f70726-db08-4089-839e-a41007d0a473
-description: Das CreateRuleOperation-Element stellt einen Vorgang zum Erstellen einer neuen Posteingangsregel an.
-ms.openlocfilehash: c531f222ffe886e6ef53a99609cfa27e84fd6107
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CreateRuleOperation-Element stellt einen Vorgang zum Erstellen einer neuen Posteingangsregel dar.
+ms.openlocfilehash: df857544e6d5840a3f738740114195e4c4bb5798
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757796"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460771"
 ---
 # <a name="createruleoperation"></a>CreateRuleOperation
 
-Das **CreateRuleOperation** -Element stellt einen Vorgang zum Erstellen einer neuen Posteingangsregel an. 
+Das **CreateRuleOperation** -Element stellt einen Vorgang zum Erstellen einer neuen Posteingangsregel dar. 
   
 [UpdateInboxRules](updateinboxrules.md)
   
-[Betrieb](operations.md)
+[Operations](operations.md)
   
 ```xml
 <CreateRuleOperation>
@@ -46,27 +46,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Regel (RuleType)](rule-ruletype.md) <br/> |Stellt eine Regel in dem Postfach eines Benutzers erstellt werden.  <br/> |
+|[Regel (RuleType)](rule-ruletype.md) <br/> |Stellt eine Regel dar, die im Postfach eines Benutzers erstellt werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Betrieb](operations.md) <br/> |Enthält die Vorgänge, die für ein Postfach ausgeführt werden können.  <br/> |
+|[Operations](operations.md) <br/> |Enthält die Vorgänge, die für einen Posteingang ausgeführt werden können.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

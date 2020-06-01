@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: df6e06c3-094c-40ce-9c48-d3608f58542a
-description: Das GetDomainSettingsResponseMessage-Element enthält eine Antwort auf eine GetDomainSettings-Vorgang (SOAP) an.
-ms.openlocfilehash: 496e2528fc2792f2ecca87ad34ae50be0bf649fe
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetDomainSettingsResponseMessage-Element enthält eine Antwort auf eine GetDomainSettings-Vorgang (SOAP)-Anforderung.
+ms.openlocfilehash: 4a48d2f496d6733bec67c581e0fc0ee7b1909c5e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758641"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461863"
 ---
 # <a name="getdomainsettingsresponsemessage-soap"></a>GetDomainSettingsResponseMessage (SOAP)
 
-Das **GetDomainSettingsResponseMessage** -Element enthält eine Antwort auf eine [GetDomainSettings-Vorgang (SOAP)](getdomainsettings-operation-soap.md) an. 
+Das **GetDomainSettingsResponseMessage** -Element enthält eine Antwort auf eine [GetDomainSettings-Vorgang (SOAP)-](getdomainsettings-operation-soap.md) Anforderung. 
   
 ```XML
 <GetDomainSettingsResponseMessage>
@@ -38,23 +38,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Antwort (SOAP)](response-soap.md) <br/> |Enthält die Antwort auf eine Anforderung [GetDomainSettings-Vorgang (SOAP)](getdomainsettings-operation-soap.md) .  <br/> |
+|[Antwort (SOAP)](response-soap.md) <br/> |Enthält die Antwort auf eine [GetDomainSettings-Vorgang (SOAP)-](getdomainsettings-operation-soap.md) Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine. Das **GetDomainSettingsResponseMessage** -Element ist das oberste Element innerhalb des SOAP-Body. 
+Keine. Das **GetDomainSettingsResponseMessage** -Element ist das oberste Element im SOAP-Textkörper. 
   
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

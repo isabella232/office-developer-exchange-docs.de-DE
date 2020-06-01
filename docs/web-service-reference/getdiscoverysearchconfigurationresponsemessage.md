@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1b84a4c6-cb0a-4bca-85b2-fec32227930b
-description: Das GetDiscoverySearchConfigurationResponseMessage-Element gibt die Antwortnachricht für eine Anforderung GetDiscoverySearchConfiguration.
-ms.openlocfilehash: a6cf09753031a7fd2eb46132e8bfb0729140d6c3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetDiscoverySearchConfigurationResponseMessage-Element gibt die Antwortnachricht für eine GetDiscoverySearchConfiguration-Anforderung an.
+ms.openlocfilehash: 23d1c5b7a61a9161d7383ec8b38cd0ebbebfc8cf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758635"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460974"
 ---
 # <a name="getdiscoverysearchconfigurationresponsemessage"></a>GetDiscoverySearchConfigurationResponseMessage
 
-Das **GetDiscoverySearchConfigurationResponseMessage** -Element gibt die Antwortnachricht für eine Anforderung **GetDiscoverySearchConfiguration** . 
+Das **GetDiscoverySearchConfigurationResponseMessage** -Element gibt die Antwortnachricht für eine **GetDiscoverySearchConfiguration** -Anforderung an. 
   
 ```XML
 <GetDiscoverySearchConfigurationResponseMessage>
@@ -40,25 +40,25 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [DiscoverySearchConfigurations](discoverysearchconfigurations.md)
+[MessageText](messagetext.md)  |  [Response Code](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [Messagexml verwendet](messagexml.md)  |  [DiscoverySearchConfigurations](discoverysearchconfigurations.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [ResponseMessages](responsemessages.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |
    
 

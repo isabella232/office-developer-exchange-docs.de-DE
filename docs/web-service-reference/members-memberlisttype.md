@@ -1,5 +1,5 @@
 ---
-title: Elemente des Objekts (MemberListType)
+title: Members (MemberListType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cbd38049-2ef7-40bf-9bec-0469af0f58ec
-description: Das Member-Element enthält eine Liste der Mitglieder für eine Verteilerliste.
-ms.openlocfilehash: 8cf9ed7a64a908614ce7be30a9bef631739fcebf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Members-Element stellt die Liste der Mitglieder für eine Verteilerliste bereit.
+ms.openlocfilehash: 2cdfb81dfbc223db365d49ed44d4893339eb4653
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830439"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462430"
 ---
-# <a name="members-memberlisttype"></a>Elemente des Objekts (MemberListType)
+# <a name="members-memberlisttype"></a>Members (MemberListType)
 
-Das **Member** -Element enthält eine Liste der Mitglieder für eine Verteilerliste. 
+Das **Members** -Element stellt die Liste der Mitglieder für eine Verteilerliste bereit. 
   
 ```xml
 <Members>
@@ -43,7 +43,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Member](member-ex15websvcsotherref.md) <br/> |Stellt einen Bezeichner für eine vollständig aufgelöster E-mail-Adresse und den Status der Adresse auf dem Server bereit. Dieses Element ist optional.  <br/> |
+|[Element](member-ex15websvcsotherref.md) <br/> |Stellt einen Bezeichner für eine vollständig aufgelöste e-Mail-Adresse und den Status dieser Adresse auf dem Server bereit. Dieses Element ist optional.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -51,15 +51,15 @@ Keine.
 |:-----|:-----|
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

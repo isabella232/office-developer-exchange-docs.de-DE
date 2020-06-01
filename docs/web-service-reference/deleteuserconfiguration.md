@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 91b18b6a-d904-476c-996d-b041e859da1e
-description: Das Element DeleteUserConfiguration stellt eine Anforderung zum Löschen einer Benutzer-Konfigurationsobjekt.
-ms.openlocfilehash: e357c32f95cddc866b77b6f1172ab260837b061b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DeleteUserConfiguration-Element stellt eine Anforderung zum Löschen eines Benutzer Konfigurationsobjekts dar.
+ms.openlocfilehash: 04668ead48e7c321ed7e91cbbeb67c6154c02283
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757931"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460757"
 ---
 # <a name="deleteuserconfiguration"></a>DeleteUserConfiguration
 
-Das Element **DeleteUserConfiguration** stellt eine Anforderung zum Löschen einer Benutzer-Konfigurationsobjekt. 
+Das **DeleteUserConfiguration** -Element stellt eine Anforderung zum Löschen eines Benutzer Konfigurationsobjekts dar. 
   
 ```xml
 <DeleteUserConfiguration>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserConfigurationName](userconfigurationname.md) <br/> |Den Namen des zu löschenden Objekts Konfiguration Benutzer darstellt.  <br/> |
+|[UserConfigurationName](userconfigurationname.md) <br/> |Stellt den Namen des zu löschenden Benutzer Konfigurationsobjekts dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,17 +52,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

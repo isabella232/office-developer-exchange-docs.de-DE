@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 474f4f7c-47da-47d4-8126-230012172fb5
-description: Das PreviousWatermark-Element darstellt, das Wasserzeichen des neuesten Ereignisses, das an den Client für das Abonnement erfolgreich übermittelt wurde.
-ms.openlocfilehash: 93c6f90d0866ae13618391b8544ab593fe33922b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PreviousWatermark-Element stellt das Wasserzeichen des letzten Ereignisses dar, das erfolgreich an den Client für das Abonnement kommuniziert wurde.
+ms.openlocfilehash: 1b26a645a5ec6dbbd2874b118f968866aadc32af
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830886"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461653"
 ---
 # <a name="previouswatermark"></a>PreviousWatermark
 
-Das **PreviousWatermark** -Element darstellt, das Wasserzeichen des neuesten Ereignisses, das an den Client für das Abonnement erfolgreich übermittelt wurde. 
+Das **PreviousWatermark** -Element stellt das Wasserzeichen des letzten Ereignisses dar, das erfolgreich an den Client für das Abonnement kommuniziert wurde. 
   
 ```xml
 <PreviousWatermark/>
 ```
 
- **WatermarkType**
+ **Watermarktype**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -48,23 +48,23 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der Textwert stellt das neuesten Wasserzeichen. Der Textwert darf nicht auf eine leere Zeichenfolge sein.
+Ein Textwert ist erforderlich. Der Wert Text stellt das neueste Wasserzeichen dar. Der Textwert darf keine leere Zeichenfolge sein.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **PreviousWatermark** -Eigenschaft ist hilfreich, den Client bei der Bestimmung der letzten erfolgreichen benachrichtigungs. Beispielsweise kann, wenn ein Abonnement verfügt über drei Ereignisse mit Wasserzeichen 1, 2 und 3, und die nächste Benachrichtigung mit dem Wert **PreviousWatermark** 3 gesendet wird, der Client dieser Wert auf den Wasserzeichen-Wert, der die letzte Benachrichtigung empfangen vergleichen. Dies ermöglicht dem Client um sicherzustellen, dass die Kontinuität von Ereignissen. 
+Die **PreviousWatermark** -Eigenschaft ist hilfreich für den Client beim Bestimmen der letzten erfolgreichen Benachrichtigung. Wenn ein Abonnement beispielsweise drei Ereignisse mit Wasserzeichen 1, 2 und 3 aufweist und die nächste Benachrichtigung mit dem **PreviousWatermark** -Wert 3 gesendet wird, kann der Client diesen Wert mit dem Wasserzeichen Wert der letzten empfangenen Benachrichtigung vergleichen. Auf diese Weise kann der Client die Kontinuität von Ereignissen sicherstellen. 
   
-Für Push-Clients wird der **PreviousWatermark** auf das lokale, mithilfe der clientseitigen letzte bekannte Wasserzeichen verglichen. Wenn die Werte unterschiedlich sind, wird der Client eine ereignisbenachrichtigung verpasst hat und sollte ein Abonnement mit den neuesten lokalen Wasserzeichen wiederherzustellen. Beispielsweise wenn ein Push-Client drei Ereignisse für ein Abonnement mit Wasserzeichen 1, 2 und 3 empfängt und die nächste Benachrichtigung mit dem Wert **PreviousWatermark** 5 stammen, der Client verpasst hat mindestens eine Benachrichtigung und sollten ein neues Abonnement erstellen, übergeben einen 3 das Wasserzeichen. 
+Bei Push-Clients wird das **PreviousWatermark** mit dem lokalen, clientseitigen letzten bekannten Wasserzeichen verglichen. Wenn die Werte unterschiedlich sind, hat der Client eine Ereignisbenachrichtigung verpasst und sollte ein Abonnement mit dem neuesten lokalen Wasserzeichen wiederherstellen. Wenn beispielsweise ein Push-Client drei Ereignisse für ein Abonnement mit Wasserzeichen 1, 2 und 3 erhält und die nächste Benachrichtigung mit einem **PreviousWatermark** -Wert von 5 geliefert wird, hat der Client mindestens eine Benachrichtigung verpasst und sollte ein neues Abonnement erstellen, wobei ein 3 als Wasserzeichen übergeben wird. 
   
-Bei einem Pull-Client wird der Wert der **PreviousWatermark** der vom Client in den Anruf GetEvents enthalten [Wasserzeichen](watermark.md) identisch sein. 
+Im Fall eines Pull-Clients ist der Wert von **PreviousWatermark** identisch mit dem [Wasserzeichen](watermark.md) , das vom Client im GetEvents-Aufruf enthalten ist. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -1,5 +1,5 @@
 ---
-title: FindFolder Operation
+title: FindFolder-Vorgang
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,54 +11,54 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7a9855aa-06cc-45ba-ad2a-645c15b7d031
-description: Der Vorgang FindFolder mithilfe Exchange-Webdienste Unterordnern eines angegebenen Ordners gesucht und gibt einen Satz von Eigenschaften, mit die die Unterordner beschrieben werden.
-ms.openlocfilehash: 655455b46d4a3192b294bee9d85352d95ded49ae
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der FindFolder-Vorgang verwendet Exchange Webdienste zum Suchen von Unterordnern eines identifizierten Ordners und gibt eine Reihe von Eigenschaften zurück, die die Gruppe von Unterordnern beschreiben.
+ms.openlocfilehash: f1cc199bdaf684d8d74687ed7f064eb66fee48ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758444"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462584"
 ---
-# <a name="findfolder-operation"></a>FindFolder Operation
+# <a name="findfolder-operation"></a>FindFolder-Vorgang
 
-Der Vorgang **FindFolder** mithilfe Exchange-Webdienste Unterordnern eines angegebenen Ordners gesucht und gibt einen Satz von Eigenschaften, mit die die Unterordner beschrieben werden. 
+Der **FindFolder** -Vorgang verwendet Exchange Webdienste zum Suchen von Unterordnern eines identifizierten Ordners und gibt eine Reihe von Eigenschaften zurück, die die Gruppe von Unterordnern beschreiben. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-FindFolder gibt nur die ersten 512 Byte einer beliebigen streamfähiges Eigenschaft zurück. Bei Unicode werden nur die ersten 255 Zeichen mit einer Unicode-Zeichenfolge zurückgegeben, die mit null endet.
+FindFolder gibt nur die ersten 512 Bytes einer Streamable-Eigenschaft zurück. Bei Unicode werden nur die ersten 255 Zeichen mit einer Unicode-Zeichenfolge zurückgegeben, die mit null endet.
   
-Deep Traversal Abfragen können nicht auf Öffentliche Ordner ausgeführt werden.
+Tief greifende Abfragen können nicht für Öffentliche Ordner ausgeführt werden.
   
-Einschränkungen sind zulässig und sollten nur die Ordnereigenschaften, nicht die Eigenschaften des Elements verwenden. Sortierungsfunktionen ist nicht verfügbar für **FindFolder** Antworten. Gruppierte Abfragen sind nicht verfügbar für **FindFolder** Abfragen. 
+Einschränkungen sind zulässig und sollten nur die Ordner Eigenschaften und nicht die Elementeigenschaften verwenden. Sortierfunktionen stehen für **FindFolder** -Antworten nicht zur Verfügung. Gruppierte Abfragen stehen für **FindFolder** -Abfragen nicht zur Verfügung. 
   
- **Hinweis** Der Vorgang **FindFolder** wird auch verwendet, um verwaltete Ordner zu finden. 
+ **Hinweis:** Der **FindFolder** -Vorgang wird auch verwendet, um verwaltete Ordner zu finden. 
   
 ### <a name="soap-headers"></a>SOAP-Header
 
-Der Vorgang **FindFolder** können die SOAP-Header, die aufgeführt und in der folgenden Tabelle beschrieben. 
+Der **FindFolder** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Identitätswechsel  <br/> |["ExchangeImpersonation"](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt.  <br/> |
+|Identitätswechsel  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt.  <br/> |
 |MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Gibt die RFC3066-Kultur an, die für den Zugriff auf das Postfach verwendet wird.  <br/> |
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
 |TimeZoneContext  <br/> |[TimeZoneContext](timezonecontext.md) <br/> |Gibt die Zeitzone für alle Antworten vom Server an.  <br/> |
    
-## <a name="findfolder-request-example"></a>FindFolder anforderungsbeispiel
+## <a name="findfolder-request-example"></a>FindFolder-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung **FindFolder** veranschaulicht eine Anforderung an alle Ordner befindet sich im Posteingang suchen bilden. 
+Im folgenden Beispiel einer **FindFolder** -Anforderung wird gezeigt, wie eine Anforderung zum Auffinden aller Ordner in einem Posteingang bildet. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <FindFolder Traversal="Shallow" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindFolder Traversal="Shallow" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <FolderShape>
         <t:BaseShape>Default</t:BaseShape>
       </FolderShape>
@@ -70,13 +70,13 @@ Im folgenden Beispiel wird eine Anforderung **FindFolder** veranschaulicht eine 
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Verwenden den Standardwert für die [BaseShape](baseshape.md), gibt die Antwort den Ordnernamen, die Ordner-ID, die Anzahl der Unterordner, die Anzahl der untergeordneten Ordner in den Ordner und die Anzahl der ungelesenen Elemente zurück.
+Mit dem Standardwert für die [BaseShape](baseshape.md)gibt die Antwort den Ordnernamen, die Ordner-ID, die Anzahl der Unterordner, die Anzahl der untergeordneten Ordner im Ordner und die Anzahl der ungelesenen Elemente zurück.
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
-Diese Anforderung **FindFolder** umfasst die folgenden Elemente: 
+Diese **FindFolder** -Anforderung umfasst die folgenden Elemente: 
   
 - [FindFolder](findfolder.md)
     
@@ -88,16 +88,16 @@ Diese Anforderung **FindFolder** umfasst die folgenden Elemente:
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
- Zusätzliche **FindFolder** Anforderung Elemente finden Sie unter Schema. 
+ Weitere **FindFolder** -anforderungselemente finden Sie im Schema. 
   
-## <a name="findfolder-response-example"></a>FindFolder antwortbeispiel
+## <a name="findfolder-response-example"></a>FindFolder-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende (SOAP = Simple Object Access Protocol)-Body-Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **FindFolder** . Die Antwort enthält die Elemente, die zurückgegeben werden, wenn der Standardwert für die [BaseShape](baseshape.md) verwendet wird. 
+Das folgende Simple Object Access Protocol (SOAP) Body-Beispiel zeigt eine erfolgreiche Antwort auf die **FindFolder** -Anforderung. Die Antwort enthält die Elemente, die zurückgegeben werden, wenn der Standardwert für die [BaseShape](baseshape.md) verwendet wird. 
   
 > [!NOTE]
-> Die Ordner-ID und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Ordner-ID und der Change-Schlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ### <a name="code"></a>Code
 
@@ -108,12 +108,12 @@ Das folgende (SOAP = Simple Object Access Protocol)-Body-Beispiel zeigt eine erf
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="652" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <FindFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:FindFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -135,9 +135,9 @@ Das folgende (SOAP = Simple Object Access Protocol)-Body-Beispiel zeigt eine erf
 </soap:Envelope>
 ```
 
-### <a name="response-elements"></a>Antwortelemente
+### <a name="response-elements"></a>Response-Elemente
 
-Die Eigenschaften, die in der Antwort zurückgegeben werden werden durch die [BaseShape](baseshape.md) und die [AdditionalProperties](additionalproperties.md) bestimmt, wenn sie verwendet werden. Eine erfolgreiche Antwort **FindFolder** umfasst die folgenden Elemente: 
+Die Eigenschaften, die in der Antwort zurückgegeben werden, werden durch die [BaseShape](baseshape.md) und die [AdditionalProperties](additionalproperties.md) bestimmt, wenn Sie verwendet werden. Eine erfolgreiche **FindFolder** -Antwort umfasst die folgenden Elemente: 
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -159,7 +159,7 @@ Die Eigenschaften, die in der Antwort zurückgegeben werden werden durch die [Ba
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-- [TotalCount](totalcount.md)
+- [Total count](totalcount.md)
     
 - [ChildFolderCount](childfoldercount.md)
     
@@ -167,13 +167,13 @@ Die Eigenschaften, die in der Antwort zurückgegeben werden werden durch die [Ba
     
 ### <a name="comments"></a>Kommentare
 
- Antworten auf eine Anforderung mit dem **AllProperties** Antwort Shape **FindFolder** gibt nicht den [TotalCount](totalcount.md) und die [UnreadCount](unreadcount.md) Elemente für Öffentliche Ordner suchen zurück. 
+ **FindFolder** -Antworten auf eine Anforderung mit dem Antwort-Shape **allproperties** geben nicht die [Total count](totalcount.md) -und [UnreadCount](unreadcount.md) -Elemente für die Suche nach öffentlichen Ordnern zurück. 
   
-## <a name="findfolder-error-response-example"></a>Antwortbeispiel FindFolder Fehler
+## <a name="findfolder-error-response-example"></a>FindFolder-Fehlerantwort Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende SOAP-Body-Beispiel zeigt eine Fehlerantwort an, die auftritt, wenn für einen Ordner suchen, die durch eine fehlerhafte Ordner-ID identifiziert wird.
+Das folgende SOAP Body-Beispiel zeigt eine Fehlermeldung, die auftritt, wenn Sie nach einem Ordner suchen, der durch eine fehlerhafte Ordner-ID identifiziert wird.
   
 ### <a name="code"></a>Code
 
@@ -184,12 +184,12 @@ Das folgende SOAP-Body-Beispiel zeigt eine Fehlerantwort an, die auftritt, wenn 
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="652" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <FindFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:FindFolderResponseMessage ResponseClass="Error">
           <m:MessageText>Id is malformed.</m:MessageText>
@@ -202,9 +202,9 @@ Das folgende SOAP-Body-Beispiel zeigt eine Fehlerantwort an, die auftritt, wenn 
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
-Die Fehlerantwort **FindFolder** umfasst die folgenden Elemente: 
+Die **FindFolder** -Fehlerantwort umfasst die folgenden Elemente: 
   
 - [FindFolderResponse](findfolderresponse.md)
     
@@ -216,17 +216,17 @@ Die Fehlerantwort **FindFolder** umfasst die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="additional-information"></a>Zusätzliche Informationen
+## <a name="additional-information"></a>Weitere Informationen
 
-- Ordner [DisplayName (String)](displayname-string.md) -Elements ist immer in der Standardform enthalten. 
+- Das Element Folder [DisplayName (String)](displayname-string.md) ist immer in der Standardform enthalten. 
     
-- Das [UnreadCount](unreadcount.md) -Element ist im Ordner Aufgaben und Notizen enthalten. 
+- Das [UnreadCount](unreadcount.md) -Element ist in Aufgaben und Notizenordner enthalten. 
     
-- Verwenden Sie den Wert **' PropertyTag '** 0x672D mit Eigenschaftentyp **ganze Zahl** um einen verwalteten Ordner mit dem [ExtendedFieldURI](extendedfielduri.md) -Element zu identifizieren. 
+- Verwenden Sie den **PropertyTag** -Wert 0x672D mit dem Property-Typ **Integer** , um einen verwalteten Ordner mithilfe des [ExtendedFieldURI](extendedfielduri.md) -Elements zu identifizieren. 
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Suchen nach Ordnern](http://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
+[Suchen von Ordnern](https://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
 

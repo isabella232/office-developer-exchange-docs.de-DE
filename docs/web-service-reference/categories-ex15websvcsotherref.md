@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d84d4927-b524-4e62-bf3d-1f12fec8c21a
-description: Categories-Element enthält eine Auflistung von Zeichenfolgen, die die Kategorien zu identifizieren, zu denen ein Element im Postfach gehört.
-ms.openlocfilehash: 8f112a9a736ff4f242b9dfb084b3ad7541cc493d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das categories-Element enthält eine Auflistung von Zeichenfolgen, die die Kategorien identifizieren, zu denen ein Element im Postfach gehört.
+ms.openlocfilehash: 0d9f7068aa81306a10436ed0ca0d45f6d3b2c3a3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757557"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462213"
 ---
 # <a name="categories"></a>Kategorien
 
-**Categories** -Element enthält eine Auflistung von Zeichenfolgen, die die Kategorien zu identifizieren, zu denen ein Element im Postfach gehört. 
+Das **Categories** -Element enthält eine Auflistung von Zeichenfolgen, die die Kategorien identifizieren, zu denen ein Element im Postfach gehört. 
   
 ```XML
 <Categories>
@@ -61,22 +61,22 @@ Keine.
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
 |[Bedingungen](conditions.md) <br/> |Stellt die Bedingungen dar, bei deren Erfüllung die Regelaktionen für eine Regel ausgelöst werden.  <br/> |
-|[Ausnahmen](exceptions.md) <br/> |Stellt alle verfügbaren Regel Ausnahmebedingungen für eine Posteingangsregel an.  <br/> |
-|[ConversationAction](conversationaction.md) <br/> |Enthält eine einzelne Aktion auf einem einzelnen Gespräch angewendet werden soll.  <br/> |
+|[Ausnahmen](exceptions.md) <br/> |Stellt alle verfügbaren Regel Ausnahmebedingungen für eine Posteingangsregel dar.  <br/> |
+|[Unterhaltung](conversationaction.md) <br/> |Enthält eine einzelne Aktion, die auf eine einzelne Unterhaltung angewendet werden soll.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

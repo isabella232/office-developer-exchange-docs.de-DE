@@ -7,44 +7,44 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 211731a3-2470-49af-bda3-1ddfc15a8e46
-description: Hier finden Sie Informationen über die DisableApp EWS Vorgang.
-ms.openlocfilehash: be9e124d7464012ffa797a69192893d85804a004
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier finden Sie Informationen zum DisableApp-EWS-Vorgang.
+ms.openlocfilehash: 8e1f3a257a70c042a01ed70da97cfa0573a2d454
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757998"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462066"
 ---
 # <a name="disableapp-operation"></a>DisableApp-Vorgang
 
-Hier finden Sie Informationen zum **DisableApp** EWS-Vorgang. 
+Hier finden Sie Informationen zum **DisableApp** -EWS-Vorgang. 
   
-Der Vorgang **DisableApp** wird eine Mail-app für Outlook deaktiviert. 
+Der **DisableApp** -Vorgang deaktiviert eine Mail-App für Outlook. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-disableapp-operation"></a>Verwenden des DisableApp-Vorgangs
 
-Der Vorgang **DisableApp** akzeptiert zwei Argumente in der Anforderung, die die Mail-app deaktivieren zu identifizieren und den Grund, warum sie deaktiviert wurde. 
+Der **DisableApp** -Vorgang benötigt zwei Argumente in der Anforderung, die die zu deaktivierende Mail-APP und den Grund für die Deaktivierung identifizieren. 
   
-### <a name="disableapp-operation-soap-headers"></a>DisableApp Vorgang SOAP-Header
+### <a name="disableapp-operation-soap-headers"></a>SOAP-Header des DisableApp-Vorgangs
 
-Der Vorgang **DisableApp** können die SOAP-Header, die in der folgenden Tabelle aufgelistet sind. 
+Der **DisableApp** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
    
-## <a name="disableapp-operation-request-example-disable-a-mail-app-installed-in-a-mailbox"></a>DisableApp Vorgang-anforderungsbeispiel: Deaktivieren Sie eine Mail-app in einem Postfach installiert
+## <a name="disableapp-operation-request-example-disable-a-mail-app-installed-in-a-mailbox"></a>DisableApp-Vorgangs Anforderungs Beispiel: Deaktivieren einer in einem Postfach installierten Mail-App
 
-Im folgenden Beispiel wird eine **DisableApp** Operation anfordern zeigt, wie für eine Deaktivieren einer Mail-app. Die app-ID kann im app-Manifest gefunden werden, die in einer Antwort [GetAppManifests Vorgang](getappmanifests-operation.md) zurückgegeben wird. 
+Im folgenden Beispiel einer **DisableApp** -Vorgangsanforderung wird gezeigt, wie eine Mail-App deaktiviert wird. Der APP-Bezeichner befindet sich im App-Manifest, das in einer [GetAppManifests-Vorgangs](getappmanifests-operation.md) Antwort zurückgegeben wird. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
       <t:MailboxCulture>en-US</t:MailboxCulture>
@@ -61,7 +61,7 @@ Im folgenden Beispiel wird eine **DisableApp** Operation anfordern zeigt, wie f�
 </soap:Envelope>
 ```
 
-Die Anforderung SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
   
 - [DisableApp](disableapp.md)
     
@@ -69,9 +69,9 @@ Die Anforderung SOAP-Text enthält die folgenden Elemente:
     
 - [DisableReason](disablereason.md)
     
-## <a name="successful-disableapp-operation-response"></a>Erfolgreiche DisableApp Vorgangsantwort
+## <a name="successful-disableapp-operation-response"></a>Erfolgreiche Reaktion des DisableApp-Vorgangs
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **DisableApp** Vorgang, um eine Mail-app zu deaktivieren. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **DisableApp** -Vorgangsanforderung zum Deaktivieren einer Mail-app. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -82,39 +82,39 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **Dis
                            MajorBuildNumber="556" 
                            MinorBuildNumber="14" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <DisableAppResponse ResponseClass="Success" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
       </DisableAppResponse>
    </s:Body>
 </s:Envelope>
 ```
 
-Die Antwort SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Antworttext Körper enthält die folgenden Elemente:
   
 - [DisableAppResponse](disableappresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-## <a name="disableapp-operation-error-response"></a>DisableApp Vorgang Fehlerantwort
+## <a name="disableapp-operation-error-response"></a>Fehlerantwort des DisableApp-Vorgangs
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine **DisableApp** Vorgang Anforderung. Dies ist eine Antwort auf eine Anforderung an eine Mail-app zu deaktivieren, die in einem Postfach nicht installiert ist. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **DisableApp** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Deaktivieren einer Mail-APP, die nicht in einem Postfach installiert ist. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
    <s:Header>
-      <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="556" MinorBuildNumber="14" Version="Exchange2013" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="556" MinorBuildNumber="14" Version="Exchange2013" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <DisableAppResponse ResponseClass="Error" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+      <DisableAppResponse ResponseClass="Error" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <MessageText>Extension ID 1C50226D-04B5-4AB2-9FCD-42E236B59E4A can't be found.</MessageText>
          <ResponseCode>ErrorExtensionNotFound</ResponseCode>
          <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -123,7 +123,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **DisableApp** Vorgang An
 </s:Envelope>
 ```
 
-Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
+Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
   
 - [DisableAppResponse](disableappresponse.md)
     
@@ -133,7 +133,7 @@ Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Zusätzliche Fehlercodes, die für EWS generisch und für diese Operation spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
+Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -142,6 +142,6 @@ Zusätzliche Fehlercodes, die für EWS generisch und für diese Operation spezif
 - [UninstallApp-Vorgang](uninstallapp-operation.md)   
 - [GetAppManifests](getappmanifests.md)   
 - [GetAppMarketplaceUrl-Vorgang](getappmarketplaceurl-operation.md)   
-- [Outlook-Add-Ins](http://msdn.microsoft.com/library/71e64bc9-e347-4f5d-8948-0a47b5dd93e6%28Office.15%29.aspx)
+- [Outlook-Add-Ins](https://msdn.microsoft.com/library/71e64bc9-e347-4f5d-8948-0a47b5dd93e6%28Office.15%29.aspx)
     
 

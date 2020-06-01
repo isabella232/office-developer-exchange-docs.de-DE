@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 26ac41c7-57d9-473e-ab7a-bae93e1d2aba
-description: Das SendItemResponse-Element definiert eine Antwort auf eine an den SendItem.
-ms.openlocfilehash: 41f450e1d4c95f7ba389adcaa2ed7e18ea74d61c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SendItemResponse-Element definiert eine Antwort auf eine SendItem-Anforderung.
+ms.openlocfilehash: dd90510547c3db8c3531663c23d05055bd774fab
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831339"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462129"
 ---
 # <a name="senditemresponse"></a>SendItemResponse
 
-Das **SendItemResponse** -Element definiert eine Antwort auf eine an den SendItem. 
+Das **SendItemResponse** -Element definiert eine Antwort auf eine SendItem-Anforderung. 
   
 ```xml
 <SendItemResponse>
@@ -42,30 +42,30 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[SendItem Operation](senditem-operation.md)
+[SendItem-Vorgang](senditem-operation.md)
   
 [SendItem](senditem.md)
 

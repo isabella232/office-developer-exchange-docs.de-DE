@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7cb63269-622c-4198-9a21-f5a021bf6901
-description: Das NotSentToMe-Element gibt an, ob der Besitzer des Postfachs nicht in der ToRecipients-Eigenschaft der eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme angewendet werden muss.
-ms.openlocfilehash: 917648f811855961877d1aba4924573e95e3962a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das NotSentToMe-Element gibt an, ob der Besitzer des Postfachs nicht in der torecipients-Eigenschaft der eingehenden Nachrichten sein darf, damit die Bedingung oder Ausnahme zutrifft.
+ms.openlocfilehash: 58efe4381fe0c9f5bd0645a9eba471a13b5e4064
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830555"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462612"
 ---
 # <a name="notsenttome"></a>NotSentToMe
 
-Das **NotSentToMe** -Element gibt an, ob der Besitzer des Postfachs nicht in der **ToRecipients** -Eigenschaft der eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme angewendet werden muss. 
+Das **NotSentToMe** -Element gibt an, ob der Besitzer des Postfachs nicht in der **torecipients** -Eigenschaft der eingehenden Nachrichten sein darf, damit die Bedingung oder Ausnahme zutrifft. 
   
 ```xml
 <NotSentToMe>true | false</NotSentToMe>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -49,19 +49,19 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass der Besitzer des Postfachs nicht in der **ToRecipients** -Eigenschaft der eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme angewendet werden muss. Der Wert **false** gibt an, dass der Besitzer des Postfachs in der **ToRecipients** -Eigenschaft der eingehenden Nachricht in der Reihenfolge für die Bedingung oder Ausnahme angewendet werden muss. 
+Der Textwert **true** gibt an, dass der Besitzer des Postfachs nicht in der **torecipients** -Eigenschaft der eingehenden Nachrichten sein darf, damit die Bedingung oder Ausnahme zutrifft. Der Wert **false** gibt an, dass der Besitzer des Postfachs in der **torecipients** -Eigenschaft der eingehenden Nachricht sein muss, damit die Bedingung oder Ausnahme zutrifft. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5ac60472-a565-43d1-a5fb-8be0c9511f82
-description: Das ServerHint-Element darstellt, den Ausgangspunkt für eine Nachricht in einer remote-Standort oder Gesamtstruktur nachverfolgen.
-ms.openlocfilehash: 96953f70c239254d15b9d8173f951b52ca95a546
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ServerHint-Element stellt den Ausgangspunkt zum Nachverfolgen einer Nachricht in einem Remotestandort oder einer Remotegesamtstruktur dar.
+ms.openlocfilehash: 76a719901f4e4d1da67ce377ab8b73e4a4592dc4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831376"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461989"
 ---
 # <a name="serverhint"></a>ServerHint
 
-Das **ServerHint** -Element darstellt, den Ausgangspunkt für eine Nachricht in einer remote-Standort oder Gesamtstruktur nachverfolgen. 
+Das **ServerHint** -Element stellt den Ausgangspunkt zum Nachverfolgen einer Nachricht in einem Remotestandort oder einer Remotegesamtstruktur dar. 
   
 ```xml
 <ServerHint/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,23 +44,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |Gibt Kriterien für die Typen von Nachrichten suchen.  <br/> |
+|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |Gibt Kriterien für die Typen von Nachrichten an, die gesucht werden sollen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

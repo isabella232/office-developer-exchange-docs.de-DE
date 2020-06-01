@@ -1,22 +1,22 @@
 ---
-title: EcpUrl-Foto (POX)
+title: EcpUrl-Photo (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4a37bbfb-c763-4a3c-93ea-14c2e7355dbc
-description: Das EcpUrl-Foto-Element gibt eine partielle URL, die kombiniert werden kann, mit dem EcpUrl (POX) Elementwert generiert eine URL, die zum Anzeigen oder Ändern des aktuellen Foto einen e-Mail-aktivierten Benutzer verwendet werden kann.
-ms.openlocfilehash: e02a444d6809fe70274cda2cc8db6375e868edb9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EcpUrl-Photo-Element gibt eine partielle URL an, die mit dem Wert des EcpUrl (POX)-Elements kombiniert werden kann, um eine URL zu generieren, die zum Anzeigen oder Ändern des aktuellen Fotos eines e-Mail-aktivierten Benutzers verwendet werden kann.
+ms.openlocfilehash: 2be930e8d9e4c2bbdb26eff49a429569fc0a1d5d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758125"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461282"
 ---
-# <a name="ecpurl-photo-pox"></a>EcpUrl-Foto (POX)
+# <a name="ecpurl-photo-pox"></a>EcpUrl-Photo (POX)
 
-Das **EcpUrl-Foto** -Element gibt eine partielle URL, die kombiniert werden kann, mit dem [EcpUrl (POX)](ecpurl-pox.md) Elementwert generiert eine URL, die zum Anzeigen oder Ändern des aktuellen Foto einen e-Mail-aktivierten Benutzer verwendet werden kann. 
+Das **EcpUrl-Photo-** Element gibt eine partielle URL an, die mit dem Wert des [EcpUrl (POX)](ecpurl-pox.md) -Elements kombiniert werden kann, um eine URL zu generieren, die zum Anzeigen oder Ändern des aktuellen Fotos eines e-Mail-aktivierten Benutzers verwendet werden kann. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -26,7 +26,7 @@ Das **EcpUrl-Foto** -Element gibt eine partielle URL, die kombiniert werden kann
   
 [Protokoll (POX)](protocol-pox.md)
   
-[EcpUrl-Foto (POX)](ecpurl-photo-pox.md)
+[EcpUrl-Photo (POX)](ecpurl-photo-pox.md)
   
 ```XML
 <EcpUrl-photo/>
@@ -48,15 +48,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt eine partielle URL, die kombiniert werden kann, mit dem [EcpUrl (POX)](ecpurl-pox.md) Elementwert generiert eine URL, die zum Anzeigen oder Ändern des aktuellen Foto des Benutzers verwendet werden kann. 
+Der Textwert stellt eine partielle URL dar, die mit dem [EcpUrl (POX)](ecpurl-pox.md) -Elementwert kombiniert werden kann, um eine URL zu generieren, die zum Anzeigen oder Ändern des aktuellen Fotos des Benutzers verwendet werden kann. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **EcpUrl-Foto** -Element ist ein optionales untergeordnetes Element des **Protokoll** -Elements. 
+Das **EcpUrl-Photo-** Element ist ein optionales untergeordnetes Element des **Protocol** -Elements. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: df50524e-471c-49d2-89fe-b2d0f61a1365
-description: FileAs-Element darstellt, wie einen Kontakt oder Verteilerliste aus in den Ordner Kontakte eingereicht wird.
-ms.openlocfilehash: dab9142eebf7691862e7970a7d1e8f5874393b94
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Files-Element stellt dar, wie ein Kontakt oder eine Verteilerliste im Ordner Kontakte gespeichert wird.
+ms.openlocfilehash: be756d86d7608fcb758dd54f2ada9f03a04343e2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758423"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461198"
 ---
 # <a name="fileas"></a>FileAs
 
-**FileAs** -Element darstellt, wie einen Kontakt oder Verteilerliste aus in den Ordner Kontakte eingereicht wird. 
+Das **Files** -Element stellt dar, wie ein Kontakt oder eine Verteilerliste im Ordner Kontakte gespeichert wird. 
   
 ```xml
 <FileAs/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -51,17 +51,17 @@ Keine.
 
 Ein Textwert, der eine Zeichenfolge darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-**FileAs** -Element wird zum Sortieren der Kontakte und Verteilerlisten durch einen anderen Namen als den vollständigen Namen oder Firmenname verwendet. 
+Das **Files** -Element wird verwendet, um Kontakte und Verteilerlisten nach einem Namen zu sortieren, der nicht vollständiger Name oder Firmenname ist. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

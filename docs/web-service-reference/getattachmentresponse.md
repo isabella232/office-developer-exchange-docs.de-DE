@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cb65f449-309b-4b6e-8d22-d1967135490c
-description: Das GetAttachmentResponse-Element definiert eine Antwort auf eine GetAttachment an.
-ms.openlocfilehash: 05a9e84236c791dcec99182dfca0352e44efca46
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetAttachmentResponse-Element definiert eine Antwort auf eine GetAttachment-Anforderung.
+ms.openlocfilehash: f0daf778f1248eabc5d51ee6155c460d9248549f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758584"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461254"
 ---
 # <a name="getattachmentresponse"></a>GetAttachmentResponse
 
-Das **GetAttachmentResponse** -Element definiert eine Antwort auf eine GetAttachment an. 
+Das **GetAttachmentResponse** -Element definiert eine Antwort auf eine GetAttachment-Anforderung. 
   
 ```xml
 <GetAttachmentResponse>
@@ -42,23 +42,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

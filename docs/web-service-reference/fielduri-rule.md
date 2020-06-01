@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cecdea78-de9c-48be-ae31-03877feafeec
-description: Das FieldURI-Element gibt den URI für die Regel dar, das den Validierungsfehler verursacht hat.
-ms.openlocfilehash: 88ba54994625d3a950b58e900f28c986c31eddac
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FieldURI-Element gibt den URI für das Regel Feld an, das den Validierungsfehler verursacht hat.
+ms.openlocfilehash: 3d88efdf951af580f81b5e2e7a544dcdf70ea830
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758411"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461247"
 ---
 # <a name="fielduri-rule"></a>FieldUri (Regel)
 
-Das **FieldURI** -Element gibt den URI für die Regel dar, das den Validierungsfehler verursacht hat. 
+Das **FieldURI** -Element gibt den URI für das Regel Feld an, das den Validierungsfehler verursacht hat. 
   
 ```XML
 <FieldURI/>
@@ -40,13 +40,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Fehler](error.md) <br/> |Stellt einen einzelnen Gültigkeitsprüfungsfehler auf eine bestimmte Regel Eigenschaftswert, Prädikat Eigenschaftswert oder Aktionswert-Eigenschaft.  <br/> |
+|[Fehler](error.md) <br/> |Stellt einen einzelnen Validierungsfehler für einen bestimmten Regel Eigenschaftswert, einen Prädikateigenschaftswert oder einen Action-Eigenschaftswert dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Der Textwert für dieses Element ist auf eine der folgenden Zeichenfolgen beschränkt:
   
-- Regel-ID
+- RuleId
     
 - DisplayName
     
@@ -76,7 +76,7 @@ Der Textwert für dieses Element ist auf eine der folgenden Zeichenfolgen beschr
     
 - Bedingung: FromConnectedAccounts
     
-- Bedingung: HasAttachments
+- Bedingung: hasattachments
     
 - Bedingung: Wichtigkeit
     
@@ -100,7 +100,7 @@ Der Textwert für dieses Element ist auf eine der folgenden Zeichenfolgen beschr
     
 - Bedingung: IsSigned
     
-- Bedingung: IsVoicemail
+- Bedingung: isvoicemail
     
 - Bedingung: ItemClasses
     
@@ -118,7 +118,7 @@ Der Textwert für dieses Element ist auf eine der folgenden Zeichenfolgen beschr
     
 - Bedingung: SentToOrCcMe
     
-- Bedingung: Vertraulichkeit
+- Bedingung: Empfindlichkeit
     
 - Bedingung: WithinDateRange
     
@@ -144,7 +144,7 @@ Der Textwert für dieses Element ist auf eine der folgenden Zeichenfolgen beschr
     
 - Ausnahme: FromConnectedAccounts
     
-- Ausnahme: HasAttachments
+- Ausnahme: hasattachments
     
 - Ausnahme: Wichtigkeit
     
@@ -168,7 +168,7 @@ Der Textwert für dieses Element ist auf eine der folgenden Zeichenfolgen beschr
     
 - Ausnahme: IsSigned
     
-- Ausnahme: IsVoicemail
+- Ausnahme: isvoicemail
     
 - Ausnahme: ItemClasses
     
@@ -186,7 +186,7 @@ Der Textwert für dieses Element ist auf eine der folgenden Zeichenfolgen beschr
     
 - Ausnahme: SentToOrCcMe
     
-- Ausnahme: Vertraulichkeit
+- Ausnahme: Empfindlichkeit
     
 - Ausnahme: WithinDateRange
     
@@ -196,7 +196,7 @@ Der Textwert für dieses Element ist auf eine der folgenden Zeichenfolgen beschr
     
 - Aktion: CopyToFolder
     
-- Löschen der Aktion:
+- Aktion: Löschen
     
 - Aktion: ForwardAsAttachmentToRecipients
     
@@ -226,17 +226,17 @@ Der Textwert für dieses Element ist auf eine der folgenden Zeichenfolgen beschr
     
 - Ausnahmen
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

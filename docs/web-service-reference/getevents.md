@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 22d4da6b-d8a8-484f-82c4-3e4b8f5431cd
-description: Das GetEvents-Element darstellt, den Vorgang von Pull-Clients auf Anforderung-Benachrichtigungen vom Server verwendet.
-ms.openlocfilehash: e7b24207bff579a2f5230676d6520452f96fe0ce
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetEvents-Element stellt den Vorgang dar, der von Pull-Clients zum Anfordern von Benachrichtigungen vom Server verwendet wird.
+ms.openlocfilehash: 004f782ccd32b3c5e501080bfc59419a6e7d9ce4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758646"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462500"
 ---
 # <a name="getevents"></a>GetEvents
 
-Das **GetEvents** -Element darstellt, den Vorgang von Pull-Clients auf Anforderung-Benachrichtigungen vom Server verwendet. 
+Das **GetEvents** -Element stellt den Vorgang dar, der von Pull-Clients zum Anfordern von Benachrichtigungen vom Server verwendet wird. 
   
 [GetEvents](getevents.md)
   
@@ -32,7 +32,7 @@ Das **GetEvents** -Element darstellt, den Vorgang von Pull-Clients auf Anforderu
 </GetEvents>
 ```
 
- **GetEventsType**
+ **Geteventstype**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -45,24 +45,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SubscriptionId (GetEvents)](subscriptionid-getevents.md) <br/> |Stellt den Bezeichner für ein Abonnement, das für Ereignisse abgefragt wird.  <br/> |
-|[Wasserzeichen](watermark.md) <br/> |Stellt das letzte Wasserzeichen an den Client zurückgegeben. Wenn GetEvents für dieses Abonnement nicht aufgerufen wurde, verwendet der Client das Wasserzeichen aus der Subscribe-Anforderung zurückgegeben. Andernfalls wird das Wasserzeichen aus dem letzten Ereignis in der letzten GetEvents Antwort verwendet.  <br/> |
+|[Abonnement-Nr (GetEvents)](subscriptionid-getevents.md) <br/> |Stellt den Bezeichner für ein Abonnement dar, das für Ereignisse abgefragt wird.  <br/> |
+|[Watermark](watermark.md) <br/> |Stellt das letzte Wasserzeichen dar, das an den Client zurückgegeben wird. Wenn GetEvents nicht für dieses Abonnement aufgerufen wurde, verwendet der Client das Wasserzeichen, das von der Subscribe-Anforderung zurückgegeben wird. Andernfalls wird das Wasserzeichen aus dem letzten Ereignis in der letzten GetEvents-Antwort verwendet.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

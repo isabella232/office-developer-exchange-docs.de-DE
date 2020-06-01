@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 06bc95d7-121c-433b-bd27-c2b0eb8c011f
-description: Das UniqueBody-Element stellt ein HTML-Fragment oder nur-Text, der den eindeutigen Text an dieser Unterhaltung darstellt.
-ms.openlocfilehash: 49d3607926e0b985074d79cde76cad084f537f01
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UniqueBody-Element stellt ein HTML-Fragment oder nur-Text dar, der den eindeutigen Textkörper dieser Unterhaltung darstellt.
+ms.openlocfilehash: 0a8d52c7d4eb8bda9fd41c4c25e448523185df93
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839301"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461919"
 ---
 # <a name="uniquebody"></a>UniqueBody
 
-Das **UniqueBody** -Element stellt ein HTML-Fragment oder nur-Text, der den eindeutigen Text an dieser Unterhaltung darstellt. 
+Das **UniqueBody** -Element stellt ein HTML-Fragment oder nur-Text dar, der den eindeutigen Textkörper dieser Unterhaltung darstellt. 
   
 ```XML
 <UniqueBody BodyType=""/>
@@ -36,14 +36,14 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**BodyType** <br/> |Beschreibt, wie den Textkörper des Elements im Element gespeichert ist.  <br/> |
+|**BodyType** <br/> |Beschreibt, wie der Element Text im Element gespeichert wird.  <br/> |
    
 #### <a name="bodytype-attribute"></a>BodyType-Attribut
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|**HTML** <br/> |Konvertiert alle Texte in HTML.  <br/> |
-|**Text** <br/> |Alle Texte konvertiert in nur-Text.  <br/> |
+|**HTML** <br/> |Wandelt alle Textkörper in HTML um.  <br/> |
+|**Text** <br/> |Wandelt alle Textkörper in nur-Text um.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -62,7 +62,7 @@ Keine.
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort im Exchange-Informationsspeicher dar.  <br/> |
 |[Message](message-ex15websvcsotherref.md) <br/> |Stellt eine Exchange-E-Mail-Nachricht dar.  <br/> |
-|[PostItem-Objekt](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Speicher.  <br/> |
+|[PostItem](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Informationsspeicher dar.  <br/> |
 |[RemoveItem](removeitem.md) <br/> |Entfernt ein Element aus dem Exchange-Informationsspeicher.  <br/> |
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
    
@@ -70,15 +70,15 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

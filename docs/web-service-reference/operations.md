@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d8cd41b1-28ae-4c95-9ff6-8b25c8e18306
-description: Das Vorgänge Element enthält ein Array von Regelvorgänge, die für einen Ordner Posteingang ausgeführt werden kann.
-ms.openlocfilehash: 1030703d5e496be391d557e99e1420f9fddfdb36
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Operations-Element enthält ein Array von regelvorgängen, die für einen Posteingang ausgeführt werden können.
+ms.openlocfilehash: 4bbec4ad6424f802bb6781a870d65f23705e88c4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830655"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462486"
 ---
 # <a name="operations"></a>Vorgänge
 
-Das **Vorgänge** Element enthält ein Array von Regelvorgänge, die für einen Ordner Posteingang ausgeführt werden kann. 
+Das **Operations** -Element enthält ein Array von regelvorgängen, die für einen Posteingang ausgeführt werden können. 
   
 [UpdateInboxRules](updateinboxrules.md)
   
@@ -47,24 +47,24 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[CreateRuleOperation](createruleoperation.md) <br/> |Stellt einen Vorgang zum Erstellen einer neuen Posteingangsregel dar.  <br/> |
-|[SetRuleOperation](setruleoperation.md) <br/> |Stellt einen Vorgang, um eine Posteingangsregel zu aktualisieren.  <br/> |
-|[DeleteRuleOperation](deleteruleoperation.md) <br/> |Stellt einen Vorgang, um eine Posteingangsregel zu löschen.  <br/> |
+|[SetRuleOperation](setruleoperation.md) <br/> |Stellt einen Vorgang zum Aktualisieren einer Posteingangsregel dar.  <br/> |
+|[DeleteRuleOperation](deleteruleoperation.md) <br/> |Stellt einen Vorgang zum Löschen einer Posteingangsregel dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UpdateInboxRules](updateinboxrules.md) <br/> |Definiert eine Anforderung zum Aktualisieren der Posteingangsregeln in einem Postfach im Serverspeicher.  <br/> |
+|[UpdateInboxRules](updateinboxrules.md) <br/> |Definiert eine Anforderung zum Aktualisieren der Posteingangsregeln in einem Postfach im Server Speicher.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

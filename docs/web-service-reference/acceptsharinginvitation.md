@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3c2a47d6-490d-425b-8893-089a4f8882cd
-description: Das Element AcceptSharingInvitation wird verwendet, um eine Einladung annehmen, die Zugriff auf einen anderen Benutzer Kalender oder Kontaktdaten ermöglicht.
-ms.openlocfilehash: 06439739e6cc544d5039ac9d18e0452b1d42a0ed
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AcceptSharingInvitation-Element wird verwendet, um eine Einladung zu akzeptieren, die den Zugriff auf die Kalender-oder Kontaktdaten eines anderen Benutzers zulässt.
+ms.openlocfilehash: c8cdae707bd122e74fa0e284163d1540d857c3de
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758365"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461709"
 ---
 # <a name="acceptsharinginvitation"></a>AcceptSharingInvitation
 
-Das Element **AcceptSharingInvitation** wird verwendet, um eine Einladung annehmen, die Zugriff auf einen anderen Benutzer Kalender oder Kontaktdaten ermöglicht. 
+Das **AcceptSharingInvitation** -Element wird verwendet, um eine Einladung zu akzeptieren, die den Zugriff auf die Kalender-oder Kontaktdaten eines anderen Benutzers zulässt. 
   
 ```xml
 <AcceptSharingInvitation>
@@ -42,24 +42,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ReferenceItemId](referenceitemid.md) <br/> |Identifiziert das Element auf dem im Response-Objekt verweist.  <br/> |
+|[ReferenceItemId](referenceitemid.md) <br/> |Gibt das Element an, auf das das Response-Objekt verweist.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseObjects](responseobjects.md) <br/> |Enthält eine Auflistung aller Antwort-Objekte, die ein Element in der Exchange-Informationsspeicher zugeordnet sind.  <br/> |
-|[Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |Enthält ein Array von Elementen im Ordner zu erstellen, die durch das Element [ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) bezeichnet wird.  <br/> |
+|[ResponseObjects](responseobjects.md) <br/> |Enthält eine Auflistung aller Response-Objekte, die einem Element in der Exchange-Informationsspeicher zugeordnet sind.  <br/> |
+|[Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |Enthält ein Array von Elementen, die in dem Ordner erstellt werden sollen, der durch das [parentfolderid (TargetFolderIdType)-](parentfolderid-targetfolderidtype.md) Element identifiziert wird.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

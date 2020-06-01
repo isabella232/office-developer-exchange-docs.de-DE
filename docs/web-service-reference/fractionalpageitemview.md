@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4111afec-35e7-4c6f-b291-9bbba603f633
-description: Das FractionalPageItemView-Element wird beschrieben, in der Seitenansicht startet und die maximale Anzahl von Elementen in einer Anforderung FindItem zurückgegeben.
-ms.openlocfilehash: 38c35d2b68dabfca1a43ab034deaf72c47b0ea66
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FractionalPageItemView-Element beschreibt, wo die ausgelagerte Ansicht beginnt und die maximale Anzahl von Elementen, die in einer FindItem-Anforderung zurückgegeben werden.
+ms.openlocfilehash: cbf45838558873dc5846823c2d1b26cf2c8af514
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758534"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461310"
 ---
 # <a name="fractionalpageitemview"></a>FractionalPageItemView
 
-Das **FractionalPageItemView** -Element wird beschrieben, in der Seitenansicht startet und die maximale Anzahl von Elementen in einer Anforderung [FindItem](finditem.md) zurückgegeben. 
+Das **FractionalPageItemView** -Element beschreibt, wo die ausgelagerte Ansicht beginnt und die maximale Anzahl von Elementen, die in einer [FindItem](finditem.md) -Anforderung zurückgegeben werden. 
   
 [FindItem](finditem.md)
   
@@ -40,9 +40,9 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**"MaxEntriesReturned"** <br/> |Gibt die maximale Anzahl der in der Antwort [FindItem](finditem.md) zurückzugebender Ergebnisse an. Dieses Attribut ist optional. Wenn dieses Attribut nicht angegeben ist, gibt der Aufruf alle verfügbaren Elemente zurück.  <br/> |
-|**Zähler** <br/> |Stellt den Zähler für den Bruch Offset vom Anfang des Resultsets dar. Dieses Attribut ist erforderlich. Der Zähler muss kleiner oder gleich der Nenner. Dieses Attribut muss es sich um einen ganzzahligen Wert darstellen, der gleich oder größer als 0 (null) ist.  <br/> Weitere Informationen finden Sie unter "Hinweise" weiter unten in diesem Thema.  <br/> |
-|**Nenner** <br/> |Stellt dar, die als Nenner für den Bruch Offset ab dem Anfang der Gesamtanzahl der Elemente im Resultset. Dieses Attribut ist erforderlich. Dieses Attribut muss auf einen ganzzahligen Wert darstellen, der größer als 1 ist.  <br/> Weitere Informationen finden Sie unter "Hinweise" weiter unten in diesem Thema.  <br/> |
+|**MaxEntriesReturned** <br/> |Gibt die maximale Anzahl von Ergebnissen an, die in der [FindItem](finditem.md) -Antwort zurückgegeben werden. Dieses Attribut ist optional. Wenn dieses Attribut nicht angegeben wird, gibt der Aufruf alle verfügbaren Elemente zurück.  <br/> |
+|**Zähler** <br/> |Stellt den Zaehler des Bruchs Offsets vom Anfang des Resultsets dar. Dieses Attribut ist erforderlich. Der Zähler muss gleich oder kleiner als der Nenner sein. Dieses Attribut muss einen ganzzahligen Wert darstellen, der größer oder gleich NULL ist.  <br/> Weitere Informationen finden Sie weiter unten in diesem Thema unter Hinweise.  <br/> |
+|**Nenner** <br/> |Stellt den Nenner des Bruchs Offsets vom Anfang der Gesamtzahl der Elemente in der Ergebnisgruppe dar. Dieses Attribut ist erforderlich. Dieses Attribut muss einen ganzzahligen Wert darstellen, der größer als 1 ist.  <br/> Weitere Informationen finden Sie weiter unten in diesem Thema unter Hinweise.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -52,31 +52,31 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindItem](finditem.md) <br/> |Definiert eine Anforderung zum Suchen von Elementen in einem Postfach an.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/FindItem` <br/> |
+|[FindItem](finditem.md) <br/> |Definiert eine Anforderung zum Suchen von Elementen in einem Postfach.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/FindItem` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Seitenansicht Offset vom Beginn des Satzes von gefundenen Elemente wird durch eine Bruchzahl beschrieben. Der Anteil, die durch die **Zähler** und **Nenner** Attribute definiert ist, beschreibt, an die Seite mit Informationen beginnt. Wenn **Zähler** vier und **Nenner** fünf entspricht, befindet die Seite der zurückgegebenen Informationen beginnt am einen Eintrag vier Fünftel die Art und Weise in der Ergebnismenge. 
+Der Offset der Seitenansicht vom Anfang der Gruppe gefundener Elemente wird durch einen Bruch beschrieben. Der Bruch, der durch die Attribute **Zaehler** und **Nenner** definiert ist, beschreibt, wo die Informationsseite beginnt. Wenn der **Zähler** beispielsweise vier und der **Nenner** gleich fünf ist, beginnt die Seite mit den zurückgegebenen Informationen bei einem Eintrag, der sich auf vier Fünftel der Methode in der Ergebnismenge befand. 
   
-Wenn die Teiler gleich 0 (null) ausgewertet wird, gibt an, dass den Anfang des die Ergebnisse festzulegen. Wenn der Bruchteil eines ergibt, gibt an, dass das Ende des Resultsets.
+Wenn der Bruch auf 0 (null) ausgewertet wird, wird der Anfang des Resultsets angegeben. Wenn der Bruch zu 1 ausgewertet wird, gibt dies das Ende der Ergebnismenge an.
   
 > [!NOTE]
-> Der Anteil den Anfangspunkt der Seite darstellt, werden nicht wie viele Ergebnisse im Resultset zurückgegeben. 
+> Der Bruch stellt den Startpunkt der Seite dar, nicht wie viele Ergebnisse in der Ergebnismenge zurückgegeben werden. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt eine [FindItem](finditem.md) -Anforderung. Die Anforderung gibt Elemente zurück, aus den Suchergebnissen aus, die hinter der zweiten dritte der alle Objekte in der Ergebnismenge gestartet. 
+Das folgende Beispiel zeigt eine [FindItem](finditem.md) -Anforderung. Die Anforderung gibt Elemente aus den Suchergebnissen zurück, die nach dem zweiten Drittel aller Elemente in der Ergebnismenge beginnen. 
   
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <FindItem Traversal="Shallow" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindItem Traversal="Shallow" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ItemShape>
         <t:BaseShape>IdOnly</t:BaseShape>
         <t:AdditionalProperties>
@@ -98,15 +98,15 @@ Das folgende Beispiel zeigt eine [FindItem](finditem.md) -Anforderung. Die Anfor
 </soap:Envelope>
 ```
 
-Beispielsweise gibt das Resultset neun Elemente enthält, die Seitenansicht bis zu 12 Elementen, beginnend bei der gefundene Element zwei Drittel der Art und Weise in der Ergebnismenge zurück. In diesem Fall wird die Seite das siebten Element gestartet. Die Seite wird die siebte achten und neunten Elemente enthalten. Wenn der Zähler 0 (null) festgelegt ist, gibt die Seitenansicht alle Elemente zurück, im Resultset als die Anzahl kleiner als das Attribut **"MaxEntriesReturned"** ist. 
+Wenn das Resultset beispielsweise neun Elemente enthält, gibt die ausgelagerte Ansicht bis zu 12 Elemente zurück, beginnend bei dem Element, das zwei Drittel der Methode in zum Resultset gefunden hat. In diesem Fall beginnt die Seite mit dem siebten Element. Die Seite enthält das siebte, achte und neunte Element. Wenn der Zähler auf NULL festgelegt ist, gibt die Seitenansicht alle Elemente in der Ergebnismenge zurück, solange die Zahl kleiner als das **MaxEntriesReturned** -Attribut ist. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -116,5 +116,5 @@ Beispielsweise gibt das Resultset neun Elemente enthält, die Seitenansicht bis 
 [FindItem-Vorgang](finditem-operation.md)
 
 
-[Finding Items](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+[Finding Items](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

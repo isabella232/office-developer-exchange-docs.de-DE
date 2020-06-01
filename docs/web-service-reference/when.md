@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c7df1333-a33d-4cc6-a08a-34b68843f47d
-description: Zeitpunkt des-Element enthält Informationen dazu, wann ein Element Kalender oder eine Besprechung auftritt.
-ms.openlocfilehash: 519712ed10958cf556c8fb29372326ade3c31c90
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das When-Element stellt Informationen dazu bereit, wann ein Kalender-oder Besprechungselement auftritt.
+ms.openlocfilehash: 7c5f85184f966d909960bf1d79f5b8d33c67b51a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839540"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461856"
 ---
 # <a name="when"></a>Wann
 
-**When** -Element enthält Informationen dazu, wann ein Kalender oder ein Besprechungselement auftritt. 
+Das **When** -Element stellt Informationen dazu bereit, wann ein Kalender-oder Besprechungselement auftritt. 
   
 ```xml
 <When/>
@@ -49,17 +49,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist eine Zeichenfolge, die tritt ein Kalenderelement beschreibt.
+Der Textwert ist eine Zeichenfolge, die beschreibt, wann ein Kalenderelement auftritt.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

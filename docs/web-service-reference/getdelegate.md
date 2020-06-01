@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6d5efe59-596f-46f8-bdc6-ca9cded9bb8e
-description: Das GetDelegate-Element definiert eine Anforderung zum Abrufen von Informationen über Delegaten an ein Postfach. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: e31d6bd4f4387094beb467fcc4dff31ca7ec5d62
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das getdelegate-Element definiert eine Anforderung zum Abrufen von Informationen zu Delegaten an ein Postfach. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: bd7fb55800b51eb2d69184bc4e04cdef3e6b9a89
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758629"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461030"
 ---
 # <a name="getdelegate"></a>GetDelegate
 
-Das **GetDelegate** -Element definiert eine Anforderung zum Abrufen von Informationen über Delegaten an ein Postfach. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **getdelegate** -Element definiert eine Anforderung zum Abrufen von Informationen zu Delegaten an ein Postfach. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <GetDelegate IncludePermissions="">
@@ -30,7 +30,7 @@ Das **GetDelegate** -Element definiert eine Anforderung zum Abrufen von Informat
 </GetDelegate>
 ```
 
- **GetDelegateType**
+ **Getdelegattype**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -39,37 +39,37 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**IncludePermissions** <br/> |Gibt an, ob die Antwort berechtigungseinstellungen für jeden Benutzer Stellvertreter enthält.  <br/> |
+|**IncludePermissions** <br/> |Gibt an, ob die Antwort Berechtigungseinstellungen für jeden Delegate-Benutzer enthält.  <br/> |
    
-#### <a name="includepermissions-attribute-values"></a>Attributwerte IncludePermissions
+#### <a name="includepermissions-attribute-values"></a>IncludePermissions-Attributwerte
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|**True** <br/> |Delegieren der Benutzer, den Berechtigungen zusätzlich zu den Delegaten Benutzerinformationen zurückgegeben werden, die im [UserId](userid.md) -Element zurückgegeben wird.  <br/> |
-|**False** <br/> |[Benutzer-ID](userid.md) -Informationen werden zurückgegeben.  <br/> |
+|**True** <br/> |Stellvertreter Benutzerberechtigungen werden zusätzlich zu den Delegate-Benutzerinformationen zurückgegeben, die im [UserID](userid.md) -Element zurückgegeben werden.  <br/> |
+|**False** <br/> |[UserID](userid.md) -Informationen werden zurückgegeben.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Postfach](mailbox.md) <br/> |Identifiziert den Prinzipal Postfach an.  <br/> |
-|[Benutzer-IDs](userids.md) <br/> |Enthält ein Array von Delegaten Benutzern von einem Prinzipal Postfach abgerufen. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[Postfach](mailbox.md) <br/> |Identifiziert das Postfach des Prinzipals.  <br/> |
+|[UserIds](userids.md) <br/> |Enthält ein Array von Delegate-Benutzern, die aus dem Postfach eines Prinzipals abgerufen werden sollen. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

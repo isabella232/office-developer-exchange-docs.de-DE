@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 5ac0ff6d-9e02-4e4c-973d-cd9e076661d5
-description: Das GetDomainSettingsRequest-Element stellt eine Anforderung GetDomainSettings-Vorgang (SOAP)-Operation dar.
-ms.openlocfilehash: 4de525a9ba47a0d9afb0d6db9200fe32845f31d0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetDomainSettingsRequest-Element stellt eine GetDomainSettings Operation (SOAP)-Vorgangsanforderung dar.
+ms.openlocfilehash: 400016d0817131fb70ec7ff3db7fbfdc1b51f8f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758639"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460960"
 ---
 # <a name="getdomainsettingsrequest-soap"></a>GetDomainSettingsRequest (SOAP)
 
-Das **GetDomainSettingsRequest** -Element stellt die Anforderung einer [GetDomainSettings-Vorgang (SOAP)](getdomainsettings-operation-soap.md) -Operation dar. 
+Das **GetDomainSettingsRequest** -Element stellt eine [GetDomainSettings Operation (SOAP)-](getdomainsettings-operation-soap.md) Vorgangsanforderung dar. 
   
 ```XML
 <GetDomainSettingsRequest>
@@ -41,9 +41,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Domänen (SOAP)](domains-soap.md) <br/> |Stellt eine Sammlung von Bezeichnern Domäne dar.  <br/> |
-|[RequestedSettings (SOAP)](requestedsettings-soap.md) <br/> |Enthält die Namen der Konfigurationseinstellungen für die angeforderte Domäne.  <br/> |
-|[RequestedVersion (SOAP)](requestedversion-soap.md) <br/> |Gibt die Serverversion, die der Anbieter verwendet wird.  <br/> |
+|[Domänen (SOAP)](domains-soap.md) <br/> |Stellt eine Auflistung von Domänen-IDs dar.  <br/> |
+|[RequestedSettings (SOAP)](requestedsettings-soap.md) <br/> |Enthält die Namen der angeforderten Domänen Konfigurationseinstellungen.  <br/> |
+|[RequestedVersion (SOAP)](requestedversion-soap.md) <br/> |Gibt die Server Version an, die vom Anbieter verwendet wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -53,13 +53,13 @@ Keine.
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

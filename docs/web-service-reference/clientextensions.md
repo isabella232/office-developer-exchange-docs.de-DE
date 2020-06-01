@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0073d195-75fd-4c89-97e0-2ad6d91f99f9
-description: Das ClientExtensions-Element enthält ein Array von Benutzer- und Konfigurationsdaten Informationen zu apps.
-ms.openlocfilehash: c2f2511154daaded09ba0e8d811baf9ce30ca138
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ClientExtensions-Element enthält ein Array von Benutzer-und Konfigurationsinformationen zu apps.
+ms.openlocfilehash: 016b4c910f3c21a20d72b926a1c568925aa9d37e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757572"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461457"
 ---
 # <a name="clientextensions"></a>ClientExtensions
 
-Das **ClientExtensions** -Element enthält ein Array von Benutzer- und Konfigurationsdaten Informationen zu apps. 
+Das **ClientExtensions** -Element enthält ein Array von Benutzer-und Konfigurationsinformationen zu apps. 
   
 ```XML
 <ClientExtensions>
@@ -38,21 +38,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ClientExtension](clientextension.md) <br/> |Benutzer- und Konfigurationsdaten Informationen zu einer app enthält.  <br/> |
+|[Client Extension](clientextension.md) <br/> |Enthält Benutzer-und Konfigurationsinformationen zu einer App.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetClientExtensionResponse](getclientextensionresponse.md) <br/> |Stellt eine Antwort, um Konfigurationsinformationen zu einer app abzurufen.  <br/> |
+|[GetClientExtensionResponse](getclientextensionresponse.md) <br/> |Stellt eine Antwort dar, um Konfigurationsinformationen zu einer APP abzurufen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 ||
 |:-----|

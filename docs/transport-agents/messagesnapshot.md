@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: f157e44c-b950-463f-b086-31d5da94b7ff
-description: 'Zuletzt geändert: 17 September 2015'
-ms.openlocfilehash: 4b814def8eef8fb452d2e754c5f6787d644055f7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 'Letzte Änderung: September 17, 2015'
+ms.openlocfilehash: 8a58444580c803efb7312df95d75d697bc42e8e0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757198"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461842"
 ---
 # <a name="messagesnapshot"></a>messageSnapshot
 
 **Gilt für:** Exchange Server 2013
   
-Das **MessageSnapshot** -Element enthält ein Attribut, das angibt, ob das Pipeline Tracing-Feature für den Exchange-Server aktiviert ist, die Access-Client oder die Serverrolle Mailbox installiert hat. 
+Das **messageSnapshot** -Element enthält ein Attribut, das angibt, ob das Feature für die Pipelineablaufverfolgung für den Exchange-Server aktiviert ist, auf dem die Client Zugriffs-oder Postfachserverrolle installiert ist. 
   
 - [Konfiguration](configuration.md)  
 - [mexRuntime](mexruntime.md) 
@@ -34,7 +34,7 @@ Das **MessageSnapshot** -Element enthält ein Attribut, das angibt, ob das Pipel
 <messageSnapshot enabled="" />
 ```
 
-**MessageSnapshotType (boolesch)**
+**messageSnapshotType (Boolean)**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -44,7 +44,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**aktiviert** <br/> |Ein boolescher Wert, der angibt, ob das Pipeline Tracing-Feature für den Clientzugriff oder dem Postfachserver aktiviert ist. Der Wert ist **true** , wenn die pipelineablaufverfolgung aktiviert ist. Andernfalls ist des Werts **false** oder das Element ist nicht vorhanden.  <br/> |
+|**enabled** <br/> |Ein boolescher Wert, der angibt, ob das Feature für die Pipelineablaufverfolgung für den Client Zugriff oder den Postfachserver aktiviert ist. Der Wert ist **true** , wenn die Pipelineablaufverfolgung aktiviert ist; Andernfalls ist der Wert **false** , oder das Element ist nicht vorhanden.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -54,18 +54,18 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Überwachung](monitoring.md) <br/> |Enthält Konfigurationsinformationen, die definiert, wie und wann Transportdienst mit Agents überwacht, die installiert werden.  <br/> |
+|[Überwachung](monitoring.md) <br/> |Enthält Konfigurationsinformationen, die definieren, wie und wann der Transportdienst Agents überwacht, die installiert sind.  <br/> |
    
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |Diese Datei ist nicht auf einen Namespace definieren.  <br/> |
+|Namespace  <br/> |In dieser Datei wird kein Namespace definiert.  <br/> |
 |Name des Schemas  <br/> |Nicht verfügbar.  <br/> |
 |Überprüfungsdatei  <br/> |Nicht verfügbar.  <br/> |
-|Leer kann sein  <br/> |Falsch.  <br/> |
+|Leer kann sein  <br/> |"False".  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Agents Datei Konfigurationselemente für Exchange 2013](agents-configuration-file-elements-for-exchange-2013.md)
+- [Elemente der Konfigurationsdatei der Agents für Exchange 2013](agents-configuration-file-elements-for-exchange-2013.md)
 

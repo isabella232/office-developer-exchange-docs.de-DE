@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4ddba6b8-0f38-42cd-96a1-0d4283f6375b
-description: Das Element "MaxItems" gibt die maximale Anzahl von Elementen, die in der Anforderung zurückgeben.
-ms.openlocfilehash: dffb9ba4e29915a65fe2a57b6e7a7b4468028fa1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MaxItems wird-Element gibt die maximale Anzahl von Elementen an, die in der Anforderung zurückgegeben werden sollen.
+ms.openlocfilehash: f16e9d46b59c0f562aabd5383f7f445d93414f68
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830384"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461744"
 ---
 # <a name="maxitems"></a>MaxItems wird
 
-Das Element **"MaxItems"** gibt die maximale Anzahl von Elementen, die in der Anforderung zurückgeben. 
+Das **MaxItems wird** -Element gibt die maximale Anzahl von Elementen an, die in der Anforderung zurückgegeben werden sollen. 
   
 ```XML
 <MaxItems/>
@@ -42,21 +42,21 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des Elements **"MaxItems"** ist die maximale Anzahl von Elementen, die in der Anforderung zurückgeben. Diese Nummer darf nicht kleiner als 0 (null) oder größer als 200 sein. 
+Der Textwert des **MaxItems wird** -Elements ist die maximale Anzahl von Elementen, die in der Anforderung zurückgegeben werden sollen. Diese Zahl darf nicht kleiner als 0 (null) oder größer als 200 sein. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

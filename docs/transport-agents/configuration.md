@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6fc04e4d-657a-4999-9431-186ccb7832b5
-description: 'Zuletzt geändert: 17 September 2015'
-ms.openlocfilehash: 342e52e879534b6a130d286d358138c6095e4563
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 'Letzte Änderung: September 17, 2015'
+ms.openlocfilehash: b886851b9a0c17d58428f49281d664930d0e4070
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757171"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461562"
 ---
 # <a name="configuration"></a>Konfiguration
   
 **Gilt für:** Exchange Server 2013
   
-**Configuration** -Elements ist das Stammelement für die Konfigurationsdatei Agents. 
+Das **Configuration** -Element ist das Stammelement für die Konfigurationsdatei der Agents. 
   
 - [Konfiguration](configuration.md) 
 - [mexRuntime](mexruntime.md)
@@ -34,7 +34,7 @@ ms.locfileid: "19757171"
 </configuration>
 ```
 
-**ConfigurationType (ComplexType)**
+**ConfigurationType (complexType)**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -48,22 +48,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[mexRuntime](mexruntime.md) <br/> |Enthält Elemente, die definieren, Konfigurationsinformationen für die Überwachung durch den Agenten und Konfigurationsinformationen für SMTP und routing-Agents, die installiert werden.  <br/> |
+|[mexRuntime](mexruntime.md) <br/> |Enthält Elemente, die Konfigurationsinformationen für die Agent-Überwachung und Konfigurationsinformationen für die installierten SMTP-und Routing-Agents definieren.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |Diese Datei ist nicht auf einen Namespace definieren.  <br/> |
+|Namespace  <br/> |In dieser Datei wird kein Namespace definiert.  <br/> |
 |Name des Schemas  <br/> |Nicht verfügbar.  <br/> |
 |Überprüfungsdatei  <br/> |Nicht verfügbar.  <br/> |
-|Leer kann sein  <br/> |Falsch.  <br/> |
+|Leer kann sein  <br/> |"False".  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Agents Datei Konfigurationselemente für Exchange 2013](agents-configuration-file-elements-for-exchange-2013.md)
+- [Elemente der Konfigurationsdatei der Agents für Exchange 2013](agents-configuration-file-elements-for-exchange-2013.md)
 

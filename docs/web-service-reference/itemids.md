@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6b82122b-5544-4adf-91b7-ef2db7d5046f
-description: Das Artikelnummern ein.-Element enthält die eindeutigen Identitäten der Elemente, Vorkommen Elemente und Terminserien der Master-Shape, mit denen löschen, senden, abrufen, verschieben oder Kopieren von Elementen in der Exchange-Speicher.
-ms.openlocfilehash: 1bd4d6f4593a7c3b418561269d8b29707cc6030c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das itemids-Element enthält die eindeutigen Identitäten von Elementen, vorkommen und wiederkehrenden Hauptelementen, die zum Löschen, senden, abrufen, verlagern oder Kopieren von Elementen in der Exchange-Informationsspeicher verwendet werden.
+ms.openlocfilehash: bbd594ce2610bd625b0e16a0383fda552ee9eb19
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830155"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460603"
 ---
 # <a name="itemids"></a>ItemIds
   
-Das **Artikelnummern ein.** -Element enthält die eindeutigen Identitäten der Elemente, Vorkommen Elemente und Terminserien der Master-Shape, mit denen löschen, senden, abrufen, verschieben oder Kopieren von Elementen in der Exchange-Speicher.
+Das **itemids** -Element enthält die eindeutigen Identitäten von Elementen, vorkommen und wiederkehrenden Hauptelementen, die zum Löschen, senden, abrufen, verlagern oder Kopieren von Elementen in der Exchange-Informationsspeicher verwendet werden.
   
 ```xml
 <ItemIds>
@@ -45,40 +45,40 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und Ändern eines Elements in der Exchange-Speicher.  <br/> |
-|[OccurrenceItemId](occurrenceitemid.md) <br/> |Gibt ein einzelnes Vorkommen des eine Terminserie.  <br/> |
-|[RecurringMasterItemId](recurringmasteritemid.md) <br/> |Gibt ein Master-Shape Recurrence-Element durch das Identifizieren von seine Vorkommen verwandte Elemente-Bezeichner.  <br/> |
+|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel eines Elements in der Exchange-Informationsspeicher.  <br/> |
+|[OccurrenceItemId](occurrenceitemid.md) <br/> |Gibt ein einzelnes Vorkommen eines wiederkehrenden Elements an.  <br/> |
+|[RecurringMasterItemId](recurringmasteritemid.md) <br/> |Identifiziert ein Serienmasterelement durch Identifizieren eines der Bezeichner des zugehörigen vorkommen Elements.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Unterhaltung (ConversationType)](conversation-conversationtype.md) <br/> |Stellt eine einfache Unterhaltung dar.  <br/> |
-|[DeleteItem](deleteitem.md) <br/> |Definiert eine Anforderung zum Löschen von Elementen im Exchange-Speicher.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/DeleteItem` <br/> |
-|[SendItem](senditem.md) <br/> |Das Stammelement, das eine Anforderung zum Senden von Elementen im Exchange-Speicher definiert.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/SendItem` <br/> |
-|[GetItem](getitem.md) <br/> |Definiert eine Anforderung zum Abrufen von Elementen aus dem Exchange-Speicher.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetItem` <br/> |
-|[MoveItem](moveitem.md) <br/> |Definiert eine Anforderung an die Elemente im Exchange-Speicher zu verschieben.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/MoveItem` <br/> |
-|[CopyItem](copyitem.md) <br/> |Definiert eine Anforderung zum Kopieren von Elementen im Exchange-Speicher.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/CopyItem` <br/> |
+|[DeleteItem](deleteitem.md) <br/> |Definiert eine Anforderung zum Löschen von Elementen im Exchange-Informationsspeicher.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/DeleteItem` <br/> |
+|[SendItem](senditem.md) <br/> |Das Stammelement, das eine Anforderung zum Senden von Elementen im Exchange-Informationsspeicher definiert.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/SendItem` <br/> |
+|[GetItem](getitem.md) <br/> |Definiert eine Anforderung zum Abrufen von Elementen aus dem Exchange-Informationsspeicher.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetItem` <br/> |
+|[MoveItem](moveitem.md) <br/> |Definiert eine Anforderung zum verlagern von Elementen im Exchange-Informationsspeicher.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/MoveItem` <br/> |
+|[CopyItem](copyitem.md) <br/> |Definiert eine Anforderung zum Kopieren von Elementen in der Exchange-Informationsspeicher.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/CopyItem` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 - [DeleteItem-Operation](deleteitem-operation.md)
-- [SendItem Operation](senditem-operation.md) 
-- [GetItem Operation](getitem-operation.md)
-- [MoveItem Operation](moveitem-operation.md)
-- [CopyItem Operation](copyitem-operation.md)
-- [FindConversation Operation](findconversation-operation.md)
+- [SendItem-Vorgang](senditem-operation.md) 
+- [GetItem-Vorgang](getitem-operation.md)
+- [MoveItem-Vorgang](moveitem-operation.md)
+- [CopyItem-Vorgang](copyitem-operation.md)
+- [FindConversation-Vorgang](findconversation-operation.md)
 

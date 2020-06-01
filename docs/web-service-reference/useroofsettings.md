@@ -1,5 +1,5 @@
 ---
-title: "' UserOofSettings '"
+title: UserOofSettings
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0a95ca63-660e-4cc0-82e4-3f74fb4ae21c
-description: Das Element ' UserOofSettings ' gibt die Out of Office (OOF).
-ms.openlocfilehash: a035fd89387ece632d83f5f72a564e4896bc6753
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UserOofSettings-Element gibt die Abwesenheit (Out of Office, OOF) Einstellungen an.
+ms.openlocfilehash: 417c3d5061a6229d41eb57f72e89f03213acf460
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839457"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461905"
 ---
-# <a name="useroofsettings"></a>' UserOofSettings '
+# <a name="useroofsettings"></a>UserOofSettings
 
-Das Element **' UserOofSettings '** gibt die Out of Office (OOF). 
+Das **UserOofSettings** -Element gibt die Abwesenheit (Out of Office, OOF) Einstellungen an. 
   
 [SetUserOofSettingsRequest](setuseroofsettingsrequest.md)
   
-[' UserOofSettings '](useroofsettings.md)
+[UserOofSettings](useroofsettings.md)
   
 ```xml
 <UserOofSettings>
@@ -37,7 +37,7 @@ Das Element **' UserOofSettings '** gibt die Out of Office (OOF).
 </UserOofSettings>
 ```
 
- **' UserOofSettings '**
+ **UserOofSettings**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -50,37 +50,37 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OofState](oofstate.md) <br/> |Legt den Status des Benutzers OOF fest.  <br/> |
-|[ExternalAudience](externalaudience.md) <br/> |Legt fest, oder enthält einen Wert, der bestimmt, denen externe OOF Testnachrichten gesendet werden.  <br/> |
-|[Dauer (' UserOofSettings ')](duration-useroofsettings.md) <br/> |Gibt die Dauer, für die der Status ABWESEND aktiviert ist, wenn das Element [OofState](oofstate.md) **geplant**festgelegt ist. Wenn das Element [OofState](oofstate.md) auf **aktiviert** oder **deaktiviert**festgelegt ist, wird der Wert der dieses Element ignoriert.  <br/> |
-|[InternalReply](internalreply.md) <br/> |Enthält die OOF Antwort an andere Benutzer in der Domäne oder der vertrauenswürdigen Domänen des Benutzers gesendet.  <br/> |
-|[ExternalReply](externalreply.md) <br/> |Enthält die OOF Antwort an Adressen außerhalb der Domäne oder der vertrauenswürdigen Domänen des Empfängers gesendet.  <br/> |
+|[OofState](oofstate.md) <br/> |Legt den Abwesenheitsstatus des Benutzers fest.  <br/> |
+|[ExternalAudience](externalaudience.md) <br/> |Legt fest oder enthält einen Wert, der bestimmt, an wen externe Abwesenheitsnachrichten gesendet werden.  <br/> |
+|[Dauer (UserOofSettings)](duration-useroofsettings.md) <br/> |Gibt die Dauer an, für die der Abwesenheitsstatus aktiviert ist, wenn das [OofState](oofstate.md) -Element auf **Scheduled**festgelegt ist. Wenn das [OofState](oofstate.md) -Element auf **aktiviert** oder **deaktiviert**festgelegt ist, wird der Wert dieses Elements ignoriert.  <br/> |
+|[InternalReply](internalreply.md) <br/> |Enthält die Abwesenheitsantwort, die an andere Benutzer in der Domäne des Benutzers oder an vertrauenswürdigen Domänen gesendet wurde.  <br/> |
+|[ExternalReply](externalreply.md) <br/> |Enthält die Abwesenheitsantwort, die an Adressen außerhalb der Domäne des Empfängers oder vertrauenswürdiger Domänen gesendet wurde.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SetUserOofSettingsRequest](setuseroofsettingsrequest.md) <br/> |Enthält die Argumente verwendet, um eines Postfachbenutzers OOF Einstellungen und Nachrichten festzulegen.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/SetUserOofSettingsRequest` <br/> |
+|[SetUserOofSettingsRequest](setuseroofsettingsrequest.md) <br/> |Enthält die Argumente, die zum Festlegen der Abwesenheitseinstellungen und Nachrichten eines Postfachbenutzers verwendet werden.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/SetUserOofSettingsRequest` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird eine Anforderung SetUserOofSettings legt die OoFState auf **aktiviert**, wird die Dauer der OOF für 10 Tage, und die internen und externen Abwesenheitsnachrichten.
+Im folgenden Beispiel einer SetUserOofSettings-Anforderung wird die OoFState auf **Enabled**festgelegt, die Dauer von OOF für 10 Tage festgelegt und die internen und externen Abwesenheitsnachrichten festgelegt.
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -99,13 +99,13 @@ Im folgenden Beispiel wird eine Anforderung SetUserOofSettings legt die OoFState
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Name des Schemas  <br/> |Nachrichten-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Name des Schemas  <br/> |Nachrichtenschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

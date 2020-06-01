@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e1adb8b9-e3d5-469a-b188-822733d2503e
-description: Element mit der Priorität Gibt die Reihenfolge an, in der ist eine Regel ausgeführt werden.
-ms.openlocfilehash: 49e9bda063d8766ff49c8a2e9574c986bcfdbeb2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Priority-Element gibt die Reihenfolge an, in der eine Regel ausgeführt werden soll.
+ms.openlocfilehash: a5a894bba583618dd04430fc89f125c8920b0202
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830888"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462402"
 ---
 # <a name="priority"></a>Priorität
 
-Element mit der **Priorität** gibt die Reihenfolge an, in der ist eine Regel ausgeführt werden. 
+Das **Priority** -Element gibt die Reihenfolge an, in der eine Regel ausgeführt werden soll. 
   
 ```XML
 <Priority/>
@@ -44,23 +44,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Regel (RuleType)](rule-ruletype.md) <br/> |Stellt eine Regel in das Postfach des Benutzers an.  <br/> |
+|[Regel (RuleType)](rule-ruletype.md) <br/> |Stellt eine Regel im Postfach des Benutzers dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert für das Element der **Priorität** ist eine ganze Zahl, die die Reihenfolge der Ausführung gibt an, in der eine Regel ausgeführt werden soll. 
+Der Textwert für das **Priority** -Element ist eine ganze Zahl, die die Ausführungsreihenfolge angibt, in der eine Regel ausgeführt werden soll. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

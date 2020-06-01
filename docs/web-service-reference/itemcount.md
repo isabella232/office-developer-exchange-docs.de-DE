@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 47e42f5d-d3cb-4ee2-8370-1fd0539b6ee6
-description: Das ItemCount-Element gibt die Gesamtanzahl der Elemente in einem Suchergebnis.
-ms.openlocfilehash: 99f8c95aee7cc61ae7d1e8140c46d1e0ab0b14b5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ItemCount-Element gibt die Gesamtzahl der Elemente in einem Suchergebnis an.
+ms.openlocfilehash: 9635d22356e729b770505d399e91218cf1581d6e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830146"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461772"
 ---
 # <a name="itemcount"></a>ItemCount
 
-Das **ItemCount** -Element gibt die Gesamtanzahl der Elemente in einem Suchergebnis. 
+Das **ItemCount** -Element gibt die Gesamtzahl der Elemente in einem Suchergebnis an. 
   
 ```XML
 <ItemCount></ItemCount>
 ```
 
- **lange**
+ **Long**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -38,13 +38,13 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[SearchMailboxesResult](searchmailboxesresult.md) | [MailboxStat](mailboxstat.md) | [NonIndexableItemStatistic](nonindexableitemstatistic.md)
+[SearchMailboxesResult](searchmailboxesresult.md)  |  [MailboxStat](mailboxstat.md)  |  [NonIndexableItemStatistic](nonindexableitemstatistic.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **ItemCount** -Element gibt die Gesamtanzahl der Elemente in einem Suchergebnis. 
+Der Textwert des **ItemCount** -Elements gibt die Gesamtzahl der Elemente in einem Suchergebnis an. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

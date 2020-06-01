@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4a3d12a2-0736-4f60-b3b8-14586467df3c
-description: Das ImContactSipUriAddress-Element enthält die SIP-URI-Adresse eines Kontakts, die ein Instant messaging (IM)-Gruppe hinzugefügt wird.
-ms.openlocfilehash: 230f663c10f5738707a8d03a2ba6be8a4e6d285a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ImContactSipUriAddress-Element enthält die SIP-URI-Adresse eines Kontakts, der einer Chatgruppe (Instant Messaging) hinzugefügt wird.
+ms.openlocfilehash: 07eff4ef597b689f65241622677e4e4afc9300be
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829886"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460708"
 ---
 # <a name="imcontactsipuriaddress"></a>ImContactSipUriAddress
 
-Das **ImContactSipUriAddress** -Element enthält die SIP-URI-Adresse eines Kontakts, die ein Instant messaging (IM)-Gruppe hinzugefügt wird. 
+Das **ImContactSipUriAddress** -Element enthält die SIP-URI-Adresse eines Kontakts, der einer Chatgruppe (Instant Messaging) hinzugefügt wird. 
   
 ```XML
 <ImContactSipUriAddress></ImContactSipUriAddress>
@@ -42,21 +42,21 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ImContactSipUriAddress** -Elements ist die SIP-URI-Adresse eines Kontakts an. 
+Der Textwert des **ImContactSipUriAddress** -Elements ist die SIP-URI-Adresse eines Kontakts. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 

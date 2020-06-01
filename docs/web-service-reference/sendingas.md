@@ -1,5 +1,5 @@
 ---
-title: SendingAs
+title: Absender
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b43ce19f-9ab0-4946-acb2-c5aafead9d35
-description: Das SendingAs-Element darstellt, eine e-Mail-Adresse, der ein Benutzer versucht, als zu senden.
-ms.openlocfilehash: a5468ddb8facf99038d319252f7e1c780a888ca1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Sendings-Element stellt eine e-Mail-Adresse dar, die ein Benutzer zu senden versucht.
+ms.openlocfilehash: cd11bd60cbbe3434fcc1b0b9a1cfe0de9f0b1e21
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831338"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462136"
 ---
-# <a name="sendingas"></a>SendingAs
+# <a name="sendingas"></a>Absender
 
-Das **SendingAs** -Element darstellt, eine e-Mail-Adresse, der ein Benutzer versucht, als zu senden. 
+Das **Sendings** -Element stellt eine e-Mail-Adresse dar, die ein Benutzer zu senden versucht. 
   
 ```XML
 <SendingAs>
@@ -47,32 +47,32 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Name (EmailAddressType)](name-emailaddresstype.md) <br/> |Stellt den Namen des Postfachbenutzers dar. Dieses Element ist optional.  <br/> |
-|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Definiert die primäre Simple Mail Transfer Protocol (SMTP)-Adresse eines Postfachbenutzers an. Dieses Element ist optional.  <br/> |
-|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Definiert den Adresstyp für das Postfach an. Der Standard lautet SMTP. Dieses Element ist optional.  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |Stellt den Typ des Postfachs an, die von einem e-Mail-Benutzer dargestellt wird. Dieses Element ist optional.  <br/> |
+|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Definiert die primäre Simple Mail Transfer Protocol (SMTP) Adresse eines Postfachbenutzers. Dieses Element ist optional.  <br/> |
+|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Definiert den Adresstyp für das Postfach. Der Standard lautet SMTP. Dieses Element ist optional.  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |Stellt den Typ des Postfachs dar, der von einem e-Mail-Benutzer dargestellt wird. Dieses Element ist optional.  <br/> |
 |[ItemId](itemid.md) <br/> |Definiert den Elementbezeichner eines Kontakts oder die private Verteilungsliste für Empfänger aus dem Kontaktordner eines Benutzers. Dieses Element ist optional.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetMailTips](getmailtips.md) <br/> |Enthält die Empfänger und Typen von e-Mail-Infos abgerufen.  <br/> |
+|[GetMailTips](getmailtips.md) <br/> |Enthält die Empfänger und Typen von e-Mail-Tipps, die abgerufen werden sollen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

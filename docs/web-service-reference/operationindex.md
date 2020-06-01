@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 289f173c-26fa-4981-95dd-652e1921bdc6
-description: Das OperationIndex-Element gibt den Index des Vorgangs in der Anforderung, die der Regel Vorgang Fehler verursacht.
-ms.openlocfilehash: c13c3a4abebb4938afcd99d5c18bf880a60ff70a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das OperationIndex-Element gibt den Index des Vorgangs in der Anforderung an, die den Fehler des Regel Vorgangs verursacht hat.
+ms.openlocfilehash: a95f194231200520d2f3feb328b3608e2921826c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830654"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462493"
 ---
 # <a name="operationindex"></a>OperationIndex
 
-Das **OperationIndex** -Element gibt den Index des Vorgangs in der Anforderung, die der Regel Vorgang Fehler verursacht. 
+Das **OperationIndex** -Element gibt den Index des Vorgangs in der Anforderung an, die den Fehler des Regel Vorgangs verursacht hat. 
   
 ```XML
 <OperationIndex/>
@@ -50,17 +50,17 @@ Keine.
 
 Keine
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

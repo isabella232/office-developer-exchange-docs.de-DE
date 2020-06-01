@@ -1,5 +1,5 @@
 ---
-title: RecurrenceId
+title: Wiederholungs-Nr
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9ef3569d-ee56-4b22-b008-609fb3337da7
-description: Das Element RecurrenceId wird verwendet, um eine bestimmte Instanz eines sich wiederholenden Kalenderelements zu identifizieren.
-ms.openlocfilehash: 078bec85e1ca1530137f9935365d7dd3e530ea34
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Serien-Element wird verwendet, um eine bestimmte Instanz eines wiederkehrenden Kalenderelements zu identifizieren.
+ms.openlocfilehash: 58a379f2cffa7ff37181e93ad1c45c9752e84f1d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831005"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461611"
 ---
-# <a name="recurrenceid"></a>RecurrenceId
+# <a name="recurrenceid"></a>Wiederholungs-Nr
 
-Das Element **RecurrenceId** wird verwendet, um eine bestimmte Instanz eines sich wiederholenden Kalenderelements zu identifizieren. 
+Das **Serien** -Element wird verwendet, um eine bestimmte Instanz eines wiederkehrenden Kalenderelements zu identifizieren. 
   
 ```xml
 <RecurrenceId/>
@@ -46,23 +46,23 @@ Keine.
 |:-----|:-----|
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechungsnachricht dar.  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanfrage an.  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Antwort auf Besprechungsanfrage.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Einen Besprechungsabsage darstellt.  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanfrage dar.  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort dar.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Stellt einen Besprechungs Abbruch dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt einen Datum/Uhrzeit-Wert, der ein Kalender Vorkommen identifiziert.
+Der Wert Text stellt einen Datum/Uhrzeit-Wert dar, der ein Kalender vorkommen identifiziert.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft wird mit der [UID](uid.md) -Eigenschaft verwendet, um eine bestimmte Instanz eines sich wiederholenden Kalenderelements zu identifizieren. 
+Diese Eigenschaft wird zusammen mit der [UID](uid.md) -Eigenschaft verwendet, um eine bestimmte Instanz eines wiederkehrenden Kalenderelements zu identifizieren. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

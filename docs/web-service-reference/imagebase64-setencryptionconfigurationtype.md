@@ -1,5 +1,5 @@
 ---
-title: ImageBase64 (SetEncryptionConfigurationType)
+title: Imagebase64 (SetEncryptionConfigurationType)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 64905c0b-b923-4e31-84aa-e687eba31b17
-description: Die ImageBase64 (SetEncryptionConfigurationType)-Element ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: 3deca2419b70ac530581bd0160a3f63ea32a359d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das imagebase64 (SetEncryptionConfigurationType)-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: f1584911b6124a4ac1688bd64899b07308ad5d68
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829884"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460904"
 ---
-# <a name="imagebase64-setencryptionconfigurationtype"></a>ImageBase64 (SetEncryptionConfigurationType)
+# <a name="imagebase64-setencryptionconfigurationtype"></a>Imagebase64 (SetEncryptionConfigurationType)
 
-Die **ImageBase64 (SetEncryptionConfigurationType)** Element ist nur zur internen Verwendung vorgesehen. 
+Das **imagebase64 (SetEncryptionConfigurationType)-** Element ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

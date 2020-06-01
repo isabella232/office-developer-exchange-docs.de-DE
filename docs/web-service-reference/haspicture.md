@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 922a43fe-01bd-49f2-9261-e00e4699b8da
-description: Das HasPicture-Element gibt an, ob das Kontaktelement eine Dateianlage verfügt, die Bild für den Kontakt darstellt.
-ms.openlocfilehash: 8f6890ec2bcc9a961f69331fb20f5cad8a59bf38
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das HasPicture-Element gibt an, ob das Kontaktelement über eine Dateianlage verfügt, die das Bild des Kontakts darstellt.
+ms.openlocfilehash: 0f0758e38807587d47b9469f40b10bd9c6ea5012
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829806"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462437"
 ---
 # <a name="haspicture"></a>HasPicture
 
-Das **HasPicture** -Element gibt an, ob das Kontaktelement eine Dateianlage verfügt, die Bild für den Kontakt darstellt. 
+Das **HasPicture** -Element gibt an, ob das Kontaktelement über eine Dateianlage verfügt, die das Bild des Kontakts darstellt. 
   
-[Contact](contact.md)
+[Kontakt](contact.md)
   
 [HasPicture](haspicture.md)
   
@@ -52,17 +52,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **HasPicture** -Elements kann **true** oder **false**sein. Der Standardwert ist **false**.
+Der Textwert des **HasPicture** -Elements kann entweder **true** oder **false**sein. Der Standardwert ist **false**.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

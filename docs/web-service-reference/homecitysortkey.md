@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 21761cb0-4514-4adb-a659-59a3f2f0a6e1
-description: Das Element HomeCitySortKey stellt den Sortierschlüssel für den Ort.
-ms.openlocfilehash: c2d013ce8a1f5baad058169ca3babe27466ce528
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das HomeCitySortKey-Element stellt den Sortierschlüssel für die Heimatstadt dar.
+ms.openlocfilehash: 8a6c96f7de8915259d1151fc4ddb9b6148a864b6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829835"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460862"
 ---
 # <a name="homecitysortkey"></a>HomeCitySortKey
 
-Das Element **HomeCitySortKey** stellt den Sortierschlüssel für den Ort. 
+Das **HomeCitySortKey** -Element stellt den Sortierschlüssel für die Heimatstadt dar. 
   
 ```XML
 <HomeCitySortKey></HomeCitySortKey>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -38,23 +38,23 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Rolle](persona.md)
+[Persona](persona.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **HomeCitySortKey** -Elements ist die Sortierschlüssel für den Namen der Ort der Rolle. 
+Der Textwert des **HomeCitySortKey** -Elements ist der Sortierschlüssel für den Namen der Start Stadt der Rolle. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 0ce51644-7f3a-408c-a398-814439b658dc
-description: Das Server-Element gibt den Namen des e-Mail-Servers.
-ms.openlocfilehash: fafd6684d0857bd8b7e1bac0aae0ed162a6a938a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Server-Element gibt den Namen des e-Mail-Servers an.
+ms.openlocfilehash: 6b29b153bc75b8836bfa113e126d122d620c2984
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831369"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462010"
 ---
 # <a name="server-pox"></a>Server (POX)
 
-Das **Server** -Element gibt den Namen des e-Mail-Servers. 
+Das **Server** -Element gibt den Namen des e-Mail-Servers an. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,11 +50,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert identifiziert der Server. Für die Protokolle wie POP3, SMTP, IMAP oder NNTP wird dieser Wert einen Hostnamen oder eine IP-Adresse sein. Für die Protokolle wie DAV oder WEB wird dies eine URL sein.
+Der Text-Wert identifiziert den Server. Bei Protokollen wie POP3, SMTP, IMAP oder NNTP ist dieser Wert entweder ein Hostname oder eine IP-Adresse. Bei Protokollen wie DAV oder Internet ist dies eine URL.
   
 ## <a name="see-also"></a>Siehe auch
 

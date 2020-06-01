@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: cd56bcc0-d24a-4e8b-87bd-999bf69234b7
 description: Das FederatedDeliveryMailbox -Element darstellt, das Postfach, das eine lokale Cross-Nachricht gesendet wurde.
-ms.openlocfilehash: 4a9250455f8de3ede25f2b5ba9433690137ca1d3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: d493ed81e82237b7257e8c469f4552d931b73aa6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758409"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461947"
 ---
 # <a name="federateddeliverymailbox"></a>FederatedDeliveryMailbox
 
@@ -62,17 +62,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -1,5 +1,5 @@
 ---
-title: GetCallInfo (UM-Webdienst)
+title: GetCallInfo (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2758904d-ffb0-46ee-a134-e6394276996c
-description: Das GetCallInfo-Element definiert eine Anforderung zum Abrufen von Informationen zu einem Anruf.
-ms.openlocfilehash: 749a47abf4dd9ac70c6b29968f36c93988a1d6fe
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetCallInfo-Element definiert eine Anforderung zum Abrufen von Informationen zu einem Aufruf.
+ms.openlocfilehash: 34e743b561aa56a9312a82bad4b504ed3870129d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758589"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461219"
 ---
-# <a name="getcallinfo-um-web-service"></a>GetCallInfo (UM-Webdienst)
+# <a name="getcallinfo-um-web-service"></a>GetCallInfo (um-Webdienst)
 
-Das **GetCallInfo** -Element definiert eine Anforderung zum Abrufen von Informationen zu einem Anruf. 
+Das **GetCallInfo** -Element definiert eine Anforderung zum Abrufen von Informationen zu einem Aufruf. 
   
-[GetCallInfo (UM-Webdienst)](getcallinfo-um-web-service.md)
+[GetCallInfo (um-Webdienst)](getcallinfo-um-web-service.md)
   
 ```xml
 <GetCallInfo>
@@ -43,7 +43,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CallId (UM-Webdienst)](callid-um-web-service.md) <br/> |Enthält den Bezeichner des Anrufs, die zum Abrufen von Informationen.  <br/> |
+|[Anrufdienst (um-Webdienst)](callid-um-web-service.md) <br/> |Enthält den Bezeichner des Aufrufs, über den Informationen abgerufen werden sollen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -53,18 +53,18 @@ Keine.
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[GetCallInfo-Vorgang (UM-Webdienst)](getcallinfo-operation-um-web-service.md)
+[GetCallInfo-Vorgang (um-Webdienst)](getcallinfo-operation-um-web-service.md)
 

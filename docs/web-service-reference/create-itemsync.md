@@ -1,5 +1,5 @@
 ---
-title: Create (ItemSync)
+title: Erstellen (ItemSync)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: cb5e64a2-66a5-4447-921e-7c13efb8f6bf
-description: Das Create-Element identifiziert ein einzelnes Element in der lokalen Client-Speicher zu erstellen.
-ms.openlocfilehash: d49e54c64f7bd53dcb296d998a856c20570d81be
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das Create-Element identifiziert ein einzelnes Element, das im lokalen Clientspeicher erstellt werden soll.
+ms.openlocfilehash: b9c0f28333594a6c17ee9581a227fc4773874fd6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353945"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460799"
 ---
-# <a name="create-itemsync"></a>Create (ItemSync)
+# <a name="create-itemsync"></a>Erstellen (ItemSync)
 
-Das **Create** -Element identifiziert ein einzelnes Element in der lokalen Client-Speicher zu erstellen. 
+Das **Create** -Element identifiziert ein einzelnes Element, das im lokalen Clientspeicher erstellt werden soll. 
   
 - [SyncFolderItemsResponse](syncfolderitemsresponse.md) 
 - [ResponseMessages](responsemessages.md) 
 - [SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md) 
 - [Änderungen (Elemente)](changes-items.md) 
-- [Create (ItemSync)](create-itemsync.md)
+- [Erstellen (ItemSync)](create-itemsync.md)
   
 ```xml
 <Create>
@@ -103,32 +103,32 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Item](item.md) <br/> |So erstellen Sie ein generisches Exchange-Element darstellt.  <br/> |
-|[Meldung](message-ex15websvcsotherref.md) <br/> |So erstellen Sie eine Exchange E-mail-Nachricht darstellt.  <br/> |
-|[CalendarItem](calendaritem.md) <br/> |So erstellen Sie ein Exchange-Kalender-Element darstellt.  <br/> |
-|[Contact](contact.md) <br/> |So erstellen Sie ein Exchange-Kontaktelement darstellt.  <br/> |
-|[DistributionList](distributionlist.md) <br/> |So erstellen Sie eine Verteilerliste darstellt.  <br/> |
-|[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechungsnachricht zu erstellen.  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |So erstellen Sie eine Besprechungsanfrage darstellt.  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |So erstellen Sie eine Antwort auf Besprechungsanfrage darstellt.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |So erstellen Sie einen Besprechungsabsage darstellt.  <br/> |
-|[Aufgabe](task.md) <br/> |So erstellen Sie eine Aufgabe darstellt.  <br/> |
+|[Item](item.md) <br/> |Stellt ein generisches Exchange-Element zum Erstellen dar.  <br/> |
+|[Nachricht](message-ex15websvcsotherref.md) <br/> |Stellt eine zu erstellenden Exchange-e-Mail-Nachricht dar.  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Stellt ein zu Erstell Exchange-Kalenderelement dar.  <br/> |
+|[Kontakt](contact.md) <br/> |Stellt ein zu Erstell Exchange-Kontaktelement dar.  <br/> |
+|[DistributionList](distributionlist.md) <br/> |Stellt eine zu erstellende Verteilerliste dar.  <br/> |
+|[MeetingMessage](meetingmessage.md) <br/> |Stellt eine zu erstellende Besprechungsnachricht dar.  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanfrage zum Erstellen dar.  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort dar, die erstellt werden soll.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine zu Erstell endabbruch Besprechung dar.  <br/> |
+|[Aufgabe](task.md) <br/> |Stellt eine Aufgabe dar, die erstellt werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Änderungen (Elemente)](changes-items.md) <br/> |Enthält ein Array Sequenz von Dateitypen ändern, die die Typen der Unterschiede zwischen den Elementen auf dem Client und der Elemente auf dem Exchange-Server darstellen.  <br/> |
+|[Änderungen (Elemente)](changes-items.md) <br/> |Enthält ein Sequenz Array von Änderungstypen, die die Arten von Unterschieden zwischen den Elementen auf dem Client und den Elementen auf dem Exchange-Server darstellen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

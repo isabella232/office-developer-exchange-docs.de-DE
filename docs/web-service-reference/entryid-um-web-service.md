@@ -1,5 +1,5 @@
 ---
-title: EntryId (UM-Webdienst)
+title: Eingabe-Nr (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,21 +10,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: ce62eab5-0079-493b-be1f-52b62fdf35dc
-description: Das EntryId-Element enthält den Wert, der den Bezeichner des Elements, auf das Telefon in einer PlayOnPhone-Vorgang (UM-Webdienst) Anforderung abzuspielen darstellt.
-ms.openlocfilehash: 2bd9499a1be3935e10f9e2953a52cc8ffc18ade9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Entry-ID-Element enthält den Wert, der den Bezeichner des Elements darstellt, das in einer PlayOnPhone-Vorgangsanforderung (um-Webdienst) auf dem Telefon wiedergegeben werden soll.
+ms.openlocfilehash: 5b0ad5c5af682f7589d94219955dde646cd2897a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758257"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460694"
 ---
-# <a name="entryid-um-web-service"></a>EntryId (UM-Webdienst)
+# <a name="entryid-um-web-service"></a>Eingabe-Nr (um-Webdienst)
 
-Das **EntryId** -Element enthält den Wert, der den Bezeichner des Elements, auf das Telefon in einer Anforderung [PlayOnPhone-Vorgang (UM-Webdienst)](playonphone-operation-um-web-service.md) abzuspielen darstellt. 
+Das **Entry** -ID-Element enthält den Wert, der den Bezeichner des Elements darstellt, das in einer [PlayOnPhone-Vorgangsanforderung (um-Webdienst)](playonphone-operation-um-web-service.md) auf dem Telefon wiedergegeben werden soll. 
   
-[PlayOnPhone (UM-Webdienst)](playonphone-um-web-service.md)
+[PlayOnPhone (um-Webdienst)](playonphone-um-web-service.md)
   
-[EntryId (UM-Webdienst)](entryid-um-web-service.md)
+[Eingabe-Nr (um-Webdienst)](entryid-um-web-service.md)
   
 ```xml
 <PlayOnPhone>
@@ -32,7 +32,7 @@ Das **EntryId** -Element enthält den Wert, der den Bezeichner des Elements, auf
 </PlayOnPhone>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -49,28 +49,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PlayOnPhone (UM-Webdienst)](playonphone-um-web-service.md) <br/> |Definiert eine Anforderung an ein Element auf ein Telefon wiedergegeben werden sollen.  <br/> |
+|[PlayOnPhone (um-Webdienst)](playonphone-um-web-service.md) <br/> |Definiert eine Anforderung, ein Element auf einem Telefon wiederzugeben.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert ist erforderlich.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PlayOnPhone-Vorgang (UM-Webdienst)](playonphone-operation-um-web-service.md)
+[PlayOnPhone-Vorgang (um-Webdienst)](playonphone-operation-um-web-service.md)
   
-[PlayOnPhone (UM-Webdienst)](playonphone-um-web-service.md)
+[PlayOnPhone (um-Webdienst)](playonphone-um-web-service.md)
   
 [FindItem-Vorgang](finditem-operation.md)
 

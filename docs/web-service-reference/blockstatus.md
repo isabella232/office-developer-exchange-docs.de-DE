@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 08556ee9-0923-437c-99a4-bb630f04e973
 description: Das BlockStatus-Element gibt den Block Status eines Elements an.
-ms.openlocfilehash: 5733738d733578c47b849b9d7c62c9b66cd8922e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: e88236274bfa70216e872025c2a94231f837df1f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757457"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462276"
 ---
 # <a name="blockstatus"></a>BlockStatus
 
@@ -23,7 +23,7 @@ Das **BlockStatus** -Element gibt den Block Status eines Elements an.
 <BlockStatus> true | false </BlockStatus
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -43,25 +43,25 @@ Keine.
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[Kontaktperson](contact.md) <br/> |Stellt ein Kontaktelement im Exchange-Speicher.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
-|[Element](item.md) <br/> |Stellt ein generisches Element im Exchange-Speicher.  <br/> |
+|[Element](item.md) <br/> |Stellt ein generisches Element in der Exchange-Informationsspeicher dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **BlockStatus** -Element gibt an, dass ein Element ausgeschlossen wird. Der Wert **false** gibt an, dass ein Element nicht gesperrt ist. 
+Der Textwert **true** für das **BlockStatus** -Element gibt an, dass ein Element blockiert wird. Der Wert **false** gibt an, dass ein Element nicht blockiert wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

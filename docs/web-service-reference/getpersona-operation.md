@@ -7,48 +7,48 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e2146df0-53d0-4caf-9758-b600bbc14b6a
-description: Hier finden Sie Informationen über die GetPersona EWS Vorgang.
-ms.openlocfilehash: c6ac357eaa34e9bae2fe0a79a4a2d02449100e78
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier finden Sie Informationen zum EWS-Vorgang getpersona.
+ms.openlocfilehash: 2b335c694a85f87c96432ea6d7c1c674613d2f17
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758770"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460946"
 ---
 # <a name="getpersona-operation"></a>GetPersona-Vorgang
 
-Hier finden Sie Informationen zum **GetPersona** EWS-Vorgang. 
+Hier finden Sie Informationen zum EWS-Vorgang **getpersona** . 
   
-Der Vorgang **GetPersona** gibt einen Satz von Eigenschaften, die einer Rolle zugeordnet sind. 
+Der **getpersona** -Vorgang gibt eine Gruppe von Eigenschaften zurück, die einer Rolle zugeordnet sind. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
-## <a name="using-the-getpersona-operation"></a>Verwenden des GetPersona-Vorgangs
+## <a name="using-the-getpersona-operation"></a>Verwenden des getpersona-Vorgangs
 
-Der Vorgang **GetPersona** bietet Zugriff auf aggregierten Kontaktinformationen in Form einer Rolle. Das [PersonaId](personaid.md) -Element in der Anforderung identifiziert die Rolle in der Antwort zurückgegeben. Die Antwort kann einen Standardsatz Eigenschaften Rolle oder einen benutzerdefinierten Eigenschaftensatz enthalten. Es wird empfohlen, dass Sie angeben, dass eine benutzerdefinierte Eigenschaft festlegen, sodass Sie nicht verwendete Eigenschaften nicht verarbeitet und vom Server an den Client gesendet werden. 
+Der **getpersona** -Vorgang ermöglicht den Zugriff auf aggregierte Kontaktinformationen in Form einer Persona. Das [Persona](personaid.md) -Element in der Anforderung gibt die Rolle an, die in der Antwort zurückgegeben werden soll. Die Antwort kann eine Standardgruppe von Persona-Eigenschaften oder einen benutzerdefinierten Eigenschaftensatz enthalten. Es wird empfohlen, einen benutzerdefinierten Eigenschaften festzulegen, damit nicht verwendete Eigenschaften nicht verarbeitet und vom Server an den Client gesendet werden. 
   
-### <a name="getpersona-operation-soap-headers"></a>GetPersona Vorgang SOAP-Header
+### <a name="getpersona-operation-soap-headers"></a>SOAP-Kopfzeilen des getpersona-Vorgangs
 
-Der Vorgang **GetPersona** können die SOAP-Header, die in der folgenden Tabelle aufgelistet sind. 
+Der **getpersona** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |["ExchangeImpersonation"](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
    
-## <a name="getpersona-operation-request-example-return-a-default-set-of-properties-for-a-persona"></a>GetPersona Vorgang-anforderungsbeispiel: Zurückgeben von einen Standardsatz Eigenschaften für eine Rolle
+## <a name="getpersona-operation-request-example-return-a-default-set-of-properties-for-a-persona"></a>Getpersona-Vorgangs Anforderungs Beispiel: Zurückgeben eines Standardsatzes von Eigenschaften für eine Rolle
 
-Im folgenden Beispiel wird eine **GetPersona** Vorgang Anforderung zeigt, wie einen Standardsatz Eigenschaften zurückgegeben, die einer Rolle zugeordnet sind. 
+Im folgenden Beispiel einer **getpersona** -Vorgangsanforderung wird gezeigt, wie eine Standardgruppe von Eigenschaften zurückgegeben wird, die einer Rolle zugeordnet sind. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013"/>
    </soap:Header>
-   <soap:Body xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+   <soap:Body xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <GetPersona>
          <PersonaId Id="AAQkADEzAQAKtOtR/l4MlLqHWORfhSYKU="/>
       </GetPersona>
@@ -57,18 +57,18 @@ Im folgenden Beispiel wird eine **GetPersona** Vorgang Anforderung zeigt, wie ei
 
 ```
 
-Die Antwort SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Antworttext Körper enthält die folgenden Elemente:
   
 - [GetPersona](getpersona.md)
     
 - [PersonaId](personaid.md)
     
-## <a name="successful-getpersona-operation-response"></a>Erfolgreiche GetPersona Vorgangsantwort
+## <a name="successful-getpersona-operation-response"></a>Erfolgreiche getpersona-Vorgangs Antwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetPersona** Vorgang an. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Vorgangsanforderung von **getpersona** . 
   
 > [!NOTE]
-> Bezeichner für alle Elemente aus, und Ändern von Schlüsseln in diesem Artikel wurde gekürzt, um die Lesbarkeit zu erhalten. 
+> Alle Element-IDs und Änderungsschlüssel in diesem Artikel wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -79,31 +79,31 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetPersona** Vo
                            MajorBuildNumber="432" 
                            MinorBuildNumber="5" 
                            Version="Exchange2013"
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
       xmlns:xsd="http://www.w3.org/2001/XMLSchema"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <GetPersonaResponseMessage ResponseClass="Success"
-                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
          <Persona>
             <PersonaId Id="AAQkADEzAQAKtOtR="
-              xmlns="http://schemas.microsoft.com/exchange/services/2006/types"/>
-            <PersonaType xmlns="http://schemas.microsoft.com/exchange/services/2006/types">Person</PersonaType>
-            <CreationTime xmlns="http://schemas.microsoft.com/exchange/services/2006/types">2012-06-01T17:00:34Z</CreationTime>
-            <DisplayName xmlns="http://schemas.microsoft.com/exchange/services/2006/types">Brian Johnson</DisplayName>
-            <DisplayNameFirstLast xmlns="http://schemas.microsoft.com/exchange/services/2006/types">Brian Johnson</DisplayNameFirstLast>
-            <DisplayNameLastFirst xmlns="http://schemas.microsoft.com/exchange/services/2006/types">Johnson Brian</DisplayNameLastFirst>
-            <FileAs xmlns="http://schemas.microsoft.com/exchange/services/2006/types">Johnson, Brian</FileAs>
-            <FileAsId xmlns="http://schemas.microsoft.com/exchange/services/2006/types">None</FileAsId>
-            <GivenName xmlns="http://schemas.microsoft.com/exchange/services/2006/types">Brian</GivenName>
-            <Surname xmlns="http://schemas.microsoft.com/exchange/services/2006/types">Johnsoon</Surname>
-            <CompanyName xmlns="http://schemas.microsoft.com/exchange/services/2006/types">Contoso</CompanyName>
-            <RelevanceScore xmlns="http://schemas.microsoft.com/exchange/services/2006/types">4255550110</RelevanceScore>
-            <Attributions xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+              xmlns="https://schemas.microsoft.com/exchange/services/2006/types"/>
+            <PersonaType xmlns="https://schemas.microsoft.com/exchange/services/2006/types">Person</PersonaType>
+            <CreationTime xmlns="https://schemas.microsoft.com/exchange/services/2006/types">2012-06-01T17:00:34Z</CreationTime>
+            <DisplayName xmlns="https://schemas.microsoft.com/exchange/services/2006/types">Brian Johnson</DisplayName>
+            <DisplayNameFirstLast xmlns="https://schemas.microsoft.com/exchange/services/2006/types">Brian Johnson</DisplayNameFirstLast>
+            <DisplayNameLastFirst xmlns="https://schemas.microsoft.com/exchange/services/2006/types">Johnson Brian</DisplayNameLastFirst>
+            <FileAs xmlns="https://schemas.microsoft.com/exchange/services/2006/types">Johnson, Brian</FileAs>
+            <FileAsId xmlns="https://schemas.microsoft.com/exchange/services/2006/types">None</FileAsId>
+            <GivenName xmlns="https://schemas.microsoft.com/exchange/services/2006/types">Brian</GivenName>
+            <Surname xmlns="https://schemas.microsoft.com/exchange/services/2006/types">Johnsoon</Surname>
+            <CompanyName xmlns="https://schemas.microsoft.com/exchange/services/2006/types">Contoso</CompanyName>
+            <RelevanceScore xmlns="https://schemas.microsoft.com/exchange/services/2006/types">4255550110</RelevanceScore>
+            <Attributions xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <Attribution>
                   <Id>0</Id>
                   <SourceId Id="AAMkA =" ChangeKey="EQAAABY+"/>
@@ -114,7 +114,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetPersona** Vo
                   <FolderId Id="AAMkA=" ChangeKey="AQAAAA=="/>
                </Attribution>
             </Attributions>
-            <DisplayNames xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <DisplayNames xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <StringAttributedValue>
                   <Value>Brian Johnson</Value>
                   <Attributions>
@@ -122,7 +122,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetPersona** Vo
                   </Attributions>
                </StringAttributedValue>
             </DisplayNames>
-            <FileAses xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <FileAses xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <StringAttributedValue>
                   <Value>Johnson, Brian</Value>
                   <Attributions>
@@ -130,7 +130,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetPersona** Vo
                   </Attributions>
                </StringAttributedValue>
             </FileAses>
-            <FileAsIds xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <FileAsIds xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <StringAttributedValue>
                   <Value>None</Value>
                   <Attributions>
@@ -138,7 +138,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetPersona** Vo
                   </Attributions>
                </StringAttributedValue>
             </FileAsIds>
-            <GivenNames xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <GivenNames xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <StringAttributedValue>
                   <Value>Brian</Value>
                   <Attributions>
@@ -146,7 +146,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetPersona** Vo
                   </Attributions>
                </StringAttributedValue>
             </GivenNames>
-            <Surnames xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <Surnames xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <StringAttributedValue>
                   <Value>Johnson</Value>
                   <Attributions>
@@ -154,7 +154,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetPersona** Vo
                   </Attributions>
                </StringAttributedValue>
             </Surnames>
-            <MobilePhones xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <MobilePhones xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <PhoneNumberAttributedValue>
                   <Value>
                      <Number>(425)555-0110</Number>
@@ -165,7 +165,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetPersona** Vo
                   </Attributions>
                </PhoneNumberAttributedValue>
             </MobilePhones>
-            <CompanyNames xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <CompanyNames xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <StringAttributedValue>
                   <Value>Contoso</Value>
                   <Attributions>
@@ -180,17 +180,17 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetPersona** Vo
 
 ```
 
-Die Antwort SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Antworttext Körper enthält die folgenden Elemente:
   
 - GetPersonaResponseMessage
     
 - [ResponseCode](responsecode.md)
     
-- [Rolle](persona.md)
+- [Persona](persona.md)
     
 - [PersonaId](personaid.md)
     
-- [PersonaType](personatype.md)
+- [Personatype](personatype.md)
     
 - [CreationTime](creationtime.md)
     
@@ -202,25 +202,25 @@ Die Antwort SOAP-Text enthält die folgenden Elemente:
     
 - [FileAsId](fileasid.md)
     
-- [Vorname](givenname.md)
+- [GivenName](givenname.md)
     
 - [Nachname](surname.md)
     
-- [Firma](companyname.md)
+- [CompanyName](companyname.md)
     
 - [RelevanceScore](relevancescore.md)
     
-- [Hinweise (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
+- [Zuordnungen (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
     
-- [Zuweisung (Zeichenfolge)](attribution-string.md)
+- [Attribution (Zeichenfolge)](attribution-string.md)
     
 - [ID (Zeichenfolge)](id-string.md)
     
-- [SourceId](sourceid.md) SourceId 
+- [Quell](sourceid.md) -Nr SourceID 
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-- [IsWritable](iswritable.md)
+- [Isschreibbar](iswritable.md)
     
 - [IsQuickContact](isquickcontact.md)
     
@@ -228,15 +228,15 @@ Die Antwort SOAP-Text enthält die folgenden Elemente:
     
 - [FolderId](folderid.md)
     
-- [DisplayNames](displaynames.md)
+- [Display Names](displaynames.md)
     
 - [StringAttributedValue](stringattributedvalue.md)
     
 - [Wert (ArrayOfStringValueType)](value-arrayofstringvaluetype.md)
     
-- [Hinweise (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
+- [Zuordnungen (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
     
-- [Zuweisung (PersonaAttributionType)](attribution-personaattributiontype.md)
+- [Attribution (PersonaAttributionType)](attribution-personaattributiontype.md)
     
 - [FileAses](fileases.md)
     
@@ -246,21 +246,21 @@ Die Antwort SOAP-Text enthält die folgenden Elemente:
     
 - [Nachnamen](surnames.md)
     
-- [MobilePhones](mobilephones.md)
+- [Handys](mobilephones.md)
     
 - [PhoneNumberAttributedValue](phonenumberattributedvalue.md)
     
 - [Wert (PersonaPhoneNumberType)](value-personaphonenumbertype.md)
     
-- [Nummer](number.md)
+- [Number](number.md)
     
 - [Typ (Zeichenfolge)](type-string.md)
     
-- [CompanyNames](companynames.md)
+- [Companynames](companynames.md)
     
-## <a name="getpersona-operation-error-response"></a>GetPersona Vorgang Fehlerantwort
+## <a name="getpersona-operation-error-response"></a>Getpersona-Operation-Fehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetPersona** Vorgang Anforderung. Dies ist eine Antwort auf eine Anforderung, die ein Bezeichner falsch angegebenen Rolle enthält. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine Vorgangsanforderung von **getpersona** . Dies ist eine Antwort auf eine Anforderung, die eine falsch angegebene Persona-ID enthält. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -271,15 +271,15 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetPersona** Vorgang An
                            MajorBuildNumber="578" 
                            MinorBuildNumber="11" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <GetPersonaResponseMessage ResponseClass="Error" 
-                                 xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                 xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <MessageText>Id is malformed.</MessageText>
          <ResponseCode>ErrorInvalidIdMalformed</ResponseCode>
          <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -288,7 +288,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetPersona** Vorgang An
 </s:Envelope>
 ```
 
-Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
+Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
   
 - [GetPersonaResponseMessage](getpersonaresponsemessage.md)
     
@@ -298,13 +298,13 @@ Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Zusätzliche Fehlercodes, die für EWS generisch und für diese Operation spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
+Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 
 - [EWS-Operationen in Exchange](ews-operations-in-exchange.md)
     
-- [Benutzer und Kontakte in EWS in Exchange](http://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
+- [Benutzer und Kontakte in EWS in Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     
 - [FindPeople-Vorgang](findpeople-operation.md)
     

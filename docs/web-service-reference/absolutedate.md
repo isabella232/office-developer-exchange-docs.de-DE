@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8bc59a26-6fe1-42e9-968c-69a94a3fb0ae
-description: Das AbsoluteDate-Element darstellt, wenn die Zeit von Standard- oder Sommerzeit geändert wird.
-ms.openlocfilehash: d14cafb08297e5be3c8620c441f8b84b46ffe53e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AbsoluteDate-Element stellt das Datum dar, an dem sich die Zeit von der Standard-oder Sommerzeit ändert.
+ms.openlocfilehash: 1874fea02c1eeeb41522046963e1d1b2fcea645a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757302"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461730"
 ---
 # <a name="absolutedate"></a>AbsoluteDate
 
-Das **AbsoluteDate** -Element darstellt, wenn die Zeit von Standard- oder Sommerzeit geändert wird. 
+Das **AbsoluteDate** -Element stellt das Datum dar, an dem sich die Zeit von der Standard-oder Sommerzeit ändert. 
   
 ```xml
 <AbsoluteDate/>
@@ -45,22 +45,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Standard](standard.md) <br/> |Das Datum und Zeitpunkt der Änderung die Zeit von Sommerzeit auf Normalzeit darstellt.  <br/> |
-|[Sommerzeit](daylight.md) <br/> |Das Datum und Zeitpunkt der Änderung die Zeit von Normalzeit auf Sommerzeit darstellt.  <br/> |
+|[Standard](standard.md) <br/> |Stellt das Datum und die Uhrzeit dar, zu der sich die Zeit von Sommerzeit zu Standardzeit ändert.  <br/> |
+|[Sommer](daylight.md) <br/> |Stellt das Datum und die Uhrzeit dar, zu der die Zeit von Standardzeit zu Sommerzeit wechselt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert darstellt, das Datum der Wechsel zwischen Standard- oder Sommerzeit tritt.
+Der Textwert stellt das Datum dar, an dem die Verschiebung zwischen Standard-oder Sommerzeit erfolgt.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

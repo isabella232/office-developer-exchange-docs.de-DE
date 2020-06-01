@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1c76bd1d-6099-4966-a93e-865437267e33
-description: Das OrganizerLocation-Element ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: d9eb88e4ac435746f5e46f7d9b7e4f8c1862b579
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das OrganizerLocation-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: cd60ea3e671037509df4f52c1e34e6bdbf9fadf8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830664"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462388"
 ---
 # <a name="organizerlocation"></a>OrganizerLocation
 
-Das **OrganizerLocation** -Element ist nur zur internen Verwendung vorgesehen. 
+Das **OrganizerLocation** -Element ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8
-description: Die GetItem Operation ruft Kalenderelemente aus den Exchange-Speicher ab.
-ms.openlocfilehash: 69bce0f0cc7b5c986f9bf4767c3cd429a309e50d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetItem-Vorgang ruft Kalenderelemente aus dem Exchange-Informationsspeicher.
+ms.openlocfilehash: 09fe92af12f03ce4cebd1e98f4e01c087ace64f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758704"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460617"
 ---
 # <a name="getitem-operation-calendar-item"></a>GetItem-Vorgang (Kalenderelement)
 
-Die GetItem Operation ruft Kalenderelemente aus den Exchange-Speicher ab.
+Der GetItem-Vorgang ruft Kalenderelemente aus dem Exchange-Informationsspeicher.
   
-## <a name="getitem-request-example"></a>GetItem-anforderungsbeispiel
+## <a name="getitem-request-example"></a>GetItem-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung GetItem bilden eine Anforderung zum Abrufen der Identität und den Betreff eines Elements veranschaulicht.
+Im folgenden Beispiel einer GetItem-Anforderung wird gezeigt, wie eine Anforderung zum Abrufen der Identität und des Betreffs eines Elements formt.
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ItemShape>
         <t:BaseShape>IdOnly</t:BaseShape>
         <t:AdditionalProperties>
@@ -65,23 +65,23 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [FieldURI](fielduri.md)
     
-- [Artikelnummern ein.](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
 > [!NOTE]
 > Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt. 
   
-Um weitere Optionen für die Anforderung an den GetItem Operation zu suchen, verwenden Sie die Schemahierarchie. Starten Sie das [GetItem](getitem.md) -Element. 
+Um andere Optionen für die Anforderungsnachricht des GetItem-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [GetItem](getitem.md) -Element. 
   
 ## <a name="successful-getitem-response"></a>Erfolgreiche GetItem-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung GetItem. Die Anforderung, die dieser Antwort erstellt verwendet die IdOnly Baseshape. In diesem Beispiel wird nur die ID des Elements die Antwort zurückgegeben. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die GetItem-Anforderung. Die Anforderung, die diese Antwort erstellt hat, hat die IdOnly-baseshape verwendet. In diesem Beispiel gibt die Antwort nur die ID des Elements zurück. 
   
 > [!NOTE]
-> Die Element-ID und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit beizubehalten. 
   
 ### <a name="code"></a>Code
 
@@ -92,12 +92,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung GetIte
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                   xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                   xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                   xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                   xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -115,10 +115,10 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung GetIte
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung GetItem. Die Anforderung, die dieser Antwort erstellt verwendet die standardmäßige Baseshape. In diesem Beispiel gibt die Antwort die Standardform für ein Kalenderelement zurück.
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die GetItem-Anforderung. Die Anforderung, mit der diese Antwort erstellt wurde, verwendete die standardmäßige baseshape. In diesem Beispiel gibt die Antwort die Standardform für ein Kalenderelement zurück.
   
 > [!NOTE]
-> Die Element-ID und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit beizubehalten. 
   
 ### <a name="code"></a>Code
 
@@ -129,12 +129,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung GetIte
                 xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -166,7 +166,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung GetIte
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung GetItem. Die Anforderung, die dieser Antwort erstellt verwendet die AllProperties Baseshape. In diesem Beispiel gibt die Antwort das AllProperties-Shape für ein Kalenderelement zurück.
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die GetItem-Anforderung. Die Anforderung, die diese Antwort erstellt hat, hat die allproperties-baseshape verwendet. In diesem Beispiel gibt die Antwort die allproperties-Form für ein Kalenderelement zurück.
   
 ### <a name="code"></a>Code
 
@@ -177,12 +177,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung GetIte
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -263,11 +263,11 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung GetIte
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Wenn andere Optionen für die Antwortnachricht des Vorgangs GetItem suchen möchten, verwenden Sie die Schemahierarchie. Starten Sie das [GetItemResponse](getitemresponse.md) -Element. 
+Um andere Optionen für die Antwortnachricht des GetItem-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [GetItemResponse](getitemresponse.md) -Element. 
   
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -281,7 +281,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
 - [CalendarItem](calendaritem.md)
     
@@ -291,21 +291,21 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ItemClass](itemclass.md)
     
-- [Vertraulichkeit](sensitivity.md)
+- [Sensitivity](sensitivity.md)
     
 - [Body](body.md)
     
 - [DateTimeReceived](datetimereceived.md)
     
-- [Size](size.md)
+- [Größe](size.md)
     
 - [Importance](importance.md)
     
-- [IsSubmitted](issubmitted.md)
+- [Issubmitted](issubmitted.md)
     
 - [IsDraft](isdraft.md)
     
-- [IsFromMe](isfromme.md)
+- [Isfromme](isfromme.md)
     
 - [IsResend](isresend.md)
     
@@ -313,7 +313,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [DateTimeSent](datetimesent.md)
     
-- ["Datetimecreated"](datetimecreated.md)
+- [DateTimeCreated](datetimecreated.md)
     
 - [ResponseObjects](responseobjects.md)
     
@@ -327,7 +327,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [DisplayCc](displaycc.md)
     
-- [DisplayTo](displayto.md)
+- [Displayto ursprünglicher](displayto.md)
     
 - [HasAttachments](hasattachments.md)
     
@@ -335,13 +335,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Start](start.md)
     
-- [Ende](end-ex15websvcsotherref.md)
+- [End](end-ex15websvcsotherref.md)
     
 - [IsAllDayEvent](isalldayevent.md)
     
 - [LegacyFreeBusyStatus](legacyfreebusystatus.md)
     
-- [IsMeeting](ismeeting.md)
+- [Ismeeting](ismeeting.md)
     
 - [IsCancelled](iscancelled.md)
     
@@ -351,7 +351,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [CalendarItemType](calendaritemtype.md)
     
-- [MyResponseType](myresponsetype.md)
+- [Myresponsetype](myresponsetype.md)
     
 - [Organisator](organizer.md)
     
@@ -361,7 +361,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
-- [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
+- [Routingtype (e-mailemailtype)](routingtype-emailaddresstype.md)
     
 - [ConflictingMeetingCount](conflictingmeetingcount.md)
     
@@ -369,11 +369,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ConflictingMeetings](conflictingmeetings.md)
     
-- [Ort](location.md)
+- [Standort](location.md)
     
 - [Dauer (Elemente)](duration-items.md)
     
-- [TimeZone (Element)](timezone-item.md)
+- [Zeitzone (Element)](timezone-item.md)
     
 - [AppointmentSequenceNumber](appointmentsequencenumber.md)
     
@@ -383,5 +383,5 @@ In der Antwort werden folgende Elemente verwendet:
 
 
 
-[GetItem Operation](getitem-operation.md)
+[GetItem-Vorgang](getitem-operation.md)
 

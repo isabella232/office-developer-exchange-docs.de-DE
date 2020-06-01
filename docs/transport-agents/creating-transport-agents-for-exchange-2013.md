@@ -7,57 +7,57 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d291ab78-7cdd-4dbe-a5f4-9dc8e9650a33
-description: Hier finden Sie Informationen zum Erstellen von benutzerdefinierten Transport-Agents für Exchange 2013 und die Systemanforderungen für das Erstellen eines benutzerdefinierten Agents.
-ms.openlocfilehash: 6146e37c44441bed1d30d08f71ede255dba26440
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier finden Sie Informationen zum Erstellen benutzerdefinierter Transport-Agents für Exchange 2013 und die Systemanforderungen zum Erstellen eines benutzerdefinierten Agents.
+ms.openlocfilehash: cb1cd180817524fe29a100a48d90444c75a77510
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757177"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462374"
 ---
 # <a name="creating-transport-agents-for-exchange-2013"></a>Erstellen von Transport-Agents für Exchange 2013
 
-Hier finden Sie Informationen zum Erstellen von benutzerdefinierten Transport-Agents für Exchange 2013 und die Systemanforderungen für das Erstellen eines benutzerdefinierten Agents.
+Hier finden Sie Informationen zum Erstellen benutzerdefinierter Transport-Agents für Exchange 2013 und die Systemanforderungen zum Erstellen eines benutzerdefinierten Agents.
   
 **Gilt für:** Exchange Server 2013
   
-Exchange Server 2013 enthält mehrere Transport-Agents, die Sie verwenden können, um Nachrichten zu verarbeiten. Die Assemblys, die im Lieferumfang von Exchange verwenden, können Sie Ihre eigenen benutzerdefinierten Agents zur Ausführung bestimmter Aufgaben entsprechend den Anforderungen Ihrer Organisation erstellen. Beispielsweise können Sie einen SmtpReceiveAgent Transport-Agent auf Intercept-Nachrichten, die über den SMTP-Protokoll und Prozess die Nachricht an das Format des Textkörpers vorformatierten Text enthalten konvertieren empfangen werden. Einen Transport-Agent RoutingAgent können Sie die Nachrichten protokolliert, die über den Server auf Route auf einen anderen Server übergeben. Sie können auch komplexere erstellen Features, die mehr als eine Art von Agent verwenden. Um eine antivirus-Agent zu erstellen, können Sie beispielsweise eine SmtpReceiveAgent und einen Agent RoutingAgent implementieren. Wenn Sie eine Komponente in Ihrem Netzwerk, die das SMTP-Protokoll nicht unterstützt verfügen, können Sie einen DeliveryAgent Transport-Agent, die Kommunikation zwischen dem Exchange-Server und Ihre externe Komponente zu behandeln. 
+Exchange Server 2013 enthält mehrere Transport-Agents, die Sie zum Verarbeiten von Nachrichten verwenden können. Mithilfe der Assemblys, die mit Exchange geliefert werden, können Sie eigene benutzerdefinierte Agents erstellen, um bestimmte Aufgaben entsprechend den Anforderungen Ihrer Organisation auszuführen. Beispielsweise können Sie einen SmtpReceiveAgent-Transport-Agent zum Abfangen von Nachrichten verwenden, die über das SMTP-Protokoll empfangen werden, und die Nachricht verarbeiten, um das Format des Texts in vorformatierten Text zu konvertieren. Sie können einen Routing Agent-Transport-Agent verwenden, um die Nachrichten zu protokollieren, die den Server auf der Route an einen anderen Server durchlaufen. Sie können auch komplexere Features erstellen, die mehr als einen Agenttyp verwenden. Um beispielsweise einen Antivirus-Agent zu erstellen, können Sie ein SmtpReceiveAgent und einen Routing Agent-Agent implementieren. Wenn Sie über eine Komponente in Ihrem Netzwerk verfügen, die das SMTP-Protokoll nicht unterstützt, können Sie einen DeliveryAgent-Transport-Agent verwenden, um die Kommunikation zwischen Ihrem Exchange-Server und ihrer externen Komponente zu verarbeiten. 
   
-Dieser Artikel enthält Informationen zu den erforderlichen Komponenten für und Aufgaben beim Erstellen Ihrer eigenen Transport-Agents. Informationen zum Erstellen von bestimmten Transport-Agents finden Sie unter [erstellen einen RoutingAgent Transport-Agent für Exchange 2013](how-to-create-a-routingagent-transport-agent-for-exchange-2013.md), [Erstellen eines SmtpReceiveAgent Transport-Agents für Exchange 2013](how-to-create-an-smtpreceiveagent-transport-agent-for-exchange-2013.md)und erstellen einen Transport-Agent DeliveryAgent [für Exchange 2013](how-to-create-a-deliveryagent-transport-agent-for-exchange-2013.md).
+Dieser Artikel enthält Informationen zu den Voraussetzungen für und Aufgaben beim Erstellen Ihres eigenen Transport-Agents. Informationen zum Erstellen bestimmter Transport-Agents finden Sie unter [Erstellen eines Routing Agent-Transport-Agents für Exchange 2013](how-to-create-a-routingagent-transport-agent-for-exchange-2013.md), [Erstellen eines SmtpReceiveAgent-Transport-Agents für Exchange 2013](how-to-create-an-smtpreceiveagent-transport-agent-for-exchange-2013.md)und [Erstellen eines DeliveryAgent-Transport-Agents für Exchange 2013](how-to-create-a-deliveryagent-transport-agent-for-exchange-2013.md).
   
-## <a name="prerequisites-for-creating-a-transport-agent"></a>Voraussetzungen für die Erstellung von Transport-agent
+## <a name="prerequisites-for-creating-a-transport-agent"></a>Voraussetzungen für die Erstellung eines Transport-Agents
 <a name="bk_prerequisites"> </a>
 
-Im folgenden sind die erforderlichen Komponenten, die Sie benötigen, um einen Transport-Agent zu implementieren:
+Die folgenden Voraussetzungen müssen erfüllt sein, um einen Transport-Agent zu implementieren:
   
-- Einen Computer unter Exchange 2013, die der Front-End-Transport-Dienst auf einem Clientzugriffsserver oder Edge-Transport-Server oder den Transportdienst auf einem Postfachserver ausgeführt wird. Informationen über die Rolle Serverarchitektur in Exchange 2013 finden Sie unter [Transport-Agent Konzepte in Exchange 2013](transport-agent-concepts-in-exchange-2013.md).
+- Ein Computer mit Exchange 2013, der den Front-End-Transportdienst auf einem Client Zugriffs-oder Edge-Transport-Server ausführt, oder der Transport Dienst auf einem Postfachserver. Informationen zur Architektur der Serverrolle in Exchange 2013 finden Sie unter [Transport-Agent-Konzepte in Exchange 2013](transport-agent-concepts-in-exchange-2013.md).
     
 - Die folgenden Assemblys für die Transport-Agent-Klassen:
     
-  - Microsoft.Exchange.Data.dll
+  - Microsoft. Exchange. Data. dll
     
-  - Microsoft.Exchange.Data.Common.dll
+  - Microsoft. Exchange. Data. Common. dll
     
-  - Microsoft.Exchange.Transport.dll
+  - Microsoft. Exchange. Transport. dll
     
-- .NET Framework 4.5
+- Die .NET Framework 4.5
     
-Außerdem wird empfohlen, dass die Installation von Visual Studio 2012. Transport-Agents können Sie mithilfe von Visual Basic .NET oder Visual c# implementieren.
+Außerdem wird empfohlen, Visual Studio 2012 zu installieren. Sie können Transport-Agents implementieren, indem Sie entweder Visual Basic .net oder C# verwenden.
   
 ## <a name="referencing-the-assemblies"></a>Verweisen auf die Assemblys
 <a name="bk_ReferenceAssemblies"> </a>
 
-Exchange 2013 bietet eine Bibliothek mit Klassen, die die Erweiterung der Exchange-Transport-Verhalten zu unterstützen. Diese Klassen ist .NET Framework 4.5 erforderlich. Sie können Transport-Agents mithilfe von Visual Studio 2012 basierend auf diesen Klassen implementieren.
+Exchange 2013 enthält eine Bibliothek mit Klassen, die die Erweiterung des Exchange-Transportverhaltens unterstützen. Für diese Klassen ist die .NET Framework 4.5 erforderlich. Sie können Transport-Agents basierend auf diesen Klassen mithilfe von Visual Studio 2012 implementieren.
   
-Der Exchange 2013-Installer installiert Assemblys, die für die Entwicklung von Transport-Agent verwendet werden und registriert diese im globalen Assemblycache (GAC). Um einen Transport-Agent implementieren zu beginnen, erstellen Sie einen Verweis auf die Assembly Microsoft.Exchange.Data.Transport in ein Klassenbibliotheksprojekt.
+Das Exchange 2013 Installationsprogramm installiert Assemblys, die für die Entwicklung von Transport-Agents verwendet werden, und registriert Sie im globaler Assemblycache (Global Assembly Cache, GAC). Um mit der Implementierung eines Transport-Agents zu beginnen, erstellen Sie einen Verweis auf die Microsoft. Exchange. Data. Transport-Assembly in einem Klassenbibliotheksprojekt.
   
-## <a name="implementing-a-transport-agent"></a>Implementieren einen Transport-agent
+## <a name="implementing-a-transport-agent"></a>Implementieren eines Transport-Agents
 <a name="bk_implementationExample"> </a>
 
-Das folgende Beispiel zeigt eine minimale Implementierung von Klassen, die von der [SmtpReceiveAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx) und [SmtpReceiveAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.aspx) Klassen abgeleitet werden. 
+Das folgende Beispiel zeigt eine minimale Implementierung von Klassen, die von der [SmtpReceiveAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx) -und der [SmtpReceiveAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.aspx) -Klasse abgeleitet werden. 
   
 > [!CAUTION]
-> Wenn mehrere Transport-Agents installiert und für dasselbe Ereignis registriert sind, werden alle Agents aufgerufen werden, selbst wenn ein Agent alle Empfänger einer e-Mail-Element entfernt. >, Um nicht behandelte Fehler oder unvorhersehbares Verhalten zu vermeiden, sollten Transport-Agent Fällen behandeln, in denen der Empfänger wird auf ein e-Mail-Element gleich NULL ist. 
+> Wenn mehrere Transport-Agents installiert und für dasselbe Ereignis registriert wurden, werden alle Agents aufgerufen, selbst wenn ein Agent alle Empfänger aus einem e-Mail-Element entfernt. > um nicht behandelte Fehler oder unvorhersehbares Verhalten zu vermeiden, sollte der Transport-Agent Fälle behandeln, in denen die Empfängeranzahl für ein e-Mail-Element gleich NULL ist. 
   
 ```cs
 using System;
@@ -112,42 +112,42 @@ Namespace MyAgents
 End Namespace
 ```
 
-## <a name="installing-and-enabling-an-agent"></a>Installieren und aktivieren einen agent
+## <a name="installing-and-enabling-an-agent"></a>Installieren und Aktivieren eines Agents
 <a name="bk_InstallEnable"> </a>
 
-Nachdem Sie den Agent in eine DLL kompiliert haben, müssen Sie installieren und Aktivieren des-Agenten auf dem Entwicklungsserver Exchange. Verwenden Sie in der Exchange-Verwaltungsshell das Cmdlet [Install-TransportAgent](http://technet.microsoft.com/en-us/library/aa997998.aspx) So installieren Sie den Agent und das Cmdlet [Enable-TransportAgent](http://technet.microsoft.com/en-us/library/bb124921.aspx) , um Ihre Agent zu aktivieren. Informationen dazu, wie Sie mithilfe der Exchange-Verwaltungsshell finden Sie unter [Exchange Server-PowerShell (Exchange-Verwaltungsshell)](https://docs.microsoft.com/en-us/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps).
+Nachdem Sie den Agent in eine DLL kompiliert haben, müssen Sie den Agent auf Ihrem Exchange-Entwicklungsserver installieren und aktivieren. Verwenden Sie im Exchange-Verwaltungsshell das Cmdlet [install-Transport Agent](https://technet.microsoft.com/library/aa997998.aspx) , um den Agent zu installieren, und das Cmdlet [enable-Transport Agent](https://technet.microsoft.com/library/bb124921.aspx) , um den Agent zu aktivieren. Informationen zur Verwendung des Exchange-Verwaltungsshell finden Sie unter [Exchange Server PowerShell (Exchange-Verwaltungsshell)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps).
   
 > [!CAUTION]
-> Transport-Agents haben vollen Zugriff auf alle e-Mail-Nachrichten, mit denen sie arbeiten. Exchange 2013 schränkt das Verhalten eines Transport-Agents nicht ein. Transport-Agents, sind instabil oder Sicherheitsfehler enthalten, können sich auf die Stabilität und Sicherheit von Exchange 2013 auswirken. Aus diesem Grund sollten Sie nur installieren Transport-Agents, die Sie als vertrauenswürdig einstufen und, vollständig getestet wurden. 
+> Transport-Agents haben Vollzugriff auf alle gefundenen E-Mails. Exchange 2013 schränkt das Verhalten eines Transport-Agents nicht ein. Transport-Agents, die instabil sind oder Sicherheitsmängel enthalten, können sich auf die Stabilität und Sicherheit von Exchange 2013 auswirken. Daher sollten Sie nur Transport-Agents installieren, die vollständig vertrauenswürdig sind und vollständig getestet wurden. 
   
-Wenn Sie das Cmdlet **Install-TransportAgent** verwenden, um einen Agent installieren, behält die Exchange-Verwaltungsshell eine Sperre auf die Assembly. Um die Sperre für die Assembly, müssen Sie die Instanz von der Exchange-Verwaltungsshell schließen, die Sie zum Installieren des Agents verwendet. Sie können die Assembly aktualisieren, bis die Sperre aufheben. 
+Wenn Sie das Cmdlet **install-Transport Agent** verwenden, um einen Agent zu installieren, behält die Exchange-Verwaltungsshell eine Sperre für die Assembly bei. Wenn Sie die Sperre für die Assembly freigeben möchten, müssen Sie die Instanz der Exchange-Verwaltungsshell schließen, die Sie zum Installieren des Agents verwendet haben. Sie können die Assembly erst aktualisieren, wenn Sie die Sperre freigeben. 
   
-Im folgenden Beispiel wird veranschaulicht, wie mithilfe der Exchange-Verwaltungsshell zum Installieren und aktivieren einen Agent, der mit dem Namen MyAgent mithilfe einer von [SmtpReceiveAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx) mit dem Namen MyAgents.MyAgentFactory abgeleiteten Klasse. 
+Im folgenden Beispiel wird gezeigt, wie Sie mithilfe der Exchange-Verwaltungsshell einen Agent mit dem Namen myagent mithilfe einer von [SmtpReceiveAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx) namens myagents. MyAgentFactory abgeleiteten Klasse installieren und aktivieren. 
   
  `Install-TransportAgent -Name "MyCustomAgent" -TransportAgentFactory "MyAgents.MyAgentFactory" -AssemblyPath "C:\myagents\MyAgent.dll"`
   
-In diesem Beispiel wird den Namen des MyCustomAgent-Agents auf dem Server, auf dem der Agent installiert ist. Im folgenden Beispiel wird gezeigt, wie den MyCustomAgent-Agent zu aktivieren.
+In diesem Beispiel wird der Agent MyCustomAgent auf dem Server benannt, auf dem der Agent installiert ist. Im folgenden Beispiel wird gezeigt, wie der Agent mit dem Namen MyCustomAgent aktiviert wird.
   
  `Enable-TransportAgent -Name "MyCustomAgent"`
   
-Um einen Transport-Agent im Front-End-Transport-Dienst auf einem Clientzugriffsserver zu verwalten, fügen Sie den folgenden Wert an den Befehl: `-TransportService FrontEnd`. Angenommen, um die Transport-Agents in der Front-End-Transport-Dienst anzuzeigen, führen Sie den folgenden Befehl an.
+Um einen Transport-Agent im Front-End-Transport-Dienst auf einem Client Zugriffsserver zu verwalten, fügen Sie dem Befehl den folgenden Wert hinzu: `-TransportService FrontEnd` . Um beispielsweise die Transport-Agents im Front-End-Transport-Dienst anzuzeigen, führen Sie den folgenden Befehl aus.
   
  `Get-TransportAgent -TransportService FrontEnd`
   
-Weitere Informationen zum Installieren aktivieren und Verwalten des Agents finden Sie unter [Transport-Agents verwalten](http://technet.microsoft.com/en-us/library/bb125175%28v=exchg.150%29.aspx).
+Weitere Informationen zum Installieren, aktivieren und Verwalten Ihres Agents finden Sie unter [Manage Transport Agents](https://technet.microsoft.com/library/bb125175%28v=exchg.150%29.aspx).
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 <a name="bk_inthissection"> </a>
 
-- [Erstellen eines RoutingAgent-Transport-Agents für Exchange 2013](how-to-create-a-routingagent-transport-agent-for-exchange-2013.md)
+- [Erstellen eines Routing Agent-Transport-Agents für Exchange 2013](how-to-create-a-routingagent-transport-agent-for-exchange-2013.md)
     
-- [Erstellen eines SmtpReceiveAgent Transport-Agents für Exchange 2013](how-to-create-an-smtpreceiveagent-transport-agent-for-exchange-2013.md)
+- [Erstellen eines SmtpReceiveAgent-Transport-Agents für Exchange 2013](how-to-create-an-smtpreceiveagent-transport-agent-for-exchange-2013.md)
     
 - [Erstellen eines DeliveryAgent-Transport-Agents für Exchange 2013](how-to-create-a-deliveryagent-transport-agent-for-exchange-2013.md)
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Transport-Agent Konzepte in Exchange 2013](transport-agent-concepts-in-exchange-2013.md)   
+- [Transport-Agent-Konzepte in Exchange 2013](transport-agent-concepts-in-exchange-2013.md)   
 - [Transport-Agent-Referenz für Exchange 2013](transport-agent-reference-for-exchange-2013.md)
     
 

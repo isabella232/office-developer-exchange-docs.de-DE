@@ -7,44 +7,44 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 086876cc-e22c-4e89-89f9-19e78af51217
-description: Hier finden Sie Informationen über die GetClientAccessToken EWS Vorgang.
-ms.openlocfilehash: afa9a315a8421f31c345c9547a5d80bed41e9fbc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier finden Sie Informationen zum GetClientAccessToken-EWS-Vorgang.
+ms.openlocfilehash: 2d49d675fcedb0e7e8312a9715f095c47fcf3d77
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758597"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462038"
 ---
 # <a name="getclientaccesstoken-operation"></a>GetClientAccessToken-Vorgang
 
-Hier finden Sie Informationen zum **GetClientAccessToken** EWS-Vorgang. 
+Hier finden Sie Informationen zum **GetClientAccessToken** -EWS-Vorgang. 
   
-Der Vorgang **GetClientAccessToken** Ruft ein Client Access-token für eine Mail-app für Outlook. 
+Der **GetClientAccessToken** -Vorgang ruft ein Clientzugriffs Token für eine Mail-App für Outlook ab. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-getclientaccesstoken-operation"></a>Verwenden des GetClientAccessToken-Vorgangs
 
-Die Anforderung **GetClientAccessToken** Vorgang enthält zwei erforderliche Argumente: der Bezeichner der app und den Typ des Tokens. Die [GetAppManifests-Vorgang](getappmanifests-operation.md) können Sie die app-ID anfordern. 
+Die **GetClientAccessToken** -Vorgangsanforderung umfasst zwei erforderliche Argumente: den Bezeichner der APP und den Tokentyp. Sie können den [GetAppManifests-Vorgang](getappmanifests-operation.md) verwenden, um den App-Bezeichner anzufordern. 
   
-### <a name="getclientaccesstoken-operation-soap-headers"></a>GetClientAccessToken Vorgang SOAP-Header
+### <a name="getclientaccesstoken-operation-soap-headers"></a>SOAP-Header des GetClientAccessToken-Vorgangs
 
-Der Vorgang **GetClientAccessToken** können die SOAP-Header, die in der folgenden Tabelle aufgelistet sind. 
+Der **GetClientAccessToken** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
    
-## <a name="getclientaccesstoken-operation-request-example-get-a-caller-identity-token"></a>GetClientAccessToken Vorgang-anforderungsbeispiel: Abrufen einer anruferidentität token
+## <a name="getclientaccesstoken-operation-request-example-get-a-caller-identity-token"></a>GetClientAccessToken-Vorgangs Anforderungs Beispiel: Abrufen eines Anrufer-Identitätstokens
 
-Im folgenden Beispiel wird eine **GetClientAccessToken** Vorgang Anforderung veranschaulicht, wie eine anruferidentität für eine app token abrufen. 
+Im folgenden Beispiel einer **GetClientAccessToken** -Vorgangsanforderung wird gezeigt, wie ein Anrufer-Identitätstoken für eine APP abgerufen wird. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -62,7 +62,7 @@ Im folgenden Beispiel wird eine **GetClientAccessToken** Vorgang Anforderung ver
 
 ```
 
-Die Anforderung SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
   
 - [GetClientAccessToken](getclientaccesstoken.md)
     
@@ -72,14 +72,14 @@ Die Anforderung SOAP-Text enthält die folgenden Elemente:
     
 - [ID (Zeichenfolge)](id-string.md)
     
-- ["TokenType"](tokentype.md)
+- [TokenType](tokentype.md)
     
-## <a name="successful-getclientaccesstoken-operation-response"></a>Erfolgreiche GetClientAccessToken Vorgangsantwort
+## <a name="successful-getclientaccesstoken-operation-response"></a>Erfolgreiche Reaktion des GetClientAccessToken-Vorgangs
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetClientAccessToken** Vorgang an eine anruferidentität für eine app token abrufen. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetClientAccessToken** -Vorgangsanforderung, um ein Anrufer-Identitätstoken für eine APP abzurufen. 
   
 > [!NOTE]
-> Die token Werte in diesem Artikel wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Tokenwerte in diesem Artikel wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -90,15 +90,15 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetClientAccess
                            MajorBuildNumber="556" 
                            MinorBuildNumber="14" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:GetClientAccessTokenResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:GetClientAccessTokenResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:GetClientAccessTokenResponseMessage ResponseClass="Success">
                <m:ResponseCode>NoError</m:ResponseCode>
@@ -116,7 +116,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetClientAccess
 
 ```
 
-Die Antwort SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Antworttext Körper enthält die folgenden Elemente:
   
 - [GetClientAccessTokenResponse](getclientaccesstokenresponse.md)
     
@@ -130,15 +130,15 @@ Die Antwort SOAP-Text enthält die folgenden Elemente:
     
 - [ID (Zeichenfolge)](id-string.md)
     
-- ["TokenType" (ClientAccessTokenType)](tokentype-clientaccesstokentype.md)
+- [TokenType (ClientAccessTokenType)](tokentype-clientaccesstokentype.md)
     
-- [TokenValue](tokenvalue.md)
+- [Tokenvalue](tokenvalue.md)
     
 - [TTL (ClientAccessTokenTypeType)](ttl-clientaccesstokentypetype.md)
     
-## <a name="getclientaccesstoken-operation-error-response"></a>GetClientAccessToken Vorgang Fehlerantwort
+## <a name="getclientaccesstoken-operation-error-response"></a>Fehlerantwort des GetClientAccessToken-Vorgangs
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetClientAccessToken** Vorgang Anforderung. Dies ist eine Antwort auf eine Anforderung an einen Rückruf Erweiterung ohne die entsprechenden Berechtigungen token abrufen. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetClientAccessToken** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Abrufen eines Erweiterungs Rückruf Tokens ohne die entsprechenden Berechtigungen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -149,15 +149,15 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetClientAccessToken** 
                            MajorBuildNumber="556" 
                            MinorBuildNumber="14" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:GetClientAccessTokenResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:GetClientAccessTokenResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:GetClientAccessTokenResponseMessage ResponseClass="Error">
                <m:MessageText>The caller does not have enough permission for this token request.</m:MessageText>
@@ -170,7 +170,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetClientAccessToken** 
 </s:Envelope>
 ```
 
-Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
+Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
   
 - [GetClientAccessTokenResponse](getclientaccesstokenresponse.md)
     
@@ -184,7 +184,7 @@ Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Zusätzliche Fehlercodes, die für EWS generisch und für diese Operation spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
+Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -192,6 +192,6 @@ Zusätzliche Fehlercodes, die für EWS generisch und für diese Operation spezif
     
 - [GetAppManifests-Vorgang](getappmanifests-operation.md)
     
-- [Outlook-Add-Ins](http://msdn.microsoft.com/library/71e64bc9-e347-4f5d-8948-0a47b5dd93e6%28Office.15%29.aspx)
+- [Outlook-Add-Ins](https://msdn.microsoft.com/library/71e64bc9-e347-4f5d-8948-0a47b5dd93e6%28Office.15%29.aspx)
     
 

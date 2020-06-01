@@ -1,5 +1,5 @@
 ---
-title: "\"Datetimecreated\""
+title: DateTimeCreated
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 42ae0067-4688-49d9-93c5-c4dbeb54cee1
-description: Das DateTimeCreated-Element darstellt, das Datum und die Uhrzeit der Erstellung ein Elements im Postfach.
-ms.openlocfilehash: 5cfd4e73295bc6823e76d901a21f4745c5fda977
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DateTimeCreated-Element stellt das Datum und die Uhrzeit dar, zu denen ein Element im Postfach erstellt wurde.
+ms.openlocfilehash: c79fe4f9288a5b636d7a85412f2410fe388272fc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757863"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461415"
 ---
-# <a name="datetimecreated"></a>"Datetimecreated"
+# <a name="datetimecreated"></a>DateTimeCreated
 
-Das **DateTimeCreated** -Element darstellt, das Datum und die Uhrzeit der Erstellung ein Elements im Postfach. 
+Das **DateTimeCreated** -Element stellt das Datum und die Uhrzeit dar, zu denen ein Element im Postfach erstellt wurde. 
   
 ```xml
 <DateTimeCreated/>
@@ -59,19 +59,19 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert darstellt, das Datum und die Uhrzeit der Erstellung ein Elements im Postfach.
+Der Wert Text stellt das Datum und die Uhrzeit dar, zu der ein Element im Postfach erstellt wurde.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Mithilfe der Kalender Antwortobjekte aktualisiert die Eigenschaft ["datetimecreated"](datetimecreated.md) auf das zugehörige Kalenderelement. Das erwartete Verhalten ist für die Eigenschaft **"datetimecreated"** unverändert. Beispielsweise Benutzer A sendet eine Besprechungsanfrage an Benutzer b Benutzer B akzeptiert die Besprechungsanfrage mit der ID der Besprechungsanfrage. Die Eigenschaft **"datetimecreated"** des Artikels zugeordneten Kalender wird geändert. 
+Mithilfe von Kalender Antwort Objekten wird die [DateTimeCreated](datetimecreated.md) -Eigenschaft des zugeordneten Kalenderelements aktualisiert. Das erwartete Verhalten besteht darin, dass die **DateTimeCreated** -Eigenschaft unverändert bleibt. Benutzer a sendet beispielsweise eine Besprechungsanfrage an den Benutzer b. Benutzer b nimmt die Besprechungsanfrage mit dem Bezeichner der Besprechungsanfrage an. Die **DateTimeCreated** -Eigenschaft des zugeordneten Kalenderelements wird geändert. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

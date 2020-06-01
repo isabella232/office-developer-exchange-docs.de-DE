@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 682d47a6-f9fe-4cc6-a56c-c5db835d5ec6
-description: Das ApplyConversationActionResponse-Element definiert eine Antwort auf eine Anforderung des ApplyConversationAction-Vorgang.
-ms.openlocfilehash: 39f7344596de7376e770ed98dbe372a590057deb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ApplyConversationActionResponse-Element definiert eine Antwort auf eine ApplyConversationAction-Vorgangsanforderung.
+ms.openlocfilehash: 22955378f8982c92b4cd0e9b8880b6907f47aa0c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757354"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461674"
 ---
 # <a name="applyconversationactionresponse"></a>ApplyConversationActionResponse
 
-Das **ApplyConversationActionResponse** -Element definiert eine Antwort auf eine Anforderung [ApplyConversationAction Vorgang](applyconversationaction-operation.md) . 
+Das **ApplyConversationActionResponse** -Element definiert eine Antwort auf eine [ApplyConversationAction-Vorgangs](applyconversationaction-operation.md) Anforderung. 
   
 [ApplyConversationActionResponse](applyconversationactionresponse.md)
   
@@ -44,7 +44,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -54,17 +54,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

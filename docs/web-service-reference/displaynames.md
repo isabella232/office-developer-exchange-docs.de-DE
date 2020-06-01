@@ -1,5 +1,5 @@
 ---
-title: DisplayNames
+title: Display Names
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dedd43c8-c1d6-4671-89c5-ce7ab3979fda
-description: Die DisplayNames, den-Element gibt ein Array von an anzeigen Namen und die Bezeichner der ihre Marken Quelle für die zugeordneten Rolle.
-ms.openlocfilehash: 66f10edd26a467af290535196778fbcb550c16ca
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Display Names-Element gibt ein Array von Anzeigenamen und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an.
+ms.openlocfilehash: 7d0c528b5b7f9adae271a42380550115fbcf94d0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758069"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460736"
 ---
-# <a name="displaynames"></a>DisplayNames
+# <a name="displaynames"></a>Display Names
 
-Das **DisplayNames** -Element gibt ein Array von Anzeigenamen und die Bezeichner der ihre Marken Quelle für die zugeordneten Rolle. 
+Das **Display Names** -Element gibt ein Array von Anzeigenamen und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an. 
   
 ```xml
 <DisplayNames>
@@ -38,27 +38,27 @@ Keine
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StringAttributedValue](stringattributedvalue.md) <br/> |Gibt eine Instanz in ein Array von Attributen, die einer Rolle-Element zugeordnet ist.  <br/> |
+|[StringAttributedValue](stringattributedvalue.md) <br/> |Gibt eine Instanz in einem Array von Attributen an, die mit einem Persona-Element verknüpft sind.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Rolle](persona.md) <br/> |Gibt einen Satz von Persona Daten von einer Anforderung **GetPersona** zurückgegeben.  <br/> |
+|[Persona](persona.md) <br/> |Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

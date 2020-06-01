@@ -1,5 +1,5 @@
 ---
-title: DictionaryValue
+title: Dictionaryvalue
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f4089381-826f-4f6a-8c6d-e51b910cbe6d
-description: Das DictionaryValue-Element gibt den Wörterbuchwert für eine Wörterbucheigenschaft.
-ms.openlocfilehash: 78e4cd7e5d3d8f18276912da56bafb44cda76753
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das dictionaryvalue-Element gibt den Wörterbuch Wert für eine Dictionary-Eigenschaft an.
+ms.openlocfilehash: 9bad9b8cc7aa80aa071c89a1c22609dc8d44f2b6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757986"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462143"
 ---
-# <a name="dictionaryvalue"></a>DictionaryValue
+# <a name="dictionaryvalue"></a>Dictionaryvalue
 
-Das **DictionaryValue** -Element gibt den Wörterbuchwert für eine Wörterbucheigenschaft. 
+Das **dictionaryvalue** -Element gibt den Wörterbuch Wert für eine Dictionary-Eigenschaft an. 
   
 ```xml
 <DictionaryValue>
@@ -43,28 +43,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Typ (UserConfiguration)](type-userconfiguration.md) <br/> |Gibt den Typ der Dictionary-Objekt.  <br/> |
-|[Wert (UserConfiguration)](value-userconfiguration.md) <br/> |Gibt den Wert der Dictionary-Objekts als Zeichenfolge.  <br/> |
+|[Typ (UserConfiguration)](type-userconfiguration.md) <br/> |Gibt den Typ des Wörterbuchobjekts an.  <br/> |
+|[Wert (UserConfiguration)](value-userconfiguration.md) <br/> |Gibt den Wert des Dictionary-Objekts als Zeichenfolge an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Der Wörterbucheintrag](dictionaryentry.md) <br/> |Gibt den Inhalt einer einzelnen Wörterbuch Eintrag-Eigenschaft.  <br/> |
+|[DictionaryEntry](dictionaryentry.md) <br/> |Gibt den Inhalt einer einzelnen Wörterbucheintrags Eigenschaft an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

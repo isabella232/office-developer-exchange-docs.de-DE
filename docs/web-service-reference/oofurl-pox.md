@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 76c5532b-de5f-4227-9284-eab8ef076c55
-description: Das OOFUrl-Element gibt die URL der besten Instanz des Verfügbarkeitsdiensts für einen e-Mail-aktivierten Benutzer.
-ms.openlocfilehash: 3e2cb8ddecb0efc43828f582a1bd8baf352117e1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das OOFUrl-Element gibt die URL der besten Instanz des Verfügbarkeitsdiensts für einen e-Mail-aktivierten Benutzer an.
+ms.openlocfilehash: f32ec4416bc0a1a144ff21aa9d2dac89bac30495
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830646"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462521"
 ---
 # <a name="oofurl-pox"></a>OOFUrl (POX)
 
-Das **OOFUrl** -Element gibt die URL der besten Instanz des Verfügbarkeitsdiensts für einen e-Mail-aktivierten Benutzer. 
+Das **OOFUrl** -Element gibt die URL der besten Instanz des Verfügbarkeitsdiensts für einen e-Mail-aktivierten Benutzer an. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,11 +50,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert gibt die URL des Abwesenheits Konfiguration für eine Exchange-Topologie.
+Der Wert Text gibt die Abwesenheits-Konfigurationsserver-URL für eine Exchange-Topologie an.
   
 ## <a name="see-also"></a>Siehe auch
 

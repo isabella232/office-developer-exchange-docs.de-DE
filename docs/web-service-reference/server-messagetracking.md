@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: eb5408bd-6fa5-4415-9224-24d5e07ec5b3
-description: Das Server-Element darstellt, den physischen Server, auf dem das Ereignis aufgetreten ist.
-ms.openlocfilehash: 95117eb2b5d195bc8b7ff90098e4138b67722f28
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Server-Element stellt den physischen Server dar, auf dem das Ereignis aufgetreten ist.
+ms.openlocfilehash: 1a5d2e223acfc402ae964c619598845e4212b639
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831372"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462045"
 ---
 # <a name="server-messagetracking"></a>Server (MessageTracking)
 
-Das **Server** -Element darstellt, den physischen Server, auf dem das Ereignis aufgetreten ist. 
+Das **Server** -Element stellt den physischen Server dar, auf dem das Ereignis aufgetreten ist. 
   
 ```XML
 <Server/>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Enthält Informationen für ein einzelnes Ereignis für einen Empfänger.  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Enthält Informationen zu einem einzelnen Ereignis für einen Empfänger.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert, der eine Zeichenfolge darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -6,23 +6,23 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 9693de1a-0c76-4898-8f4d-a8693fb005b3
-description: Das CanModifyPermissions-Element gibt an, ob ein Benutzer zu einem Dokument sharing-Location Zugriffsberechtigungen ändern kann.
-ms.openlocfilehash: 16526cb79eeca591af6e009e67959a1c3b58a5d7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CanModifyPermissions-Element gibt an, ob ein Benutzerzugriffsberechtigungen für einen Dokumentfreigabe Speicherort ändern kann.
+ms.openlocfilehash: bf21b80a738498176bac41feea001ff859a54c2b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757550"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461583"
 ---
 # <a name="canmodifypermissions-soap"></a>CanModifyPermissions (SOAP)
 
-Das **CanModifyPermissions** -Element gibt an, ob ein Benutzer zu einem Dokument sharing-Location Zugriffsberechtigungen ändern kann. 
+Das **CanModifyPermissions** -Element gibt an, ob ein Benutzerzugriffsberechtigungen für einen Dokumentfreigabe Speicherort ändern kann. 
   
 ```XML
 <CanModifyPermissions /> 
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -39,19 +39,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DocumentSharingLocation (SOAP)](documentsharinglocation-soap.md) <br/> |Stellt Informationen zum Standort und Metadaten für ein Dokument sharing-Location.  <br/> |
+|[DocumentSharingLocation (SOAP)](documentsharinglocation-soap.md) <br/> |Stellt Speicherort-und Metadateninformationen für einen Dokumentfreigabe Speicherort dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der boolesche Wert des **CanModifyPermissions** -Elements gibt an, ob Benutzer Zugriffsberechtigungen für den freigegebenen Speicherort ändern können. 
+Der boolesche Wert des **CanModifyPermissions** -Elements gibt an, ob Benutzerzugriffsberechtigungen für den Freigabespeicherort ändern können. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -63,5 +63,5 @@ Der boolesche Wert des **CanModifyPermissions** -Elements gibt an, ob Benutzer Z
 
 [AutoErmittlung Webdienstverweis für Exchange](autodiscover-web-service-reference-for-exchange.md)
   
-[SOAP-Autodiscover XML-Elemente für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[XML-Elemente der SOAP-AutoErmittlung für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

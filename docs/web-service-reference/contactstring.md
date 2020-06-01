@@ -1,5 +1,5 @@
 ---
-title: ContactString
+title: ContactType
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c3c26063-9f3d-414d-84b7-4a2e12281157
-description: Das ContactString-Element gibt den Anzeigenamen eines Kontakts an.
-ms.openlocfilehash: b65a50e167fd05c85a19e45a4453a3a36c4616e4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ContactType-Element gibt den Anzeigenamen eines Kontakts an.
+ms.openlocfilehash: cecb742c3ddfca5633c28b2018314394e3af12a3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757657"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461499"
 ---
-# <a name="contactstring"></a>ContactString
+# <a name="contactstring"></a>ContactType
 
-Das **ContactString** -Element gibt den Anzeigenamen eines Kontakts an. 
+Das **ContactType** -Element gibt den Anzeigenamen eines Kontakts an. 
   
 ```XML
 <ContactString></ContactString>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -40,25 +40,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Kontakt (Kontakttyp den)](contact-contacttype.md) <br/> |Gibt einen Kontakt in der einheitliche Kontaktspeicher an.  <br/> |
+|[Kontakt (ContactType)](contact-contacttype.md) <br/> |Gibt einen Kontakt im einheitlichen Kontaktspeicher an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **ContactString** -Element wird der String-Wert, der den Anzeigenamen angibt. 
+Der Textwert des **Contact** String-Elements ist der Zeichenfolgenwert, der den Anzeigenamen angibt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

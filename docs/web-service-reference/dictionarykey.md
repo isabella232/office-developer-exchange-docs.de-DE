@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f331c8ac-f1c7-4248-a570-97701969d5bf
-description: Das DictionaryKey-Element gibt den Wörterbuchschlüssel für eine Wörterbucheigenschaft.
-ms.openlocfilehash: 7e706f16fe155278ea56f303ffbb5971c1779879
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DictionaryKey-Element gibt den Wörterbuchschlüssel für eine Dictionary-Eigenschaft an.
+ms.openlocfilehash: 8d9d897c86eb5048068936433c6c0d77917ff777
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757981"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462150"
 ---
 # <a name="dictionarykey"></a>DictionaryKey
 
-Das **DictionaryKey** -Element gibt den Wörterbuchschlüssel für eine Wörterbucheigenschaft. 
+Das **DictionaryKey** -Element gibt den Wörterbuchschlüssel für eine Dictionary-Eigenschaft an. 
   
 ```xml
 <DictionaryKey>
@@ -43,28 +43,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Typ (UserConfiguration)](type-userconfiguration.md) <br/> | Gibt ein Dictionary-Objekttyp an.<br/><br/>Der Typ kann eine der folgenden Werte vom Typ String sein:<br/><br/>-DateTime  <br/>-Boolean  <br/>-Byte  <br/>-Zeichenfolge  <br/>-Integer32  <br/>-UnsignedInteger32  <br/>-Integer64  <br/>-UnsignedInteger64  <br/>-StringArray  <br/>-ByteArray  <br/> |
-|[Wert (UserConfiguration)](value-userconfiguration.md) <br/> |Gibt den Wert der Dictionary-Objekts als Zeichenfolge.  <br/> |
+|[Typ (UserConfiguration)](type-userconfiguration.md) <br/> | Gibt einen Dictionary-Objekttyp an.<br/><br/>Der Typ kann einer der folgenden Zeichenfolgenwerte sein:<br/><br/>-DateTime  <br/>-Boolean  <br/>-Byte  <br/>-String  <br/>-Integer32  <br/>- UnsignedInteger32  <br/>- Integer64  <br/>- UnsignedInteger64  <br/>- StringArray  <br/>-Bytearray  <br/> |
+|[Wert (UserConfiguration)](value-userconfiguration.md) <br/> |Gibt den Wert des Dictionary-Objekts als Zeichenfolge an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Der Wörterbucheintrag](dictionaryentry.md) <br/> |Gibt den Inhalt einer einzelnen Wörterbuch Eintrag-Eigenschaft.  <br/> |
+|[DictionaryEntry](dictionaryentry.md) <br/> |Gibt den Inhalt einer einzelnen Wörterbucheintrags Eigenschaft an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
