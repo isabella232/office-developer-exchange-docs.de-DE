@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: c4397d91-43ef-40a9-a80e-d31501a33caa
-description: Das Löschen eines Elements bezeichnet einen einzelnen Ordner im lokalen Client-Speicher zu löschen.
-ms.openlocfilehash: 5cad36c6fcff782195fdb285e2d3c4f3c5ec0f1e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das delete-Element identifiziert einen einzelnen Ordner, der im lokalen Clientspeicher gelöscht werden soll.
+ms.openlocfilehash: 68f8687b8cf0723d7fd63a3d55da8ef7c2f98f8e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757899"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44454981"
 ---
-# <a name="delete-foldersync"></a><span data-ttu-id="655a3-103">Delete (FolderSync)</span><span class="sxs-lookup"><span data-stu-id="655a3-103">Delete (FolderSync)</span></span>
+# <a name="delete-foldersync"></a><span data-ttu-id="f533c-103">Delete (FolderSync)</span><span class="sxs-lookup"><span data-stu-id="f533c-103">Delete (FolderSync)</span></span>
 
-<span data-ttu-id="655a3-104">Das Element **Löschen** bezeichnet einen einzelnen Ordner im lokalen Client-Speicher zu löschen.</span><span class="sxs-lookup"><span data-stu-id="655a3-104">The **Delete** element identifies a single folder to delete in the local client store.</span></span> 
+<span data-ttu-id="f533c-104">Das **Delete** -Element identifiziert einen einzelnen Ordner, der im lokalen Clientspeicher gelöscht werden soll.</span><span class="sxs-lookup"><span data-stu-id="f533c-104">The **Delete** element identifies a single folder to delete in the local client store.</span></span> 
   
-- [<span data-ttu-id="655a3-105">SyncFolderHierarchyResponse</span><span class="sxs-lookup"><span data-stu-id="655a3-105">SyncFolderHierarchyResponse</span></span>](syncfolderhierarchyresponse.md)  
-- [<span data-ttu-id="655a3-106">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="655a3-106">ResponseMessages</span></span>](responsemessages.md)  
-- [<span data-ttu-id="655a3-107">SyncFolderHierarchyResponseMessage</span><span class="sxs-lookup"><span data-stu-id="655a3-107">SyncFolderHierarchyResponseMessage</span></span>](syncfolderhierarchyresponsemessage.md)  
-- [<span data-ttu-id="655a3-108">Änderungen (Hierarchie)</span><span class="sxs-lookup"><span data-stu-id="655a3-108">Changes (Hierarchy)</span></span>](changes-hierarchy.md)  
-- [<span data-ttu-id="655a3-109">Delete (FolderSync)</span><span class="sxs-lookup"><span data-stu-id="655a3-109">Delete (FolderSync)</span></span>](delete-foldersync.md)
+- [<span data-ttu-id="f533c-105">SyncFolderHierarchyResponse</span><span class="sxs-lookup"><span data-stu-id="f533c-105">SyncFolderHierarchyResponse</span></span>](syncfolderhierarchyresponse.md)  
+- [<span data-ttu-id="f533c-106">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="f533c-106">ResponseMessages</span></span>](responsemessages.md)  
+- [<span data-ttu-id="f533c-107">SyncFolderHierarchyResponseMessage</span><span class="sxs-lookup"><span data-stu-id="f533c-107">SyncFolderHierarchyResponseMessage</span></span>](syncfolderhierarchyresponsemessage.md)  
+- [<span data-ttu-id="f533c-108">Änderungen (Hierarchie)</span><span class="sxs-lookup"><span data-stu-id="f533c-108">Changes (Hierarchy)</span></span>](changes-hierarchy.md)  
+- [<span data-ttu-id="f533c-109">Delete (FolderSync)</span><span class="sxs-lookup"><span data-stu-id="f533c-109">Delete (FolderSync)</span></span>](delete-foldersync.md)
   
 ```xml
 <Delete>
@@ -35,44 +35,44 @@ ms.locfileid: "19757899"
 </Delete>
 ```
 
-<span data-ttu-id="655a3-110">**SyncFolderHierarchyDeleteType**</span><span class="sxs-lookup"><span data-stu-id="655a3-110">**SyncFolderHierarchyDeleteType**</span></span>
+<span data-ttu-id="f533c-110">**SyncFolderHierarchyDeleteType**</span><span class="sxs-lookup"><span data-stu-id="f533c-110">**SyncFolderHierarchyDeleteType**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="655a3-111">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="655a3-111">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="f533c-111">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="f533c-111">Attributes and elements</span></span>
 
-<span data-ttu-id="655a3-112">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="655a3-112">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="f533c-112">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="f533c-112">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="655a3-113">Attribute</span><span class="sxs-lookup"><span data-stu-id="655a3-113">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="f533c-113">Attribute</span><span class="sxs-lookup"><span data-stu-id="f533c-113">Attributes</span></span>
 
-<span data-ttu-id="655a3-114">Keine.</span><span class="sxs-lookup"><span data-stu-id="655a3-114">None.</span></span>
+<span data-ttu-id="f533c-114">Keine.</span><span class="sxs-lookup"><span data-stu-id="f533c-114">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="655a3-115">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="655a3-115">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="f533c-115">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f533c-115">Child elements</span></span>
 
-|<span data-ttu-id="655a3-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="655a3-116">**Element**</span></span>|<span data-ttu-id="655a3-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="655a3-117">**Description**</span></span>|
+|<span data-ttu-id="f533c-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="f533c-116">**Element**</span></span>|<span data-ttu-id="f533c-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f533c-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="655a3-118">FolderId</span><span class="sxs-lookup"><span data-stu-id="655a3-118">FolderId</span></span>](folderid.md) <br/> |<span data-ttu-id="655a3-119">Enthält den Schlüssel-ID und Ändern eines Ordners.</span><span class="sxs-lookup"><span data-stu-id="655a3-119">Contains the identifier and change key of a folder.</span></span>  <br/> |
+|[<span data-ttu-id="f533c-118">FolderId</span><span class="sxs-lookup"><span data-stu-id="f533c-118">FolderId</span></span>](folderid.md) <br/> |<span data-ttu-id="f533c-119">Enthält den Bezeichner und den Änderungsschlüssel eines Ordners.</span><span class="sxs-lookup"><span data-stu-id="f533c-119">Contains the identifier and change key of a folder.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="655a3-120">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="655a3-120">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="f533c-120">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f533c-120">Parent elements</span></span>
 
-|<span data-ttu-id="655a3-121">**Element**</span><span class="sxs-lookup"><span data-stu-id="655a3-121">**Element**</span></span>|<span data-ttu-id="655a3-122">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="655a3-122">**Description**</span></span>|
+|<span data-ttu-id="f533c-121">**Element**</span><span class="sxs-lookup"><span data-stu-id="f533c-121">**Element**</span></span>|<span data-ttu-id="f533c-122">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f533c-122">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="655a3-123">Änderungen (Hierarchie)</span><span class="sxs-lookup"><span data-stu-id="655a3-123">Changes (Hierarchy)</span></span>](changes-hierarchy.md) <br/> |<span data-ttu-id="655a3-124">Enthält eine sequenzierten Array von Änderungstypen, die den Typ der Unterschiede zwischen den Ordnern auf dem Client und die Ordner auf dem Computer mit Microsoft Exchange Server 2007 darstellen.</span><span class="sxs-lookup"><span data-stu-id="655a3-124">Contains a sequenced array of change types that represent the type of differences between the folders on the client and the folders on the computer that is running Microsoft Exchange Server 2007.</span></span>  <br/> |
+|[<span data-ttu-id="f533c-123">Änderungen (Hierarchie)</span><span class="sxs-lookup"><span data-stu-id="f533c-123">Changes (Hierarchy)</span></span>](changes-hierarchy.md) <br/> |<span data-ttu-id="f533c-124">Enthält ein sequenziertes Array von Änderungstypen, die die Art der Unterschiede zwischen den Ordnern auf dem Client und den Ordnern auf dem Computer mit Microsoft Exchange Server 2007 darstellen.</span><span class="sxs-lookup"><span data-stu-id="f533c-124">Contains a sequenced array of change types that represent the type of differences between the folders on the client and the folders on the computer that is running Microsoft Exchange Server 2007.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="655a3-125">Hinweise</span><span class="sxs-lookup"><span data-stu-id="655a3-125">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f533c-125">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f533c-125">Remarks</span></span>
 
-<span data-ttu-id="655a3-126">Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Exchange 2007-Computers, der die Clientzugriffs-Serverrolle installiert ist.</span><span class="sxs-lookup"><span data-stu-id="655a3-126">The schema that describes this element is located in the EWS virtual directory of the Exchange 2007 computer that has the Client Access server role installed.</span></span>
+<span data-ttu-id="f533c-126">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Exchange 2007 Computers, auf dem die Client Zugriffs-Serverrolle installiert ist.</span><span class="sxs-lookup"><span data-stu-id="f533c-126">The schema that describes this element is located in the EWS virtual directory of the Exchange 2007 computer that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="655a3-127">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="655a3-127">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="f533c-127">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="f533c-127">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="655a3-128">Namespace</span><span class="sxs-lookup"><span data-stu-id="655a3-128">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="655a3-129">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="655a3-129">Schema name</span></span>  <br/> |<span data-ttu-id="655a3-130">Schematypen</span><span class="sxs-lookup"><span data-stu-id="655a3-130">Types schema</span></span>  <br/> |
-|<span data-ttu-id="655a3-131">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="655a3-131">Validation file</span></span>  <br/> |<span data-ttu-id="655a3-132">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="655a3-132">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="655a3-133">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="655a3-133">Can be empty</span></span>  <br/> |<span data-ttu-id="655a3-134">False</span><span class="sxs-lookup"><span data-stu-id="655a3-134">False</span></span>  <br/> |
+|<span data-ttu-id="f533c-128">Namespace</span><span class="sxs-lookup"><span data-stu-id="f533c-128">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="f533c-129">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="f533c-129">Schema name</span></span>  <br/> |<span data-ttu-id="f533c-130">Schematypen</span><span class="sxs-lookup"><span data-stu-id="f533c-130">Types schema</span></span>  <br/> |
+|<span data-ttu-id="f533c-131">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="f533c-131">Validation file</span></span>  <br/> |<span data-ttu-id="f533c-132">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="f533c-132">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="f533c-133">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="f533c-133">Can be empty</span></span>  <br/> |<span data-ttu-id="f533c-134">False</span><span class="sxs-lookup"><span data-stu-id="f533c-134">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="655a3-135">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="655a3-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f533c-135">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f533c-135">See also</span></span>
 
-- [<span data-ttu-id="655a3-136">SyncFolderHierarchy-Vorgang</span><span class="sxs-lookup"><span data-stu-id="655a3-136">SyncFolderHierarchy operation</span></span>](syncfolderhierarchy-operation.md)
-- [<span data-ttu-id="655a3-137">EWS-Referenz für Exchange</span><span class="sxs-lookup"><span data-stu-id="655a3-137">EWS reference for Exchange</span></span>](ews-reference-for-exchange.md)
-- [<span data-ttu-id="655a3-138">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="655a3-138">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="f533c-136">SyncFolderHierarchy-Vorgang</span><span class="sxs-lookup"><span data-stu-id="f533c-136">SyncFolderHierarchy operation</span></span>](syncfolderhierarchy-operation.md)
+- [<span data-ttu-id="f533c-137">EWS-Referenz für Exchange</span><span class="sxs-lookup"><span data-stu-id="f533c-137">EWS reference for Exchange</span></span>](ews-reference-for-exchange.md)
+- [<span data-ttu-id="f533c-138">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="f533c-138">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
