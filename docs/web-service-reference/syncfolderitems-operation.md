@@ -11,38 +11,38 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7f0de089-8876-47ec-a871-df118ceae75d
-description: Der Vorgang SyncFolderItems synchronisiert Elemente zwischen dem Exchange-Server und dem Client.
-ms.openlocfilehash: 6b2e4694ac793e17a2b7cb2edb2cb9e6a4a105ea
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Mit dem SyncFolderItems-Vorgang werden Elemente zwischen dem Exchange-Server und dem Client synchronisiert.
+ms.openlocfilehash: 1a28d895eda11dd43f77ec2662a60a426cfc463c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839152"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468145"
 ---
 # <a name="syncfolderitems-operation"></a>SyncFolderItems-Vorgang
 
-Der Vorgang SyncFolderItems synchronisiert Elemente zwischen dem Exchange-Server und dem Client.
+Mit dem SyncFolderItems-Vorgang werden Elemente zwischen dem Exchange-Server und dem Client synchronisiert.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Vorgang SyncFolderItems gibt maximal 512 Änderungen zurück. Nachfolgende SyncFolderItems Anforderungen müssen ausgeführt werden, um zusätzliche Änderungen zu erhalten. 
+Der SyncFolderItems-Vorgang gibt maximal 512 Änderungen zurück. Nachfolgende SyncFolderItems-Anforderungen müssen durchgeführt werden, um weitere Änderungen zu erhalten. 
   
-SyncFolderItems ähnelt der Vorgang FindItem, dass es Eigenschaften wie Nachrichtentext oder Anlagen zurückgeben kann. Wenn der Vorgang SyncFolderItems nicht die Eigenschaften, die Sie benötigen zurückgeben, können Sie den [GetItem Operation](getitem-operation.md) verwenden, um eine bestimmte Gruppe von Eigenschaften für jedes Element abzurufen, die er von SyncFolderItems zurückgegeben. 
+SyncFolderItems ähnelt dem FindItem-Vorgang insofern, als es keine Eigenschaften wie Body oder Attachments zurückgeben kann. Wenn der SyncFolderItems-Vorgang nicht die benötigten Eigenschaften zurückgibt, können Sie den [GetItem-Vorgang](getitem-operation.md) verwenden, um einen bestimmten Eigenschaftentyp für jedes Element abzurufen, das von SyncFolderItems zurückgegeben wurde. 
   
-## <a name="syncfolderitems-request-example"></a>Anforderungsbeispiel SyncFolderItems
+## <a name="syncfolderitems-request-example"></a>SyncFolderItems-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung SyncFolderItems veranschaulicht, wie Elemente in einem Ordner synchronisiert. Dieses Beispiel zeigt die Synchronisierung von einem Ordnerelement, die nicht der ersten Synchronisierung für den Ordner Gesendete Objekte eingetreten ist. Das [Synchronisierungsstatus](syncstate-ex15websvcsotherref.md) -Element ist nicht in der Anforderung für den ersten Versuch, einen Client mit dem Exchange Server synchronisiert enthalten. Beim erste Versuch, die Elemente in einer Ordnerhierarchie synchronisieren zurückgegebenen alle Elemente im Postfach Ausschließen von Elementen, die in das [ignorieren](ignore.md) -Element identifiziert werden. Diese Anforderung SyncFolderItems versucht, alle Änderungen an der Ordnerelementen seit der letzten Synchronisierung synchronisieren. Diese Anforderung ignoriert den Versuch, ein Element zu synchronisieren, das in das [ignorieren](ignore.md) -Element identifiziert wird. 
+Im folgenden Beispiel einer SyncFolderItems-Anforderung wird gezeigt, wie Elemente in einem Ordner synchronisiert werden. In diesem Beispiel wird die Synchronisierung eines Ordnerelements gezeigt, bei der es sich nicht um die erste Synchronisierung handelt, die für den Ordner "Gesendete Elemente" aufgetreten ist. Das [von "SyncState](syncstate-ex15websvcsotherref.md) -Element ist nicht in der Anforderung für den ersten Versuch, einen Client mit dem Exchange-Server zu synchronisieren, enthalten. Beim ersten Versuch, die Elemente in einer Ordnerhierarchie zu synchronisieren, werden alle Elemente im Postfach zurückgegeben, ausgenommen Elemente, die im [Ignore](ignore.md) -Element angegeben sind. Diese SyncFolderItems-Anforderung versucht, alle Änderungen an den Ordnerelementen seit der letzten Synchronisierung zu synchronisieren. Bei dieser Anforderung wird der Versuch, das eine Element zu synchronisieren, das im [Ignore](ignore.md) -Element identifiziert wird, ignoriert. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <SyncFolderItems xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SyncFolderItems xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ItemShape>
         <t:BaseShape>Default</t:BaseShape>
       </ItemShape>
@@ -59,9 +59,9 @@ Im folgenden Beispiel wird eine Anforderung SyncFolderItems veranschaulicht, wie
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Der [Synchronisierungsstatus](syncstate-ex15websvcsotherref.md) Element base64-codierten Daten und [ItemId](itemid.md) -Element- **Id** -Attributs wurden gekürzt, um die Lesbarkeit zu erhalten. 
+Die Base64-codierten Daten des [von "SyncState](syncstate-ex15websvcsotherref.md) -Elements und das [ItemID](itemid.md) -Element- **ID** -Attribut wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -77,19 +77,19 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-- [Synchronisierungsstatus](syncstate-ex15websvcsotherref.md)
+- [Von "SyncState](syncstate-ex15websvcsotherref.md)
     
-- [Ignorieren](ignore.md)
+- [Ignore](ignore.md)
     
 - [ItemId](itemid.md)
     
 - [MaxChangesReturned](maxchangesreturned.md)
     
-## <a name="successful-syncfolderitems-response"></a>Erfolgreiche SyncFolderItems Antwort
+## <a name="successful-syncfolderitems-response"></a>Erfolgreiche SyncFolderItems-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung SyncFolderItems. In diesem Beispiel wird eine Besprechungsanfrage aus dem Ordner Gesendete Objekte synchronisiert.
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die SyncFolderItems-Anforderung. In diesem Beispiel wird eine Besprechungsanfrage aus dem Ordner "Gesendete Elemente" synchronisiert.
   
 ### <a name="code"></a>Code
 
@@ -101,12 +101,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung SyncFo
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" 
                          MajorBuildNumber="628" MinorBuildNumber="0" 
-      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SyncFolderItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                             xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                             xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SyncFolderItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                             xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                             xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SyncFolderItemsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -142,11 +142,11 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung SyncFo
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Der [Synchronisierungsstatus](syncstate-ex15websvcsotherref.md) Element base64-codierten Daten und [ItemId](itemid.md) -Element- **Id** -Attributs wurden gekürzt, um die Lesbarkeit zu erhalten. 
+Die Base64-codierten Daten des [von "SyncState](syncstate-ex15websvcsotherref.md) -Elements und das [ItemID](itemid.md) -Element- **ID** -Attribut wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -160,7 +160,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Synchronisierungsstatus](syncstate-ex15websvcsotherref.md)
+- [Von "SyncState](syncstate-ex15websvcsotherref.md)
     
 - [IncludesLastItemInRange](includeslastiteminrange.md)
     
@@ -174,7 +174,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Betreff](subject.md)
     
-- [Vertraulichkeit](sensitivity.md)
+- [Sensitivity](sensitivity.md)
     
 - [IsOutOfDate](isoutofdate.md)
     
@@ -186,9 +186,9 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Start](start.md)
     
-- [Ende](end-ex15websvcsotherref.md)
+- [End](end-ex15websvcsotherref.md)
     
-- [Ort](location.md)
+- [Standort](location.md)
     
 - [Organisator](organizer.md)
     
@@ -198,13 +198,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
-- [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
+- [Routingtype (e-mailemailtype)](routingtype-emailaddresstype.md)
     
-## <a name="syncfolderitems-error-response"></a>Fehlerantwort SyncFolderItems
+## <a name="syncfolderitems-error-response"></a>SyncFolderItems-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine SyncFolderItems-Anforderung. Dieser Fehler wurde durch eine ungültige Synchronisierungsstatus verursacht.
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine SyncFolderItems-Anforderung. Dieser Fehler wurde durch ein ungültiges von "SyncState verursacht.
   
 ### <a name="code"></a>Code
 
@@ -216,12 +216,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine SyncFolderItems-Anforderu
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" 
                          MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SyncFolderItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                             xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                             xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SyncFolderItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                             xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                             xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SyncFolderItemsResponseMessage ResponseClass="Error">
           <m:MessageText>Synchronization state data is corrupt or otherwise invalid.</m:MessageText>
@@ -236,7 +236,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine SyncFolderItems-Anforderu
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
@@ -254,7 +254,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Synchronisierungsstatus](syncstate-ex15websvcsotherref.md)
+- [Von "SyncState](syncstate-ex15websvcsotherref.md)
     
 - [IncludesLastItemInRange](includeslastiteminrange.md)
     

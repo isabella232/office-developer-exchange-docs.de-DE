@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 3b0f5841-0c8f-4a9d-be75-cdf6cc2c35ab
-description: Das Element GetFederationInformationRequestMessage bereitet einen Aufruf an den Server auf Anforderung Konfigurationsdaten für den Sicherheitstokendienst (STS).
-ms.openlocfilehash: f684c41e495d7878058615aa6257e1af5d83f396
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetFederationInformationRequestMessage-Element bereitet einen Aufruf an den Server vor, um Konfigurationsdaten für den Sicherheitstokendienst (Security Token Service, STS) anzufordern.
+ms.openlocfilehash: cc1e4d67f5bba6e571aeb94d3f27b67baac4c224
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758679"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467025"
 ---
 # <a name="getfederationinformationrequestmessage-soap"></a>GetFederationInformationRequestMessage (SOAP)
 
-Das Element **GetFederationInformationRequestMessage** bereitet einen Aufruf an den Server auf Anforderung Konfigurationsdaten für den Sicherheitstokendienst (STS). 
+Das **GetFederationInformationRequestMessage** -Element bereitet einen Aufruf an den Server vor, um Konfigurationsdaten für den Sicherheitstokendienst (Security Token Service, STS) anzufordern. 
   
 ```XML
 <GetFederationInformationRequestMessage>
@@ -39,7 +39,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Anforderung (GetFederationInformation) (SOAP)](request-getfederationinformationsoap.md) <br/> |Stellt eine **GetFederationInformation** -Anforderung.  <br/> |
+|[Request (GetFederationInformation) (SOAP)](request-getfederationinformationsoap.md) <br/> |Stellt eine **GetFederationInformation** -Anforderung dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -49,13 +49,13 @@ Keine.
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

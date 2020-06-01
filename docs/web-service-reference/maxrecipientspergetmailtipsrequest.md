@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8ff5df18-1989-4217-b4c0-599232911d0c
-description: Das MaxRecipientsPerGetMailTipsRequest-Element gibt die maximale Anzahl von Empfängern, die für den Betrieb GetMailTips übergeben werden kann.
-ms.openlocfilehash: 4c873fe534582e582bf5b1c1d5fd2789616e056a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MaxRecipientsPerGetMailTipsRequest-Element gibt die maximale Anzahl von Empfängern an, die an den GetMailTips-Vorgang übergeben werden können.
+ms.openlocfilehash: cec343182b364fce040d5e32928cbeb569a22124
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830386"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468404"
 ---
 # <a name="maxrecipientspergetmailtipsrequest"></a>MaxRecipientsPerGetMailTipsRequest
 
-Das **MaxRecipientsPerGetMailTipsRequest** -Element gibt die maximale Anzahl von Empfängern, die an den [GetMailTips Vorgang](getmailtips-operation.md)übergeben werden kann.
+Das **MaxRecipientsPerGetMailTipsRequest** -Element gibt die maximale Anzahl von Empfängern an, die an den [GetMailTips-Vorgang](getmailtips-operation.md)übergeben werden können.
   
 ```XML
 <MaxRecipientsPerGetMailTipsRequest/>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |Enthält Konfigurationsinformationen für den e-Mail-Dienst Tipps Service.  <br/> |
+|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |Enthält Dienstkonfigurationsinformationen für den e-Mail-Spitzen Dienst.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist eine ganze Zahl, die die maximale Anzahl von Empfängern darstellt, um den [Vorgang GetMailTips](getmailtips-operation.md)übergeben werden können.
+Der Textwert ist ein Integer-Wert, der die maximale Anzahl von Empfängern darstellt, die an den [GetMailTips-Vorgang](getmailtips-operation.md)übergeben werden können.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

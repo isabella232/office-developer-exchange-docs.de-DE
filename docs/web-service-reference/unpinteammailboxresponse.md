@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 82dfa204-e316-432f-a753-5bd97f576389
-description: Das UnpinTeamMailboxResponse-Element enthält eine Antwort auf eine Anforderung an ein websitepostfach zu lösen.
-ms.openlocfilehash: eb936c5f8d61b7005d7e2e9d5dfff7632e702a28
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UnpinTeamMailboxResponse-Element enthält eine Antwort auf eine Anforderung zum unpin eines websitepostfachs.
+ms.openlocfilehash: ba1f61a7b5b5b4d5af6805c13d84ee15e3559751
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839323"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467235"
 ---
 # <a name="unpinteammailboxresponse"></a>UnpinTeamMailboxResponse
 
-Das **UnpinTeamMailboxResponse** -Element enthält eine Antwort auf eine Anforderung an ein websitepostfach zu lösen. 
+Das **UnpinTeamMailboxResponse** -Element enthält eine Antwort auf eine Anforderung zum unpin eines websitepostfachs. 
   
 ```XML
 <UnpinTeamMailboxResponse>
@@ -39,25 +39,25 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md)
+[MessageText](messagetext.md)  |  [Response Code](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [Messagexml verwendet](messagexml.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

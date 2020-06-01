@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 26f38f1c-96a3-440e-805c-1437886d11c5
-description: Übergänge-Element stellt ein Array von Zeitzone Übergänge.
-ms.openlocfilehash: df7cacdef71c3fdfaa3ecadb486843ea30e6109d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Transitions-Element stellt ein Array von Zeit Zonen Übergängen dar.
+ms.openlocfilehash: d48fb8872b2f7e052f733c32e5dd1c9b4d04d898
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839259"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467438"
 ---
 # <a name="transitions"></a>Übergänge
 
-**Übergänge** -Element stellt ein Array von Zeitzone Übergänge. 
+Das **Transitions** -Element stellt ein Array von Zeit Zonen Übergängen dar. 
   
 ```xml
 <Transitions Id="">
@@ -41,38 +41,38 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|Id  <br/> |Den eindeutigen Bezeichner der Zeitzonendefinition darstellt.  <br/> |
+|Id  <br/> |Stellt den eindeutigen Bezeichner der Zeitzonendefinition dar.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AbsoluteDateTransition](absolutedatetransition.md) <br/> |Stellt einen Zeitzone Übergang, die einem bestimmten Datum und zu einem bestimmten Zeitpunkt dar.  <br/> |
-|[RecurringDayTransition](recurringdaytransition.md) <br/> |Stellt einen Zeitzone Übergang dar, bei dem gleichen Tag pro Jahr auftritt.  <br/> |
-|[RecurringDateTransition](recurringdatetransition.md) <br/> |Stellt einen Zeitzone Übergang, der auftritt, an einem angegebenen Tag des Jahres dar.  <br/> |
-|[Übergang](transition.md) <br/> |Stellt einen Zeitzone Übergang dar.  <br/> |
+|[AbsoluteDateTransition](absolutedatetransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der zu einem bestimmten Datum und zu einem bestimmten Zeitpunkt erfolgt.  <br/> |
+|[RecurringDayTransition](recurringdaytransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der an demselben Tag jedes Jahr erfolgt.  <br/> |
+|[RecurringDateTransition](recurringdatetransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der an einem angegebenen Tag des Jahres erfolgt.  <br/> |
+|[Übergang](transition.md) <br/> |Stellt einen Zeitzonenübergang dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StartTimeZone-Zeitzone](starttimezone.md) <br/> |Definiert die Zeitzone für die Startzeit eines [CalendarItem](calendaritem.md) oder [MeetingRequest](meetingrequest.md).  <br/> |
-|[EndTimeZone](endtimezone.md) <br/> |Definiert die Zeitzone für die Endzeit eines [CalendarItem](calendaritem.md) oder [MeetingRequest](meetingrequest.md).  <br/> |
-|[Zeitzonendefinition](timezonedefinition.md) <br/> |Definiert eine Zeitzone.  <br/> |
+|[StartTimeZone](starttimezone.md) <br/> |Definiert die Zeitzone für die Startzeit einer [CalendarItem](calendaritem.md) -oder [MeetingRequest](meetingrequest.md)-Start Zeit.  <br/> |
+|[EndTimeZone](endtimezone.md) <br/> |Definiert die Zeitzone für die Endzeit einer [CalendarItem](calendaritem.md) -oder [MeetingRequest](meetingrequest.md)-Datei.  <br/> |
+|[TimeZoneDefinition](timezonedefinition.md) <br/> |Definiert eine Zeitzone.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

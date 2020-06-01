@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bbe97777-f728-46c5-b2aa-565112c24f3a
-description: Das WorkingHours-Element darstellt, die Zeitzone Einstellungen und Arbeitszeiten für den angeforderten Postfachbenutzer.
-ms.openlocfilehash: c53779422b87adebed370a1ed88e4e91c7a2dcaf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das WorkingHours-Element stellt die Zeitzoneneinstellungen und Arbeitszeiten für den angeforderten Postfachbenutzer dar.
+ms.openlocfilehash: 9cb21e72f7024b96b4b5f252a8a3b85bb704e67c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839544"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468341"
 ---
 # <a name="workinghours"></a>WorkingHours
 
-Das **WorkingHours** -Element darstellt, die Zeitzone Einstellungen und Arbeitszeiten für den angeforderten Postfachbenutzer. 
+Das **WorkingHours** -Element stellt die Zeitzoneneinstellungen und Arbeitszeiten für den angeforderten Postfachbenutzer dar. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -53,26 +53,26 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[TimeZone (Verfügbarkeit)](timezone-availability.md) <br/> |Enthält Elemente, die Informationen zur Zeitzone zu identifizieren. Dieses Element enthält auch Informationen über den Wechsel zwischen Standardzeit und Sommerzeit. Dieses Element ist erforderlich, wenn das **WorkingHours** -Element verwendet wird.  <br/> |
-|[WorkingPeriodArray](workingperiodarray.md) <br/> |Enthält Informationen zu Perioden für den Postfachbenutzer arbeiten. Dieses Element ist erforderlich, wenn das **WorkingHours** -Element verwendet wird.  <br/> |
+|[Zeitzone (Verfügbarkeit)](timezone-availability.md) <br/> |Enthält Elemente, die Zeitzoneninformationen identifizieren. Dieses Element enthält auch Informationen zum Übergang zwischen Standardzeit und Sommerzeit. Dieses Element ist erforderlich, wenn das **WorkingHours** -Element verwendet wird.  <br/> |
+|[WorkingPeriodArray](workingperiodarray.md) <br/> |Enthält Informationen zum Arbeitszeitraum für den Postfachbenutzer. Dieses Element ist erforderlich, wenn das **WorkingHours** -Element verwendet wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FreeBusyView](freebusyview.md) <br/> |Enthält Informationen zur Verfügbarkeit für einen bestimmten Benutzer.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/` <br/> |
+|[FreeBusyView](freebusyview.md) <br/> |Enthält Verfügbarkeitsinformationen für einen bestimmten Benutzer.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-All die untergeordneten Elemente sind in der Reihenfolge aufgeführt, in denen sie anfallen. Die von diesem Element bereitgestellte Detailebene, hängt von der Requestor gewährten Berechtigungen.
+Alle untergeordneten Elemente werden in der Reihenfolge aufgeführt, in der Sie auftreten. Die von diesem Element bereitgestellte Detailebene hängt von den Berechtigungen ab, die dem Requestor erteilt werden.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -86,5 +86,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

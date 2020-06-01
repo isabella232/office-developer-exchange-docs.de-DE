@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 69614475-8bd3-4475-b988-614fe9cad8ef
-description: Das RemoveOutlookRuleBlob-Element gibt an, ob das Microsoft Outlook-Regel Blob entfernt.
-ms.openlocfilehash: 45336e296c39161704ce6e0d51fba1d2c61797b1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RemoveOutlookRuleBlob-Element gibt an, ob das Microsoft Outlook Regel-BLOB entfernt werden soll.
+ms.openlocfilehash: b4202ab52bf16d1ad1546ec963cd8b9dacd2bd63
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831102"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467669"
 ---
 # <a name="removeoutlookruleblob"></a>RemoveOutlookRuleBlob
 
-Das **RemoveOutlookRuleBlob** -Element gibt an, ob das Microsoft Outlook-Regel Blob entfernt. 
+Das **RemoveOutlookRuleBlob** -Element gibt an, ob das Microsoft Outlook Regel-BLOB entfernt werden soll. 
   
 [UpdateInboxRules](updateinboxrules.md)
   
@@ -31,7 +31,7 @@ Das **RemoveOutlookRuleBlob** -Element gibt an, ob das Microsoft Outlook-Regel B
 <RemoveOutlookRuleBlob>true | false</RemoveOutlookRuleBlob>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -48,23 +48,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UpdateInboxRules](updateinboxrules.md) <br/> |Definiert eine Anforderung zum Aktualisieren der Posteingangsregeln in einem Postfach im Serverspeicher.  <br/> |
+|[UpdateInboxRules](updateinboxrules.md) <br/> |Definiert eine Anforderung zum Aktualisieren der Posteingangsregeln in einem Postfach im Server Speicher.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass der Outlook-Regel Blob entfernt werden soll. Der Textwert **false** gibt an, dass der Outlook-Regel Blob nicht entfernt werden soll. 
+Der Textwert **true** gibt an, dass das Outlook-Regel-BLOB entfernt werden soll. Der Textwert **false** gibt an, dass das Outlook-Regel-BLOB nicht entfernt werden soll. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Legen Sie dieses Element auf **true fest,** um ein Posteingang Regel Update zu ermöglichen. 
+Legen Sie dieses Element auf **true** fest, um eine Regel Aktualisierung für Posteingangsregeln zuzulassen. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |

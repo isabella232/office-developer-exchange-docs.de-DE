@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d72e9f7e-2795-44f1-a55f-06b94f5e41ea
-description: Name (ExtendedAttributeType)-Elements ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: 8b39524dc2f76008af0afdda94b94d66e78a21b4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Element Name (ExtendedAttributeType) ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 3244923cf1c3bb4147af8c8cf9ddb488f2cbc5e0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830500"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466920"
 ---
 # <a name="name-extendedattributetype"></a>Name (ExtendedAttributeType)
 
-**Name (ExtendedAttributeType)** -Elements ist nur zur internen Verwendung vorgesehen. 
+Das Element **Name (ExtendedAttributeType)** ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

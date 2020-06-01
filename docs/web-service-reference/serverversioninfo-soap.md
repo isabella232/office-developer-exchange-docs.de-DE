@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 8662647b-e50a-4774-9ba3-a951ae6df781
-description: Das ServerVersionInfo-Element enthält die Version des Servers, der die Anforderung verarbeitet.
-ms.openlocfilehash: b02071e4997aba91fb538d52df2612fe6fd32800
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ServerVersionInfo-Element enthält die Version des Servers, der die Anforderung verarbeitet hat.
+ms.openlocfilehash: b54b4833361ec78c7f8213473af4638965c7ddae
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831385"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467648"
 ---
 # <a name="serverversioninfo-soap"></a>ServerVersionInfo (SOAP)
 
-Das **ServerVersionInfo** -Element enthält die Version des Servers, der die Anforderung verarbeitet. 
+Das **ServerVersionInfo** -Element enthält die Version des Servers, der die Anforderung verarbeitet hat. 
   
 ```XML
 <ServerVersionInfo>
@@ -43,27 +43,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Hauptversion (SOAP)](majorversion-soap.md) <br/> |Die Nummer der Hauptversion für den Server.  <br/> |
-|[MinorVersion (SOAP)](minorversion-soap.md) <br/> |Die Nummer der Nebenversion für den Server.  <br/> |
-|[MajorBuildNumber (SOAP)](majorbuildnumber-soap.md) <br/> |Die wichtigsten Buildnummer für den Server.  <br/> |
-|[MinorBuildNumber (SOAP)](minorbuildnumber-soap.md) <br/> |Die minor Buildnummer für den Server.  <br/> |
-|[Version (SOAP)](version-soap.md) <br/> |Eine Beschreibung der Version des Produkts.  <br/> |
+|[MajorVersion (SOAP)](majorversion-soap.md) <br/> |Die Hauptversionsnummer für den Server.  <br/> |
+|[MinorVersion (SOAP)](minorversion-soap.md) <br/> |Die Nebenversionsnummer für den Server.  <br/> |
+|[MajorBuildNumber (SOAP)](majorbuildnumber-soap.md) <br/> |Die Hauptnummer des Builds für den Server.  <br/> |
+|[MinorBuildNumber (SOAP)](minorbuildnumber-soap.md) <br/> |Die Nebenversionsnummer für den Server.  <br/> |
+|[Version (SOAP)](version-soap.md) <br/> |Eine Beschreibung der Server Produktversion.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element wird in den SOAP-Header zurückgegeben.
+Dieses Element wird im SOAP-Header zurückgegeben.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 

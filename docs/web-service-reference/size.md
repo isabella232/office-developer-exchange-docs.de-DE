@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 966f4daf-c20e-49f8-aeb6-965f3e2da7c3
-description: Das Element Größe darstellt die Größe in Bytes eines Elements oder alle Elemente in einer Unterhaltung im aktuellen Ordner. Diese Eigenschaft ist schreibgeschützt.
-ms.openlocfilehash: 15ee0bce6bc5fa2065cef4ecee40d7a6d65e3249
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Size-Element stellt die Größe eines Elements in Bytes oder aller Elemente in einer Unterhaltung im aktuellen Ordner dar. Diese Eigenschaft ist schreibgeschützt.
+ms.openlocfilehash: 406271c80db6bbb797592dae22e50ebe7c42ee85
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831509"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467291"
 ---
 # <a name="size"></a>Größe
 
-Das Element **Größe** darstellt die Größe in Bytes eines Elements oder alle Elemente in einer Unterhaltung im aktuellen Ordner. Diese Eigenschaft ist schreibgeschützt. 
+Das **size** -Element stellt die Größe eines Elements in Bytes oder aller Elemente in einer Unterhaltung im aktuellen Ordner dar. Diese Eigenschaft ist schreibgeschützt. 
   
 ```XML
 <Size/>
@@ -48,9 +48,9 @@ Keine.
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
 |[Unterhaltung (ConversationType)](conversation-conversationtype.md) <br/> |Stellt eine einfache Unterhaltung dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
-|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei, die ein Element in der Exchange-Informationsspeicher zugeordnet ist.  <br/> |
+|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die an ein Element im Exchange-Informationsspeicher angefügt ist.  <br/> |
 |[Element](item.md) <br/> |Stellt ein Element im Exchange-Informationsspeicher dar.  <br/> |
-|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange-Element, das mit einem anderen Exchange-Element zugeordnet ist.  <br/> |
+|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange-Element dar, das an ein anderes Exchange-Element angefügt ist.  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine Besprechungsabsage im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
@@ -61,17 +61,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist eine ganze Zahl, die die Größe des Elements in Bytes angibt.
+Der Textwert ist ein ganzzahliger Wert, der die Größe des Elements in Bytes angibt.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

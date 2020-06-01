@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 2ef4e181-7324-4c88-94a9-1cffefc8c008
-description: MinorVersion-Element stellt die Nummer der Nebenversion für den Server.
-ms.openlocfilehash: f1958aca014f3d8012201c74f817e8efcbb942ec
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MinorVersion-Element stellt Nebenversionsnummer für den Server dar.
+ms.openlocfilehash: 79e617e65e7cecffa1b8ca7ccfe9ac799bb475b9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830475"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467753"
 ---
 # <a name="minorversion-soap"></a>MinorVersion (SOAP)
 
-**MinorVersion** -Element stellt die Nummer der Nebenversion für den Server. 
+Das **MinorVersion** -Element stellt Nebenversionsnummer für den Server dar. 
   
 ```XML
 <MinorVersion/>
@@ -41,19 +41,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |Enthält die Version des Servers, der die Anforderung verarbeitet.  <br/> |
+|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |Enthält die Version des Servers, der die Anforderung verarbeitet hat.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Eine ganze Zahl, die die Nummer der Nebenversion des Servers darstellt, der die Anforderung verarbeitet.
+Ein ganzzahliger Wert, der die Nebenversionsnummer des Servers darstellt, der die Anforderung verarbeitet hat.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 

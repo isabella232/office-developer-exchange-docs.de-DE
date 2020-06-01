@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 5b89a2cb-ab26-444d-b3dd-2b3858872d63
 description: Das StopProcessingRules -Element gibt an, ob nachfolgende Regeln sind ausgewertet werden soll.
-ms.openlocfilehash: 48799975f8c928bf291fcdcdb83f2ff8768af8b9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 9f068fd6290a39bbab6e3c1e29066c4fefefc64b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831593"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467900"
 ---
 # <a name="stopprocessingrules"></a>StopProcessingRules
 
@@ -50,17 +50,17 @@ Keine.
 
 Der Textwert **true** gibt an, dass nachfolgende Regeln nicht verarbeitet werden soll. Der Wert **false** gibt an, dass nachfolgende Regeln ausgewertet wird fortgesetzt werden soll. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

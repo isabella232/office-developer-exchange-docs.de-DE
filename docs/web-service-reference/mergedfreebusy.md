@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ea45590d-476e-4b68-9fe8-ae392feadfea
-description: Das MergedFreeBusy-Element enthält den zusammengeführten Frei/Gebucht-Datenstrom.
-ms.openlocfilehash: 542b9fae0c36b0236bd806e8a9117753968e812c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MergedFreeBusy-Element enthält den zusammengeführten frei/gebucht-Datenstrom.
+ms.openlocfilehash: a1483449534f0d886e3c97a23d28c5d78f865042
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830449"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468726"
 ---
 # <a name="mergedfreebusy"></a>MergedFreeBusy
 
-Das **MergedFreeBusy** -Element enthält den zusammengeführten Frei/Gebucht-Datenstrom. 
+Das **MergedFreeBusy** -Element enthält den zusammengeführten frei/gebucht-Datenstrom. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -37,7 +37,7 @@ Das **MergedFreeBusy** -Element enthält den zusammengeführten Frei/Gebucht-Dat
 <MergedFreeBusy>...</MergedFreeBusy>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -54,11 +54,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FreeBusyView](freebusyview.md) <br/> |Enthält Informationen zur Verfügbarkeit für einen bestimmten Benutzer.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView` <br/> |
+|[FreeBusyView](freebusyview.md) <br/> |Enthält Verfügbarkeitsinformationen für einen bestimmten Benutzer.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert wird vom Server bereitgestellt werden, wenn der Wert für das [FreeBusyViewType](freebusyviewtype.md) -Element eine der folgenden ist: 
+Ein Textwert wird vom Server bereitgestellt, wenn der Wert für das [FreeBusyViewType](freebusyviewtype.md) -Element einer der folgenden Werte ist: 
   
 - DetailedMerged
     
@@ -68,29 +68,29 @@ Ein Textwert wird vom Server bereitgestellt werden, wenn der Wert für das [Free
     
 Der Textwert ist ein Stream von Frei/Gebucht-Informationen. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Datenstrom bereitgestellt durch dieses Element wird durch die [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) und [Zeitfenster](timewindow.md) Elemente definiert. Das [Zeitfenster](timewindow.md) -Element definiert die Zeitspanne für Verfügbarkeit abgefragt. Das [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) -Element definiert, wie die Zeit aus dem Element [Zeitfenster](timewindow.md) in Intervallen im **MergedFreeBusy** Element zurückgegeben aufgeteilt wird. Jede Nummer im **MergedFreeBusy** Stream-Objekt stellt ein einzelnes Intervall vom [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) -Element definiert. Die folgende Tabelle enthält die möglichen Werte für ein einzelnes Intervall. 
+Der Datenstrom, der von diesem Element bereitgestellt wird, wird durch die Elemente [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) und [Window](timewindow.md) definiert. Das Time [Window](timewindow.md) -Element definiert die Zeitspanne, die für die Verfügbarkeit abgefragt wird. Das [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) -Element definiert, wie die Zeit aus dem Time [Window](timewindow.md) -Element in Intervalle unterteilt wird, die im **MergedFreeBusy** -Element zurückgegeben werden. Jede Zahl im **MergedFreeBusy** -Datenstrom stellt ein einzelnes Intervall dar, das durch das [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) -Element definiert wird. In der folgenden Tabelle sind die möglichen Werte für ein individuelles Intervall aufgeführt. 
   
 |**Ziffer**|**Verfügbarkeit**|
 |:-----|:-----|
-|0  <br/> |Kostenlos  <br/> |
-|1  <br/> |Mit Vorbehalt  <br/> |
+|0  <br/> |Frei  <br/> |
+|1   <br/> |Vorläufige  <br/> |
 |2  <br/> |Gebucht  <br/> |
-|3  <br/> |Abwesenheit (Out of Office, OOF)  <br/> |
-|4  <br/> |Keine Daten  <br/> |
+|3  <br/> |Abwesend  <br/> |
+|4   <br/> |Keine Daten  <br/> |
    
-Beispielsweise enthält eine Anforderung für Frei/Gebucht-Daten ein, die vier Stunden darstellt [Zeitfenster](timewindow.md) -Element als auch ein [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) -Element, 60 Minuten darstellt. Wenn den angeforderten Benutzer Kalender OOF für den ersten 60 Minuten ist, für die folgenden 90 Minuten beschäftigt und ungeplante für die letzten 90 Minuten in das Zeitfenster, **MergedFreeBusy** Stream 3220 werden. Wenn ein Intervall für mehrere Verfügbarkeit Klassifizierung enthält, wird die größte Zahl dieses Intervall klassifizieren. 
+Beispielsweise enthält eine Anforderung für Frei/Gebucht-Daten ein Zeit [Fenster](timewindow.md) Element, das vier Stunden darstellt, und ein [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) -Element, das 60 Minuten darstellt. Wenn der Kalender des angeforderten Benutzers OOF für die ersten 60 Minuten ist, beschäftigt für die folgenden 90 Minuten und für die letzten 90 Minuten im Zeitfenster ungeplant ist, wird der **MergedFreeBusy** -Datenstrom 3220. Wenn ein Intervall mehr als eine Verfügbarkeits Klassifizierung enthält, wird die höchste Zahl verwendet, um das Intervall zu klassifizieren. 
   
-Die von diesem Element bereitgestellte Detailebene, hängt von der Requestor gewährten Berechtigungen.
+Die von diesem Element bereitgestellte Detailebene hängt von den Berechtigungen ab, die dem Requestor erteilt werden.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -104,5 +104,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

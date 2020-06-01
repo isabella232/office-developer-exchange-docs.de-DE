@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 561b8941-1c26-4bbe-aa0f-b49ec8a79af5
-description: Das Element InReplyTo stellt den Bezeichner des Elements, der dieses Element eine Antwort ist.
-ms.openlocfilehash: 440bcfed3e510da8d34a5dd81c775d05a1f713a2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das InReplyTo-Element stellt den Bezeichner des Elements dar, zu dem dieses Element eine Antwort ist.
+ms.openlocfilehash: 3dac4f31f1468f942e0da040a482dd272a7655da
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829939"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467074"
 ---
 # <a name="inreplyto"></a>InReplyTo
 
-Das Element **InReplyTo** stellt den Bezeichner des Elements, der dieses Element eine Antwort ist. 
+Das **InReplyTo** -Element stellt den Bezeichner des Elements dar, zu dem dieses Element eine Antwort ist. 
   
 ```xml
 <InReplyTo/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -58,17 +58,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt eine Zeichenfolge, die ein Element identifiziert.
+Der Wert Text stellt eine Zeichenfolge dar, die ein Element identifiziert.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

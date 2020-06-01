@@ -11,26 +11,26 @@ api_name:
 api_type:
 - schema
 ms.assetid: a88cbe99-7968-454d-a545-4f92c330909f
-description: Der Vorgang UploadItems lädt einen Datenstrom von Elementen in einem Exchange-Postfach hoch.
-ms.openlocfilehash: 6b002d531c7011b18ae1f88adfc2923d5a51e81c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der UploadItems-Vorgang lädt einen Stream von Elementen in ein Exchange-Postfach hoch.
+ms.openlocfilehash: 57e722c7775baa090736875077781cee869c3b01
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839410"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468502"
 ---
 # <a name="uploaditems-operation"></a>UploadItems-Vorgang
 
-Der Vorgang **UploadItems** lädt einen Datenstrom von Elementen in einem Exchange-Postfach hoch. 
+Der **UploadItems** -Vorgang lädt einen Stream von Elementen in ein Exchange-Postfach hoch. 
   
 > [!IMPORTANT]
-> Der Vorgang **UploadItems** ist auf eine maximale Import Nutzlast 25 MB base64-codierte Daten in MicrosoftExchange Server 2010 Service Pack 1 (SP1) beschränkt. Die Einstellung kann in der Datei web.config geändert werden. 
+> Der **UploadItems** -Vorgang ist in Microsoft Exchange Server 2010 Service Pack 1 (SP1) auf eine maximale Import Nutzlast von 25 MB erhöht Base64-codierter Daten beschränkt. Die Einstellung kann in der Datei "Internet. config" geändert werden. 
   
-## <a name="uploaditems-request-example"></a>Anforderungsbeispiel UploadItems
+## <a name="uploaditems-request-example"></a>UploadItems-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird einer Anforderung **UploadItems** veranschaulicht, wie zwei Elemente in einem Postfach hochladen. Das erste Element ist ein neues Element. Das zweite Element ist eine aktualisierte Version eines vorhandenen Elements im Postfach. 
+Im folgenden Beispiel einer **UploadItems** -Anforderung wird gezeigt, wie zwei Elemente in ein Postfach hochgeladen werden. Das erste Element ist ein neues Element. Das zweite Element ist eine aktualisierte Version eines vorhandenen Elements im Postfach. 
   
 ### <a name="code"></a>Code
 
@@ -39,8 +39,8 @@ Im folgenden Beispiel wird einer Anforderung **UploadItems** veranschaulicht, wi
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010_SP1" />
   </soap:Header>
@@ -78,9 +78,9 @@ Im folgenden Beispiel wird einer Anforderung **UploadItems** veranschaulicht, wi
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
--IDs und der Elementdaten wurden gekürzt, um die Lesbarkeit zu erhalten.
+Bezeichner und Elementdaten wurden verkürzt, um die Lesbarkeit zu erhalten.
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -92,19 +92,19 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Elemente (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md)
     
-- [Item (UploadItemType)](item-uploaditemtype.md)
+- [Element (UploadItemType)](item-uploaditemtype.md)
     
 - [ParentFolderId](parentfolderid.md)
     
-- [Daten (base64Binary)](data-base64binary.md)
+- [Data (base64Binary)](data-base64binary.md)
     
 - [ItemId](itemid.md)
     
-## <a name="successful-uploaditems-response-example"></a>Erfolgreiche UploadItems antwortbeispiel
+## <a name="successful-uploaditems-response-example"></a>Erfolgreiches UploadItems-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **UploadItems** . 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **UploadItems** -Anforderung. 
   
 ### <a name="code"></a>Code
 
@@ -117,15 +117,15 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **Uplo
                          MajorBuildNumber="164"
                          MinorBuildNumber="0"
                          Version="Exchange2010_SP1"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:UploadItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                           xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:UploadItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                           xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:UploadItemsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -141,11 +141,11 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **Uplo
 </s:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Element-IDs wurden gekürzt, um die Lesbarkeit zu erhalten.
+Element-IDs wurden verkürzt, um die Lesbarkeit zu erhalten.
   
-### <a name="response-elements"></a>Antwortelemente
+### <a name="response-elements"></a>Response-Elemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -161,11 +161,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ItemId](itemid.md)
     
-## <a name="uploaditems-error-response-example"></a>Antwortbeispiel UploadItems-Fehler
+## <a name="uploaditems-error-response-example"></a>UploadItems-Fehlerantwort Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Antwort auf die **UploadItems** -Anforderung, die enthält einen Fehler verursacht hat versucht, ein Element zu aktualisieren, die im Postfach nicht gefunden werden kann. 
+Das folgende Beispiel zeigt eine Antwort auf die **UploadItems** -Anforderung, die einen Fehler enthält, der durch einen Versuch verursacht wurde, ein Element zu aktualisieren, das im Postfach nicht gefunden werden kann. 
   
 ### <a name="code"></a>Code
 
@@ -178,15 +178,15 @@ Das folgende Beispiel zeigt eine Antwort auf die **UploadItems** -Anforderung, d
                          MajorBuildNumber="164" 
                          MinorBuildNumber="0" 
                          Version="Exchange2010_SP1" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:UploadItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                           xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:UploadItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                           xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:UploadItemsResponseMessage ResponseClass="Error">
           <m:MessageText>The specified object was not found in the store.</m:MessageText>
@@ -199,7 +199,7 @@ Das folgende Beispiel zeigt eine Antwort auf die **UploadItems** -Anforderung, d
 </s:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   

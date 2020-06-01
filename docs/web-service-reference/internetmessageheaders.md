@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4dcf8671-96df-4a2d-9836-7e8e3a67e0db
-description: Das InternetMessageHeaders-Element enthält eine Auflistung einiger Internet-Nachrichtenkopfzeilen, die in einem Element in einem Postfach enthalten sind. Wenn Sie die gesamte Auflistung der Internetkopfzeilen Nachricht erhalten möchten, verwenden Sie die PR_TRANSPORT_MESSAGE_HEADERS-Eigenschaft. Weitere Informationen zu EWS und Internet Nachrichtenkopfzeilen, SeeGetting Internet Message Headersin EWS, MIME und fehlenden Internetkopfzeilen Nachricht.
-ms.openlocfilehash: 2da529a8a3532cebb2791b285b7673c962a2a656
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das InternetMessageHeaders-Element enthält eine Auflistung einiger der Internet Nachrichtenkopfzeilen, die in einem Element in einem Postfach enthalten sind. Verwenden Sie die PR_TRANSPORT_MESSAGE_HEADERS-Eigenschaft, um die gesamte Auflistung von Internet Nachrichtenkopfzeilen abzurufen. Weitere Informationen zu EWS und Internet Nachrichtenkopfzeilen, unterkauf-Internet Nachrichtenkopfzeilen in EWS, MIME und die fehlenden Internet Nachrichtenkopfzeilen.
+ms.openlocfilehash: 4719050c02590e021b29173c234466de3fdc58a4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829954"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467326"
 ---
 # <a name="internetmessageheaders"></a>InternetMessageHeaders
 
-Das **InternetMessageHeaders** -Element enthält eine Auflistung einiger Internet-Nachrichtenkopfzeilen, die in einem Element in einem Postfach enthalten sind. Wenn Sie die gesamte Auflistung der Internetkopfzeilen Nachricht erhalten möchten, verwenden Sie die **PR_TRANSPORT_MESSAGE_HEADERS** -Eigenschaft. Weitere Informationen zu EWS und Internet Nachrichtenkopfzeilen finden Sie unter "Erste Internet-Kopfzeilen" im [EWS, MIME, und die fehlenden Internet Nachrichtenkopfzeilen](http://msdn.microsoft.com/en-us/library/exchange/hh545614%28v=exchg.140%29.aspx).
+Das **InternetMessageHeaders** -Element enthält eine Auflistung einiger der Internet Nachrichtenkopfzeilen, die in einem Element in einem Postfach enthalten sind. Verwenden Sie die **PR_TRANSPORT_MESSAGE_HEADERS** -Eigenschaft, um die gesamte Auflistung von Internet Nachrichtenkopfzeilen abzurufen. Weitere Informationen zu EWS und Internet Nachrichtenkopfzeilen finden Sie unter "Getting Internet Message Headers" in [EWS, MIME und den fehlenden Internet Nachrichten](https://msdn.microsoft.com/library/exchange/hh545614%28v=exchg.140%29.aspx)Kopfzeilen.
   
 ```XML
 <InternetMessageHeaders>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[InternetMessageHeader](internetmessageheader.md) <br/> |Internet-Nachrichtenkopfzeile für einen angegebenen Header innerhalb der Kopfzeilen-Auflistung darstellt.  <br/> |
+|[InternetMessageHeader](internetmessageheader.md) <br/> |Stellt den Internet Nachrichtenkopf für eine angegebene Kopfzeile in der Headers-Auflistung dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -63,9 +63,9 @@ Keine.
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
 |[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |Stellt eine Vorbehalt Antwort auf eine Besprechungsanfrage.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Es folgt die EWS Managed API erweiterten Eigenschaftendefinition für die Eigenschaft **PR_TRANSPORT_MESSAGE_HEADERS** . 
+Im folgenden finden Sie die verwaltete EWS-API erweiterte Eigenschaftsdefinition für die **PR_TRANSPORT_MESSAGE_HEADERS** -Eigenschaft. 
   
 ```cs
 ExtendedPropertyDefinition transportMsgHdr = new ExtendedPropertyDefinition(0x007D, MapiPropertyType.String);
@@ -73,11 +73,11 @@ ExtendedPropertyDefinition transportMsgHdr = new ExtendedPropertyDefinition(0x00
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -89,5 +89,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[EWS, MIME und die fehlenden Nachrichtenkopfzeilen](http://msdn.microsoft.com/en-us/library/exchange/hh545614%28v=exchg.140%29.aspx)
+[EWS, MIME und die fehlenden Nachrichtenkopfzeilen](https://msdn.microsoft.com/library/exchange/hh545614%28v=exchg.140%29.aspx)
 

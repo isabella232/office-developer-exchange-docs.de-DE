@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1d0f219b-1063-4eaa-9d3b-da384a544f89
-description: Das TrackingPropertyType-Element stellt ein Name-Wert-Paar von Zeichenfolgen, die zum Erstellen von Eigenschaften für nachrichtenverfolgungsberichte verwendet wird.
-ms.openlocfilehash: 762c7d364382c3087277651cc01329e3c85df4e4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das TrackingPropertyType-Element stellt ein Name-Wert-Paar von Zeichenfolgen dar, das zum Erstellen von Eigenschaften für Nachrichtenverfolgungsberichte verwendet wird.
+ms.openlocfilehash: 7812b52dd57fed0a9b6f1a8fc4e77660932a60dc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839253"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468082"
 ---
 # <a name="trackingpropertytype"></a>TrackingPropertyType
 
-Das **TrackingPropertyType** -Element stellt ein Name-Wert-Paar von Zeichenfolgen, die zum Erstellen von Eigenschaften für nachrichtenverfolgungsberichte verwendet wird. 
+Das **TrackingPropertyType** -Element stellt ein Name-Wert-Paar von Zeichenfolgen dar, das zum Erstellen von Eigenschaften für Nachrichtenverfolgungsberichte verwendet wird. 
   
 [Eigenschaften (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md)
   
@@ -47,30 +47,30 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Name (Nachrichtenverfolgung)](name-message-tracking.md) <br/> |Definiert einen Namen für den Berichteigenschaft mit der Verfolgung.  <br/> |
-|[Wert (Nachrichtenverfolgung)](value-message-tracking.md) <br/> |Definiert einen Wert für die Nachricht tracking-Berichteigenschaft. Dieses Element ist optional.  <br/> |
+|[Name (Nachrichtenverfolgung)](name-message-tracking.md) <br/> |Definiert einen Namen für die Eigenschaft Nachrichtenverfolgungsbericht.  <br/> |
+|[Wert (Nachrichtenverfolgung)](value-message-tracking.md) <br/> |Definiert einen Wert für die Eigenschaft Nachrichtenverfolgungsbericht. Dieses Element ist optional.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Eigenschaften (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md) <br/> |Enthält eine Liste der Eigenschaften für eine oder mehrere Tracking an.  <br/> |
+|[Eigenschaften (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md) <br/> |Enthält eine Liste mit einer oder mehreren Überwachungseigenschaften.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

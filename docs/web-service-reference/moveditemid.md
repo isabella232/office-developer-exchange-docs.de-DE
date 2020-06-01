@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7d5425ab-1e75-43d1-b801-802ff5139df6
-description: Das MovedItemId-Element gibt den Bezeichner des Elements, das mit einem Vorgang MarkAsJunk verschoben wurde.
-ms.openlocfilehash: 17e20e8ca81f97b419fc4a2b413e21322e828ec9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MovedItemId-Element gibt den Bezeichner des Elements an, das von der MarkAsJunk-Operation verschoben wurde.
+ms.openlocfilehash: 5cf8800ec672278691348bbcd8c6c8cc7a12905b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830484"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468614"
 ---
 # <a name="moveditemid"></a>MovedItemId
 
-Das **MovedItemId** -Element gibt den Bezeichner des Elements, das mit einem Vorgang **MarkAsJunk** verschoben wurde. 
+Das **MovedItemId** -Element gibt den Bezeichner des Elements an, das von der **MarkAsJunk** -Operation verschoben wurde. 
   
 ```XML
 <MovedItemId Id="" ChangeKey=""/>
 ```
 
- **ItemIdType**
+ **Itemidtype**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -32,8 +32,8 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|Id  <br/> |Der Wert des **Id** -Attributs ist der Elementbezeichner des Elements, das von der Operation **MarkAsJunk** verschoben wird. Der Elementbezeichner bleibt unverändert nach dem verschieben.  <br/> |
-|ChangeKey  <br/> |Der Wert des Attributs **ChangeKey** ist der Key ändern, der das verschobene Element. Der Änderungsschlüssel geändert wird, nachdem das Element mit einem Vorgang **MarkAsJunk** verschoben wird.  <br/> |
+|Id  <br/> |Der Wert des **ID-** Attributs ist der Elementbezeichner des Elements, das von der **MarkAsJunk** -Operation verschoben wird. Die Element-ID bleibt nach dem Wechsel unverändert.  <br/> |
+|ChangeKey  <br/> |Der Wert des **ChangeKey** -Attributs ist der Änderungsschlüssel des verschobenen Elements. Der Änderungsschlüssel ändert sich, nachdem das Element vom **MarkAsJunk** -Vorgang verschoben wurde.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -43,19 +43,19 @@ Keine.
 
 [MarkAsJunkResponseMessage](markasjunkresponsemessage.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

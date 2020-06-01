@@ -8,23 +8,23 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: dce6d823-dc33-4a47-babe-6370a15ac7b4
-description: Das Name-Element gibt den Namen einer Einstellung.
-ms.openlocfilehash: 4689c306bb805a40fea0d58c9e04a5a47d3bb14d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Name-Element stellt den Namen einer Einstellung dar.
+ms.openlocfilehash: 74e6d6b59d972d7230c23b38cd3f4a8591401bbd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830506"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466885"
 ---
 # <a name="name-soap"></a>Name (SOAP)
 
-Das **Name** -Element gibt den Namen einer Einstellung. 
+Das **Name** -Element stellt den Namen einer Einstellung dar. 
   
 ```XML
 <Name/>
 ```
 
-**string**
+**Zeichenfolge**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -42,26 +42,26 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DomainSetting (SOAP)](domainsetting-soap.md) <br/> |Enthält domäneneinstellungen für die, die von der Anforderung [(SOAP) GetDomainSettings-Vorgang](getdomainsettings-operation-soap.md) zurückgegeben werden.  <br/> |
-|[DomainStringSetting (SOAP)](domainstringsetting-soap.md) <br/> |Stellt eine Einstellung für dessen, die Wert vom Typ String ist.  <br/> |
-|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste von organisationsbeziehungen für eine einzelne Organisation.  <br/> |
-|[UserSetting (SOAP)](usersetting-soap.md) <br/> |Stellt eine Einstellung für die einzelnen Benutzer dar.  <br/> |
-|[ProtocolConnectionCollectionSetting (SOAP)](protocolconnectioncollectionsetting-soap.md) <br/> |Stellt eine Auflistung von Einstellungen für die Server Protocol-Verbindung dar.  <br/> |
-|[StringSetting (SOAP)](stringsetting-soap.md) <br/> |Stellt eine benutzereinstellung für der, die Wert für die vom Typ String ist.  <br/> |
-|[WebClientUrlCollectionSetting (SOAP)](webclienturlcollectionsetting-soap.md) <br/> |Repräsentiert einen Benutzer festlegen, d. h. eine Auflistung von Exchange Web-Client-URLs.  <br/> |
-|[AlternateMailboxCollectionSetting (SOAP)](alternatemailboxcollectionsetting-soap.md) <br/> |Enthält eine Auflistung von postfacheinstellungen für alternative an.  <br/> |
+|[DomainSetting (SOAP)](domainsetting-soap.md) <br/> |Enthält Domäneneinstellungen, die von der [GetDomainSettings-Vorgangsanforderung (SOAP)](getdomainsettings-operation-soap.md) zurückgegeben werden.  <br/> |
+|[DomainStringSetting (SOAP)](domainstringsetting-soap.md) <br/> |Stellt eine Domäneneinstellung dar, deren Wert vom Typ String ist.  <br/> |
+|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste von Organisationsbeziehungen für eine einzelne Organisation dar.  <br/> |
+|[UserSetting (SOAP)](usersetting-soap.md) <br/> |Stellt eine Einstellung für einen einzelnen Benutzer dar.  <br/> |
+|[ProtocolConnectionCollectionSetting (SOAP)](protocolconnectioncollectionsetting-soap.md) <br/> |Stellt eine Auflistung von Verbindungseinstellungen für das Serverprotokoll dar.  <br/> |
+|[StringSetting (SOAP)](stringsetting-soap.md) <br/> |Stellt einen Benutzer dar, der den Wert für den vom Typ String fest legt.  <br/> |
+|[WebClientUrlCollectionSetting (SOAP)](webclienturlcollectionsetting-soap.md) <br/> |Stellt eine Benutzereinstellung dar, bei der es sich um eine Sammlung von Exchange-WebClient-URLs handelt.  <br/> |
+|[AlternateMailboxCollectionSetting (SOAP)](alternatemailboxcollectionsetting-soap.md) <br/> |Enthält eine Auflistung von alternativen Postfacheinstellungen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **Name** -Elements ist der Name einer Einstellung. 
+Der Textwert des **Name** -Elements ist der Name einer Einstellung. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

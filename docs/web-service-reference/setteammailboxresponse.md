@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 78e0784b-8fe8-42f1-aa6f-4f4a0bc2505e
-description: Das Element SetTeamMailboxResponse stellt eine Antwort auf eine Anforderung SetTeamMailbox.
-ms.openlocfilehash: 4b1ea132a86197e104b3e8873801f73876fdb289
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SetTeamMailboxResponse-Element stellt eine Antwort auf eine SetTeamMailbox-Anforderung dar.
+ms.openlocfilehash: 38754cd03ab82e83b28192f6b0a3fd9e7fe87333
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831456"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467340"
 ---
 # <a name="setteammailboxresponse"></a>SetTeamMailboxResponse
 
-Das Element **SetTeamMailboxResponse** stellt eine Antwort auf eine Anforderung **SetTeamMailbox** . 
+Das **SetTeamMailboxResponse** -Element stellt eine Antwort auf eine **SetTeamMailbox** -Anforderung dar. 
   
 ```XML
 <SetTeamMailboxResponse>
@@ -39,25 +39,25 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md)
+[MessageText](messagetext.md)  |  [Response Code](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [Messagexml verwendet](messagexml.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |
    
 

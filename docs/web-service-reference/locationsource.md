@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fc4d77d5-6200-4cf3-848a-1088fec0e0d6
-description: Das LocationSource-Element gibt Informationen über den Ursprung des zugeordneten Postadresse, beispielsweise einen Kontakt oder eine Telefonbuch.
-ms.openlocfilehash: 7f5cf5fcca0a72287593349fcf5090a74225d012
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das LocationSource-Element gibt Informationen über den Ursprung der zugeordneten Postadresse an, beispielsweise einen Kontakt oder ein Telefonbuch.
+ms.openlocfilehash: ceba52c43d1c798bb8f5492b779c7c45d7d00b0b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830248"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467102"
 ---
 # <a name="locationsource"></a>LocationSource
 
-Das **LocationSource** -Element gibt Informationen über den Ursprung des zugeordneten Postadresse, beispielsweise einen Kontakt oder eine Telefonbuch. 
+Das **LocationSource** -Element gibt Informationen über den Ursprung der zugeordneten Postadresse an, beispielsweise einen Kontakt oder ein Telefonbuch. 
   
 ```XML
 <LocationSource> None | LocationServices | PhonebookServices | Device | Contact | Resource </LocationSource>
@@ -38,24 +38,24 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Wert (PersonaPostalAddressType)](value-personapostaladdresstype.md) | [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
+[Wert (PersonaPostalAddressType)](value-personapostaladdresstype.md)  |  [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>Textwert
 
-In der folgenden Tabelle sind die Textwerte für das Element **LocationSource** aufgeführt: 
+Die Textwerte für das **LocationSource** -Element sind in der folgenden Tabelle aufgeführt: 
   
-**Text-Elementwerte LocationSource**
+**LocationSource-Element Text Werte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Keine  <br/> |Kein Quell-Speicherort ist vorhanden.  <br/> |
-|LocationServices  <br/> |Die Informationen wurde Diensten abgerufen.  <br/> |
-|PhonebookServices  <br/> |Die Informationen wurde Telefonbuch Services abgerufen.  <br/> |
-|Ger?t  <br/> |Die Informationen wurde des Geräts abgerufen.  <br/> |
-|Kontakt  <br/> |Die Informationen wurde eines Kontakts abgerufen.  <br/> |
-|Ressource  <br/> |Die Informationen wurde einer Ressource abgerufen.  <br/> |
+|Keine  <br/> |Es gibt keine Standort Quelle.  <br/> |
+|LocationServices  <br/> |Die Informationen wurden von den Standortdiensten abgerufen.  <br/> |
+|PhonebookServices  <br/> |Die Informationen wurden in Telefonbuch Diensten abgerufen.  <br/> |
+|Gerät  <br/> |Die Informationen wurden vom Gerät abgerufen.  <br/> |
+|Kontakt  <br/> |Die Informationen wurden von einem Kontakt abgerufen.  <br/> |
+|Ressource  <br/> |Die Informationen wurden aus einer Ressource abgerufen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

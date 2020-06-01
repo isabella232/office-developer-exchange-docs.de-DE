@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e7c80c4d-3794-45e9-986f-6a8a687df0a4
-description: OptionalAttendees-Element stellt Teilnehmer, die nicht erforderlich sind, an einer Besprechung teilnehmen.
-ms.openlocfilehash: d5d994f7e85a47b14ab47f58fb73533cf961f7e6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das OptionalAttendees-Element stellt Teilnehmer dar, die nicht an einer Besprechung teilnehmen müssen.
+ms.openlocfilehash: 9eeff7151042f26fe5b00b43ec16a27946680a9f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830658"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468173"
 ---
 # <a name="optionalattendees"></a>OptionalAttendees
 
-**OptionalAttendees** -Element stellt Teilnehmer, die nicht erforderlich sind, an einer Besprechung teilnehmen. 
+Das **OptionalAttendees** -Element stellt Teilnehmer dar, die nicht an einer Besprechung teilnehmen müssen. 
   
 ```xml
 <OptionalAttendees>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Attendee](attendee.md) <br/> |Stellt Teilnehmer und Ressourcen für eine Besprechung.  <br/> |
+|[Teilnehmer](attendee.md) <br/> |Stellt Teilnehmer und Ressourcen für eine Besprechung dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -51,15 +51,15 @@ Keine.
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0ddf9181-f65e-4ad6-ad69-7b074ea0f2e7
-description: Das Element IsAssignmentEditable stellt den Aufgabentyp.
-ms.openlocfilehash: 91922c4d6abd4d88ac9e36dd3d4c0224fc1ee716
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IsAssignmentEditable-Element stellt den Vorgangstyp dar.
+ms.openlocfilehash: 5eb091b24e2c97f7aa6072044fed998b6c9c1651
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829992"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468054"
 ---
 # <a name="isassignmenteditable"></a>IsAssignmentEditable
 
-Das Element **IsAssignmentEditable** stellt den Aufgabentyp. 
+Das **IsAssignmentEditable** -Element stellt den Vorgangstyp dar. 
   
 ```xml
 <IsAssignmentEditable/>
 ```
 
- **ganze Zahl**
+ **Integer**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -52,22 +52,22 @@ Diese Eigenschaft ist schreibgeschützt. In der folgenden Tabelle sind die mögl
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|0  <br/> |Die Standardeinstellung für alle Aufgabenelemente.  <br/> |
-|1  <br/> |Eine Aufgabenanfrage.  <br/> |
-|2  <br/> |Die Annahme einer Aufgabe aus einem Empfänger eine Aufgabenanfrage.  <br/> |
-|3  <br/> |Eine Aufgabe Ablehnung von einem Empfänger eine Aufgabenanfrage.  <br/> |
-|4  <br/> |Ein Update auf eine vorherige Aufgabenanfrage.  <br/> |
-|5  <br/> |Nicht verwendet.  <br/> |
+|0  <br/> |Der Standardwert für alle Aufgabenelemente.  <br/> |
+|1   <br/> |Eine Aufgabenanforderung.  <br/> |
+|2  <br/> |Eine Aufgaben Akzeptanz durch einen Empfänger einer Aufgabenanfrage.  <br/> |
+|3  <br/> |Eine Aufgabe, die von einem Empfänger einer Aufgabenanfrage abnimmt.  <br/> |
+|4   <br/> |Eine Aktualisierung einer vorherigen Aufgabenanforderung.  <br/> |
+|5   <br/> |Nicht verwendet.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

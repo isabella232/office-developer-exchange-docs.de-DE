@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 422f8d44-b0eb-49ca-af0f-0e22b54c78d2
-description: RequiredAttendees-Element stellt Teilnehmer, die erforderlich sind, an einer Besprechung teilnehmen.
-ms.openlocfilehash: 9630be828f459808b61602448a4675aac07b0106
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RequiredAttendees-Element stellt Teilnehmer dar, die für die Teilnahme an einer Besprechung erforderlich sind.
+ms.openlocfilehash: a67800687f24dc323c3d80e4166ca9dd34dfc4fc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831149"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468292"
 ---
 # <a name="requiredattendees"></a>RequiredAttendees
 
-**RequiredAttendees** -Element stellt Teilnehmer, die erforderlich sind, an einer Besprechung teilnehmen. 
+Das **RequiredAttendees** -Element stellt Teilnehmer dar, die für die Teilnahme an einer Besprechung erforderlich sind. 
   
 ```xml
 <RequiredAttendees>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Attendee](attendee.md) <br/> |Stellt Teilnehmer und Ressourcen für eine Besprechung.  <br/> |
+|[Teilnehmer](attendee.md) <br/> |Stellt Teilnehmer und Ressourcen für eine Besprechung dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -51,15 +51,15 @@ Keine.
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

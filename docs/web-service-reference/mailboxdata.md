@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e9e3f50c-5a7b-49c7-a9ea-117959c08352
-description: Das MailboxData-Element stellt ein einzelnes Postfachbenutzer und Optionen für den Typ der Daten zu den Postfachbenutzer zurückgegeben werden soll.
-ms.openlocfilehash: df60294e7d83b1459e5cca7d75c2b6b4bb9d931d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MailboxData-Element stellt einen einzelnen Postfachbenutzer und Optionen für den Typ der Daten dar, die über den Postfachbenutzer zurückgegeben werden sollen.
+ms.openlocfilehash: bfcb8c01d40af81097c7d9868006fe9b7b5519d4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830281"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467249"
 ---
 # <a name="mailboxdata"></a>MailboxData
 
-Das **MailboxData** -Element stellt ein einzelnes Postfachbenutzer und Optionen für den Typ der Daten zu den Postfachbenutzer zurückgegeben werden soll. 
+Das **MailboxData** -Element stellt einen einzelnen Postfachbenutzer und Optionen für den Typ der Daten dar, die über den Postfachbenutzer zurückgegeben werden sollen. 
   
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -51,28 +51,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[E-Mail (EmailAddressType)](email-emailaddresstype.md) <br/> |Stellt den Postfachbenutzer für eine GetUserAvailability-Abfrage dar.  <br/> |
-|[AttendeeType](attendeetype.md) <br/> |Stellt den Typ des Teilnehmers [(EmailAddressType) E-Mail](email-emailaddresstype.md) -Element identifiziert. Dies wird in Anforderungen für Besprechungsvorschläge verwendet.  <br/> |
-|[ExcludeConflicts](excludeconflicts.md) <br/> |Gibt an, ob zurückzugebenden vorgeschlagenen Zeiten für Kalender Versuche, die auf der Teilnehmerliste in Konflikt stehen.  <br/> |
+|[E-Mail (e-Mail-Adresse)](email-emailaddresstype.md) <br/> |Stellt den Postfachbenutzer für eine GetUserAvailability-Abfrage dar.  <br/> |
+|[AttendeeType](attendeetype.md) <br/> |Stellt den Typ des Teilnehmers dar, der im [e-Mail-](email-emailaddresstype.md) Element angegeben ist. Dies wird in Anforderungen für Besprechungsvorschläge verwendet.  <br/> |
+|[ExcludeConflicts](excludeconflicts.md) <br/> |Gibt an, ob vorgeschlagene Zeiten für Kalenderzeiten zurückgegeben werden sollen, die in Konflikt zwischen den Teilnehmern liegen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MailboxDataArray](mailboxdataarray.md) <br/> |Enthält eine Liste der Postfächer, um Informationen zur Verfügbarkeit abzufragen.  <br/> Es folgt der XPath-Ausdruck für dieses Element:  <br/>  `/GetUserAvailabilityRequest/MailboxDataArray[i]` <br/> |
+|[MailboxDataArray](mailboxdataarray.md) <br/> |Enthält eine Liste der Postfächer, die nach Verfügbarkeitsinformationen abgefragt werden sollen.  <br/> Es folgt der XPath für dieses Element:  <br/>  `/GetUserAvailabilityRequest/MailboxDataArray[i]` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Clientanwendung kann auf viele **MailboxData** -Elemente definieren. 
+Eine Clientanwendung kann ein bis viele **MailboxData** -Elemente definieren. 
   
 > [!NOTE]
-> Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist. 
+> Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist. 
   
 ## <a name="example"></a>Beispiel
 
 ```xml
 <MailboxDataArray>
-  <MailboxData xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+  <MailboxData xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
     <Email>
       <Name></Name>
       <Address>someone@ExServer.example.com</Address>
@@ -84,11 +84,11 @@ Eine Clientanwendung kann auf viele **MailboxData** -Elemente definieren.
 </MailboxDataArray>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -97,5 +97,5 @@ Eine Clientanwendung kann auf viele **MailboxData** -Elemente definieren.
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
-- [Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

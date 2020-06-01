@@ -1,5 +1,5 @@
 ---
-title: TransitionsGroup
+title: Transitiongroup
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 19d56080-546a-4d53-929e-363d56186759
-description: Das TransitionsGroup-Element stellt ein Array von Zeitzone Übergänge.
-ms.openlocfilehash: e5991ad7f73a1694e0d4abadd8d252acc04970e5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das transitiongroup-Element stellt ein Array von Zeit Zonen Übergängen dar.
+ms.openlocfilehash: 9f08dec048d410dadab9580e7886b2499d943176
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839262"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467417"
 ---
-# <a name="transitionsgroup"></a>TransitionsGroup
+# <a name="transitionsgroup"></a>Transitiongroup
 
-Das **TransitionsGroup** -Element stellt ein Array von Zeitzone Übergänge. 
+Das **transitiongroup** -Element stellt ein Array von Zeit Zonen Übergängen dar. 
   
 ```xml
 <TransitionsGroup Id="">
@@ -40,31 +40,31 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|Id  <br/> |Ein String-Wert, der den eindeutigen Bezeichner der Übergänge Gruppe darstellt.  <br/> |
+|Id  <br/> |Ein String-Wert, der den eindeutigen Bezeichner der Transitions-Gruppe darstellt.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AbsoluteDateTransition](absolutedatetransition.md) <br/> |Stellt einen Zeitzone Übergang, die einem bestimmten Datum und zu einem bestimmten Zeitpunkt dar.  <br/> |
-|[RecurringDayTransition](recurringdaytransition.md) <br/> |Stellt einen Zeitzone Übergang dar, bei dem gleichen Tag pro Jahr auftritt.  <br/> |
-|[RecurringDateTransition](recurringdatetransition.md) <br/> |Stellt einen Zeitzone Übergang, der auftritt, an einem angegebenen Tag des Jahres dar.  <br/> |
+|[AbsoluteDateTransition](absolutedatetransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der zu einem bestimmten Datum und zu einem bestimmten Zeitpunkt erfolgt.  <br/> |
+|[RecurringDayTransition](recurringdaytransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der an demselben Tag jedes Jahr erfolgt.  <br/> |
+|[RecurringDateTransition](recurringdatetransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der an einem angegebenen Tag des Jahres erfolgt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[TransitionsGroups](transitionsgroups.md) <br/> |Stellt ein Array von Zeitzone Übergang Gruppen.  <br/> |
+|[TransitionsGroups](transitionsgroups.md) <br/> |Stellt ein Array von Zeit Zonen Übergangs Gruppen dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

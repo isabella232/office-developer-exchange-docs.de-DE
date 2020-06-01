@@ -1,5 +1,5 @@
 ---
-title: SetTelephoneAccessFolderEmail-Vorgang (UM-Webdienst)
+title: SetTelephoneAccessFolderEmail-Vorgang (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,23 +10,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2c92d914-bdee-4337-b3ea-0655fdb658e9
-description: Der Vorgang SetTelephoneAccessFolderEmail legt fest, den Ordner aus dem Unified Messaging Back Nachrichten an den Benutzer über das Telefon gelesen werden.
-ms.openlocfilehash: 9497e58f66b8efcf7e358aa529223942298a3bed
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Mit dem SetTelephoneAccessFolderEmail-Vorgang wird der Ordner festgelegt, aus dem Unified Messaging Nachrichten über das Telefon an den Benutzer zurückliest.
+ms.openlocfilehash: a2bb630f812ca811b4cbe68db1308dc18e5d3ba0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831459"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467333"
 ---
-# <a name="settelephoneaccessfolderemail-operation-um-web-service"></a>SetTelephoneAccessFolderEmail-Vorgang (UM-Webdienst)
+# <a name="settelephoneaccessfolderemail-operation-um-web-service"></a>SetTelephoneAccessFolderEmail-Vorgang (um-Webdienst)
 
-Der Vorgang SetTelephoneAccessFolderEmail legt fest, den Ordner aus dem Unified Messaging Back Nachrichten an den Benutzer über das Telefon gelesen werden.
+Mit dem SetTelephoneAccessFolderEmail-Vorgang wird der Ordner festgelegt, aus dem Unified Messaging Nachrichten über das Telefon an den Benutzer zurückliest.
   
-## <a name="settelephoneaccessfolderemail-request-example"></a>Anforderungsbeispiel SetTelephoneAccessFolderEmail
+## <a name="settelephoneaccessfolderemail-request-example"></a>SetTelephoneAccessFolderEmail-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung SetTelephoneAccessFolderEmail veranschaulicht das Formular einer Anforderung an den Ordner festlegen aus dem Unified Messaging zurück an dem Benutzer über das Telefon gelesen werden.
+Im folgenden Beispiel einer SetTelephoneAccessFolderEmail-Anforderung wird gezeigt, wie Sie eine Anforderung zum Festlegen des Ordners erstellen, von dem Unified Messaging über das Telefon an den Benutzer zurückgelesen wird.
   
 ### <a name="code"></a>Code
 
@@ -34,18 +34,18 @@ Im folgenden Beispiel wird eine Anforderung SetTelephoneAccessFolderEmail verans
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetTelephoneAccessFolderEmail xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SetTelephoneAccessFolderEmail xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <base64FolderID>AAAAAGsd2rbQLVtLobUGbrq/9IUBAEX2ikn/L8JJtI5WHI0FAW8AAAFXHhsAAA==</base64FolderID>
     </SetTelephoneAccessFolderEmail>
   </soap:Body>
 </soap:Envelope>
 ```
 
-## <a name="successful-settelephoneaccessfolderemail-response-example"></a>Erfolgreiche SetTelephoneAccessFolderEmail antwortbeispiel
+## <a name="successful-settelephoneaccessfolderemail-response-example"></a>Erfolgreiches SetTelephoneAccessFolderEmail-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel einer Antwort SetTelephoneAccessFolderEmail zeigt eine Antwort auf die Anforderung SetTelephoneAccessFolderEmail.
+Im folgenden Beispiel einer SetTelephoneAccessFolderEmail-Antwort wird eine Antwort auf die SetTelephoneAccessFolderEmail-Anforderung angezeigt.
   
 ### <a name="code"></a>Code
 
@@ -53,7 +53,7 @@ Das folgende Beispiel einer Antwort SetTelephoneAccessFolderEmail zeigt eine Ant
 <?xml version="1.0" encoding="utf-8" ?> 
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Body>
-    <SetTelephoneAccessFolderEmailResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" /> 
+    <SetTelephoneAccessFolderEmailResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" /> 
   </soap:Body>
 </soap:Envelope>
 ```
@@ -62,9 +62,9 @@ Das folgende Beispiel einer Antwort SetTelephoneAccessFolderEmail zeigt eine Ant
 
 
 
-[SetTelephoneAccessFolderEmail (UM-Webdienst)](settelephoneaccessfolderemail-um-web-service.md)
+[SetTelephoneAccessFolderEmail (um-Webdienst)](settelephoneaccessfolderemail-um-web-service.md)
   
-[SetTelephoneAccessFolderEmailResponse (UM-Webdienst)](settelephoneaccessfolderemailresponse-um-web-service.md)
+[SetTelephoneAccessFolderEmailResponse (um-Webdienst)](settelephoneaccessfolderemailresponse-um-web-service.md)
   
-[base64FolderId (UM-Webdienst)](base64folderid-um-web-service.md)
+[base64FolderId (um-Webdienst)](base64folderid-um-web-service.md)
 

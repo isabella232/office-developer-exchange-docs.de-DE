@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1034b013-ef34-4e72-99b3-38bff475b3e8
 description: Das UnpinTeamMailbox -Element enthält die Anforderung an ein websitepostfach vom Client zu lösen, entfernen Sie es aus der Autodiscover Antwort.
-ms.openlocfilehash: d303b47f0796f9bec7e9f198afa81d2ecd9fd5cd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: a6b01bfa9c5908765ff04ef7f5edbef0b99a9be2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839319"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467242"
 ---
 # <a name="unpinteammailbox"></a>UnpinTeamMailbox
 
@@ -36,25 +36,25 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[EmailAddress (EmailAddressType)](emailaddress-emailaddresstype.md)
+[E-mailemail (e-)](emailaddress-emailaddresstype.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

@@ -1,5 +1,5 @@
 ---
-title: TelephoneAccessFolderEmail (UM-Webdienst)
+title: TelephoneAccessFolderEmail (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,27 +10,27 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5d32ae22-bb9f-4352-a251-d516b66ff35b
-description: Das TelephoneAccessFolderEmail-Element enthält den Wert dieser Arten der Bezeichner des e-Mail-Ordners aus der Unified Messaging Nachrichten über ein Telefon lesen wie in einer Antwort auf eine Anforderung GetUMProperties-Operation (UM-Webdienst) enthalten.
-ms.openlocfilehash: e564e8ed44c3132ef32039e92982ff935c3e49e0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das TelephoneAccessFolderEmail-Element enthält einen Wert, der den Bezeichner des e-Mail-Ordners angibt, aus dem Unified Messaging Nachrichten über ein Telefon liest, wie in einer Antwort auf eine Anforderung für einen GetUMProperties-Vorgang (um-Webdienst) enthalten ist.
+ms.openlocfilehash: 8da4065921b736313d4bbf5bb96edb51761a4bdb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839169"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468628"
 ---
-# <a name="telephoneaccessfolderemail-um-web-service"></a>TelephoneAccessFolderEmail (UM-Webdienst)
+# <a name="telephoneaccessfolderemail-um-web-service"></a>TelephoneAccessFolderEmail (um-Webdienst)
 
-Das **TelephoneAccessFolderEmail** -Element enthält den Wert dieser Arten der Bezeichner des e-Mail-Ordners aus der Unified Messaging Nachrichten über ein Telefon lesen wie in einer Antwort auf eine [GetUMProperties-Vorgang (UM-Webdienst) enthalten ](getumproperties-operation-um-web-service.md)Anforderung. 
+Das **TelephoneAccessFolderEmail** -Element enthält einen Wert, der den Bezeichner des e-Mail-Ordners angibt, aus dem Unified Messaging Nachrichten über ein Telefon liest, wie in einer Antwort auf eine Anforderung für einen [GetUMProperties-Vorgang (um-Webdienst)](getumproperties-operation-um-web-service.md) enthalten ist. 
   
-[GetUMPropertiesResponse (UM-Webdienst)](getumpropertiesresponse-um-web-service.md)
+[GetUMPropertiesResponse (um-Webdienst)](getumpropertiesresponse-um-web-service.md)
   
-[TelephoneAccessFolderEmail (UM-Webdienst)](telephoneaccessfolderemail-um-web-service.md)
+[TelephoneAccessFolderEmail (um-Webdienst)](telephoneaccessfolderemail-um-web-service.md)
   
 ```xml
 <TelephoneAccessFolderEmail/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -47,26 +47,26 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUMPropertiesResponse (UM-Webdienst)](getumpropertiesresponse-um-web-service.md) <br/> |Definiert eine Antwort auf eine [GetUMProperties-Vorgang (UM-Webdienst)](getumproperties-operation-um-web-service.md) an.  <br/> |
+|[GetUMPropertiesResponse (um-Webdienst)](getumpropertiesresponse-um-web-service.md) <br/> |Definiert eine Antwort auf eine [GetUMProperties-Vorgangsanforderung (um-Webdienst)](getumproperties-operation-um-web-service.md) .  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert ist erforderlich.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[GetUMProperties-Vorgang (UM-Webdienst)](getumproperties-operation-um-web-service.md)
+[GetUMProperties-Vorgang (um-Webdienst)](getumproperties-operation-um-web-service.md)
   
-[SetTelephoneAccessFolderEmail-Vorgang (UM-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md)
+[SetTelephoneAccessFolderEmail-Vorgang (um-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md)
 

@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: a7e2bdcd-a2f7-45a4-adcd-a03fe7fd4d9b
-description: Das SSL-Element gibt an, ob die sichere Anmeldung erforderlich ist.
-ms.openlocfilehash: 9a51c715032cb2af846e764d28698c5697670d98
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SSL-Element gibt an, ob eine sichere Anmeldung erforderlich ist.
+ms.openlocfilehash: f4e42153c25b34c99f2cad50fb56e8cad24534ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831537"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467613"
 ---
 # <a name="ssl-pox"></a>SSL (POX)
 
-Das **SSL** -Element gibt an, ob die sichere Anmeldung erforderlich ist. 
+Das **SSL** -Element gibt an, ob eine sichere Anmeldung erforderlich ist. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,11 +50,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert gibt an, ob die sichere Anmeldung erforderlich ist. Falls nicht angegeben, wird der Standardwert auf **aktiviert**festgelegt. Die möglichen Werte sind **aktiviert** und **deaktiviert**.
+Der Wert Text gibt an, ob eine sichere Anmeldung erforderlich ist. Wenn nicht angegeben, ist der Standardwert auf " **ein**" festgelegt. Die möglichen Werte sind **ein** -und **ausgeschaltet**.
   
 ## <a name="see-also"></a>Siehe auch
 

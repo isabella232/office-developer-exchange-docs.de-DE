@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7efb6fd9-1615-469e-96f6-0f7846ad9b44
-description: Das Bereich-Element gibt den Bereich der Bericht mit der Verfolgung an.
-ms.openlocfilehash: 534ed23916a60b246c7cb5be4a59d086980a7c37
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Scope-Element gibt den Bereich des Nachrichtenverfolgungsberichts an.
+ms.openlocfilehash: f86f6198e84e094e61ee569f6d005549316bbb9b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831280"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466941"
 ---
 # <a name="scope-nonemptystringtype"></a>Bereich (NonEmptyStringType)
 
-Das **Bereich** -Element gibt den Bereich der Bericht mit der Verfolgung an. 
+Das **Scope** -Element gibt den Bereich des Nachrichtenverfolgungsberichts an. 
   
 ```XML
 <Scope>Organization | Forest | Site</Scope>
@@ -42,29 +42,29 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[FindMessageTrackingReport](findmessagetrackingreport.md) | [GetMessageTrackingReport](getmessagetrackingreport.md)
+[FindMessageTrackingReport](findmessagetrackingreport.md)  |  [GetMessageTrackingReport](getmessagetrackingreport.md)
   
 ## <a name="text-value"></a>Textwert
 
-Die folgende Tabelle enthält die möglichen Werte für das Element **Bereich** . 
+In der folgenden Tabelle sind die möglichen Werte für das **Scope** -Element aufgeführt. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Organisation  <br/> |Die nachrichtenverfolgung Bereiche erstreckt sich innerhalb einer Organisation.  <br/> |
-|Gesamtstruktur  <br/> |Die nachrichtenverfolgung Bereiche erstreckt sich auf einer Gesamtstruktur.  <br/> |
-|Website  <br/> |Die nachrichtenverfolgung Bereiche erstreckt sich auf einer Website.  <br/> |
+|Organisation  <br/> |Die Nachrichten Verfolgungs Bereiche umfassen die gesamte Organisation.  <br/> |
+|Gesamtstruktur  <br/> |Die Nachrichten Verfolgungs Bereiche umfassen über eine Gesamtstruktur hinweg.  <br/> |
+|Website  <br/> |Die Nachrichten Verfolgungs Bereiche umfassen über einen Standort hinweg.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

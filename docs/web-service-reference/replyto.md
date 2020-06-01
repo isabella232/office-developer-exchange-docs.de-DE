@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6b6ae792-e2c4-4aa0-95cb-b49b446f1e08
-description: Das ReplyTo-Element gibt einen Array von Adressen, die an die Antworten gesendet werden soll.
-ms.openlocfilehash: 0ceb4f5edb75bbfe52a7a7156da3c2a328bea346
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ReplyTo-Element identifiziert ein Array von Adressen, an die Antworten gesendet werden sollen.
+ms.openlocfilehash: 08f9edce76fd01111922a2a07d1a63e288a0c1ee
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831115"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468327"
 ---
 # <a name="replyto"></a>ReplyTo
 
-Das **ReplyTo** -Element gibt einen Array von Adressen, die an die Antworten gesendet werden soll. 
+Das **ReplyTo** -Element identifiziert ein Array von Adressen, an die Antworten gesendet werden sollen. 
   
 ```xml
 <ReplyTo>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Postfach](mailbox.md) <br/> |Identifiziert eine e-Mail-aktivierte Active Directory Directory Service-Objekt an die eine Antwort gesendet wird.  <br/> |
+|[Postfach](mailbox.md) <br/> |Identifiziert ein e-Mail-aktiviertes Active Directory Verzeichnisdienstobjekt, an das eine Antwort gesendet wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -62,15 +62,15 @@ Keine.
 |[ForwardItem](forwarditem.md) <br/> |Enthält ein Exchange-Speicher-Element an Empfänger weitergeleitet.  <br/> |
 |[CancelCalendarItem](cancelcalendaritem.md) <br/> |Stellt das Antwortobjekt, das Sie eine Besprechung absagen verwendet wird.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4a4b87d5-be95-4fde-a80b-e7f61dcd13e5
-description: Das UpdateUserConfigurationResponse-Element definiert eine Antwort auf eine einzelne Anforderung UpdateUserConfiguration.
-ms.openlocfilehash: 9a8a25443db05d8d7da28772b84edcf80cd9a921
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UpdateUserConfigurationResponse-Element definiert eine Antwort auf eine einzelne UpdateUserConfiguration-Anforderung.
+ms.openlocfilehash: e2f9f279a41c5d391f19d741628046c598be95cd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839406"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468537"
 ---
 # <a name="updateuserconfigurationresponse"></a>UpdateUserConfigurationResponse
 
-Das **UpdateUserConfigurationResponse** -Element definiert eine Antwort auf eine einzelne Anforderung UpdateUserConfiguration. 
+Das **UpdateUserConfigurationResponse** -Element definiert eine Antwort auf eine einzelne UpdateUserConfiguration-Anforderung. 
   
 ```xml
 <UpdateUserConfigurationResponse>   <ResponseMessages/></UpdateUserConfigurationResponse>
@@ -40,23 +40,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 573bed4b-d7b1-4baf-b16f-0795cdebf1a7
-description: Das Lösung-Element enthält eine einzelne Entität aufgelöste.
-ms.openlocfilehash: d65f6401e54a4397cad1bfcc85384f644fbae405
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Auflösungs Element enthält eine einzelne aufgelöste Entität.
+ms.openlocfilehash: 63c80f3c8d7dabf7e6dc1494df04c0be821b28bf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831156"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468285"
 ---
 # <a name="resolution"></a>Lösung
 
-Das **Lösung** -Element enthält eine einzelne Entität aufgelöste. 
+Das **Auflösungs** Element enthält eine einzelne aufgelöste Entität. 
   
 [ResolveNamesResponse](resolvenamesresponse.md)
   
@@ -29,7 +29,7 @@ Das **Lösung** -Element enthält eine einzelne Entität aufgelöste.
   
 [ResolveNamesResponseMessage](resolvenamesresponsemessage.md)
   
-[ResolutionSet](resolutionset.md)
+[Resolutionset](resolutionset.md)
   
 [Lösung](resolution.md)
   
@@ -40,7 +40,7 @@ Das **Lösung** -Element enthält eine einzelne Entität aufgelöste.
 </Resolution>
 ```
 
- **ResolutionType**
+ **Resolutiontype**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -60,17 +60,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResolutionSet](resolutionset.md) <br/> |Enthält ein Array von Lösungen für ein mehrdeutiger Name.  <br/> |
+|[Resolutionset](resolutionset.md) <br/> |Enthält ein Array von Auflösungen für einen eindeutigen Namen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

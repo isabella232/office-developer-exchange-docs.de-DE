@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: b12ac64f-b230-4573-be05-c86a428c4965
-description: Month-Element stellt den Übergang Monat des Jahres zu und von Standardzeit und Sommerzeit einer Zeitzone.
-ms.openlocfilehash: 73d052ef16bc51cd574eb8b04e21546f97347258
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Month-Element stellt den Übergangs Monat des Jahres in und aus Standardzeit und Sommerzeit dar.
+ms.openlocfilehash: f102dca4ed9e833b9742844cfd612c81dfd05e70
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830476"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468621"
 ---
 # <a name="month"></a>Monat
 
-**Month** -Element stellt den Übergang Monat des Jahres zu und von Standardzeit und Sommerzeit einer Zeitzone. 
+Das **Month** -Element stellt den Übergangs Monat des Jahres in und aus Standardzeit und Sommerzeit dar. 
   
 ```xml
 <Month>...</Month>
 ```
 
- **Kurze**
+ **Kurz**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,22 +44,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StandardTime](standardtime.md) <br/> | Stellt einen Abstand von dem Zeitpunkt relativ zur koordinierten Weltzeit (UTC) dargestellt durch das Element [Bias (UTC)](bias-utc.md) . Dieses Element enthält auch Informationen über den Wechsel zur Standardzeit von Sommerzeit Regionen, in dem Sommerzeit beobachtet wird. <br/> <br/>  Es folgen die XPath-Ausdrücke auf das [StandardTime](standardtime.md) -Element: <br/> <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/StandardTime` <br/><br/>  `/GetUserAvailabilityRequest/TimeZone/StandardTime` <br/> |
-|[DaylightTime](daylighttime.md) <br/> | Stellt einen Abstand von dem Zeitpunkt relativ zur UTC, dargestellt durch das Element [Bias (UTC)](bias-utc.md) Regionen, in dem Sommerzeit beobachtet wird. Dieses Element enthält auch Informationen dazu, wann der Übergang von Normalzeit zu Sommerzeit auftritt.  <br/><br/>  Es folgen die XPath-Ausdrücke auf das [DaylightTime](daylighttime.md) -Element:  <br/> <br/> `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/DaylightTime` <br/><br/>  `/GetUserAvailabilityRequest/TimeZone/DaylightTime` <br/> |
+|[Standard Time](standardtime.md) <br/> | Stellt einen Offset von der Zeit relativ zur koordinierten Weltzeit (Coordinated Universal Time, UTC) dar, dargestellt durch das Element [Bias (UTC)](bias-utc.md) . Dieses Element enthält auch Informationen zum Übergang zur Standardzeit von Sommerzeit in Regionen, in denen die Sommerzeit beobachtet wird. <br/> <br/>  Im folgenden finden Sie die XPath-Ausdrücke für das [Standard](standardtime.md) Time-Element: <br/> <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/StandardTime` <br/><br/>  `/GetUserAvailabilityRequest/TimeZone/StandardTime` <br/> |
+|[DaylightTime](daylighttime.md) <br/> | Stellt einen Offset von der Zeit relativ zu UTC dar, dargestellt durch das [Bias-Element (UTC)](bias-utc.md) in Regionen, in denen die Sommerzeit beobachtet wird. Dieses Element enthält auch Informationen darüber, wann der Übergang zur Sommerzeit aus der Standardzeit erfolgt.  <br/><br/>  Im folgenden finden Sie die XPath-Ausdrücke für das [Daylight](daylighttime.md) -Element:  <br/> <br/> `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/DaylightTime` <br/><br/>  `/GetUserAvailabilityRequest/TimeZone/DaylightTime` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der Wert den ordinalen Rang des Monats darstellt, indem Sie vorkommen und muss eine Zahl zwischen 1 und 12. Dies ist eine kurze Integer-Datentyp.
+Ein Textwert ist erforderlich. Der Wert stellt den Ordnungs Rang des Monats nach dem Vorkommen dar und muss eine Zahl zwischen 1 und 12 sein. Dies ist ein kurzer Integer-Datentyp.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Ein [StandardTime](standardtime.md) -Element, enthält ein [DayOrder](dayorder.md) -Element, das den Wert 5 hat, ein **Month** -Element, das einen Wert von 10 aufweist und ein [DayOfWeek (TimeZone)](dayofweek-timezone.md) -Element, das den Wert Sonntag hat, bedeutet, dass den Übergang vom Standardzeit Sommerzeit tritt am fünften Sonntag der zehnte Monat. 
+Ein [Standard](standardtime.md) Time-Element, das ein [DayOrder](dayorder.md) -Element mit dem Wert 5, einem **Month** -Element mit dem Wert 10 und einem DayOfWeek-Element [(TimeZone)](dayofweek-timezone.md) enthält, das den Wert "Sunday" aufweist, bedeutet, dass der Übergang von Standardzeit zu Sommerzeit am fünften Sonntag des zehnten Monats erfolgt. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -67,5 +67,5 @@ Ein [StandardTime](standardtime.md) -Element, enthält ein [DayOrder](dayorder.m
 ## <a name="see-also"></a>Siehe auch
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)
-- [Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

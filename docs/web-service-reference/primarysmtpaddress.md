@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: eee79904-9412-4e61-b9b8-aff0ce25fade
-description: PrimarySmtpAddress-Element stellt die primäre Simple Mail Transfer Protocol (SMTP)-Adresse eines Kontos Stellvertretungszugriff oder für die Server-zu-Server-Autorisierung verwendet werden.
-ms.openlocfilehash: d33bf22af4ddf6b2f6d8d8d434168264acfaea7c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PrimarySmtpAddress-Element stellt die primäre Simple Mail Transfer Protocol (SMTP) Adresse eines Kontos dar, das für die Server-zu-Server-Autorisierung oder den Stellvertretungszugriff verwendet werden soll.
+ms.openlocfilehash: eea995b3e546d7e94e65cf9b230b639a781c4928
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830881"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467963"
 ---
 # <a name="primarysmtpaddress"></a>PrimarySmtpAddress
 
-**PrimarySmtpAddress** -Element stellt die primäre Simple Mail Transfer Protocol (SMTP)-Adresse eines Kontos Stellvertretungszugriff oder für die Server-zu-Server-Autorisierung verwendet werden. 
+Das **PrimarySmtpAddress** -Element stellt die primäre Simple Mail Transfer Protocol (SMTP) Adresse eines Kontos dar, das für die Server-zu-Server-Autorisierung oder den Stellvertretungszugriff verwendet werden soll. 
   
 ```xml
 <PrimarySmtpAddress/>
@@ -44,25 +44,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ConnectingSID](connectingsid.md) <br/> |Gibt ein Konto Identitätswechsel bei Verwendung der "ExchangeImpersonation" SOAP-Header.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
-|[SerializedSecurityContext](serializedsecuritycontext.md) <br/> |In den SOAP-Header verwendet für tokenserialisierung für Server-zu-Server-Authentifizierung.  <br/> |
-|[Benutzer-ID](userid.md) <br/> |Identifiziert ein Stellvertreter oder ein Benutzer mit Zugriffsberechtigungen für Ordner.  <br/> |
+|[ConnectingSID](connectingsid.md) <br/> |Stellt ein Konto für den Identitätswechsel dar, wenn Sie den SOAP-ExchangeImpersonation-Header verwenden.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
+|[SerializedSecurityContext](serializedsecuritycontext.md) <br/> |Wird im SOAP-Header für die Token-Serialisierung in der Server-zu-Server-Authentifizierung verwendet.  <br/> |
+|[UserId](userid.md) <br/> |Identifiziert einen Stellvertreter Benutzer oder einen Benutzer, der über Ordnerzugriffsberechtigungen verfügt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert, der eine SMTP-Adresse darstellt, ist erforderlich.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Exchange Web Services erfordert, dass durch die primäre SMTP-Adresse des Postfachs Postfächer identifiziert werden. Proxy oder alternative Adressen werden nicht akzeptiert.
+Exchange Webdienste erfordert, dass Postfächer von der primären SMTP-Adresse des Postfachs identifiziert werden. Proxy-oder alternative Adressen werden nicht akzeptiert.
   
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -74,7 +74,7 @@ Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichni
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Server-zu-Server-Autorisierung in Exchange-Webdienste](http://msdn.microsoft.com/library/f1610a20-672d-448b-8c00-5b0fbcaf31cb%28Office.15%29.aspx)
+[Server-zu-Server-Autorisierung in EWS](https://msdn.microsoft.com/library/f1610a20-672d-448b-8c00-5b0fbcaf31cb%28Office.15%29.aspx)
   
-[Arbeiten mit Delegieren des Zugriffs](http://msdn.microsoft.com/library/dfd6b4a3-8fd3-47ba-83c0-52465cb5f3f3%28Office.15%29.aspx)
+[Arbeiten mit Stellvertretungszugriff](https://msdn.microsoft.com/library/dfd6b4a3-8fd3-47ba-83c0-52465cb5f3f3%28Office.15%29.aspx)
 

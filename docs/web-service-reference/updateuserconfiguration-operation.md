@@ -11,31 +11,31 @@ api_name:
 api_type:
 - schema
 ms.assetid: eda73b62-6a3a-43ae-8fd9-f30892811f27
-description: Der Vorgang UpdateUserConfiguration aktualisiert eine Benutzer-Konfigurationsobjekt für einen Ordner.
-ms.openlocfilehash: 9da7c7ba15b3cf6b35f0489db539660aefa2e40a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der UpdateUserConfiguration-Vorgang aktualisiert ein Benutzer Konfigurationsobjekt für einen Ordner.
+ms.openlocfilehash: 95fe6518fa30104463ec7f0aec8f786183eb513b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839401"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468544"
 ---
 # <a name="updateuserconfiguration-operation"></a>UpdateUserConfiguration-Vorgang
 
-Der Vorgang **UpdateUserConfiguration** aktualisiert eine Benutzer-Konfigurationsobjekt für einen Ordner. 
+Der **UpdateUserConfiguration** -Vorgang aktualisiert ein Benutzer Konfigurationsobjekt für einen Ordner. 
   
-## <a name="updateuserconfiguration-request-example"></a>Anforderungsbeispiel UpdateUserConfiguration
+## <a name="updateuserconfiguration-request-example"></a>UpdateUserConfiguration-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird einer Anforderung **UpdateUserConfiguration** veranschaulicht eine Anforderung zum Aktualisieren einer Benutzer-Konfigurationsobjekt auf den Ordner "Entwürfe" bilden. 
+Im folgenden Beispiel einer **UpdateUserConfiguration** -Anforderung wird gezeigt, wie Sie eine Anforderung zum Aktualisieren eines Benutzer Konfigurationsobjekts im Ordner "Entwürfe" bilden. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
@@ -65,11 +65,11 @@ Im folgenden Beispiel wird einer Anforderung **UpdateUserConfiguration** veransc
 </soap:Envelope>
 ```
 
-## <a name="updateuserconfiguration-response-example"></a>UpdateUserConfiguration antwortbeispiel
+## <a name="updateuserconfiguration-response-example"></a>UpdateUserConfiguration-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **UpdateUserConfiguration** . 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **UpdateUserConfiguration** -Anforderung. 
   
 ### <a name="code"></a>Code
 
@@ -82,15 +82,15 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **Upda
                          MajorBuildNumber="639" 
                          MinorBuildNumber="20" 
                          Version="Exchange2010" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:UpdateUserConfigurationResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:UpdateUserConfigurationResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:UpdateUserConfigurationResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>

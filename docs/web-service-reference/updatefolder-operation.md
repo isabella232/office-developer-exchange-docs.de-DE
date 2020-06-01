@@ -11,49 +11,49 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3494c996-b834-4813-b1ca-d99642d8b4e7
-description: 'Der Vorgang UpdateFolder wird verwendet, um die Eigenschaften eines vorhandenen Elements im Exchange-Speicher zu ändern. Jede UpdateFolder-Operation besteht aus den folgenden:'
-ms.openlocfilehash: b33937bb09f0dcbe3d3ed61bbf5233423f320d9c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 'Der UpdateFolder-Vorgang wird verwendet, um die Eigenschaften eines vorhandenen Elements in der Exchange-Informationsspeicher zu ändern. Jeder UpdateFolder-Vorgang besteht aus folgenden Elementen:'
+ms.openlocfilehash: fb894d9f42358b67f81e9fe8ae41ba61e6f46460
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839348"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467361"
 ---
 # <a name="updatefolder-operation"></a>UpdateFolder-Vorgang
 
-Der Vorgang UpdateFolder wird verwendet, um die Eigenschaften eines vorhandenen Elements im Exchange-Speicher zu ändern. Jede UpdateFolder-Operation besteht aus den folgenden:
+Der UpdateFolder-Vorgang wird verwendet, um die Eigenschaften eines vorhandenen Elements in der Exchange-Informationsspeicher zu ändern. Jeder UpdateFolder-Vorgang besteht aus folgenden Elementen:
   
-- Ein [FolderId](folderid.md) -Element, einen Ordner aktualisieren angibt. 
+- Ein [Folder](folderid.md) -Element, mit dem ein zu aktualisierbarer Ordner angegeben wird. 
     
-- Ein interner Pfad eines Elements im Ordner gemäß den Ordner-Shape, das zu aktualisierenden gibt.
+- Ein interner Pfad eines Elements im Ordner, wie durch die Ordner Form angegeben, die die zu aktualisierende Daten angibt.
     
-- Ein Ordner, der den neuen Wert des Felds aktualisierte enthält, wenn das Update nicht auf eine Löschung ist.
+- Ein Ordner, der den neuen Wert des aktualisierten Felds enthält, wenn es sich bei der Aktualisierung nicht um eine Löschung handelt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Drei grundlegende Update-Aktionen können für ein Element ausgeführt werden. Diese Aktionen sind in der folgenden Tabelle aufgeführt.
+Für ein Element können drei grundlegende Updateaktionen ausgeführt werden. Diese Aktionen sind in der folgenden Tabelle aufgeführt.
   
 |**Aktion**|**Beschreibung**|
 |:-----|:-----|
-|Anfügeabfrage  <br/> |Die Append-Aktion hinzugefügt Daten auf eine vorhandene Eigenschaft. Beibehalten die Daten, die derzeit vorhanden ist. Fügen Sie gilt nicht für alle Eigenschaften.  <br/> |
-|Gruppe  <br/> |Die Set-Aktion ersetzt Daten für eine Eigenschaft aus, wenn Daten enthält, oder die Eigenschaft erstellt und legt deren Wert fest, wenn er nicht vorhanden ist. Die Set-Aktion gilt nur für schreibbaren Eigenschaften.  <br/> |
-|Löschen  <br/> |Die Löschaktion entfernt eine Eigenschaft aus einem Ordner. Dies unterscheidet sich auf einen leeren Wert festlegen. Nach Abschluss des Vorgangs ist die Eigenschaft für den Ordner nicht vorhanden. Delete gilt nur für schreibbaren Eigenschaften.  <br/> |
+|Append  <br/> |Mit der Append-Aktion werden einer vorhandenen Eigenschaft Daten hinzugefügt. Die Daten, die derzeit vorhanden sind, werden beibehalten. Append gilt nicht für alle Eigenschaften.  <br/> |
+|Satz  <br/> |Die Set-Aktion ersetzt Daten für eine Eigenschaft, wenn Sie Daten enthält, oder erstellt die Eigenschaft und legt ihren Wert fest, wenn Sie nicht vorhanden ist. Die Aktion festlegen gilt nur für schreibbare Eigenschaften.  <br/> |
+|Löschen  <br/> |Die DELETE-Aktion entfernt eine Eigenschaft aus einem Ordner. Dies unterscheidet sich von der Einstellung auf einen leeren Wert. Wenn dieser Vorgang abgeschlossen ist, ist die Eigenschaft für den Ordner nicht vorhanden. DELETE gilt nur für schreibbare Eigenschaften.  <br/> |
    
-## <a name="updatefolder-request-example"></a>Anforderungsbeispiel UpdateFolder
+## <a name="updatefolder-request-example"></a>UpdateFolder-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird einer Anforderung UpdateFolder veranschaulicht einen Anzeigenamen für den Ordner zu aktualisieren. 
+Im folgenden Beispiel einer UpdateFolder-Anforderung wird gezeigt, wie ein Ordneranzeige Name aktualisiert wird. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <UpdateFolder xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <UpdateFolder xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <FolderChanges>
         <t:FolderChange>
           <t:FolderId Id="AScA" ChangeKey="GO3u/"/>
@@ -72,12 +72,12 @@ Im folgenden Beispiel wird einer Anforderung UpdateFolder veranschaulicht einen 
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-In diesem Beispiel wird der Anzeigename des Ordners auf NeuerOrdnername geändert.
+In diesem Beispiel wird der Anzeigename des Ordners in "neuer FolderName" geändert.
   
 > [!NOTE]
-> Die Werte der **Id** und **ChangeKey** Attribute des Elements [FolderId](folderid.md) wurden zur besseren Lesbarkeit gekürzt. 
+> Die Werte der Attribute **ID** und **ChangeKey** des [Folder](folderid.md) -Elements wurden zur Lesbarkeit gekürzt. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -91,7 +91,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [FolderId](folderid.md)
     
-- [Updates (Element)](updates-item.md)
+- [Updates (Ordner)](updates-folder.md)
     
 - [SetFolderField](setfolderfield.md)
     
@@ -101,16 +101,16 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-Finden Sie im Schema für zusätzliche Elemente, die Sie verwenden können, um eine Anforderung UpdateFolder bilden.
+Weitere Elemente, die Sie zum Erstellen einer UpdateFolder-Anforderung verwenden können, finden Sie im Schema.
   
 > [!NOTE]
-> Der Standardspeicherort des Schemas ist in das virtuelle EWS-Verzeichnis auf dem Computer, der die Clientzugriffs-Serverrolle installiert ist. 
+> Der Standardspeicherort des Schemas befindet sich im virtuellen Verzeichnis EWS auf dem Computer, auf dem die Client Zugriffs-Serverrolle installiert ist. 
   
-## <a name="updatefolder-response-example"></a>UpdateFolder antwortbeispiel
+## <a name="updatefolder-response-example"></a>UpdateFolder-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung UpdateFolder. In diesem Beispiel wird der neue Änderungsschlüssel gemäß den aktualisierten Status des Ordners zurückgegeben.
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die UpdateFolder-Anforderung. In diesem Beispiel wird der neue Änderungsschlüssel zurückgegeben, um den aktualisierten Status des Ordners widerzuspiegeln.
   
 ### <a name="code"></a>Code
 
@@ -121,12 +121,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung Update
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <UpdateFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <UpdateFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:UpdateFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -142,14 +142,14 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung Update
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
 > [!NOTE]
-> Die Ordner-ID und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Ordner-ID und der Change-Schlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
-Die Ordner-ID, die in der Antwort zurückgegeben wird, stellt aktualisierten Ordner.
+Die in der Antwort zurückgegebene Ordner-ID stellt den aktualisierten Ordner dar.
   
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -169,11 +169,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [FolderId](folderid.md)
     
-## <a name="updatefolder-error-response-example"></a>Antwortbeispiel UpdateFolder-Fehler
+## <a name="updatefolder-error-response-example"></a>UpdateFolder-Fehlerantwort Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine UpdateFolder-Anforderung.
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine UpdateFolder-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -184,12 +184,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine UpdateFolder-Anforderung.
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <UpdateFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <UpdateFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:UpdateFolderResponseMessage ResponseClass="Error">
           <m:MessageText>The change key is invalid.</m:MessageText>
@@ -203,11 +203,11 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine UpdateFolder-Anforderung.
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Dieses Beispiel zeigt eine Fehlerantwort an, die durch ein ungültiges **ChangeKey** -Attribut in der Anforderung verursacht wird. 
+Dieses Beispiel zeigt eine Fehlerantwort, die durch ein ungültiges **ChangeKey** -Attribut in der Anforderung verursacht wird. 
   
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   

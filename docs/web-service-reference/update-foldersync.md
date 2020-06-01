@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 47ed8edb-2a94-471b-b965-93f91456252e
-description: Das Update-Element identifiziert einen einzelnen Ordner, in den lokalen Client-Speicher zu aktualisieren.
-ms.openlocfilehash: bf49741b2478edff450f114dc1464a0528072bea
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das Update-Element identifiziert einen einzelnen Ordner, der im lokalen Clientspeicher aktualisiert werden soll.
+ms.openlocfilehash: 5c1b5b1fd87e4651125293eac431c56f732c6c02
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353504"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467137"
 ---
 # <a name="update-foldersync"></a>Update (FolderSync)
 
-**Update** -Elements bezeichnet einen einzelnen Ordner, in den lokalen Client-Speicher zu aktualisieren. 
+Das **Update** -Element identifiziert einen einzelnen Ordner, der im lokalen Clientspeicher aktualisiert werden soll. 
   
 - [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md) 
 - [ResponseMessages](responsemessages.md) 
@@ -73,27 +73,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Folder](folder.md) <br/> |Definiert den Ordner, um das Erstellen, abrufen, suchen, synchronisieren oder zu aktualisieren.  <br/> |
-|[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner, der in erster Linie Kalenderelemente enthält.  <br/> |
-|[ContactsFolder](contactsfolder.md) <br/> |Stellt einem Kontaktordner in einem Postfach an.  <br/> |
-|[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner, der in einem Postfach enthalten ist.  <br/> |
-|[TasksFolder](tasksfolder.md) <br/> |Stellt eine Aufgabe Ordner t Thcontained in einem Postfach ist.  <br/> |
+|[Folder](folder.md) <br/> |Definiert den Ordner zum Erstellen, abrufen, suchen, synchronisieren oder aktualisieren.  <br/> |
+|[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner dar, der in erster Linie Kalenderelemente enthält.  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Kontaktordner in einem Postfach dar.  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner dar, der in einem Postfach enthalten ist.  <br/> |
+|[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner dar, den t in einem Postfach thcontained.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Änderungen (Hierarchie)](changes-hierarchy.md) <br/> |Enthält eine sequenzierten Array von Änderungstypen, die den Typ der Unterschiede zwischen den Ordnern auf dem Client und die Ordner auf dem Exchange-Server darstellen.  <br/> |
+|[Änderungen (Hierarchie)](changes-hierarchy.md) <br/> |Enthält ein sequenziertes Array von Änderungstypen, die die Art der Unterschiede zwischen den Ordnern auf dem Client und den Ordnern auf dem Exchange-Server darstellen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

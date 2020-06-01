@@ -1,5 +1,5 @@
 ---
-title: Artikelnummern ein (NonEmptyArrayOfItemIdsType).
+title: Itemids (NonEmptyArrayOfItemIdsType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: e895782a-74fe-4216-8ac2-c3c88c4b232d
-description: Das Artikelnummern ein.-Element enthält ein Array der Element-IDs, die die Elemente aus einem Postfach exportieren zu identifizieren.
-ms.openlocfilehash: c6d48832c5435080c7cec8e43093ea60825b604a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das itemids-Element enthält ein Array von Element-IDs, mit denen die Elemente identifiziert werden, die aus einem Postfach exportiert werden sollen.
+ms.openlocfilehash: 16c2633528e2ecbc863cfdde645e0f431b4c4297
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830151"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468593"
 ---
-# <a name="itemids-nonemptyarrayofitemidstype"></a>Artikelnummern ein (NonEmptyArrayOfItemIdsType).
+# <a name="itemids-nonemptyarrayofitemidstype"></a>Itemids (NonEmptyArrayOfItemIdsType)
 
-Das **Artikelnummern ein.** -Element enthält ein Array der Element-IDs, die die Elemente aus einem Postfach exportieren zu identifizieren. 
+Das **itemids** -Element enthält ein Array von Element-IDs, mit denen die Elemente identifiziert werden, die aus einem Postfach exportiert werden sollen. 
   
 [ExportItems](exportitems.md)
   
-[Artikelnummern ein (NonEmptyArrayOfItemIdsType).](itemids-nonemptyarrayofitemidstype.md)
+[Itemids (NonEmptyArrayOfItemIdsType)](itemids-nonemptyarrayofitemidstype.md)
   
 ```XML
 <ItemIds>
@@ -46,29 +46,29 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und Ändern eines Elements in der Exchange-Speicher.  <br/> |
+|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel eines Elements in der Exchange-Informationsspeicher.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ExportItems](exportitems.md) <br/> |Stellt eine Anforderung zum Exportieren von Elementen aus einem Postfach an.  <br/> |
+|[ExportItems](exportitems.md) <br/> |Stellt eine Anforderung zum Exportieren von Elementen aus einem Postfach dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

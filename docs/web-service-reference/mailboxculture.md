@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 105cc061-3c35-455f-b102-8023e2055632
-description: Das MailboxCulture-Element gibt die Kultur beim Öffnen eines Postfachs verwendet. Dieses Element tritt im SOAP-Header.
-ms.openlocfilehash: 9003560a89b83032b4dd1b7ff54f3101819cc3c8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MailboxCulture-Element gibt die Kultur an, die beim Öffnen eines Postfachs verwendet werden soll. Dieses Element tritt im SOAP-Header auf.
+ms.openlocfilehash: 5760bac3b4589cdba599c5200db7d77b73855ca4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830266"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467809"
 ---
 # <a name="mailboxculture"></a>MailboxCulture
 
-Das **MailboxCulture** -Element gibt die Kultur beim Öffnen eines Postfachs verwendet. Dieses Element tritt im SOAP-Header. 
+Das **MailboxCulture** -Element gibt die Kultur an, die beim Öffnen eines Postfachs verwendet werden soll. Dieses Element tritt im SOAP-Header auf. 
   
 ```xml
 <MailboxCulture/>
@@ -47,17 +47,17 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert gibt die Sprache an, die in der Exchange-Webdienst-Operationen verwendet wird. Die möglichen Werte für dieses Element werden RFC 3066 beschrieben.
+Der Textwert gibt die Sprache an, die in den Vorgängen des Exchange-Webdiensts verwendet wird. Die möglichen Werte für dieses Element werden von RFC 3066 beschrieben.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, der Exchange-Server, mit die Clientzugriffs-Serverrolle installiert ausgeführt wird.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server mit installierter Client Zugriffs-Server Rolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

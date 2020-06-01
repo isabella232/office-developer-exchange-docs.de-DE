@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 125e0326-6522-42cd-b20e-6977e6fde249
-description: Das UnsubscribeResponse-Element definiert eine Antwort auf eine Anforderung zum Abmelden.
-ms.openlocfilehash: a5d90a6631cba7f18da0261be52488c7f6793dcd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UnsubscribeResponse-Element definiert eine Antwort auf eine unsubscribe-Anforderung.
+ms.openlocfilehash: 1a8ddf93499acb7aa369ec9e91a7106e5cb4bd53
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839330"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467200"
 ---
 # <a name="unsubscriberesponse"></a>UnsubscribeResponse
 
-Das **UnsubscribeResponse** -Element definiert eine Antwort auf eine Anforderung zum Abmelden. 
+Das **UnsubscribeResponse** -Element definiert eine Antwort auf eine unsubscribe-Anforderung. 
   
 ```xml
 <UnsubscribeResponse>
@@ -42,23 +42,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

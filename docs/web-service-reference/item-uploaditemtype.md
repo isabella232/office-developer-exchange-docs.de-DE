@@ -1,5 +1,5 @@
 ---
-title: Item (UploadItemType)
+title: Element (UploadItemType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ab7058f2-615f-4393-a0d4-af76727f37e9
-description: Das Element stellt ein einzelnes Element in einem Postfach hochladen.
-ms.openlocfilehash: 8fecef9a2368a44e38633eb9fddaa8197620f6a1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Item-Element stellt ein einzelnes Element dar, das in ein Postfach hochgeladen werden soll.
+ms.openlocfilehash: 82c0fdf89c06ddfb812c2b2f1899b589eedeb7d8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830138"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467550"
 ---
-# <a name="item-uploaditemtype"></a>Item (UploadItemType)
+# <a name="item-uploaditemtype"></a>Element (UploadItemType)
 
-**Das Element** stellt ein einzelnes Element in einem Postfach hochladen. 
+Das **Item** -Element stellt ein einzelnes Element dar, das in ein Postfach hochgeladen werden soll. 
   
 [UploadItems](uploaditems.md)
   
 [Elemente (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md)
   
-[Item (UploadItemType)](item-uploaditemtype.md)
+[Element (UploadItemType)](item-uploaditemtype.md)
   
 ```XML
 <Item CreateAction="" IsAssociated="">
@@ -42,44 +42,44 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**CreateAction** <br/> |Gibt die Aktion für ein Element in einem Postfach hochladen. Dieses Attribut ist erforderlich.  <br/> |
-|**IsAssociated** <br/> |Gibt an, ob das hochgeladene Element einem Ordnerelement verknüpft ist. Dieses Attribut ist ein boolescher Wert. Der Wert **true** gibt an, dass das Element einen Ordner, Element verknüpft ist. Dieses Attribut ist optional.  <br/> |
+|**CreateAction** <br/> |Gibt die Aktion zum Hochladen eines Elements in ein Postfach an. Dieses Attribut ist erforderlich.  <br/> |
+|**Isassociated** <br/> |Gibt an, ob das hochgeladene Element ein Ordner zugeordnetes Element ist. Dieses Attribut ist ein boolescher Wert. Der Wert **true** gibt an, dass das Element ein Ordner zugeordnetes Element ist. Dieses Attribut ist optional.  <br/> |
    
-#### <a name="createaction-attribute"></a>CreateAction-Attribut
+#### <a name="createaction-attribute"></a>Create-Attribut
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|**CreateNew** <br/> |Gibt an, dass eine neue Kopie des ursprünglichen Elements an das Postfach hochgeladen werden. Das [ItemId](itemid.md) -Element muss nicht vorhanden, wenn der Wert CreateNew verwendet wird. Der Bezeichner des neuen Elements wird in der Antwort zurückgegeben.  <br/> |
-|**Update** <br/> |Gibt an, dass das Element, das vom **ItemId** -Element angegeben werden aktualisiert. Wenn das **ItemId** -Element nicht vorhanden ist oder wenn das Element in den Ordner vom [ParentFolderId](parentfolderid.md) -Element nicht vorhanden ist, wird ein Fehler zurückgegeben.  <br/> |
-|**UpdateOrCreate** <br/> |Gibt an, dass zuerst versucht wird, das Element zu aktualisieren. Wenn das Element in der durch das **ParentFolderId** -Element angegebenen Ordner nicht vorhanden ist, wird ein neues Element erstellt.  <br/> |
+|**CreateNew** <br/> |Gibt an, dass eine neue Kopie des ursprünglichen Elements in das Postfach hochgeladen wird. Das [ItemID](itemid.md) -Element darf nicht vorhanden sein, wenn der CreateNew-Wert verwendet wird. Der neue Elementbezeichner wird in der Antwort zurückgegeben.  <br/> |
+|**Update** <br/> |Gibt an, dass das Element, das durch das Element **ItemID** angegeben wird, aktualisiert wird. Ein Fehler wird zurückgegeben, wenn das **ItemID** -Element nicht vorhanden ist oder wenn das Element nicht in dem durch das [parentfolderid](parentfolderid.md) -Element identifizierten Ordner vorhanden ist.  <br/> |
+|**UpdateOrCreate** <br/> |Gibt an, dass zunächst versucht wurde, das Element zu aktualisieren. Wenn das Element nicht in dem durch das **parentfolderid** -Element angegebenen Ordner vorhanden ist, wird ein neues Element erstellt.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des übergeordneten Ordners, in dem ein neues Element erstellt wird oder, die zu aktualisierenden Elements enthält.  <br/> |
-|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und Ändern eines Elements zum Erstellen oder aktualisieren im Exchange-Speicher.  <br/> |
-|[Daten (base64Binary)](data-base64binary.md) <br/> |Enthält die Daten eines einzelnen Elements in einem Postfach hochladen.  <br/> |
+|[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des übergeordneten Ordners dar, in dem ein neues Element erstellt wird oder das zu aktualisierende Element enthält.  <br/> |
+|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel eines Elements, das in der Exchange-Informationsspeicher erstellt oder aktualisiert werden soll.  <br/> |
+|[Data (base64Binary)](data-base64binary.md) <br/> |Enthält die Daten eines einzelnen Elements, das in ein Postfach hochgeladen werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Elemente (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md) <br/> |Enthält ein Array von Element in einem Postfach muss hochgeladen werden.  <br/> |
+|[Elemente (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md) <br/> |Enthält ein Array von Elementen, das in ein Postfach hochgeladen werden soll.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

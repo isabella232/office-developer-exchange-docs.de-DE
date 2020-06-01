@@ -1,5 +1,5 @@
 ---
-title: SetOofStatus-Vorgang (UM-Webdienst)
+title: SetOofStatus-Vorgang (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,23 +10,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 97c271e9-506e-43eb-89cd-46803fc47ee5
-description: Der Vorgang SetOofStatus Festlegen eines Werts, das angibt, ob die Ansage Out of Office (OOF) für den Benutzer wiedergegeben werden sollte, der die Anforderung stellt.
-ms.openlocfilehash: 2bb1deeec8ddb5be56979bfb2fae3396672298a3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der SetOofStatus-Vorgang legt einen Wert fest, der angibt, ob die Abwesenheit (Out of Office, OOF) Begrüßung für den Benutzer wiedergegeben werden soll, der die Anforderung stellt.
+ms.openlocfilehash: 2311b6137ac25d15ad3d06668450c1d0f7ec1fad
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831445"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467354"
 ---
-# <a name="setoofstatus-operation-um-web-service"></a>SetOofStatus-Vorgang (UM-Webdienst)
+# <a name="setoofstatus-operation-um-web-service"></a>SetOofStatus-Vorgang (um-Webdienst)
 
-Der Vorgang SetOofStatus Festlegen eines Werts, das angibt, ob die Ansage Out of Office (OOF) für den Benutzer wiedergegeben werden sollte, der die Anforderung stellt.
+Der SetOofStatus-Vorgang legt einen Wert fest, der angibt, ob die Abwesenheit (Out of Office, OOF) Begrüßung für den Benutzer wiedergegeben werden soll, der die Anforderung stellt.
   
-## <a name="setoofstatus-request-example"></a>Anforderungsbeispiel SetOofStatus
+## <a name="setoofstatus-request-example"></a>SetOofStatus-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung SetOofStatus veranschaulicht das Formular einer Anforderung an den abwesenheitsansage für ein Postfach zu aktivieren.
+Im folgenden Beispiel einer SetOofStatus-Anforderung wird gezeigt, wie Sie eine Anforderung zum Aktivieren der Abwesenheits Begrüßung für ein Postfach bilden.
   
 ### <a name="code"></a>Code
 
@@ -34,18 +34,18 @@ Im folgenden Beispiel wird eine Anforderung SetOofStatus veranschaulicht das For
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetOofStatus xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SetOofStatus xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
         <status>true</status>
     </SetOofStatus>
   </soap:Body>
 </soap:Envelope>
 ```
 
-## <a name="successful-setoofstatus-response-example"></a>Erfolgreiche SetOofStatus antwortbeispiel
+## <a name="successful-setoofstatus-response-example"></a>Erfolgreiches SetOofStatus-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel einer Antwort SetOofStatus zeigt eine Antwort auf die Anforderung SetOofStatus.
+Im folgenden Beispiel einer SetOofStatus-Antwort wird eine Antwort auf die SetOofStatus-Anforderung angezeigt.
   
 ### <a name="code"></a>Code
 
@@ -53,7 +53,7 @@ Das folgende Beispiel einer Antwort SetOofStatus zeigt eine Antwort auf die Anfo
 <?xml version="1.0" encoding="utf-8" ?> 
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Body>
-    <SetOofStatusResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" /> 
+    <SetOofStatusResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" /> 
   </soap:Body>
 </soap:Envelope>
 ```
@@ -62,9 +62,9 @@ Das folgende Beispiel einer Antwort SetOofStatus zeigt eine Antwort auf die Anfo
 
 
 
-[SetOofStatus (UM-Webdienst)](setoofstatus-um-web-service.md)
+[SetOofStatus (um-Webdienst)](setoofstatus-um-web-service.md)
   
-[SetOofStatusResponse (UM-Webdienst)](setoofstatusresponse-um-web-service.md)
+[SetOofStatusResponse (um-Webdienst)](setoofstatusresponse-um-web-service.md)
   
-[Status (UM-Webdienst - SetOofStatus)](status-um-web-servicesetoofstatus.md)
+[Status (um-Webdienst – SetOofStatus)](status-um-web-servicesetoofstatus.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 766878e3-9007-454f-8501-45139bc5c0e2
-description: Das RemoveItem-Element stellt ein Response-Objekt, das verwendet wird, um ein Besprechungselement zu entfernen, wenn eine Nachricht MeetingCancellation empfangen wird.
-ms.openlocfilehash: 6897363eba602e6a135ad255822197f9296dd44a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RemoveItem-Element stellt ein Response-Objekt dar, das zum Entfernen eines Besprechungselements verwendet wird, wenn eine MeetingCancellation-Nachricht empfangen wird.
+ms.openlocfilehash: c0cd5c1f9894287ee78c2f7a65b8f4d3b943414e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831108"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467690"
 ---
 # <a name="removeitem"></a>RemoveItem
 
-Das **RemoveItem** -Element stellt ein Response-Objekt, das verwendet wird, um ein Besprechungselement zu entfernen, wenn eine Nachricht MeetingCancellation empfangen wird. 
+Das **RemoveItem** -Element stellt ein Response-Objekt dar, das zum Entfernen eines Besprechungselements verwendet wird, wenn eine MeetingCancellation-Nachricht empfangen wird. 
   
 ```xml
 <RemoveItem ObjectName="">
@@ -38,39 +38,39 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**ObjectName** <br/> |Stellt den Namen der RemoveItem Antwort Object-Klasse als eine englische Zeichenfolge dar.  <br/> |
+|**ObjectName** <br/> |Stellt den Namen der RemoveItem-Antwortobjekt Klasse als englische Zeichenfolge dar.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ReferenceItemId](referenceitemid.md) <br/> |Identifiziert das Element auf dem RemoveItem-Response-Objekt verweist.  <br/> |
+|[ReferenceItemId](referenceitemid.md) <br/> |Gibt das Element an, auf das das RemoveItem-Antwortobjekt verweist.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |Enthält ein Array von Elementen im Ordner zu erstellen, die durch das Element [ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) bezeichnet wird.  <br/> |
-|[ResponseObjects](responseobjects.md) <br/> |Enthält eine Auflistung aller Antwort-Objekte, die ein Element in der Exchange-Informationsspeicher zugeordnet sind.  <br/> |
+|[Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |Enthält ein Array von Elementen, die in dem Ordner erstellt werden sollen, der durch das [parentfolderid (TargetFolderIdType)-](parentfolderid-targetfolderidtype.md) Element identifiziert wird.  <br/> |
+|[ResponseObjects](responseobjects.md) <br/> |Enthält eine Auflistung aller Response-Objekte, die einem Element in der Exchange-Informationsspeicher zugeordnet sind.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  **RemoveItem** ist nur für eine [MeetingCancellation](meetingcancellation.md)gültig. Andernfalls wird ein Fehler ausgelöst.
   
 > [!NOTE]
-> Die [ItemClass](itemclass.md) für einen Besprechungsabsage lautet IPM. Schedule.Meeting.Canceled. 
+> Das [ItemClass](itemclass.md) für eine Besprechungsabsage ist IPM. Schedule. Meeting. Canceled. 
   
-Verwenden Sie zum Entfernen einer [MeetingRequest](meetingrequest.md) und die zugehörigen [CalendarItem](calendaritem.md) [DeclineItem](declineitem.md) -Response-Objekt anstelle von **RemoveItem**.
+Verwenden Sie zum Entfernen einer [MeetingRequest](meetingrequest.md) und der zugeordneten [CalendarItem](calendaritem.md)das [DeclineItem](declineitem.md) -Antwortobjekt anstelle von **RemoveItem**.
   
- **RemoveItem** wird für Stellvertretungszugriff nicht unterstützt. 
+ **RemoveItem** wird für den Stellvertretungszugriff nicht unterstützt. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

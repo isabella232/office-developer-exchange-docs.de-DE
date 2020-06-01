@@ -1,5 +1,5 @@
 ---
-title: Perioden
+title: Zeiten
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7920d81d-abba-4232-8bfe-49267b6c9a36
-description: Perioden-Element stellt ein Array von Zeiträumen, mit die den Uhrzeit-Offset in verschiedenen Phasen der Zeitzone definiert.
-ms.openlocfilehash: f2f9cf7c724b453d2b1975fcf72c55bc02caa54b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Periods-Element stellt ein Array von Punkten dar, die den Zeit Offset in unterschiedlichen Phasen der Zeitzone definieren.
+ms.openlocfilehash: 773457a6e4c0237eaeaf23109a7022427cc7dd0d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830729"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467774"
 ---
-# <a name="periods"></a>Perioden
+# <a name="periods"></a>Zeiten
 
-**Perioden** -Element stellt ein Array von Zeiträumen, mit die den Uhrzeit-Offset in verschiedenen Phasen der Zeitzone definiert. 
+Das **Periods** -Element stellt ein Array von Punkten dar, die den Zeit Offset in unterschiedlichen Phasen der Zeitzone definieren. 
   
 ```xml
 <Periods>
@@ -42,25 +42,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Period](period.md) <br/> |Definiert die Namen sowie die Uhrzeitoffset und eindeutiger Bezeichner für eine bestimmte Phase der Zeitzone.  <br/> |
+|[Period](period.md) <br/> |Definiert den Namen, den Zeit Offset und den eindeutigen Bezeichner für eine bestimmte Phase der Zeitzone.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StartTimeZone-Zeitzone](starttimezone.md) <br/> |Definiert die Zeitzone für die Startzeit eines [CalendarItem](calendaritem.md) oder [MeetingRequest](meetingrequest.md).  <br/> |
-|[EndTimeZone](endtimezone.md) <br/> |Definiert die Zeitzone für die Endzeit eines [CalendarItem](calendaritem.md) oder [MeetingRequest](meetingrequest.md).  <br/> |
-|[Zeitzonendefinition](timezonedefinition.md) <br/> |Definiert eine Zeitzone.  <br/> |
+|[StartTimeZone](starttimezone.md) <br/> |Definiert die Zeitzone für die Startzeit einer [CalendarItem](calendaritem.md) -oder [MeetingRequest](meetingrequest.md)-Start Zeit.  <br/> |
+|[EndTimeZone](endtimezone.md) <br/> |Definiert die Zeitzone für die Endzeit einer [CalendarItem](calendaritem.md) -oder [MeetingRequest](meetingrequest.md)-Datei.  <br/> |
+|[TimeZoneDefinition](timezonedefinition.md) <br/> |Definiert eine Zeitzone.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

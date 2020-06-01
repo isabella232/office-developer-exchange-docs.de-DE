@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: Das UmEnabled-Element gibt an, ob für ein Konto Unified Messaging aktiviert ist.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UmEnabled-Element gibt an, ob Unified Messaging für ein Konto aktiviert ist.
+ms.openlocfilehash: 7ba7be69868cb439177702f74ff4a2f12875b7ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839281"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468355"
 ---
 # <a name="umenabled"></a>UmEnabled
 
-Das **UmEnabled** -Element gibt an, ob für ein Konto Unified Messaging aktiviert ist. 
+Das **UmEnabled** -Element gibt an, ob Unified Messaging für ein Konto aktiviert ist. 
   
 ```XML
 <UmEnabled>true | false</UmEnabled>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,23 +44,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Service-Konfigurationsinformationen für die Unified Messaging-Dienst enthält.  <br/> |
+|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Enthält Dienstkonfigurationsinformationen für den Unified Messaging-Dienst.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UmEnabled** -Element ist **true** , wenn für das Konto Unified Messaging aktiviert ist; Andernfalls ist der Wert **false**.
+Der Textwert des **UmEnabled** -Elements ist **true** , wenn Unified Messaging für das Konto aktiviert ist; Andernfalls ist der Wert **false**.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element ist erforderlich.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

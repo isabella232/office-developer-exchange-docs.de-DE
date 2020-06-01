@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 157e8649-ecfc-48ef-a70b-c2c7368d72e0
-description: Das IsPin-Element ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: cc4b40e8325ae12e8110aeba47a3e37063a0d516
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IsPin-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: e451534874b87aad8e1cdf12a8f7409f63ca14bb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830089"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468460"
 ---
 # <a name="ispin"></a>IsPin
 
-Das **IsPin** -Element ist nur zur internen Verwendung vorgesehen. 
+Das **IsPin** -Element ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

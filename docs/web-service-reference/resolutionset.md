@@ -1,5 +1,5 @@
 ---
-title: ResolutionSet
+title: Resolutionset
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 43d5b876-0e87-4414-9b1d-bff1c1ec825c
-description: Das ResolutionSet-Element enthält ein Array von Lösungen für ein mehrdeutiger Name.
-ms.openlocfilehash: ad7bd31c85051e8c80aea25aa9e6f2914cf0ad01
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das resolutionset-Element enthält ein Array von Auflösungen für einen eindeutigen Namen.
+ms.openlocfilehash: 483a096a7fcedbabe25758ebcaa31c83405a0ad4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831160"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467172"
 ---
-# <a name="resolutionset"></a>ResolutionSet
+# <a name="resolutionset"></a>Resolutionset
 
-Das **ResolutionSet** -Element enthält ein Array von Lösungen für ein mehrdeutiger Name. 
+Das **resolutionset** -Element enthält ein Array von Auflösungen für einen eindeutigen Namen. 
   
 [ResolveNamesResponse](resolvenamesresponse.md)
   
@@ -29,7 +29,7 @@ Das **ResolutionSet** -Element enthält ein Array von Lösungen für ein mehrdeu
   
 [ResolveNamesResponseMessage](resolvenamesresponsemessage.md)
   
-[ResolutionSet](resolutionset.md)
+[Resolutionset](resolutionset.md)
   
 ```xml
 <ResolutionSet IndexedPagingOffset="" NumeratorOffset="" AbsoluteDenominator="" IncludesLastItemInRange="" TotalItemsInView="">
@@ -46,11 +46,11 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**IndexedPagingOffset** <br/> |Stellt den Index, der bei Verwendung einer indizierten Seitenansicht für die nächste Anforderung verwendet werden soll.  <br/> |
-|**NumeratorOffset** <br/> |Den neue Zähler-Wert, für die nächste Anforderung verwendet wird, bei Verwendung der Seitenansichten Bruch darstellt.  <br/> |
-|**AbsoluteDenominator** <br/> |Die nächste Nenner für die nächste Anforderung verwendet wird, bei Verwendung der Seitenansichten Bruch darstellt.  <br/> |
-|**IncludesLastItemInRange** <br/> |Dieses Attribut wird true, wenn die aktuellen Ergebnisse das letzte Element in der Abfrage enthalten sein, sodass zusätzliche Paging nicht mehr benötigt wird.  <br/> |
-|**TotalItemsInView** <br/> |Die Gesamtanzahl der Elemente in der Ansicht darstellt.  <br/> |
+|**IndexedPagingOffset** <br/> |Stellt den nächsten Index dar, der für die nächste Anforderung verwendet werden soll, wenn Sie eine indizierte Seitenansicht verwenden.  <br/> |
+|**NumeratorOffset** <br/> |Stellt den neuen Zählerwert dar, der für die nächste Anforderung verwendet werden soll, wenn Sie Ansichten mit Bruch Seiten verwenden.  <br/> |
+|**AbsoluteDenominator** <br/> |Stellt den nächsten Nenner dar, der für die nächste Anforderung verwendet werden soll, wenn Sie Ansichten mit Bruch Seiten verwenden.  <br/> |
+|**IncludesLastItemInRange** <br/> |Dieses Attribut ist true, wenn die aktuellen Ergebnisse das letzte Element in der Abfrage enthalten, sodass kein zusätzliches Paging erforderlich ist.  <br/> |
+|**TotalItemsInView** <br/> |Stellt die Gesamtzahl der Elemente in der Ansicht dar.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -62,21 +62,21 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResolveNamesResponseMessage](resolvenamesresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung ResolveNames.  <br/> |
+|[ResolveNamesResponseMessage](resolvenamesresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer ResolveNames-Anforderung.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Ein **ResolutionSet** -Element kann maximal 100 aufgelöst Entitäten enthalten. 
+Ein **resolutionset** -Element kann maximal 100 aufgelöste Entitäten enthalten. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

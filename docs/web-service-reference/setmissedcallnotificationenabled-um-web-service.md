@@ -1,5 +1,5 @@
 ---
-title: SetMissedCallNotificationEnabled (UM-Webdienst)
+title: SetMissedCallNotificationEnabled (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: db01f574-ab6c-45c2-aaac-404cec37790b
-description: Das SetMissedCallNotificationEnabled-Element definiert eine Anforderung für eine Anforderung SetMissedCallNotificationEnabled-Operation (UM-Webdienst).
-ms.openlocfilehash: 0e556dec70ba0092fb2889b8c384f4952571dbab
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SetMissedCallNotificationEnabled-Element definiert eine Anforderung für eine Anforderung für einen SetMissedCallNotificationEnabled-Vorgang (um-Webdienst).
+ms.openlocfilehash: 9e498c1e100dfbbfc007c33df9728d312384522f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831435"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468166"
 ---
-# <a name="setmissedcallnotificationenabled-um-web-service"></a>SetMissedCallNotificationEnabled (UM-Webdienst)
+# <a name="setmissedcallnotificationenabled-um-web-service"></a>SetMissedCallNotificationEnabled (um-Webdienst)
 
-Das **SetMissedCallNotificationEnabled** -Element definiert eine Anforderung für eine Anforderung [SetMissedCallNotificationEnabled-Vorgang (UM-Webdienst)](setmissedcallnotificationenabled-operation-um-web-service.md) . 
+Das **SetMissedCallNotificationEnabled** -Element definiert eine Anforderung für eine Anforderung für einen [SetMissedCallNotificationEnabled-Vorgang (um-Webdienst)](setmissedcallnotificationenabled-operation-um-web-service.md) . 
   
-[SetMissedCallNotificationEnabled (UM-Webdienst)](setmissedcallnotificationenabled-um-web-service.md)
+[SetMissedCallNotificationEnabled (um-Webdienst)](setmissedcallnotificationenabled-um-web-service.md)
   
 ```xml
 <SetMissedCallNotificationEnabled>
@@ -43,7 +43,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Status (UM-Webdienst - SetMissedCallNotificationEnabled)](status-um-web-servicesetmissedcallnotificationenabled.md) <br/> |Definiert den Wert in einer Anforderung [SetMissedCallNotificationEnabled-Vorgang (UM-Webdienst)](setmissedcallnotificationenabled-operation-um-web-service.md) verwenden.  <br/> |
+|[Status (um-Webdienst – SetMissedCallNotificationEnabled)](status-um-web-servicesetmissedcallnotificationenabled.md) <br/> |Definiert den Wert, der in einer [SetMissedCallNotificationEnabled-Vorgangsanforderung (um-Webdienst)](setmissedcallnotificationenabled-operation-um-web-service.md) verwendet werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -53,18 +53,18 @@ Keine.
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[SetMissedCallNotificationEnabled-Vorgang (UM-Webdienst)](setmissedcallnotificationenabled-operation-um-web-service.md)
+[SetMissedCallNotificationEnabled-Vorgang (um-Webdienst)](setmissedcallnotificationenabled-operation-um-web-service.md)
 

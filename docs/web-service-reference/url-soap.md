@@ -8,23 +8,23 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 12e8c9a4-61e5-41a5-a9ea-423ce6f464af
-description: Das Url-Element enthält die URL der WebClient.
-ms.openlocfilehash: cb29a4b7e6d9c18b212fb543410ddda160099d6f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das URL-Element enthält die URL eines Webclients.
+ms.openlocfilehash: 73d52107ede3fa951ab71e1706af51185b341b74
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839425"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468348"
 ---
 # <a name="url-soap"></a>URL (SOAP)
 
-Das **Url** -Element enthält die URL der WebClient. 
+Das **URL** -Element enthält die URL eines Webclients. 
   
 ```XML
 <Url/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -41,19 +41,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[WebClientUrl (SOAP)](webclienturl-soap.md) <br/> |Stellt die URL eines Exchange Web-Clients.  <br/> |
+|[WebClientUrl (SOAP)](webclienturl-soap.md) <br/> |Stellt die URL eines Exchange-Webclients dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist die URL eines Webclients.
+Der Text-Wert ist die URL eines Webclients.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

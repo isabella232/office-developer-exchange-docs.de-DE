@@ -1,5 +1,5 @@
 ---
-title: Spitzname
+title: Nickname
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3d35b207-d28c-4f3f-8b00-55339d30d19a
-description: Das Nickname-Element stellt den Spitznamen eines Kontakts an.
-ms.openlocfilehash: 0328ea80725f81dce81e5a7730046e3978ae6df1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Nickname-Element stellt den Spitznamen eines Kontakts dar.
+ms.openlocfilehash: cc562d1fc0f02cb3e6742ac951005a8b965bc543
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830533"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466801"
 ---
-# <a name="nickname"></a>Spitzname
+# <a name="nickname"></a>Nickname
 
-Das **Nickname** -Element stellt den Spitznamen eines Kontakts an. 
+Das **Nickname** -Element stellt den Spitznamen eines Kontakts dar. 
   
 ```xml
 <Nickname/>
 ```
 
-**string**
+**Zeichenfolge**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -45,24 +45,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CompleteName](completename.md) <br/> |Stellt den vollständigen Namen eines Kontakts an.  <br/> |
+|[Completename](completename.md) <br/> |Stellt den vollständigen Namen eines Kontakts dar.  <br/> |
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Das **Nickname** -Element enthält einen String-Wert. 
+Das **Nickname** -Element nimmt einen String-Wert an. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element ist optional.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
@@ -70,5 +70,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 ## <a name="see-also"></a>Siehe auch
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
-- [Creating Contacts (Exchange Web Services)](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
+- [Creating Contacts (Exchange Web Services)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
 

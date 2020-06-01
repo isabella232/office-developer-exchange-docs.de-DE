@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 66794226-f5e0-44f0-8a0e-1f194bb0ba0f
-description: Das DiagnosticsLevel-Element darstellt, Timing und Leistungsinformationen, die verwendet wird, um den Bericht abgeleitet werden.
-ms.openlocfilehash: 9205625bb6cf38e370e29d96770eb293ed9277f7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DiagnosticsLevel-Element stellt Timing-und Leistungsinformationen dar, die zum Ableiten des Berichts verwendet werden.
+ms.openlocfilehash: 3060d4f1b8449a5870d964bdfcdbf0d503905abc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757972"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467830"
 ---
 # <a name="diagnosticslevel"></a>DiagnosticsLevel
 
-Das **DiagnosticsLevel** -Element darstellt, Timing und Leistungsinformationen, die verwendet wird, um den Bericht abgeleitet werden. 
+Das **DiagnosticsLevel** -Element stellt Timing-und Leistungsinformationen dar, die zum Ableiten des Berichts verwendet werden. 
   
 ```XML
 <DiagnosticsLevel/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -45,23 +45,23 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |Enthält die Kriterien für die Typen von Nachrichten suchen.  <br/> |
-|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |Enthält die Anforderung für den [GetMessageTrackingReport Vorgang](getmessagetrackingreport-operation.md) zum Abrufen der vollständigen Nachricht Nachverfolgen der Bericht für den angegebenen ID.  <br/> |
+|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |Enthält die Anforderung für den [GetMessageTrackingReport-Vorgang](getmessagetrackingreport-operation.md) zum Abrufen des vollständigen Nachrichtenverfolgungsberichts für die angegebene ID.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert, der eine Zeichenfolge darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -1,5 +1,5 @@
 ---
-title: Nachricht (Verfügbarkeit)
+title: Message (Verfügbarkeit)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1eec24dd-c981-41f4-a2f0-c51d43f1d7c0
-description: Message-Elements enthält Out-of-Antwort (Office, OOF).
-ms.openlocfilehash: 9facd04767fdcc0fd9dfd84fc6badb1a7633d2b5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Message-Element enthält die Abwesenheitsantwort (Out of Office).
+ms.openlocfilehash: 13d118422ccb5a2897c21b6d124f170bf461dbf6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830452"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467004"
 ---
-# <a name="message-availability"></a>Nachricht (Verfügbarkeit)
+# <a name="message-availability"></a>Message (Verfügbarkeit)
 
-**Message** -Elements enthält Out-of-Antwort (Office, OOF). 
+Das **Message** -Element enthält die Abwesenheitsantwort (Out of Office). 
   
 ```xml
 <Message/> 
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,33 +44,33 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[InternalReply](internalreply.md) <br/> | Enthält die Abwesenheitsnachricht an andere Benutzer in die Domäne des Absenders gesendet. <br/> <br/>  Im folgenden sind die möglichen XPath-Ausdrücke auf dieses Element: <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/InternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/InternalReply` <br/> |
-|[ExternalReply](externalreply.md) <br/> | Enthält die Abwesenheitsnachricht, die an Adressen außerhalb der Domäne des Absenders gesendet wird.  <br/> <br/> Im folgenden sind die möglichen XPath-Ausdrücke auf dieses Element:  <br/><br/>  `/SetUserOofSettingsRequest/UserOofSettings/ExternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/ExternalReply` <br/> |
-|[ReplyBody](replybody.md) <br/> |Enthält eine Abwesenheitsnachricht und die Sprache für die Nachricht verwendet.  <br/> |
+|[InternalReply](internalreply.md) <br/> | Enthält die Abwesenheitsnachricht, die an andere Benutzer in der Domäne des Absenders gesendet wird. <br/> <br/>  Im folgenden sind die möglichen XPath-Ausdrücke für dieses Element angegeben: <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/InternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/InternalReply` <br/> |
+|[ExternalReply](externalreply.md) <br/> | Enthält die Abwesenheitsnachricht, die an Adressen außerhalb der Domäne des Absenders gesendet wird.  <br/> <br/> Im folgenden sind die möglichen XPath-Ausdrücke für dieses Element angegeben:  <br/><br/>  `/SetUserOofSettingsRequest/UserOofSettings/ExternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/ExternalReply` <br/> |
+|[ReplyBody](replybody.md) <br/> |Enthält eine Abwesenheitsnachricht und die für die Nachricht verwendete Sprache.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich, um die Abwesenheitsnachricht festgelegt.
+Ein Textwert ist erforderlich, um die Abwesenheitsnachricht festzulegen.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird eine Anforderung [SetUserOofSettings Vorgang](setuseroofsettings-operation.md) legt die [OofState](oofstate.md) auf **aktiviert**, wird die Dauer der OOF auf 10 Tage, und die internen und externen Abwesenheitsnachrichten.
+Im folgenden Beispiel einer [SetUserOofSettings-Vorgangs](setuseroofsettings-operation.md) Anforderung wird die [OofState](oofstate.md) auf " **aktiviert**" festgelegt, die Dauer von OOF auf 10 Tage festgelegt und die internen und externen Abwesenheitsnachrichten festgelegt.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -89,11 +89,11 @@ Im folgenden Beispiel wird eine Anforderung [SetUserOofSettings Vorgang](setuser
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

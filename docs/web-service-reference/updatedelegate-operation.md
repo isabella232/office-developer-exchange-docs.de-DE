@@ -11,47 +11,47 @@ api_name:
 api_type:
 - schema
 ms.assetid: 03f618ac-ad1a-4772-9b81-c5bb0f12d6ab
-description: Der Vorgang UpdateDelegate aktualisiert Berechtigungen der Stellvertretung für einen Prinzipal Postfach.
-ms.openlocfilehash: 9f69d784617d10d8902a260bbf6639703dd33b6d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der UpdateDelegate-Vorgang aktualisiert Stellvertretungsberechtigungen für das Postfach eines Prinzipals.
+ms.openlocfilehash: b7cf5325d925f8d6588115a8657a2077e940f9d2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839341"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468558"
 ---
 # <a name="updatedelegate-operation"></a>UpdateDelegate-Vorgang
 
-Der Vorgang **UpdateDelegate** aktualisiert Berechtigungen der Stellvertretung für einen Prinzipal Postfach. 
+Der **UpdateDelegate** -Vorgang aktualisiert Stellvertretungsberechtigungen für das Postfach eines Prinzipals. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der Vorgang **UpdateDelegate** können die SOAP-Header, die aufgeführt und in der folgenden Tabelle beschrieben. 
+Der **UpdateDelegate** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Identitätswechsel  <br/> |["ExchangeImpersonation"](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt.  <br/> |
+|Identitätswechsel  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt.  <br/> |
 |MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Gibt die RFC3066-Kultur an, die für den Zugriff auf das Postfach verwendet wird.  <br/> |
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="updatedelegate-request-example"></a>Anforderungsbeispiel UpdateDelegate
+## <a name="updatedelegate-request-example"></a>UpdateDelegate-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird einer Anforderung **UpdateDelegate** zeigt, wie die Berechtigungen der Stellvertretung für das Konto von Benutzer1 aktualisiert. Benutzer2 erhält keine Berechtigungen für den Ordner Aufgaben Ebene und erhält die Berechtigung zum Anzeigen der private Elemente. User3 wird Leseberechtigungen für den Ordner "Journal" erteilt. Besprechungsanfragen an die Stellvertretungen gesendet werden, und Informationen über die Anforderung an die User1 gesendet. 
+Im folgenden Beispiel einer **UpdateDelegate** -Anforderung wird gezeigt, wie Sie Stellvertretungsberechtigungen für das von Benutzer1-Konto aktualisieren. Benutzer2 wird die Berechtigungsstufe None für den Ordner Aufgaben erteilt, und es wird die Berechtigung zum Anzeigen privater Elemente erteilt. User3 werden Prüferberechtigungen für den Journal Ordner erteilt. Besprechungsanfragen werden an die Stellvertretungen gesendet, und Informationen zu der Anforderung werden an user1 gesendet. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1"/>
   </soap:Header>
   <soap:Body>
-    <UpdateDelegate xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <UpdateDelegate xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <Mailbox>
         <t:EmailAddress>user1@example.com</t:EmailAddress>
       </Mailbox>
@@ -80,15 +80,15 @@ Im folgenden Beispiel wird einer Anforderung **UpdateDelegate** zeigt, wie die B
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Die [UpdateDelegate](updatedelegate.md) -Anforderung erfordert nicht, dass Updates auf Delegaten angewendet werden. Clients können nur die Einstellung der **DeliverMeetingMessage** ändern. 
+Für die [UpdateDelegate](updatedelegate.md) -Anforderung müssen keine Updates auf Stellvertretungen angewendet werden. Clients können nur die **DeliverMeetingMessage** -Einstellung ändern. 
   
-## <a name="updatedelegate-response-example"></a>UpdateDelegate antwortbeispiel
+## <a name="updatedelegate-response-example"></a>UpdateDelegate-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **UpdateDelegate** -Operation. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf einen **UpdateDelegate** -Vorgang. 
   
 ### <a name="code"></a>Code
 
@@ -103,12 +103,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **UpdateDelegate*
                          MajorBuildNumber="206"
                          MinorBuildNumber="0"
                          Version="Exchange2007_SP1"
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <m:UpdateDelegateResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+    <m:UpdateDelegateResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                               ResponseClass="Success"
-                              xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+                              xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:ResponseMessages>
         <m:DelegateUserResponseMessageType ResponseClass="Success">
@@ -141,11 +141,11 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **UpdateDelegate*
 </soap:Envelope>
 ```
 
-## <a name="updatedelegate-error-response-example"></a>Antwortbeispiel UpdateDelegate-Fehler
+## <a name="updatedelegate-error-response-example"></a>UpdateDelegate-Fehlerantwort Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine **UpdateDelegate** -Anforderung. Der Fehler wurde generiert, da die Stellvertretung in der Principal-Delegatliste nicht vorhanden ist. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **UpdateDelegate** -Anforderung. Der Fehler wurde generiert, da die Stellvertretung nicht in der Stell Vertretungsliste des Prinzipals vorhanden ist. 
   
 ### <a name="code"></a>Code
 
@@ -160,12 +160,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **UpdateDelegate** -Anfor
                          MajorBuildNumber="206" 
                          MinorBuildNumber="0" 
                          Version="Exchange2007_SP1" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <m:UpdateDelegateResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <m:UpdateDelegateResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                               ResponseClass="Success" 
-                              xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+                              xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:ResponseMessages>
         <m:DelegateUserResponseMessageType ResponseClass="Error">

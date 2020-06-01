@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 65217ca8-6aea-47eb-a989-e6cce25f5f09
-description: Das ReceiveCopiesOfMeetingMessages-Element gibt an, ob eine Stellvertretung Kopien der Nachrichten empfängt, die dem Prinzipal adressiert sind. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: e39a5d3255268b418fa956959da5ae0ea062d831
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ReceiveCopiesOfMeetingMessages-Element gibt an, ob eine Stellvertretung Kopien von Besprechungs bezogenen Nachrichten empfängt, die an den Prinzipal adressiert sind. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: af6e220304f88c4db00ab675077dcd9bf581ea9e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830967"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468264"
 ---
 # <a name="receivecopiesofmeetingmessages"></a>ReceiveCopiesOfMeetingMessages
 
-Das **ReceiveCopiesOfMeetingMessages** -Element gibt an, ob eine Stellvertretung Kopien der Nachrichten empfängt, die dem Prinzipal adressiert sind. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **ReceiveCopiesOfMeetingMessages** -Element gibt an, ob eine Stellvertretung Kopien von Besprechungs bezogenen Nachrichten empfängt, die an den Prinzipal adressiert sind. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <ReceiveCopiesOfMeetingMessages>true or false</ReceiveCopiesOfMeetingMessages>
@@ -44,23 +44,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Beauftragte Benutzer](delegateuser.md) <br/> |Identifiziert einen einzelnen Delegaten hinzufügen oder aktualisieren in einem Postfach. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[DelegateUser](delegateuser.md) <br/> |Bezeichnet einen einzelnen Delegaten, der in einem Postfach hinzugefügt oder aktualisiert werden soll. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass eine Stellvertretung eine Kopie des meeting-Nachrichten empfängt. Der Textwert **false** gibt an, dass eine Stellvertretung keine Kopie der Besprechung Nachrichten erhält. 
+Der Textwert **true** gibt an, dass eine Stellvertretung eine Kopie von Besprechungsnachrichten empfängt. Der Textwert **false** gibt an, dass eine Stellvertretung keine Kopie von Besprechungsnachrichten empfängt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-**ReceiveCopiesOfMeetingMessages** auf **false**festgelegt ist, die Stellvertretung kann weiterhin Senden im Auftrag der Prinzipal, aber erhalten keine Fehlermeldungen bezüglich Besprechungen.
+Wenn **ReceiveCopiesOfMeetingMessages** auf **false**festgelegt ist, kann die Stellvertretung weiterhin Nachricht im Auftrag des Prinzipals senden, aber keine Besprechungs bezogenen Nachrichten empfangen.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -77,5 +77,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Hinzufügen von Stellvertretungen](http://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+[Hinzufügen von Stellvertretungen](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2f33b29b-163b-4106-a74d-6fb76ec38951
-description: SID-Element stellt Security Descriptor Definition Language (SDDL) Form die Sicherheits-ID (SID) für das Konto für den Identitätswechsel verwenden oder Stellvertretungszugriff dar.
-ms.openlocfilehash: efcea42c12ec1d26ea31fdb8de337c37a2338a96
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das sid-Element stellt das SDDL-Formular (Security Descriptor Definition Language) der Sicherheits-ID (Security Identifier, SID) für das Konto dar, das für den Identitätswechsel oder den Stellvertretungszugriff verwendet werden soll.
+ms.openlocfilehash: 0e3f740e9a056f7c0042049d97757b5f2d3c441d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831492"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468047"
 ---
 # <a name="sid"></a>SID
 
-**SID** -Element stellt Security Descriptor Definition Language (SDDL) Form die Sicherheits-ID (SID) für das Konto für den Identitätswechsel verwenden oder Stellvertretungszugriff dar. 
+Das **sid** -Element stellt das SDDL-Formular (Security Descriptor Definition Language) der Sicherheits-ID (Security Identifier, SID) für das Konto dar, das für den Identitätswechsel oder den Stellvertretungszugriff verwendet werden soll. 
   
 ```xml
 <SID/>
@@ -44,22 +44,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ConnectingSID](connectingsid.md) <br/> |Gibt ein Konto Identitätswechsel bei Verwendung des "ExchangeImpersonation" SOAP-Headers.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
-|[Benutzer-ID](userid.md) <br/> |Identifiziert ein Stellvertreter oder von einem Benutzer mit Zugriffsberechtigungen für Ordner.  <br/> |
+|[ConnectingSID](connectingsid.md) <br/> |Stellt ein Konto für den Identitätswechsel dar, wenn der ExchangeImpersonation-SOAP-Header verwendet wird.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
+|[UserId](userid.md) <br/> |Identifiziert einen Stellvertreter Benutzer oder einen Benutzer mit Ordnerzugriffsberechtigungen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist eine zeichenfolgendendarstellung einer SID.
+Der Wert Text ist eine Zeichenfolgendarstellung einer SID.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, der Exchange-Server, mit die Clientzugriffs-Serverrolle installiert ausgeführt wird.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server mit installierter Client Zugriffs-Server Rolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

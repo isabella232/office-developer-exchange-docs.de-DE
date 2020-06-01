@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: f17c3d08-c79e-41f1-ba31-6e41e7aafd87
-description: Subscribe-Vorgang wird verwendet, um die Clientanwendungen auf Push oder Pull-Benachrichtigungen zu abonnieren. Es ist wichtig, beachten Sie, dass die Struktur der Anforderungsnachrichten und Antworten je nach den Typ des ereignisbenachrichtigung unterscheidet.
-ms.openlocfilehash: f6cacab80c8ca2e505ab63a162a161fcf5de8585
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der Subscribe-Vorgang wird verwendet, um Clientanwendungen für Push-oder Pull-Benachrichtigungen zu abonnieren. Es ist wichtig zu beachten, dass die Struktur der Anforderungsnachrichten und-Antworten je nach Typ der Ereignisbenachrichtigung unterschiedlich ist.
+ms.openlocfilehash: c40e0e434f698c6535ff5d03fd4d45a453959dd6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831619"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467046"
 ---
 # <a name="subscribe-operation"></a>Vorgang abonnieren
 
-Subscribe-Vorgang wird verwendet, um die Clientanwendungen auf Push oder Pull-Benachrichtigungen zu abonnieren. Es ist wichtig, beachten Sie, dass die Struktur der Anforderungsnachrichten und Antworten je nach den Typ des ereignisbenachrichtigung unterscheidet. 
+Der Subscribe-Vorgang wird verwendet, um Clientanwendungen für Push-oder Pull-Benachrichtigungen zu abonnieren. Es ist wichtig zu beachten, dass die Struktur der Anforderungsnachrichten und-Antworten je nach Typ der Ereignisbenachrichtigung unterschiedlich ist. 
   
-## <a name="pull-subscription-subscribe-request-example"></a>Pull-Abonnement abonnieren anforderungsbeispiel
+## <a name="pull-subscription-subscribe-request-example"></a>Subscribe-Abonnement-Anforderungs Beispiel für Pullabonnements
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Codebeispiel wird veranschaulicht, wie ein Ereignis-Benachrichtigung Pullabonnement abonnieren. Das Abonnement informiert die Clientanwendung, wenn neue e-Mail-Nachrichten in den Posteingang hinzugefügt wird und wenn ein Element aus dem Posteingang gelöscht wird. Das Abonnement wird Timeout auf, wenn der Client keine Informationen zu Ereignissen innerhalb von zehn Minuten anfordert. Wenn das Abonnement abläuft, muss ein neues Abonnement weiterhin Benachrichtigungen anfordern hergestellt werden.
+Das folgende Codebeispiel zeigt, wie Sie ein Ereignis Benachrichtigungsabonnement für Pullabonnements abonnieren. Das Abonnement informiert die Clientanwendung, wenn dem Posteingang neue e-Mails hinzugefügt werden und wenn ein Element aus dem Posteingang gelöscht wird. Das Abonnement hat einen Timeout, wenn der Client nicht innerhalb von zehn Minuten Informationen zu Ereignissen anfordert. Wenn das Abonnement abläuft, muss ein neues Abonnement eingerichtet werden, um weiterhin Benachrichtigungen anzufordern.
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <Subscribe xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <Subscribe xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <PullSubscriptionRequest>
         <t:FolderIds>
           <t:DistinguishedFolderId Id="inbox"/>
@@ -52,7 +52,7 @@ Im folgenden Codebeispiel wird veranschaulicht, wie ein Ereignis-Benachrichtigun
 </soap:Envelope>
 ```
 
-### <a name="pull-subscription-subscribe-request-elements"></a>Pullabonnement abonnieren Anforderung Elemente
+### <a name="pull-subscription-subscribe-request-elements"></a>Subscribe-Abonnement anforderungselemente abrufen
 
 In der Anforderung werden folgende Elemente verwendet:
   
@@ -70,13 +70,13 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Timeout](timeout.md)
     
-Um weitere Optionen für die Anforderung an die Subscribe-Operation zu suchen, verwenden Sie die Schemahierarchie. Starten Sie das [PullSubscriptionRequest](pullsubscriptionrequest.md) -Element. 
+Um andere Optionen für die Anforderungsnachricht des Subscribe-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [PullSubscriptionRequest](pullsubscriptionrequest.md) -Element. 
   
-## <a name="successful-pull-subscription-subscribe-response-example"></a>Erfolgreiche Pull-Abonnement abonniert antwortbeispiel
+## <a name="successful-pull-subscription-subscribe-response-example"></a>Beispiel für eine erfolgreiche Abonnement Antwort für Pullabonnements
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Pull-Abonnement-Antwort. Die Antwort enthält die Abonnement-ID und Wasserzeichen, die verwendet wird, um das Array der Ereignisse abzurufen, die ein Abonnement zugeordnet sind. Die Abonnement-ID wird auch verwendet, einen Client von einem Abonnement zu kündigen.
+Im folgenden Beispiel wird eine erfolgreiche Antwort auf das Pullabonnement dargestellt. Die Antwort enthält die Abonnement-ID und das Wasserzeichen, das verwendet wird, um das Array von Ereignissen abzurufen, die einem Abonnement zugeordnet sind. Die Abonnement-ID wird auch verwendet, um das Abonnement eines Clients von einem Abonnement abzumelden.
   
 ### <a name="code"></a>Code
 
@@ -87,12 +87,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Pull-Abonnement-Antwort. Die Antwo
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SubscribeResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SubscribeResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SubscribeResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -105,7 +105,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Pull-Abonnement-Antwort. Die Antwo
 </soap:Envelope>
 ```
 
-### <a name="pull-subscription-subscribe-response-elements"></a>Pull-Abonnement abonniert Antwortelemente
+### <a name="pull-subscription-subscribe-response-elements"></a>Subscribe-Abonnement-Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -119,15 +119,15 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [SubscriptionId (GetEvents)](subscriptionid-getevents.md)
+- [Abonnement-Nr (GetEvents)](subscriptionid-getevents.md)
     
-- [Wasserzeichen](watermark.md)
+- [Watermark](watermark.md)
     
-## <a name="pull-subscription-subscribe-error-response-example"></a>Pull-Abonnement abonnieren Fehler antwortbeispiel
+## <a name="pull-subscription-subscribe-error-response-example"></a>Beispiel für subscribe-Fehlerantwort für Pullabonnement
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an die Subscribe-Anforderung. Der Fehler wird durch den Versuch, Abonnieren von Benachrichtigungen mithilfe von Zugriffsrechten für Stellvertretung verursacht.
+Im folgenden Beispiel wird eine Fehlerantwort auf eine subscribe-Anforderung angezeigt. Der Fehler wird durch den Versuch verursacht, Benachrichtigungen mithilfe des Stellvertretungs Zugriffs zu abonnieren.
   
 ### <a name="code"></a>Code
 
@@ -138,12 +138,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort an die Subscribe-Anforderung. Der
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SubscribeResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SubscribeResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SubscribeResponseMessage ResponseClass="Error">
           <m:MessageText>Subscriptions are not supported for delegate user access.</m:MessageText>
@@ -156,7 +156,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an die Subscribe-Anforderung. Der
 </soap:Envelope>
 ```
 
-### <a name="pull-subscription-error-response-elements"></a>Ziehen Sie Antwortelemente Abonnementfehler
+### <a name="pull-subscription-error-response-elements"></a>Elemente des Pull-Abonnement-Fehlerantwort Elements
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
@@ -174,26 +174,26 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="push-subscription-request-example"></a>Push-Abonnement-anforderungsbeispiel
+## <a name="push-subscription-request-example"></a>Push-Abonnementanforderung (Beispiel)
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Codebeispiel wird veranschaulicht, wie ein Push-Ereignis Benachrichtigungsabonnement abonnieren. Die Anforderung identifiziert den Ordner überwacht werden, die Typen der zu überwachenden Ereignisse, die Häufigkeit der statusbenachrichtigungen und die URL des Clients Webdienst, der die Pushbenachrichtigungen überwacht.
+Im folgenden Codebeispiel wird gezeigt, wie Sie ein Push-Ereignis Benachrichtigungsabonnement abonnieren. Die Anforderung identifiziert die zu überwachenden Ordner, die zu überwachenden Ereignistypen, die Häufigkeit der Statusbenachrichtigungen und die URL des Client-Webdiensts, der die Push-Benachrichtigungen überwacht.
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
     <Subscribe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <PushSubscriptionRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-        <FolderIds xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <PushSubscriptionRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+        <FolderIds xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <DistinguishedFolderId Id="inbox" />
         </FolderIds>
-        <EventTypes xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <EventTypes xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <EventType>NewMailEvent</EventType>
           <EventType>CopiedEvent</EventType>
           <EventType>CreatedEvent</EventType>
@@ -201,21 +201,21 @@ Im folgenden Codebeispiel wird veranschaulicht, wie ein Push-Ereignis Benachrich
           <EventType>ModifiedEvent</EventType>
           <EventType>MovedEvent</EventType>
         </EventTypes>
-        <StatusFrequency xmlns="http://schemas.microsoft.com/exchange/services/2006/types">1</StatusFrequency>
-        <URL xmlns="http://schemas.microsoft.com/exchange/services/2006/types">http://clientWebService/Service.asmx</URL>
+        <StatusFrequency xmlns="https://schemas.microsoft.com/exchange/services/2006/types">1</StatusFrequency>
+        <URL xmlns="https://schemas.microsoft.com/exchange/services/2006/types">http://clientWebService/Service.asmx</URL>
       </PushSubscriptionRequest>
     </Subscribe>
   </soap:Body>
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Der Client Web Service eingerichtet werden muss, bevor das Push Notification abonnieren Anforderung wird gesendet. Andernfalls wird die erste Benachrichtigung an einen gültigen Endpunkt nicht gesendet, und das Push Notification schlägt fehl. Weitere Informationen finden Sie unter [Push Notification Beispielanwendung](http://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx).
+Der Client-Webdienst muss eingerichtet sein, bevor die Push Notification subscribe-Anforderung gesendet wird. Andernfalls wird die erste Benachrichtigung nicht an einen gültigen Endpunkt gesendet, und die Push-Benachrichtigung wird nicht ausgeführt. Weitere Informationen finden Sie unter [Push Notification-Beispielanwendung](https://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx).
   
-Eine neue [SubscriptionId (GetEvents)](subscriptionid-getevents.md) wird erstellt, sobald Sie erneut abonnieren. Verwenden Sie das Wasserzeichen des vorherigen-Abonnements, um an der Stelle erneut abonnieren, in dem das vorherige Abonnement beendet. 
+Beim erneuten Abonnieren wird eine neue [Abonnement-Startwert (GetEvents)](subscriptionid-getevents.md) erstellt. Verwenden Sie das Wasserzeichen eines vorherigen Abonnements zum erneuten Abonnieren an der Stelle, an der das vorherige Abonnement endete. 
   
-### <a name="push-subscription-request-elements"></a>Push-Abonnement Anforderung Elemente
+### <a name="push-subscription-request-elements"></a>Push-Abonnement anforderungselemente
 
 In der Anforderung werden folgende Elemente verwendet:
   
@@ -235,11 +235,11 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [URL](url-ex15websvcsotherref.md)
     
-## <a name="successful-push-subscription-response-example"></a>Erfolgreiche Pushabonnement antwortbeispiel
+## <a name="successful-push-subscription-response-example"></a>Beispiel für eine erfolgreiche Push-Abonnement Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Push-Abonnement-Antwort. 
+Das folgende Beispiel zeigt eine erfolgreiche Push-Abonnement Antwort. 
   
 ### <a name="code"></a>Code
 
@@ -250,12 +250,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Push-Abonnement-Antwort.
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SubscribeResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SubscribeResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseMessages>
         <SubscribeResponseMessage ResponseClass="Success">
           <ResponseCode>NoError</ResponseCode>
@@ -268,7 +268,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Push-Abonnement-Antwort.
 </soap:Envelope>
 ```
 
-### <a name="push-subscription-response-elements"></a>Schieben Antwortelemente Abonnement
+### <a name="push-subscription-response-elements"></a>Push-Abonnement-Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -282,9 +282,9 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [SubscriptionId (GetEvents)](subscriptionid-getevents.md)
+- [Abonnement-Nr (GetEvents)](subscriptionid-getevents.md)
     
-- [Wasserzeichen](watermark.md)
+- [Watermark](watermark.md)
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -295,7 +295,7 @@ In der Antwort werden folgende Elemente verwendet:
 [GetEvents-Vorgang](getevents-operation.md)
 
 
-[Mithilfe von Pullabonnements](http://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
+[Verwenden von Pullabonnements](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
   
-[Beispielanwendung für Pushbenachrichtigungen](http://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)
+[Beispielanwendung für Pushbenachrichtigungen](https://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)
 

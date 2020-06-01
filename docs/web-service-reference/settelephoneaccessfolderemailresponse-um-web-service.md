@@ -1,5 +1,5 @@
 ---
-title: SetTelephoneAccessFolderEmailResponse (UM-Webdienst)
+title: SetTelephoneAccessFolderEmailResponse (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 01d07114-5764-4ea7-948c-1ae95c287f0c
-description: Das SetTelephoneAccessFolderEmailResponse-Element definiert eine Antwort auf eine SetTelephoneAccessFolderEmail-Vorgang (UM-Webdienst) an.
-ms.openlocfilehash: 8558a0efd45cc1b2e0bbaac8a93e4c3e498cef74
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SetTelephoneAccessFolderEmailResponse-Element definiert eine Antwort auf eine Anforderung des SetTelephoneAccessFolderEmail-Vorgangs (um-Webdienst).
+ms.openlocfilehash: 85f0f764b2a6a1555fb03d31fbe91bf3d6e2f701
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831460"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467312"
 ---
-# <a name="settelephoneaccessfolderemailresponse-um-web-service"></a>SetTelephoneAccessFolderEmailResponse (UM-Webdienst)
+# <a name="settelephoneaccessfolderemailresponse-um-web-service"></a>SetTelephoneAccessFolderEmailResponse (um-Webdienst)
 
-Das **SetTelephoneAccessFolderEmailResponse** -Element definiert eine Antwort auf eine [SetTelephoneAccessFolderEmail-Vorgang (UM-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md) an. 
+Das **SetTelephoneAccessFolderEmailResponse** -Element definiert eine Antwort auf eine Anforderung des [SetTelephoneAccessFolderEmail-Vorgangs (um-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md) . 
   
-[SetTelephoneAccessFolderEmailResponse (UM-Webdienst)](settelephoneaccessfolderemailresponse-um-web-service.md)
+[SetTelephoneAccessFolderEmailResponse (um-Webdienst)](settelephoneaccessfolderemailresponse-um-web-service.md)
   
 ```xml
 <SetTelephoneAccessFolderEmailResponse />
@@ -49,18 +49,18 @@ Keine.
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[SetTelephoneAccessFolderEmail-Vorgang (UM-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md)
+[SetTelephoneAccessFolderEmail-Vorgang (um-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md)
 

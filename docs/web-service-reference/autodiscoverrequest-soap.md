@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 3e403e81-290b-42f6-9e79-15135fc58c4b
-description: Das AutodiscoverRequest-Element darstellt, das Basiselement für alle AutoErmittlung-Anforderungen.
-ms.openlocfilehash: bb8c252b84578443f0d6da0acf02f57ecd7caf6e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das AutodiscoverRequest-Element stellt das Basiselement für alle Auto Ermittlungsanforderungen dar.
+ms.openlocfilehash: ed7d4095dafaba6a7800927f2d3ece412b57ae36
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757422"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466850"
 ---
 # <a name="autodiscoverrequest-soap"></a>AutodiscoverRequest (SOAP)
 
-Das **AutodiscoverRequest** -Element darstellt, das Basiselement für alle AutoErmittlung-Anforderungen. 
+Das **AutodiscoverRequest** -Element stellt das Basiselement für alle Auto Ermittlungsanforderungen dar. 
   
 ```XML
 <AutodiscoverRequest/>
@@ -45,17 +45,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das globale **AutodiscoverRequest** -Element wird nie verwendet. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 

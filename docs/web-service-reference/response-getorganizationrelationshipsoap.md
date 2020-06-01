@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e6bbe800-3cbc-48b2-87b3-2043f575e88b
-description: Das Antwort-Element enthält die GetOrganizationRelationshipSettings-Vorgang (SOAP) Antwortinformationen. Das Antwort-Element ist nur zur internen Verwendung. Dieses Element wird von Clients nicht verwendet.
-ms.openlocfilehash: 97bef9ab9f0b860e62646703c35d539b7922a65a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Response-Element enthält die GetOrganizationRelationshipSettings-Vorgangs (SOAP)-Antwortinformationen. Das Response-Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet.
+ms.openlocfilehash: 55f8cd549f40b780b2e7438634a851a2c3854f40
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831174"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467942"
 ---
 # <a name="response-getorganizationrelationship-soap"></a>Antwort (GetOrganizationRelationship) (SOAP)
 
-Das **Antwort** -Element enthält die [GetOrganizationRelationshipSettings-Vorgang (SOAP)](getorganizationrelationshipsettings-operation-soap.md) Antwort-Informationen. Das **Antwort** -Element ist nur zur internen Verwendung. Dieses Element wird von Clients nicht verwendet. 
+Das **Response** -Element enthält die [GetOrganizationRelationshipSettings-Vorgangs (SOAP)-](getorganizationrelationshipsettings-operation-soap.md) Antwortinformationen. Das **Response** -Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet. 
   
 ```XML
 <GetOrganizationRelationshipSettingsResponse>
@@ -39,9 +39,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |Stellt einen Fehlercode, der von den AutoErmittlungsdienst zurückgegeben wird.  <br/> |
-|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |Stellt eine Nachricht, die ein Fehlercode zugeordnet ist, die von den AutoErmittlungsdienst zurückgegeben wird.  <br/> |
-|[OrganizationRelationshipSettingsCollection (SOAP)](organizationrelationshipsettingscollection-soap.md) <br/> |Stellt eine Liste von organisationsbeziehungen, die mit die Abfrage übereinstimmen.  <br/> |
+|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |Stellt einen Fehlercode dar, der vom AutoErmittlungsdienst zurückgegeben wird.  <br/> |
+|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |Stellt eine Meldung dar, die einem Fehlercode zugeordnet ist, der vom AutoErmittlungsdienst zurückgegeben wird.  <br/> |
+|[OrganizationRelationshipSettingsCollection (SOAP)](organizationrelationshipsettingscollection-soap.md) <br/> |Stellt eine Liste von Organisationsbeziehungen dar, die mit der Abfrage übereinstimmen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -51,13 +51,13 @@ Keine.
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

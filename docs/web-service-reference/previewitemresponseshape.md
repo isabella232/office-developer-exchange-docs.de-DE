@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 183f4a06-c056-4770-b00b-ad850b97e03d
-description: Das PreviewItemResponseShape-Element enthält den angeforderte Eigenschaftensatz in eine discoverysuche zurückgegeben werden soll.
-ms.openlocfilehash: 7d6abb232225a6807abe988846eccdd8e265fede
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PreviewItemResponseShape-Element enthält den angeforderten Eigenschaftensatz, der in einer Ermittlungs Suche zurückgegeben werden soll.
+ms.openlocfilehash: 6f00849cdd564a45084b64704e36a6cd09c698f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830871"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468096"
 ---
 # <a name="previewitemresponseshape"></a>PreviewItemResponseShape
 
-Das **PreviewItemResponseShape** -Element enthält den angeforderte Eigenschaftensatz in eine discoverysuche zurückgegeben werden soll. 
+Das **PreviewItemResponseShape** -Element enthält den angeforderten Eigenschaftensatz, der in einer Ermittlungs Suche zurückgegeben werden soll. 
   
 ```XML
 <PreviewItemResponseShape>
@@ -37,25 +37,25 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[BaseShape (PreviewItemBaseShapeType)](baseshape-previewitembaseshapetype.md) | [AdditionalProperties](additionalproperties.md)
+[BaseShape (PreviewItemBaseShapeType)](baseshape-previewitembaseshapetype.md)  |  [AdditionalProperties](additionalproperties.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [SearchMailboxes](searchmailboxes.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

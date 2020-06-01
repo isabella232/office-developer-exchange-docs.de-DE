@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: c54f310f-8c99-4c37-8e73-ac87722b6229
-description: Das RedirectUrl-Element enthält die URL der Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, dem die Clientzugriffs-Serverrolle installiert ist, die zum Abrufen der für die AutoErmittlung verwendet werden soll.
-ms.openlocfilehash: 3b634f1a3a3d44b6aae1a826a005149200641dcb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RedirectUrl-Element enthält die URL des Computers, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist, die zum Abrufen von AutoErmittlungseinstellungen verwendet werden sollte.
+ms.openlocfilehash: 5400b1e7a4bb7ebebc58b6a0f1fc9bf37f5a2e22
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831027"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468089"
 ---
 # <a name="redirecturl-pox"></a>RedirectUrl (POX)
 
-Das **RedirectUrl** -Element enthält die URL der Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, dem die Clientzugriffs-Serverrolle installiert ist, die zum Abrufen der für die AutoErmittlung verwendet werden soll. 
+Das **RedirectUrl** -Element enthält die URL des Computers, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist, die zum Abrufen von AutoErmittlungseinstellungen verwendet werden sollte. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -48,15 +48,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Konto (POX)](account-pox.md) <br/> |Gibt die kontoeinstellungen für den Benutzer an.  <br/> |
+|[Konto (POX)](account-pox.md) <br/> |Gibt Kontoeinstellungen für den Benutzer an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt die URL des Clientzugriffsservers, die zum Abrufen der für die AutoErmittlung verwendet werden soll.
+Der Wert Text stellt die URL des Client Zugriffsservers dar, der zum Abrufen von AutoErmittlungseinstellungen verwendet werden soll.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Clientanwendung sollte beenden umleiten nach 10 umleitungen zulässig.
+Die Clientanwendung sollte die Umleitung nach 10 Umleitungen beenden.
   
 ## <a name="see-also"></a>Siehe auch
 

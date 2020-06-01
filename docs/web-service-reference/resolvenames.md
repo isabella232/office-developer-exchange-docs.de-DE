@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c85207e1-1315-443b-94ec-2b58f405076b
-description: Das ResolveNames-Element definiert eine Anforderung zum Auflösen von Names nicht eindeutig.
-ms.openlocfilehash: e97b6e78d99cf8ffa3d680907916882d40963f59
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ResolveNames-Element definiert eine Anforderung zum Auflösen eindeutiger Namen.
+ms.openlocfilehash: 9c36a5f84451f91e90a8e7148cf384b5cacd7f29
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831172"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467949"
 ---
 # <a name="resolvenames"></a>ResolveNames
 
-Das **ResolveNames** -Element definiert eine Anforderung zum Auflösen von Names nicht eindeutig. 
+Das **ResolveNames** -Element definiert eine Anforderung zum Auflösen eindeutiger Namen. 
   
 ```XML
 <ResolveNames ReturnFullContactData="" SearchScope="" ContactDataShape="">
@@ -39,56 +39,56 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**ReturnFullContactData** <br/> |Beschreibt, ob der vollständige Kontaktdetails für Öffentliche Kontakte für einen aufgelösten Namen in der Antwort zurückgegeben werden. Dieses Attribut ist für Öffentliche Kontakte erforderlich. Dieser Wert wirkt sich nicht private Kontakte und private Verteilerlisten, für die [ItemId](itemid.md) immer zurückgegeben wird.  <br/> |
-|**SearchScope** <br/> |Gibt die Reihenfolge und ResolveNames Suchbereich.  <br/> |
-|ContactDataShape  <br/> |Identifiziert den Eigenschaftensatz für Kontakte zurückgegeben werden. Dieses Attribut wurde in Exchange Server 2010 Service Pack 2 (SP2) eingeführt.  <br/> |
+|**ReturnFullContactData** <br/> |Beschreibt, ob die vollständigen Kontaktdetails für öffentliche Kontakte für einen aufgelösten Namen in der Antwort zurückgegeben werden. Dieses Attribut ist für öffentliche Kontakte erforderlich. Dieser Wert wirkt sich nicht auf private Kontakte und private Verteilerlisten aus, für die [ItemID](itemid.md) immer zurückgegeben wird.  <br/> |
+|**SearchScope** <br/> |Gibt die Reihenfolge und den Bereich für eine ResolveNames-Suche an.  <br/> |
+|ContactDataShape  <br/> |Gibt den Eigenschaftensatz an, der für Kontakte zurückgegeben wurde. Dieses Attribut wurde in Exchange Server 2010 Service Pack 2 (SP2) eingeführt.  <br/> |
    
-#### <a name="returnfullcontactdata-attribute-values"></a>Attributwerte ReturnFullContactData
+#### <a name="returnfullcontactdata-attribute-values"></a>ReturnFullContactData-Attributwerte
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|True  <br/> |Vollständige Kontaktdetails für Öffentliche Kontakte werden zurückgegeben.  <br/> |
-|False  <br/> |Vollständige Kontaktdetails für Öffentliche Kontakte werden nicht zurückgegeben.  <br/> |
+|Wahr  <br/> |Die vollständigen Kontaktdetails für öffentliche Kontakte werden zurückgegeben.  <br/> |
+|Falsch  <br/> |Die vollständigen Kontaktdetails für öffentliche Kontakte werden nicht zurückgegeben.  <br/> |
    
 #### <a name="searchscope-attribute-values"></a>SearchScope-Attributwerte
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|ActiveDirectory-Umgebung  <br/> |Nur der Active Directory-Verzeichnisdienst wird durchsucht.  <br/> |
-|ActiveDirectoryContacts  <br/> |Active Directory wird zuerst durchsucht, und klicken Sie dann die Kontakten in der [ParentFolderIds](parentfolderids.md) -Eigenschaft angegebenen Ordnern durchsucht werden.  <br/> |
-|Kontakte  <br/> |Es werden nur der Ordner für Kontakte, die von der [ParentFolderIds](parentfolderids.md) -Eigenschaft identifiziert werden durchsucht.  <br/> |
-|ContactsActiveDirectory  <br/> |Ordner, die von der [ParentFolderIds](parentfolderids.md) -Eigenschaft identifiziert werden für Kontakte werden zuerst durchsucht, und klicken Sie dann auf Active Directory durchsucht wird.  <br/> |
+|ActiveDirectory  <br/> |Es wird nur der Active Directory-Verzeichnisdienst durchsucht.  <br/> |
+|ActiveDirectoryContacts  <br/> |Active Directory wird zuerst durchsucht, und dann werden die in der [ParentFolderIds](parentfolderids.md) -Eigenschaft angegebenen Kontaktordner durchsucht.  <br/> |
+|Kontakte  <br/> |Nur die Kontaktordner, die von der [ParentFolderIds](parentfolderids.md) -Eigenschaft identifiziert werden, werden durchsucht.  <br/> |
+|ContactsActiveDirectory  <br/> |Kontaktordner, die von der [ParentFolderIds](parentfolderids.md) -Eigenschaft identifiziert werden, werden zuerst durchsucht, und dann wird Active Directory durchsucht.  <br/> |
    
-#### <a name="contactdatashape-attribute-values"></a>Attributwerte ContactDataShape
+#### <a name="contactdatashape-attribute-values"></a>ContactDataShape-Attributwerte
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|IdOnly  <br/> |Die Kontaktelement Identifier-Eigenschaft wird zurückgegeben.  <br/> |
-|Standard  <br/> |Die Standardgruppe von Eigenschaften für Kontaktelemente wird zurückgegeben. Weitere Informationen finden Sie unter [Antwort Shapes in der Exchange-Webdienste](http://msdn.microsoft.com/library/1c5ddc0a-c4e0-4488-8972-7543b5b464df%28Office.15%29.aspx).  <br/> |
-|AllProperties  <br/> |Der AllProperties Satz von Eigenschaften für Kontaktelemente werden zurückgegeben. Weitere Informationen finden Sie unter [Antwort Shapes in der Exchange-Webdienste](http://msdn.microsoft.com/library/1c5ddc0a-c4e0-4488-8972-7543b5b464df%28Office.15%29.aspx).  <br/> |
+|IdOnly  <br/> |Die Eigenschaft Contact Item Identifier wird zurückgegeben.  <br/> |
+|Standard  <br/> |Die Standardeinstellungen für Kontaktelemente werden zurückgegeben. Weitere Informationen finden Sie unter [Response Shapes in EWS](https://msdn.microsoft.com/library/1c5ddc0a-c4e0-4488-8972-7543b5b464df%28Office.15%29.aspx).  <br/> |
+|AllProperties  <br/> |Die allproperties-Gruppe der Kontaktelement Eigenschaften wird zurückgegeben. Weitere Informationen finden Sie unter [Response Shapes in EWS](https://msdn.microsoft.com/library/1c5ddc0a-c4e0-4488-8972-7543b5b464df%28Office.15%29.aspx).  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ParentFolderIds](parentfolderids.md) <br/> |Enthält ein Array mit den Kontaktordner-IDs, die durchsucht werden würde, wenn das **SearchScope** -Attribut auf ActiveDirectoryContacts, Kontakte oder ContactsActiveDirectory festgelegt ist. Das Array ParentFolderIds kann nur einen einzigen Kontaktordner Bezeichner enthalten. Wenn das **ParentFolderIds** -Element nicht vorhanden ist, wird der Standardordner Kontakte durchsucht.  <br/> Die Ordner-ID kann für Stellvertretungszugriff verwendet werden.  <br/> Active Directory durchsucht werden mithilfe von Zugriffssteuerungslisten (ACLs) ausgeführt. Einige Benutzer haben möglicherweise nicht die Rechte für einige Active Directory-Objekte finden Sie unter.  <br/> Dieses Element ist optional.  <br/> |
-|[UnresolvedEntry](unresolvedentry.md) <br/> |Enthält den Namen des einen Kontakt oder Verteilerliste aus, zu beheben.  <br/> |
+|[ParentFolderIds](parentfolderids.md) <br/> |Enthält ein Array von Kontaktordner Bezeichnern, die durchsucht werden, wenn das **SearchScope** -Attribut auf ActiveDirectoryContacts, Contacts oder ContactsActiveDirectory festgelegt ist. Das ParentFolderIds-Array kann nur einen einzelnen Kontaktordner Bezeichner enthalten. Wenn das **ParentFolderIds** -Element nicht vorhanden ist, wird der Standardordner Kontakte durchsucht.  <br/> Die Ordner-ID kann für den Stellvertretungszugriff verwendet werden.  <br/> Active Directory suchen werden mithilfe von Zugriffssteuerungslisten (Access Control Lists, ACLs) ausgeführt. Einige Benutzer verfügen möglicherweise nicht über die Rechte zum Anzeigen einiger Active Directory-Objekte.  <br/> Dieses Element ist optional.  <br/> |
+|[UnresolvedEntry](unresolvedentry.md) <br/> |Enthält den Namen eines Kontakts oder einer Verteilerliste, die aufgelöst werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -105,5 +105,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Verwenden von namensauflösung](http://msdn.microsoft.com/library/9257fb07-89d2-46eb-b885-e2173fe6fbc1%28Office.15%29.aspx)
+[Verwenden der Namensauflösung](https://msdn.microsoft.com/library/9257fb07-89d2-46eb-b885-e2173fe6fbc1%28Office.15%29.aspx)
 

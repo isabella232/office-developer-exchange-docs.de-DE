@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 22aebf31-d9f4-4e03-bbff-c675409518d1
-description: Das ContainsSubjectOrBodyStrings-Element gibt an, die Zeichenfolgen, die im Text oder den Betreff der eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende angezeigt werden müssen.
-ms.openlocfilehash: f577e7d26bb7d82ea1017f720e1d3a30892e2ef1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ContainsSubjectOrBodyStrings-Element gibt die Zeichenfolgen an, die entweder im Textkörper oder im Betreff eingehender Nachrichten angezeigt werden müssen, damit die Bedingung oder Ausnahme zutrifft.
+ms.openlocfilehash: 6f9c7862912632e7e86a0b704e760c7fd0f5f14c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757659"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466822"
 ---
 # <a name="containssubjectorbodystrings"></a>ContainsSubjectOrBodyStrings
 
-Das **ContainsSubjectOrBodyStrings** -Element gibt an, die Zeichenfolgen, die im Text oder den Betreff der eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende angezeigt werden müssen. 
+Das **ContainsSubjectOrBodyStrings** -Element gibt die Zeichenfolgen an, die entweder im Textkörper oder im Betreff eingehender Nachrichten angezeigt werden müssen, damit die Bedingung oder Ausnahme zutrifft. 
   
 ```XML
 <ContainsSubjectOrBodyStrings>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[String](string.md) <br/> |Stellt eine Zeichenfolge, die im Text oder den Betreff der eingehenden Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende vorhanden sein muss.  <br/> |
+|[String](string.md) <br/> |Stellt eine Zeichenfolge dar, die entweder im Textkörper oder im Betreff eingehender Nachrichten angezeigt werden muss, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -55,17 +55,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

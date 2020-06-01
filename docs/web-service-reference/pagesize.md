@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 61c87c48-eed0-45b5-b5a7-c9da0dec71ec
-description: Das PageSize-Element enthält die Anzahl der Elemente in einer einzelnen Seite für ein Suchergebnis zurückgegeben werden soll.
-ms.openlocfilehash: 53b82729f86ad91d187e1cdfc0fa410ce8ddf16c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PageSize-Element enthält die Anzahl der Elemente, die auf einer einzelnen Seite für ein Suchergebnis zurückgegeben werden sollen.
+ms.openlocfilehash: efdca920d3ff0da5b10d3a343e86dfe9a2c7ed30
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830684"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467732"
 ---
 # <a name="pagesize"></a>PageSize
 
-Das **PageSize** -Element enthält die Anzahl der Elemente in einer einzelnen Seite für ein Suchergebnis zurückgegeben werden soll. 
+Das **PageSize** -Element enthält die Anzahl der Elemente, die auf einer einzelnen Seite für ein Suchergebnis zurückgegeben werden sollen. 
   
 ```XML
 <PageSize></PageSize>
@@ -38,25 +38,25 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[SearchMailboxes](searchmailboxes.md) | [GetNonIndexableItemDetails](getnonindexableitemdetails.md)
+[SearchMailboxes](searchmailboxes.md)  |  [GetNonIndexableItemDetails](getnonindexableitemdetails.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **PageSize** -Elements ist die Anzahl der Elemente, die in eine einzelne Seite eines Resultsets Suche zurückgegeben. 
+Der Textwert des **PageSize** -Elements ist die Anzahl der Elemente, die auf einer einzelnen Seite eines Suchergebnissatzes zurückgegeben werden. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

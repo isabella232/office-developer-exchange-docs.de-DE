@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ad0849f8-5158-4a23-9c36-a49f5be1d1e1
-description: Das TransitionsGroups-Element stellt ein Array von Zeitzone Übergang Gruppen.
-ms.openlocfilehash: 546dd3c96187bf9f1ebf574b37b689e26e3af997
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das TransitionsGroups-Element stellt ein Array von Zeit Zonen Übergangs Gruppen dar.
+ms.openlocfilehash: 35244e122ee31045359afd0833459bbb94fd0aa1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839264"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467410"
 ---
 # <a name="transitionsgroups"></a>TransitionsGroups
 
-Das **TransitionsGroups** -Element stellt ein Array von Zeitzone Übergang Gruppen. 
+Das **TransitionsGroups** -Element stellt ein Array von Zeit Zonen Übergangs Gruppen dar. 
   
 ```XML
 <TransitionsGroups>
@@ -42,25 +42,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[TransitionsGroup](transitionsgroup.md) <br/> |Stellt ein Array von Zeitzone Übergänge.  <br/> |
+|[Transitiongroup](transitionsgroup.md) <br/> |Stellt ein Array von Zeit Zonen Übergängen dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StartTimeZone-Zeitzone](starttimezone.md) <br/> |Definiert die Zeitzone für die Startzeit eines [CalendarItem](calendaritem.md) oder [MeetingRequest](meetingrequest.md).  <br/> |
-|[EndTimeZone](endtimezone.md) <br/> |Definiert die Zeitzone für die Endzeit eines [CalendarItem](calendaritem.md) oder [MeetingRequest](meetingrequest.md).  <br/> |
-|[Zeitzonendefinition](timezonedefinition.md) <br/> |Definiert eine Zeitzone.  <br/> |
+|[StartTimeZone](starttimezone.md) <br/> |Definiert die Zeitzone für die Startzeit einer [CalendarItem](calendaritem.md) -oder [MeetingRequest](meetingrequest.md)-Start Zeit.  <br/> |
+|[EndTimeZone](endtimezone.md) <br/> |Definiert die Zeitzone für die Endzeit einer [CalendarItem](calendaritem.md) -oder [MeetingRequest](meetingrequest.md)-Datei.  <br/> |
+|[TimeZoneDefinition](timezonedefinition.md) <br/> |Definiert eine Zeitzone.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 57310ba7-f411-43fa-a096-acef0481afec
-description: Das Unterhaltung (GetConversationItemsResponseMessageType)-Element darstellt, einem einzelnen Gespräch in einer Antwort GetConversationItems zurückgegeben.
-ms.openlocfilehash: 413ace449002b72cedc03a973ca2f56d46b6b6de
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Conversation (GetConversationItemsResponseMessageType)-Element stellt eine einzelne Unterhaltung dar, die in einer GetConversationItems-Antwort zurückgegeben wird.
+ms.openlocfilehash: e729a9525030ec1e7abc2ffcb40fc92812b17001
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757689"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466773"
 ---
 # <a name="conversation-conversationresponsetype"></a>Unterhaltung (ConversationResponseType)
 
-Das **Unterhaltung** (GetConversationItemsResponseMessageType)-Element darstellt, einem einzelnen Gespräch in einer Antwort **GetConversationItems** zurückgegeben. 
+Das **Conversation** (GetConversationItemsResponseMessageType)-Element stellt eine einzelne Unterhaltung dar, die in einer **GetConversationItems** -Antwort zurückgegeben wird. 
   
 ```XML
 <Conversation />
@@ -36,7 +36,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
    
 #### 
 
-|**Value**|**Beschreibung**|
+|**Wert**|**Beschreibung**|
 |:-----|:-----|
 |||
    
@@ -52,15 +52,15 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |:-----|:-----|
 |||
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="example"></a>Beispiel
 
-Microsoft.Win32.RegistryKey#4
+Microsoft. Win32. RegistryKey # 4
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 ||
 |:-----|

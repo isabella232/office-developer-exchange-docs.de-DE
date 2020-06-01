@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 59b0b2db-a0ae-4162-a2cb-5f37f42fe872
-description: Das SearchPreviewItem-Element gibt die Element-Vorschau für eine discoverysuche an.
-ms.openlocfilehash: 46b9d6049f856ce6e93b9e49e07516ec4b52d932
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SearchPreviewItem-Element gibt die Elementvorschau für eine Ermittlungs Suche an.
+ms.openlocfilehash: ab48353b0ffaf4bc3b9409f1a620d145bffc7a13
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831308"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466934"
 ---
 # <a name="searchpreviewitem"></a>SearchPreviewItem
 
-Das **SearchPreviewItem** -Element gibt die Element-Vorschau für eine discoverysuche an. 
+Das **SearchPreviewItem** -Element gibt die Elementvorschau für eine Ermittlungs Suche an. 
   
 ```XML
 <SearchPreviewItem>
@@ -56,23 +56,23 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[ID (ItemIdType)](id-itemidtype.md) | [Postfach (PreviewItemMailboxType)](mailbox-previewitemmailboxtype.md) | [ParentId](parentid.md) | [ItemClass](itemclass.md) | [UniqueHash](uniquehash.md) | [SortValue](sortvalue.md) | [OwaLink](owalink.md)  |  [ Absender (String)](sender-string.md) | [ToRecipients (ArrayOfSmtpAddressType)](torecipients-arrayofsmtpaddresstype.md) | [CcRecipients](ccrecipients.md) | [BccRecipients](bccrecipients.md) | [CreatedTime](createdtime.md) | [ReceivedTime](receivedtime.md)  |  [SentTime](senttime.md)  |  [Betreff](subject.md) | [Größe (long)](size-long.md) | [Vorschau](preview-ex15websvcsotherref.md) | [Wichtigkeit](importance.md) | [Lesen](read.md) | [HasAttachment](hasattachment.md) | [ExtendedProperties () NonEmptyArrayOfExtendedPropertyType)](extendedproperties-nonemptyarrayofextendedpropertytype.md)
+[ID (itemidtype)](id-itemidtype.md)  |  [Postfach (PreviewItemMailboxType)](mailbox-previewitemmailboxtype.md)  |  [Übergeordnete-Nr](parentid.md)  |  [ItemClass](itemclass.md)  |  [UniqueHash](uniquehash.md)  |  [Sortvalue](sortvalue.md)  |  [OwaLink](owalink.md)  |  [Absender (Zeichenfolge)](sender-string.md)  |  [Torecipients (ArrayOfSmtpAddressType)](torecipients-arrayofsmtpaddresstype.md)  |  [CcRecipients](ccrecipients.md)  |  [BccRecipients](bccrecipients.md)  |  [Erstellt am](createdtime.md)  |  Empfangs Zeitteile [ReceivedTime](receivedtime.md)  |  [Sentzeit](senttime.md)  |  [Betreff](subject.md)  |  [Größe (lang)](size-long.md)  |  [Vorschau anzeigen](preview-ex15websvcsotherref.md)  |  [Wichtigkeit](importance.md)  |  [Lesen Sie](read.md)  |  [Hatanlage](hasattachment.md)  |  [ExtendedProperties (NonEmptyArrayOfExtendedPropertyType)](extendedproperties-nonemptyarrayofextendedpropertytype.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [Elemente (ArrayOfSearchPreviewItemsType)](items-arrayofsearchpreviewitemstype.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

@@ -8,23 +8,23 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 8bcb0411-58b0-4e37-b97e-00c07dcbecb1
-description: Das SettingName-Element gibt den Namen einer Einstellung in der Antwort.
-ms.openlocfilehash: 9bf7c8197693bc6887a99ffcbeb2240e1f4c3b20
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SettingName-Element stellt den Namen einer Einstellung in der Antwort dar.
+ms.openlocfilehash: d492b82b7385d6403f15c08356db5d0503792d54
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831468"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466724"
 ---
 # <a name="settingname-soap"></a>SettingName (SOAP)
 
-Das **SettingName** -Element gibt den Namen einer Einstellung in der Antwort. 
+Das **SettingName** -Element stellt den Namen einer Einstellung in der Antwort dar. 
   
 ```XML
 <SettingName/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -41,22 +41,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserSettingError (SOAP)](usersettingerror-soap.md) <br/> |Stellt einen Fehler, der beim Abrufen einer benutzereinstellung zurückgegeben wird.  <br/> |
-|[DomainSettingError (SOAP)](domainsettingerror-soap.md) <br/> |Stellt einen Fehler, die beim Abrufen einer domäneneinstellung dar. Dies stellt einen Fehler aus einer Anforderung **GetDomainSettings** dar.  <br/> |
+|[UserSettingError (SOAP)](usersettingerror-soap.md) <br/> |Stellt einen Fehler dar, der beim Abrufen einer Benutzereinstellung zurückgegeben wird.  <br/> |
+|[DomainSettingError (SOAP)](domainsettingerror-soap.md) <br/> |Stellt einen Fehler dar, der beim Abrufen einer Domäneneinstellung aufgetreten ist. Dies stellt einen Fehler aus einer **GetDomainSettings** -Anforderung dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert des Elements **SettingName** stellt den Namen einer Einstellung in einer Antwort. 
+Der Wert des **SettingName** -Elements stellt den Namen einer Einstellung in einer Antwort dar. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 

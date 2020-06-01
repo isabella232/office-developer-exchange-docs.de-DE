@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 9f35f29f-204d-4178-9d8e-ba83af3afe43
-description: Das MdbDN-Element darstellt, den distinguished Name der Postfachdatenbank an.
-ms.openlocfilehash: d7910cdca2e2013f6b8432c4af606c0f8354a6bb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MdbDN-Element stellt den Distinguished Name der Postfachdatenbank dar.
+ms.openlocfilehash: 6eb1ddbd7ebf725b38ddc9bc70434c918aaca39f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830389"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468390"
 ---
 # <a name="mdbdn-pox"></a>MdbDN (POX)
 
-Das **MdbDN** -Element darstellt, den distinguished Name der Postfachdatenbank an. 
+Das **MdbDN** -Element stellt den Distinguished Name der Postfachdatenbank dar. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,11 +50,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt den distinguished Name der Postfachdatenbank an.
+Der Wert Text stellt den Distinguished Name der Postfachdatenbank dar.
   
 ## <a name="see-also"></a>Siehe auch
 

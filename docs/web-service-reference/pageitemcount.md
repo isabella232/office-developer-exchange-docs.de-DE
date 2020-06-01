@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4bc48bfb-a9ae-4e87-97a6-f3e0c9c89bc1
-description: Das PageItemCount-Element gibt die Anzahl der Seiten, die in eine Suche Ergebnis Paginierung zurückgegeben.
-ms.openlocfilehash: 89c054186c014f9e2fc4f8116b032df91e1549b3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PageItemCount-Element gibt die Anzahl der Seiten an, die in einer Suchergebnis-Paginierung zurückgegeben werden.
+ms.openlocfilehash: e8e98168212c104763f5cf94847e06d5ec93534d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830680"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467032"
 ---
 # <a name="pageitemcount"></a>PageItemCount
 
-Das **PageItemCount** -Element gibt die Anzahl der Seiten, die in eine Suche Ergebnis Paginierung zurückgegeben. 
+Das **PageItemCount** -Element gibt die Anzahl der Seiten an, die in einer Suchergebnis-Paginierung zurückgegeben werden. 
   
 ```XML
 <PageItemCount></PageItemCount>
 ```
 
- **ganze Zahl**
+ **Integer**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,19 +42,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **PageItemCount** -Elements ist die Anzahl der Seiten, die in eine Suche Ergebnis Paginierung zurückgegeben. 
+Der Textwert des **PageItemCount** -Elements ist die Anzahl der Seiten, die in einer Suchergebnis-Paginierung zurückgegeben werden. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

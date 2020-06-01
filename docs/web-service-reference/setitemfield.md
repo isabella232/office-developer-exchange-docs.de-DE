@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 85284fcb-bd1e-4fda-9dab-cb4cd637cd5b
-description: Das SetItemField-Element stellt eine Aktualisierung auf eine einzelne Eigenschaft eines Elements in einem UpdateItem Vorgang dar.
-ms.openlocfilehash: bd3e5bca3d61325ef3f218c5ada535346247f391
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das setitemfield-Element stellt eine Aktualisierung auf eine einzelne Eigenschaft eines Elements in einer UpdateItem-Operation dar.
+ms.openlocfilehash: b4606eb7d94b9d0c4c5bcd5a2b56d73a4d4270cb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353798"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467424"
 ---
 # <a name="setitemfield"></a>SetItemField
 
-Das Element **SetItemField** stellt eine Aktualisierung auf eine einzelne Eigenschaft eines Elements in einem [UpdateItem Vorgang](updateitem-operation.md)dar.
+Das **setitemfield** -Element stellt eine Aktualisierung auf eine einzelne Eigenschaft eines Elements in einer [UpdateItem-Operation](updateitem-operation.md)dar.
   
 ```xml
 <SetItemField>
@@ -248,35 +248,35 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifiziert die Eigenschaften von URI häufig verwiesen wird.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Einzelne Elemente eines Wörterbuchs identifiziert.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Bezeichnet die extended MAPI-Eigenschaften festlegen.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member eines Wörterbuchs.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert erweiterte MAPI-Eigenschaften, die festgelegt werden sollen.  <br/> |
 |[Element](item.md) <br/> |Stellt ein Element im Exchange-Informationsspeicher dar.  <br/> |
-|[Meldung](message-ex15websvcsotherref.md) <br/> |Stellt eine E-mail-Nachricht Exchange zu aktualisieren.  <br/> |
-|[CalendarItem](calendaritem.md) <br/> |Stellt ein Element des Exchange-Kalender zu aktualisieren.  <br/> |
-|[Contact](contact.md) <br/> |Stellt ein Exchange-Kontaktelement zu aktualisieren.  <br/> |
-|[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste aktualisieren.  <br/> |
-|[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechungsnachricht zu aktualisieren.  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |So aktualisieren Sie eine Besprechungsanfrage darstellt.  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Antwort auf Besprechungsanfrage aktualisieren.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Aktualisieren einen Besprechungsabsage darstellt.  <br/> |
-|[Aufgabe](task.md) <br/> |Stellt eine Aufgabe zu aktualisieren.  <br/> |
+|[Nachricht](message-ex15websvcsotherref.md) <br/> |Stellt eine zu aktualisierenden Exchange-e-Mail-Nachricht dar.  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Stellt ein zu aktualisieres Exchange-Kalenderelement dar.  <br/> |
+|[Kontakt](contact.md) <br/> |Stellt ein zu aktualisieres Exchange-Kontaktelement dar.  <br/> |
+|[DistributionList](distributionlist.md) <br/> |Stellt eine zu aktualisierende Verteilerliste dar.  <br/> |
+|[MeetingMessage](meetingmessage.md) <br/> |Stellt eine zu aktualisierende Besprechungs Meldung dar.  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanfrage zum Aktualisieren dar.  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort dar, die aktualisiert werden soll.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Stellt einen Besprechungs Abbruch dar, der aktualisiert werden soll.  <br/> |
+|[Aufgabe](task.md) <br/> |Stellt eine Aufgabe dar, die aktualisiert werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Updates (Element)](updates-item.md) <br/> |Enthält eine Reihe von Elementen, definieren anfügen, festlegen und Löschen von Änderungen an Elementeigenschaften.  <br/> |
+|[Updates (Element)](updates-item.md) <br/> |Enthält eine Gruppe von Elementen, die Append-, festlegen-und DELETE-Änderungen an Elementeigenschaften definieren.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

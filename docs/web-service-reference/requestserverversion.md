@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: af4032d5-42b3-463e-9d0a-8236d78e5b75
-description: Das RequestServerVersion-Element enthält die Versionsinformationen, die die Schemaversion als Ziel für eine Anforderung identifiziert.
-ms.openlocfilehash: 0092d90a5fc479363f6d774b793c7148ad29f21c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RequestServerVersion-Element enthält die Versions Verwaltungsinformationen, die die Schemaversion identifiziert, die für eine Anforderung als Ziel festgelegt werden soll.
+ms.openlocfilehash: c4ae59a03c812d21153e4338734185d933d914ec
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831143"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468320"
 ---
 # <a name="requestserverversion"></a>RequestServerVersion
 
-Das **RequestServerVersion** -Element enthält die Versionsinformationen, die die Schemaversion als Ziel für eine Anforderung identifiziert. 
+Das **RequestServerVersion** -Element enthält die Versions Verwaltungsinformationen, die die Schemaversion identifiziert, die für eine Anforderung als Ziel festgelegt werden soll. 
   
 ```XML
 <RequestServerVersion Version=""/>
 ```
 
- **ExchangeVersionType**
+ **Einfachen exchangeversiontype**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -36,19 +36,19 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|Version  <br/> |Beschreibt die Version als Ziel für die Anforderung. Dieses Attribut ist erforderlich, wenn die Zielversion Server eine Version von Exchange, beginnend mit Exchange Server 2010 ist.  <br/> |
+|Version  <br/> |Beschreibt die Zielversion für die Anforderung. Dieses Attribut ist erforderlich, wenn die Zielserver Version eine Version von Exchange ist, die mit Exchange Server 2010 beginnt.  <br/> |
    
 #### <a name="version-attribute-values"></a>Version-Attributwerte
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Exchange2007  <br/> |Ziel der ursprünglich freigegebenen Version von Exchange 2007-Schemadateien.  <br/> |
-|Exchange2007_SP1  <br/> |Ziel: die Schemadateien für Exchange 2007 Service Pack 1 (SP1), Exchange 2007 Service Pack 2 (SP2) und Exchange 2007 Service Pack 3 (SP3).  <br/> |
-|Exchange2010  <br/> |Ziel: die Schemadateien für Exchange 2010 ein.  <br/> |
-|Exchange2010_SP1  <br/> |Ziel: die Schemadateien für Exchange 2010 Service Pack 1 (SP1).  <br/> |
-|Exchange2010_SP2  <br/> |Ziel: die Schemadateien für Exchange 2010 Service Pack 2 (SP2) und Exchange 2010 Service Pack 3 (SP3).  <br/> |
-|Exchange2013  <br/> |Ziel: die Schemadateien für Exchange 2013.  <br/> |
-|Exchange2013_SP1  <br/> |Ziel: die Schemadateien für Exchange 2013 Service Pack 1 (SP1).  <br/> |
+|Exchange2007  <br/> |Richten Sie die Schemadateien für die erste Version von Exchange 2007 ein.  <br/> |
+|Exchange2007_SP1  <br/> |Richten Sie die Schemadateien für Exchange 2007 Service Pack 1 (SP1), Exchange 2007 Service Pack 2 (SP2) und Exchange 2007 Service Pack 3 (SP3) aus.  <br/> |
+|Exchange2010  <br/> |Richten Sie die Schemadateien für Exchange 2010 ein.  <br/> |
+|Exchange2010_SP1  <br/> |Richten Sie die Schemadateien für Exchange 2010 Service Pack 1 (SP1) ein.  <br/> |
+|Exchange2010_SP2  <br/> |Richten Sie die Schemadateien für Exchange 2010 Service Pack 2 (SP2) und Exchange 2010 Service Pack 3 (SP3) aus.  <br/> |
+|Exchange2013  <br/> |Richten Sie die Schemadateien für Exchange 2013 ein.  <br/> |
+|Exchange2013_SP1  <br/> |Richten Sie die Schemadateien für Exchange 2013 Service Pack 1 (SP1) ein.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -56,17 +56,17 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Das Element **RequestServerVersion** befindet sich die SOAP-Header. 
+Das **RequestServerVersion** -Element befindet sich im SOAP-Header. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -78,5 +78,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Versioning Anfragen](http://msdn.microsoft.com/library/76877b0a-d2e5-4c74-9295-7b445a41d46a%28Office.15%29.aspx)
+[Anforderungen für die Versionsverwaltung](https://msdn.microsoft.com/library/76877b0a-d2e5-4c74-9295-7b445a41d46a%28Office.15%29.aspx)
 

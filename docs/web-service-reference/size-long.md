@@ -1,5 +1,5 @@
 ---
-title: Größe (Long)
+title: Größe (lang)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 96514301-9195-420f-ba17-5f512116ee46
-description: Das Größe-Element gibt die Gesamtgröße der einen oder mehrere Postfachelemente.
-ms.openlocfilehash: d69cb88b7fcbafc2fbd573acba8218152d6d1784
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Size-Element gibt die Gesamtgröße eines oder mehrerer Postfachelemente an.
+ms.openlocfilehash: 622752688dd41d6e42f1f405ea1dd389eff1ee98
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831501"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468033"
 ---
-# <a name="size-long"></a>Größe (Long)
+# <a name="size-long"></a>Größe (lang)
 
-Das **Größe** -Element gibt die Gesamtgröße der einen oder mehrere Postfachelemente. 
+Das **size** -Element gibt die Gesamtgröße eines oder mehrerer Postfachelemente an. 
   
 ```XML
 <Size></Size>
 ```
 
- **lange**
+ **Long**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -38,23 +38,23 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[KeywordStat](keywordstat.md) | [MailboxStat](mailboxstat.md) | [SearchMailboxesResult](searchmailboxesresult.md) | [SearchPreviewItem](searchpreviewitem.md)
+[KeywordStat](keywordstat.md)  |  [MailboxStat](mailboxstat.md)  |  [SearchMailboxesResult](searchmailboxesresult.md)  |  [SearchPreviewItem](searchpreviewitem.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des Elements **Größe** ist die Gesamtgröße der einen oder mehrere Postfachelemente. 
+Der Textwert des **size** -Elements ist die Gesamtgröße eines oder mehrerer Postfachelemente. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

@@ -1,5 +1,5 @@
 ---
-title: Month (Element Serie)
+title: Month (Elementserie)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d2352001-f959-436a-afd5-a0a07b8ae02a
-description: Month-Element beschreibt den Monat, wenn eine jährliche Terminserie erfolgt.
-ms.openlocfilehash: 64c76283deec70cb6996c9f424b689a9c87f2890
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Month-Element beschreibt den Monat, in dem ein jährliches wiederkehrendes Element auftritt.
+ms.openlocfilehash: d881c617374bc9545552ad77f2f2b355efdf2359
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830478"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468635"
 ---
-# <a name="month-item-recurrence"></a>Month (Element Serie)
+# <a name="month-item-recurrence"></a>Month (Elementserie)
 
-**Month** -Element beschreibt den Monat, wenn eine jährliche Terminserie erfolgt. 
+Das **Month** -Element beschreibt den Monat, in dem ein jährliches wiederkehrendes Element auftritt. 
   
 ```xml
 <Month/>
@@ -45,11 +45,11 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[AbsoluteYearlyRecurrence](absoluteyearlyrecurrence.md) <br/> |Stellt ein jährliches Serienmuster dar.  <br/> |
-|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |Wird ein relativer jährliches Serienmuster beschrieben.  <br/> |
+|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |Beschreibt ein relatives jährliches Serienmuster.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses Element:
+Ein Textwert ist erforderlich. Im folgenden sind die möglichen Text Werte für dieses Element angegeben:
   
 - Januar
     
@@ -59,7 +59,7 @@ Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses El
     
 - April
     
-- Mai
+- Kann
     
 - Juni
     
@@ -75,15 +75,15 @@ Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses El
     
 - Dezember
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

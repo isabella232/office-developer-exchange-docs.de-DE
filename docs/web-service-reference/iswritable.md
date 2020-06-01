@@ -1,5 +1,5 @@
 ---
-title: IsWritable
+title: Isschreibbar
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d4af8eee-7001-4a8e-b9bd-d14882f2406b
-description: Das IsWritable-Element gibt an, ob die zugrunde liegende Kontakt oder eine Active Directory-Empfänger geschrieben werden kann.
-ms.openlocfilehash: 03f258d01ecfc12dfa4e09ac88f4a75340d2acf3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IsWriteable-Element gibt an, ob der zugrunde liegende Kontakt oder Active Directory Empfänger in geschrieben werden kann.
+ms.openlocfilehash: 96075adc1772027456f8829eee43bdc734644c09
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830158"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467571"
 ---
-# <a name="iswritable"></a>IsWritable
+# <a name="iswritable"></a>Isschreibbar
 
-Das **IsWritable** -Element gibt an, ob die zugrunde liegende Kontakt oder eine Active Directory-Empfänger geschrieben werden kann. 
+Das **IsWriteable** -Element gibt an, ob der zugrunde liegende Kontakt oder Active Directory Empfänger in geschrieben werden kann. 
   
 ```XML
 <IsWritable> true | false </IsWritable>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -38,13 +38,13 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Zuweisung (PersonaAttributionType)](attribution-personaattributiontype.md)
+[Attribution (PersonaAttributionType)](attribution-personaattributiontype.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **IsWritable** -Element gibt an, dass der Kontakt oder die Active Directory-Objekt für den Schreibzugriff verfügbar ist. Der Wert **false** gibt an, dass der Kontakt oder die Active Directory-Objekt nicht für den Schreibzugriff verfügbar ist. 
+Der Textwert **true** für das **isschreibbar** -Element gibt an, dass das Kontakt-oder Active Directory Objekt für den Schreibzugriff verfügbar ist. Der Wert **false** gibt an, dass das Kontakt-oder Active Directory Objekt für den Schreibzugriff nicht verfügbar ist. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -1,5 +1,5 @@
 ---
-title: OriginalRecipients
+title: Element originalrecipients
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,14 +12,14 @@ api_type:
 - schema
 ms.assetid: e4af86a5-85af-4239-8055-e29f0acf77c1
 description: Das Element OriginalRecipients stellt eine Liste von E-mail-Adressen der Empfänger der ersten Nachricht.
-ms.openlocfilehash: 8f99368409dbfb5ac798b691be65c7fd64f32660
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 7385b1fd62313ee09c94cd04f3f669215e6cd497
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830665"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467179"
 ---
-# <a name="originalrecipients"></a>OriginalRecipients
+# <a name="originalrecipients"></a>Element originalrecipients
 
 Das Element **OriginalRecipients** stellt eine Liste von E-mail-Adressen der Empfänger der ersten Nachricht. 
   
@@ -50,15 +50,15 @@ Keine.
 |:-----|:-----|
 |[MessageTrackingReport](messagetrackingreport.md) <br/> |Enthält eine Nachricht, die in einem [GetMessageTrackingReport-Vorgang](getmessagetrackingreport-operation.md)zurückgegeben wird.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

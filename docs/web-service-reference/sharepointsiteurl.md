@@ -1,5 +1,5 @@
 ---
-title: "' SharePointSiteUrl '"
+title: SharePointSiteUrl
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: ITPro
@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: de9a7e43-518e-49aa-9826-f54bab4279a3
-description: Das Element ' SharePointSiteUrl ' enthält den Uniform Resource Locator (URL) der SharePoint-Website, die mit dem websitepostfach verknüpft ist.
-ms.openlocfilehash: 34f9a04ef8b0f46bb14ec467b0fdd7db8882430e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SharePointSiteURL-Element enthält die URL (Uniform Resource Locator) der SharePoint-Website, die mit dem websitepostfach verknüpft ist.
+ms.openlocfilehash: 461ca904e9a050d20b9e067cb40875939608c101
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831473"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467305"
 ---
-# <a name="sharepointsiteurl"></a>' SharePointSiteUrl '
+# <a name="sharepointsiteurl"></a>SharePointSiteUrl
 
-Das Element **' SharePointSiteUrl '** enthält den Uniform Resource Locator (URL) der SharePoint-Website, die mit dem websitepostfach verknüpft ist. 
+Das **SharePointSiteURL** -Element enthält die URL (Uniform Resource Locator) der SharePoint-Website, die mit dem websitepostfach verknüpft ist. 
   
 ```XML
 <SharePointSiteURL></SharePointSiteURL>
 ```
 
-**string**
+**Zeichenfolge**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -43,21 +43,21 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des Elements **' SharePointSiteUrl '** ist die URL der SharePoint-Website, die mit dem websitepostfach verknüpft ist. 
+Der Textwert des **SharePointSiteURL** -Elements ist die URL der SharePoint-Website, die mit dem websitepostfach verknüpft ist. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

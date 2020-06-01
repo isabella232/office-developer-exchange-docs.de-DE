@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 041b3d48-8f43-47f3-869f-72b66bef372a
-description: Das MessageClassifications-Element darstellt, die Nachrichtenklassifikationen, die auf eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende gekennzeichnet sein müssen.
-ms.openlocfilehash: 402377907efbc9bb63d875f3f66b314dfc4b788d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MessageClassifications-Element stellt die Nachrichtenklassifikationen dar, die für eingehende Nachrichten gestempelt werden müssen, damit die Bedingung oder Ausnahme zutrifft.
+ms.openlocfilehash: 63481aa8903c4e9637870130eb9154118471c3b0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830471"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467970"
 ---
 # <a name="messageclassifications"></a>MessageClassifications
 
-Das **MessageClassifications** -Element darstellt, die Nachrichtenklassifikationen, die auf eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende gekennzeichnet sein müssen. 
+Das **MessageClassifications** -Element stellt die Nachrichtenklassifikationen dar, die für eingehende Nachrichten gestempelt werden müssen, damit die Bedingung oder Ausnahme zutrifft. 
   
 ```XML
 <MessageClassifications>
@@ -42,7 +42,7 @@ Keine
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[String](string.md) <br/> |Stellt eine Nachrichtenklassifikation an.  <br/> |
+|[String](string.md) <br/> |Stellt eine Nachrichtenklassifikation dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -55,17 +55,17 @@ Keine
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -1,5 +1,5 @@
 ---
-title: Synchronisierungsstatus (base64Binary)
+title: Von "SyncState (base64Binary)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 89650cd4-c790-4a37-b5e5-46a57501e100
-description: Das Synchronisierungsstatus-Element gibt den Synchronisierungsstatus einer Unterhaltung.
-ms.openlocfilehash: 18fb4fe60085c9ae2f84adc0d4a6df514302d759
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das von "SyncState-Element gibt den Synchronisierungsstatus einer Unterhaltung an.
+ms.openlocfilehash: 85c525176931b66354ebdd8873673f04c6a722f3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839153"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468138"
 ---
-# <a name="syncstate-base64binary"></a>Synchronisierungsstatus (base64Binary)
+# <a name="syncstate-base64binary"></a>Von "SyncState (base64Binary)
 
-Das **Synchronisierungsstatus** -Element gibt den Synchronisierungsstatus einer Unterhaltung. 
+Das **von "SyncState** -Element gibt den Synchronisierungsstatus einer Unterhaltung an. 
   
 ```XML
 <SyncState></SyncState>
@@ -38,23 +38,23 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Unterhaltung (ConversationRequestType)](conversation-conversationrequesttype.md) | [Unterhaltung (ConversationResponseType)](conversation-conversationresponsetype.md)
+Unter [Haltung (ConversationRequestType)](conversation-conversationrequesttype.md)  |  Unter [Haltung (ConversationResponseType)](conversation-conversationresponsetype.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **Synchronisierungsstatus** -Element wird der Synchronisierungsstatus für eine Unterhaltung. 
+Der Textwert des **von "SyncState** -Elements ist der Synchronisierungs Zustand für eine Unterhaltung. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |false  <br/> |

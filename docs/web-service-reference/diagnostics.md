@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: fecea440-970a-49da-9796-534ca470cbd6
-description: Das Diagnose-Element enthält Timing und Leistung, die für die berichterstellung in einem Rechenzentrum verwendet wird.
-ms.openlocfilehash: 2b9cac54a683967ec274b8681fb9a0c8a844205e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Diagnostics-Element enthält Informationen zu Timing und Leistung, die für die Berichterstellung in einem Datencenter verwendet werden.
+ms.openlocfilehash: 9eb46ef7ceb877372aff9b029190af8c8d8115cd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757970"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467837"
 ---
 # <a name="diagnostics"></a>Diagnose
 
-Das **Diagnose** -Element enthält Timing und Leistung, die für die berichterstellung in einem Rechenzentrum verwendet wird. 
+Das **Diagnostics** -Element enthält Informationen zu Timing und Leistung, die für die Berichterstellung in einem Datencenter verwendet werden. 
   
 ```XML
 <Diagnostics>
@@ -43,30 +43,30 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[String](string.md) <br/> |Enthält eine Zeichenfolge, die von Elementen, Kontakte, Aufgaben und Unterhaltungen verwendet wird.  <br/> |
+|[String](string.md) <br/> |Enthält eine Zeichenfolge, die von Elementen, Kontakten, Aufgaben und Unterhaltungen verwendet wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen Anforderung [FindMessageTrackingReport Vorgang](findmessagetrackingreport-operation.md) .  <br/> |
+|[FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [FindMessageTrackingReport-Vorgangs](findmessagetrackingreport-operation.md) Anforderung.  <br/> |
 |[GetMessageTrackingReportResponse](getmessagetrackingreportresponse.md) <br/> |Enthält die Antwort für den [GetMessageTrackingReport-Vorgang](getmessagetrackingreport-operation.md).  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7b348d63-6a7d-45f4-9562-5c42243d63a5
-description: Das DetailedSuggestionsWindow-Element gibt die Zeitspanne, die ausführliche Informationen zum vorgeschlagenen Besprechungszeiten abgefragt wird.
-ms.openlocfilehash: 8a3af0178d0c96b50f4dd641716a9f7a7be8f7a2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DetailedSuggestionsWindow-Element gibt die Zeitspanne an, die nach detaillierten Informationen zu vorgeschlagenen Besprechungszeiten abgefragt wird.
+ms.openlocfilehash: 45d582f2642c0e3d8f6330b09946230c8842618d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757966"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467844"
 ---
 # <a name="detailedsuggestionswindow"></a>DetailedSuggestionsWindow
 
-Das **DetailedSuggestionsWindow** -Element gibt die Zeitspanne, die ausführliche Informationen zum vorgeschlagenen Besprechungszeiten abgefragt wird. 
+Das **DetailedSuggestionsWindow** -Element gibt die Zeitspanne an, die nach detaillierten Informationen zu vorgeschlagenen Besprechungszeiten abgefragt wird. 
   
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md) 
 - [SuggestionsViewOptions](suggestionsviewoptions.md) 
@@ -47,27 +47,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StartTime](starttime.md) <br/> |Stellt den Anfang des Zeitraums ausführliche Informationen zum vorgeschlagenen Besprechungszeiten abgefragt.  <br/> |
-|[EndTime](endtime.md) <br/> |Stellt das Ende des Zeitraums ausführliche Informationen zum vorgeschlagenen Besprechungszeiten abgefragt.  <br/> |
+|[StartTime](starttime.md) <br/> |Stellt den Anfang der abgefragten Zeitspanne dar, um detaillierte Informationen zu vorgeschlagenen Besprechungszeiten zu erhalten.  <br/> |
+|[EndTime](endtime.md) <br/> |Stellt das Ende der abgefragten Zeitspanne dar, um detaillierte Informationen zu vorgeschlagenen Besprechungszeiten zu erhalten.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Enthält die Optionen zum Abrufen von Besprechungsinformationen Vorschlag.  <br/> Es folgt der XPath-Ausdruck für dieses Element:  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
+|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Enthält die Optionen zum Abrufen von Informationen zu Besprechungs Vorschlägen.  <br/> Es folgt der XPath für dieses Element:  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element ist nicht erforderlich.
   
 > [!NOTE]
-> Das Schema, das dieses Element beschreibt befindet sich im Verzeichnis /EWS/ des Computers, auf dem MicrosoftExchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist. 
+> Das Schema, das dieses Element beschreibt, befindet sich im Verzeichnis/EWS/"aus des Computers mit Microsoft Exchange Server 2007, auf dem die Client Zugriffs-Serverrolle installiert ist. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -75,5 +75,5 @@ Dieses Element ist nicht erforderlich.
 ## <a name="see-also"></a>Siehe auch
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)
-- [Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

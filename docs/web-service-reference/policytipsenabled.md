@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 16409652-21e4-4bd3-9373-67e1882236b4
-description: Das PolicyTipsEnabled-Element gibt an, ob richtlinientipps aktiviert sind.
-ms.openlocfilehash: 683131a5cefd6757faf582324f312b01fd9ddb33
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PolicyTipsEnabled-Element gibt an, ob Richtlinien Tipps aktiviert sind.
+ms.openlocfilehash: 26a527022d60dd4b98f70c2b3bf020b649066057
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830838"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468516"
 ---
 # <a name="policytipsenabled"></a>PolicyTipsEnabled
 
-Das **PolicyTipsEnabled** -Element gibt an, ob richtlinientipps aktiviert sind. 
+Das **PolicyTipsEnabled** -Element gibt an, ob Richtlinien Tipps aktiviert sind. 
   
 ```XML
 <PolicyTipsEnabled> true | false </PolicyTipsEnabled>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,19 +42,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **PolicyTipsEnabled** -Element gibt an, dass Tipps zu Richtlinien für ein Postfach aktiviert sind. Der Wert **false** gibt an, dass richtlinientipps nicht für ein Postfach aktiviert sind. 
+Der Textwert **true** für das **PolicyTipsEnabled** -Element gibt an, dass Richtlinien Tipps für ein Postfach aktiviert sind. Der Wert **false** gibt an, dass Richtlinien Tipps für ein Postfach nicht aktiviert sind. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

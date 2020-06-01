@@ -1,5 +1,5 @@
 ---
-title: SPA (POX)
+title: Spa (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: fba018d5-0c65-4e1b-9767-d1ce8b356278
-description: Das SPA-Element gibt an, ob die gesicherte Kennwortauthentifizierung (SPA) erforderlich ist.
-ms.openlocfilehash: 1fb0f3bb40e64be89eae7dfc208d51387f532191
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Spa-Element gibt an, ob die sichere Kennwortauthentifizierung (Spa) erforderlich ist.
+ms.openlocfilehash: cf57b3a6046b1b9b030b7cae81381189eee92c1c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831533"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467641"
 ---
-# <a name="spa-pox"></a>SPA (POX)
+# <a name="spa-pox"></a>Spa (POX)
 
-Das **SPA** -Element gibt an, ob die gesicherte Kennwortauthentifizierung (SPA) erforderlich ist. 
+Das **Spa** -Element gibt an, ob die sichere Kennwortauthentifizierung (Spa) erforderlich ist. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -28,7 +28,7 @@ Das **SPA** -Element gibt an, ob die gesicherte Kennwortauthentifizierung (SPA) 
   
 [Protokoll (POX)](protocol-pox.md)
   
-[SPA (POX)](spa-pox.md)
+[Spa (POX)](spa-pox.md)
   
 ```xml
 <SPA/>
@@ -50,15 +50,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert gibt an, ob SPA erforderlich ist. Der Textwert ist **auf**, SPA erforderlich.
+Der Textwert gibt an, ob Spa erforderlich ist. Wenn der Textwert **on**ist, ist Spa erforderlich.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn dieses Element nicht vorhanden ist, wird der Standardwert auf **aktiviert**festgelegt.
+Wenn dieses Element nicht vorhanden ist, wird der Standardwert **auf ein**festgelegt.
   
 ## <a name="see-also"></a>Siehe auch
 

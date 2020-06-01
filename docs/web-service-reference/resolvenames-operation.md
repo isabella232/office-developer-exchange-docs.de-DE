@@ -11,35 +11,35 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb
-description: Die ResolveNames Vorgang löst keine eindeutige e-Mail-Adressen und Anzeigenamen.
-ms.openlocfilehash: 8443cf834dfdf104daeaaa92fdee3742c3fa3719
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Mit dem ResolveNames-Vorgang werden Mehrdeutige e-Mail-Adressen und Anzeigenamen aufgelöst.
+ms.openlocfilehash: 51728addddd2bfb9d35b874ae8c11e83a4c8629b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831162"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468278"
 ---
 # <a name="resolvenames-operation"></a>ResolveNames-Vorgang
 
-Die **ResolveNames** Vorgang löst keine eindeutige e-Mail-Adressen und Anzeigenamen. 
+Mit dem **ResolveNames** -Vorgang werden Mehrdeutige e-Mail-Adressen und Anzeigenamen aufgelöst. 
   
-## <a name="using-the-resolvenames-operation"></a>Verwenden des Vorgangs ResolveNames
+## <a name="using-the-resolvenames-operation"></a>Verwenden des ResolveNames-Vorgangs
 
-Dieser Vorgang kann Aliase überprüfen und beheben Anzeigenamen auf den entsprechenden Postfachbenutzer verwendet werden. Wenn mehrdeutige Namen vorhanden ist, enthält die Antwort auf einen Vorgang **ResolveNames** Informationen zu jedem Postfachbenutzer, damit die Namen die Clientanwendung aufgelöst werden kann. 
+Dieser Vorgang kann verwendet werden, um Aliase zu überprüfen und Anzeigenamen in den entsprechenden Postfachbenutzer aufzulösen. Wenn keine eindeutigen Namen vorhanden sind, enthält die **ResolveNames** -Vorgangs Antwortinformationen zu den einzelnen Postfachbenutzern, sodass die Clientanwendung die Namen auflösen kann. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Antwort ResolveNames gibt maximal 100 Kandidaten zurück. Die 100 Kandidaten, die zurückgegeben werden, sind die ersten 100, die bei der Suche Konflikte auftreten.
+Die ResolveNames-Antwort gibt maximal 100 Kandidaten zurück. Die 100 Kandidaten, die zurückgegeben werden, sind die ersten 100, die im Nachschlagevorgang gefunden werden.
   
-E-Mail-Adressen mit vorangestellter routing Typen, wie die SMTP- oder Sip, werden in einem mehrwertigen Array gespeichert. Der **ResolveNames** Vorgang ausführt eine teilweise Übereinstimmung mit jeder Wert eines Arrays aus, wenn Sie den Routingtyp am Anfang der aufgelöste Name, beispielsweise "sip:User1@Contoso.com" hinzufügen. Wenn Sie eine Routingtyp nicht angeben, wird **ResolveNames** standardmäßig auf den Routingtyp von smtp, es zu einer primären SMTP-Adresse-Eigenschaft entspricht und nicht durchsucht das mehrwertige Array. 
+E-Mail-Adressen mit vorfixierten Routing Typen wie SMTP oder SIP werden in einem mehrwertigen Array gespeichert. Der **ResolveNames** -Vorgang führt eine partielle Übereinstimmung mit jedem Wert dieses Arrays aus, wenn Sie den Routingtyp am Anfang des nicht aufgelösten namens hinzufügen, beispielsweise "SIP:user1@contoso.com". Wenn Sie keinen Routingtyp angeben, wird **ResolveNames** standardmäßig mit dem Routingtyp SMTP, mit einer primären SMTP-Adress Eigenschaft übereinstimmen und nicht mit dem mehrwertigen Array durchsuchen. 
   
-In einer einzelnen Anforderung kann nur ein mehrdeutiger Name angegeben werden. Active Directory wird zuerst durchsucht, und dann Kontaktordner des Benutzers gesucht wird. Aufgelösten Einträge aus Kontaktordner eines Benutzers haben eine ungleich Null- **ItemId** -Eigenschaft, die dann in einer GetItem-Anforderung verwendet werden kann. Wenn es sich um die ID einer privaten Verteilerliste handelt, kann sie in einem [der ExpandDL-Vorgang](expanddl-operation.md)verwendet werden. Wenn das **ReturnFullContactData** -Attribut auf **true**festgelegt ist, gibt Active Directory-Einträge mit dem Vorgang **ResolveNames** gefunden zusätzliche Eigenschaften zurück, die einem [Kontakt](contact.md)zu beschreiben. Das Attribut **ReturnFullContactData** wirkt sich nicht auf die Daten, die für Kontakte und Private zurückgegeben wird Verteilerlisten aus Kontaktordner des Benutzers. 
+In einer einzelnen Anforderung kann nur ein eindeutiger Name angegeben werden. Active Directory wird zuerst durchsucht, und dann wird der Kontaktordner des Benutzers durchsucht. Aufgelöste Einträge aus dem Kontaktordner eines Benutzers weisen eine **ItemID** -Eigenschaft ungleich NULL auf, die dann in einer GetItem-Anforderung verwendet werden kann. Wenn es sich um die ID einer privaten Verteilerliste handelt, kann Sie in einem ExpandDL- [Vorgang](expanddl-operation.md)verwendet werden. Wenn das **ReturnFullContactData** -Attribut auf **true**festgelegt ist, werden Active Directory Einträge, die mit dem **ResolveNames** -Vorgang gefunden werden, zusätzliche Eigenschaften zurückgegeben, die einen [Kontakt](contact.md)beschreiben. Das **ReturnFullContactData** -Attribut wirkt sich nicht auf die Daten aus, die für Kontakte und private Verteilerlisten aus dem Kontaktordner des Benutzers zurückgegeben werden. 
   
-## <a name="resolvenames-request-example"></a>ResolveNames anforderungsbeispiel
+## <a name="resolvenames-request-example"></a>ResolveNames-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung **ResolveNames** veranschaulicht den Eintrag des Benutzers zu beheben.
+Das folgende Beispiel einer **ResolveNames** -Anforderung zeigt, wie Sie den Eintrag des Benutzers auflösen.
   
 ### <a name="code"></a>Code
 
@@ -48,10 +48,10 @@ Im folgenden Beispiel wird eine Anforderung **ResolveNames** veranschaulicht den
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <ResolveNames xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+    <ResolveNames xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                   ReturnFullContactData="true">
       <UnresolvedEntry>User2</UnresolvedEntry>
     </ResolveNames>
@@ -59,20 +59,20 @@ Im folgenden Beispiel wird eine Anforderung **ResolveNames** veranschaulicht den
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Die Antwort auf diese Anforderung werden alle Einträge zurückgegeben, die beginnen mit "Jo" oder "Mi". Die zurückgegebenen Elemente sind öffentliche Postfächer, öffentliche und private Verteilerlisten und Kontakte.
+Die Antwort auf diese Anforderung gibt alle Einträge zurück, die mit "Jo" oder "Mi" beginnen. Bei den zurückgegebenen Elementen handelt es sich um öffentliche Postfächer, öffentliche und private Verteilerlisten und Kontakte.
   
 > [!NOTE]
-> Es werden nur Kontakte in den Standardordner für persönliche Kontakte durchsucht. 
+> Es werden nur Kontakte im Standardordner für persönliche Kontakte durchsucht. 
   
-Im folgenden sind die möglichen Ergebnisse für eine Anforderung **ResolveNames** : 
+Es folgen die möglichen Ergebnisse für eine **ResolveNames** -Anforderung: 
   
-- Antworten, die eine aufgelöste Entität nicht enthalten, gibt einen Attributwert **ResponseClass** **Fehler**gleich zurück. Das Element **MessageText** enthält " **keine Ergebnisse gefunden werden**."
+- Antworten, die keine aufgelöste Entität enthalten, geben einen **ResponseClass** -Attributwert zurück, der **Error**entspricht. Das **MessageText** -Element enthält " **keine Ergebnisse werden gefunden**".
     
-- Antworten mit einer einzelnen aufgelöst Entität gibt den Attributwert **ResponseClass** **Erfolg**gleich zurück.
+- Antworten, die eine einzelne aufgelöste Entität enthalten, geben einen **ResponseClass** -Attributwert zurück, der " **Success**" entspricht.
     
-- Antworten, die mehrere mögliche Entitäten enthalten, gibt einen Attributwert **ResponseClass** **Warnung**gleich zurück. In diesem Fall konnte die Entität nicht in eine eindeutige Identität aufgelöst werden. Das Element **MessageText** enthält "mehrere Ergebnisse gefunden werden." 
+- Antworten, die mehrere mögliche Entitäten enthalten, geben einen **ResponseClass** -Attributwert zurück, der der **Warnung**entspricht. In diesem Fall konnte die Entität nicht in eine eindeutige Identität aufgelöst werden. Das **MessageText** -Element enthält "mehrere Ergebnisse werden gefunden." 
     
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -82,11 +82,11 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [UnresolvedEntry](unresolvedentry.md)
     
-## <a name="successful-resolvenames-operation-response-example"></a>Erfolgreiche ResolveNames Vorgang antwortbeispiel
+## <a name="successful-resolvenames-operation-response-example"></a>Beispiel für erfolgreiche ResolveNames-Vorgangs Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **ResolveNames** . 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **ResolveNames** -Anforderung. 
   
 ### <a name="code"></a>Code
 
@@ -97,12 +97,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **Res
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <ResolveNamesResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <ResolveNamesResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:ResolveNamesResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -130,7 +130,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **Res
 </soap:Envelope>
 ```
 
-### <a name="successful-resolvenames-response-elements"></a>Erfolgreiche ResolveNames Antwortelemente
+### <a name="successful-resolvenames-response-elements"></a>Erfolgreiche ResolveNames-Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -144,7 +144,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [ResolutionSet](resolutionset.md)
+- [Resolutionset](resolutionset.md)
     
 - [Lösung](resolution.md)
     
@@ -154,25 +154,25 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
-- [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
+- [Routingtype (e-mailemailtype)](routingtype-emailaddresstype.md)
     
 - [MailboxType](mailboxtype.md)
     
-- [Contact](contact.md)
+- [Kontakt](contact.md)
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
 - [EmailAddresses](emailaddresses.md)
     
-- [Eintrag (EmailAddress)](entry-emailaddress.md)
+- [Eintrag (e-mailemail)](entry-emailaddress.md)
     
 - [ContactSource](contactsource.md)
     
-## <a name="resolvenames-operation-error-response"></a>ResolveNames Vorgang Fehlerantwort
+## <a name="resolvenames-operation-error-response"></a>Fehlerantwort des ResolveNames-Vorgangs
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine Anforderung **ResolveNames** . Durch den Versuch, einen Namen aufzulösen, der nicht aufgelöst werden kann, wird der Fehler verursacht. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **ResolveNames** -Anforderung. Der Fehler wird verursacht, indem versucht wird, einen Namen aufzulösen, der nicht aufgelöst werden kann. 
   
 ### <a name="code"></a>Code
 
@@ -183,12 +183,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine Anforderung **ResolveName
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <ResolveNamesResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <ResolveNamesResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:ResolveNamesResponseMessage ResponseClass="Error">
           <m:MessageText>No results were found.</m:MessageText>
@@ -201,7 +201,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine Anforderung **ResolveName
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
@@ -223,8 +223,8 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
 
 
 
-[Der ExpandDL-Vorgang](expanddl-operation.md)
+[ExpandDL-Vorgang](expanddl-operation.md)
 
 
-[Verwenden von namensauflösung](http://msdn.microsoft.com/library/9257fb07-89d2-46eb-b885-e2173fe6fbc1%28Office.15%29.aspx)
+[Verwenden der Namensauflösung](https://msdn.microsoft.com/library/9257fb07-89d2-46eb-b885-e2173fe6fbc1%28Office.15%29.aspx)
 

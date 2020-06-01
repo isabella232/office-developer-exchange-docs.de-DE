@@ -1,5 +1,5 @@
 ---
-title: DialString (UM-Webdienst)
+title: Wähl Dienst (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,28 +10,28 @@ api_name:
 api_type:
 - schema
 ms.assetid: d1e3cd23-48fe-4ebc-a5c5-2226d223f800
-description: Das DialString-Element enthält den Wert für die Rufnummer gewählt.
-ms.openlocfilehash: f27934fa73ead75ab50e99a79c01cb6a1062e3d8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das dialtype-Element enthält den Wert für die Telefonnummer, die gewählt werden soll.
+ms.openlocfilehash: 028ea789efabf49a64bc1d5022d9eb2d8df61c51
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757978"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467823"
 ---
-# <a name="dialstring-um-web-service"></a>DialString (UM-Webdienst)
+# <a name="dialstring-um-web-service"></a>Wähl Dienst (um-Webdienst)
 
-Das **DialString** -Element enthält den Wert für die Rufnummer gewählt. 
+Das **dialtype** -Element enthält den Wert für die Telefonnummer, die gewählt werden soll. 
   
-- [PlayOnPhone (UM-Webdienst)](playonphone-um-web-service.md) 
-- [DialString (UM-Webdienst)](dialstring-um-web-service.md) 
-- [PlayOnPhoneGreeting (UM-Webdienst)](playonphonegreeting-um-web-service.md) 
-- [DialString (UM-Webdienst)](dialstring-um-web-service.md)
+- [PlayOnPhone (um-Webdienst)](playonphone-um-web-service.md) 
+- [Wähl Dienst (um-Webdienst)](dialstring-um-web-service.md) 
+- [PlayOnPhoneGreeting (um-Webdienst)](playonphonegreeting-um-web-service.md) 
+- [Wähl Dienst (um-Webdienst)](dialstring-um-web-service.md)
   
 ```xml
 <dialString/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -48,26 +48,26 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PlayOnPhone (UM-Webdienst)](playonphone-um-web-service.md) <br/> |Definiert eine Anforderung an eine Nachricht an einem Telefon wiedergegeben werden sollen.  <br/> |
-|[PlayOnPhoneGreeting (UM-Webdienst)](playonphonegreeting-um-web-service.md) <br/> |Definiert eine Anforderung an eine Begrüßung an einem Telefon wiedergegeben werden sollen.  <br/> |
+|[PlayOnPhone (um-Webdienst)](playonphone-um-web-service.md) <br/> |Definiert eine Anforderung zum Wiedergeben einer Nachricht über ein Telefon.  <br/> |
+|[PlayOnPhoneGreeting (um-Webdienst)](playonphonegreeting-um-web-service.md) <br/> |Definiert eine Anforderung zum Abspielen einer Begrüßung auf einem Telefon.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der Textwert muss eine gültige DID-Nummer an enthalten.
+Ein Textwert ist erforderlich. Der Textwert muss eine gültige Wählnummer enthalten.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [PlayOnPhone (UM-Webdienst)](playonphone-um-web-service.md)  
-- [PlayOnPhone-Vorgang (UM-Webdienst)](playonphone-operation-um-web-service.md)  
-- [PlayOnPhoneGreeting (UM-Webdienst)](playonphonegreeting-um-web-service.md)  
-- [PlayOnPhoneGreeting-Vorgang (UM-Webdienst)](playonphonegreeting-operation-um-web-service.md)
+- [PlayOnPhone (um-Webdienst)](playonphone-um-web-service.md)  
+- [PlayOnPhone-Vorgang (um-Webdienst)](playonphone-operation-um-web-service.md)  
+- [PlayOnPhoneGreeting (um-Webdienst)](playonphonegreeting-um-web-service.md)  
+- [PlayOnPhoneGreeting-Vorgang (um-Webdienst)](playonphonegreeting-operation-um-web-service.md)
 

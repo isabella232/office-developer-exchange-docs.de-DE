@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d3901818-2640-4bed-aad8-21a61aee62a1
-description: Das Element StatusEvent stellt eine Benachrichtigung, dass keine neue Aktivität im Postfach aufgetreten ist.
-ms.openlocfilehash: e214918f9795e9e29061d4aac72ab144d2b24267
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das StatusEvent-Element stellt eine Benachrichtigung dar, dass keine neue Aktivität im Postfach aufgetreten ist.
+ms.openlocfilehash: 8158a47937a810be2ea22346384b4e61da56ac48
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831592"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468257"
 ---
 # <a name="statusevent"></a>StatusEvent
 
-Das Element **StatusEvent** stellt eine Benachrichtigung, dass keine neue Aktivität im Postfach aufgetreten ist. 
+Das **StatusEvent** -Element stellt eine Benachrichtigung dar, dass keine neue Aktivität im Postfach aufgetreten ist. 
   
 ```xml
 <StatusEvent>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Wasserzeichen](watermark.md) <br/> |Stellt das letzte gültige Wasserzeichen für ein Abonnement.  <br/> |
+|[Watermark](watermark.md) <br/> |Stellt das letzte gültige Wasserzeichen für ein Abonnement dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -50,25 +50,25 @@ Keine.
 |:-----|:-----|
 |[Benachrichtigung](notification-ex15websvcsotherref.md) <br/> |Enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **StatusEvent** -Element wird in einer Benachrichtigung für einen der folgenden Gründe zurückgegeben: 
+Das **StatusEvent** -Element wird aus einem der folgenden Gründe in einer Benachrichtigung zurückgegeben: 
   
-- Ein Pull-Client sendet eine Anforderung GetEvents auf einem Abonnement, das keine Aktivität verfügt.
+- Ein Pull-Client gibt eine GetEvents-Anforderung für ein Abonnement aus, das über keine Aktivität verfügt.
     
 - Ein Push-Client hat keine Ereignisse in der Warteschlange, wenn die [StatusFrequency](statusfrequency.md) erreicht wurde. 
     
-Das **StatusEvent**[Wasserzeichen](watermark.md) wird von einer Clientanwendung in die gleiche Weise wie das Ereignis Typ Wasserzeichen verwendet. Das Wasserzeichen für die **StatusEvent** ist jedoch nicht identisch mit der Wasserzeichen für andere Ereignisse verwendet. Angenommen, haben ein Abonnement von Ereignissen mit Wasserzeichen 1 aufweist, 2 und 3 und die Ereignisse, die erfolgreich in einer Benachrichtigung mitgeteilt wurden. Tritt auf ein Zeitraum der Inaktivität, und eine Anforderung **GetEvents** gesendet. Der Clientzugriffsserver (CAS) liefert ein Statusereignis und das letzte Wasserzeichen, 3, als die [PreviousWatermark](previouswatermark.md) und das aktuelle [Wasserzeichen](watermark.md).
+Das **StatusEvent**-[Wasserzeichen](watermark.md) wird von einer Clientanwendung auf die gleiche Weise wie die anderen Wasserzeichen von Ereignistypen verwendet. Das Wasserzeichen für das **StatusEvent** ist jedoch nicht identisch mit den Wasserzeichen, die für andere Ereignisse verwendet werden. Beispielsweise hat ein Abonnement Ereignisse mit Wasserzeichen 1, 2 und 3, und diese Ereignisse wurden in einer Benachrichtigung erfolgreich kommuniziert. Ein Zeitraum der Inaktivität tritt auf, und es wird eine **GetEvents** -Anforderung gesendet. Der Client Zugriffsserver (CAS) gibt ein Status Ereignis zurück und enthält das letzte Wasserzeichen, 3, als [PreviousWatermark](previouswatermark.md) und das aktuelle [Wasserzeichen](watermark.md).
   
-Das Wasserzeichen wird nicht in allen Fällen unverändert. Einträge werden für 30 Tage beibehalten. Um ein aktives Abonnement zu gewährleisten, aktualisiert die CAS in regelmäßigen Abständen die Wasserzeichen für Abonnementwarteschlangen. Die aktualisierten Wasserzeichen sind an Clients gesendet, um ein aktives Abonnement verwalten.
+Das Wasserzeichen wird nicht in allen Fällen gleich bleiben. Ereigniseinträge werden für 30 Tage beibehalten. Um ein aktives Abonnement beizubehalten, werden die Wasserzeichen für Abonnement Warteschlangen von der Zertifizierungsstellen regelmäßig aktualisiert. Die aktualisierten Wasserzeichen werden an Clients gesendet, um ein aktives Abonnement beizubehalten.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

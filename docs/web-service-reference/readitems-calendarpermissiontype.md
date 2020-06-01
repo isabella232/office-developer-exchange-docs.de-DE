@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bec01982-26a1-4373-b1e6-2e0c838d83c4
-description: Das ReadItems-Element gibt an, ob ein Benutzer über Berechtigungen zum Lesen von Elementen in einem Kalenderordner verfügt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 532b90c47cca7117a89d59e7012436268be9ebb0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ReadItems-Element gibt an, ob ein Benutzer über die Berechtigung zum Lesen von Elementen in einem Kalenderordner verfügt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: e040b643016781f9f890050f189191356f8d4f0b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830964"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468299"
 ---
 # <a name="readitems-calendarpermissiontype"></a>ReadItems (CalendarPermissionType)
 
-Das **ReadItems** -Element gibt an, ob ein Benutzer über Berechtigungen zum Lesen von Elementen in einem Kalenderordner verfügt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **ReadItems** -Element gibt an, ob ein Benutzer über die Berechtigung zum Lesen von Elementen in einem Kalenderordner verfügt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <ReadItems>None or TimeOnly or TimeAndSubjectAndLocation or FullDetails</ReadItems>
@@ -48,26 +48,26 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Die folgende Tabelle enthält die möglichen Werte für das **ReadItems** -Element. 
+In der folgenden Tabelle sind die möglichen Werte für das **ReadItems** -Element aufgeführt. 
   
-**ReadItems Elementwerte text**
+**ReadItems-Element Text Werte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Keine  <br/> |Gibt an, dass der Benutzer die Berechtigung zum Anzeigen von Elementen im Kalender nicht vorhanden ist.  <br/> |
-|TimeOnly  <br/> |Gibt an, dass der Benutzer die Berechtigung zum Anzeigen der nur Frei/Gebucht-Zeit im Kalender hat.  <br/> |
-|TimeAndSubjectAndLocation  <br/> |Gibt an, dass der Benutzer über die Berechtigung zum Anzeigen von Frei/Gebucht-Zeit in den Kalender und den Betreff und Ort von Terminen verfügt.  <br/> |
-|FullDetails  <br/> |Gibt an, dass der Benutzer die Berechtigung zum Anzeigen aller Elemente im Kalender, einschließlich der Frei/Gebucht-Zeit und Betreff, Ort und Details von Terminen verfügt.  <br/> |
+|Keine  <br/> |Gibt an, dass der Benutzer nicht über die Berechtigung zum Anzeigen von Elementen im Kalender verfügt.  <br/> |
+|Nur einmal  <br/> |Gibt an, dass der Benutzer berechtigt ist, nur die Frei/Gebucht-Zeit im Kalender anzuzeigen.  <br/> |
+|TimeAndSubjectAndLocation  <br/> |Gibt an, dass der Benutzer über die Berechtigung zum Anzeigen der Frei/Gebucht-Zeit im Kalender sowie Betreff und Ort von Terminen verfügt.  <br/> |
+|FullDetails  <br/> |Gibt an, dass der Benutzer über die Berechtigung zum Anzeigen aller Elemente im Kalender verfügt, einschließlich Frei/Gebucht-Zeit und Betreff, Ort und Details von Terminen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -79,5 +79,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Setting Folder-Level Permissions](http://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+[Setting Folder-Level Permissions](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

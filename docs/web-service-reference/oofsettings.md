@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8f37d174-db11-427c-bbed-fdde754a60c7
-description: Das OofSettings-Element enthält die Einstellungen von Office (OOF).
-ms.openlocfilehash: d71f068ff24af22da98b6b4de090ab26d3f74f26
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das OofSettings-Element enthält die Abwesenheit (Out of Office, OOF) Einstellungen.
+ms.openlocfilehash: c1b214fd8bfab5b7a82d41a5187cf6e0fc4ba79c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830649"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467193"
 ---
 # <a name="oofsettings"></a>OofSettings
 
-Das **OofSettings** -Element enthält die Einstellungen von Office (OOF). 
+Das **OofSettings** -Element enthält die Abwesenheit (Out of Office, OOF) Einstellungen. 
   
 [GetUserOofSettingsResponse](getuseroofsettingsresponse.md)
   
@@ -37,7 +37,7 @@ Das **OofSettings** -Element enthält die Einstellungen von Office (OOF).
 </OofSettings>
 ```
 
- **' UserOofSettings '**
+ **UserOofSettings**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -50,29 +50,29 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OofState](oofstate.md) <br/> |Enthält den Status des Benutzers OOF.  <br/> |
-|[ExternalAudience](externalaudience.md) <br/> |Enthält einen Wert, der bestimmt, denen externe OOF Testnachrichten gesendet werden.  <br/> |
-|[Dauer (' UserOofSettings ')](duration-useroofsettings.md) <br/> |Enthält die Dauer, für die der Status ABWESEND aktiviert ist, wenn das Element [OofState](oofstate.md) **geplant**festgelegt ist. Wenn das Element [OofState](oofstate.md) auf **aktiviert** oder **deaktiviert**festgelegt ist, wird der Wert der dieses Element ignoriert.  <br/> |
-|[InternalReply](internalreply.md) <br/> |Enthält die OOF Antwort an andere Benutzer in der Domäne oder der vertrauenswürdigen Domäne des Benutzers gesendet.  <br/> |
-|[ExternalReply](externalreply.md) <br/> |Enthält die OOF Antwort an Adressen außerhalb der Domäne oder der vertrauenswürdigen Domänen des Empfängers gesendet.  <br/> |
+|[OofState](oofstate.md) <br/> |Enthält den Abwesenheitsstatus des Benutzers.  <br/> |
+|[ExternalAudience](externalaudience.md) <br/> |Enthält einen Wert, der bestimmt, an wen externe Abwesenheitsnachrichten gesendet werden.  <br/> |
+|[Dauer (UserOofSettings)](duration-useroofsettings.md) <br/> |Enthält die Dauer, für die der Abwesenheitsstatus aktiviert ist, wenn das [OofState](oofstate.md) -Element auf **Scheduled**festgelegt ist. Wenn das [OofState](oofstate.md) -Element auf **aktiviert** oder **deaktiviert**festgelegt ist, wird der Wert dieses Elements ignoriert.  <br/> |
+|[InternalReply](internalreply.md) <br/> |Enthält die Abwesenheitsantwort, die an andere Benutzer in der Domäne des Benutzers oder der vertrauenswürdigen Domäne gesendet wurde.  <br/> |
+|[ExternalReply](externalreply.md) <br/> |Enthält die Abwesenheitsantwort, die an Adressen außerhalb der Domäne des Empfängers oder vertrauenswürdiger Domänen gesendet wurde.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUserOofSettingsResponse](getuseroofsettingsresponse.md) <br/> |Enthält die Antwort Ergebnisse und OOF-Einstellungen für einen Benutzer.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetUserOofSettingsResponse` <br/> |
+|[GetUserOofSettingsResponse](getuseroofsettingsresponse.md) <br/> |Enthält die Antwortergebnisse und die Abwesenheitseinstellungen für einen Benutzer.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserOofSettingsResponse` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

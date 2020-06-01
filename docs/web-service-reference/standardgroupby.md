@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 04a84f71-b7eb-44dc-ac2c-ed504b52c463
-description: Das StandardGroupBy-Element darstellt, den Standard gruppieren und Aggregieren von Mechanismen für einen gruppierten FindItem-Vorgang.
-ms.openlocfilehash: 8e2ec72a79ebafc2e5757d6dcebb27c0c53ec0b5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das StandardGroupBy-Element stellt die standardmäßigen Gruppierungs-und Aggregations Mechanismen für einen gruppierten FindItem-Vorgang dar.
+ms.openlocfilehash: 3e135feba322979de3d66d5a45d423654ccc9100
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831542"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467557"
 ---
 # <a name="standardgroupby"></a>StandardGroupBy
 
-Das **StandardGroupBy** -Element darstellt, den Standard gruppieren und Aggregieren von Mechanismen für einen gruppierten FindItem-Vorgang. 
+Das **StandardGroupBy** -Element stellt die standardmäßigen Gruppierungs-und Aggregations Mechanismen für einen gruppierten FindItem-Vorgang dar. 
   
 [FindItem](finditem.md)
   
@@ -50,21 +50,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DistinguishedGroupBy](distinguishedgroupby.md) <br/> |FindItem Abfragen bereit standard Gruppen.  <br/> |
+|[DistinguishedGroupBy](distinguishedgroupby.md) <br/> |Stellt Standardgruppierungen für FindItem-Abfragen bereit.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. **ConversationTopic**wird nur ein Wert, der für dieses Element verwendet werden kann. **ConversationTopic** gruppiert nach Nachricht: ConversationTopic und Aggregate auf Element: DateTimeReceived (maximal). Weitere Informationen über die Aggregation finden Sie unter [AggregateOn](aggregateon.md).
+Ein Textwert ist erforderlich. Der einzige Wert, der für dieses Element verwendet werden kann, ist **ConversationTopic**. **ConversationTopic** Gruppen nach Nachricht: ConversationTopic und Aggregate für Element: DateTimeReceived (Maximum). Weitere Informationen zur Aggregation finden Sie unter [AggregateOn](aggregateon.md).
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -78,5 +78,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [FindItem](finditem.md)
 
 
-[Finding Items](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+[Finding Items](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

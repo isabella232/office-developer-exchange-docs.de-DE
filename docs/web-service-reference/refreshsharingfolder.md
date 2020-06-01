@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 14571c28-effa-430a-802e-82fb99bafa7f
-description: Das RefreshSharingFolder-Element definiert eine Anforderung an den angegebenen lokalen Ordner zu aktualisieren. Es ist das Basiselement für den Vorgang RefreshSharingFolder.
-ms.openlocfilehash: b09e311d0ba38b0cdcc9fe0864ed3e2b0151b0fd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RefreshSharingFolder-Element definiert eine Anforderung zum Aktualisieren des angegebenen lokalen Ordners. Es ist das Basiselement für den RefreshSharingFolder-Vorgang.
+ms.openlocfilehash: 4454607fa2c3114cc7279fd7c30f8aee74707baa
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831043"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467928"
 ---
 # <a name="refreshsharingfolder"></a>RefreshSharingFolder
 
-Das **RefreshSharingFolder** -Element definiert eine Anforderung an den angegebenen lokalen Ordner zu aktualisieren. Es ist das Basiselement für den [RefreshSharingFolder-Vorgang](refreshsharingfolder-operation.md).
+Das **RefreshSharingFolder** -Element definiert eine Anforderung zum Aktualisieren des angegebenen lokalen Ordners. Es ist das Basiselement für den [RefreshSharingFolder-Vorgang](refreshsharingfolder-operation.md).
   
 ```xml
 <RefreshSharingFolder>   <SharingFolderId/></RefreshSharingFolder>
@@ -40,23 +40,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SharingFolderId](sharingfolderid.md) <br/> |Stellt den Bezeichner des lokalen Ordners in einer Dateifreigabe Beziehung dar.  <br/> |
+|[SharingFolderId](sharingfolderid.md) <br/> |Stellt den Bezeichner des lokalen Ordners in einer Freigabebeziehung dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle IIS-Verzeichnis, dass Hosts Exchange-Webdienste des Computers, auf dem Microsoft Exchange Server ausgeführt wird die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, in dem Exchange Webdienste des Computers gehostet wird, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

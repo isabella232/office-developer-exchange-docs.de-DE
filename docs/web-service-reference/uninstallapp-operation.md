@@ -7,44 +7,44 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7707aa6a-381d-43f7-a454-54f6343ed127
-description: Hier finden Sie Informationen über die UninstallApp EWS Vorgang.
-ms.openlocfilehash: 4f44224651993023336eef5540ec29b7f6a6e32e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier finden Sie Informationen zum UninstallApp-EWS-Vorgang.
+ms.openlocfilehash: 27931636ee13a251fb03fe804987d7b01a325230
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839296"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467151"
 ---
 # <a name="uninstallapp-operation"></a>UninstallApp-Vorgang
 
-Hier finden Sie Informationen zum **UninstallApp** EWS-Vorgang. 
+Hier finden Sie Informationen zum **UninstallApp** -EWS-Vorgang. 
   
-Der Vorgang **UninstallApp** deinstalliert eine Mail-app für Outlook. 
+Der **UninstallApp** -Vorgang deinstalliert eine Mail-App für Outlook. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-uninstallapp-operation"></a>Verwenden des UninstallApp-Vorgangs
 
-Die **UninstallApp** Operation hat ein Argument in der Anforderung, die die Mail-app zu deinstallieren identifiziert. 
+Der **UninstallApp** -Vorgang verwendet ein Argument in der Anforderung, das die zu deinstallierende Mail-App identifiziert. 
   
-### <a name="uninstallapp-operation-soap-headers"></a>UninstallApp Vorgang SOAP-Header
+### <a name="uninstallapp-operation-soap-headers"></a>SOAP-Header des UninstallApp-Vorgangs
 
-Der Vorgang **UninstallApp** können die SOAP-Header, die in der folgenden Tabelle aufgelistet sind. 
+Der **UninstallApp** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
    
-## <a name="uninstallapp-operation-request-example-uninstall-a-mail-app-in-a-mailbox"></a>UninstallApp Vorgang-anforderungsbeispiel: Deinstallieren eine Mail-app in einem Postfach
+## <a name="uninstallapp-operation-request-example-uninstall-a-mail-app-in-a-mailbox"></a>UninstallApp-Vorgangs Anforderungs Beispiel: Deinstallieren einer Mail-app in einem Postfach
 
-Im folgenden Beispiel wird eine **UninstallApp** Operation anfordern zeigt, wie auf eine Deinstallation einer Mail-app mithilfe des app-Bezeichners. Im app-Manifest, das von der [GetAppManifests-Vorgang](getappmanifests-operation.md)zurückgegeben wird, kann die app-ID gefunden werden.
+Im folgenden Beispiel einer **UninstallApp** -Vorgangsanforderung wird gezeigt, wie eine Mail-App mithilfe der APP-ID deinstalliert werden kann. Der APP-Bezeichner befindet sich im App-Manifest, das von der [GetAppManifests-Operation](getappmanifests-operation.md)zurückgegeben wird.
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -56,15 +56,15 @@ Im folgenden Beispiel wird eine **UninstallApp** Operation anfordern zeigt, wie 
 </soap:Envelope>
 ```
 
-Die Anforderung SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
   
 - [UninstallApp](uninstallapp.md)
     
 - [ID (Zeichenfolge)](id-string.md)
     
-## <a name="successful-uninstallapp-operation-response"></a>Erfolgreiche UninstallApp Vorgangsantwort
+## <a name="successful-uninstallapp-operation-response"></a>Erfolgreiche Reaktion des UninstallApp-Vorgangs
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **UninstallApp** Vorgang, um eine Mail-app zu deinstallieren. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **UninstallApp** -Vorgangsanforderung zum Deinstallieren einer Mail-app. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -75,30 +75,30 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **Uni
                            MajorBuildNumber="556" 
                            MinorBuildNumber="14" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <UninstallAppResponse ResponseClass="Success" 
-                            xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                            xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
       </UninstallAppResponse>
    </s:Body>
 </s:Envelope>
 ```
 
-Die Antwort SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Antworttext Körper enthält die folgenden Elemente:
   
 - [UninstallAppResponse](uninstallappresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-## <a name="uninstallapp-operation-error-response"></a>UninstallApp Vorgang Fehlerantwort
+## <a name="uninstallapp-operation-error-response"></a>Fehlerantwort des UninstallApp-Vorgangs
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine **UninstallApp** Vorgang Anforderung. Dies ist eine Antwort auf eine Anforderung an eine Mail-app zu deinstallieren, die bereits deinstalliert wurde. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **UninstallApp** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Deinstallieren einer Mail-APP, die bereits deinstalliert wurde. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -109,15 +109,15 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **UninstallApp** Vorgang 
                            MajorBuildNumber="556" 
                            MinorBuildNumber="14" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <UninstallAppResponse ResponseClass="Error" 
-                            xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                            xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <MessageText>Extension ID 1c50226d-04b5-4ab2-9fcd-42e236b59e4b can't be found.</MessageText>
          <ResponseCode>ErrorInternalServerError</ResponseCode>
          <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -126,7 +126,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **UninstallApp** Vorgang 
 </s:Envelope>
 ```
 
-Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
+Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
   
 - [UninstallAppResponse](uninstallappresponse.md)
     
@@ -136,7 +136,7 @@ Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Zusätzliche Fehlercodes, die für EWS generisch und für diese Operation spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
+Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

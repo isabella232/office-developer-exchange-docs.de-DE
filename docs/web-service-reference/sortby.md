@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3dc4ab23-26b0-42b3-8930-f1c7eefecdeb
-description: Das SortBy-Element enthält eine Item-Eigenschaft für die Sortierung der Suchergebnisses verwendet.
-ms.openlocfilehash: 357958e393ba9331d23ee48661f21e2afe00cf01
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SortBy-Element enthält eine Item-Eigenschaft, die zum Sortieren des Suchergebnisses verwendet wird.
+ms.openlocfilehash: cf2b1e633bc66e526028078833afade363e4c5e0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831518"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468397"
 ---
 # <a name="sortby"></a>SortBy
 
-Das **SortBy** -Element enthält eine Item-Eigenschaft für die Sortierung der Suchergebnisses verwendet. 
+Das **SortBy** -Element enthält eine Item-Eigenschaft, die zum Sortieren des Suchergebnisses verwendet wird. 
   
 ```XML
 <SortBy Order="">
@@ -35,29 +35,29 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|Order  <br/> |Der Textwert der **Reihenfolge** -Attribut ist die Sortierreihenfolge an. Ein Textwert der **Aufsteigend** gibt an, dass die Ergebnisse werden in aufsteigender Reihenfolge. Der Textwert **Absteigend** gibt an, dass die Ergebnisse in absteigender Reihenfolge.  <br/> |
+|Reihenfolge  <br/> |Der Textwert des **Order** -Attributs ist die Sortierreihenfolge. Der Textwert **Aufsteigend** gibt an, dass die Ergebnisse in aufsteigender Reihenfolge angezeigt werden. Der Textwert **Absteigend** gibt an, dass sich die Ergebnisse in absteigender Reihenfolge befinden.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[FieldURI](fielduri.md) | [IndexedFieldURI](indexedfielduri.md)
+[FieldURI](fielduri.md)  |  [IndexedFieldURI](indexedfielduri.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [SearchMailboxes](searchmailboxes.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

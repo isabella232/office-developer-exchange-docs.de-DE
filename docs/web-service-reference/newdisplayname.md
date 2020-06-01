@@ -1,5 +1,5 @@
 ---
-title: NewDisplayName
+title: Neuanzeigename
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4ac8fb39-6b92-4a88-bc13-17715ef6b63c
-description: Das NewDisplayName-Element enthält den aktualisierten Anzeigenamen einer instant messaging-Gruppe.
-ms.openlocfilehash: c440feb0cef3600d7ee0c2081da59af9df816841
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DisplayName-Element enthält den aktualisierten Anzeigenamen einer Sofortnachrichten Gruppe.
+ms.openlocfilehash: e3355cfd990eb9c00ccd514dcc914a3e3831b08f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830528"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44466843"
 ---
-# <a name="newdisplayname"></a>NewDisplayName
+# <a name="newdisplayname"></a>Neuanzeigename
 
-Das **NewDisplayName** -Element enthält den aktualisierten Anzeigenamen einer instant messaging-Gruppe. 
+Das **Display** Name-Element enthält den aktualisierten Anzeigenamen einer Sofortnachrichten Gruppe. 
   
 ```XML
 <NewDisplayName></NewDisplayName>
@@ -42,21 +42,21 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **NewDisplayName** -Elements ist die aktualisierte Anzeigename einer instant messaging-Gruppe. 
+Der Textwert des Elements " **neudisplayname** " ist der aktualisierte Anzeigename einer Sofortnachrichten Gruppe. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 
