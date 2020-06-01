@@ -1,5 +1,5 @@
 ---
-title: DictionaryValue
+title: Dictionaryvalue
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f4089381-826f-4f6a-8c6d-e51b910cbe6d
-description: Das DictionaryValue-Element gibt den Wörterbuchwert für eine Wörterbucheigenschaft.
-ms.openlocfilehash: 78e4cd7e5d3d8f18276912da56bafb44cda76753
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das dictionaryvalue-Element gibt den Wörterbuch Wert für eine Dictionary-Eigenschaft an.
+ms.openlocfilehash: 9bad9b8cc7aa80aa071c89a1c22609dc8d44f2b6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757986"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462143"
 ---
-# <a name="dictionaryvalue"></a><span data-ttu-id="5ba03-103">DictionaryValue</span><span class="sxs-lookup"><span data-stu-id="5ba03-103">DictionaryValue</span></span>
+# <a name="dictionaryvalue"></a><span data-ttu-id="4f205-103">Dictionaryvalue</span><span class="sxs-lookup"><span data-stu-id="4f205-103">DictionaryValue</span></span>
 
-<span data-ttu-id="5ba03-104">Das **DictionaryValue** -Element gibt den Wörterbuchwert für eine Wörterbucheigenschaft.</span><span class="sxs-lookup"><span data-stu-id="5ba03-104">The **DictionaryValue** element specifies the dictionary value for a dictionary property.</span></span> 
+<span data-ttu-id="4f205-104">Das **dictionaryvalue** -Element gibt den Wörterbuch Wert für eine Dictionary-Eigenschaft an.</span><span class="sxs-lookup"><span data-stu-id="4f205-104">The **DictionaryValue** element specifies the dictionary value for a dictionary property.</span></span> 
   
 ```xml
 <DictionaryValue>
@@ -30,46 +30,46 @@ ms.locfileid: "19757986"
 </DictionaryValue>
 ```
 
- <span data-ttu-id="5ba03-105">**UserConfigurationDictionaryObjectType**</span><span class="sxs-lookup"><span data-stu-id="5ba03-105">**UserConfigurationDictionaryObjectType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="5ba03-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="5ba03-106">Attributes and elements</span></span>
+ <span data-ttu-id="4f205-105">**UserConfigurationDictionaryObjectType**</span><span class="sxs-lookup"><span data-stu-id="4f205-105">**UserConfigurationDictionaryObjectType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="4f205-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="4f205-106">Attributes and elements</span></span>
 
-<span data-ttu-id="5ba03-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="5ba03-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="4f205-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="4f205-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="5ba03-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="5ba03-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="4f205-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="4f205-108">Attributes</span></span>
 
-<span data-ttu-id="5ba03-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="5ba03-109">None.</span></span>
+<span data-ttu-id="4f205-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="4f205-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="5ba03-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="5ba03-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="4f205-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="4f205-110">Child elements</span></span>
 
-|<span data-ttu-id="5ba03-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="5ba03-111">**Element**</span></span>|<span data-ttu-id="5ba03-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="5ba03-112">**Description**</span></span>|
+|<span data-ttu-id="4f205-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="4f205-111">**Element**</span></span>|<span data-ttu-id="4f205-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="4f205-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="5ba03-113">Typ (UserConfiguration)</span><span class="sxs-lookup"><span data-stu-id="5ba03-113">Type (UserConfiguration)</span></span>](type-userconfiguration.md) <br/> |<span data-ttu-id="5ba03-114">Gibt den Typ der Dictionary-Objekt.</span><span class="sxs-lookup"><span data-stu-id="5ba03-114">Specifies the dictionary object type.</span></span>  <br/> |
-|[<span data-ttu-id="5ba03-115">Wert (UserConfiguration)</span><span class="sxs-lookup"><span data-stu-id="5ba03-115">Value (UserConfiguration)</span></span>](value-userconfiguration.md) <br/> |<span data-ttu-id="5ba03-116">Gibt den Wert der Dictionary-Objekts als Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="5ba03-116">Specifies the dictionary object value as a string.</span></span>  <br/> |
+|[<span data-ttu-id="4f205-113">Typ (UserConfiguration)</span><span class="sxs-lookup"><span data-stu-id="4f205-113">Type (UserConfiguration)</span></span>](type-userconfiguration.md) <br/> |<span data-ttu-id="4f205-114">Gibt den Typ des Wörterbuchobjekts an.</span><span class="sxs-lookup"><span data-stu-id="4f205-114">Specifies the dictionary object type.</span></span>  <br/> |
+|[<span data-ttu-id="4f205-115">Wert (UserConfiguration)</span><span class="sxs-lookup"><span data-stu-id="4f205-115">Value (UserConfiguration)</span></span>](value-userconfiguration.md) <br/> |<span data-ttu-id="4f205-116">Gibt den Wert des Dictionary-Objekts als Zeichenfolge an.</span><span class="sxs-lookup"><span data-stu-id="4f205-116">Specifies the dictionary object value as a string.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="5ba03-117">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="5ba03-117">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="4f205-117">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="4f205-117">Parent elements</span></span>
 
-|<span data-ttu-id="5ba03-118">**Element**</span><span class="sxs-lookup"><span data-stu-id="5ba03-118">**Element**</span></span>|<span data-ttu-id="5ba03-119">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="5ba03-119">**Description**</span></span>|
+|<span data-ttu-id="4f205-118">**Element**</span><span class="sxs-lookup"><span data-stu-id="4f205-118">**Element**</span></span>|<span data-ttu-id="4f205-119">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="4f205-119">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="5ba03-120">Der Wörterbucheintrag</span><span class="sxs-lookup"><span data-stu-id="5ba03-120">DictionaryEntry</span></span>](dictionaryentry.md) <br/> |<span data-ttu-id="5ba03-121">Gibt den Inhalt einer einzelnen Wörterbuch Eintrag-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="5ba03-121">Specifies the contents of a single dictionary entry property.</span></span>  <br/> |
+|[<span data-ttu-id="4f205-120">DictionaryEntry</span><span class="sxs-lookup"><span data-stu-id="4f205-120">DictionaryEntry</span></span>](dictionaryentry.md) <br/> |<span data-ttu-id="4f205-121">Gibt den Inhalt einer einzelnen Wörterbucheintrags Eigenschaft an.</span><span class="sxs-lookup"><span data-stu-id="4f205-121">Specifies the contents of a single dictionary entry property.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="5ba03-122">Textwert</span><span class="sxs-lookup"><span data-stu-id="5ba03-122">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="4f205-122">Textwert</span><span class="sxs-lookup"><span data-stu-id="4f205-122">Text value</span></span>
 
-<span data-ttu-id="5ba03-123">Keine.</span><span class="sxs-lookup"><span data-stu-id="5ba03-123">None.</span></span>
+<span data-ttu-id="4f205-123">Keine.</span><span class="sxs-lookup"><span data-stu-id="4f205-123">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="5ba03-124">Hinweise</span><span class="sxs-lookup"><span data-stu-id="5ba03-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="4f205-124">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="4f205-124">Remarks</span></span>
 
-<span data-ttu-id="5ba03-125">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="5ba03-125">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="4f205-125">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="4f205-125">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="5ba03-126">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="5ba03-126">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="4f205-126">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="4f205-126">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="5ba03-127">Namespace</span><span class="sxs-lookup"><span data-stu-id="5ba03-127">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="5ba03-128">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="5ba03-128">Schema Name</span></span>  <br/> |<span data-ttu-id="5ba03-129">Schematypen</span><span class="sxs-lookup"><span data-stu-id="5ba03-129">Types schema</span></span>  <br/> |
-|<span data-ttu-id="5ba03-130">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="5ba03-130">Validation File</span></span>  <br/> |<span data-ttu-id="5ba03-131">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="5ba03-131">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="5ba03-132">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="5ba03-132">Can be Empty</span></span>  <br/> |<span data-ttu-id="5ba03-133">False</span><span class="sxs-lookup"><span data-stu-id="5ba03-133">False</span></span>  <br/> |
+|<span data-ttu-id="4f205-127">Namespace</span><span class="sxs-lookup"><span data-stu-id="4f205-127">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="4f205-128">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="4f205-128">Schema Name</span></span>  <br/> |<span data-ttu-id="4f205-129">Schematypen</span><span class="sxs-lookup"><span data-stu-id="4f205-129">Types schema</span></span>  <br/> |
+|<span data-ttu-id="4f205-130">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="4f205-130">Validation File</span></span>  <br/> |<span data-ttu-id="4f205-131">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="4f205-131">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="4f205-132">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="4f205-132">Can be Empty</span></span>  <br/> |<span data-ttu-id="4f205-133">False</span><span class="sxs-lookup"><span data-stu-id="4f205-133">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="5ba03-134">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="5ba03-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4f205-134">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4f205-134">See also</span></span>
 
-- [<span data-ttu-id="5ba03-135">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="5ba03-135">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="4f205-135">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="4f205-135">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d2932d04-4427-4fc7-97a1-1c57cf736072
-description: Das OtherPhones2-Element gibt ein Array von Werten von Telefon und die Bezeichner der ihre Marken Quelle für die zugeordneten Rolle.
-ms.openlocfilehash: b00a8299b406ee3fd5ff8cbe5c4d861b8782beaf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das OtherPhones2-Element gibt ein Array von Telefon Werten und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an.
+ms.openlocfilehash: 3b33005e4001fd675c2ea2b6f8446648db23c8d0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830674"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462353"
 ---
-# <a name="otherphones2"></a><span data-ttu-id="d2f56-103">OtherPhones2</span><span class="sxs-lookup"><span data-stu-id="d2f56-103">OtherPhones2</span></span>
+# <a name="otherphones2"></a><span data-ttu-id="aaa7d-103">OtherPhones2</span><span class="sxs-lookup"><span data-stu-id="aaa7d-103">OtherPhones2</span></span>
 
-<span data-ttu-id="d2f56-104">Das **OtherPhones2** -Element gibt ein Array von Werten von Telefon und die Bezeichner der ihre Marken Quelle für die zugeordneten Rolle.</span><span class="sxs-lookup"><span data-stu-id="d2f56-104">The **OtherPhones2** element specifies an array of phone values and the identifiers of their source attributions for the associated persona.</span></span> 
+<span data-ttu-id="aaa7d-104">Das **OtherPhones2** -Element gibt ein Array von Telefon Werten und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an.</span><span class="sxs-lookup"><span data-stu-id="aaa7d-104">The **OtherPhones2** element specifies an array of phone values and the identifiers of their source attributions for the associated persona.</span></span> 
   
 ```XML
 <OtherPhones2>
@@ -26,36 +26,36 @@ ms.locfileid: "19830674"
 
 ```
 
- <span data-ttu-id="d2f56-105">**ArrayOfPhoneNumberAttributedValuesType**</span><span class="sxs-lookup"><span data-stu-id="d2f56-105">**ArrayOfPhoneNumberAttributedValuesType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="d2f56-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="d2f56-106">Attributes and elements</span></span>
+ <span data-ttu-id="aaa7d-105">**ArrayOfPhoneNumberAttributedValuesType**</span><span class="sxs-lookup"><span data-stu-id="aaa7d-105">**ArrayOfPhoneNumberAttributedValuesType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="aaa7d-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="aaa7d-106">Attributes and elements</span></span>
 
-<span data-ttu-id="d2f56-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="d2f56-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="aaa7d-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="aaa7d-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="d2f56-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="d2f56-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="aaa7d-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="aaa7d-108">Attributes</span></span>
 
-<span data-ttu-id="d2f56-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="d2f56-109">None.</span></span>
+<span data-ttu-id="aaa7d-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="aaa7d-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="d2f56-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="d2f56-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="aaa7d-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="aaa7d-110">Child elements</span></span>
 
-[<span data-ttu-id="d2f56-111">PhoneNumberAttributedValue</span><span class="sxs-lookup"><span data-stu-id="d2f56-111">PhoneNumberAttributedValue</span></span>](phonenumberattributedvalue.md)
+[<span data-ttu-id="aaa7d-111">PhoneNumberAttributedValue</span><span class="sxs-lookup"><span data-stu-id="aaa7d-111">PhoneNumberAttributedValue</span></span>](phonenumberattributedvalue.md)
   
-### <a name="parent-elements"></a><span data-ttu-id="d2f56-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="d2f56-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="aaa7d-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="aaa7d-112">Parent elements</span></span>
 
-[<span data-ttu-id="d2f56-113">Rolle</span><span class="sxs-lookup"><span data-stu-id="d2f56-113">Persona</span></span>](persona.md)
+[<span data-ttu-id="aaa7d-113">Persona</span><span class="sxs-lookup"><span data-stu-id="aaa7d-113">Persona</span></span>](persona.md)
   
-## <a name="remarks"></a><span data-ttu-id="d2f56-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="d2f56-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="aaa7d-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="aaa7d-114">Remarks</span></span>
 
-<span data-ttu-id="d2f56-115">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="d2f56-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="aaa7d-115">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="aaa7d-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="d2f56-116">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="d2f56-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="aaa7d-116">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="aaa7d-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="d2f56-117">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="d2f56-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="aaa7d-117">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="aaa7d-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="d2f56-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="d2f56-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="d2f56-119">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="d2f56-119">Schema name</span></span>  <br/> |<span data-ttu-id="d2f56-120">Schematypen</span><span class="sxs-lookup"><span data-stu-id="d2f56-120">Types schema</span></span>  <br/> |
-|<span data-ttu-id="d2f56-121">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="d2f56-121">Validation file</span></span>  <br/> |<span data-ttu-id="d2f56-122">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="d2f56-122">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="d2f56-123">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="d2f56-123">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="aaa7d-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="aaa7d-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="aaa7d-119">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="aaa7d-119">Schema name</span></span>  <br/> |<span data-ttu-id="aaa7d-120">Schematypen</span><span class="sxs-lookup"><span data-stu-id="aaa7d-120">Types schema</span></span>  <br/> |
+|<span data-ttu-id="aaa7d-121">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="aaa7d-121">Validation file</span></span>  <br/> |<span data-ttu-id="aaa7d-122">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="aaa7d-122">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="aaa7d-123">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="aaa7d-123">Can be empty</span></span>  <br/> ||
    
 

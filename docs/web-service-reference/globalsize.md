@@ -1,5 +1,5 @@
 ---
-title: GlobalSize ist
+title: Globals
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,74 +11,74 @@ api_name:
 api_type:
 - schema
 ms.assetid: 23c24437-8dab-4c86-888d-471d23af675a
-description: Das GlobalSize ist-Element enthält die Größe der Unterhaltung von der Größe aller Unterhaltung Elemente im Postfach berechnet.
-ms.openlocfilehash: 15424758be9bfaf3b1c467b2370ca04718ab87ce
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Globals-Element enthält die Größe der Unterhaltung, die von der Größe aller Unterhaltungselemente im Postfach berechnet wird.
+ms.openlocfilehash: d23ab080dadb006cd5eff9d712d081fe7d94a2a8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829738"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462451"
 ---
-# <a name="globalsize"></a><span data-ttu-id="29da8-103">GlobalSize ist</span><span class="sxs-lookup"><span data-stu-id="29da8-103">GlobalSize</span></span>
+# <a name="globalsize"></a><span data-ttu-id="7308c-103">Globals</span><span class="sxs-lookup"><span data-stu-id="7308c-103">GlobalSize</span></span>
 
-<span data-ttu-id="29da8-104">Das **GlobalSize ist** -Element enthält die Größe der Unterhaltung von der Größe aller Unterhaltung Elemente im Postfach berechnet.</span><span class="sxs-lookup"><span data-stu-id="29da8-104">The **GlobalSize** element contains the size of the conversation calculated from the size of all conversation items in the mailbox.</span></span> 
+<span data-ttu-id="7308c-104">Das **Globals** -Element enthält die Größe der Unterhaltung, die von der Größe aller Unterhaltungselemente im Postfach berechnet wird.</span><span class="sxs-lookup"><span data-stu-id="7308c-104">The **GlobalSize** element contains the size of the conversation calculated from the size of all conversation items in the mailbox.</span></span> 
   
-[<span data-ttu-id="29da8-105">FindConversationResponse</span><span class="sxs-lookup"><span data-stu-id="29da8-105">FindConversationResponse</span></span>](findconversationresponse.md)
+[<span data-ttu-id="7308c-105">FindConversationResponse</span><span class="sxs-lookup"><span data-stu-id="7308c-105">FindConversationResponse</span></span>](findconversationresponse.md)
   
-[<span data-ttu-id="29da8-106">Conversations</span><span class="sxs-lookup"><span data-stu-id="29da8-106">Conversations</span></span>](conversations-ex15websvcsotherref.md)
+[<span data-ttu-id="7308c-106">Conversations</span><span class="sxs-lookup"><span data-stu-id="7308c-106">Conversations</span></span>](conversations-ex15websvcsotherref.md)
   
-[<span data-ttu-id="29da8-107">Unterhaltung (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="29da8-107">Conversation (ConversationType)</span></span>](conversation-conversationtype.md)
+[<span data-ttu-id="7308c-107">Unterhaltung (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="7308c-107">Conversation (ConversationType)</span></span>](conversation-conversationtype.md)
   
-[<span data-ttu-id="29da8-108">GlobalSize ist</span><span class="sxs-lookup"><span data-stu-id="29da8-108">GlobalSize</span></span>](globalsize.md)
+[<span data-ttu-id="7308c-108">Globals</span><span class="sxs-lookup"><span data-stu-id="7308c-108">GlobalSize</span></span>](globalsize.md)
   
 ```XML
 <GlobalSize/>
 ```
 
- <span data-ttu-id="29da8-109">**xs: int**</span><span class="sxs-lookup"><span data-stu-id="29da8-109">**xs:int**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="29da8-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="29da8-110">Attributes and elements</span></span>
+ <span data-ttu-id="7308c-109">**xs: int**</span><span class="sxs-lookup"><span data-stu-id="7308c-109">**xs:int**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="7308c-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="7308c-110">Attributes and elements</span></span>
 
-<span data-ttu-id="29da8-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="29da8-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="7308c-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="7308c-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="29da8-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="29da8-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="7308c-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="7308c-112">Attributes</span></span>
 
-<span data-ttu-id="29da8-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="29da8-113">None.</span></span>
+<span data-ttu-id="7308c-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="7308c-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="29da8-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="29da8-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="7308c-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="7308c-114">Child elements</span></span>
 
-<span data-ttu-id="29da8-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="29da8-115">None.</span></span>
+<span data-ttu-id="7308c-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="7308c-115">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="29da8-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="29da8-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="7308c-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="7308c-116">Parent elements</span></span>
 
-|<span data-ttu-id="29da8-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="29da8-117">**Element**</span></span>|<span data-ttu-id="29da8-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="29da8-118">**Description**</span></span>|
+|<span data-ttu-id="7308c-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="7308c-117">**Element**</span></span>|<span data-ttu-id="7308c-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="7308c-118">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="29da8-119">Unterhaltung (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="29da8-119">Conversation (ConversationType)</span></span>](conversation-conversationtype.md) <br/> |<span data-ttu-id="29da8-120">Stellt eine einfache Unterhaltung dar.</span><span class="sxs-lookup"><span data-stu-id="29da8-120">Represents a single conversation.</span></span>  <br/> |
+|[<span data-ttu-id="7308c-119">Unterhaltung (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="7308c-119">Conversation (ConversationType)</span></span>](conversation-conversationtype.md) <br/> |<span data-ttu-id="7308c-120">Stellt eine einfache Unterhaltung dar.</span><span class="sxs-lookup"><span data-stu-id="7308c-120">Represents a single conversation.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="29da8-121">Textwert</span><span class="sxs-lookup"><span data-stu-id="29da8-121">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="7308c-121">Textwert</span><span class="sxs-lookup"><span data-stu-id="7308c-121">Text value</span></span>
 
-<span data-ttu-id="29da8-122">Der Textwert des **GlobalSize ist** -Elements ist die Größe der Unterhaltung von der Größe aller Unterhaltung Elemente im Postfach berechnet.</span><span class="sxs-lookup"><span data-stu-id="29da8-122">The text value of the **GlobalSize** element is the size of the conversation calculated from the size of all conversation items in the mailbox.</span></span> 
+<span data-ttu-id="7308c-122">Der Textwert des **Globals** -Elements ist die Größe der Unterhaltung, die von der Größe aller Unterhaltungselemente im Postfach berechnet wird.</span><span class="sxs-lookup"><span data-stu-id="7308c-122">The text value of the **GlobalSize** element is the size of the conversation calculated from the size of all conversation items in the mailbox.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="29da8-123">Hinweise</span><span class="sxs-lookup"><span data-stu-id="29da8-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7308c-123">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="7308c-123">Remarks</span></span>
 
-<span data-ttu-id="29da8-124">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="29da8-124">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="7308c-124">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="7308c-124">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="29da8-125">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="29da8-125">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="7308c-125">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="7308c-125">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="29da8-126">Namespace</span><span class="sxs-lookup"><span data-stu-id="29da8-126">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="29da8-127">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="29da8-127">Schema name</span></span>  <br/> |<span data-ttu-id="29da8-128">Schematypen</span><span class="sxs-lookup"><span data-stu-id="29da8-128">Types schema</span></span>  <br/> |
-|<span data-ttu-id="29da8-129">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="29da8-129">Validation file</span></span>  <br/> |<span data-ttu-id="29da8-130">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="29da8-130">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="29da8-131">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="29da8-131">Can be empty</span></span>  <br/> |<span data-ttu-id="29da8-132">False</span><span class="sxs-lookup"><span data-stu-id="29da8-132">False</span></span>  <br/> |
+|<span data-ttu-id="7308c-126">Namespace</span><span class="sxs-lookup"><span data-stu-id="7308c-126">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="7308c-127">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="7308c-127">Schema name</span></span>  <br/> |<span data-ttu-id="7308c-128">Schematypen</span><span class="sxs-lookup"><span data-stu-id="7308c-128">Types schema</span></span>  <br/> |
+|<span data-ttu-id="7308c-129">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="7308c-129">Validation file</span></span>  <br/> |<span data-ttu-id="7308c-130">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="7308c-130">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="7308c-131">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="7308c-131">Can be empty</span></span>  <br/> |<span data-ttu-id="7308c-132">False</span><span class="sxs-lookup"><span data-stu-id="7308c-132">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="29da8-133">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="29da8-133">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7308c-133">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7308c-133">See also</span></span>
 
 
 
-[<span data-ttu-id="29da8-134">FindConversation Operation</span><span class="sxs-lookup"><span data-stu-id="29da8-134">FindConversation operation</span></span>](findconversation-operation.md)
+[<span data-ttu-id="7308c-134">FindConversation Operation</span><span class="sxs-lookup"><span data-stu-id="7308c-134">FindConversation operation</span></span>](findconversation-operation.md)
   
-[<span data-ttu-id="29da8-135">ApplyConversationAction-Vorgang</span><span class="sxs-lookup"><span data-stu-id="29da8-135">ApplyConversationAction operation</span></span>](applyconversationaction-operation.md)
+[<span data-ttu-id="7308c-135">ApplyConversationAction-Vorgang</span><span class="sxs-lookup"><span data-stu-id="7308c-135">ApplyConversationAction operation</span></span>](applyconversationaction-operation.md)
 
 
-[<span data-ttu-id="29da8-136">Conversations in EWS</span><span class="sxs-lookup"><span data-stu-id="29da8-136">Conversations in EWS</span></span>](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+[<span data-ttu-id="7308c-136">Conversations in EWS</span><span class="sxs-lookup"><span data-stu-id="7308c-136">Conversations in EWS</span></span>](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

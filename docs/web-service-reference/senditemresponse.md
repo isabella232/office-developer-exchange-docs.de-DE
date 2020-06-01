@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 26ac41c7-57d9-473e-ab7a-bae93e1d2aba
-description: Das SendItemResponse-Element definiert eine Antwort auf eine an den SendItem.
-ms.openlocfilehash: 41f450e1d4c95f7ba389adcaa2ed7e18ea74d61c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SendItemResponse-Element definiert eine Antwort auf eine SendItem-Anforderung.
+ms.openlocfilehash: dd90510547c3db8c3531663c23d05055bd774fab
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831339"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462129"
 ---
-# <a name="senditemresponse"></a><span data-ttu-id="7be76-103">SendItemResponse</span><span class="sxs-lookup"><span data-stu-id="7be76-103">SendItemResponse</span></span>
+# <a name="senditemresponse"></a><span data-ttu-id="a1d75-103">SendItemResponse</span><span class="sxs-lookup"><span data-stu-id="a1d75-103">SendItemResponse</span></span>
 
-<span data-ttu-id="7be76-104">Das **SendItemResponse** -Element definiert eine Antwort auf eine an den SendItem.</span><span class="sxs-lookup"><span data-stu-id="7be76-104">The **SendItemResponse** element defines a response to a SendItem request.</span></span> 
+<span data-ttu-id="a1d75-104">Das **SendItemResponse** -Element definiert eine Antwort auf eine SendItem-Anforderung.</span><span class="sxs-lookup"><span data-stu-id="a1d75-104">The **SendItemResponse** element defines a response to a SendItem request.</span></span> 
   
 ```xml
 <SendItemResponse>
@@ -29,46 +29,46 @@ ms.locfileid: "19831339"
 </SendItemResponse>
 ```
 
- <span data-ttu-id="7be76-105">**SendItemResponseType**</span><span class="sxs-lookup"><span data-stu-id="7be76-105">**SendItemResponseType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="7be76-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="7be76-106">Attributes and elements</span></span>
+ <span data-ttu-id="a1d75-105">**SendItemResponseType**</span><span class="sxs-lookup"><span data-stu-id="a1d75-105">**SendItemResponseType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="a1d75-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="a1d75-106">Attributes and elements</span></span>
 
-<span data-ttu-id="7be76-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="7be76-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="a1d75-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="a1d75-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="7be76-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="7be76-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="a1d75-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="a1d75-108">Attributes</span></span>
 
-<span data-ttu-id="7be76-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="7be76-109">None.</span></span>
+<span data-ttu-id="a1d75-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="a1d75-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="7be76-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="7be76-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="a1d75-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a1d75-110">Child elements</span></span>
 
-|<span data-ttu-id="7be76-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="7be76-111">**Element**</span></span>|<span data-ttu-id="7be76-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="7be76-112">**Description**</span></span>|
+|<span data-ttu-id="a1d75-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="a1d75-111">**Element**</span></span>|<span data-ttu-id="a1d75-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="a1d75-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="7be76-113">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="7be76-113">ResponseMessages</span></span>](responsemessages.md) <br/> |<span data-ttu-id="7be76-114">Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.</span><span class="sxs-lookup"><span data-stu-id="7be76-114">Contains the response messages for an Exchange Web Services request.</span></span>  <br/> |
+|[<span data-ttu-id="a1d75-113">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="a1d75-113">ResponseMessages</span></span>](responsemessages.md) <br/> |<span data-ttu-id="a1d75-114">Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.</span><span class="sxs-lookup"><span data-stu-id="a1d75-114">Contains the response messages for an Exchange Web Services request.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="7be76-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="7be76-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="a1d75-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a1d75-115">Parent elements</span></span>
 
-<span data-ttu-id="7be76-116">Keine.</span><span class="sxs-lookup"><span data-stu-id="7be76-116">None.</span></span>
+<span data-ttu-id="a1d75-116">Keine.</span><span class="sxs-lookup"><span data-stu-id="a1d75-116">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="7be76-117">Hinweise</span><span class="sxs-lookup"><span data-stu-id="7be76-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a1d75-117">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="a1d75-117">Remarks</span></span>
 
-<span data-ttu-id="7be76-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="7be76-118">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="a1d75-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="a1d75-118">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="7be76-119">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="7be76-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="a1d75-119">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="a1d75-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="7be76-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="7be76-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="7be76-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="7be76-121">Schema name</span></span>  <br/> |<span data-ttu-id="7be76-122">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="7be76-122">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="7be76-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="7be76-123">Validation file</span></span>  <br/> |<span data-ttu-id="7be76-124">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="7be76-124">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="7be76-125">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="7be76-125">Can be empty</span></span>  <br/> |<span data-ttu-id="7be76-126">False</span><span class="sxs-lookup"><span data-stu-id="7be76-126">False</span></span>  <br/> |
+|<span data-ttu-id="a1d75-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="a1d75-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="a1d75-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="a1d75-121">Schema name</span></span>  <br/> |<span data-ttu-id="a1d75-122">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="a1d75-122">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="a1d75-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="a1d75-123">Validation file</span></span>  <br/> |<span data-ttu-id="a1d75-124">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="a1d75-124">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="a1d75-125">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="a1d75-125">Can be empty</span></span>  <br/> |<span data-ttu-id="a1d75-126">False</span><span class="sxs-lookup"><span data-stu-id="a1d75-126">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="7be76-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7be76-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a1d75-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a1d75-127">See also</span></span>
 
 
 
-[<span data-ttu-id="7be76-128">SendItem Operation</span><span class="sxs-lookup"><span data-stu-id="7be76-128">SendItem operation</span></span>](senditem-operation.md)
+[<span data-ttu-id="a1d75-128">SendItem-Vorgang</span><span class="sxs-lookup"><span data-stu-id="a1d75-128">SendItem operation</span></span>](senditem-operation.md)
   
-[<span data-ttu-id="7be76-129">SendItem</span><span class="sxs-lookup"><span data-stu-id="7be76-129">SendItem</span></span>](senditem.md)
+[<span data-ttu-id="a1d75-129">SendItem</span><span class="sxs-lookup"><span data-stu-id="a1d75-129">SendItem</span></span>](senditem.md)
 
 
-- [<span data-ttu-id="7be76-130">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="7be76-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="a1d75-130">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="a1d75-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

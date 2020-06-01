@@ -8,57 +8,57 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 2c0bc41c-2452-4fc8-a19c-0e85f9fdbc4a
-description: Das ServerVersion Element stellt die Versionsnummer des Computers, auf dem Microsoft Exchange Server ausgeführt wird.
-ms.openlocfilehash: ef0562e166094d75d0dd92f5f48bb558e11a2cad
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Server Version vom-Element stellt die Versionsnummer des Computers dar, auf dem Exchange Server läuft.
+ms.openlocfilehash: 3ef531a69d2dd00ee9784c9eb191684ce517e842
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831391"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461968"
 ---
-# <a name="serverversion-pox"></a><span data-ttu-id="87135-103">ServerVersion (POX)</span><span class="sxs-lookup"><span data-stu-id="87135-103">ServerVersion (POX)</span></span>
+# <a name="serverversion-pox"></a><span data-ttu-id="ea447-103">ServerVersion (POX)</span><span class="sxs-lookup"><span data-stu-id="ea447-103">ServerVersion (POX)</span></span>
 
-<span data-ttu-id="87135-104">Das **ServerVersion** Element stellt die Versionsnummer des Computers, auf dem Microsoft Exchange Server ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="87135-104">The **ServerVersion** element represents the version number of the computer that is running Microsoft Exchange Server.</span></span> 
+<span data-ttu-id="ea447-104">Das **Server Version vom** -Element stellt die Versionsnummer des Computers dar, auf dem Exchange Server läuft.</span><span class="sxs-lookup"><span data-stu-id="ea447-104">The **ServerVersion** element represents the version number of the computer that is running Microsoft Exchange Server.</span></span> 
   
-- [<span data-ttu-id="87135-105">AutoErmittlung (POX)</span><span class="sxs-lookup"><span data-stu-id="87135-105">AutoDiscover (POX)</span></span>](autodiscover-pox.md) 
-- [<span data-ttu-id="87135-106">Response (POX)</span><span class="sxs-lookup"><span data-stu-id="87135-106">Response (POX)</span></span>](response-pox.md)
-- [<span data-ttu-id="87135-107">Konto (POX)</span><span class="sxs-lookup"><span data-stu-id="87135-107">Account (POX)</span></span>](account-pox.md)
-- [<span data-ttu-id="87135-108">Protokoll (POX)</span><span class="sxs-lookup"><span data-stu-id="87135-108">Protocol (POX)</span></span>](protocol-pox.md)
-- [<span data-ttu-id="87135-109">ServerVersion (POX)</span><span class="sxs-lookup"><span data-stu-id="87135-109">ServerVersion (POX)</span></span>](serverversion-pox.md)
+- [<span data-ttu-id="ea447-105">AutoErmittlung (POX)</span><span class="sxs-lookup"><span data-stu-id="ea447-105">AutoDiscover (POX)</span></span>](autodiscover-pox.md) 
+- [<span data-ttu-id="ea447-106">Response (POX)</span><span class="sxs-lookup"><span data-stu-id="ea447-106">Response (POX)</span></span>](response-pox.md)
+- [<span data-ttu-id="ea447-107">Konto (POX)</span><span class="sxs-lookup"><span data-stu-id="ea447-107">Account (POX)</span></span>](account-pox.md)
+- [<span data-ttu-id="ea447-108">Protokoll (POX)</span><span class="sxs-lookup"><span data-stu-id="ea447-108">Protocol (POX)</span></span>](protocol-pox.md)
+- [<span data-ttu-id="ea447-109">ServerVersion (POX)</span><span class="sxs-lookup"><span data-stu-id="ea447-109">ServerVersion (POX)</span></span>](serverversion-pox.md)
   
 ```xml
 <ServerVersion/>
 ```
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="87135-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="87135-110">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="ea447-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="ea447-110">Attributes and elements</span></span>
 
-<span data-ttu-id="87135-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="87135-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="ea447-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="ea447-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="87135-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="87135-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="ea447-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="ea447-112">Attributes</span></span>
 
-<span data-ttu-id="87135-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="87135-113">None.</span></span>
+<span data-ttu-id="ea447-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="ea447-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="87135-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="87135-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="ea447-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="ea447-114">Child elements</span></span>
 
-<span data-ttu-id="87135-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="87135-115">None.</span></span>
+<span data-ttu-id="ea447-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="ea447-115">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="87135-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="87135-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="ea447-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="ea447-116">Parent elements</span></span>
 
-|<span data-ttu-id="87135-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="87135-117">**Element**</span></span>|<span data-ttu-id="87135-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="87135-118">**Description**</span></span>|
+|<span data-ttu-id="ea447-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="ea447-117">**Element**</span></span>|<span data-ttu-id="ea447-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="ea447-118">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="87135-119">Protokoll (POX)</span><span class="sxs-lookup"><span data-stu-id="87135-119">Protocol (POX)</span></span>](protocol-pox.md) <br/> |<span data-ttu-id="87135-120">Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.</span><span class="sxs-lookup"><span data-stu-id="87135-120">Contains the specifications for connecting a client to the computer that is running Microsoft Exchange that has the Client Access server role installed.</span></span>  <br/> |
+|[<span data-ttu-id="ea447-119">Protokoll (POX)</span><span class="sxs-lookup"><span data-stu-id="ea447-119">Protocol (POX)</span></span>](protocol-pox.md) <br/> |<span data-ttu-id="ea447-120">Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange ausgeführt wird, auf dem die Clientzugriffs-Serverrolle installiert ist.</span><span class="sxs-lookup"><span data-stu-id="ea447-120">Contains the specifications for connecting a client to the computer that is running Microsoft Exchange that has the Client Access server role installed.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="87135-121">Textwert</span><span class="sxs-lookup"><span data-stu-id="87135-121">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="ea447-121">Textwert</span><span class="sxs-lookup"><span data-stu-id="ea447-121">Text value</span></span>
 
-<span data-ttu-id="87135-122">Der Textwert stellt die Versionsnummer des Exchange-Servers.</span><span class="sxs-lookup"><span data-stu-id="87135-122">The text value represents the Exchange server version number.</span></span>
+<span data-ttu-id="ea447-122">Der Wert Text stellt die Versionsnummer von Exchange Server dar.</span><span class="sxs-lookup"><span data-stu-id="ea447-122">The text value represents the Exchange server version number.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="87135-123">Hinweise</span><span class="sxs-lookup"><span data-stu-id="87135-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ea447-123">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="ea447-123">Remarks</span></span>
 
-<span data-ttu-id="87135-124">Der Wert der **ServerVersion** ist nur gültig, wenn das Element [Typ (POX)](type-pox.md) EXCH oder Ausdruck gleich ist.</span><span class="sxs-lookup"><span data-stu-id="87135-124">The **ServerVersion** value is only valid if the [Type (POX)](type-pox.md) element is equal to EXCH or EXPR.</span></span> <span data-ttu-id="87135-125">Der **ServerVersion** Wert ist eine hexadezimale Zahl, die der Hauptversion, MinorVersion und MajorBuildNumber des Servers enthält.</span><span class="sxs-lookup"><span data-stu-id="87135-125">The **ServerVersion** value is a hexadecimal number that contains the MajorVersion, MinorVersion, and MajorBuildNumber of the server.</span></span> 
+<span data-ttu-id="ea447-124">Der **Server Version vom** -Wert ist nur gültig, wenn der [Typ (POX)-](type-pox.md) Element gleich "$" oder "expr" ist.</span><span class="sxs-lookup"><span data-stu-id="ea447-124">The **ServerVersion** value is only valid if the [Type (POX)](type-pox.md) element is equal to EXCH or EXPR.</span></span> <span data-ttu-id="ea447-125">Der **Server Version vom** -Wert ist eine hexadezimale Zahl, die die MajorVersion, MinorVersion und MajorBuildNumber des Servers enthält.</span><span class="sxs-lookup"><span data-stu-id="ea447-125">The **ServerVersion** value is a hexadecimal number that contains the MajorVersion, MinorVersion, and MajorBuildNumber of the server.</span></span> 
   
-## <a name="example"></a><span data-ttu-id="87135-126">Beispiel</span><span class="sxs-lookup"><span data-stu-id="87135-126">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ea447-126">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ea447-126">Example</span></span>
 
-<span data-ttu-id="87135-127">Das folgende Beispiel konvertiert ein **ServerVersion** Wert, der in einer Antwort der AutoErmittlung abzurufen und anzuzeigen, die Hauptversion, MinorVersion und MajorBuildNumber zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="87135-127">The following example coverts a **ServerVersion** value that is returned in an Autodiscover response to obtain and display the MajorVersion, MinorVersion, and MajorBuildNumber.</span></span> <span data-ttu-id="87135-128">In diesem Beispiel können Sie einen Hexadezimalwert für die **ServerVersion** Wert eingeben.</span><span class="sxs-lookup"><span data-stu-id="87135-128">This example enables you to enter a hexadecimal value for the **ServerVersion** value.</span></span> <span data-ttu-id="87135-129">Wenn kein **ServerVersion** Wert eingegeben wird, wird der Standardwert **ServerVersion** 738180DA verwendet.</span><span class="sxs-lookup"><span data-stu-id="87135-129">If no **ServerVersion** value is entered, a default **ServerVersion** value of 738180DA is used.</span></span> 
+<span data-ttu-id="ea447-127">Im folgenden Beispiel wird ein **Server Version vom** -Wert behandelt, der in einer Auto Ermittlungs Antwort zurückgegeben wird, um die MajorVersion-, MinorVersion-und MajorBuildNumber-Werte zu erhalten und anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="ea447-127">The following example coverts a **ServerVersion** value that is returned in an Autodiscover response to obtain and display the MajorVersion, MinorVersion, and MajorBuildNumber.</span></span> <span data-ttu-id="ea447-128">In diesem Beispiel können Sie einen Hexadezimalwert für den **Server Version vom** -Wert eingeben.</span><span class="sxs-lookup"><span data-stu-id="ea447-128">This example enables you to enter a hexadecimal value for the **ServerVersion** value.</span></span> <span data-ttu-id="ea447-129">Wenn kein **Server Version vom** -Wert eingegeben wird, wird ein standardmäßiger **Server Version vom** -Wert von 738180DA verwendet.</span><span class="sxs-lookup"><span data-stu-id="ea447-129">If no **ServerVersion** value is entered, a default **ServerVersion** value of 738180DA is used.</span></span> 
   
 ```csharp
 static void Main(string[] args)
@@ -103,7 +103,7 @@ static void Main(string[] args)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="87135-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="87135-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ea447-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ea447-130">See also</span></span>
 
-- [<span data-ttu-id="87135-131">POX Autodiscover XML-Elemente für Exchange</span><span class="sxs-lookup"><span data-stu-id="87135-131">POX Autodiscover XML elements for Exchange</span></span>](pox-autodiscover-xml-elements-for-exchange.md)
+- [<span data-ttu-id="ea447-131">POX Autodiscover XML-Elemente für Exchange</span><span class="sxs-lookup"><span data-stu-id="ea447-131">POX Autodiscover XML elements for Exchange</span></span>](pox-autodiscover-xml-elements-for-exchange.md)
 
