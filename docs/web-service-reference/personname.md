@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dbd102b8-db70-4196-affe-d7ed66bf3371
-description: Das PersonName-Element gibt den Namen einer Person über entitätenextraktion gefunden.
-ms.openlocfilehash: 369839cd7ef49e29b570a60c12c9fcba0f6e887f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PersonName-Element gibt den Namen einer Person an, die mithilfe der Entitäts Extraktion gefunden wurde.
+ms.openlocfilehash: 7784cf1abb9098c181450baeb80468faf46c7d99
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830745"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44434085"
 ---
 # <a name="personname"></a>PersonName
 
-Das **PersonName** -Element gibt den Namen einer Person über entitätenextraktion gefunden. 
+Das **PersonName** -Element gibt den Namen einer Person an, die mithilfe der Entitäts Extraktion gefunden wurde. 
   
 ```XML
 <PersonName></PersonName>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -38,23 +38,23 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Kontakt (Kontakttyp den)](contact-contacttype.md)
+[Kontakt (ContactType)](contact-contacttype.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **PersonName** -Element ist der Name einer Person, die als Ergebnis einer entitätenextraktion gefunden. 
+Der Textwert des **PersonName** -Elements ist der Name einer Person, die als Ergebnis der Entitäts Extraktion gefunden wurde. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

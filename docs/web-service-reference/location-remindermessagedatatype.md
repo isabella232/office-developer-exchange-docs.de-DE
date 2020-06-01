@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 173148af-5dda-4322-8d0c-da3ba3780a43
-description: Location (ReminderMessageDataType)-Elements gibt den Speicherort des Kalenderelements an, die für die Erinnerung ist.
-ms.openlocfilehash: 88cc01e42f01f09933fd060080139a69bec104cc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Location-Element (ReminderMessageDataType) gibt die Position des Kalenderelements an, für das die Erinnerung gilt.
+ms.openlocfilehash: 16474c1b635a3e2337a89b98b6660293276774bf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830242"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44433721"
 ---
 # <a name="location-remindermessagedatatype"></a>Speicherort (ReminderMessageDataType)
 
-**Location (ReminderMessageDataType)** -Elements gibt den Speicherort des Kalenderelements an, die für die Erinnerung ist. 
+Das **Location-Element (ReminderMessageDataType)** gibt die Position des Kalenderelements an, für das die Erinnerung gilt. 
   
 ```xml
 <Location/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,19 +42,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **Location** -Elements ist der Speicherort des Kalenderelements. 
+Der Textwert des **Location** -Elements ist die Position des Kalenderelements. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |

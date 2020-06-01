@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 77c7b3f7-e639-4a19-8156-a70d3955db8b
-description: Das IsMember-Element ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: 58c688b878a3eed6491018527c94d347bf8bd18d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IsMember-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 2e47a5ae6943ecf3a2317a68ea38894bb1f7d3bd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830052"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44435492"
 ---
 # <a name="ismember"></a>IsMember
 
-Das **IsMember** -Element ist nur zur internen Verwendung vorgesehen. 
+Das **IsMember** -Element ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

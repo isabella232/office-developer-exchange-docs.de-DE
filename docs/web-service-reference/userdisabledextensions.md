@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c8294eee-6588-4e42-965d-c8261a4770c9
-description: Das UserDisabledExtensions-Element listet die deaktivierte apps.
-ms.openlocfilehash: 4d2935779626337c2b5132fe0556a6d707516223
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UserDisabledExtensions-Element listet die deaktivierten apps auf.
+ms.openlocfilehash: 42fd16f342e8c5a4f7a5526cb7513cf77ba8246f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839438"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44433679"
 ---
 # <a name="userdisabledextensions"></a>UserDisabledExtensions
 
-Das **UserDisabledExtensions** -Element listet die deaktivierte apps. 
+Das **UserDisabledExtensions** -Element listet die deaktivierten apps auf. 
   
 ```XML
 <UserDisabledExtensions>
@@ -40,19 +40,19 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[UserParameters](userparameters.md)
+[User Parameters](userparameters.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

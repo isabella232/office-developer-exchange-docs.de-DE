@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bb04ae38-e62d-4a69-a479-8ff326ca726e
-description: Das SuggestionsViewOptions-Element enthält die Optionen zum Abrufen von Besprechungsinformationen Vorschlag.
-ms.openlocfilehash: 09ff317ae0b2ebf1eadc89dc3bb1cf5b3ae19dcb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SuggestionsViewOptions-Element enthält die Optionen zum Abrufen von Informationen zu Besprechungs Vorschlägen.
+ms.openlocfilehash: f584b19997f98760bd4e438dcd48a5c18cc63e4b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839139"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44433994"
 ---
 # <a name="suggestionsviewoptions"></a>SuggestionsViewOptions
 
-Das **SuggestionsViewOptions** -Element enthält die Optionen zum Abrufen von Besprechungsinformationen Vorschlag. 
+Das **SuggestionsViewOptions** -Element enthält die Optionen zum Abrufen von Informationen zu Besprechungs Vorschlägen. 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -54,33 +54,33 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GoodThreshold](goodthreshold.md) <br/> |Gibt den Prozentsatz der Teilnehmer, die den Zeitraum an, für den Zeitraum als eine gute Vorgeschlagene Besprechungszeit qualifizieren öffnen benötigen.  <br/> |
-|[' MaximumResultsByDay '](maximumresultsbyday.md) <br/> |Gibt die Anzahl der vorgeschlagenen Besprechung pro Tag in der Antwort zurückgegeben.  <br/> |
-|[' MaximumNonWorkHourResultsByDay '](maximumnonworkhourresultsbyday.md) <br/> |Gibt die Anzahl der vorgeschlagenen Ergebnisse für Besprechungszeiten außerhalb der regulären Arbeitszeit pro Tag.  <br/> |
-|[MeetingDurationInMinutes](meetingdurationinminutes.md) <br/> |Gibt die Länge der Besprechung, die vorgeschlagen werden.  <br/> |
-|[MinimumSuggestionQuality](minimumsuggestionquality.md) <br/> |Gibt die Qualität der Besprechungsvorschläge in der Antwort zurückgegeben werden soll.  <br/> |
-|[DetailedSuggestionsWindow](detailedsuggestionswindow.md) <br/> |Gibt die Zeitspanne, die ausführliche Informationen zum vorgeschlagenen Besprechungszeiten abgefragt wird.  <br/> |
-|[CurrentMeetingTime](currentmeetingtime.md) <br/> |Stellt die Anfangszeit der eine Besprechung, die Sie mit der vorgeschlagenen Besprechung aktualisieren möchten Zeit Ergebnisse.  <br/> |
+|[GoodThreshold](goodthreshold.md) <br/> |Gibt den Prozentsatz der Teilnehmer an, für den der Zeitraum, der für den Zeitraum geöffnet sein muss, als eine gute vorgeschlagene Besprechungszeit qualifiziert werden muss.  <br/> |
+|[MaximumResultsByDay](maximumresultsbyday.md) <br/> |Gibt die Anzahl der vorgeschlagenen Besprechungszeiten pro Tag an, die in der Antwort zurückgegeben werden.  <br/> |
+|[MaximumNonWorkHourResultsByDay](maximumnonworkhourresultsbyday.md) <br/> |Gibt die Anzahl der vorgeschlagenen Ergebnisse für Besprechungszeiten außerhalb regulärer Arbeitsstunden pro Tag an.  <br/> |
+|[MeetingDurationInMinutes](meetingdurationinminutes.md) <br/> |Gibt die Länge der Besprechung an, die vorgeschlagen werden soll.  <br/> |
+|[MinimumSuggestionQuality](minimumsuggestionquality.md) <br/> |Gibt die Qualität der Besprechungsvorschläge an, die in der Antwort zurückgegeben werden sollen.  <br/> |
+|[DetailedSuggestionsWindow](detailedsuggestionswindow.md) <br/> |Gibt den Zeitraum an, der nach detaillierten Informationen zu vorgeschlagenen Besprechungszeiten abgefragt wird.  <br/> |
+|[CurrentMeetingTime](currentmeetingtime.md) <br/> |Stellt die Startzeit einer Besprechung dar, die mit den Ergebnissen der vorgeschlagenen Besprechungszeit aktualisiert werden soll.  <br/> |
 |[GlobalObjectId](globalobjectid.md) <br/> |Dieses Element wird nicht verwendet.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |Enthält die Argumente, die zum Abrufen von Informationen zur Verfügbarkeit der Benutzer verwendet. Dies ist eine Stammelements.  <br/> Es folgt der XPath-Ausdruck für dieses Element:  <br/>  `/GetUserAvailabilityRequest` <br/> |
+|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |Enthält die Argumente, die zum Abrufen von Informationen zur Benutzerverfügbarkeit verwendet werden. Dies ist ein Stammelement.  <br/> Es folgt der XPath für dieses Element:  <br/>  `/GetUserAvailabilityRequest` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element ist nicht erforderlich, und kann nur einmal auftreten, wenn verwendet. Dieser Wert kann null sein, wenn der Wert des Elements [FreeBusyViewOptions](freebusyviewoptions.md) nicht null ist. 
+Dieses Element ist nicht erforderlich und kann nur einmal auftreten, wenn es verwendet wird. Dieser Wert kann NULL sein, wenn der Wert des [FreeBusyViewOptions](freebusyviewoptions.md) -Elements nicht NULL ist. 
   
 > [!NOTE]
 > Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -92,5 +92,5 @@ Dieses Element ist nicht erforderlich, und kann nur einmal auftreten, wenn verwe
 [GetUserAvailability-Vorgang](getuseravailability-operation.md)
 
 
-[Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

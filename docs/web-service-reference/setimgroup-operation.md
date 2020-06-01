@@ -7,49 +7,49 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2d48aa07-8152-4c3d-a519-061253e80174
-description: Hier finden Sie Informationen über die SetImGroup EWS Vorgang.
-ms.openlocfilehash: 80980c25888ab3fcae0a761e115c3ac3d578a013
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier finden Sie Informationen zum SetImGroup-EWS-Vorgang.
+ms.openlocfilehash: 37b290559fff0b2de57669741547ba4b1b56c28c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831421"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44438075"
 ---
 # <a name="setimgroup-operation"></a>SetImGroup-Vorgang
 
-Hier finden Sie Informationen zum **SetImGroup** EWS-Vorgang. 
+Hier finden Sie Informationen zum **SetImGroup** -EWS-Vorgang. 
   
-Der Vorgang **SetImGroup** ändert den Anzeigenamen des Instant messaging (IM)-Gruppe. 
+Der **SetImGroup** -Vorgang ändert den Anzeigenamen einer Chatgruppe (Instant Messaging). 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-setimgroup-operation"></a>Verwenden des SetImGroup-Vorgangs
 
-Der Vorgang **SetImGroup** dauert nur ein einzelnes Display Name-Argument. 
+Für den **SetImGroup** -Vorgang wird nur ein einzelnes Anzeigename-Argument verwendet. 
   
-### <a name="setimgroup-operation-soap-headers"></a>SetImGroup Vorgang SOAP-Header
+### <a name="setimgroup-operation-soap-headers"></a>SOAP-Header des SetImGroup-Vorgangs
 
-Der Vorgang **SetImGroup** können die SOAP-Header, die in der folgenden Tabelle aufgelistet sind. 
+Der **SetImGroup** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |["ExchangeImpersonation"](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Bezeichnet die Kultur gemäß Definition in RFC 3066, "Tags for the Identification des Languages", um Zugriff auf das Postfach verwendet werden. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden sollen. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
 |**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
    
-## <a name="setimgroup-operation-request-example"></a>SetImGroup Vorgang anforderungsbeispiel
+## <a name="setimgroup-operation-request-example"></a>SetImGroup-Vorgangsanforderung (Beispiel)
 
-Im folgenden Beispiel wird eine **SetImGroup** Vorgang Anforderung veranschaulicht einen Anzeigenamen für Instant Messaging-Gruppe in "MyNewGroupName" zu ändern. 
+Im folgenden Beispiel einer **SetImGroup** -Vorgangsanforderung wird gezeigt, wie ein Anzeigename einer Chatgruppe in "MyNewGroupName" geändert wird. 
   
 > [!NOTE]
-> Der Bezeichner der Exchange-Informationsspeicher wurde um Erhaltung der Lesbarkeit gekürzt. 
+> Die Exchange-Informationsspeicher-ID wurde verkürzt, um die Lesbarkeit zu erhalten. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
       <t:MailboxCulture>en-US</t:MailboxCulture>
@@ -64,17 +64,17 @@ Im folgenden Beispiel wird eine **SetImGroup** Vorgang Anforderung veranschaulic
 </soap:Envelope>
 ```
 
-Die Anforderung SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
   
 - [SetImGroup](setimgroup.md)
     
 - [GroupId](groupid.md)
     
-- [NewDisplayName](newdisplayname.md)
+- [Neuanzeigename](newdisplayname.md)
     
-## <a name="successful-setimgroup-operation-response"></a>Erfolgreiche SetImGroup Vorgangsantwort
+## <a name="successful-setimgroup-operation-response"></a>Erfolgreiche Reaktion des SetImGroup-Vorgangs
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **SetImGroup** Vorgang an. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **SetImGroup** -Vorgangsanforderung. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -85,30 +85,30 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **SetImGroup** Vo
                            MajorBuildNumber="349" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <SetImGroupResponse ResponseClass="Success" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
          </SetImGroupResponse>
       </s:Body>
 </s:Envelope>
 ```
 
-Die Antwort SOAP-Text enthält die folgenden Elemente:
+Der SOAP-Antworttext Körper enthält die folgenden Elemente:
   
 - [SetImGroupResponse](setimgroupresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-## <a name="setimgroup-operation-error-response"></a>SetImGroup Vorgang Fehlerantwort
+## <a name="setimgroup-operation-error-response"></a>Fehlerantwort des SetImGroup-Vorgangs
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine **SetImGroup** Vorgang Anforderung. Die folgende Fehlerantwort tritt auf, wenn versucht wird, den Anzeigenamen für die Gruppe in den Anzeigenamen der vorhandenen Gruppe zu ändern. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **SetImGroup** -Vorgangsanforderung. Die folgende Fehlermeldung tritt auf, wenn versucht wird, den Anzeigenamen der Gruppe in den vorhandenen Gruppen Anzeigenamen zu ändern. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -119,15 +119,15 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **SetImGroup** Vorgang An
                            MajorBuildNumber="349"
                            MinorBuildNumber="0"
                            Version="Exchange2013"
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <SetImGroupResponse ResponseClass="Error" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <MessageText>An IM group with the specified display name already exists.</MessageText>
          <ResponseCode>ErrorImGroupDisplayNameAlreadyExists</ResponseCode>
          <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -136,7 +136,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **SetImGroup** Vorgang An
 </s:Envelope>
 ```
 
-Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
+Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
   
 - [SetImGroupResponse](setimgroupresponse.md)
     
@@ -146,11 +146,11 @@ Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Zusätzliche Fehlercodes, die für EWS generisch und für diese Operation spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
+Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Benutzer und Kontakte in EWS in Exchange](http://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
+- [Personen und Kontakte in EWS in Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     
 - [AddImGroup-Vorgang](addimgroup-operation.md)
     

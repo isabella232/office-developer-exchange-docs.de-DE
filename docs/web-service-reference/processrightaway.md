@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: f6bba68b-ae4f-41c1-b3e7-c8a31cdb1b0c
-description: Das ProcessRightAway-Element gibt an, ob die Antwort gesendet wird, sobald die Aktion startet die Verarbeitung auf dem Server oder gibt an, ob die Antwort gesendet wird, nachdem der Vorgang abgeschlossen wurde. Dieses Element muss vorhanden sein, damit die Antwort für die angeforderte Aktion asynchronen gesendet werden.
-ms.openlocfilehash: 940f8e8fa0a53801ce1c3a45c3aecf1bdb6f519d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ProcessRightAway-Element gibt an, ob die Antwort gesendet wird, sobald die Aktion auf dem Server verarbeitet wird oder ob die Antwort gesendet wird, nachdem die Aktion abgeschlossen wurde. Dieses Element muss vorhanden sein, damit die Antwort asynchron an die angeforderte Aktion gesendet werden kann.
+ms.openlocfilehash: 58d2b926c48db5e7395df64e1f8ee9d6a8f0e73c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830898"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44434071"
 ---
 # <a name="processrightaway"></a>ProcessRightAway
 
-Das **ProcessRightAway** -Element gibt an, ob die Antwort gesendet wird, sobald die Aktion startet die Verarbeitung auf dem Server oder gibt an, ob die Antwort gesendet wird, nachdem der Vorgang abgeschlossen wurde. Dieses Element muss vorhanden sein, damit die Antwort für die angeforderte Aktion asynchronen gesendet werden. 
+Das **ProcessRightAway** -Element gibt an, ob die Antwort gesendet wird, sobald die Aktion auf dem Server verarbeitet wird oder ob die Antwort gesendet wird, nachdem die Aktion abgeschlossen wurde. Dieses Element muss vorhanden sein, damit die Antwort asynchron an die angeforderte Aktion gesendet werden kann. 
   
 [ApplyConversationAction](applyconversationaction.md)
   
 [ConversationActions](conversationactions.md)
   
-[ConversationAction](conversationaction.md)
+[Unterhaltung](conversationaction.md)
   
 [ProcessRightAway](processrightaway.md)
   
@@ -52,21 +52,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ConversationAction](conversationaction.md) <br/> |Enthält eine einzelne Aktion auf einem einzelnen Gespräch angewendet werden soll.  <br/> |
+|[Unterhaltung](conversationaction.md) <br/> |Enthält eine einzelne Aktion, die auf eine einzelne Unterhaltung angewendet werden soll.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass die Antwort gesendet wird, sobald die Aktion Verarbeitung auf dem Server gestartet wird. Der Textwert **false** gibt an, dass die Antwort gesendet wird, nachdem der Vorgang abgeschlossen wurde. 
+Der Textwert **true** gibt an, dass die Antwort gesendet wird, sobald die Aktion auf dem Server verarbeitet wird. Der Textwert **false** gibt an, dass die Antwort gesendet wird, nachdem die Aktion abgeschlossen wurde. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
