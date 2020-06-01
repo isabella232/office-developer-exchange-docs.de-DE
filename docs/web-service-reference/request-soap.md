@@ -1,5 +1,5 @@
 ---
-title: Anforderung (SOAP)
+title: Request (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 75696436-997e-49f1-a31b-eb9a8c3526f3
-description: Das angeforderte Element enthält die angeforderten Konfigurationseinstellungen und die Zielbenutzer.
-ms.openlocfilehash: dfea33786066dd7803d0fd061cbb87bb06d11531
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Request-Element enthält die angeforderten Konfigurationseinstellungen und die Zielbenutzer.
+ms.openlocfilehash: 4358713d19e763b75d2a43f147385026f43b1255
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831125"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44448989"
 ---
-# <a name="request-soap"></a>Anforderung (SOAP)
+# <a name="request-soap"></a>Request (SOAP)
 
-Das Element **Anforderung** enthält die angeforderten Konfigurationseinstellungen und die Zielbenutzer. 
+Das **Request** -Element enthält die angeforderten Konfigurationseinstellungen und die Zielbenutzer. 
   
 ```XML
 <Request>
@@ -41,27 +41,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Benutzer (SOAP)](users-soap.md) <br/> |Stellt eine Auflistung von E-mail-Adressen der Benutzer für die Einstellungen abgerufen werden soll.  <br/> |
+|[Benutzer (SOAP)](users-soap.md) <br/> |Stellt eine Auflistung von e-Mail-Adressen der Benutzer dar, für die Einstellungen abgerufen werden sollen.  <br/> |
 |[RequestedSettings (SOAP)](requestedsettings-soap.md) <br/> |Enthält die Namen der angeforderten Konfigurationseinstellungen.  <br/> |
-|[RequestedVersion (SOAP)](requestedversion-soap.md) <br/> |Gibt die bestimmten Server-Version, die der Anbieter verwenden möchten.  <br/> |
+|[RequestedVersion (SOAP)](requestedversion-soap.md) <br/> |Gibt die spezifische Server Version an, die der Anbieter verwenden möchte.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUserSettingsRequestMessage (SOAP)](getusersettingsrequestmessage-soap.md) <br/> |Stellt eine Anforderung [GetUserSettings-Vorgang (SOAP)](getusersettings-operation-soap.md) .  <br/> |
+|[GetUserSettingsRequestMessage (SOAP)](getusersettingsrequestmessage-soap.md) <br/> |Stellt eine [SOAP-Anforderung (GetUserSettings Operation)](getusersettings-operation-soap.md) dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
