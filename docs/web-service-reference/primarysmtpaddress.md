@@ -11,70 +11,70 @@ api_name:
 api_type:
 - schema
 ms.assetid: eee79904-9412-4e61-b9b8-aff0ce25fade
-description: PrimarySmtpAddress-Element stellt die primäre Simple Mail Transfer Protocol (SMTP)-Adresse eines Kontos Stellvertretungszugriff oder für die Server-zu-Server-Autorisierung verwendet werden.
-ms.openlocfilehash: d33bf22af4ddf6b2f6d8d8d434168264acfaea7c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PrimarySmtpAddress-Element stellt die primäre Simple Mail Transfer Protocol (SMTP) Adresse eines Kontos dar, das für die Server-zu-Server-Autorisierung oder den Stellvertretungszugriff verwendet werden soll.
+ms.openlocfilehash: eea995b3e546d7e94e65cf9b230b639a781c4928
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830881"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467963"
 ---
-# <a name="primarysmtpaddress"></a><span data-ttu-id="f5cad-103">PrimarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="f5cad-103">PrimarySmtpAddress</span></span>
+# <a name="primarysmtpaddress"></a><span data-ttu-id="6ae4d-103">PrimarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="6ae4d-103">PrimarySmtpAddress</span></span>
 
-<span data-ttu-id="f5cad-104">**PrimarySmtpAddress** -Element stellt die primäre Simple Mail Transfer Protocol (SMTP)-Adresse eines Kontos Stellvertretungszugriff oder für die Server-zu-Server-Autorisierung verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="f5cad-104">The **PrimarySmtpAddress** element represents the primary Simple Mail Transfer Protocol (SMTP) address of an account to be used for server-to-server authorization or delegate access.</span></span> 
+<span data-ttu-id="6ae4d-104">Das **PrimarySmtpAddress** -Element stellt die primäre Simple Mail Transfer Protocol (SMTP) Adresse eines Kontos dar, das für die Server-zu-Server-Autorisierung oder den Stellvertretungszugriff verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="6ae4d-104">The **PrimarySmtpAddress** element represents the primary Simple Mail Transfer Protocol (SMTP) address of an account to be used for server-to-server authorization or delegate access.</span></span> 
   
 ```xml
 <PrimarySmtpAddress/>
 ```
 
- <span data-ttu-id="f5cad-105">**PrimarySmtpAddressType**</span><span class="sxs-lookup"><span data-stu-id="f5cad-105">**PrimarySmtpAddressType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="f5cad-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="f5cad-106">Attributes and elements</span></span>
+ <span data-ttu-id="6ae4d-105">**PrimarySmtpAddressType**</span><span class="sxs-lookup"><span data-stu-id="6ae4d-105">**PrimarySmtpAddressType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="6ae4d-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="6ae4d-106">Attributes and elements</span></span>
 
-<span data-ttu-id="f5cad-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="f5cad-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="6ae4d-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="6ae4d-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="f5cad-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="f5cad-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="6ae4d-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="6ae4d-108">Attributes</span></span>
 
-<span data-ttu-id="f5cad-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="f5cad-109">None.</span></span>
+<span data-ttu-id="6ae4d-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="6ae4d-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="f5cad-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f5cad-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="6ae4d-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="6ae4d-110">Child elements</span></span>
 
-<span data-ttu-id="f5cad-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="f5cad-111">None.</span></span>
+<span data-ttu-id="6ae4d-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="6ae4d-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="f5cad-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f5cad-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="6ae4d-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="6ae4d-112">Parent elements</span></span>
 
-|<span data-ttu-id="f5cad-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="f5cad-113">**Element**</span></span>|<span data-ttu-id="f5cad-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f5cad-114">**Description**</span></span>|
+|<span data-ttu-id="6ae4d-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="6ae4d-113">**Element**</span></span>|<span data-ttu-id="6ae4d-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="6ae4d-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="f5cad-115">ConnectingSID</span><span class="sxs-lookup"><span data-stu-id="f5cad-115">ConnectingSID</span></span>](connectingsid.md) <br/> |<span data-ttu-id="f5cad-116">Gibt ein Konto Identitätswechsel bei Verwendung der "ExchangeImpersonation" SOAP-Header.</span><span class="sxs-lookup"><span data-stu-id="f5cad-116">Represents an account to impersonate when you are using the ExchangeImpersonation SOAP header.</span></span>  <br/> <span data-ttu-id="f5cad-117">Es folgt der XPath-Ausdruck, der dieses Element:</span><span class="sxs-lookup"><span data-stu-id="f5cad-117">The following is the XPath expression to this element:</span></span>  <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
-|[<span data-ttu-id="f5cad-118">SerializedSecurityContext</span><span class="sxs-lookup"><span data-stu-id="f5cad-118">SerializedSecurityContext</span></span>](serializedsecuritycontext.md) <br/> |<span data-ttu-id="f5cad-119">In den SOAP-Header verwendet für tokenserialisierung für Server-zu-Server-Authentifizierung.</span><span class="sxs-lookup"><span data-stu-id="f5cad-119">Used in the SOAP header for token serialization in server- to-server authentication.</span></span>  <br/> |
-|[<span data-ttu-id="f5cad-120">Benutzer-ID</span><span class="sxs-lookup"><span data-stu-id="f5cad-120">UserId</span></span>](userid.md) <br/> |<span data-ttu-id="f5cad-121">Identifiziert ein Stellvertreter oder ein Benutzer mit Zugriffsberechtigungen für Ordner.</span><span class="sxs-lookup"><span data-stu-id="f5cad-121">Identifies a delegate user or a user who has folder access permissions.</span></span>  <br/> |
+|[<span data-ttu-id="6ae4d-115">ConnectingSID</span><span class="sxs-lookup"><span data-stu-id="6ae4d-115">ConnectingSID</span></span>](connectingsid.md) <br/> |<span data-ttu-id="6ae4d-116">Stellt ein Konto für den Identitätswechsel dar, wenn Sie den SOAP-ExchangeImpersonation-Header verwenden.</span><span class="sxs-lookup"><span data-stu-id="6ae4d-116">Represents an account to impersonate when you are using the ExchangeImpersonation SOAP header.</span></span>  <br/> <span data-ttu-id="6ae4d-117">Für dieses Element wird folgender XPath-Ausdruck verwendet: </span><span class="sxs-lookup"><span data-stu-id="6ae4d-117">The following is the XPath expression to this element:</span></span>  <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
+|[<span data-ttu-id="6ae4d-118">SerializedSecurityContext</span><span class="sxs-lookup"><span data-stu-id="6ae4d-118">SerializedSecurityContext</span></span>](serializedsecuritycontext.md) <br/> |<span data-ttu-id="6ae4d-119">Wird im SOAP-Header für die Token-Serialisierung in der Server-zu-Server-Authentifizierung verwendet.</span><span class="sxs-lookup"><span data-stu-id="6ae4d-119">Used in the SOAP header for token serialization in server- to-server authentication.</span></span>  <br/> |
+|[<span data-ttu-id="6ae4d-120">UserId</span><span class="sxs-lookup"><span data-stu-id="6ae4d-120">UserId</span></span>](userid.md) <br/> |<span data-ttu-id="6ae4d-121">Identifiziert einen Stellvertreter Benutzer oder einen Benutzer, der über Ordnerzugriffsberechtigungen verfügt.</span><span class="sxs-lookup"><span data-stu-id="6ae4d-121">Identifies a delegate user or a user who has folder access permissions.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="f5cad-122">Textwert</span><span class="sxs-lookup"><span data-stu-id="f5cad-122">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="6ae4d-122">Textwert</span><span class="sxs-lookup"><span data-stu-id="6ae4d-122">Text value</span></span>
 
-<span data-ttu-id="f5cad-123">Ein Textwert, der eine SMTP-Adresse darstellt, ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="f5cad-123">A text value that represents an SMTP address is required.</span></span>
+<span data-ttu-id="6ae4d-123">Ein Textwert, der eine SMTP-Adresse darstellt, ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="6ae4d-123">A text value that represents an SMTP address is required.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="f5cad-124">Hinweise</span><span class="sxs-lookup"><span data-stu-id="f5cad-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6ae4d-124">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="6ae4d-124">Remarks</span></span>
 
-<span data-ttu-id="f5cad-125">Exchange Web Services erfordert, dass durch die primäre SMTP-Adresse des Postfachs Postfächer identifiziert werden.</span><span class="sxs-lookup"><span data-stu-id="f5cad-125">Exchange Web Services requires that mailboxes be identified by the primary SMTP address of the mailbox.</span></span> <span data-ttu-id="f5cad-126">Proxy oder alternative Adressen werden nicht akzeptiert.</span><span class="sxs-lookup"><span data-stu-id="f5cad-126">Proxy or alternative addresses are not accepted.</span></span>
+<span data-ttu-id="6ae4d-125">Exchange Webdienste erfordert, dass Postfächer von der primären SMTP-Adresse des Postfachs identifiziert werden.</span><span class="sxs-lookup"><span data-stu-id="6ae4d-125">Exchange Web Services requires that mailboxes be identified by the primary SMTP address of the mailbox.</span></span> <span data-ttu-id="6ae4d-126">Proxy-oder alternative Adressen werden nicht akzeptiert.</span><span class="sxs-lookup"><span data-stu-id="6ae4d-126">Proxy or alternative addresses are not accepted.</span></span>
   
-<span data-ttu-id="f5cad-127">Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.</span><span class="sxs-lookup"><span data-stu-id="f5cad-127">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2010 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="6ae4d-127">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.</span><span class="sxs-lookup"><span data-stu-id="6ae4d-127">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2010 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="f5cad-128">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="f5cad-128">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="6ae4d-128">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="6ae4d-128">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="f5cad-129">Namespace</span><span class="sxs-lookup"><span data-stu-id="f5cad-129">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="f5cad-130">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="f5cad-130">Schema Name</span></span>  <br/> |<span data-ttu-id="f5cad-131">Schematypen</span><span class="sxs-lookup"><span data-stu-id="f5cad-131">Types schema</span></span>  <br/> |
-|<span data-ttu-id="f5cad-132">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="f5cad-132">Validation File</span></span>  <br/> |<span data-ttu-id="f5cad-133">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="f5cad-133">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="f5cad-134">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="f5cad-134">Can be Empty</span></span>  <br/> |<span data-ttu-id="f5cad-135">False</span><span class="sxs-lookup"><span data-stu-id="f5cad-135">False</span></span>  <br/> |
+|<span data-ttu-id="6ae4d-129">Namespace</span><span class="sxs-lookup"><span data-stu-id="6ae4d-129">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="6ae4d-130">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="6ae4d-130">Schema Name</span></span>  <br/> |<span data-ttu-id="6ae4d-131">Schematypen</span><span class="sxs-lookup"><span data-stu-id="6ae4d-131">Types schema</span></span>  <br/> |
+|<span data-ttu-id="6ae4d-132">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="6ae4d-132">Validation File</span></span>  <br/> |<span data-ttu-id="6ae4d-133">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="6ae4d-133">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="6ae4d-134">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="6ae4d-134">Can be Empty</span></span>  <br/> |<span data-ttu-id="6ae4d-135">False</span><span class="sxs-lookup"><span data-stu-id="6ae4d-135">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="f5cad-136">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f5cad-136">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6ae4d-136">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="6ae4d-136">See also</span></span>
 
 
 
-- [<span data-ttu-id="f5cad-137">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="f5cad-137">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="6ae4d-137">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="6ae4d-137">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
 
-[<span data-ttu-id="f5cad-138">Server-zu-Server-Autorisierung in Exchange-Webdienste</span><span class="sxs-lookup"><span data-stu-id="f5cad-138">Server-to-server authorization in EWS</span></span>](http://msdn.microsoft.com/library/f1610a20-672d-448b-8c00-5b0fbcaf31cb%28Office.15%29.aspx)
+[<span data-ttu-id="6ae4d-138">Server-zu-Server-Autorisierung in EWS</span><span class="sxs-lookup"><span data-stu-id="6ae4d-138">Server-to-server authorization in EWS</span></span>](https://msdn.microsoft.com/library/f1610a20-672d-448b-8c00-5b0fbcaf31cb%28Office.15%29.aspx)
   
-[<span data-ttu-id="f5cad-139">Arbeiten mit Delegieren des Zugriffs</span><span class="sxs-lookup"><span data-stu-id="f5cad-139">Working with Delegate Access</span></span>](http://msdn.microsoft.com/library/dfd6b4a3-8fd3-47ba-83c0-52465cb5f3f3%28Office.15%29.aspx)
+[<span data-ttu-id="6ae4d-139">Arbeiten mit Stellvertretungszugriff</span><span class="sxs-lookup"><span data-stu-id="6ae4d-139">Working with Delegate Access</span></span>](https://msdn.microsoft.com/library/dfd6b4a3-8fd3-47ba-83c0-52465cb5f3f3%28Office.15%29.aspx)
 

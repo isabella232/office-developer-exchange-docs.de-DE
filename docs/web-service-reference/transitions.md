@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 26f38f1c-96a3-440e-805c-1437886d11c5
-description: Übergänge-Element stellt ein Array von Zeitzone Übergänge.
-ms.openlocfilehash: df7cacdef71c3fdfaa3ecadb486843ea30e6109d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Transitions-Element stellt ein Array von Zeit Zonen Übergängen dar.
+ms.openlocfilehash: d48fb8872b2f7e052f733c32e5dd1c9b4d04d898
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839259"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467438"
 ---
-# <a name="transitions"></a><span data-ttu-id="ce28a-103">Übergänge</span><span class="sxs-lookup"><span data-stu-id="ce28a-103">Transitions</span></span>
+# <a name="transitions"></a><span data-ttu-id="9a13d-103">Übergänge</span><span class="sxs-lookup"><span data-stu-id="9a13d-103">Transitions</span></span>
 
-<span data-ttu-id="ce28a-104">**Übergänge** -Element stellt ein Array von Zeitzone Übergänge.</span><span class="sxs-lookup"><span data-stu-id="ce28a-104">The **Transitions** element represents an array of time zone transitions.</span></span> 
+<span data-ttu-id="9a13d-104">Das **Transitions** -Element stellt ein Array von Zeit Zonen Übergängen dar.</span><span class="sxs-lookup"><span data-stu-id="9a13d-104">The **Transitions** element represents an array of time zone transitions.</span></span> 
   
 ```xml
 <Transitions Id="">
@@ -32,54 +32,54 @@ ms.locfileid: "19839259"
 </Transitions>
 ```
 
- <span data-ttu-id="ce28a-105">**ArrayOfTransitionsType**</span><span class="sxs-lookup"><span data-stu-id="ce28a-105">**ArrayOfTransitionsType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="ce28a-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="ce28a-106">Attributes and elements</span></span>
+ <span data-ttu-id="9a13d-105">**ArrayOfTransitionsType**</span><span class="sxs-lookup"><span data-stu-id="9a13d-105">**ArrayOfTransitionsType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="9a13d-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="9a13d-106">Attributes and elements</span></span>
 
-<span data-ttu-id="ce28a-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="ce28a-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="9a13d-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="9a13d-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="ce28a-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="ce28a-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="9a13d-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="9a13d-108">Attributes</span></span>
 
-|<span data-ttu-id="ce28a-109">**Attribut**</span><span class="sxs-lookup"><span data-stu-id="ce28a-109">**Attribute**</span></span>|<span data-ttu-id="ce28a-110">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="ce28a-110">**Description**</span></span>|
+|<span data-ttu-id="9a13d-109">**Attribut**</span><span class="sxs-lookup"><span data-stu-id="9a13d-109">**Attribute**</span></span>|<span data-ttu-id="9a13d-110">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="9a13d-110">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="ce28a-111">Id</span><span class="sxs-lookup"><span data-stu-id="ce28a-111">Id</span></span>  <br/> |<span data-ttu-id="ce28a-112">Den eindeutigen Bezeichner der Zeitzonendefinition darstellt.</span><span class="sxs-lookup"><span data-stu-id="ce28a-112">Represents the unique identifier of the time zone definition.</span></span>  <br/> |
+|<span data-ttu-id="9a13d-111">Id</span><span class="sxs-lookup"><span data-stu-id="9a13d-111">Id</span></span>  <br/> |<span data-ttu-id="9a13d-112">Stellt den eindeutigen Bezeichner der Zeitzonendefinition dar.</span><span class="sxs-lookup"><span data-stu-id="9a13d-112">Represents the unique identifier of the time zone definition.</span></span>  <br/> |
    
-### <a name="child-elements"></a><span data-ttu-id="ce28a-113">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="ce28a-113">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="9a13d-113">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="9a13d-113">Child elements</span></span>
 
-|<span data-ttu-id="ce28a-114">**Element**</span><span class="sxs-lookup"><span data-stu-id="ce28a-114">**Element**</span></span>|<span data-ttu-id="ce28a-115">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="ce28a-115">**Description**</span></span>|
+|<span data-ttu-id="9a13d-114">**Element**</span><span class="sxs-lookup"><span data-stu-id="9a13d-114">**Element**</span></span>|<span data-ttu-id="9a13d-115">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="9a13d-115">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="ce28a-116">AbsoluteDateTransition</span><span class="sxs-lookup"><span data-stu-id="ce28a-116">AbsoluteDateTransition</span></span>](absolutedatetransition.md) <br/> |<span data-ttu-id="ce28a-117">Stellt einen Zeitzone Übergang, die einem bestimmten Datum und zu einem bestimmten Zeitpunkt dar.</span><span class="sxs-lookup"><span data-stu-id="ce28a-117">Represents a time zone transition that occurs on a specific date and at a specific time.</span></span>  <br/> |
-|[<span data-ttu-id="ce28a-118">RecurringDayTransition</span><span class="sxs-lookup"><span data-stu-id="ce28a-118">RecurringDayTransition</span></span>](recurringdaytransition.md) <br/> |<span data-ttu-id="ce28a-119">Stellt einen Zeitzone Übergang dar, bei dem gleichen Tag pro Jahr auftritt.</span><span class="sxs-lookup"><span data-stu-id="ce28a-119">Represents a time zone transition that occurs on the same day each year.</span></span>  <br/> |
-|[<span data-ttu-id="ce28a-120">RecurringDateTransition</span><span class="sxs-lookup"><span data-stu-id="ce28a-120">RecurringDateTransition</span></span>](recurringdatetransition.md) <br/> |<span data-ttu-id="ce28a-121">Stellt einen Zeitzone Übergang, der auftritt, an einem angegebenen Tag des Jahres dar.</span><span class="sxs-lookup"><span data-stu-id="ce28a-121">Represents a time zone transition that occurs on a specified day of the year.</span></span>  <br/> |
-|[<span data-ttu-id="ce28a-122">Übergang</span><span class="sxs-lookup"><span data-stu-id="ce28a-122">Transition</span></span>](transition.md) <br/> |<span data-ttu-id="ce28a-123">Stellt einen Zeitzone Übergang dar.</span><span class="sxs-lookup"><span data-stu-id="ce28a-123">Represents a time zone transition.</span></span>  <br/> |
+|[<span data-ttu-id="9a13d-116">AbsoluteDateTransition</span><span class="sxs-lookup"><span data-stu-id="9a13d-116">AbsoluteDateTransition</span></span>](absolutedatetransition.md) <br/> |<span data-ttu-id="9a13d-117">Stellt einen Zeitzonenübergang dar, der zu einem bestimmten Datum und zu einem bestimmten Zeitpunkt erfolgt.</span><span class="sxs-lookup"><span data-stu-id="9a13d-117">Represents a time zone transition that occurs on a specific date and at a specific time.</span></span>  <br/> |
+|[<span data-ttu-id="9a13d-118">RecurringDayTransition</span><span class="sxs-lookup"><span data-stu-id="9a13d-118">RecurringDayTransition</span></span>](recurringdaytransition.md) <br/> |<span data-ttu-id="9a13d-119">Stellt einen Zeitzonenübergang dar, der an demselben Tag jedes Jahr erfolgt.</span><span class="sxs-lookup"><span data-stu-id="9a13d-119">Represents a time zone transition that occurs on the same day each year.</span></span>  <br/> |
+|[<span data-ttu-id="9a13d-120">RecurringDateTransition</span><span class="sxs-lookup"><span data-stu-id="9a13d-120">RecurringDateTransition</span></span>](recurringdatetransition.md) <br/> |<span data-ttu-id="9a13d-121">Stellt einen Zeitzonenübergang dar, der an einem angegebenen Tag des Jahres erfolgt.</span><span class="sxs-lookup"><span data-stu-id="9a13d-121">Represents a time zone transition that occurs on a specified day of the year.</span></span>  <br/> |
+|[<span data-ttu-id="9a13d-122">Übergang</span><span class="sxs-lookup"><span data-stu-id="9a13d-122">Transition</span></span>](transition.md) <br/> |<span data-ttu-id="9a13d-123">Stellt einen Zeitzonenübergang dar.</span><span class="sxs-lookup"><span data-stu-id="9a13d-123">Represents a time zone transition.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="ce28a-124">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="ce28a-124">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="9a13d-124">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="9a13d-124">Parent elements</span></span>
 
-|<span data-ttu-id="ce28a-125">**Element**</span><span class="sxs-lookup"><span data-stu-id="ce28a-125">**Element**</span></span>|<span data-ttu-id="ce28a-126">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="ce28a-126">**Description**</span></span>|
+|<span data-ttu-id="9a13d-125">**Element**</span><span class="sxs-lookup"><span data-stu-id="9a13d-125">**Element**</span></span>|<span data-ttu-id="9a13d-126">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="9a13d-126">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="ce28a-127">StartTimeZone-Zeitzone</span><span class="sxs-lookup"><span data-stu-id="ce28a-127">StartTimeZone</span></span>](starttimezone.md) <br/> |<span data-ttu-id="ce28a-128">Definiert die Zeitzone für die Startzeit eines [CalendarItem](calendaritem.md) oder [MeetingRequest](meetingrequest.md).</span><span class="sxs-lookup"><span data-stu-id="ce28a-128">Defines the time zone for the start time of a [CalendarItem](calendaritem.md) or [MeetingRequest](meetingrequest.md).</span></span>  <br/> |
-|[<span data-ttu-id="ce28a-129">EndTimeZone</span><span class="sxs-lookup"><span data-stu-id="ce28a-129">EndTimeZone</span></span>](endtimezone.md) <br/> |<span data-ttu-id="ce28a-130">Definiert die Zeitzone für die Endzeit eines [CalendarItem](calendaritem.md) oder [MeetingRequest](meetingrequest.md).</span><span class="sxs-lookup"><span data-stu-id="ce28a-130">Defines the time zone for the end time of a [CalendarItem](calendaritem.md) or [MeetingRequest](meetingrequest.md).</span></span>  <br/> |
-|[<span data-ttu-id="ce28a-131">Zeitzonendefinition</span><span class="sxs-lookup"><span data-stu-id="ce28a-131">TimeZoneDefinition</span></span>](timezonedefinition.md) <br/> |<span data-ttu-id="ce28a-132">Definiert eine Zeitzone.</span><span class="sxs-lookup"><span data-stu-id="ce28a-132">Defines a time zone.</span></span>  <br/> |
+|[<span data-ttu-id="9a13d-127">StartTimeZone</span><span class="sxs-lookup"><span data-stu-id="9a13d-127">StartTimeZone</span></span>](starttimezone.md) <br/> |<span data-ttu-id="9a13d-128">Definiert die Zeitzone für die Startzeit einer [CalendarItem](calendaritem.md) -oder [MeetingRequest](meetingrequest.md)-Start Zeit.</span><span class="sxs-lookup"><span data-stu-id="9a13d-128">Defines the time zone for the start time of a [CalendarItem](calendaritem.md) or [MeetingRequest](meetingrequest.md).</span></span>  <br/> |
+|[<span data-ttu-id="9a13d-129">EndTimeZone</span><span class="sxs-lookup"><span data-stu-id="9a13d-129">EndTimeZone</span></span>](endtimezone.md) <br/> |<span data-ttu-id="9a13d-130">Definiert die Zeitzone für die Endzeit einer [CalendarItem](calendaritem.md) -oder [MeetingRequest](meetingrequest.md)-Datei.</span><span class="sxs-lookup"><span data-stu-id="9a13d-130">Defines the time zone for the end time of a [CalendarItem](calendaritem.md) or [MeetingRequest](meetingrequest.md).</span></span>  <br/> |
+|[<span data-ttu-id="9a13d-131">TimeZoneDefinition</span><span class="sxs-lookup"><span data-stu-id="9a13d-131">TimeZoneDefinition</span></span>](timezonedefinition.md) <br/> |<span data-ttu-id="9a13d-132">Definiert eine Zeitzone.</span><span class="sxs-lookup"><span data-stu-id="9a13d-132">Defines a time zone.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="ce28a-133">Textwert</span><span class="sxs-lookup"><span data-stu-id="ce28a-133">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="9a13d-133">Textwert</span><span class="sxs-lookup"><span data-stu-id="9a13d-133">Text value</span></span>
 
-<span data-ttu-id="ce28a-134">Keine.</span><span class="sxs-lookup"><span data-stu-id="ce28a-134">None.</span></span>
+<span data-ttu-id="9a13d-134">Keine.</span><span class="sxs-lookup"><span data-stu-id="9a13d-134">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ce28a-135">Hinweise</span><span class="sxs-lookup"><span data-stu-id="ce28a-135">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9a13d-135">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="9a13d-135">Remarks</span></span>
 
-<span data-ttu-id="ce28a-136">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="ce28a-136">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="9a13d-136">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="9a13d-136">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="ce28a-137">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="ce28a-137">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="9a13d-137">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="9a13d-137">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="ce28a-138">Namespace</span><span class="sxs-lookup"><span data-stu-id="ce28a-138">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="ce28a-139">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="ce28a-139">Schema Name</span></span>  <br/> |<span data-ttu-id="ce28a-140">Schematypen</span><span class="sxs-lookup"><span data-stu-id="ce28a-140">Types schema</span></span>  <br/> |
-|<span data-ttu-id="ce28a-141">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="ce28a-141">Validation File</span></span>  <br/> |<span data-ttu-id="ce28a-142">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="ce28a-142">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="ce28a-143">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="ce28a-143">Can be Empty</span></span>  <br/> |<span data-ttu-id="ce28a-144">False</span><span class="sxs-lookup"><span data-stu-id="ce28a-144">False</span></span>  <br/> |
+|<span data-ttu-id="9a13d-138">Namespace</span><span class="sxs-lookup"><span data-stu-id="9a13d-138">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="9a13d-139">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="9a13d-139">Schema Name</span></span>  <br/> |<span data-ttu-id="9a13d-140">Schematypen</span><span class="sxs-lookup"><span data-stu-id="9a13d-140">Types schema</span></span>  <br/> |
+|<span data-ttu-id="9a13d-141">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="9a13d-141">Validation File</span></span>  <br/> |<span data-ttu-id="9a13d-142">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="9a13d-142">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="9a13d-143">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="9a13d-143">Can be Empty</span></span>  <br/> |<span data-ttu-id="9a13d-144">False</span><span class="sxs-lookup"><span data-stu-id="9a13d-144">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="ce28a-145">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ce28a-145">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9a13d-145">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="9a13d-145">See also</span></span>
 
 
 
-- [<span data-ttu-id="ce28a-146">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="ce28a-146">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="9a13d-146">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="9a13d-146">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

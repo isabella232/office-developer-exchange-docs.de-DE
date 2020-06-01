@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fac1cfe0-8e7b-4196-b3ad-4e86043d9c9b
-description: Das Element MessageTypes gibt ein Array von Nachrichten suchen.
-ms.openlocfilehash: 0dca94def0e919ea2a12487b374392a8b80275cb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MessageTypes-Element gibt ein Array von Nachrichten an, die durchsucht werden sollen.
+ms.openlocfilehash: 2cfca82ea060792d59088ee8755530d82f7f77f6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830461"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468663"
 ---
-# <a name="messagetypes"></a><span data-ttu-id="7faf6-103">MessageTypes</span><span class="sxs-lookup"><span data-stu-id="7faf6-103">MessageTypes</span></span>
+# <a name="messagetypes"></a><span data-ttu-id="dc0ea-103">MessageTypes</span><span class="sxs-lookup"><span data-stu-id="dc0ea-103">MessageTypes</span></span>
 
-<span data-ttu-id="7faf6-104">Das Element **MessageTypes** gibt ein Array von Nachrichten suchen.</span><span class="sxs-lookup"><span data-stu-id="7faf6-104">The **MessageTypes** element specifies an array of messages to search.</span></span> 
+<span data-ttu-id="dc0ea-104">Das **MessageTypes** -Element gibt ein Array von Nachrichten an, die durchsucht werden sollen.</span><span class="sxs-lookup"><span data-stu-id="dc0ea-104">The **MessageTypes** element specifies an array of messages to search.</span></span> 
   
 ```XML
 <MessageTypes>
@@ -25,36 +25,36 @@ ms.locfileid: "19830461"
 </MessageTypes>
 ```
 
- <span data-ttu-id="7faf6-105">**ArrayOfSearchItemKindsType**</span><span class="sxs-lookup"><span data-stu-id="7faf6-105">**ArrayOfSearchItemKindsType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="7faf6-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="7faf6-106">Attributes and elements</span></span>
+ <span data-ttu-id="dc0ea-105">**ArrayOfSearchItemKindsType**</span><span class="sxs-lookup"><span data-stu-id="dc0ea-105">**ArrayOfSearchItemKindsType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="dc0ea-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="dc0ea-106">Attributes and elements</span></span>
 
-<span data-ttu-id="7faf6-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="7faf6-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="dc0ea-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="dc0ea-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="7faf6-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="7faf6-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="dc0ea-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="dc0ea-108">Attributes</span></span>
 
-<span data-ttu-id="7faf6-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="7faf6-109">None.</span></span>
+<span data-ttu-id="dc0ea-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="dc0ea-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="7faf6-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="7faf6-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="dc0ea-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="dc0ea-110">Child elements</span></span>
 
-[<span data-ttu-id="7faf6-111">SearchItemKind</span><span class="sxs-lookup"><span data-stu-id="7faf6-111">SearchItemKind</span></span>](searchitemkind.md)
+[<span data-ttu-id="dc0ea-111">SearchItemKind</span><span class="sxs-lookup"><span data-stu-id="dc0ea-111">SearchItemKind</span></span>](searchitemkind.md)
   
-### <a name="parent-elements"></a><span data-ttu-id="7faf6-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="7faf6-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="dc0ea-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="dc0ea-112">Parent elements</span></span>
 
-[<span data-ttu-id="7faf6-113">FindMailboxStatisticsByKeywords</span><span class="sxs-lookup"><span data-stu-id="7faf6-113">FindMailboxStatisticsByKeywords</span></span>](findmailboxstatisticsbykeywords.md)
+[<span data-ttu-id="dc0ea-113">FindMailboxStatisticsByKeywords</span><span class="sxs-lookup"><span data-stu-id="dc0ea-113">FindMailboxStatisticsByKeywords</span></span>](findmailboxstatisticsbykeywords.md)
   
-## <a name="remarks"></a><span data-ttu-id="7faf6-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="7faf6-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="dc0ea-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="dc0ea-114">Remarks</span></span>
 
-<span data-ttu-id="7faf6-115">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="7faf6-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="dc0ea-115">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="dc0ea-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="7faf6-116">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="7faf6-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="dc0ea-116">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="dc0ea-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="7faf6-117">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="7faf6-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="dc0ea-117">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="dc0ea-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="7faf6-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="7faf6-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="7faf6-119">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="7faf6-119">Schema name</span></span>  <br/> |<span data-ttu-id="7faf6-120">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="7faf6-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="7faf6-121">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="7faf6-121">Validation file</span></span>  <br/> |<span data-ttu-id="7faf6-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="7faf6-122">messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="7faf6-123">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="7faf6-123">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="dc0ea-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="dc0ea-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="dc0ea-119">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="dc0ea-119">Schema name</span></span>  <br/> |<span data-ttu-id="dc0ea-120">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="dc0ea-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="dc0ea-121">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="dc0ea-121">Validation file</span></span>  <br/> |<span data-ttu-id="dc0ea-122">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="dc0ea-122">messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="dc0ea-123">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="dc0ea-123">Can be empty</span></span>  <br/> ||
    
 

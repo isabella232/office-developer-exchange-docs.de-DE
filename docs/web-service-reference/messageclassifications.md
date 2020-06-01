@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 041b3d48-8f43-47f3-869f-72b66bef372a
-description: Das MessageClassifications-Element darstellt, die Nachrichtenklassifikationen, die auf eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende gekennzeichnet sein müssen.
-ms.openlocfilehash: 402377907efbc9bb63d875f3f66b314dfc4b788d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MessageClassifications-Element stellt die Nachrichtenklassifikationen dar, die für eingehende Nachrichten gestempelt werden müssen, damit die Bedingung oder Ausnahme zutrifft.
+ms.openlocfilehash: 63481aa8903c4e9637870130eb9154118471c3b0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830471"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467970"
 ---
-# <a name="messageclassifications"></a><span data-ttu-id="656ca-103">MessageClassifications</span><span class="sxs-lookup"><span data-stu-id="656ca-103">MessageClassifications</span></span>
+# <a name="messageclassifications"></a><span data-ttu-id="2ebcd-103">MessageClassifications</span><span class="sxs-lookup"><span data-stu-id="2ebcd-103">MessageClassifications</span></span>
 
-<span data-ttu-id="656ca-104">Das **MessageClassifications** -Element darstellt, die Nachrichtenklassifikationen, die auf eingehende Nachrichten in der Reihenfolge für die Bedingung oder Ausnahme anzuwendende gekennzeichnet sein müssen.</span><span class="sxs-lookup"><span data-stu-id="656ca-104">The **MessageClassifications** element represents the message classifications that must be stamped on incoming messages in order for the condition or exception to apply.</span></span> 
+<span data-ttu-id="2ebcd-104">Das **MessageClassifications** -Element stellt die Nachrichtenklassifikationen dar, die für eingehende Nachrichten gestempelt werden müssen, damit die Bedingung oder Ausnahme zutrifft.</span><span class="sxs-lookup"><span data-stu-id="2ebcd-104">The **MessageClassifications** element represents the message classifications that must be stamped on incoming messages in order for the condition or exception to apply.</span></span> 
   
 ```XML
 <MessageClassifications>
@@ -29,48 +29,48 @@ ms.locfileid: "19830471"
 </MessageClassifications>
 ```
 
- <span data-ttu-id="656ca-105">**ArrayOfStringsType**</span><span class="sxs-lookup"><span data-stu-id="656ca-105">**ArrayOfStringsType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="656ca-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="656ca-106">Attributes and elements</span></span>
+ <span data-ttu-id="2ebcd-105">**ArrayOfStringsType**</span><span class="sxs-lookup"><span data-stu-id="2ebcd-105">**ArrayOfStringsType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="2ebcd-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="2ebcd-106">Attributes and elements</span></span>
 
-<span data-ttu-id="656ca-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="656ca-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="2ebcd-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="2ebcd-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="656ca-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="656ca-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="2ebcd-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="2ebcd-108">Attributes</span></span>
 
-<span data-ttu-id="656ca-109">Keine</span><span class="sxs-lookup"><span data-stu-id="656ca-109">None</span></span>
+<span data-ttu-id="2ebcd-109">Keine</span><span class="sxs-lookup"><span data-stu-id="2ebcd-109">None</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="656ca-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="656ca-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="2ebcd-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="2ebcd-110">Child elements</span></span>
 
-|<span data-ttu-id="656ca-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="656ca-111">**Element**</span></span>|<span data-ttu-id="656ca-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="656ca-112">**Description**</span></span>|
+|<span data-ttu-id="2ebcd-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="2ebcd-111">**Element**</span></span>|<span data-ttu-id="2ebcd-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="2ebcd-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="656ca-113">String</span><span class="sxs-lookup"><span data-stu-id="656ca-113">String</span></span>](string.md) <br/> |<span data-ttu-id="656ca-114">Stellt eine Nachrichtenklassifikation an.</span><span class="sxs-lookup"><span data-stu-id="656ca-114">Represents a message classification.</span></span>  <br/> |
+|[<span data-ttu-id="2ebcd-113">String</span><span class="sxs-lookup"><span data-stu-id="2ebcd-113">String</span></span>](string.md) <br/> |<span data-ttu-id="2ebcd-114">Stellt eine Nachrichtenklassifikation dar.</span><span class="sxs-lookup"><span data-stu-id="2ebcd-114">Represents a message classification.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="656ca-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="656ca-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="2ebcd-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="2ebcd-115">Parent elements</span></span>
 
-|<span data-ttu-id="656ca-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="656ca-116">**Element**</span></span>|<span data-ttu-id="656ca-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="656ca-117">**Description**</span></span>|
+|<span data-ttu-id="2ebcd-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="2ebcd-116">**Element**</span></span>|<span data-ttu-id="2ebcd-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="2ebcd-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="656ca-118">Bedingungen</span><span class="sxs-lookup"><span data-stu-id="656ca-118">Conditions</span></span>](conditions.md) <br/> |<span data-ttu-id="656ca-119">Stellt die Bedingungen dar, bei deren Erfüllung die Regelaktionen für eine Regel ausgelöst werden.</span><span class="sxs-lookup"><span data-stu-id="656ca-119">Represents the conditions that, when fulfilled, will trigger the rule actions for a rule.</span></span>  <br/> |
-|[<span data-ttu-id="656ca-120">Ausnahmen</span><span class="sxs-lookup"><span data-stu-id="656ca-120">Exceptions</span></span>](exceptions.md) <br/> |<span data-ttu-id="656ca-121">Stellt die Ausnahmen, die alle verfügbaren Regel Ausnahmebedingungen für eine Posteingangsregel darstellen.</span><span class="sxs-lookup"><span data-stu-id="656ca-121">Represents the exceptions that represent all the available rule exception conditions for an Inbox rule.</span></span>  <br/> |
+|[<span data-ttu-id="2ebcd-118">Bedingungen</span><span class="sxs-lookup"><span data-stu-id="2ebcd-118">Conditions</span></span>](conditions.md) <br/> |<span data-ttu-id="2ebcd-119">Stellt die Bedingungen dar, bei deren Erfüllung die Regelaktionen für eine Regel ausgelöst werden.</span><span class="sxs-lookup"><span data-stu-id="2ebcd-119">Represents the conditions that, when fulfilled, will trigger the rule actions for a rule.</span></span>  <br/> |
+|[<span data-ttu-id="2ebcd-120">Ausnahmen</span><span class="sxs-lookup"><span data-stu-id="2ebcd-120">Exceptions</span></span>](exceptions.md) <br/> |<span data-ttu-id="2ebcd-121">Stellt die Ausnahmen, die alle verfügbaren Regel Ausnahmebedingungen für eine Posteingangsregel darstellen.</span><span class="sxs-lookup"><span data-stu-id="2ebcd-121">Represents the exceptions that represent all the available rule exception conditions for an Inbox rule.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="656ca-122">Textwert</span><span class="sxs-lookup"><span data-stu-id="656ca-122">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="2ebcd-122">Textwert</span><span class="sxs-lookup"><span data-stu-id="2ebcd-122">Text value</span></span>
 
-<span data-ttu-id="656ca-123">Keine.</span><span class="sxs-lookup"><span data-stu-id="656ca-123">None.</span></span>
+<span data-ttu-id="2ebcd-123">Keine.</span><span class="sxs-lookup"><span data-stu-id="2ebcd-123">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="656ca-124">Hinweise</span><span class="sxs-lookup"><span data-stu-id="656ca-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2ebcd-124">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="2ebcd-124">Remarks</span></span>
 
-<span data-ttu-id="656ca-125">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="656ca-125">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="2ebcd-125">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="2ebcd-125">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="656ca-126">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="656ca-126">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="2ebcd-126">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="2ebcd-126">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="656ca-127">Namespace</span><span class="sxs-lookup"><span data-stu-id="656ca-127">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="656ca-128">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="656ca-128">Schema Name</span></span>  <br/> |<span data-ttu-id="656ca-129">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="656ca-129">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="656ca-130">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="656ca-130">Validation File</span></span>  <br/> |<span data-ttu-id="656ca-131">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="656ca-131">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="656ca-132">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="656ca-132">Can be Empty</span></span>  <br/> |<span data-ttu-id="656ca-133">True</span><span class="sxs-lookup"><span data-stu-id="656ca-133">True</span></span>  <br/> |
+|<span data-ttu-id="2ebcd-127">Namespace</span><span class="sxs-lookup"><span data-stu-id="2ebcd-127">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="2ebcd-128">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="2ebcd-128">Schema Name</span></span>  <br/> |<span data-ttu-id="2ebcd-129">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="2ebcd-129">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="2ebcd-130">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="2ebcd-130">Validation File</span></span>  <br/> |<span data-ttu-id="2ebcd-131">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="2ebcd-131">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="2ebcd-132">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="2ebcd-132">Can be Empty</span></span>  <br/> |<span data-ttu-id="2ebcd-133">True</span><span class="sxs-lookup"><span data-stu-id="2ebcd-133">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="656ca-134">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="656ca-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2ebcd-134">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2ebcd-134">See also</span></span>
 
 
 
-- [<span data-ttu-id="656ca-135">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="656ca-135">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="2ebcd-135">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="2ebcd-135">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

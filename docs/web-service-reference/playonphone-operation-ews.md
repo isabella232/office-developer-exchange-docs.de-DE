@@ -11,31 +11,31 @@ api_name:
 api_type:
 - schema
 ms.assetid: 70e6ef33-2046-4eb8-9987-e106009be04b
-description: Der Vorgang PlayOnPhone initiiert einen ausgehenden Anruf und zur Wiedergabe einer Nachricht über das Telefon.
-ms.openlocfilehash: ec77720c69862e210316d61975b0d58c9530a40c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der PlayOnPhone-Vorgang initiiert einen ausgehenden Anruf und spielt eine Nachricht über das Telefon ab.
+ms.openlocfilehash: 18af810160e72856599f296c4faa83cf9c73c393
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830819"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467956"
 ---
-# <a name="playonphone-operation-ews"></a><span data-ttu-id="7b6ed-103">PlayOnPhone-Vorgang (EWS)</span><span class="sxs-lookup"><span data-stu-id="7b6ed-103">PlayOnPhone operation (EWS)</span></span>
+# <a name="playonphone-operation-ews"></a><span data-ttu-id="196f3-103">PlayOnPhone-Vorgang (EWS)</span><span class="sxs-lookup"><span data-stu-id="196f3-103">PlayOnPhone operation (EWS)</span></span>
 
-<span data-ttu-id="7b6ed-104">Der Vorgang **PlayOnPhone** initiiert einen ausgehenden Anruf und zur Wiedergabe einer Nachricht über das Telefon.</span><span class="sxs-lookup"><span data-stu-id="7b6ed-104">The **PlayOnPhone** operation initiates an outbound call and plays a message over the telephone.</span></span> 
+<span data-ttu-id="196f3-104">Der **PlayOnPhone** -Vorgang initiiert einen ausgehenden Anruf und spielt eine Nachricht über das Telefon ab.</span><span class="sxs-lookup"><span data-stu-id="196f3-104">The **PlayOnPhone** operation initiates an outbound call and plays a message over the telephone.</span></span> 
   
-## <a name="playonphone-request-example"></a><span data-ttu-id="7b6ed-105">Anforderungsbeispiel PlayOnPhone</span><span class="sxs-lookup"><span data-stu-id="7b6ed-105">PlayOnPhone request example</span></span>
+## <a name="playonphone-request-example"></a><span data-ttu-id="196f3-105">PlayOnPhone-Anforderungs Beispiel</span><span class="sxs-lookup"><span data-stu-id="196f3-105">PlayOnPhone request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="7b6ed-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7b6ed-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="196f3-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="196f3-106">Description</span></span>
 
-<span data-ttu-id="7b6ed-107">Im folgenden Beispiel wird eine Anforderung **PlayOnPhone** veranschaulicht eine Anforderung an eine Nachricht wiedergegeben, auf einem Telefon zu bilden.</span><span class="sxs-lookup"><span data-stu-id="7b6ed-107">The following example of a **PlayOnPhone** request shows how to form a request to play a message on a phone.</span></span> 
+<span data-ttu-id="196f3-107">Das folgende Beispiel einer **PlayOnPhone** -Anforderung zeigt, wie Sie eine Anforderung zum Wiedergeben einer Nachricht auf einem Telefon bilden.</span><span class="sxs-lookup"><span data-stu-id="196f3-107">The following example of a **PlayOnPhone** request shows how to form a request to play a message on a phone.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="7b6ed-108">Code</span><span class="sxs-lookup"><span data-stu-id="7b6ed-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="196f3-108">Code</span><span class="sxs-lookup"><span data-stu-id="196f3-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
@@ -50,13 +50,13 @@ ms.locfileid: "19830819"
 </soap:Envelope>
 ```
 
-## <a name="playonphone-response-example"></a><span data-ttu-id="7b6ed-109">PlayOnPhone antwortbeispiel</span><span class="sxs-lookup"><span data-stu-id="7b6ed-109">PlayOnPhone response example</span></span>
+## <a name="playonphone-response-example"></a><span data-ttu-id="196f3-109">PlayOnPhone-Antwortbeispiel</span><span class="sxs-lookup"><span data-stu-id="196f3-109">PlayOnPhone response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="7b6ed-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7b6ed-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="196f3-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="196f3-110">Description</span></span>
 
-<span data-ttu-id="7b6ed-111">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung **PlayOnPhone** .</span><span class="sxs-lookup"><span data-stu-id="7b6ed-111">The following example shows a successful response to the **PlayOnPhone** request.</span></span> 
+<span data-ttu-id="196f3-111">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **PlayOnPhone** -Anforderung.</span><span class="sxs-lookup"><span data-stu-id="196f3-111">The following example shows a successful response to the **PlayOnPhone** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="7b6ed-112">Code</span><span class="sxs-lookup"><span data-stu-id="7b6ed-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="196f3-112">Code</span><span class="sxs-lookup"><span data-stu-id="196f3-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -67,15 +67,15 @@ ms.locfileid: "19830819"
                          MajorBuildNumber="639" 
                          MinorBuildNumber="20" 
                          Version="Exchange2010" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <PlayOnPhoneResponse ResponseClass="Success" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <PhoneCallId Id="ZWMtWYtMY29t"/>
     </PlayOnPhoneResponse>
@@ -83,8 +83,8 @@ ms.locfileid: "19830819"
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="7b6ed-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7b6ed-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="196f3-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="196f3-113">See also</span></span>
 
-- [<span data-ttu-id="7b6ed-114">EWS-Operationen in Exchange</span><span class="sxs-lookup"><span data-stu-id="7b6ed-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
-- [<span data-ttu-id="7b6ed-115">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="7b6ed-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="196f3-114">EWS-Operationen in Exchange</span><span class="sxs-lookup"><span data-stu-id="196f3-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+- [<span data-ttu-id="196f3-115">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="196f3-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

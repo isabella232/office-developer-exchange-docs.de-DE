@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d3901818-2640-4bed-aad8-21a61aee62a1
-description: Das Element StatusEvent stellt eine Benachrichtigung, dass keine neue Aktivität im Postfach aufgetreten ist.
-ms.openlocfilehash: e214918f9795e9e29061d4aac72ab144d2b24267
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das StatusEvent-Element stellt eine Benachrichtigung dar, dass keine neue Aktivität im Postfach aufgetreten ist.
+ms.openlocfilehash: 8158a47937a810be2ea22346384b4e61da56ac48
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831592"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468257"
 ---
-# <a name="statusevent"></a><span data-ttu-id="5f3f9-103">StatusEvent</span><span class="sxs-lookup"><span data-stu-id="5f3f9-103">StatusEvent</span></span>
+# <a name="statusevent"></a><span data-ttu-id="d13b9-103">StatusEvent</span><span class="sxs-lookup"><span data-stu-id="d13b9-103">StatusEvent</span></span>
 
-<span data-ttu-id="5f3f9-104">Das Element **StatusEvent** stellt eine Benachrichtigung, dass keine neue Aktivität im Postfach aufgetreten ist.</span><span class="sxs-lookup"><span data-stu-id="5f3f9-104">The **StatusEvent** element represents a notification that no new activity has occurred in the mailbox.</span></span> 
+<span data-ttu-id="d13b9-104">Das **StatusEvent** -Element stellt eine Benachrichtigung dar, dass keine neue Aktivität im Postfach aufgetreten ist.</span><span class="sxs-lookup"><span data-stu-id="d13b9-104">The **StatusEvent** element represents a notification that no new activity has occurred in the mailbox.</span></span> 
   
 ```xml
 <StatusEvent>
@@ -29,57 +29,57 @@ ms.locfileid: "19831592"
 </StatusEvent>
 ```
 
- <span data-ttu-id="5f3f9-105">**BaseNotificationEventType**</span><span class="sxs-lookup"><span data-stu-id="5f3f9-105">**BaseNotificationEventType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="5f3f9-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="5f3f9-106">Attributes and elements</span></span>
+ <span data-ttu-id="d13b9-105">**BaseNotificationEventType**</span><span class="sxs-lookup"><span data-stu-id="d13b9-105">**BaseNotificationEventType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="d13b9-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="d13b9-106">Attributes and elements</span></span>
 
-<span data-ttu-id="5f3f9-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="5f3f9-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="d13b9-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="d13b9-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="5f3f9-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="5f3f9-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="d13b9-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="d13b9-108">Attributes</span></span>
 
-<span data-ttu-id="5f3f9-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="5f3f9-109">None.</span></span>
+<span data-ttu-id="d13b9-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="d13b9-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="5f3f9-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="5f3f9-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="d13b9-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="d13b9-110">Child elements</span></span>
 
-|<span data-ttu-id="5f3f9-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="5f3f9-111">**Element**</span></span>|<span data-ttu-id="5f3f9-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="5f3f9-112">**Description**</span></span>|
+|<span data-ttu-id="d13b9-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="d13b9-111">**Element**</span></span>|<span data-ttu-id="d13b9-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="d13b9-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="5f3f9-113">Wasserzeichen</span><span class="sxs-lookup"><span data-stu-id="5f3f9-113">Watermark</span></span>](watermark.md) <br/> |<span data-ttu-id="5f3f9-114">Stellt das letzte gültige Wasserzeichen für ein Abonnement.</span><span class="sxs-lookup"><span data-stu-id="5f3f9-114">Represents the last valid watermark for a subscription.</span></span>  <br/> |
+|[<span data-ttu-id="d13b9-113">Watermark</span><span class="sxs-lookup"><span data-stu-id="d13b9-113">Watermark</span></span>](watermark.md) <br/> |<span data-ttu-id="d13b9-114">Stellt das letzte gültige Wasserzeichen für ein Abonnement dar.</span><span class="sxs-lookup"><span data-stu-id="d13b9-114">Represents the last valid watermark for a subscription.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="5f3f9-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="5f3f9-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="d13b9-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="d13b9-115">Parent elements</span></span>
 
-|<span data-ttu-id="5f3f9-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="5f3f9-116">**Element**</span></span>|<span data-ttu-id="5f3f9-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="5f3f9-117">**Description**</span></span>|
+|<span data-ttu-id="d13b9-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="d13b9-116">**Element**</span></span>|<span data-ttu-id="d13b9-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="d13b9-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="5f3f9-118">Benachrichtigung</span><span class="sxs-lookup"><span data-stu-id="5f3f9-118">Notification</span></span>](notification-ex15websvcsotherref.md) <br/> |<span data-ttu-id="5f3f9-119">Enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.</span><span class="sxs-lookup"><span data-stu-id="5f3f9-119">Contains information about the subscription and the events that have occurred since the last notification.</span></span>  <br/> |
+|[<span data-ttu-id="d13b9-118">Benachrichtigung</span><span class="sxs-lookup"><span data-stu-id="d13b9-118">Notification</span></span>](notification-ex15websvcsotherref.md) <br/> |<span data-ttu-id="d13b9-119">Enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.</span><span class="sxs-lookup"><span data-stu-id="d13b9-119">Contains information about the subscription and the events that have occurred since the last notification.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="5f3f9-120">Hinweise</span><span class="sxs-lookup"><span data-stu-id="5f3f9-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d13b9-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="d13b9-120">Remarks</span></span>
 
-<span data-ttu-id="5f3f9-121">Das **StatusEvent** -Element wird in einer Benachrichtigung für einen der folgenden Gründe zurückgegeben:</span><span class="sxs-lookup"><span data-stu-id="5f3f9-121">The **StatusEvent** element is returned in a notification for one of the following reasons:</span></span> 
+<span data-ttu-id="d13b9-121">Das **StatusEvent** -Element wird aus einem der folgenden Gründe in einer Benachrichtigung zurückgegeben:</span><span class="sxs-lookup"><span data-stu-id="d13b9-121">The **StatusEvent** element is returned in a notification for one of the following reasons:</span></span> 
   
-- <span data-ttu-id="5f3f9-122">Ein Pull-Client sendet eine Anforderung GetEvents auf einem Abonnement, das keine Aktivität verfügt.</span><span class="sxs-lookup"><span data-stu-id="5f3f9-122">A pull client issues a GetEvents request on a subscription that has no activity.</span></span>
+- <span data-ttu-id="d13b9-122">Ein Pull-Client gibt eine GetEvents-Anforderung für ein Abonnement aus, das über keine Aktivität verfügt.</span><span class="sxs-lookup"><span data-stu-id="d13b9-122">A pull client issues a GetEvents request on a subscription that has no activity.</span></span>
     
-- <span data-ttu-id="5f3f9-123">Ein Push-Client hat keine Ereignisse in der Warteschlange, wenn die [StatusFrequency](statusfrequency.md) erreicht wurde.</span><span class="sxs-lookup"><span data-stu-id="5f3f9-123">A push client has no events in the queue when the [StatusFrequency](statusfrequency.md) has been reached.</span></span> 
+- <span data-ttu-id="d13b9-123">Ein Push-Client hat keine Ereignisse in der Warteschlange, wenn die [StatusFrequency](statusfrequency.md) erreicht wurde.</span><span class="sxs-lookup"><span data-stu-id="d13b9-123">A push client has no events in the queue when the [StatusFrequency](statusfrequency.md) has been reached.</span></span> 
     
-<span data-ttu-id="5f3f9-124">Das **StatusEvent**[Wasserzeichen](watermark.md) wird von einer Clientanwendung in die gleiche Weise wie das Ereignis Typ Wasserzeichen verwendet.</span><span class="sxs-lookup"><span data-stu-id="5f3f9-124">The **StatusEvent**[Watermark](watermark.md) is used by a client application in the same manner as the other event type watermarks.</span></span> <span data-ttu-id="5f3f9-125">Das Wasserzeichen für die **StatusEvent** ist jedoch nicht identisch mit der Wasserzeichen für andere Ereignisse verwendet.</span><span class="sxs-lookup"><span data-stu-id="5f3f9-125">However, the watermark for the **StatusEvent** is not the same as the watermarks used for other events.</span></span> <span data-ttu-id="5f3f9-126">Angenommen, haben ein Abonnement von Ereignissen mit Wasserzeichen 1 aufweist, 2 und 3 und die Ereignisse, die erfolgreich in einer Benachrichtigung mitgeteilt wurden.</span><span class="sxs-lookup"><span data-stu-id="5f3f9-126">For example, a subscription has events with watermarks 1, 2, and 3 and those events have been successfully communicated in a notification.</span></span> <span data-ttu-id="5f3f9-127">Tritt auf ein Zeitraum der Inaktivität, und eine Anforderung **GetEvents** gesendet.</span><span class="sxs-lookup"><span data-stu-id="5f3f9-127">A period of inactivity occurs and a **GetEvents** request is sent.</span></span> <span data-ttu-id="5f3f9-128">Der Clientzugriffsserver (CAS) liefert ein Statusereignis und das letzte Wasserzeichen, 3, als die [PreviousWatermark](previouswatermark.md) und das aktuelle [Wasserzeichen](watermark.md).</span><span class="sxs-lookup"><span data-stu-id="5f3f9-128">The Client Access server (CAS) returns a status event and includes the last watermark, 3, as both the [PreviousWatermark](previouswatermark.md) and the current [Watermark](watermark.md).</span></span>
+<span data-ttu-id="d13b9-124">Das **StatusEvent**-[Wasserzeichen](watermark.md) wird von einer Clientanwendung auf die gleiche Weise wie die anderen Wasserzeichen von Ereignistypen verwendet.</span><span class="sxs-lookup"><span data-stu-id="d13b9-124">The **StatusEvent**[Watermark](watermark.md) is used by a client application in the same manner as the other event type watermarks.</span></span> <span data-ttu-id="d13b9-125">Das Wasserzeichen für das **StatusEvent** ist jedoch nicht identisch mit den Wasserzeichen, die für andere Ereignisse verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="d13b9-125">However, the watermark for the **StatusEvent** is not the same as the watermarks used for other events.</span></span> <span data-ttu-id="d13b9-126">Beispielsweise hat ein Abonnement Ereignisse mit Wasserzeichen 1, 2 und 3, und diese Ereignisse wurden in einer Benachrichtigung erfolgreich kommuniziert.</span><span class="sxs-lookup"><span data-stu-id="d13b9-126">For example, a subscription has events with watermarks 1, 2, and 3 and those events have been successfully communicated in a notification.</span></span> <span data-ttu-id="d13b9-127">Ein Zeitraum der Inaktivität tritt auf, und es wird eine **GetEvents** -Anforderung gesendet.</span><span class="sxs-lookup"><span data-stu-id="d13b9-127">A period of inactivity occurs and a **GetEvents** request is sent.</span></span> <span data-ttu-id="d13b9-128">Der Client Zugriffsserver (CAS) gibt ein Status Ereignis zurück und enthält das letzte Wasserzeichen, 3, als [PreviousWatermark](previouswatermark.md) und das aktuelle [Wasserzeichen](watermark.md).</span><span class="sxs-lookup"><span data-stu-id="d13b9-128">The Client Access server (CAS) returns a status event and includes the last watermark, 3, as both the [PreviousWatermark](previouswatermark.md) and the current [Watermark](watermark.md).</span></span>
   
-<span data-ttu-id="5f3f9-129">Das Wasserzeichen wird nicht in allen Fällen unverändert.</span><span class="sxs-lookup"><span data-stu-id="5f3f9-129">The watermark will not remain the same in all cases.</span></span> <span data-ttu-id="5f3f9-130">Einträge werden für 30 Tage beibehalten.</span><span class="sxs-lookup"><span data-stu-id="5f3f9-130">Event entries are maintained for 30 days.</span></span> <span data-ttu-id="5f3f9-131">Um ein aktives Abonnement zu gewährleisten, aktualisiert die CAS in regelmäßigen Abständen die Wasserzeichen für Abonnementwarteschlangen.</span><span class="sxs-lookup"><span data-stu-id="5f3f9-131">To maintain an active subscription, the CAS periodically updates the watermarks for subscription queues.</span></span> <span data-ttu-id="5f3f9-132">Die aktualisierten Wasserzeichen sind an Clients gesendet, um ein aktives Abonnement verwalten.</span><span class="sxs-lookup"><span data-stu-id="5f3f9-132">The updated watermarks are sent to clients to maintain an active subscription.</span></span>
+<span data-ttu-id="d13b9-129">Das Wasserzeichen wird nicht in allen Fällen gleich bleiben.</span><span class="sxs-lookup"><span data-stu-id="d13b9-129">The watermark will not remain the same in all cases.</span></span> <span data-ttu-id="d13b9-130">Ereigniseinträge werden für 30 Tage beibehalten.</span><span class="sxs-lookup"><span data-stu-id="d13b9-130">Event entries are maintained for 30 days.</span></span> <span data-ttu-id="d13b9-131">Um ein aktives Abonnement beizubehalten, werden die Wasserzeichen für Abonnement Warteschlangen von der Zertifizierungsstellen regelmäßig aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="d13b9-131">To maintain an active subscription, the CAS periodically updates the watermarks for subscription queues.</span></span> <span data-ttu-id="d13b9-132">Die aktualisierten Wasserzeichen werden an Clients gesendet, um ein aktives Abonnement beizubehalten.</span><span class="sxs-lookup"><span data-stu-id="d13b9-132">The updated watermarks are sent to clients to maintain an active subscription.</span></span>
   
-<span data-ttu-id="5f3f9-133">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="5f3f9-133">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="d13b9-133">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="d13b9-133">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="5f3f9-134">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="5f3f9-134">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="d13b9-134">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="d13b9-134">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="5f3f9-135">Namespace</span><span class="sxs-lookup"><span data-stu-id="5f3f9-135">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="5f3f9-136">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="5f3f9-136">Schema name</span></span>  <br/> |<span data-ttu-id="5f3f9-137">Schematypen</span><span class="sxs-lookup"><span data-stu-id="5f3f9-137">Types schema</span></span>  <br/> |
-|<span data-ttu-id="5f3f9-138">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="5f3f9-138">Validation file</span></span>  <br/> |<span data-ttu-id="5f3f9-139">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="5f3f9-139">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="5f3f9-140">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="5f3f9-140">Can be empty</span></span>  <br/> |<span data-ttu-id="5f3f9-141">False</span><span class="sxs-lookup"><span data-stu-id="5f3f9-141">False</span></span>  <br/> |
+|<span data-ttu-id="d13b9-135">Namespace</span><span class="sxs-lookup"><span data-stu-id="d13b9-135">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="d13b9-136">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="d13b9-136">Schema name</span></span>  <br/> |<span data-ttu-id="d13b9-137">Schematypen</span><span class="sxs-lookup"><span data-stu-id="d13b9-137">Types schema</span></span>  <br/> |
+|<span data-ttu-id="d13b9-138">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="d13b9-138">Validation file</span></span>  <br/> |<span data-ttu-id="d13b9-139">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="d13b9-139">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="d13b9-140">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="d13b9-140">Can be empty</span></span>  <br/> |<span data-ttu-id="d13b9-141">False</span><span class="sxs-lookup"><span data-stu-id="d13b9-141">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="5f3f9-142">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="5f3f9-142">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d13b9-142">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d13b9-142">See also</span></span>
 
 
 
-[<span data-ttu-id="5f3f9-143">Vorgang abonnieren</span><span class="sxs-lookup"><span data-stu-id="5f3f9-143">Subscribe operation</span></span>](subscribe-operation.md)
+[<span data-ttu-id="d13b9-143">Vorgang abonnieren</span><span class="sxs-lookup"><span data-stu-id="d13b9-143">Subscribe operation</span></span>](subscribe-operation.md)
   
-[<span data-ttu-id="5f3f9-144">GetEvents-Vorgang</span><span class="sxs-lookup"><span data-stu-id="5f3f9-144">GetEvents operation</span></span>](getevents-operation.md)
+[<span data-ttu-id="d13b9-144">GetEvents-Vorgang</span><span class="sxs-lookup"><span data-stu-id="d13b9-144">GetEvents operation</span></span>](getevents-operation.md)
   
-[<span data-ttu-id="5f3f9-145">Vorgang des Kündigens von Abonnements</span><span class="sxs-lookup"><span data-stu-id="5f3f9-145">Unsubscribe operation</span></span>](unsubscribe-operation.md)
+[<span data-ttu-id="d13b9-145">Vorgang des Kündigens von Abonnements</span><span class="sxs-lookup"><span data-stu-id="d13b9-145">Unsubscribe operation</span></span>](unsubscribe-operation.md)
 

@@ -11,62 +11,62 @@ api_name:
 api_type:
 - schema
 ms.assetid: bb98ac72-9409-4332-81bb-ee3bebb9a00e
-description: Das Element MaxMessageSize stellt die maximale Größe von Nachrichten, die ein Empfänger akzeptieren kann.
-ms.openlocfilehash: 13a5679a03420655356269a7e8b5e22950724164
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MaxMessageSize-Element stellt die maximale Nachrichtengröße dar, die ein Empfänger annehmen kann.
+ms.openlocfilehash: 727eed38a129800b7d38aa49c41cdacfa13e7a36
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830383"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468411"
 ---
-# <a name="maxmessagesize"></a><span data-ttu-id="e830e-103">MaxMessageSize</span><span class="sxs-lookup"><span data-stu-id="e830e-103">MaxMessageSize</span></span>
+# <a name="maxmessagesize"></a><span data-ttu-id="91808-103">MaxMessageSize</span><span class="sxs-lookup"><span data-stu-id="91808-103">MaxMessageSize</span></span>
 
-<span data-ttu-id="e830e-104">Das Element **MaxMessageSize** stellt die maximale Größe von Nachrichten, die ein Empfänger akzeptieren kann.</span><span class="sxs-lookup"><span data-stu-id="e830e-104">The **MaxMessageSize** element represents the maximum message size a recipient can accept.</span></span> 
+<span data-ttu-id="91808-104">Das **MaxMessageSize** -Element stellt die maximale Nachrichtengröße dar, die ein Empfänger annehmen kann.</span><span class="sxs-lookup"><span data-stu-id="91808-104">The **MaxMessageSize** element represents the maximum message size a recipient can accept.</span></span> 
   
 ```XML
 <MaxMessageSize/>
 ```
 
- <span data-ttu-id="e830e-105">**int**</span><span class="sxs-lookup"><span data-stu-id="e830e-105">**int**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="e830e-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="e830e-106">Attributes and elements</span></span>
+ <span data-ttu-id="91808-105">**int**</span><span class="sxs-lookup"><span data-stu-id="91808-105">**int**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="91808-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="91808-106">Attributes and elements</span></span>
 
-<span data-ttu-id="e830e-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="e830e-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="91808-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="91808-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="e830e-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="e830e-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="91808-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="91808-108">Attributes</span></span>
 
-<span data-ttu-id="e830e-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="e830e-109">None.</span></span>
+<span data-ttu-id="91808-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="91808-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="e830e-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e830e-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="91808-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="91808-110">Child elements</span></span>
 
-<span data-ttu-id="e830e-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="e830e-111">None.</span></span>
+<span data-ttu-id="91808-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="91808-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="e830e-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e830e-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="91808-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="91808-112">Parent elements</span></span>
 
-|<span data-ttu-id="e830e-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="e830e-113">**Element**</span></span>|<span data-ttu-id="e830e-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="e830e-114">**Description**</span></span>|
+|<span data-ttu-id="91808-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="91808-113">**Element**</span></span>|<span data-ttu-id="91808-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="91808-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="e830e-115">E-Mail-Infos</span><span class="sxs-lookup"><span data-stu-id="e830e-115">MailTips</span></span>](mailtips.md) <br/> |<span data-ttu-id="e830e-116">Stellt Werte für verschiedene Arten von e-Mail-Infos.</span><span class="sxs-lookup"><span data-stu-id="e830e-116">Represents values for various types of mail tips.</span></span>  <br/> |
-|[<span data-ttu-id="e830e-117">MailTipsConfiguration (MailTipsServiceConfiguration)</span><span class="sxs-lookup"><span data-stu-id="e830e-117">MailTipsConfiguration (MailTipsServiceConfiguration)</span></span>](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |<span data-ttu-id="e830e-118">Enthält Konfigurationsinformationen für den e-Mail-Dienst Tipps Service.</span><span class="sxs-lookup"><span data-stu-id="e830e-118">Contains service configuration information for the mail tips service.</span></span>  <br/> |
+|[<span data-ttu-id="91808-115">E-Mail-Info</span><span class="sxs-lookup"><span data-stu-id="91808-115">MailTips</span></span>](mailtips.md) <br/> |<span data-ttu-id="91808-116">Stellt Werte für verschiedene Arten von e-Mail-Tipps dar.</span><span class="sxs-lookup"><span data-stu-id="91808-116">Represents values for various types of mail tips.</span></span>  <br/> |
+|[<span data-ttu-id="91808-117">MailTipsConfiguration (MailTipsServiceConfiguration)</span><span class="sxs-lookup"><span data-stu-id="91808-117">MailTipsConfiguration (MailTipsServiceConfiguration)</span></span>](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |<span data-ttu-id="91808-118">Enthält Dienstkonfigurationsinformationen für den e-Mail-Spitzen Dienst.</span><span class="sxs-lookup"><span data-stu-id="91808-118">Contains service configuration information for the mail tips service.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="e830e-119">Textwert</span><span class="sxs-lookup"><span data-stu-id="e830e-119">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="91808-119">Textwert</span><span class="sxs-lookup"><span data-stu-id="91808-119">Text value</span></span>
 
-<span data-ttu-id="e830e-120">Der Text ist eine ganze Zahl, die die maximale Größe eines Empfängers darstellt akzeptieren kann.</span><span class="sxs-lookup"><span data-stu-id="e830e-120">The text value is an integer that represents the maximum message size a recipient can accept.</span></span> <span data-ttu-id="e830e-121">Dieser Wert kann in Kilobyte oder Megabyte gemessen werden.</span><span class="sxs-lookup"><span data-stu-id="e830e-121">This value can be measured in kilobytes or megabytes.</span></span>
+<span data-ttu-id="91808-120">Der Textwert ist eine ganze Zahl, die die maximale Nachrichtengröße darstellt, die ein Empfänger annehmen kann.</span><span class="sxs-lookup"><span data-stu-id="91808-120">The text value is an integer that represents the maximum message size a recipient can accept.</span></span> <span data-ttu-id="91808-121">Dieser Wert kann in Kilobyte oder Megabyte gemessen werden.</span><span class="sxs-lookup"><span data-stu-id="91808-121">This value can be measured in kilobytes or megabytes.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="e830e-122">Hinweise</span><span class="sxs-lookup"><span data-stu-id="e830e-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="91808-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="91808-122">Remarks</span></span>
 
-<span data-ttu-id="e830e-123">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="e830e-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="91808-123">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="91808-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="e830e-124">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="e830e-124">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="91808-124">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="91808-124">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="e830e-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="e830e-125">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="e830e-126">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="e830e-126">Schema Name</span></span>  <br/> |<span data-ttu-id="e830e-127">Schematypen</span><span class="sxs-lookup"><span data-stu-id="e830e-127">Types schema</span></span>  <br/> |
-|<span data-ttu-id="e830e-128">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="e830e-128">Validation File</span></span>  <br/> |<span data-ttu-id="e830e-129">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="e830e-129">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="e830e-130">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="e830e-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="e830e-131">False</span><span class="sxs-lookup"><span data-stu-id="e830e-131">False</span></span>  <br/> |
+|<span data-ttu-id="91808-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="91808-125">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="91808-126">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="91808-126">Schema Name</span></span>  <br/> |<span data-ttu-id="91808-127">Schematypen</span><span class="sxs-lookup"><span data-stu-id="91808-127">Types schema</span></span>  <br/> |
+|<span data-ttu-id="91808-128">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="91808-128">Validation File</span></span>  <br/> |<span data-ttu-id="91808-129">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="91808-129">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="91808-130">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="91808-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="91808-131">False</span><span class="sxs-lookup"><span data-stu-id="91808-131">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="e830e-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e830e-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="91808-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="91808-132">See also</span></span>
 
 
 
-- [<span data-ttu-id="e830e-133">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="e830e-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="91808-133">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="91808-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
