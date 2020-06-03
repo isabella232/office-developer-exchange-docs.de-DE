@@ -12,51 +12,51 @@ ms.openlocfilehash: 2cfb8c7e0ccf5454fd5a201819882acbe0924e4a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456465"
 ---
-# <a name="imaddress-string"></a><span data-ttu-id="97a2e-103">IMAddress (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="97a2e-103">ImAddress (String)</span></span>
+# <a name="imaddress-string"></a><span data-ttu-id="419b0-103">IMAddress (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="419b0-103">ImAddress (String)</span></span>
 
-<span data-ttu-id="97a2e-104">Das **IMAddress** -Element enthält die primäre Instant Messaging-Adresse einer Persona.</span><span class="sxs-lookup"><span data-stu-id="97a2e-104">The **ImAddress** element contains the primary instant messaging address of a persona.</span></span> 
+<span data-ttu-id="419b0-104">Das **IMAddress** -Element enthält die primäre Instant Messaging-Adresse einer Persona.</span><span class="sxs-lookup"><span data-stu-id="419b0-104">The **ImAddress** element contains the primary instant messaging address of a persona.</span></span> 
   
 ```XML
 <ImAddress></ImAddress>
 ```
 
- <span data-ttu-id="97a2e-105">**Zeichenfolge**</span><span class="sxs-lookup"><span data-stu-id="97a2e-105">**string**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="97a2e-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="97a2e-106">Attributes and elements</span></span>
+ <span data-ttu-id="419b0-105">**Zeichenfolge**</span><span class="sxs-lookup"><span data-stu-id="419b0-105">**string**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="419b0-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="419b0-106">Attributes and elements</span></span>
 
-<span data-ttu-id="97a2e-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="97a2e-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="419b0-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="419b0-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="97a2e-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="97a2e-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="419b0-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="419b0-108">Attributes</span></span>
 
-<span data-ttu-id="97a2e-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="97a2e-109">None.</span></span>
+<span data-ttu-id="419b0-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="419b0-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="97a2e-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="97a2e-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="419b0-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="419b0-110">Child elements</span></span>
 
-<span data-ttu-id="97a2e-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="97a2e-111">None.</span></span>
+<span data-ttu-id="419b0-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="419b0-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="97a2e-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="97a2e-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="419b0-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="419b0-112">Parent elements</span></span>
 
-[<span data-ttu-id="97a2e-113">Persona</span><span class="sxs-lookup"><span data-stu-id="97a2e-113">Persona</span></span>](persona.md)
+[<span data-ttu-id="419b0-113">Persona</span><span class="sxs-lookup"><span data-stu-id="419b0-113">Persona</span></span>](persona.md)
   
-## <a name="text-value"></a><span data-ttu-id="97a2e-114">Textwert</span><span class="sxs-lookup"><span data-stu-id="97a2e-114">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="419b0-114">Textwert</span><span class="sxs-lookup"><span data-stu-id="419b0-114">Text value</span></span>
 
-<span data-ttu-id="97a2e-115">Der Textwert des **IMAddress** -Elements ist die primäre Instant Messaging-Adresse einer Persona.</span><span class="sxs-lookup"><span data-stu-id="97a2e-115">The text value of the **ImAddress** element is the primary instant messaging address of a persona.</span></span> 
+<span data-ttu-id="419b0-115">Der Textwert des **IMAddress** -Elements ist die primäre Instant Messaging-Adresse einer Persona.</span><span class="sxs-lookup"><span data-stu-id="419b0-115">The text value of the **ImAddress** element is the primary instant messaging address of a persona.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="97a2e-116">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="97a2e-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="419b0-116">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="419b0-116">Remarks</span></span>
 
-<span data-ttu-id="97a2e-117">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="97a2e-117">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="419b0-117">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="419b0-117">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="97a2e-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="97a2e-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="419b0-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="419b0-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="97a2e-119">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="97a2e-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="419b0-119">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="419b0-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="97a2e-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="97a2e-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="97a2e-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="97a2e-121">Schema name</span></span>  <br/> |<span data-ttu-id="97a2e-122">Schematypen</span><span class="sxs-lookup"><span data-stu-id="97a2e-122">Types schema</span></span>  <br/> |
-|<span data-ttu-id="97a2e-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="97a2e-123">Validation file</span></span>  <br/> |<span data-ttu-id="97a2e-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="97a2e-124">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="97a2e-125">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="97a2e-125">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="419b0-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="419b0-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="419b0-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="419b0-121">Schema name</span></span>  <br/> |<span data-ttu-id="419b0-122">Schematypen</span><span class="sxs-lookup"><span data-stu-id="419b0-122">Types schema</span></span>  <br/> |
+|<span data-ttu-id="419b0-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="419b0-123">Validation file</span></span>  <br/> |<span data-ttu-id="419b0-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="419b0-124">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="419b0-125">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="419b0-125">Can be empty</span></span>  <br/> ||
    
 

@@ -12,58 +12,58 @@ ms.openlocfilehash: a8944be111a8dcbe914601ffc4e31794422d58aa
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44441576"
 ---
-# <a name="isquickcontact"></a><span data-ttu-id="426e8-103">IsQuickContact</span><span class="sxs-lookup"><span data-stu-id="426e8-103">IsQuickContact</span></span>
+# <a name="isquickcontact"></a><span data-ttu-id="c0fc5-103">IsQuickContact</span><span class="sxs-lookup"><span data-stu-id="c0fc5-103">IsQuickContact</span></span>
 
-<span data-ttu-id="426e8-104">Das **IsQuickContact** -Element gibt einen booleschen Wert an, der angibt, ob der zugrunde liegende Kontakt ein schnell Kontakt ist.</span><span class="sxs-lookup"><span data-stu-id="426e8-104">The **IsQuickContact** element specifies a Boolean value that indicates whether the underlying contact is a quick contact.</span></span> 
+<span data-ttu-id="c0fc5-104">Das **IsQuickContact** -Element gibt einen booleschen Wert an, der angibt, ob der zugrunde liegende Kontakt ein schnell Kontakt ist.</span><span class="sxs-lookup"><span data-stu-id="c0fc5-104">The **IsQuickContact** element specifies a Boolean value that indicates whether the underlying contact is a quick contact.</span></span> 
   
 ```XML
 <IsQuickContact>true | false</IsQuickContact>
 ```
 
- <span data-ttu-id="426e8-105">**boolean**</span><span class="sxs-lookup"><span data-stu-id="426e8-105">**boolean**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="426e8-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="426e8-106">Attributes and elements</span></span>
+ <span data-ttu-id="c0fc5-105">**boolean**</span><span class="sxs-lookup"><span data-stu-id="c0fc5-105">**boolean**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="c0fc5-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="c0fc5-106">Attributes and elements</span></span>
 
-<span data-ttu-id="426e8-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="426e8-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="c0fc5-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="c0fc5-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="426e8-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="426e8-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="c0fc5-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="c0fc5-108">Attributes</span></span>
 
-<span data-ttu-id="426e8-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="426e8-109">None.</span></span>
+<span data-ttu-id="c0fc5-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="c0fc5-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="426e8-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="426e8-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="c0fc5-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="c0fc5-110">Child elements</span></span>
 
-<span data-ttu-id="426e8-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="426e8-111">None.</span></span>
+<span data-ttu-id="c0fc5-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="c0fc5-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="426e8-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="426e8-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="c0fc5-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="c0fc5-112">Parent elements</span></span>
 
-|<span data-ttu-id="426e8-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="426e8-113">**Element**</span></span>|<span data-ttu-id="426e8-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="426e8-114">**Description**</span></span>|
+|<span data-ttu-id="c0fc5-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="c0fc5-113">**Element**</span></span>|<span data-ttu-id="c0fc5-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="c0fc5-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="426e8-115">Attribution (PersonaAttributionType)</span><span class="sxs-lookup"><span data-stu-id="426e8-115">Attribution (PersonaAttributionType)</span></span>](attribution-personaattributiontype.md) <br/> |<span data-ttu-id="426e8-116">Gibt eine Instanz in einem Array von Attributen für ein **Persona** -Element an.</span><span class="sxs-lookup"><span data-stu-id="426e8-116">Specifies an instance in an array of attributes for a **Persona** element.</span></span>  <br/> |
+|[<span data-ttu-id="c0fc5-115">Attribution (PersonaAttributionType)</span><span class="sxs-lookup"><span data-stu-id="c0fc5-115">Attribution (PersonaAttributionType)</span></span>](attribution-personaattributiontype.md) <br/> |<span data-ttu-id="c0fc5-116">Gibt eine Instanz in einem Array von Attributen für ein **Persona** -Element an.</span><span class="sxs-lookup"><span data-stu-id="c0fc5-116">Specifies an instance in an array of attributes for a **Persona** element.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="426e8-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="426e8-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="c0fc5-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="c0fc5-117">Text value</span></span>
 
-<span data-ttu-id="426e8-118">Der Textwert **true** für das **IsQuickContact** -Element gibt an, dass es sich bei dem Kontakt um einen schnell Kontakt handelt.</span><span class="sxs-lookup"><span data-stu-id="426e8-118">A text value of **true** for the **IsQuickContact** element indicates that the contact is a quick contact.</span></span> <span data-ttu-id="426e8-119">Der Wert **false** gibt an, dass es sich bei dem Kontakt nicht um einen schnell Kontakt handelt.</span><span class="sxs-lookup"><span data-stu-id="426e8-119">A value of **false** indicates that the contact is not a quick contact.</span></span> 
+<span data-ttu-id="c0fc5-118">Der Textwert **true** für das **IsQuickContact** -Element gibt an, dass es sich bei dem Kontakt um einen schnell Kontakt handelt.</span><span class="sxs-lookup"><span data-stu-id="c0fc5-118">A text value of **true** for the **IsQuickContact** element indicates that the contact is a quick contact.</span></span> <span data-ttu-id="c0fc5-119">Der Wert **false** gibt an, dass es sich bei dem Kontakt nicht um einen schnell Kontakt handelt.</span><span class="sxs-lookup"><span data-stu-id="c0fc5-119">A value of **false** indicates that the contact is not a quick contact.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="426e8-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="426e8-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c0fc5-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="c0fc5-120">Remarks</span></span>
 
-<span data-ttu-id="426e8-121">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="426e8-121">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="c0fc5-121">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="c0fc5-121">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="426e8-122">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="426e8-122">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="c0fc5-122">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="c0fc5-122">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="426e8-123">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="426e8-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="c0fc5-123">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="c0fc5-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="426e8-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="426e8-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="426e8-125">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="426e8-125">Schema Name</span></span>  <br/> |<span data-ttu-id="426e8-126">Typschema</span><span class="sxs-lookup"><span data-stu-id="426e8-126">Type schema</span></span>  <br/> |
-|<span data-ttu-id="426e8-127">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="426e8-127">Validation File</span></span>  <br/> |<span data-ttu-id="426e8-128">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="426e8-128">types.xsd</span></span>  <br/> |
-|<span data-ttu-id="426e8-129">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="426e8-129">Can Be Empty</span></span>  <br/> |<span data-ttu-id="426e8-130">false</span><span class="sxs-lookup"><span data-stu-id="426e8-130">false</span></span>  <br/> |
+|<span data-ttu-id="c0fc5-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="c0fc5-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="c0fc5-125">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="c0fc5-125">Schema Name</span></span>  <br/> |<span data-ttu-id="c0fc5-126">Typschema</span><span class="sxs-lookup"><span data-stu-id="c0fc5-126">Type schema</span></span>  <br/> |
+|<span data-ttu-id="c0fc5-127">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="c0fc5-127">Validation File</span></span>  <br/> |<span data-ttu-id="c0fc5-128">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="c0fc5-128">types.xsd</span></span>  <br/> |
+|<span data-ttu-id="c0fc5-129">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="c0fc5-129">Can Be Empty</span></span>  <br/> |<span data-ttu-id="c0fc5-130">False</span><span class="sxs-lookup"><span data-stu-id="c0fc5-130">false</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="426e8-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="426e8-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c0fc5-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="c0fc5-131">See also</span></span>
 
 
 
-- [<span data-ttu-id="426e8-132">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="426e8-132">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="c0fc5-132">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="c0fc5-132">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

@@ -12,33 +12,33 @@ ms.openlocfilehash: 310842eca68fc3987e0a0374c6b7bd5bc686c6d8
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44435037"
 ---
-# <a name="additemtomycalendar"></a><span data-ttu-id="55ce2-103">AddItemToMyCalendar</span><span class="sxs-lookup"><span data-stu-id="55ce2-103">AddItemToMyCalendar</span></span>
+# <a name="additemtomycalendar"></a><span data-ttu-id="06a40-103">AddItemToMyCalendar</span><span class="sxs-lookup"><span data-stu-id="06a40-103">AddItemToMyCalendar</span></span>
 
-<span data-ttu-id="55ce2-104">Das **AddItemToMyCalendar** -Element ist nur zur internen Verwendung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="55ce2-104">The **AddItemToMyCalendar** element is intended for internal use only.</span></span> 
+<span data-ttu-id="06a40-104">Das **AddItemToMyCalendar** -Element ist nur zur internen Verwendung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="06a40-104">The **AddItemToMyCalendar** element is intended for internal use only.</span></span> 
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="55ce2-105">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="55ce2-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="06a40-105">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="06a40-105">Attributes and elements</span></span>
 
-<span data-ttu-id="55ce2-106">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="55ce2-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="06a40-106">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="06a40-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="55ce2-107">Attribute</span><span class="sxs-lookup"><span data-stu-id="55ce2-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="06a40-107">Attribute</span><span class="sxs-lookup"><span data-stu-id="06a40-107">Attributes</span></span>
 
-<span data-ttu-id="55ce2-108">Keine.</span><span class="sxs-lookup"><span data-stu-id="55ce2-108">None.</span></span>
+<span data-ttu-id="06a40-108">Keine.</span><span class="sxs-lookup"><span data-stu-id="06a40-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="55ce2-109">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="55ce2-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="06a40-109">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="06a40-109">Child elements</span></span>
 
-<span data-ttu-id="55ce2-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="55ce2-110">None.</span></span>
+<span data-ttu-id="06a40-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="06a40-110">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="55ce2-111">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="55ce2-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="06a40-111">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="06a40-111">Parent elements</span></span>
 
-<span data-ttu-id="55ce2-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="55ce2-112">None.</span></span>
+<span data-ttu-id="06a40-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="06a40-112">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="55ce2-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="55ce2-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="06a40-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="06a40-113">Remarks</span></span>
 
-<span data-ttu-id="55ce2-114">Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="55ce2-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="06a40-114">Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="06a40-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
   
-<span data-ttu-id="55ce2-115">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="55ce2-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="06a40-115">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="06a40-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
 

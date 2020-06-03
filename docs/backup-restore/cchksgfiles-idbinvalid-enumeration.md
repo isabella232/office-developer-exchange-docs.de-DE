@@ -16,24 +16,24 @@ ms.openlocfilehash: 5a2d32da114391a623d5b0cc2d6c5ca49db78148
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455506"
 ---
-# <a name="cchksgfilesidbinvalid-enumeration"></a><span data-ttu-id="70b68-103">CChkSGFiles. iDbInvalid-Aufzählung</span><span class="sxs-lookup"><span data-stu-id="70b68-103">CChkSGFiles.iDbInvalid enumeration</span></span>
+# <a name="cchksgfilesidbinvalid-enumeration"></a><span data-ttu-id="5663e-103">CChkSGFiles. iDbInvalid-Aufzählung</span><span class="sxs-lookup"><span data-stu-id="5663e-103">CChkSGFiles.iDbInvalid enumeration</span></span>
 
-<span data-ttu-id="70b68-104">**Gilt für:** Exchange Server 2003 | Exchange Server 2007 | Exchange Server 2010 | Exchange Server 2013</span><span class="sxs-lookup"><span data-stu-id="70b68-104">**Applies to:** Exchange Server 2003 | Exchange Server 2007 | Exchange Server 2010 | Exchange Server 2013</span></span>
+<span data-ttu-id="5663e-104">**Gilt für:** Exchange Server 2003 | Exchange Server 2007 | Exchange Server 2010 | Exchange Server 2013</span><span class="sxs-lookup"><span data-stu-id="5663e-104">**Applies to:** Exchange Server 2003 | Exchange Server 2007 | Exchange Server 2010 | Exchange Server 2013</span></span>
   
-<span data-ttu-id="70b68-105">Gibt einen ungültigen Datenbankindex an.</span><span class="sxs-lookup"><span data-stu-id="70b68-105">Indicates an invalid database index.</span></span>
+<span data-ttu-id="5663e-105">Gibt einen ungültigen Datenbankindex an.</span><span class="sxs-lookup"><span data-stu-id="5663e-105">Indicates an invalid database index.</span></span>
   
 ```cs
 Enum { iDbInvalid = 0xFFFFFFF }
 
 ```
 
-## <a name="requirements"></a><span data-ttu-id="70b68-106">Anforderungen</span><span class="sxs-lookup"><span data-stu-id="70b68-106">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="5663e-106">Anforderungen</span><span class="sxs-lookup"><span data-stu-id="5663e-106">Requirements</span></span>
 
-<span data-ttu-id="70b68-107">Exchange Server 2013 enthält nur eine 64-Bit-Version der CHKSGFILES-API.</span><span class="sxs-lookup"><span data-stu-id="70b68-107">Exchange Server 2013 only includes a 64-bit version of the CHKSGFILES API.</span></span>
+<span data-ttu-id="5663e-107">Exchange Server 2013 enthält nur eine 64-Bit-Version der CHKSGFILES-API.</span><span class="sxs-lookup"><span data-stu-id="5663e-107">Exchange Server 2013 only includes a 64-bit version of the CHKSGFILES API.</span></span>
   
-<span data-ttu-id="70b68-108">Das Konto, unter dem die Anwendung betrieben wird, muss über Lesezugriffsberechtigungen für die zu überprüfenden Datenbank-und Protokolldateien verfügen.</span><span class="sxs-lookup"><span data-stu-id="70b68-108">The account that the application is running under must have read access permissions to the database and log files that are to be checked.</span></span>
+<span data-ttu-id="5663e-108">Das Konto, unter dem die Anwendung betrieben wird, muss über Lesezugriffsberechtigungen für die zu überprüfenden Datenbank-und Protokolldateien verfügen.</span><span class="sxs-lookup"><span data-stu-id="5663e-108">The account that the application is running under must have read access permissions to the database and log files that are to be checked.</span></span>
   
 
