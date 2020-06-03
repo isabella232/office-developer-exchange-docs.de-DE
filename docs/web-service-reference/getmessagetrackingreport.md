@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b6ffa8ef-90f6-402d-afac-c3f5ee55cf49
-description: Das GetMessageTrackingReport-Element enthält die Anforderung für den Vorgang GetMessageTrackingReport zum Abrufen der vollständigen Nachricht Nachverfolgen der Bericht für den angegebenen ID.
-ms.openlocfilehash: cb16f6e9d322cefb0d59c962af8e2f60ebae0e90
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetMessageTrackingReport-Element enthält die Anforderung für den GetMessageTrackingReport-Vorgang zum Abrufen des vollständigen Nachrichtenverfolgungsberichts für die angegebene ID.
+ms.openlocfilehash: 30596acd209580147e0f03e12a7868502159b29c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758738"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44466577"
 ---
 # <a name="getmessagetrackingreport"></a>GetMessageTrackingReport
 
-Das **GetMessageTrackingReport** -Element enthält die Anforderung für den [GetMessageTrackingReport Vorgang](getmessagetrackingreport-operation.md) zum Abrufen der vollständigen Nachricht Nachverfolgen der Bericht für den angegebenen ID. 
+Das **GetMessageTrackingReport** -Element enthält die Anforderung für den [GetMessageTrackingReport-Vorgang](getmessagetrackingreport-operation.md) zum Abrufen des vollständigen Nachrichtenverfolgungsberichts für die angegebene ID. 
   
 ```XML
 <GetMessageTrackingReport>
@@ -48,29 +48,29 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Bereich (NonEmptyStringType)](scope-nonemptystringtype.md) <br/> |Gibt an, wo die Suche durchzuführen. Dieses Element ist erforderlich.  <br/> |
-|[Berichtsvorlage](reporttemplate.md) <br/> |Gibt den Typ der laufenden Bericht abgerufen. Dieses Element ist erforderlich.  <br/> |
-|[RecipientFilter](recipientfilter.md) <br/> |Gibt eine Empfängeradresse mit den angegebenen Nachrichtenverfolgungsbericht verwenden. Dieses Element ist optional.  <br/> |
-|[MessageTrackingReportId](messagetrackingreportid.md) <br/> |Gibt eine Identitätszeichenfolge, die aus der **FindMessageTrackingReport** -Operation abgerufen wurde. Dieses Element ist erforderlich.  <br/> |
-|[ReturnQueueEvents](returnqueueevents.md) <br/> |Gibt an, dass die Person, die die Aufgabe ausgeführt wird, eine privilegierte Rolle wurde. Dieses Element ist optional.  <br/> |
-|[DiagnosticsLevel](diagnosticslevel.md) <br/> |Gibt die Timing und Leistungsinformationen, die verwendet wird, um den Nachrichtenverfolgungsbericht abgeleitet werden. Dieses Element ist optional.  <br/> |
-|[Eigenschaften (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md) <br/> |Gibt eine Liste der Eigenschaften für eine oder mehrere Tracking an. Dieses Element ist optional.  <br/> |
+|[Bereich (NonEmptyStringType)](scope-nonemptystringtype.md) <br/> |Gibt an, wo die Suche durchgeführt werden soll. Dieses Element ist erforderlich.  <br/> |
+|[Report Template](reporttemplate.md) <br/> |Gibt den Typ des abzurufenden Überwachungsberichts an. Dieses Element ist erforderlich.  <br/> |
+|[RecipientFilter](recipientfilter.md) <br/> |Gibt eine Empfängeradresse an, die mit dem angegebenen Überwachungsbericht verwendet werden soll. Dieses Element ist optional.  <br/> |
+|[MessageTrackingReportId](messagetrackingreportid.md) <br/> |Gibt eine Identitätszeichenfolge an, die aus dem **FindMessageTrackingReport** -Vorgang abgerufen wurde. Dieses Element ist erforderlich.  <br/> |
+|[ReturnQueueEvents](returnqueueevents.md) <br/> |Gibt an, dass die Person, die den Vorgang ausführt, eine privilegierte Rolle besitzt. Dieses Element ist optional.  <br/> |
+|[DiagnosticsLevel](diagnosticslevel.md) <br/> |Gibt Timing-und Leistungsinformationen an, die zum Ableiten des Überwachungsberichts verwendet werden. Dieses Element ist optional.  <br/> |
+|[Eigenschaften (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md) <br/> |Gibt eine Liste mit einer oder mehreren Überwachungseigenschaften an. Dieses Element ist optional.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

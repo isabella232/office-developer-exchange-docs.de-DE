@@ -5,37 +5,37 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
 api_name:
 - GetItem
 api_type:
 - schema
 ms.assetid: e8492e3b-1c8d-4b14-8070-9530f8306edd
-description: GetItem-Vorgang ermöglicht dem Benutzer Zugriff auf Informationen über E-mail-Nachrichten.
-ms.openlocfilehash: 133a893ec7cd0c206d9db573f8b952eb3c2286df
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetItem-Vorgang ermöglicht dem Benutzer den Zugriff auf Informationen über e-Mail-Nachrichten.
+localization_priority: Priority
+ms.openlocfilehash: f8be01cad3d4c4534f66593cbe8bcee477726972
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758717"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459994"
 ---
 # <a name="getitem-operation-email-message"></a>GetItem-Vorgang (e-Mail-Nachricht)
 
-GetItem-Vorgang ermöglicht dem Benutzer Zugriff auf Informationen über E-mail-Nachrichten.
+Der GetItem-Vorgang ermöglicht dem Benutzer den Zugriff auf Informationen über e-Mail-Nachrichten.
   
-## <a name="using-the-getitem-operation-for-messages"></a>Mithilfe der GetItem Operation für Nachrichten
+## <a name="using-the-getitem-operation-for-messages"></a>Verwenden des GetItem-Vorgangs für Nachrichten
 
-Die Anforderung GetItem benötigen die folgende Informationen:
+Die GetItem-Anforderung muss über die folgenden Informationen verfügen:
   
-- Das [ItemId](itemid.md) -Element zum Identifizieren der Elementinformationen, die zurückgegeben werden soll. 
+- Das [ItemID](itemid.md) -Element zum Identifizieren der zurückzugebenden Elementinformationen. 
     
-- Das [ItemShape](itemshape.md) -Element zum Identifizieren der Elementeigenschaften zurückgegeben werden sollen. 
+- Das [ItemShape](itemshape.md) -Element, um die zurückzugebenden Elementeigenschaften zu identifizieren. 
     
-## <a name="getitem-request-example"></a>GetItem-anforderungsbeispiel
+## <a name="getitem-request-example"></a>GetItem-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung GetItem veranschaulicht, wie auf Informationen über E-mail-Nachrichten zugreifen.
+Im folgenden Beispiel einer GetItem-Anforderung wird gezeigt, wie auf Informationen zu e-Mail-Nachrichten zugegriffen werden kann.
   
 ### <a name="code"></a>Code
 
@@ -45,11 +45,11 @@ Im folgenden Beispiel wird eine Anforderung GetItem veranschaulicht, wie auf Inf
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
     <GetItem
-      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <ItemShape>
         <t:BaseShape>Default</t:BaseShape>
         <t:IncludeMimeContent>true</t:IncludeMimeContent>
@@ -74,15 +74,15 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [IncludeMimeContent](includemimecontent.md)
     
-- [Artikelnummern ein.](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
-## <a name="successful-getitem-e-mail-message-response-example"></a>Erfolgreiche GetItem (e-Mail-Nachricht) antwortbeispiel
+## <a name="successful-getitem-e-mail-message-response-example"></a>Erfolgreiches GetItem (e-Mail-Nachricht)-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung GetItem.
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die GetItem-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -93,12 +93,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung GetIte
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -157,11 +157,11 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die Anforderung GetIte
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Die MIME-Inhalten, Ordner und Element-IDs wurden gekürzt, um die Lesbarkeit zu erhalten.
+Die MIME-Inhalte, Ordner und Element-IDs wurden verkürzt, um die Lesbarkeit zu erhalten.
   
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -179,21 +179,21 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Message](message-ex15websvcsotherref.md)
     
-- [' MimeContent '](mimecontent.md)
+- [MimeContent](mimecontent.md)
     
 - [ItemId](itemid.md)
     
 - [Betreff](subject.md)
     
-- [Vertraulichkeit](sensitivity.md)
+- [Sensitivity](sensitivity.md)
     
 - [Body](body.md)
     
-- [Size](size.md)
+- [Größe](size.md)
     
 - [DateTimeSent](datetimesent.md)
     
-- ["Datetimecreated"](datetimecreated.md)
+- [DateTimeCreated](datetimecreated.md)
     
 - [ResponseObjects](responseobjects.md)
     
@@ -213,21 +213,21 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
-- [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
+- [Routingtype (e-mailemailtype)](routingtype-emailaddresstype.md)
     
 - [IsReadReceiptRequested](isreadreceiptrequested.md)
     
 - [IsDeliveryReceiptRequested](isdeliveryreceiptrequested.md)
     
-- [Von](from.md)
+- [From](from.md)
     
 - [IsRead](isread.md)
     
-## <a name="getitem-e-mail-message-error-response-example"></a>GetItem (e-Mail-Nachricht) Fehler antwortbeispiel
+## <a name="getitem-e-mail-message-error-response-example"></a>Fehlerantwort-Beispiel für GetItem (e-Mail-Nachricht)
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine GetItem-Anforderung. Der Fehler wurde durch ein Versuch, eine ungültige zusätzliche Eigenschaft abzurufen verursacht.
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine GetItem-Anforderung. Der Fehler wurde durch einen Versuch verursacht, eine ungültige zusätzliche Eigenschaft abzurufen.
   
 ### <a name="code"></a>Code
 
@@ -238,12 +238,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine GetItem-Anforderung. Der 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Error">
           <m:MessageText>Property is not valid for this object type.</m:MessageText>
@@ -260,7 +260,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine GetItem-Anforderung. Der 
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
@@ -278,7 +278,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [MessageXml](messagexml.md)
+- [Messagexml verwendet](messagexml.md)
     
 - [FieldURI](fielduri.md)
     
@@ -286,5 +286,5 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
 
 
 
-[GetItem Operation](getitem-operation.md)
+[GetItem-Vorgang](getitem-operation.md)
 

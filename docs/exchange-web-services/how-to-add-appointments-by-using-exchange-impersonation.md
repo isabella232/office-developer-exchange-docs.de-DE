@@ -3,41 +3,41 @@ title: Hinzufügen von Terminen mit Exchange-Identitätswechsel
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 78d5e51b-900f-4302-b9a8-fdc9aa4b65a5
-description: Informationen Sie zur Verwendung des Identitätswechsels mit dem EWS Managed API oder EWS in Exchange Benutzerkalendern Termine hinzu.
-ms.openlocfilehash: ab10a7d65a5603a84e12d918dd54198927d88b8a
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: In diesem Artikel erfahren Sie, wie Sie den Identitätswechsel mit dem verwaltete EWS-API oder EWS in Exchange verwenden, um Kalendern von Benutzern Termine hinzuzufügen.
+localization_priority: Priority
+ms.openlocfilehash: b1473d72113f8cc07d05364a4d87fedf23c7351d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353455"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455331"
 ---
 # <a name="add-appointments-by-using-exchange-impersonation"></a>Hinzufügen von Terminen mit Exchange-Identitätswechsel
 
-Informationen Sie zur Verwendung des Identitätswechsels mit dem EWS Managed API oder EWS in Exchange Benutzerkalendern Termine hinzu.
+In diesem Artikel erfahren Sie, wie Sie den Identitätswechsel mit dem verwaltete EWS-API oder EWS in Exchange verwenden, um Kalendern von Benutzern Termine hinzuzufügen.
   
-Sie können eine dienstanwendung erstellen, die Terminen direkt in einen Exchange-Kalender mithilfe eines Dienstkontos, das der **AppplicationImpersonation**[-Rolle aktiviert](how-to-configure-impersonation.md)wurde eingefügt. Wenn Sie Identitätswechsel verwenden, fungiert wie der Benutzer die Anwendung; Es ist, als würde der Benutzer den Termin mithilfe eines Clients wie Outlook im Kalender hinzugefügt. 
+Sie können eine Dienstanwendung erstellen, die Termine direkt in einen Exchange-Kalender einfügt, indem Sie ein Dienstkonto verwenden, für das die Rolle **ApplicationImpersonation** [aktiviert](how-to-configure-impersonation.md)ist. Wenn Sie den Identitätswechsel verwenden, fungiert die Anwendung als Benutzer; Es ist, als ob der Benutzer den Termin mithilfe eines Clients wie Outlook zum Kalender hinzugefügt hat. 
   
-Wenn Sie Identitätswechsel verwenden, beachten Sie Folgendes:
+Beachten Sie beim Verwenden eines Identitätswechsels Folgendes:
   
-- Das Dienstkonto muss Ihre [ExchangeService](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.aspx) -Objekt gebunden sein. Das gleiche **ExchangeService** -Objekt können Sie Identitätswechsel für mehrere Konten durch Ändern der [ImpersonatedUserId](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid.aspx) -Eigenschaft für jedes Konto, das Sie imitieren möchten. 
+- Das [Datei "ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.aspx) -Objekt muss an das Dienstkonto gebunden sein. Sie können das gleiche **Datei "ExchangeService** -Objekt verwenden, um die Identität mehrerer Konten zu imitieren, indem Sie die [ImpersonatedUserId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid.aspx) -Eigenschaft für jedes Konto ändern, für das Sie den Identitätswechsel durchführen möchten. 
     
-- Jedes Element, das Sie in einem Konto mit angenommener speichern kann nur einmal verwendet werden. Wenn Sie den gleichen Termin in mehrere Konten speichern möchten, müssen Sie beispielsweise ein [Termin](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.aspx) -Objekt für jedes Konto erstellen. 
+- Jedes Element, das Sie in einem imitierten Konto speichern, kann nur einmal verwendet werden. Wenn Sie beispielsweise den gleichen Termin in mehreren Konten speichern möchten, müssen Sie für jedes Konto ein [Termin](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.aspx) Objekt erstellen. 
     
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Die Anwendung benötigt ein Konto mit an den Exchange-Server hergestellt werden soll, bevor es Identitätswechsel verwenden kann. Es wird empfohlen, dass Sie ein Dienstkonto für die Anwendung verwenden, die Anwendung Identitätswechselrolle für die Konten zugewiesen wurde, die auf sie zugreifen. Weitere Informationen finden Sie unter [Configure Identitätswechsel](how-to-configure-impersonation.md)
+Ihre Anwendung benötigt ein Konto, das zum Herstellen einer Verbindung mit dem Exchange-Server verwendet wird, bevor der Identitätswechsel verwendet werden kann. Es wird empfohlen, ein Dienstkonto für die Anwendung zu verwenden, der die Rolle "Anwendungsidentitätswechsel" für die Konten erteilt wurde, auf die Sie zugreift. Weitere Informationen finden Sie unter [Konfigurieren eines Identitätswechsels](how-to-configure-impersonation.md) .
   
-## <a name="add-appointments-by-using-impersonation-with-the-ews-managed-api"></a>Hinzufügen von Terminen durch Verwenden des Identitätswechsels mit der EWS Managed API
+## <a name="add-appointments-by-using-impersonation-with-the-ews-managed-api"></a>Hinzufügen von Terminen mithilfe des Identitätswechsels mit dem verwaltete EWS-API
 
-Im folgende Beispiel werden im Kalender von einem oder mehreren Exchange-Konten eines Termins oder einer Besprechung hinzugefügt. Die Methode hat drei Parameter.
+Im folgenden Beispiel wird dem Kalender eines oder mehrerer Exchange-Konten ein Termin oder eine Besprechung hinzugefügt. Die-Methode benötigt drei Parameter.
   
--  _Dienst_ – ein **ExchangeService** -Objekt gebunden Konto die Service-Anwendung auf dem Exchange-Server. 
+-  _Dienst_ – ein **Datei "ExchangeService** -Objekt, das an das Konto der Dienstanwendung auf dem Exchange-Server gebunden ist. 
     
--  _EmailAddresses_ – ein [System.List](http://msdn.microsoft.com/library/6sh2ey19.aspx) -Objekt, das eine Liste der SMTP-e-Mail-Adresszeichenfolgen enthält. 
+-  e _-Mail-Adressen – ein_ [System. List](https://msdn.microsoft.com/library/6sh2ey19.aspx) -Objekt, das eine Liste von SMTP-e-Mail-Adress Zeichenfolgen enthält. 
     
--  _Factory_ – ein Objekt, das die **IAppointmentFactory** -Schnittstelle implementiert wird. Diese Schnittstelle verfügt über eine Methode, **GetAppointment** , die ein **ExchangeService** -Objekt als Parameter akzeptiert und gibt ein **Termin** -Objekt zurück. Die **IAppointmentFactory** -Schnittstelle definiert ist [IAppointmentFactory-Schnittstelle](#bk_IAppointmentFactory).
+-  _Factory_ – ein Objekt, das die **IAppointmentFactory** -Schnittstelle implementiert. Diese Schnittstelle hat eine Methode, **gettermination** , die ein **Datei "ExchangeService** -Objekt als Parameter akzeptiert und ein **Termin** Objekt zurückgibt. Die **IAppointmentFactory** -Schnittstelle ist [IAppointmentFactory-Schnittstelle](#bk_IAppointmentFactory)definiert.
     
 ```cs
 private static void CreateAppointments(ExchangeService service, List<string> emailAddresses, IAppointmentFactory factory)
@@ -73,12 +73,12 @@ private static void CreateAppointments(ExchangeService service, List<string> ema
 }
 ```
 
-Beim Speichern des Termins überprüft der Code, um zu bestimmen, ob die Eigenschaft ["RequiredAttendees"](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.requiredattendees.aspx) alle Teilnehmer hinzugefügt wurden. Wenn sie aufweisen, wird die [Appointment.Save](http://msdn.microsoft.com/library/dd635394.aspx) -Methode mit dem [SendToAllAndSaveCopy](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.sendinvitationsmode.aspx) -Enumerationswert aufgerufen, damit die Teilnehmer Besprechungsanfragen empfangen; Andernfalls wird die **Appointment.Save** -Methode mit dem [SendToNone](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.sendinvitationsmode.aspx) -Enumerationswert aufgerufen, sodass der Termin in den angenommener Kalender des Benutzers, mit der [Appointment.IsMeeting](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.ismeeting.aspx) -Eigenschaft auf **false**festgelegt gespeichert wird.
+Beim Speichern des Termins überprüft der Code, um zu bestimmen, ob Teilnehmer der [RequiredAttendees](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.requiredattendees.aspx) -Eigenschaft hinzugefügt wurden. Wenn dies der Fall ist, wird die [Termin. Save](https://msdn.microsoft.com/library/dd635394.aspx) -Methode mit dem [SendToAllAndSaveCopy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.sendinvitationsmode.aspx) -Enumerationswert aufgerufen, sodass die Teilnehmer Besprechungsanfragen erhalten; Andernfalls wird die **Termin. Save** -Methode mit dem [SendToNone](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.sendinvitationsmode.aspx) -Aufzählungswert aufgerufen, sodass der Termin im Kalender des imitierten Benutzers gespeichert wird, wobei die Eigenschaft [Termin. ismeeting](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.ismeeting.aspx) auf **false**festgelegt ist.
   
 ### <a name="iappointmentfactory-interface"></a>IAppointmentFactory-Schnittstelle
 <a name="bk_IAppointmentFactory"> </a>
 
-Da Sie ein neues Objekt **Termin** jedes Mal, die Sie einen Termin im Kalender des Benutzers ein angenommener speichern möchten benötigen, abstrahiert die Schnittstelle **IAppointmentFactory** das Objekt zum Auffüllen der einzelnen **Appointment** -Objekts verwendet wird. Diese Version ist eine einfache Schnittstelle, die nur eine Methode, **GetAppointment**, enthält, die ein **ExchangeService** -Objekt als Parameter akzeptiert und gibt ein neues **Appointment** -Objekt auf dieses Objekt **ExchangeService** gebunden. 
+Da Sie jedes Mal ein neues **Termin** Objekt benötigen, wenn Sie einen Termin für den Kalender eines imitierten Benutzers speichern möchten, abstrahiert die **IAppointmentFactory** -Schnittstelle das Objekt, mit dem jedes **Termin** Objekt aufgefüllt wird. Diese Version ist eine einfache Schnittstelle, die nur eine Methode, **gettermine**, enthält, die ein **Datei "ExchangeService** -Objekt als Parameter verwendet und ein neues **Termin** Objekt zurückgibt, das an dieses **Datei" ExchangeService** -Objekt gebunden ist. 
   
 ```cs
 interface IAppointmentFactory
@@ -87,7 +87,7 @@ interface IAppointmentFactory
 }
 ```
 
-Im folgenden Beispiel **AppointmentFactory** -Klasse wird gezeigt, dass eine Implementierung der **IAppointmentFactory** -Schnittstelle, die einem einfachen Termin zurückgibt drei Tage von jetzt auftritt. Auskommentieren der `appointment.RequiredAttendees.Add` Zeile, einer Besprechung und die e-Mail-Adresse angegeben, dass Zeile eine Besprechungsanfrage mit der angenommener als Organisator aufgeführte Benutzer erhält, wird die **GetAppointment** -Methode zurück. 
+Das folgende **AppointmentFactory** -Klassen Beispiel zeigt eine Implementierung der **IAppointmentFactory** -Schnittstelle, die einen einfachen Termin zurückgibt, der drei Tage ab jetzt auftritt. Wenn Sie die Kommentar `appointment.RequiredAttendees.Add` Zeilen entfernen, gibt die **gettermine** -Methode eine Besprechung zurück, und die in dieser Verbindung angegebene e-Mail-Adresse erhält eine Besprechungsanfrage, wobei der imitierte Benutzer als Organisator aufgeführt wird. 
   
 ```cs
 class AppointmentFactory : IAppointmentFactory
@@ -109,16 +109,16 @@ class AppointmentFactory : IAppointmentFactory
 
 ```
 
-## <a name="add-appointments-by-using-impersonation-with-ews"></a>Hinzufügen von Terminen durch Verwenden des Identitätswechsels mit Exchange-Webdienste
+## <a name="add-appointments-by-using-impersonation-with-ews"></a>Hinzufügen von Terminen mithilfe des Identitätswechsels mit EWS
 
-EWS ermöglicht Anwendung Identitätswechsel verwenden, Hinzufügen von Elementen zu einem Kalender in Auftrag Besitzer des Kalenders. Dieses Beispiel zeigt, wie Sie den [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) -Vorgang verwenden, um einen Termin im Kalender ein angenommener Konto hinzufügen. 
+Mit EWS können Sie die Anwendung verwenden, um einem Kalender im Auftrag des Besitzers des Kalenders Elemente hinzuzufügen. In diesem Beispiel wird gezeigt, wie Sie mithilfe des [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) -Vorgangs einen Termin zum Kalender eines imitierten Kontos hinzufügen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
     <t:TimeZoneContext>
@@ -148,26 +148,26 @@ EWS ermöglicht Anwendung Identitätswechsel verwenden, Hinzufügen von Elemente
 </soap:Envelope>
 ```
 
-Beachten Sie, dass als das Hinzufügen des Elements **"ExchangeImpersonation"** im SOAP-Header, um das Konto anzugeben, das wir imitiert wird, ist dies der gleichen XML-Anforderung verwendet, um einen Termin ohne Verwenden des Identitätswechsels zu erstellen. 
+Beachten Sie, dass es sich nicht um das Hinzufügen des **ExchangeImpersonation** -Elements im SOAP-Header handelt, um das Konto anzugeben, von dem die Identität angenommen wird, sondern dieselbe XML-Anforderung, die zum Erstellen eines Termins verwendet wird, ohne den Identitätswechsel zu verwenden. 
   
 Das folgende Beispiel zeigt den Antwort-XML-Code, der vom **CreateItem**-Vorgang zurückgegeben wird. 
   
 > [!NOTE]
-> Die Attribute **ItemId** und **ChangeKey** werden zur besseren Lesbarkeit gekürzt. 
+> Die Attribute **ItemID** und **ChangeKey** werden zur Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="775" MinorBuildNumber="7" Version="V2_4" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -184,14 +184,14 @@ Das folgende Beispiel zeigt den Antwort-XML-Code, der vom **CreateItem**-Vorgang
 
 ```
 
-Dies ist wiederum den gleichen XML-Code, die zurückgegeben wird, wenn Sie die **CreateItem** -Operation verwenden, ohne das Verwenden des Identitätswechsels. 
+Auch dies ist derselbe XML-Code, der zurückgegeben wird, wenn Sie den **CreateItem** -Vorgang ohne Verwendung des Identitätswechsels verwenden. 
   
 ## <a name="see-also"></a>Siehe auch
 
 
 - [Identitätswechsel und EWS in Exchange](impersonation-and-ews-in-exchange.md)
     
-- [ApplicationImpersonation-Rolle](http://technet.microsoft.com/en-us/library/dd776119%28v=exchg.150%29.aspx)
+- [ApplicationImpersonation-Rolle](https://technet.microsoft.com/library/dd776119%28v=exchg.150%29.aspx)
     
 - [Konfigurieren eines Identitätswechsels](how-to-configure-impersonation.md)
     
@@ -201,6 +201,6 @@ Dies ist wiederum den gleichen XML-Code, die zurückgegeben wird, wenn Sie die *
     
 - [CreateItem-Vorgang (Kalenderelement)](../web-service-reference/createitem-operation-calendar-item.md)
     
-- [ExchangeService.ImpersonatedUserId-Eigenschaft](https://docs.microsoft.com/en-us/dotnet/api/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid?view=exchange-ews-api)
+- [Datei "ExchangeService. ImpersonatedUserId-Eigenschaft](https://docs.microsoft.com/dotnet/api/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid?view=exchange-ews-api)
     
 

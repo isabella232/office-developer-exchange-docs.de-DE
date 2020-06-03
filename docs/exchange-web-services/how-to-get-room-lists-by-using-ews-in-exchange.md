@@ -1,52 +1,52 @@
 ---
-title: Rufen Sie Raumlisten mithilfe von EWS in Exchange ab
+title: Abrufen von Raumlisten mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 15980e4a-e41c-4194-829a-cadbdf365bf1
-description: Erfahren Sie, wie eine Liste mit den Chatroom Listen in Ihrer Organisation oder eine einzelne Raumliste von einem Exchange-Server mithilfe des EWS Managed API oder EWS erhalten möchten.
-ms.openlocfilehash: 404a31fb6c8d98bdbba4c79ed6912c333a44d04b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: In diesem Artikel erfahren Sie, wie Sie eine Liste aller Raumlisten in Ihrer Organisation oder eine einzelne Raumliste von einem Exchange-Server mithilfe der verwaltete EWS-API oder EWS abrufen.
+localization_priority: Priority
+ms.openlocfilehash: 7c571b0550f861552cdbe8c5b30138101c9fc788
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756895"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455793"
 ---
-# <a name="get-room-lists-by-using-ews-in-exchange"></a>Rufen Sie Raumlisten mithilfe von EWS in Exchange ab
+# <a name="get-room-lists-by-using-ews-in-exchange"></a>Abrufen von Raumlisten mithilfe von EWS in Exchange
 
-Erfahren Sie, wie eine Liste mit den Chatroom Listen in Ihrer Organisation oder eine einzelne Raumliste von einem Exchange-Server mithilfe des EWS Managed API oder EWS erhalten möchten.
+In diesem Artikel erfahren Sie, wie Sie eine Liste aller Raumlisten in Ihrer Organisation oder eine einzelne Raumliste von einem Exchange-Server mithilfe der verwaltete EWS-API oder EWS abrufen.
   
-Sie können die EWS Managed API oder EWS zum Abrufen von Informationen zu Chatrooms und wie die Chatrooms in Ihrer Organisation gruppiert werden. Raumlisten vorhanden nicht standardmäßig. der Administrator muss erstellen und zu organisieren. In der Regel sind nach Standort oder Abteilung, organisiert, wie im folgenden Beispiel dargestellt.
+Sie können die verwaltete EWS-API oder EWS verwenden, um Informationen zu den Räumen zu erhalten und zu erfahren, wie die Räume in Ihrer Organisation gruppiert sind. Raumlisten sind standardmäßig nicht vorhanden; Ihr Administrator muss diese erstellen und organisieren. Normalerweise sind Sie nach Standort oder Abteilung organisiert, wie im folgenden Beispiel dargestellt.
   
-**Auflisten von Contoso Raum-Namen und e-Mail-Adressen**
+**Namen und e-Mail-Adressen von Contoso Room List**
 
-|**Name der Raumliste**|**E-Mail-Adresse des Raumliste**|
+|**Name der Raumliste**|**E-Mail-Adresse der Raumliste**|
 |:-----|:-----|
-|Erstellen von 11 Raumliste  <br/> |Bldg11rooms@contoso.com  <br/> |
-|Integrität Science Building Konferenz Raumliste  <br/> |HSbldgrooms@contoso.edu  <br/> |
-|Floor-Besprechungsräumen Buchhaltung  <br/> |Acctfloor300@contoso.com  <br/> |
+|Erstellen von 11 Raumlisten  <br/> |Bldg11rooms@contoso.com  <br/> |
+|Health Science Building Konferenzraum Liste  <br/> |HSbldgrooms@contoso.edu  <br/> |
+|Besprechungsräume für die Buchhaltung  <br/> |Acctfloor300@contoso.com  <br/> |
    
-Jeder Chatroom in eine Raumliste weist eine Name und e-Mail-Adresse zugeordnet.
+Jedem Raum in einer Raumliste ist ein Name und eine e-Mail-Adresse zugeordnet.
   
-**Contoso Raum Namen und e-Mail-Adressen**
+**Namen und e-Mail-Adressen des Contoso-Raums**
 
 |**Name des Raums**|**E-Mail-Adresse des Raums**|
 |:-----|:-----|
-|Conf Raum 11/101 (8) Audio-Video  <br/> |Cf11101@contoso.com  <br/> |
-|HS Demo Lab (100)  <br/> |Hs101@contoso.edu  <br/> |
-|Accounting 305 WB  <br/> |Acct305@contoso.com  <br/> |
+|Conf Room 11/101 (8) AV  <br/> |Cf11101@contoso.com  <br/> |
+|HS-demonstrationslabor (100)  <br/> |Hs101@contoso.edu  <br/> |
+|Buchhaltung 305 WB  <br/> |Acct305@contoso.com  <br/> |
    
-Sie können eine Liste abrufen, die alle Chatroom-Listen enthält, mithilfe der [ExchangeService.GetRoomLists](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.exchangeservice.getroomlists%28v=exchg.80%29.aspx) EWS Managed API-Methode oder die [GetRoomLists](http://msdn.microsoft.com/library/55d451f9-547f-44ac-872e-9cb220ea7b7c%28Office.15%29.aspx) EWS-Vorgang. 
+Sie können eine Liste abrufen, die alle Raumlisten enthält, indem Sie entweder die [Datei "ExchangeService. GetRoomLists](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.getroomlists%28v=exchg.80%29.aspx) verwaltete EWS-API-Methode oder den [GetRoomLists](https://msdn.microsoft.com/library/55d451f9-547f-44ac-872e-9cb220ea7b7c%28Office.15%29.aspx) -EWS-Vorgang verwenden. 
   
-Sie können eine einzelne Raumliste abrufen, die alle Chatrooms für einen Standort oder eine Abteilung durch Bereitstellen der e-Mail-Adresse mithilfe der [GetRooms](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.exchangeservice.getrooms%28v=exchg.80%29.aspx) EWS Managed API-Methode oder die [GetRooms](http://msdn.microsoft.com/library/5501ddc0-3bfa-4da6-8e15-4223ca5499a3%28Office.15%29.aspx) EWS-Vorgang enthält. Wenn Sie eine Auflistung von Chatrooms, die eine Raumliste zugeordnet haben, können Sie dann durch die Auflistung zum Identifizieren der Raum- oder Chatrooms gewünschten, indem e-Mail-Adresse, oder suchen Sie nach Schlüsselwörtern in der Name, beispielsweise "AV" oder "Lab" suchen. 
+Sie können eine einzelne Raumliste abrufen, die alle Räume für einen Standort oder eine Abteilung enthält, indem Sie Ihre e-Mail-Adresse mithilfe der [getrooms](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.getrooms%28v=exchg.80%29.aspx) verwaltete EWS-API-Methode oder der [getrooms](https://msdn.microsoft.com/library/5501ddc0-3bfa-4da6-8e15-4223ca5499a3%28Office.15%29.aspx) -EWS-Operation angeben. Wenn Sie eine Sammlung von Räumen haben, die einer Raumliste zugeordnet sind, können Sie die Sammlung durchsuchen, um den gewünschten Raum oder die Räume zu identifizieren, entweder per e-Mail-Adresse oder nach Schlüsselwörtern im Namen, beispielsweise "AV" oder "Lab". 
   
-## <a name="get-all-room-lists-by-using-the-ews-managed-api"></a>Rufen Sie alle Chatroom-Listen ab, indem Sie die EWS Managed API
+## <a name="get-all-room-lists-by-using-the-ews-managed-api"></a>Abrufen aller Raumlisten mithilfe der verwaltete EWS-API
 <a name="bk_GetRoomListewsma"> </a>
 
-Im folgenden Beispiel wird gezeigt, wie eine Liste abrufen, die alle Chatroom-Listen in Ihrer Organisation mithilfe der [GetRoomLists](https://msdn.microsoft.com/library/Microsoft.Exchange.WebServices.Data.ExchangeService.GetRoomLists.aspx) -Methode enthält. 
+Im folgenden Beispiel wird gezeigt, wie Sie mithilfe der [GetRoomLists](https://msdn.microsoft.com/library/Microsoft.Exchange.WebServices.Data.ExchangeService.GetRoomLists.aspx) -Methode eine Liste mit allen Raumlisten in Ihrer Organisation abrufen. 
   
-In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben. 
+In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben. 
   
 ```cs
 // Return all the room lists in the organization.
@@ -60,15 +60,15 @@ foreach (EmailAddress address in myRoomLists)
 
 ```
 
-## <a name="get-all-room-lists-by-using-ews"></a>Rufen Sie aller Raumlisten mithilfe der Exchange-Webdienste ab
+## <a name="get-all-room-lists-by-using-ews"></a>Abrufen aller Raumlisten mithilfe von EWS
 <a name="bk_GetRoomListews"> </a>
 
-Im folgenden Beispiel wird gezeigt, wie eine Auflistung von Ihrer Organisation [RoomLists](http://msdn.microsoft.com/library/2b190823-b11e-4635-97e4-3aba5865fd05%28Office.15%29.aspx) mithilfe des Vorgangs [GetRoomLists](http://msdn.microsoft.com/library/55d451f9-547f-44ac-872e-9cb220ea7b7c%28Office.15%29.aspx) abrufen. Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die EWS Managed API zum [Abrufen aller Raumlisten](#bk_GetRoomListewsma)verwenden.
+Im folgenden Beispiel wird gezeigt, wie eine Auflistung aller [RoomLists](https://msdn.microsoft.com/library/2b190823-b11e-4635-97e4-3aba5865fd05%28Office.15%29.aspx) Ihrer Organisation mithilfe des [GetRoomLists](https://msdn.microsoft.com/library/55d451f9-547f-44ac-872e-9cb220ea7b7c%28Office.15%29.aspx) -Vorgangs abgerufen wird. Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die verwaltete EWS-API zum [Abrufen aller Raumlisten](#bk_GetRoomListewsma)verwenden.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
   </soap:Header>
@@ -79,20 +79,20 @@ Im folgenden Beispiel wird gezeigt, wie eine Auflistung von Ihrer Organisation [
 
 ```
 
-Der Server antwortet auf die Anforderung [GetRoomLists](http://msdn.microsoft.com/library/55d451f9-547f-44ac-872e-9cb220ea7b7c%28Office.15%29.aspx) mit einer [GetRoomListsResponse](http://msdn.microsoft.com/library/8c736f68-1026-496a-b12f-c169c078abd0%28Office.15%29.aspx) -Nachricht, die Listen Platz für Ihre Organisation enthält. 
+Der Server antwortet auf die [GetRoomLists](https://msdn.microsoft.com/library/55d451f9-547f-44ac-872e-9cb220ea7b7c%28Office.15%29.aspx) -Anforderung mit einer [GetRoomListsResponse](https://msdn.microsoft.com/library/8c736f68-1026-496a-b12f-c169c078abd0%28Office.15%29.aspx) -Nachricht, die die Raumlisten für Ihre Organisation enthält. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="868" MinorBuildNumber="8" Version="V2_9" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetRoomListsResponse ResponseClass="Success" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                            xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetRoomListsResponse ResponseClass="Success" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                            xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:RoomLists>
         <t:Address>
@@ -120,10 +120,10 @@ Der Server antwortet auf die Anforderung [GetRoomLists](http://msdn.microsoft.co
 
 ```
 
-## <a name="get-all-the-rooms-in-a-room-list-by-using-the-ews-managed-api"></a>Rufen Sie alle Chatrooms in eine Raumliste ab, indem Sie die EWS Managed API
+## <a name="get-all-the-rooms-in-a-room-list-by-using-the-ews-managed-api"></a>Abrufen aller Räume in einer Raumliste mithilfe der verwaltete EWS-API
 <a name="bk_FindRoomewsma"> </a>
 
-Im folgenden Beispiel wird gezeigt, wie eine Auflistung von Chatrooms in eine Raumliste mithilfe der [GetRooms](https://msdn.microsoft.com/library/Microsoft.Exchange.WebServices.Data.ExchangeService.GetRooms.aspx) -Methode abrufen. 
+Im folgenden Beispiel wird gezeigt, wie eine Auflistung von Räumen in einer Raumliste mithilfe der [getrooms](https://msdn.microsoft.com/library/Microsoft.Exchange.WebServices.Data.ExchangeService.GetRooms.aspx) -Methode abgerufen wird. 
   
 ```cs
 EmailAddress myRoomList = "bldg3rooms@contoso.com";
@@ -137,17 +137,17 @@ foreach (EmailAddress address in myRoomAddresses)
 
 ```
 
-## <a name="get-all-the-rooms-in-a-room-list-by-using-ews"></a>Rufen Sie aller Chatrooms in eine Raumliste mithilfe der Exchange-Webdienste ab
+## <a name="get-all-the-rooms-in-a-room-list-by-using-ews"></a>Abrufen aller Räume in einer Raumliste mithilfe von EWS
 <a name="bk_FindRoomews"> </a>
 
-Im folgenden Beispiel wird gezeigt, wie eine Liste von [Chatrooms](http://msdn.microsoft.com/library/57b6079a-3d83-4429-861e-c551e9e1a991%28Office.15%29.aspx) mithilfe von [GetRooms](http://msdn.microsoft.com/library/5501ddc0-3bfa-4da6-8e15-4223ca5499a3%28Office.15%29.aspx) -Vorgang in einem [RoomList](http://msdn.microsoft.com/library/cb02bdf0-df9f-4e31-b7dd-cd9f2f2cc2b2%28Office.15%29.aspx) abrufen. Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die EWS Managed API zum [Abrufen aller Chatrooms in eine Raumliste](#bk_FindRoomewsma)verwenden.
+Im folgenden Beispiel wird gezeigt, wie Sie eine Liste von [Räumen](https://msdn.microsoft.com/library/57b6079a-3d83-4429-861e-c551e9e1a991%28Office.15%29.aspx) in einer [RoomList](https://msdn.microsoft.com/library/cb02bdf0-df9f-4e31-b7dd-cd9f2f2cc2b2%28Office.15%29.aspx) mithilfe der [getrooms](https://msdn.microsoft.com/library/5501ddc0-3bfa-4da6-8e15-4223ca5499a3%28Office.15%29.aspx) -Operation abrufen. Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die verwaltete EWS-API verwenden, um [Alle Räume in einer Raumliste abzurufen](#bk_FindRoomewsma).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
   </soap:Header>
@@ -162,20 +162,20 @@ Im folgenden Beispiel wird gezeigt, wie eine Liste von [Chatrooms](http://msdn.m
 
 ```
 
-Der Server antwortet auf die Anforderung [GetRooms](http://msdn.microsoft.com/library/5501ddc0-3bfa-4da6-8e15-4223ca5499a3%28Office.15%29.aspx) mit einer [GetRoomsResponse](http://msdn.microsoft.com/library/a8c85f65-bb63-4e7a-b0ca-7c9a04560a58%28Office.15%29.aspx) -Nachricht, die die Räume in der Raumliste enthält. 
+Der Server antwortet auf die [getrooms](https://msdn.microsoft.com/library/5501ddc0-3bfa-4da6-8e15-4223ca5499a3%28Office.15%29.aspx) -Anforderung mit einer [GetRoomsResponse](https://msdn.microsoft.com/library/a8c85f65-bb63-4e7a-b0ca-7c9a04560a58%28Office.15%29.aspx) -Nachricht, die die Chatrooms in der Raumliste enthält. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="873" MinorBuildNumber="9" 
                          Version="V2_9" xmlns:h="http://scemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetRoomsResponse ResponseClass="Success" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
+    <m:GetRoomsResponse ResponseClass="Success" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
                         xmlns:t="http://scemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:Rooms>
@@ -217,6 +217,6 @@ Der Server antwortet auf die Anforderung [GetRooms](http://msdn.microsoft.com/li
     
 - [Abrufen von Frei/Gebucht-Informationen mithilfe von EWS in Exchange](how-to-get-free-busy-information-by-using-ews-in-exchange.md)
     
-- [Erstellen und Verwalten von Raumpostfächern](http://technet.microsoft.com/en-us/library/jj215781%28v=exchg.150%29.aspx)
+- [Erstellen und Verwalten von Raumpostfächern](https://technet.microsoft.com/library/jj215781%28v=exchg.150%29.aspx)
     
 

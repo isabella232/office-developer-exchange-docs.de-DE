@@ -3,21 +3,21 @@ title: Microsoft Graph-Outlook-API für E-Mail, Kalender und Kontakte
 manager: sethgros
 ms.date: 07/27/2018
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 3b2e71a6-5fa5-4008-b243-d3a6e9173b3d
 description: Hier finden Sie Informationen zu der Microsoft Graph-API, mit denen Sie auf E-Mails, Kalender und Kontakte in Office 365 oder Exchange Online zugreifen können.
-ms.openlocfilehash: 3065de389157345afd5ed07e302ace99e2048bdf
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: 7ca77596afb59ffab76001abd495de7328d2dd29
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353294"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463867"
 ---
 # <a name="microsoft-graph-rest-apis-for-mail-calendars-and-contacts"></a>Microsoft Graph-REST-APIs für E-Mail, Kalender und Kontakte
 
-Hier finden Sie Informationen zu den Microsoft Graph-APIs, mit denen Sie auf E-Mails, Kalender und Kontakte in Office 365 oder Exchange Online zugreifen können.
+Hier finden Sie Informationen zu den Microsoft Graph-APIs, die Sie für den Zugriff auf e-Mails, Kalender und Kontakte in Office 365, Exchange Online oder Exchange Server in hybridbereitstellungen verwenden können.
 
-Office 365 und Exchange Online bieten eine neue Möglichkeit zum Arbeiten mit E-Mail, Kalender und Kontakten. Die REST-APIs für Microsoft Graph-E-Mails, Kalender und Kontakte ermöglichen eine effiziente und einfache Möglichkeit zum Zugreifen auf und zum Bearbeiten von Exchange-Daten. Diese APIs basieren auf offenen Standards: OAuth 2.0 Version für Authentifizierung und OData-Version 4.0 und JSON für Datenabstraktion. Dies bietet folgende Vorteile:
+Office 365, Exchange Online und Exchange Server in hybridbereitstellungen stellen eine neue Möglichkeit zum Arbeiten mit e-Mails, Kalendern und Kontakten dar. Die REST-APIs für Microsoft Graph-E-Mails, Kalender und Kontakte ermöglichen eine effiziente und einfache Möglichkeit zum Zugreifen auf und zum Bearbeiten von Exchange-Daten. Diese APIs basieren auf offenen Standards: OAuth 2.0 Version für Authentifizierung und OData-Version 4.0 und JSON für Datenabstraktion. Diese bieten die folgenden Vorteile:
 
 - Da die APIs OAuth für die Authentifizierung benötigen, muss Ihre Anwendung keine Benutzeranmeldeinformationen verarbeiten oder speichern.
 
@@ -44,4 +44,5 @@ Schauen Sie sich auch die [Schnellstarts](https://developer.microsoft.com/graph/
 ## <a name="see-also"></a>Siehe auch
 
 - [Microsoft Graph-Dokumentation](https://developer.microsoft.com/graph/docs/concepts/overview)   
+- [Lokale Anforderungen für die Rest-API](https://blogs.technet.microsoft.com/exchange/2016/09/26/on-premises-architectural-requirements-for-the-rest-api)   
 

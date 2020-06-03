@@ -1,31 +1,31 @@
 ---
-title: Abrufen einer Liste von e-Mail-Benutzer mithilfe der Exchange-Verwaltungsshell
+title: Abrufen einer Liste von e-Mail-Benutzern mithilfe der Exchange-Verwaltungsshell
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
 ms.assetid: 8b790dc8-5c4f-4acf-bbe7-63523395fbe7
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe von Exchange-Verwaltungsshell-Cmdlets ein Tool erstellen, das eine Liste von Exchange-Postfachbenutzern zurückgibt.
-ms.openlocfilehash: e9493571e98760e5a11674db9a552111c1ec29b2
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+localization_priority: Priority
+ms.openlocfilehash: 817d92ef1bb88017f471681b448c052ecaa54e7e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354001"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44435709"
 ---
-# <a name="get-a-list-of-mail-users-by-using-the-exchange-management-shell"></a>Abrufen einer Liste von e-Mail-Benutzer mithilfe der Exchange-Verwaltungsshell
+# <a name="get-a-list-of-mail-users-by-using-the-exchange-management-shell"></a>Abrufen einer Liste von e-Mail-Benutzern mithilfe der Exchange-Verwaltungsshell
 
 In diesem Artikel erfahren Sie, wie Sie mithilfe von Exchange-Verwaltungsshell-Cmdlets ein Tool erstellen, das eine Liste von Exchange-Postfachbenutzern zurückgibt.
   
 **Gilt für:** Exchange Online | Exchange Server 2013 | Office 365 
   
-Abrufen einer Liste von Benutzern von Exchange Online, gliedert sich Exchange Online als Teil von Office 365 oder eine Version von Exchange, beginnend mit Exchange 2013 mithilfe eines verwalteten Tools, das ein Exchange-Verwaltungsshell-Cmdlet aufruft. Zuerst bestimmen Sie einen remote-Runspace auf einem Exchange-Server; Führen Sie dann das Cmdlet, um die Benutzerinformationen in den remote-Runspace abgerufen. 
+Zum Abrufen einer Liste von Benutzern aus Exchange Online, Exchange Online als Teil von Office 365 oder einer Exchange-Version ab Exchange 2013 mithilfe eines verwalteten Tools, das ein Exchange-Verwaltungsshell-Cmdlet aufruft, müssen zwei Schritte ausgeführt werden. Zuerst bestimmen Sie einen Remoterunspace auf einem Exchange-Server, dann führen Sie das Cmdlet aus, um Benutzerinformationen aus dem Remoterunspace abzurufen. 
 
-Zum Verbinden mit dem remote-Runspace müssen Sie mit dem Exchange-Server mithilfe des Authentifizierungsschemas, das die Sicherheit Ihrer Organisation erfüllt authentifizieren. 
+Zum Herstellen einer Verbindung mit dem Remoterunspace müssen Sie sich unter Verwendung des Authentifizierungsschemas, das die Sicherheitsanforderungen Ihrer Organisation erfüllt, beim Exchange-Server authentifizieren. 
 
-Dieser Artikel enthält Codebeispiele, die Sie verwenden können, um eine remote-Runspace einrichten und Ausführen einer Exchange-Verwaltungsshell-Cmdlet zum Abrufen einer Liste von Benutzern von einem Exchange-Server.
+Dieser Artikel enthält Codebeispiele, die Sie verwenden können, um einen Remoterunspace einzurichten und ein Exchange-Verwaltungsshell-Cmdlet zum Abrufen einer Liste von Benutzern von einem Exchange-Server auszuführen.
 
 <a name="bk_prerequisites"> </a>
 
@@ -33,17 +33,17 @@ Dieser Artikel enthält Codebeispiele, die Sie verwenden können, um eine remote
 
 Um diese Aufgabe auszuführen, benötigen Sie einen Verweis auf die folgenden Namespaces:
   
-- **System.Collections.ObjectModel**
-- **System.Management.Automation**
-- **System.Management.Automation.Remoting**
-- **System.Management.Automation.Runspaces**
+- **System. Collections. ObjectModel**
+- **System. Management. Automation**
+- **System. Management. Automation. Remoting**
+- **System. Management. Automation. Runspaces**
     
 > [!NOTE]
 >  Wenn Sie Visual Studio zum Erstellen einer Anwendung verwenden, müssen Sie dem Projekt einen Verweis auf die Assembly "System.Management.Automation.dll" hinzufügen. Die Assembly finden Sie an einem der folgenden Speicherorte:
 > - Für die Betriebssysteme Windows XP und Windows Vista im Windows PowerShell-Installationsverzeichnis ($PSHOME)
 > - Für die Betriebssysteme Windows 7 und Windows 8 im folgenden Ordner: Windows\assembly\GAC_MSIL\System.Management.Automation 
   
-Nicht Laden der Exchange 2013-Verwaltungs-Snap-in in den Runspace auf Computern, die eine Anwendung ausgeführt werden, die Exchange-Verwaltungsshell-Cmdlets zu automatisieren. Die Anwendung sollte stattdessen einen remote-Runspace erstellen, wie weiter unten in diesem Artikel beschrieben.
+Laden Sie das Exchange 2013-Verwaltungs-Snap-in nicht in das Remoterunspace auf Computern mit Anwendungen, die Exchange-Verwaltungsshell-Cmdlets automatisieren. Stattdessen muss die Anwendung einen Remoterunspace erstellen, wie an späterer Stelle in diesem Artikel beschrieben.
 
 <a name="bk_gettinglistmailbox"> </a>
 
@@ -51,7 +51,7 @@ Nicht Laden der Exchange 2013-Verwaltungs-Snap-in in den Runspace auf Computern,
 
 Die Methode zum Herstellen einer Verbindung mit einem Remoterunspace zur Verwendung eines Exchange-Verwaltungsshell-Cmdlets ist je nach verwendetem Authentifizierungsschema verschieden. Die Codebeispiele in diesem Abschnitt zeigen, wie Sie eine Verbindung mit einem Remoterunspace herstellen, wenn Sie eine der in der folgenden Tabelle aufgeführten Authentifizierungsmethoden verwenden.
   
-|**Authentifizierungsmethode**|**Betrifft**|**URI**|
+|**Authentifizierungsmethode**|**Gilt für**|**uri**|
 |:-----|:-----|:-----|
 |[Herstellen einer Verbindung mit einem Remoterunspace in Exchange Online mithilfe der Standardauthentifizierung](#bk_basic) <br/> |Exchange Online-Server  <br/> |`https://outlook.office365.com/PowerShell-LiveID`<br/><br/>`https://<server>/PowerShell-LiveID`  <br/> |
 |[Herstellen einer Verbindung mit einem Remoterunspace mithilfe der Zertifikatauthentifizierung](#bk_cert) <br/> |Exchange Online- und Exchange lokal-Server  <br/> |`https://outlook.office365.com/PowerShell`<br/><br/>`https://<server>/PowerShell`<br/><br/>`http://<server>/PowerShell`  <br/> |
@@ -65,13 +65,13 @@ Im folgenden Codebeispiel wird die **GetUsersUsingBasicAuth**-Methode definiert,
   
 This method requires the following parameters:
   
--  **liveIDConnectionUri** &ndash; Eine Zeichenfolge, die den URI des Exchange Online-Servers enthält, die die Anwendung zu authentifizieren. Wenn Exchange Online in Office 365 ausgeführt wird, ist der URI `https://outlook.office365.com/PowerShell-LiveID`; Andernfalls ist der URI `https://<servername>/PowerShell-LiveID`. 
+-  **liveIDConnectionUri** &ndash; Eine Zeichenfolge, die den URI des Exchange Online Servers enthält, von dem die Anwendung authentifiziert wird. Wenn Exchange Online in Office 365 läuft, ist der URI `https://outlook.office365.com/PowerShell-LiveID` ; andernfalls ist der URI `https://<servername>/PowerShell-LiveID` . 
     
--  **schemaUri** &ndash; Eine Zeichenfolge, die den URI des Schemadokuments enthält, die das Exchange-Verwaltungsshell-Schema definiert. Das Schema-URI ist `http://schemas.microsoft.com/powershell/Microsoft.Exchange`. 
+-  **schemaUri** &ndash; Eine Zeichenfolge, die den URI des Schemadokuments enthält, das das Exchange-Verwaltungsshell Schema definiert. Der Schema-URI ist `https://schemas.microsoft.com/powershell/Microsoft.Exchange` . 
     
--  **Anmeldeinformationen** &ndash; Ein [PSCredential](http://msdn.microsoft.com/en-us/library/system.management.automation.pscredential%28VS.85%29.aspx) -Objekt, das die Anmeldeinformationen des Benutzers enthält, die die Anwendung ausgeführt wird. 
+-  **Anmeldeinformationen** &ndash; Ein [PSCredential](https://msdn.microsoft.com/library/system.management.automation.pscredential%28VS.85%29.aspx) -Objekt, das die Anmeldeinformationen des Benutzers enthält, der die Anwendung ausführt. 
     
--  **Count** &ndash; Die Anzahl der Exchange-Postfachbenutzer zurückgegeben. 
+-  **Anzahl** &ndash; Die Anzahl der zurückzugebenden Exchange-Postfachbenutzer. 
     
 ```cs
 public Collection<PSObject> GetUsersUsingBasicAuth(
@@ -111,21 +111,21 @@ Im folgenden Codebeispiel wird die **GetUsersUsingCertificate**-Methode definier
   
 This method requires the following parameters:
   
--  **Fingerabdruck** &ndash; Eine Zeichenfolge, die den Fingerabdruck des Zertifikats enthält, mit dem die Anwendung zu authentifizieren. 
+-  **Fingerabdruck** &ndash; Eine Zeichenfolge, die den Fingerabdruck des Zertifikats enthält, das zum Authentifizieren der Anwendung verwendet wird. 
     
--  **certConnectionUri** &ndash; Eine Zeichenfolge, die den URI des Servers enthält, die das Zertifikat authentifizieren. Der URI wird einer der in der folgenden Tabelle aufgeführten entsprechen. 
+-  **certConnectionUri** &ndash; Eine Zeichenfolge, die den URI des Servers enthält, von dem das Zertifikat authentifiziert wird. Die möglichen URIs sind in der folgenden Tabelle aufgeführt. 
     
-    **In Tabelle 1. CertConnectionUri URIs**
+    **Tabelle 1. certConnectionUri-URIs**
 
-    |**Server**|**URI**|
+    |**Server**|**uri**|
     |:-----|:-----|
     |Exchange-Server ohne SSL  <br/> |`http://<servername>/PowerShell`  <br/> |
     |Exchange-Server mit SSL  <br/> |`https://<servername>/PowerShell`  <br/> |
     |Exchange Online als Teil von Office 365  <br/> |`https://outlook.office365.com/PowerShell`  <br/> |
    
-- **schemaUri** &ndash; Eine Zeichenfolge, die den URI des Schemadokuments enthält, die das Exchange-Verwaltungsshell-Schema definiert. Das Schema-URI ist http://schemas.microsoft.com/powershell/Microsoft.Exchange. 
+- **schemaUri** &ndash; Eine Zeichenfolge, die den URI des Schemadokuments enthält, das das Exchange-Verwaltungsshell Schema definiert. Der Schema-URI ist https://schemas.microsoft.com/powershell/Microsoft.Exchange . 
     
-- **Count** &ndash; Die Anzahl der Exchange-Postfachbenutzer zurückgegeben. 
+- **Anzahl** &ndash; Die Anzahl der zurückzugebenden Exchange-Postfachbenutzer. 
     
 ```cs
 public Collection<PSObject> GetUsersUsingCertificate(
@@ -164,20 +164,20 @@ Im folgenden Codebeispiel wird die **GetUsersUsingKerberos**-Methode definiert, 
   
 This method requires the following parameters:
   
-- **kerberosUri** &ndash; Eine Zeichenfolge, die den URI des Kerberos-Servers enthält, die die Anwendung zu authentifizieren. Der URI wird einer der in der folgenden Tabelle aufgeführten entsprechen. 
+- **kerberosUri** &ndash; Eine Zeichenfolge, die den URI des Kerberos-Servers enthält, von dem die Anwendung authentifiziert wird. Die möglichen URIs sind in der folgenden Tabelle aufgeführt. 
     
-    **In Tabelle 2. KerberosUri URIs**
+    **Tabelle 2. kerberosUri-URIs**
 
-    |**Server**|**URI**|
+    |**Server**|**uri**|
     |:-----|:-----|
     |Exchange-Server ohne SSL  <br/> |`http://<servername>/PowerShell`  <br/> |
     |Exchange-Server mit SSL  <br/> |`https://<servername>/PowerShell`  <br/> |
    
-- **schemaUri** &ndash; Eine Zeichenfolge, die den URI des Schemadokuments enthält, die das Exchange-Verwaltungsshell-Schema definiert. Das Schema-URI ist http://schemas.microsoft.com/powershell/Microsoft.Exchange. 
+- **schemaUri** &ndash; Eine Zeichenfolge, die den URI des Schemadokuments enthält, das das Exchange-Verwaltungsshell Schema definiert. Der Schema-URI ist https://schemas.microsoft.com/powershell/Microsoft.Exchange . 
     
-- **Anmeldeinformationen** &ndash; Ein [PSCredential](http://msdn.microsoft.com/en-us/library/system.management.automation.pscredential%28VS.85%29.aspx) -Objekt, das die Anmeldeinformationen des Benutzers enthält, die die Anwendung ausgeführt wird. 
+- **Anmeldeinformationen** &ndash; Ein [PSCredential](https://msdn.microsoft.com/library/system.management.automation.pscredential%28VS.85%29.aspx) -Objekt, das die Anmeldeinformationen des Benutzers enthält, der die Anwendung ausführt. 
     
-- **Count** &ndash; Die Anzahl der Exchange-Postfachbenutzer zurückgegeben. 
+- **Anzahl** &ndash; Die Anzahl der zurückzugebenden Exchange-Postfachbenutzer. 
     
 ```cs
 public Collection<PSObject> GetUsersUsingKerberos(
@@ -212,13 +212,13 @@ public Collection<PSObject> GetUsersUsingKerberos(
 
 ## <a name="get-a-list-of-mailbox-users-from-a-remote-runspace"></a>Get a list of mailbox users from a remote runspace
 
-Im folgenden Codebeispiel wird definiert die **GetUserInformation** -Methode, die eine Sammlung von [PSObject](http://msdn.microsoft.com/en-us/library/system.management.automation.pscredential%28VS.85%29.aspx) zurückgibt, die Exchange-Postfachbenutzer darstellen. Diese Methode wird von den Methoden **GetUsersUsingBasicAuth**, **GetUsersUsingCertificate**und **GetUsersUsingKerberos** , um die Liste der Benutzer aus dem Remoteserver zurückzugeben aufgerufen. 
+Im folgenden Codebeispiel wird die **GetUserInformation** -Methode definiert, die eine Auflistung von [PSObject](https://msdn.microsoft.com/library/system.management.automation.pscredential%28VS.85%29.aspx) -Instanzen zurückgibt, die Exchange-Postfachbenutzer darstellen. This method is called by the **GetUsersUsingBasicAuth**, **GetUsersUsingCertificate**, and **GetUsersUsingKerberos** methods to return the list of users from the remote server. 
   
 This method requires the following parameters:
   
-- **Count** &ndash; Die Anzahl der Exchange-Postfachbenutzer zurückgegeben. 
+- **Anzahl** &ndash; Die Anzahl der zurückzugebenden Exchange-Postfachbenutzer. 
     
-- **Runspace** &ndash; Der remote-Runspace, die für den Exchange-Remoteserver eingerichtet ist. 
+- **Remoterunspace** &ndash; Die Remote Remoterunspace, die für den Exchange-Remoteserver eingerichtet wurde. 
     
 ```cs
 public Collection<PSObject> GetUserInformation(int count, Runspace runspace)
@@ -249,11 +249,11 @@ End Function
 
 ```
 
-Die **GetUserInformation** -Methode wird nicht mehr als _Count_ Postfachbenutzer zurück. Zur Vereinfachung des Codes für die in diesem Beispiel wird die Methode nicht filtern oder anderweitig einschränken, die Postfachbenutzer, die zurückgegeben werden. 
+Die **GetUserInformation** -Methode gibt nicht mehr als _count_ -Postfachbenutzer zurück. To simplify the code for this example, the method does not filter or otherwise limit the mailbox users that are returned. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen von Exchange-Verwaltungsshell-Tools](create-exchange-management-shell-tools.md)   
-- [Verwenden Sie die Exchange-Verwaltungsshell-Cmdlet-Antwort](how-to-use-the-exchange-management-shell-cmdlet-response.md)
+- [Erstellen von Exchange-Verwaltungsshell Tools](create-exchange-management-shell-tools.md)   
+- [Verwenden der Antwort des Exchange-Verwaltungsshell-Cmdlets](how-to-use-the-exchange-management-shell-cmdlet-response.md)
     
 

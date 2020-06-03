@@ -1,62 +1,62 @@
 ---
-title: Überprüfen der Ergebnisse eines Aufrufs EWS oder EWS Managed API
+title: Überprüfen der Ergebnisse eines EWS- oder verwalteten EWS-API-Aufrufs
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 78a1741c-1bbe-4cb4-9331-9d6d3171fc11
-description: Erfahren Sie, wie die Ergebnisse der EWS oder EWS Managed API Anrufe zu überprüfen.
-ms.openlocfilehash: 077dd923710a1a7f5cad4c822cbbd58ab3603661
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Erfahren Sie, wie Sie die Ergebnisse ihrer EWS-oder verwaltete EWS-API-Anrufe überprüfen können.
+localization_priority: Priority
+ms.openlocfilehash: be8e76898dd111a6dec33d4a57d9d50a2a935390
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757135"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457396"
 ---
-# <a name="verifying-the-results-of-an-ews-or-ews-managed-api-call"></a>Überprüfen der Ergebnisse eines Aufrufs EWS oder EWS Managed API
+# <a name="verifying-the-results-of-an-ews-or-ews-managed-api-call"></a>Überprüfen der Ergebnisse eines EWS- oder verwalteten EWS-API-Aufrufs
 
-Erfahren Sie, wie die Ergebnisse der EWS oder EWS Managed API Anrufe zu überprüfen.
+Erfahren Sie, wie Sie die Ergebnisse ihrer EWS-oder verwaltete EWS-API-Anrufe überprüfen können.
   
-Wenn Dinge nicht ordnungsgemäß funktionieren, sollten sie finden Sie unter Was passiert, durch die SOAP-Anforderungen, die über das Netzwerk und die Antworten, die der Server wieder sendet, sendet die Anwendung untersuchen. [Tools und Ressourcen für die Problembehandlung EWS-Applikationen](tools-and-resources-for-troubleshooting-ews-applications-for-exchange.md) Artikel enthält Links zu Tools, mit denen erfassen und diese SOAP-Anforderungen anzuzeigen. Nachdem Sie die Anforderungen und die Antworten haben, wie überprüfen Sie, ob die Anforderung an den Server gesendeten ordnungsgemäß verarbeitet wurde? Lesen Sie weiter unten finden Sie. 
+Wenn die Dinge nicht ordnungsgemäß funktionieren, können Sie sehen, was passiert, indem Sie die SOAP-Anforderungen untersuchen, die Ihre Anwendung über das Netzwerk sendet, und die Antworten, die der Server zurücksendet. Der Artikel [Tools und Ressourcen für die Problembehandlung für EWS-Anwendungen](tools-and-resources-for-troubleshooting-ews-applications-for-exchange.md) enthält Links zu Tools, mit denen Sie diese SOAP-Anforderungen erfassen und anzeigen können. Wie stellen Sie sicher, dass die an den Server gesendete Anforderung ordnungsgemäß verarbeitet wurde, nachdem Sie die Anforderungen und Antworten erhalten haben? Lesen Sie weiter, um es herauszufinden. 
   
-Wenn Sie EWS-Anforderungen senden, können Sie ihm Ihre Überprüfung starten, indem Sie das **ResponseClass** -Attribut für jede Antwortnachricht in der Antwort überprüfen. Die erfahren Sie, ob der Vorgang für jedes Element erfolgreich abgeschlossen. 
+Wenn Sie EWS-Anforderungen senden, werden Sie mit der Überprüfung beginnen, indem Sie das **ResponseClass** -Attribut für jede Antwortnachricht in der Antwort überprüfen. Dadurch erfahren Sie, ob der Vorgang für jedes Element erfolgreich abgeschlossen wurde. 
   
-Je nach dem Objekt anfordert, dass Ihre Methode aufruft, wenn Sie zum Senden die EWS Managed API verwenden, Sie einige Überprüfung mithilfe der Antwortobjekte machen können. Aber, da die SOAP-Antwort eine Obermenge enthält von was in die EWS Managed API-Antwort-Objekte enthalten ist, möglicherweise möchten Sie die SOAP-Antwort betrachten. Da die SOAP-Antwort oft mehr Informationen als die EWS Managed API-Antwort-Objekte enthalten kann, starten Sie die Überprüfung mit der SOAP-Antwort.
+Abhängig vom Objekt, das von der Methode aufgerufen wird, können Sie, wenn Sie die verwaltete EWS-API zum Senden von Anforderungen verwenden, einige Überprüfungen mithilfe der Response-Objekte durchführen. Da die SOAP-Antwort jedoch eine Obermenge dessen enthält, was in den verwaltete EWS-API-Antwort Objekten enthalten ist, sollten Sie sich auch die SOAP-Antwort ansehen. Da die SOAP-Antwort häufig mehr Informationen als die verwaltete EWS-API-Antwortobjekte enthalten kann, starten Sie die Überprüfung mit der SOAP-Antwort.
   
 ## <a name="verifying-the-results-of-a-soap-response"></a>Überprüfen der Ergebnisse einer SOAP-Antwort
 <a name="bk_verifysoap"> </a>
 
-Wenn Sie die SOAP-Antwort erhalten, wird als erstes betrachten das **ResponseClass** -Attribut. Dieses Attribut ist in jeder Instanz **ResponseMessageType** im [ResponseMessages](http://msdn.microsoft.com/library/2071bed8-ea66-4627-aa4f-a1d9a025cf3d%28Office.15%29.aspx) -Element enthalten, wie im folgenden Beispiel dargestellt. 
+Wenn Sie eine SOAP-Antwort erhalten, ist das **ResponseClass** -Attribut das erste, was Sie beachten sollten. Dieses Attribut ist in jeder **ResponseMessageType** -Instanz im [ResponseMessages](https://msdn.microsoft.com/library/2071bed8-ea66-4627-aa4f-a1d9a025cf3d%28Office.15%29.aspx) -Element enthalten, wie im folgenden Beispiel dargestellt. 
   
 ```XML
 <s:Body>
-      <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
         <m:ResponseMessages>
           <m:GetItemResponseMessage ResponseClass="Success">
           …
 ```
 
-Da SOAP-Antwort möglicherweise mehrere Antwortnachrichten in einer einzelnen SOAP-Antwort enthält, ist es wichtig, um jede Antwortnachricht einzeln zu überprüfen.
+Da eine SOAP-Antwort möglicherweise mehrere Antwortnachrichten in einer einzigen SOAP-Antwort enthalten kann, ist es wichtig, jede Antwortnachricht einzeln zu überprüfen.
   
-Wenn Sie mit einem Vorgang arbeiten, die als Teil der Antwort auf einen Vorgang, wie im folgenden eine **ResponseClass** enthält möglicherweise versucht, nur die **ResponseClass** des Vorgangs überprüfen. 
+Wenn Sie mit einer Operation arbeiten, die ein **ResponseClass** -Element als Teil der Vorgangs Antwort enthält, wie im folgenden Beispiel, könnten Sie versucht sein, die **ResponseClass** des Vorgangs nur zu überprüfen. 
   
 ```XML
 <soap:Body>
-  <m:AddDelegateResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+  <m:AddDelegateResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                          ResponseClass="Success"
-                         xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+                         xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   …
 
 ```
 
-Jedoch gibt der Ausführungsstatus nur gibt die Form der Antwort auf oberster Ebene und nicht den Status der einzelnen Nachricht-Antworten entspricht. Im folgenden Beispiel die [AddDelegateResponse](http://msdn.microsoft.com/library/d7e6bebb-5dbf-43c1-aacf-4b3ca6a7c429%28Office.15%29.aspx) -Operation besteht aus einem **ResponseClass** des **Erfolgs**, aber das zugrunde liegende [DelegateUserResponseMessageType](http://msdn.microsoft.com/library/3dc9552c-1e2d-40ac-a137-827883c2bb88%28Office.15%29.aspx) -Element hat den Wert **ResponseClass** **Fehler**.
+Der Vorgangsstatus gibt jedoch nur die Form der Antwort auf oberster Ebene wieder und gibt nicht den Status aller einzelnen Nachrichten Antworten an. Im folgenden Beispiel weist der [AddDelegateResponse](https://msdn.microsoft.com/library/d7e6bebb-5dbf-43c1-aacf-4b3ca6a7c429%28Office.15%29.aspx) -Vorgang ein **ResponseClass** **auf, aber**das zugrunde liegende [DelegateUserResponseMessageType](https://msdn.microsoft.com/library/3dc9552c-1e2d-40ac-a137-827883c2bb88%28Office.15%29.aspx) -Element weist den **ResponseClass** -Wert **Error**auf.
   
 ```XML
 <soap:Body>
-  <m:AddDelegateResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+  <m:AddDelegateResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                          ResponseClass="Success"
-                         xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+                         xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
     <m:ResponseCode>NoError</m:ResponseCode>
     <m:ResponseMessages>
       <m:DelegateUserResponseMessageType ResponseClass="Error">
@@ -69,19 +69,19 @@ Jedoch gibt der Ausführungsstatus nur gibt die Form der Antwort auf oberster Eb
 </soap:Body>
 ```
 
-So für SOAP-EWS-Antworten Sie auf die **ResponseClass** des Vorgangs verlassen können nicht - müssen Sie sehen Sie sich die **ResponseClass** jeder Nachricht Antwort, um festzustellen, ob der Vorgang Verarbeitung der Elemente Fehler aufgetreten. 
+Für SOAP-EWS-Antworten können Sie sich also nicht auf den **ResponseClass** des Vorgangs verlassen – Sie müssen sich die **ResponseClass** jeder Antwortnachricht ansehen, um zu bestimmen, ob der Vorgang Fehler bei der Verarbeitung der Elemente aufgetreten ist. 
   
-### <a name="verifying-success"></a>Überprüfen des Erfolgs des Updates
+### <a name="verifying-success"></a>Überprüfen des Erfolgs
 
-Wenn jedes **ResponseClass** -Attribut für jedes **ResponseMessage** -Attribut auf **Erfolg**, der Vorgang erfolgreich abgeschlossen auf alle Elemente festgelegt ist, und Sie können auf die nächste Aufgabe verschieben.
+Wenn jedes **ResponseClass** -Attribut für jedes **ResponseMessage** -Attribut auf " **erfolgreich**" festgelegt ist, wurde der Vorgang für alle Elemente erfolgreich abgeschlossen, und Sie können mit der nächsten Aufgabe fortfahren.
   
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) -Vorgang, um ein einzelnes Element abzurufen. Beachten Sie, dass bei **Erfolg**der **ResponseClass** festgelegt ist, die zugeordneten [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) immer **NoError**festgelegt ist.
+Im folgenden Beispiel wird eine erfolgreiche Antwort auf eine [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) -Vorgangsanforderung zum Abrufen eines einzelnen Elements gezeigt. Beachten Sie, dass beim Festlegen von **ResponseClass** auf " **Success**" die zugeordnete [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) immer auf " **noError**" festgelegt ist.
   
 ```XML
 <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
              xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
         <m:ResponseMessages>
           <m:GetItemResponseMessage ResponseClass="Success">
             <m:ResponseCode>NoError</m:ResponseCode>
@@ -98,13 +98,13 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung [GetI
     </s:Body>
 ```
 
-Im folgenden finden eine erfolgreiche Antwort auf eine Anforderung **GetItem** -Vorgang, um mehrere Elemente abzurufen. Jedes Element [GetItemResponseMessage](http://msdn.microsoft.com/library/cc583723-54d1-4a17-8c1f-6586f70fdefd%28Office.15%29.aspx) verfügt über eine **ResponseClass** des **Erfolgs**.
+Im folgenden finden Sie eine erfolgreiche Antwort auf eine **GetItem** -Vorgangsanforderung zum Abrufen mehrerer Elemente. Jedes der [GetItemResponseMessage](https://msdn.microsoft.com/library/cc583723-54d1-4a17-8c1f-6586f70fdefd%28Office.15%29.aspx) -Elemente hat einen **ResponseClass** **Erfolg**.
   
 ```XML
 <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
     <m:ResponseMessages>
       <m:GetItemResponseMessage ResponseClass="Success">
         <m:ResponseCode>NoError</m:ResponseCode>
@@ -131,11 +131,11 @@ Im folgenden finden eine erfolgreiche Antwort auf eine Anforderung **GetItem** -
 </s:Body>
 ```
 
-### <a name="handling-errors-and-warnings"></a>Behandlung von Fehlern und Warnungen
+### <a name="handling-errors-and-warnings"></a>Behandeln von Fehlern und Warnungen
 
-Wenn Sie eine Antwort erhalten, und das Attribut **ResponseClass** auf **Fehler**festgelegt ist, wurde die Operation auf ein oder mehrere Elemente nicht erfolgreich abgeschlossen. Korrigieren Sie das Problem, und wiederholen Sie die Anforderung oder der Teil der erfolgreichen Anforderung. Ein Attributwert **ResponseClass** **Warnung** Wert wird nur von der Operation [ResolveNames](http://msdn.microsoft.com/library/6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb%28Office.15%29.aspx) zurückgegeben, und gibt an, dass die Entität nicht in eine eindeutige Identität aufgelöst werden konnte. Sie können für alle anderen Vorgänge ignoriert wird. 
+Wenn Sie eine Antwort erhalten und das **ResponseClass** -Attribut auf **Error**festgelegt ist, wurde der Vorgang für mindestens ein Element nicht erfolgreich abgeschlossen. Beheben Sie das Problem, und wiederholen Sie Ihre Anforderung oder den Teil Ihrer Anforderung, der fehlgeschlagen ist. Ein **ResponseClass** -Attributwert des **Warning** -Werts wird nur von der [ResolveNames](https://msdn.microsoft.com/library/6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb%28Office.15%29.aspx) -Operation zurückgegeben und gibt an, dass die Entität nicht in eine eindeutige Identität aufgelöst werden konnte. Sie können Sie für alle anderen Vorgänge ignorieren. 
   
-In der folgenden Antwort hat das **ResponseClass** -Attribut den Wert des **Fehlers**.
+In der folgenden Antwort hat das **ResponseClass** -Attribut den Wert **Error**.
   
 ```XML
 <m:GetItemResponseMessage ResponseClass="Error">
@@ -149,23 +149,23 @@ In der folgenden Antwort hat das **ResponseClass** -Attribut den Wert des **Fehl
 </m:GetItemResponseMessage>
 ```
 
-In diesem Beispiel bietet EWS Hinweise, um das Problem zu debuggen. Wenn das **ResponseClass** -Attribut den Wert **Fehler**hat, werden die folgenden zusätzlichen Elemente in der Antwort ggf. enthalten:
+In diesem Beispiel bietet EWS Anhaltspunkte zum Debuggen des Problems. Wenn das **ResponseClass** -Attribut den Wert **Error**aufweist, sind die folgenden zusätzlichen Elemente in der Antwort enthalten, wenn zutreffend:
   
-- [MessageText](http://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx) – den Fehler beschreibt. 
+- [MessageText](https://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx) – beschreibt den Fehler. 
     
-- [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) – enthält den Fehlercode, die verwendet werden kann, zusätzliche Ressourcen zur Problembehandlung zu erhalten. 
+- [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) – enthält den Fehlercode, der zum Auffinden zusätzlicher Ressourcen zur Problembehandlung verwendet werden kann. 
     
-- [MessageXml](http://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) – identifiziert die Elemente, die den Fehler verursacht hat. 
+- [Messagexml verwendet](https://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) – gibt die Elemente an, die den Fehler verursacht haben. 
     
-- [DescriptiveLinkKey](http://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) – nicht verwendet. 
+- [DescriptiveLinkKey](https://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) – nicht verwendet. 
     
-Die Informationen in dieser Elemente können Sie um Ihr Problem zu untersuchen. Im vorherigen Beispiel gibt die **MessageText** , dass die Eigenschaft nicht für den Objekttyp gültig ist. Die Anforderung war zu eine e-Mail-Nachricht erhalten möchten, aber Eigenschaftensatzes enthalten die **AssociatedCalendarItemId**, das nur für Terminelemente gültig ist.
+Sie können die in diesen Elementen bereitgestellten Informationen verwenden, um Ihr Problem zu untersuchen. Im vorherigen Beispiel gibt die **MessageText** an, dass die Eigenschaft nicht für den Objekttyp gültig ist. Die Anforderung bestand darin, eine e-Mail-Nachricht zu erhalten, aber der Eigenschaftensatz enthielt die **AssociatedCalendarItemId**, die nur für Termin Elemente gültig ist.
   
-Das folgende Beispiel zeigt einen Fehler, der als Teil eines Vorgangs im Batchmodus abzurufenden mehrere e-Mail-Elemente empfangen wurde. Das erste Element erfolgreich abgerufen wurde, und die **ResponseClass** auf **Erfolg**festgelegt ist. Das zweite Element konnte nicht gefunden werden, und die **ResponseClass** auf **Fehler**festgelegt ist.
+Das folgende Beispiel zeigt einen Fehler, der als Teil eines Batchvorgangs empfangen wurde, um mehrere e-Mail-Elemente abzurufen. Das erste Element wurde erfolgreich abgerufen, und die **ResponseClass** **ist auf "erfolgreich"** festgelegt. Das zweite Element konnte nicht gefunden werden, und die **ResponseClass** ist auf **Error**festgelegt.
   
 ```XML
-<m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+<m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <m:ResponseMessages>
     <m:GetItemResponseMessage ResponseClass="Success">
       <m:ResponseCode>NoError</m:ResponseCode>
@@ -187,29 +187,29 @@ Das folgende Beispiel zeigt einen Fehler, der als Teil eines Vorgangs im Batchmo
 </m:GetItemResponse>
 ```
 
-Wenn ein oder mehrere Elemente in einer Anforderung im Batch nicht verarbeitet werden können, wie angefordert, für jedes Element, das nicht erfolgreich ist ein Fehler zurückgegeben, und die restlichen Elemente in den Batch verarbeitet wie erwartet. Fehler im Batch-Verarbeitung können auftreten, wenn das Element wurde gelöscht, und daher nicht gesendet, abgerufen, oder aktualisiert werden, oder wenn das Element in einem anderen Ordner verschoben, und daher eine neues Element-ID. hat Da die Operation für einige Elemente beendet und kein Fehler zurückgegeben, wenn ein oder mehrere Elemente nicht verarbeitet werden können, ist es wichtig, um jedes **ResponseClass** -Attribut zu überprüfen, bevor Sie den nächsten Vorgang fortfahren. 
+Wenn ein oder mehrere Elemente in einer Batchanforderung nicht wie angefordert verarbeitet werden können, wird für jedes fehlgeschlagene Element ein Fehler zurückgegeben, und die restlichen Elemente im Batch werden wie erwartet verarbeitet. Fehler in der Batchverarbeitung können auftreten, wenn das Element gelöscht wurde und daher nicht gesendet, abgerufen oder aktualisiert werden kann oder wenn das Element in einen anderen Ordner verschoben wurde und daher über eine neue Element-ID verfügt. Da der Vorgang für einige Elemente abgeschlossen wird und kein Fehler zurückgegeben wird, wenn ein oder mehrere Elemente nicht verarbeitet werden können, ist es wichtig, jedes **ResponseClass** -Attribut zu überprüfen, bevor Sie mit dem nächsten Vorgang fortfahren. 
   
-Wenn die Metriken aufgelistet, die Antwortelemente nicht Ihnen helfen, korrigieren Ihre Anforderung oder Entsperren Sie andernfalls, finden Sie unter [Nächste Schritte](#bk_nextsteps).
+Wenn die von den Antwortelementen bereitgestellten Informationen Ihnen nicht helfen, Ihre Anforderung zu korrigieren oder Sie anderweitig aufzuheben, lesen Sie die [nächsten Schritte](#bk_nextsteps).
   
-## <a name="verifying-the-results-of-an-ews-managed-api-method-call"></a>Überprüfen der Ergebnisse eines Methodenaufrufs EWS Managed API
+## <a name="verifying-the-results-of-an-ews-managed-api-method-call"></a>Überprüfen der Ergebnisse eines verwaltete EWS-API-Methodenaufrufs
 <a name="bk_successful"> </a>
 
-Wenn Sie die EWS Managed API und eine Methode für ein Objekt [ExchangeService](http://msdn.microsoft.com/EN-US/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) aufrufen, wird die Methode wahrscheinlich eine [ServiceResponseCollection](http://msdn.microsoft.com/EN-US/library/dd633715%28v=exchg.80%29.aspx) -Objekt zurück, das enthält eine Auflistung von [ServiceResponse](http://msdn.microsoft.com/EN-US/library/microsoft.exchange.webservices.data.serviceresponse%28v=exchg.80%29.aspx) -Objekten, oder eine Auflistung von Objekte aus der **ServiceResponse** Objekte abgeleitet. Die **ServiceResponseCollection** und enthalten **ServiceResponse** -Objekte enthalten Informationen über das Ergebnis des Methodenaufrufs, die Sie verwenden können, um Ihre Ergebnisse zu überprüfen. 
+Wenn Sie die verwaltete EWS-API verwenden und eine Methode für ein [Datei "ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt aufrufen, gibt die Methode wahrscheinlich ein [ServiceResponseCollection](https://msdn.microsoft.com/library/dd633715%28v=exchg.80%29.aspx) -Objekt zurück, das eine Auflistung von [ServiceResponse](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse%28v=exchg.80%29.aspx) -Objekten enthält, oder eine Sammlung von Objekten, die von den **ServiceResponse** -Objekten abgeleitet sind. Die **ServiceResponseCollection** -und die include- **ServiceResponse** -Objekte enthalten Informationen über das Ergebnis des Methodenaufrufs, den Sie zum Überprüfen der Ergebnisse verwenden können. 
   
-Wenn Sie die EWS Managed API und Aufrufen einer Methode für ein [Element](http://msdn.microsoft.com/EN-US/library/microsoft.exchange.webservices.data.item%28v=exchg.80%29.aspx) -Objekt oder eines der abgeleitete Objekte, die wahrscheinlich-Methode nicht zurück Response-Objekt für den Erfolg zu überprüfen, sondern löst eine [Ausnahme](http://msdn.microsoft.com/EN-US/library/c18k6c59) aus, wenn die Methode nicht abgeschlossen wurde erfolgreich. 
+Wenn Sie die verwaltete EWS-API verwenden und eine Methode für ein [Item](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item%28v=exchg.80%29.aspx) -Objekt oder eines der abgeleiteten Objekte aufrufen, gibt die Methode wahrscheinlich kein Response-Objekt zurück, um den Erfolg zu überprüfen, löst jedoch eine [Ausnahme](https://msdn.microsoft.com/library/c18k6c59) aus, wenn die Methode nicht erfolgreich abgeschlossen wird. 
   
-### <a name="verifying-success"></a>Überprüfen des Erfolgs des Updates
+### <a name="verifying-success"></a>Überprüfen des Erfolgs
 
-Ein Vorteil die EWS Managed API ist, dass beim Umgang mit mehreren Elementen in eine Antwort ein Gesamtstatus bereitgestellt. Wenn eine **ServiceResponseCollection**von die aufgerufenen Methode zurückgegeben wird, können Sie also überprüfen, dass die [OverallResult](http://msdn.microsoft.com/en-us/library/dd634515%28v=exchg.80%29.aspx) -Eigenschaft der **ServiceResponseCollection** [ServiceResult.Success](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx)gleich ist. In diesem Fall wurden alle Elemente in der im Batchmodus Vorgang erfolgreich abgeschlossen wurde; Sie müssen nicht jedes Objekt **ServiceResponse** einzeln zu prüfen. Wenn die **OverallResult** -Eigenschaft nicht auf **ServiceResult.Success**festgelegt ist, müssen Sie [die Fehlermeldung oder einer Warnung zu behandeln](#bk_ewsmaerrors).
+Ein Vorteil der Verwendung der verwaltete EWS-API besteht darin, dass Sie einen allgemeinen Status bereitstellt, wenn Sie mit mehreren Elementen in einer Antwort umgehen. Wenn also die aufgerufene Methode ein **ServiceResponseCollection**-Objekt zurückgibt, können Sie überprüfen, ob die [OverallResult](https://msdn.microsoft.com/library/dd634515%28v=exchg.80%29.aspx) -Eigenschaft des **ServiceResponseCollection** gleich [ServiceResult. Success](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx)ist. Wenn dies der Fall ist, wurden alle Elemente im Batchprozess erfolgreich abgeschlossen; Sie müssen nicht jedes **ServiceResponse** -Objekt einzeln überprüfen. Wenn die **OverallResult** -Eigenschaft nicht auf **ServiceResult. Success**festgelegt ist, müssen Sie [den Fehler oder die Warnung behandeln](#bk_ewsmaerrors).
   
-Wenn die-Methode, die Sie Aufrufen einer **ServiceResponseCollection**gibt keine zurück, jedoch ein **ServiceResponse** -Objekt zurückgibt, müssen Sie den Wert der **Result** -Eigenschaft überprüfen. Wenn der Wert **Ergebnis** **Erfolg**festgelegt ist, wissen Sie die Methode erfolgreich abgeschlossen wurde.
+Wenn die aufgerufene Methode keinen **ServiceResponseCollection**zurückgibt, aber ein **ServiceResponse** -Objekt zurückgibt, müssen Sie den Wert der **Result** -Eigenschaft überprüfen. Wenn der **Ergebnis** Wert auf " **Success**" festgelegt ist, wissen Sie, dass die Methode erfolgreich abgeschlossen wurde.
   
-Wenn die Methode, die Sie aufrufen keinen Rückgabewert hat, ist es wirklich nicht möglich, überprüfen Sie für den Erfolg über die EWS Managed-API. Solange keine Ausnahme ausgelöst wird, können Sie die Methode erfolgreich abgeschlossen wurde davon ausgehen. Für zusätzliche Validierung können Sie auch [Überprüfen Sie die SOAP-Antwort, um die Ergebnisse zu überprüfen](#bk_verifysoap).
+Wenn die Methode, die Sie aufrufen, keinen Rückgabewert hat, gibt es wirklich keine Möglichkeit, über den verwaltete EWS-API auf Erfolg zu überprüfen. Solange keine Ausnahme ausgelöst wird, können Sie davon ausgehen, dass die Methode erfolgreich abgeschlossen wurde. Zur weiteren Überprüfung können Sie auch [die SOAP-Antwort überprüfen, um die Ergebnisse zu über](#bk_verifysoap)prüfen.
   
-### <a name="handling-errors-warnings-and-exceptions"></a>Behandlung von Fehlern, Warnungen und Ausnahmen
+### <a name="handling-errors-warnings-and-exceptions"></a>Behandeln von Fehlern, Warnungen und Ausnahmen
 <a name="bk_ewsmaerrors"> </a>
 
-Wenn EWS Managed API Code eine **Ausnahme**auslöst, können Sie den Wert [Exception.Message](http://msdn.microsoft.com/EN-US/library/9btwf6wk) , um die Ursache des Fehlers zu bestimmen. Die **Message** -Eigenschaft enthält den Inhalt des [MessageText](http://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx) -Elements in der zugrunde liegenden SOAP-Antwort. Darüber hinaus ist die Ausnahme vom Typ [ServiceResponseException](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponseexception%28v=exchg.80%29.aspx) -Objekts, der am häufigsten verwendeten Ausnahmen, können Sie auch die [ErrorCode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponseexception.errorcode%28v=exchg.80%29.aspx) in das zugrunde liegende SOAP- [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Element und die [Antwort](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponseexception.response%28v=exchg.80%29.aspx) enthaltenen abrufen Diese Eigenschaft das zugeordnete [ServiceResponse](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse%28v=exchg.80%29.aspx) -Objekt identifiziert. Der folgende Code zeigt, wie abgefangen und den Inhalt einer **ServiceResponseException**anzuzeigen. 
+Wenn Ihr verwaltete EWS-API Code eine **Ausnahme**auslöst, können Sie den [Exception. Message](https://msdn.microsoft.com/library/9btwf6wk) -Wert verwenden, um die Ursache des Fehlers zu ermitteln. Die **Message** -Eigenschaft enthält den Inhalt des [MessageText](https://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx) -Elements in der zugrunde liegenden SOAP-Antwort. Darüber hinaus können Sie, wenn die Ausnahme vom Typ [ServiceResponseException](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponseexception%28v=exchg.80%29.aspx) -Objekt ist, eine der häufigsten Ausnahmen, auch den im zugrunde liegenden SOAP- [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Element enthaltenen [errorCode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponseexception.errorcode%28v=exchg.80%29.aspx) und die [Response](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponseexception.response%28v=exchg.80%29.aspx) -Eigenschaft, die das zugeordnete [ServiceResponse](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse%28v=exchg.80%29.aspx) -Objekt identifiziert, abrufen. Im folgenden Code wird gezeigt, wie der Inhalt eines **ServiceResponseException**abgefangen und angezeigt wird. 
   
 ```cs
 try
@@ -224,40 +224,40 @@ try
     }
 ```
 
-Wenn die aufgerufenen Methode eine **ServiceResponseCollection gibt**und der Wert der Eigenschaft **OverallResult** **Warnung** oder **Fehler**gleich ist, müssen Sie jedes Objekt in der **ServiceResponseCollection** zu durchlaufen Suchen Sie nach dem Fehler. Die **OverallResult** -Eigenschaft wird auf **Warnung** festgelegt, wenn mindestens eine Antwort **Ergebnis** Wert auf **Warnung** festgelegt wurde und alle anderen Antworten ihren Werten **Ergebnis** **Erfolg**haben. Die **OverallResult** -Eigenschaft wird auf **Fehler** festgelegt, wenn mindestens eine Antwort **Ergebnis** Wert auf **Fehler**festgelegt wurde. Wenn die **OverallResult** auf **Warnung** oder **Fehler**festgelegt ist, werden die folgenden Eigenschaften für die Objekte **ServiceResponse** entsprechend festgelegt: 
+Wenn die aufgerufene Methode ein **ServiceResponseCollection**-Objekt zurückgibt und der Wert der **OverallResult** -Eigenschaft gleich **Warning** oder **Error**ist, müssen Sie alle Objekte in der **ServiceResponseCollection** durchlaufen, um den Fehler zu finden. Die **OverallResult** -Eigenschaft ist auf **Warning** festgelegt, wenn mindestens eine Antwort den **Ergebnis** Wert auf **Warning** festgelegt hat und alle anderen Antworten ihre **Ergebnis** Werte auf " **erfolgreich**" festgelegt haben. Die **OverallResult** -Eigenschaft ist auf **Error** festgelegt, wenn mindestens eine Antwort den **Ergebnis** Wert auf **Error**festgelegt hat. Wenn **OverallResult** auf **Warning** oder **Error**festgelegt ist, werden die folgenden Eigenschaften für die **ServiceResponse** -Objekte entsprechend festgelegt: 
   
-- [ErrorCode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx) – enthält den Fehlercode, die verwendet werden kann, zusätzliche Ressourcen zur Problembehandlung zu erhalten. 
+- [ErrorCode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx) – enthält den Fehlercode, der zum Auffinden zusätzlicher Ressourcen zur Problembehandlung verwendet werden kann. 
     
-- [ErrorDetails](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errordetails%28v=exchg.80%29.aspx) – enthält Details zu dem Fehler für einige **ErrorCodes**. Beispielsweise bei der Fehlercode **ErrorRecurrenceHasNoOccurrence**ist, wird die **ErrorDetails** Schlüssel für **EffectiveStartDate** und **EffectiveEndDate**enthalten. 
+- [ErrorDetails](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errordetails%28v=exchg.80%29.aspx) – enthält Details zum Fehler für einige **errorCodes**. Wenn der Fehlercode beispielsweise **ErrorRecurrenceHasNoOccurrence**lautet, enthält der **ErrorDetails** Schlüssel für **EffectiveStartDate** und **EffectiveEndDate**. 
     
-- [ErrorMessage](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errormessage%28v=exchg.80%29.aspx) – den Fehler beschreibt. 
+- [ErrorMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errormessage%28v=exchg.80%29.aspx) – beschreibt den Fehler. 
     
-- [ErrorProperties](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errorproperties%28v=exchg.80%29.aspx) – sofern verfügbar, identifiziert die Eigenschaften, die den Fehler verursacht hat. Wenn der Fehlercode **ErrorInvalidPropertyForOperation**ist, enthält **ErrorProperties** beispielsweise die Definition der Eigenschaft, die für die Anforderung ungültig war. 
+- [ErrorProperties](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errorproperties%28v=exchg.80%29.aspx) – sofern verfügbar, werden die Eigenschaften identifiziert, die den Fehler verursacht haben. Wenn der Fehlercode beispielsweise **ErrorInvalidPropertyForOperation**lautet, enthält **ErrorProperties** die Definition der Eigenschaft, die für die Anforderung ungültig war. 
     
-- [Ergebnis](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx) – enthält **Fehler** oder einer **Warnung** , wenn ein Problem aufgetreten ist. 
+- [Ergebnis](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx) – enthält **Fehler** oder **Warnungen** , wenn ein Problem auftritt. 
     
-Wenn die Informationen von den Eigenschaften **ServiceResponse** bereitgestellt nicht genügend Informationen, um Ihre Methodenaufruf korrigieren oder Aufheben der Blockierung Sie, finden Sie unter [Nächste Schritte](#bk_nextsteps) , um weitere Informationen zu Werten **ErrorCode** einsteigen. 
+Wenn die von den **ServiceResponse** -Eigenschaften bereitgestellten Informationen nicht genügend Informationen zur Korrektur des Methodenaufrufs oder zum Aufheben der Blockierung bereitstellen, finden Sie weitere Informationen zu **errorCode** -Werten in den [nächsten Schritten](#bk_nextsteps) . 
   
 ## 
 <a name="bk_nextsteps"> </a>
 
-Sie können zusätzliche Informationen zur Problembehandlung in den folgenden Themen suchen:
+Weitere Informationen zur Problembehandlung finden Sie in den folgenden Themen:
   
-- [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -element 
+- [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Element 
     
-- [ServiceError](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceerror%28v=exchg.80%29.aspx) -Aufzählung 
+- [Service Error](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceerror%28v=exchg.80%29.aspx) -Aufzählung 
     
-- [EWS-Eigenschaft-bezogene Fehler](ews-property-related-errors.md)
+- [Mit der EWS-Eigenschaft zusammenhängende Fehler](ews-property-related-errors.md)
     
-Darüber hinaus je nachdem, was Sie in Ihrer Anforderung erreichen gerade, möglicherweise zusätzliche hilfreich finden Sie Informationen zu den Fehlercode in den folgenden Themen:
+Je nachdem, was Sie in Ihrer Anforderung erreichen möchten, finden Sie darüber hinaus möglicherweise weitere hilfreiche Informationen zum Fehlercode in den folgenden Themen:
   
 - [Behandeln von AutoErmittlungs-Fehlermeldungen](handling-autodiscover-error-messages.md)
     
-- [Fehlerbehandlung Benachrichtigung-bezogene in EWS in Exchange](handling-notification-related-errors-in-ews-in-exchange.md)
+- [Umgang von Fehlern im Zusammenhang mit Benachrichtigungen in EWS in Exchange](handling-notification-related-errors-in-ews-in-exchange.md)
     
-- [Fehlerbehandlung Synchronisierung-bezogene in EWS in Exchange](handling-synchronization-related-errors-in-ews-in-exchange.md)
+- [Umgang mit Fehlern im Zusammenhang mit der Synchronisierung in EWS in Exchange](handling-synchronization-related-errors-in-ews-in-exchange.md)
     
-- [Fehlerbehandlung Löschung-bezogene in EWS in Exchange](handling-deletion-related-errors-in-ews-in-exchange.md)
+- [Umgang mit Fehlern in Exchange im Zusammenhang mit Löschungen in EWS](handling-deletion-related-errors-in-ews-in-exchange.md)
     
 ## <a name="see-also"></a>Siehe auch
 

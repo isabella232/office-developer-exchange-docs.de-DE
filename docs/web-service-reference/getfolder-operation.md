@@ -1,43 +1,43 @@
 ---
-title: GetFolder Operation
+title: GetFolder-Vorgang
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
 api_name:
 - GetFolder
 api_type:
 - schema
 ms.assetid: 355bcf93-dc71-4493-b177-622afac5fdb9
-description: GetFolder-Vorgang ruft Ordnern aus dem Exchange-Speicher ab.
-ms.openlocfilehash: 1d2806e4febb6059b8a866d585bc70f49befbdef
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetFolder-Vorgang ruft Ordner aus dem Exchange-Informationsspeicher ab.
+localization_priority: Priority
+ms.openlocfilehash: 9d511f309b9210fd9b5a49ff6c60bc7982992973
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758684"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459181"
 ---
-# <a name="getfolder-operation"></a>GetFolder Operation
+# <a name="getfolder-operation"></a>GetFolder-Vorgang
 
-**GetFolder** -Vorgang ruft Ordnern aus dem Exchange-Speicher ab. 
+Der **GetFolder** -Vorgang ruft Ordner aus dem Exchange-Informationsspeicher ab. 
   
-## <a name="getfolder-request-example"></a>GetFolder-anforderungsbeispiel
+## <a name="getfolder-request-example"></a>GetFolder-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Anforderung **GetFolder** veranschaulicht erhalten eine Ordner-ID, Name, die Anzahl der Elemente in dem Ordner, die Anzahl der untergeordneten Ordner und die Anzahl der ungelesenen Elemente im Ordner anzuzeigen. 
+Im folgenden Beispiel einer **GetFolder** -Anforderung wird gezeigt, wie eine Ordner-ID, ein Anzeigename, die Anzahl der Elemente in diesem Ordner, die Anzahl der untergeordneten Ordner und die Anzahl der ungelesenen Elemente im Ordner abgerufen werden. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-   xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+   xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetFolder xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetFolder xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <FolderShape>
         <t:BaseShape>Default</t:BaseShape>
       </FolderShape>
@@ -51,7 +51,7 @@ Im folgenden Beispiel wird eine Anforderung **GetFolder** veranschaulicht erhalt
 
 ### <a name="request-elements"></a>Anfordern von Elementen
 
-Diese **GetFolder** -Anforderung enthält die folgenden Elemente: 
+Diese **GetFolder** -Anforderung umfasst die folgenden Elemente: 
   
 - [GetFolder](getfolder.md)
     
@@ -63,19 +63,19 @@ Diese **GetFolder** -Anforderung enthält die folgenden Elemente:
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-Finden Sie im Schema für zusätzliche Elemente, die Sie verwenden können, um eine Anforderung **GetFolder** bilden. 
+Weitere Elemente, die Sie zum Erstellen einer **GetFolder** -Anforderung verwenden können, finden Sie im Schema. 
   
 > [!NOTE]
 > Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet. 
   
-## <a name="getfolder-response-example"></a>GetFolder-Antwort-Beispiel
+## <a name="getfolder-response-example"></a>GetFolder-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende (SOAP = Simple Object Access Protocol)-Body-Beispiel zeigt eine erfolgreiche Antwort auf die **GetFolder** -Anforderung. 
+Das folgende Simple Object Access Protocol (SOAP) Body-Beispiel zeigt eine erfolgreiche Antwort auf die **GetFolder** -Anforderung. 
   
 > [!NOTE]
-> Die Ordner-ID und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu erhalten. 
+> Die Ordner-ID und der Change-Schlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
   
 ### <a name="code"></a>Code
 
@@ -85,12 +85,12 @@ Das folgende (SOAP = Simple Object Access Protocol)-Body-Beispiel zeigt eine erf
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -110,9 +110,9 @@ Das folgende (SOAP = Simple Object Access Protocol)-Body-Beispiel zeigt eine erf
 </soap:Envelope>
 ```
 
-### <a name="response-elements"></a>Antwortelemente
+### <a name="response-elements"></a>Response-Elemente
 
-Dieser Antwort **GetFolder** umfasst die folgenden Elemente: 
+Diese **GetFolder** -Antwort umfasst die folgenden Elemente: 
   
 - [GetFolderResponse](getfolderresponse.md)
     
@@ -122,23 +122,23 @@ Dieser Antwort **GetFolder** umfasst die folgenden Elemente:
     
 - [Ordner](folders-ex15websvcsotherref.md)
     
-- [Folder](folder.md)
+- [Ordner](folder.md)
     
 - [FolderId](folderid.md)
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-- [TotalCount](totalcount.md)
+- [Total count](totalcount.md)
     
 - [ChildFolderCount](childfoldercount.md)
     
 - [UnreadCount](unreadcount.md)
     
-## <a name="getfolder-error-response-example"></a>GetFolder-Fehler antwortbeispiel
+## <a name="getfolder-error-response-example"></a>GetFolder-Fehlerantwort (Beispiel)
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende SOAP-Body-Beispiel zeigt eine Fehlerantwort an, die durch eine falsche [FolderId](folderid.md) in der Anforderung verursacht wird. 
+Das folgende SOAP Body-Beispiel zeigt eine Fehlerantwort, die durch eine falsche [Folder](folderid.md) -Wert in der Anforderung verursacht wird. 
   
 ### <a name="code"></a>Code
 
@@ -149,12 +149,12 @@ Das folgende SOAP-Body-Beispiel zeigt eine Fehlerantwort an, die durch eine fals
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetFolderResponseMessage ResponseClass="Error">
           <m:MessageText>Id is malformed.</m:MessageText>
@@ -168,7 +168,7 @@ Das folgende SOAP-Body-Beispiel zeigt eine Fehlerantwort an, die durch eine fals
 </soap:Envelope>
 ```
 
-### <a name="response-elements"></a>Antwortelemente
+### <a name="response-elements"></a>Response-Elemente
 
 Diese **GetFolder** -Fehlerantwort umfasst die folgenden Elemente: 
   
@@ -188,7 +188,7 @@ Diese **GetFolder** -Fehlerantwort umfasst die folgenden Elemente:
     
 ## <a name="version-differences"></a>Versionsunterschiede
 
-Für Applikationen werden, Exchange Online abzielen, Exchange Online als Teil von Office 365 oder eine lokale Version von Exchange beginnend mit Exchange 2013 Ordnerberechtigungen nicht zurückgegeben, wenn das Element [BaseShape](baseshape.md) **AllProperties** Wert hat in der Anforderung [GetFolder](getfolder-operation.md) -Vorgang. Um Ordnerberechtigungen abzurufen, fügen Sie dem [AdditionalProperties](additionalproperties.md) -Element in der Anforderung **GetFolder** die [PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) -Element hinzu. 
+Für Anwendungen, die auf Exchange Online Zielen, Exchange Online im Rahmen von Office 365 oder einer lokalen Exchange-Version, die mit Exchange 2013 beginnt, werden Ordnerberechtigungen nicht zurückgegeben, wenn das [BaseShape](baseshape.md) -Element den Wert **allproperties** in der [GetFolder](getfolder-operation.md) -Vorgangsanforderung aufweist. Zum Abrufen von Ordnerberechtigungen fügen Sie dem [AdditionalProperties](additionalproperties.md) -Element in der **GetFolder** -Anforderung das [PermissionSet-Element (permissionsettype)](permissionset-permissionsettype.md) hinzu. 
   
 ## <a name="see-also"></a>Siehe auch
 
