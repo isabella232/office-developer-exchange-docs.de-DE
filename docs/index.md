@@ -1,1 +1,1 @@
-# <a name="welcome-to-officedocs-dev-exchange-docs"></a><span data-ttu-id="fe123-101">Willkommen Sie beim Officedocs-Dev-Exchange-Dokumente.</span><span class="sxs-lookup"><span data-stu-id="fe123-101">Welcome to officedocs-dev-exchange-docs!</span></span>
+# <a name="welcome-to-officedocs-dev-exchange-docs"></a><span data-ttu-id="ab865-101">Willkommen bei officedocs-dev-Exchange-docs!</span><span class="sxs-lookup"><span data-stu-id="ab865-101">Welcome to officedocs-dev-exchange-docs!</span></span>

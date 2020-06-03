@@ -1,5 +1,5 @@
 ---
-title: Excludes
+title: Schließt
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bbaeddf6-9a67-4ee0-af99-7a7a5bbdc0e1
-description: Das Element ausgeschlossen führt eine bitweise Maske der angegebenen Eigenschaft und einen angegebenen Wert.
-ms.openlocfilehash: febd4171210319d8f7e475f9879c5f895f508713
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das excludes-Element führt eine bitweise Maske der angegebenen Eigenschaft und eines angegebenen Werts aus.
+ms.openlocfilehash: d5fcd8b86b454aa731bd43974b5b7d674fe76ed6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354386"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530614"
 ---
-# <a name="excludes"></a><span data-ttu-id="6c22b-103">Excludes</span><span class="sxs-lookup"><span data-stu-id="6c22b-103">Excludes</span></span>
+# <a name="excludes"></a><span data-ttu-id="e8a73-103">Schließt</span><span class="sxs-lookup"><span data-stu-id="e8a73-103">Excludes</span></span>
 
-<span data-ttu-id="6c22b-104">Das Element **ausgeschlossen** führt eine bitweise Maske der angegebenen Eigenschaft und einen angegebenen Wert.</span><span class="sxs-lookup"><span data-stu-id="6c22b-104">The **Excludes** element performs a bitwise mask of the specified property and a supplied value.</span></span> 
+<span data-ttu-id="e8a73-104">Das **excludes** -Element führt eine bitweise Maske der angegebenen Eigenschaft und eines angegebenen Werts aus.</span><span class="sxs-lookup"><span data-stu-id="e8a73-104">The **Excludes** element performs a bitwise mask of the specified property and a supplied value.</span></span> 
   
 ```xml
 <Excludes>
@@ -44,58 +44,58 @@ ms.locfileid: "21354386"
 </Excludes>
 ```
 
-<span data-ttu-id="6c22b-105">**ExcludesType**</span><span class="sxs-lookup"><span data-stu-id="6c22b-105">**ExcludesType**</span></span>
+<span data-ttu-id="e8a73-105">**ExcludesType**</span><span class="sxs-lookup"><span data-stu-id="e8a73-105">**ExcludesType**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="6c22b-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="6c22b-106">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="e8a73-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="e8a73-106">Attributes and elements</span></span>
 
-<span data-ttu-id="6c22b-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="6c22b-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="e8a73-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="e8a73-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="6c22b-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="6c22b-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="e8a73-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="e8a73-108">Attributes</span></span>
 
-<span data-ttu-id="6c22b-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="6c22b-109">None.</span></span>
+<span data-ttu-id="e8a73-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="e8a73-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="6c22b-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="6c22b-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="e8a73-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e8a73-110">Child elements</span></span>
 
-|<span data-ttu-id="6c22b-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="6c22b-111">**Element**</span></span>|<span data-ttu-id="6c22b-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="6c22b-112">**Description**</span></span>|
+|<span data-ttu-id="e8a73-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="e8a73-111">**Element**</span></span>|<span data-ttu-id="e8a73-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="e8a73-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="6c22b-113">FieldURI</span><span class="sxs-lookup"><span data-stu-id="6c22b-113">FieldURI</span></span>](fielduri.md) <br/> |<span data-ttu-id="6c22b-114">Identifiziert die Eigenschaften von URI häufig verwiesen wird.</span><span class="sxs-lookup"><span data-stu-id="6c22b-114">Identifies frequently referenced properties by URI.</span></span>  <br/> |
-|[<span data-ttu-id="6c22b-115">IndexedFieldURI</span><span class="sxs-lookup"><span data-stu-id="6c22b-115">IndexedFieldURI</span></span>](indexedfielduri.md) <br/> |<span data-ttu-id="6c22b-116">Einzelne Elemente eines Wörterbuchs identifiziert.</span><span class="sxs-lookup"><span data-stu-id="6c22b-116">Identifies individual members of a dictionary.</span></span>  <br/> |
-|[<span data-ttu-id="6c22b-117">ExtendedFieldURI</span><span class="sxs-lookup"><span data-stu-id="6c22b-117">ExtendedFieldURI</span></span>](extendedfielduri.md) <br/> |<span data-ttu-id="6c22b-118">MAPI-Eigenschaften identifiziert.</span><span class="sxs-lookup"><span data-stu-id="6c22b-118">Identifies MAPI properties.</span></span>  <br/> |
-|[<span data-ttu-id="6c22b-119">Bitmaske</span><span class="sxs-lookup"><span data-stu-id="6c22b-119">Bitmask</span></span>](bitmask.md) <br/> |<span data-ttu-id="6c22b-120">Stellt eine hexadezimale oder decimal Maske, die während einer Einschränkung [ausgeschlossen](excludes.md) verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="6c22b-120">Represents a hexadecimal or decimal mask to be used during an [Excludes](excludes.md) restriction operation.</span></span> <span data-ttu-id="6c22b-121">Wenn die Bitmaske eine hexadezimale Zahl darstellt, muss es 0 X oder 0 X vorangestellt werden.</span><span class="sxs-lookup"><span data-stu-id="6c22b-121">If the bitmask represents a hexadecimal number, it must be prefixed by 0x or 0X.</span></span> <span data-ttu-id="6c22b-122">Andernfalls wird er eine Dezimalzahl betrachtet werden.</span><span class="sxs-lookup"><span data-stu-id="6c22b-122">Otherwise, it will be considered a decimal number.</span></span>  <br/> |
+|[<span data-ttu-id="e8a73-113">FieldURI</span><span class="sxs-lookup"><span data-stu-id="e8a73-113">FieldURI</span></span>](fielduri.md) <br/> |<span data-ttu-id="e8a73-114">Identifiziert häufig referenzierte Eigenschaften nach URI.</span><span class="sxs-lookup"><span data-stu-id="e8a73-114">Identifies frequently referenced properties by URI.</span></span>  <br/> |
+|[<span data-ttu-id="e8a73-115">IndexedFieldURI</span><span class="sxs-lookup"><span data-stu-id="e8a73-115">IndexedFieldURI</span></span>](indexedfielduri.md) <br/> |<span data-ttu-id="e8a73-116">Identifiziert einzelne Member eines Wörterbuchs.</span><span class="sxs-lookup"><span data-stu-id="e8a73-116">Identifies individual members of a dictionary.</span></span>  <br/> |
+|[<span data-ttu-id="e8a73-117">ExtendedFieldURI</span><span class="sxs-lookup"><span data-stu-id="e8a73-117">ExtendedFieldURI</span></span>](extendedfielduri.md) <br/> |<span data-ttu-id="e8a73-118">Identifiziert MAPI-Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="e8a73-118">Identifies MAPI properties.</span></span>  <br/> |
+|[<span data-ttu-id="e8a73-119">Bitmaske</span><span class="sxs-lookup"><span data-stu-id="e8a73-119">Bitmask</span></span>](bitmask.md) <br/> |<span data-ttu-id="e8a73-120">Stellt eine Hexadezimal-oder Dezimal Maske dar, die während eines [Exclude](excludes.md) -Einschränkungs Vorgangs verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="e8a73-120">Represents a hexadecimal or decimal mask to be used during an [Excludes](excludes.md) restriction operation.</span></span> <span data-ttu-id="e8a73-121">Wenn die Bitmaske eine Hexadezimalzahl darstellt, muss Ihr das Präfix 0x oder 0x vorangestellt werden.</span><span class="sxs-lookup"><span data-stu-id="e8a73-121">If the bitmask represents a hexadecimal number, it must be prefixed by 0x or 0X.</span></span> <span data-ttu-id="e8a73-122">Andernfalls wird Sie als Dezimalzahl betrachtet.</span><span class="sxs-lookup"><span data-stu-id="e8a73-122">Otherwise, it will be considered a decimal number.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="6c22b-123">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="6c22b-123">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="e8a73-123">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e8a73-123">Parent elements</span></span>
 
-|<span data-ttu-id="6c22b-124">**Element**</span><span class="sxs-lookup"><span data-stu-id="6c22b-124">**Element**</span></span>|<span data-ttu-id="6c22b-125">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="6c22b-125">**Description**</span></span>|
+|<span data-ttu-id="e8a73-124">**Element**</span><span class="sxs-lookup"><span data-stu-id="e8a73-124">**Element**</span></span>|<span data-ttu-id="e8a73-125">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="e8a73-125">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="6c22b-126">Einschränkung</span><span class="sxs-lookup"><span data-stu-id="6c22b-126">Restriction</span></span>](restriction.md) <br/> |<span data-ttu-id="6c22b-127">Stellt die Einschränkung oder die Abfrage, die zum Filtern von Elementen oder Ordner in FindItem/FindFolder, und suchen Sie Ordner Vorgänge verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="6c22b-127">Represents the restriction or query that is used to filter items or folders in FindItem/FindFolder and search folder operations.</span></span>  <br/> |
-|[<span data-ttu-id="6c22b-128">not</span><span class="sxs-lookup"><span data-stu-id="6c22b-128">Not</span></span>](not.md) <br/> |<span data-ttu-id="6c22b-129">Stellt einen Search-Ausdruck, der den booleschen Wert des Suchbegriffs negiert, die er enthält.</span><span class="sxs-lookup"><span data-stu-id="6c22b-129">Represents a search expression that negates the Boolean value of the search expression that it contains.</span></span>  <br/> |
-|[<span data-ttu-id="6c22b-130">Und</span><span class="sxs-lookup"><span data-stu-id="6c22b-130">And</span></span>](and.md) <br/> |<span data-ttu-id="6c22b-131">Stellt einen Search-Ausdruck, der Sie einen Vorgang vom Typ Boolean und zwischen zwei oder mehr Suchausdrücke ausführen kann.</span><span class="sxs-lookup"><span data-stu-id="6c22b-131">Represents a search expression that allows you to perform a Boolean And operation between two or more search expressions.</span></span> <span data-ttu-id="6c22b-132">Das Ergebnis der And-Operation ist **true** , wenn **alle enthaltenen das And Search Ausdrücke zutreffen**.</span><span class="sxs-lookup"><span data-stu-id="6c22b-132">The result of the And operation is **true** if all of the search expressions contained within the And are **true**.</span></span>  <br/> |
-|[<span data-ttu-id="6c22b-133">- oder -</span><span class="sxs-lookup"><span data-stu-id="6c22b-133">Or</span></span>](or.md) <br/> |<span data-ttu-id="6c22b-134">Stellt einen Suche Ausdruck, der ein logisches OR Suchbegriffs durchführt darin enthaltenen dar.</span><span class="sxs-lookup"><span data-stu-id="6c22b-134">Represents a search expression that performs a logical OR on the search expression it contains.</span></span> <span data-ttu-id="6c22b-135">Das Element [oder](or.md) gibt **true** zurück, wenn ein untergeordnetes Element **true**zurück.</span><span class="sxs-lookup"><span data-stu-id="6c22b-135">The [Or](or.md) element will return **true** if any of its children return **true**.</span></span>  <br/> |
+|[<span data-ttu-id="e8a73-126">Einschränkung</span><span class="sxs-lookup"><span data-stu-id="e8a73-126">Restriction</span></span>](restriction.md) <br/> |<span data-ttu-id="e8a73-127">Stellt die Einschränkung oder Abfrage dar, die zum Filtern von Elementen oder Ordnern in FindItem/FindFolder und Suchordner Vorgängen verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="e8a73-127">Represents the restriction or query that is used to filter items or folders in FindItem/FindFolder and search folder operations.</span></span>  <br/> |
+|[<span data-ttu-id="e8a73-128">not</span><span class="sxs-lookup"><span data-stu-id="e8a73-128">Not</span></span>](not.md) <br/> |<span data-ttu-id="e8a73-129">Stellt einen Suchausdruck dar, der den booleschen Wert des darin enthaltenen Suchausdrucks negiert.</span><span class="sxs-lookup"><span data-stu-id="e8a73-129">Represents a search expression that negates the Boolean value of the search expression that it contains.</span></span>  <br/> |
+|[<span data-ttu-id="e8a73-130">Und</span><span class="sxs-lookup"><span data-stu-id="e8a73-130">And</span></span>](and.md) <br/> |<span data-ttu-id="e8a73-131">Stellt einen Suchausdruck dar, mit dem Sie einen booleschen Wert und eine Operation zwischen zwei oder mehr Suchausdrücken ausführen können.</span><span class="sxs-lookup"><span data-stu-id="e8a73-131">Represents a search expression that allows you to perform a Boolean And operation between two or more search expressions.</span></span> <span data-ttu-id="e8a73-132">Das Ergebnis der and-Operation ist **true** , wenn alle in der enthaltenen Suchausdrücke auf **true**festgelegt sind.</span><span class="sxs-lookup"><span data-stu-id="e8a73-132">The result of the And operation is **true** if all of the search expressions contained within the And are **true**.</span></span>  <br/> |
+|[<span data-ttu-id="e8a73-133">- oder -</span><span class="sxs-lookup"><span data-stu-id="e8a73-133">Or</span></span>](or.md) <br/> |<span data-ttu-id="e8a73-134">Stellt einen Suchausdruck dar, der eine logische OR-Anweisung für den darin enthaltenen Suchausdruck ausführt.</span><span class="sxs-lookup"><span data-stu-id="e8a73-134">Represents a search expression that performs a logical OR on the search expression it contains.</span></span> <span data-ttu-id="e8a73-135">Das [or](or.md) -Element gibt **true** zurück, wenn eines der untergeordneten Elemente **true**zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="e8a73-135">The [Or](or.md) element will return **true** if any of its children return **true**.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="6c22b-136">Hinweise</span><span class="sxs-lookup"><span data-stu-id="6c22b-136">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e8a73-136">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e8a73-136">Remarks</span></span>
 
-<span data-ttu-id="6c22b-137">**Ausgeschlossen** lösen auf **true fest,** Wenn eine AND-Operation für die folgenden auf 0 aufgelöst wird:</span><span class="sxs-lookup"><span data-stu-id="6c22b-137">**Excludes** will resolve to **true** if an AND operation performed on the following resolves to 0:</span></span> 
+<span data-ttu-id="e8a73-137">" **Excludes** " wird in " **true** " aufgelöst, wenn ein-und-Vorgang, der für Folgendes ausgeführt wird, in 0 aufgelöst wird:</span><span class="sxs-lookup"><span data-stu-id="e8a73-137">**Excludes** will resolve to **true** if an AND operation performed on the following resolves to 0:</span></span> 
   
-1. <span data-ttu-id="6c22b-138">Die bitweise Wert für die Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="6c22b-138">The bitwise value for the property</span></span>
+1. <span data-ttu-id="e8a73-138">Der bitweise Wert für die Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="e8a73-138">The bitwise value for the property</span></span>
     
-2. <span data-ttu-id="6c22b-139">Der Bitmaskenwert für die-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="6c22b-139">The bitmask value for the property</span></span>
+2. <span data-ttu-id="e8a73-139">Der Wert der Bitmaske für die Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="e8a73-139">The bitmask value for the property</span></span>
     
-<span data-ttu-id="6c22b-140">**Ausgeschlossen** kann nur auf eine Eigenschaft angewendet werden, die einen ganzzahligen Wert hat.</span><span class="sxs-lookup"><span data-stu-id="6c22b-140">**Excludes** can only be applied to a property that has an integer value.</span></span> <span data-ttu-id="6c22b-141">Wenn der Eigenschaftentyp etwas anderes als eine ganze Zahl ist, wird ein Fehlercode des **ErrorUnsupportedPathForQuery** in der Antwort zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6c22b-141">If the property type is anything other than an integer, an error code of **ErrorUnsupportedPathForQuery** is returned in the response.</span></span> 
+<span data-ttu-id="e8a73-140">**Excludes** können nur auf eine Eigenschaft angewendet werden, die einen ganzzahligen Wert aufweist.</span><span class="sxs-lookup"><span data-stu-id="e8a73-140">**Excludes** can only be applied to a property that has an integer value.</span></span> <span data-ttu-id="e8a73-141">Wenn der Eigenschaftentyp etwas anderes als eine ganze Zahl ist, wird ein Fehlercode von **ErrorUnsupportedPathForQuery** in der Antwort zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="e8a73-141">If the property type is anything other than an integer, an error code of **ErrorUnsupportedPathForQuery** is returned in the response.</span></span> 
   
-<span data-ttu-id="6c22b-142">Sie können den umgekehrten Vorgang durch Aufrufen von Not(Excludes) ausführen.</span><span class="sxs-lookup"><span data-stu-id="6c22b-142">You can perform the reverse operation by calling Not(Excludes).</span></span>
+<span data-ttu-id="e8a73-142">Sie können den Reverse-Vorgang durchführen, indem Sie Not (excludes) aufrufen.</span><span class="sxs-lookup"><span data-stu-id="e8a73-142">You can perform the reverse operation by calling Not(Excludes).</span></span>
   
-<span data-ttu-id="6c22b-143">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="6c22b-143">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="e8a73-143">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="e8a73-143">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="6c22b-144">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="6c22b-144">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="e8a73-144">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="e8a73-144">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="6c22b-145">Namespace</span><span class="sxs-lookup"><span data-stu-id="6c22b-145">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="6c22b-146">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="6c22b-146">Schema Name</span></span>  <br/> |<span data-ttu-id="6c22b-147">Schematypen</span><span class="sxs-lookup"><span data-stu-id="6c22b-147">Types schema</span></span>  <br/> |
-|<span data-ttu-id="6c22b-148">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="6c22b-148">Validation File</span></span>  <br/> |<span data-ttu-id="6c22b-149">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="6c22b-149">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="6c22b-150">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="6c22b-150">Can be Empty</span></span>  <br/> |<span data-ttu-id="6c22b-151">False</span><span class="sxs-lookup"><span data-stu-id="6c22b-151">False</span></span>  <br/> |
+|<span data-ttu-id="e8a73-145">Namespace</span><span class="sxs-lookup"><span data-stu-id="e8a73-145">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="e8a73-146">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="e8a73-146">Schema Name</span></span>  <br/> |<span data-ttu-id="e8a73-147">Schematypen</span><span class="sxs-lookup"><span data-stu-id="e8a73-147">Types schema</span></span>  <br/> |
+|<span data-ttu-id="e8a73-148">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="e8a73-148">Validation File</span></span>  <br/> |<span data-ttu-id="e8a73-149">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="e8a73-149">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="e8a73-150">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="e8a73-150">Can be Empty</span></span>  <br/> |<span data-ttu-id="e8a73-151">False</span><span class="sxs-lookup"><span data-stu-id="e8a73-151">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="6c22b-152">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="6c22b-152">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e8a73-152">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e8a73-152">See also</span></span>
 
-- [<span data-ttu-id="6c22b-153">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="6c22b-153">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="e8a73-153">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="e8a73-153">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

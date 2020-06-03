@@ -1,5 +1,5 @@
 ---
-title: ReminderGroup
+title: Reminder
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -7,64 +7,64 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3e23c2a1-05d8-4fec-897c-f684a5b97e4c
-description: Das ReminderGroup-Element gibt an, ob die Erinnerung für ein Kalenderelement oder einer Aufgabe ist.
-ms.openlocfilehash: d9d31cdab482d04149428021ad44cc742108053a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Reminder-Element gibt an, ob die Erinnerung für ein Kalenderelement oder eine Aufgabe ist.
+ms.openlocfilehash: be6f4a7d7e9d495ed7b42ed40c60f016468e8c2c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831060"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529868"
 ---
-# <a name="remindergroup"></a><span data-ttu-id="168ac-103">ReminderGroup</span><span class="sxs-lookup"><span data-stu-id="168ac-103">ReminderGroup</span></span>
+# <a name="remindergroup"></a><span data-ttu-id="bdf9e-103">Reminder</span><span class="sxs-lookup"><span data-stu-id="bdf9e-103">ReminderGroup</span></span>
 
-<span data-ttu-id="168ac-104">Das **ReminderGroup** -Element gibt an, ob die Erinnerung für ein Kalenderelement oder einer Aufgabe ist.</span><span class="sxs-lookup"><span data-stu-id="168ac-104">The **ReminderGroup** element specifies whether the reminder is for a calendar item or a task.</span></span> 
+<span data-ttu-id="bdf9e-104">Das **Reminder** -Element gibt an, ob die Erinnerung für ein Kalenderelement oder eine Aufgabe ist.</span><span class="sxs-lookup"><span data-stu-id="bdf9e-104">The **ReminderGroup** element specifies whether the reminder is for a calendar item or a task.</span></span> 
   
 ```XML
 <ReminderGroup> Calendar | Task </ReminderGroup>
 ```
 
- <span data-ttu-id="168ac-105">**ReminderGroupType**</span><span class="sxs-lookup"><span data-stu-id="168ac-105">**ReminderGroupType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="168ac-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="168ac-106">Attributes and elements</span></span>
+ <span data-ttu-id="bdf9e-105">**ReminderGroupType**</span><span class="sxs-lookup"><span data-stu-id="bdf9e-105">**ReminderGroupType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="bdf9e-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="bdf9e-106">Attributes and elements</span></span>
 
-<span data-ttu-id="168ac-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="168ac-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="bdf9e-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="bdf9e-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="168ac-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="168ac-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="bdf9e-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="bdf9e-108">Attributes</span></span>
 
-<span data-ttu-id="168ac-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="168ac-109">None.</span></span>
+<span data-ttu-id="bdf9e-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="bdf9e-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="168ac-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="168ac-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="bdf9e-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="bdf9e-110">Child elements</span></span>
 
-<span data-ttu-id="168ac-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="168ac-111">None.</span></span>
+<span data-ttu-id="bdf9e-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="bdf9e-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="168ac-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="168ac-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="bdf9e-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="bdf9e-112">Parent elements</span></span>
 
-[<span data-ttu-id="168ac-113">Reminder</span><span class="sxs-lookup"><span data-stu-id="168ac-113">Reminder</span></span>](reminder.md)
+[<span data-ttu-id="bdf9e-113">Reminder</span><span class="sxs-lookup"><span data-stu-id="bdf9e-113">Reminder</span></span>](reminder.md)
   
-## <a name="text-value"></a><span data-ttu-id="168ac-114">Textwert</span><span class="sxs-lookup"><span data-stu-id="168ac-114">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="bdf9e-114">Textwert</span><span class="sxs-lookup"><span data-stu-id="bdf9e-114">Text value</span></span>
 
-<span data-ttu-id="168ac-115">Der Textwert des **ReminderGroup** -Elements ist die Gruppentyp der Erinnerung.</span><span class="sxs-lookup"><span data-stu-id="168ac-115">The text value of the **ReminderGroup** element is the group type of the reminder.</span></span> <span data-ttu-id="168ac-116">Der Textwert der **Kalender** gibt an, dass die Erinnerung für ein Kalenderelement ist.</span><span class="sxs-lookup"><span data-stu-id="168ac-116">The text value of **Calendar** specifies that the reminder is for a calendar item.</span></span> <span data-ttu-id="168ac-117">Der Textwert der **Aufgabe** gibt an, dass die Erinnerung für ein Aufgabenelement ist.</span><span class="sxs-lookup"><span data-stu-id="168ac-117">The text value of **Task** specifies that the reminder is for a task item.</span></span> 
+<span data-ttu-id="bdf9e-115">Der Textwert des **Reminder** -Elements ist der Gruppentyp der Erinnerung.</span><span class="sxs-lookup"><span data-stu-id="bdf9e-115">The text value of the **ReminderGroup** element is the group type of the reminder.</span></span> <span data-ttu-id="bdf9e-116">Der Textwert von **Calendar** gibt an, dass die Erinnerung für ein Kalenderelement gilt.</span><span class="sxs-lookup"><span data-stu-id="bdf9e-116">The text value of **Calendar** specifies that the reminder is for a calendar item.</span></span> <span data-ttu-id="bdf9e-117">Der Textwert von **Task** gibt an, dass die Erinnerung für ein Aufgabenelement ist.</span><span class="sxs-lookup"><span data-stu-id="bdf9e-117">The text value of **Task** specifies that the reminder is for a task item.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="168ac-118">Hinweise</span><span class="sxs-lookup"><span data-stu-id="168ac-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bdf9e-118">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="bdf9e-118">Remarks</span></span>
 
-<span data-ttu-id="168ac-119">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="168ac-119">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="bdf9e-119">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="bdf9e-119">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="168ac-120">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="168ac-120">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="bdf9e-120">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="bdf9e-120">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="168ac-121">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="168ac-121">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="bdf9e-121">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="bdf9e-121">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="168ac-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="168ac-122">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="168ac-123">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="168ac-123">Schema Name</span></span>  <br/> |<span data-ttu-id="168ac-124">Schematypen</span><span class="sxs-lookup"><span data-stu-id="168ac-124">Types schema</span></span>  <br/> |
-|<span data-ttu-id="168ac-125">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="168ac-125">Validation File</span></span>  <br/> |<span data-ttu-id="168ac-126">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="168ac-126">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="168ac-127">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="168ac-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="168ac-128">False</span><span class="sxs-lookup"><span data-stu-id="168ac-128">False</span></span>  <br/> |
+|<span data-ttu-id="bdf9e-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="bdf9e-122">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="bdf9e-123">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="bdf9e-123">Schema Name</span></span>  <br/> |<span data-ttu-id="bdf9e-124">Schematypen</span><span class="sxs-lookup"><span data-stu-id="bdf9e-124">Types schema</span></span>  <br/> |
+|<span data-ttu-id="bdf9e-125">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="bdf9e-125">Validation File</span></span>  <br/> |<span data-ttu-id="bdf9e-126">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="bdf9e-126">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="bdf9e-127">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="bdf9e-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="bdf9e-128">False</span><span class="sxs-lookup"><span data-stu-id="bdf9e-128">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="168ac-129">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="168ac-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bdf9e-129">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="bdf9e-129">See also</span></span>
 
 
 
-[<span data-ttu-id="168ac-130">Reminder</span><span class="sxs-lookup"><span data-stu-id="168ac-130">Reminder</span></span>](reminder.md)
+[<span data-ttu-id="bdf9e-130">Reminder</span><span class="sxs-lookup"><span data-stu-id="bdf9e-130">Reminder</span></span>](reminder.md)
 
 
-- [<span data-ttu-id="168ac-131">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="168ac-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="bdf9e-131">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="bdf9e-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

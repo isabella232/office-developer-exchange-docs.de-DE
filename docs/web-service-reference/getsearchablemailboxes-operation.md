@@ -1,57 +1,63 @@
 ---
 title: GetSearchableMailboxes-Vorgang
 manager: sethgros
-ms.date: 09/17/2015
+ms.date: 01/24/2020
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 47f8ff57-4835-4d2d-9136-44afb31a4cbe
-description: Hier finden Sie Informationen über die GetSearchableMailboxes EWS Vorgang.
-ms.openlocfilehash: 5e14288280b23e2555eea4fce0f77743d7d210ce
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier finden Sie Informationen zum GetSearchableMailboxes-EWS-Vorgang.
+ms.openlocfilehash: e893a66eb1b638479eeccc6bd7548cb020f37243
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758794"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530839"
 ---
-# <a name="getsearchablemailboxes-operation"></a><span data-ttu-id="951c0-103">GetSearchableMailboxes-Vorgang</span><span class="sxs-lookup"><span data-stu-id="951c0-103">GetSearchableMailboxes operation</span></span>
+# <a name="getsearchablemailboxes-operation"></a><span data-ttu-id="f642d-103">GetSearchableMailboxes-Vorgang</span><span class="sxs-lookup"><span data-stu-id="f642d-103">GetSearchableMailboxes operation</span></span>
 
-<span data-ttu-id="951c0-104">Hier finden Sie Informationen zum **GetSearchableMailboxes** EWS-Vorgang.</span><span class="sxs-lookup"><span data-stu-id="951c0-104">Find information about the **GetSearchableMailboxes** EWS operation.</span></span> 
-  
-<span data-ttu-id="951c0-105">Der Vorgang **GetSearchableMailboxes** Ruft eine bestimmte Gruppe von durchsuchbaren Postfächer für Suchvorgänge Ermittlung ab.</span><span class="sxs-lookup"><span data-stu-id="951c0-105">The **GetSearchableMailboxes** operation gets a scoped set of searchable mailboxes for discovery searches.</span></span> <span data-ttu-id="951c0-106">Der Bereich der durchsuchbar Postfächer in der Antwort zurückgegeben, hängt von den Suchfilter und gibt an, ob die Verteilung der Gruppenmitgliedschaft erweitert ist.</span><span class="sxs-lookup"><span data-stu-id="951c0-106">The scope of searchable mailboxes returned in the response is determined by the search filter and whether distribution group membership is expanded.</span></span> 
-  
-<span data-ttu-id="951c0-107">Dieser Vorgang wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="951c0-107">This operation was introduced in Exchange Server 2013.</span></span>
-  
-## <a name="using-the-getsearchablemailboxes-operation"></a><span data-ttu-id="951c0-108">Verwenden des GetSearchableMailboxes-Vorgangs</span><span class="sxs-lookup"><span data-stu-id="951c0-108">Using the GetSearchableMailboxes operation</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="f642d-104">Ab dem 1. April 2020 ist der GetSearchableMailboxes-Vorgang in Exchange Online nicht mehr verfügbar.</span><span class="sxs-lookup"><span data-stu-id="f642d-104">Starting on April 1, 2020, the GetSearchableMailboxes operation will no longer be available in Exchange Online.</span></span> <span data-ttu-id="f642d-105">Dieser Vorgang ist in lokalen Versionen von Exchange Server nicht betroffen.</span><span class="sxs-lookup"><span data-stu-id="f642d-105">This operation won't be affected in on-premises versions of Exchange Server.</span></span> <span data-ttu-id="f642d-106">Weitere Informationen finden Sie unter [Retirement of Legacy eDiscovery Tools in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement#getsearchablemailboxes-setholdonmailboxes-and-getholdonmailboxes-operations-in-the-ews-api).</span><span class="sxs-lookup"><span data-stu-id="f642d-106">For more information, see [Retirement of legacy eDiscovery tools in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement#getsearchablemailboxes-setholdonmailboxes-and-getholdonmailboxes-operations-in-the-ews-api).</span></span>
 
-<span data-ttu-id="951c0-109">Der Vorgang **GetSearchableMailboxes** Ruft Informationen zu Postfächern durchsuchbar ab.</span><span class="sxs-lookup"><span data-stu-id="951c0-109">The **GetSearchableMailboxes** operation gets information about searchable mailboxes.</span></span> <span data-ttu-id="951c0-110">Die folgenden Argumente können in der Anforderung übergeben werden:</span><span class="sxs-lookup"><span data-stu-id="951c0-110">The following arguments can be passed in the request:</span></span> 
+<span data-ttu-id="f642d-107">Hier finden Sie Informationen zum **GetSearchableMailboxes** -EWS-Vorgang.</span><span class="sxs-lookup"><span data-stu-id="f642d-107">Find information about the **GetSearchableMailboxes** EWS operation.</span></span> 
   
-- <span data-ttu-id="951c0-111">[SearchFilter](searchfilter.md) – einen einzelne e-Mail-Alias als Argument akzeptiert.</span><span class="sxs-lookup"><span data-stu-id="951c0-111">[SearchFilter](searchfilter.md) —Accepts a single email alias as an argument.</span></span> 
+<span data-ttu-id="f642d-108">Der **GetSearchableMailboxes** -Vorgang ruft einen Bereich mit durchsuchbaren Postfächern für Ermittlungs suchen ab.</span><span class="sxs-lookup"><span data-stu-id="f642d-108">The **GetSearchableMailboxes** operation gets a scoped set of searchable mailboxes for discovery searches.</span></span> <span data-ttu-id="f642d-109">Der Umfang der durchsuchbaren Postfächer, die in der Antwort zurückgegeben werden, wird durch den Suchfilter bestimmt und ob die Mitgliedschaft in Verteilergruppen erweitert wird.</span><span class="sxs-lookup"><span data-stu-id="f642d-109">The scope of searchable mailboxes returned in the response is determined by the search filter and whether distribution group membership is expanded.</span></span> 
+
+> [!NOTE] 
+> <span data-ttu-id="f642d-110">Dieser Vorgang ist für die Verwendung mit dem Suchfilter und zum Abrufen nur der ersten paar Tausender vorgesehen. Es ist nicht für den vollständigen Abruf vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="f642d-110">This operation is intended to be used with the search filter and to retrieve only the first few thousands; it's not intended for exhaustive retrieval.</span></span>
+  
+<span data-ttu-id="f642d-111">Dieser Vorgang wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="f642d-111">This operation was introduced in Exchange Server 2013.</span></span>
+  
+## <a name="using-the-getsearchablemailboxes-operation"></a><span data-ttu-id="f642d-112">Verwenden des GetSearchableMailboxes-Vorgangs</span><span class="sxs-lookup"><span data-stu-id="f642d-112">Using the GetSearchableMailboxes operation</span></span>
+
+<span data-ttu-id="f642d-113">Der **GetSearchableMailboxes** -Vorgang ruft Informationen zu durchsuchbaren Postfächern ab.</span><span class="sxs-lookup"><span data-stu-id="f642d-113">The **GetSearchableMailboxes** operation gets information about searchable mailboxes.</span></span> <span data-ttu-id="f642d-114">Die folgenden Argumente können in der Anforderung übergeben werden:</span><span class="sxs-lookup"><span data-stu-id="f642d-114">The following arguments can be passed in the request:</span></span> 
+  
+- <span data-ttu-id="f642d-115">[SearchFilter](searchfilter.md) – akzeptiert einen einzelnen e-Mail-Alias als Argument.</span><span class="sxs-lookup"><span data-stu-id="f642d-115">[SearchFilter](searchfilter.md) - Accepts a single email alias as an argument.</span></span> 
     
-- <span data-ttu-id="951c0-112">[ExpandGroupMembership](expandgroupmembership.md) – gibt an, ob die Verteilung Gruppenmitgliedschaft in die in der Antwort zurückgegebenen Ergebnisse erweitert ist.</span><span class="sxs-lookup"><span data-stu-id="951c0-112">[ExpandGroupMembership](expandgroupmembership.md) — Indicates whether the distribution group membership is expanded in the results returned in the response.</span></span> 
+- <span data-ttu-id="f642d-116">[ExpandGroupMembership](expandgroupmembership.md) – gibt an, ob die Mitgliedschaft in Verteilergruppen in den Ergebnissen erweitert wird, die in der Antwort zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="f642d-116">[ExpandGroupMembership](expandgroupmembership.md) - Indicates whether the distribution group membership is expanded in the results returned in the response.</span></span> 
     
-<span data-ttu-id="951c0-113">Wenn das e-Mail-Alias im Suchfilter festgelegt, eine Verteilergruppe ist, und die Verteilung der Gruppenmitgliedschaft wird nicht erweitert, enthält die Antwort die Postfachinformationen für die Verteilergruppe.</span><span class="sxs-lookup"><span data-stu-id="951c0-113">If the email alias set in the search filter is a distribution group and the distribution group membership is not expanded, the response will contain the mailbox information for the distribution group.</span></span> <span data-ttu-id="951c0-114">Wenn das e-Mail-Alias im Suchfilter festgelegt, eine Verteilergruppe ist und Gruppenmitgliedschaft Verteilergruppe wird erweitert, enthält die Antwort die Postfachinformationen für jedes Postfach, das Mitglied der Verteilergruppe ist.</span><span class="sxs-lookup"><span data-stu-id="951c0-114">If the email alias set in the search filter is a distribution group and the distribution group membership is expanded, the response will contain the mailbox information for each mailbox that is a member of the distribution group.</span></span> <span data-ttu-id="951c0-115">Wenn der Suchfilter Alias für einen einzelnen Benutzer enthält, wird die Antwort die Postfachinformationen für die einzelnen Benutzer enthalten.</span><span class="sxs-lookup"><span data-stu-id="951c0-115">If the search filter contains a single user's alias, the response will contain the mailbox information for the single user.</span></span> <span data-ttu-id="951c0-116">Die Antwort enthält alle Postfächer durchsucht werden, wenn das Element [GetSearchableMailboxes](getsearchablemailboxes.md) leer ist.</span><span class="sxs-lookup"><span data-stu-id="951c0-116">The response will contain all searchable mailboxes if the [GetSearchableMailboxes](getsearchablemailboxes.md) element is empty.</span></span> <span data-ttu-id="951c0-117">Dies ist dasselbe wie ein leeres Element [SearchFilter](searchfilter.md) und das [ExpandGroupMembership](expandgroupmembership.md) -Element auf **"false"** festgelegt.</span><span class="sxs-lookup"><span data-stu-id="951c0-117">This is the same as having an empty [SearchFilter](searchfilter.md) element and the [ExpandGroupMembership](expandgroupmembership.md) element set to **false**.</span></span>
+<span data-ttu-id="f642d-117">Wenn der e-Mail-Aliassatz im Suchfilter eine Verteilergruppe ist und die Mitgliedschaft der Verteilergruppe nicht erweitert wird, enthält die Antwort die Postfachinformationen für die Verteilergruppe.</span><span class="sxs-lookup"><span data-stu-id="f642d-117">If the email alias set in the search filter is a distribution group and the distribution group membership is not expanded, the response will contain the mailbox information for the distribution group.</span></span> <span data-ttu-id="f642d-118">Wenn der e-Mail-Aliassatz im Suchfilter eine Verteilergruppe ist und die Mitgliedschaft der Verteilergruppe erweitert wird, enthält die Antwort die Postfachinformationen für jedes Postfach, das Mitglied der Verteilergruppe ist.</span><span class="sxs-lookup"><span data-stu-id="f642d-118">If the email alias set in the search filter is a distribution group and the distribution group membership is expanded, the response will contain the mailbox information for each mailbox that is a member of the distribution group.</span></span> <span data-ttu-id="f642d-119">Wenn der Suchfilter den Alias eines einzelnen Benutzers enthält, enthält die Antwort die Postfachinformationen für den einzelnen Benutzer.</span><span class="sxs-lookup"><span data-stu-id="f642d-119">If the search filter contains a single user's alias, the response will contain the mailbox information for the single user.</span></span> <span data-ttu-id="f642d-120">Die Antwort enthält alle durchsuchbaren Postfächer, wenn das [GetSearchableMailboxes](getsearchablemailboxes.md) -Element leer ist.</span><span class="sxs-lookup"><span data-stu-id="f642d-120">The response will contain all searchable mailboxes if the [GetSearchableMailboxes](getsearchablemailboxes.md) element is empty.</span></span> <span data-ttu-id="f642d-121">Dies ist identisch mit einem leeren [SearchFilter](searchfilter.md) -Element und dem [ExpandGroupMembership](expandgroupmembership.md) -Element, das auf **false**festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="f642d-121">This is the same as having an empty [SearchFilter](searchfilter.md) element and the [ExpandGroupMembership](expandgroupmembership.md) element set to **false**.</span></span>
   
-### <a name="getsearchablemailboxes-operation-soap-headers"></a><span data-ttu-id="951c0-118">GetSearchableMailboxes Vorgang SOAP-Header</span><span class="sxs-lookup"><span data-stu-id="951c0-118">GetSearchableMailboxes operation SOAP headers</span></span>
+### <a name="getsearchablemailboxes-operation-soap-headers"></a><span data-ttu-id="f642d-122">SOAP-Header des GetSearchableMailboxes-Vorgangs</span><span class="sxs-lookup"><span data-stu-id="f642d-122">GetSearchableMailboxes operation SOAP headers</span></span>
 
-<span data-ttu-id="951c0-119">Der Vorgang **GetSearchableMailboxes** können die SOAP-Header, die in der folgenden Tabelle aufgelistet sind.</span><span class="sxs-lookup"><span data-stu-id="951c0-119">The **GetSearchableMailboxes** operation can use the SOAP headers that are listed in the following table.</span></span> 
+<span data-ttu-id="f642d-123">Der **GetSearchableMailboxes** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="f642d-123">The **GetSearchableMailboxes** operation can use the SOAP headers that are listed in the following table.</span></span> 
   
-|<span data-ttu-id="951c0-120">**Headername**</span><span class="sxs-lookup"><span data-stu-id="951c0-120">**Header name**</span></span>|<span data-ttu-id="951c0-121">**Element**</span><span class="sxs-lookup"><span data-stu-id="951c0-121">**Element**</span></span>|<span data-ttu-id="951c0-122">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="951c0-122">**Description**</span></span>|
+|<span data-ttu-id="f642d-124">Headername</span><span class="sxs-lookup"><span data-stu-id="f642d-124">Header name</span></span>|<span data-ttu-id="f642d-125">Element</span><span class="sxs-lookup"><span data-stu-id="f642d-125">Element</span></span>|<span data-ttu-id="f642d-126">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f642d-126">Description</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="951c0-123">**ManagementRole**</span><span class="sxs-lookup"><span data-stu-id="951c0-123">**ManagementRole**</span></span> <br/> |[<span data-ttu-id="951c0-124">ManagementRole</span><span class="sxs-lookup"><span data-stu-id="951c0-124">ManagementRole</span></span>](managementrole.md) <br/> |<span data-ttu-id="951c0-125">Identifiziert die Serverrollen, die in der Reihenfolge für den Anrufer an die Anforderung erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="951c0-125">Identifies the server roles that are necessary in order for the caller to make the request.</span></span> <span data-ttu-id="951c0-126">Diese Kopfzeile gilt für eine Anforderung.</span><span class="sxs-lookup"><span data-stu-id="951c0-126">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="951c0-127">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="951c0-127">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="951c0-128">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="951c0-128">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="951c0-129">Gibt die Schemaversion für die Vorgangsanforderung an.</span><span class="sxs-lookup"><span data-stu-id="951c0-129">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="951c0-130">Diese Kopfzeile gilt für eine Anforderung.</span><span class="sxs-lookup"><span data-stu-id="951c0-130">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="951c0-131">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="951c0-131">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="951c0-132">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="951c0-132">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="951c0-133">Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.</span><span class="sxs-lookup"><span data-stu-id="951c0-133">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="951c0-134">Diese Kopfzeile gilt für eine Antwort.</span><span class="sxs-lookup"><span data-stu-id="951c0-134">This header is applicable to a response.</span></span>  <br/> |
+|<span data-ttu-id="f642d-127">**ManagementRole**</span><span class="sxs-lookup"><span data-stu-id="f642d-127">**ManagementRole**</span></span> <br/> |[<span data-ttu-id="f642d-128">ManagementRole</span><span class="sxs-lookup"><span data-stu-id="f642d-128">ManagementRole</span></span>](managementrole.md) <br/> |<span data-ttu-id="f642d-129">Gibt die Serverrollen an, die erforderlich sind, damit der Anrufer die Anforderung stellen muss.</span><span class="sxs-lookup"><span data-stu-id="f642d-129">Identifies the server roles that are necessary in order for the caller to make the request.</span></span> <span data-ttu-id="f642d-130">Diese Kopfzeile gilt für eine Anforderung.</span><span class="sxs-lookup"><span data-stu-id="f642d-130">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="f642d-131">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="f642d-131">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="f642d-132">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="f642d-132">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="f642d-133">Gibt die Schemaversion für die Vorgangsanforderung an.</span><span class="sxs-lookup"><span data-stu-id="f642d-133">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="f642d-134">Diese Kopfzeile gilt für eine Anforderung.</span><span class="sxs-lookup"><span data-stu-id="f642d-134">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="f642d-135">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="f642d-135">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="f642d-136">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="f642d-136">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="f642d-137">Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.</span><span class="sxs-lookup"><span data-stu-id="f642d-137">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="f642d-138">Diese Kopfzeile gilt für eine Antwort.</span><span class="sxs-lookup"><span data-stu-id="f642d-138">This header is applicable to a response.</span></span>  <br/> |
    
-## <a name="getsearchablemailboxes-operation-request-example-request-information-about-a-distribution-group"></a><span data-ttu-id="951c0-135">GetSearchableMailboxes Vorgang-anforderungsbeispiel: Anfordern von Informationen zu einer Verteilergruppe</span><span class="sxs-lookup"><span data-stu-id="951c0-135">GetSearchableMailboxes operation request example: Request information about a distribution group</span></span>
+## <a name="getsearchablemailboxes-operation-request-example-request-information-about-a-distribution-group"></a><span data-ttu-id="f642d-139">GetSearchableMailboxes-Vorgangs Anforderungs Beispiel: Anfordern von Informationen zu einer Verteilergruppe</span><span class="sxs-lookup"><span data-stu-id="f642d-139">GetSearchableMailboxes operation request example: Request information about a distribution group</span></span>
 
-<span data-ttu-id="951c0-136">Im folgenden Beispiel wird eine **GetSearchableMailboxes** Vorgang Anforderung veranschaulicht, wie die Postfachinformationen für die Verteilergruppe Lolgroup abgerufen.</span><span class="sxs-lookup"><span data-stu-id="951c0-136">The following example of a **GetSearchableMailboxes** operation request shows how to get the mailbox information for the lolgroup distribution group.</span></span> 
+<span data-ttu-id="f642d-140">Im folgenden Beispiel einer **GetSearchableMailboxes** -Vorgangsanforderung wird gezeigt, wie die Postfachinformationen für die lolgroup-Verteilergruppe abgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="f642d-140">The following example of a **GetSearchableMailboxes** operation request shows how to get the mailbox information for the lolgroup distribution group.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -65,17 +71,15 @@ ms.locfileid: "19758794"
 
 ```
 
-<span data-ttu-id="951c0-137">Die Anforderung SOAP-Text enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="951c0-137">The request SOAP body contains the following elements:</span></span>
+<span data-ttu-id="f642d-141">Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="f642d-141">The request SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="951c0-138">GetSearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="951c0-138">GetSearchableMailboxes</span></span>](getsearchablemailboxes.md)
+- [<span data-ttu-id="f642d-142">GetSearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="f642d-142">GetSearchableMailboxes</span></span>](getsearchablemailboxes.md)   
+- [<span data-ttu-id="f642d-143">SearchFilter</span><span class="sxs-lookup"><span data-stu-id="f642d-143">SearchFilter</span></span>](searchfilter.md)    
+- [<span data-ttu-id="f642d-144">ExpandGroupMembership</span><span class="sxs-lookup"><span data-stu-id="f642d-144">ExpandGroupMembership</span></span>](expandgroupmembership.md)
     
-- [<span data-ttu-id="951c0-139">SearchFilter</span><span class="sxs-lookup"><span data-stu-id="951c0-139">SearchFilter</span></span>](searchfilter.md)
-    
-- [<span data-ttu-id="951c0-140">ExpandGroupMembership</span><span class="sxs-lookup"><span data-stu-id="951c0-140">ExpandGroupMembership</span></span>](expandgroupmembership.md)
-    
-## <a name="successful-getsearchablemailboxes-operation-response-get-information-about-a-distribution-group"></a><span data-ttu-id="951c0-141">Erfolgreiche GetSearchableMailboxes Vorgangsantwort: Abrufen von Informationen zu einer Verteilergruppe</span><span class="sxs-lookup"><span data-stu-id="951c0-141">Successful GetSearchableMailboxes operation response: Get information about a distribution group</span></span>
+## <a name="successful-getsearchablemailboxes-operation-response-get-information-about-a-distribution-group"></a><span data-ttu-id="f642d-145">Erfolgreiche GetSearchableMailboxes-Vorgangs Antwort: Abrufen von Informationen zu einer Verteilergruppe</span><span class="sxs-lookup"><span data-stu-id="f642d-145">Successful GetSearchableMailboxes operation response: Get information about a distribution group</span></span>
 
-<span data-ttu-id="951c0-142">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetSearchableMailboxes** Vorgang Anforderung zum Abrufen der Discovery-Informationen für die Verteilergruppe Lolgroup.</span><span class="sxs-lookup"><span data-stu-id="951c0-142">The following example shows a successful response to a **GetSearchableMailboxes** operation request to get the discovery information for the lolgroup distribution group.</span></span> 
+<span data-ttu-id="f642d-146">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetSearchableMailboxes** -Vorgangsanforderung zum Abrufen der Ermittlungsinformationen für die lolgroup-Verteilergruppe.</span><span class="sxs-lookup"><span data-stu-id="f642d-146">The following example shows a successful response to a **GetSearchableMailboxes** operation request to get the discovery information for the lolgroup distribution group.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -86,18 +90,18 @@ ms.locfileid: "19758794"
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <GetSearchableMailboxesResponse ResponseClass="Success" 
-                                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
          <SearchableMailboxes>
-            <SearchableMailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <SearchableMailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <Guid>33a408fe-2574-4e3b-49f5-5e1e000a3035</Guid>
                <PrimarySmtpAddress>LOLgroup@contoso.com</PrimarySmtpAddress>
                <IsExternalMailbox>false</IsExternalMailbox>
@@ -113,45 +117,35 @@ ms.locfileid: "19758794"
 
 ```
 
-<span data-ttu-id="951c0-143">Die Antwort SOAP-Text enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="951c0-143">The response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="f642d-147">Der SOAP-Antworttext Körper enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="f642d-147">The response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="951c0-144">GetSearchableMailboxesResponse</span><span class="sxs-lookup"><span data-stu-id="951c0-144">GetSearchableMailboxesResponse</span></span>](getsearchablemailboxesresponse.md)
+- [<span data-ttu-id="f642d-148">GetSearchableMailboxesResponse</span><span class="sxs-lookup"><span data-stu-id="f642d-148">GetSearchableMailboxesResponse</span></span>](getsearchablemailboxesresponse.md)   
+- [<span data-ttu-id="f642d-149">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="f642d-149">ResponseCode</span></span>](responsecode.md)   
+- [<span data-ttu-id="f642d-150">SearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="f642d-150">SearchableMailboxes</span></span>](searchablemailboxes.md)    
+- [<span data-ttu-id="f642d-151">SearchableMailbox</span><span class="sxs-lookup"><span data-stu-id="f642d-151">SearchableMailbox</span></span>](searchablemailbox.md)    
+- [<span data-ttu-id="f642d-152">Guid</span><span class="sxs-lookup"><span data-stu-id="f642d-152">Guid</span></span>](guid-ex15websvcsotherref.md)    
+- [<span data-ttu-id="f642d-153">PrimarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="f642d-153">PrimarySmtpAddress</span></span>](primarysmtpaddress.md)    
+- [<span data-ttu-id="f642d-154">IsExternalMailbox</span><span class="sxs-lookup"><span data-stu-id="f642d-154">IsExternalMailbox</span></span>](isexternalmailbox.md)   
+- [<span data-ttu-id="f642d-155">ExternalEmailAddress</span><span class="sxs-lookup"><span data-stu-id="f642d-155">ExternalEmailAddress</span></span>](externalemailaddress.md)    
+- [<span data-ttu-id="f642d-156">DisplayName (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="f642d-156">DisplayName (string)</span></span>](displayname-string.md)    
+- [<span data-ttu-id="f642d-157">Ismembershipgroup</span><span class="sxs-lookup"><span data-stu-id="f642d-157">IsMembershipGroup</span></span>](ismembershipgroup.md)    
+- [<span data-ttu-id="f642d-158">ReferenceId</span><span class="sxs-lookup"><span data-stu-id="f642d-158">ReferenceId</span></span>](referenceid.md)
     
-- [<span data-ttu-id="951c0-145">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="951c0-145">ResponseCode</span></span>](responsecode.md)
-    
-- [<span data-ttu-id="951c0-146">SearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="951c0-146">SearchableMailboxes</span></span>](searchablemailboxes.md)
-    
-- [<span data-ttu-id="951c0-147">SearchableMailbox</span><span class="sxs-lookup"><span data-stu-id="951c0-147">SearchableMailbox</span></span>](searchablemailbox.md)
-    
-- [<span data-ttu-id="951c0-148">Guid</span><span class="sxs-lookup"><span data-stu-id="951c0-148">Guid</span></span>](guid-ex15websvcsotherref.md)
-    
-- [<span data-ttu-id="951c0-149">PrimarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="951c0-149">PrimarySmtpAddress</span></span>](primarysmtpaddress.md)
-    
-- [<span data-ttu-id="951c0-150">IsExternalMailbox</span><span class="sxs-lookup"><span data-stu-id="951c0-150">IsExternalMailbox</span></span>](isexternalmailbox.md)
-    
-- [<span data-ttu-id="951c0-151">ExternalEmailAddress</span><span class="sxs-lookup"><span data-stu-id="951c0-151">ExternalEmailAddress</span></span>](externalemailaddress.md)
-    
-- [<span data-ttu-id="951c0-152">DisplayName (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="951c0-152">DisplayName (string)</span></span>](displayname-string.md)
-    
-- [<span data-ttu-id="951c0-153">IsMembershipGroup</span><span class="sxs-lookup"><span data-stu-id="951c0-153">IsMembershipGroup</span></span>](ismembershipgroup.md)
-    
-- [<span data-ttu-id="951c0-154">ReferenceId</span><span class="sxs-lookup"><span data-stu-id="951c0-154">ReferenceId</span></span>](referenceid.md)
-    
-## <a name="successful-getsearchablemailboxes-operation-response-get-information-about-an-expanded-distribution-group"></a><span data-ttu-id="951c0-155">Erfolgreiche GetSearchableMailboxes Vorgangsantwort: Abrufen von Informationen zu einer erweiterten Verteilergruppe</span><span class="sxs-lookup"><span data-stu-id="951c0-155">Successful GetSearchableMailboxes operation response: Get information about an expanded distribution group</span></span>
+## <a name="successful-getsearchablemailboxes-operation-response-get-information-about-an-expanded-distribution-group"></a><span data-ttu-id="f642d-159">Erfolgreiche GetSearchableMailboxes-Vorgangs Antwort: Abrufen von Informationen zu einer erweiterten Verteilergruppe</span><span class="sxs-lookup"><span data-stu-id="f642d-159">Successful GetSearchableMailboxes operation response: Get information about an expanded distribution group</span></span>
 
-<span data-ttu-id="951c0-156">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung des **GetSearchableMailboxes** -Vorgang der Mitglieder der Verteilergruppe erweiterten Lolgroup Ermittlungsinformationen zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="951c0-156">The following example shows a successful response to a **GetSearchableMailboxes** operation request to get the discovery information about members of the expanded lolgroup distribution group.</span></span> 
+<span data-ttu-id="f642d-160">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetSearchableMailboxes** -Vorgangsanforderung zum Abrufen der Ermittlungsinformationen über Mitglieder der erweiterten lolgroup-Verteilergruppe.</span><span class="sxs-lookup"><span data-stu-id="f642d-160">The following example shows a successful response to a **GetSearchableMailboxes** operation request to get the discovery information about members of the expanded lolgroup distribution group.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="526" MinorBuildNumber="0" Version="Exchange2013" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="526" MinorBuildNumber="0" Version="Exchange2013" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <GetSearchableMailboxesResponse ResponseClass="Success" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetSearchableMailboxesResponse ResponseClass="Success" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <SearchableMailboxes>
-        <SearchableMailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <SearchableMailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Guid>e2d42cdf-a227-1ec3-486b-6fa0ebaadb9f5</Guid>
           <PrimarySmtpAddress>JSmith@contoso.com</PrimarySmtpAddress>
           <IsExternalMailbox>false</IsExternalMailbox>
@@ -160,7 +154,7 @@ ms.locfileid: "19758794"
           <IsMembershipGroup>false</IsMembershipGroup>
           <ReferenceId>/o=First Organization/ou=Exchange Administrative Group (FYDLT)/cn=Recipients/cn=0a1fc86f883846152405d60956dd02e7-Julia</ReferenceId>
         </SearchableMailbox>
-        <SearchableMailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <SearchableMailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Guid>45d0fff1-6541-459a-a343-52453b30e12ca</Guid>
           <PrimarySmtpAddress>LMoore@contoso.com</PrimarySmtpAddress>
           <IsExternalMailbox>false</IsExternalMailbox>
@@ -169,7 +163,7 @@ ms.locfileid: "19758794"
           <IsMembershipGroup>false</IsMembershipGroup>
           <ReferenceId>/o=First Organization/ou=Exchange Administrative Group (FYDLT)/cn=Recipients/cn=2910d8f8316f4378bbf9338d8f9d714b-Laura</ReferenceId>
         </SearchableMailbox>
-        <SearchableMailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <SearchableMailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Guid>3c620d04-8b33-435a-95be-5b939375576</Guid>
           <PrimarySmtpAddress>SBrown@contoso.com</PrimarySmtpAddress>
           <IsExternalMailbox>false</IsExternalMailbox>
@@ -184,33 +178,23 @@ ms.locfileid: "19758794"
 </s:Envelope>
 ```
 
-<span data-ttu-id="951c0-157">Die Antwort SOAP-Text enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="951c0-157">The response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="f642d-161">Der SOAP-Antworttext Körper enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="f642d-161">The response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="951c0-158">GetSearchableMailboxesResponse</span><span class="sxs-lookup"><span data-stu-id="951c0-158">GetSearchableMailboxesResponse</span></span>](getsearchablemailboxesresponse.md)
+- [<span data-ttu-id="f642d-162">GetSearchableMailboxesResponse</span><span class="sxs-lookup"><span data-stu-id="f642d-162">GetSearchableMailboxesResponse</span></span>](getsearchablemailboxesresponse.md)    
+- [<span data-ttu-id="f642d-163">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="f642d-163">ResponseCode</span></span>](responsecode.md)   
+- [<span data-ttu-id="f642d-164">SearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="f642d-164">SearchableMailboxes</span></span>](searchablemailboxes.md)    
+- [<span data-ttu-id="f642d-165">SearchableMailbox</span><span class="sxs-lookup"><span data-stu-id="f642d-165">SearchableMailbox</span></span>](searchablemailbox.md)    
+- [<span data-ttu-id="f642d-166">Guid</span><span class="sxs-lookup"><span data-stu-id="f642d-166">Guid</span></span>](guid-ex15websvcsotherref.md)    
+- [<span data-ttu-id="f642d-167">PrimarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="f642d-167">PrimarySmtpAddress</span></span>](primarysmtpaddress.md)    
+- [<span data-ttu-id="f642d-168">IsExternalMailbox</span><span class="sxs-lookup"><span data-stu-id="f642d-168">IsExternalMailbox</span></span>](isexternalmailbox.md)    
+- [<span data-ttu-id="f642d-169">ExternalEmailAddress</span><span class="sxs-lookup"><span data-stu-id="f642d-169">ExternalEmailAddress</span></span>](externalemailaddress.md)    
+- [<span data-ttu-id="f642d-170">DisplayName (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="f642d-170">DisplayName (string)</span></span>](displayname-string.md)    
+- [<span data-ttu-id="f642d-171">Ismembershipgroup</span><span class="sxs-lookup"><span data-stu-id="f642d-171">IsMembershipGroup</span></span>](ismembershipgroup.md)    
+- [<span data-ttu-id="f642d-172">ReferenceId</span><span class="sxs-lookup"><span data-stu-id="f642d-172">ReferenceId</span></span>](referenceid.md)
     
-- [<span data-ttu-id="951c0-159">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="951c0-159">ResponseCode</span></span>](responsecode.md)
-    
-- [<span data-ttu-id="951c0-160">SearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="951c0-160">SearchableMailboxes</span></span>](searchablemailboxes.md)
-    
-- [<span data-ttu-id="951c0-161">SearchableMailbox</span><span class="sxs-lookup"><span data-stu-id="951c0-161">SearchableMailbox</span></span>](searchablemailbox.md)
-    
-- [<span data-ttu-id="951c0-162">Guid</span><span class="sxs-lookup"><span data-stu-id="951c0-162">Guid</span></span>](guid-ex15websvcsotherref.md)
-    
-- [<span data-ttu-id="951c0-163">PrimarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="951c0-163">PrimarySmtpAddress</span></span>](primarysmtpaddress.md)
-    
-- [<span data-ttu-id="951c0-164">IsExternalMailbox</span><span class="sxs-lookup"><span data-stu-id="951c0-164">IsExternalMailbox</span></span>](isexternalmailbox.md)
-    
-- [<span data-ttu-id="951c0-165">ExternalEmailAddress</span><span class="sxs-lookup"><span data-stu-id="951c0-165">ExternalEmailAddress</span></span>](externalemailaddress.md)
-    
-- [<span data-ttu-id="951c0-166">DisplayName (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="951c0-166">DisplayName (string)</span></span>](displayname-string.md)
-    
-- [<span data-ttu-id="951c0-167">IsMembershipGroup</span><span class="sxs-lookup"><span data-stu-id="951c0-167">IsMembershipGroup</span></span>](ismembershipgroup.md)
-    
-- [<span data-ttu-id="951c0-168">ReferenceId</span><span class="sxs-lookup"><span data-stu-id="951c0-168">ReferenceId</span></span>](referenceid.md)
-    
-## <a name="getsearchablemailboxes-operation-error-response"></a><span data-ttu-id="951c0-169">GetSearchableMailboxes Vorgang Fehlerantwort</span><span class="sxs-lookup"><span data-stu-id="951c0-169">GetSearchableMailboxes operation error response</span></span>
+## <a name="getsearchablemailboxes-operation-error-response"></a><span data-ttu-id="f642d-173">Fehlerantwort des GetSearchableMailboxes-Vorgangs</span><span class="sxs-lookup"><span data-stu-id="f642d-173">GetSearchableMailboxes operation error response</span></span>
 
-<span data-ttu-id="951c0-170">Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetSearchableMailboxes** Vorgang Anforderung.</span><span class="sxs-lookup"><span data-stu-id="951c0-170">The following example shows an error response to a **GetSearchableMailboxes** operation request.</span></span> <span data-ttu-id="951c0-171">Dies ist eine Antwort auf eine Anforderung an alle durchsuchbaren Postfächer zu erhalten, wenn das **ExpandGroupMembership** -Argument auf **true**festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="951c0-171">This is a response to a request to get all searchable mailboxes when the **ExpandGroupMembership** argument is set to **true**.</span></span> 
+<span data-ttu-id="f642d-174">Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetSearchableMailboxes** -Vorgangsanforderung.</span><span class="sxs-lookup"><span data-stu-id="f642d-174">The following example shows an error response to a **GetSearchableMailboxes** operation request.</span></span> <span data-ttu-id="f642d-175">Dies ist eine Antwort auf eine Anforderung zum Abrufen aller durchsuchbaren Postfächer, wenn das **ExpandGroupMembership** -Argument auf **true**festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="f642d-175">This is a response to a request to get all searchable mailboxes when the **ExpandGroupMembership** argument is set to **true**.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -221,15 +205,15 @@ ms.locfileid: "19758794"
                            MajorBuildNumber="526"
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <GetSearchableMailboxesResponse ResponseClass="Error" 
-                                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <MessageText>Cannot use wildcard or empty query when auto group expansion is enabled.</MessageText>
          <ResponseCode>ErrorInvalidArgument</ResponseCode>
          <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -240,34 +224,24 @@ ms.locfileid: "19758794"
 
 ```
 
-<span data-ttu-id="951c0-172">Die SOAP-Body-Fehlerantwort enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="951c0-172">The error response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="f642d-176">Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="f642d-176">The error response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="951c0-173">GetSearchableMailboxesResponse</span><span class="sxs-lookup"><span data-stu-id="951c0-173">GetSearchableMailboxesResponse</span></span>](getsearchablemailboxesresponse.md)
+- [<span data-ttu-id="f642d-177">GetSearchableMailboxesResponse</span><span class="sxs-lookup"><span data-stu-id="f642d-177">GetSearchableMailboxesResponse</span></span>](getsearchablemailboxesresponse.md)  
+- [<span data-ttu-id="f642d-178">MessageText</span><span class="sxs-lookup"><span data-stu-id="f642d-178">MessageText</span></span>](messagetext.md)   
+- [<span data-ttu-id="f642d-179">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="f642d-179">ResponseCode</span></span>](responsecode.md)   
+- [<span data-ttu-id="f642d-180">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="f642d-180">DescriptiveLinkKey</span></span>](descriptivelinkkey.md) 
+- [<span data-ttu-id="f642d-181">SearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="f642d-181">SearchableMailboxes</span></span>](searchablemailboxes.md)
     
-- [<span data-ttu-id="951c0-174">MessageText</span><span class="sxs-lookup"><span data-stu-id="951c0-174">MessageText</span></span>](messagetext.md)
-    
-- [<span data-ttu-id="951c0-175">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="951c0-175">ResponseCode</span></span>](responsecode.md)
-    
-- [<span data-ttu-id="951c0-176">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="951c0-176">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
-    
-- [<span data-ttu-id="951c0-177">SearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="951c0-177">SearchableMailboxes</span></span>](searchablemailboxes.md)
-    
-<span data-ttu-id="951c0-178">Zusätzliche Fehlercodes, die für EWS generisch und für diese Operation spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).</span><span class="sxs-lookup"><span data-stu-id="951c0-178">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
+<span data-ttu-id="f642d-182">Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).</span><span class="sxs-lookup"><span data-stu-id="f642d-182">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="951c0-179">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="951c0-179">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f642d-183">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f642d-183">See also</span></span>
 
-- [<span data-ttu-id="951c0-180">EWS-Operationen in Exchange</span><span class="sxs-lookup"><span data-stu-id="951c0-180">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
-    
-- [<span data-ttu-id="951c0-181">SetHoldOnMailboxes-Vorgang</span><span class="sxs-lookup"><span data-stu-id="951c0-181">SetHoldOnMailboxes operation</span></span>](setholdonmailboxes-operation.md)
-    
-- [<span data-ttu-id="951c0-182">SearchMailboxes-Vorgang</span><span class="sxs-lookup"><span data-stu-id="951c0-182">SearchMailboxes operation</span></span>](searchmailboxes-operation.md)
-    
-- [<span data-ttu-id="951c0-183">GetHoldOnMailboxes-Vorgang</span><span class="sxs-lookup"><span data-stu-id="951c0-183">GetHoldOnMailboxes operation</span></span>](getholdonmailboxes-operation.md)
-    
-- [<span data-ttu-id="951c0-184">GetDiscoverySearchConfiguration-Vorgang</span><span class="sxs-lookup"><span data-stu-id="951c0-184">GetDiscoverySearchConfiguration operation</span></span>](getdiscoverysearchconfiguration-operation.md)
-    
-- [<span data-ttu-id="951c0-185">GetNonIndexableItemDetails-Vorgang</span><span class="sxs-lookup"><span data-stu-id="951c0-185">GetNonIndexableItemDetails operation</span></span>](getnonindexableitemdetails-operation.md)
-    
-- [<span data-ttu-id="951c0-186">GetNonIndexableItemStatistics-Vorgang</span><span class="sxs-lookup"><span data-stu-id="951c0-186">GetNonIndexableItemStatistics operation</span></span>](getnonindexableitemstatistics-operation.md)
+- [<span data-ttu-id="f642d-184">EWS-Operationen in Exchange</span><span class="sxs-lookup"><span data-stu-id="f642d-184">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)   
+- [<span data-ttu-id="f642d-185">SetHoldOnMailboxes-Vorgang</span><span class="sxs-lookup"><span data-stu-id="f642d-185">SetHoldOnMailboxes operation</span></span>](setholdonmailboxes-operation.md)   
+- [<span data-ttu-id="f642d-186">SearchMailboxes-Vorgang</span><span class="sxs-lookup"><span data-stu-id="f642d-186">SearchMailboxes operation</span></span>](searchmailboxes-operation.md)   
+- [<span data-ttu-id="f642d-187">GetHoldOnMailboxes-Vorgang</span><span class="sxs-lookup"><span data-stu-id="f642d-187">GetHoldOnMailboxes operation</span></span>](getholdonmailboxes-operation.md)    
+- [<span data-ttu-id="f642d-188">GetDiscoverySearchConfiguration-Vorgang</span><span class="sxs-lookup"><span data-stu-id="f642d-188">GetDiscoverySearchConfiguration operation</span></span>](getdiscoverysearchconfiguration-operation.md)   
+- [<span data-ttu-id="f642d-189">GetNonIndexableItemDetails-Vorgang</span><span class="sxs-lookup"><span data-stu-id="f642d-189">GetNonIndexableItemDetails operation</span></span>](getnonindexableitemdetails-operation.md)   
+- [<span data-ttu-id="f642d-190">GetNonIndexableItemStatistics-Vorgang</span><span class="sxs-lookup"><span data-stu-id="f642d-190">GetNonIndexableItemStatistics operation</span></span>](getnonindexableitemstatistics-operation.md)
     
 

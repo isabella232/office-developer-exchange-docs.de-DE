@@ -7,47 +7,47 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fcbc9f67-a211-4a6a-b816-0a9b0a81a283
-description: Das StartFindInGALSpeechRecognition-Element ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: b38342fb997394043fe0aa1cc7a3b37c9cf7a399
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das StartFindInGALSpeechRecognition-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 2ed598516aa49f10ccc20964577f5929aaf6af5a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831555"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530310"
 ---
-# <a name="startfindingalspeechrecognition"></a><span data-ttu-id="07a1d-103">StartFindInGALSpeechRecognition</span><span class="sxs-lookup"><span data-stu-id="07a1d-103">StartFindInGALSpeechRecognition</span></span>
+# <a name="startfindingalspeechrecognition"></a><span data-ttu-id="0694b-103">StartFindInGALSpeechRecognition</span><span class="sxs-lookup"><span data-stu-id="0694b-103">StartFindInGALSpeechRecognition</span></span>
 
-<span data-ttu-id="07a1d-104">Das **StartFindInGALSpeechRecognition** -Element ist nur zur internen Verwendung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="07a1d-104">The **StartFindInGALSpeechRecognition** element is intended for internal use only.</span></span> 
+<span data-ttu-id="0694b-104">Das **StartFindInGALSpeechRecognition** -Element ist nur für die interne Verwendung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="0694b-104">The **StartFindInGALSpeechRecognition** element is intended for internal use only.</span></span> 
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="07a1d-105">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="07a1d-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="0694b-105">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="0694b-105">Attributes and elements</span></span>
 
-<span data-ttu-id="07a1d-106">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="07a1d-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="0694b-106">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="0694b-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="07a1d-107">Attribute</span><span class="sxs-lookup"><span data-stu-id="07a1d-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="0694b-107">Attribute</span><span class="sxs-lookup"><span data-stu-id="0694b-107">Attributes</span></span>
 
-<span data-ttu-id="07a1d-108">Keine.</span><span class="sxs-lookup"><span data-stu-id="07a1d-108">None.</span></span>
+<span data-ttu-id="0694b-108">Keine.</span><span class="sxs-lookup"><span data-stu-id="0694b-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="07a1d-109">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="07a1d-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="0694b-109">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="0694b-109">Child elements</span></span>
 
-<span data-ttu-id="07a1d-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="07a1d-110">None.</span></span>
+<span data-ttu-id="0694b-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="0694b-110">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="07a1d-111">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="07a1d-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="0694b-111">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="0694b-111">Parent elements</span></span>
 
-<span data-ttu-id="07a1d-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="07a1d-112">None.</span></span>
+<span data-ttu-id="0694b-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="0694b-112">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="07a1d-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="07a1d-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0694b-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="0694b-113">Remarks</span></span>
 
-<span data-ttu-id="07a1d-114">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="07a1d-114">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="0694b-114">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="0694b-114">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="07a1d-115">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="07a1d-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="0694b-115">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="0694b-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="07a1d-116">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="07a1d-116">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="0694b-116">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="0694b-116">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="07a1d-117">Namespace</span><span class="sxs-lookup"><span data-stu-id="07a1d-117">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="07a1d-118">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="07a1d-118">Schema name</span></span>  <br/> |<span data-ttu-id="07a1d-119">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="07a1d-119">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="07a1d-120">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="07a1d-120">Validation file</span></span>  <br/> |<span data-ttu-id="07a1d-121">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="07a1d-121">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="07a1d-122">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="07a1d-122">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="0694b-117">Namespace</span><span class="sxs-lookup"><span data-stu-id="0694b-117">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="0694b-118">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="0694b-118">Schema name</span></span>  <br/> |<span data-ttu-id="0694b-119">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="0694b-119">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="0694b-120">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="0694b-120">Validation file</span></span>  <br/> |<span data-ttu-id="0694b-121">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="0694b-121">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="0694b-122">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="0694b-122">Can be empty</span></span>  <br/> ||
    
 

@@ -11,64 +11,64 @@ api_name:
 api_type:
 - schema
 ms.assetid: 79c89d74-b0ad-4643-9177-b75d3baa3b67
-description: Das FirstHopServer-Element enthält den Namen des Servers in der Gesamtstruktur, die zuerst die Nachricht akzeptiert.
-ms.openlocfilehash: 1852b95f94b174b57c8175a45035a97686384c20
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FirstHopServer-Element enthält den Namen des Servers in der Gesamtstruktur, der die Nachricht zuerst akzeptiert hat.
+ms.openlocfilehash: 46b494ecd112359ecbb3a80545cefb652bbc2d47
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758480"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530246"
 ---
-# <a name="firsthopserver"></a><span data-ttu-id="89c74-103">FirstHopServer</span><span class="sxs-lookup"><span data-stu-id="89c74-103">FirstHopServer</span></span>
+# <a name="firsthopserver"></a><span data-ttu-id="dfb4f-103">FirstHopServer</span><span class="sxs-lookup"><span data-stu-id="dfb4f-103">FirstHopServer</span></span>
 
-<span data-ttu-id="89c74-104">Das **FirstHopServer** -Element enthält den Namen des Servers in der Gesamtstruktur, die zuerst die Nachricht akzeptiert.</span><span class="sxs-lookup"><span data-stu-id="89c74-104">The **FirstHopServer** element contains the name of the server in the forest that first accepted the message.</span></span> 
+<span data-ttu-id="dfb4f-104">Das **FirstHopServer** -Element enthält den Namen des Servers in der Gesamtstruktur, der die Nachricht zuerst akzeptiert hat.</span><span class="sxs-lookup"><span data-stu-id="dfb4f-104">The **FirstHopServer** element contains the name of the server in the forest that first accepted the message.</span></span> 
   
 ```xml
 <FirstHopServer/>
 ```
 
- <span data-ttu-id="89c74-105">**NonEmptyStringType**</span><span class="sxs-lookup"><span data-stu-id="89c74-105">**NonEmptyStringType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="89c74-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="89c74-106">Attributes and elements</span></span>
+ <span data-ttu-id="dfb4f-105">**NonEmptyStringType**</span><span class="sxs-lookup"><span data-stu-id="dfb4f-105">**NonEmptyStringType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="dfb4f-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="dfb4f-106">Attributes and elements</span></span>
 
-<span data-ttu-id="89c74-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="89c74-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="dfb4f-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="dfb4f-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="89c74-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="89c74-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="dfb4f-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="dfb4f-108">Attributes</span></span>
 
-<span data-ttu-id="89c74-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="89c74-109">None.</span></span>
+<span data-ttu-id="dfb4f-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="dfb4f-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="89c74-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="89c74-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="dfb4f-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="dfb4f-110">Child elements</span></span>
 
-<span data-ttu-id="89c74-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="89c74-111">None.</span></span>
+<span data-ttu-id="dfb4f-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="dfb4f-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="89c74-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="89c74-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="dfb4f-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="dfb4f-112">Parent elements</span></span>
 
-|<span data-ttu-id="89c74-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="89c74-113">**Element**</span></span>|<span data-ttu-id="89c74-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="89c74-114">**Description**</span></span>|
+|<span data-ttu-id="dfb4f-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="dfb4f-113">**Element**</span></span>|<span data-ttu-id="dfb4f-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="dfb4f-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="89c74-115">MessageTrackingSearchResult</span><span class="sxs-lookup"><span data-stu-id="89c74-115">MessageTrackingSearchResult</span></span>](messagetrackingsearchresult.md) <br/> |<span data-ttu-id="89c74-116">Ein einzelnes Nachricht Ergebnis für ein [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) -Element enthält.</span><span class="sxs-lookup"><span data-stu-id="89c74-116">Contains a single message result for a [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) element.</span></span>  <br/> |
+|[<span data-ttu-id="dfb4f-115">MessageTrackingSearchResult</span><span class="sxs-lookup"><span data-stu-id="dfb4f-115">MessageTrackingSearchResult</span></span>](messagetrackingsearchresult.md) <br/> |<span data-ttu-id="dfb4f-116">Enthält ein einzelnes Nachrichten Ergebnis für ein [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) -Element.</span><span class="sxs-lookup"><span data-stu-id="dfb4f-116">Contains a single message result for a [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) element.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="89c74-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="89c74-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="dfb4f-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="dfb4f-117">Text value</span></span>
 
-<span data-ttu-id="89c74-118">Keine.</span><span class="sxs-lookup"><span data-stu-id="89c74-118">None.</span></span>
+<span data-ttu-id="dfb4f-118">Keine.</span><span class="sxs-lookup"><span data-stu-id="dfb4f-118">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="89c74-119">Hinweise</span><span class="sxs-lookup"><span data-stu-id="89c74-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="dfb4f-119">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="dfb4f-119">Remarks</span></span>
 
-<span data-ttu-id="89c74-120">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="89c74-120">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="dfb4f-120">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="dfb4f-120">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="89c74-121">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="89c74-121">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="dfb4f-121">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="dfb4f-121">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="89c74-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="89c74-122">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="89c74-123">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="89c74-123">Schema Name</span></span>  <br/> |<span data-ttu-id="89c74-124">Schematypen</span><span class="sxs-lookup"><span data-stu-id="89c74-124">Types schema</span></span>  <br/> |
-|<span data-ttu-id="89c74-125">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="89c74-125">Validation File</span></span>  <br/> |<span data-ttu-id="89c74-126">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="89c74-126">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="89c74-127">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="89c74-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="89c74-128">False</span><span class="sxs-lookup"><span data-stu-id="89c74-128">False</span></span>  <br/> |
+|<span data-ttu-id="dfb4f-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="dfb4f-122">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="dfb4f-123">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="dfb4f-123">Schema Name</span></span>  <br/> |<span data-ttu-id="dfb4f-124">Schematypen</span><span class="sxs-lookup"><span data-stu-id="dfb4f-124">Types schema</span></span>  <br/> |
+|<span data-ttu-id="dfb4f-125">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="dfb4f-125">Validation File</span></span>  <br/> |<span data-ttu-id="dfb4f-126">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="dfb4f-126">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="dfb4f-127">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="dfb4f-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="dfb4f-128">False</span><span class="sxs-lookup"><span data-stu-id="dfb4f-128">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="89c74-129">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="89c74-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="dfb4f-129">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="dfb4f-129">See also</span></span>
 
 
 
-[<span data-ttu-id="89c74-130">FindMessageTrackingReport-Vorgang</span><span class="sxs-lookup"><span data-stu-id="89c74-130">FindMessageTrackingReport operation</span></span>](findmessagetrackingreport-operation.md)
+[<span data-ttu-id="dfb4f-130">FindMessageTrackingReport-Vorgang</span><span class="sxs-lookup"><span data-stu-id="dfb4f-130">FindMessageTrackingReport operation</span></span>](findmessagetrackingreport-operation.md)
 
 
-- [<span data-ttu-id="89c74-131">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="89c74-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="dfb4f-131">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="dfb4f-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

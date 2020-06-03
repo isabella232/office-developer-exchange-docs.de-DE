@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 64d86c24-07b8-448d-ad37-47f104777df3
-description: Das GivenNames-Element gibt ein Array von Werten der angegebenen Namen und die Bezeichner der ihre Marken Quelle für die zugeordneten Rolle.
-ms.openlocfilehash: dc86517a06dab0f74350c71488f68bb06e2272bd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GivenNames-Element gibt ein Array mit angegebenen Namenswerten und die Bezeichner der Quell Zuweisungen für die zugeordnete Rolle an.
+ms.openlocfilehash: c76d69344b59fb56377a13b9ea4a588acc382013
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829709"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530127"
 ---
-# <a name="givennames"></a><span data-ttu-id="3feee-103">GivenNames</span><span class="sxs-lookup"><span data-stu-id="3feee-103">GivenNames</span></span>
+# <a name="givennames"></a><span data-ttu-id="d873c-103">GivenNames</span><span class="sxs-lookup"><span data-stu-id="d873c-103">GivenNames</span></span>
 
-<span data-ttu-id="3feee-104">Das **GivenNames** -Element gibt ein Array von Werten der angegebenen Namen und die Bezeichner der ihre Marken Quelle für die zugeordneten Rolle.</span><span class="sxs-lookup"><span data-stu-id="3feee-104">The **GivenNames** element specifies an array of given name values and the identifiers of their source attributions for the associated persona.</span></span> 
+<span data-ttu-id="d873c-104">Das **GivenNames** -Element gibt ein Array mit angegebenen Namenswerten und die Bezeichner der Quell Zuweisungen für die zugeordnete Rolle an.</span><span class="sxs-lookup"><span data-stu-id="d873c-104">The **GivenNames** element specifies an array of given name values and the identifiers of their source attributions for the associated persona.</span></span> 
   
 ```xml
 <GivenNames>
@@ -25,45 +25,45 @@ ms.locfileid: "19829709"
 </GivenNames>
 ```
 
- <span data-ttu-id="3feee-105">**ArrayOfStringAttributedValuesType**</span><span class="sxs-lookup"><span data-stu-id="3feee-105">**ArrayOfStringAttributedValuesType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="3feee-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="3feee-106">Attributes and elements</span></span>
+ <span data-ttu-id="d873c-105">**ArrayOfStringAttributedValuesType**</span><span class="sxs-lookup"><span data-stu-id="d873c-105">**ArrayOfStringAttributedValuesType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="d873c-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="d873c-106">Attributes and elements</span></span>
 
-<span data-ttu-id="3feee-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="3feee-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="d873c-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="d873c-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="3feee-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="3feee-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="d873c-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="d873c-108">Attributes</span></span>
 
-<span data-ttu-id="3feee-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="3feee-109">None.</span></span>
+<span data-ttu-id="d873c-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="d873c-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="3feee-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="3feee-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="d873c-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="d873c-110">Child elements</span></span>
 
-|<span data-ttu-id="3feee-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="3feee-111">**Element**</span></span>|<span data-ttu-id="3feee-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="3feee-112">**Description**</span></span>|
+|<span data-ttu-id="d873c-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="d873c-111">**Element**</span></span>|<span data-ttu-id="d873c-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="d873c-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="3feee-113">StringAttributedValue</span><span class="sxs-lookup"><span data-stu-id="3feee-113">StringAttributedValue</span></span>](stringattributedvalue.md) <br/> |<span data-ttu-id="3feee-114">Gibt eine Instanz in ein Array von Attributen, die einer Rolle-Element zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="3feee-114">Specifies an instance in an array of attributes associated with a persona element.</span></span>  <br/> |
+|[<span data-ttu-id="d873c-113">StringAttributedValue</span><span class="sxs-lookup"><span data-stu-id="d873c-113">StringAttributedValue</span></span>](stringattributedvalue.md) <br/> |<span data-ttu-id="d873c-114">Gibt eine Instanz in einem Array von Attributen an, die mit einem Persona-Element verknüpft sind.</span><span class="sxs-lookup"><span data-stu-id="d873c-114">Specifies an instance in an array of attributes associated with a persona element.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="3feee-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="3feee-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="d873c-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="d873c-115">Parent elements</span></span>
 
-|<span data-ttu-id="3feee-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="3feee-116">**Element**</span></span>|<span data-ttu-id="3feee-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="3feee-117">**Description**</span></span>|
+|<span data-ttu-id="d873c-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="d873c-116">**Element**</span></span>|<span data-ttu-id="d873c-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="d873c-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="3feee-118">Rolle</span><span class="sxs-lookup"><span data-stu-id="3feee-118">Persona</span></span>](persona.md) <br/> |<span data-ttu-id="3feee-119">Gibt einen Satz von Persona Daten von einer Anforderung **GetPersona** zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="3feee-119">Specifies a set of persona data returned by a **GetPersona** request.</span></span>  <br/> |
+|[<span data-ttu-id="d873c-118">Persona</span><span class="sxs-lookup"><span data-stu-id="d873c-118">Persona</span></span>](persona.md) <br/> |<span data-ttu-id="d873c-119">Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="d873c-119">Specifies a set of persona data returned by a **GetPersona** request.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="3feee-120">Hinweise</span><span class="sxs-lookup"><span data-stu-id="3feee-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d873c-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="d873c-120">Remarks</span></span>
 
-<span data-ttu-id="3feee-121">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="3feee-121">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="d873c-121">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="d873c-121">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="3feee-122">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="3feee-122">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="d873c-122">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="d873c-122">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="3feee-123">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="3feee-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="d873c-123">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="d873c-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="3feee-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="3feee-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="3feee-125">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="3feee-125">Schema Name</span></span>  <br/> |<span data-ttu-id="3feee-126">Typschema</span><span class="sxs-lookup"><span data-stu-id="3feee-126">Type schema</span></span>  <br/> |
-|<span data-ttu-id="3feee-127">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="3feee-127">Validation File</span></span>  <br/> |<span data-ttu-id="3feee-128">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="3feee-128">types.xsd</span></span>  <br/> |
-|<span data-ttu-id="3feee-129">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="3feee-129">Can Be Empty</span></span>  <br/> ||
+|<span data-ttu-id="d873c-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="d873c-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="d873c-125">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="d873c-125">Schema Name</span></span>  <br/> |<span data-ttu-id="d873c-126">Typschema</span><span class="sxs-lookup"><span data-stu-id="d873c-126">Type schema</span></span>  <br/> |
+|<span data-ttu-id="d873c-127">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="d873c-127">Validation File</span></span>  <br/> |<span data-ttu-id="d873c-128">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="d873c-128">types.xsd</span></span>  <br/> |
+|<span data-ttu-id="d873c-129">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="d873c-129">Can Be Empty</span></span>  <br/> ||
    
-## <a name="see-also"></a><span data-ttu-id="3feee-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="3feee-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d873c-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d873c-130">See also</span></span>
 
 
 
-- [<span data-ttu-id="3feee-131">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="3feee-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="d873c-131">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="d873c-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
