@@ -12,7 +12,7 @@ ms.openlocfilehash: d946ba8c71d19c8cbb1befbe8c4e43e93590ccae
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467746"
 ---
 # <a name="votinginformation"></a>VotingInformation
@@ -41,7 +41,7 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Nachricht](message-ex15websvcsotherref.md)
+[Meldung](message-ex15websvcsotherref.md)
   
 ## <a name="remarks"></a>Bemerkungen
 
@@ -62,7 +62,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 
 
 
-[Nachricht](message-ex15websvcsotherref.md)
+[Meldung](message-ex15websvcsotherref.md)
 
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)

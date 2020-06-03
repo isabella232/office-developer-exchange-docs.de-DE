@@ -16,7 +16,7 @@ ms.openlocfilehash: 80adbe71d69be1025dc9593c6a9002bc68fdcb76
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466514"
 ---
 # <a name="adddelegate-operation"></a>AddDelegate-Vorgang

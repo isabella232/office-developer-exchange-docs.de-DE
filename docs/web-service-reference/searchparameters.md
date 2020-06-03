@@ -16,7 +16,7 @@ ms.openlocfilehash: cd9f255621b17d01113392e67a0301b01b70f326
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466668"
 ---
 # <a name="searchparameters"></a>SearchParameters
@@ -45,7 +45,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Restriction](restriction.md) <br/> |Stellt die Einschränkung oder Abfrage dar, die zum Filtern von Elementen oder Ordnern in FindItem/FindFolder und Suchordner Vorgängen verwendet wird.  <br/> |
+|[Einschränkung](restriction.md) <br/> |Stellt die Einschränkung oder Abfrage dar, die zum Filtern von Elementen oder Ordnern in FindItem/FindFolder und Suchordner Vorgängen verwendet wird.  <br/> |
 |[BaseFolderIds](basefolderids.md) <br/> |Stellt die Auflistung von Ordnern dar, die abgebaut werden, um den Inhalt eines Suchordners zu bestimmen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente

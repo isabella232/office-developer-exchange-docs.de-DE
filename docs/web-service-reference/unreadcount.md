@@ -16,7 +16,7 @@ ms.openlocfilehash: 72e5d47eac7618408e46ad11eb19eaebf9835502
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467221"
 ---
 # <a name="unreadcount"></a>UnreadCount
@@ -45,7 +45,7 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Unterhaltung (ConversationType)](conversation-conversationtype.md) <br/> |Stellt eine einfache Unterhaltung dar.  <br/> |
-|[Folder](folder.md) <br/> |Stellt einen Ordner in einem Postfach dar.  <br/> |
+|[Ordner](folder.md) <br/> |Stellt einen Ordner in einem Postfach dar.  <br/> |
 |[ModifiedEvent](modifiedevent.md) <br/> |Stellt ein Ereignis dar, in dem ein Element oder ein Ordner geändert wird.  <br/> |
 |[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner in einem Postfach dar.  <br/> |
 |[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner in einem Postfach dar.  <br/> |

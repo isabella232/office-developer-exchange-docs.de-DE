@@ -16,7 +16,7 @@ ms.openlocfilehash: b4606eb7d94b9d0c4c5bcd5a2b56d73a4d4270cb
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467424"
 ---
 # <a name="setitemfield"></a>SetItemField
@@ -252,15 +252,15 @@ Keine.
 |[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member eines Wörterbuchs.  <br/> |
 |[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert erweiterte MAPI-Eigenschaften, die festgelegt werden sollen.  <br/> |
 |[Element](item.md) <br/> |Stellt ein Element im Exchange-Informationsspeicher dar.  <br/> |
-|[Nachricht](message-ex15websvcsotherref.md) <br/> |Stellt eine zu aktualisierenden Exchange-e-Mail-Nachricht dar.  <br/> |
+|[Meldung](message-ex15websvcsotherref.md) <br/> |Stellt eine zu aktualisierenden Exchange-e-Mail-Nachricht dar.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein zu aktualisieres Exchange-Kalenderelement dar.  <br/> |
-|[Kontakt](contact.md) <br/> |Stellt ein zu aktualisieres Exchange-Kontaktelement dar.  <br/> |
+|[Contact](contact.md) <br/> |Stellt ein zu aktualisieres Exchange-Kontaktelement dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine zu aktualisierende Verteilerliste dar.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine zu aktualisierende Besprechungs Meldung dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanfrage zum Aktualisieren dar.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort dar, die aktualisiert werden soll.  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Stellt einen Besprechungs Abbruch dar, der aktualisiert werden soll.  <br/> |
-|[Aufgabe](task.md) <br/> |Stellt eine Aufgabe dar, die aktualisiert werden soll.  <br/> |
+|[Task](task.md) <br/> |Stellt eine Aufgabe dar, die aktualisiert werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

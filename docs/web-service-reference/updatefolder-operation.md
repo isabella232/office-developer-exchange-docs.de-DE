@@ -16,7 +16,7 @@ ms.openlocfilehash: fb894d9f42358b67f81e9fe8ae41ba61e6f46460
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467361"
 ---
 # <a name="updatefolder-operation"></a>UpdateFolder-Vorgang
@@ -97,7 +97,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [FieldURI](fielduri.md)
     
-- [Folder](folder.md)
+- [Ordner](folder.md)
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
@@ -165,7 +165,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Ordner](folders-ex15websvcsotherref.md)
     
-- [Folder](folder.md)
+- [Ordner](folder.md)
     
 - [FolderId](folderid.md)
     
