@@ -7,34 +7,34 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 98161486-e2f2-480f-8d5d-708ba81b208a
-description: Der Vorgang EmptyFolder leert Ordner in einem Postfach. Optional können Sie können diesen Vorgang die Unterordnern des angegebenen Ordners zu löschen. Wenn ein Unterordner gelöscht wird, werden die Unterordner und die Nachrichten innerhalb der Unterordner gelöscht.
-ms.openlocfilehash: 0192744516c5a6d24b95915452bfcffecc2d92b7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der EmptyFolder-Vorgang leert Ordner in einem Postfach. Optional können Sie mit diesem Vorgang die Unterordner des angegebenen Ordners löschen. Wenn ein Unterordner gelöscht wird, werden der Unterordner und die Nachrichten innerhalb des Unterordners gelöscht.
+ms.openlocfilehash: 1913db74d33f1e6750cd158df5870f257d0e7839
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758210"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530684"
 ---
 # <a name="emptyfolder-operation"></a>EmptyFolder-Vorgang
 
-Der Vorgang **EmptyFolder** leert Ordner in einem Postfach. Optional können Sie können diesen Vorgang die Unterordnern des angegebenen Ordners zu löschen. Wenn ein Unterordner gelöscht wird, werden die Unterordner und die Nachrichten innerhalb der Unterordner gelöscht. 
+Der **EmptyFolder** -Vorgang leert Ordner in einem Postfach. Optional können Sie mit diesem Vorgang die Unterordner des angegebenen Ordners löschen. Wenn ein Unterordner gelöscht wird, werden der Unterordner und die Nachrichten innerhalb des Unterordners gelöscht. 
   
-## <a name="emptyfolder-request-example"></a>Beispiel für EmptyFolder-Anforderung
+## <a name="emptyfolder-request-example"></a>EmptyFolder-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **EmptyFolder** -Anforderung veranschaulicht eine Anforderung an einen Ordner leeren bilden. Dieses Beispiel löscht alle Unterordner des angegebenen Ordners. 
+Im folgenden Beispiel einer **EmptyFolder** -Anforderung wird gezeigt, wie Sie eine Anforderung zum leeren eines Ordners bilden. In diesem Beispiel werden alle Unterordner des angegebenen Ordners gelöscht. 
   
 > [!NOTE]
-> Die Werte der **Id** und die **ChangeKey** Attribute des Elements [FolderId](folderid.md) wurden zur besseren Lesbarkeit gekürzt. 
+> Die Werte der ID-und der **ChangeKey** -Attribute des [Folder](folderid.md) **-ID** -Elements wurden zur Lesbarkeit gekürzt. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <soap:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version ="Exchange2010_SP1"/>
     </soap:Header>
@@ -49,11 +49,11 @@ Im folgenden Beispiel einer **EmptyFolder** -Anforderung veranschaulicht eine An
 
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-In diesem Beispiel werden ein harte löschen für den Ordner.
+In diesem Beispiel wird ein harter Löschvorgang für den Ordner ausgeführt.
   
-Ordner können durch das [DistinguishedFolderId](distinguishedfolderid.md) -Element oder das [FolderId](folderid.md) -Element für die Verwendung im [FolderIds](folderids.md) -Element identifiziert werden. 
+Ordner können entweder durch das [DistinguishedFolderId](distinguishedfolderid.md) -Element oder das [Folder](folderid.md) -Element für die Verwendung im [FolderIds](folderids.md) -Element identifiziert werden. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -65,7 +65,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [FolderId](folderid.md)
     
-## <a name="successful-emptyfolder-response"></a>Erfolgreiche EmptyFolder Antwort
+## <a name="successful-emptyfolder-response"></a>Erfolgreiche EmptyFolder-Antwort
 
 ### <a name="description"></a>Beschreibung
 
@@ -82,15 +82,15 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **EmptyFolder** -A
                          MajorBuildNumber="164" 
                          MinorBuildNumber="0" 
                          Version="Exchange2010_SP1"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:EmptyFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                           xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:EmptyFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                           xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:EmptyFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -102,7 +102,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **EmptyFolder** -A
 
 ```
 
-### <a name="successful-response-elements"></a>Elemente einer erfolgreichen Antwort
+### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -116,11 +116,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-## <a name="emptyfolder-error-response"></a>EmptyFolder Fehlerantwort
+## <a name="emptyfolder-error-response"></a>EmptyFolder-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an **Emptyfolder** -Anforderung. Der Fehler erstellt wurde, da der Vorgang haben versucht, einen Ordner zu leeren, die nicht gefunden wurde im Exchange-Speicher. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **EmptyFolder** -Anforderung. Der Fehler wurde erstellt, da der Vorgang versucht hat, einen Ordner zu leeren, der nicht im Exchange-Informationsspeicher gefunden wurde. 
   
 ### <a name="code"></a>Code
 
@@ -133,16 +133,16 @@ Das folgende Beispiel zeigt eine Fehlerantwort an **Emptyfolder** -Anforderung. 
             MajorBuildNumber="164" 
             MinorBuildNumber="0" 
             Version="Exchange2010_SP1" 
-            xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-            xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+            xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+            xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
             xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
             xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <m:GetFolderResponse 
-          xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+          xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetFolderResponseMessage ResponseClass="Error">
           <m:MessageText>Id is malformed.</m:MessageText>
@@ -156,7 +156,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort an **Emptyfolder** -Anforderung. 
 </s:Envelope>
 ```
 
-### <a name="error-response-elements"></a>Fehler Antwortelemente
+### <a name="error-response-elements"></a>Fehlerantwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   

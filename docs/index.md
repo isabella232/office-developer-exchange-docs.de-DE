@@ -1,1 +1,1 @@
-# <a name="welcome-to-officedocs-dev-exchange-docs"></a>Willkommen Sie beim Officedocs-Dev-Exchange-Dokumente.
+# <a name="welcome-to-officedocs-dev-exchange-docs"></a>Willkommen bei officedocs-dev-Exchange-docs!

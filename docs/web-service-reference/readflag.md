@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9d91aa89-9f9f-4877-846d-aaf48bbeec7c
-description: Das ReadFlag-Element gibt den Zustand "gelesen", um für Elemente in einem Ordner festzulegen.
-ms.openlocfilehash: f3156a51fbdd3372dd28f2065499d26a50b3d497
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ReadFlag-Element gibt den Lesestatus an, der für Elemente in einem Ordner festgelegt werden soll.
+ms.openlocfilehash: 1d3b9f3fe199ed2e63bdb632135120a5f89f4d1f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830954"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529896"
 ---
 # <a name="readflag"></a>ReadFlag
 
-Das **ReadFlag** -Element gibt den Zustand "gelesen", um für Elemente in einem Ordner festzulegen. 
+Das **ReadFlag** -Element gibt den Lesestatus an, der für Elemente in einem Ordner festgelegt werden soll. 
   
 ```XML
 <ReadFlag>true | false</ReadFlag>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,21 +42,21 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **ReadFlag** -Element gibt an, dass die Elemente im Ordner als gelesen markiert werden. Der Wert **"false"** gibt an, dass die Elemente im Ordner markiert werden als ungelesen. 
+Der Textwert **true** für das **ReadFlag** -Element gibt an, dass die Elemente im Ordner als gelesen markiert werden. Der Wert **false** gibt an, dass die Elemente im Ordner als ungelesen gekennzeichnet werden. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

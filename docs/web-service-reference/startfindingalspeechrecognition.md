@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fcbc9f67-a211-4a6a-b816-0a9b0a81a283
-description: Das StartFindInGALSpeechRecognition-Element ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: b38342fb997394043fe0aa1cc7a3b37c9cf7a399
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das StartFindInGALSpeechRecognition-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 2ed598516aa49f10ccc20964577f5929aaf6af5a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831555"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530310"
 ---
 # <a name="startfindingalspeechrecognition"></a>StartFindInGALSpeechRecognition
 
-Das **StartFindInGALSpeechRecognition** -Element ist nur zur internen Verwendung vorgesehen. 
+Das **StartFindInGALSpeechRecognition** -Element ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,19 +35,19 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

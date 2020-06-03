@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2d64ebb7-f26a-4d02-b7ef-d9d7da75f0c3
-description: Das Element SubscriptionStatus beschreibt den Status eines Push-Abonnements.
-ms.openlocfilehash: 1f6de15f7a3b07714899aef2ff74a8d556f8ca1d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SubscriptionStatus-Element beschreibt den Status eines Push-Abonnements.
+ms.openlocfilehash: 195ab229380f4386b39e5c3fd48208cf66e224f0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839131"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530944"
 ---
 # <a name="subscriptionstatus"></a>SubscriptionStatus
 
-Das Element **SubscriptionStatus** beschreibt den Status eines Push-Abonnements. 
+Das **SubscriptionStatus** -Element beschreibt den Status eines Push-Abonnements. 
   
 ```xml
 <SubscriptionStatus>OK or Unsubscribe</SubscriptionStatus>
@@ -44,29 +44,29 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SendNotificationResult](sendnotificationresult.md) <br/> |Enthält die Antwort der Clientanwendung ' auf einer Push-Benachrichtigung.  <br/> |
+|[SendNotificationResult](sendnotificationresult.md) <br/> |Enthält die Antwort der Clientanwendung auf eine Push-Benachrichtigung.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses Element:
+Ein Textwert ist erforderlich. Im folgenden sind die möglichen Text Werte für dieses Element angegeben:
   
 - OK
     
-- Kündigen eines Abonnements
+- Abonnement kündigen
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element beschreibt den Status des Abonnements. Die Push-Abonnement-Clientanwendung gesendet, der den Status wieder auf dem Computer, auf dem Exchange 2007 ausgeführt werden, die Clientzugriffsserverrolle nach einzelnen Push Notification installiert hat. Wenn der Wert **SubscriptionStatus** **kündigen**gleich ist, wird der Clientzugriffsserver Senden von Benachrichtigungen beenden und beenden Sie das Abonnement. Wenn der Wert **SubscriptionStatus** **OK**gleich ist, wird der Clientzugriffsserver weiterhin Benachrichtigungen senden.
+Dieses Element beschreibt den Status des Abonnements. Die Push Subscription-Clientanwendung sendet den Status zurück an den Computer, auf dem Exchange 2007 ausgeführt wird, auf dem die Clientzugriffs-Serverrolle nach jeder Push-Benachrichtigung installiert ist. Wenn der **SubscriptionStatus** -Wert gleich **unsubscribe**ist, wird der Client Zugriffsserver das Senden von Benachrichtigungen beenden und das Abonnement beenden. Wenn der **SubscriptionStatus** -Wert auf **OK**entspricht, sendet der Client Zugriffsserver weiterhin Benachrichtigungen.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

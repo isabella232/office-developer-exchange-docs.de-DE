@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 7c42b516-77f6-4aee-99d8-b866d82d793a
-description: Das Element enthält benutzerspezifische Informationen.
-ms.openlocfilehash: 3f90ff0cc00170170c7304f2a19fe1d7abd9d1bc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das User-Element enthält benutzerspezifische Informationen.
+ms.openlocfilehash: 8f53319bcf34595305748adafc9aa1e25283611e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839432"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530218"
 ---
 # <a name="user-pox"></a>Benutzer (POX)
 
-**Das Element** enthält benutzerspezifische Informationen. 
+Das **User** -Element enthält benutzerspezifische Informationen. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -47,20 +47,20 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DisplayName (Zeichenfolge)](displayname-string.md) <br/> |Anzeigenamen des Benutzers darstellt.  <br/> |
-|[LegacyDN (POX)](legacydn-pox.md) <br/> |Postfach eines Benutzers identifiziert anhand der legacy-DN.  <br/> |
-|[DeploymentId (POX)](deploymentid-pox.md) <br/> |Die Exchange-Gesamtstruktur identifiziert eindeutig.  <br/> |
-|[AutoDiscoverSMTPAddress (POX)](autodiscoversmtpaddress-pox.md) <br/> |Enthält die SMTP-Adresse des Benutzers, die für die AutoErmittlung-Prozesses verwendet wird.  <br/> |
+|[DisplayName (Zeichenfolge)](displayname-string.md) <br/> |Stellt den Anzeigenamen des Benutzers dar.  <br/> |
+|[LegacyDN (POX)](legacydn-pox.md) <br/> |Identifiziert das Postfach eines Benutzers anhand des Distinguished Name-Legacy namens.  <br/> |
+|[DeploymentId (POX)](deploymentid-pox.md) <br/> |Identifiziert die Exchange-Gesamtstruktur eindeutig.  <br/> |
+|[AutoDiscoverSMTPAddress (POX)](autodiscoversmtpaddress-pox.md) <br/> |Enthält die SMTP-Adresse des Benutzers, die für den Auto Ermittlungsprozess verwendet wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Response (POX)](response-pox.md) <br/> |Enthält die Antwort vom AutoErmittlungsdienst.  <br/> |
+|[Response (POX)](response-pox.md) <br/> |Enthält die Antwort des AutoErmittlungsdiensts.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-AutoErmittlung-Anforderungen und-Antworten müssen UTF-8 codiert sein.
+AutoErmittlung-Anforderungen und-Antworten müssen UTF-8-codiert sein.
   
 ## <a name="see-also"></a>Siehe auch
 

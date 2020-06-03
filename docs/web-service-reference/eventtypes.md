@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 29ded9e5-f191-4aa3-bc3e-500de2fc8818
-description: EventTypes-Element enthält eine Auflistung von Benachrichtigung Ereignistypen, die zum Erstellen eines Abonnements verwendet werden.
-ms.openlocfilehash: 7ea783dc0bf73abf992616b1f86c7621c5b36fc8
-ms.sourcegitcommit: 25cbbc6707e4ec0621c5c46baf7fe49be42d3297
+description: Das EventTypes-Element enthält eine Auflistung von Ereignis Benachrichtigungstypen, die zum Erstellen eines Abonnements verwendet werden.
+ms.openlocfilehash: 45ce1ed0699c8140029ae3fb7f667a5132f4731e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "25440837"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530628"
 ---
 # <a name="eventtypes"></a>EventTypes
 
-**EventTypes** -Element enthält eine Auflistung von Benachrichtigung Ereignistypen, die zum Erstellen eines Abonnements verwendet werden. 
+Das **EventTypes** -Element enthält eine Auflistung von Ereignis Benachrichtigungstypen, die zum Erstellen eines Abonnements verwendet werden. 
   
 ```xml
 <EventTypes>
@@ -42,21 +42,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[EventType](eventtype.md) <br/> |Stellt einen angeforderte Benachrichtigung Ereignistyp, der zum Erstellen eines Abonnements verwendet wird.  <br/> |
+|[EventType](eventtype.md) <br/> |Stellt einen angeforderten Ereignis Benachrichtigungs dar, der zum Erstellen eines Abonnements verwendet wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |Stellt ein Abonnement für ein Benachrichtigungsabonnement Pull-Ereignis.  <br/> |
-|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Stellt ein Abonnement für ein Benachrichtigungsabonnement Push-Ereignis.  <br/> |
-|[StreamingSubscriptionRequest](streamingsubscriptionrequest.md) <br/> |Stellt ein Abonnement für eine streaming Benachrichtigungsabonnement Ereignis dar.  <br/> |
+|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |Stellt ein Abonnement für ein Pull-basiertes Ereignis Benachrichtigungsabonnement dar.  <br/> |
+|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Stellt ein Abonnement für ein Push-basiertes Ereignis Benachrichtigungsabonnement dar.  <br/> |
+|[StreamingSubscriptionRequest](streamingsubscriptionrequest.md) <br/> |Stellt ein Abonnement für ein Streaming-Ereignis Benachrichtigungsabonnement dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -64,7 +64,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

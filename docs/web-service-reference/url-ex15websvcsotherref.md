@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c0d41b95-36b9-4e7a-a442-cdea37467abd
-description: Das Url-Element stellt den Speicherort des Webdiensts für Pushbenachrichtigungen-Clients.
-ms.openlocfilehash: 62a48fe3b7d2f169ba83c2a89cba3019c270555c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das URL-Element stellt den Speicherort des Client-Webdiensts für Push-Benachrichtigungen dar.
+ms.openlocfilehash: 62e139c441eef68db5cf13226d15a83f67135026
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839420"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530930"
 ---
 # <a name="url"></a>Url
 
-Das **Url** -Element stellt den Speicherort des Webdiensts für Pushbenachrichtigungen-Clients. 
+Das **URL** -Element stellt den Speicherort des Client-Webdiensts für Push-Benachrichtigungen dar. 
   
 ```XML
 <Url></Url>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -40,17 +40,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Stellt ein Abonnement für ein Benachrichtigungsabonnement Push-Ereignis.  <br/> |
+|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Stellt ein Abonnement für ein Push-basiertes Ereignis Benachrichtigungsabonnement dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **Url** -Element ist der Speicherort des Webdiensts für Pushbenachrichtigungen-Clients. 
+Der Textwert von **URL** -Element ist der Speicherort des Client-Webdiensts für Push-Benachrichtigungen. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 ||
 |:-----|

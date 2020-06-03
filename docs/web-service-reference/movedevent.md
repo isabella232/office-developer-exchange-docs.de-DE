@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 572f8b40-dfa8-47bc-b0c1-e1a7138506fd
-description: Das MovedEvent-Element stellt ein Ereignis in der eines Elements oder Ordners von einem übergeordneten Ordner in einer anderen übergeordneten Ordner verschoben wird.
-ms.openlocfilehash: 07f9c02ea194187a9fdfb1e27b19eb311392f51f
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das MovedEvent-Element stellt ein Ereignis dar, in dem ein Element oder ein Ordner von einem übergeordneten Ordner in einen anderen übergeordneten Ordner verschoben wird.
+ms.openlocfilehash: 1f8fb57dba7edb769fe0dd658d89c032dccf8c5f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353259"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530408"
 ---
 # <a name="movedevent"></a>MovedEvent
 
-Das **MovedEvent** -Element stellt ein Ereignis in der eines Elements oder Ordners von einem übergeordneten Ordner in einer anderen übergeordneten Ordner verschoben wird. 
+Das **MovedEvent** -Element stellt ein Ereignis dar, in dem ein Element oder ein Ordner von einem übergeordneten Ordner in einen anderen übergeordneten Ordner verschoben wird. 
   
 ```xml
 <MovedEvent>
@@ -60,14 +60,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Watermark](watermark.md) <br/> |Stellt eine Textmarke Ereignisse in der Tabelle der Postfach-Ereignisse dar.  <br/> |
-|[TimeStamp](timestamp.md) <br/> |Stellt den Zeitstempel der ein Element-Ordner Postfach-Ereignis.  <br/> |
-|[FolderId](folderid.md) <br/> |Den Bezeichner des verschobenen Ordners darstellt.  <br/> |
-|[ItemId](itemid.md) <br/> |Stellt die das verschobene Element-ID an.  <br/> |
-|[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des Ordners, die das verschobene Element oder Ordner enthält.  <br/> |
-|[OldFolderId](oldfolderid.md) <br/> |Die Ordner-ID des ursprünglichen Ordners enthält, bevor sie verschoben oder kopiert wurde.  <br/> |
-|[OldItemId](olditemid.md) <br/> |Enthält die eindeutige ID des ursprünglichen Elements an, bevor sie verschoben wurde.  <br/> |
-|[OldParentFolderId](oldparentfolderid.md) <br/> |Enthält den Bezeichner des übergeordneten Ordners ursprünglichen eines Elements oder Ordners, die verschoben wurde.  <br/> |
+|[Watermark](watermark.md) <br/> |Stellt ein Lesezeichen für Ereignisse in der Tabelle Post Fach Ereignisse dar.  <br/> |
+|[Timestamp](timestamp.md) <br/> |Stellt den Zeitstempel des Post Fach Ereignisses "Element/Ordner Verschiebe" dar.  <br/> |
+|[FolderId](folderid.md) <br/> |Stellt den Bezeichner des verschobenen Ordners dar.  <br/> |
+|[ItemId](itemid.md) <br/> |Stellt den Bezeichner des verschobenen Elements dar.  <br/> |
+|[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des Ordners dar, der das verschobene Element oder den verschobenen Ordner enthält.  <br/> |
+|[OldFolderId](oldfolderid.md) <br/> |Enthält den Ordner Bezeichner des ursprünglichen Ordners, bevor er verschoben oder kopiert wurde.  <br/> |
+|[OldItemId](olditemid.md) <br/> |Enthält die eindeutige ID des ursprünglichen Elements, bevor es verschoben wurde.  <br/> |
+|[OldParentFolderId](oldparentfolderid.md) <br/> |Enthält den Bezeichner des ursprünglichen übergeordneten Ordners eines verschobenen Elements oder Ordners.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -75,15 +75,15 @@ Keine.
 |:-----|:-----|
 |[Benachrichtigung](notification-ex15websvcsotherref.md) <br/> |Enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

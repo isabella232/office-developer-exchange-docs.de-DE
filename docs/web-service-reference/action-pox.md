@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: a3462c6b-453c-462a-830d-f29ee4a2babb
-description: Das Action-Element enthält Informationen, die verwendet wird, um festzustellen, ob eine andere autoermittlungsanforderung erforderlich ist, um die Informationen der Benutzerkonfiguration zurückzugeben.
-ms.openlocfilehash: 118bb59f2c929e3c74683dbf3f073da34d67a3e7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Action-Element enthält Informationen, die verwendet werden, um zu bestimmen, ob eine andere Auto Ermittlungsanforderung erforderlich ist, um die Benutzerkonfigurationsinformationen zurückzugeben.
+ms.openlocfilehash: f6d542b908948d09020b850b60ca1bdb025dd342
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758383"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529693"
 ---
 # <a name="action-pox"></a>Aktion (POX)
 
-Das **Action** -Element enthält Informationen, die verwendet wird, um festzustellen, ob eine andere autoermittlungsanforderung erforderlich ist, um die Informationen der Benutzerkonfiguration zurückzugeben. 
+Das **Action** -Element enthält Informationen, die verwendet werden, um zu bestimmen, ob eine andere Auto Ermittlungsanforderung erforderlich ist, um die Benutzerkonfigurationsinformationen zurückzugeben. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -48,17 +48,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Konto (POX)](account-pox.md) <br/> |Gibt die kontoeinstellungen für den Benutzer an.  <br/> |
+|[Konto (POX)](account-pox.md) <br/> |Gibt Kontoeinstellungen für den Benutzer an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der angibt, ob einer anderen autoermittlungsanforderung erforderlich sind, um die Konfigurationsinformationen des Benutzers abgerufen wird. In der folgenden Tabelle sind die möglichen Werte aufgeführt.
+Der Text-Wert gibt an, ob eine andere Auto Ermittlungsanforderung zum Abrufen der Konfigurationsinformationen des Benutzers erforderlich ist. In der folgenden Tabelle sind die möglichen Werte aufgeführt.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|redirectUrl  <br/> |Wenn dieser Wert angegeben ist, wird das Element [RedirectUrl (POX)](redirecturl-pox.md) die Clientzugriffs-Server-URL in der nachfolgenden Anforderung der AutoErmittlung verwendet werden angeben. Die Clientanwendung sollte beenden umleiten nach 10 umleitungen zulässig.  <br/> |
-|redirectAddr  <br/> |Wenn dieser Wert angegeben ist, wird das Element [RedirectAddr (POX)](redirectaddr-pox.md) die e-Mail-Adresse angeben, die für eine nachfolgende autoermittlungsanforderung verwendet werden soll.  <br/> |
-|settings  <br/> |Wenn dieser Wert angegeben wird, enthält die Antwort der AutoErmittlung Einstellungen, mit denen das Konto konfiguriert werden. Die meisten Einstellungen werden im [Protokoll (POX)](protocol-pox.md) -Element gefunden.  <br/> |
+|redirectUrl  <br/> |Wenn dieser Wert angegeben ist, gibt das [RedirectUrl (POX)-](redirecturl-pox.md) Element die Client Zugriffsserver-URL an, die in der nachfolgenden Auto Ermittlungsanforderung verwendet werden soll. Die Clientanwendung sollte die Umleitung nach 10 Umleitungen beenden.  <br/> |
+|redirectAddr  <br/> |Wenn dieser Wert angegeben ist, gibt das [RedirectAddr (POX)](redirectaddr-pox.md) -Element die e-Mail-Adresse an, die für eine nachfolgende Auto Ermittlungsanforderung verwendet werden soll.  <br/> |
+|settings  <br/> |Wenn dieser Wert angegeben ist, enthält die Auto Ermittlungs Antworteinstellungen, die zum Konfigurieren des Kontos verwendet werden. Die meisten Einstellungen finden Sie im [Protokoll (POX)](protocol-pox.md) -Element.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

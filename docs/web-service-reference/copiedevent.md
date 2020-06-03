@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 82f2fcac-deaa-4ff8-801f-4fe28d8a19f5
-description: Das CopiedEvent-Element stellt ein Ereignis in der eines Elements oder Ordners kopiert wird.
-ms.openlocfilehash: 7ebfbb744a80e3a2d14ee9e0e1b952d2269dbf94
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das CopiedEvent-Element stellt ein Ereignis dar, in dem ein Element oder ein Ordner kopiert wird.
+ms.openlocfilehash: 928910ddbe0bf1e48549d1665ab373f7382366d1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353168"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529245"
 ---
 # <a name="copiedevent"></a>CopiedEvent
 
-Das **CopiedEvent** -Element stellt ein Ereignis in der eines Elements oder Ordners kopiert wird. 
+Das **CopiedEvent** -Element stellt ein Ereignis dar, in dem ein Element oder ein Ordner kopiert wird. 
   
 ```xml
 <CopiedEvent>
@@ -59,14 +59,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Watermark](watermark.md) <br/> |Stellt eine Textmarke Ereignisse in der Tabelle der Postfach-Ereignisse dar.  <br/> |
-|[TimeStamp](timestamp.md) <br/> |Steht für den Zeitstempel eines Ereignisses Postfach Element-Ordner kopieren.  <br/> |
-|[FolderId](folderid.md) <br/> |Den Bezeichner des Ordners darstellt.  <br/> |
-|[ItemId](itemid.md) <br/> |Den Bezeichner des Elements darstellt.  <br/> |
-|[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des Ordners, der die Kopie enthält.  <br/> |
-|[OldFolderId](oldfolderid.md) <br/> |Die Ordner-ID des ursprünglichen Ordners darstellt, bevor sie kopiert wurde.  <br/> |
-|[OldItemId](olditemid.md) <br/> |Enthält die eindeutige ID des ursprünglichen Elements an, bevor sie kopiert wurde.  <br/> |
-|[OldParentFolderId](oldparentfolderid.md) <br/> |Enthält den Bezeichner des übergeordneten Ordners ursprünglichen eines Elements oder Ordners, der kopiert wurde.  <br/> |
+|[Watermark](watermark.md) <br/> |Stellt ein Lesezeichen für Ereignisse in der Tabelle Post Fach Ereignisse dar.  <br/> |
+|[Timestamp](timestamp.md) <br/> |Stellt den Zeitstempel eines Post Fach Ereignisses zum Kopieren von Elementen/Ordnern dar.  <br/> |
+|[FolderId](folderid.md) <br/> |Stellt den Bezeichner des Ordners dar.  <br/> |
+|[ItemId](itemid.md) <br/> |Stellt den Bezeichner des Elements dar.  <br/> |
+|[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des Ordners dar, der die Kopie enthält.  <br/> |
+|[OldFolderId](oldfolderid.md) <br/> |Stellt die Ordner-ID des ursprünglichen Ordners vor dem Kopieren dar.  <br/> |
+|[OldItemId](olditemid.md) <br/> |Enthält den eindeutigen Bezeichner des ursprünglichen Elements, bevor es kopiert wurde.  <br/> |
+|[OldParentFolderId](oldparentfolderid.md) <br/> |Enthält den Bezeichner des ursprünglichen übergeordneten Ordners eines Elements oder Ordners, das kopiert wurde.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -74,15 +74,15 @@ Keine.
 |:-----|:-----|
 |[Benachrichtigung](notification-ex15websvcsotherref.md) <br/> |Enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
@@ -92,6 +92,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 - [Vorgang abonnieren](subscribe-operation.md) 
 - [GetEvents-Vorgang](getevents-operation.md) 
 - [Vorgang des Kündigens von Abonnements](unsubscribe-operation.md)
-- [Mithilfe von Pullabonnements](http://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx) 
-- [Beispielanwendung für Pushbenachrichtigungen](http://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)
+- [Verwenden von Pullabonnements](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx) 
+- [Beispielanwendung für Pushbenachrichtigungen](https://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)
 

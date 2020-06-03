@@ -1,5 +1,5 @@
 ---
-title: Vorname
+title: GivenName
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8efc46fd-6056-4439-9af3-fc9e13ee6d9a
-description: Das Vorname-Element enthält den Namen eines Kontakts angegebenen.
-ms.openlocfilehash: a9c8e6b075a480bc54414d0ead11918a50223b56
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das givenName-Element enthält den angegebenen Namen des Kontakts.
+ms.openlocfilehash: a22c5ef99844b55fa75f60acb8667ee423420336
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829710"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530134"
 ---
-# <a name="givenname"></a>Vorname
+# <a name="givenname"></a>GivenName
 
-Das **Vorname** -Element enthält den Namen eines Kontakts angegebenen. 
+Das **givenName** -Element enthält den angegebenen Namen des Kontakts. 
   
 ```xml
 <GivenName/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -48,19 +48,19 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der den Namen eines Kontakts angegebenen darstellt ist erforderlich, wenn dieses Element verwendet wird.
+Ein Textwert, der den angegebenen Namen eines Kontakts darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Eine angegebene Name ist in der Regel Vornamen der Person ein.
+Ein angegebener Name ist normalerweise der Vorname einer Person.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
@@ -72,9 +72,9 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Creating Contacts (Exchange Web Services)](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
+[Creating Contacts (Exchange Web Services)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
   
-[Aktualisierung von Kontakten](http://msdn.microsoft.com/library/9a865953-b94a-4229-b632-2dee433314be%28Office.15%29.aspx)
+[Aktualisieren von Kontakten](https://msdn.microsoft.com/library/9a865953-b94a-4229-b632-2dee433314be%28Office.15%29.aspx)
   
-[Deleting Contacts](http://msdn.microsoft.com/library/fcc3dc84-cd3e-455e-a1a7-ae6921c9b588%28Office.15%29.aspx)
+[Deleting Contacts](https://msdn.microsoft.com/library/fcc3dc84-cd3e-455e-a1a7-ae6921c9b588%28Office.15%29.aspx)
 

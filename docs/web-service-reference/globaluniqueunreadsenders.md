@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 490abe30-7608-407a-923b-a4b3ddbca610
-description: Das GlobalUniqueUnreadSenders-Element gibt eine Liste aller Personen, die Nachrichten gesendet wurden, die derzeit in dieser Unterhaltung ungelesen in allen Ordnern im Postfach sind.
-ms.openlocfilehash: ae088577f5aac0c7c3ee9c11fde184b70ab12e64
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GlobalUniqueUnreadSenders-Element gibt eine Liste aller Personen an, die Nachrichten gesendet haben, die derzeit in dieser Unterhaltung für alle Ordner im Postfach ungelesen sind.
+ms.openlocfilehash: 5a26053158a262d65993dba4be90888ee97f2112
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829749"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530818"
 ---
 # <a name="globaluniqueunreadsenders"></a>GlobalUniqueUnreadSenders
 
-Das **GlobalUniqueUnreadSenders** -Element gibt eine Liste aller Personen, die Nachrichten gesendet wurden, die derzeit in dieser Unterhaltung ungelesen in allen Ordnern im Postfach sind. 
+Das **GlobalUniqueUnreadSenders** -Element gibt eine Liste aller Personen an, die Nachrichten gesendet haben, die derzeit in dieser Unterhaltung für alle Ordner im Postfach ungelesen sind. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -50,7 +50,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[String](string.md) <br/> |Enthält einen einzelnen Gespräch Absender.  <br/> |
+|[String](string.md) <br/> |Enthält einen einzelnen Unterhaltungs Absender.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -62,15 +62,15 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
@@ -84,5 +84,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 [ApplyConversationAction-Vorgang](applyconversationaction-operation.md)
 
 
-[Conversations in EWS](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+[Conversations in EWS](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

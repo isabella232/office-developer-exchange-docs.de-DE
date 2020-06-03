@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b016cdde-d597-40ac-87c4-63ca68bd539d
-description: Das SenderDepartments-Element gibt an, dass die Abteilung des Absenders einer der angegebenen Abteilungen im untergeordneten Wert (ProtectionRuleValueType) übereinstimmt.
-ms.openlocfilehash: d40e6299bd46ede559cc2cce3bcc9d1611e96bd7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SenderDepartments-Element gibt an, dass die Abteilung des Absenders mit einer der angegebenen Abteilungen in den untergeordneten Wert (ProtectionRuleValueType)-Elementen übereinstimmt.
+ms.openlocfilehash: cf15b974b9c0cfb09767661f17334defc4041e43
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831331"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530345"
 ---
 # <a name="senderdepartments"></a>SenderDepartments
 
-Das **SenderDepartments** -Element gibt an, dass die Abteilung des Absenders einer der angegebenen Abteilungen im untergeordneten [Wert (ProtectionRuleValueType)](value-protectionrulevaluetype.md) übereinstimmt. 
+Das **SenderDepartments** -Element gibt an, dass die Abteilung des Absenders mit einer der angegebenen Abteilungen in den untergeordneten [Wert (ProtectionRuleValueType)-](value-protectionrulevaluetype.md) Elementen übereinstimmt. 
   
 ```XML
 <SenderDepartments>
@@ -42,24 +42,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Wert (ProtectionRuleValueType)](value-protectionrulevaluetype.md) <br/> |Eine Abteilung der einzelnen Absender identifiziert.  <br/> |
+|[Wert (ProtectionRuleValueType)](value-protectionrulevaluetype.md) <br/> |Identifiziert eine einzelne Absender Abteilung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Bedingung](condition.md) <br/> |Gibt die Bedingung, die erfüllt sein muss, für die Aktionsteil der Regel ausgeführt werden.  <br/> |
-|[Und (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Gibt an, dass alle untergeordneten Elemente übereinstimmen müssen, damit zu **true**ausgewertet werden. Gibt an, dass mehr als ein Protection untergeordneten regelbedingung sein muss.  <br/> |
+|[Bedingung](condition.md) <br/> |Gibt die Bedingung an, die erfüllt sein muss, damit der Aktions Teil der Regel ausgeführt wird.  <br/> |
+|[Und (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Gibt an, dass alle untergeordneten Elemente übereinstimmen müssen, damit Sie zu **true**ausgewertet werden. Gibt an, dass mehr als eine untergeordnete Schutz Regelbedingung vorhanden sein muss.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

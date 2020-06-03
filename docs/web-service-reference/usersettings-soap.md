@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: ac3b827c-2e46-49ef-8c5a-f88084c0a12c
-description: Das Element UserSettings stellt eine Auflistung von benutzereinstellungen.
-ms.openlocfilehash: 177c068077e755af51175c36824fb55a96494dca
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UserSettings-Element stellt eine Auflistung von Benutzereinstellungen dar.
+ms.openlocfilehash: 0e1627d4ef42db4e3bd2f4d841bea29fcf947a82
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839470"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530282"
 ---
 # <a name="usersettings-soap"></a>UserSettings (SOAP)
 
-Das Element **UserSettings** stellt eine Auflistung von benutzereinstellungen. 
+Das **UserSettings** -Element stellt eine Auflistung von Benutzereinstellungen dar. 
   
 ```XML
 <UserSettings>
@@ -39,30 +39,30 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserSetting (SOAP)](usersetting-soap.md) <br/> |Stellt eine Einstellung für die einzelnen Benutzer dar.  <br/> |
+|[UserSetting (SOAP)](usersetting-soap.md) <br/> |Stellt eine Einstellung für einen einzelnen Benutzer dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserResponse (SOAP)](userresponse-soap.md) <br/> |Stellt eine Antwort auf eine Anforderung GetUserSettings für einen einzelnen Benutzer dar.  <br/> |
+|[User Response (SOAP)](userresponse-soap.md) <br/> |Stellt eine Antwort auf eine GetUserSettings-Anforderung für einen einzelnen Benutzer dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[SOAP-Autodiscover XML-Elemente für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[XML-Elemente der SOAP-AutoErmittlung für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

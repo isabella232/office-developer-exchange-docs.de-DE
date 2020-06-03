@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 79dc2a4c-f7dd-46d1-8f31-149116e1f76e
-description: Das Element ExternalAudience legt oder enthält einen Wert, der bestimmt, denen externe Out of Office (OOF) Testnachrichten gesendet werden.
-ms.openlocfilehash: 836b0f6a5140a37e1584f571cb8e26534fe7a25f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ExternalAudience-Element legt fest oder enthält einen Wert, der bestimmt, an wen externe Abwesenheit (Out of Office, OOF) Nachrichten gesendet werden.
+ms.openlocfilehash: b3fcebd9042b07bb9a8294196799ef2a13d78bdd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758368"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530600"
 ---
 # <a name="externalaudience"></a>ExternalAudience
 
-Das Element **ExternalAudience** legt oder enthält einen Wert, der bestimmt, denen externe Out of Office (OOF) Testnachrichten gesendet werden. 
+Das **ExternalAudience** -Element legt fest oder enthält einen Wert, der bestimmt, an wen externe Abwesenheit (Out of Office, OOF) Nachrichten gesendet werden. 
   
 ```xml
 <ExternalAudience>None or Known or All</ExternalAudience>
@@ -44,40 +44,40 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[' UserOofSettings '](useroofsettings.md) <br/> |Gibt die OOF-Einstellungen.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
-|[OofSettings](oofsettings.md) <br/> |Enthält die OOF-Einstellungen.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |Gibt die Abwesenheitseinstellungen an.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[OofSettings](oofsettings.md) <br/> |Enthält die OOF-Einstellungen.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Es wird ein Textwert für dieses Element erforderlich. Die folgende Tabelle enthält die möglichen Werte für dieses Element.
+Für dieses Element ist ein Textwert erforderlich. In der folgenden Tabelle sind die möglichen Werte für dieses Element aufgeführt.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|**None** <br/> |E-Mail-Absender außerhalb der Organisation das des Postfachbenutzers, die Senden von Nachrichten an die Benutzer werden keine externe OOF Nachricht beantwortet.  <br/> |
-|**Bekannte** <br/> |E-Mail-Absender außerhalb der Organisation das des Postfachbenutzers, die Senden von Nachrichten an den Benutzer nur eine externe OOF Nachrichtenantwort erhält, wenn der Absender in Exchange des Benutzers ist speichern Kontaktliste.  <br/> |
-|**All** <br/> |E-Mail-Absender außerhalb der Organisation das des Postfachbenutzers, die Senden von Nachrichten an die Benutzer erhalten eine externe OOF Nachrichtenantwort.  <br/> |
+|**Keine** <br/> |E-Mail-Absender außerhalb der Organisation des Postfachbenutzers, die Nachrichten an den Benutzer senden, erhalten keine externe Abwesenheitsnachrichten Antwort.  <br/> |
+|**Bezeichnet** <br/> |E-Mail-Absender außerhalb der Organisation des Postfachbenutzers, die Nachrichten an den Benutzer senden, erhalten nur dann eine externe Abwesenheitsnachrichten Antwort, wenn sich der Absender in der Exchange-Informationsspeicher Kontaktliste des Benutzers befindet.  <br/> |
+|**All** <br/> |E-Mail-Absender außerhalb der Organisation des Postfachbenutzers, die Nachrichten an den Benutzer senden, erhalten eine externe Abwesenheitsnachrichten Antwort.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element gibt den gleichen Datentyp wie das [AllowExternalOof](allowexternaloof.md) -Element. 
+Dieses Element hat denselben Typ wie das [AllowExternalOof](allowexternaloof.md) -Element. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird eine Anforderung SetUserOofSettings legt die OoFState **aktiviert**, wird die externe Benutzergruppe auf **Alle**, wird die Dauer der OOF auf 10 Tage und die internen und externen Abwesenheitsnachrichten festgelegt.
+Im folgenden Beispiel einer SetUserOofSettings-Anforderung wird die OoFState auf " **aktiviert**" festgelegt, die externe Benutzergruppe auf " **all**" festgelegt, die Dauer von OOF auf 10 Tage festgelegt und die internen und externen Abwesenheitsnachrichten festgelegt.
   
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -96,11 +96,11 @@ Im folgenden Beispiel wird eine Anforderung SetUserOofSettings legt die OoFState
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

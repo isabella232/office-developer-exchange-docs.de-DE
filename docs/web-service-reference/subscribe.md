@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6c2ee57d-e216-4a94-92db-faa3cb0e244a
-description: Das Subscribe-Element enthält die Eigenschaften, die zum Erstellen von Abonnements verwendet.
-ms.openlocfilehash: 9f23f566f9105c655b289ed9b434c5e7b917207f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Subscribe-Element enthält die Eigenschaften, die zum Erstellen von Abonnements verwendet werden.
+ms.openlocfilehash: f60e67654fb6af76e8081036a3463f5be401862d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831618"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530958"
 ---
 # <a name="subscribe"></a>Abonnieren
 
-Das **Subscribe** -Element enthält die Eigenschaften, die zum Erstellen von Abonnements verwendet. 
+Das **subscribe** -Element enthält die Eigenschaften, die zum Erstellen von Abonnements verwendet werden. 
   
 ```XML
 <Subscribe>
@@ -44,25 +44,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |Stellt ein Abonnement für eine Benachrichtigung Pull-Ereignis.  <br/> |
-|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Stellt ein Abonnement für eine Benachrichtigung Push-Ereignis.  <br/> |
-|[StreamingSubscriptionRequest](streamingsubscriptionrequest.md) <br/> |Stellt ein Abonnement für eine streaming ereignisbenachrichtigung dar.  <br/> |
+|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |Stellt ein Abonnement für eine Pull-basierte Ereignisbenachrichtigung dar.  <br/> |
+|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Stellt ein Abonnement für eine Push-basierte Ereignisbenachrichtigung dar.  <br/> |
+|[StreamingSubscriptionRequest](streamingsubscriptionrequest.md) <br/> |Stellt ein Abonnement einer Streaming-Ereignisbenachrichtigung dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

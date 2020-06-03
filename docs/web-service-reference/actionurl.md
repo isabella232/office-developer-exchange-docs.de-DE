@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9697f2e5-a5f7-471a-a052-ae79e06eb09d
-description: ActionUrl-Element identifiziert die URL, die der Benutzer navigieren soll, um ein Problem, das durch das AppStatus-Element angegebenen zu beheben.
-ms.openlocfilehash: b138797aa8f4e277d94e85e2dd13c0d4c6afaa51
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ActionUrl-Element gibt die URL an, zu der der Benutzer navigieren sollte, um ein Problem zu beheben, das durch das AppStatus-Element angegeben wird.
+ms.openlocfilehash: 2335595b4be6452f41c25f15d359e6939609c9b9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757213"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529672"
 ---
 # <a name="actionurl"></a>ActionUrl
 
-**ActionUrl** -Element identifiziert die URL, die der Benutzer navigieren soll, um ein Problem, das durch das [AppStatus](appstatus-ex15websvcsotherref.md) -Element angegebenen zu beheben. 
+Das **ActionUrl** -Element gibt die URL an, zu der der Benutzer navigieren sollte, um ein Problem zu beheben, das durch das [AppStatus](appstatus-ex15websvcsotherref.md) -Element angegeben wird. 
   
 ```XML
 <ActionUrl/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,19 +42,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **ActionUrl** -Element identifiziert die URL, die der Benutzer navigieren soll, um ein Problem, das durch das **AppStatus** -Element angegebenen zu beheben. 
+Der Textwert des **ActionUrl** -Elements gibt die URL an, zu der der Benutzer navigieren sollte, um ein Problem zu beheben, das durch das **AppStatus** -Element angegeben wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> | http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> | https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Nicht zutreffend  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

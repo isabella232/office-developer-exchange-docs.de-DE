@@ -1,5 +1,5 @@
 ---
-title: "\"TaskString\""
+title: Task String
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4f2c8e66-698c-4313-98d0-24d7298489f6
-description: Das Element "TaskString" enthält einen vorgeschlagenen Vorgang.
-ms.openlocfilehash: 41cc000c03961b3d5ae468b056deb806dbd0af38
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Task String-Element enthält eine vorgeschlagene Aufgabe.
+ms.openlocfilehash: a48a47917dd2ec47678b53f04f00c99887eec0b5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839160"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530874"
 ---
-# <a name="taskstring"></a>"TaskString"
+# <a name="taskstring"></a>Task String
 
-Das Element **"TaskString"** enthält einen vorgeschlagenen Vorgang. 
+Das **Task** String-Element enthält eine vorgeschlagene Aufgabe. 
   
 ```XML
 <TaskString></TaskString>
 ```
 
-**string**
+**Zeichenfolge**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -43,19 +43,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des Elements **"TaskString"** ist der vorgeschlagene Vorgang, der aus einer Aufgabenentität aus einem Element im Postfach extrahiert resultieren. 
+Der Textwert des **Task** String-Elements ist die vorgeschlagene Aufgabe, die aus einer Vorgangs Entität resultiert, die aus einem Element im Postfach extrahiert wurde. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

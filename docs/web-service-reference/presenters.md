@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 01057872-4f1a-4246-86ba-73d10ef854a0
-description: Das Referenten-Element gibt die Referenten für eine onlinebesprechung umwandeln.
-ms.openlocfilehash: f62b458759e0d8199c98827602d6c3fe16aebeea
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das presenters-Element gibt die Referenten für eine Onlinebesprechung an.
+ms.openlocfilehash: 0236457020dfc4684569e84d3d54e357af00d102
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830875"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529910"
 ---
 # <a name="presenters"></a>Referenten
 
-Das **Referenten** -Element gibt die Referenten für eine onlinebesprechung umwandeln. 
+Das **Presenters** -Element gibt die Referenten für eine Onlinebesprechung an. 
   
 ```XML
 <Presenters> Disabled | Internal | Everyone </Presenters>
@@ -42,27 +42,27 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **Referenten** -Element ist der Typ der Benutzer, die für eine onlinebesprechung umwandeln Referent sein kann. In der folgenden Tabelle werden die Textwerte für das Element **Referenten** beschrieben. 
+Der Textwert des **Presenters** -Elements ist der Typ von Benutzern, die als Referent für eine Onlinebesprechung fungieren können. Die Textwerte für das **Presenters** -Element werden in der folgenden Tabelle beschrieben. 
   
-**Text-Elementwerte Referenten**
+**Textwerte des Presenters-Elements**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |Deaktiviert  <br/> |Referenten sind deaktiviert.  <br/> |
-|Interne  <br/> |Nur interne Teilnehmer können als Referenten.  <br/> |
-|Jeder  <br/> |Alle Teilnehmer kann als Referenten fungieren.  <br/> |
+|Intern  <br/> |Nur interne Teilnehmer können Referenten sein.  <br/> |
+|Alle  <br/> |Jeder Teilnehmer kann ein Referent sein.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

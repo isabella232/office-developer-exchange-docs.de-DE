@@ -1,5 +1,5 @@
 ---
-title: UID (ReminderType)
+title: UID (Reminder)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 169e7825-4480-46d2-9f84-cdab27c8bcfb
-description: Das Element UID (ReminderType) identifiziert das zugeordnete einer Erinnerung im Kalenderelement.
-ms.openlocfilehash: e0ad877eee29937b93e2659f84769938c983f11d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UID-Element (Reminder) identifiziert das Kalenderelement, das einer Erinnerung zugeordnet ist.
+ms.openlocfilehash: ab7e59725a87ff21bb2df052b5893abf6217f78a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839278"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530373"
 ---
-# <a name="uid-remindertype"></a>UID (ReminderType)
+# <a name="uid-remindertype"></a>UID (Reminder)
 
-Das Element **UID (ReminderType)** identifiziert das zugeordnete einer Erinnerung im Kalenderelement. 
+Das **UID-Element (Reminder)** identifiziert das Kalenderelement, das einer Erinnerung zugeordnet ist. 
   
 ```XML
 <UID />
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -38,19 +38,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **UID (ReminderType)** -Element identifiziert ein Kalenderelement. 
+Der Textwert des **UID-Elements (Reminder)** identifiziert ein Kalenderelement. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 60cc7094-2e31-49d2-8598-181bcfb5f130
-description: Das MemberCorrelationKey-Element gibt den Bezeichner der ausgewählten Kontakte, die Teil der Instant messaging (IM)-Gruppe sind.
-ms.openlocfilehash: 4e45a86a5ead48576dcab7f3a53e1c3ad72ec173
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MemberCorrelationKey-Element gibt die Bezeichner der Kontakte an, die Teil der Chatgruppe (Instant Messaging) sind.
+ms.openlocfilehash: 8aad013e978f9ddb4fcc31f100010c94f49af139
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830445"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530443"
 ---
 # <a name="membercorrelationkey"></a>MemberCorrelationKey
 
-Das **MemberCorrelationKey** -Element gibt den Bezeichner der ausgewählten Kontakte, die Teil der Instant messaging (IM)-Gruppe sind. 
+Das **MemberCorrelationKey** -Element gibt die Bezeichner der Kontakte an, die Teil der Chatgruppe (Instant Messaging) sind. 
   
 ```XML
 <MemberCorrelationKey>
@@ -41,19 +41,19 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[ImGroup](imgroup.md)
+[Imgroup](imgroup.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

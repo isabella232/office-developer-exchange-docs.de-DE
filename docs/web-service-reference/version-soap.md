@@ -8,23 +8,23 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 47c9216e-6bfe-48c8-a27a-26f70db8e8d5
-description: Das Version-Element stellt eine Beschreibung der Version des Produkts.
-ms.openlocfilehash: b8284880646cb82e6af6715523467021f080b8e7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Version-Element stellt eine Beschreibung der Server Produktversion dar.
+ms.openlocfilehash: d7e6983c837b2818b7d11e1777015ec583968242
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839505"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44531028"
 ---
 # <a name="version-soap"></a>Version (SOAP)
 
-Das **Version** -Element stellt eine Beschreibung der Version des Produkts. 
+Das **Version** -Element stellt eine Beschreibung der Server Produktversion dar. 
   
 ```XML
 <Version/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -41,23 +41,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |Enthält die Version des Servers, der die Anforderung verarbeitet.  <br/> |
+|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |Enthält die Version des Servers, der die Anforderung verarbeitet hat.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert des **Version** -Elements ist eine Beschreibung der Version des Produkts. 
+Der Wert des **Version** -Elements ist eine Beschreibung der Server Produktversion. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **Version** -Element ist im SOAP-Header der Antwort enthalten. 
+Das **Version** -Element ist im SOAP-Header einer Antwort enthalten. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

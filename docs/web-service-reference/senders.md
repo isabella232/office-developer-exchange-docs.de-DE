@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 69d88bb1-397c-4fb8-bd2b-21cccc5bb35d
-description: Das Absender-Element gibt ein Array von Simple Mail Transfer Protocol (SMTP)-Adressen an.
-ms.openlocfilehash: 0794b042c00183d56b2fb2aefe8587e0fdf1344d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Senders-Element gibt ein Array von Simple Mail Transfer Protocol (SMTP) Adressen an.
+ms.openlocfilehash: 125d448be53b2ae297cd1e7249a04da6eda5d960
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831329"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530572"
 ---
 # <a name="senders"></a>Absender
 
-Das **Absender** -Element gibt ein Array von Simple Mail Transfer Protocol (SMTP)-Adressen an. 
+Das **Senders** -Element gibt ein Array von Simple Mail Transfer Protocol (SMTP) Adressen an. 
   
 ```XML
 <Senders>
@@ -42,17 +42,17 @@ Keine.
 
 [FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

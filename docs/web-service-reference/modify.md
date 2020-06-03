@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7a51e9e1-addb-4343-8a22-78f23763c0a8
-description: Das Ändern-Element gibt an, ob ein Client eines Ordners oder Elements ändern kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 29fd2184e83f66a9b7e7db4173a765cee2922be8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Modify-Element gibt an, ob ein Client einen Ordner oder ein Element ändern kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: e7712644ac9c32afab06be49b438ad83bbb31058
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830514"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530415"
 ---
 # <a name="modify"></a>Ändern
 
-Das **Ändern** -Element gibt an, ob ein Client eines Ordners oder Elements ändern kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **Modify** -Element gibt an, ob ein Client einen Ordner oder ein Element ändern kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <Modify>true or false</Modify>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[EffectiveRights](effectiverights.md) <br/> |Die Rechte des Clients basierend auf die berechtigungseinstellungen für das Element oder Ordner enthält. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[EffectiveRights](effectiverights.md) <br/> |Enthält die Rechte des Clients basierend auf den Berechtigungseinstellungen für das Element oder den Ordner. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass ein Client eines Elements oder Ordners ändern kann. 
+Der Textwert **true** gibt an, dass ein Client ein Element oder einen Ordner ändern kann. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -70,5 +70,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Setting Folder-Level Permissions](http://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+[Setting Folder-Level Permissions](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

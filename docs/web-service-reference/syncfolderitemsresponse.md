@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 82fe0644-1756-40b2-955c-20c01110660c
-description: Das SyncFolderItemsResponse-Element definiert eine Antwort auf eine SyncFolderItems an.
-ms.openlocfilehash: e6145a1757d67c1d4a2e50b74204e4a79bdb6df9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SyncFolderItemsResponse-Element definiert eine Antwort auf eine SyncFolderItems-Anforderung.
+ms.openlocfilehash: 694730a5ead8b875da9b3544099d0b20a478a627
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839151"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530232"
 ---
 # <a name="syncfolderitemsresponse"></a>SyncFolderItemsResponse
 
-Das **SyncFolderItemsResponse** -Element definiert eine Antwort auf eine SyncFolderItems an. 
+Das **SyncFolderItemsResponse** -Element definiert eine Antwort auf eine SyncFolderItems-Anforderung. 
   
 ```xml
 <SyncFolderItemsResponse>
@@ -42,23 +42,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange-Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 

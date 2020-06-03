@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 055cdee8-3c7d-47db-9f27-740f4a674729
-description: Das DeleteItem-Element definiert eine Anforderung zum Löschen eines Elements aus einem Postfach im Exchange-Speicher.
-ms.openlocfilehash: de64787750c88c8a47bb69daddc0a1d2ebe8bde9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DeleteItem-Element definiert eine Anforderung zum Löschen eines Elements aus einem Postfach im Exchange-Informationsspeicher.
+ms.openlocfilehash: ed13ee32b487f49740aed80e8705257d3e2e6938
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757932"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529203"
 ---
 # <a name="deleteitem"></a>DeleteItem
 
-Das **DeleteItem** -Element definiert eine Anforderung zum Löschen eines Elements aus einem Postfach im Exchange-Speicher. 
+Das **DeleteItem** -Element definiert eine Anforderung zum Löschen eines Elements aus einem Postfach im Exchange-Informationsspeicher. 
   
 ```XML
 <DeleteItem DeleteType="" SendMeetingCancellations="" AffectedTaskOccurrences="" SuppressReadReceipts="">
@@ -38,59 +38,59 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**DeleteType** <br/> |Beschreibt, wie ein Element gelöscht wird. Dieses Attribut ist erforderlich.  <br/> |
-|**"SendMeetingCancellations"** <br/> |Beschreibt, ob eine Kalender Element Löschung an die Teilnehmer weitergeleitet wird. Dieses Attribut ist erforderlich, wenn die Elemente im Kalender gelöscht werden. Dieses Attribut ist optional, wenn nichtkalenderelemente gelöscht werden.  <br/> |
-|**"AffectedTaskOccurrences"** <br/> |Beschreibt, ob eine Aufgabeninstanz oder ein Master-Shape Aufgabe durch eine [DeleteItem Vorgang](deleteitem-operation.md)gelöscht wird. Dieses Attribut ist erforderlich, wenn Vorgänge gelöscht werden. Dieses Attribut ist optional, wenn nicht Aufgabenelementen gelöscht werden.  <br/> |
-|**SuppressReadReceipts** <br/> |Gibt an, ob lesebestätigungen für das gelöschte Element unterdrückt werden. Der Textwert **true**, gibt an, dass die lesebestätigungen unterdrückt werden. Der Wert **false** gibt an, dass die lesebestätigungen an den Absender gesendet werden. Dieses Attribut ist optional.  <br/> |
+|**Deletetypeharddelete** <br/> |Beschreibt, wie ein Element gelöscht wird. Dieses Attribut ist erforderlich.  <br/> |
+|**SendMeetingCancellations** <br/> |Beschreibt, ob ein Löschen eines Kalenderelements an die Teilnehmer kommuniziert wird. Dieses Attribut ist erforderlich, wenn Kalenderelemente gelöscht werden. Dieses Attribut ist optional, wenn nicht Kalenderelemente gelöscht werden.  <br/> |
+|**AffectedTaskOccurrences** <br/> |Beschreibt, ob eine Aufgabeninstanz oder ein Aufgaben Master durch einen [DeleteItem-Vorgang](deleteitem-operation.md)gelöscht wird. Dieses Attribut ist erforderlich, wenn Aufgaben gelöscht werden. Dieses Attribut ist optional, wenn nicht Aufgabenelemente gelöscht werden.  <br/> |
+|**SuppressReadReceipts** <br/> |Gibt an, ob Lesebestätigungen für das gelöschte Element unterdrückt werden. Der Textwert **true**, gibt an, dass die Lesebestätigungen unterdrückt werden. Der Wert **false** gibt an, dass die Lesebestätigungen an den Absender gesendet werden. Dieses Attribut ist optional.  <br/> |
    
 #### <a name="deletetype-attribute"></a>DeleteType-Attribut
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |HardDelete  <br/> |Ein Element wird dauerhaft aus dem Speicher entfernt.  <br/> |
-|SoftDelete  <br/> |Ein Element wird verschoben, um die Dumpster Wenn die Dumpster ist aktiviert.  <br/> |
-|MoveToDeletedItems  <br/> |Ein Element wird in den Ordner Gelöschte Objekte verschoben.  <br/> |
+|SoftDelete  <br/> |Ein Element wird in den Papierkorb verschoben, wenn der Papierkorb aktiviert ist.  <br/> |
+|MoveToDeletedItems  <br/> |Ein Element wird in den Ordner "Gelöschte Elemente" verschoben.  <br/> |
    
-#### <a name="sendmeetingcancellations-attribute"></a>Attribut "SendMeetingCancellations"
+#### <a name="sendmeetingcancellations-attribute"></a>SendMeetingCancellations-Attribut
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|SendToNone  <br/> |Ein Kalenderelement wird gelöscht, ohne eine Absage senden.  <br/> |
-|SendOnlyToAll  <br/> |Ein Kalenderelement wird gelöscht und eine Absage an alle Teilnehmer gesendet.  <br/> |
-|SendToAllAndSaveCopy  <br/> |Ein Kalenderelement wird gelöscht und eine Absage an alle Teilnehmer gesendet. Eine Kopie der Nachricht Abbruch wird im Ordner "Gesendete Elemente" gespeichert.  <br/> |
+|SendToNone  <br/> |Ein Kalenderelement wird gelöscht, ohne eine Abbruch Nachricht zu senden.  <br/> |
+|SendOnlyToAll  <br/> |Ein Kalenderelement wird gelöscht, und eine Abbruchmeldung wird an alle Teilnehmer gesendet.  <br/> |
+|SendToAllAndSaveCopy  <br/> |Ein Kalenderelement wird gelöscht, und eine Abbruchmeldung wird an alle Teilnehmer gesendet. Eine Kopie der Abbruch Nachricht wird im Ordner "Gesendete Elemente" gespeichert.  <br/> |
    
-#### <a name="affectedtaskoccurrences-attribute"></a>Attribut "AffectedTaskOccurrences"
+#### <a name="affectedtaskoccurrences-attribute"></a>AffectedTaskOccurrences-Attribut
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|AllOccurrences  <br/> |Anforderung für das Element löschen Löscht die Aufgabe Master-Shape, und daher alle Aufgabenserien, sind der master Aufgabe zugeordnet.  <br/> |
-|SpecifiedOccurrenceOnly  <br/> |Anforderung für das Element löschen Löscht nur bestimmte Vorkommen eines Vorgangs.  <br/> |
+|Allvorkommen  <br/> |Eine Delete Item-Anforderung löscht den hauptvorgang und somit alle wiederkehrenden Vorgänge, die dem hauptvorgang zugeordnet sind.  <br/> |
+|SpecifiedOccurrenceOnly  <br/> |Eine Delete Item-Anforderung löscht nur bestimmte Vorkommen eines Vorgangs.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Artikelnummern ein.](itemids.md) <br/> |Enthält ein Array von Elementen, Vorkommen Elemente und master Terminserien aus einem Postfach im Exchange-Speicher zu löschen. Die [DeleteItem Vorgang](deleteitem-operation.md) kann auf einem beliebigen Element ausgeführt werden.  <br/> |
+|[ItemIds](itemids.md) <br/> |Enthält ein Array von Elementen, vorkommen-Elementen und wiederkehrenden Master Elementen, die aus einem Postfach im Exchange-Informationsspeicher gelöscht werden sollen. Der [DeleteItem-Vorgang](deleteitem-operation.md) kann für beliebige Elementtypen ausgeführt werden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Optionen **MoveToDeletedItems** und **HardDelete** sind transaktional, was bedeutet, dass jeweils ein Webdienstaufruf abgeschlossen ist, die Datenbank hat das Element in den Ordner Gelöschte Objekte verschoben oder dauerhaft entfernt das Element aus der Exchange-Datenbank. Dieses Verhalten gilt für MicrosoftExchange Server 2007 und Exchange Server 2010. 
+Die **MoveToDeletedItems** -und **HardDelete** -Optionen sind transaktional, was bedeutet, dass die Datenbank zum Zeitpunkt des Abschlusses eines Webdienstaufrufs das Element in den Ordner "Gelöschte Elemente" verschoben oder das Element endgültig aus der Exchange-Datenbank entfernt hat. Dieses Verhalten ist für Microsoft Exchange Server 2007 und Exchange Server 2010 identisch. 
   
-Die Option **SoftDelete** funktioniert anders für andere Versionen von Exchange. **SoftDelete** für Exchange 2007 legt etwas auf das Element, das in der Exchange-Datenbank angibt, die das Element verschoben werden die Dumpster Ordner zu einem unbestimmten Zeitpunkt in der Zukunft. **SoftDelete** für Exchange 2010 sofort verschoben wird das Element, das die Dumpster. **SoftDelete** ist keine Option zum Ordner löschen. **SoftDelete** durchqueren Suchvorgänge für Elemente und Ordner werden keine Ergebnisse zurückgegeben. 
+Die Option **SoftDelete** kann für unterschiedliche Zielversionen von Exchange anders verwendet werden. **SoftDelete** für Exchange 2007 legt ein Bit für das Element fest, das der Exchange-Datenbank angibt, dass das Element zu einem bestimmten Zeitpunkt in der Zukunft in den Ordner "Papierkorb" verschoben wird. **SoftDelete** für Exchange 2010 verschiebt das Element sofort in den Papierkorb. **SoftDelete** ist keine Option für das Löschen von Ordnern. **SoftDelete** Traversal sucht nach Elementen und Ordnern werden keine Ergebnisse zurückgegeben. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

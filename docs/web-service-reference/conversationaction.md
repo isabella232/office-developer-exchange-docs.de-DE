@@ -1,5 +1,5 @@
 ---
-title: ConversationAction
+title: Unterhaltung
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9ecea41a-3860-4569-8e9b-284b451fc4e0
-description: Das ConversationAction-Element enthält eine einzelne Aktion auf einem einzelnen Gespräch angewendet werden soll.
-ms.openlocfilehash: 45cd6df3aba94062bd5aa0ddf9367e8cf118dc6b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Conversation Action-Element enthält eine einzelne Aktion, die auf eine einzelne Unterhaltung angewendet werden soll.
+ms.openlocfilehash: cb7d874f787b105d5185749dfaf1e940d2411d89
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757695"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529252"
 ---
-# <a name="conversationaction"></a>ConversationAction
+# <a name="conversationaction"></a>Unterhaltung
 
-Das **ConversationAction** -Element enthält eine einzelne Aktion auf einem einzelnen Gespräch angewendet werden soll. 
+Das **Conversation** Action-Element enthält eine einzelne Aktion, die auf eine einzelne Unterhaltung angewendet werden soll. 
   
 [ApplyConversationAction](applyconversationaction.md)
   
 [ConversationActions](conversationactions.md)
   
-[ConversationAction](conversationaction.md)
+[Unterhaltung](conversationaction.md)
   
 ```XML
 <ConversationAction>
@@ -57,47 +57,47 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Aktion (ConversationActionTypeType)](action-conversationactiontypetype.md) <br/> |Enthält die Aktion auf die Unterhaltung vom [ConversationId](conversationid.md) -Element angegeben. Dieses Element muss vorhanden sein.  <br/> |
-|[ConversationId](conversationid.md) <br/> |Enthält den Bezeichner der Unterhaltung, die die Aktion durch auf Elemente in der Unterhaltung angewendet [Action (ConversationActionTypeType)](action-conversationactiontypetype.md) -Elements angegeben haben. Dieses Element muss vorhanden sein.  <br/> |
-|[ContextFolderId](contextfolderid.md) <br/> |Gibt den Ordner, der für Aktionen gerichtet ist, die Ordner zu verwenden. Dieses Element muss beim Kopieren, löschen, verschieben und Festlegen von Zustand "gelesen" für Unterhaltungselemente in einem Zielordner vorhanden sein.  <br/> |
-|[ConversationLastSyncTime](conversationlastsynctime.md) <br/> |Enthält das Datum und die Uhrzeit, zu der der letzten eine Unterhaltung Synchronisierung. Dieses Element muss vorhanden sein, wenn Sie versuchen, um alle Elemente in einer Unterhaltung zu löschen, die bis zu der angegebenen Zeit empfangen wurden.  <br/> |
-|[ProcessRightAway](processrightaway.md) <br/> |Gibt an, ob die Antwort gesendet wird, sobald die Aktion startet die Verarbeitung auf dem Server oder gibt an, ob die Antwort gesendet wird, nachdem der Vorgang abgeschlossen wurde. Dieses Element muss vorhanden sein, damit die Antwort für die angeforderte Aktion asynchronen gesendet werden.  <br/> |
-|[DestinationFolderId](destinationfolderid.md) <br/> |Gibt den Zielordner für die Kopie an, und verschieben Sie Aktionen.  <br/> |
-|[Kategorien](categories-ex15websvcsotherref.md) <br/> |Enthält eine Auflistung von Zeichenfolgen, die die Kategorien zu identifizieren, zu denen Elemente in einer Unterhaltung gehören.  <br/> |
-|[EnableAlwaysDelete](enablealwaysdelete.md) <br/> |Gibt ein Flag, das für alle neuen Elemente in einer Unterhaltung löschen kann.  <br/> |
+|[Action (ConversationActionTypeType)](action-conversationactiontypetype.md) <br/> |Enthält die Aktion, die für die durch das [Conversation](conversationid.md) -Element angegebene Konversation ausgeführt werden soll. Dieses Element muss vorhanden sein.  <br/> |
+|[ConversationId](conversationid.md) <br/> |Enthält den Bezeichner der Unterhaltung, für die die durch das [Action-Element (ConversationActionTypeType)](action-conversationactiontypetype.md) angegebene Aktion auf Elemente in der Unterhaltung angewendet wird. Dieses Element muss vorhanden sein.  <br/> |
+|[ContextFolderId](contextfolderid.md) <br/> |Gibt den Ordner an, der für Aktionen vorgesehen ist, die Ordner verwenden. Dieses Element muss beim Kopieren, löschen, verschieben und Festlegen des Lese Zustands für Unterhaltungselemente in einem Zielordner vorhanden sein.  <br/> |
+|[ConversationLastSyncTime](conversationlastsynctime.md) <br/> |Enthält das Datum und die Uhrzeit, zu der eine Unterhaltung zuletzt synchronisiert wurde. Dieses Element muss vorhanden sein, wenn Sie versuchen, alle Elemente in einer Unterhaltung zu löschen, die bis zur angegebenen Zeit empfangen wurden.  <br/> |
+|[ProcessRightAway](processrightaway.md) <br/> |Gibt an, ob die Antwort gesendet wird, sobald die Aktion auf dem Server verarbeitet wird oder ob die Antwort gesendet wird, nachdem die Aktion abgeschlossen wurde. Dieses Element muss vorhanden sein, damit die Antwort asynchron an die angeforderte Aktion gesendet werden kann.  <br/> |
+|[DestinationFolderId](destinationfolderid.md) <br/> |Gibt den Zielordner für die Aktionen kopieren und verlegen an.  <br/> |
+|[Kategorien](categories-ex15websvcsotherref.md) <br/> |Enthält eine Auflistung von Zeichenfolgen, die die Kategorien identifizieren, zu denen Elemente in einer Unterhaltung gehören.  <br/> |
+|[EnableAlwaysDelete](enablealwaysdelete.md) <br/> |Gibt ein Flag an, das das Löschen für alle neuen Elemente in einer Unterhaltung ermöglicht.  <br/> |
 |[IsRead](isread.md) <br/> |Gibt an, ob eine Nachricht gelesen wurde.  <br/> |
-|[DeleteType](deletetype.md) <br/> |Gibt an, wie Elemente in einer Unterhaltung gelöscht werden.  <br/> |
+|[Deletetypeharddelete](deletetype.md) <br/> |Gibt an, wie Elemente in einer Unterhaltung gelöscht werden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ConversationActions](conversationactions.md) <br/> |Enthält eine Auflistung von Unterhaltungen und die Aktionen darauf anwenden.  <br/> |
+|[ConversationActions](conversationactions.md) <br/> |Enthält eine Auflistung von Unterhaltungen und die Aktionen, die auf diese angewendet werden sollen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-**Text-Elementwerte ConversationAction**
+**Textwerte des Conversation-Elementtexts**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|AlwaysCategorize  <br/> |Kategorisieren Sie der Unterhaltung immer.  <br/> |
-|AlwaysDelete  <br/> |Löschen Sie die Unterhaltung immer.  <br/> |
-|AlwaysMove  <br/> |Die Unterhaltung verschoben immer.  <br/> |
-|Löschen  <br/> |Löschen Sie die Unterhaltung an.  <br/> |
-|Verschieben  <br/> |Verschieben der Unterhaltung.  <br/> |
-|Kopie  <br/> |Kopieren Sie die Unterhaltung.  <br/> |
-|SetReadState  <br/> |Legen Sie den Zustand "gelesen" der Unterhaltung.  <br/> |
-|SetRetentionPolicy  <br/> |Legen Sie die Aufbewahrungsrichtlinie für die Unterhaltung.  <br/> |
+|AlwaysCategorize  <br/> |Unterhaltung immer kategorisieren.  <br/> |
+|Alwaysdeleteolalwaysdelete  <br/> |Die Unterhaltung wird immer gelöscht.  <br/> |
+|AlwaysMove  <br/> |Die Unterhaltung immer verlagern.  <br/> |
+|Löschen  <br/> |Löschen Sie die Unterhaltung.  <br/> |
+|Move  <br/> |Die Unterhaltung zu verlegen.  <br/> |
+|Copy  <br/> |Kopieren Sie die Unterhaltung.  <br/> |
+|SetReadState  <br/> |Legen Sie den Lesestatus der Unterhaltung fest.  <br/> |
+|SetRetentionPolicy  <br/> |Legen Sie die Aufbewahrungsrichtlinie für die Unterhaltung fest.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

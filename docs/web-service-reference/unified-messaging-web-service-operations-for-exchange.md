@@ -1,5 +1,5 @@
 ---
-title: Unified Messaging Web Service-Vorgänge für Exchange
+title: Unified Messaging-Webdienstvorgänge für Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,43 +10,43 @@ api_name:
 api_type:
 - schema
 ms.assetid: d92455bd-24e8-4255-9f93-2bdeff00d42d
-description: Hier finden Sie im Exchange Referenzinformationen für Unified Messaging Web Service-Vorgänge.
-ms.openlocfilehash: bd86a4ab2de58e5f04a8d37f17196040bcf38b97
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Hier finden Sie Referenzinformationen zu den Unified Messaging-Webdienstvorgängen in Exchange.
+ms.openlocfilehash: b13ca2fbc44846db0bc98b3961916ba5d0872310
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354358"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529714"
 ---
-# <a name="unified-messaging-web-service-operations-for-exchange"></a>Unified Messaging Web Service-Vorgänge für Exchange
+# <a name="unified-messaging-web-service-operations-for-exchange"></a>Unified Messaging-Webdienstvorgänge für Exchange
 
-Hier finden Sie im Exchange Referenzinformationen für Unified Messaging Web Service-Vorgänge.
+Hier finden Sie Referenzinformationen zu den Unified Messaging-Webdienstvorgängen in Exchange.
   
-Der Unified Messaging-Webdienst bietet viele Vorgänge, mit die Clientanwendungen zum Lesen und Unified Messaging-Eigenschaften ändern, wiedergeben Voice Mail-Nachrichten, Grußformeln aufzeichnen und Postfachelemente über Telefoniegeräte bestimmen können. Die Artikel in diesem Abschnitt enthalten Informationen über die allgemeine Struktur der Anfrage und-Antwort Nachrichten für die Vorgänge. Diese Artikel enthalten Beispiele, in denen allgemeine Nachricht Strukturen anzeigen. In diesen Beispielen können Sie erfahren Sie, was Sie mit einem Unified Messaging-webdienstanforderung möglich.
+Der Unified Messaging-Webdienst stellt zahlreiche Vorgänge bereit, mit denen Clientanwendungen Unified Messaging-Eigenschaften lesen und ändern, Voicemail-Nachrichten wiedergeben, Begrüßungen aufzeichnen und Postfachelemente über Telefongeräte diktieren können. Die Artikel in diesem Abschnitt enthalten Informationen zur Gesamtstruktur der Anforderungs-und Antwortnachrichten für die Vorgänge. Diese Artikel enthalten Beispiele, die allgemeine nachrichtenstrukturen anzeigen. Anhand dieser Beispiele erfahren Sie, was Sie mit einer Unified Messaging-Webdienstanforderung tun können.
   
 > [!NOTE]
-> Exchange beginnend mit Exchange 2010-Versionen wird empfohlen, dass Sie die Unified Messaging-Vorgänge verwenden, die in der [Exchange-Webdienste (EWS)](http://msdn.microsoft.com/library/60285497-0c4e-4e51-84e1-34dd6d89a5d8%28Office.15%29.aspx) anstelle der Unified Messaging-Webdienst, aus den folgenden Gründen verfügbar sind: 
-> - EWS-basierte Unified Messaging-Funktionen haben erstklassige Unterstützung in die EWS Managed API. 
-> - In Versionen von Exchange, beginnend mit Exchange 2010 werden neue Unified Messaging-Features für EWS jedoch nicht für den Unified Messaging-Webdienst hinzugefügt. 
+> Für Exchange-Versionen, die mit Exchange 2010 beginnen, wird empfohlen, dass Sie die Unified Messaging-Vorgänge verwenden, die in [Exchange-Webdienste](https://msdn.microsoft.com/library/60285497-0c4e-4e51-84e1-34dd6d89a5d8%28Office.15%29.aspx) anstelle des Unified Messaging-Webdiensts verfügbar sind, aus den folgenden Gründen: 
+> - Die EWS-basierten Unified Messaging-Funktionen haben in der verwaltete EWS-API eine erstklassige Unterstützung. 
+> - In Exchange-Versionen, die mit Exchange 2010 beginnen, werden dem EWS neue Unified Messaging-Features hinzugefügt, jedoch nicht dem Unified Messaging-Webdienst. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 <a name="bk_InThisSection"> </a>
 
-- [Disconnect-Vorgange (UM-Webdienst)](disconnect-operation-um-web-service.md)    
-- [GetCallInfo-Vorgang (UM-Webdienst)](getcallinfo-operation-um-web-service.md)   
-- [GetUMProperties-Vorgang (UM-Webdienst)](getumproperties-operation-um-web-service.md)   
-- [IsUMEnabled-Vorgang (UM-Webdienst)](isumenabled-operation-um-web-service.md)   
-- [PlayOnPhone-Vorgang (UM-Webdienst)](playonphone-operation-um-web-service.md)   
-- [PlayOnPhoneGreeting-Vorgang (UM-Webdienst)](playonphonegreeting-operation-um-web-service.md)   
-- [ResetPIN-Vorgang (UM-Webdienst)](resetpin-operation-um-web-service.md)   
-- [SetMissedCallNotificationEnabled-Vorgang (UM-Webdienst)](setmissedcallnotificationenabled-operation-um-web-service.md)  
-- [SetOofStatus-Vorgang (UM-Webdienst)](setoofstatus-operation-um-web-service.md)    
-- [SetPlayOnPhoneDialString-Vorgang (UM-Webdienst)](setplayonphonedialstring-operation-um-web-service.md)   
-- [SetTelephoneAccessFolderEmail-Vorgang (UM-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md)
+- [Trennungsvorgang (um-Webdienst)](disconnect-operation-um-web-service.md)    
+- [GetCallInfo-Vorgang (um-Webdienst)](getcallinfo-operation-um-web-service.md)   
+- [GetUMProperties-Vorgang (um-Webdienst)](getumproperties-operation-um-web-service.md)   
+- [IsUMEnabled-Vorgang (um-Webdienst)](isumenabled-operation-um-web-service.md)   
+- [PlayOnPhone-Vorgang (um-Webdienst)](playonphone-operation-um-web-service.md)   
+- [PlayOnPhoneGreeting-Vorgang (um-Webdienst)](playonphonegreeting-operation-um-web-service.md)   
+- [ResetPIN-Vorgang (um-Webdienst)](resetpin-operation-um-web-service.md)   
+- [SetMissedCallNotificationEnabled-Vorgang (um-Webdienst)](setmissedcallnotificationenabled-operation-um-web-service.md)  
+- [SetOofStatus-Vorgang (um-Webdienst)](setoofstatus-operation-um-web-service.md)    
+- [SetPlayOnPhoneDialString-Vorgang (um-Webdienst)](setplayonphonedialstring-operation-um-web-service.md)   
+- [SetTelephoneAccessFolderEmail-Vorgang (um-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md)
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Unified Messaging-webdienstreferenz für Exchange](unified-messaging-web-service-reference-for-exchange.md)
+- [Unified Messaging-Webdienst Referenz für Exchange](unified-messaging-web-service-reference-for-exchange.md)
 - [AutoErmittlung für Exchange](../exchange-web-services/autodiscover-for-exchange.md)
 - [Erste Schritte mit Webdiensten in Exchange](../exchange-web-services/start-using-web-services-in-exchange.md)
     

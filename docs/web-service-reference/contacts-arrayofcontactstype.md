@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a2c1e833-5f8c-438d-bad7-bb5dcc29ca9e
-description: Kontakte-Element gibt ein Array von Kontakten.
-ms.openlocfilehash: 01aab90d28c5d9706a45a2e42be1e60221394e80
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Contacts-Element gibt ein Array von Kontakten an.
+ms.openlocfilehash: eeb202f41fcf5ec7aad12a8a2b8e6dd539b3dba4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757618"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529441"
 ---
 # <a name="contacts-arrayofcontactstype"></a>Kontakte (ArrayOfContactsType)
 
-**Kontakte** -Element gibt ein Array von Kontakten. 
+Das **Contacts** -Element gibt ein Array von Kontakten an. 
   
 ```XML
 <Contacts>
@@ -38,7 +38,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Kontakt (Kontakttyp den)](contact-contacttype.md) <br/> |Gibt einen Kontakt in der einheitliche Kontaktspeicher an.  <br/> |
+|[Kontakt (ContactType)](contact-contacttype.md) <br/> |Gibt einen Kontakt im einheitlichen Kontaktspeicher an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -46,19 +46,19 @@ Keine.
 |:-----|:-----|
 |[EntityExtractionResult](entityextractionresult.md) <br/> |Gibt die **EntityExtractionResult** -Eigenschaft eines Elements an.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

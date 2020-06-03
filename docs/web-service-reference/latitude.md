@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: aefecfe3-bf4d-4efe-833b-cdd15ecd1f8c
-description: Das Breitengrad-Element gibt die Breite des Speicherorts für die zugeordnete Postanschrift.
-ms.openlocfilehash: 0fac298851e0218e896caacbc84efffc0fda14ab
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Latitude-Element gibt den Breitengrad des Speicherorts der zugeordneten Postadresse an.
+ms.openlocfilehash: 7038ca04f09eb88669a945e179806d8a0cfff1da
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830208"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530768"
 ---
 # <a name="latitude"></a>Latitude
 
-Das **Breitengrad** -Element gibt die Breite des Speicherorts für die zugeordnete Postanschrift. 
+Das **Latitude** -Element gibt den Breitengrad des Speicherorts der zugeordneten Postadresse an. 
   
 ```XML
 <Latitude></Latitude>
 ```
 
- **Double**
+ **Doppel**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -38,13 +38,13 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Wert (PersonaPostalAddressType)](value-personapostaladdresstype.md) | [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
+[Wert (PersonaPostalAddressType)](value-personapostaladdresstype.md)  |  [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Breitengrad** -Elements ist die Breite des der zugeordneten Postadresse. 
+Der Textwert des **Latitude** -Elements entspricht dem Breitengrad der zugeordneten Postadresse. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 552932fc-b3b4-486e-8d73-32c0bb10bd68
-description: Das ModifiedOccurrences-Element enthält ein Array von sich wiederholenden Kalender Element vorkommen, die geändert wurden, damit diese als das Master-Shape Recurrence-Element unterschiedlich sind.
-ms.openlocfilehash: 53f60740bcaa2de6713e1b6a3d2874153285645a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ModifiedOccurrences-Element enthält ein Array von wiederkehrenden Kalenderelement vorkommen, die geändert wurden, sodass Sie sich vom Serienmasterelement unterscheiden.
+ms.openlocfilehash: d599e3d232bfffc5bedd37f3dae4d8b10a82ffde
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830472"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530422"
 ---
 # <a name="modifiedoccurrences"></a>ModifiedOccurrences
 
-Das **ModifiedOccurrences** -Element enthält ein Array von sich wiederholenden Kalender Element vorkommen, die geändert wurden, damit diese als das Master-Shape Recurrence-Element unterschiedlich sind. 
+Das **ModifiedOccurrences** -Element enthält ein Array von wiederkehrenden Kalenderelement vorkommen, die geändert wurden, sodass Sie sich vom Serienmasterelement unterscheiden. 
   
 ```xml
 <ModifiedOccurrences>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Vorkommen](occurrence.md) <br/> |Stellt ein einzelnes geändertes Vorkommen des ein wiederkehrendes Kalenderelement.  <br/> |
+|[Vorkommen](occurrence.md) <br/> |Stellt ein einzelnes geändertes Vorkommen eines wiederkehrenden Kalenderelements dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -51,17 +51,17 @@ Keine.
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element ist gültig, wenn [CalendarItemType](calendaritemtype.md) den Wert RecurringMaster hat. 
+Dieses Element ist gültig, wenn [CalendarItemType](calendaritemtype.md) den RecurringMaster-Wert aufweist. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

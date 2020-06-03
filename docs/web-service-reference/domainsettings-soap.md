@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: f3d37f5a-c9ea-4ed9-a011-94d33bda64d1
-description: Das Element DomainSettings stellt die domäneneinstellungen, die in einer autoermittlungsanforderung für die gesendet oder von einer Antwort der AutoErmittlung zurückgegeben wurden.
-ms.openlocfilehash: 961051399dc8babd8cba6eeaf43456071d0f40a6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DomainSettings-Element stellt die Domäneneinstellungen dar, die in einer Auto Ermittlungsanforderung übermittelt oder von einer Auto Ermittlungs Antwort zurückgegeben wurden.
+ms.openlocfilehash: 67e3753b0cf5c7c653664ff087f697ce7ae2b7a4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758108"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530698"
 ---
 # <a name="domainsettings-soap"></a>DomainSettings (SOAP)
 
-Das Element **DomainSettings** stellt die domäneneinstellungen, die in einer autoermittlungsanforderung für die gesendet oder von einer Antwort der AutoErmittlung zurückgegeben wurden. 
+Das **DomainSettings** -Element stellt die Domäneneinstellungen dar, die in einer Auto Ermittlungsanforderung übermittelt oder von einer Auto Ermittlungs Antwort zurückgegeben wurden. 
   
 ```XML
 <DomainSettings>
@@ -39,7 +39,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DomainSetting (SOAP)](domainsetting-soap.md) <br/> |Enthält domäneneinstellungen für die, die durch eine Anforderung [(SOAP) GetDomainSettings-Vorgang](getdomainsettings-operation-soap.md) zurückgegeben werden.  <br/> |
+|[DomainSetting (SOAP)](domainsetting-soap.md) <br/> |Enthält Domäneneinstellungen, die von einer [GetDomainSettings-Vorgang (SOAP)-](getdomainsettings-operation-soap.md) Anforderung zurückgegeben werden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -51,13 +51,13 @@ Keine.
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

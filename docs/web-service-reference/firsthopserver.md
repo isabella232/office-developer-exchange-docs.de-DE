@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 79c89d74-b0ad-4643-9177-b75d3baa3b67
-description: Das FirstHopServer-Element enthält den Namen des Servers in der Gesamtstruktur, die zuerst die Nachricht akzeptiert.
-ms.openlocfilehash: 1852b95f94b174b57c8175a45035a97686384c20
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FirstHopServer-Element enthält den Namen des Servers in der Gesamtstruktur, der die Nachricht zuerst akzeptiert hat.
+ms.openlocfilehash: 46b494ecd112359ecbb3a80545cefb652bbc2d47
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758480"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530246"
 ---
 # <a name="firsthopserver"></a>FirstHopServer
 
-Das **FirstHopServer** -Element enthält den Namen des Servers in der Gesamtstruktur, die zuerst die Nachricht akzeptiert. 
+Das **FirstHopServer** -Element enthält den Namen des Servers in der Gesamtstruktur, der die Nachricht zuerst akzeptiert hat. 
   
 ```xml
 <FirstHopServer/>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Ein einzelnes Nachricht Ergebnis für ein [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) -Element enthält.  <br/> |
+|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Enthält ein einzelnes Nachrichten Ergebnis für ein [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) -Element.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

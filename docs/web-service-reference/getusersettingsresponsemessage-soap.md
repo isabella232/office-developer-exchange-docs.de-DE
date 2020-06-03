@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: f004e2ef-4a33-49f0-b7b8-c2fd5235bf6a
-description: Das GetUserSettingsResponseMessage-Element definiert eine Antwort auf eine GetUserSettings-Vorgang (SOAP) an.
-ms.openlocfilehash: f2200bd6571463e285cec4965d8651ca00ddf3ad
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetUserSettingsResponseMessage-Element definiert eine Antwort auf eine GetUserSettings-Vorgang (SOAP)-Anforderung.
+ms.openlocfilehash: 0defabcd554d9aad77f8ca1e826cf57cb7cb61ae
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829708"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530141"
 ---
 # <a name="getusersettingsresponsemessage-soap"></a>GetUserSettingsResponseMessage (SOAP)
 
-Das **GetUserSettingsResponseMessage** -Element definiert eine Antwort auf eine [GetUserSettings-Vorgang (SOAP)](getusersettings-operation-soap.md) an. 
+Das **GetUserSettingsResponseMessage** -Element definiert eine Antwort auf eine [GetUserSettings-Vorgang (SOAP)-](getusersettings-operation-soap.md) Anforderung. 
   
 ```XML
 <GetUserSettingsResponseMessage>
@@ -38,19 +38,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Antwort (SOAP)](response-soap.md) <br/> |Enthält die Antwort auf eine Anforderung [GetUserSettings-Vorgang (SOAP)](getusersettings-operation-soap.md) .  <br/> |
+|[Antwort (SOAP)](response-soap.md) <br/> |Enthält die Antwort auf eine [GetUserSettings-Vorgang (SOAP)-](getusersettings-operation-soap.md) Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

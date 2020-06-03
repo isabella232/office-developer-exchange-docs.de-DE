@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: af0d7435-fef6-4f0d-bd22-00e3fa576315
-description: Das Manifest Element enthält die base64-codierten app-Manifestdatei.
-ms.openlocfilehash: 7388e40a96a082666519d1c67af5b218b2b9ab01
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Manifest-Element enthält die Base64-codierte App-Manifestdatei.
+ms.openlocfilehash: faac517bf8a8f03c6ae8abffddaf10421eed1699
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830343"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530537"
 ---
 # <a name="manifest"></a>Manifest
 
-Das **Manifest** -Element enthält die base64-codierten app-Manifestdatei. 
+Das **Manifest** -Element enthält die Base64-codierte App-Manifestdatei. 
   
 ```XML
 <Manifest></Manifest>
@@ -38,13 +38,13 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Manifeste](manifests.md) | [InstallApp](installapp.md) | [ClientExtension](clientextension.md)
+[Manifeste](manifests.md)  |  [InstallApp](installapp.md)  |  [Client Extension](clientextension.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der Manifest-Element ist ein ASCII-Darstellung der binary base64-codierte Format der Client-app-Manifestdatei.
+Der Textwert des Manifest-Elements ist eine ASCII-Darstellung der Base64-binär codierten Form der Client-App-Manifestdatei.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

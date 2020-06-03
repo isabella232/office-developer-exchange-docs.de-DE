@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3ff9d15a-7220-4785-ae6b-583a7eb82005
-description: Das FolderIds-Element enthält ein Array von Bezeichnern für Ordner, die zum Identifizieren der Ordner kopieren, verschieben, abrufen, löschen oder Überwachen von Ereignissen verwendet werden.
-ms.openlocfilehash: 911a74ca778ee988c270c16c67620a40656d82d8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FolderIds-Element enthält ein Array von Ordner Bezeichnern, mit denen Ordner identifiziert werden, die zum Kopieren, verlegen, abrufen, löschen oder Überwachen von Ereignisbenachrichtigungen verwendet werden.
+ms.openlocfilehash: ff0476f72c7da088bd2b39f58ab560dcc82197e4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758507"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530993"
 ---
 # <a name="folderids"></a>FolderIds
 
-Das **FolderIds** -Element enthält ein Array von Bezeichnern für Ordner, die zum Identifizieren der Ordner kopieren, verschieben, abrufen, löschen oder Überwachen von Ereignissen verwendet werden. 
+Das **FolderIds** -Element enthält ein Array von Ordner Bezeichnern, mit denen Ordner identifiziert werden, die zum Kopieren, verlegen, abrufen, löschen oder Überwachen von Ereignisbenachrichtigungen verwendet werden. 
   
 ```xml
 <FolderIds>
@@ -43,39 +43,39 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Enthält den Schlüssel-ID und Ändern eines Ordners.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifiziert die Microsoft Exchange Server-Ordner, die nach Namen verwiesen werden können.  <br/> |
+|[FolderId](folderid.md) <br/> |Enthält den Bezeichner und den Änderungsschlüssel eines Ordners.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifiziert Exchange Server Ordner, auf die über den Namen verwiesen werden kann.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetFolder](getfolder.md) <br/> |Definiert eine Anforderung an einen Ordner aus dem Exchange-Speicher abzurufen.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:`/GetFolder` <br/> |
-|[DeleteFolder](deletefolder.md) <br/> |Definiert eine Anforderung zum Löschen von Ordnern aus dem Exchange-Speicher.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:`/DeleteFolder` <br/> |
-|[EmptyFolder](emptyfolder.md) <br/> |Definiert eine Anforderung zum Löschen von Ordnern aus dem Exchange-Speicher.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:`/EmptyFolder` <br/> |
-|[MoveFolder](movefolder.md) <br/> |Definiert eine Anforderung an einen Ordner im Exchange-Speicher zu verschieben.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:`/MoveFolder` <br/> |
-|[CopyFolder](copyfolder.md) <br/> |Definiert eine Anforderung an einen Ordner im Exchange-Speicher zu kopieren.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:`/CopyFolder` <br/> |
-|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Stellt ein Abonnement für ein Benachrichtigungsabonnement Push-Ereignis.  <br/> |
-|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |Stellt ein Abonnement für ein Benachrichtigungsabonnement Pull-Ereignis.  <br/> |
+|[GetFolder](getfolder.md) <br/> |Definiert eine Anforderung zum Abrufen eines Ordners aus dem Exchange-Informationsspeicher.  <br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/GetFolder` <br/> |
+|[DeleteFolder](deletefolder.md) <br/> |Definiert eine Anforderung zum Löschen von Ordnern aus dem Exchange-Informationsspeicher.  <br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/DeleteFolder` <br/> |
+|[EmptyFolder](emptyfolder.md) <br/> |Definiert eine Anforderung zum Löschen von Ordnern aus dem Exchange-Informationsspeicher.  <br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/EmptyFolder` <br/> |
+|[MoveFolder](movefolder.md) <br/> |Definiert eine Anforderung zum Migrieren eines Ordners in der Exchange-Informationsspeicher.  <br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/MoveFolder` <br/> |
+|[CopyFolder](copyfolder.md) <br/> |Definiert eine Anforderung zum Kopieren eines Ordners in der Exchange-Informationsspeicher.  <br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/CopyFolder` <br/> |
+|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Stellt ein Abonnement für ein Push-basiertes Ereignis Benachrichtigungsabonnement dar.  <br/> |
+|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |Stellt ein Abonnement für ein Pull-basiertes Ereignis Benachrichtigungsabonnement dar.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages und http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Name des Schemas  <br/> |Nachrichten-schema Typen-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd; Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages und https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Name des Schemas  <br/> |Nachrichtenschema; Typenschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd; Types. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[GetFolder Operation](getfolder-operation.md)
+[GetFolder-Vorgang](getfolder-operation.md)
   
 [DeleteFolder-Vorgang](deletefolder-operation.md)
   

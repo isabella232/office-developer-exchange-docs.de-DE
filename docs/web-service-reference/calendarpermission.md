@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3aafb221-a04b-41f6-804e-eda810f1ba28
-description: Das CalendarPermission-Element definiert den, den ein Benutzer hat Zugriff auf einen Kalenderordner. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 7f6ceb6895add3fdd82cdd595463b3a80db822e5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CalendarPermission-Element definiert den Zugriff, den ein Benutzer in einen Kalenderordner hat. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: c43f75e6cf5abc2dce9af6c04122ec9a589dcd58
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757533"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529476"
 ---
 # <a name="calendarpermission"></a>CalendarPermission
 
-Das **CalendarPermission** -Element definiert den, den ein Benutzer hat Zugriff auf einen Kalenderordner. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **CalendarPermission** -Element definiert den Zugriff, den ein Benutzer in einen Kalenderordner hat. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <Permission>
@@ -51,16 +51,16 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CalendarPermissionLevel](calendarpermissionlevel.md) <br/> |Stellt die Berechtigungsstufe, die ein Benutzer für einen Kalenderordner verfügt. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[CalendarPermissionLevel](calendarpermissionlevel.md) <br/> |Stellt die Berechtigungsstufe dar, die ein Benutzer für einen Kalenderordner hat. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
 |[CanCreateItems](cancreateitems.md) <br/> |Gibt an, ob ein Benutzer über die Berechtigung zum Erstellen von Elementen in einem Ordner verfügt. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
-|[CanCreateSubFolders](cancreatesubfolders.md) <br/> |Gibt an, ob ein Benutzer die Berechtigung zum Erstellen von Unterordnern in einem Ordner verfügt. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[CanCreateSubFolders](cancreatesubfolders.md) <br/> |Gibt an, ob ein Benutzer über die Berechtigung zum Erstellen von Unterordnern in einem Ordner verfügt. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
 |[DeleteItems](deleteitems.md) <br/> |Gibt an, ob ein Benutzer über die Berechtigung zum Löschen von Elementen in einem Ordner verfügt. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
-|[-Smarttagbereich](edititems.md) <br/> |Gibt an, ob ein Benutzer die Berechtigung zum Bearbeiten von Elementen in einem Ordner verfügt. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
-|[IsFolderContact](isfoldercontact.md) <br/> |Gibt an, ob ein Benutzer einen Kontakt für einen Ordner ist. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
-|[IsFolderOwner](isfolderowner.md) <br/> |Gibt an, ob ein Benutzer den Besitzer eines Ordners ist. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[EditItems](edititems.md) <br/> |Gibt an, ob ein Benutzer über die Berechtigung zum Bearbeiten von Elementen in einem Ordner verfügt. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[IsFolderContact](isfoldercontact.md) <br/> |Gibt an, ob ein Benutzer ein Kontakt für einen Ordner ist. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[IsFolderOwner](isfolderowner.md) <br/> |Gibt an, ob ein Benutzer der Besitzer eines Ordners ist. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
 |[IsFolderVisible](isfoldervisible.md) <br/> |Gibt an, ob ein Benutzer einen Ordner anzeigen kann. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
-|[ReadItems (CalendarPermissionType)](readitems-calendarpermissiontype.md) <br/> |Gibt an, ob ein Benutzer über Berechtigungen zum Lesen von Elementen in einem Kalenderordner verfügt. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
-|[Benutzer-ID](userid.md) <br/> |Identifiziert ein Stellvertreter oder ein Benutzer mit Zugriffsberechtigungen für Ordner. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[ReadItems (CalendarPermissionType)](readitems-calendarpermissiontype.md) <br/> |Gibt an, ob ein Benutzer über die Berechtigung zum Lesen von Elementen in einem Kalenderordner verfügt. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[UserId](userid.md) <br/> |Identifiziert einen Stellvertreter Benutzer oder einen Benutzer, der über Ordnerzugriffsberechtigungen verfügt. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -68,15 +68,15 @@ Keine.
 |:-----|:-----|
 |[CalendarPermissions](calendarpermissions.md) <br/> |Enthält ein Array von Kalenderberechtigungen für einen Ordner. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -88,5 +88,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Setting Folder-Level Permissions](http://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+[Setting Folder-Level Permissions](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

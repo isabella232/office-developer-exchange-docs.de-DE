@@ -1,5 +1,5 @@
 ---
-title: ActingAs
+title: Actingies
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3896afff-5c2c-4eaf-8621-c70e0371ea78
-description: Das ActingAs-Element identifiziert, die der Anrufer als sendet.
-ms.openlocfilehash: 9c007ed45f85dba265261dd79a6fd846dbd9d2f9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das actings-Element identifiziert, wen der Anrufer sendet.
+ms.openlocfilehash: 175a03018ee3529ec595dbe9afb7dc61ad6afc35
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758394"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529700"
 ---
-# <a name="actingas"></a>ActingAs
+# <a name="actingas"></a>Actingies
 
-Das **ActingAs** -Element identifiziert, die der Anrufer als sendet. 
+Das **actings** -Element identifiziert, wen der Anrufer sendet. 
   
 ```xml
 <ActingAs>
@@ -52,19 +52,19 @@ Keine.
 |:-----|:-----|
 |[GetServiceConfiguration](getserviceconfiguration.md) <br/> |Definiert eine **GetServiceConfiguration** -Anforderung.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element ist optional. Wenn dieses Element nicht vorhanden ist, wird davon ausgegangen, dass der authentifizierte Benutzer die Absender werden. Das **ActingAs** -Element muss für die Anforderung des Absenders Hinweise eingeschlossen werden. Fehler **ErrorInvalidArgument** kann in einer Antwort zurückgegeben werden soll, wenn das **ActingAs** -Element nicht vorhanden ist, enthält keine Routingtyp, eine e-Mail-Adresse nicht umfasst, eine ungültige e-Mail-Adresse enthält, nicht an einen Benutzer in Active Directory löst -Domänendienste (AD DS), oder löst auf mehrere Benutzer in AD DS. 
+Dieses Element ist optional. Wenn dieses Element nicht vorhanden ist, wird der authentifizierte Benutzer als Absender angenommen. Das **actings** -Element muss enthalten sein, um Absender Hinweise anzufordern. Ein **ErrorInvalidArgument** -Fehler kann in einer Antwort zurückgegeben werden, wenn das **actings** -Element fehlt, keinen Routingtyp enthält, keine e-Mail-Adresse enthält, eine ungültige e-Mail-Adresse auflöst, für einen Benutzer in Active Directory-Domänendienste (AD DS) nicht aufgelöst wird oder in AD DS in mehrere Benutzer aufgelöst wird. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

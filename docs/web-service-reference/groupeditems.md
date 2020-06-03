@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 53170df4-4272-4b37-b23f-cd8e2d4a7396
-description: Das Element GroupedItems stellt eine Auflistung von Elementen, die das Ergebnis eines gruppierten FindItem Vorgang Anrufs sind.
-ms.openlocfilehash: f8aed9b78fc54307f44b96a45e5c31a4cc76ab50
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GroupedItems-Element stellt eine Auflistung von Elementen dar, die das Ergebnis eines zusammengefassten FindItem-Vorgangsaufrufs sind.
+ms.openlocfilehash: 0ee1ca3c6d0cf98e2daefa60a1cb1fd096cda478
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829756"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530811"
 ---
 # <a name="groupeditems"></a>GroupedItems
 
-Das **GroupedItems** -Element stellt eine Auflistung von Elementen, die das Ergebnis einer gruppierten [FindItem Vorgang](finditem-operation.md) sind aufrufen. 
+Das **GroupedItems** -Element stellt eine Auflistung von Elementen dar, die das Ergebnis eines zusammengefassten [FindItem-Vorgangs](finditem-operation.md) Aufrufs sind. 
   
 [FindItemResponse](finditemresponse.md)
   
@@ -31,7 +31,7 @@ Das **GroupedItems** -Element stellt eine Auflistung von Elementen, die das Erge
   
 [RootFolder (FindItemResponseMessage)](rootfolder-finditemresponsemessage.md)
   
-[Gruppen](groups.md)
+[Groups](groups.md)
   
 [GroupedItems](groupeditems.md)
   
@@ -55,24 +55,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GroupIndex](groupindex.md) <br/> |Stellt den Wert der Eigenschaft, die verwendet wird zum Gruppieren von Elementen in einem gruppierten [FindItem Vorgang](finditem-operation.md) aufrufen.  <br/> |
-|[Elemente](items.md) <br/> |Ein Array von gruppierten Elemente enthält.  <br/> |
+|[GroupIndex](groupindex.md) <br/> |Stellt den Eigenschaftswert dar, der zum Gruppieren von Elementen in einem gruppierten [FindItem-Vorgangs](finditem-operation.md) Aufruf verwendet wird.  <br/> |
+|[Elemente](items.md) <br/> |Enthält ein Array von gruppierten Elementen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Gruppen](groups.md) <br/> |Enthält eine Auflistung von Gruppen, die mit den Kriterien Such- und Aggregation gefunden werden, die in der Anforderung [FindItem Vorgang](finditem-operation.md) identifiziert wird.  <br/> |
+|[Groups](groups.md) <br/> |Enthält eine Auflistung von Gruppen, die mit den Such-und Aggregations Kriterien gefunden werden, die in der [FindItem-Vorgangs](finditem-operation.md) Anforderung angegeben werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
@@ -84,5 +84,5 @@ Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichni
 [FindItem-Vorgang](finditem-operation.md)
 
 
-[Finding Items](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+[Suchen von Elementen](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

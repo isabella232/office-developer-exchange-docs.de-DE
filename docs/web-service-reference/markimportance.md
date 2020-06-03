@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 32b8b08f-65e9-4764-b40a-63245551f4a3
-description: Das Element MarkImportance gibt die Wichtigkeit, die auf Nachrichten versehen werden.
-ms.openlocfilehash: 32b1fa63ef47327e7d3af717ed9f452e43b16380
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MarkImportance-Element gibt die Wichtigkeit an, die für Nachrichten gestempelt werden soll.
+ms.openlocfilehash: 051307c0943a22e0c46439410806d168603d8a69
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830356"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530881"
 ---
 # <a name="markimportance"></a>MarkImportance
 
-Das Element **MarkImportance** gibt die Wichtigkeit, die auf Nachrichten versehen werden. 
+Das **MarkImportance** -Element gibt die Wichtigkeit an, die für Nachrichten gestempelt werden soll. 
   
 ```XML
 <MarkImportance/>
@@ -48,25 +48,25 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert für dieses Element ist auf die folgenden Werte vom Typ String beschränkt:
+Der Textwert für dieses Element ist auf einen der folgenden Zeichenfolgenwerte beschränkt:
   
-- Low
+- Niedrig
     
-- Standard
+- Normal
     
-- High
+- Hoch
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

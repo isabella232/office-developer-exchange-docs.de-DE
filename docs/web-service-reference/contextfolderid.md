@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 48de92aa-e124-42b5-89bc-cdce5e93d78b
-description: Das ContextFolderId-Element gibt an, den Ordner, der für Aktionen gerichtet ist, die Ordner zu verwenden. Dieses Element muss beim Kopieren, löschen, verschieben und Festlegen von Zustand "gelesen" für Unterhaltungselemente in einem Zielordner vorhanden sein.
-ms.openlocfilehash: 94428a079be6da8873c777556771579a7110fb62
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das ContextFolderId-Element gibt den Ordner an, der für Aktionen vorgesehen ist, die Ordner verwenden. Dieses Element muss beim Kopieren, löschen, verschieben und Festlegen des Lese Zustands für Unterhaltungselemente in einem Zielordner vorhanden sein.
+ms.openlocfilehash: 60f1eaf3b45eee83632c7da6f453a1d09f54d9fd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354281"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529259"
 ---
 # <a name="contextfolderid"></a>ContextFolderId
 
-Das **ContextFolderId** -Element gibt an, den Ordner, der für Aktionen gerichtet ist, die Ordner zu verwenden. Dieses Element muss beim Kopieren, löschen, verschieben und Festlegen von Zustand "gelesen" für Unterhaltungselemente in einem Zielordner vorhanden sein. 
+Das **ContextFolderId** -Element gibt den Ordner an, der für Aktionen vorgesehen ist, die Ordner verwenden. Dieses Element muss beim Kopieren, löschen, verschieben und Festlegen des Lese Zustands für Unterhaltungselemente in einem Zielordner vorhanden sein. 
   
 - [ApplyConversationAction](applyconversationaction.md) 
 - [ConversationActions](conversationactions.md)
-- [ConversationAction](conversationaction.md)
+- [Unterhaltung](conversationaction.md)
 - [ContextFolderId](contextfolderid.md)
   
 ```XML
@@ -55,28 +55,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Enthält den Schlüssel-ID und die Änderung des kontextordners.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Bezeichnet die Ordner, die nach Namen verwiesen werden können.  <br/> |
+|[FolderId](folderid.md) <br/> |Enthält den Bezeichner und den Änderungsschlüssel des Kontext Ordners.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifiziert Ordner, auf die über den Namen verwiesen werden kann.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ConversationAction](conversationaction.md) <br/> |Enthält eine einzelne Aktion auf einem einzelnen Gespräch angewendet werden soll.  <br/> |
+|[Unterhaltung](conversationaction.md) <br/> |Enthält eine einzelne Aktion, die auf eine einzelne Unterhaltung angewendet werden soll.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

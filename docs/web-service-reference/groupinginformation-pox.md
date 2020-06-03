@@ -1,22 +1,22 @@
 ---
-title: Werten "groupinginformation" (POX)
+title: GroupingInformation (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2d8a007f-d79c-43c8-90e3-2c6d883f3a7c
-description: Das Werten "groupinginformation"-Element enthält einen Wert, der das Postfach des Benutzers zum Affinität verwalten, wenn Sie über mehrere Postfächer auf Benachrichtigungen abonnieren gruppiert verwendet wird.
-ms.openlocfilehash: bcde002c794ac79d9515befc0755c1f954ee8706
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GroupingInformation-Element enthält einen Wert, der verwendet wird, um das Postfach des Benutzers zu gruppieren, um die Affinität beizubehalten, wenn Benachrichtigungen über mehrere Postfächer abonniert werden.
+ms.openlocfilehash: 7cab5d68f7dd5ec1f6caded5b9da6cfee03f3a67
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829781"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530078"
 ---
-# <a name="groupinginformation-pox"></a>Werten "groupinginformation" (POX)
+# <a name="groupinginformation-pox"></a>GroupingInformation (POX)
 
-Das **Werten "groupinginformation"** -Element enthält einen Wert, der verwendet wird, um das Postfach des Benutzers zum [Aufrechterhalten der Affinität](http://msdn.microsoft.com/library/1bda4094-88c3-4f61-9219-6ee70f6e81cf%28Office.15%29.aspx) beim Abonnieren von Benachrichtigungen über mehrere Postfächer zu gruppieren. 
+Das **GroupingInformation** -Element enthält einen Wert, der verwendet wird, um das Postfach des Benutzers zu gruppieren, um die [Affinität beizubehalten](https://msdn.microsoft.com/library/1bda4094-88c3-4f61-9219-6ee70f6e81cf%28Office.15%29.aspx) , wenn Benachrichtigungen über mehrere Postfächer abonniert werden. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -26,7 +26,7 @@ Das **Werten "groupinginformation"** -Element enthält einen Wert, der verwendet
   
 [Protokoll (POX)](protocol-pox.md)
   
-[Werten "groupinginformation" (POX)](groupinginformation-pox.md)
+[GroupingInformation (POX)](groupinginformation-pox.md)
   
 ```XML
 <GroupingInformation/>
@@ -52,14 +52,14 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert wird auf den Wert des Elements für andere Postfächer **Werten "groupinginformation"** verglichen. Postfächer, die den gleichen Wert und verwenden den gleichen Exchange-Webdienste (EWS) Endpunkt können gruppiert werden, um die Affinität verwalten. Weitere Informationen finden Sie unter [Affinität zwischen einer Gruppe von Abonnements und dem Postfachserver in Exchange verwalten](http://msdn.microsoft.com/library/1bda4094-88c3-4f61-9219-6ee70f6e81cf%28Office.15%29.aspx).
+Der Textwert wird mit dem Wert des **GroupingInformation** -Elements für andere Postfächer verglichen. Postfächer, die denselben Wert aufweisen und denselben Exchange-Webdienste-Endpunkt verwenden, können zusammen gruppiert werden, um die Affinität beizubehalten. Weitere Informationen finden Sie unter [MAINTAIN Affinität zwischen einer Gruppe von Abonnements und dem Postfachserver in Exchange](https://msdn.microsoft.com/library/1bda4094-88c3-4f61-9219-6ee70f6e81cf%28Office.15%29.aspx).
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Element **Werten "groupinginformation"** gilt nur für **Protokoll** -Elemente, die ein untergeordnetes Element [Typ (POX)](type-pox.md) , mit dem Wert "AUSDR" aufweisen. 
+Das **GroupingInformation** -Element gilt nur für **Protokoll** Elemente, die über ein untergeordnetes [Type (POX)-](type-pox.md) Element mit dem Wert "expr" verfügen. 
   
 ## <a name="see-also"></a>Siehe auch
 
 - [POX Autodiscover XML-Elemente für Exchange](pox-autodiscover-xml-elements-for-exchange.md)
-- [Verwalten von Affinität zwischen einer Gruppe von Abonnements und dem Postfachserver in Exchange](http://msdn.microsoft.com/library/1bda4094-88c3-4f61-9219-6ee70f6e81cf%28Office.15%29.aspx)
+- [Verwalten von Affinität zwischen einer Gruppe von Abonnements und dem Postfachserver in Exchange](https://msdn.microsoft.com/library/1bda4094-88c3-4f61-9219-6ee70f6e81cf%28Office.15%29.aspx)
 

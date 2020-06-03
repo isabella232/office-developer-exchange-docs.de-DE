@@ -1,5 +1,5 @@
 ---
-title: GreetingType (UM-Webdienst)
+title: Greetingtype (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,27 +10,27 @@ api_name:
 api_type:
 - schema
 ms.assetid: 55bdf809-054c-4653-b76b-9fb36e010117
-description: Das GreetingType-Element definiert den Typ der Begrüßung für die Verwendung in einer PlayOnPhoneGreeting-Vorgang (UM-Webdienst)-Anforderung.
-ms.openlocfilehash: bbe2854abcaf99838678691e6d5d084c1fe8c59c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das greetingtype-Element definiert die Art der Begrüßung, die in einer PlayOnPhoneGreeting-Operation (um-Webdienst) verwendet werden soll.
+ms.openlocfilehash: 4ade61fc26d963826a1d5e515c93ab6ef6830fd8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829754"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530106"
 ---
-# <a name="greetingtype-um-web-service"></a>GreetingType (UM-Webdienst)
+# <a name="greetingtype-um-web-service"></a>Greetingtype (um-Webdienst)
 
-Das **GreetingType** -Element definiert den Typ der Grußformel aus, die in einer Anforderung [PlayOnPhoneGreeting-Vorgang (UM-Webdienst)](playonphonegreeting-operation-um-web-service.md) verwenden. 
+Das **greetingtype** -Element definiert die Art der Begrüßung, die in einer [PlayOnPhoneGreeting-Operation (um-Webdienst)](playonphonegreeting-operation-um-web-service.md) verwendet werden soll. 
   
-[PlayOnPhoneGreeting (UM-Webdienst)](playonphonegreeting-um-web-service.md)
+[PlayOnPhoneGreeting (um-Webdienst)](playonphonegreeting-um-web-service.md)
   
-[GreetingType (UM-Webdienst)](greetingtype-um-web-service.md)
+[Greetingtype (um-Webdienst)](greetingtype-um-web-service.md)
   
 ```xml
 <GreetingType/>
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -47,7 +47,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PlayOnPhoneGreeting (UM-Webdienst)](playonphonegreeting-um-web-service.md) <br/> |Definiert eine Anforderung an einen Unified Messaging Begrüßung auf ein Telefon wiedergegeben werden sollen.  <br/> |
+|[PlayOnPhoneGreeting (um-Webdienst)](playonphonegreeting-um-web-service.md) <br/> |Definiert eine Anforderung zum Abspielen einer Unified Messaging-Begrüßung auf einem Telefon.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
@@ -57,18 +57,18 @@ Ein Textwert ist erforderlich. Im Folgenden sind die möglichen Werte aufgeführ
     
 - OofCustom
     
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PlayOnPhoneGreeting-Vorgang (UM-Webdienst)](playonphonegreeting-operation-um-web-service.md)
+[PlayOnPhoneGreeting-Vorgang (um-Webdienst)](playonphonegreeting-operation-um-web-service.md)
 

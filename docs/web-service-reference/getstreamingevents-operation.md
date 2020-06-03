@@ -11,35 +11,35 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8da95423-72bc-4034-90a8-162eedcd059b
-description: Hier finden Sie Informationen über die GetStreamingEvents EWS Vorgang.
-ms.openlocfilehash: 0e93be7b14cb1ca6a2a9821b016f7bdc0e8d7772
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier finden Sie Informationen zum GetStreamingEvents-EWS-Vorgang.
+ms.openlocfilehash: 27744ec40d7c7cb551f35ed5f6fcb726f23d4865
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829673"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530169"
 ---
 # <a name="getstreamingevents-operation"></a>GetStreamingEvents-Vorgang
 
-Hier finden Sie Informationen zum **GetStreamingEvents** EWS-Vorgang. 
+Hier finden Sie Informationen zum **GetStreamingEvents** -EWS-Vorgang. 
   
-Der Vorgang **GetStreamingEvents** wird vom streaming-Abonnement-Clients zur Benachrichtigungen anfordern, vom Client Access-Server verwendet. Die Antwort **GetStreamingEvents** gibt ein Array von Elementen und Ereignisse, die in einem Postfach seit dem letzten die Benachrichtigung aufgetreten sind. 
+Der **GetStreamingEvents** -Vorgang wird von Streaming-Abonnementclients verwendet, um Benachrichtigungen vom Client Zugriffsserver anzufordern. Die **GetStreamingEvents** -Antwort gibt ein Array von Elementen und Ereignissen zurück, die seit der letzten Benachrichtigung in einem Postfach aufgetreten sind. 
   
-## <a name="getstreamingevents-request-example"></a>Anforderungsbeispiel GetStreamingEvents
+## <a name="getstreamingevents-request-example"></a>GetStreamingEvents-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Operation **GetStreamingEvents** veranschaulicht, wie zum Anfordern der Ereignisse und Elemente, die mit einem Abonnement verknüpft sind, die durch die Abonnement-ID identifiziert wird. 
+Im folgenden Beispiel eines **GetStreamingEvents** -Vorgangs wird gezeigt, wie die Ereignisse und Elemente angefordert werden, die einem Abonnement zugeordnet sind, das durch die Abonnement-ID identifiziert wird. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-  xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+  xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Body>
-    <GetStreamingEvents xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetStreamingEvents xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <SubscriptionId>f6bc657d-dde1-4f94-952d-143b95d6483d</SubscriptionId>
       <ConnectionTimeout>30</ConnectionTimeout>
     </GetStreamingEvents>
@@ -47,31 +47,31 @@ Im folgenden Beispiel wird eine Operation **GetStreamingEvents** veranschaulicht
 </soap:Envelope>
 ```
 
-### <a name="getstreamingevents-request-elements"></a>GetStreamingEvents Anforderung Elemente
+### <a name="getstreamingevents-request-elements"></a>GetStreamingEvents-anforderungselemente
 
 In der Anforderung werden folgende Elemente verwendet:
   
 - [GetStreamingEvents](getstreamingevents.md)
     
-- [SubscriptionId (GetStreamingEvents)](subscriptionid-getstreamingevents.md)
+- [Abonnement-GetStreamingEvents](subscriptionid-getstreamingevents.md)
     
 - [ConnectionTimeout](connectiontimeout.md)
     
-## <a name="successful-getstreamingevents-response-example"></a>Erfolgreiche GetStreamingEvents antwortbeispiel
+## <a name="successful-getstreamingevents-response-example"></a>Erfolgreiches GetStreamingEvents-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel einer Antwort **GetStreamingEvents** zeigt die Benachrichtigungen, die an den Client gesendet werden, wenn eine neue e-Mail-Nachricht empfangen wird. Sie enthält Benachrichtigungen für die folgenden Ereignisse: CreatedEvent NewMail und ModifiedEvent. 
+Im folgenden Beispiel einer **GetStreamingEvents** -Antwort werden die Benachrichtigungen angezeigt, die an den Client gesendet werden, wenn eine neue e-Mail-Nachricht empfangen wird. Es enthält Benachrichtigungen für die folgenden Ereignisse: CreatedEvent, newmail und ModifiedEvent. 
   
 ### <a name="code"></a>Code
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
 <soap:Header xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-  <ServerVersionInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" MajorVersion="15" MinorVersion="0" MajorBuildNumber="775" MinorBuildNumber="7" Version="V2_4" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" />
+  <ServerVersionInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" MajorVersion="15" MinorVersion="0" MajorBuildNumber="775" MinorBuildNumber="7" Version="V2_4" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" />
 </soap:Header>
 <soap:Body xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-  <m:GetStreamingEventsResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+  <m:GetStreamingEventsResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
     <m:ResponseMessages>
       <m:GetStreamingEventsResponseMessage ResponseClass="Success">
         <m:ResponseCode>NoError</m:ResponseCode>
@@ -102,7 +102,7 @@ Das folgende Beispiel einer Antwort **GetStreamingEvents** zeigt die Benachricht
 </soap:Body>
 ```
 
-### <a name="getstreamingevents-response-elements"></a>GetStreamingEvents Antwortelemente
+### <a name="getstreamingevents-response-elements"></a>GetStreamingEvents-Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -116,15 +116,15 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Benachrichtigung](notification-ex15websvcsotherref.md)
     
-- [SubscriptionId (GetStreamingEvents)](subscriptionid-getstreamingevents.md)
+- [Abonnement-GetStreamingEvents](subscriptionid-getstreamingevents.md)
     
-Wenn andere Optionen für die Antwortnachricht des Vorgangs **GetStreamingEvents** suchen möchten, verwenden Sie die Schemahierarchie. Starten Sie die [Benachrichtigung](notification-ex15websvcsotherref.md) -Element. 
+Um andere Optionen für die Antwortnachricht des **GetStreamingEvents** -Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [Benachrichtigungs](notification-ex15websvcsotherref.md) Element. 
   
-## <a name="getstreamingevents-error-response-example"></a>GetStreamingEvents Fehler antwortbeispiel
+## <a name="getstreamingevents-error-response-example"></a>GetStreamingEvents-Fehlerantwort Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetStreamingEvents** -Anforderung. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetStreamingEvents** -Anforderung. 
   
 ### <a name="code"></a>Code
 
@@ -135,12 +135,12 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetStreamingEvents** -A
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetStreamingEventsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetStreamingEventsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetStreamingEventsResponseMessage ResponseClass="Error">
         <m:MessageText></m:MessageText>
@@ -153,21 +153,21 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetStreamingEvents** -A
 </soap:Envelope>
 ```
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Bei der Verarbeitung einer Anforderung **GetStreamingEvents** führt der Clientzugriffs-Server die folgenden Schritte aus: 
+Bei der Verarbeitung einer **GetStreamingEvents** -Anforderung führt der Client Zugriffsserver die folgenden Schritte aus: 
   
-1. Die [SubscriptionId (GetStreamingEvents)](subscriptionid-getstreamingevents.md) der Anforderung wird bestätigt, um ein gültiges Abonnement sein, das auf dem Client Access Server gehostet wird. Wenn sie nicht der Fall ist, schlägt der **GetStreamingEvents** -Aufruf. 
+1. Die [Abonnement-GetStreamingEvents](subscriptionid-getstreamingevents.md) der Anforderung wird als gültiges Abonnement bestätigt, das auf dem Client Zugriffsserver gehostet wird. Wenn dies nicht der Fall ist, schlägt der **GetStreamingEvents** -Aufruf fehl. 
     
-2. Die SMTP-Adresse des authentifizierten Benutzers für die Anforderung wird überprüft, um Identitätswechsel Rechte verfügen. Ist dies nicht der Fall ist, schlägt die Anforderung **GetStreamingEvents** . 
+2. Die SMTP-Adresse des authentifizierten Benutzers für die Anforderung wird überprüft, um Identitätswechsel Rechte zu besitzen. Wenn dies nicht der Fall ist, schlägt die **GetStreamingEvents** -Anforderung fehl. 
     
-3. Die Abonnement-Warteschlange abgefragt wird für Ereignisse, die darauf warten, an den Client gesendet werden. Wenn die Warteschlange nicht leer ist, werden die ersten 50 Ereignisse aus der Warteschlange aus der Warteschlange abgerufen und in eine Benachrichtigung codiert.
+3. Die Abonnement Warteschlange wird für Ereignisse abgefragt, die darauf warten, an den Client gesendet zu werden. Wenn die Warteschlange nicht leer ist, werden die ersten 50-Ereignisse aus der Warteschlange aus der Warteschlange gezogen und in eine Benachrichtigung codiert.
     
-4. Wenn keine Ereignisse in der Warteschlange gefunden werden, wird ein [StatusEvent](statusevent.md) generiert und in einer Benachrichtigungsantwort codiert. 
+4. Wenn in der Warteschlange keine Ereignisse gefunden werden, wird ein [StatusEvent](statusevent.md) generiert und in einer Benachrichtigungsantwort codiert. 
     
 5. Die Benachrichtigungsantwort wird an den Client zurückgegeben.
     
-6. Die Ereignisse, die in der Benachrichtigung enthalten sind, werden aus der Warteschlange Abonnement entfernt und Client Access Server-Local letzte Wasserzeichen für das Abonnement festgelegt ist, können Sie dem Wasserzeichen des letzten-Ereignisses, das zurückgegeben wird.
+6. Die Ereignisse, die in der Benachrichtigung enthalten sind, werden aus der Abonnement Warteschlange entfernt, und der Client Zugriffsserver-lokales letzte Wasserzeichen für das Abonnement wird auf das Wasserzeichen des letzten zurückgegebenen Ereignisses festgelegt.
     
 7. Der Timeout-Zeitgeber für das Abonnement wird zurückgesetzt.
     

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f9252536-9852-4dd9-9ebc-91f5cf281171
-description: Das Element DisconnectPhoneCall stellt eine Anforderung an eine Verbindung zu trennen.
-ms.openlocfilehash: 56947ea9ba56c76bb02d6a425ff43b3b846a2f60
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DisconnectPhoneCall-Element stellt eine Anforderung zum Trennen eines Anrufs dar.
+ms.openlocfilehash: 8d64ecb9dce1d8b7efcebc70686db8fcbf867217
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758021"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529707"
 ---
 # <a name="disconnectphonecall"></a>DisconnectPhoneCall
 
-Das Element **DisconnectPhoneCall** stellt eine Anforderung an eine Verbindung zu trennen. 
+Das **DisconnectPhoneCall** -Element stellt eine Anforderung zum Trennen eines Anrufs dar. 
   
 ```xml
 <DisconnectPhoneCall>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PhoneCallId](phonecallid.md) <br/> |Gibt den Bezeichner des Anrufs zu trennen. Dieses Element ist erforderlich.  <br/> |
+|[Anrufer](phonecallid.md) <br/> |Gibt den Bezeichner des Anrufs an, der getrennt werden soll. Dieses Element ist erforderlich.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,17 +52,17 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

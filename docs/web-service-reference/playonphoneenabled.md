@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6f800912-be4c-46f9-aa1e-dff0bbf877c5
-description: Das PlayOnPhoneEnabled-Element gibt an, ob das Wiedergabe über Telefon-Feature aktiviert ist.
-ms.openlocfilehash: 1a6c5c41a4fe723f37d07ad0151dfbd6512cf4f7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PlayOnPhoneEnabled-Element gibt an, ob die Funktion "Wiedergabe-Telefon" aktiviert ist.
+ms.openlocfilehash: 8342e2bcc9c767903e0f6c180000a0f00eccc311
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830829"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529931"
 ---
 # <a name="playonphoneenabled"></a>PlayOnPhoneEnabled
 
-Das **PlayOnPhoneEnabled** -Element gibt an, ob das Wiedergabe über Telefon-Feature aktiviert ist. 
+Das **PlayOnPhoneEnabled** -Element gibt an, ob die Funktion "Wiedergabe-Telefon" aktiviert ist. 
   
 ```XML
 <PlayOnPhoneEnabled>true | false</PlayOnPhoneEnabled>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -48,19 +48,19 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Das **PlayOnPhoneEnabled** -Element hat den Wert **true** , wenn Wiedergabe über Telefon für das Konto aktiviert ist; Andernfalls ist der Wert **false**.
+Das **PlayOnPhoneEnabled** -Element hat den Wert **true** , wenn Play-on-Phone für das Konto aktiviert ist; Andernfalls ist der Wert **false**.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element ist erforderlich.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

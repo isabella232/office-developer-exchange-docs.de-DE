@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: eaf29427-ecf8-4a5e-9a54-db2e6414b35e
-description: Der Vorgang GetSharingMetadata Ruft ein undurchsichtig Authentifizierungstoken, die eine freigabeeinladung identifiziert.
-ms.openlocfilehash: e2e04d83310e7a8a731cca655a432325574cd9e8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der GetSharingMetadata-Vorgang ruft ein nicht transparentes Authentifizierungstoken ab, das eine Freigabeeinladung identifiziert.
+ms.openlocfilehash: 0390b9caa7b2e9847b1e8dcdc1b911a35e3c5864
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829671"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530183"
 ---
 # <a name="getsharingmetadata-operation"></a>GetSharingMetadata-Vorgang
 
-Der Vorgang **GetSharingMetadata** Ruft ein undurchsichtig Authentifizierungstoken, die eine freigabeeinladung identifiziert. 
+Der **GetSharingMetadata** -Vorgang ruft ein nicht transparentes Authentifizierungstoken ab, das eine Freigabeeinladung identifiziert. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der Vorgang **GetSharingMetadata** können die SOAP-Header, die aufgeführt und in der folgenden Tabelle beschrieben. 
+Der **GetSharingMetadata** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="getsharingmetadata-request-example"></a>Anforderungsbeispiel GetSharingMetadata
+## <a name="getsharingmetadata-request-example"></a>GetSharingMetadata-Anforderungs Beispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel veranschaulicht das bilden einer Anforderung an ein undurchsichtiger Authentifizierungstoken erhalten möchten, die eine freigabeeinladung identifiziert. In diesem Beispiel user1@contoso.com den Ordner freigeben möchte, der durch das [IdOfFolderToShare](idoffoldertoshare.md) -Element mit user1@fabikam.com und user2@test.com angegeben ist. 
+Das folgende Beispiel zeigt, wie Sie eine Anforderung zum Abrufen eines nicht transparenten Authentifizierungstokens erstellen, das eine Freigabeeinladung identifiziert. In diesem Beispiel möchte user1@contoso.com den Ordner freigeben, der durch das [IdOfFolderToShare](idoffoldertoshare.md) -Element mit user1@fabikam.com und User2@Test.com angegeben wird. 
   
 ### <a name="code"></a>Code
 
@@ -45,8 +45,8 @@ Das folgende Beispiel veranschaulicht das bilden einer Anforderung an ein undurc
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010"/>
   </soap:Header>
@@ -63,15 +63,15 @@ Das folgende Beispiel veranschaulicht das bilden einer Anforderung an ein undurc
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Das [Empfänger (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) -Element enthält ein [SmtpAddress](smtpaddress.md) -Element für jeden beabsichtigten Empfänger, der die Einladung zur Freigabe. 
+Das [Recipients (ArrayOfSmtpAddressType)-](recipients-arrayofsmtpaddresstype.md) Element enthält ein [SmtpAddress](smtpaddress.md) -Element für jeden beabsichtigten Empfänger der Freigabeeinladung. 
   
-## <a name="successful-getsharingmetadata-response"></a>Erfolgreiche GetSharingMetadata Antwort
+## <a name="successful-getsharingmetadata-response"></a>Erfolgreiche GetSharingMetadata-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **GetSharingMetadata** . In diesem Beispiel wurden zwei Empfänger angegeben, in der entsprechenden **GetSharingMetadata** Anforderung: user1@fabrikam.com und user2@test.com. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetSharingMetadata** -Anforderung. In diesem Beispiel wurden in der entsprechenden **GetSharingMetadata** -Anforderung zwei Empfänger angegeben: user1@fabrikam.com und User2@Test.com. 
   
 ### <a name="code"></a>Code
 
@@ -86,13 +86,13 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **Get
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <GetSharingMetadataResponseMessage ResponseClass="Success" 
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</ResponseCode>
       <m:EncryptedSharedFolderDataCollection>
         <t:EncryptedSharedFolderData>
@@ -154,19 +154,19 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **Get
 </soap:Envelope>
 ```
 
-### <a name="comments"></a>Kommentare
+### <a name="comments"></a>Comments
 
-Die Antwort enthält ein [EncryptedSharedFolderData](encryptedsharedfolderdata.md) -Element für jede Organisation, die durch gültige Empfänger dargestellt wird, die in der Anforderung **GetSharingMetadata** angegeben sind. 
+Die Antwort enthält ein [EncryptedSharedFolderData](encryptedsharedfolderdata.md) -Element für jede Organisation, die durch gültige Empfänger dargestellt wird, die in der **GetSharingMetadata** -Anforderung angegeben sind. 
   
-Die Anforderung **GetSharingMetadata** erfolgreich, auch wenn ungültige Empfänger in der Anforderung angegeben werden. Das Element [InvalidRecipients](invalidrecipients.md) enthält Informationen zu ungültige Empfänger. Informationen über die Gründe, warum ein Empfänger ungültig sein könnten, finden Sie unter [ResponseCode (InvalidRecipientResponseCodeType)](responsecode-invalidrecipientresponsecodetype.md).
+Die **GetSharingMetadata** -Anforderung ist erfolgreich, auch wenn in der Anforderung ungültige Empfänger angegeben werden. Das [InvalidRecipients](invalidrecipients.md) -Element enthält Informationen zu ungültigen Empfängern. Informationen zu den Gründen, warum ein Empfänger möglicherweise ungültig ist, finden Sie unter [Response Code (InvalidRecipientResponseCodeType)](responsecode-invalidrecipientresponsecodetype.md).
   
-Wenn alle gewünschten Empfänger ungültig sind, wird das Element [EncryptedSharedFolderDataCollection](encryptedsharedfolderdatacollection.md) leer sein. 
+Wenn alle vorgesehenen Empfänger ungültig sind, ist das [EncryptedSharedFolderDataCollection](encryptedsharedfolderdatacollection.md) -Element leer. 
   
-## <a name="getsharingmetadata-error-response"></a>Fehlerantwort GetSharingMetadata
+## <a name="getsharingmetadata-error-response"></a>GetSharingMetadata-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetSharingMetadata** -Anforderung. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetSharingMetadata** -Anforderung. 
   
 ### <a name="code"></a>Code
 
@@ -181,13 +181,13 @@ Das folgende Beispiel zeigt eine Fehlerantwort an eine **GetSharingMetadata** -A
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <GetSharingMetadataResponseMessage ResponseClass="Error" 
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:MessageText>The SMTP address format is invalid.</MessageText>
       <m:ResponseCode>ErrorInvalidSmtpAddress</ResponseCode>
       <m:DescriptiveLinkKey>0</DescriptiveLinkKey>

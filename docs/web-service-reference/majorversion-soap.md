@@ -1,5 +1,5 @@
 ---
-title: Hauptversion (SOAP)
+title: MajorVersion (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 0b2a83cf-e173-4073-9603-b2ea3b36ec1a
-description: Das Hauptversion-Element darstellt, der die Hauptversionsnummer für den Server.
-ms.openlocfilehash: ca619d4c36e17ca9a811019f0a13b45353cab1e2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MajorVersion-Element stellt die Hauptversionsnummer für den Server dar.
+ms.openlocfilehash: 2c564b110ec7497a2e9c92a00bfb7f376a657849
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830333"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44531007"
 ---
-# <a name="majorversion-soap"></a>Hauptversion (SOAP)
+# <a name="majorversion-soap"></a>MajorVersion (SOAP)
 
-Das **Hauptversion** -Element darstellt, der die Hauptversionsnummer für den Server. 
+Das **MajorVersion** -Element stellt die Hauptversionsnummer für den Server dar. 
   
 ```XML
 <MajorVersion/>
@@ -41,19 +41,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |Enthält die Version des Servers, der die Anforderung verarbeitet.  <br/> |
+|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |Enthält die Version des Servers, der die Anforderung verarbeitet hat.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert für das Element **Hauptversion** ist eine ganze Zahl, die die Nummer der Hauptversion des Servers darstellt, der die Anforderung verarbeitet. 
+Der Textwert für das **MajorVersion** -Element ist eine ganze Zahl, die die Hauptversionsnummer des Servers darstellt, der die Anforderung verarbeitet hat. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7a1d3f04-4ada-4a31-845e-f1f1ff6e136f
-description: Das GlobalCategories-Element enthält die Kategorieliste für alle Unterhaltungselemente in einem Postfach.
-ms.openlocfilehash: 5cedea821b14264f15026c2d297c3017534ca354
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GlobalCategories-Element enthält die Kategorienliste für alle Unterhaltungselemente in einem Postfach.
+ms.openlocfilehash: d608328f8adae56e140affdb36b38605d6f89486
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829711"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530120"
 ---
 # <a name="globalcategories"></a>GlobalCategories
 
-Das **GlobalCategories** -Element enthält die Kategorieliste für alle Unterhaltungselemente in einem Postfach. 
+Das **GlobalCategories** -Element enthält die Kategorienliste für alle Unterhaltungselemente in einem Postfach. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -62,15 +62,15 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
@@ -84,5 +84,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 [ApplyConversationAction-Vorgang](applyconversationaction-operation.md)
 
 
-[Conversations in EWS](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+[Conversations in EWS](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

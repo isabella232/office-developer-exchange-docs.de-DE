@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: daa179b6-8c7f-4268-a312-c2acc67fa7c3
-description: Das SearchExpression-Element ist ein abstraktes Element, das das ersetzte Element innerhalb einer Einschränkung darstellt. Alle Suchausdrücke werden von diesem Basistyp abgeleitet. Dieses Element wird in einem XML-Instanzendokument nicht verwendet.
-ms.openlocfilehash: 8e0d09aec079280816cd9dfe2c1a55c88bb959a7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Search-Element ist ein abstraktes Element, das das ersetzte Element innerhalb einer Einschränkung darstellt. Alle Suchausdrücke werden von diesem Basistyp abgeleitet. Dieses Element wird in einem XML-Instanzendokument nicht verwendet.
+ms.openlocfilehash: db06ce8e2faa0f2589963d58aab55073c618c171
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831286"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530352"
 ---
 # <a name="searchexpression"></a>SearchExpression
 
-Das **SearchExpression** -Element ist ein abstraktes Element, das das ersetzte Element innerhalb einer Einschränkung darstellt. Alle Suchausdrücke werden von diesem Basistyp abgeleitet. Dieses Element wird in einem XML-Instanzendokument nicht verwendet. 
+Das **Search** -Element ist ein abstraktes Element, das das ersetzte Element innerhalb einer Einschränkung darstellt. Alle Suchausdrücke werden von diesem Basistyp abgeleitet. Dieses Element wird in einem XML-Instanzendokument nicht verwendet. 
   
 ```xml
 <SearchExpression/>
@@ -44,25 +44,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Einschränkung](restriction.md) <br/> |Stellt die Einschränkung oder die Abfrage, die zum Filtern von Elementen oder Ordner in FindItem/FindFolder, und suchen Sie Ordner Vorgänge verwendet wird.  <br/> |
-|[not](not.md) <br/> |Stellt einen Search-Ausdruck, der den booleschen Wert des Suchbegriffs negiert, die er enthält.  <br/> |
-|[Und](and.md) <br/> |Stellt einen Search-Ausdruck, der eine Boolean **und** -Operation zwischen zwei oder mehr Suchausdrücke ausgeführt werden können. Das Ergebnis der **AND** -Operation ist **true** , wenn **alle enthaltenen das Element **und** Suchausdrücke zutreffen**.  <br/> |
-|[- oder -](or.md) <br/> |Stellt einen Search-Ausdruck, der eine logische **OR** -Operation für den Suchbegriff durchführt, die er enthält. **Oder** gibt **true** zurück, wenn einer der untergeordneten **true**zurückgegeben. **Oder** muss mindestens zwei untergeordnete Elemente aufweisen.  <br/> |
+|[Einschränkung](restriction.md) <br/> |Stellt die Einschränkung oder Abfrage dar, die zum Filtern von Elementen oder Ordnern in FindItem/FindFolder und Suchordner Vorgängen verwendet wird.  <br/> |
+|[not](not.md) <br/> |Stellt einen Suchausdruck dar, der den booleschen Wert des darin enthaltenen Suchausdrucks negiert.  <br/> |
+|[Und](and.md) <br/> |Stellt einen Suchausdruck dar, mit dem Sie einen booleschen Wert **und** eine Operation zwischen zwei oder mehr Suchausdrücken ausführen können. Das Ergebnis der **and-** Operation ist **true** , wenn alle im **and-** Element enthaltenen Suchausdrücke **true**sind.  <br/> |
+|[- oder -](or.md) <br/> |Stellt einen Suchausdruck dar, der eine logische **or** -Operation für den darin enthaltenen Suchausdruck ausführt. **Oder** gibt **true** zurück, wenn eines der untergeordneten Elemente **true**zurückgibt. **Oder** muss mindestens zwei untergeordnete Elemente aufweisen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Alle Filterelement, das Teil der Ersetzungsgruppe SearchExpression ist kann anstelle der SearchExpression-Element angezeigt werden.
+Jedes Filter-Element, das Teil der Such Satz Ersetzungsgruppe ist, kann anstelle des Search-Elements angezeigt werden.
   
 > [!NOTE]
-> Dieses Element wird nie direkt in einem Instanzendokument auftreten. 
+> Dieses Element wird nie direkt in einem Instanzdokument auftreten. 
   
-Die folgenden Elemente sind Mitglieder der Ersetzungsgruppe SearchExpression:
+Die folgenden Elemente sind Mitglieder der Substitutions Gruppe "Search":
   
 - [Exists](exists.md)
     
 - [Schließt](excludes.md)
     
-- ["IsEqualTo"](isequalto.md)
+- [IsEqualTo](isequalto.md)
     
 - [IsNotEqualTo](isnotequalto.md)
     
@@ -74,7 +74,7 @@ Die folgenden Elemente sind Mitglieder der Ersetzungsgruppe SearchExpression:
     
 - [IsLessThanOrEqualTo](islessthanorequalto.md)
     
-- [Enthält](contains.md)
+- [Contains](contains.md)
     
 - [not](not.md)
     
@@ -84,11 +84,11 @@ Die folgenden Elemente sind Mitglieder der Ersetzungsgruppe SearchExpression:
     
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

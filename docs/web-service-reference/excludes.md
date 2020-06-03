@@ -1,5 +1,5 @@
 ---
-title: Excludes
+title: Schließt
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bbaeddf6-9a67-4ee0-af99-7a7a5bbdc0e1
-description: Das Element ausgeschlossen führt eine bitweise Maske der angegebenen Eigenschaft und einen angegebenen Wert.
-ms.openlocfilehash: febd4171210319d8f7e475f9879c5f895f508713
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das excludes-Element führt eine bitweise Maske der angegebenen Eigenschaft und eines angegebenen Werts aus.
+ms.openlocfilehash: d5fcd8b86b454aa731bd43974b5b7d674fe76ed6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354386"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530614"
 ---
-# <a name="excludes"></a>Excludes
+# <a name="excludes"></a>Schließt
 
-Das Element **ausgeschlossen** führt eine bitweise Maske der angegebenen Eigenschaft und einen angegebenen Wert. 
+Das **excludes** -Element führt eine bitweise Maske der angegebenen Eigenschaft und eines angegebenen Werts aus. 
   
 ```xml
 <Excludes>
@@ -58,39 +58,39 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifiziert die Eigenschaften von URI häufig verwiesen wird.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Einzelne Elemente eines Wörterbuchs identifiziert.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |MAPI-Eigenschaften identifiziert.  <br/> |
-|[Bitmaske](bitmask.md) <br/> |Stellt eine hexadezimale oder decimal Maske, die während einer Einschränkung [ausgeschlossen](excludes.md) verwendet werden. Wenn die Bitmaske eine hexadezimale Zahl darstellt, muss es 0 X oder 0 X vorangestellt werden. Andernfalls wird er eine Dezimalzahl betrachtet werden.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member eines Wörterbuchs.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert MAPI-Eigenschaften.  <br/> |
+|[Bitmaske](bitmask.md) <br/> |Stellt eine Hexadezimal-oder Dezimal Maske dar, die während eines [Exclude](excludes.md) -Einschränkungs Vorgangs verwendet werden soll. Wenn die Bitmaske eine Hexadezimalzahl darstellt, muss Ihr das Präfix 0x oder 0x vorangestellt werden. Andernfalls wird Sie als Dezimalzahl betrachtet.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Einschränkung](restriction.md) <br/> |Stellt die Einschränkung oder die Abfrage, die zum Filtern von Elementen oder Ordner in FindItem/FindFolder, und suchen Sie Ordner Vorgänge verwendet wird.  <br/> |
-|[not](not.md) <br/> |Stellt einen Search-Ausdruck, der den booleschen Wert des Suchbegriffs negiert, die er enthält.  <br/> |
-|[Und](and.md) <br/> |Stellt einen Search-Ausdruck, der Sie einen Vorgang vom Typ Boolean und zwischen zwei oder mehr Suchausdrücke ausführen kann. Das Ergebnis der And-Operation ist **true** , wenn **alle enthaltenen das And Search Ausdrücke zutreffen**.  <br/> |
-|[- oder -](or.md) <br/> |Stellt einen Suche Ausdruck, der ein logisches OR Suchbegriffs durchführt darin enthaltenen dar. Das Element [oder](or.md) gibt **true** zurück, wenn ein untergeordnetes Element **true**zurück.  <br/> |
+|[Einschränkung](restriction.md) <br/> |Stellt die Einschränkung oder Abfrage dar, die zum Filtern von Elementen oder Ordnern in FindItem/FindFolder und Suchordner Vorgängen verwendet wird.  <br/> |
+|[not](not.md) <br/> |Stellt einen Suchausdruck dar, der den booleschen Wert des darin enthaltenen Suchausdrucks negiert.  <br/> |
+|[Und](and.md) <br/> |Stellt einen Suchausdruck dar, mit dem Sie einen booleschen Wert und eine Operation zwischen zwei oder mehr Suchausdrücken ausführen können. Das Ergebnis der and-Operation ist **true** , wenn alle in der enthaltenen Suchausdrücke auf **true**festgelegt sind.  <br/> |
+|[- oder -](or.md) <br/> |Stellt einen Suchausdruck dar, der eine logische OR-Anweisung für den darin enthaltenen Suchausdruck ausführt. Das [or](or.md) -Element gibt **true** zurück, wenn eines der untergeordneten Elemente **true**zurückgibt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-**Ausgeschlossen** lösen auf **true fest,** Wenn eine AND-Operation für die folgenden auf 0 aufgelöst wird: 
+" **Excludes** " wird in " **true** " aufgelöst, wenn ein-und-Vorgang, der für Folgendes ausgeführt wird, in 0 aufgelöst wird: 
   
-1. Die bitweise Wert für die Eigenschaft
+1. Der bitweise Wert für die Eigenschaft
     
-2. Der Bitmaskenwert für die-Eigenschaft
+2. Der Wert der Bitmaske für die Eigenschaft
     
-**Ausgeschlossen** kann nur auf eine Eigenschaft angewendet werden, die einen ganzzahligen Wert hat. Wenn der Eigenschaftentyp etwas anderes als eine ganze Zahl ist, wird ein Fehlercode des **ErrorUnsupportedPathForQuery** in der Antwort zurückgegeben. 
+**Excludes** können nur auf eine Eigenschaft angewendet werden, die einen ganzzahligen Wert aufweist. Wenn der Eigenschaftentyp etwas anderes als eine ganze Zahl ist, wird ein Fehlercode von **ErrorUnsupportedPathForQuery** in der Antwort zurückgegeben. 
   
-Sie können den umgekehrten Vorgang durch Aufrufen von Not(Excludes) ausführen.
+Sie können den Reverse-Vorgang durchführen, indem Sie Not (excludes) aufrufen.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

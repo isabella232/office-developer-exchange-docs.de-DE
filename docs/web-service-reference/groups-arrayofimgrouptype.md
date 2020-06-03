@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 544dbb60-d6cb-47e1-b157-f0166147b6cf
-description: Das Gruppen-Element stellt ein Array von instant messaging (IM) Gruppen.
-ms.openlocfilehash: 7632c922666742d6ab9428a2b1e78ae6a1d544b6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das groups-Element stellt ein Array von Chatgruppen (Instant Messaging) dar.
+ms.openlocfilehash: ad866afdecbcac0e555978647e3a46a033361672
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829784"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530071"
 ---
 # <a name="groups-arrayofimgrouptype"></a>Gruppen (ArrayOfImGroupType)
 
-Das **Gruppen** -Element stellt ein Array von instant messaging (IM) Gruppen. 
+Das **Groups** -Element stellt ein Array von Chatgruppen (Instant Messaging) dar. 
   
 ```XML
 <Groups>
@@ -37,13 +37,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[ImGroup](imgroup.md)
+[Imgroup](imgroup.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[ImItemList](imitemlist.md)
+[Imitemlist](imitemlist.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

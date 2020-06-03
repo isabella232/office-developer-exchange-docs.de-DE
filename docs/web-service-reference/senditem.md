@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: a966da19-b05a-4504-ac98-91acc1667b9a
-description: Das SendItem-Element ist das Stammelement im eine Anforderung zum Senden eines Elements im Exchange-Speicher.
-ms.openlocfilehash: c5ce52ee4643219aa31ae59e8b7d40d7a904c8ab
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SendItem-Element ist das Stammelement in einer Anforderung, ein Element im Exchange-Informationsspeicher zu senden.
+ms.openlocfilehash: 28f0d484dd079146c998cb7317bd2d80c6739e19
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831340"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530565"
 ---
 # <a name="senditem"></a>SendItem
 
-Das **SendItem** -Element ist das Stammelement im eine Anforderung zum Senden eines Elements im Exchange-Speicher. 
+Das **SendItem** -Element ist das Stammelement in einer Anforderung, ein Element im Exchange-Informationsspeicher zu senden. 
   
 ```xml
 <SendItem SaveItemToFolder="">
@@ -39,44 +39,44 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**SaveItemToFolder** <br/> |Bestimmt, ob eine Kopie der das gesendete Element gespeichert wird. Speichern in Aktion hängt vom Wert der **SaveItemToFolder** und gibt an, ob ein Element [des SavedItemFolderId](saveditemfolderid.md) in der Anforderung vorhanden ist. Dieses Element ist erforderlich.  <br/> |
+|**SaveItemToFolder** <br/> |Gibt an, ob eine Kopie des gesendeten Elements gespeichert wird. Die Save-Aktion hängt vom Wert von **SaveItemToFolder** und davon ab, ob ein [SavedItemFolderId](saveditemfolderid.md) -Element in der Anforderung vorhanden ist. Dieses Element ist erforderlich.  <br/> |
    
-#### <a name="saveitemtofolder-attribute"></a>SaveItemToFolder-Attributs
+#### <a name="saveitemtofolder-attribute"></a>SaveItemToFolder-Attribut
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|**"true"** <br/> |Wenn das Element [des SavedItemFolderId](saveditemfolderid.md) nicht vorhanden ist, wird das Element im Ordner "Gesendete Elemente" gespeichert. Wenn das Element [des SavedItemFolderId](saveditemfolderid.md) vorhanden ist, wird das Element im Ordner gespeichert, die durch das Element [des SavedItemFolderId](saveditemfolderid.md) angegeben ist.  <br/> |
-|**false** <br/> |Wenn das Element [des SavedItemFolderId](saveditemfolderid.md) nicht vorhanden ist, wird das Element nicht gespeichert. Wenn das Element [des SavedItemFolderId](saveditemfolderid.md) vorhanden ist, wird eine Fehlerantwort mit einem [ResponseCode](responsecode.md) -Element zurückgegeben werden soll, die den **ErrorInvalidSendItemSaveSettings** -Wert enthält.  <br/> |
+|**true** <br/> |Wenn das [SavedItemFolderId](saveditemfolderid.md) -Element nicht vorhanden ist, wird das Element im Ordner "Gesendete Elemente" gespeichert. Wenn das [SavedItemFolderId](saveditemfolderid.md) -Element vorhanden ist, wird das Element in dem Ordner gespeichert, der durch das [SavedItemFolderId](saveditemfolderid.md) -Element angegeben wird.  <br/> |
+|**False** <br/> |Wenn das [SavedItemFolderId](saveditemfolderid.md) -Element nicht vorhanden ist, wird das Element nicht gespeichert. Wenn das [SavedItemFolderId](saveditemfolderid.md) -Element vorhanden ist, wird eine Fehlerantwort mit einem [Response Code](responsecode.md) -Element zurückgegeben, das den **ErrorInvalidSendItemSaveSettings** -Wert enthält.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Artikelnummern ein.](itemids.md) <br/> |Enthält die eindeutigen Identitäten der Elemente, Vorkommen Elemente und Terminserien der Master-Shape, mit denen löschen, senden, abrufen, verschieben oder Kopieren von Elementen in der Exchange-Speicher.  <br/> |
-|[Des SavedItemFolderId](saveditemfolderid.md) <br/> |Identifiziert den Zielordner für Vorgänge, die zu aktualisieren, senden und Elemente im Exchange-Speicher zu erstellen.  <br/> |
+|[ItemIds](itemids.md) <br/> |Enthält die eindeutigen Identitäten von Elementen, Element Elementen und wiederkehrenden Hauptelementen, die zum Löschen, senden, abrufen, verlagern oder Kopieren von Elementen in der Exchange-Informationsspeicher verwendet werden.  <br/> |
+|[SavedItemFolderId](saveditemfolderid.md) <br/> |Identifiziert den Zielordner für Vorgänge, die Elemente im Exchange-Informationsspeicher aktualisieren, senden und erstellen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn ein Element im Ordner "Gesendete Elemente" gesendet wird, wird das gesendete Element gelöscht, und eine Kopie davon hört im Ordner "Gesendete Elemente".
+Wenn ein Element im Ordner "Gesendete Elemente" gesendet wird, wird das gesendete Element gelöscht, und eine Kopie davon wird im Ordner "Gesendete Elemente" abgelegt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[SendItem Operation](senditem-operation.md)
+[SendItem-Vorgang](senditem-operation.md)
 

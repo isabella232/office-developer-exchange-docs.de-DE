@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6b6b2d67-219d-4dfb-a4ed-d627b1cfb33f
-description: Das Gruppen-Element enthält eine Auflistung von Gruppen, die mit den Kriterien Such- und Aggregation gefunden werden, die in der FindItem Vorgang Anforderung identifiziert wird.
-ms.openlocfilehash: 406a1974899e89243f52ba7a56afcc172c4f3df6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das groups-Element enthält eine Auflistung von Gruppen, die mit den Such-und Aggregations Kriterien gefunden werden, die in der FindItem-Vorgangsanforderung angegeben werden.
+ms.openlocfilehash: 915d9dffd6d8cec1def6634e6b70642d563b5242
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829786"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530789"
 ---
 # <a name="groups"></a>Gruppen
 
-Das **Gruppen** -Element enthält eine Auflistung von Gruppen, die mit den Kriterien Such- und Aggregation gefunden werden, die in der Anforderung [FindItem Vorgang](finditem-operation.md) identifiziert wird. 
+Das **Groups** -Element enthält eine Auflistung von Gruppen, die mit den Such-und Aggregations Kriterien gefunden werden, die in der [FindItem-Vorgangs](finditem-operation.md) Anforderung angegeben werden. 
   
 ```xml
 <Groups>
@@ -42,25 +42,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GroupedItems](groupeditems.md) <br/> |Stellt eine Auflistung von Elementen, die das Ergebnis einer gruppierten [FindItem Vorgang](finditem-operation.md) sind aufrufen.  <br/> |
+|[GroupedItems](groupeditems.md) <br/> |Stellt eine Auflistung von Elementen dar, die das Ergebnis eines Aufrufs einer gruppierten [FindItem-Operation](finditem-operation.md) sind.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RootFolder (FindItemResponseMessage)](rootfolder-finditemresponsemessage.md) <br/> |Enthält die Ergebnisse einer Suche in einer einzelnen Stammordner während eines Vorgangs [FindItem Vorgang](finditem-operation.md) .  <br/> |
+|[RootFolder (FindItemResponseMessage)](rootfolder-finditemresponsemessage.md) <br/> |Enthält die Ergebnisse aus der Suche eines einzelnen Stammordners während eines Vorgangs des [FindItem-Vorgangs](finditem-operation.md) .  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Tritt auf, [GroupedItems](groupeditems.md) einmal für jede Gruppe unterschiedliche innerhalb der Ergebnismenge. 
+Für jede unterschiedliche Gruppe innerhalb des Ergebnisses wird eine [GroupedItems](groupeditems.md) -Instanz ausgeführt. 
   
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
@@ -72,5 +72,5 @@ Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichni
 [FindItem-Vorgang](finditem-operation.md)
 
 
-[Finding Items](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+[Suchen von Elementen](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8c69db7b-54b5-4ae2-abca-4d6e0937a790
-description: Das SetFolderField-Element stellt ein Update, das den Wert für eine einzelne Eigenschaft für einen Ordner in einem Vorgang UpdateFolder fest.
-ms.openlocfilehash: ed5c055c697865d5eb728d269c6f4c7ce60f4b5c
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das setfolderfield-Element stellt ein Update dar, mit dem der Wert für eine einzelne Eigenschaft eines Ordners in einem UpdateFolder-Vorgang festgelegt wird.
+ms.openlocfilehash: ab75a3862801b9a7b3369d9a4116c653b461781c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353287"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530317"
 ---
 # <a name="setfolderfield"></a>SetFolderField
 
-Das **SetFolderField** -Element stellt ein Update, das den Wert für eine einzelne Eigenschaft für einen Ordner in einem Vorgang UpdateFolder fest. 
+Das **setfolderfield** -Element stellt ein Update dar, mit dem der Wert für eine einzelne Eigenschaft eines Ordners in einem UpdateFolder-Vorgang festgelegt wird. 
 
 ```xml
 <SetFolderField>
@@ -143,32 +143,32 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifiziert die Eigenschaften von URI häufig verwiesen wird.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Einzelne Elemente eines Wörterbuchs identifiziert.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert extended MAPI-Eigenschaften.  <br/> |
-|[Folder](folder.md) <br/> |Gibt einen Ordner aktualisieren.  <br/> |
-|[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner, der in erster Linie Kalenderelemente enthält.  <br/> |
-|[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Kontakteordner in einem Postfach an.  <br/> |
-|[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner, der in einem Postfach enthalten ist.  <br/> |
-|[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner, der in einem Postfach enthalten ist.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member eines Wörterbuchs.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert erweiterte MAPI-Eigenschaften.  <br/> |
+|[Ordner](folder.md) <br/> |Gibt einen Ordner an, der aktualisiert werden soll.  <br/> |
+|[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner dar, der in erster Linie Kalenderelemente enthält.  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Ordner Kontakte in einem Postfach dar.  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner dar, der in einem Postfach enthalten ist.  <br/> |
+|[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner dar, der in einem Postfach enthalten ist.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Updates (Ordner)](updates-folder.md) <br/> |Enthält eine Reihe von Elementen, die definiert, anfügen, festlegen und Löschen von Änderungen an den Eigenschaften des Ordners.  <br/> |
+|[Updates (Ordner)](updates-folder.md) <br/> |Enthält eine Gruppe von Elementen, die Append-, festlegen-und DELETE-Änderungen an Ordner Eigenschaften definiert.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn die Eigenschaft vorhanden ist, wird der Wert der Eigenschaft auf den angegebenen Wert festgelegt. Wenn die Eigenschaft nicht vorhanden ist, wird die Eigenschaft mit dem angegebenen Wert erstellt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

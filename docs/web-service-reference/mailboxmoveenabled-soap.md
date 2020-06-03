@@ -6,23 +6,23 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 73d09137-d3bd-46b3-954a-a358ead07c91
-description: Das MailBoxMoveEnabled-Element darstellt, das MailboxMoveEnabled()-Flag. Das MailBoxMoveEnabled-Element ist nur zur internen Verwendung. Dieses Element wird von Clients nicht verwendet.
-ms.openlocfilehash: 9ba4f49cbd43ab8ca24d9597f69b55c448fd9263
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MailBoxMoveEnabled-Element stellt das MailBoxMoveEnabled ()-Flag dar. Das MailBoxMoveEnabled-Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet.
+ms.openlocfilehash: 4072d1c231e7cf109a39445fc44fbbb624f6f3a1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830292"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530740"
 ---
 # <a name="mailboxmoveenabled-soap"></a>MailboxMoveEnabled (SOAP)
 
-Das **MailBoxMoveEnabled** -Element darstellt, das **MailboxMoveEnabled()** -Flag. Das **MailBoxMoveEnabled** -Element ist nur zur internen Verwendung. Dieses Element wird von Clients nicht verwendet. 
+Das **MailBoxMoveEnabled** -Element stellt das **MailBoxMoveEnabled ()** -Flag dar. Das **MailBoxMoveEnabled** -Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet. 
   
 ```XML
 <MailBoxMoveEnabled>true | false</MailBoxMoveEnabled>
 ```
 
-**Boolean**
+**Boolescher Wert**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -40,15 +40,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste von organisationsbeziehungen für eine einzelne Organisation.  <br/> |
+|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste von Organisationsbeziehungen für eine einzelne Organisation dar.  <br/> |
    
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

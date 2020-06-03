@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0cd70eea-8d36-4b1b-bf80-5edf359e7ba7
-description: Das PendingMailTips-Element gibt an, dass die e-Mail-Infos in diesem Element nicht ausgewertet werden konnte, bevor die Verarbeitung der Servertimeout abgelaufen.
-ms.openlocfilehash: 73d597f6534ea29f7d26d6526c48631251521ae5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PendingMailTips-Element gibt an, dass die e-Mail-Tipps in diesem Element nicht ausgewertet werden konnten, bevor das Verarbeitungstimeout des Servers abgelaufen ist.
+ms.openlocfilehash: 715d68b367c3b7251c7406c10c1ec52dcd992a59
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830704"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529966"
 ---
 # <a name="pendingmailtips"></a>PendingMailTips
 
-Das **PendingMailTips** -Element gibt an, dass die e-Mail-Infos in diesem Element nicht ausgewertet werden konnte, bevor die Verarbeitung der Servertimeout abgelaufen. 
+Das **PendingMailTips** -Element gibt an, dass die e-Mail-Tipps in diesem Element nicht ausgewertet werden konnten, bevor das Verarbeitungstimeout des Servers abgelaufen ist. 
   
 ```XML
 <PendingMailTips>All | OutOfOfficeMessage | MailboxFullStatus | CustomMailTip | ExternalMemberCount | TotalMemberCount | MaxMessageSize | DeliveryRestriction | ModerateStatus | InvalidRecipient</PendingMailTips>
@@ -44,34 +44,34 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[E-Mail-Infos](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Infos.  <br/> |
+|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Tipps dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Die folgende Tabelle enthält die möglichen Werte für das **PendingMailTips** -Element. 
+In der folgenden Tabelle sind die möglichen Werte für das **PendingMailTips** -Element aufgeführt. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Alle  <br/> |Stellt alle verfügbaren e-Mail-Infos.  <br/> |
-|OutOfOfficeMessage  <br/> |Stellt die Nachricht Out of Office (OOF) dar.  <br/> |
-|MailboxFullStatus  <br/> |Stellt den Status für ein volles Postfach an.  <br/> |
-|CustomMailTip  <br/> |Stellt eine benutzerdefinierte e-Mail-Info.  <br/> |
-|ExternalMemberCount  <br/> |Die Anzahl der externen Elemente darstellt.  <br/> |
-|TotalMemberCount  <br/> |Stellt die Anzahl aller Elemente.  <br/> |
-|MaxMessageSize  <br/> |Stellt die maximale Größe von Nachrichten, die ein Empfänger akzeptieren kann.  <br/> |
-|DeliveryRestriction  <br/> |Gibt an, ob Einschränkungen Übermittlung des Absenders der Nachricht verhindern Erreichen des Empfängers.  <br/> |
-|ModerationStatus  <br/> |Gibt an, ob der Absender der Nachricht von einem Moderator überprüft werden.  <br/> |
+|Alle  <br/> |Stellt alle verfügbaren e-Mail-Tipps dar.  <br/> |
+|OutOfOfficeMessage  <br/> |Stellt die Abwesenheit (Out of Office, OOF) Meldung dar.  <br/> |
+|MailboxFullStatus  <br/> |Stellt den Status für ein Postfach dar, das voll ist.  <br/> |
+|CustomMailTip  <br/> |Stellt einen benutzerdefinierten e-Mail-Tipp dar.  <br/> |
+|ExternalMemberCount  <br/> |Stellt die Anzahl externer Member dar.  <br/> |
+|TotalMemberCount  <br/> |Stellt die Anzahl aller Elemente dar.  <br/> |
+|MaxMessageSize  <br/> |Stellt die maximale Nachrichtengröße dar, die ein Empfänger annehmen kann.  <br/> |
+|DeliveryRestriction  <br/> |Gibt an, ob durch Übermittlungseinschränkungen verhindert wird, dass die Nachricht des Absenders den Empfänger erreicht.  <br/> |
+|ModerationStatus  <br/> |Gibt an, ob die Nachricht des Absenders von einem Moderator überprüft wird.  <br/> |
 |InvalidRecipient  <br/> |Gibt an, ob der Empfänger ungültig ist.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

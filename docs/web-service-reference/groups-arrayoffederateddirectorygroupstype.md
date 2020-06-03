@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: afd3a2ff-b20e-47b8-9053-bcace2d77c56
-description: Das Element Groups (ArrayOfFederatedDirectoryGroupsType) ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: bbee0671d77dbf208448b1a0c10def71e17e8f08
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das groups-Element (ArrayOfFederatedDirectoryGroupsType) ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 1fcb34cea099347ceabe267dd64791006b5498c1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829783"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530796"
 ---
 # <a name="groups-arrayoffederateddirectorygroupstype"></a>Gruppen (ArrayOfFederatedDirectoryGroupsType)
 
-Das Element **Groups (ArrayOfFederatedDirectoryGroupsType)** ist nur zur internen Verwendung vorgesehen. 
+Das **groups-Element (ArrayOfFederatedDirectoryGroupsType)** ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

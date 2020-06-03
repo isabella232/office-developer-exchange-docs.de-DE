@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8e71cb44-1df6-444a-add7-0c1363863f65
-description: Das Ordner-Element enthält ein Array von Ordnern, die im Ordner Vorgänge verwendet werden.
-ms.openlocfilehash: 34372f2480825c7a9977eeae8e730c201307f36b
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das Folders-Element enthält ein Array von Ordnern, die in Ordnervorgängen verwendet werden.
+ms.openlocfilehash: b087be0501f04390b80458458e7e7ccc24bf27bd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353588"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530979"
 ---
 # <a name="folders"></a>Ordner
 
-Das **Ordner** -Element enthält ein Array von Ordnern, die im Ordner Vorgänge verwendet werden. 
+Das **Folders** -Element enthält ein Array von Ordnern, die in Ordnervorgängen verwendet werden. 
   
 ```xml
 <Folders>
@@ -67,37 +67,37 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Folder](folder.md) <br/> |Gibt einen Ordner erstellen, abrufen, suchen, synchronisieren oder zu aktualisieren.  <br/> |
-|[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner, der in erster Linie Kalenderelemente enthält.  <br/> |
-|[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Kontakteordner in einem Postfach an.  <br/> |
-|[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner in einem Postfach enthalten.  <br/> |
-|[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner in einem Postfach an.  <br/> |
+|[Folder](folder.md) <br/> |Gibt einen Ordner zum Erstellen, abrufen, suchen, synchronisieren oder aktualisieren an.  <br/> |
+|[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner dar, der in erster Linie Kalenderelemente enthält.  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Ordner Kontakte in einem Postfach dar.  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Stellt einen in einem Postfach enthaltenen Suchordner dar.  <br/> |
+|[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner in einem Postfach dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CopyFolderResponseMessage](copyfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen Anforderung [CopyFolder-Vorgang](copyfolder-operation.md) .  <br/> |
-|[CreateFolder](createfolder.md) <br/> |Definiert eine Anforderung an einen Ordner im Exchange-Speicher zu erstellen.  <br/> |
-|[CreateFolderResponseMessage](createfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen Anforderung [CreateFolder-Vorgang](createfolder-operation.md) .  <br/> |
-|[CreateManagedFolderResponseMessage](createmanagedfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen Anforderung [CreateManagedFolder Vorgang](createmanagedfolder-operation.md) .  <br/> |
-|[GetFolderResponseMessage](getfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung [GetFolder-Vorgang](getfolder-operation.md) .  <br/> |
-|[MoveFolderResponseMessage](movefolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer Anforderung [MoveFolder-Vorgang](movefolder-operation.md) .  <br/> |
-|[ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) <br/> |Identifiziert den Ordner, in dem ein neuer Ordner erstellt wird.  <br/> |
-|[RootFolder (FindFolderResponseMessage)](rootfolder-findfolderresponsemessage.md) <br/> |Enthält die Ergebnisse einen einzelner Stammordner während eines [Vorgangs FindFolder](findfolder-operation.md)zu suchen.  <br/> |
-|[UpdateFolderResponseMessage](updatefolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen Anforderung [UpdateFolder Vorgang](updatefolder-operation.md) .  <br/> |
+|[CopyFolderResponseMessage](copyfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [CopyFolder-Vorgangs](copyfolder-operation.md) Anforderung.  <br/> |
+|[CreateFolder](createfolder.md) <br/> |Definiert eine Anforderung zum Erstellen eines Ordners im Exchange-Informationsspeicher.  <br/> |
+|[CreateFolderResponseMessage](createfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [CreateFolder-Vorgangs](createfolder-operation.md) Anforderung.  <br/> |
+|[CreateManagedFolderResponseMessage](createmanagedfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [CreateManagedFolder-Vorgangs](createmanagedfolder-operation.md) Anforderung.  <br/> |
+|[GetFolderResponseMessage](getfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer [GetFolder-Vorgangs](getfolder-operation.md) Anforderung.  <br/> |
+|[MoveFolderResponseMessage](movefolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer [MoveFolder-Vorgangs](movefolder-operation.md) Anforderung.  <br/> |
+|[ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) <br/> |Gibt den Ordner an, in dem ein neuer Ordner erstellt wird.  <br/> |
+|[RootFolder (FindFolderResponseMessage)](rootfolder-findfolderresponsemessage.md) <br/> |Enthält die Ergebnisse der Suche eines einzelnen Stammordners während eines [FindFolder-Vorgangs](findfolder-operation.md).  <br/> |
+|[UpdateFolderResponseMessage](updatefolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [UpdateFolder-Vorgangs](updatefolder-operation.md) Anforderung.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element ist ein erforderliches untergeordnetes Element des Elements [ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) . 
+Dieses Element ist ein erforderliches untergeordnetes Element des [parentfolderid-Elements (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) . 
   
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

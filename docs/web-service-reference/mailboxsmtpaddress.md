@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: de7c9035-ebbc-4473-ac14-3b22ce62768c
-description: Das MailboxSmtpAddress-Element darstellt, die SMTP-Adresse des Benutzers, dessen Posteingangsregeln abgerufen oder aktualisiert werden sollen; oder, deren Ablaufdatum Kennwort abgerufen werden sollen.
-ms.openlocfilehash: 60b2c018f2a05e9630e92e28de1054a421b41e52
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das MailboxSmtpAddress-Element stellt die SMTP-Adresse des Benutzers dar, dessen Posteingangsregeln abgerufen oder aktualisiert werden sollen. oder deren Kennwort-Ablaufdatum abgerufen werden soll.
+ms.openlocfilehash: 613e8098210257280bec47f2b22a2d29d04fa07c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830303"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530544"
 ---
 # <a name="mailboxsmtpaddress"></a>MailboxSmtpAddress
 
-Das **MailboxSmtpAddress** -Element darstellt, die SMTP-Adresse des Benutzers, dessen Posteingangsregeln abgerufen oder aktualisiert werden sollen; oder, deren Ablaufdatum Kennwort abgerufen werden sollen. 
+Das **MailboxSmtpAddress** -Element stellt die SMTP-Adresse des Benutzers dar, dessen Posteingangsregeln abgerufen oder aktualisiert werden sollen. oder deren Kennwort-Ablaufdatum abgerufen werden soll. 
   
 ```XML
 <MailboxSmtpAddress/>
 ```
 
-**string**
+**Zeichenfolge**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -45,25 +45,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetInboxRules](getinboxrules.md) <br/> |Definiert eine Anforderung zum Abrufen der Posteingangsregeln für ein Postfach im Serverspeicher.  <br/> |
-|[GetPasswordExpirationDate](getpasswordexpirationdate.md) <br/> |Definiert eine Anforderung an das Kennwort Ablaufdatum ein e-Mail-Konto zu erhalten.  <br/> |
-|[UpdateInboxRules](updateinboxrules.md) <br/> |Definiert eine Anforderung zum Aktualisieren der Posteingangsregeln in einem Postfach im Serverspeicher.  <br/> |
+|[GetInboxRules](getinboxrules.md) <br/> |Definiert eine Anforderung zum Abrufen der Posteingangsregeln für ein Postfach im Server Speicher.  <br/> |
+|[GetPasswordExpirationDate](getpasswordexpirationdate.md) <br/> |Definiert eine Anforderung zum Abrufen des Kennwortablauf Datums eines e-Mail-Kontos.  <br/> |
+|[UpdateInboxRules](updateinboxrules.md) <br/> |Definiert eine Anforderung zum Aktualisieren der Posteingangsregeln in einem Postfach im Server Speicher.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **MailboxSmtpAddress** -Element ist ein optionales Element. Wenn das Element **MailboxSmtpAddress** ausgelassen wird, wird die Adresse des angemeldeten Benutzers verwendet. 
+Das **MailboxSmtpAddress** -Element ist ein optionales Element. Wenn das **MailboxSmtpAddress** -Element ausgelassen wird, wird die Adresse des angemeldeten Benutzers verwendet. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |

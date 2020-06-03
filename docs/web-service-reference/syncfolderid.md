@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3645fa03-236d-4e5f-b8b9-5d98f7f35fa2
-description: Das SyncFolderId-Element darstellt, den Ordner, der zu synchronisierenden Elemente enthält.
-ms.openlocfilehash: c90a20095ca4706f0c6edae3e98eaadd6024d817
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das SyncFolderId-Element stellt den Ordner dar, der die zu synchronisierenden Elemente enthält.
+ms.openlocfilehash: 35b66579116a00d27df722629ff980471ca0272e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354400"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530296"
 ---
 # <a name="syncfolderid"></a>SyncFolderId
 
-Das **SyncFolderId** -Element darstellt, den Ordner, der zu synchronisierenden Elemente enthält. 
+Das **SyncFolderId** -Element stellt den Ordner dar, der die zu synchronisierenden Elemente enthält. 
   
 ```xml
 <SyncFolderId>
@@ -49,27 +49,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Enthält den Schlüssel-ID und Ändern eines Ordners.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifiziert MicrosoftExchange Server 2007-Ordner, die nach Namen verwiesen werden können.  <br/> |
+|[FolderId](folderid.md) <br/> |Enthält den Bezeichner und den Änderungsschlüssel eines Ordners.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifiziert Microsoft Exchange Server 2007-Ordner, auf die über den Namen verwiesen werden kann.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SyncFolderHierarchy](syncfolderhierarchy.md) <br/> |Definiert eine Anforderung zum Synchronisieren einer Ordnerhierarchie in einen Exchange-Speicher.  <br/> |
-|[SyncFolderItems](syncfolderitems.md) <br/> |Definiert eine Anforderung zum Synchronisieren von Elementen in einem Ordner von Exchange-Speicher.  <br/> |
+|[SyncFolderHierarchy](syncfolderhierarchy.md) <br/> |Definiert eine Anforderung zum Synchronisieren einer Ordnerhierarchie in einer Exchange-Informationsspeicher.  <br/> |
+|[SyncFolderItems](syncfolderitems.md) <br/> |Definiert eine Anforderung zum Synchronisieren von Elementen in einem Exchange-Informationsspeicher Ordner.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Exchange Server 2007 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

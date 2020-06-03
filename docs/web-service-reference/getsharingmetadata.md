@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b609ee26-6d28-4559-81b6-b8e8d4759a23
-description: Das GetSharingMetadata-Element definiert eine Anforderung an ein undurchsichtiger Authentifizierungstoken erhalten möchten, die die Einladung zur Freigabe identifiziert. Dieses Element ist das Basiselement für den Vorgang GetSharingMetadata.
-ms.openlocfilehash: 5283d35e11350ef10ed8cc01527e787ef54be927
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GetSharingMetadata-Element definiert eine Anforderung zum Abrufen eines nicht transparenten Authentifizierungstokens, das die Freigabeeinladung identifiziert. Dieses Element ist das Basiselement für den GetSharingMetadata-Vorgang.
+ms.openlocfilehash: 406908e566d6d4249003b1a19a9ce79b8b328c4e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829677"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530846"
 ---
 # <a name="getsharingmetadata"></a>GetSharingMetadata
 
-Das **GetSharingMetadata** -Element definiert eine Anforderung an ein undurchsichtiger Authentifizierungstoken erhalten möchten, die die Einladung zur Freigabe identifiziert. Dieses Element ist das Basiselement für den [GetSharingMetadata-Vorgang](getsharingmetadata-operation.md).
+Das **GetSharingMetadata** -Element definiert eine Anforderung zum Abrufen eines nicht transparenten Authentifizierungstokens, das die Freigabeeinladung identifiziert. Dieses Element ist das Basiselement für den [GetSharingMetadata-Vorgang](getsharingmetadata-operation.md).
   
 ```XML
 <GetSharingMetadata>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[IdOfFolderToShare](idoffoldertoshare.md) <br/> |Stellt den Bezeichner des Ordners auf dem Server, der freigegeben werden sollen. Dieses Element ist erforderlich.  <br/> |
-|[SenderSmtpAddress](sendersmtpaddress.md) <br/> |Stellt die SMTP-e-Mail-Adresse, die entspricht an das Postfach, das den Ordner enthält, der durch das [IdOfFolderToShare](idoffoldertoshare.md) -Element identifiziert wird. Dieses Element ist erforderlich.  <br/> |
-|[Empfänger (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) <br/> |Stellt die SMTP-e-Mail-Adressen eine oder mehrere Entitäten, die Zugriff auf die Daten in den Ordner erteilt werden, die durch das [IdOfFolderToShare](idoffoldertoshare.md) -Element identifiziert wird. Dieses Element ist erforderlich.  <br/> |
+|[IdOfFolderToShare](idoffoldertoshare.md) <br/> |Stellt den Bezeichner des Ordners auf dem Server dar, der freigegeben werden soll. Dieses Element ist erforderlich.  <br/> |
+|[SenderSmtpAddress](sendersmtpaddress.md) <br/> |Stellt die SMTP-e-Mail-Adresse dar, die dem Postfach entspricht, das den Ordner enthält, der durch das [IdOfFolderToShare](idoffoldertoshare.md) -Element identifiziert wird. Dieses Element ist erforderlich.  <br/> |
+|[Recipients (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) <br/> |Stellt die SMTP-e-Mail-Adressen von einer oder mehreren Entitäten dar, denen der Zugriff auf die Daten in dem Ordner gewährt wird, der durch das [IdOfFolderToShare](idoffoldertoshare.md) -Element identifiziert wird. Dieses Element ist erforderlich.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

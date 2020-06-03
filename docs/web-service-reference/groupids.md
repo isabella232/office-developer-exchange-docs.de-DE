@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4d32cb3b-eb84-4816-89cd-26dcf5131bc8
-description: Das Element GroupIds gibt ein Array von instant messaging-Gruppen-IDs.
-ms.openlocfilehash: 0e463a3a74eb3a4996b521f77e1175913b22d16b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das GroupIds-Element identifiziert ein Array von Gruppen Bezeichnern für Chatnachrichten.
+ms.openlocfilehash: 7583a197413063289739f0f32d9410047fc2f23d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829763"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530085"
 ---
 # <a name="groupids"></a>GroupIds
 
-Das Element **GroupIds** gibt ein Array von instant messaging-Gruppen-IDs. 
+Das **GroupIds** -Element identifiziert ein Array von Gruppen Bezeichnern für Chatnachrichten. 
   
 ```XML
 <GroupIds>
@@ -39,25 +39,25 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[ItemId](itemid.md) | [OccurrenceItemId](occurrenceitemid.md) | [RecurringMasterItemId](recurringmasteritemid.md) | [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
+[ItemID](itemid.md)  |  [OccurrenceItemId](occurrenceitemid.md)  |  [RecurringMasterItemId](recurringmasteritemid.md)  |  [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [GetImItems](getimitems.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f9701409-b620-4afe-b9ee-4c1e95507af7
-description: Das ExtendedProperty-Element identifiziert extended MAPI-Eigenschaften für Ordner und Elemente.
-ms.openlocfilehash: 9a6c44e953cab4900e4b75eb42bdf4d8633e58f9
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das Extended-Element identifiziert erweiterte MAPI-Eigenschaften für Ordner und Elemente.
+ms.openlocfilehash: 99ede097d803d6fbf534cde0e77c08cec054bfa3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353728"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530607"
 ---
 # <a name="extendedproperty"></a>ExtendedProperty
 
-Das **ExtendedProperty** -Element identifiziert extended MAPI-Eigenschaften für Ordner und Elemente. 
+Das **Extended** -Element identifiziert erweiterte MAPI-Eigenschaften für Ordner und Elemente. 
   
 ```xml
 <ExtendedProperty>
@@ -37,7 +37,7 @@ Das **ExtendedProperty** -Element identifiziert extended MAPI-Eigenschaften für
 </ExtendedProperty>
 ```
 
-**ExtendedPropertyType**
+**Extendedpropertytype Schematyp**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -51,9 +51,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert eine erweiterte MAPI-Eigenschaft zum Abrufen oder festlegen, oder erstellen.  <br/> |
-|[Values](values.md) <br/> |Enthält eine Auflistung von Werten für eine mehrwertige extended MAPI-Eigenschaft.  <br/> |
-|[Wert](value.md) <br/> |Enthält den Wert der erweiterten Eigenschaft einwertig MAPI.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Bezeichnet eine erweiterte MAPI-Eigenschaft, die abgerufen, festgelegt oder erstellt werden soll.  <br/> |
+|[Values](values.md) <br/> |Enthält eine Auflistung von Werten für eine mehrwertige erweiterte MAPI-Eigenschaft.  <br/> |
+|[Wert](value.md) <br/> |Enthält den Wert der erweiterten einwertigen MAPI-Eigenschaft.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -70,21 +70,21 @@ Keine.
 |[Message](message-ex15websvcsotherref.md) <br/> |Stellt eine Exchange-E-Mail-Nachricht dar.  <br/> |
 |[RemoveItem](removeitem.md) <br/> |Entfernt ein Element aus dem Exchange-Informationsspeicher.  <br/> |
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
-|[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner, der in erster Linie Kalenderelemente enthält.  <br/> |
-|[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Kontakteordner in einem Postfach an.  <br/> |
-|[Folder](folder.md) <br/> |Stellt einen Ordner zu erstellen, abrufen, suchen, synchronisieren oder zu aktualisieren.  <br/> |
-|[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner, der in einem Postfach enthalten ist.  <br/> |
-|[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner, der in einem Postfach enthalten ist.  <br/> |
+|[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner dar, der in erster Linie Kalenderelemente enthält.  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Ordner Kontakte in einem Postfach dar.  <br/> |
+|[Ordner](folder.md) <br/> |Stellt einen Ordner zum Erstellen, abrufen, suchen, synchronisieren oder aktualisieren dar.  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner dar, der in einem Postfach enthalten ist.  <br/> |
+|[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner dar, der in einem Postfach enthalten ist.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

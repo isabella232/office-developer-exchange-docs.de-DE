@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: d6cf1bd3-a19b-4d5f-9e25-8e337a4939e0
-description: Das FirstDayOfWeek-Element gibt den ersten Tag der Woche.
-ms.openlocfilehash: 99858d17213d077ce7c51ad1c746588f2f3939a7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das FirstDayOfWeek-Element gibt den ersten Tag der Woche an.
+ms.openlocfilehash: 1b4aee8e1ce2548cd6b0047623b0bcda47ad316b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758486"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530972"
 ---
 # <a name="firstdayofweek"></a>FirstDayOfWeek
 
-Das **FirstDayOfWeek** -Element gibt den ersten Tag der Woche. 
+Das **FirstDayOfWeek** -Element gibt den ersten Tag der Woche an. 
   
 ```XML
 <FirstDayOfWeek> Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday</FirstDayOfWeek>
 ```
 
- **DayOfWeekType**
+ **Dayofweektype**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -48,7 +48,7 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert der **FirstDayOfWeek** -Element gibt an, welche den Wochentag als der erste Tag der Woche verwendet wird. Im folgenden sind die möglichen Textwerte: 
+Der Textwert des **FirstDayOfWeek** -Elements gibt an, welcher Wochentag als erster Tag der Woche verwendet wird. Im folgenden sind die möglichen Text Werte zu finden: 
   
 - Sonntag
     
@@ -64,15 +64,15 @@ Der Textwert der **FirstDayOfWeek** -Element gibt an, welche den Wochentag als d
     
 - Samstag
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

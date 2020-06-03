@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0f000b39-e5c8-4a2a-baae-f8cbea0688bc
-description: Das Element ExternalDirectoryObjectId (FederatedDirectoryIdentityDetailsType) ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: efabffa431b57e8b55122864c93c8f578f14d0ee
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ExternalDirectoryObjectId (FederatedDirectoryIdentityDetailsType)-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 0076a348a6417e1d0768a8f72da0c4029e82a21b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758371"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530593"
 ---
 # <a name="externaldirectoryobjectid-federateddirectoryidentitydetailstype"></a>ExternalDirectoryObjectId (FederatedDirectoryIdentityDetailsType)
 
-Das Element **ExternalDirectoryObjectId (FederatedDirectoryIdentityDetailsType)** ist nur zur internen Verwendung vorgesehen. 
+Das **ExternalDirectoryObjectId (FederatedDirectoryIdentityDetailsType)-** Element ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

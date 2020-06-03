@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 69c41dd5-597c-45bc-be3f-e2f2b5615aa3
-description: Das WeeklyRecurrence-Element wird ein wöchentliches Serienmuster beschrieben.
-ms.openlocfilehash: 78bc76dd63c6737786df02f336217dc8de9a3a67
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das WeeklyRecurrence-Element beschreibt ein wöchentliches Serienmuster.
+ms.openlocfilehash: 5006238590c4cd7556a92fb1fbe13292383412b8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839529"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530366"
 ---
 # <a name="weeklyrecurrence"></a>WeeklyRecurrence
 
-Das **WeeklyRecurrence** -Element wird ein wöchentliches Serienmuster beschrieben. 
+Das **WeeklyRecurrence** -Element beschreibt ein wöchentliches Serienmuster. 
   
 ```XML
 <WeeklyRecurrence>
@@ -44,32 +44,32 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Intervall](interval.md) <br/> |Definiert das Intervall in Wochen zwischen zwei aufeinander folgende wöchentliche Serie Muster Elemente. Der Wert kann im Bereich von 1 bis 99 sein.  <br/> |
-|[DaysOfWeek (DaysOfWeekType)](daysofweek-daysofweektype.md) <br/> |Beschreibt, welche die Wochentage in wöchentliches Serienmuster sind.  <br/> |
-|[FirstDayOfWeek](firstdayofweek.md) <br/> |Gibt den ersten Tag der Woche.  <br/> |
+|[Intervall](interval.md) <br/> |Definiert das Intervall zwischen zwei aufeinander folgenden wöchentlichen Serienmuster Elementen in Wochen. Der Wert kann im Bereich von 1 bis 99 liegen.  <br/> |
+|[DaysOfWeek (DaysOfWeekType)](daysofweek-daysofweektype.md) <br/> |Beschreibt, welche Wochentage im wöchentlichen Serienmuster liegen.  <br/> |
+|[FirstDayOfWeek](firstdayofweek.md) <br/> |Gibt den ersten Tag der Woche an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Serieninformationen für wiederkehrende Aufgaben enthält.  <br/> |
-|[Serie (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Das Serienmuster für Kalenderelemente und Besprechungsanfragen enthält.  <br/> |
+|[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Enthält Serieninformationen für wiederkehrende Vorgänge.  <br/> |
+|[Serie (serietype)](recurrence-recurrencetype.md) <br/> |Enthält das Serienmuster für Kalenderelemente und Besprechungsanfragen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Zeitzone Offset Informationen geht verloren, wenn die [ [Starten](start.md) und](end-ex15websvcsotherref.md) Enddatum des wiederkehrenden master-Objekts nicht über ein Datum verfügen, das das erste Auftreten des ein wöchentliches Serienmuster gleich ist. 
+Die Zeitzonenoffset Informationen gehen verloren, wenn das [anfangs](start.md) -und Enddatum des [wiederkehrenden Haupt](end-ex15websvcsotherref.md) Elements kein Datum aufweist, das dem ersten Vorkommen eines wöchentlichen Serienmusters entspricht. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

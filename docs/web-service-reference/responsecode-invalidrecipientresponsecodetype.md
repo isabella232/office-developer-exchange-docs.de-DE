@@ -1,5 +1,5 @@
 ---
-title: ResponseCode (InvalidRecipientResponseCodeType)
+title: Response Code (InvalidRecipientResponseCodeType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 582e9caa-d2bc-4be1-a460-739294f9ef18
-description: Das ResponseCode-Element enthält Informationen dazu, warum der Empfänger ungültig.
-ms.openlocfilehash: 3bff99dd1ac6603ce31d5ceb074e73ef48190bb2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Response Code-Element enthält Informationen dazu, warum der Empfänger ungültig ist.
+ms.openlocfilehash: d78de64de7725007ec51a55dad13d1cc892a25e6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831186"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529721"
 ---
-# <a name="responsecode-invalidrecipientresponsecodetype"></a>ResponseCode (InvalidRecipientResponseCodeType)
+# <a name="responsecode-invalidrecipientresponsecodetype"></a>Response Code (InvalidRecipientResponseCodeType)
 
-Das **ResponseCode** -Element enthält Informationen dazu, warum der Empfänger ungültig. 
+Das **Response Code** -Element enthält Informationen dazu, warum der Empfänger ungültig ist. 
   
 ```XML
 <ResponseCode>OtherError or RecipientOrganizationNotFederated or CannotObtainTokenFromSTS or SystemPolicyBlocksSharingWithThisRecipient or RecipientOrganizationFederatedWithUnknownTokenIssuer</ResponseCode>
@@ -48,25 +48,25 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Die folgende Tabelle enthält die möglichen Werte für das **ResponseCode** -Element. 
+In der folgenden Tabelle sind die möglichen Werte für das **Response Code** -Element aufgeführt. 
   
 |**Code**|**Beschreibung**|
 |:-----|:-----|
-|OtherError  <br/> |Gibt an, dass der Fehler nicht von einem anderen Fehlercode Antwort angegeben ist.  <br/> |
-|RecipientOrganizationNotFederated  <br/> |Gibt an, dass eine Beziehung mit der Organisation im SMTP-e-Mail-Adresse des Empfängers angegebene nicht verfügbar ist.  <br/> |
-|CannotObtainTokenFromSTS  <br/> |Gibt an, dass beim Abrufen von ein Sicherheitstoken vom Sicherheitstokendienst-Server ein Problem aufgetreten.  <br/> |
-|SystemPolicyBlocksSharingWithThisRecipient  <br/> |Gibt an, dass der Systemadministrator eine Systemrichtlinie festgelegt hat, die Freigabe für den angegebenen Empfänger blockiert.  <br/> |
-|RecipientOrganizationFederatedWithUnknownTokenIssuer  <br/> |Gibt an, dass des Sicherheitstokendiensts, die von den angegebenen Empfänger verwendet ist unbekannt ist.  <br/> |
+|OtherError  <br/> |Gibt an, dass der Fehler nicht durch einen anderen Fehlerantwort Code angegeben wird.  <br/> |
+|RecipientOrganizationNotFederated  <br/> |Gibt an, dass eine Freigabebeziehung für die in der SMTP-e-Mail-Adresse des Empfängers angegebene Organisation nicht verfügbar ist.  <br/> |
+|CannotObtainTokenFromSTS  <br/> |Gibt an, dass ein Problem beim Abrufen eines Sicherheitstokens vom tokenserver aufgetreten ist.  <br/> |
+|SystemPolicyBlocksSharingWithThisRecipient  <br/> |Gibt an, dass der System Administrator eine Systemrichtlinie festgelegt hat, die die Freigabe für den angegebenen Empfänger blockiert.  <br/> |
+|RecipientOrganizationFederatedWithUnknownTokenIssuer  <br/> |Gibt an, dass der vom angegebenen Empfänger verwendete Secure Token Service unbekannt ist.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c9070936-0930-438e-839c-91127256a6c8
-description: Das Element Benachrichtigung enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.
-ms.openlocfilehash: 942ec18521fc484a7a3aa1385fb54f480ce9d11f
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das Benachrichtigungs Element enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.
+ms.openlocfilehash: c4a5206c14985ec46cf40162a9ce4eaec68242ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354351"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530387"
 ---
 # <a name="notification"></a>Benachrichtigung
 
-Das Element **Benachrichtigung** enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind. 
+Das **Benachrichtigungs** Element enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind. 
   
 ```xml
 <Notification>
@@ -95,7 +95,7 @@ Das Element **Benachrichtigung** enthält Informationen über das Abonnement und
 </Notification>
 ```
 
-**NotificationType**
+**NOTIFICATIONTYPE**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -109,38 +109,38 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SubscriptionId (GetEvents)](subscriptionid-getevents.md) <br/> |Stellt den Bezeichner für ein Abonnement.  <br/> |
-|[PreviousWatermark](previouswatermark.md) <br/> |Stellt das Wasserzeichen des letzten Ereignisses, die erfolgreich übermittelt wurde an den Client für das Abonnement.  <br/> |
-|[MoreEvents](moreevents.md) <br/> |Gibt an, ob es sind mehr Ereignisse in der Warteschlange an den Client übermittelt werden.  <br/> |
-|[CopiedEvent](copiedevent.md) <br/> |Stellt ein Ereignis in der eines Elements oder Ordners kopiert wird.  <br/> |
-|[CreatedEvent](createdevent.md) <br/> |Stellt ein Ereignis in der eines Elements oder Ordners erstellt wird.  <br/> |
-|[DeletedEvent](deletedevent.md) <br/> |Stellt ein Ereignis in der eines Elements oder Ordners gelöscht wird.  <br/> |
-|[ModifiedEvent](modifiedevent.md) <br/> |Stellt ein Ereignis in der eines Elements oder Ordners geändert wird.  <br/> |
-|[MovedEvent](movedevent.md) <br/> |Stellt ein Ereignis in der eines Elements oder Ordners von einem übergeordneten Ordner in einer anderen übergeordneten Ordner verschoben wird.  <br/> |
-|[NewMailEvent](newmailevent.md) <br/> |Stellt ein Ereignis, das durch eine neue e-Mail-Element in einem Postfach ausgelöst wird.  <br/> |
-|[StatusEvent](statusevent.md) <br/> |Stellt eine Benachrichtigung, dass keine neue Aktivität im Postfach aufgetreten ist.  <br/> |
-|[FreeBusyChangedEvent](freebusychangedevent.md) <br/> |Stellt ein Ereignis in der Frei/Gebucht-Zeit eines Elements geändert hat.  <br/> |
+|[Abonnement-Nr (GetEvents)](subscriptionid-getevents.md) <br/> |Stellt den Bezeichner für ein Abonnement dar.  <br/> |
+|[PreviousWatermark](previouswatermark.md) <br/> |Stellt das Wasserzeichen des letzten Ereignisses dar, das erfolgreich an den Client für das Abonnement kommuniziert wurde.  <br/> |
+|[MoreEvents](moreevents.md) <br/> |Gibt an, ob weitere Ereignisse in der Warteschlange an den Client übermittelt werden sollen.  <br/> |
+|[CopiedEvent](copiedevent.md) <br/> |Stellt ein Ereignis dar, in dem ein Element oder ein Ordner kopiert wird.  <br/> |
+|[CreatedEvent](createdevent.md) <br/> |Stellt ein Ereignis dar, in dem ein Element oder ein Ordner erstellt wird.  <br/> |
+|[DeletedEvent](deletedevent.md) <br/> |Stellt ein Ereignis dar, in dem ein Element oder ein Ordner gelöscht wird.  <br/> |
+|[ModifiedEvent](modifiedevent.md) <br/> |Stellt ein Ereignis dar, in dem ein Element oder ein Ordner geändert wird.  <br/> |
+|[MovedEvent](movedevent.md) <br/> |Stellt ein Ereignis dar, in dem ein Element oder ein Ordner von einem übergeordneten Ordner in einen anderen übergeordneten Ordner verschoben wird.  <br/> |
+|[NewMailEvent](newmailevent.md) <br/> |Stellt ein Ereignis dar, das durch ein neues e-Mail-Element in einem Postfach ausgelöst wird.  <br/> |
+|[StatusEvent](statusevent.md) <br/> |Stellt eine Benachrichtigung dar, dass keine neue Aktivität im Postfach aufgetreten ist.  <br/> |
+|[FreeBusyChangedEvent](freebusychangedevent.md) <br/> |Stellt ein Ereignis dar, in dem die Frei/Gebucht-Zeit eines Elements geändert wurde.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetEventsResponseMessage](geteventsresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer GetEvents Anforderung.  <br/> |
-|[SendNotificationResponseMessage](sendnotificationresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer SendNotification Anforderung.  <br/> |
+|[GetEventsResponseMessage](geteventsresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen GetEvents-Anforderung.  <br/> |
+|[Sendnotificationresponsemessage zurück](sendnotificationresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen SendNotification-Anforderung.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

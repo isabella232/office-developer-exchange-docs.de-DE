@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7642cb03-71b1-4773-9508-4fbe3a5dcdf4
-description: Das EventDescription-element
-ms.openlocfilehash: d496e6d2a61b4a72954b25fe3c5362f82aabf143
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EventDescription-Element
+ms.openlocfilehash: 5f61a4eea945193d672afbcd2c693502ccf3e4e1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758282"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530635"
 ---
 # <a name="eventdescription"></a>EventDescription
 
-Das **EventDescription** -element 
+Das **EventDescription** -Element 
   
 ```xml
 <EventDescription/>
@@ -48,27 +48,27 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Die folgende Tabelle enthält die möglichen Werte für das **EventDescription** -Element. 
+In der folgenden Tabelle sind die möglichen Werte für das **EventDescription** -Element aufgeführt. 
   
 **EventDescription-Elementwerte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Submitted  <br/> ||
-|Aufgelöst  <br/> ||
-|Expanded  <br/> ||
 |Übermittelt  <br/> ||
+|Gelöst  <br/> ||
+|Erweitert  <br/> ||
+|Geliefert  <br/> ||
 |MovedToFolderByInboxRule  <br/> ||
 |RulesCc  <br/> ||
 |FailedGeneral  <br/> ||
 |FailedModeration  <br/> ||
 |FailedTransportRules  <br/> ||
-|SmtpSend  <br/> ||
+|SMTPSend  <br/> ||
 |SmtpSendCrossSite  <br/> ||
 |SmtpSendCrossForest  <br/> ||
 |SmtpReceive  <br/> ||
 |Weitergeleitet  <br/> ||
-|Ausstehende  <br/> ||
+|Ausstehend  <br/> ||
 |PendingModeration  <br/> ||
 |ApprovedModeration  <br/> ||
 |QueueRetry  <br/> ||
@@ -78,18 +78,18 @@ Die folgende Tabelle enthält die möglichen Werte für das **EventDescription**
 |TransferredToPartnerOrg  <br/> ||
 |TransferredToLegacyExchangeServer  <br/> ||
 |DelayedAfterTransferToPartnerOrg  <br/> ||
-|Lesen  <br/> ||
-|NotRead  <br/> ||
+|Read  <br/> ||
+|NoProfile  <br/> ||
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
