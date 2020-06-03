@@ -16,12 +16,12 @@ ms.openlocfilehash: 26727317ccf34338e8d62ec92bd7a44d43a6cfdb
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460253"
 ---
-# <a name="timezonecontext"></a><span data-ttu-id="ef888-103">TimeZoneContext</span><span class="sxs-lookup"><span data-stu-id="ef888-103">TimeZoneContext</span></span>
+# <a name="timezonecontext"></a><span data-ttu-id="09a10-103">TimeZoneContext</span><span class="sxs-lookup"><span data-stu-id="09a10-103">TimeZoneContext</span></span>
 
-<span data-ttu-id="ef888-104">Das **timezonecontext** -Element wird im Simple Object Access Protocol (SOAP)-Header verwendet, um die Zeitzonendefinition anzugeben, die als Standard verwendet werden soll, wenn die Zeitzone für die DateTime-Eigenschaften von Objekten zugewiesen wird, die mithilfe von Exchange-Webdienste erstellt, aktualisiert und abgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="ef888-104">The **TimeZoneContext** element is used in the Simple Object Access Protocol (SOAP) header to specify the time zone definition that is to be used as the default when assigning the time zone for the DateTime properties of objects that are created, updated, and retrieved by using Exchange Web Services (EWS).</span></span> 
+<span data-ttu-id="09a10-104">Das **timezonecontext** -Element wird im Simple Object Access Protocol (SOAP)-Header verwendet, um die Zeitzonendefinition anzugeben, die als Standard verwendet werden soll, wenn die Zeitzone für die DateTime-Eigenschaften von Objekten zugewiesen wird, die mithilfe von Exchange-Webdienste erstellt, aktualisiert und abgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="09a10-104">The **TimeZoneContext** element is used in the Simple Object Access Protocol (SOAP) header to specify the time zone definition that is to be used as the default when assigning the time zone for the DateTime properties of objects that are created, updated, and retrieved by using Exchange Web Services (EWS).</span></span> 
   
 ```xml
 <TimeZoneContext>
@@ -29,41 +29,41 @@ ms.locfileid: "44460253"
 </TimeZoneContext>
 ```
 
- <span data-ttu-id="ef888-105">**TimeZoneContextType**</span><span class="sxs-lookup"><span data-stu-id="ef888-105">**TimeZoneContextType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="ef888-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="ef888-106">Attributes and elements</span></span>
+ <span data-ttu-id="09a10-105">**TimeZoneContextType**</span><span class="sxs-lookup"><span data-stu-id="09a10-105">**TimeZoneContextType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="09a10-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="09a10-106">Attributes and elements</span></span>
 
-<span data-ttu-id="ef888-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="ef888-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="09a10-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="09a10-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="ef888-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="ef888-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="09a10-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="09a10-108">Attributes</span></span>
 
-<span data-ttu-id="ef888-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="ef888-109">None.</span></span>
+<span data-ttu-id="09a10-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="09a10-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="ef888-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="ef888-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="09a10-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="09a10-110">Child elements</span></span>
 
-|<span data-ttu-id="ef888-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="ef888-111">**Element**</span></span>|<span data-ttu-id="ef888-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="ef888-112">**Description**</span></span>|
+|<span data-ttu-id="09a10-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="09a10-111">**Element**</span></span>|<span data-ttu-id="09a10-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="09a10-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="ef888-113">TimeZoneDefinition</span><span class="sxs-lookup"><span data-stu-id="ef888-113">TimeZoneDefinition</span></span>](timezonedefinition.md) <br/> |<span data-ttu-id="ef888-114">Gibt die Punkte und Übergänge an, die eine Zeitzone definieren.</span><span class="sxs-lookup"><span data-stu-id="ef888-114">Specifies the periods and transitions that define a time zone.</span></span>  <br/> |
+|[<span data-ttu-id="09a10-113">TimeZoneDefinition</span><span class="sxs-lookup"><span data-stu-id="09a10-113">TimeZoneDefinition</span></span>](timezonedefinition.md) <br/> |<span data-ttu-id="09a10-114">Gibt die Punkte und Übergänge an, die eine Zeitzone definieren.</span><span class="sxs-lookup"><span data-stu-id="09a10-114">Specifies the periods and transitions that define a time zone.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="ef888-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="ef888-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="09a10-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="09a10-115">Parent elements</span></span>
 
-<span data-ttu-id="ef888-116">Keine.</span><span class="sxs-lookup"><span data-stu-id="ef888-116">None.</span></span>
+<span data-ttu-id="09a10-116">Keine.</span><span class="sxs-lookup"><span data-stu-id="09a10-116">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ef888-117">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="ef888-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="09a10-117">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="09a10-117">Remarks</span></span>
 
-<span data-ttu-id="ef888-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.</span><span class="sxs-lookup"><span data-stu-id="ef888-118">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server that has the Client Access server role installed.</span></span>
+<span data-ttu-id="09a10-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.</span><span class="sxs-lookup"><span data-stu-id="09a10-118">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="ef888-119">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="ef888-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="09a10-119">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="09a10-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="ef888-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="ef888-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="ef888-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="ef888-121">Schema Name</span></span>  <br/> |<span data-ttu-id="ef888-122">Schematypen</span><span class="sxs-lookup"><span data-stu-id="ef888-122">Types schema</span></span>  <br/> |
-|<span data-ttu-id="ef888-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="ef888-123">Validation File</span></span>  <br/> |<span data-ttu-id="ef888-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="ef888-124">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="ef888-125">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="ef888-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="ef888-126">False</span><span class="sxs-lookup"><span data-stu-id="ef888-126">False</span></span>  <br/> |
+|<span data-ttu-id="09a10-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="09a10-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="09a10-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="09a10-121">Schema Name</span></span>  <br/> |<span data-ttu-id="09a10-122">Schematypen</span><span class="sxs-lookup"><span data-stu-id="09a10-122">Types schema</span></span>  <br/> |
+|<span data-ttu-id="09a10-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="09a10-123">Validation File</span></span>  <br/> |<span data-ttu-id="09a10-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="09a10-124">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="09a10-125">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="09a10-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="09a10-126">False</span><span class="sxs-lookup"><span data-stu-id="09a10-126">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="ef888-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ef888-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="09a10-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="09a10-127">See also</span></span>
 
 
 
-- [<span data-ttu-id="ef888-128">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="ef888-128">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="09a10-128">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="09a10-128">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

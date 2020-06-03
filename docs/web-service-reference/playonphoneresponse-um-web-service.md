@@ -15,52 +15,52 @@ ms.openlocfilehash: ddb9cc9a8feaeb476e6502339fdc74d024797b9b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459616"
 ---
-# <a name="playonphoneresponse-um-web-service"></a><span data-ttu-id="5696c-103">PlayOnPhoneResponse (um-Webdienst)</span><span class="sxs-lookup"><span data-stu-id="5696c-103">PlayOnPhoneResponse (UM web service)</span></span>
+# <a name="playonphoneresponse-um-web-service"></a><span data-ttu-id="24333-103">PlayOnPhoneResponse (um-Webdienst)</span><span class="sxs-lookup"><span data-stu-id="24333-103">PlayOnPhoneResponse (UM web service)</span></span>
 
-<span data-ttu-id="5696c-104">Das **PlayOnPhoneResponse** -Element definiert eine Antwort auf eine Anforderung des [PlayOnPhone-Vorgangs (um-Webdienst)](playonphone-operation-um-web-service.md) .</span><span class="sxs-lookup"><span data-stu-id="5696c-104">The **PlayOnPhoneResponse** element defines a response to a [PlayOnPhone operation (UM web service)](playonphone-operation-um-web-service.md) request.</span></span> 
+<span data-ttu-id="24333-104">Das **PlayOnPhoneResponse** -Element definiert eine Antwort auf eine Anforderung des [PlayOnPhone-Vorgangs (um-Webdienst)](playonphone-operation-um-web-service.md) .</span><span class="sxs-lookup"><span data-stu-id="24333-104">The **PlayOnPhoneResponse** element defines a response to a [PlayOnPhone operation (UM web service)](playonphone-operation-um-web-service.md) request.</span></span> 
   
-[<span data-ttu-id="5696c-105">PlayOnPhoneResponse (um-Webdienst)</span><span class="sxs-lookup"><span data-stu-id="5696c-105">PlayOnPhoneResponse (UM web service)</span></span>](playonphoneresponse-um-web-service.md)
+[<span data-ttu-id="24333-105">PlayOnPhoneResponse (um-Webdienst)</span><span class="sxs-lookup"><span data-stu-id="24333-105">PlayOnPhoneResponse (UM web service)</span></span>](playonphoneresponse-um-web-service.md)
   
 ```xml
 <PlayOnPhoneResponse />
 ```
 
- <span data-ttu-id="5696c-106">**Zeichenfolge**</span><span class="sxs-lookup"><span data-stu-id="5696c-106">**string**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="5696c-107">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="5696c-107">Attributes and elements</span></span>
+ <span data-ttu-id="24333-106">**Zeichenfolge**</span><span class="sxs-lookup"><span data-stu-id="24333-106">**string**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="24333-107">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="24333-107">Attributes and elements</span></span>
 
-<span data-ttu-id="5696c-108">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="5696c-108">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="24333-108">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="24333-108">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="5696c-109">Attribute</span><span class="sxs-lookup"><span data-stu-id="5696c-109">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="24333-109">Attribute</span><span class="sxs-lookup"><span data-stu-id="24333-109">Attributes</span></span>
 
-<span data-ttu-id="5696c-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="5696c-110">None.</span></span>
+<span data-ttu-id="24333-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="24333-110">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="5696c-111">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="5696c-111">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="24333-111">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="24333-111">Child elements</span></span>
 
-<span data-ttu-id="5696c-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="5696c-112">None.</span></span>
+<span data-ttu-id="24333-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="24333-112">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="5696c-113">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="5696c-113">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="24333-113">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="24333-113">Parent elements</span></span>
 
-<span data-ttu-id="5696c-114">Keine.</span><span class="sxs-lookup"><span data-stu-id="5696c-114">None.</span></span>
+<span data-ttu-id="24333-114">Keine.</span><span class="sxs-lookup"><span data-stu-id="24333-114">None.</span></span>
   
-## <a name="text-value"></a><span data-ttu-id="5696c-115">Textwert</span><span class="sxs-lookup"><span data-stu-id="5696c-115">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="24333-115">Textwert</span><span class="sxs-lookup"><span data-stu-id="24333-115">Text value</span></span>
 
-<span data-ttu-id="5696c-116">Ein Textwert ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="5696c-116">A text value is required.</span></span> <span data-ttu-id="5696c-117">Der Textwert ist die Anruf-ID, die für den Wert der [Anrufkennung (um-Webdienst)](callid-um-web-service.md) in einer [GetCallInfo-Vorgangsanforderung (um-Webdienst)](getcallinfo-operation-um-web-service.md) oder einer [um-Webdienst](disconnect-operation-um-web-service.md) Anforderung verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="5696c-117">The text value is the call identifier to use for the value of [CallId (UM web service)](callid-um-web-service.md) in a [GetCallInfo operation (UM web service)](getcallinfo-operation-um-web-service.md) request or a [Disconnect operation (UM web service)](disconnect-operation-um-web-service.md) request.</span></span> 
+<span data-ttu-id="24333-116">Ein Textwert ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="24333-116">A text value is required.</span></span> <span data-ttu-id="24333-117">Der Textwert ist die Anruf-ID, die für den Wert der [Anrufkennung (um-Webdienst)](callid-um-web-service.md) in einer [GetCallInfo-Vorgangsanforderung (um-Webdienst)](getcallinfo-operation-um-web-service.md) oder einer [um-Webdienst](disconnect-operation-um-web-service.md) Anforderung verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="24333-117">The text value is the call identifier to use for the value of [CallId (UM web service)](callid-um-web-service.md) in a [GetCallInfo operation (UM web service)](getcallinfo-operation-um-web-service.md) request or a [Disconnect operation (UM web service)](disconnect-operation-um-web-service.md) request.</span></span> 
   
-## <a name="element-information"></a><span data-ttu-id="5696c-118">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="5696c-118">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="24333-118">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="24333-118">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="5696c-119">Namespace</span><span class="sxs-lookup"><span data-stu-id="5696c-119">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="5696c-120">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="5696c-120">Schema Name</span></span>  <br/> |<span data-ttu-id="5696c-121">Nachrichten</span><span class="sxs-lookup"><span data-stu-id="5696c-121">Messages</span></span>  <br/> |
-|<span data-ttu-id="5696c-122">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="5696c-122">Validation File</span></span>  <br/> |<span data-ttu-id="5696c-123">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="5696c-123">messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="5696c-124">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="5696c-124">Can be Empty</span></span>  <br/> |<span data-ttu-id="5696c-125">False</span><span class="sxs-lookup"><span data-stu-id="5696c-125">False</span></span>  <br/> |
+|<span data-ttu-id="24333-119">Namespace</span><span class="sxs-lookup"><span data-stu-id="24333-119">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="24333-120">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="24333-120">Schema Name</span></span>  <br/> |<span data-ttu-id="24333-121">Nachrichten</span><span class="sxs-lookup"><span data-stu-id="24333-121">Messages</span></span>  <br/> |
+|<span data-ttu-id="24333-122">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="24333-122">Validation File</span></span>  <br/> |<span data-ttu-id="24333-123">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="24333-123">messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="24333-124">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="24333-124">Can be Empty</span></span>  <br/> |<span data-ttu-id="24333-125">False</span><span class="sxs-lookup"><span data-stu-id="24333-125">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="5696c-126">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="5696c-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="24333-126">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="24333-126">See also</span></span>
 
 
 
-[<span data-ttu-id="5696c-127">PlayOnPhone-Vorgang (um-Webdienst)</span><span class="sxs-lookup"><span data-stu-id="5696c-127">PlayOnPhone operation (UM web service)</span></span>](playonphone-operation-um-web-service.md)
+[<span data-ttu-id="24333-127">PlayOnPhone-Vorgang (um-Webdienst)</span><span class="sxs-lookup"><span data-stu-id="24333-127">PlayOnPhone operation (UM web service)</span></span>](playonphone-operation-um-web-service.md)
 
