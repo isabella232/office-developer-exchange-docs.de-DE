@@ -7,47 +7,47 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 345df672-4254-4372-af06-c4816be7e33d
-description: Das Element RecognitionResult ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: 4458a529ed619fe37bb5fb06ac9daf6416e4a421
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RecognitionResult-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 5d71401e03f2550116ba8dc119baf1d5011db0d8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830998"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528846"
 ---
-# <a name="recognitionresult"></a><span data-ttu-id="536b1-103">RecognitionResult</span><span class="sxs-lookup"><span data-stu-id="536b1-103">RecognitionResult</span></span>
+# <a name="recognitionresult"></a><span data-ttu-id="e5138-103">RecognitionResult</span><span class="sxs-lookup"><span data-stu-id="e5138-103">RecognitionResult</span></span>
 
-<span data-ttu-id="536b1-104">Das Element **RecognitionResult** ist nur zur internen Verwendung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="536b1-104">The **RecognitionResult** element is intended for internal use only.</span></span> 
+<span data-ttu-id="e5138-104">Das **RecognitionResult** -Element ist nur für die interne Verwendung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="e5138-104">The **RecognitionResult** element is intended for internal use only.</span></span> 
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="536b1-105">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="536b1-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="e5138-105">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="e5138-105">Attributes and elements</span></span>
 
-<span data-ttu-id="536b1-106">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="536b1-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="e5138-106">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="e5138-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="536b1-107">Attribute</span><span class="sxs-lookup"><span data-stu-id="536b1-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="e5138-107">Attribute</span><span class="sxs-lookup"><span data-stu-id="e5138-107">Attributes</span></span>
 
-<span data-ttu-id="536b1-108">Keine.</span><span class="sxs-lookup"><span data-stu-id="536b1-108">None.</span></span>
+<span data-ttu-id="e5138-108">Keine.</span><span class="sxs-lookup"><span data-stu-id="e5138-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="536b1-109">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="536b1-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="e5138-109">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e5138-109">Child elements</span></span>
 
-<span data-ttu-id="536b1-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="536b1-110">None.</span></span>
+<span data-ttu-id="e5138-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="e5138-110">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="536b1-111">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="536b1-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="e5138-111">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e5138-111">Parent elements</span></span>
 
-<span data-ttu-id="536b1-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="536b1-112">None.</span></span>
+<span data-ttu-id="e5138-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="e5138-112">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="536b1-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="536b1-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e5138-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e5138-113">Remarks</span></span>
 
-<span data-ttu-id="536b1-114">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="536b1-114">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="e5138-114">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="e5138-114">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="536b1-115">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="536b1-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="e5138-115">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="e5138-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="536b1-116">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="536b1-116">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="e5138-116">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="e5138-116">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="536b1-117">Namespace</span><span class="sxs-lookup"><span data-stu-id="536b1-117">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="536b1-118">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="536b1-118">Schema name</span></span>  <br/> |<span data-ttu-id="536b1-119">Schematypen</span><span class="sxs-lookup"><span data-stu-id="536b1-119">Types schema</span></span>  <br/> |
-|<span data-ttu-id="536b1-120">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="536b1-120">Validation file</span></span>  <br/> |<span data-ttu-id="536b1-121">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="536b1-121">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="536b1-122">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="536b1-122">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="e5138-117">Namespace</span><span class="sxs-lookup"><span data-stu-id="e5138-117">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="e5138-118">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="e5138-118">Schema name</span></span>  <br/> |<span data-ttu-id="e5138-119">Schematypen</span><span class="sxs-lookup"><span data-stu-id="e5138-119">Types schema</span></span>  <br/> |
+|<span data-ttu-id="e5138-120">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="e5138-120">Validation file</span></span>  <br/> |<span data-ttu-id="e5138-121">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="e5138-121">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="e5138-122">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="e5138-122">Can be empty</span></span>  <br/> ||
    
 

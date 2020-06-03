@@ -11,70 +11,70 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1feb0788-adf7-4a7c-830c-005214ad930f
-description: Das CalendarItemType-Element darstellt den Typ des ein Kalenderelement.
-ms.openlocfilehash: 3fe95c86ea24e6dfeb4740ead5e787bd63b5190d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CalendarItemType-Element stellt den Typ eines Kalenderelements dar.
+ms.openlocfilehash: 05e93b6db3ae574c03f6e43c5ebec2288edec3e5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757531"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527194"
 ---
-# <a name="calendaritemtype"></a><span data-ttu-id="f490e-103">CalendarItemType</span><span class="sxs-lookup"><span data-stu-id="f490e-103">CalendarItemType</span></span>
+# <a name="calendaritemtype"></a><span data-ttu-id="be91d-103">CalendarItemType</span><span class="sxs-lookup"><span data-stu-id="be91d-103">CalendarItemType</span></span>
 
-<span data-ttu-id="f490e-104">Das **CalendarItemType** -Element darstellt den Typ des ein Kalenderelement.</span><span class="sxs-lookup"><span data-stu-id="f490e-104">The **CalendarItemType** element represents the type of a calendar item.</span></span> 
+<span data-ttu-id="be91d-104">Das **CalendarItemType** -Element stellt den Typ eines Kalenderelements dar.</span><span class="sxs-lookup"><span data-stu-id="be91d-104">The **CalendarItemType** element represents the type of a calendar item.</span></span> 
   
 ```xml
 <CalendarItemType/>
 ```
 
- <span data-ttu-id="f490e-105">**CalendarItemTypeType**</span><span class="sxs-lookup"><span data-stu-id="f490e-105">**CalendarItemTypeType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="f490e-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="f490e-106">Attributes and elements</span></span>
+ <span data-ttu-id="be91d-105">**CalendarItemTypeType**</span><span class="sxs-lookup"><span data-stu-id="be91d-105">**CalendarItemTypeType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="be91d-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="be91d-106">Attributes and elements</span></span>
 
-<span data-ttu-id="f490e-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="f490e-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="be91d-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="be91d-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="f490e-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="f490e-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="be91d-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="be91d-108">Attributes</span></span>
 
-<span data-ttu-id="f490e-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="f490e-109">None.</span></span>
+<span data-ttu-id="be91d-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="be91d-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="f490e-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f490e-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="be91d-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="be91d-110">Child elements</span></span>
 
-<span data-ttu-id="f490e-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="f490e-111">None.</span></span>
+<span data-ttu-id="be91d-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="be91d-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="f490e-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f490e-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="be91d-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="be91d-112">Parent elements</span></span>
 
-|<span data-ttu-id="f490e-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="f490e-113">**Element**</span></span>|<span data-ttu-id="f490e-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f490e-114">**Description**</span></span>|
+|<span data-ttu-id="be91d-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="be91d-113">**Element**</span></span>|<span data-ttu-id="be91d-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="be91d-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="f490e-115">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="f490e-115">MeetingRequest</span></span>](meetingrequest.md) <br/> |<span data-ttu-id="f490e-116">Stellt eine Besprechung im Exchange-Informationsspeicher dar.</span><span class="sxs-lookup"><span data-stu-id="f490e-116">Represents a meeting in the Exchange store.</span></span>  <br/> |
-|[<span data-ttu-id="f490e-117">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="f490e-117">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="f490e-118">Stellt ein Element im Exchange-Kalender dar.</span><span class="sxs-lookup"><span data-stu-id="f490e-118">Represents an Exchange calendar item.</span></span>  <br/> |
+|[<span data-ttu-id="be91d-115">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="be91d-115">MeetingRequest</span></span>](meetingrequest.md) <br/> |<span data-ttu-id="be91d-116">Stellt eine Besprechung im Exchange-Informationsspeicher dar.</span><span class="sxs-lookup"><span data-stu-id="be91d-116">Represents a meeting in the Exchange store.</span></span>  <br/> |
+|[<span data-ttu-id="be91d-117">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="be91d-117">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="be91d-118">Stellt ein Element im Exchange-Kalender dar.</span><span class="sxs-lookup"><span data-stu-id="be91d-118">Represents an Exchange calendar item.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="f490e-119">Textwert</span><span class="sxs-lookup"><span data-stu-id="f490e-119">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="be91d-119">Textwert</span><span class="sxs-lookup"><span data-stu-id="be91d-119">Text value</span></span>
 
-<span data-ttu-id="f490e-120">Ein Textwert ist erforderlich, wenn dieses Element verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="f490e-120">A text value is required if this element is used.</span></span> <span data-ttu-id="f490e-121">Es folgen die möglichen Werte für dieses Element:</span><span class="sxs-lookup"><span data-stu-id="f490e-121">The following are the possible values for this element:</span></span>
+<span data-ttu-id="be91d-120">Wenn dieses Element verwendet wird, ist ein Textwert erforderlich.</span><span class="sxs-lookup"><span data-stu-id="be91d-120">A text value is required if this element is used.</span></span> <span data-ttu-id="be91d-121">Im folgenden sind die möglichen Werte für dieses Element angegeben:</span><span class="sxs-lookup"><span data-stu-id="be91d-121">The following are the possible values for this element:</span></span>
   
-- <span data-ttu-id="f490e-122">**Einzelne** Das Element ist kein wiederkehrendes Kalenderelement zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="f490e-122">**Single** The item is not associated with a recurring calendar item.</span></span> 
+- <span data-ttu-id="be91d-122">**Einzelperson** Das Element ist keinem wiederkehrenden Kalenderelement zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="be91d-122">**Single** The item is not associated with a recurring calendar item.</span></span> 
     
-- <span data-ttu-id="f490e-123">**Vorkommen** Das Element ist ein Vorkommen eines sich wiederholenden Kalenderelements an.</span><span class="sxs-lookup"><span data-stu-id="f490e-123">**Occurrence** The item is an occurrence of a recurring calendar item.</span></span> 
+- <span data-ttu-id="be91d-123">**Vorkommen** Das Element ist ein Vorkommen eines wiederkehrenden Kalenderelements.</span><span class="sxs-lookup"><span data-stu-id="be91d-123">**Occurrence** The item is an occurrence of a recurring calendar item.</span></span> 
     
-- <span data-ttu-id="f490e-124">**Ausnahme** Das Element ist eine Ausnahme in ein wiederkehrendes Kalenderelement.</span><span class="sxs-lookup"><span data-stu-id="f490e-124">**Exception** The item is an exception to a recurring calendar item.</span></span> 
+- <span data-ttu-id="be91d-124">**Ausnahme** Das Element ist eine Ausnahme für ein wiederkehrendes Kalenderelement.</span><span class="sxs-lookup"><span data-stu-id="be91d-124">**Exception** The item is an exception to a recurring calendar item.</span></span> 
     
-- <span data-ttu-id="f490e-125">**RecurringMaster** Das Element ist für eine Reihe von wiederkehrende Kalenderelemente master.</span><span class="sxs-lookup"><span data-stu-id="f490e-125">**RecurringMaster** The item is master for a set of recurring calendar items.</span></span> 
+- <span data-ttu-id="be91d-125">**RecurringMaster** Das Element ist Master für eine Reihe Wiederkehr ender Kalenderelemente.</span><span class="sxs-lookup"><span data-stu-id="be91d-125">**RecurringMaster** The item is master for a set of recurring calendar items.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="f490e-126">Hinweise</span><span class="sxs-lookup"><span data-stu-id="f490e-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="be91d-126">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="be91d-126">Remarks</span></span>
 
-<span data-ttu-id="f490e-127">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="f490e-127">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="be91d-127">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="be91d-127">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="f490e-128">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="f490e-128">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="be91d-128">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="be91d-128">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="f490e-129">Namespace</span><span class="sxs-lookup"><span data-stu-id="f490e-129">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="f490e-130">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="f490e-130">Schema name</span></span>  <br/> |<span data-ttu-id="f490e-131">Schematypen</span><span class="sxs-lookup"><span data-stu-id="f490e-131">Types schema</span></span>  <br/> |
-|<span data-ttu-id="f490e-132">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="f490e-132">Validation file</span></span>  <br/> |<span data-ttu-id="f490e-133">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="f490e-133">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="f490e-134">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="f490e-134">Can be empty</span></span>  <br/> |<span data-ttu-id="f490e-135">False</span><span class="sxs-lookup"><span data-stu-id="f490e-135">False</span></span>  <br/> |
+|<span data-ttu-id="be91d-129">Namespace</span><span class="sxs-lookup"><span data-stu-id="be91d-129">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="be91d-130">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="be91d-130">Schema name</span></span>  <br/> |<span data-ttu-id="be91d-131">Schematypen</span><span class="sxs-lookup"><span data-stu-id="be91d-131">Types schema</span></span>  <br/> |
+|<span data-ttu-id="be91d-132">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="be91d-132">Validation file</span></span>  <br/> |<span data-ttu-id="be91d-133">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="be91d-133">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="be91d-134">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="be91d-134">Can be empty</span></span>  <br/> |<span data-ttu-id="be91d-135">False</span><span class="sxs-lookup"><span data-stu-id="be91d-135">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="f490e-136">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f490e-136">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="be91d-136">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="be91d-136">See also</span></span>
 
 
 
-- [<span data-ttu-id="f490e-137">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="f490e-137">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="be91d-137">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="be91d-137">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

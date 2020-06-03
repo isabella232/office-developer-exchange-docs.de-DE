@@ -1,44 +1,44 @@
 ---
-title: Verwalten von Posteingangsregeln mithilfe der EWS in Exchange
+title: Verwalten von Posteingangsregeln mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 982ddb78-5606-44b0-8aba-dbffc60d6085
-description: Erfahren Sie, wie Sie erhalten möchten, erstellen, aktualisieren und Löschen von Posteingangsregeln durch Verwenden der EWS Managed API oder EWS in Exchange.
-ms.openlocfilehash: 85e166ba57d74c74382b257d01d9bff8f44bade1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Erfahren Sie, wie Sie Posteingangsregeln mithilfe der verwaltete EWS-API oder EWS in Exchange abrufen, erstellen, aktualisieren und löschen können.
+ms.openlocfilehash: 7c5d202a85ece1c9bc7227020f9ee8be1f688ce6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756934"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527978"
 ---
-# <a name="manage-inbox-rules-by-using-ews-in-exchange"></a><span data-ttu-id="99158-103">Verwalten von Posteingangsregeln mithilfe der EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="99158-103">Manage Inbox rules by using EWS in Exchange</span></span>
+# <a name="manage-inbox-rules-by-using-ews-in-exchange"></a><span data-ttu-id="f1587-103">Verwalten von Posteingangsregeln mithilfe von EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="f1587-103">Manage Inbox rules by using EWS in Exchange</span></span>
 
-<span data-ttu-id="99158-104">Erfahren Sie, wie Sie erhalten möchten, erstellen, aktualisieren und Löschen von Posteingangsregeln durch Verwenden der EWS Managed API oder EWS in Exchange.</span><span class="sxs-lookup"><span data-stu-id="99158-104">Find out how to get, create, update, and delete Inbox rules by using the EWS Managed API or EWS in Exchange.</span></span>
+<span data-ttu-id="f1587-104">Erfahren Sie, wie Sie Posteingangsregeln mithilfe der verwaltete EWS-API oder EWS in Exchange abrufen, erstellen, aktualisieren und löschen können.</span><span class="sxs-lookup"><span data-stu-id="f1587-104">Find out how to get, create, update, and delete Inbox rules by using the EWS Managed API or EWS in Exchange.</span></span>
   
-<span data-ttu-id="99158-105">Sie können erhalten möchten, erstellen, aktualisieren und Löschen von Posteingangsregeln mithilfe des EWS Managed API oder EWS.</span><span class="sxs-lookup"><span data-stu-id="99158-105">You can get, create, update, and delete Inbox rules by using the EWS Managed API or EWS.</span></span> <span data-ttu-id="99158-106">Unabhängig von der Technologie, die Sie verwenden, abrufen und Ändern von Posteingangsregeln als Sammlung, statt einzeln.</span><span class="sxs-lookup"><span data-stu-id="99158-106">Regardless of the technology you use, you get and modify Inbox rules as a collection, rather than individually.</span></span> <span data-ttu-id="99158-107">Sie verwenden die Methode oder der Vorgang, um neue Regeln erstellen, vorhandene Regeln aktualisieren und Löschen von Regeln.</span><span class="sxs-lookup"><span data-stu-id="99158-107">You use the same method or operation to create new rules, update existing rules, and delete rules.</span></span> 
+<span data-ttu-id="f1587-105">Sie können Posteingangsregeln mithilfe der verwaltete EWS-API oder EWS abrufen, erstellen, aktualisieren und löschen.</span><span class="sxs-lookup"><span data-stu-id="f1587-105">You can get, create, update, and delete Inbox rules by using the EWS Managed API or EWS.</span></span> <span data-ttu-id="f1587-106">Unabhängig von der verwendeten Technologie können Sie Posteingangsregeln nicht einzeln, sondern als Sammlung abrufen und ändern.</span><span class="sxs-lookup"><span data-stu-id="f1587-106">Regardless of the technology you use, you get and modify Inbox rules as a collection, rather than individually.</span></span> <span data-ttu-id="f1587-107">Sie verwenden dieselbe Methode oder denselben Vorgang zum Erstellen neuer Regeln, zum Aktualisieren vorhandener Regeln und zum Löschen von Regeln.</span><span class="sxs-lookup"><span data-stu-id="f1587-107">You use the same method or operation to create new rules, update existing rules, and delete rules.</span></span> 
   
-<span data-ttu-id="99158-108">**In Tabelle 1. Methoden und Vorgänge für das Abrufen und Ändern von Posteingangsregeln**</span><span class="sxs-lookup"><span data-stu-id="99158-108">**Table 1. Methods and operations for getting and modifying Inbox rules**</span></span>
+<span data-ttu-id="f1587-108">**Tabelle 1. Methoden und Vorgänge zum Aufrufen und Ändern von Posteingangsregeln**</span><span class="sxs-lookup"><span data-stu-id="f1587-108">**Table 1. Methods and operations for getting and modifying Inbox rules**</span></span>
 
-|<span data-ttu-id="99158-109">**Gewünschte Aktion**</span><span class="sxs-lookup"><span data-stu-id="99158-109">**In order to…**</span></span>|<span data-ttu-id="99158-110">**EWS Managed API-Methode**</span><span class="sxs-lookup"><span data-stu-id="99158-110">**EWS Managed API method**</span></span>|<span data-ttu-id="99158-111">**EWS-Vorgang**</span><span class="sxs-lookup"><span data-stu-id="99158-111">**EWS operation**</span></span>|
+|<span data-ttu-id="f1587-109">**Gewünschte Aktion**</span><span class="sxs-lookup"><span data-stu-id="f1587-109">**In order to…**</span></span>|<span data-ttu-id="f1587-110">**EWS Managed API-Methode**</span><span class="sxs-lookup"><span data-stu-id="f1587-110">**EWS Managed API method**</span></span>|<span data-ttu-id="f1587-111">**EWS-Vorgang**</span><span class="sxs-lookup"><span data-stu-id="f1587-111">**EWS operation**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="99158-112">Abrufen von Posteingangsregeln</span><span class="sxs-lookup"><span data-stu-id="99158-112">Get Inbox rules</span></span>  <br/> |[<span data-ttu-id="99158-113">ExchangeService.GetInboxRules</span><span class="sxs-lookup"><span data-stu-id="99158-113">ExchangeService.GetInboxRules</span></span>](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) <br/> |[<span data-ttu-id="99158-114">GetInboxRules</span><span class="sxs-lookup"><span data-stu-id="99158-114">GetInboxRules</span></span>](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) <br/> |
-|<span data-ttu-id="99158-115">Erstellen, aktualisieren oder Löschen von Posteingangsregeln</span><span class="sxs-lookup"><span data-stu-id="99158-115">Create, update, or delete Inbox rules</span></span>  <br/> |[<span data-ttu-id="99158-116">ExchangeService.UpdateInboxRules</span><span class="sxs-lookup"><span data-stu-id="99158-116">ExchangeService.UpdateInboxRules</span></span>](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) <br/> |[<span data-ttu-id="99158-117">UpdateInboxRules</span><span class="sxs-lookup"><span data-stu-id="99158-117">UpdateInboxRules</span></span>](http://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx) <br/> |
+|<span data-ttu-id="f1587-112">Abrufen von Posteingangsregeln</span><span class="sxs-lookup"><span data-stu-id="f1587-112">Get Inbox rules</span></span>  <br/> |[<span data-ttu-id="f1587-113">Datei "ExchangeService. GetInboxRules</span><span class="sxs-lookup"><span data-stu-id="f1587-113">ExchangeService.GetInboxRules</span></span>](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) <br/> |[<span data-ttu-id="f1587-114">GetInboxRules</span><span class="sxs-lookup"><span data-stu-id="f1587-114">GetInboxRules</span></span>](https://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) <br/> |
+|<span data-ttu-id="f1587-115">Erstellen, aktualisieren oder Löschen von Posteingangsregeln</span><span class="sxs-lookup"><span data-stu-id="f1587-115">Create, update, or delete Inbox rules</span></span>  <br/> |[<span data-ttu-id="f1587-116">Datei "ExchangeService. UpdateInboxRules</span><span class="sxs-lookup"><span data-stu-id="f1587-116">ExchangeService.UpdateInboxRules</span></span>](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) <br/> |[<span data-ttu-id="f1587-117">UpdateInboxRules</span><span class="sxs-lookup"><span data-stu-id="f1587-117">UpdateInboxRules</span></span>](https://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx) <br/> |
    
-<span data-ttu-id="99158-118">Zum Erstellen, aktualisieren oder Löschen von Posteingangsregeln mithilfe des EWS Managed API oder EWS, müssen Sie die Outlook-Regel entfernen, sofern vorhanden.</span><span class="sxs-lookup"><span data-stu-id="99158-118">In order to create, update, or delete Inbox rules by using the EWS Managed API or EWS, you must remove the Outlook rule, if it exists.</span></span> <span data-ttu-id="99158-119">Wenn Sie die EWS Managed API verwenden, führen Sie dies durch Festlegen des **RemoveOutlookRulesBlob** -Parameters auf **"true"** in der Aufruf der **ExchangeService.UpdateInboxRules** -Methode.</span><span class="sxs-lookup"><span data-stu-id="99158-119">If you're using the EWS Managed API, you do this by setting the **removeOutlookRulesBlob** parameter to **true** in the **ExchangeService.UpdateInboxRules** method call.</span></span> <span data-ttu-id="99158-120">Wenn Sie Exchange-Webdienste verwenden, legen Sie den Wert des [RemoveOutlookRuleBlob](http://msdn.microsoft.com/library/69614475-8bd3-4475-b988-614fe9cad8ef%28Office.15%29.aspx) -Elements auf **true fest,** bei der Konflikte **UpdateInboxRules** .</span><span class="sxs-lookup"><span data-stu-id="99158-120">If you're using EWS, you set the value of the [RemoveOutlookRuleBlob](http://msdn.microsoft.com/library/69614475-8bd3-4475-b988-614fe9cad8ef%28Office.15%29.aspx) element to **true** in the **UpdateInboxRules** operation.</span></span> <span data-ttu-id="99158-121">Es wird empfohlen, die Ihre Anwendung Überprüfung der [RuleCollection.OutlookRuleBlobExists](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.rulecollection.outlookruleblobexists%28v=exchg.80%29.aspx) -Eigenschaft (Wenn Sie die EWS Managed API verwenden) oder im [OutlookRuleBlobExists](http://msdn.microsoft.com/library/ae1bc448-deb9-4b5b-ab38-4b276abcb650%28Office.15%29.aspx) -Element (Wenn Sie Exchange-Webdienste verwenden) vor der Aktualisierung von Posteingangsregeln.</span><span class="sxs-lookup"><span data-stu-id="99158-121">We recommend that your application check the [RuleCollection.OutlookRuleBlobExists](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.rulecollection.outlookruleblobexists%28v=exchg.80%29.aspx) property (if you are using the EWS Managed API), or the [OutlookRuleBlobExists](http://msdn.microsoft.com/library/ae1bc448-deb9-4b5b-ab38-4b276abcb650%28Office.15%29.aspx) element (if you're using EWS) before updating Inbox rules.</span></span> <span data-ttu-id="99158-122">Wenn diese Eigenschaft oder ein Element den Wert **true**aufweist, sollte Ihre Anwendung die Benutzer darauf hinzuweisen, dass alle deaktivierten Regeln als Teil des Updates verloren wird, und nur die Berechtigung fort.</span><span class="sxs-lookup"><span data-stu-id="99158-122">If this property or element has a value of **true**, your application should alert the user that any disabled rules will be lost as part of the update, and only proceed with their permission.</span></span>
+<span data-ttu-id="f1587-118">Um Posteingangsregeln mithilfe der verwaltete EWS-API oder EWS zu erstellen, zu aktualisieren oder zu löschen, müssen Sie die Outlook-Regel entfernen, sofern Sie vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="f1587-118">In order to create, update, or delete Inbox rules by using the EWS Managed API or EWS, you must remove the Outlook rule, if it exists.</span></span> <span data-ttu-id="f1587-119">Wenn Sie die verwaltete EWS-API verwenden, legen Sie den **removeOutlookRulesBlob** -Parameter im Aufruf der **Datei "ExchangeService. UpdateInboxRules** -Methode auf **true** fest.</span><span class="sxs-lookup"><span data-stu-id="f1587-119">If you're using the EWS Managed API, you do this by setting the **removeOutlookRulesBlob** parameter to **true** in the **ExchangeService.UpdateInboxRules** method call.</span></span> <span data-ttu-id="f1587-120">Wenn Sie EWS verwenden, legen Sie den Wert des [RemoveOutlookRuleBlob](https://msdn.microsoft.com/library/69614475-8bd3-4475-b988-614fe9cad8ef%28Office.15%29.aspx) -Elements im **UpdateInboxRules** -Vorgang auf **true** fest.</span><span class="sxs-lookup"><span data-stu-id="f1587-120">If you're using EWS, you set the value of the [RemoveOutlookRuleBlob](https://msdn.microsoft.com/library/69614475-8bd3-4475-b988-614fe9cad8ef%28Office.15%29.aspx) element to **true** in the **UpdateInboxRules** operation.</span></span> <span data-ttu-id="f1587-121">Es wird empfohlen, dass Ihre Anwendung die [rulecollection. OutlookRuleBlobExists](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.rulecollection.outlookruleblobexists%28v=exchg.80%29.aspx) -Eigenschaft (wenn Sie die verwaltete EWS-API verwenden) oder das [OutlookRuleBlobExists](https://msdn.microsoft.com/library/ae1bc448-deb9-4b5b-ab38-4b276abcb650%28Office.15%29.aspx) -Element (wenn Sie EWS verwenden) überprüfen, bevor Sie Posteingangsregeln aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="f1587-121">We recommend that your application check the [RuleCollection.OutlookRuleBlobExists](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.rulecollection.outlookruleblobexists%28v=exchg.80%29.aspx) property (if you are using the EWS Managed API), or the [OutlookRuleBlobExists](https://msdn.microsoft.com/library/ae1bc448-deb9-4b5b-ab38-4b276abcb650%28Office.15%29.aspx) element (if you're using EWS) before updating Inbox rules.</span></span> <span data-ttu-id="f1587-122">Wenn diese Eigenschaft oder dieses Element den Wert **true**aufweist, sollte Ihre Anwendung den Benutzer darauf hinweisen, dass alle deaktivierten Regeln im Rahmen des Updates verloren gehen und nur mit Ihrer Berechtigung fortfahren.</span><span class="sxs-lookup"><span data-stu-id="f1587-122">If this property or element has a value of **true**, your application should alert the user that any disabled rules will be lost as part of the update, and only proceed with their permission.</span></span>
   
-<span data-ttu-id="99158-123">Wenn Sie die **UpdateInboxRules** -Methode aufrufen, löscht EWS Regeln mithilfe der clientseitigen senden.</span><span class="sxs-lookup"><span data-stu-id="99158-123">When you call the **UpdateInboxRules** method, EWS deletes client-side send rules.</span></span> <span data-ttu-id="99158-124">Senden clientseitige Regeln werden auf dem Client in der Regel Ordner verknüpften Informationen (FAI)-Nachricht und keiner anderen gespeichert.</span><span class="sxs-lookup"><span data-stu-id="99158-124">Client-side send rules are stored on the client in the rule Folder Associated Information (FAI) Message and nowhere else.</span></span> <span data-ttu-id="99158-125">EWS löscht diese Regel FAI Nachricht standardmäßig basierend auf der Annahme, dass Outlook wird neu erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="99158-125">EWS deletes this rule FAI message by default, based on the expectation that Outlook will recreate it.</span></span> <span data-ttu-id="99158-126">Allerdings Outlook kann nicht erstellen Regeln, die auch als eine erweiterte Regel vorhanden, nicht erneut, und Senden mithilfe der clientseitigen Regeln nicht als erweiterte Regeln vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="99158-126">However, Outlook can't recreate rules that don't also exist as an extended rule, and client-side send rules don't exist as extended rules.</span></span> <span data-ttu-id="99158-127">Daher sind diese Regeln verloren.</span><span class="sxs-lookup"><span data-stu-id="99158-127">As a result, these rules are lost.</span></span> <span data-ttu-id="99158-128">Es wird empfohlen, dass Sie dies berücksichtigen Sie beim Entwerfen Ihrer Lösung.</span><span class="sxs-lookup"><span data-stu-id="99158-128">We suggest you consider this when designing your solution.</span></span> 
+<span data-ttu-id="f1587-123">Wenn Sie die **UpdateInboxRules** -Methode aufrufen, löscht EWS clientseitige Sende Regeln.</span><span class="sxs-lookup"><span data-stu-id="f1587-123">When you call the **UpdateInboxRules** method, EWS deletes client-side send rules.</span></span> <span data-ttu-id="f1587-124">Clientseitige Sende Regeln werden auf dem Client in der FAI-Nachricht (Regel Ordner – zugeordnete Informationen) gespeichert und nirgendwo sonst.</span><span class="sxs-lookup"><span data-stu-id="f1587-124">Client-side send rules are stored on the client in the rule Folder Associated Information (FAI) Message and nowhere else.</span></span> <span data-ttu-id="f1587-125">In EWS wird diese Regel "fai" standardmäßig gelöscht, basierend auf der Erwartung, dass Outlook Sie neu erstellt.</span><span class="sxs-lookup"><span data-stu-id="f1587-125">EWS deletes this rule FAI message by default, based on the expectation that Outlook will recreate it.</span></span> <span data-ttu-id="f1587-126">Outlook kann jedoch keine Regeln neu erstellen, die nicht auch als erweiterte Regel vorhanden sind, und clientseitige Sende Regeln sind nicht als erweiterte Regeln vorhanden.</span><span class="sxs-lookup"><span data-stu-id="f1587-126">However, Outlook can't recreate rules that don't also exist as an extended rule, and client-side send rules don't exist as extended rules.</span></span> <span data-ttu-id="f1587-127">Daher gehen diese Regeln verloren.</span><span class="sxs-lookup"><span data-stu-id="f1587-127">As a result, these rules are lost.</span></span> <span data-ttu-id="f1587-128">Wir empfehlen, dies beim Entwerfen der Lösung zu berücksichtigen.</span><span class="sxs-lookup"><span data-stu-id="f1587-128">We suggest you consider this when designing your solution.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="99158-129">Die EWS Managed API-Codebeispiele in diesem Artikel verwenden einen [gemeinsamen Satz von Hilfsmethoden](how-to-manage-inbox-rules-by-using-ews-in-exchange.md#bk_UtilitySource).</span><span class="sxs-lookup"><span data-stu-id="99158-129">The EWS Managed API code examples in this article use a [common set of utility methods](how-to-manage-inbox-rules-by-using-ews-in-exchange.md#bk_UtilitySource).</span></span> <span data-ttu-id="99158-130">Diese Methoden werden die folgenden Codebeispiele der Kürze halber ausgelassen.</span><span class="sxs-lookup"><span data-stu-id="99158-130">These methods are omitted from the code samples for brevity.</span></span> 
+> <span data-ttu-id="f1587-129">In den verwaltete EWS-API-Codebeispielen in diesem Artikel wird ein [allgemeiner Satz von Dienstprogrammmethoden](how-to-manage-inbox-rules-by-using-ews-in-exchange.md#bk_UtilitySource)verwendet.</span><span class="sxs-lookup"><span data-stu-id="f1587-129">The EWS Managed API code examples in this article use a [common set of utility methods](how-to-manage-inbox-rules-by-using-ews-in-exchange.md#bk_UtilitySource).</span></span> <span data-ttu-id="f1587-130">Diese Methoden werden aus den Codebeispielen aus Gründen der Kürze ausgelassen.</span><span class="sxs-lookup"><span data-stu-id="f1587-130">These methods are omitted from the code samples for brevity.</span></span> 
   
-## <a name="get-inbox-rules-by-using-the-ews-managed-api"></a><span data-ttu-id="99158-131">Rufen Sie Posteingangsregeln ab, indem Sie die EWS Managed API</span><span class="sxs-lookup"><span data-stu-id="99158-131">Get Inbox rules by using the EWS Managed API</span></span>
-<span data-ttu-id="99158-132"><a name="bk_GetRulesEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="99158-132"></span></span>
+## <a name="get-inbox-rules-by-using-the-ews-managed-api"></a><span data-ttu-id="f1587-131">Abrufen von Posteingangsregeln mithilfe der verwaltete EWS-API</span><span class="sxs-lookup"><span data-stu-id="f1587-131">Get Inbox rules by using the EWS Managed API</span></span>
+<span data-ttu-id="f1587-132"><a name="bk_GetRulesEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="f1587-132"><a name="bk_GetRulesEWSMA"> </a></span></span>
 
-<span data-ttu-id="99158-133">Wenn die aktuellen Posteingangsregeln erhalten möchten, verwenden Sie die [ExchangeService.GetInboxRules](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) -Methode.</span><span class="sxs-lookup"><span data-stu-id="99158-133">To get the current Inbox rules, use the [ExchangeService.GetInboxRules](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) method.</span></span> <span data-ttu-id="99158-134">Diese Methode gibt ein [RuleCollection](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.rulecollection%28v=exchg.80%29.aspx) -Objekt, das die aktuellen Posteingangsregeln enthält.</span><span class="sxs-lookup"><span data-stu-id="99158-134">This method returns a [RuleCollection](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.rulecollection%28v=exchg.80%29.aspx) object that contains all the current Inbox rules.</span></span> 
+<span data-ttu-id="f1587-133">Verwenden Sie die [Datei "ExchangeService. GetInboxRules](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) -Methode, um die aktuellen Posteingangsregeln abzurufen.</span><span class="sxs-lookup"><span data-stu-id="f1587-133">To get the current Inbox rules, use the [ExchangeService.GetInboxRules](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) method.</span></span> <span data-ttu-id="f1587-134">Diese Methode gibt ein [rulecollection](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.rulecollection%28v=exchg.80%29.aspx) -Objekt zurück, das alle aktuellen Posteingangsregeln enthält.</span><span class="sxs-lookup"><span data-stu-id="f1587-134">This method returns a [RuleCollection](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.rulecollection%28v=exchg.80%29.aspx) object that contains all the current Inbox rules.</span></span> 
   
-<span data-ttu-id="99158-135">In diesem Beispiel wird jede Regel im aktuellen Posteingang an eine Hilfsfunktion ( **ParseRuleDetails** ), um die Details der Regel anzuzeigen übergeben.</span><span class="sxs-lookup"><span data-stu-id="99158-135">In this example, each rule in the current Inbox is passed to a helper function ( **ParseRuleDetails** ) to display the details of the rule.</span></span> 
+<span data-ttu-id="f1587-135">In diesem Beispiel wird jede Regel im aktuellen Posteingang an eine Hilfsfunktion ( **ParseRuleDetails** ) übergeben, um die Details der Regel anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="f1587-135">In this example, each rule in the current Inbox is passed to a helper function ( **ParseRuleDetails** ) to display the details of the rule.</span></span> 
   
 ```cs
 using System;
@@ -73,17 +73,17 @@ private static void GetInboxRules(ExchangeService service, string emailAddress)
 }
 ```
 
-## <a name="get-inbox-rules-by-using-ews"></a><span data-ttu-id="99158-136">Abrufen von Posteingangsregeln mithilfe der Exchange-Webdienste</span><span class="sxs-lookup"><span data-stu-id="99158-136">Get Inbox rules by using EWS</span></span>
-<span data-ttu-id="99158-137"><a name="bk_GetRulesEWS"> </a></span><span class="sxs-lookup"><span data-stu-id="99158-137"></span></span>
+## <a name="get-inbox-rules-by-using-ews"></a><span data-ttu-id="f1587-136">Abrufen von Posteingangsregeln mithilfe von EWS</span><span class="sxs-lookup"><span data-stu-id="f1587-136">Get Inbox rules by using EWS</span></span>
+<span data-ttu-id="f1587-137"><a name="bk_GetRulesEWS"> </a></span><span class="sxs-lookup"><span data-stu-id="f1587-137"><a name="bk_GetRulesEWS"> </a></span></span>
 
-<span data-ttu-id="99158-138">Die folgenden EWS-SOAP-Anforderung verwendet den [GetInboxRules-Vorgang](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) , um die Posteingangsregeln für sadie@contoso.com abzurufen.</span><span class="sxs-lookup"><span data-stu-id="99158-138">The following EWS SOAP request uses the [GetInboxRules operation](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) to retrieve the Inbox rules for sadie@contoso.com.</span></span> 
+<span data-ttu-id="f1587-138">Die folgende EWS-SOAP-Anforderung verwendet den [GetInboxRules-Vorgang](https://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) zum Abrufen der Posteingangsregeln für Sadie@contoso.com.</span><span class="sxs-lookup"><span data-stu-id="f1587-138">The following EWS SOAP request uses the [GetInboxRules operation](https://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) to retrieve the Inbox rules for sadie@contoso.com.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
 <soap:Header>
   <t:RequestServerVersion Version="Exchange2013" />
 </soap:Header>
@@ -95,24 +95,24 @@ private static void GetInboxRules(ExchangeService service, string emailAddress)
 </soap:Envelope>
 ```
 
-<span data-ttu-id="99158-139">Die folgenden EWS-SOAP-Antwort enthält die aktuellen Posteingangsregeln für sadie@contoso.com.</span><span class="sxs-lookup"><span data-stu-id="99158-139">The following EWS SOAP response contains the current Inbox rules for sadie@contoso.com.</span></span>
+<span data-ttu-id="f1587-139">Die folgende EWS-SOAP-Antwort enthält die aktuellen Posteingangsregeln für Sadie@contoso.com.</span><span class="sxs-lookup"><span data-stu-id="f1587-139">The following EWS SOAP response contains the current Inbox rules for sadie@contoso.com.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
 <s:Header>
   <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="712" MinorBuildNumber="22" Version="V2_3" 
-      xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-      xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+      xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+      xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
       xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
 </s:Header>
 <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <GetInboxRulesResponse ResponseClass="Success" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+  <GetInboxRulesResponse ResponseClass="Success" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
     <ResponseCode>NoError</ResponseCode>
     <OutlookRuleBlobExists>false</OutlookRuleBlobExists>
     <InboxRules>
-      <Rule xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <Rule xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <RuleId>AQAAAAAAASY=</RuleId>
         <DisplayName>Alfred</DisplayName>
         <Priority>1</Priority>
@@ -133,7 +133,7 @@ private static void GetInboxRules(ExchangeService service, string emailAddress)
           <StopProcessingRules>true</StopProcessingRules>
         </Actions>
       </Rule>
-      <Rule xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <Rule xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <RuleId>AQAAAAAAASQ=</RuleId>
         <DisplayName>Important</DisplayName>
         <Priority>2</Priority>
@@ -161,12 +161,12 @@ private static void GetInboxRules(ExchangeService service, string emailAddress)
 </s:Envelope>
 ```
 
-## <a name="create-inbox-rules-by-using-the-ews-managed-api"></a><span data-ttu-id="99158-140">Erstellen Sie mithilfe der EWS Managed API Posteingangsregeln</span><span class="sxs-lookup"><span data-stu-id="99158-140">Create Inbox rules by using the EWS Managed API</span></span>
-<span data-ttu-id="99158-141"><a name="bk_CreateRulesEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="99158-141"></span></span>
+## <a name="create-inbox-rules-by-using-the-ews-managed-api"></a><span data-ttu-id="f1587-140">Erstellen von Posteingangsregeln mithilfe der verwaltete EWS-API</span><span class="sxs-lookup"><span data-stu-id="f1587-140">Create Inbox rules by using the EWS Managed API</span></span>
+<span data-ttu-id="f1587-141"><a name="bk_CreateRulesEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="f1587-141"><a name="bk_CreateRulesEWSMA"> </a></span></span>
 
-<span data-ttu-id="99158-142">Um eine Regel zu erstellen, geben Sie ein [CreateRuleOperation](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.createruleoperation%28v=exchg.80%29.aspx) -Objekt in der Auflistung von [RuleOperation](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.ruleoperation%28v=exchg.80%29.aspx) -Objekten, die an die [ExchangeService.UpdateInboxRules](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) -Methode übergeben.</span><span class="sxs-lookup"><span data-stu-id="99158-142">To create a rule, include a [CreateRuleOperation](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.createruleoperation%28v=exchg.80%29.aspx) object in the collection of [RuleOperation](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.ruleoperation%28v=exchg.80%29.aspx) objects passed to the [ExchangeService.UpdateInboxRules](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) method.</span></span> 
+<span data-ttu-id="f1587-142">Um eine Regel zu erstellen, schließen Sie ein [CreateRuleOperation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.createruleoperation%28v=exchg.80%29.aspx) -Objekt in die Auflistung von [RuleOperation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.ruleoperation%28v=exchg.80%29.aspx) -Objekten ein, die an die [Datei "ExchangeService. UpdateInboxRules](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) -Methode übergeben werden.</span><span class="sxs-lookup"><span data-stu-id="f1587-142">To create a rule, include a [CreateRuleOperation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.createruleoperation%28v=exchg.80%29.aspx) object in the collection of [RuleOperation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.ruleoperation%28v=exchg.80%29.aspx) objects passed to the [ExchangeService.UpdateInboxRules](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) method.</span></span> 
   
-<span data-ttu-id="99158-143">In diesem Beispiel wird eine neue Regel zum Verschieben von Nachrichten an eine Verteilerliste namens "Sales" in einem Unterordner des Posteingangs, auch als bezeichnet "Sales" erstellt.</span><span class="sxs-lookup"><span data-stu-id="99158-143">In this example, a new rule is created to move mail sent to a distribution list called "Sales" to a subfolder of the Inbox, also called "Sales".</span></span>
+<span data-ttu-id="f1587-143">In diesem Beispiel wird eine neue Regel erstellt, um e-Mails, die an eine Verteilerliste mit dem Namen "Vertrieb" gesendet werden, in einen Unterordner des Posteingangs zu verschieben, der auch als "Vertrieb" bezeichnet wird.</span><span class="sxs-lookup"><span data-stu-id="f1587-143">In this example, a new rule is created to move mail sent to a distribution list called "Sales" to a subfolder of the Inbox, also called "Sales".</span></span>
   
 ```cs
 using System;
@@ -241,17 +241,17 @@ private static void CreateInboxRule(ExchangeService service, string emailAddress
 }
 ```
 
-## <a name="create-inbox-rules-by-using-ews"></a><span data-ttu-id="99158-144">Erstellen von Posteingangsregeln mithilfe der Exchange-Webdienste</span><span class="sxs-lookup"><span data-stu-id="99158-144">Create Inbox rules by using EWS</span></span>
-<span data-ttu-id="99158-145"><a name="bk_CreateRulesEWS"> </a></span><span class="sxs-lookup"><span data-stu-id="99158-145"></span></span>
+## <a name="create-inbox-rules-by-using-ews"></a><span data-ttu-id="f1587-144">Erstellen von Posteingangsregeln mithilfe von EWS</span><span class="sxs-lookup"><span data-stu-id="f1587-144">Create Inbox rules by using EWS</span></span>
+<span data-ttu-id="f1587-145"><a name="bk_CreateRulesEWS"> </a></span><span class="sxs-lookup"><span data-stu-id="f1587-145"><a name="bk_CreateRulesEWS"> </a></span></span>
 
-<span data-ttu-id="99158-146">Die folgenden EWS-SOAP-Anforderung wird die Regel "Sales" im Posteingang des sadie@contoso.com erstellt.</span><span class="sxs-lookup"><span data-stu-id="99158-146">The following EWS SOAP request creates the "Sales" rule in sadie@contoso.com's Inbox.</span></span>
+<span data-ttu-id="f1587-146">Die folgende EWS-SOAP-Anforderung erstellt die "Sales"-Regel im Posteingang Sadie@contoso. com.</span><span class="sxs-lookup"><span data-stu-id="f1587-146">The following EWS SOAP request creates the "Sales" rule in sadie@contoso.com's Inbox.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -296,12 +296,12 @@ private static void CreateInboxRule(ExchangeService service, string emailAddress
 </soap:Envelope>
 ```
 
-## <a name="update-inbox-rules-by-using-the-ews-managed-api"></a><span data-ttu-id="99158-147">Aktualisieren von Posteingangsregeln mithilfe der EWS Managed API</span><span class="sxs-lookup"><span data-stu-id="99158-147">Update Inbox rules by using the EWS Managed API</span></span>
-<span data-ttu-id="99158-148"><a name="bk_UpdateRulesEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="99158-148"></span></span>
+## <a name="update-inbox-rules-by-using-the-ews-managed-api"></a><span data-ttu-id="f1587-147">Aktualisieren von Posteingangsregeln mithilfe der verwaltete EWS-API</span><span class="sxs-lookup"><span data-stu-id="f1587-147">Update Inbox rules by using the EWS Managed API</span></span>
+<span data-ttu-id="f1587-148"><a name="bk_UpdateRulesEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="f1587-148"><a name="bk_UpdateRulesEWSMA"> </a></span></span>
 
-<span data-ttu-id="99158-149">Um eine Regel zu aktualisieren, fügen Sie ein [SetRuleOperation](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.setruleoperation%28v=exchg.80%29.aspx) -Objekt in die Auflistung von **RuleOperation** -Objekten, die an die **UpdateInboxRules** -Methode übergeben.</span><span class="sxs-lookup"><span data-stu-id="99158-149">To update a rule, include a [SetRuleOperation](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.setruleoperation%28v=exchg.80%29.aspx) object in the collection of **RuleOperation** objects passed to the **UpdateInboxRules** method.</span></span> 
+<span data-ttu-id="f1587-149">Um eine Regel zu aktualisieren, fügen Sie ein [SetRuleOperation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.setruleoperation%28v=exchg.80%29.aspx) -Objekt in die Auflistung von **RuleOperation** -Objekten ein, die an die **UpdateInboxRules** -Methode übergeben werden.</span><span class="sxs-lookup"><span data-stu-id="f1587-149">To update a rule, include a [SetRuleOperation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.setruleoperation%28v=exchg.80%29.aspx) object in the collection of **RuleOperation** objects passed to the **UpdateInboxRules** method.</span></span> 
   
-<span data-ttu-id="99158-150">In diesem Beispiel wird die Regel "Sales" aktualisiert, sodass eine Ausnahme hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="99158-150">In this example, the "Sales" rule is updated to add an exception.</span></span> <span data-ttu-id="99158-151">Wenn der Betreff das Wort "Dringend" enthält, werden die Nachrichten nicht in den Unterordner "Sales" verschoben.</span><span class="sxs-lookup"><span data-stu-id="99158-151">If the subject contains the word "Urgent", the messages will not be moved to the "Sales" subfolder.</span></span>
+<span data-ttu-id="f1587-150">In diesem Beispiel wird die Regel "Sales" so aktualisiert, dass eine Ausnahme hinzugefügt wird.</span><span class="sxs-lookup"><span data-stu-id="f1587-150">In this example, the "Sales" rule is updated to add an exception.</span></span> <span data-ttu-id="f1587-151">Wenn der Betreff das Wort "Urgent" enthält, werden die Nachrichten nicht in den Unterordner "Vertrieb" verschoben.</span><span class="sxs-lookup"><span data-stu-id="f1587-151">If the subject contains the word "Urgent", the messages will not be moved to the "Sales" subfolder.</span></span>
   
 ```cs
 using System;
@@ -372,17 +372,17 @@ private static void UpdateInboxRule(ExchangeService service, string emailAddress
 }
 ```
 
-## <a name="update-inbox-rules-by-using-ews"></a><span data-ttu-id="99158-152">Aktualisieren von Posteingangsregeln mithilfe von Exchange-Webdienste</span><span class="sxs-lookup"><span data-stu-id="99158-152">Update Inbox rules by using EWS</span></span>
-<span data-ttu-id="99158-153"><a name="bk_UpdateRulesEWS"> </a></span><span class="sxs-lookup"><span data-stu-id="99158-153"></span></span>
+## <a name="update-inbox-rules-by-using-ews"></a><span data-ttu-id="f1587-152">Aktualisieren von Posteingangsregeln mithilfe von EWS</span><span class="sxs-lookup"><span data-stu-id="f1587-152">Update Inbox rules by using EWS</span></span>
+<span data-ttu-id="f1587-153"><a name="bk_UpdateRulesEWS"> </a></span><span class="sxs-lookup"><span data-stu-id="f1587-153"><a name="bk_UpdateRulesEWS"> </a></span></span>
 
-<span data-ttu-id="99158-154">Die folgenden EWS-SOAP-Anforderung wird die Regel "Sales" im Posteingang des sadie@contoso.com aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="99158-154">The following EWS SOAP request updates the "Sales" rule in sadie@contoso.com's Inbox.</span></span>
+<span data-ttu-id="f1587-154">Die folgende EWS-SOAP-Anforderung aktualisiert die "Sales"-Regel im Posteingang Sadie@contoso. com.</span><span class="sxs-lookup"><span data-stu-id="f1587-154">The following EWS SOAP request updates the "Sales" rule in sadie@contoso.com's Inbox.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -433,12 +433,12 @@ private static void UpdateInboxRule(ExchangeService service, string emailAddress
 </soap:Envelope>
 ```
 
-## <a name="delete-inbox-rules-by-using-the-ews-managed-api"></a><span data-ttu-id="99158-155">Löschen Sie mithilfe der EWS Managed API Posteingangsregeln</span><span class="sxs-lookup"><span data-stu-id="99158-155">Delete Inbox rules by using the EWS Managed API</span></span>
-<span data-ttu-id="99158-156"><a name="bk_DeleteRulesEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="99158-156"></span></span>
+## <a name="delete-inbox-rules-by-using-the-ews-managed-api"></a><span data-ttu-id="f1587-155">Löschen von Posteingangsregeln mithilfe der verwaltete EWS-API</span><span class="sxs-lookup"><span data-stu-id="f1587-155">Delete Inbox rules by using the EWS Managed API</span></span>
+<span data-ttu-id="f1587-156"><a name="bk_DeleteRulesEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="f1587-156"><a name="bk_DeleteRulesEWSMA"> </a></span></span>
 
-<span data-ttu-id="99158-157">Um eine Regel zu löschen, fügen Sie ein [DeleteRuleOperation](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.deleteruleoperation%28v=exchg.80%29.aspx) -Objekt in die Auflistung von **RuleOperation** -Objekten, die an die **UpdateInboxRules** -Methode übergeben.</span><span class="sxs-lookup"><span data-stu-id="99158-157">To delete a rule, include a [DeleteRuleOperation](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.deleteruleoperation%28v=exchg.80%29.aspx) object in the collection of **RuleOperation** objects passed to the **UpdateInboxRules** method.</span></span> 
+<span data-ttu-id="f1587-157">Um eine Regel zu löschen, fügen Sie ein [DeleteRuleOperation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.deleteruleoperation%28v=exchg.80%29.aspx) -Objekt in die Auflistung von **RuleOperation** -Objekten ein, die an die **UpdateInboxRules** -Methode übergeben werden.</span><span class="sxs-lookup"><span data-stu-id="f1587-157">To delete a rule, include a [DeleteRuleOperation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.deleteruleoperation%28v=exchg.80%29.aspx) object in the collection of **RuleOperation** objects passed to the **UpdateInboxRules** method.</span></span> 
   
-<span data-ttu-id="99158-158">In diesem Beispiel wird die Regel "Sales" gelöscht.</span><span class="sxs-lookup"><span data-stu-id="99158-158">In this example, the "Sales" rule is deleted.</span></span>
+<span data-ttu-id="f1587-158">In diesem Beispiel wird die Regel "Sales" gelöscht.</span><span class="sxs-lookup"><span data-stu-id="f1587-158">In this example, the "Sales" rule is deleted.</span></span>
   
 ```cs
 using System;
@@ -506,17 +506,17 @@ private static void DeleteInboxRule(ExchangeService service, string emailAddress
 }
 ```
 
-## <a name="delete-inbox-rules-by-using-ews"></a><span data-ttu-id="99158-159">Löschen von Posteingangsregeln mithilfe der Exchange-Webdienste</span><span class="sxs-lookup"><span data-stu-id="99158-159">Delete Inbox rules by using EWS</span></span>
-<span data-ttu-id="99158-160"><a name="bk_DeleteRulesEWS"> </a></span><span class="sxs-lookup"><span data-stu-id="99158-160"></span></span>
+## <a name="delete-inbox-rules-by-using-ews"></a><span data-ttu-id="f1587-159">Löschen von Posteingangsregeln mithilfe von EWS</span><span class="sxs-lookup"><span data-stu-id="f1587-159">Delete Inbox rules by using EWS</span></span>
+<span data-ttu-id="f1587-160"><a name="bk_DeleteRulesEWS"> </a></span><span class="sxs-lookup"><span data-stu-id="f1587-160"><a name="bk_DeleteRulesEWS"> </a></span></span>
 
-<span data-ttu-id="99158-161">Die folgenden EWS-SOAP-Anforderung löscht die Regeln "Sales" aus der sadie@contoso.com Posteingang.</span><span class="sxs-lookup"><span data-stu-id="99158-161">The following EWS SOAP request deletes the "Sales" rules from sadie@contoso.com's inbox.</span></span>
+<span data-ttu-id="f1587-161">Die folgende EWS SOAP-Anforderung löscht die "Sales"-Regeln aus dem Posteingang Sadie@contoso. com.</span><span class="sxs-lookup"><span data-stu-id="f1587-161">The following EWS SOAP request deletes the "Sales" rules from sadie@contoso.com's inbox.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -533,10 +533,10 @@ private static void DeleteInboxRule(ExchangeService service, string emailAddress
 </soap:Envelope>
 ```
 
-## <a name="source-for-sample-utility-methods"></a><span data-ttu-id="99158-162">Quelle für Beispiel Hilfsprogrammmethoden</span><span class="sxs-lookup"><span data-stu-id="99158-162">Source for sample utility methods</span></span>
-<span data-ttu-id="99158-163"><a name="bk_UtilitySource"> </a></span><span class="sxs-lookup"><span data-stu-id="99158-163"></span></span>
+## <a name="source-for-sample-utility-methods"></a><span data-ttu-id="f1587-162">Quelle für Beispiel-Hilfsprogramm-Methoden</span><span class="sxs-lookup"><span data-stu-id="f1587-162">Source for sample utility methods</span></span>
+<span data-ttu-id="f1587-163"><a name="bk_UtilitySource"> </a></span><span class="sxs-lookup"><span data-stu-id="f1587-163"><a name="bk_UtilitySource"> </a></span></span>
 
-<span data-ttu-id="99158-164">Die EWS Managed API-Beispiele in diesem Artikel verwenden Sie die Hilfsmethoden im folgenden Beispiel enthalten.</span><span class="sxs-lookup"><span data-stu-id="99158-164">The EWS Managed API examples in this article use the utility methods included in the following example.</span></span>
+<span data-ttu-id="f1587-164">In den verwaltete EWS-API Beispielen in diesem Artikel werden die im folgenden Beispiel enthaltenen Dienstprogrammmethoden verwendet.</span><span class="sxs-lookup"><span data-stu-id="f1587-164">The EWS Managed API examples in this article use the utility methods included in the following example.</span></span>
   
 ```cs
 private static void ParseRuleDetails(ExchangeService service, Rule rule)
@@ -905,17 +905,17 @@ private static FolderId GetFolderIdByName(ExchangeService service, WellKnownFold
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="99158-165">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="99158-165">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f1587-165">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f1587-165">See also</span></span>
 
 
-- [<span data-ttu-id="99158-166">Posteingangsverwaltung und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="99158-166">Inbox management and EWS in Exchange</span></span>](inbox-management-and-ews-in-exchange.md)
+- [<span data-ttu-id="f1587-166">Posteingangsverwaltung und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="f1587-166">Inbox management and EWS in Exchange</span></span>](inbox-management-and-ews-in-exchange.md)
     
-- [<span data-ttu-id="99158-167">ExchangeService.GetInboxRules-Methode</span><span class="sxs-lookup"><span data-stu-id="99158-167">ExchangeService.GetInboxRules method</span></span>](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx)
+- [<span data-ttu-id="f1587-167">Datei "ExchangeService. GetInboxRules-Methode</span><span class="sxs-lookup"><span data-stu-id="f1587-167">ExchangeService.GetInboxRules method</span></span>](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx)
     
-- [<span data-ttu-id="99158-168">ExchangeService.UpdateInboxRules-Methode</span><span class="sxs-lookup"><span data-stu-id="99158-168">ExchangeService.UpdateInboxRules method</span></span>](http://msdn.microsoft.com/de-de/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx)
+- [<span data-ttu-id="f1587-168">Datei "ExchangeService. UpdateInboxRules-Methode</span><span class="sxs-lookup"><span data-stu-id="f1587-168">ExchangeService.UpdateInboxRules method</span></span>](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx)
     
-- [<span data-ttu-id="99158-169">GetInboxRules-Vorgang</span><span class="sxs-lookup"><span data-stu-id="99158-169">GetInboxRules operation</span></span>](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx)
+- [<span data-ttu-id="f1587-169">GetInboxRules-Vorgang</span><span class="sxs-lookup"><span data-stu-id="f1587-169">GetInboxRules operation</span></span>](https://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx)
     
-- [<span data-ttu-id="99158-170">UpdateInboxRules-Vorgang</span><span class="sxs-lookup"><span data-stu-id="99158-170">UpdateInboxRules operation</span></span>](http://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx)
+- [<span data-ttu-id="f1587-170">UpdateInboxRules-Vorgang</span><span class="sxs-lookup"><span data-stu-id="f1587-170">UpdateInboxRules operation</span></span>](https://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx)
     
 
