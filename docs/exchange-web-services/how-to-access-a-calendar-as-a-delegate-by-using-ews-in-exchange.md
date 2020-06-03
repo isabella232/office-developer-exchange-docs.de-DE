@@ -1,55 +1,55 @@
 ---
-title: Zugriff auf einen Kalender als Stellvertretung mithilfe der EWS in Exchange
+title: Zugriff auf einen Kalender als Delegat mithilfe der EWS in Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: d7db4a1e-9ed6-41da-8529-a73ca285cdf2
-description: Hier erfahren Sie, wie Sie einen Kalender als Stellvertreter zugreifen, indem Sie die EWS Managed API oder EWS in Exchange.
-ms.openlocfilehash: 609e5f0bb22c78174289a2eb10210999c8391a3d
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Erfahren Sie, wie Sie mithilfe der verwaltete EWS-API oder EWS in Exchange auf einen Kalender als Stellvertreter zugreifen.
+localization_priority: Priority
+ms.openlocfilehash: 20ec294ddc4ccf014f0b2148c786c8c3ef8a6069
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353840"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528293"
 ---
-#  <a name="access-a-calendar-as-a-delegate-by-using-ews-in-exchange"></a>Zugriff auf einen Kalender als Stellvertretung mithilfe der EWS in Exchange
+#  <a name="access-a-calendar-as-a-delegate-by-using-ews-in-exchange"></a>Zugriff auf einen Kalender als Delegat mithilfe der EWS in Exchange
 
-Hier erfahren Sie, wie Sie einen Kalender als Stellvertreter zugreifen, indem Sie die EWS Managed API oder EWS in Exchange.
+Erfahren Sie, wie Sie mithilfe der verwaltete EWS-API oder EWS in Exchange auf einen Kalender als Stellvertreter zugreifen.
   
-Sie können die EWS Managed API verwenden oder EWS so erteilen Sie einen Benutzer delegieren des Zugriffs auf Kalenderordner des Postfachbesitzers. Delegaten kann dann Erstellen von Besprechungsanfragen im Auftrag des Postfachbesitzers, Erstellen von Terminen, Antworten auf Besprechungsanfragen, und abrufen, aktualisieren und Löschen von Besprechungen von der Postfachbesitzer Kalenderordner abhängig von ihren Berechtigungen.
+Sie können die verwaltete EWS-API oder EWS verwenden, um einem Benutzer Stellvertretungszugriff auf den Kalenderordner eines Postfachbesitzers zu gewähren. Der Stellvertreter kann dann Besprechungsanfragen im Auftrag des Postfachbesitzers erstellen, Termine erstellen, Besprechungsanfragen beantworten sowie Besprechungen aus dem Kalenderordner des Postfachbesitzers abhängig von ihren Berechtigungen abrufen, aktualisieren und löschen.
   
-Als Stellvertretung verwenden Sie die gleichen Methoden und Vorgänge auf Kalenderordner des Postfachbesitzers zugreifen, mit denen Sie Ihre eigenen Kalenderordner zugreifen. Der Hauptunterschied ist, dass Sie mithilfe von [expliziten Access](delegate-access-and-ews-in-exchange.md#bk_explicit) suchen oder erstellen Sie ein Kalenderelement oder Kalenderunterordner, und klicken Sie dann, nachdem Sie die Element-ID oder Ordner-ID identifiziert haben, können [impliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_implicit) erhalten möchten, aktualisieren und Löschen des Elements. 
+Als Stellvertretung verwenden Sie dieselben Methoden und Vorgänge für den Zugriff auf den Kalenderordner eines Postfachbesitzers, den Sie für den Zugriff auf Ihren eigenen Kalenderordner verwenden. Der Hauptunterschied besteht darin, dass Sie [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicit) zum Suchen oder Erstellen eines Kalenderelements oder eines Kalender Unterordners verwenden müssen, und nachdem Sie die Element-ID oder Ordner-ID identifiziert haben, können Sie den [impliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_implicit) zum Abrufen, aktualisieren oder Löschen des Elements verwenden. 
   
-**In Tabelle 1. EWS Managed API-Methoden und EWS-Vorgänge für den Zugriff auf einen Kalender als Stellvertreter**
+**Tabelle 1. Verwaltete EWS-API Methoden und EWS-Vorgänge für den Zugriff auf einen Kalender als Stellvertretung**
 
-|**Aktion**|**Verwenden Sie diese Methode EWS Managed API...**|**Verwenden Sie diese Operation EWS...**|
+|**Aktion**|**Verwenden Sie diese verwaltete EWS-API-Methode...**|**Verwenden Sie diesen EWS-Vorgang...**|
 |:-----|:-----|:-----|
-|Erstellen einer Besprechung oder eines Termins als Stellvertreter  <br/> |[Appointment.Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) , in dem der Parameter [FolderId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) auf den Postfachbesitzer Kalenderordner enthält  <br/> |[CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) , in dem das [Postfach](http://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) -Element gibt an, die [EmailAddress](http://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) des Postfachbesitzers  <br/> |
-|Erstellen Sie mehrerer Besprechungen oder Termine als Stellvertreter  <br/> |[ExchangeService.CreateItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) , in dem der Parameter **FolderId** [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) auf den Postfachbesitzer Kalenderordner enthält  <br/> |[CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) , in dem das [Postfach](http://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) -Element gibt an, die [EmailAddress](http://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) des Postfachbesitzers  <br/> |
-|Suchen Sie nach oder suchen Sie nach eines Termins oder einer Besprechung als Stellvertreter  <br/> |[ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) , in dem der Parameter **FolderId** [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) auf den Postfachbesitzer Kalenderordner enthält  <br/> |[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) , in dem das [Postfach](http://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) -Element gibt an, die [EmailAddress](http://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) des Postfachbesitzers  <br/> |
-|Abrufen eines Termins oder einer Besprechung als Stellvertreter  <br/> |[Appointment.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |
-|Aktualisieren eines Termins oder einer Besprechung als Stellvertreter  <br/> |[Appointment.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) gefolgt von [Appointment.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.update%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) gefolgt von [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
-|Löschen eines Termins oder einer Besprechung als Stellvertreter  <br/> |[Appointment.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) gefolgt von [Appointment.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) gefolgt von [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
+|Erstellen einer Besprechung oder eines Termins als Stellvertreter  <br/> |[Termin. Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) , wobei der [Folder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) -Parameter den [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) auf den Kalenderordner des Postfachbesitzers ermöglicht  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) , wobei das [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) [-Element](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) die e-Mail-Post Fach Besitzerin angibt  <br/> |
+|Erstellen mehrerer Besprechungen oder Termine als Stellvertreter  <br/> |[Datei "ExchangeService. CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) , wobei der **Folder** -Parameter den [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) auf den Kalenderordner des Postfachbesitzers ermöglicht  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) , wobei das [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) [-Element](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) die e-Mail-Post Fach Besitzerin angibt  <br/> |
+|Suchen nach oder suchen nach einem Termin oder einer Besprechung als Stellvertreter  <br/> |[Datei "ExchangeService. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) , wobei der **Folder** -Parameter den [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) auf den Kalenderordner des Postfachbesitzers ermöglicht.  <br/> |[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) , wobei das [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) [-Element](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) die e-Mail-Post Fach Besitzerin angibt  <br/> |
+|Abrufen eines Termins oder einer Besprechung als Stellvertreter  <br/> |[Appointment.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |
+|Aktualisieren eines Termins oder einer Besprechung als Stellvertreter  <br/> |[Termin. Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) gefolgt von [Termin. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.update%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) , gefolgt von [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
+|Löschen eines Termins oder einer Besprechung als Stellvertreter  <br/> |[Termin. Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) gefolgt von [Termin. Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) , gefolgt von [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
    
 > [!NOTE]
-> In den Codebeispielen in diesem Artikel ist primary@contoso.com der Postfachbesitzer. 
+> In den Codebeispielen in diesem Artikel ist Primary@contoso.com der Postfachbesitzer. 
   
 ## <a name="prerequisite-tasks"></a>Erforderliche Aufgaben
 <a name="bk_prereq"> </a>
 
-Bevor ein Benutzer eine Postfachbesitzer Kalenderordner als Stellvertreter zugreifen kann, muss der Benutzer des Postfachbesitzers Kalenderordner [als Stellvertreter mit Berechtigungen hinzugefügt](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md) . 
+Bevor ein Benutzer als Stellvertreter auf den Kalenderordner eines Postfachbesitzers zugreifen kann, muss der Benutzer [als Stellvertreter mit Berechtigungen](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md) für den Kalenderordner des Postfachbesitzers hinzugefügt werden. 
   
-Eine Stellvertretung muss mit einem Postfach verbunden, ihr Konto so aktualisieren Sie den Kalender des Postfachbesitzers haben.
+Eine Stellvertretung muss über ein Postfach verfügen, das Ihrem Konto zugeordnet ist, um den Kalender eines Postfachbesitzers zu aktualisieren.
   
-Wenn eine Stellvertretung Besprechungsanfragen und-Antworten entwickelt muss nur, können fügen Sie die Stellvertretung in den Ordner Kalender, und Verwenden der Standardwert [MeetingRequestsDeliveryScope.DelegatesAndSendInformationToMe](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.meetingrequestsdeliveryscope%28v=exchg.80%29.aspx) EWS Managed API-Enumeration oder die [ DeliverMeetingRequests](http://msdn.microsoft.com/library/04b999af-0b27-4e6d-a8b1-400955a1afaa%28Office.15%29.aspx) EWS-Elementwert des **DelegatesAndSendInformationToMe** für die Anfragen an die Stellvertreter und informative Nachrichten an den Postfachbesitzer. Die Stellvertretung muss an den Postfachbesitzer Posteingangsordner Zugriff gewährt werden dann nicht. 
+Wenn eine Stellvertretung nur mit Besprechungsanfragen und-Antworten arbeiten muss, können Sie die Stellvertretung dem Kalenderordner hinzufügen und den Standardwert [MeetingRequestsDeliveryScope. DelegatesAndSendInformationToMe](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.meetingrequestsdeliveryscope%28v=exchg.80%29.aspx) verwaltete EWS-API Aufzählungswert oder den [DeliverMeetingRequests](https://msdn.microsoft.com/library/04b999af-0b27-4e6d-a8b1-400955a1afaa%28Office.15%29.aspx) EWS-Elementwert von **DelegatesAndSendInformationToMe** verwenden, um die Anforderungen an die Stellvertretung und die Informationsmeldungen an den Postfachbesitzer zu senden. Die Stellvertretung muss dann keinen Zugriff auf den Posteingang-Ordner des Postfachbesitzers erhalten. 
   
-## <a name="create-a-meeting-or-appointment-as-a-delegate-by-using-the-ews-managed-api"></a>Erstellen einer Besprechung oder eines Termins als Stellvertretung mithilfe der EWS Managed API
+## <a name="create-a-meeting-or-appointment-as-a-delegate-by-using-the-ews-managed-api"></a>Erstellen einer Besprechung oder eines Termins als Stellvertretung mithilfe der verwaltete EWS-API
 <a name="bk_createewsma"> </a>
 
-Die EWS Managed API können Sie das Objekt für den Benutzer Delegaten verwenden, um Elemente im Kalender für den Besitzer des Postfachs zu erstellen. In diesem Beispiel wird veranschaulicht, wie mit der [Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) -Methode erstellen Sie eine Besprechung und Besprechungsanfragen an die Teilnehmer senden. 
+Mit dem verwaltete EWS-API können Sie das Dienstobjekt für den Stellvertreter Benutzer verwenden, um Kalenderelemente für den Postfachbesitzer zu erstellen. In diesem Beispiel wird gezeigt, wie Sie mit der [Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) -Methode eine Besprechung erstellen und Besprechungsanfragen an die Teilnehmer senden. 
   
-In diesem Beispiel wird davon ausgegangen, die **Service** ist ein gültiges [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt für den Delegaten und, die die Stellvertretung hat die entsprechenden Berechtigungen für den Postfachbesitzer Kalenderordner gewährt wurde. 
+In diesem Beispiel wird davon ausgegangen, dass **Service** ein gültiges [Datei "ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt für die Stellvertretung ist und dass der Stellvertretung die entsprechenden Berechtigungen für den Kalenderordner des Postfachbesitzers erteilt wurden. 
   
 ```cs
 private static void DelegateAccessCreateMeeting(ExchangeService service)
@@ -75,14 +75,14 @@ private static void DelegateAccessCreateMeeting(ExchangeService service)
 }
 ```
 
-Beachten Sie, dass beim Speichern des Elements Methodenaufruf [Speichern](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) des Postfachbesitzers Kalenderordner bestimmen muss. Wenn der Postfachbesitzer Kalenderordner nicht angegeben ist, ruft die Besprechungsanfrage der Stellvertretung Kalender und nicht des Postfachbesitzers Kalenderordner gespeichert. Sie können im Methodenaufruf **Speichern** auf zwei Arten der Postfachbesitzer Kalenderordner einschließen. Es wird empfohlen, dass Sie eine neue Instanz des Objekts [FolderId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) instanziieren, mithilfe der [WellKnownFolderName](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) und die SMTP-Adresse des Postfachbesitzers. 
+Beachten Sie, dass beim Speichern des Elements der Aufruf der [Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) -Methode den Kalenderordner des Postfachbesitzers identifizieren muss. Wenn der Kalenderordner des Postfachbesitzers nicht angegeben ist, wird die Besprechungsanfrage im Kalender der Stellvertretung und nicht im Kalenderordner des Postfachbesitzers gespeichert. Sie können den Kalenderordner des Postfachbesitzers in den **Save** -Methodenaufruf auf zwei Arten einschließen. Es wird empfohlen, dass Sie eine neue Instanz des [Folder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) -Objekts mit dem [WellKnownFolderName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) und der SMTP-Adresse des Postfachbesitzers instanziieren. 
   
 ```cs
 meeting.Save(new FolderId(WellKnownFolderName.Calendar,
     "primary@contoso.com"), SendInvitationsMode.SendToAllAndSaveCopy);
 ```
 
-Sie können jedoch auch [gebunden werden](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) in den Ordner Kalender zuerst, und verwenden Sie die ID des Ordners in den Methodenaufruf **zu speichern** . Beachten Sie jedoch, dass dieser einen zusätzlichen EWS-Aufruf erstellt. 
+Sie können jedoch auch zuerst eine [Bindung](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) an den Ordner Kalender durchführen und dann die ID des Ordners im Aufruf der **Save** -Methode verwenden. Beachten Sie jedoch, dass dadurch ein zusätzlicher EWS-Aufruf erstellt wird. 
   
 ```cs
     // Identify the mailbox owner's SMTP address
@@ -96,21 +96,21 @@ Sie können jedoch auch [gebunden werden](http://msdn.microsoft.com/en-us/librar
         SendInvitationsMode.SendToAllAndSaveCopy);
 ```
 
-## <a name="create-a-meeting-or-appointment-as-a-delegate-by-using-ews"></a>Erstellen einer Besprechung oder eines Termins als Stellvertretung mithilfe der Exchange-Webdienste
+## <a name="create-a-meeting-or-appointment-as-a-delegate-by-using-ews"></a>Erstellen einer Besprechung oder eines Termins als Stellvertretung mithilfe von EWS
 <a name="bk_createews"> </a>
 
-Exchange-Webdienste können Sie das Objekt für den Benutzer Delegaten verwenden, um Elemente im Kalender für den Besitzer des Postfachs zu erstellen. In diesem Beispiel wird gezeigt, wie mithilfe den [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) -Vorgang erstellen Sie eine Besprechung und Besprechungsanfragen an die Teilnehmer senden. 
+Mit EWS können Sie das Dienstobjekt für den Delegate-Benutzer verwenden, um Kalenderelemente für den Postfachbesitzer zu erstellen. In diesem Beispiel wird gezeigt, wie Sie mithilfe des [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) -Vorgangs eine Besprechung erstellen und Besprechungsanfragen an die Teilnehmer senden. 
   
-Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die **Speichern** -Methode zum [Erstellen einer Besprechung oder eines Termins als Stellvertreter](#bk_createewsma)verwenden.
+Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die **Save** -Methode verwenden, um [eine Besprechung oder einen Termin als Stellvertreter zu erstellen](#bk_createewsma).
   
-SOAP-Header wurde aus dem folgenden Beispiel aus Platzgründen entfernt.
+Der SOAP-Header wurde aus dem folgenden Beispiel aus Gründen der Kürze entfernt.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-         xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-         xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+         xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+         xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
 …
   <soap:Body>
     <m:CreateItem SendMeetingInvitations="SendToAllAndSaveCopy">
@@ -145,12 +145,12 @@ SOAP-Header wurde aus dem folgenden Beispiel aus Platzgründen entfernt.
 
 ```
 
-Der Server antwortet auf die **CreateItem** -Anforderung mit einer [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) -Nachricht, die enthält den Elementwert [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **noError zurück**, der angibt, dass die Besprechung erfolgreich erstellt wurde. Die Antwort enthält auch die Element-ID der neu erstellten Besprechung.
+Der Server antwortet auf die **CreateItem** -Anforderung mit einer [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Elementwert **noError**enthält, der angibt, dass die Besprechung erfolgreich erstellt wurde. Die Antwort enthält auch die Element-ID der neu erstellten Besprechung.
   
-## <a name="search-for-a-meeting-or-appointment-as-a-delegate-by-using-the-ews-managed-api"></a>Suchen Sie nach einer Besprechung oder eines Termins als Stellvertretung mithilfe der EWS Managed API
+## <a name="search-for-a-meeting-or-appointment-as-a-delegate-by-using-the-ews-managed-api"></a>Suchen nach einer Besprechung oder einem Termin als Stellvertretung mithilfe der verwaltete EWS-API
 <a name="bk_searchewsma"> </a>
 
-Um für eine Besprechung zu suchen, müssen Sie eine der Methoden, die einen [FolderId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) -Parameter enthält [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) verwenden, damit Sie den Postfachbesitzer Kalenderordner angeben können. 
+Um nach einer Besprechung zu suchen, müssen Sie eine der [Datei "ExchangeService. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) -Methoden verwenden, die einen [foldercode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) -Parameter enthält, sodass Sie den Kalenderordner des Postfachbesitzers angeben können. 
   
 ```cs
 static void DelegateAccessSearchWithFilter
@@ -190,21 +190,21 @@ static void DelegateAccessSearchWithFilter
 }
 ```
 
-Nachdem der Anruf **FindItems** eine Antwort mit einer ID zurückgegeben wurde, können erhalten möchten, aktualisiert oder gelöscht werden diese Besprechung mit der ID und [impliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_implicit) – und Sie müssen nicht die SMTP-Adresse des Postfachbesitzers angeben. 
+Nachdem der **FindItems** -Aufruf eine Antwort mit einer ID zurückgibt, können Sie diese Besprechung abrufen, aktualisieren oder löschen, indem Sie die ID und den [impliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_implicit) verwenden – und Sie müssen die SMTP-Adresse des Postfachbesitzers nicht angeben. 
   
-## <a name="search-for-a-meeting-or-appointment-as-a-delegate-by-using-ews"></a>Suchen Sie nach einer Besprechung oder eines Termins als Stellvertretung mithilfe der Exchange-Webdienste
+## <a name="search-for-a-meeting-or-appointment-as-a-delegate-by-using-ews"></a>Suchen nach einer Besprechung oder einem Termin als Stellvertretung mithilfe von EWS
 <a name="bk_searchews"> </a>
 
-EWS können Sie das Objekt für den Benutzer Delegaten verwenden, für die Suche nach Terminen und Besprechungen, die eine Reihe von Suchkriterien erfüllen. In diesem Beispiel wird veranschaulicht, wie mit den Vorgang [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) finden Besprechungen in der Postfachbesitzer Kalenderordner, die das Wort "building" im Betreff enthalten. 
+Mit EWS können Sie das Dienstobjekt für den Stellvertreter-Benutzer verwenden, um nach Terminen und Besprechungen zu suchen, die eine Reihe von Suchkriterien erfüllen. In diesem Beispiel wird gezeigt, wie Sie mithilfe des [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) -Vorgangs Besprechungen im Kalenderordner des Postfachbesitzers finden, der das Wort "Building" im Betreff enthält. 
   
-Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die **FindItem** -Methode für die [Suche nach einer Besprechung oder eines Termins als Stellvertreter](#bk_searchewsma)verwenden.
+Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die **FindItem** -Methode verwenden, um [eine Besprechung oder einen Termin als Stellvertreter zu suchen](#bk_searchewsma).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -245,27 +245,27 @@ Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die **Fi
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die Anforderung **FindItem** mit einer [FindItemResponse](http://msdn.microsoft.com/library/c8b316df-d4ab-49b8-96d4-8e9a016730ef%28Office.15%29.aspx) -Nachricht, die enthält den Wert [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) Element **noError zurück**, das anzeigt, dass die Suche erfolgreich abgeschlossen wurde. Die Antwort enthält eine [CalendarItem](http://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) für Termine oder Besprechungen, die die Suchkriterien erfüllen. In diesem Fall wird nur eine Besprechung gefunden. 
+Der Server antwortet auf die **FindItem** -Anforderung mit einer [FindItemResponse](https://msdn.microsoft.com/library/c8b316df-d4ab-49b8-96d4-8e9a016730ef%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Elementwert **noError**enthält, der angibt, dass die Suche erfolgreich abgeschlossen wurde. Die Antwort enthält ein [CalendarItem](https://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) für alle Termine oder Besprechungen, die die Suchkriterien erfüllen. In diesem Fall wird nur eine Besprechung gefunden. 
   
-Der Wert des Elements [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) wurde zur besseren Lesbarkeit gekürzt. 
+Der Wert des [ItemID](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) -Elements wurde zur Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="893"
                          MinorBuildNumber="10"
                          Version="V2_10"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body>
-    <m:FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:FindItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:FindItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -288,39 +288,39 @@ Der Wert des Elements [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4
 </s:Envelope>
 ```
 
-Nun, da Sie die **ItemId** für die Besprechung verfügen, die die Kriterien erfüllt, können Sie abrufen, aktualisieren oder löschen Sie diese Besprechung mithilfe des **ItemId** und [impliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_implicit) – und Sie müssen nicht die SMTP-Adresse des Postfachbesitzers angeben. 
+Nachdem Sie nun die **ItemID** für die Besprechung haben, die Ihre Kriterien erfüllt, können Sie diese Besprechung mit dem **ItemID** -und [impliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_implicit) abrufen, aktualisieren oder löschen, und Sie müssen die SMTP-Adresse des Postfachbesitzers nicht angeben. 
   
-## <a name="get-update-or-delete-calendar-items-as-a-delegate-by-using-the-ews-managed-api"></a>Erhalten möchten, aktualisieren oder Löschen von Kalenderelementen (engl.) als Stellvertretung mithilfe der EWS Managed API
+## <a name="get-update-or-delete-calendar-items-as-a-delegate-by-using-the-ews-managed-api"></a>Abrufen, aktualisieren oder Löschen von Kalenderelementen als Stellvertretung mithilfe der verwaltete EWS-API
 <a name="bk_geteswma"> </a>
 
-Die EWS Managed API können Sie abrufen, aktualisieren oder Löschen einer Besprechung oder eines Termins in die gleiche Weise, die Sie diese Aktionen ausführen, wenn Sie Stellvertretungszugriff nicht verwenden. Der einzige Unterschied ist, dass das Objekt für den Benutzer Delegat ist. Die Element-ID im Methodenaufruf **binden** enthalten sind, eindeutig identifiziert das Element im Postfachspeicher im Kalenderordner des Postfachbesitzers. 
+Sie können die verwaltete EWS-API verwenden, um eine Besprechung oder einen Termin auf die gleiche Weise abzurufen, zu aktualisieren oder zu löschen, wie Sie diese Aktionen ausführen, wenn Sie keinen Stellvertretungszugriff verwenden. Der einzige Unterschied besteht darin, dass das Dienstobjekt für den Stellvertreter Benutzer ist. Die im **Bindungs** Methodenaufruf enthaltene Element-ID identifiziert das Element im Postfachspeicher im Kalenderordner des Postfachbesitzers eindeutig. 
   
-**In Tabelle 2. EWS Managed API-Methoden zum Arbeiten mit Termine und Besprechungen als Stellvertreter**
+**Tabelle 2. Verwaltete EWS-API Methoden zum Arbeiten mit Terminen und Besprechungen als Stellvertretung**
 
-|**Aufgabe**|**EWS Managed API-Methode**|**Code example**|
+|**Aufgabe**|**EWS Managed API-Methode**|**Codebeispiel**|
 |:-----|:-----|:-----|
-|Abrufen eines Termins oder einer Besprechung  <br/> |[Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) <br/> |[Abrufen eines Elements mithilfe der verwalteten EWS-API](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getewsma) <br/> |
-|Aktualisieren eines Termins oder einer Besprechung  <br/> |[Binden von](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) gefolgt von [Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.update%28v=exchg.80%29.aspx) <br/> |[Aktualisieren einer Besprechung mithilfe der EWS Managed API](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md#bk_UpdateMtgEWSMA) <br/> |
-|Löschen eines Termins oder einer Besprechung  <br/> |[Binden von](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) gefolgt von [Löschen](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[Löschen einer Besprechung mithilfe der EWS Managed API](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md#bk_DeleteMtgEWSMA) <br/> |
+|Abrufen eines Termins oder einer Besprechung  <br/> |[Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) <br/> |[Abrufen eines Elements mithilfe der verwaltete EWS-API](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getewsma) <br/> |
+|Aktualisieren eines Termins oder einer Besprechung  <br/> |[Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) gefolgt von [Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.update%28v=exchg.80%29.aspx) <br/> |[Aktualisieren einer Besprechung mithilfe der verwaltete EWS-API](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md#bk_UpdateMtgEWSMA) <br/> |
+|Löschen eines Termins oder einer Besprechung  <br/> |[Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) gefolgt von [Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[Löschen einer Besprechung mithilfe der verwaltete EWS-API](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md#bk_DeleteMtgEWSMA) <br/> |
    
-## <a name="get-update-or-delete-calendar-items-as-a-delegate-by-using-ews"></a>Erhalten möchten, aktualisieren oder Löschen von Kalenderelementen (engl.) als Stellvertretung mithilfe der Exchange-Webdienste
+## <a name="get-update-or-delete-calendar-items-as-a-delegate-by-using-ews"></a>Abrufen, aktualisieren oder Löschen von Kalenderelementen als Stellvertretung mithilfe von EWS
 <a name="bk_getews"> </a>
 
-Exchange-Webdienste können Sie abrufen, aktualisieren oder Löschen einer Besprechung oder eines Termins in die gleiche Weise, die Sie diese Aktionen ausführen, wenn Sie Stellvertretungszugriff nicht verwenden. Der einzige Unterschied ist, dass das Objekt für den Benutzer Delegat ist. Die Element-ID eindeutig enthalten in den Aufruf [GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) -Methode identifiziert das Element im Postfachspeicher im Kalenderordner des Postfachbesitzers. 
+Sie können EWS verwenden, um eine Besprechung oder einen Termin auf die gleiche Weise abzurufen, zu aktualisieren oder zu löschen, wie Sie diese Aktionen ausführen, wenn Sie keinen Stellvertretungszugriff verwenden. Der einzige Unterschied besteht darin, dass das Dienstobjekt für den Stellvertreter Benutzer ist. Die Element-ID, die im [GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) -Methodenaufruf enthalten ist, identifiziert das Element im Postfachspeicher im Kalenderordner des Postfachbesitzers eindeutig. 
   
-**Tabelle 3. EWS-Vorgänge für die Arbeit mit Termine und Besprechungen als Stellvertreter**
+**Tabelle 3. EWS-Vorgänge für das Arbeiten mit Terminen und Besprechungen als Stellvertretung**
 
-|**Aufgabe**|**EWS-Vorgang**|**Code example**|
+|**Aufgabe**|**EWS-Funktion**|**Codebeispiel**|
 |:-----|:-----|:-----|
-|Abrufen eines Termins oder einer Besprechung  <br/> |[GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |[Abrufen eines Elements mithilfe von EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getews) <br/> |
-|Aktualisieren eines Termins oder einer Besprechung  <br/> |[GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) gefolgt von [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |[Aktualisieren einer Besprechung mithilfe der Exchange-Webdienste](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md#bk_UpdateMtgEWS) <br/> |
-|Löschen eines Termins oder einer Besprechung  <br/> |[GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) gefolgt von [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |[](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md#bk_DeleteMtgEWSMA) <br/> |
+|Abrufen eines Termins oder einer Besprechung  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |[Abrufen eines Elements mithilfe von EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getews) <br/> |
+|Aktualisieren eines Termins oder einer Besprechung  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) , gefolgt von [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |[Aktualisieren einer Besprechung mithilfe von EWS](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md#bk_UpdateMtgEWS) <br/> |
+|Löschen eines Termins oder einer Besprechung  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) , gefolgt von [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |[](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md#bk_DeleteMtgEWSMA) <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 - [Stellvertretungszugriff und EWS in Exchange](delegate-access-and-ews-in-exchange.md)   
-- [Hinzufügen und Entfernen von Stellvertretungen mithilfe von EWS in Exchange](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md)
-- [Legen Sie Berechtigungen für einen anderen Benutzer mithilfe der EWS in Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md) 
+- [Hinzufügen und Entfernen von Delegaten mithilfe der EWS in Exchange](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md)
+- [Festlegen von Ordnerberechtigungen für einen anderen Benutzer mithilfe der EWS in Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md) 
 - [Kalender und EWS in Exchange](calendars-and-ews-in-exchange.md)
     
 

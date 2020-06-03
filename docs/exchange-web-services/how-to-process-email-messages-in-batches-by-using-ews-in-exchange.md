@@ -1,42 +1,42 @@
 ---
-title: Verarbeiten von e-Mail-Nachrichten in Batches mithilfe von EWS in Exchange
+title: Verarbeiten von E-Mails in Batches mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 96390f92-cab1-4de6-9ec2-a55678fc20af
-description: Informationen Sie zum Erstellen, abrufen, aktualisieren und Löschen von e-Mail-Nachrichten in einem einzigen Aufruf im Batchmodus durch Verwenden der EWS Managed API oder EWS in Exchange.
-ms.openlocfilehash: b7dcc8f0961a34061b0476e2136193bf21731d99
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: In diesem Artikel erfahren Sie, wie Sie Batches von e-Mail-Nachrichten in einem einzigen Aufruf mithilfe der verwaltete EWS-API oder EWS in Exchange erstellen, abrufen, aktualisieren und löschen können.
+localization_priority: Priority
+ms.openlocfilehash: 2592076c9c5b57356d96872f006dd7b0abfc328a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354043"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527775"
 ---
-# <a name="process-email-messages-in-batches-by-using-ews-in-exchange"></a>Verarbeiten von e-Mail-Nachrichten in Batches mithilfe von EWS in Exchange
+# <a name="process-email-messages-in-batches-by-using-ews-in-exchange"></a>Verarbeiten von E-Mails in Batches mithilfe von EWS in Exchange
 
-Informationen Sie zum Erstellen, abrufen, aktualisieren und Löschen von e-Mail-Nachrichten in einem einzigen Aufruf im Batchmodus durch Verwenden der EWS Managed API oder EWS in Exchange.
-  
-Sie können die EWS Managed API verwenden oder EWS Batches von e-Mail-Nachrichten, um die Anzahl von Anrufen zu verringern Clientidentität entwickelt werden an einen Exchange-Server. Wenn Sie der EWS Managed API mithilfe erstellen, abrufen, aktualisieren, löschen und Senden von Nachrichten in Batches, verwenden Sie [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) Methoden-Objekts während beim Arbeiten mit einzelnen e-Mail-Nachrichten, Methoden des Objekts ["EmailMessage"](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) verwenden. Wenn Sie Exchange-Webdienste verwenden, verwenden Sie die gleichen Vorgänge zum Arbeiten mit einzelnen und Batches von e-Mail-Nachrichten. 
-  
-**In Tabelle 1. EWS Managed API-Methoden und EWS-Vorgänge für die Arbeit mit von e-Mail-Nachrichten im Batchmodus**
+In diesem Artikel erfahren Sie, wie Sie Batches von e-Mail-Nachrichten in einem einzigen Aufruf mithilfe der verwaltete EWS-API oder EWS in Exchange erstellen, abrufen, aktualisieren und löschen können.
 
-|**Gewünschte Aktion**|**Verwenden Sie diese Methode EWS Managed API**|**Zu verwendender EWS-Vorgang**|
+Sie können die verwaltete EWS-API oder EWS verwenden, um mit Batches von e-Mail-Nachrichten zu arbeiten, um die Anzahl der Anrufe zu reduzieren, die ein Client an einen Exchange-Server tätigt. Wenn Sie die verwaltete EWS-API zum Erstellen, abrufen, aktualisieren, löschen und Senden von Nachrichten in Batches verwenden, verwenden Sie [Datei "ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objektmethoden, während Sie bei der Arbeit mit einzelnen e-Mail-Nachrichten [Email Message](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) -Objektmethoden verwenden. Wenn Sie EWS verwenden, verwenden Sie dieselben Vorgänge, um sowohl mit einzelnen als auch mit Batches von e-Mail-Nachrichten zu arbeiten.
+
+**Tabelle 1. Verwaltete EWS-API Methoden und EWS-Vorgänge zum Arbeiten mit Batches von e-Mail-Nachrichten**
+
+|**Gewünschte Aktion**|**Verwenden Sie diese verwaltete EWS-API-Methode**|**Zu verwendender EWS-Vorgang**|
 |:-----|:-----|:-----|
-|Erstellen von e-Mail-Nachrichten in batches  <br/> |[ExchangeService.CreateItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
-|Abrufen von e-Mail-Nachrichten in batches  <br/> |[ExchangeService.BindToItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
-|Aktualisieren von e-Mail-Nachrichten in batches  <br/> |[ExchangeService.UpdateItems](http://msdn.microsoft.com/en-us/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
-|Löschen von e-Mail-Nachrichten in batches  <br/> |[ExchangeService.DeleteItems](http://msdn.microsoft.com/en-us/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
-   
-In diesem Artikel erfahren Sie, wie Sie grundlegende Aufgaben für Batches von e-Mail-Nachrichten mithilfe der EWS Managed API oder EWS abschließen.
-  
-## <a name="create-email-messages-in-batches-by-using-the-ews-managed-api"></a>Erstellen von e-Mail-Nachrichten in Batches mithilfe der EWS Managed API
+|Erstellen von e-Mail-Nachrichten in Batches  <br/> |[Datei "ExchangeService. CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
+|Abrufen von e-Mail-Nachrichten in Batches  <br/> |[Datei "ExchangeService. BindToItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
+|Aktualisieren von e-Mail-Nachrichten in Batches  <br/> |[Datei "ExchangeService. Update Items](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
+|Löschen von e-Mail-Nachrichten in Batches  <br/> |[Datei "ExchangeService. DeleteItems](https://msdn.microsoft.com/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
+
+In diesem Artikel erfahren Sie, wie Sie grundlegende Aufgaben für Batches von e-Mail-Nachrichten mithilfe der verwaltete EWS-API oder EWS ausführen.
+
+## <a name="create-email-messages-in-batches-by-using-the-ews-managed-api"></a>Erstellen von e-Mail-Nachrichten in Batches mithilfe der verwaltete EWS-API
 <a name="bk_createewsma"> </a>
 
-Sie können Nachrichten in Batches erstellen, mit der EWS Managed API **CreateItems** -Methode, wie im folgenden Beispiel dargestellt. In diesem Beispiel werden drei lokal ["EmailMessage"](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) -Objekte erstellt, eine Auflistung aller Nachrichten hinzugefügt und dann Ruft die **CreateItems** -Methode für die Auflistung von Nachrichten. 
-  
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
-  
+Sie können Nachrichten in Batches mithilfe der verwaltete EWS-API **CreateItems** -Methode erstellen, wie im folgenden Beispiel gezeigt. In diesem Beispiel werden drei [Email Message](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) -Objekte lokal erstellt, jede Nachricht wird einer Auflistung hinzugefügt, und anschließend wird die **CreateItems** -Methode für die Auflistung von Nachrichten aufgerufen.
+
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde.
+
 ```cs
 public static Collection<ItemId> CreateDraftEmailInBatch(ExchangeService service)
 {
@@ -86,7 +86,7 @@ public static Collection<ItemId> CreateDraftEmailInBatch(ExchangeService service
             Console.WriteLine("All locally created messages were successfully saved to the Drafts folder.");
             Console.WriteLine("\r\n");
     }
-   
+
     // If the method did not return success, print the result message for each email.
     else
     {
@@ -105,19 +105,19 @@ public static Collection<ItemId> CreateDraftEmailInBatch(ExchangeService service
 }
 ```
 
-Beachten Sie, dass im Beispiel wird nur die Nachrichten im Ordner Entwürfe gespeichert. Es werden keine Nachrichten gesendet werden. Weitere Informationen zum Senden von Nachrichten finden Sie unter [Senden von e-Mail-Nachrichten in Batches mithilfe der EWS Managed API](#bk_sendewsma).
-  
-## <a name="create-email-messages-in-batches-by-using-ews"></a>Erstellen von e-Mail-Nachrichten in Batches mithilfe von Exchange-Webdienste
+Beachten Sie, dass im Beispiel die Nachrichten nur im Ordner "Entwürfe" gespeichert werden. die Nachrichten werden nicht gesendet. Weitere Informationen zum Senden von Nachrichten finden Sie unter [Senden von e-Mail-Nachrichten in Batches mithilfe der verwaltete EWS-API](#bk_sendewsma).
+
+## <a name="create-email-messages-in-batches-by-using-ews"></a>Erstellen von e-Mail-Nachrichten in Batches mithilfe von EWS
 <a name="bk_createews"> </a>
 
-Sie können e-Mail-Nachrichten in Batches erstellen, mithilfe des [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) -EWS-Vorgangs, wie im folgenden Codebeispiel dargestellt. Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die EWS Managed API zum [Erstellen von e-Mail-Nachrichten in Batches](#bk_createewsma)verwenden. 
-  
+Sie können e-Mail-Nachrichten in Batches mithilfe des [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) -EWS-Vorgangs erstellen, wie im folgenden Codebeispiel dargestellt. Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die verwaltete EWS-API verwenden, um [e-Mail-Nachrichten in Batches zu erstellen](#bk_createewsma).
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -160,26 +160,26 @@ Sie können e-Mail-Nachrichten in Batches erstellen, mithilfe des [CreateItem](h
 </soap:Envelope>
 ```
 
-Der Server antwortet an die **CreateItem** -Anforderung mit einer [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) -Nachricht, die enthält den Wert [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError** für jede der neuen Nachrichten, die angibt, dass jede e-Mail erstellt und erfolgreich gespeichert wurde . 
-  
-Beachten Sie, dass im Beispiel wird nur die Nachrichten im Ordner Entwürfe gespeichert. Es werden keine Nachrichten gesendet werden. Weitere Informationen zum Senden von Nachrichten finden Sie unter [Senden von e-Mail-Nachrichten in Batches mithilfe der Exchange-Webdienste](#bk_sendews).
-  
-## <a name="send-email-messages-in-batches-by-using-the-ews-managed-api"></a>Senden von e-Mail-Nachrichten in Batches mithilfe der EWS Managed API
+Der Server antwortet auf die **CreateItem** -Anforderung mit einer [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) -Nachricht, die einen [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Wert von **noError** für jede der neuen Nachrichten enthält, was darauf hinweist, dass jede e-Mail erstellt und erfolgreich gespeichert wurde.
+
+Beachten Sie, dass im Beispiel die Nachrichten nur im Ordner "Entwürfe" gespeichert werden. die Nachrichten werden nicht gesendet. Weitere Informationen zum Senden von Nachrichten finden Sie unter [Senden von e-Mail-Nachrichten in Batches mithilfe von EWS](#bk_sendews).
+
+## <a name="send-email-messages-in-batches-by-using-the-ews-managed-api"></a>Senden von e-Mail-Nachrichten in Batches mithilfe der verwaltete EWS-API
 <a name="bk_sendewsma"> </a>
 
-Sie verwenden den gleichen Code zum Senden von e-Mail-Nachrichten in Batches, mit denen Sie zum Erstellen von e-Mail-Nachrichten in Batches, außer dass wenige Methodenparameter [CreateItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) ändern. Daher zum Senden von e-Mail-Nachrichten mithilfe der EWS Managed API, verwenden Sie den Code, den Sie zum [Erstellen von e-Mail-Nachrichten in Batches](#bk_createewsma)verwenden, und Ersetzen Sie den Anruf an die **CreateItems** -Methode mit dem Aufruf im folgenden Beispiel. In diesem Beispiel werden die Nachrichten im Ordner "Gesendete Elemente" erstellt, und die Disposition Nachricht zu [MessageDisposition.SendAndSaveCopy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.messagedisposition%28v=exchg.80%29.aspx), so geändert, dass die Nachricht gesendet wird, und nicht nur lokal gespeichert.
-  
+Sie verwenden denselben Code zum Senden von e-Mail-Nachrichten in Batches, die Sie zum Erstellen von e-Mail-Nachrichten in Batches verwenden, mit dem Unterschied, dass sich einige der Parameter der [CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) -Methode ändern. Verwenden Sie also zum Senden von e-Mail-Nachrichten mithilfe des verwaltete EWS-API den Code, den Sie zum [Erstellen von e-Mail-Nachrichten in Batches](#bk_createewsma)verwenden, und ersetzen Sie den Aufruf der **CreateItems** -Methode durch den Aufruf im folgenden Beispiel. In diesem Beispiel werden die Nachrichten im Ordner "Gesendete Elemente" erstellt, und die Nachrichten Disposition wird in [MessageDisposition. SendAndSaveCopy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.messagedisposition%28v=exchg.80%29.aspx)geändert, sodass die Nachricht gesendet und nicht nur lokal gespeichert wird.
+
 ```cs
 // Create and send the batch of email messages on the server.
 // This method call results in an CreateItem call to EWS.
 ServiceResponseCollection<ServiceResponse> response = service.CreateItems(messageItems, WellKnownFolderName.SentItems, MessageDisposition.SendAndSaveCopy, null);
 ```
 
-## <a name="send-email-messages-in-batches-by-using-ews"></a>Senden von e-Mail-Nachrichten in Batches mithilfe der Exchange-Webdienste
+## <a name="send-email-messages-in-batches-by-using-ews"></a>Senden von e-Mail-Nachrichten in Batches mithilfe von EWS
 <a name="bk_sendews"> </a>
 
-Verwenden Sie denselben Code zum Senden von e-Mail-Nachrichten in Batches für die Verwendung zum Erstellen von e-Mail-Nachrichten in Batches, mit der Ausnahme, dass nur einige der Attributwerte für den Vorgang **CreateItem** ändern. Zum Senden von e-Mail-Nachrichten mithilfe der Exchange-Webdienste, also, verwenden Sie den Code, die Sie verwenden, um [e-Mail-Nachricht in Batches erstellen](#bk_createews)und ändern Sie den Wert **"MessageDisposition"** in "SendAndSaveCopy", und ändern Sie die [DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) in "Gesendete Elemente", siehe die folgende Codebeispiel. 
-  
+Sie verwenden denselben Code zum Senden von e-Mail-Nachrichten in Batches, die Sie zum Erstellen von e-Mail-Nachrichten in Batches verwenden, mit dem Unterschied, dass sich einige der Attributwerte für den **CreateItem** -Vorgang ändern. Um also e-Mail-Nachrichten mithilfe von EWS zu senden, verwenden Sie den Code, mit dem Sie [e-Mail-Nachrichten in Batches erstellen](#bk_createews), und ändern Sie den **MessageDisposition** -Wert in "SendAndSaveCopy", und ändern Sie die [DistinguishedFolderId](https://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) in "Gesendete Elemente", wie im folgenden Codebeispiel dargestellt.
+
 ```XML
 <m:CreateItem MessageDisposition="SendAndSaveCopy">
   <m:SavedItemFolderId>
@@ -187,15 +187,15 @@ Verwenden Sie denselben Code zum Senden von e-Mail-Nachrichten in Batches für d
   </m:SavedItemFolderId>
 ```
 
-Der Server antwortet auf die **CreateItem** -Anforderung mit einer [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) -Nachricht, die enthält den Wert [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError** für jede der neuen Nachrichten, gibt an, dass jede e-Mail erstellt und erfolgreich gesendet wurde. 
-  
-## <a name="get-email-messages-in-batches-by-using-the-ews-managed-api"></a>Abrufen von e-Mail-Nachrichten in Batches mithilfe der EWS Managed API
+Der Server antwortet auf die **CreateItem** -Anforderung mit einer [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) -Nachricht, die einen [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Wert von **noError** für jede der neuen Nachrichten enthält, was darauf hinweist, dass jede e-Mail erstellt und erfolgreich gesendet wurde.
+
+## <a name="get-email-messages-in-batches-by-using-the-ews-managed-api"></a>Abrufen von e-Mail-Nachrichten in Batches mithilfe der verwaltete EWS-API
 <a name="bk_getewsma"> </a>
 
-Sie können e-Mail-Nachrichten in Batches abrufen, indem Sie mithilfe der EWS Managed API [BindToItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) -Methode, wie im folgenden Beispiel dargestellt. 
-  
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
-  
+Sie können e-Mail-Nachrichten in Batches abrufen, indem Sie die verwaltete EWS-API [BindToItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) -Methode verwenden, wie im folgenden Beispiel gezeigt.
+
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde.
+
 ```cs
 public static Collection<EmailMessage> BatchGetEmailItems(ExchangeService service, Collection<ItemId> itemIds)
 {
@@ -204,7 +204,7 @@ public static Collection<EmailMessage> BatchGetEmailItems(ExchangeService servic
     // Get the items from the server.
     // This method call results in a GetItem call to EWS.
     ServiceResponseCollection<GetItemResponse> response = service.BindToItems(itemIds, propSet);
-           
+
     // Instantiate a collection of EmailMessage objects to populate from the values that are returned by the Exchange server.
     Collection<EmailMessage> messageItems = new Collection<EmailMessage>();
     foreach (GetItemResponse getItemResponse in response)
@@ -232,19 +232,19 @@ public static Collection<EmailMessage> BatchGetEmailItems(ExchangeService servic
 }
 ```
 
-## <a name="get-email-messages-in-batches-by-using-ews"></a>Abrufen von e-Mail-Nachrichten in Batches mithilfe der Exchange-Webdienste
+## <a name="get-email-messages-in-batches-by-using-ews"></a>Abrufen von e-Mail-Nachrichten in Batches mithilfe von EWS
 <a name="bk_getews"> </a>
 
-Sie können e-Mail-Nachrichten in Batches mithilfe von [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) -EWS-Vorgang und den Code im folgenden Beispiel abrufen. Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die EWS Managed API zum [Abrufen von e-Mail-Nachrichten in Batches](#bk_getewsma)verwenden. 
-  
-[!HINWEIS] Die Attribute **ItemId** und **ChangeKey** wurden zur besseren Lesbarkeit gekürzt. 
-  
+Sie können e-Mail-Nachrichten in Batches mit dem [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) -EWS-Vorgang und dem Code im folgenden Beispiel abrufen. Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die verwaltete EWS-API verwenden, um [e-Mail-Nachrichten in Batches abzurufen](#bk_getewsma).
+
+[!HINWEIS] Die Attribute **ItemId** und **ChangeKey** wurden zur besseren Lesbarkeit gekürzt.
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -270,19 +270,19 @@ Sie können e-Mail-Nachrichten in Batches mithilfe von [GetItem](http://msdn.mic
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die Anforderung **GetItem** mit einer [GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) -Nachricht, die die [First-Class Eigenschaften](email-properties-and-elements-in-ews-in-exchange.md) für jede der angeforderten Nachrichten enthält. 
-  
-## <a name="update-email-messages-in-batches-by-using-the-ews-managed-api"></a>Aktualisieren von e-Mail-Nachrichten in Batches mithilfe der EWS Managed API
+Der Server antwortet auf die **GetItem** -Anforderung mit einer [GetItemResponse](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) -Nachricht, die die [ersten Klassen Eigenschaften](email-properties-and-elements-in-ews-in-exchange.md) für jede der angeforderten Nachrichten enthält.
+
+## <a name="update-email-messages-in-batches-by-using-the-ews-managed-api"></a>Aktualisieren von e-Mail-Nachrichten in Batches mithilfe der verwaltete EWS-API
 <a name="bk_updateewsma"> </a>
 
-Sie können e-Mail-Nachrichten in Batches abrufen, indem Sie mithilfe der EWS Managed API [UpdateItems](http://msdn.microsoft.com/en-us/library/dd634705%28v=exchg.80%29.aspx) -Methode, wie im folgenden Beispiel dargestellt. 
-  
-Eine Liste der Eigenschaften der schreibbare e-Mail-Nachricht finden Sie unter [E-Mail-Eigenschaften und Elemente in EWS in Exchange](email-properties-and-elements-in-ews-in-exchange.md).
-  
-Ausführliche Informationen über den Entwurf einer Nachricht senden, nach der Aktualisierung wurde finden Sie unter [Senden von e-Mail-Nachrichten mithilfe der EWS Managed API](#bk_sendewsma).
-  
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
-  
+Sie können e-Mail-Nachrichten in Batches abrufen, indem Sie die verwaltete EWS-API [Update Items](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) -Methode verwenden, wie im folgenden Beispiel gezeigt.
+
+Eine Liste der schreibbaren Eigenschaften von e-Mail-Nachrichten finden Sie unter [e-Mail-Eigenschaften und-Elemente in EWS in Exchange](email-properties-and-elements-in-ews-in-exchange.md).
+
+Ausführliche Informationen zum Senden einer Entwurfsnachricht nach der Aktualisierung finden Sie unter [Senden von e-Mail-Nachrichten mithilfe der verwaltete EWS-API](#bk_sendewsma).
+
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde.
+
 ```cs
 public static Collection<EmailMessage> BatchUpdateEmailItems(ExchangeService service, Collection<EmailMessage> messageItems)
 {
@@ -316,24 +316,24 @@ public static Collection<EmailMessage> BatchUpdateEmailItems(ExchangeService ser
         }
     }
     return messageItems;
-}    
+}
 ```
 
-## <a name="update-email-messages-in-batches-by-using-ews"></a>Aktualisieren von e-Mail-Nachrichten in Batches mithilfe von Exchange-Webdienste
+## <a name="update-email-messages-in-batches-by-using-ews"></a>Aktualisieren von e-Mail-Nachrichten in Batches mithilfe von EWS
 <a name="bk_updateews"> </a>
 
-Sie können e-Mail-Nachrichten in Batches aktualisieren, mithilfe von [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) -EWS-Vorgangs, wie im folgenden Codebeispiel dargestellt. Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die EWS Managed API zum [Aktualisieren von e-Mail-Nachrichten in Batches](#bk_updateewsma)verwenden.
-  
-Eine Liste der schreibbare e-Mail-Nachrichtenelemente finden Sie unter [E-Mail-Eigenschaften und Elemente in EWS in Exchange](email-properties-and-elements-in-ews-in-exchange.md).
-  
-Ausführliche Informationen über den Entwurf einer Nachricht senden, nach der Aktualisierung wurde finden Sie unter [den Entwurf einer e-Mail-Nachricht mithilfe der Exchange-Webdienste senden](how-to-send-email-messages-by-using-ews-in-exchange.md#bk_senddraftews).
-  
+Sie können e-Mail-Nachrichten in Batches mit dem [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) -EWS-Vorgang aktualisieren, wie im folgenden Codebeispiel gezeigt. Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die verwaltete EWS-API verwenden, um [e-Mail-Nachrichten in Batches zu aktualisieren](#bk_updateewsma).
+
+Eine Liste der beschreibbaren e-Mail-Nachrichtenelemente finden Sie unter [e-Mail-Eigenschaften und-Elemente in EWS in Exchange](email-properties-and-elements-in-ews-in-exchange.md).
+
+Ausführliche Informationen zum Senden einer Entwurfsnachricht nach der Aktualisierung finden Sie unter [Senden von e-Mail-Entwurfsnachrichten mithilfe von EWS](how-to-send-email-messages-by-using-ews-in-exchange.md#bk_senddraftews).
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -386,22 +386,22 @@ Ausführliche Informationen über den Entwurf einer Nachricht senden, nach der A
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die Anforderung **UpdateItem** mit einer [UpdateItemResponse](http://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) -Nachricht, die enthält den Wert [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **noError zurück**, die angibt, dass es sich bei allen Updates auf dem Server erfolgreich gespeichert wurde. Im [ConflictResult](http://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx) -Element werden alle Konflikte gemeldet. 
-  
-## <a name="delete-email-messages-in-batches-by-using-the-ews-managed-api"></a>Löschen von e-Mail-Nachrichten in Batches mithilfe der EWS Managed API
+Der Server antwortet auf die **UpdateItem** -Anforderung mit einer [UpdateItemResponse](https://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Wert **noError**enthält, der angibt, dass jedes Update erfolgreich auf dem Server gespeichert wurde. Alle Konflikte werden im [ConflictResult](https://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx) -Element gemeldet.
+
+## <a name="delete-email-messages-in-batches-by-using-the-ews-managed-api"></a>Löschen von e-Mail-Nachrichten in Batches mithilfe der verwaltete EWS-API
 <a name="bk_deleteewsma"> </a>
 
-Sie können Nachrichten in Batches löschen, mithilfe der EWS Managed API [DeleteItems](http://msdn.microsoft.com/en-us/library/dd635460%28v=exchg.80%29.aspx) -Methode, wie im folgenden Beispiel dargestellt. 
-  
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
-  
+Sie können Nachrichten in Batches löschen, indem Sie die verwaltete EWS-API [DeleteItems](https://msdn.microsoft.com/library/dd635460%28v=exchg.80%29.aspx) -Methode verwenden, wie im folgenden Beispiel gezeigt.
+
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde.
+
 ```cs
 public static void BatchDeleteEmailItems(ExchangeService service, Collection<ItemId> itemIds)
 {
     // Delete the batch of email message objects.
     // This method call results in an DeleteItem call to EWS.
     ServiceResponseCollection<ServiceResponse> response = service.DeleteItems(itemIds, DeleteMode.SoftDelete, null, AffectedTaskOccurrence.AllOccurrences);
-    
+
     // Check for success of the DeleteItems method call.
     // DeleteItems returns success even if it does not find all the item IDs.
     if (response.OverallResult == ServiceResult.Success)
@@ -416,17 +416,17 @@ public static void BatchDeleteEmailItems(ExchangeService service, Collection<Ite
 }
 ```
 
-## <a name="delete-email-messages-in-batches-by-using-ews"></a>Löschen von e-Mail-Nachrichten in Batches mithilfe der Exchange-Webdienste
+## <a name="delete-email-messages-in-batches-by-using-ews"></a>Löschen von e-Mail-Nachrichten in Batches mithilfe von EWS
 <a name="bk_deleteews"> </a>
 
-Sie können e-Mail-Nachrichten in Batches mit löschen [DeleteItem](../web-service-reference/deleteitem-operation.md) EWS-Vorgangs, wie im folgenden Codebeispiel dargestellt. Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die EWS Managed API zum [Löschen von e-Mail-Nachrichten in Batches](#bk_deleteewsma)verwenden.
-  
+Sie können e-Mail-Nachrichten in Batches löschen, indem Sie den EWS-Vorgang [DeleteItem](../web-service-reference/deleteitem-operation.md) verwenden, wie im folgenden Codebeispiel dargestellt. Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die verwaltete EWS-API verwenden, um [e-Mail-Nachrichten in Batches zu löschen](#bk_deleteewsma).
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -446,29 +446,29 @@ Sie können e-Mail-Nachrichten in Batches mit löschen [DeleteItem](../web-servi
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die Anforderung **DeleteItem** mit einer [DeleteItemResponse](http://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) -Nachricht, [die responseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) Wert **NoError** für jedes Element enthält, das entfernt wurde. Beachten Sie, dass der Vorgang erfolgreich auch zurückgegeben, wenn die Element-ID wurde nicht gefunden. 
-  
-## <a name="verifying-that-a-batch-process-completed-successfully"></a>Sicherstellen, dass die Batch-Verarbeitung erfolgreich abgeschlossen
+Der Server antwortet auf die **DeleteItem** -Anforderung mit einer [DeleteItemResponse](https://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Wert **noError** für jedes entfernte Element enthält. Beachten Sie, dass der Vorgang auch dann Success zurückgegeben wird, wenn die Element-ID nicht gefunden werden konnte.
+
+## <a name="verifying-that-a-batch-process-completed-successfully"></a>Überprüfen, ob ein Batchprozess erfolgreich abgeschlossen wurde
 <a name="bk_successful"> </a>
 
-Wenn eine oder mehrere e-Mail-Nachrichten in einer Anforderung im Batch nicht verarbeitet werden können, wie angefordert, für jede e-Mail-Nachricht, die fehlgeschlagen ist ein Fehler zurückgegeben, und die restlichen die e-Mails im Batch erwartungsgemäß verarbeitet werden. Fehler im Batch-Verarbeitung können auftreten, wenn das Element wurde gelöscht, und daher nicht gesendet, abgerufen, oder aktualisiert werden, oder wenn das Element in einen anderen Ordner verschoben und daher eine neues Element-ID hat und nicht werden, mit der Element-ID gesendet geändert kann. Die Informationen in diesem Abschnitt veranschaulicht die Fehlerdetails zu Fehlern in Batchverarbeitung von e-Mail-Nachricht erhalten möchten.
-  
-Um den Erfolg der Batch-Verarbeitung mithilfe der EWS Managed API zu überprüfen, können Sie überprüfen, dass die [OverallResult](http://msdn.microsoft.com/en-us/library/dd634515%28v=exchg.80%29.aspx) -Eigenschaft der [ServiceResponseCollection](http://msdn.microsoft.com/en-us/library/dd633715%28v=exchg.80%29.aspx) [ServiceResult.Success](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx)gleich ist. In diesem Fall wurden alle e-Mails erfolgreich verarbeitet. Ist die **OverallResult** nicht gleich **ServiceResult.Success**, eine oder mehrere der e-Mails wurden nicht verarbeitet werden. Jeder der Objekte zurückgegeben, die in der **ServiceResponseCollection** enthält die folgenden Eigenschaften: 
-  
-- [ErrorCode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx)
-    
-- [ErrorDetails](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errordetails%28v=exchg.80%29.aspx)
-    
-- [ErrorMessage](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errormessage%28v=exchg.80%29.aspx)
-    
-- [ErrorProperties](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errorproperties%28v=exchg.80%29.aspx)
-    
-- [Ergebnis](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx)
-    
-Diese Eigenschaften enthalten Informationen, warum die e-Mail-Nachrichten nicht verarbeitet werden kann, wie angefordert. Die Beispiele in diesem Artikel drucken Sie das **Ergebnis**, **ErrorCode**und **ErrorMessage** für jede fehlgeschlagene Nachricht. Sie können diese Ergebnisse verwenden, um das Problem zu untersuchen. 
-  
-Überprüfen Sie für EWS um die erfolgreiche eines Prozesses im Batchmodus zu überprüfen, das [ResponseClass](http://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx) -Attribut für jedes Element verarbeitet werden. Im folgenden finden die Grundstruktur der **ResponseMessageType**, den Basistyp der Antwort, die alle Nachrichten abgeleitet sind. 
-  
+Wenn eine oder mehrere e-Mail-Nachrichten in einer Batchanforderung nicht wie angefordert verarbeitet werden können, wird für jede e-Mail-Nachricht, die fehlgeschlagen ist, ein Fehler zurückgegeben, und die restlichen e-Mails im Batch werden wie erwartet verarbeitet. Fehler in der Batchverarbeitung können auftreten, wenn das Element gelöscht wurde und daher nicht gesendet, abgerufen oder aktualisiert werden kann oder wenn das Element in einen anderen Ordner verschoben wurde und daher über eine neue Element-ID verfügt und nicht mit der gesendeten Element-ID geändert werden kann. Die Informationen in diesem Abschnitt zeigen, wie Fehlerdetails zu Fehlern in der Batchverarbeitung von e-Mail-Nachrichten abgerufen werden.
+
+Um den Erfolg eines Batchprozesses mithilfe der verwaltete EWS-API zu überprüfen, können Sie überprüfen, ob die [OverallResult](https://msdn.microsoft.com/library/dd634515%28v=exchg.80%29.aspx) -Eigenschaft des [ServiceResponseCollection](https://msdn.microsoft.com/library/dd633715%28v=exchg.80%29.aspx) gleich [ServiceResult. Success](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx)ist. Wenn dies der Fall ist, wurden alle e-Mails erfolgreich verarbeitet. Wenn **OverallResult** nicht gleich **ServiceResult. Success**ist, wurden eine oder mehrere der e-Mails nicht erfolgreich verarbeitet. Jedes der Objekte, die in der **ServiceResponseCollection** zurückgegeben werden, enthält die folgenden Eigenschaften:
+
+- [ErrorCode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx)
+
+- [ErrorDetails](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errordetails%28v=exchg.80%29.aspx)
+
+- [ErrorMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errormessage%28v=exchg.80%29.aspx)
+
+- [ErrorProperties](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errorproperties%28v=exchg.80%29.aspx)
+
+- [Ergebnis](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx)
+
+Diese Eigenschaften enthalten Informationen dazu, warum die e-Mail-Nachrichten nicht wie angefordert verarbeitet werden konnten. In den Beispielen in diesem Artikel werden das **Ergebnis**, **errorCode**und **ErrorMessage** für jede fehlgeschlagene Nachricht gedruckt. Sie können diese Ergebnisse verwenden, um das Problem zu untersuchen.
+
+Überprüfen Sie für EWS das [ResponseClass](https://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx) -Attribut für jedes verarbeitete Element, um den Erfolg eines Batchprozesses zu überprüfen. Im folgenden finden Sie die grundlegende Struktur des **ResponseMessageType**, den Basistyp, von dem alle Antwortnachrichten abgeleitet werden.
+
 ```XML
 <ResponseMessage ResponseClass="Success | Warning | Error">
             <MessageText/>
@@ -478,19 +478,17 @@ Diese Eigenschaften enthalten Informationen, warum die e-Mail-Nachrichten nicht 
 </ResponseMessage>
 ```
 
-Das **ResponseClass** -Attribut wird zum **Erfolg** , wenn die e-Mail-Nachricht wurde erfolgreich verarbeitet oder **Fehler** festgelegt, wenn die e-Mail-Nachricht nicht erfolgreich verarbeitet wurde. Für e-Mail-Nachrichten wird eine **Warnung** nicht bei der Batchverarbeitung auftreten. Wenn die **ResponseClass** **erfolgreich**ist, wird das [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Element, das folgt auch immer auf **NoError**festgelegt. Wenn die **ResponseClass** **Fehler**ist, müssen Sie überprüfen Sie die Werte der [MessageText](http://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx), **ResponseCode**und [MessageXml](http://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) Elemente, die Ursache des Problems zu bestimmen. [DescriptiveLinkKey](http://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) wird derzeit nicht verwendet. 
-  
+Das **ResponseClass** -Attribut wird auf " **Success** " festgelegt, wenn die e-Mail erfolgreich verarbeitet wurde, oder **Fehler** , wenn die e-Mail nicht erfolgreich verarbeitet wurde. Bei e-Mail-Nachrichten wird während der Batchverarbeitung keine **Warnung angezeigt** . Wenn der **ResponseClass** **erfolgreich**ist, wird das [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Element, das folgt, auch immer auf **noError**festgelegt. Wenn das **ResponseClass** -Element **fehlerhaft**ist, müssen Sie die Werte der [MessageText](https://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx)-, **Response Code**-und [messagexml verwendet](https://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) -Elemente überprüfen, um zu ermitteln, was das Problem verursacht hat. [DescriptiveLinkKey](https://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) wird derzeit nicht verwendet.
+
 ## <a name="see-also"></a>Siehe auch
 
 
 - [E-Mail- und EWS in Exchange](email-and-ews-in-exchange.md)
-    
-- [Senden von e-Mail-Nachrichten mithilfe der EWS in Exchange](how-to-send-email-messages-by-using-ews-in-exchange.md)
-    
-- [Reagieren Sie auf e-Mail-Nachrichten mithilfe der EWS in Exchange](how-to-respond-to-email-messages-by-using-ews-in-exchange.md)
-    
-- [Verschieben und Kopieren von e-Mail-Nachrichten mithilfe der EWS in Exchange](how-to-move-and-copy-email-messages-by-using-ews-in-exchange.md)
-    
-- [Auswirkungen von Einschränkungen für EWS-Batchanforderungen](ews-throttling-in-exchange.md#bk_ThrottlingBatch)
-    
 
+- [Senden von E-Mail-Nachrichten mit EWS in Exchange](how-to-send-email-messages-by-using-ews-in-exchange.md)
+
+- [Antworten auf E-Mail-Nachrichten mithilfe von EWS in Exchange](how-to-respond-to-email-messages-by-using-ews-in-exchange.md)
+
+- [Verschieben und Kopieren von E-Mail-Nachrichten mithilfe von EWS in Exchange](how-to-move-and-copy-email-messages-by-using-ews-in-exchange.md)
+
+- [Einschränkungs Auswirkungen auf EWS-Batchanforderungen](ews-throttling-in-exchange.md#throttling-implications-for-ews-batch-requests)

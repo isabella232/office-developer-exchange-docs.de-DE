@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
 api_name:
 - Exchange
 api_type:
 - schema
 ms.assetid: cf6fd871-9a65-4f34-8557-c8c71dd7ce09
 description: Suchen nach Informationen zu in Exchange verfügbaren EWS-Vorgängen
-ms.openlocfilehash: c56c3be746138cec251836fcb61ee3738d168869
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: 143903d9198a7e31e876adcbbb336df34ecf01fa
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758308"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526123"
 ---
 # <a name="ews-operations-in-exchange"></a>EWS-Operationen in Exchange
 
@@ -72,7 +72,7 @@ In der folgenden Tabelle sind die Exchange-Postfachdatenordnervorgänge aufgefü
 |:-----|:-----|
 |[CreateFolder Operation](createfolder-operation.md) <br/> |Exchange 2007  <br/> |
 |[CreateFolderPath-Vorgang](createfolderpath-operation.md) <br/> |Exchange 2013  <br/> |
-|[CreateManagedFolder-Vorgang](createmanagedfolder-operation.md) <br/> |Exchange 2007. Diese Funktion wurde in Versionen von Exchange ab Exchange 2010 herabgestuft. Informationen zur Migration hin zur Verwendung von Aufbewahrungstags und -richtlinien für die Verwaltung von Nachrichtendatensätzen finden Sie unter [Migrieren von verwalteten Ordnern](http://technet.microsoft.com/de-DE/library/dd298032%28v=exchg.141%29.aspx).  <br/> |
+|[CreateManagedFolder-Vorgang](createmanagedfolder-operation.md) <br/> |Exchange 2007. Diese Funktion wurde in Versionen von Exchange ab Exchange 2010 herabgestuft. Informationen zur Migration hin zur Verwendung von Aufbewahrungstags und -richtlinien für die Verwaltung von Nachrichtendatensätzen finden Sie unter [Migrieren von verwalteten Ordnern](https://technet.microsoft.com/library/dd298032%28v=exchg.141%29.aspx).  <br/> |
 |[CopyFolder-Vorgang](copyfolder-operation.md) <br/> |Exchange 2007  <br/> |
 |[DeleteFolder-Vorgang](deletefolder-operation.md) <br/> |Exchange 2007  <br/> |
 |[EmptyFolder-Vorgang](emptyfolder-operation.md) <br/> |Exchange 2010  <br/> |
@@ -86,7 +86,7 @@ In der folgenden Tabelle sind die Exchange-Postfachdatenanlagenvorgänge aufgef�
 |**Name des Vorgangs**|**Eingeführt in**|
 |:-----|:-----|
 |[CreateAttachment-Vorgang](createattachment-operation.md) <br/> |Exchange 2007  <br/> |
-|[GetAttachment-Vorgang](getattachment-operation.md) <br/> |Exchange 2007  <br/> |
+|[GetAttachment-Vorgang](getattachment-operation.md) <br/> |Exchange 2007  <br/> |
 |[DeleteAttachment-Vorgang](deleteattachment-operation.md) <br/> |Exchange 2007  <br/> |
    
 In der folgenden Tabelle sind die Exchange-Postfacherinnerungsvorgänge aufgeführt.
@@ -216,7 +216,7 @@ In der folgenden Tabelle sind die Benachrichtigungsvorgänge aufgeführt.
 |:-----|:-----|
 |[GetEvents-Vorgang](getevents-operation.md) <br/> |Exchange 2007  <br/> |
 |[GetStreamingEvents-Vorgang](getstreamingevents-operation.md) <br/> |Exchange 2010 SP1  <br/> |
-|[Vorgang abonnieren](subscribe-operation.md) <br/> |Exchange 2007  <br/> |
+|[Vorgang abonnieren](subscribe-operation.md) <br/> |Exchange 2007  <br/> |
 |[Vorgang des Kündigens von Abonnements](unsubscribe-operation.md) <br/> |Exchange 2007  <br/> |
    
 ## <a name="persona-operations"></a>Persona-Vorgänge
@@ -274,7 +274,7 @@ In der folgenden Tabelle sind die Synchronisierungsvorgänge aufgeführt.
   
 |**Name des Vorgangs**|**Eingeführt in**|
 |:-----|:-----|
-|[SyncFolderHierarchy-Vorgang](syncfolderhierarchy-operation.md) <br/> |Exchange 2007  <br/> |
+|[SyncFolderHierarchy-Vorgang](syncfolderhierarchy-operation.md) <br/> |Exchange 2007  <br/> |
 |[SyncFolderItems-Vorgang](syncfolderitems-operation.md) <br/> |Exchange 2007  <br/> |
    
 ## <a name="time-zone-operation"></a>Zeitzonenvorgänge

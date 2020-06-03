@@ -1,55 +1,55 @@
 ---
-title: Hinzufügen von Anlagen im Exchange mithilfe der Exchange-Webdienste
+title: Hinzufügen von Anlagen mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 0cbce436-2ae6-4fcc-bd8b-f517a0724e55
-description: Informationen Sie zum Erstellen neuer Elemente mit Anlagen oder hinzufügen, indem Sie die EWS Managed API oder EWS in Exchange Anlagen in vorhandenen Elementen.
-ms.openlocfilehash: dbfff879c92dafeec588d79cddd92e294b763c06
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hier erfahren Sie, wie Sie mit Anlagen neue Elemente erstellen oder vorhandenen Elementen Anlagen mithilfe der verwaltete EWS-API oder EWS in Exchange hinzufügen.
+localization_priority: Priority
+ms.openlocfilehash: fa98eb437d1289f25cfb827b6fa9b351d842bd40
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756889"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528265"
 ---
-# <a name="add-attachments-by-using-ews-in-exchange"></a>Hinzufügen von Anlagen im Exchange mithilfe der Exchange-Webdienste
+# <a name="add-attachments-by-using-ews-in-exchange"></a>Hinzufügen von Anlagen mithilfe von EWS in Exchange
 
-Informationen Sie zum Erstellen neuer Elemente mit Anlagen oder hinzufügen, indem Sie die EWS Managed API oder EWS in Exchange Anlagen in vorhandenen Elementen.
+Hier erfahren Sie, wie Sie mit Anlagen neue Elemente erstellen oder vorhandenen Elementen Anlagen mithilfe der verwaltete EWS-API oder EWS in Exchange hinzufügen.
   
-Sie können mithilfe der EWS Managed API oder EWS Dateianlagen oder elementanlagen auf neue oder vorhandene Elemente hinzufügen. Wenn Sie die EWS Managed API verwenden, verwenden Sie die gleiche Methode Anlagen neue oder vorhandene Elemente hinzu. die Methode ändert sich allerdings, wenn Sie eine Datei oder ein Element eine Anlage verwenden. Bei Verwendung von EWS umgekehrt, Sie verwenden den gleichen Vorgang aus, um auf eine Datei oder ein Element eine Anlage zu einem Element hinzufügen, aber die Operation geändert wird, wenn Sie die Anlage in ein neues oder vorhandenes Element hinzufügen.
+Sie können neue oder vorhandene Elemente mithilfe der verwaltete EWS-API oder EWS Dateianlagen oder Element Anlagen hinzufügen. Wenn Sie die verwaltete EWS-API verwenden, verwenden Sie die gleiche Methode, um Anlagen zu neuen oder vorhandenen Elementen hinzuzufügen. die Methode ändert sich jedoch, wenn Sie eine Datei oder eine Elementanlage verwenden. Wenn Sie EWS verwenden, verwenden Sie umgekehrt denselben Vorgang, um einem Element entweder eine Datei oder eine Elementanlage hinzuzufügen, aber der Vorgang ändert sich, wenn Sie die Anlage einem neuen oder vorhandenen Element hinzufügen.
   
 **Tabelle 1. Verwaltete EWS-API-Methoden und EWS-Operationen für das Hinzufügen von Anlagen**
 
 |**Aufgabe**|**EWS Managed API-Methode**|**EWS-Vorgang**|
 |:-----|:-----|:-----|
-|Fügen Sie eine Dateianlage für eine neue oder vorhandene e-Mail-Adresse  <br/> |[AttachmentCollection.AddFileAttachment](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.attachmentcollection.addfileattachment%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) für eine neue e-Mail-Adresse  <br/> [CreateAttachment](http://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx) hinzufügen zu einer vorhandenen e-Mail  <br/> |
-|Hinzufügen einer Elementanlage auf einer neuen oder vorhandenen e-Mails  <br/> |[AttachmentCollection.AddItemAttachment](http://msdn.microsoft.com/en-us/library/dd634986%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) für eine neue e-Mail-Adresse  <br/> [CreateAttachment](http://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx) hinzufügen zu einer vorhandenen e-Mail  <br/> |
+|Hinzufügen einer Dateianlage zu einer neuen oder vorhandenen e-Mail  <br/> |[AttachmentCollection. AddFileAttachment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.attachmentcollection.addfileattachment%28v=exchg.80%29.aspx) <br/> |[CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) für eine neue e-Mail  <br/> [CreateAttachment](https://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx) zum Hinzufügen zu einer vorhandenen e-Mail  <br/> |
+|Hinzufügen einer Elementanlage zu einer neuen oder vorhandenen e-Mail  <br/> |[AttachmentCollection. AddItemAttachment](https://msdn.microsoft.com/library/dd634986%28v=exchg.80%29.aspx) <br/> |[CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) für eine neue e-Mail  <br/> [CreateAttachment](https://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx) zum Hinzufügen zu einer vorhandenen e-Mail  <br/> |
    
-## <a name="create-an-email-with-file-and-item-attachments-by-using-the-ews-managed-api"></a>Erstellen Sie eine e-Mail mit Datei und Element Anlagen mithilfe der EWS Managed API
+## <a name="create-an-email-with-file-and-item-attachments-by-using-the-ews-managed-api"></a>Erstellen einer e-Mail mit Datei-und Element Anlagen mithilfe der verwaltete EWS-API
 <a name="bk_createattachewsma"> </a>
 
-Im folgenden Codebeispiel wird veranschaulicht, wie eine e-Mail mit mehreren Dateianlagen und Elementanlage durch erstellen: 
+Das folgende Codebeispiel zeigt, wie Sie eine e-Mail mit mehreren Dateianlagen und einer Elementanlage erstellen: 
   
-1. Verwenden die ["EmailMessage"](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) -Objekts, um eine e-Mail-Nachricht zu erstellen. 
+1. Verwenden des [Email Message](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) -Objekts zum Erstellen einer e-Mail-Nachricht. 
     
-2. Mithilfe der [AttachmentCollection.AddFileAttachment](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.attachmentcollection.addfileattachment%28v=exchg.80%29.aspx) und [AttachmentCollection.AddItemAttachment](http://msdn.microsoft.com/en-us/library/dd634986%28v=exchg.80%29.aspx) Anlagen der Nachricht hinzu. 
+2. Verwenden der [AttachmentCollection. AddFileAttachment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.attachmentcollection.addfileattachment%28v=exchg.80%29.aspx) -und [AttachmentCollection. AddItemAttachment](https://msdn.microsoft.com/library/dd634986%28v=exchg.80%29.aspx) -Methoden zum Hinzufügen von Anlagen zur Nachricht. 
     
-3. Verwenden die [EmailMessage.SendAndSaveCopy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx) -Methode zum Senden die Nachricht an die Empfänger, und speichern Sie die Nachricht im Ordner "Gesendete Elemente". 
+3. Verwenden der [Email Message. SendAndSaveCopy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx) -Methode, um die Nachricht an die Empfänger zu senden und die Nachricht im Ordner "Gesendete Elemente" zu speichern. 
     
-In diesem Codebeispiel wird veranschaulicht, die in dem eine Dateianlage für ein Element hinzugefügt werden kann mithilfe der EWS Managed API vier Arten:
+Dieses Codebeispiel zeigt die vier Methoden, mit denen eine Dateianlage einem Element mithilfe der verwaltete EWS-API hinzugefügt werden kann:
   
-- Durch die Verwendung eines vollqualifizierten Dateispeicherorts an.
+- Mithilfe eines vollqualifizierten Dateispeicherorts.
     
-- Mit einem vollqualifizierten Speicherort und einen neuen Anlagenamen.
+- Mithilfe eines vollqualifizierten Dateispeicherorts und eines neuen Anlagennamens.
     
-- Mithilfe von Bytearray zurück.
+- Mithilfe eines Bytearrays.
     
 - Mithilfe eines Streams.
     
-Beachten Sie, dass die Anlage Artikel in diesem Beispiel wird zur selben Zeit als e-Mail-Nachricht erstellt wird. Um eine vorhandene e-Mail-Nachricht als Elementanlage hinzuzufügen, finden Sie unter [Hinzufügen eines vorhandenen Elements zu einer neuen e-Mail mithilfe der ' MimeContent ' und die EWS Managed API](#bk_addexistingemailewsma).
+Beachten Sie, dass die Elementanlage in diesem Beispiel gleichzeitig mit der e-Mail-Nachricht erstellt wird. Informationen zum Hinzufügen einer vorhandenen e-Mail-Nachricht als Elementanlage finden Sie unter [Hinzufügen eines vorhandenen Elements zu einer neuen e-Mail mithilfe der MimeContent und der verwaltete EWS-API](#bk_addexistingemailewsma).
   
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
   
 ```cs
 public static void CreateEmailWithAttachments(ExchangeService service)
@@ -90,19 +90,19 @@ public static void CreateEmailWithAttachments(ExchangeService service)
 }
 ```
 
-## <a name="create-an-email-with-file-and-item-attachments-by-using-ews"></a>Erstellen Sie eine e-Mail mit Datei und Element Anlagen mithilfe der Exchange-Webdienste
+## <a name="create-an-email-with-file-and-item-attachments-by-using-ews"></a>Erstellen einer e-Mail mit Datei-und Element Anlagen mithilfe von EWS
 <a name="bk_createattachews"> </a>
 
-Im folgenden Codebeispiel wird veranschaulicht, wie mithilfe den [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) -Vorgang um mit vier Dateianlagen und ein Element Anlage eine e-Mail-Nachricht zu erstellen. Dies ist eine XML-Anforderung, die die EWS Managed API, wenn sendet Sie [eine e-Mail mit der Datei und Element Anlagen erstellen](#bk_createattachewsma).
+Im folgenden Codebeispiel wird die Verwendung des [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) -Vorgangs zum Erstellen einer e-Mail-Nachricht mit vier Dateianlagen und einer Elementanlage veranschaulicht. Dies ist auch eine der XML-Anforderungen, die vom verwaltete EWS-API gesendet werden, wenn Sie [eine e-Mail mit Datei-und Element Anlagen erstellen](#bk_createattachewsma).
   
-Beachten Sie, dass die Anlage Artikel in diesem Beispiel wird zur selben Zeit als e-Mail-Nachricht erstellt wird. Um eine vorhandene e-Mail-Nachricht als Elementanlage hinzuzufügen, finden Sie unter [Hinzufügen eines vorhandenen Elements zu einer neuen e-Mail mithilfe der ' MimeContent ' und die EWS Managed API](#bk_addexistingemailewsma).
+Beachten Sie, dass die Elementanlage in diesem Beispiel gleichzeitig mit der e-Mail-Nachricht erstellt wird. Informationen zum Hinzufügen einer vorhandenen e-Mail-Nachricht als Elementanlage finden Sie unter [Hinzufügen eines vorhandenen Elements zu einer neuen e-Mail mithilfe der MimeContent und der verwaltete EWS-API](#bk_addexistingemailewsma).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -170,26 +170,26 @@ Beachten Sie, dass die Anlage Artikel in diesem Beispiel wird zur selben Zeit al
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **CreateItem** -Anforderung mit einer [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) -Nachricht, die enthält den Wert [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) **noError zurück**, der angibt, dass die e-Mails und Anlagen erfolgreich erstellt wurden. Die [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) der neu erstellten Nachricht und die [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) Werte für die einzelnen Anlagen ist auch in der Antwort enthalten. Die Werte der einige Attribute wurden zur besseren Lesbarkeit gekürzt. 
+Der Server antwortet auf die **CreateItem** -Anforderung mit einer [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) -Nachricht, die einen [Response Code](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) -Wert von **noError**enthält, der angibt, dass die e-Mail-und die Anlagen erfolgreich erstellt wurden. Die [ItemID](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) der neu erstellten Nachricht und die Werte der [Attachments](https://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) für jede der Anlagen sind ebenfalls in der Antwort enthalten. Die Werte einiger Attribute wurden zur Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="939"
                          MinorBuildNumber="12"
                          Version="V2_11"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -223,20 +223,20 @@ Der Server antwortet auf die **CreateItem** -Anforderung mit einer [CreateItemRe
 </s:Envelope>
 ```
 
-[Diese neu erstellte Nachricht senden](how-to-send-email-messages-by-using-ews-in-exchange.md)rufen Sie [den SendItem](http://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) -Vorgang. 
+Um [diese neu erstellte Nachricht zu senden](how-to-send-email-messages-by-using-ews-in-exchange.md), rufen Sie den [SendItem](https://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) -Vorgang auf. 
   
-## <a name="add-an-existing-item-to-a-new-email-by-using-the-mimecontent-and-the-ews-managed-api"></a>Hinzufügen eines vorhandenen Elements zu einer neuen e-Mail mithilfe der ' MimeContent ' und die EWS Managed API
+## <a name="add-an-existing-item-to-a-new-email-by-using-the-mimecontent-and-the-ews-managed-api"></a>Hinzufügen eines vorhandenen Elements zu einer neuen e-Mail-Nachricht mithilfe der MimeContent und der verwaltete EWS-API
 <a name="bk_addexistingemailewsma"> </a>
 
-Um ein vorhandenes Element als Elementanlage mit einem anderen Element hinzuzufügen, müssen Sie eine neue Anlage Element erstellen, und kopieren Sie den Inhalt des vorhandenen Elements in das neue Element. Es gibt zwei Methoden, um diese Schritte durchführen: 
+Wenn Sie ein vorhandenes Element als Elementanlage zu einem anderen Element hinzufügen möchten, müssen Sie eine neue Elementanlage erstellen und den Inhalt des vorhandenen Elements in das neue Element kopieren. Sie können auf zwei Arten vorgehen: 
   
-1. Wenn Sie insbesondere mit e-Mail-Nachrichten arbeiten, können Sie den Wert der Eigenschaft [' MimeContent '](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) aus der e-Mail in die neu erstellte Element Anlage kopieren. Verlieren Sie einige Eigenschaften während dieses Vorgangs wie Nachfassen Kennzeichen und Kategorien, aber es eignet sich bestens für standard-e-Mail-Nachrichten. 
+1. Wenn Sie speziell mit e-Mail-Nachrichten arbeiten, können Sie den Wert der [MimeContent](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) -Eigenschaft aus der e-Mail in die neu erstellte Elementanlage kopieren. Während dieses Prozesses gehen einige Eigenschaften verloren, beispielsweise Nachverfolgungskennzeichen und Kategorien, aber es funktioniert gut für Standard-e-Mail-Nachrichten. 
     
-2. Wenn Sie für alle Elementtypen originalgetreue benötigen, können Sie mit einem vorhandenen Element binden und kopieren Sie alle Eigenschaften und erweiterten Eigenschaften in die neue Anlage.
+2. Wenn Sie eine vollständige Genauigkeit für alle Elementtypen benötigen, können Sie an ein vorhandenes Element binden und alle Eigenschaften und erweiterten Eigenschaften in die neue Anlage kopieren.
     
-Im folgenden Codebeispiel wird veranschaulicht, den ersten Ansatz, kopieren die **' MimeContent '** in die neue Anlage des Elements. Folgende in diesem Beispiel wird eine Prozedur, die zeigt, wie Sie den Code, um den zweiten Ansatz verwenden ändern können. 
+Im folgenden Codebeispiel wird der erste Ansatz veranschaulicht, indem das **MimeContent** in die neue Elementanlage kopiert wird. Im folgenden Beispiel wird gezeigt, wie Sie den Code so ändern können, dass der zweite Ansatz verwendet wird. 
   
-In diesem Beispiel wird davon ausgegangen, die **Service** ist ein gültiges [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt, das der Benutzer wurde an einen Exchange-Server authentifiziert wurde und, die die **ItemId** [ItemId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) des Elements angefügt ist. 
+In diesem Beispiel wird davon ausgegangen, dass der **Dienst** ein gültiges [Datei "ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt ist und dass der Benutzer bei einem Exchange-Server authentifiziert wurde und dass das **ItemID** -Element das [ItemID](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) des anzufügenden Elements ist. 
   
 ```cs
 public static void CreateEmailExistingItem(ExchangeService service, ItemId itemId)
@@ -260,61 +260,61 @@ public static void CreateEmailExistingItem(ExchangeService service, ItemId itemI
 }
 ```
 
-Führen Sie folgende Schritte aus, um in diesem Beispiel wird um jede der Eigenschaften für das vorhandene Element in das neue Element Anlage kopieren zu ändern: 
+Führen Sie die folgenden Schritte aus, um dieses Beispiel so zu ändern, dass alle Eigenschaften des vorhandenen Elements in die neue Elementanlage kopiert werden: 
   
-1. Ändern Sie den Eigenschaftensatz zu zählen **PropertySet.FirstClassProperties** und zusätzliche Eigenschaften oder erweiterte Eigenschaften, die Sie benötigen. 
+1. Ändern Sie den festgelegten Eigenschaftswert in include **PropertySet. FirstClassProperties** und alle zusätzlichen Eigenschaften oder erweiterten Eigenschaften, die Sie benötigen. 
     
   ```cs
   // Add additional properties to the PropertySet.
   EmailMessage msgToAttach = EmailMessage.Bind(service, itemId, new PropertySet(PropertySet.FirstClassProperties));
   ```
 
-2. Entfernen Sie die folgende Zeile, da Sie nicht die Eigenschaft **' MimeContent '** benötigen. 
+2. Entfernen Sie die folgende Verbindung, da Sie die **MimeContent** -Eigenschaft nicht benötigen. 
     
   ```cs
   itemAttachment.Item.MimeContent = msgToAttach.MimeContent;
   ```
 
-3. Wiederholen Sie diese Zeile für jede Eigenschaft aus das vorhandene Element in die neue Anlage kopiert. Kopieren Sie die **ItemId** nicht in das neue Element Anlage, da, die eine schreibgeschützte Eigenschaft ist. 
+3. Wiederholen Sie diese Position für jede Eigenschaft, die aus dem vorhandenen Element in die neue Anlage kopiert werden soll. Kopieren Sie das **ItemID** nicht in die neue Elementanlage, da es sich um eine schreibgeschützte Eigenschaft handelt. 
     
   ```cs
   itemAttachment.Item.Subject = msgToAttach.Subject;
   ```
 
-4. Legen Sie die [PidTagMessageFlags](http://msdn.microsoft.com/en-us/library/cc839733.aspx) (0x0E070003)-Eigenschaft, auf die Anlage **gesendet**.
+4. Legen Sie die [PidTagMessageFlags](https://msdn.microsoft.com/library/cc839733.aspx) (0x0E070003)-Eigenschaft für die Anlage auf **sent**fest.
     
   ```cs
   ExtendedPropertyDefinition sent = new ExtendedPropertyDefinition(3591, MapiPropertyType.Integer);
   msgToAttach.Item.SetExtendedProperty(sent, "1");
   ```
 
-## <a name="add-an-existing-item-to-a-new-email-by-using-the-mimecontent-and-ews"></a>Hinzufügen eines vorhandenen Elements zu einer neuen e-Mail mithilfe der ' MimeContent ' und EWS
+## <a name="add-an-existing-item-to-a-new-email-by-using-the-mimecontent-and-ews"></a>Hinzufügen eines vorhandenen Elements zu einer neuen e-Mail-Nachricht mithilfe der MimeContent und EWS
 <a name="bk_addexistingemailews"> </a>
 
-Es gibt zwei Methoden, um ein neues Element in ein neues Element hinzufügen: 
+Es gibt zwei Möglichkeiten, einem neuen Element ein vorhandenes Element hinzuzufügen: 
   
-1. Wenn Sie insbesondere mit e-Mail-Nachrichten arbeiten, können Sie den Wert des Elements [' MimeContent '](http://msdn.microsoft.com/library/4f472a08-5653-4c54-ba65-831dfe32f20f%28Office.15%29.aspx) aus der e-Mail in die neu erstellte Element Anlage kopieren. Verlieren Sie einige Eigenschaften während dieses Vorgangs wie Nachfassen Kennzeichen und Kategorien, aber es eignet sich bestens für standard-e-Mail-Nachrichten. 
+1. Wenn Sie speziell mit e-Mail-Nachrichten arbeiten, können Sie den Wert des [MimeContent](https://msdn.microsoft.com/library/4f472a08-5653-4c54-ba65-831dfe32f20f%28Office.15%29.aspx) -Elements aus der e-Mail in die neu erstellte Elementanlage kopieren. Während dieses Prozesses gehen einige Eigenschaften verloren, beispielsweise Nachverfolgungskennzeichen und Kategorien, aber es funktioniert gut für Standard-e-Mail-Nachrichten. 
     
-2. Wenn Sie für alle Elementtypen originalgetreue benötigen, können Sie mit einem vorhandenen Element binden und kopieren Sie alle Eigenschaften und erweiterten Eigenschaften in die neue Anlage.
+2. Wenn Sie eine vollständige Genauigkeit für alle Elementtypen benötigen, können Sie an ein vorhandenes Element binden und alle Eigenschaften und erweiterten Eigenschaften in die neue Anlage kopieren.
     
-Im folgenden Codebeispiel wird veranschaulicht, wie das Element **' MimeContent '** verwenden, um den Inhalt des ursprünglichen Elements in der **' MimeContent '** -Wert, der das neue Element Anlage kopieren. Das Beispiel verwendet die folgenden Vorgänge: 
+Im folgenden Codebeispiel wird veranschaulicht, wie das **MimeContent** -Element verwendet wird, um den Inhalt des ursprünglichen Elements in den **MimeContent** -Wert der neuen Elementanlage zu kopieren. Im Beispiel werden die folgenden Vorgänge verwendet: 
   
-1. [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) – abrufen, die **' MimeContent '** und den [Betreff](http://msdn.microsoft.com/library/c140d6c2-deb1-4f67-a908-9397197c4ae7%28Office.15%29.aspx) der Nachricht, die die Anlage Element auf die neue Nachricht verwendet werden soll. 
+1. [GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) -zum Abrufen des **MimeContent** und des [betreffs](https://msdn.microsoft.com/library/c140d6c2-deb1-4f67-a908-9397197c4ae7%28Office.15%29.aspx) der Nachricht, die als Elementanlage für die neue Nachricht verwendet wird. 
     
-2. [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) – die neue e-Mail-Nachricht zu erstellen. 
+2. [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) – um die neue e-Mail-Nachricht zu erstellen. 
     
-3. [CreateAttachment](http://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx), um die neue Anlage zu erstellen, mit dem **' MimeContent '** und den **Betreff** mit den **GetItem** Operation abgerufen. 
+3. [CreateAttachment](https://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx)– zum Erstellen der neuen Anlage mit dem **MimeContent** und dem **Betreff** , der vom **GetItem** -Vorgang abgerufen wurde. 
     
-4. [Den SendItem](http://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) – senden, und speichern Sie die Nachricht. 
+4. [SendItem](https://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) – zum Senden und Speichern der Nachricht. 
     
-Das Beispiel startet durch die **' MimeContent '** und den **Betreff** des vorhandenen Elements abrufen. 
+Das Beispiel beginnt mit dem Abrufen des **MimeContent** und des **betreffs** des vorhandenen Elements. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
     <m:GetItem>
       <m:ItemShape>
@@ -332,26 +332,26 @@ Das Beispiel startet durch die **' MimeContent '** und den **Betreff** des vorha
 </soap:Envelope>
 ```
 
-Der Server antwortet mit einer [GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) -Nachricht, die einen [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) Wert der **noError zurück**, der angibt, dass die e-Mail-Nachricht erfolgreich abgerufen wurde, und **' MimeContent '** und **enthält die **GetItem** -Anforderung Betreff** der e-Mail. 
+Der Server antwortet auf die **GetItem** -Anforderung mit einer [GetItemResponse](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) -Wert **noError**enthält, der angibt, dass die e-Mail erfolgreich abgerufen wurde, und **MimeContent** und **Betreff** der e-Mail. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="944"
                          MinorBuildNumber="11"
                          Version="V2_12"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -370,14 +370,14 @@ Der Server antwortet mit einer [GetItemResponse](http://msdn.microsoft.com/libra
 </s:Envelope>
 ```
 
-Im nächsten Schritt rufen Sie den **CreateItem** -Vorgang, um die neue e-Mail zu erstellen. 
+Rufen Sie als nächstes den **CreateItem** -Vorgang auf, um die neue e-Mail zu erstellen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
   </soap:Header>
@@ -399,16 +399,16 @@ Im nächsten Schritt rufen Sie den **CreateItem** -Vorgang, um die neue e-Mail z
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **CreateItem** -Anforderung mit einer [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) -Nachricht, die enthält den Wert [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) **noError zurück**, der angibt, dass die e-Mail-Nachricht erfolgreich erstellt wurde.
+Der Server antwortet auf die **CreateItem** -Anforderung mit einer [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) -Nachricht, die einen [Response Code](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) -Wert von **noError**enthält, der angibt, dass die e-Mail erfolgreich erstellt wurde.
   
-Im nächsten Schritt erstellen Sie die neue Element Anlage mithilfe der **' MimeContent '** und **Betreff** mit den **GetItem** Operation abgerufen. Der Wert des [ParentItemId](http://msdn.microsoft.com/library/72dc4391-72db-44d2-85d9-4718d59886a7%28Office.15%29.aspx) -Elements wird mithilfe des in der Antwort **CreateItem** zurückgegebenen **ItemId** -Werts aufgefüllt. 
+Erstellen Sie als nächstes die neue Elementanlage mithilfe des **MimeContent** und des **betreffs** , der vom **GetItem** -Vorgang abgerufen wurde. Der Wert des [ParentItemId](https://msdn.microsoft.com/library/72dc4391-72db-44d2-85d9-4718d59886a7%28Office.15%29.aspx) -Elements wird mithilfe des **ItemID** -Werts aufgefüllt, der in der **CreateItem** -Antwort zurückgegeben wird. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
   </soap:Header>
@@ -429,16 +429,16 @@ Im nächsten Schritt erstellen Sie die neue Element Anlage mithilfe der **' Mime
 </soap:Envelope>
 ```
 
-Der Server antwortet mit einer [CreateAttachmentResponse](http://msdn.microsoft.com/library/cf6bd8bb-5317-4a03-bd75-297dd359b5da%28Office.15%29.aspx) -Meldung, die den Wert [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) **noError zurück**, der angibt, dass die Anlage erfolgreich erstellt wurde, und die [enthält die **CreateAttachment** -Anforderung AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) der neu erstellten Anlage. 
+Der Server antwortet auf die **CreateAttachment** -Anforderung mit einer [CreateAttachmentResponse](https://msdn.microsoft.com/library/cf6bd8bb-5317-4a03-bd75-297dd359b5da%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) -Wert **noError**enthält, der angibt, dass die Anlage erfolgreich erstellt wurde, und die [Attachment](https://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) -Nr der neu erstellten Anlage. 
   
-Nun, dass die neue Nachricht erstellt wurde, und das Element zugeordnet wurde, können Sie für [diese neu erstellte Nachricht senden](how-to-send-email-messages-by-using-ews-in-exchange.md) durch Aufrufen von [den SendItem](http://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) -Vorgang. 
+Nachdem die neue Nachricht erstellt wurde und das Element angefügt wurde, können Sie [diese neu erstellte Nachricht senden](how-to-send-email-messages-by-using-ews-in-exchange.md) , indem Sie den [SendItem](https://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) -Vorgang aufrufen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
   </soap:Header>
@@ -456,22 +456,22 @@ Nun, dass die neue Nachricht erstellt wurde, und das Element zugeordnet wurde, k
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die Anforderung **den SendItem** mit einer [SendItemResponse](http://msdn.microsoft.com/library/26ac41c7-57d9-473e-ab7a-bae93e1d2aba%28Office.15%29.aspx) -Nachricht, die enthält den Wert [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **noError zurück**, der angibt, dass die e-Mail erfolgreich gesendet wurde.
+Der Server antwortet auf die **SendItem**-Anforderung mit einer [SendItemResponse](https://msdn.microsoft.com/library/26ac41c7-57d9-473e-ab7a-bae93e1d2aba%28Office.15%29.aspx)-Nachricht, die den [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)-Wert **NoError** enthält, was darauf hinweist, dass die E-Mail erfolgreich gesendet wurde.
   
-## <a name="create-an-email-with-an-inline-attachment-by-using-the-ews-managed-api"></a>Erstellen Sie eine e-Mail mit Inlineanlage mithilfe der EWS Managed API
+## <a name="create-an-email-with-an-inline-attachment-by-using-the-ews-managed-api"></a>Erstellen einer e-Mail mit einer Inline Anlage mithilfe der verwaltete EWS-API
 <a name="bk_createinlineattachewsma"> </a>
 
-Im folgenden Codebeispiel wird veranschaulicht, wie eine e-Mail mit Inlineanlage durch erstellen:
+Das folgende Codebeispiel zeigt, wie Sie eine e-Mail mit einer Inline Anlage erstellen:
   
-1. Verwenden die ["EmailMessage"](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) -Objekts, um eine e-Mail-Nachricht zu erstellen. 
+1. Verwenden des [Email Message](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) -Objekts zum Erstellen einer e-Mail-Nachricht. 
     
-2. Durch Festlegen der [EmailMessage.Body](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.body%28v=exchg.80%29.aspx) -Eigenschaft auf ein HTML-Textkörper, die eine Inlineanlage enthält. 
+2. Festlegen der [Email Message. Body](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.body%28v=exchg.80%29.aspx) -Eigenschaft auf einen HTML-Textkörper, der eine Inline Anlage enthält. 
     
-3. Mithilfe der [AttachmentCollection.AddFileAttachment](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.attachmentcollection.addfileattachment%28v=exchg.80%29.aspx) -Methode die Anlage der Nachricht hinzu. 
+3. Verwenden der [AttachmentCollection. AddFileAttachment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.attachmentcollection.addfileattachment%28v=exchg.80%29.aspx) -Methode zum Hinzufügen der Anlage zur Nachricht. 
     
-4. Verwenden die [EmailMessage.SendAndSaveCopy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx) -Methode zum Senden die Nachricht an den Empfänger aus, und speichern Sie die Nachricht im Ordner "Gesendete Elemente". 
+4. Verwenden der [Email Message. SendAndSaveCopy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx) -Methode, um die Nachricht an den Empfänger zu senden und die Nachricht im Ordner "Gesendete Elemente" zu speichern. 
     
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
   
 ```cs
 public static void CreateEmailWithInlineAttachment(ExchangeService service)
@@ -502,17 +502,17 @@ public static void CreateEmailWithInlineAttachment(ExchangeService service)
 }
 ```
 
-## <a name="create-an-email-with-an-inline-attachment-by-using-ews"></a>Erstellen Sie eine e-Mail mit Inlineanlage mithilfe der Exchange-Webdienste
+## <a name="create-an-email-with-an-inline-attachment-by-using-ews"></a>Erstellen einer e-Mail mit einer Inline Anlage mithilfe von EWS
 <a name="bk_createinlineattachewsma"> </a>
 
-Im folgenden Codebeispiel wird veranschaulicht, wie mithilfe den [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) -Vorgang eine e-Mail-Nachricht mit Anlage Datei Inline erstellen. Das **BodyType** -Attribut des [Body](http://msdn.microsoft.com/library/7851ea9b-9f87-4adc-a26f-7a27df4a9bca%28Office.15%29.aspx) -Elements gibt an, dass der Inhalt in HTML-Format und die Bildquelle enthält. Dies ist eine XML-Anforderung, die die EWS Managed API sendet, wenn Sie die EWS Managed API, [Erstellen Sie eine e-Mail mit Inlineanlage](#bk_createinlineattachewsma)verwenden.
+Im folgenden Codebeispiel wird die Verwendung des [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) -Vorgangs zum Erstellen einer e-Mail-Nachricht mit einer Inlinedatei Anlage veranschaulicht. Das **BodyType** -Attribut des [Body](https://msdn.microsoft.com/library/7851ea9b-9f87-4adc-a26f-7a27df4a9bca%28Office.15%29.aspx) -Elements gibt an, dass der Inhalt im HTML-Format vorliegt und die Bildquelle enthält. Dies ist auch eine der XML-Anforderungen, die von der verwaltete EWS-API gesendet werden, wenn Sie die verwaltete EWS-API verwenden, um [eine e-Mail-Nachricht mit einer Inline Anlage zu erstellen](#bk_createinlineattachewsma).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
   </soap:Header>
@@ -542,22 +542,22 @@ Im folgenden Codebeispiel wird veranschaulicht, wie mithilfe den [CreateItem](ht
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **CreateItem**-Anforderung mit einer [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx)-Wert **NoError** umfasst, der angibt, dass die E-Mail erfolgreich erstellt wurde, und die [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) der neu erstellten Nachricht enthält. 
+Der Server antwortet auf die **CreateItem**-Anforderung mit einer [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx)-Wert von **NoError** enthält, der darauf hinweist, dass die E-Mail erfolgreich erstellt wurde. Außerdem ist die [ItemId](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) der neu erstellten Nachricht enthalten. 
   
-[Diese neu erstellte Nachricht senden](how-to-send-email-messages-by-using-ews-in-exchange.md)rufen Sie [den SendItem](http://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) -Vorgang. 
+Um [diese neu erstellte Nachricht zu senden](how-to-send-email-messages-by-using-ews-in-exchange.md), rufen Sie den [SendItem](https://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) -Vorgang auf. 
   
-## <a name="add-an-attachment-to-an-existing-email-by-using-the-ews-managed-api"></a>Hinzufügen einer Anlage zu einer vorhandenen e-Mail mithilfe der EWS Managed API
+## <a name="add-an-attachment-to-an-existing-email-by-using-the-ews-managed-api"></a>Hinzufügen einer Anlage zu einer vorhandenen e-Mail mithilfe der verwaltete EWS-API
 <a name="bk_createinlineattachewsma"> </a>
 
-Im folgenden Codebeispiel wird veranschaulicht, wie eine Anlage zu einer vorhandenen e-Mails durch Hinzufügen: 
+Im folgenden Codebeispiel wird gezeigt, wie eine Anlage zu einer vorhandenen e-Mail hinzugefügt wird: 
   
-1. Mithilfe der [EmailMessage.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) -Methode um auf eine vorhandene e-Mail-Nachricht zu binden. 
+1. Verwenden der [Email Message. Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) -Methode zum Binden an eine vorhandene e-Mail-Nachricht. 
     
-2. Hinzufügen von eine Dateianlage für die Nachricht mit der **AddFileAttachment** -Methode. 
+2. Hinzufügen einer Dateianlage zur Nachricht mithilfe der **AddFileAttachment** -Methode. 
     
-3. Speichern die Updates durch Aufrufen der [EmailMessage.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) -Methode. 
+3. Speichern der Updates durch Aufrufen der [Email Message. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) -Methode. 
     
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
   
 ```XML
 public static void AddAttachmentToExisting(ExchangeService service, ItemId itemId)
@@ -570,17 +570,17 @@ public static void AddAttachmentToExisting(ExchangeService service, ItemId itemI
 }
 ```
 
-## <a name="add-an-attachment-to-an-existing-email-by-using-ews"></a>Hinzufügen einer Anlage zu einer vorhandenen e-Mail mithilfe der Exchange-Webdienste
+## <a name="add-an-attachment-to-an-existing-email-by-using-ews"></a>Hinzufügen einer Anlage zu einer vorhandenen e-Mail mithilfe von EWS
 <a name="bk_createinlineattachewsma"> </a>
 
-Im folgenden Codebeispiel wird veranschaulicht, wie mithilfe des Vorgangs [CreateAttachment](http://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx) eine Dateianlage für eine vorhandene e-Mail-Nachricht hinzugefügt. Dies ist eine XML-Anforderung, die die EWS Managed API sendet, wenn Sie die EWS Managed API zum [Hinzufügen einer Anlage zu einer vorhandenen e-Mail](#bk_createinlineattachewsma)verwenden.
+Im folgenden Codebeispiel wird veranschaulicht, wie Sie mit dem [CreateAttachment](https://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx) -Vorgang einer vorhandenen e-Mail-Nachricht eine Dateianlage hinzufügen. Dies ist auch eine der XML-Anforderungen, die von der verwaltete EWS-API gesendet werden, wenn Sie die verwaltete EWS-API verwenden, um eine [Anlage zu einer vorhandenen e-Mail hinzuzufügen](#bk_createinlineattachewsma).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -601,26 +601,26 @@ Im folgenden Codebeispiel wird veranschaulicht, wie mithilfe des Vorgangs [Creat
 </soap:Envelope>
 ```
 
-Der Server antwortet mit einer [CreateAttachmentResponse](http://msdn.microsoft.com/library/cf6bd8bb-5317-4a03-bd75-297dd359b5da%28Office.15%29.aspx) -Meldung, die den Wert [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) **noError zurück**, der angibt, dass die Anlage erfolgreich erstellt wurde, und die [enthält die **CreateAttachment** -Anforderung AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) der neu erstellten Anlage. 
+Der Server antwortet auf die **CreateAttachment** -Anforderung mit einer [CreateAttachmentResponse](https://msdn.microsoft.com/library/cf6bd8bb-5317-4a03-bd75-297dd359b5da%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) -Wert **noError**enthält, der angibt, dass die Anlage erfolgreich erstellt wurde, und die [Attachment](https://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) -Nr der neu erstellten Anlage. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="939"
                          MinorBuildNumber="12"
                          Version="V2_11"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -641,14 +641,14 @@ Der Server antwortet mit einer [CreateAttachmentResponse](http://msdn.microsoft.
 ## <a name="see-also"></a>Siehe auch
 
 
-- [Attachments and EWS in Exchange](attachments-and-ews-in-exchange.md)
+- [Anlagen und EWS in Exchange](attachments-and-ews-in-exchange.md)
     
-- [Hinzufügen von Anlagen im Exchange mithilfe der Exchange-Webdienste](how-to-add-attachments-by-using-ews-in-exchange.md)
+- [Hinzufügen von Anlagen mithilfe von EWS in Exchange](how-to-add-attachments-by-using-ews-in-exchange.md)
     
-- [Löschen von Anlagen mithilfe der EWS in Exchange](how-to-delete-attachments-by-using-ews-in-exchange.md)
+- [Löschen von Anlagen mithilfe von EWS in Exchange](how-to-delete-attachments-by-using-ews-in-exchange.md)
     
-- [Abrufen von Anlagen im Exchange mithilfe der Exchange-Webdienste](how-to-get-attachments-by-using-ews-in-exchange.md)
+- [Abrufen von Anlagen mithilfe von EWS in Exchange](how-to-get-attachments-by-using-ews-in-exchange.md)
     
-- [Senden von e-Mail-Nachrichten mithilfe der EWS in Exchange](how-to-send-email-messages-by-using-ews-in-exchange.md)
+- [Senden von E-Mail-Nachrichten mit EWS in Exchange](how-to-send-email-messages-by-using-ews-in-exchange.md)
     
 

@@ -3,21 +3,21 @@ title: Abrufen von Terminen und Besprechungen mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 1bae582a-8cb3-4e77-be2a-7e107fad26fe
 description: Hier erhalten Sie Informationen zum Abrufen von Terminen und Besprechungen mithilfe der verwalteten EWS-API oder von EWS in Exchange.
-ms.openlocfilehash: c78d70ca2266bd192b82f644d902ad8c958d2d4a
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: d951bfeccdf50ae1397ecdd4887ed05548b25001
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353693"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528090"
 ---
 # <a name="get-appointments-and-meetings-by-using-ews-in-exchange"></a>Abrufen von Terminen und Besprechungen mithilfe von EWS in Exchange
 
 Hier erhalten Sie Informationen zum Abrufen von Terminen und Besprechungen mithilfe der verwalteten EWS-API oder von EWS in Exchange.
   
-Mit der [CalendarFolder.FindAppointments](http://msdn.microsoft.com/de-DE/library/dd636179%28v=exchg.80%29.aspx) verwalteten EWS-API-Methode oder dem [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)-EWS-Vorgang können Sie Termine und Besprechungen aus dem Kalenderordner abrufen. 
+Mit der [CalendarFolder.FindAppointments](https://msdn.microsoft.com/library/dd636179%28v=exchg.80%29.aspx) verwalteten EWS-API-Methode oder dem [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)-EWS-Vorgang können Sie Termine und Besprechungen aus dem Kalenderordner abrufen. 
   
 ## <a name="get-appointments-by-using-the-ews-managed-api"></a>Abrufen von Terminen mithilfe der verwalteten EWS-API
 <a name="bk_retrieveappsEWSMA"> </a>
@@ -71,14 +71,14 @@ Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
 ## <a name="get-appointments-by-using-ews"></a>Abrufen von Terminen mithilfe von EWS
 <a name="bk_xml"> </a>
 
-Das folgende XML zeigt eine [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)-Vorgangsanforderung zum Zurückgeben einer Ordner-ID für den [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)-Vorgang. 
+Das folgende XML zeigt eine [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)-Vorgangsanforderung zum Zurückgeben einer Ordner-ID für den [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)-Vorgang. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -101,16 +101,16 @@ Das folgende XML zeigt die **GetFolder**-Antwort. Beachten Sie, dass die **Folde
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="731" MinorBuildNumber="10" Version="V2_3" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
- xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -133,9 +133,9 @@ Das folgende XML zeigt die **FindItem**-Anforderung zum Zurückgeben der angefor
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -164,17 +164,17 @@ Das folgende XML zeigt die **FindItem**-Antwort. Beachten Sie, dass die **ItemID
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="731" MinorBuildNumber="10" Version="V2_3" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:FindItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:FindItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -222,9 +222,9 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 ## <a name="recurring-meetings-and-the-calendar-view"></a>Besprechungsserien und die Kalenderansicht
 <a name="bk_recurring"> </a>
 
-Der Kalenderordner unterscheidet sich in gewisser Weise von anderen Ordnern in einem Postfach, da Serienelemente in Besprechungsserien und Ausnahmen von diesen Besprechungsserien keine Elemente im Postfach darstellen, sondern intern als Anlagen in einer übergeordneten Besprechungsserie gespeichert werden. Das heißt: Obwohl sie eine EWS-Anforderung erstellen können, die Werte in einem bestimmten Bereich zwischen **Start** und **Ende** mithilfe der überladenen **FindItems** -Methoden der verwalteten EWS-API wie [ExchangeService.FindItems](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) oder des [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)-Vorgangs von EWS abruft, wird EWS nicht in der Anlagentabelle jedes Kalenderelements nach Ausnahmen und Serienelementen suchen. 
+Der Kalenderordner unterscheidet sich in gewisser Weise von anderen Ordnern in einem Postfach, da Serienelemente in Besprechungsserien und Ausnahmen von diesen Besprechungsserien keine Elemente im Postfach darstellen, sondern intern als Anlagen in einer übergeordneten Besprechungsserie gespeichert werden. Das heißt: Obwohl sie eine EWS-Anforderung erstellen können, die Werte in einem bestimmten Bereich zwischen **Start** und **Ende** mithilfe der überladenen **FindItems** -Methoden der verwalteten EWS-API wie [ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) oder des [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)-Vorgangs von EWS abruft, wird EWS nicht in der Anlagentabelle jedes Kalenderelements nach Ausnahmen und Serienelementen suchen. 
   
-Stattdessen möchten Sie eine  *Datenansicht*  auf zwei SQL-Tabellen mithilfe eines [CalendarView](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx)-Objekts anwenden. Aus Leistungsgründen wird empfohlen, die [PropertySet](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx)-Eigenschaft zum Einschränken der Antwortgröße durch Angeben der zurückzugebenden Anzahl von Terminen oder Besprechungen sowie von bestimmten Eigenschaften zu verwenden. 
+Stattdessen möchten Sie eine  *Datenansicht*  auf zwei SQL-Tabellen mithilfe eines [CalendarView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx)-Objekts anwenden. Aus Leistungsgründen wird empfohlen, die [PropertySet](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx)-Eigenschaft zum Einschränken der Antwortgröße durch Angeben der zurückzugebenden Anzahl von Terminen oder Besprechungen sowie von bestimmten Eigenschaften zu verwenden. 
   
 ## <a name="see-also"></a>Siehe auch
 <a name="bk_additional"> </a>

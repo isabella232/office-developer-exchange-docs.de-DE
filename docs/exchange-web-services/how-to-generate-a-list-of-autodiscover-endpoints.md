@@ -1,85 +1,85 @@
 ---
-title: Generieren Sie eine Liste von Endpunkten für die AutoErmittlung
+title: Generieren einer Liste mit AutoErmittlungs-Endpunkten
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 82394d3c-9fc7-4b3c-b48d-1fe983c198f7
-description: Erfahren Sie, wie Sie eine Priorität für die AutoErmittlung Endpunkte erstellen.
-ms.openlocfilehash: ccecacc9c8beef464727efbc9d1fced7a81f9b7c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Erfahren Sie, wie Sie eine priorisierte Liste mit Auto Ermittlungs Endpunkten generieren.
+localization_priority: Priority
+ms.openlocfilehash: db888c8d562f57bd46edc251f4917e9e03d85d95
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756900"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528099"
 ---
-# <a name="generate-a-list-of-autodiscover-endpoints"></a>Generieren Sie eine Liste von Endpunkten für die AutoErmittlung
+# <a name="generate-a-list-of-autodiscover-endpoints"></a>Generieren einer Liste mit AutoErmittlungs-Endpunkten
 
-Erfahren Sie, wie Sie eine Priorität für die AutoErmittlung Endpunkte erstellen.
+Erfahren Sie, wie Sie eine priorisierte Liste mit Auto Ermittlungs Endpunkten generieren.
   
-Die erste Aufgabe in der [AutoErmittlung-Prozesses](autodiscover-for-exchange.md) wird zum Erstellen der Liste der AutoErmittlung-Endpunkte für die Anwendung zu testen. Diese Endpunkte AutoErmittlung können stammen aus einer [SCP-Suche](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md) oder die e-Mail-Adresse des Benutzers abgeleitet werden können. Schließlich können Sie eine große Anzahl von Endpunkten am Ende. Sehen wir uns an, wie Sie sie nach Priorität sortieren können. 
+Die erste Aufgabe im [Auto Ermittlungsprozess](autodiscover-for-exchange.md) besteht darin, eine Liste der Auto Ermittlungs Endpunkte zu generieren, die von der Anwendung ausprobiert werden sollen. Diese Auto Ermittlungs Endpunkte können aus einer [SCP-Suche](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md) stammen oder können von der e-Mail-Adresse des Benutzers abgeleitet werden. Am Ende können Sie mit einer großen Anzahl von Endpunkten enden. Werfen wir einen Blick darauf, wie Sie diese nach Priorität organisieren können. 
   
-## <a name="start-with-scp-lookup"></a>Beginnen Sie mit SCP-Suche
+## <a name="start-with-scp-lookup"></a>Beginnen mit SCP-Suche
 <a name="bk_StartWithScp"> </a>
 
-AutoErmittlung-Endpunkte, die keinen [SCP-Suche](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md) stammen sollte die höchste Priorität in der Liste verfügen. Administratoren können konfigurieren SCP-Objekten so, dass Ihr Client an den Endpunkt engsten oder am effizientesten AutoErmittlung weitergeleitet, daher es ratsam ist, diese Endpunkte zu starten. Da die SCP-Suchprozess Priorisierung Schema verfügt, sind die Ergebnisse der SCP-Suche bereits, wie folgt priorisiert: 
+Auto Ermittlungs Endpunkte, die aus einer [SCP-Suche](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md) stammen, sollten in Ihrer Liste oberste Priorität haben. Administratoren können SCP-Objekte so konfigurieren, dass Sie Ihren Client an den nächstgelegenen oder effizientesten Auto ermittlungsendpunkt weiterleiten, daher empfiehlt es sich, mit diesen Endpunkten zu beginnen. Da der SCP-Nachschlage Prozess über ein eigenes Priorisierung-Schema verfügt, werden die Ergebnisse einer SCP-Suche wie folgt bereits priorisiert: 
   
-1. AutoErmittlung-Endpunkten von SCP-Objekten, die mit einem Bereich für die Active Directory-Standort, zu dem der Client-Computer gehört.
+1. Auto Ermittlungs Endpunkte aus SCP-Objekten, die sich auf den Active Directory-Standort, zu dem der Clientcomputer gehört.
     
-2. AutoErmittlung-Endpunkten von SCP-Objekten, die nicht mit einem Bereich für alle Active Directory-Standort.
+2. Auto Ermittlungs Endpunkte aus SCP-Objekten, die nicht auf einen Active Directory Standort beschränkt sind.
     
-3. AutoErmittlung-Endpunkten von SCP-Objekten bezogen auf einem anderen Active Directory-Standort als die Website, der der Clientcomputer gehört.
+3. Auto Ermittlungs Endpunkte von SCP-Objekten, die auf einen anderen Active Directory-Standort als den Standort beschränkt sind, zu dem der Clientcomputer gehört.
     
-Nachdem Sie die Ergebnisse der SCP-Suchprozess haben, können Sie Endpunkte hinzufügen, die von e-Mail-Adresse des Benutzers abgeleitet werden. Diese können dienen als eine standardmäßige Endpunkte und Fallback festgelegt, falls es keine Ergebnisse SCP gibt oder die Endpunkte von SCP-Suche zurückgegebenen nicht ausreichend sind.
+Nachdem Sie über die Ergebnisse des SCP-Suchprozesses verfügen, können Sie Endpunkte hinzufügen, die von der e-Mail-Adresse des Benutzers abgeleitet werden. Diese können als Standard-Endpunkt und als Fallback für den Fall dienen, dass keine SCP-Ergebnisse vorliegen oder die von der SCP-Suche zurückgegebenen Endpunkte nicht ausreichen.
   
-## <a name="add-endpoints-derived-from-the-users-email-address"></a>Hinzufügen von e-Mail-Adresse des Benutzers abgeleitete Endpunkte
+## <a name="add-endpoints-derived-from-the-users-email-address"></a>Hinzufügen von von der e-Mail-Adresse des Benutzers abgeleiteten Endpunkten
 <a name="bk_AddDerivedEndpoints"> </a>
 
-Wenn SCP-Suche funktioniert nicht oder nicht die SCP-Suche zurückgegebenen Endpunkte eine erfolgreiche Antwort zurückzugeben, können die e-Mail-Adresse des Benutzers einen Satz von AutoErmittlung Standardendpunkte abgeleitet werden. Diese Endpunkte sollte eine niedrigere Priorität als die SCP-Suche stammen, jedoch möglicherweise benötigt werden, wenn die SCP-Suche nicht erfolgreich war.
+Wenn die SCP-Suche nicht funktioniert oder die von der SCP-Suche zurückgegebenen Endpunkte keine erfolgreiche Antwort zurückgeben, können Sie eine Reihe von Standard-Auto Ermittlungs Endpunkten von der e-Mail-Adresse des Benutzers ableiten. Diese Endpunkte sollten eine niedrigere Priorität haben als alle aus einer SCP-Suche stammenden, aber Sie benötigen Sie möglicherweise, wenn die SCP-Suche nicht erfolgreich war.
   
-### <a name="to-derive-autodiscover-endpoints"></a>AutoErmittlung Endpunkte abgeleitet werden.
+### <a name="to-derive-autodiscover-endpoints"></a>So leiten Sie Auto Ermittlungs Endpunkte ab
 
-1. Extrahieren Sie den Domänennamen aus e-Mail-Adresse des Benutzers an. Angenommen, wenn die e-Mail-Adresse des Benutzers Sadie.Daniels@contoso.com ist, wäre der Domänennamen "contoso.com".
+1. Extrahieren Sie den Domänennamen aus der e-Mail-Adresse des Benutzers. Wenn die e-Mail-Adresse des Benutzers beispielsweise Sadie.Daniels@contoso.com lautet, lautet der Domänenname contoso.com.
     
-2. Endpunkt-URLs ohne Dateierweiterungen in den folgenden Formaten zu erstellen:
+2. Erstellen von Endpunkt-URLs ohne Dateierweiterungen in den folgenden Formaten:
     
-  - "https://" + Domäne + "/ Autodiscover/AutoErmittlung"
+  - "https://" + Domäne + "/autodiscover/autodiscover"
     
-  - "https://autodiscover." + Domäne + "/ Autodiscover/AutoErmittlung"
+  - "https://autodiscover." + Domäne + "/autodiscover/autodiscover"
     
-Nachdem Sie die Liste der Endpunkt-URLs kompiliert werden, die von SCP-Suche und die e-Mail-Adresse des Benutzers abgeleitet werden sollen, müssen Sie möglicherweise überarbeiten Dateinamenerweiterungen in diesen URLs, je nachdem, ob Sie die [AutoErmittlung SOAP-Webdienst](http://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx) oder die [POX verwenden AutoErmittlung-Webdienst](http://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx).
+Nachdem Sie die Liste der Endpunkt-URLs kompiliert haben, die sowohl aus dem SCP-Lookup als auch aus der e-Mail-Adresse des Benutzers stammen, müssen Sie möglicherweise Dateinamenerweiterungen in diesen URLs überarbeiten, je nachdem, ob Sie den [SOAP autodiscover-Webdienst](https://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx) oder den [POX-Auto Ermittlungs Webdienst](https://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx)verwenden.
   
-## <a name="add-or-replace-file-name-extensions-in-endpoint-urls"></a>Fügen Sie hinzu oder Ersetzen Sie Dateinamenerweiterungen Endpunkt-URLs
+## <a name="add-or-replace-file-name-extensions-in-endpoint-urls"></a>Hinzufügen oder Ersetzen von Dateinamenerweiterungen in Endpunkt-URLs
 <a name="bk_FileExtensions"> </a>
 
-Sie können den AutoErmittlungsdienst mithilfe der AutoErmittlung SOAP-Webdienst oder den Webdienst POX AutoErmittlung zugreifen. Jeder Dienst verwendet ähnliche Endpunkt-URLs mit der einzige Unterschied ist, die Dateinamenerweiterung an. Der AutoErmittlung SOAP-Webdienst verwendet die Erweiterung "svc" und der Webdienst POX AutoErmittlung verwendet die Erweiterung ".xml".
+Sie können auf den AutoErmittlungsdienst mithilfe des SOAP autodiscover-Webdiensts oder des POX-Auto Ermittlungs-Webdiensts zugreifen. Jeder Dienst verwendet ähnliche Endpunkt-URLs, wobei der einzige Unterschied die Dateinamenerweiterung ist. Der SOAP-AutoErmittlungsdienst verwendet die Dateinamenerweiterung ". svc", und der POX-Auto Ermittlungs Webdienst verwendet die Dateinamenerweiterung ". xml".
   
-Standardmäßig sind der AutoErmittlung-Endpunkt-URLs von SCP-Suche zurückgegeben POX URLs. Jedoch bei Verwendung von SOAP-AutoErmittlung können einfach die Dateinamenerweiterung aus ".xml" an "svc" ändern und versuchen Sie es eine SOAP-Anforderung.
+Standardmäßig sind die von einer SCP-Suche zurückgegebenen Auto Ermittlungs-Endpunkt-URLs POX-URLs. Wenn Sie jedoch die SOAP-AutoErmittlung verwenden, können Sie einfach die Dateinamenerweiterung von ". xml" in ". svc" ändern und eine SOAP-Anforderung ausprobieren.
   
-Für die abgeleiteten AutoErmittlung-Endpunkt-URLs die Erweiterung fehlt. Fügen Sie die entsprechende Erweiterung für die AutoErmittlung-Webdienst, den Sie arbeiten, bevor Sie versuchen, die URL hinzu.
+Für die abgeleiteten Auto Ermittlungs-Endpunkt-URLs wird die Dateierweiterung ausgelassen. Fügen Sie die entsprechende Dateierweiterung für den Auto Ermittlungs-Webdienst hinzu, den Sie vor dem Versuch der URL verwenden.
   
-## <a name="example-generating-a-list-of-autodiscover-endpoints"></a>Beispiel: Erstellen einer Liste von AutoErmittlung-Endpunkte
+## <a name="example-generating-a-list-of-autodiscover-endpoints"></a>Beispiel: Generieren einer Liste mit Auto Ermittlungs Endpunkten
 <a name="bk_Example"> </a>
 
-Sehen wir uns an einem Beispiel. Sadie Daniels (Sadie.Daniels@contoso.com) ist eine Exchange-Webdienste (EWS)-Anwendung zum ersten Mal verwendet. Die Anwendung verwendet für die AutoErmittlung selbst konfigurieren. Sadies Computers ausführt, wird die Domäne "contoso.com" und "Redmond" Active Directory-Standort ist. Die Anwendung generiert eine Liste der AutoErmittlung-Endpunkte, die in Abbildung 1 dargestellt.
+Werfen wir einen Blick auf ein Beispiel. Sadie Daniels (Sadie.Daniels@contoso.com) verwendet zum ersten Mal eine Exchange-Webdienste Anwendung. Die Anwendung verwendet die AutoErmittlung, um sich selbst zu konfigurieren. Sadies Computer wird der contoso.com-Domäne hinzugefügt und befindet sich im Active Directory Standort von Redmond. Die Anwendung generiert die Liste der in Abbildung 1 gezeigten Auto Ermittlungs Endpunkte.
   
-**Abbildung 1: Beispielliste AutoErmittlung**
+**Abbildung 1: Beispielliste der Auto Ermittlungs Endpunkte**
 
 ![Eine Beispielliste mit Endpunkten für die AutoErmittlung, in der über die SCP-Suche abgerufene Endpunkte mit einer höheren Priorität angezeigt werden als abgeleitete Endpunkte](media/Ex15_Autodiscover_GenerateList_Example.png)
   
-Die EWS-Anwendung in diesem Beispiel bevorzugt den AutoErmittlung für SOAP-Webdienst, damit es die Dateinamenerweiterung für die SCP-Ergebnisse "svc" geändert, vor dem Senden von SOAP-Anforderungen für diese.
+Die EWS-Anwendung in diesem Beispiel bevorzugt den SOAP AutoErmittlungs-Webdienst, sodass die Dateinamenerweiterung für die SCP-Ergebnisse in ". svc" geändert wird, bevor SOAP-Anforderungen an Sie gesendet werden.
   
 ## <a name="next-steps"></a>Nächste Schritte
 <a name="bk_NextSteps"> </a>
 
-Nachdem Sie eine Liste von Endpunkten AutoErmittlung generiert haben, testen Sie sie durch [Senden von Anforderungen an die Endpunkte](how-to-get-user-settings-from-exchange-by-using-autodiscover.md).
+Nachdem Sie eine Liste mit Auto Ermittlungs Endpunkten generiert haben, versuchen Sie, diese durch [Senden von Anforderungen an diese Endpunkte zu](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)testen.
   
 ## <a name="see-also"></a>Siehe auch
 
 
 - [AutoErmittlung für Exchange](autodiscover-for-exchange.md)
     
-- [Suchen Sie nach AutoErmittlung-Endpunkten mithilfe von SCP-Suche in Exchange](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md)
+- [Suchen nach AutoErmittlungs-Endpunkten mit der SCP-Suche in Exchange](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md)
     
 - [Behandeln von AutoErmittlungs-Fehlermeldungen](handling-autodiscover-error-messages.md)
     

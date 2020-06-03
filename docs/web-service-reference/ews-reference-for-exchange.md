@@ -5,15 +5,15 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
 ms.assetid: 2a873474-1bb2-4cb1-a556-40e8c4159f4a
 description: Suchen von Verweisinformationen für EWS-XML-Elemente und WSDL-Vorgänge in Exchange
-ms.openlocfilehash: 32717929aad4af7c1ce6010b58b48d4059c91b22
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: 2b60130f5dd268321465ea045ebd73ab33b3a0ab
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758284"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530621"
 ---
 # <a name="ews-reference-for-exchange"></a>EWS-Referenz für Exchange
 
@@ -33,7 +33,7 @@ Der WSDL-Operationsinhalt in diesem Abschnitt bietet einen Überblick und Anford
 ## <a name="see-also"></a>Siehe auch
 
 - [Webdienstreferenz für Exchange](web-services-reference-for-exchange.md)
-- [Erkunden von EWS Managed API, EWS und Webdiensten in Exchange](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)
+- [Erkunden von verwalteter EWS-API, EWS und Webdiensten in Exchange](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)
 - [Erste Schritte mit Webdiensten in Exchange](../exchange-web-services/start-using-web-services-in-exchange.md)
     
 

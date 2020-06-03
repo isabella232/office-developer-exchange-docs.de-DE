@@ -3,24 +3,24 @@ title: Verweisen auf die EWS-verwaltete API-Assembly
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 130990db-6297-42dc-9f5d-f68a2400872a
 description: Informationen zum Verweisen auf die EWS-verwaltete API-Assembly.
-ms.openlocfilehash: a08ce43d139440186f611049fa1e457ea44f0362
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: d49091781da279d87a1eab35608f19ece43a0333
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353686"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527761"
 ---
 # <a name="reference-the-ews-managed-api-assembly"></a>Verweisen auf die EWS-verwaltete API-Assembly
 
 Informationen zum Verweisen auf die EWS-verwaltete API-Assembly.
   
-Die EWS Managed API bietet eine einfache und umfassende Schnittstelle für die Entwicklung und Erweiterung von Anwendungen an, die Exchange-Webdienste (EWS) verwenden. Egal ob Sie zum Entwickeln Ihrer EWS Managed API-Anwendungen Visual Studio oder einen anderen Code-Editor verwenden, müssen Sie einen Verweis auf die Assembly-Webdienste erstellen. Wenn Sie die EWS Managed API noch nicht installiert haben, müssen Sie die [API herunterladen](http://aka.ms/ews-managed-api-readme).
+Die EWS Managed API bietet eine einfache und umfassende Schnittstelle für die Entwicklung und Erweiterung von Anwendungen an, die Exchange-Webdienste (EWS) verwenden. Egal ob Sie zum Entwickeln Ihrer EWS Managed API-Anwendungen Visual Studio oder einen anderen Code-Editor verwenden, müssen Sie einen Verweis auf die Assembly-Webdienste erstellen. Wenn Sie die EWS Managed API noch nicht installiert haben, müssen Sie die [API herunterladen](https://aka.ms/ews-managed-api-readme).
   
 > [!NOTE]
-> Die verwaltete EWS-API steht nun als Ope -Source-Projekt auf [GitHub](https://github.com/officedev/ews-managed-api) zur Verfügung. Sie können die Open Source-Bibliothek für Folgendes verwenden: 
+> Die verwaltete EWS-API steht nun als Open Source-Projekt auf [GitHub](https://github.com/officedev/ews-managed-api) zur Verfügung. Sie können die Open Source-Bibliothek für Folgendes verwenden: 
 > - Implementieren von Programmfehlerbehebungen und Verbesserungen in die API 
 > - Abrufen von Fehlerbehebungen und Verbesserungen, bevor diese in einer offiziellen Version verfügbar sind 
 > - Zugreifen auf die umfassendste und aktuellste Implementierung der API, um sie als Referenz zu verwenden oder neue Bibliotheken auf neuen Plattformen zu erstellen

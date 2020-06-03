@@ -3,34 +3,34 @@ title: Abrufen von Frei/Gebucht-Informationen mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 0e6709c0-dc3d-4280-8c53-cbec9bbdcc9e
-description: Hier erfahren Sie, wie Sie Frei/Gebucht-Informationen und vorgeschlagene Besprechungszeiten abrufen, indem Sie die EWS Managed API oder EWS in Exchange.
-ms.openlocfilehash: 0633c204207317c03740d35b1da4b9626152d2e3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Erfahren Sie, wie Sie Frei/Gebucht-Informationen und vorgeschlagene Besprechungszeiten mithilfe der verwaltete EWS-API oder EWS in Exchange abrufen.
+localization_priority: Priority
+ms.openlocfilehash: 19f0181161b2e2dbde70f3ec7427d9d66c5bdc4d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756916"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528029"
 ---
 # <a name="get-freebusy-information-by-using-ews-in-exchange"></a>Abrufen von Frei/Gebucht-Informationen mithilfe von EWS in Exchange
 
-Hier erfahren Sie, wie Sie Frei/Gebucht-Informationen und vorgeschlagene Besprechungszeiten abrufen, indem Sie die EWS Managed API oder EWS in Exchange.
+Erfahren Sie, wie Sie Frei/Gebucht-Informationen und vorgeschlagene Besprechungszeiten mithilfe der verwaltete EWS-API oder EWS in Exchange abrufen.
   
-Programmgesteuertes [Erstellen einer Besprechung](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md) und Besprechungsanfragen senden mithilfe der EWS Managed API oder EWS hervorragende ist, aber eine Zeit, die funktioniert für alle anderen Teilnehmer suchen ist häufig eine Herausforderung. Wenn Sie müssen manuell prüfen, wenn alle Teilnehmer verfügbar sind, zunichte es von der Aufgabe automatisieren. Zum Glück sind die [ExchangeService.GetUserAvailability](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.getuseravailability%28v=exchg.80%29.aspx) EWS Managed API-Methode und [GetUserAvailability](http://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx) EWS-Vorgangs Ihrer Rescue. Sie können diese Methode oder der Vorgang zum Abfragen von eines Exchange-Servers, um den optimalen Zeitpunkt planen einer Besprechung oder Abrufen nur Frei/Gebucht-Informationen für die Teilnehmer zu suchen verwenden. Sie können die Frei/Gebucht-Informationen für eine Liste der Teilnehmer erhalten möchten oder Ihren Exchange Server finden Sie eine Besprechungszeit für Sie oder beides 
+Das Verwenden der verwaltete EWS-API oder EWS zum programmgesteuerten [Erstellen einer Besprechung](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md) und Senden von Besprechungsanfragen ist groß, aber die Suche nach einer Zeit, die für alle Teilnehmer funktioniert, stellt häufig eine Herausforderung dar. Wenn Sie manuell überprüfen müssen, ob jeder verfügbar ist, wird der Zweck der Automatisierung des Vorgangs nicht abgeschlagen. Glücklicherweise sind die verwaltete EWS-API-Methode [Datei "ExchangeService. GetUserAvailability](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getuseravailability%28v=exchg.80%29.aspx) und der [GetUserAvailability](https://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx) -EWS-Vorgang zu ihrer Rettung gekommen. Sie können diese Methode oder diesen Vorgang verwenden, um einen Exchange-Server abzufragen, um die beste Zeit zum Planen einer Besprechung zu finden oder einfach nur Frei/Gebucht-Informationen für Teilnehmer abzurufen. Sie können die Frei/Gebucht-Informationen für eine Liste der Teilnehmer abrufen, oder Ihr Exchange-Server kann eine Besprechungszeit für Sie oder beides finden. 
   
-Abbildung 1 zeigt das Problem und die Lösung.
+In Abbildung 1 wird das Problem und die Lösung veranschaulicht.
   
-**Abbildung 1. Anfordern von Informationen zur Verfügbarkeit von einem Exchange-server**
+**Abbildung 1. Anfordern von Verfügbarkeitsinformationen von einem Exchange-Server**
 
 ![Bild, das zeigt, wie mit der/m GetUserAvailability-Methode/-Vorgang die Verfügbarkeit eines Teilnehmers bestimmt werden kann, indem ein Satz von Optionen an einen Exchange-Server übergeben wird.](media/GetUserAvailability1.png)
   
-## <a name="get-suggested-meeting-times-and-freebusy-information-by-using-the-ews-managed-api"></a>Erhalten Sie vorgeschlagene Besprechungszeiten und Frei/Gebucht-Informationen mithilfe der EWS Managed API
+## <a name="get-suggested-meeting-times-and-freebusy-information-by-using-the-ews-managed-api"></a>Abrufen vorgeschlagener Besprechungszeiten und Frei/Gebucht-Informationen mithilfe der verwaltete EWS-API
 <a name="bk_getavailewsma"> </a>
 
-Sie erhalten eine Liste der vorgeschlagenen Besprechungszeiten und alle geplanten Ereignisses Zeiten für Ihre Teilnehmer bei Verwendung von Enumerationswert [AvailabilityData](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.availabilitydata%28v=exchg.80%29.aspx) **FreeBusyAndSuggestions** in Ihrer [ExchangeService.GetUserAvailability](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.getuseravailability%28v=exchg.80%29.aspx) Aufruf-Methode, wie im folgenden Beispiel dargestellt. 
+Sie können sowohl eine Liste der vorgeschlagenen Besprechungszeiten als auch alle geplanten Ereigniszeiten für Ihre Teilnehmer abrufen, wenn Sie den [AvailabilityData](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.availabilitydata%28v=exchg.80%29.aspx) -Enumerationswert **FreeBusyAndSuggestions** im Aufruf der [Datei "ExchangeService. GetUserAvailability](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getuseravailability%28v=exchg.80%29.aspx) -Methode verwenden, wie im folgenden Beispiel gezeigt. 
   
-In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben. 
+In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben. 
   
 ```cs
 private static void GetSuggestedMeetingTimesAndFreeBusyInfo(ExchangeService service)
@@ -98,17 +98,17 @@ private static void GetSuggestedMeetingTimesAndFreeBusyInfo(ExchangeService serv
 
 ```
 
-## <a name="get-suggested-meeting-times-and-freebusy-information-by-using-ews"></a>Erhalten Sie vorgeschlagene Besprechungszeiten und Frei/Gebucht-Informationen mithilfe der Exchange-Webdienste
+## <a name="get-suggested-meeting-times-and-freebusy-information-by-using-ews"></a>Abrufen vorgeschlagener Besprechungszeiten und Frei/Gebucht-Informationen mithilfe von EWS
 <a name="bk_getavailews"> </a>
 
-Sie können eine Liste der vorgeschlagenen Besprechungszeiten und alle geplanten Ereignisses Zeiten für Ihre Teilnehmer abrufen, indem mithilfe des Vorgangs [GetUserAvailability](http://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx) wie im folgenden Beispiel dargestellt. Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die EWS Managed API zum [Abrufen der vorgeschlagenen Besprechungszeiten](#bk_getavailewsma)verwenden.
+Sie können sowohl eine Liste der vorgeschlagenen Besprechungszeiten als auch alle geplanten Ereigniszeiten für Ihre Teilnehmer abrufen, indem Sie den [GetUserAvailability](https://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx) -Vorgang verwenden, wie im folgenden Beispiel dargestellt. Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die verwaltete EWS-API verwenden, um [vorgeschlagene Besprechungszeiten zu erhalten](#bk_getavailewsma).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
     <t:TimeZoneContext>
@@ -207,28 +207,28 @@ Sie können eine Liste der vorgeschlagenen Besprechungszeiten und alle geplanten
 
 ```
 
-Der Server antwortet auf die [GetUserAvailability-Anforderung](http://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx) mit einer Meldung [GetUserAvailability Antwort](http://msdn.microsoft.com/library/6999510a-d60e-43da-8964-57b5fb3e9d11%28Office.15%29.aspx) ein, wie im folgenden Beispiel dargestellt. 
+Der Server antwortet auf die [GetUserAvailability-Anforderung](https://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx) mit einer [GetUserAvailability-Antwort](https://msdn.microsoft.com/library/6999510a-d60e-43da-8964-57b5fb3e9d11%28Office.15%29.aspx) Nachricht, wie im folgenden Beispiel dargestellt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="873" MinorBuildNumber="9" Version="V2_9" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <GetUserAvailabilityResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetUserAvailabilityResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <FreeBusyResponseArray>
         <FreeBusyResponse>
           <ResponseMessage ResponseClass="Success">
             <ResponseCode>NoError</ResponseCode>
           </ResponseMessage>
           <FreeBusyView>
-            <FreeBusyViewType xmlns="http://schemas.microsoft.com/exchange/services/2006/types">FreeBusy</FreeBusyViewType>
-            <CalendarEventArray xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <FreeBusyViewType xmlns="https://schemas.microsoft.com/exchange/services/2006/types">FreeBusy</FreeBusyViewType>
+            <CalendarEventArray xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
               <CalendarEvent>
                 <StartTime>2014-02-13T08:00:00</StartTime>
                 <EndTime>2014-02-13T10:00:00</EndTime>
@@ -240,7 +240,7 @@ Der Server antwortet auf die [GetUserAvailability-Anforderung](http://msdn.micro
                 <BusyType>Busy</BusyType>
               </CalendarEvent>
             </CalendarEventArray>
-            <WorkingHours xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <WorkingHours xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
               <TimeZone>
                 <Bias>480</Bias>
                 <StandardTime>
@@ -273,8 +273,8 @@ Der Server antwortet auf die [GetUserAvailability-Anforderung](http://msdn.micro
             <ResponseCode>NoError</ResponseCode>
           </ResponseMessage>
           <FreeBusyView>
-            <FreeBusyViewType xmlns="http://schemas.microsoft.com/exchange/services/2006/types">FreeBusy</FreeBusyViewType>
-            <CalendarEventArray xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <FreeBusyViewType xmlns="https://schemas.microsoft.com/exchange/services/2006/types">FreeBusy</FreeBusyViewType>
+            <CalendarEventArray xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
               <CalendarEvent>
                 <StartTime>2014-02-12T00:00:00</StartTime>
                 <EndTime>2014-02-13T00:00:00</EndTime>
@@ -296,7 +296,7 @@ Der Server antwortet auf die [GetUserAvailability-Anforderung](http://msdn.micro
                 <BusyType>Tentative</BusyType>
               </CalendarEvent>
             </CalendarEventArray>
-            <WorkingHours xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <WorkingHours xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
               <TimeZone>
                 <Bias>480</Bias>
                 <StandardTime>
@@ -330,7 +330,7 @@ Der Server antwortet auf die [GetUserAvailability-Anforderung](http://msdn.micro
           <ResponseCode>NoError</ResponseCode>
         </ResponseMessage>
         <SuggestionDayResultArray>
-          <SuggestionDayResult xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+          <SuggestionDayResult xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
             <Date>2014-02-13T00:00:00</Date>
             <DayQuality>Excellent</DayQuality>
             <SuggestionArray>

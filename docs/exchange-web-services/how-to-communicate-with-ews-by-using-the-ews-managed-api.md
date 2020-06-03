@@ -3,21 +3,21 @@ title: Kommunizieren mit EWS unter Verwendung der verwalteten EWS-API
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: d1b78293-da02-413a-875c-681e99146af3
 description: Informationen dazu, wie Sie die verwaltete EWS-API zur Kommunikation mit EWS in Exchange verwenden.
-ms.openlocfilehash: 773fcc3f7e95d25effb5a686d4b79ec22610df8c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: be807f2d936bf79d181476ec8eb12f20fca7950f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756879"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528244"
 ---
 # <a name="communicate-with-ews-by-using-the-ews-managed-api"></a>Kommunizieren mit EWS unter Verwendung der verwalteten EWS-API
 
 Informationen dazu, wie Sie die verwaltete EWS-API zur Kommunikation mit EWS in Exchange verwenden.
   
-Die [ExchangeService](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Klasse in der verwalteten EWS-API enthält die Methoden und Eigenschaften, die Sie zum Festlegen der Benutzeranmeldeinformationen, zum Identifizieren des EWS-Endpunkts, zum Senden und Empfangen von SOPA-Nachrichten und zum Konfigurieren der Bindung für die Kommunikation mit EWS verwenden. Bevor Sie die verwaltete EWS-API zum Durchführen von Aufgaben verwenden, müssen Sie eine Instanz der **ExchangeService** -Klasse verwenden und diese an EWS binden. 
+Die [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Klasse in der verwalteten EWS-API enthält die Methoden und Eigenschaften, die Sie zum Festlegen der Benutzeranmeldeinformationen, zum Identifizieren des EWS-Endpunkts, zum Senden und Empfangen von SOPA-Nachrichten und zum Konfigurieren der Bindung für die Kommunikation mit EWS verwenden. Bevor Sie die verwaltete EWS-API zum Durchführen von Aufgaben verwenden, müssen Sie eine Instanz der **ExchangeService** -Klasse verwenden und diese an EWS binden. 
   
 Nachdem Sie ein [ExchangeService](https://msdn.microsoft.com/library/Microsoft.Exchange.WebServices.Data.ExchangeService.aspx) -Objekt mit Benutzeranmeldeinformationen und dem EWS-Endpunkt eingerichtet haben, können alle Postfachobjekte, die auf das [ExchangeService](https://msdn.microsoft.com/library/Microsoft.Exchange.WebServices.Data.ExchangeService.aspx) -Objekt verweisen, die folgenden Methodentypen für die Kommunikation mit EWS verwenden: 
   
@@ -27,15 +27,15 @@ Nachdem Sie ein [ExchangeService](https://msdn.microsoft.com/library/Microsoft.E
     
 **Tabelle 1. Postfachelement- und Ordnertypmethoden, die mit EWS kommunizieren**
 
-|Methode|Funktion der Einstellung|Aufgerufene Vorgänge|
+|Methode|Funktionsweise|Aufgerufene Vorgänge|
 |:-----|:-----|:-----|
-|[Load](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.load%28v=exchg.80%29.aspx) <br/> |Ruft Eigenschaften für ein Element, eine Anlage oder ein Benutzerkonfigurationsobjekt ab.  <br/> |[GetItem-Vorgang](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) <br/><br/> [GetAttachment-Vorgang](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) <br/><br/> [GetUserConfiguration-Vorgang](http://msdn.microsoft.com/library/71d50e3c-92bd-435f-8118-b28bb85f8138%28Office.15%29.aspx) <br/> |
-|[Bind](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) <br/> |Füllt ein neues Element auf dem Client mit Informationen von einem vorhandenen Element auf dem Server.  <br/> |[GetItem-Vorgang](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) <br/> |
-|[Save](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.save%28v=exchg.80%29.aspx) <br/> |Speichert die Kopie des Clientelements auf dem Server.  <br/> |[UpdateItem-Vorgang](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/><br/> [UpdateFolder-Vorgang](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) <br/><br/>[CreateItem-Vorgang](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) <br/><br/>[CreateFolder-Vorgang](http://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx) <br/> |
-|[Update](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.update%28v=exchg.80%29.aspx) <br/> |Aktualisiert den Server mit Änderungen, die am Client vorgenommen wurden.<br/><br/>Bei Elementen und Ordnern verwendet die **Update** -Methode [UpdateItem Operation](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) und [UpdateFolder-Vorgang](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx).  <br/> |[UpdateItem-Vorgang](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/><br/>[UpdateFolder-Vorgang](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) <br/> |
-|[Delete](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.delete%28v=exchg.80%29.aspx) <br/> |Löscht ein Element auf dem Server.<br/><br/>Bei Elementen und Ordnern verwendet die **Delete** -Methode [DeleteFolder-Vorgang](http://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx).  <br/> |[DeleteItem-Operation](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) <br/><br/> [DeleteFolder-Vorgang](http://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx) <br/> |
-|[Copy](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.copy%28v=exchg.80%29.aspx) <br/> |Erstellt eine Kopie des Elements oder Ordners auf dem Server.  <br/> |[CopyItem-Vorgang](http://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) <br/><br/> [CopyFolder-Vorgang](http://msdn.microsoft.com/library/c7ea0d68-9793-4144-b378-d99536776db9%28Office.15%29.aspx) <br/> |
-|[Move](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.move%28v=exchg.80%29.aspx) <br/> |Verschiebt Elemente oder Ordner auf den Server.  <br/> |[MoveItem-Vorgang](http://msdn.microsoft.com/library/dcf40fa7-7796-4a5c-bf5b-7a509a18d208%28Office.15%29.aspx) <br/><br/> [MoveFolder-Vorgang](http://msdn.microsoft.com/library/c7233966-6c87-4a14-8156-b1610760176d%28Office.15%29.aspx) <br/> |
+|[Load](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.load%28v=exchg.80%29.aspx) <br/> |Ruft Eigenschaften für ein Element, eine Anlage oder ein Benutzerkonfigurationsobjekt ab.  <br/> |[GetItem-Vorgang](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) <br/><br/> [GetAttachment-Vorgang](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) <br/><br/> [GetUserConfiguration-Vorgang](https://msdn.microsoft.com/library/71d50e3c-92bd-435f-8118-b28bb85f8138%28Office.15%29.aspx) <br/> |
+|[Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) <br/> |Füllt ein neues Element auf dem Client mit Informationen von einem vorhandenen Element auf dem Server.  <br/> |[GetItem Operation](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) <br/> |
+|[Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.save%28v=exchg.80%29.aspx) <br/> |Speichert die Kopie des Clientelements auf dem Server.  <br/> |[UpdateItem Operation](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/><br/> [UpdateFolder-Vorgang](https://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) <br/><br/>[CreateItem Operation](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) <br/><br/>[CreateFolder Operation](https://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx) <br/> |
+|[Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.update%28v=exchg.80%29.aspx) <br/> |Aktualisiert den Server mit Änderungen, die am Client vorgenommen wurden.<br/><br/>Bei Elementen und Ordnern verwendet die **Update** -Methode [UpdateItem Operation](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) und [UpdateFolder-Vorgang](https://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx).  <br/> |[UpdateItem Operation](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/><br/>[UpdateFolder-Vorgang](https://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) <br/> |
+|[Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.delete%28v=exchg.80%29.aspx) <br/> |Löscht ein Element auf dem Server.<br/><br/>Bei Elementen und Ordnern verwendet die **Delete** -Methode [DeleteFolder-Vorgang](https://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx).  <br/> |[DeleteItem-Operation](https://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) <br/><br/> [DeleteFolder-Vorgang](https://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx) <br/> |
+|[Copy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.copy%28v=exchg.80%29.aspx) <br/> |Erstellt eine Kopie des Elements oder Ordners auf dem Server.  <br/> |[CopyItem Operation](https://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) <br/><br/> [CopyFolder-Vorgang](https://msdn.microsoft.com/library/c7ea0d68-9793-4144-b378-d99536776db9%28Office.15%29.aspx) <br/> |
+|[Move](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.move%28v=exchg.80%29.aspx) <br/> |Verschiebt Elemente oder Ordner auf den Server.  <br/> |[MoveItem Operation](https://msdn.microsoft.com/library/dcf40fa7-7796-4a5c-bf5b-7a509a18d208%28Office.15%29.aspx) <br/><br/> [MoveFolder-Vorgang](https://msdn.microsoft.com/library/c7233966-6c87-4a14-8156-b1610760176d%28Office.15%29.aspx) <br/> |
    
 ## <a name="to-use-the-ews-managed-api-to-communicate-with-ews"></a>So verwenden Sie die verwaltete EWS-API zur Kommunikation mit EWS
 
@@ -46,7 +46,7 @@ Nachdem Sie ein [ExchangeService](https://msdn.microsoft.com/library/Microsoft.E
    ```
 
    > [!NOTE]
-   > Durch Instanziieren von **ExchangeService** mit einem leeren Konstruktor wird eine Instanz erstellt, die an die letzte bekannte Version von Exchange gebunden ist. Alternativ können Sie auf eine bestimmte Version von Exchange abzielen, indem Sie die Version als Parameter angeben. `ExchangeService service = new ExchangeService(ExchangeVersion.Exchange2007_SP1);`
+   > [!HINWEIS] Durch Instanziieren von **ExchangeService** mit einem leeren Konstruktor wird eine Instanz erstellt, die an die letzte bekannte Version von Exchange gebunden ist. Alternativ können Sie auf eine bestimmte Version von Exchange abzielen, indem Sie die Version als Parameter angeben. `ExchangeService service = new ExchangeService(ExchangeVersion.Exchange2007_SP1);`
   
 2. Legen Sie die Anmeldeinformationen des Benutzers fest, der Anforderungen an den Exchange-Server sendet. Wenn Sie mithilfe der Anmeldeinformationen des authentifizierten Benutzers eine Verbindung zu EWS von einem Computer herstellen möchten, der bei der Domäne angemeldet ist, legen Sie die **UseDefaultCredentials** -Eigenschaft im **ExchangeService** -Objekt auf **true** fest.
     
@@ -70,7 +70,7 @@ Nachdem Sie ein [ExchangeService](https://msdn.microsoft.com/library/Microsoft.E
    ```
 
    > [!NOTE]
-   > Wenn die **UseDefaultCredentials** -Eigenschaft auf **true** festgelegt ist, wird der Wert der **Credentials** -Eigenschaft ignoriert. 
+   > [!HINWEIS] Wenn die **UseDefaultCredentials** -Eigenschaft auf **true** festgelegt ist, wird der Wert der **Credentials** -Eigenschaft ignoriert. 
   
 3. Legen Sie die URL des EWS-Endpunkts fest. Diese URL sucht die Datei "exchange.asmx" auf dem Clientzugriffsserver.
     

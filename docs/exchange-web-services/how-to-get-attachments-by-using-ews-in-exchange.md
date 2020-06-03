@@ -3,15 +3,15 @@ title: Abrufen von Anlagen mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 12ce3cc0-a201-42e4-93e1-1f57961ff711
 description: Hier erhalten Sie Informationen zum Abrufen von Anlagen aus EWS mithilfe der verwalteten EWS-API oder von EWS in Exchange.
-ms.openlocfilehash: 2e1b3cfb346abd068695f66b01f9e34f1f5ff03f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: de3e3ebfbcb16935130203dfed50f255bd59be7b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756897"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528083"
 ---
 # <a name="get-attachments-by-using-ews-in-exchange"></a>Abrufen von Anlagen mithilfe von EWS in Exchange
 
@@ -23,15 +23,15 @@ Sie können Anlagen von einem Elemente mithilfe der verwalteten EWS-API oder mit
 
 |**Aufgabe**|**EWS Managed API-Methode**|**EWS-Vorgang**|
 |:-----|:-----|:-----|
-|Abrufen von Elementanlagen  <br/> |[Item.Bind](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) followed by [ItemAttachment.Load](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.itemattachment.load%28v=exchg.80%29.aspx) <br/> |[GetItem ](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) gefolgt von [GetAttachment ](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) <br/> |
-|Abrufen von Dateianlagen  <br/> |[Item.Bind](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) followed by [FileAttachment.Load](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.fileattachment.load%28v=exchg.80%29.aspx) <br/> |[GetItem ](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) gefolgt von [GetAttachment ](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) <br/> |
+|Abrufen von Elementanlagen  <br/> |[Item.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) followed by [ItemAttachment.Load](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemattachment.load%28v=exchg.80%29.aspx) <br/> |[GetItem ](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) gefolgt von [GetAttachment ](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) <br/> |
+|Abrufen von Dateianlagen  <br/> |[Item.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) followed by [FileAttachment.Load](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.fileattachment.load%28v=exchg.80%29.aspx) <br/> |[GetItem ](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) gefolgt von [GetAttachment ](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) <br/> |
    
 ## <a name="get-attachments-from-an-email-by-using-the-ews-managed-api"></a>Abrufen von Anlagen aus einer E-Mail mithilfe der verwalteten EWS-API
 <a name="bk_getattachewsma"> </a>
 
-Im folgenden Codebeispiel wird gezeigt, wie ein [EmailMessage](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx)-Objekt mithilfe der **Bind**-Methode abgerufen wird und wie dann die Anlagensammlung durchlaufen und die Methode **FileAttachment.Load** oder **ItemAttachment.Load** für jede Anlage aufgerufen wird. Jede Dateianlage wird im Ordner „C:\temp\“ gespeichert, und jede Elementanlage wird in den Speicher geladen. Informationen dazu, wie Sie eine Elementanlage speichern, finden Sie unter [Speichern einer E-Mail-Nachricht mithilfe der verwalteten EWS-API](#bk_saveitemattach).
+The following code example shows how to get an [EmailMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) object by using the **Bind** method, then iterate through the attachment collection and call the **FileAttachment.Load** or **ItemAttachment.Load** method on each attachment as appropriate. Each file attachment is saved to the C:\temp\ folder, and each item attachment is loaded into memory. For information about how to save an item attachment, see [Save an attached email by using the EWS Managed API](#bk_saveitemattach).
   
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist, dass **itemId** die [ItemId](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) der Nachricht ist, von der Anlagen abgerufen werden, und dass der Benutzer für einen Exchange-Server authentifiziert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist, dass **itemId** die [ItemId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) der Nachricht ist, von der Anlagen abgerufen werden, und dass der Benutzer für einen Exchange-Server authentifiziert wurde. 
   
 ```cs
 public static void GetAttachmentsFromEmail(ExchangeService service, ItemId itemId)
@@ -67,16 +67,16 @@ public static void GetAttachmentsFromEmail(ExchangeService service, ItemId itemI
 ## <a name="get-an-attachment-from-an-email-by-using-ews"></a>Abrufen einer Anlage aus einer E-Mail mithilfe von EWS
 <a name="bk_getattachewsma"> </a>
 
-Um Anlagen mithilfe von EWS abzurufen, müssen Sie zuerst die Nachricht und die Anlagenauflistung abrufen, um die [AttachmentId (GetAttachment und DeleteAttachment)](http://msdn.microsoft.com/library/4bea1cb5-0a0f-4e14-9b09-f91af8cf9899%28Office.15%29.aspx) der abzurufenden Anlage zu erhalten. Wenn Sie einen oder mehrere abzurufende **AttachmentId**-Werte haben, rufen Sie den [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx)-Vorgang auf, um alle Eigenschaften für die Anlage zu laden. 
+Um Anlagen mithilfe von EWS abzurufen, müssen Sie zuerst die Nachricht und die Anlagenauflistung abrufen, um die [AttachmentId (GetAttachment und DeleteAttachment)](https://msdn.microsoft.com/library/4bea1cb5-0a0f-4e14-9b09-f91af8cf9899%28Office.15%29.aspx) der abzurufenden Anlage zu erhalten. Wenn Sie einen oder mehrere abzurufende **AttachmentId**-Werte haben, rufen Sie den [GetAttachment](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx)-Vorgang auf, um alle Eigenschaften für die Anlage zu laden. 
   
-Im folgenden Codebeispiel wird veranschaulicht, wie der [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx)-Vorgang zum Abrufen einer E-Mail und der Anlagenauflistung in der Nachricht verwendet wird. Dies ist auch die erste XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die verwaltete EWS-API verwenden, um [alle Anlagen aus einer E-Mail abzurufen](#bk_getattachewsma). Die Werte einiger Attribute wurden zur besseren Lesbarkeit gekürzt.
+Im folgenden Codebeispiel wird veranschaulicht, wie der [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx)-Vorgang zum Abrufen einer E-Mail und der Anlagenauflistung in der Nachricht verwendet wird. Dies ist auch die erste XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die verwaltete EWS-API verwenden, um [alle Anlagen aus einer E-Mail abzurufen](#bk_getattachewsma). Die Werte einiger Attribute wurden zur besseren Lesbarkeit gekürzt.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange207_SP1" />
   </soap:Header>
@@ -96,26 +96,26 @@ Im folgenden Codebeispiel wird veranschaulicht, wie der [GetItem](http://msdn.mi
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **GetItem**-Anforderung mit einer [GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](http://msdn.microsoft.com/de-DE/library/aa580757%28v=exchg.150%29.aspx)-Wert **NoError** umfasst, der angibt, dass die E-Mail erfolgreich abgerufen wurde, sowie [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx)-Werte der vorhandenen Anlagen. 
+Der Server antwortet auf die **GetItem**-Anforderung mit einer [GetItemResponse](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx)-Wert **NoError** umfasst, der angibt, dass die E-Mail erfolgreich abgerufen wurde, sowie [AttachmentId](https://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx)-Werte der vorhandenen Anlagen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="939"
                          MinorBuildNumber="12"
                          Version="V2_11"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -150,14 +150,14 @@ Der Server antwortet auf die **GetItem**-Anforderung mit einer [GetItemResponse]
 
 ```
 
-Da Sie nun über die [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx)-Werte verfügen, rufen Sie [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) für jede Anlage auf, die Sie abrufen möchten. 
+Da Sie nun über die [AttachmentId](https://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx)-Werte verfügen, rufen Sie [GetAttachment](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) für jede Anlage auf, die Sie abrufen möchten. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -171,26 +171,26 @@ Da Sie nun über die [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-6
 </soap:Envelope>
 ```
 
-Beim Abrufen einer Elementanlage reagiert der Server auf die **GetAttachment**-Anforderung mit einer [GetAttachmentResponse](http://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](http://msdn.microsoft.com/de-DE/library/aa580757%28v=exchg.150%29.aspx)-Wert von **NoError** umfasst, der angibt, dass die Anlage erfolgreich abgerufen wurde, sowie alle Elemente für das angefügte Element, in diesem Fall eine E-Mai-Nachricht.
+Beim Abrufen einer Elementanlage reagiert der Server auf die **GetAttachment**-Anforderung mit einer [GetAttachmentResponse](https://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx)-Wert von **NoError** umfasst, der angibt, dass die Anlage erfolgreich abgerufen wurde, sowie alle Elemente für das angefügte Element, in diesem Fall eine E-Mai-Nachricht.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="939"
                          MinorBuildNumber="12"
                          Version="V2_11"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                             xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                             xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -259,26 +259,26 @@ Beim Abrufen einer Elementanlage reagiert der Server auf die **GetAttachment**-A
 </s:Envelope>
 ```
 
-Beim Abrufen einer Dateianlage reagiert der Server auf die **GetAttachment**-Anforderung mit einer [GetAttachmentResponse](http://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](http://msdn.microsoft.com/de-DE/library/aa580757%28v=exchg.150%29.aspx)-Wert von **NoError** umfasst, der angibt, dass die Anlage erfolgreich abgerufen wurde, sowie alle Elemente der Dateianlage.
+Beim Abrufen einer Dateianlage reagiert der Server auf die **GetAttachment**-Anforderung mit einer [GetAttachmentResponse](https://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx)-Wert von **NoError** umfasst, der angibt, dass die Anlage erfolgreich abgerufen wurde, sowie alle Elemente der Dateianlage.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="939"
                          MinorBuildNumber="12"
                          Version="V2_11"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                             xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                             xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -299,7 +299,7 @@ Beim Abrufen einer Dateianlage reagiert der Server auf die **GetAttachment**-Anf
 ## <a name="save-an-attached-email-by-using-the-ews-managed-api"></a>Speichern einer E-Mail-Nachricht mithilfe der verwalteten EWS-API
 <a name="bk_saveitemattach"> </a>
 
-Um den Inhalt einer E-Mail-Anlage mithilfe der verwalteten EWS-API zu speichern, müssen Sie den [MimeContent](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) in einer Datei speichern. Dabei gehen alle erweiterten Eigenschaften verloren, die für das Element festgelegt wurden, z. B. Nachverfolgungskennzeichnungen und Kategorien. In diesem Beispiel wird die E-Mail-Anlage im Ordner „C:\temp\“ gespeichert. 
+In order to save the contents of an email attachment using the EWS Managed API, you need to save the [MimeContent](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) to a file. In doing so, you will lose any extended properties set on the item, such as follow-up flags and categories. This example saves the email attachment to the to the C:\temp\ folder. 
   
 Beachten Sie, dass Sie die Elementanlage nicht in einen anderen Ordner verschieben oder kopieren können, da die Elementanlage kein stark typisiertes Element ist. Wenn Sie also versuchen, eine Anlage in einen anderen Ordner zu verschieben, verwenden Sie das folgende Codebeispiel, und [importieren Sie dann die Datei](how-to-import-items-by-using-ews-in-exchange.md) in einen anderen Ordner. 
   
