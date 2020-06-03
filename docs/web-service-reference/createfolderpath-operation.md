@@ -12,7 +12,7 @@ ms.openlocfilehash: a8d42cbef854d900c5fb6b72c730dd1e2b903aec
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458901"
 ---
 # <a name="createfolderpath-operation"></a>CreateFolderPath-Vorgang
@@ -90,7 +90,7 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [RelativeFolderPath](relativefolderpath.md)
     
-- [Folder](folder.md)
+- [Ordner](folder.md)
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
@@ -171,7 +171,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [Ordner](folders-ex15websvcsotherref.md)
     
-- [Folder](folder.md)
+- [Ordner](folder.md)
     
 - [FolderId](folderid.md)
     

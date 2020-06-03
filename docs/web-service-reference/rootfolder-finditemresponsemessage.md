@@ -16,7 +16,7 @@ ms.openlocfilehash: 3bbab325dff26139739c50ef519b215aea620a0b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457130"
 ---
 # <a name="rootfolder-finditemresponsemessage"></a>RootFolder (FindItemResponseMessage)
@@ -49,7 +49,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Items](items.md) <br/> |Enthält ein Array mit gefundenen Elementen, die die in der FindItem- [Vorgangs](finditem-operation.md) Anforderung angegebenen Suchkriterien aufweisen.  <br/> |
+|[Elemente](items.md) <br/> |Enthält ein Array mit gefundenen Elementen, die die in der FindItem- [Vorgangs](finditem-operation.md) Anforderung angegebenen Suchkriterien aufweisen.  <br/> |
 |[Groups](groups.md) <br/> |Enthält eine Auflistung von Gruppen, die die Such-und Aggregations Kriterien aufweisen, die in der [FindItem-Vorgangs](finditem-operation.md) Anforderung angegeben sind.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
@@ -88,5 +88,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [TotalItemsInView](https://msdn.microsoft.com/library/ExchangeWebServices.FindItemParentType.TotalItemsInView.aspx)
 
 
-[Finding Items](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+[Suchen von Elementen](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

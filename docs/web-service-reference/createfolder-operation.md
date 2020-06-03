@@ -16,7 +16,7 @@ ms.openlocfilehash: 125a6d212e5eaf85ace71c048de809f3a05ba9b6
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457550"
 ---
 # <a name="createfolder-operation"></a>CreateFolder-Vorgang
@@ -65,7 +65,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Ordner](folders-ex15websvcsotherref.md)
     
-- [Folder](folder.md)
+- [Ordner](folder.md)
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
@@ -142,7 +142,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Ordner](folders-ex15websvcsotherref.md)
     
-- [Folder](folder.md)
+- [Ordner](folder.md)
     
 - [FolderId](folderid.md)
     

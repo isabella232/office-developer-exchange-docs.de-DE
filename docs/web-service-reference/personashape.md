@@ -12,7 +12,7 @@ ms.openlocfilehash: 49cbae714a3b854496dc91ea6102f4b676623690
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457571"
 ---
 # <a name="personashape"></a>PersonaShape
@@ -56,6 +56,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
 |Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
-|Kann leer sein  <br/> |false  <br/> |
+|Kann leer sein  <br/> |False  <br/> |
    
 

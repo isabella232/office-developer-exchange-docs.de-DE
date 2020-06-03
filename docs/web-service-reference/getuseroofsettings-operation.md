@@ -16,7 +16,7 @@ ms.openlocfilehash: 622faa622b0ea231a6331ff62631885d4252c1f5
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457697"
 ---
 # <a name="getuseroofsettings-operation"></a>GetUserOofSettings-Vorgang
@@ -142,7 +142,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ExternalReply](externalreply.md)
     
-- [Nachricht](message-ex15websvcsotherref.md)
+- [Meldung](message-ex15websvcsotherref.md)
     
 - [AllowExternalOof](allowexternaloof.md)
     

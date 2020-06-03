@@ -16,7 +16,7 @@ ms.openlocfilehash: 535edf9fe567bc3063a5b853f01d604ea4c7eb95
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457501"
 ---
 # <a name="createitem-operation-calendar-item"></a>CreateItem-Vorgang (Kalenderelement)
@@ -175,7 +175,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Items](items.md)
+- [Elemente](items.md)
     
 - [CalendarItem](calendaritem.md)
     

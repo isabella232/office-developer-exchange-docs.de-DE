@@ -16,7 +16,7 @@ ms.openlocfilehash: cfe36364431a8fe81c3f62e68356b634f00bee78
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457795"
 ---
 # <a name="getattachmentresponsemessage"></a>GetAttachmentResponseMessage
@@ -52,7 +52,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Erfolg  <br/> |Beschreibt eine Anforderung, die erfüllt ist.  <br/> |
+|Erfolgreich  <br/> |Beschreibt eine Anforderung, die erfüllt ist.  <br/> |
 |Warnung  <br/> | Beschreibt eine Anforderung, die nicht verarbeitet wurde. Wenn ein Fehler aufgetreten ist, während ein Element in der Anforderung verarbeitet wurde, kann eine Warnung zurückgegeben werden, und nachfolgende Elemente konnten nicht verarbeitet werden. <br/><br/>Im folgenden sind Beispiele für Quellen von Warnungen aufgeführt: <br/> <br/>-Der Exchange-Informationsspeicher ist während des Batches offline.  <br/>-Active Directory-Domänendienste (AD DS) ist offline.  <br/>-Postfächer werden verschoben.  <br/>-Die Nachrichtendatenbank (MDB) ist offline.  <br/>-Ein Kennwort ist abgelaufen.  <br/>-Ein Kontingent wird überschritten.  <br/> |
 |Fehler (ungefährer Wortlaut)  <br/> | Beschreibt eine Anforderung, die nicht erfüllt werden kann. <br/><br/>Im folgenden finden Sie Beispiele für Fehlerquellen:  <br/><br/>-Ungültige Attribute oder Elemente  <br/>-Attribute oder Elemente außerhalb des Bereichs  <br/>-Unbekanntes Tag  <br/>-Attribut oder Element im Kontext ungültig  <br/>-Nicht autorisierter Zugriff durch einen Client  <br/>-Server seitiger Fehler als Reaktion auf einen gültigen clientseitigen Anruf  <br/><br/>  Informationen zum Fehler finden Sie in den Elementen [Response Code](responsecode.md) und [MessageText](messagetext.md) .  <br/> |
    

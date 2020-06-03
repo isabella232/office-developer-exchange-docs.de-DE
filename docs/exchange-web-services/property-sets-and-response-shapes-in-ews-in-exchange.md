@@ -1,5 +1,5 @@
 ---
-title: Eigenschaftensätze und Antwortshapes in EWS in Exchange
+title: Eigenschaftensätze und Antwort shapes in EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,10 +10,10 @@ ms.openlocfilehash: 8f539a2131798e764574ef92f75deb654c02c90f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457662"
 ---
-# <a name="property-sets-and-response-shapes-in-ews-in-exchange"></a>Eigenschaftensätze und Antwortshapes in EWS in Exchange
+# <a name="property-sets-and-response-shapes-in-ews-in-exchange"></a>Eigenschaftensätze und Antwort shapes in EWS in Exchange
 
 Hier erfahren Sie, wie Sie die Antwort-Shapes und Eigenschaftensätze verwalten, die von der verwalteten EWS-API und EWS in Exchange zurückgegeben werden.
   
@@ -68,7 +68,7 @@ In der folgenden Tabelle sind die Standardeigenschaften aufgeführt, die für je
 |Imaddresses  <br/> ||x  <br/> |||
 |Isassociated  <br/> |x  <br/> ||x  <br/> ||
 |IsDeliveryReceiptRequested  <br/> |||x  <br/> ||
-|Itemid  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
+|ItemId  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
 |JobTitle  <br/> ||x  <br/> |||
 |LegacyFreeBusyStatus  <br/> |x  <br/> ||||
 |Standort  <br/> |x  <br/> ||||
@@ -181,7 +181,7 @@ Sie können dem Eigenschaftenset zusätzliche Eigenschaften hinzufügen oder erw
 |Issubmitted  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
 |IsUnmodified  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
 |ItemClass  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
-|Itemid  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
+|ItemId  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
 |JobTitle  <br/> ||x  <br/> ||||
 |LastModifiedName  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
 |LastModifiedTime  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
@@ -255,8 +255,8 @@ Hinweise:
     
 - [GetItem-Vorgang](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)
     
-- [FindFolder Operation](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)
+- [FindFolder-Vorgang](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)
     
-- [GetFolder Operation](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)
+- [GetFolder-Vorgang](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)
     
 

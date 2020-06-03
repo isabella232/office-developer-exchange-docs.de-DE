@@ -12,7 +12,7 @@ ms.openlocfilehash: f2632062cd02581c426f7dbfa2a33d53e5594d72
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458551"
 ---
 # <a name="remindermessagedata"></a>ReminderMessageData
@@ -45,7 +45,7 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Nachricht](message-ex15websvcsotherref.md)
+[Meldung](message-ex15websvcsotherref.md)
   
 ## <a name="remarks"></a>Bemerkungen
 
@@ -68,7 +68,7 @@ Versionen von Exchange, die mit Buildnummer 15.00.0913.09 beginnen, können das 
 
 
 
-[Nachricht](message-ex15websvcsotherref.md)
+[Meldung](message-ex15websvcsotherref.md)
 
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)

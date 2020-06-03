@@ -16,7 +16,7 @@ ms.openlocfilehash: bd25a82641259e1546bad6eef5c2f6f8f03e98cb
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458670"
 ---
 # <a name="getitemresponsemessage"></a>GetItemResponseMessage
@@ -65,7 +65,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |[ResponseCode](responsecode.md) <br/> |Stellt einen Fehlercode bereit, der den spezifischen Fehler identifiziert, der bei der Anforderung aufgetreten ist.  <br/> |
 |[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Wird derzeit nicht verwendet und ist für die zukünftige Verwendung reserviert. Sie enthält den Wert 0.  <br/> |
 |[Messagexml verwendet](messagexml.md) <br/> |Bietet zusätzliche Fehlerantwortinformationen.  <br/> |
-|[Items](items.md) <br/> |Enthält ein Array zurückgegebener Elemente.  <br/> |
+|[Elemente](items.md) <br/> |Enthält ein Array zurückgegebener Elemente.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

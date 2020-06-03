@@ -15,7 +15,7 @@ ms.openlocfilehash: ea31c7a0f93188e563bf95c4a3e6e91f0866746c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458047"
 ---
 # <a name="base64folderid-um-web-service"></a>base64FolderId (um-Webdienst)
@@ -74,7 +74,7 @@ Verwenden Sie den [SetTelephoneAccessFolderEmail-Vorgang (um-Webdienst)](settele
   
 [SetTelephoneAccessFolderEmail-Vorgang (um-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md)
   
-[FindFolder Operation](findfolder-operation.md)
+[FindFolder-Vorgang](findfolder-operation.md)
   
 [FindItem-Vorgang](finditem-operation.md)
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: 5eb97bef349ca02848f65fa58370b9c81c6653d0
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457004"
 ---
 # <a name="distributionlist"></a>DistributionList
@@ -135,7 +135,7 @@ Keine.
 |[ConflictingMeetings](conflictingmeetings.md) <br/> |Identifiziert alle Elemente, die mit einer Besprechungszeit in Konflikt stehen.  <br/> |
 |[Erstellen (ItemSync)](create-itemsync.md) <br/> |Identifiziert eine einzelne Verteilerliste, die im lokalen Clientspeicher erstellt werden soll.  <br/> |
 |[Update (ItemSync)](update-itemsync.md) <br/> |Identifiziert eine einzelne Verteilerliste, die im lokalen Clientspeicher aktualisiert werden soll.  <br/> |
-|[Items](items.md) <br/> |Enthält ein Array von Elementen.  <br/> |
+|[Elemente](items.md) <br/> |Enthält ein Array von Elementen.  <br/> |
 |[Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |Enthält ein Array von Elementen, die in dem durch das [parentfolderid (TargetFolderIdType)-](parentfolderid-targetfolderidtype.md) Element identifizierten Ordner erstellt werden sollen.  <br/> |
 |[SetItemField](setitemfield.md) <br/> |Stellt eine Aktualisierung einer einzelnen Eigenschaft eines Verteilerlisten Elements in einem UpdateItem- [Vorgang](updateitem-operation.md)dar.  <br/> |
    

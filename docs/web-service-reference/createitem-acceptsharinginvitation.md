@@ -16,7 +16,7 @@ ms.openlocfilehash: eda846b72f42fe886497b355d9cddade7c5f4044
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457515"
 ---
 # <a name="createitem-acceptsharinginvitation"></a>CreateItem (AcceptSharingInvitation)
@@ -53,7 +53,7 @@ In der Anforderung werden folgende Elemente verwendet:
   
 - [CreateItem](createitem.md)
     
-- [Items](items.md)
+- [Elemente](items.md)
     
 - [AcceptSharingInvitation](acceptsharinginvitation.md)
     
@@ -113,7 +113,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Items](items.md)
+- [Elemente](items.md)
     
 ## <a name="accept-sharing-invitation-error-response-example"></a>Beispiel für Fehler bei der Freigabeeinladung annehmen
 
@@ -171,7 +171,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Items](items.md)
+- [Elemente](items.md)
     
 ## <a name="see-also"></a>Siehe auch
 
