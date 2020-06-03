@@ -12,51 +12,51 @@ ms.openlocfilehash: b4a819be260e9ba4eecf329011241c9c2b89f332
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462822"
 ---
-# <a name="token-string"></a><span data-ttu-id="be560-103">Token (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="be560-103">Token (String)</span></span>
+# <a name="token-string"></a><span data-ttu-id="e4369-103">Token (Zeichenfolge)</span><span class="sxs-lookup"><span data-stu-id="e4369-103">Token (String)</span></span>
 
-<span data-ttu-id="be560-104">Das **Token** -Element enthält ein Such Einschränkungstoken.</span><span class="sxs-lookup"><span data-stu-id="be560-104">The **Token** element contains a search refiner token.</span></span> 
+<span data-ttu-id="e4369-104">Das **Token** -Element enthält ein Such Einschränkungstoken.</span><span class="sxs-lookup"><span data-stu-id="e4369-104">The **Token** element contains a search refiner token.</span></span> 
   
 ```XML
 <Token></Token>
 ```
 
- <span data-ttu-id="be560-105">**Zeichenfolge**</span><span class="sxs-lookup"><span data-stu-id="be560-105">**string**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="be560-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="be560-106">Attributes and elements</span></span>
+ <span data-ttu-id="e4369-105">**Zeichenfolge**</span><span class="sxs-lookup"><span data-stu-id="e4369-105">**string**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="e4369-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="e4369-106">Attributes and elements</span></span>
 
-<span data-ttu-id="be560-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="be560-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="e4369-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="e4369-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="be560-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="be560-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="e4369-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="e4369-108">Attributes</span></span>
 
-<span data-ttu-id="be560-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="be560-109">None.</span></span>
+<span data-ttu-id="e4369-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="e4369-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="be560-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="be560-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="e4369-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e4369-110">Child elements</span></span>
 
-<span data-ttu-id="be560-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="be560-111">None.</span></span>
+<span data-ttu-id="e4369-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="e4369-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="be560-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="be560-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="e4369-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e4369-112">Parent elements</span></span>
 
-[<span data-ttu-id="be560-113">Einschränkung</span><span class="sxs-lookup"><span data-stu-id="be560-113">Refiner</span></span>](refiner.md)
+[<span data-ttu-id="e4369-113">Einschränkung</span><span class="sxs-lookup"><span data-stu-id="e4369-113">Refiner</span></span>](refiner.md)
   
-## <a name="text-value"></a><span data-ttu-id="be560-114">Textwert</span><span class="sxs-lookup"><span data-stu-id="be560-114">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="e4369-114">Textwert</span><span class="sxs-lookup"><span data-stu-id="e4369-114">Text value</span></span>
 
-<span data-ttu-id="be560-115">Der Textwert des **Token** -Elements ist ein Such Einschränkungstoken für eine Ermittlungs Suche.</span><span class="sxs-lookup"><span data-stu-id="be560-115">The text value of the **Token** element is a search refiner token for a discovery search.</span></span> 
+<span data-ttu-id="e4369-115">Der Textwert des **Token** -Elements ist ein Such Einschränkungstoken für eine Ermittlungs Suche.</span><span class="sxs-lookup"><span data-stu-id="e4369-115">The text value of the **Token** element is a search refiner token for a discovery search.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="be560-116">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="be560-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e4369-116">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e4369-116">Remarks</span></span>
 
-<span data-ttu-id="be560-117">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="be560-117">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="e4369-117">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="e4369-117">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="be560-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="be560-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="e4369-118">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="e4369-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="be560-119">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="be560-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="e4369-119">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="e4369-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="be560-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="be560-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="be560-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="be560-121">Schema name</span></span>  <br/> |<span data-ttu-id="be560-122">Schematypen</span><span class="sxs-lookup"><span data-stu-id="be560-122">Types schema</span></span>  <br/> |
-|<span data-ttu-id="be560-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="be560-123">Validation file</span></span>  <br/> |<span data-ttu-id="be560-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="be560-124">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="be560-125">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="be560-125">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="e4369-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="e4369-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="e4369-121">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="e4369-121">Schema name</span></span>  <br/> |<span data-ttu-id="e4369-122">Schematypen</span><span class="sxs-lookup"><span data-stu-id="e4369-122">Types schema</span></span>  <br/> |
+|<span data-ttu-id="e4369-123">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="e4369-123">Validation file</span></span>  <br/> |<span data-ttu-id="e4369-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="e4369-124">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="e4369-125">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="e4369-125">Can be empty</span></span>  <br/> ||
    
 

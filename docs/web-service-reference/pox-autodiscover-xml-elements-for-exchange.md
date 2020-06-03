@@ -13,28 +13,28 @@ ms.openlocfilehash: 9085491197f5aa79ffe54c5c920708d7b100458f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462248"
 ---
-# <a name="pox-autodiscover-xml-elements-for-exchange"></a><span data-ttu-id="65008-103">POX Autodiscover XML-Elemente für Exchange</span><span class="sxs-lookup"><span data-stu-id="65008-103">POX Autodiscover XML elements for Exchange</span></span>
+# <a name="pox-autodiscover-xml-elements-for-exchange"></a><span data-ttu-id="13fcb-103">POX Autodiscover XML-Elemente für Exchange</span><span class="sxs-lookup"><span data-stu-id="13fcb-103">POX Autodiscover XML elements for Exchange</span></span>
 
-<span data-ttu-id="65008-104">Finden Sie XML-Elementreferenz Informationen für den POX-Auto Ermittlungs Webdienst in Exchange.</span><span class="sxs-lookup"><span data-stu-id="65008-104">Find XML element reference information for the POX Autodiscover web service in Exchange.</span></span>
+<span data-ttu-id="13fcb-104">Finden Sie XML-Elementreferenz Informationen für den POX-Auto Ermittlungs Webdienst in Exchange.</span><span class="sxs-lookup"><span data-stu-id="13fcb-104">Find XML element reference information for the POX Autodiscover web service in Exchange.</span></span>
   
-<span data-ttu-id="65008-105">Die Dokumentation in diesem Abschnitt basiert auf den Pocken-XML-Elementinstanzen, die zwischen dem Client und dem Server gesendet werden.</span><span class="sxs-lookup"><span data-stu-id="65008-105">The documentation in this section is based on the POX Autodiscover XML element instances that are sent between the client and server.</span></span> <span data-ttu-id="65008-106">Der POX-AutoErmittlungsdienst verfügt über kein veröffentlichtes Schema, das auf dem Server ermittelt werden kann.</span><span class="sxs-lookup"><span data-stu-id="65008-106">The POX Autodiscover service does not have a published schema that can be discovered on the server.</span></span> <span data-ttu-id="65008-107">Dieser Abschnitt enthält Informationen zu den einzelnen POX-AutoErmittlung-XML-Elementen.</span><span class="sxs-lookup"><span data-stu-id="65008-107">This section provides information about the individual POX Autodiscover XML elements.</span></span>
+<span data-ttu-id="13fcb-105">Die Dokumentation in diesem Abschnitt basiert auf den Pocken-XML-Elementinstanzen, die zwischen dem Client und dem Server gesendet werden.</span><span class="sxs-lookup"><span data-stu-id="13fcb-105">The documentation in this section is based on the POX Autodiscover XML element instances that are sent between the client and server.</span></span> <span data-ttu-id="13fcb-106">Der POX-AutoErmittlungsdienst verfügt über kein veröffentlichtes Schema, das auf dem Server ermittelt werden kann.</span><span class="sxs-lookup"><span data-stu-id="13fcb-106">The POX Autodiscover service does not have a published schema that can be discovered on the server.</span></span> <span data-ttu-id="13fcb-107">Dieser Abschnitt enthält Informationen zu den einzelnen POX-AutoErmittlung-XML-Elementen.</span><span class="sxs-lookup"><span data-stu-id="13fcb-107">This section provides information about the individual POX Autodiscover XML elements.</span></span>
   
-## <a name="related-sections"></a><span data-ttu-id="65008-108">Verwandte Abschnitte</span><span class="sxs-lookup"><span data-stu-id="65008-108">Related sections</span></span>
-<span data-ttu-id="65008-109"><a name="bk_RelatedSections"> </a></span><span class="sxs-lookup"><span data-stu-id="65008-109"><a name="bk_RelatedSections"> </a></span></span>
+## <a name="related-sections"></a><span data-ttu-id="13fcb-108">Verwandte Abschnitte</span><span class="sxs-lookup"><span data-stu-id="13fcb-108">Related sections</span></span>
+<span data-ttu-id="13fcb-109"><a name="bk_RelatedSections"> </a></span><span class="sxs-lookup"><span data-stu-id="13fcb-109"><a name="bk_RelatedSections"> </a></span></span>
 
-[<span data-ttu-id="65008-110">POX AutoErmittlung Webdienstverweis für Exchange</span><span class="sxs-lookup"><span data-stu-id="65008-110">POX Autodiscover web service reference for Exchange</span></span>](pox-autodiscover-web-service-reference-for-exchange.md)
+[<span data-ttu-id="13fcb-110">POX AutoErmittlung Webdienstverweis für Exchange</span><span class="sxs-lookup"><span data-stu-id="13fcb-110">POX Autodiscover web service reference for Exchange</span></span>](pox-autodiscover-web-service-reference-for-exchange.md)
   
-[<span data-ttu-id="65008-111">EWS-Referenz für Exchange</span><span class="sxs-lookup"><span data-stu-id="65008-111">EWS reference for Exchange</span></span>](ews-reference-for-exchange.md)
+[<span data-ttu-id="13fcb-111">EWS-Referenz für Exchange</span><span class="sxs-lookup"><span data-stu-id="13fcb-111">EWS reference for Exchange</span></span>](ews-reference-for-exchange.md)
   
-[<span data-ttu-id="65008-112">Unified Messaging-Webdienst Referenz für Exchange</span><span class="sxs-lookup"><span data-stu-id="65008-112">Unified Messaging web service reference for Exchange</span></span>](unified-messaging-web-service-reference-for-exchange.md)
+[<span data-ttu-id="13fcb-112">Unified Messaging-Webdienst Referenz für Exchange</span><span class="sxs-lookup"><span data-stu-id="13fcb-112">Unified Messaging web service reference for Exchange</span></span>](unified-messaging-web-service-reference-for-exchange.md)
   
-## <a name="see-also"></a><span data-ttu-id="65008-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="65008-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="13fcb-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="13fcb-113">See also</span></span>
 
-- [<span data-ttu-id="65008-114">AutoErmittlung Webdienstverweis für Exchange</span><span class="sxs-lookup"><span data-stu-id="65008-114">Autodiscover web service reference for Exchange</span></span>](autodiscover-web-service-reference-for-exchange.md)
-- [<span data-ttu-id="65008-115">AutoErmittlung für Exchange</span><span class="sxs-lookup"><span data-stu-id="65008-115">Autodiscover for Exchange</span></span>](../exchange-web-services/autodiscover-for-exchange.md)
-- [<span data-ttu-id="65008-116">Erste Schritte mit Webdiensten in Exchange</span><span class="sxs-lookup"><span data-stu-id="65008-116">Start using web services in Exchange</span></span>](../exchange-web-services/start-using-web-services-in-exchange.md)
+- [<span data-ttu-id="13fcb-114">AutoErmittlung Webdienstverweis für Exchange</span><span class="sxs-lookup"><span data-stu-id="13fcb-114">Autodiscover web service reference for Exchange</span></span>](autodiscover-web-service-reference-for-exchange.md)
+- [<span data-ttu-id="13fcb-115">AutoErmittlung für Exchange</span><span class="sxs-lookup"><span data-stu-id="13fcb-115">Autodiscover for Exchange</span></span>](../exchange-web-services/autodiscover-for-exchange.md)
+- [<span data-ttu-id="13fcb-116">Erste Schritte mit Webdiensten in Exchange</span><span class="sxs-lookup"><span data-stu-id="13fcb-116">Start using web services in Exchange</span></span>](../exchange-web-services/start-using-web-services-in-exchange.md)
     
 
