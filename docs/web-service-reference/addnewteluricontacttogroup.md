@@ -12,12 +12,12 @@ ms.openlocfilehash: 151c5b1dab7a3ffc9630fb4e4192b90bd1d4ae38
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44464931"
 ---
-# <a name="addnewteluricontacttogroup"></a><span data-ttu-id="1a93f-103">AddNewTelUriContactToGroup</span><span class="sxs-lookup"><span data-stu-id="1a93f-103">AddNewTelUriContactToGroup</span></span>
+# <a name="addnewteluricontacttogroup"></a><span data-ttu-id="7d408-103">AddNewTelUriContactToGroup</span><span class="sxs-lookup"><span data-stu-id="7d408-103">AddNewTelUriContactToGroup</span></span>
 
-<span data-ttu-id="1a93f-104">Das **AddNewTelUriContactToGroup** -Element gibt die Eingabedaten für den **AddNewTelUriContactToGroup** -WSDL-Vorgang an.</span><span class="sxs-lookup"><span data-stu-id="1a93f-104">The **AddNewTelUriContactToGroup** element specifies the input data for the **AddNewTelUriContactToGroup** WSDL operation.</span></span> 
+<span data-ttu-id="7d408-104">Das **AddNewTelUriContactToGroup** -Element gibt die Eingabedaten für den **AddNewTelUriContactToGroup** -WSDL-Vorgang an.</span><span class="sxs-lookup"><span data-stu-id="7d408-104">The **AddNewTelUriContactToGroup** element specifies the input data for the **AddNewTelUriContactToGroup** WSDL operation.</span></span> 
   
 ```XML
 <AddNewTelUriContactToGroup>
@@ -28,40 +28,40 @@ ms.locfileid: "44464931"
 </AddNewTelUriContactToGroup>
 ```
 
- <span data-ttu-id="1a93f-105">**AddNewTelUriContactToGroupType**</span><span class="sxs-lookup"><span data-stu-id="1a93f-105">**AddNewTelUriContactToGroupType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="1a93f-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="1a93f-106">Attributes and elements</span></span>
+ <span data-ttu-id="7d408-105">**AddNewTelUriContactToGroupType**</span><span class="sxs-lookup"><span data-stu-id="7d408-105">**AddNewTelUriContactToGroupType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="7d408-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="7d408-106">Attributes and elements</span></span>
 
-<span data-ttu-id="1a93f-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="1a93f-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="7d408-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="7d408-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="1a93f-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="1a93f-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="7d408-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="7d408-108">Attributes</span></span>
 
-<span data-ttu-id="1a93f-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="1a93f-109">None.</span></span>
+<span data-ttu-id="7d408-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="7d408-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="1a93f-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1a93f-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="7d408-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="7d408-110">Child elements</span></span>
 
-<span data-ttu-id="1a93f-111">[TelUriAddress](teluriaddress.md)  |  [ImContactSipUriAddress](imcontactsipuriaddress.md)  |  [ImTelephoneNumber](imtelephonenumber.md)  |  [Gruppen](groupid.md) -Nr</span><span class="sxs-lookup"><span data-stu-id="1a93f-111">[TelUriAddress](teluriaddress.md) | [ImContactSipUriAddress](imcontactsipuriaddress.md) | [ImTelephoneNumber](imtelephonenumber.md) | [GroupId](groupid.md)</span></span>
+<span data-ttu-id="7d408-111">[TelUriAddress](teluriaddress.md)  |  [ImContactSipUriAddress](imcontactsipuriaddress.md)  |  [ImTelephoneNumber](imtelephonenumber.md)  |  [Gruppen](groupid.md) -Nr</span><span class="sxs-lookup"><span data-stu-id="7d408-111">[TelUriAddress](teluriaddress.md) | [ImContactSipUriAddress](imcontactsipuriaddress.md) | [ImTelephoneNumber](imtelephonenumber.md) | [GroupId](groupid.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="1a93f-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1a93f-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="7d408-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="7d408-112">Parent elements</span></span>
 
-<span data-ttu-id="1a93f-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="1a93f-113">None.</span></span>
+<span data-ttu-id="7d408-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="7d408-113">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="1a93f-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="1a93f-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7d408-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="7d408-114">Remarks</span></span>
 
-<span data-ttu-id="1a93f-115">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="1a93f-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="7d408-115">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="7d408-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="1a93f-116">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="1a93f-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="7d408-116">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="7d408-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="1a93f-117">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="1a93f-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="7d408-117">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="7d408-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="1a93f-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="1a93f-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="1a93f-119">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="1a93f-119">Schema name</span></span>  <br/> |<span data-ttu-id="1a93f-120">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="1a93f-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="1a93f-121">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="1a93f-121">Validation file</span></span>  <br/> |<span data-ttu-id="1a93f-122">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="1a93f-122">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="1a93f-123">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="1a93f-123">Can be empty</span></span>  <br/> |<span data-ttu-id="1a93f-124">False</span><span class="sxs-lookup"><span data-stu-id="1a93f-124">False</span></span>  <br/> |
+|<span data-ttu-id="7d408-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="7d408-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="7d408-119">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="7d408-119">Schema name</span></span>  <br/> |<span data-ttu-id="7d408-120">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="7d408-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="7d408-121">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="7d408-121">Validation file</span></span>  <br/> |<span data-ttu-id="7d408-122">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="7d408-122">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="7d408-123">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="7d408-123">Can be empty</span></span>  <br/> |<span data-ttu-id="7d408-124">False</span><span class="sxs-lookup"><span data-stu-id="7d408-124">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="1a93f-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1a93f-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7d408-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7d408-125">See also</span></span>
 
-- [<span data-ttu-id="1a93f-126">AddNewTelUriContactToGroup-Vorgang</span><span class="sxs-lookup"><span data-stu-id="1a93f-126">AddNewTelUriContactToGroup operation</span></span>](addnewteluricontacttogroup-operation.md)
-- [<span data-ttu-id="1a93f-127">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="1a93f-127">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="7d408-126">AddNewTelUriContactToGroup-Vorgang</span><span class="sxs-lookup"><span data-stu-id="7d408-126">AddNewTelUriContactToGroup operation</span></span>](addnewteluricontacttogroup-operation.md)
+- [<span data-ttu-id="7d408-127">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="7d408-127">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

@@ -13,12 +13,12 @@ ms.openlocfilehash: b68b0b15ad2a06d3be9e8fcbc3b9a4d61e4ee8be
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44464840"
 ---
-# <a name="alternatemailboxes-soap"></a><span data-ttu-id="0d4a8-103">AlternateMailboxes (SOAP)</span><span class="sxs-lookup"><span data-stu-id="0d4a8-103">AlternateMailboxes (SOAP)</span></span>
+# <a name="alternatemailboxes-soap"></a><span data-ttu-id="525d3-103">AlternateMailboxes (SOAP)</span><span class="sxs-lookup"><span data-stu-id="525d3-103">AlternateMailboxes (SOAP)</span></span>
 
-<span data-ttu-id="0d4a8-104">Das **AlternateMailboxes** -Element stellt eine Auflistung von alternativen Postfächern dar.</span><span class="sxs-lookup"><span data-stu-id="0d4a8-104">The **AlternateMailboxes** element represents a collection of alternate mailboxes.</span></span> 
+<span data-ttu-id="525d3-104">Das **AlternateMailboxes** -Element stellt eine Auflistung von alternativen Postfächern dar.</span><span class="sxs-lookup"><span data-stu-id="525d3-104">The **AlternateMailboxes** element represents a collection of alternate mailboxes.</span></span> 
   
 ```XML
 <AlternateMailboxes>
@@ -26,38 +26,38 @@ ms.locfileid: "44464840"
 </AlternateMailboxes>
 ```
 
- <span data-ttu-id="0d4a8-105">**AlternateMailboxes**</span><span class="sxs-lookup"><span data-stu-id="0d4a8-105">**AlternateMailboxes**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="0d4a8-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="0d4a8-106">Attributes and elements</span></span>
+ <span data-ttu-id="525d3-105">**AlternateMailboxes**</span><span class="sxs-lookup"><span data-stu-id="525d3-105">**AlternateMailboxes**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="525d3-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="525d3-106">Attributes and elements</span></span>
 
-<span data-ttu-id="0d4a8-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="0d4a8-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="525d3-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="525d3-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="0d4a8-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="0d4a8-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="525d3-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="525d3-108">Attributes</span></span>
 
-<span data-ttu-id="0d4a8-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="0d4a8-109">None.</span></span>
+<span data-ttu-id="525d3-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="525d3-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="0d4a8-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="0d4a8-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="525d3-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="525d3-110">Child elements</span></span>
 
-|<span data-ttu-id="0d4a8-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="0d4a8-111">**Element**</span></span>|<span data-ttu-id="0d4a8-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="0d4a8-112">**Description**</span></span>|
+|<span data-ttu-id="525d3-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="525d3-111">**Element**</span></span>|<span data-ttu-id="525d3-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="525d3-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="0d4a8-113">AlternateMailbox (SOAP)</span><span class="sxs-lookup"><span data-stu-id="0d4a8-113">AlternateMailbox (SOAP)</span></span>](alternatemailbox-soap.md) <br/> |<span data-ttu-id="0d4a8-114">Stellt ein alternatives Postfach dar.</span><span class="sxs-lookup"><span data-stu-id="0d4a8-114">Represents an alternate mailbox.</span></span>  <br/> |
+|[<span data-ttu-id="525d3-113">AlternateMailbox (SOAP)</span><span class="sxs-lookup"><span data-stu-id="525d3-113">AlternateMailbox (SOAP)</span></span>](alternatemailbox-soap.md) <br/> |<span data-ttu-id="525d3-114">Stellt ein alternatives Postfach dar.</span><span class="sxs-lookup"><span data-stu-id="525d3-114">Represents an alternate mailbox.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="0d4a8-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="0d4a8-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="525d3-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="525d3-115">Parent elements</span></span>
 
-|<span data-ttu-id="0d4a8-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="0d4a8-116">**Element**</span></span>|<span data-ttu-id="0d4a8-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="0d4a8-117">**Description**</span></span>|
+|<span data-ttu-id="525d3-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="525d3-116">**Element**</span></span>|<span data-ttu-id="525d3-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="525d3-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="0d4a8-118">AlternateMailboxCollectionSetting (SOAP)</span><span class="sxs-lookup"><span data-stu-id="0d4a8-118">AlternateMailboxCollectionSetting (SOAP)</span></span>](alternatemailboxcollectionsetting-soap.md) <br/> |<span data-ttu-id="0d4a8-119">Enthält eine Auflistung von alternativen Postfacheinstellungen.</span><span class="sxs-lookup"><span data-stu-id="0d4a8-119">Contains a collection of alternate mailbox settings.</span></span>  <br/> |
+|[<span data-ttu-id="525d3-118">AlternateMailboxCollectionSetting (SOAP)</span><span class="sxs-lookup"><span data-stu-id="525d3-118">AlternateMailboxCollectionSetting (SOAP)</span></span>](alternatemailboxcollectionsetting-soap.md) <br/> |<span data-ttu-id="525d3-119">Enthält eine Auflistung von alternativen Postfacheinstellungen.</span><span class="sxs-lookup"><span data-stu-id="525d3-119">Contains a collection of alternate mailbox settings.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="0d4a8-120">Textwert</span><span class="sxs-lookup"><span data-stu-id="0d4a8-120">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="525d3-120">Textwert</span><span class="sxs-lookup"><span data-stu-id="525d3-120">Text value</span></span>
 
-<span data-ttu-id="0d4a8-121">Keine.</span><span class="sxs-lookup"><span data-stu-id="0d4a8-121">None.</span></span>
+<span data-ttu-id="525d3-121">Keine.</span><span class="sxs-lookup"><span data-stu-id="525d3-121">None.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="0d4a8-122">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="0d4a8-122">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="525d3-122">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="525d3-122">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="0d4a8-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="0d4a8-123">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|<span data-ttu-id="0d4a8-124">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="0d4a8-124">Schema Name</span></span>  <br/> |<span data-ttu-id="0d4a8-125">Auto Ermittlungs Schema</span><span class="sxs-lookup"><span data-stu-id="0d4a8-125">Autodiscover schema</span></span>  <br/> |
-|<span data-ttu-id="0d4a8-126">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="0d4a8-126">Validation File</span></span>  <br/> |<span data-ttu-id="0d4a8-127">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="0d4a8-127">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="0d4a8-128">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="0d4a8-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="0d4a8-129">True</span><span class="sxs-lookup"><span data-stu-id="0d4a8-129">True</span></span>  <br/> |
+|<span data-ttu-id="525d3-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="525d3-123">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="525d3-124">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="525d3-124">Schema Name</span></span>  <br/> |<span data-ttu-id="525d3-125">Auto Ermittlungs Schema</span><span class="sxs-lookup"><span data-stu-id="525d3-125">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="525d3-126">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="525d3-126">Validation File</span></span>  <br/> |<span data-ttu-id="525d3-127">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="525d3-127">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="525d3-128">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="525d3-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="525d3-129">True</span><span class="sxs-lookup"><span data-stu-id="525d3-129">True</span></span>  <br/> |
    
 

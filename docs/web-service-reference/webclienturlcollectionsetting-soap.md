@@ -13,14 +13,14 @@ ms.openlocfilehash: 5cfa82517ebfa7f6c019ad179fb8b2def8a35265
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44464966"
 ---
-# <a name="webclienturlcollectionsetting-soap"></a><span data-ttu-id="2abab-103">WebClientUrlCollectionSetting (SOAP)</span><span class="sxs-lookup"><span data-stu-id="2abab-103">WebClientUrlCollectionSetting (SOAP)</span></span>
+# <a name="webclienturlcollectionsetting-soap"></a><span data-ttu-id="ffd0f-103">WebClientUrlCollectionSetting (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ffd0f-103">WebClientUrlCollectionSetting (SOAP)</span></span>
 
-<span data-ttu-id="2abab-104">Das [WebClientUrlCollectionSetting (SOAP)](webclienturlcollectionsetting-soap.md) -Element stellt eine Benutzereinstellung dar, bei der es sich um eine Sammlung von Exchange-WebClient-URLs handelt.</span><span class="sxs-lookup"><span data-stu-id="2abab-104">The [WebClientUrlCollectionSetting (SOAP)](webclienturlcollectionsetting-soap.md) element represents a user setting that is a collection of Exchange Web client URLs.</span></span> 
+<span data-ttu-id="ffd0f-104">Das [WebClientUrlCollectionSetting (SOAP)](webclienturlcollectionsetting-soap.md) -Element stellt eine Benutzereinstellung dar, bei der es sich um eine Sammlung von Exchange-WebClient-URLs handelt.</span><span class="sxs-lookup"><span data-stu-id="ffd0f-104">The [WebClientUrlCollectionSetting (SOAP)](webclienturlcollectionsetting-soap.md) element represents a user setting that is a collection of Exchange Web client URLs.</span></span> 
   
-[<span data-ttu-id="2abab-105">WebClientUrlCollectionSetting (SOAP)</span><span class="sxs-lookup"><span data-stu-id="2abab-105">WebClientUrlCollectionSetting (SOAP)</span></span>](webclienturlcollectionsetting-soap.md)
+[<span data-ttu-id="ffd0f-105">WebClientUrlCollectionSetting (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ffd0f-105">WebClientUrlCollectionSetting (SOAP)</span></span>](webclienturlcollectionsetting-soap.md)
   
 ```XML
 <WebClientUrlCollection>
@@ -28,36 +28,36 @@ ms.locfileid: "44464966"
 </WebClientUrlCollection>
 ```
 
- <span data-ttu-id="2abab-106">**WebClientUrlCollectionSetting**</span><span class="sxs-lookup"><span data-stu-id="2abab-106">**WebClientUrlCollectionSetting**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="2abab-107">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="2abab-107">Attributes and elements</span></span>
+ <span data-ttu-id="ffd0f-106">**WebClientUrlCollectionSetting**</span><span class="sxs-lookup"><span data-stu-id="ffd0f-106">**WebClientUrlCollectionSetting**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="ffd0f-107">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="ffd0f-107">Attributes and elements</span></span>
 
-<span data-ttu-id="2abab-108">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="2abab-108">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="ffd0f-108">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="ffd0f-108">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="2abab-109">Attribute</span><span class="sxs-lookup"><span data-stu-id="2abab-109">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="ffd0f-109">Attribute</span><span class="sxs-lookup"><span data-stu-id="ffd0f-109">Attributes</span></span>
 
-<span data-ttu-id="2abab-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="2abab-110">None.</span></span>
+<span data-ttu-id="ffd0f-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="ffd0f-110">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="2abab-111">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="2abab-111">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="ffd0f-111">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="ffd0f-111">Child elements</span></span>
 
-|<span data-ttu-id="2abab-112">**Element**</span><span class="sxs-lookup"><span data-stu-id="2abab-112">**Element**</span></span>|<span data-ttu-id="2abab-113">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="2abab-113">**Description**</span></span>|
+|<span data-ttu-id="ffd0f-112">**Element**</span><span class="sxs-lookup"><span data-stu-id="ffd0f-112">**Element**</span></span>|<span data-ttu-id="ffd0f-113">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="ffd0f-113">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="2abab-114">WebClientUrl (SOAP)</span><span class="sxs-lookup"><span data-stu-id="2abab-114">WebClientUrl (SOAP)</span></span>](webclienturl-soap.md) <br/> |<span data-ttu-id="2abab-115">Stellt die URL eines Exchange-Webclients dar.</span><span class="sxs-lookup"><span data-stu-id="2abab-115">Represents the URL of an Exchange Web client.</span></span>  <br/> |
+|[<span data-ttu-id="ffd0f-114">WebClientUrl (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ffd0f-114">WebClientUrl (SOAP)</span></span>](webclienturl-soap.md) <br/> |<span data-ttu-id="ffd0f-115">Stellt die URL eines Exchange-Webclients dar.</span><span class="sxs-lookup"><span data-stu-id="ffd0f-115">Represents the URL of an Exchange Web client.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="2abab-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="2abab-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="ffd0f-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="ffd0f-116">Parent elements</span></span>
 
-<span data-ttu-id="2abab-117">Keine.</span><span class="sxs-lookup"><span data-stu-id="2abab-117">None.</span></span>
+<span data-ttu-id="ffd0f-117">Keine.</span><span class="sxs-lookup"><span data-stu-id="ffd0f-117">None.</span></span>
   
-## <a name="text-value"></a><span data-ttu-id="2abab-118">Textwert</span><span class="sxs-lookup"><span data-stu-id="2abab-118">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="ffd0f-118">Textwert</span><span class="sxs-lookup"><span data-stu-id="ffd0f-118">Text value</span></span>
 
-<span data-ttu-id="2abab-119">Keine.</span><span class="sxs-lookup"><span data-stu-id="2abab-119">None.</span></span>
+<span data-ttu-id="ffd0f-119">Keine.</span><span class="sxs-lookup"><span data-stu-id="ffd0f-119">None.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="2abab-120">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="2abab-120">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="ffd0f-120">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="ffd0f-120">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="2abab-121">Namespace</span><span class="sxs-lookup"><span data-stu-id="2abab-121">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|<span data-ttu-id="2abab-122">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="2abab-122">Schema Name</span></span>  <br/> |<span data-ttu-id="2abab-123">Auto Ermittlungs Schema</span><span class="sxs-lookup"><span data-stu-id="2abab-123">Autodiscover schema</span></span>  <br/> |
-|<span data-ttu-id="2abab-124">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="2abab-124">Validation File</span></span>  <br/> |<span data-ttu-id="2abab-125">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="2abab-125">messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="2abab-126">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="2abab-126">Can be Empty</span></span>  <br/> |<span data-ttu-id="2abab-127">True</span><span class="sxs-lookup"><span data-stu-id="2abab-127">True</span></span>  <br/> |
+|<span data-ttu-id="ffd0f-121">Namespace</span><span class="sxs-lookup"><span data-stu-id="ffd0f-121">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="ffd0f-122">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="ffd0f-122">Schema Name</span></span>  <br/> |<span data-ttu-id="ffd0f-123">Auto Ermittlungs Schema</span><span class="sxs-lookup"><span data-stu-id="ffd0f-123">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="ffd0f-124">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="ffd0f-124">Validation File</span></span>  <br/> |<span data-ttu-id="ffd0f-125">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="ffd0f-125">messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="ffd0f-126">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="ffd0f-126">Can be Empty</span></span>  <br/> |<span data-ttu-id="ffd0f-127">True</span><span class="sxs-lookup"><span data-stu-id="ffd0f-127">True</span></span>  <br/> |
    
 
