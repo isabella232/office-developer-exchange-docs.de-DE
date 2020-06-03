@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5c9c89b5-4ce8-437b-a332-fa7ed35c8388
-description: Das RecurringMasterItemIdRanges-Element gibt ein Array von Bereichen vorkommen.
-ms.openlocfilehash: 60d987f475bed5d630a1238550e4d14578ebd0d5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das RecurringMasterItemIdRanges-Element gibt ein Array von Ereignis Bereichen an.
+ms.openlocfilehash: 784676844c5c58c65b8cc6177843bf26d351b7d9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831016"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528755"
 ---
 # <a name="recurringmasteritemidranges"></a>RecurringMasterItemIdRanges
 
-Das **RecurringMasterItemIdRanges** -Element gibt ein Array von Bereichen vorkommen. 
+Das **RecurringMasterItemIdRanges** -Element gibt ein Array von Ereignis Bereichen an. 
   
 ```XML
 <RecurringMasterItemIdRanges Id="" ChangeKey="">
@@ -34,8 +34,8 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Id** <br/> |Der Textwert des **Id** -Attributs ist Eindeutiger Bezeichner für ein wiederkehrendes master-Objekt. Dies ist ein **String** -Wert.  <br/> |
-|**ChangeKey** <br/> |Der Textwert des Attributs **ChangeKey** ist der wiederkehrenden master Schlüssel des Elements ändern. Dies ist ein **String** -Wert.  <br/> |
+|**Id** <br/> |Der Textwert des **ID-** Attributs ist die eindeutige ID eines wiederkehrenden Hauptelements. Dies ist ein **String** -Wert.  <br/> |
+|**ChangeKey** <br/> |Der Textwert des **ChangeKey** -Attributs ist der Änderungsschlüssel des wiederkehrenden Hauptelements. Dies ist ein **String** -Wert.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -43,19 +43,19 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Artikelnummern ein.](itemids.md) | [GlobalItemIds](globalitemids.md) | [DraftItemIds](draftitemids.md) | [ContactIds](contactids.md) | [GroupIds](groupids.md)
+[Itemids](itemids.md)  |  [GlobalItemIds](globalitemids.md)  |  [DraftItemIds](draftitemids.md)  |  [ContactIds](contactids.md) Die  |  [GroupIds](groupids.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> ||

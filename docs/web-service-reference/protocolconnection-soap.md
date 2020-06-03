@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 6eef2188-6194-48f1-ad7e-46104aecdf56
-description: Das Element ProtocolConnection stellt die Protokoll Verbindung des Webclients Server dar.
-ms.openlocfilehash: 8b5396821cd959e41d24fcf7a94c519f9c634a1f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ProtocolConnection-Element stellt die Protokollverbindung des Server-Webclients dar.
+ms.openlocfilehash: b9df3febe36db53d7c5bf0610ba857f13aa96abc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830915"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528860"
 ---
 # <a name="protocolconnection-soap"></a>ProtocolConnection (SOAP)
 
-Das Element **ProtocolConnection** stellt die Protokoll Verbindung des Webclients Server dar. 
+Das **ProtocolConnection** -Element stellt die Protokollverbindung des Server-Webclients dar. 
   
 ```XML
 <ProtocolConnection>
@@ -41,27 +41,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Hostname (SOAP)](hostname-soap.md) <br/> |Stellt die Hostnamenkomponente des den vollständigen Namen des Computers an.  <br/> |
-|[Port (SOAP)](port-soap.md) <br/> |Stellt die Portnummer an, die für das Protokoll verwendet.  <br/> |
-|[EncryptionMethod (SOAP)](encryptionmethod-soap.md) <br/> |Stellt die kryptografische-Methode, die für die POP-, IMAP- und SMTP-Protokolle verwendet wird.  <br/> |
+|[Hostname (SOAP)](hostname-soap.md) <br/> |Stellt den Hostnamensteil des vollständigen Computernamens des Computers dar.  <br/> |
+|[Port (SOAP)](port-soap.md) <br/> |Stellt die Portnummer dar, die für das Protokoll verwendet werden soll.  <br/> |
+|[EncryptionMethod (SOAP)](encryptionmethod-soap.md) <br/> |Stellt die kryptografische Methode dar, die für die Protokolle Pop, IMAP und SMTP verwendet wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ProtocolConnections (SOAP)](protocolconnections-soap.md) <br/> |Enthält null oder mehr Protocol-Verbindungen.  <br/> |
+|[ProtocolConnections (SOAP)](protocolconnections-soap.md) <br/> |Enthält NULL oder mehr Protokoll Verbindungen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

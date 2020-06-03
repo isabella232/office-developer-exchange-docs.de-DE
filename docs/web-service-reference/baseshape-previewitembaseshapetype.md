@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7b9e2fdd-5678-4178-9297-7f12a3ca9d64
-description: Das BaseShape-Element gibt die Standard-Vorschau mit allen Eigenschaften zurückgegeben oder eine kompakte Vorschau mit weniger Eigenschaften zurückgegeben.
-ms.openlocfilehash: 1f060ae9adf52cc2916a634e3d954e3fc0903941
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das BaseShape-Element gibt entweder die Standardvorschau mit allen zurückgegebenen Eigenschaften oder eine kompakte Vorschau mit weniger zurückgegebenen Eigenschaften an.
+ms.openlocfilehash: 29f008840d649f97dfb299fee8e7bf5aaa573404
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757433"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527418"
 ---
 # <a name="baseshape-previewitembaseshapetype"></a>BaseShape (PreviewItemBaseShapeType)
 
-Das **BaseShape** -Element gibt die Standard-Vorschau mit allen Eigenschaften zurückgegeben oder eine kompakte Vorschau mit weniger Eigenschaften zurückgegeben. 
+Das **BaseShape** -Element gibt entweder die Standardvorschau mit allen zurückgegebenen Eigenschaften oder eine kompakte Vorschau mit weniger zurückgegebenen Eigenschaften an. 
   
 ```XML
 <BaseShape> Default | Compact</BaseShape>
@@ -40,30 +40,30 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PreviewItemResponseShape](previewitemresponseshape.md) <br/> |Die Form der Antwort enthält.  <br/> |
+|[PreviewItemResponseShape](previewitemresponseshape.md) <br/> |Enthält die Form der Antwort.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-**Text-Elementwerte BaseShape**
+**BaseShape-Element Text Werte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |Standard  <br/> |Gibt an, dass alle Eigenschaften angezeigt werden.  <br/> |
-|Komprimieren  <br/> |Gibt an, dass nur ausgewählte Eigenschaften angezeigt werden.  <br/> |
+|Kompakt  <br/> |Gibt an, dass nur ausgewählte Eigenschaften angezeigt werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

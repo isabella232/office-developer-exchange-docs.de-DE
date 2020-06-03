@@ -1,31 +1,31 @@
 ---
-title: Löschen der Termine in einer Terminserie mithilfe der EWS in Exchange
+title: Löschen von Terminen in einer Terminserie mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a9d5244a-bc4a-4e9c-9c6c-ff361e04cbf8
-description: Erfahren Sie, wie Termine in einer Terminserie löschen, indem Sie die EWS Managed API oder EWS in Exchange.
-ms.openlocfilehash: 5e4d95058808adf8db159000bdf90c1f92945338
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: In diesem Artikel erfahren Sie, wie Sie Termine in einer Terminserie mithilfe der verwaltete EWS-API oder EWS in Exchange löschen.
+ms.openlocfilehash: 5646a30d218ed4d795044aefe5efea1399d19a79
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756902"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528125"
 ---
-# <a name="delete-appointments-in-a-recurring-series-by-using-ews-in-exchange"></a>Löschen der Termine in einer Terminserie mithilfe der EWS in Exchange
+# <a name="delete-appointments-in-a-recurring-series-by-using-ews-in-exchange"></a>Löschen von Terminen in einer Terminserie mithilfe von EWS in Exchange
 
-Erfahren Sie, wie Termine in einer Terminserie löschen, indem Sie die EWS Managed API oder EWS in Exchange.
+In diesem Artikel erfahren Sie, wie Sie Termine in einer Terminserie mithilfe der verwaltete EWS-API oder EWS in Exchange löschen.
   
-Der EWS Managed API oder EWS können Sie eine Reihe von Terminen oder Besprechungen oder nur eine Instanz in der Datenreihe löschen. Der Prozess, mit denen Sie eine gesamte Datenreihe gelöscht ist im Wesentlichen identisch mit den Prozess, mit denen Sie nur ein einzelnes Element löschen. Sie verwenden die gleichen EWS Managed API-Methoden oder EWS-Vorgänge, die Sie, um [eine einzelne Instanz Termin oder eine Besprechung zu löschen verwenden](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md). Der Unterschied liegt in der Element-ID, die in der Methode oder der Vorgang enthalten ist. Zunächst betrachten, wie beide Szenarien identisch sind. 
+Sie können die verwaltete EWS-API oder EWS verwenden, um eine Reihe von Terminen oder Besprechungen oder nur eine Instanz in der Datenreihe zu löschen. Der Vorgang, den Sie zum Löschen einer ganzen Datenreihe verwenden, ist im Wesentlichen identisch mit dem Vorgang, den Sie zum Löschen eines einzelnen Exemplars verwenden. Sie verwenden dieselben verwaltete EWS-API Methoden oder EWS-Vorgänge, die Sie zum [Löschen eines Termins oder einer Besprechung einer einzelnen Instanz](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)verwenden. Der Unterschied besteht in der Element-ID, die in der Methode oder dem Vorgang enthalten ist. Zunächst sehen wir uns an, wie beide Szenarien identisch sind. 
   
-Um eine Terminserie oder ein einzelnes Element in einer Terminserie löschen möchten, müssen Sie hier finden das Vorkommen oder die Serie, die Sie löschen möchten, und rufen Sie dann die entsprechende Methode oder der Vorgang zu entfernen. Während Sie einfach eine Art von Termin löschen können, wird empfohlen, alle Teilnehmer oder der Organisator auf dem aktuellen Stand halten und Besprechungen, die der Benutzer organisiert hat abzubrechen und Ablehnen von Besprechungen, die der Benutzer nicht organisiert.
+Wenn Sie eine wiederkehrende Datenreihe oder ein einzelnes Vorkommen in einer Terminserie löschen möchten, müssen Sie das zu löschende vorkommen oder die zu löschende Datenreihe suchen und dann die entsprechende Methode oder den entsprechenden Vorgang aufrufen, um Sie zu entfernen. Sie können zwar einfach jede Art von Termin löschen, es wird jedoch empfohlen, dass Sie alle Teilnehmer oder Organisatoren auf dem neuesten Stand halten und Besprechungen kündigen, die der Benutzer organisiert hat, und Besprechungen ablehnen, die der Benutzer nicht organisiert hat.
   
-So unterscheiden sich wie die Szenarien? Es ist alles über [Appointment](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) -Objekts verwendet, um die-Methode (für die EWS Managed API) oder die Element-ID aufzurufen in die Operation Anforderung (EWS) enthalten. Um eine gesamte Datenreihe zu löschen, benötigen Sie die **Appointment** -Objekt oder Element-ID für das wiederkehrende Master-Shape. Um ein einzelnes Vorkommen löschen möchten, benötigen Sie die **Appointment** -Objekt oder Element-ID für das Vorkommen. 
+Wie unterscheiden sich die Szenarien? Es geht um das [Termin](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) Objekt, mit dem die Methode (für das verwaltete EWS-API) oder die in der Vorgangsanforderung enthaltene Element-ID (für EWS) aufgerufen wird. Zum Löschen einer ganzen Datenreihe benötigen Sie das **Termin** Objekt oder die Element-ID für den wiederkehrenden Master. Zum Löschen eines einzelnen Exemplars benötigen Sie das **Termin** Objekt oder die Element-ID für das vorkommen. 
   
-## <a name="delete-a-recurring-appointment-by-using-the-ews-managed-api"></a>Löschen einer Terminserie mithilfe der EWS Managed API
+## <a name="delete-a-recurring-appointment-by-using-the-ews-managed-api"></a>Löschen einer Terminserie mithilfe der verwaltete EWS-API
 
-In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben. Der Parameter _RecurringItem_ ist ein **Termin** -Objekt für das wiederkehrende Master-Shape oder ein einzelnes Vorkommen. Der Parameter _DeleteEntireSeries_ gibt an, ob die gesamte Datenreihe gelöscht, denen die _RecurringItem_ gehört. 
+In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben. Der _recurringItem_ -Parameter ist ein **Termin** Objekt für den wiederkehrenden Master oder ein einzelnes vorkommen. Der Parameter _deleteEntireSeries_ gibt an, ob die gesamte Datenreihe gelöscht werden soll, in der das _recurringItem_ -Element enthalten ist. 
   
 ```cs
 public static bool DeleteRecurringItem(ExchangeService service, Appointment recurringItem, bool deleteEntireSeries)
@@ -114,23 +114,23 @@ public static bool DeleteRecurringItem(ExchangeService service, Appointment recu
 }
 ```
 
-Um dieses Beispiel zu verwenden, um eine [Bindung an das Auftreten eines Serientermins oder wiederkehrenden Master](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)müssen und resultierenden **Appointment** -Objekts an die-Methode übergeben. Beachten Sie, dass wenn Sie Termine mithilfe einer [CalendarView](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) -Klasse zugreifen, die resultierenden Elemente alle einzelnen Vorkommen werden beibehalten. Wenn Sie die [aufrufenArtikel aufrufen](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.itemview%28v=exchg.80%29.aspx) -Klasse verwenden, sind die resultierenden Elemente dagegen alle wiederkehrenden Master-Shapes. 
+Um dieses Beispiel verwenden zu können, müssen Sie an [ein vorkommen oder den wiederkehrenden Master binden](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)und das resultierende **Termin** Objekt an die Methode übergeben. Beachten Sie, dass beim Zugriff auf Termine mithilfe einer [CalendarView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) -Klasse die resultierenden Elemente alle einzelnen Vorkommen sind. Wenn Sie die [ItemView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemview%28v=exchg.80%29.aspx) -Klasse verwenden, sind die resultierenden Elemente umgekehrt alle wiederkehrenden Master. 
   
-## <a name="delete-a-recurring-appointment-by-using-ews"></a>Löschen einer Terminserie mithilfe der Exchange-Webdienste
+## <a name="delete-a-recurring-appointment-by-using-ews"></a>Löschen einer Terminserie mithilfe von EWS
 
-Löschen einer Terminserie mit dem Exchange-Webdienste ist gleichbedeutend mit dem [Löschen einer Besprechung Einzel-Instanz](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md). Die SOAP-Anforderungen können Sie sogar das gleiche Format in Anspruch nehmen. In diesem Fall ist der Schlüssel die Element-ID in der Anforderung verwendet. Wenn das wiederkehrende Master-Shape die Element-ID entspricht, wird die gesamte Datenreihe gelöscht. Wenn ein einzelnes Vorkommen die Element-ID entspricht, wird nur dieses auftreten gelöscht werden.
+Das Löschen einer Terminserie mithilfe von EWS entspricht dem [Löschen einer Besprechung mit einer Einzelinstanz](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md). Tatsächlich nehmen die SOAP-Anforderungen dasselbe Format an. Der Schlüssel ist wiederum die Element-ID, die in der Anforderung verwendet wird. Wenn die Element-ID dem wiederkehrenden Master entspricht, wird die gesamte Datenreihe gelöscht. Wenn die Element-ID einem einzelnen Vorkommen entspricht, wird nur dieses vorkommen gelöscht.
   
 > [!NOTE]
-> In den folgenden Codebeispielen, werden die Attribute **ItemId**, **ChangeKey**und **RecurringMasterId** zur besseren Lesbarkeit gekürzt. 
+> In den folgenden Codebeispielen werden die Attribute **ItemID**, **ChangeKey**und **RecurringMasterId** zur Lesbarkeit gekürzt. 
   
-In diesem Beispiel wird die [CreateItem-Vorgang](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) mit einem [CancelCalendarItem](http://msdn.microsoft.com/library/a2046402-a176-44d5-b4b3-adb696581935%28Office.15%29.aspx) -Element eine Besprechung absagen, bei der der Benutzer der Organisator ist. Der Wert des [ReferenceItemId](http://msdn.microsoft.com/library/8fd4bb12-a94b-43f5-be3b-f435684e311d%28Office.15%29.aspx) -Elements gibt an, das Element um abzubrechen, und die Element-ID ein wiederkehrendes Master-Shape oder ein einzelnes Vorkommen werden kann. 
+In diesem Beispiel wird der [CreateItem-Vorgang](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) mit einem [CancelCalendarItem](https://msdn.microsoft.com/library/a2046402-a176-44d5-b4b3-adb696581935%28Office.15%29.aspx) -Element verwendet, um eine Besprechung abzubrechen, für die der Benutzer der Organisator ist. Der Wert des [ReferenceItemId](https://msdn.microsoft.com/library/8fd4bb12-a94b-43f5-be3b-f435684e311d%28Office.15%29.aspx) -Elements gibt das Element an, das abgebrochen werden soll, und kann die Element-ID eines wiederkehrenden Masters oder eines einzelnen Exemplars sein. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -150,14 +150,14 @@ In diesem Beispiel wird die [CreateItem-Vorgang](http://msdn.microsoft.com/libra
 </soap:Envelope>
 ```
 
-In diesem Beispiel wird die **CreateItem-Vorgang** mit einem Element [DeclineItem](http://msdn.microsoft.com/library/2d8d2389-924e-4d03-a324-35d56cf0d6b1%28Office.15%29.aspx) ablehnen eine Besprechung, für die der Benutzer nicht der Organisator ist. Wie im vorherigen Beispiel wird der Wert des **ReferenceItemId** -Elements gibt das Element an ablehnen möchten, und die Element-ID ein wiederkehrendes Master-Shape oder ein einzelnes Vorkommen werden kann. 
+In diesem Beispiel wird der **CreateItem-Vorgang** mit einem [DeclineItem](https://msdn.microsoft.com/library/2d8d2389-924e-4d03-a324-35d56cf0d6b1%28Office.15%29.aspx) -Element verwendet, um eine Besprechung abzulehnen, für die der Benutzer nicht der Organisator ist. Wie im vorherigen Beispiel gibt der Wert des **ReferenceItemId** -Elements das Element an, das abgelehnt werden soll, und kann die Element-ID eines wiederkehrenden Masters oder eines einzelnen Exemplars sein. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -176,14 +176,14 @@ In diesem Beispiel wird die **CreateItem-Vorgang** mit einem Element [DeclineIte
 </soap:Envelope>
 ```
 
-In diesem Beispiel wird mit der [DeleteItem Vorgang](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) ein einzelnes Vorkommen eines Termins ohne Teilnehmer gelöscht. Das Vorkommen löschen wird durch das [OccurrenceItemId](http://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) -Element angegeben, der aus der Element-ID des wiederkehrenden Master-Shapes und der Index des Vorkommens erstellt wird. 
+In diesem Beispiel wird der [DeleteItem-Vorgang](https://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) verwendet, um ein einzelnes Vorkommen eines Termins ohne Teilnehmer zu löschen. Das zu löschende vorkommen wird durch das [OccurrenceItemId](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) -Element angegeben, das aus der Element-ID des wiederkehrenden Master-Objekts und dem Index des Vorkommens erstellt wird. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -200,7 +200,7 @@ In diesem Beispiel wird mit der [DeleteItem Vorgang](http://msdn.microsoft.com/l
 </soap:Envelope>
 ```
 
-Beachten Sie, dass Sie dasselbe Ergebnis abrufen können, indem das **OccurrenceItemId** -Element durch ein [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) -Element, das die Element-ID das Vorkommen enthält (siehe) ersetzt. 
+Beachten Sie, dass Sie dasselbe Ergebnis erhalten können, indem Sie das **OccurrenceItemId** -Element durch ein [ItemID](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) -Element ersetzen, das die Element-ID des Vorkommens enthält (siehe Abbildung). 
   
 ```XML
 <m:ItemIds>
@@ -214,18 +214,18 @@ Beachten Sie, dass Sie dasselbe Ergebnis abrufen können, indem das **Occurrence
 
 - [Serienmuster und EWS](recurrence-patterns-and-ews.md)
     
-- [Zugriff auf eine Terminserie mithilfe von EWS in Exchange](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)
+- [Zugreifen auf eine Terminserie mithilfe von EWS in Exchange](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Erstellen einer Terminserie mithilfe der EWS in Exchange](how-to-create-a-recurring-series-by-using-ews-in-exchange.md)
+- [Erstellen einer Terminserie mithilfe von EWS in Exchange](how-to-create-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Aktualisieren einer Terminserie mithilfe der Exchange-Webdienste](how-to-update-a-recurring-series-by-using-ews.md)
+- [Aktualisieren einer Terminserie mithilfe von EWS](how-to-update-a-recurring-series-by-using-ews.md)
     
-- [Aktualisieren einer Terminserie mithilfe der EWS in Exchange](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
+- [Aktualisieren einer Terminserie mithilfe von EWS in Exchange](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
     
 - [Kalender und EWS in Exchange](calendars-and-ews-in-exchange.md)
     
 - [Erstellen von Terminen und Besprechungen mithilfe von EWS in Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
     
-- [Löschen von Terminen und Abbrechen an Besprechungen mithilfe von EWS in Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
+- [Löschen von Terminen und Absagen von Besprechungen mithilfe von EWS in Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
     
 

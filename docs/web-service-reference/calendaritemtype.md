@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1feb0788-adf7-4a7c-830c-005214ad930f
-description: Das CalendarItemType-Element darstellt den Typ des ein Kalenderelement.
-ms.openlocfilehash: 3fe95c86ea24e6dfeb4740ead5e787bd63b5190d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das CalendarItemType-Element stellt den Typ eines Kalenderelements dar.
+ms.openlocfilehash: 05e93b6db3ae574c03f6e43c5ebec2288edec3e5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757531"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527194"
 ---
 # <a name="calendaritemtype"></a>CalendarItemType
 
-Das **CalendarItemType** -Element darstellt den Typ des ein Kalenderelement. 
+Das **CalendarItemType** -Element stellt den Typ eines Kalenderelements dar. 
   
 ```xml
 <CalendarItemType/>
@@ -49,25 +49,25 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich, wenn dieses Element verwendet wird. Es folgen die möglichen Werte für dieses Element:
+Wenn dieses Element verwendet wird, ist ein Textwert erforderlich. Im folgenden sind die möglichen Werte für dieses Element angegeben:
   
-- **Einzelne** Das Element ist kein wiederkehrendes Kalenderelement zugeordnet. 
+- **Einzelperson** Das Element ist keinem wiederkehrenden Kalenderelement zugeordnet. 
     
-- **Vorkommen** Das Element ist ein Vorkommen eines sich wiederholenden Kalenderelements an. 
+- **Vorkommen** Das Element ist ein Vorkommen eines wiederkehrenden Kalenderelements. 
     
-- **Ausnahme** Das Element ist eine Ausnahme in ein wiederkehrendes Kalenderelement. 
+- **Ausnahme** Das Element ist eine Ausnahme für ein wiederkehrendes Kalenderelement. 
     
-- **RecurringMaster** Das Element ist für eine Reihe von wiederkehrende Kalenderelemente master. 
+- **RecurringMaster** Das Element ist Master für eine Reihe Wiederkehr ender Kalenderelemente. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

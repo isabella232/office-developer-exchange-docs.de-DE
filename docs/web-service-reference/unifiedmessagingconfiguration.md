@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cbdb4268-077e-44ed-8ec2-9d759c84cc6d
-description: Das UnifiedMessagingConfiguration-Element enthält Webdienst-Konfigurationsinformationen für die Unified Messaging-Dienst.
-ms.openlocfilehash: 3ad8f66ecdf21062c00c2a6ac6f65fac875da38c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UnifiedMessagingConfiguration-Element enthält Dienstkonfigurationsinformationen für den Unified Messaging-Dienst.
+ms.openlocfilehash: 3f9f4ed65721929c552615c07e2239f48ef837f3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839293"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528692"
 ---
 # <a name="unifiedmessagingconfiguration"></a>UnifiedMessagingConfiguration
 
-Das **UnifiedMessagingConfiguration** -Element enthält Webdienst-Konfigurationsinformationen für die Unified Messaging-Dienst. 
+Das **UnifiedMessagingConfiguration** -Element enthält Dienstkonfigurationsinformationen für den Unified Messaging-Dienst. 
   
 ```XML
 <UnifiedMessagingConfiguration>
@@ -44,31 +44,31 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UmEnabled](umenabled.md) <br/> |Gibt an, ob für ein Konto Unified Messaging aktiviert ist. Dieses Element ist erforderlich.  <br/> |
-|[PlayOnPhoneDialString (Exchange Web Services)](playonphonedialstring-exchange-web-services.md) <br/> |Gibt die Wiedergabe über Telefon DFÜ-Zeichenfolge. Dieses Element ist erforderlich.  <br/> |
-|[PlayOnPhoneEnabled](playonphoneenabled.md) <br/> |Gibt an, ob das Wiedergabe über Telefon-Feature aktiviert ist. Dieses Element ist erforderlich.  <br/> |
+|[UmEnabled](umenabled.md) <br/> |Gibt an, ob Unified Messaging für ein Konto aktiviert ist. Dieses Element ist erforderlich.  <br/> |
+|[PlayOnPhoneDialString (Exchange Webdienste)](playonphonedialstring-exchange-web-services.md) <br/> |Identifiziert die Wählzeichenfolge für die Wiedergabe bei anrufen. Dieses Element ist erforderlich.  <br/> |
+|[PlayOnPhoneEnabled](playonphoneenabled.md) <br/> |Gibt an, ob die Funktion "Wiedergabe-Telefon" aktiviert ist. Dieses Element ist erforderlich.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |Konfigurationseinstellungen für enthält.  <br/> |
+|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |Enthält Dienst Konfigurationseinstellungen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

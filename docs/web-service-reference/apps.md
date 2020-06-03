@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f6f0a2ca-22dd-4789-9eed-f0c1ec9036c4
-description: Das Apps-Element enthält Informationen über alle XML-Manifestdateien für apps in einem Postfach installiert.
-ms.openlocfilehash: 81b0cb76b02fcc9145f6d70eff12a0a0ac0ad51f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Apps-Element enthält Informationen zu allen XML-Manifestdateien für apps, die in einem Postfach installiert sind.
+ms.openlocfilehash: b2d6f13241f68cbed449a9f9821f9a6ec6ff687a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757368"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527446"
 ---
 # <a name="apps"></a>Apps
 
-Das **Apps** -Element enthält Informationen über alle XML-Manifestdateien für apps in einem Postfach installiert. 
+Das **apps** -Element enthält Informationen zu allen XML-Manifestdateien für apps, die in einem Postfach installiert sind. 
   
 ```XML
 <Apps>
@@ -41,17 +41,17 @@ Keine.
 
 [GetAppManifestsResponse](getappmanifestsresponse.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
 |Überprüfungsdatei  <br/> |Nicht zutreffend  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

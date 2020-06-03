@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f99e9590-8388-4203-ac30-1ea394f351a6
-description: Das BodyContentAttributedValue-Element gibt den Textkörperinhalt eines Elements an.
-ms.openlocfilehash: f5b8f0a19b77ce550b1d7f1c415cc8ee4340863a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das BodyContentAttributedValue-Element gibt den Textkörper Inhalt eines Elements an.
+ms.openlocfilehash: 3550d9307e9bd652afc217f72610379a0a5b2f68
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757482"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527397"
 ---
 # <a name="bodycontentattributedvalue"></a>BodyContentAttributedValue
 
-Das **BodyContentAttributedValue** -Element gibt den Textkörperinhalt eines Elements an. 
+Das **BodyContentAttributedValue** -Element gibt den Textkörper Inhalt eines Elements an. 
   
 ```XML
 <BodyContentAttributedValue>
@@ -39,28 +39,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Wert (BodyContentType)](value-bodycontenttype.md) <br/> |Gibt den Wert eines **BodyContentAttributedValue** -Elements.  <br/> |
-|[Hinweise (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md) <br/> |Gibt ein Array von Informationen für eine oder mehrere Kontakte oder active Directory-Empfänger in der zugeordneten Rolle aggregiert.  <br/> |
+|[Wert (BodyContentType)](value-bodycontenttype.md) <br/> |Gibt den Wert eines **BodyContentAttributedValue** -Elements an.  <br/> |
+|[Zuordnungen (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md) <br/> |Gibt ein Array mit Zuordnungsinformationen für einen oder mehrere der Kontakte oder Active Directory-Empfänger an, die in der zugeordneten Rolle aggregiert sind.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Texte](bodies.md) <br/> |Gibt ein Array von **BodyContentAttributedValue** -Elementen.  <br/> |
+|[Text](bodies.md) <br/> |Gibt ein Array von **BodyContentAttributedValue** -Elementen an.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

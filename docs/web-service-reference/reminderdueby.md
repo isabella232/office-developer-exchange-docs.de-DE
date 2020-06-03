@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e28a0485-86af-4a4e-a2ba-3ad2d4ebff6f
-description: Das ReminderDueBy-Element darstellt, das Datum und die Uhrzeit bei des Ereignisses eintreten. Dies wird durch die ReminderMinutesBeforeStart-Element verwendet, um zu bestimmen, wann die Erinnerung angezeigt wird.
-ms.openlocfilehash: cff8142958108635dd9dfaec425af135dee2f2eb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ReminderDueBy-Element stellt das Datum und die Uhrzeit des Eintretens des Ereignisses dar. Dies wird vom ReminderMinutesBeforeStart-Element verwendet, um zu bestimmen, wann die Erinnerung angezeigt wird.
+ms.openlocfilehash: 206534da4498e871e99635b236e500dec573eb5a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831061"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528727"
 ---
 # <a name="reminderdueby"></a>ReminderDueBy
 
-Das **ReminderDueBy** -Element darstellt, das Datum und die Uhrzeit bei des Ereignisses eintreten. Dies wird durch die [ReminderMinutesBeforeStart](reminderminutesbeforestart.md) -Element verwendet, um zu bestimmen, wann die Erinnerung angezeigt wird. 
+Das **ReminderDueBy** -Element stellt das Datum und die Uhrzeit des Eintretens des Ereignisses dar. Dies wird vom [ReminderMinutesBeforeStart](reminderminutesbeforestart.md) -Element verwendet, um zu bestimmen, wann die Erinnerung angezeigt wird. 
   
 ```xml
 <ReminderDueBy/>
@@ -58,17 +58,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt Datum und Uhrzeit, wenn eine Erinnerung fällig wird.
+Der Textwert stellt das Datum und die Uhrzeit der Fälligkeit einer Erinnerung dar.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 74456709-1250-4943-bae0-11a3db44a684
-description: Das PreviousHopServer-Element darstellt, den vorherigen Servernamen, der die Nachricht akzeptiert.
-ms.openlocfilehash: d9641fdba3b7ef5b487139074c8e475edec9e74c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PreviousHopServer-Element stellt den vorherigen Servernamen dar, der die Nachricht akzeptiert hat.
+ms.openlocfilehash: f85896107c720179d76e0cbeb31588e17c1f3d95
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830879"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528879"
 ---
 # <a name="previoushopserver"></a>PreviousHopServer
 
-Das **PreviousHopServer** -Element darstellt, den vorherigen Servernamen, der die Nachricht akzeptiert. 
+Das **PreviousHopServer** -Element stellt den vorherigen Servernamen dar, der die Nachricht akzeptiert hat. 
   
 ```XML
 <PreviousHopServer/>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Ein einzelnes Nachricht Ergebnis für ein [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) -Element enthält.  <br/> |
+|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Enthält ein einzelnes Nachrichten Ergebnis für ein [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) -Element.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert, der eine Zeichenfolge darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

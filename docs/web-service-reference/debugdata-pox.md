@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: bf614551-f5b0-4f80-bdac-628f685faee9
-description: Das DebugData-Element enthält die Debugdaten für eine Fehlerantwort AutoErmittlung.
-ms.openlocfilehash: 84e171333e1d4d54928834915c088e486e4cfe8a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DebugData-Element enthält die Debugdaten für eine Auto Ermittlungsfehler Antwort.
+ms.openlocfilehash: 79b5f4d3fa1379b7052dcd03053bc8bac6430017
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757886"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526949"
 ---
 # <a name="debugdata-pox"></a>DebugData (POX)
 
-Das **DebugData** -Element enthält die Debugdaten für eine Fehlerantwort AutoErmittlung. 
+Das **DebugData** -Element enthält die Debugdaten für eine Auto Ermittlungsfehler Antwort. 
   
 - [Fehler (POX)](error-pox.md) 
 - [DebugData (POX)](debugdata-pox.md)
@@ -43,11 +43,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Fehler (POX)](error-pox.md) <br/> |Enthält eine Fehlerantwort AutoErmittlung an.  <br/> |
+|[Fehler (POX)](error-pox.md) <br/> |Enthält eine AutoErmittlung-Fehlerantwort.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt die Debugdaten für eine Fehlerantwort AutoErmittlung.
+Der Textwert stellt die Debugdaten für eine Auto Ermittlungsfehler Antwort dar.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e61154f7-d262-43ec-b2bf-1ba6804b28dc
-description: Das Element NumberOfMembersWithConflict stellt die Anzahl der Mitglieder der Verteilerliste, die einen Konflikt mit einer vorgeschlagenen Besprechungszeit haben. Dieses Element stellt Mitglieder, die den Status beschäftigt, ABWESEND oder mit Vorbehalt aufweisen.
-ms.openlocfilehash: 227783b4bed32686e8e098f88498fe8ebb25e3cc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das NumberOfMembersWithConflict-Element stellt die Anzahl der Verteilerlistenmitglieder dar, die einen Konflikt mit einer vorgeschlagenen Besprechungszeit haben. Dieses Element stellt Elemente dar, die den Status "beschäftigt", "OOF" oder "vorläufig" aufweisen.
+ms.openlocfilehash: 3ed81fc8adece140e8a94b08a9c2d94c2d9787c9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830634"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529035"
 ---
 # <a name="numberofmemberswithconflict"></a>NumberOfMembersWithConflict
 
-Das Element **NumberOfMembersWithConflict** stellt die Anzahl der Mitglieder der Verteilerliste, die einen Konflikt mit einer vorgeschlagenen Besprechungszeit haben. Dieses Element stellt Mitglieder, die den Status **beschäftigt**, **ABWESEND**oder **mit Vorbehalt**aufweisen.
+Das **NumberOfMembersWithConflict** -Element stellt die Anzahl der Verteilerlistenmitglieder dar, die einen Konflikt mit einer vorgeschlagenen Besprechungszeit haben. Dieses Element stellt Elemente dar, die den Status " **beschäftigt**", " **OOF**" oder " **vorläufig**" aufweisen.
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -62,17 +62,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |Enthält Konfliktinformationen über die Anzahl der Benutzer, die verfügbar sind, die Anzahl der Benutzer, die Konflikte und die Anzahl der Benutzer, die nicht zu Ihrer Verfügbarkeit einsehen in einer Verteilerliste für eine vorgeschlagene Besprechungszeit verfügen aggregierte.  <br/> Es folgt der XPath-Ausdruck, der dieses Element:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/GroupAttendeeConflictData[i]` <br/> |
+|[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |Enthält aggregierte Konfliktinformationen über die Anzahl der verfügbaren Benutzer, die Anzahl der Benutzer mit Konflikten sowie die Anzahl der Benutzer, die in einer Verteilerliste keine Verfügbarkeitsinformationen für eine vorgeschlagene Besprechungszeit haben.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/GroupAttendeeConflictData[i]` <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -86,5 +86,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Erste Benutzer Verfügbarkeit](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

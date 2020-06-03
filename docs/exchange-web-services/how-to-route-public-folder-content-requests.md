@@ -1,49 +1,49 @@
 ---
-title: Weiterleiten von Anforderungen für Inhalte öffentlicher Ordner
+title: Weiterleiten von Inhaltsanforderungen für Öffentliche Ordner
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 59d2f05e-90fb-471e-ac06-70becc15b295
-description: Alle Anfragen für Öffentliche Ordnerinformationen, die den Inhalt der öffentlichen Ordner müssen an das Postfach für Öffentliche Ordner weitergeleitet werden betreffen, die den Inhalt für den Zielordner enthält. Um die Anforderungen an dieses Postfach weiterleiten möchten, müssen Sie die X-AnchorMailbox und X-PublicFolderMailbox-Header auf bestimmte Werte festgelegt.
-ms.openlocfilehash: 64fafecb9882b17a3394e54640df78f7aa180343
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Alle Anforderungen für Öffentliche Ordner-Informationen, die den Inhalt des öffentlichen Ordners einbeziehen, müssen an das Postfach für Öffentliche Ordner weitergeleitet werden, das den Inhalt des Zielordners beinhaltet. Um die Anforderungen an dieses Postfach weiterzuleiten, müssen Sie die Header x-AnchorMailbox und x-PublicFolderMailbox auf bestimmte Werte festlegen.
+ms.openlocfilehash: 523b9c8efc65253f7970fffeb5800e451784522d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354022"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527742"
 ---
-# <a name="route-public-folder-content-requests"></a>Weiterleiten von Anforderungen für Inhalte öffentlicher Ordner
+# <a name="route-public-folder-content-requests"></a>Weiterleiten von Inhaltsanforderungen für Öffentliche Ordner
 
-Alle Anfragen für Öffentliche Ordnerinformationen, die den Inhalt der öffentlichen Ordner müssen an das Postfach für Öffentliche Ordner weitergeleitet werden betreffen, die den Inhalt für den Zielordner enthält. Um die Anforderungen an dieses Postfach weiterleiten möchten, müssen Sie die **X-AnchorMailbox** und **X-PublicFolderMailbox-** Header auf bestimmte Werte festgelegt. 
+Alle Anforderungen für Öffentliche Ordner-Informationen, die den Inhalt des öffentlichen Ordners einbeziehen, müssen an das Postfach für Öffentliche Ordner weitergeleitet werden, das den Inhalt des Zielordners beinhaltet. Um die Anforderungen an dieses Postfach weiterzuleiten, müssen Sie die Header **x-AnchorMailbox** und **x-PublicFolderMailbox** auf bestimmte Werte festlegen. 
   
-Die folgende Tabelle enthält eine Übersicht über den Prozess:
+Die folgende Tabelle bietet einen Überblick über den Prozess:
   
-**Übersicht über die Öffentliche Ordner**
+**Übersicht über öffentliche Ordner**
 
-|Kopfzeile|Was muss ich?|Wie erhalte ich es?|
+|Kopfzeile|Was benötige ich?|Wie erhalte ich diese?|
 |:-----|:-----|:-----|
-|**X-AnchorMailbox** <br/> |1. [die X-AnchorMailbox und X PublicFolderInformation Werte](how-to-route-public-folder-hierarchy-requests.md) für das Postfach für Öffentliche Ordner-Hierarchie.<br/><br/>2. die GUID des Postfachs für Öffentliche Ordner, die den Inhalt von Postfächern enthält, die mit dem AutoErmittlungsdienst gesendet wird.<br/><br/>  Die **AutoDiscoverSMTPAddress** in der Antwort Autodisover wird der Wert der **X-AnchorMailbox** Kopfzeile.  <br/> ![AUFGABEN](media/Ex15_PF_PFContent.png)| 1. verwenden Sie das Codebeispiel in diesem Artikel [implementiert die EWS Managed API](#bk_determineguidewsma). Oder [Verwenden von EWS](#bk_determineguidews) und konvertieren Sie Ihre Ergebnisse, um eine GUID zu erhalten.<br/><br/>2. [eine Anforderung für die AutoErmittlung](#bk_makeautodrequest) , über die GUID und der Domänenname.<br/><br/>3. verwenden Sie den Wert des **AutoDiscoverSMTPAddress** -Elements in der Antwort der AutoErmittlung zum [Auffüllen des Werts der Header](#bk_setheadervalues)zurückgegeben.  <br/> |
-|**X-PublicFolderMailbox** <br/> |Ihre Arbeit erfolgt, der X-PublicFolderMailbox-Wert entspricht dem Wert der X-AnchorMailbox!  <br/> |Sie haben bereits es!  <br/> |
+|**X-AnchorMailbox** <br/> |1. [die x-AnchorMailbox-und x-PublicFolderInformation-Werte](how-to-route-public-folder-hierarchy-requests.md) für das hierarchiepostfach für Öffentliche Ordner.<br/><br/>2. die GUID des Postfachs für Öffentliche Ordner, das den Postfachinhalt enthält, der an den AutoErmittlungsdienst gesendet wird.<br/><br/>  Das **AutoDiscoverSMTPAddress** in der nach Auto Ermittlungs-Antwort wird zum Wert des **X-AnchorMailbox-** Headers.  <br/> ![TODO](media/Ex15_PF_PFContent.png)| 1. verwenden Sie das Codebeispiel in diesem Artikel, der [das verwaltete EWS-API implementiert](#bk_determineguidewsma). Oder [verwenden Sie EWS](#bk_determineguidews) , und konvertieren Sie Ihre Ergebnisse, um eine GUID zu erhalten.<br/><br/>2. [Erstellen Sie eine Auto Ermittlungsanforderung](#bk_makeautodrequest) mithilfe der GUID und des Domänennamens.<br/><br/>3. verwenden Sie den Wert des **AutoDiscoverSMTPAddress** -Elements, das in der AutoErmittlung-Antwort zurückgegeben wird, um [den Wert der Header aufzufüllen](#bk_setheadervalues).  <br/> |
+|**X-PublicFolderMailbox** <br/> |Ihre Arbeit ist abgeschlossen, der x-PublicFolderMailbox-Wert entspricht dem x-AnchorMailbox-Wert!  <br/> |Sie haben Sie bereits!  <br/> |
    
-Nachdem Sie die Werte für die Kopfzeile festgelegt haben, können Sie diese, [Wenn Sie Öffentliche Ordner-inhaltsanforderungen vornehmen](#bk_setheadervalues).
+Nachdem Sie die Headerwerte bestimmt haben, schließen Sie diese ein, [Wenn Sie Inhaltsanforderungen für Öffentliche Ordner vornehmen](#bk_setheadervalues).
   
-Die Schritte in diesem Artikel sind spezifisch für Öffentliche Ordner-inhaltsanforderungen. Um festzustellen, ob es sich bei Ihrer Anforderung einer Hierarchie Öffentlicher Ordner oder Content Anforderung ist, finden Sie unter [Routing für Öffentliche Ordner-Anfragen](public-folder-access-with-ews-in-exchange.md#bk_routing).
+Die Schritte in diesem Artikel gelten speziell für Inhaltsanforderungen für Öffentliche Ordner. Informationen zum ermitteln, ob es sich bei Ihrer Anforderung um eine Hierarchie Öffentlicher Ordner oder eine Inhaltsanforderung handelt, finden Sie unter [Routing Public Folder Requests](public-folder-access-with-ews-in-exchange.md#bk_routing).
 
 <a name="bk_determineguidewsma"> </a>
 
-## <a name="determine-the-guid-of-the-public-folder-mailbox-by-using-the-ews-managed-api"></a>Bestimmen Sie die GUID des Postfachs für Öffentliche Ordner mithilfe der EWS Managed API
+## <a name="determine-the-guid-of-the-public-folder-mailbox-by-using-the-ews-managed-api"></a>Ermitteln der GUID des Postfachs für Öffentliche Ordner mithilfe der verwaltete EWS-API
 
 
-Um die GUID des Postfachs für Öffentliche Ordner-Inhalt zu bestimmen, verwenden Sie im folgenden Codebeispiel wird, die Folgendes ermöglicht: 
+Um die GUID des Inhalts Postfachs für Öffentliche Ordner zu ermitteln, verwenden Sie das folgende Codebeispiel, das Folgendes ausführt: 
   
-- Verwendet die **X-AnchorMailbox** und **X PublicFolderInformation** Header, die Sie von [Öffentliche Ordner-Hierarchie Routinganforderungen](how-to-route-public-folder-hierarchy-requests.md)abgerufen.
+- Verwendet die Überschriften **x-AnchorMailbox** und **x-PublicFolderInformation** , die Sie durch das [Routing von Hierarchie Anforderungen für Öffentliche Ordner](how-to-route-public-folder-hierarchy-requests.md)abgerufen haben.
     
-- Die EWS Managed API [FindFolders](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx) -Methode aufgerufen, und enthält eine Anforderung für die **PR_REPLICA_LIST** (0x66980102)-Eigenschaft 
+- Ruft die verwaltete EWS-API [FindFolders](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx) -Methode auf und enthält eine Anforderung für die **PR_REPLICA_LIST** (0x66980102)-Eigenschaft. 
     
-Der Wert **PR_REPLICA_LIST** identifiziert die Postfach-GUID des Postfachs für Öffentliche Ordner, die den Inhalt für den Ordner verfügt. Die **PR_REPLICA_LIST** -Eigenschaft ist ein Bytearray, aber für dieses Szenario als GUID umgewandelt wird. Die GUID und den Domänennamen werden verkettet, um die Adresse an, die für die AutoErmittlung aufrufen bilden. 
+Der **PR_REPLICA_LIST** Wert identifiziert die Postfach-GUID des Postfachs für Öffentliche Ordner mit dem Inhalt des Ordners. Die **PR_REPLICA_LIST** -Eigenschaft ist ein Byte-Array, wird jedoch als GUID für dieses Szenario umgewandelt. Die GUID und der Domänenname werden verkettet, um die Adresse zu bilden, für die die AutoErmittlung aufgerufen wird. 
   
-In diesem Beispiel wird vorausgesetzt, dass `service` ist das [ExchangeService](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt für den Postfachbenutzer `PFHAnchorHeader` und `PFHMailboxHeader` sind die Werte der **X-AnchorMailbox** und **X-PublicFolderMailbox** Header und Domäne ist der Domänenname wird von verwendet die Mandanten. 
+In diesem Beispiel wird davon ausgegangen, dass das `service` [Datei "ExchangeService](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt für den Postfachbenutzer `PFHAnchorHeader` und `PFHMailboxHeader` die Werte der **x-AnchorMailbox** -und **x-PublicFolderMailbox-** Kopfzeilen und Domäne der vom Mandanten verwendete Domänenname ist. 
   
 ```cs
 public static string GetMailboxGuidAddress(ExchangeService service, String PFHAnchorHeader, String PFHMailboxHeader, String domain)
@@ -103,17 +103,17 @@ public static string CompareGuidsForEquality(List<string> list)
 }
 ```
 
-Wenn Sie die Fehlermeldung "die Anforderung ist fehlgeschlagen. Die zugrunde liegende Verbindung wurde geschlossen: Vertrauensstellung für den geschützten SSL/TLS-Kanal konnte nicht hergestellt werden ", müssen Sie [einen Anruf an eine Rückrufmethode Validierung hinzufügen](how-to-validate-a-server-certificate-for-the-ews-managed-api.md). Einen Platzhalter und einen Kommentar für diese Methode ist im Codebeispiel enthalten.
+Wenn die Fehlermeldung "die Anforderung ist fehlgeschlagen" angezeigt wurde. Die zugrunde liegende Verbindung wurde geschlossen: für den sicheren SSL/TLS-Kanal konnte keine Vertrauensstellung hergestellt werden ", müssen Sie einen [Aufruf an eine Validierungsrückruf Methode hinzufügen](how-to-validate-a-server-certificate-for-the-ews-managed-api.md). Im Codebeispiel ist ein Platzhalter und ein Kommentar für diese Methode enthalten.
   
-Wenn die Postfach-GUID für die öffentlichen Ordner unter dem Stammverzeichnis der öffentlichen Ordner identisch ist, gibt im Beispiel wird die Adresse zu verwenden, wenn in der Konsole [aufrufen AutoErmittlung](#bk_makeautodrequest) Ausgabe und als Rückgabewert. Wenn die Postfach-GUID nicht für alle öffentlichen Ordner unter dem Stammverzeichnis der Öffentliche Ordner ist, müssen Sie die Adresse, die dem Ordner in Ihrer Anforderung Content zugeordnet, [AutoErmittlung anzufordern](#bk_makeautodrequest) . 
+Wenn die Postfach-GUID für alle öffentlichen Ordner unter dem Stamm des öffentlichen Ordners identisch ist, gibt das Beispiel die Adresse an, die beim [Aufruf der AutoErmittlung](#bk_makeautodrequest) in der Konsolenausgabe und als Rückgabewert verwendet werden soll. Wenn die Postfach-GUID nicht für alle öffentlichen Ordner unter dem Stamm des öffentlichen Ordners identisch ist, müssen Sie [eine Auto Ermittlungsanforderung](#bk_makeautodrequest) für die Adresse vornehmen, die dem Ordner in ihrer Inhaltsanforderung zugeordnet ist. 
 
 <a name="bk_determineguidews"> </a>
 
-## <a name="determine-the-guid-of-the-public-folder-mailbox-by-using-ews"></a>Bestimmen Sie die GUID des Postfachs für Öffentliche Ordner mithilfe der Exchange-Webdienste
+## <a name="determine-the-guid-of-the-public-folder-mailbox-by-using-ews"></a>Ermitteln der GUID des Postfachs für Öffentliche Ordner mithilfe von EWS
 
-Im folgenden Code wird veranschaulicht abrufen wie den Wert der Eigenschaft **PR_REPLICA_LIST** (0x66980102) mit der EWS [FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) -Operation. Für das [ExtendedFieldURI](http://msdn.microsoft.com/library/b3c6ea3a-9ead-44b9-9d99-64ecf12bde23%28Office.15%29.aspx) -Element das Attribut **' PropertyTag '** auf den Dezimalwert (26264) der **PR_REPLICA_LIST** -Eigenschaft festgelegt ist, und das Attribut **PropertyType** auf **Binary**festgelegt ist.
+Im folgenden Codebeispiel wird veranschaulicht, wie der Wert der **PR_REPLICA_LIST** -Eigenschaft (0x66980102) mithilfe der EWS- [FindFolder](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) -Operation abgerufen wird. Für das [ExtendedFieldURI](https://msdn.microsoft.com/library/b3c6ea3a-9ead-44b9-9d99-64ecf12bde23%28Office.15%29.aspx) -Element wird das **PropertyTag** -Attribut auf den Dezimalwert (26264) der **PR_REPLICA_LIST** -Eigenschaft festgelegt, und das **PropertyType-** Attribut ist auf **Binary**festgelegt.
   
-Dies ist auch die XML-Anfrage, die die EWS Managed API sendet, wenn Sie die **FindFolders** -Methode zum [Bestimmen der GUID des Postfachs für Öffentliche Ordner mithilfe der EWS Managed API](#bk_determineguidewsma)verwenden.
+Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die [GUID des Postfachs für Öffentliche Ordner mithilfe der verwaltete EWS-API](#bk_determineguidewsma)mithilfe der **FindFolders** -Methode ermitteln.
   
 ```XML
 POST https://outlook.office365.com/EWS/Exchange.asmx HTTP/1.1
@@ -127,7 +127,7 @@ Cookie: ClientId=KZPBLKA9ZMPXAQDW
 Content-Length: 1005
 Expect: 100-continue
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013_SP1" />
   </soap:Header>
@@ -149,15 +149,15 @@ Expect: 100-continue
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die Anforderung **FindFolder** mit einer [FindFolderResponse](http://msdn.microsoft.com/library/f5dd813c-9698-4a39-8fca-3a825df365ed%28Office.15%29.aspx) -Meldung, die den Wert der erweiterten Eigenschaft **PR_REPLICA_LIST** enthält. Beachten Sie, dass der Wert der Eigenschaft für die EWS-Antwort mit dem String-Format für eine Base64-codierte Bytearray zurück. Einige Headerwerte in der Antwort werden zur besseren Lesbarkeit gekürzt. 
+Der Server antwortet auf die **FindFolder** -Anforderung mit einer [FindFolderResponse](https://msdn.microsoft.com/library/f5dd813c-9698-4a39-8fca-3a825df365ed%28Office.15%29.aspx) -Nachricht, die den Wert der **PR_REPLICA_LIST** erweiterten Eigenschaft enthält. Beachten Sie, dass der Wert der Eigenschaft in der EWS-Antwort als Zeichenfolgenformat eines codierten Base-64-Bytearrays angezeigt wird. Einige Headerwerte in der Antwort werden zur Lesbarkeit gekürzt. 
   
 ```XML
-<?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="1019" MinorBuildNumber="15" Version="V2_17" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="1019" MinorBuildNumber="15" Version="V2_17" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body>
-    <m:FindFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:FindFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:FindFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -188,65 +188,66 @@ Der Server antwortet auf die Anforderung **FindFolder** mit einer [FindFolderRes
 </s:Envelope>
 ```
 
-In den XML-Code, MWVjMmEyMzYtZWQ5My00Zjg4LWI5YzYtMzNlNjNmYTRhYTQ0AA, um den Wert der **PR_REPLICA_LIST** verwenden zurückgegeben ==, um die Postfach-GUID zu ermitteln, muss der Wert in einer GUID in einem Format ähnlich wie in der Wert umgewandelt wird konvertiert werden die [EWS Managed API-Codebeispiel](#bk_determineguidewsma). Die GUID wird dann verkettet wird mit dem Domänennamen, erstellen Sie eine SMTP-Adresse, die in der [Anforderung der AutoErmittlung](#bk_makeautodrequest)enthalten ist.
+Um den Wert der in XML, MWVjMmEyMzYtZWQ5My00Zjg4LWI5YzYtMzNlNjNmYTRhYTQ0AA = = zurückgegebenen **PR_REPLICA_LIST** zu verwenden, um die Postfach-GUID zu ermitteln, muss der Wert in eine GUID in einem Format konvertiert werden, das dem entspricht, wie der Wert im [verwaltete EWS-API Codebeispiel](#bk_determineguidewsma)konvertiert wird. Die GUID wird dann mit dem Domänennamen verkettet, um eine SMTP-Adresse zu erstellen, die in der [Auto Ermittlungsanforderung](#bk_makeautodrequest)enthalten ist.
   
-## <a name="make-an-autodiscover-request"></a>Stellen Sie eine autoermittlungsanforderung für die
+## <a name="make-an-autodiscover-request"></a>Erstellen einer Auto Ermittlungsanforderung
 <a name="bk_makeautodrequest"> </a>
 
-Verwenden Sie die Adresse zurückgegeben, indem die `GetMailboxGuidAddress` Methode, die für die AutoErmittlung aufgerufen. Wir empfehlen die Verwendung der [Exchange 2013: Abrufen von benutzereinstellungen für mit der AutoErmittlung](http://code.msdn.microsoft.com/exchange/Exchange-2013-Get-user-7e22c86e) Codebeispiel den AutoErmittlungsdienst aufgerufen, da es die AutoErmittlung für Sie vereinfacht. In diesem Codebeispiel verwendet die in der folgenden Tabelle aufgeführten Befehlszeilenargumente zum Aufrufen des POX AutoErmittlungsdiensts zum Abrufen des [AutoDiscoverSMTPAddress](http://msdn.microsoft.com/en-us/library/office/dn750991%28v=exchg.150%29.aspx) -Werts, der die Postfach-GUID zugeordnet. 
+Verwenden Sie die von der Methode zurückgegebene Adresse `GetMailboxGuidAddress` , um die AutoErmittlung aufzurufen. Es wird empfohlen, die Exchange 2013 zu verwenden [: Abrufen von Benutzereinstellungen mit der Auto](https://code.msdn.microsoft.com/exchange/Exchange-2013-Get-user-7e22c86e) Ermittlungs Code-Beispiel, um den AutoErmittlungsdienst aufzurufen, da dadurch der Auto Ermittlungsprozess rationalisiert wird. In diesem Codebeispiel werden die in der folgenden Tabelle aufgelisteten Befehlszeilenargumente verwendet, um den POX-AutoErmittlungsdienst aufzurufen, um den [AutoDiscoverSMTPAddress](https://msdn.microsoft.com/library/office/dn750991%28v=exchg.150%29.aspx) -Wert abzurufen, der der Postfach-GUID zugeordnet ist. 
+
   
 |**Argument**|**Beschreibung**|
 |:-----|:-----|
-|emailAddress  <br/> |Die zurückgegebene Adresse der `GetMailboxGuidAddress` -Methode in [Determine die GUID des Postfachs für Öffentliche Ordner](#bk_determineguidewsma).  <br/> |
-|-skipSOAP  <br/> |Gibt an, dass POX AutoErmittlung Anforderungen erforderlich sind.  <br/> |
-|-Auth authEmailAddress  <br/> |Das des Postfachbenutzers e-Mail-Adresse, die für die Authentifizierung verwendet wird. Sie werden aufgefordert, die beim Ausführen des Beispiels den Postfachbenutzer Kennwort eingeben.  <br/> |
+|emailAddress  <br/> |Die von der Methode zurückgegebene Adresse `GetMailboxGuidAddress` [bestimmen Sie die GUID des Postfachs für Öffentliche Ordner](#bk_determineguidewsma).  <br/> |
+|-skipSOAP  <br/> |Gibt an, dass POX-Auto Ermittlungsanforderungen erforderlich sind.  <br/> |
+|-auth authEmailAddress  <br/> |Die e-Mail-Adresse des Postfachbenutzers, die für die Authentifizierung verwendet wird. Sie werden aufgefordert, das Kennwort des Postfachbenutzers einzugeben, wenn Sie das Beispiel ausführen.  <br/> |
    
-Beispielsweise sollte die Befehlszeilenargumente wie folgt aussehen:
+Beispielsweise sollten die Befehlszeilenargumente wie folgt aussehen:
   
 `1ec2a236-ed93-4f88-b9c6-33e63fa4aa44@contoso.com -skipSOAP -auth sonyaf@contoso.com`
 
-Wobei `1ec2a236-ed93-4f88-b9c6-33e63fa4aa44@contoso.com` ist die Adresse, die von der Methode **GetMailboxGuidAddress** zurückgegeben und `sonyaf@contoso.com` der Postfachbenutzer ist. 
+Hierbei `1ec2a236-ed93-4f88-b9c6-33e63fa4aa44@contoso.com` handelt es sich um die von der **GetMailboxGuidAddress** -Methode zurückgegebene Adresse und `sonyaf@contoso.com` um den Postfachbenutzer. 
   
-Beim Ausführen der **Exchange 2013: Abrufen von benutzereinstellungen für mit der AutoErmittlung** Beispiel die letzte AutoErmittlung Antwort erfolgreich und umfassen sollten alle für die Benutzer die Postfach-GUID zugeordnet. Speichern der **AutoDiscoverSMTPAddress** Benutzer lokal festlegen wie Sie, die im nächsten Schritt verwenden. 
+Wenn Sie das **Exchange 2013: Abrufen von Benutzereinstellungen mit dem Auto Ermittlungs** Beispiel ausführen, sollte die letzte Antwort auf die AutoErmittlung erfolgreich sein und alle Benutzereinstellungen einschließen, die der Postfach-GUID zugeordnet sind. Speichern Sie die **AutoDiscoverSMTPAddress** -Benutzereinstellung lokal, wie Sie dies im nächsten Schritt verwenden werden. 
   
-Alternativ, wenn Sie nicht möchten, verwenden Sie **Exchange 2013: Abrufen von benutzereinstellungen für mit der AutoErmittlung** Beispiel erhalten Sie vom Benutzer **AutoDiscoverSMTPAddress** nach [generieren Sie eine Liste der AutoErmittlung](how-to-generate-a-list-of-autodiscover-endpoints.md)festlegen, und senden Sie dann die folgenden POX Anforderung der AutoErmittlung auf jede URL, bis Sie eine erfolgreiche Antwort erhalten.
+Wenn Sie **Exchange 2013: Abrufen von Benutzereinstellungen mit Auto Ermittlungs** Beispiel verwenden möchten, können Sie die **AutoDiscoverSMTPAddress** -Benutzereinstellung abrufen, indem Sie [eine Liste der Auto Ermittlungs Endpunkte generieren](how-to-generate-a-list-of-autodiscover-endpoints.md)und dann die folgende POX-Auto Ermittlungsanforderung an jede URL senden, bis Sie eine erfolgreiche Antwort erhalten.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<Autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/outlook/requestschema/2006">
+<Autodiscover xmlns="https://schemas.microsoft.com/exchange/autodiscover/outlook/requestschema/2006">
   <Request>
     <EMailAddress>1ec2a236-ed93-4f88-b9c6-33e63fa4aa44@contoso.com</EMailAddress>
-    <AcceptableResponseSchema>http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a</AcceptableResponseSchema>
+    <AcceptableResponseSchema>https://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a</AcceptableResponseSchema>
   </Request>
 </Autodiscover>
 ```
 
-Weitere Informationen zu den AutoErmittlung-Prozesses finden Sie unter [AutoErmittlung für Exchange](autodiscover-for-exchange.md), [generieren eine Liste von AutoErmittlung-Endpunkten](how-to-generate-a-list-of-autodiscover-endpoints.md)und [benutzereinstellungen aus Exchange mithilfe der AutoErmittlung erhalten möchten](how-to-get-user-settings-from-exchange-by-using-autodiscover.md).
+Weitere Informationen zum Auto Ermittlungsprozess finden Sie unter [AutoErmittlung für Exchange](autodiscover-for-exchange.md), [Generieren einer Liste mit Auto Ermittlungs Endpunkten](how-to-generate-a-list-of-autodiscover-endpoints.md)und [Abrufen von Benutzereinstellungen von Exchange mithilfe der AutoErmittlung](how-to-get-user-settings-from-exchange-by-using-autodiscover.md).
   
-## <a name="set-the-values-of-the-x-anchormailbox-and-x-publicfoldermailbox-headers"></a>Legen Sie die Werte der X-AnchorMailbox und X-PublicFolderMailbox-Header
+## <a name="set-the-values-of-the-x-anchormailbox-and-x-publicfoldermailbox-headers"></a>Festlegen der Werte der x-AnchorMailbox-und x-PublicFolderMailbox-Kopfzeilen
 <a name="bk_setheadervalues"> </a>
 
-Verwenden den Wert für die **AutoDiscoverSMTPAddress** erworben in [AutoErmittlung anzufordern](#bk_makeautodrequest), legen Sie die Werte der **X-AnchorMailbox** und **X-PublicFolderMailbox-** Header in Ihrer öffentlichen Ordner Content-Anforderung. 
+Legen Sie mithilfe des Werts für das **AutoDiscoverSMTPAddress** , das in [make a Auto Ermittlungsanforderung](#bk_makeautodrequest)erworben wurde, die Werte der Header **x-AnchorMailbox** und **x-PublicFolderMailbox** in der Inhaltsanforderung für Öffentliche Ordner fest. 
   
-Ein AutoDiscoverSMTPAddress NewPublicFolder@contoso.com angegeben, beispielsweise die folgenden Kopfzeilen beim Aufrufen der folgenden Methoden oder Vorgänge.
+Geben Sie beispielsweise bei einer AutoDiscoverSMTPAddress von NewPublicFolder@contoso.com die folgenden Kopfzeilen ein, wenn Sie Aufrufe an die folgenden Methoden oder Vorgänge vornehmen.
   
 `X-AnchorMailbox: NewPublicFolder@contoso.com`<br/>
 `X-PublicFolderMailbox: NewPublicFolder@contoso.com`
 
-**Öffentliche Ordner-Anrufe, die die X-AncorMailbox und X-PublicFolder Header erfordern**
+**Öffentliche Ordner-Aufrufe, die die Header x-AncorMailbox und x-PublicFolder erfordern**
 
-|**EWS Managed API-Methoden**|**EWS-Vorgänge**|
+|**EWS Managed API-Methoden**|**EWS-Operationen**|
 |:-----|:-----|
-|[Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) <br/> [Item.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.update%28v=exchg.80%29.aspx) <br/> [Item.Copy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.copy%28v=exchg.80%29.aspx) <br/> [Item.Move](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.move%28v=exchg.80%29.aspx) <br/> [Item.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.delete%28v=exchg.80%29.aspx) <br/> [Folder.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) <br/> [Folder.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) <br/> [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) <br/> [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> [CopyItem](http://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) <br/> [MoveItem](http://msdn.microsoft.com/library/dcf40fa7-7796-4a5c-bf5b-7a509a18d208%28Office.15%29.aspx) <br/> [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) <br/> [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) <br/> |
+|[Item.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) <br/> [Item.Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.update%28v=exchg.80%29.aspx) <br/> [Item.Copy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.copy%28v=exchg.80%29.aspx) <br/> [Item.Move](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.move%28v=exchg.80%29.aspx) <br/> [Item.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.delete%28v=exchg.80%29.aspx) <br/> [Folder.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) <br/> [Folder.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx) <br/> |[CreateItem](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) <br/> [GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) <br/> [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> [CopyItem](https://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) <br/> [MoveItem](https://msdn.microsoft.com/library/dcf40fa7-7796-4a5c-bf5b-7a509a18d208%28Office.15%29.aspx) <br/> [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) <br/> [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) <br/> |
    
-Wenn diese Header mithilfe der EWS Managed API hinzufügen möchten, verwenden Sie die [HttpHeaders.Add](http://msdn.microsoft.com/en-us/library/system.net.http.headers.httpheaders.add%28v=vs.118%29.aspx) -Methode. 
+Verwenden Sie die [httpheaders-. Add](https://msdn.microsoft.com/library/system.net.http.headers.httpheaders.add%28v=vs.118%29.aspx) -Methode, um diese Header mithilfe der verwaltete EWS-API hinzuzufügen. 
   
 ```cs
 service.HttpHeaders.Add("X-AnchorMailbox", "NewPublicFolder@contoso.com");
 service.HttpHeaders.Add("X-PublicFolderMailbox", "NewPublicFolder@contoso.com");
 ```
 
-Der folgende Code zeigt eine [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) -Anforderung mit dem **X-AnchorMailbox** und **X-PublicFolderMailbox** -Header auf die Werte in den Beispielen in diesem Artikel abgerufen festgelegt. 
+Der folgende Code zeigt eine [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) -Anforderung, bei der der **x-AnchorMailbox** -und der **x-PublicFolderMailbox-** Header auf die in den Beispielen in diesem Artikel abgerufenen Werte festgelegt sind. 
   
 ```XML
 POST https://outlook.office365.com/EWS/Exchange.asmx HTTP/1.1
@@ -259,7 +260,7 @@ Host: outlook.office365.com
 Content-Length: 688
 Expect: 100-continue
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013_SP1" />
   </soap:Header>
@@ -281,6 +282,5 @@ Expect: 100-continue
 - [Zugriff auf Öffentliche Ordner mit EWS in Exchange](public-folder-access-with-ews-in-exchange.md)    
 - [AutoErmittlung für Exchange](autodiscover-for-exchange.md)    
 - [Generieren einer Liste mit AutoErmittlungs-Endpunkten](how-to-generate-a-list-of-autodiscover-endpoints.md)   
-- [Abrufen von benutzereinstellungen aus Exchange mithilfe der AutoErmittlung](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
-    
-
+- [Abrufen von Benutzereinstellungen von Exchange mithilfe der AutoErmittlung](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
+  

@@ -1,5 +1,5 @@
 ---
-title: ReferenceAttachmentType ComplexType (EWS)
+title: ReferenceAttachmentType complexType (EWS)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: ITPro
@@ -7,21 +7,21 @@ ms.topic: article
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 18bfa012-e903-d7f3-528a-31ccceb65463
-ms.openlocfilehash: c53686ccd032cabcc3f64a3a6684f29afe63a9b1
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.openlocfilehash: 24f5a62eadd490b5b0000dfe048850c44540f266
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354176"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528734"
 ---
-# <a name="referenceattachmenttype-complextype-ews"></a>ReferenceAttachmentType ComplexType (EWS)
+# <a name="referenceattachmenttype-complextype-ews"></a>ReferenceAttachmentType complexType (EWS)
 
 ## <a name="type-information"></a>Informationen zum Typ
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|**Schemadatei** <br/> |Types.xsd  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|**Schemadatei** <br/> |Types. xsd  <br/> |
 |**Erweiterungsbasis** <br/> |t:AttachmentType  <br/> |
    
 ## <a name="definition"></a>Definition
@@ -41,13 +41,13 @@ ms.locfileid: "21354176"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[AttachLongPathName](attachlongpathname.md) <br/> |xs:string  <br/> ||
+|[AttachLongPathName](attachlongpathname.md) <br/> |xs: Zeichenfolge  <br/> ||
    
 ### <a name="attributes"></a>Attribute
 

@@ -1,5 +1,5 @@
 ---
-title: PlayOnPhoneGreetingResponse (UM-Webdienst)
+title: PlayOnPhoneGreetingResponse (um-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,25 +10,25 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7189d69a-9288-4fc8-8d78-4977ee1a7253
-description: Das PlayOnPhoneGreetingResponse-Element definiert eine Antwort auf eine PlayOnPhoneGreeting-Vorgang (UM-Webdienst) an.
-ms.openlocfilehash: abae8dad57a5bc13b17e8f5a7a1ca41bf0586a3a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das PlayOnPhoneGreetingResponse-Element definiert eine Antwort auf eine Anforderung des PlayOnPhoneGreeting-Vorgangs (um-Webdienst).
+ms.openlocfilehash: ca448860ef0e59607f73421c71d9c8f75c740773
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830837"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528853"
 ---
-# <a name="playonphonegreetingresponse-um-web-service"></a>PlayOnPhoneGreetingResponse (UM-Webdienst)
+# <a name="playonphonegreetingresponse-um-web-service"></a>PlayOnPhoneGreetingResponse (um-Webdienst)
 
-Das **PlayOnPhoneGreetingResponse** -Element definiert eine Antwort auf eine [PlayOnPhoneGreeting-Vorgang (UM-Webdienst)](playonphonegreeting-operation-um-web-service.md) an. 
+Das **PlayOnPhoneGreetingResponse** -Element definiert eine Antwort auf eine Anforderung des [PlayOnPhoneGreeting-Vorgangs (um-Webdienst)](playonphonegreeting-operation-um-web-service.md) . 
   
-[PlayOnPhoneGreetingResponse (UM-Webdienst)](playonphonegreetingresponse-um-web-service.md)
+[PlayOnPhoneGreetingResponse (um-Webdienst)](playonphonegreetingresponse-um-web-service.md)
   
 ```xml
 <PlayOnPhoneGreetingResponse />
 ```
 
- **string**
+ **Zeichenfolge**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -47,26 +47,26 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der Textwert enthält den Wert für den Wert des [CallId (UM-Webdienst)](callid-um-web-service.md) in einer Anfrage [GetCallInfo-Vorgang (UM-Webdienst)](getcallinfo-operation-um-web-service.md) oder eine Anforderung [Trennvorgang (UM-Webdienst)](disconnect-operation-um-web-service.md) verwenden. 
+Ein Textwert ist erforderlich. Der Textwert enthält den Wert, der für den Wert von " [Calling" (um-Webdienst)](callid-um-web-service.md) in einer [GetCallInfo-Vorgangsanforderung (um-Webdienst)](getcallinfo-operation-um-web-service.md) oder einer [um-Webdienst](disconnect-operation-um-web-service.md) Anforderung verwendet werden soll. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PlayOnPhoneGreeting-Vorgang (UM-Webdienst)](playonphonegreeting-operation-um-web-service.md)
+[PlayOnPhoneGreeting-Vorgang (um-Webdienst)](playonphonegreeting-operation-um-web-service.md)
   
-[CallId (UM-Webdienst)](callid-um-web-service.md)
+[Anrufdienst (um-Webdienst)](callid-um-web-service.md)
   
-[GetCallInfo-Vorgang (UM-Webdienst)](getcallinfo-operation-um-web-service.md)
+[GetCallInfo-Vorgang (um-Webdienst)](getcallinfo-operation-um-web-service.md)
   
-[Trennen Sie (UM-Webdienst)](disconnect-operation-um-web-service.md)
+[Trennungsvorgang (um-Webdienst)](disconnect-operation-um-web-service.md)
 

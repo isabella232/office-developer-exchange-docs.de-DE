@@ -1,5 +1,5 @@
 ---
-title: Berichtsvorlage
+title: Report Template
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f528eee6-d5af-4745-8b00-a9834bf34be6
-description: Das ReportTemplate-Element stellt den Typ des Berichts zu erhalten.
-ms.openlocfilehash: 70aab69f4d20ad9fd7e878c7fccd16e261c9b94c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Report Template-Element stellt den Typ des abzurufenden Berichts dar.
+ms.openlocfilehash: 22f14d326032a30e5cb4c2c9e1aff390d98e95e0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831118"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528699"
 ---
-# <a name="reporttemplate"></a>Berichtsvorlage
+# <a name="reporttemplate"></a>Report Template
 
-Das **ReportTemplate** -Element stellt den Typ des Berichts zu erhalten. 
+Das **Report Template** -Element stellt den Typ des abzurufenden Berichts dar. 
   
 ```xml
 <ReportTemplate>Summary or RecipientPath</ReportTemplate>
@@ -44,30 +44,30 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |Enthält die Anforderung für den [GetMessageTrackingReport Vorgang](getmessagetrackingreport-operation.md) zum Abrufen der vollständigen Nachricht Nachverfolgen der Bericht für den angegebenen ID.  <br/> |
+|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |Enthält die Anforderung für den [GetMessageTrackingReport-Vorgang](getmessagetrackingreport-operation.md) zum Abrufen des vollständigen Nachrichtenverfolgungsberichts für die angegebene ID.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Die folgende Tabelle enthält die möglichen Werte für das **ReportTemplate** -Element. 
+In der folgenden Tabelle sind die möglichen Werte für das **Report Template** -Element aufgeführt. 
   
-**ReportTemplate-Elementwerte**
+**Report Template-Elementwerte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Zusammenfassung  <br/> |Gibt an, dass der Bericht alle Empfänger der Nachricht und den Zustellungsstatus der Nachricht auf jeden Empfänger angezeigt.  <br/> |
-|RecipientPath  <br/> |Gibt an, die für einen einzelnen Empfänger, wird der Bericht einen vollständigen Verlauf der Ereignisse angezeigt, die aufgetreten sind.  <br/> |
+|Zusammenfassung  <br/> |Gibt an, dass der Bericht alle Empfänger der Nachricht und den Zustellungsstatus der Nachricht für jeden Empfänger anzeigen soll.  <br/> |
+|RecipientPath  <br/> |Gibt an, dass der Bericht für einen einzelnen Empfänger einen vollständigen Verlauf der aufgetretenen Ereignisse anzeigt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt befindet sich das virtuelle Verzeichnis EWS des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

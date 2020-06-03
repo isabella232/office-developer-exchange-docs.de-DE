@@ -1,5 +1,5 @@
 ---
-title: Daten (base64Binary)
+title: Data (base64Binary)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 26d8c2d0-bed2-4aed-b381-20e2ace6892f
-description: Data-Element enthält die Daten von einem einzelnen exportierten Element oder ein Element in einem Postfach hochladen.
-ms.openlocfilehash: 9560273e31a64edb2254489961733dfe7360ad01
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Data-Element enthält die Daten eines einzelnen exportierten Elements oder eines Elements, das in ein Postfach hochgeladen werden soll.
+ms.openlocfilehash: 43ee16ca7caf634756ca00a88715d9834adad92b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757844"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526970"
 ---
-# <a name="data-base64binary"></a>Daten (base64Binary)
+# <a name="data-base64binary"></a>Data (base64Binary)
 
-**Data** -Element enthält die Daten von einem einzelnen exportierten Element oder ein Element in einem Postfach hochladen. 
+Das **Data** -Element enthält die Daten eines einzelnen exportierten Elements oder eines Elements, das in ein Postfach hochgeladen werden soll. 
   
 ```XML
 <Data/>
 ```
 
-**xs:base64Binary**
+**xs: base64Binary**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -45,24 +45,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ExportItemsResponseMessage](exportitemsresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer Anforderung für ein einzelnes Postfach-Element zu exportieren.  <br/> |
-|[Item (UploadItemType)](item-uploaditemtype.md) <br/> |Stellt ein einzelnes Element in einem Postfach hochladen.  <br/> |
+|[ExportItemsResponseMessage](exportitemsresponsemessage.md) <br/> |Enthält den Status und die Ergebnisse einer Anforderung zum Exportieren eines einzelnen Post Fach Elements.  <br/> |
+|[Element (UploadItemType)](item-uploaditemtype.md) <br/> |Stellt ein einzelnes Element dar, das in ein Postfach hochgeladen werden soll.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-**Data** -Element enthält die Eigenschaftennamen und Werte für eine exportierte Element oder ein Element, das in einem Postfach hochgeladen werden soll. 
+Das **Data** -Element enthält die Eigenschaftennamen und Werte für ein exportiertes Element oder ein Element, das in ein Postfach hochgeladen wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

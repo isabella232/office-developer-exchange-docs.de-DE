@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 57e9fba3-5751-4c37-b0c8-ac6dde1c7544
-description: Das BinaryData-Element enthält Inhalt für Binärdaten-Eigenschaft.
-ms.openlocfilehash: d98da312bbf970df54ddeaf525d00217275d1f82
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das BinaryData-Element enthält Inhalt der binären Dateneigenschaft.
+ms.openlocfilehash: 8f7f62e37613ef74aa760014cf27291b80cca127
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757444"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527411"
 ---
 # <a name="binarydata"></a>BinaryData
 
-Das **BinaryData** -Element enthält Inhalt für Binärdaten-Eigenschaft. 
+Das **BinaryData** -Element enthält Inhalt der binären Dateneigenschaft. 
   
 ```xml
 <BinaryData/>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserConfiguration](userconfiguration.md) <br/> |Definiert einen einzelnen Benutzer-Konfigurationsobjekt.  <br/> |
+|[UserConfiguration](userconfiguration.md) <br/> |Definiert ein einzelnes Benutzer Konfigurationsobjekt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Das **BinaryData** -Element enthält Binärdaten. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

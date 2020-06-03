@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5829149e-7bfe-4820-bcc6-910e9264acc9
-description: Das Path-Element ist der Basis Schematyp für alle Eigenschaftenbezeichner. Dieser Typ ist abstrakt und treten direkt in Instanzdokumente.
-ms.openlocfilehash: a5a1ca5179ccf339e5a1f15621c92e2870f4f2d9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Path-Element ist der Basis Schematyp für alle Eigenschaftenbezeichner. Dieser Typ ist abstrakt und wird nie direkt in Instanzen Dokumenten auftreten.
+ms.openlocfilehash: 5ba18084243e9720a76b9ac28023778c6d546bc4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830700"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529014"
 ---
 # <a name="path"></a>Pfad
 
-Das **Path** -Element ist der Basis Schematyp für alle Eigenschaftenbezeichner. Dieser Typ ist abstrakt und treten direkt in Instanzdokumente. 
+Das **path** -Element ist der Basis Schematyp für alle Eigenschaftenbezeichner. Dieser Typ ist abstrakt und wird nie direkt in Instanzen Dokumenten auftreten. 
   
 ```xml
 <Path/>
@@ -44,9 +44,9 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die folgenden Elemente werden verwendet, um für das Element **Pfad** ersetzen: 
+Die folgenden Elemente werden verwendet, um das **path** -Element zu ersetzen: 
   
 - [FieldURI](fielduri.md)
     
@@ -58,11 +58,11 @@ Die folgenden Elemente werden verwendet, um für das Element **Pfad** ersetzen:
     
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

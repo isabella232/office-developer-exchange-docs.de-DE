@@ -11,20 +11,20 @@ api_name:
 api_type:
 - schema
 ms.assetid: c5e251af-f795-43cc-baaf-95d84475677c
-description: Das DeleteRuleOperation-Element enthält einen Vorgang, um eine vorhandene Posteingangsregel zu löschen.
-ms.openlocfilehash: 3410361e0b896fb0ef01c1873c9f8b0ac99afe58
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das DeleteRuleOperation-Element enthält einen Vorgang zum Löschen einer vorhandenen Posteingangsregel.
+ms.openlocfilehash: 6b17f7f99f1fd9b9889db00fdf55fba5eef5aba8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19757935"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526921"
 ---
 # <a name="deleteruleoperation"></a>DeleteRuleOperation
 
-Das **DeleteRuleOperation** -Element enthält einen Vorgang, um eine vorhandene Posteingangsregel zu löschen. 
+Das **DeleteRuleOperation** -Element enthält einen Vorgang zum Löschen einer vorhandenen Posteingangsregel. 
   
 - [UpdateInboxRules](updateinboxrules.md)
-- [Betrieb](operations.md)
+- [Operations](operations.md)
   
 ```XML
 <DeleteRuleOperation>
@@ -45,7 +45,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Regel-ID](ruleid.md) <br/> |Gibt den Bezeichner der die zu löschende Regel.  <br/> |
+|[RuleId](ruleid.md) <br/> |Gibt den Bezeichner der Regel an, die gelöscht werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -57,15 +57,15 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
