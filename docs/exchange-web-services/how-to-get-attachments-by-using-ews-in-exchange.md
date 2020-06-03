@@ -3,35 +3,35 @@ title: Abrufen von Anlagen mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 12ce3cc0-a201-42e4-93e1-1f57961ff711
 description: Hier erhalten Sie Informationen zum Abrufen von Anlagen aus EWS mithilfe der verwalteten EWS-API oder von EWS in Exchange.
-ms.openlocfilehash: 2e1b3cfb346abd068695f66b01f9e34f1f5ff03f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: de3e3ebfbcb16935130203dfed50f255bd59be7b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756897"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528083"
 ---
-# <a name="get-attachments-by-using-ews-in-exchange"></a><span data-ttu-id="c8c15-103">Abrufen von Anlagen mithilfe von EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="c8c15-103">How to: Get attachments by using EWS in Exchange</span></span>
+# <a name="get-attachments-by-using-ews-in-exchange"></a><span data-ttu-id="93ab0-103">Abrufen von Anlagen mithilfe von EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="93ab0-103">Get attachments by using EWS in Exchange</span></span>
 
-<span data-ttu-id="c8c15-104">Hier erhalten Sie Informationen zum Abrufen von Anlagen aus EWS mithilfe der verwalteten EWS-API oder von EWS in Exchange.</span><span class="sxs-lookup"><span data-stu-id="c8c15-104">Learn how to get attachments from EWS items by using the EWS Managed API or EWS in Exchange.</span></span>
+<span data-ttu-id="93ab0-104">Hier erhalten Sie Informationen zum Abrufen von Anlagen aus EWS mithilfe der verwalteten EWS-API oder von EWS in Exchange.</span><span class="sxs-lookup"><span data-stu-id="93ab0-104">Learn how to get attachments from EWS items by using the EWS Managed API or EWS in Exchange.</span></span>
   
-<span data-ttu-id="c8c15-p101">Sie können Anlagen von einem Elemente mithilfe der verwalteten EWS-API oder mithilfe von EWS abrufen. Da der ursprüngliche Aufruf zum Abrufen eines Elements nur Metadaten zu der Anlagenauflistung in dem Element enthält, ist das Abrufen von Anlagen immer ein Prozess mit Schritten. Zuerst wird das Element abgerufen. Dann wird die Anlage abgerufen.</span><span class="sxs-lookup"><span data-stu-id="c8c15-p101">You can get attachments from an item by using the EWS Managed API or EWS. Because the initial call to get an item only includes metadata about the attachment collection on the item, retrieving attachments is always a two-step process. First, retrieve the item. Next, retrieve the attachment.</span></span>
+<span data-ttu-id="93ab0-p101">Sie können Anlagen von einem Elemente mithilfe der verwalteten EWS-API oder mithilfe von EWS abrufen. Da der ursprüngliche Aufruf zum Abrufen eines Elements nur Metadaten zu der Anlagenauflistung in dem Element enthält, ist das Abrufen von Anlagen immer ein Prozess mit Schritten. Zuerst wird das Element abgerufen. Dann wird die Anlage abgerufen.</span><span class="sxs-lookup"><span data-stu-id="93ab0-p101">You can get attachments from an item by using the EWS Managed API or EWS. Because the initial call to get an item only includes metadata about the attachment collection on the item, retrieving attachments is always a two-step process. First, retrieve the item. Next, retrieve the attachment.</span></span>
   
-<span data-ttu-id="c8c15-109">**Tabelle 1. Verwaltete EWS-API-Methoden und EWS-Operationen für das Hinzufügen von Anlagen**</span><span class="sxs-lookup"><span data-stu-id="c8c15-109">**Table 1. EWS Managed API methods and EWS operations for adding attachments**</span></span>
+<span data-ttu-id="93ab0-109">**Tabelle 1. Verwaltete EWS-API-Methoden und EWS-Operationen für das Hinzufügen von Anlagen**</span><span class="sxs-lookup"><span data-stu-id="93ab0-109">**Table 1. EWS Managed API methods and EWS operations for adding attachments**</span></span>
 
-|<span data-ttu-id="c8c15-110">**Aufgabe**</span><span class="sxs-lookup"><span data-stu-id="c8c15-110">**Task**</span></span>|<span data-ttu-id="c8c15-111">**EWS Managed API-Methode**</span><span class="sxs-lookup"><span data-stu-id="c8c15-111">**EWS Managed API method**</span></span>|<span data-ttu-id="c8c15-112">**EWS-Vorgang**</span><span class="sxs-lookup"><span data-stu-id="c8c15-112">**EWS operation**</span></span>|
+|<span data-ttu-id="93ab0-110">**Aufgabe**</span><span class="sxs-lookup"><span data-stu-id="93ab0-110">**Task**</span></span>|<span data-ttu-id="93ab0-111">**EWS Managed API-Methode**</span><span class="sxs-lookup"><span data-stu-id="93ab0-111">**EWS Managed API method**</span></span>|<span data-ttu-id="93ab0-112">**EWS-Vorgang**</span><span class="sxs-lookup"><span data-stu-id="93ab0-112">**EWS operation**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="c8c15-113">Abrufen von Elementanlagen</span><span class="sxs-lookup"><span data-stu-id="c8c15-113">Get item attachments</span></span>  <br/> |<span data-ttu-id="c8c15-114">[Item.Bind](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) followed by [ItemAttachment.Load](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.itemattachment.load%28v=exchg.80%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="c8c15-114">[Item.Bind](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) followed by [ItemAttachment.Load](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.itemattachment.load%28v=exchg.80%29.aspx)</span></span> <br/> |<span data-ttu-id="c8c15-115">[GetItem ](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) gefolgt von [GetAttachment ](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="c8c15-115">[GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) followed by [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx)</span></span> <br/> |
-|<span data-ttu-id="c8c15-116">Abrufen von Dateianlagen</span><span class="sxs-lookup"><span data-stu-id="c8c15-116">Get file attachments</span></span>  <br/> |<span data-ttu-id="c8c15-117">[Item.Bind](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) followed by [FileAttachment.Load](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.fileattachment.load%28v=exchg.80%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="c8c15-117">[Item.Bind](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) followed by [FileAttachment.Load](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.fileattachment.load%28v=exchg.80%29.aspx)</span></span> <br/> |<span data-ttu-id="c8c15-118">[GetItem ](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) gefolgt von [GetAttachment ](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="c8c15-118">[GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) followed by [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx)</span></span> <br/> |
+|<span data-ttu-id="93ab0-113">Abrufen von Elementanlagen</span><span class="sxs-lookup"><span data-stu-id="93ab0-113">Get item attachments</span></span>  <br/> |<span data-ttu-id="93ab0-114">[Item.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) followed by [ItemAttachment.Load](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemattachment.load%28v=exchg.80%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="93ab0-114">[Item.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) followed by [ItemAttachment.Load](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemattachment.load%28v=exchg.80%29.aspx)</span></span> <br/> |<span data-ttu-id="93ab0-115">[GetItem ](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) gefolgt von [GetAttachment ](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="93ab0-115">[GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) followed by [GetAttachment](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx)</span></span> <br/> |
+|<span data-ttu-id="93ab0-116">Abrufen von Dateianlagen</span><span class="sxs-lookup"><span data-stu-id="93ab0-116">Get file attachments</span></span>  <br/> |<span data-ttu-id="93ab0-117">[Item.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) followed by [FileAttachment.Load](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.fileattachment.load%28v=exchg.80%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="93ab0-117">[Item.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) followed by [FileAttachment.Load](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.fileattachment.load%28v=exchg.80%29.aspx)</span></span> <br/> |<span data-ttu-id="93ab0-118">[GetItem ](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) gefolgt von [GetAttachment ](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="93ab0-118">[GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) followed by [GetAttachment](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx)</span></span> <br/> |
    
-## <a name="get-attachments-from-an-email-by-using-the-ews-managed-api"></a><span data-ttu-id="c8c15-119">Abrufen von Anlagen aus einer E-Mail mithilfe der verwalteten EWS-API</span><span class="sxs-lookup"><span data-stu-id="c8c15-119">Get attachments from an email by using the EWS Managed API</span></span>
-<span data-ttu-id="c8c15-120"><a name="bk_getattachewsma"> </a></span><span class="sxs-lookup"><span data-stu-id="c8c15-120"></span></span>
+## <a name="get-attachments-from-an-email-by-using-the-ews-managed-api"></a><span data-ttu-id="93ab0-119">Abrufen von Anlagen aus einer E-Mail mithilfe der verwalteten EWS-API</span><span class="sxs-lookup"><span data-stu-id="93ab0-119">Get attachments from an email by using the EWS Managed API</span></span>
+<span data-ttu-id="93ab0-120"><a name="bk_getattachewsma"> </a></span><span class="sxs-lookup"><span data-stu-id="93ab0-120"><a name="bk_getattachewsma"> </a></span></span>
 
-<span data-ttu-id="c8c15-121">Im folgenden Codebeispiel wird gezeigt, wie ein [EmailMessage](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx)-Objekt mithilfe der **Bind**-Methode abgerufen wird und wie dann die Anlagensammlung durchlaufen und die Methode **FileAttachment.Load** oder **ItemAttachment.Load** für jede Anlage aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="c8c15-121">The following code example shows how to get an [EmailMessage](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) object by using the **Bind** method, then iterate through the attachment collection and call the **FileAttachment.Load** or **ItemAttachment.Load** method on each attachment as appropriate.</span></span> <span data-ttu-id="c8c15-122">Jede Dateianlage wird im Ordner „C:\temp\“ gespeichert, und jede Elementanlage wird in den Speicher geladen.</span><span class="sxs-lookup"><span data-stu-id="c8c15-122">Each file attachment is saved to the C:\temp\ folder, and each item attachment is loaded into memory.</span></span> <span data-ttu-id="c8c15-123">Informationen dazu, wie Sie eine Elementanlage speichern, finden Sie unter [Speichern einer E-Mail-Nachricht mithilfe der verwalteten EWS-API](#bk_saveitemattach).</span><span class="sxs-lookup"><span data-stu-id="c8c15-123">For information about how to save an item attachment, see [Save an attached email by using the EWS Managed API](#bk_saveitemattach).</span></span>
+<span data-ttu-id="93ab0-p102">The following code example shows how to get an [EmailMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) object by using the **Bind** method, then iterate through the attachment collection and call the **FileAttachment.Load** or **ItemAttachment.Load** method on each attachment as appropriate. Each file attachment is saved to the C:\temp\ folder, and each item attachment is loaded into memory. For information about how to save an item attachment, see [Save an attached email by using the EWS Managed API](#bk_saveitemattach).</span><span class="sxs-lookup"><span data-stu-id="93ab0-p102">The following code example shows how to get an [EmailMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) object by using the **Bind** method, then iterate through the attachment collection and call the **FileAttachment.Load** or **ItemAttachment.Load** method on each attachment as appropriate. Each file attachment is saved to the C:\temp\ folder, and each item attachment is loaded into memory. For information about how to save an item attachment, see [Save an attached email by using the EWS Managed API](#bk_saveitemattach).</span></span>
   
-<span data-ttu-id="c8c15-124">In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist, dass **itemId** die [ItemId](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) der Nachricht ist, von der Anlagen abgerufen werden, und dass der Benutzer für einen Exchange-Server authentifiziert wurde.</span><span class="sxs-lookup"><span data-stu-id="c8c15-124">This example assumes that **service** is a valid [ExchangeService](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) object, that **itemId** is the [ItemId](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) of the message from which attachments will be retrieved, and that the user has been authenticated to an Exchange server.</span></span> 
+<span data-ttu-id="93ab0-124">In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist, dass **itemId** die [ItemId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) der Nachricht ist, von der Anlagen abgerufen werden, und dass der Benutzer für einen Exchange-Server authentifiziert wurde.</span><span class="sxs-lookup"><span data-stu-id="93ab0-124">This example assumes that **service** is a valid [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) object, that **itemId** is the [ItemId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) of the message from which attachments will be retrieved, and that the user has been authenticated to an Exchange server.</span></span> 
   
 ```cs
 public static void GetAttachmentsFromEmail(ExchangeService service, ItemId itemId)
@@ -64,19 +64,19 @@ public static void GetAttachmentsFromEmail(ExchangeService service, ItemId itemI
 }
 ```
 
-## <a name="get-an-attachment-from-an-email-by-using-ews"></a><span data-ttu-id="c8c15-125">Abrufen einer Anlage aus einer E-Mail mithilfe von EWS</span><span class="sxs-lookup"><span data-stu-id="c8c15-125">Get an attachment from an email by using EWS</span></span>
-<span data-ttu-id="c8c15-126"><a name="bk_getattachewsma"> </a></span><span class="sxs-lookup"><span data-stu-id="c8c15-126"></span></span>
+## <a name="get-an-attachment-from-an-email-by-using-ews"></a><span data-ttu-id="93ab0-125">Abrufen einer Anlage aus einer E-Mail mithilfe von EWS</span><span class="sxs-lookup"><span data-stu-id="93ab0-125">Get an attachment from an email by using EWS</span></span>
+<span data-ttu-id="93ab0-126"><a name="bk_getattachewsma"> </a></span><span class="sxs-lookup"><span data-stu-id="93ab0-126"><a name="bk_getattachewsma"> </a></span></span>
 
-<span data-ttu-id="c8c15-p103">Um Anlagen mithilfe von EWS abzurufen, müssen Sie zuerst die Nachricht und die Anlagenauflistung abrufen, um die [AttachmentId (GetAttachment und DeleteAttachment)](http://msdn.microsoft.com/library/4bea1cb5-0a0f-4e14-9b09-f91af8cf9899%28Office.15%29.aspx) der abzurufenden Anlage zu erhalten. Wenn Sie einen oder mehrere abzurufende **AttachmentId**-Werte haben, rufen Sie den [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx)-Vorgang auf, um alle Eigenschaften für die Anlage zu laden.</span><span class="sxs-lookup"><span data-stu-id="c8c15-p103">To get attachments by using EWS, you first need to retrieve the message and the attachment collection to get the [AttachmentId (GetAttachment and DeleteAttachment)](http://msdn.microsoft.com/library/4bea1cb5-0a0f-4e14-9b09-f91af8cf9899%28Office.15%29.aspx) of the attachment to retrieve. After you have one or more **AttachmentId** values to retrieve, call the [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) operation to load all the properties for the attachment.</span></span> 
+<span data-ttu-id="93ab0-p103">Um Anlagen mithilfe von EWS abzurufen, müssen Sie zuerst die Nachricht und die Anlagenauflistung abrufen, um die [AttachmentId (GetAttachment und DeleteAttachment)](https://msdn.microsoft.com/library/4bea1cb5-0a0f-4e14-9b09-f91af8cf9899%28Office.15%29.aspx) der abzurufenden Anlage zu erhalten. Wenn Sie einen oder mehrere abzurufende **AttachmentId**-Werte haben, rufen Sie den [GetAttachment](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx)-Vorgang auf, um alle Eigenschaften für die Anlage zu laden.</span><span class="sxs-lookup"><span data-stu-id="93ab0-p103">To get attachments by using EWS, you first need to retrieve the message and the attachment collection to get the [AttachmentId (GetAttachment and DeleteAttachment)](https://msdn.microsoft.com/library/4bea1cb5-0a0f-4e14-9b09-f91af8cf9899%28Office.15%29.aspx) of the attachment to retrieve. After you have one or more **AttachmentId** values to retrieve, call the [GetAttachment](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) operation to load all the properties for the attachment.</span></span> 
   
-<span data-ttu-id="c8c15-p104">Im folgenden Codebeispiel wird veranschaulicht, wie der [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx)-Vorgang zum Abrufen einer E-Mail und der Anlagenauflistung in der Nachricht verwendet wird. Dies ist auch die erste XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die verwaltete EWS-API verwenden, um [alle Anlagen aus einer E-Mail abzurufen](#bk_getattachewsma). Die Werte einiger Attribute wurden zur besseren Lesbarkeit gekürzt.</span><span class="sxs-lookup"><span data-stu-id="c8c15-p104">The following code example shows how to use the [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) operation to get an email message and the collection of attachments on the message. This is also the first XML request that the EWS Managed API sends when you use the EWS Managed API to [get all attachments from an email](#bk_getattachewsma). The values of some attributes are shortened for readability.</span></span>
+<span data-ttu-id="93ab0-p104">Im folgenden Codebeispiel wird veranschaulicht, wie der [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx)-Vorgang zum Abrufen einer E-Mail und der Anlagenauflistung in der Nachricht verwendet wird. Dies ist auch die erste XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die verwaltete EWS-API verwenden, um [alle Anlagen aus einer E-Mail abzurufen](#bk_getattachewsma). Die Werte einiger Attribute wurden zur besseren Lesbarkeit gekürzt.</span><span class="sxs-lookup"><span data-stu-id="93ab0-p104">The following code example shows how to use the [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) operation to get an email message and the collection of attachments on the message. This is also the first XML request that the EWS Managed API sends when you use the EWS Managed API to [get all attachments from an email](#bk_getattachewsma). The values of some attributes are shortened for readability.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange207_SP1" />
   </soap:Header>
@@ -96,26 +96,26 @@ public static void GetAttachmentsFromEmail(ExchangeService service, ItemId itemI
 </soap:Envelope>
 ```
 
-<span data-ttu-id="c8c15-132">Der Server antwortet auf die **GetItem**-Anforderung mit einer [GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](http://msdn.microsoft.com/de-DE/library/aa580757%28v=exchg.150%29.aspx)-Wert **NoError** umfasst, der angibt, dass die E-Mail erfolgreich abgerufen wurde, sowie [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx)-Werte der vorhandenen Anlagen.</span><span class="sxs-lookup"><span data-stu-id="c8c15-132">The server responds to the **GetItem** request with a [GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) message that includes a [ResponseCode](http://msdn.microsoft.com/de-DE/library/aa580757%28v=exchg.150%29.aspx) value of **NoError**, which indicates that the email was retrieved successfully, and the [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) values of the existing attachments.</span></span> 
+<span data-ttu-id="93ab0-132">Der Server antwortet auf die **GetItem**-Anforderung mit einer [GetItemResponse](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx)-Wert **NoError** umfasst, der angibt, dass die E-Mail erfolgreich abgerufen wurde, sowie [AttachmentId](https://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx)-Werte der vorhandenen Anlagen.</span><span class="sxs-lookup"><span data-stu-id="93ab0-132">The server responds to the **GetItem** request with a [GetItemResponse](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) message that includes a [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) value of **NoError**, which indicates that the email was retrieved successfully, and the [AttachmentId](https://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) values of the existing attachments.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="939"
                          MinorBuildNumber="12"
                          Version="V2_11"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -150,14 +150,14 @@ public static void GetAttachmentsFromEmail(ExchangeService service, ItemId itemI
 
 ```
 
-<span data-ttu-id="c8c15-133">Da Sie nun über die [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx)-Werte verfügen, rufen Sie [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) für jede Anlage auf, die Sie abrufen möchten.</span><span class="sxs-lookup"><span data-stu-id="c8c15-133">Now that you have the [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) values, call [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) on each attachment you want to retrieve.</span></span> 
+<span data-ttu-id="93ab0-133">Da Sie nun über die [AttachmentId](https://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx)-Werte verfügen, rufen Sie [GetAttachment](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) für jede Anlage auf, die Sie abrufen möchten.</span><span class="sxs-lookup"><span data-stu-id="93ab0-133">Now that you have the [AttachmentId](https://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) values, call [GetAttachment](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) on each attachment you want to retrieve.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -171,26 +171,26 @@ public static void GetAttachmentsFromEmail(ExchangeService service, ItemId itemI
 </soap:Envelope>
 ```
 
-<span data-ttu-id="c8c15-134">Beim Abrufen einer Elementanlage reagiert der Server auf die **GetAttachment**-Anforderung mit einer [GetAttachmentResponse](http://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](http://msdn.microsoft.com/de-DE/library/aa580757%28v=exchg.150%29.aspx)-Wert von **NoError** umfasst, der angibt, dass die Anlage erfolgreich abgerufen wurde, sowie alle Elemente für das angefügte Element, in diesem Fall eine E-Mai-Nachricht.</span><span class="sxs-lookup"><span data-stu-id="c8c15-134">When retrieving an item attachment, the server responds to the **GetAttachment** request with a [GetAttachmentResponse](http://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx) message that includes a [ResponseCode](http://msdn.microsoft.com/de-DE/library/aa580757%28v=exchg.150%29.aspx) value of **NoError**, which indicates that the attachment was retrieved successfully, and all the elements for the attached item, which in this case is an email message.</span></span>
+<span data-ttu-id="93ab0-134">Beim Abrufen einer Elementanlage reagiert der Server auf die **GetAttachment**-Anforderung mit einer [GetAttachmentResponse](https://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx)-Wert von **NoError** umfasst, der angibt, dass die Anlage erfolgreich abgerufen wurde, sowie alle Elemente für das angefügte Element, in diesem Fall eine E-Mai-Nachricht.</span><span class="sxs-lookup"><span data-stu-id="93ab0-134">When retrieving an item attachment, the server responds to the **GetAttachment** request with a [GetAttachmentResponse](https://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx) message that includes a [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) value of **NoError**, which indicates that the attachment was retrieved successfully, and all the elements for the attached item, which in this case is an email message.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="939"
                          MinorBuildNumber="12"
                          Version="V2_11"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                             xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                             xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -259,26 +259,26 @@ public static void GetAttachmentsFromEmail(ExchangeService service, ItemId itemI
 </s:Envelope>
 ```
 
-<span data-ttu-id="c8c15-135">Beim Abrufen einer Dateianlage reagiert der Server auf die **GetAttachment**-Anforderung mit einer [GetAttachmentResponse](http://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](http://msdn.microsoft.com/de-DE/library/aa580757%28v=exchg.150%29.aspx)-Wert von **NoError** umfasst, der angibt, dass die Anlage erfolgreich abgerufen wurde, sowie alle Elemente der Dateianlage.</span><span class="sxs-lookup"><span data-stu-id="c8c15-135">When retrieving a file attachment, the server responds to the **GetAttachment** request with a [GetAttachmentResponse](http://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx) message that includes a [ResponseCode](http://msdn.microsoft.com/de-DE/library/aa580757%28v=exchg.150%29.aspx) value of **NoError**, which indicates that the attachment was retrieved successfully, and all the elements of the file attachment.</span></span>
+<span data-ttu-id="93ab0-135">Beim Abrufen einer Dateianlage reagiert der Server auf die **GetAttachment**-Anforderung mit einer [GetAttachmentResponse](https://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx)-Nachricht, die einen [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx)-Wert von **NoError** umfasst, der angibt, dass die Anlage erfolgreich abgerufen wurde, sowie alle Elemente der Dateianlage.</span><span class="sxs-lookup"><span data-stu-id="93ab0-135">When retrieving a file attachment, the server responds to the **GetAttachment** request with a [GetAttachmentResponse](https://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx) message that includes a [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) value of **NoError**, which indicates that the attachment was retrieved successfully, and all the elements of the file attachment.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="939"
                          MinorBuildNumber="12"
                          Version="V2_11"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                             xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                             xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -296,12 +296,12 @@ public static void GetAttachmentsFromEmail(ExchangeService service, ItemId itemI
 </s:Envelope>
 ```
 
-## <a name="save-an-attached-email-by-using-the-ews-managed-api"></a><span data-ttu-id="c8c15-136">Speichern einer E-Mail-Nachricht mithilfe der verwalteten EWS-API</span><span class="sxs-lookup"><span data-stu-id="c8c15-136">Save an attached email by using the EWS Managed API</span></span>
-<span data-ttu-id="c8c15-137"><a name="bk_saveitemattach"> </a></span><span class="sxs-lookup"><span data-stu-id="c8c15-137"></span></span>
+## <a name="save-an-attached-email-by-using-the-ews-managed-api"></a><span data-ttu-id="93ab0-136">Speichern einer E-Mail-Nachricht mithilfe der verwalteten EWS-API</span><span class="sxs-lookup"><span data-stu-id="93ab0-136">Save an attached email by using the EWS Managed API</span></span>
+<span data-ttu-id="93ab0-137"><a name="bk_saveitemattach"> </a></span><span class="sxs-lookup"><span data-stu-id="93ab0-137"><a name="bk_saveitemattach"> </a></span></span>
 
-<span data-ttu-id="c8c15-138">Um den Inhalt einer E-Mail-Anlage mithilfe der verwalteten EWS-API zu speichern, müssen Sie den [MimeContent](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) in einer Datei speichern.</span><span class="sxs-lookup"><span data-stu-id="c8c15-138">In order to save the contents of an email attachment using the EWS Managed API, you need to save the [MimeContent](http://msdn.microsoft.com/de-DE/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) to a file.</span></span> <span data-ttu-id="c8c15-139">Dabei gehen alle erweiterten Eigenschaften verloren, die für das Element festgelegt wurden, z. B. Nachverfolgungskennzeichnungen und Kategorien.</span><span class="sxs-lookup"><span data-stu-id="c8c15-139">In doing so, you will lose any extended properties set on the item, such as follow-up flags and categories.</span></span> <span data-ttu-id="c8c15-140">In diesem Beispiel wird die E-Mail-Anlage im Ordner „C:\temp\“ gespeichert.</span><span class="sxs-lookup"><span data-stu-id="c8c15-140">This example saves the email attachment to the to the C:\temp\ folder.</span></span> 
+<span data-ttu-id="93ab0-p105">In order to save the contents of an email attachment using the EWS Managed API, you need to save the [MimeContent](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) to a file. In doing so, you will lose any extended properties set on the item, such as follow-up flags and categories. This example saves the email attachment to the to the C:\temp\ folder.</span><span class="sxs-lookup"><span data-stu-id="93ab0-p105">In order to save the contents of an email attachment using the EWS Managed API, you need to save the [MimeContent](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) to a file. In doing so, you will lose any extended properties set on the item, such as follow-up flags and categories. This example saves the email attachment to the to the C:\temp\ folder.</span></span> 
   
-<span data-ttu-id="c8c15-141">Beachten Sie, dass Sie die Elementanlage nicht in einen anderen Ordner verschieben oder kopieren können, da die Elementanlage kein stark typisiertes Element ist. Wenn Sie also versuchen, eine Anlage in einen anderen Ordner zu verschieben, verwenden Sie das folgende Codebeispiel, und [importieren Sie dann die Datei](how-to-import-items-by-using-ews-in-exchange.md) in einen anderen Ordner.</span><span class="sxs-lookup"><span data-stu-id="c8c15-141">Note that you cannot move or copy the item attachment to another folder because the item attachment is not a strongly-typed item, so if you're trying to move an attachment to a different folder, use the following code example and then [import the file](how-to-import-items-by-using-ews-in-exchange.md) into a different folder.</span></span> 
+<span data-ttu-id="93ab0-141">Beachten Sie, dass Sie die Elementanlage nicht in einen anderen Ordner verschieben oder kopieren können, da die Elementanlage kein stark typisiertes Element ist. Wenn Sie also versuchen, eine Anlage in einen anderen Ordner zu verschieben, verwenden Sie das folgende Codebeispiel, und [importieren Sie dann die Datei](how-to-import-items-by-using-ews-in-exchange.md) in einen anderen Ordner.</span><span class="sxs-lookup"><span data-stu-id="93ab0-141">Note that you cannot move or copy the item attachment to another folder because the item attachment is not a strongly-typed item, so if you're trying to move an attachment to a different folder, use the following code example and then [import the file](how-to-import-items-by-using-ews-in-exchange.md) into a different folder.</span></span> 
   
 ```cs
 public static void SaveEmailAttachment(ExchangeService service, ItemId itemId)
@@ -325,13 +325,13 @@ public static void SaveEmailAttachment(ExchangeService service, ItemId itemId)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="c8c15-142">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="c8c15-142">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="93ab0-142">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="93ab0-142">See also</span></span>
 
 
-- [<span data-ttu-id="c8c15-143">Anlagen und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="c8c15-143">Attachments and EWS in Exchange</span></span>](attachments-and-ews-in-exchange.md)
+- [<span data-ttu-id="93ab0-143">Anlagen und EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="93ab0-143">Attachments and EWS in Exchange</span></span>](attachments-and-ews-in-exchange.md)
     
-- [<span data-ttu-id="c8c15-144">Hinzufügen von Anlagen mithilfe von EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="c8c15-144">How to: Add attachments by using EWS in Exchange</span></span>](how-to-add-attachments-by-using-ews-in-exchange.md)
+- [<span data-ttu-id="93ab0-144">Hinzufügen von Anlagen mithilfe von EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="93ab0-144">Add attachments by using EWS in Exchange</span></span>](how-to-add-attachments-by-using-ews-in-exchange.md)
     
-- [<span data-ttu-id="c8c15-145">Löschen von Anlagen mithilfe von EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="c8c15-145">How to: Delete attachments by using EWS in Exchange</span></span>](how-to-delete-attachments-by-using-ews-in-exchange.md)
+- [<span data-ttu-id="93ab0-145">Löschen von Anlagen mithilfe von EWS in Exchange</span><span class="sxs-lookup"><span data-stu-id="93ab0-145">Delete attachments by using EWS in Exchange</span></span>](how-to-delete-attachments-by-using-ews-in-exchange.md)
     
 
