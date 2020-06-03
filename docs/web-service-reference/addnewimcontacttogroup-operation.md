@@ -12,7 +12,7 @@ ms.openlocfilehash: e91cc067b4161b366e6713a9adc16873e63b1562
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465029"
 ---
 # <a name="addnewimcontacttogroup-operation"></a>AddNewImContactToGroup-Vorgang
@@ -314,5 +314,5 @@ Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang s
 [SetImGroup-Vorgang](setimgroup-operation.md)
 
 
-[Benutzer und Kontakte in EWS in Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
+[Personen und Kontakte in EWS in Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
 

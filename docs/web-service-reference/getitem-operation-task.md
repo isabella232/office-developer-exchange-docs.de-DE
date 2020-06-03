@@ -16,7 +16,7 @@ ms.openlocfilehash: 17a23d4c2a35761e831610f3514c980a5a67e12b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463335"
 ---
 # <a name="getitem-operation-task"></a>GetItem-Vorgang (Aufgabe)
@@ -152,9 +152,9 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Items](items.md)
+- [Elemente](items.md)
     
-- [Aufgabe](task.md)
+- [Task](task.md)
     
 - [ItemId](itemid.md)
     

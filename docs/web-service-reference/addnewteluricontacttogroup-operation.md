@@ -12,7 +12,7 @@ ms.openlocfilehash: 91228ec627ad928d2f1837c135af24846f811b1c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44464945"
 ---
 # <a name="addnewteluricontacttogroup-operation"></a>AddNewTelUriContactToGroup-Vorgang
@@ -256,6 +256,6 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
 
 - [EWS-Operationen in Exchange](ews-operations-in-exchange.md)
     
-- [Benutzer und Kontakte in EWS in Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
+- [Personen und Kontakte in EWS in Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     
 

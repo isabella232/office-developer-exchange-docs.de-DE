@@ -12,7 +12,7 @@ ms.openlocfilehash: c6e11fa5b55aa514b12f4f52bc9346ac213d3781
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463727"
 ---
 # <a name="create-exchange-management-shell-tools"></a>Erstellen von Exchange-Verwaltungsshell Tools
@@ -45,8 +45,7 @@ Die Exchange-Verwaltungsshell-Cmdlets akzeptieren und geben Objekte zurück. Ein
 ## <a name="see-also"></a>Siehe auch
 
 - [Exchange-Verwaltungsshell Namespaces](exchange-management-shell-namespaces.md)  
-- 
-  [Exchange Server-PowerShell (Exchange-Verwaltungsshell)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps)  
+- [Exchange Server-PowerShell (Exchange-Verwaltungsshell)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps)  
 - [Windows PowerShell](https://msdn.microsoft.com/library/dd835506%28v=vs.85%29.aspx)
     
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 24d09d63cab6805194e35031d8590290573de0a9
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463391"
 ---
 # <a name="archiveitemresponsemessage"></a>ArchiveItemResponseMessage
@@ -44,7 +44,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Erfolg  <br/> |Gibt den Erfolg an.  <br/> |
+|Erfolgreich  <br/> |Gibt den Erfolg an.  <br/> |
 |Warnung  <br/> |Gibt eine Warnung an.  <br/> |
 |Fehler (ungefährer Wortlaut)  <br/> |Gibt einen Fehler an.  <br/> |
    
@@ -53,7 +53,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Wird derzeit nicht verwendet und für die zukünftige Verwendung reserviert.  <br/> |
-|[Items](items.md) <br/> |Enthält ein Array von Elementen.  <br/> |
+|[Elemente](items.md) <br/> |Enthält ein Array von Elementen.  <br/> |
 |[MessageText](messagetext.md) <br/> |Enthält eine Textbeschreibung des Status der Antwort.  <br/> |
 |[Messagexml verwendet](messagexml.md) <br/> |Bietet zusätzliche Fehlerantwortinformationen.  <br/> |
 |[ResponseCode](responsecode.md) <br/> |Stellt Statusinformationen zur Anforderung bereit.  <br/> |

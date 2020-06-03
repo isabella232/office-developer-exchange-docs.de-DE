@@ -12,7 +12,7 @@ ms.openlocfilehash: f32fa0ceb301fca88cb0275e99ee9417dea87d2e
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465219"
 ---
 # <a name="retentionid"></a>Para retentionid vom
@@ -57,6 +57,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
-|Kann leer sein  <br/> |false  <br/> |
+|Kann leer sein  <br/> |False  <br/> |
    
 

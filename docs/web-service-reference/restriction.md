@@ -16,7 +16,7 @@ ms.openlocfilehash: 6037ba15417d67d393ca70f3edf2248749c396e1
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465289"
 ---
 # <a name="restriction"></a>Einschränkung
@@ -52,7 +52,7 @@ Keine.
 |[IsLessThan](islessthan.md) <br/> |Stellt einen Suchausdruck dar, der eine Eigenschaft mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und **true** zurückgibt, wenn die erste Eigenschaft kleiner als der Wert oder die Eigenschaft ist.  <br/> |
 |[IsLessThanOrEqualTo](islessthanorequalto.md) <br/> |Stellt einen Suchausdruck dar, der eine Eigenschaft mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und **true** zurückgibt, wenn die erste Eigenschaft kleiner als oder gleich dem Wert oder der Eigenschaft ist.  <br/> |
 |[IsNotEqualTo](isnotequalto.md) <br/> |Stellt einen Suchausdruck dar, der einer Eigenschaft mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und **true** zurückgibt, wenn die Wert nicht identisch sind.  <br/> |
-|[Not](not.md) <br/> |Stellt einen Suchausdruck dar, der den booleschen Wert des darin enthaltenen Suchausdrucks negiert.  <br/> |
+|[not](not.md) <br/> |Stellt einen Suchausdruck dar, der den booleschen Wert des darin enthaltenen Suchausdrucks negiert.  <br/> |
 |[- oder -](or.md) <br/> |Stellt einen Suchausdruck dar, der eine logische **or** -Operation für den darin enthaltenen Suchausdruck ausführt. Das **or** -Element gibt **true** zurück, wenn eines der untergeordneten Elemente **true**zurückgibt.  <br/> |
 |[SearchExpression](searchexpression.md) <br/> |Stellt das ersetzte Element innerhalb einer Einschränkung dar. Dieses Element wird in einem XML-Instanzendokument nicht verwendet.  <br/> |
    

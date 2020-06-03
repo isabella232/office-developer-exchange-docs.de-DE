@@ -12,7 +12,7 @@ ms.openlocfilehash: d1e18122e67c36babbc8bf01d305309e2b17b568
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463433"
 ---
 # <a name="archiveitem-operation"></a>ArchiveItem-Vorgang
@@ -115,7 +115,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
 - [ResponseMessages](responsemessages.md)   
 - [ArchiveItemResponseMessage](archiveitemresponsemessage.md)    
 - [ResponseCode](responsecode.md)    
-- [Items](items.md)
+- [Elemente](items.md)
     
 ## <a name="archiveitem-operation-error-response"></a>Fehlerantwort des ArchiveItem-Vorgangs
 
@@ -160,7 +160,7 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
 - [MessageText](messagetext.md)    
 - [ResponseCode](responsecode.md)    
 - [DescriptiveLinkKey](descriptivelinkkey.md)    
-- [Items](items.md)
+- [Elemente](items.md)
     
 Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
   

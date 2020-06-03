@@ -16,7 +16,7 @@ ms.openlocfilehash: 6bc4b9cfe96c6c83cbeb623ec176e33177356bbc
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465429"
 ---
 # <a name="parentfolderids"></a>ParentFolderIds
@@ -94,7 +94,7 @@ Das **ParentFolderIds** -Element muss entweder die [Folder](folderid.md) -oder d
    
 ## <a name="see-also"></a>Siehe auch
 
-- [FindFolder Operation](findfolder-operation.md)  
+- [FindFolder-Vorgang](findfolder-operation.md)  
 - [FindItem-Vorgang](finditem-operation.md) 
 - [ResolveNames-Vorgang](resolvenames-operation.md)
 

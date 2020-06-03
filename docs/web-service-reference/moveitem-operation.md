@@ -16,7 +16,7 @@ ms.openlocfilehash: 6a455e483ad2e5c84b91cfaa7562f4f1ec46a112
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465681"
 ---
 # <a name="moveitem-operation"></a>MoveItem-Vorgang
@@ -128,7 +128,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Items](items.md)
+- [Elemente](items.md)
     
 ## <a name="see-also"></a>Siehe auch
 

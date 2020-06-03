@@ -12,7 +12,7 @@ ms.openlocfilehash: 23167f3c96a6756fe4c6d915a4de91e815e620d9
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44464763"
 ---
 # <a name="archivetag"></a>ArchiveTag
@@ -47,9 +47,9 @@ Keine.
 |[Kontaktperson](contact.md) <br/> |Stellt ein Kontaktelement im Exchange-Speicher.  <br/> |
 |[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Kontakteordner dar, der in einem Postfach enthalten ist.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
-|[Folder](folder.md) <br/> |Definiert einen Ordner zum Erstellen, abrufen, suchen, synchronisieren oder aktualisieren.  <br/> |
+|[Ordner](folder.md) <br/> |Definiert einen Ordner zum Erstellen, abrufen, suchen, synchronisieren oder aktualisieren.  <br/> |
 |[Element](item.md) <br/> |Stellt ein generisches Element in der Exchange-Informationsspeicher dar.  <br/> |
-|[Nachricht](message-ex15websvcsotherref.md) <br/> |Stellt eine Microsoft Exchange e-Mail-Nachricht dar.  <br/> |
+|[Meldung](message-ex15websvcsotherref.md) <br/> |Stellt eine Microsoft Exchange e-Mail-Nachricht dar.  <br/> |
 |[PostItem](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Informationsspeicher dar.  <br/> |
 |[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner dar, der in einem Postfach enthalten ist.  <br/> |
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |

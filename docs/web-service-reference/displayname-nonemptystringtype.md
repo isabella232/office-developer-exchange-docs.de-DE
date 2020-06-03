@@ -12,7 +12,7 @@ ms.openlocfilehash: 0b1dff63583c5b449980288134fb83c0256e2e8c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463664"
 ---
 # <a name="displayname-nonemptystringtype"></a>DisplayName (NonEmptyStringType)
@@ -57,6 +57,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types. xsd  <br/> |
-|Kann leer sein  <br/> |false  <br/> |
+|Kann leer sein  <br/> |False  <br/> |
    
 

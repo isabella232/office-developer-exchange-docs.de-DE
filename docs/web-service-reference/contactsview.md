@@ -16,7 +16,7 @@ ms.openlocfilehash: 23c3fe13c44cdd0e5a054ecb3378bc3d633e55aa
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463818"
 ---
 # <a name="contactsview"></a>ContactsView
@@ -103,5 +103,5 @@ Im folgenden Beispiel einer Anforderung wird veranschaulicht, wie die ersten dre
 ## <a name="see-also"></a>Siehe auch
 
 - [FindItem-Vorgang](finditem-operation.md)
-- [Finding Items](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+- [Suchen von Elementen](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

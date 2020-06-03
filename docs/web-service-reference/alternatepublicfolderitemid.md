@@ -16,7 +16,7 @@ ms.openlocfilehash: 11a9fafec78a9bd14e4d98982fd38954d45e4d1a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44464770"
 ---
 # <a name="alternatepublicfolderitemid"></a>AlternatePublicFolderItemId
@@ -44,7 +44,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |:-----|:-----|
 |FolderId  <br/> |Gibt den öffentlichen Ordner an, der das Element für Öffentliche Ordner enthält. Dieses Attribut ist erforderlich.  <br/> |
 |Format  <br/> |Gibt das Format an, das den zu konvertierenden Elementbezeichner für Öffentliche Ordner beschreibt. Dieses Attribut ist erforderlich.  <br/> |
-|Itemid  <br/> |Bezeichner das Element des öffentlichen Ordners, das konvertiert werden soll. Dieses Attribut ist erforderlich.  <br/> |
+|ItemId  <br/> |Bezeichner das Element des öffentlichen Ordners, das konvertiert werden soll. Dieses Attribut ist erforderlich.  <br/> |
    
 #### <a name="format-attribute-values"></a>Formatieren von Attributwerten
 

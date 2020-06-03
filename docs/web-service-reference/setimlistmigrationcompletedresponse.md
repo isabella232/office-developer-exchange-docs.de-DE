@@ -12,7 +12,7 @@ ms.openlocfilehash: 66d85362319df1c88064130e99bba98f21b50db7
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44464819"
 ---
 # <a name="setimlistmigrationcompletedresponse"></a>SetImListMigrationCompletedResponse
@@ -58,6 +58,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
 |Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
-|Kann leer sein  <br/> |false  <br/> |
+|Kann leer sein  <br/> |False  <br/> |
    
 

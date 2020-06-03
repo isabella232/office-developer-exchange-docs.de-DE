@@ -16,7 +16,7 @@ ms.openlocfilehash: 3bad638aa21019472df8f487f1e065d2e725e750
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465751"
 ---
 # <a name="parentfolderid"></a>ParentFolderId
@@ -50,20 +50,20 @@ Keine.
 |:-----|:-----|
 |[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Kalenderordner in einem Postfach dar.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Kalenderelement in einem Postfach dar.  <br/> |
-|[Kontakt](contact.md) <br/> |Stellt ein Kontaktelement in einem Postfach dar.  <br/> |
+|[Contact](contact.md) <br/> |Stellt ein Kontaktelement in einem Postfach dar.  <br/> |
 |[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Ordner Kontakte in einem Postfach dar.  <br/> |
 |[CopiedEvent](copiedevent.md) <br/> |Stellt ein Ereignis dar, in dem ein Element oder ein Ordner kopiert wird.  <br/> |
 |[CreatedEvent](createdevent.md) <br/> |Stellt ein Ereignis dar, in dem ein Element oder ein Ordner erstellt wird.  <br/> |
 |[DeletedEvent](deletedevent.md) <br/> |Stellt ein Ereignis dar, in dem ein Element oder ein Ordner gelöscht wird.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine private Verteilerliste in einem Postfach dar.  <br/> |
-|[Folder](folder.md) <br/> |Stellt einen Ordner in einem Postfach dar.  <br/> |
+|[Ordner](folder.md) <br/> |Stellt einen Ordner in einem Postfach dar.  <br/> |
 |[Element](item.md) <br/> |Stellt ein generisches Exchange-Element dar.  <br/> |
 |[Element (UploadItemType)](item-uploaditemtype.md) <br/> |Stellt ein einzelnes Element dar, das in ein Postfach hochgeladen werden soll.  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine Besprechungsabsage in einem Postfach dar.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechungsnachricht in einem Postfach dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanfrage in einem Postfach dar.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort in einem Postfach dar.  <br/> |
-|[Nachricht](message-ex15websvcsotherref.md) <br/> |Stellt eine e-Mail-Nachricht in einem Postfach dar.  <br/> |
+|[Meldung](message-ex15websvcsotherref.md) <br/> |Stellt eine e-Mail-Nachricht in einem Postfach dar.  <br/> |
 |[ModifiedEvent](modifiedevent.md) <br/> |Stellt ein Ereignis dar, in dem ein Element oder ein Ordner geändert wird.  <br/> |
 |[MovedEvent](movedevent.md) <br/> |Stellt ein Ereignis dar, in dem ein Element oder ein Ordner von einem übergeordneten Ordner in einen anderen übergeordneten Ordner verschoben wird.  <br/> |
 |[NewMailEvent](newmailevent.md) <br/> |Stellt ein Ereignis dar, das durch ein neues e-Mail-Element in einem Postfach ausgelöst wird.  <br/> |
@@ -71,7 +71,7 @@ Keine.
 |[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |Stellt eine mit Vorbehalt Antworten auf eine Besprechungsanfrage.  <br/> |
 |[DeclineItem](declineitem.md) <br/> |Stellt eine ablehnen Antwort auf eine Besprechungsanfrage.  <br/> |
 |[RemoveItem](removeitem.md) <br/> |Entfernt ein Element aus dem Exchange-Informationsspeicher.  <br/> |
-|[Aufgabe](task.md) <br/> |Stellt ein Aufgabenelement in einem Postfach dar.  <br/> |
+|[Task](task.md) <br/> |Stellt ein Aufgabenelement in einem Postfach dar.  <br/> |
 |[ReplyToItem](replytoitem.md) <br/> |Enthält eine Antwort an den Ersteller eines Elements in der Exchange-Speicher.  <br/> |
 |[ReplyAllToItem](replyalltoitem.md) <br/> |Enthält eine Antwort an alle identifizierten Empfänger eines Elements in der Exchange-Speicher.  <br/> |
 |[ForwardItem](forwarditem.md) <br/> |Enthält ein Exchange-Speicher-Element an Empfänger weitergeleitet.  <br/> |

@@ -16,7 +16,7 @@ ms.openlocfilehash: 9b566ec1938ec206e45cddf9c7f00083af2d8a9c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463616"
 ---
 # <a name="displayname-string"></a>DisplayName (Zeichenfolge)
@@ -48,7 +48,7 @@ Keine.
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
 |[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Kontaktordner in einem Postfach dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
-|[Folder](folder.md) <br/> |Stellt einen Ordner in einem Postfach dar.  <br/> |
+|[Ordner](folder.md) <br/> |Stellt einen Ordner in einem Postfach dar.  <br/> |
 |[Regel (RuleType)](rule-ruletype.md) <br/> |Stellt eine Regel im Postfach eines Benutzers dar.  <br/> |
 |[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner in einem Postfach dar.  <br/> |
 |[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner in einem Postfach dar.  <br/> |

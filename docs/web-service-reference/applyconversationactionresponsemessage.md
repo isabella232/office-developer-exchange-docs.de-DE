@@ -16,7 +16,7 @@ ms.openlocfilehash: 377aee12d8cc7d6b4aff8d6fc2a6cb67b3bcd10b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44464693"
 ---
 # <a name="applyconversationactionresponsemessage"></a>ApplyConversationActionResponseMessage
@@ -45,7 +45,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**ResponseClass** <br/> | Beschreibt den Status der Antwort.<br/><br/>Die folgenden Werte sind für dieses Attribut gültig:<ul><li>Erfolg</li><li>Warnung</li><li>Fehler (ungefährer Wortlaut)</li></ul> |
+|**ResponseClass** <br/> | Beschreibt den Status der Antwort.<br/><br/>Die folgenden Werte sind für dieses Attribut gültig:<ul><li>Erfolgreich</li><li>Warnung</li><li>Fehler (ungefährer Wortlaut)</li></ul> |
    
 #### <a name="responseclass-attribute-values"></a>ResponseClass-Attributwerte
 
