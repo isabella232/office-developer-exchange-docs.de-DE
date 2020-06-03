@@ -10,7 +10,7 @@ ms.openlocfilehash: 41c217c1c3815606d898b8237ea327f34869174b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455947"
 ---
 # <a name="handling-deletion-related-errors-in-ews-in-exchange"></a>Umgang mit Fehlern in Exchange im Zusammenhang mit Löschungen in EWS
@@ -39,6 +39,6 @@ Wenn Ihre Anwendung [Elemente und Ordner löscht](deleting-items-by-using-ews-in
     
 - [Pullbenachrichtigungen in Exchange für Postfachereignisse im Zusammenhang mit Löschungen in EWS](pull-notifications-for-ews-deletion-related-mailbox-events-in-exchange.md)
     
-- [Mithilfe von EWS in Exchange Termine löschen und Besprechungen absagen](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
+- [Löschen von Terminen und Absagen von Besprechungen mithilfe von EWS in Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
     
 

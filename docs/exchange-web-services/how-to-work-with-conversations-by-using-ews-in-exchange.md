@@ -10,7 +10,7 @@ ms.openlocfilehash: 2dc66195f8d37836c32fc33737728c61fc5444ae
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456788"
 ---
 # <a name="work-with-conversations-by-using-ews-in-exchange"></a>Arbeiten mit Unterhaltungen unter Verwendung von EWS in Exchange
@@ -44,7 +44,7 @@ Exchange wendet den gleichen **ConversationTopic** -Wert auf Antworten auf die e
 
 Zum Suchen nach Unterhaltungen können Sie die [ExchangeService.FindConversation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findconversation%28v=exchg.80%29.aspx)-Methode der verwalteten EWS-API verwenden, wie im folgenden Beispiel gezeigt. Dieses Beispiel ruft die ersten zehn Unterhaltungen im Posteingangsordner ab, deren Betreff das Wort "news" enthält. Anschließend werden das Thema der Unterhaltung, die Uhrzeit der letzten Zustellung und die globale eindeutige Empfängerliste im Konsolenfenster ausgegeben. 
   
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und dass der Benutzer mit einem Exchange-Server authentifiziert wurde. 
   
 ```cs
 static void FindConversation(ExchangeService service)
@@ -192,7 +192,7 @@ Die Elemente **ItemId**, **ChangeKey** und **ConversationId** wurden zur bessere
 
 Zum Anwenden von Unterhaltungsaktionen auf Unterhaltungen stehen zahlreiche Methoden der verwalteten EWS-API zur Verfügung, wie im folgenden Beispiel gezeigt. In diesem Beispiel werden vorhandenen Unterhaltungselementen Kategorien hinzugefügt, und die gleichen Kategorien werden auf zukünftige Elemente der Unterhaltung angewendet. Außerdem wird veranschaulicht, wie die automatische Verschiebung von Unterhaltungselementen in einen Ordner aktiviert wird. In diesem Beispiel werden Elemente in den Ordner "Drafts" verschoben.
   
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und dass der Benutzer mit einem Exchange-Server authentifiziert wurde. 
   
 Eine vollständige Liste der Methoden, die Unterhaltungsaktionen anwenden, finden Sie in Tabelle 2.
   

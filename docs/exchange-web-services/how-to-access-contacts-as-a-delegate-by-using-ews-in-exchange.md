@@ -10,7 +10,7 @@ ms.openlocfilehash: 06faf7dd7459b14792abbea21761e909c8eb9fb6
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455345"
 ---
 # <a name="access-contacts-as-a-delegate-by-using-ews-in-exchange"></a>Zugriff auf Kontakte als Delegat mithilfe der EWS in Exchange
@@ -299,7 +299,7 @@ Sie können EWS verwenden, um einen Besprechungs-oder Termin Kontakt auf die gle
   
 **Tabelle 3. EWS-Vorgänge für das Arbeiten mit einem Kontakt als Stellvertretung**
 
-|**Aufgabe**|**EWS-Vorgang**|**Beispiel**|
+|**Task**|**EWS-Vorgang**|**Beispiel**|
 |:-----|:-----|:-----|
 |Abrufen eines Kontakts  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |[Abrufen eines Elements mithilfe von EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getews) <br/> |
 |Einen Kontakt aktualisieren  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) , gefolgt von [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |[Aktualisieren eines Elements mithilfe von EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_updateews) <br/> |

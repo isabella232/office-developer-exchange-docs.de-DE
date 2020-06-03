@@ -10,7 +10,7 @@ ms.openlocfilehash: 81599051f603654cdf8a50b789b37d7e76664a53
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455709"
 ---
 # <a name="respond-to-email-messages-by-using-ews-in-exchange"></a>Antworten auf E-Mail-Nachrichten mithilfe von EWS in Exchange
@@ -33,7 +33,7 @@ Das verwaltete EWS-API bietet zwei Methoden, mit denen Sie auf Nachrichten reagi
   
 Im folgenden Codebeispiel wird gezeigt, wie Sie mit der **Reply** -Methode auf eine e-Mail-Nachricht reagieren. 
   
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. Die lokale Variable *ItemID* ist die [ID](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) des Elements, auf das reagiert werden soll. Im Beispiel wird die [FindRecentlySent-Methode](#bk_findlast) aufgerufen, um zu überprüfen, ob die Nachricht als beantwortet markiert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und dass der Benutzer mit einem Exchange-Server authentifiziert wurde. Die lokale Variable *ItemID* ist die [ID](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) des Elements, auf das reagiert werden soll. Im Beispiel wird die [FindRecentlySent-Methode](#bk_findlast) aufgerufen, um zu überprüfen, ob die Nachricht als beantwortet markiert wurde. 
   
 ```cs
 // As a best practice, limit the properties returned by the Bind method to only those that are required.
@@ -120,7 +120,7 @@ Das verwaltete EWS-API stellt zwei Methoden bereit, die Sie zum Weiterleiten von
   
 Im folgenden Codebeispiel wird gezeigt, wie Sie mit der **Forward** -Methode eine e-Mail-Nachricht an einen Empfänger weiterleiten. 
   
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. Die lokale Variable *ItemID* ist die [ID](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) des Elements, das weitergeleitet werden soll. Im Beispiel wird die [FindRecentlySent-Methode](#bk_findlast) aufgerufen, um zu überprüfen, ob die Nachricht als weitergeleitet markiert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und dass der Benutzer mit einem Exchange-Server authentifiziert wurde. Die lokale Variable *ItemID* ist die [ID](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) des Elements, das weitergeleitet werden soll. Im Beispiel wird die [FindRecentlySent-Methode](#bk_findlast) aufgerufen, um zu überprüfen, ob die Nachricht als weitergeleitet markiert wurde. 
   
 ```cs
 // Bind to the email message to reply to by using the ItemId.

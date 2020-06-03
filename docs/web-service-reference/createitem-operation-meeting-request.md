@@ -16,7 +16,7 @@ ms.openlocfilehash: f9e6bd1742e6a30d08736ea67c0ff80b7a18e88a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457109"
 ---
 # <a name="createitem-operation-meeting-request"></a>CreateItem-Vorgang (Besprechungsanfrage)
@@ -117,7 +117,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Items](items.md)
+- [Elemente](items.md)
     
 ## <a name="accept-meeting-error-response-example"></a>Beispiel für die Annahme einer Besprechungs Fehlerantwort
 
@@ -171,7 +171,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Items](items.md)
+- [Elemente](items.md)
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -10,7 +10,7 @@ ms.openlocfilehash: 2773aa3ab29868c69d1fb088deb6c8a96dfb9ecc
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455701"
 ---
 # <a name="route-public-folder-hierarchy-requests"></a>Weiterleiten von Hierarchie Anforderungen für Öffentliche Ordner

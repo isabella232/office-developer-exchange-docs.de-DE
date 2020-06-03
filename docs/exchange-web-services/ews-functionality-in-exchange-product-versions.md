@@ -10,7 +10,7 @@ ms.openlocfilehash: a8032e16cdd9100289666d8f2ce742fe054ede2e
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456031"
 ---
 # <a name="ews-functionality-in-exchange-product-versions"></a>EWS-Funktionalität in Exchange-Produktversionen
@@ -30,12 +30,12 @@ In der folgenden Tabelle sind die Exchange-Versionen mit EWS und die wichtigsten
 |Exchange 2010 SP1  | Enthält alle Features, die in Exchange 2010 eingeführt wurden. Die folgenden Features wurden in Exchange 2010 SP1 eingeführt:  <ul><li>  Erstellen, abrufen und Ändern von Posteingangsregeln</li><li>Programmgesteuerten Zugriff auf Archivpostfach</li><li>Konversations Aktionen</li><li>Firewall durchlaufen von Benachrichtigungen</li><li>Verbesserte Verwaltungsfunktionen</li><li>Verbesserte Unterstützung für gemischte Versionen</li><li>Unterstützung des Einschränkungs Schutzes</li><li>Steuerung des Anwendungszugriffs auf EWS</li><li>Unterstützung der Client Zertifikatauthentifizierung</li></ul> |
 |Exchange 2010  | Enthält alle Features, die in Exchange 2007 SP1 eingeführt wurden. Die folgenden Features wurden in der ersten Version von Exchange 2010 eingeführt: <ul> <li>  Vollständige private Verteilerliste</li><li>Benutzer Konfigurationsobjekte</li><li>Ordner zugeordnete Elemente</li><li>Nachrichtenverfolgung</li><li>Unified Messaging</li><li>SOAP-AutoErmittlung  </li><li>Erweiterte Zeitzonenunterstützung</li><li>Informationen zur Raum Ressourcenverfügbarkeit</li><li>Indizierte Suche</li><li>Zugriff auf den Papierkorb</li><li>E-Mail-Infos</li></ul> |
 |Exchange 2007 SP1  | Enthält alle Features, die in Exchange 2007 eingeführt wurden. Die folgenden Features wurden in Exchange 2007 SP1 eingeführt:  <ul><li>  Delegieren der Verwaltung</li><li>Ordnerberechtigungen</li><li>Öffentliche Ordner</li><li>Bereitstellungselemente</li><li>ID-Konvertierung</li></ul> |
-|Exchange 2007  | Die folgenden Features wurden in der ersten Version von Exchange 2007 eingeführt:  <ul><li>  Vollzugriff auf Elemente, Ordner und Anlagen (erstellen, abrufen, aktualisieren, löschen)</li><li>Verfügbarkeit</li><li>Abwesenheitseinstellungen</li><li>Benachrichtigungen</li><li>Synchronisierung</li><li>Namensauflösung</li><li>Verteilerliste (DL)-Erweiterung</li><li>Suchen</li></ul> |
+|Exchange 2007  | Die folgenden Features wurden in der ersten Version von Exchange 2007 eingeführt:  <ul><li>  Vollzugriff auf Elemente, Ordner und Anlagen (erstellen, abrufen, aktualisieren, löschen)</li><li>Verfügbarkeit</li><li>Abwesenheitseinstellungen</li><li>Benachrichtigungen</li><li>Synchronisierung</li><li>Namensauflösung</li><li>Verteilerliste (DL)-Erweiterung</li><li>Suchen</li></ul> |
    
 ## <a name="see-also"></a>Siehe auch
 
 - [Verwenden von Webdiensten in Exchange](start-using-web-services-in-exchange.md)
 - [Migration zu Exchange-Technologien](../migrating-to-exchange-online-and-exchange-2013-technologies.md)
-- [Erkunden von EWS Managed API, EWS und Webdiensten in Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)  
+- [Erkunden von verwalteter EWS-API, EWS und Webdiensten in Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)  
     
 

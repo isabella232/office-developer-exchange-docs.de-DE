@@ -10,7 +10,7 @@ ms.openlocfilehash: cc8d5818bc7f6b3bd4bfba91b9252e8a1dc002d6
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455996"
 ---
 # <a name="explore-the-ews-managed-api-ews-and-web-services-in-exchange"></a>Erkunden von EWS Managed API, EWS und Webdiensten in Exchange

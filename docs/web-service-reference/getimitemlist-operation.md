@@ -12,7 +12,7 @@ ms.openlocfilehash: aabe84054b93e7de8af6145942493a0224932e45
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456066"
 ---
 # <a name="getimitemlist-operation"></a>GetImItemList-Vorgang
@@ -462,7 +462,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetImItemList** -Vorga
 
 - [AddImGroup-Vorgang](addimgroup-operation.md)
     
-- [Benutzer und Kontakte in EWS in Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
+- [Personen und Kontakte in EWS in Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     
 - [GetImItems-Vorgang](getimitems-operation.md)
     

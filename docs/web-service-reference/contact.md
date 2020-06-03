@@ -16,7 +16,7 @@ ms.openlocfilehash: b5b4af211815dbbd09449ca2f3c6b6b2dfba6f93
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44445650"
 ---
 # <a name="contact"></a>Kontakt
@@ -211,7 +211,7 @@ Keine.
 |[ConflictingMeetings](conflictingmeetings.md) <br/> |Identifiziert alle Elemente, die mit einer Besprechungszeit in Konflikt stehen.  <br/> |
 |[Erstellen (ItemSync)](create-itemsync.md) <br/> |Gibt einen einzelnen Ordner an, der im lokalen Clientspeicher erstellt werden soll.  <br/> |
 |[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange-Element dar, das an ein anderes Exchange-Element angefügt ist.  <br/> |
-|[Items](items.md) <br/> |Enthält ein Array von Elementen.  <br/> |
+|[Elemente](items.md) <br/> |Enthält ein Array von Elementen.  <br/> |
 |[Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |Enthält ein Array von Elementen, die in dem Ordner erstellt werden sollen, der durch das [parentfolderid (TargetFolderIdType)-](parentfolderid-targetfolderidtype.md) Element identifiziert wird.  <br/> |
 |[Lösung](resolution.md) <br/> |Enthält eine einzelne aufgelöste Entität.  <br/> |
 |[SetItemField](setitemfield.md) <br/> |Stellt eine Aktualisierung auf eine einzelne Eigenschaft eines Elements in einer [UpdateItem Operation](updateitem-operation.md)dar.  <br/> |

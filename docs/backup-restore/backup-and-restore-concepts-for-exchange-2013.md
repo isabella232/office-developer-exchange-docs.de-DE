@@ -12,7 +12,7 @@ ms.openlocfilehash: fd35699839af105dd3fe285776b071c1d03d58dd
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44437984"
 ---
 # <a name="backup-and-restore-concepts-for-exchange-2013"></a>Sichern und Wiederherstellen von Konzepten für Exchange 2013

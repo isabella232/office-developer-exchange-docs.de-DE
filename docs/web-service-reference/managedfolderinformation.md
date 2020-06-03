@@ -16,7 +16,7 @@ ms.openlocfilehash: ce15dcb15cccdce253494beefd2f4a2a7a0c0ad8
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44450949"
 ---
 # <a name="managedfolderinformation"></a>ManagedFolderInformation
@@ -67,9 +67,9 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Folder](folder.md) <br/> |Stellt einen Ordner im Exchange-Informationsspeicher dar. Verwaltete benutzerdefinierte Ordner können nur Unterordner des Ordners mit dem Namen " **verwaltete Ordner**" sein.  <br/> |
-|[CalendarFolder](calendarfolder.md) <br/> |Nicht zutreffend  <br/> |
-|[ContactsFolder](contactsfolder.md) <br/> |Nicht zutreffend  <br/> |
-|[SearchFolder](searchfolder.md) <br/> |Nicht zutreffend  <br/> |
+|[CalendarFolder](calendarfolder.md) <br/> |Nicht zutreffend.  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |Nicht zutreffend.  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Nicht zutreffend.  <br/> |
 |[TasksFolder](tasksfolder.md) <br/> |Nicht zutreffend  <br/> |
    
 ## <a name="remarks"></a>HinwBemerkungeneise

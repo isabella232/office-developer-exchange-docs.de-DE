@@ -1,5 +1,5 @@
 ---
-title: Verwalten des Benutzerzugriffs in Exchange mithilfe der Exchange-Webdienste
+title: Verwalten des Benutzerzugriffs mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,10 +10,10 @@ ms.openlocfilehash: 476292d4db206f22cd84134ce2b46957e9fe85fc
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456244"
 ---
-# <a name="managing-user-access-by-using-ews-in-exchange"></a>Verwalten des Benutzerzugriffs in Exchange mithilfe der Exchange-Webdienste
+# <a name="managing-user-access-by-using-ews-in-exchange"></a>Verwalten des Benutzerzugriffs mithilfe von EWS in Exchange
 
 Erfahren Sie, welche Optionen Sie für die Verwaltung des Zugriffs auf Ihren Exchange-Server für den Benutzerkonto haben.
   

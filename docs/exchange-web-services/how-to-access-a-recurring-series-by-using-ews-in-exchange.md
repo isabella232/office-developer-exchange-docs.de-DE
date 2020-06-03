@@ -10,7 +10,7 @@ ms.openlocfilehash: dca41472b3b2f775f420b6654d7e43ef456b0583
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456892"
 ---
 # <a name="access-a-recurring-series-by-using-ews-in-exchange"></a>Zugreifen auf eine Terminserie mithilfe von EWS in Exchange

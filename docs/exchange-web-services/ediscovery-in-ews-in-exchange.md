@@ -10,7 +10,7 @@ ms.openlocfilehash: 48e3fdb3a2f21f7dcfcb7eed21b586e099b249a3
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456094"
 ---
 # <a name="ediscovery-in-ews-in-exchange"></a>eDiscovery in EWS in Exchange
@@ -41,7 +41,7 @@ Die eDiscovery-Funktionalität, die von EWS verfügbar gemacht wird, ist über V
 
 - [Entwickeln von Webdienstclients für Exchange](develop-web-service-clients-for-exchange.md)
     
-- [Erste Schritte mit Webdiensten in Exchange](start-using-web-services-in-exchange.md)
+- [Verwenden von Webdiensten in Exchange](start-using-web-services-in-exchange.md)
     
 - [Übersicht über den EWS-Cliententwurf für Exchange](ews-client-design-overview-for-exchange.md)
     

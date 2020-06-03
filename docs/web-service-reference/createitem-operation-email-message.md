@@ -16,7 +16,7 @@ ms.openlocfilehash: 384ed8ff653029c2b7db0b36986d85842b0a06cf
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457116"
 ---
 # <a name="createitem-operation-email-message"></a>CreateItem-Vorgang (e-Mail-Nachricht)
@@ -68,7 +68,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
-- [Nachricht](message-ex15websvcsotherref.md)
+- [Meldung](message-ex15websvcsotherref.md)
     
 - [ItemClass](itemclass.md)
     
@@ -129,7 +129,7 @@ Die Antwort enthält die folgenden Elemente:
     
 - [ResponseCode](responsecode.md)
     
-- [Items](items.md)
+- [Elemente](items.md)
     
 Um andere Optionen für die Antwortnachricht des CreateItem-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [CreateItemResponse](createitemresponse.md) -Element. 
   
@@ -182,7 +182,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Items](items.md)
+- [Elemente](items.md)
     
 Um andere Optionen für die Fehlerantwort Meldung des CreateItem-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [CreateItemResponse](createitemresponse.md) -Element. 
   

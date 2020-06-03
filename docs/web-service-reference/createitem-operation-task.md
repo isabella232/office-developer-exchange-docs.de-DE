@@ -16,7 +16,7 @@ ms.openlocfilehash: 502108843193e7ed8377b0fade9e106ef3d1976c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457102"
 ---
 # <a name="createitem-operation-task"></a>CreateItem-Vorgang (Aufgabe)
@@ -85,7 +85,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
-- [Aufgabe](task.md)
+- [Task](task.md)
     
 - [Betreff](subject.md)
     
@@ -145,7 +145,7 @@ Die Antwort enthält die folgenden Elemente:
     
 - [Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
-- [Aufgabe](task.md)
+- [Task](task.md)
     
 - [ItemId](itemid.md)
     

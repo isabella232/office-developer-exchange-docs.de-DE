@@ -12,7 +12,7 @@ ms.openlocfilehash: 1c5d99be60501fd1c4414ea22294bd05645bb0a7
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455240"
 ---
 # <a name="backup-and-restore-for-exchange"></a>Sicherung und Wiederherstellung für Exchange
@@ -55,7 +55,7 @@ Die VSS Writer-Architektur wurde zwar in Exchange 2013 aktualisiert, die zugrund
 ## <a name="see-also"></a>Siehe auch
 
 - [Volumenschattenkopie-Dienst (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb968832%28v=vs.85%29.aspx)   
-- [Erkunden von EWS Managed API, EWS und Webdiensten in Exchange](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)  
+- [Erkunden von verwalteter EWS-API, EWS und Webdiensten in Exchange](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)  
 - [Exchange-Verwaltungsshell](../management/exchange-management-shell.md)   
 - [Transport-Agents in Exchange](../transport-agents/transport-agents-in-exchange-2013.md) 
     

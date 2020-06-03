@@ -10,7 +10,7 @@ ms.openlocfilehash: 55f927b7b301bdfaa298bcd254b18a00cf1692d9
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456157"
 ---
 # <a name="configuration-options-for-ews-in-exchange"></a>Konfigurationsoptionen für EWS in Exchange
@@ -61,7 +61,7 @@ Für die meisten Client Anwendungsszenarien sind keine Änderungen an den Server
 
 - [Abrufen von Dienstkonfigurationsinformationen mithilfe von EWS in Exchange](how-to-get-service-configuration-information-by-using-ews-in-exchange.md)
 - [Übersicht über den EWS-Cliententwurf für Exchange](ews-client-design-overview-for-exchange.md)   
-- [Erste Schritte mit Webdiensten in Exchange](start-using-web-services-in-exchange.md)   
+- [Verwenden von Webdiensten in Exchange](start-using-web-services-in-exchange.md)   
 - [Entwickeln von Webdienstclients für Exchange](develop-web-service-clients-for-exchange.md)
     
 

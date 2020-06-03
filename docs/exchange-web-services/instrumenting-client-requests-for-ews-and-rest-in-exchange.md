@@ -1,5 +1,5 @@
 ---
-title: Instrumentieren Client-Anfragen für EWS und REST in Exchange
+title: Handhaben von Clientanforderungen für EWS und REST in Exchange
 manager: sethgros
 ms.date: 4/13/2016
 ms.audience: Developer
@@ -10,10 +10,10 @@ ms.openlocfilehash: 3a8ce889ec7a6b9e70ec25a95ac248902f48ca6c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456304"
 ---
-# <a name="instrumenting-client-requests-for-ews-and-rest-in-exchange"></a>Instrumentieren Client-Anfragen für EWS und REST in Exchange
+# <a name="instrumenting-client-requests-for-ews-and-rest-in-exchange"></a>Handhaben von Clientanforderungen für EWS und REST in Exchange
 
 Erfahren Sie mehr über die HTTP-Header in EWS-und Rest-Anforderungen und-Antworten, die Ihnen bei der Überwachung und Problembehandlung Ihrer Exchange-Anwendung helfen können.
   

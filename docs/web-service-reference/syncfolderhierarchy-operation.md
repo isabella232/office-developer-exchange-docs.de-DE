@@ -16,7 +16,7 @@ ms.openlocfilehash: 1c7ad2413064161ba54e8a7a30bfcd6f23f218bd
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456430"
 ---
 # <a name="syncfolderhierarchy-operation"></a>SyncFolderHierarchy-Vorgang
@@ -141,7 +141,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Erstellen (FolderSync)](create-foldersync.md)
     
-- [Folder](folder.md)
+- [Ordner](folder.md)
     
 - [FolderId](folderid.md)
     
