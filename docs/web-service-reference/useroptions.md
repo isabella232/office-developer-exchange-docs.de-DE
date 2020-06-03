@@ -1,5 +1,5 @@
 ---
-title: UserOptions
+title: User Options
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1acbb8a3-9110-4427-a06c-7e6e627e969f
-description: Das Element UserOptions gibt die Liste der für eine Nachricht Abstimmungsoptionen.
-ms.openlocfilehash: 8a5bdbc254e3c0bce8822633d2714bc928f15f13
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das UserOptions-Element gibt die Liste der Abstimmungsoptionen für eine Nachricht an.
+ms.openlocfilehash: 2e0bbb373f423bbe9e913775b1f19d06dfd53f5f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839453"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526760"
 ---
-# <a name="useroptions"></a>UserOptions
+# <a name="useroptions"></a>User Options
 
-Das Element **UserOptions** gibt die Liste der für eine Nachricht Abstimmungsoptionen. 
+Das **USEROPTIONS** -Element gibt die Liste der Abstimmungsoptionen für eine Nachricht an. 
   
 ```XML
 <UserOptions>
@@ -42,17 +42,17 @@ Keine.
 
 [VotingInformation](votinginformation.md)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |

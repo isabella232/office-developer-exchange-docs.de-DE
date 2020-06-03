@@ -1,5 +1,5 @@
 ---
-title: CChkSGFiles.ErrGetHeader-Funktion (reserviert)
+title: CChkSGFiles. ErrGetHeader-Funktion (reserviert)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,19 +11,19 @@ api_name:
 api_type:
 - dllExport
 ms.assetid: eed4d88b-8ac5-4c03-9ed9-e529e6072450
-description: 'Zuletzt geändert: 22 Februar 2013'
-ms.openlocfilehash: a502371f596967be58b6ead61b4e435bba30be88
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 'Letzte Änderung: 22. Februar 2013'
+ms.openlocfilehash: 7ec94e1dc0b68c055d4b908b19458ee4c38eb1aa
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756797"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526711"
 ---
-# <a name="cchksgfileserrgetheader-function-reserved"></a>CChkSGFiles.ErrGetHeader-Funktion (reserviert)
+# <a name="cchksgfileserrgetheader-function-reserved"></a>CChkSGFiles. ErrGetHeader-Funktion (reserviert)
 
 **Gilt für:** Exchange Server 2003 | Exchange Server 2007 | Exchange Server 2010 | Exchange Server 2013
   
-Für die zukünftige Verwendung reserviert und nicht implementiert. Rufen Sie diese Funktion nicht. 
+Für die zukünftige Verwendung reserviert und nicht implementiert. Rufen Sie diese Funktion nicht auf. 
   
 ```cs
 Vitual ERRErrGetHeader  
@@ -40,25 +40,25 @@ Vitual ERRErrGetHeader
 
 ### <a name="wszfile"></a>wszFile
   
-Für die zukünftige Verwendung reserviert. Verwenden Sie nicht.
+Für die zukünftige Verwendung reserviert; nicht verwenden.
     
 ### <a name="pvresult"></a>pvResult
   
-Für die zukünftige Verwendung reserviert. Verwenden Sie nicht.
+Für die zukünftige Verwendung reserviert; nicht verwenden.
     
 ### <a name="cbmax"></a>cbMax
   
-Für die zukünftige Verwendung reserviert. Verwenden Sie nicht.
+Für die zukünftige Verwendung reserviert; nicht verwenden.
     
 ### <a name="ulflags"></a>ulFlags
   
-Für die zukünftige Verwendung reserviert. Verwenden Sie nicht.
+Für die zukünftige Verwendung reserviert; nicht verwenden.
     
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-None.
+Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Keine.
   

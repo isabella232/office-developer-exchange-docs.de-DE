@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 5f81d1b7-c6a4-456f-9935-13d04a3d92d7
-description: Das Domänen-Element darstellt, die Domäne-Auflistung, die zurückgegeben wird, in einen GetDomainSettings-Vorgang (SOAP), die Domänen, die die Organisation in einem Vorgang GetFederationInformation (SOAP) federated hat oder die Domänen mit einer organisationsbeziehung als von GetOrganizationRelationshipSettings-Vorgang (SOAP) zurückgegeben.
-ms.openlocfilehash: 7a21a3a09516de2d1c38021ca3ccd2161d9cdd1e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das Domains-Element stellt die Domänen Sammlung dar, die in einem GetDomainSettings-Vorgang (SOAP), die Domänen, die die Organisation in einen GetFederationInformation-Vorgang (SOAP) integriert hat, oder die Domänen mit einer Organisationsbeziehung zurückgegeben werden, die von GetOrganizationRelationshipSettings-Vorgang (SOAP) zurückgegeben werden.
+ms.openlocfilehash: c56fb72841776c0060c1300b52b2f6a06b1ec0ed
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758098"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526305"
 ---
 # <a name="domains-soap"></a>Domänen (SOAP)
 
-Das **Domänen** -Element darstellt, die Domäne-Auflistung, die zurückgegeben wird, in einen [GetDomainSettings-Vorgang (SOAP)](getdomainsettings-operation-soap.md), die Domänen, die die Organisation in einem [GetFederationInformation-Vorgang (SOAP)](getfederationinformation-operation-soap.md)federated hat oder die Domänen mit einer organisationsbeziehung von [GetOrganizationRelationshipSettings-Vorgang (SOAP)](getorganizationrelationshipsettings-operation-soap.md)zurückgegeben.
+Das **Domains** -Element stellt die Domänen Sammlung dar, die in einem [GetDomainSettings-Vorgang (SOAP)](getdomainsettings-operation-soap.md), die Domänen, die die Organisation in einen [GetFederationInformation-Vorgang (](getfederationinformation-operation-soap.md)SOAP) integriert hat, oder die Domänen mit einer Organisationsbeziehung zurückgegeben werden, die von [GetOrganizationRelationshipSettings-Vorgang (SOAP)](getorganizationrelationshipsettings-operation-soap.md)zurückgegeben werden.
   
 ```XML
 <Domains>
@@ -39,27 +39,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Domäne (SOAP)](domain-soap.md) <br/> |Stellt eine einzelne Domäne.  <br/> |
+|[Domäne (SOAP)](domain-soap.md) <br/> |Stellt eine einzelne Domäne dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetDomainSettingsRequest (SOAP)](getdomainsettingsrequest-soap.md) <br/> |Stellt eine Anforderung [GetDomainSettings-Vorgang (SOAP)](getdomainsettings-operation-soap.md) .  <br/> |
-|[Antwort (GetFederationInformation) (SOAP)](response-getfederationinformationsoap.md) <br/> |Enthält die Antwort-Informationen [GetFederationInformation-Vorgang (SOAP)](getfederationinformation-operation-soap.md) .  <br/> |
-|[GetOrganizationRelationshipSettingsRequest (SOAP)](getorganizationrelationshipsettingsrequest-soap.md) <br/> |Stellt eine Anforderung [GetOrganizationRelationshipSettings-Vorgang (SOAP)](getorganizationrelationshipsettings-operation-soap.md) .  <br/> |
+|[GetDomainSettingsRequest (SOAP)](getdomainsettingsrequest-soap.md) <br/> |Stellt eine [SOAP-Anforderung (GetDomainSettings Operation)](getdomainsettings-operation-soap.md) dar.  <br/> |
+|[Antwort (GetFederationInformation) (SOAP)](response-getfederationinformationsoap.md) <br/> |Enthält die Antwortinformationen für den [GetFederationInformation-Vorgang (SOAP)](getfederationinformation-operation-soap.md) .  <br/> |
+|[GetOrganizationRelationshipSettingsRequest (SOAP)](getorganizationrelationshipsettingsrequest-soap.md) <br/> |Stellt eine [SOAP-Anforderung (GetOrganizationRelationshipSettings Operation)](getorganizationrelationshipsettings-operation-soap.md) dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

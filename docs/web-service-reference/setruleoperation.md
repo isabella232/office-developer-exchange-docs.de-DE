@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2106a85b-58fe-49be-b71d-4ca6aa66e060
-description: Das Element SetRuleOperation stellt einen Vorgang zum Aktualisieren einer vorhandenen Regel dar.
-ms.openlocfilehash: 9c956394d14c510e8dcc95110ef1874ea7010be0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das SetRuleOperation-Element stellt einen Vorgang zum Aktualisieren einer vorhandenen Regel dar.
+ms.openlocfilehash: 96fba2f229003b8c729c36614e69655852a3aa8c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831451"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526333"
 ---
 # <a name="setruleoperation"></a>SetRuleOperation
 
-Das Element **SetRuleOperation** stellt einen Vorgang zum Aktualisieren einer vorhandenen Regel dar. 
+Das **SetRuleOperation** -Element stellt einen Vorgang zum Aktualisieren einer vorhandenen Regel dar. 
   
 [UpdateInboxRules](updateinboxrules.md)
   
-[Betrieb](operations.md)
+[Operations](operations.md)
   
 ```XML
 <SetRuleOperation>
@@ -46,7 +46,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Regel (RuleType)](rule-ruletype.md) <br/> |Stellt eine Regel in dem Postfach eines Benutzers.  <br/> |
+|[Regel (RuleType)](rule-ruletype.md) <br/> |Stellt eine Regel im Postfach eines Benutzers dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -58,15 +58,15 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

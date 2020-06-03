@@ -16,7 +16,7 @@ ms.openlocfilehash: 1f9a7a3f3ede2d3cf8f9d41677d8ce0487266f17
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468894"
 ---
 # <a name="copyfolder-operation"></a>CopyFolder-Vorgang
@@ -138,7 +138,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Ordner](folders-ex15websvcsotherref.md)
     
-- [Folder](folder.md)
+- [Ordner](folder.md)
     
 - [FolderId](folderid.md)
     

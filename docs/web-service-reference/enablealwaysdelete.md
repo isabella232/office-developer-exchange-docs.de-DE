@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7753aec5-3f93-4aeb-a28e-8b9b42ca7f9b
-description: Das EnableAlwaysDelete-Element gibt eine Kennung, die für alle neuen Elemente in einer Unterhaltung löschen kann.
-ms.openlocfilehash: f86765c641604afbf13ac962f4b34fbd8de56200
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EnableAlwaysDelete-Element gibt ein Flag an, das das Löschen für alle neuen Elemente in einer Unterhaltung ermöglicht.
+ms.openlocfilehash: 14784d3a6ba52c76b64b81e15c0522d66d125cbf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758220"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526207"
 ---
 # <a name="enablealwaysdelete"></a>EnableAlwaysDelete
 
-Das **EnableAlwaysDelete** -Element gibt eine Kennung, die für alle neuen Elemente in einer Unterhaltung löschen kann. 
+Das **EnableAlwaysDelete** -Element gibt ein Flag an, das das Löschen für alle neuen Elemente in einer Unterhaltung ermöglicht. 
   
 [ApplyConversationAction](applyconversationaction.md)
   
 [ConversationActions](conversationactions.md)
   
-[ConversationAction](conversationaction.md)
+[Unterhaltung](conversationaction.md)
   
 [EnableAlwaysDelete](enablealwaysdelete.md)
   
@@ -52,21 +52,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ConversationAction](conversationaction.md) <br/> |Enthält eine einzelne Aktion auf einem einzelnen Gespräch angewendet werden soll.  <br/> |
+|[Unterhaltung](conversationaction.md) <br/> |Enthält eine einzelne Aktion, die auf eine einzelne Unterhaltung angewendet werden soll.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **EnableAlwaysDelete** -Elements ist **true,** um das Löschen aller Elemente in der Unterhaltung zu aktivieren. anderenfalls **false**.
+Der Textwert des **EnableAlwaysDelete** -Elements ist **true** , um das Löschen aller Elemente in der Unterhaltung zu ermöglichen; andernfalls **false**.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

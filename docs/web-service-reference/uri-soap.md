@@ -1,22 +1,22 @@
 ---
-title: Der URI (SOAP)
+title: URI (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4a82162a-716d-4002-820e-5bbcfb4a9696
-description: Das URI-Element gibt den Sicherheitstokendienst, der das Sicherheitstoken ausgestellt hat.
-ms.openlocfilehash: 5835f0dddb095e5b636e58ef34e7986eafc4166a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das URI-Element gibt den Sicherheitstokendienst an, der den Sicherheitstoken ausgestellt hat.
+ms.openlocfilehash: f4b22551eebcc318b2063feb70799839acd62c17
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839421"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526571"
 ---
-# <a name="uri-soap"></a>Der URI (SOAP)
+# <a name="uri-soap"></a>URI (SOAP)
 
-Das **URI** -Element gibt den Sicherheitstokendienst, der das Sicherheitstoken ausgestellt hat. 
+Das **URI** -Element gibt den Sicherheitstokendienst an, der den Sicherheitstoken ausgestellt hat. 
   
 ```XML
 <Uri/>
@@ -33,7 +33,7 @@ Keine
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-Keine
+Keines
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -43,15 +43,15 @@ Keine
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt den URI des Sicherheitstokendiensts.
+Der Wert Text stellt den URI des Sicherheitstokendienst dar.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |AutoErmittlung-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 

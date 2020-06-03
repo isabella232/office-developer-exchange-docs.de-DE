@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 9fb9529f-52c5-4907-a84b-935b78de16c3
-description: Das Element LegacyDN identifiziert Postfach eines Benutzers von legacy-DN.
-ms.openlocfilehash: f7ec1dea29a7d3ad6d470ef7812390d179fe1d2a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das LegacyDN-Element identifiziert das Postfach eines Benutzers anhand des Legacy Distinguished Name.
+ms.openlocfilehash: b9af4278a5421dc932573396c3563a64a78de41e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19830243"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526382"
 ---
 # <a name="legacydn-pox"></a>LegacyDN (POX)
 
-Das Element **LegacyDN** identifiziert Postfach eines Benutzers von legacy-DN. 
+Das **LegacyDN** -Element identifiziert das Postfach eines Benutzers anhand des Legacy Distinguished Name. 
   
 ```xml
 <LegacyDN/>
@@ -41,15 +41,15 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Anforderung (POX)](request-pox.md) <br/> |Enthält die Anforderung an den AutoErmittlungsdienst.  <br/> |
-|[Benutzer (POX)](user-pox.md) <br/> |Benutzerspezifische Informationen enthält.  <br/> |
+|[Benutzer (POX)](user-pox.md) <br/> |Enthält benutzerspezifische Informationen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt die ältere e-Mail-Adresse eines Benutzers.
+Der Textwert stellt die ältere e-Mail-Adresse eines Benutzers dar.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das Element ["EmailAddress" (NonEmptyStringType)](emailaddress-nonemptystringtype.md) ist ein alternativer Element für eine Anforderung der AutoErmittlung. Es wird verwendet, wenn ein Postfach auf einem Computer vorhanden ist, auf dem Microsoft Exchange Server 2007 ausgeführt wird. 
+Das [NonEmptyStringType-Element (Email)](emailaddress-nonemptystringtype.md) ist ein alternatives Element für eine Auto Ermittlungsanforderung. Sie wird verwendet, wenn ein Postfach auf einem Computer mit Microsoft Exchange Server 2007 vorhanden ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

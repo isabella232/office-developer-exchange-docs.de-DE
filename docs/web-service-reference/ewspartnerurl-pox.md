@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2ebae21c-3efa-4239-9b49-4a3a8871449b
-description: Das EwsPartnerUrl-Element gibt die URL der besten Endpunktinstanz für die Exchange-Webdienste (EWS) für einen e-Mail-aktivierten Benutzer.
-ms.openlocfilehash: 97c33e1fed4adc8a9e8542d85e67c942118f6096
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EwsPartnerUrl-Element gibt die URL der besten Endpunkt Instanz für Exchange-Webdienste für einen e-Mail-aktivierten Benutzer an.
+ms.openlocfilehash: a67eb17bb3db67a922c53ba5e37900ee0a9b956b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758298"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526109"
 ---
 # <a name="ewspartnerurl-pox"></a>EwsPartnerUrl (POX)
 
-Das **EwsPartnerUrl** -Element gibt die URL der besten Endpunktinstanz für die Exchange-Webdienste (EWS) für einen e-Mail-aktivierten Benutzer. 
+Das **EwsPartnerUrl** -Element gibt die URL der besten Endpunkt Instanz für Exchange-Webdienste für einen e-Mail-aktivierten Benutzer an. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -48,15 +48,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für die Verbindung eines Clients mit dem Computer, auf der Microsoft Exchange Server ausgeführt wird, die die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt die URL des EWS-Endpunkts für den Benutzer.
+Der Wert Text stellt die URL des EWS-Endpunkts für den Benutzer dar.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **EwsPartnerUrl** -Element ist ein optionales untergeordnetes Element des **Protokoll** -Elements. Dies entspricht dem Element ["Ewsurl" (POX)](ewsurl-pox.md) . 
+Das **EwsPartnerUrl** -Element ist ein optionales untergeordnetes Element des **Protocol** -Elements. Es entspricht dem [EwsUrl (POX)-](ewsurl-pox.md) Element. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0cec33a6-4b10-4259-8ac3-3f39a642b34c
-description: ErrorMessage-Element stellt den Grund für die Überprüfungsfehler.
-ms.openlocfilehash: d1869041254ef7c661fb2acb7c9c2ccaf628b394
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ErrorMessage-Element stellt den Grund für den Validierungsfehler dar.
+ms.openlocfilehash: a35dc6af12e71c8437c13024a254000e8f477a15
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758274"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526193"
 ---
 # <a name="errormessage"></a>ErrorMessage
 
-**ErrorMessage** -Element stellt den Grund für die Überprüfungsfehler. 
+Das **ErrorMessage** -Element stellt den Grund für den Validierungsfehler dar. 
   
 ```XML
 <ErrorMessage/>
@@ -40,23 +40,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Fehler](error.md) <br/> |Stellt einen einzelnen Gültigkeitsprüfungsfehler auf eine bestimmte Regel Eigenschaftswert, Prädikat Eigenschaftswert oder Aktionswert-Eigenschaft.  <br/> |
+|[Fehler](error.md) <br/> |Stellt einen einzelnen Validierungsfehler für einen bestimmten Regel Eigenschaftswert, einen Prädikateigenschaftswert oder einen Action-Eigenschaftswert dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Die Fehlermeldung, die die Regel Überprüfungsfehler zugeordnet ist.
+Die Fehlermeldung, die dem Regel Validierungsfehler zugeordnet ist.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 373cc954-314d-40e2-be03-cc08aefc0d5b
-description: Das IsGreaterThanOrEqualTo-Element darstellt, das eine Eigenschaft mit einen konstanten Wert oder eine andere Eigenschaft und gibt true, wenn die erste Eigenschaft größer als oder gleich dem zweiten vergleicht Suchbegriff.
-ms.openlocfilehash: c469f2535ab717e7bc09b6317e01f0f8b3be8170
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das IsGreaterThanOrEqualTo-Element stellt einen Suchausdruck dar, der eine Eigenschaft mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und true zurückgibt, wenn die erste Eigenschaft größer oder gleich dem zweiten ist.
+ms.openlocfilehash: a38877ad92d064a20efbe1eb13ea6cc56c90f818
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354372"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526508"
 ---
 # <a name="isgreaterthanorequalto"></a>IsGreaterThanOrEqualTo
 
-Das **IsGreaterThanOrEqualTo** -Element stellt einen Search-Ausdruck, der vergleicht eine Eigenschaft mit einen konstanten Wert oder einen anderen-Eigenschaft und gibt **true,** Wenn die erste Eigenschaft größer als oder gleich dem zweiten ist. 
+Das **IsGreaterThanOrEqualTo** -Element stellt einen Suchausdruck dar, der eine Eigenschaft mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und **true** zurückgibt, wenn die erste Eigenschaft größer oder gleich dem zweiten ist. 
   
 ```xml
 <IsGreaterThanOrEqualTo>
@@ -58,29 +58,29 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifiziert die Eigenschaften von URI häufig verwiesen wird.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Einzelne Elemente eines Wörterbuchs identifiziert.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |MAPI-Eigenschaften identifiziert.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member eines Wörterbuchs.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert MAPI-Eigenschaften.  <br/> |
 |[FieldURIOrConstant](fielduriorconstant.md) <br/> |Stellt eine Eigenschaft oder einen konstanten Wert dar, der beim Vergleich mit einer anderen Eigenschaft verwendet werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Einschränkung](restriction.md) <br/> |Stellt die Einschränkung oder die Abfrage, die zum Filtern von Elementen oder Ordner in FindItem/FindFolder, und suchen Sie Ordner Vorgänge verwendet wird.  <br/> |
-|[not](not.md) <br/> |Stellt einen Search-Ausdruck, der den booleschen Wert des Suchbegriffs negiert darin enthaltenen dar.  <br/> |
-|[Und](and.md) <br/> |Stellt einen Search-Ausdruck, der Sie einen Vorgang vom Typ Boolean und zwischen zwei oder mehr Suchausdrücke ausführen kann. Das Ergebnis der And-Operation ist **true** , wenn **alle enthaltenen das And Search Ausdrücke zutreffen**.  <br/> |
-|[- oder -](or.md) <br/> |Stellt einen Suche Ausdruck, der ein logisches OR Suchbegriffs durchführt darin enthaltenen dar. [Oder](or.md) wird true, wenn ein untergeordnetes Element true zurückgegeben werden, zurück. [Oder](or.md) muss mindestens zwei untergeordnete Elemente aufweisen.  <br/> |
+|[Einschränkung](restriction.md) <br/> |Stellt die Einschränkung oder Abfrage dar, die zum Filtern von Elementen oder Ordnern in FindItem/FindFolder und Suchordner Vorgängen verwendet wird.  <br/> |
+|[not](not.md) <br/> |Stellt einen Suchausdruck dar, der den booleschen Wert des darin enthaltenen Suchausdrucks negiert.  <br/> |
+|[Und](and.md) <br/> |Stellt einen Suchausdruck dar, mit dem Sie einen booleschen Wert und eine Operation zwischen zwei oder mehr Suchausdrücken ausführen können. Das Ergebnis der and-Operation ist **true** , wenn alle in der enthaltenen Suchausdrücke auf **true**festgelegt sind.  <br/> |
+|[- oder -](or.md) <br/> |Stellt einen Suchausdruck dar, der eine logische OR-Anweisung für den darin enthaltenen Suchausdruck ausführt. [Oder](or.md) gibt true zurück, wenn eines der untergeordneten Elemente true zurückgibt. [Oder](or.md) muss mindestens zwei untergeordnete Elemente aufweisen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

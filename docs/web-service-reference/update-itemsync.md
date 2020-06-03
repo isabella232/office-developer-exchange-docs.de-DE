@@ -16,7 +16,7 @@ ms.openlocfilehash: 12248cbbd5d47a19e36d49fcebe6d4753a2e162f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468887"
 ---
 # <a name="update-itemsync"></a>Update (ItemSync)
@@ -104,15 +104,15 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Item](item.md) <br/> |Stellt ein generisches Exchange-Element dar, das aktualisiert werden soll.  <br/> |
-|[Nachricht](message-ex15websvcsotherref.md) <br/> |Stellt eine zu aktualisierenden Exchange-e-Mail-Nachricht dar.  <br/> |
+|[Meldung](message-ex15websvcsotherref.md) <br/> |Stellt eine zu aktualisierenden Exchange-e-Mail-Nachricht dar.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein zu aktualisieres Exchange-Kalenderelement dar.  <br/> |
-|[Kontakt](contact.md) <br/> |Stellt ein zu aktualisieres Exchange-Kontaktelement dar.  <br/> |
+|[Contact](contact.md) <br/> |Stellt ein zu aktualisieres Exchange-Kontaktelement dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine zu aktualisierende Verteilerliste dar.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine zu aktualisierende Besprechungs Meldung dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanfrage zum Aktualisieren dar.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort dar, die aktualisiert werden soll.  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Stellt einen Besprechungs Abbruch dar, der aktualisiert werden soll.  <br/> |
-|[Aufgabe](task.md) <br/> |Stellt eine Aufgabe dar, die aktualisiert werden soll.  <br/> |
+|[Task](task.md) <br/> |Stellt eine Aufgabe dar, die aktualisiert werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: b520bb3ca6daadc777e7235b2b7420a12e425048
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468369"
 ---
 # <a name="sortorder"></a>SortOrder
@@ -74,7 +74,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 
 [FindItem-Vorgang](finditem-operation.md)
   
-[FindConversation Operation](findconversation-operation.md)
+[FindConversation-Vorgang](findconversation-operation.md)
 
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)

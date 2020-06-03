@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 089ee599-f45e-46f5-a18a-5cfb3d2851ff
-description: Das ItemAttachment-Element stellt ein Exchange-Element, das mit einem anderen Exchange-Element zugeordnet ist.
-ms.openlocfilehash: 7bd3d22430fe04f1b28ae240102500609fe8d703
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Das ItemAttachment-Element stellt ein Exchange-Element dar, das an ein anderes Exchange-Element angefügt ist.
+ms.openlocfilehash: c3a07fa091c05654a03cbff58fb20204c26c9061
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353147"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526438"
 ---
 # <a name="itemattachment"></a>ItemAttachment
 
-Das **ItemAttachment** -Element stellt ein Exchange-Element, das mit einem anderen Exchange-Element zugeordnet ist. 
+Das **ItemAttachment** -Element stellt ein Exchange-Element dar, das an ein anderes Exchange-Element angefügt ist. 
   
 ```xml
 <ItemAttachment>
@@ -164,18 +164,18 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[AttachmentId](attachmentid.md) <br/> |Identifiziert die Anlage.  <br/> |
-|[Name (AttachmentType)](name-attachmenttype.md) <br/> |Stellt den Namen der Anlage an.  <br/> |
-|[ContentType](contenttype.md) <br/> |Beschreibt den Multipurpose Internet Mail Extensions (MIME) gescannt.  <br/> |
-|[ContentId](contentid.md) <br/> |Stellt einen Bezeichner für den Inhalt der Anlage dar. [ContentId](contentid.md) kann auf einen beliebigen Zeichenfolgenwert festgelegt werden. Anwendungen können [ContentId](contentid.md) um eigene Kennung Mechanismen zu implementieren.  <br/> |
-|[ContentLocation](contentlocation.md) <br/> |Enthält den URI Uniform Resource Identifier (), die den Speicherort des Inhalts der Anlage entspricht.  <br/> |
-|[Size](size.md) <br/> |Stellt die Größe des Dateianlage in Bytes.  <br/> |
-|[LastModifiedTime](lastmodifiedtime.md) <br/> |Darstellt, wenn die Anlage zuletzt geändert wurde.  <br/> |
-|[IsInline](isinline.md) <br/> |Stellt dar, ob die Anlage Inline innerhalb eines Elements angezeigt wird.  <br/> |
-|[Element](item.md) <br/> |Stellt eine generische Exchange Element Anlage.  <br/> |
-|[Meldung](message-ex15websvcsotherref.md) <br/> |Stellt eine Anlage Exchange e-Mail-Nachricht dar.  <br/> |
-|[CalendarItem](calendaritem.md) <br/> |Anlage Element Exchange-Kalender darstellt.  <br/> |
-|[Contact](contact.md) <br/> |Anlage Kontaktelement Exchange darstellt.  <br/> |
-|[Aufgabe](task.md) <br/> |Stellt eine Exchange-Task-Anlage.  <br/> |
+|[Name (AttachmentType)](name-attachmenttype.md) <br/> |Stellt den Namen der Anlage dar.  <br/> |
+|[ContentType](contenttype.md) <br/> |Beschreibt die Multipurpose Internet Mail Extensions (MIME) Art des Anlage Inhalts.  <br/> |
+|[ContentId](contentid.md) <br/> |Stellt einen Bezeichner für den Inhalt der Anlage dar. Die [Inhalts](contentid.md) -Nr kann auf einen beliebigen Zeichenfolgenwert festgelegt werden. Anwendungen können mithilfe von [Content](contentid.md) -ID eigene Identifikations Mechanismen implementieren.  <br/> |
+|[ContentLocation](contentlocation.md) <br/> |Enthält den URI (Uniform Resource Identifier), der dem Speicherort des Inhalts der Anlage entspricht.  <br/> |
+|[Größe](size.md) <br/> |Stellt die Größe der Dateianlage in Bytes dar.  <br/> |
+|[LastModifiedTime](lastmodifiedtime.md) <br/> |Stellt dar, wann die Anlage zuletzt geändert wurde.  <br/> |
+|[IsInline](isinline.md) <br/> |Stellt dar, ob die Anlage Inline in einem Element angezeigt wird.  <br/> |
+|[Element](item.md) <br/> |Stellt eine generische Exchange-Elementanlage dar.  <br/> |
+|[Meldung](message-ex15websvcsotherref.md) <br/> |Stellt eine Exchange-e-Mail-Nachrichtenanlage dar.  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Stellt eine Exchange-Kalenderelement Anlage dar.  <br/> |
+|[Contact](contact.md) <br/> |Stellt eine Exchange-Kontaktelement Anlage dar.  <br/> |
+|[Task](task.md) <br/> |Stellt eine Exchange-Aufgabenanlage dar.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort im Exchange-Informationsspeicher dar.  <br/> |
@@ -185,21 +185,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Anlagen](attachments-ex15websvcsotherref.md) <br/> |Enthält die Elemente und/oder Dateien, die ein Element in der Exchange-Informationsspeicher zugeordnet sind.  <br/> |
+|[Anlagen](attachments-ex15websvcsotherref.md) <br/> |Enthält die Elemente und/oder Dateien, die an ein Element im Exchange-Informationsspeicher angefügt sind.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |

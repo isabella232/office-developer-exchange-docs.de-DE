@@ -1,5 +1,5 @@
 ---
-title: CChkSGFiles.ErrCheckDbPages-Funktion
+title: CChkSGFiles. ErrCheckDbPages-Funktion
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,15 +11,15 @@ api_name:
 api_type:
 - dllExport
 ms.assetid: 5e981a7c-28cd-470c-b7eb-606463e9dd05
-description: 'Zuletzt geändert: 22 Februar 2013'
-ms.openlocfilehash: f1588b1dbc4bd7e83683fa4432a175405ad17903
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 'Letzte Änderung: 22. Februar 2013'
+ms.openlocfilehash: 78d2dbee6253096d597b4ec2de3878f40ee1b6d7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19756803"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526725"
 ---
-# <a name="cchksgfileserrcheckdbpages-function"></a>CChkSGFiles.ErrCheckDbPages-Funktion
+# <a name="cchksgfileserrcheckdbpages-function"></a>CChkSGFiles. ErrCheckDbPages-Funktion
 
 **Gilt für:** Exchange Server 2003 | Exchange Server 2007 | Exchange Server 2010 | Exchange Server 2013
   
@@ -42,52 +42,52 @@ Vitual ERRErrCheckDbPages
 
 ### <a name="idb"></a>iDb
   
-Input-Parameter. Ein Index in das Array von Datenbanken, die im Parameter an die Funktion **ErrInit** **RgwszDb []** angegeben. Die Datenbank, die von diesem Parameter indiziert werden überprüft. 
+Eingabeparameter. Ein Index in das im **rgwszDb []** -Parameter angegebene Array von Datenbanken für die **ErrInit** -Funktion. Die von diesem Parameter indizierte Datenbank wird überprüft. 
     
 ### <a name="pvpagebuffer"></a>pvPageBuffer 
   
-Input-Parameter. Ein Zeiger auf einen Puffer mit mindestens Datenbankseiten überprüft werden soll. Die Größe des Puffers muss ein Vielfaches von Seitengröße der Datenbank, wie in der **PcbDbPageSize** -Parameter von der Funktion **ErrCheckDbHeaders** zurückgegeben. Die aufrufende Anwendung muss den Puffer mit dem Inhalt der Datenbank vor dem Aufruf von **ErrCheckDbPages**ausfüllen.
+Eingabeparameter. Ein Zeiger auf einen Puffer, der eine oder mehrere zu überprüfende Datenbankseiten enthält. Die Größe des Puffers muss ein Vielfaches der Datenbankseitengröße sein, wie er im **pcbDbPageSize** -Parameter von der **ErrCheckDbHeaders** -Funktion zurückgegeben wird. Die aufrufende Anwendung muss den Puffer mit dem Inhalt der Datenbankseite füllen, bevor **ErrCheckDbPages**aufgerufen wird.
     
 ### <a name="cbpagebuffer"></a>cbPageBuffer
   
-Input-Parameter. Die Größe des Parameters **PvPageBuffer** in Byte. Dieser Wert muss ein Vielfaches von Seitengröße der Datenbank sein, wie im Parameter **PcbDbPageSize** durch die **ErrCheckDbHeaders** -Funktion zurückgegeben. 
+Eingabeparameter. Die Größe des **pvPageBuffer** -Parameters in Bytes. Dieser Wert muss ein Vielfaches der Datenbankseitengröße sein, wie er im **pcbDbPageSize** -Parameter von der **ErrCheckDbHeaders** -Funktion zurückgegeben wird. 
     
-### <a name="rgpageinfo"></a>RgPageInfo] 
+### <a name="rgpageinfo"></a>rgPageInfo[] 
   
-Input/Output-Parameter. Ein Array von **Seite\_INFO** Strukturen, die mit **ErrCheckDbPages** füllt ausführliche Ergebnisse jeder Datenbank-Seite, die eingecheckt wird. Das Array muss ein Element für jede Datenbankseite in der **PvPageBuffer** -Parameter und das Feld **UlPgno** in den einzelnen übergeben haben **Seite\_INFO** Struktur muss festgelegt werden, um die logische Seitenzahl, die der Datenbankseite entspricht. Weitere Informationen finden Sie unter "Hinweise" weiter unten in diesem Thema. 
+Input/Output-Parameter. Ein Array von **Seiten \_ Info** Strukturen, das von **ErrCheckDbPages** mit detaillierten Ergebnissen jeder geprüften Datenbankseite gefüllt wird. Das Array muss ein Element für jede Datenbankseite haben, die im **pvPageBuffer** -Parameter übergeben wird, und das **ulPgno** -Feld in jeder **Seiten \_ Info** Struktur muss auf die logische Seitenzahl festgelegt werden, die der Datenbankseite entspricht. Weitere Informationen finden Sie weiter unten in diesem Thema unter "Hinweise". 
     
 ### <a name="cpageinfo"></a>cPageInfo
   
-Input-Parameter. Die Anzahl der Einträge im Array **RgPageInfo []** . Dieser Wert muss gleich der Anzahl von Datenbankseiten im **PvPageBuffer** -Parameter übergeben werden. 
+Eingabeparameter. Die Anzahl der Einträge im **rgPageInfo []** -Array. Dieser Wert muss der Anzahl der Datenbankseiten entsprechen, die im Parameter **pvPageBuffer** übergeben wurden. 
     
 ### <a name="ulflags"></a>ulFlags 
   
-Optionale Eingabeparameter. Dieser Wert ist für die zukünftige Verwendung reserviert. Der in diesem Parameter übergebene Wert muss 0 (null) sein.
+Optionaler Eingabeparameter. Dieser Wert ist für die zukünftige Verwendung reserviert. Der in diesem Parameter übergebene Wert sollte 0 (null) sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Ein Fehlercode aus der [ERR](cchksgfiles-err-enumeration.md) -Aufzählung. 
+Ein Fehlercode aus der [Err](cchksgfiles-err-enumeration.md) -Aufzählung. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Beachten Sie, dass müssen Sie die Datenbank in das Array von Datenbanken, die an die Funktion **ErrInit** übergeben angegeben haben. Darüber hinaus muss **ErrCheckDbHeaders** vor **ErrCheckDbPages**aufgerufen werden.
+Beachten Sie, dass Sie die Datenbank im Array von Datenbanken angegeben haben müssen, die an die **ErrInit** -Funktion übergeben wurden. Außerdem muss **ErrCheckDbHeaders** vor **ErrCheckDbPages**aufgerufen werden.
   
-Die aufrufende Anwendung muss Speicherpuffers zuweisen, die groß genug für die Datenbankseiten überprüft werden soll. Die Anwendung ist verantwortlich für die Puffer mit dem Inhalt von mindestens einen solchen Datenbankseiten ausfüllen. 
+Die aufrufende Anwendung muss einen Arbeitsspeicherpuffer zuweisen, der groß genug ist, um die zu prüfenden Datenbankseiten zu speichern. Die Anwendung ist für das Ausfüllen des Puffers mit dem Inhalt einer oder mehrerer solcher Datenbankseiten verantwortlich. 
   
-Die aufrufende Anwendung muss vor dem Aufruf von **ErrCheckDbPages** **ErrCheckDbHeaders** aufrufen. So oft wie erforderlich sind, um alle Seiten in allen Datenbankdateien behandelt, die überprüft werden sollen, kann diese Funktion aufgerufen werden.
+Die aufrufende Anwendung muss **ErrCheckDbHeaders** vor dem Aufruf von **ErrCheckDbPages**aufrufen. Diese Funktion kann so oft wie erforderlich aufgerufen werden, um alle Seiten in allen Datenbankdateien abzudecken, die überprüft werden sollen.
   
-In der Parameter **RgPageInfo []** jedes zurückgegebene Element enthält Informationen zu der Datenbankseite in einer **Seite\_INFO** Struktur. Wenn die **ErrCheckDbPages** -Funktion einen Fehler zurückgibt, sollte die Anwendung überprüfen jeweils **Seite\_INFO** Struktur, um festzulegen, auf welcher Seite der Fehler gefunden wurde. Vergleichen die Werte **ChecksumActual** und **ChecksumExpected** wird beispielsweise angeben, ob ein Prüfsummenfehler auf der Datenbankseite erkannt wurde. 
+Im **rgPageInfo []** -Parameter enthält jedes zurückgegebene Elementinformationen zur Datenbankseite in einer **Seiten \_ Info** Struktur. Wenn die **ErrCheckDbPages** -Funktion einen Fehler zurückgibt, sollte die Anwendung jede **Seiten \_ Info** Struktur überprüfen, um zu bestimmen, auf welcher Seite der Fehler gefunden wurde. Wenn Sie beispielsweise den **checksumActual** -und den **checksumExpected** -Wert vergleichen, wird angegeben, ob auf dieser Datenbankseite ein Prüfsummenfehler erkannt wurde. 
   
-Wenn **ErrCheckDbPages** Fehler in der Datenbank erkennt, erstellt er einen Ereignisprotokolleintrag Windows-Fehler. 
+Wenn **ErrCheckDbPages** Fehler im Datenbankinhalt erkennt, wird ein Windows-Fehlerereignisprotokoll Eintrag erstellt. 
   
-Das Objekt **CChkSGFiles** bestimmt, ob alle Datenbanken, die mit der Funktion **ErrInit** registriert tatsächlich aktiviert wurden. Insbesondere wird **CChkSGFiles** die **ErrCheckDbPages** -Funktion verwendet, um zu bestimmen, ob die gleiche Anzahl von Datenbankseiten angegeben durch **ErrCheckDbHeaders** tatsächlich überprüft wurden. Wenn die richtige Anzahl von Seiten in jeder Datenbank nicht erfolgreich überprüft wurden, gibt die **ErrTerm** -Funktion einen Fehler zurück. 
+Das **CChkSGFiles** -Objekt bestimmt, ob alle Datenbanken, die mit der **ErrInit** -Funktion registriert wurden, tatsächlich überprüft wurden. Insbesondere verwendet **CChkSGFiles** die **ErrCheckDbPages** -Funktion, um zu bestimmen, ob die gleiche Anzahl von Datenbankseiten, die von **ErrCheckDbHeaders** angezeigt wurden, tatsächlich überprüft wurde. Wenn die richtige Anzahl von Seiten in jeder Datenbank nicht erfolgreich überprüft wurde, gibt die **ErrTerm** -Funktion einen Fehler zurück. 
   
-Wenn Sie für CHKSGFILES in multithreaded-Anwendung verwenden, können Sie die **ErrCheckDbPages** -Funktion im Multithread-Teil der Anwendung anrufen. Beachten Sie, dass **ErrCheckDbPages** in der Regel mehrere Male für jede Datenbank aufgerufen wird, der überprüft wird. 
+Wenn Sie CHKSGFILES in einer Multithread-Anwendung verwenden, können Sie die **ErrCheckDbPages** -Funktion im Multithread-Teil der Anwendung aufrufen. Beachten Sie, dass **ErrCheckDbPages** in der Regel für jede geprüfte Datenbank mehrmals aufgerufen wird. 
   
 ## <a name="requirements"></a>Anforderungen
 
-Exchange 2013 umfasst nur eine 64-Bit-Version der CHKSGFILES-API.
+Exchange 2013 enthält nur eine 64-Bit-Version der CHKSGFILES-API.
   
-Das Konto, unter die Anwendung ausgeführt wird, muss Berechtigungen für die Datenbank- und Protokolldateien Dateien gelesen haben, die überprüft werden sollen.
+Das Konto, unter dem die Anwendung betrieben wird, muss über Leseberechtigungen für die zu überprüfenden Datenbank-und Protokolldateien verfügen.
   
 

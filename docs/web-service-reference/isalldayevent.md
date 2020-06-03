@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 29140a64-9d7a-4a14-a10d-c98197c9831b
-description: Das IsAllDayEvent-Element gibt an, ob ein Kalender-Elements oder einer Besprechungsanfrage ein ganztägiges Ereignis darstellt.
-ms.openlocfilehash: 81cf1e7d8338275540f264de7cbf194005e7770c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das IsAllDayEvent-Element gibt an, ob ein Kalenderelement oder eine Besprechungsanfrage ein ganztägiges Ereignis darstellt.
+ms.openlocfilehash: f0c975deecf96e94599a47ef2c33e54a7d1a80b9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19829983"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526536"
 ---
 # <a name="isalldayevent"></a>IsAllDayEvent
 
-Das **IsAllDayEvent** -Element gibt an, ob ein Kalender-Elements oder einer Besprechungsanfrage ein ganztägiges Ereignis darstellt. 
+Das **IsAllDayEvent** -Element gibt an, ob ein Kalenderelement oder eine Besprechungsanfrage ein ganztägiges Ereignis darstellt. 
   
 ```xml
 <IsAllDayEvent/>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -49,19 +49,19 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der einen booleschen Wert darstellt ist erforderlich, wenn dieses Element enthalten ist. Der Wert **true** gibt an, dass das Element ein ganztägiges Ereignis darstellt. Der Wert **false** gibt an, dass das Element kleiner als Arbeitsstunden des Benutzers umfasst. 
+Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich, wenn dieses Element enthalten ist. Der Wert **true** gibt an, dass das Element ein ganztägiges Ereignis darstellt. Der Wert **false** gibt an, dass das Element weniger als die Arbeitszeiten eines Benutzers umfasst. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Ein ganztägiges Ereignis erstreckt sich über die Dauer der Arbeitsstunden, die definiert ist für ein Postfach aus.
+Ein ganztägiges Ereignis umfasst die Dauer der Arbeitsstunden, die für ein Postfach definiert ist.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |

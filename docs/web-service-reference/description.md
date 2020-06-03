@@ -12,7 +12,7 @@ ms.openlocfilehash: a399d4072220e3fa9199f0a3eb760e886b7b4ee6
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467886"
 ---
 # <a name="description"></a>Beschreibung

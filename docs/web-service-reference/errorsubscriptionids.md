@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e64e76ff-4d98-4082-9acc-a1114ae45f44
-description: Das ErrorSubscriptionIds-Element enthält ein Array von Ungültiges Abonnement IDs.
-ms.openlocfilehash: 5cdbbeb1083754510f431bc092bb67dc0addecab
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ErrorSubscriptionIds-Element enthält ein Array von ungültigen Abonnement-IDs.
+ms.openlocfilehash: bdc5c86560800464d677a9043607bed3f7872e32
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758276"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526186"
 ---
 # <a name="errorsubscriptionids"></a>ErrorSubscriptionIds
 
-Das **ErrorSubscriptionIds** -Element enthält ein Array von Ungültiges Abonnement IDs. 
+Das **ErrorSubscriptionIds** -Element enthält ein Array von ungültigen Abonnement-IDs. 
   
 ```xml
 <ErrorSubscriptionIds>
@@ -42,29 +42,29 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SubscriptionId (GetEvents)](subscriptionid-getevents.md) <br/> |Stellt den Bezeichner für ein Abonnement.  <br/> |
+|[Abonnement-Nr (GetEvents)](subscriptionid-getevents.md) <br/> |Stellt den Bezeichner für ein Abonnement dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetStreamingEventsResponseMessage](getstreamingeventsresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen Anforderung [GetStreamingEvents Vorgang](getstreamingevents-operation.md) .  <br/> |
+|[GetStreamingEventsResponseMessage](getstreamingeventsresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [GetStreamingEvents-Vorgangs](getstreamingevents-operation.md) Anforderung.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages und http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Name des Schemas  <br/> |Nachrichten-schema Typen-schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages.xsd; Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages und https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Name des Schemas  <br/> |Nachrichtenschema; Typenschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages. xsd; Types. xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
