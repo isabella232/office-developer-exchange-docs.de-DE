@@ -16,7 +16,7 @@ ms.openlocfilehash: 93e8dbe28e130ab64d4b8d12d2befde1f77ae8fa
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460022"
 ---
 # <a name="getitem-operation-contact"></a>GetItem-Vorgang (Kontakt)
@@ -169,9 +169,9 @@ Die folgenden Elemente werden in der Antwort für eine GetItem-Anforderung mit d
     
 - [ResponseCode](responsecode.md)
     
-- [Items](items.md)
+- [Elemente](items.md)
     
-- [Kontakt](contact.md)
+- [Contact](contact.md)
     
 - [ItemId](itemid.md)
     
@@ -334,7 +334,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Items](items.md)
+- [Elemente](items.md)
     
 ## <a name="see-also"></a>Siehe auch
 

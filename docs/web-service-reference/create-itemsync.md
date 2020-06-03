@@ -16,7 +16,7 @@ ms.openlocfilehash: b9c0f28333594a6c17ee9581a227fc4773874fd6
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460799"
 ---
 # <a name="create-itemsync"></a>Erstellen (ItemSync)
@@ -104,15 +104,15 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Item](item.md) <br/> |Stellt ein generisches Exchange-Element zum Erstellen dar.  <br/> |
-|[Nachricht](message-ex15websvcsotherref.md) <br/> |Stellt eine zu erstellenden Exchange-e-Mail-Nachricht dar.  <br/> |
+|[Meldung](message-ex15websvcsotherref.md) <br/> |Stellt eine zu erstellenden Exchange-e-Mail-Nachricht dar.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein zu Erstell Exchange-Kalenderelement dar.  <br/> |
-|[Kontakt](contact.md) <br/> |Stellt ein zu Erstell Exchange-Kontaktelement dar.  <br/> |
+|[Contact](contact.md) <br/> |Stellt ein zu Erstell Exchange-Kontaktelement dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine zu erstellende Verteilerliste dar.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine zu erstellende Besprechungsnachricht dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanfrage zum Erstellen dar.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort dar, die erstellt werden soll.  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine zu Erstell endabbruch Besprechung dar.  <br/> |
-|[Aufgabe](task.md) <br/> |Stellt eine Aufgabe dar, die erstellt werden soll.  <br/> |
+|[Task](task.md) <br/> |Stellt eine Aufgabe dar, die erstellt werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

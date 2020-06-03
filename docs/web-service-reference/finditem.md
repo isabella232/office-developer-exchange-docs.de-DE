@@ -16,7 +16,7 @@ ms.openlocfilehash: 3aeda1cffc03292734a91bc3fff3289d51c9b445
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460995"
 ---
 # <a name="finditem"></a>FindItem
@@ -139,7 +139,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |[ContactsView](contactsview.md) <br/> |Definiert eine Suche nach Kontaktelementen basierend auf alphabetischen Anzeigenamen. Dieses Element ist optional.  <br/> |
 |[GroupBy](groupby.md) <br/> |Gibt willkürliche Gruppierungen für **FindItem** -Abfragen an. Dieses Element ist optional.  <br/> |
 |[DistinguishedGroupBy](distinguishedgroupby.md) <br/> |Stellt Standardgruppierungen für **FindItem** -Abfragen bereit. Dieses Element ist optional.  <br/> |
-|[Restriction](restriction.md) <br/> |Definiert die Einschränkung oder Abfrage, die zum Filtern von Elementen oder Ordnern in **FindItem** /  -**FindFolder** und Suchordner Vorgängen verwendet wird. Dieses Element ist optional.  <br/> |
+|[Einschränkung](restriction.md) <br/> |Definiert die Einschränkung oder Abfrage, die zum Filtern von Elementen oder Ordnern in **FindItem** /  -**FindFolder** und Suchordner Vorgängen verwendet wird. Dieses Element ist optional.  <br/> |
 |[SortOrder](sortorder.md) <br/> |Definiert, wie Elemente in einer FindItem-Anforderung sortiert werden. Dieses Element ist optional.  <br/> |
 |[ParentFolderIds](parentfolderids.md) <br/> |Identifiziert Ordner, die für die FindItem-und FindFolder-Vorgänge gesucht werden sollen.  <br/> |
 |[QueryString (querystringtype)](querystring-querystringtype.md) <br/> |Enthält eine Post Fach Abfragezeichenfolge basierend auf der erweiterten Abfrage Syntax (AQS).  <br/> |
@@ -166,5 +166,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 ## <a name="see-also"></a>Siehe auch
 
 - [FindItem-Vorgang](finditem-operation.md)
-- [Finding Items](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+- [Suchen von Elementen](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

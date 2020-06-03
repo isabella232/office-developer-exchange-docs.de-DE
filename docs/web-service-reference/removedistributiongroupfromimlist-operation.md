@@ -12,7 +12,7 @@ ms.openlocfilehash: 66220f0cab99f404e17136bbb7836ca13d569b53
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459602"
 ---
 # <a name="removedistributiongroupfromimlist-operation"></a>RemoveDistributionGroupFromImList-Vorgang
@@ -149,6 +149,6 @@ Die folgenden Elemente werden im SOAP-Textkörper der Fehlerantwort verwendet:
     
 - [AddDistributionGroupToImList-Vorgang](adddistributiongrouptoimlist-operation.md)
     
-- [Benutzer und Kontakte in EWS in Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx#What)
+- [Personen und Kontakte in EWS in Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx#What)
     
 

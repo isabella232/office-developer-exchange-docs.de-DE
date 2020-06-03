@@ -16,7 +16,7 @@ ms.openlocfilehash: 66e1b91ea3154d8a501339aed7b398970e8f5392
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459826"
 ---
 # <a name="updateitem-operation-contact"></a>UpdateItem-Vorgang (Kontakt)
@@ -82,7 +82,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [IndexedFieldURI](indexedfielduri.md)
     
-- [Kontakt](contact.md)
+- [Contact](contact.md)
     
 - [EmailAddresses](emailaddresses.md)
     
@@ -144,7 +144,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
-- [Kontakt](contact.md)
+- [Contact](contact.md)
     
 - [ItemId](itemid.md)
     

@@ -12,7 +12,7 @@ ms.openlocfilehash: b38bca60bb51c24a7635391c4e23e5426366cd72
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461072"
 ---
 # <a name="getconversationitemsresponsemessage"></a>GetConversationItemsResponseMessage
@@ -44,7 +44,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Erfolg  <br/> |Gibt den Erfolg an.  <br/> |
+|Erfolgreich  <br/> |Gibt den Erfolg an.  <br/> |
 |Warnung  <br/> |Gibt eine Warnung an.  <br/> |
 |Fehler (ungefährer Wortlaut)  <br/> |Gibt einen Fehler an.  <br/> |
    

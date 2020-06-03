@@ -16,7 +16,7 @@ ms.openlocfilehash: 797e4543c94b0628242bcf544fe9a735ebaa5a63
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460939"
 ---
 # <a name="getservertimezones"></a>GetServerTimeZones
@@ -43,7 +43,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |**true** <br/> |Zurückgeben der vollständigen Definitionen für jede Zeitzone.  <br/> |
-|**false** <br/> |Geben Sie nur den Namen und den Bezeichner für jede Zeitzone zurück.  <br/> |
+|**False** <br/> |Geben Sie nur den Namen und den Bezeichner für jede Zeitzone zurück.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: 400bf5d1cafcbb789aaa749c62c7a908622d4ddb
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461065"
 ---
 # <a name="getdelegate-operation"></a>GetDelegate-Vorgang

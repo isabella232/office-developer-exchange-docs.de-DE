@@ -16,7 +16,7 @@ ms.openlocfilehash: 0f70f1fe4348b5b74cef6be6414618af1e3de260
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459854"
 ---
 # <a name="items-nonemptyarrayofallitemstype"></a>Elemente (NonEmptyArrayOfAllItemsType)
@@ -63,7 +63,7 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Element](item.md) <br/> |Stellt ein Element im Exchange-Informationsspeicher dar.  <br/> |
-|[Nachricht](message-ex15websvcsotherref.md) <br/> |Stellt eine Exchange-e-Mail-Nachricht dar.  <br/> |
+|[Meldung](message-ex15websvcsotherref.md) <br/> |Stellt eine Exchange-e-Mail-Nachricht dar.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |

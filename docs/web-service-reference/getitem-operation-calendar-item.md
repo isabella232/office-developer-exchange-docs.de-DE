@@ -16,7 +16,7 @@ ms.openlocfilehash: 09fe92af12f03ce4cebd1e98f4e01c087ace64f9
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460617"
 ---
 # <a name="getitem-operation-calendar-item"></a>GetItem-Vorgang (Kalenderelement)
@@ -281,7 +281,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Items](items.md)
+- [Elemente](items.md)
     
 - [CalendarItem](calendaritem.md)
     
