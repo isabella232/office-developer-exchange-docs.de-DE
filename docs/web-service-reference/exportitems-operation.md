@@ -11,33 +11,33 @@ api_name:
 api_type:
 - schema
 ms.assetid: e2846abb-0b16-4732-bbd8-038a674672f6
-description: Der Vorgang ExportItems exportiert Elemente aus einem Postfach.
-ms.openlocfilehash: 6f0760705c05de2a615544fe52ac50b398be6040
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Der Export Items-Vorgang exportiert Elemente aus einem Postfach.
+ms.openlocfilehash: 547a490a27d2414d2eda1d89cdac036a34eddccd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758325"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526046"
 ---
-# <a name="exportitems-operation"></a><span data-ttu-id="bcf4a-103">ExportItems-Vorgang</span><span class="sxs-lookup"><span data-stu-id="bcf4a-103">ExportItems operation</span></span>
+# <a name="exportitems-operation"></a><span data-ttu-id="a5da1-103">ExportItems-Vorgang</span><span class="sxs-lookup"><span data-stu-id="a5da1-103">ExportItems operation</span></span>
 
-<span data-ttu-id="bcf4a-104">Der Vorgang **ExportItems** exportiert Elemente aus einem Postfach.</span><span class="sxs-lookup"><span data-stu-id="bcf4a-104">The **ExportItems** operation exports items out of a mailbox.</span></span> 
+<span data-ttu-id="a5da1-104">Der **Export Items** -Vorgang exportiert Elemente aus einem Postfach.</span><span class="sxs-lookup"><span data-stu-id="a5da1-104">The **ExportItems** operation exports items out of a mailbox.</span></span> 
   
-## <a name="exportitems-request-example"></a><span data-ttu-id="bcf4a-105">Anforderungsbeispiel ExportItems</span><span class="sxs-lookup"><span data-stu-id="bcf4a-105">ExportItems request example</span></span>
+## <a name="exportitems-request-example"></a><span data-ttu-id="a5da1-105">Export Items-Anforderungs Beispiel</span><span class="sxs-lookup"><span data-stu-id="a5da1-105">ExportItems request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="bcf4a-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="bcf4a-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="a5da1-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a5da1-106">Description</span></span>
 
-<span data-ttu-id="bcf4a-107">Im folgenden Beispiel wird einer Anforderung **ExportItems** bilden eine Anforderung zum Abrufen von drei Elemente, die aus einem Postfach exportiert veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="bcf4a-107">The following example of an **ExportItems** request shows how to form a request to get three items exported from a mailbox.</span></span> 
+<span data-ttu-id="a5da1-107">Im folgenden Beispiel einer **Export Items** -Anforderung wird gezeigt, wie Sie eine Anforderung zum Abrufen von drei aus einem Postfach exportierten Elementen erstellen.</span><span class="sxs-lookup"><span data-stu-id="a5da1-107">The following example of an **ExportItems** request shows how to form a request to get three items exported from a mailbox.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="bcf4a-108">Code</span><span class="sxs-lookup"><span data-stu-id="bcf4a-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="a5da1-108">Code</span><span class="sxs-lookup"><span data-stu-id="a5da1-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns:xsd="http://www.w3.org/2001/XMLSchema"
       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-      xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+      xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010_SP1" />
   </soap:Header>
@@ -53,29 +53,29 @@ ms.locfileid: "19758325"
 </soap:Envelope>
 ```
 
-### <a name="comment"></a><span data-ttu-id="bcf4a-109">Comment</span><span class="sxs-lookup"><span data-stu-id="bcf4a-109">Comment</span></span>
+### <a name="comment"></a><span data-ttu-id="a5da1-109">Kommentar</span><span class="sxs-lookup"><span data-stu-id="a5da1-109">Comment</span></span>
 
-<span data-ttu-id="bcf4a-110">Die Element-IDs im Beispiel wurden gekürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="bcf4a-110">The item identifiers in the example have been shortened to preserve readability.</span></span>
+<span data-ttu-id="a5da1-110">Die Element-IDs im Beispiel wurden verkürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="a5da1-110">The item identifiers in the example have been shortened to preserve readability.</span></span>
   
-### <a name="request-elements"></a><span data-ttu-id="bcf4a-111">Anfordern von Elementen</span><span class="sxs-lookup"><span data-stu-id="bcf4a-111">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="a5da1-111">Anfordern von Elementen</span><span class="sxs-lookup"><span data-stu-id="a5da1-111">Request elements</span></span>
 
-<span data-ttu-id="bcf4a-112">In der Anforderung werden folgende Elemente verwendet:</span><span class="sxs-lookup"><span data-stu-id="bcf4a-112">The following elements are used in the request:</span></span>
+<span data-ttu-id="a5da1-112">In der Anforderung werden folgende Elemente verwendet:</span><span class="sxs-lookup"><span data-stu-id="a5da1-112">The following elements are used in the request:</span></span>
   
-- [<span data-ttu-id="bcf4a-113">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="bcf4a-113">RequestServerVersion</span></span>](requestserverversion.md)
+- [<span data-ttu-id="a5da1-113">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="a5da1-113">RequestServerVersion</span></span>](requestserverversion.md)
     
-- [<span data-ttu-id="bcf4a-114">ExportItems</span><span class="sxs-lookup"><span data-stu-id="bcf4a-114">ExportItems</span></span>](exportitems.md)
+- [<span data-ttu-id="a5da1-114">ExportItems</span><span class="sxs-lookup"><span data-stu-id="a5da1-114">ExportItems</span></span>](exportitems.md)
     
-- [<span data-ttu-id="bcf4a-115">Artikelnummern ein (NonEmptyArrayOfItemIdsType).</span><span class="sxs-lookup"><span data-stu-id="bcf4a-115">ItemIds (NonEmptyArrayOfItemIdsType)</span></span>](itemids-nonemptyarrayofitemidstype.md)
+- [<span data-ttu-id="a5da1-115">Itemids (NonEmptyArrayOfItemIdsType)</span><span class="sxs-lookup"><span data-stu-id="a5da1-115">ItemIds (NonEmptyArrayOfItemIdsType)</span></span>](itemids-nonemptyarrayofitemidstype.md)
     
-- [<span data-ttu-id="bcf4a-116">ItemId</span><span class="sxs-lookup"><span data-stu-id="bcf4a-116">ItemId</span></span>](itemid.md)
+- [<span data-ttu-id="a5da1-116">ItemId</span><span class="sxs-lookup"><span data-stu-id="a5da1-116">ItemId</span></span>](itemid.md)
     
-## <a name="successful-exportitems-response-example"></a><span data-ttu-id="bcf4a-117">Erfolgreiche ExportItems antwortbeispiel</span><span class="sxs-lookup"><span data-stu-id="bcf4a-117">Successful ExportItems response example</span></span>
+## <a name="successful-exportitems-response-example"></a><span data-ttu-id="a5da1-117">Erfolgreiches Export Items-Antwortbeispiel</span><span class="sxs-lookup"><span data-stu-id="a5da1-117">Successful ExportItems response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="bcf4a-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="bcf4a-118">Description</span></span>
+### <a name="description"></a><span data-ttu-id="a5da1-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a5da1-118">Description</span></span>
 
-<span data-ttu-id="bcf4a-119">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Anforderung **ExportItems** .</span><span class="sxs-lookup"><span data-stu-id="bcf4a-119">The following example shows a successful response to an **ExportItems** request.</span></span> 
+<span data-ttu-id="a5da1-119">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **Export Items** -Anforderung.</span><span class="sxs-lookup"><span data-stu-id="a5da1-119">The following example shows a successful response to an **ExportItems** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="bcf4a-120">Code</span><span class="sxs-lookup"><span data-stu-id="bcf4a-120">Code</span></span>
+### <a name="code"></a><span data-ttu-id="a5da1-120">Code</span><span class="sxs-lookup"><span data-stu-id="a5da1-120">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -86,15 +86,15 @@ ms.locfileid: "19758325"
     MajorBuildNumber="139"
     MinorBuildNumber="0"
     Version="Exchange2010_SP1"
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-    xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+    xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:ExportItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:ExportItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:ExportItemsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -147,35 +147,35 @@ ms.locfileid: "19758325"
 </s:Envelope>
 ```
 
-### <a name="comment"></a><span data-ttu-id="bcf4a-121">Comment</span><span class="sxs-lookup"><span data-stu-id="bcf4a-121">Comment</span></span>
+### <a name="comment"></a><span data-ttu-id="a5da1-121">Kommentar</span><span class="sxs-lookup"><span data-stu-id="a5da1-121">Comment</span></span>
 
-<span data-ttu-id="bcf4a-122">Die Element-IDs und Ändern von Schlüsseln im Beispiel wurden gekürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="bcf4a-122">The item identifiers and change keys in the example have been shortened to preserve readability.</span></span>
+<span data-ttu-id="a5da1-122">Die Element-IDs und Änderungsschlüssel im Beispiel wurden verkürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="a5da1-122">The item identifiers and change keys in the example have been shortened to preserve readability.</span></span>
   
-### <a name="response-elements"></a><span data-ttu-id="bcf4a-123">Antwortelemente</span><span class="sxs-lookup"><span data-stu-id="bcf4a-123">Response elements</span></span>
+### <a name="response-elements"></a><span data-ttu-id="a5da1-123">Response-Elemente</span><span class="sxs-lookup"><span data-stu-id="a5da1-123">Response elements</span></span>
 
-<span data-ttu-id="bcf4a-124">In der Antwort werden folgende Elemente verwendet:</span><span class="sxs-lookup"><span data-stu-id="bcf4a-124">The following elements are used in the response:</span></span>
+<span data-ttu-id="a5da1-124">In der Antwort werden folgende Elemente verwendet:</span><span class="sxs-lookup"><span data-stu-id="a5da1-124">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="bcf4a-125">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="bcf4a-125">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="a5da1-125">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="a5da1-125">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="bcf4a-126">ExportItemsResponse</span><span class="sxs-lookup"><span data-stu-id="bcf4a-126">ExportItemsResponse</span></span>](exportitemsresponse.md)
+- [<span data-ttu-id="a5da1-126">ExportItemsResponse</span><span class="sxs-lookup"><span data-stu-id="a5da1-126">ExportItemsResponse</span></span>](exportitemsresponse.md)
     
-- [<span data-ttu-id="bcf4a-127">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="bcf4a-127">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="a5da1-127">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="a5da1-127">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="bcf4a-128">ExportItemsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="bcf4a-128">ExportItemsResponseMessage</span></span>](exportitemsresponsemessage.md)
+- [<span data-ttu-id="a5da1-128">ExportItemsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="a5da1-128">ExportItemsResponseMessage</span></span>](exportitemsresponsemessage.md)
     
-- [<span data-ttu-id="bcf4a-129">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="bcf4a-129">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="a5da1-129">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="a5da1-129">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="bcf4a-130">ItemId</span><span class="sxs-lookup"><span data-stu-id="bcf4a-130">ItemId</span></span>](itemid.md)
+- [<span data-ttu-id="a5da1-130">ItemId</span><span class="sxs-lookup"><span data-stu-id="a5da1-130">ItemId</span></span>](itemid.md)
     
-- [<span data-ttu-id="bcf4a-131">Daten (base64Binary)</span><span class="sxs-lookup"><span data-stu-id="bcf4a-131">Data (base64Binary)</span></span>](data-base64binary.md)
+- [<span data-ttu-id="a5da1-131">Data (base64Binary)</span><span class="sxs-lookup"><span data-stu-id="a5da1-131">Data (base64Binary)</span></span>](data-base64binary.md)
     
-## <a name="exportitems-error-response-example"></a><span data-ttu-id="bcf4a-132">Antwortbeispiel ExportItems-Fehler</span><span class="sxs-lookup"><span data-stu-id="bcf4a-132">ExportItems Error response example</span></span>
+## <a name="exportitems-error-response-example"></a><span data-ttu-id="a5da1-132">Export Items-Fehlerantwort Beispiel</span><span class="sxs-lookup"><span data-stu-id="a5da1-132">ExportItems Error response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="bcf4a-133">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="bcf4a-133">Description</span></span>
+### <a name="description"></a><span data-ttu-id="a5da1-133">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a5da1-133">Description</span></span>
 
-<span data-ttu-id="bcf4a-134">Das folgende Beispiel zeigt eine Antwort auf die **ExportItems** -Anforderung, die zwei Fehler und ein erfolgreich exportiert Element enthält.</span><span class="sxs-lookup"><span data-stu-id="bcf4a-134">The following example shows a response to the **ExportItems** request that contains two errors and one successfully exported item.</span></span> <span data-ttu-id="bcf4a-135">Das erste Element im Beispiel wurde erfolgreich exportiert.</span><span class="sxs-lookup"><span data-stu-id="bcf4a-135">The first item in the example is successfully exported.</span></span> <span data-ttu-id="bcf4a-136">Das zweite Element enthält ein Key falsche ändern.</span><span class="sxs-lookup"><span data-stu-id="bcf4a-136">The second item contains an incorrect change key.</span></span> <span data-ttu-id="bcf4a-137">Das dritte Element stellt Versuch, ein Element aus dem falschen Postfach zu exportieren.</span><span class="sxs-lookup"><span data-stu-id="bcf4a-137">The third item represents an attempt to export an item from the wrong mailbox.</span></span> 
+<span data-ttu-id="a5da1-134">Das folgende Beispiel zeigt eine Antwort auf die **Export Items** -Anforderung, die zwei Fehler und ein erfolgreich exportiertes Element enthält.</span><span class="sxs-lookup"><span data-stu-id="a5da1-134">The following example shows a response to the **ExportItems** request that contains two errors and one successfully exported item.</span></span> <span data-ttu-id="a5da1-135">Das erste Element im Beispiel wird erfolgreich exportiert.</span><span class="sxs-lookup"><span data-stu-id="a5da1-135">The first item in the example is successfully exported.</span></span> <span data-ttu-id="a5da1-136">Das zweite Element enthält einen falschen Änderungsschlüssel.</span><span class="sxs-lookup"><span data-stu-id="a5da1-136">The second item contains an incorrect change key.</span></span> <span data-ttu-id="a5da1-137">Das dritte Element stellt einen Versuch dar, ein Element aus dem falschen Postfach zu exportieren.</span><span class="sxs-lookup"><span data-stu-id="a5da1-137">The third item represents an attempt to export an item from the wrong mailbox.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="bcf4a-138">Code</span><span class="sxs-lookup"><span data-stu-id="bcf4a-138">Code</span></span>
+### <a name="code"></a><span data-ttu-id="a5da1-138">Code</span><span class="sxs-lookup"><span data-stu-id="a5da1-138">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -186,15 +186,15 @@ ms.locfileid: "19758325"
                          MajorBuildNumber="164" 
                          MinorBuildNumber="0" 
                          Version="Exchange2010_SP1" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:ExportItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                           xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:ExportItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                           xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:ExportItemsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -227,47 +227,47 @@ ms.locfileid: "19758325"
 
 ```
 
-### <a name="comments"></a><span data-ttu-id="bcf4a-139">Kommentare</span><span class="sxs-lookup"><span data-stu-id="bcf4a-139">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="a5da1-139">Comments</span><span class="sxs-lookup"><span data-stu-id="a5da1-139">Comments</span></span>
 
-<span data-ttu-id="bcf4a-140">Der Elementbezeichner Tasten ändern, und Daten im Beispiel wurde gekürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="bcf4a-140">The item identifiers, change keys, and data in the example have been shortened to preserve readability.</span></span>
+<span data-ttu-id="a5da1-140">Die Element-IDs, Änderungsschlüssel und Daten im Beispiel wurden verkürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="a5da1-140">The item identifiers, change keys, and data in the example have been shortened to preserve readability.</span></span>
   
-### <a name="error-response-elements"></a><span data-ttu-id="bcf4a-141">Fehler Antwortelemente</span><span class="sxs-lookup"><span data-stu-id="bcf4a-141">Error response elements</span></span>
+### <a name="error-response-elements"></a><span data-ttu-id="a5da1-141">Fehlerantwortelemente</span><span class="sxs-lookup"><span data-stu-id="a5da1-141">Error response elements</span></span>
 
-<span data-ttu-id="bcf4a-142">Folgende Elemente werden in der Fehlerantwort verwendet:</span><span class="sxs-lookup"><span data-stu-id="bcf4a-142">The following elements are used in the error response:</span></span>
+<span data-ttu-id="a5da1-142">Folgende Elemente werden in der Fehlerantwort verwendet:</span><span class="sxs-lookup"><span data-stu-id="a5da1-142">The following elements are used in the error response:</span></span>
   
-- [<span data-ttu-id="bcf4a-143">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="bcf4a-143">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="a5da1-143">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="a5da1-143">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="bcf4a-144">ExportItemsResponse</span><span class="sxs-lookup"><span data-stu-id="bcf4a-144">ExportItemsResponse</span></span>](exportitemsresponse.md)
+- [<span data-ttu-id="a5da1-144">ExportItemsResponse</span><span class="sxs-lookup"><span data-stu-id="a5da1-144">ExportItemsResponse</span></span>](exportitemsresponse.md)
     
-- [<span data-ttu-id="bcf4a-145">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="bcf4a-145">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="a5da1-145">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="a5da1-145">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="bcf4a-146">ExportItemsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="bcf4a-146">ExportItemsResponseMessage</span></span>](exportitemsresponsemessage.md)
+- [<span data-ttu-id="a5da1-146">ExportItemsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="a5da1-146">ExportItemsResponseMessage</span></span>](exportitemsresponsemessage.md)
     
-- [<span data-ttu-id="bcf4a-147">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="bcf4a-147">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="a5da1-147">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="a5da1-147">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="bcf4a-148">ItemId</span><span class="sxs-lookup"><span data-stu-id="bcf4a-148">ItemId</span></span>](itemid.md)
+- [<span data-ttu-id="a5da1-148">ItemId</span><span class="sxs-lookup"><span data-stu-id="a5da1-148">ItemId</span></span>](itemid.md)
     
-- [<span data-ttu-id="bcf4a-149">Daten (base64Binary)</span><span class="sxs-lookup"><span data-stu-id="bcf4a-149">Data (base64Binary)</span></span>](data-base64binary.md)
+- [<span data-ttu-id="a5da1-149">Data (base64Binary)</span><span class="sxs-lookup"><span data-stu-id="a5da1-149">Data (base64Binary)</span></span>](data-base64binary.md)
     
-- [<span data-ttu-id="bcf4a-150">MessageText</span><span class="sxs-lookup"><span data-stu-id="bcf4a-150">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="a5da1-150">MessageText</span><span class="sxs-lookup"><span data-stu-id="a5da1-150">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="bcf4a-151">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="bcf4a-151">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="a5da1-151">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="a5da1-151">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-- [<span data-ttu-id="bcf4a-152">MessageXml</span><span class="sxs-lookup"><span data-stu-id="bcf4a-152">MessageXml</span></span>](messagexml.md)
+- [<span data-ttu-id="a5da1-152">Messagexml verwendet</span><span class="sxs-lookup"><span data-stu-id="a5da1-152">MessageXml</span></span>](messagexml.md)
     
-- <span data-ttu-id="bcf4a-153">**Wert**</span><span class="sxs-lookup"><span data-stu-id="bcf4a-153">**Value**</span></span>
+- <span data-ttu-id="a5da1-153">**Wert**</span><span class="sxs-lookup"><span data-stu-id="a5da1-153">**Value**</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="bcf4a-154">Das **Value** -Element ist im Schema nicht vorhanden.</span><span class="sxs-lookup"><span data-stu-id="bcf4a-154">The **Value** element does not exist in the schema.</span></span> <span data-ttu-id="bcf4a-155">Dieses Element ist gültig, da das [MessageXml](messagexml.md) -Element, in dem das **Value** -Instanzelement auftritt, wohlgeformtes XML enthalten kann.</span><span class="sxs-lookup"><span data-stu-id="bcf4a-155">This element is valid because the [MessageXml](messagexml.md) element, in which the **Value** instance element occurs, can contain any well-formed XML.</span></span> 
+> <span data-ttu-id="a5da1-154">Das **value** -Element ist im Schema nicht vorhanden.</span><span class="sxs-lookup"><span data-stu-id="a5da1-154">The **Value** element does not exist in the schema.</span></span> <span data-ttu-id="a5da1-155">Dieses Element ist gültig, da das [messagexml verwendet](messagexml.md) -Element, in dem das **value** -Instanzelement auftritt, alle wohlgeformten XML-Daten enthalten kann.</span><span class="sxs-lookup"><span data-stu-id="a5da1-155">This element is valid because the [MessageXml](messagexml.md) element, in which the **Value** instance element occurs, can contain any well-formed XML.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="bcf4a-156">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="bcf4a-156">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a5da1-156">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a5da1-156">See also</span></span>
 
 
 
-[<span data-ttu-id="bcf4a-157">UploadItems-Vorgang</span><span class="sxs-lookup"><span data-stu-id="bcf4a-157">UploadItems operation</span></span>](uploaditems-operation.md)
+[<span data-ttu-id="a5da1-157">UploadItems-Vorgang</span><span class="sxs-lookup"><span data-stu-id="a5da1-157">UploadItems operation</span></span>](uploaditems-operation.md)
 
 
-[<span data-ttu-id="bcf4a-158">EWS-Operationen in Exchange</span><span class="sxs-lookup"><span data-stu-id="bcf4a-158">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+[<span data-ttu-id="a5da1-158">EWS-Operationen in Exchange</span><span class="sxs-lookup"><span data-stu-id="a5da1-158">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
   
-- [<span data-ttu-id="bcf4a-159">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="bcf4a-159">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="a5da1-159">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="a5da1-159">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

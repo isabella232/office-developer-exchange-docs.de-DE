@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 74acdbad-d6ee-47e6-82fb-e45ecaaa0500
-description: Das Element EventData stellt Daten, die im Verarbeitungsschritt für das Ereignis zugeordnet ist.
-ms.openlocfilehash: 2bf38cd4fd956580b31b6e455b947066f07f5593
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EventData-Element stellt Daten dar, die dem Verarbeitungsschritt für das Ereignis zugeordnet sind.
+ms.openlocfilehash: ef5da21a3300a6939c60d62584b46ca48b071853
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758279"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526179"
 ---
-# <a name="eventdata"></a><span data-ttu-id="6f954-103">EventData</span><span class="sxs-lookup"><span data-stu-id="6f954-103">EventData</span></span>
+# <a name="eventdata"></a><span data-ttu-id="1adfa-103">EventData</span><span class="sxs-lookup"><span data-stu-id="1adfa-103">EventData</span></span>
 
-<span data-ttu-id="6f954-104">Das Element **EventData** stellt Daten, die im Verarbeitungsschritt für das Ereignis zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="6f954-104">The **EventData** element represents data that is associated with the processing step for the event.</span></span> 
+<span data-ttu-id="1adfa-104">Das **EventData** -Element stellt Daten dar, die dem Verarbeitungsschritt für das Ereignis zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="1adfa-104">The **EventData** element represents data that is associated with the processing step for the event.</span></span> 
   
 ```XML
 <EventData>
@@ -29,47 +29,47 @@ ms.locfileid: "19758279"
 </EventData>
 ```
 
- <span data-ttu-id="6f954-105">**ArrayOfStringsType**</span><span class="sxs-lookup"><span data-stu-id="6f954-105">**ArrayOfStringsType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="6f954-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="6f954-106">Attributes and elements</span></span>
+ <span data-ttu-id="1adfa-105">**ArrayOfStringsType**</span><span class="sxs-lookup"><span data-stu-id="1adfa-105">**ArrayOfStringsType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="1adfa-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="1adfa-106">Attributes and elements</span></span>
 
-<span data-ttu-id="6f954-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="6f954-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="1adfa-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="1adfa-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="6f954-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="6f954-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="1adfa-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="1adfa-108">Attributes</span></span>
 
-<span data-ttu-id="6f954-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="6f954-109">None.</span></span>
+<span data-ttu-id="1adfa-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="1adfa-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="6f954-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="6f954-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="1adfa-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1adfa-110">Child elements</span></span>
 
-|<span data-ttu-id="6f954-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="6f954-111">**Element**</span></span>|<span data-ttu-id="6f954-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="6f954-112">**Description**</span></span>|
+|<span data-ttu-id="1adfa-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="1adfa-111">**Element**</span></span>|<span data-ttu-id="1adfa-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="1adfa-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="6f954-113">String</span><span class="sxs-lookup"><span data-stu-id="6f954-113">String</span></span>](string.md) <br/> |<span data-ttu-id="6f954-114">Enthält eine Zeichenfolge zur Identifizierung ein Ereignisses.</span><span class="sxs-lookup"><span data-stu-id="6f954-114">Contains a string that identifies an event.</span></span>  <br/> |
+|[<span data-ttu-id="1adfa-113">String</span><span class="sxs-lookup"><span data-stu-id="1adfa-113">String</span></span>](string.md) <br/> |<span data-ttu-id="1adfa-114">Enthält eine Zeichenfolge, die ein Ereignis identifiziert.</span><span class="sxs-lookup"><span data-stu-id="1adfa-114">Contains a string that identifies an event.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="6f954-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="6f954-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="1adfa-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="1adfa-115">Parent elements</span></span>
 
-|<span data-ttu-id="6f954-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="6f954-116">**Element**</span></span>|<span data-ttu-id="6f954-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="6f954-117">**Description**</span></span>|
+|<span data-ttu-id="1adfa-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="1adfa-116">**Element**</span></span>|<span data-ttu-id="1adfa-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="1adfa-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="6f954-118">RecipientTrackingEvent</span><span class="sxs-lookup"><span data-stu-id="6f954-118">RecipientTrackingEvent</span></span>](recipienttrackingevent.md) <br/> |<span data-ttu-id="6f954-119">Enthält Informationen für ein einzelnes Ereignis für einen Empfänger.</span><span class="sxs-lookup"><span data-stu-id="6f954-119">Contains information for a single event for a recipient.</span></span>  <br/> |
+|[<span data-ttu-id="1adfa-118">RecipientTrackingEvent</span><span class="sxs-lookup"><span data-stu-id="1adfa-118">RecipientTrackingEvent</span></span>](recipienttrackingevent.md) <br/> |<span data-ttu-id="1adfa-119">Enthält Informationen zu einem einzelnen Ereignis für einen Empfänger.</span><span class="sxs-lookup"><span data-stu-id="1adfa-119">Contains information for a single event for a recipient.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="6f954-120">Textwert</span><span class="sxs-lookup"><span data-stu-id="6f954-120">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="1adfa-120">Textwert</span><span class="sxs-lookup"><span data-stu-id="1adfa-120">Text value</span></span>
 
-<span data-ttu-id="6f954-121">Keine.</span><span class="sxs-lookup"><span data-stu-id="6f954-121">None.</span></span>
+<span data-ttu-id="1adfa-121">Keine.</span><span class="sxs-lookup"><span data-stu-id="1adfa-121">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="6f954-122">Hinweise</span><span class="sxs-lookup"><span data-stu-id="6f954-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1adfa-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="1adfa-122">Remarks</span></span>
 
-<span data-ttu-id="6f954-123">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="6f954-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="1adfa-123">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="1adfa-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="6f954-124">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="6f954-124">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="1adfa-124">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="1adfa-124">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="6f954-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="6f954-125">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="6f954-126">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="6f954-126">Schema Name</span></span>  <br/> |<span data-ttu-id="6f954-127">Schematypen</span><span class="sxs-lookup"><span data-stu-id="6f954-127">Types schema</span></span>  <br/> |
-|<span data-ttu-id="6f954-128">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="6f954-128">Validation File</span></span>  <br/> |<span data-ttu-id="6f954-129">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="6f954-129">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="6f954-130">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="6f954-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="6f954-131">False</span><span class="sxs-lookup"><span data-stu-id="6f954-131">False</span></span>  <br/> |
+|<span data-ttu-id="1adfa-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="1adfa-125">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="1adfa-126">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="1adfa-126">Schema Name</span></span>  <br/> |<span data-ttu-id="1adfa-127">Schematypen</span><span class="sxs-lookup"><span data-stu-id="1adfa-127">Types schema</span></span>  <br/> |
+|<span data-ttu-id="1adfa-128">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="1adfa-128">Validation File</span></span>  <br/> |<span data-ttu-id="1adfa-129">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="1adfa-129">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="1adfa-130">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="1adfa-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="1adfa-131">False</span><span class="sxs-lookup"><span data-stu-id="1adfa-131">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="6f954-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="6f954-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1adfa-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1adfa-132">See also</span></span>
 
 
 
-- [<span data-ttu-id="6f954-133">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="6f954-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="1adfa-133">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="1adfa-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

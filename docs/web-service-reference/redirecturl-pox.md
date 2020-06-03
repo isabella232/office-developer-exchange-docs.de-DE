@@ -13,54 +13,54 @@ ms.openlocfilehash: 5400b1e7a4bb7ebebc58b6a0f1fc9bf37f5a2e22
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468089"
 ---
-# <a name="redirecturl-pox"></a><span data-ttu-id="d7d1e-103">RedirectUrl (POX)</span><span class="sxs-lookup"><span data-stu-id="d7d1e-103">RedirectUrl (POX)</span></span>
+# <a name="redirecturl-pox"></a><span data-ttu-id="ce92e-103">RedirectUrl (POX)</span><span class="sxs-lookup"><span data-stu-id="ce92e-103">RedirectUrl (POX)</span></span>
 
-<span data-ttu-id="d7d1e-104">Das **RedirectUrl** -Element enthält die URL des Computers, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist, die zum Abrufen von AutoErmittlungseinstellungen verwendet werden sollte.</span><span class="sxs-lookup"><span data-stu-id="d7d1e-104">The **RedirectUrl** element contains the URL of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed that should be used to obtain Autodiscover settings.</span></span> 
+<span data-ttu-id="ce92e-104">Das **RedirectUrl** -Element enthält die URL des Computers, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist, die zum Abrufen von AutoErmittlungseinstellungen verwendet werden sollte.</span><span class="sxs-lookup"><span data-stu-id="ce92e-104">The **RedirectUrl** element contains the URL of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed that should be used to obtain Autodiscover settings.</span></span> 
   
-[<span data-ttu-id="d7d1e-105">AutoErmittlung (POX)</span><span class="sxs-lookup"><span data-stu-id="d7d1e-105">AutoDiscover (POX)</span></span>](autodiscover-pox.md)
+[<span data-ttu-id="ce92e-105">AutoErmittlung (POX)</span><span class="sxs-lookup"><span data-stu-id="ce92e-105">AutoDiscover (POX)</span></span>](autodiscover-pox.md)
   
-[<span data-ttu-id="d7d1e-106">Response (POX)</span><span class="sxs-lookup"><span data-stu-id="d7d1e-106">Response (POX)</span></span>](response-pox.md)
+[<span data-ttu-id="ce92e-106">Response (POX)</span><span class="sxs-lookup"><span data-stu-id="ce92e-106">Response (POX)</span></span>](response-pox.md)
   
-[<span data-ttu-id="d7d1e-107">Konto (POX)</span><span class="sxs-lookup"><span data-stu-id="d7d1e-107">Account (POX)</span></span>](account-pox.md)
+[<span data-ttu-id="ce92e-107">Konto (POX)</span><span class="sxs-lookup"><span data-stu-id="ce92e-107">Account (POX)</span></span>](account-pox.md)
   
-[<span data-ttu-id="d7d1e-108">RedirectUrl (POX)</span><span class="sxs-lookup"><span data-stu-id="d7d1e-108">RedirectUrl (POX)</span></span>](redirecturl-pox.md)
+[<span data-ttu-id="ce92e-108">RedirectUrl (POX)</span><span class="sxs-lookup"><span data-stu-id="ce92e-108">RedirectUrl (POX)</span></span>](redirecturl-pox.md)
   
 ```xml
 <RedirectUrl/>
 ```
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="d7d1e-109">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="d7d1e-109">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="ce92e-109">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="ce92e-109">Attributes and elements</span></span>
 
-<span data-ttu-id="d7d1e-110">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="d7d1e-110">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="ce92e-110">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="ce92e-110">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="d7d1e-111">Attribute</span><span class="sxs-lookup"><span data-stu-id="d7d1e-111">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="ce92e-111">Attribute</span><span class="sxs-lookup"><span data-stu-id="ce92e-111">Attributes</span></span>
 
-<span data-ttu-id="d7d1e-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="d7d1e-112">None.</span></span>
+<span data-ttu-id="ce92e-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="ce92e-112">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="d7d1e-113">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="d7d1e-113">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="ce92e-113">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="ce92e-113">Child elements</span></span>
 
-<span data-ttu-id="d7d1e-114">Keine.</span><span class="sxs-lookup"><span data-stu-id="d7d1e-114">None.</span></span>
+<span data-ttu-id="ce92e-114">Keine.</span><span class="sxs-lookup"><span data-stu-id="ce92e-114">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="d7d1e-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="d7d1e-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="ce92e-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="ce92e-115">Parent elements</span></span>
 
-|<span data-ttu-id="d7d1e-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="d7d1e-116">**Element**</span></span>|<span data-ttu-id="d7d1e-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="d7d1e-117">**Description**</span></span>|
+|<span data-ttu-id="ce92e-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="ce92e-116">**Element**</span></span>|<span data-ttu-id="ce92e-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="ce92e-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="d7d1e-118">Konto (POX)</span><span class="sxs-lookup"><span data-stu-id="d7d1e-118">Account (POX)</span></span>](account-pox.md) <br/> |<span data-ttu-id="d7d1e-119">Gibt Kontoeinstellungen für den Benutzer an.</span><span class="sxs-lookup"><span data-stu-id="d7d1e-119">Specifies account settings for the user.</span></span>  <br/> |
+|[<span data-ttu-id="ce92e-118">Konto (POX)</span><span class="sxs-lookup"><span data-stu-id="ce92e-118">Account (POX)</span></span>](account-pox.md) <br/> |<span data-ttu-id="ce92e-119">Gibt Kontoeinstellungen für den Benutzer an.</span><span class="sxs-lookup"><span data-stu-id="ce92e-119">Specifies account settings for the user.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="d7d1e-120">Textwert</span><span class="sxs-lookup"><span data-stu-id="d7d1e-120">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="ce92e-120">Textwert</span><span class="sxs-lookup"><span data-stu-id="ce92e-120">Text value</span></span>
 
-<span data-ttu-id="d7d1e-121">Der Wert Text stellt die URL des Client Zugriffsservers dar, der zum Abrufen von AutoErmittlungseinstellungen verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="d7d1e-121">The text value represents the URL of the Client Access server that should be used to obtain Autodiscover settings.</span></span>
+<span data-ttu-id="ce92e-121">Der Wert Text stellt die URL des Client Zugriffsservers dar, der zum Abrufen von AutoErmittlungseinstellungen verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="ce92e-121">The text value represents the URL of the Client Access server that should be used to obtain Autodiscover settings.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="d7d1e-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="d7d1e-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ce92e-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="ce92e-122">Remarks</span></span>
 
-<span data-ttu-id="d7d1e-123">Die Clientanwendung sollte die Umleitung nach 10 Umleitungen beenden.</span><span class="sxs-lookup"><span data-stu-id="d7d1e-123">The client application should stop redirecting after 10 redirects.</span></span>
+<span data-ttu-id="ce92e-123">Die Clientanwendung sollte die Umleitung nach 10 Umleitungen beenden.</span><span class="sxs-lookup"><span data-stu-id="ce92e-123">The client application should stop redirecting after 10 redirects.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="d7d1e-124">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d7d1e-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ce92e-124">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ce92e-124">See also</span></span>
 
 
 
-[<span data-ttu-id="d7d1e-125">POX Autodiscover XML-Elemente für Exchange</span><span class="sxs-lookup"><span data-stu-id="d7d1e-125">POX Autodiscover XML elements for Exchange</span></span>](pox-autodiscover-xml-elements-for-exchange.md)
+[<span data-ttu-id="ce92e-125">POX Autodiscover XML-Elemente für Exchange</span><span class="sxs-lookup"><span data-stu-id="ce92e-125">POX Autodiscover XML elements for Exchange</span></span>](pox-autodiscover-xml-elements-for-exchange.md)
 

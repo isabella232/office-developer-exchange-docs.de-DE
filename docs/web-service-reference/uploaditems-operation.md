@@ -16,23 +16,23 @@ ms.openlocfilehash: 57e722c7775baa090736875077781cee869c3b01
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468502"
 ---
-# <a name="uploaditems-operation"></a><span data-ttu-id="2f13c-103">UploadItems-Vorgang</span><span class="sxs-lookup"><span data-stu-id="2f13c-103">UploadItems operation</span></span>
+# <a name="uploaditems-operation"></a><span data-ttu-id="49ab1-103">UploadItems-Vorgang</span><span class="sxs-lookup"><span data-stu-id="49ab1-103">UploadItems operation</span></span>
 
-<span data-ttu-id="2f13c-104">Der **UploadItems** -Vorgang lädt einen Stream von Elementen in ein Exchange-Postfach hoch.</span><span class="sxs-lookup"><span data-stu-id="2f13c-104">The **UploadItems** operation uploads a stream of items into an Exchange mailbox.</span></span> 
+<span data-ttu-id="49ab1-104">Der **UploadItems** -Vorgang lädt einen Stream von Elementen in ein Exchange-Postfach hoch.</span><span class="sxs-lookup"><span data-stu-id="49ab1-104">The **UploadItems** operation uploads a stream of items into an Exchange mailbox.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="2f13c-105">Der **UploadItems** -Vorgang ist in Microsoft Exchange Server 2010 Service Pack 1 (SP1) auf eine maximale Import Nutzlast von 25 MB erhöht Base64-codierter Daten beschränkt.</span><span class="sxs-lookup"><span data-stu-id="2f13c-105">The **UploadItems** operation is restricted in MicrosoftExchange Server 2010 Service Pack 1 (SP1) to a maximum import payload of 25MB of base64 encoded data.</span></span> <span data-ttu-id="2f13c-106">Die Einstellung kann in der Datei "Internet. config" geändert werden.</span><span class="sxs-lookup"><span data-stu-id="2f13c-106">The setting can be altered in the web.config file.</span></span> 
+> <span data-ttu-id="49ab1-105">Der **UploadItems** -Vorgang ist in Microsoft Exchange Server 2010 Service Pack 1 (SP1) auf eine maximale Import Nutzlast von 25 MB erhöht Base64-codierter Daten beschränkt.</span><span class="sxs-lookup"><span data-stu-id="49ab1-105">The **UploadItems** operation is restricted in MicrosoftExchange Server 2010 Service Pack 1 (SP1) to a maximum import payload of 25MB of base64 encoded data.</span></span> <span data-ttu-id="49ab1-106">Die Einstellung kann in der Datei "Internet. config" geändert werden.</span><span class="sxs-lookup"><span data-stu-id="49ab1-106">The setting can be altered in the web.config file.</span></span> 
   
-## <a name="uploaditems-request-example"></a><span data-ttu-id="2f13c-107">UploadItems-Anforderungs Beispiel</span><span class="sxs-lookup"><span data-stu-id="2f13c-107">UploadItems request example</span></span>
+## <a name="uploaditems-request-example"></a><span data-ttu-id="49ab1-107">UploadItems-Anforderungs Beispiel</span><span class="sxs-lookup"><span data-stu-id="49ab1-107">UploadItems request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="2f13c-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2f13c-108">Description</span></span>
+### <a name="description"></a><span data-ttu-id="49ab1-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="49ab1-108">Description</span></span>
 
-<span data-ttu-id="2f13c-109">Im folgenden Beispiel einer **UploadItems** -Anforderung wird gezeigt, wie zwei Elemente in ein Postfach hochgeladen werden.</span><span class="sxs-lookup"><span data-stu-id="2f13c-109">The following example of an **UploadItems** request shows how to upload two items into a mailbox.</span></span> <span data-ttu-id="2f13c-110">Das erste Element ist ein neues Element.</span><span class="sxs-lookup"><span data-stu-id="2f13c-110">The first item is a new item.</span></span> <span data-ttu-id="2f13c-111">Das zweite Element ist eine aktualisierte Version eines vorhandenen Elements im Postfach.</span><span class="sxs-lookup"><span data-stu-id="2f13c-111">The second item is an updated version of an existing item in the mailbox.</span></span> 
+<span data-ttu-id="49ab1-109">Im folgenden Beispiel einer **UploadItems** -Anforderung wird gezeigt, wie zwei Elemente in ein Postfach hochgeladen werden.</span><span class="sxs-lookup"><span data-stu-id="49ab1-109">The following example of an **UploadItems** request shows how to upload two items into a mailbox.</span></span> <span data-ttu-id="49ab1-110">Das erste Element ist ein neues Element.</span><span class="sxs-lookup"><span data-stu-id="49ab1-110">The first item is a new item.</span></span> <span data-ttu-id="49ab1-111">Das zweite Element ist eine aktualisierte Version eines vorhandenen Elements im Postfach.</span><span class="sxs-lookup"><span data-stu-id="49ab1-111">The second item is an updated version of an existing item in the mailbox.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="2f13c-112">Code</span><span class="sxs-lookup"><span data-stu-id="2f13c-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="49ab1-112">Code</span><span class="sxs-lookup"><span data-stu-id="49ab1-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -78,35 +78,35 @@ ms.locfileid: "44468502"
 </soap:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="2f13c-113">Comments</span><span class="sxs-lookup"><span data-stu-id="2f13c-113">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="49ab1-113">Comments</span><span class="sxs-lookup"><span data-stu-id="49ab1-113">Comments</span></span>
 
-<span data-ttu-id="2f13c-114">Bezeichner und Elementdaten wurden verkürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="2f13c-114">Identifiers and the item data have been shortened to preserve readability.</span></span>
+<span data-ttu-id="49ab1-114">Bezeichner und Elementdaten wurden verkürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="49ab1-114">Identifiers and the item data have been shortened to preserve readability.</span></span>
   
-### <a name="request-elements"></a><span data-ttu-id="2f13c-115">Anfordern von Elementen</span><span class="sxs-lookup"><span data-stu-id="2f13c-115">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="49ab1-115">Anfordern von Elementen</span><span class="sxs-lookup"><span data-stu-id="49ab1-115">Request elements</span></span>
 
-<span data-ttu-id="2f13c-116">In der Anforderung werden folgende Elemente verwendet:</span><span class="sxs-lookup"><span data-stu-id="2f13c-116">The following elements are used in the request:</span></span>
+<span data-ttu-id="49ab1-116">In der Anforderung werden folgende Elemente verwendet:</span><span class="sxs-lookup"><span data-stu-id="49ab1-116">The following elements are used in the request:</span></span>
   
-- [<span data-ttu-id="2f13c-117">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="2f13c-117">RequestServerVersion</span></span>](requestserverversion.md)
+- [<span data-ttu-id="49ab1-117">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="49ab1-117">RequestServerVersion</span></span>](requestserverversion.md)
     
-- [<span data-ttu-id="2f13c-118">UploadItems</span><span class="sxs-lookup"><span data-stu-id="2f13c-118">UploadItems</span></span>](uploaditems.md)
+- [<span data-ttu-id="49ab1-118">UploadItems</span><span class="sxs-lookup"><span data-stu-id="49ab1-118">UploadItems</span></span>](uploaditems.md)
     
-- [<span data-ttu-id="2f13c-119">Elemente (NonEmptyArrayOfUploadItemsType)</span><span class="sxs-lookup"><span data-stu-id="2f13c-119">Items (NonEmptyArrayOfUploadItemsType)</span></span>](items-nonemptyarrayofuploaditemstype.md)
+- [<span data-ttu-id="49ab1-119">Elemente (NonEmptyArrayOfUploadItemsType)</span><span class="sxs-lookup"><span data-stu-id="49ab1-119">Items (NonEmptyArrayOfUploadItemsType)</span></span>](items-nonemptyarrayofuploaditemstype.md)
     
-- [<span data-ttu-id="2f13c-120">Element (UploadItemType)</span><span class="sxs-lookup"><span data-stu-id="2f13c-120">Item (UploadItemType)</span></span>](item-uploaditemtype.md)
+- [<span data-ttu-id="49ab1-120">Element (UploadItemType)</span><span class="sxs-lookup"><span data-stu-id="49ab1-120">Item (UploadItemType)</span></span>](item-uploaditemtype.md)
     
-- [<span data-ttu-id="2f13c-121">ParentFolderId</span><span class="sxs-lookup"><span data-stu-id="2f13c-121">ParentFolderId</span></span>](parentfolderid.md)
+- [<span data-ttu-id="49ab1-121">ParentFolderId</span><span class="sxs-lookup"><span data-stu-id="49ab1-121">ParentFolderId</span></span>](parentfolderid.md)
     
-- [<span data-ttu-id="2f13c-122">Data (base64Binary)</span><span class="sxs-lookup"><span data-stu-id="2f13c-122">Data (base64Binary)</span></span>](data-base64binary.md)
+- [<span data-ttu-id="49ab1-122">Data (base64Binary)</span><span class="sxs-lookup"><span data-stu-id="49ab1-122">Data (base64Binary)</span></span>](data-base64binary.md)
     
-- [<span data-ttu-id="2f13c-123">ItemId</span><span class="sxs-lookup"><span data-stu-id="2f13c-123">ItemId</span></span>](itemid.md)
+- [<span data-ttu-id="49ab1-123">ItemId</span><span class="sxs-lookup"><span data-stu-id="49ab1-123">ItemId</span></span>](itemid.md)
     
-## <a name="successful-uploaditems-response-example"></a><span data-ttu-id="2f13c-124">Erfolgreiches UploadItems-Antwortbeispiel</span><span class="sxs-lookup"><span data-stu-id="2f13c-124">Successful UploadItems response example</span></span>
+## <a name="successful-uploaditems-response-example"></a><span data-ttu-id="49ab1-124">Erfolgreiches UploadItems-Antwortbeispiel</span><span class="sxs-lookup"><span data-stu-id="49ab1-124">Successful UploadItems response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="2f13c-125">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2f13c-125">Description</span></span>
+### <a name="description"></a><span data-ttu-id="49ab1-125">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="49ab1-125">Description</span></span>
 
-<span data-ttu-id="2f13c-126">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **UploadItems** -Anforderung.</span><span class="sxs-lookup"><span data-stu-id="2f13c-126">The following example shows a successful response to the **UploadItems** request.</span></span> 
+<span data-ttu-id="49ab1-126">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **UploadItems** -Anforderung.</span><span class="sxs-lookup"><span data-stu-id="49ab1-126">The following example shows a successful response to the **UploadItems** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="2f13c-127">Code</span><span class="sxs-lookup"><span data-stu-id="2f13c-127">Code</span></span>
+### <a name="code"></a><span data-ttu-id="49ab1-127">Code</span><span class="sxs-lookup"><span data-stu-id="49ab1-127">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -141,33 +141,33 @@ ms.locfileid: "44468502"
 </s:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="2f13c-128">Comments</span><span class="sxs-lookup"><span data-stu-id="2f13c-128">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="49ab1-128">Comments</span><span class="sxs-lookup"><span data-stu-id="49ab1-128">Comments</span></span>
 
-<span data-ttu-id="2f13c-129">Element-IDs wurden verkürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="2f13c-129">Item identifiers have been shortened to preserve readability.</span></span>
+<span data-ttu-id="49ab1-129">Element-IDs wurden verkürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="49ab1-129">Item identifiers have been shortened to preserve readability.</span></span>
   
-### <a name="response-elements"></a><span data-ttu-id="2f13c-130">Response-Elemente</span><span class="sxs-lookup"><span data-stu-id="2f13c-130">Response elements</span></span>
+### <a name="response-elements"></a><span data-ttu-id="49ab1-130">Response-Elemente</span><span class="sxs-lookup"><span data-stu-id="49ab1-130">Response elements</span></span>
 
-<span data-ttu-id="2f13c-131">In der Antwort werden folgende Elemente verwendet:</span><span class="sxs-lookup"><span data-stu-id="2f13c-131">The following elements are used in the response:</span></span>
+<span data-ttu-id="49ab1-131">In der Antwort werden folgende Elemente verwendet:</span><span class="sxs-lookup"><span data-stu-id="49ab1-131">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="2f13c-132">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="2f13c-132">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="49ab1-132">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="49ab1-132">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="2f13c-133">UploadItemsResponse</span><span class="sxs-lookup"><span data-stu-id="2f13c-133">UploadItemsResponse</span></span>](uploaditemsresponse.md)
+- [<span data-ttu-id="49ab1-133">UploadItemsResponse</span><span class="sxs-lookup"><span data-stu-id="49ab1-133">UploadItemsResponse</span></span>](uploaditemsresponse.md)
     
-- [<span data-ttu-id="2f13c-134">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="2f13c-134">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="49ab1-134">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="49ab1-134">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="2f13c-135">UploadItemsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="2f13c-135">UploadItemsResponseMessage</span></span>](uploaditemsresponsemessage.md)
+- [<span data-ttu-id="49ab1-135">UploadItemsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="49ab1-135">UploadItemsResponseMessage</span></span>](uploaditemsresponsemessage.md)
     
-- [<span data-ttu-id="2f13c-136">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="2f13c-136">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="49ab1-136">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="49ab1-136">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="2f13c-137">ItemId</span><span class="sxs-lookup"><span data-stu-id="2f13c-137">ItemId</span></span>](itemid.md)
+- [<span data-ttu-id="49ab1-137">ItemId</span><span class="sxs-lookup"><span data-stu-id="49ab1-137">ItemId</span></span>](itemid.md)
     
-## <a name="uploaditems-error-response-example"></a><span data-ttu-id="2f13c-138">UploadItems-Fehlerantwort Beispiel</span><span class="sxs-lookup"><span data-stu-id="2f13c-138">UploadItems Error response example</span></span>
+## <a name="uploaditems-error-response-example"></a><span data-ttu-id="49ab1-138">UploadItems-Fehlerantwort Beispiel</span><span class="sxs-lookup"><span data-stu-id="49ab1-138">UploadItems Error response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="2f13c-139">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2f13c-139">Description</span></span>
+### <a name="description"></a><span data-ttu-id="49ab1-139">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="49ab1-139">Description</span></span>
 
-<span data-ttu-id="2f13c-140">Das folgende Beispiel zeigt eine Antwort auf die **UploadItems** -Anforderung, die einen Fehler enthält, der durch einen Versuch verursacht wurde, ein Element zu aktualisieren, das im Postfach nicht gefunden werden kann.</span><span class="sxs-lookup"><span data-stu-id="2f13c-140">The following example shows a response to the **UploadItems** request that contains an error caused by an attempt to update an item that cannot be found in the mailbox.</span></span> 
+<span data-ttu-id="49ab1-140">Das folgende Beispiel zeigt eine Antwort auf die **UploadItems** -Anforderung, die einen Fehler enthält, der durch einen Versuch verursacht wurde, ein Element zu aktualisieren, das im Postfach nicht gefunden werden kann.</span><span class="sxs-lookup"><span data-stu-id="49ab1-140">The following example shows a response to the **UploadItems** request that contains an error caused by an attempt to update an item that cannot be found in the mailbox.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="2f13c-141">Code</span><span class="sxs-lookup"><span data-stu-id="2f13c-141">Code</span></span>
+### <a name="code"></a><span data-ttu-id="49ab1-141">Code</span><span class="sxs-lookup"><span data-stu-id="49ab1-141">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -199,32 +199,32 @@ ms.locfileid: "44468502"
 </s:Envelope>
 ```
 
-### <a name="error-response-elements"></a><span data-ttu-id="2f13c-142">Fehlerantwortelemente</span><span class="sxs-lookup"><span data-stu-id="2f13c-142">Error response elements</span></span>
+### <a name="error-response-elements"></a><span data-ttu-id="49ab1-142">Fehlerantwortelemente</span><span class="sxs-lookup"><span data-stu-id="49ab1-142">Error response elements</span></span>
 
-<span data-ttu-id="2f13c-143">Folgende Elemente werden in der Fehlerantwort verwendet:</span><span class="sxs-lookup"><span data-stu-id="2f13c-143">The following elements are used in the error response:</span></span>
+<span data-ttu-id="49ab1-143">Folgende Elemente werden in der Fehlerantwort verwendet:</span><span class="sxs-lookup"><span data-stu-id="49ab1-143">The following elements are used in the error response:</span></span>
   
-- [<span data-ttu-id="2f13c-144">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="2f13c-144">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="49ab1-144">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="49ab1-144">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="2f13c-145">UploadItemsResponse</span><span class="sxs-lookup"><span data-stu-id="2f13c-145">UploadItemsResponse</span></span>](uploaditemsresponse.md)
+- [<span data-ttu-id="49ab1-145">UploadItemsResponse</span><span class="sxs-lookup"><span data-stu-id="49ab1-145">UploadItemsResponse</span></span>](uploaditemsresponse.md)
     
-- [<span data-ttu-id="2f13c-146">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="2f13c-146">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="49ab1-146">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="49ab1-146">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="2f13c-147">UploadItemsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="2f13c-147">UploadItemsResponseMessage</span></span>](uploaditemsresponsemessage.md)
+- [<span data-ttu-id="49ab1-147">UploadItemsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="49ab1-147">UploadItemsResponseMessage</span></span>](uploaditemsresponsemessage.md)
     
-- [<span data-ttu-id="2f13c-148">MessageText</span><span class="sxs-lookup"><span data-stu-id="2f13c-148">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="49ab1-148">MessageText</span><span class="sxs-lookup"><span data-stu-id="49ab1-148">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="2f13c-149">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="2f13c-149">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="49ab1-149">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="49ab1-149">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="2f13c-150">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="2f13c-150">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="49ab1-150">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="49ab1-150">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-## <a name="see-also"></a><span data-ttu-id="2f13c-151">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2f13c-151">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="49ab1-151">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="49ab1-151">See also</span></span>
 
 
 
-[<span data-ttu-id="2f13c-152">ExportItems-Vorgang</span><span class="sxs-lookup"><span data-stu-id="2f13c-152">ExportItems operation</span></span>](exportitems-operation.md)
+[<span data-ttu-id="49ab1-152">ExportItems-Vorgang</span><span class="sxs-lookup"><span data-stu-id="49ab1-152">ExportItems operation</span></span>](exportitems-operation.md)
 
 
-[<span data-ttu-id="2f13c-153">EWS-Operationen in Exchange</span><span class="sxs-lookup"><span data-stu-id="2f13c-153">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+[<span data-ttu-id="49ab1-153">EWS-Operationen in Exchange</span><span class="sxs-lookup"><span data-stu-id="49ab1-153">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
   
-- [<span data-ttu-id="2f13c-154">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="2f13c-154">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="49ab1-154">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="49ab1-154">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

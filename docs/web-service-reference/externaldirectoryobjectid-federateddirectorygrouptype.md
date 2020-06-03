@@ -7,38 +7,38 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ca21028a-fe15-4cf4-a70f-05b0ed7b7480
-description: Das Element ExternalDirectoryObjectId (FederatedDirectoryGroupType) ist nur zur internen Verwendung vorgesehen.
-ms.openlocfilehash: 4d437e6290d439b97ac12d102f285b7dfcb89b64
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ExternalDirectoryObjectId (FederatedDirectoryGroupType)-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 961db2f9e0d4fead42b8fc78e30f6d0231b5cda5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758370"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526025"
 ---
-# <a name="externaldirectoryobjectid-federateddirectorygrouptype"></a><span data-ttu-id="84e07-103">ExternalDirectoryObjectId (FederatedDirectoryGroupType)</span><span class="sxs-lookup"><span data-stu-id="84e07-103">ExternalDirectoryObjectId (FederatedDirectoryGroupType)</span></span>
+# <a name="externaldirectoryobjectid-federateddirectorygrouptype"></a><span data-ttu-id="e0631-103">ExternalDirectoryObjectId (FederatedDirectoryGroupType)</span><span class="sxs-lookup"><span data-stu-id="e0631-103">ExternalDirectoryObjectId (FederatedDirectoryGroupType)</span></span>
 
-<span data-ttu-id="84e07-104">Das Element **ExternalDirectoryObjectId (FederatedDirectoryGroupType)** ist nur zur internen Verwendung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="84e07-104">The **ExternalDirectoryObjectId (FederatedDirectoryGroupType)** element is intended for internal use only.</span></span> 
+<span data-ttu-id="e0631-104">Das **ExternalDirectoryObjectId (FederatedDirectoryGroupType)-** Element ist nur für die interne Verwendung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="e0631-104">The **ExternalDirectoryObjectId (FederatedDirectoryGroupType)** element is intended for internal use only.</span></span> 
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="84e07-105">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="84e07-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="e0631-105">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="e0631-105">Attributes and elements</span></span>
 
-<span data-ttu-id="84e07-106">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="84e07-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="e0631-106">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="e0631-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="84e07-107">Attribute</span><span class="sxs-lookup"><span data-stu-id="84e07-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="e0631-107">Attribute</span><span class="sxs-lookup"><span data-stu-id="e0631-107">Attributes</span></span>
 
-<span data-ttu-id="84e07-108">Keine.</span><span class="sxs-lookup"><span data-stu-id="84e07-108">None.</span></span>
+<span data-ttu-id="e0631-108">Keine.</span><span class="sxs-lookup"><span data-stu-id="e0631-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="84e07-109">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="84e07-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="e0631-109">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e0631-109">Child elements</span></span>
 
-<span data-ttu-id="84e07-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="84e07-110">None.</span></span>
+<span data-ttu-id="e0631-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="e0631-110">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="84e07-111">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="84e07-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="e0631-111">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e0631-111">Parent elements</span></span>
 
-<span data-ttu-id="84e07-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="84e07-112">None.</span></span>
+<span data-ttu-id="e0631-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="e0631-112">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="84e07-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="84e07-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e0631-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e0631-113">Remarks</span></span>
 
-<span data-ttu-id="84e07-114">Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="84e07-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="e0631-114">Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="e0631-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
   
-<span data-ttu-id="84e07-115">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="84e07-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="e0631-115">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="e0631-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
 

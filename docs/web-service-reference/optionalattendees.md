@@ -16,12 +16,12 @@ ms.openlocfilehash: 9eeff7151042f26fe5b00b43ec16a27946680a9f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468173"
 ---
-# <a name="optionalattendees"></a><span data-ttu-id="7dad5-103">OptionalAttendees</span><span class="sxs-lookup"><span data-stu-id="7dad5-103">OptionalAttendees</span></span>
+# <a name="optionalattendees"></a><span data-ttu-id="c4175-103">OptionalAttendees</span><span class="sxs-lookup"><span data-stu-id="c4175-103">OptionalAttendees</span></span>
 
-<span data-ttu-id="7dad5-104">Das **OptionalAttendees** -Element stellt Teilnehmer dar, die nicht an einer Besprechung teilnehmen müssen.</span><span class="sxs-lookup"><span data-stu-id="7dad5-104">The **OptionalAttendees** element represents attendees who are not required to attend a meeting.</span></span> 
+<span data-ttu-id="c4175-104">Das **OptionalAttendees** -Element stellt Teilnehmer dar, die nicht an einer Besprechung teilnehmen müssen.</span><span class="sxs-lookup"><span data-stu-id="c4175-104">The **OptionalAttendees** element represents attendees who are not required to attend a meeting.</span></span> 
   
 ```xml
 <OptionalAttendees>
@@ -29,44 +29,44 @@ ms.locfileid: "44468173"
 </OptionalAttendees>
 ```
 
- <span data-ttu-id="7dad5-105">**NonEmptyArrayOfAttendeesType**</span><span class="sxs-lookup"><span data-stu-id="7dad5-105">**NonEmptyArrayOfAttendeesType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="7dad5-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="7dad5-106">Attributes and elements</span></span>
+ <span data-ttu-id="c4175-105">**NonEmptyArrayOfAttendeesType**</span><span class="sxs-lookup"><span data-stu-id="c4175-105">**NonEmptyArrayOfAttendeesType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="c4175-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="c4175-106">Attributes and elements</span></span>
 
-<span data-ttu-id="7dad5-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="7dad5-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="c4175-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="c4175-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="7dad5-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="7dad5-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="c4175-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="c4175-108">Attributes</span></span>
 
-<span data-ttu-id="7dad5-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="7dad5-109">None.</span></span>
+<span data-ttu-id="c4175-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="c4175-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="7dad5-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="7dad5-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="c4175-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="c4175-110">Child elements</span></span>
 
-|<span data-ttu-id="7dad5-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="7dad5-111">**Element**</span></span>|<span data-ttu-id="7dad5-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="7dad5-112">**Description**</span></span>|
+|<span data-ttu-id="c4175-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="c4175-111">**Element**</span></span>|<span data-ttu-id="c4175-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="c4175-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="7dad5-113">Teilnehmer</span><span class="sxs-lookup"><span data-stu-id="7dad5-113">Attendee</span></span>](attendee.md) <br/> |<span data-ttu-id="7dad5-114">Stellt Teilnehmer und Ressourcen für eine Besprechung dar.</span><span class="sxs-lookup"><span data-stu-id="7dad5-114">Represents attendees and resources for a meeting.</span></span>  <br/> |
+|[<span data-ttu-id="c4175-113">Teilnehmer</span><span class="sxs-lookup"><span data-stu-id="c4175-113">Attendee</span></span>](attendee.md) <br/> |<span data-ttu-id="c4175-114">Stellt Teilnehmer und Ressourcen für eine Besprechung dar.</span><span class="sxs-lookup"><span data-stu-id="c4175-114">Represents attendees and resources for a meeting.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="7dad5-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="7dad5-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="c4175-115">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="c4175-115">Parent elements</span></span>
 
-|<span data-ttu-id="7dad5-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="7dad5-116">**Element**</span></span>|<span data-ttu-id="7dad5-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="7dad5-117">**Description**</span></span>|
+|<span data-ttu-id="c4175-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="c4175-116">**Element**</span></span>|<span data-ttu-id="c4175-117">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="c4175-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="7dad5-118">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="7dad5-118">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="7dad5-119">Stellt ein Element im Exchange-Kalender dar.</span><span class="sxs-lookup"><span data-stu-id="7dad5-119">Represents an Exchange calendar item.</span></span>  <br/> |
-|[<span data-ttu-id="7dad5-120">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="7dad5-120">MeetingRequest</span></span>](meetingrequest.md) <br/> |<span data-ttu-id="7dad5-121">Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.</span><span class="sxs-lookup"><span data-stu-id="7dad5-121">Represents a meeting request in the Exchange store.</span></span>  <br/> |
+|[<span data-ttu-id="c4175-118">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="c4175-118">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="c4175-119">Stellt ein Element im Exchange-Kalender dar.</span><span class="sxs-lookup"><span data-stu-id="c4175-119">Represents an Exchange calendar item.</span></span>  <br/> |
+|[<span data-ttu-id="c4175-120">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="c4175-120">MeetingRequest</span></span>](meetingrequest.md) <br/> |<span data-ttu-id="c4175-121">Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.</span><span class="sxs-lookup"><span data-stu-id="c4175-121">Represents a meeting request in the Exchange store.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="7dad5-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="7dad5-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c4175-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="c4175-122">Remarks</span></span>
 
-<span data-ttu-id="7dad5-123">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="7dad5-123">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="c4175-123">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="c4175-123">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="7dad5-124">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="7dad5-124">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="c4175-124">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="c4175-124">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="7dad5-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="7dad5-125">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="7dad5-126">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="7dad5-126">Schema name</span></span>  <br/> |<span data-ttu-id="7dad5-127">Schematypen</span><span class="sxs-lookup"><span data-stu-id="7dad5-127">Types schema</span></span>  <br/> |
-|<span data-ttu-id="7dad5-128">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="7dad5-128">Validation file</span></span>  <br/> |<span data-ttu-id="7dad5-129">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="7dad5-129">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="7dad5-130">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="7dad5-130">Can be empty</span></span>  <br/> |<span data-ttu-id="7dad5-131">False</span><span class="sxs-lookup"><span data-stu-id="7dad5-131">False</span></span>  <br/> |
+|<span data-ttu-id="c4175-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="c4175-125">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="c4175-126">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="c4175-126">Schema name</span></span>  <br/> |<span data-ttu-id="c4175-127">Schematypen</span><span class="sxs-lookup"><span data-stu-id="c4175-127">Types schema</span></span>  <br/> |
+|<span data-ttu-id="c4175-128">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="c4175-128">Validation file</span></span>  <br/> |<span data-ttu-id="c4175-129">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="c4175-129">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="c4175-130">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="c4175-130">Can be empty</span></span>  <br/> |<span data-ttu-id="c4175-131">False</span><span class="sxs-lookup"><span data-stu-id="c4175-131">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="7dad5-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7dad5-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c4175-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="c4175-132">See also</span></span>
 
 
 
-- [<span data-ttu-id="7dad5-133">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="7dad5-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="c4175-133">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="c4175-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

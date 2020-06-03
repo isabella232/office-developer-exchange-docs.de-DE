@@ -11,69 +11,69 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7753aec5-3f93-4aeb-a28e-8b9b42ca7f9b
-description: Das EnableAlwaysDelete-Element gibt eine Kennung, die für alle neuen Elemente in einer Unterhaltung löschen kann.
-ms.openlocfilehash: f86765c641604afbf13ac962f4b34fbd8de56200
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das EnableAlwaysDelete-Element gibt ein Flag an, das das Löschen für alle neuen Elemente in einer Unterhaltung ermöglicht.
+ms.openlocfilehash: 14784d3a6ba52c76b64b81e15c0522d66d125cbf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758220"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526207"
 ---
-# <a name="enablealwaysdelete"></a><span data-ttu-id="fa3eb-103">EnableAlwaysDelete</span><span class="sxs-lookup"><span data-stu-id="fa3eb-103">EnableAlwaysDelete</span></span>
+# <a name="enablealwaysdelete"></a><span data-ttu-id="34d38-103">EnableAlwaysDelete</span><span class="sxs-lookup"><span data-stu-id="34d38-103">EnableAlwaysDelete</span></span>
 
-<span data-ttu-id="fa3eb-104">Das **EnableAlwaysDelete** -Element gibt eine Kennung, die für alle neuen Elemente in einer Unterhaltung löschen kann.</span><span class="sxs-lookup"><span data-stu-id="fa3eb-104">The **EnableAlwaysDelete** element specifies a flag that enables deletion for all new items in a conversation.</span></span> 
+<span data-ttu-id="34d38-104">Das **EnableAlwaysDelete** -Element gibt ein Flag an, das das Löschen für alle neuen Elemente in einer Unterhaltung ermöglicht.</span><span class="sxs-lookup"><span data-stu-id="34d38-104">The **EnableAlwaysDelete** element specifies a flag that enables deletion for all new items in a conversation.</span></span> 
   
-[<span data-ttu-id="fa3eb-105">ApplyConversationAction</span><span class="sxs-lookup"><span data-stu-id="fa3eb-105">ApplyConversationAction</span></span>](applyconversationaction.md)
+[<span data-ttu-id="34d38-105">ApplyConversationAction</span><span class="sxs-lookup"><span data-stu-id="34d38-105">ApplyConversationAction</span></span>](applyconversationaction.md)
   
-[<span data-ttu-id="fa3eb-106">ConversationActions</span><span class="sxs-lookup"><span data-stu-id="fa3eb-106">ConversationActions</span></span>](conversationactions.md)
+[<span data-ttu-id="34d38-106">ConversationActions</span><span class="sxs-lookup"><span data-stu-id="34d38-106">ConversationActions</span></span>](conversationactions.md)
   
-[<span data-ttu-id="fa3eb-107">ConversationAction</span><span class="sxs-lookup"><span data-stu-id="fa3eb-107">ConversationAction</span></span>](conversationaction.md)
+[<span data-ttu-id="34d38-107">Unterhaltung</span><span class="sxs-lookup"><span data-stu-id="34d38-107">ConversationAction</span></span>](conversationaction.md)
   
-[<span data-ttu-id="fa3eb-108">EnableAlwaysDelete</span><span class="sxs-lookup"><span data-stu-id="fa3eb-108">EnableAlwaysDelete</span></span>](enablealwaysdelete.md)
+[<span data-ttu-id="34d38-108">EnableAlwaysDelete</span><span class="sxs-lookup"><span data-stu-id="34d38-108">EnableAlwaysDelete</span></span>](enablealwaysdelete.md)
   
 ```XML
 <EnableAlwaysDelete/>
 ```
 
- <span data-ttu-id="fa3eb-109">**xs: Boolean**</span><span class="sxs-lookup"><span data-stu-id="fa3eb-109">**xs:boolean**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="fa3eb-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="fa3eb-110">Attributes and elements</span></span>
+ <span data-ttu-id="34d38-109">**xs: Boolean**</span><span class="sxs-lookup"><span data-stu-id="34d38-109">**xs:boolean**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="34d38-110">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="34d38-110">Attributes and elements</span></span>
 
-<span data-ttu-id="fa3eb-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="fa3eb-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="34d38-111">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="34d38-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="fa3eb-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="fa3eb-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="34d38-112">Attribute</span><span class="sxs-lookup"><span data-stu-id="34d38-112">Attributes</span></span>
 
-<span data-ttu-id="fa3eb-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="fa3eb-113">None.</span></span>
+<span data-ttu-id="34d38-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="34d38-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="fa3eb-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="fa3eb-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="34d38-114">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="34d38-114">Child elements</span></span>
 
-<span data-ttu-id="fa3eb-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="fa3eb-115">None.</span></span>
+<span data-ttu-id="34d38-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="34d38-115">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="fa3eb-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="fa3eb-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="34d38-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="34d38-116">Parent elements</span></span>
 
-|<span data-ttu-id="fa3eb-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="fa3eb-117">**Element**</span></span>|<span data-ttu-id="fa3eb-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="fa3eb-118">**Description**</span></span>|
+|<span data-ttu-id="34d38-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="34d38-117">**Element**</span></span>|<span data-ttu-id="34d38-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="34d38-118">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="fa3eb-119">ConversationAction</span><span class="sxs-lookup"><span data-stu-id="fa3eb-119">ConversationAction</span></span>](conversationaction.md) <br/> |<span data-ttu-id="fa3eb-120">Enthält eine einzelne Aktion auf einem einzelnen Gespräch angewendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="fa3eb-120">Contains a single action to be applied to a single conversation.</span></span>  <br/> |
+|[<span data-ttu-id="34d38-119">Unterhaltung</span><span class="sxs-lookup"><span data-stu-id="34d38-119">ConversationAction</span></span>](conversationaction.md) <br/> |<span data-ttu-id="34d38-120">Enthält eine einzelne Aktion, die auf eine einzelne Unterhaltung angewendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="34d38-120">Contains a single action to be applied to a single conversation.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="fa3eb-121">Textwert</span><span class="sxs-lookup"><span data-stu-id="fa3eb-121">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="34d38-121">Textwert</span><span class="sxs-lookup"><span data-stu-id="34d38-121">Text value</span></span>
 
-<span data-ttu-id="fa3eb-122">Der Textwert des **EnableAlwaysDelete** -Elements ist **true,** um das Löschen aller Elemente in der Unterhaltung zu aktivieren. anderenfalls **false**.</span><span class="sxs-lookup"><span data-stu-id="fa3eb-122">The text value of the **EnableAlwaysDelete** element is **true** to enable the deletion of all items in conversation; otherwise, **false**.</span></span>
+<span data-ttu-id="34d38-122">Der Textwert des **EnableAlwaysDelete** -Elements ist **true** , um das Löschen aller Elemente in der Unterhaltung zu ermöglichen; andernfalls **false**.</span><span class="sxs-lookup"><span data-stu-id="34d38-122">The text value of the **EnableAlwaysDelete** element is **true** to enable the deletion of all items in conversation; otherwise, **false**.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="fa3eb-123">Hinweise</span><span class="sxs-lookup"><span data-stu-id="fa3eb-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="34d38-123">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="34d38-123">Remarks</span></span>
 
-<span data-ttu-id="fa3eb-124">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="fa3eb-124">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="34d38-124">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="34d38-124">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="fa3eb-125">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="fa3eb-125">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="34d38-125">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="34d38-125">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="fa3eb-126">Namespace</span><span class="sxs-lookup"><span data-stu-id="fa3eb-126">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="fa3eb-127">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="fa3eb-127">Schema Name</span></span>  <br/> |<span data-ttu-id="fa3eb-128">Schematypen</span><span class="sxs-lookup"><span data-stu-id="fa3eb-128">Types schema</span></span>  <br/> |
-|<span data-ttu-id="fa3eb-129">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="fa3eb-129">Validation File</span></span>  <br/> |<span data-ttu-id="fa3eb-130">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="fa3eb-130">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="fa3eb-131">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="fa3eb-131">Can be Empty</span></span>  <br/> |<span data-ttu-id="fa3eb-132">False</span><span class="sxs-lookup"><span data-stu-id="fa3eb-132">False</span></span>  <br/> |
+|<span data-ttu-id="34d38-126">Namespace</span><span class="sxs-lookup"><span data-stu-id="34d38-126">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="34d38-127">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="34d38-127">Schema Name</span></span>  <br/> |<span data-ttu-id="34d38-128">Schematypen</span><span class="sxs-lookup"><span data-stu-id="34d38-128">Types schema</span></span>  <br/> |
+|<span data-ttu-id="34d38-129">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="34d38-129">Validation File</span></span>  <br/> |<span data-ttu-id="34d38-130">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="34d38-130">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="34d38-131">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="34d38-131">Can be Empty</span></span>  <br/> |<span data-ttu-id="34d38-132">False</span><span class="sxs-lookup"><span data-stu-id="34d38-132">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="fa3eb-133">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="fa3eb-133">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="34d38-133">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="34d38-133">See also</span></span>
 
 
 
-[<span data-ttu-id="fa3eb-134">ApplyConversationAction-Vorgang</span><span class="sxs-lookup"><span data-stu-id="fa3eb-134">ApplyConversationAction operation</span></span>](applyconversationaction-operation.md)
+[<span data-ttu-id="34d38-134">ApplyConversationAction-Vorgang</span><span class="sxs-lookup"><span data-stu-id="34d38-134">ApplyConversationAction operation</span></span>](applyconversationaction-operation.md)
 
