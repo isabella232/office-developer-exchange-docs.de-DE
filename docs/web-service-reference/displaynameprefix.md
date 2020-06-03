@@ -12,56 +12,56 @@ ms.openlocfilehash: e7c723bb8da0834b96987f82e8f1c03c88c8d68c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458740"
 ---
-# <a name="displaynameprefix"></a><span data-ttu-id="e7642-103">DisplayNamePrefix</span><span class="sxs-lookup"><span data-stu-id="e7642-103">DisplayNamePrefix</span></span>
+# <a name="displaynameprefix"></a><span data-ttu-id="6af3e-103">DisplayNamePrefix</span><span class="sxs-lookup"><span data-stu-id="6af3e-103">DisplayNamePrefix</span></span>
 
-<span data-ttu-id="e7642-104">Das **DisplayNamePrefix** -Element gibt das Präfix des Anzeigenamens der zugeordneten persona an.</span><span class="sxs-lookup"><span data-stu-id="e7642-104">The **DisplayNamePrefix** element specifies the prefix of the display name of the associated persona.</span></span> 
+<span data-ttu-id="6af3e-104">Das **DisplayNamePrefix** -Element gibt das Präfix des Anzeigenamens der zugeordneten persona an.</span><span class="sxs-lookup"><span data-stu-id="6af3e-104">The **DisplayNamePrefix** element specifies the prefix of the display name of the associated persona.</span></span> 
   
 ```xml
 <DisplayNamePrefix></DisplayNamePrefix>
 ```
 
- <span data-ttu-id="e7642-105">**Zeichenfolge**</span><span class="sxs-lookup"><span data-stu-id="e7642-105">**string**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="e7642-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="e7642-106">Attributes and elements</span></span>
+ <span data-ttu-id="6af3e-105">**Zeichenfolge**</span><span class="sxs-lookup"><span data-stu-id="6af3e-105">**string**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="6af3e-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="6af3e-106">Attributes and elements</span></span>
 
-<span data-ttu-id="e7642-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="e7642-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="6af3e-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="6af3e-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="e7642-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="e7642-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="6af3e-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="6af3e-108">Attributes</span></span>
 
-<span data-ttu-id="e7642-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="e7642-109">None.</span></span>
+<span data-ttu-id="6af3e-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="6af3e-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="e7642-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e7642-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="6af3e-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="6af3e-110">Child elements</span></span>
 
-<span data-ttu-id="e7642-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="e7642-111">None.</span></span>
+<span data-ttu-id="6af3e-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="6af3e-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="e7642-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e7642-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="6af3e-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="6af3e-112">Parent elements</span></span>
 
-|<span data-ttu-id="e7642-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="e7642-113">**Element**</span></span>|<span data-ttu-id="e7642-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="e7642-114">**Description**</span></span>|
+|<span data-ttu-id="6af3e-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="6af3e-113">**Element**</span></span>|<span data-ttu-id="6af3e-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="6af3e-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="e7642-115">Persona</span><span class="sxs-lookup"><span data-stu-id="e7642-115">Persona</span></span>](persona.md) <br/> |<span data-ttu-id="e7642-116">Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="e7642-116">Specifies a set of persona data returned by a **GetPersona** request.</span></span>  <br/> |
+|[<span data-ttu-id="6af3e-115">Persona</span><span class="sxs-lookup"><span data-stu-id="6af3e-115">Persona</span></span>](persona.md) <br/> |<span data-ttu-id="6af3e-116">Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="6af3e-116">Specifies a set of persona data returned by a **GetPersona** request.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="e7642-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="e7642-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="6af3e-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="6af3e-117">Text value</span></span>
 
-<span data-ttu-id="e7642-118">Der Textwert des **DisplayNamePrefix** -Elements ist ein String-Wert, der das Präfix für den Anzeigenamen angibt.</span><span class="sxs-lookup"><span data-stu-id="e7642-118">The text value of the **DisplayNamePrefix** element is a string value that specifies the prefix for the display name.</span></span> 
+<span data-ttu-id="6af3e-118">Der Textwert des **DisplayNamePrefix** -Elements ist ein String-Wert, der das Präfix für den Anzeigenamen angibt.</span><span class="sxs-lookup"><span data-stu-id="6af3e-118">The text value of the **DisplayNamePrefix** element is a string value that specifies the prefix for the display name.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="e7642-119">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e7642-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6af3e-119">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="6af3e-119">Remarks</span></span>
 
-<span data-ttu-id="e7642-120">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="e7642-120">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="6af3e-120">Dieses Element wurde in Exchange Server 2013 eingeführt.</span><span class="sxs-lookup"><span data-stu-id="6af3e-120">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="e7642-121">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="e7642-121">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="6af3e-121">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="6af3e-121">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="e7642-122">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="e7642-122">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="6af3e-122">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="6af3e-122">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="e7642-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="e7642-123">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="e7642-124">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="e7642-124">Schema Name</span></span>  <br/> |<span data-ttu-id="e7642-125">Typschema</span><span class="sxs-lookup"><span data-stu-id="e7642-125">Type schema</span></span>  <br/> |
-|<span data-ttu-id="e7642-126">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="e7642-126">Validation File</span></span>  <br/> |<span data-ttu-id="e7642-127">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="e7642-127">types.xsd</span></span>  <br/> |
-|<span data-ttu-id="e7642-128">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="e7642-128">Can Be Empty</span></span>  <br/> ||
+|<span data-ttu-id="6af3e-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="6af3e-123">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="6af3e-124">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="6af3e-124">Schema Name</span></span>  <br/> |<span data-ttu-id="6af3e-125">Typschema</span><span class="sxs-lookup"><span data-stu-id="6af3e-125">Type schema</span></span>  <br/> |
+|<span data-ttu-id="6af3e-126">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="6af3e-126">Validation File</span></span>  <br/> |<span data-ttu-id="6af3e-127">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="6af3e-127">types.xsd</span></span>  <br/> |
+|<span data-ttu-id="6af3e-128">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="6af3e-128">Can Be Empty</span></span>  <br/> ||
    
-## <a name="see-also"></a><span data-ttu-id="e7642-129">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e7642-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6af3e-129">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="6af3e-129">See also</span></span>
 
-- [<span data-ttu-id="e7642-130">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="e7642-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="6af3e-130">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="6af3e-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

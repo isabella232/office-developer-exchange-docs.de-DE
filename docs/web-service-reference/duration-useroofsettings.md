@@ -16,12 +16,12 @@ ms.openlocfilehash: 0ba0f1ea7498781c0cccb072c7ea0fa05414764c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457298"
 ---
-# <a name="duration-useroofsettings"></a><span data-ttu-id="a35e4-103">Dauer (UserOofSettings)</span><span class="sxs-lookup"><span data-stu-id="a35e4-103">Duration (UserOofSettings)</span></span>
+# <a name="duration-useroofsettings"></a><span data-ttu-id="723ed-103">Dauer (UserOofSettings)</span><span class="sxs-lookup"><span data-stu-id="723ed-103">Duration (UserOofSettings)</span></span>
 
-<span data-ttu-id="a35e4-104">Das **Duration** -Element gibt die Dauer an, für die der Abwesenheitsstatus aktiviert ist, wenn das [OofState](oofstate.md) -Element auf **Scheduled**festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="a35e4-104">The **Duration** element specifies the duration that the out of office (OOF) status is enabled if the [OofState](oofstate.md) element is set to **Scheduled**.</span></span>
+<span data-ttu-id="723ed-104">Das **Duration** -Element gibt die Dauer an, für die der Abwesenheitsstatus aktiviert ist, wenn das [OofState](oofstate.md) -Element auf **Scheduled**festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="723ed-104">The **Duration** element specifies the duration that the out of office (OOF) status is enabled if the [OofState](oofstate.md) element is set to **Scheduled**.</span></span>
   
 ```XML
 <Duration>
@@ -30,39 +30,39 @@ ms.locfileid: "44457298"
 </Duration>
 ```
 
- <span data-ttu-id="a35e4-105">**Duration**</span><span class="sxs-lookup"><span data-stu-id="a35e4-105">**Duration**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="a35e4-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="a35e4-106">Attributes and elements</span></span>
+ <span data-ttu-id="723ed-105">**Duration**</span><span class="sxs-lookup"><span data-stu-id="723ed-105">**Duration**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="723ed-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="723ed-106">Attributes and elements</span></span>
 
-<span data-ttu-id="a35e4-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="a35e4-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="723ed-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="723ed-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="a35e4-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="a35e4-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="723ed-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="723ed-108">Attributes</span></span>
 
-<span data-ttu-id="a35e4-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="a35e4-109">None.</span></span>
+<span data-ttu-id="723ed-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="723ed-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="a35e4-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a35e4-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="723ed-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="723ed-110">Child elements</span></span>
 
-|<span data-ttu-id="a35e4-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="a35e4-111">**Element**</span></span>|<span data-ttu-id="a35e4-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="a35e4-112">**Description**</span></span>|
+|<span data-ttu-id="723ed-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="723ed-111">**Element**</span></span>|<span data-ttu-id="723ed-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="723ed-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="a35e4-113">StartTime</span><span class="sxs-lookup"><span data-stu-id="a35e4-113">StartTime</span></span>](starttime.md) <br/> |<span data-ttu-id="a35e4-114">Stellt den Anfang der Zeitspanne fest, die mit einem Abwesenheitsstatus festgelegt wurde.</span><span class="sxs-lookup"><span data-stu-id="a35e4-114">Represents the start of the time span set with an OOF status.</span></span> <span data-ttu-id="a35e4-115">Dieses Element ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="a35e4-115">This element is required.</span></span>  <br/> |
-|[<span data-ttu-id="a35e4-116">EndTime</span><span class="sxs-lookup"><span data-stu-id="a35e4-116">EndTime</span></span>](endtime.md) <br/> |<span data-ttu-id="a35e4-117">Stellt das Ende der Zeitspanne fest, die mit einem Abwesenheitsstatus festgelegt wurde.</span><span class="sxs-lookup"><span data-stu-id="a35e4-117">Represents the end of the time span set with an OOF status.</span></span> <span data-ttu-id="a35e4-118">Dieses Element ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="a35e4-118">This element is required.</span></span>  <br/> |
+|[<span data-ttu-id="723ed-113">StartTime</span><span class="sxs-lookup"><span data-stu-id="723ed-113">StartTime</span></span>](starttime.md) <br/> |<span data-ttu-id="723ed-114">Stellt den Anfang der Zeitspanne fest, die mit einem Abwesenheitsstatus festgelegt wurde.</span><span class="sxs-lookup"><span data-stu-id="723ed-114">Represents the start of the time span set with an OOF status.</span></span> <span data-ttu-id="723ed-115">Dieses Element ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="723ed-115">This element is required.</span></span>  <br/> |
+|[<span data-ttu-id="723ed-116">EndTime</span><span class="sxs-lookup"><span data-stu-id="723ed-116">EndTime</span></span>](endtime.md) <br/> |<span data-ttu-id="723ed-117">Stellt das Ende der Zeitspanne fest, die mit einem Abwesenheitsstatus festgelegt wurde.</span><span class="sxs-lookup"><span data-stu-id="723ed-117">Represents the end of the time span set with an OOF status.</span></span> <span data-ttu-id="723ed-118">Dieses Element ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="723ed-118">This element is required.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="a35e4-119">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a35e4-119">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="723ed-119">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="723ed-119">Parent elements</span></span>
 
-|<span data-ttu-id="a35e4-120">**Element**</span><span class="sxs-lookup"><span data-stu-id="a35e4-120">**Element**</span></span>|<span data-ttu-id="a35e4-121">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="a35e4-121">**Description**</span></span>|
+|<span data-ttu-id="723ed-120">**Element**</span><span class="sxs-lookup"><span data-stu-id="723ed-120">**Element**</span></span>|<span data-ttu-id="723ed-121">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="723ed-121">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="a35e4-122">UserOofSettings</span><span class="sxs-lookup"><span data-stu-id="a35e4-122">UserOofSettings</span></span>](useroofsettings.md) <br/> |<span data-ttu-id="a35e4-123">Gibt die Abwesenheitseinstellungen an.</span><span class="sxs-lookup"><span data-stu-id="a35e4-123">Specifies the OOF settings.</span></span>  <br/><br/><span data-ttu-id="a35e4-124">Für dieses Element wird folgender XPath-Ausdruck verwendet: </span><span class="sxs-lookup"><span data-stu-id="a35e4-124">The following is the XPath expression to this element:</span></span><br/><br/>`/SetUserOofSettingsRequest/UserOofSettings` <br/> |
-|[<span data-ttu-id="a35e4-125">OofSettings</span><span class="sxs-lookup"><span data-stu-id="a35e4-125">OofSettings</span></span>](oofsettings.md) <br/> |<span data-ttu-id="a35e4-126">Enthält die OOF-Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="a35e4-126">Contains the OOF settings.</span></span><br/><br/><span data-ttu-id="a35e4-127">Für dieses Element wird folgender XPath-Ausdruck verwendet: </span><span class="sxs-lookup"><span data-stu-id="a35e4-127">The following is the XPath expression to this element:</span></span><br/><br/>`/GetUserOofSettingsResponse/OofSettings` <br/> |
-|[<span data-ttu-id="a35e4-128">OutOfOffice</span><span class="sxs-lookup"><span data-stu-id="a35e4-128">OutOfOffice</span></span>](outofoffice.md) <br/> |<span data-ttu-id="a35e4-129">Definiert die Abwesenheit (Out of Office, OOF) Antwortnachricht und eine Dauer für das Senden der Antwortnachricht für ein Postfach.</span><span class="sxs-lookup"><span data-stu-id="a35e4-129">Defines the Out of Office (OOF) response message and a duration time for sending the response message for a mailbox.</span></span>  <br/> |
+|[<span data-ttu-id="723ed-122">UserOofSettings</span><span class="sxs-lookup"><span data-stu-id="723ed-122">UserOofSettings</span></span>](useroofsettings.md) <br/> |<span data-ttu-id="723ed-123">Gibt die Abwesenheitseinstellungen an.</span><span class="sxs-lookup"><span data-stu-id="723ed-123">Specifies the OOF settings.</span></span>  <br/><br/><span data-ttu-id="723ed-124">Für dieses Element wird folgender XPath-Ausdruck verwendet: </span><span class="sxs-lookup"><span data-stu-id="723ed-124">The following is the XPath expression to this element:</span></span><br/><br/>`/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[<span data-ttu-id="723ed-125">OofSettings</span><span class="sxs-lookup"><span data-stu-id="723ed-125">OofSettings</span></span>](oofsettings.md) <br/> |<span data-ttu-id="723ed-126">Enthält die OOF-Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="723ed-126">Contains the OOF settings.</span></span><br/><br/><span data-ttu-id="723ed-127">Für dieses Element wird folgender XPath-Ausdruck verwendet: </span><span class="sxs-lookup"><span data-stu-id="723ed-127">The following is the XPath expression to this element:</span></span><br/><br/>`/GetUserOofSettingsResponse/OofSettings` <br/> |
+|[<span data-ttu-id="723ed-128">OutOfOffice</span><span class="sxs-lookup"><span data-stu-id="723ed-128">OutOfOffice</span></span>](outofoffice.md) <br/> |<span data-ttu-id="723ed-129">Definiert die Abwesenheit (Out of Office, OOF) Antwortnachricht und eine Dauer für das Senden der Antwortnachricht für ein Postfach.</span><span class="sxs-lookup"><span data-stu-id="723ed-129">Defines the Out of Office (OOF) response message and a duration time for sending the response message for a mailbox.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="a35e4-130">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="a35e4-130">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="723ed-130">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="723ed-130">Remarks</span></span>
 
-<span data-ttu-id="a35e4-131">Der Typ Duration ist auch der Typ für die Elemente [DetailedSuggestionsWindow](detailedsuggestionswindow.md), **Zeit** [Fenster](timewindow.md)und [OutOfOffice](outofoffice.md) .</span><span class="sxs-lookup"><span data-stu-id="a35e4-131">The **Duration** type is also the type for the [DetailedSuggestionsWindow](detailedsuggestionswindow.md), [TimeWindow](timewindow.md), and [OutOfOffice](outofoffice.md) elements.</span></span> 
+<span data-ttu-id="723ed-131">Der Typ Duration ist auch der Typ für die Elemente [DetailedSuggestionsWindow](detailedsuggestionswindow.md), **Zeit** [Fenster](timewindow.md)und [OutOfOffice](outofoffice.md) .</span><span class="sxs-lookup"><span data-stu-id="723ed-131">The **Duration** type is also the type for the [DetailedSuggestionsWindow](detailedsuggestionswindow.md), [TimeWindow](timewindow.md), and [OutOfOffice](outofoffice.md) elements.</span></span> 
   
-<span data-ttu-id="a35e4-132">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="a35e4-132">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="723ed-132">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="723ed-132">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="example"></a><span data-ttu-id="a35e4-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="a35e4-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="723ed-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="723ed-133">Example</span></span>
 
-<span data-ttu-id="a35e4-134">Im folgenden Beispiel einer [SetUserOofSettings-Vorgangs](setuseroofsettings-operation.md) Anforderung wird die [OofState](oofstate.md) auf **Enabled**, die internen und externen Abwesenheitsnachrichten festgelegt und die Dauer von OOF für 10 Tage festgelegt.</span><span class="sxs-lookup"><span data-stu-id="a35e4-134">The following example of a [SetUserOofSettings operation](setuseroofsettings-operation.md) request sets the [OofState](oofstate.md) to **Enabled**, the internal and external OOF messages, and sets the duration of OOF for 10 days.</span></span>
+<span data-ttu-id="723ed-134">Im folgenden Beispiel einer [SetUserOofSettings-Vorgangs](setuseroofsettings-operation.md) Anforderung wird die [OofState](oofstate.md) auf **Enabled**, die internen und externen Abwesenheitsnachrichten festgelegt und die Dauer von OOF für 10 Tage festgelegt.</span><span class="sxs-lookup"><span data-stu-id="723ed-134">The following example of a [SetUserOofSettings operation](setuseroofsettings-operation.md) request sets the [OofState](oofstate.md) to **Enabled**, the internal and external OOF messages, and sets the duration of OOF for 10 days.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -94,17 +94,17 @@ ms.locfileid: "44457298"
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a><span data-ttu-id="a35e4-135">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="a35e4-135">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="723ed-135">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="723ed-135">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="a35e4-136">Namespace</span><span class="sxs-lookup"><span data-stu-id="a35e4-136">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="a35e4-137">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="a35e4-137">Schema Name</span></span>  <br/> |<span data-ttu-id="a35e4-138">Schematypen</span><span class="sxs-lookup"><span data-stu-id="a35e4-138">Types schema</span></span>  <br/> |
-|<span data-ttu-id="a35e4-139">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="a35e4-139">Validation File</span></span>  <br/> |<span data-ttu-id="a35e4-140">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="a35e4-140">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="a35e4-141">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="a35e4-141">Can be Empty</span></span>  <br/> |<span data-ttu-id="a35e4-142">False</span><span class="sxs-lookup"><span data-stu-id="a35e4-142">False</span></span>  <br/> |
+|<span data-ttu-id="723ed-136">Namespace</span><span class="sxs-lookup"><span data-stu-id="723ed-136">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="723ed-137">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="723ed-137">Schema Name</span></span>  <br/> |<span data-ttu-id="723ed-138">Schematypen</span><span class="sxs-lookup"><span data-stu-id="723ed-138">Types schema</span></span>  <br/> |
+|<span data-ttu-id="723ed-139">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="723ed-139">Validation File</span></span>  <br/> |<span data-ttu-id="723ed-140">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="723ed-140">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="723ed-141">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="723ed-141">Can be Empty</span></span>  <br/> |<span data-ttu-id="723ed-142">False</span><span class="sxs-lookup"><span data-stu-id="723ed-142">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="a35e4-143">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a35e4-143">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="723ed-143">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="723ed-143">See also</span></span>
 
-- [<span data-ttu-id="a35e4-144">GetUserOofSettings-Vorgang</span><span class="sxs-lookup"><span data-stu-id="a35e4-144">GetUserOofSettings operation</span></span>](getuseroofsettings-operation.md)  
-- [<span data-ttu-id="a35e4-145">SetUserOofSettings-Vorgang</span><span class="sxs-lookup"><span data-stu-id="a35e4-145">SetUserOofSettings operation</span></span>](setuseroofsettings-operation.md)
+- [<span data-ttu-id="723ed-144">GetUserOofSettings-Vorgang</span><span class="sxs-lookup"><span data-stu-id="723ed-144">GetUserOofSettings operation</span></span>](getuseroofsettings-operation.md)  
+- [<span data-ttu-id="723ed-145">SetUserOofSettings-Vorgang</span><span class="sxs-lookup"><span data-stu-id="723ed-145">SetUserOofSettings operation</span></span>](setuseroofsettings-operation.md)
 

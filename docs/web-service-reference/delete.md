@@ -16,57 +16,57 @@ ms.openlocfilehash: 5460f9e49b126ca6b039c6f11aaa3c6eb4a40544
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457354"
 ---
-# <a name="delete"></a><span data-ttu-id="a58ee-103">Löschen</span><span class="sxs-lookup"><span data-stu-id="a58ee-103">Delete</span></span>
+# <a name="delete"></a><span data-ttu-id="081c6-103">Löschen</span><span class="sxs-lookup"><span data-stu-id="081c6-103">Delete</span></span>
 
-<span data-ttu-id="a58ee-104">Das **Delete** -Element gibt an, ob ein Client einen Ordner oder ein Element löschen kann.</span><span class="sxs-lookup"><span data-stu-id="a58ee-104">The **Delete** element indicates whether a client can delete a folder or item.</span></span> 
+<span data-ttu-id="081c6-104">Das **Delete** -Element gibt an, ob ein Client einen Ordner oder ein Element löschen kann.</span><span class="sxs-lookup"><span data-stu-id="081c6-104">The **Delete** element indicates whether a client can delete a folder or item.</span></span> 
   
 ```XML
 <Delete>true or false</Delete>
 ```
 
-<span data-ttu-id="a58ee-105">**boolean**</span><span class="sxs-lookup"><span data-stu-id="a58ee-105">**boolean**</span></span>
+<span data-ttu-id="081c6-105">**boolean**</span><span class="sxs-lookup"><span data-stu-id="081c6-105">**boolean**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="a58ee-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="a58ee-106">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="081c6-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="081c6-106">Attributes and elements</span></span>
 
-<span data-ttu-id="a58ee-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="a58ee-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="081c6-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="081c6-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="a58ee-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="a58ee-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="081c6-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="081c6-108">Attributes</span></span>
 
-<span data-ttu-id="a58ee-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="a58ee-109">None.</span></span>
+<span data-ttu-id="081c6-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="081c6-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="a58ee-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a58ee-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="081c6-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="081c6-110">Child elements</span></span>
 
-<span data-ttu-id="a58ee-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="a58ee-111">None.</span></span>
+<span data-ttu-id="081c6-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="081c6-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="a58ee-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a58ee-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="081c6-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="081c6-112">Parent elements</span></span>
 
-|<span data-ttu-id="a58ee-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="a58ee-113">**Element**</span></span>|<span data-ttu-id="a58ee-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="a58ee-114">**Description**</span></span>|
+|<span data-ttu-id="081c6-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="081c6-113">**Element**</span></span>|<span data-ttu-id="081c6-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="081c6-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="a58ee-115">EffectiveRights</span><span class="sxs-lookup"><span data-stu-id="a58ee-115">EffectiveRights</span></span>](effectiverights.md) <br/> |<span data-ttu-id="a58ee-116">Enthält die Rechte des Clients basierend auf den Berechtigungseinstellungen für das Element oder den Ordner.</span><span class="sxs-lookup"><span data-stu-id="a58ee-116">Contains the rights of the client based on the permission settings for the item or folder.</span></span>  <br/> |
-|[<span data-ttu-id="a58ee-117">Aktionen</span><span class="sxs-lookup"><span data-stu-id="a58ee-117">Actions</span></span>](actions.md) <br/> |<span data-ttu-id="a58ee-118">Repräsentiert den Satz von Aktionen, die sind verfügbar, die auf eine Nachricht durchgeführt werden, wenn die Bedingungen erfüllt sind.</span><span class="sxs-lookup"><span data-stu-id="a58ee-118">Represents the set of actions that are available to be taken on a message when the conditions are fulfilled.</span></span>  <br/> |
+|[<span data-ttu-id="081c6-115">EffectiveRights</span><span class="sxs-lookup"><span data-stu-id="081c6-115">EffectiveRights</span></span>](effectiverights.md) <br/> |<span data-ttu-id="081c6-116">Enthält die Rechte des Clients basierend auf den Berechtigungseinstellungen für das Element oder den Ordner.</span><span class="sxs-lookup"><span data-stu-id="081c6-116">Contains the rights of the client based on the permission settings for the item or folder.</span></span>  <br/> |
+|[<span data-ttu-id="081c6-117">Aktionen</span><span class="sxs-lookup"><span data-stu-id="081c6-117">Actions</span></span>](actions.md) <br/> |<span data-ttu-id="081c6-118">Repräsentiert den Satz von Aktionen, die sind verfügbar, die auf eine Nachricht durchgeführt werden, wenn die Bedingungen erfüllt sind.</span><span class="sxs-lookup"><span data-stu-id="081c6-118">Represents the set of actions that are available to be taken on a message when the conditions are fulfilled.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="a58ee-119">Textwert</span><span class="sxs-lookup"><span data-stu-id="a58ee-119">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="081c6-119">Textwert</span><span class="sxs-lookup"><span data-stu-id="081c6-119">Text value</span></span>
 
-<span data-ttu-id="a58ee-120">Der Textwert **true** gibt an, dass ein Client ein Element oder einen Ordner löschen kann.</span><span class="sxs-lookup"><span data-stu-id="a58ee-120">A text value of **true** indicates that a client can delete an item or folder.</span></span> <span data-ttu-id="a58ee-121">Der Wert **false** gibt an, dass ein Element oder ein Ordner von einem Client nicht gelöscht werden kann.</span><span class="sxs-lookup"><span data-stu-id="a58ee-121">A value of **false** indicates that a client cannot delete an item or folder.</span></span> 
+<span data-ttu-id="081c6-120">Der Textwert **true** gibt an, dass ein Client ein Element oder einen Ordner löschen kann.</span><span class="sxs-lookup"><span data-stu-id="081c6-120">A text value of **true** indicates that a client can delete an item or folder.</span></span> <span data-ttu-id="081c6-121">Der Wert **false** gibt an, dass ein Element oder ein Ordner von einem Client nicht gelöscht werden kann.</span><span class="sxs-lookup"><span data-stu-id="081c6-121">A value of **false** indicates that a client cannot delete an item or folder.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="a58ee-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="a58ee-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="081c6-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="081c6-122">Remarks</span></span>
 
-<span data-ttu-id="a58ee-123">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="a58ee-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="081c6-123">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="081c6-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="a58ee-124">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="a58ee-124">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="081c6-124">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="081c6-124">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="a58ee-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="a58ee-125">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="a58ee-126">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="a58ee-126">Schema Name</span></span>  <br/> |<span data-ttu-id="a58ee-127">Schematypen</span><span class="sxs-lookup"><span data-stu-id="a58ee-127">Types schema</span></span>  <br/> |
-|<span data-ttu-id="a58ee-128">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="a58ee-128">Validation File</span></span>  <br/> |<span data-ttu-id="a58ee-129">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="a58ee-129">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="a58ee-130">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="a58ee-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="a58ee-131">False</span><span class="sxs-lookup"><span data-stu-id="a58ee-131">False</span></span>  <br/> |
+|<span data-ttu-id="081c6-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="081c6-125">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="081c6-126">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="081c6-126">Schema Name</span></span>  <br/> |<span data-ttu-id="081c6-127">Schematypen</span><span class="sxs-lookup"><span data-stu-id="081c6-127">Types schema</span></span>  <br/> |
+|<span data-ttu-id="081c6-128">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="081c6-128">Validation File</span></span>  <br/> |<span data-ttu-id="081c6-129">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="081c6-129">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="081c6-130">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="081c6-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="081c6-131">False</span><span class="sxs-lookup"><span data-stu-id="081c6-131">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="a58ee-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a58ee-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="081c6-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="081c6-132">See also</span></span>
 
-- [<span data-ttu-id="a58ee-133">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="a58ee-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
-- [<span data-ttu-id="a58ee-134">Setting Folder-Level Permissions</span><span class="sxs-lookup"><span data-stu-id="a58ee-134">Setting Folder-Level Permissions</span></span>](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+- [<span data-ttu-id="081c6-133">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="081c6-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="081c6-134">Setting Folder-Level Permissions</span><span class="sxs-lookup"><span data-stu-id="081c6-134">Setting Folder-Level Permissions</span></span>](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

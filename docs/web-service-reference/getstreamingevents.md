@@ -16,14 +16,14 @@ ms.openlocfilehash: ec133ecd69c05a2208e95f925133570af0233cf2
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457319"
 ---
-# <a name="getstreamingevents"></a><span data-ttu-id="8a70a-103">GetStreamingEvents</span><span class="sxs-lookup"><span data-stu-id="8a70a-103">GetStreamingEvents</span></span>
+# <a name="getstreamingevents"></a><span data-ttu-id="8de76-103">GetStreamingEvents</span><span class="sxs-lookup"><span data-stu-id="8de76-103">GetStreamingEvents</span></span>
 
-<span data-ttu-id="8a70a-104">Das **GetStreamingEvents** -Element stellt den Vorgang dar, der von Clients zum Anfordern von Streaming-Benachrichtigungen vom Server verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="8a70a-104">The **GetStreamingEvents** element represents the operation that is used by clients to request streaming notifications from the server.</span></span> 
+<span data-ttu-id="8de76-104">Das **GetStreamingEvents** -Element stellt den Vorgang dar, der von Clients zum Anfordern von Streaming-Benachrichtigungen vom Server verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="8de76-104">The **GetStreamingEvents** element represents the operation that is used by clients to request streaming notifications from the server.</span></span> 
   
-[<span data-ttu-id="8a70a-105">GetStreamingEvents</span><span class="sxs-lookup"><span data-stu-id="8a70a-105">GetStreamingEvents</span></span>](getstreamingevents.md)
+[<span data-ttu-id="8de76-105">GetStreamingEvents</span><span class="sxs-lookup"><span data-stu-id="8de76-105">GetStreamingEvents</span></span>](getstreamingevents.md)
   
 ```XML
 <GetStreamingEvents>
@@ -32,53 +32,53 @@ ms.locfileid: "44457319"
 </GetStreamingEvents>
 ```
 
- <span data-ttu-id="8a70a-106">**GetStreamingEventsType**</span><span class="sxs-lookup"><span data-stu-id="8a70a-106">**GetStreamingEventsType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="8a70a-107">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="8a70a-107">Attributes and elements</span></span>
+ <span data-ttu-id="8de76-106">**GetStreamingEventsType**</span><span class="sxs-lookup"><span data-stu-id="8de76-106">**GetStreamingEventsType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="8de76-107">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="8de76-107">Attributes and elements</span></span>
 
-<span data-ttu-id="8a70a-108">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="8a70a-108">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="8de76-108">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="8de76-108">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="8a70a-109">Attribute</span><span class="sxs-lookup"><span data-stu-id="8a70a-109">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="8de76-109">Attribute</span><span class="sxs-lookup"><span data-stu-id="8de76-109">Attributes</span></span>
 
-<span data-ttu-id="8a70a-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="8a70a-110">None.</span></span>
+<span data-ttu-id="8de76-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="8de76-110">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="8a70a-111">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="8a70a-111">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="8de76-111">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="8de76-111">Child elements</span></span>
 
-|<span data-ttu-id="8a70a-112">**Element**</span><span class="sxs-lookup"><span data-stu-id="8a70a-112">**Element**</span></span>|<span data-ttu-id="8a70a-113">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="8a70a-113">**Description**</span></span>|
+|<span data-ttu-id="8de76-112">**Element**</span><span class="sxs-lookup"><span data-stu-id="8de76-112">**Element**</span></span>|<span data-ttu-id="8de76-113">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="8de76-113">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="8a70a-114">Abonnement-GetStreamingEvents</span><span class="sxs-lookup"><span data-stu-id="8a70a-114">SubscriptionId (GetStreamingEvents)</span></span>](subscriptionid-getstreamingevents.md) <br/> |<span data-ttu-id="8a70a-115">Stellt den Bezeichner für ein Abonnement dar, das für Ereignisse abgefragt wird.</span><span class="sxs-lookup"><span data-stu-id="8a70a-115">Represents the identifier for a subscription that is queried for events.</span></span>  <br/> |
-|[<span data-ttu-id="8a70a-116">ConnectionTimeout</span><span class="sxs-lookup"><span data-stu-id="8a70a-116">ConnectionTimeout</span></span>](connectiontimeout.md) <br/> |<span data-ttu-id="8a70a-117">Gibt an, wie viele Minuten eine Verbindung geöffnet bleiben soll.</span><span class="sxs-lookup"><span data-stu-id="8a70a-117">Represents the number of minutes to keep a connection open.</span></span>  <br/> |
+|[<span data-ttu-id="8de76-114">Abonnement-GetStreamingEvents</span><span class="sxs-lookup"><span data-stu-id="8de76-114">SubscriptionId (GetStreamingEvents)</span></span>](subscriptionid-getstreamingevents.md) <br/> |<span data-ttu-id="8de76-115">Stellt den Bezeichner für ein Abonnement dar, das für Ereignisse abgefragt wird.</span><span class="sxs-lookup"><span data-stu-id="8de76-115">Represents the identifier for a subscription that is queried for events.</span></span>  <br/> |
+|[<span data-ttu-id="8de76-116">ConnectionTimeout</span><span class="sxs-lookup"><span data-stu-id="8de76-116">ConnectionTimeout</span></span>](connectiontimeout.md) <br/> |<span data-ttu-id="8de76-117">Gibt an, wie viele Minuten eine Verbindung geöffnet bleiben soll.</span><span class="sxs-lookup"><span data-stu-id="8de76-117">Represents the number of minutes to keep a connection open.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="8a70a-118">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="8a70a-118">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="8de76-118">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="8de76-118">Parent elements</span></span>
 
-<span data-ttu-id="8a70a-119">Keine.</span><span class="sxs-lookup"><span data-stu-id="8a70a-119">None.</span></span>
+<span data-ttu-id="8de76-119">Keine.</span><span class="sxs-lookup"><span data-stu-id="8de76-119">None.</span></span>
   
-## <a name="text-value"></a><span data-ttu-id="8a70a-120">Textwert</span><span class="sxs-lookup"><span data-stu-id="8a70a-120">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="8de76-120">Textwert</span><span class="sxs-lookup"><span data-stu-id="8de76-120">Text value</span></span>
 
-<span data-ttu-id="8a70a-121">Keine.</span><span class="sxs-lookup"><span data-stu-id="8a70a-121">None.</span></span>
+<span data-ttu-id="8de76-121">Keine.</span><span class="sxs-lookup"><span data-stu-id="8de76-121">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="8a70a-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="8a70a-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8de76-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="8de76-122">Remarks</span></span>
 
-<span data-ttu-id="8a70a-123">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="8a70a-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="8de76-123">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.</span><span class="sxs-lookup"><span data-stu-id="8de76-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="8a70a-124">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="8a70a-124">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="8de76-124">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="8de76-124">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="8a70a-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="8a70a-125">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="8a70a-126">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="8a70a-126">Schema name</span></span>  <br/> |<span data-ttu-id="8a70a-127">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="8a70a-127">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="8a70a-128">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="8a70a-128">Validation file</span></span>  <br/> |<span data-ttu-id="8a70a-129">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="8a70a-129">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="8a70a-130">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="8a70a-130">Can be empty</span></span>  <br/> |<span data-ttu-id="8a70a-131">False</span><span class="sxs-lookup"><span data-stu-id="8a70a-131">False</span></span>  <br/> |
+|<span data-ttu-id="8de76-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="8de76-125">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="8de76-126">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="8de76-126">Schema name</span></span>  <br/> |<span data-ttu-id="8de76-127">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="8de76-127">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="8de76-128">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="8de76-128">Validation file</span></span>  <br/> |<span data-ttu-id="8de76-129">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="8de76-129">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="8de76-130">Kann leer sein</span><span class="sxs-lookup"><span data-stu-id="8de76-130">Can be empty</span></span>  <br/> |<span data-ttu-id="8de76-131">False</span><span class="sxs-lookup"><span data-stu-id="8de76-131">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="8a70a-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="8a70a-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8de76-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="8de76-132">See also</span></span>
 
 
 
-[<span data-ttu-id="8a70a-133">Vorgang abonnieren</span><span class="sxs-lookup"><span data-stu-id="8a70a-133">Subscribe operation</span></span>](subscribe-operation.md)
+[<span data-ttu-id="8de76-133">Vorgang abonnieren</span><span class="sxs-lookup"><span data-stu-id="8de76-133">Subscribe operation</span></span>](subscribe-operation.md)
   
-[<span data-ttu-id="8a70a-134">GetStreamingEvents-Vorgang</span><span class="sxs-lookup"><span data-stu-id="8a70a-134">GetStreamingEvents operation</span></span>](getstreamingevents-operation.md)
+[<span data-ttu-id="8de76-134">GetStreamingEvents-Vorgang</span><span class="sxs-lookup"><span data-stu-id="8de76-134">GetStreamingEvents operation</span></span>](getstreamingevents-operation.md)
   
-[<span data-ttu-id="8a70a-135">Vorgang des Kündigens von Abonnements</span><span class="sxs-lookup"><span data-stu-id="8a70a-135">Unsubscribe operation</span></span>](unsubscribe-operation.md)
+[<span data-ttu-id="8de76-135">Vorgang des Kündigens von Abonnements</span><span class="sxs-lookup"><span data-stu-id="8de76-135">Unsubscribe operation</span></span>](unsubscribe-operation.md)
 
 
-- [<span data-ttu-id="8a70a-136">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="8a70a-136">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="8de76-136">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="8de76-136">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

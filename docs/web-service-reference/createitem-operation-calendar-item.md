@@ -16,24 +16,24 @@ ms.openlocfilehash: 535edf9fe567bc3063a5b853f01d604ea4c7eb95
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457501"
 ---
-# <a name="createitem-operation-calendar-item"></a><span data-ttu-id="8fe46-103">CreateItem-Vorgang (Kalenderelement)</span><span class="sxs-lookup"><span data-stu-id="8fe46-103">CreateItem operation (calendar item)</span></span>
+# <a name="createitem-operation-calendar-item"></a><span data-ttu-id="79b58-103">CreateItem-Vorgang (Kalenderelement)</span><span class="sxs-lookup"><span data-stu-id="79b58-103">CreateItem operation (calendar item)</span></span>
 
-<span data-ttu-id="8fe46-104">Der CreateItem-Vorgang erstellt Kalenderelemente in der Exchange-Informationsspeicher.</span><span class="sxs-lookup"><span data-stu-id="8fe46-104">The CreateItem operation creates calendar items in the Exchange store.</span></span>
+<span data-ttu-id="79b58-104">Der CreateItem-Vorgang erstellt Kalenderelemente in der Exchange-Informationsspeicher.</span><span class="sxs-lookup"><span data-stu-id="79b58-104">The CreateItem operation creates calendar items in the Exchange store.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="8fe46-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="8fe46-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="79b58-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="79b58-105">Remarks</span></span>
 
-<span data-ttu-id="8fe46-106">Mit dem CreateItem-Vorgang werden Termine, Besprechungen und Besprechungsanfragen erstellt.</span><span class="sxs-lookup"><span data-stu-id="8fe46-106">The CreateItem operation creates appointments, meetings, and meeting requests.</span></span> <span data-ttu-id="8fe46-107">Wenn ein Kalenderelement ohne Teilnehmer erstellt wird, wird es als Termin betrachtet.</span><span class="sxs-lookup"><span data-stu-id="8fe46-107">If a calendar item is created without attendees, it is considered an appointment.</span></span> <span data-ttu-id="8fe46-108">Wenn Teilnehmer angegeben werden, handelt es sich beim Kalenderelement um eine Besprechung.</span><span class="sxs-lookup"><span data-stu-id="8fe46-108">If attendees are specified, the calendar item is a meeting.</span></span> <span data-ttu-id="8fe46-109">Wenn eine Besprechung mithilfe des CreateItem-Vorgangs erstellt wird, werden Besprechungsanfragen automatisch an die identifizierten Teilnehmer gesendet, wenn das SendMeetingInvitations-Attribut so festgelegt ist, dass die Besprechungsanfragen gesendet werden.</span><span class="sxs-lookup"><span data-stu-id="8fe46-109">When a meeting is created by using the CreateItem operation, meeting requests are automatically sent to the identified attendees if the SendMeetingInvitations attribute is set to send the meeting requests.</span></span>
+<span data-ttu-id="79b58-106">Mit dem CreateItem-Vorgang werden Termine, Besprechungen und Besprechungsanfragen erstellt.</span><span class="sxs-lookup"><span data-stu-id="79b58-106">The CreateItem operation creates appointments, meetings, and meeting requests.</span></span> <span data-ttu-id="79b58-107">Wenn ein Kalenderelement ohne Teilnehmer erstellt wird, wird es als Termin betrachtet.</span><span class="sxs-lookup"><span data-stu-id="79b58-107">If a calendar item is created without attendees, it is considered an appointment.</span></span> <span data-ttu-id="79b58-108">Wenn Teilnehmer angegeben werden, handelt es sich beim Kalenderelement um eine Besprechung.</span><span class="sxs-lookup"><span data-stu-id="79b58-108">If attendees are specified, the calendar item is a meeting.</span></span> <span data-ttu-id="79b58-109">Wenn eine Besprechung mithilfe des CreateItem-Vorgangs erstellt wird, werden Besprechungsanfragen automatisch an die identifizierten Teilnehmer gesendet, wenn das SendMeetingInvitations-Attribut so festgelegt ist, dass die Besprechungsanfragen gesendet werden.</span><span class="sxs-lookup"><span data-stu-id="79b58-109">When a meeting is created by using the CreateItem operation, meeting requests are automatically sent to the identified attendees if the SendMeetingInvitations attribute is set to send the meeting requests.</span></span>
   
-## <a name="createitem-calendar-item-request-example"></a><span data-ttu-id="8fe46-110">CreateItem (Calendar Item)-Anforderungs Beispiel</span><span class="sxs-lookup"><span data-stu-id="8fe46-110">CreateItem (Calendar Item) request example</span></span>
+## <a name="createitem-calendar-item-request-example"></a><span data-ttu-id="79b58-110">CreateItem (Calendar Item)-Anforderungs Beispiel</span><span class="sxs-lookup"><span data-stu-id="79b58-110">CreateItem (Calendar Item) request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="8fe46-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8fe46-111">Description</span></span>
+### <a name="description"></a><span data-ttu-id="79b58-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="79b58-111">Description</span></span>
 
-<span data-ttu-id="8fe46-112">Im folgenden Beispiel einer CreateItem-Anforderung wird gezeigt, wie Sie eine Besprechung mit zwei erforderlichen Teilnehmern erstellen.</span><span class="sxs-lookup"><span data-stu-id="8fe46-112">The following example of a CreateItem request shows how to create a meeting with two required attendees.</span></span> <span data-ttu-id="8fe46-113">Durch diese Anforderung werden die Besprechungsanfragen an die beiden Teilnehmer gesendet.</span><span class="sxs-lookup"><span data-stu-id="8fe46-113">This request will send the meeting requests to the two attendees.</span></span>
+<span data-ttu-id="79b58-112">Im folgenden Beispiel einer CreateItem-Anforderung wird gezeigt, wie Sie eine Besprechung mit zwei erforderlichen Teilnehmern erstellen.</span><span class="sxs-lookup"><span data-stu-id="79b58-112">The following example of a CreateItem request shows how to create a meeting with two required attendees.</span></span> <span data-ttu-id="79b58-113">Durch diese Anforderung werden die Besprechungsanfragen an die beiden Teilnehmer gesendet.</span><span class="sxs-lookup"><span data-stu-id="79b58-113">This request will send the meeting requests to the two attendees.</span></span>
   
-### <a name="code"></a><span data-ttu-id="8fe46-114">Code</span><span class="sxs-lookup"><span data-stu-id="8fe46-114">Code</span></span>
+### <a name="code"></a><span data-ttu-id="79b58-114">Code</span><span class="sxs-lookup"><span data-stu-id="79b58-114">Code</span></span>
 
 ```XML
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -77,57 +77,57 @@ ms.locfileid: "44457501"
 </soap:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="8fe46-115">Comments</span><span class="sxs-lookup"><span data-stu-id="8fe46-115">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="79b58-115">Comments</span><span class="sxs-lookup"><span data-stu-id="79b58-115">Comments</span></span>
 
-<span data-ttu-id="8fe46-116">Ein Beispiel dafür, wie Sie auf eine Besprechungsanfrage Antworten, finden Sie im Thema [CreateItem-Vorgang (Besprechungsanfrage)](createitem-operation-meeting-request.md) .</span><span class="sxs-lookup"><span data-stu-id="8fe46-116">For an example of how to respond to a meeting request, see the [CreateItem operation (meeting request)](createitem-operation-meeting-request.md) topic.</span></span> 
+<span data-ttu-id="79b58-116">Ein Beispiel dafür, wie Sie auf eine Besprechungsanfrage Antworten, finden Sie im Thema [CreateItem-Vorgang (Besprechungsanfrage)](createitem-operation-meeting-request.md) .</span><span class="sxs-lookup"><span data-stu-id="79b58-116">For an example of how to respond to a meeting request, see the [CreateItem operation (meeting request)](createitem-operation-meeting-request.md) topic.</span></span> 
   
-### <a name="request-elements"></a><span data-ttu-id="8fe46-117">Anfordern von Elementen</span><span class="sxs-lookup"><span data-stu-id="8fe46-117">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="79b58-117">Anfordern von Elementen</span><span class="sxs-lookup"><span data-stu-id="79b58-117">Request elements</span></span>
 
-<span data-ttu-id="8fe46-118">In der Anforderung werden folgende Elemente verwendet:</span><span class="sxs-lookup"><span data-stu-id="8fe46-118">The following elements are used in the request:</span></span>
+<span data-ttu-id="79b58-118">In der Anforderung werden folgende Elemente verwendet:</span><span class="sxs-lookup"><span data-stu-id="79b58-118">The following elements are used in the request:</span></span>
   
-- [<span data-ttu-id="8fe46-119">CreateItem</span><span class="sxs-lookup"><span data-stu-id="8fe46-119">CreateItem</span></span>](createitem.md)
+- [<span data-ttu-id="79b58-119">CreateItem</span><span class="sxs-lookup"><span data-stu-id="79b58-119">CreateItem</span></span>](createitem.md)
     
-- [<span data-ttu-id="8fe46-120">SavedItemFolderId</span><span class="sxs-lookup"><span data-stu-id="8fe46-120">SavedItemFolderId</span></span>](saveditemfolderid.md)
+- [<span data-ttu-id="79b58-120">SavedItemFolderId</span><span class="sxs-lookup"><span data-stu-id="79b58-120">SavedItemFolderId</span></span>](saveditemfolderid.md)
     
-- [<span data-ttu-id="8fe46-121">DistinguishedFolderId</span><span class="sxs-lookup"><span data-stu-id="8fe46-121">DistinguishedFolderId</span></span>](distinguishedfolderid.md)
+- [<span data-ttu-id="79b58-121">DistinguishedFolderId</span><span class="sxs-lookup"><span data-stu-id="79b58-121">DistinguishedFolderId</span></span>](distinguishedfolderid.md)
     
-- [<span data-ttu-id="8fe46-122">Elemente (NonEmptyArrayOfAllItemsType)</span><span class="sxs-lookup"><span data-stu-id="8fe46-122">Items (NonEmptyArrayOfAllItemsType)</span></span>](items-nonemptyarrayofallitemstype.md)
+- [<span data-ttu-id="79b58-122">Elemente (NonEmptyArrayOfAllItemsType)</span><span class="sxs-lookup"><span data-stu-id="79b58-122">Items (NonEmptyArrayOfAllItemsType)</span></span>](items-nonemptyarrayofallitemstype.md)
     
-- [<span data-ttu-id="8fe46-123">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="8fe46-123">CalendarItem</span></span>](calendaritem.md)
+- [<span data-ttu-id="79b58-123">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="79b58-123">CalendarItem</span></span>](calendaritem.md)
     
-- [<span data-ttu-id="8fe46-124">Betreff</span><span class="sxs-lookup"><span data-stu-id="8fe46-124">Subject</span></span>](subject.md)
+- [<span data-ttu-id="79b58-124">Betreff</span><span class="sxs-lookup"><span data-stu-id="79b58-124">Subject</span></span>](subject.md)
     
-- [<span data-ttu-id="8fe46-125">Body</span><span class="sxs-lookup"><span data-stu-id="8fe46-125">Body</span></span>](body.md)
+- [<span data-ttu-id="79b58-125">Body</span><span class="sxs-lookup"><span data-stu-id="79b58-125">Body</span></span>](body.md)
     
-- [<span data-ttu-id="8fe46-126">ReminderIsSet</span><span class="sxs-lookup"><span data-stu-id="8fe46-126">ReminderIsSet</span></span>](reminderisset.md)
+- [<span data-ttu-id="79b58-126">ReminderIsSet</span><span class="sxs-lookup"><span data-stu-id="79b58-126">ReminderIsSet</span></span>](reminderisset.md)
     
-- [<span data-ttu-id="8fe46-127">ReminderMinutesBeforeStart</span><span class="sxs-lookup"><span data-stu-id="8fe46-127">ReminderMinutesBeforeStart</span></span>](reminderminutesbeforestart.md)
+- [<span data-ttu-id="79b58-127">ReminderMinutesBeforeStart</span><span class="sxs-lookup"><span data-stu-id="79b58-127">ReminderMinutesBeforeStart</span></span>](reminderminutesbeforestart.md)
     
-- [<span data-ttu-id="8fe46-128">Start</span><span class="sxs-lookup"><span data-stu-id="8fe46-128">Start</span></span>](start.md)
+- [<span data-ttu-id="79b58-128">Start</span><span class="sxs-lookup"><span data-stu-id="79b58-128">Start</span></span>](start.md)
     
-- [<span data-ttu-id="8fe46-129">End</span><span class="sxs-lookup"><span data-stu-id="8fe46-129">End </span></span>](end-ex15websvcsotherref.md)
+- [<span data-ttu-id="79b58-129">End</span><span class="sxs-lookup"><span data-stu-id="79b58-129">End </span></span>](end-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="8fe46-130">IsAllDayEvent</span><span class="sxs-lookup"><span data-stu-id="8fe46-130">IsAllDayEvent</span></span>](isalldayevent.md)
+- [<span data-ttu-id="79b58-130">IsAllDayEvent</span><span class="sxs-lookup"><span data-stu-id="79b58-130">IsAllDayEvent</span></span>](isalldayevent.md)
     
-- [<span data-ttu-id="8fe46-131">LegacyFreeBusyStatus</span><span class="sxs-lookup"><span data-stu-id="8fe46-131">LegacyFreeBusyStatus</span></span>](legacyfreebusystatus.md)
+- [<span data-ttu-id="79b58-131">LegacyFreeBusyStatus</span><span class="sxs-lookup"><span data-stu-id="79b58-131">LegacyFreeBusyStatus</span></span>](legacyfreebusystatus.md)
     
-- [<span data-ttu-id="8fe46-132">Standort</span><span class="sxs-lookup"><span data-stu-id="8fe46-132">Location</span></span>](location.md)
+- [<span data-ttu-id="79b58-132">Standort</span><span class="sxs-lookup"><span data-stu-id="79b58-132">Location</span></span>](location.md)
     
-- [<span data-ttu-id="8fe46-133">RequiredAttendees</span><span class="sxs-lookup"><span data-stu-id="8fe46-133">RequiredAttendees</span></span>](requiredattendees.md)
+- [<span data-ttu-id="79b58-133">RequiredAttendees</span><span class="sxs-lookup"><span data-stu-id="79b58-133">RequiredAttendees</span></span>](requiredattendees.md)
     
-- [<span data-ttu-id="8fe46-134">Teilnehmer</span><span class="sxs-lookup"><span data-stu-id="8fe46-134">Attendee</span></span>](attendee.md)
+- [<span data-ttu-id="79b58-134">Teilnehmer</span><span class="sxs-lookup"><span data-stu-id="79b58-134">Attendee</span></span>](attendee.md)
     
-- [<span data-ttu-id="8fe46-135">Postfach</span><span class="sxs-lookup"><span data-stu-id="8fe46-135">Mailbox</span></span>](mailbox.md)
+- [<span data-ttu-id="79b58-135">Postfach</span><span class="sxs-lookup"><span data-stu-id="79b58-135">Mailbox</span></span>](mailbox.md)
     
-- [<span data-ttu-id="8fe46-136">EmailAddress (NonEmptyStringType)</span><span class="sxs-lookup"><span data-stu-id="8fe46-136">EmailAddress (NonEmptyStringType)</span></span>](emailaddress-nonemptystringtype.md)
+- [<span data-ttu-id="79b58-136">EmailAddress (NonEmptyStringType)</span><span class="sxs-lookup"><span data-stu-id="79b58-136">EmailAddress (NonEmptyStringType)</span></span>](emailaddress-nonemptystringtype.md)
     
-## <a name="successful-createitem-calendar-item-response"></a><span data-ttu-id="8fe46-137">Erfolgreiche CreateItem-Antwort (Kalenderelement)</span><span class="sxs-lookup"><span data-stu-id="8fe46-137">Successful CreateItem (Calendar Item) Response</span></span>
+## <a name="successful-createitem-calendar-item-response"></a><span data-ttu-id="79b58-137">Erfolgreiche CreateItem-Antwort (Kalenderelement)</span><span class="sxs-lookup"><span data-stu-id="79b58-137">Successful CreateItem (Calendar Item) Response</span></span>
 
-### <a name="description"></a><span data-ttu-id="8fe46-138">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8fe46-138">Description</span></span>
+### <a name="description"></a><span data-ttu-id="79b58-138">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="79b58-138">Description</span></span>
 
-<span data-ttu-id="8fe46-139">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateItem-Anforderung.</span><span class="sxs-lookup"><span data-stu-id="8fe46-139">The following example shows a successful response to the CreateItem request.</span></span>
+<span data-ttu-id="79b58-139">Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateItem-Anforderung.</span><span class="sxs-lookup"><span data-stu-id="79b58-139">The following example shows a successful response to the CreateItem request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="8fe46-140">Code</span><span class="sxs-lookup"><span data-stu-id="8fe46-140">Code</span></span>
+### <a name="code"></a><span data-ttu-id="79b58-140">Code</span><span class="sxs-lookup"><span data-stu-id="79b58-140">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -157,33 +157,33 @@ ms.locfileid: "44457501"
 </soap:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="8fe46-141">Comments</span><span class="sxs-lookup"><span data-stu-id="8fe46-141">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="79b58-141">Comments</span><span class="sxs-lookup"><span data-stu-id="79b58-141">Comments</span></span>
 
-<span data-ttu-id="8fe46-142">Die [ItemID](itemid.md) **-Element-ID** und das **ChangeKey** -Attribut wurden verkürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="8fe46-142">The [ItemId](itemid.md) element **Id** and **ChangeKey** attributes have been shortened to preserve readability.</span></span> 
+<span data-ttu-id="79b58-142">Die [ItemID](itemid.md) **-Element-ID** und das **ChangeKey** -Attribut wurden verkürzt, um die Lesbarkeit zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="79b58-142">The [ItemId](itemid.md) element **Id** and **ChangeKey** attributes have been shortened to preserve readability.</span></span> 
   
-### <a name="successful-response-elements"></a><span data-ttu-id="8fe46-143">Erfolgreiche Antwortelemente</span><span class="sxs-lookup"><span data-stu-id="8fe46-143">Successful response elements</span></span>
+### <a name="successful-response-elements"></a><span data-ttu-id="79b58-143">Erfolgreiche Antwortelemente</span><span class="sxs-lookup"><span data-stu-id="79b58-143">Successful response elements</span></span>
 
-<span data-ttu-id="8fe46-144">In der Antwort werden folgende Elemente verwendet:</span><span class="sxs-lookup"><span data-stu-id="8fe46-144">The following elements are used in the response:</span></span>
+<span data-ttu-id="79b58-144">In der Antwort werden folgende Elemente verwendet:</span><span class="sxs-lookup"><span data-stu-id="79b58-144">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="8fe46-145">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="8fe46-145">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="79b58-145">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="79b58-145">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="8fe46-146">CreateItemResponse</span><span class="sxs-lookup"><span data-stu-id="8fe46-146">CreateItemResponse</span></span>](createitemresponse.md)
+- [<span data-ttu-id="79b58-146">CreateItemResponse</span><span class="sxs-lookup"><span data-stu-id="79b58-146">CreateItemResponse</span></span>](createitemresponse.md)
     
-- [<span data-ttu-id="8fe46-147">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="8fe46-147">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="79b58-147">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="79b58-147">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="8fe46-148">CreateItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="8fe46-148">CreateItemResponseMessage</span></span>](createitemresponsemessage.md)
+- [<span data-ttu-id="79b58-148">CreateItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="79b58-148">CreateItemResponseMessage</span></span>](createitemresponsemessage.md)
     
-- [<span data-ttu-id="8fe46-149">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="8fe46-149">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="79b58-149">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="79b58-149">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="8fe46-150">Items</span><span class="sxs-lookup"><span data-stu-id="8fe46-150">Items</span></span>](items.md)
+- [<span data-ttu-id="79b58-150">Elemente</span><span class="sxs-lookup"><span data-stu-id="79b58-150">Items</span></span>](items.md)
     
-- [<span data-ttu-id="8fe46-151">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="8fe46-151">CalendarItem</span></span>](calendaritem.md)
+- [<span data-ttu-id="79b58-151">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="79b58-151">CalendarItem</span></span>](calendaritem.md)
     
-- [<span data-ttu-id="8fe46-152">ItemId</span><span class="sxs-lookup"><span data-stu-id="8fe46-152">ItemId</span></span>](itemid.md)
+- [<span data-ttu-id="79b58-152">ItemId</span><span class="sxs-lookup"><span data-stu-id="79b58-152">ItemId</span></span>](itemid.md)
     
-## <a name="see-also"></a><span data-ttu-id="8fe46-153">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="8fe46-153">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="79b58-153">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="79b58-153">See also</span></span>
 
 
 
-[<span data-ttu-id="8fe46-154">CreateItem-Vorgang</span><span class="sxs-lookup"><span data-stu-id="8fe46-154">CreateItem operation</span></span>](createitem-operation.md)
+[<span data-ttu-id="79b58-154">CreateItem-Vorgang</span><span class="sxs-lookup"><span data-stu-id="79b58-154">CreateItem operation</span></span>](createitem-operation.md)
 
