@@ -12,7 +12,7 @@ ms.openlocfilehash: fc2d9108c910a730bb48c5be028797f0f15ad4ad
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461793"
 ---
 # <a name="transport-agent-namespaces-in-exchange-2013"></a>Namespaces des Transport-Agents in Exchange 2013

@@ -16,7 +16,7 @@ ms.openlocfilehash: ec07700a5ebbdc8774aa2134919634b8dfd02406
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462178"
 ---
 # <a name="copyitem-operation"></a>CopyItem-Vorgang
@@ -124,7 +124,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Items](items.md)
+- [Elemente](items.md)
     
 Um andere Optionen für die Antwortnachricht des **CopyItem** -Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [CopyItemResponse](copyitemresponse.md) -Element. 
   
@@ -180,7 +180,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Items](items.md)
+- [Elemente](items.md)
     
 Weitere Optionen für die Fehlerantwort Meldung des **CopyItem** -Vorgangs finden Sie unter Durchsuchen der Schemahierarchie. Beginnen Sie mit dem [CopyItemResponse](copyitemresponse.md) -Element. 
   

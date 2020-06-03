@@ -16,7 +16,7 @@ ms.openlocfilehash: f1cc199bdaf684d8d74687ed7f064eb66fee48ff
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462584"
 ---
 # <a name="findfolder-operation"></a>FindFolder-Vorgang
@@ -153,7 +153,7 @@ Die Eigenschaften, die in der Antwort zurückgegeben werden, werden durch die [B
     
 - [Ordner](folders-ex15websvcsotherref.md)
     
-- [Folder](folder.md)
+- [Ordner](folder.md)
     
 - [FolderId](folderid.md)
     

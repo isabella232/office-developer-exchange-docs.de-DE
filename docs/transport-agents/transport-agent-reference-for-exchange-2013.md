@@ -12,7 +12,7 @@ ms.openlocfilehash: 8b05ac5904ac0525dce7245b98fc63e1ea6cefe1
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461779"
 ---
 # <a name="transport-agent-reference-for-exchange-2013"></a>Transport-Agent-Referenz für Exchange 2013

@@ -12,7 +12,7 @@ ms.openlocfilehash: 62fb259672c47242a57b939deb4887e1e5519e2a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461758"
 ---
 # <a name="transport-agents-in-exchange"></a>Transport-Agents in Exchange
@@ -46,7 +46,7 @@ Exchange 2013 enthält eine Bibliothek mit Klassen, die die Erweiterung des Exch
 ## <a name="see-also"></a>Siehe auch
 
 - [Exchange Online- und Exchange-Entwicklung](../exchange-server-development.md)    
-- [Erkunden von EWS Managed API, EWS und Webdiensten in Exchange](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)   
+- [Erkunden von verwalteter EWS-API, EWS und Webdiensten in Exchange](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)   
 - [Sicherung und Wiederherstellung für Exchange](../backup-restore/backup-and-restore-for-exchange-2013.md) 
     
 

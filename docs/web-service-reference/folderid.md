@@ -16,7 +16,7 @@ ms.openlocfilehash: 7aa5070fa7a2c51303c7159de04fe277f909a874
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461387"
 ---
 # <a name="folderid"></a>FolderId
@@ -53,7 +53,7 @@ Keine.
 |[ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) <br/> | Gibt den Ordner an, in dem ein neuer Ordner oder Element erstellt wird.  <br/><br/>  Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/>  <br/> `/CreateItem/ParentFolderId` <br/><br/>  `/CreateFolder/ParentFolderId` <br/> |
 |[BaseFolderIds](basefolderids.md) <br/> |Stellt die Auflistung von Ordnern dar, die abgebaut werden, um den Inhalt eines Suchordners zu bestimmen.  <br/> |
 |[Delete (FolderSync)](delete-foldersync.md) <br/> |Identifiziert einen einzelnen Ordner, der im lokalen Clientspeicher gelöscht werden soll.  <br/> |
-|[Folder](folder.md) <br/> |Stellt einen Ordner in einem Postfach dar.  <br/> |
+|[Ordner](folder.md) <br/> |Stellt einen Ordner in einem Postfach dar.  <br/> |
 |[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Kalenderordner in einem Postfach dar.  <br/> |
 |[FolderChange](folderchange.md) <br/> |Stellt eine Auflistung von Änderungen dar, die für einen einzelnen Ordner ausgeführt werden sollen.  <br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/UpdateFolder/FolderChanges/FolderChange` <br/> |
 |[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Kontaktordner in einem Postfach dar.  <br/> |

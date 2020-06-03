@@ -16,7 +16,7 @@ ms.openlocfilehash: 9258fd003c242911866aa7abbca5eba2b9582223
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462514"
 ---
 # <a name="getevents-operation"></a>GetEvents-Vorgang

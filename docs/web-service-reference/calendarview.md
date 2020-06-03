@@ -16,7 +16,7 @@ ms.openlocfilehash: e547a4b2db5c09ebefd9a072da6cc4733818002e
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462262"
 ---
 # <a name="calendarview"></a>CalendarView
@@ -97,7 +97,7 @@ CalendarView-Abfragen sollten nur die folgenden Eigenschaften verwenden, da Sie 
     
 ### <a name="calculated-from-the-primary-recurrence-blob-or-master"></a>Berechnet aus dem primären Serien-BLOB oder-Stamm
   
-- Itemid
+- ItemId
     
 - IsRecurring
     
@@ -204,5 +204,5 @@ Das folgende Beispiel zeigt eine FindItem-Anforderung. Bei einer erfolgreichen A
 ## <a name="see-also"></a>Siehe auch
 
 - [FindItem-Vorgang](finditem-operation.md)
-- [Finding Items](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+- [Suchen von Elementen](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

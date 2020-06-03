@@ -16,7 +16,7 @@ ms.openlocfilehash: 248047206a661afe723543e52c51b57847148423
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462577"
 ---
 # <a name="findfolder"></a>FindFolder
@@ -68,7 +68,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |[FolderShape](foldershape.md) <br/> |Gibt die Ordner Eigenschaften an, die in eine FindFolder-Antwort eingeschlossen werden sollen.  <br/> |
 |[IndexedPageFolderView](indexedpagefolderview.md) <br/> |Beschreibt, wie Informationen zum ausgelagerten Element in einer FindFolder-Antwort zurückgegeben werden. Dieses Element ist optional.  <br/> |
 |[FractionalPageFolderView](fractionalpagefolderview.md) <br/> |Beschreibt, wo die ausgelagerte Ansicht beginnt und wie viele Ordner in einer FindFolder-Anforderung maximal zurückgegeben werden. Dieses Element ist optional.  <br/> |
-|[Restriction](restriction.md) <br/> |Definiert eine Einschränkung oder Abfrage, die zum Filtern von Ordnern in einem FindFolder-Vorgang verwendet wird. Dieses Element ist optional.  <br/> |
+|[Einschränkung](restriction.md) <br/> |Definiert eine Einschränkung oder Abfrage, die zum Filtern von Ordnern in einem FindFolder-Vorgang verwendet wird. Dieses Element ist optional.  <br/> |
 |[ParentFolderIds](parentfolderids.md) <br/> |Identifiziert Ordner für den zu durchsuchenden FindFolder-Vorgang.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente

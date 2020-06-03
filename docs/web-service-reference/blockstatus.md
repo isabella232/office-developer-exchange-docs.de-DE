@@ -12,7 +12,7 @@ ms.openlocfilehash: e88236274bfa70216e872025c2a94231f837df1f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462276"
 ---
 # <a name="blockstatus"></a>BlockStatus

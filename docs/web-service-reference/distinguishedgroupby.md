@@ -16,7 +16,7 @@ ms.openlocfilehash: 004613d55419a19f69e960203ae13d8d906b74c8
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463139"
 ---
 # <a name="distinguishedgroupby"></a>DistinguishedGroupBy
@@ -71,5 +71,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 ## <a name="see-also"></a>Siehe auch
 
 - [FindItem-Vorgang](finditem-operation.md)
-- [Finding Items](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+- [Suchen von Elementen](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 
