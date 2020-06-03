@@ -16,12 +16,12 @@ ms.openlocfilehash: 10edc9809fd72f80c316de1c6688eaedec4f93df
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466150"
 ---
-# <a name="setuseroofsettingsrequest"></a><span data-ttu-id="a1e9b-103">SetUserOofSettingsRequest</span><span class="sxs-lookup"><span data-stu-id="a1e9b-103">SetUserOofSettingsRequest</span></span>
+# <a name="setuseroofsettingsrequest"></a><span data-ttu-id="ad333-103">SetUserOofSettingsRequest</span><span class="sxs-lookup"><span data-stu-id="ad333-103">SetUserOofSettingsRequest</span></span>
 
-<span data-ttu-id="a1e9b-104">Das **SetUserOofSettingsRequest** -Element enthält die Argumente, mit denen die Abwesenheit (Out of Office, OOF) Einstellungen eines Postfachbenutzers festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="a1e9b-104">The **SetUserOofSettingsRequest** element contains the arguments used to set a mailbox user's Out of Office (OOF) settings.</span></span> 
+<span data-ttu-id="ad333-104">Das **SetUserOofSettingsRequest** -Element enthält die Argumente, mit denen die Abwesenheit (Out of Office, OOF) Einstellungen eines Postfachbenutzers festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="ad333-104">The **SetUserOofSettingsRequest** element contains the arguments used to set a mailbox user's Out of Office (OOF) settings.</span></span> 
   
 ```xml
 <SetUserOofSettingsRequest>
@@ -30,33 +30,33 @@ ms.locfileid: "44466150"
 <SetUserOofSettingsRequest>
 ```
 
- <span data-ttu-id="a1e9b-105">**SetUserOofSettingsRequest**</span><span class="sxs-lookup"><span data-stu-id="a1e9b-105">**SetUserOofSettingsRequest**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="a1e9b-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="a1e9b-106">Attributes and elements</span></span>
+ <span data-ttu-id="ad333-105">**SetUserOofSettingsRequest**</span><span class="sxs-lookup"><span data-stu-id="ad333-105">**SetUserOofSettingsRequest**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="ad333-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="ad333-106">Attributes and elements</span></span>
 
-<span data-ttu-id="a1e9b-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="a1e9b-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="ad333-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="ad333-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="a1e9b-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="a1e9b-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="ad333-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="ad333-108">Attributes</span></span>
 
-<span data-ttu-id="a1e9b-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="a1e9b-109">None.</span></span>
+<span data-ttu-id="ad333-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="ad333-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="a1e9b-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a1e9b-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="ad333-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="ad333-110">Child elements</span></span>
 
-|<span data-ttu-id="a1e9b-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="a1e9b-111">**Element**</span></span>|<span data-ttu-id="a1e9b-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="a1e9b-112">**Description**</span></span>|
+|<span data-ttu-id="ad333-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="ad333-111">**Element**</span></span>|<span data-ttu-id="ad333-112">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="ad333-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="a1e9b-113">Postfach (Verfügbarkeit)</span><span class="sxs-lookup"><span data-stu-id="a1e9b-113">Mailbox (Availability)</span></span>](mailbox-availability.md) <br/> |<span data-ttu-id="a1e9b-114">Identifiziert den Postfachbenutzer für eine SetUserOofSettings-oder GetUserOofSettings-Anforderung.</span><span class="sxs-lookup"><span data-stu-id="a1e9b-114">Identifies the mailbox user for a SetUserOofSettings or GetUserOofSettings request.</span></span>  <br/> |
-|[<span data-ttu-id="a1e9b-115">UserOofSettings</span><span class="sxs-lookup"><span data-stu-id="a1e9b-115">UserOofSettings</span></span>](useroofsettings.md) <br/> |<span data-ttu-id="a1e9b-116">Gibt die Abwesenheitseinstellungen an.</span><span class="sxs-lookup"><span data-stu-id="a1e9b-116">Specifies the OOF settings.</span></span>  <br/> |
+|[<span data-ttu-id="ad333-113">Postfach (Verfügbarkeit)</span><span class="sxs-lookup"><span data-stu-id="ad333-113">Mailbox (Availability)</span></span>](mailbox-availability.md) <br/> |<span data-ttu-id="ad333-114">Identifiziert den Postfachbenutzer für eine SetUserOofSettings-oder GetUserOofSettings-Anforderung.</span><span class="sxs-lookup"><span data-stu-id="ad333-114">Identifies the mailbox user for a SetUserOofSettings or GetUserOofSettings request.</span></span>  <br/> |
+|[<span data-ttu-id="ad333-115">UserOofSettings</span><span class="sxs-lookup"><span data-stu-id="ad333-115">UserOofSettings</span></span>](useroofsettings.md) <br/> |<span data-ttu-id="ad333-116">Gibt die Abwesenheitseinstellungen an.</span><span class="sxs-lookup"><span data-stu-id="ad333-116">Specifies the OOF settings.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="a1e9b-117">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a1e9b-117">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="ad333-117">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="ad333-117">Parent elements</span></span>
 
-<span data-ttu-id="a1e9b-118">Keine.</span><span class="sxs-lookup"><span data-stu-id="a1e9b-118">None.</span></span>
+<span data-ttu-id="ad333-118">Keine.</span><span class="sxs-lookup"><span data-stu-id="ad333-118">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="a1e9b-119">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="a1e9b-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ad333-119">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="ad333-119">Remarks</span></span>
 
-<span data-ttu-id="a1e9b-120">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="a1e9b-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="ad333-120">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.</span><span class="sxs-lookup"><span data-stu-id="ad333-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="example"></a><span data-ttu-id="a1e9b-121">Beispiel</span><span class="sxs-lookup"><span data-stu-id="a1e9b-121">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ad333-121">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ad333-121">Example</span></span>
 
-<span data-ttu-id="a1e9b-122">Im folgenden Beispiel einer SetUserOofSettings-Anforderung wird eine Abwesenheitseinstellung für zehn Tage festgelegt.</span><span class="sxs-lookup"><span data-stu-id="a1e9b-122">The following example of a SetUserOofSettings request sets an OOF setting for ten days.</span></span>
+<span data-ttu-id="ad333-122">Im folgenden Beispiel einer SetUserOofSettings-Anforderung wird eine Abwesenheitseinstellung für zehn Tage festgelegt.</span><span class="sxs-lookup"><span data-stu-id="ad333-122">The following example of a SetUserOofSettings request sets an OOF setting for ten days.</span></span>
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -87,18 +87,18 @@ ms.locfileid: "44466150"
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a><span data-ttu-id="a1e9b-123">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="a1e9b-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="ad333-123">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="ad333-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="a1e9b-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="a1e9b-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="a1e9b-125">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="a1e9b-125">Schema Name</span></span>  <br/> |<span data-ttu-id="a1e9b-126">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="a1e9b-126">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="a1e9b-127">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="a1e9b-127">Validation File</span></span>  <br/> |<span data-ttu-id="a1e9b-128">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="a1e9b-128">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="a1e9b-129">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="a1e9b-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="a1e9b-130">False</span><span class="sxs-lookup"><span data-stu-id="a1e9b-130">False</span></span>  <br/> |
+|<span data-ttu-id="ad333-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="ad333-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="ad333-125">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="ad333-125">Schema Name</span></span>  <br/> |<span data-ttu-id="ad333-126">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="ad333-126">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="ad333-127">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="ad333-127">Validation File</span></span>  <br/> |<span data-ttu-id="ad333-128">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="ad333-128">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="ad333-129">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="ad333-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="ad333-130">False</span><span class="sxs-lookup"><span data-stu-id="ad333-130">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="a1e9b-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a1e9b-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ad333-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ad333-131">See also</span></span>
 
 
 
-[<span data-ttu-id="a1e9b-132">SetUserOofSettings-Vorgang</span><span class="sxs-lookup"><span data-stu-id="a1e9b-132">SetUserOofSettings operation</span></span>](setuseroofsettings-operation.md)
+[<span data-ttu-id="ad333-132">SetUserOofSettings-Vorgang</span><span class="sxs-lookup"><span data-stu-id="ad333-132">SetUserOofSettings operation</span></span>](setuseroofsettings-operation.md)
 

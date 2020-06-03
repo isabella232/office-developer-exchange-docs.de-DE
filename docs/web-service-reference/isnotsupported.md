@@ -16,56 +16,56 @@ ms.openlocfilehash: e2d0c506209978fd5e8702e0de6cddf2e9c4b7fa
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465835"
 ---
-# <a name="isnotsupported"></a><span data-ttu-id="c088b-103">IsNotSupported</span><span class="sxs-lookup"><span data-stu-id="c088b-103">IsNotSupported</span></span>
+# <a name="isnotsupported"></a><span data-ttu-id="afb82-103">IsNotSupported</span><span class="sxs-lookup"><span data-stu-id="afb82-103">IsNotSupported</span></span>
 
-<span data-ttu-id="c088b-104">Das **IsNotSupported** -Element gibt an, ob die Regel mithilfe der verwalteten Code-APIs nicht geändert werden kann.</span><span class="sxs-lookup"><span data-stu-id="c088b-104">The **IsNotSupported** element indicates whether the rule cannot be modified by using the managed code APIs.</span></span> 
+<span data-ttu-id="afb82-104">Das **IsNotSupported** -Element gibt an, ob die Regel mithilfe der verwalteten Code-APIs nicht geändert werden kann.</span><span class="sxs-lookup"><span data-stu-id="afb82-104">The **IsNotSupported** element indicates whether the rule cannot be modified by using the managed code APIs.</span></span> 
   
 ```XML
 <IsNotSupported/>
 ```
 
- <span data-ttu-id="c088b-105">**Boolescher Wert**</span><span class="sxs-lookup"><span data-stu-id="c088b-105">**Boolean**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="c088b-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="c088b-106">Attributes and elements</span></span>
+ <span data-ttu-id="afb82-105">**Boolescher Wert**</span><span class="sxs-lookup"><span data-stu-id="afb82-105">**Boolean**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="afb82-106">Attribute und Elemente</span><span class="sxs-lookup"><span data-stu-id="afb82-106">Attributes and elements</span></span>
 
-<span data-ttu-id="c088b-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="c088b-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="afb82-107">In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.</span><span class="sxs-lookup"><span data-stu-id="afb82-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="c088b-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="c088b-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="afb82-108">Attribute</span><span class="sxs-lookup"><span data-stu-id="afb82-108">Attributes</span></span>
 
-<span data-ttu-id="c088b-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="c088b-109">None.</span></span>
+<span data-ttu-id="afb82-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="afb82-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="c088b-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="c088b-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="afb82-110">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="afb82-110">Child elements</span></span>
 
-<span data-ttu-id="c088b-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="c088b-111">None.</span></span>
+<span data-ttu-id="afb82-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="afb82-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="c088b-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="c088b-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="afb82-112">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="afb82-112">Parent elements</span></span>
 
-|<span data-ttu-id="c088b-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="c088b-113">**Element**</span></span>|<span data-ttu-id="c088b-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="c088b-114">**Description**</span></span>|
+|<span data-ttu-id="afb82-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="afb82-113">**Element**</span></span>|<span data-ttu-id="afb82-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="afb82-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="c088b-115">Regel (RuleType)</span><span class="sxs-lookup"><span data-stu-id="c088b-115">Rule (RuleType)</span></span>](rule-ruletype.md) <br/> |<span data-ttu-id="c088b-116">Stellt eine Regel im Postfach des Benutzers dar.</span><span class="sxs-lookup"><span data-stu-id="c088b-116">Represents a rule in the user's mailbox.</span></span>  <br/> |
+|[<span data-ttu-id="afb82-115">Regel (RuleType)</span><span class="sxs-lookup"><span data-stu-id="afb82-115">Rule (RuleType)</span></span>](rule-ruletype.md) <br/> |<span data-ttu-id="afb82-116">Stellt eine Regel im Postfach des Benutzers dar.</span><span class="sxs-lookup"><span data-stu-id="afb82-116">Represents a rule in the user's mailbox.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="c088b-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="c088b-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="afb82-117">Textwert</span><span class="sxs-lookup"><span data-stu-id="afb82-117">Text value</span></span>
 
-<span data-ttu-id="c088b-118">Der Textwert **true** gibt an, dass die Regel nicht mithilfe der verwalteten Code-APIs geändert werden kann.</span><span class="sxs-lookup"><span data-stu-id="c088b-118">A text value of **true** indicates that the rule cannot be modified by using the managed code APIs.</span></span> <span data-ttu-id="c088b-119">Der Wert **false** gibt an, dass die Regel mithilfe der verwalteten Code-APIs geändert werden kann.</span><span class="sxs-lookup"><span data-stu-id="c088b-119">A value of **false** indicates that the rule can be modified by using the managed code APIs.</span></span> 
+<span data-ttu-id="afb82-118">Der Textwert **true** gibt an, dass die Regel nicht mithilfe der verwalteten Code-APIs geändert werden kann.</span><span class="sxs-lookup"><span data-stu-id="afb82-118">A text value of **true** indicates that the rule cannot be modified by using the managed code APIs.</span></span> <span data-ttu-id="afb82-119">Der Wert **false** gibt an, dass die Regel mithilfe der verwalteten Code-APIs geändert werden kann.</span><span class="sxs-lookup"><span data-stu-id="afb82-119">A value of **false** indicates that the rule can be modified by using the managed code APIs.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="c088b-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="c088b-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="afb82-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="afb82-120">Remarks</span></span>
 
-<span data-ttu-id="c088b-121">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="c088b-121">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="afb82-121">Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.</span><span class="sxs-lookup"><span data-stu-id="afb82-121">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="c088b-122">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="c088b-122">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="afb82-122">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="afb82-122">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="c088b-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="c088b-123">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="c088b-124">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="c088b-124">Schema Name</span></span>  <br/> |<span data-ttu-id="c088b-125">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="c088b-125">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="c088b-126">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="c088b-126">Validation File</span></span>  <br/> |<span data-ttu-id="c088b-127">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="c088b-127">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="c088b-128">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="c088b-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="c088b-129">True</span><span class="sxs-lookup"><span data-stu-id="c088b-129">True</span></span>  <br/> |
+|<span data-ttu-id="afb82-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="afb82-123">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="afb82-124">Name des Schemas</span><span class="sxs-lookup"><span data-stu-id="afb82-124">Schema Name</span></span>  <br/> |<span data-ttu-id="afb82-125">Nachrichtenschema</span><span class="sxs-lookup"><span data-stu-id="afb82-125">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="afb82-126">Überprüfungsdatei</span><span class="sxs-lookup"><span data-stu-id="afb82-126">Validation File</span></span>  <br/> |<span data-ttu-id="afb82-127">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="afb82-127">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="afb82-128">Leer kann sein</span><span class="sxs-lookup"><span data-stu-id="afb82-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="afb82-129">True</span><span class="sxs-lookup"><span data-stu-id="afb82-129">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="c088b-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="c088b-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="afb82-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="afb82-130">See also</span></span>
 
 
 
-- [<span data-ttu-id="c088b-131">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="c088b-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="afb82-131">EWS-XML-Elemente in Exchange</span><span class="sxs-lookup"><span data-stu-id="afb82-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
