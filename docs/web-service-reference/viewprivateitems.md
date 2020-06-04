@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 80b949ac-440c-4a01-b428-ebafb5b1b802
-description: Das ViewPrivateItems-Element gibt an, ob eine Stellvertretung Benutzer oder eine Client-Anwendung die Berechtigung zum Anzeigen von privaten Elemente im Postfach für den Prinzipal hat.
-ms.openlocfilehash: c35f24ae79e907424cb5cfb0efeec2307334ca12
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Das ViewPrivateItems-Element gibt an, ob ein Stellvertreter Benutzer oder eine Clientanwendung über die Berechtigung zum Anzeigen privater Elemente im Postfach des Prinzipals verfügt.
+ms.openlocfilehash: 4e1375f7c4a3c660cc5de885deff8d094250ca7b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839506"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44525969"
 ---
 # <a name="viewprivateitems"></a>ViewPrivateItems
 
-Das **ViewPrivateItems** -Element gibt an, ob eine Stellvertretung Benutzer oder eine Client-Anwendung die Berechtigung zum Anzeigen von privaten Elemente im Postfach für den Prinzipal hat. 
+Das **ViewPrivateItems** -Element gibt an, ob ein Stellvertreter Benutzer oder eine Clientanwendung über die Berechtigung zum Anzeigen privater Elemente im Postfach des Prinzipals verfügt. 
   
 ```XML
 <ViewPrivateItems>true | false</ViewPrivateItems>
 ```
 
- **Boolean**
+ **Boolescher Wert**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,22 +44,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Beauftragte Benutzer](delegateuser.md) <br/> |Identifiziert einen einzelnen Delegaten hinzufügen oder aktualisieren in einem Postfach.  <br/> |
-|[EffectiveRights](effectiverights.md) <br/> |Der Client Rechte basierend auf den berechtigungseinstellungen für das Element oder Ordner enthält. Dieses Element ist schreibgeschützt.  <br/> |
+|[DelegateUser](delegateuser.md) <br/> |Bezeichnet einen einzelnen Delegaten, der in einem Postfach hinzugefügt oder aktualisiert werden soll.  <br/> |
+|[EffectiveRights](effectiverights.md) <br/> |Enthält die Rechte des Clients basierend auf den Berechtigungseinstellungen für das Element oder den Ordner. Dieses Element ist schreibgeschützt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert **true** gibt an, dass die Stellvertretung oder Client private Elemente im Postfach des Prinzipals anzeigen kann. Der Wert **false** gibt an, dass private Elemente nicht zu einer Stellvertretung oder Client sichtbar sind. 
+Der Wert **true** gibt an, dass der Stellvertreter oder Client private Elemente im Postfach des Prinzipals anzeigen kann. Der Wert **false** gibt an, dass private Elemente für einen Stellvertreter oder Client nicht sichtbar sind. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
@@ -76,5 +76,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Hinzufügen von Stellvertretungen](http://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+[Hinzufügen von Stellvertretungen](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 
