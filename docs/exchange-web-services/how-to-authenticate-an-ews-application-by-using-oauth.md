@@ -1,20 +1,20 @@
 ---
-title: Authentifizieren einer EWS-Anwendung mithilfe von OAuth
+title: Authentifizieren einer EWS-Anwendung mit OAuth
 manager: sethgros
 ms.date: 05/17/2019
 ms.audience: Developer
 ms.assetid: 1d8d57f9-4df5-4f21-9bbb-a89e0e259052
 description: Erfahren Sie, wie Sie die OAuth-Authentifizierung mit ihren verwaltete EWS-API Anwendungen verwenden.
 localization_priority: Priority
-ms.openlocfilehash: e2bcb339ddac51b888660b6f982a8377591b1a29
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0375095faac918859354da026118ea4ccfd6792b
+ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528251"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45012566"
 ---
 <!-- markdownlint-disable MD025 -->
-# <a name="authenticate-an-ews-application-by-using-oauth"></a>Authentifizieren einer EWS-Anwendung mithilfe von OAuth
+# <a name="authenticate-an-ews-application-by-using-oauth"></a>Authentifizieren einer EWS-Anwendung mit OAuth
 <!-- markdownlint-enable MD025 -->
 
 Erfahren Sie, wie Sie die OAuth-Authentifizierung mit ihren verwaltete EWS-API Anwendungen verwenden.
@@ -62,7 +62,7 @@ Für die Verwendung von OAuth muss eine Anwendung über eine Anwendungs-ID verf�
 
 1. Wählen Sie **API-Berechtigungen** in der linken Navigationsleiste unter **Manage**aus. 
 
-1. Wählen Sie **Berechtigung hinzufügen**aus. Wählen Sie auf der Seite Berechtigungen für die **Anforderungs-API** unter **unterstützte Legacy-APIs** **Exchange** aus. 
+1. Wählen Sie **Berechtigung hinzufügen** aus. Wählen Sie auf der Seite Berechtigungen für die **Anforderungs-API** unter **unterstützte Legacy-APIs** **Exchange** aus. 
 
 1. Um Delegierte Berechtigungen zu verwenden, wählen Sie **Delegierte Berechtigungen** aus, und wählen Sie dann **EWS aus. AccessAsUser. all** unter **EWS**. Klicken Sie auf **Berechtigungen hinzufügen**. 
 
@@ -80,7 +80,7 @@ Führen Sie die folgenden zusätzlichen Schritte aus, um Anwendungsberechtigunge
 
 ## <a name="add-code-to-get-an-authentication-token"></a>Hinzufügen von Code zum Abrufen eines Authentifizierungstokens
 
-Die folgenden Codeausschnitte veranschaulichen die Verwendung der Microsoft-Authentifizierungsbibliothek zum Abrufen von Authentifizierungstoken für Delegierte Berechtigungen und Anwendungsberechtigungen. Bei diesen Codeausschnitten wird davon ausgegangen, dass die für die Authentifizierungsanforderung erforderlichen Informationen in der **app. config** -Datei der Anwendung gespeichert werden. Diese Beispiele enthalten keine Fehlerüberprüfung, siehe [Codebeispiele](#code-samples) für den vollständigen Code.
+Die folgenden Codeausschnitte veranschaulichen die Verwendung der Microsoft-Authentifizierungsbibliothek zum Abrufen von Authentifizierungstoken für Delegierte Berechtigungen und Anwendungsberechtigungen. Bei diesen Codeausschnitten wird davon ausgegangen, dass die für die Authentifizierungsanforderung erforderlichen Informationen in der **App.config** Datei der Anwendung gespeichert werden. Diese Beispiele enthalten keine Fehlerüberprüfung, siehe [Codebeispiele](#code-samples) für den vollständigen Code.
 
 ### <a name="delegated-permissions"></a>Delegierte Berechtigungen
 
@@ -114,7 +114,7 @@ var app = ConfidentialClientApplicationBuilder
 // The permission scope required for EWS access
 var ewsScopes = new string[] { "https://outlook.office.com/.default" };
 
-//Make the toekn request
+//Make the token request
 AuthenticationResult authResult = await app.AcquireTokenForClient(ewsScopes).ExecuteAsync();
 
 ```
@@ -279,7 +279,7 @@ namespace ews_oauth_samples
 }
 ```
 
-Für den Beispielcode in beiden Fällen ist eine **app. config-** Datei mit den folgenden Einträgen erforderlich:
+Für den Beispielcode in beiden Fällen ist eine **App.config** Datei mit den folgenden Einträgen erforderlich:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
