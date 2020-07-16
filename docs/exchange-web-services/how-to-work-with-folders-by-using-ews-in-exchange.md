@@ -6,18 +6,18 @@ ms.audience: Developer
 ms.assetid: 4b3eb746-74c4-42a0-aa2c-742c147f1871
 description: Erfahren Sie, wie Ordner mithilfe der verwalteten EWS-API oder EWS in Exchange erstellt, abgerufen, aktualisiert und gelöscht werden können.
 localization_priority: Priority
-ms.openlocfilehash: c09c0c76edda4af025a6ac7121fdf9ab9660fcab
-ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
+ms.openlocfilehash: a184d8da4d6949f01f47afc6a9fb7ed30729fd3b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45012545"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456381"
 ---
 # <a name="work-with-folders-by-using-ews-in-exchange"></a>Arbeiten mit Ordnern unter Verwendung von EWS in Exchange
 
 Erfahren Sie, wie Ordner mithilfe der verwalteten EWS-API oder EWS in Exchange erstellt, abgerufen, aktualisiert und gelöscht werden können.
   
-EWS in Exchange uses folders to structure and organize mailboxes. You can create new, get, update, and delete folders by using the EWS Managed API or EWS. Each of the methods or operations listed in the following table is performed on a [Folder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder%28v=exchg.80%29.aspx) object, a [Folder](https://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx) type, or [one of the derived folder classes or types](folders-and-items-in-ews-in-exchange.md#bk_folders).
+EWS in Exchange verwendet Ordner, um Postfächer zu strukturieren und zu organisieren. Mithilfe der EWS Managed API oder EWS können Sie neue Ordner erstellen und Ordner abrufen, aktualisieren und löschen. Jeder der in der folgenden Tabelle aufgeführten Methoden oder Vorgehensweisen wird in einem [Folder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder%28v=exchg.80%29.aspx)objekt, einem [Ordner](https://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx)-Typ oder [einer der abgeleiteten Ordnerklassen oder -typen](folders-and-items-in-ews-in-exchange.md#bk_folders) ausgeführt.
   
 **Tabelle 1. Methoden und Vorgänge für das Erstellen, Abrufen, Aktualisieren und Löschen von Ordnern**
 
@@ -34,11 +34,11 @@ EWS in Exchange uses folders to structure and organize mailboxes. You can create
 
 ## <a name="create-a-folder-by-using-the-ews-managed-api"></a>Erstellen eines Ordners mithilfe der verwalteten EWS-API
 
-The following code example shows how to use the [Folder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder%28v=exchg.80%29.aspx) class to create a new generic folder with a [DisplayName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.displayname%28v=exchg.80%29.aspx) of "Custom Folder" and a [FolderClass](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.folderclass%28v=exchg.80%29.aspx) property value of IPF.Note. The [Folder.Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.save%28v=exchg.80%29.aspx) method saves the folder as a child folder of the Inbox folder. 
+Im folgenden Codebeispiel wird veranschaulicht, wie mithilfe der [Folder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder%28v=exchg.80%29.aspx)-Klasse ein neuer allgemeiner Ordner mit dem [DisplayName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.displayname%28v=exchg.80%29.aspx) "Benutzerdefinierter Ordner" und dem [FolderClass](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.folderclass%28v=exchg.80%29.aspx)-Eigenschaftswert "IPF.Note" erstellt wird. Die [Folder.Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.save%28v=exchg.80%29.aspx)-Methode speichert den Ordner als untergeordneten Ordner des Posteingangsordners. 
   
 In diesen Beispielen wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
   
-```csharp
+```cs
 // Create a custom folder.
 Folder folder = new Folder(service);
 folder.DisplayName = "Custom Folder";
@@ -47,9 +47,9 @@ folder.FolderClass = "IPF.Note";
 folder.Save(WellKnownFolderName.Inbox);
 ```
 
-To create a different type of folder, such as a [CalendarFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.calendarfolder%28v=exchg.80%29.aspx), [ContactsFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contactsfolder%28v=exchg.80%29.aspx), [SearchFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx), or [TasksFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx), create a new instance of the specific class (instead of the generic **Folder** class) and do not set the **FolderClass** property. For example, the following code example shows how to create a new [TasksFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx).
+Um einen anderen Ordnertyp zu erstellen, z. B. [CalendarFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.calendarfolder%28v=exchg.80%29.aspx), [ContactsFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contactsfolder%28v=exchg.80%29.aspx), [SearchFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx) oder [TasksFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx), erstellen Sie eine neue Instaz der angegebenen Klasse (anstelle der generischen **Folder** -Klasse) und legen die **FolderClass** -Eigenschaft nicht fest. Im folgenden Codebeispiel wird beispielsweise gezeigt, wie ein neuer [TasksFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx) erstellt wird.
   
-```csharp
+```cs
 // Create a custom Tasks folder.
 TasksFolder folder = new TasksFolder(service);
 folder.DisplayName = "Custom Tasks";
@@ -67,11 +67,11 @@ Beachten Sie, dass Sie die Erstellung mehrerer Ordner in einem einzigen Methoden
 
 Sie können einen einzelnen Ordner oder mehrere Ordner mithilfe von EWS erstellen.
   
-To create a single folder, send a [CreateFolder](https://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx) operation request message. The **CreateFolder** operation request indicates that the parent folder is the Inbox, the [DisplayName](https://msdn.microsoft.com/library/e7efbbe1-6629-4d11-bed1-ed899e3f9d77%28Office.15%29.aspx) is "Custom Folder", and the [FolderClass](https://msdn.microsoft.com/library/0041d135-2869-4612-89a5-d1aa86aa1093%28Office.15%29.aspx) element value is IPF.Note. 
+Um einen einzelnen Ordner zu erstellen, senden Sie eine [CreateFolder](https://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx)-Vorgangsanforderungsnachricht. Die **CreateFolder**-Vorgangsanforderung gibt an, dass der übergeordnete Ordner der Posteingang, der [DisplayName](https://msdn.microsoft.com/library/e7efbbe1-6629-4d11-bed1-ed899e3f9d77%28Office.15%29.aspx) "Benutzerdefinierter Ordner" und der [FolderClass](https://msdn.microsoft.com/library/0041d135-2869-4612-89a5-d1aa86aa1093%28Office.15%29.aspx)-Elementwert "IPF.Note" ist. 
   
 Dies ist auch die XML-Anforderung, die EWS Managed API sendet, wenn Sie einen neuen Ordner erstellen und die [Folder.Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.save%28v=exchg.80%29.aspx)-Methode aufrufen. 
   
-```xml
+```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
@@ -98,12 +98,12 @@ Dies ist auch die XML-Anforderung, die EWS Managed API sendet, wenn Sie einen ne
 
 Der Server antwortet auf die **CreateFolder**-Anforderung mit einer [CreateFolderResponse](https://msdn.microsoft.com/library/158adecc-491a-47d9-af73-acc2cd3f8566%28Office.15%29.aspx)-Nachricht, die den [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx)-Wert **NoError** umfasst, der angibt, dass der Ordner erfolgreich erstellt wurde, sowie die [FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) der neu erstellten Nachricht. 
   
-To create multiple folders, include multiple [Folder](https://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx) elements in the **CreateFolder** operation request message. All the new folders must be in the same parent folder. 
+Um mehrere Ordner zu erstellen, schließen Sie mehrere [Folder](https://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx)-Elemente in die **CreateFolder**-Vorgangsanforderungsnachricht ein. Alle neuen Ordner müssen sich in demselben übergeordneten Ordner befinden. 
   
 ## <a name="create-a-folder-hierarchy-by-using-ews"></a>Erstellen einer Ordnerhierarchie mithilfe von EWS
 <a name="bk_createfolderhierarchy"> </a>
 
-You can create a folder hierarchy in a single call by using the EWS [CreateFolderPath](https://msdn.microsoft.com/library/5a10aa5e-3f25-4ec3-a0b9-284c30918a1f%28Office.15%29.aspx) operation. The same functionality is not available in the EWS Managed API. Instead, if you are using the EWS Managed API, you can create folders one by one, as shown in [Create a folder by using EWS](#bk_createfolderews).
+Mithilfe des [CreateFolderPath](https://msdn.microsoft.com/library/5a10aa5e-3f25-4ec3-a0b9-284c30918a1f%28Office.15%29.aspx)-Vorgangs in EWS können Sie mit einem einzigen Aufruf eine Ordnerhierarchie erstellen. Die gleiche Funktionalität ist in derEWS Managed API nicht verfügbar. Wenn Sie die EWS Managed API verwenden, können Sie stattdessen Ordner nacheinander erstellen, wie in [Erstellen eines Ordners mithilfe von EWS](#bk_createfolderews) dargestellt.
   
 > [!NOTE]
 > Die verwaltete EWS-API implementiert diese Funktion nicht. 
@@ -111,11 +111,11 @@ You can create a folder hierarchy in a single call by using the EWS [CreateFolde
 ## <a name="get-a-folder-by-using-the-ews-managed-api"></a>Abrufen eines Ordners mithilfe der EWS Managed API
 <a name="bk_getfolderewsma"> </a>
 
-The following code example shows how to use the [Folder.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) method to get the Inbox folder. As a best practice, limit the properties returned to only those required for your application. This example limits the return properties to only include the [Id](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.id%28v=exchg.80%29.aspx) property by creating a [PropertySet](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) object and applying the [IdOnly](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.basepropertyset%28v=exchg.80%29.aspx) value to the [BasePropertySet](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset.basepropertyset%28v=exchg.80%29.aspx) property. 
+Im folgenden Codebeispiel wird veranschaulicht, wie mithilfe der [Folder.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx)-Methode der Posteingangsordner abgerufen werden kann. Es hat sich bewährt, die zurückgegebenen Eigenschaften auf die für die Anwendung erforderlichen einzuschränken. In diesem Beispiel werden die zurückgegebenen Eigenschaften so eingeschränkt, dass nur die [Id](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.id%28v=exchg.80%29.aspx)-Eigenschaft durch Erstellen eines [PropertySet](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx)-Objekts und das Anwenden des [IdOnly](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.basepropertyset%28v=exchg.80%29.aspx)-Werts auf die [BasePropertySet](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset.basepropertyset%28v=exchg.80%29.aspx)-Eigenschaft eingeschlossen wird. 
   
 In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
   
-```csharp
+```cs
 // As a best practice, limit the properties returned to only those that are required.
 // In this scenario, you only need the FolderId.
 PropertySet propSet = new PropertySet(BasePropertySet.IdOnly);
@@ -126,20 +126,20 @@ Folder rootfolder = Folder.Bind(service, WellKnownFolderName.Inbox, propSet);
 
 Wenn zusätzliche Eigenschaften zurückgegeben werden sollen, fügen Sie Eigenschaften aus der [FolderSchema](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderschema%28v=exchg.80%29.aspx)-Klasse zu **PropertySet** hinzu, oder verwenden Sie eine der überladenen [Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx)-Methoden, die alle Eigenschaften der ersten Klasse zurückgeben. 
   
-Note that you cannot get multiple folders at one time by using the EWS Managed API. You have to call the **Bind** method on each folder separately. 
+Beachten Sie, dass Sie mit der EWS Managed API nicht mehrere Ordner gleichzeitig abrufen können. Sie müssen die **Bind** -Methode in jedem Ordner separat aufrufen. 
   
 ## <a name="get-a-folder-by-using-ews"></a>Abrufen eines Ordners mithilfe von EWS
 <a name="bk_getfolderews"> </a>
 
 Sie können einen einzelnen Ordner oder mehrere Ordner mithilfe von EWS abrufen.
   
-To get a single folder, send a [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) operation request message to the server. In the following example, the [BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) is set to **IdOnly**, so only the [FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) of the specified folder is returned. The [FolderIds](https://msdn.microsoft.com/library/3ff9d15a-7220-4785-ae6b-583a7eb82005%28Office.15%29.aspx) element indicates that the folder to retrieve is the Inbox folder. 
+Um einen einzelnen Ordner abzurufen, senden Sie eine [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)-Vorgangsanforderungsnachricht an den Server. Im folgenden Beispiel wird [BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) auf **IdOnly** festgelegt, es wird also nur die [FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) des angegebenen Ordners zurückgegeben. Das [FolderIds](https://msdn.microsoft.com/library/3ff9d15a-7220-4785-ae6b-583a7eb82005%28Office.15%29.aspx)-Element gibt an, dass der abzurufende Ordner der Posteingangsordner ist. 
   
 Dies ist auch die XML-Anforderung, die EWS Managed API sendet, wenn Sie mithilfe der [Folder.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx)-Methode eine Bindung an einen Ordner erstellen. 
   
 Um mehrere Ordner zu abzurufen, schließen Sie mehrere [FolderIds](https://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx)-Elemente in die **GetFolder**-Vorgangsanforderungsnachricht ein. 
   
-```xml
+```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
@@ -158,9 +158,9 @@ Um mehrere Ordner zu abzurufen, schließen Sie mehrere [FolderIds](https://msdn.
 </soap:Envelope>
 ```
 
-The following XML example shows the [GetFolderResponse](https://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx) message that is sent from the server to the client in response to the **GetFolder** operation request. It only contains the [FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) value of the Inbox folder. The values of some attributes and elements have been shortened for readability. 
+Das folgende XML-Beispiel zeigt die [GetFolderResponse](https://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx)-Nachricht, die vom Server an den Client als Antwort auf die **GetFolder**-Vorgangsanforderung gesendet wird. Sie enthält nur den [FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx)-Wert für den Ordner "Posteingang". Die Werte für einige Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt. 
   
-```xml
+```XML
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
@@ -196,13 +196,13 @@ The following XML example shows the [GetFolderResponse](https://msdn.microsoft.c
 ## <a name="get-a-folder-hierarchy-by-using-the-ews-managed-api"></a>Abrufen einer Ordnerhierarchie mithilfe der EWS Managed API
 <a name="bk_getfolderhierarchyewsma"> </a>
 
-The following code example shows how to retrieve the subfolders for a specified root folder. This example retrieves the subfolders of the **MsgFolderRoot** folder, which is the root of the IPM Subtree (where your mailbox folders and items are stored). 
+Im folgenden Codebeispiel wird gezeigt, wie die Unterordner für einen bestimmten Stammordner abgerufen werden. In diesem Beispiel werden die Unterordner des **MsgFolderRoot**-Ordners abgerufen, der der Stamm der IMP-Unterstruktur ist (in der Postfachordner und -elemente gespeichert sind). 
   
-In this example, a [FolderView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderview%28v=exchg.80%29.aspx) class object is created to limit the results of the [Folder.FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx) method response. This scenario limits the properties to return to the following: [Id](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.id%28v=exchg.80%29.aspx), [DisplayName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.displayname%28v=exchg.80%29.aspx), and the extended property that indicates whether the folder is a hidden folder. Set the [FolderView.Traversal](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderview.traversal%28v=EXCHG.80%29.aspx) value to Deep to perform a recursive search so that the server retrieves the subfolders, and set the root folder to **MsgFolderRoot**, so that the server returns all the user's folders (and the server does not return system folders in the Non-IPM Subtree).
+In diesem Beispiel wird ein [FolderView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderview%28v=exchg.80%29.aspx)-Klassenobjekt erstellt, um die Ergebnisse der [Folder.FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)-Methodenantwort einzuschränken. Durch dieses Szenario werden die Eigenschaften so eingeschränkt, dass Folgendes zurückgegeben wird: [Id](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.id%28v=exchg.80%29.aspx), [DisplayName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.displayname%28v=exchg.80%29.aspx) und die erweiterte Eigenschaft, die angibt, ob der Ordner ein ausgeblendeter Ordner ist. Legen Sie den [FolderView.Traversal](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderview.traversal%28v=EXCHG.80%29.aspx)-Wert auf "Deep" fest, um eine rekursive Suche auszuführen, sodass der Server die Unterordner abruft, und legen Sie den Stammordner auf **MsgFolderRoot** fest, damit der Server alle Ordner des Benutzers zurückgibt (und der Server keine Systemordner in der Nicht-IPM-Unterstruktur zurückgibt).
   
 In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
   
-```csharp
+```XML
 // Create a new folder view, and pass in the maximum number of folders to return.
 FolderView view = new FolderView(folderViewSize);
 // Create an extended property definition for the PR_ATTR_HIDDEN property,
@@ -222,11 +222,11 @@ FindFoldersResults findFolderResults = service.FindFolders(WellKnownFolderName.M
 ## <a name="get-a-folder-hierarchy-by-using-ews"></a>Abrufen einer Ordnerhierarchie mithilfe von EWS
 <a name="bk_getfolderhierarchyews"> </a>
 
-The following XML examples show how to use the [FindFolder](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) operation to retrieve a folder hierarchy by using EWS. This example retrieves the **msgfolderroot** folder, which is the root of the IPM Subtree, and all its subfolders. The **Traversal** attribute is set to **Deep** so that the server performs a recursive search of the folder hierarchy and only returns folders and subfolders under the specified root in the response. In this example, the [BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) element is set to **IdOnly** so that the server only returns the [FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) element. To make the output easier to understand, include the **DisplayName** element in your results by including it in the [AdditionalProperties](https://msdn.microsoft.com/library/7a269aed-dcfd-4c3e-9e14-094e53828101%28Office.15%29.aspx) element in the request, along with the **ExtendedFieldURI** value for the **PR_ATTR_HIDDEN** property, so that you know whether the folders are hidden folders. 
+In den folgenden XML-Beispielen wird veranschaulicht, wie der [FindFolder](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)-Vorgang zum Abrufen einer Ordnerhierarchie mithilfe von EWS verwendet wird. In diesem Beispiel werden der **msgfolderroot**-Ordner, der der Stamm der IPM-Unterstruktur ist, sowie alle Unterordner abgerufen. Das **Traversal**-Attribut wird auf **Deep** festgelegt, sodass der Server eine rekursive Suche der Ordnerhierarchie ausführt und nur Ordner und Unterordner unter dem angegebenen Stamm in der Antwort zurückgibt. In diesem Beispiel ist das [BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx)-Element auf **IdOnly** festgelegt, sodass der Server nur das [FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx)-Element zurückgibt. Um die Ausgabe leichter verständlich zu machen, schließen Sie das **DisplayName**-Element in Ihre Ergebnisse mit ein, indem Sie dieses in das [AdditionalProperties](https://msdn.microsoft.com/library/7a269aed-dcfd-4c3e-9e14-094e53828101%28Office.15%29.aspx)-Element in der Anforderung zusammen mit dem **ExtendedFieldURI**-Wert für die **PR_ATTR_HIDDEN** -Eigenschaft einschließen, sodass Sie wissen, ob die Ordner ausgeblendete Ordner sind. 
   
 Dies ist auch die XML-Anforderung, die EWS Managed API sendet, wenn Sie die [FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)-Methode aufrufen. 
   
-```xml
+```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
@@ -256,11 +256,11 @@ Dies ist auch die XML-Anforderung, die EWS Managed API sendet, wenn Sie die [Fin
 </soap:Envelope>
 ```
 
-The following XML example shows the [FindFolderResponse](https://msdn.microsoft.com/library/f5dd813c-9698-4a39-8fca-3a825df365ed%28Office.15%29.aspx) message that is sent from the server to the client in response to the **FindFolder** operation request. It contains only the [FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx), the [DisplayName](https://msdn.microsoft.com/library/e7efbbe1-6629-4d11-bed1-ed899e3f9d77%28Office.15%29.aspx), and the value of the **PR_ATTR_HIDDEN** extended property for all the subfolders under the **msgrootfolder** folder. If the [Value](https://msdn.microsoft.com/library/9a30cadd-909e-41b1-b4e9-291643dd89c6%28Office.15%29.aspx) element is set to true, the folder should be hidden in the client view. 
+Das folgende XML-Beispiel zeigt die [FindFolderResponse](https://msdn.microsoft.com/library/f5dd813c-9698-4a39-8fca-3a825df365ed%28Office.15%29.aspx)-Nachricht, die vom Server an den Client als Antwort auf die **FindFolder**-Vorgangsanforderung gesendet wird. Sie enthält nur die[FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx), den [DisplayName](https://msdn.microsoft.com/library/e7efbbe1-6629-4d11-bed1-ed899e3f9d77%28Office.15%29.aspx) und den Wert der erweiterten **PR_ATTR_HIDDEN** -Eigenschaft für alle Unterordner unter dem **msgrootfolder**-Ordner. Wenn das [Value](https://msdn.microsoft.com/library/9a30cadd-909e-41b1-b4e9-291643dd89c6%28Office.15%29.aspx)-Element auf "true" festgelegt ist, wird der Ordner in der Clientansicht ausgeblendet. 
   
-This is also the XML response that the EWS Managed API sends when you get multiple folders by using the [FindFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx) method. The values of some attributes and elements have been shortened for readability, and some folders have not been included for brevity. 
+Dies ist auch die XML-Antwort, die die EWS Managed API sendet, wenn Sie mehrere Ordner mithilfe der [FindFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)-Methode abrufen. Die Werte für einige Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt, und einige Ordner wurden aus Platzgründen nicht eingeschlossen. 
   
-```xml
+```XML
 <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
@@ -339,9 +339,9 @@ This is also the XML response that the EWS Managed API sends when you get multip
 
 Im folgenden Codebeispiel wird veranschaulicht, wie der Anzeigename eines Ordners mithilfe der EWS Managed API aktualisiert wird.
   
-First, create a [PropertySet](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) to limit the number of properties that the server returns in the [Folder.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) response. We recommend that you use the **IdOnly** **BasePropertySet** to reduce calls to the Exchange database. Next, use the **Bind** method to bind to the folder to update. Then, update the [DisplayName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.displayname%28v=exchg.80%29.aspx) property, and use the [Folder.Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx) method to save the changes. 
+Erstellen Sie zuerst einen [PropertySet](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx), um die Anzahl von Eigenschaften einzuschränken, die der Server in der [Folder.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx)-Antwort zurückgibt. Es wird empfohlen, dass Sie **IdOnly** **BasePropertySet** verwenden, um die Aufrufe der Exchange-Datenbank zu reduzieren. Verwenden Sie anschließend die **Bind** -Methode, um eine Bindung an den zu aktualisierenden Ordner herzustellen. Aktualisieren Sie dann die [DisplayName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.displayname%28v=exchg.80%29.aspx)-Eigenschaft, und verwenden Sie die [Folder.Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx)-Methode, um die Änderungen zu speichern. 
   
-In this example, we assume that **service** is a valid [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) object and that the user has been authenticated to an Exchange server. The local variable  *folderId*  is the [Id](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.id%28v=exchg.80%29.aspx) of the folder to update. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und dass der Benutzer für einen Exchange-Server authentifiziert wurde. Die lokale Variable  *folderId*  ist die [ID](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.id%28v=exchg.80%29.aspx) des zu aktualisierenden Ordners. 
   
 ```cs
 // As a best practice, only include the ID value in the PropertySet.
@@ -364,11 +364,11 @@ In den folgenden XML-Beispielen wird veranschaulicht, wie der Anzeigename eines 
   
 Senden Sie zunächst eine [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)-Vorgangsanforderungsnachricht an den zu aktualisierenden Ordner, wie in [Abrufen einer Ordnerhierarchie mithilfe von EWS](#bk_getfolderhierarchyews) dargestellt.
   
-Next, send an [UpdateFolder](https://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) operation request message to the server to update a folder. The **UpdateFolder** operation request updates the [DisplayName](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) to "Updated Custom Folder". 
+Senden Sie dann eine [UpdateFolder](https://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx)-Vorgangsanforderungsnachricht an den Server, um einen Ordner zu aktualisieren. Die **UpdateFolder**-Vorgangsanforderung aktualisiert den [DisplayName](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) in "Aktualisierten benutzerdefinierten Ordner". 
   
-This is also the XML request that the EWS Managed API sends when you update a folder by using the [Folder.Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx) method. The values of some attributes and elements have been shortened for readability. 
+Dies ist auch die XML-Anforderung, die die EWS Managed API sendet, wenn Sie einen Ordner mithilfe der [Folder.Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx)-Methode aktualisieren. Die Werte einiger Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt. 
   
-```xml
+```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
@@ -399,11 +399,11 @@ Der Server antwortet auf die **UpdateFolder**-Anforderung mit einer [UpdateFolde
 ## <a name="delete-a-folder-by-using-the-ews-managed-api"></a>Löschen eines Ordners mithilfe der EWS Managed API
 <a name="bk_deletefolderewsma"> </a>
 
-This article provides a basic example that shows you how to delete a folder by using the EWS Managed API. For more details about deleting folders, see [Deleting items by using EWS in Exchange](deleting-items-by-using-ews-in-exchange.md).
+Dieser Artikel enthält ein einfaches Beispiel, in dem gezeigt wird, wie ein Ordner mithilfe der EWS Managed API gelöscht wird. Weitere Informationen zum Löschen von Ordnern finden Sie unter [Löschen von Elementen mithilfe von EWS in Exchange](deleting-items-by-using-ews-in-exchange.md).
   
-To delete a folder by using the EWS Managed API, first, use the [Folder.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) method to bind to the service object to the folder to delete. Next, use the [Folder.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx) method to delete the folder by using the [HardDelete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.deletemode%28v=exchg.80%29.aspx) deletion mode. 
+Um einen Ordner mithilfe der EWS Managed API zu löschen, verwenden Sie zuerst die [Folder.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx)-Methode, um das Dienstobjekt an den zu löschenden Ordner zu binden. Verwenden Sie dann die [Folder.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx)-Methode, um den Ordner mithilfe des [HardDelete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.deletemode%28v=exchg.80%29.aspx)-Löschmodus zu löschen. 
   
-This example assumes that **service** is a valid [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) object and that the user has been authenticated to an Exchange server. The local variable  *folderId*  is the [Id](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.id%28v=exchg.80%29.aspx) of the folder to delete. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt istund der Benutzer bei einem Exchange-Server authentifiziert wurde. Die lokale Variable  *folderId*  ist die [Id](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.id%28v=exchg.80%29.aspx) des zu löschenden Ordners. 
   
 ```cs
 // Bind to an existing folder and get all its properties.
@@ -417,15 +417,15 @@ folder.Delete(DeleteMode.HardDelete);
 ## <a name="delete-a-folder-by-using-ews"></a>Löschen eines Ordners mithilfe von EWS
 <a name="bk_deletefolderews"> </a>
 
-This article provides a basic XML example that shows you how to delete a folder by using EWS. For more details about deleting folders, see [Deleting items by using EWS in Exchange](deleting-items-by-using-ews-in-exchange.md).
+Dieser Artikel enthält ein einfaches Beispiel, in dem gezeigt wird, wie ein Ordner mithilfe von EWS gelöscht wird. Weitere Informationen zum Löschen von Ordnern finden Sie unter [Löschen von Elementen mithilfe von EWS in Exchange](deleting-items-by-using-ews-in-exchange.md).
   
 Um einen Ordner mit EWS zu löschen, senden Sie zuerst eine [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)-Vorgangsanforderungsnachricht, damit der Ordner wie in [Abrufen eines Ordners mithilfe von EWS](#bk_getfolderews) gezeigt aktualisiert wird. 
   
-Next, send a [DeleteFolder](https://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx) operation request message to the server to delete the folder. The **DeleteFolder** operation request indicates that the **DeleteType** is **HardDelete** and it includes the [FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) of the folder to delete. 
+Senden Sie als Nächstes eine [DeleteFolder](https://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx)-Vorgangsanforderungsnachricht an den Server, um den Ordner zu löschen. Die **DeleteFolder**-Vorgangsanforderung gibt an, dass der **DeleteType** **HardDelete** ist und die [FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) des zu löschenden Ordners umfasst. 
   
-This is also the XML request that the EWS Managed API sends when you delete a folder by using the [Folder.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx) method. The values of some attributes and elements have been shortened for readability. 
+Dies ist auch die XML-Antwort, die die EWS Managed API sendet, wenn Sie einen Ordner mithilfe der [Folder.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx)-Methode löschen. Die Werte für einige Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt, und einige Ordner wurden aus Platzgründen nicht eingeschlossen. 
   
-```xml
+```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 

@@ -4,12 +4,12 @@ description: Erfahren Sie, wie Sie die OAuth-Authentifizierung mit ihren IMAP-, 
 author: svpsiva
 ms.date: 02/19/2020
 ms.audience: Developer
-ms.openlocfilehash: f83a932790cde558e741ece1e87403103aff18fd
-ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
+ms.openlocfilehash: fbe4eaefc5befcc173096c9b8526adebf74a0aad
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45012559"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44438436"
 ---
 # <a name="authenticate-an-imap-pop-or-smtp-connection-using-oauth"></a>Authentifizieren einer IMAP-, Pop-oder SMTP-Verbindung mit OAuth
 
@@ -91,10 +91,6 @@ Nach Base64-Codierung wird dies in die folgende Zeichenfolge übersetzt. Beachte
 dXNlcj10ZXN0QGNvbnRvc28ub25taWNyb3NvZnQuY29tAWF1dGg9QmVhcmVy
 IEV3QkFBbDNCQUFVRkZwVUFvN0ozVmUwYmpMQldaV0NjbFJDM0VvQUEBAQ==
 ```
-
-### <a name="sasl-xoauth2-authentication-for-shared-mailboxes-in-office-365"></a>SASL XOAUTH2-Authentifizierung für freigegebene Postfächer in Office 365
-
-Für den Zugriff auf freigegebene Postfächer mithilfe von OAuth muss die Anwendung das Zugriffstoken im Namen eines Benutzers abrufen, aber das Benutzername-Feld in der codierten SASL XOAUTH2-Zeichenfolge durch die e-Mail-Adresse des freigegebenen Postfachs ersetzen. 
 
 ### <a name="imap-protocol-exchange"></a>IMAP-Protokollaustausch
 
