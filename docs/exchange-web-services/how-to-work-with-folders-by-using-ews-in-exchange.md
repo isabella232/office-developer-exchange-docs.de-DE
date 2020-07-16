@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: 4b3eb746-74c4-42a0-aa2c-742c147f1871
 description: Erfahren Sie, wie Ordner mithilfe der verwalteten EWS-API oder EWS in Exchange erstellt, abgerufen, aktualisiert und gelöscht werden können.
 localization_priority: Priority
-ms.openlocfilehash: a184d8da4d6949f01f47afc6a9fb7ed30729fd3b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c09c0c76edda4af025a6ac7121fdf9ab9660fcab
+ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44456381"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45012545"
 ---
 # <a name="work-with-folders-by-using-ews-in-exchange"></a>Arbeiten mit Ordnern unter Verwendung von EWS in Exchange
 
@@ -38,7 +38,7 @@ Im folgenden Codebeispiel wird veranschaulicht, wie mithilfe der [Folder](https:
   
 In diesen Beispielen wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
   
-```cs
+```csharp
 // Create a custom folder.
 Folder folder = new Folder(service);
 folder.DisplayName = "Custom Folder";
@@ -49,7 +49,7 @@ folder.Save(WellKnownFolderName.Inbox);
 
 Um einen anderen Ordnertyp zu erstellen, z. B. [CalendarFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.calendarfolder%28v=exchg.80%29.aspx), [ContactsFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contactsfolder%28v=exchg.80%29.aspx), [SearchFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx) oder [TasksFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx), erstellen Sie eine neue Instaz der angegebenen Klasse (anstelle der generischen **Folder** -Klasse) und legen die **FolderClass** -Eigenschaft nicht fest. Im folgenden Codebeispiel wird beispielsweise gezeigt, wie ein neuer [TasksFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx) erstellt wird.
   
-```cs
+```csharp
 // Create a custom Tasks folder.
 TasksFolder folder = new TasksFolder(service);
 folder.DisplayName = "Custom Tasks";
@@ -71,7 +71,7 @@ Um einen einzelnen Ordner zu erstellen, senden Sie eine [CreateFolder](https://m
   
 Dies ist auch die XML-Anforderung, die EWS Managed API sendet, wenn Sie einen neuen Ordner erstellen und die [Folder.Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.save%28v=exchg.80%29.aspx)-Methode aufrufen. 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
@@ -115,7 +115,7 @@ Im folgenden Codebeispiel wird veranschaulicht, wie mithilfe der [Folder.Bind](h
   
 In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
   
-```cs
+```csharp
 // As a best practice, limit the properties returned to only those that are required.
 // In this scenario, you only need the FolderId.
 PropertySet propSet = new PropertySet(BasePropertySet.IdOnly);
@@ -139,7 +139,7 @@ Dies ist auch die XML-Anforderung, die EWS Managed API sendet, wenn Sie mithilfe
   
 Um mehrere Ordner zu abzurufen, schließen Sie mehrere [FolderIds](https://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx)-Elemente in die **GetFolder**-Vorgangsanforderungsnachricht ein. 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
@@ -160,7 +160,7 @@ Um mehrere Ordner zu abzurufen, schließen Sie mehrere [FolderIds](https://msdn.
 
 Das folgende XML-Beispiel zeigt die [GetFolderResponse](https://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx)-Nachricht, die vom Server an den Client als Antwort auf die **GetFolder**-Vorgangsanforderung gesendet wird. Sie enthält nur den [FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx)-Wert für den Ordner "Posteingang". Die Werte für einige Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt. 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
@@ -202,7 +202,7 @@ In diesem Beispiel wird ein [FolderView](https://msdn.microsoft.com/library/micr
   
 In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
   
-```XML
+```csharp
 // Create a new folder view, and pass in the maximum number of folders to return.
 FolderView view = new FolderView(folderViewSize);
 // Create an extended property definition for the PR_ATTR_HIDDEN property,
@@ -226,7 +226,7 @@ In den folgenden XML-Beispielen wird veranschaulicht, wie der [FindFolder](https
   
 Dies ist auch die XML-Anforderung, die EWS Managed API sendet, wenn Sie die [FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)-Methode aufrufen. 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
@@ -260,7 +260,7 @@ Das folgende XML-Beispiel zeigt die [FindFolderResponse](https://msdn.microsoft.
   
 Dies ist auch die XML-Antwort, die die EWS Managed API sendet, wenn Sie mehrere Ordner mithilfe der [FindFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)-Methode abrufen. Die Werte für einige Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt, und einige Ordner wurden aus Platzgründen nicht eingeschlossen. 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
@@ -368,7 +368,7 @@ Senden Sie dann eine [UpdateFolder](https://msdn.microsoft.com/library/3494c996-
   
 Dies ist auch die XML-Anforderung, die die EWS Managed API sendet, wenn Sie einen Ordner mithilfe der [Folder.Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx)-Methode aktualisieren. Die Werte einiger Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt. 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
@@ -425,7 +425,7 @@ Senden Sie als Nächstes eine [DeleteFolder](https://msdn.microsoft.com/library/
   
 Dies ist auch die XML-Antwort, die die EWS Managed API sendet, wenn Sie einen Ordner mithilfe der [Folder.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx)-Methode löschen. Die Werte für einige Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt, und einige Ordner wurden aus Platzgründen nicht eingeschlossen. 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
