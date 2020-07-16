@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: b4fff4c9-c625-4d2a-9d14-bb28a5da5baf
 description: Lernen Sie die Einschränkungsrichtlinien kennen, die sich bei Verwendung von Exchange auf EWS auswirken.
 localization_priority: Priority
-ms.openlocfilehash: 0c6ac49629ad4cdb4419cc8638d8e60ecb6509d6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 27db12c01180abbaf92b5b9a09a072212b6012ec
+ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455401"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45012552"
 ---
 # <a name="ews-throttling-in-exchange"></a>EWS-Einschränkung in Exchange
 
@@ -239,7 +239,7 @@ Auch der **EWSMaxConcurrency** -Richtlinienparameter kann ein Problem für EWS-B
 
 Wenn die Benachrichtigungsanwendung Multithreaded ist und gleichzeitige Verbindungsanforderungen enthält, um weitere Informationen zu einer bestimmten Nachricht abzurufen, die von einem Benutzerkonto empfangen wurde, kann die **EWSMaxConcurrency** -Richtlinien Grenze überschritten werden. Um dies zu berücksichtigen, können Sie die gleichzeitigen Verbindungen in Ihrer Anwendung überwachen, einschließlich derjenigen, die möglicherweise vom Server verwendet werden, und Sie können Anforderungswarteschlangen auf dem Client implementieren.
 
-Der **HangingConnectionLimit** gilt nur für Streamingbenachrichtigungen. Dieser Grenzwert wird in der Datei "Web.config" festgelegt, was bedeutet, dass ein Exchange-Administrator diesen Wert auf einem lokalen Exchange-Server festlegen kann, aber Exchange Online-Postfächer den Standardwert für diesen Grenzwert (3 für Exchange Online und Exchange 2013) verwenden müssen. Weitere Informationen finden Sie unter [Welche Drosselung Werte muss ich berücksichtigen?](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md#bk_throttling)
+Der **HangingConnectionLimit** gilt nur für Streamingbenachrichtigungen. Dieser Grenzwert wird in der web.config Datei festgelegt, was bedeutet, dass ein Exchange-Administrator diesen Wert auf einem lokalen Exchange-Server festlegen kann, aber Exchange Online Postfächer den Standardwert für diesen Grenzwert verwenden müssen, also 10 für Exchange Online, Exchange 2019, Exchange 2016 und 3 für Exchange 2013. Weitere Informationen finden Sie unter [Welche Einschränkungswerte muss ich berücksichtigen?](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md#bk_throttling)
 
 ## <a name="throttling-policy-and-application-performance"></a>Einschränkungsrichtlinie und Anwendungsleistung
 
