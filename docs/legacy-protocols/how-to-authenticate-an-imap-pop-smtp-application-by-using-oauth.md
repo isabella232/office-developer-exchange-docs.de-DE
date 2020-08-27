@@ -4,18 +4,18 @@ description: Erfahren Sie, wie Sie die OAuth-Authentifizierung mit ihren IMAP-, 
 author: svpsiva
 ms.date: 02/19/2020
 ms.audience: Developer
-ms.openlocfilehash: f83a932790cde558e741ece1e87403103aff18fd
-ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
+ms.openlocfilehash: e1bef8e35d78c35693dadc94b24b6aeecaf4e439
+ms.sourcegitcommit: 636c05a929279812c6ef87d75b01c166a4a05584
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45012559"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47254986"
 ---
 # <a name="authenticate-an-imap-pop-or-smtp-connection-using-oauth"></a>Authentifizieren einer IMAP-, Pop-oder SMTP-Verbindung mit OAuth
 
 Erfahren Sie, wie Sie mit der OAuth-Authentifizierung eine Verbindung mit IMAP-, Pop-oder SMTP-Protokollen herstellen und auf e-Mail-Daten für Office 365 Benutzer zugreifen.
 
-> OAuth2-Unterstützung für IMAP-, Pop-und SMTP-Protokolle wie unten beschrieben wird für Outlook.com-Benutzer nicht unterstützt.
+> Die OAuth2-Unterstützung für IMAP-, Pop-und SMTP-Protokolle wie unten beschrieben wird sowohl für Microsoft 365 (einschließlich Office im Internet) als auch für Outlook.com-Benutzer unterstützt.
 
 Wenn Sie mit OAuth 2,0 nicht vertraut sind, lesen Sie zunächst die [Microsoft Identity Platform (v 2.0)-Übersicht](/azure/active-directory/develop/v2-overview). In diesem Dokument werden verschiedene Komponenten der Microsoft Identity-Plattform vorgestellt, einschließlich SDKs.
 
