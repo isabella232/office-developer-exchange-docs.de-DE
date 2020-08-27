@@ -1,17 +1,17 @@
 ---
 title: Identitätswechsel und EWS in Exchange
 manager: sethgros
-ms.date: 11/16/2014
+ms.date: 08/24/2020
 ms.audience: Developer
 ms.assetid: 7e1ea63c-eb29-43d2-827f-2f2b1846483b
 description: Erfahren Sie mehr über den Identitätswechsel und wann er in Ihren Exchange-Dienstanwendungen eingesetzt werden kann.
 localization_priority: Priority
-ms.openlocfilehash: 8151b3d83421786d99ee0c82eaf4f7a5c0721f25
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: da35fb04f316c21a1c85c71b789b7f1485653466
+ms.sourcegitcommit: 636c05a929279812c6ef87d75b01c166a4a05584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44466612"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47254972"
 ---
 # <a name="impersonation-and-ews-in-exchange"></a>Identitätswechsel und EWS in Exchange
 
@@ -60,6 +60,10 @@ Sie können weitere Informationen über die [Konfiguration des Identitätswechse
 - [Identifizieren des Kontos für Identitätswechsel](how-to-identify-the-account-to-impersonate.md)
     
 - [Hinzufügen von Terminen mit Exchange-Identitätswechsel](how-to-add-appointments-by-using-exchange-impersonation.md)
+
+## <a name="performance-considerations-for-ews-impersonation"></a>Überlegungen zur Leistung für EWS-Identitätswechsel
+
+Wenn ein EWS-Identitätswechsel verwendet wird, sollte X-AnchorMailbox immer ordnungsgemäß festgelegt werden.  Andernfalls erhalten Sie möglicherweise die Fehlermeldungen 500 oder 503. Dies ist wichtig für die Leistung sowie für Benachrichtigungen mit Exchange Online/Exchange 2013.  Wenn Sie die Einstellung nicht festlegen, kann Sie die für die Ausführung des Aufrufs benötigte Zeit verdoppeln oder vervielfachen. In einigen Fällen können auch Timeouts auftreten. 
     
 ## <a name="see-also"></a>Siehe auch
 
