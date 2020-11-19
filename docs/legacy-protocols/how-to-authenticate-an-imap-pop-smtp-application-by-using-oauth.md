@@ -4,12 +4,12 @@ description: Erfahren Sie, wie Sie die OAuth-Authentifizierung mit ihren IMAP-, 
 author: svpsiva
 ms.date: 02/19/2020
 ms.audience: Developer
-ms.openlocfilehash: e1bef8e35d78c35693dadc94b24b6aeecaf4e439
-ms.sourcegitcommit: 636c05a929279812c6ef87d75b01c166a4a05584
+ms.openlocfilehash: 4662aa904ed162edcced6c096eac8cf636180f6a
+ms.sourcegitcommit: 37d4ecd4f469690ba1de87baad2f2f58c40c96ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47254986"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49348815"
 ---
 # <a name="authenticate-an-imap-pop-or-smtp-connection-using-oauth"></a>Authentifizieren einer IMAP-, Pop-oder SMTP-Verbindung mit OAuth
 
@@ -17,16 +17,16 @@ Erfahren Sie, wie Sie mit der OAuth-Authentifizierung eine Verbindung mit IMAP-,
 
 > Die OAuth2-Unterstützung für IMAP-, Pop-und SMTP-Protokolle wie unten beschrieben wird sowohl für Microsoft 365 (einschließlich Office im Internet) als auch für Outlook.com-Benutzer unterstützt.
 
-Wenn Sie mit OAuth 2,0 nicht vertraut sind, lesen Sie zunächst die [Microsoft Identity Platform (v 2.0)-Übersicht](/azure/active-directory/develop/v2-overview). In diesem Dokument werden verschiedene Komponenten der Microsoft Identity-Plattform vorgestellt, einschließlich SDKs.
+Wenn Sie mit dem OAuth 2,0-Protokoll nicht vertraut sind, lesen Sie zunächst das [OAuth 2,0-Protokoll unter Microsoft Identity Platform Overview](/azure/active-directory/develop/active-directory-v2-protocols). Weitere Informationen zur Microsoft-Authentifizierung libariers (MSAL), die das OAuth 2,0-Protokoll zur Authentifizierung von Benutzern und zum Zugriff auf sichere APIs implementieren, finden Sie in der [MSAL-Übersicht](/azure/active-directory/develop/msal-overview).
 
 Sie können den von Azure Active Directory bereitgestellten OAuth-Authentifizierungsdienst verwenden, um Ihrer Anwendung die Verbindung mit IMAP-, Pop-oder SMTP-Protokollen für den Zugriff auf Exchange Online in Office 365 zu ermöglichen. Um OAuth mit Ihrer Anwendung zu verwenden, müssen Sie Folgendes tun:
 
-1. [Registrieren Sie Ihre Anwendung](#register-your-application) mit Azure Active Directory.
+1. [Registrieren Sie Ihre Anwendung](#register-your-application) bei Azure Active Directory.
 1. [Konfigurieren Sie Ihre Anwendung](#configure-your-application) in Azure Active Directory.
 1. [Rufen Sie ein Zugriffstoken](#get-an-access-token) von einem tokenserver ab.
 1. [Authentifizierung von Verbindungsanforderungen](#authenticate-connection-requests) mit einem Zugriffstoken.
 
-## <a name="register-your-application"></a>Registrieren Ihrer Anwendung
+## <a name="register-your-application"></a>Registrieren der App
 
 Um OAuth verwenden zu können, muss eine Anwendung mit Azure Active Directory registriert sein.
 
