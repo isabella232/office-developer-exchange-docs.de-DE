@@ -1,17 +1,17 @@
 ---
 title: Authentifizieren einer EWS-Anwendung mit OAuth
 manager: sethgros
-ms.date: 05/17/2019
+ms.date: 11/19/2020
 ms.audience: Developer
 ms.assetid: 1d8d57f9-4df5-4f21-9bbb-a89e0e259052
 description: Erfahren Sie, wie Sie die OAuth-Authentifizierung mit Ihren von EWS verwalteten API-Anwendungen verwenden können.
 localization_priority: Priority
-ms.openlocfilehash: 795cbcc3dd1c895850086ebf0e23da905c1c99b7
-ms.sourcegitcommit: 636c05a929279812c6ef87d75b01c166a4a05584
+ms.openlocfilehash: c52b254f14cadd287a709bb68f8464e7cfe1837a
+ms.sourcegitcommit: 2d16ba247a8cb4b6c8ca9941cb079f75202aae1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47254965"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356493"
 ---
 <!-- markdownlint-disable MD025 -->
 # <a name="authenticate-an-ews-application-by-using-oauth"></a>Authentifizieren einer EWS-Anwendung mit OAuth
@@ -22,33 +22,28 @@ Erfahren Sie, wie Sie die OAuth-Authentifizierung mit Ihren von EWS verwalteten 
 Sie können den von Azure Active Directory bereitgestellten OAuth-Authentifizierungsdienst verwenden, um Ihren von EWS verwalteten API-Anwendungen den Zugriff auf Exchange Online in Office 365 zu ermöglichen. Um OAuth mit Ihrer Anwendung zu verwenden, müssen Sie Folgendes tun:
 
 1. [Registrieren Sie Ihre Anwendung](#register-your-application) bei Azure Active Directory.
-
-2. [Fügen Sie Code zum Abrufen eines Authentifizierungstokens hinzu](#add-code-to-get-an-authentication-token), um ein Authentifizierungstoken von einem Tokenserver zu erhalten.
-
-3. [Fügen Sie ein Authentifizierungstoken zu EWS-Anfragen hinzu](#add-an-authentication-token-to-ews-requests), die Sie senden.
+1. [Fügen Sie Code zum Abrufen eines Authentifizierungstokens hinzu](#add-code-to-get-an-authentication-token), um ein Authentifizierungstoken von einem Tokenserver zu erhalten.
+1. [Fügen Sie ein Authentifizierungstoken zu EWS-Anfragen hinzu](#add-an-authentication-token-to-ews-requests), die Sie senden.
 
 > [!NOTE]
-> Die OAuth-Authentifizierung für EWS ist in Exchange nur im Rahmen von Office 365 verfügbar. EWS-Anwendungen, die OAuth verwenden, müssen bei Azure Active Directory registriert werden.
+> Die OAuth-Authentifizierung für EWS ist in Exchange Online nur im Rahmen von Microsoft 365 verfügbar. EWS-Anwendungen, die OAuth verwenden, müssen bei Azure Active Directory registriert werden.
 
 Um den Code in diesem Artikel zu verwenden, benötigen Sie Zugriff auf die folgenden Komponenten:
 
-- Ein Office 365-Konto mit einem Exchange Online-Postfach. Wenn Sie über kein Office 365-Abonnement verfügen, können Sie ein kostenloses Office 365-Abonnement abschließen, indem Sie sich [für das Office 365-Entwicklerprogramm registrieren](https://developer.microsoft.com/office/dev-program).
-
-- [Microsoft Authentication Library für .NET](/dotnet/api/microsoft.identity.client?view=azure-dotnet).
-
+- Ein Microsoft 365-Konto mit einem Exchange Online-Postfach. Wenn Sie kein Microsoft 365-Konto haben, können Sie sich für das [Microsoft 365-Entwicklerprogramm](https://developer.microsoft.com/microsoft-365/dev-program) anmelden, um ein kostenloses Microsoft 365-Abonnement zu erhalten.
+- [Microsoft Authentication Library für .NET](/dotnet/api/microsoft.identity.client).
 - Die [von EWS verwaltete API](https://github.com/officedev/ews-managed-api).
-
 
 Es gibt zwei Arten von OAuth-Berechtigungen, die für den Zugriff auf EWS-APIs in Exchange Online verwendet werden können. Bevor Sie mit dem Tutorial fortfahren, müssen Sie den zu verwendenden bestimmten Berechtigungstyp auswählen.
 
-* **Delegierte Berechtigungen** werden von Apps verwendet, die mit angemeldetem Benutzer ausgeführt werden. Bei diesen Apps stimmt der Benutzer oder ein Administrator den von der App angeforderten Berechtigungen zu, und die App kann als angemeldeter Benutzer agieren, wenn sie API-Aufrufe sendet. 
-* **Anwendungsberechtigungen** werden von Apps verwendet, die keinen angemeldeten Benutzer erfordern, z. B. Apps, die als Hintergrunddienste oder Daemons ausgeführt werden und auf mehrere Postfächer zugreifen können.
+- **Delegierte Berechtigungen** werden von Apps verwendet, die mit angemeldetem Benutzer ausgeführt werden. Bei diesen Apps stimmt der Benutzer oder ein Administrator den von der App angeforderten Berechtigungen zu, und die App kann als angemeldeter Benutzer agieren, wenn sie API-Aufrufe sendet.
+- **Anwendungsberechtigungen** werden von Apps verwendet, die keinen angemeldeten Benutzer erfordern, z. B. Apps, die als Hintergrunddienste oder Daemons ausgeführt werden und auf mehrere Postfächer zugreifen können.
 
 ## <a name="register-your-application"></a>Registrieren der App
 
-Um OAuth verwenden zu können, muss eine Anwendung über eine von Azure Active Directory ausgegebene Anwendungs-ID verfügen. In diesem Tutorial wird davon ausgegangen, dass es sich bei der Anwendung um eine Konsolenanwendung handelt, daher müssen Sie Ihre Anwendung als öffentlicher Client bei Azure Active Directory registrieren.
+Um OAuth verwenden zu können, muss eine Anwendung über eine von Azure Active Directory ausgegebene Anwendungs-ID verfügen. In diesem Tutorial wird davon ausgegangen, dass die Anwendung eine Konsolen-App ist. Daher müssen Sie Ihre Anwendung als öffentlicher Client bei Azure Active Directory registrieren. Sie können eine Anwendung im Azure Active Directory Admin Center oder mithilfe von Microsoft Graph registrieren.
 
-1. Öffnen Sie einen Browser, und navigieren Sie zum [Azure Active Directory Admin Center](https://aad.portal.azure.com). Melden Sie sich mit einem **persönlichen Konto** (auch: Microsoft-Konto) oder einem **Geschäfts- oder Schulkonto** an.
+1. Öffnen Sie einen Browser und navigieren Sie zum [Azure Active Directory Admin Center](https://aad.portal.azure.com). Melden Sie sich mit einem **persönlichen Konto** (auch: Microsoft-Konto) oder einem **Geschäfts- oder Schulkonto** an.
 
 1. Wählen Sie in der linken Navigationsleiste **Azure Active Directory** aus, und wählen Sie dann **App-Registrierungen** unter **Verwalten** aus.
 
@@ -58,70 +53,103 @@ Um OAuth verwenden zu können, muss eine Anwendung über eine von Azure Active D
     - Legen Sie **Unterstützte Kontotypen** auf den Wert fest, der für Ihr Szenario sinnvoll sind.
     - Ändern Sie für **URI umleiten** die Dropdownliste in **Öffentlicher Client (mobil & Desktop)**, und legen Sie den Wert auf `urn:ietf:wg:oauth:2.0:oob` fest.
 
-1. Wählen Sie **Registrieren** aus. Kopieren Sie auf der nächsten Seite den Wert der **Anwendungs-ID (Client-ID)**, und speichern Sie ihn. Sie benötigen ihn im nächsten Schritt.
+1. Wählen Sie **Registrieren** aus. Kopieren Sie auf der nächsten Seite die Werte der **Anwendungs-ID (Client)** und der **Verzeichnis-ID (Mandant)** und speichern Sie diese. Sie werden sie später benötigen.
 
-1. Wählen Sie in der linken Navigation unter **Verwalten** die Option **API-Berechtigungen** aus. 
+### <a name="configure-for-delegated-authentication"></a>Für delegierte Authentifizierung konfigurieren
 
-1. Wählen Sie **Berechtigung hinzufügen** aus. Wählen Sie auf der Seite **API-Berechtigungen anfordern** unter **Unterstützte Legacy-APIs** die Option **Exchange** aus. 
+Wenn Ihre Anwendung eine delegierte Authentifizierung verwendet, ist keine weitere Konfiguration erforderlich. Auf der [Microsoft Identity Platform] können Apps dynamisch Berechtigungen anfordern, so dass Sie die Berechtigungen bei der App-Registrierung nicht vorkonfigurieren müssen. In einigen Szenarien (wie dem [On-Behalf-of-Flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)) sind jedoch vorkonfigurierte Berechtigungen erforderlich. Verwenden Sie die folgenden Schritte zur Vorkonfiguration von EWS-Berechtigungen.
 
-1. Um delegierte Berechtigungen zu verwenden, wählen Sie **Delegierte Berechtigungen** und dann **EWS.AccessAsUser.All** unter **EWS** aus. Klicken Sie auf **Berechtigungen hinzufügen**. 
+1. Wählen Sie **Manifest** in der linken Navigation unter **Verwalten** aus.
 
-Um Anwendungsberechtigungen zu verwenden, befolgen Sie diese zusätzlichen Schritte.
+1. Suchen Sie die Eigenschaft `requiredResourceAccess` im Manifest und fügen Sie Folgendes in eckigen Klammern (`[]`) hinzu:
 
-1. Wählen Sie **Anwendungsberechtigungen** und dann **full_access_as_app** aus. Klicken Sie auf **Berechtigungen hinzufügen**.
+    ```json
+    {
+        "resourceAppId": "00000002-0000-0ff1-ce00-000000000000",
+        "resourceAccess": [
+            {
+                "id": "3b5f3d61-589b-4a3c-a359-5dd4b5ee5bd5",
+                "type": "Scope"
+            }
+        ]
+    }
+    ```
 
-1. Wählen Sie **Administratorzustimmung für Organisation gewähren** aus, und bestätigen Sie Ihre Auswahl im Dialogfeld "Zustimmung". 
+1. Wählen Sie **Speichern** aus.
 
-1. Wählen Sie in der linken Navigation unter **Verwalten** die Option **Zertifikate und Geheimnisse** aus. 
+1. Wählen Sie **API-Berechtigungen** unter **Verwalten** aus. Bestätigen Sie, dass die Berechtigung **EWS AccessAsUser All** aufgeführt ist.
+
+### <a name="configure-for-app-only-authentication"></a>Nur-App-Authentifizierung konfigurieren
+
+Um Anwendungsberechtigungen zu verwenden, folgen Sie diesen zusätzlichen Schritten.
+
+1. Wählen Sie **Manifest** in der linken Navigation unter **Verwalten** aus.
+
+1. Suchen Sie die Eigenschaft `requiredResourceAccess` im Manifest und fügen Sie Folgendes in eckigen Klammern (`[]`) hinzu:
+
+    ```json
+    {
+        "resourceAppId": "00000002-0000-0ff1-ce00-000000000000",
+        "resourceAccess": [
+            {
+                "id": "dc890d15-9560-4a4c-9b7f-a736ec74ec40",
+                "type": "Role"
+            }
+        ]
+    }
+    ```
+
+1. Wählen Sie **Speichern** aus.
+
+1. Wählen Sie **API-Berechtigungen** unter **Verwalten** aus. Bestätigen Sie, dass die Berechtigung **full_access_as_app** aufgeführt ist.
+
+1. Wählen Sie **Administratorzustimmung für Organisation gewähren** aus, und bestätigen Sie Ihre Auswahl im Dialogfeld "Zustimmung".
+
+1. Wählen Sie in der linken Navigation unter **Verwalten** die Option **Zertifikate und Geheimnisse** aus.
 
 1. Wählen Sie **Neuer geheimer Clientschlüssel** aus, geben Sie eine kurze Beschreibung ein, und wählen Sie dann **Hinzufügen** aus.
 
-1. Kopieren Sie den **Wert** des neu hinzugefügten geheimen Clientschlüssels, und speichern Sie ihn. Sie benötigen ihn später. 
+1. Kopieren Sie den **Wert** des neu hinzugefügten geheimen Clientschlüssels, und speichern Sie ihn. Sie benötigen ihn später.
 
 ## <a name="add-code-to-get-an-authentication-token"></a>Hinzufügen von Code zum Abrufen eines Authentifizierungstokens
 
 In den folgenden Codeausschnitten wird gezeigt, wie Sie mithilfe der Microsoft-Authentifizierungsbibliothek Authentifizierungstoken für delegierte Berechtigungen und Anwendungsberechtigungen abrufen. Bei diesen Codeausschnitten wird davon ausgegangen, dass die für die Authentifizierungsanforderung erforderlichen Informationen in der Datei **App.config** der Anwendung gespeichert sind. Diese Beispiele enthalten keine Fehlerprüfung. Den vollständigen Code finden Sie unter [Codebeispiele](#code-samples).
 
-### <a name="delegated-permissions"></a>Delegierte Berechtigungen
+### <a name="get-a-token-with-delegated-auth"></a>Token mit delegierter Authentifizierung anfordern
 
 ```cs
-// Configure the MSAL client to get tokens
-var pcaOptions = new PublicClientApplicationOptions
-{
-    ClientId = ConfigurationManager.AppSettings["appId"],
-    TenantId = ConfigurationManager.AppSettings["tenantId"]
-};
-
+// Using Microsoft.Identity.Client 4.22.0
 var pca = PublicClientApplicationBuilder
-    .CreateWithApplicationOptions(pcaOptions).Build();
+    .Create(ConfigurationManager.AppSettings["appId"])
+    .Build();
 
 // The permission scope required for EWS access
-var ewsScopes = new string[] { "https://outlook.office.com/EWS.AccessAsUser.All" };
+var ewsScopes = new string[] { "EWS.AccessAsUser.All" };
 
 // Make the interactive token request
 var authResult = await pca.AcquireTokenInteractive(ewsScopes).ExecuteAsync();
 ```
 
-### <a name="application-permissions"></a>Anwendungsberechtigungen
+### <a name="get-a-token-with-app-only-auth"></a>Token mit Nur-App-Authentifizierung anfordern
 
 ```cs
-// Configure the MSAL client to get tokens
-var app = ConfidentialClientApplicationBuilder
+// Using Microsoft.Identity.Client 4.22.0
+var cca = ConfidentialClientApplicationBuilder
     .Create(ConfigurationManager.AppSettings["appId"])
-    .WithAuthority(AzureCloudInstance.AzurePublic, ConfigurationManager.AppSettings["tenantId"])
-    .WithClientSecret(ConfigurationManager.AppSettings["clientSecret"]).Build();
+    .WithClientSecret(ConfigurationManager.AppSettings["clientSecret"])
+    .WithTenantId(ConfigurationManager.AppSettings["tenantId"])
+    .Build();
 
 // The permission scope required for EWS access
-var ewsScopes = new string[] { "https://outlook.office.com/.default" };
+var ewsScopes = new string[] { "https://outlook.office365.com/.default" };
 
 //Make the token request
-AuthenticationResult authResult = await app.AcquireTokenForClient(ewsScopes).ExecuteAsync();
-
+var authResult = await app.AcquireTokenForClient(ewsScopes).ExecuteAsync();
 ```
 
-## <a name="add-an-authentication-token-to-ews-requests"></a>Hinzufügen eines Authentifizierungstokens zu EWS-Anfragen
+## <a name="add-an-authentication-token-to-ews-requests"></a>Authentifizierungstoken zu EWS-Anfragen hinzufügen
 
-Nachdem Sie das **AuthenticationResultat**-Objekt erhalten haben, können Sie die **AccessToken**-Eigenschaft verwenden, um das vom Tokendienst ausgegebene Token abzurufen.
+Nachdem Sie das Objekt **AuthenticationResult** erhalten haben, können Sie die Eigenschaft **AccessToken** verwenden, um das vom Token-Dienst ausgegebene Token abzurufen.
 
 ```cs
 // Configure the ExchangeService with the access token
@@ -130,7 +158,7 @@ ewsClient.Url = new Uri("https://outlook.office365.com/EWS/Exchange.asmx");
 ewsClient.Credentials = new OAuthCredentials(authResult.AccessToken);
 ```
 
-Um Anwendungsberechtigungen zu verwenden, müssen Sie auch explizit ein Postfach imitieren, auf das Sie zugreifen möchten. 
+Um Anwendungsberechtigungen zu verwenden, müssen Sie die Identität eines Postfaches annehmen, auf das Sie zugreifen möchten.
 
 ```cs
 //Impersonate the mailbox you'd like to access.
@@ -139,9 +167,9 @@ ewsClient.ImpersonatedUserId = new ImpersonatedUserId(ConnectingIdType.SmtpAddre
 
 ## <a name="code-samples"></a>Codebeispiele
 
-### <a name="delegated-permissions"></a>Delegierte Berechtigungen
+### <a name="delegated-authentication"></a>Delegierte Authentifizierung
 
-Nachfolgend finden Sie ein vollständiges Codebeispiel, das die Erstellung einer OAuth-authentifizierten EWS-Anforderung unter Verwendung delegierter Berechtigungen veranschaulicht.
+Im Folgenden finden Sie ein vollständiges Codebeispiel, das die Erstellung einer OAuth-authentifizierten EWS-Anforderung unter Verwendung der delegierten Authentifizierung demonstriert.
 
 ```cs
 using Microsoft.Exchange.WebServices.Data;
@@ -153,30 +181,14 @@ namespace EwsOAuth
 {
     class Program
     {
-        static void Main(string[] args)
+        static async System.Threading.Tasks.Task Main(string[] args)
         {
-            MainAsync(args).Wait();
-
-            if (System.Diagnostics.Debugger.IsAttached)
-            {
-                Console.WriteLine("Hit any key to exit...");
-                Console.ReadKey();
-            }
-        }
-
-        static async System.Threading.Tasks.Task MainAsync(string[] args)
-        {
-            // Configure the MSAL client to get tokens
-            var pcaOptions = new PublicClientApplicationOptions
-            {
-                ClientId = ConfigurationManager.AppSettings["appId"],
-                TenantId = ConfigurationManager.AppSettings["tenantId"]
-            };
-
+            // Using Microsoft.Identity.Client 4.22.0
             var pca = PublicClientApplicationBuilder
-                .CreateWithApplicationOptions(pcaOptions).Build();
+                .Create(ConfigurationManager.AppSettings["appId"])
+                .Build();
 
-            var ewsScopes = new string[] { "https://outlook.office.com/EWS.AccessAsUser.All" };
+            var ewsScopes = new string[] { "EWS.AccessAsUser.All" };
 
             try
             {
@@ -197,37 +209,12 @@ namespace EwsOAuth
             }
             catch (MsalException ex)
             {
-                Console.WriteLine($"Error acquiring access token: {ex.ToString()}");
+                Console.WriteLine($"Error acquiring access token: {ex}");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error: {ex.ToString()}");
+                Console.WriteLine($"Error: {ex}");
             }
-        }
-    }
-}
-```
-
-### <a name="application-permissions"></a>Anwendungsberechtigungen
-
-Nachfolgend finden Sie ein vollständiges Codebeispiel, das die Erstellung einer OAuth-authentifizierten EWS-Anforderung unter Verwendung von Anwendungsberechtigungen veranschaulicht.
-
-> [!NOTE]
-> Wenn Sie einen Identitätswechsel verwenden, müssen Sie immer den X-AnchorMailbox-Anforderungsheader verwenden, der auf SMTP des imitierten Postfachs festgelegt sein sollte.
-
-```cs
-using System;
-using System.Configuration;
-using Microsoft.Exchange.WebServices.Data;
-using Microsoft.Identity.Client;
-
-namespace ews_oauth_samples
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            MainAsync(args).Wait();
 
             if (System.Diagnostics.Debugger.IsAttached)
             {
@@ -235,50 +222,73 @@ namespace ews_oauth_samples
                 Console.ReadKey();
             }
         }
-        
-        static async System.Threading.Tasks.Task MainAsync(string[] args)
-        {
-            // Configure the MSAL client to get tokens
-            var ewsScopes = new string[] { "https://outlook.office.com/.default" };
+    }
+}
+```
 
-            var app = ConfidentialClientApplicationBuilder.Create(ConfigurationManager.AppSettings["appId"])
-                .WithAuthority(AzureCloudInstance.AzurePublic, ConfigurationManager.AppSettings["tenantId"])
+### <a name="app-only-authentication"></a>Nur-App-Authentifizierung
+
+Nachfolgend finden Sie ein vollständiges Codebeispiel, das die Erstellung einer OAuth-authentifizierten EWS-Anforderung unter Verwendung einer Nur-App-Authentifizierung veranschaulicht.
+
+> [!NOTE]
+> Wenn Sie die Identitätsnachahmung verwenden, müssen Sie immer den X-AnchorMailbox-Anforderungs-Header verwenden, der auf die SMTP-Adresse des imitierten Postfachs gesetzt werden sollte.
+
+```cs
+using Microsoft.Exchange.WebServices.Data;
+using Microsoft.Identity.Client;
+using System;
+using System.Configuration;
+
+namespace EwsOAuth
+{
+    class Program
+    {
+        static async System.Threading.Tasks.Task Main(string[] args)
+        {
+            // Using Microsoft.Identity.Client 4.22.0
+            var cca = ConfidentialClientApplicationBuilder
+                .Create(ConfigurationManager.AppSettings["appId"])
                 .WithClientSecret(ConfigurationManager.AppSettings["clientSecret"])
+                .WithTenantId(ConfigurationManager.AppSettings["tenantId"])
                 .Build();
 
-            AuthenticationResult result = null;
+            var ewsScopes = new string[] { "https://outlook.office365.com/.default" };
 
             try
             {
-                // Make the interactive token request
-                result = await app.AcquireTokenForClient(ewsScopes)
+                var authResult = await cca.AcquireTokenForClient(ewsScopes)
                     .ExecuteAsync();
 
                 // Configure the ExchangeService with the access token
                 var ewsClient = new ExchangeService();
                 ewsClient.Url = new Uri("https://outlook.office365.com/EWS/Exchange.asmx");
-                ewsClient.Credentials = new OAuthCredentials(result.AccessToken);
-
-                //Impersonate the mailbox you'd like to access.
-                ewsClient.ImpersonatedUserId = new ImpersonatedUserId(ConnectingIdType.SmtpAddress, "test@demotenant.onmicrosoft.com");
+                ewsClient.Credentials = new OAuthCredentials(authResult.AccessToken);
+                ewsClient.ImpersonatedUserId =
+                    new ImpersonatedUserId(ConnectingIdType.SmtpAddress, "meganb@contoso.onmicrosoft.com");
 
                 //Include x-anchormailbox header
-                ewsClient.HttpHeaders.Add("X-AnchorMailbox", "test@demotenant.onmicrosoft.com");
+                ewsClient.HttpHeaders.Add("X-AnchorMailbox", "meganb@contoso.onmicrosoft.com");
 
                 // Make an EWS call
                 var folders = ewsClient.FindFolders(WellKnownFolderName.MsgFolderRoot, new FolderView(10));
-                foreach (var folder in folders)
+                foreach(var folder in folders)
                 {
                     Console.WriteLine($"Folder: {folder.DisplayName}");
                 }
             }
             catch (MsalException ex)
             {
-                Console.WriteLine($"Error acquiring access token: {ex.ToString()}");
+                Console.WriteLine($"Error acquiring access token: {ex}");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error: {ex.ToString()}");
+                Console.WriteLine($"Error: {ex}");
+            }
+
+            if (System.Diagnostics.Debugger.IsAttached)
+            {
+                Console.WriteLine("Hit any key to exit...");
+                Console.ReadKey();
             }
         }
     }
@@ -296,9 +306,8 @@ Für den Beispielcode ist in beiden Fällen eine **App.config**-Datei mit den fo
   <appSettings>
     <!-- The application ID from your app registration -->
     <add key="appId" value="YOUR_APP_ID_HERE" />
-    <!-- If you registered your app to support only users in your organization, change the value
-           of this key to your tenant ID -->
-    <add key="tenantId" value="common"/>
+    <!-- The tenant ID copied from your app registration -->
+    <add key="tenantId" value="YOUR_TENANT_ID_HERE"/>
     <!-- The application's client secret from your app registration. Needed for application permission access -->
     <add key="clientSecret" value="YOUR_CLIENT_SECRET_HERE"/>
   </appSettings>
