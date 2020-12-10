@@ -1,17 +1,17 @@
 ---
 title: Authentifizieren einer EWS-Anwendung mit OAuth
 manager: sethgros
-ms.date: 11/19/2020
+ms.date: 11/25/2020
 ms.audience: Developer
 ms.assetid: 1d8d57f9-4df5-4f21-9bbb-a89e0e259052
 description: Erfahren Sie, wie Sie die OAuth-Authentifizierung mit Ihren von EWS verwalteten API-Anwendungen verwenden können.
 localization_priority: Priority
-ms.openlocfilehash: c52b254f14cadd287a709bb68f8464e7cfe1837a
-ms.sourcegitcommit: 2d16ba247a8cb4b6c8ca9941cb079f75202aae1e
+ms.openlocfilehash: a7b1d2a099cf5f3c95f8453605363de12ff33c54
+ms.sourcegitcommit: 843a2e030a94b12aec70c553ca4e06e39ac02d82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356493"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49603827"
 ---
 <!-- markdownlint-disable MD025 -->
 # <a name="authenticate-an-ews-application-by-using-oauth"></a>Authentifizieren einer EWS-Anwendung mit OAuth
@@ -41,9 +41,9 @@ Es gibt zwei Arten von OAuth-Berechtigungen, die für den Zugriff auf EWS-APIs i
 
 ## <a name="register-your-application"></a>Registrieren der App
 
-Um OAuth verwenden zu können, muss eine Anwendung über eine von Azure Active Directory ausgegebene Anwendungs-ID verfügen. In diesem Tutorial wird davon ausgegangen, dass die Anwendung eine Konsolen-App ist. Daher müssen Sie Ihre Anwendung als öffentlicher Client bei Azure Active Directory registrieren. Sie können eine Anwendung im Azure Active Directory Admin Center oder mithilfe von Microsoft Graph registrieren.
+Um OAuth verwenden zu können, muss eine Anwendung über eine von Azure Active Directory ausgegebene Anwendungs-ID verfügen. In diesem Tutorial wird davon ausgegangen, dass es sich bei der Anwendung um eine Konsolenanwendung handelt, daher müssen Sie Ihre Anwendung als öffentlicher Client bei Azure Active Directory registrieren. Sie können eine Anwendung im Azure Active Directory Admin Center oder mithilfe von Microsoft Graph registrieren.
 
-1. Öffnen Sie einen Browser und navigieren Sie zum [Azure Active Directory Admin Center](https://aad.portal.azure.com). Melden Sie sich mit einem **persönlichen Konto** (auch: Microsoft-Konto) oder einem **Geschäfts- oder Schulkonto** an.
+1. Öffnen Sie einen Browser, und navigieren Sie zum [Azure Active Directory Admin Center](https://aad.portal.azure.com). Melden Sie sich mit einem **persönlichen Konto** (auch: Microsoft-Konto) oder einem **Geschäfts- oder Schulkonto** an.
 
 1. Wählen Sie in der linken Navigationsleiste **Azure Active Directory** aus, und wählen Sie dann **App-Registrierungen** unter **Verwalten** aus.
 
@@ -57,7 +57,7 @@ Um OAuth verwenden zu können, muss eine Anwendung über eine von Azure Active D
 
 ### <a name="configure-for-delegated-authentication"></a>Für delegierte Authentifizierung konfigurieren
 
-Wenn Ihre Anwendung eine delegierte Authentifizierung verwendet, ist keine weitere Konfiguration erforderlich. Auf der [Microsoft Identity Platform] können Apps dynamisch Berechtigungen anfordern, so dass Sie die Berechtigungen bei der App-Registrierung nicht vorkonfigurieren müssen. In einigen Szenarien (wie dem [On-Behalf-of-Flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)) sind jedoch vorkonfigurierte Berechtigungen erforderlich. Verwenden Sie die folgenden Schritte zur Vorkonfiguration von EWS-Berechtigungen.
+Wenn Ihre Anwendung eine delegierte Authentifizierung verwendet, ist keine weitere Konfiguration erforderlich. Auf der [Microsoft Identity Platform](/azure/active-directory/develop/v2-overview) können Apps dynamisch Berechtigungen anfordern, so dass Sie die Berechtigungen bei der App-Registrierung nicht vorkonfigurieren müssen. In einigen Szenarien (wie dem [On-Behalf-of-Flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)) sind jedoch vorkonfigurierte Berechtigungen erforderlich. Verwenden Sie die folgenden Schritte zur Vorkonfiguration von EWS-Berechtigungen.
 
 1. Wählen Sie **Manifest** in der linken Navigation unter **Verwalten** aus.
 
@@ -119,12 +119,19 @@ In den folgenden Codeausschnitten wird gezeigt, wie Sie mithilfe der Microsoft-A
 
 ```cs
 // Using Microsoft.Identity.Client 4.22.0
+
+// Configure the MSAL client to get tokens
+var pcaOptions = new PublicClientApplicationOptions
+{
+    ClientId = ConfigurationManager.AppSettings["appId"],
+    TenantId = ConfigurationManager.AppSettings["tenantId"]
+};
+
 var pca = PublicClientApplicationBuilder
-    .Create(ConfigurationManager.AppSettings["appId"])
-    .Build();
+    .CreateWithApplicationOptions(pcaOptions).Build();
 
 // The permission scope required for EWS access
-var ewsScopes = new string[] { "EWS.AccessAsUser.All" };
+var ewsScopes = new string[] { "https://outlook.office365.com/EWS.AccessAsUser.All" };
 
 // Make the interactive token request
 var authResult = await pca.AcquireTokenInteractive(ewsScopes).ExecuteAsync();
@@ -144,12 +151,12 @@ var cca = ConfidentialClientApplicationBuilder
 var ewsScopes = new string[] { "https://outlook.office365.com/.default" };
 
 //Make the token request
-var authResult = await app.AcquireTokenForClient(ewsScopes).ExecuteAsync();
+var authResult = await cca.AcquireTokenForClient(ewsScopes).ExecuteAsync();
 ```
 
-## <a name="add-an-authentication-token-to-ews-requests"></a>Authentifizierungstoken zu EWS-Anfragen hinzufügen
+## <a name="add-an-authentication-token-to-ews-requests"></a>Hinzufügen eines Authentifizierungstokens zu EWS-Anfragen
 
-Nachdem Sie das Objekt **AuthenticationResult** erhalten haben, können Sie die Eigenschaft **AccessToken** verwenden, um das vom Token-Dienst ausgegebene Token abzurufen.
+Nachdem Sie das **AuthenticationResultat**-Objekt erhalten haben, können Sie die **AccessToken**-Eigenschaft verwenden, um das vom Tokendienst ausgegebene Token abzurufen.
 
 ```cs
 // Configure the ExchangeService with the access token
@@ -184,11 +191,19 @@ namespace EwsOAuth
         static async System.Threading.Tasks.Task Main(string[] args)
         {
             // Using Microsoft.Identity.Client 4.22.0
-            var pca = PublicClientApplicationBuilder
-                .Create(ConfigurationManager.AppSettings["appId"])
-                .Build();
 
-            var ewsScopes = new string[] { "EWS.AccessAsUser.All" };
+            // Configure the MSAL client to get tokens
+            var pcaOptions = new PublicClientApplicationOptions
+            {
+                ClientId = ConfigurationManager.AppSettings["appId"],
+                TenantId = ConfigurationManager.AppSettings["tenantId"]
+            };
+
+            var pca = PublicClientApplicationBuilder
+                .CreateWithApplicationOptions(pcaOptions).Build();
+
+            // The permission scope required for EWS access
+            var ewsScopes = new string[] { "https://outlook.office365.com/EWS.AccessAsUser.All" };
 
             try
             {

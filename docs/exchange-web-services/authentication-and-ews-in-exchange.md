@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: 9a83df96-aca0-42b3-b8f5-2b414f0363f1
 description: Hier finden Sie Informationen, die Sie dabei unterstützen, den richtigen Authentifizierungsstandard für Ihre EWS-Anwendung für Exchange zu finden.
 localization_priority: Priority
-ms.openlocfilehash: 69018b6f88fc80e1e18edd96ed0e16d52064572d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
-ms.translationtype: MT
+ms.openlocfilehash: 0b35921f33b935f9a5a490e15d4e76d1a3e3c9dc
+ms.sourcegitcommit: 843a2e030a94b12aec70c553ca4e06e39ac02d82
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528482"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49603834"
 ---
 # <a name="authentication-and-ews-in-exchange"></a>Authentifizierung und EWS in Exchange
 
@@ -72,15 +72,18 @@ Die Standardauthentifizierung bietet eine grundlegende Sicherheitsebene für die
 
 |**Vorteile**|**Nachteile**|
 |:-----|:-----|
-| Ist sofort einsatzbereit zur Verwendung mit dem Exchange-Server. Sie können den Zugriff auf Exchange-Dienste konfigurieren, indem Sie ein [Exchange Management Shell-Cmdlet](how-to-control-access-to-ews-in-exchange.md) verwenden.  <br/><br/>Windows-Anwendungen können die standardmäßigen Anmeldeinformationen des angemeldeten Benutzers verwenden.<br/><br/>Es stehen [zahlreiche Codebeispiele zur Verfügung](https://code.msdn.microsoft.com/office/Exchange-2013-101-Code-3c38582c), die demonstrieren, wie Sie EWS mit Standardauthentifizierung aufrufen.  <br/> | Macht das Erfassen und Speichern der Anmeldeinformationen des Benutzers durch die Anwendung erforderlich.<br/><br/>Sie müssen die NTLM-Authentifizierung deaktivieren, wenn Sie erzwingen möchten, dass alle Benutzer die Standardauthentifizierung verwenden.<br/><br/>Wenn in Ihrer Anwendung eine Sicherheitsverletzung auftritt, kann dies die E-Mail-Adresse und das Kennwort des Benutzers für den Angreifer offenlegen.  <br/> |
+| Ist sofort einsatzbereit zur Verwendung mit dem Exchange-Server. Sie können den Zugriff auf Exchange-Dienste konfigurieren, indem Sie ein [Exchange Management Shell-Cmdlet](how-to-control-access-to-ews-in-exchange.md) verwenden.  <br/><br/>Windows-Anwendungen können die standardmäßigen Anmeldeinformationen des angemeldeten Benutzers verwenden.<br/><br/>Es stehen [zahlreiche Codebeispiele zur Verfügung](https://code.msdn.microsoft.com/office/Exchange-2013-101-Code-3c38582c), die demonstrieren, wie Sie EWS mit Standardauthentifizierung aufrufen.  <br/> | Macht das Erfassen und Speichern der Anmeldeinformationen des Benutzers durch die Anwendung erforderlich.<br/><br/>Sie müssen die NTLM-Authentifizierung deaktivieren, wenn Sie die Standardauthentifizierung für alle Benutzer erzwingen möchten.<br/><br/>Wenn in Ihrer Anwendung eine Sicherheitsverletzung auftritt, kann dies die E-Mail-Adresse und das Kennwort des Benutzers für den Angreifer offenlegen.  <br/> |
    
 Sie müssen entscheiden, ob die Standardauthentifizierung die Sicherheitsanforderungen Ihrer Organisation und Ihrer Kunden erfüllt. Die Standardauthentifizierung kann die richtige Wahl sein, wenn Sie umfangreiche Einrichtungsmaßnahmen vermeiden möchten, wenn Sie Anwendungen zum Beispiel nur zu Test- oder Demonstrationszwecken verwenden möchten.
+
+> [!NOTE]
+> Die Standardauthentifizierung wird für EWS zum Herstellen einer Verbindung zu Exchange Online nicht mehr unterstützt. Verwenden Sie die OAuth-Authentifizierung in all Ihren neuen oder bestehenden EWS-Anwendungen, um eine Verbindung zu Exchange Online herzustellen. Die OAuth-Authentifizierung für EWS ist in Exchange Online nur im Rahmen von Microsoft 365 verfügbar. EWS-Anwendungen, die OAuth verwenden, müssen zuerst bei Azure Active Directory registriert werden.
   
 ## <a name="see-also"></a>Siehe auch
-
-- [Verwenden von Webdiensten in Exchange](start-using-web-services-in-exchange.md)   
+- [Authentifizieren einer EWS-Anwendung mit OAuth](how-to-authenticate-an-ews-application-by-using-oauth.md)
+- [Erste Schritte mit Webdiensten in Exchange](start-using-web-services-in-exchange.md)   
 - [Hinzufügen von Anmeldungen zur Webanwendung mit Microsoft Azure AD](https://msdn.microsoft.com/library/055e1155-2d4d-4c85-b44e-d406872ba595%28Office.15%29.aspx)    
 - [Steuern des Zugriffs auf EWS in Exchange](how-to-control-access-to-ews-in-exchange.md)    
 - [Steuern des Clientanwendungszugriffs auf EWS in Exchange](controlling-client-application-access-to-ews-in-exchange.md)   
-- [Unterstützte Token-und Anspruchstypen](https://msdn.microsoft.com/library/9d35e4bc-7b72-49d1-b723-5464eee6be2c%28Office.15%29.aspx)
+- [Unterstützte Token- und Anspruchstypen](https://msdn.microsoft.com/library/9d35e4bc-7b72-49d1-b723-5464eee6be2c%28Office.15%29.aspx)
  
