@@ -351,7 +351,7 @@ Der Servers sendet die folgende Antwort, die drei Elemente enthält. Die Antwort
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 
 - [Suche und EWS in Exchange](search-and-ews-in-exchange.md)
