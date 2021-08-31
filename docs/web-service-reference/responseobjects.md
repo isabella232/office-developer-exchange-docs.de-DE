@@ -11,23 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: ad29e064-3f3d-4b7b-aa4c-9ec27326381d
-description: Das ResponseObjects-Element enthält eine Auflistung aller Response-Objekte, die einem Element in der Exchange-Informationsspeicher zugeordnet sind.
-ms.openlocfilehash: 675bfda4addb38535736efc0c790577ff4739108
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ResponseObjects-Element enthält eine Auflistung aller Antwortobjekte, die einem Element im Exchange Speicher zugeordnet sind.
+ms.openlocfilehash: 9f80fd9703dcd7d9293a3a51eccb6cf2b6903064
+ms.sourcegitcommit: 357b882a02e37b380a23b8a45b15f9c006a40b02
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457438"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58764581"
 ---
 # <a name="responseobjects"></a>ResponseObjects
 
-Das **ResponseObjects** -Element enthält eine Auflistung aller Response-Objekte, die einem Element in der Exchange-Informationsspeicher zugeordnet sind. 
+Das **ResponseObjects-Element** enthält eine Auflistung aller Antwortobjekte, die einem Element im Exchange Speicher zugeordnet sind. 
   
 ```XML
 <ResponseObjects>
    <AcceptItem/>
    <TentativelyAcceptItem/>
    <DeclineItem/>
+   <ProposeNewTime>
    <ReplyToItem/>
    <ForwardItem/>
    <ReplyAllToItem/>
@@ -55,14 +56,15 @@ Keine.
 |[AcceptItem](acceptitem.md) <br/> |Stellt eine Accept-Antwort auf eine Besprechungsanfrage.  <br/> |
 |[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |Stellt eine mit Vorbehalt Antworten auf eine Besprechungsanfrage.  <br/> |
 |[DeclineItem](declineitem.md) <br/> |Stellt eine ablehnen Antwort auf eine Besprechungsanfrage.  <br/> |
+|[ProposeNewTime](proposenewtime.md) <br/> |Gibt an, dass der Besprechungsteilnehmer eine neue Besprechungszeit vorschlagen kann. Dieses Element wurde in Microsoft Exchange Server 2013 Service Pack 1 (SP1) eingeführt.  <br/> |
 |[ReplyToItem](replytoitem.md) <br/> |Enthält eine Antwort an den Ersteller eines Elements in der Exchange-Speicher.  <br/> |
 |[ForwardItem](forwarditem.md) <br/> |Enthält ein Exchange-Speicher-Element an Empfänger weitergeleitet.  <br/> |
 |[ReplyAllToItem](replyalltoitem.md) <br/> |Enthält eine Antwort an alle identifizierten Empfänger eines Elements in der Exchange-Speicher.  <br/> |
 |[CancelCalendarItem](cancelcalendaritem.md) <br/> |Stellt das Antwortobjekt dar, das zum Abbrechen einer Besprechung verwendet wird.  <br/> |
 |[RemoveItem](removeitem.md) <br/> |Entfernt ein Element aus dem Exchange-Informationsspeicher.  <br/> |
-|[PostReplyItem](postreplyitem.md) <br/> |Enthält eine Antwort auf ein Post-Element. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
-|[SuppressReadReceipt](suppressreadreceipt.md) <br/> |Wird verwendet, um Lese Bestätigungsanforderungen zu unterdrücken.  <br/> |
-|[AcceptSharingInvitation](acceptsharinginvitation.md) <br/> |Wird verwendet, um eine Einladung zu akzeptieren, die den Zugriff auf die Kalender-oder Kontaktdaten eines anderen Benutzers zulässt.  <br/> |
+|[PostReplyItem](postreplyitem.md) <br/> |Enthält eine Antwort auf ein Beitragselement. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
+|[SuppressReadReceipt](suppressreadreceipt.md) <br/> |Wird verwendet, um Lesebestätigungsanforderungen zu unterdrücken.  <br/> |
+|[AcceptSharingInvitation](acceptsharinginvitation.md) <br/> |Wird verwendet, um eine Einladung zu akzeptieren, die den Zugriff auf den Kalender oder die Kontaktdaten eines anderen Benutzers ermöglicht.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

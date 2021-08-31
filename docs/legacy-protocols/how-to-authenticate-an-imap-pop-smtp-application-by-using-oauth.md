@@ -1,91 +1,79 @@
 ---
-title: Authentifizieren einer IMAP-, Pop-oder SMTP-Verbindung mit OAuth
-description: Erfahren Sie, wie Sie die OAuth-Authentifizierung mit ihren IMAP-, Pop-und SMTP-Anwendungen verwenden.
+title: Authentifizieren einer IMAP-, POP- oder SMTP-Verbindung mithilfe von OAuth
+description: Erfahren Sie, wie Sie die OAuth-Authentifizierung mit Ihren IMAP-, POP- und SMTP-Anwendungen verwenden.
 author: svpsiva
-ms.date: 02/19/2020
+ms.date: 07/08/2021
 ms.audience: Developer
-ms.openlocfilehash: 4662aa904ed162edcced6c096eac8cf636180f6a
-ms.sourcegitcommit: 37d4ecd4f469690ba1de87baad2f2f58c40c96ba
+ms.openlocfilehash: 4a307a6e329d5320b2b304d17a78a61db6d111bd
+ms.sourcegitcommit: 357b882a02e37b380a23b8a45b15f9c006a40b02
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49348815"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58764588"
 ---
-# <a name="authenticate-an-imap-pop-or-smtp-connection-using-oauth"></a>Authentifizieren einer IMAP-, Pop-oder SMTP-Verbindung mit OAuth
+# <a name="authenticate-an-imap-pop-or-smtp-connection-using-oauth"></a>Authentifizieren einer IMAP-, POP- oder SMTP-Verbindung mithilfe von OAuth
 
-Erfahren Sie, wie Sie mit der OAuth-Authentifizierung eine Verbindung mit IMAP-, Pop-oder SMTP-Protokollen herstellen und auf e-Mail-Daten für Office 365 Benutzer zugreifen.
+Erfahren Sie, wie Sie die OAuth-Authentifizierung verwenden, um eine Verbindung mit IMAP-, POP- oder SMTP-Protokollen herzustellen und auf E-Mail-Daten für Office 365 Benutzer zuzugreifen.
 
-> Die OAuth2-Unterstützung für IMAP-, Pop-und SMTP-Protokolle wie unten beschrieben wird sowohl für Microsoft 365 (einschließlich Office im Internet) als auch für Outlook.com-Benutzer unterstützt.
+> OAuth2-Unterstützung für IMAP-, POP- und SMTP-Protokolle wie unten beschrieben wird sowohl für Microsoft 365 (einschließlich Office im Web) als auch für Outlook.com-Benutzer unterstützt.
 
-Wenn Sie mit dem OAuth 2,0-Protokoll nicht vertraut sind, lesen Sie zunächst das [OAuth 2,0-Protokoll unter Microsoft Identity Platform Overview](/azure/active-directory/develop/active-directory-v2-protocols). Weitere Informationen zur Microsoft-Authentifizierung libariers (MSAL), die das OAuth 2,0-Protokoll zur Authentifizierung von Benutzern und zum Zugriff auf sichere APIs implementieren, finden Sie in der [MSAL-Übersicht](/azure/active-directory/develop/msal-overview).
+Wenn Sie nicht mit dem OAuth 2.0-Protokoll vertraut sind, lesen Sie zunächst das [OAuth 2.0-Protokoll auf Microsoft Identity Platform Übersicht.](/azure/active-directory/develop/active-directory-v2-protocols) Weitere Informationen zu Microsoft Authentication Libariers (MSAL), die das OAuth 2.0-Protokoll implementieren, um Benutzer zu authentifizieren und auf sichere APIs zuzugreifen, finden Sie in der [MSAL-Übersicht.](/azure/active-directory/develop/msal-overview)
 
-Sie können den von Azure Active Directory bereitgestellten OAuth-Authentifizierungsdienst verwenden, um Ihrer Anwendung die Verbindung mit IMAP-, Pop-oder SMTP-Protokollen für den Zugriff auf Exchange Online in Office 365 zu ermöglichen. Um OAuth mit Ihrer Anwendung zu verwenden, müssen Sie Folgendes tun:
+Sie können den von Azure Active Directory bereitgestellten OAuth-Authentifizierungsdienst verwenden, damit Ihre Anwendung eine Verbindung mit IMAP-, POP- oder SMTP-Protokollen herstellen kann, um auf Exchange Online in Office 365 zuzugreifen. Um OAuth mit Ihrer Anwendung zu verwenden, müssen Sie Folgendes ausführen:
 
 1. [Registrieren Sie Ihre Anwendung](#register-your-application) bei Azure Active Directory.
 1. [Konfigurieren Sie Ihre Anwendung](#configure-your-application) in Azure Active Directory.
-1. [Rufen Sie ein Zugriffstoken](#get-an-access-token) von einem tokenserver ab.
-1. [Authentifizierung von Verbindungsanforderungen](#authenticate-connection-requests) mit einem Zugriffstoken.
+1. [Rufen Sie ein Zugriffstoken](#get-an-access-token) von einem Tokenserver ab.
+1. [Authentifizieren von Verbindungsanforderungen](#authenticate-connection-requests) mit einem Zugriffstoken.
 
 ## <a name="register-your-application"></a>Registrieren der App
 
-Um OAuth verwenden zu können, muss eine Anwendung mit Azure Active Directory registriert sein.
+Um OAuth verwenden zu können, muss eine Anwendung bei Azure Active Directory registriert werden.
 
-Befolgen Sie die Anweisungen unter [Registrieren einer Anwendung mit der Microsoft Identity-Plattform](/azure/active-directory/develop/quickstart-register-app) , um eine neue Anwendung zu erstellen.
-
-## <a name="configure-your-application"></a>Konfigurieren der Anwendung
-
-Befolgen Sie die Anweisungen unter [Konfigurieren einer Clientanwendung für den Zugriff auf webapin](/azure/active-directory/develop/quickstart-configure-app-access-web-apis) aufgeführt.
-
-Stellen Sie sicher, dass Sie mindestens einen der folgenden Berechtigungs Bereiche hinzufügen, die den Protokollen entsprechen, die Sie integrieren möchten. Wählen Sie im Assistenten zum **Hinzufügen** von Berechtigungen **Microsoft Graph** und dann **Delegierte Berechtigungen** aus, um die folgenden Berechtigungs Bereiche zu finden.
-
-| Protokoll  | Berechtigungsbereich        |
-|-----------|-------------------------|
-| IMAP      | `IMAP.AccessAsUser.All` |
-| POP       | `POP.AccessAsUser.All`  |
-| SMTP-Authentifizierung | `SMTP.Send`             |
+Folgen Sie den Anweisungen unter [Registrieren einer Anwendung mit dem Microsoft Identity Platform,](/azure/active-directory/develop/quickstart-register-app) um eine neue Anwendung zu erstellen.
 
 ## <a name="get-an-access-token"></a>Abrufen eines Zugriffstokens
 
-Sie können eine unserer MSAL- [Clientbibliotheken](/azure/active-directory/develop/msal-overview) verwenden, um ein Zugriffstoken aus Ihrer Clientanwendung abzurufen.
+Sie können eine unserer [MSAL-Clientbibliotheken](/azure/active-directory/develop/msal-overview) verwenden, um ein Zugriffstoken von Ihrer Clientanwendung abzurufen.
 
-Alternativ können Sie einen geeigneten Fluss aus der folgenden Liste auswählen und die entsprechenden Schritte ausführen, um die zugrunde liegenden Identity Platform-Rest-APIs aufzurufen und ein Zugriffstoken abzurufen.
+Alternativ können Sie einen geeigneten Fluss aus der folgenden Liste auswählen und die entsprechenden Schritte ausführen, um die zugrunde liegenden Identitätsplattform-REST-APIs aufzurufen und ein Zugriffstoken abzurufen.
 
-1. [OAuth2-Autorisierungscode Fluss](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
-1. [OAuth2-Zuteilungs Fluss für Geräteautorisierung](/azure/active-directory/develop/v2-oauth2-device-code)
+1. [OAuth2-Autorisierungscodefluss](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
+1. [OAuth2-Geräte-Autorisierungsgenehmigungsfluss](/azure/active-directory/develop/v2-oauth2-device-code)
 
-OAuth-Zugriff auf IMAP-, Pop-, SMTP-AUTH-Protokolle über OAuth2-Clientanmeldeinformationen Grant Flow wird nicht unterstützt. Wenn Ihre Anwendung beständigen Zugriff auf alle Postfächer in einer Microsoft 365-Organisation benötigt, wird empfohlen, dass Sie die Microsoft Graph-APIs verwenden, die den Zugriff ohne Benutzer erlauben, granulare Berechtigungen aktivieren und Administratoren den Zugriff auf bestimmte Postfächer gewähren lassen.
+Der OAuth-Zugriff auf IMAP-, POP- und SMTP-AUTH-Protokolle über den Fluss zur Gewährung von OAuth2-Clientanmeldeinformationen wird nicht unterstützt. Wenn Ihre Anwendung beständigen Zugriff auf alle Postfächer in einer Microsoft 365 Organisation benötigt, wird empfohlen, dass Sie die Microsoft Graph-APIs verwenden, die den Zugriff ohne Benutzer zulassen, granulare Berechtigungen aktivieren und Administratoren den Zugriff auf einen bestimmten Satz von Postfächern gestatten.
 
-Stellen Sie sicher, dass Sie die vollständigen Bereiche angeben, einschließlich der Outlook-Ressourcen-URLs, wenn Sie Ihre Anwendung autorisieren und ein Zugriffstoken anfordern.
+Achten Sie darauf, die vollständigen Bereiche, einschließlich Outlook Ressourcen-URLs, anzugeben, wenn Sie Ihre Anwendung autorisieren und ein Zugriffstoken anfordern.
 
-| Protokoll  | Zeichenfolge für Berechtigungs Bereiche |
+| Protokoll  | Berechtigungsbereichszeichenfolge |
 |-----------|-------------------------|
 | IMAP      | `https://outlook.office.com/IMAP.AccessAsUser.All` |
 | POP       | `https://outlook.office.com/POP.AccessAsUser.All`  |
-| SMTP-Authentifizierung | `https://outlook.office.com/SMTP.Send`             |
+| SMTP AUTH | `https://outlook.office.com/SMTP.Send`             |
 
-Darüber hinaus können Sie [offline_access](/azure/active-directory/develop/v2-permissions-and-consent#offline_access) Bereich anfordern. Wenn ein Benutzer den offline_access Bereich genehmigt, kann die APP Aktualisierungstoken vom Microsoft Identity Platform-Token-Endpunkt empfangen. Aktualisierungstoken sind langlebig. Ihre APP kann neue Zugriffstoken erhalten, wenn ältere abgelaufen sind.
+Darüber hinaus können Sie [offline_access](/azure/active-directory/develop/v2-permissions-and-consent#offline_access) Bereich anfordern. Wenn ein Benutzer den offline_access Bereich genehmigt, kann Ihre App Aktualisierungstoken vom Microsoft Identity Platform Tokenendpunkt empfangen. Aktualisierungstoken sind langlebig. Ihre App kann neue Zugriffstoken abrufen, da ältere Ablauftoken ablaufen.
 
 ## <a name="authenticate-connection-requests"></a>Authentifizieren von Verbindungsanforderungen
 
-Sie können eine Verbindung mit Office 365 e-Mail-Servern mit den [IMAP-und Pop-e-Mail-Einstellungen für Office 365](https://support.office.com/article/pop-and-imap-email-settings-for-outlook-8361e398-8af4-4e97-b147-6c6c4ac95353)initiieren.
+Sie können eine Verbindung mit Office 365 E-Mail-Servern mithilfe der [IMAP- und POP-E-Mail-Einstellungen für Office 365](https://support.office.com/article/pop-and-imap-email-settings-for-outlook-8361e398-8af4-4e97-b147-6c6c4ac95353)initiieren.
 
 ### <a name="sasl-xoauth2"></a>SASL XOAUTH2
 
-Für die OAuth-Integration mit muss Ihre Anwendung das SASL-XOAUTH2-Format für die Codierung und Übertragung des Zugriffstokens verwenden. SASL XOAUTH2 codiert den Benutzernamen und das Zugriffstoken in folgendem Format:
+Die OAuth-Integration erfordert, dass Ihre Anwendung das SASL XOAUTH2-Format zum Codieren und Übertragen des Zugriffstokens verwendet. SASL XOAUTH2 codiert den Benutzernamen, zugriffstoken zusammen im folgenden Format:
 
 ```text
 base64("user=" + userName + "^Aauth=Bearer " + accessToken + "^A^A")
 ```
 
-`^A`stellt ein **Steuerelement**  +  **a** ( `%x01` ) dar.
+`^A`stellt ein **Steuerelement**  +  **A** ( `%x01` ) dar.
 
-Das SASL-XOAUTH2-Format für den Zugriff `test@contoso.onmicrosoft.com` mit Zugriffstoken `EwBAAl3BAAUFFpUAo7J3Ve0bjLBWZWCclRC3EoAA` lautet beispielsweise:
+Beispielsweise lautet das SASL XOAUTH2-Format für den Zugriff `test@contoso.onmicrosoft.com` mit zugriffstoken `EwBAAl3BAAUFFpUAo7J3Ve0bjLBWZWCclRC3EoAA` wie folgt:
 
 ```text
 base64("user=test@contoso.onmicrosoft.com^Aauth=Bearer EwBAAl3BAAUFFpUAo7J3Ve0bjLBWZWCclRC3EoAA^A^A")
 ```
 
-Nach Base64-Codierung wird dies in die folgende Zeichenfolge übersetzt. Beachten Sie, dass Zeilenumbrüche zur Lesbarkeit eingefügt werden.
+Nach der Base64-Codierung wird dies in die folgende Zeichenfolge übersetzt. Beachten Sie, dass Zur besseren Lesbarkeit Zeilenumbrüche eingefügt werden.
 
 ```text
 dXNlcj10ZXN0QGNvbnRvc28ub25taWNyb3NvZnQuY29tAWF1dGg9QmVhcmVy
@@ -94,17 +82,17 @@ IEV3QkFBbDNCQUFVRkZwVUFvN0ozVmUwYmpMQldaV0NjbFJDM0VvQUEBAQ==
 
 ### <a name="sasl-xoauth2-authentication-for-shared-mailboxes-in-office-365"></a>SASL XOAUTH2-Authentifizierung für freigegebene Postfächer in Office 365
 
-Für den Zugriff auf freigegebene Postfächer mithilfe von OAuth muss die Anwendung das Zugriffstoken im Namen eines Benutzers abrufen, aber das Benutzername-Feld in der codierten SASL XOAUTH2-Zeichenfolge durch die e-Mail-Adresse des freigegebenen Postfachs ersetzen. 
+Im Fall des freigegebenen Postfachzugriffs mit OAuth muss die Anwendung das Zugriffstoken im Namen eines Benutzers abrufen, aber das Feld "userName" in der SASL XOAUTH2-codierten Zeichenfolge durch die E-Mail-Adresse des freigegebenen Postfachs ersetzen. 
 
-### <a name="imap-protocol-exchange"></a>IMAP-Protokollaustausch
+### <a name="imap-protocol-exchange"></a>IMAP-Protokoll Exchange
 
-Damit eine IMAP-Serververbindung authentifiziert werden kann, muss der Client mit einem `AUTHENTICATE` Befehl im folgenden Format Antworten:
+Um eine IMAP-Serververbindung zu authentifizieren, muss der Client mit einem `AUTHENTICATE` Befehl im folgenden Format antworten:
 
 ```text
 AUTHENTICATE XOAUTH2 <base64 string in XOAUTH2 format>
 ```
 
-Beispiel für einen Client-Server-Nachrichtenaustausch, der zu einem Authentifizierungs Erfolg führt:
+Beispiel für einen Client-Server-Nachrichtenaustausch, der zu einem Erfolg der Authentifizierung führt:
 
 ```text
 [connection begins]
@@ -125,16 +113,16 @@ C: A01 AUTHENTICATE XOAUTH2 dXNlcj1zb21ldXNlckBleGFtcGxlLmNvbQFhdXRoPUJlYXJlciB5
 S: A01 NO AUTHENTICATE failed.
 ```
 
-### <a name="pop-protocol-exchange"></a>Austausch von Pop-Protokollen
+### <a name="pop-protocol-exchange"></a>POP-Protokoll Exchange
 
-Zur Authentifizierung einer Pop-Serververbindung muss der Client mit einem Befehl Antworten, der `AUTH` in zwei Zeilen im folgenden Format aufgeteilt wird:    
+Um eine POP-Serververbindung zu authentifizieren, muss der Client mit einem Befehl antworten, `AUTH` der in zwei Zeilen im folgenden Format aufgeteilt ist:    
 
 ```text 
 AUTH XOAUTH2 
 <base64 string in XOAUTH2 format>   
 ``` 
 
-Beispiel für einen Client-Server-Nachrichtenaustausch, der zu einem Authentifizierungs Erfolg führt:    
+Beispiel für einen Client-Server-Nachrichtenaustausch, der zu einem Erfolg der Authentifizierung führt:    
 
 ```text 
 [connection begins] 
@@ -159,15 +147,15 @@ l0Q2cBAQ=
 S: -ERR Authentication failure: unknown user name or bad password.  
 ```
 
-### <a name="smtp-protocol-exchange"></a>SMTP-Protokollaustausch
+### <a name="smtp-protocol-exchange"></a>SMTP-Protokoll Exchange
 
-Zur Authentifizierung einer SMTP-Serververbindung muss der Client mit einem `AUTH` Befehl im folgenden Format Antworten:
+Um eine SMTP-Serververbindung zu authentifizieren, muss der Client mit einem `AUTH` Befehl im folgenden Format antworten:
 
 ```text
 AUTH XOAUTH2 <base64 string in XOAUTH2 format>
 ```
 
-Beispiel für einen Client-Server-Nachrichtenaustausch, der zu einem Authentifizierungs Erfolg führt:
+Beispiel für einen Client-Server-Nachrichtenaustausch, der zu einem Erfolg der Authentifizierung führt:
 
 ```text
 [connection begins]
@@ -195,7 +183,7 @@ S: 535 5.7.3 Authentication unsuccessful [SN2PR00CA0018.namprd00.prod.outlook.co
 ## <a name="see-also"></a>Siehe auch
 
 - [Authentifizierung und EWS in Exchange](../exchange-web-services/authentication-and-ews-in-exchange.md)
-- [IMAP-, Pop-Verbindungseinstellungen](https://support.office.com/article/pop-and-imap-email-settings-for-outlook-8361e398-8af4-4e97-b147-6c6c4ac95353)
-- [Internet-Nachrichtenzugriffs Protokoll](https://tools.ietf.org/html/rfc3501)
-- [Post Office-Protokoll](https://tools.ietf.org/html/rfc1081)
+- [IMAP- und POP-Verbindungseinstellungen](https://support.office.com/article/pop-and-imap-email-settings-for-outlook-8361e398-8af4-4e97-b147-6c6c4ac95353)
+- [Internet Message Access Protocol](https://tools.ietf.org/html/rfc3501)
+- [Post Office Protocol](https://tools.ietf.org/html/rfc1081)
 - [SMTP-Diensterweiterung für die Authentifizierung](https://tools.ietf.org/html/rfc4954)

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d3139fef-0455-4b89-babd-5d6783b50a58
-description: Das Changes-Element enthält ein Sequenz Array von Änderungstypen, die die Arten von Unterschieden zwischen den Elementen auf dem Client und den Elementen auf dem Exchange-Server darstellen.
-ms.openlocfilehash: 6fda7b5602f172bae84ad7b211db2811def4f883
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Changes-Element enthält ein Sequenzarray von Änderungstypen, die die Arten von Unterschieden zwischen den Elementen auf dem Client und den Elementen auf dem Exchange-Server darstellen.
+ms.openlocfilehash: ede81d8ecae9751c477ae05cbd13f914fedf8e0f
+ms.sourcegitcommit: 357b882a02e37b380a23b8a45b15f9c006a40b02
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463265"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58764630"
 ---
 # <a name="changes-items"></a>Änderungen (Elemente)
 
-Das **Changes** -Element enthält ein Sequenz Array von Änderungstypen, die die Arten von Unterschieden zwischen den Elementen auf dem Client und den Elementen auf dem Exchange-Server darstellen. 
+Das **Changes-Element** enthält ein Sequenzarray von Änderungstypen, die die Typen der Unterschiede zwischen den Elementen auf dem Client und den Elementen auf dem Exchange-Server darstellen. 
   
 [SyncFolderItemsResponse](syncfolderitemsresponse.md)
   
@@ -36,6 +36,7 @@ Das **Changes** -Element enthält ein Sequenz Array von Änderungstypen, die die
    <Create/>
    <Update/>
    <Delete/>
+   <ReadFlagChange/>
 </Changes>
 ```
 
@@ -52,20 +53,20 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Erstellen (ItemSync)](create-itemsync.md) <br/> |Identifiziert ein einzelnes Element, das im lokalen Clientspeicher erstellt werden soll.  <br/> |
+|[Create (ItemSync)](create-itemsync.md) <br/> |Identifiziert ein einzelnes Element, das im lokalen Clientspeicher erstellt werden soll.  <br/> |
 |[Update (ItemSync)](update-itemsync.md) <br/> |Identifiziert ein einzelnes Element, das im lokalen Clientspeicher aktualisiert werden soll.  <br/> |
 |[Delete (ItemSync)](delete-itemsync.md) <br/> |Identifiziert ein einzelnes Element, das im lokalen Clientspeicher gelöscht werden soll.  <br/> |
-|[ReadFlagChange](readflagchange.md) <br/> |Wird in [SyncFolderItems-Vorgangs](syncfolderitems-operation.md) Antworten zurückgegeben, wenn ein Element gelesen wurde. Diese Eigenschaft ist schreibgeschützt.  <br/> |
+|[ReadFlagChange](readflagchange.md) <br/> |Wird in [SyncFolderItems-Vorgangsantworten](syncfolderitems-operation.md) zurückgegeben, wenn ein Element gelesen wurde. Diese Eigenschaft ist schreibgeschützt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer [SyncFolderItems-Vorgangs](syncfolderitems-operation.md) Anforderung.  <br/> |
+|[SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer [SyncFolderItems-Vorgangsanforderung.](syncfolderitems-operation.md)  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
@@ -73,7 +74,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
