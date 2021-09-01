@@ -1,5 +1,5 @@
 ---
-title: Manager Mailbox
+title: ManagerMailbox
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,19 +8,21 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 70c324d5-2196-406d-a674-73323f8d8b92
 description: Das ManagerMailbox -Element enthält die SMTP-Informationen, das Postfach des Vorgesetzten des Kontakts identifiziert.
-ms.openlocfilehash: da9e26c3efdd22000694839f5962a6bb0256f748
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c30a343ad7071e92c826925407f8447ae6baccae
+ms.sourcegitcommit: 63e48eaf2891a6db1a718b55cd69e3a0433c4a9c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44453966"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "58851114"
 ---
-# <a name="managermailbox"></a>Manager Mailbox
+# <a name="managermailbox"></a>ManagerMailbox
 
 Das **ManagerMailbox** -Element enthält die SMTP-Informationen, das Postfach des Vorgesetzten des Kontakts identifiziert. 
   
 ```XML
-<ManagerMailbox/>
+<ManagerMailbox>
+   <Mailbox/>
+</ManagerMailbox>
 ```
 
  **SingleRecipientType**
@@ -34,18 +36,16 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-Keine.
+|**Element**|**Beschreibung**|
+|:-----|:-----|
+|[Postfach](mailbox.md) <br/> |Identifiziert ein E-Mail-aktiviertes Active Directory-Objekt, das den Absender identifiziert.  <br/> |
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Elementname**|**Beschreibung**|
 |:-----|:-----|
 |[Kontaktperson](contact.md) <br/> |Stellt ein Kontaktelement im Exchange-Speicher.  <br/> |
-   
-## <a name="text-value"></a>Textwert
 
-Keine.
-  
 ## <a name="remarks"></a>Bemerkungen
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
