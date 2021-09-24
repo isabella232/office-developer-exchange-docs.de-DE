@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 43db26e1-f7be-49fd-b26b-fc1b10bd3458
 description: Das Setting-Element stellt eine zurückzugebende Konfigurationseinstellung dar.
-ms.openlocfilehash: df3b55fe7ba2c5ae92f8c31ec0643dbe100fa072
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 2e03bfacaf36676ee4687c148f3b08732a9f17b1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466745"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539143"
 ---
 # <a name="setting-soap"></a>Einstellung (SOAP)
 
-Das **Setting** -Element stellt eine zurückzugebende Konfigurationseinstellung dar. 
+Das **Setting-Element** stellt eine zurückzugebende Konfigurationseinstellung dar. 
   
 ```XML
 <Setting/>
@@ -50,75 +50,75 @@ Der Textwert für dieses Element ist die Konfigurationseinstellung. In der folge
 |**Konfigurationseinstellung**|**Beschreibung**|
 |:-----|:-----|
 |UserDisplayName  <br/> |Der Anzeigename des Benutzers.  <br/> |
-|BenutzerDN  <br/> |Der Distinguished Name der Vorgängerversion des Benutzers.  <br/> |
-|UserDeploymentId  <br/> |Die Bereitstellungs-ID des Benutzers.  <br/> |
+|UserDN  <br/> |Der alte Distinguished Name des Benutzers.  <br/> |
+|UserDeploymentId  <br/> |Der Bereitstellungsbezeichner des Benutzers.  <br/> |
 |InternalMailboxServer  <br/> |Der vollqualifizierte Domänenname (FQDN) des Postfachservers.  <br/> |
 |InternalRpcClientServer  <br/> |Der vollqualifizierte Domänenname des RPC-Clientservers.  <br/> |
-|InternalMailboxServerDN  <br/> |Der Distinguished Name des Legacy-Postfachservers.  <br/> |
-|InternalEcpUrl  <br/> |Die interne URL der Exchange-Systemsteuerung.  <br/> |
-|InternalEcpVoicemailUrl  <br/> |Die interne URL der Exchange-Systemsteuerung für die Voicemail-Anpassung.  <br/> |
-|InternalEcpEmailSubscriptionsUrl  <br/> |Die interne URL der Exchange-Systemsteuerung für e-Mail-Abonnements.  <br/> |
-|InternalEcpTextMessagingUrl  <br/> |Die interne URL der Exchange-Systemsteuerung für Text Nachrichten.  <br/> |
-|InternalEcpDeliveryReportUrl  <br/> |Die interne URL der Exchange-Systemsteuerung für Zustellungsberichte.  <br/> |
+|InternalMailboxServerDN  <br/> |Der alte Distinguished Name des Postfachservers.  <br/> |
+|InternalEcpUrl  <br/> |Die interne URL der Exchange Systemsteuerung.  <br/> |
+|InternalEcpVoicemailUrl  <br/> |Die interne URL der Exchange Systemsteuerung für die Anpassung von VoiceMail.  <br/> |
+|InternalEcpEmailSubscriptionsUrl  <br/> |Die interne URL der Exchange Systemsteuerung für E-Mail-Abonnements.  <br/> |
+|InternalEcpTextMessagingUrl  <br/> |Die interne URL der Exchange Systemsteuerung für Textnachrichten.  <br/> |
+|InternalEcpDeliveryReportUrl  <br/> |Die interne URL der Exchange Systemsteuerung für Übermittlungsberichte.  <br/> |
 |InternalEcpRetentionPolicyTagsUrl  <br/> |Die interne URL der Exchange-Systemsteuerung für RetentionPolicy-Tags.  <br/> |
-|InternalEcpPublishingUrl  <br/> |Die interne URL der Exchange-Systemsteuerung für die Veröffentlichung.  <br/> |
-|InternalEwsUrl  <br/> |Die interne URL von Exchange Webdienste.  <br/> |
+|InternalEcpPublishingUrl  <br/> |Die interne URL der Exchange Systemsteuerung für die Veröffentlichung.  <br/> |
+|InternalEwsUrl  <br/> |Die interne URL von Exchange Webdiensten.  <br/> |
 |InternalOABUrl  <br/> |Die interne URL des Offlineadressbuchs (OAB).  <br/> |
 |InternalUMUrl  <br/> |Die interne URL der Unified Messaging-Dienste.  <br/> |
-|InternalWebClientUrls  <br/> |Die internen URLs des Exchange-Webclients.  <br/> |
+|InternalWebClientUrls  <br/> |Die internen URLs des Exchange Webclients.  <br/> |
 |MailboxDN  <br/> |Der Distinguished Name der Postfachdatenbank des Postfachs des Benutzers.  <br/> |
-|PublicFolderServer  <br/> |Der Name des Servers für Öffentliche Ordner.  <br/> |
-|ActiveDirectoryServer  <br/> |Der Name des Active Directory Servers.  <br/> |
-|ExternalMailboxServer  <br/> |Der Name des RPC-über-HTTP-Servers.  <br/> |
-|ExternalMailboxServerRequiresSSL  <br/> |Das Kennzeichen, ob der RPC-über-HTTP-Server SSL erfordert.  <br/> |
-|ExternalMailboxServerAuthenticationMethods  <br/> |Die vom RPC-über-HTTP-Server unterstützten Authentifizierungsmethoden.  <br/> |
-|EcpVoicemailUrlFragment,  <br/> |Das URL-Fragment der Exchange-Systemsteuerung für die Voicemail-Anpassung.  <br/> |
-|EcpEmailSubscriptionsUrlFragment  <br/> |Das URL-Fragment der Exchange-Systemsteuerung für e-Mail-Abonnements.  <br/> |
-|EcpTextMessagingUrlFragment  <br/> |Das URL-Fragment der Exchange-Systemsteuerung für Text Nachrichten.  <br/> |
-|EcpDeliveryReportUrlFragment  <br/> |Das URL-Fragment der Exchange-Systemsteuerung für Zustellungsberichte.  <br/> |
-|EcpRetentionPolicyTagsUrlFragment  <br/> |Das URL-Fragment der Exchange-Systemsteuerung für RetentionPolicy-Tags.  <br/> |
-|EcpPublishingUrlFragment  <br/> |Das URL-Fragment der Exchange-Systemsteuerung für die Veröffentlichung.  <br/> |
-|ExternalEcpUrl  <br/> |Die externe URL der Exchange-Systemsteuerung.  <br/> |
-|ExternalEcpVoicemailUrl  <br/> |Die externe URL der Exchange-Systemsteuerung für die Voicemail-Anpassung.  <br/> |
-|ExternalEcpEmailSubscriptionsUrl  <br/> |Die externe URL der Exchange-Systemsteuerung für e-Mail-Abonnements.  <br/> |
-|ExternalEcpTextMessagingUrl  <br/> |Die externe URL der Exchange-Systemsteuerung für Text Nachrichten.  <br/> |
-|ExternalEcpDeliveryReportUrl  <br/> |Die externe URL der Exchange-Systemsteuerung für Zustellungsberichte.  <br/> |
+|PublicFolderServer  <br/> |Der Name des Servers für öffentliche Ordner.  <br/> |
+|ActiveDirectoryServer  <br/> |Der Name des Active Directory-Servers.  <br/> |
+|ExternalMailboxServer  <br/> |Der Name des RPC über HTTP-Server.  <br/> |
+|ExternalMailboxServerRequiresSSL  <br/> |Der Indikator dafür, ob der RPC über HTTP-Server SSL erfordert.  <br/> |
+|ExternalMailboxServerAuthenticationMethods  <br/> |Die Authentifizierungsmethoden, die vom RPC über HTTP-Server unterstützt werden.  <br/> |
+|EcpVoicemailUrlFragment,  <br/> |Das URL-Fragment der Exchange Systemsteuerung für die VoiceMailanpassung.  <br/> |
+|EcpEmailSubscriptionsUrlFragment  <br/> |Das URL-Fragment der Exchange Systemsteuerung für E-Mail-Abonnements.  <br/> |
+|EcpTextMessagingUrlFragment  <br/> |Das URL-Fragment der Exchange Systemsteuerung für Textnachrichten.  <br/> |
+|EcpDeliveryReportUrlFragment  <br/> |Das URL-Fragment der Exchange Systemsteuerung für Übermittlungsberichte.  <br/> |
+|EcpRetentionPolicyTagsUrlFragment  <br/> |Das URL-Fragment der Exchange Systemsteuerung für RetentionPolicy-Tags.  <br/> |
+|EcpPublishingUrlFragment  <br/> |Das URL-Fragment der Exchange Systemsteuerung für die Veröffentlichung.  <br/> |
+|ExternalEcpUrl  <br/> |Die externe URL der Exchange Systemsteuerung.  <br/> |
+|ExternalEcpVoicemailUrl  <br/> |Die externe URL der Exchange Systemsteuerung für die VoiceMailanpassung.  <br/> |
+|ExternalEcpEmailSubscriptionsUrl  <br/> |Die externe URL der Exchange Systemsteuerung für E-Mail-Abonnements.  <br/> |
+|ExternalEcpTextMessagingUrl  <br/> |Die externe URL der Exchange Systemsteuerung für Textnachrichten.  <br/> |
+|ExternalEcpDeliveryReportUrl  <br/> |Die externe URL der Exchange Systemsteuerung für Übermittlungsberichte.  <br/> |
 |ExternalEcpRetentionPolicyTagsUrl  <br/> |Die externe URL der Exchange-Systemsteuerung für RetentionPolicy-Tags.  <br/> |
 |ExternalEcpPublishingUrl  <br/> |Die externe URL der Exchange-Systemsteuerung für die Veröffentlichung.  <br/> |
-|ExternalEwsUrl  <br/> |Die externe URL der Exchange-Webdienste.  <br/> |
+|ExternalEwsUrl  <br/> |Die externe URL der Exchange Webdienste.  <br/> |
 |ExternalOABUrl  <br/> |Die externe URL des OAB.  <br/> |
 |ExternalUMUrl  <br/> |Die externe URL der Unified Messaging-Dienste.  <br/> |
-|ExternalWebClientUrls  <br/> |Die externen URLs des Exchange-Webclients.  <br/> |
+|ExternalWebClientUrls  <br/> |Die externen URLs des Exchange Webclients.  <br/> |
 |CrossOrganizationSharingEnabled  <br/> |Gibt an, dass die organisationsübergreifende Freigabe aktiviert ist.  <br/> |
-|AlternateMailboxes  <br/> |Auflistung von alternativen Postfächern.  <br/> |
-|CasVersion  <br/> |Die Version des Client Zugriffsservers, der die Anforderung bedient (beispielsweise 14. xx. JJJJ. ZZZ  <br/> |
-|EwsSupportedSchemas  <br/> |Eine durch trennzeichengetrennte Liste von Schemaversionen, die von Exchange Webdienste unterstützt werden. Die Schema Versionswerte sind identisch mit den Werten der **ExchangeServerVersion** -Aufzählung.  <br/> |
-|InternalPop3Connections  <br/> |Die Liste der internen Verbindungseinstellungen für POP3-Protokoll Verbindungen.  <br/> |
-|ExternalPop3Connections  <br/> |Die Liste Externe Verbindungseinstellungen für POP3-Protokoll Verbindungen.  <br/> |
-|InternalImap4Connections  <br/> |Die Liste der internen Verbindungseinstellungen für IMAP4-Protokoll Verbindungen.  <br/> |
-|ExternalImap4Connections  <br/> |Die Liste Externe Verbindungseinstellungen für IMAP4-Protokoll Verbindungen.  <br/> |
-|InternalSmtpConnections  <br/> |Die Liste der internen Verbindungseinstellungen für SMTP-Verbindungen.  <br/> |
-|ExternalSmtpConnections  <br/> |Die Liste Externe Verbindungseinstellungen für SMTP-Verbindungen.  <br/> |
-|InternalServerExclusiveConnect  <br/> |Das exklusive Connect-Flag für interne Server. Bei Festlegung auf "aus" sollten Clients nicht über dieses Protokoll eine Verbindung herstellen.  <br/> |
-|ExternalServerExclusiveConnect  <br/> |Das exklusive Connect-Flag für externe Server. Bei Festlegung auf "on" sollten Clients über dieses Protokoll eine Verbindung herstellen.  <br/> |
-|ExchangeRpcUrl  <br/> |Die URL, die für Remote Prozeduraufrufe verwendet wurde. Diese URL ist auf dem Server intern und darf nicht von Clients verwendet werden.  <br/> |
-|ShowGalAsDefaultView  <br/> |Gibt einen booleschen Wert an, der angibt, ob die GAL als Adressbuch angezeigt werden soll. Der Textwert "true" gibt an, dass die GAL standardmäßig angezeigt werden soll. Der Textwert "false" gibt an, dass die Kontaktlisteangezeigt werden soll.  <br/> |
-|AutoDiscoverSMTPAddress  <br/> |Die primäre SMTP-Adresse der AutoErmittlung für den Benutzer. Dies ist die Proxyadresse anstelle der e-Mail-Adresse des Benutzers, wenn eine Proxyadresse vorhanden ist.  <br/> |
-|InteropExternalEwsUrl  <br/> |Die externe URL des Webdienst-Endpunkts des Servers. Dies ist die URL zu einem Server, der Postfächer bereitstellen kann, die auf einem Server gehostet werden, der nicht über die Webdienste verfügt.  <br/> |
-|ExternalEwsVersion  <br/> |Die Version des Webdienste-Servers, der die angegebene Anforderung abgibt.  <br/> |
-|InteropExternalEwsVersion  <br/> |Die Version des Servers InteropExternalEwsUrl zeigt auf.  <br/> |
-|MobileMailboxPolicyInterop  <br/> |Die Einstellungen für Mobile Postfachrichtlinien.  <br/> |
-|GroupingInformation  <br/> |Ein Wert, der in Verbindung mit der ExternalEwsUrl-Einstellung verwendet wird, um mehrere Postfächer zusammen zu gruppieren, um die Affinität beim Abonnieren von Benachrichtigungen [beizubehalten](https://msdn.microsoft.com/library/1bda4094-88c3-4f61-9219-6ee70f6e81cf%28Office.15%29.aspx) .  <br/> |
+|AlternateMailboxes  <br/> |Sammlung alternativer Postfächer.  <br/> |
+|CasVersion  <br/> |Die Version des Clientzugriffsservers, der die Anforderung bedient (z. B. 14.XX.YYYY. ZZZ)  <br/> |
+|EwsSupportedSchemas  <br/> |Eine durch Trennzeichen getrennte Liste von Schemaversionen, die von Exchange Webdiensten unterstützt werden. Die Schemaversionswerte entsprechen den Werten der **ExchangeServerVersion-Enumeration.**  <br/> |
+|InternalPop3Connections  <br/> |Die interne Verbindungseinstellungsliste für POP3-Protokollverbindungen.  <br/> |
+|ExternalPop3Connections  <br/> |Die Liste der externen Verbindungseinstellungen für POP3-Protokollverbindungen.  <br/> |
+|InternalImap4Connections  <br/> |Die interne Verbindungseinstellungsliste für IMAP4-Protokollverbindungen.  <br/> |
+|ExternalImap4Connections  <br/> |Die Liste der externen Verbindungseinstellungen für IMAP4-Protokollverbindungen.  <br/> |
+|InternalSmtpConnections  <br/> |Die interne Verbindungseinstellungsliste für SMTP-Verbindungen.  <br/> |
+|ExternalSmtpConnections  <br/> |Die Liste der externen Verbindungseinstellungen für SMTP-Verbindungen.  <br/> |
+|InternalServerExclusiveConnect  <br/> |Das flag für die exklusive Verbindung des internen Servers. Wenn der Wert auf "Aus" festgelegt ist, SOLLTEN Clients keine Verbindung über dieses Protokoll herstellen.  <br/> |
+|ExternalServerExclusiveConnect  <br/> |Das Flag für die exklusive Verbindung des externen Servers. Wenn der Wert auf "Ein" festgelegt ist, SOLLTEN Clients über dieses Protokoll eine Verbindung herstellen.  <br/> |
+|ExchangeRpcUrl  <br/> |Die URL, die für Remoteprozeduraufrufe verwendet wurde. Diese URL ist serverintern und darf nicht von Clients verwendet werden.  <br/> |
+|ShowGalAsDefaultView  <br/> |Gibt einen booleschen Wert, der angibt, ob die GAL als Adressbuch angezeigt werden soll. Der Textwert "true" gibt an, dass die GAL standardmäßig angezeigt werden soll. Der Textwert "false" gibt an, dass die Kontaktliste angezeigt werden soll.  <br/> |
+|AutoDiscoverSMTPAddress  <br/> |Die primäre SMTP-Adresse der AutoErmittlung für den Benutzer. Dies ist die Proxyadresse anstelle der E-Mail-Adresse des Benutzers, wenn eine Proxyadresse vorhanden ist.  <br/> |
+|InteropExternalEwsUrl  <br/> |Die externe URL des Webdienstendpunkts des Servers. Dies ist die URL zu einem Server, der Postfächer bereitstellen kann, die auf einem Server gehostet werden, der nicht über die Webdienste verfügt.  <br/> |
+|ExternalEwsVersion  <br/> |Die Version des Webdienstservers, der die angegebene Anforderung übermittelt.  <br/> |
+|InteropExternalEwsVersion  <br/> |Die Version des Servers InteropExternalEwsUrl verweist auf.  <br/> |
+|MobileMailboxPolicyInterop  <br/> |Die Richtlinieneinstellungen für mobile Postfächer.  <br/> |
+|GroupingInformation  <br/> |Ein Wert, der in Verbindung mit der ExternalEwsUrl-Einstellung verwendet wird, um mehrere Postfächer zu gruppieren, um die [Affinität](https://msdn.microsoft.com/library/1bda4094-88c3-4f61-9219-6ee70f6e81cf%28Office.15%29.aspx) beim Abonnieren von Benachrichtigungen beizubehalten.  <br/> |
 |UserMSOnline  <br/> |Ein boolescher Wert, der angibt, ob das Postfach des Benutzers in Exchange Online oder Exchange Online als Teil Office 365 gehostet wird.  <br/> |
-|MapiHttpEnabled  <br/> |Ein boolescher Wert, der angibt, ob über das MAPI/http-Protokoll auf das Postfach des Benutzers zugegriffen werden kann.  <br/> |
+|MapiHttpEnabled  <br/> |Ein boolescher Wert, der angibt, ob auf das Postfach des Benutzers über das MAPI/HTTP-Protokoll zugegriffen werden kann.  <br/> |
    
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -1,27 +1,27 @@
 ---
-title: Isexception
+title: IsException
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsException
 api_type:
 - schema
 ms.assetid: e7bd8ae2-2643-411e-ae08-358bac445800
-description: Das isexception-Element gibt an, ob eine Instanz eines wiederkehrenden Kalenderelements aus dem Master-Objekt geändert wird.
-ms.openlocfilehash: f2e45e0f1010449d4a494f5e15ecd0b22dc598e4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IsException-Element gibt an, ob eine Instanz eines wiederkehrenden Kalenderelements vom Master geändert wird.
+ms.openlocfilehash: 1c96808f061e9b7b807f2fb1cd16c487592d0f2b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457585"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520367"
 ---
-# <a name="isexception"></a>Isexception
+# <a name="isexception"></a>IsException
 
-Das **isexception** -Element gibt an, ob eine Instanz eines wiederkehrenden Kalenderelements aus dem Master-Objekt geändert wird. 
+Das **IsException-Element** gibt an, ob eine Instanz eines wiederkehrenden Kalenderelements vom Master geändert wird. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -37,7 +37,7 @@ Das **isexception** -Element gibt an, ob eine Instanz eines wiederkehrenden Kale
   
 [CalendarEventDetails](calendareventdetails.md)
   
-[Isexception](isexception.md)
+[IsException](isexception.md)
   
 ```xml
 <IsException/>
@@ -60,13 +60,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CalendarEventDetails](calendareventdetails.md) <br/> |Enthält zusätzliche Informationen zu einem Kalenderereignis.  <br/> Im folgenden finden Sie den XPath 2,0-Ausdruck für dieses Element:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
+|[CalendarEventDetails](calendareventdetails.md) <br/> |Stellt zusätzliche Informationen zu einem Kalenderereignis bereit.  <br/> Es folgt der XPath 2.0-Ausdruck für dieses Element:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich, wenn dieses Element in der Antwort zurückgegeben wird. Dieses Element ist erforderlich, wenn das [CalendarEventDetails](calendareventdetails.md) -Element verwendet wird. 
+Wenn dieses Element in der Antwort zurückgegeben wird, ist ein Textwert erforderlich. Dieses Element ist erforderlich, wenn das [CalendarEventDetails-Element](calendareventdetails.md) verwendet wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -88,5 +88,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

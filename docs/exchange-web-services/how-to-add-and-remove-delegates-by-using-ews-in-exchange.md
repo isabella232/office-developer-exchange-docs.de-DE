@@ -3,40 +3,40 @@ title: Hinzufügen und Entfernen von Delegaten mithilfe der EWS in Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cc7760bf-633b-483a-84ae-b52f437af2d3
-description: In diesem Artikel erfahren Sie, wie Sie Stellvertretungen für Benutzerpostfächer mithilfe der verwaltete EWS-API oder EWS in Exchange hinzufügen oder entfernen.
-ms.openlocfilehash: 9db0171db51c0847d54bbcec7e28937eaed18d43
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Erfahren Sie, wie Sie Mithilfe der verwalteten EWS-API oder EWS in Exchange Stellvertretungen zu den Postfächern von Benutzern hinzufügen oder Stellvertretungen aus den Postfächern von Benutzern entfernen.
+ms.openlocfilehash: 67370360e24da55b7a908d0a34b7ac1ec949877d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455338"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520206"
 ---
 # <a name="add-and-remove-delegates-by-using-ews-in-exchange"></a>Hinzufügen und Entfernen von Delegaten mithilfe der EWS in Exchange
 
-In diesem Artikel erfahren Sie, wie Sie Stellvertretungen für Benutzerpostfächer mithilfe der verwaltete EWS-API oder EWS in Exchange hinzufügen oder entfernen.
+Erfahren Sie, wie Sie Mithilfe der verwalteten EWS-API oder EWS in Exchange Stellvertretungen zu den Postfächern von Benutzern hinzufügen oder Stellvertretungen aus den Postfächern von Benutzern entfernen.
   
-Sie können die verwaltete EWS-API oder EWS verwenden, um Stellvertretungen zu aktivieren, die im Auftrag eines Postfachbesitzers agieren oder den Zugriff einer Stellvertretung auf ein Postfach entfernen. Benutzer, die als Stellvertretung hinzugefügt und Berechtigungen erteilt werden, können Aufgaben im Namen des Postfachbesitzers ausführen. Sie können beispielsweise Besprechungseinladungen erstellen und senden, e-Mails senden und auf Besprechungsanfragen im Namen des Postfachbesitzers Antworten. 
+Sie können die verwaltete EWS-API oder EWS verwenden, um Stellvertretungen zu ermöglichen, im Namen eines Postfachbesitzers zu handeln oder den Zugriff eines Stellvertreters auf ein Postfach zu entfernen. Benutzer, die als Stellvertretung hinzugefügt werden und Berechtigungen erhalten, können Aufgaben im Namen des Postfachbesitzers ausführen. Sie können beispielsweise Besprechungseinladungen erstellen und senden, E-Mails senden und im Namen des Postfachbesitzers auf Besprechungsanfragen antworten. 
   
-**Tabelle 1. Verwaltete EWS-API Methoden und EWS-Vorgänge zum Hinzufügen und Entfernen von Delegaten**
+**Tabelle 1. EWS Managed API-Methoden und EWS-Vorgänge zum Hinzufügen und Entfernen von Delegaten**
 
 |**Aufgabe**|**EWS Managed API-Methode**|**EWS-Vorgang**|
 |:-----|:-----|:-----|
-|Hinzufügen von Stellvertretungen  <br/> |[Datei "ExchangeService. adddelegates](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.adddelegates%28v=exchg.80%29.aspx) <br/> |[AddDelegate](https://msdn.microsoft.com/library/646fb994-229e-4d90-8b95-6541191cb3ae%28Office.15%29.aspx) <br/> |
-|Entfernen von Stellvertretungen  <br/> |[Datei "ExchangeService. RemoveDelegates](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.removedelegates%28v=exchg.80%29.aspx) <br/> |[RemoveDelegate](https://msdn.microsoft.com/library/f21c5171-62e7-47c8-99b1-22e1ff5883bb%28Office.15%29.aspx) <br/> |
+|Hinzufügen von Delegaten  <br/> |[ExchangeService.AddDelegates](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.adddelegates%28v=exchg.80%29.aspx) <br/> |[AddDelegate](https://msdn.microsoft.com/library/646fb994-229e-4d90-8b95-6541191cb3ae%28Office.15%29.aspx) <br/> |
+|Entfernen von Delegaten  <br/> |[ExchangeService.RemoveDelegates](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.removedelegates%28v=exchg.80%29.aspx) <br/> |[RemoveDelegate](https://msdn.microsoft.com/library/f21c5171-62e7-47c8-99b1-22e1ff5883bb%28Office.15%29.aspx) <br/> |
    
-Nachdem einer Stellvertretung Berechtigungen für einen Ordner erteilt wurden, können Sie Elemente im Ordner und alle Unterordner entsprechend den [Berechtigungen des Stellvertreters](delegate-access-and-ews-in-exchange.md#bk_delegateperms)bearbeiten. Berechtigungen für Stellvertretungen gelten nur für Unterordner, die erstellt werden, nachdem der Stell Vertretungszugriff erteilt wurde. Informationen zum Aktualisieren von Ordnerberechtigungen für bereits vorhandene Ordner oder andere Ordner finden Sie unter [Festlegen von Ordnerberechtigungen für einen anderen Benutzer mithilfe von EWS in Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md).
+Nachdem einem Delegaten Berechtigungen für einen Ordner erteilt wurden, kann er auf Elemente im Ordner und alle Unterordner entsprechend ihren [Stellvertretungsberechtigungen](delegate-access-and-ews-in-exchange.md#bk_delegateperms)reagieren. Berechtigungen für Stellvertretungen gelten nur für Unterordner, die erstellt werden, nachdem der Stellvertretungszugriff gewährt wurde. Informationen zum Aktualisieren von Ordnerberechtigungen für bereits vorhandene Ordner oder andere Ordner finden Sie unter [Festlegen von Ordnerberechtigungen für einen anderen Benutzer mithilfe von EWS in Exchange.](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)
   
-Beachten Sie, dass Stellvertretungen nur postfachaktivierten Konten hinzugefügt werden können, einschließlich e-Mail-aktivierter Sicherheitsgruppen. Standardmäßig kann ein einzelner Rückruf für einen EWS-Stellvertreter auf maximal 255 unterschiedliche Postfächer zugreifen.
+Beachten Sie, dass Stellvertretungen nur postfachaktivierten Konten hinzugefügt werden können, einschließlich E-Mail-aktivierter Sicherheitsgruppen. Standardmäßig kann ein einzelner EWS-Delegatzugriffsaufruf auf maximal 255 verschiedene Postfächer zugreifen.
 
 <a name="bk_adddelegateewsma"> </a>
 
-## <a name="add-delegates-by-using-the-ews-managed-api"></a>Hinzufügen von Stellvertretungen mithilfe der verwaltete EWS-API
+## <a name="add-delegates-by-using-the-ews-managed-api"></a>Hinzufügen von Delegaten mithilfe der verwalteten EWS-API
 
-Sie können Delegaten zu einem Postfach hinzufügen, indem Sie die [adddelegats](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.adddelegates%28v=exchg.80%29.aspx) verwaltete EWS-API-Methode verwenden. In diesem Beispiel wird ein neues [DelegateUser](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.delegateuser%28v=exchg.80%29.aspx) -Objekt für Kalender, Kontakt und e-Mail erstellt, und jeder Stellvertretung werden [Editor Berechtigungen](delegate-access-and-ews-in-exchange.md#bk_delegateperms) für den jeweiligen Ordner zugewiesen. Sie können das Beispiel so ändern, dass einem der durch die [DelegatePermissions-Eigenschaften](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.delegatepermissions_properties%28v=exchg.80%29.aspx)angegebenen Ordner eine Stellvertretung hinzugefügt wird, und Sie können die Berechtigungen auf einen der in der [DelegateFolderPermissionLevel](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.delegatefolderpermissionlevel%28v=exchg.80%29.aspx) -Aufzählung angegebenen Werte festlegen. 
+Sie können Stellvertretungen zu einem Postfach hinzufügen, indem Sie die verwaltete EWS-API-Methode ["AddDelegates"](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.adddelegates%28v=exchg.80%29.aspx) verwenden. In diesem Beispiel wird ein neues [DelegateUser-Objekt](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.delegateuser%28v=exchg.80%29.aspx) für Kalender, Kontakt und E-Mail erstellt, und jedem Delegaten werden [Editorberechtigungen](delegate-access-and-ews-in-exchange.md#bk_delegateperms) für den jeweiligen Ordner erteilt. Sie können das Beispiel so ändern, dass einem der durch die [DelegatePermissions-Eigenschaften angegebenen](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.delegatepermissions_properties%28v=exchg.80%29.aspx)Ordner ein Delegat hinzugefügt wird, und Sie können die Berechtigungen auf einen der durch die [DelegateFolderPermissionLevel](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.delegatefolderpermissionlevel%28v=exchg.80%29.aspx) -Enumeration angegebenen Werte festlegen. 
   
-In diesem Beispiel wird davon ausgegangen, dass **Service** ein gültiges [Datei "ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt für den Postfachbesitzer ist und dass der Benutzer bei einem Exchange-Server authentifiziert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass der **Dienst** ein gültiges [ExchangeService-Objekt](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) für den Postfachbesitzer ist und dass der Benutzer bei einem Exchange Server authentifiziert wurde. 
   
 ```cs
 public static Collection<DelegateUserResponse> AddDelegates(ExchangeService service)
@@ -79,11 +79,11 @@ public static Collection<DelegateUserResponse> AddDelegates(ExchangeService serv
 
 <a name="bk_adddelegateews"> </a>
 
-## <a name="add-delegates-by-using-ews"></a>Hinzufügen von Stellvertretungen mithilfe von EWS
+## <a name="add-delegates-by-using-ews"></a>Hinzufügen von Delegaten mithilfe von EWS
 
-Im folgenden Codebeispiel wird gezeigt, wie Sie mit dem EWS-Vorgang [AddDelegate](https://msdn.microsoft.com/library/012d8cc5-648c-4ba0-a155-15c422b1e994%28Office.15%29.aspx) separate Kalender-, Kontakt-und e-Mail-Delegaten hinzufügen. Das zu ändernde Postfach wird durch das [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) -Element angegeben, und die [Berechtigungs](delegate-access-and-ews-in-exchange.md#bk_delegateperms) Einstellungen für die einzelnen Delegaten sind im [DelegateUser](https://msdn.microsoft.com/library/aac4e74e-f69b-4c41-a0c9-489610330fbf%28Office.15%29.aspx) -Element enthalten. Jeder Stellvertretung wurden Editor Berechtigungen für ihren Zielordner erteilt. 
+Das folgende Codebeispiel zeigt, wie Sie mithilfe des EWS-Vorgangs ["AddDelegate"](https://msdn.microsoft.com/library/012d8cc5-648c-4ba0-a155-15c422b1e994%28Office.15%29.aspx) separate Kalender-, Kontakt- und E-Mail-Stellvertretungen hinzufügen. Das zu ändernde Postfach wird durch das [Mailbox-Element](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) angegeben, und die [Berechtigungseinstellungen](delegate-access-and-ews-in-exchange.md#bk_delegateperms) für jeden Delegaten sind im [DelegateUser-Element](https://msdn.microsoft.com/library/aac4e74e-f69b-4c41-a0c9-489610330fbf%28Office.15%29.aspx) enthalten. Jeder Stellvertretung wurden Editorberechtigungen für ihren Zielordner gewährt. 
   
-Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die **adddelegates** -Methode zum [Hinzufügen von Stellvertretungen](#bk_adddelegateewsma)verwenden.
+Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die **AddDelegates** -Methode zum [Hinzufügen von Delegaten](#bk_adddelegateewsma)verwenden.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -152,7 +152,7 @@ Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird,
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **AddDelegate** -Anforderung mit einer [AddDelegateResponse](https://msdn.microsoft.com/library/d7e6bebb-5dbf-43c1-aacf-4b3ca6a7c429%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Elementwert **noError**enthält, der angibt, dass die Stellvertretungen erfolgreich erstellt wurden.
+Der Server antwortet auf die **AddDelegate-Anforderung** mit einer [AddDelegateResponse-Nachricht,](https://msdn.microsoft.com/library/d7e6bebb-5dbf-43c1-aacf-4b3ca6a7c429%28Office.15%29.aspx) die den [ResponseCode-Elementwert](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **"NoError"** enthält, der angibt, dass die Delegaten erfolgreich erstellt wurden.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -219,11 +219,11 @@ Der Server antwortet auf die **AddDelegate** -Anforderung mit einer [AddDelegate
 
 <a name="bk_removedelegateewsma"> </a>
 
-## <a name="remove-delegates-by-using-the-ews-managed-api"></a>Entfernen von Stellvertretungen mithilfe der verwaltete EWS-API
+## <a name="remove-delegates-by-using-the-ews-managed-api"></a>Entfernen von Delegaten mithilfe der verwalteten EWS-API
 
-Sie können Delegaten aus einem Zielpostfach mithilfe der [Datei "ExchangeService. RemoveDelegates](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.removedelegates%28v=exchg.80%29.aspx) verwaltete EWS-API-Methode entfernen. In diesem Beispiel werden die im [Beispiel zum Hinzufügen eines Stellvertreters](#bk_adddelegateewsma) festgelegten Stell Vertretungs Berechtigungen entfernt. 
+Sie können Stellvertretungen aus einem Zielpostfach mithilfe der [ExchangeService.RemoveDelegates](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.removedelegates%28v=exchg.80%29.aspx) EWS Managed API-Methode entfernen. In diesem Beispiel werden die im Beispiel zum [Hinzufügen eines Delegaten](#bk_adddelegateewsma) festgelegten Stellvertretungsberechtigungen entfernt. 
   
-In diesem Beispiel wird davon ausgegangen, dass **Service** ein gültiges [Datei "ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt für den Postfachbesitzer ist und dass der Benutzer bei einem Exchange-Server authentifiziert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass der **Dienst** ein gültiges [ExchangeService-Objekt](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) für den Postfachbesitzer ist und dass der Benutzer bei einem Exchange Server authentifiziert wurde. 
   
 ```cs
 public static Collection<DelegateUserResponse> RemoveDelegates(ExchangeService service)
@@ -253,11 +253,11 @@ public static Collection<DelegateUserResponse> RemoveDelegates(ExchangeService s
 
 <a name="bk_removedelegateews"> </a>
 
-## <a name="remove-delegates-by-using-ews"></a>Entfernen von Stellvertretungen mithilfe von EWS
+## <a name="remove-delegates-by-using-ews"></a>Entfernen von Delegaten mithilfe von EWS
 
-Sie können Delegaten aus einem Postfach mithilfe des [RemoveDelegate](https://msdn.microsoft.com/library/1d42d5ff-8fde-4f8a-b18d-57b1ef7a946a%28Office.15%29.aspx) -EWS-Vorgangs entfernen. In diesem Beispiel werden die im [Beispiel zum Hinzufügen eines Stellvertreters](#bk_adddelegateews) festgelegten Stell Vertretungs Berechtigungen entfernt. 
+Mithilfe des EWS-Vorgangs ["RemoveDelegate"](https://msdn.microsoft.com/library/1d42d5ff-8fde-4f8a-b18d-57b1ef7a946a%28Office.15%29.aspx) können Sie Stellvertretungen aus einem Postfach entfernen. In diesem Beispiel werden die im Beispiel zum [Hinzufügen eines Delegaten](#bk_adddelegateews) festgelegten Stellvertretungsberechtigungen entfernt. 
   
-Dies ist auch die XML-Anforderung, die der verwaltete EWS-API sendet, wenn Sie die **RemoveDelegates** -Methode verwenden, um [Stellvertretungen zu entfernen](#bk_removedelegateewsma).
+Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die **RemoveDelegates** -Methode zum [Entfernen von Delegaten](#bk_removedelegateewsma)verwenden.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -289,13 +289,13 @@ Dies ist auch die XML-Anforderung, die der verwaltete EWS-API sendet, wenn Sie d
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **RemoveDelegate** -Anforderung mit einer [AddDelegateResponse](https://msdn.microsoft.com/library/d7e6bebb-5dbf-43c1-aacf-4b3ca6a7c429%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Elementwert **noError**enthält, der angibt, dass die Stellvertretungen erfolgreich entfernt wurden.
+Der Server antwortet auf die **RemoveDelegate-Anforderung** mit einer [AddDelegateResponse-Nachricht,](https://msdn.microsoft.com/library/d7e6bebb-5dbf-43c1-aacf-4b3ca6a7c429%28Office.15%29.aspx) die den [ResponseCode-Elementwert](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **"NoError"** enthält, der angibt, dass die Delegaten erfolgreich entfernt wurden.
 
 <a name="bk_nextsteps"> </a>
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Sie Stellvertretungen zu Kalender-, e-Mail-und Aufgabenordnern hinzugefügt haben, kann die Stellvertretung auf die Elemente in den Ordnern zugreifen. Weitere Informationen finden Sie in den folgenden Artikeln:
+Nachdem Sie Stellvertretungen zu Kalender-, E-Mail- und Aufgabenordnern hinzugefügt haben, kann der Stellvertreter auf die Elemente in den Ordnern zugreifen. Weitere Informationen finden Sie in den folgenden Artikeln:
   
 - [Zugreifen auf E-Mails als Stellvertretung mithilfe der EWS in Exchange](how-to-access-email-as-a-delegate-by-using-ews-in-exchange.md)
     
@@ -303,13 +303,13 @@ Nachdem Sie Stellvertretungen zu Kalender-, e-Mail-und Aufgabenordnern hinzugef�
     
 - [Zugriff auf Kontakte als Delegat mithilfe der EWS in Exchange](how-to-access-contacts-as-a-delegate-by-using-ews-in-exchange.md)
     
-Wenn es sich bei den Ordnern, für die Sie Delegaten hinzugefügt haben, um untergeordnete Ordner handelt, die erstellt wurden, bevor Sie dem Stellvertreter Zugriff erteilt haben, kann der Stellvertreter nicht ohne zusätzliche Berechtigungen auf diese Ordner zugreifen. Informationen zum Hinzufügen dieser Berechtigungen oder zum Ändern von Berechtigungen für andere Ordner finden Sie unter [Festlegen von Ordnerberechtigungen für einen anderen Benutzer mithilfe von EWS in Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md).
+Wenn die Ordner, für die Sie Stellvertretungen hinzugefügt haben, untergeordnete Ordner enthalten, die erstellt wurden, bevor Sie der Stellvertretung Zugriff gewährt haben, kann der Delegat ohne zusätzliche Berechtigungen nicht auf diese Ordner zugreifen. Informationen zum Hinzufügen dieser Berechtigungen oder Ändern von Berechtigungen für andere Ordner finden Sie unter [Festlegen von Ordnerberechtigungen für einen anderen Benutzer mithilfe von EWS in Exchange.](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)
   
 ## <a name="see-also"></a>Siehe auch
 
 - [Stellvertretungszugriff und EWS in Exchange](delegate-access-and-ews-in-exchange.md)
-- [Exchange 2013: Programmgesteuertes Hinzufügen von Delegate-Benutzern zu einem e-Mail-Konto](https://code.msdn.microsoft.com/exchange/Exchange-2013-Adding-1024511f)   
-- [Exchange 2013: Programmgesteuertes Aktualisieren von Stellvertretungen für e-Mail-Konten](https://code.msdn.microsoft.com/exchange/Exchange-2013-Update-b40d3bac)   
-- [Exchange 2013: Programmgesteuertes Entfernen von Stellvertretern für e-Mail-Konten](https://code.msdn.microsoft.com/exchange/Exchange-2013-Remove-686f7714)
+- [Exchange 2013: Programmgesteuertes Hinzufügen von Stellvertretungsbenutzern zu einem E-Mail-Konto](https://code.msdn.microsoft.com/exchange/Exchange-2013-Adding-1024511f)   
+- [Exchange 2013: Programmgesteuertes Aktualisieren von E-Mail-Konten zugeordneten Delegaten](https://code.msdn.microsoft.com/exchange/Exchange-2013-Update-b40d3bac)   
+- [Exchange 2013: Programmgesteuertes Entfernen von E-Mail-Konten zugeordneten Delegaten](https://code.msdn.microsoft.com/exchange/Exchange-2013-Remove-686f7714)
     
 

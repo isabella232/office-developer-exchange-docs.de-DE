@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0480b7f5-9312-4efe-bb37-9fffcd7e7a9d
 description: Das LocationUri-Element enthält eine Zeichenfolge, die einen Uniform Resource Identifier (URI) der zugeordneten Postadresse angibt.
-ms.openlocfilehash: 1cf857e29b67fdacdb73fc5bd921973d7dbd481e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 443df5d79fb958ebb9576f7fe169602a3be39f0e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467095"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513549"
 ---
 # <a name="locationuri"></a>LocationUri
 
-Das **LocationUri** -Element enthält eine Zeichenfolge, die einen Uniform Resource Identifier (URI) der zugeordneten Postadresse angibt. 
+Das **LocationUri-Element** enthält eine Zeichenfolge, die einen Uniform Resource Identifier (URI) der zugeordneten Postadresse angibt. 
   
 ```XML
 <LocationUri></LocationUri>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **LocationUri** -Elements ist eine Zeichenfolge, die einen URI für Informationen über eine Postanschrift angibt. 
+Der Textwert des **LocationUri-Elements** ist eine Zeichenfolge, die einen URI für Informationen zu einer Postadresse angibt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

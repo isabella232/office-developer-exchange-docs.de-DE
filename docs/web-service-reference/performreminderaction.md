@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cee14262-7153-44da-bb42-b856e380c4d0
-description: Das PerformReminderAction-Element gibt eine Anforderung zum Ausführen einer Reminder-Aktion an.
-ms.openlocfilehash: 915b15d3fd0663eb554eb1543845f670a2ae0772
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PerformReminderAction-Element gibt eine Anforderung zum Ausführen einer Erinnerungsaktion an.
+ms.openlocfilehash: 800580fcfb60e03c88c67aed40593571d79e30b6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529000"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512917"
 ---
 # <a name="performreminderaction"></a>PerformReminderAction
 
-Das **PerformReminderAction** -Element gibt eine Anforderung zum Ausführen einer Reminder-Aktion an. 
+Das **PerformReminderAction-Element** gibt eine Anforderung zum Ausführen einer Erinnerungsaktion an. 
   
 ```XML
 <PerformReminderAction>
@@ -42,7 +42,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -54,7 +54,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

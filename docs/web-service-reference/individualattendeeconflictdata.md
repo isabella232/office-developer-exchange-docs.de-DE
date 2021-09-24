@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IndividualAttendeeConflictData
 api_type:
 - schema
 ms.assetid: d45d3c34-abe1-40da-afd3-23bc5c3ef474
-description: Das IndividualAttendeeConflictData-Element enthält den Frei/Gebucht-Status eines Benutzers oder Kontakts für ein Zeitfenster, das gleichzeitig mit der im suggestion-Element identifizierten vorgeschlagenen Besprechungszeit auftritt.
-ms.openlocfilehash: 55210230259b78e5ed9c4f0744aae003cf2e7ae5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IndividualAttendeeConflictData-Element enthält den Frei/Gebucht-Status eines Benutzers oder Kontakts für ein Zeitfenster, das zur gleichen Zeit wie die im Suggestion-Element identifizierte vorgeschlagene Besprechungszeit auftritt.
+ms.openlocfilehash: e7308ca951e906edf4e4606c058f5e0e7a61fd5c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459314"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532989"
 ---
 # <a name="individualattendeeconflictdata"></a>IndividualAttendeeConflictData
 
-Das **IndividualAttendeeConflictData** -Element enthält den Frei/Gebucht-Status eines Benutzers oder Kontakts für ein Zeitfenster, das gleichzeitig mit der im [Suggestion](suggestion.md) -Element identifizierten vorgeschlagenen Besprechungszeit auftritt. 
+Das **IndividualAttendeeConflictData-Element** enthält den Frei/Gebucht-Status eines Benutzers oder Kontakts für ein Zeitfenster, das zur gleichen Zeit wie die im [Suggestion-Element](suggestion.md) identifizierte vorgeschlagene Besprechungszeit auftritt. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -58,15 +58,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Busytype](busytype.md) <br/> |Stellt den Frei/Gebucht-Status eines Benutzers für eine vorgeschlagene Besprechungszeit dar.  <br/> |
+|[BusyType](busytype.md) <br/> |Stellt den Frei/Gebucht-Status eines Benutzers für eine vorgeschlagene Besprechungszeit dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AttendeeConflictDataArray](attendeeconflictdataarray.md) <br/> |Enthält ein Array von Konfliktdaten für Teilnehmer, die in der [GetUserAvailabilityRequest](getuseravailabilityrequest.md)identifiziert wurden.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray` <br/> |
+|[AttendeeConflictDataArray](attendeeconflictdataarray.md) <br/> |Enthält ein Array von Konfliktdaten für Teilnehmer, die in [getUserAvailabilityRequest](getuseravailabilityrequest.md)identifiziert wurden.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -88,5 +88,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

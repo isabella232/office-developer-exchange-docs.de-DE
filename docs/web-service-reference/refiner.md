@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8395b45f-3b94-4473-82ac-2a12c4309170
-description: Das Einschränkungselement gibt eine sucheinschränkung an.
-ms.openlocfilehash: 5be73cfd0a5005f79651e9de76fd5aaf18ba0119
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Refiner-Element gibt eine Sucheinschränkung an.
+ms.openlocfilehash: 4338a3aa1c7551663b657cd082b159c9e81935be
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456745"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512537"
 ---
 # <a name="refiner"></a>Einschränkung
 
-Das **Einschränkungs** Element gibt eine sucheinschränkung an. 
+Das **Refiner-Element** gibt eine Sucheinschränkung an. 
   
 ```XML
 <Refiner>
@@ -45,7 +45,7 @@ Keine.
 
 [Einschränkungen](refiners.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

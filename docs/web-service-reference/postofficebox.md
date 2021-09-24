@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a3ab9bcf-7dab-44f0-9ab6-b06543c0fdc2
-description: Das PostOfficeBox-Element gibt thepost Office-boxportion einer Postadresse an.
-ms.openlocfilehash: dede39a7b053172157858686f8287466f982c4ab
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PostOfficeBox-Element gibt den Post office boxportion einer Postadresse an.
+ms.openlocfilehash: 850b0bdb2c7b8fd167415cc2883c82e1aee37dab
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458026"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512604"
 ---
 # <a name="postofficebox"></a>PostOfficeBox
 
-Das **PostOfficeBox** -Element gibt den "Post Office Box"-Teil einer Postadresse an. 
+Das **PostOfficeBox-Element** gibt den "Post Office Box"-Teil einer Postanschrift an. 
   
 ```XML
 <PostOfficeBox></PostOfficeBox>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **PostOfficeBox** -Elements ist eine Post Office-Feld-ID. 
+Der Textwert des **PostOfficeBox-Elements** ist ein Bezeichner des Postfachfelds. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

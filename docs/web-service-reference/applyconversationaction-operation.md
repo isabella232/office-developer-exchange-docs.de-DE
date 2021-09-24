@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ApplyConversationAction
 api_type:
 - schema
 ms.assetid: 73d7943d-d361-4f8b-9948-d85f886efa1a
-description: Der ApplyConversationAction-Vorgang legt eine einmalige oder Nachverfolgungsaktion für alle Elemente in einer Unterhaltung fest. Mit dem ApplyConversationAction-Vorgang können Sie den Status "lesen" für alle Elemente in einer Unterhaltung kategorisieren, verlagern, kopieren, löschen und festlegen. Aktionen können auch für neue Nachrichten in einer Unterhaltung festgelegt werden.
-ms.openlocfilehash: cdab239a5b0b1406d2ce31f4604e4737d037cd7e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der ApplyConversationAction-Vorgang legt eine einmalige oder Nachverfolgungsaktion für alle Elemente in einer Unterhaltung fest. Mit dem ApplyConversationAction-Vorgang können Sie den Lesestatus für alle Elemente in einer Unterhaltung kategorisieren, verschieben, kopieren, löschen und festlegen. Aktionen können auch für neue Nachrichten in einer Unterhaltung festgelegt werden.
+ms.openlocfilehash: ed3ed02dc045a095bcc86124b8d3e1c5a65dae84
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463503"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520101"
 ---
 # <a name="applyconversationaction-operation"></a>ApplyConversationAction-Vorgang
 
-Der **ApplyConversationAction** -Vorgang legt eine einmalige oder Nachverfolgungsaktion für alle Elemente in einer Unterhaltung fest. Mit dem **ApplyConversationAction** -Vorgang können Sie den Status "lesen" für alle Elemente in einer Unterhaltung kategorisieren, verlagern, kopieren, löschen und festlegen. Aktionen können auch für neue Nachrichten in einer Unterhaltung festgelegt werden. 
+Der **ApplyConversationAction-Vorgang** legt eine einmalige oder Nachverfolgungsaktion für alle Elemente in einer Unterhaltung fest. Mit **dem ApplyConversationAction-Vorgang** können Sie den Lesestatus für alle Elemente in einer Unterhaltung kategorisieren, verschieben, kopieren, löschen und festlegen. Aktionen können auch für neue Nachrichten in einer Unterhaltung festgelegt werden. 
   
-## <a name="applyconversationaction-request-example"></a>ApplyConversationAction-Anforderungs Beispiel
+## <a name="applyconversationaction-request-example"></a>ApplyConversationAction-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **ApplyConversationAction** -Anforderung wird gezeigt, wie die Elemente in der angegebenen Unterhaltung in einen anderen Ordner verschoben werden. Elemente, die der Unterhaltung hinzugefügt werden, werden ebenfalls in den angegebenen Ordner verschoben. 
+Das folgende Beispiel einer **ApplyConversationAction-Anforderung** zeigt, wie die Elemente in der angegebenen Unterhaltung in einen anderen Ordner verschoben werden. Elemente, die der Unterhaltung hinzugefügt werden, werden ebenfalls in den angegebenen Ordner verschoben. 
   
 ### <a name="code"></a>Code
 
@@ -57,15 +57,15 @@ Im folgenden Beispiel einer **ApplyConversationAction** -Anforderung wird gezeig
 </soap:Envelope>
 ```
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>HinwBemerkungeneise
 
-Die Konversations-und Ordner Bezeichner wurden verkürzt, um die Lesbarkeit zu erhalten.
+Die Bezeichner für Unterhaltungen und Ordner wurden gekürzt, um die Lesbarkeit zu gewährleisten.
   
 ## <a name="applyconversationaction-response-example"></a>ApplyConversationAction-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **ApplyConversationAction** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **ApplyConversationAction-Anforderung.** 
   
 ### <a name="code"></a>Code
 

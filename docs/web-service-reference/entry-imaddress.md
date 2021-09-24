@@ -1,27 +1,27 @@
 ---
-title: Eintrag (imaddresse)
+title: Eintrag (EmailAddress)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Entry
 api_type:
 - schema
 ms.assetid: ee444170-7353-4e86-86c6-d7300a2f1777
-description: Das Entry-Element stellt eine Chat Adresse (Instant Messaging) für einen Kontakt dar.
-ms.openlocfilehash: b6cc37447eb0f231e9e852a6c3cd64d6e1f3a89f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Entry-Element stellt eine Chatadresse für einen Kontakt dar.
+ms.openlocfilehash: 76025f9ad47e1f62555f7a3e9d0222b86fc7b042
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460701"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520661"
 ---
-# <a name="entry-imaddress"></a>Eintrag (imaddresse)
+# <a name="entry-imaddress"></a>Eintrag (EmailAddress)
 
-Das **Entry** -Element stellt eine Chat Adresse (Instant Messaging) für einen Kontakt dar. 
+Das **Entry-Element** stellt eine Chatadresse für einen Kontakt dar. 
   
 ```xml
 <Entry Key=""/>
@@ -36,7 +36,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Key** <br/> | Identifiziert die Chat Adresse.<br/><br/>Es folgen die möglichen Werte für dieses Attribut.<br/><br/>- ImAddress1  <br/>- ImAddress2  <br/>- ImAddress3  <br/> |
+|**Key** <br/> | Identifiziert die Chatadresse.<br/><br/>Es folgen die möglichen Werte für dieses Attribut.<br/><br/>- ImAddress1  <br/>- ImAddress2  <br/>- ImAddress3  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -46,13 +46,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Imaddresses](imaddresses.md) <br/> |Stellt eine Auflistung von Chat Adressen für einen Kontakt dar.  <br/> |
+|[ImAddresses](imaddresses.md) <br/> |Stellt eine Auflistung von Chatadressen für einen Kontakt dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der die Chat Adresse darstellt, ist erforderlich, wenn dieses Element verwendet wird.
+Wenn dieses Element verwendet wird, ist ein Textwert erforderlich, der die Chatadresse darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Recurrence
 api_type:
 - schema
 ms.assetid: 99f8414a-9110-4721-a6e5-ebf225d7ed0a
-description: Das Serienelement enthält Serieninformationen für wiederkehrende Vorgänge.
-ms.openlocfilehash: 933fd6b003d8d193e1561f2a22b65ac00237c345
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Recurrence-Element enthält Serieninformationen für wiederkehrende Vorgänge.
+ms.openlocfilehash: 08356b20c3abea7dd4f4cd9aae08e7016c674d63
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528832"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534467"
 ---
 # <a name="recurrence-taskrecurrencetype"></a>Serie (TaskRecurrenceType)
 
-Das **Serien** Element enthält Serieninformationen für wiederkehrende Vorgänge. 
+Das **Recurrence-Element** enthält Serieninformationen für wiederkehrende Vorgänge. 
   
 ```xml
 <Recurrence>
@@ -252,15 +252,15 @@ Keine.
 |[AbsoluteYearlyRecurrence](absoluteyearlyrecurrence.md) <br/> |Stellt ein jährliches Serienmuster für eine wiederkehrende Aufgabe dar.  <br/> |
 |[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |Beschreibt ein relatives monatliches Serienmuster für eine wiederkehrende Aufgabe.  <br/> |
 |[AbsoluteMonthlyRecurrence](absolutemonthlyrecurrence.md) <br/> |Stellt ein monatliches Serienmuster für eine wiederkehrende Aufgabe dar.  <br/> |
-|[WeeklyRecurrence](weeklyrecurrence.md) <br/> |Beschreibt die Häufigkeit in Wochen und die Tage, an denen eine Aufgabe erneut auftritt.  <br/> |
-|[DailyRecurrence](dailyrecurrence.md) <br/> |Beschreibt die Häufigkeit in Tagen, in der eine Aufgabe erneut auftritt.  <br/> |
-|[DailyRegeneration](dailyregeneration.md) <br/> |Beschreibt, wie viele Tage nach Abschluss der aktuellen Aufgabe das nächste auftreten fällig wird.  <br/> |
-|[WeeklyRegeneration](weeklyregeneration.md) <br/> |Beschreibt, wie viele Wochen nach Abschluss der aktuellen Aufgabe das nächste auftreten fällig wird.  <br/> |
-|[MonthlyRegeneration](monthlyregeneration.md) <br/> |Beschreibt, wie viele Monate nach Abschluss der aktuellen Aufgabe das nächste auftreten fällig wird.  <br/> |
-|[YearlyRegeneration](yearlyregeneration.md) <br/> |Beschreibt, wie viele Jahre nach Abschluss der aktuellen Aufgabe das nächste Vorkommen fällig wird.  <br/> |
-|[NoEndRecurrence](noendrecurrence.md) <br/> |Beschreibt ein Serienmuster, das nicht über ein definiertes Enddatum verfügt.  <br/> Die Verwendung dieses Elements schließt die Verwendung der Elemente [EndDateRecurrence](enddaterecurrence.md) und [NumberedRecurrence](numberedrecurrence.md) aus.  <br/> |
-|[EndDateRecurrence](enddaterecurrence.md) <br/> |Beschreibt das Startdatum und das Enddatum eines Element Serienmusters.  <br/> Die Verwendung dieses Elements schließt die Verwendung der Elemente [NoEndRecurrence](noendrecurrence.md) und [NumberedRecurrence](numberedrecurrence.md) aus.  <br/> [EndDateRecurrence](enddaterecurrence.md) kann nicht zusammen mit einem Regenerierungs Muster verwendet werden.  <br/> |
-|[NumberedRecurrence](numberedrecurrence.md) <br/> |Beschreibt das Startdatum und die Anzahl der Vorkommen eines wiederkehrenden Elements.  <br/> Die Verwendung dieses Elements schließt die Verwendung der Elemente [NoEndRecurrence](noendrecurrence.md) und [EndDateRecurrence](enddaterecurrence.md) aus.  <br/> |
+|[WeeklyRecurrence](weeklyrecurrence.md) <br/> |Beschreibt die Häufigkeit in Wochen und die Tage, an denen eine Aufgabe wiederholt wird.  <br/> |
+|[DailyRecurrence](dailyrecurrence.md) <br/> |Beschreibt die Häufigkeit in Tagen, in der eine Aufgabe rekursiv ausgeführt wird.  <br/> |
+|[DailyRegeneration](dailyregeneration.md) <br/> |Beschreibt, wie viele Tage nach Abschluss der aktuellen Aufgabe das nächste Vorkommen fällig ist.  <br/> |
+|[WeeklyRegeneration](weeklyregeneration.md) <br/> |Beschreibt, wie viele Wochen nach Abschluss der aktuellen Aufgabe das nächste Vorkommen fällig ist.  <br/> |
+|[MonthlyRegeneration](monthlyregeneration.md) <br/> |Beschreibt, wie viele Monate nach Abschluss der aktuellen Aufgabe das nächste Vorkommen fällig ist.  <br/> |
+|[YearlyRegeneration](yearlyregeneration.md) <br/> |Beschreibt, wie viele Jahre nach Abschluss der aktuellen Aufgabe das nächste Vorkommen fällig ist.  <br/> |
+|[NoEndRecurrence](noendrecurrence.md) <br/> |Beschreibt ein Serienmuster ohne ein definiertes Enddatum.  <br/> Die Verwendung dieses Elements schließt die Verwendung der Elemente [EndDateRecurrence](enddaterecurrence.md) und [NumberedRecurrence](numberedrecurrence.md) aus.  <br/> |
+|[EndDateRecurrence](enddaterecurrence.md) <br/> |Beschreibt das Startdatum und das Enddatum eines Elementserienmusters.  <br/> Die Verwendung dieses Elements schließt die Verwendung der Elemente [NoEndRecurrence](noendrecurrence.md) und [NumberedRecurrence](numberedrecurrence.md) aus.  <br/> [EndDateRecurrence](enddaterecurrence.md) kann nicht zusammen mit einem Glanzmuster verwendet werden.  <br/> |
+|[NumberedRecurrence](numberedrecurrence.md) <br/> |Beschreibt das Startdatum und die Anzahl der Vorkommen einer Terminserie.  <br/> Die Verwendung dieses Elements schließt die Verwendung der [Elemente NoEndRecurrence](noendrecurrence.md) und [EndDateRecurrence](enddaterecurrence.md) aus.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -268,7 +268,7 @@ Keine.
 |:-----|:-----|
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

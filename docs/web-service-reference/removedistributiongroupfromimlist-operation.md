@@ -5,45 +5,45 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 252bddf2-98b6-4824-b548-2fba2bda5384
-description: Hier finden Sie Informationen zum RemoveDistributionGroupFromImList-EWS-Vorgang.
-ms.openlocfilehash: 66220f0cab99f404e17136bbb7836ca13d569b53
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum EWS-Vorgang "RemoveDistributionGroupFromImList".
+ms.openlocfilehash: 52b653008b7b14d2c2467cc9bb1f8f1475cee8f5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459602"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513395"
 ---
 # <a name="removedistributiongroupfromimlist-operation"></a>RemoveDistributionGroupFromImList-Vorgang
 
-Hier finden Sie Informationen zum **RemoveDistributionGroupFromImList** -EWS-Vorgang. 
+Hier finden Sie Informationen zum EWS-Vorgang **"RemoveDistributionGroupFromImList".** 
   
-Der **RemoveDistributionGroupFromImList** -Vorgang entfernt eine Verteilergruppe aus der lync-Chat-Liste (Instant Messaging), wenn lync Exchange für den Kontaktspeicher verwendet. 
+Der **RemoveDistributionGroupFromImList-Vorgang** entfernt eine Verteilergruppe aus der Lync-Chatliste, wenn Lync Exchange für den Kontaktspeicher verwendet. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-removedistributiongroupfromimlist-operation"></a>Verwenden des RemoveDistributionGroupFromImList-Vorgangs
 
-Der **RemoveDistributionGroupFromImList** -Vorgang akzeptiert ein einzelnes Argument, das eine Verteilergruppe identifiziert, die aus der auf einem Exchange-Server gespeicherten lync-Chat Liste entfernt werden soll. 
+Der **RemoveDistributionGroupFromImList-Vorgang** akzeptiert ein einzelnes Argument, das eine Verteilergruppe identifiziert, die aus der auf einem Exchange Server gespeicherten Lync-Chatliste entfernt werden soll. 
   
 ### <a name="removedistributiongroupfromimlist-operation-soap-headers"></a>SOAP-Header des RemoveDistributionGroupFromImList-Vorgangs
 
-Der **RemoveDistributionGroupFromImList** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **RemoveDistributionGroupFromImList-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden sollen. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dieser Header gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur, wie in RFC 3066 definiert, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden soll. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="removedistributiongroupfromimlist-operation-request-example-remove-a-distribution-group-from-an-im-list"></a>RemoveDistributionGroupFromImList-Vorgangs Anforderungs Beispiel: Entfernen einer Verteilergruppe aus einer Sofortnachrichten Liste
+## <a name="removedistributiongroupfromimlist-operation-request-example-remove-a-distribution-group-from-an-im-list"></a>RemoveDistributionGroupFromImList-Vorgangsanforderungsbeispiel: Entfernen einer Verteilergruppe aus einer Chatliste
 
-Im folgenden Beispiel einer **RemoveDistributionGroupFromImList** -Vorgangsanforderung wird gezeigt, wie Sie eine Verteilergruppe aus einer Chatgruppe entfernen. Der **RemoveDistributionGroupFromImList** -Vorgang akzeptiert die eindeutige Gruppen-ID, um die Verteilergruppe zu identifizieren, die aus der Chat Liste entfernt werden soll. Das [ExchangeStoreId](exchangestoreid.md) -Element, das in der Antwort für den [GetImItemList-Vorgang](getimitemlist-operation.md) und den [AddDistributionGroupToImList-Vorgang](adddistributiongrouptoimlist-operation.md) zurückgegeben wird, identifiziert Verteilergruppen, die aus der Chat Liste entfernt werden können. 
+Das folgende Beispiel einer **RemoveDistributionGroupFromImList-Vorgangsanforderung** zeigt, wie sie eine Verteilergruppe aus einer Chatgruppe entfernt. Der **RemoveDistributionGroupFromImList-Vorgang** akzeptiert den eindeutigen Gruppenbezeichner, um die Verteilergruppe zu identifizieren, die aus der Chatliste entfernt werden soll. Das [ExchangeStoreId-Element,](exchangestoreid.md) das in der Antwort für den [GetImItemList-Vorgang](getimitemlist-operation.md) zurückgegeben wird, und der [AddDistributionGroupToImList-Vorgang](adddistributiongrouptoimlist-operation.md) identifiziert Verteilergruppen, die aus der Chatliste entfernt werden können. 
   
 > [!NOTE]
-> Alle Element-IDs und Änderungsschlüssel in diesem Artikel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Alle Elementbezeichner und Änderungsschlüssel in diesem Artikel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ```XML
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
@@ -61,15 +61,15 @@ Im folgenden Beispiel einer **RemoveDistributionGroupFromImList** -Vorgangsanfor
 </soap:Envelope>
 ```
 
-Die folgenden Elemente werden im SOAP-Anforderungstext Körper verwendet:
+Die folgenden Elemente werden im SOAP-Anforderungstext verwendet:
   
 - [RemoveDistributionGroupFromImList](removedistributiongroupfromimlist.md)
     
 - [GroupId](groupid.md)
     
-## <a name="successful-removedistributiongroupfromimlist-operation-response"></a>Erfolgreiche Reaktion des RemoveDistributionGroupFromImList-Vorgangs
+## <a name="successful-removedistributiongroupfromimlist-operation-response"></a>Erfolgreiche RemoveDistributionGroupFromImList-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **RemoveDistributionGroupFromImList** -Vorgangsanforderung an eine Verteilergruppe aus einer Chatgruppe entfernen. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **RemoveDistributionGroupFromImList-Vorgangsanforderung** zum Entfernen einer Verteilergruppe aus einer Chatgruppe. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -95,15 +95,15 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **RemoveDistribut
 </s:Envelope>
 ```
 
-Die folgenden Elemente werden im SOAP-Antworttext Körper verwendet:
+Die folgenden Elemente werden im SOAP-Antworttext verwendet:
   
 - [RemoveDistributionGroupFromImListResponse](removedistributiongroupfromimlistresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-## <a name="removedistributiongroupfromimlist-operation-error-response-example"></a>RemoveDistributionGroupFromImList-Operation-Fehlerantwort (Beispiel)
+## <a name="removedistributiongroupfromimlist-operation-error-response-example"></a>Fehlerantwortbeispiel für RemoveDistributionGroupFromImList-Vorgang
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **RemoveDistributionGroupFromImList** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Entfernen einer Verteilergruppe, die bereits aus dem Postfach entfernt wurde. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **RemoveDistributionGroupFromImList-Vorgangsanforderung.** Dies ist eine Antwort auf eine Anforderung zum Entfernen einer Verteilergruppe, die bereits aus dem Postfach entfernt wurde. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

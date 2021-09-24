@@ -5,27 +5,27 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUserOofSettings
 api_type:
 - schema
 ms.assetid: 153e4440-495b-4972-9811-2fbea740142a
-description: Der GetUserOofSettings-Vorgang ruft die Abwesenheit (Out of Office, OOF) Einstellungen und Nachrichten eines Postfachbenutzers ab.
-ms.openlocfilehash: 622faa622b0ea231a6331ff62631885d4252c1f5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetUserOofSettings-Vorgang ruft die OOF-Einstellungen und -Nachrichten (Out of Office) eines Postfachbenutzers ab.
+ms.openlocfilehash: 9298681bff1cce5be37e8bee978ddeb0431bacdc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457697"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533410"
 ---
 # <a name="getuseroofsettings-operation"></a>GetUserOofSettings-Vorgang
 
-Der **GetUserOofSettings** -Vorgang ruft die Abwesenheit (Out of Office, OOF) Einstellungen und Nachrichten eines Postfachbenutzers ab. 
+Der **GetUserOofSettings-Vorgang** ruft die OOF-Einstellungen und -Nachrichten (Out of Office) eines Postfachbenutzers ab. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der **GetUserOofSettings** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
+Der **GetUserOofSettings-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben sind. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -34,16 +34,16 @@ Der **GetUserOofSettings** -Vorgang kann die SOAP-Header verwenden, die in der f
    
 ## <a name="using-the-getuseroofsettings-operation"></a>Verwenden des GetUserOofSettings-Vorgangs
 
-Der **GetUserOofSettings** -Vorgang ermöglicht den Zugriff auf die Abwesenheitseinstellungen eines Benutzers. Ein Benutzer wird durch die e-Mail-Adresse des Benutzers identifiziert. Wenn die Abwesenheitsnachricht NULL ist und OOF aktiviert ist, wird keine Abwesenheitsnachricht gesendet. 
+Der **GetUserOofSettings-Vorgang** ermöglicht den Zugriff auf die OOF-Einstellungen eines Benutzers. Ein Benutzer wird durch die E-Mail-Adresse des Benutzers identifiziert. Wenn die OOF-Nachricht NULL und OOF aktiviert ist, wird keine OOF-Nachricht gesendet. 
   
 > [!IMPORTANT]
-> Wenn die Abwesenheitsnachrichten von MicrosoftOfficeOutlook festgelegt werden, werden durch diesen Vorgang die Abwesenheitsnachrichten im HTML-Format zurückgegeben. 
+> Wenn die OOF-Nachrichten von MicrosoftOfficeOutlook festgelegt werden, gibt dieser Vorgang die OOF-Nachrichten im HTML-Format zurück. 
   
-## <a name="getuseroofsettings-request-example"></a>GetUserOofSettings-Anforderungs Beispiel
+## <a name="getuseroofsettings-request-example"></a>GetUserOofSettings-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine **GetUserOofSettings** -Anforderung, die die Abwesenheitsinformationen eines einzelnen Benutzers abruft. 
+Das folgende Beispiel zeigt eine **GetUserOofSettings-Anforderung,** die die OOF-Informationen eines einzelnen Benutzers abruft. 
   
 ### <a name="code"></a>Code
 
@@ -70,13 +70,13 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Postfach (Verfügbarkeit)](mailbox-availability.md)
     
-- [Address (Zeichenfolge)](address-string.md)
+- [Adresse (Zeichenfolge)](address-string.md)
     
-## <a name="successful-getuseroofsettings-response-example"></a>Erfolgreiches GetUserOofSettings-Antwortbeispiel
+## <a name="successful-getuseroofsettings-response-example"></a>Beispiel für erfolgreiche GetUserOofSettings-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt einen deaktivierten OOF-Zustand mit den OOF-Nachrichten.
+Das folgende Beispiel zeigt einen deaktivierten OOF-Status mit den OOF-Nachrichten.
   
 ### <a name="code"></a>Code
 
@@ -146,11 +146,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [AllowExternalOof](allowexternaloof.md)
     
-## <a name="getuseroofsettings-error-response-example"></a>GetUserOofSettings-Fehlerantwort Beispiel
+## <a name="getuseroofsettings-error-response-example"></a>GetUserOofSettings Fehlerantwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlermeldung, die durch einen Versuch verursacht wurde, auf die OOF-Informationen eines anderen Benutzers zuzugreifen.
+Das folgende Beispiel zeigt eine Fehlerantwort, die durch den Versuch verursacht wird, auf die OOF-Informationen eines anderen Benutzers zuzugreifen.
   
 ### <a name="code"></a>Code
 

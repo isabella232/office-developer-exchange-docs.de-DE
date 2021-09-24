@@ -3,54 +3,54 @@ title: Aktualisieren von Konfigurationsinformationen mithilfe der AutoErmittlung
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c2f3c6a5-e8ea-4375-b41a-686a6f238d33
-description: Erfahren Sie, wie und wann die Konfigurationsinformationen für Ihre Exchange-Verbindung mithilfe der AutoErmittlung aktualisiert werden.
-ms.openlocfilehash: b9a4264d150d09b0e143e0bf7365af351bb2ef44
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Erfahren Sie, wie und wann Konfigurationsinformationen für Ihre Exchange Verbindung mithilfe der AutoErmittlung aktualisiert werden.
+ms.openlocfilehash: 0ec6910fcd8ab66085de2414f02a4f78419ec78b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527754"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513115"
 ---
 # <a name="refresh-configuration-information-by-using-autodiscover"></a>Aktualisieren von Konfigurationsinformationen mithilfe der AutoErmittlung
 
-Erfahren Sie, wie und wann die Konfigurationsinformationen für Ihre Exchange-Verbindung mithilfe der AutoErmittlung aktualisiert werden.
+Erfahren Sie, wie und wann Konfigurationsinformationen für Ihre Exchange Verbindung mithilfe der AutoErmittlung aktualisiert werden.
   
-Wenn Ihre EWS-Anwendung zum ersten Mal ausgeführt wird, bietet die AutoErmittlung eine großartige Möglichkeit, um die Informationen zu sammeln, die Sie benötigen, um eine Verbindung mit dem Exchange-Postfach Ihres Benutzers herzustellen. Die AutoErmittlung ist aber nicht nur für die erstmalige Verwendung. Die regelmäßige Verwendung der AutoErmittlung kann dazu beitragen, dass Ihre Anwendung verbunden bleibt, indem Sie auf Änderungen in der Exchange-Bereitstellung reagiert.
+Wenn Ihre EWS-Anwendung zum ersten Mal ausgeführt wird, bietet die AutoErmittlung eine hervorragende Möglichkeit, die Informationen zu sammeln, die Sie zum Herstellen einer Verbindung mit dem Exchange Postfach des Benutzers benötigen. Die AutoErmittlung erfolgt jedoch nicht nur bei der ersten Verwendung. Die regelmäßige Verwendung der AutoErmittlung kann dazu beitragen, dass Ihre Anwendung verbunden bleibt, indem sie auf Änderungen in der Exchange Bereitstellung reagiert.
   
-## <a name="cache-autodiscover-endpoint-and-ews-settings"></a>Cache Auto ermittlungsendpunkt und EWS-Einstellungen
+## <a name="cache-autodiscover-endpoint-and-ews-settings"></a>Cache-AutoErmittlungsendpunkt und EWS-Einstellungen
 <a name="bk_CacheSettings"> </a>
 
-Es wird empfohlen, dass Sie die AutoErmittlung regelmäßig verwenden, aber wie regelmäßig Sie es verwenden, erfordert eine gewisse Überlegung. Idealerweise können Sie die Reaktion schnell auf Änderungen in der Umgebung abstimmen, um zu viel unnötigen Netzwerkdatenverkehr zu generieren. Wenn Ihre Anwendung zum ersten Mal eine erfolgreiche Auto Ermittlungs Antwort erhält, sollten Sie die folgenden Informationen speichern, damit Sie den Auto Ermittlungsprozess nicht jedes Mal wiederholen müssen, wenn Sie eine EWS-Anforderung senden.
+Es wird zwar empfohlen, die AutoErmittlung regelmäßig zu verwenden, aber wie regelmäßig Sie sie verwenden, erfordert einige Überlegungen. Im Idealfall können Sie schnell auf Änderungen in der Umgebung reagieren und zu viel unnötigen Netzwerkdatenverkehr generieren. Wenn Ihre Anwendung zum ersten Mal eine erfolgreiche AutoErmittlungsantwort erhält, sollten Sie die folgenden Informationen speichern, damit Sie den AutoErmittlungsprozess nicht jedes Mal wiederholen müssen, wenn Sie eine EWS-Anforderung senden.
   
-**Tabelle 1. Cache Informationen für Auto Ermittlungsanforderungen**
+**Tabelle 1. Informationen zum Zwischenspeichern für AutoErmittlungsanforderungen**
 
-|**Festlegen auf Cache**|**Gültig für...**|**Details**|
+|**Festlegen des Zwischenspeicherns**|**Gültig für...**|**Details**|
 |:-----|:-----|:-----|
-|Auto ermittlungsendpunkt  <br/> |Solange es funktioniert  <br/> |Wenn Sie den Auto ermittlungsendpunkt speichern, der eine erfolgreiche Antwort zurückgegeben hat, müssen Sie den Prozess des [Generierens einer Liste mit Auto Ermittlungs Endpunkten](how-to-generate-a-list-of-autodiscover-endpoints.md) nicht wiederholen und versuchen, Sie zu testen, bis Sie eine erfolgreiche Antwort erhalten.<br/><br/> **Hinweis**: das verwaltete EWS-API unterstützt nicht das Zwischenspeichern des Auto Ermittlungs Endpunkts.           |
-|EWS-URL und alle anderen von der Auto Ermittlungs Antwort abgerufenen Einstellungen  <br/> |Eine Woche  <br/> |Wenn Sie die EWS-URL und andere zugehörige Einstellungen speichern, müssen Sie keine [neue Auto Ermittlungsanforderung](how-to-get-user-settings-from-exchange-by-using-autodiscover.md) für jede EWS-Anforderung senden oder wenn Ihre Anwendung neu gestartet wird. Selbst wenn eine EWS-URL für Ihren Benutzer funktioniert, ist möglicherweise ein Server verfügbar, der optimal ist.<br/><br/> Beispielsweise wurde das Postfach des Benutzers möglicherweise auf einen neuen Postfachserver verschoben, was zu einem neuen bevorzugten EWS-Endpunkt führte. Es wird empfohlen, dass Sie Ihre Benutzereinstellungen aktualisieren, indem Sie eine neue Auto Ermittlungsanforderung senden, nachdem eine Woche seit der letzten Auto Ermittlungsanforderung vergangen ist. Diese Zeit kann angepasst werden, um die Anforderungen Ihrer Anwendung zu erfüllen.  <br/> |
+|AutoErmittlungsendpunkt  <br/> |Solange es funktioniert  <br/> |Wenn Sie den AutoErmittlungsendpunkt speichern, der eine erfolgreiche Antwort zurückgegeben hat, müssen Sie den Vorgang zum [Generieren einer Liste von AutoErmittlungsendpunkten](how-to-generate-a-list-of-autodiscover-endpoints.md) und zum Testen dieser Endpunkte nicht wiederholen, bis Sie eine erfolgreiche Antwort erhalten.<br/><br/> **HINWEIS:** Die verwaltete EWS-API unterstützt das Zwischenspeichern des AutoErmittlungsendpunkts nicht.           |
+|EWS-URL und alle anderen Einstellungen, die aus der AutoErmittlungsantwort abgerufen wurden  <br/> |Eine Woche  <br/> |Wenn Sie die EWS-URL und andere zugehörige Einstellungen speichern, müssen Sie keine [neue AutoErmittlungsanforderung](how-to-get-user-settings-from-exchange-by-using-autodiscover.md) für jede EWS-Anforderung senden, oder wenn die Anwendung neu gestartet wird. Auch wenn eine EWS-URL für Ihren Benutzer funktioniert, ist möglicherweise ein Server verfügbar, der optimaler ist.<br/><br/> Beispielsweise könnte das Postfach des Benutzers auf einen neuen Postfachserver verschoben worden sein, was zu einem neuen bevorzugten EWS-Endpunkt führt. Es wird empfohlen, die Benutzereinstellungen zu aktualisieren, indem Sie eine neue AutoErmittlungsanforderung senden, nachdem eine Woche seit der letzten AutoErmittlungsanforderung vergangen ist. Diese Zeit kann an die Anforderungen Ihrer Anwendung angepasst werden.  <br/> |
    
 ## <a name="refresh-cached-configuration-information"></a>Aktualisieren zwischengespeicherter Konfigurationsinformationen
 <a name="bk_RefreshConfig"> </a>
 
-Nun, da Sie die Informationen zwischengespeichert haben, lassen Sie uns untersuchen, wie Sie diesen Cache aktuell halten können. Es wird empfohlen, die zwischengespeicherten Informationen zu aktualisieren, wenn:
+Nachdem Sie die Informationen zwischengespeichert haben, wollen wir untersuchen, wie Sie diesen Cache aktuell halten können. Es wird empfohlen, die zwischengespeicherten Informationen in folgenden Fällen zu aktualisieren:
   
 - Der Gültigkeitszeitraum der Informationen läuft ab.
     
-- Ein [Verbindungs bezogener Fehler](#bk_ConnectionErrors) tritt auf, und ihre zwischengespeicherten Informationen wurden zuletzt vor mehr als einer Stunde aktualisiert.
+- Es tritt ein [Verbindungsfehler](#bk_ConnectionErrors) auf, UND Ihre zwischengespeicherten Informationen wurden zuletzt vor einer Stunde aktualisiert.
     
-Um die zwischengespeicherten Informationen zu aktualisieren, senden Sie eine Auto Ermittlungsanforderung an einen zwischengespeicherten Auto ermittlungsendpunkt, und führen Sie die folgenden Schritte aus:
+Um die zwischengespeicherten Informationen zu aktualisieren, senden Sie eine AutoErmittlungsanforderung an einen zwischengespeicherten AutoErmittlungsendpunkt, und führen Sie die folgenden Schritte aus:
   
 - Wenn die Anforderung erfolgreich ist, vergleichen Sie den EWS-Endpunkt in der Antwort mit dem zwischengespeicherten EWS-Endpunkt, und führen Sie die folgenden Schritte aus:
     
-  - Wenn Sie unterschiedlich sind, verwenden Sie den neuen EWS-Endpunkt. Wenn Sie aktualisieren, um einen Fehler wiederherzustellen, versuchen Sie es mit dem neuen Endpunkt erneut mit der fehlgeschlagenen Anforderung.
+  - Wenn sie unterschiedlich sind, verwenden Sie den neuen EWS-Endpunkt. Wenn Sie aktualisieren, um nach einem Fehler wiederherzustellen, wiederholen Sie die fehlgeschlagene Anforderung mit dem neuen Endpunkt.
     
-  - Wenn Sie identisch sind, fahren Sie mit dem ursprünglichen EWS-Endpunkt fort. Wenn Sie aktualisieren, um einen Fehler wiederherzustellen, behandeln Sie den Fehler entsprechend.
+  - Wenn sie identisch sind, verwenden Sie weiterhin den ursprünglichen EWS-Endpunkt. Wenn Sie aktualisieren, um nach einem Fehler wiederherzustellen, behandeln Sie den Fehler nach Bedarf.
     
-- Wenn die Anforderung fehlschlägt, starten Sie den [Auto Ermittlungsprozess](autodiscover-for-exchange.md) von Anfang an. Nachdem Sie eine erfolgreiche Antwort erhalten haben, ersetzen Sie den zwischengespeicherten Auto ermittlungsendpunkt mit dem Endpunkt der AutoErmittlung, der erfolgreich war, und verwenden Sie weiterhin den neuen EWS-Endpunkt. Wenn Sie keine erfolgreiche Antwort erhalten, fahren Sie mit der Verwendung des ursprünglichen Auto Ermittlungs Endpunkts und des EWS-Endpunkts fort. Wenn Sie aktualisieren, um einen Fehler wiederherzustellen, behandeln Sie den Fehler entsprechend. 
+- Wenn die Anforderung fehlschlägt, starten Sie den [AutoErmittlungsprozess](autodiscover-for-exchange.md) von vorne. Nachdem Sie eine erfolgreiche Antwort erhalten haben, ersetzen Sie den zwischengespeicherten AutoErmittlungsendpunkt durch den erfolgreichen AutoErmittlungsendpunkt, und verwenden Sie weiterhin den neuen EWS-Endpunkt. Wenn Sie keine erfolgreiche Antwort erhalten, verwenden Sie weiterhin den ursprünglichen AutoErmittlungsendpunkt und den EWS-Endpunkt. Wenn Sie aktualisieren, um nach einem Fehler wiederherzustellen, behandeln Sie den Fehler nach Bedarf. 
     
-Die folgende Abbildung bietet eine visuelle Darstellung dieses Prozesses.
+Die folgende Abbildung enthält eine visuelle Darstellung dieses Prozesses.
   
 **Abbildung 1. Prozess zum Aktualisieren von Konfigurationsinformationen mithilfe der AutoErmittlung**
 
@@ -59,15 +59,15 @@ Die folgende Abbildung bietet eine visuelle Darstellung dieses Prozesses.
 ### <a name="connection-related-errors"></a>Verbindungsbezogene Fehler
 <a name="bk_ConnectionErrors"> </a>
 
-Das Aktualisieren der zwischengespeicherten Konfigurationsinformationen kann bei einigen Fehlern helfen, jedoch nicht bei allen. 
+Das Aktualisieren der zwischengespeicherten Konfigurationsinformationen kann bei einigen Fehlern hilfreich sein, aber nicht bei allen. 
   
-**Tabelle 2. Durch Aktualisieren des Caches behobene Fehler**
+**Tabelle 2. Fehler beim Aktualisieren des Caches**
 
 |**Error**|**Implementierung der verwalteten EWS-API**|**Hinweise**|
 |:-----|:-----|:-----|
-|DNS-oder Netzwerkfehler<br/><br/> Beispiel: Host Name konnte nicht gefunden werden.  <br/> |[ServiceRemoteException](https://docs.microsoft.com/dotnet/api/microsoft.exchange.webservices.data.serviceremoteexception?view=exchange-ews-api) <br/> |Jeder Fehler, der angibt, dass der Server nicht gefunden wurde oder nicht erreicht werden konnte, kann durch einen Versuch der AutoErmittlung aufgelöst werden. <br/><br/> Der zwischengespeicherte EWS-Endpunkt ist möglicherweise nicht mehr gültig, und die AutoErmittlung kann Sie auf den neuen Server hinweisen.  <br/> |
-|HTTP-Statusfehler<br/><br/> Beispiel: 503 Dienst nicht verfügbar  <br/> |[ServiceRemoteException](https://docs.microsoft.com/dotnet/api/microsoft.exchange.webservices.data.serviceremoteexception?view=exchange-ews-api) <br/> |HTTP-Status Fehler können aus vielen verschiedenen Gründen auftreten.<br/><br/> Es empfiehlt sich jedoch, die AutoErmittlung zu testen, um festzustellen, ob ein neuer EWS-Endpunkt für den Benutzer verfügbar ist.  <br/> |
-|EWS-Fehlercodes <br/><br/> Beispiel: ErrorConnectionFailed <br/> |[ResponseCodeType](../web-service-reference/responsecode.md) <br/> | Die meisten EWS-Fehlercodes gewährleisten keine Aktualisierung Ihrer Konfigurationsinformationen.<br/><br/> Im folgenden wird jedoch ausdrücklich darauf hingewiesen, dass die Konfigurationsinformationen aktualisiert werden müssen:<br/>- **ErrorConnectionFailed** <br/>- **ErrorMailboxMoveInProgress** <br/> |
+|DNS- oder Netzwerkfehler<br/><br/> Beispiel: Hostname konnte nicht gefunden werden.  <br/> |[ServiceRemoteException](https://docs.microsoft.com/dotnet/api/microsoft.exchange.webservices.data.serviceremoteexception?view=exchange-ews-api) <br/> |Jeder Fehler, der angibt, dass der Server nicht gefunden oder nicht erreicht werden konnte, kann durch Versuchen der AutoErmittlung behoben werden. <br/><br/> Ihr zwischengespeicherter EWS-Endpunkt ist möglicherweise nicht mehr gültig, und die AutoErmittlung kann Sie möglicherweise auf den neuen Server verweisen.  <br/> |
+|HTTP-Statusfehler<br/><br/> Beispiel: 503 Dienst nicht verfügbar  <br/> |[ServiceRemoteException](https://docs.microsoft.com/dotnet/api/microsoft.exchange.webservices.data.serviceremoteexception?view=exchange-ews-api) <br/> |HTTP-Statusfehler können aus vielen verschiedenen Gründen auftreten.<br/><br/> Es empfiehlt sich jedoch, die AutoErmittlung auszuprobieren, um festzustellen, ob ein neuer EWS-Endpunkt für den Benutzer verfügbar ist.  <br/> |
+|EWS-Fehlercodes <br/><br/> Beispiel: ErrorConnectionFailed <br/> |[ResponseCodeType](../web-service-reference/responsecode.md) <br/> | Die meisten EWS-Fehlercodes erfordern keine Aktualisierung ihrer Konfigurationsinformationen.<br/><br/> Die folgenden Angaben deuten jedoch ausdrücklich darauf hin, dass die Konfigurationsinformationen aktualisiert werden müssen:<br/>- **ErrorConnectionFailed** <br/>- **ErrorMailboxMoveInProgress** <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

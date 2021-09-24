@@ -1,23 +1,23 @@
 ---
-title: Task String
+title: TaskString
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4f2c8e66-698c-4313-98d0-24d7298489f6
-description: Das Task String-Element enthält eine vorgeschlagene Aufgabe.
-ms.openlocfilehash: a48a47917dd2ec47678b53f04f00c99887eec0b5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das TaskString-Element enthält eine vorgeschlagene Aufgabe.
+ms.openlocfilehash: 74bb36ac96803bbc2db0173f61af85442b95e576
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530874"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538904"
 ---
-# <a name="taskstring"></a>Task String
+# <a name="taskstring"></a>TaskString
 
-Das **Task** String-Element enthält eine vorgeschlagene Aufgabe. 
+Das **TaskString-Element** enthält eine vorgeschlagene Aufgabe. 
   
 ```XML
 <TaskString></TaskString>
@@ -43,9 +43,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Task** String-Elements ist die vorgeschlagene Aufgabe, die aus einer Vorgangs Entität resultiert, die aus einem Element im Postfach extrahiert wurde. 
+Der Textwert des **TaskString-Elements** ist die vorgeschlagene Aufgabe, die aus einer Aufgabenentität stammt, die aus einem Element im Postfach extrahiert wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

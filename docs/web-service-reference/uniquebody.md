@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UniqueBody
 api_type:
 - schema
 ms.assetid: 06bc95d7-121c-433b-bd27-c2b0eb8c011f
-description: Das UniqueBody-Element stellt ein HTML-Fragment oder nur-Text dar, der den eindeutigen Textkörper dieser Unterhaltung darstellt.
-ms.openlocfilehash: 0a8d52c7d4eb8bda9fd41c4c25e448523185df93
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das UniqueBody-Element stellt ein HTML-Fragment oder Nur-Text dar, das den eindeutigen Textkörper dieser Unterhaltung darstellt.
+ms.openlocfilehash: 419247aaa952f1d15633fe431912f87ad4d6db85
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461919"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538673"
 ---
 # <a name="uniquebody"></a>UniqueBody
 
-Das **UniqueBody** -Element stellt ein HTML-Fragment oder nur-Text dar, der den eindeutigen Textkörper dieser Unterhaltung darstellt. 
+Das **UniqueBody-Element** stellt ein HTML-Fragment oder Nur-Text dar, das den eindeutigen Textkörper dieser Unterhaltung darstellt. 
   
 ```XML
 <UniqueBody BodyType=""/>
@@ -36,14 +36,14 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**BodyType** <br/> |Beschreibt, wie der Element Text im Element gespeichert wird.  <br/> |
+|**BodyType** <br/> |Beschreibt, wie der Elementtext im Element gespeichert wird.  <br/> |
    
 #### <a name="bodytype-attribute"></a>BodyType-Attribut
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|**HTML** <br/> |Wandelt alle Textkörper in HTML um.  <br/> |
-|**Text** <br/> |Wandelt alle Textkörper in nur-Text um.  <br/> |
+|**HTML** <br/> |Konvertiert alle Textkörper in HTML.  <br/> |
+|**Text** <br/> |Konvertiert alle Textkörper in Nur-Text.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -62,7 +62,7 @@ Keine.
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort im Exchange-Informationsspeicher dar.  <br/> |
 |[Message](message-ex15websvcsotherref.md) <br/> |Stellt eine Exchange-E-Mail-Nachricht dar.  <br/> |
-|[PostItem](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Informationsspeicher dar.  <br/> |
+|[PostItem](postitem.md) <br/> |Stellt ein Beitragselement im Exchange Informationsspeicher dar.  <br/> |
 |[RemoveItem](removeitem.md) <br/> |Entfernt ein Element aus dem Exchange-Informationsspeicher.  <br/> |
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
    
@@ -70,7 +70,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

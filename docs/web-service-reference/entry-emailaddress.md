@@ -1,27 +1,27 @@
 ---
-title: Eintrag (e-mailemail)
+title: Eintrag (EmailAddress)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Entry
 api_type:
 - schema
 ms.assetid: b028c5c7-3494-4ecd-96d1-78783daa660f
-description: Das Entry-Element stellt eine einzelne e-Mail-Adresse für einen Kontakt dar.
-ms.openlocfilehash: 766d67cda10b02c07a7677e541fddfc38a4285cf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Entry-Element stellt eine einzelne E-Mail-Adresse für einen Kontakt dar.
+ms.openlocfilehash: 96351a82e113f2c4aa73776e89e1eb7e7a683433
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459644"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520668"
 ---
-# <a name="entry-emailaddress"></a>Eintrag (e-mailemail)
+# <a name="entry-emailaddress"></a>Eintrag (EmailAddress)
 
-Das **Entry** -Element stellt eine einzelne e-Mail-Adresse für einen Kontakt dar. 
+Das **Entry-Element** stellt eine einzelne E-Mail-Adresse für einen Kontakt dar. 
   
 ```XML
 <Entry Key="" Name="" RoutingType="" MailboxType="" />
@@ -37,9 +37,9 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Key** <br/> | Identifiziert die e-Mail-Adresse.<br/><br/>Es folgen die möglichen Werte für dieses Attribut.<br/><br/>-EmailAddress1  <br/>-EmailAddress2  <br/>- EmailAddress3 <br/><br/>  Dieses Attribut ist erforderlich.  <br/> |
+|**Key** <br/> | Gibt die E-Mail-Adresse an.<br/><br/>Es folgen die möglichen Werte für dieses Attribut.<br/><br/>- EmailAddress1  <br/>- EmailAddress2  <br/>- EmailAddress3 <br/><br/>  Dieses Attribut ist erforderlich.  <br/> |
 |**Name** <br/> |Definiert den Namen des Postfachbenutzers. Dieses Attribut ist optional.  <br/> |
-|**Routing Type** <br/> |Definiert die Weiterleitung, die für das Postfach verwendet wird. Der Standard lautet SMTP. Dieses Attribut ist optional.  <br/> |
+|**RoutingType** <br/> |Definiert die Weiterleitung, die für das Postfach verwendet wird. Der Standard lautet SMTP. Dieses Attribut ist optional.  <br/> |
 |**MailboxType** <br/> |Definiert den Postfachtyp eines Postfachbenutzers. Dieses Attribut ist optional.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
@@ -50,9 +50,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[EmailAddresses](emailaddresses.md) <br/> |Stellt eine Auflistung von e-Mail-Adressen für einen Kontakt dar.  <br/> |
+|[EmailAddresses](emailaddresses.md) <br/> |Stellt eine Auflistung von E-Mail-Adressen für einen Kontakt dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

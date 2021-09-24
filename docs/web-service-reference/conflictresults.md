@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ConflictResults
 api_type:
 - schema
 ms.assetid: 08cdd547-4de7-4c7a-b60f-e618dc217d20
-description: Das ConflictResults-Element enthält die Anzahl von Konflikten in einer UpdateItem-Vorgangs Antwort.
-ms.openlocfilehash: 923c7950e21039adf28e232486f4df5fc04889d1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ConflictResults-Element enthält die Anzahl der Konflikte in einer UpdateItem-Vorgangsantwort.
+ms.openlocfilehash: 44b9c6952905274128c3651999b97cb2ee0c1fe8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460169"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519940"
 ---
 # <a name="conflictresults"></a>ConflictResults
 
-Das [ConflictResults](conflictresults.md) -Element enthält die Anzahl von Konflikten in einer [UpdateItem-Vorgangs](updateitem-operation.md) Antwort. 
+Das [ConflictResults-Element](conflictresults.md) enthält die Anzahl der Konflikte in einer [UpdateItem-Vorgangsantwort.](updateitem-operation.md) 
   
 [UpdateItemResponse](updateitemresponse.md)
   
@@ -50,17 +50,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Count](count.md) <br/> |Enthält die Anzahl von Konflikten in einer [UpdateItem-Vorgangs](updateitem-operation.md) Antwort.  <br/> |
+|[Count](count.md) <br/> |Enthält die Anzahl der Konflikte in einer [UpdateItem-Vorgangsantwort.](updateitem-operation.md)  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UpdateItemResponseMessage](updateitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [UpdateItem-Vorgangs](updateitem-operation.md) Anforderung.  <br/> |
+|[UpdateItemResponseMessage](updateitemresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [UpdateItem-Vorgangsanforderung.](updateitem-operation.md)  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server mit installierter Client Zugriffs-Server Rolle ausführt.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server mit installierter Clientzugriffsserverrolle ausgeführt wird.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

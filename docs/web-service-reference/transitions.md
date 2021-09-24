@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Transitions
 api_type:
 - schema
 ms.assetid: 26f38f1c-96a3-440e-805c-1437886d11c5
-description: Das Transitions-Element stellt ein Array von Zeit Zonen Übergängen dar.
-ms.openlocfilehash: d48fb8872b2f7e052f733c32e5dd1c9b4d04d898
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Transitions-Element stellt ein Array von Zeitzonenübergängen dar.
+ms.openlocfilehash: 7756878ed21bbe778bf51e99ade212f53414f998
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467438"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520311"
 ---
 # <a name="transitions"></a>Übergänge
 
-Das **Transitions** -Element stellt ein Array von Zeit Zonen Übergängen dar. 
+Das **Transitions-Element** stellt ein Array von Zeitzonenübergängen dar. 
   
 ```xml
 <Transitions Id="">
@@ -47,24 +47,24 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AbsoluteDateTransition](absolutedatetransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der zu einem bestimmten Datum und zu einem bestimmten Zeitpunkt erfolgt.  <br/> |
-|[RecurringDayTransition](recurringdaytransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der an demselben Tag jedes Jahr erfolgt.  <br/> |
-|[RecurringDateTransition](recurringdatetransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der an einem angegebenen Tag des Jahres erfolgt.  <br/> |
+|[AbsoluteDateTransition](absolutedatetransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der an einem bestimmten Datum und zu einer bestimmten Zeit erfolgt.  <br/> |
+|[RecurringDayTransition](recurringdaytransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der jedes Jahr am selben Tag erfolgt.  <br/> |
+|[RecurringDateTransition](recurringdatetransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der an einem angegebenen Tag des Jahres stattfindet.  <br/> |
 |[Übergang](transition.md) <br/> |Stellt einen Zeitzonenübergang dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StartTimeZone](starttimezone.md) <br/> |Definiert die Zeitzone für die Startzeit einer [CalendarItem](calendaritem.md) -oder [MeetingRequest](meetingrequest.md)-Start Zeit.  <br/> |
-|[EndTimeZone](endtimezone.md) <br/> |Definiert die Zeitzone für die Endzeit einer [CalendarItem](calendaritem.md) -oder [MeetingRequest](meetingrequest.md)-Datei.  <br/> |
+|[StartTimeZone](starttimezone.md) <br/> |Definiert die Zeitzone für die Startzeit eines [CalendarItem-](calendaritem.md) oder [MeetingRequest-Objekt.](meetingrequest.md)  <br/> |
+|[EndTimeZone](endtimezone.md) <br/> |Definiert die Zeitzone für die Endzeit eines [CalendarItem-](calendaritem.md) oder [MeetingRequest](meetingrequest.md)-Objekt.  <br/> |
 |[TimeZoneDefinition](timezonedefinition.md) <br/> |Definiert eine Zeitzone.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

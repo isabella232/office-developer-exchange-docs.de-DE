@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 02a213ac-ceb3-456c-8347-f1dbddf64d4f
 description: Das ApplicationUri-Element definiert den Speicherort einer Anwendung.
-ms.openlocfilehash: dd2c0242df416c4f69f9b8202d81fe0fab0da7e0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 262e3738dccca68e978d7f9b650644a55eb757e2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460351"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520108"
 ---
 # <a name="applicationuri-soap"></a>ApplicationUri (SOAP)
 
-Das **ApplicationUri** -Element definiert den Speicherort einer Anwendung. 
+Das **ApplicationUri-Element** definiert den Speicherort einer Anwendung. 
   
 ```XML
 <ApplicationUri/>
@@ -41,19 +41,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Antwort (GetFederationInformation) (SOAP)](response-getfederationinformationsoap.md) <br/> |Enthält die getfederation-Antwortinformationen.  <br/> |
+|[Antwort (GetFederationInformation) (SOAP)](response-getfederationinformationsoap.md) <br/> |Enthält die GetFederation-Antwortinformationen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt den URI der Anwendung dar.
+Der Textwert stellt den URI der Anwendung dar.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Mssages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Mssages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

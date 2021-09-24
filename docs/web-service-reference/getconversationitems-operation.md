@@ -5,44 +5,44 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8ae00a99-b37b-4194-829c-fe300db6ab99
 description: Hier finden Sie Informationen zum GetConversationItems-Vorgang.
-ms.openlocfilehash: ddeb5386e56653a32ca2e6d212518704cd0f0c58
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0de9a380aa2f9b25e9a7ef90ebe7a9f485ca60d0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457781"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513668"
 ---
 # <a name="getconversationitems-operation"></a>GetConversationItems-Vorgang
 
-Hier finden Sie Informationen zum **GetConversationItems** -Vorgang. 
+Hier finden Sie Informationen zum **GetConversationItems-Vorgang.** 
   
-Der **GetConversationItems** -Vorgang ruft eine oder mehrere Gruppen von Elementen ab, die in einer Unterhaltung in Knoten organisiert sind. 
+Der **GetConversationItems-Vorgang** ruft eine oder mehrere Sätze von Elementen ab, die in Knoten in einer Unterhaltung organisiert sind. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-getconversationitems-operation"></a>Verwenden des GetConversationItems-Vorgangs
 
-Sie können den **GetConversationItems** -Vorgang verwenden, um Elemente in Unterhaltungen für primäre und Archivpostfächer abzurufen. 
+Sie können den **GetConversationItems-Vorgang** verwenden, um Elemente in Unterhaltungen für primäre und Archivpostfächer abzurufen. 
   
 ### <a name="getconversationitems-operation-soap-headers"></a>SOAP-Header des GetConversationItems-Vorgangs
 
-Der **GetConversationItems** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **GetConversationItems-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Der Minimalwert für dieses Element ist **Exchange2013**. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Der Mindestwert für dieses Element ist **Exchange2013.** Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="getconversationitems-operation-request-example-get-items-in-a-single-conversation"></a>GetConversationItems-Vorgangs Anforderungs Beispiel: Abrufen von Elementen in einer einzelnen Unterhaltung
+## <a name="getconversationitems-operation-request-example-get-items-in-a-single-conversation"></a>GetConversationItems-Vorgangsanforderungsbeispiel: Abrufen von Elementen in einer einzelnen Unterhaltung
 
-Im folgenden Beispiel einer **GetConversationItems** -Vorgangsanforderung wird gezeigt, wie alle Unterhaltungselemente in einer einzelnen Unterhaltung abgerufen werden, mit Ausnahme von Elementen, die sich in den Ordnern "Gelöschte Elemente" und "Entwürfe" befinden. Jedes in der Antwort zurückgegebene Element enthält eine Element-ID, einen Betreff und die Uhrzeit, zu der das Element im Postfach empfangen wurde. 
+Das folgende Beispiel einer **GetConversationItems-Vorgangsanforderung** zeigt, wie alle Unterhaltungselemente in einer einzelnen Unterhaltung abgerufen werden, mit Ausnahme von Elementen, die sich in den Ordnern "Gelöschte Elemente" und "Entwürfe" befinden. Jedes in der Antwort zurückgegebene Element enthält einen Elementbezeichner, einen Betreff und den Zeitpunkt, zu dem das Element im Postfach empfangen wurde. 
   
 > [!NOTE]
-> Alle Element-IDs und Änderungsschlüssel in diesem Artikel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Alle Elementbezeichner und Änderungsschlüssel in diesem Artikel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -77,15 +77,15 @@ Im folgenden Beispiel einer **GetConversationItems** -Vorgangsanforderung wird g
 </soap:Envelope>
 ```
 
-In diesem Beispiel für eine **GetConversationItems** -Anforderung sind die folgenden Optionen nicht enthalten: 
+Dieses Beispiel für eine **GetConversationItems-Anforderung** enthält nicht die folgenden Optionen: 
   
-- Das [MaxItemsToReturn](maxitemstoreturn.md) -Element, mit dem die maximale Anzahl von Elementen festgelegt wird, die in der Antwort zurückgegeben werden sollen. 
+- Das [MaxItemsToReturn-Element,](maxitemstoreturn.md) das die maximale Anzahl von Elementen festlegt, die in der Antwort zurückgegeben werden sollen. 
     
-- Das [MailboxScope](mailboxscope.md) -Element, das den Post Fachbereich festlegt, indem er angibt, ob der **GetConversationItems** -Vorgang für das primäre Postfach, das Archivpostfach oder beide Postfächer ausgeführt werden soll. 
+- Das [MailboxScope-Element,](mailboxscope.md) das den Postfachbereich festlegt, indem angegeben wird, ob der **GetConversationItems-Vorgang** für das primäre Postfach, das Archivpostfach oder beide Postfächer ausgeführt werden soll. 
     
-- Das [von "SyncState (base64Binary)](syncstate-base64binary.md) -Element, das den Synchronisierungs Zustand so festlegt, dass nur Unterhaltungselemente abgerufen werden, die in der Unterhaltung neu oder aktualisiert sind. Dieses Element wird für jede Unterhaltung festgelegt. 
+- Das [SyncState-Element (base64Binary),](syncstate-base64binary.md) das den Synchronisierungsstatus so festlegt, dass nur Unterhaltungselemente abgerufen werden, die neu oder in der Unterhaltung aktualisiert sind. Dieses Element wird für jede Unterhaltung festgelegt. 
     
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [GetConversationItems](getconversationitems.md)
     
@@ -101,7 +101,7 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-- [Sortierreihenfolge (ConversationNodeSortOrder)](sortorder-conversationnodesortorder.md)
+- [SortOrder (ConversationNodeSortOrder)](sortorder-conversationnodesortorder.md)
     
 - [Unterhaltungen](conversations-ex15websvcsotherref.md)
     
@@ -109,9 +109,9 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [ConversationId](conversationid.md)
     
-## <a name="successful-getconversationitems-operation-response"></a>Erfolgreiche Reaktion des GetConversationItems-Vorgangs
+## <a name="successful-getconversationitems-operation-response"></a>Erfolgreiche GetConversationItems-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetConversationItems** -Vorgangsanforderung zum Abrufen von Elementen in einer einzelnen Unterhaltung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetConversationItems-Vorgangsanforderung** zum Abrufen von Elementen in einer einzelnen Unterhaltung. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -201,9 +201,9 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetConversation
 </s:Envelope>
 ```
 
-Es wird empfohlen, die von "SyncState für nachfolgende **GetConversationItems** -Vorgangsanforderungen zu speichern. 
+Es wird empfohlen, syncState für nachfolgende **GetConversationItems-Vorgangsanforderungen** zu speichern. 
   
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [GetConversationItemsResponse](getconversationitemsresponse.md)
     
@@ -217,7 +217,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [ConversationId](conversationid.md)
     
-- [Von "SyncState (base64Binary)](syncstate-base64binary.md)
+- [SyncState (base64Binary)](syncstate-base64binary.md)
     
 - [ConversationNodes](conversationnodes.md)
     
@@ -225,7 +225,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [InternetMessageId](internetmessageid.md)
     
-- [Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 - [Message](message-ex15websvcsotherref.md)
     
@@ -235,9 +235,9 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [DateTimeReceived](datetimereceived.md)
     
-## <a name="getconversationitems-operation-error-response"></a>Fehlerantwort des GetConversationItems-Vorgangs
+## <a name="getconversationitems-operation-error-response"></a>GetConversationItems-Vorgangsfehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetConversationItems** -Vorgangsanforderung zum Abrufen von Elementen in einer Unterhaltung, die entweder nicht mehr im Postfach vorhanden sind oder für die sich alle Unterhaltungselemente in ignorierten Ordnern befinden. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetConversationItems-Vorgangsanforderung** zum Abrufen von Elementen in einer Unterhaltung, die entweder nicht mehr im Postfach vorhanden sind oder für die sich alle Unterhaltungselemente in ignorierten Ordnern befinden. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

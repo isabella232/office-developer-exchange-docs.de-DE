@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7e0cfa14-cdfb-4b48-b2e9-b1d866bf2c0e
-description: Das e-Mail-Element gibt die e-Mail-Adresse des Benutzers an, dessen Foto im GetUserPhoto-Vorgang angefordert wird.
-ms.openlocfilehash: 28fc16cee4438f6a6a87924875e029184197a426
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Email-Element identifiziert die E-Mail-Adresse des Benutzers, dessen Foto im GetUserPhoto-Vorgang angefordert wird.
+ms.openlocfilehash: a7ed2356f696ebc1e6cc938a7ed5588786d228fa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459223"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538226"
 ---
 # <a name="email-string"></a>E-Mail (Zeichenfolge)
 
-Das **e-Mail-** Element gibt die e-Mail-Adresse des Benutzers an, dessen Foto im **GetUserPhoto** -Vorgang angefordert wird. 
+Das **Email-Element** identifiziert die E-Mail-Adresse des Benutzers, dessen Foto im **GetUserPhoto-Vorgang** angefordert wird. 
   
 ```XML
 <Email></Email>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **e-Mail-** Elements ist die e-Mail-Adresse des Benutzers, dessen Foto im GetUserPhoto-Vorgang angefordert wird. 
+Der Textwert des **Email-Elements** ist die E-Mail-Adresse des Benutzers, dessen Foto im GetUserPhoto-Vorgang angefordert wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -1,23 +1,23 @@
 ---
-title: Parameter IncludeUnsearchableItems
+title: IncludeUnsearchableItems
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9a9bd2dc-f5b9-4b82-a6a0-f643d2951080
-description: Das Parameter IncludeUnsearchableItems-Element gibt an, ob Elemente einbezogen werden, die nicht durchsucht werden können.
-ms.openlocfilehash: 19fe450f5b1647be2df75138dbe67dd9e1c05c21
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IncludeUnsearchableItems-Element gibt an, ob Elemente eingeschlossen werden sollen, die nicht durchsucht werden können.
+ms.openlocfilehash: 3bffd68c20623aa4c63dd295d8b4619999c1d4a5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465702"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533104"
 ---
-# <a name="includeunsearchableitems"></a>Parameter IncludeUnsearchableItems
+# <a name="includeunsearchableitems"></a>IncludeUnsearchableItems
 
-Das **Parameter IncludeUnsearchableItems** -Element gibt an, ob Elemente einbezogen werden, die nicht durchsucht werden können. 
+Das **IncludeUnsearchableItems-Element** gibt an, ob Elemente eingeschlossen werden sollen, die nicht durchsucht werden können. 
   
 ```XML
 <IncludeUnsearchableItems>true | false</IncludeUnsearchableItems>
@@ -40,13 +40,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md) <br/> |Gibt eine Anforderung an, nach Postfachstatistiken nach Stichwort zu suchen.  <br/> |
+|[FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md) <br/> |Gibt eine Anforderung an, nach Postfachstatistiken nach Schlüsselwort zu suchen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **Parameter IncludeUnsearchableItems** -Element gibt an, dass Statistiken nicht für Elemente enthalten sind, die nicht durchsuchbar sind. Der Wert **false** gibt an, dass Statistiken für Elemente enthalten sind, die nicht durchsuchbar sind. 
+Der Textwert **"true"** für das **IncludeUnsearchableItems-Element** gibt an, dass keine Statistiken für Elemente enthalten sind, die nicht durchsuchbar sind. Der Wert **"false"** gibt an, dass Statistiken für Elemente enthalten sind, die nicht durchsuchbar sind. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 21761cb0-4514-4adb-a659-59a3f2f0a6e1
-description: Das HomeCitySortKey-Element stellt den Sortierschlüssel für die Heimatstadt dar.
-ms.openlocfilehash: 8a6c96f7de8915259d1151fc4ddb9b6148a864b6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das HomeCitySortKey-Element stellt die Sortiertaste für die Startseite dar.
+ms.openlocfilehash: bbb5cd196f595a042e5b2f62f41511a05f3b7edb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460862"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519541"
 ---
 # <a name="homecitysortkey"></a>HomeCitySortKey
 
-Das **HomeCitySortKey** -Element stellt den Sortierschlüssel für die Heimatstadt dar. 
+Das **HomeCitySortKey-Element** stellt die Sortiertaste für die Startseite dar. 
   
 ```XML
 <HomeCitySortKey></HomeCitySortKey>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **HomeCitySortKey** -Elements ist der Sortierschlüssel für den Namen der Start Stadt der Rolle. 
+Der Textwert des **HomeCitySortKey-Elements** ist der Sortierschlüssel für den Ortsnamen der Persona. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

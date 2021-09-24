@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PostalAddressIndex
 api_type:
 - schema
 ms.assetid: 170fec26-5cb7-4578-ac09-140da9a6c84e
-description: Das PostalAddressIndex-Element stellt die Anzeigetypen für physikalische Adressen dar.
-ms.openlocfilehash: ee2c4c30c82abf74edb5e83daab68a3fcd2d6050
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PostalAddressIndex-Element stellt die Anzeigetypen für physische Adressen dar.
+ms.openlocfilehash: 8b2b8eedc7e422ca06810ba42e895d4e0f4165f6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529917"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512625"
 ---
 # <a name="postaladdressindex"></a>PostalAddressIndex
 
-Das **PostalAddressIndex** -Element stellt die Anzeigetypen für physikalische Adressen dar. 
+Das **PostalAddressIndex-Element** stellt die Anzeigetypen für physische Adressen dar. 
   
 ```xml
 <PostalAddressIndex/>
@@ -48,17 +48,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Im folgenden sind die möglichen Text Werte für dieses Element angegeben:
+Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses Element:
   
-- Keine
+- Keines
     
 - Business
     
-- Startseite
+- Start
     
-- Andere
+- Sonstiges
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

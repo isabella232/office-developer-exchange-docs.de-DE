@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - State
 api_type:
 - schema
 ms.assetid: bcce7b0e-d504-4a1f-a530-db80b207f201
 description: Das State-Element stellt den Wohnsitzstatus für ein Kontaktelement dar.
-ms.openlocfilehash: 123aa0db83f58996924baadb0a87946db6934450
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 007751aca3671d75fb4257698733e47694a1249e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460001"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539003"
 ---
 # <a name="state"></a>Status
 
-Das **State** -Element stellt den Wohnsitzstatus für ein Kontaktelement dar. 
+Das **State-Element** stellt den Wohnsitzstatus für ein Kontaktelement dar. 
   
 ```xml
 <State/>
@@ -49,9 +49,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein String-Wert, der den Namen eines Zustands darstellt, ist erforderlich, wenn dieses Element verwendet wird.
+Ein Zeichenfolgenwert, der den Namen eines Zustands darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

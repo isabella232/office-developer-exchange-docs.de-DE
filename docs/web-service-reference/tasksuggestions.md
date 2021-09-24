@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7d3c6314-2a5c-4fc3-b5f9-ae6d4946aac3
-description: Das TaskSuggestions-Element gibt ein Array von Aufgaben Vorschläge an, die aus einem Element extrahiert wurden.
-ms.openlocfilehash: 024f8daff6dd61d6563fff4849ed09602c95efb5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das TaskSuggestions-Element gibt ein Array von Aufgabenvorschlägen an, die aus einem Element extrahiert wurden.
+ms.openlocfilehash: 1fc1d8f7addcc22dc99d034a0ba16ca7a11958f2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468117"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538849"
 ---
 # <a name="tasksuggestions"></a>TaskSuggestions
 
-Das **TaskSuggestions** -Element gibt ein Array von Aufgaben Vorschläge an, die aus einem Element extrahiert wurden. 
+Das **TaskSuggestions-Element** gibt ein Array von Aufgabenvorschlägen an, die aus einem Element extrahiert wurden. 
   
 ```XML
 <TaskSuggestions>
@@ -43,7 +43,7 @@ Keine.
 
 [EntityExtractionResult](entityextractionresult.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UserConfiguration
 api_type:
 - schema
 ms.assetid: 1811df99-ca5b-48a3-b160-b3fd70320c34
-description: Das UserConfiguration-Element definiert ein einzelnes Benutzer Konfigurationsobjekt.
-ms.openlocfilehash: 1217f5d591570c2d8df49a116b6bf35c243d1e0e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das UserConfiguration-Element definiert ein einzelnes Benutzerkonfigurationsobjekt.
+ms.openlocfilehash: 3821cabf777143de4a68d20a90cb78acedcff552
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468908"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538555"
 ---
 # <a name="userconfiguration"></a>UserConfiguration
 
-Das **UserConfiguration** -Element definiert ein einzelnes Benutzer Konfigurationsobjekt. 
+Das **UserConfiguration-Element** definiert ein einzelnes Benutzerkonfigurationsobjekt. 
   
 ```XML
 <UserConfiguration>
@@ -46,21 +46,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserConfigurationName](userconfigurationname.md) <br/> |Stellt den Namen eines Benutzer Konfigurationsobjekts dar. Dieses Element muss verwendet werden, wenn Sie ein Benutzer Konfigurationsobjekt erstellen.  <br/> |
-|[ItemId](itemid.md) <br/> |Definiert die Element-ID des Benutzer Konfigurationsobjekts.  <br/> |
-|[Wörterbuch](dictionary.md) <br/> |Definiert eine Gruppe von Wörterbuch-Eigenschafts Einträgen für ein Benutzer Konfigurationsobjekt.  <br/> |
-|[XMLDATA](xmldata.md) <br/> |Enthält XML-Daten Eigenschafts Inhalt für ein Benutzer Konfigurationsobjekt.  <br/> |
-|[BinaryData](binarydata.md) <br/> |Enthält binäre Daten Eigenschafts Inhalte für ein Benutzer Konfigurationsobjekt.  <br/> |
+|[UserConfigurationName](userconfigurationname.md) <br/> |Stellt den Namen eines Benutzerkonfigurationsobjekts dar. Dieses Element muss verwendet werden, wenn Sie ein Benutzerkonfigurationsobjekt erstellen.  <br/> |
+|[ItemId](itemid.md) <br/> |Definiert den Bezeichner des Benutzerkonfigurationsobjektelements.  <br/> |
+|[Wörterbuch](dictionary.md) <br/> |Definiert eine Reihe von Wörterbucheigenschaftseinträgen für ein Benutzerkonfigurationsobjekt.  <br/> |
+|[XmlData](xmldata.md) <br/> |Enthält XML-Dateneigenschaftsinhalte für ein Benutzerkonfigurationsobjekt.  <br/> |
+|[BinaryData](binarydata.md) <br/> |Enthält binäre Dateneigenschafteninhalte für ein Benutzerkonfigurationsobjekt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CreateUserConfiguration](createuserconfiguration.md) <br/> |Stellt eine Anforderung zum Erstellen eines Benutzer Konfigurationsobjekts dar.  <br/> |
-|[GetUserConfigurationResponseMessage](getuserconfigurationresponsemessage.md) <br/> |Stellt eine Antwort dar, die ein Benutzer Konfigurationsobjekt zurückgibt.  <br/> |
-|[UpdateUserConfiguration](updateuserconfiguration.md) <br/> |Stellt eine Anforderung zum Aktualisieren eines Benutzer Konfigurationsobjekts dar.  <br/> |
+|[CreateUserConfiguration](createuserconfiguration.md) <br/> |Stellt eine Anforderung zum Erstellen eines Benutzerkonfigurationsobjekts dar.  <br/> |
+|[GetUserConfigurationResponseMessage](getuserconfigurationresponsemessage.md) <br/> |Stellt eine Antwort dar, die ein Benutzerkonfigurationsobjekt zurückgibt.  <br/> |
+|[UpdateUserConfiguration](updateuserconfiguration.md) <br/> |Stellt eine Anforderung zum Aktualisieren eines Benutzerkonfigurationsobjekts dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -70,7 +70,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -1,23 +1,23 @@
 ---
-title: Imgroup
+title: ImGroup
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ab7b884e-ecf1-4e58-86ec-856b13a95f2b
-description: Das imgroup-Element stellt eine Sofortnachrichten Gruppe dar.
-ms.openlocfilehash: a0ff3fcb82e7f18837af5a6f5daa16e90043034d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ImGroup-Element stellt eine Chatgruppe dar.
+ms.openlocfilehash: 6bcf3a8c587ba1c14aadfaa792cbd2f9405c69ce
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460687"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533111"
 ---
-# <a name="imgroup"></a>Imgroup
+# <a name="imgroup"></a>ImGroup
 
-Das **imgroup** -Element stellt eine Sofortnachrichten Gruppe dar. 
+Das **ImGroup-Element** stellt eine Chatgruppe dar. 
   
 ```XML
 <ImGroup>
@@ -30,7 +30,7 @@ Das **imgroup** -Element stellt eine Sofortnachrichten Gruppe dar.
 </ImGroup>
 ```
 
- **Imgrouptype**
+ **ImGroupType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -47,7 +47,7 @@ Keine.
 
 [Gruppen (ArrayOfImGroupType)](groups-arrayofimgrouptype.md)  |  [AddDistributionGroupToImListResponse](adddistributiongrouptoimlistresponse.md)  |  [AddImGroupResponse](addimgroupresponse.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -59,7 +59,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

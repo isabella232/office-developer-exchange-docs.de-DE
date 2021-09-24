@@ -5,41 +5,41 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e2146df0-53d0-4caf-9758-b600bbc14b6a
-description: Hier finden Sie Informationen zum EWS-Vorgang getpersona.
-ms.openlocfilehash: 2b335c694a85f87c96432ea6d7c1c674613d2f17
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum GetPersona EWS-Vorgang.
+ms.openlocfilehash: 47713ee42b7d726693efe91a5bc29c10f3aea91c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460946"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533553"
 ---
 # <a name="getpersona-operation"></a>GetPersona-Vorgang
 
-Hier finden Sie Informationen zum EWS-Vorgang **getpersona** . 
+Hier finden Sie Informationen zum **GetPersona** EWS-Vorgang. 
   
-Der **getpersona** -Vorgang gibt eine Gruppe von Eigenschaften zurück, die einer Rolle zugeordnet sind. 
+Der **GetPersona-Vorgang** gibt eine Reihe von Eigenschaften zurück, die einer Persona zugeordnet sind. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
-## <a name="using-the-getpersona-operation"></a>Verwenden des getpersona-Vorgangs
+## <a name="using-the-getpersona-operation"></a>Verwenden des GetPersona-Vorgangs
 
-Der **getpersona** -Vorgang ermöglicht den Zugriff auf aggregierte Kontaktinformationen in Form einer Persona. Das [Persona](personaid.md) -Element in der Anforderung gibt die Rolle an, die in der Antwort zurückgegeben werden soll. Die Antwort kann eine Standardgruppe von Persona-Eigenschaften oder einen benutzerdefinierten Eigenschaftensatz enthalten. Es wird empfohlen, einen benutzerdefinierten Eigenschaften festzulegen, damit nicht verwendete Eigenschaften nicht verarbeitet und vom Server an den Client gesendet werden. 
+Der **GetPersona-Vorgang** ermöglicht den Zugriff auf aggregierte Kontaktinformationen in Form einer Persona. Das [PersonaId-Element](personaid.md) in der Anforderung identifiziert die Persona, die in der Antwort zurückgegeben werden soll. Die Antwort kann einen Standardsatz von Persona-Eigenschaften oder einen benutzerdefinierten Eigenschaftensatz enthalten. Es wird empfohlen, einen benutzerdefinierten Eigenschaftensatz anzugeben, damit nicht verwendete Eigenschaften nicht verarbeitet und vom Server an den Client gesendet werden. 
   
-### <a name="getpersona-operation-soap-headers"></a>SOAP-Kopfzeilen des getpersona-Vorgangs
+### <a name="getpersona-operation-soap-headers"></a>SOAP-Header des GetPersona-Vorgangs
 
-Der **getpersona** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **GetPersona-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="getpersona-operation-request-example-return-a-default-set-of-properties-for-a-persona"></a>Getpersona-Vorgangs Anforderungs Beispiel: Zurückgeben eines Standardsatzes von Eigenschaften für eine Rolle
+## <a name="getpersona-operation-request-example-return-a-default-set-of-properties-for-a-persona"></a>GetPersona-Vorgangsanforderungsbeispiel: Zurückgeben eines Standardsatzes von Eigenschaften für eine Persona
 
-Im folgenden Beispiel einer **getpersona** -Vorgangsanforderung wird gezeigt, wie eine Standardgruppe von Eigenschaften zurückgegeben wird, die einer Rolle zugeordnet sind. 
+Das folgende Beispiel einer **GetPersona-Vorgangsanforderung** zeigt, wie ein Standardsatz von Eigenschaften zurückgegeben wird, die einer Persona zugeordnet sind. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -57,18 +57,18 @@ Im folgenden Beispiel einer **getpersona** -Vorgangsanforderung wird gezeigt, wi
 
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [GetPersona](getpersona.md)
     
 - [PersonaId](personaid.md)
     
-## <a name="successful-getpersona-operation-response"></a>Erfolgreiche getpersona-Vorgangs Antwort
+## <a name="successful-getpersona-operation-response"></a>Erfolgreiche GetPersona-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Vorgangsanforderung von **getpersona** . 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetPersona-Vorgangsanforderung.** 
   
 > [!NOTE]
-> Alle Element-IDs und Änderungsschlüssel in diesem Artikel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Alle Elementbezeichner und Änderungsschlüssel in diesem Artikel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -180,7 +180,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Vorgangsanforderu
 
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - GetPersonaResponseMessage
     
@@ -190,7 +190,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [PersonaId](personaid.md)
     
-- [Personatype](personatype.md)
+- [PersonaType](personatype.md)
     
 - [CreationTime](creationtime.md)
     
@@ -202,7 +202,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [FileAsId](fileasid.md)
     
-- [GivenName](givenname.md)
+- [Givenname](givenname.md)
     
 - [Nachname](surname.md)
     
@@ -210,17 +210,17 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [RelevanceScore](relevancescore.md)
     
-- [Zuordnungen (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
+- [Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
     
 - [Attribution (Zeichenfolge)](attribution-string.md)
     
 - [ID (Zeichenfolge)](id-string.md)
     
-- [Quell](sourceid.md) -Nr SourceID 
+- [SourceId](sourceid.md) SourceId 
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-- [Isschreibbar](iswritable.md)
+- [IsWritable](iswritable.md)
     
 - [IsQuickContact](isquickcontact.md)
     
@@ -228,13 +228,13 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [FolderId](folderid.md)
     
-- [Display Names](displaynames.md)
+- [DisplayNames](displaynames.md)
     
 - [StringAttributedValue](stringattributedvalue.md)
     
 - [Wert (ArrayOfStringValueType)](value-arrayofstringvaluetype.md)
     
-- [Zuordnungen (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
+- [Attributions (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
     
 - [Attribution (PersonaAttributionType)](attribution-personaattributiontype.md)
     
@@ -246,7 +246,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [Nachnamen](surnames.md)
     
-- [Handys](mobilephones.md)
+- [MobilePhones](mobilephones.md)
     
 - [PhoneNumberAttributedValue](phonenumberattributedvalue.md)
     
@@ -256,11 +256,11 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [Typ (Zeichenfolge)](type-string.md)
     
-- [Companynames](companynames.md)
+- [CompanyNames](companynames.md)
     
-## <a name="getpersona-operation-error-response"></a>Getpersona-Operation-Fehlerantwort
+## <a name="getpersona-operation-error-response"></a>GetPersona-Vorgang – Fehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine Vorgangsanforderung von **getpersona** . Dies ist eine Antwort auf eine Anforderung, die eine falsch angegebene Persona-ID enthält. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetPersona-Vorgangsanforderung.** Dies ist eine Antwort auf eine Anforderung, die einen falsch angegebenen Persona-Bezeichner enthält. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -298,7 +298,7 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
+Weitere Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

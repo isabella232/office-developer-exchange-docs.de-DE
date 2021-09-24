@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: f004e2ef-4a33-49f0-b7b8-c2fd5235bf6a
-description: Das GetUserSettingsResponseMessage-Element definiert eine Antwort auf eine GetUserSettings-Vorgang (SOAP)-Anforderung.
-ms.openlocfilehash: 0defabcd554d9aad77f8ca1e826cf57cb7cb61ae
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GetUserSettingsResponseMessage-Element definiert eine Antwort auf eine SOAP-Anforderung (GetUserSettings-Vorgang).
+ms.openlocfilehash: c38af901b8a172eda77a1b799b41b629df619bd4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530141"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538031"
 ---
 # <a name="getusersettingsresponsemessage-soap"></a>GetUserSettingsResponseMessage (SOAP)
 
-Das **GetUserSettingsResponseMessage** -Element definiert eine Antwort auf eine [GetUserSettings-Vorgang (SOAP)-](getusersettings-operation-soap.md) Anforderung. 
+Das **GetUserSettingsResponseMessage-Element** definiert eine Antwort auf eine [SOAP-Anforderung (GetUserSettings-Vorgang).](getusersettings-operation-soap.md) 
   
 ```XML
 <GetUserSettingsResponseMessage>
@@ -38,19 +38,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Antwort (SOAP)](response-soap.md) <br/> |Enthält die Antwort auf eine [GetUserSettings-Vorgang (SOAP)-](getusersettings-operation-soap.md) Anforderung.  <br/> |
+|[Antwort (SOAP)](response-soap.md) <br/> |Enthält die Antwort auf eine [SOAP-Anforderung (GetUserSettings-Vorgang).](getusersettings-operation-soap.md)  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

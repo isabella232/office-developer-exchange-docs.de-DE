@@ -5,28 +5,28 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 98161486-e2f2-480f-8d5d-708ba81b208a
-description: Der EmptyFolder-Vorgang leert Ordner in einem Postfach. Optional können Sie mit diesem Vorgang die Unterordner des angegebenen Ordners löschen. Wenn ein Unterordner gelöscht wird, werden der Unterordner und die Nachrichten innerhalb des Unterordners gelöscht.
-ms.openlocfilehash: 1913db74d33f1e6750cd158df5870f257d0e7839
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der EmptyFolder-Vorgang leert Ordner in einem Postfach. Optional können Sie mit diesem Vorgang die Unterordner des angegebenen Ordners löschen. Wenn ein Unterordner gelöscht wird, werden der Unterordner und die Nachrichten im Unterordner gelöscht.
+ms.openlocfilehash: 8191dc7ecea7038a6d885f30d08fe561a59c4ed2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530684"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519667"
 ---
 # <a name="emptyfolder-operation"></a>EmptyFolder-Vorgang
 
-Der **EmptyFolder** -Vorgang leert Ordner in einem Postfach. Optional können Sie mit diesem Vorgang die Unterordner des angegebenen Ordners löschen. Wenn ein Unterordner gelöscht wird, werden der Unterordner und die Nachrichten innerhalb des Unterordners gelöscht. 
+Der **EmptyFolder-Vorgang** leert Ordner in einem Postfach. Optional können Sie mit diesem Vorgang die Unterordner des angegebenen Ordners löschen. Wenn ein Unterordner gelöscht wird, werden der Unterordner und die Nachrichten im Unterordner gelöscht. 
   
-## <a name="emptyfolder-request-example"></a>EmptyFolder-Anforderungs Beispiel
+## <a name="emptyfolder-request-example"></a>EmptyFolder-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **EmptyFolder** -Anforderung wird gezeigt, wie Sie eine Anforderung zum leeren eines Ordners bilden. In diesem Beispiel werden alle Unterordner des angegebenen Ordners gelöscht. 
+In diesem folgenden Beispiel einer **EmptyFolder-Anforderung** wird gezeigt, wie Sie eine Anforderung zum Leeren eines Ordners erstellen. In diesem Beispiel werden alle Unterordner des angegebenen Ordners gelöscht. 
   
 > [!NOTE]
-> Die Werte der ID-und der **ChangeKey** -Attribute des [Folder](folderid.md) **-ID** -Elements wurden zur Lesbarkeit gekürzt. 
+> Die Werte der **Attribute "Id"** und **"ChangeKey"** des ["FolderId"-Elements](folderid.md) wurden zur besseren Lesbarkeit gekürzt. 
   
 ### <a name="code"></a>Code
 
@@ -51,9 +51,9 @@ Im folgenden Beispiel einer **EmptyFolder** -Anforderung wird gezeigt, wie Sie e
 
 ### <a name="comments"></a>Comments
 
-In diesem Beispiel wird ein harter Löschvorgang für den Ordner ausgeführt.
+In diesem Beispiel wird der Ordner endgültig gelöscht.
   
-Ordner können entweder durch das [DistinguishedFolderId](distinguishedfolderid.md) -Element oder das [Folder](folderid.md) -Element für die Verwendung im [FolderIds](folderids.md) -Element identifiziert werden. 
+Ordner können entweder durch das [DistinguishedFolderId-Element](distinguishedfolderid.md) oder das [FolderId-Element](folderid.md) für die Verwendung im [FolderIds-Element](folderids.md) identifiziert werden. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -69,7 +69,7 @@ In der Anforderung werden folgende Elemente verwendet:
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **EmptyFolder** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **EmptyFolder-Anforderung.** 
   
 ### <a name="code"></a>Code
 
@@ -120,7 +120,7 @@ In der Antwort werden folgende Elemente verwendet:
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **EmptyFolder** -Anforderung. Der Fehler wurde erstellt, da der Vorgang versucht hat, einen Ordner zu leeren, der nicht im Exchange-Informationsspeicher gefunden wurde. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **Emptyfolder-Anforderung.** Der Fehler wurde erstellt, da der Vorgang versucht hat, einen Ordner zu leeren, der im Exchange Speicher nicht gefunden wurde. 
   
 ### <a name="code"></a>Code
 

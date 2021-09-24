@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8c58cef7-bc43-493a-a323-ba4dc6a33704
 description: Das ProposedStart (MeetingRegistrationResponseObjectType)-Element gibt die vorgeschlagene neue Startzeit eines Teilnehmers für eine Besprechung an.
-ms.openlocfilehash: 6f105556c39fa6549b3bec2f7a6fee50d4049358
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 98866001465083c924dc990c5a0199e4dbcc5d1f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465590"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532356"
 ---
 # <a name="proposedstart-meetingregistrationresponseobjecttype"></a>ProposedStart (MeetingRegistrationResponseObjectType)
 
-Das **ProposedStart (MeetingRegistrationResponseObjectType)** -Element gibt die vorgeschlagene neue Startzeit eines Teilnehmers für eine Besprechung an. 
+Das **ProposedStart (MeetingRegistrationResponseObjectType)-Element** gibt die vorgeschlagene neue Startzeit eines Teilnehmers für eine Besprechung an. 
   
 ```XML
 <ProposedStart />
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des ProposedStart-Elements **(MeetingRegistrationResponseObjectType)** ist das vorgeschlagene Startdatum und die geplante Uhrzeit der Besprechung. 
+Der Textwert des **ProposedStart (MeetingRegistrationResponseObjectType)-Elements** ist das vorgeschlagene Startdatum und die Uhrzeit der Besprechung. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

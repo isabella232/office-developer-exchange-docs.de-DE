@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ef4e7fae-205b-461c-a222-b4287bb24aea
 description: Das CompanyNameSortKey-Element enthält den Sortierschlüssel für einen Firmennamen.
-ms.openlocfilehash: 61cc335336ae565980f337cb16f216914e5e675f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 3f0f78fdf049e83d665edc29925d74638d0088a9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463251"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519947"
 ---
 # <a name="companynamesortkey"></a>CompanyNameSortKey
 
-Das **CompanyNameSortKey** -Element enthält den Sortierschlüssel für einen Firmennamen. 
+Das **CompanyNameSortKey-Element** enthält den Sortierschlüssel für einen Firmennamen. 
   
 ```XML
 <CompanyNameSortKey></CompanyNameSortKey>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **CompanyNameSortKey** -Elements ist der Sortierschlüssel für einen Firmennamen. 
+Der Textwert des **CompanyNameSortKey-Elements** ist der Sortierschlüssel für einen Firmennamen. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

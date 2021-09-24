@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: c55b7bf5-3702-4923-b7c9-b0928cde1de2
-description: Das UMUrl-Element gibt die URL der besten Instanz des Unified Messaging-Webdiensts für einen e-Mail-aktivierten Benutzer an.
-ms.openlocfilehash: c80f874e13ac3909ee51bbc63dded100a1e41524
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das UMUrl-Element gibt die URL der besten Instanz des Unified Messaging-Webdiensts für einen E-Mail-aktivierten Benutzer an.
+ms.openlocfilehash: 9e4612d7c92ae7796d9f19573dbf096b3f4de250
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463027"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538695"
 ---
 # <a name="umurl-pox"></a>UMUrl (POX)
 
-Das **UMUrl** -Element gibt die URL der besten Instanz des Unified Messaging-Webdiensts für einen e-Mail-aktivierten Benutzer an. 
+Das **UMUrl-Element** gibt die URL der besten Instanz des Unified Messaging-Webdiensts für einen E-Mail-aktivierten Benutzer an. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,11 +50,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen zum Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text gibt die URL des Exchange-Servers an, auf dem die Unified Messaging-Serverrolle für eine Exchange-Topologie installiert ist.
+Der Textwert gibt die URL des Exchange Servers an, auf dem die Unified Messaging-Serverrolle für eine Exchange Topologie installiert ist.
   
 ## <a name="see-also"></a>Siehe auch
 

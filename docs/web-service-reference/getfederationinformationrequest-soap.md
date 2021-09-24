@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: df5bface-f070-49e0-8527-6129ed8e8095
-description: Das GetFederationInformationRequest-Element stellt die Parameter eines Aufrufs an den GetFederationInformation-Vorgang (SOAP) dar.
-ms.openlocfilehash: 1df0a88ed8fbc75eb5723d1390baeefd3ad73652
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GetFederationInformationRequest-Element stellt die Parameter eines Aufrufs des SOAP-Vorgangs (GetFederationInformation) dar.
+ms.openlocfilehash: b4f2c9fa060bf0701072b462233b2d4217e8b8b6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456584"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538079"
 ---
 # <a name="getfederationinformationrequest-soap"></a>GetFederationInformationRequest (SOAP)
 
-Das **GetFederationInformationRequest** -Element stellt die Parameter eines Aufrufs an den [GetFederationInformation-Vorgang (SOAP)](getfederationinformation-operation-soap.md)dar.
+Das **GetFederationInformationRequest-Element** stellt die Parameter eines Aufrufs des [SOAP-Vorgangs (GetFederationInformation)](getfederationinformation-operation-soap.md)dar.
   
 ```XML
 <GetFederationInformationRequest>
@@ -44,7 +44,7 @@ Keine.
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
@@ -55,8 +55,8 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

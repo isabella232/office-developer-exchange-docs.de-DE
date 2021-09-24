@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 54e3ba52-08a6-4d48-8a44-6fd5fdbffb25
 description: Das RelativeFolderPath-Element enthält ein Array von Ordnern, die den relativen Ordnerpfad des zu erstellenden Ordnerpfads angeben.
-ms.openlocfilehash: 8a0fc0020943afdbe6cd4c79d51d61337f8dd329
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f9a1f193678e9dbd7686376c630ab2fbd0eaf1bd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457158"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513458"
 ---
 # <a name="relativefolderpath"></a>RelativeFolderPath
 
-Das **RelativeFolderPath** -Element enthält ein Array von Ordnern, die den relativen Ordnerpfad des zu erstellenden Ordnerpfads angeben. 
+Das **RelativeFolderPath-Element** enthält ein Array von Ordnern, die den relativen Ordnerpfad des zu erstellenden Ordnerpfads angeben. 
   
 ```XML
 <RelativeFolderPath>
@@ -46,7 +46,7 @@ Keine.
 
 [CreateFolderPath](createfolderpath.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

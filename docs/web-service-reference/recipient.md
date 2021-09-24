@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Recipient
 api_type:
 - schema
 ms.assetid: 52adbb30-3bfd-48aa-9ea8-9f7d3b4bee44
 description: Das Recipient-Element stellt den Empfänger dar, für den das Ereignis aufgetreten ist.
-ms.openlocfilehash: eb7e85acf3c2b898b3f0bff4b63168d344e1daa8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 5978ca36a6caa33be086e6a051df944cfd07b457
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465856"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532224"
 ---
 # <a name="recipient"></a>Empfänger
 
-Das **Recipient** -Element stellt den Empfänger dar, für den das Ereignis aufgetreten ist. 
+Das **Recipient-Element** stellt den Empfänger dar, für den das Ereignis aufgetreten ist. 
   
 ```XML
 <Recipient>
@@ -47,9 +47,9 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Name (EmailAddressType)](name-emailaddresstype.md) <br/> |Stellt den Namen des Postfachbenutzers dar. Dieses Element ist optional.  <br/> |
-|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Definiert die primäre Simple Mail Transfer Protocol (SMTP) Adresse eines Postfachbenutzers. Dieses Element ist optional.  <br/> |
+|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Definiert die primäre SMTP-Adresse (Simple Mail Transfer Protocol) eines Postfachbenutzers. Dieses Element ist optional.  <br/> |
 |[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Definiert die Weiterleitung, die für das Postfach verwendet wird. Der Standardwert ist SMTP. Dieses Element ist optional.  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |Stellt den Typ des Postfachs dar, der durch die e-Mail-Adresse dargestellt wird. Dieses Element ist optional.  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |Stellt den Typ des Postfachs dar, das durch die E-Mail-Adresse dargestellt wird. Dieses Element ist optional.  <br/> |
 |[ItemId](itemid.md) <br/> |Definiert den Elementbezeichner eines Kontakts oder die private Verteilungsliste für Empfänger aus dem Kontaktordner eines Benutzers. Dieses Element ist optional.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
@@ -63,7 +63,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ade9ea3b-bdf1-4999-ac7d-44c6452cef36
-description: Das Task suggestion-Element enthält einen vorgangsvorschlag, der aus einer Entität resultierte, die aus einem Element extrahiert wurde.
-ms.openlocfilehash: 49564c246596dabbf7fbacf2924eeb877698ea1a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das TaskSuggestion-Element enthält einen Vorgangsvorschlag, der aus einer entität stammt, die aus einem Element extrahiert wurde.
+ms.openlocfilehash: a7d74523b57825b97c6c6d9c2194d84af3f38d5b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468124"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538877"
 ---
 # <a name="tasksuggestion"></a>TaskSuggestion
 
-Das **Task Suggestion** -Element enthält einen vorgangsvorschlag, der aus einer Entität resultierte, die aus einem Element extrahiert wurde. 
+Das **TaskSuggestion-Element** enthält einen Vorgangsvorschlag, der aus einer entität stammt, die aus einem Element extrahiert wurde. 
   
 ```XML
 <TaskSuggestion>
@@ -39,13 +39,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[Position](position.md)  |  [Task String](taskstring.md)  |  [Empfänger](assignees.md)
+[Position](position.md)  |  [TaskString](taskstring.md)  |  [Zugewiesene Personen](assignees.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [TaskSuggestions](tasksuggestions.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

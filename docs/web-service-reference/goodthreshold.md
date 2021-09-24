@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GoodThreshold
 api_type:
 - schema
 ms.assetid: 68f607f5-7271-46a6-8ffc-91878185a683
-description: Das GoodThreshold-Element gibt den Prozentsatz der Teilnehmer an, für die der Zeitraum geöffnet sein muss, damit der Zeitraum als gute vorgeschlagene Besprechungszeit qualifiziert wird.
-ms.openlocfilehash: 34ea433ad7315d61df8cf8e22bae1166d3210af3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GoodThreshold-Element gibt den Prozentsatz der Teilnehmer an, für die der Zeitraum geöffnet sein muss, damit sich der Zeitraum als "Gute vorgeschlagene Besprechungszeit" qualifizieren kann.
+ms.openlocfilehash: bec5159b46a350cb01f8d573c68e1925aeb40ac9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457312"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533220"
 ---
 # <a name="goodthreshold"></a>GoodThreshold
 
-Das **GoodThreshold** -Element gibt den Prozentsatz der Teilnehmer an, für die der Zeitraum geöffnet sein muss, damit der Zeitraum als gute vorgeschlagene Besprechungszeit qualifiziert wird. 
+Das **GoodThreshold-Element** gibt den Prozentsatz der Teilnehmer an, für die der Zeitraum geöffnet sein muss, damit sich der Zeitraum als "Gute vorgeschlagene Besprechungszeit" qualifizieren kann. 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -50,15 +50,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Enthält die Optionen zum Abrufen von Informationen zu Besprechungs Vorschlägen.  <br/> Es folgt der XPath für dieses Element:  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
+|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Enthält die Optionen zum Abrufen von Besprechungsvorschlagsinformationen.  <br/> Es folgt der XPath für dieses Element:  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert ist erforderlich. Die erwarteten ganzzahligen Werte liegen zwischen 0 und 50.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element ist erforderlich, wenn das [SuggestionsViewOptions](suggestionsviewoptions.md) -Element verwendet wird. Das **GoodThreshold** -Element bestimmt auch, welche Besprechungen als angemessen betrachtet werden. IT der Prozentsatz der Teilnehmer mit Konflikten ist kleiner als der gute Schwellenwert und höher als 50 Prozent, die vorgeschlagene Besprechungszeit gilt als fair. Der gute Schwellenwert plus 50 entspricht dem Prozentsatz, der den Wert "Good/Fair" definiert. 
+Dieses Element ist erforderlich, wenn das [SuggestionsViewOptions-Element](suggestionsviewoptions.md) verwendet wird. Das **GoodThreshold-Element** bestimmt auch, welche Besprechungen als fair betrachtet werden. Der Prozentsatz der Teilnehmer mit Konflikten ist kleiner als der gute Schwellenwert und über 50 Prozent, die vorgeschlagene Besprechungszeit gilt als fair. Der gute Schwellenwert plus 50 entspricht dem Prozentsatz, der den Schwellenwert "Gut/Fair" definiert. 
   
 > [!NOTE]
 > Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt. 
@@ -79,5 +79,5 @@ Dieses Element ist erforderlich, wenn das [SuggestionsViewOptions](suggestionsvi
 [GetUserAvailability-Vorgang](getuseravailability-operation.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

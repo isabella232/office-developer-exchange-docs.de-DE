@@ -5,40 +5,40 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e31d14e1-0c1f-4b69-98b7-157d59c13698
-description: Hier finden Sie Informationen zum GetImItemList-EWS-Vorgang.
-ms.openlocfilehash: aabe84054b93e7de8af6145942493a0224932e45
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum GetImItemList EWS-Vorgang.
+ms.openlocfilehash: c16d3d84c1ede4ef05c70ec31806a91ddca10d9d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456066"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513598"
 ---
 # <a name="getimitemlist-operation"></a>GetImItemList-Vorgang
 
-Hier finden Sie Informationen zum **GetImItemList** -EWS-Vorgang. 
+Hier finden Sie Informationen zum **GetImItemList** EWS-Vorgang. 
   
 ## <a name="using-the-getimitemlist-operation"></a>Verwenden des GetImItemList-Vorgangs
 
-Mit dem **GetImItemList** -Vorgang wird die Liste der Chatgruppen und Chat Kontaktpersonen in einem Postfach abgerufen. Der **GetImItemList** -Vorgang nimmt keine Argumente an. 
+Der **GetImItemList-Vorgang** ruft die Liste der Chatgruppen und Chatkontaktpersonas in einem Postfach ab. Der **GetImItemList-Vorgang** verwendet keine Argumente. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ### <a name="getimitemlist-operation-soap-headers"></a>SOAP-Header des GetImItemList-Vorgangs
 
-Der **GetImItemList** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **GetImItemList-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden sollen. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dieser Header gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur, wie in RFC 3066 definiert, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden soll. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="getimitemlist-operation-request-example-request-your-im-items-list"></a>GetImItemList-Vorgangs Anforderungs Beispiel: Anfordern der Liste "Chat Elemente"
+## <a name="getimitemlist-operation-request-example-request-your-im-items-list"></a>GetImItemList-Vorgangsanforderungsbeispiel: Anfordern der Liste der Chatelemente
 
-Im folgenden Beispiel einer **GetImItemList** -Vorgangsanforderung wird gezeigt, wie Sie die Liste der Chatgruppen und Chat Kontaktpersonen in einem Postfach anfordern. Das **GetImItemList** -Element ist die einzige Element Option im SOAP-Textkörper. 
+Das folgende Beispiel einer **GetImItemList-Vorgangsanforderung** zeigt, wie die Liste der Chatgruppen und Chatkontaktpersonas in einem Postfach angefordert wird. Das **GetImItemList-Element** ist die einzige Elementoption im SOAP-Textkörper. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -55,18 +55,18 @@ Im folgenden Beispiel einer **GetImItemList** -Vorgangsanforderung wird gezeigt,
 </soap:Envelope>
 ```
 
-Der SOAP-Anforderungstext Körper enthält das folgende Element:
+Der SOAP-Anforderungstext enthält das folgende Element:
   
 - [GetImItemList](getimitemlist.md)
     
-## <a name="successful-getimitemlist-operation-response"></a>Erfolgreiche Reaktion des GetImItemList-Vorgangs
+## <a name="successful-getimitemlist-operation-response"></a>Erfolgreiche GetImItemList-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetImItemList** -Vorgangsanforderung. Die Antwort enthält vier Chatgruppen. Drei der Chatgruppen – andere Kontakte, markierte und Favoriten – sind Standardgruppen in der Exchange-Informationsspeicher. Die Gruppe MyCustomGroup2 ist eine benutzerdefinierte Gruppe, die vom Benutzer erstellt wurde. Die anderen Kontakte und markierten Gruppen haben keine Mitglieder. Die Gruppe Favoriten verfügt über ein einzelnes Kontakt Mitglied. Das MyCustomGroup2 verfügt über zwei Mitglieder Kontakte. Die Element-IDs werden bereitgestellt, damit nachfolgende **GetItem** -Anforderungen ausgeführt werden können, um weitere Informationen zu den Chat Kontakten zu erhalten. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetImItemList-Vorgangsanforderung.** Die Antwort enthält vier Chatgruppen. Drei der Chatgruppen – andere Kontakte, Markiert und Favoriten – sind Standardgruppen im Exchange Speicher. Die Gruppe MyCustomGroup2 ist eine benutzerdefinierte, vom Benutzer erstellte Gruppe. Die Gruppen "Andere Kontakte" und "Markiert" haben keine Mitglieder. Die Favoritengruppe hat ein einzelnes Kontaktmitglied. MyCustomGroup2 verfügt über zwei Mitgliedskontakte. Die Elementbezeichner werden bereitgestellt, damit nachfolgende **GetItem-Anforderungen** ausgeführt werden können, um weitere Informationen zu den Chatkontakten zu erhalten. 
   
-In diesem Beispiel werden zwei Personas zurückgegeben. Die erste Rolle stellt zwei Kontaktelemente dar: Anthony Smith und Tony Smith. Die kombinierten Kontaktinformationen werden im **Persona** -Objekt zurückgegeben. Die zweite Person stellt einen einzelnen Kontakt mit dem Anzeigenamen von Terence Adams dar. 
+In diesem Beispiel werden zwei Personas zurückgegeben. Die erste Persona stellt zwei Kontaktelemente dar: Smith smith und Tony Smith. Die kombinierten Kontaktinformationen werden im **Persona-Objekt** zurückgegeben. Die zweite Persona stellt einen einzelnen Kontakt mit dem Anzeigenamen Terence Adams dar. 
   
 > [!NOTE]
-> Die Exchange-Informationsspeicher Bezeichner, Element-IDs, Quell-IDs, Ordner-IDs und Persona-IDs wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Die Exchange Speicher-, Element-, Quell-, Ordner- und Persona-IDs wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -348,13 +348,13 @@ In diesem Beispiel werden zwei Personas zurückgegeben. Die erste Rolle stellt z
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [GetImItemListResponse](getimitemlistresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-- [Imitemlist](imitemlist.md)
+- [ImItemList](imitemlist.md)
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
@@ -370,7 +370,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [PersonaId](personaid.md)
     
-- [Personatype](personatype.md)
+- [PersonaType](personatype.md)
     
 - [CreationTime](creationtime.md)
     
@@ -382,7 +382,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [FileAsId](fileasid.md)
     
-- [GivenName](givenname.md)
+- [Givenname](givenname.md)
     
 - [Nachname](surname.md)
     
@@ -390,15 +390,15 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [Name (EmailAddressType)](name-emailaddresstype.md)
     
-- [Routingtype (e-mailemailtype)](routingtype-emailaddresstype.md)
+- [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
     
-- [Emails (ArrayOfEmailAddressesType)](emailaddresses-arrayofemailaddressestype.md)
+- [EmailAddresses (ArrayOfEmailAddressesType)](emailaddresses-arrayofemailaddressestype.md)
     
-- [IMAddress (Zeichenfolge)](imaddress-string.md)
+- [ImAddress (Zeichenfolge)](imaddress-string.md)
     
 - [RelevanceScore](relevancescore.md)
     
-- [Zuordnungen (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
+- [Attributions (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
     
 - [Attribution (PersonaAttributionType)](attribution-personaattributiontype.md)
     
@@ -406,7 +406,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [SourceId](sourceid.md)
     
-- [Isschreibbar](iswritable.md)
+- [IsWritable](iswritable.md)
     
 - [IsQuickContact](isquickcontact.md)
     
@@ -428,19 +428,19 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [PhoneNumberAttributedValue](phonenumberattributedvalue.md)
     
-- [Handys](mobilephones.md)
+- [MobilePhones](mobilephones.md)
     
 - [Emails1](emails1.md)
     
 - [EmailAddressAttributedValue](emailaddressattributedvalue.md)
     
-- [Imaddresses](imaddresses.md)
+- [ImAddresses](imaddresses.md)
     
-- [Wert (extendedpropertytype Schematyp)](value-extendedpropertytype.md)
+- [Wert (ExtendedPropertyType)](value-extendedpropertytype.md)
     
-## <a name="getimitemlist-operation-error-response"></a>Fehlerantwort des GetImItemList-Vorgangs
+## <a name="getimitemlist-operation-error-response"></a>GetImItemList-Vorgangsfehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetImItemList** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung, die eine falsche angeforderte Server Version im SOAP-Header enthält. Diese Fehlerantwort ist ein SOAP-Fehler und wird nicht im EWS-Schema dargestellt. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetImItemList-Vorgangsanforderung.** Dies ist eine Antwort auf eine Anforderung, die eine falsche angeforderte Serverversion im SOAP-Header enthält. Diese Fehlerantwort ist ein SOAP-Fehler und wird nicht im EWS-Schema dargestellt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

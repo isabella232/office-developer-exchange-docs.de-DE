@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: a48766df-4cc8-47c2-a8c1-826daec94e5a
 description: Das UserResponses-Element enthält die Konfigurationseinstellungen für jeden angeforderten Benutzer.
-ms.openlocfilehash: db2bab16334b90395d29dc03353dce05b0e45357
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 301706af0ad876c6e93df246c4a598636d91068d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526746"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538534"
 ---
 # <a name="userresponses-soap"></a>UserResponses (SOAP)
 
-Das **UserResponses** -Element enthält die Konfigurationseinstellungen für jeden angeforderten Benutzer. 
+Das **UserResponses-Element** enthält die Konfigurationseinstellungen für jeden angeforderten Benutzer. 
   
 ```XML
 <UserResponses>
@@ -39,21 +39,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[User Response (SOAP)](userresponse-soap.md) <br/> |Stellt eine Antwort auf eine [GetUserSettings-Vorgang (SOAP)-](getusersettings-operation-soap.md) Anforderung für einen einzelnen Benutzer dar.  <br/> |
+|[UserResponse (SOAP)](userresponse-soap.md) <br/> |Stellt eine Antwort auf eine [SOAP-Anforderung (GetUserSettings)-Operation](getusersettings-operation-soap.md) für einen einzelnen Benutzer dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Antwort (SOAP)](response-soap.md) <br/> |Enthält die Antwort auf eine [GetUserSettings-Vorgang (SOAP)-](getusersettings-operation-soap.md) Anforderung.  <br/> |
+|[Antwort (SOAP)](response-soap.md) <br/> |Enthält die Antwort auf eine [SOAP-Anforderung (GetUserSettings-Vorgang).](getusersettings-operation-soap.md)  <br/> |
    
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

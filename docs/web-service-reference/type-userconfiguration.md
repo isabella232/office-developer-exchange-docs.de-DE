@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Type
 api_type:
 - schema
 ms.assetid: d09a9621-6950-451a-90dc-920af9cab35c
-description: Das Type-Element gibt einen Dictionary-Objekttyp an.
-ms.openlocfilehash: ea196e070279bb809cc2e4c2a51dd2453dd9b331
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Type-Element gibt einen Wörterbuchobjekttyp an.
+ms.openlocfilehash: f0bafa9023a42fdf8464891e8df7931a0766b416
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458873"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538730"
 ---
 # <a name="type-userconfiguration"></a>Typ (UserConfiguration)
 
-Das **Type** -Element gibt einen Dictionary-Objekttyp an. 
+Das **Type-Element** gibt einen Wörterbuchobjekttyp an. 
   
 ```xml
 <Type>DateTime or Boolean or Byte or String or Integer32 or UnsignedInteger32 or Integer64 or UnsignedInteger64 or StringArray or ByteArray</Type> 
@@ -44,12 +44,12 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DictionaryKey](dictionarykey.md) <br/> |Gibt den Wörterbuchschlüssel für eine Dictionary-Eigenschaft an.  <br/> |
-|[Dictionaryvalue](dictionaryvalue.md) <br/> |Gibt den Wert des Wörterbuchs für eine Dictionary-Eigenschaft an.  <br/> |
+|[DictionaryKey](dictionarykey.md) <br/> |Gibt den Wörterbuchschlüssel für eine Wörterbucheigenschaft an.  <br/> |
+|[DictionaryValue](dictionaryvalue.md) <br/> |Gibt den Wörterbuchwert für eine Wörterbucheigenschaft an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-In der folgenden Tabelle sind die möglichen Werte für das **Type** -Element aufgeführt. 
+In der folgenden Tabelle sind die möglichen Werte für das **Type-Element** aufgeführt. 
   
 **Type-Elementwerte**
 
@@ -58,17 +58,17 @@ In der folgenden Tabelle sind die möglichen Werte für das **Type** -Element au
 |DateTime  <br/> ||
 |Boolesch  <br/> ||
 |Byte  <br/> ||
-|Zeichenfolge  <br/> ||
-|Integer32  <br/> ||
+|String  <br/> ||
+|Ganze Zahl32  <br/> ||
 |UnsignedInteger32  <br/> ||
-|Integer64  <br/> ||
+|Ganze Zahl64  <br/> ||
 |UnsignedInteger64  <br/> ||
 |StringArray  <br/> ||
-|Bytearray  <br/> ||
+|ByteArray  <br/> ||
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsDraft
 api_type:
 - schema
 ms.assetid: 8b8d9cc9-a512-458a-94e4-af210ac83bd7
-description: Das isdraft-Element gibt an, ob ein Element noch nicht gesendet wurde.
-ms.openlocfilehash: fa97fe822e45237f46e46c75be7cf6a4ecce687e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IsDraft-Element gibt an, ob ein Element noch nicht gesendet wurde.
+ms.openlocfilehash: 20acbbdd1148208f6cd9160f2f3879617663ab0a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458166"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512876"
 ---
 # <a name="isdraft"></a>IsDraft
 
-Das **isdraft** -Element gibt an, ob ein Element noch nicht gesendet wurde. 
+Das **IsDraft-Element** gibt an, ob ein Element noch nicht gesendet wurde. 
   
 ```xml
 <IsDraft/>
@@ -58,9 +58,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich. Der Wert **true** gibt an, dass noch keine Nachricht gesendet wurde. Der Wert **false** gibt an, dass eine Nachricht gesendet wurde. 
+Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich. Der Wert **"true"** gibt an, dass eine Nachricht noch nicht gesendet wurde. Der Wert **"false"** gibt an, dass eine Nachricht gesendet wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

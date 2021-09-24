@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Mileage
 api_type:
 - schema
 ms.assetid: 461ba447-1b04-4115-9919-dc378fd3bf24
-description: Das Mileage-Element stellt die Kilometerleistung für eine Aufgabe oder ein Kontaktelement dar.
-ms.openlocfilehash: 20cbed08d41599a433f3e2aa6e4a662018fbdc48
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Mileage-Element stellt die Mileage für eine Aufgabe oder ein Kontaktelement dar.
+ms.openlocfilehash: d16366eec875c1ea28241a942c35797280461d8d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465779"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512896"
 ---
 # <a name="mileage"></a>Reisekilometer
 
-Das **Mileage** -Element stellt die Kilometerleistung für eine Aufgabe oder ein Kontaktelement dar. 
+Das **Mileage-Element** stellt die Mileage für eine Aufgabe oder ein Kontaktelement dar. 
   
 ```xml
 <Mileage/>
@@ -51,7 +51,7 @@ Keine.
 
 Wenn dieses Element verwendet wird, ist ein Textwert erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

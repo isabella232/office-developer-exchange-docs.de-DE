@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DisplayName
 api_type:
 - schema
 ms.assetid: e7efbbe1-6629-4d11-bed1-ed899e3f9d77
-description: Das DisplayName-Element definiert den Anzeigenamen eines Ordners, Kontakts, einer Verteilerliste, eines Stellvertreters, eines Orts oder einer Regel.
-ms.openlocfilehash: 9b566ec1938ec206e45cddf9c7f00083af2d8a9c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DisplayName-Element definiert den Anzeigenamen eines Ordners, Kontakts, einer Verteilerliste, eines Stellvertreterbenutzers, eines Speicherorts oder einer Regel.
+ms.openlocfilehash: 3fc0faca0425bc6de3f71c154926991d922c8a79
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463616"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520863"
 ---
 # <a name="displayname-string"></a>DisplayName (Zeichenfolge)
 
-Das **Display** Name-Element definiert den Anzeigenamen eines Ordners, Kontakts, einer Verteilerliste, eines Stellvertreters, eines Orts oder einer Regel. 
+Das **DisplayName-Element** definiert den Anzeigenamen eines Ordners, Kontakts, einer Verteilerliste, eines Stellvertreterbenutzers, eines Speicherorts oder einer Regel. 
   
 ```XML
 <DisplayName/>
@@ -52,19 +52,19 @@ Keine.
 |[Regel (RuleType)](rule-ruletype.md) <br/> |Stellt eine Regel im Postfach eines Benutzers dar.  <br/> |
 |[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner in einem Postfach dar.  <br/> |
 |[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner in einem Postfach dar.  <br/> |
-|[UserId](userid.md) <br/> |Identifiziert einen Stellvertreter Benutzer oder einen Benutzer, der über Ordnerzugriffsberechtigungen verfügt.  <br/> |
+|[UserId](userid.md) <br/> |Identifiziert einen Stellvertreterbenutzer oder einen Benutzer, der über Ordnerzugriffsberechtigungen verfügt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert, der den Anzeigenamen darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird gezeigt, wie ein neuer Ordner erstellt und der DisplayName des Ordners auf "TestFolder" festgelegt wird.
+Dieses folgende Beispiel zeigt, wie Sie einen neuen Ordner erstellen und den DisplayName des Ordners auf "TestFolder" festlegen.
   
 ```cs
 FolderType folder = new FolderType();

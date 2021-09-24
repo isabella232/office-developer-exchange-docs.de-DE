@@ -5,32 +5,32 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SyncFolderHierarchy
 api_type:
 - schema
 ms.assetid: b31916b1-bc6c-4451-a475-b7c5417f752d
-description: Mit dem SyncFolderHierarchy-Vorgang werden die Ordner zwischen dem Computer mit Microsoft Exchange Server 2010 und dem Client synchronisiert.
-ms.openlocfilehash: 1c7ad2413064161ba54e8a7a30bfcd6f23f218bd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der SyncFolderHierarchy-Vorgang synchronisiert Ordner zwischen dem Computer, der Microsoft Exchange Server 2010 ausgeführt wird, und dem Client.
+ms.openlocfilehash: 43182d267d4c09d4626669746ac64af9b0f890b9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456430"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513304"
 ---
 # <a name="syncfolderhierarchy-operation"></a>SyncFolderHierarchy-Vorgang
 
-Mit dem SyncFolderHierarchy-Vorgang werden die Ordner zwischen dem Computer mit Microsoft Exchange Server 2010 und dem Client synchronisiert.
+Der SyncFolderHierarchy-Vorgang synchronisiert Ordner zwischen dem Computer, der Microsoft Exchange Server 2010 ausgeführt wird, und dem Client.
   
 > [!NOTE]
-> Der SyncFolderHierarchy-Vorgang gibt keine Ordner zurück, wenn sich die Eigenschaften [UnreadCount](unreadcount.md) oder [Total count](totalcount.md) geändert haben. 
+> Der SyncFolderHierarchy-Vorgang gibt keine Ordner zurück, wenn sich die Eigenschaften ["UnreadCount"](unreadcount.md) oder ["TotalCount"](totalcount.md) geändert haben. 
   
-## <a name="syncfolderhierarchy-request-example"></a>SyncFolderHierarchy-Anforderungs Beispiel
+## <a name="syncfolderhierarchy-request-example"></a>SyncFolderHierarchy-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer SyncFolderHierarchy-Anforderung wird gezeigt, wie eine Clientordner Hierarchie mit dem Exchange-Server synchronisiert wird. Dieses Beispiel zeigt eine Ordnerhierarchie, die bereits mindestens einmal synchronisiert wurde. Das [von "SyncState](syncstate-ex15websvcsotherref.md) -Element ist nicht in der Anforderung für den ersten Versuch, einen Client mit dem Exchange-Server zu synchronisieren, enthalten. Die erste Anforderung gibt alle Ordner im Postfach zurück. Das [von "SyncState](syncstate-ex15websvcsotherref.md) -Element wird in der [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)zurückgegeben. Dieses Element wird verwendet, um den Status für nachfolgende SyncFolderHierarchy-Anforderungen zu synchronisieren.
+Das folgende Beispiel einer SyncFolderHierarchy-Anforderung zeigt, wie eine Clientordnerhierarchie mit dem Exchange-Server synchronisiert wird. Dieses Beispiel zeigt eine Ordnerhierarchie, die bereits mindestens einmal synchronisiert wurde. Das [SyncState-Element](syncstate-ex15websvcsotherref.md) ist nicht in der Anforderung für den ersten Versuch enthalten, einen Client mit dem Exchange-Server zu synchronisieren. Die erste Anforderung gibt alle Ordner im Postfach zurück. Das [SyncState](syncstate-ex15websvcsotherref.md) -Element wird in der [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)zurückgegeben. Dieses Element wird verwendet, um den Status für nachfolgende SyncFolderHierarchy-Anforderungen zu synchronisieren.
   
 ### <a name="code"></a>Code
 
@@ -51,7 +51,7 @@ Im folgenden Beispiel einer SyncFolderHierarchy-Anforderung wird gezeigt, wie ei
 
 ### <a name="comments"></a>Comments
 
-Die Base64-codierten Daten des [von "SyncState](syncstate-ex15websvcsotherref.md) -Elements wurden verkürzt, um die Lesbarkeit zu erhalten. 
+Die base64-codierten Daten des [SyncState-Elements](syncstate-ex15websvcsotherref.md) wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -63,10 +63,10 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [BaseShape](baseshape.md)
     
-- [Von "SyncState](syncstate-ex15websvcsotherref.md)
+- [SyncState](syncstate-ex15websvcsotherref.md)
     
 > [!NOTE]
-> Das Schema, in dem diese Elemente beschrieben werden, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Serverrolle installiert ist. 
+> Das Schema, das diese Elemente beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem MicrosoftExchange Server 2007 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist. 
   
 ## <a name="successful-syncfolderhierarchy-response"></a>Erfolgreiche SyncFolderHierarchy-Antwort
 
@@ -117,7 +117,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die SyncFolderHierarch
 
 ### <a name="comments"></a>Comments
 
-Die Base64-codierten Daten des [von "SyncState](syncstate-ex15websvcsotherref.md) -Elements und die Ordner-ID-Daten wurden verkürzt, um die Lesbarkeit zu erhalten. 
+Die base64-codierten Daten des [SyncState-Elements](syncstate-ex15websvcsotherref.md) und die Ordnerbezeichnerdaten wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
@@ -133,13 +133,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Von "SyncState](syncstate-ex15websvcsotherref.md)
+- [SyncState](syncstate-ex15websvcsotherref.md)
     
 - [IncludesLastFolderInRange](includeslastfolderinrange.md)
     
 - [Änderungen (Hierarchie)](changes-hierarchy.md)
     
-- [Erstellen (FolderSync)](create-foldersync.md)
+- [Create (FolderSync)](create-foldersync.md)
     
 - [Ordner](folder.md)
     
@@ -151,7 +151,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-- [Total count](totalcount.md)
+- [TotalCount](totalcount.md)
     
 - [ChildFolderCount](childfoldercount.md)
     
@@ -161,7 +161,7 @@ In der Antwort werden folgende Elemente verwendet:
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine SyncFolderHierarchy-Anforderung. Dieser Fehler wurde durch ein ungültiges von "SyncState verursacht.
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine SyncFolderHierarchy-Anforderung. Dieser Fehler wurde durch einen ungültigen SyncState verursacht.
   
 ### <a name="code"></a>Code
 
@@ -211,7 +211,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Von "SyncState](syncstate-ex15websvcsotherref.md)
+- [SyncState](syncstate-ex15websvcsotherref.md)
     
 - [IncludesLastFolderInRange](includeslastfolderinrange.md)
     

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DictionaryKey
 api_type:
 - schema
 ms.assetid: f331c8ac-f1c7-4248-a570-97701969d5bf
-description: Das DictionaryKey-Element gibt den Wörterbuchschlüssel für eine Dictionary-Eigenschaft an.
-ms.openlocfilehash: 8d9d897c86eb5048068936433c6c0d77917ff777
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DictionaryKey-Element gibt den Wörterbuchschlüssel für eine Wörterbucheigenschaft an.
+ms.openlocfilehash: feae35d292c212b41394f63c0840ec4d3c3b8800
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462150"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519779"
 ---
 # <a name="dictionarykey"></a>DictionaryKey
 
-Das **DictionaryKey** -Element gibt den Wörterbuchschlüssel für eine Dictionary-Eigenschaft an. 
+Das **DictionaryKey-Element** gibt den Wörterbuchschlüssel für eine Wörterbucheigenschaft an. 
   
 ```xml
 <DictionaryKey>
@@ -43,20 +43,20 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Typ (UserConfiguration)](type-userconfiguration.md) <br/> | Gibt einen Dictionary-Objekttyp an.<br/><br/>Der Typ kann einer der folgenden Zeichenfolgenwerte sein:<br/><br/>-DateTime  <br/>-Boolean  <br/>-Byte  <br/>-String  <br/>-Integer32  <br/>- UnsignedInteger32  <br/>- Integer64  <br/>- UnsignedInteger64  <br/>- StringArray  <br/>-Bytearray  <br/> |
-|[Wert (UserConfiguration)](value-userconfiguration.md) <br/> |Gibt den Wert des Dictionary-Objekts als Zeichenfolge an.  <br/> |
+|[Typ (UserConfiguration)](type-userconfiguration.md) <br/> | Gibt einen Wörterbuchobjekttyp an.<br/><br/>Der Typ kann einer der folgenden Zeichenfolgenwerte sein:<br/><br/>- DateTime  <br/>- Boolean  <br/>- Byte  <br/>- Zeichenfolge  <br/>- Ganze Zahl32  <br/>- UnsignedInteger32  <br/>- Integer64  <br/>- UnsignedInteger64  <br/>- StringArray  <br/>- ByteArray  <br/> |
+|[Wert (UserConfiguration)](value-userconfiguration.md) <br/> |Gibt den Wert des Wörterbuchobjekts als Zeichenfolge an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DictionaryEntry](dictionaryentry.md) <br/> |Gibt den Inhalt einer einzelnen Wörterbucheintrags Eigenschaft an.  <br/> |
+|[DictionaryEntry](dictionaryentry.md) <br/> |Gibt den Inhalt einer einzelnen Wörterbucheintragseigenschaft an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

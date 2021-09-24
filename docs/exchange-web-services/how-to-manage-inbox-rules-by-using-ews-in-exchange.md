@@ -3,40 +3,40 @@ title: Verwalten von Posteingangsregeln mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 982ddb78-5606-44b0-8aba-dbffc60d6085
-description: Erfahren Sie, wie Sie Posteingangsregeln mithilfe der verwaltete EWS-API oder EWS in Exchange abrufen, erstellen, aktualisieren und löschen können.
-ms.openlocfilehash: 7c5d202a85ece1c9bc7227020f9ee8be1f688ce6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Erfahren Sie, wie Sie Posteingangsregeln mithilfe der verwalteten EWS-API oder EWS in Exchange abrufen, erstellen, aktualisieren und löschen.
+ms.openlocfilehash: 3612176041533fb5cb2a6c79fcdaff9810b681f0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527978"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513178"
 ---
 # <a name="manage-inbox-rules-by-using-ews-in-exchange"></a>Verwalten von Posteingangsregeln mithilfe von EWS in Exchange
 
-Erfahren Sie, wie Sie Posteingangsregeln mithilfe der verwaltete EWS-API oder EWS in Exchange abrufen, erstellen, aktualisieren und löschen können.
+Erfahren Sie, wie Sie Posteingangsregeln mithilfe der verwalteten EWS-API oder EWS in Exchange abrufen, erstellen, aktualisieren und löschen.
   
-Sie können Posteingangsregeln mithilfe der verwaltete EWS-API oder EWS abrufen, erstellen, aktualisieren und löschen. Unabhängig von der verwendeten Technologie können Sie Posteingangsregeln nicht einzeln, sondern als Sammlung abrufen und ändern. Sie verwenden dieselbe Methode oder denselben Vorgang zum Erstellen neuer Regeln, zum Aktualisieren vorhandener Regeln und zum Löschen von Regeln. 
+Sie können Posteingangsregeln mithilfe der verwalteten EWS-API oder EWS abrufen, erstellen, aktualisieren und löschen. Unabhängig von der verwendeten Technologie erhalten und ändern Sie Posteingangsregeln nicht einzeln, sondern als Sammlung. Sie verwenden die gleiche Methode oder denselben Vorgang, um neue Regeln zu erstellen, vorhandene Regeln zu aktualisieren und Regeln zu löschen. 
   
-**Tabelle 1. Methoden und Vorgänge zum Aufrufen und Ändern von Posteingangsregeln**
+**Tabelle 1. Methoden und Vorgänge zum Abrufen und Ändern von Posteingangsregeln**
 
 |**Gewünschte Aktion**|**EWS Managed API-Methode**|**EWS-Vorgang**|
 |:-----|:-----|:-----|
-|Abrufen von Posteingangsregeln  <br/> |[Datei "ExchangeService. GetInboxRules](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) <br/> |[GetInboxRules](https://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) <br/> |
-|Erstellen, aktualisieren oder Löschen von Posteingangsregeln  <br/> |[Datei "ExchangeService. UpdateInboxRules](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) <br/> |[UpdateInboxRules](https://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx) <br/> |
+|Abrufen von Posteingangsregeln  <br/> |[ExchangeService.GetInboxRules](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) <br/> |[GetInboxRules](https://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) <br/> |
+|Erstellen, Aktualisieren oder Löschen von Posteingangsregeln  <br/> |[ExchangeService.UpdateInboxRules](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) <br/> |[UpdateInboxRules](https://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx) <br/> |
    
-Um Posteingangsregeln mithilfe der verwaltete EWS-API oder EWS zu erstellen, zu aktualisieren oder zu löschen, müssen Sie die Outlook-Regel entfernen, sofern Sie vorhanden ist. Wenn Sie die verwaltete EWS-API verwenden, legen Sie den **removeOutlookRulesBlob** -Parameter im Aufruf der **Datei "ExchangeService. UpdateInboxRules** -Methode auf **true** fest. Wenn Sie EWS verwenden, legen Sie den Wert des [RemoveOutlookRuleBlob](https://msdn.microsoft.com/library/69614475-8bd3-4475-b988-614fe9cad8ef%28Office.15%29.aspx) -Elements im **UpdateInboxRules** -Vorgang auf **true** fest. Es wird empfohlen, dass Ihre Anwendung die [rulecollection. OutlookRuleBlobExists](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.rulecollection.outlookruleblobexists%28v=exchg.80%29.aspx) -Eigenschaft (wenn Sie die verwaltete EWS-API verwenden) oder das [OutlookRuleBlobExists](https://msdn.microsoft.com/library/ae1bc448-deb9-4b5b-ab38-4b276abcb650%28Office.15%29.aspx) -Element (wenn Sie EWS verwenden) überprüfen, bevor Sie Posteingangsregeln aktualisieren. Wenn diese Eigenschaft oder dieses Element den Wert **true**aufweist, sollte Ihre Anwendung den Benutzer darauf hinweisen, dass alle deaktivierten Regeln im Rahmen des Updates verloren gehen und nur mit Ihrer Berechtigung fortfahren.
+Um Posteingangsregeln mithilfe der verwalteten EWS-API oder EWS zu erstellen, zu aktualisieren oder zu löschen, müssen Sie die Outlook Regel entfernen, falls vorhanden. Wenn Sie die verwaltete EWS-API verwenden, legen Sie dazu den **Parameter "removeOutlookRulesBlob"** im Aufruf der **ExchangeService.UpdateInboxRules-Methode** auf **"true"** fest. Wenn Sie EWS verwenden, legen Sie den Wert des [RemoveOutlookRuleBlob-Elements](https://msdn.microsoft.com/library/69614475-8bd3-4475-b988-614fe9cad8ef%28Office.15%29.aspx) im **UpdateInboxRules-Vorgang** auf **"true"** fest. Es wird empfohlen, dass Ihre Anwendung die [RuleCollection.OutlookRuleBlobExists-Eigenschaft](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.rulecollection.outlookruleblobexists%28v=exchg.80%29.aspx) (wenn Sie die verwaltete EWS-API verwenden) oder das [OutlookRuleBlobExists-Element](https://msdn.microsoft.com/library/ae1bc448-deb9-4b5b-ab38-4b276abcb650%28Office.15%29.aspx) (wenn Sie EWS verwenden) überprüfen, bevor Sie Posteingangsregeln aktualisieren. Wenn diese Eigenschaft oder dieses Element den Wert **"true"** aufweist, sollte die Anwendung den Benutzer darauf hinweisen, dass alle deaktivierten Regeln im Rahmen der Aktualisierung verloren gehen, und nur mit ihrer Berechtigung fortfahren.
   
-Wenn Sie die **UpdateInboxRules** -Methode aufrufen, löscht EWS clientseitige Sende Regeln. Clientseitige Sende Regeln werden auf dem Client in der FAI-Nachricht (Regel Ordner – zugeordnete Informationen) gespeichert und nirgendwo sonst. In EWS wird diese Regel "fai" standardmäßig gelöscht, basierend auf der Erwartung, dass Outlook Sie neu erstellt. Outlook kann jedoch keine Regeln neu erstellen, die nicht auch als erweiterte Regel vorhanden sind, und clientseitige Sende Regeln sind nicht als erweiterte Regeln vorhanden. Daher gehen diese Regeln verloren. Wir empfehlen, dies beim Entwerfen der Lösung zu berücksichtigen. 
+Wenn Sie die **UpdateInboxRules-Methode** aufrufen, löscht EWS clientseitige Senderegeln. Clientseitige Senderegeln werden auf dem Client in der FaI-Nachricht (Rule Folder Associated Information) gespeichert und andernfalls. EWS löscht diese FAI-Regelnachricht standardmäßig, basierend auf der Erwartung, dass Outlook sie neu erstellen. Outlook können jedoch keine Regeln neu erstellen, die nicht auch als erweiterte Regel vorhanden sind, und clientseitige Senderegeln sind nicht als erweiterte Regeln vorhanden. Daher gehen diese Regeln verloren. Wir empfehlen Ihnen, dies beim Entwerfen Ihrer Lösung zu berücksichtigen. 
   
 > [!NOTE]
-> In den verwaltete EWS-API-Codebeispielen in diesem Artikel wird ein [allgemeiner Satz von Dienstprogrammmethoden](how-to-manage-inbox-rules-by-using-ews-in-exchange.md#bk_UtilitySource)verwendet. Diese Methoden werden aus den Codebeispielen aus Gründen der Kürze ausgelassen. 
+> Die Codebeispiele der verwalteten EWS-API in diesem Artikel verwenden einen [allgemeinen Satz von Hilfsmethoden.](how-to-manage-inbox-rules-by-using-ews-in-exchange.md#bk_UtilitySource) Diese Methoden werden aus Platzgründen aus den Codebeispielen weggelassen. 
   
-## <a name="get-inbox-rules-by-using-the-ews-managed-api"></a>Abrufen von Posteingangsregeln mithilfe der verwaltete EWS-API
+## <a name="get-inbox-rules-by-using-the-ews-managed-api"></a>Abrufen von Posteingangsregeln mithilfe der verwalteten EWS-API
 <a name="bk_GetRulesEWSMA"> </a>
 
-Verwenden Sie die [Datei "ExchangeService. GetInboxRules](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) -Methode, um die aktuellen Posteingangsregeln abzurufen. Diese Methode gibt ein [rulecollection](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.rulecollection%28v=exchg.80%29.aspx) -Objekt zurück, das alle aktuellen Posteingangsregeln enthält. 
+Verwenden Sie zum Abrufen der aktuellen Posteingangsregeln die [ExchangeService.GetInboxRules-Methode.](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) Diese Methode gibt ein [RuleCollection](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.rulecollection%28v=exchg.80%29.aspx) -Objekt zurück, das alle aktuellen Posteingangsregeln enthält. 
   
 In diesem Beispiel wird jede Regel im aktuellen Posteingang an eine Hilfsfunktion ( **ParseRuleDetails** ) übergeben, um die Details der Regel anzuzeigen. 
   
@@ -76,7 +76,7 @@ private static void GetInboxRules(ExchangeService service, string emailAddress)
 ## <a name="get-inbox-rules-by-using-ews"></a>Abrufen von Posteingangsregeln mithilfe von EWS
 <a name="bk_GetRulesEWS"> </a>
 
-Die folgende EWS-SOAP-Anforderung verwendet den [GetInboxRules-Vorgang](https://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) zum Abrufen der Posteingangsregeln für Sadie@contoso.com. 
+Die folgende EWS SOAP-Anforderung verwendet den [GetInboxRules-Vorgang,](https://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) um die Posteingangsregeln für sadie@contoso.com abzurufen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -95,7 +95,7 @@ Die folgende EWS-SOAP-Anforderung verwendet den [GetInboxRules-Vorgang](https://
 </soap:Envelope>
 ```
 
-Die folgende EWS-SOAP-Antwort enthält die aktuellen Posteingangsregeln für Sadie@contoso.com.
+Die folgende EWS SOAP-Antwort enthält die aktuellen Posteingangsregeln für sadie@contoso.com.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -161,12 +161,12 @@ Die folgende EWS-SOAP-Antwort enthält die aktuellen Posteingangsregeln für Sad
 </s:Envelope>
 ```
 
-## <a name="create-inbox-rules-by-using-the-ews-managed-api"></a>Erstellen von Posteingangsregeln mithilfe der verwaltete EWS-API
+## <a name="create-inbox-rules-by-using-the-ews-managed-api"></a>Erstellen von Posteingangsregeln mithilfe der verwalteten EWS-API
 <a name="bk_CreateRulesEWSMA"> </a>
 
-Um eine Regel zu erstellen, schließen Sie ein [CreateRuleOperation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.createruleoperation%28v=exchg.80%29.aspx) -Objekt in die Auflistung von [RuleOperation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.ruleoperation%28v=exchg.80%29.aspx) -Objekten ein, die an die [Datei "ExchangeService. UpdateInboxRules](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) -Methode übergeben werden. 
+Um eine Regel zu erstellen, schließen Sie ein [CreateRuleOperation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.createruleoperation%28v=exchg.80%29.aspx) -Objekt in die Auflistung von [RuleOperation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.ruleoperation%28v=exchg.80%29.aspx) -Objekten an die [ExchangeService.UpdateInboxRules](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) -Methode übergeben. 
   
-In diesem Beispiel wird eine neue Regel erstellt, um e-Mails, die an eine Verteilerliste mit dem Namen "Vertrieb" gesendet werden, in einen Unterordner des Posteingangs zu verschieben, der auch als "Vertrieb" bezeichnet wird.
+In diesem Beispiel wird eine neue Regel erstellt, um E-Mails, die in eine Verteilerliste mit dem Namen "Sales" gesendet werden, in einen Unterordner des Posteingangs zu verschieben, der auch als "Vertrieb" bezeichnet wird.
   
 ```cs
 using System;
@@ -244,7 +244,7 @@ private static void CreateInboxRule(ExchangeService service, string emailAddress
 ## <a name="create-inbox-rules-by-using-ews"></a>Erstellen von Posteingangsregeln mithilfe von EWS
 <a name="bk_CreateRulesEWS"> </a>
 
-Die folgende EWS-SOAP-Anforderung erstellt die "Sales"-Regel im Posteingang Sadie@contoso. com.
+Die folgende EWS SOAP-Anforderung erstellt die "Sales"-Regel im Posteingang sadie@contoso.com.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -296,12 +296,12 @@ Die folgende EWS-SOAP-Anforderung erstellt die "Sales"-Regel im Posteingang Sadi
 </soap:Envelope>
 ```
 
-## <a name="update-inbox-rules-by-using-the-ews-managed-api"></a>Aktualisieren von Posteingangsregeln mithilfe der verwaltete EWS-API
+## <a name="update-inbox-rules-by-using-the-ews-managed-api"></a>Aktualisieren von Posteingangsregeln mithilfe der verwalteten EWS-API
 <a name="bk_UpdateRulesEWSMA"> </a>
 
-Um eine Regel zu aktualisieren, fügen Sie ein [SetRuleOperation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.setruleoperation%28v=exchg.80%29.aspx) -Objekt in die Auflistung von **RuleOperation** -Objekten ein, die an die **UpdateInboxRules** -Methode übergeben werden. 
+Um eine Regel zu aktualisieren, schließen Sie ein [SetRuleOperation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.setruleoperation%28v=exchg.80%29.aspx) -Objekt in die Auflistung der **RuleOperation** -Objekte an die **UpdateInboxRules** -Methode übergeben. 
   
-In diesem Beispiel wird die Regel "Sales" so aktualisiert, dass eine Ausnahme hinzugefügt wird. Wenn der Betreff das Wort "Urgent" enthält, werden die Nachrichten nicht in den Unterordner "Vertrieb" verschoben.
+In diesem Beispiel wird die Regel "Sales" aktualisiert, um eine Ausnahme hinzuzufügen. Wenn der Betreff das Wort "Dringend" enthält, werden die Nachrichten nicht in den Unterordner "Vertrieb" verschoben.
   
 ```cs
 using System;
@@ -375,7 +375,7 @@ private static void UpdateInboxRule(ExchangeService service, string emailAddress
 ## <a name="update-inbox-rules-by-using-ews"></a>Aktualisieren von Posteingangsregeln mithilfe von EWS
 <a name="bk_UpdateRulesEWS"> </a>
 
-Die folgende EWS-SOAP-Anforderung aktualisiert die "Sales"-Regel im Posteingang Sadie@contoso. com.
+Die folgende EWS SOAP-Anforderung aktualisiert die "Sales"-Regel im Posteingang von sadie@contoso.com.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -433,10 +433,10 @@ Die folgende EWS-SOAP-Anforderung aktualisiert die "Sales"-Regel im Posteingang 
 </soap:Envelope>
 ```
 
-## <a name="delete-inbox-rules-by-using-the-ews-managed-api"></a>Löschen von Posteingangsregeln mithilfe der verwaltete EWS-API
+## <a name="delete-inbox-rules-by-using-the-ews-managed-api"></a>Löschen von Posteingangsregeln mithilfe der verwalteten EWS-API
 <a name="bk_DeleteRulesEWSMA"> </a>
 
-Um eine Regel zu löschen, fügen Sie ein [DeleteRuleOperation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.deleteruleoperation%28v=exchg.80%29.aspx) -Objekt in die Auflistung von **RuleOperation** -Objekten ein, die an die **UpdateInboxRules** -Methode übergeben werden. 
+Um eine Regel zu löschen, schließen Sie ein [DeleteRuleOperation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.deleteruleoperation%28v=exchg.80%29.aspx) -Objekt in die Auflistung der **RuleOperation** -Objekte an die **UpdateInboxRules** -Methode übergeben. 
   
 In diesem Beispiel wird die Regel "Sales" gelöscht.
   
@@ -509,7 +509,7 @@ private static void DeleteInboxRule(ExchangeService service, string emailAddress
 ## <a name="delete-inbox-rules-by-using-ews"></a>Löschen von Posteingangsregeln mithilfe von EWS
 <a name="bk_DeleteRulesEWS"> </a>
 
-Die folgende EWS SOAP-Anforderung löscht die "Sales"-Regeln aus dem Posteingang Sadie@contoso. com.
+Die folgende EWS SOAP-Anforderung löscht die "Sales"-Regeln aus dem Posteingang von sadie@contoso.com.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -533,10 +533,10 @@ Die folgende EWS SOAP-Anforderung löscht die "Sales"-Regeln aus dem Posteingang
 </soap:Envelope>
 ```
 
-## <a name="source-for-sample-utility-methods"></a>Quelle für Beispiel-Hilfsprogramm-Methoden
+## <a name="source-for-sample-utility-methods"></a>Quelle für Beispielhilfsmethoden
 <a name="bk_UtilitySource"> </a>
 
-In den verwaltete EWS-API Beispielen in diesem Artikel werden die im folgenden Beispiel enthaltenen Dienstprogrammmethoden verwendet.
+Die EWS Managed API-Beispiele in diesem Artikel verwenden die Hilfsmethoden, die im folgenden Beispiel enthalten sind.
   
 ```cs
 private static void ParseRuleDetails(ExchangeService service, Rule rule)
@@ -910,9 +910,9 @@ private static FolderId GetFolderIdByName(ExchangeService service, WellKnownFold
 
 - [Posteingangsverwaltung und EWS in Exchange](inbox-management-and-ews-in-exchange.md)
     
-- [Datei "ExchangeService. GetInboxRules-Methode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx)
+- [ExchangeService.GetInboxRules-Methode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx)
     
-- [Datei "ExchangeService. UpdateInboxRules-Methode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx)
+- [ExchangeService.UpdateInboxRules-Methode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx)
     
 - [GetInboxRules-Vorgang](https://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx)
     

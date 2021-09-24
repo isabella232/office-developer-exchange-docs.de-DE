@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AttendeeType
 api_type:
 - schema
 ms.assetid: 048043a8-dbad-45a0-97c8-4cad63d8898b
-description: Das AttendeeType-Element stellt den Typ des Teilnehmers dar, der im e-Mail-Element (Epost) identifiziert wird. Dieses Element wird in Anforderungen für Besprechungsvorschläge verwendet.
-ms.openlocfilehash: 104b9f38cc891310ecb47c0b47837a912ced6ab7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AttendeeType-Element stellt den Typ des Teilnehmers dar, der im Email (EmailAddressType)-Element identifiziert wird. Dieses Element wird in Anfragen für Besprechungsvorschläge verwendet.
+ms.openlocfilehash: 5bcec50fe6cccc3df48ca9615dbd0d9418211b4b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462297"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533934"
 ---
 # <a name="attendeetype"></a>AttendeeType
 
-Das **AttendeeType** -Element stellt den Typ des Teilnehmers dar, der im [e-Mail-Element (Epost)](email-emailaddresstype.md) identifiziert wird. Dieses Element wird in Anforderungen für Besprechungsvorschläge verwendet. 
+Das **AttendeeType-Element** stellt den Typ des Teilnehmers dar, der im [Email (EmailAddressType)-Element](email-emailaddresstype.md) identifiziert wird. Dieses Element wird in Anfragen für Besprechungsvorschläge verwendet. 
   
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -61,17 +61,17 @@ Für dieses Element ist ein Textwert erforderlich. In der folgenden Tabelle sind
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |Organisator  <br/> |Der Postfachbenutzer und der Teilnehmer, der das Kalenderelement erstellt hat.  <br/> |
-|Erforderlich  <br/> |Ein Postfachbenutzer, der ein Erforderlicher Teilnehmer für die Besprechung ist.  <br/> |
-|Optional  <br/> |Ein Postfachbenutzer, der ein optionaler Teilnehmer für die Besprechung ist.  <br/> |
-|Raum  <br/> |Eine Post Fach Entität, die eine Raum Ressource darstellt, die für die Besprechung verwendet wird.  <br/> |
-|Ressource  <br/> |Eine Ressource wie ein Fernsehgerät oder Projektor, die für die Besprechung geplant ist.  <br/> |
+|Erforderlich  <br/> |Ein Postfachbenutzer, der ein erforderlicher Teilnehmer an der Besprechung ist.  <br/> |
+|Optional  <br/> |Ein Postfachbenutzer, der ein optionaler Teilnehmer an der Besprechung ist.  <br/> |
+|Raum  <br/> |Eine Postfachentität, die eine raumressource darstellt, die für die Besprechung verwendet wird.  <br/> |
+|Ressource  <br/> |Eine Ressource, z. B. ein Fernsehgerät oder ein Projektor, der für die Verwendung in der Besprechung geplant ist.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element ist ein erforderliches untergeordnetes Element des [MailboxData](mailboxdata.md) -Elements. Dieses Element kann nur einmal im [MailboxData](mailboxdata.md) -Element vorkommen. Das Schema, das dieses Element beschreibt, befindet sich im Verzeichnis/EWS/"aus des Computers mit Microsoft Exchange Server 2007, auf dem die Client Zugriffs-Serverrolle installiert ist. 
+Dieses Element ist ein erforderliches untergeordnetes Element des [MailboxData-Elements.](mailboxdata.md) Dieses Element kann im [MailboxData-Element](mailboxdata.md) nur einmal auftreten. Das Schema, das dieses Element beschreibt, befindet sich im Verzeichnis /EWS/ des Computers, auf dem MicrosoftExchange Server 2007 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist. 
   
 > [!NOTE]
-> Der AttendeeType-Schematyp wird zum Darstellen von Teilnehmern eines Kalenderelements verwendet. Verwechseln Sie dieses Element nicht mit Elementen des AttendeeType-Schematyps. 
+> Der AttendeeType-Schematyp wird verwendet, um Teilnehmer für ein Kalenderelement darzustellen. Verwechseln Sie dieses Element nicht mit Elementen des AttendeeType-Schematyps. 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
@@ -86,5 +86,5 @@ Dieses Element ist ein erforderliches untergeordnetes Element des [MailboxData](
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
-- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

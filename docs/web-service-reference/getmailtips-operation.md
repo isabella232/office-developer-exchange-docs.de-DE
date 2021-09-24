@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetMailTips
 api_type:
 - schema
 ms.assetid: 025483ec-a9f3-4735-8a95-d26e30ea7974
-description: Der GetMailTips-Vorgang ruft die Informationen zu den e-Mail-Infos für das angegebene Postfach ab.
-ms.openlocfilehash: 41a4bb99ee7ae4e416ec8a106968bb7869e60345
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetMailTips-Vorgang ruft die E-Mail-Tipps für das angegebene Postfach ab.
+ms.openlocfilehash: ec139f7a1a464aa8c30d8dd2043f441874231dc2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458656"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533794"
 ---
 # <a name="getmailtips-operation"></a>GetMailTips-Vorgang
 
-Der **GetMailTips** -Vorgang ruft die Informationen zu den e-Mail-Infos für das angegebene Postfach ab. 
+Der **GetMailTips-Vorgang** ruft die E-Mail-Tipps für das angegebene Postfach ab. 
   
-## <a name="getmailtips-request-example"></a>GetMailTips-Anforderungs Beispiel
+## <a name="getmailtips-request-example"></a>GetMailTips-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Der Client erstellt den Anforderungs-XML-Code und sendet ihn an den Server. Die Anforderung identifiziert, wen der Client sendet, das Postfach, für das die e-Mail-Tipps abgerufen werden sollen und welche e-Mail-Tipps angefordert werden. In diesem Beispiel fordert der Client an, dass alle e-Mail-Tipps für das ausgewählte Postfach zurückgegeben werden.
+Der Client erstellt die Anforderungs-XML und sendet sie an den Server. Die Anforderung gibt an, an wen der Client gesendet wird, das Postfach zum Abrufen der E-Mail-Tipps und welche E-Mail-Tipps angefordert werden. In diesem Beispiel fordert der Client an, dass alle E-Mail-Tipps für das ausgewählte Postfach zurückgegeben werden.
   
 ### <a name="code"></a>Code
 
@@ -64,17 +64,17 @@ Die folgenden Elemente sind in der Anforderung enthalten:
   
 - [GetMailTips](getmailtips.md)
     
-- [Absender](sendingas.md)
+- [SendingAs](sendingas.md)
     
-- [Recipients (ArrayOfRecipientsType)](recipients-arrayofrecipientstype.md)
+- [Empfänger (ArrayOfRecipientsType)](recipients-arrayofrecipientstype.md)
     
 - [MailTipsRequested](mailtipsrequested.md)
     
-## <a name="successful-getmailtips-response-example"></a>Erfolgreiches GetMailTips-Antwortbeispiel
+## <a name="successful-getmailtips-response-example"></a>Beispiel für erfolgreiche GetMailTips-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Simple Object Access Protocol (SOAP) Body-Beispiel zeigt eine erfolgreiche Antwort auf die **GetMailTips** -Anforderung. 
+Der folgende SOAP-Text (Simple Object Access Protocol) zeigt eine erfolgreiche Antwort auf die **GetMailTips-Anforderung.** 
   
 ### <a name="code"></a>Code
 
@@ -122,9 +122,9 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a>Response-Elemente
+### <a name="response-elements"></a>Antwortelemente
 
-Die Antwort enthält die folgenden Elemente:
+Die folgenden Elemente sind in der Antwort enthalten:
   
 - [ResponseCode](responsecode.md)
     

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Timeout
 api_type:
 - schema
 ms.assetid: c2e1ca5a-6667-4f6f-aac4-89de33bddc54
-description: Das Timeout-Element stellt die Dauer in Minuten dar, in der das Abonnement im Leerlauf bleiben kann, ohne eine GetEvents-Anforderung vom Client zu erhalten.
-ms.openlocfilehash: 6f3228cd480bf0eaf259c4f321bc74d0845b9bba
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Timeout-Element stellt die Dauer in Minuten dar, für die das Abonnement ohne getEvents-Anforderung vom Client im Leerlauf bleiben kann.
+ms.openlocfilehash: d0b5945f5d116e0ebb7a24a23970e785761fb0c9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459896"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534167"
 ---
 # <a name="timeout"></a>Timeout
 
-Das **Timeout** -Element stellt die Dauer in Minuten dar, in der das Abonnement im Leerlauf bleiben kann, ohne eine GetEvents-Anforderung vom Client zu erhalten. 
+Das **Timeout-Element** stellt die Dauer in Minuten dar, für die das Abonnement ohne getEvents-Anforderung vom Client im Leerlauf bleiben kann. 
   
 ```xml
 <Timeout/>
@@ -44,15 +44,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |Stellt ein Abonnement für ein Pull-basiertes Ereignis Benachrichtigungsabonnement dar.  <br/> |
+|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |Stellt ein Abonnement für ein pullbasiertes Ereignisbenachrichtigungsabonnement dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der eine ganze Zahl darstellt, ist erforderlich, wenn dieses Element verwendet wird. Die möglichen Werte für dieses Element sind 1 bis 1440, einschließlich. Dieses Element ist erforderlich.
+Ein Textwert, der eine ganze Zahl darstellt, ist erforderlich, wenn dieses Element verwendet wird. Die möglichen Werte für dieses Element sind 1 bis einschließlich 1440. Dieses Element ist erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Timeout-Zeitgeber für das Abonnement wird durch eine erfolgreiche GetEvents-Anforderung zurückgesetzt.
+Der Timeouttimer für das Abonnement wird durch eine erfolgreiche GetEvents-Anforderung zurückgesetzt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt. 
   

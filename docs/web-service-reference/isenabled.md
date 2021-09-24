@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsEnabled
 api_type:
 - schema
 ms.assetid: c7e3035e-a4ef-4c11-8cb0-214790a554ff
 description: Das IsEnabled-Element gibt an, ob die Regel aktiviert ist.
-ms.openlocfilehash: 7a150dc4a27cf4ff7da9825d1daae2b747088539
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 481b55aee6d2c4b591324caf6eeab947e2902da2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455310"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520507"
 ---
 # <a name="isenabled"></a>IsEnabled
 
-Das **IsEnabled** -Element gibt an, ob die Regel aktiviert ist. 
+Das **IsEnabled-Element** gibt an, ob die Regel aktiviert ist. 
   
 ```XML
 <IsEnabled/>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass die Regel aktiviert ist und ausgeführt werden kann. Der Wert **false** gibt an, dass die Regel nicht ausgeführt werden kann. 
+Der Textwert **"true"** gibt an, dass die Regel aktiviert ist und ausgeführt werden kann. Der Wert **"false"** gibt an, dass die Regel nicht ausgeführt werden kann. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -60,7 +60,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

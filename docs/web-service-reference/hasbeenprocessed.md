@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - HasBeenProcessed
 api_type:
 - schema
 ms.assetid: 46d4af8e-0f11-4a74-9365-1d983731fed8
-description: Das HasBeenProcessed-Element gibt an, ob ein Besprechungsnachrichten Element verarbeitet wurde.
-ms.openlocfilehash: 7251ca86e07a0b72c186c65094b6469331dfd12e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das HasBeenProcessed-Element gibt an, ob ein Besprechungsnachrichtenelement verarbeitet wurde.
+ms.openlocfilehash: 0eca17dbcc5e26e01798b5ac88b4e1b4f705f45b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462893"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533096"
 ---
 # <a name="hasbeenprocessed"></a>HasBeenProcessed
 
-Das **HasBeenProcessed** -Element gibt an, ob ein Besprechungsnachrichten Element verarbeitet wurde. 
+Das **HasBeenProcessed-Element** gibt an, ob ein Besprechungsnachrichtenelement verarbeitet wurde. 
   
 ```xml
 <HasBeenProcessed/>
@@ -51,9 +51,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass die Besprechungsnachricht verarbeitet wurde. 
+Der Textwert **"true"** gibt an, dass die Besprechungsnachricht verarbeitet wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - agent
 api_type:
 - schema
 ms.assetid: 0bf744a5-9d79-4c82-8ea7-45fdb3f55300
-description: 'Letzte Änderung: September 17, 2015'
-ms.openlocfilehash: a810bb229015054e0f244773760235114655a982
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: 'Last modified: September 17, 2015'
+ms.openlocfilehash: 8bcfdd9bffd4c7a15af40528fd431a99c7868637
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455681"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520968"
 ---
 # <a name="agent"></a>Agent
   
 **Gilt für:** Exchange Server 2013
   
-Das **Agent** -Element enthält Konfigurationsinformationen zu einem installierten Agent. 
+Das **Agent-Element** enthält Konfigurationsinformationen zu einem installierten Agent. 
   
 - [Konfiguration](configuration.md) 
 - [mexRuntime](mexruntime.md)
-- [Agentliste](agentlist.md)
+- [agentList](agentlist.md)
 - [Agent](agent.md)
   
 ```XML
@@ -40,7 +40,7 @@ Das **Agent** -Element enthält Konfigurationsinformationen zu einem installiert
 </agent>
 ```
 
-**AgentType (complexType)**
+**agentType (complexType)**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -50,11 +50,11 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Name** <br/> |Der Name, der beim Installieren des Agents angegeben wurde. Dieses Attribut erfordert einen nicht leeren Zeichenfolgenwert, der maximal 64 Zeichen enthält.  <br/> |
-|**BaseType** <br/> |Der vollständige Name, einschließlich des Namespaces, der Klasse, von der der Agent abgeleitet wird. Dieses Attribut erfordert einen nicht leeren Zeichenfolgenwert, der mindestens ein Zeichen enthält.  <br/> |
-|**ClassFactory** <br/> |Der vollständige Name, einschließlich des Namespaces, der Klasse, die die Agent-Factory implementiert, die Instanzen des Agents erstellt. Dieses Attribut muss den vollqualifizierten Namen der Klasse enthalten, die die Agent-Factory implementiert, die Instanzen des Agents erstellt. Diese Klasse muss entweder von der [SmtpReceiveAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx) -oder der [RoutingAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.RoutingAgentFactory.aspx) -Klasse abgeleitet werden.  <br/> |
-|**assemblyPath** <br/> |Der vollqualifizierte Pfad einschließlich des Datei namens der Assembly, die den Code für den Agent enthält. Dieses Attribut erfordert einen nicht leeren Zeichenfolgenwert, der mindestens ein Zeichen enthält.  <br/> |
-|**enabled** <br/> |Ein boolescher Wert, der angibt, ob der Agent aktiviert ist. Der Wert ist **true** , wenn der Agent aktiviert ist; Andernfalls ist der Wert **false**. Dieses Attribut ist erforderlich.  <br/> |
+|**Name** <br/> |Der Name, der bei der Installation des Agents angegeben wurde. Dieses Attribut erfordert einen wert für eine leere Zeichenfolge, die maximal 64 Zeichen enthält.  <br/> |
+|**Basetype** <br/> |Der vollständige Name einschließlich des Namespaces der Klasse, von der der Agent abgeleitet wird. Dieses Attribut erfordert einen wert für eine leere Zeichenfolge, die mindestens ein Zeichen enthält.  <br/> |
+|**classFactory** <br/> |Der vollständige Name einschließlich des Namespaces der Klasse, die die Agentfactory implementiert, die Instanzen des Agents erstellt. Dieses Attribut muss den vollqualifizierten Namen der Klasse enthalten, die die Agentfactory implementiert, die Instanzen des Agents erstellt. Diese Klasse muss entweder von der [SmtpReceiveAgentFactory-](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx) oder [RoutingAgentFactory-Klasse](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.RoutingAgentFactory.aspx) abgeleitet werden.  <br/> |
+|**Assemblypath** <br/> |Der vollqualifizierte Pfad einschließlich des Dateinamens der Assembly, die den Code für den Agent enthält. Dieses Attribut erfordert einen wert für eine leere Zeichenfolge, die mindestens ein Zeichen enthält.  <br/> |
+|**enabled** <br/> |Ein boolescher Wert, der angibt, ob der Agent aktiviert ist. Der Wert ist **"true",** wenn der Agent aktiviert ist. andernfalls ist der Wert **false**. Dieses Attribut ist erforderlich.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -64,18 +64,18 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Agentliste](agentlist.md) <br/> |Enthält ein **Agent** -Element für jeden installierten Agent.  <br/> |
+|[agentList](agentlist.md) <br/> |Enthält ein **Agent-Element** für jeden installierten Agent.  <br/> |
    
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |In dieser Datei wird kein Namespace definiert.  <br/> |
+|Namespace  <br/> |Diese Datei definiert keinen Namespace.  <br/> |
 |Name des Schemas  <br/> |Nicht verfügbar.  <br/> |
 |Überprüfungsdatei  <br/> |Nicht verfügbar.  <br/> |
 |Leer kann sein  <br/> |"False".  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Elemente der Konfigurationsdatei der Agents für Exchange 2013](agents-configuration-file-elements-for-exchange-2013.md)
+- [Agents-Konfigurationsdateielemente für Exchange 2013](agents-configuration-file-elements-for-exchange-2013.md)
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsRecurring
 api_type:
 - schema
 ms.assetid: f4df6997-8d5b-4893-a4a5-fc7047e0a9c3
-description: Das isterminive-Element gibt an, ob ein Kalenderelement, eine Besprechungsanfrage oder eine Aufgabe Teil eines wiederkehrenden Elements ist. Dieses Element ist schreibgeschützt.
-ms.openlocfilehash: 72c71c1955b69f1c0df855ce4bd0ed02d4c89122
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IsRecurring-Element gibt an, ob ein Kalenderelement, eine Besprechungsanfrage oder eine Aufgabe Teil einer Terminserie ist. Dieses Element ist schreibgeschützt.
+ms.openlocfilehash: ea910b78e962906285a73c869e394147c324372c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526487"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532726"
 ---
 # <a name="isrecurring"></a>IsRecurring
 
-Das **isterminive** -Element gibt an, ob ein Kalenderelement, eine Besprechungsanfrage oder eine Aufgabe Teil eines wiederkehrenden Elements ist. Dieses Element ist schreibgeschützt. 
+Das **IsRecurring-Element** gibt an, ob ein Kalenderelement, eine Besprechungsanfrage oder eine Aufgabe Teil einer Terminserie ist. Dieses Element ist schreibgeschützt. 
   
 ```xml
 <IsRecurring/>
@@ -52,20 +52,20 @@ Keine.
 
 Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-In der folgenden Tabelle wird gezeigt, wie die **isterminive** -Eigenschaft für unterschiedliche Kalenderelement Typen für Organisatoren und Teilnehmer sowie für Besprechungsanfragen und Updates festgelegt wird. 
+Die folgende Tabelle zeigt, wie die **IsRecurring-Eigenschaft** für verschiedene Kalenderelementtypen für Organisatoren und Teilnehmer sowie für Besprechungsanfragen und -aktualisierungen festgelegt wird. 
   
-|**CalendarItem-Typ**|**Organizer <br/> (reterminal)**|**Teilnehmer <br/> (iswiederkehr)**|**Besprechungsanfrage/-Aktualisierung <br/> (einmaliges Anmelden)**|
+|**CalendarItem-Typ**|**Organizer  <br/> (IsRecurring)**|**Attendee  <br/> (IsRecurring)**|**Besprechungsanfrage/-update  <br/> (IsRecurring)**|
 |:-----|:-----|:-----|:-----|
 |Einzelnes Vorkommen  <br/> |**FALSE** <br/> |**FALSE** <br/> |**FALSE** <br/> |
-|Wiederkehrendes Master  <br/> |**FALSE** <br/> |**TRUE** <br/> |**TRUE** <br/> |
-|Wiederkehrende Ausnahme  <br/> |**TRUE** <br/> |**TRUE** <br/> |**TRUE** <br/> |
+|Serienmaster  <br/> |**FALSE** <br/> |**STIMMT** <br/> |**STIMMT** <br/> |
+|Wiederkehrende Ausnahme  <br/> |**STIMMT** <br/> |**STIMMT** <br/> |**STIMMT** <br/> |
    
-Der Wert der **iswiederkehr** -Eigenschaft, der für wiederkehrende Hauptkalender Elemente für den Organisator festgelegt ist, ist falsch; Dieser Wert sollte auf **true**festgelegt werden. 
+Der Wert der **IsRecurring-Eigenschaft,** der für wiederkehrende Masterkalenderelemente für den Organisator festgelegt wird, ist falsch. dieser Wert sollte auf **TRUE** festgelegt werden. 
   
 > [!NOTE]
-> Der GetUserAvailability-Vorgang verfügt auch über ein [iswiederkehr Endes Element (CalendarEventDetails)](isrecurring-calendareventdetails.md) . 
+> Der GetUserAvailability-Vorgang weist auch ein [IsRecurring-Element (CalendarEventDetails)](isrecurring-calendareventdetails.md) auf. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -82,19 +82,19 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 
 
 
-[TaskType. iswiederkehr Ende](https://msdn.microsoft.com/library/ExchangeWebServices.TaskType.IsRecurring.aspx)
+[TaskType.IsRecurring](https://msdn.microsoft.com/library/ExchangeWebServices.TaskType.IsRecurring.aspx)
   
-[CalendarEventDetails. iswiederkehr Ende](https://msdn.microsoft.com/library/ExchangeWebServices.CalendarEventDetails.IsRecurring.aspx)
+[CalendarEventDetails.IsRecurring](https://msdn.microsoft.com/library/ExchangeWebServices.CalendarEventDetails.IsRecurring.aspx)
   
-[CalendarItemType. iswiederkehr Ende](https://msdn.microsoft.com/library/ExchangeWebServices.CalendarItemType.IsRecurring.aspx)
+[CalendarItemType.IsRecurring](https://msdn.microsoft.com/library/ExchangeWebServices.CalendarItemType.IsRecurring.aspx)
   
-[MeetingRequestMessageType. iswiederkehr Ende](https://msdn.microsoft.com/library/ExchangeWebServices.MeetingRequestMessageType.IsRecurring.aspx)
+[MeetingRequestMessageType.IsRecurring](https://msdn.microsoft.com/library/ExchangeWebServices.MeetingRequestMessageType.IsRecurring.aspx)
   
 [CalendarItemType.IsRecurringSpecified](https://msdn.microsoft.com/library/ExchangeWebServices.CalendarItemType.IsRecurringSpecified.aspx)
   
 [MeetingRequestMessageType.IsRecurringSpecified](https://msdn.microsoft.com/library/ExchangeWebServices.MeetingRequestMessageType.IsRecurringSpecified.aspx)
   
-[TaskType. IsRecurringSpecified](https://msdn.microsoft.com/library/ExchangeWebServices.TaskType.IsRecurringSpecified.aspx)
+[TaskType.IsRecurringSpecified](https://msdn.microsoft.com/library/ExchangeWebServices.TaskType.IsRecurringSpecified.aspx)
 
 
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 59b0b2db-a0ae-4162-a2cb-5f37f42fe872
-description: Das SearchPreviewItem-Element gibt die Elementvorschau für eine Ermittlungs Suche an.
-ms.openlocfilehash: ab48353b0ffaf4bc3b9409f1a620d145bffc7a13
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SearchPreviewItem-Element gibt die Elementvorschau für eine Ermittlungssuche an.
+ms.openlocfilehash: 7ecc034de3386ed35f0071403c013e91b79d13c5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466934"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534301"
 ---
 # <a name="searchpreviewitem"></a>SearchPreviewItem
 
-Das **SearchPreviewItem** -Element gibt die Elementvorschau für eine Ermittlungs Suche an. 
+Das **SearchPreviewItem-Element** gibt die Elementvorschau für eine Ermittlungssuche an. 
   
 ```XML
 <SearchPreviewItem>
@@ -56,13 +56,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[ID (itemidtype)](id-itemidtype.md)  |  [Postfach (PreviewItemMailboxType)](mailbox-previewitemmailboxtype.md)  |  [Übergeordnete-Nr](parentid.md)  |  [ItemClass](itemclass.md)  |  [UniqueHash](uniquehash.md)  |  [Sortvalue](sortvalue.md)  |  [OwaLink](owalink.md)  |  [Absender (Zeichenfolge)](sender-string.md)  |  [Torecipients (ArrayOfSmtpAddressType)](torecipients-arrayofsmtpaddresstype.md)  |  [CcRecipients](ccrecipients.md)  |  [BccRecipients](bccrecipients.md)  |  [Erstellt am](createdtime.md)  |  Empfangs Zeitteile [ReceivedTime](receivedtime.md)  |  [Sentzeit](senttime.md)  |  [Betreff](subject.md)  |  [Größe (lang)](size-long.md)  |  [Vorschau anzeigen](preview-ex15websvcsotherref.md)  |  [Wichtigkeit](importance.md)  |  [Lesen Sie](read.md)  |  [Hatanlage](hasattachment.md)  |  [ExtendedProperties (NonEmptyArrayOfExtendedPropertyType)](extendedproperties-nonemptyarrayofextendedpropertytype.md)
+[ID (ItemIdType)](id-itemidtype.md)  |  [Postfach (PreviewItemMailboxType)](mailbox-previewitemmailboxtype.md)  |  [ParentId](parentid.md)  |  [ItemClass](itemclass.md)  |  [UniqueHash](uniquehash.md)  |  [SortValue](sortvalue.md)  |  [OwaLink](owalink.md)  |  [Sender (Zeichenfolge)](sender-string.md)  |  [ToRecipients (ArrayOfSmtpAddressType)](torecipients-arrayofsmtpaddresstype.md)  |  [CcRecipients](ccrecipients.md)  |  [BccRecipients](bccrecipients.md)  |  [CreatedTime](createdtime.md)  |  [ReceivedTime](receivedtime.md)  |  [SentTime](senttime.md)  |  [Betreff](subject.md)  |  [Größe (lang)](size-long.md)  |  [Vorschau](preview-ex15websvcsotherref.md)  |  [Wichtigkeit](importance.md)  |  [Lesen](read.md)  |  [HasAttachment](hasattachment.md)  |  [ExtendedProperties (NonEmptyArrayOfExtendedPropertyType)](extendedproperties-nonemptyarrayofextendedpropertytype.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Elemente (ArrayOfSearchPreviewItemsType)](items-arrayofsearchpreviewitemstype.md)
+[Items (ArrayOfSearchPreviewItemsType)](items-arrayofsearchpreviewitemstype.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

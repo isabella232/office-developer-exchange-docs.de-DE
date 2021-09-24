@@ -5,50 +5,50 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0cb5525f-faa3-48f1-9551-df55ffc26f46
-description: Hier finden Sie Informationen zum AddNewImContactToGroup-EWS-Vorgang.
-ms.openlocfilehash: e91cc067b4161b366e6713a9adc16873e63b1562
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum EWS-Vorgang "AddNewImContactToGroup".
+ms.openlocfilehash: 0060b7a0f169e5d8ce0034625ea0c4b367521301
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465029"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520136"
 ---
 # <a name="addnewimcontacttogroup-operation"></a>AddNewImContactToGroup-Vorgang
 
-Hier finden Sie Informationen zum **AddNewImContactToGroup** -EWS-Vorgang. 
+Hier finden Sie Informationen zum EWS-Vorgang **"AddNewImContactToGroup".** 
   
-Mit dem **AddNewImContactToGroup** -Vorgang wird einer Chatgruppe (Instant Messaging) ein neuer Kontakt hinzugefügt. 
+Der **AddNewImContactToGroup-Vorgang** fügt einen neuen Kontakt zu einer Chatgruppe hinzu. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-addnewimcontacttogroup-operation"></a>Verwenden des AddNewImContactToGroup-Vorgangs
 
-Der **AddNewImContactToGroup** -Vorgang verwendet die folgenden drei Argumente, um einer Chatgruppe einen neuen Kontakt hinzuzufügen: 
+Der **AddNewImContactToGroup-Vorgang** verwendet die folgenden drei Argumente, um einer Chatgruppe einen neuen Kontakt hinzuzufügen: 
   
-- **IMAddress** -Eigenschaft – gibt die Chat Adresse des Kontakts an. Diese Eigenschaft ist erforderlich. 
+- **ImAddress-Eigenschaft** – Identifiziert die Chatadresse des Kontakts. Diese Eigenschaft ist erforderlich. 
     
-- **Display** Name-Eigenschaft – gibt den Anzeigenamen des Kontakts an. 
+- **DisplayName-Eigenschaft** – Identifiziert den Anzeigenamen des Kontakts. 
     
-- **Gruppen** -Eigenschaft-gibt die Gruppe an, der der Kontakt hinzugefügt wird. 
+- **GroupId-Eigenschaft** – Identifiziert die Gruppe, der der Kontakt hinzugefügt wird. 
     
-Dieser Vorgang gibt die Rolle des Kontakts zurück, der der Gruppe hinzugefügt wurde.
+Dieser Vorgang gibt die Persona des Kontakts zurück, der der Gruppe hinzugefügt wurde.
   
 ### <a name="addnewimcontacttogroup-operation-soap-headers"></a>SOAP-Header des AddNewImContactToGroup-Vorgangs
 
-Der **AddNewImContactToGroup** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **AddNewImContactToGroup-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden sollen. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dieser Header gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur, wie in RFC 3066 definiert, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden soll. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="addnewimcontacttogroup-operation-request-example-add-a-new-im-contact-to-a-group"></a>AddNewImContactToGroup-Vorgangs Anforderungs Beispiel: Hinzufügen eines neuen Chat Kontakts zu einer Gruppe
+## <a name="addnewimcontacttogroup-operation-request-example-add-a-new-im-contact-to-a-group"></a>AddNewImContactToGroup-Vorgangsanforderungsbeispiel: Hinzufügen eines neuen Chatkontakts zu einer Gruppe
 
-Im folgenden Beispiel einer **AddNewImContactToGroup** -Vorgangsanforderung wird gezeigt, wie einer vorhandenen Chatgruppe ein neuer Kontakt hinzugefügt wird. Der Wert der **Group** -Eigenschaft für dieses Beispiel wurde von den Ergebnissen des [AddImGroup-Vorgangs](addimgroup-operation.md)zurückgegeben. Die **ExchangeStoreId** -Eigenschaft enthält den Wert der **Group** -Eigenschaft. 
+Das folgende Beispiel einer **AddNewImContactToGroup-Vorgangsanforderung** zeigt, wie Sie einer vorhandenen Chatgruppe einen neuen Kontakt hinzufügen. Der **GroupId-Eigenschaftswert** für dieses Beispiel wurde aus den Ergebnissen des [AddImGroup-Vorgangs](addimgroup-operation.md)zurückgegeben. Die **ExchangeStoreId-Eigenschaft** enthält den **GroupId-Eigenschaftswert.** 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -74,24 +74,24 @@ Im folgenden Beispiel einer **AddNewImContactToGroup** -Vorgangsanforderung wird
 ```
 
 > [!NOTE]
-> Der **Gruppen** -Wert wurde verkürzt, um die Lesbarkeit zu erhalten. 
+> Der **GroupId-Wert** wurde gekürzt, um die Lesbarkeit zu gewährleisten. 
   
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [AddNewImContactToGroup](addnewimcontacttogroup.md)
     
-- [IMAddress (Zeichenfolge)](imaddress-string.md)
+- [ImAddress (Zeichenfolge)](imaddress-string.md)
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
 - [GroupId](groupid.md)
     
-## <a name="successful-addnewimcontacttogroup-operation-response"></a>Erfolgreiche Reaktion des AddNewImContactToGroup-Vorgangs
+## <a name="successful-addnewimcontacttogroup-operation-response"></a>Erfolgreiche AddNewImContactToGroup-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **AddNewImContactToGroup** -Vorgangsanforderung. Die Antwort enthält die Person des neu erstellten Kontakts. Der Kontakt wird dem Ordner Quick Contacts in Exchange hinzugefügt. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **AddNewImContactToGroup-Vorgangsanforderung.** Die Antwort enthält die Persona des neu erstellten Kontakts. Der Kontakt wird dem Ordner "Schnellkontakte" in Exchange hinzugefügt. 
   
 > [!NOTE]
-> Die Bezeichner wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Bezeichner wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -190,7 +190,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **AddNewImContact
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [AddNewImContactToGroupResponse](addnewimcontacttogroupresponse.md)
     
@@ -198,7 +198,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [PersonaId](personaid.md)
     
-- [Personatype](personatype.md)
+- [PersonaType](personatype.md)
     
 - [CreationTime](creationtime.md)
     
@@ -210,19 +210,19 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [FileAsId](fileasid.md)
     
-- [E-mailemail (e-)](emailaddress-emailaddresstype.md)
+- [EmailAddress (EmailAddressType)](emailaddress-emailaddresstype.md)
     
 - [Name (EmailAddressType)](name-emailaddresstype.md)
     
-- [Address (Zeichenfolge)](address-string.md)
+- [Adresse (Zeichenfolge)](address-string.md)
     
-- [Routingtype (e-mailemailtype)](routingtype-emailaddresstype.md)
+- [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
     
-- [IMAddress (Zeichenfolge)](imaddress-string.md)
+- [ImAddress (Zeichenfolge)](imaddress-string.md)
     
 - [RelevanceScore](relevancescore.md)
     
-- [Zuordnungen (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
+- [Attributions (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
     
 - [Attribution (PersonaAttributionType)](attribution-personaattributiontype.md)
     
@@ -230,7 +230,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [SourceId](sourceid.md)
     
-- [Isschreibbar](iswritable.md)
+- [IsWritable](iswritable.md)
     
 - [IsQuickContact](isquickcontact.md)
     
@@ -238,7 +238,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [FolderId](folderid.md)
     
-- [Display Names](displaynames.md)
+- [DisplayNames](displaynames.md)
     
 - [StringAttributedValue](stringattributedvalue.md)
     
@@ -250,11 +250,11 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [EmailAddressAttributedValue](emailaddressattributedvalue.md)
     
-- [Imaddresses](imaddresses.md)
+- [ImAddresses](imaddresses.md)
     
-## <a name="addnewimcontacttogroup-operation-error-response"></a>Fehlerantwort des AddNewImContactToGroup-Vorgangs
+## <a name="addnewimcontacttogroup-operation-error-response"></a>AddNewImContactToGroup-Vorgangsfehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **AddNewImContactToGroup** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Hinzufügen eines Kontakts zu einer Gruppe, die sich nicht im Postfach des anfordernden befindet. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **AddNewImContactToGroup-Vorgangsanforderung.** Dies ist eine Antwort auf eine Anforderung zum Hinzufügen eines Kontakts zu einer Gruppe, die sich nicht im Postfach des Antragstellers befindet. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -295,9 +295,9 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Messagexml verwendet](messagexml.md)
+- [MessageXml](messagexml.md)
     
-Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
+Weitere Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

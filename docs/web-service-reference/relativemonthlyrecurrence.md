@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RelativeMonthlyRecurrence
 api_type:
 - schema
 ms.assetid: a76595db-7460-44ac-ac2a-53241caa33a7
 description: Das RelativeMonthlyRecurrence-Element beschreibt ein relatives monatliches Serienmuster.
-ms.openlocfilehash: 90aa0e43684bfb09a3e13cf86ec96f680e80a714
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 326e6581e55e64ffd2bcc9bdfa5108cf63089633
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457508"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513444"
 ---
 # <a name="relativemonthlyrecurrence"></a>RelativeMonthlyRecurrence
 
-Das **RelativeMonthlyRecurrence** -Element beschreibt ein relatives monatliches Serienmuster. 
+Das **RelativeMonthlyRecurrence-Element** beschreibt ein relatives monatliches Serienmuster. 
   
 ```xml
 <RelativeMonthlyRecurrence>
@@ -44,18 +44,18 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Intervall](interval.md) <br/> |Definiert das Intervall zwischen zwei aufeinander folgenden monatlichen wiederkehrenden Musterelementen. Der Bereich für diesen Wert ist 1 bis 99.  <br/> |
-|[DaysOfWeek (dayofweektype)](daysofweek-dayofweektype.md) <br/> |Beschreibt, welche Wochentage sich im relativen monatlichen Serienmuster befinden.  <br/> |
+|[Intervall](interval.md) <br/> |Definiert das Intervall zwischen zwei aufeinander folgenden monatlich wiederkehrenden Musterelementen. Der Bereich für diesen Wert ist 1 bis 99.  <br/> |
+|[DaysOfWeek (DayOfWeekType)](daysofweek-dayofweektype.md) <br/> |Beschreibt, welche Wochentage sich im relativen monatlichen Serienmuster befinden.  <br/> |
 |[DayOfWeekIndex](dayofweekindex.md) <br/> |Beschreibt, welche Woche in einem relativen monatlichen Serienmuster verwendet wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Serie (serietype)](recurrence-recurrencetype.md) <br/> |Enthält das Serienmuster für Kalenderelemente und Besprechungsanfragen.  <br/> |
+|[Serie (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Enthält das Serienmuster für Kalenderelemente und Besprechungsanfragen.  <br/> |
 |[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Enthält Serieninformationen für wiederkehrende Vorgänge.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

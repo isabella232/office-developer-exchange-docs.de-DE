@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Name
 api_type:
 - schema
 ms.assetid: 8ee00842-2d59-4346-9659-fa105bee747b
 description: Das Name-Element stellt den Namen der Anlage dar.
-ms.openlocfilehash: ee4a273b753a3025f6e4b0bae17872981730ba0c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: bcffb16bfe6d7b02e1488bdfc99f3d16a2dc9375
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463195"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537715"
 ---
 # <a name="name-attachmenttype"></a>Name (AttachmentType)
 
-Das **Name** -Element stellt den Namen der Anlage dar. 
+Das **Name-Element** stellt den Namen der Anlage dar. 
   
 ```xml
 <Name/>
@@ -45,14 +45,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die an ein Element im Exchange-Informationsspeicher angefügt ist.  <br/> |
-|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange-Element dar, das an ein anderes Exchange-Element angefügt ist.  <br/> |
+|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die an ein Element im Exchange Speicher angefügt ist.  <br/> |
+|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange Element dar, das einem anderen Exchange Element zugeordnet ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Text-Wert ist ein String-Wert, der den Namen der Anlage darstellt.
+Der Textwert ist ein Zeichenfolgenwert, der den Namen der Anlage darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

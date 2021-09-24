@@ -1,23 +1,23 @@
 ---
-title: State (TeamMailboxLifecycleStateType)
+title: Status (TeamMailboxLifecycleStateType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3b1bc531-6988-41c3-9aad-3f5ad5b732a9
-description: Das State-Element enthält den Lebenszyklusstatus, der für ein websitepostfach festgelegt wird.
-ms.openlocfilehash: 597946b48649d997f8dd57823b4e0fcc091a6f84
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das State-Element enthält den Lebenszyklusstatus, der für ein Websitepostfach festgelegt ist.
+ms.openlocfilehash: 5189ee8573fd33d2265fd60c47bb40d17b16b8fe
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465163"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538968"
 ---
-# <a name="state-teammailboxlifecyclestatetype"></a>State (TeamMailboxLifecycleStateType)
+# <a name="state-teammailboxlifecyclestatetype"></a>Status (TeamMailboxLifecycleStateType)
 
-Das **State** -Element enthält den Lebenszyklusstatus, der für ein websitepostfach festgelegt wird. 
+Das **State-Element** enthält den Lebenszyklusstatus, der für ein Websitepostfach festgelegt ist. 
   
 ```XML
 <State> Active | Closed | Unlinked | PendingDelete </State>
@@ -43,9 +43,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **State** -Elements ist der Lebenszyklusstatus, der für ein websitepostfach festgelegt wird. Der Textwert **aktiv** gibt an, dass ein websitepostfach aktiv verwendet wird. Der Textwert **Closed** gibt an, dass ein websitepostfach geschlossen wurde und nicht aktiv verwendet wird. Ein Textwert von **unlinked** gibt an, dass ein websitepostfach nicht mit einer webbasierten Zusammenarbeitsumgebung verknüpft ist. Die Werte " **aktiv**", " **Closed**" und " **" PendingDelete "** " schließen sich gegenseitig aus, aber der nicht **verlinkte** Wert schließt sich nicht gegenseitig aus den anderen Werten aus. Der Textwert **"PendingDelete"** gibt an, dass ein websitepostfach aussteht, das gelöscht wird. Ein websitepostfach muss geschlossen werden, bevor es als **"PendingDelete"** festgelegt werden kann.
+Der Textwert des **State-Elements** ist der Lebenszyklusstatus, der für ein Websitepostfach festgelegt ist. Der Textwert **"Active"** gibt an, dass ein Websitepostfach aktiv verwendet wird. Der Textwert **"Closed"** gibt an, dass ein Websitepostfach geschlossen wurde und nicht aktiv verwendet wird. Der Textwert **"Nicht verknüpft"** gibt an, dass ein Websitepostfach nicht mit einer webbasierten Umgebung für die Zusammenarbeit verknüpft ist. Die Werte **"Active",** **"Closed"** und **"PendingDelete"** schließen sich gegenseitig aus, aber der Wert **"Nicht verknüpft"** schließt sich nicht gegenseitig von den anderen Werten aus. Der Textwert **"PendingDelete"** gibt an, dass ein Websitepostfach gelöscht werden muss. Ein Websitepostfach muss geschlossen werden, bevor es als **"PendingDelete"** festgelegt werden kann.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -57,7 +57,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

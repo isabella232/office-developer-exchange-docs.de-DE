@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GlobalMessageCount
 api_type:
 - schema
 ms.assetid: e2ac4677-9645-4a1e-911c-17a5a08e2b21
-description: Das GlobalMessageCount-Element enthält die Gesamtzahl der Unterhaltungselemente im Postfach.
-ms.openlocfilehash: fd828970bddb2dcc4dedf429ac5eb6cf31f9fb57
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GlobalMessageCount-Element enthält die Gesamtanzahl der Unterhaltungselemente im Postfach.
+ms.openlocfilehash: 2730d4cb56ed63c64f298ba1b0b59e7ad3aed908
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459405"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519625"
 ---
 # <a name="globalmessagecount"></a>GlobalMessageCount
 
-Das **GlobalMessageCount** -Element enthält die Gesamtzahl der Unterhaltungselemente im Postfach. 
+Das **GlobalMessageCount-Element** enthält die Gesamtanzahl der Unterhaltungselemente im Postfach. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -35,7 +35,7 @@ Das **GlobalMessageCount** -Element enthält die Gesamtzahl der Unterhaltungsele
 <GlobalMessageCount/>
 ```
 
- **xs: int**
+ **xs:int**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -56,9 +56,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **GlobalMessageCount** -Elements ist die Gesamtzahl der Unterhaltungselemente in einem Postfach. 
+Der Textwert des **GlobalMessageCount-Elements** ist die Gesamtzahl der Unterhaltungselemente in einem Postfach. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

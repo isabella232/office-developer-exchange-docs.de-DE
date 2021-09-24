@@ -1,27 +1,27 @@
 ---
-title: ID (Zeitzone)
+title: ID (TimeZone)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Id
 api_type:
 - schema
 ms.assetid: 4c7350b4-ffa1-4e7d-9433-80b4383bd0d2
-description: Das ID-Element identifiziert eine einzelne Zeitzonendefinition.
-ms.openlocfilehash: 18ded1c9c0b6f0219d6256ebe19b9b1f7173da2c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Id-Element identifiziert eine einzelne Zeitzonendefinition.
+ms.openlocfilehash: 58ff0cf0302c961d743458f8b6c0f197e23d0278
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466136"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519471"
 ---
-# <a name="id-timezone"></a>ID (Zeitzone)
+# <a name="id-timezone"></a>ID (TimeZone)
 
-Das **ID-** Element identifiziert eine einzelne Zeitzonendefinition. 
+Das **Id-Element** identifiziert eine einzelne Zeitzonendefinition. 
   
 ```xml
 <Id>...</Id>
@@ -44,15 +44,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[IDs](ids.md) <br/> |Enthält ein Array von Zeit Zonen Definitions Bezeichnern.  <br/> |
+|[Ids](ids.md) <br/> |Enthält ein Array von Zeitzonendefinitionsbezeichnern.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der Wert Text stellt den eindeutigen Bezeichner für die Zeitzonendefinition dar.
+Ein Textwert ist erforderlich. Der Textwert stellt den eindeutigen Bezeichner für die Zeitzonendefinition dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

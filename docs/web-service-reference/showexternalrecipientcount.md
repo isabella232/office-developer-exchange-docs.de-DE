@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ShowExternalRecipientCount
 api_type:
 - schema
 ms.assetid: db28dbcb-d051-4e5c-a9c2-4b8d5149b4e1
-description: Das ShowExternalRecipientCount-Element gibt an, ob Consumer des GetMailTips-Vorgangs e-Mail-Tipps anzeigen müssen, die die Anzahl der externen Empfänger angeben, an die eine Nachricht adressiert wird.
-ms.openlocfilehash: fc32e5c4a95f0e33b5532af9c77d31bd6446e641
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: The ShowExternalRecipientCount element indicates whether consumers of the GetMailTips operation have to show mail tips that indicate the number of external recipients to which a message is addressed.
+ms.openlocfilehash: 30615dcb1091dff01cf13679e3e1ed68c8b25af9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460470"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539100"
 ---
 # <a name="showexternalrecipientcount"></a>ShowExternalRecipientCount
 
-Das **ShowExternalRecipientCount** -Element gibt an, ob Consumer des [GetMailTips-Vorgangs](getmailtips-operation.md) e-Mail-Tipps anzeigen müssen, die die Anzahl der externen Empfänger angeben, an die eine Nachricht adressiert wird. 
+The **ShowExternalRecipientCount** element indicates whether consumers of the [GetMailTips operation](getmailtips-operation.md) have to show mail tips that indicate the number of external recipients to which a message is addressed. 
   
 ```XML
 <ShowExternalRecipientCount>true | false</ShowExternalRecipientCount>
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |Enthält Dienstkonfigurationsinformationen für den e-Mail-Spitzen Dienst.  <br/> |
+|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |Enthält Dienstkonfigurationsinformationen für den E-Mail-Tipps-Dienst.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert dieses Elements ist **true** , wenn Consumer des [GetMailTips-Vorgangs](getmailtips-operation.md) e-Mail-Tipps anzeigen müssen, die die Anzahl der externen Empfänger angeben, an die eine Nachricht adressiert wird. Der Wert ist **false** , wenn Consumer des [GetMailTips-Vorgangs](getmailtips-operation.md) keine e-Mail-Tipps anzeigen müssen, die die Anzahl der externen Empfänger angeben, an die eine Nachricht adressiert wird. 
+Der Textwert dieses Elements ist **true,** wenn Consumer des [GetMailTips-Vorgangs](getmailtips-operation.md) E-Mail-Tipps anzeigen müssen, die die Anzahl der externen Empfänger angeben, an die eine Nachricht adressiert ist. The value is **false** if consumers of the [GetMailTips operation](getmailtips-operation.md) do not have to show mail tips that indicate the number of external recipients to which a message is addressed. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

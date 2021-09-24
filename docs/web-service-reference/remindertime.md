@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6081777a-ae91-43d2-bf83-f3742030aa70
-description: Das Reminder-Element gibt die Zeit an, zu der die Erinnerung erfolgt.
-ms.openlocfilehash: e5a1194af43e038a608bf928313909519e7d44e7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ReminderTime-Element gibt die Uhrzeit an, zu der die Erinnerung ausgeführt werden soll.
+ms.openlocfilehash: 5fe4167d901f84c21273071ec14fbc48a7bee2ac
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460029"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513402"
 ---
 # <a name="remindertime"></a>ReminderTime
 
-Das **Reminder** -Element gibt die Zeit an, zu der die Erinnerung erfolgt. 
+Das **ReminderTime-Element** gibt die Uhrzeit an, zu der die Erinnerung ausgeführt werden soll. 
   
 ```XML
 <ReminderTime/>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Reminder** -Elements ist die Zeit, zu der die Erinnerung stattfinden soll. 
+Der Textwert des **ReminderTime-Elements** ist die Zeit für die Erinnerung. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ReceivedRepresenting
 api_type:
 - schema
 ms.assetid: 1157b042-6dce-4cdc-9700-e22b749da39f
-description: Das ReceivedRepresenting-Element identifiziert den Prinzipal in einem Stellvertretungs-Zugriffs Szenario.
-ms.openlocfilehash: f444fb88be9c0df174f0c1490cf7c499cc0c0539
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ReceivedRepresenting-Element identifiziert den Prinzipal in einem Stellvertretungszugriffsszenario.
+ms.openlocfilehash: 4be5d6273534cab9537604b48b60a23baec82eea
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468222"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532231"
 ---
 # <a name="receivedrepresenting"></a>ReceivedRepresenting
 
-Das **ReceivedRepresenting** -Element identifiziert den Prinzipal in einem Stellvertretungs-Zugriffs Szenario. 
+Das **ReceivedRepresenting-Element** identifiziert den Prinzipal in einem Stellvertretungszugriffsszenario. 
   
 ```xml
 <ReceivedRepresenting>
@@ -61,19 +61,19 @@ Keine.
 |[ForwardItem](forwarditem.md) <br/> |Enthält ein Exchange-Speicher-Element an Empfänger weitergeleitet.  <br/> |
 |[CancelCalendarItem](cancelcalendaritem.md) <br/> |Stellt das Antwortobjekt, das Sie eine Besprechung absagen verwendet wird.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das **ReceivedRepresenting** -Element wird zusammen mit den **from** -und **ReceivedBy** -Elementen in Stellvertretungs-Zugriffsszenarien verwendet. In der folgenden Tabelle sind die Entitäten aufgeführt, die diese Elemente in einem Stellvertretungs-Zugriffs Szenario darstellen. 
+Das **ReceivedRepresenting-Element** wird zusammen mit den **From-** und **ReceivedBy-Elementen** in Stellvertretungszugriffsszenarien verwendet. In der folgenden Tabelle sind die Entitäten aufgeführt, die diese Elemente in einem Stellvertretungszugriffsszenario darstellen. 
   
-**Elemente in einem Szenario mit Stellvertretungszugriff**
+**Elemente in einem Stellvertretungszugriffsszenario**
 
 |**Element**|**Entität, die das Element darstellt**|
 |:-----|:-----|
-|[From](from.md) <br/> |ThirdParty  <br/> |
+|[From](from.md) <br/> |Thirdparty  <br/> |
 |[ReceivedBy](receivedby.md) <br/> |Stellvertretung  <br/> |
 |[ReceivedRepresenting](receivedrepresenting.md) <br/> |Principal  <br/> |
    
-Wenn ein thirdparty in einem Stellvertretungs-Zugriffs Szenario eine Besprechungsanfrage an einen Prinzipal sendet, der über eine Stellvertretung verfügt, wird der Stellvertretung eine neue Besprechungsanfrage angezeigt. Diese Elemente ermöglichen Delegaten, zwischen Nachrichten zu unterscheiden, die direkt an Sie gesendet werden, und Nachrichten, die aufgrund einer Weiterleitungsregel für Delegaten an Sie gesendet werden.
+Wenn ein ThirdParty in einem Stellvertretungszugriffsszenario eine Besprechungsanfrage an einen Prinzipal sendet, der über eine Stellvertretung verfügt, wird der Stellvertretung eine neue Besprechungsanfrage angezeigt. Mit diesen Elementen können Stellvertretungen zwischen Nachrichten unterscheiden, die direkt an sie gesendet werden, und Nachrichten, die aufgrund einer Stellvertretungsweiterleitungsregel an sie gesendet werden.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

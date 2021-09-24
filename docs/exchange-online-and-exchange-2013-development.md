@@ -3,15 +3,15 @@ title: Exchange Online- und Exchange 2013-Entwicklung (veraltet)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f33d1093-75ba-4ff2-8d15-b0bf73a401bf
 description: Diese Seite ist veraltet. Die neuesten Updates finden Sie im Thema der Exchange Online- und Exchange-Entwicklung.
-ms.openlocfilehash: 16f6cc4a317b2eeb661c0bbd81192aac292ba377
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 1dc76ad654447ac7615eb6ed8dd9aa335ddd62e2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456234"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520234"
 ---
 # <a name="exchange-online-and-exchange-2013-development"></a>Exchange Online- und Exchange 2013-Entwicklung
 

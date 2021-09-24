@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: aac6dc31-edd2-49d7-b845-1df4d77da58c
-description: Das UserSetting (SOAP)-Element stellt eine Einstellung eines einzelnen Benutzers dar.
-ms.openlocfilehash: 8b9bb41e460c0c9d15c9823acb509b0f837eef32
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das UserSetting (SOAP)-Element stellt eine einzelne Benutzereinstellung dar.
+ms.openlocfilehash: e59f997f925f7d9885fab27df618d474269eacac
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459770"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538492"
 ---
 # <a name="usersetting-soap"></a>UserSetting (SOAP)
 
-Das [UserSetting (SOAP)-](usersetting-soap.md) Element stellt eine Einstellung eines einzelnen Benutzers dar. 
+Das [UserSetting (SOAP)-Element](usersetting-soap.md) stellt eine einzelne Benutzereinstellung dar. 
   
 ```XML
 <UserSetting>
@@ -56,8 +56,8 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 

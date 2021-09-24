@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 880af57e-0fa1-473c-b87c-f02f1133ba5e
-description: Das ReplyAllowed-Element gibt an, ob eine Antwort für rechteverwaltete Daten zulässig ist.
-ms.openlocfilehash: f9aa97fc5d85837323d6d9e3e1e13c7b9fd11715
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ReplyAllowed-Element gibt an, ob eine Antwort für Daten mit verwalteten Rechten zulässig ist.
+ms.openlocfilehash: 44de73f641b864dcf2c9f7d37882133407a32a39
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529861"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513360"
 ---
 # <a name="replyallowed"></a>ReplyAllowed
 
-Das **ReplyAllowed** -Element gibt an, ob eine Antwort für rechteverwaltete Daten zulässig ist. 
+Das **ReplyAllowed-Element** gibt an, ob eine Antwort für Daten mit verwalteten Rechten zulässig ist. 
   
 ```XML
 <ReplyAllowed> true | false </ReplyAllowed>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **ReplyAllowed** -Element gibt an, dass Antworten für die Rechte verwalteten Daten zulässig sind. Der Wert **false** gibt an, dass Antworten nicht zulässig sind. 
+Der Textwert  true für das **ReplyAllowed-Element** gibt an, dass Antworten für die verwalteten Rechte zulässig sind. Der Wert **"false"** gibt an, dass Antworten nicht zulässig sind. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

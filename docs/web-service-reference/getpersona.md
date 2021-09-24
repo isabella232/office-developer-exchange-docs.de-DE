@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ea5b3ce2-40db-41e8-a8cd-934e8f72e782
-description: Das getpersona-Element enthält die Anforderung zum Abrufen einer Persona.
-ms.openlocfilehash: 8e31e2688b9313d7db6c73e2d1f92e8d7cf4f246
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GetPersona-Element enthält die Anforderung zum Abrufen einer Persona.
+ms.openlocfilehash: 401a1a302a4894e5e7e6a908c2912d5322195e53
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455611"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533546"
 ---
 # <a name="getpersona"></a>GetPersona
 
-Das **getpersona** -Element enthält die Anforderung zum Abrufen einer Persona. 
+Das **GetPersona-Element** enthält die Anforderung zum Abrufen einer Persona. 
   
 ```XML
 <GetPersona>
@@ -25,7 +25,7 @@ Das **getpersona** -Element enthält die Anforderung zum Abrufen einer Persona.
 </GetPersona>
 ```
 
- **Getpersonatype**
+ **GetPersonaType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,7 +42,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -54,7 +54,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

@@ -3,15 +3,15 @@ title: Importieren von Elementen mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dd3d3221-c98e-4fa0-81f0-77f733d2f432
 description: Informationen zum Importieren von Terminen, E-Mails, Kontakten, Aufgaben und anderen Elemente mithilfe der verwalteten EWS-API oder EWS in Exchange.
-ms.openlocfilehash: bc874c667c31beb4e59a305626247488cb1a1781
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 1e111a03f43c7c6ea30ab0dedf5cc0bb5c6a41f8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527985"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513164"
 ---
 # <a name="import-items-by-using-ews-in-exchange"></a>Importieren von Elementen mithilfe von EWS in Exchange
 

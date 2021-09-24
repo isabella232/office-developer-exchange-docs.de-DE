@@ -1,27 +1,27 @@
 ---
-title: Month (Zeitzonenübergang)
+title: Monat (Zeitzonenübergang)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Month
 api_type:
 - schema
 ms.assetid: 5e6aac75-366d-43d0-8ccb-956285474662
 description: Das Month-Element stellt den Monat dar, in dem der Zeitzonenübergang erfolgt.
-ms.openlocfilehash: 1fa32ea355cc3fe826f9c34b2fd147a0d8201673
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 36cf19dc8bf0953e8b198d2626bdfda4febbbb95
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467739"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520409"
 ---
-# <a name="month-time-zone-transition"></a>Month (Zeitzonenübergang)
+# <a name="month-time-zone-transition"></a>Monat (Zeitzonenübergang)
 
-Das **Month** -Element stellt den Monat dar, in dem der Zeitzonenübergang erfolgt. 
+Das **Month-Element** stellt den Monat dar, in dem der Zeitzonenübergang erfolgt. 
   
 ```xml
 <Month/>
@@ -44,16 +44,16 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RecurringDateTransition](recurringdatetransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der jedes Jahr an einem bestimmten Datum auftritt.  <br/> |
-|[RecurringDayTransition](recurringdaytransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der an demselben Tag jedes Jahr erfolgt.  <br/> |
+|[RecurringDateTransition](recurringdatetransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der jedes Jahr an einem bestimmten Datum stattfindet.  <br/> |
+|[RecurringDayTransition](recurringdaytransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der jedes Jahr am selben Tag erfolgt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist ein Integer-Wert, der den Monat darstellt, in dem der Zeitzonenübergang erfolgt.
+Der Textwert ist eine ganze Zahl, die den Monat darstellt, in dem der Zeitzonenübergang erfolgt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

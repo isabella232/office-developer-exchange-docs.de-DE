@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4e8aa3b3-4bfc-40c3-b96b-9f7062b09309
-description: Das GetOrganizationRelationshipSettingsRequest-Element stellt die Parameter eines Aufrufs an den GetOrganizationRelationshipSettings-Vorgang (SOAP) dar. Das GetOrganizationRelationshipSettingsRequest-Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet.
-ms.openlocfilehash: 053bbb8cbe2ccdcf6d544ab1fc92bb81765997e1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GetOrganizationRelationshipSettingsRequest-Element stellt die Parameter eines Aufrufs des SOAP-Vorgangs (GetOrganizationRelationshipSettings) dar. Das GetOrganizationRelationshipSettingsRequest-Element ist nur für die interne Verwendung vorgesehen. Dieses Element wird von Clients nicht verwendet.
+ms.openlocfilehash: 78040231709048f4547a514400019f2bad136b12
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44452734"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513556"
 ---
 # <a name="getorganizationrelationshipsettingsrequest-soap"></a>GetOrganizationRelationshipSettingsRequest (SOAP)
 
-Das **GetOrganizationRelationshipSettingsRequest** -Element stellt die Parameter eines Aufrufs an den [GetOrganizationRelationshipSettings-Vorgang (SOAP)](getorganizationrelationshipsettings-operation-soap.md) dar. Das **GetOrganizationRelationshipSettingsRequest** -Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet. 
+Das **GetOrganizationRelationshipSettingsRequest-Element** stellt die Parameter eines Aufrufs des [SOAP-Vorgangs (GetOrganizationRelationshipSettings)](getorganizationrelationshipsettings-operation-soap.md) dar. Das **GetOrganizationRelationshipSettingsRequest-Element** ist nur für die interne Verwendung vorgesehen. Dieses Element wird von Clients nicht verwendet. 
   
 ```XML
 <GetOrganizationRelationshipSettingsRequest>
@@ -37,20 +37,20 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Domänen (SOAP)](domains-soap.md) <br/> |Stellt eine Auflistung von Domänen-IDs dar.  <br/> |
+|[Domänen (SOAP)](domains-soap.md) <br/> |Stellt eine Auflistung von Domänenbezeichnern dar.  <br/> |
 |||
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

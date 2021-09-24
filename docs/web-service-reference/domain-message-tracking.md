@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Domain
 api_type:
 - schema
 ms.assetid: 4e8e9efa-8885-4ca5-bf90-424e63768dc3
 description: Das Domain-Element stellt die Domäne dar, nach der gesucht werden soll.
-ms.openlocfilehash: 77da9028766881b9bc633e1b3318cd4d70c6b72f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 9ba07f452a096b9dc982f6a6088cd16cbf41ec8d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457025"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520855"
 ---
 # <a name="domain-message-tracking"></a>Domäne (Nachrichtenverfolgung)
 
-Das **Domain** -Element stellt die Domäne dar, nach der gesucht werden soll. 
+Das **Domain-Element** stellt die Domäne dar, nach der gesucht werden soll. 
   
 ```XML
 <Domain/>
@@ -50,7 +50,7 @@ Keine.
 
 Ein Textwert, der eine Zeichenfolge darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -60,7 +60,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

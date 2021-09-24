@@ -3,32 +3,32 @@ title: Synchronisieren von Elementen unter Verwendung von EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 886e7d35-9096-480b-8a8c-a7db27da06c2
-description: Erfahren Sie, wie Sie mithilfe der verwaltete EWS-API oder EWS eine Liste aller Elemente in einem Ordner oder eine Liste der Änderungen abrufen können, die in einem Ordner aufgetreten sind, um den Client zu synchronisieren.
-ms.openlocfilehash: e75f90b2d28d782465de89000796deccdd125e25
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Erfahren Sie, wie Sie die verwaltete EWS-API oder EWS verwenden, um eine Liste aller Elemente in einem Ordner oder eine Liste der Änderungen abzurufen, die in einem Ordner aufgetreten sind, um Ihren Client zu synchronisieren.
+ms.openlocfilehash: 82d9304f4060583a5bbffdcf4020c5822ab7c006
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527712"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513080"
 ---
 # <a name="synchronize-items-by-using-ews-in-exchange"></a>Synchronisieren von Elementen unter Verwendung von EWS in Exchange
 
-Erfahren Sie, wie Sie mithilfe der verwaltete EWS-API oder EWS eine Liste aller Elemente in einem Ordner oder eine Liste der Änderungen abrufen können, die in einem Ordner aufgetreten sind, um den Client zu synchronisieren.
+Erfahren Sie, wie Sie die verwaltete EWS-API oder EWS verwenden, um eine Liste aller Elemente in einem Ordner oder eine Liste der Änderungen abzurufen, die in einem Ordner aufgetreten sind, um Ihren Client zu synchronisieren.
   
-EWS in Exchange verwendet die Element Synchronisierung und die Ordnersynchronisierung zum Synchronisieren von Postfachinhalten zwischen dem Client und dem Server. Die Element Synchronisierung Ruft die anfängliche Liste der Elemente in einem Ordner ab und ruft dann im Laufe der Zeit Änderungen ab, die an diesen Elementen vorgenommen wurden, und ruft auch neue Elemente ab.
+EWS in Exchange verwendet die Elementsynchronisierung und Ordnersynchronisierung, um Postfachinhalte zwischen Client und Server zu synchronisieren. Die Elementsynchronisierung ruft die anfängliche Liste der Elemente in einem Ordner ab und ruft dann im Laufe der Zeit Änderungen ab, die an diesen Elementen vorgenommen wurden, und ruft auch neue Elemente ab.
   
-Beachten Sie, dass Sie zunächst [die Ordnerhierarchie synchronisieren](how-to-synchronize-folders-by-using-ews-in-exchange.md)müssen, bevor Sie Elemente mit einem Client synchronisieren können. Nachdem die Ordnerhierarchie auf dem Client vorhanden ist, wenn Sie die Element Synchronisierung mithilfe des verwaltete EWS-API durchführen, rufen Sie zunächst die erste [Liste der Elemente im Posteingang](#bk_cesyncongoingewsma) mithilfe der [Datei "ExchangeService. SyncFolderItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) -Methode ab. Anschließend aktualisieren Sie den Wert des Parameters _cSyncState_ bei nachfolgenden Aufrufen, um die Liste der geänderten Elemente im Posteingang abzurufen. 
+Beachten Sie, dass Sie zuerst die [Ordnerhierarchie synchronisieren](how-to-synchronize-folders-by-using-ews-in-exchange.md)müssen, bevor Sie Elemente mit einem Client synchronisieren können. Nachdem die Ordnerhierarchie auf dem Client eingerichtet wurde, rufen Sie, wenn Sie die Elementsynchronisierung mithilfe der verwalteten EWS-API durchführen, zuerst [die anfängliche Liste der Elemente im Posteingang](#bk_cesyncongoingewsma) mithilfe der [ExchangeService.SyncFolderItems-Methode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) ab. Anschließend aktualisieren Sie den Wert des  _cSyncState-Parameters_ bei nachfolgenden Aufrufen, um die Liste der geänderten Elemente im Posteingang abzurufen. 
   
-Wenn Sie die Element Synchronisierung mithilfe von EWS ausführen möchten, fordern Sie nach dem [Synchronisieren der Ordnerhierarchie](how-to-synchronize-folders-by-using-ews-in-exchange.md)die [anfängliche Liste der Elemente im Posteingang](#bk_ewsexamplea) an, indem Sie den [SyncFolderItems-Vorgang](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx)verwenden, die Antwort analysieren und dann zu einem späteren Zeitpunkt [die Änderungen an den Elementen im Postfach abrufen](#bk_ewsexamplec)und die Antwort analysieren. Nachdem der Client die Liste der anfänglichen oder geänderten Elemente empfangen hat, werden [Aktualisierungen lokal vorgenommen](#bk_nextsteps). Wie und wann Sie Änderungen in der Zukunft abrufen, hängt vom [Synchronisierungs Entwurfsmuster](mailbox-synchronization-and-ews-in-exchange.md#bk_syncpatterns) ab, das Ihre Anwendung verwendet. 
+Um die Elementsynchronisierung mithilfe von EWS durchzuführen, fordern Sie nach [dem Synchronisieren der Ordnerhierarchie](how-to-synchronize-folders-by-using-ews-in-exchange.md)die [anfängliche Liste der Elemente im Posteingang](#bk_ewsexamplea) mithilfe des [SyncFolderItems-Vorgangs](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx)an, analysieren die Antwort und rufen dann zu einem bestimmten Zeitpunkt in der Zukunft [die Änderungen an den Elementen im Postfach](#bk_ewsexamplec)ab und analysieren die Antwort. Nachdem der Client die Liste der anfänglichen oder geänderten Elemente erhalten hat, nimmt er [lokal Updates vor.](#bk_nextsteps) Wie und wann Sie änderungen in der Zukunft abrufen, hängt vom [Synchronisierungsentwurfsmuster](mailbox-synchronization-and-ews-in-exchange.md#bk_syncpatterns) ab, das Ihre Anwendung verwendet. 
   
-## <a name="get-the-list-of-all-items-or-changed-items-by-using-the-ews-managed-api"></a>Abrufen der Liste aller Elemente oder geänderten Elemente mithilfe der verwaltete EWS-API
+## <a name="get-the-list-of-all-items-or-changed-items-by-using-the-ews-managed-api"></a>Abrufen der Liste aller Elemente oder geänderten Elemente mithilfe der verwalteten EWS-API
 <a name="bk_cesyncongoingewsma"> </a>
 
-Im folgenden Codebeispiel wird gezeigt, wie Sie eine anfängliche Liste aller Elemente im Posteingangsordner erhalten und dann eine Liste der Änderungen an Elementen im Posteingangsordner erhalten, die seit der vorherigen Synchronisierung aufgetreten sind. Legen Sie beim ersten Aufruf der [SyncFolderItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) -Methode den _cSyncState_ -Wert auf NULL fest. Wenn die Methode abgeschlossen ist, speichern Sie den _cSyncState_ -Wert lokal, um ihn im nächsten Aufruf der **SyncFolderItems** -Methode zu verwenden. Sowohl in der ersten als auch in den nachfolgenden Aufrufen werden die Elemente in 10-Batches abgerufen, indem aufeinanderfolgende Aufrufe der **SyncFolderItems** -Methode verwendet werden, bis keine weiteren Änderungen mehr bestehen. 
+Das folgende Codebeispiel zeigt, wie Sie eine anfängliche Liste aller Elemente im Ordner Posteingang abrufen und dann eine Liste der Änderungen an Elementen im Posteingangsordner abrufen, die seit der vorherigen Synchronisierung aufgetreten sind. Legen Sie während des anfänglichen Aufrufs der [SyncFolderItems-Methode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) den  _cSyncState-Wert_ auf NULL fest. Wenn die Methode abgeschlossen ist, speichern Sie den  _cSyncState-Wert_ lokal, um ihn im nächsten **SyncFolderItems-Methodenaufruf** zu verwenden. Sowohl beim anfänglichen Aufruf als auch bei den nachfolgenden Aufrufen werden die Elemente in Batches von zehn abgerufen, indem aufeinanderfolgende Aufrufe der **SyncFolderItems-Methode** verwendet werden, bis keine weiteren Änderungen verbleiben. 
   
-In diesem Beispiel wird der _PropertySet-_ Parameter auf IdOnly festgelegt, um Aufrufe an die Exchange-Datenbank zu reduzieren, was eine [bewährte Synchronisierungsmethode](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)ist. In diesem Beispiel wird davon ausgegangen, dass **Dienst** eine gültige **Datei "ExchangeService** -Objektbindung ist und dass _cSyncState_ den Synchronisierungs Zustand darstellt, der von einem vorherigen Aufruf von **SyncFolderItems**zurückgegeben wurde. 
+In diesem Beispiel wird der _parameter propertySet_ auf IdOnly festgelegt, um Aufrufe der Exchange Datenbank zu reduzieren, was eine bewährte Methode für die [Synchronisierung](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)ist. In diesem Beispiel wird davon ausgegangen, dass **der Dienst** eine gültige **ExchangeService-Objektbindung** ist und dass cSyncState den  _Synchronisierungsstatus_ darstellt, der von einem vorherigen Aufruf von **SyncFolderItems** zurückgegeben wurde. 
   
 ```cs
 // Track whether there are more items available for download on the server.
@@ -74,14 +74,14 @@ while (moreChangesAvailable);
 
 ```
 
-Die **SyncFolderItems** -Methode ähnelt der [FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) -Methode darin, dass Sie keine Eigenschaften wie [Body](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.body%28v=exchg.80%29.aspx) oder [Attachments](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.attachments%28v=exchg.80%29.aspx)zurückgeben kann. Wenn Sie Eigenschaften benötigen, die von der **SyncFolderItems** -Methode nicht zurückgegeben werden können, geben Sie beim Aufrufen **von SyncFolderItems**den [IdOnly](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset.idonly%28v=exchg.80%29.aspx) -Eigenschaftswert an, und verwenden Sie dann die [Datei "ExchangeService. LoadPropertiesForItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.loadpropertiesforitems%28v=exchg.80%29.aspx) -Methode, um die Eigenschaften abzurufen, die Sie für die Elemente benötigen, die von der **SyncFolderItems** -Methode zurückgegeben wurden. 
+Die **SyncFolderItems** -Methode ähnelt der [FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) -Methode, da sie keine Eigenschaften wie [Body](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.body%28v=exchg.80%29.aspx) oder [Attachments](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.attachments%28v=exchg.80%29.aspx)zurückgeben kann. Wenn Sie Eigenschaften benötigen, die von der **SyncFolderItems-Methode** nicht zurückgegeben werden können, geben Sie den [IdOnly-Eigenschaftensatz](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset.idonly%28v=exchg.80%29.aspx) beim Aufrufen von **SyncFolderItems** an, und verwenden Sie dann die [ExchangeService.LoadPropertiesForItems-Methode,](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.loadpropertiesforitems%28v=exchg.80%29.aspx) um die Eigenschaften abzurufen, die Sie für die elemente benötigen, die von der **SyncFolderItems-Methode** zurückgegeben wurden. 
   
-Nachdem Sie die Liste der neuen oder geänderten Elemente auf dem Server abgerufen haben, [erstellen oder aktualisieren Sie die Elemente auf dem Client](#bk_nextsteps).
+Nachdem Sie die Liste der neuen oder geänderten Elemente auf dem Server abgerufen haben, erstellen oder aktualisieren Sie [die Elemente auf dem Client.](#bk_nextsteps)
   
 ## <a name="get-the-initial-list-of-items-by-using-ews"></a>Abrufen der anfänglichen Liste von Elementen mithilfe von EWS
 <a name="bk_ewsexamplea"> </a>
 
-Das folgende Beispiel zeigt die XML-Anforderung zum Abrufen der anfänglichen Liste der Elemente im Posteingang mithilfe des [SyncFolderItems-Vorgangs](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx). Dies ist auch die XML-Anforderung, die vom verwaltete EWS-API gesendet wird, wenn [die Liste der Elemente mithilfe der SyncFolderItems-Methode abgerufen](#bk_cesyncongoingewsma)wird. Das [von "SyncState](https://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) -Element des **SyncFolderItems** -Vorgangs ist nicht enthalten, da dies die anfängliche Synchronisierung ist. In diesem Beispiel wird das [BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) -Element auf **IdOnly** festgelegt, um Aufrufe an die Exchange-Datenbank zu reduzieren, was eine [bewährte Synchronisierungsmethode](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)ist.
+Das folgende Beispiel zeigt die XML-Anforderung zum Abrufen der anfänglichen Liste der Elemente im Posteingang mithilfe des [SyncFolderItems-Vorgangs.](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn [die Liste der Elemente mithilfe der SyncFolderItems-Methode abgerufen](#bk_cesyncongoingewsma)wird. Das [SyncState-Element](https://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) des **SyncFolderItems-Vorgangs** ist nicht enthalten, da dies die erste Synchronisierung ist. In diesem Beispiel wird das [BaseShape-Element](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) auf **IdOnly** festgelegt, um Aufrufe der Exchange Datenbank zu reduzieren, was eine bewährte Methode für die [Synchronisierung](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)ist.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -109,7 +109,7 @@ Das folgende Beispiel zeigt die XML-Anforderung zum Abrufen der anfänglichen Li
 
 <a name="bk_responsesyncfolderitems"> </a>
 
-Das folgende Beispiel zeigt die XML-Antwort, die vom Server zurückgegeben wird, nachdem die **SyncFolderItems** -Vorgangsanforderung vom Client verarbeitet wurde. Die anfängliche Antwort umfasst [Create](https://msdn.microsoft.com/library/cb5e64a2-66a5-4447-921e-7c13efb8f6bf%28Office.15%29.aspx) -Elemente für fünf Elemente, da alle Elemente während einer anfänglichen Synchronisierung als neu betrachtet werden. Die Werte für einige Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt. 
+Das folgende Beispiel zeigt die XML-Antwort, die vom Server zurückgegeben wird, nachdem die **SyncFolderItems-Vorgangsanforderung** vom Client verarbeitet wurde. Die erste Antwort enthält [Create-Elemente](https://msdn.microsoft.com/library/cb5e64a2-66a5-4447-921e-7c13efb8f6bf%28Office.15%29.aspx) für fünf Elemente, da alle Elemente während einer ersten Synchronisierung als neu betrachtet werden. Die Werte für einige Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -173,12 +173,12 @@ Das folgende Beispiel zeigt die XML-Antwort, die vom Server zurückgegeben wird,
 </s:Envelope>
 ```
 
-Nachdem Sie die Liste der neuen Elemente auf dem Server abgerufen haben, [Erstellen Sie die Elemente auf dem Client](#bk_nextsteps).
+Nachdem Sie die Liste der neuen Elemente auf dem Server abgerufen haben, [erstellen Sie die Elemente auf dem Client.](#bk_nextsteps)
   
 ## <a name="get-the-changes-since-the-last-sync-by-using-ews"></a>Abrufen der Änderungen seit der letzten Synchronisierung mithilfe von EWS
 <a name="bk_ewsexamplec"> </a>
 
-Das folgende Beispiel zeigt die XML-Anforderung zum Abrufen der Liste der Änderungen an Elementen im Posteingang mithilfe des [SyncFolderItems](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) -Vorgangs. Dies ist auch die XML-Anforderung, die vom verwaltete EWS-API gesendet wird, wenn [die Liste der Änderungen im Posteingang abgerufen](#bk_cesyncongoingewsma)wird. In diesem Beispiel wird der Wert des [von "SyncState](https://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) -Elements auf den in der [vorherigen Antwort](#bk_responsesyncfolderitems)zurückgegebenen Wert festgelegt. In diesem Beispiel wird das [BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) -Element zu Demonstrationszwecken auf **allproperties** statt auf **IdOnly** festgelegt, um die zurückgegebenen zusätzlichen Eigenschaften anzuzeigen. Das Festlegen des [BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) -Elements auf **IdOnly** ist eine [bewährte Methode](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)für die Synchronisierung. Der Wert von **von "SyncState** wurde zur Lesbarkeit gekürzt. 
+Das folgende Beispiel zeigt die XML-Anforderung zum Abrufen der Liste der Änderungen an Elementen im Posteingang mithilfe des [SyncFolderItems-Vorgangs.](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn [die Liste der Änderungen an den Posteingang abgerufen](#bk_cesyncongoingewsma)wird. In diesem Beispiel wird der [SyncState-Elementwert](https://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) auf den Wert festgelegt, der in der [vorherigen Antwort](#bk_responsesyncfolderitems)zurückgegeben wurde. Zu Demonstrationszwecken wird in diesem Beispiel das [BaseShape-Element](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) auf **AllProperties** anstelle von **IdOnly** festgelegt, um die zurückgegebenen zusätzlichen Eigenschaften anzuzeigen. Das Festlegen des [BaseShape-Elements](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) auf **IdOnly** ist eine bewährte Methode für [die Synchronisierung.](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices) Der Wert von **SyncState** wurde zur besseren Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -205,7 +205,7 @@ Das folgende Beispiel zeigt die XML-Anforderung zum Abrufen der Liste der Änder
 </soap:Envelope>
 ```
 
-Das folgende Beispiel zeigt die XML-Antwort, die vom Server zurückgegeben wird, nachdem die **SyncFolderItems** -Vorgangsanforderung vom Client verarbeitet wurde. Diese Antwort gibt an, dass ein Element aktualisiert wurde, zwei Elemente erstellt wurden, die Lese Markierung eines Elements geändert wurde und ein Element seit der vorherigen Synchronisierung gelöscht wurde. Die Werte für einige Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt. 
+Das folgende Beispiel zeigt die XML-Antwort, die vom Server zurückgegeben wird, nachdem die **SyncFolderItems-Vorgangsanforderung** vom Client verarbeitet wurde. Diese Antwort gibt an, dass ein Element aktualisiert wurde, zwei Elemente erstellt wurden, das Lesekennzeichen eines Elements geändert wurde und ein Element seit der vorherigen Synchronisierung gelöscht wurde. Die Werte für einige Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -420,16 +420,16 @@ Das folgende Beispiel zeigt die XML-Antwort, die vom Server zurückgegeben wird,
 </s:Envelope>
 ```
 
-Die **SyncFolderItems** -Operation ähnelt der [FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) -Methode darin, dass Sie keine Elemente wie die Elemente [Body](https://msdn.microsoft.com/library/7851ea9b-9f87-4adc-a26f-7a27df4a9bca%28Office.15%29.aspx) oder [Attachments](https://msdn.microsoft.com/library/b470e614-34bb-44f0-8790-7ddbdcbbd29d%28Office.15%29.aspx) zurückgeben kann. Wenn Sie Eigenschaften benötigen, die nicht vom **SyncFolderItems** -Vorgang zurückgegeben werden können, legen Sie den Wert des [BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) -Elements auf IdOnly fest, wenn Sie **SyncFolderItems**aufrufen, und verwenden Sie dann den [GetItem-Vorgang](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) , um die Eigenschaften abzurufen, die Sie für die Elemente benötigen, die von der **SyncFolderItems** -Operation zurückgegeben wurden. 
+Der **SyncFolderItems-Vorgang** ähnelt der [FindItems-Methode,](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) da er keine Elemente wie die Elemente ["Body"](https://msdn.microsoft.com/library/7851ea9b-9f87-4adc-a26f-7a27df4a9bca%28Office.15%29.aspx) oder ["Attachments"](https://msdn.microsoft.com/library/b470e614-34bb-44f0-8790-7ddbdcbbd29d%28Office.15%29.aspx) zurückgeben kann. Wenn Sie Eigenschaften benötigen, die vom **SyncFolderItems-Vorgang** nicht zurückgegeben werden können, legen Sie den Wert des [BaseShape-Elements](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) auf IdOnly fest, wenn Sie **SyncFolderItems** aufrufen, und verwenden Sie dann den [GetItem-Vorgang,](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) um die Eigenschaften abzurufen, die Sie für die Elemente benötigen, die vom **SyncFolderItems-Vorgang** zurückgegeben wurden. 
   
-Nachdem Sie die Liste der geänderten Elemente auf dem Server abgerufen haben, [Aktualisieren Sie die Elemente auf dem Client](#bk_nextsteps).
+Nachdem Sie die Liste der geänderten Elemente auf dem Server abgerufen haben, [aktualisieren Sie die Elemente auf dem Client.](#bk_nextsteps)
   
 ## <a name="update-the-client"></a>Aktualisieren des Clients
 <a name="bk_nextsteps"> </a>
 
-Wenn Sie die verwaltete EWS-API verwenden, nachdem Sie die Liste der neuen oder geänderten Elemente abgerufen haben, verwenden Sie die [LoadPropertiesForItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.loadpropertiesforitems%28v=exchg.80%29.aspx) -Methode, um Eigenschaften für die neuen oder geänderten Elemente abzurufen, die Eigenschaften mit den lokalen Werten zu vergleichen und die Elemente auf dem Client zu aktualisieren. 
+Wenn Sie die verwaltete EWS-API verwenden, verwenden Sie nach dem Abrufen der Liste neuer oder geänderter Elemente die [LoadPropertiesForItems-Methode,](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.loadpropertiesforitems%28v=exchg.80%29.aspx) um Eigenschaften für die neuen oder geänderten Elemente abzurufen, die Eigenschaften mit den lokalen Werten zu vergleichen und die Elemente auf dem Client zu aktualisieren. 
   
-Wenn Sie EWS verwenden, verwenden Sie den [GetItem-Vorgang](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) , um Eigenschaften für die neuen oder geänderten Elemente abzurufen und die Elemente auf dem Client zu aktualisieren. 
+Wenn Sie EWS verwenden, verwenden Sie den [GetItem-Vorgang,](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) um Eigenschaften für die neuen oder geänderten Elemente abzurufen und die Elemente auf dem Client zu aktualisieren. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsCancelled
 api_type:
 - schema
 ms.assetid: 50c1e97f-2913-47a1-8457-60428a3c5b92
-description: Das IsCanceled-Element gibt an, ob ein Termin oder eine Besprechung abgebrochen wurde.
-ms.openlocfilehash: 946c9d956da9cf31e9fa08d4ab6f4950b11214b9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IsCancelled-Element gibt an, ob ein Termin oder eine Besprechung abgebrochen wurde.
+ms.openlocfilehash: 2fa7033025d6fe86c8ad98cd1eea5c19aa85999d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455569"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512926"
 ---
 # <a name="iscancelled"></a>IsCancelled
 
-Das **IsCanceled** -Element gibt an, ob ein Termin oder eine Besprechung abgebrochen wurde. 
+Das **IsCancelled-Element** gibt an, ob ein Termin oder eine Besprechung abgebrochen wurde. 
   
 ```xml
 <IsCancelled/>
@@ -49,9 +49,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich, wenn dieses Element enthalten ist. Der Wert **true** gibt an, dass das Kalenderelement abgebrochen wurde. Der Wert **false** gibt an, dass ein Kalenderelement nicht abgebrochen wurde. 
+Wenn dieses Element enthalten ist, ist ein Textwert erforderlich, der einen booleschen Wert darstellt. Der Wert **"true"** gibt an, dass das Kalenderelement abgebrochen wurde. Der Wert **"false"** gibt an, dass ein Kalenderelement nicht abgebrochen wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

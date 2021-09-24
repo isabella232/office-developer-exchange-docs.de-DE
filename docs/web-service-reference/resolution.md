@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Resolution
 api_type:
 - schema
 ms.assetid: 573bed4b-d7b1-4baf-b16f-0795cdebf1a7
-description: Das Auflösungs Element enthält eine einzelne aufgelöste Entität.
-ms.openlocfilehash: 63c80f3c8d7dabf7e6dc1494df04c0be821b28bf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Resolution-Element enthält eine einzelne aufgelöste Entität.
+ms.openlocfilehash: 41e37c7224ca269bbd7c37b084806e9b8ecc67f3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468285"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539080"
 ---
 # <a name="resolution"></a>Lösung
 
-Das **Auflösungs** Element enthält eine einzelne aufgelöste Entität. 
+Das **Resolution-Element** enthält eine einzelne aufgelöste Entität. 
   
 [ResolveNamesResponse](resolvenamesresponse.md)
   
@@ -29,7 +29,7 @@ Das **Auflösungs** Element enthält eine einzelne aufgelöste Entität.
   
 [ResolveNamesResponseMessage](resolvenamesresponsemessage.md)
   
-[Resolutionset](resolutionset.md)
+[ResolutionSet](resolutionset.md)
   
 [Lösung](resolution.md)
   
@@ -40,7 +40,7 @@ Das **Auflösungs** Element enthält eine einzelne aufgelöste Entität.
 </Resolution>
 ```
 
- **Resolutiontype**
+ **ResolutionType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -60,9 +60,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Resolutionset](resolutionset.md) <br/> |Enthält ein Array von Auflösungen für einen eindeutigen Namen.  <br/> |
+|[ResolutionSet](resolutionset.md) <br/> |Enthält ein Array von Auflösungen für einen mehrdeutigen Namen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

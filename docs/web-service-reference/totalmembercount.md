@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - TotalMemberCount
 api_type:
 - schema
 ms.assetid: fa86bfa6-10aa-4736-938c-9a23525aef8d
-description: Das TotalMemberCount-Element stellt die Anzahl aller Elemente in einer Gruppe dar.
-ms.openlocfilehash: 3a489dff1e2352a16367238be7b20b204cbc547f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das TotalMemberCount-Element stellt die Anzahl aller Mitglieder in einer Gruppe dar.
+ms.openlocfilehash: 2f5bcf805d5bb20e4f04fb7530ddbdc5a76cbd4b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467515"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538765"
 ---
 # <a name="totalmembercount"></a>TotalMemberCount
 
-Das **TotalMemberCount** -Element stellt die Anzahl aller Elemente in einer Gruppe dar. 
+Das **TotalMemberCount-Element** stellt die Anzahl aller Mitglieder in einer Gruppe dar. 
   
 ```XML
 <TotalMemberCount/>
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Tipps dar.  <br/> |
+|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Typen von E-Mail-Tipps dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist eine ganze Zahl, die die Anzahl der Elemente in einer Gruppe darstellt.
+Der Textwert ist eine ganze Zahl, die die Anzahl der Mitglieder in einer Gruppe darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

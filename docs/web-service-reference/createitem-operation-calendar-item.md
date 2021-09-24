@@ -5,33 +5,33 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateItem
 api_type:
 - schema
 ms.assetid: aa4a7c94-f668-4bd2-8079-c855f6ab17e1
-description: Der CreateItem-Vorgang erstellt Kalenderelemente in der Exchange-Informationsspeicher.
-ms.openlocfilehash: 535edf9fe567bc3063a5b853f01d604ea4c7eb95
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der CreateItem-Vorgang erstellt Kalenderelemente im Exchange Speicher.
+ms.openlocfilehash: 4b2506dd4d5353c7670cab0ddb029e542d5861ba
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457501"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538422"
 ---
 # <a name="createitem-operation-calendar-item"></a>CreateItem-Vorgang (Kalenderelement)
 
-Der CreateItem-Vorgang erstellt Kalenderelemente in der Exchange-Informationsspeicher.
+Der CreateItem-Vorgang erstellt Kalenderelemente im Exchange Speicher.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Mit dem CreateItem-Vorgang werden Termine, Besprechungen und Besprechungsanfragen erstellt. Wenn ein Kalenderelement ohne Teilnehmer erstellt wird, wird es als Termin betrachtet. Wenn Teilnehmer angegeben werden, handelt es sich beim Kalenderelement um eine Besprechung. Wenn eine Besprechung mithilfe des CreateItem-Vorgangs erstellt wird, werden Besprechungsanfragen automatisch an die identifizierten Teilnehmer gesendet, wenn das SendMeetingInvitations-Attribut so festgelegt ist, dass die Besprechungsanfragen gesendet werden.
+Der CreateItem-Vorgang erstellt Termine, Besprechungen und Besprechungsanfragen. Wenn ein Kalenderelement ohne Teilnehmer erstellt wird, wird es als Termin betrachtet. Wenn Teilnehmer angegeben werden, ist das Kalenderelement eine Besprechung. Wenn eine Besprechung mithilfe des CreateItem-Vorgangs erstellt wird, werden Besprechungsanfragen automatisch an die identifizierten Teilnehmer gesendet, wenn das SendMeetingInvitations-Attribut so festgelegt ist, dass die Besprechungsanfragen gesendet werden.
   
-## <a name="createitem-calendar-item-request-example"></a>CreateItem (Calendar Item)-Anforderungs Beispiel
+## <a name="createitem-calendar-item-request-example"></a>CreateItem (Calendar Item)-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer CreateItem-Anforderung wird gezeigt, wie Sie eine Besprechung mit zwei erforderlichen Teilnehmern erstellen. Durch diese Anforderung werden die Besprechungsanfragen an die beiden Teilnehmer gesendet.
+Das folgende Beispiel einer CreateItem-Anforderung zeigt, wie Sie eine Besprechung mit zwei erforderlichen Teilnehmern erstellen. Diese Anforderung sendet die Besprechungsanfragen an die beiden Teilnehmer.
   
 ### <a name="code"></a>Code
 
@@ -79,7 +79,7 @@ Im folgenden Beispiel einer CreateItem-Anforderung wird gezeigt, wie Sie eine Be
 
 ### <a name="comments"></a>Comments
 
-Ein Beispiel dafür, wie Sie auf eine Besprechungsanfrage Antworten, finden Sie im Thema [CreateItem-Vorgang (Besprechungsanfrage)](createitem-operation-meeting-request.md) . 
+Ein Beispiel für die Reaktion auf eine Besprechungsanfrage finden Sie im Thema zum [CreateItem-Vorgang (Besprechungsanfrage).](createitem-operation-meeting-request.md) 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -91,7 +91,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-- [Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 - [CalendarItem](calendaritem.md)
     
@@ -105,13 +105,13 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Start](start.md)
     
-- [End](end-ex15websvcsotherref.md)
+- [Ende ](end-ex15websvcsotherref.md)
     
 - [IsAllDayEvent](isalldayevent.md)
     
 - [LegacyFreeBusyStatus](legacyfreebusystatus.md)
     
-- [Standort](location.md)
+- [Ort](location.md)
     
 - [RequiredAttendees](requiredattendees.md)
     
@@ -159,7 +159,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateItem-Anforde
 
 ### <a name="comments"></a>Comments
 
-Die [ItemID](itemid.md) **-Element-ID** und das **ChangeKey** -Attribut wurden verkürzt, um die Lesbarkeit zu erhalten. 
+Die Attribute [ItemId-Element-ID](itemid.md) und  **ChangeKey** wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
@@ -175,7 +175,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
 - [CalendarItem](calendaritem.md)
     

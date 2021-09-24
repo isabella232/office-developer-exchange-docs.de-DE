@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5fd465b4-6070-4cd0-9ac3-ed9d2bfd5951
-description: Das HasLocationChanged-Element gibt an, ob die Location-Eigenschaft einer Besprechung geändert wurde.
-ms.openlocfilehash: 4f774adcf4a7666f40524931504f1172e15ba24d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das HasLocationChanged-Element gibt an, ob sich die Standorteigenschaft einer Besprechung geändert hat.
+ms.openlocfilehash: f59bca138d0baee87afd12470d9c50704edc75bd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462444"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519548"
 ---
 # <a name="haslocationchanged"></a>HasLocationChanged
 
-Das **HasLocationChanged** -Element gibt an, ob die Location-Eigenschaft einer Besprechung geändert wurde. 
+Das **HasLocationChanged-Element** gibt an, ob sich die Standorteigenschaft einer Besprechung geändert hat. 
   
 ```XML
 <HasLocationChanged> true | false </HasLocationChanged>
@@ -40,13 +40,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ChangeHighlights](changehighlights.md) <br/> |Gibt an, was zwischen zwei Versionen einer Besprechungsanfrage Nachricht geändert wurde.  <br/> |
+|[ChangeHighlights](changehighlights.md) <br/> |Gibt an, was sich zwischen zwei Versionen einer Besprechungsanfrage geändert hat.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **HasLocationChanged** -Element gibt an, dass die Location-Eigenschaft einer Besprechung geändert wurde. Der Wert **false** gibt an, dass die Location-Eigenschaft einer Besprechung nicht geändert wurde. 
+Der Textwert **"true"** für das **HasLocationChanged-Element** gibt an, dass sich die Standorteigenschaft einer Besprechung geändert hat. Der Wert **"false"** gibt an, dass sich die Standorteigenschaft einer Besprechung nicht geändert hat. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

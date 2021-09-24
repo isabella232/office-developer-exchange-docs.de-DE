@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - EnableAlwaysDelete
 api_type:
 - schema
 ms.assetid: 7753aec5-3f93-4aeb-a28e-8b9b42ca7f9b
-description: Das EnableAlwaysDelete-Element gibt ein Flag an, das das Löschen für alle neuen Elemente in einer Unterhaltung ermöglicht.
-ms.openlocfilehash: 14784d3a6ba52c76b64b81e15c0522d66d125cbf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das EnableAlwaysDelete-Element gibt ein Kennzeichen an, das das Löschen für alle neuen Elemente in einer Unterhaltung ermöglicht.
+ms.openlocfilehash: 7b0704ebd7187ac06293589277aefd53f6bceaaa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526207"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520724"
 ---
 # <a name="enablealwaysdelete"></a>EnableAlwaysDelete
 
-Das **EnableAlwaysDelete** -Element gibt ein Flag an, das das Löschen für alle neuen Elemente in einer Unterhaltung ermöglicht. 
+Das **EnableAlwaysDelete-Element** gibt ein Kennzeichen an, das das Löschen für alle neuen Elemente in einer Unterhaltung ermöglicht. 
   
 [ApplyConversationAction](applyconversationaction.md)
   
 [ConversationActions](conversationactions.md)
   
-[Unterhaltung](conversationaction.md)
+[ConversationAction](conversationaction.md)
   
 [EnableAlwaysDelete](enablealwaysdelete.md)
   
@@ -35,7 +35,7 @@ Das **EnableAlwaysDelete** -Element gibt ein Flag an, das das Löschen für alle
 <EnableAlwaysDelete/>
 ```
 
- **xs: Boolean**
+ **xs:boolean**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -52,13 +52,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Unterhaltung](conversationaction.md) <br/> |Enthält eine einzelne Aktion, die auf eine einzelne Unterhaltung angewendet werden soll.  <br/> |
+|[ConversationAction](conversationaction.md) <br/> |Enthält eine einzelne Aktion, die auf eine einzelne Unterhaltung angewendet werden soll.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **EnableAlwaysDelete** -Elements ist **true** , um das Löschen aller Elemente in der Unterhaltung zu ermöglichen; andernfalls **false**.
+Der Textwert des **EnableAlwaysDelete-Elements** ist **"true",** um das Löschen aller Elemente in unterhaltungen zu ermöglichen. andernfalls **false**.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 69d88bb1-397c-4fb8-bd2b-21cccc5bb35d
-description: Das Senders-Element gibt ein Array von Simple Mail Transfer Protocol (SMTP) Adressen an.
-ms.openlocfilehash: 125d448be53b2ae297cd1e7249a04da6eda5d960
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Senders-Element gibt ein Array von SMTP-Adressen (Simple Mail Transfer Protocol) an.
+ms.openlocfilehash: 501b21446787fa5244c09dcea560b8c871ea60e0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530572"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532139"
 ---
 # <a name="senders"></a>Absender
 
-Das **Senders** -Element gibt ein Array von Simple Mail Transfer Protocol (SMTP) Adressen an. 
+Das **Senders-Element** gibt ein Array von SMTP-Adressen (Simple Mail Transfer Protocol) an. 
   
 ```XML
 <Senders>
@@ -42,7 +42,7 @@ Keine.
 
 [FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

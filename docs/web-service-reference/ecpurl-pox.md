@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7cbd6076-9981-4c65-a296-5e57518671b5
-description: Das EcpUrl-Element gibt die URL der Exchange-Systemsteuerung für einen e-Mail-aktivierten Benutzer an.
-ms.openlocfilehash: b761147dc5912652bca2847bd5ec0d305e0624b3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das EcpUrl-Element gibt die URL der Exchange Systemsteuerung für einen E-Mail-aktivierten Benutzer an.
+ms.openlocfilehash: b9f46dd7bcefde8e32c935dbb29f190c26799f5b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461275"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538289"
 ---
 # <a name="ecpurl-pox"></a>EcpUrl (POX)
 
-Das **EcpUrl** -Element gibt die URL der Exchange-Systemsteuerung für einen e-Mail-aktivierten Benutzer an. 
+Das **EcpUrl-Element** gibt die URL der Exchange Systemsteuerung für einen E-Mail-aktivierten Benutzer an. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -48,15 +48,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen zum Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt die URL der Exchange-Systemsteuerung für den Benutzer dar.
+Der Textwert stellt die URL der Exchange Systemsteuerung für den Benutzer dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das **EcpUrl** -Element ist ein optionales untergeordnetes Element des **Protocol** -Elements. 
+Das **EcpUrl-Element** ist ein optionales untergeordnetes Element des **Protocol-Elements.** 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f348e832-47a7-4c14-a5b9-2fc9b47d01e9
-description: Das Received-Element gibt den Zeitpunkt an, zu dem ein Element empfangen wurde.
-ms.openlocfilehash: 32f7148f8d717a51f831aa13d740f1342c943912
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ReceivedTime-Element gibt den Zeitpunkt an, zu dem ein Element empfangen wurde.
+ms.openlocfilehash: 73942b5bdaf2aafbe931a2d6adc6382883285a42
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468215"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534535"
 ---
 # <a name="receivedtime"></a>ReceivedTime
 
-Das **Received** -Element gibt den Zeitpunkt an, zu dem ein Element empfangen wurde. 
+Das **ReceivedTime-Element** gibt den Zeitpunkt an, zu dem ein Element empfangen wurde. 
   
 ```XML
 <ReceivedTime></ReceivedTime>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des Elements **Received** Time ist das Datum und die Uhrzeit, zu der ein Element empfangen wurde. 
+Der Textwert des **ReceivedTime-Elements** ist das Datum und die Uhrzeit, zu der ein Element empfangen wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

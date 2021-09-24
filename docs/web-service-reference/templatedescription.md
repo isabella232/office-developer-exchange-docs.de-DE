@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 95afb55b-a4e8-4b04-9b06-a3a882cb8af5
-description: Das TemplateDescription-Element gibt die Beschreibung der Vorlage für die Rechteverwaltung an.
-ms.openlocfilehash: 0f5443213fa75c5c05b4cba4609130bb1b3f371e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das TemplateDescription-Element gibt die Beschreibung der Rights Management-Vorlage an.
+ms.openlocfilehash: a6ce9b6fad5c00a74548e02bb11279b8ddb0db5f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459945"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520380"
 ---
 # <a name="templatedescription"></a>TemplateDescription
 
-Das **TemplateDescription** -Element gibt die Beschreibung der Vorlage für die Rechteverwaltung an. 
+Das **TemplateDescription-Element** gibt die Beschreibung der Rights Management-Vorlage an. 
   
 ```XML
 <TemplateDescription></TemplateDescription>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **TemplateDescription** -Elements ist die Beschreibung der auf ein Element angewendeten Vorlage für die Rechteverwaltung. 
+Der Textwert des **TemplateDescription-Elements** ist die Beschreibung der Rechteverwaltungsvorlage, die auf ein Element angewendet wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

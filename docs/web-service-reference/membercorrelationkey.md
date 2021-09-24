@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 60cc7094-2e31-49d2-8598-181bcfb5f130
-description: Das MemberCorrelationKey-Element gibt die Bezeichner der Kontakte an, die Teil der Chatgruppe (Instant Messaging) sind.
-ms.openlocfilehash: 8aad013e978f9ddb4fcc31f100010c94f49af139
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Element "MemberCorrelationKey" gibt die Bezeichner der Kontakte an, die Teil der Chatgruppe sind.
+ms.openlocfilehash: df8ab00f7ddbf2d558d5511b53ad6346f7d5da63
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530443"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532404"
 ---
 # <a name="membercorrelationkey"></a>MemberCorrelationKey
 
-Das **MemberCorrelationKey** -Element gibt die Bezeichner der Kontakte an, die Teil der Chatgruppe (Instant Messaging) sind. 
+Das **Element "MemberCorrelationKey"** gibt die Bezeichner der Kontakte an, die Teil der Chatgruppe sind. 
   
 ```XML
 <MemberCorrelationKey>
@@ -41,9 +41,9 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Imgroup](imgroup.md)
+[ImGroup](imgroup.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

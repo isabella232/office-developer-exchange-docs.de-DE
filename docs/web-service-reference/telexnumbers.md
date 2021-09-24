@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 51992f35-54be-4424-8d3f-c3a3a1d05a4d
-description: Das TelexNumbers-Element gibt ein Array von Telex-Nummern und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an.
-ms.openlocfilehash: fc236fe9b1f0229dd2de687e9f2967eefcbf928b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das TelexNumbers-Element gibt ein Array von Telexnummern und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an.
+ms.openlocfilehash: 3280216aab8a9bbe928e904424f35024c71e5785
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459952"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534215"
 ---
 # <a name="telexnumbers"></a>TelexNumbers
 
-Das **TelexNumbers** -Element gibt ein Array von Telex-Nummern und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an. 
+Das **TelexNumbers-Element** gibt ein Array von Telexnummern und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an. 
   
 ```XML
 <TelexNumbers>
@@ -42,7 +42,7 @@ Keine.
 
 [Persona](persona.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -55,6 +55,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

@@ -3,34 +3,34 @@ title: Verarbeiten von Kalenderelementen in Batches in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fb2952e2-cbfe-43ac-b746-f071faa7665c
-description: In diesem Artikel erfahren Sie, wie Sie Batches von Kalenderelementen in einem einzigen Aufruf mithilfe der verwaltete EWS-API oder EWS in Exchange erstellen, abrufen, aktualisieren oder löschen.
-ms.openlocfilehash: 10c5c28e4dda27c9ac9770088db122f0a8e8c101
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Erfahren Sie, wie Sie Batches von Kalenderelementen in einem einzigen Aufruf mithilfe der verwalteten EWS-API oder EWS in Exchange erstellen, abrufen, aktualisieren oder löschen.
+ms.openlocfilehash: 1c4431ab86088d4a8a5d8e2e8378e392786fa8b5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527901"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513108"
 ---
 # <a name="process-calendar-items-in-batches-in-exchange"></a>Verarbeiten von Kalenderelementen in Batches in Exchange
 
-In diesem Artikel erfahren Sie, wie Sie Batches von Kalenderelementen in einem einzigen Aufruf mithilfe der verwaltete EWS-API oder EWS in Exchange erstellen, abrufen, aktualisieren oder löschen.
+Erfahren Sie, wie Sie Batches von Kalenderelementen in einem einzigen Aufruf mithilfe der verwalteten EWS-API oder EWS in Exchange erstellen, abrufen, aktualisieren oder löschen.
 
-Sie können die verwaltete EWS-API oder EWS verwenden, um mit Batches von Terminen und Besprechungen zu arbeiten, um die Anzahl der Anrufe zu reduzieren, die ein Client an einen Exchange-Server tätigt. Wenn Sie das verwaltete EWS-API zum Erstellen, abrufen, aktualisieren und Löschen eines Batches von Kalenderelementen verwenden, verwenden Sie [Datei "ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objektmethoden, während Sie bei der Arbeit mit einzelnen Kalenderelementen [Termin](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) Objektmethoden verwenden. Wenn Sie EWS verwenden, verwenden Sie den gleichen Vorgang für Batch Anrufe, die Sie für einzelne Anrufe verwenden.
+Sie können die verwaltete EWS-API oder EWS verwenden, um mit Batches von Terminen und Besprechungen zu arbeiten, um die Anzahl der Aufrufe zu reduzieren, die ein Client an einen Exchange Server sendet. Wenn Sie die verwaltete EWS-API zum Erstellen, Abrufen, Aktualisieren und Löschen eines Batches von Kalenderelementen verwenden, verwenden Sie [ExchangeService-Objektmethoden,](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) während Sie beim Arbeiten mit einzelnen Kalenderelementen [Appointment-Objektmethoden](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) verwenden. Wenn Sie EWS verwenden, verwenden Sie den gleichen Vorgang für Batchaufrufe, den Sie für einzelne Aufrufe verwenden.
 
-**Tabelle 1. Verwaltete EWS-API Methoden und EWS-Vorgänge zum Arbeiten mit Batches von Kalenderelementen**
+**Tabelle 1. EWS Managed API-Methoden und EWS-Vorgänge zum Arbeiten mit Batches von Kalenderelementen**
 
-|**Gewünschte Aktion**|**Verwenden Sie diese verwaltete EWS-API-Methode**|**Zu verwendender EWS-Vorgang**|
+|**Gewünschte Aktion**|**Verwenden dieser verwalteten EWS-API-Methode**|**Zu verwendender EWS-Vorgang**|
 |:-----|:-----|:-----|
-|Erstellen von Kalenderelementen in Batches  <br/> |[CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
+|Erstellen von Kalenderelementen in Batches  <br/> |[Createitems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
 |Abrufen von Kalenderelementen in Batches  <br/> |[BindToItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
-|Aktualisieren von Kalenderelementen in Batches  <br/> |[Update Items](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
+|Aktualisieren von Kalenderelementen in Batches  <br/> |[UpdateItems](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
 |Löschen von Kalenderelementen in Batches  <br/> |[DeleteItems](https://msdn.microsoft.com/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
 
-In diesem Artikel erfahren Sie, wie Sie grundlegende Aufgaben für Batches von Kalenderelementen mithilfe der verwaltete EWS-API oder EWS ausführen.
+In diesem Artikel erfahren Sie, wie Sie grundlegende Aufgaben für Batches von Kalenderelementen mithilfe der verwalteten EWS-API oder EWS ausführen.
 
-Beachten Sie, dass Sie in den verwaltete EWS-API Beispielen in diesem Artikel, wenn die Methoden nacheinander aufgerufen werden, einen Batch von Kalenderelementen erstellen, abrufen, aktualisieren und dann löschen können.
+Beachten Sie, dass Sie in den EWS Managed API-Beispielen in diesem Artikel, wenn die Methoden nacheinander aufgerufen werden, einen Batch von Kalenderelementen erstellen, abrufen, aktualisieren und dann löschen können.
 
 ```cs
 Collection<ItemId> itemIds = BatchCreateCalendarItems(service);
@@ -40,10 +40,10 @@ BatchDeleteCalendarItemsTwice(service, itemIds);
 
 ```
 
-## <a name="create-calendar-items-in-batches-by-using-the-ews-managed-api"></a>Erstellen von Kalenderelementen in Batches mithilfe der verwaltete EWS-API
+## <a name="create-calendar-items-in-batches-by-using-the-ews-managed-api"></a>Erstellen von Kalenderelementen in Batches mithilfe der verwalteten EWS-API
 <a name="bk_createewsma"> </a>
 
-Sie können Kalenderelemente in Batches mithilfe der [CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) verwaltete EWS-API-Methode erstellen, wie im folgenden Beispiel dargestellt. In diesem Beispiel werden drei [Termin](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) Objekte erstellt – ein Einzelinstanz-Termin, eine Terminserie und eine Besprechung – und diese dann einer Auflistung hinzugefügt.
+Sie können Kalenderelemente in Batches erstellen, indem Sie die verwaltete [CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) EWS-API-Methode verwenden, wie im folgenden Beispiel gezeigt. In diesem Beispiel werden drei [Appointment-Objekte](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) erstellt – ein Termin mit einer Instanz, eine Terminserie und eine Besprechung – und dann einer Auflistung hinzugefügt.
 
 In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben.
 
@@ -122,12 +122,12 @@ return itemIds;
 
 ```
 
-Die [Termin](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) Objekte in der Auflistung können Termine oder Besprechungen sein, und entweder einzelne Instanzen oder eine wiederkehrende Reihe von.
+Bei den [Appointment-Objekten](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) in der Auflistung kann es sich um Termine oder Besprechungen sowie um einzelne Instanzen oder eine terminserie handeln.
 
 ## <a name="create-calendar-items-in-batches-by-using-ews"></a>Erstellen von Kalenderelementen in Batches mithilfe von EWS
 <a name="bk_createews"> </a>
 
-Sie können Kalenderelemente in Batches mithilfe des [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) -EWS-Vorgangs erstellen, wie im folgenden Codebeispiel dargestellt. Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die verwaltete EWS-API verwenden, um [Kalenderelemente in Batches zu erstellen](#bk_createewsma).
+Sie können Kalenderelemente in Batches erstellen, indem Sie den [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) EWS-Vorgang verwenden, wie im folgenden Codebeispiel gezeigt. Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die verwaltete EWS-API zum Erstellen von [Kalenderelementen in Batches](#bk_createewsma)verwenden.
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -206,11 +206,11 @@ Sie können Kalenderelemente in Batches mithilfe des [CreateItem](https://msdn.m
 
 ```
 
-Der Server antwortet auf die **CreateItem** -Anforderung mit einer [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) -Nachricht, die einen [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Wert von **noError** für jedes der neuen Kalenderelemente enthält, wodurch angegeben wird, dass jedes Kalenderelement erfolgreich erstellt wurde.
+Der Server antwortet auf die **CreateItem-Anforderung** mit einer [CreateItemResponse-Nachricht,](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) die den [ResponseCode-Wert](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError** für jedes der neuen Kalenderelemente enthält, der angibt, dass jedes Kalenderelement erfolgreich erstellt wurde.
 
-Beachten Sie, dass es sich bei den Kalenderelementen entweder um Besprechungen oder Termine oder um einzelne Instanzen oder eine wiederkehrende Reihe gemäß den Elementwerten jedes Kalenderelements handelt, das an den Exchange-Server übergeben wird.
+Beachten Sie, dass es sich bei den Kalenderelementen entweder um Besprechungen oder Termine oder einzelne Instanzen oder eine Terminserie handelt, entsprechend den Elementwerten der einzelnen Kalenderelemente, die an den Exchange Server übergeben werden.
 
-Im folgenden finden Sie die Antwort vom Server. Die Attribute **ItemID** und **ChangeKey** werden zur Lesbarkeit gekürzt.
+Es folgt die Antwort vom Server. Die Attribute **ItemId** und ChangeKey werden zur besseren Lesbarkeit gekürzt. 
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -256,10 +256,10 @@ Im folgenden finden Sie die Antwort vom Server. Die Attribute **ItemID** und **C
 
 ```
 
-## <a name="get-calendar-items-in-batches-by-using-the-ews-managed-api"></a>Abrufen von Kalenderelementen in Batches mithilfe der verwaltete EWS-API
+## <a name="get-calendar-items-in-batches-by-using-the-ews-managed-api"></a>Abrufen von Kalenderelementen in Batches mithilfe der verwalteten EWS-API
 <a name="bk_getewsma"> </a>
 
-Sie können Kalenderelemente in Batches abrufen, indem Sie die [BindToItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) verwaltete EWS-API-Methode verwenden, wie im folgenden Beispiel gezeigt.
+Sie können Kalenderelemente in Batches abrufen, indem Sie die verwaltete EWS-API-Methode ["BindToItems"](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) verwenden, wie im folgenden Beispiel gezeigt.
 
 In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben.
 
@@ -313,9 +313,9 @@ public static Collection<Appointment> BatchGetCalendarItems(ExchangeService serv
 ## <a name="get-calendar-items-in-batches-by-using-ews"></a>Abrufen von Kalenderelementen in Batches mithilfe von EWS
 <a name="bk_getews"> </a>
 
-Sie können Kalenderelemente in Batches abrufen, indem Sie den [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) -EWS-Vorgang verwenden, wie im folgenden Beispiel gezeigt. Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die verwaltete EWS-API verwenden, um [Kalenderelemente in Batches abzurufen](#bk_getewsma).
+Sie können Kalenderelemente in Batches abrufen, indem Sie den [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) EWS-Vorgang verwenden, wie im folgenden Beispiel gezeigt. Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die verwaltete EWS-API verwenden, um [Kalenderelemente in Batches abzurufen.](#bk_getewsma)
 
-Die Attribute **ItemID** und **ChangeKey** werden zur Lesbarkeit gekürzt.
+Die Attribute **ItemId** und ChangeKey werden zur besseren Lesbarkeit gekürzt. 
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -355,7 +355,7 @@ Die Attribute **ItemID** und **ChangeKey** werden zur Lesbarkeit gekürzt.
 
 ```
 
-Der Server antwortet auf die **GetItem** -Anforderung mit einer [GetItemResponse](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) -Nachricht mit den angeforderten Eigenschaften für jedes Element, wie im folgenden Beispiel dargestellt.
+Der Server antwortet auf die **GetItem-Anforderung** mit einer [GetItemResponse-Nachricht](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) mit den angeforderten Eigenschaften für jedes Element, wie im folgenden Beispiel gezeigt.
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -474,10 +474,10 @@ Der Server antwortet auf die **GetItem** -Anforderung mit einer [GetItemResponse
 
 ```
 
-## <a name="update-calendar-items-in-batches-by-using-the-ews-managed-api"></a>Aktualisieren von Kalenderelementen in Batches mithilfe der verwaltete EWS-API
+## <a name="update-calendar-items-in-batches-by-using-the-ews-managed-api"></a>Aktualisieren von Kalenderelementen in Batches mithilfe der verwalteten EWS-API
 <a name="bk_updateewsma"> </a>
 
-Sie können Kalenderelement Eigenschaften in Batches aktualisieren, indem Sie die [Update Items](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) verwaltete EWS-API-Methode verwenden, wie im folgenden Beispiel gezeigt.
+Sie können kalenderelementeigenschaften in Batches aktualisieren, indem Sie die verwaltete EWS-API-Methode von [UpdateItems](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) verwenden, wie im folgenden Beispiel gezeigt.
 
 In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben.
 
@@ -530,7 +530,7 @@ public static Collection<ItemId> BatchUpdateCalendarItems(ExchangeService servic
 ## <a name="update-calendar-items-in-batches-by-using-ews"></a>Aktualisieren von Kalenderelementen in Batches mithilfe von EWS
 <a name="bk_updateews"> </a>
 
-Sie können mehrere Kalenderelemente aktualisieren, indem Sie den EWS-Vorgang [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) verwenden, wie im folgenden Codebeispiel dargestellt. Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die verwaltete EWS-API verwenden, um [Kalenderelemente in Batches zu aktualisieren](#bk_updateewsma).
+Sie können mehrere Kalenderelemente mithilfe des [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) EWS-Vorgangs aktualisieren, wie im folgenden Codebeispiel gezeigt. Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die verwaltete EWS-API zum Aktualisieren von [Kalenderelementen in Batches](#bk_updateewsma)verwenden.
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -592,7 +592,7 @@ Sie können mehrere Kalenderelemente aktualisieren, indem Sie den EWS-Vorgang [U
 
 ```
 
-Der Server antwortet auf die **UpdateItem** -Anforderung mit einer [UpdateItemResponse](https://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Wert **noError**enthält, der angibt, dass jedes Update erfolgreich auf dem Server gespeichert wurde. Alle Konflikte werden im [ConflictResult](https://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx) -Element gemeldet.
+Der Server antwortet auf die **UpdateItem-Anforderung** mit einer [UpdateItemResponse-Nachricht,](https://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) die den [ResponseCode-Wert](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError** enthält, der angibt, dass jedes der Updates erfolgreich auf dem Server gespeichert wurde. Alle Konflikte werden im [ConflictResult-Element](https://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx) gemeldet.
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -647,10 +647,10 @@ Der Server antwortet auf die **UpdateItem** -Anforderung mit einer [UpdateItemRe
 
 ```
 
-## <a name="delete-calendar-items-in-batches-by-using-the-ews-managed-api"></a>Löschen von Kalenderelementen in Batches mithilfe der verwaltete EWS-API
+## <a name="delete-calendar-items-in-batches-by-using-the-ews-managed-api"></a>Löschen von Kalenderelementen in Batches mithilfe der verwalteten EWS-API
 <a name="bk_deleteewsma"> </a>
 
-Sie können Kalenderelemente in Batches löschen, indem Sie die [DeleteItems](https://msdn.microsoft.com/library/dd635460%28v=exchg.80%29.aspx) verwaltete EWS-API-Methode verwenden, wie im folgenden Beispiel gezeigt. In diesem Beispiel wird die Löschanforderung ein zweites Mal angezeigt, um anzuzeigen, dass keine Ausnahmen ausgelöst werden, sondern dass der Server einen **ErrorItemNotFound** -Fehler zurückgibt, um anzugeben, dass die zu löschenden Elemente nicht im Speicher waren, als der Anruf getätigt wurde. Dieser Fehler wird zurückgegeben, wenn das Element bereits gelöscht wurde oder wenn eine ungültige Element-ID an den Server übergeben wird.
+Sie können Kalenderelemente in Batches löschen, indem Sie die verwaltete EWS-API-Methode ["DeleteItems"](https://msdn.microsoft.com/library/dd635460%28v=exchg.80%29.aspx) verwenden, wie im folgenden Beispiel gezeigt. In diesem Beispiel wird die Löschanforderung ein zweites Mal gesendet, um anzuzeigen, dass keine Ausnahmen ausgelöst werden, der Server jedoch einen **ErrorItemNotFound-Fehler** zurückgibt, um anzugeben, dass sich die zu löschenden Elemente beim Aufruf nicht im Speicher befanden. Dieser Fehler wird zurückgegeben, wenn das Element bereits gelöscht wurde oder wenn eine ungültige Element-ID an den Server übergeben wird.
 
 In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben.
 
@@ -693,14 +693,14 @@ public static void BatchDeleteCalendarItemsTwice(ExchangeService service, Collec
 
 ```
 
-Wenn die **DeleteItems** -Methode beim zweiten Mal aufgerufen wird, wird keine Ausnahme ausgelöst, aber der Server gibt einen **ErrorItemNotFound** -Fehler im Ergebnis zurück.
+Wenn die **DeleteItems-Methode** zum zweiten Mal aufgerufen wird, wird keine Ausnahme ausgelöst, aber der Server gibt einen **ErrorItemNotFound-Fehler** im Ergebnis zurück.
 
 ## <a name="delete-calendar-items-in-batches-by-using-ews"></a>Löschen von Kalenderelementen in Batches mithilfe von EWS
 <a name="bk_deleteews"> </a>
 
-Sie können Kalenderelemente in Batches löschen, indem Sie den EWS-Vorgang [DeleteItem](../web-service-reference/deleteitem-operation.md) verwenden, wie im folgenden Codebeispiel dargestellt. Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die verwaltete EWS-API verwenden, um [Kalenderelemente in Batches zu löschen](#bk_deleteewsma).
+Sie können Kalenderelemente in Batches mithilfe des [DeleteItem](../web-service-reference/deleteitem-operation.md) EWS-Vorgangs löschen, wie im folgenden Codebeispiel gezeigt. Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die verwaltete EWS-API zum Löschen von [Kalenderelementen in Batches](#bk_deleteewsma)verwenden.
 
-Die Attribute **ItemID** und **ChangeKey** werden zur Lesbarkeit gekürzt.
+Die Attribute **ItemId** und ChangeKey werden zur besseren Lesbarkeit gekürzt. 
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -729,7 +729,7 @@ Die Attribute **ItemID** und **ChangeKey** werden zur Lesbarkeit gekürzt.
 
 ```
 
-Der Server antwortet auf die **DeleteItem** -Anforderung mit einer [DeleteItemResponse](https://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Wert **noError** für jedes entfernte Element enthält.
+Der Server antwortet auf die **DeleteItem-Anforderung** mit einer [DeleteItemResponse-Nachricht,](https://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) die den [ResponseCode-Wert](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **"NoError"** für jedes entfernte Element enthält.
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -761,7 +761,7 @@ Der Server antwortet auf die **DeleteItem** -Anforderung mit einer [DeleteItemRe
 
 ```
 
-Beachten Sie, dass wenn die **DeleteItem** -Anforderung erfolgt, wenn die zugeordneten Elemente bereits gelöscht wurden, keine Ausnahme ausgelöst wird, der Server jedoch einen **ErrorItemNotFound** -Fehler im Ergebnis zurückgibt. Das folgende Beispiel zeigt die Serverantwort auf eine **DeleteItem** -Anforderung, wenn die zugeordneten Elemente bereits gelöscht wurden.
+Beachten Sie, dass beim Ausführen der **DeleteItem-Anforderung,** wenn die zugeordneten Elemente bereits gelöscht wurden, keine Ausnahme ausgelöst wird, der Server jedoch einen **ErrorItemNotFound-Fehler** im Ergebnis zurückgibt. Das folgende Beispiel zeigt die Serverantwort auf eine **DeleteItem-Anforderung,** wenn die zugeordneten Elemente bereits gelöscht wurden.
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -802,9 +802,9 @@ Beachten Sie, dass wenn die **DeleteItem** -Anforderung erfolgt, wenn die zugeor
 ## <a name="verifying-that-a-batch-process-completed-successfully"></a>Überprüfen, ob ein Batchprozess erfolgreich abgeschlossen wurde
 <a name="bk_successful"> </a>
 
-Wenn ein oder mehrere Kalenderelemente in einer Batchanforderung nicht wie angefordert verarbeitet werden können, wird für jedes Kalenderelement, das fehlgeschlagen ist, ein Fehler zurückgegeben, und die restlichen Kalenderelemente im Batch werden wie erwartet verarbeitet. Fehler in der Batchverarbeitung können auftreten, wenn das Element gelöscht wurde und daher nicht gesendet, abgerufen oder aktualisiert werden kann oder wenn das Element in einen anderen Ordner verschoben wurde und daher über eine neue Element-ID verfügt und nicht mit der gesendeten Element-ID geändert werden kann. Die Informationen in diesem Abschnitt zeigen, wie Fehlerdetails zu Fehlern bei der Batchverarbeitung von Kalenderelementen abgerufen werden.
+Wenn ein oder mehrere Kalenderelemente in einer Batchanforderung nicht wie angefordert verarbeitet werden können, wird für jedes fehlgeschlagene Kalenderelement ein Fehler zurückgegeben, und die restlichen Kalenderelemente im Batch werden erwartungsgemäß verarbeitet. Fehler bei der Batchverarbeitung können auftreten, wenn das Element gelöscht wurde und daher nicht gesendet, abgerufen oder aktualisiert werden kann oder wenn das Element in einen anderen Ordner verschoben wurde und daher über eine neue Element-ID verfügt und nicht mit der gesendeten Element-ID geändert werden kann. Die Informationen in diesem Abschnitt zeigen, wie Fehlerdetails zu Fehlern bei der Batchverarbeitung von Kalenderelementen abgerufen werden.
 
-Um den Erfolg eines Batchprozesses mithilfe der verwaltete EWS-API zu überprüfen, können Sie überprüfen, ob die [OverallResult](https://msdn.microsoft.com/library/dd634515%28v=exchg.80%29.aspx) -Eigenschaft des [ServiceResponseCollection](https://msdn.microsoft.com/library/dd633715%28v=exchg.80%29.aspx) gleich [ServiceResult. Success](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx)ist. Wenn dies der Fall ist, wurden alle Kalenderelemente erfolgreich verarbeitet. Wenn **OverallResult** nicht gleich **ServiceResult. Success**ist, wurden mindestens ein Kalenderelement nicht erfolgreich verarbeitet. Jedes der Objekte, die in der **ServiceResponseCollection** zurückgegeben werden, enthält die folgenden Eigenschaften:
+Um den Erfolg eines Batchprozesses mithilfe der verwalteten EWS-API zu überprüfen, können Sie überprüfen, ob die [OverallResult-Eigenschaft](https://msdn.microsoft.com/library/dd634515%28v=exchg.80%29.aspx) der [ServiceResponseCollection](https://msdn.microsoft.com/library/dd633715%28v=exchg.80%29.aspx) gleich [ServiceResult.Success](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx)ist. Wenn ja, wurden alle Kalenderelemente erfolgreich verarbeitet. Wenn das **OverallResult** nicht gleich **ServiceResult.Success** ist, wurden mindestens eines der Kalenderelemente nicht erfolgreich verarbeitet. Jedes der in **ServiceResponseCollection** zurückgegebenen Objekte enthält die folgenden Eigenschaften:
 
 - [ErrorCode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx)
 
@@ -816,9 +816,9 @@ Um den Erfolg eines Batchprozesses mithilfe der verwaltete EWS-API zu überprüf
 
 - [Ergebnis](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx)
 
-Diese Eigenschaften enthalten Informationen dazu, warum die Kalenderelemente nicht wie angefordert verarbeitet werden konnten. In den Beispielen in diesem Artikel werden das **Ergebnis**, **errorCode**und **ErrorMessage** für jedes fehlgeschlagene Element gedruckt. Sie können diese Ergebnisse verwenden, um das Problem zu untersuchen.
+Diese Eigenschaften enthalten Informationen darüber, warum die Kalenderelemente nicht wie angefordert verarbeitet werden konnten. In den Beispielen in diesem Artikel werden die Elemente **Result,** **ErrorCode** und **ErrorMessage** für jedes fehlerhafte Element ausgegeben. Sie können diese Ergebnisse verwenden, um das Problem zu untersuchen.
 
-Überprüfen Sie für EWS das [ResponseClass](https://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx) -Attribut für jedes verarbeitete Element, um den Erfolg eines Batchprozesses zu überprüfen. Im folgenden finden Sie die grundlegende Struktur des **ResponseMessageType**, den Basistyp, von dem alle Antwortnachrichten abgeleitet werden.
+Um den Erfolg eines Batchprozesses zu überprüfen, überprüfen Sie für EWS das [ResponseClass-Attribut](https://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx) für jedes verarbeitete Element. Es folgt die grundlegende Struktur von **ResponseMessageType**, dem Basistyp, von dem alle Antwortnachrichten abgeleitet werden.
 
 ```XML
 <ResponseMessage ResponseClass="Success | Warning | Error">
@@ -829,7 +829,7 @@ Diese Eigenschaften enthalten Informationen dazu, warum die Kalenderelemente nic
 </ResponseMessage>
 ```
 
-Das **ResponseClass** -Attribut wird auf " **Success** " festgelegt, wenn das Kalenderelement erfolgreich verarbeitet wurde, oder **Fehler** , wenn es nicht erfolgreich verarbeitet wurde. Bei Kalenderelementen wird während der Batchverarbeitung keine **Warnung angezeigt** . Wenn der **ResponseClass** **erfolgreich**ist, wird das [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Element, das folgt, auch immer auf **noError**festgelegt. Wenn das **ResponseClass** -Element **fehlerhaft**ist, müssen Sie die Werte der [MessageText](https://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx)-, **Response Code**-und [messagexml verwendet](https://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) -Elemente überprüfen, um zu ermitteln, was das Problem verursacht hat. [DescriptiveLinkKey](https://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) wird derzeit nicht verwendet.
+Das **ResponseClass-Attribut** wird auf **"Success"** festgelegt, wenn das Kalenderelement erfolgreich verarbeitet wurde, oder **auf "Error",** wenn es nicht erfolgreich verarbeitet wurde. Bei Kalenderelementen wird während der Batchverarbeitung keine **Warnung** angezeigt. Wenn **responseClass** **erfolgreich** ist, wird das folgende [ResponseCode -Element](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) auch immer auf **NoError** festgelegt. Wenn **responseClass** **error** ist, müssen Sie die Werte der [Elemente MessageText](https://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx), **ResponseCode** und [MessageXml](https://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) überprüfen, um zu ermitteln, was das Problem verursacht hat. [DescriptiveLinkKey](https://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) wird derzeit nicht verwendet.
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -844,4 +844,4 @@ Das **ResponseClass** -Attribut wird auf " **Success** " festgelegt, wenn das Ka
 
 - [Verarbeiten von Kalenderelementen in Batches in Exchange](how-to-process-calendar-items-in-batches-in-exchange.md)
 
-- [Einschränkungs Auswirkungen auf EWS-Batchanforderungen](ews-throttling-in-exchange.md#throttling-implications-for-ews-batch-requests)
+- [Einschränkungsauswirkungen für EWS-Batchanforderungen](ews-throttling-in-exchange.md#throttling-implications-for-ews-batch-requests)

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 410efc09-5c38-46fb-85b5-eb365be0ba35
-description: Das HomeCity-Element gibt den Ort der Privatadresse der zugeordneten persona an.
-ms.openlocfilehash: 25fccaf0441fa3d9e258ae35f938ad0fc7a5a9eb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das HomeCity-Element gibt die Stadt der Privatadresse der zugeordneten Persona an.
+ms.openlocfilehash: 6704bec857f3978c54774a6a985fa65021120ce1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460869"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537807"
 ---
 # <a name="homecity"></a>HomeCity
 
-Das **HomeCity** -Element gibt den Ort der Privatadresse der zugeordneten persona an. 
+Das **HomeCity-Element** gibt die Stadt der Privatadresse der zugeordneten Persona an. 
   
 ```XML
 <HomeCity></HomeCity>
@@ -40,13 +40,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Persona](persona.md) <br/> |Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.  <br/> |
+|[Persona](persona.md) <br/> |Gibt eine Reihe von Persona-Daten an, die von einer **GetPersona-Anforderung** zurückgegeben werden.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **HomeCity** -Elements ist ein String-Wert, der den Ort angibt. 
+Der Textwert des **HomeCity-Elements** ist ein Zeichenfolgenwert, der die Stadt angibt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

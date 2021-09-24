@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8f7276aa-e354-40e4-b9cb-950fad46ac93
-description: Das UniqueBodyType-Element gibt an, ob der eindeutige Text im Text-oder HTML-Format zurückgegeben wird.
-ms.openlocfilehash: 7e6c4631ef589555ce4d5da747c200ffe956f3a1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das UniqueBodyType-Element gibt an, ob der eindeutige Textkörper im Text- oder HTML-Format zurückgegeben wird.
+ms.openlocfilehash: a0149e41da24646fdf38a465434bfad3557ece22
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459440"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520269"
 ---
 # <a name="uniquebodytype"></a>UniqueBodyType
 
-Das **UniqueBodyType** -Element gibt an, ob der eindeutige Text im Text-oder HTML-Format zurückgegeben wird. 
+Das **UniqueBodyType-Element** gibt an, ob der eindeutige Textkörper im Text- oder HTML-Format zurückgegeben wird. 
   
 ```XML
 <UniqueBodyType> Best | HTML | Text </UniqueBodyType>
@@ -42,17 +42,17 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **UniqueBodyType** -Elements gibt an, in welchem Format der eindeutige Textkörper zurückgegeben wird. In der folgenden Tabelle sind die möglichen Werte für dieses Element aufgeführt. 
+Der Textwert des **UniqueBodyType-Elements** gibt das Format an, in dem der eindeutige Textkörper zurückgegeben wird. In der folgenden Tabelle sind die möglichen Werte für dieses Element aufgeführt. 
   
 ****
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Optimal  <br/> |Die Antwort gibt den reichsten verfügbaren Inhalt des Textkörpers zurück. Dies ist hilfreich, wenn unbekannt ist, ob es sich bei dem Inhalt um Text oder HTML handelt.  <br/> Der zurückgegebene Text ist Text, wenn der gespeicherte Text nur-Text ist. Andernfalls gibt die Antwort HTML zurück, wenn der gespeicherte Text im HTML-oder RTF-Format vorliegt.  <br/> Dies ist der Standardwert.  <br/> |
-|HTML  <br/> |Die Antwort gibt einen eindeutigen Text im HTML-Format zurück.  <br/> |
-|Text  <br/> |Die Antwort gibt einen eindeutigen Text im Klartext zurück.  <br/> |
+|Optimal  <br/> |Die Antwort gibt den umfangreichsten verfügbaren Inhalt des Textkörpers zurück. Dies ist nützlich, wenn nicht bekannt ist, ob es sich bei dem Inhalt um Text oder HTML handelt.  <br/> Der zurückgegebene Textkörper ist Text, wenn der gespeicherte Text nur Text ist. Andernfalls gibt die Antwort HTML zurück, wenn der gespeicherte Textkörper im HTML- oder RTF-Format vorliegt.  <br/> Dies ist der Standardwert.  <br/> |
+|HTML  <br/> |Die Antwort gibt einen eindeutigen Textkörper als HTML zurück.  <br/> |
+|Text  <br/> |Die Antwort gibt einen eindeutigen Textkörper als Nur-Text zurück.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

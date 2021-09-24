@@ -1,23 +1,23 @@
 ---
-title: Elemente (ArrayOfNonIndexableItemDetailsType)
+title: Items (ArrayOfNonIndexableItemDetailsType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: da795880-12b4-4341-bcb8-31616f4ba46f
-description: Das Items-Element enthält ein Array von Element Details für nicht indizierte Elemente.
-ms.openlocfilehash: 81ca175933b0d23a939f6fdc45cb5a10e7157350
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Items-Element enthält ein Array von Elementdetails für nicht indizierbare Elemente.
+ms.openlocfilehash: 82553a704d60cb7398a678bc54e1622e3eb415b3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459903"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519422"
 ---
-# <a name="items-arrayofnonindexableitemdetailstype"></a>Elemente (ArrayOfNonIndexableItemDetailsType)
+# <a name="items-arrayofnonindexableitemdetailstype"></a>Items (ArrayOfNonIndexableItemDetailsType)
 
-Das **Items** -Element enthält ein Array von Element Details für nicht indizierte Elemente. 
+Das **Items-Element** enthält ein Array von Elementdetails für nicht indizierbare Elemente. 
   
 ```XML
 <Items>
@@ -42,7 +42,7 @@ Keine.
 
 [NonIndexableItemDetailsResult](nonindexableitemdetailsresult.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

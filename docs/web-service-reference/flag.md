@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7b47bc74-a60d-4308-8674-5d52444a1753
 description: Das Flag-Element gibt ein Flag für ein Postfachelement an.
-ms.openlocfilehash: 7229a26181ee9baf80be5c32c0ef99483310ccb3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: dffc550dc4235c2121b6641f3a6eac30594f75b3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466262"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513696"
 ---
 # <a name="flag"></a>Flag
 
-Das **Flag** -Element gibt ein Flag für ein Postfachelement an. 
+Das **Flag-Element** gibt ein Flag für ein Postfachelement an. 
   
 ```XML
 <Flag>
@@ -41,8 +41,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FlagStatus](flagstatus.md) <br/> |Enthält den Status aggregierter Kennzeichen für Elemente im aktuellen Ordner.  <br/> |
-|[StartDate](startdate.md) <br/> |Stellt das Anfangsdatum eines Elements dar.  <br/> |
+|[FlagStatus](flagstatus.md) <br/> |Enthält den aggregierten Flagstatus für Elemente im aktuellen Ordner.  <br/> |
+|[StartDate](startdate.md) <br/> |Stellt das Startdatum eines Elements dar.  <br/> |
 |[DueDate](duedate.md) <br/> |Stellt das Datum dar, an dem ein Element fällig ist.  <br/> |
 |[CompleteDate](completedate.md) <br/> |Stellt das Datum dar, an dem ein Element abgeschlossen wurde.  <br/> |
    
@@ -50,10 +50,10 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Unterhaltung](conversationaction.md) <br/> |Enthält eine einzelne Aktion, die auf eine einzelne Unterhaltung angewendet werden soll.  <br/> |
-|[Element](item.md) <br/> |Stellt ein generisches Element in der Exchange-Informationsspeicher dar.  <br/> |
+|[ConversationAction](conversationaction.md) <br/> |Enthält eine einzelne Aktion, die auf eine einzelne Unterhaltung angewendet werden soll.  <br/> |
+|[Aspekt](item.md) <br/> |Stellt ein generisches Element im Exchange Speicher dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -65,7 +65,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

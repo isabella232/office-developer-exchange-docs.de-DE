@@ -5,38 +5,38 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RefreshSharingFolder
 api_type:
 - schema
 ms.assetid: 1b047e34-40f0-459f-ac9e-e9f8e7349479
 description: Der RefreshSharingFolder-Vorgang aktualisiert den angegebenen lokalen Ordner mit den neuesten Daten aus dem Ordner, der freigegeben wird.
-ms.openlocfilehash: dd7136ae82353841db09497d23eabe450c1c8b13
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 4bf30132d84c4288123c91247afa8bd13a05348c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456753"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512538"
 ---
 # <a name="refreshsharingfolder-operation"></a>RefreshSharingFolder-Vorgang
 
-Der **RefreshSharingFolder** -Vorgang aktualisiert den angegebenen lokalen Ordner mit den neuesten Daten aus dem Ordner, der freigegeben wird. 
+Der **RefreshSharingFolder-Vorgang** aktualisiert den angegebenen lokalen Ordner mit den neuesten Daten aus dem Ordner, der freigegeben wird. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der **RefreshSharingFolder** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
+Der **RefreshSharingFolder-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben sind. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="refreshsharingfolder-request-example"></a>RefreshSharingFolder-Anforderungs Beispiel
+## <a name="refreshsharingfolder-request-example"></a>RefreshSharingFolder-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt, wie Sie eine Anforderung zum Aktualisieren des angegebenen lokalen Ordners mit den neuesten Daten aus dem freigegebenen Ordner bilden. Das [SharingFolderId](sharingfolderid.md) -Element gibt den Bezeichner des lokalen Ordners an, der aktualisiert werden soll. 
+Das folgende Beispiel zeigt, wie Sie eine Anforderung zum Aktualisieren des angegebenen lokalen Ordners mit den neuesten Daten aus dem freigegebenen Ordner erstellen. Das [SharingFolderId-Element](sharingfolderid.md) gibt den Bezeichner des lokalen Ordners an, der aktualisiert werden soll. 
   
 ### <a name="code"></a>Code
 
@@ -72,7 +72,7 @@ In der Anforderung werden folgende Elemente verwendet:
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **RefreshSharingFolder** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **RefreshSharingFolder-Anforderung.** 
   
 ### <a name="code"></a>Code
 
@@ -114,7 +114,7 @@ In der Antwort werden folgende Elemente verwendet:
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **RefreshSharingFolder** -Anforderung. In diesem Beispiel ist die **RefreshSharingFolder** -Anforderung fehlgeschlagen, da ein Abonnement, das dem angegebenen lokalen Ordner entspricht, nicht gefunden wurde. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **RefreshSharingFolder-Anforderung.** In diesem Beispiel ist die **RefreshSharingFolder-Anforderung** fehlgeschlagen, da ein Abonnement, das dem angegebenen lokalen Ordner entspricht, nicht gefunden wurde. 
   
 ### <a name="code"></a>Code
 
@@ -161,7 +161,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Messagexml verwendet](messagexml.md)
+- [MessageXml](messagexml.md)
     
 ## <a name="see-also"></a>Siehe auch
 

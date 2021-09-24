@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUserOofSettingsRequest
 api_type:
 - schema
 ms.assetid: 15dea99c-7f5d-4af1-82ff-4255127fe567
-description: Das GetUserOofSettingsRequest-Element ist das Stammelement, das die Argumente enthält, mit denen die Abwesenheit (Out of Office, OOF) Einstellungen eines Postfachbenutzers abgerufen werden.
-ms.openlocfilehash: f515e8cf016d3aff6c652ae92a0da71a8f0a5f6b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GetUserOofSettingsRequest-Element ist das Stammelement, das die Argumente enthält, die zum Abrufen der OOF-Einstellungen (Out of Office) eines Postfachbenutzers verwendet werden.
+ms.openlocfilehash: ea14636dbcf3042a0286ac64fa4fc701144e4920
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457830"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519681"
 ---
 # <a name="getuseroofsettingsrequest"></a>GetUserOofSettingsRequest
 
-Das **GetUserOofSettingsRequest** -Element ist das Stammelement, das die Argumente enthält, mit denen die Abwesenheit (Out of Office, OOF) Einstellungen eines Postfachbenutzers abgerufen werden. 
+Das **GetUserOofSettingsRequest-Element** ist das Stammelement, das die Argumente enthält, die zum Abrufen der OOF-Einstellungen (Out of Office) eines Postfachbenutzers verwendet werden. 
   
 ```xml
 <GetUserOofSettingsRequest>
@@ -42,19 +42,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Postfach (Verfügbarkeit)](mailbox-availability.md) <br/> |Identifiziert den Postfachbenutzer für eine SetUserOofSettings-oder GetUserOofSettings-Anforderung.  <br/> |
+|[Postfach (Verfügbarkeit)](mailbox-availability.md) <br/> |Identifiziert den Postfachbenutzer für eine SetUserOofSettings- oder GetUserOofSettings-Anforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden finden Sie ein Beispiel für eine GetUserOofSettings-Anforderung, die die OOF-Informationen eines einzelnen Benutzers abruft.
+Es folgt ein Beispiel für eine GetUserOofSettings-Anforderung, die die OOF-Informationen eines einzelnen Benutzers abruft.
   
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -77,7 +77,7 @@ Im folgenden finden Sie ein Beispiel für eine GetUserOofSettings-Anforderung, d
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

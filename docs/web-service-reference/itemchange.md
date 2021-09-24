@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ItemChange
 api_type:
 - schema
 ms.assetid: 5cb43b02-d444-4d9c-9075-cdc5a4427daf
-description: Das ItemChange-Element enthält eine Element-ID und die Updates, die auf das Element angewendet werden sollen.
-ms.openlocfilehash: 916ef1ba2c7a709ec1fd80ababd72999506773c4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ItemChange-Element enthält einen Elementbezeichner und die Aktualisierungen, die auf das Element angewendet werden sollen.
+ms.openlocfilehash: 8ace3cf78eb902e48529a0534e39ce7d584bd164
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459917"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537749"
 ---
 # <a name="itemchange"></a>ItemChange
 
-Das **ItemChange** -Element enthält eine Element-ID und die Updates, die auf das Element angewendet werden sollen. 
+Das **ItemChange-Element** enthält einen Elementbezeichner und die Aktualisierungen, die auf das Element angewendet werden sollen. 
   
 - [UpdateItem](updateitem.md) 
 - [ItemChanges](itemchanges.md)
@@ -62,20 +62,20 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel eines Elements in der Exchange-Informationsspeicher. Dieses Element ist erforderlich, wenn das [OccurrenceItemId](occurrenceitemid.md) -oder das [RecurringMasterItemId](recurringmasteritemid.md) -Element nicht verwendet wird.  <br/> |
-|[OccurrenceItemId](occurrenceitemid.md) <br/> |Gibt ein einzelnes Vorkommen eines wiederkehrenden Elements an. Dieses Element ist erforderlich, wenn es verwendet wird. Dieses Element ist erforderlich, wenn das [RecurringMasterItemId](recurringmasteritemid.md) -oder [ItemID](itemid.md) -Element nicht verwendet wird.  <br/> |
-|[RecurringMasterItemId](recurringmasteritemid.md) <br/> |Identifiziert ein Serienmasterelement durch Identifizieren eines der Bezeichner des zugehörigen vorkommen Elements. Dieses Element ist erforderlich, wenn es verwendet wird. Dieses Element ist erforderlich, wenn das [OccurrenceItemId](occurrenceitemid.md) -oder [ItemID](itemid.md) -Element nicht verwendet wird.  <br/> |
-|[Updates (Element)](updates-item.md) <br/> |Enthält ein Array, das Append-, festlegen-und DELETE-Änderungen an Elementeigenschaften definiert. Dieses Element ist erforderlich.  <br/> |
+|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel eines Elements im Exchange Speicher. Dieses Element ist erforderlich, wenn das [OccurrenceItemId-](occurrenceitemid.md) oder [RecurringMasterItemId-Element](recurringmasteritemid.md) nicht verwendet wird.  <br/> |
+|[OccurrenceItemId](occurrenceitemid.md) <br/> |Identifiziert ein einzelnes Vorkommen einer Terminserie. Dieses Element ist erforderlich, wenn es verwendet wird. Dieses Element ist erforderlich, wenn das [RecurringMasterItemId-](recurringmasteritemid.md) oder [ItemId-Element](itemid.md) nicht verwendet wird.  <br/> |
+|[RecurringMasterItemId](recurringmasteritemid.md) <br/> |Identifiziert ein Serienmasterelement, indem einer seiner zugehörigen Bezeichner für vorkommende Elemente identifiziert wird. Dieses Element ist erforderlich, wenn es verwendet wird. Dieses Element ist erforderlich, wenn das [OccurrenceItemId-](occurrenceitemid.md) oder [ItemId-Element](itemid.md) nicht verwendet wird.  <br/> |
+|[Updates (Element)](updates-item.md) <br/> |Enthält ein Array, das Das Anfügen, Festlegen und Löschen von Änderungen an Elementeigenschaften definiert. Dieses Element ist erforderlich.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemChanges](itemchanges.md) <br/> |Enthält ein Array von [ItemChange](itemchange.md) -Elementen, mit denen Elemente identifiziert werden, und die Updates, die auf die Elemente angewendet werden sollen.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/UpdateItem/ItemChanges` <br/> |
+|[ItemChanges](itemchanges.md) <br/> |Enthält ein Array von [ItemChange-Elementen,](itemchange.md) die Elemente und die Aktualisierungen identifizieren, die auf die Elemente angewendet werden sollen.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/UpdateItem/ItemChanges` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-In einem **ItemChange** -Element kann nur ein einzelnes [ItemID](itemid.md)-, [OccurrenceItemId](occurrenceitemid.md)-oder [RecurringMasterItemId](recurringmasteritemid.md) -Element verwendet werden. 
+In einem **ItemChange-Element** kann nur ein einzelnes [ItemId-,](itemid.md) [OccurrenceItemId-](occurrenceitemid.md)oder [RecurringMasterItemId-Element](recurringmasteritemid.md) verwendet werden. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

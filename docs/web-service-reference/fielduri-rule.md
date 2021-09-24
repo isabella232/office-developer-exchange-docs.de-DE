@@ -1,23 +1,23 @@
 ---
-title: FieldUri (Regel)
+title: FieldUri (Rule)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cecdea78-de9c-48be-ae31-03877feafeec
-description: Das FieldURI-Element gibt den URI für das Regel Feld an, das den Validierungsfehler verursacht hat.
-ms.openlocfilehash: 3d88efdf951af580f81b5e2e7a544dcdf70ea830
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das FieldURI-Element gibt den URI für das Regelfeld an, das den Überprüfungsfehler verursacht hat.
+ms.openlocfilehash: c1390f6643614216fa86053368ba012cd0883ff7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461247"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513731"
 ---
-# <a name="fielduri-rule"></a>FieldUri (Regel)
+# <a name="fielduri-rule"></a>FieldUri (Rule)
 
-Das **FieldURI** -Element gibt den URI für das Regel Feld an, das den Validierungsfehler verursacht hat. 
+Das **FieldURI-Element** gibt den URI für das Regelfeld an, das den Überprüfungsfehler verursacht hat. 
   
 ```XML
 <FieldURI/>
@@ -40,7 +40,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Fehler](error.md) <br/> |Stellt einen einzelnen Validierungsfehler für einen bestimmten Regel Eigenschaftswert, einen Prädikateigenschaftswert oder einen Action-Eigenschaftswert dar.  <br/> |
+|[Fehler](error.md) <br/> |Stellt einen einzelnen Überprüfungsfehler für einen bestimmten Regeleigenschaftswert, einen Prädikateigenschaftenwert oder einen Aktionseigenschaftswert dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
@@ -56,167 +56,167 @@ Der Textwert für dieses Element ist auf eine der folgenden Zeichenfolgen beschr
     
 - Aktionen
     
-- Bedingung: Kategorien
+- Bedingung:Kategorien
     
-- Bedingung: ContainsBodyStrings
+- Condition:ContainsBodyStrings
     
-- Bedingung: ContainsHeaderStrings
+- Condition:ContainsHeaderStrings
     
-- Bedingung: ContainsRecipientStrings
+- Condition:ContainsRecipientStrings
     
-- Bedingung: ContainsSenderStrings
+- Condition:ContainsSenderStrings
     
-- Bedingung: ContainsSubjectOrBodyStrings
+- Condition:ContainsSubjectOrBodyStrings
     
-- Bedingung: ContainsSubjectStrings
+- Condition:ContainsSubjectStrings
     
-- Bedingung: FlaggedForAction
+- Bedingung:FlaggedForAction
     
-- Bedingung: FromAddresses
+- Condition:FromAddresses
     
-- Bedingung: FromConnectedAccounts
+- Bedingung:FromConnectedAccounts
     
-- Bedingung: hasattachments
+- Condition:HasAttachments
     
-- Bedingung: Wichtigkeit
+- Bedingung:Wichtigkeit
     
-- Bedingung: IsApprovalRequest
+- Condition:IsApprovalRequest
     
-- Bedingung: IsAutomaticForward
+- Condition:IsAutomaticForward
     
-- Bedingung: IsAutomaticReply
+- Condition:IsAutomaticReply
     
-- Bedingung: IsEncrypted
+- Bedingung:IsEncrypted
     
-- Bedingung: IsMeetingRequest
+- Condition:IsMeetingRequest
     
-- Bedingung: IsMeetingResponse
+- Condition:IsMeetingResponse
     
-- Bedingung: IsNDR
+- Condition:IsNDR
     
-- Bedingung: IsPermissionControlled
+- Condition:IsPermissionControlled
     
-- Bedingung: IsReadReceipt
+- Condition:IsReadReceipt
     
-- Bedingung: IsSigned
+- Bedingung:IsSigned
     
-- Bedingung: isvoicemail
+- Bedingung:IsVoicemail
     
-- Bedingung: ItemClasses
+- Condition:ItemClasses
     
-- Bedingung: MessageClassifications
+- Condition:MessageClassifications
     
-- Bedingung: NotSentToMe
+- Condition:NotSentToMe
     
-- Bedingung: SentCcMe
+- Condition:SentCcMe
     
-- Bedingung: SentOnlyToMe
+- Condition:SentOnlyToMe
     
-- Bedingung: SentToAddresses
+- Condition:SentToAddresses
     
-- Bedingung: SentToMe
+- Condition:SentToMe
     
-- Bedingung: SentToOrCcMe
+- Condition:SentToOrCcMe
     
-- Bedingung: Empfindlichkeit
+- Bedingung:Vertraulichkeit
     
-- Bedingung: WithinDateRange
+- Condition:WithinDateRange
     
-- Bedingung: WithinSizeRange
+- Condition:WithinSizeRange
     
-- Ausnahme: Kategorien
+- Exception:Categories
     
-- Ausnahme: ContainsBodyStrings
+- Exception:ContainsBodyStrings
     
-- Ausnahme: ContainsHeaderStrings
+- Exception:ContainsHeaderStrings
     
-- Ausnahme: ContainsRecipientStrings
+- Exception:ContainsRecipientStrings
     
-- Ausnahme: ContainsSenderStrings
+- Exception:ContainsSenderStrings
     
-- Ausnahme: ContainsSubjectOrBodyStrings
+- Exception:ContainsSubjectOrBodyStrings
     
-- Ausnahme: ContainsSubjectStrings
+- Exception:ContainsSubjectStrings
     
-- Ausnahme: FlaggedForAction
+- Exception:FlaggedForAction
     
-- Ausnahme: FromAddresses
+- Ausnahme:FromAddresses
     
-- Ausnahme: FromConnectedAccounts
+- Ausnahme:FromConnectedAccounts
     
-- Ausnahme: hasattachments
+- Exception:HasAttachments
     
-- Ausnahme: Wichtigkeit
+- Exception:Importance
     
-- Ausnahme: IsApprovalRequest
+- Exception:IsApprovalRequest
     
-- Ausnahme: IsAutomaticForward
+- Exception:IsAutomaticForward
     
-- Ausnahme: IsAutomaticReply
+- Exception:IsAutomaticReply
     
-- Ausnahme: IsEncrypted
+- Ausnahme:IsEncrypted
     
-- Ausnahme: IsMeetingRequest
+- Exception:IsMeetingRequest
     
-- Ausnahme: IsMeetingResponse
+- Exception:IsMeetingResponse
     
-- Ausnahme: IsNDR
+- Ausnahme:IsNDR
     
-- Ausnahme: IsPermissionControlled
+- Exception:IsPermissionControlled
     
-- Ausnahme: IsReadReceipt
+- Exception:IsReadReceipt
     
-- Ausnahme: IsSigned
+- Ausnahme:IsSigned
     
-- Ausnahme: isvoicemail
+- Exception:IsVoicemail
     
-- Ausnahme: ItemClasses
+- Exception:ItemClasses
     
-- Ausnahme: MessageClassifications
+- Exception:MessageClassifications
     
-- Ausnahme: NotSentToMe
+- Exception:NotSentToMe
     
-- Ausnahme: SentCcMe
+- Exception:SentCcMe
     
-- Ausnahme: SentOnlyToMe
+- Exception:SentOnlyToMe
     
-- Ausnahme: SentToAddresses
+- Exception:SentToAddresses
     
-- Ausnahme: SentToMe
+- Exception:SentToMe
     
-- Ausnahme: SentToOrCcMe
+- Exception:SentToOrCcMe
     
-- Ausnahme: Empfindlichkeit
+- Exception:Sensitivity
     
-- Ausnahme: WithinDateRange
+- Exception:WithinDateRange
     
-- Ausnahme: WithinSizeRange
+- Exception:WithinSizeRange
     
-- Aktion: AssignCategories
+- Action:AssignCategories
     
-- Aktion: CopyToFolder
+- Action:CopyToFolder
     
-- Aktion: Löschen
+- Action:Delete
     
-- Aktion: ForwardAsAttachmentToRecipients
+- Action:ForwardAsAttachmentToRecipients
     
-- Aktion: ForwardToRecipients
+- Action:ForwardToRecipients
     
-- Aktion: MarkImportance
+- Action:MarkImportance
     
-- Aktion: MarkAsRead
+- Action:MarkAsRead
     
-- Aktion: MoveToFolder
+- Action:MoveToFolder
     
-- Aktion: PermanentDelete
+- Action:PermanentDelete
     
-- Aktion: RedirectToRecipients
+- Action:RedirectToRecipients
     
-- Aktion: SendSMSAlertToRecipients
+- Action:SendSMSAlertToRecipients
     
-- Aktion: ServerReplyWithMessage
+- Action:ServerReplyWithMessage
     
-- Aktion: StopProcessingRules
+- Action:StopProcessingRules
     
 - IsEnabled
     
@@ -226,7 +226,7 @@ Der Textwert für dieses Element ist auf eine der folgenden Zeichenfolgen beschr
     
 - Ausnahmen
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -236,7 +236,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

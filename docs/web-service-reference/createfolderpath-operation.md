@@ -5,46 +5,46 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5a10aa5e-3f25-4ec3-a0b9-284c30918a1f
-description: Hier finden Sie Informationen zum CreateFolderPath-EWS-Vorgang.
-ms.openlocfilehash: a8d42cbef854d900c5fb6b72c730dd1e2b903aec
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum CreateFolderPath EWS-Vorgang.
+ms.openlocfilehash: cd4a96e5c16bc006c9202f224b2bdd677fb23a93
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458901"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538429"
 ---
 # <a name="createfolderpath-operation"></a>CreateFolderPath-Vorgang
 
-Hier finden Sie Informationen zum **CreateFolderPath** -EWS-Vorgang. 
+Hier finden Sie Informationen zum **CreateFolderPath** EWS-Vorgang. 
   
-Mit dem **CreateFolderPath** -Vorgang wird eine Ordnerhierarchie erstellt. 
+Der **CreateFolderPath-Vorgang** erstellt eine Ordnerhierarchie. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-createfolderpath-operation"></a>Verwenden des CreateFolderPath-Vorgangs
 
-Die **CreateFolderPath** -Vorgangsanforderung verwendet ein Array von Ordnern und eine übergeordnete Ordner-ID und erstellt eine Ordnerhierarchie basierend auf der Reihenfolge der Ordner im Array. 
+Die **CreateFolderPath-Vorgangsanforderung** akzeptiert ein Array von Ordnern und einen übergeordneten Ordnerbezeichner und erstellt eine Ordnerhierarchie basierend auf der Reihenfolge der Ordner im Array. 
   
-### <a name="createfolderpath-operation-soap-headers"></a>SOAP-Header des CreateFolderPath-Vorgangs
+### <a name="createfolderpath-operation-soap-headers"></a>CREATEFolderPath-Vorgang SOAP-Header
 
-Der **CreateFolderPath** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **CreateFolderPath-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden sollen. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
-|**TimeZoneContext** <br/> |[TimeZoneContext](timezonecontext.md) <br/> |Gibt den Zeit zonenbereich für **DateTime** -Eigenschaften an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dieser Header gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur, wie in RFC 3066 definiert, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden soll. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
+|**TimeZoneContext** <br/> |[TimeZoneContext](timezonecontext.md) <br/> |Gibt den Zeitzonenbereich für **DateTime-Eigenschaften** an. Dieser Header gilt für eine Anforderung.  <br/> |
    
-## <a name="createfolderpath-operation-request-example-create-a-folder-hierarchy"></a>CreateFolderPath-Vorgangs Anforderungs Beispiel: Erstellen einer Ordnerhierarchie
+## <a name="createfolderpath-operation-request-example-create-a-folder-hierarchy"></a>CreateFolderPath-Vorgangsanforderungsbeispiel: Erstellen einer Ordnerhierarchie
 
-Im folgenden Beispiel einer **CreateFolderPath** -Vorgangsanforderung wird gezeigt, wie Sie eine Ordnerhierarchie erstellen, die drei Ordner tief im standardmäßigen Posteingangsordner ist. 
+Das folgende Beispiel einer **CreateFolderPath-Vorgangsanforderung** zeigt, wie Sie eine Ordnerhierarchie erstellen, die drei Ordner enthält, die tief im Standardmäßigen Posteingangsordner sind. 
   
 > [!NOTE]
-> Alle Element-IDs und Änderungsschlüssel in diesem Artikel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Alle Elementbezeichner und Änderungsschlüssel in diesem Artikel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -80,7 +80,7 @@ Im folgenden Beispiel einer **CreateFolderPath** -Vorgangsanforderung wird gezei
 
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [CreateFolderPath](createfolderpath.md)
     
@@ -94,9 +94,9 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-## <a name="successful-createfolderpath-operation-response"></a>Erfolgreiche Reaktion des CreateFolderPath-Vorgangs
+## <a name="successful-createfolderpath-operation-response"></a>Erfolgreiche CreateFolderPath-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **CreateFolderPath** -Vorgangsanforderung zum Erstellen einer Ordnerhierarchie mit drei Ordnern, die sich tief im Standardordner "Posteingang" befinden. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **CreateFolderPath-Vorgangsanforderung** zum Erstellen einer Ordnerhierarchie mit drei Ordnern, die tief im Standardordner "Posteingang" gespeichert sind. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -159,7 +159,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **CreateFolderPat
 
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [CreateFolderPathResponse](createfolderpathresponse.md)
     
@@ -177,15 +177,15 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-- [Total count](totalcount.md)
+- [TotalCount](totalcount.md)
     
 - [ChildFolderCount](childfoldercount.md)
     
 - [UnreadCount](unreadcount.md)
     
-## <a name="createfolderpath-operation-error-response"></a>Fehlerantwort des CreateFolderPath-Vorgangs
+## <a name="createfolderpath-operation-error-response"></a>CreateFolderPath-Vorgangsfehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **CreateFolderPath** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Erstellen von zwei Ordnern, von denen die erste nicht über eine Anzeigename-Eigenschaft festgelegt ist. Der erste Ordner in der Hierarchiekann nicht ohne eine Anzeigename-Eigenschaft erstellt werden, und der zweite Ordner kann nicht erstellt werden, da der übergeordnete Ordner in der Hierarchie nicht erstellt wurde. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **CreateFolderPath-Vorgangsanforderung.** Dies ist eine Antwort auf eine Anforderung zum Erstellen von zwei Ordnern, von denen der erste keine Anzeigenameneigenschaft festgelegt hat. Der erste Ordner in der Hierarchie kann nicht ohne anzeigename-Eigenschaft erstellt werden, und der zweite Ordner kann nicht erstellt werden, da der übergeordnete Ordner in der Hierarchie nicht erstellt wurde. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -241,13 +241,13 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Messagexml verwendet](messagexml.md)
+- [MessageXml](messagexml.md)
     
 - [FieldURI](fielduri.md)
     
 - [Ordner](folders-ex15websvcsotherref.md)
     
-Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
+Weitere Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

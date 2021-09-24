@@ -3,37 +3,37 @@ title: Antworten auf E-Mail-Nachrichten mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9d584991-4d67-4d36-ae2f-99970af8488f
-description: In diesem Artikel erfahren Sie, wie Sie mithilfe der verwaltete EWS-API oder EWS in Exchange auf e-Mail-Nachrichten reagieren.
-ms.openlocfilehash: 81599051f603654cdf8a50b789b37d7e76664a53
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Erfahren Sie, wie Sie auf E-Mail-Nachrichten mithilfe der verwalteten EWS-API oder EWS in Exchange antworten.
+ms.openlocfilehash: 97928420a304e6683bc571230650e2756083ccf5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455709"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513094"
 ---
 # <a name="respond-to-email-messages-by-using-ews-in-exchange"></a>Antworten auf E-Mail-Nachrichten mithilfe von EWS in Exchange
 
-In diesem Artikel erfahren Sie, wie Sie mithilfe der verwaltete EWS-API oder EWS in Exchange auf e-Mail-Nachrichten reagieren.
+Erfahren Sie, wie Sie auf E-Mail-Nachrichten mithilfe der verwalteten EWS-API oder EWS in Exchange antworten.
   
-Sie können die verwaltete EWS-API oder EWS verwenden, um auf Nachrichten zu antworten, indem Sie Ihnen Antworten oder Sie an Empfänger weiterleiten.
+Sie können die verwaltete EWS-API oder EWS verwenden, um auf Nachrichten zu antworten, indem Sie ihnen antworten oder sie an Empfänger weiterleiten.
   
-**Tabelle 1. Verwaltete EWS-API Methoden und EWS-Vorgänge für die Reaktion auf e-Mail-Nachrichten**
+**Tabelle 1. EWS Managed API-Methoden und EWS-Vorgänge für die Reaktion auf E-Mail-Nachrichten**
 
 |**Aufgabe**|**EWS Managed API-Methode**|**EWS-Vorgang**|
 |:-----|:-----|:-----|
-|Antworten auf eine e-Mail-Nachricht  <br/> |[Email Message. Reply](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.reply%28v=exchg.80%29.aspx) <br/> [Email Message. createreply](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.createreply%28v=exchg.80%29.aspx) <br/> |[CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx), wobei das [Items](https://msdn.microsoft.com/library/d61ef1cc-ddfc-480a-9625-7b436cb33ae0%28Office.15%29.aspx) -Element ein untergeordnetes Element von entweder [ReplyToItem](https://msdn.microsoft.com/library/35ee751a-41c0-4216-ad8b-78f7ada43a2f%28Office.15%29.aspx) oder [ReplyAllToItem](https://msdn.microsoft.com/library/8ca970ca-ca73-40db-9233-7b271cc5f44f%28Office.15%29.aspx).  <br/> |
-|Weiterleiten einer e-Mail-Nachricht  <br/> |[Email Message. Forward](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.forward%28v=exchg.80%29.aspx) <br/> [Email Message. createforward](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.createforward%28v=exchg.80%29.aspx) <br/> |[CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx), wobei das [Items](https://msdn.microsoft.com/library/d61ef1cc-ddfc-480a-9625-7b436cb33ae0%28Office.15%29.aspx) -Element ein untergeordnetes Element von [ForwardItem](https://msdn.microsoft.com/library/97786086-8b91-4471-8af8-d21e8d66de87%28Office.15%29.aspx)hat.  <br/> |
+|Antworten auf eine E-Mail-Nachricht  <br/> |[EmailMessage.Reply](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.reply%28v=exchg.80%29.aspx) <br/> [EmailMessage.CreateReply](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.createreply%28v=exchg.80%29.aspx) <br/> |[CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx), wobei das [Items -Element](https://msdn.microsoft.com/library/d61ef1cc-ddfc-480a-9625-7b436cb33ae0%28Office.15%29.aspx) ein untergeordnetes Element von [ReplyToItem](https://msdn.microsoft.com/library/35ee751a-41c0-4216-ad8b-78f7ada43a2f%28Office.15%29.aspx) oder [ReplyAllToItem](https://msdn.microsoft.com/library/8ca970ca-ca73-40db-9233-7b271cc5f44f%28Office.15%29.aspx)hat.  <br/> |
+|Weiterleiten einer E-Mail-Nachricht  <br/> |[EmailMessage.Forward](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.forward%28v=exchg.80%29.aspx) <br/> [EmailMessage.CreateForward](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.createforward%28v=exchg.80%29.aspx) <br/> |[CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx), wobei das [Items](https://msdn.microsoft.com/library/d61ef1cc-ddfc-480a-9625-7b436cb33ae0%28Office.15%29.aspx) -Element ein untergeordnetes Element von [ForwardItem](https://msdn.microsoft.com/library/97786086-8b91-4471-8af8-d21e8d66de87%28Office.15%29.aspx)hat.  <br/> |
    
-## <a name="reply-to-an-email-message-by-using-the-ews-managed-api"></a>Antworten auf eine e-Mail-Nachricht mithilfe der verwaltete EWS-API
+## <a name="reply-to-an-email-message-by-using-the-ews-managed-api"></a>Antworten auf eine E-Mail-Nachricht mithilfe der verwalteten EWS-API
 <a name="bk_replyewsma"> </a>
 
-Das verwaltete EWS-API bietet zwei Methoden, mit denen Sie auf Nachrichten reagieren können: [Reply](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.reply%28v=exchg.80%29.aspx) und [createreply](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.createreply%28v=exchg.80%29.aspx). Die **Reply** -Methode akzeptiert nur zwei Parameter: die Antwortnachricht, die dem vorhandenen Text vorangestellt werden soll, und einen **booleschen** Wert, der angibt, ob die Antwort an alle Empfänger (true) oder nur an den Absender (false) gesendet werden soll. Wenn Sie einer Nachricht zusätzliche Empfänger hinzufügen müssen, zusätzliche Eigenschaften für eine Antwort festlegen oder eine Anlage hinzufügen möchten, verwenden Sie die **createreply** -Methode, mit der Sie alle [Eigenschaften der First-Klasse](email-properties-and-elements-in-ews-in-exchange.md) festlegen können, die für ein [Email Message](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) -Objekt verfügbar sind. 
+Die verwaltete EWS-API bietet zwei Methoden, mit denen Sie auf Nachrichten antworten können: [Reply](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.reply%28v=exchg.80%29.aspx) und [CreateReply](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.createreply%28v=exchg.80%29.aspx). Die **Reply-Methode** verwendet nur zwei Parameter: die Antwortnachricht, die dem vorhandenen Textkörper vorangestellt wird, und einen **booleschen** Wert, der angibt, ob die Antwort an alle Empfänger (true) oder nur an den Absender (false) gesendet werden soll. Wenn Sie einer Nachricht zusätzliche Empfänger hinzufügen, zusätzliche Eigenschaften für eine Antwort festlegen oder eine Anlage hinzufügen müssen, verwenden Sie die **CreateReply-Methode,** mit der Sie alle erstklassigen Eigenschaften festlegen können, die für ein [EmailMessage-Objekt](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) verfügbar sind. [](email-properties-and-elements-in-ews-in-exchange.md) 
   
-Im folgenden Codebeispiel wird gezeigt, wie Sie mit der **Reply** -Methode auf eine e-Mail-Nachricht reagieren. 
+Das folgende Codebeispiel zeigt, wie die **Reply-Methode** zum Antworten auf eine E-Mail-Nachricht verwendet wird. 
   
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und dass der Benutzer mit einem Exchange-Server authentifiziert wurde. Die lokale Variable *ItemID* ist die [ID](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) des Elements, auf das reagiert werden soll. Im Beispiel wird die [FindRecentlySent-Methode](#bk_findlast) aufgerufen, um zu überprüfen, ob die Nachricht als beantwortet markiert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. Die lokale Variable  *ItemId*  ist die [ID](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) des Elements, auf das reagiert werden soll. Im Beispiel wird die [FindRecentlySent-Methode](#bk_findlast) aufgerufen, um zu überprüfen, ob die Nachricht als beantwortet markiert wurde. 
   
 ```cs
 // As a best practice, limit the properties returned by the Bind method to only those that are required.
@@ -50,7 +50,7 @@ message.Reply(myReply, replyToAll);
 FindRecentlySent(message);
 ```
 
-Im folgenden Codebeispiel wird veranschaulicht, wie die **createreply** -Methode verwendet wird, um auf eine e-Mail-Nachricht zu antworten. 
+Das folgende Codebeispiel zeigt, wie die **CreateReply-Methode** zum Antworten auf eine E-Mail-Nachricht verwendet wird. 
   
 ```cs
 // Bind to the email message to reply to by using the ItemId.
@@ -70,7 +70,7 @@ responseMessage.SendAndSaveCopy();
 FindRecentlySent(message);
 ```
 
-Wenn Sie eine Anlage zur Antwortnachricht hinzufügen müssen, ersetzen Sie den Aufruf der **SendAndSaveCopy** -Methode durch den folgenden Code. 
+Wenn Sie der Antwortnachricht eine Anlage hinzufügen müssen, ersetzen Sie den Aufruf der **SendAndSaveCopy-Methode** durch den folgenden Code. 
   
 ```cs
 EmailMessage reply = responseMessage.Save();
@@ -79,12 +79,12 @@ reply.Update(ConflictResolutionMode.AutoResolve);
 reply.SendAndSaveCopy();
 ```
 
-## <a name="reply-to-an-email-message-by-using-ews"></a>Antworten auf eine e-Mail-Nachricht mithilfe von EWS
+## <a name="reply-to-an-email-message-by-using-ews"></a>Antworten auf eine E-Mail-Nachricht mithilfe von EWS
 <a name="bk_replyews"> </a>
 
-Im folgenden Codebeispiel wird gezeigt, wie eine Nachricht mithilfe von EWS beantwortet wird. Verwenden Sie den [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) -Vorgang, wobei das **MessageDisposition** -Attribut auf **SendAndSaveCopy** festgelegt ist, um die Nachricht zu senden und die Antwort im Ordner "Gesendete Elemente" zu speichern. Fügen Sie das [ReplyAllToItem](https://msdn.microsoft.com/library/8ca970ca-ca73-40db-9233-7b271cc5f44f%28Office.15%29.aspx) -Element als untergeordnetes Element des [Items](https://msdn.microsoft.com/library/d61ef1cc-ddfc-480a-9625-7b436cb33ae0%28Office.15%29.aspx) -Elements ein, das jeder Person im Nachrichtenthread antworten soll, oder fügen Sie das [ReplyToItem](https://msdn.microsoft.com/library/35ee751a-41c0-4216-ad8b-78f7ada43a2f%28Office.15%29.aspx) -Element hinzu, um nur dem Absender zu antworten. 
+Das folgende Codebeispiel zeigt, wie Sie mithilfe von EWS auf eine Nachricht antworten. Verwenden Sie den [CreateItem-Vorgang,](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) wobei das **MessageDisposition-Attribut** auf **SendAndSaveCopy** festgelegt ist, um die Nachricht zu senden und die Antwort im Ordner "Gesendete Elemente" zu speichern. Schließen Sie entweder das [ReplyAllToItem-Element](https://msdn.microsoft.com/library/8ca970ca-ca73-40db-9233-7b271cc5f44f%28Office.15%29.aspx) als untergeordnetes Element des [Items-Elements](https://msdn.microsoft.com/library/d61ef1cc-ddfc-480a-9625-7b436cb33ae0%28Office.15%29.aspx) ein, um allen Personen im Nachrichtenthread zu antworten, oder fügen Sie das [ReplyToItem-Element](https://msdn.microsoft.com/library/35ee751a-41c0-4216-ad8b-78f7ada43a2f%28Office.15%29.aspx) ein, um nur an den Absender zu antworten. 
   
-Dies ist auch die XML-Anforderung, die vom verwaltete EWS-API gesendet wird, wenn die [Reply](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.reply%28v=exchg.80%29.aspx) -oder die [createreply](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.createreply%28v=exchg.80%29.aspx) -Methode aufgerufen wird. 
+Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn sie die [Reply-](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.reply%28v=exchg.80%29.aspx) oder die [CreateReply-Methode aufruft.](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.createreply%28v=exchg.80%29.aspx) 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -109,18 +109,18 @@ Dies ist auch die XML-Anforderung, die vom verwaltete EWS-API gesendet wird, wen
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **CreateItem** -Anforderung mit einer [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Elementwert **noError**enthält, der angibt, dass die Antwort erstellt und erfolgreich gesendet wurde.
+Der Server antwortet auf die **CreateItem-Anforderung** mit einer [CreateItemResponse-Nachricht,](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) die den [ResponseCode-Elementwert](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError** enthält, der angibt, dass die Antwort erstellt und erfolgreich gesendet wurde.
   
-Wenn Sie eine Anlage zur Antwortnachricht hinzufügen müssen, rufen Sie den **CreateItem** -Vorgang wie oben angegeben auf, ändern Sie jedoch die **MessageDisposition** in **SaveOnly**. Rufen Sie dann den [CreateAttachment](https://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx) -Vorgang, gefolgt von der [SendItem](https://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) -Operation auf. 
+Wenn Sie Ihrer Antwortnachricht eine Anlage hinzufügen müssen, rufen Sie den **CreateItem-Vorgang** wie oben angegeben auf, ändern Sie die **MessageDisposition** jedoch in **"SaveOnly".** Rufen Sie dann den [CreateAttachment-Vorgang](https://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx) auf, gefolgt vom [SendItem-Vorgang.](https://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) 
   
-## <a name="forward-an-email-message-by-using-the-ews-managed-api"></a>Weiterleiten einer e-Mail-Nachricht mithilfe der verwaltete EWS-API
+## <a name="forward-an-email-message-by-using-the-ews-managed-api"></a>Weiterleiten einer E-Mail-Nachricht mithilfe der verwalteten EWS-API
 <a name="bk_forwardewsma"> </a>
 
-Das verwaltete EWS-API stellt zwei Methoden bereit, die Sie zum Weiterleiten von Nachrichten verwenden können: [Forward](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.forward%28v=exchg.80%29.aspx) und [createforward](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.createforward%28v=exchg.80%29.aspx). Die **Forward** -Methode benötigt nur zwei Parameter: die Nachricht, die dem vorhandenen Text vorangestellt werden soll, und ein Array oder eine Auflistung von Empfängern, je nach der zu verwendenden Überladung. Wenn Sie der weiterzuleitenden Nachricht eine Anlage hinzufügen oder zusätzliche Eigenschaften für die neue Nachricht festlegen möchten, verwenden Sie die **createforward** -Methode, mit der Sie alle Eigenschaften festlegen können, die für ein [Email Message](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) -Objekt verfügbar sind. 
+Die verwaltete EWS-API bietet zwei Methoden, die Sie zum Weiterleiten von Nachrichten verwenden können: [Forward](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.forward%28v=exchg.80%29.aspx) und [CreateForward](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.createforward%28v=exchg.80%29.aspx). Die **Forward-Methode** verwendet nur zwei Parameter: die Nachricht, die dem vorhandenen Text vorangestellt werden soll, und ein Array oder eine Sammlung von Empfängern, je nach der gewählten Überladung. Wenn Sie der Nachricht, die Sie weiterleiten, eine Anlage hinzufügen oder zusätzliche Eigenschaften für die neue Nachricht festlegen müssen, verwenden Sie die **CreateForward-Methode,** mit der Sie alle Eigenschaften festlegen können, die für ein [EmailMessage-Objekt](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) verfügbar sind. 
   
-Im folgenden Codebeispiel wird gezeigt, wie Sie mit der **Forward** -Methode eine e-Mail-Nachricht an einen Empfänger weiterleiten. 
+Das folgende Codebeispiel zeigt, wie die **Forward-Methode** verwendet wird, um eine E-Mail-Nachricht an einen Empfänger weiterzuleiten. 
   
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und dass der Benutzer mit einem Exchange-Server authentifiziert wurde. Die lokale Variable *ItemID* ist die [ID](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) des Elements, das weitergeleitet werden soll. Im Beispiel wird die [FindRecentlySent-Methode](#bk_findlast) aufgerufen, um zu überprüfen, ob die Nachricht als weitergeleitet markiert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. Die lokale Variable  *ItemId*  ist die [ID](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) des weiterzuleitenden Elements. Im Beispiel wird die [FindRecentlySent-Methode](#bk_findlast) aufgerufen, um zu überprüfen, ob die Nachricht als weitergeleitet markiert wurde. 
   
 ```cs
 // Bind to the email message to reply to by using the ItemId.
@@ -134,7 +134,7 @@ message.Forward(myForward, "sadie@contoso.com");
 FindRecentlySent(message);
 ```
 
-Im folgenden Codebeispiel wird gezeigt, wie Sie mit der **createforward** -Methode eine e-Mail-Nachricht an einen Empfänger weiterleiten. 
+Im folgenden Codebeispiel wird gezeigt, wie die **CreateForward-Methode** verwendet wird, um eine E-Mail-Nachricht an einen Empfänger weiterzuleiten. 
   
 ```cs
 // Bind to the email message to reply to by using the ItemId.
@@ -152,7 +152,7 @@ forwardMessage.SendAndSaveCopy();
 FindRecentlySent(message);
 ```
 
-Wenn Sie eine Anlage zur weitergeleiteten Nachricht hinzufügen müssen, ersetzen Sie den Aufruf der **SendAndSaveCopy** -Methode durch den folgenden Code. 
+Wenn Sie der weitergeleiteten Nachricht eine Anlage hinzufügen müssen, ersetzen Sie den Aufruf der **SendAndSaveCopy-Methode** durch den folgenden Code. 
   
 ```cs
 EmailMessage forward = forwardMessage.Save();
@@ -161,12 +161,12 @@ forward.Update(ConflictResolutionMode.AutoResolve);
 forward.SendAndSaveCopy();
 ```
 
-## <a name="forward-an-email-message-by-using-ews"></a>Weiterleiten einer e-Mail-Nachricht mithilfe von EWS
+## <a name="forward-an-email-message-by-using-ews"></a>Weiterleiten einer E-Mail-Nachricht mithilfe von EWS
 <a name="bk_forwardews"> </a>
 
-Im folgenden Codebeispiel wird gezeigt, wie eine Nachricht mithilfe von EWS weitergeleitet wird. Verwenden Sie den [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) -Vorgang, wobei das **MessageDisposition** -Attribut auf **SendAndSaveCopy** festgelegt ist, um die Nachricht zu senden und die Antwort im Ordner "Gesendete Elemente" zu speichern. Das [ForwardItem](https://msdn.microsoft.com/library/97786086-8b91-4471-8af8-d21e8d66de87%28Office.15%29.aspx) -Element gibt an, dass das Element eine weitergeleitete Nachricht ist. 
+Das folgende Codebeispiel zeigt, wie eine Nachricht mithilfe von EWS weitergeleitet wird. Verwenden Sie den [CreateItem-Vorgang,](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) wobei das **MessageDisposition-Attribut** auf **SendAndSaveCopy** festgelegt ist, um die Nachricht zu senden und die Antwort im Ordner "Gesendete Elemente" zu speichern. Das [ForwardItem-Element](https://msdn.microsoft.com/library/97786086-8b91-4471-8af8-d21e8d66de87%28Office.15%29.aspx) gibt an, dass es sich bei dem Element um eine weitergeleitete Nachricht handelt. 
   
-Dies ist auch die XML-Anforderung, die vom verwaltete EWS-API gesendet wird, wenn die [Forward](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.forward%28v=exchg.80%29.aspx) -oder die [createforward](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.createforward%28v=exchg.80%29.aspx) -Methode aufgerufen wird. 
+Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn sie die [Forward-](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.forward%28v=exchg.80%29.aspx) oder [createForward-Methode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.createforward%28v=exchg.80%29.aspx) aufruft. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -196,16 +196,16 @@ Dies ist auch die XML-Anforderung, die vom verwaltete EWS-API gesendet wird, wen
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **CreateItem** -Anforderung mit einer [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Elementwert **noError**enthält, der angibt, dass die weitergeleitete Nachricht erfolgreich erstellt und gesendet wurde.
+Der Server antwortet auf die **CreateItem-Anforderung** mit einer [CreateItemResponse-Nachricht,](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) die den [ResponseCode-Elementwert](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError** enthält, der angibt, dass die weitergeleitete Nachricht erstellt und erfolgreich gesendet wurde.
   
-Wenn Sie eine Anlage zur Antwortnachricht hinzufügen müssen, rufen Sie den **CreateItem** -Vorgang auf, ändern Sie jedoch die **MessageDisposition** in **SaveOnly**. Rufen Sie dann den [CreateAttachment](https://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx) -Vorgang, gefolgt von der [SendItem](https://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) -Operation auf. 
+Wenn Sie Ihrer Antwortnachricht eine Anlage hinzufügen müssen, rufen Sie den **CreateItem-Vorgang auf,** ändern Sie die **MessageDisposition** jedoch in **"SaveOnly".** Rufen Sie dann den [CreateAttachment-Vorgang](https://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx) auf, gefolgt vom [SendItem-Vorgang.](https://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) 
   
-## <a name="find-the-message-last-replied-to-or-forwarded-by-using-the-ews-managed-api"></a>Suchen Sie die Nachricht, die zuletzt mit dem verwaltete EWS-API beantwortet oder weitergeleitet wurde.
+## <a name="find-the-message-last-replied-to-or-forwarded-by-using-the-ews-managed-api"></a>Suchen der Nachricht, auf die zuletzt mithilfe der verwalteten EWS-API geantwortet oder weitergeleitet wurde
 <a name="bk_findlast"> </a>
 
-Im folgenden Codebeispiel wird gezeigt, wie das zuletzt ausgeführte Verb und die Uhrzeit, zu der das letzte Verb für das angegebene Element ausgeführt wurde, gefunden werden. Diese Methode wird aus anderen verwaltete EWS-API Codebeispielen in diesem Thema aufgerufen, um sicherzustellen, dass die geantworteten oder weitergeleiteten Elemente als beantwortet oder weitergeleitet in Ihrem Posteingang markiert wurden. 
+Das folgende Codebeispiel zeigt, wie Sie das letzte ausgeführte Verb und den Zeitpunkt finden, zu dem das letzte Verb für das angegebene Element ausgeführt wurde. Diese Methode wird aus anderen Codebeispielen der verwalteten EWS-API in diesem Thema aufgerufen, um zu überprüfen, ob die Elemente, auf die Sie geantwortet oder weitergeleitet haben, als beantwortet oder in Ihrem Posteingang weitergeleitet wurden. 
   
-Im Beispiel wird die erweiterte Eigenschaft [pidtaglastverbexecuted (](https://msdn.microsoft.com/library/cc841968.aspx) (0x10820003) verwendet, um zu bestimmen, ob die Nachricht eine Antwort, eine Antwort all oder eine Forward-und die [pidtaglastverbexecutiontime (](https://msdn.microsoft.com/library/cc839918.aspx) (0x10820040)-erweiterte Eigenschaft war, um zu bestimmen, wann die Antwort oder der Forward gesendet wurde. 
+Im Beispiel wird die erweiterte Eigenschaft [PidTagLastVerbExecuted](https://msdn.microsoft.com/library/cc841968.aspx) (0x10820003) verwendet, um zu bestimmen, ob es sich bei der Nachricht um eine Antwort, eine Allen-Antwort oder eine Weiterleitung handelt, und um die erweiterte [Eigenschaft PidTagLastVerbExecutionTime](https://msdn.microsoft.com/library/cc839918.aspx) (0x10820040), um zu bestimmen, wann die Antwort oder der Weiterleitung gesendet wurde. 
   
 ```cs
 public static void FindRecentlySent(EmailMessage messageToCheck)

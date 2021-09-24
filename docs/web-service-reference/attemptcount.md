@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 70399ab7-0530-4d22-9cfb-ffcc58588ef5
-description: Das AttemptCount-Element stellt die Anzahl der Versuche dar, die zum Indizieren des Elements vorgenommen wurden.
-ms.openlocfilehash: 90ae6d7e095fcce54709e69c1d6d08075a791178
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AttemptCount-Element stellt die Anzahl der Versuche dar, das Element indiziert zu haben.
+ms.openlocfilehash: bc006bed33159ceda929b218d30a8f8aafba4b8d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527439"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538443"
 ---
 # <a name="attemptcount"></a>AttemptCount
 
-Das **AttemptCount** -Element stellt die Anzahl der Versuche dar, die zum Indizieren des Elements vorgenommen wurden. 
+Das **AttemptCount-Element** stellt die Anzahl der Versuche dar, das Element indiziert zu haben. 
   
 ```XML
 <AttemptCount></AttemptCount>
 ```
 
- **Integer**
+ **Ganzzahl**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Wert des **AttemptCount** -Elements ist die Anzahl der Versuche, die zum Indizieren eines Elements vorgenommen wurden. 
+Der Wert des **AttemptCount-Elements** ist die Anzahl der Versuche zum Indizierung eines Elements. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

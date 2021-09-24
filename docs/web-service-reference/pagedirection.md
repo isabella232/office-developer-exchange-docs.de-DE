@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 013947f3-cf3c-40b1-baf6-405f26bd375e
-description: Das PageDirection-Element enthält die Richtung für die Paginierung im Suchergebnis. Der Wert ist Previous oder Next.
-ms.openlocfilehash: 22816ff73af49e0f029b5618fa3d45f8880d0f82
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PageDirection-Element enthält die Richtung für die Paginierung im Suchergebnis. Der Wert lautet "Previous" oder "Next".
+ms.openlocfilehash: d6e0cd7b1654e5a8f371f3812ee21858662fcf9f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459728"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539154"
 ---
 # <a name="pagedirection"></a>PageDirection
 
-Das **PageDirection** -Element enthält die Richtung für die Paginierung im Suchergebnis. Der Wert ist Previous oder Next. 
+Das **PageDirection-Element** enthält die Richtung für die Paginierung im Suchergebnis. Der Wert lautet "Previous" oder "Next". 
   
 ```XML
 <PageDirection> Previous | Next </PageDirection>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **PageDirection** -Elements ist die Richtung für die Paginierung der Suchergebnisse. 
+Der Textwert des **PageDirection-Elements** ist die Richtung für die Paginierung der Suchergebnisse. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetItem
 api_type:
 - schema
 ms.assetid: 6b96dace-1260-4b83-869a-7c31c5583daa
-description: Der GetItem-Vorgang wird zum Abrufen von Kontaktelementen aus dem Exchange-Informationsspeicher verwendet.
-ms.openlocfilehash: 93e8dbe28e130ab64d4b8d12d2befde1f77ae8fa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetItem-Vorgang wird verwendet, um Kontaktelemente aus dem Exchange Informationsspeicher abzurufen.
+ms.openlocfilehash: 1a055791f1b6dd5085ae914c1f7b2ae7e97d6090
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460022"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520535"
 ---
 # <a name="getitem-operation-contact"></a>GetItem-Vorgang (Kontakt)
 
-Der GetItem-Vorgang wird zum Abrufen von Kontaktelementen aus dem Exchange-Informationsspeicher verwendet.
+Der GetItem-Vorgang wird verwendet, um Kontaktelemente aus dem Exchange Informationsspeicher abzurufen.
   
-## <a name="getitem-contact-request-example"></a>GetItem (Contact)-Anforderungs Beispiel
+## <a name="getitem-contact-request-example"></a>GetItem (Contact)-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird gezeigt, wie ein Element aus dem Exchange-Informationsspeicher abgerufen wird.
+Das folgende Beispiel zeigt, wie Sie ein Element aus dem Exchange Speicher abrufen.
   
 ### <a name="code"></a>Code
 
@@ -51,10 +51,10 @@ Im folgenden Beispiel wird gezeigt, wie ein Element aus dem Exchange-Information
 
 ### <a name="comments"></a>Comments
 
-Die Anforderung zum Abrufen eines Elements aus dem Exchange-Informationsspeicher verwendet dasselbe Formular für alle Elementtypen. Die Antworten auf Anforderungen für unterschiedliche Elemente unterscheiden sich, da unterschiedliche Elemente basierend auf den Antwort-Shapes unterschiedliche Informationen zurückgeben.
+Die Anforderung zum Abrufen eines Elements aus dem Exchange Speicher hat das gleiche Format für alle Elementtypen. Die Antworten auf Anforderungen für unterschiedliche Elemente sind unterschiedlich, da unterschiedliche Elemente basierend auf den Antwort-Shapes unterschiedliche Informationen zurückgeben.
   
 > [!NOTE]
-> Die Element-ID wurde verkürzt, um die Lesbarkeit beizubehalten. 
+> Der Elementbezeichner wurde gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -74,7 +74,7 @@ In der Anforderung werden folgende Elemente verwendet:
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Codebeispiel zeigt eine erfolgreiche GetItem-Antwort für die **allproperties**-[BaseShape](baseshape.md).
+Das folgende Codebeispiel zeigt eine erfolgreiche GetItem-Antwort für die **AllProperties**[BaseShape](baseshape.md).
   
 ### <a name="code"></a>Code
 
@@ -153,11 +153,11 @@ Das folgende Codebeispiel zeigt eine erfolgreiche GetItem-Antwort für die **all
 
 ### <a name="comments"></a>Comments
 
-Die Element-ID wurde verkürzt, um die Lesbarkeit beizubehalten.
+Der Elementbezeichner wurde gekürzt, um die Lesbarkeit zu gewährleisten.
   
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
-Die folgenden Elemente werden in der Antwort für eine GetItem-Anforderung mit der Antwort Form **allproperties** für ein Kontaktelement verwendet. 
+Die folgenden Elemente werden in der Antwort für eine GetItem-Anforderung mit einem Antwort-Shape von **AllProperties** für ein Kontaktelement verwendet. 
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -169,7 +169,7 @@ Die folgenden Elemente werden in der Antwort für eine GetItem-Anforderung mit d
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
 - [Contact](contact.md)
     
@@ -189,11 +189,11 @@ Die folgenden Elemente werden in der Antwort für eine GetItem-Anforderung mit d
     
 - [Importance](importance.md)
     
-- [Issubmitted](issubmitted.md)
+- [IsSubmitted](issubmitted.md)
     
 - [IsDraft](isdraft.md)
     
-- [Isfromme](isfromme.md)
+- [IsFromMe](isfromme.md)
     
 - [IsResend](isresend.md)
     
@@ -205,7 +205,7 @@ Die folgenden Elemente werden in der Antwort für eine GetItem-Anforderung mit d
     
 - [HasAttachments](hasattachments.md)
     
-- [Kultur](culture.md)
+- [Culture](culture.md)
     
 - [FileAs](fileas.md)
     
@@ -213,11 +213,11 @@ Die folgenden Elemente werden in der Antwort für eine GetItem-Anforderung mit d
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-- [GivenName](givenname.md)
+- [Givenname](givenname.md)
     
 - [Initialen](initials.md)
     
-- [Completename](completename.md)
+- [CompleteName](completename.md)
     
 - [FirstName](firstname.md)
     
@@ -229,13 +229,13 @@ Die folgenden Elemente werden in der Antwort für eine GetItem-Anforderung mit d
     
 - [EmailAddresses](emailaddresses.md)
     
-- [Eintrag (e-mailemail)](entry-emailaddress.md)
+- [Eintrag (EmailAddress)](entry-emailaddress.md)
     
 - [PhysicalAddresses](physicaladdresses.md)
     
 - [Eintrag (PhysicalAddress)](entry-physicaladdress.md)
     
-- [Straße](street.md)
+- [Street](street.md)
     
 - [City](city.md)
     
@@ -245,13 +245,13 @@ Die folgenden Elemente werden in der Antwort für eine GetItem-Anforderung mit d
     
 - [PhoneNumbers](phonenumbers.md)
     
-- [Eingabe (Faxnummer)](entry-phonenumber.md)
+- [Eintrag (PhoneNumber)](entry-phonenumber.md)
     
 - [JobTitle](jobtitle.md)
     
 - [Nachname](surname.md)
     
-## <a name="invalid-getitem-contact-request-example"></a>Ungültiges GetItem (Contact)-Anforderungs Beispiel
+## <a name="invalid-getitem-contact-request-example"></a>Ungültiges GetItem(Contact)-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
@@ -280,13 +280,13 @@ Das folgende Codebeispiel zeigt eine ungültige Anforderung.
 
 ### <a name="comments"></a>Comments
 
-Element-IDs wurden verkürzt, um die Lesbarkeit zu erhalten.
+Elementbezeichner wurden gekürzt, um die Lesbarkeit zu gewährleisten.
   
-## <a name="getitem-contact-error-response"></a>Fehlerantwort GetItem (Kontakt)
+## <a name="getitem-contact-error-response"></a>GetItem (Contact)-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Codebeispiel wird eine Fehlerantwort auf eine GetItem-Anforderung (Contact) angezeigt.
+Das folgende Codebeispiel zeigt eine Fehlerantwort auf eine GetItem (Contact)-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -334,7 +334,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
 ## <a name="see-also"></a>Siehe auch
 

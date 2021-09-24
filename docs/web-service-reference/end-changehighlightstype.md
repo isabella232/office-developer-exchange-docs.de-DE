@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 62b7d14c-8d71-4f28-b93e-8fe42d99022b
-description: Das End-Element gibt die an einer Besprechungs Endzeit vorgenommenen Änderungen an, wenn eine Besprechungsaktualisierung stattfindet.
-ms.openlocfilehash: 61d8c46af1999a506258dfa0cebf3a712962772a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das End-Element gibt die Änderungen an, die an einer Besprechungsendzeit vorgenommen werden, wenn eine Besprechungsaktualisierung erfolgt.
+ms.openlocfilehash: 584ddbe4aea23e7940506fc4ce46ffa9e8cb5683
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526200"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520703"
 ---
 # <a name="end-changehighlightstype"></a>End (ChangeHighlightsType)
 
-Das **End** -Element gibt die an einer Besprechungs Endzeit vorgenommenen Änderungen an, wenn eine Besprechungsaktualisierung stattfindet. 
+Das **End-Element** gibt die Änderungen an, die an einer Besprechungsendzeit vorgenommen werden, wenn eine Besprechungsaktualisierung erfolgt. 
   
 ```XML
 <End></End>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **End** -Elements ist die neue Endzeit einer Besprechung. 
+Der Textwert des **End-Elements** ist die neue Endzeit einer Besprechung. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

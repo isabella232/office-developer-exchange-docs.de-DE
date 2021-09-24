@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 268805b5-baf7-4826-b92e-cb9f9f5792ea
 description: Das DomainStringSetting-Element stellt eine Domäneneinstellung dar, deren Wert vom Typ String ist.
-ms.openlocfilehash: 791c4598d9f1ed471c3ce3b6083498b5da0f2b72
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 80ea8665a91bbc35fd00b6e951a585dc0ea6ca0f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463587"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520794"
 ---
 # <a name="domainstringsetting-soap"></a>DomainStringSetting (SOAP)
 
-Das **DomainStringSetting** -Element stellt eine Domäneneinstellung dar, deren Wert vom Typ String ist. 
+Das **DomainStringSetting-Element** stellt eine Domäneneinstellung dar, deren Wert vom Typ String ist. 
   
 ```XML
 <DomainStringSetting>
@@ -41,11 +41,11 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Name (SOAP)](name-soap.md) <br/> |Stellt den Namen einer Einstellung dar.  <br/> |
-|[Wert (SOAP)](value-soap.md) <br/> |Stellt einen Benutzer Einstellungswert dar.  <br/> |
+|[Wert (SOAP)](value-soap.md) <br/> |Stellt einen Wert für die Benutzereinstellung dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
@@ -56,8 +56,8 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

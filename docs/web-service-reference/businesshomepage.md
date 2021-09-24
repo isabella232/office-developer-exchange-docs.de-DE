@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - BusinessHomePage
 api_type:
 - schema
 ms.assetid: d7e16e32-c811-42d1-b6e9-cd9b7fbf3e0c
 description: Das BusinessHomePage-Element stellt die Startseite (Webadresse) für den Kontakt dar.
-ms.openlocfilehash: 55d96adc4703646b9abf07272c03125cb02b854b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fdbbc7c0b5f229086cf48f5f514e10462379d002
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465919"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519975"
 ---
 # <a name="businesshomepage"></a>BusinessHomePage
 
-Das **BusinessHomePage** -Element stellt die Startseite (Webadresse) für den Kontakt dar. 
+Das **BusinessHomePage-Element** stellt die Startseite (Webadresse) für den Kontakt dar. 
   
 ```xml
 <BusinessHomePage/>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt einen URI (Uniform Resource Identifier) für die Homepage dar.
+Der Textwert stellt einen URI (Uniform Resource Identifier) für die Startseite dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

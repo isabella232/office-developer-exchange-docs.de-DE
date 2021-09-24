@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Surname
 api_type:
 - schema
 ms.assetid: 73fc74f1-3be1-435c-9af9-233b3b12b603
-description: Das Element Nachname steht für den Namen eines Kontakts.
-ms.openlocfilehash: cc3c9ca89757735c5aa5cb9e335486f8daa07ccf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Surname-Element stellt den Nachnamen eines Kontakts dar.
+ms.openlocfilehash: 5158955e56a3f27e847513abe9be796b9ef52e86
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455926"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538947"
 ---
 # <a name="surname"></a>Nachname
 
-Das Element **Nachname** steht für den Namen eines Kontakts. 
+Das **Surname-Element** stellt den Nachnamen eines Kontakts dar. 
   
 ```xml
 <Surname/>
@@ -50,7 +50,7 @@ Keine.
 
 Ein Textwert ist erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

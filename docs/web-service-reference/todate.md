@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 15cdadfb-2636-44d6-84b7-d83ccad56fd7
-description: Das TODATE-Element gibt das Datum an, an dem die Nachricht empfangen wurde.
-ms.openlocfilehash: 1efff3d9484aa39562ad3d1e8ab01479999dda8a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ToDate-Element gibt das Datum an, an dem die Nachricht empfangen wurde.
+ms.openlocfilehash: 2c51fff71592a3094a085082104b993c34ce4f57
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468782"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520374"
 ---
 # <a name="todate"></a>ToDate
 
-Das **ToDate** -Element gibt das Datum an, an dem die Nachricht empfangen wurde. 
+Das **ToDate-Element** gibt das Datum an, an dem die Nachricht empfangen wurde. 
   
 ```XML
 <ToDate></ToDate>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ToDate** -Elements ist das Datum, an dem die Nachricht empfangen wurde. 
+Der Textwert des **ToDate-Elements** ist das Datum, an dem die Nachricht empfangen wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

@@ -1,35 +1,35 @@
 ---
-title: Zugreifen auf eine Terminserie mithilfe von EWS in Exchange
+title: Zugreifen auf eine Serienserie mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 196a5671-2836-4696-b734-d5ecfdbf8962
-description: Informationen zum Zugreifen auf Kalenderelemente in einer Terminserie mithilfe der verwaltete EWS-API oder EWS in Exchange.
-ms.openlocfilehash: dca41472b3b2f775f420b6654d7e43ef456b0583
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Erfahren Sie, wie Sie mithilfe der verwalteten EWS-API oder EWS in Exchange auf Kalenderelemente in einer Terminserie zugreifen.
+ms.openlocfilehash: 280affe532beb282bdd5cdb0c02a3dfaa62751e5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456892"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513241"
 ---
-# <a name="access-a-recurring-series-by-using-ews-in-exchange"></a>Zugreifen auf eine Terminserie mithilfe von EWS in Exchange
+# <a name="access-a-recurring-series-by-using-ews-in-exchange"></a>Zugreifen auf eine Serienserie mithilfe von EWS in Exchange
 
-Informationen zum Zugreifen auf Kalenderelemente in einer Terminserie mithilfe der verwaltete EWS-API oder EWS in Exchange.
+Erfahren Sie, wie Sie mithilfe der verwalteten EWS-API oder EWS in Exchange auf Kalenderelemente in einer Terminserie zugreifen.
   
-Eine wiederkehrende Reihe von Terminen oder Besprechungen besteht aus einem wiederkehrenden Master, einer Reihe von Vorkommen in einer Reihe, die nach einem festgelegten Muster wiederholt werden, und optional aus Mengen von vorkommen, die geändert wurden und gelöscht wurden. Sie können die verwaltete EWS-API oder EWS verwenden, um auf Kalenderelemente in einer wiederkehrenden Reihe zuzugreifen. Auf diese Weise können Sie Folgendes tun:
+Eine Terminserie oder Besprechungsserie besteht aus einem wiederkehrenden Master, einer Reihe von Vorkommen in einer Serie, die sich gemäß einem festgelegten Muster wiederholen, und optional aus Sätzen von Vorkommen, die geändert und gelöscht wurden. Sie können die verwaltete EWS-API oder EWS verwenden, um auf Kalenderelemente in einer Terminserie zuzugreifen. Auf diese Weise können Sie:
   
-- Überprüfen Sie, ob ein Kalenderelement, das einer Element-ID zugeordnet ist, ein wiederkehrendes Master-Objekt, ein Vorkommen in einer Datenreihe oder eine Ausnahme für eine Datenreihe ist.
+- Überprüfen Sie, ob ein kalenderelement, das einer Element-ID zugeordnet ist, ein wiederkehrendes Master-Shape, ein Vorkommen in einer Datenreihe oder eine Ausnahme zu einer Datenreihe ist.
     
-- Durchsuchen Sie Ihren Kalenderordner nach Serienterminen.
+- Durchsuchen Sie ihren Kalenderordner nach Serienterminen.
     
-- Abrufen verwandter Serien Kalenderelemente
+- Abrufen verwandter Serienkalenderelemente
     
-- Durchlaufen von Vorkommnissen in einer Datenreihe, Vorkommen von Ausnahmen oder Vorkommen von Löschungen.
+- Durchlaufen von Vorkommen in einer Datenreihe, Vorkommens ausnahmen oder Löschvorgänge.
     
-## <a name="get-a-collection-of-recurring-calendar-items-by-using-the-ews-managed-api"></a>Abrufen einer Auflistung von wiederkehrenden Kalenderelementen mithilfe der verwaltete EWS-API
+## <a name="get-a-collection-of-recurring-calendar-items-by-using-the-ews-managed-api"></a>Abrufen einer Sammlung wiederkehrender Kalenderelemente mithilfe der verwalteten EWS-API
 
-Wenn Sie eine Auflistung von Terminen abrufen möchten, können Sie die [Datei "ExchangeService. FindAppointments](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.findappointments%28v=exchg.80%29.aspx) -Methode verwenden, um alle Termine zwischen einem bestimmten Start-und Enddatum abzurufen, und anschließend alle Kalenderelemente mit einem Termintyp eines **Vorkommens** oder einer **Ausnahme** zu einer Auflistung hinzufügen, wie im folgenden Beispiel dargestellt. 
+Wenn Sie eine Sammlung von Terminen abrufen möchten, können Sie mit der [ExchangeService.FindAppointments-Methode](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.findappointments%28v=exchg.80%29.aspx) alle Termine zwischen einem bestimmten Anfangs- und Enddatum abrufen und dann alle Kalenderelemente mit dem Termintyp **"Occurrence"** oder **"Exception"** einer Auflistung hinzufügen, wie im folgenden Beispiel gezeigt. 
   
 In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben. 
   
@@ -66,7 +66,7 @@ public static Collection<Appointment> FindRecurringCalendarItems(ExchangeService
 
 ```
 
-Beachten Sie, dass wiederkehrende Master Kalenderelemente in einem Aufruf von **FindAppointments**nicht zurückgegeben werden. Wenn Sie wiederkehrende Master abrufen möchten oder einen allgemeineren Ansatz zum Abrufen von Kalenderelementen wünschen, müssen Sie [Datei "ExchangeService. FindItems](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)verwenden. Anschließend können Sie einen Suchfilter verwenden, um nur Elemente abzurufen, deren Startdatum größer oder gleich dem ausgewählten Datum ist, sowie eine Elementansicht, um die Anzahl der zurückzugebenden Elemente zu begrenzen. Beachten Sie, dass ein wiederkehrendes Master-Objekt mit einem Anfangstermin vor dem Startdatum in Ihrer Suche nicht gefunden wird, auch wenn in diesem Bereich vorkommen auftreten.
+Beachten Sie, dass wiederkehrende Masterkalenderelemente in einem Aufruf von **FindAppointments** nicht zurückgegeben werden. Wenn Sie wiederkehrende Master abrufen möchten oder einen allgemeineren Ansatz zum Abrufen von Kalenderelementen wünschen, müssen Sie [ExchangeService.FindItems](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)verwenden. Anschließend können Sie einen Suchfilter verwenden, um nur Elemente abzurufen, deren Startdatum größer oder gleich einem ausgewählten Datum ist, und eine Elementansicht, um die Anzahl der zurückzugebenden Elemente einzuschränken. Beachten Sie, dass ein serienweiser Master mit einem Startdatum vor dem Startdatum in Der Suche nicht gefunden wird, auch wenn Vorkommen in diesem Bereich auftreten.
   
 In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben. 
   
@@ -102,19 +102,19 @@ public static Collection<Appointment> FindCalendarItemsByAppointmentType(Exchang
 
 ```
 
-## <a name="get-related-recurrence-calendar-items-by-using-the-ews-managed-api"></a>Abrufen verwandter Serien Kalenderelemente mithilfe der verwaltete EWS-API
+## <a name="get-related-recurrence-calendar-items-by-using-the-ews-managed-api"></a>Abrufen verwandter Serienkalenderelemente mithilfe der verwalteten EWS-API
 
-Manchmal haben Sie ein Puzzleteil, aber um es zu lösen, benötigen Sie die restlichen Teile. Wenn Sie die Element-ID für ein Serien Kalenderelement haben, können Sie die anderen benötigten Teile mithilfe einer von mehreren verwaltete EWS-API Eigenschaften oder Methoden abrufen.
+Manchmal haben Sie ein Teil des Puzzles, aber um es zu lösen, benötigen Sie die restlichen Teile. Wenn Sie über die Element-ID für ein Serienkalenderelement verfügen, können Sie die anderen benötigten Teile abrufen, indem Sie eine von mehreren verwalteten EWS-API-Eigenschaften oder -Methoden verwenden.
   
-**Tabelle 1. Verwaltete EWS-API Eigenschaft oder Methode, mit der Verwandte Serien Kalenderelemente abgerufen werden können**
+**Tabelle 1. Verwaltete EWS-API-Eigenschaft oder -Methode zum Abrufen verwandter Serienkalenderelemente**
 
-|**Wenn Sie über die Element-ID für...**|**Sie können abrufen...**|**Mithilfe der...**|
+|**Wenn Sie die Element-ID für...**|**Sie können...**|**Mithilfe der...**|
 |:-----|:-----|:-----|
-|Das wiederkehrende Hauptkalender Element  <br/> | Das erste Vorkommen einer Datenreihe  <br/>  Das letzte Vorkommen einer Datenreihe  <br/>  Die Ausnahmen für eine Datenreihe  <br/>  Die gelöschten Termine in einer Reihe  <br/>  Jedes Vorkommen (aufgrund seines Indexes)  <br/> |[Termin. FirstOccurrence](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.firstoccurrence%28v=exchg.80%29.aspx) -Eigenschaft  <br/> [Termin. LastOccurrence](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.lastoccurrence%28v=exchg.80%29.aspx) -Eigenschaft  <br/> [Termin. ModifiedOccurrences](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.modifiedoccurrences%28v=exchg.80%29.aspx) -Eigenschaft  <br/> [Termin. DeletedOccurrences](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.deletedoccurrences%28v=exchg.80%29.aspx) -Eigenschaft  <br/> [Termin. BindToOccurrence](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.appointment.bindtooccurrence%28v=exchg.80%29.aspx) -Methode  <br/> |
-|Ein einzelnes Vorkommen in einer Datenreihe  <br/> |Der wiederkehrende Master  <br/> |[Termin. BindToRecurringMaster](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.appointment.bindtorecurringmaster%28v=exchg.80%29.aspx) -Methode  <br/> |
-|Beliebiges Kalenderelement (ein [Termin](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) Objekt)  <br/> |Der Aufzählungswert des [Termin Typs](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.appointmenttype%28v=exchg.80%29.aspx)  <br/> |[Termin. termintype](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.appointment.appointmenttype%28v=exchg.80%29.aspx) -Eigenschaft  <br/> |
+|Das Serienmasterkalenderelement  <br/> | Das erste Vorkommen in einer Datenreihe  <br/>  Das letzte Vorkommen in einer Datenreihe  <br/>  Die Ausnahmen zu einer Datenreihe  <br/>  Die gelöschten Termine in einer Reihe  <br/>  Ein beliebiges Vorkommen (mit angabe des Indexes)  <br/> |[Appointment.FirstOccurrence-Eigenschaft](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.firstoccurrence%28v=exchg.80%29.aspx)  <br/> [Appointment.LastOccurrence-Eigenschaft](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.lastoccurrence%28v=exchg.80%29.aspx)  <br/> [Appointment.ModifiedOccurrences-Eigenschaft](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.modifiedoccurrences%28v=exchg.80%29.aspx)  <br/> [Appointment.DeletedOccurrences-Eigenschaft](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.deletedoccurrences%28v=exchg.80%29.aspx)  <br/> [Appointment.BindToOccurrence-Methode](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.appointment.bindtooccurrence%28v=exchg.80%29.aspx)  <br/> |
+|Ein einzelnes Vorkommen in einer Datenreihe  <br/> |Der Serienmaster  <br/> |[Appointment.BindToRecurringMaster-Methode](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.appointment.bindtorecurringmaster%28v=exchg.80%29.aspx)  <br/> |
+|Ein beliebiges Kalenderelement (ein [Appointment-Objekt)](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx)  <br/> |Der [Enumerationswert des Termintyps](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.appointmenttype%28v=exchg.80%29.aspx)  <br/> |[Appointment.AppointmentType-Eigenschaft](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.appointment.appointmenttype%28v=exchg.80%29.aspx)  <br/> |
    
-Im folgenden Codebeispiel wird gezeigt, wie ein wiederkehrendes Master-Element, das erste oder letzte Vorkommen einer Datenreihe oder ein vorkommen, das seinen Index erhält, abgerufen wird.
+Das folgende Codebeispiel zeigt, wie sie einen Serienmaster, das erste oder letzte Vorkommen in einer Datenreihe oder ein Vorkommen mit dem Index abrufen.
   
 In diesem Beispiel wird davon ausgegangen, das Sie sich an einem Exchange-Server angemeldet haben und das [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt **service** erhalten haben. 
   
@@ -178,9 +178,9 @@ public static void GetRelatedRecurrenceCalendarItems(ExchangeService service, It
 
 ## <a name="access-calendar-items-in-a-recurring-series-by-using-ews"></a>Zugreifen auf Kalenderelemente in einer Terminserie mithilfe von EWS
 
-Der Zugriff auf Kalenderelemente in einer Terminserie ähnelt dem Zugriff auf einzelne Instanzen von Kalenderelementen. Sie verwenden eine [GetItem](https://msdn.microsoft.com/library/769df8eb-9c72-48b5-a49f-82c6b86bc5fc%28Office.15%29.aspx) -Vorgangsanforderung, die die gewünschten Eigenschaften angibt, mit dem [OccurrenceItemId](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) der benötigten Termin Instanz. Das [OccurrenceItemId](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) -Element enthält die **ItemID** des wiederkehrenden Masters des Ereignisses sowie den Indexwert in der Datenreihe. 
+Der Zugriff auf Kalenderelemente in einer Terminserie ähnelt dem Zugriff auf einzelne Instanzen von Kalenderelementen. Sie verwenden eine [GetItem-Vorgangsanforderung,](https://msdn.microsoft.com/library/769df8eb-9c72-48b5-a49f-82c6b86bc5fc%28Office.15%29.aspx) die die gewünschten Eigenschaften mit der [OccurrenceItemId](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) der benötigten Termininstanz angibt. Die [OccurrenceItemId](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) enthält die **ItemID** des Serienmasters des Vorkommens sowie den Indexwert in der Datenreihe. 
   
-Der folgende XML-Code zeigt die [GetItem](https://msdn.microsoft.com/library/769df8eb-9c72-48b5-a49f-82c6b86bc5fc%28Office.15%29.aspx) -Anforderung, die zum Zurückgeben eines Vorkommens in einer durch den Index angegebenen Datenreihe verwendet wird. Beachten Sie, dass die **ItemID** des wiederkehrenden Masters zur Lesbarkeit gekürzt wurde. 
+Der folgende XML-Code zeigt die [GetItem-Anforderung,](https://msdn.microsoft.com/library/769df8eb-9c72-48b5-a49f-82c6b86bc5fc%28Office.15%29.aspx) die verwendet wird, um ein Vorkommen in einer durch den Index angegebenen Datenreihe zurückzugeben. Beachten Sie, dass die **ItemID** des Serienmasters zur besseren Lesbarkeit gekürzt wurde. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -208,7 +208,7 @@ Der folgende XML-Code zeigt die [GetItem](https://msdn.microsoft.com/library/769
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **GetItem** -Anforderung mit einer [GetItemResponse](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) -Wert **noError**enthält, der angibt, dass die e-Mail erfolgreich erstellt wurde, und das [ItemID](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) der neu erstellten Nachricht. 
+Der Server antwortet auf die **GetItem-Anforderung** mit einer [GetItemResponse-Nachricht,](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) die den [ResponseCode-Wert](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) **NoError** enthält, der angibt, dass die E-Mail erfolgreich erstellt wurde, und die [ItemId](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) der neu erstellten Nachricht. 
   
 ## <a name="see-also"></a>Siehe auch
 

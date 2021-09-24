@@ -1,28 +1,28 @@
 ---
-title: Trennen (um-Webdienst)
+title: Disconnect (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Disconnect
 api_type:
 - schema
 ms.assetid: 2f8c1e8c-3bd4-4988-96b9-735c347b29f7
 description: Das Disconnect-Element definiert eine Anforderung zum Trennen eines Anrufs.
-ms.openlocfilehash: a00d957927a7a97d12c0d8c0c662956a18529cde
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6aaff910d85a963a926e7c2a74a91963b120392c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458453"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538373"
 ---
-# <a name="disconnect-um-web-service"></a>Trennen (um-Webdienst)
+# <a name="disconnect-um-web-service"></a>Disconnect (UM-Webdienst)
 
-Das **Disconnect** -Element definiert eine Anforderung zum Trennen eines Anrufs. 
+Das **Disconnect-Element** definiert eine Anforderung zum Trennen eines Anrufs. 
   
-- [Trennen (um-Webdienst)](disconnect-um-web-service.md)
+- [Disconnect (UM-Webdienst)](disconnect-um-web-service.md)
   
 ```xml
 <Disconnect>
@@ -43,11 +43,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Anrufdienst (um-Webdienst)](callid-um-web-service.md) <br/> |Der Bezeichner des Anrufs, der getrennt werden soll.  <br/> |
+|[CallId (UM-Webdienst)](callid-um-web-service.md) <br/> |Der Bezeichner des Anrufs, der getrennt werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
@@ -59,13 +59,13 @@ Keine.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Trennungsvorgang (um-Webdienst)](disconnect-operation-um-web-service.md)  
-- [PlayOnPhone-Vorgang (um-Webdienst)](playonphone-operation-um-web-service.md) 
-- [PlayOnPhoneGreeting-Vorgang (um-Webdienst)](playonphonegreeting-operation-um-web-service.md)  
-- [Anrufdienst (um-Webdienst)](callid-um-web-service.md)
+- [Disconnect-Vorgange (UM-Webdienst)](disconnect-operation-um-web-service.md)  
+- [PlayOnPhone-Vorgang (UM-Webdienst)](playonphone-operation-um-web-service.md) 
+- [PlayOnPhoneGreeting-Vorgang (UM-Webdienst)](playonphonegreeting-operation-um-web-service.md)  
+- [CallId (UM-Webdienst)](callid-um-web-service.md)
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DaysOfWeek
 api_type:
 - schema
 ms.assetid: c56f997d-28f3-4590-97b0-cb71f016dbe4
-description: Das DaysOfWeek-Element beschreibt Wochentage, die in Element Serien Mustern verwendet werden.
-ms.openlocfilehash: 3036cbe3f93ff87b9a4d5dc7bf164e3e952b06fd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DaysOfWeek-Element beschreibt Wochentage, die in Elementserienmustern verwendet werden.
+ms.openlocfilehash: 9b0786149f943c47ab77bcb69b74542cbc08edd5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463720"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519870"
 ---
 # <a name="daysofweek-daysofweektype"></a>DaysOfWeek (DaysOfWeekType)
 
-Das **DaysOfWeek** -Element beschreibt Wochentage, die in Element Serien Mustern verwendet werden. 
+Das **DaysOfWeek-Element** beschreibt Wochentage, die in Elementserienmustern verwendet werden. 
   
 ```XML
 <DaysOfWeek/>
@@ -58,15 +58,15 @@ Ein Textwert ist erforderlich. Im Folgenden sind die möglichen Werte aufgeführ
 - Donnerstag    
 - Freitag    
 - Samstag    
-- Tag (dieser Wert ist für ein wöchentliches Serienmuster ungültig)    
-- Wochentag (dieser Wert ist für ein wöchentliches Serienmuster ungültig)    
-- WeekendDay (dieser Wert ist für ein wöchentliches Serienmuster ungültig)
+- Tag (dieser Wert gilt nicht für ein wöchentliches Serienmuster)    
+- Wochentag (dieser Wert ist nicht gültig für ein wöchentliches Serienmuster)    
+- WeekendDay (dieser Wert ist nicht gültig für ein wöchentliches Serienmuster)
     
-Ein wöchentliches Serienmuster kann mehrere Werte enthalten. Werte werden durch ein Leerzeichengetrennt. Bei einer wöchentlichen Wiederholung dienstags und donnerstags ist der Textwert beispielsweise "Dienstag Donnerstag".
+Ein wöchentliches Serienmuster kann mehrere Werte enthalten. Werte werden durch ein Leerzeichen getrennt. For example, for a weekly recurrence on Tuesdays and Donnerstags, the text value will be "Tuesday Thursday".
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

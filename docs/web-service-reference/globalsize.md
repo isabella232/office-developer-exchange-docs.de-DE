@@ -1,27 +1,27 @@
 ---
-title: Globals
+title: GlobalSize
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GlobalSize
 api_type:
 - schema
 ms.assetid: 23c24437-8dab-4c86-888d-471d23af675a
-description: Das Globals-Element enthält die Größe der Unterhaltung, die von der Größe aller Unterhaltungselemente im Postfach berechnet wird.
-ms.openlocfilehash: d23ab080dadb006cd5eff9d712d081fe7d94a2a8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GlobalSize-Element enthält die Größe der Unterhaltung, die aus der Größe aller Unterhaltungselemente im Postfach berechnet wird.
+ms.openlocfilehash: 39172ecb719de61eb3144ddd2f365c4e97c9822e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462451"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533291"
 ---
-# <a name="globalsize"></a>Globals
+# <a name="globalsize"></a>GlobalSize
 
-Das **Globals** -Element enthält die Größe der Unterhaltung, die von der Größe aller Unterhaltungselemente im Postfach berechnet wird. 
+Das **GlobalSize-Element** enthält die Größe der Unterhaltung, die aus der Größe aller Unterhaltungselemente im Postfach berechnet wird. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -29,13 +29,13 @@ Das **Globals** -Element enthält die Größe der Unterhaltung, die von der Grö
   
 [Unterhaltung (ConversationType)](conversation-conversationtype.md)
   
-[Globals](globalsize.md)
+[GlobalSize](globalsize.md)
   
 ```XML
 <GlobalSize/>
 ```
 
- **xs: int**
+ **xs:int**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -56,9 +56,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Globals** -Elements ist die Größe der Unterhaltung, die von der Größe aller Unterhaltungselemente im Postfach berechnet wird. 
+Der Textwert des **GlobalSize-Elements** entspricht der Größe der Unterhaltung, die aus der Größe aller Unterhaltungselemente im Postfach berechnet wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

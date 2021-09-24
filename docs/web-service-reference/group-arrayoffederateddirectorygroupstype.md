@@ -1,23 +1,23 @@
 ---
-title: Gruppe (ArrayOfFederatedDirectoryGroupsType)
+title: Group (ArrayOfFederatedDirectoryGroupsType)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0474a5b4-1a48-4df6-a094-baf35d9a1083
-description: Das Group (ArrayOfFederatedDirectoryGroupsType)-Element ist nur für die interne Verwendung vorgesehen.
-ms.openlocfilehash: 7938b571f7cc48dd60b14429b8e21bad1eb26300
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Group -Element (ArrayOfFederatedDirectoryGroupsType) ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 0e5d11b82fa14ab84043067a15da57a964723bfc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462829"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537926"
 ---
-# <a name="group-arrayoffederateddirectorygroupstype"></a>Gruppe (ArrayOfFederatedDirectoryGroupsType)
+# <a name="group-arrayoffederateddirectorygroupstype"></a>Group (ArrayOfFederatedDirectoryGroupsType)
 
-Das **Group (ArrayOfFederatedDirectoryGroupsType)-** Element ist nur für die interne Verwendung vorgesehen. 
+Das **Group -Element (ArrayOfFederatedDirectoryGroupsType)** ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

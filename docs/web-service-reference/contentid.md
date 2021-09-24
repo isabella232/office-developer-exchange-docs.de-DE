@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ContentId
 api_type:
 - schema
 ms.assetid: bc59100d-6079-414b-a6e0-7c15feaa3184
-description: Das Content-ID-Element stellt einen Bezeichner für den Inhalt einer Anlage dar. Die Inhalts-Nr kann auf einen beliebigen Zeichenfolgenwert festgelegt werden. Anwendungen können mithilfe von Content-ID eigene Identifikations Mechanismen implementieren.
-ms.openlocfilehash: ca89c8790e839326412003f26b738ad1ee956211
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ContentId-Element stellt einen Bezeichner für den Inhalt einer Anlage dar. ContentId kann auf einen beliebigen Zeichenfolgenwert festgelegt werden. Anwendungen können ContentId verwenden, um ihre eigenen Identifikationsmechanismen zu implementieren.
+ms.openlocfilehash: 786a76d312e4b8f276a9b5c7082754b873b0061c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529266"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519912"
 ---
 # <a name="contentid"></a>ContentId
 
-Das **Content** -ID-Element stellt einen Bezeichner für den Inhalt einer Anlage dar. Die **Inhalts** -Nr kann auf einen beliebigen Zeichenfolgenwert festgelegt werden. Anwendungen können mithilfe von **Content** -ID eigene Identifikations Mechanismen implementieren. 
+Das **ContentId-Element** stellt einen Bezeichner für den Inhalt einer Anlage dar. **ContentId** kann auf einen beliebigen Zeichenfolgenwert festgelegt werden. Anwendungen können **ContentId** verwenden, um ihre eigenen Identifikationsmechanismen zu implementieren. 
   
 ```xml
 <ContentId/>
@@ -44,14 +44,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange-Element dar, das an ein anderes Exchange-Element angefügt ist.  <br/> |
-|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die an ein Element im Exchange-Informationsspeicher angefügt ist.  <br/> |
+|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange Element dar, das einem anderen Exchange Element zugeordnet ist.  <br/> |
+|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die an ein Element im Exchange Speicher angefügt ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der String-Wert stellt den Bezeichner für den Inhalt einer Anlage dar.
+Der Zeichenfolgenwert stellt den Bezeichner für den Inhalt einer Anlage dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

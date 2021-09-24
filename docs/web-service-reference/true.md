@@ -1,25 +1,25 @@
 ---
-title: Wahr
+title: Richtig
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 96b4c288-c4d5-4378-8fc1-1a3ae98eedc9
-description: Das true-Element gibt eine Bedingung an, die immer übereinstimmt.
-ms.openlocfilehash: 6ac0bc407c9c4cab23805d042e67d99359900137
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das True-Element gibt eine Bedingung an, die immer übereinstimmt.
+ms.openlocfilehash: 8dca53009dd6dd22db32a294324c5b9745de894a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467403"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520304"
 ---
-# <a name="true"></a>Wahr
+# <a name="true"></a>Richtig
 
-Das **true** -Element gibt eine Bedingung an, die immer übereinstimmt. 
+Das **True-Element** gibt eine Bedingung an, die immer übereinstimmt. 
   
 ```xml
 <True/>
@@ -43,14 +43,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Bedingung](condition.md) <br/> |Gibt die Bedingung an, die erfüllt sein muss, damit der Aktions Teil der Regel ausgeführt wird.  <br/> |
-|[Und (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Gibt an, dass alle untergeordneten Elemente übereinstimmen müssen, damit Sie zu **true**ausgewertet werden.  <br/> |
+|[Bedingung](condition.md) <br/> |Gibt die Bedingung an, die erfüllt sein muss, damit der Aktionsteil der Regel ausgeführt wird.  <br/> |
+|[Und (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Gibt an, dass alle untergeordneten Elemente übereinstimmen müssen, um zu **"true"** ausgewertet zu werden.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Dieses Element muss leer sein.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

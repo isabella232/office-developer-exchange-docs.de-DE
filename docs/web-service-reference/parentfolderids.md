@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ParentFolderIds
 api_type:
 - schema
 ms.assetid: e7998023-e5e0-465c-91fa-2aa6d1559f64
-description: Das ParentFolderIds-Element identifiziert Ordner für die zu durchsuchenden FindItem-und FindFolder-Vorgänge.
-ms.openlocfilehash: 6bc4b9cfe96c6c83cbeb623ec176e33177356bbc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ParentFolderIds-Element identifiziert Ordner für die Zu durchsuchenden FindItem- und FindFolder-Vorgänge.
+ms.openlocfilehash: e9e0f14651b205ad64be04dbe1d0707a109f3edc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465429"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512905"
 ---
 # <a name="parentfolderids"></a>ParentFolderIds
 
-Das **ParentFolderIds** -Element identifiziert Ordner für die zu durchsuchenden FindItem-und FindFolder-Vorgänge. 
+Das **ParentFolderIds-Element** identifiziert Ordner für die Zu durchsuchenden FindItem- und FindFolder-Vorgänge. 
   
 ```xml
 <ParentFolderIds>
@@ -49,8 +49,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Enthält den Bezeichner und den Änderungsschlüssel eines Ordners. Das **ParentFolderIds** -Element muss entweder dieses Element oder das [DistinguishedFolderId](distinguishedfolderid.md) -Element verwenden.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifiziert Microsoft Exchange Server 2007 Ordner, auf die über den Namen verwiesen werden kann. Das **ParentFolderIds** -Element muss entweder dieses Element oder das [folderin](folderid.md) -Element verwenden.  <br/> |
+|[FolderId](folderid.md) <br/> |Enthält den Bezeichner und den Änderungsschlüssel eines Ordners. Das **ParentFolderIds-Element** muss entweder dieses Element oder das [DistinguishedFolderId-Element](distinguishedfolderid.md) verwenden.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifiziert Microsoft Exchange Server 2007-Ordner, auf die anhand des Namens verwiesen werden kann. Das **ParentFolderIds-Element** muss entweder dieses Element oder das [FolderId-Element](folderid.md) verwenden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -58,11 +58,11 @@ Keine.
 |:-----|:-----|
 |[FindFolder](findfolder.md) <br/> |Definiert eine Anforderung zum Identifizieren von Ordnern in einem Postfach.  <br/> |
 |[FindItem](finditem.md) <br/> |Definiert eine Anforderung zum Suchen von Elementen in einem Postfach.  <br/> |
-|[ResolveNames](resolvenames.md) <br/> |Definiert eine Anforderung zum Auflösen eindeutiger Namen.  <br/> |
+|[ResolveNames](resolvenames.md) <br/> |Definiert eine Anforderung zum Auflösen von mehrdeutigen Namen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das **ParentFolderIds** -Element muss entweder die [Folder](folderid.md) -oder das [DistinguishedFolderId](distinguishedfolderid.md) -Element verwenden. Für die Suche kann eine unbegrenzte Anzahl von Ordnern definiert werden. 
+Das **ParentFolderIds-Element** muss entweder die [FolderId](folderid.md) oder das [DistinguishedFolderId-Element](distinguishedfolderid.md) verwenden. Für die Suche kann eine unbegrenzte Anzahl von Ordnern definiert werden. 
   
 ## <a name="example"></a>Beispiel
 
@@ -89,7 +89,7 @@ Das **ParentFolderIds** -Element muss entweder die [Folder](folderid.md) -oder d
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

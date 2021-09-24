@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cdfc4edd-463c-409b-9bef-6fb915d00b99
-description: Das StartTime-Element (ReminderMessageDataType) gibt die Startzeit des Elements an, für das die Erinnerung gilt.
-ms.openlocfilehash: bdd940656d5441a0a36cfcef8f4e0b5db1474a7a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das StartTime-Element (ReminderMessageDataType) gibt die Startzeit des Elements an, für das die Erinnerung verwendet wird.
+ms.openlocfilehash: 85bf86250c13239691e6b47d92390bc11eb8cbd6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458999"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539017"
 ---
 # <a name="starttime-remindermessagedatatype"></a>StartTime (ReminderMessageDataType)
 
-Das StartTime **-Element (ReminderMessageDataType)** gibt die Startzeit des Elements an, für das die Erinnerung gilt. 
+Das StartTime-Element **(ReminderMessageDataType)** gibt die Startzeit des Elements an, für das die Erinnerung verwendet wird. 
   
 ```XML
 <StartTime/>
@@ -43,9 +43,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des StartTime-Elements **(ReminderMessageDataType)** ist die Startzeit des Elements, für das die Erinnerung gilt. 
+Der Textwert des **StartTime-Elements (ReminderMessageDataType)** ist die Startzeit des Elements, für das die Erinnerung verwendet wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

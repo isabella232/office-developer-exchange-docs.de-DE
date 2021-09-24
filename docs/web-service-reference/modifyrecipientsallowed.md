@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3f25e673-0df0-4285-bf03-a083a395cdab
 description: Das ModifyRecipientsAllowed-Element gibt an, ob die Änderung der Empfänger aktiviert ist.
-ms.openlocfilehash: 3154ec3aceb2da7911002d505e0c452bf920d71f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 4366f9ed0a6843f9a297718cb999fb8c3a02ee17
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465695"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520395"
 ---
 # <a name="modifyrecipientsallowed"></a>ModifyRecipientsAllowed
 
-Das **ModifyRecipientsAllowed** -Element gibt an, ob die Änderung der Empfänger aktiviert ist. 
+Das **ModifyRecipientsAllowed-Element** gibt an, ob die Änderung der Empfänger aktiviert ist. 
   
 ```XML
 <ModifyRecipientsAllowed> true | false </ModifyRecipientsAllowed>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **ModifyRecipientsAllowed** -Element gibt an, dass die Element Empfängerliste für ein Element mit aktivierter Rechteverwaltung geändert werden kann. Der Wert **false** gibt an, dass die Empfängerliste nicht geändert werden kann. 
+Der Textwert **"true"** für das **ModifyRecipientsAllowed-Element** gibt an, dass die Elementempfängerliste für ein Element mit aktivierter Rechteverwaltung geändert werden kann. Der Wert **"false"** gibt an, dass die Empfängerliste nicht geändert werden kann. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

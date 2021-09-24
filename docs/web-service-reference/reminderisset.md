@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ReminderIsSet
 api_type:
 - schema
 ms.assetid: fa366afe-77a0-4c14-9edb-ffc9699131ba
-description: Das ReminderIsSet-Element gibt an, ob eine Erinnerung für ein Element in der Exchange-Informationsspeicher festgelegt wurde.
-ms.openlocfilehash: 293391866ae769f697f865749335c9323839a1d9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ReminderIsSet-Element gibt an, ob eine Erinnerung für ein Element im Exchange Speicher festgelegt wurde.
+ms.openlocfilehash: 2faa32b9b58789ecefd3b0c412d764765d5afada
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528720"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513423"
 ---
 # <a name="reminderisset"></a>ReminderIsSet
 
-Das **ReminderIsSet** -Element gibt an, ob eine Erinnerung für ein Element in der Exchange-Informationsspeicher festgelegt wurde. 
+Das **ReminderIsSet-Element** gibt an, ob eine Erinnerung für ein Element im Exchange Speicher festgelegt wurde. 
   
 ```xml
 <ReminderIsSet/>
@@ -58,9 +58,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass eine Erinnerung festgelegt wurde. 
+Der Textwert **"true"** gibt an, dass eine Erinnerung festgelegt wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

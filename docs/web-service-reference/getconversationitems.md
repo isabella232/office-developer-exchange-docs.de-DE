@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4f7bcd0f-140c-4cbc-a5ed-daeffded1df1
-description: Das GetConversationItems-Element definiert eine Anforderung zum Abrufen einer Gruppe von Elementen, die in der gleichen Unterhaltung miteinander verknüpft sind.
-ms.openlocfilehash: cde4bc2c39ccbc51b7436c87c4bc06e3b8d7e52c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GetConversationItems-Element definiert eine Anforderung zum Abrufen eines Satzes von Elementen, die sich in derselben Unterhaltung befinden.
+ms.openlocfilehash: 0bd792553cbab0c03a6c2cd5bfdbc18dfeba4273
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457746"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538117"
 ---
 # <a name="getconversationitems"></a>GetConversationItems
 
-Das **GetConversationItems** -Element definiert eine Anforderung zum Abrufen einer Gruppe von Elementen, die in der gleichen Unterhaltung miteinander verknüpft sind. 
+Das **GetConversationItems-Element** definiert eine Anforderung zum Abrufen eines Satzes von Elementen, die sich in derselben Unterhaltung befinden. 
   
 ```XML
 <GetConversationItems>
@@ -41,13 +41,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[ItemShape](itemshape.md)  |  [FoldersToIgnore](folderstoignore.md)  |  [MaxItemsToReturn](maxitemstoreturn.md)  |  [Sortierreihenfolge (ConversationNodeSortOrder)](sortorder-conversationnodesortorder.md)  |  [MailboxScope](mailboxscope.md)  |  Unter [Haltungen](conversations-ex15websvcsotherref.md)
+[ItemShape](itemshape.md)  |  [FoldersToIgnore](folderstoignore.md)  |  [MaxItemsToReturn](maxitemstoreturn.md)  |  [SortOrder (ConversationNodeSortOrder)](sortorder-conversationnodesortorder.md)  |  [MailboxScope](mailboxscope.md)  |  [Unterhaltungen](conversations-ex15websvcsotherref.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -59,7 +59,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 
