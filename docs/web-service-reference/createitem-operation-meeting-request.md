@@ -1,37 +1,37 @@
 ---
-title: CreateItem-Vorgang (Besprechungsanfrage)
+title: CreateItem-Vorgang (Besprechungsanforderung)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateItem
 api_type:
 - schema
 ms.assetid: fe136881-a804-456a-8552-8a1bea5eb9c8
-description: Der CreateItem-Vorgang wird verwendet, um auf Besprechungsanfragen zu reagieren.
-ms.openlocfilehash: f9e6bd1742e6a30d08736ea67c0ff80b7a18e88a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der CreateItem-Vorgang wird verwendet, um auf Besprechungsanfragen zu antworten.
+ms.openlocfilehash: de845271bc47f08e60a1b4943a00551a42056388
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457109"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524371"
 ---
-# <a name="createitem-operation-meeting-request"></a>CreateItem-Vorgang (Besprechungsanfrage)
+# <a name="createitem-operation-meeting-request"></a>CreateItem-Vorgang (Besprechungsanforderung)
 
-Der CreateItem-Vorgang wird verwendet, um auf Besprechungsanfragen zu reagieren.
+Der CreateItem-Vorgang wird verwendet, um auf Besprechungsanfragen zu antworten.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der CreateItem-Vorgang bietet drei Optionen für die Antwort auf eine Besprechungsanfrage: akzeptieren, mit Vorbehalt annehmen oder ablehnen. 
+Der CreateItem-Vorgang bietet drei Optionen für die Reaktion auf eine Besprechungsanfrage: annehmen, mit Vorbehalt annehmen oder ablehnen. 
   
-## <a name="accept-meeting-request-example"></a>Beispiel für die Annahme einer Besprechungsanfrage
+## <a name="accept-meeting-request-example"></a>Beispiel für "Besprechungsanfrage annehmen"
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt, wie Sie eine Einladung zur Besprechungsanfrage annehmen.
+Das folgende Beispiel zeigt, wie sie eine Besprechungsanfrageseinladung annehmen.
   
 ### <a name="code"></a>Code
 
@@ -55,23 +55,23 @@ Das folgende Beispiel zeigt, wie Sie eine Einladung zur Besprechungsanfrage anne
 
 ### <a name="comments"></a>Comments
 
-Um die Besprechungsanfrage vorläufig anzunehmen oder abzulehnen, verwenden Sie die [TentativelyAcceptItem](tentativelyacceptitem.md) -oder [DeclineItem](declineitem.md) -Elemente anstelle des [AcceptItem](acceptitem.md) -Elements. 
+Um die Besprechungsanfrage mit Vorbehalt anzunehmen oder abzulehnen, verwenden Sie die Elemente [TentativelyAcceptItem](tentativelyacceptitem.md) oder [DeclineItem](declineitem.md) anstelle des [AcceptItem-Elements.](acceptitem.md) 
   
-Die Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten.
+Der Elementbezeichner und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten.
   
-### <a name="accepting-meeting-request-elements"></a>Akzeptieren von Elementen der Besprechungsanfrage
+### <a name="accepting-meeting-request-elements"></a>Akzeptieren von Besprechungsanfrageelementen
 
 In der Anforderung werden folgende Elemente verwendet:
   
 - [CreateItem](createitem.md)
     
-- [Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 - [AcceptItem](acceptitem.md)
     
 - [ReferenceItemId](referenceitemid.md)
     
-## <a name="successful-accept-meeting-response-example"></a>Beispiel für erfolgreiche Annahme einer Besprechungsantwort
+## <a name="successful-accept-meeting-response-example"></a>Beispiel für erfolgreiches Annehmen einer Besprechung
 
 ### <a name="description"></a>Beschreibung
 
@@ -117,13 +117,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
-## <a name="accept-meeting-error-response-example"></a>Beispiel für die Annahme einer Besprechungs Fehlerantwort
+## <a name="accept-meeting-error-response-example"></a>Beispiel für Antwort auf "Besprechungsfehler akzeptieren"
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf CreateItem-Anforderung. Der Fehler wird durch den Versuch verursacht, eine Besprechungsanfrage anzunehmen, die im Exchange-Informationsspeicher nicht gefunden werden kann.
+Das folgende Beispiel zeigt eine Fehlerantwort auf die CreateItem-Anforderung. Der Fehler wird durch den Versuch verursacht, eine Besprechungsanfrage zu akzeptieren, die im Exchange Speicher nicht gefunden werden kann.
   
 ### <a name="code"></a>Code
 
@@ -171,7 +171,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
 ## <a name="see-also"></a>Siehe auch
 

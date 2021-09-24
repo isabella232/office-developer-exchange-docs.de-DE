@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ManagedFolderInformation
 api_type:
 - schema
 ms.assetid: dea980eb-8303-47fe-a380-20a8efc9ead6
 description: Das ManagedFolderInformation-Element enthält Informationen zu einem verwalteten benutzerdefinierten Ordner.
-ms.openlocfilehash: ce15dcb15cccdce253494beefd2f4a2a7a0c0ad8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f25daeff82b4a30574a627f290c2fcd336a38a6c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44450949"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524798"
 ---
 # <a name="managedfolderinformation"></a>ManagedFolderInformation
 
-Das **ManagedFolderInformation** -Element enthält Informationen zu einem verwalteten benutzerdefinierten Ordner. 
+Das **ManagedFolderInformation-Element** enthält Informationen zu einem verwalteten benutzerdefinierten Ordner. 
   
 ```xml
 <ManagedFolderInformation>
@@ -54,22 +54,22 @@ Keine.
 |[CanDelete](candelete.md) <br/> |Gibt an, ob ein verwalteter Ordner von einem Kunden gelöscht werden kann.  <br/> |
 |[CanRenameOrMove](canrenameormove.md) <br/> |Gibt an, ob ein bestimmter verwalteter Ordner vom Kunden umbenannt oder verschoben werden kann.  <br/> |
 |[MustDisplayComment](mustdisplaycomment.md) <br/> |Gibt an, ob der Kommentar des verwalteten Ordners angezeigt werden muss.  <br/> |
-|[HasQuota](hasquota.md) <br/> |Gibt an, ob der verwaltete Ordner ein Kontingent aufweist.  <br/> |
+|[HasQuota](hasquota.md) <br/> |Gibt an, ob der verwaltete Ordner über ein Kontingent verfügt.  <br/> |
 |[IsManagedFoldersRoot](ismanagedfoldersroot.md) <br/> |Gibt an, ob der verwaltete Ordner der Stamm für alle verwalteten Ordner ist.  <br/> |
 |[ManagedFolderId](managedfolderid.md) <br/> |Enthält die Ordner-ID des verwalteten Ordners.  <br/> |
 |[Kommentar](comment.md) <br/> |Enthält den Kommentar, der einem verwalteten Ordner zugeordnet ist.  <br/> |
 |[StorageQuota](storagequota.md) <br/> |Beschreibt das Speicherkontingent für den verwalteten Ordner.  <br/> |
 |[FolderSize](foldersize.md) <br/> |Beschreibt die Gesamtgröße aller Inhalte eines verwalteten Ordners.  <br/> |
-|[HomePage](homepage.md) <br/> |Gibt die URL an, die als Standardstartseite für den verwalteten Ordner verwendet wird.  <br/> |
+|[HomePage](homepage.md) <br/> |Gibt die URL an, die die Standardstartseite für den verwalteten Ordner sein wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Folder](folder.md) <br/> |Stellt einen Ordner im Exchange-Informationsspeicher dar. Verwaltete benutzerdefinierte Ordner können nur Unterordner des Ordners mit dem Namen " **verwaltete Ordner**" sein.  <br/> |
-|[CalendarFolder](calendarfolder.md) <br/> |Nicht zutreffend.  <br/> |
-|[ContactsFolder](contactsfolder.md) <br/> |Nicht zutreffend.  <br/> |
-|[SearchFolder](searchfolder.md) <br/> |Nicht zutreffend.  <br/> |
+|[Folder](folder.md) <br/> |Stellt einen Ordner im Exchange Speicher dar. Verwaltete benutzerdefinierte Ordner können nur Unterordner des Ordners mit dem Namen **"Verwaltete Ordner"** sein.  <br/> |
+|[CalendarFolder](calendarfolder.md) <br/> |Nicht zutreffend  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |Nicht zutreffend  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Nicht zutreffend  <br/> |
 |[TasksFolder](tasksfolder.md) <br/> |Nicht zutreffend  <br/> |
    
 ## <a name="remarks"></a>HinwBemerkungeneise

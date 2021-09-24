@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Sender
 api_type:
 - schema
 ms.assetid: 26d1a46e-e1d3-44b8-a02d-fa6f83aa5cda
 description: Das Sender-Element identifiziert den Absender eines Elements.
-ms.openlocfilehash: f056fefdd5c5832d4b5bf20416e07e376f6a03de
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 759bf120f852643e0076191c79486c52863bfe0b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530579"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521602"
 ---
 # <a name="sender"></a>Absender
 
-Das **Sender** -Element identifiziert den Absender eines Elements. 
+Das **Sender-Element** identifiziert den Absender eines Elements. 
   
 ```xml
 <Sender>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Postfach](mailbox.md) <br/> |Identifiziert ein e-Mail-Active Directory-Objekt, das den Absender identifiziert.  <br/> |
+|[Postfach](mailbox.md) <br/> |Identifiziert ein E-Mail-aktiviertes Active Directory-Objekt, das den Absender identifiziert.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -61,9 +61,9 @@ Keine.
 |[ReplyAllToItem](replyalltoitem.md) <br/> |Enthält eine Antwort an alle identifizierten Empfänger eines Elements in der Exchange-Speicher.  <br/> |
 |[ForwardItem](forwarditem.md) <br/> |Enthält ein Exchange-Speicher-Element an Empfänger weitergeleitet.  <br/> |
 |[CancelCalendarItem](cancelcalendaritem.md) <br/> |Stellt das Antwortobjekt dar, das zum Abbrechen einer Besprechung verwendet wird.  <br/> |
-|[PostItem](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Informationsspeicher dar. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
+|[PostItem](postitem.md) <br/> |Stellt ein Beitragselement im Exchange Informationsspeicher dar. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

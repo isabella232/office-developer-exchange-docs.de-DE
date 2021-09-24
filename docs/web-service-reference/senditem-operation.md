@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SendItem
 api_type:
 - schema
 ms.assetid: 337b89ef-e1b7-45ed-92f3-8abe4200e4c7
-description: Der SendItem-Vorgang wird zum Senden von e-Mail-Nachrichten verwendet, die sich im Exchange-Informationsspeicher befinden.
-ms.openlocfilehash: 9136379e50723211fe5a483c7f113da4fa125fc1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der SendItem-Vorgang wird verwendet, um E-Mail-Nachrichten zu senden, die sich im Exchange Speicher befinden.
+ms.openlocfilehash: d1e43cdceb3a594c3fa2f028502a3bfedbbf85a1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530338"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521585"
 ---
 # <a name="senditem-operation"></a>SendItem-Vorgang
 
-Der SendItem-Vorgang wird zum Senden von e-Mail-Nachrichten verwendet, die sich im Exchange-Informationsspeicher befinden.
+Der SendItem-Vorgang wird verwendet, um E-Mail-Nachrichten zu senden, die sich im Exchange Speicher befinden.
   
-## <a name="senditem-e-mail-message-request-example"></a>SendItem (e-Mail-Nachricht)-Anforderungs Beispiel
+## <a name="senditem-e-mail-message-request-example"></a>SendItem-Anforderungsbeispiel (E-Mail-Nachricht)
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt, wie Sie eine e-Mail-Nachricht senden.
+Das folgende Beispiel zeigt, wie Sie eine E-Mail-Nachricht senden.
   
 ### <a name="code"></a>Code
 
@@ -49,7 +49,7 @@ Das folgende Beispiel zeigt, wie Sie eine e-Mail-Nachricht senden.
 
 ### <a name="comments"></a>Comments
 
-Die Element-ID wurde verkürzt, um die Lesbarkeit beizubehalten.
+Der Elementbezeichner wurde gekürzt, um die Lesbarkeit zu gewährleisten.
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -61,7 +61,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [ItemId](itemid.md)
     
-## <a name="successful-senditem-e-mail-message-response"></a>Erfolgreiche SendItem-Antwort (e-Mail-Nachricht)
+## <a name="successful-senditem-e-mail-message-response"></a>Erfolgreiche SendItem-Antwort (E-Mail-Nachricht)
 
 ### <a name="description"></a>Beschreibung
 
@@ -108,11 +108,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 ### <a name="comments"></a>Kommentare
 
-Ein Stellvertreter, der versucht, eine e-Mail-Nachricht zu senden, die sich im Ordner "Entwürfe" des Prinzipals befindet, wobei die Option SendAndSaveCopy, um eine Kopie im Distinguished Folder gesendete Elemente zu speichern, automatisch fehlschlägt, um eine Kopie des gesendeten Elements in den Distinguished Folder für gesendete Elemente zu verlegen. Das Element bleibt im Ordner Entwürfe des Prinzipals erhalten. Die Problemumgehung für dieses Problem besteht darin, das Postfach des Prinzipals im [DistinguishedFolderId](distinguishedfolderid.md) -Element anzugeben. 
+Ein Delegat, der versucht, eine E-Mail-Nachricht zu senden, die sich im Ordner "Entwürfe" des Prinzipals mit der Option "SendAndSaveCopy" befindet, um eine Kopie im Ordner "Gesendete Elemente" zu speichern, kann im Hintergrund eine Kopie des gesendeten Elements nicht in den Ordner "Gesendete Elemente" verschieben. Das Element verbleibt im Ordner "Entwürfe" des Prinzipals. Die Problemumgehung für dieses Problem besteht darin, das Postfach des Prinzipals im [DistinguishedFolderId-Element](distinguishedfolderid.md) anzugeben. 
   
-Ein weiteres zu berücksichtigender Fall ist, wenn eine Stellvertretung eine e-Mail-Nachricht erstellt und im Ordner "Entwürfe" des Postfachs des Stellvertreters speichert. Wenn der Stellvertreter versucht, das Element zu senden und eine Kopie im Distinguished Items-Ordner des Prinzipals zu speichern, die Nachricht ordnungsgemäß gesendet wird, die Entwurfsnachricht im Ordner "Entwürfe" des Stellvertreters verbleibt, wird die gesendete Nachricht nicht im Ordner "Gesendete Elemente" des Stellvertreters oder des Prinzipals angezeigt, und die Antwort ist erfolgreich.
+Ein weiteres zu berücksichtigendes Szenario ist, wenn ein Delegat eine E-Mail-Nachricht erstellt und im Ordner "Entwürfe" des Postfachs der Stellvertretung speichert. Wenn der Delegat versucht, das Element zu senden und eine Kopie im Ordner "Gesendete Elemente" des Prinzipals zu speichern, wird die Nachricht ordnungsgemäß gesendet, die Entwurfsnachricht verbleibt im Ordner "Entwürfe", die gesendete Nachricht wird weder im Ordner "Gesendete Elemente" des Stellvertreters noch im Ordner "Gesendete Elemente" des Prinzipals angezeigt, und die Antwort ist erfolgreich.
   
-## <a name="invalid-senditem-e-mail-message-request-example"></a>Ungültiges SendItem (e-Mail-Nachricht)-Anforderungs Beispiel
+## <a name="invalid-senditem-e-mail-message-request-example"></a>Ungültiges SendItem-Anforderungsbeispiel (E-Mail-Nachricht)
 
 ### <a name="description"></a>Beschreibung
 
@@ -136,7 +136,7 @@ Das folgende Codebeispiel zeigt ein Beispiel für eine Anforderung mit einem ung
 </soap:Envelope>
 ```
 
-## <a name="senditem-e-mail-message-error-response"></a>SendItem (e-Mail-Nachricht)-Fehlerantwort
+## <a name="senditem-e-mail-message-error-response"></a>SendItem -Fehlerantwort (E-Mail-Nachricht)
 
 ### <a name="description"></a>Beschreibung
 

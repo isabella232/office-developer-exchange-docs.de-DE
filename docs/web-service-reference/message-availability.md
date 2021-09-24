@@ -1,27 +1,27 @@
 ---
-title: Message (Verfügbarkeit)
+title: Nachricht (Verfügbarkeit)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Message
 api_type:
 - schema
 ms.assetid: 1eec24dd-c981-41f4-a2f0-c51d43f1d7c0
-description: Das Message-Element enthält die Abwesenheitsantwort (Out of Office).
-ms.openlocfilehash: 13d118422ccb5a2897c21b6d124f170bf461dbf6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Message-Element enthält die OOF-Antwort (Out of Office).
+ms.openlocfilehash: d5698e8eeca25d0386ccad04b36dcfbf9dfa8d14
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467004"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523944"
 ---
-# <a name="message-availability"></a>Message (Verfügbarkeit)
+# <a name="message-availability"></a>Nachricht (Verfügbarkeit)
 
-Das **Message** -Element enthält die Abwesenheitsantwort (Out of Office). 
+Das **Message-Element** enthält die OOF-Antwort (Out of Office). 
   
 ```xml
 <Message/> 
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[InternalReply](internalreply.md) <br/> | Enthält die Abwesenheitsnachricht, die an andere Benutzer in der Domäne des Absenders gesendet wird. <br/> <br/>  Im folgenden sind die möglichen XPath-Ausdrücke für dieses Element angegeben: <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/InternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/InternalReply` <br/> |
-|[ExternalReply](externalreply.md) <br/> | Enthält die Abwesenheitsnachricht, die an Adressen außerhalb der Domäne des Absenders gesendet wird.  <br/> <br/> Im folgenden sind die möglichen XPath-Ausdrücke für dieses Element angegeben:  <br/><br/>  `/SetUserOofSettingsRequest/UserOofSettings/ExternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/ExternalReply` <br/> |
-|[ReplyBody](replybody.md) <br/> |Enthält eine Abwesenheitsnachricht und die für die Nachricht verwendete Sprache.  <br/> |
+|[InternalReply](internalreply.md) <br/> | Enthält die OOF-Nachricht, die an andere Benutzer in der Domäne des Absenders gesendet wurde. <br/> <br/>  Es folgen die möglichen XPath-Ausdrücke für dieses Element: <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/InternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/InternalReply` <br/> |
+|[ExternalReply](externalreply.md) <br/> | Enthält die OOF-Nachricht, die an Adressen außerhalb der Domäne des Absenders gesendet wird.  <br/> <br/> Es folgen die möglichen XPath-Ausdrücke für dieses Element:  <br/><br/>  `/SetUserOofSettingsRequest/UserOofSettings/ExternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/ExternalReply` <br/> |
+|[ReplyBody](replybody.md) <br/> |Enthält eine OOF-Nachricht und die für die Nachricht verwendete Sprache.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich, um die Abwesenheitsnachricht festzulegen.
+Ein Textwert ist erforderlich, um die OOF-Nachricht festzulegen.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel einer [SetUserOofSettings-Vorgangs](setuseroofsettings-operation.md) Anforderung wird die [OofState](oofstate.md) auf " **aktiviert**" festgelegt, die Dauer von OOF auf 10 Tage festgelegt und die internen und externen Abwesenheitsnachrichten festgelegt.
+Im folgenden Beispiel einer [SetUserOofSettings-Vorgangsanforderung](setuseroofsettings-operation.md) wird [OofState](oofstate.md) auf **Aktiviert,** die Dauer von OOF auf 10 Tage und die internen und externen OOF-Nachrichten festgelegt.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

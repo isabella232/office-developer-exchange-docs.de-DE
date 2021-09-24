@@ -5,47 +5,47 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8a67c1d8-d021-4e68-aa62-35f7d9c2edc7
 description: Hier finden Sie Informationen zum SearchMailboxes-EWS-Vorgang.
-ms.openlocfilehash: 9ec7e9dd4ef17f22f236e64ca1fdbeb65e6e56fe
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6e154525f5ff2c3d4f24ddc50e1dae1b04a891ba
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456769"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521680"
 ---
 # <a name="searchmailboxes-operation"></a>SearchMailboxes-Vorgang
 
 > [!NOTE]
-> Dieser Vorgang ist veraltet und wird von Microsoft nicht mehr unterstützt.  Verwenden Sie als Ersatz den [FindItem](finditem-operation.md) -Vorgang.
+> Dieser Vorgang ist veraltet und wird von Microsoft nicht mehr unterstützt.  Verwenden Sie als Ersatz den [FindItem-Vorgang.](finditem-operation.md)
 
-Hier finden Sie Informationen zum **SearchMailboxes** -EWS-Vorgang. 
+Hier finden Sie Informationen zum SearchMailboxes-EWS-Vorgang.  
   
-Der **SearchMailboxes** -Vorgang durchsucht Postfächer nach Vorkommen von Ausdrücken in Postfachelementen. 
+Der **SearchMailboxes-Vorgang** durchsucht Postfächer nach Vorkommen von Begriffen in Postfachelementen. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-searchmailboxes-operation"></a>Verwenden des SearchMailboxes-Vorgangs
 
-Der **SearchMailboxes** -Vorgang kann viele gleichzeitige Suchabfragen verwenden, um Ermittlungs Suche für mehrere Postfächer durchzuführen. Die Ergebnisse können entweder statistische Informationen über die Häufigkeit, mit der Suchbegriffe auftreten, oder eine Vorschau der Elemente sein, die die Suchbegriffe enthalten. 
+Der **SearchMailboxes-Vorgang** kann viele gleichzeitige Suchabfragen verwenden, um die Ermittlungssuche für mehrere Postfächer durchzuführen. Die Ergebnisse können entweder statistische Informationen darüber sein, wie oft Suchbegriffe auftreten, oder eine Vorschau der Elemente, die die Suchbegriffe enthalten. 
   
-### <a name="searchmailboxes-operation-soap-headers"></a>SOAP-Header des SearchMailboxes-Vorgangs
+### <a name="searchmailboxes-operation-soap-headers"></a>Soap-Header des SearchMailboxes-Vorgangs
 
-Der **SearchMailboxes** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **SearchMailboxes-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Gibt die Serverrollen an, die erforderlich sind, damit der Anrufer die Anforderung stellen muss. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Identifiziert die Serverrollen, die erforderlich sind, damit der Aufrufer die Anforderung stellen kann. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="searchmailboxes-operation-request-example-search-mailboxes-for-number-of-search-term-hits"></a>SearchMailboxes-Vorgangs Anforderungs Beispiel: Such Postfächer für die Anzahl der Suchausdrucks Treffer
+## <a name="searchmailboxes-operation-request-example-search-mailboxes-for-number-of-search-term-hits"></a>SearchMailboxes-Vorgangsanforderungsbeispiel: Durchsuchen von Postfächern nach der Anzahl von Suchbegriffstreffern
 
-Im folgenden Beispiel einer **SearchMailboxes** -Vorgangsanforderung wird gezeigt, wie zwei verschiedene Abfragen zum Durchsuchen von drei verschiedenen Postfächern für statistische Informationen verwendet werden, um zu erfahren, wie oft ein Ausdruck in jedem Postfach angezeigt wird. 
+Das folgende Beispiel einer **SearchMailboxes-Vorgangsanforderung** zeigt, wie Sie mithilfe von zwei verschiedenen Abfragen drei verschiedene Postfächer nach statistischen Informationen durchsuchen, wie oft ein Ausdruck in jedem Postfach angezeigt wird. 
   
 > [!NOTE]
-> In diesem Beispiel wird das [Abfrage](query.md) Element absichtlich leer gelassen. Dies zeigt, wie eine erfolgreiche Anforderung Fehlerbedingungen pro Post Fach Such Basis enthalten kann. 
+> In diesem Beispiel ist das [Query-Element](query.md) absichtlich leer. Dies zeigt, wie eine erfolgreiche Anforderung Fehlerbedingungen pro Postfachsuchbasis enthalten kann. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -88,7 +88,7 @@ Im folgenden Beispiel einer **SearchMailboxes** -Vorgangsanforderung wird gezeig
 
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [SearchMailboxes](searchmailboxes.md)
     
@@ -108,9 +108,9 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [ResultType](resulttype.md)
     
-## <a name="successful-searchmailboxes-operation-response"></a>Erfolgreiche Reaktion des SearchMailboxes-Vorgangs
+## <a name="successful-searchmailboxes-operation-response"></a>Erfolgreiche SearchMailboxes-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **SearchMailboxes** -Vorgangsanforderung zum Abrufen statistischer Informationen über die Häufigkeit, mit der Suchbegriffe in den Ziel Postfächern gefunden werden. Die letzte Abfrage enthält ein leeres **Abfrage** Element, das eine fehlerhafte Postfachsuche zeigt. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **SearchMailboxes-Vorgangsanforderung,** um statistische Informationen darüber abzurufen, wie oft Suchbegriffe in den Zielpostfächern gefunden werden. Die letzte Abfrage enthält ein leeres **Query-Element,** das eine fehlgeschlagene Postfachsuche anzeigt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -178,7 +178,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **SearchMailboxes
 
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [SearchMailboxesResponse](searchmailboxesresponse.md)
     
@@ -232,9 +232,9 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [IsArchive](isarchive.md)
     
-## <a name="searchmailboxes-operation-error-response"></a>Fehlerantwort des SearchMailboxes-Vorgangs
+## <a name="searchmailboxes-operation-error-response"></a>SearchMailboxes-Vorgang – Fehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **SearchMailboxes** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Durchsuchen eines Postfachs, wenn die Postfachbezeichner falsch ist. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **SearchMailboxes-Vorgangsanforderung.** Dies ist eine Antwort auf eine Anforderung zum Durchsuchen eines Postfachs, wenn der Postfachbezeichner falsch ist. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -343,7 +343,7 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
     
 - [IsArchive](isarchive.md)
     
-Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
+Weitere Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

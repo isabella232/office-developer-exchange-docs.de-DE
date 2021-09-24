@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AssistantName
 api_type:
 - schema
 ms.assetid: bc7ae5e5-7d76-4ea9-a372-868dc7545774
-description: Das AssitantName-Element stellt einen Assistenten für einen Kontakt dar.
-ms.openlocfilehash: 5d83e7ab8e51fd0c2cf895733c26b46dcb393761
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AssitantName-Element stellt einen Assistenten eines Kontakts dar.
+ms.openlocfilehash: ca334378a4e16293115a4fe783a1ee76babe3154
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461548"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525169"
 ---
 # <a name="assistantname"></a>AssistantName
 
-Das **AssitantName** -Element stellt einen Assistenten für einen Kontakt dar. 
+Das **AssitantName-Element** stellt einen Assistenten eines Kontakts dar. 
   
 ```xml
 <AssistantName/>
@@ -50,7 +50,7 @@ Keine.
 
 Ein Textwert, der eine Zeichenfolge darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

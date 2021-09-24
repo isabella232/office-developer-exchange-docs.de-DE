@@ -1,23 +1,23 @@
 ---
-title: Action Type (ReminderActionType)
+title: ActionType (ReminderActionType)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0ffcdcf4-8ea3-483c-bb7f-0cd84126120c
-description: Das Action Type-Element gibt die Aktion an, die für die Erinnerung erfolgen soll.
-ms.openlocfilehash: 5c62b2dd945b23a5ff2bb824385c45dbc617a5a5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ActionType-Element gibt die Aktion an, die für die Erinnerung ausgeführt werden soll.
+ms.openlocfilehash: d78725c75ad13a71d69d7749f0a71cd99d606929
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465058"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522257"
 ---
-# <a name="actiontype-reminderactiontype"></a>Action Type (ReminderActionType)
+# <a name="actiontype-reminderactiontype"></a>ActionType (ReminderActionType)
 
-Das **Action** Type-Element gibt die Aktion an, die für die Erinnerung erfolgen soll. 
+Das **ActionType-Element** gibt die Aktion an, die für die Erinnerung ausgeführt werden soll. 
   
 ```XML
 <ActionType> Dismiss | Snooze </ActionType>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Action** Type-Elements gibt die Aktion an, die für die Erinnerung erfolgen soll. Der Textwert von **entlassen** gibt an, dass die Erinnerung geschlossen werden soll. Der Textwert von **Snooze** gibt an, dass die Erinnerung bis zu der durch das Element [Reminder](newremindertime.md) angegebenen zeitverzögert werden soll. 
+Der Textwert des **ActionType-Elements** gibt die Aktion an, die für die Erinnerung ausgeführt werden soll. Der Textwert **Schließen** gibt an, dass die Erinnerung geschlossen werden soll. Der Textwert von **"Snooze"** gibt an, dass die Erinnerung bis zu dem durch das [NewReminderTime-Element](newremindertime.md) angegebenen Zeitpunkt verzögert werden soll. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

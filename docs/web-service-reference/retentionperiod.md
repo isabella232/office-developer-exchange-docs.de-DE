@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 49db6a4f-4a20-4495-8f76-d756cc895b66
-description: Das RetentionPeriod-Element gibt die Anzahl der Tage an, für die die Aufbewahrungsrichtlinie gültig ist.
-ms.openlocfilehash: c9d049e2c1ed4e8abdec9faa7b8e365468d3d2ac
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das RetentionPeriod-Element gibt die Anzahl der Tage an, für die die Aufbewahrungsrichtlinie wirksam ist.
+ms.openlocfilehash: e3e25926eca2551186f3b3b06e805d6da0d8b2d7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465191"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524595"
 ---
 # <a name="retentionperiod"></a>RetentionPeriod
 
-Das **RetentionPeriod** -Element gibt die Anzahl der Tage an, für die die Aufbewahrungsrichtlinie gültig ist. 
+Das **RetentionPeriod-Element** gibt die Anzahl der Tage an, für die die Aufbewahrungsrichtlinie wirksam ist. 
   
 ```XML
 <RetentionPeriod></RetentionPeriod>
 ```
 
- **Integer**
+ **Ganzzahl**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **RetentionPeriod** -Elements ist die Anzahl der Tage, für die die Aufbewahrungsrichtlinie für ein Element gültig ist. 
+Der Textwert des **RetentionPeriod-Elements** ist die Anzahl der Tage, für die die Aufbewahrungsrichtlinie für ein Element wirksam ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Day
 api_type:
 - schema
 ms.assetid: d3b2dc66-486a-41d1-bff3-606f0bf92715
-description: Das Day-Element stellt den Tag des Monats dar, in dem der Zeitzonenübergang erfolgt.
-ms.openlocfilehash: 8ee5ed2e996a6a4b84648df41faf2718784b9d30
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Day-Element stellt den Tag des Monats dar, an dem der Zeitzonenübergang erfolgt.
+ms.openlocfilehash: 8912a395ae0b0c1ccc81e67347f7a12fb2c37a34
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457480"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524385"
 ---
 # <a name="day"></a>Tag
 
-Das **Day** -Element stellt den Tag des Monats dar, in dem der Zeitzonenübergang erfolgt. 
+Das **Day-Element** stellt den Tag des Monats dar, an dem der Zeitzonenübergang erfolgt. 
   
 ```xml
 <Day/>
@@ -45,13 +45,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RecurringDateTransition](recurringdatetransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der jedes Jahr an einem bestimmten Datum auftritt.  <br/> |
+|[RecurringDateTransition](recurringdatetransition.md) <br/> |Stellt einen Zeitzonenübergang dar, der jedes Jahr an einem bestimmten Datum stattfindet.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Day** -Elements ist eine ganze Zahl, die den Tag des Monats darstellt, in dem der Zeitzonenübergang erfolgt. 
+Der Textwert des **Day-Elements** ist eine ganze Zahl, die den Tag des Monats darstellt, an dem der Zeitzonenübergang erfolgt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

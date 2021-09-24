@@ -4,27 +4,27 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: a6f4a53d-d7f6-4ad1-8afb-78745c500eaa
-description: Der GetDomainSettings-Vorgang ruft die angegebenen Einstellungen der Domäne für den Benutzer ab. Die AutoErmittlung gibt die zu entdeckenden Domänen und die angeforderten Einstellungen dieser Domänen zurück.
-ms.openlocfilehash: fd655e088b73372bc1dd68a740ebc2b516d1804a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetDomainSettings-Vorgang ruft die angegebenen Einstellungen der Domäne für den Benutzer ab. Die AutoErmittlung gibt die domänen, die ermittelt werden sollen, und die angeforderten Einstellungen dieser Domänen zurück.
+ms.openlocfilehash: 7f52ea840bd7f46198d95ba5f0c07894873cf6e5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460967"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525050"
 ---
 # <a name="getdomainsettings-operation-soap"></a>GetDomainSettings-Vorgang (SOAP)
 
-Der **GetDomainSettings** -Vorgang ruft die angegebenen Einstellungen der Domäne für den Benutzer ab. Die AutoErmittlung gibt die zu entdeckenden Domänen und die angeforderten Einstellungen dieser Domänen zurück. 
+Der **GetDomainSettings-Vorgang** ruft die angegebenen Einstellungen der Domäne für den Benutzer ab. Die AutoErmittlung gibt die domänen, die ermittelt werden sollen, und die angeforderten Einstellungen dieser Domänen zurück. 
   
-## <a name="getdomainsettings-request-example"></a>GetDomainSettings-Anforderungs Beispiel
+## <a name="getdomainsettings-request-example"></a>GetDomainSettings-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **GetDomainSettings** -Anforderung wird eine Anforderung für die **ExternalEWSUrl** -Domäneneinstellungen eines Benutzers angezeigt. Der Client sendet diese Anforderung an den Server. 
+Das folgende Beispiel einer **GetDomainSettings-Anforderung** zeigt eine Anforderung für die **ExternalEWSUrl-Domäneneinstellungen** eines Benutzers. Der Client sendet diese Anforderung an den Server. 
   
 ### <a name="code"></a>Code
 
@@ -64,7 +64,7 @@ In der Anforderung werden folgende Elemente verwendet:
   
 - [GetDomainSettingsRequestMessage (SOAP)](getdomainsettingsrequestmessage-soap.md)
     
-- [Request (SOAP)](request-soap.md)
+- [Anforderung (SOAP)](request-soap.md)
     
 - [Domänen (SOAP)](domains-soap.md)
     
@@ -78,7 +78,7 @@ In der Anforderung werden folgende Elemente verwendet:
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetDomainSettings** -Anforderung, die der Server an den Client sendet. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetDomainSettings-Anforderung,** die der Server an den Client sendet. 
   
 ### <a name="code"></a>Code
 
@@ -122,7 +122,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetDomainSetting
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a>Response-Elemente
+### <a name="response-elements"></a>Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - StandardGroupBy
 api_type:
 - schema
 ms.assetid: 04a84f71-b7eb-44dc-ac2c-ed504b52c463
-description: Das StandardGroupBy-Element stellt die standardmäßigen Gruppierungs-und Aggregations Mechanismen für einen gruppierten FindItem-Vorgang dar.
-ms.openlocfilehash: 3e135feba322979de3d66d5a45d423654ccc9100
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das StandardGroupBy-Element stellt die standardmäßigen Gruppierungs- und Aggregierungsmechanismen für einen gruppierten FindItem-Vorgang dar.
+ms.openlocfilehash: b19157b9ff3a19379880b7f6b9c52835c170df21
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467557"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521277"
 ---
 # <a name="standardgroupby"></a>StandardGroupBy
 
-Das **StandardGroupBy** -Element stellt die standardmäßigen Gruppierungs-und Aggregations Mechanismen für einen gruppierten FindItem-Vorgang dar. 
+Das **StandardGroupBy-Element** stellt die standardmäßigen Gruppierungs- und Aggregierungsmechanismen für einen gruppierten FindItem-Vorgang dar. 
   
 [FindItem](finditem.md)
   
@@ -54,9 +54,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der einzige Wert, der für dieses Element verwendet werden kann, ist **ConversationTopic**. **ConversationTopic** Gruppen nach Nachricht: ConversationTopic und Aggregate für Element: DateTimeReceived (Maximum). Weitere Informationen zur Aggregation finden Sie unter [AggregateOn](aggregateon.md).
+Ein Textwert ist erforderlich. Der einzige Wert, der für dieses Element verwendet werden kann, ist **ConversationTopic**. **ConversationTopic** groups by message:ConversationTopic and aggregates on item:DateTimeReceived (maximum). Weitere Informationen zur Aggregation finden Sie unter [AggregateOn](aggregateon.md).
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

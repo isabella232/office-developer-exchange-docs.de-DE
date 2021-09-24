@@ -3,37 +3,37 @@ title: Verarbeiten von Kontakten in Batches mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 455f475b-cb19-4e7a-8ff3-92f7028fceb0
-description: In diesem Artikel erfahren Sie, wie Sie in einem einzigen Aufruf Batches von Kontakten erstellen, abrufen, aktualisieren und löschen, indem Sie das verwaltete EWS-API oder EWS in Exchange verwenden.
-ms.openlocfilehash: 2e122f67693b4ba46120104d9a1f6d36b4d86f97
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Erfahren Sie, wie Sie Mithilfe der verwalteten EWS-API oder von EWS in Exchange Batches von Kontakten in einem einzigen Aufruf erstellen, abrufen, aktualisieren und löschen.
+ms.openlocfilehash: e70618dc0a9ea3f2d534c79fff627393ced8f1cb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527803"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522222"
 ---
 # <a name="process-contacts-in-batches-by-using-ews-in-exchange"></a>Verarbeiten von Kontakten in Batches mithilfe von EWS in Exchange
 
-In diesem Artikel erfahren Sie, wie Sie in einem einzigen Aufruf Batches von Kontakten erstellen, abrufen, aktualisieren und löschen, indem Sie das verwaltete EWS-API oder EWS in Exchange verwenden.
+Erfahren Sie, wie Sie Mithilfe der verwalteten EWS-API oder von EWS in Exchange Batches von Kontakten in einem einzigen Aufruf erstellen, abrufen, aktualisieren und löschen.
   
-Sie können die verwaltete EWS-API oder EWS verwenden, um mit Batches von Kontakten zu arbeiten, um die Anzahl der Anrufe zu reduzieren, die ein Client an einen Exchange-Server macht. Wenn Sie die verwaltete EWS-API verwenden, um Kontakte in Batches zu erstellen, abzurufen, zu aktualisieren und zu löschen, verwenden Sie [Datei "ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objektmethoden, während Sie bei der Arbeit mit einzelnen Kontakten [Kontakt](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx) Objektmethoden verwenden. Wenn Sie EWS verwenden, verwenden Sie dieselben Vorgänge, um sowohl mit einem einzelnen Kontakt als auch mit Batches von Kontakten zu arbeiten. 
+Sie können die verwaltete EWS-API oder EWS verwenden, um mit Batches von Kontakten zu arbeiten, um die Anzahl der Aufrufe zu verringern, die ein Client an einen Exchange Server sendet. Wenn Sie die verwaltete EWS-API zum Erstellen, Abrufen, Aktualisieren und Löschen von Kontakten in Batches verwenden, verwenden Sie [ExchangeService-Objektmethoden,](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) während Sie bei der Arbeit mit einzelnen Kontakten [Contact-Objektmethoden](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx) verwenden. Wenn Sie EWS verwenden, verwenden Sie die gleichen Vorgänge, um sowohl mit einem einzelnen Kontakt als auch mit Batches von Kontakten zu arbeiten. 
   
-**Tabelle 1. Verwaltete EWS-API Methoden und EWS-Vorgänge zum Arbeiten mit Batches von Kontakten**
+**Tabelle 1. EWS Managed API-Methoden und EWS-Vorgänge zum Arbeiten mit Batches von Kontakten**
 
-|**Gewünschte Aktion**|**Verwenden Sie diese verwaltete EWS-API-Methode**|**Zu verwendender EWS-Vorgang**|
+|**Gewünschte Aktion**|**Verwenden dieser verwalteten EWS-API-Methode**|**Zu verwendender EWS-Vorgang**|
 |:-----|:-----|:-----|
-|Erstellen von Kontakten in Batches  <br/> |[Datei "ExchangeService. CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
-|Abrufen von Kontakten in Batches  <br/> |[Datei "ExchangeService. BindToItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) oder [Datei" ExchangeService. LoadPropertiesForItems](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.loadpropertiesforitems%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
-|Aktualisieren von Kontakten in Batches  <br/> |[Datei "ExchangeService. Update Items](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
-|Löschen von Kontakten in Batches  <br/> |[Datei "ExchangeService. DeleteItems](https://msdn.microsoft.com/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
+|Erstellen von Kontakten in Batches  <br/> |[ExchangeService.CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
+|Abrufen von Kontakten in Batches  <br/> |[ExchangeService.BindToItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) oder [ExchangeService.LoadPropertiesForItems](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.loadpropertiesforitems%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
+|Aktualisieren von Kontakten in Batches  <br/> |[ExchangeService.UpdateItems](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
+|Löschen von Kontakten in Batches  <br/> |[ExchangeService.DeleteItems](https://msdn.microsoft.com/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
    
-In diesem Artikel erfahren Sie, wie Sie grundlegende Aufgaben für Batches von Kontakten mithilfe der verwaltete EWS-API oder EWS ausführen.
+In diesem Artikel erfahren Sie, wie Sie grundlegende Aufgaben für Batches von Kontakten mithilfe der verwalteten EWS-API oder EWS ausführen.
   
-## <a name="create-contacts-in-batches-by-using-the-ews-managed-api"></a>Erstellen von Kontakten in Batches mithilfe der verwaltete EWS-API
+## <a name="create-contacts-in-batches-by-using-the-ews-managed-api"></a>Erstellen von Kontakten in Batches mithilfe der verwalteten EWS-API
 <a name="bk_EWSMA"> </a>
 
-Sie können Kontakte in Batches erstellen, indem Sie die verwaltete EWS-API [CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) -Methode verwenden, wie im folgenden Beispiel gezeigt. In diesem Beispiel werden drei [Contact](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx) -Objekte lokal erstellt, jeder Kontakt wird einer Auflistung hinzugefügt, und anschließend wird die **CreateItems** -Methode für die Auflistung der Kontakte aufgerufen. 
+Sie können Kontakte in Batches mithilfe der [CreateItems-Methode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) der verwalteten EWS-API erstellen, wie im folgenden Beispiel gezeigt. In diesem Beispiel werden drei [Contact-Objekte](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx) lokal erstellt, jeder Kontakt zu einer Auflistung hinzugefügt und anschließend die **CreateItems-Methode** für die Kontaktauflistung aufgerufen. 
   
 ```cs
 public static Collection<ItemId> CreateContactsInBatch(ExchangeService service)
@@ -104,7 +104,7 @@ public static Collection<ItemId> CreateContactsInBatch(ExchangeService service)
 ## <a name="create-contacts-in-batches-by-using-ews"></a>Erstellen von Kontakten in Batches mithilfe von EWS
 <a name="bk_EWSMA"> </a>
 
-Sie können Kontakte in Batches erstellen, indem Sie den [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) -EWS-Vorgang verwenden, wie im folgenden Codebeispiel dargestellt. Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die verwaltete EWS-API verwenden, um [Kontakte in Batches zu erstellen](#bk_EWSMA).
+Sie können Kontakte in Batches mithilfe des [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) EWS-Vorgangs erstellen, wie im folgenden Codebeispiel gezeigt. Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die verwaltete EWS-API zum Erstellen von [Kontakten in Batches](#bk_EWSMA)verwenden.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -146,12 +146,12 @@ xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   </soap:Envelope>
 ```
 
-Der Server antwortet auf die **CreateItem** -Anforderung mit einer [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) -Nachricht, die einen [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Wert von **noError** für jeden der neuen Kontakte enthält, der angibt, dass jeder Kontakt erfolgreich erstellt und gespeichert wurde. 
+Der Server antwortet auf die **CreateItem-Anforderung** mit einer [CreateItemResponse-Nachricht,](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) die den [ResponseCode-Wert](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError** für jeden neuen Kontakt enthält, der angibt, dass jeder Kontakt erstellt und erfolgreich gespeichert wurde. 
   
-## <a name="get-contacts-in-batches-by-using-the-ews-managed-api"></a>Abrufen von Kontakten in Batches mithilfe der verwaltete EWS-API
+## <a name="get-contacts-in-batches-by-using-the-ews-managed-api"></a>Abrufen von Kontakten in Batches mithilfe der verwalteten EWS-API
 <a name="bk_EWSMAGet"> </a>
 
-Sie können Kontakte in Batches abrufen, indem Sie die verwaltete EWS-API [BindToItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) -Methode verwenden, wie im folgenden Beispiel gezeigt. In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und dass der Benutzer mit einem Exchange-Server authentifiziert wurde. 
+Sie können Kontakte in Batches abrufen, indem Sie die EWS Managed API [BindToItems-Methode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) verwenden, wie im folgenden Beispiel gezeigt. In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
   
 ```cs
 public static Collection<Contact> BatchGetContactItems(ExchangeService service, Collection<ItemId> itemIds)
@@ -192,7 +192,7 @@ public static Collection<Contact> BatchGetContactItems(ExchangeService service, 
 ## <a name="get-contacts-in-batches-by-using-ews"></a>Abrufen von Kontakten in Batches mithilfe von EWS
 <a name="bk_EWSMAGet"> </a>
 
-Sie können Kontakte in Batches mit dem [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) -EWS-Vorgang und dem Code im folgenden Beispiel abrufen. Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die verwaltete EWS-API zum [Abrufen von Kontakten in Batches](#bk_EWSMAGet)verwenden. Das **ItemID** -Attribut wurde zur Lesbarkeit gekürzt. 
+Sie können Kontakte in Batches abrufen, indem Sie den [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) EWS-Vorgang und den Code im folgenden Beispiel verwenden. Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die verwaltete EWS-API zum Abrufen von [Kontakten in Batches](#bk_EWSMAGet)verwenden. Das **ItemId-Attribut** wurde zur besseren Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -222,14 +222,14 @@ xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   </soap:Envelope>
 ```
 
-Der Server antwortet auf die **GetItem** -Anforderung mit einer [GetItemResponse](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) -Nachricht, die die ID und den Anzeigenamen für jeden der angeforderten Kontakte enthält. 
+Der Server antwortet auf die **GetItem-Anforderung** mit einer [GetItemResponse-Nachricht,](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) die die ID und den Anzeigenamen für jeden der angeforderten Kontakte enthält. 
   
-## <a name="update-contacts-in-batches-by-using-the-ews-managed-api"></a>Aktualisieren von Kontakten in Batches mithilfe der verwaltete EWS-API
+## <a name="update-contacts-in-batches-by-using-the-ews-managed-api"></a>Aktualisieren von Kontakten in Batches mithilfe der verwalteten EWS-API
 <a name="bk_EWSMAUpdate"> </a>
 
-Sie können Kontakte in Batches aktualisieren, indem Sie die verwaltete EWS-API [Update Items](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) -Methode verwenden, wie im folgenden Beispiel gezeigt. Im vorherigen Beispiel wird der Kontakt erstellt, aber nicht angegeben, für wen er verwendet wird. Sie können den Code in diesem Beispiel verwenden, um alle Ihre Kontakte gleichzeitig zu aktualisieren, um den Namen Ihres Unternehmens einzubeziehen. 
+Sie können Kontakte in Batches aktualisieren, indem Sie die EWS Managed API [UpdateItems-Methode](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) verwenden, wie im folgenden Beispiel gezeigt. Im vorherigen Beispiel wird der Kontakt erstellt, aber nicht angegeben, für wen er arbeitet. Sie können den Code in diesem Beispiel verwenden, um alle Kontakte gleichzeitig so zu aktualisieren, dass sie den Firmennamen enthalten. 
   
-In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und dass der Benutzer mit einem Exchange-Server authentifiziert wurde. 
+In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
   
 ```cs
 public static Collection<Contact> BatchUpdateContactItems(ExchangeService service, Collection<Contact> contactItems)
@@ -272,7 +272,7 @@ public static Collection<Contact> BatchUpdateContactItems(ExchangeService servic
 ## <a name="update-contacts-in-batches-by-using-ews"></a>Aktualisieren von Kontakten in Batches mithilfe von EWS
 <a name="bk_EWSMAUpdate"> </a>
 
-Sie können Kontakte in Batches aktualisieren, indem Sie den [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) -EWS-Vorgang verwenden, wie im folgenden Codebeispiel dargestellt. Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie den verwaltete EWS-API verwenden, um [Kontakte in Batches zu aktualisieren](#bk_EWSMAUpdate). Das **ItemID** -Attribut wurde zur Lesbarkeit gekürzt. 
+Sie können Kontakte in Batches aktualisieren, indem Sie den [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) EWS-Vorgang verwenden, wie im folgenden Codebeispiel gezeigt. Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die verwaltete EWS-API zum Aktualisieren von [Kontakten in Batches](#bk_EWSMAUpdate)verwenden. Das **ItemId-Attribut** wurde zur besseren Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -329,12 +329,12 @@ xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   </soap:Envelope>
 ```
 
-Der Server antwortet auf die **UpdateItem** -Anforderung mit einer [UpdateItemResponse](https://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Wert **noError**enthält, der angibt, dass jedes Update erfolgreich auf dem Server gespeichert wurde. Alle Konflikte werden im [ConflictResult](https://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx) -Element gemeldet. 
+Der Server antwortet auf die **UpdateItem-Anforderung** mit einer [UpdateItemResponse-Nachricht,](https://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) die den [ResponseCode-Wert](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError** enthält, der angibt, dass jedes der Updates erfolgreich auf dem Server gespeichert wurde. Alle Konflikte werden im [ConflictResult-Element](https://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx) gemeldet. 
   
-## <a name="delete-contacts-in-batches-by-using-the-ews-managed-api"></a>Löschen von Kontakten in Batches mithilfe der verwaltete EWS-API
+## <a name="delete-contacts-in-batches-by-using-the-ews-managed-api"></a>Löschen von Kontakten in Batches mithilfe der verwalteten EWS-API
 <a name="bk_EWSMADelete"> </a>
 
-Sie können Kontakte in Batches löschen, indem Sie die [DeleteItems](https://msdn.microsoft.com/library/dd635460%28v=exchg.80%29.aspx) verwaltete EWS-API-Methode verwenden, wie im folgenden Beispiel gezeigt. In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und dass der Benutzer mit einem Exchange-Server authentifiziert wurde. 
+Sie können Kontakte in Batches löschen, indem Sie die verwaltete EWS-API-Methode ["DeleteItems"](https://msdn.microsoft.com/library/dd635460%28v=exchg.80%29.aspx) verwenden, wie im folgenden Beispiel gezeigt. In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
   
 ```cs
 public static void BatchDeleteContactItems(ExchangeService service, Collection<ItemId> itemIds)
@@ -360,7 +360,7 @@ public static void BatchDeleteContactItems(ExchangeService service, Collection<I
 ## <a name="delete-contacts-in-batches-by-using-ews"></a>Löschen von Kontakten in Batches mithilfe von EWS
 <a name="bk_EWSMADelete"> </a>
 
-Sie können Kontakte in Batches löschen, indem Sie den EWS-Vorgang [DeleteItem](../web-service-reference/deleteitem-operation.md) verwenden, wie im folgenden Codebeispiel dargestellt. Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die verwaltete EWS-API verwenden, um [Kontakte in Batches zu löschen](#bk_EWSMADelete). Das **ItemID** -Attribut wurde zur Lesbarkeit gekürzt. 
+Sie können Kontakte in Batches mithilfe des [DeleteItem](../web-service-reference/deleteitem-operation.md) EWS-Vorgangs löschen, wie im folgenden Codebeispiel gezeigt. Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die verwaltete EWS-API zum Löschen von [Kontakten in Batches](#bk_EWSMADelete)verwenden. Das **ItemId-Attribut** wurde zur besseren Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -384,14 +384,14 @@ xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   </soap:Envelope>
 ```
 
-Der Server antwortet auf die **DeleteItem** -Anforderung mit einer [DeleteItemResponse](https://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Wert **noError** für jedes entfernte Element enthält. Beachten Sie, dass der Vorgang auch dann Success zurückgegeben wird, wenn die Element-ID nicht gefunden werden konnte. 
+Der Server antwortet auf die **DeleteItem-Anforderung** mit einer [DeleteItemResponse-Nachricht,](https://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) die den [ResponseCode-Wert](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **"NoError"** für jedes entfernte Element enthält. Beachten Sie, dass der Vorgang auch erfolglos zurückgibt, wenn die Element-ID nicht gefunden werden konnte. 
   
 ## <a name="verifying-that-a-batch-process-completed-successfully"></a>Überprüfen, ob ein Batchprozess erfolgreich abgeschlossen wurde
 <a name="bk_successful"> </a>
 
-Wenn ein oder mehrere Kontakte in einer Batchanforderung nicht wie angefordert verarbeitet werden können, wird für jeden Kontakt, der fehlgeschlagen ist, ein Fehler zurückgegeben, und die restlichen Kontakte im Batch werden wie erwartet verarbeitet. Fehler in der Batchverarbeitung können auftreten, wenn das Element gelöscht wurde und daher nicht abgerufen oder aktualisiert werden kann oder wenn das Element in einen anderen Ordner verschoben wurde und daher über eine neue Element-ID verfügt und nicht mit der gesendeten Element-ID geändert werden kann. Die Informationen in diesem Abschnitt zeigen, wie Fehlerdetails zu Fehlern bei der Batchverarbeitung von Kontakten abgerufen werden.
+Wenn ein oder mehrere Kontakte in einer Batchanforderung nicht wie angefordert verarbeitet werden können, wird für jeden fehlgeschlagenen Kontakt ein Fehler zurückgegeben, und die restlichen Kontakte im Batch werden wie erwartet verarbeitet. Fehler bei der Batchverarbeitung können auftreten, wenn das Element gelöscht wurde und daher nicht abgerufen oder aktualisiert werden kann oder wenn das Element in einen anderen Ordner verschoben wurde und daher über eine neue Element-ID verfügt und nicht mit der gesendeten Element-ID geändert werden kann. Die Informationen in diesem Abschnitt zeigen, wie Fehlerdetails zu Fehlern bei der Batchverarbeitung von Kontakten abgerufen werden.
   
-Um den Erfolg eines Batchprozesses mithilfe der verwaltete EWS-API zu überprüfen, können Sie überprüfen, ob die [OverallResult](https://msdn.microsoft.com/library/dd634515%28v=exchg.80%29.aspx) -Eigenschaft des [ServiceResponseCollection](https://msdn.microsoft.com/library/dd633715%28v=exchg.80%29.aspx) gleich [ServiceResult. Success](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx)ist. Wenn dies der Fall ist, wurden alle Kontakte erfolgreich verarbeitet. Wenn **OverallResult** nicht gleich **ServiceResult. Success**ist, wurden mindestens einer der Kontakte nicht erfolgreich verarbeitet. Jedes der Objekte, die in der **ServiceResponseCollection** zurückgegeben werden, enthält die folgenden Eigenschaften: 
+Um den Erfolg eines Batchprozesses mithilfe der verwalteten EWS-API zu überprüfen, können Sie überprüfen, ob die [OverallResult-Eigenschaft](https://msdn.microsoft.com/library/dd634515%28v=exchg.80%29.aspx) der [ServiceResponseCollection](https://msdn.microsoft.com/library/dd633715%28v=exchg.80%29.aspx) gleich [ServiceResult.Success](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx)ist. Wenn ja, wurden alle Kontakte erfolgreich verarbeitet. Wenn das **OverallResult** nicht gleich **ServiceResult.Success** ist, wurden mindestens einer der Kontakte nicht erfolgreich verarbeitet. Jedes der in **ServiceResponseCollection** zurückgegebenen Objekte enthält die folgenden Eigenschaften: 
   
 - [ErrorCode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx)
     
@@ -403,9 +403,9 @@ Um den Erfolg eines Batchprozesses mithilfe der verwaltete EWS-API zu überprüf
     
 - [Ergebnis](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx)
     
-Diese Eigenschaften enthalten Informationen dazu, warum die Kontakte nicht wie angefordert verarbeitet werden konnten. In den Beispielen in diesem Artikel werden das **Ergebnis**, **errorCode**und **ErrorMessage** für jeden fehlerhaften Kontakt gedruckt. Sie können diese Ergebnisse verwenden, um das Problem zu untersuchen. 
+Diese Eigenschaften enthalten Informationen dazu, warum die Kontakte nicht wie angefordert verarbeitet werden konnten. Die Beispiele in diesem Artikel drucken die **Ergebnisse**, **ErrorCode** und **ErrorMessage** für jeden fehlgeschlagenen Kontakt aus. Sie können diese Ergebnisse verwenden, um das Problem zu untersuchen. 
   
-Überprüfen Sie für EWS das [ResponseClass](https://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx) -Attribut für jedes verarbeitete Element, um den Erfolg eines Batchprozesses zu überprüfen. Im folgenden finden Sie die grundlegende Struktur des **ResponseMessageType**, den Basistyp, von dem alle Antwortnachrichten abgeleitet werden. 
+Um den Erfolg eines Batchprozesses zu überprüfen, überprüfen Sie für EWS das [ResponseClass-Attribut](https://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx) für jedes verarbeitete Element. Es folgt die grundlegende Struktur von **ResponseMessageType**, dem Basistyp, von dem alle Antwortnachrichten abgeleitet werden. 
   
 ```XML
 <ResponseMessage ResponseClass="Success | Warning | Error">
@@ -416,7 +416,7 @@ Diese Eigenschaften enthalten Informationen dazu, warum die Kontakte nicht wie a
 </ResponseMessage>
 ```
 
-Das **ResponseClass** -Attribut **ist auf "erfolgreich"** festgelegt, wenn der Kontakt erfolgreich verarbeitet wurde, oder **Fehler** , wenn der Kontakt nicht erfolgreich verarbeitet wurde. Bei Kontakten wird während der Batchverarbeitung keine **Warnung angezeigt** . Wenn der **ResponseClass** **erfolgreich**ist, wird das [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Element, das folgt, auch immer auf **noError**festgelegt. Wenn das **ResponseClass** -Element **fehlerhaft**ist, müssen Sie die Werte der [MessageText](https://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx)-, **Response Code**-und [messagexml verwendet](https://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) -Elemente überprüfen, um zu ermitteln, was das Problem verursacht hat. [DescriptiveLinkKey](https://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) wird derzeit nicht verwendet. 
+The **ResponseClass** attribute is set to **Success** if the contact was processed successfully, or **Error** if the contact was not processed successfully. Bei Kontakten tritt während der Batchverarbeitung keine **Warnung auf.** Wenn **responseClass** **erfolgreich** ist, wird das folgende [ResponseCode -Element](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) auch immer auf **NoError** festgelegt. Wenn **responseClass** **error** ist, müssen Sie die Werte der [Elemente MessageText](https://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx), **ResponseCode** und [MessageXml](https://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) überprüfen, um zu ermitteln, was das Problem verursacht hat. [DescriptiveLinkKey](https://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) wird derzeit nicht verwendet. 
   
 ## <a name="see-also"></a>Siehe auch
 

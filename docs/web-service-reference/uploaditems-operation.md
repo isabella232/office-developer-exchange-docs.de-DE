@@ -5,32 +5,32 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UploadItems
 api_type:
 - schema
 ms.assetid: a88cbe99-7968-454d-a545-4f92c330909f
-description: Der UploadItems-Vorgang lädt einen Stream von Elementen in ein Exchange-Postfach hoch.
-ms.openlocfilehash: 57e722c7775baa090736875077781cee869c3b01
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der UploadItems-Vorgang lädt einen Datenstrom von Elementen in ein Exchange Postfach hoch.
+ms.openlocfilehash: 333b72eb93395bb1fc0b97a90951ae68285794b3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468502"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522425"
 ---
 # <a name="uploaditems-operation"></a>UploadItems-Vorgang
 
-Der **UploadItems** -Vorgang lädt einen Stream von Elementen in ein Exchange-Postfach hoch. 
+Der **UploadItems-Vorgang** lädt einen Datenstrom von Elementen in ein Exchange Postfach hoch. 
   
 > [!IMPORTANT]
-> Der **UploadItems** -Vorgang ist in Microsoft Exchange Server 2010 Service Pack 1 (SP1) auf eine maximale Import Nutzlast von 25 MB erhöht Base64-codierter Daten beschränkt. Die Einstellung kann in der Datei "Internet. config" geändert werden. 
+> Der **UploadItems-Vorgang** ist in MicrosoftExchange Server 2010 Service Pack 1 (SP1) auf eine maximale Importnutzlast von 25 MB base64-codierten Daten beschränkt. Die Einstellung kann in der web.config-Datei geändert werden. 
   
-## <a name="uploaditems-request-example"></a>UploadItems-Anforderungs Beispiel
+## <a name="uploaditems-request-example"></a>UploadItems-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **UploadItems** -Anforderung wird gezeigt, wie zwei Elemente in ein Postfach hochgeladen werden. Das erste Element ist ein neues Element. Das zweite Element ist eine aktualisierte Version eines vorhandenen Elements im Postfach. 
+Das folgende Beispiel einer **UploadItems-Anforderung** zeigt, wie Sie zwei Elemente in ein Postfach hochladen. Das erste Element ist ein neues Element. Das zweite Element ist eine aktualisierte Version eines vorhandenen Elements im Postfach. 
   
 ### <a name="code"></a>Code
 
@@ -80,7 +80,7 @@ Im folgenden Beispiel einer **UploadItems** -Anforderung wird gezeigt, wie zwei 
 
 ### <a name="comments"></a>Comments
 
-Bezeichner und Elementdaten wurden verkürzt, um die Lesbarkeit zu erhalten.
+Bezeichner und Elementdaten wurden gekürzt, um die Lesbarkeit zu gewährleisten.
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -90,21 +90,21 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [UploadItems](uploaditems.md)
     
-- [Elemente (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md)
+- [Items (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md)
     
-- [Element (UploadItemType)](item-uploaditemtype.md)
+- [Item (UploadItemType)](item-uploaditemtype.md)
     
 - [ParentFolderId](parentfolderid.md)
     
-- [Data (base64Binary)](data-base64binary.md)
+- [Daten (base64Binary)](data-base64binary.md)
     
 - [ItemId](itemid.md)
     
-## <a name="successful-uploaditems-response-example"></a>Erfolgreiches UploadItems-Antwortbeispiel
+## <a name="successful-uploaditems-response-example"></a>Beispiel für erfolgreiche UploadItems-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **UploadItems** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **UploadItems-Anforderung.** 
   
 ### <a name="code"></a>Code
 
@@ -143,9 +143,9 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **UploadItems** -A
 
 ### <a name="comments"></a>Comments
 
-Element-IDs wurden verkürzt, um die Lesbarkeit zu erhalten.
+Elementbezeichner wurden gekürzt, um die Lesbarkeit zu gewährleisten.
   
-### <a name="response-elements"></a>Response-Elemente
+### <a name="response-elements"></a>Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -161,11 +161,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ItemId](itemid.md)
     
-## <a name="uploaditems-error-response-example"></a>UploadItems-Fehlerantwort Beispiel
+## <a name="uploaditems-error-response-example"></a>Beispiel für UploadItems-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Antwort auf die **UploadItems** -Anforderung, die einen Fehler enthält, der durch einen Versuch verursacht wurde, ein Element zu aktualisieren, das im Postfach nicht gefunden werden kann. 
+Das folgende Beispiel zeigt eine Antwort auf die **UploadItems-Anforderung,** die einen Fehler enthält, der durch den Versuch verursacht wurde, ein Element zu aktualisieren, das im Postfach nicht gefunden werden kann. 
   
 ### <a name="code"></a>Code
 

@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4bc48bfb-a9ae-4e87-97a6-f3e0c9c89bc1
 description: Das PageItemCount-Element gibt die Anzahl der Seiten an, die in einer Suchergebnis-Paginierung zurückgegeben werden.
-ms.openlocfilehash: e8e98168212c104763f5cf94847e06d5ec93534d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: ab6665c6ff2f81b2889a91ccea77802a2c3783b7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467032"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524644"
 ---
 # <a name="pageitemcount"></a>PageItemCount
 
-Das **PageItemCount** -Element gibt die Anzahl der Seiten an, die in einer Suchergebnis-Paginierung zurückgegeben werden. 
+Das **PageItemCount-Element** gibt die Anzahl der Seiten an, die in einer Suchergebnis-Paginierung zurückgegeben werden. 
   
 ```XML
 <PageItemCount></PageItemCount>
 ```
 
- **Integer**
+ **Ganzzahl**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **PageItemCount** -Elements ist die Anzahl der Seiten, die in einer Suchergebnis-Paginierung zurückgegeben werden. 
+Der Textwert des **PageItemCount-Elements** ist die Anzahl der Seiten, die in einer Suchergebnis-Paginierung zurückgegeben werden. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

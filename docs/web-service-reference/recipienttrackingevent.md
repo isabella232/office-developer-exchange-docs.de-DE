@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RecipientTrackingEvent
 api_type:
 - schema
 ms.assetid: 2bffdac7-c2f5-4805-ae7e-bd865301acb6
 description: Das RecipientTrackingEvent-Element enthält Informationen für ein einzelnes Ereignis für einen Empfänger.
-ms.openlocfilehash: e9a014cdfac122f112205cfa5032535a770f9d82
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 30d9cd4ca075fda9607b191f576cac1b7a529988
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465485"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525763"
 ---
 # <a name="recipienttrackingevent"></a>RecipientTrackingEvent
 
-Das **RecipientTrackingEvent** -Element enthält Informationen für ein einzelnes Ereignis für einen Empfänger. 
+Das **RecipientTrackingEvent-Element** enthält Informationen für ein einzelnes Ereignis für einen Empfänger. 
   
 ```XML
 <RecipientTrackingEvent>
@@ -59,7 +59,7 @@ Keine.
 |[EventDescription](eventdescription.md) <br/> |Dieses Element ist erforderlich.  <br/> |
 |[EventData](eventdata.md) <br/> |Dieses Element ist optional.  <br/> |
 |[Server (MessageTracking)](server-messagetracking.md) <br/> |Dieses Element ist erforderlich.  <br/> |
-|[Interne-Nr](internalid.md) <br/> |Dieses Element ist erforderlich.  <br/> |
+|[InternalId](internalid.md) <br/> |Dieses Element ist erforderlich.  <br/> |
 |[BccRecipient](bccrecipient.md) <br/> |Dieses Element ist optional.  <br/> |
 |[HiddenRecipient](hiddenrecipient.md) <br/> |Dieses Element ist optional.  <br/> |
 |[UniquePathId](uniquepathid.md) <br/> |Dieses Element ist optional.  <br/> |
@@ -70,13 +70,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RecipientTrackingEvents](recipienttrackingevents.md) <br/> |Enthält eine Liste mit einem oder mehreren Überwachungsereignissen für einen Empfänger.  <br/> |
+|[RecipientTrackingEvents](recipienttrackingevents.md) <br/> |Enthält eine Liste mit einem oder mehreren Nachverfolgungsereignissen für einen Empfänger.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

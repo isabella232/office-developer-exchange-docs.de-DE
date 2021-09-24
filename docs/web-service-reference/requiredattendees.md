@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RequiredAttendees
 api_type:
 - schema
 ms.assetid: 422f8d44-b0eb-49ca-af0f-0e22b54c78d2
 description: Das RequiredAttendees-Element stellt Teilnehmer dar, die für die Teilnahme an einer Besprechung erforderlich sind.
-ms.openlocfilehash: a67800687f24dc323c3d80e4166ca9dd34dfc4fc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 593ea08f9c3486360c4718e293164f37bae2830f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468292"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521732"
 ---
 # <a name="requiredattendees"></a>RequiredAttendees
 
-Das **RequiredAttendees** -Element stellt Teilnehmer dar, die für die Teilnahme an einer Besprechung erforderlich sind. 
+Das **RequiredAttendees-Element** stellt Teilnehmer dar, die für die Teilnahme an einer Besprechung erforderlich sind. 
   
 ```xml
 <RequiredAttendees>
@@ -51,7 +51,7 @@ Keine.
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

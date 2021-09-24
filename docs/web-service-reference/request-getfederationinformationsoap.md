@@ -1,24 +1,24 @@
 ---
-title: Request (GetFederationInformation) (SOAP)
+title: Anforderung (GetFederationInformation) (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: beeb5371-f57b-4346-9753-035dd42c6bee
-description: Das Request-Element stellt eine GetFederationInformationRequest (SOAP)-Anforderung dar.
-ms.openlocfilehash: dbd88537d03f6325cf0025d08c63ae486544d705
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Request-Element stellt eine SOAP-Anforderung (GetFederationInformationRequest) dar.
+ms.openlocfilehash: 77ea1f14e98ed09a2a60efed4045ef8d903b3b05
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459581"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525582"
 ---
-# <a name="request-getfederationinformation-soap"></a>Request (GetFederationInformation) (SOAP)
+# <a name="request-getfederationinformation-soap"></a>Anforderung (GetFederationInformation) (SOAP)
 
-Das **Request** -Element stellt eine [GetFederationInformationRequest (SOAP)-](getfederationinformationrequest-soap.md) Anforderung dar. 
+Das **Request-Element** stellt eine [SOAP-Anforderung (GetFederationInformationRequest)](getfederationinformationrequest-soap.md) dar. 
   
 ```XML
 <Request>
@@ -52,13 +52,13 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Arbeiten mit der AutoErmittlung](https://msdn.microsoft.com/library/39726b67-2eb2-451b-9307-cfd0b518b55c%28Office.15%29.aspx)
+[Arbeiten mit AutoErmittlung](https://msdn.microsoft.com/library/39726b67-2eb2-451b-9307-cfd0b518b55c%28Office.15%29.aspx)
 

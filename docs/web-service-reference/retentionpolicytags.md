@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8ed4a48a-d510-4cbe-a172-145c33ffb297
-description: Das RetentionPolicyTags-Element enthält eine Liste von Aufbewahrungstags, die in der Antwort des GetUserRetentionPolicyTags-WSDL-Vorgangs zurückgegeben werden.
-ms.openlocfilehash: c3a5a165db242092132b4ff0b322dbad2029da36
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das RetentionPolicyTags-Element enthält eine Liste der Aufbewahrungstags, die in der Antwort des WSDL-Vorgangs "GetUserRetentionPolicyTags" zurückgegeben werden.
+ms.openlocfilehash: 9bd41a0826aff38e8fc2420553d4c7527c5a8e33
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462878"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524532"
 ---
 # <a name="retentionpolicytags"></a>RetentionPolicyTags
 
-Das **RetentionPolicyTags** -Element enthält eine Liste von Aufbewahrungstags, die in der Antwort des **GetUserRetentionPolicyTags** -WSDL-Vorgangs zurückgegeben werden. 
+Das **RetentionPolicyTags-Element** enthält eine Liste der Aufbewahrungstags, die in der Antwort des **WSDL-Vorgangs "GetUserRetentionPolicyTags"** zurückgegeben werden. 
   
 ```XML
 <RetentionPolicyTags>
@@ -42,7 +42,7 @@ Keine.
 
 [GetUserRetentionPolicyTagsResponse](getuserretentionpolicytagsresponse.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -54,7 +54,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

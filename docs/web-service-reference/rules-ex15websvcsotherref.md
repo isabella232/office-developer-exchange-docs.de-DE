@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Rules
 api_type:
 - schema
 ms.assetid: 53f59054-8f68-4eaa-be9c-ccfc9383bcf2
-description: Das rules-Element enthält ein Array von Schutzregeln.
-ms.openlocfilehash: d848abfe0c97d07836f28bc75806f506c5433d44
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Rules-Element enthält ein Array von Schutzregeln.
+ms.openlocfilehash: 492111e53c01a0848bd87c460670f35c524baf31
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464938"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517861"
 ---
 # <a name="rules"></a>Regeln
 
-Das **Rules** -Element enthält ein Array von Schutzregeln. 
+Das **Rules-Element** enthält ein Array von Schutzregeln. 
   
 ```xml
 <Rules>   <Rule/></Rules>
@@ -40,17 +40,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Rule](rule.md) <br/> |Enthält eine einzelne Schutz Regel. Dieses Element kann 0 oder mehr Male vorkommen. Dieses Element tritt null mal auf, wenn keine Schutzregeln durch die Organisation definiert sind. Es tritt mindestens einmal auf, wenn mindestens eine Regel von der Organisation definiert wird.  <br/> |
+|[Rule](rule.md) <br/> |Enthält eine einzelne Schutzregel. Dieses Element kann null oder mehr Mal auftreten. Dieses Element tritt null mal auf, wenn keine Schutzregeln von der Organisation definiert werden. Sie tritt ein oder mehrere Male auf, wenn mindestens eine Regel von der Organisation definiert wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ProtectionRulesConfiguration](protectionrulesconfiguration.md) <br/> |Enthält die Dienstkonfiguration für den Schutz Regeldienst.  <br/> |
+|[ProtectionRulesConfiguration](protectionrulesconfiguration.md) <br/> |Enthält die Dienstkonfiguration für den Schutzregeldienst.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

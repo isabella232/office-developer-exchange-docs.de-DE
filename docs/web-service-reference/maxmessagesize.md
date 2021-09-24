@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MaxMessageSize
 api_type:
 - schema
 ms.assetid: bb98ac72-9409-4332-81bb-ee3bebb9a00e
-description: Das MaxMessageSize-Element stellt die maximale Nachrichtengröße dar, die ein Empfänger annehmen kann.
-ms.openlocfilehash: 727eed38a129800b7d38aa49c41cdacfa13e7a36
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MaxMessageSize-Element stellt die maximale Nachrichtengröße dar, die ein Empfänger akzeptieren kann.
+ms.openlocfilehash: a89d43ed5958a3e39ff0e5b5ab9e9d2c1dac660c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468411"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524700"
 ---
 # <a name="maxmessagesize"></a>MaxMessageSize
 
-Das **MaxMessageSize** -Element stellt die maximale Nachrichtengröße dar, die ein Empfänger annehmen kann. 
+Das **MaxMessageSize-Element** stellt die maximale Nachrichtengröße dar, die ein Empfänger akzeptieren kann. 
   
 ```XML
 <MaxMessageSize/>
@@ -44,14 +44,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Tipps dar.  <br/> |
-|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |Enthält Dienstkonfigurationsinformationen für den e-Mail-Spitzen Dienst.  <br/> |
+|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Typen von E-Mail-Tipps dar.  <br/> |
+|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |Enthält Dienstkonfigurationsinformationen für den E-Mail-Tipps-Dienst.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist eine ganze Zahl, die die maximale Nachrichtengröße darstellt, die ein Empfänger annehmen kann. Dieser Wert kann in Kilobyte oder Megabyte gemessen werden.
+Der Textwert ist eine ganze Zahl, die die maximale Nachrichtengröße darstellt, die ein Empfänger akzeptieren kann. Dieser Wert kann in Kilobyte oder Megabyte gemessen werden.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

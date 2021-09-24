@@ -3,27 +3,27 @@ title: Persistente Anwendungseinstellungen mithilfe von EWS in Exchange verwalte
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 90f561f2-e40e-4f5b-b321-f86dbf4a1b71
-description: In diesem Artikel erfahren Sie, wie Sie persistente Anwendungseinstellungen mithilfe der verwaltete EWS-API oder EWS in Exchange erstellen, suchen, abrufen, aktualisieren und löschen können.
-ms.openlocfilehash: ab7b3ef5f87d8a26a412ca7187dc93c58d73112f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Erfahren Sie, wie Sie persistente Anwendungseinstellungen mithilfe der verwalteten EWS-API oder EWS in Exchange erstellen, suchen, abrufen, aktualisieren und löschen.
+ms.openlocfilehash: 0756f8dabe5f0b898619102b8565b65a536791b9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455730"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522278"
 ---
 # <a name="manage-persistent-application-settings-by-using-ews-in-exchange"></a>Persistente Anwendungseinstellungen mithilfe von EWS in Exchange verwalten
 
-In diesem Artikel erfahren Sie, wie Sie persistente Anwendungseinstellungen mithilfe der verwaltete EWS-API oder EWS in Exchange erstellen, suchen, abrufen, aktualisieren und löschen können. 
+Erfahren Sie, wie Sie persistente Anwendungseinstellungen mithilfe der verwalteten EWS-API oder EWS in Exchange erstellen, suchen, abrufen, aktualisieren und löschen. 
   
-Benutzer Konfigurationsobjekte sind die beste Option zum Speichern von Konfigurationseinstellungen für Ihre Exchange-Clientanwendung, vor allem, weil Sie in den meisten Clientanwendungen in Suchergebnissen verborgen sind. Client Anwendungen blenden diese Einstellungen in der Regel aus, da Sie vom Endbenutzer nicht angezeigt werden müssen und der Benutzer nicht versehentlich auf diese Informationen zugreift. In den Codebeispielen in diesem Artikel erfahren Sie, wie Sie Benutzer Konfigurationsobjekte zum Verwalten beständiger Einstellungen verwenden können, einschließlich der Vorgehensweise zum Erstellen, suchen, abrufen, aktualisieren und Löschen von Einstellungen für beständige Anwendungen, die in Benutzer Konfigurationsobjekten gespeichert sind.
+Benutzerkonfigurationsobjekte sind die beste Option zum Speichern von Konfigurationseinstellungen für Ihre Exchange Clientanwendung, in erster Linie, weil sie in den meisten Clientanwendungen vor Suchergebnissen verborgen sind. Clientanwendungen blenden diese Einstellungen in der Regel aus, da der Endbenutzer sie nicht sehen muss und der Benutzer nicht versehentlich auf diese Informationen zugreift. Die Codebeispiele in diesem Artikel zeigen, wie Sie mithilfe von Benutzerkonfigurationsobjekten persistente Einstellungen verwalten können, einschließlich des Erstellens, Suchens, Abrufens, Aktualisierens und Löschens persistenter Anwendungseinstellungen, die in Benutzerkonfigurationsobjekten gespeichert sind.
 
 <a name="createconfiguration"> </a>
 
-## <a name="create-an-application-setting-by-using-the-ews-managed-api"></a>Erstellen einer Anwendungseinstellung mithilfe der verwaltete EWS-API
+## <a name="create-an-application-setting-by-using-the-ews-managed-api"></a>Erstellen einer Anwendungseinstellung mithilfe der verwalteten EWS-API
 
-Sie können die [UserConfiguration. Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.userconfiguration.save%28v=exchg.80%29.aspx) verwaltete EWS-API-Methode verwenden, um eine benutzerdefinierte Konfigurationseinstellung zu erstellen. Ein Benutzer Konfigurationsobjekt kann XML, binär, ein Datenwörterbuch oder eine Kombination dieser drei Datentypen enthalten. Im folgenden Beispiel wird gezeigt, wie Sie ein Benutzer Konfigurationsobjekt mit dem Namen ContosoDraftSettings speichern, das Binärdaten im Ordner Entwürfe mithilfe der verwaltete EWS-API enthält. Dies kann hilfreich sein, wenn Sie Konfigurationsinformationen zur Anzeige von Entwurfselementen in Ihrer Clientanwendung speichern möchten. 
+Sie können die verwaltete EWS-API-Methode [UserConfiguration.Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.userconfiguration.save%28v=exchg.80%29.aspx) verwenden, um eine benutzerdefinierte Konfigurationseinstellung zu erstellen. Ein Benutzerkonfigurationsobjekt kann XML, binär, ein Datenwörterbuch oder eine Kombination dieser drei Datentypen enthalten. Das folgende Beispiel zeigt, wie Sie mithilfe der verwalteten EWS-API ein Benutzerkonfigurationsobjekt namens "ContosoDraftSettings" speichern, das Binärdaten in Ihrem Ordner "Entwürfe" enthält. Dies kann hilfreich sein, wenn Sie Konfigurationsinformationen darüber speichern möchten, wie Entwurfselemente in Ihrer Clientanwendung angezeigt werden. 
   
 ```cs
 private static void CreateUserConfiguration(ExchangeService service, byte[] binaryData)
@@ -41,7 +41,7 @@ private static void CreateUserConfiguration(ExchangeService service, byte[] bina
 ## <a name="create-an-application-setting-by-using-ews"></a>Erstellen einer Anwendungseinstellung mithilfe von EWS
 <a name="bk_createEWS"> </a>
 
-Sie können den [CreateUserConfiguration](https://msdn.microsoft.com/library/eb5b8ab6-9743-481c-aac9-f9aa889bd353%28Office.15%29.aspx) -EWS-Vorgang verwenden, um eine benutzerdefinierte Konfigurationseinstellung zu erstellen. Das folgende Beispiel zeigt den Anforderungs-XML-Code zum Erstellen eines Benutzer Konfigurationsobjekts namens ContosoDraftSettings. Die Anforderung versucht, einen binären Datenstrom in einem Benutzer Konfigurationsobjekt im Ordner "Entwürfe" zu speichern. Dies ist derselbe XML-Code, der vom verwaltete EWS-API-Beispiel generiert wird. 
+Sie können den EWS-Vorgang ["CreateUserConfiguration"](https://msdn.microsoft.com/library/eb5b8ab6-9743-481c-aac9-f9aa889bd353%28Office.15%29.aspx) verwenden, um eine benutzerdefinierte Konfigurationseinstellung zu erstellen. Das folgende Beispiel zeigt den Anforderungs-XML-Code zum Erstellen eines Benutzerkonfigurationsobjekts namens ContosoDraftSettings. Die Anforderung versucht, einen binären Datenstrom in einem Benutzerkonfigurationsobjekt im Ordner "Entwürfe" zu speichern. Dies ist derselbe XML-Code, der vom Beispiel der verwalteten EWS-API generiert wird. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -65,12 +65,12 @@ Sie können den [CreateUserConfiguration](https://msdn.microsoft.com/library/eb5
 </soap:Envelope>
 ```
 
-Der [Antwort-XML-Code](https://msdn.microsoft.com/library/eb5b8ab6-9743-481c-aac9-f9aa889bd353%28Office.15%29.aspx) ist einfach und gibt an, ob die CREATE-Anforderung erfolgreich war oder ob ein Fehler aufgetreten ist. 
+Der [Antwort-XML-Code](https://msdn.microsoft.com/library/eb5b8ab6-9743-481c-aac9-f9aa889bd353%28Office.15%29.aspx) ist einfach und gibt an, ob die Erstellungsanforderung erfolgreich war oder ob ein Fehler aufgetreten ist. 
   
-## <a name="find-an-application-setting-by-using-the-ews-managed-api"></a>Suchen einer Anwendungseinstellung mithilfe der verwaltete EWS-API
+## <a name="find-an-application-setting-by-using-the-ews-managed-api"></a>Suchen einer Anwendungseinstellung mithilfe der verwalteten EWS-API
 <a name="findconfiguration"> </a>
 
-Sie können die [Folder. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx) verwaltete EWS-API-Methode mit der zugeordneten Traversal-Option verwenden, um Benutzer Konfigurationsobjekte zu finden. Im folgenden Codebeispiel wird veranschaulicht, wie Sie mithilfe der verwaltete EWS-API im Ordner Entwürfe gespeicherte Benutzer Konfigurationsobjekte finden. 
+Sie können die verwaltete EWS-API-Methode [Folder.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx) mit der zugeordneten Traversierungsoption verwenden, um Benutzerkonfigurationsobjekte zu suchen. Im folgenden Codebeispiel wird gezeigt, wie Sie benutzerkonfigurationsobjekte finden, die mithilfe der verwalteten EWS-API im Ordner "Entwürfe" gespeichert sind. 
   
 ```cs
 private static void FindAssociated(ExchangeService service)
@@ -110,9 +110,9 @@ private static void FindAssociated(ExchangeService service)
 ## <a name="find-an-application-setting-by-using-ews"></a>Suchen einer Anwendungseinstellung mithilfe von EWS
 <a name="bk_findEWS"> </a>
 
-Sie können den [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) -EWS-Vorgang verwenden, um Benutzer Konfigurationsobjekte zu finden. 
+Sie können den [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) EWS-Vorgang verwenden, um Benutzerkonfigurationsobjekte zu suchen. 
   
-Im folgenden Beispiel wird die Anforderungs-XML für die Suche nach Benutzer Konfigurationsobjekten dargestellt. Dies ist derselbe XML-Code, der vom verwaltete EWS-API-Beispiel generiert wird.
+Das folgende Beispiel zeigt den Anforderungs-XML-Code zum Suchen von Benutzerkonfigurationsobjekten. Dies ist derselbe XML-Code, der vom Beispiel der verwalteten EWS-API generiert wird.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -140,13 +140,13 @@ Im folgenden Beispiel wird die Anforderungs-XML für die Suche nach Benutzer Kon
 </soap:Envelope>
 ```
 
-Das folgende Beispiel zeigt die erfolgreiche Antwort-XML für die Suche nach Benutzer Konfigurationsobjekten. Dies ist derselbe XML-Code, der vom verwaltete EWS-API-Beispiel verarbeitet wird. Beachten Sie Folgendes in dieser Antwort XML: 
+Das folgende Beispiel zeigt die erfolgreiche Antwort-XML zum Suchen von Benutzerkonfigurationsobjekten. Dies ist derselbe XML-Code, der vom Beispiel der verwalteten EWS-API verarbeitet wird. Beachten Sie Folgendes in dieser Antwort-XML: 
   
-- Wir haben den Bezeichner und die Änderungsschlüssel zur Lesbarkeit gekürzt.
+- Der Bezeichner und die Änderungsschlüssel wurden zur besseren Lesbarkeit gekürzt.
     
-- Die beiden Benutzer Konfigurationsobjekte werden als Nachrichten zurückgegeben. Dies liegt daran, dass der **FindItem** -Vorgang alle Elemente zurückgibt, die nicht im EWS-Schema als Nachrichtenelemente definiert sind. 
+- Die beiden Benutzerkonfigurationsobjekte werden als Nachrichten zurückgegeben. Dies liegt daran, dass der **FindItem-Vorgang** alle Elemente zurückgibt, die nicht im EWS-Schema als Nachrichtenelemente definiert sind. 
     
-- Die [ItemClass](https://msdn.microsoft.com/library/56020078-50b4-4880-894a-a9f234033cfb%28Office.15%29.aspx) -Eigenschaften für die beiden Benutzer Konfigurationsobjekte sind unterschiedlich. Das erste Benutzer Konfigurationsobjekt wurde mithilfe von EWS erstellt. Das zweite Objekt wurde von einer anderen API erstellt. 
+- Die [ItemClass-Eigenschaften](https://msdn.microsoft.com/library/56020078-50b4-4880-894a-a9f234033cfb%28Office.15%29.aspx) für die beiden Benutzerkonfigurationsobjekte unterscheiden sich. Das erste Benutzerkonfigurationsobjekt wurde mithilfe von EWS erstellt. Das zweite Objekt wurde von einer anderen API erstellt. 
     
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -190,10 +190,10 @@ Das folgende Beispiel zeigt die erfolgreiche Antwort-XML für die Suche nach Ben
 </s:Envelope>
 ```
 
-## <a name="get-and-update-application-settings-by-using-the-ews-managed-api"></a>Abrufen und Aktualisieren von Anwendungseinstellungen mithilfe der verwaltete EWS-API
+## <a name="get-and-update-application-settings-by-using-the-ews-managed-api"></a>Abrufen und Aktualisieren von Anwendungseinstellungen mithilfe der verwalteten EWS-API
 <a name="getconfiguration"> </a>
 
-Nachdem Sie ein Benutzer Konfigurationsobjekt gefunden haben, können Sie die [UserConfiguration. Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.userconfiguration.bind%28v=exchg.80%29.aspx) verwaltete EWS-API-Methode verwenden, um das Configuration-Objekt aus dem Postfach abzurufen. Nachdem Sie das Configuration-Objekt abgerufen haben, können Sie es mithilfe der [UserConfiguration. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.userconfiguration.bind%28v=exchg.80%29.aspx) -Methode aktualisieren. Im folgenden Beispiel wird gezeigt, wie ein Benutzer Konfigurationsobjekt mithilfe der verwaltete EWS-API abgerufen und aktualisiert wird. 
+Nachdem Sie ein Benutzerkonfigurationsobjekt gefunden haben, können Sie die verwaltete EWS-API-Methode [UserConfiguration.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.userconfiguration.bind%28v=exchg.80%29.aspx) verwenden, um das Konfigurationsobjekt aus dem Postfach abzurufen. Nachdem Sie das Konfigurationsobjekt abgerufen haben, können Sie es mit der [UserConfiguration.Update-Methode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.userconfiguration.bind%28v=exchg.80%29.aspx) aktualisieren. Das folgende Beispiel zeigt, wie Sie ein Benutzerkonfigurationsobjekt mithilfe der verwalteten EWS-API abrufen und aktualisieren. 
   
 ```cs
 private static void GetAndUpdateUserConfiguration(ExchangeService service)
@@ -233,7 +233,7 @@ private static void GetAndUpdateUserConfiguration(ExchangeService service)
 ## <a name="get-and-update-application-settings-by-using-ews"></a>Abrufen und Aktualisieren von Anwendungseinstellungen mithilfe von EWS
 <a name="bk_getEWS"> </a>
 
-Sie können den [GetUserConfiguration](https://msdn.microsoft.com/library/71d50e3c-92bd-435f-8118-b28bb85f8138%28Office.15%29.aspx) -EWS-Vorgang verwenden, um das Configuration-Objekt aus dem Postfach abzurufen, und die [UpdateUserConfiguration](https://msdn.microsoft.com/library/eda73b62-6a3a-43ae-8fd9-f30892811f27%28Office.15%29.aspx) , um das Objekt zu aktualisieren. Das folgende Beispiel zeigt die Anforderungs-XML für das erhalten eines Benutzer Konfigurationsobjekts namens TestConfig. Die Anforderung besagt, dass alle Konfigurationen in der Antwort zurückgegeben werden sollen. Dies ist derselbe XML-Code, der vom verwaltete EWS-API-Beispiel generiert wird. 
+Sie können den [GetUserConfiguration](https://msdn.microsoft.com/library/71d50e3c-92bd-435f-8118-b28bb85f8138%28Office.15%29.aspx) EWS-Vorgang verwenden, um das Konfigurationsobjekt aus dem Postfach abzurufen, und [updateUserConfiguration,](https://msdn.microsoft.com/library/eda73b62-6a3a-43ae-8fd9-f30892811f27%28Office.15%29.aspx) um das Objekt zu aktualisieren. Das folgende Beispiel zeigt den Anforderungs-XML-Code zum Abrufen eines Benutzerkonfigurationsobjekts mit dem Namen "TestConfig". Die Anforderung gibt an, dass alle Konfigurationen in der Antwort zurückgegeben werden sollen. Dies ist derselbe XML-Code, der vom Beispiel der verwalteten EWS-API generiert wird. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -255,7 +255,7 @@ Sie können den [GetUserConfiguration](https://msdn.microsoft.com/library/71d50e
 </soap:Envelope>
 ```
 
-Im folgenden Beispiel wird die erfolgreiche Antwort-XML für das Aufrufen von Benutzer Konfigurationsobjekten veranschaulicht. Die Antwort enthält ein Datenwörterbuch. Dies ist derselbe XML-Code, der vom verwaltete EWS-API-Beispiel verarbeitet wird. 
+Das folgende Beispiel zeigt die erfolgreiche Antwort-XML zum Abrufen von Benutzerkonfigurationsobjekten. Die Antwort enthält ein Datenwörterbuch. Dies ist derselbe XML-Code, der vom Beispiel der verwalteten EWS-API verarbeitet wird. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -313,7 +313,7 @@ Im folgenden Beispiel wird die erfolgreiche Antwort-XML für das Aufrufen von Be
 </s:Envelope>
 ```
 
-Im folgenden Beispiel wird die Anforderungs-XML zum Aktualisieren eines Benutzer Konfigurationsobjekts dargestellt. Die Anforderung besagt, dass alle Konfigurationen in der Antwort zurückgegeben werden sollen. Dies ist derselbe XML-Code, der vom verwaltete EWS-API-Beispiel generiert wird, das die **UserConfiguration. Update** -Methode aufruft. Sie können sehen, dass die Update-XML-Datei die vorhandenen Wörterbucheinträge enthält und die zusätzliche, die vor der Aktualisierung hinzugefügt wurde. 
+Das folgende Beispiel zeigt die XML-Anforderung zum Aktualisieren eines Benutzerkonfigurationsobjekts. Die Anforderung gibt an, dass alle Konfigurationen in der Antwort zurückgegeben werden sollen. Dies ist derselbe XML-Code, der vom EWS Managed API-Beispiel generiert wird, das die **UserConfiguration.Update-Methode** aufruft. Sie können sehen, dass der Update-XML-Code die vorhandenen Wörterbucheinträge und die zusätzlichen Einträge enthält, die vor der Aktualisierung hinzugefügt wurden. 
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -368,12 +368,12 @@ Im folgenden Beispiel wird die Anforderungs-XML zum Aktualisieren eines Benutzer
 </soap:Envelope>
 ```
 
-Der [Antwort-XML-Code](https://msdn.microsoft.com/library/eda73b62-6a3a-43ae-8fd9-f30892811f27%28Office.15%29.aspx) ist einfach und gibt an, ob das Update erfolgreich war oder ob ein Fehler aufgetreten ist. 
+Der [Antwort-XML-Code](https://msdn.microsoft.com/library/eda73b62-6a3a-43ae-8fd9-f30892811f27%28Office.15%29.aspx) ist einfach und gibt an, ob die Aktualisierung erfolgreich war oder ob ein Fehler aufgetreten ist. 
   
-## <a name="delete-an-application-setting-by-using-the-ews-managed-api"></a>Löschen einer Anwendungseinstellung mithilfe der verwaltete EWS-API
+## <a name="delete-an-application-setting-by-using-the-ews-managed-api"></a>Löschen einer Anwendungseinstellung mithilfe der verwalteten EWS-API
 <a name="deleteconfiguration"> </a>
 
-Sie können die [UserConfiguration. Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.userconfiguration.delete%28v=exchg.80%29.aspx) verwaltete EWS-API-Methode verwenden, um Benutzer Konfigurationsobjekte zu löschen. Im folgenden Codebeispiel wird veranschaulicht, wie Sie das ContosoDraftSettings-Benutzer Konfigurationsobjekt mithilfe der verwaltete EWS-API löschen. 
+Sie können die verwaltete EWS-API-Methode [UserConfiguration.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.userconfiguration.delete%28v=exchg.80%29.aspx) verwenden, um Benutzerkonfigurationsobjekte zu löschen. Das folgende Codebeispiel zeigt, wie Sie das ContosoDraftSettings-Benutzerkonfigurationsobjekt mithilfe der verwalteten EWS-API löschen. 
   
 ```cs
 private static void DeleteUserConfiguration(ExchangeService service)
@@ -392,9 +392,9 @@ private static void DeleteUserConfiguration(ExchangeService service)
 ## <a name="delete-an-application-setting-by-using-ews"></a>Löschen einer Anwendungseinstellung mithilfe von EWS
 <a name="bk_deleteEWS"> </a>
 
-Sie können den [DeleteUserConfiguration](https://msdn.microsoft.com/library/93e44690-be2d-4fdb-96a8-4ded3c193aed%28Office.15%29.aspx) -EWS-Vorgang verwenden, um Benutzer Konfigurationsobjekte zu löschen. 
+Sie können den EWS-Vorgang ["DeleteUserConfiguration"](https://msdn.microsoft.com/library/93e44690-be2d-4fdb-96a8-4ded3c193aed%28Office.15%29.aspx) verwenden, um Benutzerkonfigurationsobjekte zu löschen. 
   
-Das folgende Beispiel zeigt den Anforderungs-XML-Code zum Löschen eines Benutzer Konfigurationsobjekts namens ContosoDraftSettings, das auf den Ordner Entwürfe angewendet wurde. Dies ist derselbe XML-Code, der vom verwaltete EWS-API-Beispiel generiert wird.
+Das folgende Beispiel zeigt den Anforderungs-XML-Code zum Löschen eines Benutzerkonfigurationsobjekts namens ContosoDraftSettings, das auf den Ordner "Entwürfe" angewendet wurde. Dies ist derselbe XML-Code, der vom Beispiel der verwalteten EWS-API generiert wird.
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -415,7 +415,7 @@ Das folgende Beispiel zeigt den Anforderungs-XML-Code zum Löschen eines Benutze
 </soap:Envelope>
 ```
 
-Der [Antwort-XML-Code](https://msdn.microsoft.com/library/93e44690-be2d-4fdb-96a8-4ded3c193aed%28Office.15%29.aspx) ist einfach und gibt an, ob die DELETE-Anforderung erfolgreich war oder ob ein Fehler aufgetreten ist. 
+Der [Antwort-XML-Code](https://msdn.microsoft.com/library/93e44690-be2d-4fdb-96a8-4ded3c193aed%28Office.15%29.aspx) ist einfach und gibt an, ob die Löschanforderung erfolgreich war oder ob ein Fehler aufgetreten ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

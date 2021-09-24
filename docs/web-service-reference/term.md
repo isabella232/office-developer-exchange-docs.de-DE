@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1a796535-7e83-4aa8-850a-d217059050f8
-description: Das Term-Element gibt einen hervorgehobenen Ausdruck in einer FindConversation-oder FindItem-Antwort an.
-ms.openlocfilehash: fb102e21d6e7866110735cacd60cd2c3c68a9675
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Term-Element gibt einen hervorgehobenen Begriff in einer FindConversation- oder FindItem-Antwort an.
+ms.openlocfilehash: 12aba499ebfcad392a4e72b29a8cb3522a4f964f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459490"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522537"
 ---
 # <a name="term"></a>Begriff
 
-Das **Term** -Element gibt einen hervorgehobenen Ausdruck in einer **FindConversation** -oder **FindItem** -Antwort an. 
+Das **Term-Element** gibt einen hervorgehobenen Begriff in einer **FindConversation-** oder **FindItem-Antwort** an. 
   
 ```XML
 <Term>
@@ -43,7 +43,7 @@ Keine.
 
 [HighlightTerms](highlightterms.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

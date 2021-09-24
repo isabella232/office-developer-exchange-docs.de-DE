@@ -1,32 +1,32 @@
 ---
-title: SetMissedCallNotificationEnabled-Vorgang (um-Webdienst)
+title: SetMissedCallNotificationEnabled-Vorgang (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetMissedCallNotificationEnabled
 api_type:
 - schema
 ms.assetid: 6693b5db-ac6b-43bc-af83-a9c94fc425bf
 description: Der SetMissedCallNotificationEnabled-Vorgang aktiviert oder deaktiviert Benachrichtigungen über verpasste Anrufe.
-ms.openlocfilehash: ca4942942a81bc187e8e18a5e6f003f8587f79d1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 31f59887041aac02e5876b596931902373870203
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467396"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521417"
 ---
-# <a name="setmissedcallnotificationenabled-operation-um-web-service"></a>SetMissedCallNotificationEnabled-Vorgang (um-Webdienst)
+# <a name="setmissedcallnotificationenabled-operation-um-web-service"></a>SetMissedCallNotificationEnabled-Vorgang (UM-Webdienst)
 
 Der SetMissedCallNotificationEnabled-Vorgang aktiviert oder deaktiviert Benachrichtigungen über verpasste Anrufe.
   
-## <a name="setmissedcallnotificationenabled-request-example"></a>SetMissedCallNotificationEnabled-Anforderungs Beispiel
+## <a name="setmissedcallnotificationenabled-request-example"></a>SetMissedCallNotificationEnabled-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer SetMissedCallNotificationEnabled-Anforderung wird gezeigt, wie Sie eine Anforderung zum Aktivieren von Benachrichtigungen über verpasste Anrufe bilden.
+Das folgende Beispiel einer SetMissedCallNotificationEnabled-Anforderung zeigt, wie Sie eine Anforderung zum Aktivieren von Benachrichtigungen über verpasste Anrufe erstellen.
   
 ### <a name="code"></a>Code
 
@@ -41,11 +41,11 @@ Im folgenden Beispiel einer SetMissedCallNotificationEnabled-Anforderung wird ge
 </soap:Envelope>
 ```
 
-## <a name="successful-setmissedcallnotificationenabled-response-example"></a>Erfolgreiches SetMissedCallNotificationEnabled-Antwortbeispiel
+## <a name="successful-setmissedcallnotificationenabled-response-example"></a>Beispiel für erfolgreiche "SetMissedCallNotificationEnabled"-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer PlayOnPhoneGreeting-Antwort wird eine Antwort auf die SetMissedCallNotificationEnabled-Anforderung angezeigt.
+Das folgende Beispiel einer PlayOnPhoneGreeting-Antwort zeigt eine Antwort auf die Anforderung "SetMissedCallNotificationEnabled".
   
 ### <a name="code"></a>Code
 
@@ -62,9 +62,9 @@ Im folgenden Beispiel einer PlayOnPhoneGreeting-Antwort wird eine Antwort auf di
 
 
 
-[SetMissedCallNotificationEnabled (um-Webdienst)](setmissedcallnotificationenabled-um-web-service.md)
+[SetMissedCallNotificationEnabled (UM-Webdienst)](setmissedcallnotificationenabled-um-web-service.md)
   
-[SetMissedCallNotificationEnabledResponse (um-Webdienst)](setmissedcallnotificationenabledresponse-um-web-service.md)
+[SetMissedCallNotificationEnabledResponse (UM-Webdienst)](setmissedcallnotificationenabledresponse-um-web-service.md)
   
-[Status (um-Webdienst – SetMissedCallNotificationEnabled)](status-um-web-servicesetmissedcallnotificationenabled.md)
+[Status (UM-Webdienst – SetMissedCallNotificationEnabled)](status-um-web-servicesetmissedcallnotificationenabled.md)
 

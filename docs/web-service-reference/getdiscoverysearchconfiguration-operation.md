@@ -5,47 +5,47 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8a54a6dc-110c-4972-a8bc-5ddb43c4b857
-description: Hier finden Sie Informationen zum GetDiscoverySearchConfiguration-EWS-Vorgang.
-ms.openlocfilehash: 4db435988a9954b921e7851986b6f92ffedbad94
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum GetDiscoverySearchConfiguration EWS-Vorgang.
+ms.openlocfilehash: 62cadc818219e13199aa246e87066571d78c4e3d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461023"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525078"
 ---
 # <a name="getdiscoverysearchconfiguration-operation"></a>GetDiscoverySearchConfiguration-Vorgang
 
-Hier finden Sie Informationen zum **GetDiscoverySearchConfiguration** -EWS-Vorgang. 
+Hier finden Sie Informationen zum **GetDiscoverySearchConfiguration** EWS-Vorgang. 
   
-Der **GetDiscoverySearchConfiguration** -Vorgang gibt Konfigurationsinformationen für in-Place-Speicher, gespeicherte Ermittlungs suchen und die für die Discovery-Suche aktivierten Postfächer zurück. 
+Der **GetDiscoverySearchConfiguration-Vorgang** gibt Konfigurationsinformationen für in-situ-Speicher, gespeicherte Suchvorgänge und die Postfächer zurück, die für die Ermittlungssuche aktiviert sind. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-getdiscoverysearchconfiguration-operation"></a>Verwenden des GetDiscoverySearchConfiguration-Vorgangs
 
-Der **GetDiscoverySearchConfiguration** -Vorgang enthält Konfigurationsinformationen für die Discovery-Suche. Anforderungen können eines oder mehrere der folgenden Argumente enthalten: 
+Der **GetDiscoverySearchConfiguration-Vorgang** stellt Konfigurationsinformationen für die Ermittlungssuche bereit. Anforderungen können eines oder mehrere der folgenden Argumente enthalten: 
   
-1. [Search](searchid.md) -Kennung – identifiziert eine gespeicherte Ermittlungs Suche. Wenn dieses Argument in der Anforderung gesendet wird, werden die Werte der anderen Argumente ignoriert. 
+1. [SearchId](searchid.md) - Identifiziert eine gespeicherte Ermittlungssuche. Wenn dieses Argument in der Anforderung gesendet wird, werden die Werte der anderen Argumente ignoriert. 
     
-2. [ExpandGroupMembership](expandgroupmembership.md) – gibt an, ob die Gruppenmitgliedschaft in der Antwort erweitert wird. Der Wert **true** gibt an, dass die Gruppenmitgliedschaft erweitert wird, sodass alle durchsuchbaren Postfächer in der Antwort zurückgegeben werden. Der Wert **false** gibt an, dass nur die Gruppe in der Antwort zurückgegeben wird. 
+2. [ExpandGroupMembership](expandgroupmembership.md) - Gibt an, ob die Gruppenmitgliedschaft in der Antwort erweitert wird. Der Wert **"true"** gibt an, dass die Gruppenmitgliedschaft erweitert wird, sodass alle durchsuchbaren Postfächer in der Antwort zurückgegeben werden. Der Wert **"false"** gibt an, dass nur die Gruppe in der Antwort zurückgegeben wird. 
     
-3. [InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md) – gibt an, ob alle durchsuchbaren Postfächer zusätzlich zur in-situ-Speicherkonfiguration zurückgegeben werden. Der Wert **true** gibt an, dass nur die in-situ-Aufbewahrungs Konfigurationen zurückgegeben werden. Der Wert **false** gibt an, dass alle durchsuchbaren Postfachbezeichner zusätzlich zu den in-situ-Speicher-IDs zurückgegeben werden. Wenn dieses Element nicht vorhanden ist, ist das Standardverhalten das Äquivalent des Werts **false**. 
+3. [InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md) – Gibt an, ob alle durchsuchbaren Postfächer zusätzlich zur Konfiguration des in-situ-Haltebereichs zurückgegeben werden. Der Wert **"true"** gibt an, dass nur die Konfigurationen für den direkten Haltebereich zurückgegeben werden. Der Wert **"false"** gibt an, dass alle durchsuchbaren Postfachbezeichner zusätzlich zu den In-Situ-Haltebereichsbezeichnern zurückgegeben werden. Wenn dieses Element nicht vorhanden ist, entspricht das Standardverhalten dem Wert **"false".** 
     
 ### <a name="getdiscoverysearchconfiguration-operation-soap-headers"></a>SOAP-Header des GetDiscoverySearchConfiguration-Vorgangs
 
-Der **GetDiscoverySearchConfiguration** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **GetDiscoverySearchConfiguration-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Gibt die Serverrollen an, die erforderlich sind, damit der Anrufer die Anforderung stellen muss. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Identifiziert die Serverrollen, die erforderlich sind, damit der Aufrufer die Anforderung stellen kann. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="getdiscoverysearchconfiguration-operation-request-example-get-the-discovery-search-configuration-for-a-saved-search"></a>GetDiscoverySearchConfiguration-Vorgangs Anforderungs Beispiel: Abrufen der Ermittlungs Suchkonfiguration für eine gespeicherte Suche
+## <a name="getdiscoverysearchconfiguration-operation-request-example-get-the-discovery-search-configuration-for-a-saved-search"></a>GetDiscoverySearchConfiguration-Vorgangsanforderungsbeispiel: Abrufen der Suchkonfiguration für eine gespeicherte Suche
 
-Im folgenden Beispiel einer **GetDiscoverySearchConfiguration** -Vorgangsanforderung wird gezeigt, wie die Konfiguration einer gespeicherten Suche mit dem Namen "MyDiscSearchFor-sbrown" angefordert wird. Die Argumente für die Elemente [ExpandGroupMembership](expandgroupmembership.md) und [InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md) werden ignoriert. 
+Das folgende Beispiel einer **GetDiscoverySearchConfiguration-Vorgangsanforderung** zeigt, wie sie die Konfiguration einer gespeicherten Suche mit dem Namen "MyDiscSearchFor-sbrown" anfordert. Die Argumente für die Elemente [ExpandGroupMembership](expandgroupmembership.md) und [InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md) werden ignoriert. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -66,19 +66,19 @@ Im folgenden Beispiel einer **GetDiscoverySearchConfiguration** -Vorgangsanforde
 
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [GetDiscoverySearchConfiguration](getdiscoverysearchconfiguration.md)
     
-- [Suchtaste](searchid.md)
+- [SearchId](searchid.md)
     
 - [ExpandGroupMembership](expandgroupmembership.md)
     
 - [InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md)
     
-## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-a-single-saved-search"></a>Erfolgreiche GetDiscoverySearchConfiguration-Vorgangs Antwort: Anforderung für eine einzelne gespeicherte Suche
+## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-a-single-saved-search"></a>Erfolgreiche GetDiscoverySearchConfiguration-Vorgangsantwort: Anforderung für eine einzelne gespeicherte Suche
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetDiscoverySearchConfiguration** -Vorgangsanforderung, um die Konfiguration einer gespeicherten Suche mit dem Namen "MyDiscSearchFor-sbrown" abzurufen. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetDiscoverySearchConfiguration-Vorgangsanforderung,** um die Konfiguration einer gespeicherten Suche mit dem Namen "MyDiscSearchFor-sbrown" abzurufen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -111,7 +111,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetDiscoverySea
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [GetDiscoverySearchConfigurationResponse](getdiscoverysearchconfigurationresponse.md)
     
@@ -121,7 +121,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [DiscoverySearchConfiguration](discoverysearchconfiguration.md)
     
-- [Suchtaste](searchid.md)
+- [SearchId](searchid.md)
     
 - [SearchQuery](searchquery.md)
     
@@ -139,13 +139,13 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-- [Ismembershipgroup](ismembershipgroup.md)
+- [IsMembershipGroup](ismembershipgroup.md)
     
 - [ReferenceId](referenceid.md)
     
-## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-in-place-holds"></a>Erfolgreiche Reaktion des GetDiscoverySearchConfiguration-Vorgangs: Anforderung für in-Place-Aufbewahrungen
+## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-in-place-holds"></a>Erfolgreiche GetDiscoverySearchConfiguration-Vorgangsantwort: Anforderung von in-situ-Haltebereichen
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetDiscoverySearchConfiguration** -Vorgangsanforderung, um nur in-Place-Speicher zu erhalten. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetDiscoverySearchConfiguration-Vorgangsanforderung,** um nur direkte Haltebereiche abzurufen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -186,7 +186,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetDiscoverySea
 
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [GetDiscoverySearchConfigurationResponse](getdiscoverysearchconfigurationresponse.md)
     
@@ -196,7 +196,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [DiscoverySearchConfiguration](discoverysearchconfiguration.md)
     
-- [Suchtaste](searchid.md)
+- [SearchId](searchid.md)
     
 - [SearchQuery](searchquery.md)
     
@@ -204,9 +204,9 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [ManagedByOrganization](managedbyorganization.md)
     
-## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-all-saved-discovery-search-configurations"></a>Erfolgreiche GetDiscoverySearchConfiguration-Vorgangs Antwort: Anforderung für alle gespeicherten Ermittlungs Such Konfigurationen
+## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-all-saved-discovery-search-configurations"></a>Erfolgreiche GetDiscoverySearchConfiguration-Vorgangsantwort: Anforderung für alle gespeicherten Suchkonfigurationen
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetDiscoverySearchConfiguration** -Vorgangsanforderung zum Abrufen aller gespeicherten Ermittlungs suchen. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetDiscoverySearchConfiguration-Vorgangsanforderung,** um alle gespeicherten Suchvorgänge abzurufen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -273,7 +273,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetDiscoverySea
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [GetDiscoverySearchConfigurationResponse](getdiscoverysearchconfigurationresponse.md)
     
@@ -283,7 +283,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [DiscoverySearchConfiguration](discoverysearchconfiguration.md)
     
-- [Suchtaste](searchid.md)
+- [SearchId](searchid.md)
     
 - [SearchQuery](searchquery.md)
     
@@ -301,13 +301,13 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-- [Ismembershipgroup](ismembershipgroup.md)
+- [IsMembershipGroup](ismembershipgroup.md)
     
 - [ReferenceId](referenceid.md)
     
-## <a name="getdiscoverysearchconfiguration-operation-error-response"></a>Fehlerantwort des GetDiscoverySearchConfiguration-Vorgangs
+## <a name="getdiscoverysearchconfiguration-operation-error-response"></a>GetDiscoverySearchConfiguration-Vorgang – Fehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetDiscoverySearchConfiguration** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Abrufen einer gespeicherten Suche, die auf dem Server nicht gefunden wird. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetDiscoverySearchConfiguration-Vorgangsanforderung.** Dies ist eine Antwort auf eine Anforderung zum Abrufen einer gespeicherten Suche, die auf dem Server nicht gefunden wird. 
   
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -348,7 +348,7 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
     
 - [DiscoverySearchConfigurations](discoverysearchconfigurations.md)
     
-Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
+Weitere Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

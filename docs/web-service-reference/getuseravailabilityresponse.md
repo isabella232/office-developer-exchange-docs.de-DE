@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUserAvailabilityResponse
 api_type:
 - schema
 ms.assetid: 6999510a-d60e-43da-8964-57b5fb3e9d11
-description: Das GetUserAvailabilityResponse-Element ist das Stammelement, das die Eigenschaften enthält, die Benutzer Verfügbarkeitsinformationen oder vorgeschlagene Informationen zur Besprechungszeit definieren.
-ms.openlocfilehash: ceb24bc8b31a7d7313add213c26bef5efd3c89ae
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GetUserAvailabilityResponse-Element ist das Stammelement, das die Eigenschaften enthält, die Benutzerverfügbarkeitsinformationen oder vorgeschlagene Besprechungszeitinformationen definieren.
+ms.openlocfilehash: 16a6f79f6ccc930e3847867a560bc042657f12a3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458215"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521908"
 ---
 # <a name="getuseravailabilityresponse"></a>GetUserAvailabilityResponse
 
-Das **GetUserAvailabilityResponse** -Element ist das Stammelement, das die Eigenschaften enthält, die Benutzer Verfügbarkeitsinformationen oder vorgeschlagene Informationen zur Besprechungszeit definieren. 
+Das **GetUserAvailabilityResponse-Element** ist das Stammelement, das die Eigenschaften enthält, die Benutzerverfügbarkeitsinformationen oder vorgeschlagene Besprechungszeitinformationen definieren. 
   
 ```xml
 <GetUserAvailabilityResponse>
@@ -44,19 +44,19 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[FreeBusyResponseArray](freebusyresponsearray.md) <br/> |Enthält die Verfügbarkeitsinformationen der angeforderten Benutzer und den Antwortstatus.  <br/> |
-|[SuggestionsResponse](suggestionsresponse.md) <br/> |Enthält Antwortstatus Informationen und Vorschlagsdaten für angeforderte Besprechungsvorschläge.  <br/> |
+|[SuggestionsResponse](suggestionsresponse.md) <br/> |Enthält Antwortstatusinformationen und Vorschlagsdaten für angeforderte Besprechungsvorschläge.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel einer GetUserAvailability-Antwort wird eine Antwort auf eine GetUserAvailability-Anforderung angezeigt.
+Das folgende Beispiel einer GetUserAvailability-Antwort zeigt eine Antwort auf eine GetUserAvailability-Anforderung.
   
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -118,7 +118,7 @@ Im folgenden Beispiel einer GetUserAvailability-Antwort wird eine Antwort auf ei
 </GetUserAvailabilityResponse>
 ```
 
-Der Inhalt des [ID-](id.md) Elements wurde verkürzt, um die Lesbarkeit zu erhalten. 
+Der Inhalt des [ID-Elements](id.md) wurde gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
@@ -126,7 +126,7 @@ Der Inhalt des [ID-](id.md) Elements wurde verkürzt, um die Lesbarkeit zu erhal
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -136,5 +136,5 @@ Der Inhalt des [ID-](id.md) Elements wurde verkürzt, um die Lesbarkeit zu erhal
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

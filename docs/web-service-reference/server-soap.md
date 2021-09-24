@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: bd27f494-520a-459e-adcf-c3f505f27a69
 description: Das Server-Element stellt den alternativen Postfachserver dar.
-ms.openlocfilehash: 12c5b85cf323e72a113420dac289a655143a4e22
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: be21982941f2c69ec6822400336979d11d6e2ee3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462003"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521515"
 ---
 # <a name="server-soap"></a>Server (SOAP)
 
-Das **Server** -Element stellt den alternativen Postfachserver dar. 
+Das **Server-Element** stellt den alternativen Postfachserver dar. 
   
 ```XML
 <Server/>
@@ -45,15 +45,15 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Server** -Elements ist der Name des alternativen Postfachservers. 
+Der Textwert des **Server-Elements** ist der Name des alternativen Postfachservers. 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -62,5 +62,5 @@ Der Textwert des **Server** -Elements ist der Name des alternativen Postfachserv
 
 [AutoErmittlung Webdienstverweis für Exchange](autodiscover-web-service-reference-for-exchange.md)
   
-[XML-Elemente der SOAP-AutoErmittlung für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[SOAP AutoDiscover XML-Elemente für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

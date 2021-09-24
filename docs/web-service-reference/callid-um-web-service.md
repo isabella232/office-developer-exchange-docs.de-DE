@@ -1,34 +1,34 @@
 ---
-title: Anrufdienst (um-Webdienst)
+title: CallId (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CallId
 api_type:
 - schema
 ms.assetid: 2e044109-8bf3-488c-a654-459ac62fa1e7
-description: Das Call-ID-Element enthält den Wert, der den Bezeichner des Aufrufs in einer GetCallInfo (um-Webdienst)-Anforderungs-oder-Trennanforderung (um-Webdienst) darstellt.
-ms.openlocfilehash: 5d5f596d4a98cbfb4b53be04278dae2305fc10c3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das CallId-Element enthält den Wert, der den Bezeichner des Aufrufs in einer Anforderung getCallInfo (UM-Webdienst) oder einer Verbindung (UM-Webdienst)-Anforderung darstellt.
+ms.openlocfilehash: c19f1061d81bf7683fd2c84fb1c6968826046be6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529455"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522032"
 ---
-# <a name="callid-um-web-service"></a>Anrufdienst (um-Webdienst)
+# <a name="callid-um-web-service"></a>CallId (UM-Webdienst)
 
-Das **Call** -ID-Element enthält den Wert, der den Bezeichner des Aufrufs in einer [GetCallInfo (](getcallinfo-um-web-service.md) um-Webdienst)-Anforderungs-oder- [Trennanforderung (um-Webdienst)](disconnect-um-web-service.md) darstellt. 
+Das **CallId-Element** enthält den Wert, der den Bezeichner des Aufrufs in einer [Anforderung getCallInfo (UM-Webdienst)](getcallinfo-um-web-service.md) oder [einer Verbindung (UM-Webdienst)-Anforderung](disconnect-um-web-service.md) darstellt. 
   
-[GetCallInfo (um-Webdienst)](getcallinfo-um-web-service.md)
+[GetCallInfo (UM-Webdienst)](getcallinfo-um-web-service.md)
   
-[Anrufdienst (um-Webdienst)](callid-um-web-service.md)
+[CallId (UM-Webdienst)](callid-um-web-service.md)
   
-[Trennen (um-Webdienst)](disconnect-um-web-service.md)
+[Disconnect (UM-Webdienst)](disconnect-um-web-service.md)
   
-[Anrufdienst (um-Webdienst)](callid-um-web-service.md)
+[CallId (UM-Webdienst)](callid-um-web-service.md)
   
 ```xml
 <CallId/>
@@ -51,16 +51,16 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetCallInfo (um-Webdienst)](getcallinfo-um-web-service.md) <br/> |Definiert eine Anforderung zum Abrufen von Informationen zu einem Anruf.  <br/> |
-|[Trennen (um-Webdienst)](disconnect-um-web-service.md) <br/> |Definiert eine Anforderung zum Trennen eines Anrufs.  <br/> |
+|[GetCallInfo (UM-Webdienst)](getcallinfo-um-web-service.md) <br/> |Definiert eine Anforderung zum Abrufen von Informationen zu einem Anruf.  <br/> |
+|[Disconnect (UM-Webdienst)](disconnect-um-web-service.md) <br/> |Definiert eine Anforderung zum Trennen eines Anrufs.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der Wert Text stellt den Bezeichner für einen Anruf dar.
+Ein Textwert ist erforderlich. Der Textwert stellt den Bezeichner für einen Aufruf dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie zum ersten Aufrufen eines Anrufs den [PlayOnPhone-Vorgang (um-Webdienst)](playonphone-operation-um-web-service.md) oder den [PlayOnPhoneGreeting-Vorgang (um-Webdienst)](playonphonegreeting-operation-um-web-service.md). Verwenden Sie den Textwert, der in den [PlayOnPhoneResponse-Elementen (um-Webdienst)](playonphoneresponse-um-web-service.md) oder [PlayOnPhoneGreetingResponse (um-Webdienst)](playonphonegreetingresponse-um-web-service.md) für den Textwert des **Calling** -Elements zurückgegeben wird. 
+Verwenden Sie zum Starten eines Anrufs den [PlayOnPhone-Vorgang (UM-Webdienst)](playonphone-operation-um-web-service.md) oder [den PlayOnPhoneGreeting-Vorgang (UM-Webdienst).](playonphonegreeting-operation-um-web-service.md) Verwenden Sie den Textwert, der in den [PlayOnPhoneResponse-Elementen (UM-Webdienst)](playonphoneresponse-um-web-service.md) oder [PlayOnPhoneGreetingResponse-Elementen (UM-Webdienst)](playonphonegreetingresponse-um-web-service.md) zurückgegeben wird, für den Textwert des **CallId-Elements.** 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
@@ -68,18 +68,18 @@ Verwenden Sie zum ersten Aufrufen eines Anrufs den [PlayOnPhone-Vorgang (um-Webd
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[GetCallInfo-Vorgang (um-Webdienst)](getcallinfo-operation-um-web-service.md)
+[GetCallInfo-Vorgang (UM-Webdienst)](getcallinfo-operation-um-web-service.md)
   
-[Trennungsvorgang (um-Webdienst)](disconnect-operation-um-web-service.md)
+[Disconnect-Vorgange (UM-Webdienst)](disconnect-operation-um-web-service.md)
   
-[PlayOnPhone-Vorgang (um-Webdienst)](playonphone-operation-um-web-service.md)
+[PlayOnPhone-Vorgang (UM-Webdienst)](playonphone-operation-um-web-service.md)
   
-[PlayOnPhoneGreeting-Vorgang (um-Webdienst)](playonphonegreeting-operation-um-web-service.md)
+[PlayOnPhoneGreeting-Vorgang (UM-Webdienst)](playonphonegreeting-operation-um-web-service.md)
 

@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 47495d87-23c9-4d51-9f38-8c1d31f937aa
 description: Das LoginName-Element gibt den Anmeldenamen des Benutzers an.
-ms.openlocfilehash: a4fffc3c3f4b2a46a660de19a184d99bdf37e3b0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c22d2074b279edf2037537e19f277d3660a1c0fa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467816"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524868"
 ---
 # <a name="loginname-pox"></a>LoginName (POX)
 
-Das **LoginName** -Element gibt den Anmeldenamen des Benutzers an. 
+Das **LoginName-Element** gibt den Anmeldenamen des Benutzers an. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,11 +50,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen zum Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text gibt den Anmeldenamen des Benutzers an.
+Der Textwert gibt den Anmeldenamen des Benutzers an.
   
 ## <a name="see-also"></a>Siehe auch
 

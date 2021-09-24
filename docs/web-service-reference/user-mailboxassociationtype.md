@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d6e2677b-2b60-4def-8566-015a50da8605
 description: Das User-Element (MailboxAssociationType) ist nur für die interne Verwendung vorgesehen.
-ms.openlocfilehash: 65bc95aa6645b2824bcb126d30e53bb5b7b102d9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 3a50e9927121fc9ddc010a47706587487634d708
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530225"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522431"
 ---
 # <a name="user-mailboxassociationtype"></a>Benutzer (MailboxAssociationType)
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

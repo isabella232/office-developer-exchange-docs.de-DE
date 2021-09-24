@@ -5,27 +5,27 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetRoomLists
 api_type:
 - schema
 ms.assetid: 55d451f9-547f-44ac-872e-9cb220ea7b7c
-description: Mit dem GetRoomLists-Vorgang werden die Raumlisten abgerufen, die in der Exchange-Organisation zur Verfügung stehen.
-ms.openlocfilehash: d1393a6a5e99b7e0a7e354d2b7dd035d04356ec2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetRoomLists-Vorgang ruft die Raumlisten ab, die innerhalb der Exchange Organisation verfügbar sind.
+ms.openlocfilehash: 017936dd7d36ffc4c69183380f95e14f7a529913
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458278"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521942"
 ---
 # <a name="getroomlists-operation"></a>GetRoomLists-Vorgang
 
-Mit dem **GetRoomLists** -Vorgang werden die Raumlisten abgerufen, die in der Exchange-Organisation zur Verfügung stehen. 
+Der **GetRoomLists-Vorgang** ruft die Raumlisten ab, die in der Exchange Organisation verfügbar sind. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der **GetRoomLists** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
+Der **GetRoomLists-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben sind. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -34,11 +34,11 @@ Der **GetRoomLists** -Vorgang kann die SOAP-Header verwenden, die in der folgend
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="getroomlists-request-example"></a>GetRoomLists-Anforderungs Beispiel
+## <a name="getroomlists-request-example"></a>GetRoomLists-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden finden Sie ein Beispiel für eine **GetRoomLists** -Anforderung, die die auf dem Server verfügbaren Raumlisten zurückgibt. 
+Es folgt ein Beispiel für eine **GetRoomLists-Anforderung,** die die auf dem Server verfügbaren Raumlisten zurückgibt. 
   
 ### <a name="code"></a>Code
 
@@ -64,11 +64,11 @@ Das folgende Element wird in der Anforderung verwendet:
   
 - [GetRoomLists](getroomlists.md)
     
-## <a name="successful-getroomlists-response-example"></a>Erfolgreiches GetRoomLists-Antwortbeispiel
+## <a name="successful-getroomlists-response-example"></a>Beispiel für erfolgreiche GetRoomLists-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden finden Sie ein Beispiel für eine Antwort auf eine **GetRoomLists** -Anforderung. Diese Antwort zeigt eine Raumliste auf dem Server. 
+Es folgt ein Beispiel für eine Antwort auf eine **GetRoomLists-Anforderung.** Diese Antwort zeigt eine Raumliste auf dem Server an. 
   
 ### <a name="code"></a>Code
 
@@ -113,11 +113,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [MailboxType](mailboxtype.md)
     
-### <a name="getroomlists-error-response-example"></a>GetRoomLists-Fehlerantwort Beispiel
+### <a name="getroomlists-error-response-example"></a>GetRoomLists-Fehlerantwortbeispiel
 
 #### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt die Antwort auf einen Versuch, Raumlisten von einem Server zu erhalten, auf dem keine Raumlisten definiert sind.
+Das folgende Beispiel zeigt die Antwort auf einen Versuch, Raumlisten von einem Server abzurufen, auf dem keine Raumlisten definiert sind.
   
 #### <a name="code"></a>Code
 
@@ -137,7 +137,7 @@ Das folgende Beispiel zeigt die Antwort auf einen Versuch, Raumlisten von einem 
 
 ```
 
-#### <a name="getroomlists-error-response-elements"></a>GetRoomLists-Fehlerantwort Elemente
+#### <a name="getroomlists-error-response-elements"></a>GetRoomLists Error-Antwortelemente
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   

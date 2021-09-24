@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e70f1a3d-03cf-4252-804f-3eef0ce4a1a9
 description: Das ApprovalDecisionTime-Element gibt den Zeitpunkt an, zu dem die Genehmigungsentscheidung getroffen wurde.
-ms.openlocfilehash: 2c76d949d366050139978586cd9e784f2728d767
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 5e3dbe51a9301a5b23e73c563dcac7271e11d532
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464784"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525305"
 ---
 # <a name="approvaldecisiontime"></a>ApprovalDecisionTime
 
-Das **ApprovalDecisionTime** -Element gibt den Zeitpunkt an, zu dem die Genehmigungsentscheidung getroffen wurde. 
+Das **ApprovalDecisionTime-Element** gibt den Zeitpunkt an, zu dem die Genehmigungsentscheidung getroffen wurde. 
   
 ```XML
 <ApprovalDecisionTime />
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ApprovalDecisionTime** -Elements stellt die Uhrzeit und das Datum dar, an dem die Genehmigungsentscheidung getroffen wurde. 
+Der Textwert des **ApprovalDecisionTime-Elements** stellt die Uhrzeit und das Datum dar, zu denen die Genehmigungsentscheidung getroffen wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

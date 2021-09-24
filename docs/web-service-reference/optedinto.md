@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 083a23d9-acc3-4c15-9d30-c20bf7e6808d
-description: Das OptedInto-Element gibt einen booleschen Wert an, der angibt, ob der Benutzer sich für die Aufbewahrungsrichtlinie entschieden hat.
-ms.openlocfilehash: 1095a8c2527546b8c945dd7efb5c0218f9a151c8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das OptedInto-Element gibt einen booleschen Wert an, der angibt, ob sich der Benutzer für die Aufbewahrungsrichtlinie entschieden hat.
+ms.openlocfilehash: 6dbfe898ad6eb3141b265d51c8ec0cb830916a9d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468768"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518064"
 ---
 # <a name="optedinto"></a>OptedInto
 
-Das **OptedInto** -Element gibt einen booleschen Wert an, der angibt, ob der Benutzer sich für die Aufbewahrungsrichtlinie entschieden hat. 
+Das **OptedInto-Element** gibt einen booleschen Wert an, der angibt, ob sich der Benutzer für die Aufbewahrungsrichtlinie entschieden hat. 
   
 ```XML
 <OptedInto>true | false</OptedInto>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **OptedInto** -Element gibt an, dass der Benutzer sich für die Aufbewahrungsrichtlinie entschieden hat. Der Wert **false** gibt an, dass der Benutzer sich nicht für die Aufbewahrungsrichtlinie entschieden hat. 
+Der Textwert **"true"** für das **OptedInto-Element** gibt an, dass sich der Benutzer für die Aufbewahrungsrichtlinie entschieden hat. Der Wert **"false"** gibt an, dass sich der Benutzer nicht für die Aufbewahrungsrichtlinie entschieden hat. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

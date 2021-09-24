@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MustDisplayComment
 api_type:
 - schema
 ms.assetid: 11d4d3c3-4652-4ed4-9b29-a0b5f85b82b7
 description: Das MustDisplayComment-Element gibt an, ob der Kommentar des verwalteten Ordners angezeigt werden muss.
-ms.openlocfilehash: e86b0c6e2c1d7c3cc00561c17c82b3be82d81242
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: da1a5e01c1cf244385964db0a3c1a4be705cc25f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463209"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518127"
 ---
 # <a name="mustdisplaycomment"></a>MustDisplayComment
 
-Das **MustDisplayComment** -Element gibt an, ob der Kommentar des verwalteten Ordners angezeigt werden muss. 
+Das **MustDisplayComment-Element** gibt an, ob der Kommentar des verwalteten Ordners angezeigt werden muss. 
   
 ```xml
 <MustDisplayComment/>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt einen booleschen Wert dar. Der Wert **true** gibt an, dass der Kommentar angezeigt werden muss; der Wert **false** gibt an, dass der Kommentar nicht angezeigt werden muss. 
+Der Textwert stellt einen booleschen Wert dar. Der Wert **"true"** gibt an, dass der Kommentar angezeigt werden muss. Der Wert **"false"** gibt an, dass der Kommentar nicht angezeigt werden muss. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

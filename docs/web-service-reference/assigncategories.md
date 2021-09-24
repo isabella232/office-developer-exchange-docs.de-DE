@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AssignCategories
 api_type:
 - schema
 ms.assetid: f5c73fed-7b00-446d-8296-71a0c86e7fc6
-description: Das AssignCategories-Element stellt die Kategorien dar, die auf e-Mail-Nachrichten gestempelt werden.
-ms.openlocfilehash: e2dad0e2ef46421ae92a0d2826d161e5e2af3b93
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AssignCategories-Element stellt die Kategorien dar, die in E-Mail-Nachrichten gestempelt werden.
+ms.openlocfilehash: 9ef23f03f54f0c10ed8bdbf287f949119626cd51
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464742"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525218"
 ---
 # <a name="assigncategories"></a>AssignCategories
 
-Das **AssignCategories** -Element stellt die Kategorien dar, die auf e-Mail-Nachrichten gestempelt werden. 
+Das **AssignCategories-Element** stellt die Kategorien dar, die in E-Mail-Nachrichten gestempelt werden. 
   
 - [Regel (RuleType)](rule-ruletype.md)
   
@@ -58,7 +58,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -68,7 +68,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

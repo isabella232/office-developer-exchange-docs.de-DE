@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3bdf5955-1212-48a1-b3b5-743086866c91
-description: Das Retention Action-Element gibt die Aktion an, die für Elemente mit dem Aufbewahrungs Tag ausgeführt wird.
-ms.openlocfilehash: c16988413e732ddc3cd6ebc355cb73c4d96550c7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das RetentionAction-Element gibt die Aktion an, die für Elemente mit dem Aufbewahrungstag ausgeführt wird.
+ms.openlocfilehash: ecea4326f0e50460635966991cd55badf8946993
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465233"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517945"
 ---
 # <a name="retentionaction"></a>RetentionAction
 
-Das **Retention** Action-Element gibt die Aktion an, die für Elemente mit dem Aufbewahrungs Tag ausgeführt wird. 
+Das **RetentionAction-Element** gibt die Aktion an, die für Elemente mit dem Aufbewahrungstag ausgeführt wird. 
   
 ```XML
 <RetentionAction> None | MoveToDeletedItems | MoveToFolder | DeleteAndAllowRecovery | PermanentlyDelete | MarkAsPastRetentionLimit | MoveToArchive <RetentionAction>
@@ -42,23 +42,23 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des Elements **Retention** Action ist die für Elemente ausgeführte Aktion. Die folgende Liste enthält die Textwerte für das **Retention** -Element. 
+Der Textwert des **RetentionAction-Elements** ist die Aktion, die für Elemente ausgeführt wird. Die folgende Liste enthält die Textwerte für das **RetentionAction-Element.** 
   
-> **None** : für das Element wird keine Aktion ausgeführt. 
+> **Keine** : Es wird keine Aktion für das Element ausgeführt. 
     
-> **MoveToDeletedItems** – das Element wird in den Standardordner "Gelöschte Elemente" verschoben. 
+> **MoveToDeletedItems:** Das Element wird in den Standardordner "Gelöschte Elemente" verschoben. 
     
-> **MoveToFolder** – das Element wird in einen angegebenen Ordner verschoben. 
+> **MoveToFolder** : Das Element wird in einen angegebenen Ordner verschoben. 
     
-> **DeleteAndAllowRecovery mit** – das Element wird gelöscht und in den Papierkorb verschoben. 
+> **DeleteAndAllowRecovery** – Das Element wird gelöscht und in den Dumpster eingefügt. 
     
-> **PermanentlyDelete** – das Element wird endgültig aus dem Postfach gelöscht. 
+> **PermanentlyDelete** : Das Element wird dauerhaft aus dem Postfach gelöscht. 
     
-> **MarkAsPastRetentionLimit** – das Element wird als das Beibehaltungs Zeitlimit überschritten markiert. 
+> **MarkAsPastRetentionLimit** : Das Element wird als das Aufbewahrungszeitlimit überschritten markiert. 
     
-> **MoveToArchive mit** – das Element wird in das Archivpostfach verschoben. 
+> **MoveToArchive** – Das Element wird in das Archivpostfach verschoben. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

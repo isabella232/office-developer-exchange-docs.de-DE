@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SearchParameters
 api_type:
 - schema
 ms.assetid: 34602cb1-dc33-4552-a98c-3e77f614daa3
 description: Das SearchParameters-Element stellt die Parameter dar, die einen Suchordner definieren.
-ms.openlocfilehash: cd9f255621b17d01113392e67a0301b01b70f326
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a6a421ea6e8cfa0a2453d5cc86f6780010b6f7de
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466668"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521627"
 ---
 # <a name="searchparameters"></a>SearchParameters
 
-Das **SearchParameters** -Element stellt die Parameter dar, die einen Suchordner definieren. 
+Das **SearchParameters-Element** stellt die Parameter dar, die einen Suchordner definieren. 
   
 ```xml
 <SearchParameters Traversal="">
@@ -39,14 +39,14 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Traversal** <br/> |Beschreibt, wie ein Suchordner die Ordnerhierarchie durchläuft. Die Optionen sind sowohl für eine **Tiefe** als auch für eine **flache** Suche.  <br/> |
+|**Traversal** <br/> |Beschreibt, wie ein Suchordner die Ordnerhierarchie durchläuft. Die Optionen sind für eine **Deep-** oder eine **Shallow-Suche.**  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Einschränkung](restriction.md) <br/> |Stellt die Einschränkung oder Abfrage dar, die zum Filtern von Elementen oder Ordnern in FindItem/FindFolder und Suchordner Vorgängen verwendet wird.  <br/> |
-|[BaseFolderIds](basefolderids.md) <br/> |Stellt die Auflistung von Ordnern dar, die abgebaut werden, um den Inhalt eines Suchordners zu bestimmen.  <br/> |
+|[Restriction](restriction.md) <br/> |Stellt die Einschränkung oder Abfrage dar, die zum Filtern von Elementen oder Ordnern in FindItem/FindFolder und Suchordnervorgängen verwendet wird.  <br/> |
+|[BaseFolderIds](basefolderids.md) <br/> |Stellt die Auflistung von Ordnern dar, die minimiert werden, um den Inhalt eines Suchordners zu bestimmen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -54,7 +54,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |:-----|:-----|
 |[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner dar, der in einem Postfach enthalten ist.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

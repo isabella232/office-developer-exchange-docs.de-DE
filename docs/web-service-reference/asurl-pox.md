@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 6727f282-ec4c-4e61-8414-e7ba5f9865e7
-description: Das vom asurl-Element gibt die URL der besten Endpunkt Instanz der Exchange-Verfügbarkeits Webdienste für einen e-Mail-aktivierten Benutzer an.
-ms.openlocfilehash: 62fc3c18b2c41bb131ec5bc8546089b73f247f99
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ASUrl-Element gibt die URL der besten Endpunktinstanz von Exchange Availability Web Services für einen E-Mail-aktivierten Benutzer an.
+ms.openlocfilehash: cf6b1dff8de19ef30813e8413ca9bc251d5fed16
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464420"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525155"
 ---
 # <a name="asurl-pox"></a>ASUrl (POX)
 
-Das **vom asurl** -Element gibt die URL der besten Endpunkt Instanz der Exchange-Verfügbarkeits Webdienste für einen e-Mail-aktivierten Benutzer an. 
+Das **ASUrl-Element** gibt die URL der besten Endpunktinstanz von Exchange Availability Web Services für einen E-Mail-aktivierten Benutzer an. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,11 +50,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen zum Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Text-Wert enthält die URL, die für den Zugriff auf den Verfügbarkeitsdienst verwendet wird.
+Der Textwert enthält die URL, die für den Zugriff auf den Verfügbarkeitsdienst verwendet wird.
   
 ## <a name="see-also"></a>Siehe auch
 

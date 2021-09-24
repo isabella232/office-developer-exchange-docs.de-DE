@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Occurrence
 api_type:
 - schema
 ms.assetid: d292b99c-b896-40b7-be5d-2cb314c9481f
-description: Das Vorkommen-Element stellt ein einzelnes geändertes Vorkommen eines wiederkehrenden Kalenderelements dar.
-ms.openlocfilehash: c3a6bcce23f0bb1125dbd2a5bb86e9b20039a4e1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Occurrence-Element stellt ein einzelnes geändertes Vorkommen eines Terminserienkalenderelements dar.
+ms.openlocfilehash: 465c02263eadfc74629a8e21ebccf076206ec0d2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466318"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518092"
 ---
 # <a name="occurrence"></a>Vorkommen
 
-Das **vorkommen** -Element stellt ein einzelnes geändertes Vorkommen eines wiederkehrenden Kalenderelements dar. 
+Das **Occurrence-Element** stellt ein einzelnes geändertes Vorkommen eines Terminserienkalenderelements dar. 
   
 ```xml
 <Occurrence>
@@ -46,18 +46,18 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel eines geänderten Vorkommens eines wiederkehrenden Kalenderelements.  <br/> |
-|[Start](start.md) <br/> |Stellt die Startzeit eines geänderten Vorkommens eines wiederkehrenden Kalenderelements dar.  <br/> |
-|[End](end-ex15websvcsotherref.md) <br/> |Stellt die Endzeit eines geänderten Vorkommens eines wiederkehrenden Kalenderelements dar.  <br/> |
-|[OriginalStart](originalstart.md) <br/> |Stellt die ursprüngliche Startzeit eines geänderten Vorkommens eines wiederkehrenden Kalenderelements dar.  <br/> |
+|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel eines geänderten Vorkommens eines Wiederkehrenden Kalenderelements.  <br/> |
+|[Start](start.md) <br/> |Stellt die Startzeit eines geänderten Vorkommens eines Wiederkehrenden Kalenderelements dar.  <br/> |
+|[Ende ](end-ex15websvcsotherref.md) <br/> |Stellt die Endzeit eines geänderten Vorkommens eines Wiederkehrenden Kalenderelements dar.  <br/> |
+|[OriginalStart](originalstart.md) <br/> |Stellt die ursprüngliche Startzeit eines geänderten Vorkommens eines Wiederkehrenden Kalenderelements dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ModifiedOccurrences](modifiedoccurrences.md) <br/> |Enthält eine Auflistung von wiederkehrenden Kalenderelement vorkommen, die geändert wurden, sodass Sie sich vom Serienmasterelement unterscheiden.  <br/> |
+|[ModifiedOccurrences](modifiedoccurrences.md) <br/> |Enthält eine Auflistung wiederkehrender Kalenderelementvorkommen, die geändert wurden, sodass sie sich vom Serienmasterelement unterscheiden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

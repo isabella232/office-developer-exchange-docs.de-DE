@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - YearlyRegeneration
 api_type:
 - schema
 ms.assetid: 23538bca-738e-4319-944e-f459ff8a7eba
 description: Das YearlyRegeneration-Element beschreibt die Häufigkeit in Jahren, in der eine Aufgabe neu generiert wird.
-ms.openlocfilehash: 7a6796c433bc54d145d5a769e01f9bba46897735
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f38460eab5ff53a033d99835f23a128e9dc00d19
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457879"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522383"
 ---
 # <a name="yearlyregeneration"></a>YearlyRegeneration
 
-Das **YearlyRegeneration** -Element beschreibt die Häufigkeit in Jahren, in der eine Aufgabe neu generiert wird. 
+Das **YearlyRegeneration-Element** beschreibt die Häufigkeit in Jahren, in der eine Aufgabe neu generiert wird. 
   
 ```xml
 <YearlyRegeneratingPatternType>
@@ -43,7 +43,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Intervall](interval.md) <br/> |Definiert das Intervall in Jahren, in dem eine neue Aufgabe nach Abschluss der Aufgabe neu generiert wird.  <br/> |
+|[Intervall](interval.md) <br/> |Definiert das Intervall in Jahren, in dem ein neuer Vorgang nach Abschluss der Aufgabe neu generiert wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -51,7 +51,7 @@ Keine.
 |:-----|:-----|
 |[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Enthält Serieninformationen für wiederkehrende Vorgänge.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt. 
   

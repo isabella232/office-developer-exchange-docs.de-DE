@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ParentFolderId
 api_type:
 - schema
 ms.assetid: 0e3e6e5f-06d0-499b-8ca4-d36036521658
-description: Das parentfolderid-Element gibt den Ordner an, in dem ein neuer Ordner erstellt wird, oder den Ordner, der für den FindConversation-Vorgang gesucht werden soll.
-ms.openlocfilehash: 36e63266d10603c4d453a37e2b0d22e02599e516
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ParentFolderId-Element identifiziert den Ordner, in dem ein neuer Ordner erstellt wird, oder den Ordner, in dem nach dem FindConversation-Vorgang gesucht werden soll.
+ms.openlocfilehash: 53a5721b2c20c211a61b7e71b2e4f636700456b4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467802"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524623"
 ---
 # <a name="parentfolderid-targetfolderidtype"></a>ParentFolderId (TargetFolderIdType)
 
-Das **parentfolderid** -Element gibt den Ordner an, in dem ein neuer Ordner erstellt wird, oder den Ordner, der für den [FindConversation-Vorgang](findconversation-operation.md)gesucht werden soll.
+Das **ParentFolderId-Element** identifiziert den Ordner, in dem ein neuer Ordner erstellt wird, oder den Ordner, in dem nach dem [FindConversation-Vorgang](findconversation-operation.md)gesucht werden soll.
   
 ```xml
 <ParentFolderId>
@@ -39,7 +39,7 @@ Das **parentfolderid** -Element gibt den Ordner an, in dem ein neuer Ordner erst
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
-Das **parentfolderid** -Element enthält zwei untergeordnete Elemente. Die untergeordneten Elemente sind im Schema gegenseitig ausschliessend. 
+Das **ParentFolderId-Element** enthält zwei untergeordnete Elemente. Die untergeordneten Elemente schließen sich im Schema gegenseitig aus. 
   
 ### <a name="attributes"></a>Attribute
 
@@ -49,25 +49,25 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Enthält den erforderlichen Bezeichner und den optionalen Änderungsschlüssel eines Ordners, in dem ein neuer Ordner erstellt wird, oder der Ordner, der für den [FindConversation-Vorgang](findconversation-operation.md)durchsucht wird. Die Verwendung dieses Elements schließt die Verwendung des [DistinguishedFolderId](distinguishedfolderid.md) -Elements aus.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Bezeichnet die standarmäßigen Microsoft Exchange Server 2007-Ordner. Die Verwendung dieses Elements schließt die Verwendung des [Folder](folderid.md) -Elements aus.  <br/> |
+|[FolderId](folderid.md) <br/> |Enthält den erforderlichen Bezeichner und den optionalen Änderungsschlüssel eines Ordners, in dem ein neuer Ordner erstellt wird, oder des Ordners, der nach dem [FindConversation-Vorgang](findconversation-operation.md)durchsucht wird. Die Verwendung dieses Elements schließt die Verwendung des [DistinguishedFolderId-Elements](distinguishedfolderid.md) aus.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Bezeichnet die standarmäßigen Microsoft Exchange Server 2007-Ordner. Die Verwendung dieses Elements schließt die Verwendung des [FolderId-Elements](folderid.md) aus.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CreateFolder](createfolder.md) <br/> |Definiert eine Anforderung zum Erstellen eines Ordners in der Exchange-Datenbank.  <br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/CreateFolder` <br/> |
+|[CreateFolder](createfolder.md) <br/> |Definiert eine Anforderung zum Erstellen eines Ordners in der Exchange Datenbank.  <br/> Es folgt der XPath-Ausdruck für dieses Element:  `/CreateFolder` <br/> |
 |[FindConversation](findconversation.md) <br/> |Definiert eine Anforderung zum Suchen von Unterhaltungen in einem Postfach.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die beiden untergeordneten Elemente werden verwendet, um den Ordner zu definieren, der den neuen Ordner enthalten soll. Sie müssen entweder die [Ordner](folderid.md) -oder das [DistinguishedFolderId](distinguishedfolderid.md) -Element auswählen, um den übergeordneten Ordner des neuen Ordners zu identifizieren. Beide Elemente können nicht gleichzeitig verwendet werden. Dieses Element ist zum Erstellen von Ordnern erforderlich. 
+Die beiden untergeordneten Elemente werden verwendet, um den Ordner zu definieren, der den neuen Ordner enthalten soll. Sie müssen entweder die [FolderId](folderid.md) oder das [DistinguishedFolderId-Element](distinguishedfolderid.md) auswählen, um den übergeordneten Ordner des neuen Ordners zu identifizieren. Sie können nicht beide Elemente gleichzeitig verwenden. Dieses Element ist erforderlich, um Ordner zu erstellen. 
   
-Das [parentfolderid](parentfolderid.md) -Element beschreibt den Speicherort vorhandener Elemente und Ordner. 
+Das [ParentFolderId-Element](parentfolderid.md) beschreibt den Speicherort vorhandener Elemente und Ordner. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -77,7 +77,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

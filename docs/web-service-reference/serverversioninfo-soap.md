@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 8662647b-e50a-4774-9ba3-a951ae6df781
 description: Das ServerVersionInfo-Element enthält die Version des Servers, der die Anforderung verarbeitet hat.
-ms.openlocfilehash: b54b4833361ec78c7f8213473af4638965c7ddae
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: ac52b3eda429e65cb1ec046167a63fe4029d423a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467648"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521454"
 ---
 # <a name="serverversioninfo-soap"></a>ServerVersionInfo (SOAP)
 
-Das **ServerVersionInfo** -Element enthält die Version des Servers, der die Anforderung verarbeitet hat. 
+Das **ServerVersionInfo-Element** enthält die Version des Servers, der die Anforderung verarbeitet hat. 
   
 ```XML
 <ServerVersionInfo>
@@ -45,15 +45,15 @@ Keine.
 |:-----|:-----|
 |[MajorVersion (SOAP)](majorversion-soap.md) <br/> |Die Hauptversionsnummer für den Server.  <br/> |
 |[MinorVersion (SOAP)](minorversion-soap.md) <br/> |Die Nebenversionsnummer für den Server.  <br/> |
-|[MajorBuildNumber (SOAP)](majorbuildnumber-soap.md) <br/> |Die Hauptnummer des Builds für den Server.  <br/> |
-|[MinorBuildNumber (SOAP)](minorbuildnumber-soap.md) <br/> |Die Nebenversionsnummer für den Server.  <br/> |
-|[Version (SOAP)](version-soap.md) <br/> |Eine Beschreibung der Server Produktversion.  <br/> |
+|[MajorBuildNumber (SOAP)](majorbuildnumber-soap.md) <br/> |Die Hauptbuildnummer für den Server.  <br/> |
+|[MinorBuildNumber (SOAP)](minorbuildnumber-soap.md) <br/> |Die Kleinere Buildnummer für den Server.  <br/> |
+|[Version (SOAP)](version-soap.md) <br/> |Eine Beschreibung der Serverproduktversion.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wird im SOAP-Header zurückgegeben.
   
@@ -62,8 +62,8 @@ Dieses Element wird im SOAP-Header zurückgegeben.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 

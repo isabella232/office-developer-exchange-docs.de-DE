@@ -1,23 +1,23 @@
 ---
-title: Schulen
+title: Bildungseinrichtungen
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 486a0340-3163-4905-abd5-1372995c9a3a
-description: Das Schools-Element gibt ein Array von Schulnamen und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete Rolle an.
-ms.openlocfilehash: e24d5318a38aa0a902d4976d7b31a376399d2cfd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Schools-Element gibt ein Array von Schulnamen und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an.
+ms.openlocfilehash: 22c8242e0da906b75baa4cffe9c9ec4dd0e52cd3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465268"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524504"
 ---
-# <a name="schools"></a>Schulen
+# <a name="schools"></a>Bildungseinrichtungen
 
-Das **Schools** -Element gibt ein Array von Schulnamen und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete Rolle an. 
+Das **Schools-Element** gibt ein Array von Schulnamen und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an. 
   
 ```XML
 <Schools>
@@ -42,7 +42,7 @@ Keine.
 
 [Persona](persona.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

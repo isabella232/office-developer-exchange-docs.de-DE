@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Suggestion
 api_type:
 - schema
 ms.assetid: 040a5c8f-b62f-4d1d-9d2c-dc3c5e01481f
-description: Das suggestion-Element stellt einen einzelnen Besprechungs Vorschlag dar.
-ms.openlocfilehash: 25821abd5463ddba86a487709c8d2f8d928a94cc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Suggestion-Element stellt einen einzelnen Besprechungsvorschlag dar.
+ms.openlocfilehash: 8fe9500e0a822fc635e9c57c48d1778509963244
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530380"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524441"
 ---
 # <a name="suggestion"></a>Vorschlag
 
-Das **Suggestion** -Element stellt einen einzelnen Besprechungs Vorschlag dar. 
+Das **Suggestion-Element** stellt einen einzelnen Besprechungsvorschlag dar. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -57,18 +57,18 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Besprechungstermin](meetingtime.md) <br/> |Stellt eine vorgeschlagene Besprechungszeit dar.  <br/> |
-|[Isworkzeit](isworktime.md) <br/> |Stellt dar, ob die vorgeschlagene Besprechungszeit während der geplanten Arbeitsstunden auftritt.  <br/> |
+|[MeetingTime](meetingtime.md) <br/> |Stellt eine vorgeschlagene Besprechungszeit dar.  <br/> |
+|[IsWorkTime](isworktime.md) <br/> |Gibt an, ob die vorgeschlagene Besprechungszeit während der geplanten Arbeitszeiten erfolgt.  <br/> |
 |[SuggestionQuality](suggestionquality.md) <br/> |Stellt die Qualität der vorgeschlagenen Besprechungszeit dar.  <br/> |
-|[AttendeeConflictDataArray](attendeeconflictdataarray.md) <br/> |Enthält ein Array von Informationen, die Konflikte zwischen Benutzern und Ressourcen und die vorgeschlagene Besprechungszeit beschreibt.  <br/> |
+|[AttendeeConflictDataArray](attendeeconflictdataarray.md) <br/> |Enthält ein Array von Informationen, in dem Konflikte zwischen Benutzern und Ressourcen sowie die vorgeschlagene Besprechungszeit beschrieben werden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SuggestionArray](suggestionarray.md) <br/> |Enthält ein Array der vorgeschlagenen Besprechungszeiten.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray` <br/> |
+|[SuggestionArray](suggestionarray.md) <br/> |Enthält ein Array vorgeschlagener Besprechungszeiten.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -90,5 +90,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

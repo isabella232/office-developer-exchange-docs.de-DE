@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 95d115a1-2743-4416-af6f-1ef1be8c4e93
-description: Das WorkFaxes-Element gibt ein Array von Arbeits-Faxnummern und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an.
-ms.openlocfilehash: d0da5fc2e1b26d14ef3c07f876174da6ccacd016
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das WorkFaxes-Element gibt ein Array von Arbeitsfaxnummern und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an.
+ms.openlocfilehash: a3ba76f322d653a8244cdeebd8c2a9ada9504859
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459686"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525505"
 ---
 # <a name="workfaxes"></a>WorkFaxes
 
-Das **WorkFaxes** -Element gibt ein Array von Arbeits-Faxnummern und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an. 
+Das **WorkFaxes-Element** gibt ein Array von Arbeitsfaxnummern und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an. 
   
 ```XML
 <WorkFaxes>
@@ -42,7 +42,7 @@ Keine.
 
 [Persona](persona.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9697f2e5-a5f7-471a-a052-ae79e06eb09d
-description: Das ActionUrl-Element gibt die URL an, zu der der Benutzer navigieren sollte, um ein Problem zu beheben, das durch das AppStatus-Element angegeben wird.
-ms.openlocfilehash: 2335595b4be6452f41c25f15d359e6939609c9b9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ActionUrl-Element identifiziert die URL, zu der der Benutzer navigieren soll, um ein durch das AppStatus-Element angegebenes Problem zu beheben.
+ms.openlocfilehash: 21bffd1d9300488dad5eec5f0eb67b8a48ec3f00
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529672"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522194"
 ---
 # <a name="actionurl"></a>ActionUrl
 
-Das **ActionUrl** -Element gibt die URL an, zu der der Benutzer navigieren sollte, um ein Problem zu beheben, das durch das [AppStatus](appstatus-ex15websvcsotherref.md) -Element angegeben wird. 
+Das **ActionUrl-Element** identifiziert die URL, zu der der Benutzer navigieren soll, um ein durch das [AppStatus-Element](appstatus-ex15websvcsotherref.md) angegebenes Problem zu beheben. 
   
 ```XML
 <ActionUrl/>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ActionUrl** -Elements gibt die URL an, zu der der Benutzer navigieren sollte, um ein Problem zu beheben, das durch das **AppStatus** -Element angegeben wird. 
+Der Textwert des **ActionUrl-Elements** identifiziert die URL, zu der der Benutzer navigieren soll, um ein durch das **AppStatus-Element** angegebenes Problem zu beheben. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

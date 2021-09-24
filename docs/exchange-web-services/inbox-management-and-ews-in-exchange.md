@@ -3,15 +3,15 @@ title: Posteingangsverwaltung und EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3dfa0fc9-64bb-4d18-bff7-bf6b3bed4a0d
 description: Erfahren Sie, wie Sie Ihren Posteingang in Ihrer verwalteten EWS-API oder EWS-Anwendung mithilfe von Posteingangsregeln und der Liste der blockierten Absender verwalten können.
-ms.openlocfilehash: 7c88015386dc882f14184765e0046a866e8c0e10
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6dddb8d462276c4983fd04a0206d4d4a9be32df8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456316"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522215"
 ---
 # <a name="inbox-management-and-ews-in-exchange"></a>Posteingangsverwaltung und EWS in Exchange
 
@@ -71,7 +71,7 @@ Die folgende Abbildung zeigt den Prozess, dem das Regelmodul folgt.
 ### <a name="putting-the-pieces-together---parts-of-a-rule"></a>Kombinieren der einzelnen Komponenten – Teile einer Regel
 <a name="bk_Pieces"> </a>
 
-Eine Möglichkeit zum Visualisieren der Teile einer Regel besteht darin, sich vorzustellen, dass Sie jemandem Anweisungen erteilen, der Ihre eingehenden E-Mails organisieren soll. Sie können dieser Person sagen: "Wenn eine Nachricht eintrifft, \<insert conditions here\> tun Sie dies \<insert actions here\> , es sei denn, die Nachricht \<insert exceptions here\> . Im Folgenden werden die einzelnen Teile genauer erläutert:
+Eine Möglichkeit zum Visualisieren der Teile einer Regel besteht darin, sich vorzustellen, dass Sie jemandem Anweisungen erteilen, der Ihre eingehenden E-Mails organisieren soll. Sie können zu dieser Person sagen: "Wenn eine Nachricht eingeht, führen Sie dies \<insert conditions here\> \<insert actions here\> aus, es sei denn, die Nachricht \<insert exceptions here\> . Im Folgenden werden die einzelnen Teile genauer erläutert:
   
 #### <a name="conditions"></a>Bedingungen
 <a name="bk_Conditions"> </a>

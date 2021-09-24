@@ -1,27 +1,27 @@
 ---
-title: Ehepartnername
+title: SpouseName
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SpouseName
 api_type:
 - schema
 ms.assetid: 9aadecc3-54ba-4a25-b2b2-a5e2b63922f6
-description: Das ehepartnername-Element stellt den Namen des Partners oder Partners eines Kontakts dar.
-ms.openlocfilehash: 53d08731653b9dd22af2d33a1f0ece0ad0305096
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SpouseName-Element stellt den Namen des Ehegatten oder Partner eines Kontakts dar.
+ms.openlocfilehash: c8005526b329be57b0fd0d25e100ae7311bef195
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468208"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521333"
 ---
-# <a name="spousename"></a>Ehepartnername
+# <a name="spousename"></a>SpouseName
 
-Das **ehepartnername** -Element stellt den Namen des Partners oder Partners eines Kontakts dar. 
+Das **SpouseName-Element** stellt den Namen des Ehegatten oder Partner eines Kontakts dar. 
   
 ```xml
 <SpouseName/>
@@ -50,7 +50,7 @@ Keine.
 
 Ein Textwert ist erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

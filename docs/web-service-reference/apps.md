@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f6f0a2ca-22dd-4789-9eed-f0c1ec9036c4
-description: Das Apps-Element enthält Informationen zu allen XML-Manifestdateien für apps, die in einem Postfach installiert sind.
-ms.openlocfilehash: b2d6f13241f68cbed449a9f9821f9a6ec6ff687a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Apps-Element enthält Informationen zu allen XML-Manifestdateien für in einem Postfach installierte Apps.
+ms.openlocfilehash: 8a8b6c459a014517936d1c2753c4ce125892dacb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527446"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525306"
 ---
 # <a name="apps"></a>Apps
 
-Das **apps** -Element enthält Informationen zu allen XML-Manifestdateien für apps, die in einem Postfach installiert sind. 
+Das  Apps-Element enthält Informationen zu allen XML-Manifestdateien für in einem Postfach installierte Apps. 
   
 ```XML
 <Apps>
@@ -41,7 +41,7 @@ Keine.
 
 [GetAppManifestsResponse](getappmanifestsresponse.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

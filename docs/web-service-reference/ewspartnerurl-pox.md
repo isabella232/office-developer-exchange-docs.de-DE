@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2ebae21c-3efa-4239-9b49-4a3a8871449b
-description: Das EwsPartnerUrl-Element gibt die URL der besten Endpunkt Instanz für Exchange-Webdienste für einen e-Mail-aktivierten Benutzer an.
-ms.openlocfilehash: a67eb17bb3db67a922c53ba5e37900ee0a9b956b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das EwsPartnerUrl-Element gibt die URL der besten Endpunktinstanz für Exchange Webdienste (EWS) für einen E-Mail-aktivierten Benutzer an.
+ms.openlocfilehash: 88ee0abdc5b8db09a938fc5fdba717a166b42399
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526109"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524322"
 ---
 # <a name="ewspartnerurl-pox"></a>EwsPartnerUrl (POX)
 
-Das **EwsPartnerUrl** -Element gibt die URL der besten Endpunkt Instanz für Exchange-Webdienste für einen e-Mail-aktivierten Benutzer an. 
+Das **EwsPartnerUrl-Element** gibt die URL der besten Endpunktinstanz für Exchange Webdienste (EWS) für einen E-Mail-aktivierten Benutzer an. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -48,15 +48,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen zum Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt die URL des EWS-Endpunkts für den Benutzer dar.
+Der Textwert stellt die URL des EWS-Endpunkts für den Benutzer dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das **EwsPartnerUrl** -Element ist ein optionales untergeordnetes Element des **Protocol** -Elements. Es entspricht dem [EwsUrl (POX)-](ewsurl-pox.md) Element. 
+Das **EwsPartnerUrl-Element** ist ein optionales untergeordnetes Element des **Protocol-Elements.** Es entspricht dem [POX-Element (EwsUrl).](ewsurl-pox.md) 
   
 ## <a name="see-also"></a>Siehe auch
 

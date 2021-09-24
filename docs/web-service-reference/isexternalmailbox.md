@@ -5,15 +5,15 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5cc83174-e684-42c8-b72a-f82d3de3bb2f
 description: Das IsExternalMailbox -Element gibt an, ob das Postfach befindet sich außerhalb des Unternehmens.
-ms.openlocfilehash: 9be702b05e89857913023a8ec34b78ea4c309274
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f2435356a7315c51f3d99aeedf0ae2b21500981c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455289"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524231"
 ---
 # <a name="isexternalmailbox"></a>IsExternalMailbox
 
@@ -44,7 +44,7 @@ Keine.
 
 Der Textwert **true** für das **IsExternalMailbox** -Element gibt an, dass das Postfach in einer externen Organisation ist. Der Wert **false** gibt an, dass das Postfach in der Organisation ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 730e349e-8250-4236-af53-cd9039c74d8f
-description: Das MailTipsAccessLevel-Element stellt die MailTipsAccessLevel-Eigenschaft dar. Das MailTipsAccessLevel-Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet.
-ms.openlocfilehash: 8e3a467f7aa8484fc8a4bfb23f8b4ac4c138ccad
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MailTipsAccessLevel-Element stellt die MailTipsAccessLevel-Eigenschaft dar. Das MailTipsAccessLevel-Element ist nur für die interne Verwendung vorgesehen. Dieses Element wird von Clients nicht verwendet.
+ms.openlocfilehash: 275bdab1be5a754aa0cfa57eea232175e3d39ff3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458068"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524042"
 ---
 # <a name="mailtipsaccesslevel-soap"></a>MailTipsAccessLevel (SOAP)
 
-Das **MailTipsAccessLevel** -Element stellt die **MailTipsAccessLevel** -Eigenschaft dar. Das **MailTipsAccessLevel** -Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet. 
+Das **MailTipsAccessLevel-Element** stellt die **MailTipsAccessLevel-Eigenschaft** dar. Das **MailTipsAccessLevel-Element** ist nur für die interne Verwendung vorgesehen. Dieses Element wird von Clients nicht verwendet. 
   
 ```XML
 <MailTipsAccessLevel/>
@@ -39,19 +39,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste von Organisationsbeziehungen für eine einzelne Organisation dar.  <br/> |
+|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste der Organisationsbeziehungen für eine einzelne Organisation dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element gibt die maximale Anzahl von e-Mail-QuickInfo-Details an, die in der Antwort zurückgegeben werden.
+Dieses Element gibt die maximale Anzahl von E-Mail-Tipps-Details an, die in der Antwort zurückgegeben werden.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c2172e61-876a-4f76-bc9c-263c8be11429
 description: Das ArchiveItem-Element enthält die Quellordner-ID und ein Array von Element-IDs für das zugeordnete Archivelement.
-ms.openlocfilehash: e1694619c90160084980cb8f3a7c8a0ed1876295
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 876c86321c688e20fc3b5539c542bc46e67ba343
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463405"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525295"
 ---
 # <a name="archiveitem"></a>ArchiveItem
 
-Das **ArchiveItem** -Element enthält die Quellordner-ID und ein Array von Element-IDs für das zugeordnete Archivelement. 
+Das **ArchiveItem-Element** enthält die Quellordner-ID und ein Array von Element-IDs für das zugeordnete Archivelement. 
   
 ```XML
 <ArchiveItem>
@@ -37,13 +37,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[ArchiveSourceFolderId](archivesourcefolderid.md)  |  [Itemids](itemids.md)
+[ArchiveSourceFolderId](archivesourcefolderid.md)  |  [ItemIds](itemids.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -55,7 +55,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

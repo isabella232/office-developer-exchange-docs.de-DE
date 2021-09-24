@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cc52f7f5-c2a8-4cfb-937b-dfec6cd3ea0f
 description: Das MaximumBodySize-Element gibt die maximale Größe des Elementtexts an, der in einer Antwort zurückgegeben werden soll.
-ms.openlocfilehash: 21958c87aafc12a7369f957c87f86f80116cdf69
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 2b44ca42c38b19e092343dc7bec7d4538c4749ad
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530516"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524693"
 ---
 # <a name="maximumbodysize"></a>MaximumBodySize
 
-Das **MaximumBodySize** -Element gibt die maximale Größe des Elementtexts an, der in einer Antwort zurückgegeben werden soll. 
+Das **MaximumBodySize-Element** gibt die maximale Größe des Elementtexts an, der in einer Antwort zurückgegeben werden soll. 
   
 ```XML
 <MaximumBodySize></MaximumBodySize>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **MaximumBodySize** -Elements gibt die maximale Größe der [Text](body.md) Eigenschaft an, die in der Antwort zurückgegeben wird. Dies wird in Kilobyte gemessen. 
+Der Textwert des **MaximumBodySize-Elements** gibt die maximale Größe der in der Antwort zurückgegebenen [Body-Eigenschaft](body.md) an. Dies wird in KB gemessen. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

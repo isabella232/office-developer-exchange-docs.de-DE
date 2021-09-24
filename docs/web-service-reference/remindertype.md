@@ -1,23 +1,23 @@
 ---
-title: Reminder
+title: ReminderType
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bfaf84eb-271a-4728-84fc-a20205a100bd
-description: Das Reminder-Element gibt den Typ der Erinnerungen an, die zurückgegeben werden sollen.
-ms.openlocfilehash: 4ac20143bbfb29fb8f962515f2faba224b2f973f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ReminderType-Element gibt den Typ der zurückzugebenden Erinnerungen an.
+ms.openlocfilehash: ab10db372efb935b335868f5d212ded84b29e6eb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465527"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518001"
 ---
-# <a name="remindertype"></a>Reminder
+# <a name="remindertype"></a>ReminderType
 
-Das **Reminder** -Element gibt den Typ der Erinnerungen an, die zurückgegeben werden sollen. 
+Das **ReminderType-Element** gibt den Typ der zurückzugebenden Erinnerungen an. 
   
 ```XML
 <ReminderType> All | Current | Old </ReminderType>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Reminder** -Elements ist der Typ der Erinnerungen, die zurückgegeben werden sollen, entweder **all**, **Current**oder **Old**. **All** ist der empfohlene Wert für dieses Element. Weitere Informationen zur Beziehung zwischen dem **Reminder** -Element und den Elementen [BeginTime](begintime.md) und [EndTime](endtime-remindermessagedatatype.md) finden Sie unter [getmahnte-Vorgang](getreminders-operation.md).
+Der Textwert des **ReminderType-Elements** ist der Typ der zurückzugebenden Erinnerungen, entweder **All**, **Current** oder **Old**. **Alles** ist der empfohlene Wert für dieses Element. Weitere Informationen zur Beziehung zwischen dem **ReminderType-Element** und den [BeginTime-](begintime.md) und [EndTime-Elementen](endtime-remindermessagedatatype.md) finden Sie unter [GetReminders-Vorgang.](getreminders-operation.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

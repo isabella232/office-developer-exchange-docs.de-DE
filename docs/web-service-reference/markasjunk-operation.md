@@ -5,56 +5,56 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1f71f04d-56a9-4fee-a4e7-d1034438329e
-description: Hier finden Sie Informationen zum MarkAsJunk-EWS-Vorgang.
-ms.openlocfilehash: 25d6b01dfff64c4e45f3382223311219d349c165
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum MarkAsJunk EWS-Vorgang.
+ms.openlocfilehash: b165b415ce9380846b49d15dd321bfddba72b749
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468572"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524735"
 ---
 # <a name="markasjunk-operation"></a>MarkAsJunk-Vorgang
 
-Hier finden Sie Informationen zum **MarkAsJunk** -EWS-Vorgang. 
+Hier finden Sie Informationen zum **MarkAsJunk** EWS-Vorgang. 
   
-Mit dem **MarkAsJunk** -Vorgang werden Benutzer aus der Liste blockierter e-Mails hinzugefügt und entfernt und e-Mail-Nachrichten in den Ordner Junk-e-Mail verschoben 
+Der **MarkAsJunk-Vorgang** fügt Benutzer aus der Liste blockierter E-Mails hinzu und entfernt sie und verschiebt E-Mail-Nachrichten in den Junk-E-Mail-Ordner. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-markasjunk-operation"></a>Verwenden des MarkAsJunk-Vorgangs
 
-Der **MarkAsJunk** -Vorgang enthält zwei boolesche Optionen, um anzugeben, ob ein e-Mail-Absender zur Liste blockierter Absender hinzugefügt werden soll und ob die Ziel-e-Mail in den standardmäßigen Junk-e-Mail-Ordner oder in den Ordner Posteingang verschoben werden soll. Die Aktionen werden durch die Werte der Attribute **isjunk** und **MoveItem** bestimmt. Im folgenden sind die möglichen Aktionen basierend auf den Wertkombinationen für die Attribute **isjunk** und **MoveItem** aufgeführt: 
+Der **MarkAsJunk-Vorgang** enthält zwei boolesche Optionen, um anzugeben, ob ein E-Mail-Absender zur Liste der blockierten Absender hinzugefügt werden soll und ob die Ziel-E-Mail-Nachricht in den Standardmäßigen Junk-E-Mail-Ordner oder den Posteingangsordner verschoben werden soll. Die Aktionen werden durch die Werte der **Attribute "IsJunk"** und **"MoveItem"** bestimmt. Nachfolgend sind die möglichen Aktionen aufgeführt, die auf den Wertkombinationen für die Attribute **"IsJunk"** und **"MoveItem"** basieren: 
   
-- Wenn das **isjunk** -Attribut auf **true**festgelegt ist und das **MoveItem** -Attribut auf **true**festgelegt ist, wird der Absender der Ziel-e-Mail-Nachricht zur Liste blockierter Absender hinzugefügt, und die e-Mail-Nachricht wird in den Ordner Junk-dmail verschoben.
+- Wenn das **IsJunk-Attribut** auf **"true"** und das **MoveItem-Attribut** auf **"true"** festgelegt ist, wird der Absender der Ziel-E-Mail-Nachricht der Liste der blockierten Absender hinzugefügt, und die E-Mail-Nachricht wird in den Junk-Dmail-Ordner verschoben.
     
-- Wenn das **isjunk** -Attribut auf **true**festgelegt ist und das **MoveItem** -Attribut auf **false**festgelegt ist, wird der Absender der Ziel-e-Mail-Nachricht zur Liste blockierter Absender hinzugefügt, und die e-Mail-Nachricht wird nicht aus dem Ordner verschoben.
+- Wenn das **IsJunk-Attribut** auf **"true"** und das **MoveItem-Attribut** auf **"false"** festgelegt ist, wird der Absender der Ziel-E-Mail-Nachricht der Liste der blockierten Absender hinzugefügt, und die E-Mail-Nachricht wird nicht aus dem Ordner verschoben.
     
-- Wenn das **isjunk** -Attribut auf **false**festgelegt ist und das **MoveItem** -Attribut auf **true**festgelegt ist, wird der Absender der Ziel-e-Mail-Nachricht aus der Liste blockierter Absender entfernt, und die e-Mail-Nachricht wird in den Ordner Posteingang verschoben.
+- Wenn das **IsJunk-Attribut** auf **"false"** und das **MoveItem-Attribut** auf **"true"** festgelegt ist, wird der Absender der Ziel-E-Mail-Nachricht aus der Liste der blockierten Absender entfernt, und die E-Mail-Nachricht wird in den Ordner Posteingang verschoben.
     
-- Wenn das **isjunk** -Attribut auf **false**festgelegt ist und das **MoveItem** -Attribut auf **false**festgelegt ist, wird der Absender der Ziel-e-Mail-Nachricht aus der Liste blockierter Absender entfernt, und die e-Mail-Nachricht wird nicht aus dem Ordner verschoben.
+- Wenn das **IsJunk-Attribut** auf **"false"** und das **MoveItem-Attribut** auf **"false"** festgelegt ist, wird der Absender der Ziel-E-Mail-Nachricht aus der Liste der blockierten Absender entfernt, und die E-Mail-Nachricht wird nicht aus dem Ordner verschoben.
     
 > [!IMPORTANT]
-> Der Inhalt der Liste blockierter Absender ist nicht von EWS auffindbar. Wenn der Liste blockierter Absender ein Absender hinzugefügt wird, müssen Sie eine Kopie einer vom blockierten Absender gesendeten e-Mail-Nachricht behalten, um den Absender zukünftig aufzuheben. 
+> Der Inhalt der Liste blockierter Absender kann von EWS nicht gefunden werden. Wenn ein Absender zur Liste der blockierten Absender hinzugefügt wird, müssen Sie eine Kopie einer E-Mail-Nachricht, die vom blockierten Absender gesendet wurde, beibehalten, um die Blockierung des Absenders in Zukunft aufzuheben. 
   
 ### <a name="markasjunk-operation-soap-headers"></a>SOAP-Header des MarkAsJunk-Vorgangs
 
-Der **MarkAsJunk** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **MarkAsJunk-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden sollen. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dieser Header gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur, wie in RFC 3066 definiert, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden soll. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="markasjunk-operation-request-example-add-a-sender-to-the-blocked-sender-list"></a>MarkAsJunk-Vorgangs Anforderungs Beispiel: Hinzufügen eines Absenders zur Liste blockierter Absender
+## <a name="markasjunk-operation-request-example-add-a-sender-to-the-blocked-sender-list"></a>Beispiel für MarkAsJunk-Vorgangsanforderung: Hinzufügen eines Absenders zur Liste blockierter Absender
 
-Im folgenden Beispiel einer **MarkAsJunk** -Vorgangsanforderung wird gezeigt, wie der Absender einer e-Mail zur Liste blockierter Absender hinzugefügt und die e-Mail in den Junk-e-Mail-Ordner verschiebt wird. Der **MarkAsJunk** -Vorgang akzeptiert die eindeutige ID der e-Mail-Nachricht, um die e-Mail zu identifizieren, die zum Verweisen auf den Absender verwendet wird, der der Liste blockierter Absender hinzugefügt wurde. 
+Das folgende Beispiel einer **MarkAsJunk-Vorgangsanforderung** zeigt, wie der Absender einer E-Mail zur Liste der blockierten Absender hinzugefügt und die E-Mail in den Junk-E-Mail-Ordner verschoben wird. Der **MarkAsJunk-Vorgang** akzeptiert den eindeutigen E-Mail-Nachrichtenbezeichner, um die E-Mail zu identifizieren, die verwendet wird, um auf den Absender zu verweisen, der der Liste der blockierten Absender hinzugefügt wird. 
   
 > [!NOTE]
-> Alle Element-IDs und Änderungsschlüssel in diesem Artikel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Alle Elementbezeichner und Änderungsschlüssel in diesem Artikel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -76,7 +76,7 @@ Im folgenden Beispiel einer **MarkAsJunk** -Vorgangsanforderung wird gezeigt, wi
 
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [MarkAsJunk](markasjunk.md)
     
@@ -84,9 +84,9 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [ItemId](itemid.md)
     
-## <a name="successful-markasjunk-operation-response"></a>Erfolgreiche Reaktion des MarkAsJunk-Vorgangs
+## <a name="successful-markasjunk-operation-response"></a>Erfolgreiche MarkAsJunk-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **MarkAsJunk** -Vorgangsanforderung zum Hinzufügen eines Absenders zur Liste blockierter Absender und zum Verlegen der e-Mail-Nachricht in den Junk-e-Mail-Ordner. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **MarkAsJunk-Vorgangsanforderung,** um einen Absender zur Liste der blockierten Absender hinzuzufügen und die E-Mail-Nachricht in den Junk-E-Mail-Ordner zu verschieben. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -117,7 +117,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **MarkAsJunk** -V
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [MarkAsJunkResponse](markasjunkresponse.md)
     
@@ -129,9 +129,9 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [MovedItemId](moveditemid.md)
     
-## <a name="markasjunk-operation-request-example-remove-a-sender-from-the-blocked-sender-list"></a>MarkAsJunk-Vorgangs Anforderungs Beispiel: Entfernen eines Absenders aus der Liste blockierter Absender
+## <a name="markasjunk-operation-request-example-remove-a-sender-from-the-blocked-sender-list"></a>Beispiel für eine MarkAsJunk-Vorgangsanforderung: Entfernen eines Absenders aus der Liste der blockierten Absender
 
-Im folgenden Beispiel einer **MarkAsJunk** -Vorgangsanforderung wird gezeigt, wie der Absender einer e-Mail-Nachricht aus der Liste blockierter Absender entfernt und die e-Mail-Nachricht in den Ordner Posteingang verschoben wird. Sie müssen eine vom blockierten Absender gesendete e-Mail-Nachricht beibehalten, um den Absender aus der Liste blockierter Absender zu entfernen. Die e-Mail-Adresse des Absenders ist e-Mail-Nachrichten zugeordnet, die vom Absender gesendet wurden. Das Entfernen eines Absenders aus der Liste blockierter Absender ist nicht erfolgreich, wenn die Referenz-e-Mail-Nachricht nicht mehr im Postfach des Benutzers vorhanden ist. Die Element-ID, die zum Zuordnen einer e-Mail-Nachricht zu ihrem Absender verwendet wird, muss einem Element zugeordnet sein, das im Exchange-Postfach vorhanden ist. Es wird empfohlen, einen ausgeblendeten Ordner zum Speichern von Elementen zu erstellen, die von zuvor blockierten Absendern gesendet wurden, sodass die Blockierung der Absender von der Clientanwendung aufgehoben werden kann. Für den Fall, dass ein Element aus dem Exchange-Postfach entfernt wurde, muss ein Administrator die Exchange-Verwaltungskonsole verwenden, um auf die Liste blockierter Absender zuzugreifen, um einen Absender aus der Liste zu entfernen. Informationen zum Aufheben der Blockierung eines Benutzers mithilfe der Exchange-Verwaltungskonsole finden Sie unter [Konfigurieren der Einstellungen für sichere Absender und blockierte Absender in Office 365](https://support.microsoft.com/kb/2545137).
+Das folgende Beispiel einer **MarkAsJunk-Vorgangsanforderung** zeigt, wie der Absender einer E-Mail-Nachricht aus der Liste der blockierten Absender entfernt und die E-Mail-Nachricht in den Ordner Posteingang verschoben wird. Sie müssen eine vom blockierten Absender gesendete E-Mail-Nachricht beibehalten, um den Absender aus der Liste der blockierten Absender zu entfernen. Die E-Mail-Adresse des Absenders ist E-Mail-Nachrichten zugeordnet, die vom Absender gesendet wurden. Das Entfernen eines Absenders aus der Liste der blockierten Absender ist nicht erfolgreich, wenn die Referenz-E-Mail-Nachricht im Postfach des Benutzers nicht mehr vorhanden ist. Der Elementbezeichner, der zum Zuordnen einer E-Mail-Nachricht zu seinem Absender verwendet wird, muss einem Element zugeordnet sein, das im Exchange Postfach vorhanden ist. Es wird empfohlen, einen ausgeblendeten Ordner zum Speichern von Elementen zu erstellen, die von zuvor blockierten Absendern gesendet wurden, damit die Blockierung der Absender von der Clientanwendung aufgehoben werden kann. Für den Fall, dass ein Element aus dem Exchange Postfach entfernt wurde, muss ein Administrator die Exchange-Verwaltungskonsole verwenden, um auf die Liste blockierter Absender zuzugreifen, um einen Absender aus der Liste zu entfernen. Informationen zum Aufheben der Blockierung eines Benutzers mithilfe der Exchange-Verwaltungskonsole finden Sie unter [Konfigurieren der Einstellungen für sichere und blockierte Absender in Office 365](https://support.microsoft.com/kb/2545137).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -153,9 +153,9 @@ Im folgenden Beispiel einer **MarkAsJunk** -Vorgangsanforderung wird gezeigt, wi
 
 ```
 
-Eine erfolgreiche Antwort zum Entfernen eines Absenders aus der Liste blockierter Absender ist identisch mit der Antwort zum Hinzufügen eines Absenders zur Liste blockierter Absender.
+Eine erfolgreiche Antwort zum Entfernen eines Absenders aus der Liste der blockierten Absender entspricht der Antwort für das Hinzufügen eines Absenders zur Liste der blockierten Absender.
   
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [MarkAsJunk](markasjunk.md)
     
@@ -165,7 +165,7 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 ## <a name="markasjunk-operation-error-response"></a>Fehlerantwort des MarkAsJunk-Vorgangs
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **MarkAsJunk** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Hinzufügen oder Entfernen eines Absenders aus der Liste blockierter Absender, wenn die durch die Element-ID angegebene e-Mail-Nachricht nicht mehr im Postfach vorhanden ist. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **MarkAsJunk-Vorgangsanforderung.** Dies ist eine Antwort auf eine Anforderung zum Hinzufügen oder Entfernen eines Absenders aus der Liste blockierter Absender, wenn die durch den Elementbezeichner angegebene E-Mail-Nachricht nicht mehr im Postfach vorhanden ist. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

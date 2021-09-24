@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 29b085e8-95c0-4ba6-83e8-40de36a75be3
 description: Das GetUserPhotoResponse-Element enthält die Antwort auf eine GetUserPhoto-Anforderung.
-ms.openlocfilehash: c0dfb6979ade0192b376c3f7115fef78a4cc7e06
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 3674a4823b6efa9f2fdc35f242eb2ecae351a097
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463307"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521935"
 ---
 # <a name="getuserphotoresponse"></a>GetUserPhotoResponse
 
-Das **GetUserPhotoResponse** -Element enthält die Antwort auf eine GetUserPhoto-Anforderung. 
+Das **GetUserPhotoResponse-Element** enthält die Antwort auf eine GetUserPhoto-Anforderung. 
   
 ```XML
 <GetUserPhotoResponse>
@@ -41,13 +41,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[MessageText](messagetext.md)  |  [Response Code](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [Messagexml verwendet](messagexml.md)  |  [HasChanged](haschanged.md)  |  [PictureData](picturedata.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)  |  [HasChanged](haschanged.md)  |  [PictureData](picturedata.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -59,7 +59,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

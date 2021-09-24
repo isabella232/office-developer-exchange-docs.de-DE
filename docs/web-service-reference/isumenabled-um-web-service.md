@@ -1,26 +1,26 @@
 ---
-title: IsUMEnabled (um-Webdienst)
+title: IsUMEnabled (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsUMEnabled
 api_type:
 - schema
 ms.assetid: 33810bbd-837f-4a71-9ed9-cb4b8c52186d
 description: Das IsUMEnabled-Element gibt an, ob ein Postfach für Unified Messaging aktiviert ist.
-ms.openlocfilehash: ea5bde677c62664acad8afd5c8142e96d82b7a74
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 43632c28c5fb0c526dcf2ad936784953b00cc14a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458229"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524119"
 ---
-# <a name="isumenabled-um-web-service"></a>IsUMEnabled (um-Webdienst)
+# <a name="isumenabled-um-web-service"></a>IsUMEnabled (UM-Webdienst)
 
-Das **IsUMEnabled** -Element gibt an, ob ein Postfach für Unified Messaging aktiviert ist. 
+Das **IsUMEnabled-Element** gibt an, ob ein Postfach für Unified Messaging aktiviert ist. 
   
 ```xml
 <IsUMEnabled/>
@@ -41,15 +41,15 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich, wenn dieses Element enthalten ist. Der Wert **true** gibt an, dass das Postfach für Unified Messaging aktiviert ist. Der Wert **false** bedeutet, dass das Postfach nicht für Unified Messaging aktiviert ist. 
+Wenn dieses Element enthalten ist, ist ein Textwert erforderlich, der einen booleschen Wert darstellt. Der Wert **"true"** gibt an, dass das Postfach für Unified Messaging aktiviert ist. Der Wert **"false"** bedeutet, dass das Postfach für Unified Messaging nicht aktiviert ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie den [IsUMEnabled-Vorgang (um-Webdienst)](isumenabled-operation-um-web-service.md), um zu ermitteln, ob ein Postfach für Unified Messaging aktiviert ist.
+Um zu bestimmen, ob ein Postfach für Unified Messaging aktiviert ist, verwenden Sie den [IsUMEnabled-Vorgang (UM-Webdienst).](isumenabled-operation-um-web-service.md)
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
@@ -57,15 +57,15 @@ Verwenden Sie den [IsUMEnabled-Vorgang (um-Webdienst)](isumenabled-operation-um-
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[IsUMEnabled-Vorgang (um-Webdienst)](isumenabled-operation-um-web-service.md)
+[IsUMEnabled-Vorgang (UM-Webdienst)](isumenabled-operation-um-web-service.md)
 
 
-[XML-Elemente des Unified Messaging-Webdiensts für Exchange](unified-messaging-web-service-xml-elements-for-exchange.md)
+[UNIFIED Messaging-Webdienst-XML-Elemente für Exchange](unified-messaging-web-service-xml-elements-for-exchange.md)
 

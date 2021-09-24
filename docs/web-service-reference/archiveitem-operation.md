@@ -5,45 +5,45 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1af216b3-13ea-498e-b4fc-23513755d731
-description: Hier finden Sie Informationen zum ArchiveItem-EWS-Vorgang.
-ms.openlocfilehash: d1e18122e67c36babbc8bf01d305309e2b17b568
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum EWS-Vorgang "ArchiveItem".
+ms.openlocfilehash: 9dd753f92a6e6d37a5cf990118d63878508aee5a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463433"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525288"
 ---
 # <a name="archiveitem-operation"></a>ArchiveItem-Vorgang
 
-Hier finden Sie Informationen zum **ArchiveItem** -EWS-Vorgang. 
+Hier finden Sie Informationen zum **EWS-Vorgang "ArchiveItem".** 
   
-Mit dem **ArchiveItem** -Vorgang wird ein Element in das Archivpostfach des Postfachbenutzers verschoben. 
+Der **ArchiveItem-Vorgang** verschiebt ein Element in das Archivpostfach des Postfachbenutzers. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-archiveitem-operation"></a>Verwenden des ArchiveItem-Vorgangs
 
-Der **ArchiveItem** -Vorgang verwendet zwei Argumente in der Anforderung, die die Elemente identifizieren, die in das Archivpostfach und den Zielordner für diese Elemente zu migrieren sind. Ein Archivpostfach muss aktiviert sein, damit dieser Vorgang ordnungsgemäß ausgeführt werden kann. Informationen zum Aktivieren eines Archivpostfachs finden Sie unter [Verwalten von in-Place-Archiven](https://technet.microsoft.com/library/jj651146.aspx).
+Der **ArchiveItem-Vorgang** verwendet zwei Argumente in der Anforderung, die die Elemente identifizieren, die in das Archivpostfach und in den Zielordner für diese Elemente verschoben werden sollen. Ein Archivpostfach muss aktiviert sein, damit dieser Vorgang funktioniert. Informationen zum Aktivieren eines Archivpostfachs finden Sie unter [Verwalten In-Place Archive .](https://technet.microsoft.com/library/jj651146.aspx)
   
 ### <a name="archiveitem-operation-soap-headers"></a>SOAP-Header des ArchiveItem-Vorgangs
 
-Der **ArchiveItem** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **ArchiveItem-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, **Tags für die Identifizierung von Sprachen**, die für den Zugriff auf das Postfach verwendet werden sollen. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dieser Header gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifies the culture, as defined in RFC 3066, **Tags for the Identification of Languages**, to be used to access the mailbox. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="archiveitem-operation-request-example-move-an-item-to-the-archive-inbox-folder"></a>ArchiveItem-Vorgangs Anforderungs Beispiel: Verschieben eines Elements in den Archiv Posteingangsordner
+## <a name="archiveitem-operation-request-example-move-an-item-to-the-archive-inbox-folder"></a>Beispiel für eine ArchiveItem-Vorgangsanforderung: Verschieben eines Elements in den Archiv-Posteingangsordner
 
-Im folgenden Beispiel einer **ArchiveItem** -Vorgangsanforderung wird gezeigt, wie ein Element in den Archiv Posteingangsordner verschoben wird. 
+Das folgende Beispiel einer **ArchiveItem-Vorgangsanforderung** zeigt, wie ein Element in den Archivordner "Posteingang" verschoben wird. 
   
 > [!NOTE]
-> Alle Element-IDs und Änderungsschlüssel in diesem Artikel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Alle Elementbezeichner und Änderungsschlüssel in diesem Artikel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -68,7 +68,7 @@ Im folgenden Beispiel einer **ArchiveItem** -Vorgangsanforderung wird gezeigt, w
 </soap:Envelope>
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [ArchiveItem](archiveitem.md)    
 - [ArchiveSourceFolderId](archivesourcefolderid.md)    
@@ -76,9 +76,9 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
 - [ItemIds](itemids.md)   
 - [ItemId](itemid.md)
     
-## <a name="successful-archiveitem-operation-response"></a>Erfolgreiche Reaktion des ArchiveItem-Vorgangs
+## <a name="successful-archiveitem-operation-response"></a>Erfolgreiche ArchiveItem-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **ArchiveItem** -Vorgangsanforderung, um ein Element in ein Archivpostfach zu versetzen. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **ArchiveItem-Vorgangsanforderung** zum Verschieben eines Elements in ein Archivpostfach. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -109,17 +109,17 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **ArchiveItem** -
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [ArchiveItemResponse](archiveitemresponse.md)    
 - [ResponseMessages](responsemessages.md)   
 - [ArchiveItemResponseMessage](archiveitemresponsemessage.md)    
 - [ResponseCode](responsecode.md)    
-- [Elemente](items.md)
+- [Items](items.md)
     
 ## <a name="archiveitem-operation-error-response"></a>Fehlerantwort des ArchiveItem-Vorgangs
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **ArchiveItem** -Vorgangsanforderung. Dies ist eine Antwort auf eine gültige Anforderung zum Archivieren eines Elements, wenn ein Archivpostfach für einen Benutzer nicht aktiviert ist. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **ArchiveItem-Vorgangsanforderung.** Dies ist eine Antwort auf eine gültige Anforderung zum Archivieren eines Elements, wenn ein Archivpostfach für einen Benutzer nicht aktiviert ist. 
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -160,9 +160,9 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
 - [MessageText](messagetext.md)    
 - [ResponseCode](responsecode.md)    
 - [DescriptiveLinkKey](descriptivelinkkey.md)    
-- [Elemente](items.md)
+- [Items](items.md)
     
-Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
+Weitere Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

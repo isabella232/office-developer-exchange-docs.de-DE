@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b8769d30-045a-4fa7-814d-d00702f0c258
-description: Das ParentInternetMessageId-Element gibt den Internet Nachrichtenbezeichner der übergeordneten Nachricht in einer Unterhaltung an.
-ms.openlocfilehash: c53bc8c74f2b352d12880c885ebbe626693a54d2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ParentInternetMessageId-Element gibt den Internetnachrichtenbezeichner der übergeordneten Nachricht in einer Unterhaltung an.
+ms.openlocfilehash: 7c75f4f688984da58aeeea8bf6b3ece4af342f75
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529973"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521706"
 ---
 # <a name="parentinternetmessageid"></a>ParentInternetMessageId
 
-Das **ParentInternetMessageId** -Element gibt den Internet Nachrichtenbezeichner der übergeordneten Nachricht in einer Unterhaltung an. 
+Das **ParentInternetMessageId-Element** gibt den Internetnachrichtenbezeichner der übergeordneten Nachricht in einer Unterhaltung an. 
   
 ```XML
 <ParentInternetMessageId></ParentInternetMessageId>
@@ -43,9 +43,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ParentInternetMessageId** -Elements ist der Internet Nachrichtenbezeichner der übergeordneten Nachricht in der Unterhaltung. 
+Der Textwert des **ParentInternetMessageId-Elements** ist der Internetnachrichtenbezeichner der übergeordneten Nachricht in der Unterhaltung. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

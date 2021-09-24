@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MarkAsRead
 api_type:
 - schema
 ms.assetid: 404842e1-fbdb-480d-a1d8-ba1ab2c9fb1e
 description: Das MarkAsRead-Element gibt an, ob Nachrichten als gelesen markiert werden sollen.
-ms.openlocfilehash: 691409a4eace8885d36f4b30b8eef1aca8c332a6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0597380d5fdd4771f69263729449eebe5220b077
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461765"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523986"
 ---
 # <a name="markasread"></a>MarkAsRead
 
-Das **MarkAsRead** -Element gibt an, ob Nachrichten als gelesen markiert werden sollen. 
+Das **MarkAsRead-Element** gibt an, ob Nachrichten als gelesen markiert werden sollen. 
   
 ```XML
 <MarkAsRead>true | false</MarkAsRead>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass die Nachricht als gelesen markiert werden muss. Der Wert **false** gibt an, dass Nachrichten nicht als gelesen markiert werden dürfen. 
+Der Textwert **"true"** gibt an, dass die Nachricht als gelesen markiert werden muss. Der Wert **"false"** gibt an, dass Nachrichten nicht als gelesen markiert werden dürfen. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -60,7 +60,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SIPResponseText
 api_type:
 - schema
 ms.assetid: 359a9085-50c0-4c94-8a12-216339ba2018
 description: Das SIPResponseText-Element gibt den SIP-Antworttext an.
-ms.openlocfilehash: 6249e4bb651ba62eb99537d0cdec5bea60670f61
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 34ea11b91aef777c2e40d62946847be00eac0dc3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460463"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521361"
 ---
 # <a name="sipresponsetext"></a>SIPResponseText
 
-Das **SIPResponseText** -Element gibt den SIP-Antworttext an. 
+Das **SIPResponseText-Element** gibt den SIP-Antworttext an. 
   
 ```xml
 <SIPResponseText/>
@@ -50,9 +50,9 @@ Keine.
 
 Der SIP-Antworttext.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im Verzeichnis/EWS/"aus des Computers, auf dem Exchange Server mit installierter Client Zugriffs-Server Rolle ausführt.
+Das Schema, das dieses Element beschreibt, befindet sich im Verzeichnis /ews/ des Computers, auf dem Exchange Server mit installierter Clientzugriffsserverrolle ausgeführt wird.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

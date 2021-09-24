@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 6dbd9221-e019-4981-bcdb-ea370331f407
-description: Das ArrayOfDomainResponse-Element enthält ein Array von Antworten für die Einstellungen jeder angeforderten Domäne.
-ms.openlocfilehash: 382a62ed14e7015c2a25f06b6f9cfc1be4f9e66b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ArrayOfDomainResponse-Element enthält ein Array von Antworten für die Einstellungen der einzelnen angeforderten Domänen.
+ms.openlocfilehash: 091bbb4cbeaf2fe82a32432374bfeb91b8ea2a51
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466017"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525225"
 ---
 # <a name="arrayofdomainresponse-soap"></a>ArrayOfDomainResponse (SOAP)
 
-Das **ArrayOfDomainResponse** -Element enthält ein Array von Antworten für die Einstellungen jeder angeforderten Domäne. 
+Das **ArrayOfDomainResponse-Element** enthält ein Array von Antworten für die Einstellungen der einzelnen angeforderten Domänen. 
   
 ```XML
 <ArrayOfDomainResponse>
@@ -43,7 +43,7 @@ Keine.
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
@@ -54,8 +54,8 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

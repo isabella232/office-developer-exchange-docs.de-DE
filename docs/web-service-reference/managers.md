@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9be5f734-af42-4bf1-9eb4-f3e4f0917640
-description: Das Managers-Element gibt ein Array von Manager-Namen und die Bezeichner ihrer Quell Zuordnungen für eine Rolle an.
-ms.openlocfilehash: 49fccb4e6e4b920887d6f8fbc41c5ccdba1cbbe2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Managers-Element gibt ein Array von Managernamen und die Bezeichner ihrer Quellzuschreibungen für eine Persona an.
+ms.openlocfilehash: a36b85ccefa7e13f9bdc482d5d613044532c7347
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530895"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524007"
 ---
 # <a name="managers"></a>Manager
 
-Das **Managers** -Element gibt ein Array von Manager-Namen und die Bezeichner ihrer Quell Zuordnungen für eine Rolle an. 
+Das **Managers-Element** gibt ein Array von Managernamen und die Bezeichner ihrer Quellzuschreibungen für eine Persona an. 
   
 ```XML
 <Managers>
@@ -42,7 +42,7 @@ Keine.
 
 [Persona](persona.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

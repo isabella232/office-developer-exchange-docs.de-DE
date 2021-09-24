@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - YomiLastName
 api_type:
 - schema
 ms.assetid: 8dd97506-de8a-48ac-bc72-35b4db886588
 description: Das YomiLastName-Element stellt den Namen dar, der in Japan für die durchsuchbare oder phonetische Schreibweise eines japanischen Nachnamens verwendet wird.
-ms.openlocfilehash: ee85400a1516dfa428e4d378b2fa333fb6556896
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6eef982fec7a169aa9ed1372d32479d6ee4eed7e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467109"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522292"
 ---
 # <a name="yomilastname"></a>YomiLastName
 
-Das **YomiLastName** -Element stellt den Namen dar, der in Japan für die durchsuchbare oder phonetische Schreibweise eines japanischen Nachnamens verwendet wird. 
+Das **YomiLastName-Element** stellt den Namen dar, der in Japan für die durchsuchbare oder phonetische Schreibweise eines japanischen Nachnamens verwendet wird. 
   
 ```xml
 <YomiLastName/>
@@ -44,9 +44,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Completename](completename.md) <br/> |Stellt den vollständigen Namen eines Kontakts dar.  <br/> |
+|[CompleteName](completename.md) <br/> |Stellt den vollständigen Namen eines Kontakts dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

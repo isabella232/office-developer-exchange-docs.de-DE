@@ -3,55 +3,55 @@ title: Zugreifen auf E-Mails als Stellvertretung mithilfe der EWS in Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a8123604-c7c0-405d-a0ed-7a9b4a431bfd
-description: Informationen zum Zugreifen auf e-Mails als Stellvertretung mithilfe der verwaltete EWS-API oder EWS in Exchange.
-ms.openlocfilehash: 0c26f69042c568fe7d877778c7d8f1e689e5b372
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Erfahren Sie, wie Sie mithilfe der verwalteten EWS-API oder EWS in Exchange auf E-Mails als Stellvertretung zugreifen.
+ms.openlocfilehash: aa921bc36004b3a26caa514390e52249021b304f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528286"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521214"
 ---
 # <a name="access-email-as-a-delegate-by-using-ews-in-exchange"></a>Zugreifen auf E-Mails als Stellvertretung mithilfe der EWS in Exchange
 
-Informationen zum Zugreifen auf e-Mails als Stellvertretung mithilfe der verwaltete EWS-API oder EWS in Exchange.
+Erfahren Sie, wie Sie mithilfe der verwalteten EWS-API oder EWS in Exchange auf E-Mails als Stellvertretung zugreifen.
   
-Sie können die verwaltete EWS-API oder EWS verwenden, um einem Benutzer Stellvertretungszugriff auf den Posteingangsordner eines Postfachbesitzers zu gewähren. Der Stellvertreter kann dann Besprechungsanfragen im Auftrag des Postfachbesitzers erstellen, nach e-Mails suchen und e-Mails aus dem Posteingang-Ordner des Postfachbesitzers abrufen, aktualisieren und löschen, je nach den Berechtigungen.
+Sie können die verwaltete EWS-API oder EWS verwenden, um einem Benutzer delegaten Zugriff auf den Posteingangsordner eines Postfachbesitzers zu gewähren. Der Stellvertreter kann dann Besprechungsanfragen im Namen des Postfachbesitzers erstellen, nach E-Mails suchen und E-Mails aus dem Posteingangsordner des Postfachbesitzers abrufen, aktualisieren und löschen, je nach ihren Berechtigungen.
   
-Als Stellvertretung verwenden Sie dieselben Methoden und Vorgänge, um auf den Posteingangsordner eines Postfachbesitzers zuzugreifen, den Sie für den Zugriff auf einen Posteingangsordner ohne Stellvertretungszugriff verwenden. Der Hauptunterschied besteht darin, dass Sie [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicit) zum Suchen oder Erstellen eines e-Mail-Elements verwenden müssen, und nachdem Sie die Element-ID identifiziert haben, können Sie [impliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_implicit) zum Abrufen, aktualisieren oder Löschen des Elements verwenden. 
+Als Stellvertretung verwenden Sie die gleichen Methoden und Vorgänge, um auf den Posteingangsordner eines Postfachbesitzers zuzugreifen, den Sie für den Zugriff auf einen Posteingangsordner ohne Stellvertretungszugriff verwenden. Der Hauptunterschied besteht darin, dass Sie [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicit) verwenden müssen, um ein E-Mail-Element zu suchen oder zu erstellen. Nachdem Sie die Element-ID identifiziert haben, können Sie [impliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_implicit) verwenden, um das Element abzurufen, zu aktualisieren oder zu löschen. 
   
-**Tabelle 1. Verwaltete EWS-API Methoden und EWS-Vorgänge für den Zugriff auf e-Mails als Stellvertretung**
+**Tabelle 1. Verwaltete EWS-API-Methoden und EWS-Vorgänge für den Zugriff auf E-Mails als Stellvertretung**
 
 |**Aktion**|**Verwenden Sie diese verwaltete EWS-API-Methode...**|**Verwenden Sie diesen EWS-Vorgang...**|
 |:-----|:-----|:-----|
-|Erstellen und Senden einer e-Mail als Stellvertretung  <br/> |[Email Message. Save](https://msdn.microsoft.com/library/dd635209%28v=exchg.80%29.aspx) , wobei der [Folder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) -Parameter den [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) auf den Ordner "Entwürfe" des Postfachbesitzers bereitstellt  <br/> [Email Message. SendAndSaveCopy](https://msdn.microsoft.com/library/dd634248%28v=exchg.80%29.aspx) , wobei der [Folder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) -Parameter den [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) auf den Ordner "Gesendete Elemente" des Postfachbesitzers bereitstellt  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) , wobei das [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) [-Element](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) die e-Mail-Post Fach Besitzerin angibt  <br/> [SendItem](https://msdn.microsoft.com/library/a966da19-b05a-4504-ac98-91acc1667b9a%28Office.15%29.aspx) , wobei das [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) [-Element](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) die e-Mail-Post Fach Besitzerin angibt  <br/> |
-|Erstellen mehrerer e-Mail-Nachrichten als Stellvertretung  <br/> |[Datei "ExchangeService. CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) , wobei der **Folder** -Parameter den [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) auf den Posteingangsordner des Postfachbesitzers ermöglicht  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) , wobei das [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) [-Element](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) die e-Mail-Post Fach Besitzerin angibt  <br/> |
-|Suchen nach oder Suchen einer e-Mail als Stellvertretung  <br/> |[Datei "ExchangeService. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) , wobei der **Folder** -Parameter den [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) auf den Posteingangsordner des Postfachbesitzers ermöglicht  <br/> |[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) , wobei das [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) [-Element](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) die e-Mail-Post Fach Besitzerin angibt  <br/> |
-|Abrufen einer e-Mail als Stellvertretung  <br/> |[EmailMessage.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |
-|Aktualisieren einer e-Mail als Stellvertretung  <br/> |[Email Message. Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) gefolgt von [Email Message. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) , gefolgt von [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
-|Löschen einer e-Mail als Stellvertretung  <br/> |[Email Message. Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) gefolgt von [Email Message. Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.delete%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) , gefolgt von [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
+|Erstellen und Senden einer E-Mail als Stellvertretung  <br/> |[EmailMessage.Save](https://msdn.microsoft.com/library/dd635209%28v=exchg.80%29.aspx) where the [FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) parameter provides [explicit access](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) to the mailbox owner's Drafts folder  <br/> [EmailMessage.SendAndSaveCopy,](https://msdn.microsoft.com/library/dd634248%28v=exchg.80%29.aspx) wobei der [Parameter FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) [expliziten Zugriff auf](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) den Ordner "Gesendete Elemente" des Postfachbesitzers bietet  <br/> |[CreateItem,](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) wobei das [Mailbox-Element](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) die [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) des Postfachbesitzers angibt  <br/> [SendItem,](https://msdn.microsoft.com/library/a966da19-b05a-4504-ac98-91acc1667b9a%28Office.15%29.aspx) wobei das [Mailbox-Element](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) die [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) des Postfachbesitzers angibt  <br/> |
+|Erstellen mehrerer E-Mail-Nachrichten als Stellvertretung  <br/> |[ExchangeService.CreateItems,](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) wobei der **Parameter FolderId** [expliziten Zugriff auf](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) den Posteingangsordner des Postfachbesitzers bietet  <br/> |[CreateItem,](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) wobei das [Mailbox-Element](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) die [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) des Postfachbesitzers angibt  <br/> |
+|Suchen nach oder Suchen einer E-Mail als Stellvertretung  <br/> |[ExchangeService.FindItems,](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) wobei der **Parameter FolderId** [expliziten Zugriff auf](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) den Posteingangsordner des Postfachbesitzers bietet  <br/> |[FindItem,](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) wobei das [Mailbox-Element](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) die [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) des Postfachbesitzers angibt  <br/> |
+|Abrufen einer E-Mail als Stellvertretung  <br/> |[EmailMessage.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |
+|Aktualisieren einer E-Mail als Stellvertretung  <br/> |[EmailMessage.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) gefolgt von [EmailMessage.Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) gefolgt von [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
+|Löschen einer E-Mail als Stellvertretung  <br/> |[EmailMessage.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) gefolgt von [EmailMessage.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.delete%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) gefolgt von [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
    
-Beachten Sie beim Arbeiten mit e-Mails als Stellvertretung Folgendes:
+Beachten Sie beim Arbeiten mit E-Mails als Stellvertretung Folgendes:
   
-- Wenn eine Stellvertretung nur mit Besprechungsanfragen und-Antworten arbeiten muss, benötigt die Stellvertretung keinen Zugriff auf den Ordner Posteingang. Weitere Informationen finden Sie unter [erforderliche Aufgaben für den Zugriff auf Kalender als Stellvertreter](how-to-access-a-calendar-as-a-delegate-by-using-ews-in-exchange.md#bk_prereq).
+- Wenn ein Stellvertreter nur mit Besprechungsanfragen und -antworten arbeiten muss, benötigt die Stellvertretung keinen Zugriff auf den Ordner "Posteingang". Weitere Informationen finden Sie unter [den erforderlichen Aufgaben für den Zugriff auf Kalender als Stellvertretung.](how-to-access-a-calendar-as-a-delegate-by-using-ews-in-exchange.md#bk_prereq)
     
-- Wenn ein Empfänger eine Nachricht empfängt, die im Auftrag eines Postfachbesitzers gesendet wurde, wird der Absender als " *Stellvertreter* im Auftrag des *Postfachbesitzers* " angezeigt. 
+- Wenn ein Empfänger eine Nachricht empfängt, die im Auftrag eines Postfachbesitzers gesendet wurde, wird der Absender als *"Stellvertreter*  im Auftrag des  *Postfachbesitzers"*  angezeigt. 
     
 > [!NOTE]
-> In den Codebeispielen in diesem Artikel ist Primary@contoso.com der Postfachbesitzer. 
+> In den Codebeispielen in diesem Artikel ist primary@contoso.com der Postfachbesitzer. 
   
 ## <a name="prerequisite-tasks"></a>Erforderliche Aufgaben
 <a name="bk_prereq"> </a>
 
-Bevor ein Benutzer als Stellvertreter auf den Posteingangsordner des Postfachbesitzers zugreifen kann, muss der Benutzer [als Stellvertreter mit Berechtigungen](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md) für den Posteingang-Ordner des Postfachbesitzers hinzugefügt werden. 
+Bevor ein Benutzer als Stellvertreter auf den Posteingangsordner des Postfachbesitzers zugreifen kann, muss der Benutzer [als Stellvertretung mit Berechtigungen](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md) für den Posteingangsordner des Postfachbesitzers hinzugefügt werden. 
   
-## <a name="create-and-send-an-email-as-a-delegate-by-using-the-ews-managed-api"></a>Erstellen und Senden einer e-Mail als Stellvertretung mithilfe der verwaltete EWS-API
+## <a name="create-and-send-an-email-as-a-delegate-by-using-the-ews-managed-api"></a>Erstellen und Senden einer E-Mail als Stellvertretung mithilfe der verwalteten EWS-API
 <a name="bk_createewsma"> </a>
 
-Mit dem verwaltete EWS-API können Sie das Dienstobjekt für den Stellvertreter verwenden, um e-Mails im Auftrag des Postfachbesitzers zu erstellen und zu senden. In diesem Beispiel wird gezeigt, wie Sie die [Save](https://msdn.microsoft.com/library/dd635209%28v=exchg.80%29.aspx) -Methode verwenden, um die Nachricht im Ordner "Entwürfe" des Postfachbesitzers zu speichern, und dann die [SendAndSaveCopy](https://msdn.microsoft.com/library/dd634248%28v=exchg.80%29.aspx) -Methode zum Senden der e-Mail und Speichern der Nachricht im Ordner "Gesendete Elemente" des Postfachbesitzers. 
+Mit der verwalteten EWS-API können Sie das Dienstobjekt für den Stellvertreterbenutzer verwenden, um E-Mails im Namen des Postfachbesitzers zu erstellen und zu senden. In diesem Beispiel wird gezeigt, wie Sie die [Save-Methode](https://msdn.microsoft.com/library/dd635209%28v=exchg.80%29.aspx) verwenden, um die Nachricht im Ordner "Entwürfe" des Postfachbesitzers zu speichern, und dann die [SendAndSaveCopy-Methode,](https://msdn.microsoft.com/library/dd634248%28v=exchg.80%29.aspx) um die E-Mail zu senden und die Nachricht im Ordner "Gesendete Elemente" des Postfachbesitzers zu speichern. 
   
-In diesem Beispiel wird davon ausgegangen, dass **Service** ein gültiges [Datei "ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt für die Stellvertretung ist und dass der Stellvertretung die [entsprechenden Berechtigungen für den Ordner" Posteingang "," Entwürfe "und" Gesendete Elemente "des Postfachbesitzers](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)erteilt wurden.
+In diesem Beispiel wird davon ausgegangen, dass **der Dienst** ein gültiges [ExchangeService-Objekt](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) für die Stellvertretung ist und dass der Stellvertretung die [entsprechenden Berechtigungen für den Ordner Posteingang, Entwürfe und gesendete Elemente des Postfachbesitzers](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)erteilt wurden.
   
 ```cs
 public static void DelegateAccessCreateEmail(ExchangeService service)
@@ -80,12 +80,12 @@ public static void DelegateAccessCreateEmail(ExchangeService service)
 }
 ```
 
-## <a name="create-and-send-an-email-as-a-delegate-by-using-ews"></a>Erstellen und Senden einer e-Mail als Stellvertretung mithilfe von EWS
+## <a name="create-and-send-an-email-as-a-delegate-by-using-ews"></a>Erstellen und Senden einer E-Mail als Stellvertretung mithilfe von EWS
 <a name="bk_createews"> </a>
 
-EWS ermöglicht die Verwendung des Dienstobjekts für den Stellvertreter Benutzer zum Erstellen und Senden von e-Mails im Auftrag des Postfachbesitzers. In diesem Beispiel wird gezeigt, wie Sie mithilfe des [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) -Vorgangs eine e-Mail und den [SendItem](https://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) -Vorgang erstellen, um die Uhrzeit zu senden und im Ordner "Gesendete Elemente" des Postfachbesitzers zu speichern. 
+Mit EWS können Sie das Dienstobjekt für den Stellvertreterbenutzer verwenden, um E-Mails im Namen des Postfachbesitzers zu erstellen und zu senden. In diesem Beispiel wird gezeigt, wie sie den [CreateItem-Vorgang](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) verwenden, um eine E-Mail zu erstellen, und den [SendItem-Vorgang,](https://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) um die Zeit zu senden und im Ordner "Gesendete Elemente" des Postfachbesitzers zu speichern. 
   
-Dies ist auch die erste XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die **Save** -Methode zum [Erstellen und Senden einer e-Mail](#bk_createewsma)verwenden.
+Dies ist auch die erste XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die **Save-Methode** zum [Erstellen und Senden einer E-Mail](#bk_createewsma)verwenden.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -121,9 +121,9 @@ Dies ist auch die erste XML-Anforderung, die von der verwaltete EWS-API gesendet
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **CreateItem** -Anforderung mit einer [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Elementwert **noError**enthält, der angibt, dass die e-Mail erstellt und erfolgreich gespeichert wurde. Die Antwort enthält auch die Element-ID der neu erstellten e-Mail.
+Der Server antwortet auf die **CreateItem-Anforderung** mit einer [CreateItemResponse-Nachricht,](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) die den [ResponseCode-Elementwert](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **"NoError"** enthält, der angibt, dass die E-Mail erstellt und erfolgreich gespeichert wurde. Die Antwort enthält auch die Element-ID der neu erstellten E-Mail.
   
-Der **ItemID** -Wert wurde zur Lesbarkeit gekürzt. 
+Der **ItemId-Wert** wurde zur besseren Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -158,9 +158,9 @@ Der **ItemID** -Wert wurde zur Lesbarkeit gekürzt.
 </s:Envelope>
 ```
 
-Verwenden Sie als nächstes den **SendItem** -Vorgang, um die Nachricht im Auftrag des Postfachbesitzers zu senden und im Ordner "Gesendete Elemente" des Postfachbesitzers zu speichern. 
+Verwenden Sie als Nächstes den **SendItem-Vorgang,** um die Nachricht im Auftrag des Postfachbesitzers zu senden und im Ordner "Gesendete Elemente" des Postfachbesitzers zu speichern. 
   
-Der **ItemID** -Wert wurde zur Lesbarkeit gekürzt. 
+Der **ItemId-Wert** wurde zur besseren Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -189,7 +189,7 @@ Der **ItemID** -Wert wurde zur Lesbarkeit gekürzt.
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **SendItem** -Anforderung mit einer [SendItemResponse](https://msdn.microsoft.com/library/26ac41c7-57d9-473e-ab7a-bae93e1d2aba%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Elementwert **noError**enthält, der angibt, dass die e-Mail erfolgreich an den Ordner "Gesendete Elemente" des Postfachbesitzers gesendet und gespeichert wurde.
+Der Server antwortet auf die **SendItem-Anforderung** mit einer [SendItemResponse-Nachricht,](https://msdn.microsoft.com/library/26ac41c7-57d9-473e-ab7a-bae93e1d2aba%28Office.15%29.aspx) die den [ResponseCode-Elementwert](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **"NoError"** enthält, der angibt, dass die E-Mail erfolgreich gesendet und im Ordner "Gesendete Elemente" des Postfachbesitzers gespeichert wurde.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -218,10 +218,10 @@ Der Server antwortet auf die **SendItem** -Anforderung mit einer [SendItemRespon
 </s:Envelope>
 ```
 
-## <a name="search-for-an-email-as-a-delegate-by-using-the-ews-managed-api"></a>Suchen nach einer e-Mail als Stellvertretung mithilfe der verwaltete EWS-API
+## <a name="search-for-an-email-as-a-delegate-by-using-the-ews-managed-api"></a>Suchen nach einer E-Mail als Stellvertretung mithilfe der verwalteten EWS-API
 <a name="bk_searchewsma"> </a>
 
-Um nach einer e-Mail zu suchen, müssen Sie eine der [Datei "ExchangeService. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) -Methoden verwenden, die einen [foldercode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) -Parameter enthält, sodass Sie den Posteingangsordner des Postfachbesitzers angeben können. 
+Um nach einer E-Mail zu suchen, müssen Sie eine der [ExchangeService.FindItems-Methoden](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) verwenden, die einen [FolderId-Parameter](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) enthalten, damit Sie den Posteingangsordner des Postfachbesitzers angeben können. 
   
 ```cs
 static void DelegateAccessSearchEmailWithFilter(ExchangeService service)
@@ -265,14 +265,14 @@ static void DelegateAccessSearchEmailWithFilter(ExchangeService service)
 }
 ```
 
-Nachdem der **FindItems** -Aufruf eine Antwort mit einer ID zurückgibt, können Sie diese e-Mails abrufen, aktualisieren oder löschen, indem Sie die ID und den [impliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_implicit) verwenden – und Sie müssen die SMTP-Adresse des Postfachbesitzers nicht angeben. 
+Nachdem der **FindItems-Aufruf** eine Antwort mit einer ID zurückgegeben hat, können Sie diese E-Mail mithilfe der ID und des [impliziten Zugriffs](delegate-access-and-ews-in-exchange.md#bk_implicit) abrufen, aktualisieren oder löschen – und Sie müssen nicht die SMTP-Adresse des Postfachbesitzers angeben. 
   
-## <a name="search-for-an-email-as-a-delegate-by-using-ews"></a>Suchen nach einer e-Mail als Stellvertretung mithilfe von EWS
+## <a name="search-for-an-email-as-a-delegate-by-using-ews"></a>Suchen nach einer E-Mail als Stellvertretung mithilfe von EWS
 <a name="bk_searchews"> </a>
 
-Mit EWS können Sie das Dienstobjekt für den Stellvertreter-Benutzer verwenden, um nach e-Mails zu suchen, die eine Reihe von Suchkriterien erfüllen. In diesem Beispiel wird gezeigt, wie Sie mithilfe des [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) -Vorgangs Nachrichten im Posteingangsordner des Besitzers suchen, die das Wort "Soccer" im Betreff enthalten. 
+Mit EWS können Sie das Dienstobjekt für den Stellvertretungsbenutzer verwenden, um nach E-Mails zu suchen, die eine Reihe von Suchkriterien erfüllen. In diesem Beispiel wird gezeigt, wie der [FindItem-Vorgang](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) verwendet wird, um Nachrichten im Posteingangsordner des Besitzers zu suchen, die das Wort "sport" im Betreff enthalten. 
   
-Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie [nach einer e-Mail suchen](#bk_searchewsma).
+Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie [nach einer E-Mail suchen.](#bk_searchewsma)
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -320,9 +320,9 @@ Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird,
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **FindItem** -Anforderung mit einer [FindItemResponse](https://msdn.microsoft.com/library/c8b316df-d4ab-49b8-96d4-8e9a016730ef%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Elementwert **noError**enthält, der angibt, dass die Suche erfolgreich abgeschlossen wurde. Die Antwort enthält ein [Message](https://msdn.microsoft.com/library/2400b33c-43b2-4fc2-b6fb-275a99e0e810%28Office.15%29.aspx) -Element für alle e-Mails, die die Suchkriterien erfüllen. In diesem Fall wird nur eine e-Mail gefunden. 
+Der Server antwortet auf die **FindItem-Anforderung** mit einer [FindItemResponse-Nachricht,](https://msdn.microsoft.com/library/c8b316df-d4ab-49b8-96d4-8e9a016730ef%28Office.15%29.aspx) die den [ResponseCode-Elementwert](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **"NoError"** enthält, der angibt, dass die Suche erfolgreich abgeschlossen wurde. Die Antwort enthält ein [Message-Element](https://msdn.microsoft.com/library/2400b33c-43b2-4fc2-b6fb-275a99e0e810%28Office.15%29.aspx) für alle E-Mails, die die Suchkriterien erfüllt haben. In diesem Fall wird nur eine E-Mail gefunden. 
   
-Der Wert des [ItemID](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) -Elements wurde zur Lesbarkeit gekürzt. 
+Der Wert des [ItemId-Elements](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) wurde zur besseren Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -364,33 +364,33 @@ Der Wert des [ItemID](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44
 </s:Envelope>
 ```
 
-Da Sie nun die **ItemID** für die e-Mail haben, die Ihre Kriterien erfüllt, können Sie diese e-Mails mithilfe des **ItemID** -und [impliziten Zugriffs](delegate-access-and-ews-in-exchange.md#bk_implicit) abrufen, aktualisieren oder löschen, und Sie müssen die SMTP-Adresse des Postfachbesitzers nicht angeben. 
+Nachdem Sie nun über die **ItemId** für die E-Mail verfügen, die Ihre Kriterien erfüllt, können Sie diese E-Mail mithilfe der **ItemId** und des [impliziten Zugriffs](delegate-access-and-ews-in-exchange.md#bk_implicit) abrufen, aktualisieren oder löschen – und Sie müssen nicht die SMTP-Adresse des Postfachbesitzers angeben. 
   
-## <a name="get-update-or-delete-email-items-as-a-delegate-by-using-the-ews-managed-api"></a>Abrufen, aktualisieren oder Löschen von e-Mail-Elementen als Stellvertretung mithilfe der verwaltete EWS-API
+## <a name="get-update-or-delete-email-items-as-a-delegate-by-using-the-ews-managed-api"></a>Abrufen, Aktualisieren oder Löschen von E-Mail-Elementen als Delegat mithilfe der verwalteten EWS-API
 <a name="bk_geteswma"> </a>
 
-Sie können die verwaltete EWS-API verwenden, um eine e-Mail auf die gleiche Weise abzurufen, zu aktualisieren oder zu löschen, wie diese Aktionen ausgeführt werden, wenn Sie keinen Stellvertretungszugriff verwenden. Der einzige Unterschied besteht darin, dass das **Datei "ExchangeService** -Objekt für den Stellvertreter-Benutzer ist. Die im **Bindungs** Methodenaufruf enthaltene Element-ID identifiziert das Element im Postfachspeicher im Posteingangsordner des Postfachbesitzers eindeutig. 
+Sie können die verwaltete EWS-API verwenden, um eine E-Mail auf die gleiche Weise abzurufen, zu aktualisieren oder zu löschen, wie Sie diese Aktionen ausführen, wenn Sie keinen Stellvertretungszugriff verwenden. Der einzige Unterschied besteht darin, dass das **ExchangeService-Objekt** für den Delegatbenutzer vorgesehen ist. Die im **Bind-Methodenaufruf** enthaltene Element-ID identifiziert das Element im Postfachspeicher eindeutig im Posteingangsordner des Postfachbesitzers. 
   
-**Tabelle 2. Verwaltete EWS-API Methoden, die mit e-Mail als Stellvertretung arbeiten**
+**Tabelle 2. EWS Managed API-Methoden, die mit E-Mails als Delegat arbeiten**
 
 |**Aufgabe**|**EWS Managed API-Methode**|**Codebeispiel**|
 |:-----|:-----|:-----|
-|Abrufen einer e-Mail  <br/> |[Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) <br/> |[Abrufen eines Elements mithilfe der verwaltete EWS-API](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getewsma) <br/> |
-|Aktualisieren einer e-Mail  <br/> |[Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) gefolgt von [Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) <br/> |[Aktualisieren eines Elements mithilfe der verwaltete EWS-API](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_updateewsma) <br/> |
-|Löschen einer e-Mail  <br/> |[Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) gefolgt von [Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.delete%28v=exchg.80%29.aspx) <br/> |[Löschen eines Elements mithilfe der verwaltete EWS-API](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteewsma) <br/> |
+|Abrufen einer E-Mail  <br/> |[Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) <br/> |[Abrufen eines Elements mithilfe der verwalteten EWS-API](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getewsma) <br/> |
+|Aktualisieren einer E-Mail  <br/> |[Binden](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) gefolgt von [Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) <br/> |[Aktualisieren eines Elements mithilfe der verwalteten EWS-API](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_updateewsma) <br/> |
+|Löschen einer E-Mail  <br/> |[Binden](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) gefolgt von ["Löschen"](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.delete%28v=exchg.80%29.aspx) <br/> |[Löschen eines Elements mithilfe der verwalteten EWS-API](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteewsma) <br/> |
    
-## <a name="get-update-or-delete-email-items-as-a-delegate-by-using-ews"></a>Abrufen, aktualisieren oder Löschen von e-Mail-Elementen als Stellvertretung mithilfe von EWS
+## <a name="get-update-or-delete-email-items-as-a-delegate-by-using-ews"></a>Abrufen, Aktualisieren oder Löschen von E-Mail-Elementen als Delegat mithilfe von EWS
 <a name="bk_getews"> </a>
 
-Sie können die verwaltete EWS-API verwenden, um eine e-Mail auf die gleiche Weise abzurufen, zu aktualisieren oder zu löschen, wie diese Aktionen ausgeführt werden, wenn Sie keinen Stellvertretungszugriff verwenden. Der einzige Unterschied besteht darin, dass das Dienstobjekt für den Stellvertreter Benutzer ist. Die in der **GetItem** -Anforderung enthaltene Element-ID identifiziert das Element im Postfachspeicher im Posteingangsordner des Postfachbesitzers eindeutig. 
+Sie können die verwaltete EWS-API verwenden, um eine E-Mail auf die gleiche Weise abzurufen, zu aktualisieren oder zu löschen, wie Sie diese Aktionen ausführen, wenn Sie keinen Stellvertretungszugriff verwenden. Der einzige Unterschied besteht darin, dass das Dienstobjekt für den Delegatenbenutzer gilt. Die in der **GetItem-Anforderung** enthaltene Element-ID identifiziert das Element im Postfachspeicher eindeutig im Posteingangsordner des Postfachbesitzers. 
   
-**Tabelle 3. EWS-Vorgänge für das Arbeiten mit e-Mail als Stellvertretung**
+**Tabelle 3. EWS-Vorgänge zum Arbeiten mit E-Mails als Stellvertretung**
 
-|**Task**|**EWS-Vorgang**|**Codebeispiel**|
+|**Aufgabe**|**EWS-Vorgang**|**Codebeispiel**|
 |:-----|:-----|:-----|
-|Abrufen einer e-Mail  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |[Abrufen eines Elements mithilfe von EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getews) <br/> |
-|Aktualisieren einer e-Mail  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) , gefolgt von [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |[Aktualisieren eines Elements mithilfe von EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_updateews) <br/> |
-|Löschen einer e-Mail  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) , gefolgt von [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |[Löschen eines Elements mithilfe von EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteews) <br/> |
+|Abrufen einer E-Mail  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |[Abrufen eines Elements mithilfe von EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getews) <br/> |
+|Aktualisieren einer E-Mail  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) gefolgt von [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |[Aktualisieren eines Elements mithilfe von EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_updateews) <br/> |
+|Löschen einer E-Mail  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) gefolgt von [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |[Löschen eines Elements mithilfe von EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteews) <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

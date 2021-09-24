@@ -5,33 +5,33 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MoveFolder
 api_type:
 - schema
 ms.assetid: c7233966-6c87-4a14-8156-b1610760176d
-description: Der MoveFolder-Vorgang verschiebt Ordner aus einem angegebenen Ordner und fügt Sie in einen anderen Ordner ein.
-ms.openlocfilehash: dc572130ca3b2f2b152abbb4a8b68cc6f67790e8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der MoveFolder-Vorgang verschiebt Ordner aus einem angegebenen Ordner und platziert sie in einem anderen Ordner.
+ms.openlocfilehash: e0b0e93bd070354d03c511382b6096f2d3a07508
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460582"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523859"
 ---
 # <a name="movefolder-operation"></a>MoveFolder-Vorgang
 
-Der MoveFolder-Vorgang verschiebt Ordner aus einem angegebenen Ordner und fügt Sie in einen anderen Ordner ein.
+Der MoveFolder-Vorgang verschiebt Ordner aus einem angegebenen Ordner und platziert sie in einem anderen Ordner.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der MoveFolder-Vorgang ähnelt dem CopyFolder-Vorgang. Sie können keine Distinguished Folders migrieren. Sie können mehrere Ordner gleichzeitig in den Zielordner umlegen.
+Der MoveFolder-Vorgang ähnelt dem CopyFolder-Vorgang. Distinguished Folders können nicht verschoben werden. Sie können mehrere Ordner gleichzeitig in den Zielordner verschieben.
   
-## <a name="movefolder-request-example"></a>MoveFolder-Anforderungs Beispiel
+## <a name="movefolder-request-example"></a>MoveFolder-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer MoveFolder-Anforderung wird gezeigt, wie eine Anforderung zum Verschieben eines Ordners, der durch die [Ordner](folderid.md) -Nr identifiziert wird, und dem Ordner in den definierten Junk-e-Mail-Ordner gestellt wird. 
+Das folgende Beispiel einer MoveFolder-Anforderung zeigt, wie Sie eine Anforderung zum Verschieben eines durch die [FolderId](folderid.md) identifizierten Ordners und das Ablegen des Ordners in den Ordner "Junk-E-Mail distinguished" erstellen. 
   
 ### <a name="code"></a>Code
 
@@ -55,15 +55,15 @@ Im folgenden Beispiel einer MoveFolder-Anforderung wird gezeigt, wie eine Anford
 ### <a name="comments"></a>Comments
 
 > [!NOTE]
-> Der Wert des ID-Attributs des [Folder](folderid.md) -ID-Elements wurde zur Lesbarkeit gekürzt. 
+> Der Wert des ID-Attributs des [FolderId-Elements](folderid.md) wurde zur besseren Lesbarkeit gekürzt. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
-Diese MoveFolder-Anforderung umfasst die folgenden Elemente:
+Diese MoveFolder-Anforderung enthält die folgenden Elemente:
   
 - [MoveFolder](movefolder.md)
     
-- [Tofolder-Datei](tofolderid.md)
+- [ToFolderId](tofolderid.md)
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
@@ -74,9 +74,9 @@ Diese MoveFolder-Anforderung umfasst die folgenden Elemente:
 Weitere Elemente, die Sie zum Erstellen einer MoveFolder-Anforderung verwenden können, finden Sie im Schema.
   
 > [!NOTE]
-> Der Standardspeicherort des Schemas befindet sich im virtuellen Verzeichnis EWS auf dem Computer, auf dem die Client Zugriffs-Serverrolle installiert ist. 
+> Der Standardspeicherort des Schemas befindet sich im virtuellen EWS-Verzeichnis auf dem Computer, auf dem die Clientzugriffsserverrolle installiert ist. 
   
-## <a name="successful-movefolder-response-example"></a>Erfolgreiches MoveFolder-Antwortbeispiel
+## <a name="successful-movefolder-response-example"></a>Beispiel für eine erfolgreiche MoveFolder-Antwort
 
 ### <a name="description"></a>Beschreibung
 
@@ -115,13 +115,13 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die MoveFolder-Anforde
 ### <a name="comments"></a>Comments
 
 > [!NOTE]
-> Die Ordner-ID und der Change-Schlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Die Ordner-ID und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
-Die in der Antwort zurückgegebene Ordner-Nr stellt den Ordner dar, der an den neuen Speicherort des Ordners verschoben wurde.
+Die FolderId, die in der Antwort zurückgegeben wird, stellt den Ordner dar, der an den neuen Speicherort des Ordners verschoben wurde.
   
-### <a name="response-elements"></a>Response-Elemente
+### <a name="response-elements"></a>Antwortelemente
 
-Die MoveFolder-Antwort umfasst die folgenden Elemente:
+Die MoveFolder-Antwort enthält die folgenden Elemente:
   
 - [MoveFolderResponse](movefolderresponse.md)
     
@@ -137,11 +137,11 @@ Die MoveFolder-Antwort umfasst die folgenden Elemente:
     
 - [FolderId](folderid.md)
     
-## <a name="movefolder-error-response-example"></a>MoveFolder-Fehlerantwort Beispiel
+## <a name="movefolder-error-response-example"></a>MoveFolder-Fehlerantwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlermeldung, die auftritt, wenn Sie versuchen, einen Distinguished Folder zu verlagern.
+Das folgende Beispiel zeigt eine Fehlerantwort, die auftritt, wenn Sie versuchen, einen definierten Ordner zu verschieben.
   
 ### <a name="code"></a>Code
 
@@ -173,7 +173,7 @@ Das folgende Beispiel zeigt eine Fehlermeldung, die auftritt, wenn Sie versuchen
 
 ### <a name="error-response-elements"></a>Fehlerantwortelemente
 
-Die MoveFolder-Fehlerantwort umfasst die folgenden Elemente:
+Die MoveFolder-Fehlerantwort enthält die folgenden Elemente:
   
 - [MoveFolderResponse](movefolderresponse.md)
     

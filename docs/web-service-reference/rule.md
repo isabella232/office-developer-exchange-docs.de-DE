@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Rule
 api_type:
 - schema
 ms.assetid: c30f3851-bd56-4473-9106-dc85e9619486
-description: Das Rule-Element enthält eine einzelne Schutz Regel.
-ms.openlocfilehash: 6c18a2bd026893cd333bc7007203abf04a6f0be7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Rule-Element enthält eine einzelne Schutzregel.
+ms.openlocfilehash: 45fb13ae6e1aacb78e7e8520f8678097796e339f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465001"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517875"
 ---
 # <a name="rule"></a>Regel
 
-Das **rule** -Element enthält eine einzelne Schutz Regel. 
+Das **Rule-Element** enthält eine einzelne Schutzregel. 
   
 ```XML
 <Rule Name="" UserOverridable=="" Priority="">
@@ -39,28 +39,28 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Name** <br/> |Gibt den Namen der Regel an. Ein erforderliches Attribut vom Typ String mit einer minimalen Länge von 1.  <br/> |
-|**UserOverridable** <br/> |Gibt an, ob die Regel obligatorisch ist. Wenn die Regel obligatorisch ist, muss dieser Attributwert auf **false festgelegt**sein. Ein erforderliches Attribut vom Typ Boolean.  <br/> |
-|**Priority** <br/> |Gibt die Regelpriorität an. Ein erforderliches Attribut vom Typ int mit einem Minimalwert von 1.  <br/> |
+|**Name** <br/> |Gibt den Namen der Regel an. Ein erforderliches Attribut vom Typ Zeichenfolge mit einer Mindestlänge von 1.  <br/> |
+|**UserOverridable** <br/> |Gibt an, ob die Regel obligatorisch ist. Wenn die Regel obligatorisch ist, muss dieser Attributwert **false** sein. Ein erforderliches Attribut vom Typ Boolean.  <br/> |
+|**Priorität** <br/> |Gibt die Regelpriorität an. Ein erforderliches Attribut vom Typ "int" mit einem Mindestwert von 1.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Bedingung](condition.md) <br/> |Gibt die Bedingung an, die erfüllt sein muss, damit der Aktions Teil der Regel ausgeführt wird.  <br/> |
-|[Action (ProtectionRuleActionType)](action-protectionruleactiontype.md) <br/> |Gibt an, welche Aktion ausgeführt werden muss, wenn der Bedingungsteil der Regel übereinstimmt.  <br/> |
+|[Bedingung](condition.md) <br/> |Gibt die Bedingung an, die erfüllt sein muss, damit der Aktionsteil der Regel ausgeführt wird.  <br/> |
+|[Aktion (ProtectionRuleActionType)](action-protectionruleactiontype.md) <br/> |Gibt an, welche Aktion ausgeführt werden muss, wenn der Bedingungsteil der Regel übereinstimmt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Regeln](rules-ex15websvcsotherref.md) <br/> |Enthält ein Array von Schutzregeln.  <br/> |
+|[Regeln ](rules-ex15websvcsotherref.md) <br/> |Enthält ein Array von Schutzregeln.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

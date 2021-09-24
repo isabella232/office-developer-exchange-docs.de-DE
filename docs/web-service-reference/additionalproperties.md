@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AdditionalProperties
 api_type:
 - schema
 ms.assetid: 7a269aed-dcfd-4c3e-9e14-094e53828101
-description: Das AdditionalProperties-Element identifiziert zusätzliche Eigenschaften für die Verwendung in GetItem-, UpdateItem-, CreateItem-, FindItem-oder FindFolder-Anforderungen.
-ms.openlocfilehash: 90a307ba4d5ece10e15d2cec56cf5042c3d38685
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AdditionalProperties-Element identifiziert zusätzliche Eigenschaften für die Verwendung in GetItem-, UpdateItem-, CreateItem-, FindItem- oder FindFolder-Anforderungen.
+ms.openlocfilehash: 9a6fb98e9a88b1e40bd83559b1836d4122f0f125
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455814"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522201"
 ---
 # <a name="additionalproperties"></a>AdditionalProperties
 
-Das **AdditionalProperties** -Element identifiziert zusätzliche Eigenschaften für die Verwendung in [GetItem](getitem.md)-, [UpdateItem](updateitem.md)-, [CreateItem](createitem.md)-, [FindItem](finditem.md)-oder [FindFolder](findfolder.md) -Anforderungen. 
+Das **AdditionalProperties-Element** identifiziert zusätzliche Eigenschaften für die Verwendung in [GetItem-,](getitem.md) [UpdateItem-,](updateitem.md) [CreateItem-,](createitem.md) [FindItem-](finditem.md)oder [FindFolder-Anforderungen.](findfolder.md) 
   
 ```xml
 <AdditionalProperties>
@@ -44,21 +44,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert erweiterte MAPI-Eigenschaften zum Abrufen, festlegen oder erstellen.  <br/> |
-|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert häufig referenzierte Wörterbucheigenschaften nach URI.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert erweiterte MAPI-Eigenschaften, die abgerufen, festgelegt oder erstellt werden sollen.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifies frequently referenced properties by URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifies frequently referenced dictionary properties by URI.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderShape](foldershape.md) <br/> | Identifiziert die Ordner Eigenschaften, die in eine [GetFolder](getfolder.md)-, [FindFolder](findfolder.md)-oder [SyncFolderHierarchy](syncfolderhierarchy.md) -Antwort eingeschlossen werden sollen.<br/><br/>  Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>  `/FindFolder/FolderShape` <br/>  `/GetFolder/FolderShape` <br/>  `/SyncFolderHierarchy/FolderShape` <br/> |
-|[ItemShape](itemshape.md) <br/> | Identifiziert die Elementeigenschaften und Inhalte, die in einer [GetItem](getitem.md)-, [FindItem](finditem.md)-oder [SyncFolderItems](syncfolderitems.md) -Antwort enthalten sein sollen.<br/><br/>  Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>  `/GetItem/ItemShape` <br/>  `/FindItem/ItemShape` <br/>  `/SyncFolderItems/ItemShape` <br/> |
-|[AttachmentShape](attachmentshape.md) <br/> |Identifiziert zusätzliche erweiterte Elementeigenschaften, die in einer Antwort auf eine [GetItem](getitem.md) -Anforderung zurückgegeben werden sollen.<br/><br/> Für dieses Element wird folgender XPath-Ausdruck verwendet: <br/><br/>  `/GetAttachment/AttachmentShape` <br/> |
+|[FolderShape](foldershape.md) <br/> | Identifiziert die Ordnereigenschaften, die in eine [GetFolder-,](getfolder.md) [FindFolder-](findfolder.md)oder [SyncFolderHierarchy-Antwort](syncfolderhierarchy.md) eingeschlossen werden sollen.<br/><br/>  Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>  `/FindFolder/FolderShape` <br/>  `/GetFolder/FolderShape` <br/>  `/SyncFolderHierarchy/FolderShape` <br/> |
+|[ItemShape](itemshape.md) <br/> | Identifiziert die Elementeigenschaften und -inhalte, die in eine [GetItem-,](getitem.md) [FindItem-](finditem.md)oder [SyncFolderItems-Antwort](syncfolderitems.md) eingeschlossen werden sollen.<br/><br/>  Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>  `/GetItem/ItemShape` <br/>  `/FindItem/ItemShape` <br/>  `/SyncFolderItems/ItemShape` <br/> |
+|[AttachmentShape](attachmentshape.md) <br/> |Identifiziert zusätzliche erweiterte Elementeigenschaften, die in einer Antwort auf eine [GetItem-Anforderung](getitem.md) zurückgegeben werden sollen.<br/><br/> Für dieses Element wird folgender XPath-Ausdruck verwendet: <br/><br/>  `/GetAttachment/AttachmentShape` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Nicht alle untergeordneten Elemente können mit [GetItem](getitem.md)-, [UpdateItem](updateitem.md)-, [CreateItem](createitem.md)-, [FindItem](finditem.md)-oder [FindFolder](findfolder.md) -Anforderungen verwendet werden. Die-Eigenschaft muss auf den Ordner oder das Element angewendet werden, auf das zugegriffen wird. Verwenden Sie erweiterte Eigenschaften, um auf andere Eigenschaften zuzugreifen. Wenn die Eigenschaft für ein bestimmtes Element nicht vorhanden ist, wird kein entsprechendes Element in den resultierenden XML-Code ausgegeben. 
+Nicht alle untergeordneten Elemente können mit [GetItem-,](getitem.md) [UpdateItem-,](updateitem.md) [CreateItem-,](createitem.md) [FindItem-](finditem.md)oder [FindFolder-Anforderungen](findfolder.md) verwendet werden. Die Eigenschaft muss auf den Ordner oder das Element anwendbar sein, auf das zugegriffen wird. Verwenden Sie erweiterte Eigenschaften, um auf andere Eigenschaften zuzugreifen. Wenn die Eigenschaft für ein bestimmtes Element nicht vorhanden ist, wird kein entsprechendes Element in den resultierenden XML-Code ausgegeben. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt. 
   
@@ -66,7 +66,7 @@ Dieses Element ist optional.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Anforderungs Beispiel wird gezeigt, wie ein Element Betreff mithilfe des **AdditionalProperties** -Elements abgerufen wird. 
+Das folgende Anforderungsbeispiel zeigt, wie Sie einen Elementbeantrager mithilfe des **AdditionalProperties-Elements** abrufen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

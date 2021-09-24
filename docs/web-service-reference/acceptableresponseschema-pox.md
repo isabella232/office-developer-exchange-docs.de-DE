@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 2f0f77bd-4cbe-4c02-880d-a93b387141d9
-description: Das AcceptableResponseSchema-Element identifiziert das Schema für eine Auto Ermittlungs Antwort.
-ms.openlocfilehash: ffc06f33144af7c8f06e81a12bcb5077719b15b8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AcceptableResponseSchema-Element identifiziert das Schema für eine AutoErmittlungsantwort.
+ms.openlocfilehash: 96a3957683879897377c3182bc8b5a95d6c7a2b5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460407"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522271"
 ---
 # <a name="acceptableresponseschema-pox"></a>AcceptableResponseSchema (POX)
 
-Das **AcceptableResponseSchema** -Element identifiziert das Schema für eine Auto Ermittlungs Antwort. 
+Das **AcceptableResponseSchema-Element** identifiziert das Schema für eine AutoErmittlungsantwort. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,7 +50,7 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert gibt den Speicherort des Antwort Schemas für die AutoErmittlung an.
+Der Textwert gibt den Speicherort des Antwortschemas für die AutoErmittlung an.
   
 ## <a name="see-also"></a>Siehe auch
 

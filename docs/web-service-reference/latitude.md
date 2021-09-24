@@ -1,23 +1,23 @@
 ---
-title: Latitude
+title: Breitengrad
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: aefecfe3-bf4d-4efe-833b-cdd15ecd1f8c
-description: Das Latitude-Element gibt den Breitengrad des Speicherorts der zugeordneten Postadresse an.
-ms.openlocfilehash: 7038ca04f09eb88669a945e179806d8a0cfff1da
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Latitude-Element gibt den Breitengrad des Standorts der zugeordneten Postadresse an.
+ms.openlocfilehash: 0f7a2d1819eebfcfc028d4564d0e1449f21cdf7b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530768"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524938"
 ---
-# <a name="latitude"></a>Latitude
+# <a name="latitude"></a>Breitengrad
 
-Das **Latitude** -Element gibt den Breitengrad des Speicherorts der zugeordneten Postadresse an. 
+Das **Latitude-Element** gibt den Breitengrad des Standorts der zugeordneten Postadresse an. 
   
 ```XML
 <Latitude></Latitude>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Latitude** -Elements entspricht dem Breitengrad der zugeordneten Postadresse. 
+Der Textwert des **Latitude-Elements** ist der Breitengrad der zugeordneten Postadresse. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

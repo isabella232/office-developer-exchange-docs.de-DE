@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 009058b0-c5a7-4fdc-b1a1-af0abaf70ab9
-description: Das ManagedByOrganization-Element gibt die Verwaltungsorganisation an.
-ms.openlocfilehash: ee46a39c4573f0f2088992ec9bd2a0d60ec8fdcf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ManagedByOrganization-Element gibt die verwaltende Organisation an.
+ms.openlocfilehash: 487db5aef2358d1cfc325247ad3b08a44d0dfc82
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465842"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524833"
 ---
 # <a name="managedbyorganization"></a>ManagedByOrganization
 
-Das **ManagedByOrganization** -Element gibt die Verwaltungsorganisation an. 
+Das **ManagedByOrganization-Element** gibt die verwaltende Organisation an. 
   
 ```XML
 <ManagedByOrganization></ManagedByOrganization>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ManagedByOrganization** -Elements identifiziert die Organisation, die die Ermittlungs Suche verwaltet. 
+Der Textwert des **ManagedByOrganization-Elements** identifiziert die Organisation, die die Ermittlungssuche verwaltet. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

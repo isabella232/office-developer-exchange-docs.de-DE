@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExceptionFieldURI
 api_type:
 - schema
 ms.assetid: 7afda93a-0f8c-4c9e-8e09-f1b0bfc928bf
 description: Das ExceptionFieldURI -Element identifiziert bestimmte Fehlern in einer Anforderung. Dieses Element ist nur im Rahmen einer Fehlerantwort im Knoten MessageXml verwendet.
-ms.openlocfilehash: a47d44098f85d8bacb1e7a2c48a33e478e56c7ac
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7368fd51e8eca2081b1fd50c86bce9ffa469c6b1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44454344"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524329"
 ---
 # <a name="exceptionfielduri"></a>ExceptionFieldURI
 
@@ -43,14 +43,14 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |Name der Anlage:  <br/> |Gibt den Anlagennamen enthält einen Fehler.  <br/> |
-|Anlage: ContentType  <br/> |Identifiziert den Inhaltstyp enthält einen Fehler.  <br/> |
+|attachment:ContentType  <br/> |Identifiziert den Inhaltstyp enthält einen Fehler.  <br/> |
 |Anlageninhalt:  <br/> |Identifiziert den Inhalt, der einen Fehler enthält.  <br/> |
 |Serie Monat:  <br/> |Gibt das Feld Monat enthält einen Fehler.  <br/> |
-|Serie: DayOfWeekIndex  <br/> |Identifiziert den Tag der Wochentagindex enthält einen Fehler.  <br/> |
-|Serie: DaysOfWeek  <br/> |Bezeichnet die DaysOfWeek-Eigenschaft enthält einen Fehler.  <br/> |
-|Serie: DAYOFMONTH  <br/> |Identifiziert die DayOfMonth enthält einen Fehler.  <br/> |
+|recurrence:DayOfWeekIndex  <br/> |Identifiziert den Tag der Wochentagindex enthält einen Fehler.  <br/> |
+|recurrence:DaysOfWeek  <br/> |Bezeichnet die DaysOfWeek-Eigenschaft enthält einen Fehler.  <br/> |
+|recurrence:DayOfMonth  <br/> |Identifiziert die DayOfMonth enthält einen Fehler.  <br/> |
 |Wiederholungsintervall:  <br/> |Gibt das Intervall enthält einen Fehler.  <br/> |
-|Serie: NumberOfOccurrences  <br/> |Feststellen der Anzahl von vorkommen, dass Sie einen Fehler enthält.  <br/> |
+|recurrence:NumberOfOccurrences  <br/> |Feststellen der Anzahl von vorkommen, dass Sie einen Fehler enthält.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -60,9 +60,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Messagexml verwendet](messagexml.md) <br/> |Bietet zusätzliche Fehlerantwortinformationen.  <br/> |
+|[MessageXml](messagexml.md) <br/> |Bietet zusätzliche Fehlerantwortinformationen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

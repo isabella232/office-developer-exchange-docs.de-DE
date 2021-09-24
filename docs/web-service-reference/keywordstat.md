@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5af26dc5-6aaf-44a0-8d05-c1d116930a51
-description: Das KeywordStat-Element gibt schlüsselwortstatistik Informationen an.
-ms.openlocfilehash: d9c0524de04e256e94e279fd1ae0bbfd6a5de0f9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das KeywordStat-Element gibt die Schlüsselwortstatistikinformationen an.
+ms.openlocfilehash: d6e55c2793455c3476dd3591f37c7a44b71d6f67
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458117"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524945"
 ---
 # <a name="keywordstat"></a>KeywordStat
 
-Das **KeywordStat** -Element gibt schlüsselwortstatistik Informationen an. 
+Das **KeywordStat-Element** gibt die Schlüsselwortstatistikinformationen an. 
   
 ```XML
 <KeywordStat>
@@ -44,7 +44,7 @@ Keine.
 
 [KeywordStats](keywordstats.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

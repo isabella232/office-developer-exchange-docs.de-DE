@@ -1,29 +1,29 @@
 ---
-title: Von "SyncState (base64Binary)
+title: SyncState (base64Binary)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 89650cd4-c790-4a37-b5e5-46a57501e100
-description: Das von "SyncState-Element gibt den Synchronisierungsstatus einer Unterhaltung an.
-ms.openlocfilehash: 85c525176931b66354ebdd8873673f04c6a722f3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SyncState-Element gibt den Synchronisierungsstatus einer Unterhaltung an.
+ms.openlocfilehash: e5096dd6f0fa9abfd92e725343d3f8f7fd08c103
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468138"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522578"
 ---
-# <a name="syncstate-base64binary"></a>Von "SyncState (base64Binary)
+# <a name="syncstate-base64binary"></a>SyncState (base64Binary)
 
-Das **von "SyncState** -Element gibt den Synchronisierungsstatus einer Unterhaltung an. 
+Das **SyncState-Element** gibt den Synchronisierungsstatus einer Unterhaltung an. 
   
 ```XML
 <SyncState></SyncState>
 ```
 
- **base64Binary**
+ **Base64binary**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -38,13 +38,13 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Unter [Haltung (ConversationRequestType)](conversation-conversationrequesttype.md)  |  Unter [Haltung (ConversationResponseType)](conversation-conversationresponsetype.md)
+[Unterhaltung (ConversationRequestType)](conversation-conversationrequesttype.md)  |  [Unterhaltung (ConversationResponseType)](conversation-conversationresponsetype.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **von "SyncState** -Elements ist der Synchronisierungs Zustand für eine Unterhaltung. 
+Der Textwert des **SyncState-Elements** ist der Synchronisierungsstatus für eine Unterhaltung. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -57,6 +57,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

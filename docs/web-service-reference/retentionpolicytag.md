@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f46679d0-9236-41e2-8624-72300079c67c
 description: Das RetentionPolicyTag-Element gibt die Aufbewahrungsrichtlinie für ein Postfachelement an.
-ms.openlocfilehash: 3ece841e14e6cf11ab15e4a4d8b83a778ae32e46
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 58ca3016bed0be625b213a57e5ead1b38a301bfa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465177"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524546"
 ---
 # <a name="retentionpolicytag"></a>RetentionPolicyTag
 
-Das **RetentionPolicyTag** -Element gibt die Aufbewahrungsrichtlinie für ein Postfachelement an. 
+Das **RetentionPolicyTag-Element** gibt die Aufbewahrungsrichtlinie für ein Postfachelement an. 
   
 ```XML
 <RetentionPolicyTag>
@@ -44,13 +44,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[DisplayName (Zeichenfolge)](displayname-string.md)  |  [Aufbewahrungs-Nr](retentionid.md)  |  [RetentionPeriod](retentionperiod.md)  |  [Typ (ElcFolderType)](type-elcfoldertype.md)  |  [Aufbewahrungszeit](retentionaction.md)  |  [Beschreibung](description.md)  |  [IsVisible](isvisible.md)  |  [OptedInto](optedinto.md)  |  [Isarchive](isarchive.md)
+[DisplayName (Zeichenfolge)](displayname-string.md)  |  [RetentionId](retentionid.md)  |  [RetentionPeriod](retentionperiod.md)  |  [Type (ElcFolderType)](type-elcfoldertype.md)  |  [RetentionAction](retentionaction.md)  |  [Beschreibung](description.md)  |  [IsVisible](isvisible.md)  |  [OptedInto](optedinto.md)  |  [IsArchive](isarchive.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [RetentionPolicyTags](retentionpolicytags.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

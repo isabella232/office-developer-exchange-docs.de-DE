@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PendingMailTips
 api_type:
 - schema
 ms.assetid: 0cd70eea-8d36-4b1b-bf80-5edf359e7ba7
-description: Das PendingMailTips-Element gibt an, dass die e-Mail-Tipps in diesem Element nicht ausgewertet werden konnten, bevor das Verarbeitungstimeout des Servers abgelaufen ist.
-ms.openlocfilehash: 715d68b367c3b7251c7406c10c1ec52dcd992a59
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PendingMailTips-Element gibt an, dass die E-Mail-Tipps in diesem Element nicht ausgewertet werden konnten, bevor das Verarbeitungstimeout des Servers abgelaufen ist.
+ms.openlocfilehash: cadf1839acaeb7c25d1bbf42af5fc866f6c7a4cd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529966"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521760"
 ---
 # <a name="pendingmailtips"></a>PendingMailTips
 
-Das **PendingMailTips** -Element gibt an, dass die e-Mail-Tipps in diesem Element nicht ausgewertet werden konnten, bevor das Verarbeitungstimeout des Servers abgelaufen ist. 
+Das **PendingMailTips-Element** gibt an, dass die E-Mail-Tipps in diesem Element nicht ausgewertet werden konnten, bevor das Verarbeitungstimeout des Servers abgelaufen ist. 
   
 ```XML
 <PendingMailTips>All | OutOfOfficeMessage | MailboxFullStatus | CustomMailTip | ExternalMemberCount | TotalMemberCount | MaxMessageSize | DeliveryRestriction | ModerateStatus | InvalidRecipient</PendingMailTips>
@@ -44,26 +44,26 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Tipps dar.  <br/> |
+|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Typen von E-Mail-Tipps dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-In der folgenden Tabelle sind die möglichen Werte für das **PendingMailTips** -Element aufgeführt. 
+In der folgenden Tabelle sind die möglichen Werte für das **PendingMailTips-Element** aufgeführt. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Alle  <br/> |Stellt alle verfügbaren e-Mail-Tipps dar.  <br/> |
-|OutOfOfficeMessage  <br/> |Stellt die Abwesenheit (Out of Office, OOF) Meldung dar.  <br/> |
-|MailboxFullStatus  <br/> |Stellt den Status für ein Postfach dar, das voll ist.  <br/> |
-|CustomMailTip  <br/> |Stellt einen benutzerdefinierten e-Mail-Tipp dar.  <br/> |
-|ExternalMemberCount  <br/> |Stellt die Anzahl externer Member dar.  <br/> |
+|Alle  <br/> |Stellt alle verfügbaren E-Mail-Tipps dar.  <br/> |
+|OutOfOfficeMessage  <br/> |Stellt die OOF-Nachricht (Out of Office) dar.  <br/> |
+|MailboxFullStatus  <br/> |Stellt den Status für ein Vollzugriffspostfach dar.  <br/> |
+|CustomMailTip  <br/> |Stellt einen benutzerdefinierten E-Mail-Tipp dar.  <br/> |
+|ExternalMemberCount  <br/> |Stellt die Anzahl externer Elemente dar.  <br/> |
 |TotalMemberCount  <br/> |Stellt die Anzahl aller Elemente dar.  <br/> |
 |MaxMessageSize  <br/> |Stellt die maximale Nachrichtengröße dar, die ein Empfänger annehmen kann.  <br/> |
-|DeliveryRestriction  <br/> |Gibt an, ob durch Übermittlungseinschränkungen verhindert wird, dass die Nachricht des Absenders den Empfänger erreicht.  <br/> |
+|DeliveryRestriction  <br/> |Gibt an, ob Übermittlungseinschränkungen verhindern, dass die Nachricht des Absenders den Empfänger erreicht.  <br/> |
 |ModerationStatus  <br/> |Gibt an, ob die Nachricht des Absenders von einem Moderator überprüft wird.  <br/> |
 |InvalidRecipient  <br/> |Gibt an, ob der Empfänger ungültig ist.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

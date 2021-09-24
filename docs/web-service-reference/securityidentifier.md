@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SecurityIdentifier
 api_type:
 - schema
 ms.assetid: f7656729-f2c9-41cc-b1ec-60f480fc4dab
-description: Das SecurityIdentifier-Element stellt das SDDL-Formular (Security Descriptor Definition Language) einer Sicherheits-ID (Security Identifier, SID) dar.
-ms.openlocfilehash: c55e4a7f7f0b8f8a40e6fcaf8d18e253a6da2679
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SecurityIdentifier-Element stellt die SDDL-Form (Security Descriptor Definition Language) einer Sicherheits-ID (SID) dar.
+ms.openlocfilehash: 803c8c0efae1ccd6356d9ce3b5aa85e1d86aa565
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468803"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521601"
 ---
 # <a name="securityidentifier"></a>SecurityIdentifier
 
-Das **SecurityIdentifier** -Element stellt das SDDL-Formular (Security Descriptor Definition Language) einer Sicherheits-ID (Security Identifier, [sid](sid.md)) dar.
+Das **SecurityIdentifier-Element** stellt die SDDL-Form (Security Descriptor Definition Language) eines Sicherheitsbezeichners [(SID)](sid.md)dar.
   
 ```xml
 <SecurityIdentifier/>
@@ -44,12 +44,12 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GroupIdentifier](groupidentifier.md) <br/> |Stellt eine einzelne Sicherheits-ID und ein einzelnes Attribut für eine Active Directory Objektgruppe dar, der das Konto angehört.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/SerializedSecurityContext/GroupSids/GroupIdentifier[i]` <br/> |
-|[RestrictedGroupIdentifier](restrictedgroupidentifier.md) <br/> |Stellt die Gruppen Sicherheits-ID und die Attribute für eine eingeschränkte Gruppe in einem Benutzertoken dar.  <br/> |
+|[GroupIdentifier](groupidentifier.md) <br/> |Stellt einen einzelnen Sicherheitsbezeichner und ein Attribut für eine Active Directory-Objektgruppe dar, in der das Konto Mitglied ist.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/SerializedSecurityContext/GroupSids/GroupIdentifier[i]` <br/> |
+|[RestrictedGroupIdentifier](restrictedgroupidentifier.md) <br/> |Stellt die Gruppensicherheits-ID und die Attribute für eine eingeschränkte Gruppe innerhalb eines Benutzertokens dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element wird im Simple Object Access Protocol (SOAP)-Header verwendet.
+Dieses Element wird im SOAP-Header (Simple Object Access Protocol) verwendet.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

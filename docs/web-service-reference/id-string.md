@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3febe5b5-9c42-4074-b4d9-75b871b2f582
-description: Das ID-Element gibt den Bezeichner einer APP an.
-ms.openlocfilehash: 47d0a7d4a49c0d256640602f43df13c9ebca471e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ID-Element gibt den Bezeichner einer App an.
+ms.openlocfilehash: 062833cd10947baed55c4801d219c33f8bcadca5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462885"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525036"
 ---
 # <a name="id-string"></a>ID (Zeichenfolge)
 
-Das **ID-** Element gibt den Bezeichner einer APP an. 
+Das **ID-Element** gibt den Bezeichner einer App an. 
   
 ```XML
 <ID></ID>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ID-** Elements ist der Bezeichner der app. 
+Der Textwert des **ID-Elements** ist der Bezeichner der App. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

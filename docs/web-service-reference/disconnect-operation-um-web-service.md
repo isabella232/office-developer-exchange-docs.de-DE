@@ -1,32 +1,32 @@
 ---
-title: Trennungsvorgang (um-Webdienst)
+title: Disconnect-Vorgange (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Disconnect
 api_type:
 - schema
 ms.assetid: a987000b-d6e6-49d7-944c-e9c278d0236f
-description: Durch den Vorgang zum Trennen der Verbindung wird der Anruf beendet, der durch den angegebenen Aufrufer (um-Webdienst) identifiziert wird.
-ms.openlocfilehash: a1268f9ea3d879f472e019bf1847fc13d65d1819
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der Disconnect-Vorgang beendet den Aufruf, der von der angegebenen CallId (UM-Webdienst) identifiziert wird.
+ms.openlocfilehash: 42e069233fbfc255d43983571c0bb28475a1fe90
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529070"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522012"
 ---
-# <a name="disconnect-operation-um-web-service"></a>Trennungsvorgang (um-Webdienst)
+# <a name="disconnect-operation-um-web-service"></a>Disconnect-Vorgange (UM-Webdienst)
 
-Durch den Vorgang zum Trennen der Verbindung wird der Anruf beendet, der durch den angegebenen [Aufrufer (um-Webdienst)](callid-um-web-service.md)identifiziert wird.
+Der Disconnect-Vorgang beendet den Aufruf, der durch die angegebene [CallId (UM-Webdienst)](callid-um-web-service.md)identifiziert wird.
   
-## <a name="disconnect-request-example"></a>Trenn Anforderungs Beispiel
+## <a name="disconnect-request-example"></a>Disconnect-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer Anforderung für eine Trennung wird gezeigt, wie eine Anforderung zum Trennen eines Anrufs bildet.
+Das folgende Beispiel einer Disconnect-Anforderung zeigt, wie Sie eine Anforderung zum Trennen eines Anrufs erstellen.
   
 ### <a name="code"></a>Code
 
@@ -41,11 +41,11 @@ Im folgenden Beispiel einer Anforderung für eine Trennung wird gezeigt, wie ein
 </soap:Envelope>
 ```
 
-## <a name="successful-disconnect-response-example"></a>Beispiel für erfolgreiche Trennungs Antwort
+## <a name="successful-disconnect-response-example"></a>Beispiel für erfolgreiche Disconnect-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel einer Disconnect-Antwort zeigt eine Antwort auf die Anforderung zum Trennen der Verbindung.
+Das folgende Beispiel einer Disconnect-Antwort zeigt eine Antwort auf die Disconnect-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -60,7 +60,7 @@ Das folgende Beispiel einer Disconnect-Antwort zeigt eine Antwort auf die Anford
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Trennen (um-Webdienst)](disconnect-um-web-service.md) 
-- [DisconnectResponse (um-Webdienst)](disconnectresponse-um-web-service.md) 
-- [Anrufdienst (um-Webdienst)](callid-um-web-service.md)
+- [Disconnect (UM-Webdienst)](disconnect-um-web-service.md) 
+- [DisconnectResponse (UM-Webdienst)](disconnectresponse-um-web-service.md) 
+- [CallId (UM-Webdienst)](callid-um-web-service.md)
 

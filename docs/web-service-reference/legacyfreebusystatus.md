@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - LegacyFreeBusyStatus
 api_type:
 - schema
 ms.assetid: ee5f3046-b79f-4f68-9455-1a688cee2745
 description: Das LegacyFreeBusyStatus-Element stellt den Frei/Gebucht-Status des Kalenderelements dar.
-ms.openlocfilehash: ecbcae0862c9c02c0a4a61012816e4c2c6ea07b7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6bdfca41cd6f0d9304285e1101b6ecc14e2b761e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463230"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524896"
 ---
 # <a name="legacyfreebusystatus"></a>LegacyFreeBusyStatus
 
-Das **LegacyFreeBusyStatus** -Element stellt den Frei/Gebucht-Status des Kalenderelements dar. 
+Das **LegacyFreeBusyStatus-Element** stellt den Frei/Gebucht-Status des Kalenderelements dar. 
   
 ```xml
 <LegacyFreeBusyStatus/>
@@ -50,16 +50,16 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Für dieses Element ist ein Textwert erforderlich. Im folgenden sind die möglichen Text Werte für dieses Element angegeben:
+Für dieses Element ist ein Textwert erforderlich. Es folgen die möglichen Textwerte für dieses Element:
   
 - Frei 
 - Vorläufige
 - Gebucht
-- Abwesenheits
+- OOF
 - WorkingElsewhere
 - NoData
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

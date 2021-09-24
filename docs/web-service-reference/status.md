@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Status
 api_type:
 - schema
 ms.assetid: 80121e41-291b-4fc0-a55e-6f677d4b5fb5
 description: Das Status-Element stellt den Status eines Aufgabenelements dar.
-ms.openlocfilehash: 5d022827990b96fd8790ae9566ef49028ebe404c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 5ec50e3f0c06ad3ec8301ddbe8e7bd249b1e8fe9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459959"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525540"
 ---
 # <a name="status"></a>Status
 
-Das **Status** -Element stellt den Status eines Aufgabenelements dar. 
+Das **Status-Element** stellt den Status eines Aufgabenelements dar. 
   
 ```xml
 <Status/>
@@ -48,21 +48,21 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Im folgenden sind die möglichen Text Werte für dieses Element angegeben:
+Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses Element:
   
 - NotStarted
     
 - InProgress
     
-- Completed
+- Abgeschlossen
     
 - WaitingOnOthers
     
-- Latenten
+- Latent
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Festlegen von " [abgeschlossen](completedate.md) " hat denselben Effekt wie das Festlegen von [PercentComplete](percentcomplete.md) auf "100" oder " **Status** to **Completed**". In einer Anforderung, die mindestens zwei dieser Eigenschaften festlegt, bestimmt die zuletzt verarbeitete Eigenschaft den Wert, der für diese Elemente festgelegt ist. Beispiel: Wenn **PercentComplete** 100 ist, das **Completed** -Objekt 1/1/2007 und der **Status** notstartedfestgelegt ist und die Eigenschaften in dieser Reihenfolge gestreamt werden, wird der **Status** der Aufgabe auf notstartedfestgelegt, das Endergebnis auf **null**und **PercentComplete** auf **CompleteDate** 0 festgelegt. 
+Das Festlegen von [CompleteDate](completedate.md) hat den gleichen Effekt wie das Festlegen von [PercentComplete](percentcomplete.md) auf 100 oder **Status** auf **Abgeschlossen**. In einer Anforderung, die mindestens zwei dieser Eigenschaften festlegt, bestimmt die zuletzt verarbeitete Eigenschaft den Wert, der für diese Elemente festgelegt wird. Wenn **PercentComplete** beispielsweise 100 ist, **CompleteDate** 1/1/2007 ist und **Status** NotStarted ist und die Eigenschaften in dieser Reihenfolge gestreamt werden, wird der **Status** der Aufgabe auf NotStarted, das **CompleteDate** auf **NULL** und das **PercentComplete** auf 0 festgelegt. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

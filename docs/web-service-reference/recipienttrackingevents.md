@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RecipientTrackingEvents
 api_type:
 - schema
 ms.assetid: c4f729aa-674e-43b2-97f2-bf49740b0a34
-description: Das RecipientTrackingEvents-Element stellt eine Auflistung von einem oder mehreren Ereignissen für eine Nachricht dar.
-ms.openlocfilehash: c0b25a0e22d13bc1f26768b9b7089d96eb2e8cfc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das RecipientTrackingEvents-Element stellt eine Auflistung eines oder mehrerer Ereignisse für eine Nachricht dar.
+ms.openlocfilehash: 47a327e7715a46d8d40621310a5fb1a338dbcce8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468481"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525638"
 ---
 # <a name="recipienttrackingevents"></a>RecipientTrackingEvents
 
-Das **RecipientTrackingEvents** -Element stellt eine Auflistung von einem oder mehreren Ereignissen für eine Nachricht dar. 
+Das **RecipientTrackingEvents-Element** stellt eine Auflistung eines oder mehrerer Ereignisse für eine Nachricht dar. 
   
 ```XML
 <RecipientTrackingEvents>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Enthält Details für ein bestimmtes Ereignis im Überwachungsbericht.  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Enthält Details zu einem bestimmten Ereignis im Nachverfolgungsbericht.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -50,7 +50,7 @@ Keine.
 |:-----|:-----|
 |[MessageTrackingReport](messagetrackingreport.md) <br/> |Enthält eine Nachricht, die in einem [GetMessageTrackingReport-Vorgang](getmessagetrackingreport-operation.md)zurückgegeben wird.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

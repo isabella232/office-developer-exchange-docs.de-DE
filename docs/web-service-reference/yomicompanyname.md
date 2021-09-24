@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3ba567bf-2c6c-4a6b-9ae8-3eea22d849de
-description: Das YomiCompanyName-Element gibt den phonetischen japanischen Firmennamen der zugeordneten persona an.
-ms.openlocfilehash: 52966aaec8e0ea0ec0f89c15c0ff0dc83521881d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das YomiCompanyName-Element gibt den phonetischen japanischen Firmennamen der zugeordneten Persona an.
+ms.openlocfilehash: 0b98b4b9a9cdf65b409914562f0f2b48f5ff21fd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467116"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521207"
 ---
 # <a name="yomicompanyname"></a>YomiCompanyName
 
-Das **YomiCompanyName** -Element gibt den phonetischen japanischen Firmennamen der zugeordneten persona an. 
+Das **YomiCompanyName-Element** gibt den phonetischen japanischen Firmennamen der zugeordneten Persona an. 
   
 ```XML
 <YomiCompanyName></YomiCompanyName>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **YomiCompanyName** -Elements ist der phonetische japanische Firmenname der zugeordneten Persona. 
+Der Textwert des **YomiCompanyName-Elements** ist der phonetische japanische Firmenname der zugeordneten Persona. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

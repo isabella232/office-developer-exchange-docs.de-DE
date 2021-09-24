@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DayQuality
 api_type:
 - schema
 ms.assetid: cd0eb239-6e7f-4a5a-b245-659f170550b7
-description: Das DayQuality-Element stellt die Qualität des Tages für das enthalten von Qualität vorgeschlagene Besprechungszeiten.
-ms.openlocfilehash: 41cc8313dccb1a5172fefc167e6ed90a21109ec5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DayQuality-Element stellt die Qualität des Tages dar, in der die vorgeschlagenen Besprechungszeiten enthalten sind.
+ms.openlocfilehash: 849ce4bef88c8c77223b03ce209ca31d857c906c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455114"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525120"
 ---
 # <a name="dayquality"></a>DayQuality
 
-Das **DayQuality** -Element stellt die Qualität des Tages für das enthalten von Qualität vorgeschlagene Besprechungszeiten. 
+Das **DayQuality-Element** stellt die Qualität des Tages dar, in der die vorgeschlagenen Besprechungszeiten enthalten sind. 
   
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)  
 - [SuggestionsResponse](suggestionsresponse.md) 
@@ -51,18 +51,18 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SuggestionDayResult](suggestiondayresult.md) <br/> |Stellt einen einzelnen Tag dar, der vorgeschlagene Besprechungszeiten enthält.  <br/><br/>Im folgenden finden Sie den XPath 2,0-Ausdruck für dieses Element:<br/><br/>`/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]` <br/> |
+|[SuggestionDayResult](suggestiondayresult.md) <br/> |Stellt einen einzelnen Tag dar, der vorgeschlagene Besprechungszeiten enthält.  <br/><br/>Es folgt der XPath 2.0-Ausdruck für dieses Element:<br/><br/>`/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Im folgenden sind die möglichen Werte für dieses Element angegeben:
+Ein Textwert ist erforderlich. Es folgen die möglichen Werte für dieses Element:
   
 - **Hervorragend**   
 - **Gut**    
-- **Messe**    
+- **Gerecht**    
 - **mangelhaft**
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -79,5 +79,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)  
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
-- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

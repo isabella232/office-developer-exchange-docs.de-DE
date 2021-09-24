@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2ac58d6f-e019-4352-b82f-8ac67a171e63
 description: Das ArchiveItemResponseMessage-Element gibt die Antwortnachricht an eine ArchiveItem-Anforderung an.
-ms.openlocfilehash: 24d09d63cab6805194e35031d8590290573de0a9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c0d816039ea0ab9d69d04d979a9dad973e4278b8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463391"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525260"
 ---
 # <a name="archiveitemresponsemessage"></a>ArchiveItemResponseMessage
 
-Das **ArchiveItemResponseMessage** -Element gibt die Antwortnachricht an eine **ArchiveItem** -Anforderung an. 
+Das **ArchiveItemResponseMessage-Element** gibt die Antwortnachricht an eine **ArchiveItem-Anforderung** an. 
   
 ```XML
 <ArchiveItemResponseMessage ResponseClass="">
@@ -44,27 +44,27 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Erfolgreich  <br/> |Gibt den Erfolg an.  <br/> |
+|Erfolg  <br/> |Gibt den Erfolg an.  <br/> |
 |Warnung  <br/> |Gibt eine Warnung an.  <br/> |
-|Fehler (ungefährer Wortlaut)  <br/> |Gibt einen Fehler an.  <br/> |
+|Fehler  <br/> |Gibt einen Fehler an.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Wird derzeit nicht verwendet und für die zukünftige Verwendung reserviert.  <br/> |
-|[Elemente](items.md) <br/> |Enthält ein Array von Elementen.  <br/> |
-|[MessageText](messagetext.md) <br/> |Enthält eine Textbeschreibung des Status der Antwort.  <br/> |
-|[Messagexml verwendet](messagexml.md) <br/> |Bietet zusätzliche Fehlerantwortinformationen.  <br/> |
-|[ResponseCode](responsecode.md) <br/> |Stellt Statusinformationen zur Anforderung bereit.  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Derzeit nicht verwendet und für die zukünftige Verwendung reserviert.  <br/> |
+|[Items](items.md) <br/> |Enthält ein Array von Elementen.  <br/> |
+|[MessageText](messagetext.md) <br/> |Stellt eine Textbeschreibung des Status der Antwort bereit.  <br/> |
+|[MessageXml](messagexml.md) <br/> |Bietet zusätzliche Fehlerantwortinformationen.  <br/> |
+|[ResponseCode](responsecode.md) <br/> |Stellt Statusinformationen zu der Anforderung bereit.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienstanforderung.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -76,7 +76,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

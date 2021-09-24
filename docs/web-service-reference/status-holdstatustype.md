@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fee3f1f9-e868-49fa-a554-7ff096964718
-description: Das Status-Element gibt den Aufbewahrungs Status für ein Postfach an.
-ms.openlocfilehash: cecfdfaf67b00b6f8cf02188e7a4df7062a732e4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Status-Element gibt den Haltestatus für ein Postfach an.
+ms.openlocfilehash: a055dde61ae52c266f2349036c881d2b00557171
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459987"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521235"
 ---
 # <a name="status-holdstatustype"></a>Status (HoldStatusType)
 
-Das **Status** -Element gibt den Aufbewahrungs Status für ein Postfach an. 
+Das **Status-Element** gibt den Haltestatus für ein Postfach an. 
   
 ```XML
 <Status> NotOnHold | Pending | OnHold | PartialHold | Failed </Status>
@@ -42,19 +42,19 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Status** -Elements ist der Aufbewahrungs Status eines Postfachs. Das **Status** -Element kann die Werte in der folgenden Liste aufweisen. 
+Der Textwert des **Status-Elements** ist der Haltestatus eines Postfachs. Das **Status-Element** kann die Werte in der folgenden Liste enthalten. 
   
-> NotOnHold – das Postfach ist nicht in der Warteschleife.
+> NotOnHold: Das Postfach ist nicht in der Warteschleife.
     
-> Ausstehend – das Postfach wird ausstehend oder in der Warteschleife freigegeben. 
+> Ausstehend – Das Postfach steht aus, entweder wird in die Warteschleife gestellt oder freigegeben. 
     
-> OnHold – der Aufbewahrungsort wurde erfolgreich auf das Postfach angewendet. 
+> OnHold : Die Aufbewahrung wurde erfolgreich auf das Postfach angewendet. 
     
-> PartialHold – der Aufbewahrungsort wurde erfolgreich auf einige Postfächer angewendet, jedoch nicht auf alle Postfächer.
+> PartialHold : Die Aufbewahrung wurde erfolgreich auf einige Postfächer, aber nicht auf alle Postfächer angewendet.
     
-> Fehler: der Haltestatus konnte nicht auf das Postfach angewendet werden.
+> Fehlgeschlagen– Die Aufbewahrung konnte nicht auf das Postfach angewendet werden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

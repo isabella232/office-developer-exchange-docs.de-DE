@@ -3,15 +3,15 @@ title: Bereitstellen von x-Headern mithilfe von EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 45a99a14-a85f-47f8-af48-18eb6c6cc230
 description: Erfahren Sie, wie Sie X-Header für ein Postfach mithilfe der verwalteten EWS-API oder EWS in Exchange bereitstellen.
-ms.openlocfilehash: 409ddb944bbac7a60242de39cdf7ae13b17cc76a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: e60092e0d40d5815cdf3fd4ed588e2f74978c245
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527768"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521116"
 ---
 # <a name="provision-x-headers-by-using-ews-in-exchange"></a>Bereitstellen von x-Headern mithilfe von EWS in Exchange
 

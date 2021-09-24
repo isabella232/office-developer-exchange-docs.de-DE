@@ -5,27 +5,27 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateDelegate
 api_type:
 - schema
 ms.assetid: 03f618ac-ad1a-4772-9b81-c5bb0f12d6ab
 description: Der UpdateDelegate-Vorgang aktualisiert Stellvertretungsberechtigungen für das Postfach eines Prinzipals.
-ms.openlocfilehash: b7cf5325d925f8d6588115a8657a2077e940f9d2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0adf17e45490d9b3e8d498b7e95094497c451f80
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468558"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522488"
 ---
 # <a name="updatedelegate-operation"></a>UpdateDelegate-Vorgang
 
-Der **UpdateDelegate** -Vorgang aktualisiert Stellvertretungsberechtigungen für das Postfach eines Prinzipals. 
+Der **UpdateDelegate-Vorgang** aktualisiert Stellvertretungsberechtigungen für das Postfach eines Prinzipals. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der **UpdateDelegate** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
+Der **UpdateDelegate-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben sind. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -34,11 +34,11 @@ Der **UpdateDelegate** -Vorgang kann die SOAP-Header verwenden, die in der folge
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="updatedelegate-request-example"></a>UpdateDelegate-Anforderungs Beispiel
+## <a name="updatedelegate-request-example"></a>UpdateDelegate-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **UpdateDelegate** -Anforderung wird gezeigt, wie Sie Stellvertretungsberechtigungen für das von Benutzer1-Konto aktualisieren. Benutzer2 wird die Berechtigungsstufe None für den Ordner Aufgaben erteilt, und es wird die Berechtigung zum Anzeigen privater Elemente erteilt. User3 werden Prüferberechtigungen für den Journal Ordner erteilt. Besprechungsanfragen werden an die Stellvertretungen gesendet, und Informationen zu der Anforderung werden an user1 gesendet. 
+Im folgenden Beispiel einer **UpdateDelegate-Anforderung** wird gezeigt, wie Sie Stellvertretungsberechtigungen für das Konto von Benutzer1 aktualisieren. Benutzer2 erhält die Berechtigungsstufe "None" für den Ordner "Aufgaben" und die Berechtigung zum Anzeigen privater Elemente. Benutzer3 erhält Prüferberechtigungen für den Journalordner. Besprechungsanfragen werden an die Stellvertretungen gesendet, und Informationen über die Anforderung werden an Benutzer1 gesendet. 
   
 ### <a name="code"></a>Code
 
@@ -82,13 +82,13 @@ Im folgenden Beispiel einer **UpdateDelegate** -Anforderung wird gezeigt, wie Si
 
 ### <a name="comments"></a>Comments
 
-Für die [UpdateDelegate](updatedelegate.md) -Anforderung müssen keine Updates auf Stellvertretungen angewendet werden. Clients können nur die **DeliverMeetingMessage** -Einstellung ändern. 
+Die [UpdateDelegate-Anforderung](updatedelegate.md) erfordert nicht, dass Updates auf Stellvertretungen angewendet werden. Clients können nur die **DeliverMeetingMessage-Einstellung** ändern. 
   
 ## <a name="updatedelegate-response-example"></a>UpdateDelegate-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf einen **UpdateDelegate** -Vorgang. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf einen **UpdateDelegate-Vorgang.** 
   
 ### <a name="code"></a>Code
 
@@ -141,11 +141,11 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf einen **UpdateDelegate
 </soap:Envelope>
 ```
 
-## <a name="updatedelegate-error-response-example"></a>UpdateDelegate-Fehlerantwort Beispiel
+## <a name="updatedelegate-error-response-example"></a>UpdateDelegate-Fehlerantwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **UpdateDelegate** -Anforderung. Der Fehler wurde generiert, da die Stellvertretung nicht in der Stell Vertretungsliste des Prinzipals vorhanden ist. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **UpdateDelegate-Anforderung.** Der Fehler wurde generiert, da der Delegat in der Delegatliste des Prinzipals nicht vorhanden ist. 
   
 ### <a name="code"></a>Code
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ReplyBody
 api_type:
 - schema
 ms.assetid: bb184144-3e4b-4419-a883-cc9fab1085e6
-description: Das ReplyBody-Element enthält eine Abwesenheit (Out of Office, OOF) Nachricht und die für die Nachricht verwendete Sprache.
-ms.openlocfilehash: 496d336d1f87d9ea493ba7da362eef5a416fd899
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ReplyBody-Element enthält eine OOF-Nachricht (Out of Office) und die für die Nachricht verwendete Sprache.
+ms.openlocfilehash: 75af64277467246c7edcc2a48708bbf3f3c95c48
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465303"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517952"
 ---
 # <a name="replybody"></a>ReplyBody
 
-Das **ReplyBody** -Element enthält eine Abwesenheit (Out of Office, OOF) Nachricht und die für die Nachricht verwendete Sprache. 
+Das **ReplyBody-Element** enthält eine OOF-Nachricht (Out of Office) und die für die Nachricht verwendete Sprache. 
   
 ```XML
 <ReplyBody xml:lang="">
@@ -38,25 +38,25 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|XML: lang  <br/> |Gibt die Sprache an, die im **ReplyBody** -Inhalt verwendet wird. Dieses Attribut ist optional. Die möglichen Werte dieses Attributs werden durch IETF RFC 3066 definiert.  <br/> |
+|xml:lang  <br/> |Gibt die Sprache an, die im **ReplyBody-Inhalt** verwendet wird. Dieses Attribut ist optional. Die möglichen Werte dieses Attributs werden von IETF RFC 3066 definiert.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Message (Verfügbarkeit)](message-availability.md) <br/> |Enthält die Abwesenheitsantwort (Abwesenheit von Office).  <br/> |
+|[Nachricht (Verfügbarkeit)](message-availability.md) <br/> |Enthält die Abwesenheitsantwort (OOF).  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OutOfOffice](outofoffice.md) <br/> |Definiert die Abwesenheitsantwort Nachricht und einen Zeitraum für das Senden der Antwortnachricht für ein Postfach.  <br/> |
+|[OutOfOffice](outofoffice.md) <br/> |Definiert die OOF-Antwortnachricht und eine Dauer für das Senden der Antwortnachricht für ein Postfach.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element ist erforderlich.
   

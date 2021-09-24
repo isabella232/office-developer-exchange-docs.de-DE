@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 18aafbcd-a221-463a-935c-bc7c3fdbb08f
-description: Das Alias-Element enthält den e-Mail-Alias eines Kontakts.
-ms.openlocfilehash: 2d5675ea8220aa4ced522eb510e3075a38627d92
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Alias-Element enthält den E-Mail-Alias eines Kontakts.
+ms.openlocfilehash: 31d57f3ac604cbeed56a6a10a87ac9a6505c8366
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465022"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525365"
 ---
 # <a name="alias"></a>Alias
 
-Das **Alias** -Element enthält den e-Mail-Alias eines Kontakts. 
+Das **Alias-Element** enthält den E-Mail-Alias eines Kontakts. 
   
 ```XML
 <Alias/>
@@ -44,9 +44,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text ist eine Zeichenfolge, die den e-Mail-Alias eines Kontakts darstellt.
+Der Textwert ist eine Zeichenfolge, die den E-Mail-Alias eines Kontakts darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

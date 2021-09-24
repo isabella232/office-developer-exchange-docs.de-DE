@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - LastResponseTime
 api_type:
 - schema
 ms.assetid: 8e66979e-4e3b-4183-aaf5-a45d8380ede5
 description: Das LastResponseTime-Element stellt das Datum und die Uhrzeit der letzten empfangenen Antwort dar.
-ms.openlocfilehash: 45740d1a31d9b04bbc5062e7ff8b05629abd84c4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: cc0b04e545ffe956d08314b53f9ff6c51477600e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455380"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524931"
 ---
 # <a name="lastresponsetime"></a>LastResponseTime
 
-Das **LastResponseTime** -Element stellt das Datum und die Uhrzeit der letzten empfangenen Antwort dar. 
+Das **LastResponseTime-Element** stellt das Datum und die Uhrzeit der letzten empfangenen Antwort dar. 
   
 ```xml
 <LastResponseTime/>
@@ -50,9 +50,9 @@ Keine.
 
 Ein Textwert, der das Datum und die Uhrzeit der letzten Antwort darstellt, ist erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange 2007 ausgeführt wird, auf dem die Client Zugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem MicrosoftExchange 2007 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

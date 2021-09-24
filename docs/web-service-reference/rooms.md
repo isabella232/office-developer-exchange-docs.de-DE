@@ -1,31 +1,31 @@
 ---
-title: Chatrooms
+title: Räume
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Rooms
 api_type:
 - schema
 ms.assetid: 57b6079a-3d83-4429-861e-c551e9e1a991
-description: Das Rooms-Element ist eine Liste mit einem oder mehreren Elementen, die Besprechungsräume darstellen.
-ms.openlocfilehash: f8b60a9680f6abba459ebecc96613abfdd93766d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Rooms-Element ist eine Liste von mindestens einem Element, das Besprechungsräume darstellt.
+ms.openlocfilehash: bcefa1fb380599e556b7c3e99235afc2057b1017
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466185"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524483"
 ---
-# <a name="rooms"></a>Chatrooms
+# <a name="rooms"></a>Räume
 
-Das **rooms** -Element ist eine Liste mit einem oder mehreren Elementen, die Besprechungsräume darstellen. 
+Das **Rooms-Element** ist eine Liste von mindestens einem Element, das Besprechungsräume darstellt. 
   
 [GetRoomsResponse](getroomsresponse.md)
   
-[Chatrooms](rooms.md)
+[Räume](rooms.md)
   
 ```xml
 <Rooms>   <Room/></Rooms>
@@ -44,7 +44,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Raum](room.md) <br/> |Definiert eine e-Mail-Adresse und einen Anzeigenamen, der einen Besprechungsraum darstellt.  <br/> |
+|[Raum](room.md) <br/> |Definiert eine E-Mail-Adresse und einen Anzeigenamen, die einen Besprechungsraum darstellen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,9 +52,9 @@ Keine.
 |:-----|:-----|
 |[GetRoomsResponse](getroomsresponse.md) <br/> ||
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
@@ -62,7 +62,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

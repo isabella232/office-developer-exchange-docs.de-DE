@@ -3,30 +3,30 @@ title: Synchronisieren von Ordnern unter Verwendung von EWS in Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d3bbacd1-8e4b-4fd0-8d27-4cbbc045ec3f
-description: Erfahren Sie, wie Sie die verwaltete EWS-API oder EWS verwenden, um eine Liste der Ordner oder eine Liste von Ordnern abzurufen, die sich geändert haben, um den Client zu synchronisieren.
-ms.openlocfilehash: e49fdaf2faf97c2369f2ad7dbb141c5ac3100884
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Erfahren Sie, wie Sie die verwaltete EWS-API oder EWS verwenden, um eine Liste von Ordnern oder eine Liste von Ordnern abzurufen, die sich geändert haben, um Ihren Client zu synchronisieren.
+ms.openlocfilehash: f22cb3b4ba92da9c044e08e7164d116293cf43ff
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455863"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521092"
 ---
 # <a name="synchronize-folders-by-using-ews-in-exchange"></a>Synchronisieren von Ordnern unter Verwendung von EWS in Exchange
 
-Erfahren Sie, wie Sie die verwaltete EWS-API oder EWS verwenden, um eine Liste der Ordner oder eine Liste von Ordnern abzurufen, die sich geändert haben, um den Client zu synchronisieren.
+Erfahren Sie, wie Sie die verwaltete EWS-API oder EWS verwenden, um eine Liste von Ordnern oder eine Liste von Ordnern abzurufen, die sich geändert haben, um Ihren Client zu synchronisieren.
   
-EWS in Exchange verwendet die Element Synchronisierung und die Ordnersynchronisierung zum Synchronisieren von Postfachinhalten zwischen dem Client und dem Server. Die Ordnersynchronisierung Ruft die anfängliche Liste der Ordner aus einem Stammordner ab und ruft dann im Laufe der Zeit Änderungen ab, die an diesen Ordnern vorgenommen wurden, und ruft auch neue Ordner ab.
+EWS in Exchange verwendet die Elementsynchronisierung und Ordnersynchronisierung, um Postfachinhalte zwischen Client und Server zu synchronisieren. Die Ordnersynchronisierung ruft die anfängliche Liste der Ordner aus einem Stammordner ab und ruft dann im Laufe der Zeit Änderungen ab, die an diesen Ordnern vorgenommen wurden, und ruft auch neue Ordner ab.
   
-Wenn Sie die Ordnersynchronisierung mit dem verwaltete EWS-API durchführen, erhalten Sie zunächst die erste [Liste der Ordner im Stammordner](how-to-synchronize-folders-by-using-ews-in-exchange.md#bk_cesyncinitialewsma) mithilfe der [Datei "ExchangeService. SyncFolderHierarchy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderhierarchy%28v=exchg.80%29.aspx) -Methode. Anschließend aktualisieren Sie den Wert des Parameters _cSyncState_ bei nachfolgenden Aufrufen, um die Liste der neuen und geänderten Ordner abzurufen. 
+Wenn Sie die Ordnersynchronisierung mithilfe der verwalteten EWS-API durchführen, rufen Sie zunächst [die anfängliche Liste der Ordner im Stammordner](how-to-synchronize-folders-by-using-ews-in-exchange.md#bk_cesyncinitialewsma) mithilfe der [ExchangeService.SyncFolderHierarchy-Methode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderhierarchy%28v=exchg.80%29.aspx) ab. Anschließend aktualisieren Sie den Wert des  _cSyncState-Parameters_ bei nachfolgenden Aufrufen, um die Liste der neuen und geänderten Ordner abzurufen. 
   
-Um die Ordnersynchronisierung mithilfe von EWS durchzuführen, fordern Sie die [anfängliche Liste der Ordner im Stammordner](how-to-synchronize-folders-by-using-ews-in-exchange.md#bk_cesyncewsrequest) mithilfe des [SyncFolderHierarchy](https://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) -Vorgangs an, analysieren die Antwort und dann zu einem späteren Zeitpunkt [die Änderungen an den Ordnern im Stamm](how-to-synchronize-folders-by-using-ews-in-exchange.md#bk_cesyncrespews)Verzeichnis und analysieren die Antwort. Nachdem der Client die Liste der anfänglichen oder geänderten Ordner empfangen hat, werden [Aktualisierungen lokal vorgenommen](how-to-synchronize-folders-by-using-ews-in-exchange.md#bk_nextsteps). Wie und wann Sie Änderungen in der Zukunft abrufen, hängt vom [Synchronisierungs Entwurfsmuster](mailbox-synchronization-and-ews-in-exchange.md#bk_syncpatterns) ab, das Ihre Anwendung verwendet. 
+Um die Ordnersynchronisierung mithilfe von EWS durchzuführen, fordern Sie die [anfängliche Liste der Ordner im Stammordner](how-to-synchronize-folders-by-using-ews-in-exchange.md#bk_cesyncewsrequest) mithilfe des [SyncFolderHierarchy-Vorgangs](https://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) an, analysieren die Antwort und rufen dann zu einem späteren Zeitpunkt [die Änderungen an den Ordnern im Stammverzeichnis](how-to-synchronize-folders-by-using-ews-in-exchange.md#bk_cesyncrespews)ab und analysieren die Antwort. Nachdem der Client die Liste der anfänglichen oder geänderten Ordner erhalten hat, [werden Updates lokal vorgenommen.](how-to-synchronize-folders-by-using-ews-in-exchange.md#bk_nextsteps) Wie und wann Sie änderungen in der Zukunft abrufen, hängt vom [Synchronisierungsentwurfsmuster](mailbox-synchronization-and-ews-in-exchange.md#bk_syncpatterns) ab, das Ihre Anwendung verwendet. 
   
-## <a name="get-the-list-of-all-folders-or-changed-folders-by-using-the-ews-managed-api"></a>Abrufen der Liste aller Ordner oder geänderten Ordner mithilfe der verwaltete EWS-API
+## <a name="get-the-list-of-all-folders-or-changed-folders-by-using-the-ews-managed-api"></a>Abrufen der Liste aller Ordner oder geänderter Ordner mithilfe der verwalteten EWS-API
 <a name="bk_cesyncinitialewsma"> </a>
 
-Im folgenden Codebeispiel wird gezeigt, wie eine anfängliche Liste von Ordnern in einem Stammordner abgerufen und dann eine Liste der Änderungen an Ordnern im Stammordner abgerufen wird, die seit der vorherigen Synchronisierung aufgetreten sind. Legen Sie beim ersten Aufruf der [Datei "ExchangeService. SyncFolderHierarchy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderhierarchy%28v=exchg.80%29.aspx) -Methode den _cSyncState_ -Wert auf NULL fest. Wenn die Methode abgeschlossen ist, speichern Sie den _cSyncState_ -Wert lokal, um ihn im nächsten Aufruf der **SyncFolderHierarchy** -Methode zu verwenden. Sowohl in der ersten als auch in den nachfolgenden Aufrufen werden die Ordner mit aufeinanderfolgenden Aufrufen der **SyncFolderHierarchy** -Methode in Batches von zehn abgerufen, bis keine weiteren Änderungen mehr vorgenommen werden. In diesem Beispiel wird der _PropertySet-_ Parameter auf IdOnly festgelegt, um Aufrufe an die Exchange-Datenbank zu reduzieren, was eine [bewährte Synchronisierungsmethode](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)ist. In diesem Beispiel wird davon ausgegangen, dass **Dienst** eine gültige **Datei "ExchangeService** -Objektbindung ist und dass _cSyncState_ den Synchronisierungs Zustand darstellt, der von einem vorherigen Aufruf von **SyncFolderHierarchy**zurückgegeben wurde. 
+Das folgende Codebeispiel zeigt, wie Sie eine anfängliche Liste von Ordnern in einem Stammordner abrufen und dann eine Liste der Änderungen an Ordnern im Stammordner abrufen, die seit der vorherigen Synchronisierung aufgetreten sind. Legen Sie während des anfänglichen Aufrufs der [ExchangeService.SyncFolderHierarchy-Methode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderhierarchy%28v=exchg.80%29.aspx) den  _cSyncState-Wert_ auf NULL fest. Speichern Sie nach Abschluss der Methode den  _cSyncState-Wert_ lokal, um ihn im nächsten **SyncFolderHierarchy-Methodenaufruf** zu verwenden. Sowohl beim anfänglichen Aufruf als auch bei den nachfolgenden Aufrufen werden die Ordner in Batches von zehn abgerufen, indem aufeinanderfolgende Aufrufe der **SyncFolderHierarchy-Methode** verwendet werden, bis keine weiteren Änderungen verbleiben. In diesem Beispiel wird der _parameter propertySet_ auf IdOnly festgelegt, um Aufrufe der Exchange Datenbank zu reduzieren, was eine bewährte Methode für die [Synchronisierung](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)ist. In diesem Beispiel wird davon ausgegangen, dass **der Dienst** eine gültige **ExchangeService-Objektbindung** ist und dass cSyncState den  _Synchronisierungsstatus_ darstellt, der von einem vorherigen Aufruf von **SyncFolderHierarchy** zurückgegeben wurde. 
   
 ```cs
 // Get a list of all folders in the mailbox by calling SyncFolderHierarchy.
@@ -62,12 +62,12 @@ string fSyncState = fcc.SyncState;
 
 ```
 
-Nachdem Sie die Liste der neuen oder geänderten Ordner auf dem Server abgerufen haben, [erstellen oder aktualisieren Sie die Ordner auf dem Client](how-to-synchronize-folders-by-using-ews-in-exchange.md#bk_nextsteps).
+Nachdem Sie die Liste der neuen oder geänderten Ordner auf dem Server abgerufen haben, erstellen oder aktualisieren Sie [die Ordner auf dem Client.](how-to-synchronize-folders-by-using-ews-in-exchange.md#bk_nextsteps)
   
-## <a name="get-the-initial-list-of-folders-by-using-ews"></a>Abrufen der anfänglichen Liste der Ordner mithilfe von EWS
+## <a name="get-the-initial-list-of-folders-by-using-ews"></a>Abrufen der anfänglichen Liste von Ordnern mithilfe von EWS
 <a name="bk_cesyncewsrequest"> </a>
 
-Das folgende Beispiel zeigt eine XML-Anforderung zum Abrufen der anfänglichen Ordnerhierarchie mithilfe des [SyncFolderHierarchy](https://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) -Vorgangs. Dies ist auch die XML-Anforderung, die vom verwaltete EWS-API gesendet wird, wenn die [Liste der anfänglichen Ordner mithilfe der SyncFolderHierarchy-Methode abgerufen](how-to-synchronize-folders-by-using-ews-in-exchange.md#bk_cesyncinitialewsma)wird. Das [von "SyncState](https://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) -Element des [SyncFolderHierarchy](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) -Vorgangs ist nicht enthalten, da dies die anfängliche Synchronisierung ist. In diesem Beispiel wird das [BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) -Element auf **IdOnly** festgelegt, um Aufrufe an die Exchange-Datenbank zu reduzieren, was eine [bewährte Synchronisierungsmethode](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)ist.
+Das folgende Beispiel zeigt eine XML-Anforderung zum Abrufen der anfänglichen Ordnerhierarchie mithilfe des [SyncFolderHierarchy-Vorgangs.](https://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn [die Liste der ursprünglichen Ordner mithilfe der SyncFolderHierarchy -Methode abgerufen](how-to-synchronize-folders-by-using-ews-in-exchange.md#bk_cesyncinitialewsma)wird. Das [SyncState-Element](https://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) des [SyncFolderHierarchy-Vorgangs](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) ist nicht enthalten, da dies die erste Synchronisierung ist. In diesem Beispiel wird das [BaseShape-Element](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) auf **IdOnly** festgelegt, um Aufrufe der Exchange Datenbank zu reduzieren, was eine bewährte Methode für die [Synchronisierung](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)ist.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -91,7 +91,7 @@ Das folgende Beispiel zeigt eine XML-Anforderung zum Abrufen der anfänglichen O
 </soap:Envelope>
 ```
 
-Das folgende Beispiel zeigt die XML-Antwort, die vom Server zurückgegeben wird, nachdem die [SyncFolderHierarchy](https://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) -Vorgangsanforderung verarbeitet wurde. Die anfängliche Antwort umfasst [Create](https://msdn.microsoft.com/library/6b463d0a-70e9-40c5-ade4-c7d9a5f36bc1%28Office.15%29.aspx) -Elemente für alle Ordner, da alle Ordner bei einer Erstsynchronisierung als neu betrachtet werden. Die Werte einiger Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt, und einige **Create** -Elementblöcke wurden aus Gründen der Kürze entfernt. 
+Das folgende Beispiel zeigt die XML-Antwort, die vom Server zurückgegeben wird, nachdem die [SyncFolderHierarchy-Vorgangsanforderung](https://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) verarbeitet wurde. Die erste Antwort enthält [Create-Elemente](https://msdn.microsoft.com/library/6b463d0a-70e9-40c5-ade4-c7d9a5f36bc1%28Office.15%29.aspx) für alle Ordner, da alle Ordner während einer ersten Synchronisierung als neu betrachtet werden. Die Werte einiger Attribute und Elemente wurden zur besseren Lesbarkeit gekürzt, und einige **Create-Elementblöcke** wurden aus Platzgründen entfernt. 
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -150,12 +150,12 @@ Das folgende Beispiel zeigt die XML-Antwort, die vom Server zurückgegeben wird,
 </s:Envelope>
 ```
 
-Nachdem Sie die Liste der neuen Ordner auf dem Server abgerufen haben, [Erstellen Sie die Ordner auf dem Client](how-to-synchronize-folders-by-using-ews-in-exchange.md#bk_nextsteps).
+Nachdem Sie die Liste der neuen Ordner auf dem Server abgerufen haben, [erstellen Sie die Ordner auf dem Client.](how-to-synchronize-folders-by-using-ews-in-exchange.md#bk_nextsteps)
   
 ## <a name="get-the-changes-since-the-last-sync-by-using-ews"></a>Abrufen der Änderungen seit der letzten Synchronisierung mithilfe von EWS
 <a name="bk_cesyncrespews"> </a>
 
-Das folgende Beispiel zeigt die XML-Anforderung zum Abrufen der Liste der Änderungen an Ordnern im Stammordner mithilfe des [SyncFolderHierarchy](https://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) -Vorgangs. Dies ist auch die XML-Anforderung, die vom verwaltete EWS-API gesendet wird, wenn [die Liste der Änderungen am Stammordner abgerufen](how-to-synchronize-folders-by-using-ews-in-exchange.md#bk_cesyncinitialewsma)wird. In diesem Beispiel wird der Wert des [von "SyncState](https://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) -Elements auf den in der vorherigen Antwort zurückgegebenen Wert festgelegt. In diesem Beispiel wird das [BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) -Element zu Demonstrationszwecken auf **allproperties** statt auf **IdOnly** festgelegt, um die zurückgegebenen zusätzlichen Eigenschaften anzuzeigen. Das Festlegen des [BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) -Elements auf **IdOnly** ist eine [bewährte Methode](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)für die Synchronisierung. Der Wert von **von "SyncState** wurde zur Lesbarkeit gekürzt. 
+Das folgende Beispiel zeigt die XML-Anforderung zum Abrufen der Liste der Änderungen an Ordnern im Stammordner mithilfe des [SyncFolderHierarchy-Vorgangs.](https://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn [die Liste der Änderungen an den Stammordner abgerufen](how-to-synchronize-folders-by-using-ews-in-exchange.md#bk_cesyncinitialewsma)wird. In diesem Beispiel wird der [SyncState-Elementwert](https://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) auf den in der vorherigen Antwort zurückgegebenen Wert festgelegt. Zu Demonstrationszwecken wird in diesem Beispiel das [BaseShape-Element](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) auf **AllProperties** anstelle von **IdOnly** festgelegt, um die zurückgegebenen zusätzlichen Eigenschaften anzuzeigen. Das Festlegen des [BaseShape-Elements](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) auf **IdOnly** ist eine bewährte Methode für [die Synchronisierung.](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices) Der Wert von **SyncState** wurde zur besseren Lesbarkeit gekürzt. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -180,9 +180,9 @@ Das folgende Beispiel zeigt die XML-Anforderung zum Abrufen der Liste der Änder
 </soap:Envelope>
 ```
 
-Das folgende Beispiel zeigt die XML-Antwort, die vom Server zurückgegeben wird, nachdem die [SyncFolderHierarchy-Vorgangs](https://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) Anforderung vom Client verarbeitet wurde. Diese Antwort gibt an, dass ein Ordner aktualisiert wurde, ein Ordner erstellt wurde und ein Ordner seit der vorherigen Synchronisierung gelöscht wurde. Der Wert für das [von "SyncState](https://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) -Element, das **ID-** Attribut und das **ChangeKey** -Attribut wurde zur Lesbarkeit gekürzt. 
+Das folgende Beispiel zeigt die XML-Antwort, die vom Server zurückgegeben wird, nachdem die [SyncFolderHierarchy-Vorgangsanforderung](https://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) vom Client verarbeitet wurde. Diese Antwort gibt an, dass ein Ordner aktualisiert, ein Ordner erstellt und ein Ordner seit der vorherigen Synchronisierung gelöscht wurde. Der Wert des [SyncState-Elements,](https://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) **der ID-Attribute** und der **ChangeKey-Attribute** wurde zur besseren Lesbarkeit gekürzt. 
   
-Beachten Sie, dass die Anforderung die **allproperties**-[BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx)enthalten hat. Dies dient nur zu Demonstrationszwecken. Es wird empfohlen, das **BaseShape** -Element auf **IdOnly** in Production festzulegen. 
+Denken Sie daran, dass die Anforderung die **AllProperties-BaseShape**[](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx)enthielt. Dies dient nur zu Demonstrationszwecken. Es wird empfohlen, das **BaseShape-Element** in der Produktion auf **"IdOnly"** festzulegen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -258,9 +258,9 @@ Beachten Sie, dass die Anforderung die **allproperties**-[BaseShape](https://msd
 ## <a name="update-the-client"></a>Aktualisieren des Clients
 <a name="bk_nextsteps"> </a>
 
-Wenn Sie die verwaltete EWS-API verwenden, nachdem Sie die Liste der neuen oder geänderten Ordner abgerufen haben, verwenden Sie die [Folder. Laden](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.load%28v=exchg.80%29.aspx) -Methode, um Eigenschaften für die neuen oder geänderten Elemente abzurufen, die Eigenschaften mit den lokalen Werten zu vergleichen und die Ordner auf dem Client zu aktualisieren oder zu erstellen. 
+Wenn Sie die verwaltete EWS-API verwenden, verwenden Sie nach dem Abrufen der Liste der neuen oder geänderten Ordner die [Folder.Load-Methode,](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.load%28v=exchg.80%29.aspx) um Eigenschaften für die neuen oder geänderten Elemente abzurufen, die Eigenschaften mit den lokalen Werten zu vergleichen und die Ordner auf dem Client zu aktualisieren oder zu erstellen. 
   
-Wenn Sie EWS verwenden, verwenden Sie den [GetFolder-Vorgang](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) , um Eigenschaften für die neuen oder geänderten Ordner abzurufen und die Ordner auf dem Client zu aktualisieren oder zu erstellen. 
+Wenn Sie EWS verwenden, verwenden Sie den [GetFolder-Vorgang,](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) um Eigenschaften für die neuen oder geänderten Ordner abzurufen und die Ordner auf dem Client zu aktualisieren oder zu erstellen. 
   
 ## <a name="see-also"></a>Siehe auch
 

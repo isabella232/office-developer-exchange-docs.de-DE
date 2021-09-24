@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsSigned
 api_type:
 - schema
 ms.assetid: a4f90fe5-2834-4621-9aa3-b561f74d4674
 description: Das IsSigned-Element gibt an, ob eingehende Nachrichten signiert werden müssen, damit die Bedingung oder Ausnahme zutrifft.
-ms.openlocfilehash: fe8551d01e6f9e813da8936f15b0b7ba1d4ce56c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 556b5a723a3201721651000264274ebd0cd001e1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455527"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524091"
 ---
 # <a name="issigned"></a>IsSigned
 
-Das **IsSigned** -Element gibt an, ob eingehende Nachrichten signiert werden müssen, damit die Bedingung oder Ausnahme zutrifft. 
+Das **IsSigned-Element** gibt an, ob eingehende Nachrichten signiert werden müssen, damit die Bedingung oder Ausnahme zutrifft. 
   
 ```XML
 <IsSigned>true | false</IsSigned>
@@ -49,9 +49,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass die Nachricht signiert werden muss, damit die Bedingung oder Ausnahme zutrifft. Der Textwert **false** gibt an, dass die Nachricht nicht für die Bedingung oder Ausnahme signiert werden muss, die angewendet werden soll. 
+Der Textwert **"true"** gibt an, dass die Nachricht signiert werden muss, damit die Bedingung oder Ausnahme zutrifft. Der Textwert **"false"** gibt an, dass die Nachricht nicht signiert werden muss, damit die Bedingung oder Ausnahme zutrifft. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -61,7 +61,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

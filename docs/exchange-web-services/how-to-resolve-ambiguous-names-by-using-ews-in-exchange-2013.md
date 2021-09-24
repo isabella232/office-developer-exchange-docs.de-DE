@@ -3,42 +3,42 @@ title: Auflösen von mehrdeutigen Namen mithilfe der EWS Exchange 2013
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1ba21c54-ecd2-4a1e-80d4-0f4171dea84f
-description: In diesem Artikel erfahren Sie, wie Sie mit dem verwaltete EWS-API oder EWS eindeutige Namen auflösen können, indem Sie mögliche Übereinstimmungen aus Active Directory-Domänendienste (AD DS) oder aus einem Kontaktordner im Postfach des Benutzers erhalten.
-ms.openlocfilehash: 5e30e268f54e6ca257e188592e49d168e64332ff
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Erfahren Sie, wie Sie die verwaltete EWS-API oder EWS verwenden, um mehrdeutige Namen aufzulösen, indem Sie mögliche Übereinstimmungen aus Active Directory Domain Services (AD DS) oder einem Kontaktordner im Postfach Ihres Benutzers abrufen.
+ms.openlocfilehash: 5946dad32639b454b3961eaa172b6069ce118b58
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527747"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521123"
 ---
 # <a name="resolve-ambiguous-names-by-using-ews-in-exchange-2013"></a>Auflösen von mehrdeutigen Namen mithilfe der EWS Exchange 2013
 
-In diesem Artikel erfahren Sie, wie Sie mit dem verwaltete EWS-API oder EWS eindeutige Namen auflösen können, indem Sie mögliche Übereinstimmungen aus Active Directory-Domänendienste (AD DS) oder aus einem Kontaktordner im Postfach des Benutzers erhalten.
+Erfahren Sie, wie Sie die verwaltete EWS-API oder EWS verwenden, um mehrdeutige Namen aufzulösen, indem Sie mögliche Übereinstimmungen aus Active Directory Domain Services (AD DS) oder einem Kontaktordner im Postfach Ihres Benutzers abrufen.
   
-Ein Benutzer in Ihrer Organisation erhält eine handschriftliche Liste mit Namen und Adressen für Mitarbeiter, die an einer Schulungssitzung teilgenommen haben. Sie möchten eine e-Mail mit einigen zusätzlichen Informationen an Personen in der Liste senden, aber Sie können nicht alle e-Mail-Adressen lesen. Wenn Sie dieses Problem für Ihre Benutzer in Ihrer Anwendung lösen möchten, kann EWS helfen. Sie können die [Datei "ExchangeService. ResolveName](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.resolvename%28v=exchg.80%29.aspx) verwaltete EWS-API-Methode oder den [ResolveNames](https://msdn.microsoft.com/library/c85207e1-1315-443b-94ec-2b58f405076b%28Office.15%29.aspx) -EWS-Vorgang verwenden, um eine Liste möglicher Übereinstimmungen für eine Textauswahl zurückzugeben, beispielsweise einen Teil eines Nachnamens. Bei den zurückgegebenen Elementen kann es sich um öffentliche Benutzerpostfächer, Verteilergruppen und Kontakte handeln. 
+Einem Benutzer in Ihrer Organisation wird eine handschriftliche Liste mit Namen und Adressen für Mitarbeiter, die an einer Schulungssitzung teilgenommen haben, übergeben. Sie möchten eine E-Mail mit einigen zusätzlichen Informationen an Personen in der Liste senden, aber sie können nicht die E-Mail-Adresse aller Benutzer lesen. Wenn Sie dieses Problem für Ihre Benutzer in Ihrer Anwendung lösen möchten, kann EWS hilfreich sein. Sie können die [ExchangeService.ResolveName](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.resolvename%28v=exchg.80%29.aspx) EWS Managed API-Methode oder den [ResolveNames](https://msdn.microsoft.com/library/c85207e1-1315-443b-94ec-2b58f405076b%28Office.15%29.aspx) EWS-Vorgang verwenden, um eine Liste potenzieller Übereinstimmungen für eine Textauswahl zurückzugeben, z. B. einen Teil eines Nachnamens. Die zurückgegebenen Elemente können öffentliche Benutzerpostfächer, Verteilergruppen und Kontakte sein. 
   
-Beachten Sie, dass Exchange e-Mail-Adressen mit vorfixierten Routing Typen wie SMTP oder SIP in einem mehrwertigen Array speichert. Die **ResolveName** -Methode und der **ResolveNames** -Vorgang führen eine partielle Übereinstimmung mit jedem Wert dieses Arrays aus, wenn Sie den Routingtyp am Anfang des nicht aufgelösten namens wie "SIP: user1" hinzufügen. Wenn Sie keinen Routingtyp angeben, wird die Methode oder der Vorgang standardmäßig auf SMTP festgelegt, mit einer primären SMTP-Adress Eigenschaft abgeglichen und nicht mit dem mehrwertigen Array durchsucht. Wenn Sie beispielsweise nach user1 suchen und das SIP-Präfix nicht einschließen, erhalten Sie SIP:user1@contoso.com nicht als Ergebnis, selbst wenn es sich um ein gültiges Postfach handelt. 
+Beachten Sie, dass Exchange E-Mail-Adressen mit Routingtypen mit Präfix, z. B. SMTP oder SIP, in einem mehrwertigen Array speichert. Die **ResolveName-Methode** und der **ResolveNames-Vorgang** führen eine partielle Übereinstimmung mit jedem Wert dieses Arrays aus, wenn Sie den Routingtyp am Anfang des nicht aufgelösten Namens hinzufügen, z. B. "sip:User1". Wenn Sie keinen Routingtyp angeben, verwendet die Methode oder der Vorgang standardmäßig smtp, gleicht sie mit einer primären SMTP-Adresseigenschaft ab und durchsucht nicht das mehrwertige Array. Wenn Sie beispielsweise nach "User1" suchen und das SIP-Präfix nicht einschließen, erhalten Sie daher keine sip:User1@Contoso.com, auch wenn es sich um ein gültiges Postfach handelt. 
   
-Sie können nur einen eindeutigen Namen in einer einzelnen Anforderung angeben. Wenn Sie eine Liste mit uneindeutigen Namen auflösen müssen, müssen Sie die Liste durchlaufen und die Methode oder den Vorgang für jeden Eintrag aufrufen. Kandidaten aus dem Ordner Kontakte eines Benutzers verfügen über einen Element-ID-Wert ungleich NULL, der dann in einem [Contact. Bind](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.contact.bind%28v=exchg.80%29.aspx) -Methodenaufruf oder einer [GetItem](https://msdn.microsoft.com/library/769df8eb-9c72-48b5-a49f-82c6b86bc5fc%28Office.15%29.aspx) -Vorgangsanforderung zum Abrufen zusätzlicher Informationen verwendet werden kann. Wenn es sich bei dem Kandidaten um eine Verteilergruppe handelt, können Sie die verwaltete EWS-API-Methode von [expandgroup (Itemid)](https://msdn.microsoft.com/library/office/ee356407%28v=exchg.80%29.aspx) oder den EWS-Vorgang [ExpandDL](https://msdn.microsoft.com/library/affe84a5-ad98-4aba-83f4-8732938b763d%28Office.15%29.aspx) verwenden, um die Liste der Elemente abzurufen. Wenn der Parameter _returnContactDetails_ oder das **ReturnFullContactData** -EWS-Attribut auf true festgelegt ist, enthalten Active Directory Einträge, die über eine **ResolveName** -Methode oder einen **ResolveNames** -Vorgang zurückgegeben werden, zusätzliche Eigenschaften, die den Kontakt beschreiben. Der _returnContactDetails_ -Parameter oder das **ReturnFullContactData** -Attribut wirkt sich nicht auf die Daten aus, die für Kontakte und Kontaktgruppen zurückgegeben werden. 
+Sie können nur einen mehrdeutigen Namen in einer einzigen Anforderung angeben. Wenn Sie eine Liste von mehrdeutigen Namen haben, die aufgelöst werden müssen, müssen Sie die Liste durchlaufen und die Methode oder den Vorgang für jeden Eintrag aufrufen. Kandidaten aus dem Kontaktordner eines Benutzers weisen einen Wert der Element-ID ungleich Null auf, der dann in einem [Contact.Bind-Methodenaufruf](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.contact.bind%28v=exchg.80%29.aspx) oder einer [GetItem-Vorgangsanforderung](https://msdn.microsoft.com/library/769df8eb-9c72-48b5-a49f-82c6b86bc5fc%28Office.15%29.aspx) verwendet werden kann, um zusätzliche Informationen abzurufen. Wenn der Kandidat eine Verteilergruppe ist, können Sie die verwaltete EWS-API-Methode [ExpandGroup(ItemId)](https://msdn.microsoft.com/library/office/ee356407%28v=exchg.80%29.aspx) oder den [ExpandDL](https://msdn.microsoft.com/library/affe84a5-ad98-4aba-83f4-8732938b763d%28Office.15%29.aspx) EWS-Vorgang verwenden, um die Liste der Mitglieder abzurufen. Wenn der  _parameter returnContactDetails_ oder das **ReturnFullContactData** EWS-Attribut auf "true" festgelegt ist, enthalten Active Directory-Einträge, die über eine **ResolveName-Methode** oder **einen ResolveNames-Vorgang** zurückgegeben werden, zusätzliche Eigenschaften, die den Kontakt beschreiben. Der parameter  _returnContactDetails_ oder das **ReturnFullContactData-Attribut** wirkt sich nicht auf die Daten aus, die für Kontakte und Kontaktgruppen zurückgegeben werden. 
   
-## <a name="resolve-ambiguous-names-by-using-ews-managed-api"></a>Auflösen von nicht eindeutigen Namen mithilfe von verwaltete EWS-API
+## <a name="resolve-ambiguous-names-by-using-ews-managed-api"></a>Auflösen von mehrdeutigen Namen mithilfe der verwalteten EWS-API
 <a name="bk_EWSMA"> </a>
 
-Sie können die [ResolveName](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.resolvename%28v=exchg.80%29.aspx) -Methode verwenden, um Kandidaten zu finden, die mit dem nicht eindeutigen Namen übereinstimmen, den Sie übergeben. Sie können Überladungen der **ResolveName** -Methode verwenden, um auf fünf verschiedene Arten nach Kandidaten zu suchen. 
+Sie können die [ResolveName-Methode](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.resolvename%28v=exchg.80%29.aspx) verwenden, um Kandidaten zu suchen, die dem von Ihnen übergebenen mehrdeutigen Namen entsprechen. Sie können Überladungen der **ResolveName-Methode** verwenden, um auf fünf verschiedene Arten nach Kandidaten zu suchen. 
   
 **Tabelle 1. Überladene ResolveName-Methoden**
 
 |**Methode**|**Funktionsweise**|
 |:-----|:-----|
-|[ResolveName (Zeichenfolge)](https://msdn.microsoft.com/library/dd635548%28v=exchg.80%29.aspx) <br/> |Findet Kontakte im Kontakteordner des Benutzers und in der globalen Adressliste (GAL) – in dieser Reihenfolge. Die Zeichenfolgenvariable ist der eindeutige Name, den Sie auflösen möchten.  <br/> |
-|[ResolveName (String, ResolveNameSearchLocation, Boolean)](https://msdn.microsoft.com/library/dd634595%28v=exchg.80%29.aspx) <br/> |Sucht nach Kontakten im Standardordner "Kontakte" und/oder in der globalen Adressliste (GAL). Der Zeichenfolgenwert ist der nicht eindeutiger Name, der Such Speicherort gibt den Kontakteordner und/oder die GAL an, und der boolesche Wert gibt an, ob die vollständigen Kontaktinformationen zurückgegeben werden sollen.  <br/> |
-|[ResolveName (String, ResolveNameSearchLocation, Boolean, PropertySet)](https://msdn.microsoft.com/library/hh532803%28v=exchg.80%29.aspx) <br/> |Sucht nach Kontakten im standardmäßigen Kontakteordner und/oder der globalen Adressliste (GAL). Mit dieser Methode können Sie die zurückgegebenen Eigenschaften festlegen.  <br/> |
-|[ResolveName (String, IEnumerable \<FolderId\> , ResolveNameSearchLocation, Boolean)](https://msdn.microsoft.com/library/dd636014%28v=exchg.80%29.aspx) <br/> |Sucht nach Kontakten in angegebenen Kontaktordnern und/oder der globalen Adressliste (GAL). Sie können diese Methode verwenden, um eine Sammlung von Ordnern an die Suche zu übergeben. Auf diese Weise können Sie in anderen Kontaktordnern als dem Standardordner Kontakte suchen.  <br/> |
-|[ResolveName (String, IEnumerable \<FolderId\> , ResolveNameSearchLocation, Boolean, PropertySet)](https://msdn.microsoft.com/library/hh532581%28v=exchg.80%29.aspx) <br/> |Sucht Kontakte in der globalen Adressliste (GAL) und/oder in bestimmten Kontaktordnern. Mit dieser Methode können Sie die zurückgegebenen Eigenschaften festlegen.  <br/> |
+|[ResolveName(String)](https://msdn.microsoft.com/library/dd635548%28v=exchg.80%29.aspx) <br/> |Sucht Kontakte im Ordner "Kontakte" des Benutzers und in der globalen Adressliste (GAL) in dieser Reihenfolge. Die Zeichenfolgenvariable ist der mehrdeutige Name, den Sie auflösen möchten.  <br/> |
+|[ResolveName(String, ResolveNameSearchLocation, Boolean)](https://msdn.microsoft.com/library/dd634595%28v=exchg.80%29.aspx) <br/> |Sucht Kontakte im Standardordner "Kontakte" und/oder in der globalen Adressliste (GAL). Der Zeichenfolgenwert ist der mehrdeutige Name, der Suchspeicherort gibt den Ordner "Kontakte" und/oder die GAL an, und der boolesche Wert gibt an, ob die vollständigen Kontaktinformationen zurückgegeben werden sollen.  <br/> |
+|[ResolveName(String, ResolveNameSearchLocation, Boolean, PropertySet)](https://msdn.microsoft.com/library/hh532803%28v=exchg.80%29.aspx) <br/> |Sucht Kontakte im Standardordner "Kontakte" und/oder "Globale Adressliste" (GAL). Mit dieser Methode können Sie die zurückgegebenen Eigenschaften festlegen.  <br/> |
+|[ResolveName(String, IEnumerable \<FolderId\> , ResolveNameSearchLocation, Boolean)](https://msdn.microsoft.com/library/dd636014%28v=exchg.80%29.aspx) <br/> |Sucht Kontakte in angegebenen Kontaktordnern und/oder der globalen Adressliste (GAL). Sie können diese Methode verwenden, um eine Sammlung von Zu durchsuchenden Ordnern zu übergeben. Auf diese Weise können Sie andere Kontaktordner als den Standardordner "Kontakte" suchen.  <br/> |
+|[ResolveName(String, IEnumerable \<FolderId\> , ResolveNameSearchLocation, Boolean, PropertySet)](https://msdn.microsoft.com/library/hh532581%28v=exchg.80%29.aspx) <br/> |Sucht Kontakte in der globalen Adressliste (GAL) und/oder in bestimmten Kontaktordnern. Mit dieser Methode können Sie die zurückgegebenen Eigenschaften festlegen.  <br/> |
    
-Lassen Sie uns mit einem einfachen Beispiel beginnen. Das folgende Beispiel zeigt, wie Sie die Textzeichenfolge "Dan" auflösen und den Namen und die e-Mail-Adresse jedes gefundenen Kandidaten ausgeben. In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und dass der Benutzer mit einem Exchange-Server authentifiziert wurde. 
+Beginnen wir mit einem einfachen Beispiel. Das folgende Beispiel zeigt, wie Sie die Textzeichenfolge "dan" auflösen und den Namen und die E-Mail-Adresse jedes gefundenen Kandidaten ausgeben. In diesem Beispiel wird davon ausgegangen, dass **service** ein gültiges [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)-Objekt ist und der Benutzer bei einem Exchange-Server authentifiziert wurde. 
   
 ```cs
 // Resolve the ambiguous name "dan".
@@ -53,9 +53,9 @@ Lassen Sie uns mit einem einfachen Beispiel beginnen. Das folgende Beispiel zeig
 
 ```
 
-Die Antwort gibt maximal 100 Kandidaten zurück, allerdings gibt es möglicherweise mehr als 100 potenzielle Kandidaten. Überprüfen Sie den Wert von [IncludesAllResolutions](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.nameresolutioncollection.includesallresolutions%28v=exchg.80%29.aspx) im [NameResolutionCollection](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.nameresolutioncollection%28v=exchg.80%29.aspx) -Objekt, um festzustellen, ob nur die ersten 100 Kandidaten einer größeren Anzahl von Kandidaten zurückgegeben wurden. Wenn der Wert true ist, gibt es keine weiteren möglichen Kandidaten; Wenn der Wert auf false festgelegt ist, hat die Methode nur den ersten 100 einer größeren Anzahl potenzieller Kandidaten zurückgegeben. 
+Die Antwort gibt maximal 100 Kandidaten zurück, obwohl es möglicherweise mehr als 100 potenzielle Kandidaten gibt. Um festzustellen, ob nur die ersten 100 Kandidaten einer größeren Anzahl von Kandidaten zurückgegeben wurden, überprüfen Sie den Wert von [IncludesAllResolutions](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.nameresolutioncollection.includesallresolutions%28v=exchg.80%29.aspx) im [NameResolutionCollection-Objekt.](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.nameresolutioncollection%28v=exchg.80%29.aspx) Wenn der Wert "true" ist, gibt es keine weiteren möglichen Kandidaten. wenn der Wert "false" ist, gibt die Methode nur die ersten 100 einer größeren Anzahl potenzieller Kandidaten zurück. 
   
-Wenn Sie in einer großen Organisation arbeiten, ist es wahrscheinlich, dass ein Name wie "Dan" die maximale Anzahl von 100 Kandidaten zurückgibt. Wenn Sie die Anzahl der zurückgegebenen Kandidaten reduzieren möchten, beschränken Sie die Suchfunktion. Im nächsten Beispiel wird die [ResolveNameSearchLocation](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.resolvenamesearchlocation%28v=exchg.80%29.aspx) -Aufzählung verwendet, um anzugeben, wo gesucht werden soll, um den nicht eindeutigen Namen aufzulösen. 
+Wenn Sie in einer großen Organisation arbeiten, gibt ein Name wie "dan" wahrscheinlich die maximale Anzahl von 100 Kandidaten zurück. Um die Anzahl der zurückgegebenen Kandidaten zu reduzieren, beschränken Sie den Suchbereich. Im nächsten Beispiel wird die [ResolveNameSearchLocation](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.resolvenamesearchlocation%28v=exchg.80%29.aspx) -Aufzählung verwendet, um anzugeben, wo der mehrdeutige Name aufgelöst werden soll. 
   
 ```cs
 // Resolve the ambiguous name "dan".
@@ -71,7 +71,7 @@ Wenn Sie in einer großen Organisation arbeiten, ist es wahrscheinlich, dass ein
 
 ```
 
-Wenn Sie Ihre Kontakte in einem anderen Ordner als dem bekannten Ordner Kontakte speichern, verwenden Sie eine der überladenen Methoden, um anzugeben, wo nach Kandidaten gesucht werden soll. Im folgenden Beispiel wird eine Ordnerliste für die **ResolveName** -Methode basierend auf der Ordner-ID erstellt. Die **Ordner** -Nr wurde zur Lesbarkeit gekürzt. 
+Wenn Sie Ihre Kontakte in einem anderen Ordner als dem bekannten Kontaktordner speichern, verwenden Sie eine der überladenen Methoden, um anzugeben, wo nach Kandidaten gesucht werden soll. Im folgenden Beispiel wird eine Ordnerliste für die **ResolveName** -Methode basierend auf der Ordner-ID erstellt. Die **FolderId** wurde zur besseren Lesbarkeit gekürzt. 
   
 ```cs
 // Create a list to store folders to search.
@@ -90,12 +90,12 @@ NameResolutionCollection resolvedNames = service.ResolveName("dan", folders, Res
 
 ```
 
-Wenn Sie Filter anwenden und keine Kandidaten zurückgegeben werden, enthält die [NameResolutionCollection](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.nameresolutioncollection%28v=exchg.80%29.aspx) NULL Einträge. Sie können dies überprüfen, indem Sie die [count](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.nameresolutioncollection.count%28v=exchg.80%29.aspx) -Eigenschaft der Auflistung betrachten. 
+Wenn Sie Filter anwenden und keine Kandidaten zurückgegeben werden, enthält [nameResolutionCollection](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.nameresolutioncollection%28v=exchg.80%29.aspx) null Einträge. Sie können dies überprüfen, indem Sie sich die [Count-Eigenschaft](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.nameresolutioncollection.count%28v=exchg.80%29.aspx) der Auflistung ansehen. 
   
-## <a name="resolve-ambiguous-names-by-using-ews"></a>Auflösen von nicht eindeutigen Namen mithilfe von EWS
+## <a name="resolve-ambiguous-names-by-using-ews"></a>Auflösen von mehrdeutigen Namen mithilfe von EWS
 <a name="bk_EWSMA"> </a>
 
-Sie können den [ResolveNames](https://msdn.microsoft.com/library/c85207e1-1315-443b-94ec-2b58f405076b%28Office.15%29.aspx) -EWS-Vorgang verwenden, um mögliche Kandidaten für einen nicht eindeutigen Namen zu identifizieren. Das [UnresolvedEntry](https://msdn.microsoft.com/library/5ac6116a-3b24-40f8-a877-dbe9a6935919%28Office.15%29.aspx) -Element enthält den eindeutigen Namen, den Sie auflösen möchten. Im folgenden Beispiel wird gezeigt, wie der Name Sadie aufgelöst wird. Dies ist auch die XML-Anforderung, die der verwaltete EWS-API verwendet, wenn Sie [die ResolveName-Methode verwenden](#bk_EWSMA), mit dem Unterschied, dass für gültige Ausgabe Beispiele ein anderer Name verwendet wird.
+Sie können den [ResolveNames](https://msdn.microsoft.com/library/c85207e1-1315-443b-94ec-2b58f405076b%28Office.15%29.aspx) EWS-Vorgang verwenden, um mögliche Kandidaten für einen mehrdeutigen Namen zu identifizieren. Das [UnresolvedEntry-Element](https://msdn.microsoft.com/library/5ac6116a-3b24-40f8-a877-dbe9a6935919%28Office.15%29.aspx) enthält den mehrdeutigen Namen, den Sie auflösen möchten. Das folgende Beispiel zeigt, wie der Name Sadie aufgelöst wird. Dies ist auch die XML-Anforderung, die die verwaltete EWS-API verwendet, wenn Sie [die ResolveName-Methode verwenden,](#bk_EWSMA)mit der Ausnahme, dass sie einen anderen Namen für gültige Ausgabebeispiele verwendet.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -113,9 +113,9 @@ Sie können den [ResolveNames](https://msdn.microsoft.com/library/c85207e1-1315-
 </soap:Envelope>
 ```
 
-Die Antwort gibt maximal 100 Kandidaten zurück, obwohl es möglicherweise mehr als 100 potenzielle Kandidaten gibt, um festzustellen, ob nur die ersten 100 Kandidaten einer größeren Anzahl von Kandidaten zurückgegeben wurden, überprüfen Sie den Wert des [IncludesLastItemInRange](https://msdn.microsoft.com/library/e7d6c7d3-548e-48b0-a313-bfef81e4832a%28Office.15%29.aspx) -Attributs des [resolutionset](https://msdn.microsoft.com/library/43d5b876-0e87-4414-9b1d-bff1c1ec825c%28Office.15%29.aspx) -Elements. Wenn der Wert true ist, gibt es keine weiteren möglichen Kandidaten; Wenn der Wert auf false festgelegt ist, hat der Vorgang nur den ersten 100 einer größeren Anzahl potenzieller Kandidaten zurückgegeben. 
+Die Antwort gibt maximal 100 Kandidaten zurück, obwohl es möglicherweise mehr als 100 potenzielle Kandidaten gibt, um festzustellen, ob nur die ersten 100 Kandidaten einer größeren Anzahl von Kandidaten zurückgegeben wurden, überprüfen Sie den Wert des [IncludesLastItemInRange-Attributs](https://msdn.microsoft.com/library/e7d6c7d3-548e-48b0-a313-bfef81e4832a%28Office.15%29.aspx) des [ResolutionSet-Elements.](https://msdn.microsoft.com/library/43d5b876-0e87-4414-9b1d-bff1c1ec825c%28Office.15%29.aspx) Wenn der Wert "true" ist, gibt es keine weiteren möglichen Kandidaten. wenn der Wert "false" ist, gibt der Vorgang nur die ersten 100 einer größeren Anzahl potenzieller Kandidaten zurück. 
   
-Das folgende Beispiel zeigt die XML-Antwort, wenn ein Kandidat gefunden wird. Denken Sie daran, dass das [resolutionset](https://msdn.microsoft.com/library/43d5b876-0e87-4414-9b1d-bff1c1ec825c%28Office.15%29.aspx) bis zu 100 Kandidaten enthalten kann, wobei jedes durch das [Auflösungs](https://msdn.microsoft.com/library/573bed4b-d7b1-4baf-b16f-0795cdebf1a7%28Office.15%29.aspx) Element und dessen untergeordnete Elemente dargestellt wird. 
+Das folgende Beispiel zeigt die XML-Antwort, wenn ein Kandidat gefunden wird. Beachten Sie, dass das [ResolutionSet](https://msdn.microsoft.com/library/43d5b876-0e87-4414-9b1d-bff1c1ec825c%28Office.15%29.aspx) bis zu 100 Kandidaten enthalten kann, die jeweils durch das [Resolution-Element](https://msdn.microsoft.com/library/573bed4b-d7b1-4baf-b16f-0795cdebf1a7%28Office.15%29.aspx) und seine untergeordneten Elemente dargestellt werden. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -153,7 +153,7 @@ Das folgende Beispiel zeigt die XML-Antwort, wenn ein Kandidat gefunden wird. De
 </soap:Envelope>
 ```
 
-Sie werden nicht immer mit Kandidaten für Ihren eindeutigen Namen kommen. Im folgenden Beispiel wird die XML-Antwort als Fehler angezeigt, wenn keine Kandidaten gefunden werden.
+Sie werden nicht immer Kandidaten für Ihren mehrdeutigen Namen finden. Das folgende Beispiel zeigt die XML-Antwort als Fehler, wenn keine Kandidaten gefunden werden.
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>

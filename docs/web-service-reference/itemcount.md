@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 47e42f5d-d3cb-4ee2-8370-1fd0539b6ee6
-description: Das ItemCount-Element gibt die Gesamtzahl der Elemente in einem Suchergebnis an.
-ms.openlocfilehash: 9635d22356e729b770505d399e91218cf1581d6e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ItemCount-Element gibt die Gesamtanzahl der Elemente in einem Suchergebnis an.
+ms.openlocfilehash: 1f59cef2244bc2341cbc066187a5c2b9bfcdf658
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461772"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525008"
 ---
 # <a name="itemcount"></a>ItemCount
 
-Das **ItemCount** -Element gibt die Gesamtzahl der Elemente in einem Suchergebnis an. 
+Das **ItemCount-Element** gibt die Gesamtanzahl der Elemente in einem Suchergebnis an. 
   
 ```XML
 <ItemCount></ItemCount>
 ```
 
- **Long**
+ **Lange**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ItemCount** -Elements gibt die Gesamtzahl der Elemente in einem Suchergebnis an. 
+Der Textwert des **ItemCount-Elements** gibt die Gesamtzahl der Elemente in einem Suchergebnis an. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

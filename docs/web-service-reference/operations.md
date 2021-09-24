@@ -1,27 +1,27 @@
 ---
-title: Vorgänge
+title: Operations
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Operations
 api_type:
 - schema
 ms.assetid: d8cd41b1-28ae-4c95-9ff6-8b25c8e18306
-description: Das Operations-Element enthält ein Array von regelvorgängen, die für einen Posteingang ausgeführt werden können.
-ms.openlocfilehash: 4bbec4ad6424f802bb6781a870d65f23705e88c4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Operations-Element enthält ein Array von Regelvorgängen, die für einen Posteingang ausgeführt werden können.
+ms.openlocfilehash: 48679c9c7c0482ab53d3af5c661dc6efe513e637
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462486"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518071"
 ---
-# <a name="operations"></a>Vorgänge
+# <a name="operations"></a>Operations
 
-Das **Operations** -Element enthält ein Array von regelvorgängen, die für einen Posteingang ausgeführt werden können. 
+Das **Operations-Element** enthält ein Array von Regelvorgängen, die für einen Posteingang ausgeführt werden können. 
   
 [UpdateInboxRules](updateinboxrules.md)
   
@@ -54,9 +54,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UpdateInboxRules](updateinboxrules.md) <br/> |Definiert eine Anforderung zum Aktualisieren der Posteingangsregeln in einem Postfach im Server Speicher.  <br/> |
+|[UpdateInboxRules](updateinboxrules.md) <br/> |Definiert eine Anforderung zum Aktualisieren der Posteingangsregeln in einem Postfach im Serverspeicher.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

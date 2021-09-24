@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7cbd6b60-69fc-4007-aeb9-bdf41c45cba3
 description: Das PageItemSize-Element gibt die Anzahl der Elemente an, die in einer Suchergebnis-Paginierung zurückgegeben werden sollen.
-ms.openlocfilehash: e4f02d9b0012d0514903e41e74677e37b6cafcca
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c642b3eedf2e2294bcbbefc146275e0e672f7532
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462332"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521788"
 ---
 # <a name="pageitemsize"></a>PageItemSize
 
-Das **PageItemSize** -Element gibt die Anzahl der Elemente an, die in einer Suchergebnis-Paginierung zurückgegeben werden sollen. 
+Das **PageItemSize-Element** gibt die Anzahl der Elemente an, die in einer Suchergebnis-Paginierung zurückgegeben werden sollen. 
   
 ```XML
 <PageItemSize></PageItemSize>
 ```
 
- **Long**
+ **Lange**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **PageItemSize** -Elements ist die Anzahl der Elemente, die in einer Suchergebnis-Paginierung zurückgegeben werden. 
+Der Textwert des **PageItemSize-Elements** ist die Anzahl der Elemente, die in einer Suchergebnis-Paginierung zurückgegeben werden. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

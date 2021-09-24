@@ -5,27 +5,27 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RemoveDelegate
 api_type:
 - schema
 ms.assetid: 1d42d5ff-8fde-4f8a-b18d-57b1ef7a946a
-description: Mit dem RemoveDelegate-Vorgang werden mindestens eine Stellvertretung aus dem Postfach eines Benutzers entfernt.
-ms.openlocfilehash: b2e342225e7e79c44dcd86b76b4b7d47b16b860b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der RemoveDelegate-Vorgang entfernt einen oder mehrere Stellvertretungen aus dem Postfach eines Benutzers.
+ms.openlocfilehash: 1e18b1122ac24e0463fc487a2a3e51fb44aab54b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466598"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517980"
 ---
 # <a name="removedelegate-operation"></a>RemoveDelegate-Vorgang
 
-Mit dem **RemoveDelegate** -Vorgang werden mindestens eine Stellvertretung aus dem Postfach eines Benutzers entfernt. 
+Der **RemoveDelegate-Vorgang** entfernt einen oder mehrere Stellvertretungen aus dem Postfach eines Benutzers. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der **RemoveDelegate** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
+Der **RemoveDelegate-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben sind. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -34,11 +34,11 @@ Der **RemoveDelegate** -Vorgang kann die SOAP-Header verwenden, die in der folge
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="removedelegate-request-example"></a>RemoveDelegate-Anforderungs Beispiel
+## <a name="removedelegate-request-example"></a>RemoveDelegate-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Codebeispiel wird gezeigt, wie zwei Delegaten aus dem von Benutzer1-Postfach entfernt werden. In diesem Beispiel wird ein Delegat mithilfe der primären SMTP-Adresse der Stellvertretung entfernt, und der andere wird mithilfe der Sicherheits-ID (SID) der Stellvertretung entfernt.
+Das folgende Codebeispiel zeigt, wie Sie zwei Stellvertretungen aus dem Postfach von Benutzer1 entfernen. In diesem Beispiel wird ein Delegat mithilfe der primären SMTP-Adresse des Delegaten entfernt, der andere mithilfe der Sicherheits-ID (SID) des Delegaten.
   
 ### <a name="code"></a>Code
 
@@ -70,13 +70,13 @@ Im folgenden Codebeispiel wird gezeigt, wie zwei Delegaten aus dem von Benutzer1
 
 ### <a name="comments"></a>Comments
 
-Für den **RemoveDelegate** -Vorgang ist es nicht erforderlich, dass der angegebene Stellvertreter Benutzer über ein Postfach verfügt oder im Active Directory Verzeichnisdienst vorhanden ist. Der **RemoveDelegate** -Vorgang kann erfolgreich ausgeführt werden, wenn der Delegat-Eintrag verwaist ist. 
+Der **RemoveDelegate-Vorgang** erfordert nicht, dass der angegebene Stellvertretungsbenutzer über ein Postfach verfügt oder im Active Directory-Verzeichnisdienst vorhanden ist. Der **RemoveDelegate-Vorgang** ist erfolgreich, wenn der Delegateintrag verwaist ist. 
   
 ## <a name="removedelegate-response-example"></a>RemoveDelegate-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel einer **RemoveDelegate** -Antwort zeigt eine erfolgreiche Antwort auf eine **RemoveDelegate** -Anforderung. Die Antwort enthält ein **DelegateUserResponseMessageType** -Element für jeden Delegaten, der aus dem Postfach entfernt wird. 
+Das folgende Beispiel einer **RemoveDelegate-Antwort** zeigt eine erfolgreiche Antwort auf eine **RemoveDelegate-Anforderung.** Die Antwort enthält ein **DelegateUserResponseMessageType-Element** für jeden Delegaten, der aus dem Postfach entfernt wird. 
   
 ### <a name="code"></a>Code
 
@@ -111,11 +111,11 @@ Das folgende Beispiel einer **RemoveDelegate** -Antwort zeigt eine erfolgreiche 
 </soap:Envelope>
 ```
 
-## <a name="removedelegate-error-response-example"></a>RemoveDelegate-Fehlerantwort Beispiel
+## <a name="removedelegate-error-response-example"></a>Beispiel für RemoveDelegate-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel einer **RemoveDelegate** -Fehlerantwort zeigt die Ergebnisse einer Anforderung zum Entfernen eines nicht vorhandenen Delegaten. 
+Das folgende Beispiel einer **RemoveDelegate-Fehlerantwort** zeigt die Ergebnisse einer Anforderung zum Entfernen eines nicht vorhandenen Delegaten. 
   
 ### <a name="code"></a>Code
 

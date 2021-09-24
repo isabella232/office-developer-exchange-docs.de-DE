@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 13719747-08b7-4083-a400-5cfb5e99f177
-description: Das UserEnabledExtensions-Element listet die aktivierten apps auf.
-ms.openlocfilehash: c09afe1c7ff9617d200a7faeea87efbbe2656b45
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das UserEnabledExtensions-Element listet die aktivierten Apps auf.
+ms.openlocfilehash: dd815141da34df3e193b5c033ee68bb631829a0b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460218"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522407"
 ---
 # <a name="userenabledextensions"></a>UserEnabledExtensions
 
-Das **UserEnabledExtensions** -Element listet die aktivierten apps auf. 
+Das **UserEnabledExtensions-Element** listet die aktivierten Apps auf. 
   
 ```XML
 <UserEnabledExtensions>
@@ -40,9 +40,9 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[User Parameters](userparameters.md)
+[UserParameters](userparameters.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
