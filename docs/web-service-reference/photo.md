@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 38318ed6-3774-4342-b1bf-1d551ecf077c
 description: Das Photo-Element enthält einen Wert, der das Foto eines Kontakts codiert.
-ms.openlocfilehash: 5e356982dc75d8cd4edb5f5d17f26a3dc2e93698
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 2af544124de6ec2bfaaec4671c0e4df5903a94cd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457172"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528129"
 ---
 # <a name="photo"></a>Foto
 
-Das **Photo** -Element enthält einen Wert, der das Foto eines Kontakts codiert. 
+Das **Photo-Element** enthält einen Wert, der das Foto eines Kontakts codiert. 
   
 ```XML
 <Photo/>
@@ -47,7 +47,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

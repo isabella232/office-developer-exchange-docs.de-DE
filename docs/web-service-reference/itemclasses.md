@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ItemClasses
 api_type:
 - schema
 ms.assetid: f95430cc-2860-47c1-af2d-8c4156c9b281
 description: Das ItemClasses-Element stellt die Elementklassen dar, die für eingehende Nachrichten gestempelt werden müssen, damit die Bedingung oder Ausnahme zutrifft.
-ms.openlocfilehash: 56b99cad2abef0a9953e1793e5b633acca83a9eb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a04c773d40d199902de7a7963e02444ed1def4fa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460113"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511427"
 ---
 # <a name="itemclasses"></a>ItemClasses
 
-Das **ItemClasses** -Element stellt die Elementklassen dar, die für eingehende Nachrichten gestempelt werden müssen, damit die Bedingung oder Ausnahme zutrifft. 
+Das **ItemClasses-Element** stellt die Elementklassen dar, die für eingehende Nachrichten gestempelt werden müssen, damit die Bedingung oder Ausnahme zutrifft. 
   
 ```XML
 <ItemClasses>
@@ -55,7 +55,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

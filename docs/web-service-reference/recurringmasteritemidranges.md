@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c9c89b5-4ce8-437b-a332-fa7ed35c8388
-description: Das RecurringMasterItemIdRanges-Element gibt ein Array von Ereignis Bereichen an.
-ms.openlocfilehash: 784676844c5c58c65b8cc6177843bf26d351b7d9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das RecurringMasterItemIdRanges-Element gibt ein Array von Vorkommenbereichen an.
+ms.openlocfilehash: 582cbe27d468c1ff7ec22f03ba9f6976d244e234
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528755"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529370"
 ---
 # <a name="recurringmasteritemidranges"></a>RecurringMasterItemIdRanges
 
-Das **RecurringMasterItemIdRanges** -Element gibt ein Array von Ereignis Bereichen an. 
+Das **RecurringMasterItemIdRanges-Element** gibt ein Array von Vorkommenbereichen an. 
   
 ```XML
 <RecurringMasterItemIdRanges Id="" ChangeKey="">
@@ -34,8 +34,8 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Id** <br/> |Der Textwert des **ID-** Attributs ist die eindeutige ID eines wiederkehrenden Hauptelements. Dies ist ein **String** -Wert.  <br/> |
-|**ChangeKey** <br/> |Der Textwert des **ChangeKey** -Attributs ist der Änderungsschlüssel des wiederkehrenden Hauptelements. Dies ist ein **String** -Wert.  <br/> |
+|**Id** <br/> |Der Textwert des **Id-Attributs** ist der eindeutige Bezeichner eines wiederkehrenden Masterelements. Dies ist ein **Zeichenfolgenwert.**  <br/> |
+|**ChangeKey** <br/> |Der Textwert des **ChangeKey-Attributs** ist der Änderungsschlüssel des Serienmasterelements. Dies ist ein **Zeichenfolgenwert.**  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -43,9 +43,9 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Itemids](itemids.md)  |  [GlobalItemIds](globalitemids.md)  |  [DraftItemIds](draftitemids.md)  |  [ContactIds](contactids.md) Die  |  [GroupIds](groupids.md)
+[ItemIds](itemids.md)  |  [GlobalItemIds](globalitemids.md)  |  [DraftItemIds](draftitemids.md)  |  [ContactIds](contactids.md)  |  [GroupIds](groupids.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

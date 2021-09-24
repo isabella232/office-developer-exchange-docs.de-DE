@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FirstOccurrence
 api_type:
 - schema
 ms.assetid: d6748860-ce0d-4d2e-b7e4-9ed834f1e45a
-description: Das FirstOccurrence-Element stellt das erste Vorkommen eines wiederkehrenden Kalenderelements dar.
-ms.openlocfilehash: 22ee9018df1e89a3783c4dfb56aaf065b2c8ea6c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das FirstOccurrence-Element stellt das erste Vorkommen eines Terminserienkalenderelements dar.
+ms.openlocfilehash: e774e69f658479b1faab04eb9b91a2d24180e515
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466297"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518393"
 ---
 # <a name="firstoccurrence"></a>FirstOccurrence
 
-Das **FirstOccurrence** -Element stellt das erste Vorkommen eines wiederkehrenden Kalenderelements dar. 
+Das **FirstOccurrence-Element** stellt das erste Vorkommen eines Terminserienkalenderelements dar. 
   
 ```xml
 <FirstOccurrence>
@@ -45,10 +45,10 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel des ersten Vorkommens eines wiederkehrenden Kalenderelements.  <br/> |
-|[Start](start.md) <br/> |Stellt die Startzeit des ersten Auftretens eines wiederkehrenden Kalenderelements dar.  <br/> |
-|[End](end-ex15websvcsotherref.md) <br/> |Stellt die Endzeit des ersten Vorkommens eines wiederkehrenden Kalenderelements dar.  <br/> |
-|[OriginalStart](originalstart.md) <br/> |Stellt die ursprüngliche Startzeit des ersten Vorkommens eines wiederkehrenden Kalenderelements dar.  <br/> |
+|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel des ersten Vorkommens eines Terminserienkalenderelements.  <br/> |
+|[Start](start.md) <br/> |Stellt die Startzeit des ersten Vorkommens eines Terminserienkalenderelements dar.  <br/> |
+|[Ende ](end-ex15websvcsotherref.md) <br/> |Stellt die Endzeit des ersten Vorkommens eines Terminserienkalenderelements dar.  <br/> |
+|[OriginalStart](originalstart.md) <br/> |Stellt die ursprüngliche Startzeit des ersten Vorkommens eines Terminserienkalenderelements dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -57,7 +57,7 @@ Keine.
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element ist gültig, wenn [CalendarItemType](calendaritemtype.md) den RecurringMaster-Wert aufweist. 
   

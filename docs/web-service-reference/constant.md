@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Constant
 api_type:
 - schema
 ms.assetid: 340af0cd-9f12-44ab-b8f1-21d107c8d0c9
-description: Das constant-Element identifiziert einen konstanten Wert in einer Einschränkung.
-ms.openlocfilehash: 6cb2eaa4227a8fd0985e8ff5a15d647c3bb1cd6a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Constant-Element identifiziert einen Konstantenwert in einer Einschränkung.
+ms.openlocfilehash: 9d727b41d7d18537758eae7f144832b041757d4b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461555"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511979"
 ---
 # <a name="constant"></a>Konstante
 
-Das **Constant** -Element identifiziert einen konstanten Wert in einer Einschränkung. 
+Das **Constant-Element** identifiziert einen Konstantenwert in einer Einschränkung. 
   
 ```xml
 <Constant Value="" />
@@ -49,9 +49,9 @@ Keine.
 |[Enthält](contains.md) <br/> |Stellt einen Suchausdruck dar, der bestimmt, ob eine angegebene Eigenschaft den angegebenen konstanten Zeichenfolgewert enthält.  <br/> |
 |[FieldURIOrConstant](fielduriorconstant.md) <br/> |Stellt eine Eigenschaft oder einen konstanten Wert dar, der beim Vergleich mit einer anderen Eigenschaft verwendet werden soll.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Zeichenfolgenwert im **value** -Attribut muss in den Typ Coercible werden, den Sie vergleichen möchten. Wenn Sie beispielsweise eine Date/Time-Eigenschaft mit einem konstanten Wert vergleichen, muss der Zeichenfolgenwert ein Datum/eine Uhrzeit darstellen. 
+Der Zeichenfolgenwert im **Value-Attribut** muss in den Typ umgewandelt werden, mit dem Sie vergleichen möchten. Wenn Sie beispielsweise eine Date/Time-Eigenschaft mit einem Konstantenwert vergleichen, muss der Zeichenfolgenwert ein Datum/eine Uhrzeit darstellen. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

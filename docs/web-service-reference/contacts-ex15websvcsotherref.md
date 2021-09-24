@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Contacts
 api_type:
 - schema
 ms.assetid: 0cc67cdf-9707-45e7-92c6-fa83a016cdbe
-description: Das Contacts-Element enthält eine Liste von Kontakten, die einem Vorgang zugeordnet sind.
-ms.openlocfilehash: c2b7bbadd494081a3e47b7b6c489218fab31d574
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Contacts-Element enthält eine Liste der Kontakte, die einer Aufgabe zugeordnet sind.
+ms.openlocfilehash: 457553347db88c2401c5e7b23a0232f53515e941
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458390"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518722"
 ---
 # <a name="contacts"></a>Kontakte
 
-Das **Contacts** -Element enthält eine Liste von Kontakten, die einem Vorgang zugeordnet sind. 
+Das **Contacts-Element** enthält eine Liste der Kontakte, die einer Aufgabe zugeordnet sind. 
   
 ```xml
 <Contacts>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[String](string.md) <br/> |Stellt eine durch trennzeichengetrennte Liste von Kontaktnamen dar.  <br/> |
+|[String](string.md) <br/> |Stellt eine durch Trennzeichen getrennte Liste von Kontaktnamen dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -50,7 +50,7 @@ Keine.
 |:-----|:-----|
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

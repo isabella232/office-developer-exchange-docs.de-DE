@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 82dfa204-e316-432f-a753-5bd97f576389
-description: Das UnpinTeamMailboxResponse-Element enthält eine Antwort auf eine Anforderung zum unpin eines websitepostfachs.
-ms.openlocfilehash: ba1f61a7b5b5b4d5af6805c13d84ee15e3559751
-ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
+description: Das UnpinTeamMailboxResponse-Element enthält eine Antwort auf eine Anforderung zum Lösen eines Websitepostfachs.
+ms.openlocfilehash: a1302992ec53b5765ff2d098c682fc780d3fa599
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45012580"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510742"
 ---
 # <a name="unpinteammailboxresponse"></a>UnpinTeamMailboxResponse
 
-Das **UnpinTeamMailboxResponse** -Element enthält eine Antwort auf eine Anforderung zum unpin eines websitepostfachs. 
+Das **UnpinTeamMailboxResponse-Element** enthält eine Antwort auf eine Anforderung zum Lösen eines Websitepostfachs. 
   
 ```XML
 <UnpinTeamMailboxResponse>
@@ -39,13 +39,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[MessageText](messagetext.md)  |  [Response Code](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [Messagexml verwendet](messagexml.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -57,7 +57,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

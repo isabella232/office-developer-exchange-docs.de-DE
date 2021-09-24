@@ -5,38 +5,38 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetUserOofSettings
 api_type:
 - schema
 ms.assetid: 36277ef0-18ee-4b35-9e6e-8c321d8f5433
-description: Die SetUserOofSettings-Webmethode legt die Abwesenheit (Out of Office, OOF) Einstellungen und die Nachricht eines Postfachbenutzers fest.
-ms.openlocfilehash: 88b5475dd2f0fe6d334bad51a0fe8d0beb767634
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Die SetUserOofSettings-Webmethode legt die OOF-Einstellungen und -Nachrichten (Out of Office) eines Postfachbenutzers fest.
+ms.openlocfilehash: 21a860b2a1ae4a660e08554d7d67049c1ae0d858
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463153"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59531874"
 ---
 # <a name="setuseroofsettings-operation"></a>SetUserOofSettings-Vorgang
 
-Die **SetUserOofSettings** -Webmethode legt die Abwesenheit (Out of Office, OOF) Einstellungen und die Nachricht eines Postfachbenutzers fest. 
+Die **SetUserOofSettings-Webmethode** legt die OOF-Einstellungen und -Nachrichten (Out of Office) eines Postfachbenutzers fest. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der **SetUserOofSettings** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
+Der **SetUserOofSettings-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben sind. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
 |Identitätswechsel  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="setuseroofsettings-request-example"></a>SetUserOofSettings-Anforderungs Beispiel
+## <a name="setuseroofsettings-request-example"></a>SetUserOofSettings-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **SetUserOofSettings** -Anforderung wird eine Abwesenheitseinstellung für 10 Tage festgelegt. 
+Im folgenden Beispiel einer **SetUserOofSettings-Anforderung** wird eine OOF-Einstellung für 10 Tage festgelegt. 
   
 ### <a name="code"></a>Code
 
@@ -77,9 +77,9 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Postfach (Verfügbarkeit)](mailbox-availability.md)
     
-- [Name (e-mailemail)](name-emailaddress.md)
+- [Name (EmailAddress)](name-emailaddress.md)
     
-- [Address (Zeichenfolge)](address-string.md)
+- [Adresse (Zeichenfolge)](address-string.md)
     
 - [RoutingType (EmailAddress)](routingtype-emailaddress.md)
     
@@ -97,15 +97,15 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [InternalReply](internalreply.md)
     
-- [Message (Verfügbarkeit)](message-availability.md)
+- [Nachricht (Verfügbarkeit)](message-availability.md)
     
 - [ExternalReply](externalreply.md)
     
-## <a name="successful-setuseroofsettings-response-example"></a>Erfolgreiches SetUserOofSettings-Antwortbeispiel
+## <a name="successful-setuseroofsettings-response-example"></a>Beispiel für eine erfolgreiche SetUserOofSettings-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **SetUserOofSettings** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **SetUserOofSettings-Anforderung.** 
   
 ### <a name="code"></a>Code
 

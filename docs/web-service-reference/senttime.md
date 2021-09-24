@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e74b4a03-45b0-469c-8889-c7cc5aa88a68
-description: Das sent Time-Element gibt die Zeit an, zu der das Element gesendet wurde.
-ms.openlocfilehash: 51404b1fe12cf31f935740dd4afe3deaab0777de
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SentTime-Element gibt den Zeitpunkt an, zu dem das Element gesendet wurde.
+ms.openlocfilehash: dd7f80c51be9ceeabdd9bb648b27d3b4f2b7c77f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463167"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532125"
 ---
 # <a name="senttime"></a>SentTime
 
-Das **sent** Time-Element gibt die Zeit an, zu der das Element gesendet wurde. 
+Das **SentTime-Element** gibt den Zeitpunkt an, zu dem das Element gesendet wurde. 
   
 ```XML
 <SentTime></SentTime>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **sent** Time-Elements ist das Datum und die Uhrzeit, zu der ein Element gesendet wurde. 
+Der Textwert des **SentTime-Elements** ist das Datum und die Uhrzeit, zu der ein Element gesendet wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

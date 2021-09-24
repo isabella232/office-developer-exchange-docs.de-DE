@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7f7119b7-f5b4-484d-a7de-fa74836d9aee
-description: Das Contact-Element gibt einen Kontakt im einheitlichen Kontaktspeicher an.
-ms.openlocfilehash: e8ebc28456f8bfc26f5d790ac9ff278930041ea0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Contact-Element gibt einen Kontakt in der einheitlichen Kontakt-Store an.
+ms.openlocfilehash: e52573841f934a11c05a1da9e19f91146ed9c774
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461520"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511993"
 ---
 # <a name="contact-contacttype"></a>Kontakt (ContactType)
 
-Das **Contact** -Element gibt einen Kontakt im einheitlichen Kontaktspeicher an. 
+Das **Contact-Element** gibt einen Kontakt in der einheitlichen Kontakt-Store an. 
   
 ```XML
 <Contact>
@@ -43,13 +43,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PersonName](personname.md) <br/> |Gibt den Namen eines einzelnen an.  <br/> |
-|[Business Name](businessname.md) <br/> |Gibt den Namen eines Unternehmens an.  <br/> |
+|[PersonName](personname.md) <br/> |Gibt den Namen einer Person an.  <br/> |
+|[BusinessName](businessname.md) <br/> |Gibt den Namen eines Unternehmens an.  <br/> |
 |[PhoneNumbers](phonenumbers.md) <br/> |Stellt eine Auflistung von Telefonnummern für einen Kontakt dar.  <br/> |
-|[Urls](urls.md) <br/> |Gibt ein Array von URLs für eine Rolle an.  <br/> |
-|[Emails (ArrayOfExtractedEmailAddresses)](emailaddresses-arrayofextractedemailaddresses.md) <br/> |Gibt ein Array von extrahierten e-Mail-Adressen an.  <br/> |
-|[Adressen (ArrayOfAddressesType)](addresses-arrayofaddressestype.md) <br/> |Gibt ein Array von **Address** -Elementen an.  <br/> |
-|[ContactType](contactstring.md) <br/> |Gibt den Anzeigenamen eines Kontakts an.  <br/> |
+|[Urls](urls.md) <br/> |Gibt ein Array von URLs für eine Persona an.  <br/> |
+|[EmailAddresses (ArrayOfExtractedEmailAddresses)](emailaddresses-arrayofextractedemailaddresses.md) <br/> |Gibt ein Array extrahierter E-Mail-Adressen an.  <br/> |
+|[Adressen (ArrayOfAddressesType)](addresses-arrayofaddressestype.md) <br/> |Gibt ein Array von **Address-Elementen** an.  <br/> |
+|[ContactString](contactstring.md) <br/> |Gibt den Anzeigenamen eines Kontakts an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -57,7 +57,7 @@ Keine.
 |:-----|:-----|
 |[Kontakte (ArrayOfContactsType)](contacts-arrayofcontactstype.md) <br/> |Gibt ein Array von Kontakten an.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -69,7 +69,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

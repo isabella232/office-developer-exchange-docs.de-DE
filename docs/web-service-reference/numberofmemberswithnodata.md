@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - NumberOfMembersWithNoData
 api_type:
 - schema
 ms.assetid: 7ca9c57c-9519-442c-a9f4-dca2b0309716
-description: Das NumberOfMembersWithNoData-Element stellt die Anzahl der Verteilerlistenmitglieder dar, die keine Frei/Gebucht-Daten veröffentlicht haben, die mit einer vorgeschlagenen Besprechungszeit verglichen werden sollen. Dieses Element stellt Elemente einer Verteilerliste dar, die zu groß sind, oder Mitglieder, die keinen Daten Status aufweisen.
-ms.openlocfilehash: df41adc14f4c35c0e24d0f3c54f74a63527859d6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das NumberOfMembersWithNoData-Element stellt die Anzahl der Verteilerlistenmitglieder dar, die keine Frei/Gebucht-Daten veröffentlicht haben, die mit einer vorgeschlagenen Besprechungszeit verglichen werden sollen. Dieses Element stellt Mitglieder einer Verteilerliste dar, die zu groß ist, oder Mitglieder, die den Status "Keine Daten" aufweisen.
+ms.openlocfilehash: 4b021ce75a84eca3e1b5a66cf51f6b5d7adec86b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462549"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529685"
 ---
 # <a name="numberofmemberswithnodata"></a>NumberOfMembersWithNoData
 
-Das **NumberOfMembersWithNoData** -Element stellt die Anzahl der Verteilerlistenmitglieder dar, die keine Frei/Gebucht-Daten veröffentlicht haben, die mit einer vorgeschlagenen Besprechungszeit verglichen werden sollen. Dieses Element stellt Elemente einer Verteilerliste dar, die zu groß sind, oder Mitglieder, die **keinen Daten** Status aufweisen. 
+Das **NumberOfMembersWithNoData-Element** stellt die Anzahl der Verteilerlistenmitglieder dar, die keine Frei/Gebucht-Daten veröffentlicht haben, die mit einer vorgeschlagenen Besprechungszeit verglichen werden sollen. Dieses Element stellt Mitglieder einer Verteilerliste dar, die zu groß ist, oder Mitglieder, die den Status **"Keine Daten"** aufweisen. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -62,17 +62,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |Enthält aggregierte Konfliktinformationen über die Anzahl der verfügbaren Benutzer, die Anzahl der Benutzer mit Konflikten sowie die Anzahl der Benutzer, die in einer Verteilerliste keine Verfügbarkeitsinformationen für eine vorgeschlagene Besprechungszeit haben.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/GroupAttendeeConflictData` <br/> |
+|[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |Enthält aggregierte Konfliktinformationen über die Anzahl der verfügbaren Benutzer, die Anzahl der Benutzer, die Konflikte haben, und die Anzahl der Benutzer, die keine Verfügbarkeitsinformationen in einer Verteilerliste für eine vorgeschlagene Besprechungszeit haben.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/GroupAttendeeConflictData` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Ein Kontakt in einer Gruppe, der kein Postfach hat, ist ein Beispiel für ein Verteilerlisten Mitglied, das keine Kalenderdaten hat. Ein Kontakt kann aus den folgenden Gründen möglicherweise auch **keinen Daten** Status haben: 
+Ein Kontakt in einer Gruppe, der nicht über ein Postfach verfügt, ist ein Beispiel für ein Verteilerlistenmitglied, das keine Kalenderdaten besitzt. Ein Kontakt hat möglicherweise auch aus den folgenden Gründen **keinen Datenstatus:** 
   
-- Berechtigungen sind unzureichend.
+- Berechtigungen sind nicht ausreichend.
     
-- Die Verteilerliste ist zu groß, um Sie zu erweitern.
+- Die Verteilerliste ist zu groß, um sie zu erweitern.
     
-- Der Active Directory Verzeichnisdienst ist nicht verfügbar.
+- Der Active Directory-Verzeichnisdienst ist nicht verfügbar.
     
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -94,5 +94,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

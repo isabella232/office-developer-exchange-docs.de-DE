@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MiddleName
 api_type:
 - schema
 ms.assetid: 279361e4-71b3-43b0-8106-d8f80416044b
-description: Das MiddleName-Element stellt den zweiten Vornamen eines Kontakts dar.
-ms.openlocfilehash: 497c973fc312d1b51e87b14f4df21995a17eb2e9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MiddleName-Element stellt den Vornamen eines Kontakts dar.
+ms.openlocfilehash: a9f4f08828c4cbcaa930a5f517f1315f87b05506
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465800"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510911"
 ---
 # <a name="middlename"></a>MiddleName
 
-Das **MiddleName** -Element stellt den zweiten Vornamen eines Kontakts dar. 
+Das **MiddleName-Element** stellt den Vornamen eines Kontakts dar. 
   
 ```xml
 <MiddleName/>
@@ -44,14 +44,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Completename](completename.md) <br/> |Stellt den vollständigen Namen eines Kontakts dar.  <br/> |
+|[CompleteName](completename.md) <br/> |Stellt den vollständigen Namen eines Kontakts dar.  <br/> |
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Eine Zeichenfolge, die den zweiten Vornamen eines Kontakts darstellt.
+Eine Zeichenfolge, die den Vornamen eines Kontakts darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

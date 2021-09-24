@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MergedFreeBusy
 api_type:
 - schema
 ms.assetid: ea45590d-476e-4b68-9fe8-ae392feadfea
-description: Das MergedFreeBusy-Element enthält den zusammengeführten frei/gebucht-Datenstrom.
-ms.openlocfilehash: a1483449534f0d886e3c97a23d28c5d78f865042
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MergedFreeBusy-Element enthält den zusammengeführten Frei/Gebucht-Datenstrom.
+ms.openlocfilehash: db451d6b2e67313836771604fae57b14b6b3db10
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468726"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511030"
 ---
 # <a name="mergedfreebusy"></a>MergedFreeBusy
 
-Das **MergedFreeBusy** -Element enthält den zusammengeführten frei/gebucht-Datenstrom. 
+Das **MergedFreeBusy-Element** enthält den zusammengeführten Frei/Gebucht-Datenstrom. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -58,7 +58,7 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert wird vom Server bereitgestellt, wenn der Wert für das [FreeBusyViewType](freebusyviewtype.md) -Element einer der folgenden Werte ist: 
+Ein Textwert wird vom Server bereitgestellt, wenn der Wert für das [FreeBusyViewType-Element](freebusyviewtype.md) einer der folgenden ist: 
   
 - DetailedMerged
     
@@ -68,21 +68,21 @@ Ein Textwert wird vom Server bereitgestellt, wenn der Wert für das [FreeBusyVie
     
 Der Textwert ist ein Stream von Frei/Gebucht-Informationen. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Datenstrom, der von diesem Element bereitgestellt wird, wird durch die Elemente [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) und [Window](timewindow.md) definiert. Das Time [Window](timewindow.md) -Element definiert die Zeitspanne, die für die Verfügbarkeit abgefragt wird. Das [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) -Element definiert, wie die Zeit aus dem Time [Window](timewindow.md) -Element in Intervalle unterteilt wird, die im **MergedFreeBusy** -Element zurückgegeben werden. Jede Zahl im **MergedFreeBusy** -Datenstrom stellt ein einzelnes Intervall dar, das durch das [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) -Element definiert wird. In der folgenden Tabelle sind die möglichen Werte für ein individuelles Intervall aufgeführt. 
+Der von diesem Element bereitgestellte Datenstrom wird durch die Elemente [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) und [TimeWindow](timewindow.md) definiert. Das [TimeWindow-Element](timewindow.md) definiert die Zeitspanne, die auf Verfügbarkeit abgefragt wird. Das [MergedFreeBusyIntervalInMinutes-Element](mergedfreebusyintervalinminutes.md) definiert, wie die Zeit aus dem [TimeWindow-Element](timewindow.md) in Intervalle aufgeteilt wird, die im **MergedFreeBusy-Element** zurückgegeben werden. Jede Zahl im **MergedFreeBusy-Datenstrom** stellt ein einzelnes Intervall dar, das durch das [MergedFreeBusyIntervalInMinutes-Element](mergedfreebusyintervalinminutes.md) definiert wird. In der folgenden Tabelle sind die möglichen Werte für ein einzelnes Intervall aufgeführt. 
   
 |**Ziffer**|**Verfügbarkeit**|
 |:-----|:-----|
 |0  <br/> |Frei  <br/> |
-|1   <br/> |Vorläufige  <br/> |
+|1  <br/> |Vorläufige  <br/> |
 |2  <br/> |Gebucht  <br/> |
 |3  <br/> |Abwesend  <br/> |
 |4   <br/> |Keine Daten  <br/> |
    
-Beispielsweise enthält eine Anforderung für Frei/Gebucht-Daten ein Zeit [Fenster](timewindow.md) Element, das vier Stunden darstellt, und ein [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) -Element, das 60 Minuten darstellt. Wenn der Kalender des angeforderten Benutzers OOF für die ersten 60 Minuten ist, beschäftigt für die folgenden 90 Minuten und für die letzten 90 Minuten im Zeitfenster ungeplant ist, wird der **MergedFreeBusy** -Datenstrom 3220. Wenn ein Intervall mehr als eine Verfügbarkeits Klassifizierung enthält, wird die höchste Zahl verwendet, um das Intervall zu klassifizieren. 
+Eine Anforderung für Frei/Gebucht-Daten umfasst beispielsweise ein [TimeWindow-Element,](timewindow.md) das vier Stunden darstellt, und ein [MergedFreeBusyIntervalInMinutes-Element,](mergedfreebusyintervalinminutes.md) das 60 Minuten darstellt. Wenn der Kalender des angeforderten Benutzers OOF für die ersten 60 Minuten ist, für die folgenden 90 Minuten ausgelastet und für die letzten 90 Minuten im Zeitfenster ungeplant ist, ist der **MergedFreeBusy-Datenstrom** 3220. Wenn ein Intervall mehrere Verfügbarkeitsklassifizierungen enthält, wird die höchste Zahl verwendet, um dieses Intervall zu klassifizieren. 
   
-Die von diesem Element bereitgestellte Detailebene hängt von den Berechtigungen ab, die dem Requestor erteilt werden.
+Die Detailebene, die von diesem Element bereitgestellt wird, hängt von den Berechtigungen ab, die dem Anforderer erteilt wurden.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -104,5 +104,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

@@ -1,27 +1,27 @@
 ---
-title: Read
+title: Lesen
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Read
 api_type:
 - schema
 ms.assetid: b14637e9-1695-4b7e-b078-ae527c2e4303
 description: Das Read-Element gibt an, ob ein Client einen Ordner oder ein Element lesen kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: d75285e0ab14c4f53d73cb7f4349196e07c3c521
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f86d7c415065b6cb45492f66cca55c6f3d7f466d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468313"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527656"
 ---
-# <a name="read"></a>Read
+# <a name="read"></a>Lesen
 
-Das **Read** -Element gibt an, ob ein Client einen Ordner oder ein Element lesen kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **Read-Element** gibt an, ob ein Client einen Ordner oder ein Element lesen kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <Read>true or false</Read>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass ein Client ein Element des Ordners lesen kann. 
+Der Textwert **"true"** gibt an, dass ein Client ein Ordnerelement lesen kann. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

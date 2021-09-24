@@ -1,33 +1,33 @@
 ---
-title: Agentliste
+title: agentList
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - agentList
 api_type:
 - schema
 ms.assetid: e877b7ef-e303-4270-964d-8d116ff2a865
-description: 'Letzte Änderung: September 17, 2015'
-ms.openlocfilehash: 99e4e24c3bca77c7e7d5f2c59bb21cee1317fed2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: 'Last modified: September 17, 2015'
+ms.openlocfilehash: eadae2a22e4c844f1f2edce9211100bb9ef2776d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44446392"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529356"
 ---
-# <a name="agentlist"></a>Agentliste
+# <a name="agentlist"></a>agentList
   
 **Gilt für:** Exchange Server 2013
   
-Das **agentlist** -Element enthält ein [Agent](agent.md) -Element für jeden installierten Agent. 
+Das **agentList-Element** enthält ein [Agent-Element](agent.md) für jeden installierten Agent. 
   
 - [Konfiguration](configuration.md)
 - [mexRuntime](mexruntime.md)
-- [Agentliste](agentlist.md)
+- [agentList](agentlist.md)
   
 ```XML
 <agentList>
@@ -55,18 +55,18 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[mexRuntime](mexruntime.md) <br/> |Enthält Elemente, die Konfigurationsinformationen für die Agent-Überwachung und Konfigurationsinformationen zu installierten Agents definieren.  <br/> |
+|[mexRuntime](mexruntime.md) <br/> |Enthält Elemente, die Konfigurationsinformationen für die Agentüberwachung und Konfigurationsinformationen zu installierten Agents definieren.  <br/> |
    
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |In dieser Datei wird kein Namespace definiert.  <br/> |
+|Namespace  <br/> |Diese Datei definiert keinen Namespace.  <br/> |
 |Name des Schemas  <br/> |Nicht verfügbar.  <br/> |
 |Überprüfungsdatei  <br/> |Nicht verfügbar.  <br/> |
 |Leer kann sein  <br/> |"False".  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Elemente der Konfigurationsdatei der Agents für Exchange 2013](agents-configuration-file-elements-for-exchange-2013.md)
+- [Agents-Konfigurationsdateielemente für Exchange 2013](agents-configuration-file-elements-for-exchange-2013.md)
 

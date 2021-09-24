@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - LastName
 api_type:
 - schema
 ms.assetid: 814a81a4-d0d1-43ea-8bb8-652c3043358e
-description: Das LastName-Element stellt den letzten Namen eines Kontakts dar.
-ms.openlocfilehash: fad1541a1a80f8446ed7d1aca6b565b4a3eb3f0d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das LastName-Element stellt den Nachnamen eines Kontakts dar.
+ms.openlocfilehash: deb41e95ebf827391bec0c6ae47d6b0980a7dc74
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459819"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519380"
 ---
 # <a name="lastname"></a>LastName
 
-Das **LastName** -Element stellt den letzten Namen eines Kontakts dar. 
+Das **LastName-Element** stellt den Nachnamen eines Kontakts dar. 
   
 ```xml
 <LastName/>
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Completename](completename.md) <br/> |Stellt den vollständigen Namen eines Kontakts dar.  <br/> |
+|[CompleteName](completename.md) <br/> |Stellt den vollständigen Namen eines Kontakts dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist eine Zeichenfolge, die den letzten Namen eines Kontakts darstellt.
+Der Textwert ist eine Zeichenfolge, die den Nachnamen eines Kontakts darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

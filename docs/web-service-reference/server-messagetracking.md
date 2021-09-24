@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Server
 api_type:
 - schema
 ms.assetid: eb5408bd-6fa5-4415-9224-24d5e07ec5b3
 description: Das Server-Element stellt den physischen Server dar, auf dem das Ereignis aufgetreten ist.
-ms.openlocfilehash: 1a5d2e223acfc402ae964c619598845e4212b639
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 76a8d7642cdee8d4fa2ebed1e164341a41af3197
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462045"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527523"
 ---
 # <a name="server-messagetracking"></a>Server (MessageTracking)
 
-Das **Server** -Element stellt den physischen Server dar, auf dem das Ereignis aufgetreten ist. 
+Das **Server-Element** stellt den physischen Server dar, auf dem das Ereignis aufgetreten ist. 
   
 ```XML
 <Server/>
@@ -50,7 +50,7 @@ Keine.
 
 Ein Textwert, der eine Zeichenfolge darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

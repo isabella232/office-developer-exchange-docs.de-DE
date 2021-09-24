@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - JobTitle
 api_type:
 - schema
 ms.assetid: 52e0de8a-fb21-4f6c-83cb-5a39132d7685
 description: Das JobTitle-Element stellt die Position eines Kontakts dar.
-ms.openlocfilehash: e2c52794f441dee05944ebc1fb7364abfb35cfab
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 41c111e63f98991e3b1244e4d425b2d16c6f6968
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466479"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511405"
 ---
 # <a name="jobtitle"></a>JobTitle
 
-Das **JobTitle** -Element stellt die Position eines Kontakts dar. 
+Das **JobTitle-Element** stellt die Position eines Kontakts dar. 
   
 ```xml
 <JobTitle/>
@@ -50,7 +50,7 @@ Keine.
 
 Wenn dieses Element verwendet wird, ist ein Textwert erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

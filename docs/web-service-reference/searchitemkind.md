@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 89513c26-b751-4619-a300-0ed8f55b0102
-description: Das SearchItemKind-Element gibt den Typ der Elemente an, die nach einer FindMailboxStatisticsByKeyword-Operation durchsucht werden.
-ms.openlocfilehash: e0625ac169c3083702494c094da15d38d220fe67
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SearchItemKind-Element gibt den Typ der Elemente an, die nach einem FindMailboxStatisticsByKeyword-Vorgang durchsucht werden.
+ms.openlocfilehash: 93803d181f32d88c30ab0fa9a72bb92f22907dde
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464000"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510855"
 ---
 # <a name="searchitemkind"></a>SearchItemKind
 
-Das **SearchItemKind** -Element gibt den Typ der Elemente an, die nach einer **FindMailboxStatisticsByKeyword** -Operation durchsucht werden. 
+Das **SearchItemKind-Element** gibt den Typ der Elemente an, die nach einem **FindMailboxStatisticsByKeyword-Vorgang** durchsucht werden. 
   
 ```XML
 <SearchItemKind>Email | Meetings | Tasks | Notes | Docs | Journals | Contacts | Im | Voicemail | Faxes | Posts | Rssfeeds</SearchItemKind>
@@ -42,33 +42,33 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **SearchItemKind** -Elements ist der Typ des Elements, das nach Schlüsselwörtern durchsucht wird. Die folgende Liste enthält die Text Werte, die im **SearchItemKind** -Element verwendet werden können. 
+Der Textwert des **SearchItemKind-Elements** ist der Elementtyp, nach dem nach Schlüsselwörtern gesucht wird. Die folgende Liste enthält die Textwerte, die im **SearchItemKind-Element** verwendet werden können. 
   
-- **E-Mail** : gibt an, dass e-Mail-Nachrichten nach Stichwörtern durchsucht werden. 
+- **E-Mail** – Gibt an, dass E-Mail-Nachrichten nach Schlüsselwörtern durchsucht werden. 
     
-- **Besprechungen** – gibt an, dass Besprechungen nach Stichwörtern durchsucht werden. 
+- **Besprechungen** – Gibt an, dass Besprechungen nach Schlüsselwörtern durchsucht werden. 
     
-- **Aufgaben** : gibt an, dass Aufgaben nach Schlüsselwörtern durchsucht werden. 
+- **Aufgaben** – Gibt an, dass nach Stichwörtern gesucht wird. 
     
-- **Hinweise** : gibt an, dass Notizen nach Stichwörtern durchsucht werden. 
+- **Notizen** – Gibt an, dass nach Schlüsselwörtern gesucht wird. 
     
-- **Docs** : gibt an, dass Dokumente nach Stichwörtern durchsucht werden. 
+- **Dokumente** – Gibt an, dass Dokumente nach Schlüsselwörtern durchsucht werden. 
     
-- **Journals** – gibt an, dass Journale nach Stichwörtern durchsucht werden. 
+-  Stichwörter – Gibt an, dass nach Schlüsselwörtern gesucht wird. 
     
-- **Kontakte** : gibt an, dass Kontakte nach Stichwörtern durchsucht werden. 
+- **Kontakte** – Gibt an, dass Kontakte nach Schlüsselwörtern durchsucht werden. 
     
-- **Sofortnachrichten – gibt** an, dass Nachrichten nach Stichwörtern durchsucht werden. 
+- **Chat** – Gibt an, dass sofort nach Schlüsselwörtern gesucht wird. 
     
-- **Voicemail** : gibt an, dass Voicemails nach Stichwörtern durchsucht werden. 
+- **Voicemail** – Gibt an, dass Voicemails nach Schlüsselwörtern durchsucht werden. 
     
-- **Faxnachrichten** – gibt an, dass Faxnachrichten nach Stichwörtern durchsucht werden. 
+- **Faxe** – Gibt an, dass Faxe nach Schlüsselwörtern durchsucht werden. 
     
-- **Beiträge** : gibt an, dass Beiträge nach Stichwörtern durchsucht werden. 
+- **Beiträge** – Gibt an, dass Beiträge nach Schlüsselwörtern durchsucht werden. 
     
-- **RSSfeeds** – gibt an, dass RSS-Feeds nach Stichwörtern durchsucht werden. 
+- **Rssfeeds** – Gibt an, dass RSS-Feeds nach Schlüsselwörtern gesucht werden. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

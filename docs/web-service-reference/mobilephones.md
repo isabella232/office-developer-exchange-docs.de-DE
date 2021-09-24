@@ -1,23 +1,23 @@
 ---
-title: Handys
+title: MobilePhones
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c67069e9-0c11-47c5-8b99-82932a6b7f98
-description: Das Handys-Element gibt ein Array von Mobiltelefon Nummern und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete Rolle an.
-ms.openlocfilehash: a38a6c3912535d5d886cac82407b4819373da00f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MobilePhones-Element gibt ein Array von Mobiltelefonnummern und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an.
+ms.openlocfilehash: e315c5915e4a939fe16d2e157931e15bcbe6f295
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466661"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510981"
 ---
-# <a name="mobilephones"></a>Handys
+# <a name="mobilephones"></a>MobilePhones
 
-Das **Handys** -Element gibt ein Array von Mobiltelefon Nummern und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete Rolle an. 
+Das **MobilePhones-Element** gibt ein Array von Mobiltelefonnummern und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an. 
   
 ```XML
 <MobilePhones>
@@ -42,7 +42,7 @@ Keine.
 
 [Persona](persona.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

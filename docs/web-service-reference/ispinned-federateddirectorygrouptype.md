@@ -1,23 +1,23 @@
 ---
-title: Isangeheftet (FederatedDirectoryGroupType)
+title: IsPinned (FederatedDirectoryGroupType)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 147121c9-516a-41f5-a506-0f646cdc653b
-description: Das isangeheftet (FederatedDirectoryGroupType)-Element ist nur für die interne Verwendung vorgesehen.
-ms.openlocfilehash: ad4063964d7de197ba39c91f5605a86755fa0ce1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IsPinned -Element (FederatedDirectoryGroupType) ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 4c4bd4ebf7c274438ba0c7e762144bda12f2aaf4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468453"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518246"
 ---
-# <a name="ispinned-federateddirectorygrouptype"></a>Isangeheftet (FederatedDirectoryGroupType)
+# <a name="ispinned-federateddirectorygrouptype"></a>IsPinned (FederatedDirectoryGroupType)
 
-Das **isangeheftet (FederatedDirectoryGroupType)-** Element ist nur für die interne Verwendung vorgesehen. 
+Das **IsPinned -Element (FederatedDirectoryGroupType)** ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

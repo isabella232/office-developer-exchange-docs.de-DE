@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c514f22f-be3e-4cad-ac56-bdff6bafcee6
-description: Das MSExchangeCertificate-Element enthält einen Wert, der das Microsoft Exchange Zertifikat eines Kontakts codiert.
-ms.openlocfilehash: 60bbcfb45e52dc92140d03cdd24a251ea84217b1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MSExchangeCertificate-Element enthält einen Wert, der das Microsoft Exchange-Zertifikat eines Kontakts codiert.
+ms.openlocfilehash: 14993f2a1067334bba5c8980bc57eaff550f09d0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465674"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529791"
 ---
 # <a name="msexchangecertificate"></a>MSExchangeCertificate
 
-Das **MSExchangeCertificate** -Element enthält einen Wert, der das Microsoft Exchange Zertifikat eines Kontakts codiert. 
+Das **MSExchangeCertificate-Element** enthält einen Wert, der das Microsoft Exchange-Zertifikat eines Kontakts codiert. 
   
 ```XML
 <MSExchangeCertificate/>
@@ -48,7 +48,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

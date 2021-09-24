@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FileAs
 api_type:
 - schema
 ms.assetid: df50524e-471c-49d2-89fe-b2d0f61a1365
-description: Das Files-Element stellt dar, wie ein Kontakt oder eine Verteilerliste im Ordner Kontakte gespeichert wird.
-ms.openlocfilehash: be756d86d7608fcb758dd54f2ada9f03a04343e2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das FileAs-Element stellt dar, wie ein Kontakt oder eine Verteilerliste im Ordner "Kontakte" abgelegt wird.
+ms.openlocfilehash: 1ebed8365396feb42f4bfceac646ae7692dd6579
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461198"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59530576"
 ---
 # <a name="fileas"></a>FileAs
 
-Das **Files** -Element stellt dar, wie ein Kontakt oder eine Verteilerliste im Ordner Kontakte gespeichert wird. 
+Das **FileAs-Element** stellt dar, wie ein Kontakt oder eine Verteilerliste im Ordner "Kontakte" abgelegt wird. 
   
 ```xml
 <FileAs/>
@@ -51,9 +51,9 @@ Keine.
 
 Ein Textwert, der eine Zeichenfolge darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das **Files** -Element wird verwendet, um Kontakte und Verteilerlisten nach einem Namen zu sortieren, der nicht vollständiger Name oder Firmenname ist. 
+Das **FileAs-Element** wird verwendet, um Kontakte und Verteilerlisten nach einem anderen Namen als einem vollständigen Namen oder Firmennamen zu sortieren. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

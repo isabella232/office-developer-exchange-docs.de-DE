@@ -1,23 +1,23 @@
 ---
-title: User Parameters
+title: UserParameters
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bad7311f-7ecd-4f0c-b8e7-dd8f7d378f55
-description: Das User Parameters-Element enthält eine Liste der aktivierten und deaktivierten Clienterweiterungen.
-ms.openlocfilehash: 76bf858adfb6d2ef76a25c234117131752c60d7b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das UserParameters-Element enthält eine Liste der aktivierten und deaktivierten Clienterweiterungen.
+ms.openlocfilehash: 1d93ec0f4e44b238fcb9aca23672c262795290a6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526753"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510729"
 ---
-# <a name="userparameters"></a>User Parameters
+# <a name="userparameters"></a>UserParameters
 
-Das **User Parameters** -Element enthält eine Liste der aktivierten und deaktivierten Clienterweiterungen. 
+Das **UserParameters-Element** enthält eine Liste der aktivierten und deaktivierten Clienterweiterungen. 
   
 ```XML
 <UserParameters UserId="" EnabledOnly="">
@@ -35,8 +35,8 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|UserId  <br/> |Der Textwert des **UserID** -Attributs ist der Bezeichner des Benutzers.  <br/> |
-|EnabledOnly  <br/> |Der Textwert des **EnabledOnly** gibt an, ob die Antwort nur die aktivierten Erweiterungen enthält.  <br/> |
+|UserId  <br/> |Der Textwert des **UserId-Attributs** ist der Bezeichner des Benutzers.  <br/> |
+|EnabledOnly  <br/> |Der Textwert von **EnabledOnly** gibt an, ob die Antwort nur die aktivierten Erweiterungen enthält.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -46,7 +46,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 [GetClientExtension](getclientextension.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

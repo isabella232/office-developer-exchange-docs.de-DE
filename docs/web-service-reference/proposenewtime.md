@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6d5977ac-484e-4e53-92ba-58a868eb3395
-description: Das ProposeNewTime-Element gibt ein Response-Objekt an, das angibt, dass der Besprechungsteilnehmer eine neue Besprechungszeit vorschlagen kann.
-ms.openlocfilehash: 76f590db760826aa2cd26938947a9b0e02a603f7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das "ProposeNewTime"-Element gibt ein Antwortobjekt an, das angibt, dass der Besprechungsteilnehmer eine neue Besprechungszeit vorschlagen kann.
+ms.openlocfilehash: e8890029f9a6e3dacb59a9a4a23070ca0de6844c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465541"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519135"
 ---
 # <a name="proposenewtime"></a>ProposeNewTime
 
-Das **ProposeNewTime** -Element gibt ein Response-Objekt an, das angibt, dass der Besprechungsteilnehmer eine neue Besprechungszeit vorschlagen kann. 
+Das **"ProposeNewTime"-Element** gibt ein Antwortobjekt an, das angibt, dass der Besprechungsteilnehmer eine neue Besprechungszeit vorschlagen kann. 
   
 ```XML
 <ProposeNewTime ObjectName=""></ProposeNewTime>
@@ -44,7 +44,7 @@ Keine.
 
 [ResponseObjects](responseobjects.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

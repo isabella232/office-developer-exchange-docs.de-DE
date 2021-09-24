@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - LastModifiedTime
 api_type:
 - schema
 ms.assetid: 6db2cabc-e7f4-4d71-962b-789de6a192a4
 description: Das LastModifiedTime-Element gibt an, wann ein Element zuletzt geändert wurde. Dieses Element ist schreibgeschützt.
-ms.openlocfilehash: 82130cbf211d5e8ac63ae8c290ea7a539582ccb7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: aa511b29072c8d3aa1401d7b9011854249c85d80
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459833"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519400"
 ---
 # <a name="lastmodifiedtime"></a>LastModifiedTime
 
-Das **LastModifiedTime** -Element gibt an, wann ein Element zuletzt geändert wurde. Dieses Element ist schreibgeschützt. 
+Das **LastModifiedTime-Element** gibt an, wann ein Element zuletzt geändert wurde. Dieses Element ist schreibgeschützt. 
   
 ```xml
 <LastModifiedTime/>
@@ -47,9 +47,9 @@ Keine.
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
-|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die an ein Element im Exchange-Informationsspeicher angefügt ist.  <br/> |
-|[Element](item.md) <br/> |Stellt ein generisches Exchange-Element dar.  <br/> |
-|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange-Element dar, das an ein anderes Exchange-Element angefügt ist.  <br/> |
+|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die an ein Element im Exchange Speicher angefügt ist.  <br/> |
+|[Aspekt](item.md) <br/> |Stellt ein generisches Exchange Element dar.  <br/> |
+|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange Element dar, das einem anderen Exchange Element zugeordnet ist.  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine Besprechungsabsage im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
@@ -57,13 +57,13 @@ Keine.
 |[Message](message-ex15websvcsotherref.md) <br/> |Stellt eine Exchange-E-Mail-Nachricht dar.  <br/> |
 |[RemoveItem](removeitem.md) <br/> |Entfernt ein Element aus dem Exchange-Informationsspeicher.  <br/> |
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
-|[PostItem](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Informationsspeicher dar. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[PostItem](postitem.md) <br/> |Stellt ein Beitragselement im Exchange Informationsspeicher dar. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt die Zeit dar, zu der der letzte Benutzer das Element geändert hat.
+Der Textwert stellt den Zeitpunkt dar, zu dem der letzte Benutzer das Element geändert hat.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

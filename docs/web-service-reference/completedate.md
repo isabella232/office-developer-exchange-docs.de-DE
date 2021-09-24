@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CompleteDate
 api_type:
 - schema
 ms.assetid: b2b53b87-6a0b-4a55-bcfc-3bf67d3c1700
-description: Das Completed-Element stellt das Datum dar, an dem ein Element abgeschlossen wurde.
-ms.openlocfilehash: fff3d5d3105bf63c9cdd34cbcf828d57ca287b86
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das CompleteDate-Element stellt das Datum dar, an dem ein Element abgeschlossen wurde.
+ms.openlocfilehash: 07f6034b4fd91d22ad07167d931bcd02a74782f9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461422"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518778"
 ---
 # <a name="completedate"></a>CompleteDate
 
-Das **Completed** -Element stellt das Datum dar, an dem ein Element abgeschlossen wurde. 
+Das **CompleteDate-Element** stellt das Datum dar, an dem ein Element abgeschlossen wurde. 
   
 ```xml
 <CompleteDate/>
@@ -49,11 +49,11 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der das Datum und die Uhrzeit darstellt, ist erforderlich, wenn dieses Element verwendet wird.
+Ein Textwert, der Datum und Uhrzeit darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Festlegen von " **abgeschlossen** " hat denselben Effekt wie das Festlegen von [PercentComplete](percentcomplete.md) auf "100" oder " [Status](status.md) to **Completed**". In einer Anforderung, die mindestens zwei dieser Eigenschaften festlegt, bestimmt die zuletzt verarbeitete Eigenschaft den Wert, der für diese Elemente festgelegt ist. Wenn beispielsweise [PercentComplete](percentcomplete.md) 100 ist, das **Completed** -Objekt vom 1. Januar 2007 und [Status](status.md) der Status **notstartedfestgelegt**ist und die Eigenschaften in dieser Reihenfolge gestreamt werden, wird der [Status](status.md) des Vorgangs auf **notstartedfestgelegt** [, das](completedate.md) Endergebnis auf **null**und [PercentComplete](percentcomplete.md) auf 0 festgelegt. 
+Das Festlegen von **CompleteDate** hat den gleichen Effekt wie das Festlegen von [PercentComplete](percentcomplete.md) auf 100 oder [Status](status.md) auf **Abgeschlossen**. In einer Anforderung, die mindestens zwei dieser Eigenschaften festlegt, bestimmt die zuletzt verarbeitete Eigenschaft den Wert, der für diese Elemente festgelegt wird. Wenn ["PercentComplete"](percentcomplete.md) beispielsweise "100", **"CompleteDate"** der 1. Januar 2007 und ["Status"](status.md) **"NotStarted"** ist und die Eigenschaften in dieser Reihenfolge gestreamt werden, wird der [Status](status.md) der Aufgabe auf **"NotStarted",** ["CompleteDate"](completedate.md) auf **"null"** und ["PercentComplete"](percentcomplete.md) auf "0" festgelegt. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

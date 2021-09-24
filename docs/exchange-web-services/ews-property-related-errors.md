@@ -3,15 +3,15 @@ title: EWS-Eigenschaft-bezogene Fehler
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1c4c5969-7bdd-4021-be0e-cae99e86cf2c
 description: Hier finden Sie Informationen zur Behandlung von Fehlern in der Anwendung EWS-Eigenschaft im Zusammenhang.
-ms.openlocfilehash: 5863ab4e06bd968aa38b6fdec471e09c5e23f54a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 019a13116ae9a08c19381b78e1fd38c26f50c0d1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455408"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512268"
 ---
 # <a name="ews-property-related-errors"></a>EWS-Eigenschaft-bezogene Fehler
 
@@ -55,7 +55,7 @@ Die meisten EWS-Clientanwendungen werden Eigenschaften verwenden, d. h., dass Si
 
 - [Eigenschaften und erweiterte Eigenschaften in EWS in Exchange](properties-and-extended-properties-in-ews-in-exchange.md)
     
-- [Verwenden von Webdiensten in Exchange](start-using-web-services-in-exchange.md)
+- [Erste Schritte mit Webdiensten in Exchange](start-using-web-services-in-exchange.md)
     
 - [Entwickeln von Webdienstclients für Exchange](develop-web-service-clients-for-exchange.md)
     

@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 48c3f7b5-2ee0-42ce-97a1-a881e2f60327
 description: Das DomainSettingError-Element stellt einen Fehler dar, der beim Abrufen einer Domäneneinstellung aufgetreten ist. Dies stellt einen Fehler aus einer GetDomainSettings-Anforderung dar.
-ms.openlocfilehash: 189a614e7629033c8db2f60b8fd3679835a696ed
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d2d7e1fc1509ade88de0013cb9e4ff54712d0f56
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530712"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59530147"
 ---
 # <a name="domainsettingerror-soap"></a>DomainSettingError (SOAP)
 
-Das **DomainSettingError** -Element stellt einen Fehler dar, der beim Abrufen einer Domäneneinstellung aufgetreten ist. Dies stellt einen Fehler aus einer **GetDomainSettings** -Anforderung dar. 
+Das **DomainSettingError-Element** stellt einen Fehler dar, der beim Abrufen einer Domäneneinstellung aufgetreten ist. Dies stellt einen Fehler aus einer **GetDomainSettings-Anforderung** dar. 
   
 ```XML
 <DomainSettingError>
@@ -41,8 +41,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |Gibt den Fehlercode an, der der spezifischen Anforderung zugeordnet ist.  <br/> |
-|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |Enthält die Fehlermeldung, die der spezifischen Anforderung zugeordnet ist.  <br/> |
+|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |Identifiziert den Fehlercode, der der bestimmten Anforderung zugeordnet ist.  <br/> |
+|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |Enthält die Fehlermeldung, die der jeweiligen Anforderung zugeordnet ist.  <br/> |
 |[SettingName (SOAP)](settingname-soap.md) <br/> |Stellt den Namen der Einstellung dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
@@ -60,8 +60,8 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

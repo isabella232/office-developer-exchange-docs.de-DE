@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsComplete
 api_type:
 - schema
 ms.assetid: 5331f0a8-51b2-46e1-a07b-a2358f2d5ab0
 description: Das IsComplete-Element gibt an, ob die Aufgabe abgeschlossen wurde.
-ms.openlocfilehash: cad2bd1972c71e4cc63991567fb5db7e91529cb4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 04584d09b74dfb00203de7873f8416b8c384067c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465534"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541021"
 ---
 # <a name="iscomplete"></a>IsComplete
 
-Das **IsComplete** -Element gibt an, ob die Aufgabe abgeschlossen wurde. 
+Das **IsComplete-Element** gibt an, ob die Aufgabe abgeschlossen wurde. 
   
 ```xml
 <IsComplete/>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist ein boolescher Wert, der angibt, ob die Aufgabe abgeschlossen wurde.
+Der Textwert ist ein boolescher Wert, der angibt, ob der Vorgang abgeschlossen wurde.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

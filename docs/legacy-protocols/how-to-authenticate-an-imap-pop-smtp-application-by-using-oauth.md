@@ -4,12 +4,12 @@ description: Erfahren Sie, wie Sie die OAuth-Authentifizierung mit Ihren IMAP-, 
 author: svpsiva
 ms.date: 07/08/2021
 ms.audience: Developer
-ms.openlocfilehash: 4a307a6e329d5320b2b304d17a78a61db6d111bd
-ms.sourcegitcommit: 357b882a02e37b380a23b8a45b15f9c006a40b02
+ms.openlocfilehash: cfc9de18a53ce4cfdd8535f26fe3b04aab9cde55
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58764588"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59531323"
 ---
 # <a name="authenticate-an-imap-pop-or-smtp-connection-using-oauth"></a>Authentifizieren einer IMAP-, POP- oder SMTP-Verbindung mithilfe von OAuth
 
@@ -17,7 +17,7 @@ Erfahren Sie, wie Sie die OAuth-Authentifizierung verwenden, um eine Verbindung 
 
 > OAuth2-Unterstützung für IMAP-, POP- und SMTP-Protokolle wie unten beschrieben wird sowohl für Microsoft 365 (einschließlich Office im Web) als auch für Outlook.com-Benutzer unterstützt.
 
-Wenn Sie nicht mit dem OAuth 2.0-Protokoll vertraut sind, lesen Sie zunächst das [OAuth 2.0-Protokoll auf Microsoft Identity Platform Übersicht.](/azure/active-directory/develop/active-directory-v2-protocols) Weitere Informationen zu Microsoft Authentication Libariers (MSAL), die das OAuth 2.0-Protokoll implementieren, um Benutzer zu authentifizieren und auf sichere APIs zuzugreifen, finden Sie in der [MSAL-Übersicht.](/azure/active-directory/develop/msal-overview)
+Wenn Sie mit dem OAuth 2.0-Protokoll nicht vertraut sind, lesen Sie zunächst das [OAuth 2.0-Protokoll auf Microsoft Identity Platform Übersicht.](/azure/active-directory/develop/active-directory-v2-protocols) Weitere Informationen zu den Microsoft Authentication Libraries (MSAL), die das OAuth 2.0-Protokoll implementieren, um Benutzer zu authentifizieren und auf sichere APIs zuzugreifen, finden Sie in der [MSAL-Übersicht.](/azure/active-directory/develop/msal-overview)
 
 Sie können den von Azure Active Directory bereitgestellten OAuth-Authentifizierungsdienst verwenden, damit Ihre Anwendung eine Verbindung mit IMAP-, POP- oder SMTP-Protokollen herstellen kann, um auf Exchange Online in Office 365 zuzugreifen. Um OAuth mit Ihrer Anwendung zu verwenden, müssen Sie Folgendes ausführen:
 
@@ -41,7 +41,7 @@ Alternativ können Sie einen geeigneten Fluss aus der folgenden Liste auswählen
 1. [OAuth2-Autorisierungscodefluss](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
 1. [OAuth2-Geräte-Autorisierungsgenehmigungsfluss](/azure/active-directory/develop/v2-oauth2-device-code)
 
-Der OAuth-Zugriff auf IMAP-, POP- und SMTP-AUTH-Protokolle über den Fluss zur Gewährung von OAuth2-Clientanmeldeinformationen wird nicht unterstützt. Wenn Ihre Anwendung beständigen Zugriff auf alle Postfächer in einer Microsoft 365 Organisation benötigt, wird empfohlen, dass Sie die Microsoft Graph-APIs verwenden, die den Zugriff ohne Benutzer zulassen, granulare Berechtigungen aktivieren und Administratoren den Zugriff auf einen bestimmten Satz von Postfächern gestatten.
+Der OAuth-Zugriff auf IMAP-, POP- und SMTP-AUTH-Protokolle über den Fluss zur Gewährung von OAuth2-Clientanmeldeinformationen wird nicht unterstützt. Wenn Ihre Anwendung beständigen Zugriff auf alle Postfächer in einer Microsoft 365 Organisation benötigt, wird empfohlen, dass Sie die Microsoft Graph-APIs verwenden, die den Zugriff ohne Benutzer ermöglichen, granulare Berechtigungen aktivieren und Administratoren den Zugriff auf einen bestimmten Satz von Postfächern gestatten.
 
 Achten Sie darauf, die vollständigen Bereiche, einschließlich Outlook Ressourcen-URLs, anzugeben, wenn Sie Ihre Anwendung autorisieren und ein Zugriffstoken anfordern.
 

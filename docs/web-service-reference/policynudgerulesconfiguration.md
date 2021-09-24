@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e6f7c824-1284-4a65-a459-9fc22b66e30a
 description: Das PolicyNudgeRulesConfiguration-Element enthält die Konfigurationsdaten zur Verhinderung von Datenverlust.
-ms.openlocfilehash: dd801fe140dee66d153e388781f97254d1a2f2ef
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: ad0bee85bb9b03a3584baa39a2436c8ad68b7e4d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459609"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527931"
 ---
 # <a name="policynudgerulesconfiguration"></a>PolicyNudgeRulesConfiguration
 
-Das **PolicyNudgeRulesConfiguration** -Element enthält die Konfigurationsdaten zur Verhinderung von Datenverlust. 
+Das **PolicyNudgeRulesConfiguration-Element** enthält die Konfigurationsdaten zur Verhinderung von Datenverlust. 
   
 ```XML
 <PolicyNudgeRulesConfiguration></PolicyNudgeRulesConfiguration>
@@ -40,9 +40,9 @@ Keine.
 
 [ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Inhalt des **PolicyNudgeRulesConfiguration** -Elements ist nicht das Exchange Webdienste-Schema definiert. 
+Der Inhalt des **PolicyNudgeRulesConfiguration-Elements** ist nicht das Exchange Webdienstschema definiert. 
   
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -54,7 +54,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

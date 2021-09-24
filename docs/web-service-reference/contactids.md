@@ -1,23 +1,23 @@
 ---
-title: Die
+title: ContactIds
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c444f818-412b-41ac-9523-50246e50eae0
-description: Das Contacts-Element enthält ein Array von Kontaktelement-IDs.
-ms.openlocfilehash: 5c3b5621808a6931760433148e0cfe3239cd75f1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ContactIds-Element enthält ein Array von Kontaktelement-IDs.
+ms.openlocfilehash: 05c26af6dc1a5b826025e4145116d3df5eee8d62
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460190"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529217"
 ---
-# <a name="contactids"></a>Die
+# <a name="contactids"></a>ContactIds
 
-Das Contacts-Element enthält ein Array von **Kontaktelement-** IDs. 
+Das **ContactIds-Element** enthält ein Array von Kontaktelement-IDs. 
   
 ```XML
 <ContactIds>
@@ -39,13 +39,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[ItemID](itemid.md)  |  [OccurrenceItemId](occurrenceitemid.md)  |  [RecurringMasterItemId](recurringmasteritemid.md)  |  [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
+[ItemId](itemid.md)  |  [OccurrenceItemId](occurrenceitemid.md)  |  [RecurringMasterItemId](recurringmasteritemid.md)  |  [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [GetImItems](getimitems.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -57,7 +57,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

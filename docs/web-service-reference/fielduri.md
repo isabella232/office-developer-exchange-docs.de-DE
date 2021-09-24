@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FieldURI
 api_type:
 - schema
 ms.assetid: 24af8e3b-3074-4c8c-8d0a-52446508d044
 description: Das FieldURI-Element identifiziert Eigenschaften, auf die häufig vom URI verwiesen wird.
-ms.openlocfilehash: 6b84e6ef0a5e33217677b7c92e0ef6dc32d68ac4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 9e343941e77a271d817ef193b74dec9104646f71
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461233"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59530627"
 ---
 # <a name="fielduri"></a>FieldURI
 
@@ -414,7 +414,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element ist Teil der [Pfad](path.md)-Ersetzungsgruppe. 
   

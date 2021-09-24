@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ChangeCount
 api_type:
 - schema
 ms.assetid: 5fb048ca-08c2-4f85-a5f6-46a0d11f1818
-description: Das ChangeCount-Element gibt die Version des Vorgangs an.
-ms.openlocfilehash: faf653fb0c594cbb79f52e1abdac50e542dcb92a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ChangeCount-Element gibt die Version der Aufgabe an.
+ms.openlocfilehash: 78ad1a9ec54155176e0d93f02c539d97b2658b0a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463321"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512197"
 ---
 # <a name="changecount"></a>ChangeCount
 
-Das **ChangeCount** -Element gibt die Version des Vorgangs an. 
+Das **ChangeCount-Element** gibt die Version der Aufgabe an. 
   
 ```xml
 <ChangeCount/>
@@ -46,7 +46,7 @@ Keine.
 |:-----|:-----|
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

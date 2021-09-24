@@ -4,29 +4,29 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: c6666a42-a18f-4e4b-beb6-b25ff62cfcc5
-description: Der GetFederationInformation-Vorgang stellt Informationen zum Verbund Status der Organisation bereit, beispielsweise den Ziel-URI, der beim Anfordern von Token verwendet werden soll, die für diese Organisation vorgesehen sind, sowie die anderen Domänen, die von der Organisation ebenfalls verbunden sind.
-ms.openlocfilehash: 533b2f6d282e3287f4945df56b169f5bc93ff445
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetFederationInformation-Vorgang stellt Informationen über den Verbundstatus der Organisation bereit, z. B. den Ziel-URI, der beim Anfordern von Token verwendet werden soll, die für diese Organisation bestimmt sind, und die anderen Domänen, die die Organisation ebenfalls verbunden hat.
+ms.openlocfilehash: 915498440e4bc3d7262ed3a55350f7d3723d47d8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455625"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529954"
 ---
 # <a name="getfederationinformation-operation-soap"></a>GetFederationInformation-Vorgang (SOAP)
 
-Der **GetFederationInformation** -Vorgang stellt Informationen zum Verbund Status der Organisation bereit, beispielsweise den Ziel-URI, der beim Anfordern von Token verwendet werden soll, die für diese Organisation vorgesehen sind, sowie die anderen Domänen, die von der Organisation ebenfalls verbunden sind. 
+Der **GetFederationInformation-Vorgang** stellt Informationen über den Verbundstatus der Organisation bereit, z. B. den Ziel-URI, der beim Anfordern von Token verwendet werden soll, die für diese Organisation bestimmt sind, und die anderen Domänen, die die Organisation ebenfalls verbunden hat. 
   
 Nur Verbundorganisationen können Kalender, Kontakte und Nachrichten für externe Benutzer freigeben.
   
-## <a name="getfederationinformation-request-example"></a>GetFederationInformation-Anforderungs Beispiel
+## <a name="getfederationinformation-request-example"></a>GetFederationInformation-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **GetFederationInformation** -Anforderung wird eine Anforderung für die Partnerverbund Informationen eines Benutzers angezeigt. Der Client sendet diese Anforderung an den Server. 
+Das folgende Beispiel einer **GetFederationInformation-Anforderung** zeigt eine Anforderung für die Verbundinformationen eines Benutzers. Der Client sendet diese Anforderung an den Server. 
   
 ### <a name="code"></a>Code
 
@@ -66,7 +66,7 @@ In der Anforderung werden folgende Elemente verwendet:
   
 - [GetFederationInformationRequestMessage (SOAP)](getfederationinformationrequestmessage-soap.md)
     
-- [Request (SOAP)](request-soap.md)
+- [Anforderung (SOAP)](request-soap.md)
     
 - [Domäne (SOAP)](domain-soap.md)
     
@@ -74,7 +74,7 @@ In der Anforderung werden folgende Elemente verwendet:
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetFederationInformation** -Anforderung, die der Server an den Client sendet. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetFederationInformation-Anforderung,** die der Server an den Client sendet. 
   
 ### <a name="code"></a>Code
 
@@ -105,7 +105,7 @@ xmlns:a="http://www.w3.org/2005/08/addressing">
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a>Response-Elemente
+### <a name="response-elements"></a>Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   

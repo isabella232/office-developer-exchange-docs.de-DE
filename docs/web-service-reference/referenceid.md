@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6ec106a5-82f7-4b28-a951-11936877e303
-description: Das Reference-ID-Element gibt den Referenzbezeichner für das Postfach an.
-ms.openlocfilehash: 98dd9fabf645ea01646ec46ca12cb73b400d8c46
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ReferenceId-Element gibt den Verweisbezeichner für das Postfach an.
+ms.openlocfilehash: 1550d2af105e4080bdb560f85a06ab3655cbf097
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468075"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529349"
 ---
 # <a name="referenceid"></a>ReferenceId
 
-Das **Reference** -ID-Element gibt den Referenzbezeichner für das Postfach an. 
+Das **ReferenceId-Element** gibt den Verweisbezeichner für das Postfach an. 
   
 ```XML
 <ReferenceId></ReferenceId>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Reference** -ID-Elements ist der Referenzbezeichner eines Postfachs. 
+Der Textwert des **ReferenceId-Elements** ist der Verweisbezeichner eines Postfachs. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

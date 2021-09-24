@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 10d0739c-2591-4768-935c-b131b26e974d
 description: Das SetClientExtension-Element enthält eine Anforderung zum Festlegen einer Clienterweiterung.
-ms.openlocfilehash: a856cd6b7063f7399e584b9932fcaf7fdc53094e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 9aa510e8e014f9e2b7bed941fef8cadf7f7fcea9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466164"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510861"
 ---
 # <a name="setclientextension"></a>SetClientExtension
 
-Das **SetClientExtension** -Element enthält eine Anforderung zum Festlegen einer Clienterweiterung. 
+Das **SetClientExtension-Element** enthält eine Anforderung zum Festlegen einer Clienterweiterung. 
   
 ```XML
 <SetClientExtension>
@@ -36,13 +36,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[Actions (ArrayOfSetClientExtensionActionsType)](actions-arrayofsetclientextensionactionstype.md)
+[Aktionen (ArrayOfSetClientExtensionActionsType)](actions-arrayofsetclientextensionactionstype.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -54,7 +54,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

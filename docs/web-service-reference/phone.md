@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9381d8e0-b705-49fd-a822-00fb485bdbab
-description: Das Phone-Element gibt eine einzelne Telefonnummer an, die aus einer Extraktion von Kontaktentitäten resultiert.
-ms.openlocfilehash: 7b0047eda90f2e2bb94fd7d0b8d317715ac5d2c9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Telefon-Element gibt eine einzelne Telefonnummer an, die aus einer Extraktion einer Kontaktentität resultiert.
+ms.openlocfilehash: fa9e0be88c2142b30304c3c5b758624fa73da7d1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459707"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528360"
 ---
 # <a name="phone"></a>Telefon
 
-Das **Phone** -Element gibt eine einzelne Telefonnummer an, die aus einer Extraktion von Kontaktentitäten resultiert. 
+Das **Telefon-Element** gibt eine einzelne Telefonnummer an, die aus einer Extraktion einer Kontaktentität resultiert. 
   
 ```XML
 <Phone>
@@ -38,13 +38,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[OriginalPhoneString](originalphonestring.md)  |  [Telefonnummer](phonestring.md)  |  [Typ (Zeichenfolge)](type-string.md)
+[OriginalPhoneString](originalphonestring.md)  |  [PhoneString](phonestring.md)  |  [Typ (Zeichenfolge)](type-string.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [PhoneNumbers (ArrayOfPhonesType)](phonenumbers-arrayofphonestype.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

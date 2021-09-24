@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ResponseMessages
 api_type:
 - schema
 ms.assetid: 00878187-fac2-45b9-ba1c-df7ffac71089
-description: Das ResponseMessages-Element stellt eine Liste von Antwortnachrichten für e-Mail-Tipps dar.
-ms.openlocfilehash: 2db58029ead9332b832006bc81d751d77df54b07
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ResponseMessages-Element stellt eine Liste der Antwortnachrichten für E-Mail-Tipps dar.
+ms.openlocfilehash: fda62e93c8cc0c6eee6f97e360695eb9a690ba3c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465450"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518974"
 ---
 # <a name="responsemessages-arrayofmailtipsresponsemessagetype"></a>ResponseMessages (ArrayOfMailTipsResponseMessageType)
 
-Das **ResponseMessages** -Element stellt eine Liste von Antwortnachrichten für e-Mail-Tipps dar. 
+Das **ResponseMessages-Element** stellt eine Liste der Antwortnachrichten für E-Mail-Tipps dar. 
   
 ```XML
 <ResponseMessages>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MailTipsResponseMessageType](mailtipsresponsemessagetype.md) <br/> |Stellt Einstellungen für e-Mail-Tipps dar.  <br/> |
+|[MailTipsResponseMessageType](mailtipsresponsemessagetype.md) <br/> |Stellt Einstellungen für E-Mail-Tipps dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -54,7 +54,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -64,7 +64,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

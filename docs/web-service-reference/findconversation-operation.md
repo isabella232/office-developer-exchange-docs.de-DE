@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FindConversation
 api_type:
 - schema
 ms.assetid: 2384908a-c203-45b6-98aa-efd6a4c23aac
-description: Der FindConversation-Vorgang listet eine Liste von Unterhaltungen in einem Ordner auf.
-ms.openlocfilehash: ef768807431ff3e02c6af7277c1c2a750607ed92
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der FindConversation-Vorgang zählt eine Liste der Unterhaltungen in einem Ordner auf.
+ms.openlocfilehash: e3fed534127a976897e33bd266188d01aff6354c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462654"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59530528"
 ---
 # <a name="findconversation-operation"></a>FindConversation-Vorgang
 
-Der **FindConversation** -Vorgang listet eine Liste von Unterhaltungen in einem Ordner auf. 
+Der **FindConversation-Vorgang** zählt eine Liste der Unterhaltungen in einem Ordner auf. 
   
-## <a name="findconversation-request-example"></a>FindConversation-Anforderungs Beispiel
+## <a name="findconversation-request-example"></a>FindConversation-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **FindConversation** -Anforderung wird gezeigt, wie Sie eine Anforderung zum Auffinden der ersten Unterhaltung im Ordner Posteingangs Formular erstellen. 
+Das folgende Beispiel einer **FindConversation-Anforderung** zeigt, wie Sie eine Anforderung zum Suchen der ersten Unterhaltung im Ordner Posteingang erstellen. 
   
 ### <a name="code"></a>Code
 
@@ -66,11 +66,11 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-## <a name="successful-findconversation-response-example"></a>Erfolgreiches FindConversation-Antwortbeispiel
+## <a name="successful-findconversation-response-example"></a>Beispiel für erfolgreiche FindConversation-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **FindConversation** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **FindConversation-Anforderung.** 
   
 ### <a name="code"></a>Code
 
@@ -148,7 +148,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **FindConversatio
 
 ### <a name="comment"></a>Kommentar
 
-Die Bezeichner für Element und Unterhaltung im Beispiel wurden verkürzt, um die Lesbarkeit zu erhalten.
+Die Element- und Unterhaltungsbezeichner im Beispiel wurden gekürzt, um die Lesbarkeit zu gewährleisten.
   
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
@@ -192,7 +192,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Größe](size.md)
     
-- [Globals](globalsize.md)
+- [GlobalSize](globalsize.md)
     
 - [ItemClasses (ArrayOfItemClassType)](itemclasses-arrayofitemclasstype.md)
     
@@ -210,11 +210,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [GlobalItemIds](globalitemids.md)
     
-## <a name="findconversation-error-response-example"></a>FindConversation-Fehlerantwort Beispiel
+## <a name="findconversation-error-response-example"></a>Beispiel für FindConversation-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf die **FindConversation** -Anforderung, die durch einen Schemaüberprüfungsfehler verursacht wurde. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf die **FindConversation-Anforderung,** die durch einen Schemaüberprüfungsfehler verursacht wurde. 
   
 ### <a name="code"></a>Code
 
@@ -243,7 +243,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort auf die **FindConversation** -Anf
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   
-- FaultCode
+- Faultcode
     
 - faultstring
     
@@ -251,11 +251,11 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- Meldung
+- Nachricht
     
-- [Messagexml verwendet](messagexml.md)
+- [MessageXml](messagexml.md)
     
-- LineNumber
+- Linenumber
     
 - LinePosition
     

@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CopyItem
 api_type:
 - schema
 ms.assetid: bcc68f9e-d511-4c29-bba6-ed535524624a
-description: Der CopyItem-Vorgang kopiert Elemente und fügt die Elemente in einen anderen Ordner ein.
-ms.openlocfilehash: ec07700a5ebbdc8774aa2134919634b8dfd02406
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der CopyItem-Vorgang kopiert Elemente und platziert die Elemente in einem anderen Ordner.
+ms.openlocfilehash: 62785d9acb784bcffe7d3279de8a80abc803adf4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462178"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518645"
 ---
 # <a name="copyitem-operation"></a>CopyItem-Vorgang
 
-Der **CopyItem** -Vorgang kopiert Elemente und fügt die Elemente in einen anderen Ordner ein. 
+Der **CopyItem-Vorgang** kopiert Elemente und platziert die Elemente in einem anderen Ordner. 
   
-## <a name="copyitem-request-example"></a>CopyItem-Anforderungs Beispiel
+## <a name="copyitem-request-example"></a>CopyItem-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **CopyItem** -Anforderung wird gezeigt, wie eine Anforderung zum Kopieren eines Elements in den Posteingang bildet. 
+Das folgende Beispiel einer **CopyItem-Anforderung** zeigt, wie Sie eine Anforderung zum Kopieren eines Elements in den Posteingang erstellen. 
   
 ### <a name="code"></a>Code
 
@@ -51,7 +51,7 @@ Im folgenden Beispiel einer **CopyItem** -Anforderung wird gezeigt, wie eine Anf
 ### <a name="comments"></a>Comments
 
 > [!NOTE]
-> Die Ordner-ID und der Change-Schlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Die Ordner-ID und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -59,7 +59,7 @@ In der Anforderung werden folgende Elemente verwendet:
   
 - [CopyItem](copyitem.md)
     
-- [Tofolder-Datei](tofolderid.md)
+- [ToFolderId](tofolderid.md)
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
@@ -68,17 +68,17 @@ In der Anforderung werden folgende Elemente verwendet:
 - [ItemId](itemid.md)
     
 > [!NOTE]
-> Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist. 
+> Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist. 
   
-Um andere Optionen für die Anforderungsnachricht des **CopyItem** -Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [CopyItem](copyitem.md) -Element. 
+Weitere Optionen für die Anforderungsnachricht des **CopyItem-Vorgangs** finden Sie in der Schemahierarchie. Beginnen Sie mit dem [CopyItem-Element.](copyitem.md) 
   
 ## <a name="successful-copyitem-response"></a>Erfolgreiche CopyItem-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **CopyItem** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **CopyItem-Anforderung.** 
   
-Die Element-ID des neuen Elements wird in der Antwortnachricht zurückgegeben. Element-IDs werden nicht in den Antworten für Postfächer-oder Postfach- **CopyItem** -Vorgänge im öffentlichen Ordner zurückgegeben. 
+Der Elementbezeichner des neuen Elements wird in der Antwortnachricht zurückgegeben. Elementbezeichner werden in Antworten für postfachübergreifende oder postfachübergreifende **CopyItem-Vorgänge** für öffentliche Ordner nicht zurückgegeben. 
   
 ### <a name="code"></a>Code
 
@@ -124,15 +124,15 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
-Um andere Optionen für die Antwortnachricht des **CopyItem** -Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [CopyItemResponse](copyitemresponse.md) -Element. 
+Weitere Optionen für die Antwortnachricht des **CopyItem-Vorgangs** finden Sie in der Schemahierarchie. Beginnen Sie mit dem [CopyItemResponse-Element.](copyitemresponse.md) 
   
 ## <a name="copyitem-error-response"></a>CopyItem-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **CopyItem** -Anforderung. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **CopyItem-Anforderung.** 
   
 ### <a name="code"></a>Code
 
@@ -180,9 +180,9 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
-Weitere Optionen für die Fehlerantwort Meldung des **CopyItem** -Vorgangs finden Sie unter Durchsuchen der Schemahierarchie. Beginnen Sie mit dem [CopyItemResponse](copyitemresponse.md) -Element. 
+Weitere Optionen für die Fehlermeldung des **CopyItem-Vorgangs** finden Sie in der Schemahierarchie. Beginnen Sie mit dem [CopyItemResponse-Element.](copyitemresponse.md) 
   
 ## <a name="see-also"></a>Siehe auch
 

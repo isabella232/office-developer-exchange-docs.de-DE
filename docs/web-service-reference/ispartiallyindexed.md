@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 542e7b90-eafe-4711-a9d7-71bbc30d9646
 description: Das IsPartiallyIndexed-Element gibt an, ob das Element teilweise indiziert ist.
-ms.openlocfilehash: 4bf0c3e5dd7b75a90ac087958fbceda334306af1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 3917f14bbdae13f4485edcbbcd595989c3cd907f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466486"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540986"
 ---
 # <a name="ispartiallyindexed"></a>IsPartiallyIndexed
 
-Das **IsPartiallyIndexed** -Element gibt an, ob das Element teilweise indiziert ist. 
+Das **IsPartiallyIndexed-Element** gibt an, ob das Element teilweise indiziert ist. 
   
 ```XML
 <IsPartiallyIndexed>true | false</IsPartiallyIndexed>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **IsPartiallyIndexed** -Element gibt an, dass das Postfachelement teilweise indiziert ist. Der Wert **false** gibt an, dass das Postfachelement nicht teilweise indiziert ist. 
+Der Textwert **"true"** für das **IsPartiallyIndexed-Element** gibt an, dass das Postfachelement teilweise indiziert ist. Der Wert **"false"** gibt an, dass das Postfachelement nicht teilweise indiziert ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -57,6 +57,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

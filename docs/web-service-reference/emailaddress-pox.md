@@ -1,28 +1,28 @@
 ---
-title: E-mailemail (POX)
+title: EMailAddress (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 0e9836a8-ccc9-4cc0-aa6a-9b299c5841d0
-description: Das Email Address-Element identifiziert die e-Mail-Adresse des Benutzers.
-ms.openlocfilehash: 207de9acd62782d651055d6f6dab12c8ebe6e807
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das EMailAddress-Element identifiziert die E-Mail-Adresse des Benutzers.
+ms.openlocfilehash: 4edd9a513b0d7147c995395d0c33d81467bab867
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463440"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59531021"
 ---
-# <a name="emailaddress-pox"></a>E-mailemail (POX)
+# <a name="emailaddress-pox"></a>EMailAddress (POX)
 
-Das **Email Address-Element identifiziert** die e-Mail-Adresse des Benutzers. 
+Das **EMailAddress-Element** identifiziert die E-Mail-Adresse des Benutzers. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md) 
 - [Anforderung (POX)](request-pox.md) 
-- [E-mailemail (POX)](emailaddress-pox.md)
+- [EMailAddress (POX)](emailaddress-pox.md)
   
 ```xml
 <EMailAddress/>
@@ -48,11 +48,11 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt die e-Mail-Adresse eines Benutzers dar.
+Der Textwert stellt die E-Mail-Adresse eines Benutzers dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das [LegacyDN (POX)-](legacydn-pox.md) Element stellt ein alternatives Element für eine Auto Ermittlungsanforderung bereit. 
+Das [LegacyDN (POX)-Element](legacydn-pox.md) stellt ein alternatives Element für eine AutoErmittlungsanforderung bereit. 
   
 ## <a name="see-also"></a>Siehe auch
 

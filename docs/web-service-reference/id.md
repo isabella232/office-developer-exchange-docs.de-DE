@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ID
 api_type:
 - schema
 ms.assetid: 8caf922f-56bd-466a-a68f-d6cb236f2eec
 description: Das ID-Element stellt die Eintrags-ID des Kalenderelements dar.
-ms.openlocfilehash: 429413bbfb0206effc3ea97eb11527449c67211c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 75916d2598429362e238e645d33c474308b92535
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456486"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529900"
 ---
 # <a name="id"></a>ID
 
-Das **ID-** Element stellt die Eintrags-ID des Kalenderelements dar. 
+Das **ID-Element** stellt die Eintrags-ID des Kalenderelements dar. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -60,13 +60,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CalendarEventDetails](calendareventdetails.md) <br/> |Enthält zusätzliche Informationen für ein Calendar-Ereignis.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
+|[CalendarEventDetails](calendareventdetails.md) <br/> |Stellt zusätzliche Informationen für ein Kalenderereignis bereit.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich, wenn dieses Element in der Antwort zurückgegeben wird. Dieses Element ist erforderlich, wenn das [CalendarEventDetails](calendareventdetails.md) -Element verwendet wird. 
+Wenn dieses Element in der Antwort zurückgegeben wird, ist ein Textwert erforderlich. Dieses Element ist erforderlich, wenn das [CalendarEventDetails-Element](calendareventdetails.md) verwendet wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -88,5 +88,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

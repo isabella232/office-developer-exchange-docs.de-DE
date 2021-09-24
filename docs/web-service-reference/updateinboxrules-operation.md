@@ -5,33 +5,33 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateInboxRules
 api_type:
 - schema
 ms.assetid: f982a237-471e-45c5-a2b5-468cfc53150b
-description: Der UpdateInboxRules-Vorgang aktualisiert die Posteingangsregeln des authentifizierten Benutzers durch Anwenden der angegebenen Vorgänge. UpdateInboxRules wird verwendet, um eine Posteingangsregel zu erstellen, um eine Posteingangsregel festzulegen oder um eine Posteingangsregel zu löschen.
-ms.openlocfilehash: a6ced4be25c6fe4649ad649ba01194791548bf67
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der UpdateInboxRules-Vorgang aktualisiert die Posteingangsregeln des authentifizierten Benutzers, indem die angegebenen Vorgänge angewendet werden. UpdateInboxRules wird verwendet, um eine Posteingangsregel zu erstellen, eine Posteingangsregel festzulegen oder eine Posteingangsregel zu löschen.
+ms.openlocfilehash: 08f46219bcb01f5f1c9d69cfaa8b4934e82ff5bd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44531000"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510715"
 ---
 # <a name="updateinboxrules-operation"></a>UpdateInboxRules-Vorgang
 
-Der UpdateInboxRules-Vorgang aktualisiert die Posteingangsregeln des authentifizierten Benutzers durch Anwenden der angegebenen Vorgänge. **UpdateInboxRules** wird verwendet, um eine Posteingangsregel zu erstellen, um eine Posteingangsregel festzulegen oder um eine Posteingangsregel zu löschen. 
+Der UpdateInboxRules-Vorgang aktualisiert die Posteingangsregeln des authentifizierten Benutzers, indem die angegebenen Vorgänge angewendet werden. **UpdateInboxRules** wird verwendet, um eine Posteingangsregel zu erstellen, eine Posteingangsregel festzulegen oder eine Posteingangsregel zu löschen. 
   
-Wenn Sie den **UpdateInboxRules** -Vorgang verwenden, löscht Exchange Webdienste clientseitige Sende Regeln. Clientseitige Sende Regeln werden auf dem Client in der FAI-Nachricht (Regel Ordner – zugeordnete Informationen) gespeichert und nirgendwo sonst. In EWS wird diese Regel "fai" standardmäßig gelöscht, basierend auf der Erwartung, dass Outlook Sie neu erstellt. Outlook kann jedoch keine Regeln neu erstellen, die nicht auch als erweiterte Regel vorhanden sind, und clientseitige Sende Regeln sind nicht als erweiterte Regeln vorhanden. Daher gehen diese Regeln verloren. Wir empfehlen, dies beim Entwerfen der Lösung zu berücksichtigen. 
+Wenn Sie den **UpdateInboxRules-Vorgang** verwenden, löscht Exchange Webdienste clientseitige Senderegeln. Clientseitige Senderegeln werden auf dem Client in der FaI-Nachricht (Rule Folder Associated Information) gespeichert und andernfalls. EWS löscht diese FAI-Regelnachricht standardmäßig, basierend auf der Erwartung, dass Outlook sie neu erstellen. Outlook können jedoch keine Regeln neu erstellen, die nicht auch als erweiterte Regel vorhanden sind, und clientseitige Senderegeln sind nicht als erweiterte Regeln vorhanden. Daher gehen diese Regeln verloren. Wir empfehlen Ihnen, dies beim Entwerfen Ihrer Lösung zu berücksichtigen. 
   
-## <a name="updateinboxrules-create-rule-request-example"></a>UpdateInboxRules (Create Rule)-Anforderungs Beispiel
+## <a name="updateinboxrules-create-rule-request-example"></a>UpdateInboxRules (Create Rule)-Anforderungsbeispiel
 
-Sie können Exchange Webdienste verwenden, um eine Posteingangsregel im Postfach eines Benutzers im Exchange-Informationsspeicher zu erstellen. Verwenden Sie das [UpdateInboxRules](updateinboxrules.md) -Element in Verbindung mit dem [CreateRuleOperation](createruleoperation.md) -Element, um eine Regel zu erstellen. 
+Sie können Exchange Webdienste verwenden, um eine Posteingangsregel im Postfach eines Benutzers im Exchange Speicher zu erstellen. Verwenden Sie das [UpdateInboxRules-Element](updateinboxrules.md) in Verbindung mit dem [CreateRuleOperation-Element,](createruleoperation.md) um eine Regel zu erstellen. 
   
 ### <a name="description"></a>Beschreibung
 
-Der Client erstellt den Anforderungs-XML-Code und sendet ihn an den Server.
+Der Client erstellt die Anforderungs-XML und sendet sie an den Server.
   
 ### <a name="code"></a>Code
 
@@ -75,11 +75,11 @@ Der Client erstellt den Anforderungs-XML-Code und sendet ihn an den Server.
 
 ### <a name="comments"></a>Comments
 
-In diesem Beispiel wird eine Regel erstellt, die eine e-Mail-Nachricht in den Ordner Junk-e-Mail verschiebt, wenn der e-Mail-Betreff eine Zeichenfolge enthält, die "interessant" entspricht.
+In diesem Beispiel wird eine Regel erstellt, mit der eine E-Mail-Nachricht in den Junk-E-Mail-Ordner verschoben wird, wenn der E-Mail-Betreff eine Zeichenfolge mit dem Wert "Interesting" enthält.
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
-Die **UpdateInboxRules** -Anforderung umfasst die folgenden Elemente: 
+Die **UpdateInboxRules-Anforderung** enthält die folgenden Elemente: 
   
 - [MailboxSmtpAddress](mailboxsmtpaddress.md)
     
@@ -87,13 +87,13 @@ Die **UpdateInboxRules** -Anforderung umfasst die folgenden Elemente:
     
 - [Operations](operations.md)
     
-Das [Operations](operations.md) -Element enthält das [CreateRuleOperation](createruleoperation.md) -Element, um eine Regel zu erstellen. 
+Das [Operations-Element](operations.md) enthält das [CreateRuleOperation-Element,](createruleoperation.md) um eine Regel zu erstellen. 
   
 ## <a name="updateinboxrules-create-rule-response-example"></a>UpdateInboxRules (Create Rule)-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Simple Object Access Protocol (SOAP) Body-Beispiel zeigt eine erfolgreiche Antwort auf die **UpdateInboxRules** -Anforderung, die eine Regel erstellt. 
+Der folgende SOAP-Text (Simple Object Access Protocol) zeigt eine erfolgreiche Antwort auf die **UpdateInboxRules-Anforderung,** die eine Regel erstellt. 
   
 ### <a name="code"></a>Code
 
@@ -133,13 +133,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-## <a name="updateinboxrules-set-rule-request-example"></a>UpdateInboxRules (Regel festlegen)-Anforderungs Beispiel
+## <a name="updateinboxrules-set-rule-request-example"></a>UpdateInboxRules (Set Rule)-Anforderungsbeispiel
 
-Sie können Exchange Webdienste verwenden, um eine Posteingangsregel im Postfach eines Benutzers im Exchange-Informationsspeicher zu ändern. Verwenden Sie das [UpdateInboxRules](updateinboxrules.md) -Element in Verbindung mit dem [SetRuleOperation](setruleoperation.md) -Element, um eine Regel zu ändern. 
+Sie können Exchange Webdienste verwenden, um eine Posteingangsregel im Postfach eines Benutzers im Exchange Speicher zu ändern. Verwenden Sie das [UpdateInboxRules-Element](updateinboxrules.md) in Verbindung mit dem [SetRuleOperation-Element,](setruleoperation.md) um eine Regel zu ändern. 
   
 ### <a name="description"></a>Beschreibung
 
-Der Client erstellt den Anforderungs-XML-Code und sendet ihn an den Server.
+Der Client erstellt die Anforderungs-XML und sendet sie an den Server.
   
 ### <a name="code"></a>Code
 
@@ -183,14 +183,14 @@ Der Client erstellt den Anforderungs-XML-Code und sendet ihn an den Server.
 
 ### <a name="comments"></a>Comments
 
-In diesem Beispiel wird der Anzeigename in "(geändert) this is Junk" geändert.
+In diesem Beispiel wird der Anzeigename in "(Geändert) Dies ist Junk" geändert.
   
 > [!NOTE]
-> Die Werte der Attribute **ID** und **ChangeKey** des [Folder](folderid.md) -Elements wurden zur Lesbarkeit gekürzt. 
+> Die Werte der Attribute **"Id"** und **"ChangeKey"** des ["FolderId"-Elements](folderid.md) wurden zur besseren Lesbarkeit gekürzt. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
-Die **UpdateInboxRules** -Anforderung umfasst die folgenden Elemente: 
+Die **UpdateInboxRules-Anforderung** enthält die folgenden Elemente: 
   
 - [MailboxSmtpAddress](mailboxsmtpaddress.md)
     
@@ -198,13 +198,13 @@ Die **UpdateInboxRules** -Anforderung umfasst die folgenden Elemente:
     
 - [Operations](operations.md)
     
-Das [Operations](operations.md) -Element enthält das [SetRuleOperation](setruleoperation.md) -Element, um eine Regel zu ändern. 
+Das [Operations-Element](operations.md) enthält das [SetRuleOperation-Element,](setruleoperation.md) um eine Regel zu ändern. 
   
-## <a name="updateinboxrules-set-rule-response-example"></a>UpdateInboxRules (Regel festlegen)-Antwortbeispiel
+## <a name="updateinboxrules-set-rule-response-example"></a>UpdateInboxRules (Set Rule)-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Simple Object Access Protocol (SOAP) Body-Beispiel zeigt eine erfolgreiche Antwort auf die **UpdateInboxRules** -Anforderung, die eine Regel ändert. 
+Der folgende SOAP-Text (Simple Object Access Protocol) zeigt eine erfolgreiche Antwort auf die **UpdateInboxRules-Anforderung,** die eine Regel ändert. 
   
 ### <a name="code"></a>Code
 
@@ -245,13 +245,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-## <a name="updateinboxrules-delete-rule-request-example"></a>UpdateInboxRules (Delete Rule)-Anforderungs Beispiel
+## <a name="updateinboxrules-delete-rule-request-example"></a>UpdateInboxRules (Delete Rule)-Anforderungsbeispiel
 
-Sie können Exchange Webdienste verwenden, um eine Posteingangsregel im Postfach eines Benutzers im Exchange-Informationsspeicher zu löschen. Verwenden Sie das [UpdateInboxRules](updateinboxrules.md) in Verbindung mit dem [DeleteRuleOperation](deleteruleoperation.md) -Element, um eine Regel zu löschen. 
+Sie können Exchange Webdienste verwenden, um eine Posteingangsregel im Postfach eines Benutzers im Exchange Zu löschen. Verwenden Sie [UpdateInboxRules](updateinboxrules.md) in Verbindung mit dem [DeleteRuleOperation-Element,](deleteruleoperation.md) um eine Regel zu löschen. 
   
 ### <a name="description"></a>Beschreibung
 
-Der Client erstellt den Anforderungs-XML-Code und sendet ihn an den Server.
+Der Client erstellt die Anforderungs-XML und sendet sie an den Server.
   
 ### <a name="code"></a>Code
 
@@ -280,11 +280,11 @@ Der Client erstellt den Anforderungs-XML-Code und sendet ihn an den Server.
 
 ### <a name="comments"></a>Comments
 
-In diesem Beispiel wird die vorhandene angegebene Regel gelöscht.
+In diesem Beispiel wird die vorhandene identifizierte Regel gelöscht.
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
-Die **UpdateInboxRules** -Anforderung umfasst die folgenden Elemente: 
+Die **UpdateInboxRules-Anforderung** enthält die folgenden Elemente: 
   
 - [MailboxSmtpAddress](mailboxsmtpaddress.md)
     
@@ -292,13 +292,13 @@ Die **UpdateInboxRules** -Anforderung umfasst die folgenden Elemente:
     
 - [Operations](operations.md)
     
-Das [Operations](operations.md) -Element enthält das [DeleteRuleOperation](deleteruleoperation.md) -Element, um eine Regel zu löschen. 
+Das [Operations-Element](operations.md) enthält das [DeleteRuleOperation-Element,](deleteruleoperation.md) um eine Regel zu löschen. 
   
 ## <a name="updateinboxrules-delete-rule-response-example"></a>UpdateInboxRules (Delete Rule)-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Simple Object Access Protocol (SOAP) Body-Beispiel zeigt eine erfolgreiche Antwort auf die **UpdateInboxRules** -Anforderung, die eine Regel löscht. 
+Der folgende SOAP-Textkörper (Simple Object Access Protocol) zeigt eine erfolgreiche Antwort auf die **UpdateInboxRules-Anforderung,** die eine Regel löscht. 
   
 ### <a name="code"></a>Code
 

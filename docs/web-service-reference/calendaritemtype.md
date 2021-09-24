@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CalendarItemType
 api_type:
 - schema
 ms.assetid: 1feb0788-adf7-4a7c-830c-005214ad930f
 description: Das CalendarItemType-Element stellt den Typ eines Kalenderelements dar.
-ms.openlocfilehash: 05e93b6db3ae574c03f6e43c5ebec2288edec3e5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fcb661bb219944e03479abc6bf1d579db58f29fb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527194"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526773"
 ---
 # <a name="calendaritemtype"></a>CalendarItemType
 
-Das **CalendarItemType** -Element stellt den Typ eines Kalenderelements dar. 
+Das **CalendarItemType-Element** stellt den Typ eines Kalenderelements dar. 
   
 ```xml
 <CalendarItemType/>
@@ -49,17 +49,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Wenn dieses Element verwendet wird, ist ein Textwert erforderlich. Im folgenden sind die möglichen Werte für dieses Element angegeben:
+Wenn dieses Element verwendet wird, ist ein Textwert erforderlich. Es folgen die möglichen Werte für dieses Element:
   
-- **Einzelperson** Das Element ist keinem wiederkehrenden Kalenderelement zugeordnet. 
+- **Single** Das Element ist keinem wiederkehrenden Kalenderelement zugeordnet. 
     
 - **Vorkommen** Das Element ist ein Vorkommen eines wiederkehrenden Kalenderelements. 
     
-- **Ausnahme** Das Element ist eine Ausnahme für ein wiederkehrendes Kalenderelement. 
+- **Ausnahme** Das Element ist eine Ausnahme zu einem Terminserien-Kalenderelement. 
     
-- **RecurringMaster** Das Element ist Master für eine Reihe Wiederkehr ender Kalenderelemente. 
+- **RecurringMaster** Das Element ist master für eine Reihe von Kalenderserienelementen. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

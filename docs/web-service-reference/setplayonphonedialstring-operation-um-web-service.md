@@ -1,32 +1,32 @@
 ---
-title: SetPlayOnPhoneDialString-Vorgang (um-Webdienst)
+title: SetPlayOnPhoneDialString-Vorgang (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetPlayOnPhoneDialString
 api_type:
 - schema
 ms.assetid: a68479f2-d900-4dd8-a5ce-dbea8247e841
-description: Mit dem SetPlayOnPhoneDialString-Vorgang wird die Wählzeichenfolge festgelegt, die als Standard für den PlayOnPhone-Vorgang (um-Webdienst) und den PlayOnPhoneGreeting-Vorgang (um-Webdienst) verwendet werden soll.
-ms.openlocfilehash: 7df806eedc2d6d037394f31ec4ccbfe28aaf3372
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der SetPlayOnPhoneDialString-Vorgang legt fest, dass die Wählzeichenfolge als Standard für den PlayOnPhone-Vorgang (UM-Webdienst) und den PlayOnPhoneGreeting-Vorgang (UM-Webdienst) verwendet wird.
+ms.openlocfilehash: 89f83d7b0a1d56cb0adeccbf4fa0bb67f1197253
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458642"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59531909"
 ---
-# <a name="setplayonphonedialstring-operation-um-web-service"></a>SetPlayOnPhoneDialString-Vorgang (um-Webdienst)
+# <a name="setplayonphonedialstring-operation-um-web-service"></a>SetPlayOnPhoneDialString-Vorgang (UM-Webdienst)
 
-Mit dem SetPlayOnPhoneDialString-Vorgang wird die Wählzeichenfolge festgelegt, die als Standard für den [PlayOnPhone-Vorgang (um-Webdienst)](playonphone-operation-um-web-service.md) und den [PlayOnPhoneGreeting-Vorgang (um-Webdienst)](playonphonegreeting-operation-um-web-service.md)verwendet werden soll.
+Der SetPlayOnPhoneDialString-Vorgang legt fest, dass die Wählzeichenfolge als Standard für den [PlayOnPhone-Vorgang (UM-Webdienst)](playonphone-operation-um-web-service.md) und den [PlayOnPhoneGreeting-Vorgang (UM-Webdienst)](playonphonegreeting-operation-um-web-service.md)verwendet wird.
   
-## <a name="setplayonphonedialstring-request-example"></a>SetPlayOnPhoneDialString-Anforderungs Beispiel
+## <a name="setplayonphonedialstring-request-example"></a>SetPlayOnPhoneDialString-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel einer SetPlayOnPhoneDialString-Anforderung zeigt, wie Sie eine Anforderung zum Festlegen der standardmäßigen Wählzeichenfolge für ein Postfach bilden.
+Das folgende Beispiel einer SetPlayOnPhoneDialString-Anforderung zeigt, wie Sie eine Anforderung zum Festlegen der Standardwählzeichenfolge für ein Postfach erstellen.
   
 ### <a name="code"></a>Code
 
@@ -41,11 +41,11 @@ Das folgende Beispiel einer SetPlayOnPhoneDialString-Anforderung zeigt, wie Sie 
 </soap:Envelope>
 ```
 
-## <a name="successful-setplayonphonedialstring-response-example"></a>Erfolgreiches SetPlayOnPhoneDialString-Antwortbeispiel
+## <a name="successful-setplayonphonedialstring-response-example"></a>Beispiel für erfolgreiche "SetPlayOnPhoneDialString"-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer SetPlayOnePhoneDialString-Antwort wird eine Antwort auf die SetPlayOnPhoneDialString-Anforderung angezeigt.
+Das folgende Beispiel einer SetPlayOnePhoneDialString-Antwort zeigt eine Antwort auf die SetPlayOnPhoneDialString-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -62,9 +62,9 @@ Im folgenden Beispiel einer SetPlayOnePhoneDialString-Antwort wird eine Antwort 
 
 
 
-[SetPlayOnPhoneDialString (um-Webdienst)](setplayonphonedialstring-um-web-service.md)
+[SetPlayOnPhoneDialString (UM-Webdienst)](setplayonphonedialstring-um-web-service.md)
   
-[SetPlayOnPhoneDialStringResponse (um-Webdienst)](setplayonphonedialstringresponse-um-web-service.md)
+[SetPlayOnPhoneDialStringResponse (UM-Webdienst)](setplayonphonedialstringresponse-um-web-service.md)
   
-[Wähl Dienst (um-Webdienst)](dialstring-um-web-service.md)
+[dialString (UM-Webdienst)](dialstring-um-web-service.md)
 

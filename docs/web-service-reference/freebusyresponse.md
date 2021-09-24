@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FreeBusyResponse
 api_type:
 - schema
 ms.assetid: 3038d106-9ac9-4ac7-bb43-96c783edbef5
 description: Das FreeBusyResponse-Element enthält die Frei/Gebucht-Informationen für einen einzelnen Postfachbenutzer.
-ms.openlocfilehash: 45a3e12756f3cbf29b76b442f7103abc5fb9a833
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7be7eb7a5ae72be8c9da916fb861d9cce686bc34
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461926"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511583"
 ---
 # <a name="freebusyresponse"></a>FreeBusyResponse
 
-Das **FreeBusyResponse** -Element enthält die Frei/Gebucht-Informationen für einen einzelnen Postfachbenutzer. 
+Das **FreeBusyResponse-Element** enthält die Frei/Gebucht-Informationen für einen einzelnen Postfachbenutzer. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -58,7 +58,7 @@ Keine.
 |:-----|:-----|
 |[FreeBusyResponseArray](freebusyresponsearray.md) <br/> |Enthält die Verfügbarkeitsinformationen der angeforderten Benutzer und den Antwortstatus.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element ist nicht in einer GetUserAvailability-Antwort enthalten, wenn keine Frei/Gebucht-Informationen angefordert werden.
   
@@ -70,7 +70,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -82,5 +82,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

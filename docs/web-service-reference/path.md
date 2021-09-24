@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Path
 api_type:
 - schema
 ms.assetid: 5829149e-7bfe-4820-bcc6-910e9264acc9
-description: Das Path-Element ist der Basis Schematyp für alle Eigenschaftenbezeichner. Dieser Typ ist abstrakt und wird nie direkt in Instanzen Dokumenten auftreten.
-ms.openlocfilehash: 5ba18084243e9720a76b9ac28023778c6d546bc4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Path-Element ist der Basisschematyp für alle Eigenschaftsbezeichner. Dieser Typ ist abstrakt und tritt niemals direkt in Instanzdokumenten auf.
+ms.openlocfilehash: 3d0f95e27c788a911ed11b0eb86444c5fc273fbc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529014"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519261"
 ---
 # <a name="path"></a>Pfad
 
-Das **path** -Element ist der Basis Schematyp für alle Eigenschaftenbezeichner. Dieser Typ ist abstrakt und wird nie direkt in Instanzen Dokumenten auftreten. 
+Das **Path-Element** ist der Basisschematyp für alle Eigenschaftsbezeichner. Dieser Typ ist abstrakt und tritt niemals direkt in Instanzdokumenten auf. 
   
 ```xml
 <Path/>
@@ -44,9 +44,9 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die folgenden Elemente werden verwendet, um das **path** -Element zu ersetzen: 
+Die folgenden Elemente werden verwendet, um das **Path-Element** zu ersetzen: 
   
 - [FieldURI](fielduri.md)
     

@@ -1,23 +1,23 @@
 ---
-title: Erkennungs-Nr
+title: RecognitionId
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 09fdaf4e-9930-4342-97be-286d9e0165db
-description: Das Recognition-Element ist nur für die interne Verwendung vorgesehen.
-ms.openlocfilehash: 2d3cd7a1af4b3d2184af75efe1299882a6e7bf33
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das RecognitionId-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: b2549bb46463d9926437ad7727860415ed257d01
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468474"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529377"
 ---
-# <a name="recognitionid"></a>Erkennungs-Nr
+# <a name="recognitionid"></a>RecognitionId
 
-Das **Recognition** -Element ist nur für die interne Verwendung vorgesehen. 
+Das **RecognitionId-Element** ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

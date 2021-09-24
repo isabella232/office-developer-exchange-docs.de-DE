@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 4c2bcdeb-95ce-4ffa-bd83-118af53b534f
 description: Das Response-Element enthält die Antwort auf einen GetUserSettings-Vorgang (SOAP), einen GetDomainSettings-Vorgang (SOAP) oder eine SOAP-Anforderung (GetFederationInformation-Vorgang).
-ms.openlocfilehash: 90cb29dd4ce4026211a5b592f149c8190dc81d29
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d42014991db8e93f88b80bed97970f043290cfb1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456416"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512359"
 ---
 # <a name="response-soap"></a>Antwort (SOAP)
 
-Das **Response** -Element enthält die Antwort auf einen [GetUserSettings-Vorgang (](getusersettings-operation-soap.md)SOAP), einen [GetDomainSettings-Vorgang (](getdomainsettings-operation-soap.md)SOAP) oder eine [SOAP-Anforderung (GetFederationInformation-Vorgang](getfederationinformation-operation-soap.md) ). 
+Das **Response-Element** enthält die Antwort auf einen [GetUserSettings-Vorgang (SOAP),](getusersettings-operation-soap.md) [einen GetDomainSettings-Vorgang (SOAP)](getdomainsettings-operation-soap.md)oder eine [SOAP-Anforderung (GetFederationInformation-Vorgang).](getfederationinformation-operation-soap.md) 
   
 ```XML
 <Response>
@@ -49,9 +49,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUserSettingsResponseMessage (SOAP)](getusersettingsresponsemessage-soap.md) <br/> |Definiert eine Antwort auf ein [GetUserSettingsRequest (SOAP)](getusersettingsrequest-soap.md) <br/> |
-|[GetDomainSettingsResponseMessage (SOAP)](getdomainsettingsresponsemessage-soap.md) <br/> |Definiert eine Antwort auf ein [GetDomainSettingsRequest (SOAP)](getdomainsettingsrequest-soap.md).  <br/> |
-|[GetFederationInformationResponseMessage (SOAP)](getfederationinformationresponsemessage-soap.md) <br/> |Definiert eine Antwort auf ein [GetFederationInformationRequest (SOAP)](getfederationinformationrequest-soap.md).  <br/> |
+|[GetUserSettingsResponseMessage (SOAP)](getusersettingsresponsemessage-soap.md) <br/> |Definiert eine Antwort auf eine [GetUserSettingsRequest (SOAP)](getusersettingsrequest-soap.md) <br/> |
+|[GetDomainSettingsResponseMessage (SOAP)](getdomainsettingsresponsemessage-soap.md) <br/> |Definiert eine Antwort auf eine [GetDomainSettingsRequest (SOAP)](getdomainsettingsrequest-soap.md).  <br/> |
+|[GetFederationInformationResponseMessage (SOAP)](getfederationinformationresponsemessage-soap.md) <br/> |Definiert eine Antwort auf eine [GetFederationInformationRequest (SOAP)](getfederationinformationrequest-soap.md).  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
@@ -62,8 +62,8 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -75,5 +75,5 @@ Keine.
 
 [AutoErmittlung Webdienstverweis für Exchange](autodiscover-web-service-reference-for-exchange.md)
   
-[XML-Elemente der SOAP-AutoErmittlung für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[SOAP AutoDiscover XML-Elemente für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

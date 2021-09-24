@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 3d2b9edc-8e57-44dc-b63b-75a2eb47c84e
-description: Das MinorBuildNumber-Element stellt eine kleine Buildnummer für den Server dar.
-ms.openlocfilehash: d5e4d80c448180baa18d2d90eb0440e12c2ed02b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MinorBuildNumber-Element stellt die Nebenbuildnummer für den Server dar.
+ms.openlocfilehash: f82716218e2df7b5c7539673a73e04e051870aac
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466990"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510939"
 ---
 # <a name="minorbuildnumber-soap"></a>MinorBuildNumber (SOAP)
 
-Das **MinorBuildNumber** -Element stellt eine kleine Buildnummer für den Server dar. 
+Das **MinorBuildNumber-Element** stellt die Nebenbuildnummer für den Server dar. 
   
 ```XML
 <MinorBuildNumber/>
@@ -45,15 +45,15 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein ganzzahliger Wert, der die Nebenversionsnummer des Servers darstellt, der die Anforderung verarbeitet hat.
+Ein ganzzahliger Wert, der die Nebenbuildnummer des Servers darstellt, der die Anforderung verarbeitet hat.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 

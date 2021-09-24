@@ -4,27 +4,27 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 7335b1c1-0b47-4452-a8cb-d19cddcfc281
-description: Das MajorBuildNumber-Element stellt die Haupt Buildnummer für den Server dar.
-ms.openlocfilehash: 60a8cbeb4b689da85bbb72c2d93759799b913f2f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MajorBuildNumber-Element stellt die Hauptbuildnummer für den Server dar.
+ms.openlocfilehash: da6431a1e97ab7d57e398eeffaa683e3cbb877d5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465884"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511103"
 ---
 # <a name="majorbuildnumber-soap"></a>MajorBuildNumber (SOAP)
 
-Das **MajorBuildNumber** -Element stellt die Haupt Buildnummer für den Server dar. 
+Das **MajorBuildNumber-Element** stellt die Hauptbuildnummer für den Server dar. 
   
 ```XML
 <MajorBuildNumber/>
 ```
 
- **xs: int**
+ **xs:int**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -45,15 +45,15 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des MajorBuildNumber-Elements ist eine ganze Zahl, die die Haupt Erstellungsnummer des Servers darstellt, der die Anforderung verarbeitet hat.
+Der Textwert des MajorBuildNumber-Elements ist eine ganze Zahl, die die Hauptbuildnummer des Servers darstellt, der die Anforderung verarbeitet hat.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

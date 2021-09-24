@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ReadItems
 api_type:
 - schema
 ms.assetid: 0a11a802-28e2-436b-b5a9-30fd064675a6
 description: Das ReadItems-Element gibt an, ob ein Benutzer über die Berechtigung zum Lesen von Elementen in einem Ordner verfügt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: af6ef5107b5e4f2b3071c0bc9b4b528efea6dcca
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0252846235b17879b06ea9976e4ac1b539b7fd8c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468271"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519079"
 ---
 # <a name="readitems-permissiontype"></a>ReadItems (PermissionType)
 
-Das **ReadItems** -Element gibt an, ob ein Benutzer über die Berechtigung zum Lesen von Elementen in einem Ordner verfügt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **ReadItems-Element** gibt an, ob ein Benutzer über die Berechtigung zum Lesen von Elementen in einem Ordner verfügt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <ReadItems>None or FullDetails</ReadItems>
@@ -48,16 +48,16 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-In der folgenden Tabelle sind die möglichen Werte für das **ReadItems** -Element aufgeführt. 
+In der folgenden Tabelle sind die möglichen Werte für das **ReadItems-Element** aufgeführt. 
   
-**ReadItems-Element Text Werte**
+**ReadItems-Elementtextwerte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |Keine  <br/> |Gibt an, dass der Benutzer nicht über die Berechtigung zum Lesen von Elementen im Ordner verfügt.  <br/> |
 |FullDetails  <br/> |Gibt an, dass der Benutzer über die Berechtigung zum Lesen aller Elemente im Ordner verfügt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

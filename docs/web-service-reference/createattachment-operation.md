@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateAttachment
 api_type:
 - schema
 ms.assetid: e066db95-6963-4507-a8d0-8efad287f550
 description: Der CreateAttachment-Vorgang erstellt entweder ein Element oder eine Dateianlage und fügt es an das angegebene Element an.
-ms.openlocfilehash: 8028c56aa306774b54b39e5ee1ac0382b9113fa0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0c75e8c73bf4352e2703a6ca6ac06e261e8f37c9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456570"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511881"
 ---
 # <a name="createattachment-operation"></a>CreateAttachment-Vorgang
 
 Der CreateAttachment-Vorgang erstellt entweder ein Element oder eine Dateianlage und fügt es an das angegebene Element an.
   
-## <a name="file-createattachment-request-example"></a>Datei-CreateAttachment-Anforderungs Beispiel
+## <a name="file-createattachment-request-example"></a>Beispiel für datei createAttachment-Anforderung
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer CreateAttachment-Anforderung wird gezeigt, wie eine Dateianlage erstellt wird.
+Das folgende Beispiel einer CreateAttachment-Anforderung zeigt, wie Sie eine Dateianlage erstellen.
   
 ### <a name="code"></a>Code
 
@@ -54,10 +54,10 @@ Im folgenden Beispiel einer CreateAttachment-Anforderung wird gezeigt, wie eine 
 
 ### <a name="comment"></a>Kommentar
 
-Es muss ein Name für die Anlage angegeben werden.
+Ein Name für die Anlage muss angegeben werden.
   
 > [!NOTE]
-> Die übergeordnete Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Der Bezeichner des übergeordneten Elements und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -67,15 +67,15 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [ParentItemId](parentitemid.md)
     
-- [Anlagen](attachments-ex15websvcsotherref.md)
+- [Anhänge](attachments-ex15websvcsotherref.md)
     
 - [FileAttachment](fileattachment.md)
     
 - [Name (AttachmentType)](name-attachmenttype.md)
     
-- [Content](content.md)
+- [Inhalt](content.md)
     
-## <a name="successful-file-createattachment-response-example"></a>Beispiel für erfolgreiche Datei-CreateAttachment-Antwort
+## <a name="successful-file-createattachment-response-example"></a>Beispiel für erfolgreiche "File CreateAttachment"-Antwort
 
 ### <a name="description"></a>Beschreibung
 
@@ -113,7 +113,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateAttachment-A
 
 ### <a name="comment"></a>Kommentar
 
-Die Antwort enthält den Bezeichner der angefügten Datei. Es enthält auch den Bezeichner und den Änderungsschlüssel des Stammelements. Die Element-IDs und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten.
+Die Antwort enthält den Bezeichner der angefügten Datei. Es enthält auch den Bezeichner und den Änderungsschlüssel des Stammelements. Die Elementbezeichner und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten.
   
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
@@ -129,17 +129,17 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Anlagen](attachments-ex15websvcsotherref.md)
+- [Anhänge](attachments-ex15websvcsotherref.md)
     
 - [FileAttachment](fileattachment.md)
     
 - [AttachmentId](attachmentid.md)
     
-## <a name="item-createattachment-request-example"></a>Element CreateAttachment-Anforderung (Beispiel)
+## <a name="item-createattachment-request-example"></a>Beispiel für eine Item CreateAttachment-Anforderung
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer CreateAttachment-Anforderung wird gezeigt, wie eine Elementanlage erstellt wird.
+Das folgende Beispiel einer CreateAttachment-Anforderung zeigt, wie Sie eine Elementanlage erstellen.
   
 ### <a name="code"></a>Code
 
@@ -168,9 +168,9 @@ Im folgenden Beispiel einer CreateAttachment-Anforderung wird gezeigt, wie eine 
 
 ### <a name="comment"></a>Kommentar
 
-Es muss ein Name für die Anlage angegeben werden.
+Ein Name für die Anlage muss angegeben werden.
   
- **Hinweis:** Die übergeordnete Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+ **Hinweis** Der Bezeichner des übergeordneten Elements und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -180,7 +180,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [ParentItemId](parentitemid.md)
     
-- [Anlagen](attachments-ex15websvcsotherref.md)
+- [Anhänge](attachments-ex15websvcsotherref.md)
     
 - [ItemAttachment](itemattachment.md)
     
@@ -190,7 +190,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Betreff](subject.md)
     
-## <a name="successful-item-createattachment-response-example"></a>Erfolgreiches Element CreateAttachment-Antwort (Beispiel)
+## <a name="successful-item-createattachment-response-example"></a>Beispiel für erfolgreiches CreateAttachment-Element
 
 ### <a name="description"></a>Beschreibung
 
@@ -228,7 +228,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateAttachment-A
 
 ### <a name="comment"></a>Kommentar
 
-Die Antwort enthält den Bezeichner der neuen Anlage. Es enthält auch den Bezeichner und den Änderungsschlüssel des Stammelements. Das Stammelement ist das Element, das die Anlage enthält. Die Element-IDs und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten.
+Die Antwort enthält den Bezeichner der neuen Anlage. Es enthält auch den Bezeichner und den Änderungsschlüssel des Stammelements. Das Stammelement ist das Element, das die Anlage enthält. Die Elementbezeichner und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten.
   
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
@@ -244,13 +244,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Anlagen](attachments-ex15websvcsotherref.md)
+- [Anhänge](attachments-ex15websvcsotherref.md)
     
 - [ItemAttachment](itemattachment.md)
     
 - [AttachmentId](attachmentid.md)
     
-## <a name="createattachment-error-response-example"></a>Beispiel für eine CreateAttachment-Fehlerantwort
+## <a name="createattachment-error-response-example"></a>Beispiel für CreateAttachment-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
@@ -305,15 +305,15 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Messagexml verwendet](messagexml.md)
+- [MessageXml](messagexml.md)
     
 - [ExceptionFieldURI](exceptionfielduri.md)
     
-- [Anlagen](attachments-ex15websvcsotherref.md)
+- [Anhänge](attachments-ex15websvcsotherref.md)
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn mehrere Anlagen an ein Element in einem einzelnen Roundtrip angefügt werden, ist die RootItemChangeKey in der letzten Antwortnachricht diejenige, die den neuen Änderungsschlüssel des Elements darstellt, das die Anlagen enthält.
+Wenn an ein Element in einem einzelnen Roundtrip mehrere Anlagen angefügt sind, ist rootItemChangeKey in der letzten Antwortnachricht diejenige, die den neuen Änderungsschlüssel des Elements darstellt, das die Anlagen enthält.
   
 ## <a name="see-also"></a>Siehe auch
 

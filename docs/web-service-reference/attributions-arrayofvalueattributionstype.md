@@ -1,23 +1,23 @@
 ---
-title: Zuordnungen (ArrayOfValueAttributionsType)
+title: Attributions (ArrayOfValueAttributionsType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7f36b6ee-8ecf-48c9-8cb6-dfb2da0ce2a2
-description: Das Attributes-Element gibt ein Array von Attributes für das zugehörige Value-Element an.
-ms.openlocfilehash: 9fd552670c529009838125063869f65e130c1e63
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Attributions-Element gibt ein Array von Zuschreibungen für das zugeordnete Value-Element an.
+ms.openlocfilehash: e5483e8e7ef4745e8025106ae1f1c52e91987183
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463993"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529328"
 ---
-# <a name="attributions-arrayofvalueattributionstype"></a>Zuordnungen (ArrayOfValueAttributionsType)
+# <a name="attributions-arrayofvalueattributionstype"></a>Attributions (ArrayOfValueAttributionsType)
 
-Das **Attributes** -Element gibt ein Array von Attributes für das zugehörige **value** -Element an. 
+Das **Attributions-Element** gibt ein Array von Zuschreibungen für das zugeordnete **Value-Element** an. 
   
 ```XML
 <Attributions>
@@ -44,15 +44,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[BodyContentAttributedValue](bodycontentattributedvalue.md) <br/> |Gibt den Textkörper Inhalt eines Elements an.  <br/> |
-|[EmailAddressAttributedValue](emailaddressattributedvalue.md) <br/> |Gibt eine Instanz eines Arrays von e-Mail-Adressen und deren zugeordneten Zuschreibungen an.  <br/> |
-|[ExtendedPropertyAttributedValue](extendedpropertyattributedvalue.md) <br/> |Gibt erweiterte Eigenschaften für eine Rolle an.  <br/> |
+|[BodyContentAttributedValue](bodycontentattributedvalue.md) <br/> |Gibt den Textkörperinhalt eines Elements an.  <br/> |
+|[EmailAddressAttributedValue](emailaddressattributedvalue.md) <br/> |Gibt eine Instanz eines Arrays von E-Mail-Adressen und deren zugeordneten Zuschreibungen an.  <br/> |
+|[ExtendedPropertyAttributedValue](extendedpropertyattributedvalue.md) <br/> |Gibt erweiterte Eigenschaften für eine Persona an.  <br/> |
 |[PhoneNumberAttributedValue](phonenumberattributedvalue.md) <br/> |Gibt eine Instanz eines Arrays von Telefonnummern und deren zugeordneten Zuschreibungen an.  <br/> |
 |[PostalAddressAttributedValue](postaladdressattributedvalue.md) <br/> |Gibt eine Instanz eines Arrays von Postadressen und deren zugeordneten Zuschreibungen an.  <br/> |
 |[StringArrayAttributedValue](stringarrayattributedvalue.md) <br/> |Gibt eine Instanz eines Arrays von Zeichenfolgendaten für ein Persona-Element an.  <br/> |
-|[StringAttributedValue](stringattributedvalue.md) <br/> |Gibt eine Instanz in einem Array von Attributen an, die mit einem Persona-Element verknüpft sind.  <br/> |
+|[StringAttributedValue](stringattributedvalue.md) <br/> |Gibt eine Instanz in einem Array von Attributen an, die einem Persona-Element zugeordnet sind.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -64,7 +64,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

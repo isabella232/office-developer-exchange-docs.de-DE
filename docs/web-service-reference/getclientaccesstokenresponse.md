@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2ecbe1e0-00c3-4a72-9066-08c4cb76913f
 description: Das GetClientAccessTokenResponse-Element enthält die Antwort auf eine GetClientAccessToken-Vorgangsanforderung.
-ms.openlocfilehash: d4578fa985a1af3db80e6bab13cf3587839dc8b7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: e1f99a87f36e82512c6d6f77e914745d6056d017
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526354"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511580"
 ---
 # <a name="getclientaccesstokenresponse"></a>GetClientAccessTokenResponse
 
-Das **GetClientAccessTokenResponse** -Element enthält die Antwort auf eine **GetClientAccessToken** -Vorgangsanforderung. 
+Das **GetClientAccessTokenResponse-Element** enthält die Antwort auf eine **GetClientAccessToken-Vorgangsanforderung.** 
   
 ```XML
 <GetClientAccessTokenResponse>
@@ -42,7 +42,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -54,7 +54,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

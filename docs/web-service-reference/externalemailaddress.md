@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f7fc08e6-a906-4a18-93cd-56a5b8d460b0
-description: Das ExternalEmailAddress-Element enthält die externe e-Mail-Adresse des Postfachs.
-ms.openlocfilehash: c530e0c1a9efb5da3a0e147de3a3ec6e0d7569fc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ExternalEmailAddress-Element enthält die externe E-Mail-Adresse des Postfachs.
+ms.openlocfilehash: 926b553c6ed1c1c0c479092d70ebe22bebb51324
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456927"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518540"
 ---
 # <a name="externalemailaddress"></a>ExternalEmailAddress
 
-Das **ExternalEmailAddress** -Element enthält die externe e-Mail-Adresse des Postfachs. 
+Das **ExternalEmailAddress-Element** enthält die externe E-Mail-Adresse des Postfachs. 
   
 ```XML
 <ExternalEmailAddress></ExternalEmailAddress>
@@ -43,9 +43,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ExternalEmailAddress** -Elements ist die externe e-Mail-Adresse des Postfachs. 
+Der Textwert des **ExternalEmailAddress-Elements** ist die externe E-Mail-Adresse des Postfachs. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

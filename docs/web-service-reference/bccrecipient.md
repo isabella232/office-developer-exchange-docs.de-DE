@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - BccRecipient
 api_type:
 - schema
 ms.assetid: 4ef0cff5-8a5a-4d76-9d2b-938774d8fc1b
-description: Das BccRecipient-Element stellt einen Empfänger dar, der eine Blindkopie (BCC) einer e-Mail-Nachricht empfängt.
-ms.openlocfilehash: 8296af1d74338bdfb1f4cb7bc7449ad91a9cd531
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das BccRecipient-Element stellt einen Empfänger dar, der eine blinde Kopie (Bcc) einer E-Mail-Nachricht erhält.
+ms.openlocfilehash: 178606d9c27becbf6fea5e7a9a694fb67feadc49
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461527"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526865"
 ---
 # <a name="bccrecipient"></a>BccRecipient
 
-Das **BccRecipient** -Element stellt einen Empfänger dar, der eine Blindkopie (BCC) einer e-Mail-Nachricht empfängt. 
+Das **BccRecipient-Element** stellt einen Empfänger dar, der eine blinde Kopie (Bcc) einer E-Mail-Nachricht erhält. 
   
 ```XML
 <BccRecipient>true | false</BccRecipient>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Dieses Element kann entweder **true** oder **false**sein. Der Wert **true** gibt an, dass der Empfänger Blind Kohlenstoff kopiert ist; der Wert **false** gibt an, dass der Empfänger nicht Blind Carbon kopiert wird. 
+Dieses Element kann entweder **"true"** oder **"false" sein.** Der Wert **"true"** gibt an, dass der Empfänger blind carbon kopiert wurde. Der Wert **"false"** gibt an, dass der Empfänger nicht blind carbon kopiert wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

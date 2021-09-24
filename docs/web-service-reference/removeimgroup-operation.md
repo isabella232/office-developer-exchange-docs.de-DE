@@ -5,45 +5,45 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5e788016-68e0-4a3f-9243-03f6b6c6b389
-description: Hier finden Sie Informationen zum RemoveImGroup-EWS-Vorgang.
-ms.openlocfilehash: b5e38404cbb1907a1118ab3ae8e56abb5a8d5e41
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum EWS-Vorgang "RemoveImGroup".
+ms.openlocfilehash: 2cab052ac19048b857277e28efa268cc2ca7b68b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456748"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519065"
 ---
 # <a name="removeimgroup-operation"></a>RemoveImGroup-Vorgang
 
-Hier finden Sie Informationen zum **RemoveImGroup** -EWS-Vorgang. 
+Hier finden Sie Informationen zum **EWS-Vorgang "RemoveImGroup".** 
   
-Der **RemoveImGroup** -Vorgang entfernt eine einzelne Sofortnachrichten Gruppe aus einem Postfach. 
+Der **RemoveImGroup-Vorgang** entfernt eine einzelne Chatgruppe aus einem Postfach. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-removeimgroup-operation"></a>Verwenden des RemoveImGroup-Vorgangs
 
-Für den **RemoveImGroup** -Vorgang wird nur ein einzelnes Gruppen-ID-Argument verwendet. 
+Der **RemoveImGroup-Vorgang** verwendet nur ein einzelnes Gruppenbezeichnerargument. 
   
 ### <a name="removeimgroup-operation-soap-headers"></a>SOAP-Header des RemoveImGroup-Vorgangs
 
-Der **RemoveImGroup** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **RemoveImGroup-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden sollen. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dieser Header gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur, wie in RFC 3066 definiert, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden soll. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="removeimgroup-operation-request-example"></a>RemoveImGroup-Vorgangsanforderung (Beispiel)
+## <a name="removeimgroup-operation-request-example"></a>Beispiel für removeImGroup-Vorgangsanforderung
 
-Im folgenden Beispiel einer **RemoveImGroup** -Vorgangsanforderung wird gezeigt, wie Sie eine Chatgruppe entfernen. 
+Das folgende Beispiel einer **RemoveImGroup-Vorgangsanforderung** zeigt, wie eine Chatgruppe entfernt wird. 
   
 > [!NOTE]
-> Die Gruppen-ID wurde verkürzt, um die Lesbarkeit beizubehalten. 
+> Die Gruppen-ID wurde gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -63,15 +63,15 @@ Im folgenden Beispiel einer **RemoveImGroup** -Vorgangsanforderung wird gezeigt,
 </soap:Envelope>
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [RemoveImGroup](removeimgroup.md)
     
 - [GroupId](groupid.md)
     
-## <a name="successful-removeimgroup-operation-response"></a>Erfolgreiche Reaktion des RemoveImGroup-Vorgangs
+## <a name="successful-removeimgroup-operation-response"></a>Erfolgreiche RemoveImGroup-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **RemoveImGroup** -Vorgangsanforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **RemoveImGroup-Vorgangsanforderung.** 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -97,7 +97,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **RemoveImGroup**
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [RemoveImGroupResponse](removeimgroupresponse.md)
     
@@ -105,7 +105,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 ## <a name="removeimgroup-operation-errorinvalidimgroupid-error-response"></a>RemoveImGroup-Vorgang ErrorInvalidImGroupId-Fehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **RemoveImGroup** -Vorgangsanforderung. Die folgende Fehlermeldung tritt auf, wenn ein Versuch unternommen wird, eine Gruppe zu entfernen, die nicht im Postfach vorhanden ist. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **RemoveImGroup-Vorgangsanforderung.** Die folgende Fehlerantwort tritt auf, wenn versucht wird, eine Gruppe zu entfernen, die nicht im Postfach vorhanden ist. 
   
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -142,11 +142,11 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
+Weitere Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ## <a name="removeimgroup-operation-errorinvalididmalformed-error-response"></a>RemoveImGroup-Vorgang ErrorInvalidIdMalformed-Fehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **RemoveImGroup** -Vorgangsanforderung. Die folgende Fehlermeldung tritt auf, wenn ein Versuch unternommen wird, eine Gruppe mit einer falsch formatierten Gruppen-ID zu entfernen. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **RemoveImGroup-Vorgangsanforderung.** Die folgende Fehlerantwort tritt auf, wenn versucht wird, eine Gruppe mit einem falsch formatierten Gruppenbezeichner zu entfernen. 
   
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">

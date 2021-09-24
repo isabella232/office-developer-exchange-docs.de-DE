@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fc9c0a57-f8b0-440f-97dd-88af47840625
 description: Das ProposedEnd (AttendeeType)-Element gibt die vorgeschlagene Endzeit eines Teilnehmers für eine Besprechung an.
-ms.openlocfilehash: 892a80197a269f806fe7520d6660d09e1cfb38ff
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 15a7673c49c0f2695323f437bda1011e2bff59b8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465569"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510920"
 ---
 # <a name="proposedend-attendeetype"></a>ProposedEnd (AttendeeType)
 
-Das **ProposedEnd (AttendeeType)** -Element gibt die vorgeschlagene Endzeit eines Teilnehmers für eine Besprechung an. 
+Das **ProposedEnd (AttendeeType)-Element** gibt die vorgeschlagene Endzeit eines Teilnehmers für eine Besprechung an. 
   
 ```XML
 <ProposedEnd/>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des ProposedEnd-Elements **(AttendeeType)** ist das vorgeschlagene Enddatum und die vorgeschlagene Uhrzeit für eine Besprechung. 
+Der Textwert des **ProposedEnd -Elements (AttendeeType)** ist das vorgeschlagene Enddatum und die Uhrzeit für eine Besprechung. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

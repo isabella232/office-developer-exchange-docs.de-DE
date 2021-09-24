@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 0b2a83cf-e173-4073-9603-b2ea3b36ec1a
 description: Das MajorVersion-Element stellt die Hauptversionsnummer für den Server dar.
-ms.openlocfilehash: 2c564b110ec7497a2e9c92a00bfb7f376a657849
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: eb6bed958e36cbd3c0c35825ff10d857ea839cff
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44531007"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511096"
 ---
 # <a name="majorversion-soap"></a>MajorVersion (SOAP)
 
-Das **MajorVersion** -Element stellt die Hauptversionsnummer für den Server dar. 
+Das **MajorVersion-Element** stellt die Hauptversionsnummer für den Server dar. 
   
 ```XML
 <MajorVersion/>
@@ -45,15 +45,15 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert für das **MajorVersion** -Element ist eine ganze Zahl, die die Hauptversionsnummer des Servers darstellt, der die Anforderung verarbeitet hat. 
+Der Textwert für das **MajorVersion-Element** ist eine ganze Zahl, die die Hauptversionsnummer des Servers darstellt, der die Anforderung verarbeitet hat. 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

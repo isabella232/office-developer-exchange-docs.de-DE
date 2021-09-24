@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4cb08a3b-74aa-4506-abda-c000ae97f981
-description: Das GetAppMarketplaceUrl-Element gibt die Anforderung zum Abrufen der URL für eine APP an.
-ms.openlocfilehash: 1252df9833aa44ae6406dd5e19140aec02369ee5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GetAppMarketplaceUrl-Element gibt die Anforderung zum Abrufen der URL für eine App an.
+ms.openlocfilehash: 154b97e4dec9e06d84646a81c4963f9212d16985
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530860"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59530033"
 ---
 # <a name="getappmarketplaceurl"></a>GetAppMarketplaceUrl
 
-Das **GetAppMarketplaceUrl** -Element gibt die Anforderung zum Abrufen der URL für eine APP an. 
+Das **GetAppMarketplaceUrl-Element** gibt die Anforderung zum Abrufen der URL für eine App an. 
   
 ```XML
 <GetAppMarketplaceUrl/>
@@ -40,7 +40,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -52,7 +52,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Kann leer sein  <br/> |true  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

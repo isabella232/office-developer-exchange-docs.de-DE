@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FolderChanges
 api_type:
 - schema
 ms.assetid: d3f611ed-56a4-43f8-aa65-cbd7844b827f
 description: Das FolderChanges-Element stellt eine Auflistung von Änderungen für einen Ordner dar.
-ms.openlocfilehash: 5481496100512584fd0b9745ee42d5b9516bd7fb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 2c3bfc3081e323771e9d909138f7ed03e3d50a84
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458383"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541287"
 ---
 # <a name="folderchanges"></a>FolderChanges
 
-Das **FolderChanges** -Element stellt eine Auflistung von Änderungen für einen Ordner dar. 
+Das **FolderChanges-Element** stellt eine Auflistung von Änderungen für einen Ordner dar. 
   
 [UpdateFolder](updatefolder.md)
   
@@ -52,9 +52,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UpdateFolder](updatefolder.md) <br/> |Stellt den Vorgang dar, der zum Aktualisieren der Eigenschaften eines Ordners verwendet wird.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/UpdateFolder` <br/> |
+|[UpdateFolder](updatefolder.md) <br/> |Stellt den Vorgang dar, der zum Aktualisieren von Eigenschaften für einen Ordner verwendet wird.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/UpdateFolder` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -64,7 +64,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MailTipsEnabled
 api_type:
 - schema
 ms.assetid: 737388b3-7b73-42af-94d3-3dbb0659718f
-description: Das MailTipsEnabled-Element gibt an, ob der Mail-Tipps-Dienst verfügbar ist.
-ms.openlocfilehash: 6be923733f1cbd584010ce5f8ee5b96178d5c2c0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MailTipsEnabled-Element gibt an, ob der E-Mail-Tipps-Dienst verfügbar ist.
+ms.openlocfilehash: 7444ba7218ebfed85b02dafb0358af9781b22059
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468012"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511145"
 ---
 # <a name="mailtipsenabled"></a>MailTipsEnabled
 
-Das **MailTipsEnabled** -Element gibt an, ob der Mail-Tipps-Dienst verfügbar ist. 
+Das **MailTipsEnabled-Element** gibt an, ob der E-Mail-Tipps-Dienst verfügbar ist. 
   
 ```xml
 <MailTipsEnabled>true | false</MailTipsEnabled>
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |Enthält Dienstkonfigurationsinformationen für den e-Mail-Spitzen Dienst.  <br/> |
+|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |Enthält Dienstkonfigurationsinformationen für den E-Mail-Tipps-Dienst.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert dieses Elements ist **true** , wenn der e-Mail-Spitzen Dienst verfügbar ist. Der Wert ist **false** , wenn der e-Mail-Spitzen Dienst nicht verfügbar ist. 
+Der Textwert dieses Elements ist **"true",** wenn der E-Mail-Tipps-Dienst verfügbar ist. Der Wert ist **"false",** wenn der E-Mail-Tipps-Dienst nicht verfügbar ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

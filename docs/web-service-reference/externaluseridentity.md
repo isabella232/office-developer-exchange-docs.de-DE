@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExternalUserIdentity
 api_type:
 - schema
 ms.assetid: f2bc0a61-7c50-4b36-828e-358dfc5b9ae1
-description: Das ExternalUserIdentity-Element identifiziert einen externen Stellvertreter Benutzer oder einen externen Benutzer, der über Ordnerzugriffsberechtigungen verfügt.
-ms.openlocfilehash: b4432b29278b693b21e455a5245be0d96496ffe5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ExternalUserIdentity-Element identifiziert einen externen Delegatenbenutzer oder einen externen Benutzer, der über Ordnerzugriffsberechtigungen verfügt.
+ms.openlocfilehash: cad0273d76a5eb4ff63325bcc6bfd761909482d6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457949"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518526"
 ---
 # <a name="externaluseridentity"></a>ExternalUserIdentity
 
-Das **ExternalUserIdentity** -Element identifiziert einen externen Stellvertreter Benutzer oder einen externen Benutzer, der über Ordnerzugriffsberechtigungen verfügt. 
+Das **ExternalUserIdentity-Element** identifiziert einen externen Delegatenbenutzer oder einen externen Benutzer, der über Ordnerzugriffsberechtigungen verfügt. 
   
 ```xml
 <ExternalUserIdentity/>
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserId](userid.md) <br/> |Identifiziert einen Stellvertreter Benutzer oder einen Benutzer, der über Ordnerzugriffsberechtigungen verfügt.  <br/> |
+|[UserId](userid.md) <br/> |Identifiziert einen Stellvertreterbenutzer oder einen Benutzer, der über Ordnerzugriffsberechtigungen verfügt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

@@ -1,23 +1,23 @@
 ---
-title: E-Mail (Email Adresse)
+title: E-Mail (EmailAddress)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c40a6b6-e2d1-44ba-b439-5720490cbd43
-description: Das e-Mail-Element identifiziert einen Teilnehmer für eine Besprechung.
-ms.openlocfilehash: 9457ff735f4f87f59cd091b504fb8807e1aa8fa6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Email-Element identifiziert einen Teilnehmer an einer Besprechung.
+ms.openlocfilehash: 6a5c1c2fb11e1f428c75b5c41d58c62c7b5976a5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459237"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528638"
 ---
-# <a name="email-emailaddress"></a>E-Mail (Email Adresse)
+# <a name="email-emailaddress"></a>E-Mail (EmailAddress)
 
-Das **e-Mail-** Element identifiziert einen Teilnehmer für eine Besprechung. 
+Das **Email-Element** identifiziert einen Teilnehmer an einer Besprechung. 
   
 ```XML
 <Email></Email>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des e-Mail-Elements identifiziert einen Teilnehmer, der in einer **GetUserAvailability** -Vorgangs Antwort zurückgegeben wird. 
+Der Textwert des Email-Elements identifiziert einen Teilnehmer, der in einer **GetUserAvailability-Vorgangsantwort** zurückgegeben wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

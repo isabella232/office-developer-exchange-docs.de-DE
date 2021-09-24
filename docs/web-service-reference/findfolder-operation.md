@@ -5,37 +5,37 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FindFolder
 api_type:
 - schema
 ms.assetid: 7a9855aa-06cc-45ba-ad2a-645c15b7d031
-description: Der FindFolder-Vorgang verwendet Exchange Webdienste zum Suchen von Unterordnern eines identifizierten Ordners und gibt eine Reihe von Eigenschaften zurück, die die Gruppe von Unterordnern beschreiben.
-ms.openlocfilehash: f1cc199bdaf684d8d74687ed7f064eb66fee48ff
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der FindFolder-Vorgang verwendet Exchange Webdienste, um Unterordner eines bestimmten Ordners zu suchen, und gibt einen Satz von Eigenschaften zurück, die den Satz von Unterordnern beschreiben.
+ms.openlocfilehash: 8c2776a9d60244fe77b6012a09ffbad230d86f63
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462584"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518470"
 ---
 # <a name="findfolder-operation"></a>FindFolder-Vorgang
 
-Der **FindFolder** -Vorgang verwendet Exchange Webdienste zum Suchen von Unterordnern eines identifizierten Ordners und gibt eine Reihe von Eigenschaften zurück, die die Gruppe von Unterordnern beschreiben. 
+Der **FindFolder-Vorgang** verwendet Exchange Webdienste, um Unterordner eines bestimmten Ordners zu suchen, und gibt einen Satz von Eigenschaften zurück, die den Satz von Unterordnern beschreiben. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-FindFolder gibt nur die ersten 512 Bytes einer Streamable-Eigenschaft zurück. Bei Unicode werden nur die ersten 255 Zeichen mit einer Unicode-Zeichenfolge zurückgegeben, die mit null endet.
+FindFolder gibt nur die ersten 512 Bytes einer streambaren Eigenschaft zurück. Bei Unicode werden nur die ersten 255 Zeichen mit einer Unicode-Zeichenfolge zurückgegeben, die mit null endet.
   
-Tief greifende Abfragen können nicht für Öffentliche Ordner ausgeführt werden.
+Tiefendurchlaufabfragen können für öffentliche Ordner nicht ausgeführt werden.
   
-Einschränkungen sind zulässig und sollten nur die Ordner Eigenschaften und nicht die Elementeigenschaften verwenden. Sortierfunktionen stehen für **FindFolder** -Antworten nicht zur Verfügung. Gruppierte Abfragen stehen für **FindFolder** -Abfragen nicht zur Verfügung. 
+Einschränkungen sind zulässig und sollten nur die Ordnereigenschaften und nicht die Elementeigenschaften verwenden. Sortierfunktionen sind für **FindFolder-Antworten** nicht verfügbar. Gruppierte Abfragen sind für **FindFolder-Abfragen** nicht verfügbar. 
   
- **Hinweis:** Der **FindFolder** -Vorgang wird auch verwendet, um verwaltete Ordner zu finden. 
+ **Hinweis** Der **FindFolder-Vorgang** wird auch zum Suchen nach verwalteten Ordnern verwendet. 
   
 ### <a name="soap-headers"></a>SOAP-Header
 
-Der **FindFolder** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
+Der **FindFolder-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben sind. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -45,11 +45,11 @@ Der **FindFolder** -Vorgang kann die SOAP-Header verwenden, die in der folgenden
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
 |TimeZoneContext  <br/> |[TimeZoneContext](timezonecontext.md) <br/> |Gibt die Zeitzone für alle Antworten vom Server an.  <br/> |
    
-## <a name="findfolder-request-example"></a>FindFolder-Anforderungs Beispiel
+## <a name="findfolder-request-example"></a>FindFolder-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **FindFolder** -Anforderung wird gezeigt, wie eine Anforderung zum Auffinden aller Ordner in einem Posteingang bildet. 
+Das folgende Beispiel einer **FindFolder-Anforderung** zeigt, wie Sie eine Anforderung zum Suchen aller Ordner in einem Posteingang erstellen. 
   
 ### <a name="code"></a>Code
 
@@ -72,11 +72,11 @@ Im folgenden Beispiel einer **FindFolder** -Anforderung wird gezeigt, wie eine A
 
 ### <a name="comments"></a>Comments
 
-Mit dem Standardwert für die [BaseShape](baseshape.md)gibt die Antwort den Ordnernamen, die Ordner-ID, die Anzahl der Unterordner, die Anzahl der untergeordneten Ordner im Ordner und die Anzahl der ungelesenen Elemente zurück.
+Unter Verwendung des Standardwerts für die [BaseShape](baseshape.md)gibt die Antwort den Ordnernamen, die Ordner-ID, die Anzahl der Unterordner, die Anzahl der im Ordner gefundenen untergeordneten Ordner und die Anzahl der ungelesenen Elemente zurück.
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
-Diese **FindFolder** -Anforderung umfasst die folgenden Elemente: 
+Diese **FindFolder-Anforderung** enthält die folgenden Elemente: 
   
 - [FindFolder](findfolder.md)
     
@@ -88,16 +88,16 @@ Diese **FindFolder** -Anforderung umfasst die folgenden Elemente:
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
- Weitere **FindFolder** -anforderungselemente finden Sie im Schema. 
+ Weitere **FindFolder-Anforderungselemente** finden Sie im Schema. 
   
 ## <a name="findfolder-response-example"></a>FindFolder-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Simple Object Access Protocol (SOAP) Body-Beispiel zeigt eine erfolgreiche Antwort auf die **FindFolder** -Anforderung. Die Antwort enthält die Elemente, die zurückgegeben werden, wenn der Standardwert für die [BaseShape](baseshape.md) verwendet wird. 
+Der folgende SOAP-Text (Simple Object Access Protocol) zeigt eine erfolgreiche Antwort auf die **FindFolder-Anforderung.** Die Antwort enthält die Elemente, die zurückgegeben werden, wenn der Standardwert für die [BaseShape](baseshape.md) verwendet wird. 
   
 > [!NOTE]
-> Die Ordner-ID und der Change-Schlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Die Ordner-ID und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="code"></a>Code
 
@@ -135,9 +135,9 @@ Das folgende Simple Object Access Protocol (SOAP) Body-Beispiel zeigt eine erfol
 </soap:Envelope>
 ```
 
-### <a name="response-elements"></a>Response-Elemente
+### <a name="response-elements"></a>Antwortelemente
 
-Die Eigenschaften, die in der Antwort zurückgegeben werden, werden durch die [BaseShape](baseshape.md) und die [AdditionalProperties](additionalproperties.md) bestimmt, wenn Sie verwendet werden. Eine erfolgreiche **FindFolder** -Antwort umfasst die folgenden Elemente: 
+Die eigenschaften, die in der Antwort zurückgegeben werden, werden durch die [BaseShape](baseshape.md) und die [AdditionalProperties](additionalproperties.md) bestimmt, wenn sie verwendet werden. Eine erfolgreiche **FindFolder-Antwort** enthält die folgenden Elemente: 
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -159,7 +159,7 @@ Die Eigenschaften, die in der Antwort zurückgegeben werden, werden durch die [B
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-- [Total count](totalcount.md)
+- [TotalCount](totalcount.md)
     
 - [ChildFolderCount](childfoldercount.md)
     
@@ -167,13 +167,13 @@ Die Eigenschaften, die in der Antwort zurückgegeben werden, werden durch die [B
     
 ### <a name="comments"></a>Kommentare
 
- **FindFolder** -Antworten auf eine Anforderung mit dem Antwort-Shape **allproperties** geben nicht die [Total count](totalcount.md) -und [UnreadCount](unreadcount.md) -Elemente für die Suche nach öffentlichen Ordnern zurück. 
+ **FindFolder-Antworten** auf eine Anforderung mit dem **AllProperties-Antwort-Shape** geben nicht die [Elemente TotalCount](totalcount.md) und [UnreadCount](unreadcount.md) für Suchvorgänge in öffentlichen Ordnern zurück. 
   
-## <a name="findfolder-error-response-example"></a>FindFolder-Fehlerantwort Beispiel
+## <a name="findfolder-error-response-example"></a>Beispiel für FindFolder-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende SOAP Body-Beispiel zeigt eine Fehlermeldung, die auftritt, wenn Sie nach einem Ordner suchen, der durch eine fehlerhafte Ordner-ID identifiziert wird.
+Das folgende SOAP-Textkörperbeispiel zeigt eine Fehlerantwort, die auftritt, wenn Sie nach einem Ordner suchen, der durch einen falsch formatierten Ordnerbezeichner identifiziert wird.
   
 ### <a name="code"></a>Code
 
@@ -204,7 +204,7 @@ Das folgende SOAP Body-Beispiel zeigt eine Fehlermeldung, die auftritt, wenn Sie
 
 ### <a name="error-response-elements"></a>Fehlerantwortelemente
 
-Die **FindFolder** -Fehlerantwort umfasst die folgenden Elemente: 
+Die **FindFolder-Fehlerantwort** enthält die folgenden Elemente: 
   
 - [FindFolderResponse](findfolderresponse.md)
     
@@ -218,11 +218,11 @@ Die **FindFolder** -Fehlerantwort umfasst die folgenden Elemente:
     
 ## <a name="additional-information"></a>Weitere Informationen
 
-- Das Element Folder [DisplayName (String)](displayname-string.md) ist immer in der Standardform enthalten. 
+- Das [DisplayName-Element (Zeichenfolge)](displayname-string.md) des Ordners ist immer im Standard-Shape enthalten. 
     
-- Das [UnreadCount](unreadcount.md) -Element ist in Aufgaben und Notizenordner enthalten. 
+- Das [UnreadCount-Element](unreadcount.md) ist in Aufgaben- und Notizenordnern enthalten. 
     
-- Verwenden Sie den **PropertyTag** -Wert 0x672D mit dem Property-Typ **Integer** , um einen verwalteten Ordner mithilfe des [ExtendedFieldURI](extendedfielduri.md) -Elements zu identifizieren. 
+- Verwenden Sie den **PropertyTag-Wert** von 0x672D mit dem Eigenschaftstyp **Integer,** um einen verwalteten Ordner mithilfe des [ExtendedFieldURI-Elements](extendedfielduri.md) zu identifizieren. 
     
 ## <a name="see-also"></a>Siehe auch
 

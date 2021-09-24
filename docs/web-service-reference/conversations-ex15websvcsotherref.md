@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Conversations
 api_type:
 - schema
 ms.assetid: 1d18f98c-6457-45e9-a934-32da20885ac6
 description: Das Conversations-Element enthält ein Array von Unterhaltungen, die in der FindConversation-Antwort zurückgegeben werden.
-ms.openlocfilehash: 8af1023db51dd955c544422520ec5565f09f5372
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7c1c4d4ad91317946b64db609d67cafa5f0e7283
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463797"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518666"
 ---
 # <a name="conversations"></a>Unterhaltungen
 
-Das **Conversations** -Element enthält ein Array von Unterhaltungen, die in der **FindConversation** -Antwort zurückgegeben werden. 
+Das **Conversations-Element** enthält ein Array von Unterhaltungen, die in der **FindConversation-Antwort** zurückgegeben werden. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -52,13 +52,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindConversationResponse](findconversationresponse.md) <br/> |Definiert eine Antwort auf eine **FindConversation** -Anforderung.  <br/> |
+|[FindConversationResponse](findconversationresponse.md) <br/> |Definiert eine Antwort auf eine **FindConversation-Anforderung.**  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
@@ -68,7 +68,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

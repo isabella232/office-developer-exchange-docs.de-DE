@@ -1,27 +1,27 @@
 ---
-title: Wiederholungs-Nr
+title: RecurrenceId
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RecurrenceId
 api_type:
 - schema
 ms.assetid: 9ef3569d-ee56-4b22-b008-609fb3337da7
-description: Das Serien-Element wird verwendet, um eine bestimmte Instanz eines wiederkehrenden Kalenderelements zu identifizieren.
-ms.openlocfilehash: 58a379f2cffa7ff37181e93ad1c45c9752e84f1d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das RecurrenceId-Element wird verwendet, um eine bestimmte Instanz eines Wiederkehrenden Kalenderelements zu identifizieren.
+ms.openlocfilehash: 863673f7439c12ce4c74e8e0ef4ddea996fb4eb5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461611"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527564"
 ---
-# <a name="recurrenceid"></a>Wiederholungs-Nr
+# <a name="recurrenceid"></a>RecurrenceId
 
-Das **Serien** -Element wird verwendet, um eine bestimmte Instanz eines wiederkehrenden Kalenderelements zu identifizieren. 
+Das **RecurrenceId-Element** wird verwendet, um eine bestimmte Instanz eines Wiederkehrenden Kalenderelements zu identifizieren. 
   
 ```xml
 <RecurrenceId/>
@@ -48,15 +48,15 @@ Keine.
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechungsnachricht dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanfrage dar.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort dar.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Stellt einen Besprechungs Abbruch dar.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine Besprechungsabsage dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt einen Datum/Uhrzeit-Wert dar, der ein Kalender vorkommen identifiziert.
+Der Textwert stellt einen Datums-/Uhrzeitwert dar, der ein Kalendervorkommen identifiziert.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft wird zusammen mit der [UID](uid.md) -Eigenschaft verwendet, um eine bestimmte Instanz eines wiederkehrenden Kalenderelements zu identifizieren. 
+Diese Eigenschaft wird mit der [UID-Eigenschaft](uid.md) verwendet, um eine bestimmte Instanz eines Terminserienkalenderelements zu identifizieren. 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

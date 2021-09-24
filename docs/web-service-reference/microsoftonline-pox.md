@@ -1,22 +1,22 @@
 ---
-title: Microsoft Online (POX)
+title: MicrosoftOnline (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0b88f02a-9c50-44b3-841b-560b24e37af5
-description: Das Microsoft Online-Element enthält einen Wert, der angibt, ob das Postfach des Benutzers in Exchange Online oder Exchange Online als Teil Office 365 gehostet wird.
-ms.openlocfilehash: f3144a673a4c98aad821e21c562141b0ae00f426
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MicrosoftOnline-Element enthält einen Wert, der angibt, ob das Postfach des Benutzers in Exchange Online oder Exchange Online als Teil Office 365 gehostet wird.
+ms.openlocfilehash: fbf230df18ca488babb1523cc7f689923eaeb55b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467984"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510945"
 ---
-# <a name="microsoftonline-pox"></a>Microsoft Online (POX)
+# <a name="microsoftonline-pox"></a>MicrosoftOnline (POX)
 
-Das **Microsoft Online** -Element enthält einen Wert, der angibt, ob das Postfach des Benutzers in Exchange Online oder Exchange Online als Teil Office 365 gehostet wird. 
+Das **MicrosoftOnline-Element** enthält einen Wert, der angibt, ob das Postfach des Benutzers in Exchange Online oder Exchange Online als Teil Office 365 gehostet wird. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -24,7 +24,7 @@ Das **Microsoft Online** -Element enthält einen Wert, der angibt, ob das Postfa
   
 [Konto (POX)](account-pox.md)
   
-[Microsoft Online (POX)](microsoftonline-pox.md)
+[MicrosoftOnline (POX)](microsoftonline-pox.md)
   
 ```XML
 <MicrosoftOnline/>
@@ -48,9 +48,9 @@ Keine.
 |:-----|:-----|
 |[Konto (POX)](account-pox.md) <br/> |Gibt Kontoeinstellungen für den Benutzer an oder enthält Fehlerantworten.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Wert Text gibt an, ob das Postfach des Benutzers in Exchange Online gehostet wird. Der Wert ist **true** , wenn das Postfach des Benutzers in Exchange Online gehostet wird; andernfalls **false**.
+Der Textwert gibt an, ob das Postfach des Benutzers in Exchange Online gehostet wird. Der Wert ist **"true",** wenn das Postfach des Benutzers in Exchange Online gehostet wird. andernfalls **false**.
   
 ## <a name="see-also"></a>Siehe auch
 

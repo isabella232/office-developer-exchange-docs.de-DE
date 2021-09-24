@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MovedEvent
 api_type:
 - schema
 ms.assetid: 572f8b40-dfa8-47bc-b0c1-e1a7138506fd
-description: Das MovedEvent-Element stellt ein Ereignis dar, in dem ein Element oder ein Ordner von einem übergeordneten Ordner in einen anderen übergeordneten Ordner verschoben wird.
-ms.openlocfilehash: 1f8fb57dba7edb769fe0dd658d89c032dccf8c5f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MovedEvent-Element stellt ein Ereignis dar, bei dem ein Element oder Ordner von einem übergeordneten Ordner in einen anderen übergeordneten Ordner verschoben wird.
+ms.openlocfilehash: 4e0795fc3f335139e22fb51a4cf215a870ec62c6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530408"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518134"
 ---
 # <a name="movedevent"></a>MovedEvent
 
-Das **MovedEvent** -Element stellt ein Ereignis dar, in dem ein Element oder ein Ordner von einem übergeordneten Ordner in einen anderen übergeordneten Ordner verschoben wird. 
+Das **MovedEvent-Element** stellt ein Ereignis dar, bei dem ein Element oder Ordner von einem übergeordneten Ordner in einen anderen übergeordneten Ordner verschoben wird. 
   
 ```xml
 <MovedEvent>
@@ -60,14 +60,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Watermark](watermark.md) <br/> |Stellt ein Lesezeichen für Ereignisse in der Tabelle Post Fach Ereignisse dar.  <br/> |
-|[Timestamp](timestamp.md) <br/> |Stellt den Zeitstempel des Post Fach Ereignisses "Element/Ordner Verschiebe" dar.  <br/> |
+|[Watermark](watermark.md) <br/> |Stellt eine Ereignislesemarke in der Postfachereignistabelle dar.  <br/> |
+|[TimeStamp](timestamp.md) <br/> |Stellt den Zeitstempel eines Postfachereignisses für Verschiebungselemente/Ordner dar.  <br/> |
 |[FolderId](folderid.md) <br/> |Stellt den Bezeichner des verschobenen Ordners dar.  <br/> |
 |[ItemId](itemid.md) <br/> |Stellt den Bezeichner des verschobenen Elements dar.  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des Ordners dar, der das verschobene Element oder den verschobenen Ordner enthält.  <br/> |
-|[OldFolderId](oldfolderid.md) <br/> |Enthält den Ordner Bezeichner des ursprünglichen Ordners, bevor er verschoben oder kopiert wurde.  <br/> |
-|[OldItemId](olditemid.md) <br/> |Enthält die eindeutige ID des ursprünglichen Elements, bevor es verschoben wurde.  <br/> |
-|[OldParentFolderId](oldparentfolderid.md) <br/> |Enthält den Bezeichner des ursprünglichen übergeordneten Ordners eines verschobenen Elements oder Ordners.  <br/> |
+|[OldFolderId](oldfolderid.md) <br/> |Enthält den Ordnerbezeichner des ursprünglichen Ordners, bevor er verschoben oder kopiert wurde.  <br/> |
+|[OldItemId](olditemid.md) <br/> |Enthält den eindeutigen Bezeichner des ursprünglichen Elements, bevor es verschoben wurde.  <br/> |
+|[OldParentFolderId](oldparentfolderid.md) <br/> |Enthält den Bezeichner des ursprünglichen übergeordneten Ordners eines Elements oder Ordners, das verschoben wurde.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -75,7 +75,7 @@ Keine.
 |:-----|:-----|
 |[Benachrichtigung](notification-ex15websvcsotherref.md) <br/> |Enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

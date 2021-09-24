@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4cf8b357-a58d-4837-994f-c2ba9b1eca4b
 description: Das RetentionPolicyTagId-Element gibt den Bezeichner des Aufbewahrungsrichtlinientags an.
-ms.openlocfilehash: 1ed2b3317251321d9593feb83d8ed4550425c3e9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f284dc5191e1eac5086caf3f1897f83012c165cd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465135"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512352"
 ---
 # <a name="retentionpolicytagid"></a>RetentionPolicyTagId
 
-Das **RetentionPolicyTagId** -Element gibt den Bezeichner des Aufbewahrungsrichtlinientags an. 
+Das **RetentionPolicyTagId-Element** gibt den Bezeichner des Aufbewahrungsrichtlinientags an. 
   
 ```XML
 <RetentionPolicyTagId></RetentionPolicyTagId>
@@ -38,13 +38,13 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Unterhaltung](conversationaction.md)
+[ConversationAction](conversationaction.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **RetentionPolicyTagId** -Elements ist der Bezeichner des Richtlinien Tags, der auf Elemente in einer Unterhaltung angewendet wird. 
+Der Textwert des **RetentionPolicyTagId-Elements** ist der Richtlinientagbezeichner, der auf Elemente in einer Unterhaltung angewendet wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

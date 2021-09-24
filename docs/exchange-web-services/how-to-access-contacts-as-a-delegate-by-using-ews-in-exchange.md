@@ -3,52 +3,52 @@ title: Zugriff auf Kontakte als Delegat mithilfe der EWS in Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3cd34c14-18b0-4fe2-a4c2-d884318c88fc
-description: Informationen zum Zugreifen auf Kontakte als Stellvertretung mithilfe der verwaltete EWS-API oder EWS in Exchange.
-ms.openlocfilehash: 06faf7dd7459b14792abbea21761e909c8eb9fb6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Erfahren Sie, wie Sie mithilfe der verwalteten EWS-API oder EWS in Exchange auf Kontakte als Stellvertretung zugreifen.
+ms.openlocfilehash: a1ebef7f447f0b04bb3f73a8c418f291399486e3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455345"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512191"
 ---
 # <a name="access-contacts-as-a-delegate-by-using-ews-in-exchange"></a>Zugriff auf Kontakte als Delegat mithilfe der EWS in Exchange
 
-Informationen zum Zugreifen auf Kontakte als Stellvertretung mithilfe der verwaltete EWS-API oder EWS in Exchange.
+Erfahren Sie, wie Sie mithilfe der verwalteten EWS-API oder EWS in Exchange auf Kontakte als Stellvertretung zugreifen.
   
-Sie können die verwaltete EWS-API oder EWS verwenden, um einem Benutzer Zugriff auf den Ordner Kontakte eines Postfachbesitzers zu gewähren. Der Stellvertreter kann dann Kontakte im Namen des Postfachbesitzers erstellen und Kontakte aus dem Kontaktordner des Postfachbesitzers abrufen, aktualisieren und löschen, je nachdem, welche Berechtigungen Sie besitzen.
+Sie können die verwaltete EWS-API oder EWS verwenden, um einem Benutzer Zugriff auf den Kontaktordner eines Postfachbesitzers zu gewähren. Der Stellvertreter kann dann Kontakte im Namen des Postfachbesitzers erstellen und Kontakte aus dem Kontaktordner des Postfachbesitzers abrufen, aktualisieren und löschen, je nach berechtigungen.
   
-Als Stellvertretung verwenden Sie dieselben Methoden und Vorgänge für den Zugriff auf den Ordner Kontakte eines Postfachbesitzers, den Sie für den Zugriff auf Ihren eigenen Kontaktordner verwenden. Der Hauptunterschied besteht darin, dass Sie [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicit) zum Suchen oder Erstellen eines Kontaktelements verwenden müssen, und nachdem Sie die Element-ID identifiziert haben, können Sie [impliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_implicit) zum Abrufen, aktualisieren oder Löschen des Elements verwenden. 
+Als Stellvertretung verwenden Sie die gleichen Methoden und Vorgänge, um auf den Kontaktordner eines Postfachbesitzers zuzugreifen, den Sie für den Zugriff auf Ihren eigenen Kontakteordner verwenden. Der Hauptunterschied besteht darin, dass Sie [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicit) verwenden müssen, um ein Kontaktelement zu suchen oder zu erstellen. Nachdem Sie die Element-ID identifiziert haben, können Sie impliziten [Zugriff](delegate-access-and-ews-in-exchange.md#bk_implicit) verwenden, um das Element abzurufen, zu aktualisieren oder zu löschen. 
   
-**Tabelle 1. Verwaltete EWS-API Methoden und EWS-Vorgänge für den Zugriff auf einen Kontakt als Stellvertretung**
+**Tabelle 1. EWS Managed API-Methoden und EWS-Vorgänge für den Zugriff auf einen Kontakt als Delegat**
 
 |**Aktion**|**Verwenden Sie diese verwaltete EWS-API-Methode...**|**Verwenden Sie diesen EWS-Vorgang...**|
 |:-----|:-----|:-----|
-|Erstellen eines Kontakts als Stellvertreter  <br/> |[Item. Save](https://msdn.microsoft.com/library/dd635209%28v=exchg.80%29.aspx) , wobei der [Folder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) -Parameter den [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) auf den Ordner "Kontakte" des Postfachbesitzers ermöglicht.  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) , wobei das [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) [-Element](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) die e-Mail-Post Fach Besitzerin angibt  <br/> |
-|Erstellen mehrerer Kontakte als Stellvertretung  <br/> |[Datei "ExchangeService. CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) , wobei der **Folder** -Parameter den [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) auf den Ordner" Kontakte "des Postfachbesitzers ermöglicht  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) , wobei das [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) [-Element](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) die e-Mail-Post Fach Besitzerin angibt  <br/> |
-|Auflösen eines Kontakts als Stellvertreter  <br/> |[Datei "ExchangeService. ResolveName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.resolvename%28v=exchg.80%29.aspx) , wobei der [Folder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) -Parameter den [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) auf den Ordner" Kontakte "des Postfachbesitzers ermöglicht.  <br/> |[ResolveNames](https://msdn.microsoft.com/library/6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb%28Office.15%29.aspx) , wobei das [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) [-Element](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) die e-Mail-Post Fach Besitzerin angibt  <br/> |
-|Suchen nach oder Suchen eines Kontakts als Stellvertreter  <br/> |[Datei "ExchangeService. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) , wobei der **Folder** -Parameter den [expliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) auf den Ordner" Kontakte "des Postfachbesitzers ermöglicht  <br/> |[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) , wobei das [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) [-Element](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) die e-Mail-Post Fach Besitzerin angibt  <br/> |
-|Abrufen eines Kontakts als Stellvertreter  <br/> |[Contact.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact.bind%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |
-|Aktualisieren eines Kontakts als Stellvertreter  <br/> |[Contact. Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact.bind%28v=exchg.80%29.aspx) gefolgt von [Contact. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.update%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) , gefolgt von [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
-|Löschen eines Kontakts als Stellvertreter  <br/> |[Contact. Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact.bind%28v=exchg.80%29.aspx) gefolgt von [Contact. Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.delete%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) , gefolgt von [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
+|Erstellen eines Kontakts als Stellvertretung  <br/> |[Item.Save](https://msdn.microsoft.com/library/dd635209%28v=exchg.80%29.aspx) where the [FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) parameter provides [explicit access](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) to the mailbox owner's Contacts folder  <br/> |[CreateItem,](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) wobei das [Mailbox-Element](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) die [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) des Postfachbesitzers angibt  <br/> |
+|Erstellen mehrerer Kontakte als Stellvertretung  <br/> |[ExchangeService.CreateItems,](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) wobei der **Parameter FolderId** [expliziten Zugriff auf](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) den Kontaktordner des Postfachbesitzers bietet  <br/> |[CreateItem,](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) wobei das [Mailbox-Element](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) die [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) des Postfachbesitzers angibt  <br/> |
+|Auflösen eines Kontakts als Stellvertretung  <br/> |[ExchangeService.ResolveName,](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.resolvename%28v=exchg.80%29.aspx) wobei der [Parameter FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) [expliziten Zugriff auf](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) den Kontakteordner des Postfachbesitzers bietet  <br/> |[ResolveNames,](https://msdn.microsoft.com/library/6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb%28Office.15%29.aspx) wobei das [Mailbox-Element](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) die [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) des Postfachbesitzers angibt  <br/> |
+|Suchen nach oder Suchen eines Kontakts als Stellvertretung  <br/> |[ExchangeService.FindItems,](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) wobei der **Parameter FolderId** [expliziten Zugriff auf](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) den Kontaktordner des Postfachbesitzers bietet  <br/> |[FindItem,](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) wobei das [Mailbox-Element](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) die [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) des Postfachbesitzers angibt  <br/> |
+|Abrufen eines Kontakts als Stellvertretung  <br/> |[Contact.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact.bind%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |
+|Aktualisieren eines Kontakts als Stellvertretung  <br/> |[Contact.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact.bind%28v=exchg.80%29.aspx) gefolgt von [Contact.Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.update%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) gefolgt von [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
+|Löschen eines Kontakts als Stellvertretung  <br/> |[Contact.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact.bind%28v=exchg.80%29.aspx) gefolgt von [Contact.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.delete%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) gefolgt von [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
    
 > [!NOTE]
-> In den Codebeispielen in diesem Artikel ist Primary@contoso.com der Postfachbesitzer. 
+> In den Codebeispielen in diesem Artikel ist primary@contoso.com der Postfachbesitzer. 
 
 <a name="bk_prereq"> </a>
 
 ## <a name="prerequisite-tasks"></a>Erforderliche Aufgaben
 
-Damit ein Benutzer als Stellvertreter auf den Ordner "Kontakte" des Postfachbesitzers zugreifen kann, muss er [als Stellvertreter mit Berechtigungen](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md) für den Ordner "Kontakte" des Postfachbesitzers hinzugefügt werden. 
+Bevor ein Benutzer als Stellvertretung auf den Kontaktordner des Postfachbesitzers zugreifen kann, muss er [als Stellvertreter mit Berechtigungen](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md) für den Kontaktordner des Postfachbesitzers hinzugefügt werden. 
 
 <a name="bk_createewsma"> </a>
 
-## <a name="create-a-contact-as-a-delegate-by-using-the-ews-managed-api"></a>Erstellen eines Kontakts als Stellvertretung mithilfe der verwaltete EWS-API
+## <a name="create-a-contact-as-a-delegate-by-using-the-ews-managed-api"></a>Erstellen eines Kontakts als Delegat mithilfe der verwalteten EWS-API
 
-Mit dem verwaltete EWS-API können Sie das Dienstobjekt für den Stellvertreter Benutzer verwenden, um Kontakte für den Postfachbesitzer zu erstellen. In diesem Beispiel wird gezeigt, wie Sie mit der [Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) -Methode eine Besprechung erstellen und Besprechungsanfragen an die Teilnehmer senden. 
+Mit der verwalteten EWS-API können Sie das Dienstobjekt für den Stellvertreterbenutzer verwenden, um Kontakte für den Postfachbesitzer zu erstellen. In diesem Beispiel wird gezeigt, wie Sie die [Save-Methode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) verwenden, um eine Besprechung zu erstellen und Besprechungsanfragen an die Teilnehmer zu senden. 
   
-In diesem Beispiel wird davon ausgegangen, dass **Service** ein gültiges [Datei "ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) -Objekt für die Stellvertretung ist und dass der Stellvertretung die entsprechenden Berechtigungen für den Kontaktordner des Postfachbesitzers erteilt wurden. 
+In diesem Beispiel wird davon ausgegangen, dass es sich bei dem **Dienst** um ein gültiges [ExchangeService-Objekt](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) für den Delegaten handelt und der Stellvertretung die entsprechenden Berechtigungen für den Kontaktordner des Postfachbesitzers erteilt wurden. 
   
 ```cs
  public static void DelegateAccessCreateContact(ExchangeService service)
@@ -86,13 +86,13 @@ In diesem Beispiel wird davon ausgegangen, dass **Service** ein gültiges [Datei
 }
 ```
 
-Beachten Sie, dass beim Speichern des Elements der Aufruf der [Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) -Methode den Kontaktordner des Postfachbesitzers identifizieren muss. Wenn der Kontaktordner des Postfachbesitzers nicht angegeben ist, wird die Besprechungsanfrage im Kontakteordner des Stellvertreters und nicht im Ordner Kontakte des Postfachbesitzers gespeichert. Sie können den Kontaktordner des Postfachbesitzers in den **Save** -Methodenaufruf auf zweierlei Weise einschließen. Es wird empfohlen, dass Sie eine neue Instanz des [Folder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) -Objekts mit dem [WellKnownFolderName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) und der SMTP-Adresse des Postfachbesitzers instanziieren. 
+Beachten Sie, dass beim Speichern des Elements der Aufruf der [Save-Methode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) den Kontaktordner des Postfachbesitzers identifizieren muss. Wenn der Kontaktordner des Postfachbesitzers nicht angegeben ist, wird die Besprechungsanfrage im Kontaktordner des Stellvertreters und nicht im Kontaktordner des Postfachbesitzers gespeichert. Sie können den Kontaktordner des Postfachbesitzers auf zwei Arten in den **Save-Methodenaufruf** einschließen. Es wird empfohlen, eine neue Instanz des [FolderId-Objekts](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) mithilfe von [WellKnownFolderName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) und der SMTP-Adresse des Postfachbesitzers zu instanziieren. 
   
 ```cs
 contact.Save(new FolderId(WellKnownFolderName.Contacts, "primary@contoso.com"));
 ```
 
-Sie können jedoch auch zuerst eine [Bindung](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) an den Ordner Kontakte herstellen und dann die ID des Ordners im Aufruf der **Save** -Methode verwenden. Beachten Sie jedoch, dass dadurch ein zusätzlicher EWS-Aufruf erstellt wird. 
+Sie können jedoch auch zuerst eine [Bindung](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) an den Ordner "Kontakte" erstellen und dann die ID des Ordners im Aufruf der **Save-Methode** verwenden. Beachten Sie jedoch, dass dadurch ein zusätzlicher EWS-Aufruf erstellt wird. 
   
 ```cs
     // Identify the mailbox owner's SMTP address 
@@ -106,11 +106,11 @@ Sie können jedoch auch zuerst eine [Bindung](https://msdn.microsoft.com/library
 
 <a name="bk_createews"> </a>
 
-## <a name="create-a-contact-as-a-delegate-by-using-ews"></a>Erstellen eines Kontakts als Stellvertretung mithilfe von EWS
+## <a name="create-a-contact-as-a-delegate-by-using-ews"></a>Erstellen eines Kontakts als Delegat mithilfe von EWS
 
-Mit EWS können Sie das Dienstobjekt für den Stellvertreter-Benutzer verwenden, um Kontaktelemente für den Postfachbesitzer zu erstellen. In diesem Beispiel wird gezeigt, wie Sie mithilfe des [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) -Vorgangs einen Kontakt erstellen. 
+Mit EWS können Sie das Dienstobjekt für den Stellvertreterbenutzer verwenden, um Kontaktelemente für den Postfachbesitzer zu erstellen. In diesem Beispiel wird gezeigt, wie Der [CreateItem-Vorgang](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) zum Erstellen eines Kontakts verwendet wird. 
   
-Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die **Save** -Methode zum [Erstellen eines Kontakts](#bk_createewsma)verwenden.
+Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die **Save** -Methode verwenden, um einen Kontakt zu [erstellen.](#bk_createewsma)
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -153,13 +153,13 @@ Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird,
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **CreateItem** -Anforderung mit einer [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Elementwert **noError**enthält, der angibt, dass der Kontakt erfolgreich erstellt wurde. Die Antwort enthält auch die Element-ID des neu erstellten Kontakts.
+Der Server antwortet auf die **CreateItem-Anforderung** mit einer [CreateItemResponse-Nachricht,](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) die den [ResponseCode-Elementwert](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError** enthält, der angibt, dass der Kontakt erfolgreich erstellt wurde. Die Antwort enthält auch die Element-ID des neu erstellten Kontakts.
 
 <a name="bk_resolveewsma"> </a>
 
-## <a name="resolve-a-contact-as-a-delegate-by-using-the-ews-managed-api"></a>Auflösen eines Kontakts als Stellvertretung mithilfe der verwaltete EWS-API
+## <a name="resolve-a-contact-as-a-delegate-by-using-the-ews-managed-api"></a>Auflösen eines Kontakts als Delegat mithilfe der verwalteten EWS-API
 
-Wenn Sie einen Kontakt basierend auf einem möglicherweise nicht eindeutigen Namen oder Ausdruck suchen möchten, müssen Sie eine der [Datei "ExchangeService. ResolveName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.resolvename%28v=exchg.80%29.aspx) -Methoden verwenden, die einen [Folder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) -Parameter enthält, sodass Sie den Kontaktordner des Postfachbesitzers angeben können. 
+Um einen Kontakt basierend auf einem möglicherweise nicht eindeutigen Namen oder Ausdruck zu finden, müssen Sie eine der [ExchangeService.ResolveName-Methoden](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.resolvename%28v=exchg.80%29.aspx) verwenden, die einen [FolderId-Parameter](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) enthalten, damit Sie den Kontaktordner des Postfachbesitzers angeben können. 
   
 ```cs
 private static void DelegateAccessResolveContacts(ExchangeService service)
@@ -184,15 +184,15 @@ private static void DelegateAccessResolveContacts(ExchangeService service)
 }
 ```
 
-Nachdem der **ResolveNames** -Methodenaufruf eine Antwort mit einer ID zurückgibt, können Sie den Kontakt mit der ID und dem [impliziten Zugriff](delegate-access-and-ews-in-exchange.md#bk_implicit) [abrufen, aktualisieren oder löschen](#bk_getewsma) , &mdash; und Sie müssen die SMTP-Adresse des Postfachbesitzers nicht angeben. 
+Nachdem der **ResolveNames-Methodenaufruf** eine Antwort mit einer ID zurückgegeben hat, können Sie den Kontakt mithilfe der ID und des [impliziten Zugriffs](delegate-access-and-ews-in-exchange.md#bk_implicit) [abrufen, aktualisieren oder löschen,](#bk_getewsma) &mdash; und Sie müssen die SMTP-Adresse des Postfachbesitzers nicht angeben. 
 
 <a name="bk_resolveews"> </a>
 
 ## <a name="resolve-a-contact-as-a-delegate-by-using-ews"></a>Auflösen eines Kontakts als Stellvertretung mithilfe von EWS
 
-Mit EWS können Sie das Dienstobjekt für den Stellvertreter verwenden, um partielle Namen im Kontakteordner des Postfachbesitzers aufzulösen. In diesem Beispiel wird gezeigt, wie Sie mithilfe des [ResolveNames](https://msdn.microsoft.com/library/6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb%28Office.15%29.aspx) -Vorgangs Besprechungen im Kontakteordner des Postfachbesitzers finden, die das Wort "Johnson" enthalten. 
+Mit EWS können Sie das Dienstobjekt für den Stellvertreterbenutzer verwenden, um Teilnamen im Kontaktordner des Postfachbesitzers aufzulösen. In diesem Beispiel wird gezeigt, wie sie den [ResolveNames-Vorgang](https://msdn.microsoft.com/library/6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb%28Office.15%29.aspx) verwenden, um Besprechungen im Kontaktordner des Postfachbesitzers zu suchen, die das Wort "csv" enthalten. 
   
-Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird, wenn Sie die **ResolveName** -Methode zum [Auflösen eines Kontakts](#bk_resolveewsma)verwenden.
+Dies ist auch die XML-Anforderung, die die verwaltete EWS-API sendet, wenn Sie die **ResolveName** -Methode zum [Auflösen eines Kontakts](#bk_resolveewsma)verwenden.
   
 ```xml
  <?xml version="1.0" encoding="utf-8"?>
@@ -219,9 +219,9 @@ Dies ist auch die XML-Anforderung, die von der verwaltete EWS-API gesendet wird,
 </soap:Envelope>
 ```
 
-Der Server antwortet auf die **ResolveNames** -Anforderung mit einer [ResolveNamesResponse](https://msdn.microsoft.com/library/5e7be1e2-44ea-403f-9135-2388d030078c%28Office.15%29.aspx) -Nachricht, die den [Response Code](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) -Elementwert **noError**enthält, der angibt, dass der Vorgang erfolgreich abgeschlossen wurde und nur ein Ergebnis gefunden hat, oder **ErrorNameResolutionMultipleResults** , wenn mehrere Ergebnisse gefunden wurden-was im dritten Codebeispiel basierend auf dem Kontakt " [Erstellen eines Kontakts als Stellvertretung mithilfe der verwaltete EWS-API](#bk_createewsma)" angezeigt wird. Die Antwort enthält auch die [ItemID](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) jedes Ergebnisses. 
+Der Server antwortet auf die **ResolveNames-Anforderung** mit einer [ResolveNamesResponse-Nachricht,](https://msdn.microsoft.com/library/5e7be1e2-44ea-403f-9135-2388d030078c%28Office.15%29.aspx) die den [ResponseCode-Elementwert](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **"NoError"** enthält, der angibt, dass der Vorgang erfolgreich abgeschlossen wurde und nur ein Ergebnis gefunden hat, oder **ErrorNameResolutionMultipleResults,** wenn mehrere Ergebnisse gefunden wurden . Dies wird im dritten Codebeispiel basierend auf dem Kontakt ["Kontakt als Stellvertreter erstellen" mithilfe der verwalteten EWS-API](#bk_createewsma)gezeigt. Die Antwort enthält auch die [ItemId](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) jedes Ergebnisses. 
   
-Der Wert des **ItemID** -Elements wurde zur Lesbarkeit gekürzt. 
+Der Wert des **ItemId-Elements** wurde zur besseren Lesbarkeit gekürzt. 
   
 ```XML
  <?xml version="1.0" encoding="utf-8"?>
@@ -275,35 +275,35 @@ Der Wert des **ItemID** -Elements wurde zur Lesbarkeit gekürzt.
 </s:Envelope>
 ```
 
-Da Sie nun die **ItemID** für die Kontakte haben, die dem eindeutigen Namen entsprechen, können Sie Kontaktelemente mithilfe von EWS mithilfe von " **ItemID** " und " [impliziter Zugriff](delegate-access-and-ews-in-exchange.md#bk_implicit)" [als Stellvertretung abrufen, aktualisieren oder löschen](#bk_getews) , &mdash; und Sie müssen die SMTP-Adresse des Postfachbesitzers nicht angeben. 
+Nachdem Sie nun über die **ItemId** für die Kontakte verfügen, die dem mehrdeutigen Namen entsprechen, können Sie [Kontaktelemente mithilfe von EWS mithilfe der](#bk_getews) **ItemId** und des [impliziten Zugriffs](delegate-access-and-ews-in-exchange.md#bk_implicit)als Stellvertretung abrufen, aktualisieren oder &mdash; löschen, und Sie müssen nicht die SMTP-Adresse des Postfachbesitzers angeben. 
 
 <a name="bk_getewsma"> </a>
 
-## <a name="get-update-or-delete-contact-items-as-a-delegate-by-using-the-ews-managed-api"></a>Abrufen, aktualisieren oder Löschen von Kontaktelementen als Stellvertretung mithilfe der verwaltete EWS-API
+## <a name="get-update-or-delete-contact-items-as-a-delegate-by-using-the-ews-managed-api"></a>Abrufen, Aktualisieren oder Löschen von Kontaktelementen als Delegat mithilfe der verwalteten EWS-API
 
-Mit dem verwaltete EWS-API können Sie einen Kontakt abrufen, aktualisieren oder löschen, genauso wie diese Aktionen ausgeführt werden, wenn Sie keinen Stellvertretungszugriff verwenden. Der einzige Unterschied besteht darin, dass das Dienstobjekt für den Stellvertreter Benutzer ist. Die im **Bindungs** Methodenaufruf enthaltene Element-ID identifiziert das Element im Postfachspeicher im Ordner Kontakte des Postfachbesitzers eindeutig. 
+Sie können die verwaltete EWS-API verwenden, um einen Kontakt auf die gleiche Weise abzurufen, zu aktualisieren oder zu löschen, wie Sie diese Aktionen ausführen, wenn Sie keinen Delegatenzugriff verwenden. Der einzige Unterschied besteht darin, dass das Dienstobjekt für den Delegatenbenutzer gilt. Die im **Bind-Methodenaufruf** enthaltene Element-ID identifiziert das Element im Postfachspeicher eindeutig im Kontaktordner des Postfachbesitzers. 
   
-**Tabelle 2. Verwaltete EWS-API Methoden, die mit einem Kontakt als Stellvertretung arbeiten**
+**Tabelle 2. Verwaltete EWS-API-Methoden, die mit einem Kontakt als Delegat arbeiten**
 
 |**Aufgabe**|**EWS Managed API-Methode**|**Codebeispiel**|
 |:-----|:-----|:-----|
-|Abrufen eines Kontakts  <br/> |[Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) <br/> |[Abrufen eines Elements mithilfe der verwaltete EWS-API](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getewsma) <br/> |
-|Einen Kontakt aktualisieren  <br/> |[Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) gefolgt von [Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.update%28v=exchg.80%29.aspx) <br/> |[Aktualisieren eines Elements mithilfe der verwaltete EWS-API](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_updateewsma) <br/> |
-|Löschen eines Kontakts  <br/> |[Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) gefolgt von [Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[Löschen eines Elements mithilfe der verwaltete EWS-API](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteewsma) <br/> |
+|Abrufen eines Kontakts  <br/> |[Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) <br/> |[Abrufen eines Elements mithilfe der verwalteten EWS-API](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getewsma) <br/> |
+|Einen Kontakt aktualisieren  <br/> |[Binden](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) gefolgt von [Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.update%28v=exchg.80%29.aspx) <br/> |[Aktualisieren eines Elements mithilfe der verwalteten EWS-API](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_updateewsma) <br/> |
+|Löschen eines Kontakts  <br/> |[Binden](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) gefolgt von ["Löschen"](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[Löschen eines Elements mithilfe der verwalteten EWS-API](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteewsma) <br/> |
 
 <a name="bk_getews"> </a>
 
-## <a name="get-update-or-delete-contact-items-as-a-delegate-by-using-ews"></a>Abrufen, aktualisieren oder Löschen von Kontaktelementen als Stellvertretung mithilfe von EWS
+## <a name="get-update-or-delete-contact-items-as-a-delegate-by-using-ews"></a>Abrufen, Aktualisieren oder Löschen von Kontaktelementen als Stellvertretung mithilfe von EWS
 
-Sie können EWS verwenden, um einen Besprechungs-oder Termin Kontakt auf die gleiche Weise abzurufen, zu aktualisieren oder zu löschen, wie diese Aktionen ausgeführt werden, wenn Sie keinen Stellvertretungszugriff verwenden. Der einzige Unterschied besteht darin, dass das Dienstobjekt für den Stellvertreter Benutzer ist. Die in der [GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) -Anforderung enthaltene Element-ID identifiziert das Element im Postfachspeicher im Ordner Kontakte des Postfachbesitzers eindeutig. 
+Sie können EWS verwenden, um einen Besprechungs- oder Terminkontakt auf die gleiche Weise abzurufen, zu aktualisieren oder zu löschen, wie Sie diese Aktionen ausführen, wenn Sie keinen Stellvertretungszugriff verwenden. Der einzige Unterschied besteht darin, dass das Dienstobjekt für den Delegatenbenutzer gilt. Die in der [GetItem-Anforderung](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) enthaltene Element-ID identifiziert das Element im Postfachspeicher eindeutig im Kontaktordner des Postfachbesitzers. 
   
-**Tabelle 3. EWS-Vorgänge für das Arbeiten mit einem Kontakt als Stellvertretung**
+**Tabelle 3. EWS-Vorgänge für die Arbeit mit einem Kontakt als Delegat**
 
-|**Task**|**EWS-Vorgang**|**Beispiel**|
+|**Aufgabe**|**EWS-Vorgang**|**Beispiel**|
 |:-----|:-----|:-----|
 |Abrufen eines Kontakts  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |[Abrufen eines Elements mithilfe von EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getews) <br/> |
-|Einen Kontakt aktualisieren  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) , gefolgt von [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |[Aktualisieren eines Elements mithilfe von EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_updateews) <br/> |
-|Löschen eines Kontakts  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) , gefolgt von [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |[Löschen eines Elements mithilfe von EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteews) <br/> |
+|Einen Kontakt aktualisieren  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) gefolgt von [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |[Aktualisieren eines Elements mithilfe von EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_updateews) <br/> |
+|Löschen eines Kontakts  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) gefolgt von [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |[Löschen eines Elements mithilfe von EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteews) <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

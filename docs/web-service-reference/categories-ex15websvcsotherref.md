@@ -1,27 +1,27 @@
 ---
-title: Kategorien
+title: Categories
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Categories
 api_type:
 - schema
 ms.assetid: d84d4927-b524-4e62-bf3d-1f12fec8c21a
-description: Das categories-Element enthält eine Auflistung von Zeichenfolgen, die die Kategorien identifizieren, zu denen ein Element im Postfach gehört.
-ms.openlocfilehash: 0d9f7068aa81306a10436ed0ca0d45f6d3b2c3a3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Categories-Element enthält eine Auflistung von Zeichenfolgen, die die Kategorien identifizieren, zu denen ein Element im Postfach gehört.
+ms.openlocfilehash: a7d9b42b1ce6a5ec26de76c59c713279c134a15c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462213"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518785"
 ---
-# <a name="categories"></a>Kategorien
+# <a name="categories"></a>Categories
 
-Das **Categories** -Element enthält eine Auflistung von Zeichenfolgen, die die Kategorien identifizieren, zu denen ein Element im Postfach gehört. 
+Das **Categories-Element** enthält eine Auflistung von Zeichenfolgen, die die Kategorien identifizieren, zu denen ein Element im Postfach gehört. 
   
 ```XML
 <Categories>
@@ -61,14 +61,14 @@ Keine.
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
 |[Bedingungen](conditions.md) <br/> |Stellt die Bedingungen dar, bei deren Erfüllung die Regelaktionen für eine Regel ausgelöst werden.  <br/> |
-|[Ausnahmen](exceptions.md) <br/> |Stellt alle verfügbaren Regel Ausnahmebedingungen für eine Posteingangsregel dar.  <br/> |
-|[Unterhaltung](conversationaction.md) <br/> |Enthält eine einzelne Aktion, die auf eine einzelne Unterhaltung angewendet werden soll.  <br/> |
+|[Ausnahmen](exceptions.md) <br/> |Stellt alle verfügbaren Regelausnahmebedingungen für eine Posteingangsregel dar.  <br/> |
+|[ConversationAction](conversationaction.md) <br/> |Enthält eine einzelne Aktion, die auf eine einzelne Unterhaltung angewendet werden soll.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

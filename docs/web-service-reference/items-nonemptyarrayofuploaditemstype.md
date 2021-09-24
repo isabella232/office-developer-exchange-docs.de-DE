@@ -1,31 +1,31 @@
 ---
-title: Elemente (NonEmptyArrayOfUploadItemsType)
+title: Items (NonEmptyArrayOfUploadItemsType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Items
 api_type:
 - schema
 ms.assetid: 402bfa6d-11d7-4547-b8bd-197e9922ab49
 description: Das Items-Element enthält ein Array von Elementen, die in ein Postfach hochgeladen werden sollen.
-ms.openlocfilehash: 5c69134c1613b0a4595a6aa876fa09fde63043ea
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 385197bd6b1bd4e8147869a3ffbc6ee7ea5c683f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44441548"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519415"
 ---
-# <a name="items-nonemptyarrayofuploaditemstype"></a>Elemente (NonEmptyArrayOfUploadItemsType)
+# <a name="items-nonemptyarrayofuploaditemstype"></a>Items (NonEmptyArrayOfUploadItemsType)
 
-Das **Items** -Element enthält ein Array von Elementen, die in ein Postfach hochgeladen werden sollen. 
+Das **Items-Element** enthält ein Array von Elementen, die in ein Postfach hochgeladen werden sollen. 
   
 [UploadItems](uploaditems.md)
   
-[Elemente (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md)
+[Items (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md)
   
 ```XML
 <Items>
@@ -46,7 +46,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Element (UploadItemType)](item-uploaditemtype.md) <br/> |Stellt ein einzelnes Element dar, das in ein Postfach hochgeladen werden soll.  <br/> |
+|[Item (UploadItemType)](item-uploaditemtype.md) <br/> |Stellt ein einzelnes Element dar, das in ein Postfach hochgeladen werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -58,7 +58,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
@@ -68,7 +68,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

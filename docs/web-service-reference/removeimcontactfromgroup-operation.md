@@ -5,45 +5,45 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a190bbec-c71b-4e6a-880b-55854c724d8c
-description: Hier finden Sie Informationen zum RemoveImContactFromGroup-EWS-Vorgang.
-ms.openlocfilehash: 4750ef57794c3da540ac36baa8ef6ef093939ea1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum EWS-Vorgang "RemoveImContactFromGroup".
+ms.openlocfilehash: 696e05bfa12f3ddd0c9d7bfca4a58368ee115c2b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466969"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512415"
 ---
 # <a name="removeimcontactfromgroup-operation"></a>RemoveImContactFromGroup-Vorgang
 
-Hier finden Sie Informationen zum **RemoveImContactFromGroup** -EWS-Vorgang. 
+Hier finden Sie Informationen zum **EWS-Vorgang "RemoveImContactFromGroup".** 
   
-Mit dem **RemoveImContactFromGroup** -Vorgang wird ein einzelner Chat Kontakt aus einer Chatgruppe entfernt. 
+Der **RemoveImContactFromGroup-Vorgang** entfernt einen einzelnen Chatkontakt aus einer Chatgruppe. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-removeimcontactfromgroup-operation"></a>Verwenden des RemoveImContactFromGroup-Vorgangs
 
-Für den **RemoveImContactFromGroup** -Vorgang werden zwei Argumente verwendet: eine Kontaktelement-ID und die entsprechende Sofortnachrichten Gruppe, aus der der Kontakt entfernt wird. 
+Der **RemoveImContactFromGroup-Vorgang** verwendet zwei Argumente: einen Kontaktelementbezeichner und die entsprechende Chatgruppe, aus der der Kontakt entfernt wird. 
   
 ### <a name="removeimcontactfromgroup-operation-soap-headers"></a>SOAP-Header des RemoveImContactFromGroup-Vorgangs
 
-Der **RemoveImContactFromGroup** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **RemoveImContactFromGroup-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden sollen. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dieser Header gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur, wie in RFC 3066 definiert, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden soll. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="removeimcontactfromgroup-operation-request-example"></a>RemoveImContactFromGroup-Vorgangsanforderung (Beispiel)
+## <a name="removeimcontactfromgroup-operation-request-example"></a>RemoveImContactFromGroup-Vorgangsanforderungsbeispiel
 
-Im folgenden Beispiel einer **RemoveImContactFromGroup** -Vorgangsanforderung wird gezeigt, wie Sie einen sofortnachrichtenkontakt aus einer Chatgruppe entfernen. 
+Das folgende Beispiel einer **RemoveImContactFromGroup-Vorgangsanforderung** zeigt, wie Sie einen Chatkontakt aus einer Chatgruppe entfernen. 
   
 > [!NOTE]
-> Die Gruppen-und Kontakt-IDs wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Die Gruppen- und Kontaktbezeichner wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -65,7 +65,7 @@ Im folgenden Beispiel einer **RemoveImContactFromGroup** -Vorgangsanforderung wi
 </soap:Envelope>
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [RemoveImContactFromGroup](removeimcontactfromgroup.md)
     
@@ -73,9 +73,9 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [GroupId](groupid.md)
     
-## <a name="successful-removeimcontactfromgroup-operation-response"></a>Erfolgreiche Reaktion des RemoveImContactFromGroup-Vorgangs
+## <a name="successful-removeimcontactfromgroup-operation-response"></a>Erfolgreiche RemoveImContactFromGroup-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **RemoveImContactFromGroup** -Vorgangsanforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **RemoveImContactFromGroup-Vorgangsanforderung.** 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -101,7 +101,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **RemoveImContact
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [RemoveImContactFromGroupResponse](removeimcontactfromgroupresponse.md)
     
@@ -109,7 +109,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 ## <a name="removeimcontactfromgroup-operation-errorinvalidimcontactid-error-response"></a>RemoveImContactFromGroup-Vorgang ErrorInvalidImContactId-Fehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **RemoveImContactFromGroup** -Vorgangsanforderung. Die folgende Fehlermeldung tritt auf, wenn ein Versuch unternommen wird, ein Kontaktelement zu entfernen, das in der Gruppe "Chat" nicht vorhanden ist. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **RemoveImContactFromGroup-Vorgangsanforderung.** Die folgende Fehlerantwort tritt auf, wenn versucht wird, ein Kontaktelement zu entfernen, das nicht in der Chatgruppe vorhanden ist. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -137,7 +137,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort auf eine **RemoveImContactFromGro
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [RemoveImContactFromGroupResponse](removeimcontactfromgroupresponse.md)
     

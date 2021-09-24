@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1e10ca10-3cf6-4f84-92f1-61eaa277f83a
-description: Das TTYTDDPhoneNumbers-Element gibt ein Array von TTY-oder TDD-Texttelefon Nummern und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete Rolle an.
-ms.openlocfilehash: 2a68953537b2f1e1e9a60da8f41c98024451ea36
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das TTYTDDPhoneNumbers-Element gibt ein Array von TTY- oder TDD-Texttelefonnummern und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an.
+ms.openlocfilehash: 087e3560515f65135cc6db84febb129e293f6386
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457067"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527227"
 ---
 # <a name="ttytddphonenumbers"></a>TTYTDDPhoneNumbers
 
-Das **TTYTDDPhoneNumbers** -Element gibt ein Array von TTY-oder TDD-Texttelefon Nummern und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete Rolle an. 
+Das **TTYTDDPhoneNumbers-Element** gibt ein Array von TTY- oder TDD-Texttelefonnummern und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an. 
   
 ```XML
 <TTYTDDPhoneNumbers>
@@ -42,7 +42,7 @@ Keine.
 
 [Persona](persona.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -55,6 +55,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

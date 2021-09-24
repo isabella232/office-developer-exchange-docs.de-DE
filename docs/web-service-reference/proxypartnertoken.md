@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 88d35c05-21fc-4576-b785-c4ba7b6f8d5b
-description: Das ProxyPartnerToken-Element wird vom HTTP-Proxy des Computers verwendet, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist. Dieses Element wird von Exchange-Webdienste Vorgängen nicht verwendet.
-ms.openlocfilehash: 40716d31a26bd885553daec59ea48f90e3c57bfe
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ProxyPartnerToken-Element wird vom HTTP-Proxy des Computers verwendet, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist. Dieses Element wird nicht von Exchange Webdienste(EWS)-Vorgängen verwendet.
+ms.openlocfilehash: f08d40317cff03a1141ee61258b4549a69ebf1c1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457753"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527710"
 ---
 # <a name="proxypartnertoken"></a>ProxyPartnerToken
 
-Das **ProxyPartnerToken** -Element wird vom HTTP-Proxy des Computers verwendet, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist. Dieses Element wird von Exchange-Webdienste Vorgängen nicht verwendet. 
+Das **ProxyPartnerToken-Element** wird vom HTTP-Proxy des Computers verwendet, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist. Dieses Element wird nicht von Exchange Webdienste(EWS)-Vorgängen verwendet. 
   
 ```XML
 <ProxyPartnerToken/>
@@ -40,7 +40,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

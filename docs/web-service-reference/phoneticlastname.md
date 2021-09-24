@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2d8cefc4-b16a-45d0-9ad7-543f83a8eb15
-description: Das PhoneticLastName-Element enthält den Nachnamen eines Kontakts, der phonetisch geschrieben wurde.
-ms.openlocfilehash: b99262f54716af01ee4a07de91363058d05fbe88
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PhoneticLastName -Element enthält den Nachnamen eines Kontakts, phonetisch geschrieben.
+ms.openlocfilehash: 39b7c5a05740071263002a1ddd33f5dd18400cbd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459672"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528136"
 ---
 # <a name="phoneticlastname"></a>PhoneticLastName
 
-Das **PhoneticLastName** -Element enthält den Nachnamen eines Kontakts, der phonetisch geschrieben wurde. 
+Das **PhoneticLastName** -Element enthält den Nachnamen eines Kontakts, phonetisch geschrieben. 
   
 ```XML
 <PhoneticLastName/>
@@ -40,13 +40,13 @@ Keine.
 
 |**Elementname**|**Beschreibung**|
 |:-----|:-----|
-|[Kontaktperson](contact.md) <br/> |Stellt einen Kontakt im Exchange-Informationsspeicher dar.  <br/> |
+|[Kontaktperson](contact.md) <br/> |Stellt einen Kontakt im Exchange Speicher dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist eine Zeichenfolge, die den Nachnamen eines Kontakts darstellt, der phonetisch buchstabiert wird.
+Der Textwert ist eine Zeichenfolge, die den Nachnamen eines Kontakts phonetisch geschrieben darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

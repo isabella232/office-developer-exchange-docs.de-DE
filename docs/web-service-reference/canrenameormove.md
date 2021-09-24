@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CanRenameOrMove
 api_type:
 - schema
 ms.assetid: fe0cdb04-5f2b-4f1d-9d12-7ace0883cd86
-description: Das CanRenameOrMove-Element gibt an, ob ein verwalteter Ordner vom Kunden umbenannt oder verschoben werden kann.
-ms.openlocfilehash: eb6aaeb8b0edcab5b67212c426a44daf32a0cf73
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das CanRenameOrMove-Element gibt an, ob ein verwalteter Ordner umbenannt oder vom Kunden verschoben werden kann.
+ms.openlocfilehash: 7c452ed65860939e834d77894bdb5e913ecb36a8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463363"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518807"
 ---
 # <a name="canrenameormove"></a>CanRenameOrMove
 
-Das **CanRenameOrMove** -Element gibt an, ob ein verwalteter Ordner vom Kunden umbenannt oder verschoben werden kann. 
+Das **CanRenameOrMove-Element** gibt an, ob ein verwalteter Ordner umbenannt oder vom Kunden verschoben werden kann. 
   
 ```xml
 <CanRenameOrMove/>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt einen booleschen Wert dar. Der Wert **true** gibt an, dass der Ordner umbenannt oder verschoben werden kann. der Wert **false** gibt an, dass der Ordner nicht umbenannt oder verschoben werden kann. 
+Der Textwert stellt einen booleschen Wert dar. Der Wert **"true"** gibt an, dass der Ordner umbenannt oder verschoben werden kann. Der Wert **"false"** gibt an, dass der Ordner nicht umbenannt oder verschoben werden kann. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

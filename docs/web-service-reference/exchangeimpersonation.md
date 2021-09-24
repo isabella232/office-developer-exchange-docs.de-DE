@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExchangeImpersonation
 api_type:
 - schema
 ms.assetid: d8cbac49-47d0-4745-a2a7-545d33f8da93
-description: Das ExchangeImpersonation-Element wird im SOAP-Header einer Anforderung verwendet. Wenn dieses Element vorhanden ist, versucht der Aufrufer, das im ExchangeImpersonation-Element enthaltene Konto zu imitieren.
-ms.openlocfilehash: 188219d95453dc45378c6ca65ab93c2de7db4eac
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ExchangeImpersonation-Element wird im SOAP-Header einer Anforderung verwendet. Wenn dieses Element vorhanden ist, versucht der Aufrufer, die Identität des Kontos imItieren, das im ExchangeImpersonation-Element enthalten ist.
+ms.openlocfilehash: 88a0ae18a869c14b9ae3ef2eb3cdfc189c8c60ea
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463349"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59530766"
 ---
 # <a name="exchangeimpersonation"></a>ExchangeImpersonation
 
-Das **ExchangeImpersonation** -Element wird im SOAP-Header einer Anforderung verwendet. Wenn dieses Element vorhanden ist, versucht der Aufrufer, das im **ExchangeImpersonation** -Element enthaltene Konto zu imitieren. 
+Das **ExchangeImpersonation-Element** wird im SOAP-Header einer Anforderung verwendet. Wenn dieses Element vorhanden ist, versucht der Aufrufer, die Identität des Kontos imItieren, das im **ExchangeImpersonation-Element** enthalten ist. 
   
 [ExchangeImpersonation](exchangeimpersonation.md)
   
@@ -44,15 +44,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ConnectingSID](connectingsid.md) <br/> |Stellt ein Konto für den Identitätswechsel dar, wenn Sie den SOAP-ExchangeImpersonation-Header verwenden.  <br/> |
+|[ConnectingSID](connectingsid.md) <br/> |Stellt ein Konto dar, das bei Verwendung des ExchangeImpersonation-SOAP-Headers als Identitätswechsel verwendet werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Anruf Konto muss über das **ms-exch-impersonation** direkt auf dem Client Zugriffsserver und dem **MS-Wechsel-MayImpersonate** -direkt in der Postfachdatenbank, in der das Postfach enthalten ist, den Identitätswechsel oder das Benutzer-Kontaktobjekt Active Directory. 
+Das aufrufende Konto muss über den **ms-exch-Identitätswechsel** rechts auf dem Clientzugriffsserver und über das **Recht "ms-exch-MayImpersonate"** in der Postfachdatenbank verfügen, die das Postfach zum Identitätswechsel enthält, oder über das Active Directory-Benutzer-/Kontaktobjekt. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

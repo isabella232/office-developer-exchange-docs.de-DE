@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 20596ebd-ed0f-4ad0-8631-e504220f1016
-description: Das Mailboxes-Element enthält eine Liste von Postfächern, die vom Haltestatus betroffen sind.
-ms.openlocfilehash: 376bd1f007e4b3d27bc44076a7b09993c49bd416
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Mailboxes-Element enthält eine Liste der Postfächer, die von der Aufbewahrung betroffen sind.
+ms.openlocfilehash: d7eab2b3fb6566380f2ccc4d2419f5eb4a45460a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468159"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528530"
 ---
 # <a name="mailboxes-arrayofstringstype"></a>Postfächer (ArrayOfStringsType)
 
-Das **Mailboxes** -Element enthält eine Liste von Postfächern, die vom Haltestatus betroffen sind. 
+Das **Mailboxes-Element** enthält eine Liste der Postfächer, die von der Aufbewahrung betroffen sind. 
   
 ```XML
 <Mailboxes>
@@ -43,7 +43,7 @@ Keine.
 
 [SetHoldOnMailboxes](setholdonmailboxes.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -55,7 +55,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

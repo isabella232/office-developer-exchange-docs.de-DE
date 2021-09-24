@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CountryOrRegion
 api_type:
 - schema
 ms.assetid: e978cd19-96ce-4ebf-81df-eadf2d775132
-description: Das Country-Element stellt das Land oder die Region für eine bestimmte physikalische Adresse dar.
-ms.openlocfilehash: 2e5b8ec40676123c17d6c7f987f139246dbd0493
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Country-Element stellt das Land oder die Region für eine bestimmte physische Adresse dar.
+ms.openlocfilehash: d29180568be12bc45eb0c38806f4acc5c0f69257
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527096"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518652"
 ---
 # <a name="countryorregion"></a>CountryOrRegion
 
-Das **Country** -Element stellt das Land oder die Region für eine bestimmte physikalische Adresse dar. 
+Das **Country-Element** stellt das Land oder die Region für eine bestimmte physische Adresse dar. 
   
 ```xml
 <Country/>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Text-Wert ist ein String-Wert, der den Namen eines Landes darstellt.
+Der Textwert ist ein Zeichenfolgenwert, der den Namen eines Landes darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - InternetMessageHeaders
 api_type:
 - schema
 ms.assetid: 4dcf8671-96df-4a2d-9836-7e8e3a67e0db
-description: Das InternetMessageHeaders-Element enthält eine Auflistung einiger der Internet Nachrichtenkopfzeilen, die in einem Element in einem Postfach enthalten sind. Verwenden Sie die PR_TRANSPORT_MESSAGE_HEADERS-Eigenschaft, um die gesamte Auflistung von Internet Nachrichtenkopfzeilen abzurufen. Weitere Informationen zu EWS und Internet Nachrichtenkopfzeilen, unterkauf-Internet Nachrichtenkopfzeilen in EWS, MIME und die fehlenden Internet Nachrichtenkopfzeilen.
-ms.openlocfilehash: 4719050c02590e021b29173c234466de3fdc58a4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das InternetMessageHeaders-Element enthält eine Auflistung einiger Internet-Nachrichtenkopfzeilen, die in einem Element in einem Postfach enthalten sind. Verwenden Sie die PR_TRANSPORT_MESSAGE_HEADERS Eigenschaft, um die gesamte Sammlung von Internetnachrichtenkopfzeilen abzurufen. Weitere Informationen zu EWS und Internet-Nachrichtenkopfzeilen finden Sie unterGetting Internet message headersin EWS, MIME, and the missing Internet message headers.
+ms.openlocfilehash: 1ea49f2d5cc31aef09a9bc6d38dff25652696842
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467326"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541080"
 ---
 # <a name="internetmessageheaders"></a>InternetMessageHeaders
 
-Das **InternetMessageHeaders** -Element enthält eine Auflistung einiger der Internet Nachrichtenkopfzeilen, die in einem Element in einem Postfach enthalten sind. Verwenden Sie die **PR_TRANSPORT_MESSAGE_HEADERS** -Eigenschaft, um die gesamte Auflistung von Internet Nachrichtenkopfzeilen abzurufen. Weitere Informationen zu EWS und Internet Nachrichtenkopfzeilen finden Sie unter "Getting Internet Message Headers" in [EWS, MIME und den fehlenden Internet Nachrichten](https://msdn.microsoft.com/library/exchange/hh545614%28v=exchg.140%29.aspx)Kopfzeilen.
+Das **InternetMessageHeaders-Element** enthält eine Auflistung einiger Internet-Nachrichtenkopfzeilen, die in einem Element in einem Postfach enthalten sind. Verwenden Sie die **PR_TRANSPORT_MESSAGE_HEADERS** Eigenschaft, um die gesamte Sammlung von Internetnachrichtenkopfzeilen abzurufen. Weitere Informationen zu EWS- und Internet-Nachrichtenkopfzeilen finden Sie unter "Abrufen von Internetnachrichtenkopfzeilen" in [EWS, MIME und den fehlenden Internetnachrichtenkopfzeilen.](https://msdn.microsoft.com/library/exchange/hh545614%28v=exchg.140%29.aspx)
   
 ```XML
 <InternetMessageHeaders>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[InternetMessageHeader](internetmessageheader.md) <br/> |Stellt den Internet Nachrichtenkopf für eine angegebene Kopfzeile in der Headers-Auflistung dar.  <br/> |
+|[InternetMessageHeader](internetmessageheader.md) <br/> |Stellt den Internetnachrichtenkopf für einen bestimmten Header innerhalb der Headersammlung dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -63,9 +63,9 @@ Keine.
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
 |[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |Stellt eine Vorbehalt Antwort auf eine Besprechungsanfrage.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Im folgenden finden Sie die verwaltete EWS-API erweiterte Eigenschaftsdefinition für die **PR_TRANSPORT_MESSAGE_HEADERS** -Eigenschaft. 
+Es folgt die Definition der erweiterten EWS-API-Eigenschaft für die **PR_TRANSPORT_MESSAGE_HEADERS-Eigenschaft.** 
   
 ```cs
 ExtendedPropertyDefinition transportMsgHdr = new ExtendedPropertyDefinition(0x007D, MapiPropertyType.String);

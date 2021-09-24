@@ -1,27 +1,27 @@
 ---
-title: Iswiederkehr (CalendarEventDetails)
+title: IsRecurring (CalendarEventDetails)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsRecurring
 api_type:
 - schema
 ms.assetid: 42323940-0ccb-4a05-86e4-262bde5e41b0
-description: Das iswiederkehry-Element gibt an, ob das Calendar-Ereignis eine Instanz eines wiederkehrenden Kalenderelements oder eines einzelnen Kalenderelements ist.
-ms.openlocfilehash: f9a9c8b4d2a20d42dbec7cd6fd36935eb0b941f4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IsRecurring-Element gibt an, ob das Kalenderereignis eine Instanz eines Terminserienkalenderelements oder eines einzelnen Kalenderelements ist.
+ms.openlocfilehash: a2285f75455b45c0638b885c386b777ad54e8efd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530253"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518239"
 ---
-# <a name="isrecurring-calendareventdetails"></a>Iswiederkehr (CalendarEventDetails)
+# <a name="isrecurring-calendareventdetails"></a>IsRecurring (CalendarEventDetails)
 
-Das **iswiederkehry** -Element gibt an, ob das Calendar-Ereignis eine Instanz eines wiederkehrenden Kalenderelements oder eines einzelnen Kalenderelements ist. 
+Das **IsRecurring-Element** gibt an, ob das Kalenderereignis eine Instanz eines Terminserienkalenderelements oder eines einzelnen Kalenderelements ist. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -37,7 +37,7 @@ Das **iswiederkehry** -Element gibt an, ob das Calendar-Ereignis eine Instanz ei
   
 [CalendarEventDetails](calendareventdetails.md)
   
-[Iswiederkehr (CalendarEventDetails)](isrecurring-calendareventdetails.md)
+[IsRecurring (CalendarEventDetails)](isrecurring-calendareventdetails.md)
   
 ```xml
 <IsRecurring>true or false</IsRecurring>
@@ -60,13 +60,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CalendarEventDetails](calendareventdetails.md) <br/> |Enthält zusätzliche Informationen zu einem Kalenderereignis.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
+|[CalendarEventDetails](calendareventdetails.md) <br/> |Stellt zusätzliche Informationen zu einem Kalenderereignis bereit.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich, wenn dieses Element in der Antwort zurückgegeben wird. Dieses Element ist erforderlich, wenn das [CalendarEventDetails](calendareventdetails.md) -Element verwendet wird. 
+Wenn dieses Element in der Antwort zurückgegeben wird, ist ein Textwert erforderlich. Dieses Element ist erforderlich, wenn das [CalendarEventDetails-Element](calendareventdetails.md) verwendet wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -88,5 +88,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

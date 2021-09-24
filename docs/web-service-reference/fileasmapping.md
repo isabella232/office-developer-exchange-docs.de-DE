@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FileAsMapping
 api_type:
 - schema
 ms.assetid: 2c98e7c6-09b0-47b3-bbf7-8c4ef9510280
-description: Das FileAsMapping-Element definiert, wie die für einen Kontakt angezeigte Anzeige erstellt wird.
-ms.openlocfilehash: d846c0af0fbad4df9ee800fe136a4ffcc74c8608
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das FileAsMapping-Element definiert, wie erstellt wird, was für einen Kontakt angezeigt wird.
+ms.openlocfilehash: 35397ebd5cb9235ad55093b43bde89eef466e672
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461037"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518505"
 ---
 # <a name="fileasmapping"></a>FileAsMapping
 
-Das **FileAsMapping** -Element definiert, wie die für einen Kontakt angezeigte Anzeige erstellt wird. 
+Das **FileAsMapping-Element** definiert, wie erstellt wird, was für einen Kontakt angezeigt wird. 
   
 ```xml
 <FileAsMapping/>
@@ -50,7 +50,7 @@ Keine.
 
 Der Textwert für dieses Element ist auf einen der folgenden Zeichenfolgenwerte beschränkt:
   
-- Keine
+- Keines
     
 - LastCommaFirst
     
@@ -86,9 +86,9 @@ Der Textwert für dieses Element ist auf einen der folgenden Zeichenfolgenwerte 
     
 - Empty
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

@@ -1,30 +1,30 @@
 ---
-title: base64FolderId (um-Webdienst)
+title: base64FolderId (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - base64FolderId
 api_type:
 - schema
 ms.assetid: 662f8f2f-49a7-4c7a-9065-98a02a49cfcd
-description: Das base64FolderId-Element enthält den Bezeichner des Ordners, der als Standard-e-Mail-Ordner angegeben wird, aus dem Unified Messaging Nachrichten über das Telefon in einer Anforderung für den SetTelephoneAccessFolderEmail-Vorgang (um-Webdienst) liest.
-ms.openlocfilehash: ea31c7a0f93188e563bf95c4a3e6e91f0866746c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das base64FolderId-Element enthält den Bezeichner des Ordners, der als Standard-E-Mail-Ordner angegeben werden soll, aus dem Unified Messaging Nachrichten über das Telefon in einer Um-Webdienstanforderung (SetTelephoneAccessFolderEmail) liest.
+ms.openlocfilehash: 149ad55d0ab09f57b0dc3ace7eb0e17c96265e3f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458047"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518932"
 ---
-# <a name="base64folderid-um-web-service"></a>base64FolderId (um-Webdienst)
+# <a name="base64folderid-um-web-service"></a>base64FolderId (UM-Webdienst)
 
-Das **base64FolderId** -Element enthält den Bezeichner des Ordners, der als Standard-e-Mail-Ordner angegeben wird, aus dem Unified Messaging Nachrichten über das Telefon in einer Anforderung für den [SetTelephoneAccessFolderEmail-Vorgang (um-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md) liest. 
+Das **base64FolderId-Element** enthält den Bezeichner des Ordners, der als Standard-E-Mail-Ordner angegeben werden soll, aus dem Unified Messaging Nachrichten über das Telefon in einer [Um-Webdienstanforderung (SetTelephoneAccessFolderEmail)](settelephoneaccessfolderemail-operation-um-web-service.md) liest. 
   
-[SetTelephoneAccessFolderEmail (um-Webdienst)](settelephoneaccessfolderemail-um-web-service.md)
+[SetTelephoneAccessFolderEmail (UM-Webdienst)](settelephoneaccessfolderemail-um-web-service.md)
   
-[base64FolderId (um-Webdienst)](base64folderid-um-web-service.md)
+[base64FolderId (UM-Webdienst)](base64folderid-um-web-service.md)
   
 ```xml
 <base64FolderId/>
@@ -47,15 +47,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SetTelephoneAccessFolderEmail (um-Webdienst)](settelephoneaccessfolderemail-um-web-service.md) <br/> |Definiert die Anforderung zum Festlegen des e-Mail-Ordners für den Telefon Zugriff.  <br/> |
+|[SetTelephoneAccessFolderEmail (UM-Webdienst)](settelephoneaccessfolderemail-um-web-service.md) <br/> |Definiert die Anforderung zum Festlegen des E-Mail-Ordners für den Telefonzugriff.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der Wert Text stellt die MAPI-ID des Ordners dar.
+Ein Textwert ist erforderlich. Der Textwert stellt die MAPI-ID des Ordners dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie den [SetTelephoneAccessFolderEmail-Vorgang (um-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md), um den e-Mail-Ordner für den Telefon Zugriff festzulegen.
+Verwenden Sie zum Festlegen des E-Mail-Ordners für den Telefonzugriff den [SetTelephoneAccessFolderEmail-Vorgang (UM-Webdienst).](settelephoneaccessfolderemail-operation-um-web-service.md)
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
@@ -63,16 +63,16 @@ Verwenden Sie den [SetTelephoneAccessFolderEmail-Vorgang (um-Webdienst)](settele
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[SetTelephoneAccessFolderEmail (um-Webdienst)](settelephoneaccessfolderemail-um-web-service.md)
+[SetTelephoneAccessFolderEmail (UM-Webdienst)](settelephoneaccessfolderemail-um-web-service.md)
   
-[SetTelephoneAccessFolderEmail-Vorgang (um-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md)
+[SetTelephoneAccessFolderEmail-Vorgang (UM-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md)
   
 [FindFolder-Vorgang](findfolder-operation.md)
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CalendarView
 api_type:
 - schema
 ms.assetid: a4a953b8-0710-416c-95ef-59e51eba9982
-description: Das CalendarView-Element definiert eine FindItem-Operation als zurückgeben von Kalenderelementen in einer Gruppe, wie Sie in einem Kalender angezeigt werden.
-ms.openlocfilehash: e547a4b2db5c09ebefd9a072da6cc4733818002e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das CalendarView-Element definiert einen FindItem-Vorgang als Zurückgeben von Kalenderelementen in einer Gruppe, wie sie in einem Kalender angezeigt werden.
+ms.openlocfilehash: 5e0180bb5e8a6d9fcbe42380abbe32820117ae29
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462262"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518827"
 ---
 # <a name="calendarview"></a>CalendarView
 
-Das **CalendarView** -Element definiert eine [FindItem-Operation](finditem-operation.md) als zurückgeben von Kalenderelementen in einer Gruppe, wie Sie in einem Kalender angezeigt werden. 
+Das **CalendarView-Element** definiert einen [FindItem-Vorgang](finditem-operation.md) als Zurückgeben von Kalenderelementen in einer Gruppe, wie sie in einem Kalender angezeigt werden. 
   
 [FindItem](finditem.md)
   
@@ -41,9 +41,9 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**MaxEntriesReturned** <br/> |Beschreibt die maximale Anzahl von Ergebnissen, die in der FindItem-Antwort zurückgegeben werden.  <br/> |
-|**StartDate** <br/> |Gibt den Anfang einer Zeitspanne an, die für Kalenderelemente abgefragt wird. Alle Kalenderelemente mit einer Endzeit, die vor dem Start **Datum** liegt, werden nicht zurückgegeben. Der Wert von **StartDate** kann in koordinierte Weltzeit (UTC) Format angegeben werden, wie in 2006-01-02T12:00:00Z oder in einem Format, in dem der lokale Zeit-und Zeitzonenoffset angegeben ist, wie in 2006-01-02T04:00:00-08:00.  <br/><br/>Dieses Attribut ist erforderlich.  <br/> |
-|**EndDate** <br/> |Gibt das Ende einer Zeitspanne an, die für Kalenderelemente abgefragt wird. Alle Kalenderelemente mit einer Startzeit, die sich auf oder nach **EndDate** befinden, werden nicht zurückgegeben. Der Wert von **EndDate** kann im UTC-Format angegeben werden, wie in 2006-02-02T12:00:00Z oder in einem Format, in dem der lokale Zeit-und Zeitzonenoffset angegeben ist, wie in 2006-02-02T04:00:00-08:00.  <br/><br/>**EndDate** muss größer als oder gleich **StartDate**sein; Andernfalls wird ein Fehler zurückgegeben. Dieses Attribut ist erforderlich.  <br/> |
+|**MaxEntriesReturned** <br/> |Beschreibt die maximale Anzahl von Ergebnissen, die in der FindItem-Antwort zurückgegeben werden sollen.  <br/> |
+|**StartDate** <br/> |Gibt den Anfang einer Zeitspanne an, die für Kalenderelemente abgefragt wird. Alle Kalenderelemente, deren Endzeit vor **StartDate** liegt, werden nicht zurückgegeben. Der Wert von **StartDate** kann wie in 2006-01-02T12:00:00:00Z (coordinated Universal Time, UTC)-Format oder in einem Format angegeben werden, in dem der Offset für Ortszeit und Zeitzone angegeben ist, wie in 2006-01-02T04:00:00-08:00.  <br/><br/>Dieses Attribut ist erforderlich.  <br/> |
+|**EndDate** <br/> |Gibt das Ende einer Zeitspanne an, die für Kalenderelemente abgefragt wird. Alle Kalenderelemente mit einer Startzeit, die auf oder nach **EndDate** liegt, werden nicht zurückgegeben. Der Wert von **EndDate** kann im UTC-Format angegeben werden, wie in 2006-02-02T12:00:00Z, oder in einem Format, in dem der Ortszeit- und Zeitzonenoffset angegeben ist, wie in 2006-02-02T04:00:00-08:00.  <br/><br/>**EndDate** muss größer oder gleich **StartDate** sein; andernfalls wird ein Fehler zurückgegeben. Dieses Attribut ist erforderlich.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -55,15 +55,15 @@ Keine.
 |:-----|:-----|
 |[FindItem](finditem.md) <br/> |Definiert eine Anforderung zum Suchen von Elementen in einem Postfach.<br/><br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/FindItem` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn das **CalendarView** -Element in einer FindItem-Anforderung angegeben ist, gibt der Webdienst eine Liste einzelner Kalenderelemente und Vorkommen von wiederkehrenden Kalenderelementen innerhalb des durch **StartDate** und **EndDate**angegebenen Bereichs zurück.
+Wenn das **CalendarView** -Element in einer FindItem -Anforderung angegeben ist, gibt der Webdienst eine Liste der einzelnen Kalenderelemente und Vorkommen von wiederkehrenden Kalenderelementen innerhalb des bereichs durch **StartDate** und **EndDate** angegebenen zurück.
   
-Wenn das **CalendarView** -Element in einer FindItem-Anforderung nicht angegeben ist, gibt der Webdienst eine Liste einzelner Kalenderelemente und wiederkehrende Master Kalenderelemente zurück. Kalender Vorkommen eines wiederkehrenden Kalenderelements werden nicht erweitert. 
+Wenn das **CalendarView-Element** nicht in einer FindItem-Anforderung angegeben ist, gibt der Webdienst eine Liste einzelner Kalenderelemente und wiederkehrender Masterkalenderelemente zurück. Kalendervorkommen eines wiederkehrenden Kalenderelements werden nicht erweitert. 
   
-CalendarView-Abfragen sollten nur die folgenden Eigenschaften verwenden, da Sie schnellere Kalenderabfragen unterstützen.
+CalendarView-Abfragen sollten nur die folgenden Eigenschaften verwenden, da sie schnellere Kalenderabfragen unterstützen.
   
-### <a name="recurrence-blob-properties"></a>Serien-BLOB-Eigenschaften
+### <a name="recurrence-blob-properties"></a>Eigenschaften von Serienblobs
   
 - MapiStartTime
     
@@ -75,7 +75,7 @@ CalendarView-Abfragen sollten nur die folgenden Eigenschaften verwenden, da Sie 
     
 - MapiSubject
     
-- Standort
+- Ort
     
 - AppointmentColor
     
@@ -95,13 +95,13 @@ CalendarView-Abfragen sollten nur die folgenden Eigenschaften verwenden, da Sie 
     
 - ChangeHighlight
     
-### <a name="calculated-from-the-primary-recurrence-blob-or-master"></a>Berechnet aus dem primären Serien-BLOB oder-Stamm
+### <a name="calculated-from-the-primary-recurrence-blob-or-master"></a>Berechnet aus dem primären Serienblob oder Master
   
 - ItemId
     
 - IsRecurring
     
-- Isexception
+- IsException
     
 - AppointmentRecurring
     
@@ -121,7 +121,7 @@ CalendarView-Abfragen sollten nur die folgenden Eigenschaften verwenden, da Sie 
     
 - TimeZoneDefinitionEnd
     
-### <a name="master-calendar-item-properties"></a>Eigenschaften des Master Kalenderelements
+### <a name="master-calendar-item-properties"></a>Eigenschaften von Masterkalenderelementen
   
 - EntryId
     
@@ -147,7 +147,7 @@ CalendarView-Abfragen sollten nur die folgenden Eigenschaften verwenden, da Sie 
     
 - AppointmentRecurring
     
-- Isexception
+- IsException
     
 - IsRecurring
     
@@ -159,13 +159,13 @@ CalendarView-Abfragen sollten nur die folgenden Eigenschaften verwenden, da Sie 
     
 - MapiPREndDate
     
-- Kategorien
+- Categories
     
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt eine FindItem-Anforderung. Bei einer erfolgreichen Anforderung wird eine Antwort zurückgegeben, die Kalenderelemente enthält, die in 2006-05-18T00:00:00-08:00 oder nach gestartet und vor 2006-05-19T00:00:00-08:00-beendet wurden.
+Das folgende Beispiel zeigt eine FindItem-Anforderung. Eine erfolgreiche Anforderung gibt eine Antwort zurück, die Kalenderelemente enthält, die bei 2006-05-18T00:00:00-08:00 oder danach begonnen und vor 2006-05-19T00:00:00-08:00 beendet wurden.
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -198,7 +198,7 @@ Das folgende Beispiel zeigt eine FindItem-Anforderung. Bei einer erfolgreichen A
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

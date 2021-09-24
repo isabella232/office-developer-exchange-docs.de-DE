@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 92020822-2a86-4dfc-aee1-3067af4d4edf
 description: Das IconIndex-Element identifiziert den Symbolindex für ein Element oder eine Unterhaltung.
-ms.openlocfilehash: 0f932f5632422a8786e74500bf83cb1337f780c3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f0c024eeedcbda9aa5ad8afdea09a68f2499798e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460785"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541161"
 ---
 # <a name="iconindex"></a>IconIndex
 
-Das **IconIndex** -Element identifiziert den Symbolindex für ein Element oder eine Unterhaltung. 
+Das **IconIndex-Element** identifiziert den Symbolindex für ein Element oder eine Unterhaltung. 
   
 ```XML
 <IconIndex>Default | PostItem | MailRead | MailUnread | MailReplied | MailForwarded | MailEncrypted | MailSmimeSigned | MailEncrytedReplied | MailSmimeSignedReplied | MailEncryptedForwarded | MailSmimeSignedForwarded | MailEncryptedRead | MailSmimeSignedRead | MailIrm | MailIrmForwarded | MailIrmReplied | SmsSubmitted | SmsRoutedToDeliveryPoint | SmsRoutedToExternalMessagingSystem | SmsDelivered | OutlookDefaultForContacts | AppointmentItem | AppointmentRecur | AppointmentMeet | AppointmentMeetRecur | AppointmentMeetNY | AppointmentMeetYes | AppointmentMeetNo | AppointmentMeetMaybe | AppointmentMeetCancel | AppointmentMeetInfo | TaskItem | TaskRecur | TaskOwned | TaskDelegated</IconIndex>
@@ -38,53 +38,53 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Unter [Haltung (conversationtype)](conversation-conversationtype.md)  |  [Element](item.md)  |  [Kontaktinformationen](contact.md)  |  [Verteilerliste](distributionlist.md)  |  [Nachricht](message-ex15websvcsotherref.md)  |  [CalendarItem](calendaritem.md)  |  [PostItem](postitem.md)  |  [Aufgabe](task.md)
+[Unterhaltung (ConversationType)](conversation-conversationtype.md)  |  [Element](item.md)  |  [Kontakt](contact.md)  |  [DistributionList](distributionlist.md)  |  [Nachricht](message-ex15websvcsotherref.md)  |  [CalendarItem](calendaritem.md)  |  [PostItem](postitem.md)  |  [Aufgabe](task.md)
   
 ## <a name="text-value"></a>Textwert
 
-Die folgende Tabelle enthält die möglichen Text Werte für das **IconIndex** -Element. 
+Die folgende Tabelle enthält die möglichen Textwerte für das **IconIndex-Element.** 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |||
 |Standard  <br/> |Gibt das Standardsymbol an.  <br/> |
-|PostItem  <br/> |Gibt das Symbol für ein Beitrags Element an.  <br/> |
-|Mailread  <br/> |Gibt das Symbol e-Mail-Lesezugriff an.  <br/> |
-|MailUnread  <br/> |Gibt das Symbol für ungelesene Nachrichten an.  <br/> |
-|Mailantwortete  <br/> |Gibt das Antwort-e-Mail-Symbol an.  <br/> |
-|Mailforwarded  <br/> |Gibt das Symbol weitergeleitete e-Mail an.  <br/> |
-|Mailencrypted  <br/> |Gibt das verschlüsselte e-Mail-Symbol an.  <br/> |
-|MailSmimeSigned  <br/> |Gibt das Symbol Secure/Multipurpose Internet Mail Extensions (S/MIME) signierten e-Mail an.  <br/> |
-|MailEncryptedReplied  <br/> |Gibt das verschlüsselte Antwort-e-Mail-Symbol an.  <br/> |
-|MailSmimeSignedReplied  <br/> |Gibt das signierte S/MIME-Symbol für Antworten auf e-Mail an.  <br/> |
-|MailEncryptedForwarded  <br/> |Gibt das Symbol für verschlüsselte weitergeleitete e-Mails an.  <br/> |
-|MailSmimeSignedForwarded  <br/> |Gibt das Symbol S/MIME signiert weitergeleitete e-Mails an.  <br/> |
-|MailEncryptedRead  <br/> |Gibt das verschlüsselte Symbol "e-Mail lesen" an.  <br/> |
-|MailSmimeSignedRead  <br/> |Gibt das Symbol S/MIME signierte Nachrichten lesen an.  <br/> |
-|MailIrm  <br/> |Gibt das Symbol für die Verwaltung von Informationsrechten (IRM)-geschützter e-Mail an.  <br/> |
-|MailIrmForwarded  <br/> |Gibt das Symbol für IRM-geschützte weitergeleitete Nachrichten an.  <br/> |
-|MailIrmReplied  <br/> |Gibt das IRM-geschützte Antwort-e-Mail-Symbol an.  <br/> |
-|SmsSubmitted  <br/> |Gibt das Symbol an, das für das SMS-Routing (Short Message Service) gesendet wurde.  <br/> |
-|SmsRoutedToDeliveryPoint  <br/> |Gibt das Symbol für das SMS-Routing an einen externen Zustellungspfad an.  <br/> |
-|SmsRoutedToExternalMessagingSystem  <br/> |Gibt das Symbol für die SMS-Weiterleitung an ein externes Messagingsystem an.  <br/> |
-|SmsDelivered  <br/> |Gibt das Symbol für die SMS-Zustellung an.  <br/> |
+|PostItem  <br/> |Gibt das Symbol für ein Beitragselement an.  <br/> |
+|MailRead  <br/> |Gibt das Symbol zum Lesen von E-Mails an.  <br/> |
+|MailUnread  <br/> |Gibt das ungelesene E-Mail-Symbol an.  <br/> |
+|MailReplied  <br/> |Gibt das Symbol für die Antwort auf E-Mail an.  <br/> |
+|MailForwarded  <br/> |Gibt das Symbol für weitergeleitete E-Mails an.  <br/> |
+|MailEncrypted  <br/> |Gibt das verschlüsselte E-Mail-Symbol an.  <br/> |
+|MailSmimeSigned  <br/> |Gibt das S/MIME-Signierte E-Mail-Symbol (Secure/Multipurpose Internet Mail Extensions) an.  <br/> |
+|MailEncryptedReplied  <br/> |Gibt das symbol für verschlüsselte Antworten auf E-Mails an.  <br/> |
+|MailSmimeSignedReplied  <br/> |Gibt das S/MIME-Symbol an, auf das mit E-Mail-Antworten geantwortet wird.  <br/> |
+|MailEncryptedForwarded  <br/> |Gibt das symbol für verschlüsselte weitergeleitete E-Mails an.  <br/> |
+|MailSmimeSignedForwarded  <br/> |Gibt das S/MIME-Symbol für signierte weitergeleitete E-Mails an.  <br/> |
+|MailEncryptedRead  <br/> |Gibt das verschlüsselte Lese-E-Mail-Symbol an.  <br/> |
+|MailSmimeSignedRead  <br/> |Gibt das mit S/MIME signierte Lese-E-Mail-Symbol an.  <br/> |
+|MailIrm  <br/> |Gibt das IRM-geschützte E-Mail-Symbol an.  <br/> |
+|MailIrmForwarded  <br/> |Gibt das IRM-geschützte Symbol für weitergeleitete E-Mails an.  <br/> |
+|MailIrmReplied  <br/> |Gibt das IRM-geschützte Symbol für antwortende E-Mails an.  <br/> |
+|SmsSubmitted  <br/> |Gibt die für das SMS-Routing (Short Message Service) übermittelte Symbol-E-Mail an.  <br/> |
+|SmsRoutedToDeliveryPoint  <br/> |Gibt das Symbol für das SMS-Routing an einen externen Zustellungspunkt an.  <br/> |
+|SmsRoutedToExternalMessagingSystem  <br/> |Gibt das Symbol für das SMS-Routing an ein externes Messagingsystem an.  <br/> |
+|Zugestellte SMS  <br/> |Gibt das Symbol für zugestellte SMS-E-Mails an.  <br/> |
 |OutlookDefaultForContacts  <br/> |Gibt das Standardsymbol für Kontakte an.  <br/> |
 |AppointmentItem  <br/> |Gibt das Symbol für das Terminelement an.  <br/> |
-|AppointmentRecur  <br/> |Gibt das Symbol für Terminserien Termine an.  <br/> |
+|AppointmentRecur  <br/> |Gibt das Terminseriensymbol an.  <br/> |
 |AppointmentMeet  <br/> |Gibt das Besprechungssymbol an.  <br/> |
 |AppointmentMeetRecur  <br/> |Gibt das Symbol für Besprechungsserien an.  <br/> |
-|AppointmentMeetNY  <br/> |Gibt das Symbol für eine vorläufige Antwort an die Besprechung an.  <br/> |
-|AppointmentMeetYes  <br/> |Gibt das Symbol für die Besprechungs Akzeptanz an.  <br/> |
-|AppointmentMeetNo  <br/> |Gibt das Symbol für Besprechungsablehnung an.  <br/> |
-|AppointmentMeetMaybe  <br/> |Gibt das Symbol für eine eventuelle Antwort auf die Besprechung an.  <br/> |
-|AppointmentMeetCancel  <br/> |Gibt das Symbol für das Besprechungs Abbruch an.  <br/> |
-|AppointmentMeetInfo  <br/> |Gibt das Symbol für die Besprechungsinformationen an.  <br/> |
-|TaskItem  <br/> |Gibt das Aufgabenelement Symbol an.  <br/> |
+|AppointmentMeetNY  <br/> |Gibt das Symbol für eine Mit Vorbehaltsantwort auf die Besprechung an.  <br/> |
+|AppointmentMeetYes  <br/> |Gibt das Symbol für die Besprechungsakzeptanz an.  <br/> |
+|AppointmentMeetNo  <br/> |Gibt das Symbol "Besprechung abgelehnt" an.  <br/> |
+|AppointmentMeetMaybe  <br/> |Gibt das Symbol für eine vielleicht Antwort auf die Besprechung an.  <br/> |
+|AppointmentMeetCancel  <br/> |Gibt das Symbol zum Abbrechen einer Besprechung an.  <br/> |
+|AppointmentMeetInfo  <br/> |Gibt das Symbol für Besprechungsinformationen an.  <br/> |
+|TaskItem  <br/> |Gibt das Aufgabenelementsymbol an.  <br/> |
 |TaskRecur  <br/> |Gibt das Symbol für wiederkehrende Aufgaben an.  <br/> |
-|TaskOwned  <br/> |Gibt das Symbol für den Aufgaben Besitz an.  <br/> |
-|TaskDelegated  <br/> |Gibt das Symbol Aufgabe delegiertes an.  <br/> |
+|TaskOwned  <br/> |Gibt das Symbol im Besitz des Vorgangs an.  <br/> |
+|TaskDelegated  <br/> |Gibt das Symbol "Aufgabe delegiert" an.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -97,6 +97,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

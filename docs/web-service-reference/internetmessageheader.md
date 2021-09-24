@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - InternetMessageHeader
 api_type:
 - schema
 ms.assetid: c70675f8-6feb-4c89-ba48-bce0479b308b
-description: Das InternetMessageHeader-Element stellt den Internet Nachrichtenkopf für eine bestimmte Kopfzeile in der Headers-Auflistung dar. Verwenden Sie die PR_TRANSPORT_MESSAGE_HEADERS-Eigenschaft, um die gesamte Auflistung von Internet Nachrichtenkopfzeilen abzurufen. Weitere Informationen zu EWS-und Internet Nachrichtenkopfzeilen, unterkauf-Internet Nachrichtenkopfzeilen in EWS, MIME und die fehlenden Internet Nachrichtenkopfzeilen.
-ms.openlocfilehash: 7b662617e0b1a1fcdcce3449b729485ba6e0956b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das InternetMessageHeader-Element stellt den Internetnachrichtenkopf für einen bestimmten Header innerhalb der Headersammlung dar. Verwenden Sie die PR_TRANSPORT_MESSAGE_HEADERS Eigenschaft, um die gesamte Sammlung von Internetnachrichtenkopfzeilen abzurufen. Weitere Informationen zu EWS und Internet-Nachrichtenkopfzeilen finden Sie unterGetting internet message headers in EWS, MIME, and the missing Internet message headers.
+ms.openlocfilehash: 4b3072611e8a3debf87ce2a023f4f68ee4487185
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459307"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541084"
 ---
 # <a name="internetmessageheader"></a>InternetMessageHeader
 
-Das **InternetMessageHeader** -Element stellt den Internet Nachrichtenkopf für eine bestimmte Kopfzeile in der Headers-Auflistung dar. Verwenden Sie die **PR_TRANSPORT_MESSAGE_HEADERS** -Eigenschaft, um die gesamte Auflistung von Internet Nachrichtenkopfzeilen abzurufen. Weitere Informationen zu EWS und Internet Nachrichtenkopfzeilen finden Sie unter "Getting Internet Message Headers in [EWS, MIME, and the Missing Internet Message](https://msdn.microsoft.com/library/exchange/hh545614%28v=exchg.140%29.aspx)Headers.
+Das **InternetMessageHeader-Element** stellt den Internetnachrichtenkopf für einen bestimmten Header innerhalb der Headersammlung dar. Verwenden Sie die **PR_TRANSPORT_MESSAGE_HEADERS** Eigenschaft, um die gesamte Sammlung von Internetnachrichtenkopfzeilen abzurufen. Weitere Informationen zu EWS- und Internet-Nachrichtenkopfzeilen finden Sie unter "Abrufen von Internetnachrichtenkopfzeilen in [EWS, MIME und den fehlenden Internetnachrichtenkopfzeilen.](https://msdn.microsoft.com/library/exchange/hh545614%28v=exchg.140%29.aspx)
   
 ```XML
 <InternetMessageHeader HeaderName=""/>
@@ -36,7 +36,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Headername** <br/> |Gibt den Namen des Headers an.  <br/> |
+|**Headername** <br/> |Gibt den Namen der Kopfzeile an.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -46,15 +46,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[InternetMessageHeaders](internetmessageheaders.md) <br/> |Stellt die Auflistung aller Internet Nachrichtenkopfzeilen dar, die in einem Element in einem Postfach enthalten sind.  <br/> |
+|[InternetMessageHeaders](internetmessageheaders.md) <br/> |Stellt die Auflistung aller Internetnachrichtenkopfzeilen dar, die in einem Element in einem Postfach enthalten sind.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt den Wert für den Header dar.
+Der Textwert stellt den Wert für die Kopfzeile dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Im folgenden finden Sie die verwaltete EWS-API erweiterte Eigenschaftsdefinition für die **PR_TRANSPORT_MESSAGE_HEADERS** -Eigenschaft. 
+Es folgt die Definition der erweiterten EWS-API-Eigenschaft für die **PR_TRANSPORT_MESSAGE_HEADERS-Eigenschaft.** 
   
 ```cs
 ExtendedPropertyDefinition transportMsgHdr = new ExtendedPropertyDefinition(0x007D, MapiPropertyType.String);

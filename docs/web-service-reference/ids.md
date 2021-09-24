@@ -1,27 +1,27 @@
 ---
-title: IDs
+title: Ids
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Ids
 api_type:
 - schema
 ms.assetid: c54cdeaf-6761-4d1a-a329-fb279f0e2a64
-description: Das IDs-Element enthält ein Array von Zeit Zonen Definitions Bezeichnern.
-ms.openlocfilehash: 1c5a6974c8d3abc318ff122f3db09d8c3472dc65
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Ids-Element enthält ein Array von Zeitzonendefinitionsbezeichnern.
+ms.openlocfilehash: a5ff1899a50b13213e07005210609194ece61542
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457620"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529788"
 ---
-# <a name="ids"></a>IDs
+# <a name="ids"></a>Ids
 
-Das **IDs** -Element enthält ein Array von Zeit Zonen Definitions Bezeichnern. 
+Das **Ids-Element** enthält ein Array von Zeitzonendefinitionsbezeichnern. 
   
 ```XML
 <Ids>
@@ -42,13 +42,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ID (Zeitzone)](id-timezone.md) <br/> |Das-Element, das eine einzelne Zeitzonendefinition identifiziert.  <br/> |
+|[ID (TimeZone)](id-timezone.md) <br/> |Das Element, das eine einzelne Zeitzonendefinition identifiziert.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetServerTimeZones](getservertimezones.md) <br/> |Definiert eine Anforderung zum Abrufen von Zeitzonendefinitionen vom Exchange-Server.  <br/> |
+|[GetServerTimeZones](getservertimezones.md) <br/> |Definiert eine Anforderung zum Abrufen von Zeitzonendefinitionen vom Exchange Server.  <br/> |
    
 ## <a name="element-information"></a>Informationen zu Elementen
 
@@ -56,7 +56,7 @@ Keine.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

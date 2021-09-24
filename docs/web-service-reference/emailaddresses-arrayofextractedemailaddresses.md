@@ -1,23 +1,23 @@
 ---
-title: Emails (ArrayOfExtractedEmailAddresses)
+title: EmailAddresses (ArrayOfExtractedEmailAddresses)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2c1996b7-a711-416a-9792-998290a87835
-description: Das addresses-Element gibt ein Array von extrahierten e-Mail-Adressen an.
-ms.openlocfilehash: 2a93829d5079b5b71af7bb29124ed03ac929ab1b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das EmailAddresses-Element gibt ein Array extrahierter E-Mail-Adressen an.
+ms.openlocfilehash: bc2410eca7301ca663b4a0b4ed24d874a69e817a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456185"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528645"
 ---
-# <a name="emailaddresses-arrayofextractedemailaddresses"></a>Emails (ArrayOfExtractedEmailAddresses)
+# <a name="emailaddresses-arrayofextractedemailaddresses"></a>EmailAddresses (ArrayOfExtractedEmailAddresses)
 
-Das **EmailAddresses** addresses-Element gibt ein Array von extrahierten e-Mail-Adressen an. 
+Das **EmailAddresses-Element** gibt ein Array extrahierter E-Mail-Adressen an. 
   
 ```XML
 <EmailAddresses>
@@ -36,13 +36,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[E-mailemail (Zeichenfolge)](emailaddress-string.md)
+[EmailAddress (Zeichenfolge)](emailaddress-string.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [Kontakt (ContactType)](contact-contacttype.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

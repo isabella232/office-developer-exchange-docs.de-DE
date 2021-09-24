@@ -5,40 +5,40 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7707aa6a-381d-43f7-a454-54f6343ed127
-description: Hier finden Sie Informationen zum UninstallApp-EWS-Vorgang.
-ms.openlocfilehash: 27931636ee13a251fb03fe804987d7b01a325230
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum EWS-Vorgang "UninstallApp".
+ms.openlocfilehash: 8a301360b2b4c38d85e8c5be2e80c79378d0fd97
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467151"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527146"
 ---
 # <a name="uninstallapp-operation"></a>UninstallApp-Vorgang
 
-Hier finden Sie Informationen zum **UninstallApp** -EWS-Vorgang. 
+Hier finden Sie Informationen zum **EWS-Vorgang "UninstallApp".** 
   
-Der **UninstallApp** -Vorgang deinstalliert eine Mail-App für Outlook. 
+Der **UninstallApp-Vorgang** deinstalliert eine Mail-App für Outlook. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-uninstallapp-operation"></a>Verwenden des UninstallApp-Vorgangs
 
-Der **UninstallApp** -Vorgang verwendet ein Argument in der Anforderung, das die zu deinstallierende Mail-App identifiziert. 
+Der **UninstallApp-Vorgang** verwendet ein Argument in der Anforderung, das die zu deinstallierende Mail-App identifiziert. 
   
 ### <a name="uninstallapp-operation-soap-headers"></a>SOAP-Header des UninstallApp-Vorgangs
 
-Der **UninstallApp** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **UninstallApp-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="uninstallapp-operation-request-example-uninstall-a-mail-app-in-a-mailbox"></a>UninstallApp-Vorgangs Anforderungs Beispiel: Deinstallieren einer Mail-app in einem Postfach
+## <a name="uninstallapp-operation-request-example-uninstall-a-mail-app-in-a-mailbox"></a>UninstallApp-Vorgangsanforderungsbeispiel: Deinstallieren einer Mail-App in einem Postfach
 
-Im folgenden Beispiel einer **UninstallApp** -Vorgangsanforderung wird gezeigt, wie eine Mail-App mithilfe der APP-ID deinstalliert werden kann. Der APP-Bezeichner befindet sich im App-Manifest, das von der [GetAppManifests-Operation](getappmanifests-operation.md)zurückgegeben wird.
+Das folgende Beispiel einer **UninstallApp-Vorgangsanforderung** zeigt, wie eine Mail-App mithilfe des App-Bezeichners deinstalliert wird. Der App-Bezeichner befindet sich im App-Manifest, das vom [GetAppManifests-Vorgang](getappmanifests-operation.md)zurückgegeben wird.
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -56,15 +56,15 @@ Im folgenden Beispiel einer **UninstallApp** -Vorgangsanforderung wird gezeigt, 
 </soap:Envelope>
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [UninstallApp](uninstallapp.md)
     
 - [ID (Zeichenfolge)](id-string.md)
     
-## <a name="successful-uninstallapp-operation-response"></a>Erfolgreiche Reaktion des UninstallApp-Vorgangs
+## <a name="successful-uninstallapp-operation-response"></a>Erfolgreiche UninstallApp-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **UninstallApp** -Vorgangsanforderung zum Deinstallieren einer Mail-app. 
+Das folgende Beispiel zeigt eine  erfolgreiche Antwort auf eine UninstallApp-Vorgangsanforderung zum Deinstallieren einer Mail-App. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -90,15 +90,15 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **UninstallApp** 
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [UninstallAppResponse](uninstallappresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-## <a name="uninstallapp-operation-error-response"></a>Fehlerantwort des UninstallApp-Vorgangs
+## <a name="uninstallapp-operation-error-response"></a>Fehlerantwort beim UninstallApp-Vorgang
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **UninstallApp** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Deinstallieren einer Mail-APP, die bereits deinstalliert wurde. 
+Das folgende Beispiel zeigt eine  Fehlerantwort auf eine UninstallApp-Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Deinstallieren einer Mail-App, die bereits deinstalliert wurde. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -136,7 +136,7 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
+Weitere Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

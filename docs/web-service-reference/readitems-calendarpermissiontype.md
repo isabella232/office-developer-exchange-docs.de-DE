@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ReadItems
 api_type:
 - schema
 ms.assetid: bec01982-26a1-4373-b1e6-2e0c838d83c4
 description: Das ReadItems-Element gibt an, ob ein Benutzer über die Berechtigung zum Lesen von Elementen in einem Kalenderordner verfügt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: e040b643016781f9f890050f189191356f8d4f0b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a12b5316eaebfdf6d0d70468f172f227db7ab3ef
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468299"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519086"
 ---
 # <a name="readitems-calendarpermissiontype"></a>ReadItems (CalendarPermissionType)
 
-Das **ReadItems** -Element gibt an, ob ein Benutzer über die Berechtigung zum Lesen von Elementen in einem Kalenderordner verfügt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **ReadItems-Element** gibt an, ob ein Benutzer über die Berechtigung zum Lesen von Elementen in einem Kalenderordner verfügt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <ReadItems>None or TimeOnly or TimeAndSubjectAndLocation or FullDetails</ReadItems>
@@ -48,18 +48,18 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-In der folgenden Tabelle sind die möglichen Werte für das **ReadItems** -Element aufgeführt. 
+In der folgenden Tabelle sind die möglichen Werte für das **ReadItems-Element** aufgeführt. 
   
-**ReadItems-Element Text Werte**
+**ReadItems-Elementtextwerte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |Keine  <br/> |Gibt an, dass der Benutzer nicht über die Berechtigung zum Anzeigen von Elementen im Kalender verfügt.  <br/> |
-|Nur einmal  <br/> |Gibt an, dass der Benutzer berechtigt ist, nur die Frei/Gebucht-Zeit im Kalender anzuzeigen.  <br/> |
-|TimeAndSubjectAndLocation  <br/> |Gibt an, dass der Benutzer über die Berechtigung zum Anzeigen der Frei/Gebucht-Zeit im Kalender sowie Betreff und Ort von Terminen verfügt.  <br/> |
-|FullDetails  <br/> |Gibt an, dass der Benutzer über die Berechtigung zum Anzeigen aller Elemente im Kalender verfügt, einschließlich Frei/Gebucht-Zeit und Betreff, Ort und Details von Terminen.  <br/> |
+|TimeOnly  <br/> |Gibt an, dass der Benutzer über die Berechtigung verfügt, nur Frei/Gebucht-Zeit im Kalender anzuzeigen.  <br/> |
+|TimeAndSubjectAndLocation  <br/> |Gibt an, dass der Benutzer über die Berechtigung zum Anzeigen von Frei/Gebucht-Zeit im Kalender sowie zum Betreff und Ort von Terminen verfügt.  <br/> |
+|FullDetails  <br/> |Gibt an, dass der Benutzer über die Berechtigung zum Anzeigen aller Elemente im Kalender verfügt, einschließlich Frei/Gebucht-Zeit und Betreff, Standort und Details zu Terminen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

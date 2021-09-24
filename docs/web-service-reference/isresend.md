@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsResend
 api_type:
 - schema
 ms.assetid: 8f758b6b-dcee-4f95-9d39-e4be2bd92961
 description: Das IsResend-Element gibt an, ob das Element zuvor gesendet wurde.
-ms.openlocfilehash: ec0981ceb733389bf2755646c2a85b357a84d348
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 543d0555839e4eb940a7aafb7c464e2b992b533c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467851"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511575"
 ---
 # <a name="isresend"></a>IsResend
 
-Das **IsResend** -Element gibt an, ob das Element zuvor gesendet wurde. 
+Das **IsResend-Element** gibt an, ob das Element zuvor gesendet wurde. 
   
 ```xml
 <IsResend/>
@@ -58,9 +58,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass das Element zuvor gesendet wurde. 
+Der Textwert **"true"** gibt an, dass das Element zuvor gesendet wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

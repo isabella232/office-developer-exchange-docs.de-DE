@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c66c28a5-1b2c-4913-b0c5-e3d9849aa4af
-description: Das PhoneticFirstName-Element enthält den Vornamen eines Kontakts, der phonetisch buchstabiert wird.
-ms.openlocfilehash: a72ae885473e670ab197134fcd44e5d82ce6e450
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PhoneticFirstName-Element enthält den Vornamen eines Kontakts, der phonetisch geschrieben ist.
+ms.openlocfilehash: ec4623c6d44128366c9ef1b1c4bdfea53df7e060
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529945"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528200"
 ---
 # <a name="phoneticfirstname"></a>PhoneticFirstName
 
-Das **PhoneticFirstName** -Element enthält den Vornamen eines Kontakts, der phonetisch buchstabiert wird. 
+Das **PhoneticFirstName-Element** enthält den Vornamen eines Kontakts, der phonetisch geschrieben ist. 
   
 ```XML
 <PhoneticFirstName/>
@@ -44,9 +44,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist eine Zeichenfolge, die den Vornamen eines Kontakts darstellt, der phonetisch buchstabiert wird.
+Der Textwert ist eine Zeichenfolge, die den Vornamen eines Kontakts ( phonetisch geschrieben) darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

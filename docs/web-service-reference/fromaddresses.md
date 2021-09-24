@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FromAddresses
 api_type:
 - schema
 ms.assetid: b219f315-c20a-4633-af3e-94bd3e4526b6
-description: Das FromAddresses-Element gibt die e-Mail-Adressen an, aus denen eingehende Nachrichten gesendet werden müssen, damit die Bedingung oder Ausnahme zutrifft.
-ms.openlocfilehash: 4fbb44d02f5010c4395cf691cb6160da4dbb6930
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das FromAddresses-Element gibt die E-Mail-Adressen an, von denen eingehende Nachrichten gesendet werden müssen, damit die Bedingung oder Ausnahme zutrifft.
+ms.openlocfilehash: b58f805b71329ea779c894427eb9fc73ef414902
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459539"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541273"
 ---
 # <a name="fromaddresses"></a>FromAddresses
 
-Das **FromAddresses** -Element gibt die e-Mail-Adressen an, aus denen eingehende Nachrichten gesendet werden müssen, damit die Bedingung oder Ausnahme zutrifft. 
+Das **FromAddresses-Element** gibt die E-Mail-Adressen an, von denen eingehende Nachrichten gesendet werden müssen, damit die Bedingung oder Ausnahme zutrifft. 
   
 ```XML
 <FromAddresses>
@@ -49,13 +49,13 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Bedingungen](conditions.md) <br/> |Stellt die Bedingungen dar, bei deren Erfüllung die Regelaktionen für eine Regel ausgelöst werden.  <br/> |
-|[Ausnahmen](exceptions.md) <br/> |Stellt alle verfügbaren Regel Ausnahmebedingungen für eine Posteingangsregel dar.  <br/> |
+|[Ausnahmen](exceptions.md) <br/> |Stellt alle verfügbaren Regelausnahmebedingungen für eine Posteingangsregel dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -65,7 +65,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

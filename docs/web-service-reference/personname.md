@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dbd102b8-db70-4196-affe-d7ed66bf3371
-description: Das PersonName-Element gibt den Namen einer Person an, die mithilfe der Entitäts Extraktion gefunden wurde.
-ms.openlocfilehash: 7784cf1abb9098c181450baeb80468faf46c7d99
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PersonName-Element gibt den Namen einer Person an, die mithilfe der Entitätsextraktion gefunden wurde.
+ms.openlocfilehash: a3525559d409c6c06f85637fa622350156f10e06
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44434085"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528469"
 ---
 # <a name="personname"></a>PersonName
 
-Das **PersonName** -Element gibt den Namen einer Person an, die mithilfe der Entitäts Extraktion gefunden wurde. 
+Das **PersonName-Element** gibt den Namen einer Person an, die mithilfe der Entitätsextraktion gefunden wurde. 
   
 ```XML
 <PersonName></PersonName>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **PersonName** -Elements ist der Name einer Person, die als Ergebnis der Entitäts Extraktion gefunden wurde. 
+Der Textwert des **PersonName-Elements** ist der Name einer Person, die als Ergebnis der Entitätsextraktion gefunden wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

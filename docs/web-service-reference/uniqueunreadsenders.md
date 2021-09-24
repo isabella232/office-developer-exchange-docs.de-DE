@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UniqueUnreadSenders
 api_type:
 - schema
 ms.assetid: eb7d1274-ce2e-4ef8-b47f-e911174aab0c
-description: Das UniqueUnreadSenders-Element enthält eine Liste aller Personen, die Nachrichten gesendet haben, die derzeit in dieser Unterhaltung in dem aktuellen Ordner nicht gelesen wurden. Dieses Element ist schreibgeschützt.
-ms.openlocfilehash: 0e45362e88be4930b8bc2f641c1fb00cc63c0605
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das UniqueUnreadSenders-Element enthält eine Liste aller Personen, die Nachrichten gesendet haben, die derzeit in dieser Unterhaltung im aktuellen Ordner ungelesen sind. Dieses Element ist schreibgeschützt.
+ms.openlocfilehash: 6d4099a45d65ab01a12132417eeaa2fde1c1b174
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458852"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527008"
 ---
 # <a name="uniqueunreadsenders"></a>UniqueUnreadSenders
 
-Das **UniqueUnreadSenders** -Element enthält eine Liste aller Personen, die Nachrichten gesendet haben, die derzeit in dieser Unterhaltung in dem aktuellen Ordner nicht gelesen wurden. Dieses Element ist schreibgeschützt. 
+Das **UniqueUnreadSenders-Element** enthält eine Liste aller Personen, die Nachrichten gesendet haben, die derzeit in dieser Unterhaltung im aktuellen Ordner ungelesen sind. Dieses Element ist schreibgeschützt. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -50,7 +50,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[String](string.md) <br/> |Enthält einen einzelnen Unterhaltungs Absender.  <br/> |
+|[String](string.md) <br/> |Enthält einen einzelnen Unterhaltungssender.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -62,9 +62,9 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt. Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, in dem Exchange Webdienste gehostet wird.
+Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt. Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange Webdienste hostet.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UmEnabled
 api_type:
 - schema
 ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
 description: Das UmEnabled-Element gibt an, ob Unified Messaging für ein Konto aktiviert ist.
-ms.openlocfilehash: 7ba7be69868cb439177702f74ff4a2f12875b7ff
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 9ff6432324e3a15b9ae805a7d6d836c9c895059c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468355"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527153"
 ---
 # <a name="umenabled"></a>UmEnabled
 
-Das **UmEnabled** -Element gibt an, ob Unified Messaging für ein Konto aktiviert ist. 
+Das **UmEnabled-Element** gibt an, ob Unified Messaging für ein Konto aktiviert ist. 
   
 ```XML
 <UmEnabled>true | false</UmEnabled>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **UmEnabled** -Elements ist **true** , wenn Unified Messaging für das Konto aktiviert ist; Andernfalls ist der Wert **false**.
+Der Textwert des **UmEnabled-Elements** ist **"true",** wenn Unified Messaging für das Konto aktiviert ist. andernfalls ist der Wert **false**.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element ist erforderlich.
   

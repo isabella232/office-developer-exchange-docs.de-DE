@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ReturnQueueEvents
 api_type:
 - schema
 ms.assetid: 69d22417-320c-4c6f-9fb4-2020f2480bb2
-description: Das ReturnQueueEvents-Element gibt an, dass die Person, die die Aufgabe ausführt, eine privilegierte Rolle besitzt.
-ms.openlocfilehash: 9d07bc8c3d32f1cd532febaf4ae04e4a2d31d243
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ReturnQueueEvents-Element gibt an, dass sich die Person, die die Aufgabe ausführt, in einer privilegierten Rolle befindet.
+ms.openlocfilehash: d80513b8acdae04e447f63c5736622e577ece040
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466591"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512261"
 ---
 # <a name="returnqueueevents"></a>ReturnQueueEvents
 
-Das **ReturnQueueEvents** -Element gibt an, dass die Person, die die Aufgabe ausführt, eine privilegierte Rolle besitzt. 
+Das **ReturnQueueEvents-Element** gibt an, dass sich die Person, die die Aufgabe ausführt, in einer privilegierten Rolle befindet. 
   
 ```XML
 <ReturnQueueEvents>true | false</ReturnQueueEvents>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich. Der Wert **true** gibt an, dass die Person, die die Aufgabe ausführt, eine privilegierte Rolle hat; der Wert **false** gibt an, dass die Person, die die Aufgabe ausführt, keine privilegierte Rolle hat. 
+Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich. Der Wert **"true"** gibt an, dass sich die Person, die die Aufgabe ausführt, in einer privilegierten Rolle befindet. Der Wert **"false"** gibt an, dass sich die Person, die die Aufgabe ausführt, nicht in einer privilegierten Rolle befindet. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -60,7 +60,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

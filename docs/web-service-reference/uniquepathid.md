@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UniquePathId
 api_type:
 - schema
 ms.assetid: 3c917100-907a-4aa1-a7d4-01c65f9a42e4
-description: Das UniquePathId-Element stellt eine Zeichenfolge dar, die für jeden Pfad in einem Überwachungsbericht unterschiedlich ist.
-ms.openlocfilehash: c548619c49c617581f1510126385a6cf480460bb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das UniquePathId-Element stellt eine Zeichenfolge dar, die für jeden Pfad in einem Nachverfolgungsbericht unterschiedlich ist.
+ms.openlocfilehash: 314a683ace9ac2c71f648428f29489ac58a2891b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468180"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512318"
 ---
 # <a name="uniquepathid"></a>UniquePathId
 
-Das **UniquePathId** -Element stellt eine Zeichenfolge dar, die für jeden Pfad in einem Überwachungsbericht unterschiedlich ist. 
+Das **UniquePathId-Element** stellt eine Zeichenfolge dar, die für jeden Pfad in einem Nachverfolgungsbericht unterschiedlich ist. 
   
 ```XML
 <UniquePathId/>
@@ -50,7 +50,7 @@ Keine.
 
 Ein Textwert, der eine Zeichenfolge darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

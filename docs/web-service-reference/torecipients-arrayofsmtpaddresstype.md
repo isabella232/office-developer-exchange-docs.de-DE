@@ -1,23 +1,23 @@
 ---
-title: Torecipients (ArrayOfSmtpAddressType)
+title: ToRecipients (ArrayOfSmtpAddressType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0e6fb89c-de19-48e7-af63-c41ebdf0b8e9
-description: Das torecipients-Element gibt eine Liste der Empfänger an, an die das Element gesendet wurde.
-ms.openlocfilehash: 09b2b1036d8553d4171819bb9e59bbbb01583cb6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ToRecipients-Element gibt eine Liste der Empfänger an, an die das Element gesendet wurde.
+ms.openlocfilehash: ef6e1b78501e8fac3e5c18fe6ffeda17bf24ac00
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468579"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527258"
 ---
-# <a name="torecipients-arrayofsmtpaddresstype"></a>Torecipients (ArrayOfSmtpAddressType)
+# <a name="torecipients-arrayofsmtpaddresstype"></a>ToRecipients (ArrayOfSmtpAddressType)
 
-Das **torecipients** -Element gibt eine Liste der Empfänger an, an die das Element gesendet wurde. 
+Das **ToRecipients-Element** gibt eine Liste der Empfänger an, an die das Element gesendet wurde. 
   
 ```XML
 <ToRecipients>
@@ -42,7 +42,7 @@ Keine.
 
 [SearchPreviewItem](searchpreviewitem.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

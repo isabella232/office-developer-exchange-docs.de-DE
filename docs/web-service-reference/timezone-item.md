@@ -1,27 +1,27 @@
 ---
-title: Zeitzone (Element)
+title: TimeZone (Element)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - TimeZone
 api_type:
 - schema
 ms.assetid: aa49074a-50ca-4959-bee2-6ab90ef2f26e
 description: Das TimeZone-Element stellt eine Textbeschreibung einer Zeitzone bereit.
-ms.openlocfilehash: ba5b006804c66b32781d3e48d88e95ab36c09617
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 5a44e1abe7ef709803c49f3b8e43246a33ac681f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465142"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527286"
 ---
-# <a name="timezone-item"></a>Zeitzone (Element)
+# <a name="timezone-item"></a>TimeZone (Element)
 
-Das **TimeZone** -Element stellt eine Textbeschreibung einer Zeitzone bereit. 
+Das **TimeZone-Element** stellt eine Textbeschreibung einer Zeitzone bereit. 
   
 ```xml
 <TimeZone/>
@@ -49,9 +49,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text beschreibt eine Zeitzone. Diese Eigenschaft ist schreibgeschützt.
+Der Textwert beschreibt eine Zeitzone. Diese Eigenschaft ist schreibgeschützt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

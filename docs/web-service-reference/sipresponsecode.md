@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SIPResponseCode
 api_type:
 - schema
 ms.assetid: 543f5ba2-f2c9-45c9-9e94-acd68e615103
 description: Das SIPResponseCode-Element gibt den SIP-Antwortcode an.
-ms.openlocfilehash: ad66586e0a5abca31f69f9d0e8d275691ef1649d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fd08b3cfb06bed044f212a607629244e80736084
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468040"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59531755"
 ---
 # <a name="sipresponsecode"></a>SIPResponseCode
 
-Das **SIPResponseCode** -Element gibt den SIP-Antwortcode an. 
+Das **SIPResponseCode-Element** gibt den SIP-Antwortcode an. 
   
 ```xml
 <SIPResponseCode/>
@@ -48,11 +48,11 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Einen SIP-Antwortcode.
+Ein SIP-Antwortcode.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im Verzeichnis/EWS/"aus des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im Verzeichnis /ews/ des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

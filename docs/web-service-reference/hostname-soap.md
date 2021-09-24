@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 2ef2ab0d-ba70-46bd-80bb-c1e08da9e9bd
-description: Das Hostname-Element stellt den Hostnamensteil des vollständigen Computernamens des Computers dar.
-ms.openlocfilehash: 2c368e710dc192302bc63bd74bba35d84c5ab705
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Hostname-Element stellt den Hostnamenteil des vollständigen Computernamens des Computers dar.
+ms.openlocfilehash: b607776940233f6df689256e50ba96970f6d033f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460813"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529886"
 ---
 # <a name="hostname-soap"></a>Hostname (SOAP)
 
-Das **Hostname** -Element stellt den Hostnamensteil des vollständigen Computernamens des Computers dar. 
+Das **Hostname-Element** stellt den Hostnamenteil des vollständigen Computernamens des Computers dar. 
   
 ```XML
 <Hostname/>
@@ -41,19 +41,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ProtocolConnection (SOAP)](protocolconnection-soap.md) <br/> |Stellt die Protokollverbindung des Server-Webclients dar.  <br/> |
+|[ProtocolConnection (SOAP)](protocolconnection-soap.md) <br/> |Stellt die Protokollverbindung des Serverwebclients dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Hostname** -Elements entspricht dem Hostnamensteil des vollständigen Computernamens des Computers. 
+Der Textwert des **Hostname-Elements** ist der Hostnamenteil des vollständigen Computernamens des Computers. 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 

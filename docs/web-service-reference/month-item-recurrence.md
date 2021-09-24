@@ -1,27 +1,27 @@
 ---
-title: Month (Elementserie)
+title: Monat (Elementserie)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Month
 api_type:
 - schema
 ms.assetid: d2352001-f959-436a-afd5-a0a07b8ae02a
-description: Das Month-Element beschreibt den Monat, in dem ein jährliches wiederkehrendes Element auftritt.
-ms.openlocfilehash: d881c617374bc9545552ad77f2f2b355efdf2359
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Month-Element beschreibt den Monat, in dem ein jährliches Wiederkehrendes Element auftritt.
+ms.openlocfilehash: 01d8874db3b539ba1f4c64b3fbd9b83b5b0828b6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468635"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510960"
 ---
-# <a name="month-item-recurrence"></a>Month (Elementserie)
+# <a name="month-item-recurrence"></a>Monat (Elementserie)
 
-Das **Month** -Element beschreibt den Monat, in dem ein jährliches wiederkehrendes Element auftritt. 
+Das **Month-Element** beschreibt den Monat, in dem ein jährliches Wiederkehrendes Element auftritt. 
   
 ```xml
 <Month/>
@@ -49,7 +49,7 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Im folgenden sind die möglichen Text Werte für dieses Element angegeben:
+Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses Element:
   
 - Januar
     
@@ -75,7 +75,7 @@ Ein Textwert ist erforderlich. Im folgenden sind die möglichen Text Werte für 
     
 - Dezember
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

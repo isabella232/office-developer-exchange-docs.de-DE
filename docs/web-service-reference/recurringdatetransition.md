@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RecurringDateTransition
 api_type:
 - schema
 ms.assetid: 52fe1e05-3c50-40a1-8752-5c3c64c9f1ed
-description: Das RecurringDateTransition-Element stellt einen Zeitzonenübergang dar, der jedes Jahr an einem bestimmten Datum auftritt.
-ms.openlocfilehash: 2acbd3afb50a92d4e4f3d7b552eecb36fe59be8b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das RecurringDateTransition-Element stellt einen Zeitzonenübergang dar, der jedes Jahr an einem bestimmten Datum erfolgt.
+ms.openlocfilehash: 864f3f539c5440fbfc539ca6c2042b3d9edca267
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461576"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529363"
 ---
 # <a name="recurringdatetransition"></a>RecurringDateTransition
 
-Das **RecurringDateTransition** -Element stellt einen Zeitzonenübergang dar, der jedes Jahr an einem bestimmten Datum auftritt. 
+Das **RecurringDateTransition-Element** stellt einen Zeitzonenübergang dar, der jedes Jahr an einem bestimmten Datum erfolgt. 
   
 ```xml
 <RecurringDateTransition>
@@ -45,23 +45,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[To](to.md) <br/> |Gibt den [Zeitraum](period.md) oder die [Transitions](transitionsgroup.md) an, der das Ziel des Zeit Zonen Übergangs darstellt.  <br/> |
-|[Offset](timeoffset.md) <br/> |Stellt den Offset für die Dauer der koordinierten Weltzeit (Coordinated Universal Time, UTC) für den Zeitzonenübergang dar.  <br/> |
-|[Month (Zeitzonenübergang)](month-time-zone-transition.md) <br/> |Stellt den Monat dar, in dem der Zeitzonenübergang erfolgt.  <br/> |
-|[Day](day.md) <br/> |Stellt den Tag des Monats dar, in dem der Zeitzonenübergang erfolgt.  <br/> |
+|[To](to.md) <br/> |Gibt den [Zeitraum](period.md) oder die [TransitionsGroup](transitionsgroup.md) an, die das Ziel des Zeitzonenübergangs ist.  <br/> |
+|[TimeOffset](timeoffset.md) <br/> |Stellt den Zeitoffset der koordinierten Weltzeit (COORDINATED Universal Time, UTC) für den Zeitzonenübergang dar.  <br/> |
+|[Monat (Zeitzonenübergang)](month-time-zone-transition.md) <br/> |Stellt den Monat dar, in dem der Zeitzonenübergang erfolgt.  <br/> |
+|[Day](day.md) <br/> |Stellt den Tag des Monats dar, an dem der Zeitzonenübergang erfolgt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Übergänge](transitions.md) <br/> |Stellt eine Auflistung von Zeit Zonen Übergängen dar.  <br/> |
-|[Transitiongroup](transitionsgroup.md) <br/> |Stellt eine Auflistung von Zeit Zonen Übergängen dar.  <br/> |
+|[Übergänge](transitions.md) <br/> |Stellt eine Auflistung von Zeitzonenübergängen dar.  <br/> |
+|[TransitionsGroup](transitionsgroup.md) <br/> |Stellt eine Auflistung von Zeitzonenübergängen dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Ein Beispiel für einen Zeitzonenübergang, der durch das [RecurringDateTransition](recurringdatetransition.md) -Element dargestellt werden kann, ist ein Übergang, der jedes Jahr am 15. März stattfindet. 
+Ein Beispiel für einen Zeitzonenübergang, der durch das [RecurringDateTransition-Element](recurringdatetransition.md) dargestellt werden könnte, ist ein Übergang, der jedes Jahr am 15. März stattfindet. 
   
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

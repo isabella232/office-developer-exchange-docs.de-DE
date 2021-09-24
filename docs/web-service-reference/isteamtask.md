@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsTeamTask
 api_type:
 - schema
 ms.assetid: af0095da-e5bb-4138-a01c-c203f1a5a33f
-description: Das IsTeamTask-Element gibt an, ob die Aufgabe einem Team gehört.
-ms.openlocfilehash: 27b5efbac028dbe7cf5858b198e3a33f9f6cdc86
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IsTeamTask-Element gibt an, ob die Aufgabe im Besitz eines Teams ist.
+ms.openlocfilehash: aa644bd812f046bc708f9839a70d088468d558be
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468446"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529789"
 ---
 # <a name="isteamtask"></a>IsTeamTask
 
-Das **IsTeamTask** -Element gibt an, ob die Aufgabe einem Team gehört. 
+Das **IsTeamTask-Element** gibt an, ob die Aufgabe im Besitz eines Teams ist. 
   
 ```xml
 <IsTeamTask/>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt einen booleschen Wert dar, der angibt, ob eine Aufgabe einem Team gehört. Dies ist eine schreibgeschützte Eigenschaft.
+Der Textwert stellt einen booleschen Wert, der angibt, ob eine Aufgabe im Besitz eines Teams ist. Dies ist eine schreibgeschützte Eigenschaft.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

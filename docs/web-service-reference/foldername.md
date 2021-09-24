@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FolderName
 api_type:
 - schema
 ms.assetid: c5a2cd55-ac47-43bf-94b5-3ab3a4c28a62
 description: Das FolderName-Element identifiziert einen einzelnen verwalteten benutzerdefinierten Ordner, der einem Postfach hinzugefügt werden soll.
-ms.openlocfilehash: 1bb63e50c06e81337d1142a6624213fb2db12457
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 76263d56c423411a58ea45d691ce93e2b3202571
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461352"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511565"
 ---
 # <a name="foldername"></a>FolderName
 
-Das **FolderName** -Element identifiziert einen einzelnen verwalteten benutzerdefinierten Ordner, der einem Postfach hinzugefügt werden soll. 
+Das **FolderName-Element** identifiziert einen einzelnen verwalteten benutzerdefinierten Ordner, der einem Postfach hinzugefügt werden soll. 
   
 [CreateManagedFolder](createmanagedfolder.md)
   
@@ -54,15 +54,15 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der Wert Text stellt einen Ordnernamen dar.
+Ein Textwert ist erforderlich. Der Textwert stellt einen Ordnernamen dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Obwohl Sie Exchange Webdienste verwenden können, um einem Postfach verwaltete benutzerdefinierte Ordner hinzuzufügen, können Sie nicht dieselbe Technologie für den Zugriff auf die Liste der verfügbaren verwalteten benutzerdefinierten Ordner verwenden. Sie können eine Liste verwalteter benutzerdefinierter Ordner abrufen, indem Sie einen Exchange-Verwaltungsshell-Befehl verwenden oder eine API verwenden, die mit dem Active Directory-Verzeichnisdienst Schnittstellen. Der Ordnername ist der Name des entsprechenden Active Directory-Objekts.
+Obwohl Sie Exchange Webdienste verwenden können, um einem Postfach verwaltete benutzerdefinierte Ordner hinzuzufügen, können Sie nicht dieselbe Technologie verwenden, um auf die Liste der verfügbaren verwalteten benutzerdefinierten Ordner zuzugreifen. Sie können eine Liste der verwalteten benutzerdefinierten Ordner mithilfe eines Befehls Exchange Verwaltungsshell oder mithilfe einer API abrufen, die mit dem Active Directory-Verzeichnisdienst verbunden ist. Der Ordnername ist der Name des entsprechenden Active Directory-Objekts.
   
-Sie können den [FindFolder-Vorgang](findfolder-operation.md) verwenden, um verwaltete benutzerdefinierte Ordner zu suchen. Verwenden Sie den [DeleteFolder-Vorgang](deletefolder-operation.md) , um verwaltete benutzerdefinierte Ordner zu löschen. 
+Sie können den [FindFolder-Vorgang](findfolder-operation.md) verwenden, um verwaltete benutzerdefinierte Ordner zu suchen. Verwenden Sie den [DeleteFolder-Vorgang,](deletefolder-operation.md) um verwaltete benutzerdefinierte Ordner zu löschen. 
   
-Es ist wichtig zu beachten, dass **FolderName** der Name eines vorhandenen verwalteten benutzerdefinierten Ordners in der Organisation ist. Ein Versuch, einen Ordner hinzuzufügen, der nicht in der Organisation liegt, führt zu einer Fehlermeldung. 
+Es ist wichtig zu beachten, dass **FolderName** der Name eines vorhandenen verwalteten benutzerdefinierten Ordners in der Organisation ist. Der Versuch, einen Ordner hinzuzufügen, der sich nicht in der Organisation befindet, führt zu einer Fehlerantwort. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

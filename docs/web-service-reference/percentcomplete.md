@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PercentComplete
 api_type:
 - schema
 ms.assetid: 58a67f8a-c4dc-42dc-97ae-a9e5cc672d2d
-description: Das PercentComplete-Element beschreibt den Abschlussstatus einer Aufgabe.
-ms.openlocfilehash: b7dd2f18bd3ef6addeb6d3a7b004510f35b9cb3d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PercentComplete-Element beschreibt den Abschlussstatus eines Vorgangs.
+ms.openlocfilehash: 48e6163377d51d64f63e966c525def48f930733e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456885"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519247"
 ---
 # <a name="percentcomplete"></a>PercentComplete
 
-Das **PercentComplete** -Element beschreibt den Abschlussstatus einer Aufgabe. 
+Das **PercentComplete-Element** beschreibt den Abschlussstatus eines Vorgangs. 
   
 ```xml
 <PercentComplete/>
@@ -50,9 +50,9 @@ Keine.
 
 Ein Textwert, der eine ganze Zahl zwischen 0 und 100 darstellt, ist erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Festlegen von **PercentComplete** auf 100 hat dieselbe Auswirkung wie das [Completed](completedate.md) -Element festlegen oder das [Status](status.md) -Element auf **Completed**festlegen. In einer Anforderung, die mindestens zwei dieser Eigenschaften festlegt, bestimmt die zuletzt verarbeitete Eigenschaft den Wert, der für diese Elemente festgelegt ist. Wenn beispielsweise **PercentComplete** 100 ist, das [Completed](completedate.md) -Objekt vom 1. Januar 2007 und [der Status](status.md) notstartedfestgelegt ist und die Eigenschaften in dieser Reihenfolge gestreamt werden, wird der [Status](status.md) des Vorgangs auf notstartedfestgelegt, das Endergebnis [auf](completedate.md) **null**und **PercentComplete** auf 0 festgelegt. 
+Das Festlegen von **PercentComplete** auf 100 hat die gleiche Auswirkung wie das Festlegen des [CompleteDate](completedate.md) -Elements oder das Festlegen des [Status](status.md) -Elements auf **Abgeschlossen**. In einer Anforderung, die mindestens zwei dieser Eigenschaften festlegt, bestimmt die zuletzt verarbeitete Eigenschaft den Wert, der für diese Elemente festgelegt wird. Wenn **"PercentComplete"** beispielsweise "100", ["CompleteDate"](completedate.md) der 1. Januar 2007 und ["Status"](status.md) "NotStarted" ist und die Eigenschaften in dieser Reihenfolge gestreamt werden, wird der [Status](status.md) der Aufgabe auf "NotStarted", ["CompleteDate"](completedate.md) auf **"null"** und **"PercentComplete"** auf "0" festgelegt. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

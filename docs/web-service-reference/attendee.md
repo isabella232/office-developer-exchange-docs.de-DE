@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Attendee
 api_type:
 - schema
 ms.assetid: 393c3d7e-7416-458a-b976-270b88eaaa03
 description: Das Attendee-Element stellt Teilnehmer und Ressourcen für eine Besprechung dar.
-ms.openlocfilehash: f376e59b27017e0a9d27692cb1a4ae759cd1af0e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d48dcee42292b045ffc7cdcc5fd02f70109b1853
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457648"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59531194"
 ---
 # <a name="attendee"></a>Teilnehmer
 
-Das **Attendee** -Element stellt Teilnehmer und Ressourcen für eine Besprechung dar. 
+Das **Attendee-Element** stellt Teilnehmer und Ressourcen für eine Besprechung dar. 
   
 ```xml
 <Attendee>
@@ -44,7 +44,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Postfach](mailbox.md) <br/> |Identifiziert eine vollständig aufgelöste e-Mail-Adresse.  <br/> |
+|[Postfach](mailbox.md) <br/> |Identifiziert eine vollständig aufgelöste E-Mail-Adresse.  <br/> |
 |[ResponseType](responsetype.md) <br/> |Stellt den Typ der Empfängerantwort dar, die für eine Besprechung empfangen wird. Diese Eigenschaft ist nur für das Kalenderelement eines Besprechungsorganisators relevant.  <br/> |
 |[LastResponseTime](lastresponsetime.md) <br/> |Stellt das Datum und die Uhrzeit der letzten empfangenen Antwort dar.  <br/> |
 |[ProposedStart](proposedstart-attendeetype.md) <br/> |Stellt die vorgeschlagene Startzeit eines Teilnehmers für eine Besprechung dar. <br/> |
@@ -54,11 +54,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RequiredAttendees](requiredattendees.md) <br/> |Stellt Teilnehmer dar, die für die Teilnahme an einer Besprechung erforderlich sind.  <br/> |
-|[OptionalAttendees](optionalattendees.md) <br/> |Stellt Teilnehmer dar, die für die Teilnahme an einer Besprechung nicht erforderlich sind.  <br/> |
+|[RequiredAttendees](requiredattendees.md) <br/> |Stellt Teilnehmer dar, die an einer Besprechung teilnehmen müssen.  <br/> |
+|[OptionalAttendees](optionalattendees.md) <br/> |Stellt Teilnehmer dar, die nicht an einer Besprechung teilnehmen müssen.  <br/> |
 |[Ressourcen](resources.md) <br/> |Stellt eine geplante Ressource für eine Besprechung dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

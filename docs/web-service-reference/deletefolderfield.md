@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteFolderField
 api_type:
 - schema
 ms.assetid: f9c2187b-4c60-4358-b4b4-ede50eadae48
 description: Das DeleteFolderField-Element stellt einen Vorgang zum Löschen einer bestimmten Eigenschaft aus einem Ordner während eines UpdateFolder-Aufrufs dar.
-ms.openlocfilehash: a0b48b667c8c8afbd5729d5deb84359a6a6ccc25
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: b2a7b94cb1f017960ea7ae553cefe9bc390d9256
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462157"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528985"
 ---
 # <a name="deletefolderfield"></a>DeleteFolderField
 
-Das **DeleteFolderField** -Element stellt einen Vorgang zum Löschen einer bestimmten Eigenschaft aus einem Ordner während eines UpdateFolder-Aufrufs dar. 
+Das **DeleteFolderField-Element** stellt einen Vorgang zum Löschen einer bestimmten Eigenschaft aus einem Ordner während eines UpdateFolder-Aufrufs dar. 
   
 - [UpdateFolder](updatefolder.md) 
 - [FolderChanges](folderchanges.md)  
@@ -61,17 +61,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member einer Dictionary-Eigenschaft.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert erweiterte MAPI-Eigenschaften.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifies frequently referenced properties by URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifies individual members of a dictionary property.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifies extended MAPI properties.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Updates (Ordner)](updates-folder.md) <br/> |Enthält eine Gruppe von Elementen, die Append-, festlegen-und DELETE-Änderungen an Ordner Eigenschaften definieren.  <br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/UpdateFolder/FolderChanges/FolderChange[i]/Updates` <br/> |
+|[Updates (Ordner)](updates-folder.md) <br/> |Enthält eine Reihe von Elementen, die Änderungen an Ordnereigenschaften definieren, festlegen und löschen.  <br/> Es folgt der XPath-Ausdruck für dieses Element:  `/UpdateFolder/FolderChanges/FolderChange[i]/Updates` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - NumberOfMembers
 api_type:
 - schema
 ms.assetid: 845fb877-de49-4e26-8885-6f026edd9ee9
 description: Das NumberOfMembers-Element stellt die Anzahl der Benutzer, Ressourcen und Räume in einer Verteilerliste dar.
-ms.openlocfilehash: c91087f42d806afb0a0d3d607cc84f14a1a6c1b0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d1a0f2afc1935f846dbe3d5ce1ba4385cf3cf8dd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462598"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529790"
 ---
 # <a name="numberofmembers"></a>NumberOfMembers
 
-Das **NumberOfMembers** -Element stellt die Anzahl der Benutzer, Ressourcen und Räume in einer Verteilerliste dar. 
+Das **NumberOfMembers-Element** stellt die Anzahl der Benutzer, Ressourcen und Räume in einer Verteilerliste dar. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -62,11 +62,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |Enthält aggregierte Konfliktinformationen über die Anzahl der verfügbaren Benutzer, die Anzahl der Benutzer mit Konflikten sowie die Anzahl der Benutzer, die in einer Verteilerliste keine Verfügbarkeitsinformationen für eine vorgeschlagene Besprechungszeit haben.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/GroupAttendeeConflictData` <br/> |
+|[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |Enthält aggregierte Konfliktinformationen über die Anzahl der verfügbaren Benutzer, die Anzahl der Benutzer, die Konflikte haben, und die Anzahl der Benutzer, die keine Verfügbarkeitsinformationen in einer Verteilerliste für eine vorgeschlagene Besprechungszeit haben.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/GroupAttendeeConflictData` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der maximale Wert des **NumberOfMembers** -Elements ist 100. 
+Der Maximalwert des **NumberOfMembers-Elements** beträgt 100. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -88,5 +88,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

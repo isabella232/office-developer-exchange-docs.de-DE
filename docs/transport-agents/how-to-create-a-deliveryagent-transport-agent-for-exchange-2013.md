@@ -5,15 +5,15 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4af904d7-b315-4849-92b1-66018f76ffdf
 description: Erfahren Sie, wie Sie einen benutzerdefinierten DeliveryAgent-Transport-Agent für die Verwendung mit Exchange 2013 erstellen.
-ms.openlocfilehash: b349f0b6d835ba3d6195b43e80d1dcd21750bf82
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: b465c3bbd4658bea700d5be9f4eb16ae81693717
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527572"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526933"
 ---
 # <a name="create-a-deliveryagent-transport-agent-for-exchange-2013"></a>Erstellen eines DeliveryAgent-Transport-Agents für Exchange 2013
 
@@ -21,19 +21,19 @@ Erfahren Sie, wie Sie einen benutzerdefinierten DeliveryAgent-Transport-Agent f�
   
 **Gilt für:** Exchange Server 2013
   
-Die [DeliveryAgentFactory \<Manager\> ](https://msdn.microsoft.com/library/dd877550(v=exchg.150).aspx) -und [DeliveryAgent](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent(v=exchg.150).aspx) -Klassen sind die Basisklassen für Transport-Agents, die für die Ausführung auf dem Transportdienst auf einem Exchange Server 2013 Post Fach Server ausgelegt sind. Sie können Handler in Ihrem DeliveryAgent-Transport-Agent für die von der [DeliveryAgent](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent(v=exchg.150).aspx) -Klasse bereitgestellten Ereignisse implementieren, die in der folgenden Tabelle aufgeführt sind. 
+Die [Klassen \<Manager\> DeliveryAgentFactory](https://msdn.microsoft.com/library/dd877550(v=exchg.150).aspx) und [DeliveryAgent](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent(v=exchg.150).aspx) sind die Basisklassen für Transport-Agents, die für die Ausführung auf dem Transportdienst auf einem Exchange Server 2013-Postfachserver entwickelt wurden. Sie können Handler in Ihrem DeliveryAgent-Transport-Agent für die Ereignisse implementieren, die von der [DeliveryAgent-Klasse](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent(v=exchg.150).aspx) bereitgestellt werden, die in der folgenden Tabelle aufgeführt sind. 
   
-**Tabelle 1. Ereignisse der DeliveryAgent-Klasse**
+**Tabelle 1. DeliveryAgent-Klassenereignisse**
 
-|**Event**|**Beschreibung**|
+|Document.SelectionChanged **-Ereignis**|**Beschreibung**|
 |:-----|:-----|
-|[OnCloseConnection](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.oncloseconnection(v=exchg.150).aspx) <br/> |Tritt ein, nachdem das letzte e-Mail-Element zugestellt wurde und die Verbindung geschlossen wurde.  <br/> |
-|[OnDeliverMailItem](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.ondelivermailitem(v=exchg.150).aspx) <br/> |Tritt ein, wenn ein e-Mail-Element bereit zur Zustellung ist.  <br/> |
-|[OnOpenConnection](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.onopenconnection(v=exchg.150).aspx) <br/> |Tritt auf, wenn der Zustellungs-Agent zur e-Mail-Zustellung geöffnet wird.  <br/> |
+|[OnCloseConnection](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.oncloseconnection(v=exchg.150).aspx) <br/> |Tritt ein, nachdem das letzte E-Mail-Element zugestellt wurde und die Verbindung geschlossen wurde.  <br/> |
+|[OnDeliverMailItem](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.ondelivermailitem(v=exchg.150).aspx) <br/> |Tritt auf, wenn ein E-Mail-Element für die Zustellung bereit ist.  <br/> |
+|[OnOpenConnection](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.onopenconnection(v=exchg.150).aspx) <br/> |Tritt auf, wenn der Zustellungs-Agent für die E-Mail-Zustellung geöffnet wird.  <br/> |
    
 ## <a name="creating-a-custom-deliveryagent-transport-agent"></a>Erstellen eines benutzerdefinierten DeliveryAgent-Transport-Agents
 
-Im folgenden Verfahren wird beschrieben, wie ein benutzerdefinierter DeliveryAgent-Transport-Agent erstellt wird. 
+Im folgenden Verfahren wird beschrieben, wie Sie einen benutzerdefinierten DeliveryAgent-Transport-Agent erstellen. 
   
 ### <a name="to-create-the-transport-agent"></a>So erstellen Sie den Transport-Agent
 
@@ -45,9 +45,9 @@ Im folgenden Verfahren wird beschrieben, wie ein benutzerdefinierter DeliveryAge
     
    ```
 
-   Sie können diese Namespaces auf Ihrem Exchange-Server finden. Durch Hinzufügen eines Verweises auf diese Namespaces haben Sie Zugriff auf die [DeliveryAgent](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent(v=exchg.150).aspx) -Mitglieder. 
+   Sie finden diese Namespaces auf Ihrem Exchange Server. Durch Hinzufügen eines Verweises auf diese Namespaces haben Sie Zugriff auf die [DeliveryAgent-Elemente.](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent(v=exchg.150).aspx) 
     
-2. Implementieren Sie die abgeleitete Klasse für [die \<Manager\> DeliveryAgentFactory](https://msdn.microsoft.com/library/dd877550(v=exchg.150).aspx) -Klasse. 
+2. Implementieren Sie die abgeleitete Klasse für die [ \<Manager\> DeliveryAgentFactory-Klasse.](https://msdn.microsoft.com/library/dd877550(v=exchg.150).aspx) 
     
    ```cs
       public class MyDeliveryAgentFactory : DeliveryAgentFactory<MyDeliveryAgentFactory.MyDeliveryAgentManager>
@@ -73,7 +73,7 @@ Im folgenden Verfahren wird beschrieben, wie ein benutzerdefinierter DeliveryAge
   
    ```
 
-   Mit diesem Code wird die abgeleitete Klasse instanziiert und die **createagent** -Methode überschrieben, um eine Instanz des neuen benutzerdefinierten Agents zu erstellen. Zusätzliche Methoden wie **Close**können in dieser Klasse auch zum Ausführen von benutzerdefiniertem Code überschrieben werden. Eine [DeliveryAgentManager](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgentManager.aspx) -Klasse wird erstellt, um die [SupportedDeliveryProtocol](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgentManager.SupportedDeliveryProtocol.aspx) -Eigenschaft außer Kraft zu setzen und das Protokoll festzulegen, das Ihr Agent verwenden wird. 
+   Dieser Code instanziiert die abgeleitete Klasse und überschreibt die **CreateAgent-Methode,** um eine Instanz des neuen benutzerdefinierten Agents zu erstellen. Zusätzliche Methoden, z. **B. Close**, können in dieser Klasse auch überschrieben werden, um benutzerdefinierten Code auszuführen. Eine [DeliveryAgentManager-Klasse](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgentManager.aspx) wird erstellt, um die [SupportedDeliveryProtocol-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgentManager.SupportedDeliveryProtocol.aspx) zu überschreiben und das Protokoll festzulegen, das der Agent verwendet. 
     
 3. Definieren Sie Ihren Agent.
     
@@ -90,7 +90,7 @@ Im folgenden Verfahren wird beschrieben, wie ein benutzerdefinierter DeliveryAge
   
    ```
 
-   Nachdem Sie Ihre Agent-Klasse definiert haben, können Sie benutzerdefinierte Funktionen hinzufügen. In diesem Beispiel werden die drei Ereignisse [OnCloseConnection](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.oncloseconnection(v=exchg.150).aspx), [OnDeliverMailItem](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.ondelivermailitem(v=exchg.150).aspx)und [OnOpenConnection](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.onopenconnection(v=exchg.150).aspx)zu Ihren benutzerdefinierten Ereignishandlern umgeleitet. 
+   Nachdem Sie die Agentklasse definiert haben, können Sie benutzerdefinierte Funktionen hinzufügen. In diesem Beispiel werden die drei Ereignisse ["OnCloseConnection",](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.oncloseconnection(v=exchg.150).aspx) ["OnDeliverMailItem"](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.ondelivermailitem(v=exchg.150).aspx)und ["OnOpenConnection"](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.onopenconnection(v=exchg.150).aspx)an die benutzerdefinierten Ereignishandler umgeleitet. 
     
 ## <a name="see-also"></a>Siehe auch
 

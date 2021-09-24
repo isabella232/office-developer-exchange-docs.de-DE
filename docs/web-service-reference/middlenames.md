@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e924c66f-d17f-44e5-9e8e-e02d6117f431
-description: Das MiddleNames-Element gibt ein Array von Werten des mittleren namens und die Bezeichner der Quell Zuweisungen für die zugeordnete Rolle an.
-ms.openlocfilehash: 08a2a4b1fafac6cdf25a745968a269b1c0ab6494
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MiddleNames-Element gibt ein Array von Werten für den mittleren Namen und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an.
+ms.openlocfilehash: 088086eb0dc586b2f873d8a3864459526639ea04
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466269"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518218"
 ---
 # <a name="middlenames"></a>MiddleNames
 
-Das **MiddleNames** -Element gibt ein Array von Werten des mittleren namens und die Bezeichner der Quell Zuweisungen für die zugeordnete Rolle an. 
+Das **MiddleNames-Element** gibt ein Array von Werten für den mittleren Namen und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an. 
   
 ```XML
 <MiddleNames>
@@ -42,7 +42,7 @@ Keine.
 
 [Persona](persona.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f41b5be6-9b79-4e83-8cdb-aa779e13cb3f
-description: Das DisableReason-Element gibt den Grund für das Deaktivieren einer APP an.
-ms.openlocfilehash: 1406d69647bde5389dc9bb61adf7537a57d5adfc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DisableReason-Element gibt den Grund für das Deaktivieren einer App an.
+ms.openlocfilehash: 8156dac17e81dd1c3f49575491924185b04d53e9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463671"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528836"
 ---
 # <a name="disablereason"></a>DisableReason
 
-Das **DisableReason** -Element gibt den Grund für das Deaktivieren einer APP an. 
+Das **DisableReason-Element** gibt den Grund für das Deaktivieren einer App an. 
   
 ```XML
 <DisableReason> NoReason | OutlookClientPerformance | OWAClientPerformance | MobileClientPerformance </DisableReason>
@@ -40,20 +40,20 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DisableApp](disableapp.md) <br/> |Gibt eine Anforderung zum Deaktivieren einer APP an.  <br/> |
+|[DisableApp](disableapp.md) <br/> |Gibt eine Anforderung zum Deaktivieren einer App an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-**DisableReason-Element Text Wert**
+**DisableReason-Elementtextwert**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Noreason  <br/> |Kein Grund angegeben  <br/> |
-|OutlookClientPerformance  <br/> |Zur Verbesserung der Leistung von e-Mail-Clients.  <br/> |
-|OWAClientPerformance  <br/> |Zur Verbesserung der Leistung von webapp-Clients.  <br/> |
-|MobileClientPerformance  <br/> |Um die Leistung des mobilen Clients zu verbessern.  <br/> |
+|NoReason  <br/> |Kein Grund angegeben  <br/> |
+|OutlookClientPerformance  <br/> |Um die Leistung des E-Mail-Clients zu verbessern.  <br/> |
+|OWAClientPerformance  <br/> |Um die Leistung des Web App-Clients zu verbessern.  <br/> |
+|MobileClientPerformance  <br/> |Zur Verbesserung der Leistung mobiler Clients.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -65,7 +65,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

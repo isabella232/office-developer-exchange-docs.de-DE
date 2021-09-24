@@ -1,30 +1,30 @@
 ---
-title: PlayOnPhoneDialString (um-Webdienst)
+title: PlayOnPhoneDialString (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PlayOnPhoneDialString
 api_type:
 - schema
 ms.assetid: 81ce51b9-c201-4a7d-b29b-351a697970b7
-description: Das PlayOnPhoneDialString-Element enthält einen Wert für die standardmäßige Wählzeichenfolge in einer Anforderung für den GetUMProperties-Vorgang (um-Webdienst).
-ms.openlocfilehash: 31fb9961b5c4b902414fbca15101abf3e3beb965
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PlayOnPhoneDialString-Element enthält einen Wert für die Standardwählzeichenfolge in einer GetUMProperties-Vorgangsanforderung (UM-Webdienst).
+ms.openlocfilehash: 2ce4d461be6bbbcb7c89868044c542f27ea84420
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459202"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527975"
 ---
-# <a name="playonphonedialstring-um-web-service"></a>PlayOnPhoneDialString (um-Webdienst)
+# <a name="playonphonedialstring-um-web-service"></a>PlayOnPhoneDialString (UM-Webdienst)
 
-Das **PlayOnPhoneDialString** -Element enthält einen Wert für die standardmäßige Wählzeichenfolge in einer Anforderung für den [GetUMProperties-Vorgang (um-Webdienst)](getumproperties-operation-um-web-service.md) . 
+Das **PlayOnPhoneDialString-Element** enthält einen Wert für die Standardwählzeichenfolge in einer [GetUMProperties-Vorgangsanforderung (UM-Webdienst).](getumproperties-operation-um-web-service.md) 
   
-[GetUMPropertiesResponse (um-Webdienst)](getumpropertiesresponse-um-web-service.md)
+[GetUMPropertiesResponse (UM-Webdienst)](getumpropertiesresponse-um-web-service.md)
   
-[PlayOnPhoneDialString (um-Webdienst)](playonphonedialstring-um-web-service.md)
+[PlayOnPhoneDialString (UM-Webdienst)](playonphonedialstring-um-web-service.md)
   
 ```xml
 <PlayOnPhoneDialString/>
@@ -47,7 +47,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUMPropertiesResponse (um-Webdienst)](getumpropertiesresponse-um-web-service.md) <br/> |Definiert eine Antwort auf eine [GetUMProperties-Vorgangsanforderung (um-Webdienst)](getumproperties-operation-um-web-service.md) .  <br/> |
+|[GetUMPropertiesResponse (UM-Webdienst)](getumpropertiesresponse-um-web-service.md) <br/> |Definiert eine Antwort auf eine [GetUMProperties-Vorgangsanforderung (UM-Webdienst).](getumproperties-operation-um-web-service.md)  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
@@ -59,14 +59,14 @@ Ein Textwert ist erforderlich.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[GetUMProperties-Vorgang (um-Webdienst)](getumproperties-operation-um-web-service.md)
+[GetUMProperties-Vorgang (UM-Webdienst)](getumproperties-operation-um-web-service.md)
   
-[SetPlayOnPhoneDialString-Vorgang (um-Webdienst)](setplayonphonedialstring-operation-um-web-service.md)
+[SetPlayOnPhoneDialString-Vorgang (UM-Webdienst)](setplayonphonedialstring-operation-um-web-service.md)
 

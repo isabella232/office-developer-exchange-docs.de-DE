@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ReplyToItem
 api_type:
 - schema
 ms.assetid: 35ee751a-41c0-4216-ad8b-78f7ada43a2f
-description: Das ReplyToItem-Element enthält eine Antwort an den Absender eines Elements in der Exchange-Informationsspeicher.
-ms.openlocfilehash: fc40335dc73327820c0b39cafa07168d1f27851d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ReplyToItem-Element enthält eine Antwort an den Absender eines Elements im Exchange Speicher.
+ms.openlocfilehash: 772627538046f5fd58cc4126505a6f34c7637fb2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529854"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512373"
 ---
 # <a name="replytoitem"></a>ReplyToItem
 
-Das **ReplyToItem** -Element enthält eine Antwort an den Absender eines Elements in der Exchange-Informationsspeicher. 
+Das **ReplyToItem-Element** enthält eine Antwort an den Absender eines Elements im Exchange Speicher. 
   
 ```xml
 <ReplyToItem>
@@ -54,31 +54,31 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Betreff](subject.md) <br/> |Stellt die Subject-Eigenschaft Exchange-Informationsspeicher Elemente dar.  <br/> |
-|[Body](body.md) <br/> |Stellt den tatsächlichen Textinhalt einer Nachricht dar.  <br/> |
+|[Betreff](subject.md) <br/> |Stellt die Betreffeigenschaft Exchange Speicherelemente dar.  <br/> |
+|[Body](body.md) <br/> |Stellt den tatsächlichen Textkörperinhalt einer Nachricht dar.  <br/> |
 |[ToRecipients](torecipients.md) <br/> |Enthält eine Reihe von Benutzern eines Elements. Dies sind die primären Empfänger eines Elements.  <br/> |
 |[CcRecipients](ccrecipients.md) <br/> |Stellt eine Auflistung der Empfänger dar, die eine Kopie der Nachricht erhalten.  <br/> |
-|[BccRecipients](bccrecipients.md) <br/> |Stellt eine Auflistung von Empfängern dar, die eine Blindkopie (BCC) einer e-Mail-Nachricht erhalten sollen.  <br/> |
+|[BccRecipients](bccrecipients.md) <br/> |Stellt eine Auflistung von Empfängern dar, die eine blinde Kopie (Bcc) einer E-Mail-Nachricht erhalten sollen.  <br/> |
 |[IsReadReceiptRequested](isreadreceiptrequested.md) <br/> |Gibt an, ob der Absender eines Elements eine Lesebestätigung anfordert.  <br/> |
-|[IsDeliveryReceiptRequested](isdeliveryreceiptrequested.md) <br/> |Gibt an, ob der Absender eines Elements eine Zustellungsbestätigung anfordert.  <br/> |
+|[IsDeliveryReceiptRequested](isdeliveryreceiptrequested.md) <br/> |Gibt an, ob der Absender eines Elements einen Übermittlungsbeleg anfordert.  <br/> |
 |[From](from.md) <br/> |Stellt die Adresse dar, von der die Nachricht gesendet wurde.  <br/> |
-|[ReferenceItemId](referenceitemid.md) <br/> |Gibt das Element an, auf das das Response-Objekt verweist.  <br/> |
-|[NewBodyContent](newbodycontent.md) <br/> |Stellt den neuen Textkörper Inhalt einer Nachricht dar.  <br/> |
-|[ReceivedBy](receivedby.md) <br/> |Identifiziert die Stellvertretung in einem Stellvertretungs-Zugriffs Szenario. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
-|[ReceivedRepresenting](receivedrepresenting.md) <br/> |Identifiziert den Prinzipal in einem Stellvertretungs-Zugriffs Szenario. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[ReferenceItemId](referenceitemid.md) <br/> |Gibt das Element an, auf das sich das Antwortobjekt bezieht.  <br/> |
+|[NewBodyContent](newbodycontent.md) <br/> |Stellt den neuen Textkörperinhalt einer Nachricht dar.  <br/> |
+|[ReceivedBy](receivedby.md) <br/> |Identifiziert den Delegaten in einem Delegatzugriffsszenario. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
+|[ReceivedRepresenting](receivedrepresenting.md) <br/> |Identifiziert den Prinzipal in einem Stellvertretungs-Zugriffsszenario. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AdjacentMeetings](adjacentmeetings.md) <br/> | Beschreibt alle Elemente, die an eine Besprechungszeit angrenzen. <br/> <br/>  Im folgenden finden Sie einige der XPath-Ausdrücke für dieses Element: <br/> <br/>  `/CalendarItem/AdjacentMeetings` <br/>  `/MeetingRequest/AdjacentMeetings` <br/>  `/SetItemField/CalendarItem/AdjacentMeetings` <br/>  `/AppendToItemField/CalendarItem/AdjacentMeetings` <br/>  `/AcceptItem/Attachments/ItemAttachment/CalendarItem/AdjacentMeetings` <br/>  `/DeclineItem/Attachments/ItemAttachment/CalendarItem/AdjacentMeetings` <br/>  `/TentativelyAcceptItem/Attachments/ItemAttachment/CalendarItem/AdjacentMeetings` <br/>  `/UpdateItem/ItemChanges/ItemChange/Updates/SetItemField/CalendarItem/AdjacentMeetings` <br/>  `/UpdateItem/ItemChanges/ItemChange/Updates/AppendToItemField/CalendarItem/AdjacentMeetings` <br/>  `/CreateAttachmentResponseMessage/Attachments/ItemAttachment/CalendarItem/AdjacentMeetings` <br/>  `/GetAttachmentResponseMessage/Attachments/ItemAttachment/CalendarItem/AdjacentMeetings` <br/> |
-|[ConflictingMeetings](conflictingmeetings.md) <br/> | Beschreibt alle Elemente, die mit einer Besprechungszeit in Konflikt stehen. <br/> <br/>  Im folgenden finden Sie einige der XPath-Ausdrücke für dieses Element: <br/> <br/>  `/CalendarItem/ConflictingMeetings` <br/>  `/MeetingRequest/ConflictingMeetings` <br/>  `/SetItemField/CalendarItem/ConflictingMeetings` <br/>  `/AppendToItemField/CalendarItem/ConflictingMeetings` <br/>  `/AcceptItem/Attachments/ItemAttachment/CalendarItem/ConflictingMeetings` <br/>  `/DeclineItem/Attachments/ItemAttachment/CalendarItem/ConflictingMeetings` <br/>  `/TentativelyAcceptItem/Attachments/ItemAttachment/CalendarItem/ConflictingMeetings` <br/>  `/UpdateItem/ItemChanges/ItemChange/Updates/SetItemField/CalendarItem/ConflictingMeetings` <br/>  `/UpdateItem/ItemChanges/ItemChange/Updates/AppendToItemField/CalendarItem/ConflictingMeetings` <br/>  `/CreateAttachmentResponseMessage/Attachments/ItemAttachment/CalendarItem/ConflictingMeetings` <br/>  `/GetAttachmentResponseMessage/Attachments/ItemAttachment/CalendarItem/ConflictingMeetings` <br/> |
-|[ResponseObjects](responseobjects.md) <br/> |Enthält eine Auflistung aller Response-Objekte, die einem Element in der Exchange-Informationsspeicher zugeordnet sind.  <br/> |
-|[Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |Enthält ein Array von Elementen, die in dem Ordner erstellt werden sollen, der durch das [parentfolderid (TargetFolderIdType)-](parentfolderid-targetfolderidtype.md) Element identifiziert wird.  <br/> |
+|[AdjacentMeetings](adjacentmeetings.md) <br/> | Beschreibt alle Elemente neben einer Besprechungszeit. <br/> <br/>  Nachfolgend sind einige der XPath-Ausdrücke für dieses Element aufgeführt: <br/> <br/>  `/CalendarItem/AdjacentMeetings` <br/>  `/MeetingRequest/AdjacentMeetings` <br/>  `/SetItemField/CalendarItem/AdjacentMeetings` <br/>  `/AppendToItemField/CalendarItem/AdjacentMeetings` <br/>  `/AcceptItem/Attachments/ItemAttachment/CalendarItem/AdjacentMeetings` <br/>  `/DeclineItem/Attachments/ItemAttachment/CalendarItem/AdjacentMeetings` <br/>  `/TentativelyAcceptItem/Attachments/ItemAttachment/CalendarItem/AdjacentMeetings` <br/>  `/UpdateItem/ItemChanges/ItemChange/Updates/SetItemField/CalendarItem/AdjacentMeetings` <br/>  `/UpdateItem/ItemChanges/ItemChange/Updates/AppendToItemField/CalendarItem/AdjacentMeetings` <br/>  `/CreateAttachmentResponseMessage/Attachments/ItemAttachment/CalendarItem/AdjacentMeetings` <br/>  `/GetAttachmentResponseMessage/Attachments/ItemAttachment/CalendarItem/AdjacentMeetings` <br/> |
+|[ConflictingMeetings](conflictingmeetings.md) <br/> | Beschreibt alle Elemente, die mit einer Besprechungszeit in Konflikt geraten. <br/> <br/>  Nachfolgend sind einige der XPath-Ausdrücke für dieses Element aufgeführt: <br/> <br/>  `/CalendarItem/ConflictingMeetings` <br/>  `/MeetingRequest/ConflictingMeetings` <br/>  `/SetItemField/CalendarItem/ConflictingMeetings` <br/>  `/AppendToItemField/CalendarItem/ConflictingMeetings` <br/>  `/AcceptItem/Attachments/ItemAttachment/CalendarItem/ConflictingMeetings` <br/>  `/DeclineItem/Attachments/ItemAttachment/CalendarItem/ConflictingMeetings` <br/>  `/TentativelyAcceptItem/Attachments/ItemAttachment/CalendarItem/ConflictingMeetings` <br/>  `/UpdateItem/ItemChanges/ItemChange/Updates/SetItemField/CalendarItem/ConflictingMeetings` <br/>  `/UpdateItem/ItemChanges/ItemChange/Updates/AppendToItemField/CalendarItem/ConflictingMeetings` <br/>  `/CreateAttachmentResponseMessage/Attachments/ItemAttachment/CalendarItem/ConflictingMeetings` <br/>  `/GetAttachmentResponseMessage/Attachments/ItemAttachment/CalendarItem/ConflictingMeetings` <br/> |
+|[ResponseObjects](responseobjects.md) <br/> |Enthält eine Auflistung aller Antwortobjekte, die einem Element im Exchange Speicher zugeordnet sind.  <br/> |
+|[Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |Enthält ein Array von Elementen, die im Ordner erstellt werden sollen, der vom [ParentFolderId (TargetFolderIdType)-Element](parentfolderid-targetfolderidtype.md) identifiziert wird.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das [from](from.md) -Element sollte auf die e-Mail-Adresse des Prinzipals festgelegt werden, wenn es sich bei einem Element um eine Antwort von einer Stellvertretung handelt. Wenn die Stellvertretung die [from](from.md) -Eigenschaft nicht festgelegt hat, wird das Element scheinbar direkt aus dem Postfach des Stellvertreters gesendet. 
+Das [From-Element](from.md) sollte auf die E-Mail-Adresse des Prinzipals festgelegt werden, wenn ein Element eine Antwort eines Delegaten ist. Wenn der Delegat die [From-Eigenschaft](from.md) nicht festgelegt hat, scheint das Element direkt aus dem Postfach der Stellvertretung gesendet worden zu sein. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

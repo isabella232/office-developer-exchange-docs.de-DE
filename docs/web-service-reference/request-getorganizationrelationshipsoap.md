@@ -1,22 +1,22 @@
 ---
-title: Request (GetOrganizationRelationship) (SOAP)
+title: Anforderung (GetOrganizationRelationship) (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 85dc155c-fad0-4756-b9a8-dedf5040a7c6
-description: Das Request-Element stellt eine GetOrganizationRelationshipSettingsRequest (SOAP)-Anforderung dar. Das Request-Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet.
-ms.openlocfilehash: 90ccd3579c91c916ea645e6a3b466c9de4706421
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Request-Element stellt eine SOAP-Anforderung (GetOrganizationRelationshipSettingsRequest) dar. Das Request-Element ist nur für die interne Verwendung vorgesehen. Dieses Element wird von Clients nicht verwendet.
+ms.openlocfilehash: 06af9ca1067407f7fac9db3ff7c5b4e0fbe8a108
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459560"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512366"
 ---
-# <a name="request-getorganizationrelationship-soap"></a>Request (GetOrganizationRelationship) (SOAP)
+# <a name="request-getorganizationrelationship-soap"></a>Anforderung (GetOrganizationRelationship) (SOAP)
 
-Das **Request** -Element stellt eine [GetOrganizationRelationshipSettingsRequest (SOAP)-](getorganizationrelationshipsettingsrequest-soap.md) Anforderung dar. Das **Request** -Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet. 
+Das **Request-Element** stellt eine [SOAP-Anforderung (GetOrganizationRelationshipSettingsRequest)](getorganizationrelationshipsettingsrequest-soap.md) dar. Das **Request-Element** ist nur für die interne Verwendung vorgesehen. Dieses Element wird von Clients nicht verwendet. 
   
 ```XML
 <Request>
@@ -43,7 +43,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetOrganizationRelationshipSettingsRequestMessage (SOAP)](getorganizationrelationshipsettingsrequestmessage-soap.md) <br/> |Stellt eine [SOAP-Vorgangsanforderung (GetOrganizationRelationshipSettings Operation)](getorganizationrelationshipsettings-operation-soap.md) dar.  <br/> |
+|[GetOrganizationRelationshipSettingsRequestMessage (SOAP)](getorganizationrelationshipsettingsrequestmessage-soap.md) <br/> |Stellt eine [SOAP-Vorgangsanforderung (GetOrganizationRelationshipSettings)](getorganizationrelationshipsettings-operation-soap.md) dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
@@ -54,8 +54,8 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -65,5 +65,5 @@ Keine.
 [GetOrganizationRelationshipSettingsRequest (SOAP)](getorganizationrelationshipsettingsrequest-soap.md)
 
 
-[Arbeiten mit der AutoErmittlung](https://msdn.microsoft.com/library/39726b67-2eb2-451b-9307-cfd0b518b55c%28Office.15%29.aspx)
+[Arbeiten mit AutoErmittlung](https://msdn.microsoft.com/library/39726b67-2eb2-451b-9307-cfd0b518b55c%28Office.15%29.aspx)
 

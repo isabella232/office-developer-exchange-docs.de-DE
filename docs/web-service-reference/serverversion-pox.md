@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 2c0bc41c-2452-4fc8-a19c-0e85f9fdbc4a
-description: Das Server Version vom-Element stellt die Versionsnummer des Computers dar, auf dem Exchange Server läuft.
-ms.openlocfilehash: 3ef531a69d2dd00ee9784c9eb191684ce517e842
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ServerVersion-Element stellt die Versionsnummer des Computers dar, auf dem Microsoft Exchange Server ausgeführt wird.
+ms.openlocfilehash: bc7f9daa62e628e41f7541a609550e90af211928
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461968"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527377"
 ---
 # <a name="serverversion-pox"></a>ServerVersion (POX)
 
-Das **Server Version vom** -Element stellt die Versionsnummer des Computers dar, auf dem Exchange Server läuft. 
+Das **ServerVersion-Element** stellt die Versionsnummer des Computers dar, auf dem Microsoft Exchange Server ausgeführt wird. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md) 
 - [Response (POX)](response-pox.md)
@@ -46,19 +46,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange ausgeführt wird, auf dem die Clientzugriffs-Serverrolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen zum Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt die Versionsnummer von Exchange Server dar.
+Der Textwert stellt die Exchange Serverversionsnummer dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der **Server Version vom** -Wert ist nur gültig, wenn der [Typ (POX)-](type-pox.md) Element gleich "$" oder "expr" ist. Der **Server Version vom** -Wert ist eine hexadezimale Zahl, die die MajorVersion, MinorVersion und MajorBuildNumber des Servers enthält. 
+Der **ServerVersion-Wert** ist nur gültig, wenn das [Type (POX)-Element](type-pox.md) gleich EXCH oder EXPR ist. Der **ServerVersion-Wert** ist eine hexadezimale Zahl, die majorVersion, MinorVersion und MajorBuildNumber des Servers enthält. 
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird ein **Server Version vom** -Wert behandelt, der in einer Auto Ermittlungs Antwort zurückgegeben wird, um die MajorVersion-, MinorVersion-und MajorBuildNumber-Werte zu erhalten und anzuzeigen. In diesem Beispiel können Sie einen Hexadezimalwert für den **Server Version vom** -Wert eingeben. Wenn kein **Server Version vom** -Wert eingegeben wird, wird ein standardmäßiger **Server Version vom** -Wert von 738180DA verwendet. 
+Im folgenden Beispiel wird ein **ServerVersion-Wert** verdeckt, der in einer AutoErmittlungsantwort zurückgegeben wird, um MajorVersion, MinorVersion und MajorBuildNumber abzurufen und anzuzeigen. In diesem Beispiel können Sie einen Hexadezimalwert für den **ServerVersion-Wert** eingeben. Wenn kein **ServerVersion-Wert** eingegeben wird, wird der **ServerVersion-Standardwert** 738180DA verwendet. 
   
 ```csharp
 static void Main(string[] args)

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a5ee3299-1b2c-4a2a-9fe4-997febc7267a
-description: Das ManagementRole-Element gibt eine Liste der Benutzer-und Anwendungs Verwaltungsrollen an.
-ms.openlocfilehash: 4e4ac1b38869d3c5dabe142c63b2aac9477036fd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ManagementRole-Element gibt eine Liste der Benutzer- und Anwendungsverwaltungsrollen an.
+ms.openlocfilehash: 806b27c36eec3715e44db2dbc6762ba2472e7a09
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44450914"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519345"
 ---
 # <a name="managementrole"></a>ManagementRole
 
-Das **ManagementRole** -Element gibt eine Liste der Benutzer-und Anwendungs Verwaltungsrollen an. 
+Das **ManagementRole-Element** gibt eine Liste der Benutzer- und Anwendungsverwaltungsrollen an. 
   
 ```XML
 <ManagementRole>
@@ -43,7 +43,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

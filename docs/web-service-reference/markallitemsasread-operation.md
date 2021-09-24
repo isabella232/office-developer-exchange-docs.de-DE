@@ -5,45 +5,45 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ea5b1cb6-6998-46fb-a99c-a6d3da77591f
-description: Hier finden Sie Informationen zum MarkAllItemsAsRead-EWS-Vorgang.
-ms.openlocfilehash: aeeacea1cd5eed723f93027dd1ef75b34605fdfd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum EWS-Vorgang "MarkAllItemsAsRead".
+ms.openlocfilehash: 104eed826df2b8734aa3159c976a6e1f388c302f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530530"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519282"
 ---
 # <a name="markallitemsasread-operation"></a>MarkAllItemsAsRead-Vorgang
 
-Hier finden Sie Informationen zum **MarkAllItemsAsRead** -EWS-Vorgang. 
+Hier finden Sie Informationen zum EWS-Vorgang **"MarkAllItemsAsRead".** 
   
-Mit dem **MarkAllItemsAsRead** -Vorgang wird die [isread](isread.md) -Eigenschaft für alle Elemente in einem oder mehreren Ordnern festgelegt, um anzugeben, dass alle Elemente entweder gelesen oder ungelesen sind. 
+Der **MarkAllItemsAsRead-Vorgang** legt die [IsRead-Eigenschaft](isread.md) für alle Elemente in einem oder mehreren Ordnern fest, um anzugeben, dass alle Elemente entweder gelesen oder ungelesen sind. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-markallitemsasread-operation"></a>Verwenden des MarkAllItemsAsRead-Vorgangs
 
-Mit dem **MarkAllItemsAsRead** -Vorgang kann die [isread](isread.md) -Eigenschaft für alle Elemente in Ordnern festgelegt werden, die entweder durch die Exchange-Webdienste Ordner-ID oder den Namen des Exchange-Standardordners identifiziert werden. Der **MarkAllItemsAsRead** -Vorgang kann auch das Senden von Lesebestätigungen für Elemente unterdrücken, die als gelesen markiert sind. 
+Der **MarkAllItemsAsRead-Vorgang** kann die [IsRead-Eigenschaft](isread.md) für alle Elemente in Ordnern festlegen, die entweder durch den Exchange Web Services (EWS)-Ordnerbezeichner oder den Standardmäßigen Exchange Ordnernamens identifiziert werden. Der **MarkAllItemsAsRead-Vorgang** kann auch das Senden von Lesebestätigungen für als gelesen markierte Elemente unterdrücken. 
   
 ### <a name="markallitemsasread-operation-soap-headers"></a>SOAP-Header des MarkAllItemsAsRead-Vorgangs
 
-Der **MarkAllItemsAsRead** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **MarkAllItemsAsRead-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden sollen. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dieser Header gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur, wie in RFC 3066 definiert, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden soll. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="markallitemsasread-operation-request-example-mark-all-items-in-a-folder-as-read"></a>MarkAllItemsAsRead-Vorgangs Anforderungs Beispiel: Markieren aller Elemente in einem Ordner als gelesen
+## <a name="markallitemsasread-operation-request-example-mark-all-items-in-a-folder-as-read"></a>Beispiel für MarkAllItemsAsRead-Vorgangsanforderung: Markieren aller Elemente in einem Ordner als gelesen
 
-Im folgenden Beispiel einer **MarkAllItemsAsRead** -Vorgangsanforderung wird gezeigt, wie die [isread](isread.md) -Eigenschaft, die auch als Lese-Flag bezeichnet wird, auf **true** für alle Elemente in einem Ordner festgelegt wird. In diesem Beispiel wird außerdem gezeigt, dass Lesebestätigungen nicht als Reaktion auf Lese Bestätigungsanforderungen gesendet werden. 
+Das folgende Beispiel einer **MarkAllItemsAsRead-Vorgangsanforderung** zeigt, wie die [IsRead-Eigenschaft,](isread.md) die auch als Leseflags bezeichnet wird, für alle Elemente in einem Ordner auf **"true"** festgelegt wird. Dieses Beispiel zeigt auch, dass Lesebestätigungen nicht als Antwort auf Lesebestätigungsanforderungen gesendet werden. 
   
 > [!NOTE]
-> Alle Element-IDs und Änderungsschlüssel in diesem Artikel wurden verkürzt, um die Lesbarkeit zu erhalten. Für diesen Vorgang sind keine Änderungsschlüssel erforderlich. 
+> Alle Elementbezeichner und Änderungsschlüssel in diesem Artikel wurden gekürzt, um die Lesbarkeit zu gewährleisten. Änderungsschlüssel sind für diesen Vorgang nicht erforderlich. 
   
 ```XML
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -66,7 +66,7 @@ Im folgenden Beispiel einer **MarkAllItemsAsRead** -Vorgangsanforderung wird gez
 </soap:Envelope>
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [MarkAllItemsAsRead](markallitemsasread.md)
     
@@ -78,9 +78,9 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [FolderId](folderid.md)
     
-## <a name="successful-markallitemsasread-operation-response"></a>Erfolgreiche Reaktion des MarkAllItemsAsRead-Vorgangs
+## <a name="successful-markallitemsasread-operation-response"></a>Erfolgreiche MarkAllItemsAsRead-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **MarkAllItemsAsRead** -Vorgangsanforderung, um alle Elemente in einem Ordner als gelesen zu markieren. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **MarkAllItemsAsRead-Vorgangsanforderung,** um alle Elemente in einem Ordner als gelesen zu markieren. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -110,7 +110,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **MarkAllItemsAsR
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [MarkAllItemsAsReadResponse](markallitemsasreadresponse.md)
     
@@ -120,9 +120,9 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [ResponseCode](responsecode.md)
     
-## <a name="markallitemsasread-operation-request-example-mark-all-items-in-a-folder-as-unread"></a>MarkAllItemsAsRead-Vorgangs Anforderungs Beispiel: Markieren aller Elemente in einem Ordner als ungelesen
+## <a name="markallitemsasread-operation-request-example-mark-all-items-in-a-folder-as-unread"></a>Beispiel für MarkAllItemsAsRead-Vorgangsanforderung: Markieren aller Elemente in einem Ordner als ungelesen
 
-Im folgenden Beispiel einer **MarkAllItemsAsRead** -Vorgangsanforderung wird gezeigt, wie die [isread](isread.md) -Eigenschaft für alle Elemente in einem Ordner auf **false** festgelegt wird. In diesem Beispiel wird außerdem gezeigt, dass Lesebestätigungen nicht als Reaktion auf Lese Bestätigungsanforderungen gesendet werden. 
+Das folgende Beispiel einer **MarkAllItemsAsRead-Vorgangsanforderung** zeigt, wie die [IsRead-Eigenschaft](isread.md) für alle Elemente in einem Ordner auf **"false"** festgelegt wird. Dieses Beispiel zeigt auch, dass Lesebestätigungen nicht als Antwort auf Lesebestätigungsanforderungen gesendet werden. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -146,9 +146,9 @@ Im folgenden Beispiel einer **MarkAllItemsAsRead** -Vorgangsanforderung wird gez
 </soap:Envelope>
 ```
 
-Eine erfolgreiche Antwort auf eine Anforderung zum Markieren aller Elemente als gelesen entspricht der Antwort auf eine Anforderung, alle Elemente als ungelesen zu markieren.
+Eine erfolgreiche Antwort auf eine Anforderung zum Markieren aller Elemente als gelesen ist identisch mit der Antwort auf eine Anforderung, um alle Elemente als ungelesen zu markieren.
   
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [MarkAllItemsAsRead](markallitemsasread.md)
     
@@ -160,9 +160,9 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [FolderId](folderid.md)
     
-## <a name="markallitemsasread-operation-error-response"></a>Fehlerantwort des MarkAllItemsAsRead-Vorgangs
+## <a name="markallitemsasread-operation-error-response"></a>MarkAllItemsAsRead-Vorgang – Fehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **MarkAllItemsAsRead** -Vorgangsanforderung, um alle Elemente in einem Ordner als gelesen oder ungelesen zu markieren, wenn der Ordner nicht im Postfach vorhanden ist. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **MarkAllItemsAsRead-Vorgangsanforderung,** um alle Elemente in einem Ordner als gelesen oder ungelesen zu markieren, wenn der Ordner nicht im Postfach vorhanden ist. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

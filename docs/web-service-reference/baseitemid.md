@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - BaseItemId
 api_type:
 - schema
 ms.assetid: c762e60e-08bb-430a-af5e-fa991f33a44f
-description: Das BaseItemId-Element stellt die Basisklasse für IDs dar, die Elemente in einem Postfach darstellen. Dies ist eine abstrakte Klasse, die daher nicht in einem Instanzdokument auftritt.
-ms.openlocfilehash: d4f690bc044ed4a1bc0aa154bd3921a3078d6b45
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das BaseItemId-Element stellt die Basisklasse für IDs dar, die Elemente in einem Postfach darstellen. Dies ist eine abstrakte Klasse und tritt daher nicht in einem Instanzdokument auf.
+ms.openlocfilehash: 28c933947a582de4245dcb89d86142a3a92debad
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527425"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518918"
 ---
 # <a name="baseitemid"></a>BaseItemId
 
-Das **BaseItemId** -Element stellt die Basisklasse für IDs dar, die Elemente in einem Postfach darstellen. Dies ist eine abstrakte Klasse, die daher nicht in einem Instanzdokument auftritt. 
+Das **BaseItemId-Element** stellt die Basisklasse für IDs dar, die Elemente in einem Postfach darstellen. Dies ist eine abstrakte Klasse und tritt daher nicht in einem Instanzdokument auf. 
   
 ```xml
 <BaseItemId/>
@@ -44,9 +44,9 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element ist ein abstrakter Basistyp für Element-IDs. Dieses Element wird in Webdienst aufrufen nicht verwendet.
+Dieses Element ist ein abstrakter Basistyp für Elementbezeichner. Dieses Element wird nicht in Webdienstaufrufen verwendet.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

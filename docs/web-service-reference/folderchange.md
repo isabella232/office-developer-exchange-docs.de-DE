@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FolderChange
 api_type:
 - schema
 ms.assetid: 23279750-131b-4e1a-b7d1-be235c4e0891
 description: Das FolderChange-Element stellt eine Auflistung von Änderungen dar, die für einen einzelnen Ordner ausgeführt werden sollen.
-ms.openlocfilehash: e4a025bef100fdd478be545b6448b15886e47c60
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 3ea723e6bbfcfe048256715aa5a60da98076ccb8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530239"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541294"
 ---
 # <a name="folderchange"></a>FolderChange
 
-Das **FolderChange** -Element stellt eine Auflistung von Änderungen dar, die für einen einzelnen Ordner ausgeführt werden sollen. 
+Das **FolderChange-Element** stellt eine Auflistung von Änderungen dar, die für einen einzelnen Ordner ausgeführt werden sollen. 
   
 - [UpdateFolder](updatefolder.md) 
 - [FolderChanges](folderchanges.md) 
@@ -55,9 +55,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Enthält den Bezeichner und den Änderungsschlüssel eines Ordners, der aktualisiert werden soll.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifiziert Microsoft Exchange Server 2007-Ordner, auf die über den Namen verwiesen werden kann.  <br/> |
-|[Updates (Ordner)](updates-folder.md) <br/> |Definiert den Aktualisierungstyp, der für einen Ordner ausgeführt wird, der entweder durch das [Folder](folderid.md) -oder [DistinguishedFolderId](distinguishedfolderid.md) -Element identifiziert wird.  <br/> |
+|[FolderId](folderid.md) <br/> |Enthält den Bezeichner und den Änderungsschlüssel eines zu aktualisierenden Ordners.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifies MicrosoftExchange Server 2007 folders that can be referenced by name.  <br/> |
+|[Updates (Ordner)](updates-folder.md) <br/> |Definiert den Aktualisierungstyp, der für einen Ordner ausgeführt wird, der durch das [FolderId-](folderid.md) oder [DistinguishedFolderId-Element](distinguishedfolderid.md) identifiziert wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -65,9 +65,9 @@ Keine.
 |:-----|:-----|
 |[FolderChanges](folderchanges.md) <br/> |Stellt eine Auflistung von Änderungen für einen Ordner dar.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/UpdateFolder/FolderChanges` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

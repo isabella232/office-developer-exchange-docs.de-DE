@@ -5,40 +5,40 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2c016fc3-0e13-4624-9a5b-d3e84577a860
-description: Hier finden Sie Informationen zum GetAppMarketplaceUrl-EWS-Vorgang.
-ms.openlocfilehash: 6797af44c3aaa6653c440b3d53a282d8c90a4381
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum EWS-Vorgang "GetAppMarketplaceUrl".
+ms.openlocfilehash: f9dd41a43b92910ec596b95a0ce1e99a239ba01e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459525"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59530090"
 ---
 # <a name="getappmarketplaceurl-operation"></a>GetAppMarketplaceUrl-Vorgang
 
-Hier finden Sie Informationen zum **GetAppMarketplaceUrl** -EWS-Vorgang. 
+Hier finden Sie Informationen zum EWS-Vorgang **"GetAppMarketplaceUrl".** 
   
-Der **GetAppMarketplaceUrl** -Vorgang ruft die URL für den App-Marketplace ab, den ein Client besuchen kann, um apps zu erwerben, die in einem Postfach installiert werden sollen. 
+Der **GetAppMarketplaceUrl-Vorgang** ruft die URL für den App-Marketplace ab, den ein Client besuchen kann, um Apps zum Installieren in einem Postfach zu erwerben. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-getappmarketplaceurl-operation"></a>Verwenden des GetAppMarketplaceUrl-Vorgangs
 
-Für den **GetAppMarketplaceUrl** -Vorgang werden keine Argumente benötigt, um die URL für den Marketplace anzufordern, von dem ein Client apps installieren kann. Die Antwort wird eine URL zum App-Marketplace enthalten. 
+Der **GetAppMarketplaceUrl-Vorgang** verwendet keine Argumente, um die URL für den Marketplace anzufordern, von dem aus ein Client Apps installieren kann. Die Antwort enthält eine URL zum App-Marketplace. 
   
 ### <a name="getappmarketplaceurl-operation-soap-headers"></a>SOAP-Header des GetAppMarketplaceUrl-Vorgangs
 
-Der **GetAppMarketplaceUrl** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **GetAppMarketplaceUrl-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="getappmarketplaceurl-operation-request-example-get-the-app-marketplace-url-for-a-mailbox"></a>GetAppMarketplaceUrl-Vorgangs Anforderungs Beispiel: Abrufen der URL des App-Marketplace für ein Postfach
+## <a name="getappmarketplaceurl-operation-request-example-get-the-app-marketplace-url-for-a-mailbox"></a>GetAppMarketplaceUrl-Vorgangsanforderungsbeispiel: Abrufen der App Marketplace-URL für ein Postfach
 
-Im folgenden Beispiel einer **GetAppMarketplaceUrl** -Vorgangsanforderung wird gezeigt, wie die APP Marketplace-URL für ein Postfach abgerufen wird. 
+Das folgende Beispiel einer **GetAppMarketplaceUrl-Vorgangsanforderung** zeigt, wie Sie die App Marketplace-URL für ein Postfach abrufen. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -62,7 +62,7 @@ Im folgenden Beispiel einer **GetAppMarketplaceUrl** -Vorgangsanforderung wird g
 
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [GetAppMarketplaceUrl](getappmarketplaceurl.md)
     
@@ -70,12 +70,12 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [SchemaVersionSupported](schemaversionsupported.md)
     
-## <a name="successful-getappmarketplaceurl-operation-response"></a>Erfolgreiche Reaktion des GetAppMarketplaceUrl-Vorgangs
+## <a name="successful-getappmarketplaceurl-operation-response"></a>Erfolgreiche GetAppMarketplaceUrl-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetAppMarketplaceUrl** -Vorgangsanforderung, um die APP Marketplace-URL für ein Postfach abzurufen. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetAppMarketplaceUrl-Vorgangsanforderung** zum Abrufen der App Marketplace-URL für ein Postfach. 
   
 > [!NOTE]
-> Die URL des App-Marktplatzes wurde geändert, um die Lesbarkeit zu erhalten. 
+> Die URL des App-Marketplace wurde geändert, um die Lesbarkeit zu gewährleisten. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -103,7 +103,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetAppMarketpla
 
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [GetAppMarketplaceUrlResponse](getappmarketplaceurlresponse.md)
     
@@ -111,11 +111,11 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [AppMarketplaceUrl](appmarketplaceurl.md)
     
-## <a name="getappmarketplaceurl-operation-error-response"></a>Fehlerantwort des GetAppMarketPlaceUrl-Vorgangs
+## <a name="getappmarketplaceurl-operation-error-response"></a>GetAppMarketPlaceUrl-Vorgangsfehlerantwort
 
-Fehler, die für diesen Vorgang zurückgegeben werden, beziehen sich entweder auf eine falsche Dienstkonfiguration oder sind generische EWS-Fehler. Informationen zu Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md). 
+Fehler, die für diesen Vorgang zurückgegeben werden, beziehen sich entweder auf eine falsche Dienstkonfiguration oder sind generische EWS-Fehler. Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md). 
   
-Das folgende Beispiel zeigt eine Fehlerantwort, die zurückgegeben wird, wenn die externe Exchange-Systemsteuerung (ECP) nicht konfiguriert ist.
+Das folgende Beispiel zeigt eine Fehlerantwort, die zurückgegeben wird, wenn die externe Exchange Systemsteuerung (ECP) nicht konfiguriert ist.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

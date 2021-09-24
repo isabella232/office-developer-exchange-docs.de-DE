@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3e5d2567-a5a2-4791-b209-c29082894a9e
 description: Das ProposedEnd (MeetingRegistrationResponseObjectType)-Element gibt die vorgeschlagene neue Endzeit eines Teilnehmers für eine Besprechung an.
-ms.openlocfilehash: f6aafe157c653776dca511a104ceeb9518812d98
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 91d44d4321ec275aea5c6edaf2529dedc7445d5f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466983"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527829"
 ---
 # <a name="proposedend-meetingregistrationresponseobjecttype"></a>ProposedEnd (MeetingRegistrationResponseObjectType)
 
-Das **ProposedEnd (MeetingRegistrationResponseObjectType)** -Element gibt die vorgeschlagene neue Endzeit eines Teilnehmers für eine Besprechung an. 
+Das **ProposedEnd (MeetingRegistrationResponseObjectType)-Element** gibt die vorgeschlagene neue Endzeit eines Teilnehmers für eine Besprechung an. 
   
 ```XML
 <ProposedEnd />
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des ProposedEnd-Elements **(MeetingRegistrationResponseObjectType)** ist das vorgeschlagene Enddatum und die geplante Uhrzeit der Besprechung. 
+Der Textwert des **ProposedEnd -Elements (MeetingRegistrationResponseObjectType)** ist das vorgeschlagene Enddatum und die Uhrzeit der Besprechung. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

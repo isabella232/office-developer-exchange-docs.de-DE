@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Rule
 api_type:
 - schema
 ms.assetid: 259a1f62-b235-4964-88bf-2d1f1c05a563
 description: Das Rule-Element enthält eine einzelne Regel und stellt eine Regel im Postfach eines Benutzers dar.
-ms.openlocfilehash: cdbd21df235a62a9e201e1eaae1d82a8ac10cdd2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0e7d7284d561ea374f66106072df0c4f850c590c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465079"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527516"
 ---
 # <a name="rule-ruletype"></a>Regel (RuleType)
 
-Das **rule** -Element enthält eine einzelne Regel und stellt eine Regel im Postfach eines Benutzers dar. 
+Das **Rule-Element** enthält eine einzelne Regel und stellt eine Regel im Postfach eines Benutzers dar. 
   
 ```XML
 <Rule>
@@ -50,14 +50,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RuleId](ruleid.md) <br/> |Gibt die Regel-ID an.  <br/> |
+|[RuleId](ruleid.md) <br/> |Gibt den Regelbezeichner an.  <br/> |
 |[DisplayName (Zeichenfolge)](displayname-string.md) <br/> |Enthält den Anzeigenamen einer Regel.  <br/> |
-|[Priority](priority.md) <br/> |Gibt die Reihenfolge an, in der eine Regel ausgeführt werden soll.  <br/> |
-|[IsEnabled](isenabled.md) <br/> |Gibt an, ob die Regel aktiviert ist.  <br/> |
-|[IsNotSupported](isnotsupported.md) <br/> |Gibt an, ob die Regel mit den APIs für verwalteten Code nicht geändert werden kann.  <br/> |
+|[Priorität](priority.md) <br/> |Gibt die Reihenfolge an, in der eine Regel ausgeführt werden soll.  <br/> |
+|[Isenabled](isenabled.md) <br/> |Gibt an, ob die Regel aktiviert ist.  <br/> |
+|[IsNotSupported](isnotsupported.md) <br/> |Gibt an, ob die Regel nicht mit den APIs mit verwaltetem Code geändert werden kann.  <br/> |
 |[IsInError](isinerror.md) <br/> |Gibt an, ob sich die Regel in einem Fehlerzustand befindet.  <br/> |
-|[Bedingungen:](conditions.md) <br/> |Gibt die Bedingungen an, die bei der Erfüllung der Regelaktionen für eine Regel ausgelöst werden.  <br/> |
-|[Ausnahmen](exceptions.md) <br/> |Identifiziert die Ausnahmen, die alle verfügbaren Regel Ausnahmebedingungen für die Posteingangsregel darstellen.  <br/> |
+|[Bedingungen:](conditions.md) <br/> |Gibt die Bedingungen an, die bei Erfüllung die Regelaktionen für eine Regel auslösen.  <br/> |
+|[Ausnahmen](exceptions.md) <br/> |Identifiziert die Ausnahmen, die alle verfügbaren Regelausnahmebedingungen für die Posteingangsregel darstellen.  <br/> |
 |[Aktionen](actions.md) <br/> |Stellt die Aktionen dar, die für eine Nachricht ausgeführt werden sollen, wenn die Bedingungen erfüllt sind.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
@@ -72,7 +72,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

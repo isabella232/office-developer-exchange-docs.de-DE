@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FolderShape
 api_type:
 - schema
 ms.assetid: 244f4f46-a33d-4764-92e3-1bddb4dc6a49
-description: Das FolderShape-Element identifiziert die Ordner Eigenschaften, die in einer GetFolder-, FindFolder-oder SyncFolderHierarchy-Antwort enthalten sein sollen.
-ms.openlocfilehash: f841fcc4570604c474387dfa24ec07c9d2784f62
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das FolderShape-Element identifiziert die Ordnereigenschaften, die in eine GetFolder-, FindFolder- oder SyncFolderHierarchy-Antwort eingeschlossen werden sollen.
+ms.openlocfilehash: 530c9f25f17a3eba8549535bf7be37038a58c921
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461345"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518358"
 ---
 # <a name="foldershape"></a>FolderShape
 
-Das **FolderShape** -Element identifiziert die Ordner Eigenschaften, die in einer [GetFolder](getfolder.md)-, [FindFolder](findfolder.md)-oder [SyncFolderHierarchy](syncfolderhierarchy.md) -Antwort enthalten sein sollen. 
+Das **FolderShape-Element** identifiziert die Ordnereigenschaften, die in eine [GetFolder-,](getfolder.md) [FindFolder-](findfolder.md)oder [SyncFolderHierarchy-Antwort](syncfolderhierarchy.md) eingeschlossen werden sollen. 
   
 ```xml
 <FolderShape>
@@ -43,7 +43,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[BaseShape](baseshape.md) <br/> |Gibt die grundlegende Konfiguration von Eigenschaften an, die in einer Antwort zurückgegeben werden sollen.  <br/> |
+|[BaseShape](baseshape.md) <br/> |Identifiziert die grundlegende Konfiguration von Eigenschaften, die in einer Antwort zurückgegeben werden sollen.  <br/> |
 |[AdditionalProperties](additionalproperties.md) <br/> |Identifiziert zusätzliche Eigenschaften, die in einer Antwort zurückgegeben werden sollen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
@@ -51,18 +51,18 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[FindFolder](findfolder.md) <br/> |Definiert eine Anforderung zum Identifizieren von Ordnern in einem Postfach.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/FindFolder` <br/> |
-|[GetFolder](getfolder.md) <br/> |Definiert eine Anforderung zum Abrufen eines Ordners aus dem Exchange-Informationsspeicher.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetFolder` <br/> |
+|[GetFolder](getfolder.md) <br/> |Definiert eine Anforderung zum Abrufen eines Ordners aus dem Exchange Speicher.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetFolder` <br/> |
 |[SyncFolderHierarchy](syncfolderhierarchy.md) <br/> |Definiert eine Anforderung zum Synchronisieren einer Ordnerhierarchie auf einem Client.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/SyncFolderHierarchy` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das **FolderShape** -Element ist ein erforderliches untergeordnetes Element des [FindFolder](findfolder.md) -Elements. 
+Das **FolderShape-Element** ist ein erforderliches untergeordnetes Element des [FindFolder-Elements.](findfolder.md) 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel einer Anforderung wird veranschaulicht, wie alle Ordner gefunden werden, die sich auf der ersten Ebene des Posteingangsordners befinden.
+Im folgenden Beispiel einer Anforderung wird veranschaulicht, wie alle Ordner auf der ersten Ebene des Posteingangsordners gefunden werden.
   
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -87,7 +87,7 @@ Im folgenden Beispiel einer Anforderung wird veranschaulicht, wie alle Ordner ge
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

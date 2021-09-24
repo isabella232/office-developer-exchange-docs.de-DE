@@ -4,17 +4,17 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 08c6c5a2-a67a-4141-a8bd-1b5d560b90a7
 description: Die Antwort der AutoErmittlung enthält eine Antwort auf die AutoErmittlung-Anforderung, die eine Liste der URLs enthält, die zum Erstellen einer Bindung zu den Exchange-Webdiensten verwendet werden.
-ms.openlocfilehash: 0d903d9829fa6dc1273d8b25a1eeb0b68700d5da
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 42705856a28a1b5e595e55ab3f77f78089a1ee21
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462283"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527900"
 ---
 # <a name="pox-autodiscover-response-for-exchange"></a>POX-AutoErmittlungsantwort für Exchange
 

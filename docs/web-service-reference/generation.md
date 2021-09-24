@@ -1,27 +1,27 @@
 ---
-title: Erzeugung
+title: Generation
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Generation
 api_type:
 - schema
 ms.assetid: a4812843-8aec-4fc4-945f-3aeb17a6593a
-description: Das Generation-Element stellt eine Generierungs Abkürzung dar, die dem vollständigen Namen eines Kontakts folgt.
-ms.openlocfilehash: 75246153d19632c1a0ad245a460584731275565e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Generation-Element stellt eine Generationalabkürzung dar, die dem vollständigen Namen eines Kontakts folgt.
+ms.openlocfilehash: 80065d52605c3ceb6647e9f80d009fdcc3c0758d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463020"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541279"
 ---
-# <a name="generation"></a>Erzeugung
+# <a name="generation"></a>Generation
 
-Das **Generation** -Element stellt eine Generierungs Abkürzung dar, die dem vollständigen Namen eines Kontakts folgt. 
+Das **Generation-Element** stellt eine Generationalabkürzung dar, die dem vollständigen Namen eines Kontakts folgt. 
   
 ```xml
 <Generation/>
@@ -50,9 +50,9 @@ Keine.
 
 Wenn dieses Element verwendet wird, ist ein Textwert erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element stellt dieselben Informationen dar, die durch die PR_Generation MAPI-Eigenschaft dargestellt werden.
+Dieses Element stellt die gleichen Informationen dar, die durch die PR_Generation MAPI-Eigenschaft dargestellt werden.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

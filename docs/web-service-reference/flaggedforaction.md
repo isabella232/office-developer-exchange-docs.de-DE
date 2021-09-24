@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FlaggedForAction
 api_type:
 - schema
 ms.assetid: 6a08c48a-7b32-4754-8940-adbda55e8133
-description: Das FlaggedForAction-Element gibt das Flag für Action-Wert an, das in eingehenden Nachrichten angezeigt werden muss, damit die Bedingung oder Ausnahme zutrifft.
-ms.openlocfilehash: f996dc4bcf30db32e1d73fb302ab137f0a6ad4d4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das FlagdForAction-Element gibt das Kennzeichen für den Aktionswert an, das in eingehenden Nachrichten angezeigt werden muss, damit die Bedingung oder Ausnahme zutrifft.
+ms.openlocfilehash: 978d10286785f341437e3213ddbd3c296c4621fc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466241"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518379"
 ---
 # <a name="flaggedforaction"></a>FlaggedForAction
 
-Das **FlaggedForAction** -Element gibt das Flag für Action-Wert an, das in eingehenden Nachrichten angezeigt werden muss, damit die Bedingung oder Ausnahme zutrifft. 
+Das **FlagdForAction-Element** gibt das Kennzeichen für den Aktionswert an, das in eingehenden Nachrichten angezeigt werden muss, damit die Bedingung oder Ausnahme zutrifft. 
   
 ```XML
 <FlaggedForAction/>
@@ -49,11 +49,11 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Im folgenden sind die möglichen Text Werte für dieses Element angegeben:
+Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses Element:
   
 - Any
     
-- Anruf
+- Call
     
 - DoNotForward
     
@@ -61,19 +61,19 @@ Ein Textwert ist erforderlich. Im folgenden sind die möglichen Text Werte für 
     
 - FYI
     
-- Weiterleiten
+- Forward
     
 - NoResponseNecessary
     
 - Read
     
-- Antworten
+- Reply
     
 - ReplyToAll
     
-- Überprüfung
+- Review
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -83,7 +83,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

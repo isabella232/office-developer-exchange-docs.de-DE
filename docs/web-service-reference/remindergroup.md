@@ -1,23 +1,23 @@
 ---
-title: Reminder
+title: ReminderGroup
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3e23c2a1-05d8-4fec-897c-f684a5b97e4c
-description: Das Reminder-Element gibt an, ob die Erinnerung für ein Kalenderelement oder eine Aufgabe ist.
-ms.openlocfilehash: be6f4a7d7e9d495ed7b42ed40c60f016468e8c2c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ReminderGroup-Element gibt an, ob es sich bei der Erinnerung um ein Kalenderelement oder eine Aufgabe handelt.
+ms.openlocfilehash: 7ec19505e9237680aee1b3a31332db7fdc4c0dd4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529868"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512471"
 ---
-# <a name="remindergroup"></a>Reminder
+# <a name="remindergroup"></a>ReminderGroup
 
-Das **Reminder** -Element gibt an, ob die Erinnerung für ein Kalenderelement oder eine Aufgabe ist. 
+Das **ReminderGroup-Element** gibt an, ob es sich bei der Erinnerung um ein Kalenderelement oder eine Aufgabe handelt. 
   
 ```XML
 <ReminderGroup> Calendar | Task </ReminderGroup>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Reminder** -Elements ist der Gruppentyp der Erinnerung. Der Textwert von **Calendar** gibt an, dass die Erinnerung für ein Kalenderelement gilt. Der Textwert von **Task** gibt an, dass die Erinnerung für ein Aufgabenelement ist. 
+Der Textwert des **ReminderGroup-Elements** ist der Gruppentyp der Erinnerung. Der Textwert des **Kalenders** gibt an, dass die Erinnerung für ein Kalenderelement ist. Der Textwert von **Vorgang** gibt an, dass die Erinnerung für ein Aufgabenelement gilt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

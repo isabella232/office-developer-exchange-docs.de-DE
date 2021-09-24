@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CalendarPermissionLevel
 api_type:
 - schema
 ms.assetid: 6ac2b792-4326-4a3f-b6cb-977bf523b5b2
-description: Das CalendarPermissionLevel-Element stellt die Berechtigungsstufe dar, die ein Benutzer in einem Kalenderordner hat. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 670f78e0b3cef7a40339c83d84916871f8969536
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das CalendarPermissionLevel-Element stellt die Berechtigungsstufe dar, über die ein Benutzer in einem Kalenderordner verfügt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: e43b26f12fa65f47ca8377ecdd6c3abe2f6c5b71
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527180"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518834"
 ---
 # <a name="calendarpermissionlevel"></a>CalendarPermissionLevel
 
-Das **CalendarPermissionLevel** -Element stellt die Berechtigungsstufe dar, die ein Benutzer in einem Kalenderordner hat. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **CalendarPermissionLevel-Element** stellt die Berechtigungsstufe dar, über die ein Benutzer in einem Kalenderordner verfügt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <CalendarPermissionLevel>None or Owner or PublishingEditor or Editor or PublishingAuthor or Author or NoneditingAuthor or Reviewer or Contributor or FreeBusyTimeOnly or FreeBusyTimeAndSubjectAndLocation or Custom</CalendarPermissionLevel>
@@ -48,26 +48,26 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-In der folgenden Tabelle sind die möglichen Werte für das **CalendarPermissionLevel** -Element aufgeführt. 
+In der folgenden Tabelle sind die möglichen Werte für das **CalendarPermissionLevel-Element** aufgeführt. 
   
-**CalendarPermissionLevel-Element Text Werte**
+**CalendarPermissionLevel-Elementtextwerte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Keine  <br/> |Gibt an, dass der Benutzer über keine Berechtigungen für den Ordner verfügt.  <br/> |
-|Besitzer  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen, lesen, bearbeiten und löschen und Unterordner erstellen kann. Der Benutzer ist sowohl Ordnerbesitzer als auch Ordner Kontakt.  <br/> |
-|Publishing Editor  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen, lesen, bearbeiten und löschen und Unterordner erstellen kann.  <br/> |
+|Keine  <br/> |Gibt an, dass der Benutzer keine Berechtigungen für den Ordner hat.  <br/> |
+|Besitzer  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen, lesen, bearbeiten und löschen und Unterordner erstellen kann. Der Benutzer ist sowohl Ordnerbesitzer als auch Ordnerkontakt.  <br/> |
+|PublishingEditor  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen, lesen, bearbeiten und löschen und Unterordner erstellen kann.  <br/> |
 |Editor  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen, lesen, bearbeiten und löschen kann.  <br/> |
-|PublishingAuthor  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen und lesen, nur vom Benutzer erstellte Elemente bearbeiten und löschen sowie Unterordner erstellen kann.  <br/> |
-|Ursprung  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen und lesen kann, und nur vom Benutzer erstellte Elemente bearbeiten und löschen können.  <br/> |
-|Noneditingauthorcreateitems  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen und lesen und nur vom Benutzer erstellte Elemente löschen kann.  <br/> |
+|PublishingAuthor  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen und lesen, nur vom Benutzer erstellte Elemente bearbeiten und löschen und Unterordner erstellen kann.  <br/> |
+|Ursprung  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen und lesen und nur elemente bearbeiten und löschen kann, die der Benutzer erstellt.  <br/> |
+|NoneditingAuthor  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen und lesen und nur elemente löschen kann, die der Benutzer erstellt.  <br/> |
 |Reviewer  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner lesen kann.  <br/> |
 |Contributor  <br/> |Gibt an, dass der Benutzer Elemente im Ordner erstellen kann. Der Inhalt des Ordners wird nicht angezeigt.  <br/> |
-|FreeBusyTimeOnly  <br/> |Gibt an, dass der Benutzer nur die Frei/Gebucht-Zeit im Kalender anzeigen kann.  <br/> |
-|FreeBusyTimeAndSubjectAndLocation  <br/> |Gibt an, dass der Benutzer die Frei/Gebucht-Zeit innerhalb des Kalenders sowie den Betreff und den Ort von Terminen anzeigen kann.  <br/> |
-|Benutzerdefiniert  <br/> |Gibt an, dass der Benutzer benutzerdefinierte Zugriffsberechtigungen für den Ordner besitzt.  <br/> |
+|FreeBusyTimeOnly  <br/> |Gibt an, dass der Benutzer nur Frei/Gebucht-Zeit innerhalb des Kalenders anzeigen kann.  <br/> |
+|FreeBusyTimeAndSubjectAndLocation  <br/> |Gibt an, dass der Benutzer Frei/Gebucht-Zeit im Kalender sowie den Betreff und Ort von Terminen anzeigen kann.  <br/> |
+|Benutzerdefiniert  <br/> |Gibt an, dass der Benutzer über benutzerdefinierte Zugriffsberechtigungen für den Ordner verfügt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

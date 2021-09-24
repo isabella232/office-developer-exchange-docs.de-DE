@@ -1,23 +1,23 @@
 ---
-title: Extended (pathtoextendedfieldtype Schematyp)
+title: ExtendedProperty (PathToExtendedFieldType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fa620b48-2ce3-437d-b51e-541247eea1d9
-description: Das Extended-Element gibt eine erweiterte Eigenschaft für den einheitlichen Kontaktspeicher an.
-ms.openlocfilehash: f6c283d5cce3bc927662ad0d9c796c0589e7054c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ExtendedProperty-Element gibt eine erweiterte Eigenschaft für die Unified Contact-Store an.
+ms.openlocfilehash: 5cb320e15d3a01c542907048357d1ef0cc78f96a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460141"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59530759"
 ---
-# <a name="extendedproperty-pathtoextendedfieldtype"></a>Extended (pathtoextendedfieldtype Schematyp)
+# <a name="extendedproperty-pathtoextendedfieldtype"></a>ExtendedProperty (PathToExtendedFieldType)
 
-Das **Extended** -Element gibt eine erweiterte Eigenschaft für den einheitlichen Kontaktspeicher an. 
+Das **ExtendedProperty-Element** gibt eine erweiterte Eigenschaft für die Unified Contact-Store an. 
   
 ```xml
 <ExtendedProperty DistinguishedPropertySetId="" PropertySetId="" PropertyTag="" PropertyName="" PropertyId="" PropertyType="" FieldURI="">
@@ -34,13 +34,13 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|DistinguishedPropertySetId  <br/> |Gibt die Distinguished Property Sets-ID an. Dieses Attribut ist optional.  <br/> |
-|PropertySetId  <br/> |Gibt die GUID-Eigenschaftengruppe-ID an. Dieses Attribut ist optional.  <br/> |
-|PropertyTag  <br/> | Stellt das Eigenschaften-Tag minus dem Typ Part dar.<br/><br/>Es gibt zwei Optionen für die Darstellung:  <br/><br/>-Hexadezimal: 0x3fa4  <br/>-Dezimalzahl: 0-65535<br/><br/>  Dieses Attribut ist optional.  <br/> |
-|PropertyName  <br/> |Zeichenfolge, die den Namen der Eigenschaft angibt. Dieses Attribut ist optional.  <br/> |
-|PropertyId  <br/> |Ganze Zahl, die den Eigenschaftenbezeichner angibt. Dieses Attribut ist optional.  <br/> |
-|PropertyType  <br/> |Gibt den Typ der Eigenschaft an. Dieses Attribut ist erforderlich.  <br/> |
-|FieldURI  <br/> |Gibt den URI (Uniform Resource Identifier) des Felds an. Dieses Attribut ist erforderlich. Informationen zu möglichen Werten finden Sie unter dem [FieldURI](fielduri.md) -Element.  <br/> |
+|DistinguishedPropertySetId  <br/> |Gibt den Bezeichner des definierten Eigenschaftensatzes an. Dieses Attribut ist optional.  <br/> |
+|PropertySetId  <br/> |Gibt den GUID-Eigenschaftensatzbezeichner an. Dieses Attribut ist optional.  <br/> |
+|PropertyTag  <br/> | Stellt das Eigenschaftstag ohne den Typteil dar.<br/><br/>Es gibt zwei Optionen für die Darstellung:  <br/><br/>- Hexadezimal: 0x3fa4  <br/>- Dezimal: 0-65535<br/><br/>  Dieses Attribut ist optional.  <br/> |
+|PropertyName  <br/> |Zeichenfolge, die den Eigenschaftennamen angibt. Dieses Attribut ist optional.  <br/> |
+|PropertyId  <br/> |Ganze Zahl, die den Eigenschaftsbezeichner angibt. Dieses Attribut ist optional.  <br/> |
+|Propertytype  <br/> |Gibt den Eigenschaftstyp an. Dieses Attribut ist erforderlich.  <br/> |
+|FieldURI  <br/> |Gibt das Feld Uniform Resource Identifier (URI) an. Dieses Attribut ist erforderlich. Mögliche Werte finden Sie im [FieldURI-Element.](fielduri.md)  <br/> |
    
 #### <a name="distinguishedpropertysetid"></a>DistinguishedPropertySetId
 
@@ -48,44 +48,44 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |:-----|:-----|
 |Besprechung  <br/> |Gibt eine Besprechung an.  <br/> |
 |Termin  <br/> |Gibt einen Termin an.  <br/> |
-|Standard  <br/> |Gibt die allgemeine Eigenschaftengruppe an.  <br/> |
+|Standard  <br/> |Gibt den allgemeinen Eigenschaftensatz an.  <br/> |
 |PublicStrings  <br/> |Gibt öffentliche Zeichenfolgen an.  <br/> |
 |Adresse  <br/> |Gibt eine Adresse an.  <br/> |
-|InternetHeaders  <br/> |Gibt Internet Kopfzeilen an.  <br/> |
+|InternetHeaders  <br/> |Gibt Internetheader an.  <br/> |
 |CalendarAssistant  <br/> |Gibt den Kalender-Assistenten an.  <br/> |
 |UnifiedMessaging  <br/> |Gibt Unified Messaging an.  <br/> |
-|Vorgang  <br/> |Gibt eine Aufgabe an.  <br/> |
+|Aufgabe  <br/> |Gibt einen Vorgang an.  <br/> |
    
-#### <a name="propertytype"></a>PropertyType
+#### <a name="propertytype"></a>Propertytype
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Anwendungs Zeitprogramme  <br/> |Gibt die Anwendungszeit an.  <br/> |
+|ApplicationTime  <br/> |Gibt die Anwendungszeit an.  <br/> |
 |ApplicationTimeArray  <br/> |Gibt ein Array von Anwendungszeiten an.  <br/> |
 |Binär  <br/> |Gibt einen binären Wert an.  <br/> |
 |BinaryArray  <br/> |Gibt ein Array von binären Werten an.  <br/> |
-|Boolean  <br/> |Gibt einen booleschen Wert an.  <br/> |
+|Boolesch  <br/> |Gibt einen booleschen Wert an.  <br/> |
 |CLSID  <br/> |Gibt eine CLSID an.  <br/> |
 |CLSIDArray  <br/> |Gibt ein Array von CLSIDs an.  <br/> |
 |Währung  <br/> |Gibt einen Währungswert an.  <br/> |
 |CurrencyArray  <br/> |Gibt ein Array von Währungswerten an.  <br/> |
-|Gleitkommawert mit doppelter Genauigkeit  <br/> |Gibt einen **Double**-Wert an.  <br/> |
-|Double Array  <br/> |Gibt ein Array von **Double** -Werten an.  <br/> |
-|Fehler (ungefährer Wortlaut)  <br/> |Gibt einen Fehler an. Dies ist für Fehler Berichterstattungs Zwecke gedacht. Sie kann nicht in Einschränkungen oder zum Aufrufen oder Festlegen von Werten verwendet werden.  <br/> |
-|Gleitkommazahl  <br/> |Gibt einen **float**an.  <br/> |
-|FloatArray  <br/> |Gibt ein Array von **float** -Werten an.  <br/> |
+|Gleitkommawert mit doppelter Genauigkeit  <br/> |Gibt einen **doppelten** Wert an.  <br/> |
+|DoubleArray  <br/> |Gibt ein Array mit **doppelten** Werten an.  <br/> |
+|Fehler  <br/> |Gibt einen Fehler an. Dies dient der Fehlerberichterstattung. Sie kann nicht in Einschränkungen oder zum Abrufen oder Festlegen von Werten verwendet werden.  <br/> |
+|Gleitkommazahl  <br/> |Gibt einen **Float -Wert an.**  <br/> |
+|FloatArray  <br/> |Gibt ein Array von **Float-Werten** an.  <br/> |
 |Ganze Zahl  <br/> |Gibt eine ganze Zahl an.  <br/> |
 |IntegerArray  <br/> |Gibt ein Array von ganzen Zahlen an.  <br/> |
-|Long  <br/> |Gibt einen **Long**-Wert an.  <br/> |
-|LongArray  <br/> |Gibt ein Array von **Long** -Werten an.  <br/> |
-|Null  <br/> |Gibt einen NULL-Wert an. Dies ist für Fehler Berichterstattungs Zwecke gedacht. Sie kann nicht in Einschränkungen oder zum Aufrufen oder Festlegen von Werten verwendet werden.  <br/> |
-|Objekt  <br/> |Gibt ein Objekt an. Dies ist für Fehler Berichterstattungs Zwecke gedacht. Sie kann nicht in Einschränkungen oder zum Aufrufen oder Festlegen von Werten verwendet werden.  <br/> |
-|ObjectArray  <br/> |Gibt ein Array von Objekten an. Dies ist für Fehler Berichterstattungs Zwecke gedacht. Sie kann nicht in Einschränkungen oder zum Aufrufen oder Festlegen von Werten verwendet werden.  <br/> |
-|Kurz  <br/> |Gibt einen **Short**-Wert an.  <br/> |
-|ShortArray  <br/> |Gibt ein Array von **Short** -Werten an.  <br/> |
-|System Time  <br/> |Gibt einen System Zeitwert an.  <br/> |
-|SystemTimeArray  <br/> |Gibt ein Array von Systemzeit Werten an.  <br/> |
-|Zeichenfolge  <br/> |Gibt eine Zeichenfolge an.  <br/> |
+|Long  <br/> |Gibt eine **lange** an.  <br/> |
+|LongArray  <br/> |Gibt ein Array **mit langen** Werten an.  <br/> |
+|Null  <br/> |Gibt einen NULL-Wert an. Dies dient der Fehlerberichterstattung. Sie kann nicht in Einschränkungen oder zum Abrufen oder Festlegen von Werten verwendet werden.  <br/> |
+|Objekt  <br/> |Gibt ein Objekt an. Dies dient der Fehlerberichterstattung. Sie kann nicht in Einschränkungen oder zum Abrufen oder Festlegen von Werten verwendet werden.  <br/> |
+|ObjectArray  <br/> |Gibt ein Array von Objekten an. Dies dient der Fehlerberichterstattung. Sie kann nicht in Einschränkungen oder zum Abrufen oder Festlegen von Werten verwendet werden.  <br/> |
+|Kurz  <br/> |Gibt eine **kurze** an.  <br/> |
+|ShortArray  <br/> |Gibt ein Array von **Kurzwerten** an.  <br/> |
+|Systemtime  <br/> |Gibt einen Systemzeitwert an.  <br/> |
+|SystemTimeArray  <br/> |Gibt ein Array von Systemzeitwerten an.  <br/> |
+|String  <br/> |Gibt eine Zeichenfolge an.  <br/> |
 |StringArray  <br/> |Gibt ein Array von Zeichenfolgen an.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
@@ -96,9 +96,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert eine erweiterte MAPI-Eigenschaft.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifies an extended MAPI property.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -110,7 +110,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

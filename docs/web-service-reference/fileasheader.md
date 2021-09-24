@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0dbc22f8-9b71-4b8f-b1d4-6ae2e4bc1db6
-description: Die FileAsHeader gibt die Kopfzeile für die Option Datei als an.
-ms.openlocfilehash: e7f72745bad26f13b432cb9feabf8668770d1351
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: FileAsHeader gibt den Header für die Option "Datei als" an.
+ms.openlocfilehash: 4066ff45bc4543d216f4f7d02d6c72224dbd98ca
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461058"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518519"
 ---
 # <a name="fileasheader"></a>FileAsHeader
 
-Die **FileAsHeader** gibt die Kopfzeile für die Option **Datei als** an. 
+**FileAsHeader** gibt den Header für die Option **"Datei als"** an. 
   
 ```XML
 <FileAsHeader></FileAsHeader>
@@ -40,13 +40,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Persona](persona.md) <br/> |Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.  <br/> |
+|[Persona](persona.md) <br/> |Gibt eine Reihe von Persona-Daten an, die von einer **GetPersona-Anforderung** zurückgegeben werden.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **FileAsHeader** -Elements gibt die Kopfzeile an. 
+Der Textwert des **FileAsHeader-Elements** gibt die Kopfzeile an. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

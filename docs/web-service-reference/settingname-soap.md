@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 8bcb0411-58b0-4e37-b97e-00c07dcbecb1
 description: Das SettingName-Element stellt den Namen einer Einstellung in der Antwort dar.
-ms.openlocfilehash: d492b82b7385d6403f15c08356db5d0503792d54
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 1a676f55ad86496ae8bdbdfbeaeb9827b1aa6646
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466724"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59531881"
 ---
 # <a name="settingname-soap"></a>SettingName (SOAP)
 
-Das **SettingName** -Element stellt den Namen einer Einstellung in der Antwort dar. 
+Das **SettingName-Element** stellt den Namen einer Einstellung in der Antwort dar. 
   
 ```XML
 <SettingName/>
@@ -42,11 +42,11 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[UserSettingError (SOAP)](usersettingerror-soap.md) <br/> |Stellt einen Fehler dar, der beim Abrufen einer Benutzereinstellung zurückgegeben wird.  <br/> |
-|[DomainSettingError (SOAP)](domainsettingerror-soap.md) <br/> |Stellt einen Fehler dar, der beim Abrufen einer Domäneneinstellung aufgetreten ist. Dies stellt einen Fehler aus einer **GetDomainSettings** -Anforderung dar.  <br/> |
+|[DomainSettingError (SOAP)](domainsettingerror-soap.md) <br/> |Stellt einen Fehler dar, der beim Abrufen einer Domäneneinstellung aufgetreten ist. Dies stellt einen Fehler aus einer **GetDomainSettings-Anforderung** dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert des **SettingName** -Elements stellt den Namen einer Einstellung in einer Antwort dar. 
+Der Wert des **SettingName-Elements** stellt den Namen einer Einstellung in einer Antwort dar. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -55,8 +55,8 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 

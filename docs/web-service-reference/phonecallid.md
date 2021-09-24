@@ -1,27 +1,27 @@
 ---
-title: Anrufer
+title: PhoneCallId
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PhoneCallId
 api_type:
 - schema
 ms.assetid: 79e31a4c-fc84-4802-8761-470df8d63694
-description: Das Anruf-ID-Element gibt den Bezeichner eines Telefonanrufs an. Dieses Element ist erforderlich.
-ms.openlocfilehash: 3e4b9dba5e8be6e45a0c16508531fbc6cf91c170
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PhoneCallId-Element gibt den Bezeichner eines Telefonanrufs an. Dieses Element ist erforderlich.
+ms.openlocfilehash: 00b23c8b4023a6fef9c27295c8e023e5324b7026
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459700"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528319"
 ---
-# <a name="phonecallid"></a>Anrufer
+# <a name="phonecallid"></a>PhoneCallId
 
-Das **Anruf** -ID-Element gibt den Bezeichner eines Telefonanrufs an. Dieses Element ist erforderlich. 
+Das **PhoneCallId-Element** gibt den Bezeichner eines Telefonanrufs an. Dieses Element ist erforderlich. 
   
 ```xml
 <PhoneCallId Id="" />
@@ -36,7 +36,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|Id  <br/> |Gibt den Telefonanruf an, der getrennt werden soll. Dieses Attribut ist erforderlich.  <br/> |
+|Id  <br/> |Identifiziert den Telefonanruf, der getrennt werden soll. Dieses Attribut ist erforderlich.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -47,12 +47,12 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[DisconnectPhoneCall](disconnectphonecall.md) <br/> |Stellt eine Anforderung zum Trennen eines Anrufs dar.  <br/> |
-|[GetPhoneCallInformation](getphonecallinformation.md) <br/> |Stellt eine Anforderung zum Abrufen von Telefonanruf Informationen dar.  <br/> |
-|[PlayOnPhoneResponse (Exchange Webdienste)](playonphoneresponse-exchange-web-services.md) <br/> |Definiert eine Antwort auf eine PlayOnPhone-Anforderung.  <br/> |
+|[GetPhoneCallInformation](getphonecallinformation.md) <br/> |Stellt eine Anforderung zum Abrufen von Telefonanrufinformationen dar.  <br/> |
+|[PlayOnPhoneResponse (Exchange-Webdienste)](playonphoneresponse-exchange-web-services.md) <br/> |Definiert eine Antwort auf eine PlayOnPhone-Anforderung.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
@@ -60,7 +60,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

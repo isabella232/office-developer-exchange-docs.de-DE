@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 475351f7-e8c1-4494-92e5-83bdb4bf2eaf
 description: Das ContentExpiryDate-Element gibt das Ablaufdatum des Inhalts an.
-ms.openlocfilehash: 80081de9cd45d8d63b8a1a1e29da38514f2c2d82
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 57c60d8c438179fad30d58ee8670435c018dcdaf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527110"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511986"
 ---
 # <a name="contentexpirydate"></a>ContentExpiryDate
 
-Das **ContentExpiryDate** -Element gibt das Ablaufdatum des Inhalts an. 
+Das **ContentExpiryDate-Element** gibt das Ablaufdatum des Inhalts an. 
   
 ```XML
 <ContentExpiryDate></ContentExpiryDate>
@@ -44,9 +44,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ContentExpiryDate** -Elements ist eine Zeichenfolge, die das Ablaufdatum des Inhalts angibt. 
+Der Textwert des **ContentExpiryDate-Elements** ist eine Zeichenfolge, die das Ablaufdatum des Inhalts angibt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch
