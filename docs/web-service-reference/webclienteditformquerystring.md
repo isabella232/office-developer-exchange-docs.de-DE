@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - WebClientEditFormQueryString
 api_type:
 - schema
 ms.assetid: 9e571021-d58f-424b-8db2-48cf683533dc
-description: Das WebClientEditFormQueryString-Element stellt eine URL dar, die mit dem Outlook Web App-Endpunkt verkettet werden soll, um ein Element in Outlook Web App zu bearbeiten.
-ms.openlocfilehash: d6f20d1342746a764f754a6b20633a7bded3f6c1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das WebClientEditFormQueryString-Element stellt eine URL dar, die mit dem Outlook Web App Endpunkt verkettet werden soll, um ein Element in Outlook Web App zu bearbeiten.
+ms.openlocfilehash: d6e67d34de5b58624060beaadb4db1c322230bc0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464987"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537294"
 ---
 # <a name="webclienteditformquerystring"></a>WebClientEditFormQueryString
 
-Das **WebClientEditFormQueryString** -Element stellt eine URL dar, die mit dem Outlook Web App-Endpunkt verkettet werden soll, um ein Element in Outlook Web App zu bearbeiten. 
+Das **WebClientEditFormQueryString-Element** stellt eine URL dar, die mit dem Outlook Web App Endpunkt verkettet werden soll, um ein Element in Outlook Web App zu bearbeiten. 
   
 ```XML
 <WebClientEditFormQueryString/>
@@ -53,16 +53,16 @@ Keine.
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort im Exchange-Informationsspeicher dar.  <br/> |
 |[Message](message-ex15websvcsotherref.md) <br/> |Stellt eine Exchange-E-Mail-Nachricht dar.  <br/> |
-|[PostItem](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Informationsspeicher dar.  <br/> |
+|[PostItem](postitem.md) <br/> |Stellt ein Beitragselement im Exchange Informationsspeicher dar.  <br/> |
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert, der eine Zeichenfolge darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie für Exchange-Versionen, die mit Exchange Server 2013 beginnen, einschließlich Exchange Online, die Informationen aus dem [WebClientReadFormQueryString](webclientreadformquerystring.md) -Element, um ein Entwurfselement in Outlook Web App zu öffnen, und verwenden Sie dann die Benutzeroberfläche zum Bearbeiten des Entwurfs Elements. Das **WebClientEditFormQueryString** -Element gilt nicht für Exchange-Versionen, die mit Exchange Server 2013 beginnen, einschließlich Exchange Online. 
+Verwenden Sie für Versionen von Exchange ab Exchange Server 2013, einschließlich Exchange Online, die Informationen aus dem [WebClientReadFormQueryString-Element,](webclientreadformquerystring.md) um ein Entwurfselement in Outlook Web App zu öffnen, und verwenden Sie dann die Benutzeroberfläche zum Bearbeiten des Entwurfselements. Das **WebClientEditFormQueryString-Element** gilt nicht für Versionen von Exchange ab Exchange Server 2013, einschließlich Exchange Online. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

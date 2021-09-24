@@ -1,23 +1,23 @@
 ---
-title: UserID (Zeichenfolge)
+title: UserId (Zeichenfolge)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1796c2f2-5248-4a07-9aa0-0ca7453d7217
-description: Das UserID-Element gibt die Benutzer-ID eines e-Mail-Benutzers an.
-ms.openlocfilehash: 45edcf9215ca3e63f43ff75c2e9deb24c953ac09
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das UserId-Element gibt den Benutzerbezeichner eines E-Mail-Benutzers an.
+ms.openlocfilehash: 775898111d637e9c91bf2e057012124d1f5b61a8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459384"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517363"
 ---
-# <a name="userid-string"></a>UserID (Zeichenfolge)
+# <a name="userid-string"></a>UserId (Zeichenfolge)
 
-Das **UserID** -Element gibt die Benutzer-ID eines e-Mail-Benutzers an. 
+Das **UserId-Element** gibt den Benutzerbezeichner eines E-Mail-Benutzers an. 
   
 ```XML
 <UserId></UserId>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **UserID** -Elements ist ein Bezeichner eines e-Mail-Benutzers. 
+Der Textwert des **UserId-Elements** ist ein Bezeichner eines E-Mail-Benutzers. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

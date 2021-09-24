@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f04b14c9-384c-4016-b113-52a49e15e73b
 description: Das DiscoverySearchConfigurations-Element gibt ein Array von DiscoverySearchConfiguration-Elementen an.
-ms.openlocfilehash: 6af4c8198f2ad73f8b39f9718e11b88aa8075c39
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0bb104451d4bfe24e5e1bc9c5d2c98f226794c22
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461380"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535533"
 ---
 # <a name="discoverysearchconfigurations"></a>DiscoverySearchConfigurations
 
-Das **DiscoverySearchConfigurations** -Element gibt ein Array von **DiscoverySearchConfiguration** -Elementen an. 
+Das **DiscoverySearchConfigurations-Element** gibt ein Array von **DiscoverySearchConfiguration-Elementen** an. 
   
 ```XML
 <DiscoverySearchConfigurations>
@@ -44,9 +44,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetDiscoverySearchConfigurationResponseMessage](getdiscoverysearchconfigurationresponsemessage.md) <br/> |Gibt die Antwortnachricht für eine **GetDiscoverySearchConfiguration** -Anforderung an.  <br/> |
+|[GetDiscoverySearchConfigurationResponseMessage](getdiscoverysearchconfigurationresponsemessage.md) <br/> |Gibt die Antwortnachricht für eine **GetDiscoverySearchConfiguration-Anforderung an.**  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

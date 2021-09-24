@@ -1,23 +1,23 @@
 ---
-title: Untergeordnete Elemente (ArrayOfStringArrayAttributedValuesType)
+title: Untergeordnetes Element (ArrayOfStringArrayAttributedValuesType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d37b3fd5-63f1-4003-a6ec-54adfce23d52
-description: Das Children-Element gibt ein Array von untergeordneten Namen und Bezeichnern der Quell Zuordnungen für die zugeordnete persona an.
-ms.openlocfilehash: f4217f8a444bfdb6d86ff7b912294cfad9cbdcdc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Children-Element gibt ein Array von untergeordneten Namen und Bezeichnern ihrer Quellzuschreibungen für die zugeordnete Persona an.
+ms.openlocfilehash: 878f491af3047d313920cd0f3574de2daa8c21f0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460232"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536974"
 ---
-# <a name="children-arrayofstringarrayattributedvaluestype"></a>Untergeordnete Elemente (ArrayOfStringArrayAttributedValuesType)
+# <a name="children-arrayofstringarrayattributedvaluestype"></a>Untergeordnetes Element (ArrayOfStringArrayAttributedValuesType)
 
-Das **Children** -Element gibt ein Array von untergeordneten Namen und Bezeichnern der Quell Zuordnungen für die zugeordnete persona an. 
+Das **Children-Element** gibt ein Array von untergeordneten Namen und Bezeichnern ihrer Quellzuschreibungen für die zugeordnete Persona an. 
   
 ```XML
 <Children>
@@ -44,9 +44,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Persona](persona.md) <br/> |Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.  <br/> |
+|[Persona](persona.md) <br/> |Gibt eine Reihe von Persona-Daten an, die von einer **GetPersona-Anforderung** zurückgegeben werden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

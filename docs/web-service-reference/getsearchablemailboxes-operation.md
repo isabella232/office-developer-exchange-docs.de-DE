@@ -5,53 +5,53 @@ ms.date: 01/24/2020
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 47f8ff57-4835-4d2d-9136-44afb31a4cbe
-description: Hier finden Sie Informationen zum GetSearchableMailboxes-EWS-Vorgang.
-ms.openlocfilehash: e893a66eb1b638479eeccc6bd7548cb020f37243
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum EWS-Vorgang "GetSearchableMailboxes".
+ms.openlocfilehash: 385a1e317069641c51249c9522cf404ecf961722
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530839"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523083"
 ---
 # <a name="getsearchablemailboxes-operation"></a>GetSearchableMailboxes-Vorgang
 
 > [!IMPORTANT]
-> Ab dem 1. April 2020 ist der GetSearchableMailboxes-Vorgang in Exchange Online nicht mehr verfügbar. Dieser Vorgang ist in lokalen Versionen von Exchange Server nicht betroffen. Weitere Informationen finden Sie unter [Retirement of Legacy eDiscovery Tools in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement#getsearchablemailboxes-setholdonmailboxes-and-getholdonmailboxes-operations-in-the-ews-api).
+> Ab dem 1. April 2020 ist der GetSearchableMailboxes-Vorgang in Exchange Online nicht mehr verfügbar. Dieser Vorgang ist in lokalen Versionen von Exchange Server nicht betroffen. Weitere Informationen finden Sie unter ["Ausmustern älterer eDiscovery-Tools" in Exchange Online.](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement#getsearchablemailboxes-setholdonmailboxes-and-getholdonmailboxes-operations-in-the-ews-api)
 
-Hier finden Sie Informationen zum **GetSearchableMailboxes** -EWS-Vorgang. 
+Hier finden Sie Informationen zum EWS-Vorgang **"GetSearchableMailboxes".** 
   
-Der **GetSearchableMailboxes** -Vorgang ruft einen Bereich mit durchsuchbaren Postfächern für Ermittlungs suchen ab. Der Umfang der durchsuchbaren Postfächer, die in der Antwort zurückgegeben werden, wird durch den Suchfilter bestimmt und ob die Mitgliedschaft in Verteilergruppen erweitert wird. 
+Der **GetSearchableMailboxes-Vorgang** ruft einen bereichbezogenen Satz durchsuchbarer Postfächer für Suchvorgänge ab. Der Umfang der durchsuchbaren Postfächer, die in der Antwort zurückgegeben werden, wird durch den Suchfilter bestimmt und ob die Mitgliedschaft in Verteilergruppen erweitert wird. 
 
 > [!NOTE] 
-> Dieser Vorgang ist für die Verwendung mit dem Suchfilter und zum Abrufen nur der ersten paar Tausender vorgesehen. Es ist nicht für den vollständigen Abruf vorgesehen.
+> Dieser Vorgang ist für die Verwendung mit dem Suchfilter und das Abrufen der ersten Tausender gedacht. es ist nicht für den vollständigen Abruf vorgesehen.
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-getsearchablemailboxes-operation"></a>Verwenden des GetSearchableMailboxes-Vorgangs
 
-Der **GetSearchableMailboxes** -Vorgang ruft Informationen zu durchsuchbaren Postfächern ab. Die folgenden Argumente können in der Anforderung übergeben werden: 
+Der **GetSearchableMailboxes-Vorgang** ruft Informationen zu durchsuchbaren Postfächern ab. Die folgenden Argumente können in der Anforderung übergeben werden: 
   
-- [SearchFilter](searchfilter.md) – akzeptiert einen einzelnen e-Mail-Alias als Argument. 
+- [SearchFilter](searchfilter.md) : Akzeptiert einen einzelnen E-Mail-Alias als Argument. 
     
-- [ExpandGroupMembership](expandgroupmembership.md) – gibt an, ob die Mitgliedschaft in Verteilergruppen in den Ergebnissen erweitert wird, die in der Antwort zurückgegeben werden. 
+- [ExpandGroupMembership](expandgroupmembership.md) – Gibt an, ob die Verteilergruppenmitgliedschaft in den in der Antwort zurückgegebenen Ergebnissen erweitert wird. 
     
-Wenn der e-Mail-Aliassatz im Suchfilter eine Verteilergruppe ist und die Mitgliedschaft der Verteilergruppe nicht erweitert wird, enthält die Antwort die Postfachinformationen für die Verteilergruppe. Wenn der e-Mail-Aliassatz im Suchfilter eine Verteilergruppe ist und die Mitgliedschaft der Verteilergruppe erweitert wird, enthält die Antwort die Postfachinformationen für jedes Postfach, das Mitglied der Verteilergruppe ist. Wenn der Suchfilter den Alias eines einzelnen Benutzers enthält, enthält die Antwort die Postfachinformationen für den einzelnen Benutzer. Die Antwort enthält alle durchsuchbaren Postfächer, wenn das [GetSearchableMailboxes](getsearchablemailboxes.md) -Element leer ist. Dies ist identisch mit einem leeren [SearchFilter](searchfilter.md) -Element und dem [ExpandGroupMembership](expandgroupmembership.md) -Element, das auf **false**festgelegt ist.
+Wenn der im Suchfilter festgelegte E-Mail-Alias eine Verteilergruppe ist und die Verteilergruppenmitgliedschaft nicht erweitert wird, enthält die Antwort die Postfachinformationen für die Verteilergruppe. Wenn der im Suchfilter festgelegte E-Mail-Alias eine Verteilergruppe ist und die Verteilergruppenmitgliedschaft erweitert wird, enthält die Antwort die Postfachinformationen für jedes Postfach, das Mitglied der Verteilergruppe ist. Wenn der Suchfilter den Alias eines einzelnen Benutzers enthält, enthält die Antwort die Postfachinformationen für den einzelnen Benutzer. Die Antwort enthält alle durchsuchbaren Postfächer, wenn das [GetSearchableMailboxes-Element](getsearchablemailboxes.md) leer ist. Dies entspricht dem Festlegen eines leeren [SearchFilter-Elements](searchfilter.md) und des [ExpandGroupMembership-Elements](expandgroupmembership.md) auf **"false".**
   
 ### <a name="getsearchablemailboxes-operation-soap-headers"></a>SOAP-Header des GetSearchableMailboxes-Vorgangs
 
-Der **GetSearchableMailboxes** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **GetSearchableMailboxes-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |Headername|Element|Beschreibung|
 |:-----|:-----|:-----|
-|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Gibt die Serverrollen an, die erforderlich sind, damit der Anrufer die Anforderung stellen muss. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Identifiziert die Serverrollen, die erforderlich sind, damit der Aufrufer die Anforderung stellen kann. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="getsearchablemailboxes-operation-request-example-request-information-about-a-distribution-group"></a>GetSearchableMailboxes-Vorgangs Anforderungs Beispiel: Anfordern von Informationen zu einer Verteilergruppe
+## <a name="getsearchablemailboxes-operation-request-example-request-information-about-a-distribution-group"></a>GetSearchableMailboxes-Vorgangsanforderungsbeispiel: Anfordern von Informationen zu einer Verteilergruppe
 
-Im folgenden Beispiel einer **GetSearchableMailboxes** -Vorgangsanforderung wird gezeigt, wie die Postfachinformationen für die lolgroup-Verteilergruppe abgerufen werden. 
+Das folgende Beispiel einer **GetSearchableMailboxes-Vorgangsanforderung** zeigt, wie Sie die Postfachinformationen für die Verteilergruppe "lolgroup" abrufen. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -71,15 +71,15 @@ Im folgenden Beispiel einer **GetSearchableMailboxes** -Vorgangsanforderung wird
 
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [GetSearchableMailboxes](getsearchablemailboxes.md)   
 - [SearchFilter](searchfilter.md)    
 - [ExpandGroupMembership](expandgroupmembership.md)
     
-## <a name="successful-getsearchablemailboxes-operation-response-get-information-about-a-distribution-group"></a>Erfolgreiche GetSearchableMailboxes-Vorgangs Antwort: Abrufen von Informationen zu einer Verteilergruppe
+## <a name="successful-getsearchablemailboxes-operation-response-get-information-about-a-distribution-group"></a>Erfolgreiche GetSearchableMailboxes-Vorgangsantwort: Abrufen von Informationen zu einer Verteilergruppe
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetSearchableMailboxes** -Vorgangsanforderung zum Abrufen der Ermittlungsinformationen für die lolgroup-Verteilergruppe. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetSearchableMailboxes-Vorgangsanforderung,** um die Ermittlungsinformationen für die Lolgroup-Verteilergruppe abzurufen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -117,7 +117,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetSearchableMa
 
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [GetSearchableMailboxesResponse](getsearchablemailboxesresponse.md)   
 - [ResponseCode](responsecode.md)   
@@ -128,12 +128,12 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
 - [IsExternalMailbox](isexternalmailbox.md)   
 - [ExternalEmailAddress](externalemailaddress.md)    
 - [DisplayName (Zeichenfolge)](displayname-string.md)    
-- [Ismembershipgroup](ismembershipgroup.md)    
+- [IsMembershipGroup](ismembershipgroup.md)    
 - [ReferenceId](referenceid.md)
     
-## <a name="successful-getsearchablemailboxes-operation-response-get-information-about-an-expanded-distribution-group"></a>Erfolgreiche GetSearchableMailboxes-Vorgangs Antwort: Abrufen von Informationen zu einer erweiterten Verteilergruppe
+## <a name="successful-getsearchablemailboxes-operation-response-get-information-about-an-expanded-distribution-group"></a>Erfolgreiche GetSearchableMailboxes-Vorgangsantwort: Abrufen von Informationen zu einer erweiterten Verteilergruppe
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetSearchableMailboxes** -Vorgangsanforderung zum Abrufen der Ermittlungsinformationen über Mitglieder der erweiterten lolgroup-Verteilergruppe. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetSearchableMailboxes-Vorgangsanforderung,** um die Ermittlungsinformationen zu Mitgliedern der erweiterten Lolgroup-Verteilergruppe abzurufen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -178,7 +178,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetSearchableMa
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [GetSearchableMailboxesResponse](getsearchablemailboxesresponse.md)    
 - [ResponseCode](responsecode.md)   
@@ -189,12 +189,12 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
 - [IsExternalMailbox](isexternalmailbox.md)    
 - [ExternalEmailAddress](externalemailaddress.md)    
 - [DisplayName (Zeichenfolge)](displayname-string.md)    
-- [Ismembershipgroup](ismembershipgroup.md)    
+- [IsMembershipGroup](ismembershipgroup.md)    
 - [ReferenceId](referenceid.md)
     
-## <a name="getsearchablemailboxes-operation-error-response"></a>Fehlerantwort des GetSearchableMailboxes-Vorgangs
+## <a name="getsearchablemailboxes-operation-error-response"></a>GetSearchableMailboxes-Vorgangsfehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetSearchableMailboxes** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Abrufen aller durchsuchbaren Postfächer, wenn das **ExpandGroupMembership** -Argument auf **true**festgelegt ist. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetSearchableMailboxes-Vorgangsanforderung.** Dies ist eine Antwort auf eine Anforderung zum Abrufen aller durchsuchbaren Postfächer, wenn das Argument **ExpandGroupMembership** auf **"true"** festgelegt ist. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -232,7 +232,7 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
 - [DescriptiveLinkKey](descriptivelinkkey.md) 
 - [SearchableMailboxes](searchablemailboxes.md)
     
-Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
+Weitere Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -5,40 +5,40 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 21a4987c-c24d-4a6e-ace4-e81edcda6303
 description: Hier finden Sie Informationen zum GetAppManifests-EWS-Vorgang.
-ms.openlocfilehash: 4d4c1d32f14cf144335ddfdf8c9cd4c88a4421d0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 979a09d24d0c9365a92e589aa169bebf2340411b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463006"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509917"
 ---
 # <a name="getappmanifests-operation"></a>GetAppManifests-Vorgang
 
-Hier finden Sie Informationen zum **GetAppManifests** -EWS-Vorgang. 
+Hier finden Sie Informationen zum **GetAppManifests-EWS-Vorgang.** 
   
-Der **GetAppManifests** -Vorgang ruft App-Manifeste ab. 
+Der **GetAppManifests-Vorgang** ruft App-Manifeste ab. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-getappmanifests-operation"></a>Verwenden des GetAppManifests-Vorgangs
 
-Der **GetAppManifests** -Vorgang benötigt keine Argumente, um die APP-Manifeste für ein Postfach anzufordern. Die Antwort enthält Base64-codierte XML-Manifestdateien für jede APP, die in einem Postfach installiert ist. 
+Der **GetAppManifests-Vorgang** verwendet keine Argumente, um die App-Manifeste für ein Postfach anzufordern. Die Antwort enthält base64-codierte XML-Manifestdateien für jede App, die in einem Postfach installiert ist. 
   
 ### <a name="getappmanifests-operation-soap-headers"></a>SOAP-Header des GetAppManifests-Vorgangs
 
-Der **GetAppManifests** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **GetAppManifests-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="getappmanifests-operation-request-example-get-the-app-manifests-for-a-mailbox"></a>GetAppManifests-Vorgangs Anforderungs Beispiel: Abrufen der APP-Manifeste für ein Postfach
+## <a name="getappmanifests-operation-request-example-get-the-app-manifests-for-a-mailbox"></a>GetAppManifests-Vorgangsanforderungsbeispiel: Abrufen der App-Manifeste für ein Postfach
 
-Im folgenden Beispiel einer **GetAppManifests** -Vorgangsanforderung wird gezeigt, wie die APP-Manifeste für ein Postfach abgerufen werden. Das [ApiVersionSupported](apiversionsupported.md) -Element und das [SchemaVersionSupported](schemaversionsupported.md) -Element sind optional. 
+Das folgende Beispiel einer **GetAppManifests-Vorgangsanforderung** zeigt, wie Sie die App-Manifeste für ein Postfach abrufen. Das [ApiVersionSupported-Element](apiversionsupported.md) und das [SchemaVersionSupported-Element](schemaversionsupported.md) sind optional. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -62,7 +62,7 @@ Im folgenden Beispiel einer **GetAppManifests** -Vorgangsanforderung wird gezeig
 
 ```
 
-Der SOAP-Anforderungstext Körper enthält das folgende Element:
+Der SOAP-Anforderungstext enthält das folgende Element:
   
 - [GetAppManifests](getappmanifests.md)
     
@@ -70,9 +70,9 @@ Der SOAP-Anforderungstext Körper enthält das folgende Element:
     
 - [SchemaVersionSupported](schemaversionsupported.md)
     
-## <a name="successful-getappmanifests-operation-response"></a>Erfolgreiche Reaktion des GetAppManifests-Vorgangs
+## <a name="successful-getappmanifests-operation-response"></a>Erfolgreiche GetAppManifests-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetAppManifests** -Vorgangsanforderung, um die APP-Manifeste für ein Postfach abzurufen. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetAppManifests-Vorgangsanforderung** zum Abrufen der App-Manifeste für ein Postfach. 
   
 > [!NOTE]
 > Alle Base64-App-Manifeste wurden willkürlich abgeschnitten, um die Lesbarkeit zu erhalten. 
@@ -106,7 +106,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetAppManifests
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [GetAppManifestsResponse](getappmanifestsresponse.md)
     
@@ -118,13 +118,13 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [Manifest](manifest.md)
     
-Der SOAP-Antworttext Körper kann auch das folgende Element enthalten:
+Der SOAP-Antworttext kann auch das folgende Element enthalten:
   
 - [Manifeste](manifests.md)
     
-## <a name="getappmanifests-operation-error-response"></a>Fehlerantwort des GetAppManifests-Vorgangs
+## <a name="getappmanifests-operation-error-response"></a>GetAppManifests-Vorgangsfehlerantwort
 
-Fehler, die für diesen Vorgang zurückgegeben werden, beziehen sich auf ein ungültiges Format der Eingabeparameter oder sind generische EWS-Fehler. Informationen zu Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
+Fehler, die für diesen Vorgang zurückgegeben werden, beziehen sich auf ein ungültiges Format der Eingabeparameter oder sind generische EWS-Fehler. Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ```
 <?xml version="1.0" encoding="utf-8"?>

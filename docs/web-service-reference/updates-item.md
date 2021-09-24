@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Updates
 api_type:
 - schema
 ms.assetid: 5c1a855e-390d-4713-9d10-6e86ca392814
-description: Das Updates-Element enthält eine Reihe von Elementen, die Append-, festlegen-und DELETE-Änderungen an Elementeigenschaften definieren.
-ms.openlocfilehash: 6902ea4d3d3d9adc074745d5642cdfa6d91a9163
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Updates-Element enthält eine Reihe von Elementen, die Anfüge-, Festlegen- und Löschen-Änderungen an Elementeigenschaften definieren.
+ms.openlocfilehash: b4a343d941d29e9b25ebedfbf25894c7ec9b22d7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456353"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517406"
 ---
 # <a name="updates-item"></a>Updates (Element)
 
-Das **Updates** -Element enthält eine Reihe von Elementen, die Append-, festlegen-und DELETE-Änderungen an Elementeigenschaften definieren. 
+Das  Updates-Element enthält eine Reihe von Elementen, die Anfüge-, Festlegen- und Löschen-Änderungen an Elementeigenschaften definieren. 
   
 - [UpdateItem](updateitem.md)
   
@@ -61,11 +61,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemChange](itemchange.md) <br/> |Enthält eine Element-ID und die Updates, die auf das Element angewendet werden sollen.  <br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/UpdateItem/ItemChanges/ItemChange[i]` <br/> |
+|[ItemChange](itemchange.md) <br/> |Enthält einen Elementbezeichner und die Aktualisierungen, die auf das Element angewendet werden sollen.  <br/> Es folgt der XPath-Ausdruck für dieses Element:  `/UpdateItem/ItemChanges/ItemChange[i]` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die durch dieses Element definierten Updates werden für das Element ausgeführt, das durch die Elemente [ItemID](itemid.md), [OccurrenceItemId](occurrenceitemid.md)oder [RecurringMasterItemId](recurringmasteritemid.md) identifiziert wird. 
+Die updates that are defined by this element are performed on the item that is identified by the [ItemId](itemid.md), [OccurrenceItemId](occurrenceitemid.md), or [RecurringMasterItemId](recurringmasteritemid.md) elements. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

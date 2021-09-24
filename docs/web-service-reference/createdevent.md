@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreatedEvent
 api_type:
 - schema
 ms.assetid: f0e53a53-c352-42a5-8280-cd808b0e961b
-description: Das CreatedEvent-Element stellt ein Ereignis dar, in dem ein Element oder ein Ordner erstellt wird.
-ms.openlocfilehash: 546dde782b3b20cd76acb625067b5f2d8f568854
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das CreatedEvent-Element stellt ein Ereignis dar, in dem ein Element oder Ordner erstellt wird.
+ms.openlocfilehash: ab93117274b5084d691556a978d6420b9c7f70c3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44445321"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510351"
 ---
 # <a name="createdevent"></a>CreatedEvent
 
-Das **CreatedEvent** -Element stellt ein Ereignis dar, in dem ein Element oder ein Ordner erstellt wird. 
+Das **CreatedEvent-Element** stellt ein Ereignis dar, in dem ein Element oder Ordner erstellt wird. 
   
 ```xml
 <CreatedEvent>
@@ -55,8 +55,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Watermark](watermark.md) <br/> |Stellt eine Ereignis Textmarke in der Tabelle Post Fach Ereignisse dar.  <br/> |
-|[Timestamp](timestamp.md) <br/> |Stellt den Zeitstempel eines erstellten Element-oder Ordner Postfach-Ereignisses dar.  <br/> |
+|[Watermark](watermark.md) <br/> |Stellt eine Ereignislesemarke in der Postfachereignistabelle dar.  <br/> |
+|[TimeStamp](timestamp.md) <br/> |Stellt den Zeitstempel eines erstellten Element- oder Ordnerpostfachereignisses dar.  <br/> |
 |[FolderId](folderid.md) <br/> |Stellt den Bezeichner des erstellten Ordners dar.  <br/> |
 |[ItemId](itemid.md) <br/> |Stellt den Bezeichner des erstellten Elements dar.  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des übergeordneten Ordners des erstellten Elements oder Ordners dar.  <br/> |
@@ -67,7 +67,7 @@ Keine.
 |:-----|:-----|
 |[Benachrichtigung](notification-ex15websvcsotherref.md) <br/> |Enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

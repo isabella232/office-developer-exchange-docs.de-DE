@@ -5,47 +5,47 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9279c3ad-f7c8-4bbc-b0a7-2c78416cb39a
-description: Hier finden Sie Informationen zum GetNonIndexableItemDetails-EWS-Vorgang.
-ms.openlocfilehash: a443e04b0622ddbaaeb1bc8c04bfd05679c6207e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum EWS-Vorgang "GetNonIndexableItemDetails".
+ms.openlocfilehash: d494765d56bc06c2e7f90b99174622b00449116d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530211"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516972"
 ---
 # <a name="getnonindexableitemdetails-operation"></a>GetNonIndexableItemDetails-Vorgang
 
-Hier finden Sie Informationen zum **GetNonIndexableItemDetails** -EWS-Vorgang. 
+Hier finden Sie Informationen zum EWS-Vorgang **"GetNonIndexableItemDetails".** 
   
-Der **GetNonIndexableItemDetails** -Vorgang ruft Details zu Elementen ab, die nicht indiziert werden können. Dies umfasst, jedoch nicht auf die Element-ID, einen Fehlercode, eine Fehlerbeschreibung, bei dem Versuch, das Element zu indizieren, sowie zusätzliche Informationen zur Datei. 
+Der **GetNonIndexableItemDetails-Vorgang** ruft Details zu Elementen ab, die nicht indiziert werden können. Dazu gehören, aber nicht beschränkt auf, der Elementbezeichner, ein Fehlercode, eine Fehlerbeschreibung, wann versucht wurde, das Element zu indiziert, und zusätzliche Informationen zur Datei. 
   
 > [!NOTE]
-> Obwohl das Schema angibt, dass mehr als ein Postfach durchsucht werden kann, unterstützt der Dienst in der ursprünglichen Version von Exchange 2013 nur das erhalten von Element Details für nicht indizier Bare Elemente in einem einzelnen Postfach. 
+> Obwohl das Schema angibt, dass mehrere Postfächer durchsucht werden können, unterstützt der Dienst in der ersten Version von Exchange 2013 nur das Abrufen von Elementdetails für nicht indizierbare Elemente in einem einzigen Postfach. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-getnonindexableitemdetails-operation"></a>Verwenden des GetNonIndexableItemDetails-Vorgangs
 
-Der **GetNonIndexableItemDetails** -Vorgang identifiziert Postfachelemente, die nicht indiziert werden können, und enthält Informationen dazu, warum die Elemente nicht indiziert werden können. Elemente, die nicht indiziert werden können, werden während einer Discovery-Suche nicht durchsucht. 
+Der **GetNonIndexableItemDetails-Vorgang** identifiziert Postfachelemente, die nicht indiziert werden können, und liefert Informationen dazu, warum die Elemente nicht indiziert werden können. Elemente, die nicht indiziert werden können, werden während einer Ermittlungssuche nicht durchsucht. 
   
 ### <a name="getnonindexableitemdetails-operation-soap-headers"></a>SOAP-Header des GetNonIndexableItemDetails-Vorgangs
 
-Der **GetNonIndexableItemDetails** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **GetNonIndexableItemDetails-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Gibt die Serverrollen an, die erforderlich sind, damit der Anrufer die Anforderung stellen muss. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Identifiziert die Serverrollen, die erforderlich sind, damit der Aufrufer die Anforderung stellen kann. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="getnonindexableitemdetails-operation-request-example-get-the-details-of-an-item-that-cannot-be-indexed"></a>GetNonIndexableItemDetails-Vorgangs Anforderungs Beispiel: Abrufen der Details eines Elements, das nicht indiziert werden kann
+## <a name="getnonindexableitemdetails-operation-request-example-get-the-details-of-an-item-that-cannot-be-indexed"></a>GetNonIndexableItemDetails-Vorgangsanforderungsbeispiel: Abrufen der Details eines Elements, das nicht indiziert werden kann
 
-Im folgenden Beispiel einer **GetNonIndexableItemDetails** -Vorgangsanforderung wird gezeigt, wie die Details für Elemente angefordert werden, die nicht für ein einzelnes Postfach indiziert werden können. Die Suche wird sowohl in primären als auch in archivpostfächern durchgeführt. 
+Das folgende Beispiel einer **GetNonIndexableItemDetails-Vorgangsanforderung** zeigt, wie Die Details für Elemente angefordert werden, die nicht für ein einzelnes Postfach indiziert werden können. Die Suche wird sowohl in primären postfächern als auch in Archivpostfächern durchgeführt. 
   
 > [!NOTE]
-> Alle Legacy Domänennamen in diesem Beispiel sind verkürzt worden, um die Lesbarkeit zu erhalten. 
+> Alle älteren Domänennamen in diesem Beispiel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -67,7 +67,7 @@ Im folgenden Beispiel einer **GetNonIndexableItemDetails** -Vorgangsanforderung 
 
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [GetNonIndexableItemDetails](getnonindexableitemdetails.md)
     
@@ -77,9 +77,9 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [SearchArchiveOnly](searcharchiveonly.md)
     
-## <a name="successful-getnonindexableitemdetails-operation-response"></a>Erfolgreiche Reaktion des GetNonIndexableItemDetails-Vorgangs
+## <a name="successful-getnonindexableitemdetails-operation-response"></a>Erfolgreiche GetNonIndexableItemDetails-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetNonIndexableItemDetails** -Vorgangsanforderung zum Abrufen von Elementen, die nicht für ein einzelnes Postfach indiziert werden können. Das Element in diesem Beispiel, das nicht indiziert werden kann, ist die Datei binarydatei. ABC, die ein unbekanntes Format aufweist. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetNonIndexableItemDetails-Vorgangsanforderung** zum Abrufen von Elementen, die nicht für ein einzelnes Postfach indiziert werden können. Das Element in diesem Beispiel, das nicht indiziert werden kann, ist die Datei binaryfile.abc, die ein unbekanntes Format aufweist. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -121,7 +121,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetNonIndexable
 
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [GetNonIndexableItemDetailsResponse](getnonindexableitemdetailsresponse.md)
     
@@ -141,7 +141,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [IsPermanentFailure](ispermanentfailure.md)
     
-- [Sortvalue](sortvalue.md)
+- [SortValue](sortvalue.md)
     
 - [AttemptCount](attemptcount.md)
     
@@ -149,9 +149,9 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [AdditionalInfo](additionalinfo.md)
     
-## <a name="getnonindexableitemdetails-operation-error-response"></a>Fehlerantwort des GetNonIndexableItemDetails-Vorgangs
+## <a name="getnonindexableitemdetails-operation-error-response"></a>GetNonIndexableItemDetails-Vorgangsfehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetNonIndexableItemDetails** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Abrufen von Element Details für Elemente, die nicht aus mehr als einem Postfach indiziert werden können. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetNonIndexableItemDetails-Vorgangsanforderung.** Dies ist eine Antwort auf eine Anforderung zum Abrufen von Elementdetails für Elemente, die nicht aus mehr als einem Postfach indiziert werden können. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -187,7 +187,7 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
+Weitere Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Children
 api_type:
 - schema
 ms.assetid: ceaffddd-f9bc-43ea-b348-a20fdade738f
-description: Das untergeordnete Element enthält die Namen der untergeordneten Elemente eines Kontakts.
-ms.openlocfilehash: de398c93590a4a9ae93b6aa46994c9295d051b84
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Children-Element enthält die Namen der untergeordneten Elemente eines Kontakts.
+ms.openlocfilehash: 6090dc1a2b684ddff4ab0964de3308ceed25b876
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460225"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536906"
 ---
 # <a name="children"></a>Untergeordnetes Element
 
-Das unter **geordnete** Element enthält die Namen der untergeordneten Elemente eines Kontakts. 
+Das  Children-Element enthält die Namen der untergeordneten Elemente eines Kontakts. 
   
 ```xml
 <Children>
@@ -42,15 +42,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[String](string.md) <br/> |Enthält den Namen des untergeordneten Elements des Kontakts.  <br/> |
+|[String](string.md) <br/> |Enthält den Namen des untergeordneten Elements eines Kontakts.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Kontaktperson](contact.md) <br/> |Stellt einen Kontakt im Exchange-Informationsspeicher dar.  <br/> |
+|[Kontaktperson](contact.md) <br/> |Stellt einen Kontakt im Exchange Speicher dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

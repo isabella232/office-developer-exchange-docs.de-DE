@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ContactSource
 api_type:
 - schema
 ms.assetid: 500b0423-864e-4cde-a39b-6b5b06d1aa6a
-description: Das ContactSource-Element beschreibt, ob sich der Kontakt im Exchange-Informationsspeicher oder Active Directory-Domänendienste (AD DS) befindet.
-ms.openlocfilehash: 5447dedf199c5ad6b944aa33e6dca03e83a3c340
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ContactSource-Element beschreibt, ob sich der Kontakt im Exchange-Speicher oder in Active Directory Domain Services (AD DS) befindet.
+ms.openlocfilehash: 538739a47d257de90b961a2c4d391e95eae0d620
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462710"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536736"
 ---
 # <a name="contactsource"></a>ContactSource
 
-Das **ContactSource** -Element beschreibt, ob sich der Kontakt im Exchange-Informationsspeicher oder Active Directory-Domänendienste (AD DS) befindet. 
+Das **ContactSource-Element** beschreibt, ob sich der Kontakt im Exchange Speicher oder in Active Directory Domain Services (AD DS) befindet. 
   
 ```xml
 <ContactSource/>
@@ -49,13 +49,13 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Im folgenden sind die möglichen Werte für dieses Element angegeben:
+Es folgen die möglichen Werte für dieses Element:
   
-- ActiveDirectory
+- Activedirectory
     
 - Store
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

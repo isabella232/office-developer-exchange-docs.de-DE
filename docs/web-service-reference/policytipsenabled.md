@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 16409652-21e4-4bd3-9373-67e1882236b4
-description: Das PolicyTipsEnabled-Element gibt an, ob Richtlinien Tipps aktiviert sind.
-ms.openlocfilehash: 26a527022d60dd4b98f70c2b3bf020b649066057
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PolicyTipsEnabled-Element gibt an, ob Richtlinientipps aktiviert sind.
+ms.openlocfilehash: de0fdc224f2e4a94d5270e0f1920eb28b0f29405
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468516"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516510"
 ---
 # <a name="policytipsenabled"></a>PolicyTipsEnabled
 
-Das **PolicyTipsEnabled** -Element gibt an, ob Richtlinien Tipps aktiviert sind. 
+Das **PolicyTipsEnabled-Element** gibt an, ob Richtlinientipps aktiviert sind. 
   
 ```XML
 <PolicyTipsEnabled> true | false </PolicyTipsEnabled>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **PolicyTipsEnabled** -Element gibt an, dass Richtlinien Tipps für ein Postfach aktiviert sind. Der Wert **false** gibt an, dass Richtlinien Tipps für ein Postfach nicht aktiviert sind. 
+Der Textwert **"true"** für das **PolicyTipsEnabled-Element** gibt an, dass Richtlinientipps für ein Postfach aktiviert sind. Der Wert **"false"** gibt an, dass Richtlinientipps für ein Postfach nicht aktiviert sind. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

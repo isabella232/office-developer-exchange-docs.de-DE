@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c8294eee-6588-4e42-965d-c8261a4770c9
-description: Das UserDisabledExtensions-Element listet die deaktivierten apps auf.
-ms.openlocfilehash: 42fd16f342e8c5a4f7a5526cb7513cf77ba8246f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das UserDisabledExtensions-Element listet die deaktivierten Apps auf.
+ms.openlocfilehash: e18eb1a7e53eab83c72fb6d974e25e7efbe2dd9c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44433679"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517371"
 ---
 # <a name="userdisabledextensions"></a>UserDisabledExtensions
 
-Das **UserDisabledExtensions** -Element listet die deaktivierten apps auf. 
+Das **UserDisabledExtensions-Element** listet die deaktivierten Apps auf. 
   
 ```XML
 <UserDisabledExtensions>
@@ -40,9 +40,9 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[User Parameters](userparameters.md)
+[UserParameters](userparameters.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

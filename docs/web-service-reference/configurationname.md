@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ConfigurationName
 api_type:
 - schema
 ms.assetid: 3b524a2f-9c6b-4550-9f3d-f78d176b0f7b
-description: Das configurationName-Element gibt die angeforderten Dienstkonfigurationen nach Namen an.
-ms.openlocfilehash: 5e1216253a633af643dbd276827842dbe2db5d5f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ConfigurationName-Element gibt die angeforderten Dienstkonfigurationen anhand des Namens an.
+ms.openlocfilehash: 39f847c256614cd0c207f440691bd87d09ed237b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463923"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523125"
 ---
 # <a name="configurationname"></a>ConfigurationName
 
-Das **ConfigurationName** -Element gibt die angeforderten Dienstkonfigurationen nach Namen an. 
+Das **ConfigurationName-Element** gibt die angeforderten Dienstkonfigurationen anhand des Namens an. 
   
 ```xml
 <ConfigurationName>MailTips or UnifiedMessagingConfiguration or ProtectionRules</ConfigurationName>
@@ -48,17 +48,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-In der folgenden Tabelle sind die möglichen Werte für das **ConfigurationName** -Element aufgeführt. 
+In der folgenden Tabelle sind die möglichen Werte für das **ConfigurationName-Element** aufgeführt. 
   
-**Werte des ConfigurationName-Elements**
+**ConfigurationName-Elementwerte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|MailTips  <br/> |Identifiziert die e-Mail-Infos-Dienstkonfiguration.  <br/> |
-|UnifiedMessagingConfiguration  <br/> |Gibt die Konfiguration des Unified Messaging-Diensts an.  <br/> |
-|ProtectionRules  <br/> |Identifiziert die Dienstkonfiguration des Schutz Regel Diensts.  <br/> |
+|MailTips  <br/> |Identifies the MailTips service configuration.  <br/> |
+|UnifiedMessagingConfiguration  <br/> |Identifiziert die Unified Messaging-Dienstkonfiguration.  <br/> |
+|ProtectionRules  <br/> |Identifiziert die Dienstkonfiguration für Schutzregeln.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -68,7 +68,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

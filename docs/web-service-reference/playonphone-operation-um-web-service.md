@@ -1,32 +1,32 @@
 ---
-title: PlayOnPhone-Vorgang (um-Webdienst)
+title: PlayOnPhone-Vorgang (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PlayOnPhone
 api_type:
 - schema
 ms.assetid: 7d55be55-f8b6-4e96-a61e-26fa190217fd
-description: Der PlayOnPhone-Vorgang tätigt einen ausgehenden Anruf und gibt eine angegebene Nachricht über das Telefon wieder, das durch das dialtype-Element angegeben wird.
-ms.openlocfilehash: c5ff82bcd822aa2c659d1782ea4a1349d198bc80
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der PlayOnPhone-Vorgang führt einen ausgehenden Anruf durch und gibt eine angegebene Nachricht über das durch das DialString-Element angegebene Telefon wieder.
+ms.openlocfilehash: 4d18727da18c36e6410c3cc6ab3bbf873993be72
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466234"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516564"
 ---
-# <a name="playonphone-operation-um-web-service"></a>PlayOnPhone-Vorgang (um-Webdienst)
+# <a name="playonphone-operation-um-web-service"></a>PlayOnPhone-Vorgang (UM-Webdienst)
 
-Der PlayOnPhone-Vorgang tätigt einen ausgehenden Anruf und gibt eine angegebene Nachricht über das Telefon wieder, das durch das **dialtype** -Element angegeben wird. 
+Der PlayOnPhone-Vorgang führt einen ausgehenden Anruf durch und gibt eine angegebene Nachricht über das durch das **DialString-Element** angegebene Telefon wieder. 
   
-## <a name="playonphone-request-example"></a>PlayOnPhone-Anforderungs Beispiel
+## <a name="playonphone-request-example"></a>PlayOnPhone-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer PlayOnPhone-Anforderung wird gezeigt, wie Sie eine Anforderung zum Erstellen eines ausgehenden Anrufs und zum Abspielen einer Nachricht bilden.
+Das folgende Beispiel einer PlayOnPhone-Anforderung zeigt, wie Sie eine Anforderung zum Tätigen eines ausgehenden Anrufs und zum Wiedergeben einer Nachricht erstellen.
   
 ### <a name="code"></a>Code
 
@@ -42,11 +42,11 @@ Im folgenden Beispiel einer PlayOnPhone-Anforderung wird gezeigt, wie Sie eine A
 </soap:Envelope>
 ```
 
-## <a name="successful-playonphone-response-example"></a>Erfolgreiches PlayOnPhone-Antwortbeispiel
+## <a name="successful-playonphone-response-example"></a>Beispiel für erfolgreiche PlayOnPhone-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer PlayOnPhone-Antwort wird eine Antwort auf die PlayOnPhone-Anforderung angezeigt.
+Das folgende Beispiel einer PlayOnPhone-Antwort zeigt eine Antwort auf die PlayOnPhone-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -65,9 +65,9 @@ Im folgenden Beispiel einer PlayOnPhone-Antwort wird eine Antwort auf die PlayOn
 
 
 
-[PlayOnPhone (um-Webdienst)](playonphone-um-web-service.md)
+[PlayOnPhone (UM-Webdienst)](playonphone-um-web-service.md)
   
-[PlayOnPhoneResponse (um-Webdienst)](playonphoneresponse-um-web-service.md)
+[PlayOnPhoneResponse (UM-Webdienst)](playonphoneresponse-um-web-service.md)
   
-[PlayOnPhoneGreeting-Vorgang (um-Webdienst)](playonphonegreeting-operation-um-web-service.md)
+[PlayOnPhoneGreeting-Vorgang (UM-Webdienst)](playonphonegreeting-operation-um-web-service.md)
 

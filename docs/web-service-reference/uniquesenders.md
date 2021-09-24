@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UniqueSenders
 api_type:
 - schema
 ms.assetid: 1f55f2fe-b2f2-4169-83c1-fa5c752bd695
 description: Das UniqueSenders-Element enthält eine Liste aller Absender von Unterhaltungselementen im aktuellen Ordner. Dieses Element ist schreibgeschützt.
-ms.openlocfilehash: 5c9a98a3083d02f3900cc263e0b99a570203b544
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 805f76c5cf9c37496eb42b6e02a3f7f7ed685ff7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459875"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523214"
 ---
 # <a name="uniquesenders"></a>UniqueSenders
 
-Das **UniqueSenders** -Element enthält eine Liste aller Absender von Unterhaltungselementen im aktuellen Ordner. Dieses Element ist schreibgeschützt. 
+Das **UniqueSenders-Element** enthält eine Liste aller Absender von Unterhaltungselementen im aktuellen Ordner. Dieses Element ist schreibgeschützt. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -50,7 +50,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[String](string.md) <br/> |Enthält einen einzelnen Unterhaltungs Absender.  <br/> |
+|[String](string.md) <br/> |Enthält einen einzelnen Unterhaltungssender.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -62,7 +62,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

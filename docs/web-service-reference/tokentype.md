@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 83c650eb-7ab8-480c-a7c9-df60072ee042
-description: Das TokenType-Element gibt den Typ des Tokens an.
-ms.openlocfilehash: a42849dce9ed0253c3c5d4d4e899367b8e105594
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das TokenType-Element gibt den Tokentyp an.
+ms.openlocfilehash: a51ddfdd097a94370168077b9eca8be2e0581603
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459882"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523321"
 ---
 # <a name="tokentype"></a>TokenType
 
-Das **TokenType** -Element gibt den Typ des Tokens an. 
+Das **TokenType-Element** gibt den Tokentyp an. 
   
 ```XML
 <TokenType> CallerIdentity | ExtensionCallback | ScopedToken </TokenType>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **TokenType** -Elements ist der Typ des Tokens. Der Textwert von **CallerIdentity** gibt an, dass es sich bei dem Token um ein Anrufer-Identitätstoken handelt. Der Textwert von **ExtensionCallback** gibt an, dass das Token für einen Durchwahl Rückruf gilt. Der Textwert von **ScopedToken** gibt an, dass das Clientzugriffs Token ein Bereichs basiertes Token ist. 
+Der Textwert des **TokenType-Elements** ist der Tokentyp. Der Textwert von **CallerIdentity** gibt an, dass es sich bei dem Token um ein Aufruferidentitätstoken handelt. Der Textwert von **ExtensionCallback** gibt an, dass das Token für einen Erweiterungsrückruf vorgesehen ist. Der Textwert von **ScopedToken** gibt an, dass das Clientzugriffstoken ein Bereichstoken ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -57,6 +57,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

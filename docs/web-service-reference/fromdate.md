@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cbb1320c-479e-4bd3-a462-4ab14c24b1c5
 description: Das FromDate-Element gibt das Datum an, an dem die Nachricht gesendet wurde.
-ms.openlocfilehash: c08873a11915f4e82ad5b6f62423d0abdb9a429b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 1749f92e70e081c554f412f21b8ae3d8cf2db1f2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463062"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509951"
 ---
 # <a name="fromdate"></a>FromDate
 
-Das **FromDate** -Element gibt das Datum an, an dem die Nachricht gesendet wurde. 
+Das **FromDate-Element** gibt das Datum an, an dem die Nachricht gesendet wurde. 
   
 ```XML
 <FromDate></FromDate>
@@ -40,13 +40,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md) <br/> |Gibt eine Anforderung an, nach Postfachstatistiken nach Stichwort zu suchen.  <br/> |
+|[FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md) <br/> |Gibt eine Anforderung an, nach Postfachstatistiken nach Schlüsselwort zu suchen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **FromDate** -Elements ist das Datum und die Uhrzeit, zu der eine Nachricht gesendet wurde. 
+Der Textwert des **FromDate-Elements** ist das Datum und die Uhrzeit, zu der eine Nachricht gesendet wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

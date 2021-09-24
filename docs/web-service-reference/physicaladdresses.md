@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PhysicalAddresses
 api_type:
 - schema
 ms.assetid: 5276c5f2-9e08-43af-a0b2-da4ff1dcae2d
-description: Das PhysicalAddresses-Element enthält eine Auflistung von physikalischen Adressen, die einem Kontakt zugeordnet sind.
-ms.openlocfilehash: b609abed481359fa6562f41a551645eb613ddfa0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PhysicalAddresses-Element enthält eine Auflistung physischer Adressen, die einem Kontakt zugeordnet sind.
+ms.openlocfilehash: be46555fde892ab3c52d190ea5112cf24421689b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468880"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516545"
 ---
 # <a name="physicaladdresses"></a>PhysicalAddresses
 
-Das **PhysicalAddresses** -Element enthält eine Auflistung von physikalischen Adressen, die einem Kontakt zugeordnet sind. 
+Das **PhysicalAddresses-Element** enthält eine Auflistung physischer Adressen, die einem Kontakt zugeordnet sind. 
   
 ```xml
 <PhysicalAddresses>
@@ -50,7 +50,7 @@ Keine.
 |:-----|:-----|
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

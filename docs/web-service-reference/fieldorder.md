@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FieldOrder
 api_type:
 - schema
 ms.assetid: b9364842-bbe2-4221-afef-bf5022bc89ec
-description: Das FieldOrder-Element stellt ein einzelnes Feld dar, nach dem Ergebnisse sortiert werden, und gibt die Richtung für die Sortierung an.
-ms.openlocfilehash: 19dee7175d541dd99b53e004ea8ccd785b619184
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: The FieldOrder element represents a single field by which to sort results and indicates the direction for the sort.
+ms.openlocfilehash: 9130e3ccb5319408399628d280f8101c9e1697aa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461261"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510077"
 ---
 # <a name="fieldorder"></a>FieldOrder
 
-Das **FieldOrder** -Element stellt ein einzelnes Feld dar, nach dem Ergebnisse sortiert werden, und gibt die Richtung für die Sortierung an. 
+The **FieldOrder** element represents a single field by which to sort results and indicates the direction for the sort. 
   
 ```xml
 <FieldOrder Order="">
@@ -51,23 +51,23 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Order** <br/> | Beschreibt die Richtung der Sortierreihenfolge.<br/><br/> Im Folgenden sind die möglichen Werte aufgeführt: <br/> <br/>-Aufsteigend  <br/>-Absteigend  <br/> |
+|**Order** <br/> | Beschreibt die Sortierreihenfolgerichtung.<br/><br/> Im Folgenden sind die möglichen Werte aufgeführt: <br/> <br/>- Aufsteigend  <br/>– Absteigend  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member eines Wörterbuchs.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert MAPI-Eigenschaften.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifies frequently referenced properties by URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Mitglieder eines Wörterbuchs.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifies MAPI properties.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SortOrder](sortorder.md) <br/> |Definiert, wie Elemente in einer FindItem-Anforderung sortiert werden.  <br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/FindItem/SortOrder` <br/> |
+|[SortOrder](sortorder.md) <br/> |Definiert, wie Elemente in einer FindItem-Anforderung sortiert werden.  <br/> Es folgt der XPath-Ausdruck für dieses Element:  `/FindItem/SortOrder` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

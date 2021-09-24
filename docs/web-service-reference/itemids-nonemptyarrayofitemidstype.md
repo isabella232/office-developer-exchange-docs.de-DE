@@ -1,31 +1,31 @@
 ---
-title: Itemids (NonEmptyArrayOfItemIdsType)
+title: ItemIds (NonEmptyArrayOfItemIdsType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ItemIds
 api_type:
 - schema
 ms.assetid: e895782a-74fe-4216-8ac2-c3c88c4b232d
-description: Das itemids-Element enthält ein Array von Element-IDs, mit denen die Elemente identifiziert werden, die aus einem Postfach exportiert werden sollen.
-ms.openlocfilehash: 16c2633528e2ecbc863cfdde645e0f431b4c4297
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ItemIds-Element enthält ein Array von Elementbezeichnern, die die aus einem Postfach zu exportierenden Elemente identifizieren.
+ms.openlocfilehash: 3009bf1f7012e62e21d019530cd7eac1bbbcb8a7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468593"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522830"
 ---
-# <a name="itemids-nonemptyarrayofitemidstype"></a>Itemids (NonEmptyArrayOfItemIdsType)
+# <a name="itemids-nonemptyarrayofitemidstype"></a>ItemIds (NonEmptyArrayOfItemIdsType)
 
-Das **itemids** -Element enthält ein Array von Element-IDs, mit denen die Elemente identifiziert werden, die aus einem Postfach exportiert werden sollen. 
+Das **ItemIds-Element** enthält ein Array von Elementbezeichnern, die die aus einem Postfach zu exportierenden Elemente identifizieren. 
   
 [ExportItems](exportitems.md)
   
-[Itemids (NonEmptyArrayOfItemIdsType)](itemids-nonemptyarrayofitemidstype.md)
+[ItemIds (NonEmptyArrayOfItemIdsType)](itemids-nonemptyarrayofitemidstype.md)
   
 ```XML
 <ItemIds>
@@ -46,7 +46,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel eines Elements in der Exchange-Informationsspeicher.  <br/> |
+|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel eines Elements im Exchange Speicher.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -58,7 +58,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   
@@ -68,7 +68,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

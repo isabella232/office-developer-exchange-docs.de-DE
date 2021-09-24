@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8f5fcbcb-05ed-462a-99cf-a6b112a4aef6
 description: Das GlobalParentFolderIds-Element gibt die Bezeichner der globalen übergeordneten Ordner an.
-ms.openlocfilehash: 11c520fa0f4a1ed6d6c9d694b407e39cd036b9cd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7ab3d1ba627c5568b2c1f4579689c43c96624558
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459097"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516825"
 ---
 # <a name="globalparentfolderids"></a>GlobalParentFolderIds
 
-Das **GlobalParentFolderIds** -Element gibt die Bezeichner der globalen übergeordneten Ordner an. 
+Das **GlobalParentFolderIds-Element** gibt die Bezeichner der globalen übergeordneten Ordner an. 
   
 ```XML
 <GlobalParentFolderIds>
@@ -40,7 +40,7 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[FolderId](folderid.md) <br/> |Enthält den Bezeichner und den Änderungsschlüssel eines Ordners.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifiziert Ordner, auf die über den Namen verwiesen werden kann.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifiziert Ordner, auf die anhand des Namens verwiesen werden kann.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -48,7 +48,7 @@ Keine.
 |:-----|:-----|
 |[Unterhaltung (ConversationType)](conversation-conversationtype.md) <br/> |Stellt eine einfache Unterhaltung dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -60,7 +60,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ConnectionTimeout
 api_type:
 - schema
 ms.assetid: 14da68a0-bcca-4281-a774-47644baa4ee9
-description: Das ConnectionTimeout-Element gibt die Anzahl der Minuten an, die eine Verbindung geöffnet bleiben soll.
-ms.openlocfilehash: 671e3cf5466ee8b3543036811708bd7f54afdcce
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ConnectionTimeout-Element gibt die Anzahl der Minuten an, um eine Verbindung geöffnet zu lassen.
+ms.openlocfilehash: 7ca7a0b0b71d40a4f7888b63663b7d1e0f81b449
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463853"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536827"
 ---
 # <a name="connectiontimeout"></a>ConnectionTimeout
 
-Das **ConnectionTimeout** -Element gibt die Anzahl der Minuten an, die eine Verbindung geöffnet bleiben soll. 
+Das **ConnectionTimeout-Element** gibt die Anzahl der Minuten an, um eine Verbindung geöffnet zu lassen. 
   
 [GetStreamingEvents-Vorgang](getstreamingevents-operation.md)
   
@@ -48,13 +48,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetStreamingEvents](getstreamingevents.md) <br/> |Definiert eine Anforderung zum Abrufen von Ereignisbenachrichtigungen aus einer streamingverbindung.  <br/> |
+|[GetStreamingEvents](getstreamingevents.md) <br/> |Definiert eine Anforderung zum Abrufen von Ereignisbenachrichtigungen von einer Streamingverbindung.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt eine ganze Zahl dar, die die maximale Anzahl von Minuten beschreibt, die eine streamingverbindung geöffnet bleiben soll. Der Wert muss zwischen 1 und 30 einschließlich sein.
+Der Textwert stellt eine ganze Zahl dar, die die maximale Anzahl von Minuten beschreibt, um eine Streamingverbindung geöffnet zu lassen. Der Wert muss zwischen 1 und 30 (einschließlich) liegen.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

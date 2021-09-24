@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetUserOofSettingsResponse
 api_type:
 - schema
 ms.assetid: 8aa4025b-38df-4d63-a6a5-c3b932bec26e
-description: Das SetUserOofSettingsResponse-Element enthält das Ergebnis eines SetUserOofSettingsRequest-Nachrichten Versuchs.
-ms.openlocfilehash: 9b02d905f82488965f5ae0514a52eb6062aaff7d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SetUserOofSettingsResponse-Element enthält das Ergebnis eines SetUserOofSettingsRequest-Meldungsversuchs.
+ms.openlocfilehash: f0f3752cc0e356afcb7a60943aa6ba1a520171ee
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466129"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517693"
 ---
 # <a name="setuseroofsettingsresponse"></a>SetUserOofSettingsResponse
 
-Das **SetUserOofSettingsResponse** -Element enthält das Ergebnis eines [SetUserOofSettingsRequest](setuseroofsettingsrequest.md) -Nachrichten Versuchs. 
+Das **SetUserOofSettingsResponse-Element** enthält das Ergebnis eines [SetUserOofSettingsRequest-Meldungsversuchs.](setuseroofsettingsrequest.md) 
   
 ```xml
 <SetUserOofSettingsResponse>
@@ -48,7 +48,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

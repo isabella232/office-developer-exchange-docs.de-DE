@@ -1,33 +1,33 @@
 ---
-title: Busytype
+title: BusyType
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - BusyType
 api_type:
 - schema
 ms.assetid: 26d4fae0-8c78-4705-b5e8-d6033712c41e
-description: Das busytype-Element stellt den Frei/Gebucht-Status für ein Calendar-Ereignis fest.
-ms.openlocfilehash: 7c2d18c21156a8603d3caeeb796a56c5d8afcba5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das BusyType-Element stellt den Frei/Gebucht-Status für ein Kalenderereignis dar.
+ms.openlocfilehash: eedea1e98ec84342d79dda2107adb050c2216401
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459083"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537137"
 ---
-# <a name="busytype"></a>Busytype
+# <a name="busytype"></a>BusyType
 
-Das **busytype** -Element stellt den Frei/Gebucht-Status für ein Calendar-Ereignis fest. 
+Das **BusyType-Element** stellt den Frei/Gebucht-Status für ein Kalenderereignis dar. 
   
 ```xml
 <BusyType>Free or Tentative or Busy or OOF or NoData</BusyType>
 ```
 
- **Busytype**
+ **BusyType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,12 +44,12 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[IndividualAttendeeConflictData](individualattendeeconflictdata.md) <br/> |Enthält den Frei/Gebucht-Status eines Benutzers oder Kontakts für ein Zeitfenster, das gleichzeitig mit der vorgeschlagenen Besprechungszeit auftritt.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/IndividualAttendeeConflictData` <br/> |
-|[CalendarEvent](calendarevent.md) <br/> |Stellt ein eindeutiges Kalenderelement vorkommen dar.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
+|[IndividualAttendeeConflictData](individualattendeeconflictdata.md) <br/> |Enthält den Frei/Gebucht-Status eines Benutzers oder Kontakts für ein Zeitfenster, das zur gleichen Zeit wie die vorgeschlagene Besprechungszeit auftritt.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/IndividualAttendeeConflictData` <br/> |
+|[CalendarEvent](calendarevent.md) <br/> |Stellt ein eindeutiges Kalenderelement dar.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Für dieses Element ist ein Textwert erforderlich. Der Wert ist ein String-Typ. Im folgenden sind die möglichen Werte für das [busytype](busytype.md) -Element angegeben: 
+Für dieses Element ist ein Textwert erforderlich. Der Wert ist ein Zeichenfolgentyp. Im Folgenden sind die möglichen Werte für das [BusyType-Element](busytype.md) aufgeführt: 
   
 - Frei
     
@@ -57,11 +57,11 @@ Für dieses Element ist ein Textwert erforderlich. Der Wert ist ein String-Typ. 
     
 - Gebucht
     
-- Abwesenheits
+- OOF
     
 - NoData
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -83,5 +83,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

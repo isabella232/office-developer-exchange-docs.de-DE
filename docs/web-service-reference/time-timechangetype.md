@@ -1,27 +1,27 @@
 ---
-title: Zeit (Time ChangeType)
+title: Zeit (TimeChangeType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Time
 api_type:
 - schema
 ms.assetid: be12e41e-6871-4f6b-b2d4-3dfa404f9ea1
-description: Das Time-Element beschreibt die Zeit, in der sich die Zeit zwischen Standardzeit und Sommerzeit ändert.
-ms.openlocfilehash: c25d0bc3394fdfab42a29eab8b370bc4263618ed
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Time-Element beschreibt die Zeit, zu der sich die Zeit zwischen Standardzeit und Sommerzeit ändert.
+ms.openlocfilehash: 0c669340778496958ef6dff082e48b5b7f6209b5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465737"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523307"
 ---
-# <a name="time-timechangetype"></a>Zeit (Time ChangeType)
+# <a name="time-timechangetype"></a>Zeit (TimeChangeType)
 
-Das **time** -Element beschreibt die Zeit, in der sich die Zeit zwischen Standardzeit und Sommerzeit ändert. 
+Das **Time-Element** beschreibt die Zeit, zu der sich die Zeit zwischen Standardzeit und Sommerzeit ändert. 
   
 ```xml
 <Time/>
@@ -44,14 +44,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Sommer](daylight.md) <br/> |Stellt das Datum und die Uhrzeit dar, zu der sich die Zeit von Sommerzeit zu Standardzeit ändert.  <br/> |
-|[Standard](standard.md) <br/> |Stellt das Datum und die Uhrzeit dar, zu der sich die Zeit von Sommerzeit zu Standardzeit ändert.  <br/> |
+|[Daylight](daylight.md) <br/> |Stellt das Datum und die Uhrzeit dar, zu der die Zeit von Sommerzeit in Standardzeit geändert wird.  <br/> |
+|[Standard](standard.md) <br/> |Stellt das Datum und die Uhrzeit dar, zu der die Zeit von Sommerzeit in Standardzeit geändert wird.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt die Zeit dar, in der sich die Zeit zwischen Standardzeit und Sommerzeit ändert.
+Der Textwert stellt die Zeit dar, zu der sich die Zeit zwischen Standardzeit und Sommerzeit ändert.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

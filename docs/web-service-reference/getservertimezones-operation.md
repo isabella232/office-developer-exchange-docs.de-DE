@@ -5,27 +5,27 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetServerTimeZones
 api_type:
 - schema
 ms.assetid: 680173e1-e916-466b-b573-5a3182316345
-description: Der GetServerTimeZones-Vorgang gibt Informationen aus den Zeitzonendefinitionen zurück, die auf einem Exchange-Server verfügbar sind.
-ms.openlocfilehash: 1afe7fe13501af4a14f72c731703fe41e1f33049
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetServerTimeZones-Vorgang gibt Informationen aus Zeitzonendefinitionen zurück, die auf einem Exchange Server verfügbar sind.
+ms.openlocfilehash: f46222251729d5e82042f267d4b6293afb16de00
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460540"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516951"
 ---
 # <a name="getservertimezones-operation"></a>GetServerTimeZones-Vorgang
 
-Der **GetServerTimeZones** -Vorgang gibt Informationen aus den Zeitzonendefinitionen zurück, die auf einem Exchange-Server verfügbar sind. 
+Der **GetServerTimeZones-Vorgang** gibt Informationen aus Zeitzonendefinitionen zurück, die auf einem Exchange Server verfügbar sind. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der **GetServerTimeZones** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
+Der **GetServerTimeZones-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben sind. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -33,11 +33,11 @@ Der **GetServerTimeZones** -Vorgang kann die SOAP-Header verwenden, die in der f
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="getservertimezones-request-examples"></a>GetServerTimeZones-Anforderungs Beispiele
+## <a name="getservertimezones-request-examples"></a>GetServerTimeZones-Anforderungsbeispiele
 
-### <a name="getting-the-name-and-identifier-of-each-time-zone"></a>Aufrufen des Namens und der ID jeder Zeitzone
+### <a name="getting-the-name-and-identifier-of-each-time-zone"></a>Abrufen des Namens und des Bezeichners jeder Zeitzone
 
-Im folgenden Codebeispiel wird gezeigt, wie der Name und der Bezeichner für die Zeit Zonen Eastern Standard Time und Pacific Standard Time abgerufen werden.
+Das folgende Codebeispiel zeigt, wie Der Name und bezeichner für die Zeitzonen "Eastern Standard Time" und "Pacific Standard Time" abgerufen werden.
   
 ### <a name="code"></a>Code
 
@@ -63,11 +63,11 @@ Im folgenden Codebeispiel wird gezeigt, wie der Name und der Bezeichner für die
 
 ### <a name="comments"></a>Comments
 
-Jedes [ID-Element (TimeZone)](id-timezone.md) enthält den Bezeichner einer Zeitzonendefinition, die angefordert wird. Wenn Sie Informationen zu allen Zeitzonen anfordern möchten, lassen Sie das [IDs](ids.md) -Element aus der Anforderung weglassen. 
+Jedes [ID -Element (TimeZone)](id-timezone.md) enthält den Bezeichner einer Zeitzonendefinition, die angefordert wird. Um Informationen für alle Zeitzonen anzufordern, lassen Sie das [Ids-Element](ids.md) aus der Anforderung aus. 
   
-### <a name="getting-the-full-definition-of-each-time-zone"></a>Aufrufen der vollständigen Definition jeder Zeitzone
+### <a name="getting-the-full-definition-of-each-time-zone"></a>Abrufen der vollständigen Definition jeder Zeitzone
 
-Im folgenden Codebeispiel wird gezeigt, wie Sie die voll Zeitzonendefinition für die Zeit Zeitzone Eastern Standard Time abrufen.
+Das folgende Codebeispiel zeigt, wie sie die Vollständige Zeitzonendefinition für die Eastern Standard Time-Zeitzone abrufen.
   
 ### <a name="code"></a>Code
 
@@ -92,13 +92,13 @@ Im folgenden Codebeispiel wird gezeigt, wie Sie die voll Zeitzonendefinition fü
 
 ### <a name="comments"></a>Comments
 
-Jedes [ID-Element (TimeZone)](id-timezone.md) enthält den Bezeichner einer Zeitzonendefinition, die angefordert wird. Wenn Sie Informationen zu allen Zeitzonen anfordern möchten, lassen Sie das [IDs](ids.md) -Element aus der Anforderung weglassen. 
+Jedes [ID -Element (TimeZone)](id-timezone.md) enthält den Bezeichner einer Zeitzonendefinition, die angefordert wird. Um Informationen für alle Zeitzonen anzufordern, lassen Sie das [Ids-Element](ids.md) aus der Anforderung aus. 
   
-## <a name="getservertimezones-response-examples"></a>GetServerTimeZones-Antwort Beispiele
+## <a name="getservertimezones-response-examples"></a>GetServerTimeZones-Antwortbeispiele
 
-### <a name="receiving-the-time-zone-name-and-identifier-only"></a>Empfangen des Zeitzonennamens und des Bezeichners
+### <a name="receiving-the-time-zone-name-and-identifier-only"></a>Nur Empfangen des Zeitzonennamens und des Bezeichners
 
-Das folgende Beispiel einer **GetServerTimeZones** -Antwort zeigt eine erfolgreiche Antwort auf eine **GetServerTimeZones** -Anforderung, in der das **ReturnFullTimeZoneData** -Attribut auf **false**festgelegt wurde. Die Antwort enthält den Namen und den Bezeichner für die Zeit Zonen Eastern Standard Time und Pacific Standard Time.
+Das folgende Beispiel einer **GetServerTimeZones -Antwort** zeigt eine erfolgreiche Antwort auf eine **GetServerTimeZones** -Anforderung, in der das **ReturnFullTimeZoneData** -Attribut auf **"false"** festgelegt wurde. Die Antwort enthält den Namen und bezeichner für die Zeitzonen "Eastern Standard Time" und "Pacific Standard Time".
   
 ### <a name="code"></a>Code
 
@@ -132,9 +132,9 @@ Das folgende Beispiel einer **GetServerTimeZones** -Antwort zeigt eine erfolgrei
 </soap:Envelope>
 ```
 
-### <a name="receiving-a-full-time-zone-definition"></a>Empfangen einer voll Zeit Zonen Definition
+### <a name="receiving-a-full-time-zone-definition"></a>Empfangen einer Definition für eine vollständige Zeitzone
 
-Das folgende Beispiel einer **GetServerTimeZones** -Antwort zeigt eine erfolgreiche Antwort auf eine **GetServerTimeZones** -Anforderung, in der das **ReturnFullTimeZoneData** -Attribut auf **true**festgelegt wurde. Die Antwort enthält die Definition der vollständigen Zeitzone für die Zeit Zeitzone Eastern Standard Time.
+Das folgende Beispiel einer **GetServerTimeZones -Antwort** zeigt eine erfolgreiche Antwort auf eine **GetServerTimeZones** -Anforderung, in der das **ReturnFullTimeZoneData** -Attribut auf **"true"** festgelegt wurde. Die Antwort enthält die vollständige Zeitzonendefinition für die Zeitzone "Eastern Standard Time".
   
 ### <a name="code"></a>Code
 

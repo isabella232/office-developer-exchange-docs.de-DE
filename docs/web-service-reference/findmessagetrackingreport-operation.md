@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FindMessageTrackingReport
 api_type:
 - schema
 ms.assetid: 12942f24-2a8e-4d7f-a137-8da5932a6b46
-description: Der FindMessageTrackingReport-Vorgang sucht nach Nachrichten, die die angegebenen Kriterien erfüllen.
-ms.openlocfilehash: ec3073da4cf3961d3f2fe2727bf0cf0533e0ffb6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der FindMessageTrackingReport-Vorgang sucht nach Nachrichten, die den angegebenen Kriterien entsprechen.
+ms.openlocfilehash: 57f0d7794b56fd7a004628f230dc9a990d6ca20b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530916"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510001"
 ---
 # <a name="findmessagetrackingreport-operation"></a>FindMessageTrackingReport-Vorgang
 
-Der **FindMessageTrackingReport** -Vorgang sucht nach Nachrichten, die die angegebenen Kriterien erfüllen. 
+Der **FindMessageTrackingReport-Vorgang** sucht nach Nachrichten, die den angegebenen Kriterien entsprechen. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,27 +1,27 @@
 ---
-title: PlayOnPhoneDialString (Exchange Webdienste)
+title: PlayOnPhoneDialString (Exchange-Webdienste)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PlayOnPhoneDialString
 api_type:
 - schema
 ms.assetid: 02b77f6a-042d-49a9-9445-342885c43e99
-description: Das PlayOnPhoneDialString-Element identifiziert die Wählzeichenfolge für die Wiedergabe bei anrufen.
-ms.openlocfilehash: 310934895295af179e651b94c33dfb86d0f94e1d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PlayOnPhoneDialString-Element identifiziert die Play-on-Telefon Wählzeichenfolge.
+ms.openlocfilehash: dba106f1de87efecb6a7d9b1ba5d378a29c2f2cc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466220"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516531"
 ---
-# <a name="playonphonedialstring-exchange-web-services"></a>PlayOnPhoneDialString (Exchange Webdienste)
+# <a name="playonphonedialstring-exchange-web-services"></a>PlayOnPhoneDialString (Exchange-Webdienste)
 
-Das **PlayOnPhoneDialString** -Element identifiziert die Wählzeichenfolge für die Wiedergabe bei anrufen. 
+Das **PlayOnPhoneDialString-Element** identifiziert die Play-on-Telefon Wählzeichenfolge. 
   
 ```XML
 <PlayOnPhoneDialString/>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert für dieses Element ist die Wählzeichenfolge für die Wiedergabe bei anrufen.
+Der Textwert für dieses Element ist die Play-on-Telefon-Wählzeichenfolge.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element ist erforderlich.
   

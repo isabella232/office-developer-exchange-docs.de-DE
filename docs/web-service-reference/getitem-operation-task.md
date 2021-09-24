@@ -5,33 +5,33 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetItem
 api_type:
 - schema
 ms.assetid: 8265dd06-1752-4470-8074-5f0e3e970f52
-description: Der GetItem-Vorgang wird zum Abrufen von Aufgaben aus dem Exchange-Informationsspeicher verwendet.
-ms.openlocfilehash: 17a23d4c2a35761e831610f3514c980a5a67e12b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetItem-Vorgang wird verwendet, um Aufgaben aus dem Exchange Speicher abzurufen.
+ms.openlocfilehash: 36e7b5ecc37c05f64c3b6617f45396805be0e532
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463335"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509840"
 ---
 # <a name="getitem-operation-task"></a>GetItem-Vorgang (Aufgabe)
 
-Der GetItem-Vorgang wird zum Abrufen von Aufgaben aus dem Exchange-Informationsspeicher verwendet.
+Der GetItem-Vorgang wird verwendet, um Aufgaben aus dem Exchange Speicher abzurufen.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Format der GetItem-Anforderung für Aufgaben ist identisch mit GetItem für alle anderen Elementtypen. Der einzige Unterschied besteht darin, dass im Antwort-Shape zusätzliche Eigenschaften angefordert werden können. Solche zusätzlichen Eigenschaften müssen entweder aufgabenbezogene Eigenschaften oder erweiterte Eigenschaften sein.
+Das Format der GetItem-Anforderung für Aufgaben ist mit dem Format von GetItem für jeden anderen Elementtyp identisch. Der einzige Unterschied besteht darin, welche zusätzlichen Eigenschaften innerhalb des Antwort-Shapes angefordert werden können. Diese zusätzlichen Eigenschaften müssen entweder aufgabenbezogene Eigenschaften oder erweiterte Eigenschaften sein.
   
-## <a name="task-getitem-request-example"></a>Aufgaben-GetItem-Anforderungs Beispiel
+## <a name="task-getitem-request-example"></a>Task GetItem-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer GetItem-Anforderung wird gezeigt, wie ein Aufgabenelement abgerufen wird.
+Das folgende Beispiel einer GetItem-Anforderung zeigt, wie ein Aufgabenelement abgerufen wird.
   
 ### <a name="code"></a>Code
 
@@ -58,7 +58,7 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
 ### <a name="comments"></a>Comments
 
 > [!NOTE]
-> Die Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Der Elementbezeichner und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -74,7 +74,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [ItemId](itemid.md)
     
-## <a name="task-getitem-response-example"></a>Aufgaben-GetItem-Antwort (Beispiel)
+## <a name="task-getitem-response-example"></a>Beispiel für die Task GetItem-Antwort
 
 ### <a name="description"></a>Beschreibung
 
@@ -136,7 +136,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine GetItem-Anforderu
 ### <a name="comments"></a>Comments
 
 > [!NOTE]
-> Die Element-und Ordner Bezeichner und die Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Die Element- und Ordnerbezeichner und Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
@@ -152,9 +152,9 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
-- [Task](task.md)
+- [Aufgabe](task.md)
     
 - [ItemId](itemid.md)
     
@@ -174,11 +174,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Importance](importance.md)
     
-- [Issubmitted](issubmitted.md)
+- [IsSubmitted](issubmitted.md)
     
 - [IsDraft](isdraft.md)
     
-- [Isfromme](isfromme.md)
+- [IsFromMe](isfromme.md)
     
 - [IsResend](isresend.md)
     
@@ -190,7 +190,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [HasAttachments](hasattachments.md)
     
-- [Kultur](culture.md)
+- [Culture](culture.md)
     
 - [ChangeCount](changecount.md)
     

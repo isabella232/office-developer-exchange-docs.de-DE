@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DateTimeReceived
 api_type:
 - schema
 ms.assetid: 8f489bd4-2434-4d0a-91fe-1b5ba7eb5765
-description: Das DateTimeReceived-Element stellt das Datum und die Uhrzeit dar, zu denen ein Element in einem Postfach empfangen wurde.
-ms.openlocfilehash: ad57af46b0ff22c42bfa327532d13e79280dd8b0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DateTimeReceived-Element stellt das Datum und die Uhrzeit des Empfangs eines Elements in einem Postfach dar.
+ms.openlocfilehash: 86c46d029476b9617a6a1086bddc76946e25068c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456563"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535686"
 ---
 # <a name="datetimereceived"></a>DateTimeReceived
 
-Das **DateTimeReceived** -Element stellt das Datum und die Uhrzeit dar, zu denen ein Element in einem Postfach empfangen wurde. 
+Das **DateTimeReceived-Element** stellt das Datum und die Uhrzeit des Empfangs eines Elements in einem Postfach dar. 
   
 ```xml
 <DateTimeReceived/>
@@ -59,9 +59,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt die Zeit dar, zu der ein Element in einem Postfach empfangen wird. Diese Eigenschaft ist schreibgeschützt.
+Der Textwert stellt den Zeitpunkt dar, zu dem ein Element in einem Postfach empfangen wird. Diese Eigenschaft ist schreibgeschützt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

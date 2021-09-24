@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Values
 api_type:
 - schema
 ms.assetid: 4b14c714-51fa-4225-82ad-83ba9f611824
 description: Das Values-Element enthält eine Auflistung von Werten für eine erweiterte Eigenschaft.
-ms.openlocfilehash: 2018f7a734725abe8d8e456492862d1142fda205
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 405f558a17b3ec66c1e0427e1d17d2dcef310647
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465205"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510624"
 ---
 # <a name="values"></a>Werte
 
-Das **Values** -Element enthält eine Auflistung von Werten für eine erweiterte Eigenschaft. 
+Das **Values-Element** enthält eine Auflistung von Werten für eine erweiterte Eigenschaft. 
   
 ```xml
 <Values>
@@ -43,7 +43,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Wert](value.md) <br/> |Enthält den Wert einer erweiterten Eigenschaft.  <br/> |
+|[Wert](value.md) <br/> |Enthält einen Wert einer erweiterten Eigenschaft.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -51,7 +51,7 @@ Keine.
 |:-----|:-----|
 |[ExtendedProperty](extendedproperty.md) <br/> |Erweiterte Eigenschaften für Ordner und Elemente identifiziert.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 415dfa18-7ad1-435f-beaf-d89de9291edc
-description: Das YomiFirstNames-Element gibt ein Array von phonetischen japanischen Vornamen und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an.
-ms.openlocfilehash: b1c27fbca0b7dafffb281aab3489ac4f6e08c742
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das YomiFirstNames-Element gibt ein Array phonetischer japanischer Vornamen und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an.
+ms.openlocfilehash: 77bea9ce9d2050491a24571c70536c0274216e13
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465121"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509273"
 ---
 # <a name="yomifirstnames"></a>YomiFirstNames
 
-Das **YomiFirstNames** -Element gibt ein Array von phonetischen japanischen Vornamen und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an. 
+Das **YomiFirstNames-Element** gibt ein Array phonetischer japanischer Vornamen und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an. 
   
 ```XML
 <YomiFirstNames>
@@ -42,7 +42,7 @@ Keine.
 
 [Persona](persona.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

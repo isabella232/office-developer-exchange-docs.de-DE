@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CanCreateSubFolders
 api_type:
 - schema
 ms.assetid: 4404a1cc-6d3f-4996-9647-58a740e8f883
 description: Das CanCreateSubFolders -Element gibt an, ob ein Benutzer die Berechtigung zum Erstellen von Unterordnern in einem Ordner verfügt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: d8e89c7a07ef1788717f5012840f5b8f79d319e6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c0491dd62034df03ccfb4adea13b06760dd2fd5b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461597"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523201"
 ---
 # <a name="cancreatesubfolders"></a>CanCreateSubFolders
 
@@ -51,7 +51,7 @@ Keine.
 
 Der Textwert **true** gibt an, dass der Benutzer Unterordner im Ordner erstellen kann. Der Wert **false** gibt an, dass der Benutzer nicht Unterordner im Ordner erstellen kann. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

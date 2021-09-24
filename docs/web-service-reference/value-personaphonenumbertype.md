@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 963eff79-5aa0-4b9f-8eff-80f9fb7ad654
-description: Das Value-Element gibt eine Telefonnummer und Typinformationen an und ist einer Gruppe von Attributes zugeordnet.
-ms.openlocfilehash: 8d9024e8155d54dd68bca98ed165480475ebc229
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Value-Element gibt eine Telefonnummer und Typinformationen an und ist einer Reihe von Zuschreibungen zugeordnet.
+ms.openlocfilehash: 651a60c7cf9cd172d84ba2b9accd14f677f21541
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465247"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510631"
 ---
 # <a name="value-personaphonenumbertype"></a>Wert (PersonaPhoneNumberType)
 
-Das **value** -Element gibt eine Telefonnummer und Typinformationen an und ist einer Gruppe von Attributes zugeordnet. 
+Das **Value-Element** gibt eine Telefonnummer und Typinformationen an und ist einer Reihe von Zuschreibungen zugeordnet. 
   
 ```XML
 <Value>
@@ -44,7 +44,7 @@ Keine.
 
 [PhoneNumberAttributedValue](phonenumberattributedvalue.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

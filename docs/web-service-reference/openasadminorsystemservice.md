@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - OpenAsAdminOrSystemService
 api_type:
 - schema
 ms.assetid: fff7c928-da28-4864-9379-dc54c1bf048f
-description: Das OpenAsAdminOrSystemService-Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet.
-ms.openlocfilehash: e4bd101b048bd5ac1af8d383d64519b9ed6f0041
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das OpenAsAdminOrSystemService-Element ist nur für die interne Verwendung vorgesehen. Dieses Element wird von Clients nicht verwendet.
+ms.openlocfilehash: 1ab1ae3f4e3c580c3b758d979eda1ba9b31c7325
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462507"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537450"
 ---
 # <a name="openasadminorsystemservice"></a>OpenAsAdminOrSystemService
 
-Das **OpenAsAdminOrSystemService** -Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet. 
+Das **OpenAsAdminOrSystemService-Element** ist nur für die interne Verwendung vorgesehen. Dieses Element wird von Clients nicht verwendet. 
   
 ```XML
 <OpenAsAdminOrSystemService LogonType="">
@@ -38,23 +38,23 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|LogonType  <br/> |Nicht für die Verwendung durch den Client vorgesehen.  <br/> |
+|LogonType  <br/> |Nicht für die Clientverwendung vorgesehen.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|ConnectingSID  <br/> |Nicht für die Verwendung durch den Client vorgesehen.  <br/> |
+|ConnectingSID  <br/> |Nicht für die Clientverwendung vorgesehen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

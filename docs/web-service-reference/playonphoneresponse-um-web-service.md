@@ -1,28 +1,28 @@
 ---
-title: PlayOnPhoneResponse (um-Webdienst)
+title: PlayOnPhoneResponse (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PlayOnPhoneResponse
 api_type:
 - schema
 ms.assetid: 42b16880-1271-4690-abd0-0072d95b04b7
-description: Das PlayOnPhoneResponse-Element definiert eine Antwort auf eine Anforderung des PlayOnPhone-Vorgangs (um-Webdienst).
-ms.openlocfilehash: ddb9cc9a8feaeb476e6502339fdc74d024797b9b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PlayOnPhoneResponse-Element definiert eine Antwort auf eine PlayOnPhone-Vorgangsanforderung (UM-Webdienst).
+ms.openlocfilehash: 9c2893837a1bc9c4836dc3cab6fb14e0d1fd611b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459616"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516524"
 ---
-# <a name="playonphoneresponse-um-web-service"></a>PlayOnPhoneResponse (um-Webdienst)
+# <a name="playonphoneresponse-um-web-service"></a>PlayOnPhoneResponse (UM-Webdienst)
 
-Das **PlayOnPhoneResponse** -Element definiert eine Antwort auf eine Anforderung des [PlayOnPhone-Vorgangs (um-Webdienst)](playonphone-operation-um-web-service.md) . 
+Das **PlayOnPhoneResponse-Element** definiert eine Antwort auf eine [PlayOnPhone-Vorgangsanforderung (UM-Webdienst).](playonphone-operation-um-web-service.md) 
   
-[PlayOnPhoneResponse (um-Webdienst)](playonphoneresponse-um-web-service.md)
+[PlayOnPhoneResponse (UM-Webdienst)](playonphoneresponse-um-web-service.md)
   
 ```xml
 <PlayOnPhoneResponse />
@@ -43,11 +43,11 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der Textwert ist die Anruf-ID, die für den Wert der [Anrufkennung (um-Webdienst)](callid-um-web-service.md) in einer [GetCallInfo-Vorgangsanforderung (um-Webdienst)](getcallinfo-operation-um-web-service.md) oder einer [um-Webdienst](disconnect-operation-um-web-service.md) Anforderung verwendet werden soll. 
+Ein Textwert ist erforderlich. Der Textwert ist der Aufrufbezeichner, der für den Wert von [CallId (UM-Webdienst)](callid-um-web-service.md) in einer Anforderung des [GetCallInfo-Vorgangs (UM-Webdienst)](getcallinfo-operation-um-web-service.md) oder einer [Verbindungsdienstanforderung (UM-Webdienst)](disconnect-operation-um-web-service.md) verwendet werden soll. 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
@@ -55,12 +55,12 @@ Ein Textwert ist erforderlich. Der Textwert ist die Anruf-ID, die für den Wert 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PlayOnPhone-Vorgang (um-Webdienst)](playonphone-operation-um-web-service.md)
+[PlayOnPhone-Vorgang (UM-Webdienst)](playonphone-operation-um-web-service.md)
 

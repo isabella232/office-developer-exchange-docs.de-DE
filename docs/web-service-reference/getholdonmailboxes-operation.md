@@ -5,44 +5,44 @@ ms.date: 01/24/2020
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9157f329-80b4-4cd0-a158-378064966ae6
-description: Hier finden Sie Informationen zum GetHoldOnMailboxes-EWS-Vorgang.
-ms.openlocfilehash: 867f38be87e60af8708eeb0b9d0e3ac8eee6ff64
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum EWS-Vorgang "GetHoldOnMailboxes".
+ms.openlocfilehash: 3e87aed618b98cbaf556b31f59365f5ed97bec85
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457732"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516993"
 ---
 # <a name="getholdonmailboxes-operation"></a>GetHoldOnMailboxes-Vorgang
 
 > [!IMPORTANT]
-> Ab dem 1. April 2020 ist der GetHoldOnMailboxes-Vorgang in Exchange Online nicht mehr verfügbar. Dieser Vorgang ist in lokalen Versionen von Exchange Server nicht betroffen. Weitere Informationen finden Sie unter [Retirement of Legacy eDiscovery Tools in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement#getsearchablemailboxes-setholdonmailboxes-and-getholdonmailboxes-operations-in-the-ews-api).
+> Ab dem 1. April 2020 ist der GetHoldOnMailboxes-Vorgang in Exchange Online nicht mehr verfügbar. Dieser Vorgang ist in lokalen Versionen von Exchange Server nicht betroffen. Weitere Informationen finden Sie unter ["Ausmustern älterer eDiscovery-Tools" in Exchange Online.](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement#getsearchablemailboxes-setholdonmailboxes-and-getholdonmailboxes-operations-in-the-ews-api)
 
-Hier finden Sie Informationen zum **GetHoldOnMailboxes** -EWS-Vorgang. 
+Hier finden Sie Informationen zum EWS-Vorgang **"GetHoldOnMailboxes".** 
   
-Der **GetHoldOnMailboxes** -Vorgang ruft die Postfächer, die sich unter einem bestimmten Haltebereich befinden, und die zugehörige halte Abfrage ab. 
+Der **GetHoldOnMailboxes-Vorgang** ruft die Postfächer ab, die sich unter einem bestimmten Haltebereich befinden, und die zugehörige Haltebereichsabfrage. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-getholdonmailboxes-operation"></a>Verwenden des GetHoldOnMailboxes-Vorgangs
 
-Der **GetHoldOnMailboxes** -Vorgang gibt dem Clientinformationen darüber, welche Postfächer unter einem bestimmten Haltebereich gespeichert sind, Informationen zur halte Abfrage, die jedem Haltestatus zugeordnet sind, falls zutreffend, sowie Informationen zum Aufbewahrungs Status für jedes Postfach. Weitere Informationen zu Postfachspeichern, einschließlich abfragebasierter Haltestatus, finden Sie unter [in-situ-](https://technet.microsoft.com/library/ff637980%28v=exchg.150%29) Speicher auf TechNet. 
+Der **GetHoldOnMailboxes-Vorgang** gibt dem Client Informationen darüber, welche Postfächer in einen bestimmten Haltebereich versetzt werden, Informationen über die Haltebereichsabfrage, die den einzelnen Haltebereichsabfragen zugeordnet ist, sofern zutreffend, sowie Informationen zum Haltestatus für jedes Postfach. Weitere Informationen zu Postfacharchiven, einschließlich abfragebasierter Haltebereiche, finden Sie unter ["In-Situ-Aufbewahrung auf](https://technet.microsoft.com/library/ff637980%28v=exchg.150%29) TechNet". 
   
 ### <a name="getholdonmailboxes-operation-soap-headers"></a>SOAP-Header des GetHoldOnMailboxes-Vorgangs
 
-Der **GetHoldOnMailboxes** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **GetHoldOnMailboxes-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Gibt die Serverrollen an, die erforderlich sind, damit der Anrufer die Anforderung stellen muss. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Identifiziert die Serverrollen, die erforderlich sind, damit der Aufrufer die Anforderung stellen kann. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="getholdonmailboxes-operation-request-example-get-mailbox-hold-information"></a>GetHoldOnMailboxes-Vorgangs Anforderungs Beispiel: Abrufen von Informationen zu Postfachspeichern
+## <a name="getholdonmailboxes-operation-request-example-get-mailbox-hold-information"></a>GetHoldOnMailboxes-Vorgangsanforderungsbeispiel: Abrufen von Informationen zum Postfacharchiv
 
-Im folgenden Beispiel einer **GetHoldOnMailboxes** -Vorgangsanforderung wird gezeigt, wie Sie die Postfachspeicher Informationen für das HoldId2-Post Fach Postfach speichern. 
+Das folgende Beispiel einer **GetHoldOnMailboxes-Vorgangsanforderung** zeigt, wie Sie die Postfach-Aufbewahrungsinformationen für die HoldId2-Postfachsperre abrufen. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -61,15 +61,15 @@ Im folgenden Beispiel einer **GetHoldOnMailboxes** -Vorgangsanforderung wird gez
 
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [GetHoldOnMailboxes](getholdonmailboxes.md)
     
-- [Haltestatus](holdid.md)
+- [HoldId](holdid.md)
     
-## <a name="successful-getholdonmailboxes-operation-response"></a>Erfolgreiche Reaktion des GetHoldOnMailboxes-Vorgangs
+## <a name="successful-getholdonmailboxes-operation-response"></a>Erfolgreiche GetHoldOnMailboxes-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetHoldOnMailboxes** -Vorgangsanforderung zum Abrufen der Postfachspeicher Informationen für das HoldId2-Postfach. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetHoldOnMailboxes-Vorgangsanforderung** zum Abrufen der Postfach-Aufbewahrungsinformationen für die HoldId2-Postfachsperre. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -112,7 +112,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetHoldOnMailbo
 
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [GetHoldOnMailboxesResponse](getholdonmailboxesresponse.md)
     
@@ -120,7 +120,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [MailboxHoldResult](mailboxholdresult.md)
     
-- [Haltestatus](holdid.md)
+- [HoldId](holdid.md)
     
 - [Query](query.md)
     
@@ -134,9 +134,9 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [AdditionalInfo](additionalinfo.md)
     
-## <a name="getholdonmailboxes-operation-error-response"></a>Fehlerantwort des GetHoldOnMailboxes-Vorgangs
+## <a name="getholdonmailboxes-operation-error-response"></a>GetHoldOnMailboxes-Vorgangsfehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetHoldOnMailboxes** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Abrufen eines Haltestatus, der gelöscht wurde. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetHoldOnMailboxes-Vorgangsanforderung.** Dies ist eine Antwort auf eine Anforderung zum Abrufen einer Aufbewahrungspflicht, die gelöscht wurde. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -175,7 +175,7 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
+Weitere Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

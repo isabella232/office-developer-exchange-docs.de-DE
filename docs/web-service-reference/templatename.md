@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b6942ac5-9942-4c68-876c-d02d049e7966
-description: Das TemplateName-Element gibt den Namen der Vorlage für die Rechteverwaltung an.
-ms.openlocfilehash: 211f5792ac29496557f5d69969195680e4fec950
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das TemplateName-Element gibt den Namen der Rights Management-Vorlage an.
+ms.openlocfilehash: 3ae69c811cf520930547da4d058eac1d3eefb3cf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526767"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523314"
 ---
 # <a name="templatename"></a>TemplateName
 
-Das **templatename** -Element gibt den Namen der Vorlage für die Rechteverwaltung an. 
+Das **TemplateName-Element** gibt den Namen der Rights Management-Vorlage an. 
   
 ```XML
 <TemplateName></TemplateName>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **templatename** -Elements ist der Name der auf ein Element angewendeten Vorlage für die Rechteverwaltung. 
+Der Textwert des **TemplateName-Elements** ist der Name der Rechteverwaltungsvorlage, die auf ein Element angewendet wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

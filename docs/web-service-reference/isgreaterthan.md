@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsGreaterThan
 api_type:
 - schema
 ms.assetid: a6e9d462-cfa7-40ec-903e-128c95050352
-description: Das isgreaterthan-Element stellt einen Suchausdruck dar, der eine Eigenschaft entweder mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und true zurückgibt, wenn die erste Eigenschaft größer ist.
-ms.openlocfilehash: 52f2c1b84e4072649092637de091c0dbd8187032
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IsGreaterThan-Element stellt einen Suchausdruck dar, der eine Eigenschaft mit einem Konstantenwert oder einer anderen Eigenschaft vergleicht und "true" zurückgibt, wenn die erste Eigenschaft größer ist.
+ms.openlocfilehash: 975b63be8dce414131dfbfef9851f7540fbd1b89
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530043"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523027"
 ---
 # <a name="isgreaterthan"></a>IsGreaterThan
 
-Das **isgreaterthan** -Element stellt einen Suchausdruck dar, der eine Eigenschaft entweder mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und **true** zurückgibt, wenn die erste Eigenschaft größer ist. 
+Das **IsGreaterThan-Element** stellt einen Suchausdruck dar, der eine Eigenschaft mit einem Konstantenwert oder einer anderen Eigenschaft vergleicht und **"true"** zurückgibt, wenn die erste Eigenschaft größer ist. 
   
 ```xml
 <IsGreaterThan>
@@ -44,7 +44,7 @@ Das **isgreaterthan** -Element stellt einen Suchausdruck dar, der eine Eigenscha
 </IsGreaterThan>
 ```
 
-**Isgreaterthantype**
+**IsGreaterThanType**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -58,21 +58,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member eines Wörterbuchs.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert MAPI-Eigenschaften.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifies frequently referenced properties by URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Mitglieder eines Wörterbuchs.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifies MAPI properties.  <br/> |
 |[FieldURIOrConstant](fielduriorconstant.md) <br/> |Stellt eine Eigenschaft oder einen konstanten Wert dar, der beim Vergleich mit einer anderen Eigenschaft verwendet werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Einschränkung](restriction.md) <br/> |Stellt die Einschränkung oder Abfrage dar, die zum Filtern von Elementen oder Ordnern in FindItem/FindFolder und Suchordner Vorgängen verwendet wird.  <br/> |
+|[Restriction](restriction.md) <br/> |Stellt die Einschränkung oder Abfrage dar, die zum Filtern von Elementen oder Ordnern in FindItem/FindFolder und Suchordnervorgängen verwendet wird.  <br/> |
 |[not](not.md) <br/> |Stellt einen Suchausdruck dar, der den booleschen Wert des darin enthaltenen Suchausdrucks negiert.  <br/> |
-|[Und](and.md) <br/> |Stellt einen Suchausdruck dar, mit dem Sie einen booleschen Wert und eine Operation zwischen zwei oder mehr Suchausdrücken ausführen können. Das Ergebnis der and-Operation ist **true** , wenn alle in der enthaltenen Suchausdrücke auf **true**festgelegt sind.  <br/> |
-|[- oder -](or.md) <br/> |Stellt einen Suchausdruck dar, der eine logische OR-Anweisung für den darin enthaltenen Suchausdruck ausführt. [Oder](or.md) gibt **true** zurück, wenn eines der untergeordneten Elemente **true**zurückgibt.  <br/> |
+|[Und](and.md) <br/> |Stellt einen Suchausdruck dar, mit dem Sie einen booleschen And-Vorgang zwischen zwei oder mehr Suchausdrücken ausführen können. Das Ergebnis des And-Vorgangs ist **"true",** wenn alle in "And" enthaltenen Suchausdrücke **"True"** sind.  <br/> |
+|[- oder -](or.md) <br/> |Stellt einen Suchausdruck dar, der ein logisches OR für den darin enthaltenen Suchausdruck ausführt. [Or](or.md) will return **true** if any of its children return **true**.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

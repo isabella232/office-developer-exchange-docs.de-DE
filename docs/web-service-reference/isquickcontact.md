@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1c9542d6-ef72-4743-828a-bb671e783836
-description: Das IsQuickContact-Element gibt einen booleschen Wert an, der angibt, ob der zugrunde liegende Kontakt ein schnell Kontakt ist.
-ms.openlocfilehash: a8944be111a8dcbe914601ffc4e31794422d58aa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IsQuickContact-Element gibt einen booleschen Wert an, der angibt, ob der zugrunde liegende Kontakt ein Schneller Kontakt ist.
+ms.openlocfilehash: 7821332e685b44983787ce05cc6b6ef4250ee01d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44441576"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509686"
 ---
 # <a name="isquickcontact"></a>IsQuickContact
 
-Das **IsQuickContact** -Element gibt einen booleschen Wert an, der angibt, ob der zugrunde liegende Kontakt ein schnell Kontakt ist. 
+Das **IsQuickContact-Element** gibt einen booleschen Wert an, der angibt, ob der zugrunde liegende Kontakt ein Schneller Kontakt ist. 
   
 ```XML
 <IsQuickContact>true | false</IsQuickContact>
@@ -40,13 +40,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Attribution (PersonaAttributionType)](attribution-personaattributiontype.md) <br/> |Gibt eine Instanz in einem Array von Attributen für ein **Persona** -Element an.  <br/> |
+|[Attribution (PersonaAttributionType)](attribution-personaattributiontype.md) <br/> |Gibt eine Instanz in einem Array von Attributen für ein **Persona-Element** an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **IsQuickContact** -Element gibt an, dass es sich bei dem Kontakt um einen schnell Kontakt handelt. Der Wert **false** gibt an, dass es sich bei dem Kontakt nicht um einen schnell Kontakt handelt. 
+Der Textwert **"true"** für das **IsQuickContact-Element** gibt an, dass der Kontakt ein Schnellkontakt ist. Der Wert **"false"** gibt an, dass es sich bei dem Kontakt nicht um einen schnellen Kontakt handelt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,8 +58,8 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

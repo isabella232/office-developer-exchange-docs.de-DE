@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SentToAddresses
 api_type:
 - schema
 ms.assetid: 086130d2-93b1-4de1-9553-10ec10322a0c
-description: Das SentToAddresses-Element gibt die e-Mail-Adressen an, an die eingehende Nachrichten gesendet wurden, damit die Bedingung oder Ausnahme zutrifft.
-ms.openlocfilehash: 9a901a93b666144092bf9cc8ebbf03222ac7bf6b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SentToAddresses-Element gibt die E-Mail-Adressen an, an die eingehende Nachrichten gesendet werden müssen, damit die Bedingung oder Ausnahme zutrifft.
+ms.openlocfilehash: 2b58b1771266a932c35dfda781d802ca6bb32bac
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457417"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517805"
 ---
 # <a name="senttoaddresses"></a>SentToAddresses
 
-Das **SentToAddresses** -Element gibt die e-Mail-Adressen an, an die eingehende Nachrichten gesendet wurden, damit die Bedingung oder Ausnahme zutrifft. 
+Das **SentToAddresses-Element** gibt die E-Mail-Adressen an, an die eingehende Nachrichten gesendet werden müssen, damit die Bedingung oder Ausnahme zutrifft. 
   
 ```XML
 <SentToAddresses>
@@ -49,13 +49,13 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Bedingungen](conditions.md) <br/> |Stellt die Bedingungen dar, bei deren Erfüllung die Regelaktionen für eine Regel ausgelöst werden.  <br/> |
-|[Ausnahmen](exceptions.md) <br/> |Stellt alle verfügbaren Regel Ausnahmebedingungen für eine Posteingangsregel dar.  <br/> |
+|[Ausnahmen](exceptions.md) <br/> |Stellt alle verfügbaren Regelausnahmebedingungen für eine Posteingangsregel dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -65,7 +65,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

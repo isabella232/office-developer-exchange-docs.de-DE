@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 30369db5-4d45-40e8-bc83-3236667fc404
-description: Das ItemHoldPeriod-Element gibt den Zeitraum an, in dem Inhalte aufbewahrt werden sollen, die mit der Post Fach Abfrage übereinstimmen.
-ms.openlocfilehash: 185666b72cc96dd88605b7baa6433d070e7ebc91
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ItemHoldPeriod-Element gibt an, wie viel Zeit Inhalt enthalten soll, der der Postfachabfrage entspricht.
+ms.openlocfilehash: de56c410c876917bbe8d545c9ef4f38ee6948b21
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44452286"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522852"
 ---
 # <a name="itemholdperiod"></a>ItemHoldPeriod
 
-Das **ItemHoldPeriod** -Element gibt den Zeitraum an, in dem Inhalte aufbewahrt werden sollen, die mit der Post Fach Abfrage übereinstimmen. 
+Das **ItemHoldPeriod-Element** gibt an, wie viel Zeit Inhalt enthalten soll, der der Postfachabfrage entspricht. 
   
 ```XML
 <ItemHoldPeriod/>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert kann "unbegrenzt" oder der Zeichenfolgenwert eines beliebigen [TimeSpan](https://msdn.microsoft.com/library/1ecy8h51%28v=vs.110%29.aspx) -Werts sein. 
+Der Textwert kann "Unbegrenzt" oder der Zeichenfolgenwert eines [beliebigen Timespan-Werts](https://msdn.microsoft.com/library/1ecy8h51%28v=vs.110%29.aspx) sein. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

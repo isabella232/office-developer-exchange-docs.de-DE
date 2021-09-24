@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AllInternal
 api_type:
 - schema
 ms.assetid: b7e5072f-5d9f-4ee0-b58b-4d75d878ea1c
-description: Das allinternal-Element ergibt true, wenn alle Empfänger einer e-Mail-Nachricht für die Organisation des Absenders intern sind.
-ms.openlocfilehash: c5ffe15eca5d680994acb62913ebf5effacce214
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AllInternal-Element wird als "true" ausgewertet, wenn alle Empfänger einer E-Mail-Nachricht in der Organisation des Absenders intern sind.
+ms.openlocfilehash: 5ccc484de19449bc47a39f170f691649ae4beb7f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464833"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523229"
 ---
 # <a name="allinternal"></a>AllInternal
 
-Das **allinternal** -Element ergibt **true** , wenn alle Empfänger einer e-Mail-Nachricht für die Organisation des Absenders intern sind. 
+Das **AllInternal-Element** wird als **"true"** ausgewertet, wenn alle Empfänger einer E-Mail-Nachricht in der Organisation des Absenders intern sind. 
   
 ```xml
 <AllInternal/>
@@ -44,14 +44,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Bedingung](condition.md) <br/> |Gibt die Bedingung an, die erfüllt sein muss, damit der Aktions Teil der Regel ausgeführt wird.  <br/> |
-|[Und (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Gibt an, dass alle untergeordneten Elemente übereinstimmen müssen, damit Sie zu **true**ausgewertet werden.  <br/> |
+|[Bedingung](condition.md) <br/> |Gibt die Bedingung an, die erfüllt sein muss, damit der Aktionsteil der Regel ausgeführt wird.  <br/> |
+|[Und (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Gibt an, dass alle untergeordneten Elemente übereinstimmen müssen, um zu **"true"** ausgewertet zu werden.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Das **allinternal** -Element muss leer sein. 
+Das **AllInternal-Element** muss leer sein. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

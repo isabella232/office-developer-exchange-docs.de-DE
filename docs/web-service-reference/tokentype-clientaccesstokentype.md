@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 96103f15-a3e0-497c-af21-90adbf9a4b14
-description: Das TokenType-Element gibt den Typ des Clientzugriffs Tokens an, der in der GetClientAccessToken-Antwort zurückgegeben wird.
-ms.openlocfilehash: 49ba2973967b12396e0c7f56129c89c40ccbcf97
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das TokenType-Element identifiziert den Typ des Clientzugriffstokens, das in der GetClientAccessToken-Antwort zurückgegeben wird.
+ms.openlocfilehash: 967d64796799147876ef6443b40b16154b55c01a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466052"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523356"
 ---
 # <a name="tokentype-clientaccesstokentype"></a>TokenType (ClientAccessTokenType)
 
-Das **TokenType** -Element gibt den Typ des Clientzugriffs Tokens an, der in der **GetClientAccessToken** -Antwort zurückgegeben wird. 
+Das **TokenType-Element** identifiziert den Typ des Clientzugriffstokens, das in der **GetClientAccessToken-Antwort** zurückgegeben wird. 
   
 ```XML
 <TokenType>CallerIdentity | ExtensionCallback | ScopedToken</TokenType>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **CallerIdentity** bedeutet, dass ein Clientzugriffs Token für die Anrufer-ID zurückgegeben wird. Der Textwert **ExtensionCallback** gibt an, dass ein Clientzugriffs Token für Durchwahl Rückrufe zurückgegeben wird. Der Textwert **ScopedToken** gibt an, dass das Clientzugriffs Token ein Bereichs basiertes Token ist. 
+Ein Textwert von **CallerIdentity** bedeutet, dass ein Clientzugriffstoken für die Anruferidentität zurückgegeben wird. Ein Textwert von **ExtensionCallback** gibt an, dass ein Clientzugriffstoken für den Erweiterungsrückruf zurückgegeben wird. Ein Textwert von **ScopedToken** gibt an, dass das Clientzugriffstoken ein bereichsbezogenes Token ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -57,6 +57,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

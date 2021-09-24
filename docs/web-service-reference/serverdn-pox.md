@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 2ef73d13-e8bb-43f6-96c7-3ee157fed739
-description: Das ServerDN-Element gibt den DN (Distinguished Name) des Computers an, auf dem Microsoft Exchange Server 2007 ausführt.
-ms.openlocfilehash: 16c6e7368e221b7e54c8d7d63532bb29464a7e54
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ServerDN-Element gibt den Distinguished Name des Computers an, auf dem Microsoft Exchange Server 2007 ausgeführt wird.
+ms.openlocfilehash: 4ae47f2e6ddecf37f9cc13529d8ce7c393d82129
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461996"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517798"
 ---
 # <a name="serverdn-pox"></a>ServerDN (POX)
 
-Das **ServerDN** -Element gibt den DN (Distinguished Name) des Computers an, auf dem Microsoft Exchange Server 2007 ausführt. 
+Das **ServerDN-Element** gibt den Distinguished Name des Computers an, auf dem Microsoft Exchange Server 2007 ausgeführt wird. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,15 +50,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen zum Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt den Distinguished Name des Exchange-Servers dar.
+Der Textwert stellt den distinguished Name des Exchange Servers dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der **ServerDN** -Wert wird nur verwendet, wenn [Type (POX)](type-pox.md) gleich dem-Typ ist. 
+Der **ServerDN-Wert** wird nur verwendet, wenn [Type (POX)](type-pox.md) gleich EXCH ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

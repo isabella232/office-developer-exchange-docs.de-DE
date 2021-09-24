@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AllowExternalOof
 api_type:
 - schema
 ms.assetid: e5387172-5b92-4bb1-8394-180e9c7ff771
-description: Das AllowExternalOof-Element enthält einen Wert, der angibt, an wen externe Abwesenheit (Out of Office, OOF) Nachrichten gesendet werden.
-ms.openlocfilehash: e4934bc4bc86e1f9f764279a13ecaeca073d9e5d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AllowExternalOof-Element enthält einen Wert, der angibt, an wen externe OOF-Nachrichten (Out of Office) gesendet werden.
+ms.openlocfilehash: 7d2e34797af8a9e9d11570a5ea2e618db7630f0c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464812"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523224"
 ---
 # <a name="allowexternaloof"></a>AllowExternalOof
 
-Das **AllowExternalOof** -Element enthält einen Wert, der angibt, an wen externe Abwesenheit (Out of Office, OOF) Nachrichten gesendet werden. 
+Das **AllowExternalOof-Element** enthält einen Wert, der angibt, an wen externe OOF-Nachrichten (Out of Office) gesendet werden. 
   
 - [GetUserOofSettingsResponse](getuseroofsettingsresponse.md)
   
@@ -48,7 +48,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUserOofSettingsResponse](getuseroofsettingsresponse.md) <br/> |Enthält die Antwortergebnisse und die Abwesenheitseinstellungen für einen Benutzer.  <br/> |
+|[GetUserOofSettingsResponse](getuseroofsettingsresponse.md) <br/> |Enthält die Antwortergebnisse und die OOF-Einstellungen für einen Benutzer.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
@@ -56,13 +56,13 @@ Für dieses Element ist ein Textwert erforderlich. In der folgenden Tabelle sind
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|**Keine** <br/> |E-Mail-Absender außerhalb der Organisation des Postfachbenutzers, die Nachrichten an den Benutzer senden, erhalten keine externe Abwesenheitsnachrichten Antwort.  <br/> |
-|**Bezeichnet** <br/> |E-Mail-Absender außerhalb der Organisation des Postfachbenutzers, die Nachrichten an den Benutzer senden, erhalten nur dann eine externe Abwesenheitsnachrichten Antwort, wenn sich der Absender in der Exchange-Informationsspeicher Kontaktliste des Benutzers befindet.  <br/> |
-|**All** <br/> |E-Mail-Absender außerhalb der Organisation des Postfachbenutzers, die Nachrichten an den Benutzer senden, erhalten eine externe Abwesenheitsnachrichten Antwort.  <br/> |
+|**Keine** <br/> |E-Mail-Absender außerhalb der Organisation des Postfachbenutzers, die Nachrichten an den Benutzer senden, erhalten keine externe OOF-Nachrichtenantwort.  <br/> |
+|**Bekannt** <br/> |E-Mail-Absender außerhalb der Organisation des Postfachbenutzers, die Nachrichten an den Benutzer senden, erhalten nur dann eine externe OOF-Nachrichtenantwort, wenn sich der Absender in der Exchange Store-Kontaktliste des Benutzers befindet.  <br/> |
+|**All** <br/> |E-Mail-Absender außerhalb der Organisation des Postfachbenutzers, die Nachrichten an den Benutzer senden, erhalten eine externe OOF-Nachrichtenantwort.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element hat denselben Typ wie das [ExternalAudience](externalaudience.md) -Element. 
+Dieses Element hat den gleichen Typ wie das [ExternalAudience-Element.](externalaudience.md) 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -72,7 +72,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: de152be6-fc2f-48bc-a05d-1211935da20a
-description: Das hatanlage-Element gibt einen booleschen Wert an, der angibt, ob das Element Anlagen enthält.
-ms.openlocfilehash: c6bc0932a08a1bbec215bb8a974ed746d2961123
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das HasAttachment-Element gibt einen booleschen Wert an, um anzugeben, ob das Element Anlagen enthält.
+ms.openlocfilehash: c3d153e86a9d170c69e74bdc08a3bdedfa5e1220
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530261"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516797"
 ---
 # <a name="hasattachment"></a>HasAttachment
 
-Das **hatanlage** -Element gibt einen booleschen Wert an, der angibt, ob das Element Anlagen enthält. 
+Das **HasAttachment-Element** gibt einen booleschen Wert an, um anzugeben, ob das Element Anlagen enthält. 
   
 ```XML
 <HasAttachment> true | false </HasAttachment
@@ -40,13 +40,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SearchPreviewItem](searchpreviewitem.md) <br/> |Gibt die ersten 256 Zeichen eines Post Fach Elements für die Vorschau an, ohne das Element zu öffnen.  <br/> |
+|[SearchPreviewItem](searchpreviewitem.md) <br/> |Gibt die ersten 256 Zeichen eines Postfachelements für die Vorschau an, ohne das Element zu öffnen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **hatanlage** -Element gibt an, dass das Element eine Anlage aufweist. Der Wert **false** gibt an, dass das Element nicht über eine Anlage verfügt. 
+Der Textwert **"true"** für das **HasAttachment-Element** gibt an, dass das Element über eine Anlage verfügt. Der Wert **false** gibt an, dass das Element keine Anlage enthält. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

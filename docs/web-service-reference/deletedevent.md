@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeletedEvent
 api_type:
 - schema
 ms.assetid: c4565eb4-b537-466c-b1ff-11602533812b
-description: Das DeletedEvent-Element stellt ein Ereignis dar, in dem ein Element oder ein Ordner gelöscht wird.
-ms.openlocfilehash: 5eb0c947aacc592f81c595da2cc00bf4874f300b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DeletedEvent-Element stellt ein Ereignis dar, in dem ein Element oder Ordner gelöscht wird.
+ms.openlocfilehash: 601b09273fb0fe52a40079e63952a50f592eaf5c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526942"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510267"
 ---
 # <a name="deletedevent"></a>DeletedEvent
 
-Das **DeletedEvent** -Element stellt ein Ereignis dar, in dem ein Element oder ein Ordner gelöscht wird. 
+Das **DeletedEvent-Element** stellt ein Ereignis dar, in dem ein Element oder Ordner gelöscht wird. 
   
 ```xml
 <DeletedEvent>
@@ -55,8 +55,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Watermark](watermark.md) <br/> |Stellt eine Ereignis Textmarke in der Tabelle Post Fach Ereignisse dar.  <br/> |
-|[Timestamp](timestamp.md) <br/> |Stellt den Zeitstempel eines gelöschten Element-oder Ordner Postfach-Ereignisses dar.  <br/> |
+|[Watermark](watermark.md) <br/> |Stellt eine Ereignislesemarke in der Postfachereignistabelle dar.  <br/> |
+|[TimeStamp](timestamp.md) <br/> |Stellt den Zeitstempel eines gelöschten Elements oder Ordnerpostfachereignisses dar.  <br/> |
 |[FolderId](folderid.md) <br/> |Stellt den Bezeichner des gelöschten Ordners dar.  <br/> |
 |[ItemId](itemid.md) <br/> |Stellt den Bezeichner des gelöschten Elements dar.  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des übergeordneten Ordners des gelöschten Elements oder Ordners vor dem Löschen dar.  <br/> |
@@ -67,7 +67,7 @@ Keine.
 |:-----|:-----|
 |[Benachrichtigung](notification-ex15websvcsotherref.md) <br/> |Enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

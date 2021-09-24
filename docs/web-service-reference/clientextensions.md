@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0073d195-75fd-4c89-97e0-2ad6d91f99f9
-description: Das ClientExtensions-Element enthält ein Array von Benutzer-und Konfigurationsinformationen zu apps.
-ms.openlocfilehash: 016b4c910f3c21a20d72b926a1c568925aa9d37e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ClientExtensions-Element enthält ein Array von Benutzer- und Konfigurationsinformationen zu Apps.
+ms.openlocfilehash: f9cd68ebdd0a376d57fe1e413ec094f8304c2cd3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461457"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536889"
 ---
 # <a name="clientextensions"></a>ClientExtensions
 
-Das **ClientExtensions** -Element enthält ein Array von Benutzer-und Konfigurationsinformationen zu apps. 
+Das **ClientExtensions-Element** enthält ein Array von Benutzer- und Konfigurationsinformationen zu Apps. 
   
 ```XML
 <ClientExtensions>
@@ -38,15 +38,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Client Extension](clientextension.md) <br/> |Enthält Benutzer-und Konfigurationsinformationen zu einer App.  <br/> |
+|[ClientExtension](clientextension.md) <br/> |Enthält Benutzer- und Konfigurationsinformationen zu einer App.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetClientExtensionResponse](getclientextensionresponse.md) <br/> |Stellt eine Antwort dar, um Konfigurationsinformationen zu einer APP abzurufen.  <br/> |
+|[GetClientExtensionResponse](getclientextensionresponse.md) <br/> |Stellt eine Antwort zum Abrufen von Konfigurationsinformationen zu einer App dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

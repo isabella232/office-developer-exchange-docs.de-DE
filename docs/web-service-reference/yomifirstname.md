@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - YomiFirstName
 api_type:
 - schema
 ms.assetid: 86ef6012-2d3c-4058-9c43-5ddbea25f6ce
-description: Das YomiFirstName-Element stellt den Namen dar, der in Japan für die durchsuchbare oder phonetische Rechtschreibprüfung für einen japanischen Vornamen verwendet wird.
-ms.openlocfilehash: b059059fde9d5a455ea32113fa454de254598d29
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das YomiFirstName-Element stellt den Namen dar, der in Japan für die durchsuchbare oder phonetische Schreibweise eines japanischen Vornamens verwendet wird.
+ms.openlocfilehash: 3021f0a18cc38d139b7d2513ff0b6fde777aa363
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465128"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510589"
 ---
 # <a name="yomifirstname"></a>YomiFirstName
 
-Das **YomiFirstName** -Element stellt den Namen dar, der in Japan für die durchsuchbare oder phonetische Rechtschreibprüfung für einen japanischen Vornamen verwendet wird. 
+Das **YomiFirstName-Element** stellt den Namen dar, der in Japan für die durchsuchbare oder phonetische Schreibweise eines japanischen Vornamens verwendet wird. 
   
 ```xml
 <YomiFirstName/>
@@ -44,9 +44,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Completename](completename.md) <br/> |Stellt den vollständigen Namen eines Kontakts dar.  <br/> |
+|[CompleteName](completename.md) <br/> |Stellt den vollständigen Namen eines Kontakts dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

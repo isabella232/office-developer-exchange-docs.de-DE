@@ -1,23 +1,23 @@
 ---
-title: EndDate (Reminder)
+title: EndDate (ReminderType)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 616e9a88-afd2-4df3-aa3b-f126bdebfaec
-description: Das enddate-Element gibt das Enddatum des Elements an, für das die Erinnerung gilt.
-ms.openlocfilehash: 37ebb31f4ff94e7e5eeacf218c9cbccdaf4f3ace
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das EndDate-Element gibt das Enddatum des Elements an, für das die Erinnerung verwendet wird.
+ms.openlocfilehash: 66c5a6b0b03ca2b240b469bd232d5b6b6487e15d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460155"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517098"
 ---
-# <a name="enddate-remindertype"></a>EndDate (Reminder)
+# <a name="enddate-remindertype"></a>EndDate (ReminderType)
 
-Das **EndDate-Element gibt** das Enddatum des Elements an, für das die Erinnerung gilt. 
+Das **EndDate-Element** gibt das Enddatum des Elements an, für das die Erinnerung verwendet wird. 
   
 ```XML
 <EndDate/>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **EndDate-Elements ist** das Endedatum eines Elements. 
+Der Textwert des **EndDate-Elements** ist das Enddatum eines Elements. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

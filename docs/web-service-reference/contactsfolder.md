@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ContactsFolder
 api_type:
 - schema
 ms.assetid: 6c299de8-2087-4aeb-8e66-2bc7586509a6
-description: Das ContactsFolder-Element stellt einen Kontakteordner dar, der in einem Postfach enthalten ist.
-ms.openlocfilehash: 997b4f603198e6d05a011c4ef6bac7fe4dfbfe52
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ContactsFolder-Element stellt einen Kontaktordner dar, der in einem Postfach enthalten ist.
+ms.openlocfilehash: 54a91b74160ffacdc5f54a658919ee60519ea803
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529434"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536813"
 ---
 # <a name="contactsfolder"></a>ContactsFolder
 
-Das **ContactsFolder** -Element stellt einen Kontakteordner dar, der in einem Postfach enthalten ist. 
+Das **ContactsFolder-Element** stellt einen Kontaktordner dar, der in einem Postfach enthalten ist. 
   
 ```xml
 <ContactsFolder>
@@ -52,33 +52,33 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Enthält den Bezeichner und den Änderungsschlüssel eines Kontakteordners.  <br/> |
-|[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des übergeordneten Ordners dar, der den Ordner Kontakte enthält.  <br/> |
-|[FolderClass](folderclass.md) <br/> |Stellt die Folder-Klasse für einen Kontakteordner dar.  <br/> |
-|[DisplayName (Zeichenfolge)](displayname-string.md) <br/> |Enthält den Anzeigenamen eines Kontakteordners.  <br/> |
-|[Total count](totalcount.md) <br/> |Stellt die Gesamtanzahl der Elemente in einem Ordner Kontakte dar.  <br/> |
-|[ChildFolderCount](childfoldercount.md) <br/> |Stellt die Anzahl der untergeordneten Ordner dar, die in einem Kontakteordner enthalten sind. Diese Eigenschaft ist schreibgeschützt.  <br/> |
-|[ExtendedProperty](extendedproperty.md) <br/> |Identifiziert erweiterte Eigenschaften für Kontakteordner.  <br/> |
+|[FolderId](folderid.md) <br/> |Enthält den Bezeichner und den Änderungsschlüssel eines Kontaktordners.  <br/> |
+|[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des übergeordneten Ordners dar, der den Kontaktordner enthält.  <br/> |
+|[FolderClass](folderclass.md) <br/> |Stellt die Ordnerklasse für einen Kontaktordner dar.  <br/> |
+|[DisplayName (Zeichenfolge)](displayname-string.md) <br/> |Enthält den Anzeigenamen eines Kontaktordners.  <br/> |
+|[TotalCount](totalcount.md) <br/> |Stellt die Gesamtanzahl der Elemente in einem Kontaktordner dar.  <br/> |
+|[ChildFolderCount](childfoldercount.md) <br/> |Stellt die Anzahl der untergeordneten Ordner dar, die in einem Kontaktordner enthalten sind. Diese Eigenschaft ist schreibgeschützt.  <br/> |
+|[ExtendedProperty](extendedproperty.md) <br/> |Identifiziert erweiterte Eigenschaften in Kontaktordnern.  <br/> |
 |[ManagedFolderInformation](managedfolderinformation.md) <br/> |Enthält Informationen zu einem verwalteten Ordner.  <br/> |
 |[EffectiveRights](effectiverights.md) <br/> |Enthält die Rechte des Clients basierend auf den Berechtigungseinstellungen für das Element oder den Ordner.  <br/> |
-|[SharingEffectiveRights (PermissionReadAccessType)](sharingeffectiverights-permissionreadaccesstype.md) <br/> |Gibt die Berechtigungen an, die der Benutzer für die Kontaktdaten verwendet, die freigegeben werden.  <br/> |
-|[PermissionSet (permissionsettype)](permissionset-permissionsettype.md) <br/> |Enthält alle konfigurierten Berechtigungen für einen Ordner.  <br/> |
+|[SharingEffectiveRights (PermissionReadAccessType)](sharingeffectiverights-permissionreadaccesstype.md) <br/> |Gibt die Berechtigungen an, über die der Benutzer für die Kontaktdaten verfügt, die freigegeben werden.  <br/> |
+|[PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) <br/> |Enthält alle konfigurierten Berechtigungen für einen Ordner.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[AppendToFolderField](appendtofolderfield.md) <br/> |Gibt Daten an, die während einer [UpdateFolder-Vorgang](updatefolder-operation.md) an eine Ordnereigenschaft angefügt werden sollen.  <br/> |
-|[Erstellen (FolderSync)](create-foldersync.md) <br/> |Gibt einen einzelnen Ordner an, der im lokalen Clientspeicher erstellt werden soll.  <br/> |
+|[Create (FolderSync)](create-foldersync.md) <br/> |Identifiziert einen einzelnen Ordner, der im lokalen Clientspeicher erstellt werden soll.  <br/> |
 |[SetFolderField](setfolderfield.md) <br/> |Stellt eine Aktualisierung auf eine einzelne Eigenschaft in einem Ordner in einer [UpdateFolder-Vorgang](updatefolder-operation.md)dar.  <br/> |
-|[Update (FolderSync)](update-foldersync.md) <br/> |Gibt einen einzelnen Ordner an, der im lokalen Clientspeicher aktualisiert werden soll.  <br/> |
+|[Update (FolderSync)](update-foldersync.md) <br/> |Identifiziert einen einzelnen Ordner, der im lokalen Clientspeicher aktualisiert werden soll.  <br/> |
 |[Ordner](folders-ex15websvcsotherref.md) <br/> |Enthält ein Array von Ordnern, die in Ordnervorgängen verwendet werden.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

@@ -1,23 +1,23 @@
 ---
-title: Wert (extendedpropertytype Schematyp)
+title: Wert (ExtendedPropertyType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7a210393-0e8e-4f43-9360-4512b6dcba35
-description: Das Value-Element gibt ein Array von erweiterten Eigenschaften für eine persona an.
-ms.openlocfilehash: 1a658a6fb2e7987a64b7a6e826bac77190964844
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Value-Element gibt ein Array erweiterter Eigenschaften für eine Persona an.
+ms.openlocfilehash: 30cc8e0907eccc88c029a7eb929b34c849a2977a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467585"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510645"
 ---
-# <a name="value-extendedpropertytype"></a>Wert (extendedpropertytype Schematyp)
+# <a name="value-extendedpropertytype"></a>Wert (ExtendedPropertyType)
 
-Das **value** -Element gibt ein Array von erweiterten Eigenschaften für eine persona an. 
+Das **Value-Element** gibt ein Array erweiterter Eigenschaften für eine Persona an. 
   
 ```XML
 <Value>
@@ -27,7 +27,7 @@ Das **value** -Element gibt ein Array von erweiterten Eigenschaften für eine pe
 </Value>
 ```
 
-**Extendedpropertytype Schematyp**
+**ExtendedPropertyType**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -45,7 +45,7 @@ Keine.
 
 [ExtendedPropertyAttributedValue](extendedpropertyattributedvalue.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

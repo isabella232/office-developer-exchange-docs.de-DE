@@ -1,27 +1,27 @@
 ---
-title: Wann
+title: When
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - When
 api_type:
 - schema
 ms.assetid: c7df1333-a33d-4cc6-a08a-34b68843f47d
-description: Das When-Element stellt Informationen dazu bereit, wann ein Kalender-oder Besprechungselement auftritt.
-ms.openlocfilehash: 7c5f85184f966d909960bf1d79f5b8d33c67b51a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das When-Element enthält Informationen darüber, wann ein Kalender- oder Besprechungselement auftritt.
+ms.openlocfilehash: 08c4b9e445a1050d8b2625abd019082739c3bac9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461856"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510561"
 ---
-# <a name="when"></a>Wann
+# <a name="when"></a>When
 
-Das **When** -Element stellt Informationen dazu bereit, wann ein Kalender-oder Besprechungselement auftritt. 
+Das **When-Element** enthält Informationen darüber, wann ein Kalender- oder Besprechungselement auftritt. 
   
 ```xml
 <When/>
@@ -51,7 +51,7 @@ Keine.
 
 Der Textwert ist eine Zeichenfolge, die beschreibt, wann ein Kalenderelement auftritt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

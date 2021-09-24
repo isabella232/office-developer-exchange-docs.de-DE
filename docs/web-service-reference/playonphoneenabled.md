@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PlayOnPhoneEnabled
 api_type:
 - schema
 ms.assetid: 6f800912-be4c-46f9-aa1e-dff0bbf877c5
-description: Das PlayOnPhoneEnabled-Element gibt an, ob die Funktion "Wiedergabe-Telefon" aktiviert ist.
-ms.openlocfilehash: 8342e2bcc9c767903e0f6c180000a0f00eccc311
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PlayOnPhoneEnabled-Element gibt an, ob das Play-on-Telefon-Feature aktiviert ist.
+ms.openlocfilehash: ebbcea0d055b8cdc869f468295eb20396caa99fd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529931"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516517"
 ---
 # <a name="playonphoneenabled"></a>PlayOnPhoneEnabled
 
-Das **PlayOnPhoneEnabled** -Element gibt an, ob die Funktion "Wiedergabe-Telefon" aktiviert ist. 
+Das **PlayOnPhoneEnabled-Element** gibt an, ob das Play-on-Telefon-Feature aktiviert ist. 
   
 ```XML
 <PlayOnPhoneEnabled>true | false</PlayOnPhoneEnabled>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Das **PlayOnPhoneEnabled** -Element hat den Wert **true** , wenn Play-on-Phone für das Konto aktiviert ist; Andernfalls ist der Wert **false**.
+Das **PlayOnPhoneEnabled-Element** hat den Wert **"true",** wenn play-on-phone für das Konto aktiviert ist. andernfalls ist der Wert **false**.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element ist erforderlich.
   

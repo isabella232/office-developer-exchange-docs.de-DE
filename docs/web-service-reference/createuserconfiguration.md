@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateUserConfiguration
 api_type:
 - schema
 ms.assetid: 43e12e8b-5629-4f5f-9cbd-a99084d8460f
-description: Das CreateUserConfiguration-Element stellt eine Anforderung zum Erstellen eines Benutzer Konfigurationsobjekts dar.
-ms.openlocfilehash: 1d9194baf309936cb4be088a7ff56250dfa349cc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das CreateUserConfiguration-Element stellt eine Anforderung zum Erstellen eines Benutzerkonfigurationsobjekts dar.
+ms.openlocfilehash: 14fe5f739772d073d0ebbf78928a22c5d5b1d29e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463776"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536193"
 ---
 # <a name="createuserconfiguration"></a>CreateUserConfiguration
 
-Das **CreateUserConfiguration** -Element stellt eine Anforderung zum Erstellen eines Benutzer Konfigurationsobjekts dar. 
+Das **CreateUserConfiguration-Element** stellt eine Anforderung zum Erstellen eines Benutzerkonfigurationsobjekts dar. 
   
 ```xml
 <CreateUserConfiguration>
@@ -42,17 +42,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserConfiguration](userconfiguration.md) <br/> |Stellt ein einzelnes Benutzer Konfigurationsobjekt dar.  <br/> |
+|[UserConfiguration](userconfiguration.md) <br/> |Stellt ein einzelnes Benutzerkonfigurationsobjekt dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -62,7 +62,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

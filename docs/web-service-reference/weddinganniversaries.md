@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9e1388cc-ddc4-42f7-889b-17d781e80ace
-description: Das WeddingAnniversaries-Element gibt ein Array von Datumsangaben für Hochzeits Anniversary an, die als Zeichenfolgen gespeichert werden, und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete Persona.
-ms.openlocfilehash: 0aa55af7a546a7a403a75e2dabb753bb8d76ece7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das VariantAnniversaries-Element gibt ein Array von Jahrestagsterminen an, die als Zeichenfolgen gespeichert werden, sowie die Bezeichner der Quellzuschreibungen für die zugeordnete Persona.
+ms.openlocfilehash: 254bd2dcb95bed66f39edb20e065d55d6691034d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464882"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517259"
 ---
 # <a name="weddinganniversaries"></a>WeddingAnniversaries
 
-Das **WeddingAnniversaries** -Element gibt ein Array von Datumsangaben für Hochzeits Anniversary an, die als Zeichenfolgen gespeichert werden, und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete Persona. 
+Das **VariantAnniversaries-Element** gibt ein Array von Jahrestagsterminen an, die als Zeichenfolgen gespeichert werden, sowie die Bezeichner der Quellzuschreibungen für die zugeordnete Persona. 
   
 ```XML
 <WeddingAnniversaries>
@@ -42,7 +42,7 @@ Keine.
 
 [Persona](persona.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

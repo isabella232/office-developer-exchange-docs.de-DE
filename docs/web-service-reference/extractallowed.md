@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bc213f0e-a655-44e9-9ac9-bc1673bae1fe
-description: Das ExtractAllowed-Element gibt an, ob die Entitäts Extraktion aktiviert ist.
-ms.openlocfilehash: f9fcae72d6241e51f549fbf650f5b2aebe019e46
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ExtractAllowed-Element gibt an, ob die Entitätsextraktion aktiviert ist.
+ms.openlocfilehash: a51adaba24ef6ee285acf786398d6e6cdfbfee35
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461982"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535327"
 ---
 # <a name="extractallowed"></a>ExtractAllowed
 
-Das **ExtractAllowed** -Element gibt an, ob die Entitäts Extraktion aktiviert ist. 
+Das **ExtractAllowed-Element** gibt an, ob die Entitätsextraktion aktiviert ist. 
   
 ```XML
 <ExtractAllowed>true | false</ExtractAllowed
@@ -44,9 +44,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **ExtractAllowed** -Element gibt an, dass die Entitäts Extraktion aktiviert ist. Der Wert **false** gibt an, dass die Entitäts Extraktion nicht aktiviert ist. 
+Der Textwert **"true"** für das **ExtractAllowed-Element** gibt an, dass die Entitätsextraktion aktiviert ist. Der Wert **"false"** gibt an, dass die Entitätsextraktion nicht aktiviert ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

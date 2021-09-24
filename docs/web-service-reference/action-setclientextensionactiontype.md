@@ -1,23 +1,23 @@
 ---
-title: Action (SetClientExtensionActionType)
+title: Aktion (SetClientExtensionActionType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c5624a87-3436-40ce-8d6b-cc01eecab64d
-description: Das Action-Element enthält die Aktion, die der Exchange-Server für eine APP ausführen sollte.
-ms.openlocfilehash: 29579e26377edacb5fb0bb8406144eeb116b8d15
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Action-Element enthält die Aktion, die der Exchange-Server für eine App ausführen soll.
+ms.openlocfilehash: a0f5c2743ef976db2faddbb7509a8a015ef4dd8f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529686"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510379"
 ---
-# <a name="action-setclientextensionactiontype"></a>Action (SetClientExtensionActionType)
+# <a name="action-setclientextensionactiontype"></a>Aktion (SetClientExtensionActionType)
 
-Das **Action** -Element enthält die Aktion, die der Exchange-Server für eine APP ausführen sollte. 
+Das  Action-Element enthält die Aktion, die der Exchange-Server für eine App ausführen soll. 
   
 ```XML
 <Action ActionId="" ExtensionId="">
@@ -35,7 +35,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
 |ActionId  <br/> |Gibt den Bezeichner der Aktion an. Dieses Attribut ist erforderlich.  <br/> |
-|ExtensionID geändert  <br/> |Gibt den Bezeichner der Erweiterung an. Dieses Attribut ist optional.  <br/> |
+|ExtensionId  <br/> |Gibt den Bezeichner der Erweiterung an. Dieses Attribut ist optional.  <br/> |
    
 #### <a name="actionid"></a>ActionId
 
@@ -43,21 +43,21 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |:-----|:-----|
 |Konfigurieren  <br/> |Gibt eine Konfigurationsaktion an.  <br/> |
 |Installieren  <br/> |Gibt eine Installationsaktion an.  <br/> |
-|Uninstall  <br/> |Gibt eine Deinstallations Aktion an.  <br/> |
+|Deinstallieren  <br/> |Gibt eine Deinstallationsaktion an.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Client Extension](clientextension.md) <br/> |Enthält Benutzer-und Konfigurationsinformationen zu einer App.  <br/> |
+|[ClientExtension](clientextension.md) <br/> |Enthält Benutzer- und Konfigurationsinformationen zu einer App.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Actions (ArrayOfSetClientExtensionActionsType)](actions-arrayofsetclientextensionactionstype.md) <br/> |Gibt ein Array von **Action** -Elementen an.  <br/> |
+|[Aktionen (ArrayOfSetClientExtensionActionsType)](actions-arrayofsetclientextensionactionstype.md) <br/> |Gibt ein Array von **Aktionselementen** an.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -69,7 +69,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

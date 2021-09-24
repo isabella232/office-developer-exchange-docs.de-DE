@@ -5,40 +5,40 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 211731a3-2470-49af-bda3-1ddfc15a8e46
-description: Hier finden Sie Informationen zum DisableApp-EWS-Vorgang.
-ms.openlocfilehash: 8e1f3a257a70c042a01ed70da97cfa0573a2d454
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum DisableApp EWS-Vorgang.
+ms.openlocfilehash: 7a4d3a13351042cc1a192388416381ebe28206bd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462066"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510155"
 ---
 # <a name="disableapp-operation"></a>DisableApp-Vorgang
 
-Hier finden Sie Informationen zum **DisableApp** -EWS-Vorgang. 
+Hier finden Sie Informationen zum **DisableApp** EWS-Vorgang. 
   
-Der **DisableApp** -Vorgang deaktiviert eine Mail-App für Outlook. 
+Der **DisableApp-Vorgang** deaktiviert eine Mail-App für Outlook. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-disableapp-operation"></a>Verwenden des DisableApp-Vorgangs
 
-Der **DisableApp** -Vorgang benötigt zwei Argumente in der Anforderung, die die zu deaktivierende Mail-APP und den Grund für die Deaktivierung identifizieren. 
+Der **DisableApp-Vorgang** verwendet zwei Argumente in der Anforderung, die die zu deaktivierende Mail-App und den Grund für die Deaktivierung identifizieren. 
   
 ### <a name="disableapp-operation-soap-headers"></a>SOAP-Header des DisableApp-Vorgangs
 
-Der **DisableApp** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **DisableApp-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="disableapp-operation-request-example-disable-a-mail-app-installed-in-a-mailbox"></a>DisableApp-Vorgangs Anforderungs Beispiel: Deaktivieren einer in einem Postfach installierten Mail-App
+## <a name="disableapp-operation-request-example-disable-a-mail-app-installed-in-a-mailbox"></a>DisableApp-Vorgangsanforderungsbeispiel: Deaktivieren einer mail-App, die in einem Postfach installiert ist
 
-Im folgenden Beispiel einer **DisableApp** -Vorgangsanforderung wird gezeigt, wie eine Mail-App deaktiviert wird. Der APP-Bezeichner befindet sich im App-Manifest, das in einer [GetAppManifests-Vorgangs](getappmanifests-operation.md) Antwort zurückgegeben wird. 
+Das folgende Beispiel einer **DisableApp-Vorgangsanforderung** zeigt, wie eine Mail-App deaktiviert wird. Der App-Bezeichner befindet sich im App-Manifest, das in einer [GetAppManifests-Vorgangsantwort](getappmanifests-operation.md) zurückgegeben wird. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -61,7 +61,7 @@ Im folgenden Beispiel einer **DisableApp** -Vorgangsanforderung wird gezeigt, wi
 </soap:Envelope>
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [DisableApp](disableapp.md)
     
@@ -69,9 +69,9 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [DisableReason](disablereason.md)
     
-## <a name="successful-disableapp-operation-response"></a>Erfolgreiche Reaktion des DisableApp-Vorgangs
+## <a name="successful-disableapp-operation-response"></a>Erfolgreiche DisableApp-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **DisableApp** -Vorgangsanforderung zum Deaktivieren einer Mail-app. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **DisableApp-Vorgangsanforderung** zum Deaktivieren einer Mail-App. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -97,15 +97,15 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **DisableApp** -V
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [DisableAppResponse](disableappresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-## <a name="disableapp-operation-error-response"></a>Fehlerantwort des DisableApp-Vorgangs
+## <a name="disableapp-operation-error-response"></a>Fehlerantwort beim DisableApp-Vorgang
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **DisableApp** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Deaktivieren einer Mail-APP, die nicht in einem Postfach installiert ist. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **DisableApp-Vorgangsanforderung.** Dies ist eine Antwort auf eine Anforderung zum Deaktivieren einer Mail-App, die nicht in einem Postfach installiert ist. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -133,7 +133,7 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
+Weitere Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

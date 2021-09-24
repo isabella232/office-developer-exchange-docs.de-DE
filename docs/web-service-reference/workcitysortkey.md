@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cfaea527-613c-4bbf-b174-f408147d9768
-description: Das WorkCitySortKey-Element enthält den Sortierschlüssel für die Work City-Werte, die einer Rolle zugeordnet sind.
-ms.openlocfilehash: d5084882f30066cd8046af8fd18269f4af86020d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das WorkCitySortKey-Element enthält die Sortiertaste für die einer Persona zugeordneten Werte für die Arbeitsort.
+ms.openlocfilehash: dad387065d484bb0940e7a3f0f4a3516407307fa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459693"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509301"
 ---
 # <a name="workcitysortkey"></a>WorkCitySortKey
 
-Das **WorkCitySortKey** -Element enthält den Sortierschlüssel für die Work City-Werte, die einer Rolle zugeordnet sind. 
+Das **WorkCitySortKey-Element** enthält die Sortiertaste für die einer Persona zugeordneten Werte für die Stadt der Arbeit. 
   
 ```XML
 <WorkCitySortKey></WorkCitySortKey>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **WorkCitySortKey** -Elements enthält einen Sortierschlüssel zum Sortieren der Arbeits Stadt Eigenschaften von Kontakten, die eine persona umfassen. 
+Der Textwert des **WorkCitySortKey-Elements** enthält eine Sortiertaste zum Sortieren der Arbeitsorteigenschaften von Kontakten, die eine Persona umfassen. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

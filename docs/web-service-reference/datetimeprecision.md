@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 822dc5a6-2d57-474b-8a7d-da150898e5b6
-description: Das DateTimePrecision-Element gibt die Genauigkeit für zurückgegebene Datum/Uhrzeit-Werte an.
-ms.openlocfilehash: 9d245dfb0123daae42ba9b9b4e98aff872b67d80
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DateTimePrecision-Element gibt die Genauigkeit für zurückgegebene Datums-/Uhrzeitwerte an.
+ms.openlocfilehash: 075e37bfdd2c61f56352e000ef6cc5810dd81bbb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529224"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535710"
 ---
 # <a name="datetimeprecision"></a>DateTimePrecision
 
-Das **DateTimePrecision** -Element gibt die Genauigkeit für zurückgegebene Datum/Uhrzeit-Werte an. 
+Das **DateTimePrecision-Element** gibt die Genauigkeit für zurückgegebene Datums-/Uhrzeitwerte an. 
   
 ```XML
 <DateTimePrecision />
@@ -39,7 +39,7 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Das **DateTimePrecision** -Element befindet sich im SOAP-Header. 
+Das **DateTimePrecision-Element** befindet sich im SOAP-Header. 
   
 ## <a name="text-value"></a>Textwert
 
@@ -49,9 +49,9 @@ Ein Textwert ist erforderlich. Im Folgenden sind die möglichen Werte aufgeführ
     
 - Millisekunden
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn ein SOAP-Header mit dem **DateTimePrecision** -Element auf "seconds" festgelegt wird, werden Datum/Uhrzeit-Werte an die nächsten Sekunden zurückgegeben (00:00:00). Wenn "Millisekunden" verwendet wird, werden die Werte für Datum/Uhrzeit an die nächste Millisekunde zurückgegeben (00:00:00.0000). 
+Wenn ein SOAP-Header verwendet wird, für den das **DateTimePrecision-Element** auf "Seconds" festgelegt ist, werden Datums-/Uhrzeitwerte an die nächsten Sekunden (00:00:00) zurückgegeben. Wenn "Millisekunden" verwendet wird, werden Datums-/Uhrzeitwerte an die nächste Millisekunden (00:00:00,0000) zurückgegeben. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

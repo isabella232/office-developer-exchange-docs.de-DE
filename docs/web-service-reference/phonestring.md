@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 54fd2192-54ca-4e42-b630-a3fbdd8e4239
-description: Das Phone-Element gibt die Telefonnummer für einen extrahierten Kontakt an.
-ms.openlocfilehash: cc528b74034d1fd76c19247e72bb5ac00e7734d9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PhoneString-Element gibt die Telefonnummer für einen extrahierten Kontakt an.
+ms.openlocfilehash: 569522337c681ce445309182c1c8010d494564e3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528888"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516650"
 ---
 # <a name="phonestring"></a>PhoneString
 
-Das **Phone** -Element gibt die Telefonnummer für einen extrahierten Kontakt an. 
+Das **PhoneString-Element** gibt die Telefonnummer für einen extrahierten Kontakt an. 
   
 ```XML
 <PhoneString></PhoneString>
@@ -38,13 +38,13 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Telefonnummer](phone.md)  |  [Telefon (PhoneEntityType)](phone-phoneentitytype.md)
+[Telefon](phone.md)  |  [Telefon (PhoneEntityType)](phone-phoneentitytype.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **PhoneSting** -Elements ist die Telefonnummer eines extrahierten Kontakts. 
+Der Textwert des **PhoneSting-Elements** ist die Telefonnummer eines extrahierten Kontakts. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DailyRecurrence
 api_type:
 - schema
 ms.assetid: 0aaf265d-b723-49c6-8e9c-9ba60141e9ab
-description: Das DailyRecurrence-Element beschreibt die Häufigkeit in Tagen, in der ein Kalenderelement oder eine Aufgabe erneut auftritt.
-ms.openlocfilehash: d18a04ced19c87996c3a092f6668ab00c5a3f006
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DailyRecurrence-Element beschreibt die Häufigkeit in Tagen, in der ein Kalenderelement oder eine Aufgabe wiederholt wird.
+ms.openlocfilehash: 7f79b4f69571a1d3ea1c661831825fb2899ebcdb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462171"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535941"
 ---
 # <a name="dailyrecurrence"></a>DailyRecurrence
 
-Das **DailyRecurrence** -Element beschreibt die Häufigkeit in Tagen, in der ein Kalenderelement oder eine Aufgabe erneut auftritt. 
+Das **DailyRecurrence-Element** beschreibt die Häufigkeit in Tagen, in der ein Kalenderelement oder eine Aufgabe wiederholt wird. 
   
 ```xml
 <DailyRecurrence>
@@ -43,16 +43,16 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Intervall](interval.md) <br/> |Definiert das Intervall in Tagen zwischen zwei aufeinander folgenden wiederkehrenden Elementen. Der Wert muss im Bereich von 1 bis 999 liegen.  <br/> |
+|[Intervall](interval.md) <br/> |Definiert das Intervall zwischen zwei aufeinander folgenden Wiederkehrenden Elementen in Tagen. Der Wert muss im Bereich von 1 bis 999 liegen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Enthält Serieninformationen für wiederkehrende Vorgänge.  <br/> |
-|[Serie (serietype)](recurrence-recurrencetype.md) <br/> |Enthält das Serienmuster für Kalenderelemente und Besprechungsanfragen.  <br/> |
+|[Serie (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Enthält das Serienmuster für Kalenderelemente und Besprechungsanfragen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -1,23 +1,23 @@
 ---
-title: Companynames
+title: CompanyNames
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 615fa52d-86ff-4630-b188-5fdb9391eee2
-description: Das companynames-Element enthält ein Array von Firmennamen und die Bezeichner der Quell Zuweisungen für die zugeordnete Persona.
-ms.openlocfilehash: 25daa43873fe00837004217e3f814a7201638450
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das CompanyNames-Element enthält ein Array von Firmennamen und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona.
+ms.openlocfilehash: ca5be5960ab0b1c154809c5d6acc9b5503e52169
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463258"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517238"
 ---
-# <a name="companynames"></a>Companynames
+# <a name="companynames"></a>CompanyNames
 
-Das **companynames** -Element enthält ein Array von Firmennamen und die Bezeichner der Quell Zuweisungen für die zugeordnete Persona. 
+Das **CompanyNames-Element** enthält ein Array von Firmennamen und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona. 
   
 ```XML
 <CompanyNames>
@@ -38,15 +38,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StringAttributedValue](stringattributedvalue.md) <br/> |Gibt eine Instanz in einem Array von Attributen an, die mit einem Persona-Element verknüpft sind.  <br/> |
+|[StringAttributedValue](stringattributedvalue.md) <br/> |Gibt eine Instanz in einem Array von Attributen an, die einem Persona-Element zugeordnet sind.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Persona](persona.md) <br/> |Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.  <br/> |
+|[Persona](persona.md) <br/> |Gibt eine Reihe von Persona-Daten an, die von einer **GetPersona-Anforderung** zurückgegeben werden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

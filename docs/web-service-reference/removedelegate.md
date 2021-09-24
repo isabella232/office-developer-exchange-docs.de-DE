@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RemoveDelegate
 api_type:
 - schema
 ms.assetid: f21c5171-62e7-47c8-99b1-22e1ff5883bb
 description: Das RemoveDelegate-Element definiert eine Anforderung zum Entfernen von Delegaten aus einem Postfach. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: eca357ad1ed2dc692f9f192b97abd3a5d765fafb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8ef8e2f6fb296ea4d3a9b8739f856bfe9a50985a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465520"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523580"
 ---
 # <a name="removedelegate"></a>RemoveDelegate
 
-Das **RemoveDelegate** -Element definiert eine Anforderung zum Entfernen von Delegaten aus einem Postfach. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **RemoveDelegate-Element** definiert eine Anforderung zum Entfernen von Delegaten aus einem Postfach. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <RemoveDelegate>
@@ -44,13 +44,13 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Postfach](mailbox.md) <br/> |Identifiziert das Postfach des Prinzipals.  <br/> |
-|[UserIds](userids.md) <br/> |Enthält ein Array von Delegate-Benutzern, die aus dem Postfach eines Prinzipals entfernt werden sollen. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[UserIds](userids.md) <br/> |Enthält ein Array von Delegatenbenutzern, die aus dem Postfach eines Prinzipals entfernt werden sollen. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -60,7 +60,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

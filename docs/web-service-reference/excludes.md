@@ -1,27 +1,27 @@
 ---
-title: Schließt
+title: Excludes
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Excludes
 api_type:
 - schema
 ms.assetid: bbaeddf6-9a67-4ee0-af99-7a7a5bbdc0e1
-description: Das excludes-Element führt eine bitweise Maske der angegebenen Eigenschaft und eines angegebenen Werts aus.
-ms.openlocfilehash: d5fcd8b86b454aa731bd43974b5b7d674fe76ed6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Excludes-Element führt eine bitweise Maske der angegebenen Eigenschaft und einen angegebenen Wert aus.
+ms.openlocfilehash: 7923c31a4a1fea0270c9a4372072d7b0a3b79c76
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530614"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510141"
 ---
-# <a name="excludes"></a>Schließt
+# <a name="excludes"></a>Excludes
 
-Das **excludes** -Element führt eine bitweise Maske der angegebenen Eigenschaft und eines angegebenen Werts aus. 
+Das **Excludes-Element** führt eine bitweise Maske der angegebenen Eigenschaft und einen angegebenen Wert aus. 
   
 ```xml
 <Excludes>
@@ -58,31 +58,31 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member eines Wörterbuchs.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert MAPI-Eigenschaften.  <br/> |
-|[Bitmaske](bitmask.md) <br/> |Stellt eine Hexadezimal-oder Dezimal Maske dar, die während eines [Exclude](excludes.md) -Einschränkungs Vorgangs verwendet werden soll. Wenn die Bitmaske eine Hexadezimalzahl darstellt, muss Ihr das Präfix 0x oder 0x vorangestellt werden. Andernfalls wird Sie als Dezimalzahl betrachtet.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifies frequently referenced properties by URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Mitglieder eines Wörterbuchs.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifies MAPI properties.  <br/> |
+|[Bitmaske](bitmask.md) <br/> |Stellt eine Hexadezimal- oder Dezimalmaske dar, die während eines [Excludes-Einschränkungsvorgangs](excludes.md) verwendet werden soll. Wenn die Bitmaske eine Hexadezimalzahl darstellt, muss ihr das Präfix 0x oder 0X vorangestellt werden. Andernfalls wird sie als Dezimalzahl betrachtet.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Einschränkung](restriction.md) <br/> |Stellt die Einschränkung oder Abfrage dar, die zum Filtern von Elementen oder Ordnern in FindItem/FindFolder und Suchordner Vorgängen verwendet wird.  <br/> |
+|[Restriction](restriction.md) <br/> |Stellt die Einschränkung oder Abfrage dar, die zum Filtern von Elementen oder Ordnern in FindItem/FindFolder und Suchordnervorgängen verwendet wird.  <br/> |
 |[not](not.md) <br/> |Stellt einen Suchausdruck dar, der den booleschen Wert des darin enthaltenen Suchausdrucks negiert.  <br/> |
-|[Und](and.md) <br/> |Stellt einen Suchausdruck dar, mit dem Sie einen booleschen Wert und eine Operation zwischen zwei oder mehr Suchausdrücken ausführen können. Das Ergebnis der and-Operation ist **true** , wenn alle in der enthaltenen Suchausdrücke auf **true**festgelegt sind.  <br/> |
-|[- oder -](or.md) <br/> |Stellt einen Suchausdruck dar, der eine logische OR-Anweisung für den darin enthaltenen Suchausdruck ausführt. Das [or](or.md) -Element gibt **true** zurück, wenn eines der untergeordneten Elemente **true**zurückgibt.  <br/> |
+|[Und](and.md) <br/> |Stellt einen Suchausdruck dar, mit dem Sie einen booleschen And-Vorgang zwischen zwei oder mehr Suchausdrücken ausführen können. Das Ergebnis des And-Vorgangs ist **"true",** wenn alle in "And" enthaltenen Suchausdrücke **"True"** sind.  <br/> |
+|[- oder -](or.md) <br/> |Stellt einen Suchausdruck dar, der ein logisches OR für den darin enthaltenen Suchausdruck ausführt. Das [Or-Element](or.md) gibt **"true"** zurück, wenn eines seiner untergeordneten Elemente **"true"** zurückgibt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-" **Excludes** " wird in " **true** " aufgelöst, wenn ein-und-Vorgang, der für Folgendes ausgeführt wird, in 0 aufgelöst wird: 
+**"Excludes"** wird in **"true"** aufgelöst, wenn ein and-Vorgang, der für Folgendes ausgeführt wird, in 0 aufgelöst wird: 
   
 1. Der bitweise Wert für die Eigenschaft
     
-2. Der Wert der Bitmaske für die Eigenschaft
+2. Der Bitmaskenwert für die Eigenschaft
     
-**Excludes** können nur auf eine Eigenschaft angewendet werden, die einen ganzzahligen Wert aufweist. Wenn der Eigenschaftentyp etwas anderes als eine ganze Zahl ist, wird ein Fehlercode von **ErrorUnsupportedPathForQuery** in der Antwort zurückgegeben. 
+**Ausschlüsse** können nur auf eine Eigenschaft angewendet werden, die einen ganzzahligen Wert aufweist. Wenn es sich bei dem Eigenschaftstyp um eine andere als eine ganze Zahl handelt, wird in der Antwort ein Fehlercode von **ErrorUnsupportedPathForQuery** zurückgegeben. 
   
-Sie können den Reverse-Vorgang durchführen, indem Sie Not (excludes) aufrufen.
+Sie können den umgekehrten Vorgang ausführen, indem Sie Not(Excludes) aufrufen.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Data
 api_type:
 - schema
 ms.assetid: f875e6c2-be18-439a-a7b1-bb49a149b538
 description: Das Data-Element enthält verschlüsselte Daten, die die freigegebenen Daten darstellen.
-ms.openlocfilehash: cd13d68afcd0f40486865887676d2b5669c276f8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 1c28790467674e3ef44c9f0dc9e1fd706f880641
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529217"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535863"
 ---
 # <a name="data"></a>Daten
 
-Das **Data** -Element enthält verschlüsselte Daten, die die freigegebenen Daten darstellen. 
+Das **Data-Element** enthält verschlüsselte Daten, die die freigegebenen Daten darstellen. 
   
 - [EncryptedSharedFolderData](encryptedsharedfolderdata.md)  
 - [Daten](data.md)
@@ -48,13 +48,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[EncryptedSharedFolderData](encryptedsharedfolderdata.md) <br/> |Enthält die verschlüsselten Daten, die ein Client verwenden kann, um die Freigabe seiner Kalender-oder Kontaktdaten für andere Clients zu autorisieren.  <br/> |
+|[EncryptedSharedFolderData](encryptedsharedfolderdata.md) <br/> |Enthält die verschlüsselten Daten, die ein Client verwenden kann, um die Freigabe seines Kalenders oder seiner Kontaktdaten für andere Clients zu autorisieren.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

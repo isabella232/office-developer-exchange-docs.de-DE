@@ -5,47 +5,47 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateManagedFolder
 api_type:
 - schema
 ms.assetid: 60a668a2-b4e9-4db9-ac76-9b181e47b302
-description: Mit dem CreateManagedFolder-Vorgang wird ein verwalteter Ordner im Exchange-Informationsspeicher erstellt.
-ms.openlocfilehash: 779c730b55b9b441644108a6837f9e22d39cc2f4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der CreateManagedFolder-Vorgang erstellt einen verwalteten Ordner im Exchange Speicher.
+ms.openlocfilehash: 2b00691fbaba294950a091d5caafb8054f3e2073
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44444593"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536424"
 ---
 # <a name="createmanagedfolder-operation"></a>CreateManagedFolder-Vorgang
 
-Mit dem CreateManagedFolder-Vorgang wird ein verwalteter Ordner im Exchange-Informationsspeicher erstellt.
+Der CreateManagedFolder-Vorgang erstellt einen verwalteten Ordner im Exchange Speicher.
   
 ## <a name="using-the-createmanagedfolder-operation"></a>Verwenden des CreateManagedFolder-Vorgangs
 
-Mit dem CreateManagedFolder-Vorgang wird dem Postfach eines Benutzers ein verwalteter benutzerdefinierter Ordner hinzugefügt. Mit dem Cmdlet Exchange-Verwaltungsshell **Get-ManagedFolder** können Sie nach verfügbaren verwalteten Ordnern suchen, die hinzugefügt werden sollen. Dieses Cmdlet gibt zwar sowohl verwaltete benutzerdefinierte Ordner als auch verwaltete Standardordner zurück, nur verwaltete benutzerdefinierte Ordner können hinzugefügt werden. Verwaltete benutzerdefinierte Ordner werden anhand des ManagedCustomFolder-Ordnertyps identifiziert. Der System. DirectoryServices-Namespace enthält auch Typen, die zum Ermitteln der Namen von verfügbaren verwalteten Ordnern verwendet werden können. 
+Der CreateManagedFolder-Vorgang fügt dem Postfach eines Benutzers einen verwalteten benutzerdefinierten Ordner hinzu. Sie können das Cmdlet **"Get-ManagedFolder"** der Exchange Verwaltungsshell verwenden, um verfügbare verwaltete Ordner zu suchen, die hinzugefügt werden sollen. Obwohl dieses Cmdlet sowohl verwaltete benutzerdefinierte Ordner als auch verwaltete Standardordner zurückgibt, können nur verwaltete benutzerdefinierte Ordner hinzugefügt werden. Verwaltete benutzerdefinierte Ordner werden durch den Ordnertyp "ManagedCustomFolder" identifiziert. Der System.DirectoryServices-Namespace enthält auch Typen, mit denen die Namen der verfügbaren verwalteten Ordner ermittelt werden können. 
   
 > [!NOTE]
 > Sie können Exchange Webdienste nicht verwenden, um die Namen der verfügbaren verwalteten Ordner zu finden, die einem Postfach hinzugefügt werden sollen. 
   
-Sie können die FindFolder-und GetFolder-Vorgänge verwenden, um auf verwaltete Ordner zuzugreifen. FindFolder wird verwendet, um nach Ordnern in einem angegebenen übergeordneten Ordner zu suchen. Dies kann verwendet werden, damit verwaltete Ordner in einem Ordner erkannt werden können, bevor ein doppelter verwalteter benutzerdefinierter Ordner demselben Verzeichnis hinzugefügt werden kann. GetFolder wird nach dem FindFolder-Vorgang verwendet, um weitere Informationen zu einem verwalteten benutzerdefinierten Ordner abzurufen.
+Sie können die FindFolder- und GetFolder-Vorgänge verwenden, um auf verwaltete Ordner zuzugreifen. FindFolder wird verwendet, um nach Ordnern in einem angegebenen übergeordneten Ordner zu suchen. Dies kann verwendet werden, damit verwaltete Ordner in einem Ordner ermittelt werden können, bevor versucht wird, demselben Verzeichnis einen doppelten verwalteten benutzerdefinierten Ordner hinzuzufügen. GetFolder wird nach dem FindFolder-Vorgang verwendet, um weitere Informationen zu einem verwalteten benutzerdefinierten Ordner abzurufen.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Informationen zum Einrichten der Messaging-Datensatzverwaltung (MRM)-Richtlinie finden Sie unter [Erstellen einer Postfachrichtlinie für verwalteten Ordner](https://go.microsoft.com/fwlink/?LinkId=100975).
+Informationen zum Einrichten einer MRM-Richtlinie (Messaging Records Management) finden Sie unter [How to Create a Managed Folder Mailbox Policy](https://go.microsoft.com/fwlink/?LinkId=100975).
   
-Informationen zum Entfernen verwalteter benutzerdefinierter Ordner aus einem Postfach finden Sie unter [Remove-ManagedFolder](https://go.microsoft.com/fwlink/?LinkId=100976).
+Informationen zum Entfernen von verwalteten benutzerdefinierten Ordnern aus einem Postfach finden Sie unter [Remove-ManagedFolder](https://go.microsoft.com/fwlink/?LinkId=100976).
   
-## <a name="createmanagedfolder-request-example"></a>CreateManagedFolder-Anforderungs Beispiel
+## <a name="createmanagedfolder-request-example"></a>CreateManagedFolder-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer CreateManagedFolder-Anforderung wird gezeigt, wie einem Postfach ein verwalteter Ordner mit dem Namen "Test Managed Folder" hinzugefügt wird.
+Das folgende Beispiel einer CreateManagedFolder-Anforderung zeigt, wie Sie einem Postfach einen verwalteten Ordner namens "Test Managed Folder" hinzufügen.
   
 > [!NOTE]
-> Sie können auch den Stellvertretungszugriff zum Hinzufügen verwalteter benutzerdefinierter Ordner verwenden. 
+> Sie können auch den Delegatzugriff verwenden, um verwaltete benutzerdefinierte Ordner hinzuzufügen. 
   
 ### <a name="code"></a>Code
 
@@ -75,7 +75,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [FolderName](foldername.md)
     
-Um andere Optionen für die Anforderungsnachricht des CreateManagedFolder-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [CreateManagedFolder](createmanagedfolder.md) -Element. 
+Weitere Optionen für die Anforderungsnachricht des CreateManagedFolder-Vorgangs finden Sie in der Schemahierarchie. Beginnen Sie mit dem [CreateManagedFolder-Element.](createmanagedfolder.md) 
   
 ## <a name="successful-createmanagedfolder-response"></a>Erfolgreiche CreateManagedFolder-Antwort
 
@@ -84,7 +84,7 @@ Um andere Optionen für die Anforderungsnachricht des CreateManagedFolder-Vorgan
 Das folgende Codebeispiel zeigt eine erfolgreiche Antwort auf eine CreateManagedFolder-Anforderung.
   
 > [!NOTE]
-> Die **ID** -und **ChangeKey** -Attributwerte wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Die Attributwerte **"Id"** und **"ChangeKey"** wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="code"></a>Code
 
@@ -134,7 +134,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [FolderId](folderid.md)
     
-Um andere Optionen für die Antwortnachrichten des CreateManagedFolder-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [CreateManagedFolderResponse](createmanagedfolderresponse.md) -Element. 
+Weitere Optionen für die Antwortnachrichten des CreateManagedFolder-Vorgangs finden Sie in der Schemahierarchie. Beginnen Sie beim [CreateManagedFolderResponse-Element.](createmanagedfolderresponse.md) 
   
 ## <a name="createmanagedfolder-error-response"></a>CreateManagedFolder-Fehlerantwort
 

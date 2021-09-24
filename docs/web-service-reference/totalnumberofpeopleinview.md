@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f1037fef-628b-4e44-96e7-a701a9ca8404
-description: Das TotalNumberOfPeopleInView-Element gibt die Gesamtzahl der in einer FindPeople-Antwort zurückgegebenen Personas an.
-ms.openlocfilehash: d89aa65d595814a7277f85e569ca10f9058c6aac
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: The TotalNumberOfPeopleInView element specifies the total number of personas returned in a FindPeople response.
+ms.openlocfilehash: 350dcaf4a498a590350c7f2b72d542057ae6eb7b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467508"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523279"
 ---
 # <a name="totalnumberofpeopleinview"></a>TotalNumberOfPeopleInView
 
-Das **TotalNumberOfPeopleInView** -Element gibt die Gesamtzahl der in einer **FindPeople** -Antwort zurückgegebenen Personas an. 
+The **TotalNumberOfPeopleInView** element specifies the total number of personas returned in a **FindPeople** response. 
   
 ```XML
 <TotalNumberOfPeopleInView></TotalNumberOfPeopleInView>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **TotalNumberOfPeopleInView** -Elements ist die Gesamtzahl der in einer **FindPeople** -Antwort zurückgegebenen Personas. 
+Der Textwert des **TotalNumberOfPeopleInView-Elements** ist die Gesamtzahl der Personas, die in einer **FindPeople-Antwort** zurückgegeben werden. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

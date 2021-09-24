@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExtendedProperty
 api_type:
 - schema
 ms.assetid: f9701409-b620-4afe-b9ee-4c1e95507af7
-description: Das Extended-Element identifiziert erweiterte MAPI-Eigenschaften für Ordner und Elemente.
-ms.openlocfilehash: 99ede097d803d6fbf534cde0e77c08cec054bfa3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ExtendedProperty-Element identifiziert erweiterte MAPI-Eigenschaften für Ordner und Elemente.
+ms.openlocfilehash: 2c4b6d3fbb3c2178206ef966381614319d1c9bd0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530607"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510127"
 ---
 # <a name="extendedproperty"></a>ExtendedProperty
 
-Das **Extended** -Element identifiziert erweiterte MAPI-Eigenschaften für Ordner und Elemente. 
+Das **ExtendedProperty-Element** identifiziert erweiterte MAPI-Eigenschaften für Ordner und Elemente. 
   
 ```xml
 <ExtendedProperty>
@@ -37,7 +37,7 @@ Das **Extended** -Element identifiziert erweiterte MAPI-Eigenschaften für Ordne
 </ExtendedProperty>
 ```
 
-**Extendedpropertytype Schematyp**
+**ExtendedPropertyType**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -51,9 +51,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Bezeichnet eine erweiterte MAPI-Eigenschaft, die abgerufen, festgelegt oder erstellt werden soll.  <br/> |
-|[Values](values.md) <br/> |Enthält eine Auflistung von Werten für eine mehrwertige erweiterte MAPI-Eigenschaft.  <br/> |
-|[Wert](value.md) <br/> |Enthält den Wert der erweiterten einwertigen MAPI-Eigenschaft.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifies an extended MAPI property to get, set, or create.  <br/> |
+|[Werte](values.md) <br/> |Enthält eine Auflistung von Werten für eine mehrwertige erweiterte MAPI-Eigenschaft.  <br/> |
+|[Wert](value.md) <br/> |Enthält den Wert der einwertigen erweiterten MAPI-Eigenschaft.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -71,12 +71,12 @@ Keine.
 |[RemoveItem](removeitem.md) <br/> |Entfernt ein Element aus dem Exchange-Informationsspeicher.  <br/> |
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
 |[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner dar, der in erster Linie Kalenderelemente enthält.  <br/> |
-|[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Ordner Kontakte in einem Postfach dar.  <br/> |
-|[Ordner](folder.md) <br/> |Stellt einen Ordner zum Erstellen, abrufen, suchen, synchronisieren oder aktualisieren dar.  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Kontaktordner in einem Postfach dar.  <br/> |
+|[Ordner](folder.md) <br/> |Stellt einen Ordner dar, der erstellt, abgerufen, gesucht, synchronisiert oder aktualisiert werden soll.  <br/> |
 |[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner dar, der in einem Postfach enthalten ist.  <br/> |
 |[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner dar, der in einem Postfach enthalten ist.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

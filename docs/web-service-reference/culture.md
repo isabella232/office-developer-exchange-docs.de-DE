@@ -1,33 +1,33 @@
 ---
-title: Kultur
+title: Culture
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Culture
 api_type:
 - schema
 ms.assetid: 71bd62c6-3fec-48db-9a5e-02121e9bc20b
 description: Das Culture-Element stellt die Kultur für ein bestimmtes Element in einem Postfach dar.
-ms.openlocfilehash: ee0fa4d25f3be769aff0a9a50c2f311ab6179b31
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d760acc60c3f7802f837d8125d2d92c03284e293
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458341"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536134"
 ---
-# <a name="culture"></a>Kultur
+# <a name="culture"></a>Culture
 
-Das **Culture** -Element stellt die Kultur für ein bestimmtes Element in einem Postfach dar. 
+Das **Culture-Element** stellt die Kultur für ein bestimmtes Element in einem Postfach dar. 
   
 ```xml
 <Culture/>
 ```
 
- **Sprache**
+ **Language**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -58,9 +58,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text gibt die Sprache an, die in den Exchange-Webdienste Vorgängen verwendet wird. Kultur wird mithilfe des RFC 1766-Kulturbezeichners angegeben; Beispiel: en-US.
+Der Textwert gibt die Sprache an, die in den Exchange Webdienstvorgängen verwendet wird. Die Kultur wird mithilfe des RFC 1766-Kulturbezeichners angegeben. z. B. "en-US".
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

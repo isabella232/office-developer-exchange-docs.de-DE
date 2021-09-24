@@ -1,64 +1,64 @@
 ---
-title: Lesen und Ändern von Nachrichten in der Exchange 2013 Transportpipeline
+title: Lesen und Ändern von Nachrichten in der Exchange 2013-Transportpipeline
 manager: sethgros
-ms.date: 09/17/2015
+ms.date: 09/17/2021
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b53ed47a-3d01-4c4e-ad32-fb0532872aad
-description: Erfahren Sie mehr über die .NET Framework Klassen, die Sie in Ihren Exchange 2013-Transport-Agents zum Lesen, schreiben und Ändern von Nachrichten verwenden können.
-ms.openlocfilehash: 42d9dc7f05dce495b7695a2862af244313caffcb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Erfahren Sie mehr über die .NET Framework Klassen, die Sie in Ihren Exchange 2013-Transport-Agents zum Lesen, Schreiben und Ändern von Nachrichten verwenden können.
+ms.openlocfilehash: 5bf4406f7ca82512bb55388e0865e0d343cae66e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527579"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537236"
 ---
-# <a name="reading-and-modifying-messages-in-the-exchange-2013-transport-pipeline"></a>Lesen und Ändern von Nachrichten in der Exchange 2013 Transportpipeline
+# <a name="reading-and-modifying-messages-in-the-exchange-2013-transport-pipeline"></a>Lesen und Ändern von Nachrichten in der Exchange 2013-Transportpipeline
 
-Erfahren Sie mehr über die .NET Framework Klassen, die Sie in Ihren Exchange 2013-Transport-Agents zum Lesen, schreiben und Ändern von Nachrichten verwenden können.
+Erfahren Sie mehr über die .NET Framework Klassen, die Sie in Ihren Exchange 2013-Transport-Agents zum Lesen, Schreiben und Ändern von Nachrichten verwenden können.
   
 **Gilt für:** Exchange Server 2013
   
-- Zum Lesen, schreiben oder Ändern von Nachrichten verwendete Klassen
+- Klassen zum Lesen, Schreiben oder Ändern von Nachrichten
 - Encoder-Namespace
 - iCalendar-Namespace
 - MIME-Namespace
 - TextConverters-Namespace
-- TNEF-Namespace
+- Tnef-Namespace
 - vCard-Namespace
   
-Wenn Nachrichten die Transportpipeline durchlaufen, kann der Transport-Agent Nachrichteninhalte zwischen verschiedenen Datenformaten lesen, schreiben und konvertieren. Beispielsweise können Sie MIME-Daten lesen und schreiben, eingehende Nachrichten im QP-Format (in einem UUENCODE-oder im Anführungszeichen) identifizieren und diese in einen von Ihrer Organisation verwendeten Standard konvertieren oder Kalender-oder Kontaktinformationen, die mit eingehenden Nachrichten verbunden sind, lesen und dann speichern. 
+Wenn Nachrichten die Transportpipeline durchlaufen, kann Ihr Transport-Agent Nachrichteninhalte zwischen verschiedenen Datenformaten lesen, schreiben und konvertieren. Sie können beispielsweise MIME-Daten lesen und schreiben, eingehende Nachrichten im Format Uuencoded oder Quoted-printable (qp) identifizieren und dann in einen von Ihrer Organisation verwendeten Standard konvertieren oder Kalender- oder Kontaktinformationen im Zusammenhang mit eingehenden Nachrichten lesen und speichern. 
   
-Sie können auch Inhalte identifizieren, die eine Sicherheitsbedrohung darstellen, und den Inhalt oder die darin enthaltenen Nachrichten zu-oder ablegen. beispielsweisedurch Entfernen von Links in einer HTML-Nachricht.
+Sie können auch Inhalte identifizieren, die eine Sicherheitsgefährdung darstellen, und den Inhalt oder die Nachrichten, die sie enthalten, verschieben oder löschen. Beispielsweise durch Entfernen von Links in einer HTML-Nachricht.
   
-Dieser Artikel enthält Informationen zu den .NET Framework Klassen, die Sie zum Lesen, schreiben und Ändern von Nachrichten verwenden können.
+Dieser Artikel enthält Informationen zu den .NET Framework Klassen, die Sie zum Lesen, Schreiben und Ändern von Nachrichten verwenden können.
   
 > [!CAUTION]
-> Viele der Eigenschaften und Parameter in der Inhalts Konvertierungs-APIs lassen Werte groß genug, um Leistungsprobleme zu verursachen, einschließlich Denial-of-Service. Wenn Sie die APIs für die Inhaltskonvertierung in einem Transport-Agent verwenden, sollten Sie Grenzwerte für die Eigenschaften-und Parameterwert Größen implementieren, die Sie beim Lesen oder schreiben unterstützen, um die Ressourcennutzung durch ihren Agent zu begrenzen. 
+> Viele der Eigenschaften und Parameter in den Inhaltskonvertierungs-APIs ermöglichen Werte, die groß genug sind, um Leistungsprobleme zu verursachen, einschließlich Denial-of-Service. Wenn Sie die Inhaltskonvertierungs-APIs in einem Transport-Agent verwenden, sollten Sie Grenzwerte für die Eigenschaften- und Parameterwertgrößen implementieren, die Sie beim Lesen oder Schreiben unterstützen, um den Ressourcenverbrauch ihres Agents zu begrenzen. 
 
 <a name="Namespaces"> </a>
 
-## <a name="classes-used-to-read-write-or-modify-messages"></a>Zum Lesen, schreiben oder Ändern von Nachrichten verwendete Klassen
+## <a name="classes-used-to-read-write-or-modify-messages"></a>Klassen zum Lesen, Schreiben oder Ändern von Nachrichten
 
-In der folgenden Tabelle sind die .NET Framework Klassen aufgeführt, die Sie zum Lesen, schreiben und Ändern von e-Mail-Nachrichten verwenden können.
+In der folgenden Tabelle sind die .NET Framework Klassen aufgeführt, die Sie zum Lesen, Schreiben und Ändern von E-Mail-Nachrichten verwenden können.
   
-**Namespaces für die .NET Framework Nachrichtenverarbeitung**
+**.NET Framework-Namespaces für die Nachrichtenverarbeitung**
 
 |**.NET Framework Namespace**|**Kurse**|
 |:-----|:-----|
-|[Microsoft. Exchange. Data. MIME. Encoder](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.aspx) <br/> |Enthält Klassen für die in-Memory-Codierung und-Decodierung, eine Encoder-Streamklasse, die eine der Encoder-oder Decoder-Klassen akzeptiert, die in einer zugeordneten Aufzählung enthalten sind, und die [ByteEncoder](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.ByteEncoder.aspx) -Basisklasse und die [ByteEncoderException](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.ByteEncoderException.aspx) -Ausnahmeklasse für die Encoder und Decoder.  <br/> |
-|[Microsoft. Exchange. Data. ContentTypes. iCalendar](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.aspx) <br/> |Enthält Typen, mit denen Sie Datenströme lesen und schreiben können, die Kalenderinformationen enthalten. Enthält einen Kalender Leser und-Schreiber, ein Exception-Objekt, ein Serien Objekt sowie Strukturen und Aufzählungen, mit denen Sie Eigenschaftsinformationen zu Kalenderelementen zurückgeben können.  <br/> |
-|[Microsoft. Exchange. Data. MIME](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.aspx) <br/> |Enthält Klassen, Strukturen, Aufzählungen und Stellvertretungen, die Sie zum Erstellen, lesen, schreiben, durchlaufen, codieren und Decodieren von MIME-Daten verwenden können. Enthält einen Stream-basierten Leser und Writer, der Ihnen einen vorwärts Lese-und Schreibzugriff auf MIME-Datenströme sowie Dom-basierte Methoden und Klassen zur Verfügung stellt, die Sie für MIME-Dokumente verwenden können.  <br/> |
-|[Microsoft. Exchange. Data. TextConverters](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.aspx) <br/> |Enthält Klassen, Strukturen, Enumerationen und Delegaten, mit denen Sie einen Datenstrom lesen und schreiben und Konvertierungen zwischen bestimmten Datentypen durchführen können. Beispiel: HTML zum Rich-Text-Format (RTF). Mit Text Konvertern können Sie das Format eines Dokumentdatenstroms von einem Formular in ein anderes ändern und Elemente eines Dokuments selektiv entfernen, die ein Sicherheitsrisiko darstellen könnten.  <br/> |
-|[Microsoft. Exchange. Data. ContentTypes. TNEF](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.aspx) <br/> |Enthält ein vorwärts gerichtetes Stream-Lesegerät und einen Writer, eine Exception-Klasse sowie Strukturen und Aufzählungen, die das Lesen und Schreiben von Transport Neutral Encapsulation Format (TNEF) Daten erleichtern.  <br/> |
-|[Microsoft. Exchange. Data. ContentTypes. vCard](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.vCard.aspx) <br/> |Enthält ein vorwärts gerichtetes Stream-Lesegerät und einen Writer, eine Exception-Klasse sowie Strukturen und Aufzählungen, die das Lesen und Schreiben von vCard-formatierten Kontaktdaten erleichtern.  <br/> |
+|[Microsoft. Exchange. Data.Mime.Encoders](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.aspx) <br/> |Enthält Klassen für die In-Memory-Codierung und -Decodierung, eine Encoderstreamklasse, die eine der Encoder- oder Decoderklassen akzeptiert, die in einer zugeordneten Enumeration enthalten sind, und die [ByteEncoder-Basisklasse](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.ByteEncoder.aspx) und [die ByteEncoderException-Ausnahmeklasse](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.ByteEncoderException.aspx) für die Encoder und Decoder.  <br/> |
+|[Microsoft. Exchange. Data.ContentTypes.iCalendar](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.aspx) <br/> |Enthält Typen, mit denen Sie Datenströme lesen und schreiben können, die Kalenderinformationen enthalten. Enthält einen Kalenderleser und -writer, ein Ausnahmeobjekt, ein Serienobjekt sowie Strukturen und Enumerationen, mit denen Sie Eigenschafteninformationen zu Kalenderelementen zurückgeben können.  <br/> |
+|[Microsoft. Exchange. Data.Mime](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.aspx) <br/> |Enthält Klassen, Strukturen, Enumerationen und Delegaten, die Sie zum Erstellen, Lesen, Schreiben, Durchlaufen, Codieren und Decodieren von MIME-Daten verwenden können. Enthält einen streambasierten Reader und Writer, mit dem Sie nur Lese- und Schreibzugriff auf MIME-Datenströme sowie DOM-basierte Methoden und Klassen erhalten, die Sie in MIME-Dokumenten verwenden können.  <br/> |
+|[Microsoft. Exchange. Data.TextConverters](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.aspx) <br/> |Enthält Klassen, Strukturen, Enumerationen und Stellvertretungen, mit denen Sie einen Datenstrom lesen und schreiben und Konvertierungen zwischen bestimmten Datentypen ausführen können. Beispielsweise HTML in RtF (Rich Text Format). Textkonverter ermöglichen es Ihnen, das Format eines Dokumentdatenstroms von einem Formular in ein anderes zu ändern und Elemente eines Dokuments selektiv zu entfernen, die ein Sicherheitsrisiko darstellen könnten.  <br/> |
+|[Microsoft. Exchange. Data.ContentTypes.Tnef](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.aspx) <br/> |Enthält einen Vorwärtsstreamleser und Writer, eine Ausnahmeklasse sowie Strukturen und Enumerationen, die das Lesen und Schreiben von TNEF-Daten (Transport Neutral Encapsulation Format) erleichtern.  <br/> |
+|[Microsoft. Exchange. Data.ContentTypes.vCard](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.vCard.aspx) <br/> |Enthält einen Vorwärtsdatenstromleser und -writer, eine Ausnahmeklasse sowie Strukturen und Enumerationen, die das Lesen und Schreiben vCard-formatierter Kontaktdaten erleichtern.  <br/> |
    
 ## <a name="encoders-namespace"></a>Encoder-Namespace
 <a name="Encoders"> </a>
 
-Der Encoder-Namespace enthält Klassen für die in-Memory-Codierung und-Decodierung. Diese erben von der [ByteEncoder](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.ByteEncoder.aspx) -Basisklasse. Klassen codieren und decodieren für Base64, BinHex, quoted-printable (QP) und UNIX-to-UNIX (UU). Die folgenden Klassen werden für die in-Memory-Codierung und-Decodierung verwendet: 
+Der Encoder-Namespace enthält Klassen für die In-Memory-Codierung und -Decodierung. Diese erben von der [ByteEncoder-Basisklasse.](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.ByteEncoder.aspx) Klassen codieren und decodieren für Base64, BinHex, Quoted-printable (qp) und Unix-to-Unix (Uu). Die folgenden Klassen werden für die In-Memory-Codierung und -Decodierung verwendet: 
   
 - [Base64Encoder](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.Base64Encoder.aspx)
     
@@ -72,91 +72,91 @@ Der Encoder-Namespace enthält Klassen für die in-Memory-Codierung und-Decodier
     
 - [QPDecoder](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.QPDecoder.aspx)
     
-- [UUEncode](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.UUEncoder.aspx)
+- [UUEncoder](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.UUEncoder.aspx)
     
 - [UUDecoder](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.UUDecoder.aspx)
     
-Die Encoder und Decoder erben von der [ByteEncoder](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.ByteEncoder.aspx) -Basisklasse und verwenden die [ByteEncoderException](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.ByteEncoderException.aspx) -Ausnahmeklasse für die Fehlerbehandlung. 
+Die Encoder und Decoder erben von der [ByteEncoder-Basisklasse](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.ByteEncoder.aspx) und verwenden die [ByteEncoderException-Ausnahmeklasse](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.ByteEncoderException.aspx) für die Fehlerbehandlung. 
   
-Darüber hinaus enthält der Namespace die [MacBinaryHeader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.MacBinaryHeader.aspx) -Klasse, die MacBinary-codierte Dateien identifiziert und deren zugeordneten Dateiheader liest. 
+Darüber hinaus enthält der Namespace die [MacBinaryHeader-Klasse,](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.MacBinaryHeader.aspx) die MacBinary-codierte Dateien identifiziert und den zugehörigen Dateiheader liest. 
   
-Schließlich führt die [EncoderStream](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.EncoderStream.aspx) -Klasse eine Konvertierung für einen Datenstrom anstelle eines in-Memory-Objekts aus. Diese Klasse akzeptiert eine der Encoder-oder Decoder-Klassen und liest oder schreibt entsprechend der zugeordneten [EncoderStreamAccess](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.EncoderStreamAccess.aspx) -Aufzählung. 
+Schließlich führt die [EncoderStream-Klasse](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.EncoderStream.aspx) eine Konvertierung für einen Datenstrom anstelle eines Speicherobjekts durch. Diese Klasse akzeptiert eine der Encoder- oder Decoderklassen und liest oder schreibt gemäß der zugeordneten [EncoderStreamAccess-Enumeration.](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.EncoderStreamAccess.aspx) 
   
 ## <a name="icalendar-namespace"></a>iCalendar-Namespace
 <a name="iCalendar"> </a>
 
-Der iCalendar-Namespace stellt einen vorwärts Leser und-Schreiber für iCalendar-Daten bereit, zusätzlich zu unterstützenden Strukturen und Klassen zum Erstellen, zugreifen und Ändern von iCalendar-Streams.
+Der iCalendar-Namespace bietet einen vorwärtsgerichteten Reader und Writer für iCalendar-Daten sowie unterstützende Strukturen und Klassen zum Erstellen, Zugreifen und Ändern von iCalendar-Datenströmen.
   
-Die Klassen [CalendarReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.aspx) und [CalendarWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarWriter.aspx) werden zum Lesen und Schreiben von iCalendar-Datenstromdaten verwendet. 
+Die [Klassen CalendarReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.aspx) und [CalendarWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarWriter.aspx) werden zum Lesen und Schreiben von iCalendar-Datenstrom verwendet. 
   
-Der CalendarReader verwendet einen lesbaren [Stream](https://msdn.microsoft.com/library/System.IO.Stream.aspx) als Argument für seine Konstruktoren. Anschließend können Sie die [ReadFirstChildComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadFirstChildComponent.aspx)-, [ReadNextSiblingComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadNextSiblingComponent.aspx)-und [ReadNextComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadNextComponent.aspx) -Methoden verwenden, um sequenziell auf die iCalendar-Komponenten im Datenstrom zuzugreifen. Basierend auf dem Wert, den Sie für die [ComplianceMode](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ComplianceMode.aspx) -Eigenschaft festgelegt haben, wird durch Fehler im iCalendar-Datenstrom eine Ausnahme ausgelöst, oder die [wurde](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ComplianceStatus.aspx) -Eigenschaft wird auf einen anderen Wert als [konform](https://msdn.microsoft.com/library/microsoft.exchange.data.contenttypes.icalendar.calendarcompliancestatus.aspx)festgelegt. Sie können diese Eigenschaft überprüfen, um Probleme mit eingehenden iCalendar-Daten zu ermitteln. 
+CalendarReader verwendet einen lesbaren [Stream](https://msdn.microsoft.com/library/System.IO.Stream.aspx) als Argument für seine Konstruktoren. Anschließend können Sie die Methoden [ReadFirstChildComponent,](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadFirstChildComponent.aspx) [ReadNextSiblingComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadNextSiblingComponent.aspx)und [ReadNextComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadNextComponent.aspx) verwenden, um sequenziell auf die iCalendar-Komponenten im Datenstrom zuzugreifen. Basierend auf dem Wert, den Sie für die [ComplianceMode-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ComplianceMode.aspx) festgelegt haben, führen Fehler im iCalendar-Stream dazu, dass eine Ausnahme ausgelöst wird oder die [ComplianceStatus-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ComplianceStatus.aspx) auf einen anderen Wert als ["Kompatibel"](https://msdn.microsoft.com/library/microsoft.exchange.data.contenttypes.icalendar.calendarcompliancestatus.aspx)festgelegt wird. Sie können diese Eigenschaft überprüfen, um Probleme mit eingehenden iCalendar-Daten zu ermitteln. 
   
-Die [CalendarWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarWriter.aspx) -Klasse verwendet einen beschreibbaren [Stream](https://msdn.microsoft.com/library/System.IO.Stream.aspx) als Argument für die Konstruktoren. 
+Die [CalendarWriter-Klasse](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarWriter.aspx) verwendet einen beschreibbaren [Stream](https://msdn.microsoft.com/library/System.IO.Stream.aspx) als Argument für ihre Konstruktoren. 
   
 ## <a name="mime-namespace"></a>MIME-Namespace
 <a name="MIME"> </a>
 
-Der MIME-Namespace stellt Klassen zur Verfügung, mit denen Sie MIME-Dokumente erstellen, auf Sie zugreifen und diese bearbeiten können. Sie können mit MIME-Dokumenten entweder mit einer Stream-basierten oder einer DOM-basierten Methode arbeiten.
+Der MIME-Namespace stellt Klassen bereit, mit denen Sie MIME-Dokumente erstellen, darauf zugreifen und diese ändern können. Sie können mit MIME-Dokumenten arbeiten, indem Sie entweder eine stream- oder DOM-basierte Methode verwenden.
   
-### <a name="mimedocument-class-and-the-mime-dom"></a>MimeDocument-Klasse und das MIME-Dom
+### <a name="mimedocument-class-and-the-mime-dom"></a>MimeDocument-Klasse und MIME-DOM
 
-Die [MimeDocument](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeDocument.aspx) -Klasse ermöglicht den Dom-Zugriff auf ein MIME-Dokument. Verwenden Sie Objekte dieses Typs, wenn Sie den verfügbaren Arbeitsspeicher zum Laden eines vollständigen DOM haben und Sie über einen zufälligen Zugriff auf die Kopfzeilen und den Inhalt der Nachricht verfügen müssen. 
+Die [MimeDocument-Klasse](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeDocument.aspx) ermöglicht den DOM-Zugriff auf ein MIME-Dokument. Verwenden Sie Objekte dieses Typs, wenn Sie über den verfügbaren Arbeitsspeicher verfügen, um ein gesamtes DOM zu laden, und Sie zufälligen Zugriff auf die Kopfzeilen und den Inhalt der Nachricht haben müssen. 
   
-Sie laden Daten in ein [MimeDocument](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeDocument.aspx) -Objekt mithilfe der [GetLoadStream](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeDocument.GetLoadStream.aspx) oder [Laden](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeDocument.Load.aspx) Methoden. Anschließend können Sie die DOM-Hierarchie durchlaufen und MIME-Daten erstellen, ändern oder entfernen. Nachdem Sie die MIME-Daten geändert haben, können Sie Sie mithilfe einer der [WriteTo](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeNode.WriteTo.aspx) -Methoden in einen Stream schreiben. 
+Sie laden Daten mithilfe der [GetLoadStream-](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeDocument.GetLoadStream.aspx) oder [Load-Methoden](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeDocument.Load.aspx) in ein [MimeDocument-Objekt.](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeDocument.aspx) Anschließend können Sie die DOM-Hierarchie durchlaufen und MIME-Daten erstellen, ändern oder entfernen. Nachdem Sie die MIME-Daten geändert haben, können Sie sie mithilfe einer der [WriteTo-Methoden](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeNode.WriteTo.aspx) in einen Datenstrom schreiben. 
   
-In der folgenden Abbildung ist die Struktur der Daten in einem [MimeDocument](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeDocument.aspx) -Objekt dargestellt. 
+Die folgende Abbildung zeigt die Struktur von Daten innerhalb eines [MimeDocument-Objekts.](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeDocument.aspx) 
   
 **Abbildung 1. Struktur von MimeDocument-Objekten**
 
 ![MIME DOM-Architektur](media/MimeDomArchitecture.gif)
   
-### <a name="mimereader-and-mimewriter-classes-and-stream-based-mime-parsing"></a>MimeReader-und MimeWriter-Klassen und datenstrombasierte MIME-Analyse
+### <a name="mimereader-and-mimewriter-classes-and-stream-based-mime-parsing"></a>MimeReader- und MimeWriter-Klassen und streambasierte MIME-Analyse
 
-Die [MimeReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeReader.aspx) -und [MimeWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeWriter.aspx) -Klassen ermöglichen den Vorwärtszugriff auf MIME-Datenströme. Verwenden Sie diese Klassen, wenn Sie die MIME-Daten nicht ändern müssen, für die bereits gelesene oder geschriebene Daten erforderlich sind. Wenn Sie beispielsweise Nachrichten drucken möchten, die einem vordefinierten Format entsprechen, ist die [MimeWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeWriter.aspx) -Klasse möglicherweise ideal. 
+Die [MimeReader-](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeReader.aspx) und [MimeWriter-Klassen](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeWriter.aspx) ermöglichen den vorwärtsgerichteten Zugriff auf MIME-Datenströme. Verwenden Sie diese Klassen, wenn Sie die MIME-Daten, die bereits gelesene oder geschriebene Daten erfordern, nicht ändern müssen. Wenn Sie beispielsweise Nachrichten drucken möchten, die in ein vordefiniertes Format passen, ist die [MimeWriter-Klasse](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeWriter.aspx) möglicherweise ideal. 
   
-Die [MimeDocument](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeDocument.aspx) -Klasse kapselt ein DOM. Die [MimeReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeReader.aspx) -und die [MimeWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeWriter.aspx) -Klasse stellen Statuscomputer dar. Ihre Zustände ändern sich basierend auf der empfangenen Eingabe und den aufgerufenen Methoden. Die Abbildungen 2 bis 5 sind vereinfachte Zustandsübergangsdiagramme, die für das [MimeReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeReader.aspx) -Objekt anzeigen, welche Methoden für den Aufruf von jedem Status gültig sind, und den Zustand, der resultieren wird. 
+Die [MimeDocument-Klasse](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeDocument.aspx) kapselt ein DOM. Die [Klassen MimeReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeReader.aspx) und [MimeWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeWriter.aspx) stellen Zustandscomputer dar. Ihre Zustände ändern sich basierend auf der empfangenen Eingabe und den aufgerufenen Methoden. Die Abbildungen 2 bis 5 sind vereinfachte Zustandsübergangsdiagramme, die für das [MimeReader-Objekt](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeReader.aspx) zeigen, welche Methoden gültig sind, um von jedem Zustand aus aufzurufen, sowie den zustand, der sich daraus ergeben wird. 
   
-Wenn Sie diese Diagramme verwenden möchten, befolgen Sie die Pfeile von einem Zustand zum nächsten, wobei Sie die Methodenaufrufe oder Rückgabewerte feststellen, die dazu führen, dass sich der Status ändert. Nehmen wir beispielsweise im ersten Diagramm an, dass Sie sich am Anfang des Streams befinden, der zu dem MimeReader gehört, den Sie erstellt haben. Wenn Sie zum Status von Teil Kopfzeilen gelangen möchten, rufen Sie eine der [ReadNextPart](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeReader.ReadNextPart.aspx) oder [ReadFirstChildPart](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeReader.ReadFirstChildPart.aspx)in dieser Reihenfolge auf. Wenn es Kopfzeilen gibt (das heißt, wenn der MIME wohlgeformt ist), werden Sie in den Kopfzeilenstatus der Teile eingeben. Andernfalls wird eine Ausnahme ausgelöst. 
+Um diese Diagramme zu verwenden, folgen Sie den Pfeilen von einem Zustand zum nächsten, wobei Sie die Methodenaufrufe notieren oder Werte zurückgeben, die zu einer Änderung des Zustands führen. Gehen Sie beispielsweise im ersten Diagramm davon aus, dass Sie sich am Anfang des Datenstroms befinden, der zu dem von Ihnen erstellten MimeReader gehört. Rufen Sie zum Abrufen des Zustands "Part Headers" einen von [ReadNextPart](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeReader.ReadNextPart.aspx) oder ReadFirstChildPart in dieser Reihenfolge auf. [](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeReader.ReadFirstChildPart.aspx) Wenn Kopfzeilen vorhanden sind (d. h., wenn mime wohlgeformt ist), geben Sie den Status "Part Headers" ein. Andernfalls wird eine Ausnahme ausgelöst. 
   
 **Abbildung 2. Vereinfachtes Zustandsübergangsdiagramm für MimeReader-Objekte**
 
 ![MimeReader-Statusdiagramm](media/MimeReader_StateDiagram_01.gif)
   
 > [!NOTE]
-> Die Abbildungen 3, 4 und 5 erweitern die Zustände, die in den vorherigen Diagrammen angezeigt werden. 
+> Die Abbildungen 3, 4 und 5 erweitern die Zustände, die in den vorherigen Diagrammen dargestellt sind. 
   
-**Abbildung 3. Erweiterung des Status von Teil Kopfzeilen aus Abbildung 2**
+**Abbildung 3. Erweiterung des Status "Part Headers" ab Abbildung 2**
 
 ![Erweiterung des Status "Part-Kopfzeilen"](media/MimeReader_StateDiagram_02.gif)
   
-**Abbildung 4. Erweiterung des Kopfzeilenstatus aus Abbildung 3, wenn ein Parameter in einer Kopfzeile aufgetreten ist**
+**Abbildung 4. Erweiterung des Headerstatus von Abbildung 3, wenn ein Parameter in einer Kopfzeile gefunden wurde**
 
-![Erweiterung des Status "Part-Kopfzeilen"](media/MimeReader_StateDiagram_03.gif)
+![Erweiterung des Status "Part Headers", wenn ein Parameter in einer Kopfzeile gefunden wurde](media/MimeReader_StateDiagram_03.gif)
   
 > [!NOTE]
-> Der durch Abbildung 5 dargestellte Status ist rekursiv, da Sie, wenn eine Adressgruppe gefunden wird, mit der [GroupRecipientReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeAddressReader.GroupRecipientReader.aspx) -Eigenschaft die Adressen in der Gruppe lesen können. 
+> Der von Abbildung 5 dargestellte Zustand ist rekursiv. Wenn eine Adressgruppe gefunden wird, können Sie die [GroupRecipientReader-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeAddressReader.GroupRecipientReader.aspx) verwenden, um die Adressen in der Gruppe zu lesen. 
   
-**Abbildung 5. Erweiterung des Kopfzeilenstatus aus Abbildung 3 beim Auftreten einer Adresse oder einer Adressgruppe**
+**Abbildung 5. Erweiterung des Headerstatus ab Abbildung 3, wenn eine Adresse oder Adressgruppe gefunden wird**
 
 ![Erweiterung des Status "Kopfzeilen" für eine Adresse oder Gruppe](media/MimeReader_StateDiagram_04.gif)
   
-Abbildungen 6 und 7 zeigen vereinfachte Zustandsübergangsdiagramme für das [MimeWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeWriter.aspx) -Objekt. 
+Die Abbildungen 6 und 7 zeigen diagramme für den vereinfachten Zustandsübergang für das [MimeWriter-Objekt.](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeWriter.aspx) 
   
 > [!NOTE]
-> In Abbildung 7 wird der in Abbildung 6 gezeigte Kopfzeilenstatus des Teils erweitert. 
+> Abbildung 7 wird auf den Status der Teilkopfzeilen in Abbildung 6 erweitert. 
   
 **Abbildung 6. Vereinfachtes Zustandsübergangsdiagramm für MimeWriter-Objekte**
 
 ![Statusübergang-Diagramm für MimeWriter](media/MimeWriter_TopLevel.gif)
   
-**Abbildung 7. Erweiterung des Status von Teil Kopfzeilen aus Abbildung 6**
+**Abbildung 7. Erweiterung des Zustands "Part Headers" in Abbildung 6**
 
 ![Statusübergang-Diagrammerweiterung für MimeWriter](media/MimeWriter_Diagram_Expansion.gif)
   
 ## <a name="textconverters-namespace"></a>TextConverters-Namespace
 <a name="TextConverters"> </a>
 
-Der TextConverters-Namespace enthält Typen, die die Konvertierung des Inhalts von e-Mail-Nachrichten unterstützen. Diese Typen können Codepagekonvertierung durchführen, HTML entfernen, das nicht sicher ist, und andere Transformationen in e-Mail-Nachrichtentext Körpern ausführen. Der [Microsoft. Exchange. Data. TextConverters](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.aspx) -Namespace umfasst die folgenden Klassen, die von der abstrakten [textconverter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.TextConverter.aspx) -Klasse abgeleitet werden: 
+Der TextConverters-Namespace enthält Typen, die die Konvertierung des Inhalts von E-Mail-Nachrichten unterstützen. Diese Typen können eine Codeseitenkonvertierung ausführen, nicht sichere HTML entfernen und andere Transformationen für E-Mail-Nachrichtentext ausführen. Die [Microsoft.Exchange. Der Data.TextConverters-Namespace](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.aspx) enthält die folgenden Klassen, die von der abstrakten [Klasse "TextConverter"](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.TextConverter.aspx) abgeleitet sind: 
   
 - [EnrichedToHtml](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.EnrichedToHtml.aspx)
     
@@ -166,7 +166,7 @@ Der TextConverters-Namespace enthält Typen, die die Konvertierung des Inhalts v
     
 - [HtmlToHtml](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.HtmlToHtml.aspx)
     
-- [HtmlToRtf](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.HtmlToRtf.aspx)
+- [Htmltortf](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.HtmlToRtf.aspx)
     
 - [HtmlToText](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.HtmlToText.aspx)
     
@@ -186,35 +186,35 @@ Der TextConverters-Namespace enthält Typen, die die Konvertierung des Inhalts v
     
 - [TextToText](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.TextToText.aspx)
     
-Mit diesen Textkonvertern können Sie das Format eines Dokumentdatenstroms ändern oder Elemente entfernen, die aus einem HTML-Dokument nicht sicher sind. Diese Klassen können von selbst verwendet werden, um eine Konvertierung mithilfe eines einzelnen Aufrufs einer der Convert-Methoden in der [textconverter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.TextConverter.aspx) -Basisklasse durchzuführen, oder Sie können an einen Konstruktor des Konverters übergeben werden, der zum Ausführen konvertierter Lese-oder Schreibvorgänge verwendet wird. 
+Mit diesen Textkonvertern können Sie das Format eines Dokumentdatenstroms ändern oder Elemente entfernen, die nicht sicher in einem HTML-Dokument sind. Diese Klassen können selbst verwendet werden, um eine Konvertierung mithilfe eines einzelnen Aufrufs einer der Convert-Methoden in der [TextConverter-Basisklasse](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.TextConverter.aspx) durchzuführen, oder sie können an einen Konstruktor des Konverters übergeben werden, der sie zum Ausführen konvertierter Lese- oder Schreibvorgänge verwendet. 
   
-Die von der Basisklasse geerbte Funktionalität ist für die Durchführung von Konvertierungen hilfreich, wenn Sie über ausreichend Speicherplatz zum Speichern des ursprünglichen Dokuments und seiner konvertierten Ausgabe verfügen oder wenn Sie die Ergebnisse der Konvertierung speichern möchten. Die **Convert** -Methode verwendet Eingabe-und Ausgabedatenströme, Text Leser oder Textschreiber und wandelt den Inhalt der Eingabe in die zugehörige Ausgabe um. 
+Die von der Basisklasse geerbte Funktionalität ist nützlich, um Konvertierungen durchzuführen, wenn Sie über genügend Speicherplatz zum Speichern des Originaldokuments und der konvertierten Ausgabe verfügen oder wenn Sie die Ergebnisse der Konvertierung speichern möchten. Die **Convert-Methode** verwendet Eingabe- und Ausgabedatenströme, Textleser oder Textautoren und konvertiert den Inhalt der Eingabe in die zugeordnete Ausgabe. 
   
-Im Namespace sind auch die folgenden TextReader-, Writer-und Stream-Klassen enthalten:
+Ebenfalls im Namespace enthalten sind die folgenden Textlese-, Writer- und Streamklassen:
   
-- [ConverterReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.ConverterReader.aspx) – abgeleitet von **System. IO. TextReader**. 
+- [ConverterReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.ConverterReader.aspx) - Abgeleitet von **System.IO.TextReader**. 
     
-- [ConverterWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.ConverterWriter.aspx) – abgeleitet von **System. IO. TextWriter**. 
+- [ConverterWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.ConverterWriter.aspx) - Abgeleitet von **System.IO.TextWriter**. 
     
-- [ConverterStream](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.ConverterStream.aspx) – abgeleitet von **System. IO. Stream**. 
+- [ConverterStream](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.ConverterStream.aspx) - Abgeleitet von **System.IO.Stream**. 
     
-Diese werden verwendet, um Konvertierungen durchzuführen, wenn Sie keinen Platz zum Speichern der ursprünglichen oder der konvertierten Ausgabe haben, wenn Sie die Eingabe von erhalten oder die Ausgabe an einen Stream senden oder wenn Sie die Ausgabe nur für Indizierungs-oder Suchzwecke verwenden möchten und das Ergebnis einer Konvertierung daher nicht speichern möchten.
+Diese werden verwendet, um Konvertierungen durchzuführen, wenn Sie keinen Platz zum Speichern der ursprünglichen oder der konvertierten Ausgabe haben, wenn Sie die Eingabe von einem Datenstrom empfangen oder an einen Stream senden oder wenn Sie die Ausgabe nur für Indizierungs- oder Suchzwecke verwenden möchten und daher das Ergebnis einer Konvertierung nicht speichern möchten.
   
-## <a name="tnef-namespace"></a>TNEF-Namespace
+## <a name="tnef-namespace"></a>Tnef-Namespace
 <a name="TNEF"> </a>
 
-Der TNEF-Namespace enthält Klassen und Typen, die das vorwärts-Stream-basierte lesen und Schreiben von TNEF-Daten ermöglichen. TNEF ist ein Datenformat, das zum Kapseln von MAPI-Eigenschaften für Clients verwendet wird, die MAPI nicht interpretieren können.
+Der Tnef-Namespace enthält Klassen und Typen, die das vorwärtsgerichtete streambasierte Lesen und Schreiben von TNEF-Daten ermöglichen. TNEF ist ein Datenformat, das verwendet wird, um MAPI-Eigenschaften für Clients zu kapseln, die MAPI nicht interpretieren können.
   
-Die [TnefReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefReader.aspx) -und [TnefWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefWriter.aspx) -Klassen stellen die Kernfunktionen im [Microsoft. Exchange. Data. ContentTypes. TNEF](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.aspx) -Namespace bereit. 
+Die [Klassen TnefReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefReader.aspx) und [TnefWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefWriter.aspx) stellen die Kernfunktionen in der [Microsoft.Exchange bereit. Data.ContentTypes.Tnef-Namespace.](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.aspx) 
   
-Die [TnefReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefReader.aspx) -Klasse verwendet einen lesbaren Stream als Argument für die Konstruktoren. Anschließend verwenden Sie die [ReadNextAttribute](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefReader.ReadNextAttribute.aspx) -Methode, um die Attribute im TNEF-Datenstrom nacheinander zu lesen. Nachdem Sie ein Attribut gelesen haben, können Sie über eine der schreibgeschützten Eigenschaften des [TnefReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefReader.aspx) -Objekts auf Informationen zum Attribut zugreifen, und es wird ein [TnefPropertyReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefPropertyReader.aspx) -Objekt hinzugefügt, um die aktuelle Eigenschaft zu lesen. Sie können auch direkt auf das aktuelle Attribut mithilfe der [ReadAttributeRawValue](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefReader.ReadAttributeRawValue.aspx) -Methode zugreifen. 
+Die [TnefReader-Klasse](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefReader.aspx) verwendet einen lesbaren Datenstrom als Argument für ihre Konstruktoren. Anschließend verwenden Sie die [ReadNextAttribute-Methode,](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefReader.ReadNextAttribute.aspx) um die Attribute im TNEF-Stream sequenziell zu lesen. Nachdem Sie ein Attribut gelesen haben, können Sie auf Informationen über das Attribut zugreifen, indem Sie eine der schreibgeschützten Eigenschaften für das [TnefReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefReader.aspx) -Objekt verwenden, zusätzlich zum Abrufen eines [TnefPropertyReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefPropertyReader.aspx) zum Lesen der aktuellen Eigenschaft. Mithilfe der [ReadAttributeRawValue-Methode](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefReader.ReadAttributeRawValue.aspx) können Sie auch direkt auf das aktuelle Attribut zugreifen. 
   
-Die [TnefWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefWriter.aspx) -Klasse verwendet einen beschreibbaren [Stream](https://msdn.microsoft.com/library/System.IO.Stream.aspx) als Argument für die Konstruktoren. Die [TnefWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefWriter.aspx) -Klasse bietet mehrere Möglichkeiten zum Schreiben von Daten in diesen Stream. 
+Die [TnefWriter-Klasse](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefWriter.aspx) verwendet einen schreibbaren [Stream](https://msdn.microsoft.com/library/System.IO.Stream.aspx) als Argument für die Konstruktoren. Die [TnefWriter-Klasse](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.Tnef.TnefWriter.aspx) bietet mehrere Möglichkeiten zum Schreiben von Daten in diesen Datenstrom. 
   
 ## <a name="vcard-namespace"></a>vCard-Namespace
 <a name="vCard"> </a>
 
-Der vCard-Namespace enthält Klassen, Strukturen und Aufzählungen, die zum Lesen und Schreiben von Kontaktinformationen in einer e-Mail-Nachricht im vCard-Datenformat verwendet werden. Der Namespace enthält ein Kontakt-Lesegerät und einen Writer, eine Exception-Klasse, einen Eigenschaften Leser, einen Parameter Leser und unterstützende Aufzählungen, mit denen Sie vCard-Daten lesen können, die einer e-Mail-Nachricht zugeordnet sind.
+Der vCard-Namespace enthält Klassen, Strukturen und Enumerationen, die zum Lesen und Schreiben von Kontaktinformationen verwendet werden, die in einer E-Mail-Nachricht im vCard-Datenformat enthalten sind. Der Namespace enthält einen Kontaktleser und Writer, eine Ausnahmeklasse, einen Eigenschaftenleser, einen Parameterleser und unterstützende Enumerationen, mit denen Sie vCard-Daten lesen können, die einer E-Mail-Nachricht zugeordnet sind.
   
 ## <a name="see-also"></a>Siehe auch
 

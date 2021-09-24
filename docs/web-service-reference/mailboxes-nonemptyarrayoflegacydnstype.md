@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8e44bc49-8c99-472c-a507-0b5c25db9322
-description: Das Mailboxes-Element gibt ein Array von Postfächern an, die durch Legacy Distinguished Name identifiziert werden.
-ms.openlocfilehash: 7e84a0d1c9ff53e45f8e844136f61de66f6d0ab4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Mailboxes-Element gibt ein Array von Postfächern an, die durch einen älteren Distinguished Name identifiziert werden.
+ms.openlocfilehash: 1b11798fc7de6f94bff733f73bda9f57864cc503
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465982"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509609"
 ---
 # <a name="mailboxes-nonemptyarrayoflegacydnstype"></a>Postfächer (NonEmptyArrayOfLegacyDNsType)
 
-Das **Mailboxes** -Element gibt ein Array von Postfächern an, die durch Legacy Distinguished Name identifiziert werden. 
+Das **Mailboxes-Element** gibt ein Array von Postfächern an, die durch einen älteren Distinguished Name identifiziert werden. 
   
 ```XML
 <Mailboxes>
@@ -43,7 +43,7 @@ Keine.
 
 [GetNonIndexableItemStatistics](getnonindexableitemstatistics.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -55,7 +55,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

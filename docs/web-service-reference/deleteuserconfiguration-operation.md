@@ -5,32 +5,32 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteUserConfiguration
 api_type:
 - schema
 ms.assetid: 93e44690-be2d-4fdb-96a8-4ded3c193aed
-description: Der DeleteUserConfiguration-Vorgang löscht ein Benutzer Konfigurationsobjekt für einen Ordner.
-ms.openlocfilehash: 064e1ace2c2f51783431ce42670b2a4fd8146b54
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der DeleteUserConfiguration-Vorgang löscht ein Benutzerkonfigurationsobjekt in einem Ordner.
+ms.openlocfilehash: 4332515a91d9207f3ef8f9905edd2b9155042d65
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44451467"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510176"
 ---
 # <a name="deleteuserconfiguration-operation"></a>DeleteUserConfiguration-Vorgang
 
-Der **DeleteUserConfiguration** -Vorgang löscht ein Benutzer Konfigurationsobjekt für einen Ordner. 
+Der **DeleteUserConfiguration-Vorgang** löscht ein Benutzerkonfigurationsobjekt in einem Ordner. 
   
 > [!IMPORTANT]
-> Durch den **DeleteUserConfiguration** -Vorgang wird ein Verschiebe Ereignis für das Ereignis Benachrichtigungssystem ausgelöst. Das Benutzer Konfigurationsobjekt wird in den Papierkorb verschoben. 
+> Der **DeleteUserConfiguration-Vorgang** löst ein Verschiebungsereignis für das Ereignisbenachrichtigungssystem aus. Das Benutzerkonfigurationsobjekt wird in den Dumpster verschoben. 
   
-## <a name="deleteuserconfiguration-request-example"></a>DeleteUserConfiguration-Anforderungs Beispiel
+## <a name="deleteuserconfiguration-request-example"></a>DeleteUserConfiguration-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **DeleteUserConfiguration** -Anforderung wird gezeigt, wie Sie eine Anforderung zum Löschen eines Benutzer Konfigurationsobjekts im Ordner "Entwürfe" bilden. 
+Das folgende Beispiel einer **DeleteUserConfiguration-Anforderung** zeigt, wie Sie eine Anforderung zum Löschen eines Benutzerkonfigurationsobjekts im Ordner "Entwürfe" erstellen. 
   
 ### <a name="code"></a>Code
 
@@ -58,7 +58,7 @@ Im folgenden Beispiel einer **DeleteUserConfiguration** -Anforderung wird gezeig
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **DeleteUserConfiguration** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **DeleteUserConfiguration-Anforderung.** 
   
 ### <a name="code"></a>Code
 

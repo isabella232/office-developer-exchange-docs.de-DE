@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetItem
 api_type:
 - schema
 ms.assetid: a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8
-description: Der GetItem-Vorgang ruft Kalenderelemente aus dem Exchange-Informationsspeicher.
-ms.openlocfilehash: 09fe92af12f03ce4cebd1e98f4e01c087ace64f9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetItem-Vorgang ruft Kalenderelemente aus dem Exchange Speicher ab.
+ms.openlocfilehash: ff118be17e3e084a11dd74a0434db3f6c0e8bd8d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460617"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516965"
 ---
 # <a name="getitem-operation-calendar-item"></a>GetItem-Vorgang (Kalenderelement)
 
-Der GetItem-Vorgang ruft Kalenderelemente aus dem Exchange-Informationsspeicher.
+Der GetItem-Vorgang ruft Kalenderelemente aus dem Exchange Speicher ab.
   
-## <a name="getitem-request-example"></a>GetItem-Anforderungs Beispiel
+## <a name="getitem-request-example"></a>GetItem-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer GetItem-Anforderung wird gezeigt, wie eine Anforderung zum Abrufen der Identität und des Betreffs eines Elements formt.
+Das folgende Beispiel einer GetItem-Anforderung zeigt, wie Sie eine Anforderung zum Abrufen der Identität und des Betreffs eines Elements erstellen.
   
 ### <a name="code"></a>Code
 
@@ -72,16 +72,16 @@ In der Anforderung werden folgende Elemente verwendet:
 > [!NOTE]
 > Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt. 
   
-Um andere Optionen für die Anforderungsnachricht des GetItem-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [GetItem](getitem.md) -Element. 
+Weitere Optionen für die Anforderungsnachricht des GetItem-Vorgangs finden Sie in der Schemahierarchie. Beginnen Sie mit dem [GetItem-Element.](getitem.md) 
   
 ## <a name="successful-getitem-response"></a>Erfolgreiche GetItem-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die GetItem-Anforderung. Die Anforderung, die diese Antwort erstellt hat, hat die IdOnly-baseshape verwendet. In diesem Beispiel gibt die Antwort nur die ID des Elements zurück. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die GetItem-Anforderung. Die Anforderung, die diese Antwort erstellt hat, hat die IdOnly-Basisform verwendet. In diesem Beispiel gibt die Antwort nur die ID des Elements zurück. 
   
 > [!NOTE]
-> Die Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit beizubehalten. 
+> Die Element-ID und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="code"></a>Code
 
@@ -115,10 +115,10 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die GetItem-Anforderun
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die GetItem-Anforderung. Die Anforderung, mit der diese Antwort erstellt wurde, verwendete die standardmäßige baseshape. In diesem Beispiel gibt die Antwort die Standardform für ein Kalenderelement zurück.
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die GetItem-Anforderung. Die Anforderung, die diese Antwort erstellt hat, hat die Standardbasisform verwendet. In diesem Beispiel gibt die Antwort das Standard-Shape für ein Kalenderelement zurück.
   
 > [!NOTE]
-> Die Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit beizubehalten. 
+> Die Element-ID und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="code"></a>Code
 
@@ -166,7 +166,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die GetItem-Anforderun
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die GetItem-Anforderung. Die Anforderung, die diese Antwort erstellt hat, hat die allproperties-baseshape verwendet. In diesem Beispiel gibt die Antwort die allproperties-Form für ein Kalenderelement zurück.
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die GetItem-Anforderung. Die Anforderung, die diese Antwort erstellt hat, hat die AllProperties-Basisform verwendet. In diesem Beispiel gibt die Antwort das AllProperties-Shape für ein Kalenderelement zurück.
   
 ### <a name="code"></a>Code
 
@@ -265,7 +265,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die GetItem-Anforderun
 
 ### <a name="comments"></a>Comments
 
-Um andere Optionen für die Antwortnachricht des GetItem-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [GetItemResponse](getitemresponse.md) -Element. 
+Weitere Optionen für die Antwortnachricht des GetItem-Vorgangs finden Sie in der Schemahierarchie. Beginnen Sie mit dem [GetItemResponse-Element.](getitemresponse.md) 
   
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
@@ -281,7 +281,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
 - [CalendarItem](calendaritem.md)
     
@@ -301,11 +301,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Importance](importance.md)
     
-- [Issubmitted](issubmitted.md)
+- [IsSubmitted](issubmitted.md)
     
 - [IsDraft](isdraft.md)
     
-- [Isfromme](isfromme.md)
+- [IsFromMe](isfromme.md)
     
 - [IsResend](isresend.md)
     
@@ -327,21 +327,21 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [DisplayCc](displaycc.md)
     
-- [Displayto ursprünglicher](displayto.md)
+- [DisplayTo](displayto.md)
     
 - [HasAttachments](hasattachments.md)
     
-- [Kultur](culture.md)
+- [Culture](culture.md)
     
 - [Start](start.md)
     
-- [End](end-ex15websvcsotherref.md)
+- [Ende ](end-ex15websvcsotherref.md)
     
 - [IsAllDayEvent](isalldayevent.md)
     
 - [LegacyFreeBusyStatus](legacyfreebusystatus.md)
     
-- [Ismeeting](ismeeting.md)
+- [IsMeeting](ismeeting.md)
     
 - [IsCancelled](iscancelled.md)
     
@@ -351,7 +351,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [CalendarItemType](calendaritemtype.md)
     
-- [Myresponsetype](myresponsetype.md)
+- [MyResponseType](myresponsetype.md)
     
 - [Organisator](organizer.md)
     
@@ -361,7 +361,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
-- [Routingtype (e-mailemailtype)](routingtype-emailaddresstype.md)
+- [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
     
 - [ConflictingMeetingCount](conflictingmeetingcount.md)
     
@@ -369,11 +369,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ConflictingMeetings](conflictingmeetings.md)
     
-- [Standort](location.md)
+- [Ort](location.md)
     
 - [Dauer (Elemente)](duration-items.md)
     
-- [Zeitzone (Element)](timezone-item.md)
+- [TimeZone (Element)](timezone-item.md)
     
 - [AppointmentSequenceNumber](appointmentsequencenumber.md)
     

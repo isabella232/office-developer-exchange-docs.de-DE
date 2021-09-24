@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 425272b2-7a4e-4376-aea9-d9b10c1ad6ee
 description: Das GlobalHasIrm-Element gibt an, ob mindestens eine Nachricht in der Unterhaltung und in allen Ordnern eine IRM-geschützte Nachricht ist.
-ms.openlocfilehash: 10b99c9a6421a89a549b69e918087f3e542ffa09
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: bd3414136a115b016c291fa0482682efcc7d9e1a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459469"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516832"
 ---
 # <a name="globalhasirm"></a>GlobalHasIrm
 
-Das **GlobalHasIrm** -Element gibt an, ob mindestens eine Nachricht in der Unterhaltung und in allen Ordnern eine IRM-geschützte Nachricht ist. 
+Das **GlobalHasIrm-Element** gibt an, ob mindestens eine Nachricht in der Unterhaltung und in allen Ordnern eine IRM-geschützte Nachricht ist. 
   
 ```XML
 <GlobalHasIrm> true | false </GlobalHasIrm>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **GlobalHasIrm** -Elements ist **true** , wenn mindestens eine Nachricht in der Unterhaltung und in allen Ordnern eine IRM-geschützte Nachricht ist. Andernfalls ist der Wert **false**.
+Der Textwert des **GlobalHasIrm-Elements** ist **"true",** wenn mindestens eine Nachricht in der Unterhaltung und in allen Ordnern eine IRM-geschützte Nachricht ist. Andernfalls ist der Wert **false**.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

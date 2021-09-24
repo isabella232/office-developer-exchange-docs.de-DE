@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CopiedEvent
 api_type:
 - schema
 ms.assetid: 82f2fcac-deaa-4ff8-801f-4fe28d8a19f5
-description: Das CopiedEvent-Element stellt ein Ereignis dar, in dem ein Element oder ein Ordner kopiert wird.
-ms.openlocfilehash: 928910ddbe0bf1e48549d1665ab373f7382366d1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das CopiedEvent-Element stellt ein Ereignis dar, in das ein Element oder Ordner kopiert wird.
+ms.openlocfilehash: bc4902eb1e62344a7d5980ec573ac13b1bb084ee
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529245"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536593"
 ---
 # <a name="copiedevent"></a>CopiedEvent
 
-Das **CopiedEvent** -Element stellt ein Ereignis dar, in dem ein Element oder ein Ordner kopiert wird. 
+Das **CopiedEvent-Element** stellt ein Ereignis dar, in das ein Element oder Ordner kopiert wird. 
   
 ```xml
 <CopiedEvent>
@@ -40,7 +40,7 @@ Das **CopiedEvent** -Element stellt ein Ereignis dar, in dem ein Element oder ei
    <TimeStamp/>
    <ItemId/>
    <ParentFolderId/>
-   <OldFolderId/>
+   <OldItemId/>
    <OldParentFolderId/>
 </CopiedEvent>
 ```
@@ -59,12 +59,12 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Watermark](watermark.md) <br/> |Stellt ein Lesezeichen für Ereignisse in der Tabelle Post Fach Ereignisse dar.  <br/> |
-|[Timestamp](timestamp.md) <br/> |Stellt den Zeitstempel eines Post Fach Ereignisses zum Kopieren von Elementen/Ordnern dar.  <br/> |
+|[Watermark](watermark.md) <br/> |Stellt eine Ereignislesemarke in der Postfachereignistabelle dar.  <br/> |
+|[TimeStamp](timestamp.md) <br/> |Stellt den Zeitstempel eines Kopierelement-/Ordnerpostfachereignisses dar.  <br/> |
 |[FolderId](folderid.md) <br/> |Stellt den Bezeichner des Ordners dar.  <br/> |
 |[ItemId](itemid.md) <br/> |Stellt den Bezeichner des Elements dar.  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des Ordners dar, der die Kopie enthält.  <br/> |
-|[OldFolderId](oldfolderid.md) <br/> |Stellt die Ordner-ID des ursprünglichen Ordners vor dem Kopieren dar.  <br/> |
+|[OldFolderId](oldfolderid.md) <br/> |Stellt den Ordnerbezeichner des ursprünglichen Ordners dar, bevor er kopiert wurde.  <br/> |
 |[OldItemId](olditemid.md) <br/> |Enthält den eindeutigen Bezeichner des ursprünglichen Elements, bevor es kopiert wurde.  <br/> |
 |[OldParentFolderId](oldparentfolderid.md) <br/> |Enthält den Bezeichner des ursprünglichen übergeordneten Ordners eines Elements oder Ordners, das kopiert wurde.  <br/> |
    
@@ -74,7 +74,7 @@ Keine.
 |:-----|:-----|
 |[Benachrichtigung](notification-ex15websvcsotherref.md) <br/> |Enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FilterHtmlContent
 api_type:
 - schema
 ms.assetid: 2f9358a0-de1d-4544-9aa0-d9f6519f3b5f
-description: Das FilterHtmlContent-Element gibt an, ob potenziell unsicherer HTML-Inhalt von einem Element oder einer Anlage gefiltert wird.
-ms.openlocfilehash: 28e3be86b550c3f330fbb6846b64732b5674304d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das FilterHtmlContent-Element gibt an, ob potenziell unsicherer HTML-Inhalt aus einem Element oder einer Anlage gefiltert wird.
+ms.openlocfilehash: 9400c86465db994251a00164517590268e7e4ad1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462675"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510085"
 ---
 # <a name="filterhtmlcontent"></a>FilterHtmlContent
 
-Das **FilterHtmlContent** -Element gibt an, ob potenziell unsicherer HTML-Inhalt von einem Element oder einer Anlage gefiltert wird. 
+Das **FilterHtmlContent-Element** gibt an, ob potenziell unsicherer HTML-Inhalt aus einem Element oder einer Anlage gefiltert wird. 
   
 ```xml
 <FilterHtmlContent>true or false</FilterHtmlContent>
@@ -44,18 +44,18 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AttachmentShape](attachmentshape.md) <br/> | Identifiziert zusätzliche Eigenschaften, die in einer Antwort auf eine [GetAttachment](getattachment.md) -Anforderung zurückgegeben werden sollen.  <br/><br/>  Für dieses Element wird folgender XPath-Ausdruck verwendet:  <br/> <br/>  `/GetAttachment/AttachmentShape` <br/> |
-|[ItemShape](itemshape.md) <br/> | Identifiziert die Elementeigenschaften und Inhalte, die in einer GetItem-, FindItem-oder SyncFolderItems-Antwort enthalten sein sollen.  <br/> <br/> Folgende XPath-Ausdrücke werden für dieses Element verwendet: <br/> <br/>  `/GetItem/ItemShape`<br/> <br/>  `/FindItem/ItemShape`<br/> <br/>  `/SyncFolderItems/ItemShape` <br/> |
+|[AttachmentShape](attachmentshape.md) <br/> | Identifiziert zusätzliche Eigenschaften, die in einer Antwort auf eine [GetAttachment-Anforderung](getattachment.md) zurückgegeben werden sollen.  <br/><br/>  Für dieses Element wird folgender XPath-Ausdruck verwendet:  <br/> <br/>  `/GetAttachment/AttachmentShape` <br/> |
+|[ItemShape](itemshape.md) <br/> | Identifiziert die Elementeigenschaften und -inhalte, die in eine GetItem-, FindItem- oder SyncFolderItems-Antwort eingeschlossen werden sollen.  <br/> <br/> Folgende XPath-Ausdrücke werden für dieses Element verwendet: <br/> <br/>  `/GetItem/ItemShape`<br/> <br/>  `/FindItem/ItemShape`<br/> <br/>  `/SyncFolderItems/ItemShape` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Dieses Element kann entweder **true** oder **false**sein. Der Standardwert ist **false**. Dies ist ein boolescher Datentyp.
+Dieses Element kann entweder **"true"** oder **"false" sein.** Der Standardwert ist **false**. Dies ist ein boolescher Datentyp.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element ist optional.
   
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server mit installierter Client Zugriffs-Server Rolle ausführt.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server mit installierter Clientzugriffsserverrolle ausgeführt wird.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

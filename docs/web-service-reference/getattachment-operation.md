@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetAttachment
 api_type:
 - schema
 ms.assetid: 24d10a15-b942-415e-9024-a6375708f326
-description: Der GetAttachment-Vorgang wird verwendet, um vorhandene Anlagen für Elemente im Exchange-Informationsspeicher abzurufen.
-ms.openlocfilehash: ac7eafd61c62b077a8d20e5fd8d004924bf06cf1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetAttachment-Vorgang wird verwendet, um vorhandene Anlagen für Elemente im Exchange Speicher abzurufen.
+ms.openlocfilehash: 44a9e1988deb513039f7700e11c645c366641519
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461289"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509937"
 ---
 # <a name="getattachment-operation"></a>GetAttachment-Vorgang
 
-Der GetAttachment-Vorgang wird verwendet, um vorhandene Anlagen für Elemente im Exchange-Informationsspeicher abzurufen.
+Der GetAttachment-Vorgang wird verwendet, um vorhandene Anlagen für Elemente im Exchange Speicher abzurufen.
   
-## <a name="getattachment-request-example"></a>GetAttachment-Anforderungs Beispiel
+## <a name="getattachment-request-example"></a>GetAttachment-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel der GetAttachment-Anforderung zeigt, wie eine Anlage abgerufen wird.
+Im folgenden Beispiel der GetAttachment-Anforderung wird gezeigt, wie eine Anlage abgerufen wird.
   
 ### <a name="code"></a>Code
 
@@ -51,12 +51,12 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
 
 ### <a name="comments"></a>Comments
 
-Mit dem [AttachmentShape](attachmentshape.md) -Element können Sie angeben, welche Anlageninformationen zurückgegeben werden sollen. Ein leeres [AttachmentShape](attachmentshape.md) -Element ist gültig und rendert Ihre Anlagen ohne MIME-Inhalt für Element Anlagen, mit Textkörpertyp und ohne zusätzliche Eigenschaften. 
+Mit dem [AttachmentShape-Element](attachmentshape.md) können Sie angeben, welche Anlageninformationen zurückgegeben werden sollen. Ein leeres [AttachmentShape-Element](attachmentshape.md) ist gültig und rendert Ihre Anlagen ohne MIME-Inhalt für Elementanlagen, mit einem Textkörpertyp und ohne zusätzliche Eigenschaften. 
   
-Die [AttachmentIds](attachmentids.md) -Auflistung ermöglicht es Ihnen, einen oder mehrere Anlagen Bezeichner anzugeben, die zurückgegeben werden sollen. Beachten Sie, dass diese vom Typ RequestAttachmentIdType sind, sodass bei allen AttachmentIds, die Sie von **CreateAttachment** erhalten, die Attribute **RootItemId** und **RootItemChangeKey** entfernt werden müssen, bevor Sie an **GetAttachment**übergeben werden.
+Mit [der AttachmentIds-Auflistung](attachmentids.md) können Sie einen oder mehrere Anlagenbezeichner angeben, die zurückgegeben werden sollen. Beachten Sie, dass diese vom Typ RequestAttachmentIdType sind, sodass alle AttachmentIds, die Sie von **CreateAttachment** erhalten, die **Attribute RootItemId** und **RootItemChangeKey** entfernen müssen, bevor sie an **GetAttachment** übergeben werden.
   
 > [!NOTE]
-> Die Anlagen-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Der Anlagenbezeichner und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -68,7 +68,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [AttachmentIds](attachmentids.md)
     
-- [Attachment-Nr (GetAttachment und DeleteAttachment-)](attachmentid-getattachment-and-deleteattachment.md)
+- [AttachmentId (GetAttachment und DeleteAttachment)](attachmentid-getattachment-and-deleteattachment.md)
     
 ## <a name="getattachment-response-example"></a>GetAttachment-Antwortbeispiel
 
@@ -110,7 +110,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine GetAttachment-Anf
 
 ### <a name="comments"></a>Comments
 
-Die Antwortnachrichten für GetAttachment enthalten immer die vollständige Anlage; Dies bedeutet, dass alle Eigenschaften immer eingeschlossen werden. Für Dateianlagen sind diese Eigenschaften [Name (AttachmentType)](name-attachmenttype.md), [ContentType](contenttype.md), [Inhalts](contentid.md)- [ContentLocation](contentlocation.md)und [Inhalt](content.md). Für Element Anlagen sind diese Eigenschaften [Name (AttachmentType)](name-attachmenttype.md), [ContentType](contenttype.md), [Inhalts](contentid.md)- [ContentLocation](contentlocation.md) und alle Eigenschaften des Elements, als ob die **allproperties** -Form in einem GetItem-Aufruf verwendet wurde. Das [AttachmentShape](attachmentshape.md) -Element, falls vorhanden, ermöglicht einer Consumer-Anwendung, zusätzliche erweiterte Eigenschaften für Element Anlagen anzufordern. 
+Die Antwortnachrichten für GetAttachment enthalten immer die vollständige Anlage. d. h., alle Eigenschaften werden immer eingeschlossen. Bei Dateianlagen sind diese Eigenschaften [Name (AttachmentType),](name-attachmenttype.md) [ContentType](contenttype.md), [ContentId](contentid.md), [ContentLocation](contentlocation.md)und [Content](content.md). Bei Elementanlagen sind diese Eigenschaften [Name (AttachmentType),](name-attachmenttype.md) [ContentType](contenttype.md), [ContentId](contentid.md), [ContentLocation](contentlocation.md) und alle Eigenschaften des Elements, als ob das **AllProperties-Shape** in einem GetItem-Aufruf verwendet worden wäre. Wenn das [AttachmentShape-Element](attachmentshape.md) vorhanden ist, kann eine Consumeranwendung zusätzliche erweiterte Eigenschaften für Elementanlagen anfordern. 
   
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
@@ -126,15 +126,15 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Anlagen](attachments-ex15websvcsotherref.md)
+- [Anhänge](attachments-ex15websvcsotherref.md)
     
 - [FileAttachment](fileattachment.md)
     
-- [Attachment-Nr (GetAttachment und DeleteAttachment-)](attachmentid-getattachment-and-deleteattachment.md)
+- [AttachmentId (GetAttachment und DeleteAttachment)](attachmentid-getattachment-and-deleteattachment.md)
     
 - [Name (AttachmentType)](name-attachmenttype.md)
     
-- [Content](content.md)
+- [Inhalt](content.md)
     
 ## <a name="see-also"></a>Siehe auch
 

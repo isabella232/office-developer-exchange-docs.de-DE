@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CcRecipients
 api_type:
 - schema
 ms.assetid: 5c20ec3a-0bee-4e67-b220-586ed0d601c9
 description: Das Element CcRecipients stellt eine Sammlung von Empfängern, die eine Kopie der Nachricht erhalten.
-ms.openlocfilehash: 57d0e2d3b2c44fbd7bb30696002b27e83d1e274e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 428bf8a20a197152f765b369a3e13a0dd4826324
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462206"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537008"
 ---
 # <a name="ccrecipients"></a>CcRecipients
 
@@ -62,9 +62,9 @@ Keine.
 |[ForwardItem](forwarditem.md) <br/> |Enthält ein Exchange-Speicher-Element an Empfänger weitergeleitet.  <br/> |
 |[CancelCalendarItem](cancelcalendaritem.md) <br/> |Stellt das Antwortobjekt, das Sie eine Besprechung absagen verwendet wird.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Sie können nicht **CcRecipients** mithilfe einer Anforderung FindItem abrufen. Verwenden Sie eine Anforderung GetItem **CcRecipients**abgerufen.
+Sie können nicht **CcRecipients** mithilfe einer Anforderung FindItem abrufen. Verwenden Sie eine Anforderung GetItem **CcRecipients** abgerufen.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -5,45 +5,45 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 51186691-46d2-4d5c-b8bc-4ee2bb20fbe7
-description: Hier finden Sie Informationen zum GetImItems-EWS-Vorgang.
-ms.openlocfilehash: 960f4683dd478b0e5f8cf18fa8d1593b7433a249
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum GetImItems EWS-Vorgang.
+ms.openlocfilehash: fb9368d825880f5763ade8893585639e9b267540
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456045"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509854"
 ---
 # <a name="getimitems-operation"></a>GetImItems-Vorgang
 
-Hier finden Sie Informationen zum **GetImItems** -EWS-Vorgang. 
+Hier finden Sie Informationen zum **GetImItems** EWS-Vorgang. 
   
-Der **GetImItems** -Vorgang ruft Informationen zu Chatgruppen und Chat Kontaktpersonen ab. 
+Der **GetImItems-Vorgang** ruft Informationen zu Chatgruppen und Chatkontaktpersonas ab. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-getimitems-operation"></a>Verwenden des GetImItems-Vorgangs
 
-Der **GetImItems** -Vorgang nimmt Gruppen-und Kontaktelement-IDs an und gibt eine Reihe von Informationen zu den Gruppen und Kontakten zurück. Die in der Antwort zurückgegebenen Eigenschaftensätze werden durch erweiterte Eigenschaften, mehrere Kontakt Bezeichner, Gruppenbezeichner und erweiterte Eigenschaftendefinitionen als Argumente identifiziert. 
+Der **GetImItems-Vorgang** akzeptiert Gruppen- und Kontaktelementbezeichner und gibt eine Reihe von Informationen zu den Gruppen und Kontakten zurück. Die in der Antwort zurückgegebenen Eigenschaftensätze werden durch erweiterte Eigenschaften, mehrere Kontaktbezeichner, Gruppenbezeichner und erweiterte Eigenschaftsdefinitionen als Argumente identifiziert. 
   
 ### <a name="getimitems-operation-soap-headers"></a>SOAP-Header des GetImItems-Vorgangs
 
-Der **GetImItems** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **GetImItems-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden sollen. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dieser Header gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur, wie in RFC 3066 definiert, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden soll. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="getimitems-operation-request-example-get-detailed-information-about-im-contacts-and-groups"></a>GetImItems-Vorgangs Anforderungs Beispiel: Abrufen detaillierter Informationen zu Chat Kontakten und Gruppen
+## <a name="getimitems-operation-request-example-get-detailed-information-about-im-contacts-and-groups"></a>GetImItems-Vorgangsanforderungsbeispiel: Abrufen detaillierter Informationen zu Chatkontakten und -gruppen
 
-Im folgenden Beispiel einer **GetImItems** -Vorgangsanforderung wird gezeigt, wie detaillierte Informationen zu Chat Kontakten und Gruppen angefordert werden. Ein **GetImItems** -Vorgang kann einen oder mehrere Kontakt-oder Gruppendetails anfordern. Sie können auch erweiterte Eigenschaften verwenden, um benutzerdefinierte Eigenschaften für Gruppen und Kontakte abzurufen. Wenn eine angeforderte erweiterte Eigenschaft für ein Element nicht vorhanden ist, wird die angeforderte Eigenschaft von der Antwort ignoriert, und die Antwort für den standardmäßigen Eigenschaftensatz wird zurückgegeben. In diesem Beispiel wird gezeigt, wie der Anzeigename mithilfe erweiterter Eigenschaften abgerufen wird. 
+Das folgende Beispiel einer **GetImItems-Vorgangsanforderung** zeigt, wie Detaillierte Informationen zu Chatkontakten und -gruppen angefordert werden. Ein **GetImItems-Vorgang** kann einen oder mehrere Kontakt- oder Gruppendetails anfordern. Sie können auch erweiterte Eigenschaften verwenden, um benutzerdefinierte Eigenschaften für Gruppen und Kontakte abzurufen. Wenn für ein Element keine angeforderte erweiterte Eigenschaft vorhanden ist, ignoriert die Antwort die angeforderte Eigenschaft und gibt die Antwort für den Standardeigenschaftensatz zurück. In diesem Beispiel wird gezeigt, wie Sie den Anzeigenamen mithilfe erweiterter Eigenschaften abrufen. 
   
 > [!NOTE]
-> Alle Element-IDs und Änderungsschlüssel in diesem Artikel wurden verkürzt, um die Lesbarkeit zu erhalten. Beachten Sie, dass Änderungsschlüssel vom Dienst für diesen Vorgang ignoriert werden. 
+> Alle Elementbezeichner und Änderungsschlüssel in diesem Artikel wurden gekürzt, um die Lesbarkeit zu gewährleisten. Beachten Sie, dass Änderungsschlüssel vom Dienst für diesen Vorgang ignoriert werden. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -70,11 +70,11 @@ Im folgenden Beispiel einer **GetImItems** -Vorgangsanforderung wird gezeigt, wi
 </soap:Envelope>
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [GetImItems](getimitems.md)
     
-- [Die](contactids.md)
+- [ContactIds](contactids.md)
     
 - [ItemId](itemid.md)
     
@@ -82,11 +82,11 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [ExtendedProperties (NonEmptyArrayOfExtendedFieldURIs)](extendedproperties-nonemptyarrayofextendedfielduris.md)
     
-- [Extended (pathtoextendedfieldtype Schematyp)](extendedproperty-pathtoextendedfieldtype.md)
+- [ExtendedProperty (PathToExtendedFieldType)](extendedproperty-pathtoextendedfieldtype.md)
     
-## <a name="successful-getimitems-operation-response"></a>Erfolgreiche Reaktion des GetImItems-Vorgangs
+## <a name="successful-getimitems-operation-response"></a>Erfolgreiche GetImItems-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetImItems** -Anforderung zum Abrufen eines Chat Kontakts und einer Gruppe. Der Anzeigename wird in einer erweiterten Eigenschaft angefordert. Chat-Kontakte werden in Form einer Persona zurückgegeben. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetImItems-Anforderung** zum Abrufen eines Chatkontakts und einer Gruppe. Der Anzeigename wird in einer erweiterten Eigenschaft angefordert. Chatkontakte werden in Form einer Persona zurückgegeben. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -189,17 +189,17 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetImItems** -A
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [GetImItemsResponse](getimitemsresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-- [Imitemlist](imitemlist.md)
+- [ImItemList](imitemlist.md)
     
 - [Gruppen (ArrayOfImGroupType)](groups-arrayofimgrouptype.md)
     
-- [Imgroup](imgroup.md)
+- [ImGroup](imgroup.md)
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
@@ -213,13 +213,13 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [ExtendedProperties (NonEmptyArrayOfExtendedFieldURIs)](extendedproperties-nonemptyarrayofextendedfielduris.md)
     
-- [Extended (pathtoextendedfieldtype Schematyp)](extendedproperty-pathtoextendedfieldtype.md)
+- [ExtendedProperty (PathToExtendedFieldType)](extendedproperty-pathtoextendedfieldtype.md)
     
 - [Personas](personas-ex15websvcsotherref.md)
     
 - [PersonaId](personaid.md)
     
-- [Personatype](personatype.md)
+- [PersonaType](personatype.md)
     
 - [CreationTime](creationtime.md)
     
@@ -231,11 +231,11 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [FileAsId](fileasid.md) FileAsId 
     
-- [IMAddress (Zeichenfolge)](imaddress-string.md)
+- [ImAddress (Zeichenfolge)](imaddress-string.md)
     
 - [RelevanceScore](relevancescore.md)
     
-- [Zuordnungen (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
+- [Attributions (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
     
 - [Attribution (PersonaAttributionType)](attribution-personaattributiontype.md)
     
@@ -243,7 +243,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [SourceId](sourceid.md)
     
-- [Isschreibbar](iswritable.md)
+- [IsWritable](iswritable.md)
     
 - [IsQuickContact](isquickcontact.md)
     
@@ -253,13 +253,13 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [FileAsIds](fileasids.md)
     
-- [Imaddresses](imaddresses.md)
+- [ImAddresses](imaddresses.md)
     
-- [Wert (extendedpropertytype Schematyp)](value-extendedpropertytype.md)
+- [Wert (ExtendedPropertyType)](value-extendedpropertytype.md)
     
-## <a name="getimitems-operation-error-response"></a>Fehlerantwort des GetImItems-Vorgangs
+## <a name="getimitems-operation-error-response"></a>GetImItems-Vorgang – Fehlerantwort
 
-Der **GetImItems** -Vorgang überprüft keine Bezeichner und gibt nicht die erwartete **ErrorInvalidImContactId** -oder **ErrorInvalidImGroupId** -Fehlerantwort zurück, wenn dem Dienst ein ungültiger Kontakt oder Gruppenbezeichner zur Verfügung gestellt wird. 
+Der **GetImItems-Vorgang** überprüft keine Bezeichner und gibt nicht die erwartete **ErrorInvalidImContactId-** oder **ErrorInvalidImGroupId-Fehlerantwort** zurück, wenn dem Dienst ein ungültiger Kontakt- oder Gruppenbezeichner bereitgestellt wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

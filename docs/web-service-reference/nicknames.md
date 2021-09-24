@@ -1,23 +1,23 @@
 ---
-title: Nicknames
+title: Spitznamen
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bbafce39-7fc6-4099-bc27-b40c0ad44c77
-description: Das Nicknames-Element gibt ein Array von Nickname-Werten und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an.
-ms.openlocfilehash: c6b7de5e1c93797603a2950b4a9527c5d370f93d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Nicknames-Element gibt ein Array von Spitznamenwerten und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an.
+ms.openlocfilehash: 38ae06233a6b6f9eb07881faec1e530f5c0cb559
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457774"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537624"
 ---
-# <a name="nicknames"></a>Nicknames
+# <a name="nicknames"></a>Spitznamen
 
-Das **Nicknames** -Element gibt ein Array von Nickname-Werten und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an. 
+Das **Nicknames-Element** gibt ein Array von Spitznamenwerten und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an. 
   
 ```XML
 <Nicknames>
@@ -43,7 +43,7 @@ Keine.
 
 [Persona](persona.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

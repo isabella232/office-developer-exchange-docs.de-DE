@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 1555fd2e-05b6-4b94-907b-dae9174049d9
-description: Das NetworkRequirements-Element enthält die Kriterien, die verwendet werden, um zu bestimmen, ob sich der Clientcomputer in einem Netzwerk befindet, das die Anforderungen des Internetdienstanbieters erfüllt, um eine Verbindung mit dem Server herzustellen.
-ms.openlocfilehash: d588f7eb12a445fba9c997c4b9db0a6842105b4e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das NetworkRequirements-Element enthält die Kriterien, die verwendet werden, um zu bestimmen, ob sich der Clientcomputer in einem Netzwerk befindet, das die Anforderungen des Internetdienstanbieters (ISP) für die Verbindung mit dem Server erfüllt.
+ms.openlocfilehash: 07a258ad48b74c614ce367db0f893ed884cf3f75
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462724"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509514"
 ---
 # <a name="networkrequirements-pox"></a>NetworkRequirements (POX)
 
-Das **NetworkRequirements** -Element enthält die Kriterien, die verwendet werden, um zu bestimmen, ob sich der Clientcomputer in einem Netzwerk befindet, das die Anforderungen des Internetdienstanbieters erfüllt, um eine Verbindung mit dem Server herzustellen. 
+Das **NetworkRequirements-Element** enthält die Kriterien, die verwendet werden, um zu bestimmen, ob sich der Clientcomputer in einem Netzwerk befindet, das die Anforderungen des Internetdienstanbieters (ISP) für die Verbindung mit dem Server erfüllt. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -51,22 +51,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[IPv4Start (POX)](ipv4start-pox.md) <br/> |Gibt den Anfang eines Bereichs von IPv4-Adressen (IP Version 4) an, die zum Identifizieren eines Computers in einem Netzwerk verwendet werden.  <br/> |
-|[IPv4End (POX)](ipv4end-pox.md) <br/> |Identifiziert das Ende eines Bereichs von IPv4-Adressen (IP Version 4), die zum Identifizieren eines Computers im Netzwerk verwendet werden.  <br/> |
+|[IPv4Start (POX)](ipv4start-pox.md) <br/> |Gibt den Anfang eines Bereichs von IP-Adressen der Version 4 (IPv4) an, die zum Identifizieren eines Computers in einem Netzwerk verwendet werden.  <br/> |
+|[IPv4End (POX)](ipv4end-pox.md) <br/> |Identifiziert das Ende eines Bereichs von IP-Adressen der Version 4 (IPv4), die zum Identifizieren eines Computers im Netzwerk verwendet werden.  <br/> |
 |[IPv6Start (POX)](ipv6start-pox.md) <br/> |Gibt den Anfang eines Bereichs von IPv6-Adressen (IP Version 6) an, die zum Identifizieren eines Computers in einem Netzwerk verwendet werden.  <br/> |
-|[IPv6End (POX)](ipv6end-pox.md) <br/> |Identifiziert das Ende eines Bereichs von IPv6-Adressen (IP Version 6), die verwendet werden, um einen Computer in einem Netzwerk zu identifizieren.  <br/> |
+|[IPv6End (POX)](ipv6end-pox.md) <br/> |Identifiziert das Ende eines Bereichs von IP-Adressen der Version 6 (IPv6), die zum Identifizieren eines Computers in einem Netzwerk verwendet werden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen zum Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn der e-Mail-Client nicht den Netzwerkanforderungen entspricht, sollte er andere Protokolltypen ausprobieren. ISPs können eine Gruppe von Servern mit [Protokoll-Tags (POX)](protocol-pox.md) bereitstellen, die keine Authentifizierung erfordern, aber sich im ISP-Netzwerk befinden müssen. ISPs können eine andere Gruppe von Servern auflisten, die eine Authentifizierung erfordern, sich jedoch nicht in einem bestimmten Netzwerk befinden müssen. 
+Wenn der E-Mail-Client nicht den Netzwerkanforderungen entspricht, sollte er andere Protokolltypen testen. ISPs stellen möglicherweise eine Gruppe von Servern mit [POX-Tags (Protocol)](protocol-pox.md) bereit, die keine Authentifizierung erfordern, sich jedoch im ISP-Netzwerk befinden müssen. ISPs können eine andere Gruppe von Servern auflisten, die eine Authentifizierung erfordern, sich jedoch nicht in einem bestimmten Netzwerk befinden müssen. 
   
-Das **NetworkRequirements** -Element ist optional. 
+Das **NetworkRequirements-Element** ist optional. 
   
 ## <a name="see-also"></a>Siehe auch
 

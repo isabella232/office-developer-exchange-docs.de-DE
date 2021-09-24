@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: be838fc2-cfcb-4856-b095-a8e5366bb6c6
-description: Das Value-Element gibt Informationen an, die einer Postadresse zugeordnet sind.
-ms.openlocfilehash: 2d644ff45fe89061ccd90279773f3a5a5b7fe7cc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Value-Element gibt Informationen an, die einer Postanschrift zugeordnet sind.
+ms.openlocfilehash: 2f017cfc513b9c22d65f8437565646506f3be1ab
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466472"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517343"
 ---
 # <a name="value-personapostaladdresstype"></a>Wert (PersonaPostalAddressType)
 
-Das **value** -Element gibt Informationen an, die einer Postadresse zugeordnet sind. 
+Das **Value-Element** gibt Informationen an, die einer Postanschrift zugeordnet sind. 
   
 ```XML
 <Value>
@@ -51,13 +51,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[Straße](street.md)  |  [Stadt](city.md)  |  [Status](state-ex15websvcsotherref.md)  |  [Land](country.md)  |  [PostalCode](postalcode.md)  |  [PostOfficeBox](postofficebox.md)  |  [Typ (Zeichenfolge)](type-string.md)  |  [Latitude](latitude.md)  |  [Länge](longitude.md)  |  [Genauigkeit](accuracy.md)  |  [Höhe](altitude.md)  |  [AltitudeAccuracy](altitudeaccuracy.md)  |  [FormattedAddress](formattedaddress.md)  |  [LocationUri](locationuri.md)  |  [LocationSource](locationsource.md)
+[Straße](street.md)  |  [Ort](city.md)  |  [Status](state-ex15websvcsotherref.md)  |  [Land](country.md)  |  [Postleitzahl](postalcode.md)  |  [PostOfficeBox](postofficebox.md)  |  [Typ (Zeichenfolge)](type-string.md)  |  [Breitengrad](latitude.md)  |  [Längengrad](longitude.md)  |  [Genauigkeit](accuracy.md)  |  [Höhe](altitude.md)  |  [AltitudeAccuracy](altitudeaccuracy.md)  |  [FormattedAddress](formattedaddress.md)  |  [LocationUri](locationuri.md)  |  [LocationSource](locationsource.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [PostalAddressAttributedValue](postaladdressattributedvalue.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

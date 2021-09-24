@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: b2b409b1-ea3d-41f4-be0b-ff4c780fc23e
-description: Das GetFederationInformationResponseMessage-Element definiert eine Antwort auf eine GetFederationInformation-Vorgang (SOAP)-Anforderung.
-ms.openlocfilehash: c3ec4517515e21dcf45cdee5c27c0f17894f8d0b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GetFederationInformationResponseMessage-Element definiert eine Antwort auf eine SOAP-Anforderung (GetFederationInformation-Vorgang).
+ms.openlocfilehash: 34c0efb091311d3aaed0b92d67ac9508f8259664
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460036"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523167"
 ---
 # <a name="getfederationinformationresponsemessage-soap"></a>GetFederationInformationResponseMessage (SOAP)
 
-Das **GetFederationInformationResponseMessage** -Element definiert eine Antwort auf eine [GetFederationInformation-Vorgang (SOAP)-](getfederationinformation-operation-soap.md) Anforderung. 
+Das **GetFederationInformationResponseMessage-Element** definiert eine Antwort auf eine [SOAP-Anforderung (GetFederationInformation-Vorgang).](getfederationinformation-operation-soap.md) 
   
 ```XML
 <GetFederationInformationResponseMessage>
@@ -39,19 +39,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Antwort (GetFederationInformation) (SOAP)](response-getfederationinformationsoap.md) <br/> |Enthält die Antwortinformationen für den [GetFederationInformation-Vorgang (SOAP)](getfederationinformation-operation-soap.md) .  <br/> |
+|[Antwort (GetFederationInformation) (SOAP)](response-getfederationinformationsoap.md) <br/> |Enthält die [SOAP-Antwortinformationen (GetFederationInformation-Vorgang).](getfederationinformation-operation-soap.md)  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

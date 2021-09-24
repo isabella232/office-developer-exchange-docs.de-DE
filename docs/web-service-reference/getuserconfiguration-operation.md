@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUserConfiguration
 api_type:
 - schema
 ms.assetid: 71d50e3c-92bd-435f-8118-b28bb85f8138
-description: Der GetUserConfiguration-Vorgang ruft ein Benutzer Konfigurationsobjekt aus einem Ordner ab.
-ms.openlocfilehash: fb28e88d1a47b0ea8f63ed33b1efacae8538e1c8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetUserConfiguration-Vorgang ruft ein Benutzerkonfigurationsobjekt aus einem Ordner ab.
+ms.openlocfilehash: be6c662cf49a7c2441f94084dd909e86fe703e20
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458208"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516846"
 ---
 # <a name="getuserconfiguration-operation"></a>GetUserConfiguration-Vorgang
 
-Der **GetUserConfiguration** -Vorgang ruft ein Benutzer Konfigurationsobjekt aus einem Ordner ab. 
+Der **GetUserConfiguration-Vorgang** ruft ein Benutzerkonfigurationsobjekt aus einem Ordner ab. 
   
-## <a name="getuserconfiguration-request-example"></a>GetUserConfiguration-Anforderungs Beispiel
+## <a name="getuserconfiguration-request-example"></a>GetUserConfiguration-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **GetUserConfiguration** -Anforderung wird gezeigt, wie eine Anforderung zum Abrufen eines Benutzer Konfigurationsobjekts im Ordner "Entwürfe" erstellt wird. 
+Das folgende Beispiel einer **GetUserConfiguration-Anforderung** zeigt, wie Sie eine Anforderung zum Abrufen eines Benutzerkonfigurationsobjekts im Ordner "Entwürfe" erstellen. 
   
 ### <a name="code"></a>Code
 
@@ -56,7 +56,7 @@ Im folgenden Beispiel einer **GetUserConfiguration** -Anforderung wird gezeigt, 
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetUserConfiguration** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetUserConfiguration-Anforderung.** 
   
 ### <a name="code"></a>Code
 

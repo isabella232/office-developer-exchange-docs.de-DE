@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 15ff513d-f39e-44ed-a13f-ab3f86fa37e1
-description: Das hasChanged-Element gibt an, ob das Foto eines Benutzers geändert wurde.
-ms.openlocfilehash: d777220f55d33cde548d8257cf249b57481a43f8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das HasChanged-Element gibt an, ob sich das Foto eines Benutzers geändert hat.
+ms.openlocfilehash: 456660272815aac27ea99919eb92a02f754fb4ff
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462787"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516790"
 ---
 # <a name="haschanged"></a>HasChanged
 
-Das **hasChanged** -Element gibt an, ob das Foto eines Benutzers geändert wurde. 
+Das **HasChanged-Element** gibt an, ob sich das Foto eines Benutzers geändert hat. 
   
 ```XML
 <HasChanged> true | false </HasChanged>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **hasChanged** -Element gibt an, dass das Foto seit der letzten Rückgabe geändert wurde. Der Wert **false** gibt an, dass das Foto seit der letzten Rückgabe nicht geändert wurde. 
+Der Textwert **"true"** für das **HasChanged-Element** gibt an, dass sich das Foto seit der letzten Rückgabe geändert hat. Der Wert **"false"** gibt an, dass sich das Foto seit der letzten Rückgabe nicht geändert hat. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3aba59a0-f12a-48b5-842b-11cf4530dd51
 description: Das DeleteFromFolderStateDefinition-Element gibt den Status an, wenn ein Element aus einem Ordner gelöscht wird.
-ms.openlocfilehash: 0ea8c61a6839790869781d5d87ca81772b2e38d6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 270edfc0b7abd70b74ff8c8b4353140ec5fbe27b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455723"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510239"
 ---
 # <a name="deletefromfolderstatedefinition"></a>DeleteFromFolderStateDefinition
 
-Das **DeleteFromFolderStateDefinition** -Element gibt den Status an, wenn ein Element aus einem Ordner gelöscht wird. 
+Das **DeleteFromFolderStateDefinition-Element** gibt den Status an, wenn ein Element aus einem Ordner gelöscht wird. 
   
 ```XML
 <DeleteFromFolderStateDefinition>
@@ -40,7 +40,7 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Vorkommen (Zeitzonenübergang)](occurrence-time-zone-transition.md) <br/> |Gibt das Datum des Auftretens eines Kalenderelements an.  <br/> |
-|[IsOccurrencePresent](isoccurrencepresent.md) <br/> |Gibt einen booleschen Wert an, der angibt, ob ein Vorkommen des Kalenderelements vorhanden ist.  <br/> |
+|[IsOccurrencePresent](isoccurrencepresent.md) <br/> |Gibt einen booleschen Wert, der angibt, ob ein Vorkommen des Kalenderelements vorhanden ist.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -48,7 +48,7 @@ Keine.
 |:-----|:-----|
 |[StateDefinition](statedefinition.md) <br/> |Gibt eine Statusdefinition an.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -60,7 +60,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

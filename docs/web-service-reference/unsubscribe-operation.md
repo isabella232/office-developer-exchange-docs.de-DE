@@ -1,33 +1,33 @@
 ---
-title: Vorgang des Kündigens von Abonnements
+title: Unsubscribe-Vorgang
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Unsubscribe
 api_type:
 - schema
 ms.assetid: 994a9d2b-1501-4804-90f0-12bd914496ec
-description: Der Vorgang zum Kündigen des Abonnements wird zum Beenden eines Pullabonnements für eine Benachrichtigung verwendet. Verwenden Sie diesen Vorgang, anstatt ein Abonnement Timeout zu lassen. Dieser Vorgang ist nur für Pull-Benachrichtigungen gültig.
-ms.openlocfilehash: 054f89af1ba5c780c7de5016a6dfe34086c97f02
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der Unsubscribe-Vorgang wird verwendet, um ein Pullbenachrichtigungsabonnement zu beenden. Verwenden Sie diesen Vorgang, anstatt ein Abonnementtimeout zuzulassen. Dieser Vorgang ist nur für Pullbenachrichtigungen gültig.
+ms.openlocfilehash: 96d30bcd585b07a7ed0497a4a4c723485e8626ab
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468026"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517504"
 ---
-# <a name="unsubscribe-operation"></a>Vorgang des Kündigens von Abonnements
+# <a name="unsubscribe-operation"></a>Unsubscribe-Vorgang
 
-Der Vorgang zum Kündigen des Abonnements wird zum Beenden eines Pullabonnements für eine Benachrichtigung verwendet. Verwenden Sie diesen Vorgang, anstatt ein Abonnement Timeout zu lassen. Dieser Vorgang ist nur für Pull-Benachrichtigungen gültig.
+Der Unsubscribe-Vorgang wird verwendet, um ein Pullbenachrichtigungsabonnement zu beenden. Verwenden Sie diesen Vorgang, anstatt ein Abonnementtimeout zuzulassen. Dieser Vorgang ist nur für Pullbenachrichtigungen gültig.
   
-## <a name="unsubscribe-request-example"></a>Unsubscribe-Anforderungs Beispiel
+## <a name="unsubscribe-request-example"></a>Beispiel für eine Unsubscribe-Anforderung
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt die SOAP-XML-Nachricht, die gesendet wird, um das Abonnement eines Clients vom Benachrichtigungsdienst aufzuheben.
+Das folgende Beispiel zeigt die SOAP-XML-Nachricht, die gesendet wird, um einen Client vom Benachrichtigungsdienst abzumelden.
   
 ### <a name="code"></a>Code
 
@@ -43,19 +43,19 @@ Das folgende Beispiel zeigt die SOAP-XML-Nachricht, die gesendet wird, um das Ab
 </soap:Envelope>
 ```
 
-### <a name="unsubscribe-request-elements"></a>Elemente zum Aufheben der Abonnementanforderung
+### <a name="unsubscribe-request-elements"></a>Elemente von "Unsubscribe Request"
 
 In der Anforderung werden folgende Elemente verwendet:
   
 - [Unsubscribe](unsubscribe.md)
     
-- [Abonnement-Nr (GetEvents)](subscriptionid-getevents.md)
+- [SubscriptionId (GetEvents)](subscriptionid-getevents.md)
     
-## <a name="successful-unsubscribe-response-example"></a>Beispiel für eine erfolgreiche Kündigungs Antwort
+## <a name="successful-unsubscribe-response-example"></a>Beispiel für erfolgreiches Abonnementbestellen
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine unsubscribe-Anforderung.
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine Unsubscribe-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -82,7 +82,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine unsubscribe-Anfor
 </soap:Envelope>
 ```
 
-### <a name="unsubscribe-response-elements"></a>Elemente zum Aufheben der Abonnenten Antwort
+### <a name="unsubscribe-response-elements"></a>Abmelden von Antwortelementen
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -96,11 +96,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-## <a name="unsubscribe-error-response-example"></a>Beispiel für unsubscribe-Fehlerantwort
+## <a name="unsubscribe-error-response-example"></a>Beispiel für eine Unsubscribe Error-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel einer unsubscribe-Fehlerantwort tritt auf, wenn Sie versuchen, das Abonnement abzumelden, indem Sie einen Subskriptions Bezeichner verwenden, der sich nicht im Exchange-Informationsspeicher befinden kann.
+Das folgende Beispiel für eine Unsubscribe-Fehlerantwort tritt als Reaktion auf den Versuch auf, das Abonnement mithilfe einer Abonnement-ID abzubestellen, die nicht im Exchange Store gefunden werden kann.
   
 ### <a name="code"></a>Code
 
@@ -129,7 +129,7 @@ Das folgende Beispiel einer unsubscribe-Fehlerantwort tritt auf, wenn Sie versuc
 </soap:Envelope>
 ```
 
-### <a name="unsubscribe-error-response-elements"></a>Fehlerantwort Elemente für das Abonnement kündigen
+### <a name="unsubscribe-error-response-elements"></a>Antwortelemente für "Unsubscribe Error"
 
 Folgende Elemente werden in der Fehlerantwort verwendet:
   

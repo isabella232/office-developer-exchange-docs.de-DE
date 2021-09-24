@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4b429e55-6057-4dd7-8bb5-fa8a8c0cc223
 description: Das ReminderText-Element gibt den Text einer Erinnerungsnachricht an.
-ms.openlocfilehash: 019ba9efe83b596be67a670497eaa6f8db1b8549
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 37a1a11e9df18ec5145ad37ebc5d6394a7ca1748
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458481"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523671"
 ---
 # <a name="remindertext"></a>ReminderText
 
-Das **ReminderText** -Element gibt den Text einer Erinnerungsnachricht an. 
+Das **ReminderText-Element** gibt den Text einer Erinnerungsnachricht an. 
   
 ```XML
 <ReminderText/>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **ReminderText** -Elements ist der Text einer Erinnerungsnachricht. 
+Der Textwert des **ReminderText-Elements** ist der Text einer Erinnerungsnachricht. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

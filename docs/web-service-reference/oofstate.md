@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - OofState
 api_type:
 - schema
 ms.assetid: 3c486a38-06da-4382-ad20-664d067d76ac
-description: Das OofState-Element wird verwendet, um den Abwesenheit (Out of Office, OOF) Zustand des Benutzers abzurufen oder festzulegen.
-ms.openlocfilehash: 6aef7d989ee6978019a483f2673895e68a88a7c5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das OofState-Element wird verwendet, um den OOF-Status (Out of Office) des Benutzers abzurufen oder festzulegen.
+ms.openlocfilehash: 4d0d893e364fc85d36e37400538a336473832efd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459735"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509536"
 ---
 # <a name="oofstate"></a>OofState
 
-Das **OofState** -Element wird verwendet, um den Abwesenheit (Out of Office, OOF) Zustand des Benutzers abzurufen oder festzulegen. 
+Das **OofState-Element** wird verwendet, um den OOF-Status (Out of Office) des Benutzers abzurufen oder festzulegen. 
   
 ```xml
 <OofState>Disabled or Enabled or Scheduled</OofState>
@@ -44,12 +44,12 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserOofSettings](useroofsettings.md) <br/> |Gibt die Abwesenheitseinstellungen an.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |Gibt die OOF-Einstellungen an.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
 |[OofSettings](oofsettings.md) <br/> |Enthält die OOF-Einstellungen.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Für das **OofState** -Element ist ein Textwert erforderlich. Die folgende Liste enthält die möglichen Werte für dieses Element: 
+Für das **OofState-Element** ist ein Textwert erforderlich. Die folgende Liste enthält die möglichen Werte für dieses Element: 
   
 - **Disabled**
     
@@ -57,9 +57,9 @@ Für das **OofState** -Element ist ein Textwert erforderlich. Die folgende Liste
     
 - **Geplant**
     
-Der Wert **Scheduled** gibt an, dass der Abwesenheitsstatus während eines Zeitraums, der durch das Element [Duration (UserOofSettings)](duration-useroofsettings.md) angegeben ist, auf **aktiviert** festgelegt ist. 
+Der Wert **Geplant** gibt an, dass der OOF-Status während eines zeitraums, der vom [Duration-Element (UserOofSettings)-Element](duration-useroofsettings.md) identifiziert wird, auf **"Aktiviert"** festgelegt ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element ist sowohl in der SetUsersOofSettingRequest-Nachricht als auch in der GetUserOofSettingResponse-Nachricht erforderlich.
   
@@ -67,7 +67,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel einer SetUserOofSettings-Anforderung wird das **OofState**aktiviert.
+Im folgenden Beispiel einer SetUserOofSettings-Anforderung wird **OofState** aktiviert.
   
 ```
 <?xml version="1.0" encoding="utf-8"?>

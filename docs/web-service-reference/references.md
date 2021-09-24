@@ -1,27 +1,27 @@
 ---
-title: Verweise
+title: Informationsquellen
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - References
 api_type:
 - schema
 ms.assetid: d78f9a48-cd24-452f-af65-4c01933227ce
-description: Das References-Element stellt den Usenet-Header dar, der verwendet wird, um Antworten mit den ursprünglichen Nachrichten zuzuordnen.
-ms.openlocfilehash: c55cc194aa6dc9051c5fad6f5cb66f4352e20a0b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das References-Element stellt den Usenet-Header dar, der zum Zuordnen von Antworten zu den ursprünglichen Nachrichten verwendet wird.
+ms.openlocfilehash: a0889ed9ef7b96a2b2a78b9333b03f8efaafaf1f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456752"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523636"
 ---
-# <a name="references"></a>Verweise
+# <a name="references"></a>Informationsquellen
 
-Das **References** -Element stellt den Usenet-Header dar, der verwendet wird, um Antworten mit den ursprünglichen Nachrichten zuzuordnen. 
+Das  References-Element stellt den Usenet-Header dar, der zum Zuordnen von Antworten zu den ursprünglichen Nachrichten verwendet wird. 
   
 ```xml
 <References/>
@@ -57,13 +57,13 @@ Keine.
 |[ReplyAllToItem](replyalltoitem.md) <br/> |Enthält eine Antwort an alle identifizierten Empfänger eines Elements in der Exchange-Speicher.  <br/> |
 |[ForwardItem](forwarditem.md) <br/> |Enthält ein Exchange-Speicher-Element an Empfänger weitergeleitet.  <br/> |
 |[CancelCalendarItem](cancelcalendaritem.md) <br/> |Stellt das Antwortobjekt, das Sie eine Besprechung absagen verwendet wird.  <br/> |
-|[PostItem](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Informationsspeicher dar. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
+|[PostItem](postitem.md) <br/> |Stellt ein Beitragselement im Exchange Informationsspeicher dar. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt einen Usenet-Header dar.
+Der Textwert stellt eine Usenet-Kopfzeile dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

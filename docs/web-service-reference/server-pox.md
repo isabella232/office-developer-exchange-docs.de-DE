@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 0ce51644-7f3a-408c-a398-814439b658dc
-description: Das Server-Element gibt den Namen des e-Mail-Servers an.
-ms.openlocfilehash: 6b29b153bc75b8836bfa113e126d122d620c2984
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Server-Element gibt den Namen des E-Mail-Servers an.
+ms.openlocfilehash: 13673364aff111e1f330121283738119bc6041a2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462010"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517791"
 ---
 # <a name="server-pox"></a>Server (POX)
 
-Das **Server** -Element gibt den Namen des e-Mail-Servers an. 
+Das **Server-Element** gibt den Namen des E-Mail-Servers an. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,11 +50,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen zum Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Text-Wert identifiziert den Server. Bei Protokollen wie POP3, SMTP, IMAP oder NNTP ist dieser Wert entweder ein Hostname oder eine IP-Adresse. Bei Protokollen wie DAV oder Internet ist dies eine URL.
+Der Textwert identifiziert den Server. Bei Protokollen wie POP3, SMTP, IMAP oder NNTP ist dieser Wert entweder ein Hostname oder eine IP-Adresse. Bei Protokollen wie DAV oder WEB ist dies eine URL.
   
 ## <a name="see-also"></a>Siehe auch
 

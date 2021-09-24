@@ -1,23 +1,23 @@
 ---
-title: Isschreibbar
+title: IsWritable
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d4af8eee-7001-4a8e-b9bd-d14882f2406b
-description: Das IsWriteable-Element gibt an, ob der zugrunde liegende Kontakt oder Active Directory Empfänger in geschrieben werden kann.
-ms.openlocfilehash: 96075adc1772027456f8829eee43bdc734644c09
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IsWritable-Element gibt an, ob der zugrunde liegende Kontakt oder active Directory-Empfänger geschrieben werden kann.
+ms.openlocfilehash: 2663e18f2589516f304930b86a717455b6ab77c3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467571"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516713"
 ---
-# <a name="iswritable"></a>Isschreibbar
+# <a name="iswritable"></a>IsWritable
 
-Das **IsWriteable** -Element gibt an, ob der zugrunde liegende Kontakt oder Active Directory Empfänger in geschrieben werden kann. 
+Das **IsWritable-Element** gibt an, ob der zugrunde liegende Kontakt oder active Directory-Empfänger geschrieben werden kann. 
   
 ```XML
 <IsWritable> true | false </IsWritable>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **isschreibbar** -Element gibt an, dass das Kontakt-oder Active Directory Objekt für den Schreibzugriff verfügbar ist. Der Wert **false** gibt an, dass das Kontakt-oder Active Directory Objekt für den Schreibzugriff nicht verfügbar ist. 
+Der Textwert **"true"** für das **IsWritable-Element** gibt an, dass der Kontakt oder das Active Directory-Objekt für den Schreibzugriff verfügbar ist. Der Wert **"false"** gibt an, dass der Kontakt oder das Active Directory-Objekt nicht für den Schreibzugriff verfügbar ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

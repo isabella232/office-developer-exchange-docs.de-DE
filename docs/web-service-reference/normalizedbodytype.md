@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c6973aee-ec7b-44c1-b328-f2204d9de5d1
-description: Das NormalizedBodyType-Element gibt an, ob der normalisierte Text im Text-oder HTML-Format zurückgegeben wird.
-ms.openlocfilehash: e5d968673403eba24a68c67175e3ebcbb35eca39
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das NormalizedBodyType-Element gibt an, ob der normalisierte Textkörper im Text- oder HTML-Format zurückgegeben wird.
+ms.openlocfilehash: 69ce440e30d921b052782af60057fff2d9e9d68f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462661"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537566"
 ---
 # <a name="normalizedbodytype"></a>NormalizedBodyType
 
-Das **NormalizedBodyType** -Element gibt an, ob der normalisierte Text im Text-oder HTML-Format zurückgegeben wird. 
+Das **NormalizedBodyType-Element** gibt an, ob der normalisierte Textkörper im Text- oder HTML-Format zurückgegeben wird. 
   
 ```XML
 <NormalizedBodyType> Best | HTML | Text </NormalizedBodyType>
@@ -42,17 +42,17 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **NormalizedBodyType** -Elements gibt an, in welchem Format der normalisierte Text zurückgegeben wird. In der folgenden Tabelle sind die möglichen Werte für dieses Element aufgeführt. 
+Der Textwert des **NormalizedBodyType-Elements** gibt das Format an, in dem der normalisierte Text zurückgegeben wird. In der folgenden Tabelle sind die möglichen Werte für dieses Element aufgeführt. 
   
 ****
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Optimal  <br/> |Die Antwort gibt den reichsten verfügbaren Inhalt des Textkörpers zurück. Dies ist hilfreich, wenn unbekannt ist, ob es sich bei dem Inhalt um Text oder HTML handelt.  <br/> Der zurückgegebene Text ist Text, wenn der gespeicherte Text nur-Text ist. Andernfalls gibt die Antwort HTML zurück, wenn der gespeicherte Text im HTML-oder RTF-Format vorliegt.  <br/> Dies ist der Standardwert.  <br/> |
+|Optimal  <br/> |Die Antwort gibt den umfangreichsten verfügbaren Inhalt des Textkörpers zurück. Dies ist nützlich, wenn nicht bekannt ist, ob es sich bei dem Inhalt um Text oder HTML handelt.  <br/> Der zurückgegebene Textkörper ist Text, wenn der gespeicherte Text nur Text ist. Andernfalls gibt die Antwort HTML zurück, wenn der gespeicherte Textkörper im HTML- oder RTF-Format vorliegt.  <br/> Dies ist der Standardwert.  <br/> |
 |HTML  <br/> |Die Antwort gibt einen normalisierten Text als HTML zurück.  <br/> |
-|Text  <br/> |Die Antwort gibt einen normalisierten Text als nur-Text zurück.  <br/> |
+|Text  <br/> |Die Antwort gibt einen normalisierten Text als Nur-Text zurück.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

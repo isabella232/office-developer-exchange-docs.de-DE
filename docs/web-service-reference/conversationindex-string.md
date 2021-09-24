@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dda6534d-7e52-4654-b746-3631c454cb4d
 description: Das ConversationIndex-Element gibt die Position eines Knotens in einer Unterhaltung an.
-ms.openlocfilehash: 2475c42d1ee1c0bef55fe7d5e96d555c981d775d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 42db965428ea828c409aa41685b5eb0efe83a158
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461443"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510365"
 ---
 # <a name="conversationindex-string"></a>ConversationIndex (Zeichenfolge)
 
-Das **ConversationIndex** -Element gibt die Position eines Knotens in einer Unterhaltung an. 
+Das **ConversationIndex-Element** gibt die Position eines Knotens in einer Unterhaltung an. 
   
 ```XML
 <ConversationIndex></ConversationIndex>
@@ -44,13 +44,13 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-String-Wert, der den Index der Unterhaltung darstellt.
+Zeichenfolgenwert, der den Index der Unterhaltung darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element ist erforderlich.
   
-Das **ConversationIndex** -Element gilt für Clients, die auf Exchange Online und Versionen von Exchange Server, beginnend mit Exchange 2013, abzielen. 
+Das **ConversationIndex-Element** gilt für Clients, die ab Exchange 2013 auf Exchange Online und Versionen von Microsoft Exchange Server abzielen. 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
@@ -58,7 +58,7 @@ Das **ConversationIndex** -Element gilt für Clients, die auf Exchange Online un
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

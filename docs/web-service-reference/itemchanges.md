@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ItemChanges
 api_type:
 - schema
 ms.assetid: cd307892-2f69-4494-8325-219bdb5c3ad5
-description: Das ItemChanges-Element enthält ein Array von ItemChange-Elementen, mit denen Elemente identifiziert werden, und die Updates, die auf die Elemente angewendet werden sollen.
-ms.openlocfilehash: ea6fb2023b88360f9558057e80c7fe0d855173b5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ItemChanges-Element enthält ein Array von ItemChange-Elementen, die Elemente und die Aktualisierungen identifizieren, die auf die Elemente angewendet werden sollen.
+ms.openlocfilehash: 69a90f7bce330910b9ff44c63656f38509438981
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459910"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516685"
 ---
 # <a name="itemchanges"></a>ItemChanges
 
-Das **ItemChanges** -Element enthält ein Array von [ItemChange](itemchange.md) -Elementen, mit denen Elemente identifiziert werden, und die Updates, die auf die Elemente angewendet werden sollen. 
+Das **ItemChanges-Element** enthält ein Array von [ItemChange-Elementen,](itemchange.md) die Elemente und die Aktualisierungen identifizieren, die auf die Elemente angewendet werden sollen. 
   
 [UpdateItem](updateitem.md)
   
@@ -46,7 +46,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemChange](itemchange.md) <br/> |Enthält eine Element-ID und die Updates, die auf das Element angewendet werden sollen.  <br/> |
+|[ItemChange](itemchange.md) <br/> |Enthält einen Elementbezeichner und die Aktualisierungen, die auf das Element angewendet werden sollen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -54,7 +54,7 @@ Keine.
 |:-----|:-----|
 |[UpdateItem](updateitem.md) <br/> |Definiert eine Anforderung zum Aktualisieren von Elementen in einem Postfach.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/UpdateItem` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -64,7 +64,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 72cec5ec-8485-431c-95b7-b9c2247669d6
-description: Das LegacyDN-Element identifiziert ein Postfach anhand seines Legacy Distinguished Name.
-ms.openlocfilehash: b5eb23d285925f97cc25f53b56bca669bbbb5840
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das LegacyDN-Element identifiziert ein Postfach anhand seines älteren Distinguished Name.
+ms.openlocfilehash: c40f76ec37407a0ac6db27bcccad0c5b9d5924b9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463237"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509622"
 ---
 # <a name="legacydn"></a>LegacyDN
 
-Das **LegacyDN** -Element identifiziert ein Postfach anhand seines Legacy Distinguished Name. 
+Das **LegacyDN-Element** identifiziert ein Postfach anhand seines älteren Distinguished Name. 
   
 ```XML
 <LegacyDN></LegacyDN>
@@ -43,9 +43,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **LegacyDN** -Elements ist der Legacy Distinguished Name des Zielpostfachs. 
+Der Textwert des **LegacyDN-Elements** ist der alte Distinguished Name des Zielpostfachs. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

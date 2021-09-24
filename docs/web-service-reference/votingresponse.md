@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7dae4db5-28d3-4b81-b071-458c814c36b9
-description: Das VotingResponse-Element gibt die übermittelte Abstimmung an. Dieses Element ist nur bei Antworten auf Abstimmungs Anforderungsnachrichten vorhanden, nicht bei Antworten auf Genehmigungen.
-ms.openlocfilehash: ed7caff79d1ff2946800630c167350fe866e29dc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das VotingResponse-Element gibt die übermittelte Abstimmung an. Dieses Element ist nur für Antworten auf Abstimmungsanfragen vorhanden, nicht für Antworten auf Genehmigungen.
+ms.openlocfilehash: 4d554cc3fc92911420b48b2da86d3ca3004018f7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466465"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510554"
 ---
 # <a name="votingresponse"></a>VotingResponse
 
-Das **VotingResponse** -Element gibt die übermittelte Abstimmung an. Dieses Element ist nur bei Antworten auf Abstimmungs Anforderungsnachrichten vorhanden, nicht bei Antworten auf Genehmigungen. 
+Das **VotingResponse-Element** gibt die übermittelte Abstimmung an. Dieses Element ist nur für Antworten auf Abstimmungsanfragen vorhanden, nicht für Antworten auf Genehmigungen. 
   
 ```XML
 <VotingResponse />
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **VotingResponse** -Elements ist die abgegebene Stimme. 
+Der Textwert des **VotingResponse-Elements** ist die übermittelte Abstimmung. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

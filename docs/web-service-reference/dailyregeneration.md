@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DailyRegeneration
 api_type:
 - schema
 ms.assetid: cafb57e4-c518-45e0-b565-2babd0dab1df
 description: Das DailyRegeneration-Element beschreibt die Häufigkeit in Tagen, in der eine Aufgabe neu generiert wird.
-ms.openlocfilehash: 518e4666031131f4a5fc80cc72c28a2110b468c5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7fbcb05e45a8700a3d23d1e8ed0d6f9e2ba75db2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462164"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535948"
 ---
 # <a name="dailyregeneration"></a>DailyRegeneration
 
-Das **DailyRegeneration** -Element beschreibt die Häufigkeit in Tagen, in der eine Aufgabe neu generiert wird. 
+Das **DailyRegeneration-Element** beschreibt die Häufigkeit in Tagen, in der eine Aufgabe neu generiert wird. 
   
 ```xml
 <DailyRegeneration>
@@ -43,7 +43,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Intervall](interval.md) <br/> |Definiert das Intervall in Tagen zwischen zwei aufeinander folgenden wiederkehrenden Elementen. Der Wert muss im Bereich von 1 bis 999 liegen.  <br/> |
+|[Intervall](interval.md) <br/> |Definiert das Intervall zwischen zwei aufeinander folgenden Wiederkehrenden Elementen in Tagen. Der Wert muss zwischen 1 und 999 liegen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -51,7 +51,7 @@ Keine.
 |:-----|:-----|
 |[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Enthält Serieninformationen für wiederkehrende Vorgänge.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

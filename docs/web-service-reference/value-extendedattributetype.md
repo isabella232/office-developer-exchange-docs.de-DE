@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 196278d4-5e77-4e0a-8af6-8ac065610510
 description: Das Value-Element (ExendedAttributeType) ist nur für die interne Verwendung vorgesehen.
-ms.openlocfilehash: 252f230b4fb12b822e79a1e4a5561e9e6905b72a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 138fe3469f628e518e04bb94cf958ab1095f73ae
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467592"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510638"
 ---
 # <a name="value-extendedattributetype"></a>Wert (ExtendedAttributeType)
 
-Das **Value-Element (ExendedAttributeType)** ist nur für die interne Verwendung vorgesehen. 
+Das Value-Element **(ExendedAttributeType)** ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ServerVersionInfo
 api_type:
 - schema
 ms.assetid: c04a6872-ca27-432b-aac2-36b023d0afc6
-description: Das ServerVersionInfo-Element stellt die Versionsnummer Exchange Server dar.
-ms.openlocfilehash: 5bd1fbd8fdee584a9d272fa8ab82f2a31c1357fe
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ServerVersionInfo-Element stellt die Microsoft Exchange Server Versionsnummer dar.
+ms.openlocfilehash: 6907559e1ac98981028a017b64a38a343c36da70
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466829"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517714"
 ---
 # <a name="serverversioninfo"></a>ServerVersionInfo
 
-Das **ServerVersionInfo** -Element stellt die Versionsnummer Exchange Server dar. 
+Das **ServerVersionInfo-Element** stellt die Microsoft Exchange Server Versionsnummer dar. 
   
 ```xml
 <ServerVersionInfo MajorVersion="" MinorVersion="" MajorBuildNumber="" MinorBuildNumber="" Version="" />
@@ -36,10 +36,10 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
 |MajorVersion  <br/> |Beschreibt die Hauptversionsnummer.  <br/> |
-|MinorVersion  <br/> |Beschreibt die Nummer der Nebenversion.  <br/> |
-|MajorBuildNumber  <br/> |Beschreibt die Hauptnummer des Builds.  <br/> |
-|MinorBuildNumber  <br/> |Beschreibt die Nebenversionsnummer.  <br/> |
-|Version  <br/> |Beschreibt die Exchange-Webdienste Schemaversion.  <br/> |
+|Minorversion  <br/> |Beschreibt die Nebenversionsnummer.  <br/> |
+|MajorBuildNumber  <br/> |Beschreibt die Hauptbuildnummer.  <br/> |
+|MinorBuildNumber  <br/> |Beschreibt die Kleinere Buildnummer.  <br/> |
+|Version  <br/> |Beschreibt die EWS-Schemaversion (Exchange Web Services).  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -49,11 +49,11 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element wird im SOAP-Header einer Exchange Webdienste-Antwortnachricht zurückgegeben.
+Dieses Element wird im SOAP-Header einer antwortnachricht Exchange Webdienste zurückgegeben.
   
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist. 
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist. 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

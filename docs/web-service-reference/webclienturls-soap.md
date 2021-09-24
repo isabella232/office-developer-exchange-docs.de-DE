@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: fdfe6059-a861-4fa2-a20e-ee6ab820bee9
-description: Das WebClientUrls-Element stellt eine Benutzereinstellung dar, die eine Auflistung von WebClientUrl-Elementen (SOAP) enthält.
-ms.openlocfilehash: 80c8ab36e30146c78f4bdb4f40eb9f87a335199c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das WebClientUrls-Element stellt eine Benutzereinstellung dar, die eine Auflistung von Soap-Elementen (WebClientUrl) enthält.
+ms.openlocfilehash: c414b92b3105b7e4ffd6eea2745451fe49c3c6fd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464924"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509329"
 ---
 # <a name="webclienturls-soap"></a>WebClientUrls (SOAP)
 
-Das **WebClientUrls** -Element stellt eine Benutzereinstellung dar, die eine Auflistung von [WebClientUrl-Elementen (SOAP)](webclienturl-soap.md) enthält. 
+Das **WebClientUrls-Element** stellt eine Benutzereinstellung dar, die eine Auflistung von [Soap-Elementen (WebClientUrl)](webclienturl-soap.md) enthält. 
   
 [UserSetting (SOAP)](usersetting-soap.md)
   
@@ -46,7 +46,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[WebClientUrl (SOAP)](webclienturl-soap.md) <br/> |Stellt eine Exchange-Client-URL dar.  <br/> |
+|[WebClientUrl (SOAP)](webclienturl-soap.md) <br/> |Stellt eine Exchange Client-URL dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -59,8 +59,8 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cfefc053-1e3c-46fb-8014-b56a654f2fb3
-description: Das TTL-Element gibt die Zeit (in Minuten) an, für die das Token gültig ist.
-ms.openlocfilehash: 3d5b4ec7e2184035737dbc94f3bb1ad83eb3fef4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das TTL-Element gibt die Zeit in Minuten an, zu der das Token gültig ist.
+ms.openlocfilehash: b5fc6b529452641ababe8f308bf38dc70ef276db
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456395"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517532"
 ---
 # <a name="ttl"></a>TTL
 
-Das **TTL** -Element gibt die Zeit (in Minuten) an, für die das Token gültig ist. 
+Das **TTL-Element** gibt die Zeit in Minuten an, zu der das Token gültig ist. 
   
 ```XML
 <TTL></TTL>
 ```
 
- **Integer**
+ **Ganzzahl**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **TTL** -Elements ist die Zeit in Minuten, für die das Token gültig ist. 
+Der Textwert des **TTL-Elements** ist die Zeit in Minuten, in der das Token gültig ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

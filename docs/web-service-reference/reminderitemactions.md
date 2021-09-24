@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 135d7fc3-7d5b-4e30-9a6f-62eb02d7ab98
-description: Das ReminderItemActions-Element gibt die Aktionen für Erinnerungs Elemente an.
-ms.openlocfilehash: c9b42e420f81cd0cb15bf1bd17366d9a996f1b0b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ReminderItemActions-Element gibt die Aktionen für Erinnerungselemente an.
+ms.openlocfilehash: 4694a32883ef08e830c855efa5f719a3333cecb3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458558"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523620"
 ---
 # <a name="reminderitemactions"></a>ReminderItemActions
 
-Das **ReminderItemActions** -Element gibt die Aktionen für Erinnerungs Elemente an. 
+Das **ReminderItemActions-Element** gibt die Aktionen für Erinnerungselemente an. 
   
 ```XML
 <ReminderItemActions>
@@ -42,7 +42,7 @@ Keine.
 
 [PerformReminderAction](performreminderaction.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -54,7 +54,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

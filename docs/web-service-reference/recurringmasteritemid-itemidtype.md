@@ -1,29 +1,29 @@
 ---
-title: RecurringMasterItemId (itemidtype)
+title: RecurringMasterItemId (ItemIdType)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 48d831cf-10d8-480b-86d2-f9c0b14b8167
-description: Das RecurringMasterItemId (itemidtype)-Element identifiziert ein Serienmasterelement durch Identifizieren der Bezeichner eines seiner Verwandten vorkommen Elemente.
-ms.openlocfilehash: c725998ad3a728ef1f47ff6491592b461753b895
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das RecurringMasterItemId (ItemIdType)-Element identifiziert ein Serienmasterelement, indem die Bezeichner eines der zugehörigen Vorkommenselemente identifiziert werden.
+ms.openlocfilehash: 491bb6686ad6cc9ee8169144b659d828e3920e45
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468439"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522740"
 ---
-# <a name="recurringmasteritemid-itemidtype"></a>RecurringMasterItemId (itemidtype)
+# <a name="recurringmasteritemid-itemidtype"></a>RecurringMasterItemId (ItemIdType)
 
-Das **RecurringMasterItemId (itemidtype)-** Element identifiziert ein Serienmasterelement durch Identifizieren der Bezeichner eines seiner Verwandten vorkommen Elemente. 
+Das **RecurringMasterItemId (ItemIdType)-Element** identifiziert ein Serienmasterelement, indem die Bezeichner eines der zugehörigen Vorkommenselemente identifiziert werden. 
   
 ```XML
 <RecurringMasterItemId Id="" ChangeKey=""/>
 ```
 
- **Itemidtype**
+ **ItemIdType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -34,8 +34,8 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|Id  <br/> |Gibt ein einzelnes Vorkommen eines wiederkehrenden Hauptelements an. Dieses Attribut ist erforderlich.  <br/> |
-|ChangeKey  <br/> |Gibt eine bestimmte Version eines einzelnen Auftretens eines wiederkehrenden Hauptelements an. Darüber hinaus wird das wiederkehrende Hauptelement ebenfalls identifiziert, da es und das einzelne Vorkommen denselben Änderungsschlüssel enthalten werden. Dieses Attribut ist optional.  <br/> |
+|Id  <br/> |Identifiziert ein einzelnes Vorkommen eines wiederkehrenden Masterelements. Dieses Attribut ist erforderlich.  <br/> |
+|ChangeKey  <br/> |Identifiziert eine bestimmte Version eines einzelnen Vorkommens eines wiederkehrenden Masterelements. Darüber hinaus wird das wiederkehrende Masterelement auch identifiziert, da es und das einzelne Vorkommen denselben Änderungsschlüssel enthalten. Dieses Attribut ist optional.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -45,7 +45,7 @@ Keine.
 
 [Reminder](reminder.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

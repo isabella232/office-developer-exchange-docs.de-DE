@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Room
 api_type:
 - schema
 ms.assetid: a2cde8b8-2d31-4ebf-8171-f4dfd650d079
 description: Das Room-Element stellt einen Besprechungsraum dar.
-ms.openlocfilehash: 3d5d587853e435016fdff6b9d268892a35fea825
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 062b89652ba809f245c1ac3ccee1005cbf0eabbd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460533"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523538"
 ---
 # <a name="room"></a>Raum
 
-Das **Room** -Element stellt einen Besprechungsraum dar. 
+Das **Room-Element** stellt einen Besprechungsraum dar. 
   
-[Chatrooms](rooms.md)
+[Räume](rooms.md)
   
 [Raum](room.md)
   
@@ -46,15 +46,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ID (e-mailemailtype)](id-emailaddresstype.md) <br/> |Ein Bezeichner, der eine e-Mail-Adresse und einen Anzeigenamen enthält, der den Besprechungsraum darstellt.  <br/> |
+|[ID (EmailAddressType)](id-emailaddresstype.md) <br/> |Ein Bezeichner, der eine E-Mail-Adresse und einen Anzeigenamen enthält, der den Besprechungsraum darstellt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Chatrooms](rooms.md) <br/> |Definiert eine Liste von Besprechungsräumen, die einem gemeinsamen Feature zugeordnet sind, beispielsweise sich im selben Gebäude befinden.  <br/> |
+|[Räume](rooms.md) <br/> |Definiert eine Liste von Besprechungsräumen, die einem allgemeinen Feature zugeordnet sind, z. B. im selben Gebäude.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

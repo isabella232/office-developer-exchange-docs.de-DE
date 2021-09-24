@@ -1,27 +1,27 @@
 ---
-title: UserSID
+title: UserSid
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UserSid
 api_type:
 - schema
 ms.assetid: f8a0dcd9-8564-4e35-b307-c5d2761b48d8
-description: Das users-Element stellt das SDDL-Formular (Security Descriptor Definition Language) der Benutzer Sicherheits-ID in einem serialisierten Sicherheitskontext-SOAP-Header dar. Die Serialisierung von Token wird nicht unterstützt.
-ms.openlocfilehash: b8ee51b1998546fc4ab14bd3666192ae63c8dba8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das UserSid-Element stellt die SDDL-Form (Security Descriptor Definition Language) des Benutzersicherheitsbezeichners in einem serialisierten SOAP-Header im Sicherheitskontext dar. Die Token-Serialisierung wird nicht unterstützt.
+ms.openlocfilehash: b32c9fc8347fba07bff57b942adf6510d37ebf2f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462017"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517350"
 ---
-# <a name="usersid"></a>UserSID
+# <a name="usersid"></a>UserSid
 
-Das **Users** -Element stellt das SDDL-Formular (Security Descriptor Definition Language) der Benutzer Sicherheits-ID in einem serialisierten Sicherheitskontext-SOAP-Header dar. Die Serialisierung von Token wird nicht unterstützt. 
+Das **UserSid-Element** stellt die SDDL-Form (Security Descriptor Definition Language) des Benutzersicherheitsbezeichners in einem serialisierten SOAP-Header im Sicherheitskontext dar. Die Token-Serialisierung wird nicht unterstützt. 
   
 ```xml
 <UserSid/>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt die Sicherheits-ID eines Benutzers dar.
+Der Textwert stellt den Sicherheitsbezeichner eines Benutzers dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

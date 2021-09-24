@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - WeddingAnniversary
 api_type:
 - schema
 ms.assetid: 75e3add5-a08f-4a5c-a34c-c36b8291d187
-description: Das WeddingAnniversary-Element enthält das Hochzeitsjubiläum eines Kontakts.
-ms.openlocfilehash: 784e4da9587a4153871e0c20f84c4cb1cfb381fc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das "GlossarAnniversary"-Element enthält den Jahrestag eines Kontakts.
+ms.openlocfilehash: 3b9f204ff66094ef7b030f2e30485d614b4c2309
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464875"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509287"
 ---
 # <a name="weddinganniversary"></a>WeddingAnniversary
 
-Das **WeddingAnniversary** -Element enthält das Hochzeitsjubiläum eines Kontakts. 
+Das **"GlossarAnniversary"-Element** enthält den Jahrestag eines Kontakts. 
   
 ```xml
 <WeddingAnniversary/>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt das Datum des Hochzeits Jubiläums eines Kontakts dar.
+Der Textwert stellt das Datum des Jahrestags eines Kontakts dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

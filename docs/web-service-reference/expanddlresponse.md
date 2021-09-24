@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExpandDLResponse
 api_type:
 - schema
 ms.assetid: 1c60dd64-a083-460a-9840-021d30f871d6
 description: Das ExpandDLResponse-Element definiert eine Antwort auf eine Anforderung zum Erweitern einer Verteilerliste.
-ms.openlocfilehash: a5b162fe2c29f760b7499e9e946b700ce69be970
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: af081703a99ce1f69994516fab71e1fc9437ecb5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456941"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510113"
 ---
 # <a name="expanddlresponse"></a>ExpandDLResponse
 
-Das **ExpandDLResponse** -Element definiert eine Antwort auf eine Anforderung zum Erweitern einer Verteilerliste. 
+Das **ExpandDLResponse-Element** definiert eine Antwort auf eine Anforderung zum Erweitern einer Verteilerliste. 
   
 [ExpandDLResponse](expanddlresponse.md)
   
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienstanforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

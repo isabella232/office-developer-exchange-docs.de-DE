@@ -1,33 +1,33 @@
 ---
-title: Erstellen (ItemSync)
+title: Create (ItemSync)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Create
 api_type:
 - schema
 ms.assetid: cb5e64a2-66a5-4447-921e-7c13efb8f6bf
 description: Das Create-Element identifiziert ein einzelnes Element, das im lokalen Clientspeicher erstellt werden soll.
-ms.openlocfilehash: b9c0f28333594a6c17ee9581a227fc4773874fd6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 2b36fad021c7ccb767eb80b31f71f12ef6cbbd22
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460799"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510334"
 ---
-# <a name="create-itemsync"></a>Erstellen (ItemSync)
+# <a name="create-itemsync"></a>Create (ItemSync)
 
-Das **Create** -Element identifiziert ein einzelnes Element, das im lokalen Clientspeicher erstellt werden soll. 
+Das **Create-Element** identifiziert ein einzelnes Element, das im lokalen Clientspeicher erstellt werden soll. 
   
 - [SyncFolderItemsResponse](syncfolderitemsresponse.md) 
 - [ResponseMessages](responsemessages.md) 
 - [SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md) 
 - [Änderungen (Elemente)](changes-items.md) 
-- [Erstellen (ItemSync)](create-itemsync.md)
+- [Create (ItemSync)](create-itemsync.md)
   
 ```xml
 <Create>
@@ -103,24 +103,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Item](item.md) <br/> |Stellt ein generisches Exchange-Element zum Erstellen dar.  <br/> |
-|[Meldung](message-ex15websvcsotherref.md) <br/> |Stellt eine zu erstellenden Exchange-e-Mail-Nachricht dar.  <br/> |
-|[CalendarItem](calendaritem.md) <br/> |Stellt ein zu Erstell Exchange-Kalenderelement dar.  <br/> |
-|[Contact](contact.md) <br/> |Stellt ein zu Erstell Exchange-Kontaktelement dar.  <br/> |
+|[Item](item.md) <br/> |Stellt ein generisches Exchange zu erstellenden Element dar.  <br/> |
+|[Meldung](message-ex15websvcsotherref.md) <br/> |Stellt eine Exchange zu erstellende E-Mail-Nachricht dar.  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Stellt ein zu erstellende Exchange Kalenderelement dar.  <br/> |
+|[Contact](contact.md) <br/> |Stellt ein zu erstellende Exchange Kontaktelement dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine zu erstellende Verteilerliste dar.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine zu erstellende Besprechungsnachricht dar.  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanfrage zum Erstellen dar.  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort dar, die erstellt werden soll.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine zu Erstell endabbruch Besprechung dar.  <br/> |
-|[Task](task.md) <br/> |Stellt eine Aufgabe dar, die erstellt werden soll.  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |Stellt eine zu erstellende Besprechungsanfrage dar.  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Stellt eine zu erstellende Besprechungsantwort dar.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine zu erstellende Besprechungsabsage dar.  <br/> |
+|[Aufgabe](task.md) <br/> |Stellt eine zu erstellende Aufgabe dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Änderungen (Elemente)](changes-items.md) <br/> |Enthält ein Sequenz Array von Änderungstypen, die die Arten von Unterschieden zwischen den Elementen auf dem Client und den Elementen auf dem Exchange-Server darstellen.  <br/> |
+|[Änderungen (Elemente)](changes-items.md) <br/> |Enthält ein Sequenzarray von Änderungstypen, die die Arten von Unterschieden zwischen den Elementen auf dem Client und den Elementen auf dem Exchange-Server darstellen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

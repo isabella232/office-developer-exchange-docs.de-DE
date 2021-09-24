@@ -1,27 +1,27 @@
 ---
-title: Ismoderiert
+title: IsModerated
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsModerated
 api_type:
 - schema
 ms.assetid: a7562256-feb9-41a1-857e-b5d41cbed680
-description: Das ismoded-Element gibt an, ob das Postfach des Empfängers moderiert wird.
-ms.openlocfilehash: 930d5a7e09712f35d22850a93462d051a34785a1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IsModerated-Element gibt an, ob das Postfach des Empfängers moderiert wird.
+ms.openlocfilehash: e06e7e01e08cb8418adafaae09cae94ceb5c3b2c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44435485"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522901"
 ---
-# <a name="ismoderated"></a>Ismoderiert
+# <a name="ismoderated"></a>IsModerated
 
-Das **ismoded** -Element gibt an, ob das Postfach des Empfängers moderiert wird. 
+Das **IsModerated-Element** gibt an, ob das Postfach des Empfängers moderiert wird. 
   
 ```XML
 <IsModerated>true | false</IsModerated>
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Tipps dar.  <br/> |
+|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Typen von E-Mail-Tipps dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert für dieses Element ist **true** , wenn das Postfach des Empfängers moderiert wird. Der Wert ist **false** , wenn das Postfach des Empfängers nicht moderiert wird. 
+Der Textwert für dieses Element ist **"true",** wenn das Postfach des Empfängers moderiert wird. Der Wert ist **"false",** wenn das Postfach des Empfängers nicht moderiert wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

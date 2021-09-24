@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d22f68cf-b18b-45d0-a9ff-414b7db0e67e
-description: Das ReplyAllAllowed-Element gibt an, ob für rechteverwaltete Daten eine Antwort "All" zulässig ist.
-ms.openlocfilehash: 56dfe7670ed87581999bfe0a340bcc72c99d04ea
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: The ReplyAllAllowed element specifies whether a reply all is allowed for rights managed data.
+ms.openlocfilehash: 56b383e4273ca78ee291eeb658d69873109593f3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467914"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523594"
 ---
 # <a name="replyallallowed"></a>ReplyAllAllowed
 
-Das **ReplyAllAllowed** -Element gibt an, ob für rechteverwaltete Daten eine Antwort "All" zulässig ist. 
+The **ReplyAllAllowed** element specifies whether a reply all is allowed for rights managed data. 
   
 ```XML
 <ReplyAllAllowed> true | false </ReplyAllAllowed>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **ReplyAllAllowed** -Element gibt an, dass für die Rechte verwalteten Daten eine Antwort "All" zulässig ist. Der Wert **false** gibt an, dass eine Antwort all nicht zulässig ist. 
+Der Textwert **"true"** für das **ReplyAllAllowed-Element** gibt an, dass eine Antwort für die verwalteten Rechte zulässig ist. Der Wert **False** gibt an, dass keine Antwort zulässig ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Companies
 api_type:
 - schema
 ms.assetid: 5d9ea76f-e14d-4424-8842-0c3cc3305119
-description: Das Companies-Element stellt die Auflistung von Unternehmen dar, die einem Kontakt oder einer Aufgabe zugeordnet sind.
-ms.openlocfilehash: eda2b92f3ca874aeeceef6a0935a49a98af0ec39
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Companies-Element stellt die Sammlung von Unternehmen dar, die einem Kontakt oder einer Aufgabe zugeordnet sind.
+ms.openlocfilehash: fb6bdfe15f76496e1474791f82a9c80944362d57
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461450"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517245"
 ---
 # <a name="companies"></a>Unternehmen
 
-Das **Companies** -Element stellt die Auflistung von Unternehmen dar, die einem Kontakt oder einer Aufgabe zugeordnet sind. 
+Das **Companies-Element** stellt die Sammlung von Unternehmen dar, die einem Kontakt oder einer Aufgabe zugeordnet sind. 
   
 ```xml
 <Companies>
@@ -48,10 +48,10 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Kontaktperson](contact.md) <br/> |Stellt einen Kontakt im Exchange-Informationsspeicher dar.  <br/> |
+|[Kontaktperson](contact.md) <br/> |Stellt einen Kontakt im Exchange Speicher dar.  <br/> |
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

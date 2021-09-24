@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeletedOccurrences
 api_type:
 - schema
 ms.assetid: 736fb305-9528-4be8-ad37-65d7556edbf2
-description: Das DeletedOccurrences-Element enthält ein Array von gelöschten Vorkommen eines wiederkehrenden Kalenderelements.
-ms.openlocfilehash: be39ff95b5529481a36b7549e638818a20e01283
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DeletedOccurrences-Element enthält ein Array gelöschter Vorkommen eines Terminserienkalenderelements.
+ms.openlocfilehash: b1e60bfee9dbc8e5691db2a13474a945da0484af
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463706"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510246"
 ---
 # <a name="deletedoccurrences"></a>DeletedOccurrences
 
-Das **DeletedOccurrences** -Element enthält ein Array von gelöschten Vorkommen eines wiederkehrenden Kalenderelements. 
+Das **DeletedOccurrences-Element** enthält ein Array gelöschter Vorkommen eines Terminserienkalenderelements. 
   
 ```xml
 <DeletedOccurrences>
@@ -51,9 +51,9 @@ Keine.
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element ist gültig, wenn der RecurringMaster-Textwert für das [CalendarItemType](calendaritemtype.md) -Element verwendet wird. 
+Dieses Element ist gültig, wenn der RecurringMaster-Textwert für das [CalendarItemType-Element](calendaritemtype.md) verwendet wird. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

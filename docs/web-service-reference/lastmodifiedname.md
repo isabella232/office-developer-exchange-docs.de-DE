@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - LastModifiedName
 api_type:
 - schema
 ms.assetid: 4f1a90c1-e27e-4e16-93c3-e79d4cb720d1
-description: Das LastModifiedName-Element enthält den Anzeigenamen des letzten Benutzers, um ein Element zu ändern. Dieses Element ist schreibgeschützt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 485514d9f72956083d8a7a0633478f3d9e694845
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das LastModifiedName-Element enthält den Anzeigenamen des letzten Benutzers, der ein Element ändern soll. Dieses Element ist schreibgeschützt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: a821508a69517b92d6b453fe8355f7e8c3f1d6fc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455387"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509616"
 ---
 # <a name="lastmodifiedname"></a>LastModifiedName
 
-Das **LastModifiedName** -Element enthält den Anzeigenamen des letzten Benutzers, um ein Element zu ändern. Dieses Element ist schreibgeschützt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **LastModifiedName-Element** enthält den Anzeigenamen des letzten Benutzers, der ein Element ändern soll. Dieses Element ist schreibgeschützt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <LastModifiedName/>
@@ -47,7 +47,7 @@ Keine.
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
-|[Element](item.md) <br/> |Stellt ein generisches Exchange-Element dar.  <br/> |
+|[Aspekt](item.md) <br/> |Stellt ein generisches Exchange Element dar.  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine Besprechungsabsage im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
@@ -55,13 +55,13 @@ Keine.
 |[Message](message-ex15websvcsotherref.md) <br/> |Stellt eine Exchange-E-Mail-Nachricht dar.  <br/> |
 |[RemoveItem](removeitem.md) <br/> |Entfernt ein Element aus dem Exchange-Informationsspeicher.  <br/> |
 |[Aufgabe](task.md) <br/> |Stellt eine Aufgabe im Exchange-Informationsspeicher dar.  <br/> |
-|[PostItem](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Informationsspeicher dar. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[PostItem](postitem.md) <br/> |Stellt ein Beitragselement im Exchange Informationsspeicher dar. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Text-Wert ist ein String-Wert, der den Anzeigenamen des letzten Benutzers darstellt, der das Element ändern soll.
+Der Textwert ist ein Zeichenfolgenwert, der den Anzeigenamen des letzten Benutzers darstellt, der das Element geändert hat.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

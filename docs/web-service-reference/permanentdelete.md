@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PermanentDelete
 api_type:
 - schema
 ms.assetid: 1a0e0f46-1472-4eb7-bb54-f193a2603587
-description: Das PermanentDelete-Element gibt an, ob Nachrichten endgültig gelöscht und nicht im Ordner "Gelöschte Elemente" gespeichert werden sollen.
-ms.openlocfilehash: da7680eefca9ad359948af38eac49d18e9055988
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PermanentDelete-Element gibt an, ob Nachrichten dauerhaft gelöscht und nicht im Ordner "Gelöschte Elemente" gespeichert werden sollen.
+ms.openlocfilehash: f7d130b86e30709959f7ea7db5bd321cd21573cb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467767"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516664"
 ---
 # <a name="permanentdelete"></a>PermanentDelete
 
-Das **PermanentDelete** -Element gibt an, ob Nachrichten endgültig gelöscht und nicht im Ordner "Gelöschte Elemente" gespeichert werden sollen. 
+Das **PermanentDelete-Element** gibt an, ob Nachrichten dauerhaft gelöscht und nicht im Ordner "Gelöschte Elemente" gespeichert werden sollen. 
   
 ```XML
 <PermanentDelete>true | false</PermanentDelete>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass die Nachricht als dauerhaft gelöscht gekennzeichnet werden muss. Der Wert **false** gibt an, dass die Nachricht nicht als dauerhaft gelöscht gekennzeichnet werden darf. 
+Der Textwert **"true"** gibt an, dass die Nachricht markiert werden muss, damit sie endgültig gelöscht werden kann. Der Wert **false** gibt an, dass die Nachricht nicht als endgültig gelöscht gekennzeichnet werden darf. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -60,7 +60,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

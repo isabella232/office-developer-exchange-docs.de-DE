@@ -1,33 +1,33 @@
 ---
-title: CreateItem-Vorgang (e-Mail-Nachricht)
+title: CreateItem-Vorgang (E-Mail-Nachricht)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateItem
 api_type:
 - schema
 ms.assetid: fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1
-description: Der CreateItem-Vorgang wird zum Erstellen von e-Mail-Nachrichten verwendet.
-ms.openlocfilehash: 384ed8ff653029c2b7db0b36986d85842b0a06cf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der CreateItem-Vorgang wird zum Erstellen von E-Mail-Nachrichten verwendet.
+ms.openlocfilehash: 74784d72ed14fa139c616cd11740a62efd17b338
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457116"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536468"
 ---
-# <a name="createitem-operation-email-message"></a>CreateItem-Vorgang (e-Mail-Nachricht)
+# <a name="createitem-operation-email-message"></a>CreateItem-Vorgang (E-Mail-Nachricht)
 
-Der CreateItem-Vorgang wird zum Erstellen von e-Mail-Nachrichten verwendet.
+Der CreateItem-Vorgang wird zum Erstellen von E-Mail-Nachrichten verwendet.
   
-## <a name="createitem-request-example"></a>CreateItem-Anforderungs Beispiel
+## <a name="createitem-request-example"></a>CreateItem-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer CreateItem-Anforderung wird gezeigt, wie Sie eine neue e-Mail-Nachricht erstellen, die Nachricht senden und eine Kopie davon im Ordner "Entwürfe" speichern.
+Das folgende Beispiel einer CreateItem-Anforderung zeigt, wie Sie eine neue E-Mail-Nachricht erstellen, die Nachricht senden und eine Kopie davon im Ordner "Entwürfe" speichern.
   
 ### <a name="code"></a>Code
 
@@ -66,7 +66,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [SavedItemFolderId](saveditemfolderid.md)
     
-- [Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 - [Meldung](message-ex15websvcsotherref.md)
     
@@ -84,7 +84,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [IsRead](isread.md)
     
-Um andere Optionen für die Anforderungsnachricht des CreateItem-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie beim [CreateItem](createitem.md) -Element. 
+Weitere Optionen für die Anforderungsnachricht des CreateItem-Vorgangs finden Sie in der Schemahierarchie. Beginnen Sie mit dem [CreateItem-Element.](createitem.md) 
   
 ## <a name="successful-createitem-response"></a>Erfolgreiche CreateItem-Antwort
 
@@ -119,7 +119,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateItem-Anforde
 
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
-Die Antwort enthält die folgenden Elemente: 
+Die folgenden Elemente sind in der Antwort enthalten: 
   
 - [CreateItemResponse](createitemresponse.md)
     
@@ -129,11 +129,11 @@ Die Antwort enthält die folgenden Elemente:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
-Um andere Optionen für die Antwortnachricht des CreateItem-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [CreateItemResponse](createitemresponse.md) -Element. 
+Weitere Optionen für die Antwortnachricht des CreateItem-Vorgangs finden Sie in der Schemahierarchie. Beginnen Sie mit dem [CreateItemResponse-Element.](createitemresponse.md) 
   
-## <a name="error-createitem-response"></a>Fehler CreateItem-Antwort
+## <a name="error-createitem-response"></a>Error CreateItem Response
 
 ### <a name="description"></a>Beschreibung
 
@@ -182,9 +182,9 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
-Um andere Optionen für die Fehlerantwort Meldung des CreateItem-Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [CreateItemResponse](createitemresponse.md) -Element. 
+Weitere Optionen für die Fehlermeldung des CreateItem-Vorgangs finden Sie in der Schemahierarchie. Beginnen Sie mit dem [CreateItemResponse-Element.](createitemresponse.md) 
   
 ## <a name="see-also"></a>Siehe auch
 

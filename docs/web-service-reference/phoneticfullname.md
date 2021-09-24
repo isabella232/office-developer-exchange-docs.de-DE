@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ed08dee7-ba01-4b10-a53a-d28b8e1c3bf9
-description: Das PhoneticFullName-Element enthält den vollständigen Namen eines Kontakts, einschließlich des vor-und Nachnamens, phonetisch buchstabiert.
-ms.openlocfilehash: a206a33742499858066acd91f02529d35f22b001
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PhoneticFullName -Element enthält den vollständigen Namen eines Kontakts, einschließlich des Vor- und Nachnamens, phonetisch geschrieben.
+ms.openlocfilehash: 6f82a0c4ddc7c67053793d9f6693681176d8c424
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528839"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516657"
 ---
 # <a name="phoneticfullname"></a>PhoneticFullName
 
-Das **PhoneticFullName** -Element enthält den vollständigen Namen eines Kontakts, einschließlich des vor-und Nachnamens, phonetisch buchstabiert. 
+Das **PhoneticFullName** -Element enthält den vollständigen Namen eines Kontakts, einschließlich des Vor- und Nachnamens, phonetisch geschrieben. 
   
 ```XML
 <PhoneticFullName/>
@@ -44,9 +44,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist eine Zeichenfolge, die den vollständigen Namen eines Kontakts darstellt, einschließlich des vor-und Nachnamens, phonetisch buchstabiert.
+Der Textwert ist eine Zeichenfolge, die den vollständigen Namen eines Kontakts, einschließlich des Vor- und Nachnamens, phonetisch geschrieben darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

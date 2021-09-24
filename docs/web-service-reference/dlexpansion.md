@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DLExpansion
 api_type:
 - schema
 ms.assetid: 9e50278d-fe6a-45e2-a72b-0fb06809e128
 description: Das DLExpansion-Element enthält ein Array von Postfächern, die in einer Verteilerliste enthalten sind.
-ms.openlocfilehash: 079ad1c0f114d201f5d1b91c3fd9bb45b943cc1a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7c214948b133ea2f30a47b2321c27b555b90e2fa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456997"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517210"
 ---
 # <a name="dlexpansion"></a>DLExpansion
 
-Das **DLExpansion** -Element enthält ein Array von Postfächern, die in einer Verteilerliste enthalten sind. 
+Das **DLExpansion-Element** enthält ein Array von Postfächern, die in einer Verteilerliste enthalten sind. 
   
 - [ExpandDLResponse](expanddlresponse.md) 
 - [ResponseMessages](responsemessages.md) 
@@ -44,10 +44,10 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
 |**IndexedPagingOffset** <br/> |Stellt den nächsten Index dar, der für die nächste Anforderung verwendet werden soll, wenn Sie eine indizierte Seitenansicht verwenden.  <br/> |
-|**NumeratorOffset** <br/> |Stellt den neuen Zählerwert dar, der für die nächste Anforderung verwendet werden soll, wenn Sie Ansichten mit Bruch Seiten verwenden.  <br/> |
-|**AbsoluteDenominator** <br/> |Stellt den nächsten Nenner dar, der für die nächste Anforderung verwendet werden soll, wenn Sie Ansichten mit Bruch Seiten verwenden.  <br/> |
-|**IncludesLastItemInRange** <br/> |Gibt an, ob die aktuellen Ergebnisse das letzte Element in der Abfrage enthalten, sodass kein zusätzliches Paging erforderlich ist.  <br/> |
-|**TotalItemsInView** <br/> |Stellt die Gesamtzahl der Elemente in der Ansicht dar.  <br/> |
+|**NumeratorOffset** <br/> |Stellt den neuen Zählerwert dar, der für die nächste Anforderung verwendet werden soll, wenn Sie Seitenansichten für Bruchzahlen verwenden.  <br/> |
+|**AbsoluteDenominator** <br/> |Stellt den nächsten Nenner dar, der für die nächste Anforderung verwendet werden soll, wenn Sie Seitenansichten für Bruchzahlen verwenden.  <br/> |
+|**IncludesLastItemInRange** <br/> |Gibt an, ob die aktuellen Ergebnisse das letzte Element in der Abfrage enthalten, sodass keine zusätzliche Auslagerung erforderlich ist.  <br/> |
+|**TotalItemsInView** <br/> |Stellt die Gesamtanzahl der Elemente in der Ansicht dar.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -61,7 +61,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |:-----|:-----|
 |[ExpandDLResponseMessage](expanddlresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen ExpandDL-Anforderung.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

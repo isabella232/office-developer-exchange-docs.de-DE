@@ -5,31 +5,31 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetStreamingEvents
 api_type:
 - schema
 ms.assetid: 8da95423-72bc-4034-90a8-162eedcd059b
-description: Hier finden Sie Informationen zum GetStreamingEvents-EWS-Vorgang.
-ms.openlocfilehash: 27744ec40d7c7cb551f35ed5f6fcb726f23d4865
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum EWS-Vorgang "GetStreamingEvents".
+ms.openlocfilehash: 794407c2224e606be4f32cc610eff9f95e65a83b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530169"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523062"
 ---
 # <a name="getstreamingevents-operation"></a>GetStreamingEvents-Vorgang
 
-Hier finden Sie Informationen zum **GetStreamingEvents** -EWS-Vorgang. 
+Hier finden Sie Informationen zum EWS-Vorgang **"GetStreamingEvents".** 
   
-Der **GetStreamingEvents** -Vorgang wird von Streaming-Abonnementclients verwendet, um Benachrichtigungen vom Client Zugriffsserver anzufordern. Die **GetStreamingEvents** -Antwort gibt ein Array von Elementen und Ereignissen zurück, die seit der letzten Benachrichtigung in einem Postfach aufgetreten sind. 
+Der **GetStreamingEvents-Vorgang** wird von Streamingabonnementclients verwendet, um Benachrichtigungen vom Clientzugriffsserver anzufordern. Die **GetStreamingEvents-Antwort** gibt ein Array von Elementen und Ereignissen zurück, die seit der letzten Benachrichtigung in einem Postfach aufgetreten sind. 
   
-## <a name="getstreamingevents-request-example"></a>GetStreamingEvents-Anforderungs Beispiel
+## <a name="getstreamingevents-request-example"></a>GetStreamingEvents-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel eines **GetStreamingEvents** -Vorgangs wird gezeigt, wie die Ereignisse und Elemente angefordert werden, die einem Abonnement zugeordnet sind, das durch die Abonnement-ID identifiziert wird. 
+Das folgende Beispiel eines **GetStreamingEvents-Vorgangs** zeigt, wie Sie die Ereignisse und Elemente anfordern, die einem Abonnement zugeordnet sind, das durch den Abonnementbezeichner identifiziert wird. 
   
 ### <a name="code"></a>Code
 
@@ -47,21 +47,21 @@ Im folgenden Beispiel eines **GetStreamingEvents** -Vorgangs wird gezeigt, wie d
 </soap:Envelope>
 ```
 
-### <a name="getstreamingevents-request-elements"></a>GetStreamingEvents-anforderungselemente
+### <a name="getstreamingevents-request-elements"></a>GetStreamingEvents-Anforderungselemente
 
 In der Anforderung werden folgende Elemente verwendet:
   
 - [GetStreamingEvents](getstreamingevents.md)
     
-- [Abonnement-GetStreamingEvents](subscriptionid-getstreamingevents.md)
+- [SubscriptionId (GetStreamingEvents)](subscriptionid-getstreamingevents.md)
     
 - [ConnectionTimeout](connectiontimeout.md)
     
-## <a name="successful-getstreamingevents-response-example"></a>Erfolgreiches GetStreamingEvents-Antwortbeispiel
+## <a name="successful-getstreamingevents-response-example"></a>Beispiel für erfolgreiche GetStreamingEvents-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **GetStreamingEvents** -Antwort werden die Benachrichtigungen angezeigt, die an den Client gesendet werden, wenn eine neue e-Mail-Nachricht empfangen wird. Es enthält Benachrichtigungen für die folgenden Ereignisse: CreatedEvent, newmail und ModifiedEvent. 
+Das folgende Beispiel einer **GetStreamingEvents-Antwort** zeigt die Benachrichtigungen, die an den Client gesendet werden, wenn eine neue E-Mail-Nachricht empfangen wird. Es enthält Benachrichtigungen für die folgenden Ereignisse: CreatedEvent, NewMail und ModifiedEvent. 
   
 ### <a name="code"></a>Code
 
@@ -116,15 +116,15 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Benachrichtigung](notification-ex15websvcsotherref.md)
     
-- [Abonnement-GetStreamingEvents](subscriptionid-getstreamingevents.md)
+- [SubscriptionId (GetStreamingEvents)](subscriptionid-getstreamingevents.md)
     
-Um andere Optionen für die Antwortnachricht des **GetStreamingEvents** -Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [Benachrichtigungs](notification-ex15websvcsotherref.md) Element. 
+Weitere Optionen für die Antwortnachricht des **GetStreamingEvents-Vorgangs** finden Sie in der Schemahierarchie. Beginnen Sie mit dem [Notification-Element.](notification-ex15websvcsotherref.md) 
   
-## <a name="getstreamingevents-error-response-example"></a>GetStreamingEvents-Fehlerantwort Beispiel
+## <a name="getstreamingevents-error-response-example"></a>GetStreamingEvents-Fehlerantwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetStreamingEvents** -Anforderung. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetStreamingEvents-Anforderung.** 
   
 ### <a name="code"></a>Code
 
@@ -153,23 +153,23 @@ Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetStreamingEvents** -
 </soap:Envelope>
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Bei der Verarbeitung einer **GetStreamingEvents** -Anforderung führt der Client Zugriffsserver die folgenden Schritte aus: 
+Bei der Verarbeitung einer **GetStreamingEvents-Anforderung** führt der Clientzugriffsserver die folgenden Schritte aus: 
   
-1. Die [Abonnement-GetStreamingEvents](subscriptionid-getstreamingevents.md) der Anforderung wird als gültiges Abonnement bestätigt, das auf dem Client Zugriffsserver gehostet wird. Wenn dies nicht der Fall ist, schlägt der **GetStreamingEvents** -Aufruf fehl. 
+1. Die [SubscriptionId (GetStreamingEvents)](subscriptionid-getstreamingevents.md) der Anforderung wird als gültiges Abonnement bestätigt, das auf dem Clientzugriffsserver gehostet wird. Ist dies nicht der Typ, schlägt der **GetStreamingEvents-Aufruf** fehl. 
     
-2. Die SMTP-Adresse des authentifizierten Benutzers für die Anforderung wird überprüft, um Identitätswechsel Rechte zu besitzen. Wenn dies nicht der Fall ist, schlägt die **GetStreamingEvents** -Anforderung fehl. 
+2. Die SMTP-Adresse des authentifizierten Benutzers für die Anforderung wird überprüft, um Identitätswechselrechte zu besitzen. Wenn dies nicht der Fall ist, schlägt die **GetStreamingEvents-Anforderung** fehl. 
     
-3. Die Abonnement Warteschlange wird für Ereignisse abgefragt, die darauf warten, an den Client gesendet zu werden. Wenn die Warteschlange nicht leer ist, werden die ersten 50-Ereignisse aus der Warteschlange aus der Warteschlange gezogen und in eine Benachrichtigung codiert.
+3. Die Abonnementwarteschlange wird nach Ereignissen abgefragt, die darauf warten, an den Client gesendet zu werden. Wenn die Warteschlange nicht leer ist, werden die ersten 50 Ereignisse aus der Warteschlange aus der Warteschlange abgerufen und in eine Benachrichtigung codiert.
     
-4. Wenn in der Warteschlange keine Ereignisse gefunden werden, wird ein [StatusEvent](statusevent.md) generiert und in einer Benachrichtigungsantwort codiert. 
+4. Wenn in der Warteschlange keine Ereignisse gefunden werden, wird ein [StatusEvent](statusevent.md) generiert und in eine Benachrichtigungsantwort codiert. 
     
 5. Die Benachrichtigungsantwort wird an den Client zurückgegeben.
     
-6. Die Ereignisse, die in der Benachrichtigung enthalten sind, werden aus der Abonnement Warteschlange entfernt, und der Client Zugriffsserver-lokales letzte Wasserzeichen für das Abonnement wird auf das Wasserzeichen des letzten zurückgegebenen Ereignisses festgelegt.
+6. Die Ereignisse, die in der Benachrichtigung enthalten sind, werden aus der Abonnementwarteschlange entfernt, und das serverlokale letzte Wasserzeichen des Clientzugriffs für das Abonnement wird auf das Wasserzeichen des letzten zurückgegebenen Ereignisses festgelegt.
     
-7. Der Timeout-Zeitgeber für das Abonnement wird zurückgesetzt.
+7. Der Timeouttimer für das Abonnement wird zurückgesetzt.
     
 ## <a name="see-also"></a>Siehe auch
 

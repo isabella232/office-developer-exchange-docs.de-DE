@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ReminderDueBy
 api_type:
 - schema
 ms.assetid: e28a0485-86af-4a4e-a2ba-3ad2d4ebff6f
-description: Das ReminderDueBy-Element stellt das Datum und die Uhrzeit des Eintretens des Ereignisses dar. Dies wird vom ReminderMinutesBeforeStart-Element verwendet, um zu bestimmen, wann die Erinnerung angezeigt wird.
-ms.openlocfilehash: 206534da4498e871e99635b236e500dec573eb5a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ReminderDueBy-Element stellt das Datum und die Uhrzeit des Ereignisses dar. Dies wird vom ReminderMinutesBeforeStart-Element verwendet, um zu bestimmen, wann die Erinnerung angezeigt wird.
+ms.openlocfilehash: a94fd9507428fb588eff1b3610a572c858aa0de7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528727"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523617"
 ---
 # <a name="reminderdueby"></a>ReminderDueBy
 
-Das **ReminderDueBy** -Element stellt das Datum und die Uhrzeit des Eintretens des Ereignisses dar. Dies wird vom [ReminderMinutesBeforeStart](reminderminutesbeforestart.md) -Element verwendet, um zu bestimmen, wann die Erinnerung angezeigt wird. 
+Das **ReminderDueBy-Element** stellt das Datum und die Uhrzeit des Ereignisses dar. Dies wird vom [ReminderMinutesBeforeStart-Element](reminderminutesbeforestart.md) verwendet, um zu bestimmen, wann die Erinnerung angezeigt wird. 
   
 ```xml
 <ReminderDueBy/>
@@ -58,9 +58,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt das Datum und die Uhrzeit der Fälligkeit einer Erinnerung dar.
+Der Textwert stellt das Datum und die Uhrzeit dar, zu der eine Erinnerung fällig ist.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

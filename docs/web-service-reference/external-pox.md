@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8eed1f79-6eb3-4a88-80fb-d4edf9f34fda
-description: Das externe Element enthält eine Sammlung von URLs, die ein Client für die Verbindung mit Exchange von außerhalb des Netzwerks der Organisation verwenden kann.
-ms.openlocfilehash: 45d7e72c5a43c5c468c1edd303a5e5ea8c2cb62e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das External-Element enthält eine Auflistung von URLs, die ein Client verwenden kann, um eine Verbindung mit Exchange von außerhalb des Netzwerks der Organisation herzustellen.
+ms.openlocfilehash: 0e7e92029a01a25d5017d3b5199a7899403c975f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457970"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510099"
 ---
 # <a name="external-pox"></a>Extern (POX)
 
-Das **externe** Element enthält eine Sammlung von URLs, die ein Client für die Verbindung mit Exchange von außerhalb des Netzwerks der Organisation verwenden kann. 
+Das **External-Element** enthält eine Auflistung von URLs, die ein Client zum Herstellen einer Verbindung mit Exchange von außerhalb des Unternehmensnetzwerks verwenden kann. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -51,18 +51,18 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OWAUrl (POX)](owaurl-pox.md) <br/> |Beschreibt die URL und das Authentifizierungsschema, das für den Zugriff auf einen bestimmten Computer verwendet wird, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist, die Outlook Web Access hostet.  <br/> |
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist. Dieses **Protokoll** Element hat nur zwei untergeordnete Elemente: ein [Type (POX)](type-pox.md) -Element, das das Verbindungsprotokoll angibt, und ein [vom asurl (POX)](asurl-pox.md) -Element, das den EWS-Endpunkt für den Verfügbarkeits-Webdienst angibt.  <br/> |
+|[OWAUrl (POX)](owaurl-pox.md) <br/> |Beschreibt die URL und das Authentifizierungsschema, die für den Zugriff auf einen bestimmten Computer verwendet werden, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist, die Outlook Web Access hostet.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen zum Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist. Dieses **Protokollelement** verfügt nur über zwei untergeordnete Elemente: ein [Type (POX)-Element,](type-pox.md) das das Verbindungsprotokoll angibt, und ein [ASUrl (POX)-Element,](asurl-pox.md) das den EWS-Endpunkt für den Verfügbarkeitswebdienst angibt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen zum Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das **externe** Element ist ein optionales untergeordnetes Element des **Protocol** -Elements. 
+Das **External-Element** ist ein optionales untergeordnetes Element des **Protocol-Elements.** 
   
 ## <a name="see-also"></a>Siehe auch
 

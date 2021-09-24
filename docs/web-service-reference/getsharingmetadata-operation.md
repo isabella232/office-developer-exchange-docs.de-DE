@@ -5,38 +5,38 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetSharingMetadata
 api_type:
 - schema
 ms.assetid: eaf29427-ecf8-4a5e-9a54-db2e6414b35e
-description: Der GetSharingMetadata-Vorgang ruft ein nicht transparentes Authentifizierungstoken ab, das eine Freigabeeinladung identifiziert.
-ms.openlocfilehash: 0390b9caa7b2e9847b1e8dcdc1b911a35e3c5864
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetSharingMetadata-Vorgang ruft ein undurchsichtiges Authentifizierungstoken ab, das eine Freigabe-Einladung identifiziert.
+ms.openlocfilehash: c7b2d021f618abe5e49022949e85aa212184800c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530183"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516902"
 ---
 # <a name="getsharingmetadata-operation"></a>GetSharingMetadata-Vorgang
 
-Der **GetSharingMetadata** -Vorgang ruft ein nicht transparentes Authentifizierungstoken ab, das eine Freigabeeinladung identifiziert. 
+Der **GetSharingMetadata-Vorgang** ruft ein undurchsichtiges Authentifizierungstoken ab, das eine Freigabe-Einladung identifiziert. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der **GetSharingMetadata** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
+Der **GetSharingMetadata-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben sind. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="getsharingmetadata-request-example"></a>GetSharingMetadata-Anforderungs Beispiel
+## <a name="getsharingmetadata-request-example"></a>GetSharingMetadata-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt, wie Sie eine Anforderung zum Abrufen eines nicht transparenten Authentifizierungstokens erstellen, das eine Freigabeeinladung identifiziert. In diesem Beispiel möchte user1@contoso.com den Ordner freigeben, der durch das [IdOfFolderToShare](idoffoldertoshare.md) -Element mit user1@fabikam.com und User2@Test.com angegeben wird. 
+Das folgende Beispiel zeigt, wie Sie eine Anforderung zum Abrufen eines undurchsichtigen Authentifizierungstokens erstellen, das eine Freigabe-Einladung identifiziert. In diesem Beispiel möchte user1@contoso.com den durch das [IdOfFolderToShare-Element](idoffoldertoshare.md) angegebenen Ordner für user1@fabikam.com und user2@test.com freigeben. 
   
 ### <a name="code"></a>Code
 
@@ -65,13 +65,13 @@ Das folgende Beispiel zeigt, wie Sie eine Anforderung zum Abrufen eines nicht tr
 
 ### <a name="comments"></a>Comments
 
-Das [Recipients (ArrayOfSmtpAddressType)-](recipients-arrayofsmtpaddresstype.md) Element enthält ein [SmtpAddress](smtpaddress.md) -Element für jeden beabsichtigten Empfänger der Freigabeeinladung. 
+Das [Recipients (ArrayOfSmtpAddressType)-Element](recipients-arrayofsmtpaddresstype.md) enthält ein [SmtpAddress-Element](smtpaddress.md) für jeden beabsichtigten Empfänger der Freigabeeinladung. 
   
 ## <a name="successful-getsharingmetadata-response"></a>Erfolgreiche GetSharingMetadata-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetSharingMetadata** -Anforderung. In diesem Beispiel wurden in der entsprechenden **GetSharingMetadata** -Anforderung zwei Empfänger angegeben: user1@fabrikam.com und User2@Test.com. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetSharingMetadata-Anforderung.** In diesem Beispiel wurden zwei Empfänger in der entsprechenden **GetSharingMetadata-Anforderung** angegeben: user1@fabrikam.com und user2@test.com. 
   
 ### <a name="code"></a>Code
 
@@ -156,17 +156,17 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetSharingMetad
 
 ### <a name="comments"></a>Comments
 
-Die Antwort enthält ein [EncryptedSharedFolderData](encryptedsharedfolderdata.md) -Element für jede Organisation, die durch gültige Empfänger dargestellt wird, die in der **GetSharingMetadata** -Anforderung angegeben sind. 
+Die Antwort enthält ein [EncryptedSharedFolderData-Element](encryptedsharedfolderdata.md) für jede Organisation, die durch gültige Empfänger dargestellt wird, die in der **GetSharingMetadata-Anforderung** angegeben sind. 
   
-Die **GetSharingMetadata** -Anforderung ist erfolgreich, auch wenn in der Anforderung ungültige Empfänger angegeben werden. Das [InvalidRecipients](invalidrecipients.md) -Element enthält Informationen zu ungültigen Empfängern. Informationen zu den Gründen, warum ein Empfänger möglicherweise ungültig ist, finden Sie unter [Response Code (InvalidRecipientResponseCodeType)](responsecode-invalidrecipientresponsecodetype.md).
+Die **GetSharingMetadata-Anforderung** ist auch dann erfolgreich, wenn in der Anforderung ungültige Empfänger angegeben sind. Das [InvalidRecipients-Element](invalidrecipients.md) enthält Informationen zu ungültigen Empfängern. Informationen zu den Gründen, warum ein Empfänger möglicherweise ungültig ist, finden Sie unter [ResponseCode (InvalidRecipientResponseCodeType).](responsecode-invalidrecipientresponsecodetype.md)
   
-Wenn alle vorgesehenen Empfänger ungültig sind, ist das [EncryptedSharedFolderDataCollection](encryptedsharedfolderdatacollection.md) -Element leer. 
+Wenn alle beabsichtigten Empfänger ungültig sind, ist das [EncryptedSharedFolderDataCollection-Element](encryptedsharedfolderdatacollection.md) leer. 
   
 ## <a name="getsharingmetadata-error-response"></a>GetSharingMetadata-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetSharingMetadata** -Anforderung. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetSharingMetadata-Anforderung.** 
   
 ### <a name="code"></a>Code
 

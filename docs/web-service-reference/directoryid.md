@@ -1,23 +1,23 @@
 ---
-title: Verzeichnis-Nr
+title: DirectoryId
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4958764f-64dd-4ae7-ade1-0255cb414fcc
-description: Das Directory-ID-Element enthält die Verzeichnis-ID eines Kontakts.
-ms.openlocfilehash: bdc75f72cecd6424a3e85588b7af24003bf45d6b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DirectoryId-Element enthält die Verzeichnis-ID eines Kontakts.
+ms.openlocfilehash: 544cee39a5581bb44556f2879d2a8b99c23c3756
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462094"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510162"
 ---
-# <a name="directoryid"></a>Verzeichnis-Nr
+# <a name="directoryid"></a>DirectoryId
 
-Das **Directory** -ID-Element enthält die Verzeichnis-ID eines Kontakts. 
+Das **DirectoryId-Element** enthält die Verzeichnis-ID eines Kontakts. 
   
 ```XML
 <DirectoryId/>
@@ -44,9 +44,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text ist eine Zeichenfolge, die die Verzeichnis-ID des Kontakts darstellt.
+Der Textwert ist eine Zeichenfolge, die die Verzeichnis-ID des Kontakts darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

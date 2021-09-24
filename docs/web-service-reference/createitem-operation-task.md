@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateItem
 api_type:
 - schema
 ms.assetid: 12c5da4d-290c-4a8a-a965-0bf5d55c7978
-description: Der CreateItem-Vorgang erstellt Aufgabenelemente in der Exchange-Informationsspeicher.
-ms.openlocfilehash: 502108843193e7ed8377b0fade9e106ef3d1976c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der CreateItem-Vorgang erstellt Aufgabenelemente im Exchange Speicher.
+ms.openlocfilehash: 814a32e82cd5c1c95be252d1b53387741898dd40
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457102"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510257"
 ---
 # <a name="createitem-operation-task"></a>CreateItem-Vorgang (Aufgabe)
 
-Der CreateItem-Vorgang erstellt Aufgabenelemente in der Exchange-Informationsspeicher.
+Der CreateItem-Vorgang erstellt Aufgabenelemente im Exchange Speicher.
   
-## <a name="task-createitem-request"></a>Aufgaben-CreateItem-Anforderung
+## <a name="task-createitem-request"></a>CreateItem-Anforderung für Aufgaben
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer CreateItem-Anforderung wird gezeigt, wie ein Aufgabenelement in einem Postfach erstellt wird.
+Das folgende Beispiel einer CreateItem-Anforderung zeigt, wie ein Aufgabenelement in einem Postfach erstellt wird.
   
 ### <a name="code"></a>Code
 
@@ -55,27 +55,27 @@ Im folgenden Beispiel einer CreateItem-Anforderung wird gezeigt, wie ein Aufgabe
 
 ### <a name="comments"></a>Comments
 
-Anforderungen für wiederkehrende Aufgaben werden geändert, wenn Sie von dem Computer empfangen werden, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist. Die folgenden Änderungen treten auf:
+Anforderungen für wiederkehrende Aufgaben werden geändert, wenn sie von dem Computer empfangen werden, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist. Die folgenden Änderungen treten auf:
   
-- Nur das Datum wird für die StartDate-Eigenschaft [(Serie)](startdate-recurrence.md) des Serien Bereichs des Vorgangs gespeichert. Der Zeitbereich wird abgeschnitten. 
+- Nur das Datum wird für die [StartDate (Recurrence)-Eigenschaft](startdate-recurrence.md) des Serienbereichs der Aufgabe gespeichert. Der Zeitteil ist abgeschnitten. 
     
-- Die [StartDate-Eigenschaft (Serie)](startdate-recurrence.md) kann abhängig vom Serienmuster angepasst werden. Wenn beispielsweise das Serienmuster jeden Montag angegeben wird und das Startwert auf den 26. Oktober 2006 festgelegt ist, was ein Donnerstag ist, wird StartDate auf den 30. Oktober 2006 eingestellt, was der nächste Montag ist. 
+- Die [StartDate (Recurrence)-Eigenschaft](startdate-recurrence.md) kann je nach Serienmuster angepasst werden. Wenn das Serienmuster beispielsweise als jeden Montag angegeben wird und das StartDate auf den 26. Oktober 2006 festgelegt ist, also einen Donnerstag, wird StartDate an den 30. Oktober 2006 angepasst, also den nächsten Montag. 
     
-- Wenn die [StartDate](startdate.md) -Eigenschaft des Vorgangs festgelegt ist, wird Sie entsprechend der [StartDate (Serie)](startdate-recurrence.md) des Serien Bereichs aktualisiert. Die [DueDate](duedate.md) -Eigenschaft des Tasks wird auch basierend auf dem neuen [StartDate](startdate.md)aktualisiert.
+- Wenn die [StartDate-Eigenschaft](startdate.md) des Vorgangs festgelegt ist, wird sie so aktualisiert, dass sie mit dem [StartDate (Recurrence)](startdate-recurrence.md) des Serienbereichs übereinstimmt. Die [DueDate](duedate.md) -Eigenschaft der Aufgabe wird auch basierend auf dem neuen [StartDate](startdate.md)aktualisiert.
     
-- Wenn das [Startwert nicht](startdate.md) festgelegt ist, wird nur die [DueDate](duedate.md) -Eigenschaft so aktualisiert, dass Sie der [StartDate (Serie)](startdate-recurrence.md) des Serien Bereichs entspricht. 
+- Wenn das [StartDate-Objekt](startdate.md) nicht festgelegt ist, wird nur die [DueDate-Eigenschaft](duedate.md) so aktualisiert, dass sie mit dem [StartDate (Recurrence)](startdate-recurrence.md) des Serienbereichs übereinstimmt. 
     
-In der folgenden Tabelle sind die Änderungen aufgeführt, die der Client Zugriffsserver für eine wiederkehrende Aufgabe vornimmt, die ein Task. Serie. Pattern jedes montags aufweist.
+In der folgenden Tabelle sind die Änderungen aufgeführt, die der Clientzugriffsserver an einer wiederkehrenden Aufgabe vornimmt, die jeden Montag ein Task.Recurrence.Pattern aufweist.
   
-**Änderungen an einer wiederkehrenden Aufgabe**
+**Änderungen an einer Wiederkehrenden Aufgabe**
 
-|**Eigenschaft**|**Ursprünglicher Wert**|**Aktualisierter Wert**|
+|**Eigenschaft**|**Originalwert**|**Aktualisierter Wert**|
 |:-----|:-----|:-----|
-|Task. StartDate  <br/> |1. Januar 2006  <br/> |30. Oktober 2006  <br/> |
-|Task. DueDate  <br/> |3. Januar 2006  <br/> |1. November 2006  <br/> |
-|Task. Serie. Range. StartDate  <br/> |26. Oktober 2006  <br/> |30. Oktober 2006  <br/> |
+|Task.StartDate  <br/> |1. Januar 2006  <br/> |30. Oktober 2006  <br/> |
+|Task.DueDate  <br/> |3. Januar 2006  <br/> |1. November 2006  <br/> |
+|Task.Recurrence.Range.StartDate  <br/> |26. Oktober 2006  <br/> |30. Oktober 2006  <br/> |
    
-Wenn ein Zielordner nicht angegeben ist, werden die Aufgabenelemente standardmäßig im Ordner Aufgaben erstellt.
+Wenn kein Zielordner angegeben ist, werden standardmäßig Aufgabenelemente im Ordner "Aufgaben" erstellt.
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -83,9 +83,9 @@ In der Anforderung werden folgende Elemente verwendet:
   
 - [CreateItem](createitem.md)
     
-- [Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
-- [Task](task.md)
+- [Aufgabe](task.md)
     
 - [Betreff](subject.md)
     
@@ -93,7 +93,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Status](status.md)
     
-## <a name="successful-task-createitem-response"></a>Erfolgreiche Aufgabe CreateItem-Antwort
+## <a name="successful-task-createitem-response"></a>Erfolgreiche CreateItem-Antwort für Aufgabe
 
 ### <a name="description"></a>Beschreibung
 
@@ -131,7 +131,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateItem-Anforde
 
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
-Die Antwort enthält die folgenden Elemente:
+Die folgenden Elemente sind in der Antwort enthalten:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -143,9 +143,9 @@ Die Antwort enthält die folgenden Elemente:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
-- [Task](task.md)
+- [Aufgabe](task.md)
     
 - [ItemId](itemid.md)
     

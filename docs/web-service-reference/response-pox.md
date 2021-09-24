@@ -1,26 +1,26 @@
 ---
-title: Response (POX)
+title: Antwort (POX)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 002b72f2-f94d-467c-8e6c-b3818f7e51dc
 description: 'Gilt für:'
-ms.openlocfilehash: 30f6a5c2c6e3034fde8849ab1fced3519029b1f9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d613bbb1d8573c1eb60c053ddc064f564676a7c4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44448975"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523482"
 ---
-# <a name="response-pox"></a>Response (POX)
+# <a name="response-pox"></a>Antwort (POX)
 
 
   
-Das **Response** -Element enthält die Antwort des AutoErmittlungsdiensts. 
+Das **Response-Element** enthält die Antwort des AutoErmittlungsdiensts. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -45,14 +45,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Benutzer (POX)](user-pox.md) <br/> |Enthält benutzerspezifische Informationen. Dieses Element ist optional.  <br/> |
-|[Konto (POX)](account-pox.md) <br/> |Gibt Kontoeinstellungen für den Benutzer an.  <br/> |
+|[Benutzer (POX)](user-pox.md) <br/> |Stellt benutzerspezifische Informationen bereit. Dieses Element ist optional.  <br/> |
+|[Konto (POX)](account-pox.md) <br/> |Gibt die Kontoeinstellungen für den Benutzer an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AutoErmittlung (POX)](autodiscover-pox.md) <br/> |Das Stammelement in einer Auto Ermittlungs Antwort.  <br/> |
+|[AutoErmittlung (POX)](autodiscover-pox.md) <br/> |Das Stammelement in einer AutoErmittlungsantwort.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

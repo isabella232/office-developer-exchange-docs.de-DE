@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MoveItem
 api_type:
 - schema
 ms.assetid: a4593377-22dd-415f-b01d-387389ef650f
-description: Das MoveItem-Element definiert eine Anforderung zum verlagern eines Elements in der Exchange-Informationsspeicher.
-ms.openlocfilehash: 61dbb91cc20a71f50999241b3daa21bf8ebfbcc8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MoveItem-Element definiert eine Anforderung zum Verschieben eines Elements im Exchange Speicher.
+ms.openlocfilehash: 5df569722534b8a248da64b71f21219866173aab
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530401"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509602"
 ---
 # <a name="moveitem"></a>MoveItem
 
-Das **MoveItem** -Element definiert eine Anforderung zum verlagern eines Elements in der Exchange-Informationsspeicher. 
+Das **MoveItem-Element** definiert eine Anforderung zum Verschieben eines Elements im Exchange Speicher. 
   
 ```XML
 <MoveItem>
@@ -44,19 +44,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Tofolder-Datei](tofolderid.md) <br/> |Stellt den Zielordner für ein verschobenes Element dar.  <br/> |
-|[ItemIds](itemids.md) <br/> |Enthält ein Array von identifizierten Elementen, das in den durch das [tofolder](tofolderid.md) -Element dargestellten Ordner zu navigieren ist.  <br/> |
+|[ToFolderId](tofolderid.md) <br/> |Stellt den Zielordner für ein verschobenes Element dar.  <br/> |
+|[ItemIds](itemids.md) <br/> |Enthält ein Array identifizierter Elemente, die in den ordner verschoben werden sollen, der durch das [ToFolderId-Element](tofolderid.md) dargestellt wird.  <br/> |
 |[ReturnNewItemIds](returnnewitemids.md) <br/> |Gibt an, ob die Elementbezeichner neuer Elemente in der Antwort zurückgegeben werden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -66,7 +66,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

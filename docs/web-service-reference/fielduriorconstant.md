@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FieldURIOrConstant
 api_type:
 - schema
 ms.assetid: 89d7a87e-7c93-49b8-83ec-8798e08c1052
 description: Das FieldURIOrConstant-Element stellt entweder eine Eigenschaft oder einen konstanten Wert dar, der beim Vergleich mit einer anderen Eigenschaft verwendet werden soll.
-ms.openlocfilehash: 8b5cb888a3bd2026b15e38fc8c005ab5ef5a2b11
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: bc7edb4542c68e02e9661ff0a4c7066362a04081
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461226"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535241"
 ---
 # <a name="fielduriorconstant"></a>FieldURIOrConstant
 
-Das **FieldURIOrConstant** -Element stellt entweder eine Eigenschaft oder einen konstanten Wert dar, der beim Vergleich mit einer anderen Eigenschaft verwendet werden soll. 
+Das **FieldURIOrConstant-Element** stellt entweder eine Eigenschaft oder einen konstanten Wert dar, der beim Vergleich mit einer anderen Eigenschaft verwendet werden soll. 
   
 ```xml
 <FieldURIOrConstant>
@@ -61,10 +61,10 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Konstante](constant.md) <br/> |Gibt einen konstanten Wert in einer Einschränkung an.  <br/> |
-|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member eines Wörterbuchs.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert MAPI-Eigenschaften.  <br/> |
+|[Konstante](constant.md) <br/> |Identifiziert einen konstanten Wert in einer Einschränkung.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifies frequently referenced properties by URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Mitglieder eines Wörterbuchs.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifies MAPI properties.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -72,18 +72,18 @@ Keine.
 |:-----|:-----|
 |[IsEqualTo](isequalto.md) <br/> |Stellt einen Suchausdruck dar, der eine Eigenschaft mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und true ausgibt, wenn sie gleich sind.  <br/> |
 |[IsGreaterThan](isgreaterthan.md) <br/> |Stellt einen Suchausdruck dar, der eine Eigenschaft mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und true zurückgibt, wenn die erste Eigenschaft größer ist.  <br/> |
-|[IsGreaterThanOrEqualTo](isgreaterthanorequalto.md) <br/> |Stellt einen Suchausdruck dar, der eine Eigenschaft mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und true zurückgibt, wenn die erste Eigenschaft größer oder gleich dem zweiten Wert oder der Eigenschaft ist.  <br/> |
-|[IsLessThan](islessthan.md) <br/> |Stellt einen Suchausdruck dar, der eine Eigenschaft mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und true zurückgibt, wenn die erste Eigenschaft kleiner als der zweite Wert oder die Eigenschaft ist.  <br/> |
-|[IsLessThanOrEqualTo](islessthanorequalto.md) <br/> |Stellt einen Suchausdruck dar, der eine Eigenschaft mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und true zurückgibt, wenn die erste Eigenschaft kleiner oder gleich dem zweiten Wert oder der Eigenschaft ist.  <br/> |
+|[IsGreaterThanOrEqualTo](isgreaterthanorequalto.md) <br/> |Stellt einen Suchausdruck dar, der eine Eigenschaft mit einem Konstantenwert oder einer anderen Eigenschaft vergleicht und "true" zurückgibt, wenn die erste Eigenschaft größer oder gleich dem zweiten Wert oder der zweiten Eigenschaft ist.  <br/> |
+|[IsLessThan](islessthan.md) <br/> |Stellt einen Suchausdruck dar, der eine Eigenschaft mit einem Konstantenwert oder einer anderen Eigenschaft vergleicht und "true" zurückgibt, wenn die erste Eigenschaft kleiner als der zweite Wert oder die zweite Eigenschaft ist.  <br/> |
+|[IsLessThanOrEqualTo](islessthanorequalto.md) <br/> |Stellt einen Suchausdruck dar, der eine Eigenschaft mit einem Konstantenwert oder einer anderen Eigenschaft vergleicht und "true" zurückgibt, wenn die erste Eigenschaft kleiner oder gleich dem zweiten Wert oder der zweiten Eigenschaft ist.  <br/> |
 |[IsNotEqualTo](isnotequalto.md) <br/> |Stellt einen Suchausdruck dar, der einer Eigenschaft mit einem konstanten Wert oder einer anderen Eigenschaft vergleicht und true zurückgibt, wenn die Wert nicht identisch sind.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 ## <a name="example"></a>Beispiel
 
-Das folgende XML-Beispiel zeigt das FieldURIOrConstant-Element, das sowohl mit einer Konstanten als auch mit einem Feld-URI verwendet wird.
+Das folgende XML-Beispiel zeigt das FieldURIOrConstant-Element, das mit einer Konstante und einem Feld-URI verwendet wird.
   
 ```xml
 <Restriction>

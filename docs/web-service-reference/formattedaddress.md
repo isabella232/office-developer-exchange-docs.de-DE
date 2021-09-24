@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 643f8663-1fab-4625-a7e9-5724e352972b
 description: Das FormattedAddress-Element gibt den formatierten Anzeigewert der zugeordneten Postadresse an.
-ms.openlocfilehash: 9150a3bb5bc81f7afecdafbf0cc33fafff597578
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 379b02a4ed667ec1a01b54f26dd6d58c7f66fa89
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461940"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535105"
 ---
 # <a name="formattedaddress"></a>FormattedAddress
 
-Das **FormattedAddress** -Element gibt den formatierten Anzeigewert der zugeordneten Postadresse an. 
+Das **FormattedAddress-Element** gibt den formatierten Anzeigewert der zugeordneten Postadresse an. 
   
 ```XML
 <FormattedAddress></FormattedAddress>
@@ -40,14 +40,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Wert (PersonaPostalAddressType)](value-personapostaladdresstype.md) <br/> |Gibt Informationen an, die einer Postadresse zugeordnet sind.  <br/> |
+|[Wert (PersonaPostalAddressType)](value-personapostaladdresstype.md) <br/> |Gibt Informationen an, die einer Postanschrift zugeordnet sind.  <br/> |
 |[PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md) <br/> |Gibt die Postanschrift des Standorts an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **FormattedAddress** -Elements ist ein String-Wert, der die formatierte Adresse angibt. 
+Der Textwert des **FormattedAddress-Elements** ist ein Zeichenfolgenwert, der die formatierte Adresse angibt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -59,7 +59,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

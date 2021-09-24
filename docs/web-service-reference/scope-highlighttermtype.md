@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3b16170c-cb46-4ac5-9ce1-884f1b00b974
-description: Das Scope-Element gibt die Zeichenfolge an, die hervorgehoben werden soll.
-ms.openlocfilehash: 6cd8035831bae4f9e1e73ebe2238e5eb89b7d31c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Scope-Element gibt die zu markierende Zeichenfolge an.
+ms.openlocfilehash: 061c64b3fddee6db45ca4dbc44a039ce94549a89
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530359"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509378"
 ---
 # <a name="scope-highlighttermtype"></a>Bereich (HighlightTermType)
 
-Das **Scope** -Element gibt die Zeichenfolge an, die hervorgehoben werden soll. 
+Das  Scope-Element gibt die zu markierende Zeichenfolge an. 
   
 ```XML
 <Scope></Scope>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Scope** -Elements ist der Bereich eines hervorgehobenen Ausdrucks. 
+Der Textwert des **Scope-Elements** ist der Bereich eines hervorgehobenen Ausdrucks. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

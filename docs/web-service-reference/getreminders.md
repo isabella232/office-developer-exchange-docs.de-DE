@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 943c3d5d-7d29-4d70-932c-8a4fe44a0037
-description: Das geterinnerungs-Element gibt eine Anforderung zum Abrufen von Erinnerungen an.
-ms.openlocfilehash: 8b869730f39876b838fbcbef3c39661238ed203c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GetReminders-Element gibt eine Anforderung zum Abrufen von Erinnerungen an.
+ms.openlocfilehash: 3f4e512d18adb12e27e7c132a54b5ff2238e2b27
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458299"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535010"
 ---
 # <a name="getreminders"></a>GetReminders
 
-Das **geterinnerungs** -Element gibt eine Anforderung zum Abrufen von Erinnerungen an. 
+Das **GetReminders-Element** gibt eine Anforderung zum Abrufen von Erinnerungen an. 
   
 ```XML
 <GetReminders>
@@ -40,13 +40,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[BeginTime](begintime.md)  |  [EndTime (ReminderMessageDataType)](endtime-remindermessagedatatype.md)  |  [MaxItems wird](maxitems.md)  |  [Reminder](remindertype.md)
+[BeginTime](begintime.md)  |  [EndTime (ReminderMessageDataType)](endtime-remindermessagedatatype.md)  |  [MaxItems](maxitems.md)  |  [ReminderType](remindertype.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

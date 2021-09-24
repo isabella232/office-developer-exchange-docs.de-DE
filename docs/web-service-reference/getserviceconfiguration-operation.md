@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetServiceConfiguration
 api_type:
 - schema
 ms.assetid: 070cbfe5-325a-4955-8e4a-8230ea0459a7
-description: Der GetServiceConfiguration-Vorgang ruft Konfigurationsinformationen für den angegebenen Diensttyp ab. Dieser Vorgang kann Konfigurationseinstellungen für die Dienste Unified Messaging, Protection Rules und Mail Tips zurückgeben.
-ms.openlocfilehash: b8ea2cef366a52765850dddcc8c1ef1e8fa68b22
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetServiceConfiguration-Vorgang ruft Konfigurationsinformationen für den angegebenen Diensttyp ab. Dieser Vorgang kann Konfigurationseinstellungen für die Dienste Unified Messaging, Schutzregeln und E-Mail-Tipps zurückgeben.
+ms.openlocfilehash: 29246e17313e4f3d9fb02532513eb3fbd033a86e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460911"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516930"
 ---
 # <a name="getserviceconfiguration-operation"></a>GetServiceConfiguration-Vorgang
 
-Der **GetServiceConfiguration** -Vorgang ruft Konfigurationsinformationen für den angegebenen Diensttyp ab. Dieser Vorgang kann Konfigurationseinstellungen für die Dienste Unified Messaging, Protection Rules und Mail Tips zurückgeben. 
+Der **GetServiceConfiguration-Vorgang** ruft Konfigurationsinformationen für den angegebenen Diensttyp ab. Dieser Vorgang kann Konfigurationseinstellungen für die Dienste Unified Messaging, Schutzregeln und E-Mail-Tipps zurückgeben. 
   
-## <a name="getserviceconfiguration-request-example"></a>GetServiceConfiguration-Anforderungs Beispiel
+## <a name="getserviceconfiguration-request-example"></a>GetServiceConfiguration-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **GetServiceConfiguration** -Anforderung wird gezeigt, wie Sie eine Anforderung zum Abrufen von Konfigurationsinformationen für den Unified Messaging-Dienst bilden. 
+Das folgende Beispiel einer **GetServiceConfiguration-Anforderung** zeigt, wie Sie eine Anforderung zum Abrufen von Konfigurationsinformationen für den Unified Messaging-Dienst erstellen. 
   
 ### <a name="code"></a>Code
 
@@ -55,7 +55,7 @@ Im folgenden Beispiel einer **GetServiceConfiguration** -Anforderung wird gezeig
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetServiceConfiguration** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetServiceConfiguration-Anforderung.** 
   
 ### <a name="code"></a>Code
 
@@ -93,11 +93,11 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetServiceConfig
 </s:Envelope>
 ```
 
-## <a name="getserviceconfiguration-error-response-example"></a>GetServiceConfiguration-Fehlerantwort Beispiel
+## <a name="getserviceconfiguration-error-response-example"></a>GetServiceConfiguration-Fehlerantwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf die **GetServiceConfiguration** -Anforderung. Dieser Fehler wurde durch einen falschen Konfigurationsnamen verursacht. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf die **GetServiceConfiguration-Anforderung.** Dieser Fehler wurde durch einen falschen Konfigurationsnamen verursacht. 
   
 ### <a name="code"></a>Code
 

@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateUserConfiguration
 api_type:
 - schema
 ms.assetid: eb5b8ab6-9743-481c-aac9-f9aa889bd353
-description: Mit dem CreateUserConfiguration-Vorgang wird ein Benutzer Konfigurationsobjekt für einen Ordner erstellt.
-ms.openlocfilehash: 0c9233146d21c7014be15896426b968106485200
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der CreateUserConfiguration-Vorgang erstellt ein Benutzerkonfigurationsobjekt in einem Ordner.
+ms.openlocfilehash: 7b18bf732126ab7296cdc9afd598470102e17c60
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463783"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536271"
 ---
 # <a name="createuserconfiguration-operation"></a>CreateUserConfiguration-Vorgang
 
-Mit dem **CreateUserConfiguration** -Vorgang wird ein Benutzer Konfigurationsobjekt für einen Ordner erstellt. 
+Der **CreateUserConfiguration-Vorgang** erstellt ein Benutzerkonfigurationsobjekt in einem Ordner. 
   
-## <a name="createuserconfiguration-request-example"></a>CreateUserConfiguration-Anforderungs Beispiel
+## <a name="createuserconfiguration-request-example"></a>CreateUserConfiguration-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **CreateUserConfiguration** -Anforderung wird gezeigt, wie Sie eine Anforderung zum Erstellen eines Benutzer Konfigurationsobjekts im Ordner "Entwürfe" bilden. 
+Das folgende Beispiel einer **CreateUserConfiguration-Anforderung** zeigt, wie Sie eine Anforderung zum Erstellen eines Benutzerkonfigurationsobjekts im Ordner "Entwürfe" erstellen. 
   
 ### <a name="code"></a>Code
 
@@ -71,7 +71,7 @@ Im folgenden Beispiel einer **CreateUserConfiguration** -Anforderung wird gezeig
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **CreateUserConfiguration** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **CreateUserConfiguration-Anforderung.** 
   
 ### <a name="code"></a>Code
 

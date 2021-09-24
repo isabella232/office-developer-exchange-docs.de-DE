@@ -1,27 +1,27 @@
 ---
-title: Routingtype (e-mailemailtype)
+title: RoutingType (EmailAddressType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RoutingType
 api_type:
 - schema
 ms.assetid: 683216be-9972-4f48-a148-c34bfe7f53e5
-description: Das Routing Type-Element definiert den Adresstyp für das Postfach.
-ms.openlocfilehash: d4229f2857a5c99cc9bb7ff9b9b103de099a0055
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das RoutingType-Element definiert den Adresstyp für das Postfach.
+ms.openlocfilehash: fdbe40bd74debe517739e0fe0c47ed108bd614c6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465086"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509367"
 ---
-# <a name="routingtype-emailaddresstype"></a>Routingtype (e-mailemailtype)
+# <a name="routingtype-emailaddresstype"></a>RoutingType (EmailAddressType)
 
-Das **Routing** Type-Element definiert den Adresstyp für das Postfach. 
+Das **RoutingType-Element** definiert den Adresstyp für das Postfach. 
   
 ```XML
 <RoutingType/>
@@ -44,17 +44,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Actingies](actingas.md) <br/> |Gibt an, wen der Anrufer sendet.  <br/> |
-|[Postfach](mailbox.md) <br/> |Identifiziert eine vollständig aufgelöste e-Mail-Adresse.  <br/> |
-|[RoomList](roomlist.md) <br/> |Gibt eine Liste von Besprechungsräumen an.  <br/> |
+|[ActingAs](actingas.md) <br/> |Gibt an, an wen der Anrufer gesendet wird.  <br/> |
+|[Postfach](mailbox.md) <br/> |Identifiziert eine vollständig aufgelöste E-Mail-Adresse.  <br/> |
+|[RoomList](roomlist.md) <br/> |Identifiziert eine Liste von Besprechungsräumen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt einen Routingtyp dar. SMTP ist der typische Textwert für dieses Element.
+Der Textwert stellt einen Routingtyp dar. SMTP ist der typische Textwert für dieses Element.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element ist im [Post Fach](mailbox.md) Element optional. Für Verfügbarkeits Vorgänge wird ein anderes [Routing Type-Element (Email)](routingtype-emailaddress.md) verwendet. 
+Dieses Element ist optional im [Mailbox-Element.](mailbox.md) Ein weiteres [RoutingType-Element (EmailAddress)](routingtype-emailaddress.md) wird für Verfügbarkeitsvorgänge verwendet. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
