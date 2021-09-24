@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f77af99d-5c77-4f46-851e-261faa03f68a
-description: Das Token-Element enthält ein Such Einschränkungstoken.
-ms.openlocfilehash: b4a819be260e9ba4eecf329011241c9c2b89f332
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Token-Element enthält ein Sucheinschränkungstoken.
+ms.openlocfilehash: 8a0e2db3fbb19296573224a97bd78dd524a4ef39
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462822"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515159"
 ---
 # <a name="token-string"></a>Token (Zeichenfolge)
 
-Das **Token** -Element enthält ein Such Einschränkungstoken. 
+Das **Token-Element** enthält ein Sucheinschränkungstoken. 
   
 ```XML
 <Token></Token>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Token** -Elements ist ein Such Einschränkungstoken für eine Ermittlungs Suche. 
+Der Textwert des **Token-Elements** ist ein Sucheinschränkungstoken für eine Ermittlungssuche. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

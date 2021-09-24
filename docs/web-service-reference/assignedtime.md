@@ -1,27 +1,27 @@
 ---
-title: Zugewiesenezeit
+title: AssignedTime
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AssignedTime
 api_type:
 - schema
 ms.assetid: 37b273a4-7595-47d5-87c5-32856d7a045b
-description: Das Assigned Time-Element stellt die Uhrzeit dar, zu der ein Vorgang einem Kontakt zugeordnet ist.
-ms.openlocfilehash: 26c3fd4e117a962c690d0fff0d4dad5b5c24dd0c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AssignedTime-Element stellt die Uhrzeit dar, zu der einem Kontakt eine Aufgabe zugewiesen wird.
+ms.openlocfilehash: e8ccf62c6976b0510b8e84cfe9270df98ff5ca4f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464728"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540258"
 ---
-# <a name="assignedtime"></a>Zugewiesenezeit
+# <a name="assignedtime"></a>AssignedTime
 
-Das **Assigned** Time-Element stellt die Uhrzeit dar, zu der ein Vorgang einem Kontakt zugeordnet ist. 
+Das **AssignedTime-Element** stellt die Uhrzeit dar, zu der einem Kontakt eine Aufgabe zugewiesen wird. 
   
 ```xml
 <AssignedTime/>
@@ -50,7 +50,7 @@ Keine.
 
 Diese Eigenschaft ist schreibgeschützt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

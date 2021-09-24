@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DueDate
 api_type:
 - schema
 ms.assetid: dd9b6c43-a512-4b3b-a071-4abde02ed55f
-description: Das DueDate-Element stellt das Datum dar, an dem ein Element fällig ist.
-ms.openlocfilehash: b88bb5c64ee48e02b1600c6865ce650e7bcdaa3b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DueDate-Element stellt das Fälligkeitsdatum eines Elements dar.
+ms.openlocfilehash: 039008ae2ceb2faf280c5b434a5068b580ee885c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463559"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540082"
 ---
 # <a name="duedate"></a>DueDate
 
-Das **DueDate** -Element stellt das Datum dar, an dem ein Element fällig ist. 
+Das **DueDate-Element** stellt das Fälligkeitsdatum eines Elements dar. 
   
 ```xml
 <DueDate/>
@@ -49,9 +49,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der das Datum und die Uhrzeit darstellt, ist erforderlich, wenn dieses Element verwendet wird.
+Ein Textwert, der Datum und Uhrzeit darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

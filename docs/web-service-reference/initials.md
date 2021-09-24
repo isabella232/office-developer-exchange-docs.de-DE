@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Initials
 api_type:
 - schema
 ms.assetid: 6cc529c9-32de-4422-971e-da6078c7be97
 description: Das Initials-Element stellt die Initialen eines Kontakts dar.
-ms.openlocfilehash: 60160fa0f63dd94d6a2cedc3e8b5815959a4842a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 2a339004ad752f3bbf12ab7781e9e862b5301b9f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458194"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539619"
 ---
 # <a name="initials"></a>Initialen
 
-Das **Initials** -Element stellt die Initialen eines Kontakts dar. 
+Das **Initials-Element** stellt die Initialen eines Kontakts dar. 
   
 ```xml
 <Initials/>
@@ -44,10 +44,10 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Completename](completename.md) <br/> |Stellt den vollständigen Namen eines Kontakts dar.  <br/> |
+|[CompleteName](completename.md) <br/> |Stellt den vollständigen Namen eines Kontakts dar.  <br/> |
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

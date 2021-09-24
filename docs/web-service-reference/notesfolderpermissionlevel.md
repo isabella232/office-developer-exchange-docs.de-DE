@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - NotesFolderPermissionLevel
 api_type:
 - schema
 ms.assetid: 76a2520c-f453-4fd7-b3eb-1c5f4666680a
-description: Das NotesFolderPermissionLevel-Element enthält die Berechtigungen für den standardmäßigen Notizenordner. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 205802592a1fc01451b4fc497e9e0c4c66afd478
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das NotesFolderPermissionLevel-Element enthält die Berechtigungen für den Standardordner "Notizen". Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: c7dbcbad6213c9ceccbcdf03b8e684c8523627e2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462626"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539262"
 ---
 # <a name="notesfolderpermissionlevel"></a>NotesFolderPermissionLevel
 
-Das **NotesFolderPermissionLevel** -Element enthält die Berechtigungen für den standardmäßigen Notizenordner. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **NotesFolderPermissionLevel-Element** enthält die Berechtigungen für den Standardordner "Notizen". Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <NotesFolderPermissionLevel>
@@ -46,23 +46,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DelegatePermissions](delegatepermissions.md) <br/> |Enthält die Einstellungen für die Stell Vertretungs Berechtigungsstufe für einen Benutzer. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[DelegatePermissions](delegatepermissions.md) <br/> |Enthält die Einstellungen für die Stellvertretungsberechtigungsstufe für einen Benutzer. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 In der folgenden Tabelle sind die Textwerte aufgeführt, die die Berechtigungsstufen darstellen.
   
-**Text Werte für Berechtigungsstufen**
+**Textwerte auf Berechtigungsebene**
 
 |**Berechtigungsstufe**|**Beschreibung**|
 |:-----|:-----|
-|Keine  <br/> |Der Stellvertreter Benutzer verfügt über keine Zugriffsberechtigungen für den Ordner Notizen.  <br/> |
-|Reviewer  <br/> |Der Stellvertreter kann Elemente im Ordner "Notizen" lesen.  <br/> |
-|Ursprung  <br/> |Der Stellvertreter Benutzer kann Elemente im Ordner "Notizen" lesen und erstellen.  <br/> |
-|Editor  <br/> |Der Stellvertreter Benutzer kann Elemente im Ordner "Notizen" lesen, erstellen und ändern.  <br/> |
-|Benutzerdefiniert  <br/> |Der Stellvertreter Benutzer verfügt über benutzerdefinierte Zugriffsberechtigungen für den Ordner Notizen.  <br/> |
+|Keine  <br/> |Der Stellvertretungsbenutzer hat keine Zugriffsberechtigungen für den Ordner "Notizen".  <br/> |
+|Reviewer  <br/> |Der Stellvertretungsbenutzer kann Elemente im Ordner "Notizen" lesen.  <br/> |
+|Ursprung  <br/> |Der Stellvertretungsbenutzer kann Elemente im Ordner "Notizen" lesen und erstellen.  <br/> |
+|Editor  <br/> |Der Stellvertretungsbenutzer kann Elemente im Ordner "Notizen" lesen, erstellen und ändern.  <br/> |
+|Benutzerdefiniert  <br/> |Der Stellvertretungsbenutzer verfügt über benutzerdefinierte Zugriffsberechtigungen für den Notizenordner.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -87,5 +87,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Hinzufügen von Stellvertretungen](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+[Hinzufügen von Delegaten](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

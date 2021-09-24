@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 02c42828-0d52-4007-bbed-e6571fd31cbe
-description: Das OriginalPhoneString-Element gibt die ursprüngliche Telefonnummer für einen Kontakt oder eine Person an.
-ms.openlocfilehash: 172a69ec088440ece80a2807b97171ebf81b97d3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das OriginalPhoneString-Element gibt die ursprüngliche Telefonnummer für einen Kontakt oder eine Persona an.
+ms.openlocfilehash: 58a9b16a0cd1c747c8d9034ec81f63d91318e4dd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467039"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514214"
 ---
 # <a name="originalphonestring"></a>OriginalPhoneString
 
-Das **OriginalPhoneString** -Element gibt die ursprüngliche Telefonnummer für einen Kontakt oder eine Person an. 
+Das **OriginalPhoneString-Element** gibt die ursprüngliche Telefonnummer für einen Kontakt oder eine Persona an. 
   
 ```XML
 <OriginalPhoneString></OriginalPhoneString>
@@ -38,13 +38,13 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Telefonnummer](phone.md)  |  [Telefon (PhoneEntityType)](phone-phoneentitytype.md)
+[Telefon](phone.md)  |  [Telefon (PhoneEntityType)](phone-phoneentitytype.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **OriginalPhoneString** -Elements ist die ursprüngliche Telefonnummer für einen Kontakt oder eine Person. 
+Der Textwert des **OriginalPhoneString-Elements** ist die ursprüngliche Telefonnummer für einen Kontakt oder eine Persona. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

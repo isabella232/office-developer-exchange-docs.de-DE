@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Location
 api_type:
 - schema
 ms.assetid: 3fcf7133-ae1c-47b4-a187-660045f71df0
-description: Das Location-Element stellt den Speicherort einer Besprechung, eines Termins oder einer Person dar.
-ms.openlocfilehash: 0063d5da23eb731835599f3e931e3c0cb2843ab7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Location-Element stellt den Ort einer Besprechung, eines Termins oder einer Persona dar.
+ms.openlocfilehash: 2848cac9b73f4ce99302e78f2d648de78a411ef8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458089"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515551"
 ---
-# <a name="location"></a>Standort
+# <a name="location"></a>Ort
 
-Das **Location** -Element stellt den Speicherort einer Besprechung, eines Termins oder einer Person dar. 
+Das **Location-Element** stellt den Ort einer Besprechung, eines Termins oder einer Persona dar. 
   
 ```xml
 <Location/>
@@ -51,7 +51,7 @@ Keine.
 
 Ein Textwert, der den Ort einer Besprechung oder eines Termins darstellt, ist erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

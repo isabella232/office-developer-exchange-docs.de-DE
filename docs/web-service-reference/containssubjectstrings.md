@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ContainsSubjectStrings
 api_type:
 - schema
 ms.assetid: c6ec1d8d-8dd8-4c9a-a3e1-50e24958eb0d
 description: Das ContainsSubjectStrings-Element gibt die Zeichenfolgen an, die im Betreff eingehender Nachrichten angezeigt werden müssen, damit die Bedingung oder Ausnahme zutrifft.
-ms.openlocfilehash: 8b078f61d08864970a123f81688981ffba2864ff
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 91ecd46c4f584cca997af37bccf3fe17f1631d4f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458957"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540202"
 ---
 # <a name="containssubjectstrings"></a>ContainsSubjectStrings
 
-Das **ContainsSubjectStrings** -Element gibt die Zeichenfolgen an, die im Betreff eingehender Nachrichten angezeigt werden müssen, damit die Bedingung oder Ausnahme zutrifft. 
+Das **ContainsSubjectStrings-Element** gibt die Zeichenfolgen an, die im Betreff eingehender Nachrichten angezeigt werden müssen, damit die Bedingung oder Ausnahme zutrifft. 
   
 ```XML
 <ContainsSubjectStrings>
@@ -55,7 +55,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -65,7 +65,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 194f7ce3-8f6c-4da7-abc5-bf8283bdfb83
-description: Das LegacyDn (NonEmptyArrayOfLegacyDNsType)-Element ist nur für die interne Verwendung vorgesehen.
-ms.openlocfilehash: d4daf06ea7d58224def4b2f2bea64637398532a3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das LegacyDn-Element (NonEmptyArrayOfLegacyDNsType) ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: aeb388725341427b2cd354abcc3f61985777e2d6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530761"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540853"
 ---
 # <a name="legacydn-nonemptyarrayoflegacydnstype"></a>LegacyDn (NonEmptyArrayOfLegacyDNsType)
 
-Das **LegacyDn (NonEmptyArrayOfLegacyDNsType)-** Element ist nur für die interne Verwendung vorgesehen. 
+Das **LegacyDn-Element (NonEmptyArrayOfLegacyDNsType)** ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

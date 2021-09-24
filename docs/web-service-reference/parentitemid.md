@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ParentItemId
 api_type:
 - schema
 ms.assetid: 72dc4391-72db-44d2-85d9-4718d59886a7
-description: Das ParentItemId-Element identifiziert das übergeordnete Element, das auf eine zugeordnete Anlage verweist.
-ms.openlocfilehash: 4f3e33da0af2438948313f0e335cd03e076d135a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ParentItemId-Element identifiziert das übergeordnete Element, das mit einer zugeordneten Anlage verknüpft ist.
+ms.openlocfilehash: d8072e86d8bd989d4baf6b0f29385dc955b83de8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465744"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515362"
 ---
 # <a name="parentitemid"></a>ParentItemId
 
-Das **ParentItemId** -Element identifiziert das übergeordnete Element, das auf eine zugeordnete Anlage verweist. 
+Das **ParentItemId-Element** identifiziert das übergeordnete Element, das mit einer zugeordneten Anlage verknüpft ist. 
   
 - [CreateAttachment](createattachment.md)
   
@@ -31,7 +31,7 @@ Das **ParentItemId** -Element identifiziert das übergeordnete Element, das auf 
 <ParentItemId Id="" ChangeKey="" />
 ```
 
-**Itemidtype**
+**ItemIdType**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -41,8 +41,8 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Id** <br/> |Bezeichnet ein einzelnes Element im Exchange-Informationsspeicher, das einer Anlage zugeordnet werden soll. Dieser Wert ist eine Zeichenfolge. Dieses Attribut ist erforderlich.  <br/> |
-|**ChangeKey** <br/> |Gibt eine nicht angegebene Version eines Elements an, das durch das **ID-** Attribut im Exchange-Informationsspeicher identifiziert wird. Dies wird verwendet, um sicherzustellen, dass ein aktuelles Element verwendet wird, wenn es mit einer Anlage aktualisiert wird. Dieser Wert ist eine Zeichenfolge. Dieses Attribut ist optional.  <br/> |
+|**Id** <br/> |Identifiziert ein einzelnes Element im Exchange Speicher, das einer Anlage zugeordnet werden soll. Dieser Wert ist eine Zeichenfolge. Dieses Attribut ist erforderlich.  <br/> |
+|**ChangeKey** <br/> |Identifies an unspecified version of an item that is identified by the **Id** attribute in the Exchange store. Dies wird verwendet, um sicherzustellen, dass ein aktuelles Element verwendet wird, wenn es mit einer Anlage aktualisiert wird. Dieser Wert ist eine Zeichenfolge. Dieses Attribut ist optional.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -52,11 +52,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CreateAttachment](createattachment.md) <br/> |Definiert eine Anforderung zum Erstellen einer Anlage für ein Element in einem Postfach.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/CreateAttachment` <br/> |
+|[CreateAttachment](createattachment.md) <br/> |Definiert eine Anforderung zum Erstellen einer Anlage zu einem Element in einem Postfach.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/CreateAttachment` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element ist im [CreateAttachment-Vorgang](createattachment-operation.md)erforderlich. Dieses Element ist im Wesentlichen identisch mit dem [ItemID](itemid.md) -Element. 
+Dieses Element ist im [CreateAttachment-Vorgang](createattachment-operation.md)erforderlich. Dieses Element ist im Wesentlichen identisch mit dem [ItemId-Element.](itemid.md) 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -66,7 +66,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |:-----|:-----|
 |Namespace  <br/> |[https://schemas.microsoft.com/exchange/services/2006/messages](https://schemas.microsoft.com/exchange/services/2006/messages) <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

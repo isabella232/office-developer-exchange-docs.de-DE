@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: be003e12-3496-468d-a61c-48af0b819654
-description: Das UserRoles-Element gibt die Benutzerrollen an, die der aufrufende Benutzer oder der Benutzer, der die aufrufende Partneranwendung betätigt, auf den aktuellen Anruf anwenden möchte.
-ms.openlocfilehash: 5155b82781321b16d1b58fdcaffe7b8cf2372717
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das UserRoles-Element gibt die Benutzerrollen an, mit denen der aufrufende Benutzer oder der Benutzer, in dem die aufrufende Partneranwendung fungiert, auf den aktuellen Anruf angewendet werden soll.
+ms.openlocfilehash: c861cda9a010e909c9ecc5303ddc637a14bcb824
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467130"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514977"
 ---
 # <a name="userroles"></a>UserRoles
 
-Das **UserRoles** -Element gibt die Benutzerrollen an, die der aufrufende Benutzer oder der Benutzer, der die aufrufende Partneranwendung betätigt, auf den aktuellen Anruf anwenden möchte. 
+Das **UserRoles-Element** gibt die Benutzerrollen an, mit denen der aufrufende Benutzer oder der Benutzer, in dem die aufrufende Partneranwendung fungiert, auf den aktuellen Anruf angewendet werden soll. 
   
 ```XML
 <UserRoles>
@@ -42,7 +42,7 @@ Keine.
 
 [ManagementRole](managementrole.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

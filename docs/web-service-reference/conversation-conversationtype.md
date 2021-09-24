@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Conversation
 api_type:
 - schema
 ms.assetid: 59d014cd-5886-49ea-8d36-ba5de7e675de
 description: Das Conversation-Element stellt eine einzelne Unterhaltung dar.
-ms.openlocfilehash: 9969a6cfe1f977b1c24e03771f231f4eb03d1ac6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7ce75fad17589f4d9a3ca52bcb2041eb1d1f4d2e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458936"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515957"
 ---
 # <a name="conversation-conversationtype"></a>Unterhaltung (ConversationType)
 
-Das **Conversation** -Element stellt eine einzelne Unterhaltung dar. 
+Das **Conversation-Element** stellt eine einzelne Unterhaltung dar. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -78,42 +78,42 @@ Keine.
 |[ConversationTopic](conversationtopic.md) <br/> |Stellt das Unterhaltungsthema dar. Dieses Element ist schreibgeschützt.  <br/> |
 |[UniqueRecipients](uniquerecipients.md) <br/> |Enthält die Empfängerliste einer Unterhaltung, die aus einem bestimmten Ordner aggregiert wurde. Dieses Element ist schreibgeschützt.  <br/> |
 |[GlobalUniqueRecipients](globaluniquerecipients.md) <br/> |Enthält die Empfängerliste einer Unterhaltung, die über ein Postfach aggregiert wurde. Dieses Element ist schreibgeschützt.  <br/> |
-|[UniqueUnreadSenders](uniqueunreadsenders.md) <br/> |Enthält eine Liste aller Personen, die Nachrichten gesendet haben, die derzeit in dieser Unterhaltung in dem aktuellen Ordner nicht gelesen wurden. Dieses Element ist schreibgeschützt.  <br/> |
-|[GlobalUniqueUnreadSenders](globaluniqueunreadsenders.md) <br/> |Enthält eine Liste aller Personen, die Nachrichten gesendet haben, die derzeit in dieser Unterhaltung für alle Ordner im Postfach ungelesen sind.  <br/> |
+|[UniqueUnreadSenders](uniqueunreadsenders.md) <br/> |Enthält eine Liste aller Personen, die Nachrichten gesendet haben, die derzeit in dieser Unterhaltung im aktuellen Ordner ungelesen sind. Dieses Element ist schreibgeschützt.  <br/> |
+|[GlobalUniqueUnreadSenders](globaluniqueunreadsenders.md) <br/> |Enthält eine Liste aller Personen, die Nachrichten gesendet haben, die derzeit in dieser Unterhaltung in allen Ordnern im Postfach ungelesen sind.  <br/> |
 |[UniqueSenders](uniquesenders.md) <br/> |Enthält eine Liste aller Absender von Unterhaltungselementen im aktuellen Ordner. Dieses Element ist schreibgeschützt.  <br/> |
 |[GlobalUniqueSenders](globaluniquesenders.md) <br/> |Enthält eine Liste aller Absender von Unterhaltungselementen im Postfach.  <br/> |
-|[LastDeliveryTime](lastdeliverytime.md) <br/> |Enthält die Zustellungszeit der Nachricht, die zuletzt in dieser Unterhaltung im aktuellen Ordner empfangen wurde.  <br/> |
-|[GlobalLastDeliveryTime](globallastdeliverytime.md) <br/> |Enthält die Zustellungszeit der Nachricht, die zuletzt in dieser Unterhaltung über alle Ordner im Postfach empfangen wurde.  <br/> |
+|[LastDeliveryTime](lastdeliverytime.md) <br/> |Enthält die Übermittlungszeit der Nachricht, die zuletzt in dieser Unterhaltung im aktuellen Ordner empfangen wurde.  <br/> |
+|[GlobalLastDeliveryTime](globallastdeliverytime.md) <br/> |Enthält die Übermittlungszeit der Nachricht, die zuletzt in dieser Unterhaltung in allen Ordnern im Postfach empfangen wurde.  <br/> |
 |[Kategorien](categories-ex15websvcsotherref.md) <br/> |Enthält eine Auflistung von Zeichenfolgen, die die Kategorien identifizieren, die auf alle Unterhaltungselemente im aktuellen Ordner angewendet werden.  <br/> |
-|[GlobalCategories](globalcategories.md) <br/> |Enthält die Kategorienliste für alle Unterhaltungselemente in einem Postfach.  <br/> |
-|[FlagStatus](flagstatus.md) <br/> |Enthält den aggregierten Kennzeichen Status für Unterhaltungselemente im aktuellen Ordner.  <br/> |
-|[GlobalFlagStatus](globalflagstatus.md) <br/> |Enthält den aggregierten Kennzeichen Status für alle Unterhaltungselemente in einem Postfach.  <br/> |
-|[HasAttachments](hasattachments.md) <br/> |Enthält einen Wert, der angibt, ob mindestens ein Unterhaltungselement im aktuellen Ordner eine Anlage aufweist.  <br/> |
-|[GlobalHasAttachments](globalhasattachments.md) <br/> |Enthält einen Wert, der angibt, ob mindestens ein Unterhaltungselement in einem Postfach eine Anlage aufweist.  <br/> |
+|[GlobalCategories](globalcategories.md) <br/> |Enthält die Kategorieliste für alle Unterhaltungselemente in einem Postfach.  <br/> |
+|[FlagStatus](flagstatus.md) <br/> |Enthält den aggregierten Flagstatus für Unterhaltungselemente im aktuellen Ordner.  <br/> |
+|[GlobalFlagStatus](globalflagstatus.md) <br/> |Enthält den aggregierten Flagstatus für alle Unterhaltungselemente in einem Postfach.  <br/> |
+|[HasAttachments](hasattachments.md) <br/> |Enthält einen Wert, der angibt, ob mindestens ein Unterhaltungselement im aktuellen Ordner über eine Anlage verfügt.  <br/> |
+|[GlobalHasAttachments](globalhasattachments.md) <br/> |Enthält einen Wert, der angibt, ob mindestens ein Unterhaltungselement in einem Postfach über eine Anlage verfügt.  <br/> |
 |[MessageCount](messagecount.md) <br/> |Enthält die Gesamtzahl der Unterhaltungselemente im aktuellen Ordner.  <br/> |
-|[GlobalMessageCount](globalmessagecount.md) <br/> |Enthält die Gesamtzahl der Unterhaltungselemente im Postfach.  <br/> |
+|[GlobalMessageCount](globalmessagecount.md) <br/> |Enthält die Gesamtanzahl der Unterhaltungselemente im Postfach.  <br/> |
 |[UnreadCount](unreadcount.md) <br/> |Enthält die Anzahl der ungelesenen Unterhaltungselemente in einem Ordner.  <br/> |
 |[GlobalUnreadCount](globalunreadcount.md) <br/> |Enthält die Anzahl aller ungelesenen Unterhaltungselemente im Postfach.  <br/> |
-|[Größe](size.md) <br/> |Enthält die von der Größe aller Unterhaltungselemente im aktuellen Ordner berechnete Unterhaltungs Größe.  <br/> |
-|[Globals](globalsize.md) <br/> |Enthält die Größe der Unterhaltung, die von der Größe aller Unterhaltungselemente im Postfach berechnet wird.  <br/> |
+|[Größe](size.md) <br/> |Enthält die Unterhaltungsgröße, die aus der Größe aller Unterhaltungselemente im aktuellen Ordner berechnet wird.  <br/> |
+|[GlobalSize](globalsize.md) <br/> |Enthält die Größe der Unterhaltung, die aus der Größe aller Unterhaltungselemente im Postfach berechnet wird.  <br/> |
 |[ItemClasses (ArrayOfItemClassType)](itemclasses-arrayofitemclasstype.md) <br/> |Enthält eine Liste von Elementklassen, die alle Elementklassen der Unterhaltungselemente im aktuellen Ordner darstellt.  <br/> |
-|[GlobalItemClasses](globalitemclasses.md) <br/> |Enthält eine Liste von Elementklassen, die alle Elementklassen der Unterhaltungselemente in einem Postfach darstellt.  <br/> |
+|[GlobalItemClasses](globalitemclasses.md) <br/> |Enthält eine Liste der Elementklassen, die alle Elementklassen der Unterhaltungselemente in einem Postfach darstellt.  <br/> |
 |[Importance](importance.md) <br/> |Enthält die aggregierte Wichtigkeit für alle Unterhaltungselemente im aktuellen Ordner.  <br/> |
 |[GlobalImportance](globalimportance.md) <br/> |Enthält die aggregierte Wichtigkeit für alle Unterhaltungselemente in einem Postfach.  <br/> |
-|[ItemIds](itemids.md) <br/> |Enthält die Auflistung von Element-IDs für alle Unterhaltungselemente im aktuellen Ordner.  <br/> |
-|[GlobalItemIds](globalitemids.md) <br/> |Enthält die Auflistung von Element-IDs für alle Unterhaltungselemente in einem Postfach.  <br/> |
+|[ItemIds](itemids.md) <br/> |Enthält die Auflistung der Elementbezeichner für alle Unterhaltungselemente im aktuellen Ordner.  <br/> |
+|[GlobalItemIds](globalitemids.md) <br/> |Enthält die Auflistung von Elementbezeichnern für alle Unterhaltungselemente in einem Postfach.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Unterhaltungen](conversations-ex15websvcsotherref.md) <br/> |Enthält ein Array von Unterhaltungen, die in der **FindConversation** -Antwort zurückgegeben werden.  <br/> |
+|[Unterhaltungen](conversations-ex15websvcsotherref.md) <br/> |Enthält ein Array von Unterhaltungen, die in der **FindConversation-Antwort** zurückgegeben werden.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

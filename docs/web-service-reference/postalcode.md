@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PostalCode
 api_type:
 - schema
 ms.assetid: 35935ca3-60d5-47f0-b16d-69ab2b8fdd49
 description: Das PostalCode-Element stellt die Postleitzahl für ein Kontaktelement dar.
-ms.openlocfilehash: edfb4590b7156229b5f6a893a96dca8d9fbea853
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 5564cba2d638189fafd3aa0e4ece20d4fc050861
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457165"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515278"
 ---
 # <a name="postalcode"></a>PostalCode
 
-Das **PostalCode** -Element stellt die Postleitzahl für ein Kontaktelement dar. 
+Das **PostalCode-Element** stellt die Postleitzahl für ein Kontaktelement dar. 
   
 ```xml
 <PostalCode/>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Text-Wert ist ein String-Wert, der die Postleitzahl eines Kontakts darstellt.
+Der Textwert ist ein Zeichenfolgenwert, der die Postleitzahl eines Kontakts darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

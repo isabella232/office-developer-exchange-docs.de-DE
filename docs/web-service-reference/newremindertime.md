@@ -1,23 +1,23 @@
 ---
-title: Neuerinnerung
+title: NewReminderTime
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ff1b6b1c-3557-41d4-8aa6-9528fdb3a21a
-description: Das Element Reminder gibt eine neue Zeit für eine Erinnerung an.
-ms.openlocfilehash: a10f7e481b474501f33dba4c09060766568952b0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das NewReminderTime-Element gibt eine neue Uhrzeit für eine Erinnerung an.
+ms.openlocfilehash: 9e6cb75396f35f606bcd974e374f24957ee5d1ec
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465954"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515446"
 ---
-# <a name="newremindertime"></a>Neuerinnerung
+# <a name="newremindertime"></a>NewReminderTime
 
-Das Element **Reminder** gibt eine neue Zeit für eine Erinnerung an. 
+Das **NewReminderTime-Element** gibt eine neue Uhrzeit für eine Erinnerung an. 
   
 ```XML
 <NewReminderTime/>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des Elements **Reminder** ist eine neue Zeit für die Erinnerung. Das Element **Reminder** wird verwendet, wenn das [Action](actiontype-reminderactiontype.md) Type-Element auf **Snooze**festgelegt ist, um die Erinnerung zu verzögern. Der Wert der **Reminder** -Uhrzeit muss größer sein als die von der [geterinnerungs-Operation](getreminders-operation.md)zurückgegebene [Erinnerungszeit](remindertime.md) .
+Der Textwert des **NewReminderTime-Elements** ist eine neue Uhrzeit für die Erinnerung. Das **NewReminderTime-Element** wird verwendet, wenn das [ActionType-Element](actiontype-reminderactiontype.md) auf **"Erneut erinnern"** festgelegt ist, um die Erinnerung zu verzögern. Der Wert der **NewReminderTime** muss größer als die [ReminderTime](remindertime.md) sein, die vom [GetReminders -Vorgang](getreminders-operation.md)zurückgegeben wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

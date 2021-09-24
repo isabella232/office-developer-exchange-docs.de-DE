@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c2f3070c-81c6-43f7-ae48-cb3d2dcfac68
-description: Das OtherTelephones-Element gibt ein Array von Telefon Werten und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an.
-ms.openlocfilehash: b47b6bac7efcfd7bd3dc1a84fa6b0b089fbeb160
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das OtherTelephones-Element gibt ein Array von Telefonwerten und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an.
+ms.openlocfilehash: b1081cc3043aa612ad21b020d3a20ed9bdae2a02
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462346"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539208"
 ---
 # <a name="othertelephones"></a>OtherTelephones
 
-Das **OtherTelephones** -Element gibt ein Array von Telefon Werten und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an. 
+Das **OtherTelephones-Element** gibt ein Array von Telefonwerten und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an. 
   
 ```XML
 <OtherTelephones>
@@ -43,7 +43,7 @@ Keine.
 
 [Persona](persona.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

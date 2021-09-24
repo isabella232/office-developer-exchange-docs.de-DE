@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c1834b40-ab2a-4c67-a93a-eaadc9523fda
 description: Das Keyword-Element gibt ein einzelnes Schlüsselwort an.
-ms.openlocfilehash: cdb944aa7b5a8335d840555400381f1d863ded82
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 62d993f0f36a3d02991f15f4e37435c6db19c24f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458103"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514431"
 ---
 # <a name="keyword"></a>Schlüsselwort
 
-Das **Keyword** -Element gibt ein einzelnes Schlüsselwort an. 
+Das **Keyword-Element** gibt ein einzelnes Schlüsselwort an. 
   
 ```XML
 <Keyword></Keyword>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Schlüsselwort** Elements ist der Name eines einzelnen Schlüsselworts, das eine einzelne schlüsselwortstatistik darstellt. 
+Der Textwert des **Keyword-Elements** ist der Name eines einzelnen Schlüsselworts, das eine einzelne Schlüsselwortstatistik darstellt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

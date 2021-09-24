@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d5b6a099-3b87-44ef-a197-8198730ff72d
 description: Das ArchiveSourceFolderId-Element gibt die ID des Quellordners für das Archivelement an.
-ms.openlocfilehash: 403f40cb4529cf72f07b8a04c0803d757c24e470
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 1fa87526ce010d74d5ed88a7eb9d1658937d947b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463384"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540279"
 ---
 # <a name="archivesourcefolderid"></a>ArchiveSourceFolderId
 
-Das **ArchiveSourceFolderId** -Element gibt die ID des Quellordners für das Archivelement an. 
+Das **ArchiveSourceFolderId-Element** gibt die ID des Quellordners für das Archivelement an. 
   
 ```XML
 <ArchiveSourceFolderId>
@@ -38,13 +38,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[Ordner-Nr](folderid.md)  |  [DistinguishedFolderId](distinguishedfolderid.md)  |  [AddressList](addresslistid.md)
+[FolderId](folderid.md)  |  [DistinguishedFolderId](distinguishedfolderid.md)  |  [AddressListId](addresslistid.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [ArchiveItem](archiveitem.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

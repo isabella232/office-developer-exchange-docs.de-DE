@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IncludesLastFolderInRange
 api_type:
 - schema
 ms.assetid: 95837904-17be-49b7-831c-de4fb20fccfb
-description: Das IncludesLastFolderInRange-Element gibt an, ob das letzte zu synchronisierende Element in die Antwort eingeschlossen wurde.
-ms.openlocfilehash: 9ba401cf639ef7988fa7a1437a64d09ff54c5960
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IncludesLastFolderInRange-Element gibt an, ob das letzte zu synchronisierende Element in der Antwort enthalten ist.
+ms.openlocfilehash: d581f8bfa7fc980c7c2ef0fb8ca580c40a26aa22
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466451"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515656"
 ---
 # <a name="includeslastfolderinrange"></a>IncludesLastFolderInRange
 
-Das **IncludesLastFolderInRange** -Element gibt an, ob das letzte zu synchronisierende Element in die Antwort eingeschlossen wurde. 
+Das **IncludesLastFolderInRange-Element** gibt an, ob das letzte zu synchronisierende Element in der Antwort enthalten ist. 
   
 [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)
   
@@ -58,7 +58,7 @@ Keine.
 
 Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -68,7 +68,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

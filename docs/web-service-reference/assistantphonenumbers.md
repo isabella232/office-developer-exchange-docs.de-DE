@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f9bd9ac1-7db3-44ea-9117-18488dddde15
-description: Das AssistantPhoneNumbers-Element gibt ein Array von Telefonnummern für den Assistenten und die Bezeichner ihrer Quell Zuordnungen für die zugeordnete Rolle an.
-ms.openlocfilehash: a72c8d646750b5d7cf9ebca13a51f4df84bf7bdb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AssistantPhoneNumbers-Element gibt ein Array von Telefonnummern des Assistenten und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an.
+ms.openlocfilehash: 5653cb5ec10aeac20d43a65116af9dabebfc15e3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464483"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540223"
 ---
 # <a name="assistantphonenumbers"></a>AssistantPhoneNumbers
 
-Das **AssistantPhoneNumbers** -Element gibt ein Array von Telefonnummern für den Assistenten und die Bezeichner ihrer Quell Zuordnungen für die zugeordnete Rolle an. 
+Das **AssistantPhoneNumbers-Element** gibt ein Array von Telefonnummern des Assistenten und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an. 
   
 ```XML
 <AssistantPhoneNumbers>
@@ -44,9 +44,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Persona](persona.md) <br/> |Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.  <br/> |
+|[Persona](persona.md) <br/> |Gibt eine Reihe von Persona-Daten an, die von einer **GetPersona-Anforderung** zurückgegeben werden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Token
 api_type:
 - schema
 ms.assetid: 62b700e1-88c7-41ef-b431-d7af4a8b54a7
-description: Das Token-Element enthält verschlüsselte Daten, die das Identifikations Token für die freigegebenen Daten darstellen.
-ms.openlocfilehash: c2e80082f9b4ecb96defdca8c5f0223a945661ba
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Token-Element enthält verschlüsselte Daten, die das Identifikationstoken für die freigegebenen Daten darstellen.
+ms.openlocfilehash: 20bc17032d17802bbdf58d0dcaf925e2866dd0c7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458908"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515152"
 ---
 # <a name="token"></a>Token
 
-Das **Token** -Element enthält verschlüsselte Daten, die das Identifikations Token für die freigegebenen Daten darstellen. 
+Das **Token-Element** enthält verschlüsselte Daten, die das Identifikationstoken für die freigegebenen Daten darstellen. 
   
 ```xml
 <Token/>
@@ -44,11 +44,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[EncryptedSharedFolderData](encryptedsharedfolderdata.md) <br/> |Enthält die verschlüsselten Daten, die ein Client verwenden kann, um die Freigabe seiner Kalender-oder Kontaktdaten für andere Clients zu autorisieren.  <br/> |
+|[EncryptedSharedFolderData](encryptedsharedfolderdata.md) <br/> |Enthält die verschlüsselten Daten, die ein Client verwenden kann, um die Freigabe seines Kalenders oder seiner Kontaktdaten für andere Clients zu autorisieren.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, in dem Exchange Webdienste des Computers gehostet wird, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange Webdienste des Computers hostet, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

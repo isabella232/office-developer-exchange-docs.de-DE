@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MeetingWorkspaceUrl
 api_type:
 - schema
 ms.assetid: 0ca942fe-8f57-4065-93ad-65790f9a04c3
-description: Das MeetingWorkspaceUrl-Element enthält die URL für den Besprechungsarbeitsbereich, der im Kalenderelement enthalten ist. Ein Besprechungsarbeitsbereich ist eine freigegebene Website zum Planen der Besprechung und zum Nachverfolgen der Ergebnisse.
-ms.openlocfilehash: cd4396e590ab1471278bd44b9a4e0009fe326eaf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MeetingWorkspaceUrl-Element enthält die URL für den Besprechungsarbeitsbereich, der im Kalenderelement enthalten ist. Ein Besprechungsarbeitsbereich ist eine freigegebene Website zum Planen der Besprechung und Nachverfolgen der Ergebnisse.
+ms.openlocfilehash: c3d051d3529e9de9288c5ecaec2d601b317e2b0b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466283"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540797"
 ---
 # <a name="meetingworkspaceurl"></a>MeetingWorkspaceUrl
 
-Das **MeetingWorkspaceUrl** -Element enthält die URL für den Besprechungsarbeitsbereich, der im Kalenderelement enthalten ist. Ein Besprechungsarbeitsbereich ist eine freigegebene Website zum Planen der Besprechung und zum Nachverfolgen der Ergebnisse. 
+Das **MeetingWorkspaceUrl-Element** enthält die URL für den Besprechungsarbeitsbereich, der im Kalenderelement enthalten ist. Ein Besprechungsarbeitsbereich ist eine freigegebene Website zum Planen der Besprechung und Nachverfolgen der Ergebnisse. 
   
 ```xml
 <MeetingWorkspaceUrl/>
@@ -49,11 +49,11 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Text Wert, der eine URL darstellt, ist erforderlich, wenn dieses Element verwendet wird.
+Ein Textwert, der eine URL darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die MeetingWorkspaceUrl-Eigenschaft ist für das Kalenderelement des Organisators schreibgeschützt. Er ist schreibgeschützt für Besprechungsanfragen und für die Kalenderelemente von Teilnehmern.
+Die MeetingWorkspaceUrl-Eigenschaft ist schreibgeschützt für das Kalenderelement des Organisators. Sie ist schreibgeschützt für Besprechungsanfragen und die Kalenderelemente der Teilnehmer.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

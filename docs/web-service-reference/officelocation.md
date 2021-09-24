@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - OfficeLocation
 api_type:
 - schema
 ms.assetid: 88f314a1-b5cb-47aa-bbae-324561e3a5e3
-description: Das officeLocation-Element stellt die Office-Position eines Kontakts dar.
-ms.openlocfilehash: ebb0c2d3d2e2e31614c6bdd63fe28a6b3cfa1f9b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das OfficeLocation-Element stellt den Bürostandort eines Kontakts dar.
+ms.openlocfilehash: 4ba65ea63e3c29c8827c14bcd2af67465493086c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468362"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515397"
 ---
 # <a name="officelocation"></a>OfficeLocation
 
-Das **officeLocation** -Element stellt die Office-Position eines Kontakts dar. 
+Das **OfficeLocation-Element** stellt den Bürostandort eines Kontakts dar. 
   
 ```xml
 <OfficeLocation/>
@@ -50,7 +50,7 @@ Keine.
 
 Wenn dieses Element verwendet wird, ist ein Textwert erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

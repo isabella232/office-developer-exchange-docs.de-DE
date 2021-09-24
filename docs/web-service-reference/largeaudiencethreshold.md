@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - LargeAudienceThreshold
 api_type:
 - schema
 ms.assetid: dacd9db7-b8f0-445d-a3d1-3356b8c2bcd1
-description: Das LargeAudienceThreshold-Element stellt den Schwellenwert für hohe Benutzergruppen für einen Client dar.
-ms.openlocfilehash: 6d85f9eaf8b7723713877d376876461befa92324
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das LargeAudienceThreshold-Element stellt den Schwellenwert für große Zielgruppen für einen Client dar.
+ms.openlocfilehash: c342fa63b19d5af52fe49362ae46b9848addaa0b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466388"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540860"
 ---
 # <a name="largeaudiencethreshold"></a>LargeAudienceThreshold
 
-Das **LargeAudienceThreshold** -Element stellt den Schwellenwert für hohe Benutzergruppen für einen Client dar. 
+Das **LargeAudienceThreshold-Element** stellt den Schwellenwert für große Zielgruppen für einen Client dar. 
   
 ```XML
 <LargeAudienceThreshold/>
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |Enthält Dienstkonfigurationsinformationen für den e-Mail-Spitzen Dienst.  <br/> |
+|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |Enthält Dienstkonfigurationsinformationen für den E-Mail-Tipps-Dienst.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist eine ganze Zahl, die den Schwellenwert für die Benutzergruppe darstellt, der angibt, dass die Nachricht an mehr als eine Person geht.
+Der Textwert ist eine ganze Zahl, die den Zielgruppenschwellenwert darstellt, der angibt, dass die Nachricht an mehrere Personen gesendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2da25452-3111-489c-9d75-14337a5200e0
 description: Das LocationUrl-Element stellt die URL eines Speicherorts für die Dokumentfreigabe dar.
-ms.openlocfilehash: ba28ce4ded83c55f7b3f799c0bfe6f9509e375fd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 4e5815b7a1b6badf0ad30c6ad6e1eb95e513c334
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468691"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540846"
 ---
 # <a name="locationurl-soap"></a>LocationUrl (SOAP)
 
-Das **LocationUrl** -Element stellt die URL eines Speicherorts für die Dokumentfreigabe dar. 
+Das **LocationUrl-Element** stellt die URL eines Speicherorts für die Dokumentfreigabe dar. 
   
 ```XML
 <LocationUrl />
@@ -39,19 +39,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DocumentSharingLocation (SOAP)](documentsharinglocation-soap.md) <br/> |Stellt Speicherort-und Metadateninformationen für einen Dokumentfreigabe Speicherort dar.  <br/> |
+|[DocumentSharingLocation (SOAP)](documentsharinglocation-soap.md) <br/> |Stellt Standort- und Metadateninformationen für einen Speicherort für die Dokumentfreigabe dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **LocationUrl** -Elements ist die URL eines Speicherorts für die Dokumentfreigabe. 
+Der Textwert des **LocationUrl-Elements** ist die URL eines Speicherorts für die Dokumentfreigabe. 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -63,5 +63,5 @@ Der Textwert des **LocationUrl** -Elements ist die URL eines Speicherorts für d
 
 [AutoErmittlung Webdienstverweis für Exchange](autodiscover-web-service-reference-for-exchange.md)
   
-[XML-Elemente der SOAP-AutoErmittlung für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[SOAP AutoDiscover XML-Elemente für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

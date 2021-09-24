@@ -1,23 +1,23 @@
 ---
-title: Minimum Size
+title: MinimumSize
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 841d229c-140c-48bd-b3a7-21478fcea2fb
-description: Das Minimum Size-Element stellt die minimale Größe dar, die eine Nachricht aufweisen muss, damit die Bedingung oder Ausnahme zutrifft.
-ms.openlocfilehash: b43a8b5916747c4e3e4ca9b66cf8b9d73f5f8942
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MinimumSize-Element stellt die Mindestgröße dar, die eine Nachricht aufweisen muss, damit die Bedingung oder Ausnahme zutrifft.
+ms.openlocfilehash: c3f1284a5a82731093863b0a621bcf2f7f55cf22
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464203"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540650"
 ---
-# <a name="minimumsize"></a>Minimum Size
+# <a name="minimumsize"></a>MinimumSize
 
-Das **Minimum Size** -Element stellt die minimale Größe dar, die eine Nachricht aufweisen muss, damit die Bedingung oder Ausnahme zutrifft. 
+Das **MinimumSize-Element** stellt die Mindestgröße dar, die eine Nachricht aufweisen muss, damit die Bedingung oder Ausnahme zutrifft. 
   
 ```XML
 <MinimumSize/>
@@ -40,13 +40,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[WithinSizeRange](withinsizerange.md) <br/> |Gibt die Mindest-und Höchstgröße an, die eingehende Nachrichten aufweisen müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[WithinSizeRange](withinsizerange.md) <br/> |Gibt die minimale und maximale Größe an, die eingehende Nachrichten haben müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist eine ganze Zahl, die die minimale Größe der Nachricht in Bytes angibt.
+Der Textwert ist eine ganze Zahl, die die Mindestgröße der Nachricht in Byte angibt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

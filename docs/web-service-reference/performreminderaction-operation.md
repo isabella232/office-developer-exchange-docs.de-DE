@@ -5,44 +5,44 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c597bb0e-13b0-422e-9c23-970463e2a5c3
-description: Hier finden Sie Informationen zum PerformReminderAction-EWS-Vorgang.
-ms.openlocfilehash: 4c069d541e9a42167c447a50c405399958d3608d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum EWS-Vorgang "PerformReminderAction".
+ms.openlocfilehash: ca547c401100afdfd9d846ca3bfddf710efd2797
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462290"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515306"
 ---
 # <a name="performreminderaction-operation"></a>PerformReminderAction-Vorgang
 
-Hier finden Sie Informationen zum **PerformReminderAction** -EWS-Vorgang. 
+Hier finden Sie Informationen zum **EWS-Vorgang "PerformReminderAction".** 
   
-Die **PerformReminderAction** -Exchange-Webdienste Operation initiiert eine Kündigungs-oder Snooze-Aktion für eine Erinnerung. 
+Der EWS-Vorgang **(PerformReminderAction** Exchange Web Services) initiiert eine Aktion zum Schließen oder erneuten Erinnern einer Erinnerung. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-performreminderaction-operation"></a>Verwenden des PerformReminderAction-Vorgangs
 
-Sie können den **PerformReminderAction** -Vorgang verwenden, um Erinnerungen, die von der [geterinnerungs](getreminders-operation.md) -Operation zurückgegeben werden, zu schließen oder zu Snooze (Delay). Um eine Erinnerung zu snoozen, legen Sie den [Action](actiontype-reminderactiontype.md) Type auf **Snooze**fest, und legen Sie den Wert für die [neumahnung](newremindertime.md) auf einen Zeitpunkt nach der aktuellen [Erinnerungs](remindertime.md)Zeit fest, andernfalls wird die **neuerinnerung** vom Server ignoriert. Wenn es sich bei der Erinnerung um ein Auftreten einer Besprechungsserie handelt und die **Snooze** -Aktion in der Erinnerung mit einer Erinnerungszeit angezeigt **wird, die** über die Erinnerung an das nächste Vorkommen verfügt, wird die Erinnerung effektiv zurückgewiesen. 
+Sie können den **PerformReminderAction-Vorgang** verwenden, um Erinnerungen, die vom [GetReminders-Vorgang](getreminders-operation.md) zurückgegeben werden, zu schließen oder erneut zu erinnern (zurückgestellt). Wenn Sie eine Erinnerung erneut erinnern möchten, legen Sie den [ActionType](actiontype-reminderactiontype.md) auf **"Erneut erinnern"** fest, und legen Sie den [NewReminderTime-Wert](newremindertime.md) auf einen späteren Zeitpunkt als die aktuelle [ReminderTime](remindertime.md)fest, **andernfalls wird NewReminderTime** vom Server ignoriert. Wenn es sich bei der Erinnerung um ein Vorkommen einer Besprechungsserie handelt und **die** Erneute Erinnerung mit einer **NewReminderTime** ausgeführt wird, die über die Erinnerung des nächsten Vorkommens hinaus liegt, wird die Erinnerung effektiv geschlossen. 
   
-Um eine Erinnerung zu schließen, legen Sie den **Action** Type auf **entlassen**fest. Wenn der Server die Anforderung verarbeitet, ändert der Server den [Reminder](isreminderset.md) -Wert für das Element von **true** in **false**.
+Um eine Erinnerung zu schließen, legen **Sie actionType** auf **"Schließen"** fest. Wenn der Server die Anforderung verarbeitet, ändert der Server den [IsReminderSet-Wert](isreminderset.md) für das Element von **"True"** in **"False".**
   
-### <a name="performreminderaction-operation-soap-headers"></a>SOAP-Header des PerformReminderAction-Vorgangs
+### <a name="performreminderaction-operation-soap-headers"></a>PerformReminderAction-Vorgang SOAP-Header
 
-Der **PerformReminderAction** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **PerformReminderAction-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden sollen. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dieser Header gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur, wie in RFC 3066 definiert, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden soll. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="performreminderaction-operation-request-example"></a>PerformReminderAction-Vorgangsanforderung (Beispiel)
+## <a name="performreminderaction-operation-request-example"></a>Beispiel für PerformReminderAction-Vorgangsanforderung
 
-Im folgenden Beispiel einer **PerformReminderAction** -Vorgangsanforderung wird gezeigt, wie eine aktuelle Erinnerung eingeschlummert und eine neue Erinnerungszeit festgelegt wird. Beachten Sie, dass Sie das **ChangeKey** -Objekt für [das Itemid](itemid.md) -Objekt einschließen müssen und die **Reminder** -Uhrzeit auf eine Zeitspanne festgelegt sein muss, die von der **Reminders** [-Operation zurück](getreminders-operation.md) gegeben wird. 
+Das folgende Beispiel einer **PerformReminderAction-Vorgangsanforderung** zeigt, wie Sie eine aktuelle Erinnerung erneut erinnern und eine neue Erinnerungszeit festlegen. Beachten Sie, dass Sie den **ChangeKey** für die [ItemId](itemid.md) einschließen müssen, und **newReminderTime** muss auf eine Uhrzeit später als die **reminderTime** festgelegt werden, die vom [GetReminders-Vorgang](getreminders-operation.md) zurückgegeben wird. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -69,9 +69,9 @@ Im folgenden Beispiel einer **PerformReminderAction** -Vorgangsanforderung wird 
 ```
 
 > [!NOTE]
-> Der **ItemID** -Wert wurde verkürzt, um die Lesbarkeit beizubehalten. 
+> Der **ItemId-Wert** wurde gekürzt, um die Lesbarkeit zu gewährleisten. 
   
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [PerformReminderAction](performreminderaction.md)
     
@@ -83,11 +83,11 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [ItemId](itemid.md)
     
-- [Neuerinnerung](newremindertime.md)
+- [NewReminderTime](newremindertime.md)
     
-## <a name="successful-performreminderaction-operation-response"></a>Erfolgreiche Reaktion des PerformReminderAction-Vorgangs
+## <a name="successful-performreminderaction-operation-response"></a>Erfolgreiche PerformReminderAction-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **PerformReminderAction** -Vorgangsanforderung. Das **UpdatedItemIds** -Element enthält die **itemids** des aktualisierten Kalenderelements. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **PerformReminderAction-Vorgangsanforderung.** Das **UpdatedItemIds-Element** enthält die **ItemIds des aktualisierten Kalenderelements.** 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -117,7 +117,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **PerformReminder
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [PerformReminderActionResponse](performreminderactionresponse.md)
     
@@ -127,9 +127,9 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [ItemId](itemid.md)
     
-## <a name="performreminderaction-operation-error-response-example"></a>PerformReminderAction-Operation-Fehlerantwort (Beispiel)
+## <a name="performreminderaction-operation-error-response-example"></a>Beispiel für Die Fehlerantwort des PerformReminderAction-Vorgangs
 
-Das folgende Beispiel zeigt eine Antwort auf eine **PerformReminderAction** -Vorgangsanforderung, wenn keine Änderung auf dem Server vorgenommen wurde. Dies ist eine Antwort, bei der eine Anforderung gesendet wurde, aber keine **UpdatedItemIds** zurückgegeben wurden, was bedeutet, dass keine Erinnerungen geändert wurden. 
+Das folgende Beispiel zeigt eine Antwort auf eine **PerformReminderAction-Vorgangsanforderung,** wenn keine Änderung auf dem Server vorgenommen wurde. Dies ist eine Antwort, in der eine Anforderung gesendet wurde, aber keine **UpdatedItemIds** zurückgegeben wurden, was bedeutet, dass keine Erinnerungen geändert wurden. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -164,7 +164,7 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
     
 - [UpdatedItemIds](updateditemids.md)
     
-Weitere Fehlercodes, die für EWS allgemein sind, finden Sie unter [Response Code](responsecode.md).
+Weitere Fehlercodes, die für EWS generisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 51f84364-9a5f-4ef2-ba82-f6ef7c65f7cb
-description: Das ProtocolConnectionCollectionSetting-Element stellt eine Auflistung von Verbindungseinstellungen für das Serverprotokoll dar.
-ms.openlocfilehash: 59e082138b8a40d201791653103c79160765f2fd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ProtocolConnectionCollectionSetting-Element stellt eine Auflistung von Serverprotokollverbindungseinstellungen dar.
+ms.openlocfilehash: 8e641e8f720d5dcf6b7af8b78c1804e0d8057f09
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462395"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515257"
 ---
 # <a name="protocolconnectioncollectionsetting-soap"></a>ProtocolConnectionCollectionSetting (SOAP)
 
-Das **ProtocolConnectionCollectionSetting** -Element stellt eine Auflistung von Verbindungseinstellungen für das Serverprotokoll dar. 
+Das **ProtocolConnectionCollectionSetting-Element** stellt eine Auflistung von Serverprotokollverbindungseinstellungen dar. 
   
 ```XML
 <ProtocolConnectionCollectionSetting/>
@@ -41,11 +41,11 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Name (SOAP)](name-soap.md) <br/> |Stellt den Namen einer Einstellung dar.  <br/> |
-|[ProtocolConnections (SOAP)](protocolconnections-soap.md) <br/> |Enthält NULL oder mehr Protokoll Verbindungen.  <br/> |
+|[ProtocolConnections (SOAP)](protocolconnections-soap.md) <br/> |Enthält null oder mehr Protokollverbindungen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
@@ -56,8 +56,8 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 37f0c542-7e4c-41b6-8629-537ef11b610b
 description: Das Base64Binary-Element enthält einen Base64-codierten Wert.
-ms.openlocfilehash: e3ccda98d23b05349a27711b5bff6b68744c9269
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 91957f199ab7c5e07899299a90292a7b44ea5793
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458054"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516111"
 ---
 # <a name="base64binary"></a>Base64Binary
 
-Das **Base64Binary** -Element enthält einen Base64-codierten Wert. 
+Das **Base64Binary-Element** enthält einen Base64-codierten Wert. 
   
 ```XML
 <Base64Binary/>
@@ -47,7 +47,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

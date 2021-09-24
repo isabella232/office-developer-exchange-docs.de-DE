@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DisplayCc
 api_type:
 - schema
 ms.assetid: af386e06-80f3-42c7-8b3c-1f7993c49d10
-description: Das DisplayCc-Element stellt die Anzeigezeichenfolge dar, die für den Inhalt des Felds CC verwendet wird. Dies ist die verkettete Zeichenfolge aller Anzeigenamen des CC-Empfängers.
-ms.openlocfilehash: 74e033751a464111a8451247d0bdb08c35b55708
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DisplayCc-Element stellt die Anzeigezeichenfolge dar, die für den Inhalt des Felds "Cc" verwendet wird. Dies ist die verkettete Zeichenfolge aller Cc-Empfängeranzeigenamen.
+ms.openlocfilehash: 9c0ec732256cd45b0c7aa1f12136620981af6944
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456542"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513808"
 ---
 # <a name="displaycc"></a>DisplayCc
 
-Das **DisplayCc** -Element stellt die Anzeigezeichenfolge dar, die für den Inhalt des Felds CC verwendet wird. Dies ist die verkettete Zeichenfolge aller Anzeigenamen des CC-Empfängers. 
+Das **DisplayCc-Element** stellt die Anzeigezeichenfolge dar, die für den Inhalt des Felds "Cc" verwendet wird. Dies ist die verkettete Zeichenfolge aller Cc-Empfängeranzeigenamen. 
   
 ```xml
 <DisplayCc/>
@@ -57,9 +57,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt die Anzeigezeichenfolge dar, die für den Inhalt des Felds CC verwendet wird.
+Der Textwert stellt die Anzeigezeichenfolge dar, die für den Inhalt des Felds "Cc" verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

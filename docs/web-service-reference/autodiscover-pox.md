@@ -1,24 +1,24 @@
 ---
-title: AutoErmittlung (POX)
+title: AutoDiscover (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 611fcf5f-780a-42ea-bccb-9462a2f0c095
-description: Das Auto Ermittlungs Element ist das Stammelement in einer Auto Ermittlungsanforderung oder-Antwort.
-ms.openlocfilehash: 6fc889dc700a9fb068949d3ba5e4e6907b839f3c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AutoErmittlungselement ist das Stammelement in einer AutoErmittlungsanforderung oder -antwort.
+ms.openlocfilehash: 923f514b49ace6a9bb39cdd87099f7b391ec2604
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527432"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514886"
 ---
-# <a name="autodiscover-pox"></a>AutoErmittlung (POX)
+# <a name="autodiscover-pox"></a>AutoDiscover (POX)
 
-Das **Auto Ermittlungs** Element ist das Stammelement in einer Auto Ermittlungsanforderung oder-Antwort. 
+Das **AutoErmittlungselement** ist das Stammelement in einer AutoErmittlungsanforderung oder -antwort. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md)
   

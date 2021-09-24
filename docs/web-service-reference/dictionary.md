@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Dictionary
 api_type:
 - schema
 ms.assetid: 8309e468-115b-4d6e-b33c-c4719dcecc4c
-description: Das Dictionary-Element definiert eine Gruppe von Wörterbuch-Eigenschafts Einträgen für ein Benutzer Konfigurationsobjekt.
-ms.openlocfilehash: 8e5267717aab2317b2bc1581a775ead81025a08a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Dictionary-Element definiert eine Reihe von Wörterbucheigenschaftseinträgen für ein Benutzerkonfigurationsobjekt.
+ms.openlocfilehash: 897cf9365f5a3db192528e5107ef2227522d5cbc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455667"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540160"
 ---
 # <a name="dictionary"></a>Wörterbuch
 
-Das **Dictionary** -Element definiert eine Gruppe von Wörterbuch-Eigenschafts Einträgen für ein Benutzer Konfigurationsobjekt. 
+Das **Dictionary-Element** definiert eine Reihe von Wörterbucheigenschaftseinträgen für ein Benutzerkonfigurationsobjekt. 
   
 ```xml
 <Dictionary>
@@ -42,19 +42,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DictionaryEntry](dictionaryentry.md) <br/> |Gibt den Inhalt einer einzelnen Wörterbucheintrags Eigenschaft an.  <br/> |
+|[DictionaryEntry](dictionaryentry.md) <br/> |Gibt den Inhalt einer einzelnen Wörterbucheintragseigenschaft an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserConfiguration](userconfiguration.md) <br/> |Definiert ein einzelnes Benutzer Konfigurationsobjekt.  <br/> |
+|[UserConfiguration](userconfiguration.md) <br/> |Definiert ein einzelnes Benutzerkonfigurationsobjekt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

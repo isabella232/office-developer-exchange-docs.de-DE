@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ContentType
 api_type:
 - schema
 ms.assetid: f91ff0df-0d8a-43ea-a188-d80f0e885f19
-description: Das ContentType-Element beschreibt den Multipurpose Internet Mail Extensions (MIME) Typ des Anlage Inhalts.
-ms.openlocfilehash: cb326bb761ea28e0e9f77501bf754c7c1f0318fb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ContentType-Element beschreibt den MIME-Typ (Multipurpose Internet Mail Extensions) des Anlageninhalts.
+ms.openlocfilehash: 3f00aaa2f3b93ab7a8a3ccc4905b1353dce6b083
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455226"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526651"
 ---
 # <a name="contenttype"></a>ContentType
 
-Das **ContentType** -Element beschreibt den Multipurpose Internet Mail Extensions (MIME) Typ des Anlage Inhalts. 
+Das **ContentType-Element** beschreibt den MIME-Typ (Multipurpose Internet Mail Extensions) des Anlageninhalts. 
   
 ```xml
 <ContentType/>
@@ -44,14 +44,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange-Element dar, das an ein anderes Exchange-Element angefügt ist.  <br/> |
-|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die an ein Element im Exchange-Informationsspeicher angefügt ist.  <br/> |
+|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange Element dar, das einem anderen Exchange Element zugeordnet ist.  <br/> |
+|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die an ein Element im Exchange Speicher angefügt ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Text-Wert ist ein String-Wert, der den Inhaltstyp der Anlage darstellt.
+Der Textwert ist ein Zeichenfolgenwert, der den Inhaltstyp der Anlage darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

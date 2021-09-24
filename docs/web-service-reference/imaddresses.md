@@ -1,27 +1,27 @@
 ---
-title: Imaddresses
+title: ImAddresses
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ImAddresses
 api_type:
 - schema
 ms.assetid: 29f614a7-7fe6-47fa-b5f2-8feff106aa99
-description: Das imaddresses-Element stellt eine Auflistung von Instant Messaging-Adressen für einen Kontakt dar.
-ms.openlocfilehash: 24ff74d29c918d71116e25e097878b6e4e0a8ead
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ImAddresses-Element stellt eine Auflistung von Chatadressen für einen Kontakt dar.
+ms.openlocfilehash: 83f2b79644e311eb3b7b21f215c7e00df7f1c420
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460428"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515691"
 ---
-# <a name="imaddresses"></a>Imaddresses
+# <a name="imaddresses"></a>ImAddresses
 
-Das **imaddresses** -Element stellt eine Auflistung von Instant Messaging-Adressen für einen Kontakt dar. 
+Das **ImAddresses-Element** stellt eine Auflistung von Chatadressen für einen Kontakt dar. 
   
 ```xml
 <ImAddresses>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Eintrag (imaddresse)](entry-imaddress.md) <br/> |Stellt eine Instant Messaging-Adresse für einen Kontakt dar.  <br/> |
+|[Eintrag (EmailAddress)](entry-imaddress.md) <br/> |Stellt eine Chatadresse für einen Kontakt dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -50,7 +50,7 @@ Keine.
 |:-----|:-----|
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

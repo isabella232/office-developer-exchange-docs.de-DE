@@ -1,30 +1,30 @@
 ---
-title: Eingabe-Nr (um-Webdienst)
+title: entryId (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - entryId
 api_type:
 - schema
 ms.assetid: ce62eab5-0079-493b-be1f-52b62fdf35dc
-description: Das Entry-ID-Element enthält den Wert, der den Bezeichner des Elements darstellt, das in einer PlayOnPhone-Vorgangsanforderung (um-Webdienst) auf dem Telefon wiedergegeben werden soll.
-ms.openlocfilehash: 5b0ad5c5af682f7589d94219955dde646cd2897a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das entryId-Element enthält den Wert, der den Bezeichner des Elements darstellt, das in einer PlayOnPhone-Vorgangsanforderung (UM-Webdienst) auf dem Telefon wiedergegeben werden soll.
+ms.openlocfilehash: faeaa9f4684214412c2fa0dd4d4efa22756b2320
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460694"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539943"
 ---
-# <a name="entryid-um-web-service"></a>Eingabe-Nr (um-Webdienst)
+# <a name="entryid-um-web-service"></a>entryId (UM-Webdienst)
 
-Das **Entry** -ID-Element enthält den Wert, der den Bezeichner des Elements darstellt, das in einer [PlayOnPhone-Vorgangsanforderung (um-Webdienst)](playonphone-operation-um-web-service.md) auf dem Telefon wiedergegeben werden soll. 
+Das **entryId-Element** enthält den Wert, der den Bezeichner des Elements darstellt, das in einer [PlayOnPhone-Vorgangsanforderung (UM-Webdienst)](playonphone-operation-um-web-service.md) auf dem Telefon wiedergegeben werden soll. 
   
-[PlayOnPhone (um-Webdienst)](playonphone-um-web-service.md)
+[PlayOnPhone (UM-Webdienst)](playonphone-um-web-service.md)
   
-[Eingabe-Nr (um-Webdienst)](entryid-um-web-service.md)
+[entryId (UM-Webdienst)](entryid-um-web-service.md)
   
 ```xml
 <PlayOnPhone>
@@ -49,7 +49,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PlayOnPhone (um-Webdienst)](playonphone-um-web-service.md) <br/> |Definiert eine Anforderung, ein Element auf einem Telefon wiederzugeben.  <br/> |
+|[PlayOnPhone (UM-Webdienst)](playonphone-um-web-service.md) <br/> |Definiert eine Anforderung zum Wiedergeben eines Elements auf einem Telefon.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
@@ -61,16 +61,16 @@ Ein Textwert ist erforderlich.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PlayOnPhone-Vorgang (um-Webdienst)](playonphone-operation-um-web-service.md)
+[PlayOnPhone-Vorgang (UM-Webdienst)](playonphone-operation-um-web-service.md)
   
-[PlayOnPhone (um-Webdienst)](playonphone-um-web-service.md)
+[PlayOnPhone (UM-Webdienst)](playonphone-um-web-service.md)
   
 [FindItem-Vorgang](finditem-operation.md)
 

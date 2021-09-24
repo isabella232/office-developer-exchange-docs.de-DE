@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GlobalItemClasses
 api_type:
 - schema
 ms.assetid: 72634700-6d75-44c0-80b7-8c31743c04d6
 description: Das GlobalItemClasses-Element enthält eine Liste von Elementklassen, die alle Elementklassen der Unterhaltungselemente in einem Postfach darstellt.
-ms.openlocfilehash: e4cb8a8886f8262e8cb4a550b054e81ea18a5e11
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0081a59bccf9fb6d967334d3ec5df2b379529ae8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459433"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515726"
 ---
 # <a name="globalitemclasses"></a>GlobalItemClasses
 
-Das **GlobalItemClasses** -Element enthält eine Liste von Elementklassen, die alle Elementklassen der Unterhaltungselemente in einem Postfach darstellt. 
+Das **GlobalItemClasses-Element** enthält eine Liste von Elementklassen, die alle Elementklassen der Unterhaltungselemente in einem Postfach darstellt. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -62,7 +62,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

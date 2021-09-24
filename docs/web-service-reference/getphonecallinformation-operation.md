@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetPhoneCallInformation
 api_type:
 - schema
 ms.assetid: 418bd6ca-39d9-49a9-841e-7a71ede1fa51
-description: Der GetPhoneCallInformation-Vorgang gibt Informationen zum angegebenen Telefonanruf zurück.
-ms.openlocfilehash: 231b160713526f44433188e2b1e3bd98012370b1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetPhoneCallInformation-Vorgang gibt Informationen zu dem angegebenen Telefonanruf zurück.
+ms.openlocfilehash: 7cb9ecbb30e6cdd4d85b60215f40e0be5f4aaa84
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458313"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539957"
 ---
 # <a name="getphonecallinformation-operation"></a>GetPhoneCallInformation-Vorgang
 
-Der **GetPhoneCallInformation** -Vorgang gibt Informationen zum angegebenen Telefonanruf zurück. 
+Der **GetPhoneCallInformation-Vorgang** gibt Informationen zu dem angegebenen Telefonanruf zurück. 
   
-## <a name="getphonecallinformation-request-example"></a>GetPhoneCallInformation-Anforderungs Beispiel
+## <a name="getphonecallinformation-request-example"></a>GetPhoneCallInformation-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **GetPhoneCallInformation** -Anforderung wird gezeigt, wie Sie eine Anforderung zum Abrufen von Informationen zu einem bestimmten Telefonanruf bilden. 
+Das folgende Beispiel einer **GetPhoneCallInformation-Anforderung** zeigt, wie Sie eine Anforderung zum Abrufen von Informationen zu einem bestimmten Telefonanruf erstellen. 
   
 ### <a name="code"></a>Code
 
@@ -53,7 +53,7 @@ Im folgenden Beispiel einer **GetPhoneCallInformation** -Anforderung wird gezeig
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetPhoneCallInformation** -Anforderung. Die Antwort stellt einen Telefonanruf dar, der derzeit verbunden ist. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetPhoneCallInformation-Anforderung.** Die Antwort stellt einen Telefonanruf dar, der derzeit verbunden ist. 
   
 ### <a name="code"></a>Code
 

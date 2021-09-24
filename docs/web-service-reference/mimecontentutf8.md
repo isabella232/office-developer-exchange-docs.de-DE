@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 31544c95-5231-4b57-958c-2a689464d29b
-description: Das MimeContentUTF8-Element enthält den UTF-8-MIME-Stream eines Objekts, das im base64Binary-Format dargestellt wird und die Internationalisierung von e-Mail-Adressen und [RFC6530] unterstützt.
-ms.openlocfilehash: a9214bda876c1aadac5b026b3adf38faea8ef17a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MimeContentUTF8-Element enthält den UTF-8-MIME-Stream eines Objekts, das im Base64Binary-Format dargestellt wird und die Internationalisierung von E-Mail-Adressen und [RFC6530] unterstützt.
+ms.openlocfilehash: f0ab38368d3a18be38f63c86183a238e2fd0a474
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530429"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540755"
 ---
 # <a name="mimecontentutf8"></a>MimeContentUTF8
 
-Das **MimeContentUTF8** -Element enthält den UTF-8-MIME-Stream eines Objekts, das im base64Binary-Format dargestellt wird und die Internationalisierung von e-Mail-Adressen und [[RFC6530]](http://www.rfc-editor.org/rfc/rfc6530.txt)unterstützt.
+Das **MimeContentUTF8-Element** enthält den UTF-8-MIME-Stream eines Objekts, das im Base64Binary-Format dargestellt wird und die Internationalisierung von E-Mail-Adressen und [[RFC6530]](http://www.rfc-editor.org/rfc/rfc6530.txt)unterstützt.
   
 ```XML
 <MimeContentUTF8 CharacterSet="" />
@@ -32,7 +32,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**CharacterSet** <br/> |Wenn festgelegt, wird der Wert für dieses Attribut vom Server ignoriert.  <br/> |
+|**Characterset** <br/> |Wenn dieser Wert festgelegt ist, wird der Wert für dieses Attribut vom Server ignoriert.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -40,31 +40,31 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[CalendarItem](calendaritem.md)  |  [Kontaktinformationen](contact.md)  |  [Verteilerliste](distributionlist.md)  |  [Element](item.md)  |  [MeetingCancellation](meetingcancellation.md)  |  [MeetingMessage](meetingmessage.md)  |  [MeetingRequest](meetingrequest.md)  |  [MeetingResponse](meetingresponse.md)  |  [Nachricht](message-ex15websvcsotherref.md)  |  [RemoveItem](removeitem.md)  |  [Aufgabe](task.md)
+[CalendarItem](calendaritem.md)  |  [Kontakt](contact.md)  |  [DistributionList](distributionlist.md)  |  [Element](item.md)  |  [MeetingCancellation](meetingcancellation.md)  |  [MeetingMessage](meetingmessage.md)  |  [MeetingRequest](meetingrequest.md)  |  [MeetingResponse](meetingresponse.md)  |  [Nachricht](message-ex15websvcsotherref.md)  |  [RemoveItem](removeitem.md)  |  [Aufgabe](task.md)
   
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der einen base64Binary-MIME-Stream darstellt, ist erforderlich, wenn dieses Element verwendet wird.
+Wenn dieses Element verwendet wird, ist ein Textwert erforderlich, der einen base64binary MIME-Datenstrom darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Nachrichteninhalt durchläuft die folgenden drei Codierungs stufen, bevor er im **MimeContentUTF8** -Wert gespeichert wird: 
+Der Nachrichteninhalt durchläuft die folgenden drei Codierungsebenen, bevor er im **MimeContentUTF8-Wert** gespeichert wird: 
   
-1. Nachrichtentext: Dies ist die Textcodierung, beispielsweise ISO-2022-JP für japanische Zeichen.
+1. Nachrichtentext – Dies ist die Textcodierung, z. B. iso-2022-jp für japanische Zeichen.
     
-2. MIME-Stream: Dies ist die UTF8-Codierung des Nachrichtentexts für das **MimeContentUTF8** -Element oder die ASCII-Codierung des Nachrichtentexts für das [MimeContent](mimecontent.md) -Element. 
+2. MIME-Stream – Dies ist die UTF8-Codierung des Nachrichtentexts für das **MimeContentUTF8-Element** oder die ASCII-Codierung des Nachrichtentexts für das [MimeContent-Element.](mimecontent.md) 
     
-3. XML-Dokument: Dies ist immer der Base64-codierte ASCII-Datenstrom des MIME-Streams, bei dem Zeichen wie ' \< ', die für XML relevant sind, von XML-Parsern ausgeblendet werden.
+3. XML-Dokument – Dies ist immer der base64-codierte ASCII-Stream des MIME-Datenstroms, wobei Zeichen wie " \< ", die für XML von Bedeutung sind, vor XML-Parsern ausgeblendet werden.
     
-Jede Ebene ist unabhängig von der vorausgehenden Ebene.
+Jede Ebene ist unabhängig von der Ebene, die ihr vorausgeht.
   
-Das **MimeContentUTF8** -Element kann dieselben Daten enthalten, die andere Eigenschaften, die mit einem Element zurückgegeben werden, enthalten. 
+Das **MimeContentUTF8-Element** kann dieselben Daten enthalten wie andere Eigenschaften, die mit einem Element zurückgegeben werden. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ### <a name="version-differences"></a>Versionsunterschiede
 
-Dieses Element ist in Versionen von Exchange verfügbar, beginnend mit Build 15.00.0986.00.
+Dieses Element ist in Versionen von Exchange ab Build 15.00.0986.00 verfügbar.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

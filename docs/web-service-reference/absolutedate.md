@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AbsoluteDate
 api_type:
 - schema
 ms.assetid: 8bc59a26-6fe1-42e9-968c-69a94a3fb0ae
-description: Das AbsoluteDate-Element stellt das Datum dar, an dem sich die Zeit von der Standard-oder Sommerzeit ändert.
-ms.openlocfilehash: 1874fea02c1eeeb41522046963e1d1b2fcea645a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AbsoluteDate-Element stellt das Datum dar, an dem sich die Uhrzeit von der Standard- oder Sommerzeit ändert.
+ms.openlocfilehash: 5482afcfda1de76d11fea548709836f14c6c2aca
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461730"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540367"
 ---
 # <a name="absolutedate"></a>AbsoluteDate
 
-Das **AbsoluteDate** -Element stellt das Datum dar, an dem sich die Zeit von der Standard-oder Sommerzeit ändert. 
+Das **AbsoluteDate-Element** stellt das Datum dar, an dem sich die Uhrzeit von der Standard- oder Sommerzeit ändert. 
   
 ```xml
 <AbsoluteDate/>
@@ -45,14 +45,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Standard](standard.md) <br/> |Stellt das Datum und die Uhrzeit dar, zu der sich die Zeit von Sommerzeit zu Standardzeit ändert.  <br/> |
-|[Sommer](daylight.md) <br/> |Stellt das Datum und die Uhrzeit dar, zu der die Zeit von Standardzeit zu Sommerzeit wechselt.  <br/> |
+|[Standard](standard.md) <br/> |Stellt das Datum und die Uhrzeit dar, zu der die Zeit von Sommerzeit in Standardzeit geändert wird.  <br/> |
+|[Daylight](daylight.md) <br/> |Stellt das Datum und die Uhrzeit dar, zu der die Zeit von Standardzeit zu Sommerzeit wechselt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt das Datum dar, an dem die Verschiebung zwischen Standard-oder Sommerzeit erfolgt.
+Der Textwert stellt das Datum dar, an dem die Verschiebung zwischen Standard- oder Sommerzeit erfolgt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

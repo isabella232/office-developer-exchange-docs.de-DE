@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsDeliveryReceiptRequested
 api_type:
 - schema
 ms.assetid: 97776b7e-942c-4663-8277-165d64364daa
-description: Das IsDeliveryReceiptRequested-Element gibt an, ob der Absender eines Elements eine Zustellungsbestätigung anfordert.
-ms.openlocfilehash: 94bcb79df16e5ef1d8128f2e2d1e8536d9c31603
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IsDeliveryReceiptRequested-Element gibt an, ob der Absender eines Elements einen Übermittlungsbeleg anfordert.
+ms.openlocfilehash: 10f07e5732c8bc87930337027fa59160617f438b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458180"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515565"
 ---
 # <a name="isdeliveryreceiptrequested"></a>IsDeliveryReceiptRequested
 
-Das **IsDeliveryReceiptRequested** -Element gibt an, ob der Absender eines Elements eine Zustellungsbestätigung anfordert. 
+Das **IsDeliveryReceiptRequested-Element** gibt an, ob der Absender eines Elements einen Übermittlungsbeleg anfordert. 
   
 ```xml
 <IsDeliveryReceiptRequested/>
@@ -60,9 +60,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass vom Empfänger des Elements eine Zustellungsbestätigung angefordert wird. 
+Der Textwert **"true"** gibt an, dass vom Empfänger des Elements ein Übermittlungsbeleg angefordert wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Profession
 api_type:
 - schema
 ms.assetid: 0f6a73b1-9e8a-4736-87ab-604791c615f3
 description: Das Profession-Element stellt den Beruf eines Kontakts dar.
-ms.openlocfilehash: d7c80cb432a20147d1788919c47b25e17642aca4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 4eb0c669e90a2445423dbbd8d6f1ebb70d11a348
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462220"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515271"
 ---
 # <a name="profession"></a>Beruf
 
-Das **Profession** -Element stellt den Beruf eines Kontakts dar. 
+Das **Profession-Element** stellt den Beruf eines Kontakts dar. 
   
 ```xml
 <Profession/>
@@ -50,7 +50,7 @@ Keine.
 
 Ein Textwert, der einen Beruf darstellt, ist erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

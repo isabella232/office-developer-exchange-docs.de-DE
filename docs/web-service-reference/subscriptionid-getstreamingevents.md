@@ -1,23 +1,23 @@
 ---
-title: Abonnement-GetStreamingEvents
+title: SubscriptionId (GetStreamingEvents)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3f86c178-2311-4844-82db-c2a0e469d116
-description: Das Subscription-ID-Element stellt den Bezeichner für ein Streaming-Abonnement dar.
-ms.openlocfilehash: babf02c514e7fe8711f51ac52e425a18f3ab47f7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SubscriptionId-Element stellt den Bezeichner für ein Streamingabonnement dar.
+ms.openlocfilehash: 8931fda5087fa985c646da328a0cb27fa2c2a708
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457998"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540377"
 ---
-# <a name="subscriptionid-getstreamingevents"></a>Abonnement-GetStreamingEvents
+# <a name="subscriptionid-getstreamingevents"></a>SubscriptionId (GetStreamingEvents)
 
-Das **Subscription** -ID-Element stellt den Bezeichner für ein Streaming-Abonnement dar. 
+Das **SubscriptionId-Element** stellt den Bezeichner für ein Streamingabonnement dar. 
   
 ```XML
 <SubscriptionId/>
@@ -40,15 +40,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetStreamingEvents](getstreamingevents.md) <br/> |Stellt den Vorgang dar, der von Clients zum Anfordern von Streaming-Benachrichtigungen vom Server verwendet wird.  <br/> |
+|[GetStreamingEvents](getstreamingevents.md) <br/> |Stellt den Vorgang dar, der von Clients zum Anfordern von Streamingbenachrichtigungen vom Server verwendet wird.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert ist erforderlich. Der Textwert ist eine GUID.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die GUID, die die Abonnement-ID darstellt, wird vom Client Zugriffsserver generiert, wenn das Abonnement erstellt wird.
+Die GUID, die den Abonnementbezeichner darstellt, wird vom Clientzugriffsserver generiert, wenn das Abonnement erstellt wird.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

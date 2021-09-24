@@ -1,30 +1,30 @@
 ---
-title: OofStatus (um-Webdienst)
+title: OofStatus (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - OofStatus
 api_type:
 - schema
 ms.assetid: 0ba4225a-784e-4e6e-bd20-be45f0f7597c
-description: Das OofStatus-Element enthält einen Wert, der den Abwesenheitsstatus des Unified Messaging-Diensts für den Benutzer angibt, der einen GetUMProperties-Vorgang (um-Webdienst) anfordert.
-ms.openlocfilehash: 80b1d5aa508579eec14637ed10c322b5fbb670da
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das OofStatus-Element enthält einen Wert, der den Status "Unified Messaging Out of Office" für den Benutzer ausgibt, der eine GetUMProperties-Vorgangsanforderung (UM-Webdienst) sendet.
+ms.openlocfilehash: 4e899317defdb4ac4c27c3fdc17d7b7222dff6a7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460575"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539269"
 ---
-# <a name="oofstatus-um-web-service"></a>OofStatus (um-Webdienst)
+# <a name="oofstatus-um-web-service"></a>OofStatus (UM-Webdienst)
 
-Das **OofStatus** -Element enthält einen Wert, der den Abwesenheitsstatus des Unified Messaging-Diensts für den Benutzer angibt, der einen [GetUMProperties-Vorgang (um-Webdienst)](getumproperties-operation-um-web-service.md) anfordert. 
+Das **OofStatus-Element** enthält einen Wert, der den Status "Unified Messaging Out of Office" für den Benutzer zurückgibt, der eine [GetUMProperties-Vorgangsanforderung (UM-Webdienst)](getumproperties-operation-um-web-service.md) sendet. 
   
-[GetUMPropertiesResponse (um-Webdienst)](getumpropertiesresponse-um-web-service.md)
+[GetUMPropertiesResponse (UM-Webdienst)](getumpropertiesresponse-um-web-service.md)
   
-[OofStatus (um-Webdienst)](oofstatus-um-web-service.md)
+[OofStatus (UM-Webdienst)](oofstatus-um-web-service.md)
   
 ```xml
 <GetUMPropertiesResponse>
@@ -53,15 +53,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUMPropertiesResponse (um-Webdienst)](getumpropertiesresponse-um-web-service.md) <br/> |Definiert eine Antwort auf eine [GetUMProperties-Vorgangsanforderung (um-Webdienst)](getumproperties-operation-um-web-service.md) .  <br/> |
+|[GetUMPropertiesResponse (UM-Webdienst)](getumpropertiesresponse-um-web-service.md) <br/> |Definiert eine Antwort auf eine [GetUMProperties-Vorgangsanforderung (UM-Webdienst).](getumproperties-operation-um-web-service.md)  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein boolescher Textwert ist erforderlich. Im Folgenden sind die möglichen Werte aufgeführt:
   
-- Wahr
+- Richtig
     
-- Falsch
+- Nicht richtig
     
 ## <a name="element-information"></a>Informationen zu Elementen
 
@@ -69,14 +69,14 @@ Ein boolescher Textwert ist erforderlich. Im Folgenden sind die möglichen Werte
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[GetUMProperties-Vorgang (um-Webdienst)](getumproperties-operation-um-web-service.md)
+[GetUMProperties-Vorgang (UM-Webdienst)](getumproperties-operation-um-web-service.md)
   
-[GetUMPropertiesResponse (um-Webdienst)](getumpropertiesresponse-um-web-service.md)
+[GetUMPropertiesResponse (UM-Webdienst)](getumpropertiesresponse-um-web-service.md)
 

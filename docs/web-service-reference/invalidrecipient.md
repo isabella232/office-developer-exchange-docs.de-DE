@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - InvalidRecipient
 api_type:
 - schema
 ms.assetid: 9e2d3433-22d7-444b-9883-e5649297d8fe
-description: Das InvalidRecipient-Element enthält die SMTP-Adresse des ungültigen Empfängers sowie Informationen dazu, warum der Empfänger ungültig ist.
-ms.openlocfilehash: f301b31c1054625151ce90e41fca5e3efc21f473
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das InvalidRecipient-Element enthält die SMTP-Adresse des ungültigen Empfängers und Informationen dazu, warum der Empfänger ungültig ist.
+ms.openlocfilehash: 507cdf23d42477e7b70258b674246463e10f975b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526550"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539535"
 ---
 # <a name="invalidrecipient"></a>InvalidRecipient
 
-Das **InvalidRecipient** -Element enthält die SMTP-Adresse des ungültigen Empfängers sowie Informationen dazu, warum der Empfänger ungültig ist. 
+Das **InvalidRecipient-Element** enthält die SMTP-Adresse des ungültigen Empfängers und Informationen dazu, warum der Empfänger ungültig ist. 
   
 ```XML
 <InvalidRecipient>
@@ -46,16 +46,16 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[SmtpAddress](smtpaddress.md) <br/> |Enthält die SMTP-Adresse des ungültigen Empfängers. Dieses Element ist erforderlich.  <br/> |
-|[Response Code (InvalidRecipientResponseCodeType)](responsecode-invalidrecipientresponsecodetype.md) <br/> |Stellt einen Fehlercode bereit, der den spezifischen Fehler identifiziert, der bei der Anforderung aufgetreten ist. Dieses Element ist erforderlich.  <br/> |
-|[MessageText](messagetext.md) <br/> |Enthält eine Textbeschreibung des Status der Antwort. Dieses Element ist optional.  <br/> |
+|[ResponseCode (InvalidRecipientResponseCodeType)](responsecode-invalidrecipientresponsecodetype.md) <br/> |Stellt einen Fehlercode bereit, der den spezifischen Fehler identifiziert, auf den die Anforderung gestoßen ist. Dieses Element ist erforderlich.  <br/> |
+|[MessageText](messagetext.md) <br/> |Stellt eine Textbeschreibung des Status der Antwort bereit. Dieses Element ist optional.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[InvalidRecipients](invalidrecipients.md) <br/> |Stellt die Empfänger einer Anforderung für eine Ordnerfreigabe dar, die ungültig sind.  <br/> |
+|[InvalidRecipients](invalidrecipients.md) <br/> |Stellt die Empfänger einer ungültigen Ordnerfreigabeanforderung dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

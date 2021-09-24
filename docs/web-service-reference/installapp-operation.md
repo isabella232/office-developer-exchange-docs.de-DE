@@ -5,43 +5,43 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 596eae95-3e78-489a-8bb2-d2dd4a026405
-description: Hier finden Sie Informationen zum InstallApp-EWS-Vorgang.
-ms.openlocfilehash: ae6aab7f7176aa827bafa9abf1aa67d458d309d2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum InstallApp EWS-Vorgang.
+ms.openlocfilehash: 87e6f1caddd6949d5dc98edc074acd365de818d9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465688"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515579"
 ---
 # <a name="installapp-operation"></a>InstallApp-Vorgang
 
-Hier finden Sie Informationen zum **InstallApp** -EWS-Vorgang. 
+Hier finden Sie Informationen zum **InstallApp** EWS-Vorgang. 
   
-Mit dem **InstallApp** -Vorgang wird eine Mail-App für Outlook in einem Postfach installiert. 
+Der **InstallApp-Vorgang** installiert eine Mail-App für Outlook in einem Postfach. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-installapp-operation"></a>Verwenden des InstallApp-Vorgangs
 
-Der **InstallApp** -Vorgang verwendet ein einzelnes Argument, das eine zu installierende Mail-App identifiziert. Das Argument enthält das Base64-codierte Manifest für eine Mail-app. 
+Der **InstallApp-Vorgang** verwendet ein einzelnes Argument, das eine zu installierende Mail-App identifiziert. Das Argument enthält das base64-codierte Manifest für eine Mail-App. 
   
 ### <a name="installapp-operation-soap-headers"></a>SOAP-Header des InstallApp-Vorgangs
 
-Der **InstallApp** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **InstallApp-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="installapp-operation-request-example-install-a-mail-app-in-a-mailbox"></a>InstallApp-Vorgangs Anforderungs Beispiel: Installieren einer Mail-app in einem Postfach
+## <a name="installapp-operation-request-example-install-a-mail-app-in-a-mailbox"></a>InstallApp-Vorgangsanforderungsbeispiel: Installieren einer Mail-App in einem Postfach
 
-Im folgenden Beispiel einer **InstallApp** -Vorgangsanforderung wird gezeigt, wie eine Mail-App für Outlook installiert wird. Das App-Manifest kann mithilfe des GetAppManifests- [Vorgangs](getappmanifests-operation.md)gefunden werden.
+Das folgende Beispiel einer **InstallApp-Vorgangsanforderung** zeigt, wie Sie eine Mail-App für Outlook installieren. Das App-Manifest kann mithilfe des [GetAppManifests-Vorgangs](getappmanifests-operation.md)gefunden werden.
   
 > [!NOTE]
-> Das Base64-codierte App-Manifest wurde willkürlich abgeschnitten, um die Lesbarkeit zu erhalten, und stellt kein gültiges Manifest dar. 
+> Das base64-codierte App-Manifest wurde willkürlich abgeschnitten, um die Lesbarkeit zu erhalten, und stellt kein gültiges Manifest dar. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -60,15 +60,15 @@ Im folgenden Beispiel einer **InstallApp** -Vorgangsanforderung wird gezeigt, wi
 
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [InstallApp](installapp.md)
     
 - [Manifest](manifest.md)
     
-## <a name="successful-installapp-operation-response"></a>Erfolgreiche Reaktion des InstallApp-Vorgangs
+## <a name="successful-installapp-operation-response"></a>Erfolgreiche InstallApp-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **InstallApp** -Vorgangsanforderung zum Installieren einer Mail-app. 
+Das folgende Beispiel zeigt eine  erfolgreiche Antwort auf eine InstallApp-Vorgangsanforderung zum Installieren einer Mail-App. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -94,15 +94,15 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **InstallApp** -V
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [InstallAppResponse](installappresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-## <a name="installapp-operation-error-response"></a>Fehlerantwort des InstallApp-Vorgangs
+## <a name="installapp-operation-error-response"></a>Fehlerantwort beim InstallApp-Vorgang
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **InstallApp** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung, die ein ungültiges Manifest enthält. 
+Das folgende Beispiel zeigt eine  Fehlerantwort auf eine InstallApp-Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung, die ein ungültiges Manifest enthält. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e833351c-4bd9-4937-8752-c743a7ce57ea
-description: Das SmtpAddress-Element stellt die Alternative Post Fach SMTP-Adresse dar.
-ms.openlocfilehash: 53238caef1287536de838f4167e8937c182b41b0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SmtpAddress-Element stellt die alternative SMTP-Postfachadresse dar.
+ms.openlocfilehash: 570dd2e76bd65546c2d407493c96fa0ad99b5658
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459013"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540426"
 ---
 # <a name="smtpaddress-soap"></a>SmtpAddress (SOAP)
 
-Das **SmtpAddress** -Element stellt die Alternative Post Fach SMTP-Adresse dar. 
+Das **SmtpAddress-Element** stellt die alternative SMTP-Postfachadresse dar. 
   
 ```XML
 <SmtpAddress/>
@@ -44,19 +44,19 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **SmtpAddress** -Elements ist die SMTP-e-Mail-Adresse des alternativen Postfachs. 
+Der Textwert des **SmtpAddress-Elements** ist die SMTP-E-Mail-Adresse des alternativen Postfachs. 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 - [AutoErmittlung Webdienstverweis für Exchange](autodiscover-web-service-reference-for-exchange.md)
-- [XML-Elemente der SOAP-AutoErmittlung für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+- [SOAP AutoDiscover XML-Elemente für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Argument
 api_type:
 - schema
 ms.assetid: 15b0bfb8-2448-4ceb-aeac-965115e0fb72
 description: Das Argument-Element gibt Argumente für die Aktion an.
-ms.openlocfilehash: 41e3b1d891610669b0cc93f3daf6e8ee98c48396
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: e948216e733a6623f8c4113b178c2c4ff31eccd9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464756"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540265"
 ---
 # <a name="argument"></a>Argument
 
-Das **Argument** -Element gibt Argumente für die Aktion an. 
+Das **Argument-Element** gibt Argumente für die Aktion an. 
   
 ```xml
 <Argument Value=""/>
@@ -36,7 +36,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Wert** <br/> |Ein nicht leerer String-Wert, der den Wert eines Arguments für den Aktions Teil einer Schutz Regel darstellt. Dieses Attribut ist erforderlich.  <br/> |
+|**Wert** <br/> |Ein nicht leerer Zeichenfolgenwert, der den Wert eines Arguments für den Aktionsteil einer Schutzregel darstellt. Dieses Attribut ist erforderlich.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -46,13 +46,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Action (ProtectionRuleActionType)](action-protectionruleactiontype.md) <br/> |Gibt an, welche Aktion ausgeführt werden muss, wenn der Bedingungsteil der Regel übereinstimmt.  <br/> |
+|[Aktion (ProtectionRuleActionType)](action-protectionruleactiontype.md) <br/> |Gibt an, welche Aktion ausgeführt werden muss, wenn der Bedingungsteil der Regel übereinstimmt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

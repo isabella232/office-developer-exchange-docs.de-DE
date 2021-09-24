@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 46726ebb-a403-4793-8378-282aa7dc39d0
 description: Das Position-Element gibt die Position einer Entität an, die aus einer Nachricht extrahiert wurde.
-ms.openlocfilehash: 9acd965c3e0c29f3fa91df338c0671749192b38b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6b4e7c12bbcf12b8804619caa508f5c2c0bc4eda
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465422"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515292"
 ---
 # <a name="position"></a>Position
 
-Das **Position** -Element gibt die Position einer Entität an, die aus einer Nachricht extrahiert wurde. 
+Das **Position-Element** gibt die Position einer Entität an, die aus einer Nachricht extrahiert wurde. 
   
 ```XML
 <Position> LatestReply | Other | Subject | Signature </Position>
@@ -38,21 +38,21 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[UrlEntity](urlentity.md)  |  [AddressEntity](addressentity.md)  |  [EmailAddressEntity](emailaddressentity.md)  |  [MeetingSuggestion](meetingsuggestion.md)  |  [Kontakt (ContactType)](contact-contacttype.md)  |  [Telefon (PhoneEntityType)](phone-phoneentitytype.md)  |  [Task Suggestion](tasksuggestion.md)
+[UrlEntity](urlentity.md)  |  [AddressEntity](addressentity.md)  |  [EmailAddressEntity](emailaddressentity.md)  |  [MeetingSuggestion](meetingsuggestion.md)  |  [Kontakt (ContactType)](contact-contacttype.md)  |  [Telefon (PhoneEntityType)](phone-phoneentitytype.md)  |  [TaskSuggestion](tasksuggestion.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Position** -Elements ist die Position, an der eine extrahierte Entität in der Quellnachricht stammt. Die Textwerte für das **Position** -Element lauten wie folgt: 
+Der Textwert des Position-Elements ist der Speicherort, an dem eine extrahierte Entität aus der Quellnachricht stammt.  Die Textwerte für das **Position-Element** sind: 
   
 - **LatestReply** – die extrahierte Entität stammt aus der letzten Antwort auf die Nachricht. 
     
-- **Other** -die extrahierte Entität stammt aus einem nicht definierten Teil der Nachricht. 
+- **Andere** : Die extrahierte Entität stammt aus einem nicht definierten Teil der Nachricht. 
     
-- **Betreff** – die extrahierte Entität stammt aus dem Nachrichtenbetreff. 
+- **Betreff** : Die extrahierte Entität stammt aus dem Nachrichtenbetreff. 
     
 - **Signatur** – die extrahierte Entität stammt aus der Nachrichtensignatur. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

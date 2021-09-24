@@ -1,27 +1,27 @@
 ---
-title: Issubmitted
+title: IsSubmitted
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsSubmitted
 api_type:
 - schema
 ms.assetid: 2399e27e-bd8c-46b6-a3aa-674842e098c9
-description: Das Element issubmitted gibt an, ob ein Element an den Standardordner Postausgang gesendet wurde.
-ms.openlocfilehash: 4f28c1577a3586cf751804c51a28205bfda3ae0b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IsSubmitted-Element gibt an, ob ein Element an den Standardordner "Postausgang" übermittelt wurde.
+ms.openlocfilehash: 4914064db10bb2cf9e865a3b1ca8cc65c41f6400
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459924"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514466"
 ---
-# <a name="issubmitted"></a>Issubmitted
+# <a name="issubmitted"></a>IsSubmitted
 
-Das Element **issubmitted** gibt an, ob ein Element an den Standardordner Postausgang gesendet wurde. 
+Das **IsSubmitted-Element** gibt an, ob ein Element an den Standardordner "Postausgang" übermittelt wurde. 
   
 ```xml
 <IsSubmitted/>
@@ -58,9 +58,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass das Element an den Ordner Postausgang übermittelt wurde. 
+Der Textwert **"true"** gibt an, dass das Element an den Ordner "Postausgang" übermittelt wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

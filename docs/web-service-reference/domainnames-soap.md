@@ -1,22 +1,22 @@
 ---
-title: Domainnamen (SOAP)
+title: DomainNames (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 79ffc3f9-25c4-40b5-84ce-09a3c5f892fa
-description: Das Domainnamen-Element stellt die Domain Names-Auflistung dar. Das Domainnamen-Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet.
-ms.openlocfilehash: 0b425b3cd4c0e7cb2427920d61feb04010a3b123
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DomainNames-Element stellt die Domänennamensammlung dar. Das DomainNames-Element dient nur der internen Verwendung. Dieses Element wird von Clients nicht verwendet.
+ms.openlocfilehash: 7697b05d7432051b9048837cb41894684f52be15
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458418"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526416"
 ---
-# <a name="domainnames-soap"></a>Domainnamen (SOAP)
+# <a name="domainnames-soap"></a>DomainNames (SOAP)
 
-Das **Domainnamen** -Element stellt die Domain Names-Auflistung dar. Das **Domainnamen** -Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet. 
+Das **DomainNames-Element** stellt die Domänennamensammlung dar. Das **DomainNames-Element** dient nur der internen Verwendung. Dieses Element wird von Clients nicht verwendet. 
   
 ```XML
 <DomainNames>
@@ -24,7 +24,7 @@ Das **Domainnamen** -Element stellt die Domain Names-Auflistung dar. Das **Domai
 </DomainNames>
 ```
 
- **Domainnamen**
+ **DomainNames**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -37,19 +37,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Domänen (SOAP)](domains-soap.md) <br/> |Stellt eine Auflistung von Domänen dar, die vom [GetDomainSettings-Vorgang (](getdomainsettings-operation-soap.md)SOAP), [GetFederationInformation-Vorgang (](getfederationinformation-operation-soap.md)SOAP) oder dem [GetOrganizationRelationshipSettings-Vorgang (SOAP)](getorganizationrelationshipsettings-operation-soap.md)zurückgegeben werden.  <br/> |
+|[Domänen (SOAP)](domains-soap.md) <br/> |Stellt eine Auflistung von Domänen dar, die von der [GetDomainSettings-Operation (SOAP)](getdomainsettings-operation-soap.md), dem [GetFederationInformation-Vorgang (SOAP)](getfederationinformation-operation-soap.md)oder dem [GetOrganizationRelationshipSettings-Vorgang (SOAP)](getorganizationrelationshipsettings-operation-soap.md)zurückgegeben werden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste von Organisationsbeziehungen für eine einzelne Organisation dar.  <br/> |
+|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste der Organisationsbeziehungen für eine einzelne Organisation dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element stellt die SMTP-Domänen der externen Organisationen dar.
   
@@ -58,8 +58,8 @@ Dieses Element stellt die SMTP-Domänen der externen Organisationen dar.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

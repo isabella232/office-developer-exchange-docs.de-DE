@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GivenName
 api_type:
 - schema
 ms.assetid: 8efc46fd-6056-4439-9af3-fc9e13ee6d9a
-description: Das givenName-Element enthält den angegebenen Namen des Kontakts.
-ms.openlocfilehash: a22c5ef99844b55fa75f60acb8667ee423420336
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GivenName-Element enthält den Vornamen eines Kontakts.
+ms.openlocfilehash: b102c6137c597da15217e65bdc0a68fdac1cd305
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530134"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525918"
 ---
 # <a name="givenname"></a>GivenName
 
-Das **givenName** -Element enthält den angegebenen Namen des Kontakts. 
+Das **GivenName-Element** enthält den Vornamen eines Kontakts. 
   
 ```xml
 <GivenName/>
@@ -48,11 +48,11 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der den angegebenen Namen eines Kontakts darstellt, ist erforderlich, wenn dieses Element verwendet wird.
+Wenn dieses Element verwendet wird, ist ein Textwert erforderlich, der den Vornamen eines Kontakts darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Ein angegebener Name ist normalerweise der Vorname einer Person.
+Ein Vorname ist in der Regel der Vorname einer Person.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

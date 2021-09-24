@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateItem
 api_type:
 - schema
 ms.assetid: 298fdd71-a83d-4407-9728-4f0a8e2d857c
-description: Der UpdateItem-Vorgang wird zum Aktualisieren der Eigenschaften von Kontaktelementen in der Exchange-Informationsspeicher verwendet.
-ms.openlocfilehash: 66e1b91ea3154d8a501339aed7b398970e8f5392
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der UpdateItem-Vorgang dient zum Aktualisieren von Kontaktelementeigenschaften im Exchange Speicher.
+ms.openlocfilehash: 3d9c42d941be45f9577efb53e30bc2c299370527
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459826"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515026"
 ---
 # <a name="updateitem-operation-contact"></a>UpdateItem-Vorgang (Kontakt)
 
-Der UpdateItem-Vorgang wird zum Aktualisieren der Eigenschaften von Kontaktelementen in der Exchange-Informationsspeicher verwendet.
+Der UpdateItem-Vorgang dient zum Aktualisieren von Kontaktelementeigenschaften im Exchange Speicher.
   
-## <a name="updateitem-contact-request-example"></a>UpdateItem (Kontakt)-Anforderungs Beispiel
+## <a name="updateitem-contact-request-example"></a>UpdateItem (Contact)-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Codebeispiel wird veranschaulicht, wie die e-Mail-Adresse eines Kontakts aktualisiert wird.
+Das folgende Codebeispiel zeigt, wie die E-Mail-Adresse eines Kontakts aktualisiert wird.
   
 ### <a name="code"></a>Code
 
@@ -62,7 +62,7 @@ Im folgenden Codebeispiel wird veranschaulicht, wie die e-Mail-Adresse eines Kon
 
 ### <a name="comments"></a>Comments
 
-Die Element-ID wurde verkürzt, um die Lesbarkeit beizubehalten.
+Der Elementbezeichner wurde gekürzt, um die Lesbarkeit zu gewährleisten.
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -86,7 +86,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [EmailAddresses](emailaddresses.md)
     
-- [Eintrag (e-mailemail)](entry-emailaddress.md)
+- [Eintrag (EmailAddress)](entry-emailaddress.md)
     
 ## <a name="successful-updateitem-contact-response"></a>Erfolgreiche UpdateItem-Antwort (Kontakt)
 
@@ -126,7 +126,7 @@ Das folgende Codebeispiel zeigt eine erfolgreiche UpdateItem-Antwort.
 
 ### <a name="comments"></a>Comments
 
-Die Element-ID wurde verkürzt, um die Lesbarkeit beizubehalten.
+Der Elementbezeichner wurde gekürzt, um die Lesbarkeit zu gewährleisten.
   
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
@@ -142,13 +142,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 - [Contact](contact.md)
     
 - [ItemId](itemid.md)
     
-## <a name="invalid-updateitem-contact-request-example"></a>Ungültiges UpdateItem (Contact)-Anforderungs Beispiel
+## <a name="invalid-updateitem-contact-request-example"></a>Ungültiges UpdateItem (Contact)-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
@@ -187,9 +187,9 @@ Das folgende Codebeispiel zeigt eine ungültige Anforderung.
 
 ### <a name="comments"></a>Comments
 
-Die Element-ID wurde verkürzt, um die Lesbarkeit beizubehalten.
+Der Elementbezeichner wurde gekürzt, um die Lesbarkeit zu gewährleisten.
   
-## <a name="updateitem-contact-error-response"></a>UpdateItem (Kontakt)-Fehlerantwort
+## <a name="updateitem-contact-error-response"></a>UpdateItem -Fehlerantwort (Kontakt)
 
 ### <a name="description"></a>Beschreibung
 
@@ -220,7 +220,7 @@ Das folgende Codebeispiel zeigt eine Fehlerantwort auf eine UpdateItem (Contact)
 
 ### <a name="comments"></a>Comments
 
-Einige Elemente, die im SOAP-Textkörper einer Fehlerantwort verwendet werden, die durch einen Schemaüberprüfungsfehler verursacht wird, sind nicht in den Schemas "Nachrichten" oder "Typen" definiert. Das **Detail** -Element enthält Informationen zum Fehler. Das [Response Code](responsecode.md) -Element enthält den Fehlercode. Das [Message](message-ex15websvcsotherref.md) -Element enthält eine Erklärung für den Fehler, sofern einer verfügbar ist. Das Element " **Position** " beschreibt die Nummer der Nummer, in der der Schemaüberprüfungsfehler aufgetreten ist. Das **Position** -Element beschreibt die Position vom äußersten linken Zeichen des XML-Dokuments. 
+Einige Elemente, die im SOAP-Textkörper einer Fehlerantwort verwendet werden, die durch einen Schemaüberprüfungsfehler verursacht wird, sind in den Nachrichten- oder Typenschemas nicht definiert. Das **Detailelement** enthält Informationen zu dem Fehler. Das [ResponseCode-Element](responsecode.md) enthält den Fehlercode. Das [Message-Element](message-ex15websvcsotherref.md) enthält eine Erklärung für den Fehler, sofern verfügbar. Das **Line-Element** beschreibt die Zeilennummer, bei der der Schemaüberprüfungsfehler aufgetreten ist. Das  Position-Element beschreibt die Position vom äußersten linken Zeichen des XML-Dokuments. 
   
 ## <a name="see-also"></a>Siehe auch
 

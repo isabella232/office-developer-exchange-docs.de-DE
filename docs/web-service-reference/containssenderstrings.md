@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ContainsSenderStrings
 api_type:
 - schema
 ms.assetid: 3e16163f-cffe-4c4e-9a2a-00245d25ba96
 description: Das ContainsSenderStrings-Element gibt die Zeichenfolgen an, die in der From-Eigenschaft eingehender Nachrichten angezeigt werden müssen, damit die Bedingung oder Ausnahme zutrifft.
-ms.openlocfilehash: e7b78f1311d288db7969a0024bde84433e18d37f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: bf4fbe30bc5ed58ad4ac780b82d79965136c8d5d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458978"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514746"
 ---
 # <a name="containssenderstrings"></a>ContainsSenderStrings
 
-Das **ContainsSenderStrings** -Element gibt die Zeichenfolgen an, die in der **from** -Eigenschaft eingehender Nachrichten angezeigt werden müssen, damit die Bedingung oder Ausnahme zutrifft. 
+Das **ContainsSenderStrings-Element** gibt die Zeichenfolgen an, die in der **From-Eigenschaft** eingehender Nachrichten angezeigt werden müssen, damit die Bedingung oder Ausnahme zutrifft. 
   
 ```XML
 <ContainsSenderStrings>
@@ -42,7 +42,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[String](string.md) <br/> |Stellt eine Zeichenfolge dar, die in der **from** -Eigenschaft eingehender Nachrichten angezeigt werden muss, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[String](string.md) <br/> |Stellt eine Zeichenfolge dar, die in der **From-Eigenschaft** eingehender Nachrichten angezeigt werden muss, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -55,7 +55,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -65,7 +65,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

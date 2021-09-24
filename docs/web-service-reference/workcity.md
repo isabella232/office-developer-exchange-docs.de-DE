@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c9850a25-1560-4ed8-969c-dc3e59dde207
-description: Das WorkCity-Element gibt den Ort an, an dem die zugeordnete Rolle arbeitet.
-ms.openlocfilehash: 712544d60fde15b3d630ecd00b9b5dfbb16a7dd5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das WorkCity-Element gibt die Stadt an, in der die zugeordnete Persona funktioniert.
+ms.openlocfilehash: c498c40d66b6bd57833f37bbe88c12bef85f9a99
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459714"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514956"
 ---
 # <a name="workcity"></a>WorkCity
 
-Das **WorkCity** -Element gibt den Ort an, an dem die zugeordnete Rolle arbeitet. 
+Das **WorkCity-Element** gibt die Stadt an, in der die zugeordnete Persona funktioniert. 
   
 ```XML
 <WorkCity></WorkCity>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **WorkCity** -Elements ist der Ort, an dem die zugeordnete Rolle arbeitet. 
+Der Textwert des **WorkCity-Elements** ist die Stadt, in der die zugeordnete Persona funktioniert. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ConnectingSID
 api_type:
 - schema
 ms.assetid: 56d6aa52-8fa6-4773-9046-44a6f4f5d97c
-description: Das ConnectingSID-Element stellt ein Konto für den Identitätswechsel dar, wenn Sie den ExchangeImpersonation-SOAP-Header verwenden.
-ms.openlocfilehash: f4edf63f129fc769f4a2d710a505b40da4057fab
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ConnectingSID-Element stellt ein Konto dar, das bei Verwendung des EXCHANGEImpersonation-SOAP-Headers als Identitätswechsel verwendet werden soll.
+ms.openlocfilehash: 21cfcfc3590ea5a8b8ca5b53dfdb403e108e37f7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459279"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515971"
 ---
 # <a name="connectingsid"></a>ConnectingSID
 
-Das **ConnectingSID** -Element stellt ein Konto für den Identitätswechsel dar, wenn Sie den ExchangeImpersonation-SOAP-Header verwenden. 
+Das **ConnectingSID-Element** stellt ein Konto dar, das bei Verwendung des EXCHANGEImpersonation-SOAP-Headers als Identitätswechsel verwendet werden soll. 
   
 - [ExchangeImpersonation](exchangeimpersonation.md) 
 - [ConnectingSID](connectingsid.md)
@@ -64,20 +64,20 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PrincipalName](principalname.md) <br/> |Stellt den Benutzerprinzipalnamen (User Principal Name, UPN) des Kontos dar, das für den Identitätswechsel verwendet werden soll. Dies sollte der UPN für die Domäne sein, in der das Benutzerkonto vorhanden ist.  <br/> |
-|[SID](sid.md) <br/> |Stellt das SDDL-Formular (Security Descriptor Definition Language) der Sicherheits-ID (Security Identifier, SID) für das Konto dar, das für den Identitätswechsel verwendet werden soll.  <br/> |
-|[PrimarySmtpAddress](primarysmtpaddress.md) <br/> |Stellt die primäre Simple Mail Transfer Protocol (SMTP) Adresse des Kontos dar, das für den Exchange-Identitätswechsel verwendet werden soll. Wenn die primäre SMTP-Adresse angegeben wird, kostet Sie eine zusätzliche Active Directory Verzeichnisdienstsuche, um die SID des Benutzers zu erhalten. Es wird empfohlen, die SID oder den UPN zu verwenden, wenn diese verfügbar sind.  <br/> |
-|[SmtpAddress](smtpaddress.md) <br/> |Stellt die Simple Mail Transfer Protocol (SMTP) Adresse des Kontos dar, das für den Exchange-Identitätswechsel verwendet werden soll. Wenn die SMTP-Adresse angegeben wird, kostet Sie eine zusätzliche Active Directory Suche, um die SID des Benutzers zu erhalten. Es wird empfohlen, die SID oder den UPN zu verwenden, wenn diese verfügbar sind.  <br/> |
+|[PrincipalName](principalname.md) <br/> |Stellt den Benutzerprinzipalnamen (UPN) des Kontos dar, das für identitätswechsel verwendet werden soll. Dies sollte der UPN für die Domäne sein, in der das Benutzerkonto vorhanden ist.  <br/> |
+|[SID](sid.md) <br/> |Stellt die SDDL-Form (Security Descriptor Definition Language) der Sicherheits-ID (SID) für das Konto dar, das für Identitätswechsel verwendet werden soll.  <br/> |
+|[PrimarySmtpAddress](primarysmtpaddress.md) <br/> |Stellt die primäre SMTP-Adresse (Simple Mail Transfer Protocol) des Kontos dar, das für Exchange Identitätswechsel verwendet werden soll. Wenn die primäre SMTP-Adresse angegeben wird, wird eine zusätzliche Active Directory-Verzeichnisdienst-Suche kosten, um die SID des Benutzers abzurufen. Es wird empfohlen, die SID oder den UPN zu verwenden, wenn diese verfügbar sind.  <br/> |
+|[SmtpAddress](smtpaddress.md) <br/> |Stellt die SMTP-Adresse (Simple Mail Transfer Protocol) des Kontos dar, das für Exchange Identitätswechsel verwendet werden soll. Wenn die SMTP-Adresse angegeben wird, kostet dies eine zusätzliche Active Directory-Suche, um die SID des Benutzers abzurufen. Es wird empfohlen, die SID oder den UPN zu verwenden, wenn diese verfügbar sind.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Wird im SOAP-Header einer Anforderung verwendet. Wenn dieses Element vorhanden ist, versucht der Aufrufer, das im **ExchangeImpersonation** -Element enthaltene Konto zu imitieren.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/ExchangeImpersonation` <br/> |
+|[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Wird im SOAP-Header einer Anforderung verwendet. Wenn dieses Element vorhanden ist, versucht der Aufrufer, die Identität des Kontos imItieren, das im **ExchangeImpersonation-Element** enthalten ist.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/ExchangeImpersonation` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Anruf Konto muss über das Recht **MS-Wechsel-Wechsel** auf dem Client Zugriffsserver und das **MS-MayImpersonate** direkt in der Postfachdatenbank, die das Postfach enthält, den Identitätswechsel oder das Active Directory Benutzer-oder Kontaktobjekt aufweisen. 
+Das aufrufende Konto muss über den **ms-exch-Identitätswechsel** rechts auf dem Clientzugriffsserver und über das **Recht "ms-exch-MayImpersonate"** in der Postfachdatenbank verfügen, die das Postfach zum Identitätswechsel enthält, oder über das Active Directory-Benutzer- oder -Kontaktobjekt. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

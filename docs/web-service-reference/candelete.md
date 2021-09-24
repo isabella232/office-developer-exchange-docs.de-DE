@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CanDelete
 api_type:
 - schema
 ms.assetid: 55e17121-aad0-4f90-889f-2c3512e9579c
 description: Das CanDelete-Element gibt an, ob ein verwalteter Ordner von einem Kunden gelöscht werden kann.
-ms.openlocfilehash: 5fe16c276bdb0c5b3b73ca63099559d3e869db3e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: ad7e573aeb2bb72d19f05421d0eab5a2f6ac5539
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461590"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515999"
 ---
 # <a name="candelete"></a>CanDelete
 
-Das **CanDelete** -Element gibt an, ob ein verwalteter Ordner von einem Kunden gelöscht werden kann. 
+Das **CanDelete-Element** gibt an, ob ein verwalteter Ordner von einem Kunden gelöscht werden kann. 
   
 ```xml
 <CanDelete/>
@@ -48,11 +48,11 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich, wenn dieses Element vorhanden ist. Der Wert **true** gibt an, dass der Ordner gelöscht werden kann; der Wert **false** bedeutet, dass der Ordner nicht gelöscht werden kann. 
+Wenn dieses Element vorhanden ist, ist ein Textwert erforderlich, der einen booleschen Wert darstellt. Der Wert **"true"** gibt an, dass der Ordner gelöscht werden kann. Der Wert **"false"** bedeutet, dass der Ordner nicht gelöscht werden kann. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie den [DeleteFolder-Vorgang](deletefolder-operation.md), um einen verwalteten Ordner zu löschen.
+Verwenden Sie zum Löschen eines verwalteten Ordners den [DeleteFolder-Vorgang.](deletefolder-operation.md)
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

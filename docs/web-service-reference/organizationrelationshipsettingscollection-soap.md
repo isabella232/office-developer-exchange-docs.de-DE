@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 33456abf-a1b6-46da-a864-3ec8af2780de
-description: Das OrganizationRelationshipSettingsCollection-Element stellt eine Liste von Organisationsbeziehungen dar, die mit der Abfrage übereinstimmen. Das OrganizationRelationshipSettingsCollection-Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet.
-ms.openlocfilehash: 52f84d932e74393a844f5f55fbd1d09bfb0a5d4e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das OrganizationRelationshipSettingsCollection-Element stellt eine Liste der Organisationsbeziehungen dar, die der Abfrage entsprechen. Das OrganizationRelationshipSettingsCollection-Element ist nur für die interne Verwendung vorgesehen. Dieses Element wird von Clients nicht verwendet.
+ms.openlocfilehash: e3bb4c21e77bc22af051c63b714aaaef4d883609
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462423"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514235"
 ---
 # <a name="organizationrelationshipsettingscollection-soap"></a>OrganizationRelationshipSettingsCollection (SOAP)
 
-Das **OrganizationRelationshipSettingsCollection** -Element stellt eine Liste von Organisationsbeziehungen dar, die mit der Abfrage übereinstimmen. Das **OrganizationRelationshipSettingsCollection** -Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet. 
+Das **OrganizationRelationshipSettingsCollection-Element** stellt eine Liste der Organisationsbeziehungen dar, die der Abfrage entsprechen. Das **OrganizationRelationshipSettingsCollection-Element** ist nur für die interne Verwendung vorgesehen. Dieses Element wird von Clients nicht verwendet. 
   
 ```XML
 <OrganizationRelationshipSettingsCollection>
@@ -43,7 +43,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Antwort (GetOrganizationRelationship) (SOAP)](response-getorganizationrelationshipsoap.md) <br/> |Enthält die Antwortinformationen für den [GetOrganizationRelationshipSettings-Vorgang (SOAP)](getorganizationrelationshipsettings-operation-soap.md) .  <br/> |
+|[Antwort (GetOrganizationRelationship) (SOAP)](response-getorganizationrelationshipsoap.md) <br/> |Enthält die [SOAP-Antwortinformationen (GetOrganizationRelationshipSettings-Vorgang).](getorganizationrelationshipsettings-operation-soap.md)  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
@@ -54,8 +54,8 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

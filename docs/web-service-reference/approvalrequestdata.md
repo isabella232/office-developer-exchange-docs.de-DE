@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6c971cf7-5c3a-4e5e-9a7d-048f4ac0aadb
-description: Das ApprovalRequestData-Element gibt den Genehmigungsstatus einer Genehmigungs Anforderungsnachricht an.
-ms.openlocfilehash: decbd4d646a56b9810387adcdb6a9049da89bc38
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ApprovalRequestData-Element gibt den Genehmigungsstatus einer Genehmigungsanforderungsnachricht an.
+ms.openlocfilehash: 69104249943d4bf593f3cc8d79169330b8863f28
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462304"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540286"
 ---
 # <a name="approvalrequestdata"></a>ApprovalRequestData
 
-Das **ApprovalRequestData** -Element gibt den Genehmigungsstatus einer Genehmigungs Anforderungsnachricht an. 
+Das **ApprovalRequestData-Element** gibt den Genehmigungsstatus einer Genehmigungsanforderungsnachricht an. 
   
 ```xml
 <ApprovalRequestData>
@@ -45,7 +45,7 @@ Keine.
 
 [Meldung](message-ex15websvcsotherref.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

@@ -5,40 +5,40 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 57c6ff23-5c2c-42ee-824b-5a1b6dafab8c
-description: Hier finden Sie Informationen zum GetUserRetentionPolicyTags-EWS-Vorgang.
-ms.openlocfilehash: 6505945f8ad110af714da1a3011c2d504acdc75f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum EWS-Vorgang "GetUserRetentionPolicyTags".
+ms.openlocfilehash: 9c030cb05e4adacf5eda9f046bdbb6c5c82b4975
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530832"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526134"
 ---
 # <a name="getuserretentionpolicytags-operation"></a>GetUserRetentionPolicyTags-Vorgang
 
-Hier finden Sie Informationen zum **GetUserRetentionPolicyTags** -EWS-Vorgang. 
+Hier finden Sie Informationen zum EWS-Vorgang **"GetUserRetentionPolicyTags".** 
   
-Der **GetUserRetentionPolicyTags** -Vorgang ruft eine Liste aller Standard-, Systemordner-und persönlichen Tags ab, die einem Benutzer mithilfe einer Systemrichtlinie zugeordnet sind oder die vom Benutzer angewendet wurden. 
+Der **GetUserRetentionPolicyTags-Vorgang** ruft eine Liste aller Standard-, Systemordner- und persönlichen Tags ab, die einem Benutzer mithilfe einer Systemrichtlinie zugeordnet sind oder die vom Benutzer angewendet wurden. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-getuserretentionpolicytags-operation"></a>Verwenden des GetUserRetentionPolicyTags-Vorgangs
 
-Bei diesem Vorgang werden der Anzeigename, die Aufbewahrungs-ID, der Aufbewahrungszeitraum, der Aufbewahrungs, die Aufbewahrungsaktion und die Beschreibungs Tags sowie die Werte für die Eigenschaften **IsVisible**, **OptedInto**und **isarchive** zurückgegeben. 
+Dieser Vorgang gibt den Anzeigenamen, die Aufbewahrungs-ID, den Aufbewahrungszeitraum, den Aufbewahrungstyp, die Aufbewahrungsaktion und Beschreibungstags sowie die Werte für die Eigenschaften **IsVisible,** **OptedInto** und **IsArchive** zurück. 
   
 ### <a name="getuserretentionpolicytags-operation-soap-headers"></a>SOAP-Header des GetUserRetentionPolicyTags-Vorgangs
 
-Der **GetUserRetentionPolicyTags** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **GetUserRetentionPolicyTags-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dies gilt für eine Anforderung.  <br/> |
 |**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dies gilt für eine Antwort.  <br/> |
    
-## <a name="getuserretentionpolicytags-operation-request-example"></a>GetUserRetentionPolicyTags-Vorgangsanforderung (Beispiel)
+## <a name="getuserretentionpolicytags-operation-request-example"></a>GetUserRetentionPolicyTags-Vorgangsanforderungsbeispiel
 
-Im folgenden Beispiel einer **GetUserRetentionPolicyTags** -Vorgangsanforderung wird gezeigt, wie eine Liste von Tags für den aktuellen Benutzer abgerufen wird. 
+Das folgende Beispiel einer **GetUserRetentionPolicyTags-Vorgangsanforderung** zeigt, wie eine Liste der Tags für den aktuellen Benutzer abgerufen wird. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -56,13 +56,13 @@ Im folgenden Beispiel einer **GetUserRetentionPolicyTags** -Vorgangsanforderung 
 </soap:Envelope>
 ```
 
-Der SOAP-Anforderungstext Körper enthält das folgende Element:
+Der SOAP-Anforderungstext enthält das folgende Element:
   
 - [GetUserRetentionPolicyTags](getuserretentionpolicytags.md)
     
-## <a name="successful-getuserretentionpolicytags-operation-response"></a>Erfolgreiche Reaktion des GetUserRetentionPolicyTags-Vorgangs
+## <a name="successful-getuserretentionpolicytags-operation-response"></a>Erfolgreiche GetUserRetentionPolicyTags-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetUserRetentionPolicyTags** -Vorgangsanforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetUserRetentionPolicyTags-Vorgangsanforderung.** 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -157,7 +157,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetUserRetentio
 
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [GetUserRetentionPolicyTagsResponse](getuserretentionpolicytagsresponse.md)
     
@@ -169,7 +169,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-- [Para retentionid vom](retentionid.md)
+- [RetentionId](retentionid.md)
     
 - [RetentionPeriod](retentionperiod.md)
     
@@ -185,7 +185,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [IsArchive](isarchive.md)
     
-## <a name="getuserretentionpolicytags-operation-error-response"></a>Fehlerantwort des GetUserRetentionPolicyTags-Vorgangs
+## <a name="getuserretentionpolicytags-operation-error-response"></a>GetUserRetentionPolicyTags-Vorgang – Fehlerantwort
 
-Informationen zu Fehlercodes, die für EWS allgemein sind, finden Sie unter [Response Code](responsecode.md).
+Fehlercodes, die für EWS generisch sind, finden Sie unter [ResponseCode](responsecode.md).
   

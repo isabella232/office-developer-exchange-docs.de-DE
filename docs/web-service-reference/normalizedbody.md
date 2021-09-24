@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bfb813e4-642d-4f1b-9e91-1fee89dbd083
 description: Das NormalizedBody-Element gibt eine HTML-Darstellung der Body-Eigenschaft eines Elements als Fragment an, das in einen anderen HTML-Textkörper eingefügt werden kann.
-ms.openlocfilehash: fb249794bccfeed198e7a3230ab53c66893dcf96
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 9ce7a745cfbe2e08afbe4c83873cb670b6afa571
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462668"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515432"
 ---
 # <a name="normalizedbody"></a>NormalizedBody
 
-Das **NormalizedBody** -Element gibt eine HTML-Darstellung der **Body** -Eigenschaft eines Elements als Fragment an, das in einen anderen HTML-Textkörper eingefügt werden kann. 
+Das **NormalizedBody-Element** gibt eine HTML-Darstellung der **Body-Eigenschaft** eines Elements als Fragment an, das in einen anderen HTML-Textkörper eingefügt werden kann. 
   
 ```XML
 <NormalizedBody BodyType="Text | HTML" IsTruncated="true | false"></NormalizedBody>
@@ -32,8 +32,8 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|BodyType  <br/> |Gibt den Typ des Texts an. Der Wert des **Texts** für das **BodyType** -Attribut gibt an, dass sich der Textkörper in nur-Text-Form befindet. Der Wert von **HTML** für das **BodyType** -Attribut gibt an, dass sich der Text im HTML-Format befindet. Das **BodyType** -Attribut ist erforderlich.  <br/> |
-|IsTruncated  <br/> |Gibt an, dass der Textkörper Inhalt abgeschnitten wurde. Der Textwert **false** für das Attribut **IsTruncated** gibt an, dass der Inhalt des Texts nicht abgeschnitten wurde. Der normalisierte Text wird abgeschnitten, wenn die normalisierte Körperlänge länger ist als der im [MaximumBodySize](maximumbodysize.md) -Element festgelegte Wert.  <br/> |
+|BodyType  <br/> |Gibt den Textkörpertyp an. Der Wert von **Text** für das **BodyType-Attribut** gibt an, dass sich der Textkörper in Nur-Text-Form befindet. Der **HTML-Wert** für das **BodyType-Attribut** gibt an, dass sich der Textkörper im HTML-Format befindet. Das **BodyType-Attribut** ist erforderlich.  <br/> |
+|IsTruncated  <br/> |Gibt an, dass der Textkörperinhalt abgeschnitten wurde. Der Textwert **"false"** für das **IsTruncated-Attribut** gibt an, dass der Textkörperinhalt nicht abgeschnitten wurde. Der normalisierte Textkörper wird abgeschnitten, wenn die normalisierte Textkörperlänge länger als der im [MaximumBodySize-Element](maximumbodysize.md) festgelegte Wert ist.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -41,13 +41,13 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Element](item.md)  |  [Nachricht](message-ex15websvcsotherref.md)  |  [MeetingMessage](meetingmessage.md)  |  [MeetingRequest](meetingrequest.md)  |  [MeetingResponse](meetingresponse.md)  |  [MeetingCancellation](meetingcancellation.md)  |  [Aufgabe](task.md)  |  [PostItem](postitem.md)  |  [CalendarItem](calendaritem.md)  |  [Kontaktinformationen](contact.md)  |  [Verteilerliste](distributionlist.md)
+[Element](item.md)  |  [Nachricht](message-ex15websvcsotherref.md)  |  [MeetingMessage](meetingmessage.md)  |  [MeetingRequest](meetingrequest.md)  |  [MeetingResponse](meetingresponse.md)  |  [MeetingCancellation](meetingcancellation.md)  |  [Aufgabe](task.md)  |  [PostItem](postitem.md)  |  [CalendarItem](calendaritem.md)  |  [Kontakt](contact.md)  |  [DistributionList](distributionlist.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **NormalizedBody** -Elements ist der normalisierte Text des Elements. 
+Der Textwert des **NormalizedBody-Elements** ist der normalisierte Textkörper des Elements. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MeetingRequestWasSent
 api_type:
 - schema
 ms.assetid: 9192400a-8eef-4147-9f94-aa8ea91b41d8
-description: Das MeetingRequestWasSent-Element gibt an, ob eine Besprechungsanfrage an angeforderte Teilnehmer gesendet wurde.
-ms.openlocfilehash: d5005eb86d5f8d2f438a69e634f0617c2311d720
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MeetingRequestWasSent-Element gibt an, ob eine Besprechungsanfrage an die angeforderten Teilnehmer gesendet wurde.
+ms.openlocfilehash: 282cc074b0ed2c5bc05fbb35b0ee31f2940f1a86
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465765"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540809"
 ---
 # <a name="meetingrequestwassent"></a>MeetingRequestWasSent
 
-Das **MeetingRequestWasSent** -Element gibt an, ob eine Besprechungsanfrage an angeforderte Teilnehmer gesendet wurde. 
+Das **MeetingRequestWasSent-Element** gibt an, ob eine Besprechungsanfrage an die angeforderten Teilnehmer gesendet wurde. 
   
 ```xml
 <MeetingRequestWasSent/>
@@ -49,9 +49,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich, wenn dieses Element enthalten ist. Der Wert **true** gibt an, dass eine Besprechungsanfrage gesendet wurde. Der Wert **false** gibt an, dass keine Besprechungsanfrage gesendet wurde. 
+Wenn dieses Element enthalten ist, ist ein Textwert erforderlich, der einen booleschen Wert darstellt. Der Wert **"true"** gibt an, dass eine Besprechungsanfrage gesendet wurde. Der Wert **"false"** gibt an, dass keine Besprechungsanfrage gesendet wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

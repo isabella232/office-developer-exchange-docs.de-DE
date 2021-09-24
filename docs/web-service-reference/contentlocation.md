@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ContentLocation
 api_type:
 - schema
 ms.assetid: d91cf587-24e3-4c13-8784-5ca29787cca7
-description: Das ContentLocation-Element enthält den URI (Uniform Resource Identifier), der dem Speicherort des Inhalts einer Anlage entspricht.
-ms.openlocfilehash: 01bb95da5f620fddc8777f88b1d3eb1a7e6069b1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ContentLocation-Element enthält den Uniform Resource Identifier (URI), der dem Speicherort des Inhalts einer Anlage entspricht.
+ms.openlocfilehash: 4bfb23df517f1fa7a5633ec52650f5371e599848
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461485"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515964"
 ---
 # <a name="contentlocation"></a>ContentLocation
 
-Das **ContentLocation** -Element enthält den URI (Uniform Resource Identifier), der dem Speicherort des Inhalts einer Anlage entspricht. 
+Das **ContentLocation-Element** enthält den Uniform Resource Identifier (URI), der dem Speicherort des Inhalts einer Anlage entspricht. 
   
 ```xml
 <ContentLocation/>
@@ -44,14 +44,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange-Element dar, das an ein anderes Exchange-Element angefügt ist.  <br/> |
-|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die an ein Element im Exchange-Informationsspeicher angefügt ist.  <br/> |
+|[ItemAttachment](itemattachment.md) <br/> |Stellt ein Exchange Element dar, das einem anderen Exchange Element zugeordnet ist.  <br/> |
+|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die an ein Element im Exchange Speicher angefügt ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Text-Wert ist ein String-Wert, der einen URI darstellt.
+Der Textwert ist ein Zeichenfolgenwert, der einen URI darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

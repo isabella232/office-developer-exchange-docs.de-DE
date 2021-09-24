@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 178eefa1-995c-4bea-930b-e51293961191
-description: Das TTL-Element gibt die Zeit in Stunden an, in der die Einstellungen gültig bleiben.
-ms.openlocfilehash: 9a17cbe4e669d1afe9f3ef4a24f2a9a2889a7d52
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das TTL-Element gibt die Zeit bis Zum Live in Stunden an, während der die Einstellungen gültig bleiben.
+ms.openlocfilehash: 6850f104fe90ae941f9d1d522fa3d3641e433c5f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467382"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515103"
 ---
 # <a name="ttl-pox"></a>TTL (POX)
 
-Das **TTL** -Element gibt die Zeit in Stunden an, in der die Einstellungen gültig bleiben. 
+Das **TTL-Element** gibt die Zeit bis Zum Live in Stunden an, während der die Einstellungen gültig bleiben. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,15 +50,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Exchange Server 2007 Computer, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen zum Verbinden eines Clients mit dem computer Exchange Server 2007, auf dem die Clientzugriffsserverrolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt die Zeit zu leben, in Stunden, während der die Einstellungen gültig bleiben. Der Wert NULL gibt an, dass die Wiedererkennung nicht erforderlich ist. Wenn kein Wert angegeben ist, ist der Standardwert für dieses Element 1 Stunde.
+Der Textwert stellt die Zeit zu Live in Stunden dar, in denen die Einstellungen gültig bleiben. Der Wert Null gibt an, dass keine Verweigerung erforderlich ist. Wenn kein Wert angegeben ist, ist der Standardwert für dieses Element 1 Stunde.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Nachdem die vom **TTL** -Element dargestellte Zeit verstrichen ist, sollten die Einstellungen mithilfe einer AutoErmittlungs-Anforderung erneut ermittelt werden. 
+Nachdem die durch das **TTL-Element** dargestellte Zeit abgelaufen ist, sollten die Einstellungen mithilfe einer AutoErmittlungsanforderung aufgehoben werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

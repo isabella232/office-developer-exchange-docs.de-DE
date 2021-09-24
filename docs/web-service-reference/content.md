@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Content
 api_type:
 - schema
 ms.assetid: 24f8c54a-505f-4fc0-b7e7-93ad50b97070
-description: Das Inhaltselement enthält den Base64-codierten Inhalt einer Dateianlage.
-ms.openlocfilehash: 81f6acf69ff702bd0645663cb2e499ee5b45ea78
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Content-Element enthält den Base64-codierten Inhalt einer Dateianlage.
+ms.openlocfilehash: ccea4412416575f9a1d56a4cde6ebbfd0df31101
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458950"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513822"
 ---
 # <a name="content"></a>Inhalt
 
-Das **Inhalts** Element enthält den Base64-codierten Inhalt einer Dateianlage. 
+Das **Content-Element** enthält den Base64-codierten Inhalt einer Dateianlage. 
   
 ```xml
 <Content/>
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die t für ein Element in der Exchange-Informationsspeicher thattached.  <br/> |
+|[FileAttachment](fileattachment.md) <br/> |Stellt eine Datei dar, die nicht in einem Element im Exchange Speicher gejätet ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der String-Wert stellt die Base64-codierten Binärdaten der Dateianlage dar.
+Der Zeichenfolgenwert stellt die Base64-codierten Binärdaten der Dateianlage dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

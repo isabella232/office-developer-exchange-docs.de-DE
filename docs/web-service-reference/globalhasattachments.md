@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GlobalHasAttachments
 api_type:
 - schema
 ms.assetid: 3d075e93-14bc-479d-957f-9b7873d1db39
 description: Das GlobalHasAttachments -Element enthält einen Wert, der angibt, ob mindestens eine unterhaltungselement in einem Postfach eine Anlage enthält.
-ms.openlocfilehash: e314e8e5c06ca7d7820b910c05b381765e88911f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a5a12290e9eee4fb29ce7b5f24e9a24c44d8179e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459476"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525877"
 ---
 # <a name="globalhasattachments"></a>GlobalHasAttachments
 
@@ -58,7 +58,7 @@ Keine.
 
 Der Wert des **GlobalHasAttachments** -Elements gibt an, ob mindestens eine unterhaltungselement in einem Postfach eine Anlage enthält. Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich. Der Wert **true** bedeutet, dass die Unterhaltung mindestens eine Anlage sichtbar ist. Der Wert **false** bedeutet, dass die Unterhaltung keine Anlagen enthält oder nur Anlagen ausgeblendet wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

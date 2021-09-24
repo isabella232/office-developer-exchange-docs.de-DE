@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cffb41de-b8d0-4efd-8a39-2804025332fe
-description: Das Elementname gibt einen Such Einschränkungsnamen an.
-ms.openlocfilehash: 017734cae2aaff41f16f1caa9120824666ab9887
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Name-Element gibt einen Namen der Sucheinschränkung an.
+ms.openlocfilehash: 80edad0097924868463b126a270bc6497401129a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466878"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539289"
 ---
 # <a name="name-string"></a>Name (Zeichenfolge)
 
-Das Element **Name** gibt einen Such Einschränkungsnamen an. 
+Das **Name-Element** gibt einen Namen der Sucheinschränkung an. 
   
 ```XML
 <Name></Name>
@@ -43,9 +43,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Name** -Elements ist der Name der sucheinschränkung. 
+Der Textwert des **Name-Elements** ist der Name der Sucheinschränkung. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

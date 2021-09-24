@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - TimeZoneContext
 api_type:
 - schema
 ms.assetid: 573c462b-aa1d-4ba0-8852-e3f48b26873b
-description: Das timezonecontext-Element wird im Simple Object Access Protocol (SOAP)-Header verwendet, um die Zeitzonendefinition anzugeben, die als Standard verwendet werden soll, wenn die Zeitzone für die DateTime-Eigenschaften von Objekten zugewiesen wird, die mithilfe von Exchange-Webdienste erstellt, aktualisiert und abgerufen werden.
-ms.openlocfilehash: 26727317ccf34338e8d62ec92bd7a44d43a6cfdb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das TimeZoneContext-Element wird im SOAP-Header (Simple Object Access Protocol) verwendet, um die Zeitzonendefinition anzugeben, die als Standard verwendet werden soll, wenn die Zeitzone für die DateTime-Eigenschaften von Objekten zugewiesen wird, die mit Exchange Webdienste (EWS) erstellt, aktualisiert und abgerufen werden.
+ms.openlocfilehash: a628d4a094e70f1190f2cc0eda8cc4416bc37860
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460253"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515173"
 ---
 # <a name="timezonecontext"></a>TimeZoneContext
 
-Das **timezonecontext** -Element wird im Simple Object Access Protocol (SOAP)-Header verwendet, um die Zeitzonendefinition anzugeben, die als Standard verwendet werden soll, wenn die Zeitzone für die DateTime-Eigenschaften von Objekten zugewiesen wird, die mithilfe von Exchange-Webdienste erstellt, aktualisiert und abgerufen werden. 
+Das **TimeZoneContext-Element** wird im SOAP-Header (Simple Object Access Protocol) verwendet, um die Zeitzonendefinition anzugeben, die als Standard verwendet werden soll, wenn die Zeitzone für die DateTime-Eigenschaften von Objekten zugewiesen wird, die mithilfe von Exchange Webdienste (EWS) erstellt, aktualisiert und abgerufen werden. 
   
 ```xml
 <TimeZoneContext>
@@ -42,15 +42,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[TimeZoneDefinition](timezonedefinition.md) <br/> |Gibt die Punkte und Übergänge an, die eine Zeitzone definieren.  <br/> |
+|[TimeZoneDefinition](timezonedefinition.md) <br/> |Gibt die Zeiträume und Übergänge an, die eine Zeitzone definieren.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

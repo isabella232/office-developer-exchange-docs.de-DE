@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetRuleOperation
 api_type:
 - schema
 ms.assetid: 2106a85b-58fe-49be-b71d-4ca6aa66e060
 description: Das SetRuleOperation-Element stellt einen Vorgang zum Aktualisieren einer vorhandenen Regel dar.
-ms.openlocfilehash: 96fba2f229003b8c729c36614e69655852a3aa8c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fd7cb0ad29e2c5146cc5bcedba078c08857afe7c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526333"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540489"
 ---
 # <a name="setruleoperation"></a>SetRuleOperation
 
-Das **SetRuleOperation** -Element stellt einen Vorgang zum Aktualisieren einer vorhandenen Regel dar. 
+Das **SetRuleOperation-Element** stellt einen Vorgang zum Aktualisieren einer vorhandenen Regel dar. 
   
 [UpdateInboxRules](updateinboxrules.md)
   
@@ -58,7 +58,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - EncryptedSharedFolderDataCollection
 api_type:
 - schema
 ms.assetid: 25c6ae87-bbb9-4dd5-a85a-d669fcea137f
-description: Das EncryptedSharedFolderDataCollection-Element enthält eine Sammlung von Datenstrukturen, die ein Client verwenden kann, um die Freigabe seiner Kalender-oder Kontaktdaten für andere Clients zu autorisieren.
-ms.openlocfilehash: e8ed9221952892abda7b4eac62b16cdc4976c6e2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das EncryptedSharedFolderDataCollection-Element enthält eine Sammlung von Datenstrukturen, die ein Client verwenden kann, um die Freigabe seines Kalenders oder seiner Kontaktdaten für andere Clients zu autorisieren.
+ms.openlocfilehash: 868bff4e1afc905196bd4c48eba966cb8b7b08a4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461268"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540076"
 ---
 # <a name="encryptedsharedfolderdatacollection"></a>EncryptedSharedFolderDataCollection
 
-Das **EncryptedSharedFolderDataCollection** -Element enthält eine Sammlung von Datenstrukturen, die ein Client verwenden kann, um die Freigabe seiner Kalender-oder Kontaktdaten für andere Clients zu autorisieren. 
+Das **EncryptedSharedFolderDataCollection-Element** enthält eine Sammlung von Datenstrukturen, die ein Client verwenden kann, um die Freigabe seines Kalenders oder seiner Kontaktdaten für andere Clients zu autorisieren. 
   
 ```xml
 <EncryptedSharedFolderDataCollection>   <EncryptedSharedFolderData/></EncryptedSharedFolderDataCollection>
@@ -40,7 +40,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[EncryptedSharedFolderData](encryptedsharedfolderdata.md) <br/> |Enthält die verschlüsselten Daten, die ein Client verwenden kann, um die Freigabe seiner Kalender-oder Kontaktdaten für andere Clients zu autorisieren.  <br/> |
+|[EncryptedSharedFolderData](encryptedsharedfolderdata.md) <br/> |Enthält die verschlüsselten Daten, die ein Client verwenden kann, um die Freigabe seines Kalenders oder seiner Kontaktdaten für andere Clients zu autorisieren.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -49,9 +49,9 @@ Keine.
 |[GetSharingMetadataResponse](getsharingmetadataresponse.md) <br/> |Definiert eine Antwort auf eine [GetSharingMetadata-Vorgang](getsharingmetadata-operation.md) an.  <br/> |
 |[GetSharingMetadataResponseMessage](getsharingmetadataresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [GetSharingMetadata-Vorgang](getsharingmetadata-operation.md) -Anforderung.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, in dem Exchange Webdienste des Computers gehostet wird, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange Webdienste des Computers hostet, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
@@ -59,7 +59,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

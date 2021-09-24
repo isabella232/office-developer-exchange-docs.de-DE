@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: fde201a3-8b76-49aa-bee1-8cbbb1a5aa7f
-description: Das GetUserSettingsRequestMessage-Element stellt eine GetUserSettings-Operation (SOAP)-Anforderung dar.
-ms.openlocfilehash: 67923fade1d88ba899c7c9fdb38abc31c99c1135
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GetUserSettingsRequestMessage-Element stellt eine SOAP-Anforderung (GetUserSettings-Vorgang) dar.
+ms.openlocfilehash: 7882d5f551d5b5c51c805aec8e43b6c21a62954a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530155"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515733"
 ---
 # <a name="getusersettingsrequestmessage-soap"></a>GetUserSettingsRequestMessage (SOAP)
 
-Das **GetUserSettingsRequestMessage** -Element stellt eine [GetUserSettings-Operation (SOAP)-](getusersettings-operation-soap.md) Anforderung dar. 
+Das **GetUserSettingsRequestMessage-Element** stellt eine [SOAP-Anforderung (GetUserSettings-Vorgang)](getusersettings-operation-soap.md) dar. 
   
 ```XML
 <GetUserSettingsRequestMessage>
@@ -38,11 +38,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Request (SOAP)](request-soap.md) <br/> |Enthält die angeforderten Konfigurationseinstellungen.  <br/> |
+|[Anforderung (SOAP)](request-soap.md) <br/> |Enthält die angeforderten Konfigurationseinstellungen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
@@ -53,8 +53,8 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

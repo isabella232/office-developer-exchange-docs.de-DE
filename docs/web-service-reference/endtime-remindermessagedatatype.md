@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 771dce9c-17a7-4c1d-aab2-47b6dd48d795
-description: Das EndTime-Element stellt das Ende der Zeitspanne dar, die für Erinnerungen abgefragt werden soll.
-ms.openlocfilehash: 7a9eac48970d193a1a55a9e4c7934aad56058190
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das EndTime-Element stellt das Ende der Zeitspanne zum Abfragen von Erinnerungen dar.
+ms.openlocfilehash: f65183c9846d0990d77d533e102fc7a9102388c7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459658"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540102"
 ---
 # <a name="endtime-remindermessagedatatype"></a>EndTime (ReminderMessageDataType)
 
-Das **EndTime** -Element stellt das Ende der Zeitspanne dar, die für Erinnerungen abgefragt werden soll. 
+Das **EndTime-Element** stellt das Ende der Zeitspanne zum Abfragen von Erinnerungen dar. 
   
 ```XML
 <EndTime/>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **EndTime** -Elements stellt das Ende der Zeitspanne dar, für die Erinnerungen abgefragt werden sollen. 
+Der Textwert des **EndTime-Elements** stellt das Ende der Zeitspanne zum Abfragen von Erinnerungen dar. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

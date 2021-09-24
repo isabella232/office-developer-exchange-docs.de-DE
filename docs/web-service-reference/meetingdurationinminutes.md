@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MeetingDurationInMinutes
 api_type:
 - schema
 ms.assetid: bb86b275-9c29-4daf-8196-8d505b87a4f4
 description: Das MeetingDurationInMinutes-Element gibt die Dauer der Besprechung an, die vorgeschlagen werden soll.
-ms.openlocfilehash: b41e234be40c2ad8b28047ae2e812edfd66af644
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: af2fa447ef278ec79b4215486368c7bbeceb4163
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467487"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539381"
 ---
 # <a name="meetingdurationinminutes"></a>MeetingDurationInMinutes
 
-Das **MeetingDurationInMinutes** -Element gibt die Dauer der Besprechung an, die vorgeschlagen werden soll. 
+Das **MeetingDurationInMinutes-Element** gibt die Dauer der Besprechung an, die vorgeschlagen werden soll. 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -50,15 +50,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Enthält die Optionen zum Abrufen von Informationen zu Besprechungs Vorschlägen.  <br/> Es folgt der XPath für dieses Element:  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
+|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Enthält die Optionen zum Abrufen von Besprechungsvorschlagsinformationen.  <br/> Es folgt der XPath für dieses Element:  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der Wert Text stellt eine ganze Zahl dar.
+Ein Textwert ist erforderlich. Der Textwert stellt eine ganze Zahl dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element ist erforderlich, wenn das [SuggestionsViewOptions](suggestionsviewoptions.md) -Element verwendet wird. 
+Dieses Element ist erforderlich, wenn das [SuggestionsViewOptions-Element](suggestionsviewoptions.md) verwendet wird. 
   
 > [!NOTE]
 > Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt. 
@@ -79,5 +79,5 @@ Dieses Element ist erforderlich, wenn das [SuggestionsViewOptions](suggestionsvi
 [GetUserAvailability-Vorgang](getuseravailability-operation.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

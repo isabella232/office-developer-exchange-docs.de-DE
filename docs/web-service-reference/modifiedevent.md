@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ModifiedEvent
 api_type:
 - schema
 ms.assetid: ca1309f4-2df7-4289-811c-75c3db0e7072
-description: Das ModifiedEvent-Element stellt ein Ereignis dar, in dem ein Element oder ein Ordner geändert wird.
-ms.openlocfilehash: 1a798773601a0857b9064c7fa6a532a7a36517ab
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ModifiedEvent-Element stellt ein Ereignis dar, in dem ein Element oder Ordner geändert wird.
+ms.openlocfilehash: 92002c2824168687e6984913dbf46ee85da921e7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468551"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539359"
 ---
 # <a name="modifiedevent"></a>ModifiedEvent
 
-Das **ModifiedEvent** -Element stellt ein Ereignis dar, in dem ein Element oder ein Ordner geändert wird. 
+Das **ModifiedEvent-Element** stellt ein Ereignis dar, in dem ein Element oder Ordner geändert wird. 
   
 ```xml
 <ModifiedEvent>
@@ -57,8 +57,8 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Watermark](watermark.md) <br/> |Stellt eine Ereignis Textmarke in der Tabelle Post Fach Ereignisse dar.  <br/> |
-|[Timestamp](timestamp.md) <br/> |Stellt den Zeitstempel eines geänderten Element-oder Ordner Postfach-Ereignisses dar.  <br/> |
+|[Watermark](watermark.md) <br/> |Stellt eine Ereignislesemarke in der Postfachereignistabelle dar.  <br/> |
+|[TimeStamp](timestamp.md) <br/> |Stellt den Zeitstempel eines geänderten Element- oder Ordnerpostfachereignisses dar.  <br/> |
 |[FolderId](folderid.md) <br/> |Stellt den Bezeichner des geänderten Ordners dar.  <br/> |
 |[ItemId](itemid.md) <br/> |Stellt den Bezeichner des geänderten Elements dar.  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des übergeordneten Ordners des geänderten Elements oder Ordners dar.  <br/> |
@@ -70,9 +70,9 @@ Keine.
 |:-----|:-----|
 |[Benachrichtigung](notification-ex15websvcsotherref.md) <br/> |Enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Für jede Änderung eines Elements in einem Ordner werden zwei geänderte Ereignisse generiert. Ein Ereignis ist für das geänderte Element relevant. Das andere Ereignis ist für den übergeordneten Ordner des Elements relevant. Dies ist derselbe Ordner, für den das Abonnement erstellt wurde. Das Ereignis, das dem Ordner zugeordnet ist, wird verwendet, um eine mögliche Änderung an der [UnreadCount](unreadcount.md) -Eigenschaft für den Ordner zu kommunizieren. 
+Für jede Änderung eines Elements in einem Ordner werden zwei geänderte Ereignisse generiert. Ein Ereignis ist für das geänderte Element relevant. Das andere Ereignis ist für den übergeordneten Ordner des Elements relevant. Dies ist derselbe Ordner, für den das Abonnement erstellt wurde. Das dem Ordner zugeordnete Ereignis wird verwendet, um eine potenzielle Änderung an die [UnreadCount-Eigenschaft](unreadcount.md) des Ordners zu kommunizieren. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

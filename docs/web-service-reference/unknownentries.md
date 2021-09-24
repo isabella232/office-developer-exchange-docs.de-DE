@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UnknownEntries
 api_type:
 - schema
 ms.assetid: 107ec73e-083a-4956-9d37-33d4734cc157
-description: Das UnknownEntries-Element enthält ein Array von unbekannten Berechtigungseinträgen, die nicht für den Active Directory Verzeichnisdienst aufgelöst werden können. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 68cb2518b895ca0a74e6b9ed649ee92b7502ab05
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das UnknownEntries-Element enthält ein Array unbekannter Berechtigungseinträge, die nicht für den Active Directory-Verzeichnisdienst aufgelöst werden können. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: 9ada724abbecddf192b5f345c1800ac38a8b41aa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459419"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514081"
 ---
 # <a name="unknownentries"></a>UnknownEntries
 
-Das **UnknownEntries** -Element enthält ein Array von unbekannten Berechtigungseinträgen, die nicht für den Active Directory Verzeichnisdienst aufgelöst werden können. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **UnknownEntries-Element** enthält ein Array unbekannter Berechtigungseinträge, die nicht für den Active Directory-Verzeichnisdienst aufgelöst werden können. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <UnknownEntries>
@@ -48,12 +48,12 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PermissionSet (permissionsettype)](permissionset-permissionsettype.md) <br/> |Enthält alle Berechtigungen, die für einen Ordner konfiguriert sind. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) <br/> |Enthält alle Berechtigungen, die für einen Ordner konfiguriert sind. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
 |[PermissionSet (CalendarPermissionSetType)](permissionset-calendarpermissionsettype.md) <br/> |Enthält alle Berechtigungen, die für einen Kalenderordner konfiguriert sind. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Sie können unbekannte Einträge aus einem Ordner löschen, indem Sie den UpdateFolder-Vorgang mit dem [setfolderfield](setfolderfield.md) -Element verwenden. Die unbekannten Einträge werden gelöscht, wenn Sie das PermissionSet mithilfe der Option setfolderfield des UpdateFolder-Vorgangs zurücksetzen. Das Löschen einzelner Einträge wird von Exchange Webdienste nicht unterstützt. 
+Sie können unbekannte Einträge aus einem Ordner löschen, indem Sie den UpdateFolder-Vorgang mit dem [SetFolderField-Element](setfolderfield.md) verwenden. Die unbekannten Einträge werden gelöscht, wenn Sie permissionSet mithilfe der Option "SetFolderField" des UpdateFolder-Vorgangs zurücksetzen. Exchange Webdienste unterstützen das Löschen einzelner Einträge nicht. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

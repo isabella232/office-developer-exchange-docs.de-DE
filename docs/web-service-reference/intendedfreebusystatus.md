@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IntendedFreeBusyStatus
 api_type:
 - schema
 ms.assetid: 0e0fa898-69a4-4c57-8bb2-52f716b5b478
 description: Das IntendedFreeBusyStatus-Element stellt den beabsichtigten Status für das Kalenderelement dar, das der Besprechungsanfrage zugeordnet ist.
-ms.openlocfilehash: c5502bcfb308aa2f02a9575ab43f80261b5fa4ed
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fcadc2a155f2263410dbf81d200d202d718e2893
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465618"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539556"
 ---
 # <a name="intendedfreebusystatus"></a>IntendedFreeBusyStatus
 
-Das **IntendedFreeBusyStatus** -Element stellt den beabsichtigten Status für das Kalenderelement dar, das der Besprechungsanfrage zugeordnet ist. 
+Das **IntendedFreeBusyStatus-Element** stellt den beabsichtigten Status für das Kalenderelement dar, das der Besprechungsanfrage zugeordnet ist. 
   
 ```xml
 <IntendedFreeBusyStatus/>
@@ -48,7 +48,7 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Im folgenden sind die möglichen Werte für dieses Element angegeben:
+Ein Textwert ist erforderlich. Es folgen die möglichen Werte für dieses Element:
   
 - Frei
     
@@ -56,11 +56,11 @@ Ein Textwert ist erforderlich. Im folgenden sind die möglichen Werte für diese
     
 - Gebucht
     
-- Abwesenheits
+- OOF
     
 - NoData
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

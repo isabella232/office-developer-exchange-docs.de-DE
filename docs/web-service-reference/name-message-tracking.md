@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Name
 api_type:
 - schema
 ms.assetid: a1669f6d-53f3-4849-9b30-56909aaeac82
 description: Das Name-Element stellt den Eigenschaftennamen für einen Nachrichtenverfolgungsbericht dar.
-ms.openlocfilehash: 86f049c0a90dbeb55418a5eee58079adf17e5ded
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: b57c109cfbcb2744ae6854e0afce52e240d22b30
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466899"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515453"
 ---
 # <a name="name-message-tracking"></a>Name (Nachrichtenverfolgung)
 
-Das **Name** -Element stellt den Eigenschaftennamen für einen Nachrichtenverfolgungsbericht dar. 
+Das **Name-Element** stellt den Eigenschaftennamen für einen Nachrichtenverfolgungsbericht dar. 
   
 ```xml
 <Name/>
@@ -45,15 +45,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[TrackingPropertyType](trackingpropertytype.md) <br/> |Stellt ein Name-Wert-Paar von Zeichenfolgen dar, das zum Erstellen von Eigenschaften für Nachrichtenverfolgungsberichte verwendet wird.  <br/> |
+|[TrackingPropertyType](trackingpropertytype.md) <br/> |Stellt ein Name-Wert-Zeichenfolgenpaar dar, das zum Erstellen von Eigenschaften für Nachrichtenverfolgungsberichte verwendet wird.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Wenn dieses Element verwendet wird, ist ein Textwert erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element kann im [TrackingPropertyType](trackingpropertytype.md) -Element höchstens einmal vorkommen. 
+Dieses Element kann höchstens einmal im [TrackingPropertyType-Element](trackingpropertytype.md) auftreten. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

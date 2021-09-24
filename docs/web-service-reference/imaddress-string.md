@@ -1,23 +1,23 @@
 ---
-title: IMAddress (Zeichenfolge)
+title: ImAddress (Zeichenfolge)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fa10fcdb-f947-4958-ad5a-afaed1661f52
-description: Das IMAddress-Element enthält die primäre Instant Messaging-Adresse einer Persona.
-ms.openlocfilehash: 2cfb8c7e0ccf5454fd5a201819882acbe0924e4a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ImAddress-Element enthält die primäre Chatadresse einer Persona.
+ms.openlocfilehash: df962c97faabaec2874136159abebd657b60719c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456465"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515698"
 ---
-# <a name="imaddress-string"></a>IMAddress (Zeichenfolge)
+# <a name="imaddress-string"></a>ImAddress (Zeichenfolge)
 
-Das **IMAddress** -Element enthält die primäre Instant Messaging-Adresse einer Persona. 
+Das **ImAddress-Element** enthält die primäre Chatadresse einer Persona. 
   
 ```XML
 <ImAddress></ImAddress>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **IMAddress** -Elements ist die primäre Instant Messaging-Adresse einer Persona. 
+Der Textwert des **ImAddress-Elements** ist die primäre Chatadresse einer Persona. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

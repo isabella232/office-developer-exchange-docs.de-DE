@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a70d177f-d7f2-4912-a753-b2da11ad94b5
 description: Das UpdateMailboxAssociationResponseMessage-Element ist nur für die interne Verwendung vorgesehen.
-ms.openlocfilehash: ce2afcd72315c079d9376704839163bf66369e63
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fc2579f92ba9a2324adf666a36ea1b26aa51532d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457900"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514011"
 ---
 # <a name="updatemailboxassociationresponsemessage"></a>UpdateMailboxAssociationResponseMessage
 
-Das **UpdateMailboxAssociationResponseMessage** -Element ist nur für die interne Verwendung vorgesehen. 
+Das **UpdateMailboxAssociationResponseMessage-Element** ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

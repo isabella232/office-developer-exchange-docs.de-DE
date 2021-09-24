@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 203a5ac3-ebd0-4514-acbe-bc1c74638127
-description: Das AutodiscoverResponse (SOAP)-Element stellt das Basiselement für alle Antworten dar, die vom AutoErmittlungsdienst zurückgegeben werden.
-ms.openlocfilehash: 81fd557578bde9552d07e24386c93903e44a9afa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SOAP-Element (AutodiscoverResponse) stellt das Basiselement für alle Antworten dar, die vom AutoErmittlungsdienst zurückgegeben werden.
+ms.openlocfilehash: 71bbb0f1aa6602a260c163ccfdfd3c3d38442e31
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463965"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514872"
 ---
 # <a name="autodiscoverresponse-soap"></a>AutodiscoverResponse (SOAP)
 
-Das **AutodiscoverResponse (SOAP)-** Element stellt das Basiselement für alle Antworten dar, die vom AutoErmittlungsdienst zurückgegeben werden. 
+Das **SOAP-Element (AutodiscoverResponse)** stellt das Basiselement für alle Antworten dar, die vom AutoErmittlungsdienst zurückgegeben werden. 
   
 - [AutodiscoverResponse (SOAP)](autodiscoverresponse-soap.md)
   
@@ -31,7 +31,7 @@ Das **AutodiscoverResponse (SOAP)-** Element stellt das Basiselement für alle A
 
 ```
 
- **AutodiscoverResponse**
+ **AutoDiscoverResponse**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserResponses (SOAP)](userresponses-soap.md) <br/> |Stellt eine Auflistung von [User Response (SOAP)](userresponse-soap.md) -Elementen dar.  <br/> |
-|[UserSettingErrors (SOAP)](usersettingerrors-soap.md) <br/> |Stellt eine Auflistung von [UserSettingError (SOAP)](usersettingerror-soap.md) -Elementen dar.  <br/> |
-|[UserSettings (SOAP)](usersettings-soap.md) <br/> |Stellt eine Auflistung von [UserSetting (SOAP)](usersetting-soap.md) -Elementen dar.  <br/> |
+|[UserResponses (SOAP)](userresponses-soap.md) <br/> |Stellt eine Auflistung von [UserResponse -Elementen (SOAP)](userresponse-soap.md) dar.  <br/> |
+|[UserSettingErrors (SOAP)](usersettingerrors-soap.md) <br/> |Stellt eine Auflistung von [USERSettingError (SOAP)-Elementen](usersettingerror-soap.md) dar.  <br/> |
+|[UserSettings (SOAP)](usersettings-soap.md) <br/> |Stellt eine Auflistung von [UserSetting (SOAP)-Elementen](usersetting-soap.md) dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
@@ -61,8 +61,8 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -1,27 +1,27 @@
 ---
-title: InvalidRecipient (e-Mail-Infos)
+title: InvalidRecipient (MailTips)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - InvalidRecipient
 api_type:
 - schema
 ms.assetid: 48959a99-bb0d-4004-963e-5a5baaa96476
 description: Das InvalidRecipient-Element gibt an, ob der Empfänger ungültig ist.
-ms.openlocfilehash: fddd75beb2228c50084bd38b4f4745064cc281dc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 747210c234ecf39bd711ace938ad16af2353eaad
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530002"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539570"
 ---
-# <a name="invalidrecipient-mailtips"></a>InvalidRecipient (e-Mail-Infos)
+# <a name="invalidrecipient-mailtips"></a>InvalidRecipient (MailTips)
 
-Das **InvalidRecipient** -Element gibt an, ob der Empfänger ungültig ist. 
+Das **InvalidRecipient-Element** gibt an, ob der Empfänger ungültig ist. 
   
 ```XML
 <InvalidRecipient>true | false</InvalidRecipient>
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Tipps dar.  <br/> |
+|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Typen von E-Mail-Tipps dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert dieses Elements ist **true** , wenn der Empfänger ungültig ist. Der Wert ist **false** , wenn der Empfänger nicht ungültig ist. 
+Der Textwert dieses Elements ist **"true",** wenn der Empfänger ungültig ist. Der Wert ist **"false",** wenn der Empfänger nicht ungültig ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

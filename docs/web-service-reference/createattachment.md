@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateAttachment
 api_type:
 - schema
 ms.assetid: e33b403a-b7d3-48ee-8d24-6b7abf0d70bc
-description: Das CreateAttachment-Element definiert eine Anforderung zum Erstellen einer Anlage für ein Element in der Exchange-Informationsspeicher.
-ms.openlocfilehash: 4cba1b8865dae5da58b9617b249a29314c67331a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das CreateAttachment-Element definiert eine Anforderung zum Erstellen einer Anlage zu einem Element im Exchange Speicher.
+ms.openlocfilehash: 6716a83b0d1ba9d7f39351da60f7009df04a3fa0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466437"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515873"
 ---
 # <a name="createattachment"></a>CreateAttachment
 
-Das **CreateAttachment** -Element definiert eine Anforderung zum Erstellen einer Anlage für ein Element in der Exchange-Informationsspeicher. 
+Das **CreateAttachment-Element** definiert eine Anforderung zum Erstellen einer Anlage zu einem Element im Exchange Speicher. 
   
 ```xml
 <CreateAttachment>
@@ -30,7 +30,7 @@ Das **CreateAttachment** -Element definiert eine Anforderung zum Erstellen einer
 </CreateAttachment>
 ```
 
- **Createattachmenttype**
+ **CreateAttachmentType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -43,28 +43,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ParentItemId](parentitemid.md) <br/> |Gibt das übergeordnete Exchange-Informationsspeicher Element an, das die erstellte Anlage enthält. Das [ParentItemId](parentitemid.md) -Element muss die ID eines echten Exchange-Informationsspeicher Elements bereitstellen. Reale Speicherelemente können mithilfe des [GetItem-Vorgangs](getitem-operation.md)abgerufen werden; Anlagen werden mithilfe des [GetAttachment-Vorgangs](getattachment-operation.md)abgerufen. Wenn dem [ParentItemId](parentitemid.md) die ID einer Dateianlage übergeben wird, tritt ein Fehler auf. Wenn der [ParentItemId](parentitemid.md) die ID einer vorhandenen Elementanlage darstellt, fügt der CreateAttachment- [Vorgang](createattachment-operation.md) die neue Anlage zu der vorhandenen Anlage hinzu.  <br/> Dieses Element ist für den [CreateAttachment-Vorgang](createattachment-operation.md)erforderlich.  <br/> |
-|[Anlagen](attachments-ex15websvcsotherref.md) <br/> |Enthält die Elemente oder Dateien, die an ein Element im Exchange-Informationsspeicher angefügt werden sollen.  <br/> |
+|[ParentItemId](parentitemid.md) <br/> |Identifies the parent Exchange store item that contains the created attachment. Das [ParentItemId-Element](parentitemid.md) muss die ID eines echten Exchange Speicherelements bereitstellen. Echte Speicherelemente können mithilfe des [GetItem-Vorgangs](getitem-operation.md)abgerufen werden. Anlagen werden mithilfe des [GetAttachment-Vorgangs](getattachment-operation.md)abgerufen. Wenn der [ParentItemId](parentitemid.md) die ID einer Dateianlage übergeben wird, tritt ein Fehler auf. Wenn die [ParentItemId](parentitemid.md) die ID einer vorhandenen Elementanlage darstellt, fügt der [CreateAttachment-Vorgang](createattachment-operation.md) die neue Anlage zur vorhandenen Anlage hinzu.  <br/> Dieses Element ist für den [CreateAttachment-Vorgang](createattachment-operation.md)erforderlich.  <br/> |
+|[Anhänge](attachments-ex15websvcsotherref.md) <br/> |Enthält die Elemente oder Dateien, die an ein Element im Exchange Speicher angefügt werden sollen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Eine Elementanlage ist nicht als Speicherelement vorhanden. Sie ist nur als Anlage für ein Element oder eine andere Anlage vorhanden. Element Anlagen können nur mithilfe der [GetAttachment](getattachment.md) -Anforderung abgerufen werden. 
+Eine Elementanlage ist nicht als Speicherelement vorhanden. Es ist nur als Anlage zu einem Element oder einer anderen Anlage vorhanden. Elementanlagen können nur mithilfe der [GetAttachment-Anforderung](getattachment.md) abgerufen werden. 
   
-Die folgenden Element Anlagen können erstellt werden:
+Die folgenden Elementanlagen können erstellt werden:
   
 - Element
     
-- Meldung
+- Nachricht
     
 - CalendarItem
     
 - Kontakt
     
-- Vorgang
+- Aufgabe
     
 - MeetingMessage
     
@@ -74,7 +74,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
   
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt, wie Sie ein Element erstellen und an ein anderes Element im Exchange-Informationsspeicher anfügen.
+Das folgende Beispiel zeigt, wie Sie ein Element erstellen und an ein anderes Element im Exchange Speicher anfügen.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -107,7 +107,7 @@ Das folgende Beispiel zeigt, wie Sie ein Element erstellen und an ein anderes El
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

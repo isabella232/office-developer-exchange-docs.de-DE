@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - HiddenRecipient
 api_type:
 - schema
 ms.assetid: a8209f75-0070-4424-8dcd-273cfd192728
-description: Das HiddenRecipient-Element gibt an, dass der Empfänger von einer Organisationsrichtlinie hinzugefügt wurde, die von unprivilegierten Benutzern ausgeblendet werden sollte.
-ms.openlocfilehash: bfe57fabc02ff00c801672b71ccdb0bf1b916bd9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das HiddenRecipient-Element gibt an, dass der Empfänger von einer Organisationsrichtlinie hinzugefügt wurde, die vor nicht privilegierten Benutzern ausgeblendet werden soll.
+ms.openlocfilehash: 24d7dcad5b8b744351804160ef8d9988b9e393a3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457641"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539689"
 ---
 # <a name="hiddenrecipient"></a>HiddenRecipient
 
-Das **HiddenRecipient** -Element gibt an, dass der Empfänger von einer Organisationsrichtlinie hinzugefügt wurde, die von unprivilegierten Benutzern ausgeblendet werden sollte. 
+Das **HiddenRecipient-Element** gibt an, dass der Empfänger von einer Organisationsrichtlinie hinzugefügt wurde, die vor nicht privilegierten Benutzern ausgeblendet werden soll. 
   
 ```XML
 <HiddenRecipient>true | false</HiddenRecipient>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Dieses Element kann entweder **true** oder **false**sein. Der Wert **true** gibt an, dass der Benutzer von einer Organisationsrichtlinie hinzugefügt wurde; der Wert **false** gibt an, dass der Benutzer nicht von einer Organisationsrichtlinie hinzugefügt wurde. 
+Dieses Element kann entweder **"true"** oder **"false" sein.** Der Wert **"true"** gibt an, dass der Benutzer von einer Organisationsrichtlinie hinzugefügt wurde. Der Wert **"false"** gibt an, dass der Benutzer nicht von einer Organisationsrichtlinie hinzugefügt wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

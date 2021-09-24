@@ -1,32 +1,32 @@
 ---
-title: GetUMProperties-Vorgang (um-Webdienst)
+title: GetUMProperties-Vorgang (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUMProperties
 api_type:
 - schema
 ms.assetid: 301fb9a3-67df-44c4-8ffe-0600237fc344
-description: Der GetUMProperties-Vorgang ruft alle Unified Messaging-Eigenschaften für das Postfach des Benutzers ab, der die Anforderung macht.
-ms.openlocfilehash: 42176d9cd0288af6515aeea616a4f216a419410c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetUMProperties-Vorgang ruft alle Unified Messaging-Eigenschaften für das Postfach des Benutzers ab, der die Anforderung stellt.
+ms.openlocfilehash: 8d051196e83e1f927692b517e1ab3e95bb0060db
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462472"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515817"
 ---
-# <a name="getumproperties-operation-um-web-service"></a>GetUMProperties-Vorgang (um-Webdienst)
+# <a name="getumproperties-operation-um-web-service"></a>GetUMProperties-Vorgang (UM-Webdienst)
 
-Der GetUMProperties-Vorgang ruft alle Unified Messaging-Eigenschaften für das Postfach des Benutzers ab, der die Anforderung macht.
+Der GetUMProperties-Vorgang ruft alle Unified Messaging-Eigenschaften für das Postfach des Benutzers ab, der die Anforderung stellt.
   
-## <a name="getumproperties-request-example"></a>GetUMProperties-Anforderungs Beispiel
+## <a name="getumproperties-request-example"></a>GetUMProperties-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer GetUMProperties-Anforderung wird gezeigt, wie Sie eine Anforderung zum Abrufen der Unified Messaging-Eigenschaften eines Postfachs bilden.
+Das folgende Beispiel einer GetUMProperties-Anforderung zeigt, wie Sie eine Anforderung zum Abrufen der Unified Messaging-Eigenschaften eines Postfachs erstellen.
   
 ### <a name="code"></a>Code
 
@@ -39,11 +39,11 @@ Im folgenden Beispiel einer GetUMProperties-Anforderung wird gezeigt, wie Sie ei
 </soap:Envelope>
 ```
 
-## <a name="successful-getumproperties-response-example"></a>Erfolgreiches GetUMProperties-Antwortbeispiel
+## <a name="successful-getumproperties-response-example"></a>Beispiel für erfolgreiche GetUMProperties-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer GetUMProperties-Antwort wird eine Antwort auf die GetUMProperties-Anforderung angezeigt.
+Das folgende Beispiel einer GetUMProperties-Antwort zeigt eine Antwort auf die GetUMProperties-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -68,7 +68,7 @@ Im folgenden Beispiel einer GetUMProperties-Antwort wird eine Antwort auf die Ge
 
 
 
-[GetUMProperties (um-Webdienst)](getumproperties-um-web-service.md)
+[GetUMProperties (UM-Webdienst)](getumproperties-um-web-service.md)
   
-[GetUMPropertiesResponse (um-Webdienst)](getumpropertiesresponse-um-web-service.md)
+[GetUMPropertiesResponse (UM-Webdienst)](getumpropertiesresponse-um-web-service.md)
 

@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9b9ae15b-3ac1-45ac-85ba-38c7231fe508
-description: Das EcpUrl-tmHiding-Element gibt eine partielle URL an, die mit dem Wert des EcpUrl (POX)-Elements kombiniert werden kann, um eine URL zu generieren, die zum Aufheben des Abonnements des Benutzers von einem websitepostfach verwendet werden kann.
-ms.openlocfilehash: 68b949db8b8d98caddbac3b9f96c5d5e55b104b7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das EcpUrl-tmHiding-Element gibt eine partielle URL an, die mit dem Wert des EcpUrl -Elements (POX) kombiniert werden kann, um eine URL zu generieren, die verwendet werden kann, um den Benutzer von einem Websitepostfach abzumelden.
+ms.openlocfilehash: d8e8ced554b96f1a0cd554d3d601970d5f47019b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463531"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514733"
 ---
 # <a name="ecpurl-tmhiding-pox"></a>EcpUrl-tmHiding (POX)
 
-Das **EcpUrl-tmHiding-** Element gibt eine partielle URL an, die mit dem Wert des [EcpUrl (POX)](ecpurl-pox.md) -Elements kombiniert werden kann, um eine URL zu generieren, die zum Aufheben des Abonnements des Benutzers von einem websitepostfach verwendet werden kann. 
+Das **EcpUrl-tmHiding-Element** gibt eine partielle URL an, die mit dem Wert des [EcpUrl -Elements (POX)](ecpurl-pox.md) kombiniert werden kann, um eine URL zu generieren, die verwendet werden kann, um den Benutzer von einem Websitepostfach abzumelden. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -48,19 +48,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen zum Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt eine partielle URL dar, die mit dem [EcpUrl (POX)](ecpurl-pox.md) -Elementwert kombiniert werden kann, um eine URL zu generieren, die zum Aufheben des Abonnements des Benutzers von einem websitepostfach verwendet werden kann. Der Wert des **EcpUrl-tmHiding-** Elements enthält Parameter, die in "<"-und ">"-Zeichen enthalten sind, die durch den Client ersetzt werden, wie in der folgenden Tabelle dargestellt. 
+Der Textwert stellt eine partielle URL dar, die mit dem [PoX-Wert (EcpUrl)](ecpurl-pox.md) kombiniert werden kann, um eine URL zu generieren, die verwendet werden kann, um den Benutzer von einem Websitepostfach abzumelden. Der Wert des **EcpUrl-tmHiding-Elements** enthält Parameter, die in den Zeichen "<" und ">" enthalten sind, die vom Client ersetzt werden, wie in der folgenden Tabelle dargestellt. 
   
 |**Parameter**|**Ersetzen durch**|
 |:-----|:-----|
-| _Id_ <br/> |Die SMTP-e-Mail-Adresse oder der Distinguished Name x500 des websitepostfachs.  <br/> |
+| _ID_ <br/> |Die SMTP-E-Mail-Adresse oder der X500-Distinguished Name des Websitepostfachs.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das **EcpUrl-tmHiding-** Element ist ein optionales untergeordnetes Element des **Protocol** -Elements. 
+Das **EcpUrl-tmHiding-Element** ist ein optionales untergeordnetes Element des **Protocol-Elements.** 
   
 ## <a name="see-also"></a>Siehe auch
 

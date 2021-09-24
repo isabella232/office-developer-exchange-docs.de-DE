@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 1f26b691-7331-4c7f-a92b-dfcc66c26963
 description: Das DomainRequired-Element gibt an, ob die Domäne für die Authentifizierung erforderlich ist.
-ms.openlocfilehash: 97d602c40b247f9a6650cc4440b53bf23c18482e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 906c99ff7a8428404ee6045b749cdb0afed882b7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461324"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540062"
 ---
 # <a name="domainrequired-pox"></a>DomainRequired (POX)
 
-Das **DomainRequired** -Element gibt an, ob die Domäne für die Authentifizierung erforderlich ist. 
+Das **DomainRequired-Element** gibt an, ob die Domäne für die Authentifizierung erforderlich ist. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md)  
 - [Response (POX)](response-pox.md) 
@@ -46,15 +46,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen zum Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text gibt an, ob die Domäne für die Authentifizierung erforderlich ist. Die möglichen Werte sind **ein** -und **ausgeschaltet**. Wenn der Wert **auf "on**" festgelegt ist, muss die nachfolgende Anforderung die Domäne des Benutzerkontos enthalten.
+Der Textwert gibt an, ob die Domäne für die Authentifizierung erforderlich ist. Die möglichen Werte sind **aktiviert** und **deaktiviert.** Wenn der Wert **aktiviert** ist, muss die nachfolgende Anforderung die Domäne des Benutzerkontos enthalten.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn die Domäne nicht im [LoginName-](loginname-pox.md) Element angegeben ist oder das **LoginName** -Element nicht angegeben wurde, muss der Benutzer die Domäne eingeben, bevor die Authentifizierung erfolgreich ausgeführt wird. 
+Wenn die Domäne nicht im [POX-Element (LoginName)](loginname-pox.md) angegeben ist oder das **LoginName-Element** nicht angegeben wurde, muss der Benutzer die Domäne eingeben, bevor die Authentifizierung erfolgreich ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

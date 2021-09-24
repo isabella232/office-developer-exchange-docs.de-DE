@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GlobalLastDeliveryTime
 api_type:
 - schema
 ms.assetid: a88dada9-c527-43a7-b2d3-31aad330def9
-description: Das GlobalLastDeliveryTime-Element enthält die Zustellungszeit der Nachricht, die zuletzt in dieser Unterhaltung über alle Ordner im Postfach empfangen wurde.
-ms.openlocfilehash: b6d4d7c1d51c206e44973a717d25df4066845ada
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GlobalLastDeliveryTime-Element enthält die Übermittlungszeit der Nachricht, die in dieser Unterhaltung zuletzt in allen Ordnern im Postfach empfangen wurde.
+ms.openlocfilehash: f012c11ec2a30680d1f6a851a4c3f3f6fc94a824
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459412"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539809"
 ---
 # <a name="globallastdeliverytime"></a>GlobalLastDeliveryTime
 
-Das **GlobalLastDeliveryTime** -Element enthält die Zustellungszeit der Nachricht, die zuletzt in dieser Unterhaltung über alle Ordner im Postfach empfangen wurde. 
+Das **GlobalLastDeliveryTime-Element** enthält die Übermittlungszeit der Nachricht, die in dieser Unterhaltung zuletzt in allen Ordnern im Postfach empfangen wurde. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -35,7 +35,7 @@ Das **GlobalLastDeliveryTime** -Element enthält die Zustellungszeit der Nachric
 <GlobalLastDeliveryTime/>
 ```
 
- **xs: DateTime**
+ **xs:dateTime**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -56,11 +56,11 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **GlobalLastDeliveryTime** -Elements ist das Datum und die Uhrzeit der Nachricht, die zuletzt in dieser Unterhaltung über alle Ordner im Postfach empfangen wurde. 
+Der Textwert des **GlobalLastDeliveryTime-Elements** ist das Datum und die Uhrzeit der Nachricht, die zuletzt in dieser Unterhaltung in allen Ordnern im Postfach empfangen wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt. Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, in dem Exchange Webdienste gehostet wird.
+Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt. Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange Webdienste hostet.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: bf7096d8-42d4-4bf5-bbdd-851af2754000
 description: Das StringSetting-Element stellt eine Benutzereinstellung dar, deren Wert vom Typ String ist.
-ms.openlocfilehash: 215d1187c0968577e894c9f9cddea050789697b9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 16a59475c82a4088421f5916f1416ab91e7d78d6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463076"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540391"
 ---
 # <a name="stringsetting-soap"></a>StringSetting (SOAP)
 
-Das **StringSetting** -Element stellt eine Benutzereinstellung dar, deren Wert vom Typ String ist. 
+Das **StringSetting-Element** stellt eine Benutzereinstellung dar, deren Wert vom Typ String ist. 
   
 ```XML
 <StringSetting>
@@ -40,28 +40,28 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Name (SOAP)](name-soap.md) <br/> |Stellt einen Benutzer Einstellungsnamen dar.  <br/> |
-|[Wert (SOAP)](value-soap.md) <br/> |Stellt einen Benutzer Einstellungswert dar.  <br/> |
+|[Name (SOAP)](name-soap.md) <br/> |Stellt einen Benutzereinstellungsnamen dar.  <br/> |
+|[Wert (SOAP)](value-soap.md) <br/> |Stellt einen Wert für die Benutzereinstellung dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der **StringSetting** -Typ erweitert den **UserSetting** -Typ. 
+Der **StringSetting-Typ** erweitert den **UserSetting-Typ.** 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

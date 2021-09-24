@@ -1,29 +1,29 @@
 ---
-title: CChkSGFiles. ErrCheckLogs-Funktion
+title: CChkSGFiles.ErrCheckLogs-Funktion
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ErrCheckLogs
 api_type:
 - dllExport
 ms.assetid: cec0df4b-4679-4682-bacf-69b4f4aef343
-description: 'Letzte Änderung: 22. Februar 2013'
-ms.openlocfilehash: 71e21bb3a748a532f9e3167e0b36898acde71b02
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: 'Last modified: February 22, 2013'
+ms.openlocfilehash: 64484b32fdc566d6fee8631f80d078aca82b11d1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526718"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516384"
 ---
-# <a name="cchksgfileserrchecklogs-function"></a>CChkSGFiles. ErrCheckLogs-Funktion
+# <a name="cchksgfileserrchecklogs-function"></a>CChkSGFiles.ErrCheckLogs-Funktion
 
 **Gilt für:** Exchange Server 2003 | Exchange Server 2007 | Exchange Server 2010 | Exchange Server 2013
   
-Überprüft die Protokolldateien aller Datenbankdateien, die in der **ErrInit** -Funktion angegeben wurden. Die überprüften Protokolle sind diejenigen, die im Pfad vorhanden sind und die den Namen der Basisprotokoll Datei mit drei Buchstaben an **ErrInit**übergeben haben.
+Überprüft die Protokolldateien aller Datenbankdateien, die in der **ErrInit-Funktion** angegeben wurden. Bei den überprüften Protokollen handelt es sich um die Protokolle, die im Pfad vorhanden sind und deren Drei-Buchstaben-Basisprotokolldateiname an **ErrInit** übergeben wird.
   
 ```cs
 Vitual ERRErrCheckLogs 
@@ -38,7 +38,7 @@ Vitual ERRErrCheckLogs
 
 ### <a name="pfonlyunnecessarylogscorrupt"></a>pfOnlyUnnecessaryLogsCorrupt 
   
-Output-Parameter. Bei **true**gibt dieser Parameter an, dass Fehler in den Transaktionsprotokolldateien gefunden wurden, aber diese Fehler wurden alle in Protokolldateien gefunden, die nicht erforderlich sind, um die Datenbank ohne Datenverlust in den Zustand "Clean Shutdown" zu versetzen. Ein **true** -Wert, der in diesem Parameter zurückgegeben wird, ist nur gültig, wenn **ErrCheckLogs** **errSuccess**zurückgibt. 
+Output-Parameter. Wenn **true**, gibt dieser Parameter an, dass Fehler in den Transaktionsprotokolldateien gefunden wurden, aber alle diese Fehler wurden in Protokolldateien gefunden, die nicht benötigt werden, um die Datenbank ohne Datenverlust in einen Zustand des sauberen Herunterfahrens zu versetzen. Ein in diesem Parameter zurückgegebener **true-Wert** ist nur gültig, wenn **ErrCheckLogs** **ErrSuccess** zurückgibt. 
     
 ### <a name="ulflags"></a>ulFlags
   
@@ -46,34 +46,34 @@ Optionaler Eingabeparameter. Dieser Wert ist für die zukünftige Verwendung res
     
 ## <a name="return-value"></a>Rückgabewert
 
-Ein Fehlercode aus der [Err](cchksgfiles-err-enumeration.md) -Aufzählung. 
+Ein Fehlercode aus der [ERR-Enumeration.](cchksgfiles-err-enumeration.md) 
   
-Beachten Sie, dass diese Funktion **errSuccess** auch dann zurückgeben kann, wenn Fehler in den Protokolldateien gefunden werden. Wenn **ErrCheckLogs** also **errSuccess**zurückgibt, sollte die Anwendung auch den **pfOnlyUnnecessaryLogsCorrupt** -Rückgabeparameter überprüfen. Wenn **pfOnlyUnnecessaryLogsCorrupts** auf **true** festgelegt ist, wenn **ErrCheckLogs** **errSuccess**zurückgibt, deutet dies darauf hin, dass ein oder mehrere Fehler gefunden wurden, jedoch nur in Protokolldateien, die nicht benötigt wurden, um die Datenbank auf den neuesten Stand zu bringen.
+Es ist wichtig zu beachten, dass diese Funktion **errSuccess** auch dann zurückgeben kann, wenn Fehler in den Protokolldateien gefunden werden. Wenn **ErrCheckLogs** **errSuccess** zurückgibt, sollte die Anwendung daher auch den  **Rückgabeparameter "pfOnlyUnnecessaryLogsCorrupt"** überprüfen. Wenn **pfOnlyUnnecessaryLogsCorrupts** **"true"** ist, wenn **ErrCheckLogs** **errSuccess** zurückgibt, bedeutet dies, dass ein oder mehrere Fehler gefunden wurden, jedoch nur in Protokolldateien, die nicht benötigt werden, um die Datenbank auf dem neuesten Stand zu halten.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **ErrCheckDbHeaders** -Funktion muss aufgerufen werden, bevor die **ErrCheckLogs** -Funktion aufgerufen werden kann. 
+Die **ErrCheckDbHeaders-Funktion** muss aufgerufen werden, bevor die **ErrCheckLogs-Funktion** aufgerufen werden kann. 
   
-Wenn die Transaktionsprotokolldateien von Exchange-Datenbank überprüft werden, sind einige Protokolldateienerforderlich, um die Datenbanken in der Speichergruppe ohne Datenverlust in den Zustand "Clean Shutdown" zu versetzen, während andere Protokolldateien möglicherweise nicht benötigt werden. Die **ErrCheckLogs** -Funktion bestimmt sowohl die älteste als auch die neueste Protokolldatei, die zum Aktualisieren der Datenbanken benötigt werden. 
+Wenn Exchange Protokolldateien für Datenbanktransaktionen überprüft werden, sind einige der Protokolldateien erforderlich, um die Datenbanken in der Speichergruppe ohne Datenverlust in den Zustand "Clean Shutdown" zu versetzen, während andere Protokolldateien möglicherweise nicht benötigt werden. Die **ErrCheckLogs-Funktion** bestimmt sowohl die ältesten als auch die neuesten Protokolldateien, die erforderlich sind, um die Datenbanken auf dem neuesten Stand zu halten. 
   
-Die **ErrCheckLogs** -Funktion überprüft alle Protokolldateien in den angegebenen Pfaden, die auch den angegebenen Namen der Basisdatei mit drei Buchstaben aufweisen und an die **ErrInit** -Funktion übergeben werden. 
+Die **ErrCheckLogs-Funktion** überprüft alle Protokolldateien in den angegebenen Pfaden, die auch den angegebenen Drei-Buchstaben-Basisdateinamen aufweisen, wie an die **ErrInit-Funktion** übergeben. 
   
-Wenn in den Protokolldateien keine Fehler gefunden werden, **ErrCheckLogs** gibt ErrCheckLogs **errSuccess**zurück. 
+Wenn in den Protokolldateien keine Fehler gefunden werden, gibt **ErrCheckLogs** **errSuccess** zurück. 
   
-Wenn eine der erforderlichen Protokolldateien als beschädigt festgestellt wird, gibt **ErrCheckLogs** einen Fehler zurück. 
+Wenn eine der erforderlichen Protokolldateien beschädigt ist, gibt **ErrCheckLogs** einen Fehler zurück. 
   
-Wenn Fehler nur in Protokolldateien gefunden werden, die älter als die frühesten sind, die benötigt werden, gibt die Funktion **errSuccess** zurück und legt den Rückgabeparameter **pfOnlyUnnecessaryLogCorrupt** auf **true**fest. Die Anwendung sollte erkennen, dass in einigen dieser alten Protokolldateien Fehler vorliegen, und wenn dies der Fall ist, wird der Benutzer möglicherweise gewarnt. In jedem Fall sollten diese Fehler keine Auswirkungen auf die Gesamtintegrität der Datenbank haben oder sich darauf auswirken, ob die Wiedergabe der Protokolle erfolgreich ausgeführt wird.
+Wenn Fehler nur in Protokolldateien gefunden werden, die älter als die frühesten benötigten sind, gibt die Funktion **errSuccess** zurück und legt den Rückgabeparameter **pfOnlyUnnecessaryLogCorrupt** auf **"true"** fest. Die Anwendung sollte erkennen, dass fehler in einigen dieser alten Protokolldateien vorhanden sind, und wenn ja, wird der Benutzer möglicherweise benachrichtigt. In jedem Fall sollten sich diese Fehler nicht auf die allgemeine Integrität der Datenbank auswirken oder darauf auswirken, ob die Wiedergabe der Protokolle erfolgreich ist.
   
-Wenn Fehler in einer Protokolldatei gefunden werden, die nach dem frühesten Protokoll erstellt wurde, das von **ErrCheckLogs** bestimmt wird, gibt die Funktion einen Fehler zurück. Der Fehler wird auch dann zurückgegeben, wenn der Protokolldatei Fehler in einer Protokolldatei gefunden wurde, die später als erforderlich generiert wurde, um die Datenbank auf den neuesten Stand zu bringen. Obwohl es möglich wäre, die Datenbanken mithilfe der identifizierten Protokolldateien in den Zustand "Clean Shutdown" zu versetzen, wurden in den später beschädigten Protokolldateien angegebene Transaktionen nicht angewendet, was zu einem Datenverlust bei der Wiederherstellung der Datenbank führte. 
+Wenn Fehler in einer Protokolldatei gefunden werden, die nach dem frühesten Protokoll erstellt wurde, das **ErrCheckLogs** ermittelt, ist erforderlich, gibt die Funktion einen Fehler zurück. Der Fehler wird auch zurückgegeben, wenn der Protokolldateifehler in einer Protokolldatei gefunden wurde, die später als erforderlich generiert wurde, um die Datenbank auf den neuesten Stand zu bringen. Obwohl es möglich wäre, die Datenbanken mithilfe der identifizierten Protokolldateien in einen Zustand des sauberen Herunterfahrens zu versetzen, würden die in den späteren beschädigten Protokolldateien angegebenen Transaktionen nicht angewendet, was zu Einem Datenverlust führen würde, wenn die Datenbank wiederhergestellt wird. 
   
-Das **CChkSGFiles** -Objekt bestimmt, ob alle mit der **ErrInit** -Funktion registrierten Protokolldateien tatsächlich überprüft wurden. Wenn nicht alle Protokolle erfolgreich überprüft wurden, gibt die **ErrTerm** -Funktion einen Fehler zurück. 
+Das **CChkSGFiles-Objekt** bestimmt, ob alle protokolldateien, die mit der **ErrInit-Funktion** registriert wurden, tatsächlich überprüft wurden. Wenn nicht alle Protokolle erfolgreich überprüft wurden, gibt die **ErrTerm-Funktion** einen Fehler zurück. 
   
-Wenn Sie CHKSGFILES in einer Multithread-Anwendung verwenden, können Sie die **ErrCheckLogs** -Funktion im Multithread-Teil der Anwendung aufrufen, Sie können Sie jedoch nur einmal für jedes **CCheckSGFiles** -Objekt aufrufen. 
+Wenn Sie CHKSGFILES in einer Multithread-Anwendung verwenden, können Sie die **ErrCheckLogs-Funktion** im Multithreadbereich der Anwendung aufrufen, aber Sie können sie nur einmal für jedes **CCheckSGFiles-Objekt** aufrufen. 
   
 ## <a name="requirements"></a>Anforderungen
 
 Exchange 2013 enthält nur eine 64-Bit-Version der CHKSGFILES-API.
   
-Das Konto, unter dem die Anwendung betrieben wird, muss über Lesezugriffsberechtigungen für die zu überprüfenden Datenbank-und Protokolldateien verfügen.
+Das Konto, unter dem die Anwendung ausgeführt wird, muss über Lesezugriffsberechtigungen für die Datenbank und die Protokolldateien verfügen, die überprüft werden sollen.
   
 

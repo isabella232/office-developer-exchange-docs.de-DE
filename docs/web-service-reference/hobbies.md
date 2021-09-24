@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f771b066-e42e-4880-bf18-709ad033d2af
-description: Das Hobbies-Element gibt ein Array von Hobbies und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an.
-ms.openlocfilehash: c76f4fc0463928814c61b8d1fb63e4255d6be63d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Hobbys-Element gibt ein Array von Hobbys und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an.
+ms.openlocfilehash: 5be8b65a7f24a9034da3b384fe63a42ff8b7fc19
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460953"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514669"
 ---
 # <a name="hobbies"></a>Hobbys
 
-Das **Hobbies** -Element gibt ein Array von Hobbies und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an. 
+Das **Hobbys-Element** gibt ein Array von Hobbys und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an. 
   
 ```XML
 <Hobbies>
@@ -38,15 +38,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StringAttributedValue](stringattributedvalue.md) <br/> |Gibt eine Instanz in einem Array von Attributen an, die mit einem Persona-Element verknüpft sind.  <br/> |
+|[StringAttributedValue](stringattributedvalue.md) <br/> |Gibt eine Instanz in einem Array von Attributen an, die einem Persona-Element zugeordnet sind.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Persona](persona.md) <br/> |Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.  <br/> |
+|[Persona](persona.md) <br/> |Gibt eine Reihe von Persona-Daten an, die von einer **GetPersona-Anforderung** zurückgegeben werden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

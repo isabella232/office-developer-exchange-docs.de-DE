@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 578b1682-f3e1-4ccc-aa24-d2ca1a9de596
-description: Das SchemaVersionSupported-Element enthält die Version des manifest-Schemas, das vom Client unterstützt wird.
-ms.openlocfilehash: df70d8ecf78b4f9b99ceaa3c28d2b1831a1c6171
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SchemaVersionSupported-Element enthält die Version des Manifestschemas, das vom Client unterstützt wird.
+ms.openlocfilehash: 289631467499bdc0c80e1572ce43202153f2103c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465793"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515215"
 ---
 # <a name="schemaversionsupported"></a>SchemaVersionSupported
 
-Das **SchemaVersionSupported** -Element enthält die Version des manifest-Schemas, das vom Client unterstützt wird. 
+Das **SchemaVersionSupported-Element** enthält die Version des Manifestschemas, das vom Client unterstützt wird. 
   
 ```XML
 <SchemaVersionSupported />
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **SchemaVersionSupported** -Elements enthält die Version des manifest-Schemas, das vom Client unterstützt wird. Dieser Wert gibt an, welche App-Manifeste in der Antwort an den Client zurückgegeben werden sollen. 
+Der Textwert des **SchemaVersionSupported-Elements** enthält die Version des Manifestschemas, das vom Client unterstützt wird. Dieser Wert gibt an, welche App-Manifeste in der Antwort an den Client zurückgegeben werden sollen. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

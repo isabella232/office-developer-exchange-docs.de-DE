@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - End
 api_type:
 - schema
 ms.assetid: 72329821-32ff-495d-b6e5-fdc011003c2e
 description: Das End-Element stellt das Ende einer Dauer dar.
-ms.openlocfilehash: d36f555d2ac9c0c1d82053029720ec17a53f2d92
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8f7fd448a873f82a82c6bd129fc16af9241d7f3c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456143"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540092"
 ---
 # <a name="end"></a>Ende
 
-Das **End** -Element stellt das Ende einer Dauer dar. 
+Das **End-Element** stellt das Ende einer Dauer dar. 
   
 ```xml
 <End/>
@@ -52,13 +52,13 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt das Ende einer Dauer dar.
+Der Textwert stellt das Ende einer Dauer dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Mit dem UpdateItem-Vorgang können die [Start](start.md) -und **Endzeit** eines Exchange-Informationsspeicher Elements festgelegt werden. In einer UpdateItem-Anforderung können Sie die [Startzeit](start.md) festlegen, ohne auch die **Endzeit** festzulegen. Dies kann zu einem Fehler führen, wenn die [Startzeit](start.md) später als die **Endzeit** ist. Beachten Sie, dass Clientanwendungen Anpassungen an der **Endzeit** vornehmen müssen, wenn die [Startzeit](start.md) geändert wird, um die Dauer beizubehalten. 
+Der UpdateItem-Vorgang kann die [Start-](start.md) und **Endzeit** eines Exchange Speicherelements festlegen. In einer UpdateItem-Anforderung können Sie die [Startzeit](start.md) festlegen, ohne auch die **Endzeit** festzulegen. Dies kann einen Fehler verursachen, wenn die [Startzeit](start.md) später als die **Endzeit** ist. Beachten Sie, dass Clientanwendungen Anpassungen an der **Endzeit** vornehmen müssen, wenn diese [Startzeit](start.md) geändert wird, um die Dauer beizubehalten. 
   
- **Hinweis:** Die Zeitzonenoffset Informationen gehen verloren, wenn das [anfangs](start.md) -und Enddatum des **wiederkehrenden Haupt** Elements kein Datum aufweist, das dem ersten Vorkommen eines wöchentlichen Serienmusters entspricht. 
+ **Hinweis** Die Zeitzonenversatzinformationen gehen verloren, wenn das [Start-](start.md) und **Enddatum** des Serienmasterelements kein Datum aufweisen, das dem ersten Auftreten eines wöchentlichen Serienmusters entspricht. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

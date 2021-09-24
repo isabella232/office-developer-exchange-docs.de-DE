@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c414af9-34d0-41ce-bda9-0d4ca3f3be79
-description: Das YomiCompanyNames-Element gibt ein Array von phonetischen japanischen Firmennamen und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an.
-ms.openlocfilehash: 41b97998425926750a3ecc7e17233f2066759689
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das YomiCompanyNames-Element gibt ein Array phonetischer japanischer Firmennamen und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an.
+ms.openlocfilehash: c7ee24636f97bc0f568d34d862e9ea332e3204dc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457865"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540384"
 ---
 # <a name="yomicompanynames"></a>YomiCompanyNames
 
-Das **YomiCompanyNames** -Element gibt ein Array von phonetischen japanischen Firmennamen und die Bezeichner ihrer Quell Zuweisungen für die zugeordnete persona an. 
+Das **YomiCompanyNames-Element** gibt ein Array phonetischer japanischer Firmennamen und die Bezeichner ihrer Quellzuschreibungen für die zugeordnete Persona an. 
   
 ```XML
 <YomiCompanyNames>
@@ -42,7 +42,7 @@ Keine.
 
 [Persona](persona.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

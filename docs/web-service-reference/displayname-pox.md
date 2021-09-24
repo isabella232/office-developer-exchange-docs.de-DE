@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: dab23ed1-7fcf-4870-a634-f39d0742923a
 description: Das DisplayName-Element stellt den Anzeigenamen des Benutzers dar.
-ms.openlocfilehash: 14522080a519d12a05567e4a65cba8ea00098b7d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6a9a42aaede231110c9d11018b03dab507327d30
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463657"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540171"
 ---
 # <a name="displayname-pox"></a>DisplayName (POX)
 
-Das **Display** Name-Element stellt den Anzeigenamen des Benutzers dar. 
+Das **DisplayName-Element** stellt den Anzeigenamen des Benutzers dar. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md) 
 - [Response (POX)](response-pox.md) 
@@ -45,11 +45,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Benutzer (POX)](user-pox.md) <br/> |Enthält benutzerspezifische Informationen.  <br/> |
+|[Benutzer (POX)](user-pox.md) <br/> |Stellt benutzerspezifische Informationen bereit.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt den Anzeigenamen des Benutzers dar.
+Der Textwert stellt den Anzeigenamen des Benutzers dar.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,27 +1,27 @@
 ---
-title: Ismeeting
+title: IsMeeting
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsMeeting
 api_type:
 - schema
 ms.assetid: 6ce22f17-7a31-46c4-b643-0894d087e852
-description: Das ismeeting-Element gibt an, ob es sich bei dem Kalenderelement um eine Besprechung oder einen Termin handelt.
-ms.openlocfilehash: fd72766977567210cd08b47d0723cd73aa53a622
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IsMeeting-Element gibt an, ob das Kalenderelement eine Besprechung oder ein Termin ist.
+ms.openlocfilehash: 2fc3917328b190923f2c554ceacb5003704f048e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465968"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539486"
 ---
-# <a name="ismeeting"></a>Ismeeting
+# <a name="ismeeting"></a>IsMeeting
 
-Das **ismeeting** -Element gibt an, ob es sich bei dem Kalenderelement um eine Besprechung oder einen Termin handelt. 
+Das **IsMeeting-Element** gibt an, ob das Kalenderelement eine Besprechung oder ein Termin ist. 
   
 ```xml
 <IsMeeting/>
@@ -49,9 +49,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich, wenn dieses Element enthalten ist. Der Wert **true** gibt an, dass es sich bei dem Kalenderelement um eine Besprechung handelt. Der Wert **false** gibt an, dass das Kalenderelement ein Termin ist. 
+Wenn dieses Element enthalten ist, ist ein Textwert erforderlich, der einen booleschen Wert darstellt. Der Wert **"true"** gibt an, dass das Kalenderelement eine Besprechung ist. Der Wert **"false"** gibt an, dass das Kalenderelement ein Termin ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

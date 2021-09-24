@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUserAvailabilityRequest
 api_type:
 - schema
 ms.assetid: 7906711b-80a1-42ae-8b33-26eeac036a5a
 description: Das GetUserAvailabilityRequest-Element enthält die Argumente, die zum Abrufen von Informationen zur Benutzerverfügbarkeit verwendet werden. Dies ist ein Stammelement.
-ms.openlocfilehash: 6c2e2c5452b6379171e49cf6aea2d437152ecb9b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8c0e14dc27ce7a742aa052bb1d424706407de484
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459118"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515810"
 ---
 # <a name="getuseravailabilityrequest"></a>GetUserAvailabilityRequest
 
-Das **GetUserAvailabilityRequest** -Element enthält die Argumente, die zum Abrufen von Informationen zur Benutzerverfügbarkeit verwendet werden. Dies ist ein Stammelement. 
+Das **GetUserAvailabilityRequest-Element** enthält die Argumente, die zum Abrufen von Informationen zur Benutzerverfügbarkeit verwendet werden. Dies ist ein Stammelement. 
   
 ```xml
 <GetUserAvailabilityRequest>
@@ -45,18 +45,18 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Zeitzone (Verfügbarkeit)](timezone-availability.md) <br/> |Enthält Elemente, die Zeitzoneninformationen identifizieren. Dieses Element enthält auch Informationen zum Übergang zwischen Standardzeit und Sommerzeit.  <br/> |
+|[TimeZone (Verfügbarkeit)](timezone-availability.md) <br/> |Enthält Elemente, die Zeitzoneninformationen identifizieren. Dieses Element enthält auch Informationen zum Übergang zwischen Standardzeit und Sommerzeit.  <br/> |
 |[MailboxDataArray](mailboxdataarray.md) <br/> |Enthält eine Liste der Postfächer, die nach Verfügbarkeitsinformationen abgefragt werden sollen.  <br/> |
 |[FreeBusyViewOptions](freebusyviewoptions.md) <br/> |Gibt den Typ der Frei/Gebucht-Informationen an, die in der Antwort zurückgegeben werden.  <br/> |
-|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Enthält die Optionen zum Abrufen von Informationen zu Besprechungs Vorschlägen.  <br/> |
+|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Enthält die Optionen zum Abrufen von Besprechungsvorschlagsinformationen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im Verzeichnis/EWS/"aus des Computers, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im Verzeichnis /EWS/ des Computers, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="example"></a>Beispiel
 
@@ -116,7 +116,7 @@ Das folgende Beispiel zeigt eine Anforderung für Frei/Gebucht-Informationen.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
@@ -128,5 +128,5 @@ Das folgende Beispiel zeigt eine Anforderung für Frei/Gebucht-Informationen.
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

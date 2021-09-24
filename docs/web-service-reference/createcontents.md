@@ -1,27 +1,27 @@
 ---
-title: Createcontents
+title: CreateContents
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateContents
 api_type:
 - schema
 ms.assetid: 8a9cd241-0d73-4be8-a563-a945898d1a0e
-description: Das createcontents-Element gibt an, ob ein Client eine Inhaltstabelle erstellen kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 409e0e566c5fa39830707c199f8e3783411c7334
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das CreateContents-Element gibt an, ob ein Client ein Inhaltsverzeichnis erstellen kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: 5209ef8adcb36884747d6dc41ccbd3e2d8013eeb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458915"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526553"
 ---
-# <a name="createcontents"></a>Createcontents
+# <a name="createcontents"></a>CreateContents
 
-Das **createcontents** -Element gibt an, ob ein Client eine Inhaltstabelle erstellen kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **CreateContents-Element** gibt an, ob ein Client ein Inhaltsverzeichnis erstellen kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <CreateContents>true or false</CreateContents>
@@ -44,15 +44,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[EffectiveRights](effectiverights.md) <br/> |Enthält die Rechte des Clients basierend auf den Berechtigungseinstellungen für das Element oder den Ordner. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[EffectiveRights](effectiverights.md) <br/> |Enthält die Rechte des Clients basierend auf den Berechtigungseinstellungen für das Element oder den Ordner. Dieses Element wurde inExchange 2007 SP1 eingeführt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass ein Client eine Inhaltstabelle erstellen kann. 
+Der Textwert **"true"** gibt an, dass ein Client ein Inhaltsverzeichnis erstellen kann. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft wird nur für Folder-Objekte verwendet.
+Diese Eigenschaft wird nur für Ordnerobjekte verwendet.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

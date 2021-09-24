@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - TransitionsGroups
 api_type:
 - schema
 ms.assetid: ad0849f8-5158-4a23-9c36-a49f5be1d1e1
-description: Das TransitionsGroups-Element stellt ein Array von Zeit Zonen Übergangs Gruppen dar.
-ms.openlocfilehash: 35244e122ee31045359afd0833459bbb94fd0aa1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das TransitionsGroups-Element stellt ein Array von Zeitzonenübergangsgruppen dar.
+ms.openlocfilehash: cd394d0ec333f639542c44cef6c992b24b69f65c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467410"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515123"
 ---
 # <a name="transitionsgroups"></a>TransitionsGroups
 
-Das **TransitionsGroups** -Element stellt ein Array von Zeit Zonen Übergangs Gruppen dar. 
+Das **TransitionsGroups-Element** stellt ein Array von Zeitzonenübergangsgruppen dar. 
   
 ```XML
 <TransitionsGroups>
@@ -42,17 +42,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Transitiongroup](transitionsgroup.md) <br/> |Stellt ein Array von Zeit Zonen Übergängen dar.  <br/> |
+|[TransitionsGroup](transitionsgroup.md) <br/> |Stellt ein Array von Zeitzonenübergängen dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StartTimeZone](starttimezone.md) <br/> |Definiert die Zeitzone für die Startzeit einer [CalendarItem](calendaritem.md) -oder [MeetingRequest](meetingrequest.md)-Start Zeit.  <br/> |
-|[EndTimeZone](endtimezone.md) <br/> |Definiert die Zeitzone für die Endzeit einer [CalendarItem](calendaritem.md) -oder [MeetingRequest](meetingrequest.md)-Datei.  <br/> |
+|[StartTimeZone](starttimezone.md) <br/> |Definiert die Zeitzone für die Startzeit eines [CalendarItem-](calendaritem.md) oder [MeetingRequest-Objekt.](meetingrequest.md)  <br/> |
+|[EndTimeZone](endtimezone.md) <br/> |Definiert die Zeitzone für die Endzeit eines [CalendarItem-](calendaritem.md) oder [MeetingRequest](meetingrequest.md)-Objekt.  <br/> |
 |[TimeZoneDefinition](timezonedefinition.md) <br/> |Definiert eine Zeitzone.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

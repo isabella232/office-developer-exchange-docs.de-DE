@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0fcc2f53-742b-46ae-bbab-c3295a3d69e7
 description: Das GetSearchableMailboxesResponse-Element enthält die Antwort auf eine GetSearchableMailboxes-Anforderung.
-ms.openlocfilehash: 680fde9d9ad34dd0384e00da023796d004b66b1b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d01680a1d684ae108051dac75b6738a1f9dd16f5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458264"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539936"
 ---
 # <a name="getsearchablemailboxesresponse"></a>GetSearchableMailboxesResponse
 
-Das **GetSearchableMailboxesResponse** -Element enthält die Antwort auf eine **GetSearchableMailboxes** -Anforderung. 
+Das **GetSearchableMailboxesResponse-Element** enthält die Antwort auf eine **GetSearchableMailboxes-Anforderung.** 
   
 ```XML
 <GetSearchableMailboxesResponse>
@@ -41,13 +41,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[MessageText](messagetext.md)  |  [Response Code](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [Messagexml verwendet](messagexml.md)  |  [SearchableMailboxes](searchablemailboxes.md)  |  [FailedMailboxes](failedmailboxes.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)  |  [SearchableMailboxes](searchablemailboxes.md)  |  [FailedMailboxes](failedmailboxes.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -59,7 +59,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

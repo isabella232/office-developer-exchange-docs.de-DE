@@ -1,22 +1,22 @@
 ---
-title: URI (SOAP)
+title: Uri (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4a82162a-716d-4002-820e-5bbcfb4a9696
-description: Das URI-Element gibt den Sicherheitstokendienst an, der den Sicherheitstoken ausgestellt hat.
-ms.openlocfilehash: f4b22551eebcc318b2063feb70799839acd62c17
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das URI-Element gibt den Sicherheitstokendienst an, der das Sicherheitstoken ausgestellt hat.
+ms.openlocfilehash: 956f326790645db48f0ffe41334b4130d1e176a3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526571"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513976"
 ---
-# <a name="uri-soap"></a>URI (SOAP)
+# <a name="uri-soap"></a>Uri (SOAP)
 
-Das **URI** -Element gibt den Sicherheitstokendienst an, der den Sicherheitstoken ausgestellt hat. 
+Das **URI-Element** gibt den Sicherheitstokendienst an, der das Sicherheitstoken ausgestellt hat. 
   
 ```XML
 <Uri/>
@@ -39,19 +39,19 @@ Keines
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[TokenIssuer (SOAP)](tokenissuer-soap.md) <br/> |Gibt den URI und den Endpunkt für den Sicherheitstokendienst an.  <br/> |
+|[TokenIssuer (SOAP)](tokenissuer-soap.md) <br/> |Gibt den URI und Endpunkt für den Sicherheitstokendienst an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt den URI des Sicherheitstokendienst dar.
+Der Textwert stellt den URI des Sicherheitstokendiensts dar.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 

@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 064d73e4-45b7-4797-828e-9df590830db8
-description: Das ErrorCode-Element enthält den Fehlercode für eine fehlerhafte Auto Ermittlungs Antwort.
-ms.openlocfilehash: 9dcd681c00aefcfb88f1f8a58be3aa2ccd0bb72b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ErrorCode-Element enthält den Fehlercode für eine Fehler-AutoErmittlungsantwort.
+ms.openlocfilehash: e087860c5ca1e3d79c7bad34ae3754bdba6c9091
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460652"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539921"
 ---
 # <a name="errorcode-pox"></a>ErrorCode (POX)
 
-Das **errorCode** -Element enthält den Fehlercode für eine fehlerhafte Auto Ermittlungs Antwort. 
+Das **ErrorCode-Element** enthält den Fehlercode für eine Fehler-AutoErmittlungsantwort. 
   
 [Fehler (POX)](error-pox.md)
   
@@ -44,11 +44,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Fehler (POX)](error-pox.md) <br/> |Enthält eine AutoErmittlung-Fehlerantwort.  <br/> |
+|[Fehler (POX)](error-pox.md) <br/> |Enthält eine AutoErmittlungsfehlerantwort.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Text-Wert stellt den Fehlercode für eine fehlerhafte Auto Ermittlungs Antwort dar.
+Der Textwert stellt den Fehlercode für eine Fehler-AutoErmittlungsantwort dar.
   
 ## <a name="see-also"></a>Siehe auch
 

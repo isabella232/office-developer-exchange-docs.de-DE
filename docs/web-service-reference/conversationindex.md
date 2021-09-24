@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ConversationIndex
 api_type:
 - schema
 ms.assetid: fdf47e22-8d93-4ae4-883b-0c9f07f48724
 description: Das ConversationIndex-Element enthält eine binäre ID, die den Thread darstellt, zu dem diese Nachricht gehört.
-ms.openlocfilehash: 03874c6462be6380e34c999bc2354c376a462882
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 5ca1c6cb27baa5ec1a2374c234103719ac952787
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461436"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526644"
 ---
 # <a name="conversationindex"></a>ConversationIndex
 
-Das **ConversationIndex** -Element enthält eine binäre ID, die den Thread darstellt, zu dem diese Nachricht gehört. 
+Das **ConversationIndex-Element** enthält eine binäre ID, die den Thread darstellt, zu dem diese Nachricht gehört. 
   
 ```xml
 <ConversationIndex/>
@@ -57,15 +57,15 @@ Keine.
 |[ReplyAllToItem](replyalltoitem.md) <br/> |Enthält eine Antwort an alle identifizierten Empfänger eines Elements in der Exchange-Speicher.  <br/> |
 |[ForwardItem](forwarditem.md) <br/> |Enthält ein Exchange-Speicher-Element an Empfänger weitergeleitet.  <br/> |
 |[CancelCalendarItem](cancelcalendaritem.md) <br/> |Stellt das Antwortobjekt, das Sie eine Besprechung absagen verwendet wird.  <br/> |
-|[PostItem](postitem.md) <br/> |Stellt ein Post-Element im Exchange-Informationsspeicher dar. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
+|[PostItem](postitem.md) <br/> |Stellt ein Beitragselement im Exchange Informationsspeicher dar. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt einen binären Bezeichner im **Base64Binary** -Format dar. 
+Der Textwert stellt einen binären Bezeichner im **Base64Binary-Format dar.** 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Exchange-Servers, auf dem die Client Zugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Exchange Servers, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FreeBusyViewOptions
 api_type:
 - schema
 ms.assetid: c07f3ddb-874b-4d30-a60e-7e5c7793bb6f
 description: Das FreeBusyViewOptions-Element gibt den Typ der Frei/Gebucht-Informationen an, die in der Antwort zurückgegeben werden.
-ms.openlocfilehash: b67d3f461e0edaa82f074f75b0c1c54efc8af4d0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fc9b3e32dff5ae984d2921a3a46319a6f3e89da8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459574"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526221"
 ---
 # <a name="freebusyviewoptions"></a>FreeBusyViewOptions
 
-Das **FreeBusyViewOptions** -Element gibt den Typ der Frei/Gebucht-Informationen an, die in der Antwort zurückgegeben werden. 
+Das **FreeBusyViewOptions-Element** gibt den Typ der Frei/Gebucht-Informationen an, die in der Antwort zurückgegeben werden. 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -49,26 +49,26 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[TimeWindow](timewindow.md) <br/> |Gibt den Zeitraum an, der für die Informationen zur Benutzerverfügbarkeit abgefragt wird.  <br/> |
-|[MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) <br/> |Stellt den Zeitunterschied zwischen zwei aufeinanderfolgenden Slots in der **FreeBusyMerged** -Ansicht dar.  <br/> |
-|[RequestedView](requestedview.md) <br/> |Definiert den Typ von Kalenderinformationen, die von einem Client angefordert werden.  <br/> |
+|[TimeWindow](timewindow.md) <br/> |Gibt die Zeitspanne an, die für die Benutzerverfügbarkeitsinformationen abgefragt wird.  <br/> |
+|[MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) <br/> |Stellt den Zeitunterschied zwischen zwei aufeinander folgenden Steckplätzen in der **Ansicht FreeBusyMerged dar.**  <br/> |
+|[RequestedView](requestedview.md) <br/> |Definiert den Typ der Kalenderinformationen, die ein Client anfordert.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |Enthält die Argumente, die zum Abrufen von Informationen zur Benutzerverfügbarkeit verwendet werden. Dies ist ein Stammelement.  <br/> Es folgt der XPath für dieses Element:  <br/>  `/GetUserAvailabilityRequest` <br/> |
+|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |Enthält die Argumente, die zum Abrufen von Benutzerverfügbarkeitsinformationen verwendet werden. Dies ist ein Stammelement.  <br/> Es folgt der XPath für dieses Element:  <br/>  `/GetUserAvailabilityRequest` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element ist nicht erforderlich und kann nur einmal auftreten, wenn es verwendet wird. Dieser Wert kann NULL sein, wenn der Wert des [SuggestionsViewOptions](suggestionsviewoptions.md) -Elements nicht NULL ist. 
+Dieses Element ist nicht erforderlich und kann nur einmal auftreten, wenn es verwendet wird. Dieser Wert kann NULL sein, wenn der Wert des [SuggestionsViewOptions-Elements](suggestionsviewoptions.md) nicht NULL ist. 
   
 > [!NOTE]
-> Das Schema, das dieses Element beschreibt, befindet sich im/EPI/-Verzeichnis des Computers, auf dem Microsoft® Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist. 
+> Das Schema, das dieses Element beschreibt, befindet sich im Verzeichnis "/computern/" des Computers, auf dem Microsoft ausgeführt wird® Exchange Server 2007, auf dem die Clientzugriffsserverrolle installiert ist. 
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird eine Liste der Besprechungen und eines frei/gebucht-Streams in 60-Minuten-Intervallen abgerufen.
+Im folgenden Beispiel wird eine Liste von Besprechungen und ein Frei/Gebucht-Datenstrom in 60-Minuten-Intervallen abgerufen.
   
 ```
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -134,5 +134,5 @@ Im folgenden Beispiel wird eine Liste der Besprechungen und eines frei/gebucht-S
 [GetUserAvailability-Vorgang](getuseravailability-operation.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

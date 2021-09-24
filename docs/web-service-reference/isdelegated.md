@@ -1,27 +1,27 @@
 ---
-title: Isdelegated wurde
+title: IsDelegated
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsDelegated
 api_type:
 - schema
 ms.assetid: c12907db-be80-4924-9469-8e58612cf42c
-description: Das isdelegated-Element gibt an, ob eine Besprechung von einem Konto verarbeitet wurde, das über Stellvertretungszugriff verfügt.
-ms.openlocfilehash: 2c62b59665431d5ea203e972a506aa90afc76601
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IsDelegated-Element gibt an, ob eine Besprechung von einem Konto verarbeitet wurde, das Über Stellvertretungszugriff verfügt.
+ms.openlocfilehash: 60adde1b370d15bc583c11ae29da430a64b46016
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456444"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515558"
 ---
-# <a name="isdelegated"></a>Isdelegated wurde
+# <a name="isdelegated"></a>IsDelegated
 
-Das **isdelegated** -Element gibt an, ob eine Besprechung von einem Konto verarbeitet wurde, das über Stellvertretungszugriff verfügt. 
+Das **IsDelegated-Element** gibt an, ob eine Besprechung von einem Konto verarbeitet wurde, das Über Stellvertretungszugriff verfügt. 
   
 ```xml
 <IsDelegated/>
@@ -51,9 +51,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass die Besprechung von einem Konto verarbeitet wurde, das über Stellvertretungszugriff verfügt. 
+Der Textwert **"true"** gibt an, dass die Besprechung von einem Konto mit Stellvertretungszugriff behandelt wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

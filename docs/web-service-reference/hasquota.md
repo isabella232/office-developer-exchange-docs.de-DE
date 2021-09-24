@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - HasQuota
 api_type:
 - schema
 ms.assetid: b6e4fef0-92a9-415f-81ae-0c5ecb7c12ad
-description: Das HasQuota-Element gibt an, ob der verwaltete Ordner ein Kontingent aufweist.
-ms.openlocfilehash: 6e32aa4c69943774be928339936cca5016c58d85
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das HasQuota-Element gibt an, ob der verwaltete Ordner über ein Kontingent verfügt.
+ms.openlocfilehash: 86192ac5dd8d7e88531aaf9c3f165f01831436c1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462752"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539661"
 ---
 # <a name="hasquota"></a>HasQuota
 
-Das **HasQuota** -Element gibt an, ob der verwaltete Ordner ein Kontingent aufweist. 
+Das **HasQuota-Element** gibt an, ob der verwaltete Ordner über ein Kontingent verfügt. 
   
 ```xml
 <HasQuota/>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt einen booleschen Wert dar. Der Wert **true** gibt an, dass der Ordner über ein Kontingent verfügt. der Wert **false** gibt an, dass der Ordner kein Kontingent aufweist. 
+Der Textwert stellt einen booleschen Wert dar. Der Wert **"true"** gibt an, dass der Ordner über ein Kontingent verfügt. Der Wert **"false"** gibt an, dass der Ordner kein Kontingent aufweist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Name
 api_type:
 - schema
 ms.assetid: 98c58c53-9acc-4e89-9fcf-03f1b05abee1
 description: Das Name-Element stellt den Namen eines Postfachbenutzers dar.
-ms.openlocfilehash: db6eb547b5c848dc31bbaa377692989b16771673
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 096b5db4f7bc2de7d1d7355e4e0dba2684bd06d8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466927"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515516"
 ---
 # <a name="name-emailaddresstype"></a>Name (EmailAddressType)
 
-Das **Name** -Element stellt den Namen eines Postfachbenutzers dar. 
+Das **Name-Element** stellt den Namen eines Postfachbenutzers dar. 
   
 ```xml
 <Name/>
@@ -45,16 +45,16 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Postfach](mailbox.md) <br/> |Identifiziert eine vollständig aufgelöste e-Mail-Adresse.  <br/> |
-|[RoomList](roomlist.md) <br/> |Gibt eine Liste von Besprechungsräumen an.  <br/> |
+|[Postfach](mailbox.md) <br/> |Identifiziert eine vollständig aufgelöste E-Mail-Adresse.  <br/> |
+|[RoomList](roomlist.md) <br/> |Identifiziert eine Liste von Besprechungsräumen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert, der eine Zeichenfolge darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element ist optional. Das **Name** -Element ist in den Typen **AttachmentType**, **Email**Name und **e-** MailType vorhanden. Das **Name** -Element im **Adress** typentyp wird im Thema [Name (Email-Element)](name-emailaddress.md) beschrieben. 
+Dieses Element ist optional. Das **Name-Element** ist in den Typen **AttachmentType,** **EmailAddressType** und **EmailAddress** vorhanden. Das **Name-Element** im **EmailAddress-Typ** wird im Thema zum [Name -Element (EmailAddress)](name-emailaddress.md) beschrieben. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fc2ca69e-eea7-4334-b046-ec0b04d8f8c6
-description: Das InstallApp-Element gibt die Anforderung an, eine APP zu installieren.
-ms.openlocfilehash: 003a72507813677484b2d6ee75f8ff577df169e3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das InstallApp-Element gibt die Anforderung zum Installieren einer App an.
+ms.openlocfilehash: 518dbfcbe452b9d31f47e9f94b8a42a0883165fe
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468005"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539584"
 ---
 # <a name="installapp"></a>InstallApp
 
-Das **InstallApp** -Element gibt die Anforderung an, eine APP zu installieren. 
+Das **InstallApp-Element** gibt die Anforderung zum Installieren einer App an. 
   
 ```XML
 <InstallApp>
@@ -38,13 +38,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Manifest](manifest.md) <br/> |Enthält die Base64-codierte App-Manifestdatei.  <br/> |
+|[Manifest](manifest.md) <br/> |Enthält die base64-codierte App-Manifestdatei.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

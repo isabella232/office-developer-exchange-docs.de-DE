@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RestrictedGroupSids
 api_type:
 - schema
 ms.assetid: 569ab552-5616-444a-a7f5-de366a684a34
 description: Das RestrictedGroupSids-Element stellt eine Auflistung von eingeschränkten Gruppen aus dem Token eines Benutzers dar.
-ms.openlocfilehash: 739a73d2ac4bdbbee03650d035271b5c8d9ea25a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 20e412eb6eb97bc33052d6625035afb7711ad34f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465359"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514109"
 ---
 # <a name="restrictedgroupsids"></a>RestrictedGroupSids
 
-Das **RestrictedGroupSids** -Element stellt eine Auflistung von eingeschränkten Gruppen aus dem Token eines Benutzers dar. 
+Das **RestrictedGroupSids-Element** stellt eine Auflistung von eingeschränkten Gruppen aus dem Token eines Benutzers dar. 
   
 ```xml
 <RestrictedGroupSids>
@@ -42,15 +42,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RestrictedGroupIdentifier](restrictedgroupidentifier.md) <br/> |Stellt die sid (Group Security Identifier) und die Attribute für eine eingeschränkte Gruppe dar.  <br/> |
+|[RestrictedGroupIdentifier](restrictedgroupidentifier.md) <br/> |Stellt die Gruppensicherheits-ID (SID) und attribute für eine eingeschränkte Gruppe dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SerializedSecurityContext](serializedsecuritycontext.md) <br/> |Wird im SOAP-Header für die Token-Serialisierung in der Server-zu-Server-Authentifizierung verwendet. Die Serialisierung von Token wird nicht unterstützt.  <br/> |
+|[SerializedSecurityContext](serializedsecuritycontext.md) <br/> |Wird im SOAP-Header für die Token-Serialisierung in der Server-zu-Server-Authentifizierung verwendet. Die Token-Serialisierung wird nicht unterstützt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

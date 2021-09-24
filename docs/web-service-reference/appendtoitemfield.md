@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AppendToItemField
 api_type:
 - schema
 ms.assetid: 66dbcb4a-ae6d-4648-8610-67187bdb105c
 description: Das AppendToItemField-Element identifiziert Daten, die während eines UpdateItem-Vorgangs an eine einzelne Eigenschaft eines Elements angefügt werden sollen.
-ms.openlocfilehash: 902239155bff45d6f81989de954c9459cf012288
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8e94ca9174d11f1f6e4a0dd2fcfabeb30a64a40d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466045"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540328"
 ---
 # <a name="appendtoitemfield"></a>AppendToItemField
 
-Das **AppendToItemField** -Element identifiziert Daten, die während eines [UpdateItem-Vorgangs](updateitem-operation.md)an eine einzelne Eigenschaft eines Elements angefügt werden sollen.
+Das **AppendToItemField** -Element identifiziert Daten, die an eine einzelne Eigenschaft eines Elements während eines [UpdateItem-Vorgangs](updateitem-operation.md)angefügt werden sollen.
   
 - [UpdateItem](updateitem.md)
   
@@ -53,9 +53,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member eines Wörterbuchs.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert erweiterte MAPI-Eigenschaften, die angefügt werden sollen.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifies frequently referenced properties by URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Mitglieder eines Wörterbuchs.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifies extended MAPI properties to append.  <br/> |
 |[Element](item.md) <br/> |Stellt ein Element im Exchange-Informationsspeicher dar.  <br/> |
 |[Message](message-ex15websvcsotherref.md) <br/> |Stellt eine Exchange-E-Mail-Nachricht dar.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
@@ -71,16 +71,16 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Updates (Element)](updates-item.md) <br/> |Enthält ein Array, das Append-, festlegen-und DELETE-Änderungen an Elementeigenschaften definiert.  <br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/UpdateItem/ItemChanges/ItemChange[i]/Updates` <br/> |
+|[Updates (Element)](updates-item.md) <br/> |Enthält ein Array, das Das Anfügen, Festlegen und Löschen von Änderungen an Elementeigenschaften definiert.  <br/> Es folgt der XPath-Ausdruck für dieses Element:  `/UpdateItem/ItemChanges/ItemChange[i]/Updates` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Nur bestimmte Eigenschaften unterstützen Append-Vorgänge. Ein Versuch, an eine Eigenschaft anzufügen, die das Anfügen nicht unterstützt, führt zu einem Fehler.
+Nur bestimmte Eigenschaften unterstützen Anfügevorgänge. Ein Versuch, an eine Eigenschaft anzufügen, die das Anfügen nicht unterstützt, führt zu einem Fehler.
   
-Bei Aktualisierungsvorgängen kann nur eine Eigenschaft innerhalb einer einzelnen Anforderung geändert werden. Auf diese einzelne Eigenschaft muss im [path](path.md) -Element verwiesen werden. Das **Item** -Element in den abgeleiteten Klassen kann dann nur eine einzelne Eigenschaft enthalten, die mit dem einzelnen **Pfad** -Element übereinstimmt. 
+Bei Aktualisierungsvorgängen kann nur eine Eigenschaft innerhalb einer einzigen Anforderung geändert werden. Auf diese einzelne Eigenschaft muss im [Path-Element](path.md) verwiesen werden. Das **Item-Element** in den abgeleiteten Klassen kann dann nur eine einzelne Eigenschaft enthalten, die mit dem einzelnen **Path-Element** in Übereinstimmung steht. 
   
 > [!NOTE]
-> Das [path](path.md) -Element ist abstrakt. Es muss durch das [FieldURI](fielduri.md)-, [IndexedFieldURI](indexedfielduri.md)-oder [ExtendedFieldURI](extendedfielduri.md) -Element ersetzt werden. 
+> Das [Path-Element](path.md) ist abstrakt. Sie muss durch das [FieldURI-,](fielduri.md) [IndexedFieldURI-](indexedfielduri.md)oder [ExtendedFieldURI-Element](extendedfielduri.md) ersetzt werden. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

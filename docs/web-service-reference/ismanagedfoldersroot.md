@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsManagedFoldersRoot
 api_type:
 - schema
 ms.assetid: 00823fb9-bf8b-49bb-8e1b-d698c6d4063f
 description: Das IsManagedFoldersRoot-Element gibt an, ob der verwaltete Ordner der Stamm für alle verwalteten Ordner ist.
-ms.openlocfilehash: 4373dba9dce92de8e175948d889f0806e100fa6c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 85c806f1bb3f3613f8faf33b763e2a8c20f5ef40
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466024"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539493"
 ---
 # <a name="ismanagedfoldersroot"></a>IsManagedFoldersRoot
 
-Das **IsManagedFoldersRoot** -Element gibt an, ob der verwaltete Ordner der Stamm für alle verwalteten Ordner ist. 
+Das **IsManagedFoldersRoot-Element** gibt an, ob der verwaltete Ordner der Stamm für alle verwalteten Ordner ist. 
   
 ```xml
 <IsManagedFoldersRoot/>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich, wenn dieses Element vorhanden ist. Der Wert **true** gibt an, dass der Ordner der Stammordner des verwalteten Ordners ist. der Wert **false** gibt an, dass der Ordner nicht der Stammordner des verwalteten Ordners ist. 
+Wenn dieses Element vorhanden ist, ist ein Textwert erforderlich, der einen booleschen Wert darstellt. Der Wert **"true"** gibt an, dass der Ordner der Stammordner des verwalteten Ordners ist. Der Wert **"false"** gibt an, dass der Ordner nicht der Stammordner des verwalteten Ordners ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

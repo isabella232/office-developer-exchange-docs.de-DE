@@ -1,27 +1,27 @@
 ---
-title: Neue und aktualisierte Exchange-Verwaltungsshell-Cmdlets
+title: Neue und aktualisierte Cmdlets für Exchange Verwaltungsshell
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5941a439-94d2-4133-81fc-7240863a13df
-description: Hier finden Sie Informationen zu Neuerungen in der Exchange-Verwaltungsshell in Exchange.
-ms.openlocfilehash: bda6607be20f2a21bc22d472d63615d46634d8ab
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zu neuerungen in der Exchange-Verwaltungsshell in Exchange.
+ms.openlocfilehash: b90d7edb83f3cdcaeed11c3692e6981931eaaae1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457144"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513871"
 ---
-# <a name="new-and-updated-exchange-management-shell-cmdlets"></a>Neue und aktualisierte Exchange-Verwaltungsshell-Cmdlets
+# <a name="new-and-updated-exchange-management-shell-cmdlets"></a>Neue und aktualisierte Cmdlets für Exchange Verwaltungsshell
 
-Hier finden Sie Informationen zu Neuerungen in der Exchange-Verwaltungsshell in Exchange.
+Hier finden Sie Informationen zu neuerungen in der Exchange-Verwaltungsshell in Exchange.
   
 **Gilt für:** Exchange Online | Exchange Server 2013 | Office 365
   
-Dieser Artikel enthält Informationen zu neuen Cmdlets in der Exchange-Verwaltungsshell, Cmdlets, die in geändert wurden, und Cmdlets, die aus Exchange Online entfernt wurden, Exchange Online im Rahmen von Office 365 oder einer lokalen Exchange-Version.
+Dieser Artikel enthält Informationen zu neuen Cmdlets Exchange Verwaltungsshell, zu Cmdlets, die geändert wurden, sowie zu Cmdlets, die aus Exchange Online entfernt wurden, Exchange Online als Teil Office 365 oder einer lokalen Version von Exchange.
   
 ## <a name="new-and-updated-cmdlets-in-exchange-2013-sp1"></a>Neue und aktualisierte Cmdlets in Exchange 2013 SP1
 
@@ -35,15 +35,15 @@ Die folgenden Cmdlets wurden in Build 15.00.0847.032 (Exchange Server 2013 SP1) 
     
 - **Remove-AuthRedirect**
     
-- **Gruppe-AuthRedirect**
+- **Set-AuthRedirect**
     
-- **New-dataclassification**
+- **New-DataClassification**
     
-- **Remove-dataclassification**
+- **Remove-DataClassification**
     
-- **Gruppe-dataclassification**
+- **Set-DataClassification**
     
-- **Neu – Fingerabdruck**
+- **New-FingerPrint**
     
 - **Get-MapiVirtualDirectory\***
     
@@ -51,7 +51,7 @@ Die folgenden Cmdlets wurden in Build 15.00.0847.032 (Exchange Server 2013 SP1) 
     
 - **Remove-MapiVirtualDirectory\***
     
-- **Gruppe-MapiVirtualDirectory\***
+- **Set-MapiVirtualDirectory\***
     
 - **Get-OMEConfiguration**
     
@@ -59,7 +59,7 @@ Die folgenden Cmdlets wurden in Build 15.00.0847.032 (Exchange Server 2013 SP1) 
     
 - **Get-SmimeConfig**
     
-- **Gruppe-SmimeConfig**
+- **Set-SmimeConfig**
     
 - **Get-IntraOrganizationConfiguration**
     
@@ -69,7 +69,7 @@ Die folgenden Cmdlets wurden in Build 15.00.0847.032 (Exchange Server 2013 SP1) 
     
 - **Remove-IntraOrganizationConnector**
     
-- **Gruppe-IntraOrganizationConnector**
+- **Set-IntraOrganizationConnector**
     
 - **Get-HistoricalSearch**
     
@@ -97,35 +97,35 @@ Die folgenden Cmdlets wurden in Build 15.00.0847.032 (Exchange 2013 SP1) aktuali
     
 - **New-TransportRule**
     
-- **Gruppe-Frontend Transportservice**
+- **Set-FrontendTransportService**
     
-- **Gruppe-InboundConnector**
+- **Set-InboundConnector**
     
 - **Set-Mailbox**
     
-- **Gruppe-Mailbox Transportservice**
+- **Set-MailboxTransportService**
     
-- **Gruppe-MoveRequest**
+- **Set-MoveRequest**
     
 - **Set-OrganizationConfig**
     
-- **Gruppe-OwaMailboxPolicy**
+- **Set-OwaMailboxPolicy**
     
-- **Gruppe-OwaVirtualDirectory**
+- **Set-OwaVirtualDirectory**
     
-- **Festlegen von TransportConfig**
+- **Set-TransportConfig**
     
-- **Festlegen-TransportRule**
+- **Set-TransportRule**
     
-- **Festlegen-Transport Server**
+- **Set-TransportServer**
     
-- **Gruppe-Transportservice**
+- **Set-TransportService**
     
 - **Test-MRSHealth**
     
 - **Test-OAuthConnectivity**
     
-### <a name="removed-cmdlets"></a>Entfernte Cmdlets
+### <a name="removed-cmdlets"></a>Cmdlets entfernt
 
 Die folgenden Cmdlets wurden aus Build 15.00.0847.032 (Exchange 2013 SP1) entfernt:
   
@@ -135,7 +135,7 @@ Die folgenden Cmdlets wurden aus Build 15.00.0847.032 (Exchange 2013 SP1) entfer
     
 - **Remove-AvailabilityReportOutage**
     
-- **Gruppe-AvailabilityReportOutage**
+- **Set-AvailabilityReportOutage**
     
 ## <a name="new-and-updated-cmdlets-in-exchange-2013"></a>Neue und aktualisierte Cmdlets in Exchange 2013
 
@@ -146,7 +146,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
   
 - **Get-ActiveSyncDeviceAutoblockThreshold**
     
-- **Gruppe-ActiveSyncDeviceAutoblockThreshold**
+- **Set-ActiveSyncDeviceAutoblockThreshold**
     
 - **Disable-App**
     
@@ -158,11 +158,11 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-App**
     
-- **Gruppe-App**
+- **Set-App**
     
 - **Get-AuthConfig**
     
-- **Gruppe-AuthConfig**
+- **Set-AuthConfig**
     
 - **Get-AuthServer**
     
@@ -170,7 +170,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-AuthServer**
     
-- **Gruppe-AuthServer**
+- **Set-AuthServer**
     
 - **New-AvailabilityConfig**
     
@@ -184,7 +184,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-ClassificationRuleCollection**
     
-- **Gruppe-ClassificationRuleCollection**
+- **Set-ClassificationRuleCollection**
     
 - **Get-ConnectSubscription**
     
@@ -192,9 +192,9 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-ConnectSubscription**
     
-- **Gruppe-ConnectSubscription**
+- **Set-ConnectSubscription**
     
-- **Get-dataclassification**
+- **Get-DataClassification**
     
 - **Get-DataClassificationConfig**
     
@@ -204,7 +204,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-DlpPolicy**
     
-- **Gruppe-DlpPolicy**
+- **Set-DlpPolicy**
     
 - **Export-DlpPolicyCollection**
     
@@ -222,9 +222,9 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Get-FfoMigrationReport**
     
-- **Get-Frontend Transportservice**
+- **Get-FrontendTransportService**
     
-- **Gruppe-Frontend Transportservice**
+- **Set-FrontendTransportService**
     
 - **Add-GlobalMonitoringOverride**
     
@@ -242,25 +242,25 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-HostedConnectionFilterPolicy**
     
-- **Gruppe-HostedConnectionFilterPolicy**
+- **Set-HostedConnectionFilterPolicy**
     
-- **Get-hostedcontentfilterpolicy dient zum**
+- **Get-HostedContentFilterPolicy**
     
-- **New-hostedcontentfilterpolicy dient zum**
+- **New-HostedContentFilterPolicy**
     
-- **Remove-hostedcontentfilterpolicy dient zum**
+- **Remove-HostedContentFilterPolicy**
     
-- **Gruppe-hostedcontentfilterpolicy dient zum**
+- **Set-HostedContentFilterPolicy**
     
 - **Get-HostedOutboundSpamFilterPolicy**
     
-- **Gruppe-HostedOutboundSpamFilterPolicy**
+- **Set-HostedOutboundSpamFilterPolicy**
     
 - **Remove-HybridConfiguration**
     
 - **Get-HybridMailflow**
     
-- **Gruppe-HybridMailflow**
+- **Set-HybridMailflow**
     
 - **Get-HybridMailflowDatacenterIPs**
     
@@ -270,17 +270,17 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-InboundConnector**
     
-- **Gruppe-InboundConnector**
+- **Set-InboundConnector**
     
 - **Get-MailboxActivityReport**
     
-- **Disable-mailboxquarantine können**
+- **Disable-MailboxQuarantine**
     
-- **Enable-mailboxquarantine können**
+- **Enable-MailboxQuarantine**
     
-- **Get-Mailbox Transportservice**
+- **Get-MailboxTransportService**
     
-- **Gruppe-Mailbox Transportservice**
+- **Set-MailboxTransportService**
     
 - **Get-MailDetailDlpPolicyReport**
     
@@ -304,7 +304,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Get-MalwareFilteringServer**
     
-- **Gruppe-MalwareFilteringServer**
+- **Set-MalwareFilteringServer**
     
 - **Get-MalwareFilterPolicy**
     
@@ -312,7 +312,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-MalwareFilterPolicy**
     
-- **Gruppe-MalwareFilterPolicy**
+- **Set-MalwareFilterPolicy**
     
 - **Get-MalwareFilterRecoveryItem**
     
@@ -320,7 +320,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Resume-MalwareFilterRecoveryItem**
     
-- **Send-MapiSubmitSystemProbe**
+- **Send-MapiSubmitSystemMappe**
     
 - **Redirect-Message**
     
@@ -334,7 +334,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Get-MigrationConfig**
     
-- **Gruppe-MigrationConfig**
+- **Set-MigrationConfig**
     
 - **Get-MigrationEndpoint**
     
@@ -342,7 +342,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-MigrationEndpoint**
     
-- **Gruppe-MigrationEndpoint**
+- **Set-MigrationEndpoint**
     
 - **Get-MigrationStatistics**
     
@@ -364,7 +364,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-MobileDeviceMailboxPolicy**
     
-- **Gruppe-MobileDeviceMailboxPolicy**
+- **Set-MobileDeviceMailboxPolicy**
     
 - **Get-MobileDeviceStatistics**
     
@@ -376,7 +376,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Get-Notification**
     
-- **Festlegen-Benachrichtigung**
+- **Set-Notification**
     
 - **Test-OAuthConnectivity**
     
@@ -386,7 +386,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-OnPremisesOrganization**
     
-- **Gruppe-OnPremisesOrganization**
+- **Set-OnPremisesOrganization**
     
 - **Enable-OrganizationCustomization**
     
@@ -396,7 +396,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-OutboundConnector**
     
-- **Gruppe-OutboundConnector**
+- **Set-OutboundConnector**
     
 - **Get-PartnerApplication**
     
@@ -404,11 +404,11 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-PartnerApplication**
     
-- **Gruppe-PartnerApplication**
+- **Set-PartnerApplication**
     
 - **Get-PendingFederatedDomain**
     
-- **Gruppe-PendingFederatedDomain**
+- **Set-PendingFederatedDomain**
     
 - **Get-PolicyTipConfig**
     
@@ -416,7 +416,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-PolicyTipConfig**
     
-- **Gruppe-PolicyTipConfig**
+- **Set-PolicyTipConfig**
     
 - **Dump-ProvisioningCache**
     
@@ -434,7 +434,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Resume-PublicFolderMigrationRequest**
     
-- **Gruppe-PublicFolderMigrationRequest**
+- **Set-PublicFolderMigrationRequest**
     
 - **Suspend-PublicFolderMigrationRequest**
     
@@ -444,7 +444,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Release-QuarantineMessage**
     
-- **Get-Queue Digest**
+- **Get-QueueDigest**
     
 - **Get-ResourcePolicy**
     
@@ -452,7 +452,7 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-ResourcePolicy**
     
-- **Gruppe-ResourcePolicy**
+- **Set-ResourcePolicy**
     
 - **Add-ResubmitRequest**
     
@@ -460,29 +460,29 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-ResubmitRequest**
     
-- **Gruppe-ResubmitRequest**
+- **Set-ResubmitRequest**
     
 - **Get-ServerComponentState**
     
-- **Gruppe-ServerComponentState**
+- **Set-ServerComponentState**
     
 - **Get-ServerHealth**
     
-- **Gruppe-Server Monitor**
+- **Set-ServerMonitor**
     
 - **Add-ServerMonitoringOverride**
     
 - **Get-ServerMonitoringOverride**
     
-- **Get-Site Mailbox**
+- **Get-SiteMailbox**
     
-- **New-Site Mailbox**
+- **New-SiteMailbox**
     
-- **Gruppe-Site Mailbox**
+- **Set-SiteMailbox**
     
-- **Test-Site Mailbox**
+- **Test-SiteMailbox**
     
-- **Update-Site Mailbox**
+- **Update-SiteMailbox**
     
 - **Get-SiteMailboxDiagnostics**
     
@@ -498,15 +498,15 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Get-StaleMailboxDetailReport**
     
-- **Get-Stal Emailbox Report**
+- **Get-StaleMailboxReport**
     
 - **Update-StoreMailboxState**
     
 - **New-SyncMailPublicFolder**
     
-- **Get-Transportservice**
+- **Get-TransportService**
     
-- **Gruppe-Transportservice**
+- **Set-TransportService**
     
 - **Disable-UMCallAnsweringRule**
     
@@ -518,11 +518,11 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-UMCallAnsweringRule**
     
-- **Gruppe-UMCallAnsweringRule**
+- **Set-UMCallAnsweringRule**
     
 - **Get-UMCallRouterSettings**
     
-- **Gruppe-UMCallRouterSettings**
+- **Set-UMCallRouterSettings**
     
 - **Disable-UMService**
     
@@ -550,12 +550,12 @@ Die folgenden Cmdlets wurden in Exchange 2013 eingeführt:
     
 - **Remove-WorkloadPolicy**
     
-- **Gruppe-WorkloadPolicy**
+- **Set-WorkloadPolicy**
     
 ### <a name="modified-cmdlets"></a>Geänderte Cmdlets
 <a name="bk_update"> </a>
 
-Die Eingabe-oder Ausgabetypen für die folgenden Cmdlets wurden in Exchange 2013 geändert:
+Die Eingabe- oder Ausgabetypen für die folgenden Cmdlets wurden in Exchange 2013 geändert:
   
 - **Clear-ActiveSyncDevice**
     
@@ -569,7 +569,7 @@ Die Eingabe-oder Ausgabetypen für die folgenden Cmdlets wurden in Exchange 2013
     
 - **New-AutodiscoverVirtualDirectory**
     
-- **Gruppe-AvailabilityConfig**
+- **Set-AvailabilityConfig**
     
 - **Enable-ExchangeCertificate**
     
@@ -585,13 +585,13 @@ Die Eingabe-oder Ausgabetypen für die folgenden Cmdlets wurden in Exchange 2013
     
 - **New-HybridConfiguration**
     
-- **Gruppe-HybridConfiguration**
+- **Set-HybridConfiguration**
     
 - **New-Mailbox**
     
 - **Resume-MailboxDatabaseCopy**
     
-- **Gruppe-MailboxDatabaseCopy**
+- **Set-MailboxDatabaseCopy**
     
 - **Suspend-MailboxDatabaseCopy**
     
@@ -599,33 +599,33 @@ Die Eingabe-oder Ausgabetypen für die folgenden Cmdlets wurden in Exchange 2013
     
 - **Get-MailboxExportRequest**
     
-- **Gruppe-MailboxExportRequest**
+- **Set-MailboxExportRequest**
     
 - **Add-MailboxFolderPermission**
     
 - **Remove-MailboxFolderPermission**
     
-- **Gruppe-MailboxFolderPermission**
+- **Set-MailboxFolderPermission**
     
 - **Get-MailboxImportRequest**
     
-- **Gruppe-MailboxImportRequest**
+- **Set-MailboxImportRequest**
     
 - **Get-MailboxRestoreRequest**
     
-- **Gruppe-MailboxRestoreRequest**
+- **Set-MailboxRestoreRequest**
     
 - **Get-MailboxSearch**
     
 - **Remove-MailboxSearch**
     
-- **Gruppe-MailboxSearch**
+- **Set-MailboxSearch**
     
 - **Start-MailboxSearch**
     
 - **Stop-MailboxSearch**
     
-- **Deaktivieren-MailPublicFolder**
+- **Disable-MailPublicFolder**
     
 - **Get-MailPublicFolder**
     
@@ -635,7 +635,7 @@ Die Eingabe-oder Ausgabetypen für die folgenden Cmdlets wurden in Exchange 2013
     
 - **New-MigrationBatch**
     
-- **Gruppe-MigrationBatch**
+- **Set-MigrationBatch**
     
 - **Test-MigrationServerAvailability**
     
@@ -649,7 +649,7 @@ Die Eingabe-oder Ausgabetypen für die folgenden Cmdlets wurden in Exchange 2013
     
 - **Test-OutlookConnectivity**
     
-- **Test-OutlookWeb Services**
+- **Test-OutlookWebServices**
     
 - **Get-OwaMailboxPolicy**
     
@@ -661,7 +661,7 @@ Die Eingabe-oder Ausgabetypen für die folgenden Cmdlets wurden in Exchange 2013
     
 - **New-PublicFolder**
     
-- **Gruppe-PublicFolder**
+- **Set-PublicFolder**
     
 - **Add-PublicFolderClientPermission**
     
@@ -675,20 +675,20 @@ Die Eingabe-oder Ausgabetypen für die folgenden Cmdlets wurden in Exchange 2013
     
 - **Get-Recipient**
     
-- **Gruppe-ResourceConfig**
+- **Set-ResourceConfig**
     
 - **Test-WebServicesConnectivity**
     
 - **New-WebServicesVirtualDirectory**
     
-### <a name="removed-cmdlets"></a>Entfernte Cmdlets
+### <a name="removed-cmdlets"></a>Cmdlets entfernt
 <a name="bk_removed"> </a>
 
 Die folgenden Cmdlets wurden aus Exchange 2013 entfernt:
   
 - **Update-FileDistributionService**
     
-- **Restore – Postfach**
+- **Restore-Mailbox**
     
 - **Clean-MailboxDatabase**
     
@@ -708,7 +708,7 @@ Die folgenden Cmdlets wurden aus Exchange 2013 entfernt:
     
 - **Remove-PublicFolderDatabase**
     
-- **Gruppe-PublicFolderDatabase**
+- **Set-PublicFolderDatabase**
     
 - **New-PublicFolderDatabaseRepairRequest**
     
@@ -728,12 +728,12 @@ Die folgenden Cmdlets wurden aus Exchange 2013 entfernt:
     
 - **Get-UMServer**
     
-- **Gruppe-UMServer**
+- **Set-UMServer**
     
 ## <a name="see-also"></a>Siehe auch
 
 - [Eingabe- und Ausgabetypen für Cmdlets der Exchange-Verwaltungsshell](exchange-management-shell-cmdlet-input-and-output-types.md)    
-- [Abrufen einer Liste von e-Mail-Benutzern mithilfe der Exchange-Verwaltungsshell](how-to-get-a-list-of-mail-users-by-using-the-exchange-management-shell.md)    
+- [Abrufen einer Liste von E-Mail-Benutzern mithilfe der Exchange-Verwaltungsshell](how-to-get-a-list-of-mail-users-by-using-the-exchange-management-shell.md)    
 - [Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413%28v=exchg.150%29.aspx)
     
 

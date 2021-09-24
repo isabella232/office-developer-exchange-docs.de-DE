@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 0e9fa6b6-7991-4dc1-a59a-48e5f8e041e4
-description: Das RedirectAddr-Element gibt die e-Mail-Adresse an, die für eine nachfolgende Auto Ermittlungsanforderung verwendet werden soll.
-ms.openlocfilehash: 6bff28001851f421b4c7429770185401f2f0a743
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das RedirectAddr-Element gibt die E-Mail-Adresse an, die für eine nachfolgende AutoErmittlungsanforderung verwendet werden soll.
+ms.openlocfilehash: 75db62a84ccce743e73c812082ab9dbbc4fdb1cd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529875"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540594"
 ---
 # <a name="redirectaddr-pox"></a>RedirectAddr (POX)
 
-Das **RedirectAddr** -Element gibt die e-Mail-Adresse an, die für eine nachfolgende Auto Ermittlungsanforderung verwendet werden soll. 
+Das **RedirectAddr-Element** gibt die E-Mail-Adresse an, die für eine nachfolgende AutoErmittlungsanforderung verwendet werden soll. 
   
 [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -48,15 +48,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Konto (POX)](account-pox.md) <br/> |Gibt Kontoeinstellungen für den Benutzer an.  <br/> |
+|[Konto (POX)](account-pox.md) <br/> |Gibt die Kontoeinstellungen für den Benutzer an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt die e-Mail-Adresse dar, die für eine nachfolgende Auto Ermittlungsanforderung verwendet werden sollte.
+Der Textwert stellt die E-Mail-Adresse dar, die für eine nachfolgende AutoErmittlungsanforderung verwendet werden soll.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn dieses Element in der Auto Ermittlungs Antwort vorhanden ist, stellen Sie eine weitere Anforderung mithilfe des Textwerts des **RedirectAddr** -Elements. 
+Wenn dieses Element in der AutoErmittlungsantwort vorhanden ist, stellen Sie eine weitere Anforderung mithilfe des Textwerts des **RedirectAddr-Elements.** 
   
 ## <a name="see-also"></a>Siehe auch
 

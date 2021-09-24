@@ -1,27 +1,27 @@
 ---
-title: Name (e-mailemail)
+title: Name (EmailAddress)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Name
 api_type:
 - schema
 ms.assetid: c719c55f-d625-4e64-846f-50ac91881443
 description: Das Name-Element stellt den Anzeigenamen des Postfachbenutzers dar.
-ms.openlocfilehash: 2c6b29f1b069f9cc72ac84e7aebfff99437e630a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d62dc16beadd97aaa7b27db7d524507d14cef7bf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466955"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539297"
 ---
-# <a name="name-emailaddress"></a>Name (e-mailemail)
+# <a name="name-emailaddress"></a>Name (EmailAddress)
 
-Das **Name** -Element stellt den Anzeigenamen des Postfachbenutzers dar. 
+Das **Name-Element** stellt den Anzeigenamen des Postfachbenutzers dar. 
   
 ```xml
 <Name/>
@@ -45,16 +45,16 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[E-Mail (e-Mail-Adresse)](email-emailaddresstype.md) <br/> |Stellt den Postfachbenutzer für eine GetUserAvailability-Abfrage dar.  <br/> <br/>Es folgt der XPath für dieses Element:  <br/><br/>  `/GetUserAvailabilityRequest/MailboxDataArray/MailboxData[i]/Email` <br/> |
-|[Postfach (Verfügbarkeit)](mailbox-availability.md) <br/> | Stellt den Postfachbenutzer für eine SetUserOofSettings-oder GetUserOofSettings-Anforderung dar.  <br/><br/>  Folgende XPath-Ausdrücke werden für dieses Element verwendet:  <br/><br/>  `/GetUserOofSettingsRequest/Mailbox` <br/><br/>  `/SetUserOofSettingsRequest/Mailbox` <br/> |
+|[E-Mail (EmailAddressType)](email-emailaddresstype.md) <br/> |Stellt den Postfachbenutzer für eine GetUserAvailability-Abfrage dar.  <br/> <br/>Es folgt der XPath für dieses Element:  <br/><br/>  `/GetUserAvailabilityRequest/MailboxDataArray/MailboxData[i]/Email` <br/> |
+|[Postfach (Verfügbarkeit)](mailbox-availability.md) <br/> | Stellt den Postfachbenutzer für eine SetUserOofSettings- oder GetUserOofSettings-Anforderung dar.  <br/><br/>  Folgende XPath-Ausdrücke werden für dieses Element verwendet:  <br/><br/>  `/GetUserOofSettingsRequest/Mailbox` <br/><br/>  `/SetUserOofSettingsRequest/Mailbox` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Wenn dieses Element verwendet wird, ist ein Textwert erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element kann höchstens einmal im [e-Mail-Element (Epost (Email Type))](email-emailaddresstype.md) vorkommen. Dieses Element ist nicht erforderlich. 
+Dieses Element kann höchstens einmal im [Email -Element (EmailAddressType)](email-emailaddresstype.md) auftreten. Dieses Element ist nicht erforderlich. 
   
 > [!NOTE]
 > Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt. 
@@ -72,5 +72,5 @@ Dieses Element kann höchstens einmal im [e-Mail-Element (Epost (Email Type))](e
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
-- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

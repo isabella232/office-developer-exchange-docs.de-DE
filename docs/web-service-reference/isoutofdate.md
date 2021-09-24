@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsOutOfDate
 api_type:
 - schema
 ms.assetid: 2b6005a6-56a9-4848-b998-32908c13e2e2
-description: Das IsOutOfDate-Element gibt an, ob eine Besprechungsnachricht, eine Anforderung, eine Antwort oder eine Absage veraltet ist.
-ms.openlocfilehash: b50b021e48789ba63016582450404b5da3ff86e1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IsOutOfDate-Element gibt an, ob eine Besprechungsnachricht, -anforderung, -antwort oder -stornierung veraltet ist.
+ms.openlocfilehash: 935055d12f96407a3e58a4f8d196187fece5d070
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466549"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514487"
 ---
 # <a name="isoutofdate"></a>IsOutOfDate
 
-Das **IsOutOfDate** -Element gibt an, ob eine Besprechungsnachricht, eine Anforderung, eine Antwort oder eine Absage veraltet ist. 
+Das **IsOutOfDate-Element** gibt an, ob eine Besprechungsnachricht, -anforderung, -antwort oder -stornierung veraltet ist. 
   
 ```xml
 <IsOutOfDate/>
@@ -51,9 +51,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass das Besprechungselement veraltet ist. 
+Der Textwert **"true"** gibt an, dass das Besprechungselement veraltet ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

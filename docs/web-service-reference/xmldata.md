@@ -1,27 +1,27 @@
 ---
-title: XMLDATA
+title: XmlData
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - XmlData
 api_type:
 - schema
 ms.assetid: e47f1d32-3ee3-4a1d-b7f9-80973ed57bd4
-description: Das XMLDATA-Element enthält XML-Daten Eigenschafts Inhalt für ein Benutzer Konfigurationsobjekt.
-ms.openlocfilehash: 2fb3e2ccbb6e9ccc409a5d0cfdd895b2a63214ff
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das XmlData-Element enthält XML-Dateneigenschaftsinhalte für ein Benutzerkonfigurationsobjekt.
+ms.openlocfilehash: daf1ad74b816187c89436187bbb8311e31784a13
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457018"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513885"
 ---
-# <a name="xmldata"></a>XMLDATA
+# <a name="xmldata"></a>XmlData
 
-Das **XMLDATA** -Element enthält XML-Daten Eigenschafts Inhalt für ein Benutzer Konfigurationsobjekt. 
+Das **XmlData-Element** enthält XML-Dateneigenschaftsinhalte für ein Benutzerkonfigurationsobjekt. 
   
 ```XML
 <XmlData/>
@@ -45,13 +45,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserConfiguration](userconfiguration.md) <br/> |Definiert ein einzelnes Benutzer Konfigurationsobjekt.  <br/> |
+|[UserConfiguration](userconfiguration.md) <br/> |Definiert ein einzelnes Benutzerkonfigurationsobjekt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

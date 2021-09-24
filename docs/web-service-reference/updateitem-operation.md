@@ -5,50 +5,50 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateItem
 api_type:
 - schema
 ms.assetid: 5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4
-description: Der UpdateItem-Vorgang wird verwendet, um die Eigenschaften eines vorhandenen Elements in der Exchange-Informationsspeicher zu ändern.
-ms.openlocfilehash: c001b7656862144023e9704cb04e6b4c0030f9df
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der UpdateItem-Vorgang wird verwendet, um die Eigenschaften eines vorhandenen Elements im Exchange Speicher zu ändern.
+ms.openlocfilehash: 6ac09c24c13efff8053fc605ec2c0e6cf2957429
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459391"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514060"
 ---
 # <a name="updateitem-operation"></a>UpdateItem-Vorgang
 
-Der **UpdateItem** -Vorgang wird verwendet, um die Eigenschaften eines vorhandenen Elements in der Exchange-Informationsspeicher zu ändern. 
+Der **UpdateItem-Vorgang** wird verwendet, um die Eigenschaften eines vorhandenen Elements im Exchange Speicher zu ändern. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Sie können drei grundlegende Updateaktionen für ein Element durchführen. In der folgenden Tabelle sind die Aktionen aufgeführt, die Sie ausführen können.
+Sie können drei grundlegende Aktualisierungsaktionen für ein Element ausführen. In der folgenden Tabelle sind die Aktionen aufgeführt, die Sie ausführen können.
   
 |**Aktion**|**Beschreibung**|
 |:-----|:-----|
-|Append  <br/> |Fügt einer vorhandenen Eigenschaft Daten hinzu. Mit dieser Aktion werden die aktuellen Daten beibehalten. Append gilt nicht für alle Eigenschaften.  <br/> |
-|Satz  <br/> |Ersetzt Daten für eine Eigenschaft, wenn die Eigenschaft Daten enthält, oder erstellt die Eigenschaft und legt den Wert fest, wenn die Eigenschaft nicht vorhanden ist. Die Aktion festlegen gilt nur für schreibbare Eigenschaften.  <br/> |
-|Löschen  <br/> |Entfernt eine Eigenschaft aus einem Element. Dies unterscheidet sich vom Festlegen einer Eigenschaft auf einen leeren Wert. Wenn diese Aktion abgeschlossen ist, ist die Eigenschaft für das Element nicht vorhanden. DELETE gilt nur für schreibbare Eigenschaften.  <br/> |
+|Anfügen  <br/> |Fügt einer vorhandenen Eigenschaft Daten hinzu. Diese Aktion behält die aktuellen Daten bei. Append gilt nicht für alle Eigenschaften.  <br/> |
+|Satz  <br/> |Ersetzt Daten für eine Eigenschaft, wenn die Eigenschaft Daten enthält, oder erstellt die Eigenschaft und legt ihren Wert fest, wenn die Eigenschaft nicht vorhanden ist. Die Set-Aktion gilt nur für schreibbare Eigenschaften.  <br/> |
+|Löschen  <br/> |Entfernt eine Eigenschaft aus einem Element. Dies unterscheidet sich vom Festlegen einer Eigenschaft auf einen leeren Wert. Wenn diese Aktion abgeschlossen ist, ist die Eigenschaft für das Element nicht vorhanden. Das Löschen gilt nur für beschreibbare Eigenschaften.  <br/> |
    
-Ein **UpdateItem** -Aufruf kann verwendet werden, um ein oder mehrere Elemente sowie eine oder mehrere Eigenschaften für jedes Element zu ändern. Das [ItemChanges](itemchanges.md) -Element enthält alle Änderungen, die im Rahmen dieses Aufrufs ausgeführt werden sollen. Das [ItemChange](itemchange.md) -Element, ein untergeordnetes Element des [ItemChanges](itemchanges.md) -Elements, stellt die Änderungen dar, die für ein einzelnes Element ausgeführt werden sollen. Das [ItemChange](itemchange.md) -Element enthält eine Reihe von Updateaktionen, die für ein einzelnes Element ausgeführt werden können. Diese Änderungen sind im Update Element [(Element)](updates-item.md) enthalten. Das Element [ItemID](itemid.md) identifiziert das Element, das aktualisiert werden soll. Wenn Sie mehr als eine Eigenschaft für ein Element aktualisieren möchten, muss für jede Eigenschaft, die das Update erfordert, ein [setitemfield](setitemfield.md), [AppendToItemField](appendtoitemfield.md)oder [DeleteItemField](deleteitemfield.md) angegeben werden. 
+Ein **UpdateItem-Aufruf** kann verwendet werden, um ein oder mehrere Elemente und eine oder mehrere Eigenschaften für jedes Element zu ändern. Das [ItemChanges-Element](itemchanges.md) enthält alle Änderungen, die im Rahmen dieses Aufrufs ausgeführt werden sollen. Das [ItemChange-Element,](itemchange.md) ein untergeordnetes Element des [ItemChanges-Elements,](itemchanges.md) stellt die Änderungen dar, die für ein einzelnes Element ausgeführt werden sollen. Das [ItemChange-Element](itemchange.md) enthält eine Reihe von Aktualisierungsaktionen, die für ein einzelnes Element ausgeführt werden können. Diese Änderungen sind im [Element Updates (Element)](updates-item.md) enthalten. Das [ItemId-Element](itemid.md) identifiziert das zu aktualisierende Element. Um mehrere Eigenschaften für ein Element zu aktualisieren, muss für jede Eigenschaft, die die Aktualisierung erfordert, ein [SetItemField,](setitemfield.md) [AppendToItemField](appendtoitemfield.md)oder [DeleteItemField](deleteitemfield.md) bereitgestellt werden. 
   
 > [!NOTE]
-> Update Aktionen werden in der Reihenfolge angewendet, in der Sie angegeben sind. 
+> Aktualisierungsaktionen werden in der Reihenfolge angewendet, in der sie angegeben sind. 
   
-Für jede Änderung müssen Sie den Pfad der zu ändernden Eigenschaft und eine Darstellung dieses Elements mit dem neuen Wert angeben. Die DELETE-Aktion unterscheidet sich geringfügig dadurch, dass nur der Pfad der zu löschenden Eigenschaft erforderlich ist. Bei Aktionen zum Festlegen und Anfügen muss der angegebene Pfad auf dieselbe Eigenschaft verwiesen werden, die in der Elementdarstellung festgelegt wird. Wenn sich diese unterscheiden, wird ein Fehler zurückgegeben.
+Für jede Änderung müssen Sie den Pfad der zu ändernden Eigenschaft und eine Darstellung dieses Elements mit seinem neuen Wert angeben. Die Löschaktion unterscheidet sich geringfügig dadurch, dass nur der Pfad der Eigenschaft erforderlich ist, die gelöscht werden soll. Bei Set- und Append-Aktionen muss sich der angegebene Pfad auf dieselbe Eigenschaft beziehen, die in der Elementdarstellung festgelegt wird. Wenn sich diese unterscheiden, wird ein Fehler zurückgegeben.
   
-Mit dem **UpdateItem** -Vorgang können die [Start](start.md) -und [Endzeit](end-ex15websvcsotherref.md) eines Exchange-Informationsspeicher Elements festgelegt werden. In einer **UpdateItem** -Anforderung kann die [Startzeit](start.md) festgelegt werden, ohne auch die [Endzeit](end-ex15websvcsotherref.md) festzulegen. Dies kann zu einem Fehler führen, wenn die [Startzeit](start.md) später als die [Endzeit](end-ex15websvcsotherref.md) ist. Beachten Sie, dass Clientanwendungen die [Endzeit](end-ex15websvcsotherref.md) anpassen müssen, wenn die [Startzeit](start.md) geändert wird, um die Dauer beizubehalten. 
+Der **UpdateItem-Vorgang** kann die [Start-](start.md) und [Endzeit](end-ex15websvcsotherref.md) eines Exchange Speicherelements festlegen. In einer **UpdateItem-Anforderung** kann die [Startzeit](start.md) festgelegt werden, ohne auch die [Endzeit](end-ex15websvcsotherref.md) festzulegen. Dies kann einen Fehler verursachen, wenn die [Startzeit](start.md) später als die [Endzeit ](end-ex15websvcsotherref.md) ist. Beachten Sie, dass Clientanwendungen die [Endzeit ](end-ex15websvcsotherref.md) anpassen müssen, wenn die [Startzeit](start.md) geändert wird, um die Dauer beizubehalten. 
   
-Wenn ein einzelnes Kalenderelement als wiederkehrendes Master Kalenderelement aktualisiert wird, muss die [MeetingTimeZone](meetingtimezone.md) -Eigenschaft durch den **UpdateItem** -Vorgang festgelegt werden, um die ursprüngliche Zeitzone des Kalenderelements beizubehalten. 
+Wenn ein einzelnes Kalenderelement aktualisiert wird, um ein wiederkehrendes Masterkalenderelement zu werden, muss die [MeetingTimeZone-Eigenschaft](meetingtimezone.md) durch den **UpdateItem-Vorgang** festgelegt werden, um die ursprüngliche Zeitzone des Kalenderelements beizubehalten. 
   
-## <a name="setitemfield-request-example"></a>Setitemfield-Anforderungs Beispiel
+## <a name="setitemfield-request-example"></a>SetItemField-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **UpdateItem** -Anforderung wird gezeigt, wie die Sensitivity-Eigenschaft für ein Element festgelegt wird. 
+Das folgende Beispiel einer **UpdateItem-Anforderung** zeigt, wie die Vertraulichkeitseigenschaft für ein Element festgelegt wird. 
   
 ### <a name="code"></a>Code
 
@@ -81,9 +81,9 @@ Im folgenden Beispiel einer **UpdateItem** -Anforderung wird gezeigt, wie die Se
 
 ### <a name="comments"></a>Comments
 
-Die Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten.
+Der Elementbezeichner und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten.
   
-### <a name="setitemfield-request-elements"></a>Setitemfield-anforderungselemente
+### <a name="setitemfield-request-elements"></a>SetItemField-Anforderungselemente
 
 In der Anforderung werden folgende Elemente verwendet:
   
@@ -105,11 +105,11 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Sensitivity](sensitivity.md)
     
-## <a name="appendtoitemfield-request-example"></a>AppendToItemField-Anforderungs Beispiel
+## <a name="appendtoitemfield-request-example"></a>AppendToItemField-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **UpdateItem** -Anforderung wird gezeigt, wie Text an die Body-Eigenschaft eines Elements angefügt wird. 
+Das folgende Beispiel einer **UpdateItem-Anforderung** zeigt, wie Text an die Body-Eigenschaft eines Elements angefügt wird. 
   
 ### <a name="code"></a>Code
 
@@ -142,17 +142,17 @@ Im folgenden Beispiel einer **UpdateItem** -Anforderung wird gezeigt, wie Text a
 
 ### <a name="comments"></a>Comments
 
-Die folgenden Eigenschaften unterstützen die Append-Aktion:
+Die folgenden Eigenschaften unterstützen die Anfügeaktion:
   
 - **message:ReplyTo**
     
-- **Element: Body**
+- **item:Body**
     
-- Alle Eigenschaften Recipient und Attendee Collection
+- Alle Empfänger- und Teilnehmersammlungseigenschaften
     
-Die Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten.
+Der Elementbezeichner und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten.
   
-### <a name="appendtoitemfield-request-elements"></a>AppendToItemField-anforderungselemente
+### <a name="appendtoitemfield-request-elements"></a>AppendToItemField-Anforderungselemente
 
 In der Anforderung werden folgende Elemente verwendet:
   
@@ -174,11 +174,11 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [Body](body.md)
     
-## <a name="deleteitemfield-request-example"></a>DeleteItemField-Anforderungs Beispiel
+## <a name="deleteitemfield-request-example"></a>DeleteItemField-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **UpdateItem** -Anforderung wird gezeigt, wie eine Eigenschaft für ein Element gelöscht wird. 
+Das folgende Beispiel einer **UpdateItem-Anforderung** zeigt, wie eine Eigenschaft für ein Element gelöscht wird. 
   
 ### <a name="code"></a>Code
 
@@ -207,9 +207,9 @@ Im folgenden Beispiel einer **UpdateItem** -Anforderung wird gezeigt, wie eine E
 
 ### <a name="comments"></a>Comments
 
-Die Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten.
+Der Elementbezeichner und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten.
   
-### <a name="deleteitemfield-request-elements"></a>DeleteItemField-anforderungselemente
+### <a name="deleteitemfield-request-elements"></a>DeleteItemField-Anforderungselemente
 
 In der Anforderung werden folgende Elemente verwendet:
   
@@ -227,11 +227,11 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [FieldURI](fielduri.md)
     
-## <a name="successful-response-example"></a>Beispiel für eine erfolgreiche Antwort
+## <a name="successful-response-example"></a>Beispiel für erfolgreiche Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **UpdateItem** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **UpdateItem-Anforderung.** 
   
 ### <a name="code"></a>Code
 
@@ -265,7 +265,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **UpdateItem** -A
 
 ### <a name="comments"></a>Comments
 
-Die Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten.
+Der Elementbezeichner und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten.
   
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
@@ -291,7 +291,7 @@ In der Antwort werden folgende Elemente verwendet:
 
 
 
-[UpdateItem-Vorgang (Vorgang)](updateitem-operation-task.md)
+[UpdateItem-Vorgang (Aufgabe)](updateitem-operation-task.md)
   
 [UpdateItem-Vorgang (Kontakt)](updateitem-operation-contact.md)
 

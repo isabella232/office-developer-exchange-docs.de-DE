@@ -1,23 +1,23 @@
 ---
-title: Haltestatus
+title: HoldId
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d2ec9ea4-cc25-48c3-9b35-a479a41b6b48
-description: Das Hold-ID-Element enthält den Postfach-Haltepunktbezeichner.
-ms.openlocfilehash: 09a8fbe7f48f409dd340d8a4d56d7feec451d5e5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das HoldId-Element enthält den Postfacharchivbezeichner.
+ms.openlocfilehash: fdb3f8e05e81713fae2a149f18c5c09668c00e76
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460932"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514627"
 ---
-# <a name="holdid"></a>Haltestatus
+# <a name="holdid"></a>HoldId
 
-Das **Hold** -ID-Element enthält den Postfach-Haltepunktbezeichner. 
+Das **HoldId-Element** enthält die Postfach-Aufbewahrungs-ID. 
   
 ```XML
 <HoldId></HoldId>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des Elements **Hold** -ID ist der eindeutige Bezeichner eines Post Fach Haltestatus. 
+Der Textwert des **HoldId-Elements** ist der eindeutige Bezeichner eines Postfacharchivs. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

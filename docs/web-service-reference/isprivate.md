@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsPrivate
 api_type:
 - schema
 ms.assetid: 1712bc94-9789-4507-8521-bde1be51e331
 description: Das IsPrivate-Element gibt an, ob das Kalenderelement privat ist.
-ms.openlocfilehash: c36c659414700439436cd2ca903e443164c1473b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0b9eb8d7086f951e448e7ee620637b7f39934610
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457802"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539409"
 ---
 # <a name="isprivate"></a>IsPrivate
 
-Das **IsPrivate** -Element gibt an, ob das Kalenderelement privat ist. 
+Das **IsPrivate-Element** gibt an, ob das Kalenderelement privat ist. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -60,15 +60,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CalendarEventDetails](calendareventdetails.md) <br/> |Enthält zusätzliche Informationen zu einem Kalenderereignis.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
+|[CalendarEventDetails](calendareventdetails.md) <br/> |Stellt zusätzliche Informationen zu einem Kalenderereignis bereit.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn dieses Element verwendet wird, werden die anderen Elemente im [CalendarEventDetails](calendareventdetails.md) -Element in der Antwort nicht berücksichtigt. 
+Wenn dieses Element verwendet wird, werden die anderen Elemente im [CalendarEventDetails-Element](calendareventdetails.md) nicht in die Antwort einbezogen. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -90,5 +90,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

@@ -1,32 +1,32 @@
 ---
-title: IsUMEnabled-Vorgang (um-Webdienst)
+title: IsUMEnabled-Vorgang (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsUMEnabled
 api_type:
 - schema
 ms.assetid: fbe6cd95-f7a5-42b9-8a9d-b6159a269d55
 description: Der IsUMEnabled-Vorgang bestimmt, ob ein Postfach für Unified Messaging aktiviert ist.
-ms.openlocfilehash: b1478f5a113059251fe1b036ac7d77e5a4ab4f50
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 2c637711fc34a1d1ccc484b14be3199632aaaaa3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458236"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514459"
 ---
-# <a name="isumenabled-operation-um-web-service"></a>IsUMEnabled-Vorgang (um-Webdienst)
+# <a name="isumenabled-operation-um-web-service"></a>IsUMEnabled-Vorgang (UM-Webdienst)
 
 Der IsUMEnabled-Vorgang bestimmt, ob ein Postfach für Unified Messaging aktiviert ist.
   
-## <a name="isumenabled-request-example"></a>IsUMEnabled-Anforderungs Beispiel
+## <a name="isumenabled-request-example"></a>IsUMEnabled-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer IsUMEnabled-Anforderung wird gezeigt, wie Sie eine Anforderung zum bestimmen, ob ein Postfach für Unified Messaging aktiviert ist, bilden.
+Das folgende Beispiel einer IsUMEnabled-Anforderung zeigt, wie Sie eine Anforderung erstellen, um zu bestimmen, ob ein Postfach für Unified Messaging aktiviert ist.
   
 ### <a name="code"></a>Code
 
@@ -39,7 +39,7 @@ Im folgenden Beispiel einer IsUMEnabled-Anforderung wird gezeigt, wie Sie eine A
 </soap:Envelope>
 ```
 
-## <a name="successful-isumenabled-response-example"></a>Erfolgreiches IsUMEnabled-Antwortbeispiel
+## <a name="successful-isumenabled-response-example"></a>Beispiel für erfolgreiche IsUMEnabled-Antwort
 
 ### <a name="description"></a>Beschreibung
 
@@ -62,10 +62,10 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine IsUMEnabled-Anfor
 
 
 
-[IsUMEnabled (um-Webdienst)](isumenabled-um-web-service.md)
+[IsUMEnabled (UM-Webdienst)](isumenabled-um-web-service.md)
   
-[IsUMEnabledResponse (um-Webdienst)](isumenabledresponse-um-web-service.md)
+[IsUMEnabledResponse (UM-Webdienst)](isumenabledresponse-um-web-service.md)
 
 
-[XML-Elemente des Unified Messaging-Webdiensts für Exchange](unified-messaging-web-service-xml-elements-for-exchange.md)
+[UNIFIED Messaging-Webdienst-XML-Elemente für Exchange](unified-messaging-web-service-xml-elements-for-exchange.md)
 

@@ -5,27 +5,27 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetRooms
 api_type:
 - schema
 ms.assetid: 5501ddc0-3bfa-4da6-8e15-4223ca5499a3
-description: Der getrooms-Vorgang ruft die Räume in der angegebenen Raumliste ab.
-ms.openlocfilehash: 4cb124b96637b9fcdca15595faebb2ce4d304de0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetRooms-Vorgang ruft die Räume in der angegebenen Raumliste ab.
+ms.openlocfilehash: dc5cf71ed0731d2674ecead1153447090b43bd9a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460547"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539914"
 ---
 # <a name="getrooms-operation"></a>GetRooms-Vorgang
 
-Der **getrooms** -Vorgang ruft die Räume in der angegebenen Raumliste ab. 
+Der **GetRooms-Vorgang** ruft die Räume in der angegebenen Raumliste ab. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der **getrooms** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
+Der **GetRooms-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben sind. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -34,11 +34,11 @@ Der **getrooms** -Vorgang kann die SOAP-Header verwenden, die in der folgenden T
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="getrooms-request-example"></a>Getrooms-Anforderungs Beispiel
+## <a name="getrooms-request-example"></a>GetRooms-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Nachfolgend sehen Sie ein Beispiel für eine **getrooms** -Anforderung, die die Räume abruft, die einer Raumliste zugeordnet sind. 
+Es folgt ein Beispiel für eine **GetRooms-Anforderung,** die die Räume abruft, die einer Raumliste zugeordnet sind. 
   
 ### <a name="code"></a>Code
 
@@ -73,11 +73,11 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
-## <a name="successful-getrooms-response-example"></a>Erfolgreiches getrooms-Antwortbeispiel
+## <a name="successful-getrooms-response-example"></a>Beispiel für erfolgreiche GetRooms-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Die folgende Antwort zeigt die e-Mail-Adressinformationen für die Räume, die der Raumliste zugeordnet sind.
+Die folgende Antwort zeigt die E-Mail-Adressinformationen für die Räume, die der Raumliste zugeordnet sind.
   
 ### <a name="code"></a>Code
 
@@ -113,7 +113,7 @@ Die folgende Antwort zeigt die e-Mail-Adressinformationen für die Räume, die d
 </s:Envelope>
 ```
 
-### <a name="successful-getrooms-response-elements"></a>Erfolgreiche getrooms-Antwortelemente
+### <a name="successful-getrooms-response-elements"></a>Erfolgreiche GetRooms-Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -123,11 +123,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Chatrooms](rooms.md)
+- [Räume](rooms.md)
     
 - [Raum](room.md)
     
-- [Name (e-mailemail)](name-emailaddress.md)
+- [Name (EmailAddress)](name-emailaddress.md)
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
@@ -135,11 +135,11 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [MailboxType](mailboxtype.md)
     
-## <a name="getrooms-error-response-example"></a>Getrooms-Fehlerantwort Beispiel
+## <a name="getrooms-error-response-example"></a>GetRooms-Fehlerantwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlermeldung, die durch den Versuch verursacht wurde, Rauminformationen für eine nicht vorhandene Raumliste zu erhalten.
+Das folgende Beispiel zeigt eine Fehlerantwort, die durch den Versuch verursacht wird, Rauminformationen für eine nicht vorhandene Raumliste abzurufen.
   
 ### <a name="code"></a>Code
 
@@ -159,7 +159,7 @@ Das folgende Beispiel zeigt eine Fehlermeldung, die durch den Versuch verursacht
 </s:Envelope>
 ```
 
-### <a name="getrooms-error-response-elements"></a>Getrooms-Fehlerantwort Elemente
+### <a name="getrooms-error-response-elements"></a>GetRooms Error-Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   

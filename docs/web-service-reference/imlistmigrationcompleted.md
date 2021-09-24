@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6eed9502-5d9e-4345-ba23-3582ff487147
-description: Das ImListMigrationCompleted-Element gibt an, ob der Exchange-Informationsspeicher die von Instant Messaging-Clients verwendeten Chat Elemente enthält.
-ms.openlocfilehash: 09f37d6e3663aab7cb98fc922f727ddd604f2acd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ImListMigrationCompleted-Element gibt an, ob der Exchange Speicher die von Chatclients verwendeten Chatelemente enthält.
+ms.openlocfilehash: b55f3d72259897d7bdf46b351421b0148a41b93e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456024"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514613"
 ---
 # <a name="imlistmigrationcompleted"></a>ImListMigrationCompleted
 
-Das **ImListMigrationCompleted** -Element gibt an, ob der Exchange-Informationsspeicher die von Instant Messaging-Clients verwendeten Chat Elemente enthält. 
+Das **ImListMigrationCompleted-Element** gibt an, ob der Exchange Speicher die von Chatclients verwendeten Chatelemente enthält. 
   
 ```XML
 <ImListMigrationCompleted>true | false</ImListMigrationCompleted>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **ImListMigrationCompleted** -Element gibt an, dass der Instant Messaging-Kontaktspeicher zu der Exchange-Informationsspeicher migriert wurde. Der Wert **false** gibt an, dass der Kontaktspeicher für Sofortnachrichten nicht migriert wurde. 
+Der Textwert **"true"** für das **ImListMigrationCompleted-Element** gibt an, dass der Chatkontaktspeicher in den Exchange Speicher migriert wurde. Der Wert **"false"** gibt an, dass der Chatnachrichtenkontaktspeicher nicht migriert wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

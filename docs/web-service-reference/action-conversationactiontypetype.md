@@ -1,35 +1,35 @@
 ---
-title: Action (ConversationActionTypeType)
+title: Aktion (ConversationActionTypeType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Action
 api_type:
 - schema
 ms.assetid: 8bbc12f2-76c5-4fda-828f-56b2086a0454
-description: Das Action-Element enthält die Aktion, die für die durch das Conversation-Element angegebene Konversation ausgeführt werden soll.
-ms.openlocfilehash: f97b04b98cdc29bee9aff5fa1fc6f37400b8314c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Action-Element enthält die Aktion, die für die vom ConversationId-Element angegebene Unterhaltung ausgeführt werden soll.
+ms.openlocfilehash: e75d9d5df75894d1de9831b0022269e7ace4fa63
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527544"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514893"
 ---
-# <a name="action-conversationactiontypetype"></a>Action (ConversationActionTypeType)
+# <a name="action-conversationactiontypetype"></a>Aktion (ConversationActionTypeType)
 
-Das **Action** -Element enthält die Aktion, die für die durch das [Conversation](conversationid.md) -Element angegebene Konversation ausgeführt werden soll. 
+Das Action-Element enthält die Aktion, die für die vom [ConversationId-Element](conversationid.md) angegebene Unterhaltung ausgeführt werden soll.  
   
 - [ApplyConversationAction](applyconversationaction.md)
   
 - [ConversationActions](conversationactions.md)
   
-- [Unterhaltung](conversationaction.md)
+- [ConversationAction](conversationaction.md)
   
-- [Action (ConversationActionTypeType)](action-conversationactiontypetype.md)
+- [Aktion (ConversationActionTypeType)](action-conversationactiontypetype.md)
   
 ```XML
 <Action> AlwaysCategorize | AlwaysDelete | AlwaysMove | Delete | Move | Copy | SetReadState </Action>
@@ -52,29 +52,29 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Unterhaltung](conversationaction.md) <br/> |Enthält eine einzelne Aktion, die auf eine einzelne Unterhaltung angewendet werden soll.  <br/> |
+|[ConversationAction](conversationaction.md) <br/> |Enthält eine einzelne Aktion, die auf eine einzelne Unterhaltung angewendet werden soll.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Action** -Elements gibt an, welche Aktion für eine Unterhaltung ausgeführt wird. Im folgenden sind die möglichen Text Werte und die entsprechenden Aktionen: 
+Der Textwert des **Action-Elements** gibt an, welche Aktion für eine Unterhaltung ausgeführt wird. Es folgen die möglichen Textwerte und die entsprechenden Aktionen: 
   
-- **AlwaysCategorize** – die aktuellen Elemente und neuen Elemente in der Unterhaltung werden automatisch mit den Kategorien festgelegt, die im [Categories](categories-ex15websvcsotherref.md) -Element angegeben sind. 
+- **AlwaysCategorize** – Die aktuellen und neuen Elemente in der Unterhaltung werden automatisch mit den Kategorien festgelegt, die im [Categories-Element](categories-ex15websvcsotherref.md) identifiziert werden. 
     
-- **Alwaysdeleteolalwaysdelete** – die aktuellen Elemente und neuen Elemente in der Unterhaltung werden automatisch gelöscht. Der Löschmodus wird durch das [deleteType](deletetype.md) -Element festgelegt. 
+- **AlwaysDelete** – Die aktuellen und neuen Elemente in der Unterhaltung werden automatisch gelöscht. Der Löschmodus wird durch das [DeleteType-Element](deletetype.md) festgelegt. 
     
-- **AlwaysMove** – die aktuellen Elemente und neuen Elemente in der Unterhaltung werden automatisch in den Ordner verschoben, der durch das [DestinationFolderId](destinationfolderid.md) -Element identifiziert wird. 
+- **AlwaysMove** – Die aktuellen und neuen Elemente in der Unterhaltung werden automatisch in den Ordner verschoben, der vom [DestinationFolderId-Element](destinationfolderid.md) identifiziert wird. 
     
-- **Delete** – die aktuellen Elemente in der Unterhaltung werden gelöscht. Nachfolgende Elemente in der Unterhaltung werden nicht gelöscht. Der Löschmodus wird durch das [deleteType](deletetype.md) -Element festgelegt. 
+- **Löschen** – Die aktuellen Elemente in der Unterhaltung werden gelöscht. Nachfolgende Elemente in der Unterhaltung werden nicht gelöscht. Der Löschmodus wird durch das [DeleteType-Element](deletetype.md) festgelegt. 
     
-- **Move** – die aktuellen Elemente in der Unterhaltung werden in den durch das [DestinationFolderId](destinationfolderid.md) -Element identifizierten Ordner verschoben. Nachfolgende Elemente in der Unterhaltung werden nicht verschoben. 
+- **Verschieben** – Die aktuellen Elemente in der Unterhaltung werden in den ordner verschoben, der durch das [DestinationFolderId-Element](destinationfolderid.md) identifiziert wird. Nachfolgende Elemente in der Unterhaltung werden nicht verschoben. 
     
-- **Copy** – die aktuellen Elemente in der Unterhaltung werden in den durch das [DestinationFolderId](destinationfolderid.md) -Element identifizierten Ordner kopiert. Nachfolgende Elemente in der Unterhaltung werden nicht kopiert. 
+- **Kopieren** – Die aktuellen Elemente in der Unterhaltung werden in den ordner kopiert, der durch das [DestinationFolderId-Element](destinationfolderid.md) identifiziert wird. Nachfolgende Elemente in der Unterhaltung werden nicht kopiert. 
     
-- **SetReadState** – für die aktuellen Elemente in der Unterhaltung ist der Lesestatus festgelegt. Der Read-Zustand wird durch das [isread](isread.md) -Element festgelegt. 
+- **SetReadState** : Für die aktuellen Elemente in der Unterhaltung wird der Lesestatus festgelegt. Der Lesestatus wird durch das [IsRead-Element](isread.md) festgelegt. 
     
-- **Flag** – für die aktuellen Elemente in der Unterhaltung wird ein Flag festgelegt, das durch das [Flag](flag.md) -Element definiert ist. 
+- **Flag** – Für die aktuellen Elemente in der Unterhaltung wird ein Kennzeichen festgelegt, wie durch das [Flag-Element](flag.md) definiert. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

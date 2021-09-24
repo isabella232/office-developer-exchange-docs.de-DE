@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bd0c0bce-3e7c-47c7-af7f-5ee5f5ad9820
 description: Das TextBody-Element gibt den Textkörper an.
-ms.openlocfilehash: c0002785fb990a251267218f7a5f232e521db41a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 5dfc0aa76f0b0778d785e46fe12259c4a226b89f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459483"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515180"
 ---
 # <a name="textbody"></a>TextBody
 
-Das **TextBody** -Element gibt den Textkörper an. 
+Das **TextBody-Element** gibt den Textkörper an. 
   
 ```XML
 <TextBody BodyTypeType=" HTML | Text" IsTruncated=" true | false"></TextBody>
@@ -32,8 +32,8 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|BodyTypeType  <br/> |Gibt den Typ des Texts an. Der Wert des **Texts** für das **BodyTypeType** -Attribut gibt an, dass sich der Text im nur-Text-Format befindet. Der Wert von **HTML** für das **BodyTypeType** -Attribut gibt an, dass sich der Text im HTML-Format befindet. Das **BodyTypeType** -Attribut ist erforderlich.  <br/> |
-|IsTruncated  <br/> |Gibt an, dass der Textkörper Inhalt abgeschnitten wurde. Der Textwert **false** für das Attribut **IsTruncated** gibt an, dass der Inhalt des Texts nicht abgeschnitten wurde. Der normalisierte Text wird abgeschnitten, wenn die Textkörper Länge länger ist als der im [MaximumBodySize](maximumbodysize.md) -Element festgelegte Wert.  <br/> |
+|BodyTypeType  <br/> |Gibt den Textkörpertyp an. Der Wert von **Text** für das **BodyTypeType-Attribut** gibt an, dass sich der Textkörper in Nur-Text-Form befindet. Der **HTML-Wert** für das **BodyTypeType-Attribut** gibt an, dass sich der Textkörper im HTML-Format befindet. Das **BodyTypeType-Attribut** ist erforderlich.  <br/> |
+|IsTruncated  <br/> |Gibt an, dass der Textkörperinhalt abgeschnitten wurde. Der Textwert **"false"** für das **IsTruncated-Attribut** gibt an, dass der Textkörperinhalt nicht abgeschnitten wurde. Der normalisierte Textkörper wird abgeschnitten, wenn die Textkörperlänge länger als der im [MaximumBodySize-Element](maximumbodysize.md) festgelegte Wert ist.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -41,13 +41,13 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Element](item.md)  |  [Kontaktinformationen](contact.md)  |  [Nachricht](message-ex15websvcsotherref.md)  |  [Verteilerliste](distributionlist.md)  |  [CalendarItem](calendaritem.md)  |  [PostItem](postitem.md)  |  [Aufgabe](task.md)
+[Element](item.md)  |  [Kontakt](contact.md)  |  [Nachricht](message-ex15websvcsotherref.md)  |  [DistributionList](distributionlist.md)  |  [CalendarItem](calendaritem.md)  |  [PostItem](postitem.md)  |  [Aufgabe](task.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der TextText-Wert des **TextBody** -Elements ist der Textkörper des Elements. 
+Der Textwert des **TextBody-Elements** ist der Textkörper des Elements. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

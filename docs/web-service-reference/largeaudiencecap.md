@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 90709f5b-4a1d-49d2-9236-ecd02bb3cdf8
-description: Das LargeAudienceCap-Element gibt die maximale Anzahl von Empfängern für eine e-Mail-Nachricht an.
-ms.openlocfilehash: 932cac7ac1a62de7066573bbb2db3d0a338b2379
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das LargeAudienceCap-Element gibt die maximale Anzahl von Empfängern für eine E-Mail-Nachricht an.
+ms.openlocfilehash: 71644e297595273a8025c8efd6d685f5da2591df
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460106"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514424"
 ---
 # <a name="largeaudiencecap"></a>LargeAudienceCap
 
-Das **LargeAudienceCap** -Element gibt die maximale Anzahl von Empfängern für eine e-Mail-Nachricht an. 
+Das **LargeAudienceCap-Element** gibt die maximale Anzahl von Empfängern für eine E-Mail-Nachricht an. 
   
 ```XML
 <LargeAudienceCap></LargeAudienceCap>
 ```
 
- **Integer**
+ **Ganzzahl**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **LargeAudienceCap** -Elements ist die maximale Anzahl von Empfängern, die in einer e-Mail-Nachricht adressiert werden können. 
+Der Textwert des **LargeAudienceCap-Elements** ist die maximale Anzahl von Empfängern, die in einer E-Mail-Nachricht adressiert werden können. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

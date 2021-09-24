@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GroupBy
 api_type:
 - schema
 ms.assetid: 9728619b-4674-4b9d-9f6c-e75c6165966c
 description: Das GroupBy-Element gibt eine beliebige Gruppierung für FindItem-Abfragen an.
-ms.openlocfilehash: 0d681e5376e4dd71921cc97f270211e49179db85
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 15e2d818ceae81f08ad0c52d9bdc881f7c3e2579
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530099"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539802"
 ---
 # <a name="groupby"></a>GroupBy
 
-Das **GroupBy** -Element gibt eine beliebige Gruppierung für FindItem-Abfragen an. 
+Das **GroupBy-Element** gibt eine beliebige Gruppierung für FindItem-Abfragen an. 
   
 - [FindItem](finditem.md)
 - [GroupBy](groupby.md)
@@ -47,7 +47,7 @@ Das **GroupBy** -Element gibt eine beliebige Gruppierung für FindItem-Abfragen 
 </GroupBy>
 ```
 
-**Groupbytype**
+**GroupByType**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -64,26 +64,26 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |Aufsteigend  <br/> |Die Gruppen werden in aufsteigender Reihenfolge sortiert.  <br/> |
-|Absteigender  <br/> |Die Gruppen werden in absteigender Reihenfolge sortiert.  <br/> |
+|Absteigend  <br/> |Die Gruppen werden in absteigender Reihenfolge sortiert.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member eines Wörterbuchs.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert erweiterte MAPI-Eigenschaften zum Abrufen, festlegen oder erstellen.  <br/> |
-|[AggregateOn](aggregateon.md) <br/> |Stellt das Feld dar, das verwendet wird, um die Reihenfolge der Gruppen in einer Antwort zu bestimmen.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifies frequently referenced properties by URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Mitglieder eines Wörterbuchs.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert erweiterte MAPI-Eigenschaften, die abgerufen, festgelegt oder erstellt werden sollen.  <br/> |
+|[AggregateOn](aggregateon.md) <br/> |Represents the field that is used to determine the order of groups in a response.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindItem](finditem.md) <br/> |Definiert eine Anforderung zum Suchen von Elementen in einem Postfach.  <br/><br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/FindItem` <br/> |
+|[FindItem](finditem.md) <br/> |Definiert eine Anforderung zum Suchen von Elementen in einem Postfach.  <br/><br/> Es folgt der XPath-Ausdruck für dieses Element:  `/FindItem` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die FindItem-Antwort enthält eine Auflistung von Gruppen. Jede Gruppe enthält alle Elemente mit übereinstimmenden Werten für die **GroupBy** -Eigenschaft. Die Eigenschaft, die die Gruppierung bestimmt, wird im [FieldURI](fielduri.md)-, [IndexedFieldURI](indexedfielduri.md)-oder [ExtendedFieldURI](extendedfielduri.md) -Element identifiziert. 
+Die FindItem-Antwort enthält eine Sammlung von Gruppen. Jede Gruppe enthält alle Elemente mit übereinstimmenden Werten für die **GroupBy-Eigenschaft.** Die Eigenschaft, die die Gruppierung bestimmt, wird im [FieldURI-,](fielduri.md) [IndexedFieldURI-](indexedfielduri.md)oder [ExtendedFieldURI-Element](extendedfielduri.md) identifiziert. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -93,7 +93,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
