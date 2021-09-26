@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 11ebe618-d759-4f16-be99-eaaa817ba782
 description: Das DisableAppResponse-Element gibt die Antwort auf eine DisableApp-Anforderung an.
-ms.openlocfilehash: cc28abf644247339e1226cd0e13824cc5f5669be
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: ee1558dc51a0453b609d595d37a673e9f903ff79
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455646"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545300"
 ---
 # <a name="disableappresponse"></a>DisableAppResponse
 
-Das **DisableAppResponse** -Element gibt die Antwort auf eine **DisableApp** -Anforderung an. 
+Das **DisableAppResponse-Element** gibt die Antwort auf eine **DisableApp-Anforderung** an. 
   
 ```XML
 <DisableAppResponse>
@@ -41,16 +41,16 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MessageText](messagetext.md) <br/> |Enthält eine Textbeschreibung des Status der Antwort.  <br/> |
-|[ResponseCode](responsecode.md) <br/> |Stellt Statusinformationen zur Anforderung bereit.  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Wird derzeit nicht verwendet und für die zukünftige Verwendung reserviert.  <br/> |
-|[Messagexml verwendet](messagexml.md) <br/> |Bietet zusätzliche Fehlerantwortinformationen.  <br/> |
+|[MessageText](messagetext.md) <br/> |Stellt eine Textbeschreibung des Status der Antwort bereit.  <br/> |
+|[ResponseCode](responsecode.md) <br/> |Stellt Statusinformationen zu der Anforderung bereit.  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Derzeit nicht verwendet und für die zukünftige Verwendung reserviert.  <br/> |
+|[MessageXml](messagexml.md) <br/> |Bietet zusätzliche Fehlerantwortinformationen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -62,7 +62,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

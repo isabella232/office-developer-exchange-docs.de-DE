@@ -1,32 +1,32 @@
 ---
-title: PlayOnPhoneGreeting-Vorgang (um-Webdienst)
+title: PlayOnPhoneGreeting-Vorgang (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PlayOnPhoneGreeting
 api_type:
 - schema
 ms.assetid: 6deafc40-290b-4bce-9914-b6bcc529f38a
-description: Der PlayOnPhoneGreeting-Vorgang nimmt einen ausgehenden Anruf vor und gibt eine der beiden Grußnachrichten am Telefon wieder.
-ms.openlocfilehash: 3af120b9ac8d7a368742fad2850c924228488662
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der PlayOnPhoneGreeting-Vorgang führt einen ausgehenden Anruf durch und gibt eine der beiden Begrüßungsnachrichten am Telefon wieder.
+ms.openlocfilehash: 540cd44d35e70e2588446996aec19aeab17f83e9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528895"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543135"
 ---
-# <a name="playonphonegreeting-operation-um-web-service"></a>PlayOnPhoneGreeting-Vorgang (um-Webdienst)
+# <a name="playonphonegreeting-operation-um-web-service"></a>PlayOnPhoneGreeting-Vorgang (UM-Webdienst)
 
-Der PlayOnPhoneGreeting-Vorgang nimmt einen ausgehenden Anruf vor und gibt eine der beiden Grußnachrichten am Telefon wieder.
+Der PlayOnPhoneGreeting-Vorgang führt einen ausgehenden Anruf durch und gibt eine der beiden Begrüßungsnachrichten am Telefon wieder.
   
-## <a name="playonphonegreeting-request-example"></a>PlayOnPhoneGreeting-Anforderungs Beispiel
+## <a name="playonphonegreeting-request-example"></a>PlayOnPhoneGreeting-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer PlayOnPhoneGreeting-Anforderung wird gezeigt, wie Sie eine Anforderung zum Tätigen eines ausgehenden Anrufs und zum Abspielen der normalen Begrüßungsnachricht auf einem Telefon bilden.
+Das folgende Beispiel einer PlayOnPhoneGreeting-Anforderung zeigt, wie Sie eine Anforderung zum Tätigen eines ausgehenden Anrufs und zum Wiedergeben der normalen Begrüßungsnachricht an einem Telefon erstellen.
   
 ### <a name="code"></a>Code
 
@@ -42,11 +42,11 @@ Im folgenden Beispiel einer PlayOnPhoneGreeting-Anforderung wird gezeigt, wie Si
 </soap:Envelope>
 ```
 
-## <a name="successful-playonphonegreeting-response-example"></a>Erfolgreiches PlayOnPhoneGreeting-Antwortbeispiel
+## <a name="successful-playonphonegreeting-response-example"></a>Beispiel für erfolgreiche PlayOnPhoneGreeting-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer PlayOnPhoneGreeting-Antwort wird eine Antwort auf die PlayOnPhoneGreeting-Anforderung angezeigt.
+Das folgende Beispiel einer PlayOnPhoneGreeting-Antwort zeigt eine Antwort auf die PlayOnPhoneGreeting-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -65,11 +65,11 @@ Im folgenden Beispiel einer PlayOnPhoneGreeting-Antwort wird eine Antwort auf di
 
 
 
-[PlayOnPhoneGreeting (um-Webdienst)](playonphonegreeting-um-web-service.md)
+[PlayOnPhoneGreeting (UM-Webdienst)](playonphonegreeting-um-web-service.md)
   
-[PlayOnPhoneGreetingResponse (um-Webdienst)](playonphonegreetingresponse-um-web-service.md)
+[PlayOnPhoneGreetingResponse (UM-Webdienst)](playonphonegreetingresponse-um-web-service.md)
   
-[Greetingtype (um-Webdienst)](greetingtype-um-web-service.md)
+[GreetingType (UM-Webdienst)](greetingtype-um-web-service.md)
   
-[Wähl Dienst (um-Webdienst)](dialstring-um-web-service.md)
+[dialString (UM-Webdienst)](dialstring-um-web-service.md)
 

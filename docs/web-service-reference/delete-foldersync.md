@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Delete
 api_type:
 - schema
 ms.assetid: c4397d91-43ef-40a9-a80e-d31501a33caa
-description: Das delete-Element identifiziert einen einzelnen Ordner, der im lokalen Clientspeicher gelöscht werden soll.
-ms.openlocfilehash: 68f8687b8cf0723d7fd63a3d55da8ef7c2f98f8e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Delete-Element identifiziert einen einzelnen Ordner, der im lokalen Clientspeicher gelöscht werden soll.
+ms.openlocfilehash: bd57c2f093fceda9948d8289fbd55b527bcf10cc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44454981"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542498"
 ---
 # <a name="delete-foldersync"></a>Delete (FolderSync)
 
-Das **Delete** -Element identifiziert einen einzelnen Ordner, der im lokalen Clientspeicher gelöscht werden soll. 
+Das **Delete-Element** identifiziert einen einzelnen Ordner, der im lokalen Clientspeicher gelöscht werden soll. 
   
 - [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)  
 - [ResponseMessages](responsemessages.md)  
@@ -55,11 +55,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Änderungen (Hierarchie)](changes-hierarchy.md) <br/> |Enthält ein sequenziertes Array von Änderungstypen, die die Art der Unterschiede zwischen den Ordnern auf dem Client und den Ordnern auf dem Computer mit Microsoft Exchange Server 2007 darstellen.  <br/> |
+|[Änderungen (Hierarchie)](changes-hierarchy.md) <br/> |Enthält ein sequenziertes Array von Änderungstypen, die den Typ der Unterschiede zwischen den Ordnern auf dem Client und den Ordnern auf dem Computer darstellen, auf dem Microsoft Exchange Server 2007 ausgeführt wird.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Exchange 2007 Computers, auf dem die Client Zugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des computers Exchange 2007, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

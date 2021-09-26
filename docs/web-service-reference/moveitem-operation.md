@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MoveItem
 api_type:
 - schema
 ms.assetid: dcf40fa7-7796-4a5c-bf5b-7a509a18d208
-description: Der MoveItem-Vorgang wird verwendet, um ein oder mehrere Elemente in einen einzelnen Zielordner zu verlagern.
-ms.openlocfilehash: 6a455e483ad2e5c84b91cfaa7562f4f1ec46a112
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der MoveItem-Vorgang wird verwendet, um ein oder mehrere Elemente in einen einzelnen Zielordner zu verschieben.
+ms.openlocfilehash: 2d86d06e522e0d42815971c92e754308224f5e8f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465681"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544850"
 ---
 # <a name="moveitem-operation"></a>MoveItem-Vorgang
 
-Der **MoveItem** -Vorgang wird verwendet, um ein oder mehrere Elemente in einen einzelnen Zielordner zu verlagern. 
+Der **MoveItem-Vorgang** wird verwendet, um ein oder mehrere Elemente in einen einzelnen Zielordner zu verschieben. 
   
-## <a name="moveitem-request-example"></a>MoveItem-Anforderungs Beispiel
+## <a name="moveitem-request-example"></a>MoveItem-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **MoveItem** -Anforderung wird gezeigt, wie ein Element in den Ordner Entwürfe verschiebt wird. 
+Das folgende Beispiel einer **MoveItem-Anforderung** zeigt, wie ein Element in den Ordner "Entwürfe" verschoben wird. 
   
 ### <a name="code"></a>Code
 
@@ -36,10 +36,10 @@ Im folgenden Beispiel einer **MoveItem** -Anforderung wird gezeigt, wie ein Elem
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
+xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <MoveItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
-    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
+    <MoveItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
+    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
       <ToFolderId>
         <t:DistinguishedFolderId Id="drafts"/>
       </ToFolderId>
@@ -53,10 +53,10 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
 
 ### <a name="comments"></a>Comments
 
-Das [tofolder](tofolderid.md) -Element gibt den Ordner an, in den die Elemente verschoben werden. Beachten Sie, dass alle Elemente, die in der [itemids](itemids.md) -Auflistung aufgeführt sind, im Zielordner enden. Sie müssen separate **MoveItem** -Aufrufe ausführen, um Elemente in unterschiedlichen Zielordnern zu platzieren. 
+Das [ToFolderId-Element](tofolderid.md) gibt den Ordner an, in den die Elemente verschoben werden. Beachten Sie, dass alle in der [ItemIds-Auflistung aufgeführten](itemids.md) Elemente im Zielordner enden. Sie müssen separate **MoveItem-Aufrufe** ausführen, um Elemente in verschiedenen Zielordnern zu platzieren. 
   
 > [!NOTE]
-> Die Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Der Elementbezeichner und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -64,7 +64,7 @@ In der Anforderung werden folgende Elemente verwendet:
   
 - [MoveItem](moveitem.md)
     
-- [Tofolder-Datei](tofolderid.md)
+- [ToFolderId](tofolderid.md)
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
@@ -76,9 +76,9 @@ In der Anforderung werden folgende Elemente verwendet:
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **MoveItem** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **MoveItem-Anforderung.** 
   
-Die Element-ID des neuen Elements wird in der Antwortnachricht zurückgegeben. Element-IDs werden nicht in den Antworten für Postfächer-oder Postfach- **MoveItem** -Vorgänge im öffentlichen Ordner zurückgegeben. 
+Der Elementbezeichner des neuen Elements wird in der Antwortnachricht zurückgegeben. Elementbezeichner werden in Antworten für postfachübergreifende oder postfachübergreifende **MoveItem-Vorgänge** für öffentliche Ordner nicht zurückgegeben. 
   
 ### <a name="code"></a>Code
 
@@ -89,12 +89,12 @@ Die Element-ID des neuen Elements wird in der Antwortnachricht zurückgegeben. E
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="662" MinorBuildNumber="0" 
-                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <MoveItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+    <MoveItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:MoveItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -112,7 +112,7 @@ Die Element-ID des neuen Elements wird in der Antwortnachricht zurückgegeben. E
 
 ### <a name="comments"></a>Comments
 
-Der **MoveItem** -Vorgang zeigt den Erfolg an, wenn die Migration erfolgreich war. 
+Der **MoveItem-Vorgang** zeigt an, ob die Verschiebung erfolgreich war. 
   
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
@@ -128,7 +128,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
 ## <a name="see-also"></a>Siehe auch
 

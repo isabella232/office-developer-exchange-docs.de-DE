@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MailboxFull
 api_type:
 - schema
 ms.assetid: 38b28c9b-9da2-4d6a-9cda-9c393986575b
 description: Das MailboxFull-Element gibt an, ob das Postfach für den Empfänger voll ist.
-ms.openlocfilehash: f336f1eda122bb170aafb22a028e3faf84f4d782
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 919f05a69f1436dbc37e27f12e32b5099bd09028
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465975"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544857"
 ---
 # <a name="mailboxfull"></a>MailboxFull
 
-Das **MailboxFull** -Element gibt an, ob das Postfach für den Empfänger voll ist. 
+Das **MailboxFull-Element** gibt an, ob das Postfach für den Empfänger voll ist. 
   
 ```XML
 <MailboxFull>true | false</MailboxFull>
@@ -45,13 +45,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Tipps dar.  <br/> |
+|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Typen von E-Mail-Tipps dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Dieses Element kann entweder **true** oder **false**sein. Der Wert **true** gibt an, dass das Postfach seine Kapazität erreicht hat; der Wert **false** gibt an, dass die Kapazität nicht erreicht wurde. 
+Dieses Element kann entweder **"true"** oder **"false" sein.** Der Wert **"true"** gibt an, dass das Postfach seine Kapazität erreicht hat. Der Wert **"false"** gibt an, dass die Kapazität nicht erreicht wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

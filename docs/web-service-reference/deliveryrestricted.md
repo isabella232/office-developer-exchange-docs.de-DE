@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeliveryRestricted
 api_type:
 - schema
 ms.assetid: 05989915-121c-4f26-93cc-af8d454ab442
-description: Das DeliveryRestricted-Element gibt an, ob zustellungseinschränkungen verhindern, dass die Nachricht des Absenders den Empfänger erreichen kann.
-ms.openlocfilehash: 58fc85873326179d7745db4ba7d4854a76ced6a7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DeliveryRestricted-Element gibt an, ob Übermittlungseinschränkungen verhindern, dass die Nachricht des Absenders den Empfänger erreicht.
+ms.openlocfilehash: 1df5254a284989a8ffc02a8c650eaf69b2214583
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462689"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545363"
 ---
 # <a name="deliveryrestricted"></a>DeliveryRestricted
 
-Das **DeliveryRestricted** -Element gibt an, ob zustellungseinschränkungen verhindern, dass die Nachricht des Absenders den Empfänger erreichen kann. 
+Das **DeliveryRestricted-Element** gibt an, ob Übermittlungseinschränkungen verhindern, dass die Nachricht des Absenders den Empfänger erreicht. 
   
 ```XML
 <DeliveryRestricted>true | false</DeliveryRestricted>
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Arten von e-Mail-Tipps dar.  <br/> |
+|[E-Mail-Info](mailtips.md) <br/> |Stellt Werte für verschiedene Typen von E-Mail-Tipps dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert dieses Elements ist **true** , wenn zustellungseinschränkungen verhindert werden, dass die Nachricht des Absenders den Empfänger erreicht. Der Wert ist **false** , wenn zustellungseinschränkungen nicht verhindern, dass die Nachricht des Absenders den Empfänger erreichen kann. 
+Der Textwert dieses Elements ist **"true",** wenn Übermittlungseinschränkungen verhindern, dass die Nachricht des Absenders den Empfänger erreicht. Der Wert ist **"false",** wenn Übermittlungseinschränkungen nicht verhindern, dass die Nachricht des Absenders den Empfänger erreicht. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

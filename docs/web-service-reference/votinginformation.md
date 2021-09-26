@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 351c8dfe-cf8c-45ba-a07d-d764f8189773
-description: Das VotingInformation-Element gibt Abstimmungsinformationen in einer Abstimmungs Nachricht und einer Genehmigungs Anforderungsnachricht whereApproveandRejectare den Abstimmungsoptionen an.
-ms.openlocfilehash: d946ba8c71d19c8cbb1befbe8c4e43e93590ccae
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das VotingInformation-Element gibt Abstimmungsinformationen zu einer Abstimmungsnachricht und einer Genehmigungsanforderungsnachricht an, wobeiApproveandReject die Abstimmungsoptionen sind.
+ms.openlocfilehash: 7e5aedddbfe97bba935aa56b3583e2fb8b081320
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467746"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543856"
 ---
 # <a name="votinginformation"></a>VotingInformation
 
-Das **VotingInformation** -Element gibt Abstimmungsinformationen in einer Abstimmungs Nachricht und einer Genehmigungs Anforderungsnachricht an, wobei "genehmigen" und "ablehnen" die Abstimmungsoptionen sind. 
+Das **VotingInformation-Element** gibt Abstimmungsinformationen zu einer Abstimmungsnachricht und einer Genehmigungsanforderungsnachricht an, wobei "Genehmigen" und "Ablehnen" die Abstimmungsoptionen sind. 
   
 ```XML
 <VotingInformation
@@ -37,13 +37,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[USEROPTIONS](useroptions.md)  |  [VotingResponse](votingresponse.md)
+[UserOptions](useroptions.md)  |  [VotingResponse](votingresponse.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [Meldung](message-ex15websvcsotherref.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 Service Pack 1 (SP1) eingeführt.
   

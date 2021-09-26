@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PreviousWatermark
 api_type:
 - schema
 ms.assetid: 474f4f7c-47da-47d4-8126-230012172fb5
-description: Das PreviousWatermark-Element stellt das Wasserzeichen des letzten Ereignisses dar, das erfolgreich an den Client für das Abonnement kommuniziert wurde.
-ms.openlocfilehash: 1b26a645a5ec6dbbd2874b118f968866aadc32af
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PreviousDownmark-Element stellt das Wasserzeichen des neuesten Ereignisses dar, das dem Client für das Abonnement erfolgreich mitgeteilt wurde.
+ms.openlocfilehash: c46e18c7a58405fe2149666531cb2af773110816
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461653"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543023"
 ---
 # <a name="previouswatermark"></a>PreviousWatermark
 
-Das **PreviousWatermark** -Element stellt das Wasserzeichen des letzten Ereignisses dar, das erfolgreich an den Client für das Abonnement kommuniziert wurde. 
+Das **PreviousDownmark-Element** stellt das Wasserzeichen des neuesten Ereignisses dar, das dem Client für das Abonnement erfolgreich mitgeteilt wurde. 
   
 ```xml
 <PreviousWatermark/>
 ```
 
- **Watermarktype**
+ **WatermarkType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -48,15 +48,15 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der Wert Text stellt das neueste Wasserzeichen dar. Der Textwert darf keine leere Zeichenfolge sein.
+Ein Textwert ist erforderlich. Der Textwert stellt das neueste Wasserzeichen dar. Der Textwert darf keine leere Zeichenfolge sein.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **PreviousWatermark** -Eigenschaft ist hilfreich für den Client beim Bestimmen der letzten erfolgreichen Benachrichtigung. Wenn ein Abonnement beispielsweise drei Ereignisse mit Wasserzeichen 1, 2 und 3 aufweist und die nächste Benachrichtigung mit dem **PreviousWatermark** -Wert 3 gesendet wird, kann der Client diesen Wert mit dem Wasserzeichen Wert der letzten empfangenen Benachrichtigung vergleichen. Auf diese Weise kann der Client die Kontinuität von Ereignissen sicherstellen. 
+Die **PreviousColormark-Eigenschaft** ist für den Client nützlich, um die letzte erfolgreiche Benachrichtigung zu bestimmen. Wenn ein Abonnement beispielsweise drei Ereignisse mit den Wasserzeichen 1, 2 und 3 aufweist und die nächste Benachrichtigung mit dem **Wert "Previous Bytesmark"** von 3 gesendet wird, kann der Client diesen Wert mit dem Wasserzeichenwert der letzten empfangenen Benachrichtigung vergleichen. Dadurch kann der Client die Kontinuität von Ereignissen sicherstellen. 
   
-Bei Push-Clients wird das **PreviousWatermark** mit dem lokalen, clientseitigen letzten bekannten Wasserzeichen verglichen. Wenn die Werte unterschiedlich sind, hat der Client eine Ereignisbenachrichtigung verpasst und sollte ein Abonnement mit dem neuesten lokalen Wasserzeichen wiederherstellen. Wenn beispielsweise ein Push-Client drei Ereignisse für ein Abonnement mit Wasserzeichen 1, 2 und 3 erhält und die nächste Benachrichtigung mit einem **PreviousWatermark** -Wert von 5 geliefert wird, hat der Client mindestens eine Benachrichtigung verpasst und sollte ein neues Abonnement erstellen, wobei ein 3 als Wasserzeichen übergeben wird. 
+Bei Pushclients wird **previous Ausweichmark** mit dem lokalen, clientseitigen letzten bekannten Wasserzeichen verglichen. Wenn die Werte unterschiedlich sind, hat der Client eine Ereignisbenachrichtigung verpasst und sollte ein Abonnement mithilfe des neuesten lokalen Wasserzeichens wiederherstellen. Wenn ein Pushclient z. B. drei Ereignisse für ein Abonnement mit den Wasserzeichen 1, 2 und 3 empfängt und die nächste Benachrichtigung den **Wert "PreviousNotmark"** von 5 aufweist, hat der Client mindestens eine Benachrichtigung verpasst und sollte ein neues Abonnement erstellen, wobei eine 3 als Wasserzeichen übergeben wird. 
   
-Im Fall eines Pull-Clients ist der Wert von **PreviousWatermark** identisch mit dem [Wasserzeichen](watermark.md) , das vom Client im GetEvents-Aufruf enthalten ist. 
+Im Fall eines Pullclients ist der Wert von **Previous Auswert** identisch mit dem [Wasserzeichen,](watermark.md) das vom Client im GetEvents-Aufruf enthalten ist. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

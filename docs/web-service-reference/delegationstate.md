@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DelegationState
 api_type:
 - schema
 ms.assetid: 9dbb83ed-1ded-48f3-8e06-2489fc8b28d5
-description: Das DelegationState-Element stellt den Status einer Delegierten Aufgabe dar.
-ms.openlocfilehash: b938b5a2240283c265006dd47cd6ff475ad80978
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DelegationState-Element stellt den Status einer delegierten Aufgabe dar.
+ms.openlocfilehash: 218e96b73c1681bd9bb2fd964a735b62b9e2a94b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457368"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542505"
 ---
 # <a name="delegationstate"></a>DelegationState
 
-Das **DelegationState** -Element stellt den Status einer Delegierten Aufgabe dar. 
+Das **DelegationState-Element** stellt den Status einer delegierten Aufgabe dar. 
   
 ```xml
 <DelegationState/>
@@ -55,7 +55,7 @@ Dies ist eine schreibgeschützte Eigenschaft. Im Folgenden sind die möglichen W
     
 - OwnNew
     
-- Im Besitz
+- Im besitz
     
 - Akzeptiert
     
@@ -63,11 +63,11 @@ Dies ist eine schreibgeschützte Eigenschaft. Im Folgenden sind die möglichen W
     
 - Max
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Exchange Webdienste in Microsoft Exchange Server 2007 unterstützt keine Vorgangszuordnungen.
+Exchange Webdienste in Microsoft Exchange Server 2007 unterstützen keine Aufgabenzuweisungen.
   
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange 2007 ausgeführt wird, auf dem die Client Zugriffs-Serverrolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange 2007 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

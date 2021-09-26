@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AggregateOn
 api_type:
 - schema
 ms.assetid: 9b0a03f2-3282-46e1-b1a0-cbb9a0fbe9bb
-description: Das AggregateOn-Element stellt die Eigenschaft dar, die verwendet wird, um die Reihenfolge von gruppierten Elementen für ein gruppiertes FindItem-Resultset festzulegen.
-ms.openlocfilehash: 04359c187ef11538d64f8f0d3ea2fe84bc3d048b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AggregateOn-Element stellt die Eigenschaft dar, die verwendet wird, um die Reihenfolge gruppierter Elemente für ein gruppiertes FindItem-Resultset zu bestimmen.
+ms.openlocfilehash: 4fa46837cc794bc6c4b23a6b5627d95509d60d70
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463566"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541553"
 ---
 # <a name="aggregateon"></a>AggregateOn
 
-Das **AggregateOn** -Element stellt die Eigenschaft dar, die verwendet wird, um die Reihenfolge von gruppierten Elementen für ein gruppiertes FindItem-Resultset festzulegen. 
+Das **AggregateOn-Element** stellt die Eigenschaft dar, die verwendet wird, um die Reihenfolge gruppierter Elemente für ein gruppiertes FindItem-Resultset zu bestimmen. 
   
 - [FindItem](finditem.md)  
 - [GroupBy](groupby.md)
@@ -55,39 +55,39 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Aggregate** <br/> | Gibt den maximalen oder minimalen Wert der Eigenschaft an, die durch das [FieldURI](fielduri.md) -Element identifiziert wird, das für die Sortierung der Gruppen von Elementen verwendet wird.<br/><br/>Im Folgenden sind die möglichen Werte aufgeführt:  <br/><br/>-Minimum  <br/>-Maximum  <br/> |
+|**Aggregate** <br/> | Gibt den Maximal- oder Minimalwert der Eigenschaft an, die durch das [FieldURI-Element](fielduri.md) identifiziert wird, das zum Sortieren der Elementgruppen verwendet wird.<br/><br/>Im Folgenden sind die möglichen Werte aufgeführt:  <br/><br/>- Minimum  <br/>- Maximum  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member eines Wörterbuchs.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert erweiterte MAPI-Eigenschaften zum Abrufen, festlegen oder erstellen.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifies frequently referenced properties by URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Mitglieder eines Wörterbuchs.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert erweiterte MAPI-Eigenschaften, die abgerufen, festgelegt oder erstellt werden sollen.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GroupBy](groupby.md) <br/> |Gibt willkürliche Gruppierungen für FindItem-Abfragen an.  <br/> Im folgenden finden Sie den XPath-Ausdruck für dieses Element:`/FindItem/GroupBy` <br/> |
+|[GroupBy](groupby.md) <br/> |Gibt beliebige Gruppierungen für FindItem-Abfragen an.  <br/> Es folgt der XPath-Ausdruck für dieses Element:  `/FindItem/GroupBy` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der [FindItem-Vorgang](finditem-operation.md) kann gruppierte Ergebnisse zurückgeben. In gruppierten Ergebnissen werden alle Elemente, die den gleichen Wert für eine bestimmte Gruppierungseigenschaft aufweisen, zusammen gesammelt und als untergeordnete Elemente dieser Gruppe dargestellt. Wenn Sie beispielsweise nach Absender gruppieren, werden alle e-Mails abhängig davon, ob Sie von Absender a, Absender B und so weiter sind, in separaten Gruppen organisiert. Diese Gruppen sind untergeordnete Elemente der Absendergruppe. 
+Der [FindItem-Vorgang](finditem-operation.md) kann gruppierte Ergebnisse zurückgeben. Innerhalb gruppierter Ergebnisse werden alle Elemente, die denselben Wert für eine bestimmte Gruppierungseigenschaft haben, gesammelt und als untergeordnete Elemente dieser Gruppe dargestellt. Wenn Sie z. B. nach Absender gruppieren, werden alle E-Mails in separate Gruppen unterteilt, je nachdem, ob sie von Absender A, Absender B usw. stammen. Diese Gruppen sind untergeordnete Elemente der Absendergruppe. 
   
-Jede der Gruppen innerhalb der Absendergruppe enthält eine Sammlung von Elementen, beispielsweise die tatsächlichen e-Mails, die von jedem Absender stammen. Sie können das Sortier [Reihenfolge](sortorder.md) -Element verwenden, um die Elemente innerhalb einer Gruppe zu sortieren. Um die Gruppen basierend auf den Eigenschaftswerten eines Elements zu sortieren, müssen Sie jedoch Aggregation verwenden. 
+Jede der Gruppen innerhalb der Absendergruppe enthält eine Sammlung von Elementen, z. B. die tatsächlichen E-Mails, die von jedem Absender stammen. Sie können das [SortOrder-Element](sortorder.md) verwenden, um die Elemente innerhalb einer Gruppe zu sortieren. Um die Gruppen basierend auf den Eigenschaftswerten eines Elements zu sortieren, müssen Sie jedoch aggregation verwenden. 
   
-Bei Aggregation basiert die Reihenfolge der Gruppen auf einer bestimmten Eigenschaft der Elemente in der Gruppe. Wenn Sie mithilfe von Aggregation Elemente innerhalb einer Gruppe Sortieren, müssen Sie eine repräsentative Eigenschaft angeben, nach der die Gruppen sortiert werden sollen. Sie können das **AggregateOn** -Element verwenden, um die Representative-Eigenschaft anzugeben. 
+Bei der Aggregation basiert die Reihenfolge der Gruppen auf einer bestimmten Eigenschaft der Elemente innerhalb der Gruppe. Wenn Sie aggregation zum Sortieren von Elementen innerhalb einer Gruppe verwenden, müssen Sie eine repräsentative Eigenschaft identifizieren, nach der die Gruppen sortiert werden sollen. Sie können das **AggregateOn-Element** verwenden, um die repräsentative Eigenschaft anzugeben. 
   
-Wenn eine repräsentative Eigenschaft identifiziert wird, wird das **Aggregate** -Attribut verwendet, um anzugeben, ob die Gruppen entsprechend dem maximalen oder dem kleinsten Wert der angegebenen Eigenschaft sortiert werden. Wenn das **Aggregate** -Attribut auf Maximum festgelegt ist, werden die Gruppen beginnend mit dem größten Wert für die **AggregateOn** -Eigenschaft sortiert. Wenn das **Aggregate** -Attribut auf Minimum festgelegt ist, werden die Gruppen beginnend mit dem kleinsten Wert für die **AggregateOn** -Eigenschaft sortiert. 
+Wenn eine repräsentative Eigenschaft identifiziert wird, wird das **Aggregatattribut** verwendet, um anzugeben, ob die Gruppen nach dem Maximal- oder Mindestwert der identifizierten Eigenschaft sortiert werden. Wenn das **Aggregate-Attribut** auf Maximum festgelegt ist, werden die Gruppen beginnend mit dem größten Wert für die **AggregateOn-Eigenschaft** sortiert. Wenn das **Aggregate-Attribut** auf Minimum festgelegt ist, werden die Gruppen beginnend mit dem kleinsten Wert für die **AggregateOn-Eigenschaft** sortiert. 
   
-Wenn Sie beispielsweise eine FindItem-gruppierte Abfrage ausgeben möchten, die nach Absender gruppiert wird, Sie die Gruppen jedoch so sortieren möchten, dass die Gruppe mit der neuesten e-Mail-Nachricht im Vordergrund ist, können Sie nach Absender und Aggregat nach Datum/Uhrzeit, die mit einem **Aggregate** -Attribut von Maximum empfangen wurde, gruppieren. 
+Wenn Sie z. B. eine gruppierte FindItem-Abfrage ausgeben möchten, die nach Absender gruppiert ist, Sie die Gruppen jedoch so sortieren möchten, dass die Gruppe mit der neuesten E-Mail-Nachricht oben ist, können Sie nach Absender gruppieren und das Datum/die Uhrzeit aggregieren, das mit dem **Aggregatattribut** Maximum empfangen wurde. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt eine gruppierte FindItem-Anforderung und-Antwort. Das Beispiel zeigt eine Anforderung zum Zurückgeben von Elementen, die von der **ConversationTopic** -Eigenschaft gruppiert werden. Zwei Gruppen, A und B, werden in absteigender Reihenfolge basierend auf dem Höchstwert der [DateTimeReceived](datetimereceived.md) -Eigenschaft zurückgegeben. 
+Das folgende Beispiel zeigt eine gruppierte FindItem-Anforderung und -Antwort. Das Beispiel zeigt eine Anforderung zum Zurückgeben von Elementen, die nach der **ConversationTopic-Eigenschaft** gruppiert sind. Zwei Gruppen, A und B, werden basierend auf dem Maximalwert der [DateTimeReceived-Eigenschaft](datetimereceived.md) in absteigender Reihenfolge zurückgegeben. 
   
 ```XML
 <!-- EXAMPLE REQUEST -->
@@ -187,10 +187,10 @@ Das folgende Beispiel zeigt eine gruppierte FindItem-Anforderung und-Antwort. Da
 </soap:Envelope>
 ```
 
-Wenn Sie die Elemente in einer Gruppe sortieren möchten, verwenden Sie das Sortier [Reihenfolge](sortorder.md) -Element. 
+Verwenden Sie das [SortOrder-Element,](sortorder.md) um die Elemente in einer Gruppe zu sortieren. 
   
 > [!NOTE]
-> Die Element-IDs und Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Die Elementbezeichner und Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

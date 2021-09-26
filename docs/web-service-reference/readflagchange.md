@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ReadFlagChange
 api_type:
 - schema
 ms.assetid: 527bfe90-63d0-4b2f-97f7-7875b3a516b2
 description: Das ReadFlagChange-Element wird in SyncFolderItems-Vorgangsantworten zurückgegeben, wenn ein Element gelesen wurde. Diese Eigenschaft ist schreibgeschützt.
-ms.openlocfilehash: 354f8085a6ea5b738d8619e2ffeb0fbccefd51da
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8a03f32a54b2e9dd7e84bf77a01092f6bb3cbf19
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468306"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542911"
 ---
 # <a name="readflagchange"></a>ReadFlagChange
 
-Das **ReadFlagChange** -Element wird in [SyncFolderItems-Vorgangs](syncfolderitems-operation.md) Antworten zurückgegeben, wenn ein Element gelesen wurde. Diese Eigenschaft ist schreibgeschützt. 
+Das **ReadFlagChange-Element** wird in [SyncFolderItems-Vorgangsantworten](syncfolderitems-operation.md) zurückgegeben, wenn ein Element gelesen wurde. Diese Eigenschaft ist schreibgeschützt. 
   
 ```xml
 <ReadFlagChange>
@@ -43,18 +43,18 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Gibt das Element an, für das das Read-Flag geändert wurde.  <br/> |
-|[IsRead](isread.md) <br/> |Gibt an, ob das Read-Flag auf **true**festgelegt wurde.  <br/> |
+|[ItemId](itemid.md) <br/> |Gibt das Element an, für das das Lesekennzeichen geändert wurde.  <br/> |
+|[IsRead](isread.md) <br/> |Gibt an, ob das Lesekennzeichen auf **"true"** festgelegt wurde.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Änderungen (Elemente)](changes-items.md) <br/> |Enthält ein Sequenz Array von Änderungstypen, die die Arten von Unterschieden zwischen den Elementen auf dem Client und den Elementen auf dem Exchange-Server darstellen.  <br/> |
+|[Änderungen (Elemente)](changes-items.md) <br/> |Enthält ein Sequenzarray von Änderungstypen, die die Arten von Unterschieden zwischen den Elementen auf dem Client und den Elementen auf dem Exchange-Server darstellen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

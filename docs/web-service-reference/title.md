@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Title
 api_type:
 - schema
 ms.assetid: 089c2e7c-38d1-4245-8d97-646b6a720d10
 description: Das Title-Element stellt den Titel eines Kontakts dar.
-ms.openlocfilehash: a9948d7a9d48e8cdb03d676992cad342861bb211
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 9894b32379760b3c6364c84bfee8f11b1a649c80
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468754"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545776"
 ---
 # <a name="title"></a>Titel
 
-Das **Title** -Element stellt den Titel eines Kontakts dar. 
+Das **Title-Element** stellt den Titel eines Kontakts dar. 
   
 ```xml
 <Title/>
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Completename](completename.md) <br/> |Stellt den vollständigen Namen eines Kontakts dar.  <br/> |
+|[CompleteName](completename.md) <br/> |Stellt den vollständigen Namen eines Kontakts dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text ist eine Zeichenfolge, die den Titel eines Kontakts darstellt.
+Der Textwert ist eine Zeichenfolge, die den Titel eines Kontakts darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - NewMailEvent
 api_type:
 - schema
 ms.assetid: 45057945-a3ec-4dac-92db-f0dc5fcfc34d
-description: Das NewMailEvent-Element stellt ein Ereignis dar, das durch ein neues e-Mail-Element in einem Postfach ausgelöst wird.
-ms.openlocfilehash: aa562b60a7299543af8653bbc767edf329075644
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das NewMailEvent-Element stellt ein Ereignis dar, das von einem neuen E-Mail-Element in einem Postfach ausgelöst wird.
+ms.openlocfilehash: 9116ff7b1a01c7d31e52565759443afd7b63860a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466815"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541973"
 ---
 # <a name="newmailevent"></a>NewMailEvent
 
-Das **NewMailEvent** -Element stellt ein Ereignis dar, das durch ein neues e-Mail-Element in einem Postfach ausgelöst wird. 
+Das **NewMailEvent-Element** stellt ein Ereignis dar, das von einem neuen E-Mail-Element in einem Postfach ausgelöst wird. 
   
 ```xml
 <NewMailEvent>
@@ -45,10 +45,10 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Watermark](watermark.md) <br/> |Stellt eine Ereignis Textmarke in der Tabelle Post Fach Ereignisse dar.  <br/> |
-|[Timestamp](timestamp.md) <br/> |Stellt den Zeitstempel der Ankunft eines neuen e-Mail-Elements in einem Postfach dar.  <br/> |
-|[ItemId](itemid.md) <br/> |Stellt den Bezeichner eines neuen e-Mail-Elements dar.  <br/> |
-|[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des übergeordneten Ordners des neuen e-Mail-Elements dar.  <br/> |
+|[Watermark](watermark.md) <br/> |Stellt eine Ereignislesemarke in der Postfachereignistabelle dar.  <br/> |
+|[TimeStamp](timestamp.md) <br/> |Stellt den Zeitstempel des Eintreffens eines neuen E-Mail-Elements in einem Postfach dar.  <br/> |
+|[ItemId](itemid.md) <br/> |Stellt den Bezeichner eines neuen E-Mail-Elements dar.  <br/> |
+|[ParentFolderId](parentfolderid.md) <br/> |Stellt den Bezeichner des übergeordneten Ordners des neuen E-Mail-Elements dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -56,7 +56,7 @@ Keine.
 |:-----|:-----|
 |[Benachrichtigung](notification-ex15websvcsotherref.md) <br/> |Enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

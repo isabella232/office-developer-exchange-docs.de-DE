@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c228f7e7-6dc8-476d-9b8c-99cd5b6f9f0c
-description: Das DraftItemIds-Element enthält ein Array von Element-IDs zum Entwerfen von Elementen in einer Unterhaltung.
-ms.openlocfilehash: 5e635e354c9d2d768bab5efaafafde272fe568d3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DraftItemIds-Element enthält ein Array von Elementbezeichnern für Entwurfselemente in einer Unterhaltung.
+ms.openlocfilehash: 9c114e509418138d442ae2cf20278cda410bf9dc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463573"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541441"
 ---
 # <a name="draftitemids"></a>DraftItemIds
 
-Das **DraftItemIds** -Element enthält ein Array von Element-IDs zum Entwerfen von Elementen in einer Unterhaltung. 
+Das **DraftItemIds-Element** enthält ein Array von Elementbezeichnern für Entwurfselemente in einer Unterhaltung. 
   
 ```XML
 <DraftItemIds>
@@ -39,13 +39,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[ItemID](itemid.md)  |  [OccurrenceItemId](occurrenceitemid.md)  |  [RecurringMasterItemId](recurringmasteritemid.md)  |  [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
+[ItemId](itemid.md)  |  [OccurrenceItemId](occurrenceitemid.md)  |  [RecurringMasterItemId](recurringmasteritemid.md)  |  [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [Unterhaltung (ConversationType)](conversation-conversationtype.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

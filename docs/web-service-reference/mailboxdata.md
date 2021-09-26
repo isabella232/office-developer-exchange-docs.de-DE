@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MailboxData
 api_type:
 - schema
 ms.assetid: e9e3f50c-5a7b-49c7-a9ea-117959c08352
 description: Das MailboxData-Element stellt einen einzelnen Postfachbenutzer und Optionen für den Typ der Daten dar, die über den Postfachbenutzer zurückgegeben werden sollen.
-ms.openlocfilehash: bfcb8c01d40af81097c7d9868006fe9b7b5519d4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 62c8c816fc0b0e0c6831d468d90e7303fb72d9be
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467249"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546133"
 ---
 # <a name="mailboxdata"></a>MailboxData
 
-Das **MailboxData** -Element stellt einen einzelnen Postfachbenutzer und Optionen für den Typ der Daten dar, die über den Postfachbenutzer zurückgegeben werden sollen. 
+Das **MailboxData-Element** stellt einen einzelnen Postfachbenutzer und Optionen für den Typ der Daten dar, die über den Postfachbenutzer zurückgegeben werden sollen. 
   
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -51,9 +51,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[E-Mail (e-Mail-Adresse)](email-emailaddresstype.md) <br/> |Stellt den Postfachbenutzer für eine GetUserAvailability-Abfrage dar.  <br/> |
-|[AttendeeType](attendeetype.md) <br/> |Stellt den Typ des Teilnehmers dar, der im [e-Mail-](email-emailaddresstype.md) Element angegeben ist. Dies wird in Anforderungen für Besprechungsvorschläge verwendet.  <br/> |
-|[ExcludeConflicts](excludeconflicts.md) <br/> |Gibt an, ob vorgeschlagene Zeiten für Kalenderzeiten zurückgegeben werden sollen, die in Konflikt zwischen den Teilnehmern liegen.  <br/> |
+|[E-Mail (EmailAddressType)](email-emailaddresstype.md) <br/> |Stellt den Postfachbenutzer für eine GetUserAvailability-Abfrage dar.  <br/> |
+|[AttendeeType](attendeetype.md) <br/> |Stellt den Im Email [-Element (EmailAddressType)](email-emailaddresstype.md) identifizierten Teilnehmertyp dar. Dies wird in Anfragen für Besprechungsvorschläge verwendet.  <br/> |
+|[ExcludeConflicts](excludeconflicts.md) <br/> |Gibt an, ob vorgeschlagene Uhrzeiten für Kalenderzeiten zurückgegeben werden sollen, die zwischen den Teilnehmern in Konflikt geraten.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -61,12 +61,12 @@ Keine.
 |:-----|:-----|
 |[MailboxDataArray](mailboxdataarray.md) <br/> |Enthält eine Liste der Postfächer, die nach Verfügbarkeitsinformationen abgefragt werden sollen.  <br/> Es folgt der XPath für dieses Element:  <br/>  `/GetUserAvailabilityRequest/MailboxDataArray[i]` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Eine Clientanwendung kann ein bis viele **MailboxData** -Elemente definieren. 
+Eine Clientanwendung kann eins bis viele **MailboxData-Elemente** definieren. 
   
 > [!NOTE]
-> Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server 2007 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist. 
+> Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist. 
   
 ## <a name="example"></a>Beispiel
 
@@ -97,5 +97,5 @@ Eine Clientanwendung kann ein bis viele **MailboxData** -Elemente definieren.
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
-- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

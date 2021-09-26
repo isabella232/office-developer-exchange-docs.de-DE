@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - EventType
 api_type:
 - schema
 ms.assetid: 04b70f9e-c226-4130-958e-0db0275cf58b
-description: Das EventType-Element wird zum Erstellen eines Abonnements und zum Identifizieren eines Ereignistyps verwendet, der in einer Benachrichtigung gemeldet werden soll.
-ms.openlocfilehash: 58c7ce571434b6fb8ac0b1dc2a3f8cd4fd56ff17
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das EventType-Element wird zum Erstellen eines Abonnements verwendet und identifiziert einen Ereignistyp, der in einer Benachrichtigung gemeldet werden soll.
+ms.openlocfilehash: 7378ba45b155281df9e00ad635b7c6970a270f2c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526172"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545216"
 ---
 # <a name="eventtype"></a>EventType
 
-Das **eventType** -Element wird zum Erstellen eines Abonnements und zum Identifizieren eines Ereignistyps verwendet, der in einer Benachrichtigung gemeldet werden soll. 
+Das **EventType-Element** wird zum Erstellen eines Abonnements verwendet und identifiziert einen Ereignistyp, der in einer Benachrichtigung gemeldet werden soll. 
   
 ```xml
 <EventType/>
@@ -44,7 +44,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[EventTypes](eventtypes.md) <br/> |Enthält eine Auflistung von Ereignis Benachrichtigungsereignis Typen, die zum Erstellen eines Abonnements verwendet werden.  <br/> |
+|[EventTypes](eventtypes.md) <br/> |Enthält eine Auflistung von Ereignisbenachrichtigungsereignistypen, die zum Erstellen eines Abonnements verwendet werden.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
@@ -64,7 +64,7 @@ Ein Textwert ist erforderlich. Im Folgenden sind die möglichen Werte aufgeführ
     
 - FreeBusyChangedEvent
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

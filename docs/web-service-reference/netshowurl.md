@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - NetShowUrl
 api_type:
 - schema
 ms.assetid: a5d48fc1-b141-422c-bcb0-05d0f9ba90dd
-description: Das NetShowUrl-Element gibt die URL für eine Microsoft NetShow Online-Besprechung an.
-ms.openlocfilehash: 66e288a5e66eecf404698135cc3257085b852034
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das NetShowUrl-Element gibt die URL für eine Microsoft NetShow-Onlinebesprechung an.
+ms.openlocfilehash: a5fe0daac17971c868bec0088ec6b79294d6727a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466332"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541987"
 ---
 # <a name="netshowurl"></a>NetShowUrl
 
-Das **NetShowUrl** -Element gibt die URL für eine Microsoft NetShow Online-Besprechung an. 
+Das **NetShowUrl-Element** gibt die URL für eine Microsoft NetShow-Onlinebesprechung an. 
   
 ```xml
 <NetShowUrl/>
@@ -49,11 +49,11 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Text Wert, der eine URL darstellt, ist erforderlich, wenn dieses Element verwendet wird.
+Ein Textwert, der eine URL darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese NetShowUrl-Eigenschaft ist schreibgeschützt für das Kalenderelement des Organisators. Er ist schreibgeschützt für Besprechungsanfragen und für Teilnehmer.
+Diese NetShowUrl-Eigenschaft kann für das Kalenderelement des Organisators schreibgeschützt werden. Sie ist schreibgeschützt für Besprechungsanfragen und für Teilnehmer.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

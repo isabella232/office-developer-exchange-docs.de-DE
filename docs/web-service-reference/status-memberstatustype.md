@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Status
 api_type:
 - schema
 ms.assetid: 4f8a860b-0a48-4a0d-9a7a-69a0304aa747
-description: Das Status-Element enthält Informationen zum Status eines Verteilerlisten Elements auf dem Server.
-ms.openlocfilehash: bfa0c349d6af51c1b2238c9749d2656541d31906
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Status-Element enthält Informationen über den Status eines Verteilerlistenmitglieds auf dem Server.
+ms.openlocfilehash: 0142ac1fa88c4cc4e513f23bbfad2869e7df32e7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465464"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544598"
 ---
 # <a name="status-memberstatustype"></a>Status (MemberStatusType)
 
-Das **Status** -Element enthält Informationen zum Status eines Verteilerlisten Elements auf dem Server. 
+Das **Status-Element** enthält Informationen über den Status eines Verteilerlistenmitglieds auf dem Server. 
   
 ```
 <Status>Unrecognized or Normal or Demoted</Status>
@@ -48,19 +48,19 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-In der folgenden Tabelle sind die möglichen Werte für das **Status** -Element aufgeführt. 
+In der folgenden Tabelle sind die möglichen Werte für das **Status-Element** aufgeführt. 
   
 **Status-Elementwerte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Unbekannte  <br/> |Mitgliedsinformationen sind ungültig oder nicht erkannt.  <br/> |
-|Normal  <br/> |Elementinformationen in einer Verteilerliste werden mit dem referenzierten Objekt synchronisiert.  <br/> |
-|Herabgestufte  <br/> |Das Objekt, auf das verwiesen wird, ist nicht verfügbar.  <br/> |
+|Unbekannte  <br/> |Memberinformationen sind ungültig oder nicht erkannt.  <br/> |
+|Standard  <br/> |Memberinformationen in einer Verteilerliste werden mit dem referenzierten Objekt synchronisiert.  <br/> |
+|Degradiert  <br/> |Referenziertes Objekt ist nicht verfügbar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

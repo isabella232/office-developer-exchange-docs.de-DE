@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: f1aa8bd9-c6ac-41ac-8d2d-56fb20006005
-description: Das SMTPLast-Element gibt an, ob für den Simple Mail Transfer Protocol (SMTP) Server die e-Mail-Nachrichten heruntergeladen werden müssen, bevor eine e-Mail mithilfe des SMTP-Servers gesendet wird.
-ms.openlocfilehash: 7019da28ffa196a9abc8798aa75aff2756198da3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SMTPLast-Element gibt an, ob für den SMTP-Server (Simple Mail Transfer Protocol) der Download von E-Mails erforderlich ist, bevor E-Mails mithilfe des SMTP-Servers gesendet werden.
+ms.openlocfilehash: ff1e47fa1e3ebd0267879cd596a3a559f2702943
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468432"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544682"
 ---
 # <a name="smtplast-pox"></a>SMTPLast (POX)
 
-Das **SMTPLast** -Element gibt an, ob für den Simple Mail Transfer Protocol (SMTP) Server die e-Mail-Nachrichten heruntergeladen werden müssen, bevor eine e-Mail mithilfe des SMTP-Servers gesendet wird. 
+Das **SMTPLast-Element** gibt an, ob für den SMTP-Server (Simple Mail Transfer Protocol) der Download von E-Mails erforderlich ist, bevor E-Mails mithilfe des SMTP-Servers gesendet werden. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -50,11 +50,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen für das Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffs-Server Rolle installiert ist.  <br/> |
+|[Protokoll (POX)](protocol-pox.md) <br/> |Enthält die Spezifikationen zum Verbinden eines Clients mit dem Computer, auf dem Microsoft Exchange Server 2007 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Text-Wert gibt an, ob der SMTP-Server die e-Mail-Nachrichten heruntergeladen werden muss, bevor er e-Mails mithilfe des SMTP-Servers sendet. Die möglichen Werte sind **ein** -und **ausgeschaltet**. Der Standardwert ist **Off**.
+Der Textwert gibt an, ob für den SMTP-Server das Herunterladen von E-Mails erforderlich ist, bevor E-Mails mithilfe des SMTP-Servers gesendet werden. Die möglichen Werte sind **aktiviert** und **deaktiviert.** Der Standardwert ist **deaktiviert.**
   
 ## <a name="see-also"></a>Siehe auch
 

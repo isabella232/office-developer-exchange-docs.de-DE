@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 40238799-25f0-431c-91be-34b915110f03
 description: Das InlineImageUrlTemplate-Element gibt eine Vorlage für eine Inlinebild-URL an.
-ms.openlocfilehash: 2cb9cd31d1adf0c6fecf803a8b42bc88330a14d1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a209d030f9f6ede56dd790731f6d1b36c8f886ac
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468733"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542204"
 ---
 # <a name="inlineimageurltemplate"></a>InlineImageUrlTemplate
 
-Das **InlineImageUrlTemplate** -Element gibt eine Vorlage für eine Inlinebild-URL an. 
+Das **InlineImageUrlTemplate-Element** gibt eine Vorlage für eine Inlinebild-URL an. 
   
 ```XML
 <InlineImageUrlTemplate></InlineImageUrlTemplate>
@@ -40,13 +40,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemShape](itemshape.md) <br/> |Gibt eine Reihe von Eigenschaften an, die in einer [GetItem-Operation](getitem-operation.md), einem [FindItem-Vorgang](finditem-operation.md)oder einer SyncFolderItems- [Vorgangs](syncfolderitems-operation.md) Antwort zurückgegeben werden sollen.  <br/> |
+|[ItemShape](itemshape.md) <br/> |Identifiziert einen Satz von Eigenschaften, die in einer [GetItem-Operation,](getitem-operation.md)einem [FindItem-Vorgang](finditem-operation.md)oder einer [SyncFolderItems-Vorgangsantwort](syncfolderitems-operation.md) zurückgegeben werden sollen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **InlineImageUrlTemplate** -Elements gibt eine Vorlage für eine Inlinebild-URL an. 
+Der Textwert des **InlineImageUrlTemplate-Elements** gibt eine Vorlage für eine Inlinebild-URL an. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

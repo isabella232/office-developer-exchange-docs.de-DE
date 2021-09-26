@@ -1,27 +1,27 @@
 ---
-title: Createhierarchy
+title: CreateHierarchy
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateHierarchy
 api_type:
 - schema
 ms.assetid: 630b5610-1c19-4d4a-a5df-8cebb9afd2f4
-description: Das createhierarchy-Element gibt an, ob ein Client eine Hierarchietabelle erstellen kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 3fb0c34a8a148cc8336c70d643a21ecb6fef30b5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das CreateHierarchy-Element gibt an, ob ein Client eine Hierarchietabelle erstellen kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: d83b9b7cce6b1cada151347a6dd4266c5e206e1f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457522"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544249"
 ---
-# <a name="createhierarchy"></a>Createhierarchy
+# <a name="createhierarchy"></a>CreateHierarchy
 
-Das **createhierarchy** -Element gibt an, ob ein Client eine Hierarchietabelle erstellen kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **CreateHierarchy-Element** gibt an, ob ein Client eine Hierarchietabelle erstellen kann. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <CreateHierarchy>true or false</CreateHierarchy>
@@ -48,11 +48,11 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass ein Client eine Hierarchietabelle erstellen kann. 
+Der Textwert **"true"** gibt an, dass ein Client eine Hierarchietabelle erstellen kann. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft wird nur für Folder-Objekte verwendet.
+Diese Eigenschaft wird nur für Ordnerobjekte verwendet.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -1,27 +1,27 @@
 ---
-title: Übermittelt
+title: SubmittedTime
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SubmittedTime
 api_type:
 - schema
 ms.assetid: 45c8fa36-c539-42ca-99dc-1ac33cc54afc
-description: Das übermittelte Time-Element stellt die Uhrzeit dar, zu der die Nachricht in den Server eingegeben wurde.
-ms.openlocfilehash: bf9495aa700d2887d199eccb38289e0ebd2e8636
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SubmittedTime-Element stellt die Uhrzeit dar, zu der die Nachricht auf dem Server eingegeben wurde.
+ms.openlocfilehash: 68df76b7ace8c8d665eff87c995a2b658be7e61c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465408"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545853"
 ---
-# <a name="submittedtime"></a>Übermittelt
+# <a name="submittedtime"></a>SubmittedTime
 
-Das über **mittelte** Time-Element stellt die Uhrzeit dar, zu der die Nachricht in den Server eingegeben wurde. 
+Das **SubmittedTime-Element** stellt die Uhrzeit dar, zu der die Nachricht auf dem Server eingegeben wurde. 
   
 ```XML
 <SubmittedTime/>
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Enthält ein einzelnes Nachrichten Ergebnis für ein [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) -Element.  <br/> |
+|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Enthält ein einzelnes Nachrichtenergebnis für ein [FindMessageTrackingReportResponse-Element.](findmessagetrackingreportresponse.md)  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
- Ein Textwert, der eine Datum/Uhrzeit darstellt, ist erforderlich, wenn dieses Element verwendet wird. 
+ Ein Textwert, der ein Datum/eine Uhrzeit darstellt, ist erforderlich, wenn dieses Element verwendet wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

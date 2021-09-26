@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 5ac0ff6d-9e02-4e4c-973d-cd9e076661d5
-description: Das GetDomainSettingsRequest-Element stellt eine GetDomainSettings Operation (SOAP)-Vorgangsanforderung dar.
-ms.openlocfilehash: 400016d0817131fb70ec7ff3db7fbfdc1b51f8f9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GetDomainSettingsRequest-Element stellt eine SOAP-Vorgangsanforderung (GetDomainSettings) dar.
+ms.openlocfilehash: 4c222c6832b5be7da598de3390d13123749f8b0f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460960"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544992"
 ---
 # <a name="getdomainsettingsrequest-soap"></a>GetDomainSettingsRequest (SOAP)
 
-Das **GetDomainSettingsRequest** -Element stellt eine [GetDomainSettings Operation (SOAP)-](getdomainsettings-operation-soap.md) Vorgangsanforderung dar. 
+Das **GetDomainSettingsRequest-Element** stellt eine [SOAP-Vorgangsanforderung (GetDomainSettings)](getdomainsettings-operation-soap.md) dar. 
   
 ```XML
 <GetDomainSettingsRequest>
@@ -41,13 +41,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Domänen (SOAP)](domains-soap.md) <br/> |Stellt eine Auflistung von Domänen-IDs dar.  <br/> |
-|[RequestedSettings (SOAP)](requestedsettings-soap.md) <br/> |Enthält die Namen der angeforderten Domänen Konfigurationseinstellungen.  <br/> |
-|[RequestedVersion (SOAP)](requestedversion-soap.md) <br/> |Gibt die Server Version an, die vom Anbieter verwendet wird.  <br/> |
+|[Domänen (SOAP)](domains-soap.md) <br/> |Stellt eine Auflistung von Domänenbezeichnern dar.  <br/> |
+|[RequestedSettings (SOAP)](requestedsettings-soap.md) <br/> |Enthält die Namen der angeforderten Domänenkonfigurationseinstellungen.  <br/> |
+|[RequestedVersion (SOAP)](requestedversion-soap.md) <br/> |Gibt die Serverversion an, die der Anbieter verwenden wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
@@ -58,8 +58,8 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

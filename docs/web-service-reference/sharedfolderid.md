@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SharedFolderId
 api_type:
 - schema
 ms.assetid: 21181ba3-9626-4284-9717-0b1c16948e8f
-description: Das SharedFolderId-Element stellt den Bezeichner des freigegebenen Ordners dar, für den der lokale Ordner Bezeichner von einer GetSharingFolder-Vorgangsanforderung zurückgegeben werden soll.
-ms.openlocfilehash: 546e148540708725bcf335f39bf69d193124d210
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SharedFolderId-Element stellt den Bezeichner des freigegebenen Ordners dar, dessen lokaler Ordnerbezeichner von einer GetSharingFolder-Vorgangsanforderung zurückgegeben werden soll.
+ms.openlocfilehash: 7e47ba49abed99bdb3cfd00eb43d2ef276d4ef37
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466122"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545972"
 ---
 # <a name="sharedfolderid"></a>SharedFolderId
 
-Das **SharedFolderId** -Element stellt den Bezeichner des freigegebenen Ordners dar, für den der lokale Ordner Bezeichner von einer [GetSharingFolder-Vorgangs](getsharingfolder-operation.md) Anforderung zurückgegeben werden soll. 
+Das **SharedFolderId-Element** stellt den Bezeichner des freigegebenen Ordners dar, dessen lokaler Ordnerbezeichner von einer [GetSharingFolder-Vorgangsanforderung](getsharingfolder-operation.md) zurückgegeben werden soll. 
   
 ```xml
 <SharedFolderId/>
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetSharingFolder](getsharingfolder.md) <br/> |Definiert eine Anforderung zum Abrufen der lokalen Ordner-ID eines angegebenen freigegebenen Ordners.  <br/> |
+|[GetSharingFolder](getsharingfolder.md) <br/> |Definiert eine Anforderung zum Abrufen des lokalen Ordnerbezeichners eines angegebenen freigegebenen Ordners.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist eine Zeichenfolge, die den Bezeichner des freigegebenen Ordners darstellt, für den die lokale Ordner-ID von einer [GetSharingFolder-Vorgangs](getsharingfolder-operation.md) Anforderung zurückgegeben werden soll. 
+Der Textwert ist eine Zeichenfolge, die den Bezeichner des freigegebenen Ordners darstellt, für den der lokale Ordnerbezeichner von einer [GetSharingFolder-Vorgangsanforderung](getsharingfolder-operation.md) zurückgegeben werden soll. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -60,7 +60,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

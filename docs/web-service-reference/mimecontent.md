@@ -5,23 +5,23 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MimeContent
 api_type:
 - schema
 ms.assetid: 4f472a08-5653-4c54-ba65-831dfe32f20f
-description: Das MimeContent-Element enthält den ASCII-MIME-Stream eines Objekts, das im base64Binary-Format dargestellt wird und [RFC2045] unterstützt.
-ms.openlocfilehash: 039ef1245d48e4cf13141970921dd210f4bd7d06
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MimeContent-Element enthält den ASCII-MIME-Strom eines Objekts, das im base64Binary-Format dargestellt wird und [RFC2045] unterstützt.
+ms.openlocfilehash: 43040f241008010620ff4f1018cc5410a7a00e42
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530436"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542071"
 ---
 # <a name="mimecontent"></a>MimeContent
 
-Das **MimeContent** -Element enthält den ASCII-MIME-Stream eines Objekts, das im base64Binary-Format dargestellt wird und [[RFC2045]](http://www.rfc-editor.org/rfc/rfc2045.txt)unterstützt.
+Das **MimeContent-Element** enthält den ASCII-MIME-Strom eines Objekts, das im Base64Binary-Format dargestellt wird und [[RFC2045]](http://www.rfc-editor.org/rfc/rfc2045.txt)unterstützt.
   
 ```xml
 <MimeContent CharacterSet="" />
@@ -36,7 +36,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**CharacterSet** <br/> |Wenn festgelegt, wird der Wert für dieses Attribut vom Server ignoriert.  <br/> |
+|**Characterset** <br/> |Wenn dieser Wert festgelegt ist, wird der Wert für dieses Attribut vom Server ignoriert.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -44,25 +44,25 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[CalendarItem](calendaritem.md)  |  [Kontaktinformationen](contact.md)  |  [Verteilerliste](distributionlist.md)  |  [Element](item.md)  |  [MeetingCancellation](meetingcancellation.md)  |  [MeetingMessage](meetingmessage.md)  |  [MeetingRequest](meetingrequest.md)  |  [MeetingResponse](meetingresponse.md)  |  [Nachricht](message-ex15websvcsotherref.md)  |  [RemoveItem](removeitem.md)  |  [Aufgabe](task.md)
+[CalendarItem](calendaritem.md)  |  [Kontakt](contact.md)  |  [DistributionList](distributionlist.md)  |  [Element](item.md)  |  [MeetingCancellation](meetingcancellation.md)  |  [MeetingMessage](meetingmessage.md)  |  [MeetingRequest](meetingrequest.md)  |  [MeetingResponse](meetingresponse.md)  |  [Nachricht](message-ex15websvcsotherref.md)  |  [RemoveItem](removeitem.md)  |  [Aufgabe](task.md)
   
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der einen base64Binary-MIME-Stream darstellt, ist erforderlich, wenn dieses Element verwendet wird.
+Wenn dieses Element verwendet wird, ist ein Textwert erforderlich, der einen base64Binary-MIME-Datenstrom darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Nachrichteninhalt durchläuft die folgenden drei Codierungs stufen, bevor er im **MimeContent** -Wert gespeichert wird: 
+Der Nachrichteninhalt durchläuft die folgenden drei Codierungsebenen, bevor er im **MimeContent-Wert** gespeichert wird: 
   
-1. Nachrichtentext: Dies ist die Textcodierung, beispielsweise ISO-2022-JP für japanische Zeichen.
+1. Nachrichtentext – Dies ist die Textcodierung, z. B. iso-2022-jp für japanische Zeichen.
     
-2. MIME-Stream: Dies ist die ASCII-Codierung des Nachrichtentexts für das **MimeContent** -Element oder die UTF8-Codierung des Nachrichtentexts für das [MimeContentUTF8](mimecontentutf8.md) -Element. 
+2. MIME-Datenstrom – Dies ist die ASCII-Codierung des Nachrichtentexts für das **MimeContent-Element** oder die UTF8-Codierung des Nachrichtentexts für das [MimeContentUTF8-Element.](mimecontentutf8.md) 
     
-3. XML-Dokument: Dies ist immer der Base64-codierte ASCII-Datenstrom des MIME-Streams, bei dem Zeichen wie ' \< ', die für XML relevant sind, von XML-Parsern ausgeblendet werden.
+3. XML-Dokument – Dies ist immer der base64-codierte ASCII-Stream des MIME-Datenstroms, wobei Zeichen wie " \< ", die für XML von Bedeutung sind, vor XML-Parsern ausgeblendet werden.
     
-Jede Ebene ist unabhängig von der vorausgehenden Ebene.
+Jede Ebene ist unabhängig von der Ebene, die ihr vorausgeht.
   
-Das **MimeContent** -Element kann dieselben Daten enthalten, die andere Eigenschaften, die mit einem Element zurückgegeben werden, enthalten. 
+Das **MimeContent-Element** kann dieselben Daten enthalten, die auch andere Eigenschaften enthalten, die mit einem Element zurückgegeben werden. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

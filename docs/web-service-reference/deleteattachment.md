@@ -1,27 +1,27 @@
 ---
-title: DeleteAttachment-
+title: DeleteAttachment
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteAttachment
 api_type:
 - schema
 ms.assetid: 43d0c1cb-92ca-4399-9b3a-acb2b5c22624
-description: Das DeleteAttachment--Element ist das Stammelement in einer Anforderung zum Löschen einer Anlage aus dem Exchange-Informationsspeicher.
-ms.openlocfilehash: ae8dd5abc1dced2645e579a62f1f57a66cbc9877
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DeleteAttachment-Element ist das Stammelement in einer Anforderung zum Löschen einer Anlage aus dem Exchange Speicher.
+ms.openlocfilehash: 803bd748020dd459e7629825fb572d990adadf71
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457347"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545461"
 ---
-# <a name="deleteattachment"></a>DeleteAttachment-
+# <a name="deleteattachment"></a>DeleteAttachment
 
-Das **DeleteAttachment-** -Element ist das Stammelement in einer Anforderung zum Löschen einer Anlage aus dem Exchange-Informationsspeicher. 
+Das **DeleteAttachment-Element** ist das Stammelement in einer Anforderung zum Löschen einer Anlage aus dem Exchange Speicher. 
   
 ```xml
 <DeleteAttachment>
@@ -43,13 +43,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AttachmentIds](attachmentids.md) <br/> |Enthält ein Array von Anlagen Bezeichnern, die zum Löschen der Anlagen verwendet werden.  <br/> |
+|[AttachmentIds](attachmentids.md) <br/> |Enthält ein Array von Anlagenbezeichnern, die zum Löschen der Anlagen verwendet werden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -59,7 +59,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

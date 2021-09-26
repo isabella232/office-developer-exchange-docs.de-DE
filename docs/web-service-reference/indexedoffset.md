@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 951ee079-417f-45a2-b47f-633e8cd6b520
-description: Das IndexedOffset-Element gibt den Index Offset für eine ausgelagerte FindConversation-Antwort an.
-ms.openlocfilehash: 15faef8d214f289dd79d03bba7db09427955564e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IndexedOffset-Element gibt den Indexversatz für eine seitenweise FindConversation-Antwort an.
+ms.openlocfilehash: e129f4bf9270db666f74255ca0b596a53feabf9c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467011"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542217"
 ---
 # <a name="indexedoffset"></a>IndexedOffset
 
-Das **IndexedOffset** -Element gibt den Index Offset für eine ausgelagerte **FindConversation** -Antwort an. 
+Das **IndexedOffset-Element** gibt den Indexversatz für eine seitenweise **FindConversation-Antwort** an. 
   
 ```XML
 <IndexedOffset></IndexedOffset>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **IndexedOffset** -Elements ist der Seitenindex Offset für **FindConversation** -Antworten. 
+Der Textwert des **IndexedOffset-Elements** ist der Seitenindexversatz für **FindConversation-Antworten.** 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AbsoluteDateTransition
 api_type:
 - schema
 ms.assetid: 8f5731eb-bed0-45bf-ba89-4aaf20c34a39
-description: Das AbsoluteDateTransition-Element stellt einen Zeitzonenübergang dar, der zu einem bestimmten Datum und zu einem bestimmten Zeitpunkt erfolgt.
-ms.openlocfilehash: 514464f69c3be5496aedbe184848ef9ed9f296b9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AbsoluteDateTransition-Element stellt einen Zeitzonenübergang dar, der an einem bestimmten Datum und zu einer bestimmten Zeit erfolgt.
+ms.openlocfilehash: c0d4e28d8ecefaaa72ded50ab3022666d74ce479
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461723"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542547"
 ---
 # <a name="absolutedatetransition"></a>AbsoluteDateTransition
 
-Das **AbsoluteDateTransition** -Element stellt einen Zeitzonenübergang dar, der zu einem bestimmten Datum und zu einem bestimmten Zeitpunkt erfolgt. 
+Das **AbsoluteDateTransition-Element** stellt einen Zeitzonenübergang dar, der an einem bestimmten Datum und zu einer bestimmten Zeit erfolgt. 
   
 ```xml
 <AbsoluteDateTransition>
@@ -44,17 +44,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[To](to.md) <br/> |Gibt den [Zeitraum](period.md) oder die [Transitions](transitionsgroup.md) an, der das Ziel des Zeit Zonen Übergangs darstellt.  <br/> |
-|[DateTime](datetime.md) <br/> |Stellt das Datum und die Uhrzeit dar, zu der der Zeitzonenübergang erfolgt.  <br/> |
+|[To](to.md) <br/> |Gibt den [Zeitraum](period.md) oder die [TransitionsGroup](transitionsgroup.md) an, die das Ziel des Zeitzonenübergangs ist.  <br/> |
+|[DateTime](datetime.md) <br/> |Stellt das Datum und die Uhrzeit des Zeitzonenübergangs dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Übergänge](transitions.md) <br/> |Stellt eine Auflistung von Zeit Zonen Übergängen dar.  <br/> |
-|[Transitiongroup](transitionsgroup.md) <br/> |Stellt eine Auflistung von Zeit Zonen Übergängen dar.  <br/> |
+|[Übergänge](transitions.md) <br/> |Stellt eine Auflistung von Zeitzonenübergängen dar.  <br/> |
+|[TransitionsGroup](transitionsgroup.md) <br/> |Stellt eine Auflistung von Zeitzonenübergängen dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

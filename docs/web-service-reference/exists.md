@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Exists
 api_type:
 - schema
 ms.assetid: 55d568bd-8dbc-4d50-b9d7-54b74a54d4b5
-description: Das EXISTS-Element stellt einen Suchausdruck dar, der true zurückgibt, wenn die angegebene Eigenschaft für ein Element vorhanden ist.
-ms.openlocfilehash: b5e7a24c5214574ef385cd6ffca87ed5f861c188
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Exists-Element stellt einen Suchausdruck dar, der "true" zurückgibt, wenn die angegebene Eigenschaft für ein Element vorhanden ist.
+ms.openlocfilehash: 992283d42f2060b7408f40289198bdbd22e71ec6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456948"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541406"
 ---
 # <a name="exists"></a>Exists
 
-Das **EXISTS** -Element stellt einen Suchausdruck dar, der **true** zurückgibt, wenn die angegebene Eigenschaft für ein Element vorhanden ist. 
+Das **Exists-Element** stellt einen Suchausdruck dar, der **"true"** zurückgibt, wenn die angegebene Eigenschaft für ein Element vorhanden ist. 
   
 ```xml
 <Exists>
@@ -29,7 +29,7 @@ Das **EXISTS** -Element stellt einen Suchausdruck dar, der **true** zurückgibt,
 </Exists>
 ```
 
- **Existtype**
+ **ExistsType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,20 +42,20 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member eines Wörterbuchs.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert MAPI-Eigenschaften.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifies frequently referenced properties by URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Mitglieder eines Wörterbuchs.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifies MAPI properties.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Einschränkung](restriction.md) <br/> |Stellt die Einschränkung oder Abfrage dar, die zum Filtern von Elementen oder Ordnern in FindItem/FindFolder und Suchordner Vorgängen verwendet wird.  <br/> |
+|[Restriction](restriction.md) <br/> |Stellt die Einschränkung oder Abfrage dar, die zum Filtern von Elementen oder Ordnern in FindItem/FindFolder und Suchordnervorgängen verwendet wird.  <br/> |
 |[not](not.md) <br/> |Stellt einen Suchausdruck dar, der den booleschen Wert des darin enthaltenen Suchausdrucks negiert.  <br/> |
-|[Und](and.md) <br/> |Stellt einen Suchausdruck dar, mit dem Sie einen booleschen Wert und eine Operation zwischen zwei oder mehr Suchausdrücken ausführen können. Das Ergebnis der and-Operation ist **true** , wenn alle in der enthaltenen Suchausdrücke auf **true**festgelegt sind.  <br/> |
-|[- oder -](or.md) <br/> |Stellt einen Suchausdruck dar, der einen logischen oder den darin enthaltenen Suchausdruck ausführt. [Oder](or.md) gibt **true** zurück, wenn eines der untergeordneten Elemente **true**zurückgibt.  <br/> |
+|[Und](and.md) <br/> |Stellt einen Suchausdruck dar, mit dem Sie einen booleschen And-Vorgang zwischen zwei oder mehr Suchausdrücken ausführen können. Das Ergebnis des And-Vorgangs ist **"true",** wenn alle in "And" enthaltenen Suchausdrücke **"True"** sind.  <br/> |
+|[- oder -](or.md) <br/> |Stellt einen Suchausdruck dar, der ein logisches OR für den darin enthaltenen Suchausdruck ausführt. [Or](or.md) will return **true** if any of its children return **true**.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - StatusEvent
 api_type:
 - schema
 ms.assetid: d3901818-2640-4bed-aad8-21a61aee62a1
 description: Das StatusEvent-Element stellt eine Benachrichtigung dar, dass keine neue Aktivität im Postfach aufgetreten ist.
-ms.openlocfilehash: 8158a47937a810be2ea22346384b4e61da56ac48
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 777d5cd22e47fea6e7bf7432e58e5d58d1ef67a4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468257"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543975"
 ---
 # <a name="statusevent"></a>StatusEvent
 
-Das **StatusEvent** -Element stellt eine Benachrichtigung dar, dass keine neue Aktivität im Postfach aufgetreten ist. 
+Das **StatusEvent-Element** stellt eine Benachrichtigung dar, dass keine neue Aktivität im Postfach aufgetreten ist. 
   
 ```xml
 <StatusEvent>
@@ -50,17 +50,17 @@ Keine.
 |:-----|:-----|
 |[Benachrichtigung](notification-ex15websvcsotherref.md) <br/> |Enthält Informationen über das Abonnement und die Ereignisse, die seit der letzten Benachrichtigung aufgetreten sind.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das **StatusEvent** -Element wird aus einem der folgenden Gründe in einer Benachrichtigung zurückgegeben: 
+Das **StatusEvent-Element** wird aus einem der folgenden Gründe in einer Benachrichtigung zurückgegeben: 
   
-- Ein Pull-Client gibt eine GetEvents-Anforderung für ein Abonnement aus, das über keine Aktivität verfügt.
+- Ein Pullclient gibt eine GetEvents-Anforderung für ein Abonnement aus, das keine Aktivität hat.
     
-- Ein Push-Client hat keine Ereignisse in der Warteschlange, wenn die [StatusFrequency](statusfrequency.md) erreicht wurde. 
+- Ein Pushclient hat keine Ereignisse in der Warteschlange, wenn [statusFrequency](statusfrequency.md) erreicht wurde. 
     
-Das **StatusEvent**-[Wasserzeichen](watermark.md) wird von einer Clientanwendung auf die gleiche Weise wie die anderen Wasserzeichen von Ereignistypen verwendet. Das Wasserzeichen für das **StatusEvent** ist jedoch nicht identisch mit den Wasserzeichen, die für andere Ereignisse verwendet werden. Beispielsweise hat ein Abonnement Ereignisse mit Wasserzeichen 1, 2 und 3, und diese Ereignisse wurden in einer Benachrichtigung erfolgreich kommuniziert. Ein Zeitraum der Inaktivität tritt auf, und es wird eine **GetEvents** -Anforderung gesendet. Der Client Zugriffsserver (CAS) gibt ein Status Ereignis zurück und enthält das letzte Wasserzeichen, 3, als [PreviousWatermark](previouswatermark.md) und das aktuelle [Wasserzeichen](watermark.md).
+Das[StatusEvent-Wasserzeichen](watermark.md) wird von einer Clientanwendung auf die gleiche Weise wie die anderen Ereignistyp-Wasserzeichen verwendet.  Das Wasserzeichen für **StatusEvent** ist jedoch nicht identisch mit den Wasserzeichen, die für andere Ereignisse verwendet werden. Beispielsweise weist ein Abonnement Ereignisse mit den Wasserzeichen 1, 2 und 3 auf, und diese Ereignisse wurden in einer Benachrichtigung erfolgreich kommuniziert. Es tritt ein Zeitraum der Inaktivität auf, und eine **GetEvents-Anforderung** wird gesendet. Der Clientzugriffsserver (Client Access Server, CAS) gibt ein Statusereignis zurück und enthält das letzte Wasserzeichen, 3, sowohl als [Previous Cursormark](previouswatermark.md) als auch als [aktuelles Wasserzeichen.](watermark.md)
   
-Das Wasserzeichen wird nicht in allen Fällen gleich bleiben. Ereigniseinträge werden für 30 Tage beibehalten. Um ein aktives Abonnement beizubehalten, werden die Wasserzeichen für Abonnement Warteschlangen von der Zertifizierungsstellen regelmäßig aktualisiert. Die aktualisierten Wasserzeichen werden an Clients gesendet, um ein aktives Abonnement beizubehalten.
+Das Wasserzeichen bleibt nicht in allen Fällen gleich. Ereigniseinträge werden 30 Tage lang verwaltet. Um ein aktives Abonnement zu verwalten, aktualisiert der CAS regelmäßig die Wasserzeichen für Abonnementwarteschlangen. Die aktualisierten Wasserzeichen werden an Clients gesendet, um ein aktives Abonnement zu verwalten.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

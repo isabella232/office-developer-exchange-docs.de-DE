@@ -5,44 +5,44 @@ ms.date: 01/24/2020
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9015a0d8-3495-461b-aa79-797d23169585
-description: Hier finden Sie Informationen zum SetHoldOnMailboxes-EWS-Vorgang.
-ms.openlocfilehash: 4d79ba9f616974b9415ae9eae23b8f5fdb0ab205
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum EWS-Vorgang "SetHoldOnMailboxes".
+ms.openlocfilehash: d4774af88e94a14103aa883774f193e84338c9f1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44448394"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542788"
 ---
 # <a name="setholdonmailboxes-operation"></a>SetHoldOnMailboxes-Vorgang
 
 > [!IMPORTANT]
-> Ab dem 1. April 2020 ist der SetHoldOnMailboxes-Vorgang in Exchange Online nicht mehr verfügbar. Dieser Vorgang ist in lokalen Versionen von Exchange Server nicht betroffen. Weitere Informationen finden Sie unter [Retirement of Legacy eDiscovery Tools in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement#getsearchablemailboxes-setholdonmailboxes-and-getholdonmailboxes-operations-in-the-ews-api).
+> Ab dem 1. April 2020 ist der SetHoldOnMailboxes-Vorgang in Exchange Online nicht mehr verfügbar. Dieser Vorgang ist in lokalen Versionen von Exchange Server nicht betroffen. Weitere Informationen finden Sie unter ["Ausmustern älterer eDiscovery-Tools" in Exchange Online.](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement#getsearchablemailboxes-setholdonmailboxes-and-getholdonmailboxes-operations-in-the-ews-api)
 
-Hier finden Sie Informationen zum **SetHoldOnMailboxes** -EWS-Vorgang. 
+Hier finden Sie Informationen zum EWS-Vorgang **"SetHoldOnMailboxes".** 
   
-Der **SetHoldOnMailboxes** -Vorgang legt eine Postfach-Aufbewahrungsrichtlinie für Postfächer fest. 
+Der **SetHoldOnMailboxes-Vorgang** legt eine Aufbewahrungsrichtlinie für Postfächer fest. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-setholdonmailboxes-operation"></a>Verwenden des SetHoldOnMailboxes-Vorgangs
 
-Der **SetHoldOnMailboxes** -Vorgang legt fest, dass ein Postfach für ein oder mehrere Postfächer aufbewahrt wird. 
+Der **SetHoldOnMailboxes-Vorgang** legt eine Postfachsperre auf ein oder mehrere Postfächer fest. 
   
 ### <a name="setholdonmailboxes-operation-soap-headers"></a>SOAP-Header des SetHoldOnMailboxes-Vorgangs
 
-Der **SetHoldOnMailboxes** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **SetHoldOnMailboxes-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Gibt die Serverrollen an, die erforderlich sind, damit der Anrufer die Anforderung stellen muss. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Identifiziert die Serverrollen, die erforderlich sind, damit der Aufrufer die Anforderung stellen kann. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="setholdonmailboxes-operation-request-example-apply-a-hold-on-a-mailbox"></a>SetHoldOnMailboxes-Vorgangs Anforderungs Beispiel: Anwenden eines Haltestatus für ein Postfach
+## <a name="setholdonmailboxes-operation-request-example-apply-a-hold-on-a-mailbox"></a>SetHoldOnMailboxes-Vorgangsanforderungsbeispiel: Anwenden einer Aufbewahrung auf ein Postfach
 
-Im folgenden Beispiel einer **SetHoldOnMailboxes** -Vorgangsanforderung wird gezeigt, wie ein Haltestatus auf zwei Postfächer angewendet wird. Die Postfachsperre wurde mithilfe des Befehls [New-MailboxSearch](https://technet.microsoft.com/library/dd298064.aspx) erstellt. 
+Das folgende Beispiel einer **SetHoldOnMailboxes-Vorgangsanforderung** zeigt, wie eine Aufbewahrung auf zwei Postfächer angewendet wird. Die Postfachsperre wurde mithilfe des [Befehls "New-MailboxSearch"](https://technet.microsoft.com/library/dd298064.aspx) erstellt. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -70,13 +70,13 @@ Im folgenden Beispiel einer **SetHoldOnMailboxes** -Vorgangsanforderung wird gez
 
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [SetHoldOnMailboxes](setholdonmailboxes.md)
     
-- [Action Type (HoldActionType)](actiontype-holdactiontype.md)
+- [ActionType (HoldActionType)](actiontype-holdactiontype.md)
     
-- [Haltestatus](holdid.md)
+- [HoldId](holdid.md)
     
 - [Query](query.md)
     
@@ -84,15 +84,15 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [String](string.md)
     
-- [Sprache](language.md)
+- [Language](language.md)
     
 - [IncludeNonIndexableItems](includenonindexableitems.md)
     
 - [Deduplizierung](deduplication.md)
     
-## <a name="successful-setholdonmailboxes-operation-response"></a>Erfolgreiche Reaktion des SetHoldOnMailboxes-Vorgangs
+## <a name="successful-setholdonmailboxes-operation-response"></a>Erfolgreiche Antwort des SetHoldOnMailboxes-Vorgangs
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **SetHoldOnMailboxes** -Vorgangsanforderung, um zwei Postfächer in die Warteschleife zu versetzen. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **SetHoldOnMailboxes-Vorgangsanforderung,** um zwei Postfächer in die Warteschleife zu setzen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -135,7 +135,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **SetHoldOnMailbo
 
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [SetHoldOnMailboxesResponse](setholdonmailboxesresponse.md)
     
@@ -143,7 +143,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [MailboxHoldResult](mailboxholdresult.md)
     
-- [Haltestatus](holdid.md)
+- [HoldId](holdid.md)
     
 - [Query](query.md)
     
@@ -159,7 +159,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 ## <a name="setholdonmailboxes-operation-error-response"></a>Fehlerantwort des SetHoldOnMailboxes-Vorgangs
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **SetHoldOnMailboxes** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung, die eine falsch angegebene Post Fach Kennung enthält. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **SetHoldOnMailboxes-Vorgangsanforderung.** Dies ist eine Antwort auf eine Anforderung, die einen falsch angegebenen Postfachbezeichner enthält. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -198,7 +198,7 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
+Weitere Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

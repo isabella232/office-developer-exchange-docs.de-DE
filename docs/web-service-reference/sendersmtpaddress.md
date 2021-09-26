@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SenderSmtpAddress
 api_type:
 - schema
 ms.assetid: e39c7df7-4bfa-455f-b4bb-1f1d05398eec
-description: Das SenderSmtpAddress-Element stellt die SMTP-e-Mail-Adresse dar, die dem Postfach entspricht, das den Ordner enthält, der freigegeben werden soll.
-ms.openlocfilehash: 73047dcecfbccb55d74e373891c3154bc7baeeba
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SenderSmtpAddress-Element stellt die SMTP-E-Mail-Adresse dar, die dem Postfach entspricht, das den freigegebenen Ordner enthält.
+ms.openlocfilehash: 09a0c577850581c7c67c6fff241a5d848421ed71
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464896"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546091"
 ---
 # <a name="sendersmtpaddress"></a>SenderSmtpAddress
 
-Das **SenderSmtpAddress** -Element stellt die SMTP-e-Mail-Adresse dar, die dem Postfach entspricht, das den Ordner enthält, der freigegeben werden soll. 
+Das **SenderSmtpAddress-Element** stellt die SMTP-E-Mail-Adresse dar, die dem Postfach entspricht, das den freigegebenen Ordner enthält. 
   
 ```xml
 <SenderSmtpAddress/>
@@ -44,15 +44,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetSharingMetadata](getsharingmetadata.md) <br/> |Definiert eine Anforderung zum Abrufen eines nicht transparenten Authentifizierungstokens, das die Freigabeeinladung identifiziert.  <br/> |
+|[GetSharingMetadata](getsharingmetadata.md) <br/> |Definiert eine Anforderung zum Abrufen eines undurchsichtigen Authentifizierungstokens, das die Freigabe-Einladung identifiziert.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert, der eine SMTP-Adresse darstellt, ist erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, in dem Exchange Webdienste des Computers gehostet wird, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange Webdienste des Computers hostet, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
@@ -60,7 +60,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

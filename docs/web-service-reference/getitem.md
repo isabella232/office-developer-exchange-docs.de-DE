@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetItem
 api_type:
 - schema
 ms.assetid: 769df8eb-9c72-48b5-a49f-82c6b86bc5fc
-description: Das GetItem-Element definiert eine Anforderung zum Abrufen eines Elements aus einem Postfach im Exchange-Informationsspeicher.
-ms.openlocfilehash: a02403ee84195a41387d5dbe1785ae6d12b47da5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GetItem-Element definiert eine Anforderung zum Abrufen eines Elements aus einem Postfach im Exchange Speicher.
+ms.openlocfilehash: 7d5a7253db54fd67bb8e8772c2a5aedb86abdeee
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458698"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546231"
 ---
 # <a name="getitem"></a>GetItem
 
-Das **GetItem** -Element definiert eine Anforderung zum Abrufen eines Elements aus einem Postfach im Exchange-Informationsspeicher. 
+Das **GetItem-Element** definiert eine Anforderung zum Abrufen eines Elements aus einem Postfach im Exchange Speicher. 
   
 ```xml
 <GetItem>
@@ -43,14 +43,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemShape](itemshape.md) <br/> |Identifiziert die Elementeigenschaften und Inhalte, die in einer **GetItem** -Antwort enthalten sein sollen.  <br/> |
-|[ItemIds](itemids.md) <br/> |Enthält die eindeutigen Identitäten von Elementen, vorkommen-Elementen und wiederkehrenden Gestaltungsvorlagen, die zum Abrufen von Elementen aus dem Exchange-Informationsspeicher verwendet werden. Diese Elemente stellen Kontakte, Aufgaben, Nachrichten, Kalenderelemente, Besprechungsanfragen und andere gültige Elemente in einem Postfach dar.  <br/> |
+|[ItemShape](itemshape.md) <br/> |Identifiziert die Elementeigenschaften und -inhalte, die in eine **GetItem-Antwort** eingeschlossen werden sollen.  <br/> |
+|[ItemIds](itemids.md) <br/> |Enthält die eindeutigen Identitäten von Elementen, Vorkommenselementen und wiederkehrenden Masterelementen, die zum Abrufen von Elementen aus dem Exchange Speicher verwendet werden. Diese Elemente stellen Kontakte, Aufgaben, Nachrichten, Kalenderelemente, Besprechungsanfragen und andere gültige Elemente in einem Postfach dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -60,7 +60,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

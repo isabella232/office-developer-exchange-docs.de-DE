@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Delete
 api_type:
 - schema
 ms.assetid: aa45f0c1-a80d-4b6c-8a85-375b6de515f4
-description: Das delete-Element gibt an, ob ein Client einen Ordner oder ein Element löschen kann.
-ms.openlocfilehash: 5460f9e49b126ca6b039c6f11aaa3c6eb4a40544
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Delete-Element gibt an, ob ein Client einen Ordner oder ein Element löschen kann.
+ms.openlocfilehash: e1ecbfbcb11be04e39dc8353140653e6b5ca1c3b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457354"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542491"
 ---
 # <a name="delete"></a>Löschen
 
-Das **Delete** -Element gibt an, ob ein Client einen Ordner oder ein Element löschen kann. 
+Das **Delete-Element** gibt an, ob ein Client einen Ordner oder ein Element löschen kann. 
   
 ```XML
 <Delete>true or false</Delete>
@@ -50,9 +50,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** gibt an, dass ein Client ein Element oder einen Ordner löschen kann. Der Wert **false** gibt an, dass ein Element oder ein Ordner von einem Client nicht gelöscht werden kann. 
+Der Textwert **"true"** gibt an, dass ein Client ein Element oder einen Ordner löschen kann. Der Wert **"false"** gibt an, dass ein Client ein Element oder einen Ordner nicht löschen kann. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

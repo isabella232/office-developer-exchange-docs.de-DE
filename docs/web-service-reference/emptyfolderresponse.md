@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c900be49-3c90-41aa-aba5-bcf1116ec2aa
 description: Das EmptyFolderResponse-Element definiert eine Antwort auf eine EmptyFolder-Vorgangsanforderung.
-ms.openlocfilehash: 9b20df8c0b095870185aab14dbd1f7ff4fc47def
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: ca39ff598db7242193175d098b19b3b474d9a616
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530677"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544143"
 ---
 # <a name="emptyfolderresponse"></a>EmptyFolderResponse
 
-Das **EmptyFolderResponse** -Element definiert eine Antwort auf eine [EmptyFolder-Vorgangs](emptyfolder-operation.md) Anforderung. 
+Das **EmptyFolderResponse-Element** definiert eine Antwort auf eine [EmptyFolder-Vorgangsanforderung.](emptyfolder-operation.md) 
   
 ```XML
 <EmptyFolderResponse>
@@ -38,13 +38,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienste-Anforderung.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Enthält die Antwortnachrichten für eine Exchange Webdienstanforderung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -54,7 +54,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

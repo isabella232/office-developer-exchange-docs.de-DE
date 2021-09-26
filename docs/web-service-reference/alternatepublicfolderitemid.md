@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AlternatePublicFolderItemId
 api_type:
 - schema
 ms.assetid: a67df9b9-8fdb-42de-b9c5-8377b71fa3d9
-description: Das AlternatePublicFolderItemId-Element beschreibt einen Elementbezeichner für Öffentliche Ordner, der in ein anderes ID-Format konvertiert werden soll. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 11a9fafec78a9bd14e4d98982fd38954d45e4d1a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AlternatePublicFolderItemId-Element beschreibt einen Bezeichner für öffentliche Ordnerelemente, der in ein anderes Bezeichnerformat konvertiert werden soll. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: e3d71d17c6e9321a1accfbaf90967d2b504f5efe
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464770"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543709"
 ---
 # <a name="alternatepublicfolderitemid"></a>AlternatePublicFolderItemId
 
-Das **AlternatePublicFolderItemId** -Element beschreibt einen Elementbezeichner für Öffentliche Ordner, der in ein anderes ID-Format konvertiert werden soll. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **AlternatePublicFolderItemId-Element** beschreibt einen Bezeichner für öffentliche Ordnerelemente, der in ein anderes Bezeichnerformat konvertiert werden soll. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 - [ConvertId](convertid.md)
   
@@ -42,20 +42,20 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|FolderId  <br/> |Gibt den öffentlichen Ordner an, der das Element für Öffentliche Ordner enthält. Dieses Attribut ist erforderlich.  <br/> |
-|Format  <br/> |Gibt das Format an, das den zu konvertierenden Elementbezeichner für Öffentliche Ordner beschreibt. Dieses Attribut ist erforderlich.  <br/> |
-|ItemId  <br/> |Bezeichner das Element des öffentlichen Ordners, das konvertiert werden soll. Dieses Attribut ist erforderlich.  <br/> |
+|FolderId  <br/> |Gibt den öffentlichen Ordner an, der das Öffentliche Ordner-Element enthält. Dieses Attribut ist erforderlich.  <br/> |
+|Format  <br/> |Gibt das Format an, das den zu konvertierenden Bezeichner des Öffentlichen Ordnerelements beschreibt. Dieses Attribut ist erforderlich.  <br/> |
+|ItemId  <br/> |Bezeichner des zu konvertierenden Öffentlichen Ordnerelements. Dieses Attribut ist erforderlich.  <br/> |
    
-#### <a name="format-attribute-values"></a>Formatieren von Attributwerten
+#### <a name="format-attribute-values"></a>Formatattributwerte
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|EwsLegacyId  <br/> |Beschreibt Bezeichner, die von Exchange Webdienste in der ersten Version von Exchange 2007 erstellt werden.  <br/> |
-|EwsId  <br/> |Beschreibt Bezeichner, die von Exchange Webdienste ab Exchange 2007 SP1 erstellt werden.  <br/> |
-|EntryId  <br/> |Beschreibt MAPI-IDs wie in der PR_ENTRYID-Eigenschaft.  <br/> |
-|HexEntryId  <br/> |Beschreibt eine hexadezimal codierte Darstellung der PR_ENTRYID-Eigenschaft. Dies ist das Format der Ereignisbezeichner für den Verfügbarkeitskalender.  <br/> |
-|StoreId  <br/> |Beschreibt Exchange-Informationsspeicher Bezeichner.  <br/> |
-|OwaId  <br/> |Beschreibt einen Outlook Web Access Bezeichner.  <br/> |
+|EwsLegacyId  <br/> |Beschreibt Bezeichner, die von Exchange Webdiensten in der ersten Version von Exchange 2007 erstellt werden.  <br/> |
+|EwsId  <br/> |Beschreibt Bezeichner, die von Exchange Webdiensten ab Exchange 2007 SP1 erstellt werden.  <br/> |
+|EntryId  <br/> |Beschreibt MAPI-Bezeichner wie in der PR_ENTRYID-Eigenschaft.  <br/> |
+|HexEntryId  <br/> |Beschreibt eine hexadezimal codierte Darstellung der PR_ENTRYID-Eigenschaft. Dies ist das Format von Verfügbarkeitskalender-Ereignisbezeichnern.  <br/> |
+|StoreId  <br/> |Beschreibt Exchange Speicherbezeichner.  <br/> |
+|OwaId  <br/> |Beschreibt einen Outlook Web Access-Bezeichner.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -65,9 +65,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SourceIds](sourceids.md) <br/> |Enthält die Quellbezeichner, die konvertiert werden sollen. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[SourceIds](sourceids.md) <br/> |Enthält die zu konvertierenden Quellbezeichner. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

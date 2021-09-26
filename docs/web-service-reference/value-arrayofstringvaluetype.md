@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 83865da6-0bcd-445a-ba3c-0eff481b14ab
-description: Das Value-Element gibt einen Wert in einem Array von Persona-Eigenschaften an, die einem attributes-Array zugeordnet sind.
-ms.openlocfilehash: ceca9290ea93a505709d6046d1b6ab8e2c32f4ea
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Value-Element gibt einen Wert in einem Array von Persona-Eigenschaften an, die einem Attributionsarray zugeordnet sind.
+ms.openlocfilehash: 2a2631debfe3e6000fc6855e8d8859740bad4bcc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467620"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541679"
 ---
 # <a name="value-arrayofstringvaluetype"></a>Wert (ArrayOfStringValueType)
 
-Das **value** -Element gibt einen Wert in einem Array von Persona-Eigenschaften an, die einem attributes-Array zugeordnet sind. 
+Das **Value-Element** gibt einen Wert in einem Array von Persona-Eigenschaften an, die einem Attributionsarray zugeordnet sind. 
   
 ```XML
 <Value></Value>
@@ -39,13 +39,13 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Values (ArrayOfStringValueType)](values-arrayofstringvaluetype.md)
+[Werte (ArrayOfStringValueType)](values-arrayofstringvaluetype.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **value** -Elements ist ein Wert in einem Array von Persona-Eigenschaften, die einem attributes-Array zugeordnet sind. 
+Der Textwert des **Value-Elements** ist ein Wert in einem Array von Persona-Eigenschaften, die einem Attributionsarray zugeordnet sind. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

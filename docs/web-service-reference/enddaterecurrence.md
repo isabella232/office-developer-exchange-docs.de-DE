@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - EndDateRecurrence
 api_type:
 - schema
 ms.assetid: a5ee2504-db84-49ee-870c-cca9269f2e26
-description: Das EndDateRecurrence-Element beschreibt das Startdatum und das Enddatum eines Element Serienmusters.
-ms.openlocfilehash: e8ae72012e5bcac8d8b2a06b6d3a9b3a7caf30d7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das EndDateRecurrence-Element beschreibt das Startdatum und das Enddatum eines Elementserienmusters.
+ms.openlocfilehash: 8052ad490d32073dc04c194b6d98e2a92ac3bea2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460148"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541427"
 ---
 # <a name="enddaterecurrence"></a>EndDateRecurrence
 
-Das **EndDateRecurrence** -Element beschreibt das Startdatum und das Enddatum eines Element Serienmusters. 
+Das **EndDateRecurrence-Element** beschreibt das Startdatum und das Enddatum eines Elementserienmusters. 
   
 ```xml
 <EndDateRecurrence>
@@ -43,17 +43,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StartDate (Serie)](startdate-recurrence.md) <br/> |Stellt das Startdatum eines periodischen Vorgangs oder Kalenderelements dar.  <br/> |
-|[EndDate (Serie)](enddate-recurrence.md) <br/> |Stellt das Enddatum eines periodischen Vorgangs oder Kalenderelements dar.  <br/> |
+|[StartDate (Serie)](startdate-recurrence.md) <br/> |Stellt den Anfangstermin einer Terminserie oder eines Kalenderelements dar.  <br/> |
+|[EndDate (Recurrence)](enddate-recurrence.md) <br/> |Stellt das Enddatum einer Terminserie oder eines Kalenderelements dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Serie (serietype)](recurrence-recurrencetype.md) <br/> |Enthält das Serienmuster für Kalenderelemente und Besprechungsanfragen.  <br/> |
+|[Serie (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Enthält das Serienmuster für Kalenderelemente und Besprechungsanfragen.  <br/> |
 |[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Enthält das Serienmuster für wiederkehrende Vorgänge.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

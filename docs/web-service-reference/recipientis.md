@@ -1,27 +1,27 @@
 ---
-title: Empfängerist
+title: RecipientIs
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RecipientIs
 api_type:
 - schema
 ms.assetid: 5d2fd7ce-6137-4b3c-a716-c0218dcc8a09
-description: Das recipientis-Element gibt an, dass jeder Empfänger der e-Mail-Nachricht mit einem der angegebenen Empfänger in den untergeordneten Wert (ProtectionRuleValueType)-Elementen übereinstimmt.
-ms.openlocfilehash: 8f27c4484ce310c62f9bab0e6ffeea2bfac1d3ef
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das RecipientIs-Element gibt an, dass jeder Empfänger der E-Mail-Nachricht mit einem der angegebenen Empfänger in den untergeordneten Value -Elementen (ProtectionRuleValueType) übereinstimmt.
+ms.openlocfilehash: 0bf9d96469c626ddc223b128a6d7fabebbfebc84
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463881"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542897"
 ---
-# <a name="recipientis"></a>Empfängerist
+# <a name="recipientis"></a>RecipientIs
 
-Das **recipientis** -Element gibt an, dass jeder Empfänger der e-Mail-Nachricht mit einem der angegebenen Empfänger in den untergeordneten [Wert (ProtectionRuleValueType)](value-protectionrulevaluetype.md) -Elementen übereinstimmt. 
+Das **RecipientIs-Element** gibt an, dass jeder Empfänger der E-Mail-Nachricht mit einem der angegebenen Empfänger in den untergeordneten [Value -Elementen (ProtectionRuleValueType)](value-protectionrulevaluetype.md) übereinstimmt. 
   
 ```xml
 <RecipientIs>   <Value/></RecipientIs>
@@ -46,12 +46,12 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Bedingung](condition.md) <br/> |Gibt die Bedingung an, die erfüllt sein muss, damit der Aktions Teil der Regel ausgeführt wird.  <br/> |
-|[Und (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Gibt an, dass alle untergeordneten Elemente übereinstimmen müssen, damit Sie zu **true**ausgewertet werden.  <br/> |
+|[Bedingung](condition.md) <br/> |Gibt die Bedingung an, die erfüllt sein muss, damit der Aktionsteil der Regel ausgeführt wird.  <br/> |
+|[Und (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Gibt an, dass alle untergeordneten Elemente übereinstimmen müssen, um zu **"true"** ausgewertet zu werden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

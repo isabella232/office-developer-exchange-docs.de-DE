@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7763d11a-b338-4a02-8a01-938859c05dfb
-description: Das AutoDiscoverSMTPAddress-Element enthält die SMTP-Adresse des Benutzers, die für den Auto Ermittlungsprozess verwendet wird.
-ms.openlocfilehash: cd40fac8b7ab4eaa9ea50e82d6fc8bdbd4c3c7b1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AutoDiscoverSMTPAddress-Element enthält die SMTP-Adresse des Benutzers, die für den AutoErmittlungsprozess verwendet wird.
+ms.openlocfilehash: cb5871eee3cf61d388ad83b53df2bad733722d4e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463951"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543681"
 ---
 # <a name="autodiscoversmtpaddress-pox"></a>AutoDiscoverSMTPAddress (POX)
 
-Das **AutoDiscoverSMTPAddress** -Element enthält die SMTP-Adresse des Benutzers, die für den Auto Ermittlungsprozess verwendet wird. 
+Das **AutoDiscoverSMTPAddress-Element** enthält die SMTP-Adresse des Benutzers, die für den AutoErmittlungsprozess verwendet wird. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -46,15 +46,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Benutzer (POX)](user-pox.md) <br/> |Enthält benutzerspezifische Informationen.  <br/> |
+|[Benutzer (POX)](user-pox.md) <br/> |Stellt benutzerspezifische Informationen bereit.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt die SMTP-Adresse des Benutzers dar, die für den Auto Ermittlungsprozess verwendet wird.
+Der Textwert stellt die SMTP-Adresse des Benutzers dar, die für den AutoErmittlungsprozess verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das **AutoDiscoverSMTPAddress** -Element ist ein optionales untergeordnetes Element des **User** -Elements. 
+Das **AutoDiscoverSMTPAddress-Element** ist ein optionales untergeordnetes Element des **User-Elements.** 
   
 ## <a name="see-also"></a>Siehe auch
 

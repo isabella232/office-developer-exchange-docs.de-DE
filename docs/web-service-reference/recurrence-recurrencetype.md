@@ -1,27 +1,27 @@
 ---
-title: Serie (serietype)
+title: Serie (RecurrenceType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Recurrence
 api_type:
 - schema
 ms.assetid: 3d1c2c1c-4103-47ce-ad3c-ad16ec6e9b12
-description: Das Serienelement enthält das Serienmuster für Kalenderelemente und Besprechungsanfragen.
-ms.openlocfilehash: d00445c75fb35c3bb99eeed06e30cb1cf2883597
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Recurrence-Element enthält das Serienmuster für Kalenderelemente und Besprechungsanfragen.
+ms.openlocfilehash: 00dc47fd869f86cbd235ecd54085dbbfa510b18d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529889"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543996"
 ---
-# <a name="recurrence-recurrencetype"></a>Serie (serietype)
+# <a name="recurrence-recurrencetype"></a>Serie (RecurrenceType)
 
-Das **Serien** Element enthält das Serienmuster für Kalenderelemente und Besprechungsanfragen. 
+Das **Recurrence-Element** enthält das Serienmuster für Kalenderelemente und Besprechungsanfragen. 
   
 ```xml
 <Recurrence>
@@ -165,22 +165,22 @@ Keine.
 |:-----|:-----|
 |[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |Beschreibt ein relatives jährliches Serienmuster.  <br/> |
 |[AbsoluteYearlyRecurrence](absoluteyearlyrecurrence.md) <br/> |Stellt ein jährliches Serienmuster dar.  <br/> |
-|[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |Beschreibt ein relatives monatliches Serienmuster für ein wiederkehrendes Kalenderelement.  <br/> |
+|[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |Beschreibt ein relatives monatliches Serienmuster für ein Wiederkehrendes Kalenderelement.  <br/> |
 |[AbsoluteMonthlyRecurrence](absolutemonthlyrecurrence.md) <br/> |Stellt ein monatliches Serienmuster dar.  <br/> |
-|[WeeklyRecurrence](weeklyrecurrence.md) <br/> |Beschreibt die Häufigkeit in Wochen und die Tage, an denen ein Kalenderelement oder eine Aufgabe erneut auftritt.  <br/> |
-|[DailyRecurrence](dailyrecurrence.md) <br/> |Beschreibt die Häufigkeit in Tagen, in der ein Kalenderelement oder eine Aufgabe erneut auftritt.  <br/> |
-|[NoEndRecurrence](noendrecurrence.md) <br/> |Beschreibt ein Serienmuster, das nicht über ein definiertes Enddatum verfügt.  <br/> Die Verwendung dieses Elements schließt die Verwendung der Elemente [EndDateRecurrence](enddaterecurrence.md) und [NumberedRecurrence](numberedrecurrence.md) aus.  <br/> |
-|[EndDateRecurrence](enddaterecurrence.md) <br/> |Beschreibt das Startdatum und das Enddatum eines Element Serienmusters.  <br/> Die Verwendung dieses Elements schließt die Verwendung der Elemente [NoEndRecurrence](noendrecurrence.md) und [NumberedRecurrence](numberedrecurrence.md) aus.  <br/> |
-|[NumberedRecurrence](numberedrecurrence.md) <br/> |Beschreibt das Startdatum und die Anzahl der Vorkommen eines wiederkehrenden Elements.  <br/> Die Verwendung dieses Elements schließt die Verwendung der Elemente [NoEndRecurrence](noendrecurrence.md) und [EndDateRecurrence](enddaterecurrence.md) aus.  <br/> |
+|[WeeklyRecurrence](weeklyrecurrence.md) <br/> |Beschreibt die Häufigkeit in Wochen und die Tage, an denen ein Kalenderelement oder eine Aufgabe wiederholt wird.  <br/> |
+|[DailyRecurrence](dailyrecurrence.md) <br/> |Beschreibt die Häufigkeit in Tagen, in der ein Kalenderelement oder eine Aufgabe wiederholt wird.  <br/> |
+|[NoEndRecurrence](noendrecurrence.md) <br/> |Beschreibt ein Serienmuster ohne ein definiertes Enddatum.  <br/> Die Verwendung dieses Elements schließt die Verwendung der Elemente [EndDateRecurrence](enddaterecurrence.md) und [NumberedRecurrence](numberedrecurrence.md) aus.  <br/> |
+|[EndDateRecurrence](enddaterecurrence.md) <br/> |Beschreibt das Startdatum und das Enddatum eines Elementserienmusters.  <br/> Die Verwendung dieses Elements schließt die Verwendung der Elemente [NoEndRecurrence](noendrecurrence.md) und [NumberedRecurrence](numberedrecurrence.md) aus.  <br/> |
+|[NumberedRecurrence](numberedrecurrence.md) <br/> |Beschreibt das Startdatum und die Anzahl der Vorkommen einer Terminserie.  <br/> Die Verwendung dieses Elements schließt die Verwendung der [Elemente NoEndRecurrence](noendrecurrence.md) und [EndDateRecurrence](enddaterecurrence.md) aus.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanfrage im Exchange-Informationsspeicher  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanfrage im Exchange Store dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element ist gültig, wenn [CalendarItemType](calendaritemtype.md) den RecurringMaster-Wert aufweist. 
   

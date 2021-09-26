@@ -1,23 +1,23 @@
 ---
-title: URLs (ArrayOfUrlEntitiesType)
+title: Urls (ArrayOfUrlEntitiesType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c39744ea-0cee-4954-8653-8279d6b10161
-description: Das URLs-Element gibt ein Array von URLs an, die das Ergebnis der Entitäts Extraktion aus einem Element im Postfach sind.
-ms.openlocfilehash: 0d30c05c23f8d2c9617244c40dc36f6faa222312
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Urls-Element gibt ein Array von URLs an, die das Ergebnis der Entitätsextraktion aus einem Element im Postfach sind.
+ms.openlocfilehash: 50f3af799afddc8af14f54d47856b19b0e0bfd33
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466528"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542715"
 ---
-# <a name="urls-arrayofurlentitiestype"></a>URLs (ArrayOfUrlEntitiesType)
+# <a name="urls-arrayofurlentitiestype"></a>Urls (ArrayOfUrlEntitiesType)
 
-Das **URLs** -Element gibt ein Array von URLs an, die das Ergebnis der Entitäts Extraktion aus einem Element im Postfach sind. 
+Das Urls-Element gibt ein Array von URLs an, die das Ergebnis der **Entitätsextraktion** aus einem Element im Postfach sind. 
   
 ```XML
 <Urls>
@@ -42,7 +42,7 @@ Keine.
 
 [EntityExtractionResult](entityextractionresult.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

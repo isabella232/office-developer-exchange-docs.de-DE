@@ -1,30 +1,30 @@
 ---
-title: MissedCallNotificationEnabled (um-Webdienst)
+title: MissedCallNotificationEnabled (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MissedCallNotificationEnabled
 api_type:
 - schema
 ms.assetid: 8e6bf0b1-ff76-474c-ac0f-621b6ab89212
-description: Das MissedCallNotificationEnabled-Element enthält einen Wert, der angibt, ob eine Benachrichtigung über verpasste Anrufe in einer Antwort auf eine Anforderung für den GetUMProperties-Vorgang (um-Webdienst) aktiviert ist.
-ms.openlocfilehash: e2f18027c56be1408c27d5f687fe90f8ffd724db
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MissedCallNotificationEnabled-Element enthält einen Wert, der angibt, ob eine Benachrichtigung über verpasste Anrufe in einer Antwort auf eine GetUMProperties-Vorgangsanforderung (UM-Webdienst) aktiviert ist.
+ms.openlocfilehash: 0566312db672b3795e5f163a35e4c31ae6b26af4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468656"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542043"
 ---
-# <a name="missedcallnotificationenabled-um-web-service"></a>MissedCallNotificationEnabled (um-Webdienst)
+# <a name="missedcallnotificationenabled-um-web-service"></a>MissedCallNotificationEnabled (UM-Webdienst)
 
-Das **MissedCallNotificationEnabled** -Element enthält einen Wert, der angibt, ob eine Benachrichtigung über verpasste Anrufe in einer Antwort auf eine Anforderung für den [GetUMProperties-Vorgang (um-Webdienst)](getumproperties-operation-um-web-service.md) aktiviert ist. 
+Das **MissedCallNotificationEnabled-Element** enthält einen Wert, der angibt, ob eine Benachrichtigung über verpasste Anrufe in einer Antwort auf eine [GetUMProperties-Vorgangsanforderung (UM-Webdienst)](getumproperties-operation-um-web-service.md) aktiviert ist. 
   
-[GetUMPropertiesResponse (um-Webdienst)](getumpropertiesresponse-um-web-service.md)
+[GetUMPropertiesResponse (UM-Webdienst)](getumpropertiesresponse-um-web-service.md)
   
-[MissedCallNotificationEnabled (um-Webdienst)](missedcallnotificationenabled-um-web-service.md)
+[MissedCallNotificationEnabled (UM-Webdienst)](missedcallnotificationenabled-um-web-service.md)
   
 ```xml
 <MissedCallNotificationEnabled/>
@@ -47,15 +47,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[GetUMPropertiesResponse (um-Webdienst)](getumpropertiesresponse-um-web-service.md) <br/> |Definiert eine Antwort auf eine [GetUMProperties-Vorgangsanforderung (um-Webdienst)](getumproperties-operation-um-web-service.md) .  <br/> |
+|[GetUMPropertiesResponse (UM-Webdienst)](getumpropertiesresponse-um-web-service.md) <br/> |Definiert eine Antwort auf eine [GetUMProperties-Vorgangsanforderung (UM-Webdienst).](getumproperties-operation-um-web-service.md)  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein boolescher Textwert ist erforderlich. Im Folgenden sind die möglichen Werte aufgeführt:
   
-- Wahr
+- Richtig
     
-- Falsch
+- False
     
 ## <a name="element-information"></a>Informationen zu Elementen
 
@@ -63,14 +63,14 @@ Ein boolescher Textwert ist erforderlich. Im Folgenden sind die möglichen Werte
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[GetUMProperties-Vorgang (um-Webdienst)](getumproperties-operation-um-web-service.md)
+[GetUMProperties-Vorgang (UM-Webdienst)](getumproperties-operation-um-web-service.md)
   
-[SetMissedCallNotificationEnabled-Vorgang (um-Webdienst)](setmissedcallnotificationenabled-operation-um-web-service.md)
+[SetMissedCallNotificationEnabled-Vorgang (UM-Webdienst)](setmissedcallnotificationenabled-operation-um-web-service.md)
 

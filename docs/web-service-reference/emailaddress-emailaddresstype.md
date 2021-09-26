@@ -1,23 +1,23 @@
 ---
-title: E-mailemail (e-)
+title: EmailAddress (EmailAddressType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0cdabfcb-7658-4c7d-bb03-1e776ed11e43
-description: Das Address-Element gibt die vollständig aufgelöste SMTP-Adresse für das websitepostfach oder die zugehörige Rolle an.
-ms.openlocfilehash: 8b04b75e91cc16be7f88c9a0ac08c5e36855056e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das EmailAddress-Element gibt die vollständig aufgelöste SMTP-Adresse für das Websitepostfach oder die zugeordnete Persona an.
+ms.openlocfilehash: 76b279a82f6f277d9f231866437359ceae46df59
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463461"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545258"
 ---
-# <a name="emailaddress-emailaddresstype"></a>E-mailemail (e-)
+# <a name="emailaddress-emailaddresstype"></a>EmailAddress (EmailAddressType)
 
-Das Address **-Element gibt die voll** ständig aufgelöste SMTP-Adresse für das websitepostfach oder die zugehörige Rolle an. 
+Das **EmailAddress-Element** gibt die vollständig aufgelöste SMTP-Adresse für das Websitepostfach oder die zugeordnete Persona an. 
   
 ```xml
 <EmailAddress>
@@ -42,27 +42,27 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Name (Zeichenfolge)](name-string.md) <br/> |Gibt einen Such Einschränkungsnamen oder-Schlüssel oder den Namen eines e-Mail-Benutzers an.  <br/> |
+|[Name (Zeichenfolge)](name-string.md) <br/> |Gibt einen Namen oder Schlüssel der Sucheinschränkung oder den Namen eines E-Mail-Benutzers an.  <br/> |
 |[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Definiert die primäre SMTP-Adresse eines Postfachbenutzers.  <br/> |
-|[Routingtype (e-mailemailtype)](routingtype-emailaddresstype.md) <br/> |Gibt den Routingtyp einer e-Mail-Adresse an.  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |Stellt den Typ des Postfachs dar, der durch die e-Mail-Adresse dargestellt wird.  <br/> |
-|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel eines Elements in der Exchange-Informationsspeicher.  <br/> |
+|[RoutingType (EmailAddressType)](routingtype-emailaddresstype.md) <br/> |Gibt den Routingtyp einer E-Mail-Adresse an.  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |Stellt den Typ des Postfachs dar, das durch die E-Mail-Adresse dargestellt wird.  <br/> |
+|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel eines Elements im Exchange Speicher.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Persona](persona.md) <br/> |Gibt eine Gruppe von Persona-Daten an, die von einer **getpersona** -Anforderung zurückgegeben werden.  <br/> |
+|[Persona](persona.md) <br/> |Gibt eine Reihe von Persona-Daten an, die von einer **GetPersona-Anforderung** zurückgegeben werden.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element ist optional.
   
-Das **Email** -Element ist für Clients gültig, die Exchange Online und Versionen von Exchange Server, die mit Exchange 2013 beginnen, abzielen. 
+Das **EmailAddress-Element** gilt für Clients, die ab Exchange 2013 auf Exchange Online und Versionen von Microsoft Exchange Server abzielen. 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
@@ -70,7 +70,7 @@ Das **Email** -Element ist für Clients gültig, die Exchange Online und Version
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExternalReply
 api_type:
 - schema
 ms.assetid: cbcfa469-242c-4f98-8f4f-2c9bcbe69f5a
-description: Das ExternalReply-Element enthält die Abwesenheitsantwort, die an Adressen außerhalb der Domäne des Empfängers oder der vertrauenswürdigen Domänen gesendet wird.
-ms.openlocfilehash: c3381979e5e6aad51f9ae2bb3e661003ef793be6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ExternalReply-Element enthält die Abwesenheitsantwort (OOF), die an Adressen außerhalb der Domäne oder der vertrauenswürdigen Domänen des Empfängers gesendet wird.
+ms.openlocfilehash: b09e7136c1be7f30bae42585b12d203cf404d2c4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458761"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545125"
 ---
 # <a name="externalreply"></a>ExternalReply
 
-Das **ExternalReply** -Element enthält die Abwesenheitsantwort, die an Adressen außerhalb der Domäne des Empfängers oder der vertrauenswürdigen Domänen gesendet wird. 
+Das **ExternalReply-Element** enthält die Abwesenheitsantwort (OOF), die an Adressen außerhalb der Domäne oder der vertrauenswürdigen Domänen des Empfängers gesendet wird. 
   
 ```XML
 <ExternalReply>
@@ -38,28 +38,28 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|XML: lang  <br/> |Gibt die Sprache an, die in der **ExternalReply** -Nachricht verwendet wird. Die möglichen Werte für dieses Attribut werden durch IETF RFC 3066 definiert.  <br/> |
+|xml:lang  <br/> |Gibt die Sprache an, die in der **ExternalReply-Nachricht** verwendet wird. Die möglichen Werte für dieses Attribut werden von IETF RFC 3066 definiert.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Message (Verfügbarkeit)](message-availability.md) <br/> |Enthält die Abwesenheitsantwort.  <br/> |
+|[Nachricht (Verfügbarkeit)](message-availability.md) <br/> |Enthält die OOF-Antwort.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserOofSettings](useroofsettings.md) <br/> |Gibt die Abwesenheitseinstellungen an.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |Gibt die OOF-Einstellungen an.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
 |[OofSettings](oofsettings.md) <br/> |Enthält die OOF-Einstellungen.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel einer SetUserOofSettings-Anforderung wird die [OofState](oofstate.md) auf **Enabled**festgelegt, die Dauer OOF auf 10 Tage festgelegt und die internen und externen Abwesenheitsnachrichten festgelegt.
+Im folgenden Beispiel einer SetUserOofSettings-Anforderung wird [OofState](oofstate.md) auf **Aktiviert** festgelegt, die Dauer von OOF auf 10 Tage festgelegt und die internen und externen OOF-Nachrichten festgelegt.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

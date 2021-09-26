@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RestrictedGroupIdentifier
 api_type:
 - schema
 ms.assetid: a3ea3c81-9f99-4836-8cb4-2384ea63f093
-description: Das RestrictGroupIdentifier-Element stellt die Gruppen-Sicherheits-ID (SID) und die Attribute für eine eingeschränkte Gruppe innerhalb eines Benutzertokens dar.
-ms.openlocfilehash: c95af4e09324e96f4551a05490dc200aec0cbd46
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das RestrictGroupIdentifier-Element stellt die Gruppensicherheits-ID (SID) und attribute für eine eingeschränkte Gruppe innerhalb eines Benutzertokens dar.
+ms.openlocfilehash: 65b356f4a8195979d751a3f5288940b391f51939
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465366"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544780"
 ---
 # <a name="restrictedgroupidentifier"></a>RestrictedGroupIdentifier
 
-Das **RestrictGroupIdentifier** -Element stellt die Gruppen-Sicherheits-ID (SID) und die Attribute für eine eingeschränkte Gruppe innerhalb eines Benutzertokens dar. 
+Das **RestrictGroupIdentifier-Element** stellt die Gruppensicherheits-ID (SID) und attribute für eine eingeschränkte Gruppe innerhalb eines Benutzertokens dar. 
   
 ```xml
 <RestrictedGroupIdentifier Attributes="">
@@ -44,15 +44,15 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SecurityIdentifier](securityidentifier.md) <br/> |Stellt das SDDL-Formular (Security Descriptor Definition Language) einer Sicherheits-ID dar.  <br/> |
+|[Securityidentifier](securityidentifier.md) <br/> |Stellt die SDDL-Form (Security Descriptor Definition Language) eines Sicherheitsbezeichners dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[RestrictedGroupSids](restrictedgroupsids.md) <br/> |Stellt eine Auflistung von eingeschränkten Gruppen in einem Benutzertoken dar. Die Serialisierung von Token wird nicht unterstützt.  <br/> |
+|[RestrictedGroupSids](restrictedgroupsids.md) <br/> |Stellt eine Auflistung von eingeschränkten Gruppen innerhalb eines Benutzertokens dar. Die Token-Serialisierung wird nicht unterstützt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

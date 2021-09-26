@@ -1,23 +1,23 @@
 ---
-title: AddressList
+title: AddressListId
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a3334bb2-90dc-4fe1-96d9-890b13d9ff30
-description: Das AddressList-Element gibt den Bezeichner einer Adressliste an.
-ms.openlocfilehash: c33944bf6e41903a5de596628e1ce7ba9f7421e1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AddressListId-Element gibt den Bezeichner einer Adressliste an.
+ms.openlocfilehash: 5348c6877e24fcc0c8873df1098f8a8e30fe4c1c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463608"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541560"
 ---
-# <a name="addresslistid"></a>AddressList
+# <a name="addresslistid"></a>AddressListId
 
-Das **AddressList** -Element gibt den Bezeichner einer Adressliste an. 
+Das **AddressListId-Element** gibt den Bezeichner einer Adressliste an. 
   
 ```XML
 <AddressListId Id="">
@@ -33,7 +33,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Id** <br/> |Eine Zeichenfolgen-Adresslisten-ID. Dieses Attribut ist erforderlich.  <br/> |
+|**Id** <br/> |Eine Zeichenfolgenadresslisten-ID. Dieses Attribut ist erforderlich.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -43,12 +43,12 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ContextFolderId](contextfolderid.md) <br/> |Gibt den Ordner an, der für Aktionen vorgesehen ist, die Ordner verwenden. Dieses Element muss beim Kopieren, löschen, verschieben und Festlegen des Lese Zustands für Unterhaltungselemente in einem Zielordner vorhanden sein.  <br/> |
-|[CopyToFolder](copytofolder.md) <br/> |Gibt den Bezeichner des Ordners an, in den e-Mail-Elemente kopiert werden.  <br/> |
-|[DestinationFolderId](destinationfolderid.md) <br/> |Gibt den Zielordner für die Aktionen kopieren und verlegen an.  <br/> |
-|[MoveToFolder](movetofolder.md) <br/> |Gibt den Bezeichner des Ordners an, in den e-Mail-Elemente verschoben werden.  <br/> |
+|[ContextFolderId](contextfolderid.md) <br/> |Gibt den Ordner an, der für Aktionen bestimmt ist, die Ordner verwenden. Dieses Element muss beim Kopieren, Löschen, Verschieben und Festlegen des Lesestatus von Unterhaltungselementen in einem Zielordner vorhanden sein.  <br/> |
+|[CopyToFolder](copytofolder.md) <br/> |Gibt den Bezeichner des Ordners an, in den E-Mail-Elemente kopiert werden.  <br/> |
+|[DestinationFolderId](destinationfolderid.md) <br/> |Gibt den Zielordner für Kopier- und Verschiebungsaktionen an.  <br/> |
+|[MoveToFolder](movetofolder.md) <br/> |Gibt den Bezeichner des Ordners an, in den E-Mail-Elemente verschoben werden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -60,7 +60,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

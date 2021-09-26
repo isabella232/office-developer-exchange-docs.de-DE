@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2a243852-362f-4bde-95ab-fe42ead61a85
-description: Das GetImItemList-Element definiert eine Anforderung zum Abrufen einer Liste von Instant Messaging-Gruppen und-Kontakten.
-ms.openlocfilehash: 435bacdc292eb8e7ea8a7822a2a4cd592598cb03
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GetImItemList-Element definiert eine Anforderung zum Abrufen einer Liste von Chatgruppen und Kontakten.
+ms.openlocfilehash: 593c0edc4b43c0da3b811e05922198149cffbe50
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456059"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546273"
 ---
 # <a name="getimitemlist"></a>GetImItemList
 
-Das **GetImItemList** -Element definiert eine Anforderung zum Abrufen einer Liste von Instant Messaging-Gruppen und-Kontakten. 
+Das **GetImItemList-Element** definiert eine Anforderung zum Abrufen einer Liste von Chatgruppen und Kontakten. 
   
 ```XML
 <GetImItemList>
@@ -42,7 +42,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -54,7 +54,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Kann leer sein  <br/> |true  <br/> |
    
 

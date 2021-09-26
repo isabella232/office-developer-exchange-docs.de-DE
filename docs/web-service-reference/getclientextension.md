@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c96c2b4c-45cb-482a-a3bb-7a11a0fff43b
 description: Das GetClientExtension-Element stellt eine Anforderung zum Abrufen einer Clienterweiterung dar.
-ms.openlocfilehash: caa069195a3b82af4e5b5984dcb6e4124b11899b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: b54484dd2d21c351d757621199622ac0f9433cdb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526340"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545006"
 ---
 # <a name="getclientextension"></a>GetClientExtension
 
-Das **GetClientExtension** -Element stellt eine Anforderung zum Abrufen einer Clienterweiterung dar. 
+Das **GetClientExtension-Element** stellt eine Anforderung zum Abrufen einer Clienterweiterung dar. 
   
 ```XML
 <GetClientExtension>
@@ -38,13 +38,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[RequestedExtensionIds](requestedextensionids.md)  |  [User Parameters](userparameters.md)  |  [IsDebug](isdebug.md)
+[RequestedExtensionIds](requestedextensionids.md)  |  [UserParameters](userparameters.md)  |  [IsDebug](isdebug.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

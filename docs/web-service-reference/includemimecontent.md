@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IncludeMimeContent
 api_type:
 - schema
 ms.assetid: 3f3c2300-55cd-41c0-900e-b470b290d52f
-description: Das IncludeMimeContent-Element gibt an, ob der Multipurpose Internet Mail Extensions (MIME) Inhalt eines Elements oder einer Anlage in der Antwort zurückgegeben wird.
-ms.openlocfilehash: 6198e4bef2dc59e6e56a8d3cbe463dad13e544e8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das IncludeMimeContent-Element gibt an, ob der MIME-Inhalt (Multipurpose Internet Mail Extensions) eines Elements oder einer Anlage in der Antwort zurückgegeben wird.
+ms.openlocfilehash: 04d015ea450907f3968200dcbb6f411eb6343681
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457193"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542176"
 ---
 # <a name="includemimecontent"></a>IncludeMimeContent
 
-Das **IncludeMimeContent** -Element gibt an, ob der Multipurpose Internet Mail Extensions (MIME) Inhalt eines Elements oder einer Anlage in der Antwort zurückgegeben wird. 
+Das **IncludeMimeContent-Element** gibt an, ob der MIME-Inhalt (Multipurpose Internet Mail Extensions) eines Elements oder einer Anlage in der Antwort zurückgegeben wird. 
   
 ```xml
 <IncludeMimeContent>true or false</IncludeMimeContent>
@@ -44,14 +44,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AttachmentShape](attachmentshape.md) <br/> | Identifiziert zusätzliche Eigenschaften, die in einer Antwort auf eine [GetAttachment](getattachment.md) -Anforderung zurückgegeben werden sollen.  <br/> <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/><br/>  `/GetAttachment/AttachmentShape` <br/> |
-|[ItemShape](itemshape.md) <br/> | Identifiziert die Elementeigenschaften und Inhalte, die in einer GetItem-, FindItem-oder SyncFolderItems-Antwort enthalten sein sollen.  <br/> <br/> Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/>  <br/>  `/GetItem/ItemShape` <br/><br/>  `/FindItem/ItemShape` <br/><br/>  `/SyncFolderItems/ItemShape` <br/> |
+|[AttachmentShape](attachmentshape.md) <br/> | Identifiziert zusätzliche Eigenschaften, die in einer Antwort auf eine [GetAttachment-Anforderung](getattachment.md) zurückgegeben werden sollen.  <br/> <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/><br/>  `/GetAttachment/AttachmentShape` <br/> |
+|[ItemShape](itemshape.md) <br/> | Identifiziert die Elementeigenschaften und -inhalte, die in eine GetItem-, FindItem- oder SyncFolderItems-Antwort eingeschlossen werden sollen.  <br/> <br/> Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/>  <br/>  `/GetItem/ItemShape` <br/><br/>  `/FindItem/ItemShape` <br/><br/>  `/SyncFolderItems/ItemShape` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Dieses Element kann entweder **true** oder **false**sein. Der Standardwert ist **false**. Dies ist ein boolescher Datentyp.
+Dieses Element kann entweder **"true"** oder **"false" sein.** Der Standardwert ist **false**. Dies ist ein boolescher Datentyp.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element ist optional.
   
@@ -59,7 +59,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel einer Anforderung wird veranschaulicht, wie das **IncludeMimeContent** -Element festgelegt wird. 
+Das folgende Beispiel einer Anforderung veranschaulicht, wie das **IncludeMimeContent-Element** festgelegt wird. 
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -82,7 +82,7 @@ Im folgenden Beispiel einer Anforderung wird veranschaulicht, wie das **IncludeM
 </soap:Envelope>
 ```
 
-Das Attribut Attachment ID wird abgeschnitten, um die Lesbarkeit beizubehalten.
+Das Anlagen-ID-Attribut wird abgeschnitten, um die Lesbarkeit zu gewährleisten.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

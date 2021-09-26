@@ -1,23 +1,23 @@
 ---
-title: Access Level
+title: AccessLevel
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 09475586-00fa-4e82-a915-5ca263ab4d1c
-description: Das Access Level-Element gibt die Zugriffsebene für eine Onlinebesprechung an.
-ms.openlocfilehash: 3c1375ef37ea666c6c4fafce7daa46ae0d0a2696
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AccessLevel-Element gibt die Zugriffsebene für eine Onlinebesprechung an.
+ms.openlocfilehash: f1c85579affe7d1142b22a890808bceeb8f82d38
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462339"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544416"
 ---
-# <a name="accesslevel"></a>Access Level
+# <a name="accesslevel"></a>AccessLevel
 
-Das **Access Level** -Element gibt die Zugriffsebene für eine Onlinebesprechung an. 
+Das **AccessLevel-Element** gibt die Zugriffsebene für eine Onlinebesprechung an. 
   
 ```XML
 <AccessLevel/>
@@ -44,18 +44,18 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-In der folgenden Tabelle sind die Text Werte für das **Access Level** -Element aufgeführt. 
+In der folgenden Tabelle sind die Textwerte für das **AccessLevel-Element** aufgeführt. 
   
-**Access Level-Element Text Werte**
+**AccessLevel-Elementtextwerte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Alle  <br/> |Die Zugriffsebene ist für alle geöffnet.  <br/> |
+|Jeder  <br/> |Die Zugriffsebene ist für alle offen.  <br/> |
 |Intern  <br/> |Die Zugriffsebene ist nur intern.  <br/> |
-|Eingeladen  <br/> |Die Zugriffsebene wird nur von Teilnehmern eingeladen.  <br/> |
+|Eingeladen  <br/> |Die Zugriffsebene ist nur eingeladene Teilnehmer.  <br/> |
 |Gesperrt  <br/> |Die Zugriffsebene ist gesperrt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

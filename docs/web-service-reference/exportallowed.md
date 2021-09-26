@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dcff5ccc-31dc-4941-9f71-d6519133aebb
 description: Das ExportAllowed-Element gibt an, ob der Export aktiviert ist.
-ms.openlocfilehash: f5a9aa3040c45d535ef338010bb37bcedb797ffc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 5f7193fa8065124281b96b329105bbc6a0933e58
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460631"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545146"
 ---
 # <a name="exportallowed"></a>ExportAllowed
 
-Das **ExportAllowed** -Element gibt an, ob der Export aktiviert ist. 
+Das **ExportAllowed-Element** gibt an, ob der Export aktiviert ist. 
   
 ```XML
 <ExportAllowed>true | false</ExportAllowed>
@@ -44,9 +44,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **ExportAllowed** -Element gibt an, dass der Export zulässig ist. Der Wert **false** gibt an, dass der Exportvorgang nicht zulässig ist. 
+Der Textwert  true für das **ExportAllowed-Element** gibt an, dass der Export zulässig ist. Der Wert **"false"** gibt an, dass das Exportieren nicht zulässig ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element ist optional.
   
@@ -60,7 +60,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

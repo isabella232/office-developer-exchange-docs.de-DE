@@ -5,44 +5,44 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ed077877-9d98-4434-b8b6-a4a905e7f7a6
-description: Hier finden Sie Informationen zum GetNonIndexableItemStatistics-EWS-Vorgang.
-ms.openlocfilehash: c7d49f9e0d7b4191c7403cb4d1a20e70a96c3882
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum GetNonIndexableItemStatistics EWS-Vorgang.
+ms.openlocfilehash: e95cd016f73c92a75d9f366527e58045497363d0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44452818"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546238"
 ---
 # <a name="getnonindexableitemstatistics-operation"></a>GetNonIndexableItemStatistics-Vorgang
 
-Hier finden Sie Informationen zum **GetNonIndexableItemStatistics** -EWS-Vorgang. 
+Hier finden Sie Informationen zum **GetNonIndexableItemStatistics** EWS-Vorgang. 
   
-Der **GetNonIndexableItemStatistics** -Vorgang ruft die Anzahl der Elemente ab, die nicht in einem Postfach indiziert werden können. 
+Der **GetNonIndexableItemStatistics-Vorgang** ruft die Anzahl der Elemente ab, die nicht in einem Postfach indiziert werden können. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-getnonindexableitemstatistics-operation"></a>Verwenden des GetNonIndexableItemStatistics-Vorgangs
 
-Der **GetNonIndexableItemStatistics** -Vorgang zählt Postfachelemente, die nicht indiziert werden können. Elemente, die nicht indiziert werden können, werden während einer Discovery-Suche nicht durchsucht. 
+Der **GetNonIndexableItemStatistics-Vorgang** zählt Postfachelemente, die nicht indiziert werden können. Elemente, die nicht indiziert werden können, werden während einer Ermittlungssuche nicht durchsucht. 
   
 ### <a name="getnonindexableitemstatistics-operation-soap-headers"></a>SOAP-Header des GetNonIndexableItemStatistics-Vorgangs
 
-Der **GetNonIndexableItemStatistics** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **GetNonIndexableItemStatistics-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Gibt die Serverrollen an, die erforderlich sind, damit der Anrufer die Anforderung stellen muss. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Identifiziert die Serverrollen, die erforderlich sind, damit der Aufrufer die Anforderung stellen kann. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="getnonindexableitemstatistics-operation-request-example-get-the-count-of-items-that-cannot-be-indexed-in-a-mailbox"></a>GetNonIndexableItemStatistics-Vorgangs Anforderungs Beispiel: Abrufen der Anzahl von Elementen, die nicht in einem Postfach indiziert werden können
+## <a name="getnonindexableitemstatistics-operation-request-example-get-the-count-of-items-that-cannot-be-indexed-in-a-mailbox"></a>GetNonIndexableItemStatistics-Vorgangsanforderungsbeispiel: Abrufen der Anzahl der Elemente, die nicht in einem Postfach indiziert werden können
 
-Im folgenden Beispiel einer **GetNonIndexableItemStatistics** -Vorgangsanforderung wird veranschaulicht, wie die Anzahl der Elemente angefordert wird, die nicht in einem Postfach indiziert werden können. 
+Das folgende Beispiel einer **GetNonIndexableItemStatistics-Vorgangsanforderung** zeigt, wie sie die Anzahl der Elemente anfordert, die nicht in einem Postfach indiziert werden können. 
   
 > [!NOTE]
-> Alle Legacy Domänennamen in diesem Beispiel sind verkürzt worden, um die Lesbarkeit zu erhalten. 
+> Alle älteren Domänennamen in diesem Beispiel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -64,7 +64,7 @@ Im folgenden Beispiel einer **GetNonIndexableItemStatistics** -Vorgangsanforderu
 
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [GetNonIndexableItemStatistics](getnonindexableitemstatistics.md)
     
@@ -74,9 +74,9 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [SearchArchiveOnly](searcharchiveonly.md)
     
-## <a name="successful-getnonindexableitemstatistics-operation-response"></a>Erfolgreiche Reaktion des GetNonIndexableItemStatistics-Vorgangs
+## <a name="successful-getnonindexableitemstatistics-operation-response"></a>Erfolgreiche GetNonIndexableItemStatistics-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetNonIndexableItemStatistics** -Vorgangsanforderung zum Abrufen der Anzahl von Elementen, die nicht in einem Postfach indiziert werden können. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetNonIndexableItemStatistics-Vorgangsanforderung,** um die Anzahl der Elemente abzurufen, die nicht in einem Postfach indiziert werden können. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -109,7 +109,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetNonIndexable
 
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [GetNonIndexableItemStatisticsResponse](getnonindexableitemstatisticsresponse.md)
     
@@ -123,9 +123,9 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [ItemCount](itemcount.md)
     
-## <a name="getnonindexableitemstatistics-operation-error-response"></a>Fehlerantwort des GetNonIndexableItemStatistics-Vorgangs
+## <a name="getnonindexableitemstatistics-operation-error-response"></a>GetNonIndexableItemStatistics-Vorgangsfehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetNonIndexableItemStatistics** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Abrufen der Anzahl von Elementen, die nicht aus mehr als einem Postfach indiziert werden können. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetNonIndexableItemStatistics-Vorgangsanforderung.** Dies ist eine Antwort auf eine Anforderung zum Abrufen der Anzahl der Elemente, die nicht aus mehr als einem Postfach indiziert werden können. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -164,7 +164,7 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
+Weitere Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

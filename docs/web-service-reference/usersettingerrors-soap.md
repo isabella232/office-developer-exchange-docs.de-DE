@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: a9b94bae-cab9-412d-a811-801e849ed6c5
 description: Das UserSettingErrors-Element stellt eine Sammlung von Informationen zu Einstellungen dar, die nicht zurückgegeben werden konnten.
-ms.openlocfilehash: a6cc0fe114bd511dc4136532986b552c28b0d5c2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: dfcd2a0475857d95d1a7dadb3cb65b544e0f2c5d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467123"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541686"
 ---
 # <a name="usersettingerrors-soap"></a>UserSettingErrors (SOAP)
 
-Das **UserSettingErrors** -Element stellt eine Sammlung von Informationen zu Einstellungen dar, die nicht zurückgegeben werden konnten. 
+Das **UserSettingErrors-Element** stellt eine Sammlung von Informationen zu Einstellungen dar, die nicht zurückgegeben werden konnten. 
   
 ```XML
 <UserSettingErrors>
@@ -45,7 +45,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[User Response (SOAP)](userresponse-soap.md) <br/> |Stellt eine Antwort auf eine GetUserSettings-Anforderung für einen einzelnen Benutzer dar.  <br/> |
+|[UserResponse (SOAP)](userresponse-soap.md) <br/> |Stellt eine Antwort auf eine GetUserSettings-Anforderung für einen einzelnen Benutzer dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
@@ -56,13 +56,13 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[XML-Elemente der SOAP-AutoErmittlung für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[SOAP AutoDiscover XML-Elemente für Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

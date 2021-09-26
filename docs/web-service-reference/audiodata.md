@@ -1,23 +1,23 @@
 ---
-title: Audiodaten
+title: AudioData
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c6d8aab-566a-4247-8bb6-52d8cd133f9d
-description: Das Audiodaten-Element ist nur für die interne Verwendung vorgesehen.
-ms.openlocfilehash: 3a07f231c1de984e39c6ebc4bd79b42142af6309
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AudioData-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: 25cc52efb8703f2520ae632d3779725e0266127f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463986"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545727"
 ---
-# <a name="audiodata"></a>Audiodaten
+# <a name="audiodata"></a>AudioData
 
-Das **Audiodaten** -Element ist nur für die interne Verwendung vorgesehen. 
+Das **AudioData-Element** ist nur für die interne Verwendung vorgesehen. 
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
@@ -35,7 +35,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

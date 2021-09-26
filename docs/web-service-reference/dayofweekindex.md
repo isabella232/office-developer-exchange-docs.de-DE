@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DayOfWeekIndex
 api_type:
 - schema
 ms.assetid: 82420338-a1f7-4887-b338-b2d93b2c2bf1
 description: Das DayOfWeekIndex-Element beschreibt, welche Woche in einem Monat in einem relativen Serienmuster verwendet wird.
-ms.openlocfilehash: c9235d83a944f9c8883439dd2adf190b88977f16
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 3b9af396bbd5c51b365da6a95b40b00718d47c3b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529210"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542519"
 ---
 # <a name="dayofweekindex"></a>DayOfWeekIndex
 
-Das **DayOfWeekIndex** -Element beschreibt, welche Woche in einem Monat in einem relativen Serienmuster verwendet wird. 
+Das **DayOfWeekIndex-Element** beschreibt, welche Woche in einem Monat in einem relativen Serienmuster verwendet wird. 
   
 ```xml
 <DayOfWeekIndex/>
@@ -58,9 +58,9 @@ Ein Textwert ist erforderlich. Im Folgenden sind die möglichen Werte aufgeführ
 - Vier    
 - Letzte
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Beispielsweise kann der zweite Montag eines Monats in der dritten Woche des Monats auftreten. Wenn ein Monat an einem Freitag beginnt, enthält die erste Woche des Monats nur ein paar Tage und enthält keinen Montag. Daher müsste der erste Montag in der zweiten Woche stattfinden.
+Beispielsweise kann der zweite Montag eines Monats in der dritten Woche dieses Monats auftreten. Wenn ein Monat an einem Freitag beginnt, enthält die erste Woche des Monats nur einige Tage und keinen Montag. Daher müsste der erste Montag in der zweiten Woche stattfinden.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

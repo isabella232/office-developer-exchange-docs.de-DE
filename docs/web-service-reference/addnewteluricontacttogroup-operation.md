@@ -5,45 +5,45 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c9688ce8-2465-45bb-8bd2-94b32ed4885c
-description: Hier finden Sie Informationen zur Verwendung des AddNewTelUriContactToGroup-EWS-Vorgangs.
-ms.openlocfilehash: 91228ec627ad928d2f1837c135af24846f811b1c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zur Verwendung des EWS-Vorgangs "AddNewTelUriContactToGroup".
+ms.openlocfilehash: 2ad0f55c044e92e2f18a1705ab53be467a804091
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464945"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544297"
 ---
 # <a name="addnewteluricontacttogroup-operation"></a>AddNewTelUriContactToGroup-Vorgang
 
-Hier finden Sie Informationen zur Verwendung des **AddNewTelUriContactToGroup** -EWS-Vorgangs. 
+Hier finden Sie Informationen zur Verwendung des EWS-Vorgangs **"AddNewTelUriContactToGroup".** 
   
-Mit dem **AddNewTelUriContactToGroup** -Vorgang wird eine neue Kontaktgruppe basierend auf der Telefonnummer eines Kontakts hinzugefügt. 
+Der **AddNewTelUriContactToGroup-Vorgang** fügt einer Gruppe basierend auf der Telefonnummer eines Kontakts einen neuen Kontakt hinzu. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-addnewteluricontacttogroup-operation"></a>Verwenden des AddNewTelUriContactToGroup-Vorgangs
 
-Eine **AddNewTelUriContactToGroup** -Vorgangsanforderung sendet den Tel-URI, den SIP-URI, die Telefonnummer und die Gruppe des Kontakts, um den Kontakt hinzuzufügen. Eine **AddNewTelUriContactToGroup** -Vorgangs Antwort erstellt eine Persona für den neuen Kontakt. Dieser Vorgang ermöglicht Clients das Hinzufügen eines neuen Kontakts, auch wenn der Kontakt keinen Namen hat. 
+Eine **AddNewTelUriContactToGroup-Vorgangsanforderung** sendet den TEL-URI, DEN SIP-URI, die Telefonnummer und die Gruppe eines Kontakts, der der Kontakt hinzugefügt werden soll. Eine **AddNewTelUriContactToGroup-Vorgangsantwort** erstellt eine Persona für den neuen Kontakt. Mit diesem Vorgang können Clients einen neuen Kontakt hinzufügen, auch wenn der Kontakt keinen Namen hat. 
   
 ### <a name="addnewteluricontacttogroup-operation-soap-headers"></a>SOAP-Header des AddNewTelUriContactToGroup-Vorgangs
 
-Der **AddNewTelUriContactToGroup** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **AddNewTelUriContactToGroup-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden sollen. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dieser Header gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur, wie in RFC 3066 definiert, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden soll. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="addnewteluricontacttogroup-operation-request-example-add-a-new-contact-to-a-group"></a>AddNewTelUriContactToGroup-Vorgangs Anforderungs Beispiel: Hinzufügen eines neuen Kontakts zu einer Gruppe
+## <a name="addnewteluricontacttogroup-operation-request-example-add-a-new-contact-to-a-group"></a>AddNewTelUriContactToGroup-Vorgangsanforderungsbeispiel: Hinzufügen eines neuen Kontakts zu einer Gruppe
 
-Im folgenden Beispiel einer **AddNewTelUriContactToGroup** -Vorgangsanforderung wird gezeigt, wie ein neuer Kontakt erstellt und der neue Kontakt einer Sofortnachrichten Gruppe mithilfe der Tel-und SIP-URIs des Kontakts hinzugefügt wird. 
+Das folgende Beispiel einer **AddNewTelUriContactToGroup-Vorgangsanforderung** zeigt, wie Sie einen neuen Kontakt erstellen und den neuen Kontakt mithilfe der TEL- und SIP-URIs des Kontakts einer Chatgruppe hinzufügen. 
   
 > [!NOTE]
-> Alle Element-IDs und Änderungsschlüssel in diesem Artikel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Alle Elementbezeichner und Änderungsschlüssel in diesem Artikel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -65,7 +65,7 @@ Im folgenden Beispiel einer **AddNewTelUriContactToGroup** -Vorgangsanforderung 
 </soap:Envelope>
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [AddNewTelUriContactToGroup](addnewteluricontacttogroup.md)
     
@@ -77,9 +77,9 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [GroupId](groupid.md)
     
-## <a name="successful-addnewteluricontacttogroup-operation-response"></a>Erfolgreiche Reaktion des AddNewTelUriContactToGroup-Vorgangs
+## <a name="successful-addnewteluricontacttogroup-operation-response"></a>Erfolgreiche AddNewTelUriContactToGroup-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **AddNewTelUriContactToGroup** -Vorgangsanforderung zum Erstellen eines Kontakts. Die Antwort enthält den zugeordneten Rollenbezeichner für den Kontakt, den Anzeigenamen der Rolle, die in diesem Fall auf der Telefonnummer des Kontakts basiert, und die Element-ID des Kontakts, die als Teil der Quellbezeichner-Attribution angezeigt wird. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **AddNewTelUriContactToGroup-Vorgangsanforderung** zum Erstellen eines Kontakts. Die Antwort enthält die zugeordnete Persona-ID für den Kontakt, den Anzeigenamen der Persona, die in diesem Fall auf der Telefonnummer des Kontakts basiert, und den Elementbezeichner des Kontakts, der als Teil der Quellbezeichnerzuordnung angezeigt wird. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -145,7 +145,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **AddNewTelUriCon
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält folgende Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [AddNewTelUriContactToGroupResponse](addnewteluricontacttogroupresponse.md)
     
@@ -155,7 +155,7 @@ Der SOAP-Antworttext Körper enthält folgende Elemente:
     
 - [PersonaId](personaid.md)
     
-- [Personatype](personatype.md)
+- [PersonaType](personatype.md)
     
 - [CreationTime](creationtime.md)
     
@@ -171,7 +171,7 @@ Der SOAP-Antworttext Körper enthält folgende Elemente:
     
 - [RelevanceScore](relevancescore.md)
     
-- [Zuordnungen (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
+- [Attributions (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
     
 - [Attribution (PersonaAttributionType)](attribution-personaattributiontype.md)
     
@@ -181,7 +181,7 @@ Der SOAP-Antworttext Körper enthält folgende Elemente:
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
-- [Isschreibbar](iswritable.md)
+- [IsWritable](iswritable.md)
     
 - [IsQuickContact](isquickcontact.md)
     
@@ -193,7 +193,7 @@ Der SOAP-Antworttext Körper enthält folgende Elemente:
     
 - [Wert](value.md)
     
-- [Zuordnungen (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
+- [Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
     
 - [Attribution (Zeichenfolge)](attribution-string.md)
     
@@ -207,13 +207,13 @@ Der SOAP-Antworttext Körper enthält folgende Elemente:
     
 - [Typ (Zeichenfolge)](type-string.md)
     
-- [Zuordnungen (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
+- [Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
     
 - [Attribution (Zeichenfolge)](attribution-string.md)
     
-## <a name="addnewteluricontacttogroup-operation-error-response-example"></a>AddNewTelUriContactToGroup-Operation-Fehlerantwort (Beispiel)
+## <a name="addnewteluricontacttogroup-operation-error-response-example"></a>Beispiel für AddNewTelUriContactToGroup-Vorgangsfehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **AddNewTelUriContactToGroup** -Vorgangsanforderung, wenn der Gruppenbezeichner einen wohlgeformten Wert enthält, der keine Gruppe im Postfach identifiziert. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **AddNewTelUriContactToGroup-Vorgangsanforderung,** wenn der Gruppenbezeichner einen wohlgeformten Wert enthält, der keine Gruppe im Postfach identifiziert. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

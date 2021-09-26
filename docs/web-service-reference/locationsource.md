@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fc4d77d5-6200-4cf3-848a-1088fec0e0d6
-description: Das LocationSource-Element gibt Informationen über den Ursprung der zugeordneten Postadresse an, beispielsweise einen Kontakt oder ein Telefonbuch.
-ms.openlocfilehash: ceba52c43d1c798bb8f5492b779c7c45d7d00b0b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das LocationSource-Element gibt Informationen über den Ursprung der zugeordneten Postadresse an, z. B. einen Kontakt oder ein Telefonbuch.
+ms.openlocfilehash: f3569494d3e662fbc46060944c8bd399b62d656b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467102"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543261"
 ---
 # <a name="locationsource"></a>LocationSource
 
-Das **LocationSource** -Element gibt Informationen über den Ursprung der zugeordneten Postadresse an, beispielsweise einen Kontakt oder ein Telefonbuch. 
+Das **LocationSource-Element** gibt Informationen über den Ursprung der zugeordneten Postadresse an, z. B. einen Kontakt oder ein Telefonbuch. 
   
 ```XML
 <LocationSource> None | LocationServices | PhonebookServices | Device | Contact | Resource </LocationSource>
@@ -42,20 +42,20 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Die Textwerte für das **LocationSource** -Element sind in der folgenden Tabelle aufgeführt: 
+Die Textwerte für das **LocationSource-Element** sind in der folgenden Tabelle aufgeführt: 
   
-**LocationSource-Element Text Werte**
+**Textwerte des LocationSource-Elements**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Keine  <br/> |Es gibt keine Standort Quelle.  <br/> |
-|LocationServices  <br/> |Die Informationen wurden von den Standortdiensten abgerufen.  <br/> |
-|PhonebookServices  <br/> |Die Informationen wurden in Telefonbuch Diensten abgerufen.  <br/> |
+|Keine  <br/> |Es gibt keine Standortquelle.  <br/> |
+|LocationServices  <br/> |Die Informationen wurden von Standortdiensten abgerufen.  <br/> |
+|PhonebookServices  <br/> |Die Informationen wurden von Telefonbuchdiensten abgerufen.  <br/> |
 |Gerät  <br/> |Die Informationen wurden vom Gerät abgerufen.  <br/> |
 |Kontakt  <br/> |Die Informationen wurden von einem Kontakt abgerufen.  <br/> |
 |Ressource  <br/> |Die Informationen wurden aus einer Ressource abgerufen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

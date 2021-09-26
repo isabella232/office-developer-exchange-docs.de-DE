@@ -1,28 +1,28 @@
 ---
-title: ResetPIN (um-Webdienst)
+title: ResetPIN (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ResetPIN
 api_type:
 - schema
 ms.assetid: 383f0735-1caa-4675-a6e1-6dba6c5b1a28
-description: Das ResetPIN-Element definiert eine ResetPIN-Vorgangsanforderung (um-Webdienst).
-ms.openlocfilehash: de175797b202219df994708680ac8ab750b02880
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ResetPIN-Element definiert eine ResetPIN-Vorgangsanforderung (UM-Webdienst).
+ms.openlocfilehash: 4a40d927bb93a7c539ce8cd4e7498c3aa0d601bb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468852"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541840"
 ---
-# <a name="resetpin-um-web-service"></a>ResetPIN (um-Webdienst)
+# <a name="resetpin-um-web-service"></a>ResetPIN (UM-Webdienst)
 
-Das ResetPIN-Element definiert eine [ResetPIN-Vorgangsanforderung (um-Webdienst)](resetpin-operation-um-web-service.md) . 
+Das ResetPIN-Element definiert eine [ResetPIN-Vorgangsanforderung (UM-Webdienst).](resetpin-operation-um-web-service.md) 
   
-[ResetPIN (um-Webdienst)](resetpin-um-web-service.md)
+[ResetPIN (UM-Webdienst)](resetpin-um-web-service.md)
   
 ```xml
 <ResetPIN />
@@ -43,7 +43,7 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
@@ -55,12 +55,12 @@ Keine.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[ResetPIN-Vorgang (um-Webdienst)](resetpin-operation-um-web-service.md)
+[ResetPIN-Vorgang (UM-Webdienst)](resetpin-operation-um-web-service.md)
 

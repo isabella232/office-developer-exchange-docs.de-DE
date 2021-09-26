@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Update
 api_type:
 - schema
 ms.assetid: 4e204446-1c80-44f9-b93b-77ce630a01a5
 description: Das Update-Element identifiziert ein einzelnes Element, das im lokalen Clientspeicher aktualisiert werden soll.
-ms.openlocfilehash: 12248cbbd5d47a19e36d49fcebe6d4753a2e162f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 936226c671916b974eed9dea9ad2ea39bde482a9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468887"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541819"
 ---
 # <a name="update-itemsync"></a>Update (ItemSync)
 
-Das **Update** -Element identifiziert ein einzelnes Element, das im lokalen Clientspeicher aktualisiert werden soll. 
+Das **Update-Element** identifiziert ein einzelnes Element, das im lokalen Clientspeicher aktualisiert werden soll. 
   
 - [SyncFolderItemsResponse](syncfolderitemsresponse.md) 
 - [ResponseMessages](responsemessages.md)  
@@ -103,24 +103,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Item](item.md) <br/> |Stellt ein generisches Exchange-Element dar, das aktualisiert werden soll.  <br/> |
-|[Meldung](message-ex15websvcsotherref.md) <br/> |Stellt eine zu aktualisierenden Exchange-e-Mail-Nachricht dar.  <br/> |
-|[CalendarItem](calendaritem.md) <br/> |Stellt ein zu aktualisieres Exchange-Kalenderelement dar.  <br/> |
-|[Contact](contact.md) <br/> |Stellt ein zu aktualisieres Exchange-Kontaktelement dar.  <br/> |
+|[Item](item.md) <br/> |Stellt ein generisches Exchange zu aktualisierenden Element dar.  <br/> |
+|[Meldung](message-ex15websvcsotherref.md) <br/> |Stellt eine Exchange E-Mail-Nachricht dar, die aktualisiert werden soll.  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Stellt ein zu aktualisierende Exchange Kalenderelement dar.  <br/> |
+|[Contact](contact.md) <br/> |Stellt ein Exchange zu aktualisierende Kontaktelement dar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine zu aktualisierende Verteilerliste dar.  <br/> |
-|[MeetingMessage](meetingmessage.md) <br/> |Stellt eine zu aktualisierende Besprechungs Meldung dar.  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanfrage zum Aktualisieren dar.  <br/> |
+|[MeetingMessage](meetingmessage.md) <br/> |Stellt eine zu aktualisierende Besprechungsnachricht dar.  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanfrage dar, die aktualisiert werden soll.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Stellt eine Besprechungsantwort dar, die aktualisiert werden soll.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Stellt einen Besprechungs Abbruch dar, der aktualisiert werden soll.  <br/> |
-|[Task](task.md) <br/> |Stellt eine Aufgabe dar, die aktualisiert werden soll.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine zu aktualisierende Besprechungsabsage dar.  <br/> |
+|[Aufgabe](task.md) <br/> |Stellt eine Aufgabe dar, die aktualisiert werden soll.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Änderungen (Elemente)](changes-items.md) <br/> |Enthält ein Sequenz Array von Änderungstypen, die die Art der Unterschiede zwischen den Elementen auf dem Client und den Elementen auf dem Exchange-Server darstellen.  <br/> |
+|[Änderungen (Elemente)](changes-items.md) <br/> |Enthält ein Sequenzarray von Änderungstypen, die den Typ der Unterschiede zwischen den Elementen auf dem Client und den Elementen auf dem Exchange-Server darstellen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

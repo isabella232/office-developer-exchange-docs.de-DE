@@ -1,23 +1,23 @@
 ---
-title: Imaddresse (NonEmptyStringType)
+title: ImAddress (NonEmptyStringType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 13c7b0cc-f506-490b-adaa-3d01fc2400eb
-description: Das IMAddress-Element enthält die Instant Messaging-Adresse eines neuen Kontakts, der einer Sofortnachrichten Gruppe hinzugefügt wird.
-ms.openlocfilehash: eac3b6494f3f52dec007171462a95f9d7306530e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ImAddress-Element enthält die Chatadresse eines neuen Kontakts, der einer Chatgruppe hinzugefügt wird.
+ms.openlocfilehash: 241ff33369a10f493d63da48e4ab80974780de0e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457606"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542246"
 ---
-# <a name="imaddress-nonemptystringtype"></a>Imaddresse (NonEmptyStringType)
+# <a name="imaddress-nonemptystringtype"></a>ImAddress (NonEmptyStringType)
 
-Das **IMAddress** -Element enthält die Instant Messaging-Adresse eines neuen Kontakts, der einer Sofortnachrichten Gruppe hinzugefügt wird. 
+Das **ImAddress-Element** enthält die Chatadresse eines neuen Kontakts, der einer Chatgruppe hinzugefügt wird. 
   
 ```XML
 <ImAddress></ImAddress>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **IMAddress** -Elements ist eine Instant Messaging-Adresse. 
+Der Textwert des **ImAddress-Elements** ist eine Chatadresse. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 

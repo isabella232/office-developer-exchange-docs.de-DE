@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteFolder
 api_type:
 - schema
 ms.assetid: b0f92682-4895-4bcf-a4a1-e4c2e8403979
 description: Der DeleteFolder-Vorgang löscht Ordner aus einem Postfach.
-ms.openlocfilehash: e9bb9199027c2af2cbbb664ef7ad4fa70b7ef718
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fdd8519adbf9e0112f5fdd6a411dd6e7710f7d37
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455744"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545433"
 ---
 # <a name="deletefolder-operation"></a>DeleteFolder-Vorgang
 
-Der **DeleteFolder** -Vorgang löscht Ordner aus einem Postfach. 
+Der **DeleteFolder-Vorgang** löscht Ordner aus einem Postfach. 
   
-## <a name="deletefolder-request-example"></a>DeleteFolder-Anforderungs Beispiel
+## <a name="deletefolder-request-example"></a>DeleteFolder-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **DeleteFolder** -Anforderung wird gezeigt, wie Sie eine Anforderung zum Löschen eines Ordners bilden. 
+In diesem folgenden Beispiel einer **DeleteFolder-Anforderung** wird gezeigt, wie Sie eine Anforderung zum Löschen eines Ordners erstellen. 
   
 ### <a name="code"></a>Code
 
@@ -49,10 +49,10 @@ Im folgenden Beispiel einer **DeleteFolder** -Anforderung wird gezeigt, wie Sie 
 
 ### <a name="comments"></a>Comments
 
-In diesem Beispiel wird ein harter Löschvorgang für den Ordner ausgeführt.
+In diesem Beispiel wird der Ordner endgültig gelöscht.
   
 > [!NOTE]
-> Die Ordner-ID wurde verkürzt, um die Lesbarkeit zu erhalten. 
+> Die Ordner-ID wurde gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -65,15 +65,15 @@ In der Anforderung werden folgende Elemente verwendet:
 - [FolderId](folderid.md)
     
 > [!NOTE]
-> Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist. 
+> Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist. 
   
-Um andere Optionen für die Anforderungsnachricht des **DeleteFolder** -Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [DeleteFolder](deletefolder.md) -Element. 
+Weitere Optionen für die Anforderungsnachricht des **DeleteFolder-Vorgangs** finden Sie in der Schemahierarchie. Beginnen Sie mit dem [DeleteFolder-Element.](deletefolder.md) 
   
 ## <a name="successful-deletefolder-response"></a>Erfolgreiche DeleteFolder-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **DeleteFolder** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **DeleteFolder-Anforderung.** 
   
 ### <a name="code"></a>Code
 
@@ -100,7 +100,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **DeleteFolder** -
 </soap:Envelope>
 ```
 
-### <a name="response-elements"></a>Response-Elemente
+### <a name="response-elements"></a>Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -114,13 +114,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-Um andere Optionen für die Antwortnachricht des **DeleteFolder** -Vorgangs zu finden, erkunden Sie die Schemahierarchie. Beginnen Sie mit dem [DeleteFolderResponse](deletefolderresponse.md) -Element. 
+Weitere Optionen für die Antwortnachricht des **DeleteFolder-Vorgangs** finden Sie in der Schemahierarchie. Beginnen Sie mit dem [DeleteFolderResponse-Element.](deletefolderresponse.md) 
   
 ## <a name="deletefolder-error-response"></a>DeleteFolder-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **DeleteFolder** -Anforderung. Der Fehler wurde durch eine Anforderung zum Löschen eines Ordners verursacht, der nicht im Postfach vorhanden war. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **DeleteFolder-Anforderung.** Der Fehler wurde durch eine Anforderung zum Löschen eines Ordners verursacht, der nicht im Postfach vorhanden war. 
   
 ### <a name="code"></a>Code
 
@@ -151,7 +151,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort auf eine **DeleteFolder** -Anford
 
 ### <a name="comments"></a>Comments
 
-Der **DeleteFolder** -Vorgang kann nicht für Distinguished Folders verwendet werden. 
+Der **DeleteFolder-Vorgang** kann nicht für Distinguished Folders verwendet werden. 
   
 ### <a name="error-response-elements"></a>Fehlerantwortelemente
 
@@ -171,7 +171,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Weitere Optionen für die Fehlerantwort Meldung des **DeleteFolder** -Vorgangs finden Sie unter Durchsuchen der Schemahierarchie. Beginnen Sie mit dem [DeleteFolderResponse](deletefolderresponse.md) -Element. 
+Weitere Optionen für die Fehlermeldung des **DeleteFolder-Vorgangs** finden Sie in der Schemahierarchie. Beginnen Sie mit dem [DeleteFolderResponse-Element.](deletefolderresponse.md) 
   
 ## <a name="see-also"></a>Siehe auch
 

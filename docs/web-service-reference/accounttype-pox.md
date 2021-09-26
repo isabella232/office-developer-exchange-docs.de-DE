@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 1e87e78e-d143-4abc-b753-386500d227a5
 description: Das AccountType-Element stellt den Kontotyp dar.
-ms.openlocfilehash: 20ff7cf4e73f1b50668616d3f11edeeb1409815e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: dbcc9f3c925f60a8cc2c0875344b798319f2496f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462311"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544409"
 ---
 # <a name="accounttype-pox"></a>AccountType (POX)
 
-Das **AccountType** -Element stellt den Kontotyp dar. 
+Das **AccountType-Element** stellt den Kontotyp dar. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md)
   
@@ -48,11 +48,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Konto (POX)](account-pox.md) <br/> |Gibt Kontoeinstellungen für den Benutzer an.  <br/> |
+|[Konto (POX)](account-pox.md) <br/> |Gibt die Kontoeinstellungen für den Benutzer an.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt den Kontotyp dar. Der mögliche Wert ist **e-Mail**, die Einstellungen für einen e-Mail-Server angibt. 
+Der Textwert stellt den Kontotyp dar. Der mögliche Wert ist **E-Mail,** der die Einstellungen für einen E-Mail-Server angibt. 
   
 ## <a name="see-also"></a>Siehe auch
 

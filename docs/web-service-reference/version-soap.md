@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 47c9216e-6bfe-48c8-a27a-26f70db8e8d5
-description: Das Version-Element stellt eine Beschreibung der Server Produktversion dar.
-ms.openlocfilehash: d7e6983c837b2818b7d11e1777015ec583968242
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Version-Element stellt eine Beschreibung der Serverproduktversion dar.
+ms.openlocfilehash: 67935bb97ce5a6faab3ae26ec03a842794d539e0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44531028"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541630"
 ---
 # <a name="version-soap"></a>Version (SOAP)
 
-Das **Version** -Element stellt eine Beschreibung der Server Produktversion dar. 
+Das **Version-Element** stellt eine Beschreibung der Serverproduktversion dar. 
   
 ```XML
 <Version/>
@@ -45,19 +45,19 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert des **Version** -Elements ist eine Beschreibung der Server Produktversion. 
+Der Wert des **Version-Elements** ist eine Beschreibung der Serverproduktversion. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das **Version** -Element ist im SOAP-Header einer Antwort enthalten. 
+Das **Version-Element** ist im SOAP-Header einer Antwort enthalten. 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

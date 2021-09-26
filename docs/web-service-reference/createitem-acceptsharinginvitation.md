@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateItem
 api_type:
 - schema
 ms.assetid: 710c893a-3037-4f04-b336-aefedd36c406
-description: Der CreateItem-Vorgang wird verwendet, um eine Einladung zur Freigabe von Kalender-oder Kontaktdaten eines anderen Benutzers zu akzeptieren.
-ms.openlocfilehash: eda846b72f42fe886497b355d9cddade7c5f4044
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der CreateItem-Vorgang wird verwendet, um eine Einladung zum Freigeben des Kalenders oder der Kontaktedaten eines anderen Benutzers anzunehmen.
+ms.openlocfilehash: 37068657e77f4ceb35f9cb9601863fcae520c018
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457515"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543432"
 ---
 # <a name="createitem-acceptsharinginvitation"></a>CreateItem (AcceptSharingInvitation)
 
-Der **CreateItem** -Vorgang wird verwendet, um eine Einladung zur Freigabe von Kalender-oder Kontaktdaten eines anderen Benutzers zu akzeptieren. 
+Der **CreateItem-Vorgang** wird verwendet, um eine Einladung zum Freigeben des Kalenders oder der Kontaktedaten eines anderen Benutzers anzunehmen. 
   
-## <a name="accept-sharing-invitation-request-example"></a>Beispiel für Freigabe Einladungsanforderung akzeptieren
+## <a name="accept-sharing-invitation-request-example"></a>Beispiel für "Freigabe-Einladungsanforderung annehmen"
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt, wie Sie eine Freigabeeinladung annehmen.
+Das folgende Beispiel zeigt, wie Sie eine Freigabe-Einladung annehmen.
   
 ### <a name="code"></a>Code
 
@@ -53,7 +53,7 @@ In der Anforderung werden folgende Elemente verwendet:
   
 - [CreateItem](createitem.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
 - [AcceptSharingInvitation](acceptsharinginvitation.md)
     
@@ -61,13 +61,13 @@ In der Anforderung werden folgende Elemente verwendet:
     
 ### <a name="comments"></a>Kommentare
 
-Die Element-ID und der Änderungsschlüssel wurden verkürzt, um die Lesbarkeit zu erhalten.
+Der Elementbezeichner und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten.
   
-## <a name="successful-accept-sharing-invitation-response-example"></a>Beispiel für die erfolgreiche Annahme von Freigabe Einladungsantworten
+## <a name="successful-accept-sharing-invitation-response-example"></a>Antwortbeispiel "Erfolgreiche Freigabe-Einladung annehmen"
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **CreateItem** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **CreateItem-Anforderung.** 
   
 ### <a name="code"></a>Code
 
@@ -113,13 +113,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
-## <a name="accept-sharing-invitation-error-response-example"></a>Beispiel für Fehler bei der Freigabeeinladung annehmen
+## <a name="accept-sharing-invitation-error-response-example"></a>Antwortbeispiel "Einladungsfehler "Freigabe annehmen"
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **CreateItem** -Anforderung. Der Fehler wird durch den Versuch verursacht, eine Freigabeeinladung zu akzeptieren, die im Exchange-Informationsspeicher nicht gefunden werden kann. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **CreateItem-Anforderung.** Der Fehler wird durch den Versuch verursacht, eine Freigabe-Einladung zu akzeptieren, die im Exchange Store nicht gefunden werden kann. 
   
 ### <a name="code"></a>Code
 
@@ -171,7 +171,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Elemente](items.md)
+- [Items](items.md)
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,32 +1,32 @@
 ---
-title: SetTelephoneAccessFolderEmail-Vorgang (um-Webdienst)
+title: SetTelephoneAccessFolderEmail-Vorgang (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetTelephoneAccessFolderEmail
 api_type:
 - schema
 ms.assetid: 2c92d914-bdee-4337-b3ea-0655fdb658e9
-description: Mit dem SetTelephoneAccessFolderEmail-Vorgang wird der Ordner festgelegt, aus dem Unified Messaging Nachrichten über das Telefon an den Benutzer zurückliest.
-ms.openlocfilehash: a2bb630f812ca811b4cbe68db1308dc18e5d3ba0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der SetTelephoneAccessFolderEmail-Vorgang legt den Ordner fest, aus dem Unified Messaging Nachrichten an den Benutzer über das Telefon zurücklesen wird.
+ms.openlocfilehash: cf8e80e021d6467ba3a724cc0d04e165e00e8397
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467333"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544717"
 ---
-# <a name="settelephoneaccessfolderemail-operation-um-web-service"></a>SetTelephoneAccessFolderEmail-Vorgang (um-Webdienst)
+# <a name="settelephoneaccessfolderemail-operation-um-web-service"></a>SetTelephoneAccessFolderEmail-Vorgang (UM-Webdienst)
 
-Mit dem SetTelephoneAccessFolderEmail-Vorgang wird der Ordner festgelegt, aus dem Unified Messaging Nachrichten über das Telefon an den Benutzer zurückliest.
+Der SetTelephoneAccessFolderEmail-Vorgang legt den Ordner fest, aus dem Unified Messaging Nachrichten an den Benutzer über das Telefon zurücklesen wird.
   
-## <a name="settelephoneaccessfolderemail-request-example"></a>SetTelephoneAccessFolderEmail-Anforderungs Beispiel
+## <a name="settelephoneaccessfolderemail-request-example"></a>SetTelephoneAccessFolderEmail-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer SetTelephoneAccessFolderEmail-Anforderung wird gezeigt, wie Sie eine Anforderung zum Festlegen des Ordners erstellen, von dem Unified Messaging über das Telefon an den Benutzer zurückgelesen wird.
+Das folgende Beispiel einer SetTelephoneAccessFolderEmail-Anforderung zeigt, wie Sie eine Anforderung zum Festlegen des Ordners erstellen, aus dem Unified Messaging dem Benutzer per Telefon zurückgelesen wird.
   
 ### <a name="code"></a>Code
 
@@ -41,11 +41,11 @@ Im folgenden Beispiel einer SetTelephoneAccessFolderEmail-Anforderung wird gezei
 </soap:Envelope>
 ```
 
-## <a name="successful-settelephoneaccessfolderemail-response-example"></a>Erfolgreiches SetTelephoneAccessFolderEmail-Antwortbeispiel
+## <a name="successful-settelephoneaccessfolderemail-response-example"></a>Beispiel für eine erfolgreiche SetTelephoneAccessFolderEmail-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer SetTelephoneAccessFolderEmail-Antwort wird eine Antwort auf die SetTelephoneAccessFolderEmail-Anforderung angezeigt.
+Das folgende Beispiel einer SetTelephoneAccessFolderEmail-Antwort zeigt eine Antwort auf die SetTelephoneAccessFolderEmail-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -62,9 +62,9 @@ Im folgenden Beispiel einer SetTelephoneAccessFolderEmail-Antwort wird eine Antw
 
 
 
-[SetTelephoneAccessFolderEmail (um-Webdienst)](settelephoneaccessfolderemail-um-web-service.md)
+[SetTelephoneAccessFolderEmail (UM-Webdienst)](settelephoneaccessfolderemail-um-web-service.md)
   
-[SetTelephoneAccessFolderEmailResponse (um-Webdienst)](settelephoneaccessfolderemailresponse-um-web-service.md)
+[SetTelephoneAccessFolderEmailResponse (UM-Webdienst)](settelephoneaccessfolderemailresponse-um-web-service.md)
   
-[base64FolderId (um-Webdienst)](base64folderid-um-web-service.md)
+[base64FolderId (UM-Webdienst)](base64folderid-um-web-service.md)
 

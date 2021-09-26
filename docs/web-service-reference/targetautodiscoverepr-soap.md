@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fdb9cc7a-cf0a-431b-9f6f-5f1db1792db7
-description: Das TargetAutodiscoverEpr-Element stellt die TargetAutodiscoverEpr-Eigenschaft dar. Das TargetAutodiscoverEpr-Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet.
-ms.openlocfilehash: f8609f61021d5701f7a8fa2590a85824caf296c6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das TargetAutodiscoverEpr-Element stellt die TargetAutodiscoverEpr-Eigenschaft dar. Das TargetAutodiscoverEpr-Element ist nur für die interne Verwendung vorgesehen. Dieses Element wird von Clients nicht verwendet.
+ms.openlocfilehash: f49d7b0acc59d638f2fca993ec7d8f182cd7380a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530289"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545804"
 ---
 # <a name="targetautodiscoverepr-soap"></a>TargetAutodiscoverEpr (SOAP)
 
-Das **TargetAutodiscoverEpr** -Element stellt die **TargetAutodiscoverEpr** -Eigenschaft dar. Das **TargetAutodiscoverEpr** -Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet. 
+Das **TargetAutodiscoverEpr-Element** stellt die **TargetAutodiscoverEpr-Eigenschaft** dar. Das **TargetAutodiscoverEpr-Element** ist nur für die interne Verwendung vorgesehen. Dieses Element wird von Clients nicht verwendet. 
   
 ```XML
 <TargetAutodiscoverEpr/>
@@ -39,23 +39,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste von Organisationsbeziehungen für eine einzelne Organisation dar.  <br/> |
+|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste der Organisationsbeziehungen für eine einzelne Organisation dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert für dieses Element ist ein URI (Uniform Resource Identifier) für die Organisationsbeziehung.
+Der Textwert für dieses Element ist ein Uniform Resource Identifier (URI) für die Organisationsbeziehung.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element gibt die Auto Ermittlungs-URL des Servers für die externe Organisation an. 
+Dieses Element gibt die AutoErmittlungs-URL des Servers für die externe Organisation an. 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

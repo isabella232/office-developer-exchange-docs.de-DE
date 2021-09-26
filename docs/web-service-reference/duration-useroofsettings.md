@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Duration
 api_type:
 - schema
 ms.assetid: 01d67af3-658e-4acd-93e3-441ae827fdd3
-description: Das Duration-Element gibt die Dauer an, für die der Abwesenheitsstatus aktiviert ist, wenn das OofState-Element auf Scheduled festgelegt ist.
-ms.openlocfilehash: 0ba0f1ea7498781c0cccb072c7ea0fa05414764c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: The Duration element specifies the duration that the out of office (OOF) status is enabled if the OofState element is set to Scheduled.
+ms.openlocfilehash: cb6529bfe3799ff41550d7fe3ce2c79b8a4197e2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457298"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544157"
 ---
 # <a name="duration-useroofsettings"></a>Dauer (UserOofSettings)
 
-Das **Duration** -Element gibt die Dauer an, für die der Abwesenheitsstatus aktiviert ist, wenn das [OofState](oofstate.md) -Element auf **Scheduled**festgelegt ist.
+Das **Duration** -Element gibt die Dauer an, für die der Abwesenheitsstatus (OOF) aktiviert ist, wenn das [OofState](oofstate.md) -Element auf **Geplant** festgelegt ist.
   
 ```XML
 <Duration>
@@ -43,26 +43,26 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[StartTime](starttime.md) <br/> |Stellt den Anfang der Zeitspanne fest, die mit einem Abwesenheitsstatus festgelegt wurde. Dieses Element ist erforderlich.  <br/> |
-|[EndTime](endtime.md) <br/> |Stellt das Ende der Zeitspanne fest, die mit einem Abwesenheitsstatus festgelegt wurde. Dieses Element ist erforderlich.  <br/> |
+|[StartTime](starttime.md) <br/> |Stellt den Anfang der Zeitspanne dar, die mit einem OOF-Status festgelegt wurde. Dieses Element ist erforderlich.  <br/> |
+|[EndTime](endtime.md) <br/> |Stellt das Ende der Zeitspanne dar, die mit einem OOF-Status festgelegt wurde. Dieses Element ist erforderlich.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserOofSettings](useroofsettings.md) <br/> |Gibt die Abwesenheitseinstellungen an.  <br/><br/>Für dieses Element wird folgender XPath-Ausdruck verwendet: <br/><br/>`/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |Gibt die OOF-Einstellungen an.  <br/><br/>Für dieses Element wird folgender XPath-Ausdruck verwendet: <br/><br/>`/SetUserOofSettingsRequest/UserOofSettings` <br/> |
 |[OofSettings](oofsettings.md) <br/> |Enthält die OOF-Einstellungen.<br/><br/>Für dieses Element wird folgender XPath-Ausdruck verwendet: <br/><br/>`/GetUserOofSettingsResponse/OofSettings` <br/> |
-|[OutOfOffice](outofoffice.md) <br/> |Definiert die Abwesenheit (Out of Office, OOF) Antwortnachricht und eine Dauer für das Senden der Antwortnachricht für ein Postfach.  <br/> |
+|[OutOfOffice](outofoffice.md) <br/> |Definiert die OOF-Antwortnachricht (Out of Office) und eine Dauer für das Senden der Antwortnachricht für ein Postfach.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Typ Duration ist auch der Typ für die Elemente [DetailedSuggestionsWindow](detailedsuggestionswindow.md), **Zeit** [Fenster](timewindow.md)und [OutOfOffice](outofoffice.md) . 
+Der **Duration-Typ** ist auch der Typ für die Elemente [DetailedSuggestionsWindow,](detailedsuggestionswindow.md) [TimeWindow](timewindow.md)und [OutOfOffice.](outofoffice.md) 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel einer [SetUserOofSettings-Vorgangs](setuseroofsettings-operation.md) Anforderung wird die [OofState](oofstate.md) auf **Enabled**, die internen und externen Abwesenheitsnachrichten festgelegt und die Dauer von OOF für 10 Tage festgelegt.
+Im folgenden Beispiel einer [SetUserOofSettings-Vorgangsanforderung](setuseroofsettings-operation.md) wird [OofState](oofstate.md) auf **Aktiviert,** die internen und externen OOF-Nachrichten und die Dauer von OOF für 10 Tage festgelegt.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

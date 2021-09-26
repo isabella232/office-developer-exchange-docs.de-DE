@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f02c8331-0a4e-4d01-adc2-2b93ed838a42
-description: Das ConvertHtmlCodePageToUTF8-Element gibt an, ob der Element-HTML-Text in UTF8 konvertiert wird.
-ms.openlocfilehash: a714eacd8cc105146a1471f062ec35dc16730d61
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ConvertHtmlCodePageToUTF8-Element gibt an, ob der HTML-Textkörper des Elements in UTF8 konvertiert wird.
+ms.openlocfilehash: e43de22b6d8050c14eb18d0fdd5a72f463335189
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457592"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545573"
 ---
 # <a name="converthtmlcodepagetoutf8"></a>ConvertHtmlCodePageToUTF8
 
-Das **ConvertHtmlCodePageToUTF8** -Element gibt an, ob der Element-HTML-Text in UTF8 konvertiert wird. 
+Das **ConvertHtmlCodePageToUTF8-Element** gibt an, ob der HTML-Textkörper des Elements in UTF8 konvertiert wird. 
   
 ```XML
 <ConvertHtmlCodePageToUTF8/>
 ```
 
- **xs: Boolean**
+ **xs:boolean**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -40,15 +40,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemShape](itemshape.md) <br/> |Gibt eine Reihe von Eigenschaften an, die in einer Antwort zurückgegeben werden sollen.  <br/> |
+|[ItemShape](itemshape.md) <br/> |Identifiziert einen Satz von Eigenschaften, die in einer Antwort zurückgegeben werden sollen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **ConvertHtmlCodePageToUTF8** -Element gibt an, dass der HTML-Text in UTF8 konvertiert wird. Der Textwert **false** gibt an, dass der HTML-Text nicht in UTF8 konvertiert wird. 
+Der Textwert **"true"** für das **ConvertHtmlCodePageToUTF8-Element** gibt an, dass der HTML-Textkörper in UTF8 konvertiert wird. Der Textwert **"false"** gibt an, dass der HTML-Textkörper nicht in UTF8 konvertiert wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Standardwert **true** wird verwendet, wenn das **ConvertHtmlCodePageToUTF8** -Element in einer Anforderung nicht angegeben ist. 
+Der Standardwert **"true"** wird verwendet, wenn das **ConvertHtmlCodePageToUTF8-Element** nicht in einer Anforderung angegeben ist. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

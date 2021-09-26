@@ -5,45 +5,45 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateFolder
 api_type:
 - schema
 ms.assetid: 3494c996-b834-4813-b1ca-d99642d8b4e7
-description: 'Der UpdateFolder-Vorgang wird verwendet, um die Eigenschaften eines vorhandenen Elements in der Exchange-Informationsspeicher zu ändern. Jeder UpdateFolder-Vorgang besteht aus folgenden Elementen:'
-ms.openlocfilehash: fb894d9f42358b67f81e9fe8ae41ba61e6f46460
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: 'Der UpdateFolder-Vorgang dient zum Ändern der Eigenschaften eines vorhandenen Elements im Exchange Speicher. Jeder UpdateFolder-Vorgang besteht aus folgenden Komponenten:'
+ms.openlocfilehash: be8e39e13681cea34e312158c348c60a94374bec
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467361"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541763"
 ---
 # <a name="updatefolder-operation"></a>UpdateFolder-Vorgang
 
-Der UpdateFolder-Vorgang wird verwendet, um die Eigenschaften eines vorhandenen Elements in der Exchange-Informationsspeicher zu ändern. Jeder UpdateFolder-Vorgang besteht aus folgenden Elementen:
+Der UpdateFolder-Vorgang dient zum Ändern der Eigenschaften eines vorhandenen Elements im Exchange Speicher. Jeder UpdateFolder-Vorgang besteht aus folgenden Komponenten:
   
-- Ein [Folder](folderid.md) -Element, mit dem ein zu aktualisierbarer Ordner angegeben wird. 
+- Ein [FolderId-Element,](folderid.md) das einen zu aktualisierenden Ordner angibt. 
     
-- Ein interner Pfad eines Elements im Ordner, wie durch die Ordner Form angegeben, die die zu aktualisierende Daten angibt.
+- Ein interner Pfad eines Elements im Ordner, wie durch das Ordner-Shape angegeben, das die zu aktualisierenden Daten angibt.
     
-- Ein Ordner, der den neuen Wert des aktualisierten Felds enthält, wenn es sich bei der Aktualisierung nicht um eine Löschung handelt.
+- Ein Ordner, der den neuen Wert des aktualisierten Felds enthält, wenn es sich bei der Aktualisierung nicht um einen Löschvorgang handelt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Für ein Element können drei grundlegende Updateaktionen ausgeführt werden. Diese Aktionen sind in der folgenden Tabelle aufgeführt.
+Für ein Element können drei grundlegende Aktualisierungsaktionen ausgeführt werden. Diese Aktionen sind in der folgenden Tabelle aufgeführt.
   
 |**Aktion**|**Beschreibung**|
 |:-----|:-----|
-|Append  <br/> |Mit der Append-Aktion werden einer vorhandenen Eigenschaft Daten hinzugefügt. Die Daten, die derzeit vorhanden sind, werden beibehalten. Append gilt nicht für alle Eigenschaften.  <br/> |
-|Satz  <br/> |Die Set-Aktion ersetzt Daten für eine Eigenschaft, wenn Sie Daten enthält, oder erstellt die Eigenschaft und legt ihren Wert fest, wenn Sie nicht vorhanden ist. Die Aktion festlegen gilt nur für schreibbare Eigenschaften.  <br/> |
-|Löschen  <br/> |Die DELETE-Aktion entfernt eine Eigenschaft aus einem Ordner. Dies unterscheidet sich von der Einstellung auf einen leeren Wert. Wenn dieser Vorgang abgeschlossen ist, ist die Eigenschaft für den Ordner nicht vorhanden. DELETE gilt nur für schreibbare Eigenschaften.  <br/> |
+|Anfügen  <br/> |Die Anfügeaktion fügt einer vorhandenen Eigenschaft Daten hinzu. Sie behält die Daten bei, die sich derzeit dort befinden. Das Anfügen gilt nicht für alle Eigenschaften.  <br/> |
+|Satz  <br/> |Die Set-Aktion ersetzt Daten für eine Eigenschaft, wenn sie Daten enthält, oder erstellt die Eigenschaft und legt ihren Wert fest, wenn sie nicht vorhanden ist. Die Set-Aktion gilt nur für schreibbare Eigenschaften.  <br/> |
+|Löschen  <br/> |Die Löschaktion entfernt eine Eigenschaft aus einem Ordner. Dies unterscheidet sich von der Einstellung auf einen leeren Wert. Nach Abschluss des Vorgangs ist die Eigenschaft für den Ordner nicht vorhanden. Das Löschen gilt nur für beschreibbare Eigenschaften.  <br/> |
    
-## <a name="updatefolder-request-example"></a>UpdateFolder-Anforderungs Beispiel
+## <a name="updatefolder-request-example"></a>UpdateFolder-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer UpdateFolder-Anforderung wird gezeigt, wie ein Ordneranzeige Name aktualisiert wird. 
+Das folgende Beispiel einer UpdateFolder-Anforderung zeigt, wie ein Ordneranzeigename aktualisiert wird. 
   
 ### <a name="code"></a>Code
 
@@ -74,10 +74,10 @@ Im folgenden Beispiel einer UpdateFolder-Anforderung wird gezeigt, wie ein Ordne
 
 ### <a name="comments"></a>Comments
 
-In diesem Beispiel wird der Anzeigename des Ordners in "neuer FolderName" geändert.
+In diesem Beispiel wird der Anzeigename des Ordners in NewFolderName geändert.
   
 > [!NOTE]
-> Die Werte der Attribute **ID** und **ChangeKey** des [Folder](folderid.md) -Elements wurden zur Lesbarkeit gekürzt. 
+> Die Werte der Attribute **"Id"** und **"ChangeKey"** des ["FolderId"-Elements](folderid.md) wurden zur besseren Lesbarkeit gekürzt. 
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -104,7 +104,7 @@ In der Anforderung werden folgende Elemente verwendet:
 Weitere Elemente, die Sie zum Erstellen einer UpdateFolder-Anforderung verwenden können, finden Sie im Schema.
   
 > [!NOTE]
-> Der Standardspeicherort des Schemas befindet sich im virtuellen Verzeichnis EWS auf dem Computer, auf dem die Client Zugriffs-Serverrolle installiert ist. 
+> Der Standardspeicherort des Schemas befindet sich im virtuellen EWS-Verzeichnis auf dem Computer, auf dem die Clientzugriffsserverrolle installiert ist. 
   
 ## <a name="updatefolder-response-example"></a>UpdateFolder-Antwortbeispiel
 
@@ -145,9 +145,9 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die UpdateFolder-Anfor
 ### <a name="comments"></a>Comments
 
 > [!NOTE]
-> Die Ordner-ID und der Change-Schlüssel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Die Ordner-ID und der Änderungsschlüssel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
-Die in der Antwort zurückgegebene Ordner-ID stellt den aktualisierten Ordner dar.
+Die Ordner-ID, die in der Antwort zurückgegeben wird, stellt den aktualisierten Ordner dar.
   
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
@@ -169,7 +169,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [FolderId](folderid.md)
     
-## <a name="updatefolder-error-response-example"></a>UpdateFolder-Fehlerantwort Beispiel
+## <a name="updatefolder-error-response-example"></a>UpdateFolder-Fehlerantwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
@@ -205,7 +205,7 @@ Das folgende Beispiel zeigt eine Fehlerantwort auf eine UpdateFolder-Anforderung
 
 ### <a name="comments"></a>Comments
 
-Dieses Beispiel zeigt eine Fehlerantwort, die durch ein ungültiges **ChangeKey** -Attribut in der Anforderung verursacht wird. 
+Dieses Beispiel zeigt eine Fehlerantwort, die durch ein ungültiges **ChangeKey-Attribut** in der Anforderung verursacht wird. 
   
 ### <a name="error-response-elements"></a>Fehlerantwortelemente
 

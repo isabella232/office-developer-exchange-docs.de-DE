@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - LastDeliveryTime
 api_type:
 - schema
 ms.assetid: 23d02ceb-f28e-40f2-8f63-673723a50e2a
-description: Das LastDeliveryTime-Element enthält die Zustellungszeit der Nachricht, die zuletzt in dieser Unterhaltung im aktuellen Ordner empfangen wurde.
-ms.openlocfilehash: 77147693a9394e983575afa6fcfda242f8f76ae3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: The LastDeliveryTime element contains the delivery time of the message that was last received in this conversation in the current folder.
+ms.openlocfilehash: bb0ad41272d26efecf36113d9c82a647c237ac47
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458110"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546175"
 ---
 # <a name="lastdeliverytime"></a>LastDeliveryTime
 
-Das **LastDeliveryTime** -Element enthält die Zustellungszeit der Nachricht, die zuletzt in dieser Unterhaltung im aktuellen Ordner empfangen wurde. 
+The **LastDeliveryTime** element contains the delivery time of the message that was last received in this conversation in the current folder. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -35,7 +35,7 @@ Das **LastDeliveryTime** -Element enthält die Zustellungszeit der Nachricht, di
 <LastDeliveryTime/>
 ```
 
- **xs: DateTime**
+ **xs:dateTime**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -56,9 +56,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **LastDeliveryTime** -Elements ist das Datum und die Uhrzeit der Nachricht, die zuletzt in dieser Unterhaltung im aktuellen Ordner empfangen wurde. 
+Der Textwert des **LastDeliveryTime-Elements** ist das Datum und die Uhrzeit der Nachricht, die zuletzt in dieser Unterhaltung im aktuellen Ordner empfangen wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

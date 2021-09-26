@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - BillingInformation
 api_type:
 - schema
 ms.assetid: 35aec4d1-5264-4b25-8b8f-cdee886da109
-description: Das BillingInformation-Element beinhaltet Abrechnungsinformationen für einen Vorgang.
-ms.openlocfilehash: 6a3cd1ef402a67e896c2ed3afcca6c7c126d3e1b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das BillingInformation-Element enthält Abrechnungsinformationen für eine Aufgabe.
+ms.openlocfilehash: dc83170900753d1e52d06d55ca8931ea1b283bc5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462766"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545685"
 ---
 # <a name="billinginformation"></a>BillingInformation
 
-Das **BillingInformation** -Element beinhaltet Abrechnungsinformationen für einen Vorgang. 
+Das **BillingInformation-Element** enthält Abrechnungsinformationen für eine Aufgabe. 
   
 ```xml
 <BillingInformation/>
@@ -48,9 +48,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt aufgabenbezogene Abrechnungsinformationen dar.
+Der Textwert stellt vorgangsbezogene Abrechnungsinformationen dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

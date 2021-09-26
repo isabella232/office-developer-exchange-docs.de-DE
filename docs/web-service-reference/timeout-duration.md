@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bb15f9a7-8ea5-4765-9877-762c3f98bf50
-description: Das Timeout-Element gibt die Zeitdauer vor dem Timeout eines Pullabonnements durch den Server an.
-ms.openlocfilehash: b5b0e77d794080cd8e0da1e14acf4cb059b80b08
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Timeout-Element gibt die Zeitdauer an, bis ein Pullabonnement vom Server timeout wird.
+ms.openlocfilehash: a5a9e094c25f609c0bcfa207ab96ae7f0877f43f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460281"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545769"
 ---
 # <a name="timeout-duration"></a>Timeout (Dauer)
 
-Das **Timeout** -Element gibt die Zeitdauer vor dem Timeout eines Pullabonnements durch den Server an. 
+Das **Timeout-Element** gibt die Zeitdauer an, bis ein Pullabonnement vom Server timeout wird. 
   
 ```XML
 <Timeout></Timeout>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Timeout** -Elements ist die Zeitdauer in Minuten, bevor ein Pullabonnement vom Server überschritten wird. Der Minimalwert ist 1; der Höchstwert ist 1440. 
+Der Textwert des **Timeout-Elements** ist die Zeitdauer in Minuten, bevor ein Pullabonnement vom Server timeout wird. Der Mindestwert ist 1; der Maximalwert ist 1440. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

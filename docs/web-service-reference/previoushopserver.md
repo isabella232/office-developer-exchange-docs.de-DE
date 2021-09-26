@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PreviousHopServer
 api_type:
 - schema
 ms.assetid: 74456709-1250-4943-bae0-11a3db44a684
 description: Das PreviousHopServer-Element stellt den vorherigen Servernamen dar, der die Nachricht akzeptiert hat.
-ms.openlocfilehash: f85896107c720179d76e0cbeb31588e17c1f3d95
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 229d4ef66aeb70b1b4f83bae58ae268d411c5a1c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528879"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543037"
 ---
 # <a name="previoushopserver"></a>PreviousHopServer
 
-Das **PreviousHopServer** -Element stellt den vorherigen Servernamen dar, der die Nachricht akzeptiert hat. 
+Das **PreviousHopServer-Element** stellt den vorherigen Servernamen dar, der die Nachricht akzeptiert hat. 
   
 ```XML
 <PreviousHopServer/>
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Enthält ein einzelnes Nachrichten Ergebnis für ein [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) -Element.  <br/> |
+|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Enthält ein einzelnes Nachrichtenergebnis für ein [FindMessageTrackingReportResponse-Element.](findmessagetrackingreportresponse.md)  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Ein Textwert, der eine Zeichenfolge darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

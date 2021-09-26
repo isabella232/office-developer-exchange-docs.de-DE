@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Bias
 api_type:
 - schema
 ms.assetid: 15790d5a-5134-457b-8f2b-d9dee1f807a2
-description: Das Bias-Element stellt den allgemeinen Offset von koordinierter Weltzeit (Coordinated Universal Time, UTC) dar. Dieser Wert wird in Minuten angegeben.
-ms.openlocfilehash: d95284aa28e59542d1a1ee40686163138b015702
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: The Bias element represents the general offset from Coordinated Universal Time (UTC). Dieser Wert wird in Minuten angegeben.
+ms.openlocfilehash: c7dc50d13eecab72d06927ce02762e57ec2f8a3e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460246"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543653"
 ---
 # <a name="bias-utc"></a>Bias (UTC)
 
-Das **Bias** -Element stellt den allgemeinen Offset von koordinierter Weltzeit (Coordinated Universal Time, UTC) dar. Dieser Wert wird in Minuten angegeben. 
+The **Bias** element represents the general offset from Coordinated Universal Time (UTC). Dieser Wert wird in Minuten angegeben. 
   
 ```xml
 <TimeZone>
@@ -47,15 +47,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Zeitzone (Verfügbarkeit)](timezone-availability.md) <br/> | Der Container, der die Datum-Uhrzeit-Informationen der Anforderung angibt. Dieses Element enthält Informationen über den Übergang zwischen Standardzeit und Sommerzeit.  <br/><br/>Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>   `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone` <br/><br/>`/GetUserAvailabilityRequest/TimeZone` <br/> |
+|[TimeZone (Verfügbarkeit)](timezone-availability.md) <br/> | Der Container, der die Datum-Uhrzeit-Informationen der Anforderung identifiziert. Dieses Element enthält Informationen zum Übergang zwischen Standardzeit und Sommerzeit.  <br/><br/>Folgende XPath-Ausdrücke werden für dieses Element verwendet:<br/><br/>   `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone` <br/><br/>`/GetUserAvailabilityRequest/TimeZone` <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Der Wert Text stellt eine ganze Zahl dar.
+Ein Textwert ist erforderlich. Der Textwert stellt eine ganze Zahl dar.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Ein zweites [Bias](bias.md) -Element im Schema stellt den Offset des Offsets für koordinierte Weltzeit (Coordinated Universal Time, UTC) dar. 
+Ein zweites [Bias-Element](bias.md) im Schema stellt den Offset vom Utc-Offset (Coordinated Universal Time) dar. 
   
 ## <a name="example"></a>Beispiel
 
@@ -94,5 +94,5 @@ Das folgende Beispiel zeigt einen Teil einer XML-Anforderung, die einen Offset v
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)  
 - [Bias](bias.md)
-- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

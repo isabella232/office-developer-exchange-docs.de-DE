@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Value
 api_type:
 - schema
 ms.assetid: b039bd6e-2198-47cf-9c78-a5e8b9d51c98
-description: Das Value-Element identifiziert eine einzelne Empfänger-oder Absender Abteilung.
-ms.openlocfilehash: 908ea451800abc343fb6e4d4a4ed98d57223bd23
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Value-Element identifiziert eine einzelne Empfänger- oder Absenderabteilung.
+ms.openlocfilehash: 2c4bbdcb3364f0ef8f608469f0dc1b289c4eeaf6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465240"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541623"
 ---
 # <a name="value-protectionrulevaluetype"></a>Wert (ProtectionRuleValueType)
 
-Das **value** -Element identifiziert eine einzelne Empfänger-oder Absender Abteilung. 
+Das **Value-Element** identifiziert eine einzelne Empfänger- oder Absenderabteilung. 
   
 ```XML
 <Value/>
@@ -45,14 +45,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Empfängerist](recipientis.md) <br/> |Gibt an, dass jeder Empfänger der e-Mail-Nachricht mit einem der angegebenen Empfänger in den untergeordneten **value** -Elementen übereinstimmt.  <br/> |
-|[SenderDepartments](senderdepartments.md) <br/> |Gibt an, dass die Abteilung des Absenders mit einer der angegebenen Abteilungen in den untergeordneten **value** -Elementen übereinstimmt.  <br/> |
+|[RecipientIs](recipientis.md) <br/> |Gibt an, dass jeder Empfänger der E-Mail-Nachricht mit einem der angegebenen Empfänger in den untergeordneten **Value-Elementen** übereinstimmt.  <br/> |
+|[SenderDepartments](senderdepartments.md) <br/> |Gibt an, dass die Abteilung des Absenders mit einer der angegebenen Abteilungen in den untergeordneten **Value-Elementen** übereinstimmt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Dieses Element muss einen nicht leeren Zeichenfolgenwert enthalten.
+Dieses Element muss einen wert für eine leere Zeichenfolge enthalten.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

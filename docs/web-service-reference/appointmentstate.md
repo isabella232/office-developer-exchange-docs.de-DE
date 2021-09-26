@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AppointmentState
 api_type:
 - schema
 ms.assetid: ab3f5d04-ace1-4a15-9107-cefa6c41abc7
 description: Das AppointmentState-Element gibt den Status des Termins an.
-ms.openlocfilehash: 8b0e827d02e9051f31d43199503dc286c50e2125
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f984bbd5a1319a6051a3394ed04d56deabbb2c5a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463475"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544282"
 ---
 # <a name="appointmentstate"></a>AppointmentState
 
-Das **AppointmentState** -Element gibt den Status des Termins an. 
+Das **AppointmentState-Element** gibt den Status des Termins an. 
   
 ```XML
 <AppointmentState/>
@@ -49,11 +49,11 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Dieses Element enthält einen Textwert, der festgelegte Bits darstellt. Dies ist eine ganzzahlige Form. Dieses Element ist schreibgeschützt. Sie wird nur in einer Antwort zurückgegeben.
+Dieses Element enthält einen Textwert, der festgelegte Bits darstellt. Dies ist in ganzzahliger Form. Dieses Element ist schreibgeschützt. Sie wird nur in einer Antwort zurückgegeben.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der zurückgegebene ganzzahlige Wert stellt die Bitmaske des Terminstatus dar. In der folgenden Tabelle werden die einzelnen Bit beschrieben.
+Der zurückgegebene ganzzahlige Wert stellt die Bitmaske für den Terminstatus dar. In der folgenden Tabelle werden die einzelnen Bits beschrieben.
   
 |**Name**|**Bit**|**Beschreibung**|
 |:-----|:-----|:-----|

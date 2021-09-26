@@ -1,27 +1,27 @@
 ---
-title: Completename
+title: CompleteName
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CompleteName
 api_type:
 - schema
 ms.assetid: 22d30d1f-a84d-48bb-ad8f-ce13f8e76604
-description: Das completename-Element stellt den vollständigen Namen eines Kontakts dar.
-ms.openlocfilehash: 9b5d2646ec37b41cd88d7de61573bfb4a8746cdf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das CompleteName-Element stellt den vollständigen Namen eines Kontakts dar.
+ms.openlocfilehash: 873d372657089d21e86025cdf7812659ac505491
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527173"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543555"
 ---
-# <a name="completename"></a>Completename
+# <a name="completename"></a>CompleteName
 
-Das **completename** -Element stellt den vollständigen Namen eines Kontakts dar. 
+Das **CompleteName-Element** stellt den vollständigen Namen eines Kontakts dar. 
   
 ```xml
 <CompleteName>
@@ -52,9 +52,9 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Title](title.md) <br/> |Stellt den Titel eines Kontakts dar.  <br/> |
-|[FirstName](firstname.md) <br/> |Stellt den ersten Kontaktnamen dar.  <br/> |
-|[MiddleName](middlename.md) <br/> |Stellt den zweiten Vornamen eines Kontakts dar.  <br/> |
-|[LastName](lastname.md) <br/> |Stellt den letzten Namen eines Kontakts dar.  <br/> |
+|[FirstName](firstname.md) <br/> |Stellt den Vornamen des Kontakts dar.  <br/> |
+|[MiddleName](middlename.md) <br/> |Stellt den Vornamen eines Kontakts dar.  <br/> |
+|[LastName](lastname.md) <br/> |Stellt den Nachnamen eines Kontakts dar.  <br/> |
 |[Suffix](suffix.md) <br/> |Stellt ein Suffix für den Namen eines Kontakts dar.  <br/> |
 |[Initialen](initials.md) <br/> |Stellt die Initialen eines Kontakts dar.  <br/> |
 |[FullName](fullname.md) <br/> |Stellt den vollständigen Namen eines Kontakts dar.  <br/> |
@@ -68,9 +68,9 @@ Keine.
 |:-----|:-----|
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die completename-Eigenschaft ist Teil der [Standard](https://docs.microsoft.com/dotnet/api/exchangewebservices.defaultshapenamestype?view=exchange-ews-proxy) Form. In der ersten Version von Microsoft Exchange Server 2007 wird die completename-Eigenschaft vom [GetItem-Vorgang](getitem-operation.md)zurückgegeben, jedoch nicht durch den [FindItem-Vorgang](finditem-operation.md). Beginnend mit Exchange Server 2007 Service Pack 1 (SP1) gibt der [FindItem-Vorgang](finditem-operation.md) auch die completename-Eigenschaft mit der [Standard](https://docs.microsoft.com/dotnet/api/exchangewebservices.defaultshapenamestype?view=exchange-ews-proxy) Form zurück. Diese Änderung wirkt sich nicht auf das Schema aus. 
+Die CompleteName-Eigenschaft ist [](https://docs.microsoft.com/dotnet/api/exchangewebservices.defaultshapenamestype?view=exchange-ews-proxy) Teil des Standard-Shapes. In der ersten Version von Microsoft Exchange Server 2007 wird die CompleteName-Eigenschaft vom [GetItem-Vorgang](getitem-operation.md)zurückgegeben, aber nicht vom [FindItem-Vorgang.](finditem-operation.md) Ab Exchange Server 2007 Service Pack 1 (SP1) gibt der [FindItem-Vorgang](finditem-operation.md) auch die CompleteName-Eigenschaft mit dem [Standard-Shape](https://docs.microsoft.com/dotnet/api/exchangewebservices.defaultshapenamestype?view=exchange-ews-proxy) zurück. Diese Änderung wirkt sich nicht auf das Schema aus. 
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

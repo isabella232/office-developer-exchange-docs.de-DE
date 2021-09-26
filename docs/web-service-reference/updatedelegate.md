@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateDelegate
 api_type:
 - schema
 ms.assetid: c6ae99c4-18b0-4136-90ab-12cf15e15f91
 description: Das UpdateDelegate-Element definiert eine Anforderung zum Aktualisieren von Delegaten in einem Postfach. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 17d69eb8c539217d39e1dd0c2616261d02ad304d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: e4e5f79a54e6555a8758612fa02d897df5c3f0af
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468873"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541805"
 ---
 # <a name="updatedelegate"></a>UpdateDelegate
 
-Das **UpdateDelegate** -Element definiert eine Anforderung zum Aktualisieren von Delegaten in einem Postfach. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **UpdateDelegate-Element** definiert eine Anforderung zum Aktualisieren von Delegaten in einem Postfach. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <UpdateDelegate>
@@ -44,15 +44,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DelegateUsers](delegateusers.md) <br/> |Enthält ein Array von [DelegateUser](delegateuser.md) -Elementen, die die Stellvertretungen und die Updates identifizieren, die auf die Stellvertretungen angewendet werden sollen. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
-|[DeliverMeetingRequests](delivermeetingrequests.md) <br/> |Definiert, wie Besprechungsanfragen zwischen der Stellvertretung und dem Prinzipal verarbeitet werden. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[DelegateUsers](delegateusers.md) <br/> |Enthält ein Array von [DelegateUser-Elementen,](delegateuser.md) die die Stellvertretungen und die Aktualisierungen identifizieren, die auf die Delegaten angewendet werden sollen. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[DeliverMeetingRequests](delivermeetingrequests.md) <br/> |Definiert, wie Besprechungsanfragen zwischen dem Stellvertreter und dem Prinzipal behandelt werden. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
 |[Postfach](mailbox.md) <br/> |Ein e-Mail-aktivierten Active Directory Directory Service-Objekt identifiziert.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -62,7 +62,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

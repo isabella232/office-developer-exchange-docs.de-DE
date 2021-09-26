@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetInboxRules
 api_type:
 - schema
 ms.assetid: b4b2701a-4a23-4acc-8c75-19f7955ad7ae
-description: Der GetInboxRules-Vorgang verwendet Exchange Webdienste zum Abrufen von Posteingangsregeln im Postfach des identifizierten Benutzers.
-ms.openlocfilehash: f4c4c03f55c9f32be4a067024f4387888edd5fe9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der GetInboxRules-Vorgang verwendet Exchange Webdienste, um Posteingangsregeln im Postfach des identifizierten Benutzers abzurufen.
+ms.openlocfilehash: 3e312ed08494b92c212595d081454b5f2ca6117e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457935"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546252"
 ---
 # <a name="getinboxrules-operation"></a>GetInboxRules-Vorgang
 
-Der **GetInboxRules** -Vorgang verwendet Exchange Webdienste zum Abrufen von Posteingangsregeln im Postfach des identifizierten Benutzers. 
+Der **GetInboxRules-Vorgang** verwendet Exchange Webdienste, um Posteingangsregeln im Postfach des identifizierten Benutzers abzurufen. 
   
-## <a name="getinboxrules-request-example"></a>GetInboxRules-Anforderungs Beispiel
+## <a name="getinboxrules-request-example"></a>GetInboxRules-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt den Anforderungs-XML-Code, den der Client an den Server sendet. Die Anforderung identifiziert den Benutzer im [MailboxSmtpAddress](mailboxsmtpaddress.md) -Element. Alle Posteingangsregeln für den identifizierten Benutzer werden in der Antwort zurückgegeben. 
+Das folgende Beispiel zeigt den Anforderungs-XML-Code, den der Client an den Server sendet. Die Anforderung identifiziert den Benutzer im [MailboxSmtpAddress-Element.](mailboxsmtpaddress.md) Alle Posteingangsregeln für den identifizierten Benutzer müssen in der Antwort zurückgegeben werden. 
   
 ### <a name="code"></a>Code
 
@@ -54,14 +54,14 @@ Die Anforderung enthält das folgende optionale Element:
   
 - [MailboxSmtpAddress](mailboxsmtpaddress.md)
     
-## <a name="successful-getinboxrules-response-example"></a>Erfolgreiches GetInboxRules-Antwortbeispiel
+## <a name="successful-getinboxrules-response-example"></a>Beispiel für erfolgreiche GetInboxRules-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Simple Object Access Protocol (SOAP) Body-Beispiel zeigt eine erfolgreiche Antwort auf die **GetInboxRules** -Anforderung. In diesem Beispiel enthält die Antwort eine Regel. 
+Der folgende SOAP-Text (Simple Object Access Protocol) zeigt eine erfolgreiche Antwort auf die **GetInboxRules-Anforderung.** In diesem Beispiel enthält die Antwort eine Regel. 
   
 > [!NOTE]
-> Die Werte der ID und der **ChangeKey** -Attribute des [Folder](folderid.md) **-ID** -Elements wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Die Werte der Attribute **"Id"** und **"ChangeKey"** des ["FolderId"-Elements](folderid.md) wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="code"></a>Code
 
@@ -107,9 +107,9 @@ Das folgende Simple Object Access Protocol (SOAP) Body-Beispiel zeigt eine erfol
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a>Response-Elemente
+### <a name="response-elements"></a>Antwortelemente
 
-Die Antwort enthält die folgenden Elemente:
+Die folgenden Elemente sind in der Antwort enthalten:
   
 - [GetInboxRulesResponse](getinboxrulesresponse.md)
     

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetPhoneCallInformation
 api_type:
 - schema
 ms.assetid: 5f4ee71c-bde0-4b0d-b426-0c24dfe67585
-description: Das GetPhoneCallInformation-Element gibt eine Anforderung zum Abrufen von Telefonanruf Informationen an.
-ms.openlocfilehash: b835cd301b1c243e88034d1057026ef1305b9038
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GetPhoneCallInformation-Element gibt eine Anforderung zum Abrufen von Telefonanrufinformationen an.
+ms.openlocfilehash: ed62ac514e03cb766c5c763826ffbe529871d8ae
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530197"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543268"
 ---
 # <a name="getphonecallinformation"></a>GetPhoneCallInformation
 
-Das **GetPhoneCallInformation** -Element gibt eine Anforderung zum Abrufen von Telefonanruf Informationen an. 
+Das **GetPhoneCallInformation-Element** gibt eine Anforderung zum Abrufen von Telefonanrufinformationen an. 
   
 ```xml
 <GetPhoneCallInformation>
@@ -42,17 +42,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Anrufer](phonecallid.md) <br/> |Gibt den Bezeichner eines Telefonanrufs an.  <br/> |
+|[PhoneCallId](phonecallid.md) <br/> |Gibt den Bezeichner eines Telefonanrufs an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -62,7 +62,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

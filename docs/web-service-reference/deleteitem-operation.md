@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteItem
 api_type:
 - schema
 ms.assetid: 3e26c416-fa12-476e-bfd2-5c1f4bb7b348
 description: Über den DeleteItem-Vorgang können Elemente im Exchange-Speicher gelöscht werden.
-ms.openlocfilehash: f068e08ef0d0f590c9ed8274f77d4dae9f942995
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: b62655b9046678d27ed0f24bc92d1840f3e3b343
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526935"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545412"
 ---
 # <a name="deleteitem-operation"></a>DeleteItem-Operation
 

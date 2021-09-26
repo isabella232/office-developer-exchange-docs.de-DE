@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b3b86720-d086-47c3-94af-921fdd719edf
-description: Das SeekToConditionPageItemView-Element gibt die Bedingung an, die zum Identifizieren des Endes einer Suche, des startIndex einer Suche, der maximal zurückzugebenden Einträge und der Suchanweisungen für eine FindItem-oder FindConversation-Suche verwendet wird.
-ms.openlocfilehash: dbb073263740ccdf75367f85f672b7d5ec78f7a0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SeekToConditionPageItemView-Element identifiziert die Bedingung, die verwendet wird, um das Ende einer Suche, den Startindex einer Suche, die maximal zurückzugebenden Einträge und die Suchanweisungen für eine FindItem- oder FindConversation-Suche zu identifizieren.
+ms.openlocfilehash: 6f4797a6b90456a50922db1c829757711816273e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466836"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546105"
 ---
 # <a name="seektoconditionpageitemview"></a>SeekToConditionPageItemView
 
-Das **SeekToConditionPageItemView** -Element gibt die Bedingung an, die zum Identifizieren des Endes einer Suche, des startIndex einer Suche, der maximal zurückzugebenden Einträge und der Suchanweisungen für eine **FindItem** -oder **FindConversation** -Suche verwendet wird. 
+Das **SeekToConditionPageItemView-Element** identifiziert die Bedingung, die verwendet wird, um das Ende einer Suche, den Startindex einer Suche, die maximal zurückzugebenden Einträge und die Suchanweisungen für eine **FindItem-** oder **FindConversation-Suche** zu identifizieren. 
   
 ```XML
 <SeekToConditionPageItemView BasePoint="" MaxEntriesReturned="">
@@ -34,18 +34,18 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|Basepoint  <br/> |Der Textwert des **Basepoint** -Attributs ist der Basispunkt, von dem aus die Suche gestartet wird. Der Textwert **Anfang** gibt an, dass die Suche am Anfang der Ergebnismenge beginnt. Ein Textwert von **End** gibt an, dass die Suche am Ende der Ergebnismenge beginnt.  <br/> |
-|MaxEntriesReturned  <br/> |Der Textwert des **MaxEntriesReturned** -Attributs ist die maximale Anzahl von Elementen, die in einer Ergebnismenge zurückgegeben werden können.  <br/> |
+|Basispunkt  <br/> |Der Textwert des **BasePoint-Attributs** ist der Basispunkt, von dem aus die Suche gestartet wird. Der Textwert  Anfang gibt an, dass die Suche am Anfang des Resultsets beginnt. Der Textwert  Ende gibt an, dass die Suche am Ende des Resultsets beginnt.  <br/> |
+|MaxEntriesReturned  <br/> |Der Textwert des **MaxEntriesReturned-Attributs** ist die maximale Anzahl von Elementen, die in einem Resultset zurückgegeben werden können.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[Condition (restrictiontype)](condition-restrictiontype.md)
+[Bedingung (RestrictionType)](condition-restrictiontype.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 [FindConversation](findconversation.md)  |  [FindItem](finditem.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -57,7 +57,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

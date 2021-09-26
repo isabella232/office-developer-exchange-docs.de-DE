@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetFolderField
 api_type:
 - schema
 ms.assetid: 8c69db7b-54b5-4ae2-abca-4d6e0937a790
-description: Das setfolderfield-Element stellt ein Update dar, mit dem der Wert für eine einzelne Eigenschaft eines Ordners in einem UpdateFolder-Vorgang festgelegt wird.
-ms.openlocfilehash: ab75a3862801b9a7b3369d9a4116c653b461781c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SetFolderField-Element stellt eine Aktualisierung dar, die den Wert für eine einzelne Eigenschaft in einem Ordner in einem UpdateFolder-Vorgang festlegt.
+ms.openlocfilehash: da8ec49a4040ba52e49c737851133506c9ae93c6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530317"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545993"
 ---
 # <a name="setfolderfield"></a>SetFolderField
 
-Das **setfolderfield** -Element stellt ein Update dar, mit dem der Wert für eine einzelne Eigenschaft eines Ordners in einem UpdateFolder-Vorgang festgelegt wird. 
+Das **SetFolderField-Element** stellt eine Aktualisierung dar, die den Wert für eine einzelne Eigenschaft in einem Ordner in einem UpdateFolder-Vorgang festlegt. 
 
 ```xml
 <SetFolderField>
@@ -143,12 +143,12 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member eines Wörterbuchs.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert erweiterte MAPI-Eigenschaften.  <br/> |
-|[Ordner](folder.md) <br/> |Gibt einen Ordner an, der aktualisiert werden soll.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifies frequently referenced properties by URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Mitglieder eines Wörterbuchs.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifies extended MAPI properties.  <br/> |
+|[Ordner](folder.md) <br/> |Identifiziert einen zu aktualisierenden Ordner.  <br/> |
 |[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner dar, der in erster Linie Kalenderelemente enthält.  <br/> |
-|[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Ordner Kontakte in einem Postfach dar.  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Kontaktordner in einem Postfach dar.  <br/> |
 |[SearchFolder](searchfolder.md) <br/> |Stellt einen Suchordner dar, der in einem Postfach enthalten ist.  <br/> |
 |[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner dar, der in einem Postfach enthalten ist.  <br/> |
    
@@ -156,11 +156,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Updates (Ordner)](updates-folder.md) <br/> |Enthält eine Gruppe von Elementen, die Append-, festlegen-und DELETE-Änderungen an Ordner Eigenschaften definiert.  <br/> |
+|[Updates (Ordner)](updates-folder.md) <br/> |Enthält eine Reihe von Elementen, die Anfüge-, Festlegen- und Löschen von Änderungen an Ordnereigenschaften definieren.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn die Eigenschaft vorhanden ist, wird der Wert der Eigenschaft auf den angegebenen Wert festgelegt. Wenn die Eigenschaft nicht vorhanden ist, wird die Eigenschaft mit dem angegebenen Wert erstellt.
+Wenn die Eigenschaft vorhanden ist, wird der Eigenschaftswert auf den angegebenen Wert festgelegt. Wenn die Eigenschaft nicht vorhanden ist, wird die Eigenschaft mit dem angegebenen Wert erstellt.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

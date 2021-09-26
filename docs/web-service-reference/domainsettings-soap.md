@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: f3d37f5a-c9ea-4ed9-a011-94d33bda64d1
-description: Das DomainSettings-Element stellt die Domäneneinstellungen dar, die in einer Auto Ermittlungsanforderung übermittelt oder von einer Auto Ermittlungs Antwort zurückgegeben wurden.
-ms.openlocfilehash: 67e3753b0cf5c7c653664ff087f697ce7ae2b7a4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DomainSettings-Element stellt die Domäneneinstellungen dar, die in einer AutoErmittlungsanforderung übermittelt oder von einer AutoErmittlungsantwort zurückgegeben wurden.
+ms.openlocfilehash: 9024421eed20b9a9e642b3b0147699c57fcaaa79
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530698"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544178"
 ---
 # <a name="domainsettings-soap"></a>DomainSettings (SOAP)
 
-Das **DomainSettings** -Element stellt die Domäneneinstellungen dar, die in einer Auto Ermittlungsanforderung übermittelt oder von einer Auto Ermittlungs Antwort zurückgegeben wurden. 
+Das **DomainSettings-Element** stellt die Domäneneinstellungen dar, die in einer AutoErmittlungsanforderung übermittelt oder von einer AutoErmittlungsantwort zurückgegeben wurden. 
   
 ```XML
 <DomainSettings>
@@ -39,7 +39,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DomainSetting (SOAP)](domainsetting-soap.md) <br/> |Enthält Domäneneinstellungen, die von einer [GetDomainSettings-Vorgang (SOAP)-](getdomainsettings-operation-soap.md) Anforderung zurückgegeben werden.  <br/> |
+|[DomainSetting (SOAP)](domainsetting-soap.md) <br/> |Enthält Domäneneinstellungen, die von einer [SOAP-Anforderung (GetDomainSettings-Vorgang)](getdomainsettings-operation-soap.md) zurückgegeben werden.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -56,8 +56,8 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

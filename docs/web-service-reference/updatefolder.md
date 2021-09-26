@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateFolder
 api_type:
 - schema
 ms.assetid: 412d0683-2819-40c5-a0ae-f613499a7b66
-description: Das UpdateFolder-Element stellt den Vorgang dar, der zum Aktualisieren der Eigenschaften für einen angegebenen Ordner verwendet wird.
-ms.openlocfilehash: 124ffd02a5ea2e7bf6f21cc7009dde08837906f9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das UpdateFolder-Element stellt den Vorgang dar, der zum Aktualisieren von Eigenschaften für einen angegebenen Ordner verwendet wird.
+ms.openlocfilehash: 695e529a2e4f7e8725b79e169b32eb70e9b72772
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457046"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541742"
 ---
 # <a name="updatefolder"></a>UpdateFolder
 
-Das **UpdateFolder** -Element stellt den Vorgang dar, der zum Aktualisieren der Eigenschaften für einen angegebenen Ordner verwendet wird. 
+Das **UpdateFolder-Element** stellt den Vorgang dar, der zum Aktualisieren von Eigenschaften für einen angegebenen Ordner verwendet wird. 
   
 ```xml
 <UpdateFolder>
@@ -48,7 +48,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

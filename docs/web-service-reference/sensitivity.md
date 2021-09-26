@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Sensitivity
 api_type:
 - schema
 ms.assetid: d872423a-c26e-4675-9028-23361fb4a43d
-description: Das Sensitivity-Element gibt die Empfindlichkeitsstufe eines Elements an.
-ms.openlocfilehash: 92352e59da9b5f0e51b650d2a6fb36575f6542be
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Sensitivity-Element gibt die Vertraulichkeitsstufe eines Elements an.
+ms.openlocfilehash: 302d88b949015fd007556f2150c1435b31c8506c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466542"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546056"
 ---
 # <a name="sensitivity"></a>Vertraulichkeit
 
-Das **Sensitivity** -Element gibt die Empfindlichkeitsstufe eines Elements an. 
+Das **Sensitivity-Element** gibt die Vertraulichkeitsstufe eines Elements an. 
   
 ```XML
 <Sensitivity/>
@@ -50,8 +50,8 @@ Keine.
 |[Kontaktperson](contact.md) <br/> |Stellt ein Exchange-Kontaktelement dar.  <br/> |
 |[DeclineItem](declineitem.md) <br/> |Stellt eine ablehnen Antwort auf eine Besprechungsanfrage.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Stellt eine Verteilerliste dar.  <br/> |
-|[Ausnahmen](exceptions.md) <br/> |Stellt alle verfügbaren Regel Ausnahmebedingungen für eine Posteingangsregel dar.  <br/> |
-|[Element](item.md) <br/> |Stellt ein generisches Exchange-Element dar.  <br/> |
+|[Ausnahmen](exceptions.md) <br/> |Stellt alle verfügbaren Regelausnahmebedingungen für eine Posteingangsregel dar.  <br/> |
+|[Aspekt](item.md) <br/> |Stellt ein generisches Exchange Element dar.  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Stellt eine Besprechungsabsage im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Stellt eine Besprechung im Exchange-Informationsspeicher dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
@@ -63,17 +63,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert ist erforderlich. Im folgenden sind die möglichen Text Werte für dieses Element angegeben:
+Ein Textwert ist erforderlich. Es folgen die möglichen Textwerte für dieses Element:
   
-- Normal
+- Standard
+    
+- Persönlich
     
 - Privat
     
-- Private
-    
 - Vertraulich
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

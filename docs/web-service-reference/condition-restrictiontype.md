@@ -1,23 +1,23 @@
 ---
-title: Condition (restrictiontype)
+title: Bedingung (RestrictionType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4fdb373e-bf1b-4cb0-bbfb-444c6c6cec50
-description: Das Condition-Element gibt die Bedingung an, die verwendet wird, um das Ende einer Suche nach einer FindItem oder einer FindConversation-Operation zu identifizieren.
-ms.openlocfilehash: 00c5b5e615ed9b253c79dae9dc2b89c797853089
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Condition-Element gibt die Bedingung an, die verwendet wird, um das Ende einer Suche nach einem FindItem- oder FindConversation-Vorgang zu identifizieren.
+ms.openlocfilehash: f6292d2d25b9d236d0bb611c41a4cfcf490b6df4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463937"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543527"
 ---
-# <a name="condition-restrictiontype"></a>Condition (restrictiontype)
+# <a name="condition-restrictiontype"></a>Bedingung (RestrictionType)
 
-Das **Condition** -Element gibt die Bedingung an, die verwendet wird, um das Ende einer Suche nach einer **FindItem** oder einer **FindConversation** -Operation zu identifizieren. 
+Das **Condition-Element** gibt die Bedingung an, die verwendet wird, um das Ende einer Suche nach einem **FindItem-** oder **FindConversation-Vorgang** zu identifizieren. 
   
 ```XML
 <Condition>
@@ -25,7 +25,7 @@ Das **Condition** -Element gibt die Bedingung an, die verwendet wird, um das End
 </Condition>
 ```
 
- **Restrictiontype**
+ **RestrictionType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -38,15 +38,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SearchExpression](searchexpression.md) <br/> |Abstract-Element, das das ersetzte Element innerhalb einer Einschränkung darstellt.  <br/> |
+|[SearchExpression](searchexpression.md) <br/> |Abstraktes Element, das das ersetzte Element innerhalb einer Einschränkung darstellt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[SeekToConditionPageItemView](seektoconditionpageitemview.md) <br/> |Gibt die Bedingung an, die verwendet wird, um das Ende einer Suche, den startIndex einer Suche, die maximal zurückzugebenden Einträge und die Suchanweisungen für eine **FindItem** oder einen **FindConversation** -Vorgang zu identifizieren.  <br/> |
+|[SeekToConditionPageItemView](seektoconditionpageitemview.md) <br/> |Gibt die Bedingung an, die verwendet wird, um das Ende einer Suche, den Startindex einer Suche, die maximal zurückzugebenden Einträge und die Suchanweisungen für ein **FindItem-** oder **einen FindConversation-Vorgang** zu identifizieren.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

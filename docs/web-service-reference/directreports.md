@@ -5,22 +5,24 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ab88739f-9018-4887-ae46-f1471242628c
 description: Das DirectReports-Element enthält SMTP-Informationen, die die direkten Berichte eines Kontakts identifizieren.
-ms.openlocfilehash: d7a1077d334862df2a24e27bc23e02539a1bafb1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a84e37836b645ec679208094ed893d04793f01d2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462073"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542351"
 ---
 # <a name="directreports"></a>DirectReports
 
-Das **DirectReports** -Element enthält SMTP-Informationen, die die direkten Berichte eines Kontakts identifizieren. 
+Das **DirectReports-Element** enthält SMTP-Informationen, die die direkten Berichte eines Kontakts identifizieren. 
   
 ```XML
-<DirectReports/>
+<DirectReports>
+   <Mailbox/>
+</DirectReports>
 ```
 
  **SingleRecipientType**
@@ -34,19 +36,17 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-Keine.
-  
+|**Element**|**Beschreibung**|
+|:-----|:-----|
+|[Postfach](mailbox.md) <br/> |Ein e-Mail-aktivierten Active Directory Directory Service-Objekt identifiziert.  <br/> |
+     
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Elementname**|**Beschreibung**|
 |:-----|:-----|
-|[Kontaktperson](contact.md) <br/> |Stellt das Kontaktelement im Exchange-Informationsspeicher dar.  <br/> |
+|[Kontaktperson](contact.md) <br/> |Stellt das Kontaktelement im Exchange Speicher dar.  <br/> |
    
-## <a name="text-value"></a>Textwert
-
-Keine.
-  
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

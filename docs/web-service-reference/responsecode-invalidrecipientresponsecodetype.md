@@ -1,27 +1,27 @@
 ---
-title: Response Code (InvalidRecipientResponseCodeType)
+title: ResponseCode (InvalidRecipientResponseCodeType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ResponseCode
 api_type:
 - schema
 ms.assetid: 582e9caa-d2bc-4be1-a460-739294f9ef18
-description: Das Response Code-Element enthält Informationen dazu, warum der Empfänger ungültig ist.
-ms.openlocfilehash: d78de64de7725007ec51a55dad13d1cc892a25e6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ResponseCode-Element enthält Informationen dazu, warum der Empfänger ungültig ist.
+ms.openlocfilehash: 33cd05aca672e250f288aec72d876734132d2e36
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529721"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544808"
 ---
-# <a name="responsecode-invalidrecipientresponsecodetype"></a>Response Code (InvalidRecipientResponseCodeType)
+# <a name="responsecode-invalidrecipientresponsecodetype"></a>ResponseCode (InvalidRecipientResponseCodeType)
 
-Das **Response Code** -Element enthält Informationen dazu, warum der Empfänger ungültig ist. 
+Das **ResponseCode-Element** enthält Informationen dazu, warum der Empfänger ungültig ist. 
   
 ```XML
 <ResponseCode>OtherError or RecipientOrganizationNotFederated or CannotObtainTokenFromSTS or SystemPolicyBlocksSharingWithThisRecipient or RecipientOrganizationFederatedWithUnknownTokenIssuer</ResponseCode>
@@ -48,17 +48,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-In der folgenden Tabelle sind die möglichen Werte für das **Response Code** -Element aufgeführt. 
+In der folgenden Tabelle sind die möglichen Werte für das **ResponseCode-Element** aufgeführt. 
   
 |**Code**|**Beschreibung**|
 |:-----|:-----|
-|OtherError  <br/> |Gibt an, dass der Fehler nicht durch einen anderen Fehlerantwort Code angegeben wird.  <br/> |
-|RecipientOrganizationNotFederated  <br/> |Gibt an, dass eine Freigabebeziehung für die in der SMTP-e-Mail-Adresse des Empfängers angegebene Organisation nicht verfügbar ist.  <br/> |
-|CannotObtainTokenFromSTS  <br/> |Gibt an, dass ein Problem beim Abrufen eines Sicherheitstokens vom tokenserver aufgetreten ist.  <br/> |
-|SystemPolicyBlocksSharingWithThisRecipient  <br/> |Gibt an, dass der System Administrator eine Systemrichtlinie festgelegt hat, die die Freigabe für den angegebenen Empfänger blockiert.  <br/> |
-|RecipientOrganizationFederatedWithUnknownTokenIssuer  <br/> |Gibt an, dass der vom angegebenen Empfänger verwendete Secure Token Service unbekannt ist.  <br/> |
+|OtherError  <br/> |Gibt an, dass der Fehler nicht durch einen anderen Fehlerantwortcode angegeben wird.  <br/> |
+|RecipientOrganizationNotFederated  <br/> |Gibt an, dass keine Freigabebeziehung mit der in der SMTP-E-Mail-Adresse des Empfängers angegebenen Organisation verfügbar ist.  <br/> |
+|CannotObtainTokenFromSTS  <br/> |Gibt an, dass ein Problem beim Abrufen eines Sicherheitstokens vom Tokenserver aufgetreten ist.  <br/> |
+|SystemPolicyBlocksSharingWithThisRecipient  <br/> |Gibt an, dass der Systemadministrator eine Systemrichtlinie festgelegt hat, die die Freigabe für den angegebenen Empfänger blockiert.  <br/> |
+|RecipientOrganizationFederatedWithUnknownTokenIssuer  <br/> |Gibt an, dass der vom angegebenen Empfänger verwendete sichere Tokendienst unbekannt ist.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

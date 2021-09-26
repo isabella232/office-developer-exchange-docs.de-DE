@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: b879c134-307e-4645-bb53-55d8ba4fad9c
-description: Das Bereitstellungs-Kennungs Element identifiziert die Microsoft Exchange Server 2007 Gesamtstruktur eindeutig.
-ms.openlocfilehash: 4986a3404763e88fb3e84d52a5d30d54c810f93a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DeploymentId-Element identifiziert die Microsoft Exchange Server 2007-Gesamtstruktur eindeutig.
+ms.openlocfilehash: 37d66eadb38f02e75a35d0516b36aff07dfdafa6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467921"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545356"
 ---
 # <a name="deploymentid-pox"></a>DeploymentId (POX)
 
-Das **Bereitstellungs** -Kennungs Element identifiziert die Microsoft Exchange Server 2007 Gesamtstruktur eindeutig. 
+Das **DeploymentId-Element** identifiziert die Microsoft Exchange Server 2007-Gesamtstruktur eindeutig. 
   
 - [AutoErmittlung (POX)](autodiscover-pox.md)  
 - [Response (POX)](response-pox.md) 
@@ -45,15 +45,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Benutzer (POX)](user-pox.md) <br/> |Enthält benutzerspezifische Informationen.  <br/> |
+|[Benutzer (POX)](user-pox.md) <br/> |Stellt benutzerspezifische Informationen bereit.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert identifiziert die Exchange 2007 Gesamtstruktur im GUID-Format eindeutig.
+Der Textwert identifiziert die Exchange 2007-Gesamtstruktur eindeutig im GUID-Format.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn Sie Exchange 2007 deinstallieren und anschließend neu installieren und denselben Servernamen verwenden, ändert sich der Wert der **Bereitstellungs** -Nr. 
+Wenn Sie Exchange 2007 deinstallieren und dann neu installieren und denselben Servernamen verwenden, ändert sich der **DeploymentId-Wert.** 
   
 ## <a name="see-also"></a>Siehe auch
 

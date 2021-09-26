@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0115a740-9264-4e57-a410-197bb39e6c81
-description: Das TargetSharingEpr-Element stellt die TargetSharingEpr-Eigenschaft dar. Das TargetSharingEpr-Element ist nur für die interne Verwendung.
-ms.openlocfilehash: 8cb8d114ae43dfc8ad76aebe87e0e920c16477f2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das TargetSharingEpr-Element stellt die TargetSharingEpr-Eigenschaft dar. Das TargetSharingEpr-Element ist nur für die interne Verwendung vorgesehen.
+ms.openlocfilehash: f0cd15963ef9f2f89bcc7c022c4d4b6beaaee3d1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457081"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545762"
 ---
 # <a name="targetsharingepr-soap"></a>TargetSharingEpr (SOAP)
  
-Das **TargetSharingEpr** -Element stellt die **TargetSharingEpr** -Eigenschaft dar. Das **TargetSharingEpr** -Element ist nur für die interne Verwendung. Dieses Element wird nicht von Clients verwendet. 
+Das **TargetSharingEpr-Element** stellt die **TargetSharingEpr-Eigenschaft** dar. Das **TargetSharingEpr-Element** ist nur für die interne Verwendung vorgesehen. Dieses Element wird von Clients nicht verwendet. 
   
 ```XML
 <TargetSharingEpr/>
@@ -40,9 +40,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste von Organisationsbeziehungen für eine einzelne Organisation dar.  <br/> |
+|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Stellt eine Liste der Organisationsbeziehungen für eine einzelne Organisation dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element gibt die URL des Zielservers für die externe Organisation an. 
   
@@ -51,8 +51,8 @@ Dieses Element gibt die URL des Zielservers für die externe Organisation an.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

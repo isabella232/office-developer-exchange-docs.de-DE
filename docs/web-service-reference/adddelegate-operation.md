@@ -5,27 +5,27 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AddDelegate
 api_type:
 - schema
 ms.assetid: 012d8cc5-648c-4ba0-a155-15c422b1e994
-description: Mit dem AddDelegate-Vorgang werden dem Postfach eines Prinzipals mindestens eine Stellvertretung hinzugefügt, und es werden bestimmte Zugriffsberechtigungen festgelegt.
-ms.openlocfilehash: 80adbe71d69be1025dc9593c6a9002bc68fdcb76
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der AddDelegate-Vorgang fügt einen oder mehrere Stellvertretungen zum Postfach eines Prinzipals hinzu und legt bestimmte Zugriffsberechtigungen fest.
+ms.openlocfilehash: 687080c58a0dbde2ddb0f0049b96d543204c6018
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466514"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543814"
 ---
 # <a name="adddelegate-operation"></a>AddDelegate-Vorgang
 
-Mit dem **AddDelegate** -Vorgang werden dem Postfach eines Prinzipals mindestens eine Stellvertretung hinzugefügt, und es werden bestimmte Zugriffsberechtigungen festgelegt. 
+Der **AddDelegate-Vorgang** fügt einen oder mehrere Stellvertretungen zum Postfach eines Prinzipals hinzu und legt bestimmte Zugriffsberechtigungen fest. 
   
 ## <a name="soap-headers"></a>SOAP-Header
 
-Der **AddDelegate** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben werden. 
+Der **AddDelegate-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt und beschrieben sind. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -34,11 +34,11 @@ Der **AddDelegate** -Vorgang kann die SOAP-Header verwenden, die in der folgende
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat.  <br/> |
    
-## <a name="adddelegate-request-example"></a>AddDelegate-Anforderungs Beispiel
+## <a name="adddelegate-request-example"></a>AddDelegate-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **AddDelegate** -Anforderung wird versucht, user1 Stellvertretungsberechtigungen für Ordner zu erteilen, die Benutzer2 gehören. User1 erhält Berechtigungen auf Autor Ebene zum Benutzer2 von Kalenderordner-und Prüferberechtigungen auf Benutzer2 Kontakteordner. User1 empfängt keine Kopien von Besprechungsnachrichten und kann keine privaten Elemente im Benutzer2-Postfach anzeigen. Besprechungsanfragen werden sowohl an user1 als auch an Benutzer2 gesendet. 
+Das folgende Beispiel einer **AddDelegate-Anforderung** zeigt den Versuch, Benutzer1 Stellvertretungsberechtigungen für Ordner zu erteilen, die im Besitz von Benutzer2 sind. Benutzer1 erhält Berechtigungen auf Autorebene für den Kalenderordner von Benutzer2 und Berechtigungen auf Bearbeiterebene für den Kontakteordner von Benutzer2. Benutzer1 empfängt keine Kopien von Besprechungsnachrichten und kann keine privaten Elemente im Postfach von Benutzer2 anzeigen. Besprechungsanfragen werden sowohl an Benutzer1 als auch an Benutzer2 gesendet. 
   
 ### <a name="code"></a>Code
 
@@ -73,11 +73,11 @@ Im folgenden Beispiel einer **AddDelegate** -Anforderung wird versucht, user1 St
 </soap:Envelope>
 ```
 
-## <a name="adddelegate-response-example"></a>Beispiel für eine AddDelegate-Antwort
+## <a name="adddelegate-response-example"></a>AddDelegate-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel einer **AddDelegate** -Antwort zeigt eine erfolgreiche Antwort auf eine **AddDelegate** -Anforderung. 
+Das folgende Beispiel einer **AddDelegate-Antwort** zeigt eine erfolgreiche Antwort auf eine **AddDelegate-Anforderung.** 
   
 ### <a name="code"></a>Code
 
@@ -118,11 +118,11 @@ Das folgende Beispiel einer **AddDelegate** -Antwort zeigt eine erfolgreiche Ant
 </soap:Envelope>
 ```
 
-## <a name="adddelegate-error-response-example"></a>Beispiel für eine AddDelegate-Fehlerantwort
+## <a name="adddelegate-error-response-example"></a>AddDelegate-Fehlerantwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird die Antwort auf eine Anforderung zum Hinzufügen einer Stellvertretung gezeigt, die dem Postfach des Prinzipals bereits hinzugefügt wurde.
+Das folgende Beispiel zeigt die Antwort auf eine Anforderung zum Hinzufügen eines Delegaten, der dem Postfach des Prinzipals bereits hinzugefügt wurde.
   
 ### <a name="code"></a>Code
 
@@ -158,9 +158,9 @@ Im folgenden Beispiel wird die Antwort auf eine Anforderung zum Hinzufügen eine
 
 ### <a name="comments"></a>Comments
 
-Wenn der ErrorDelegateAlreadyExists-Antwortcode zurückgegeben wird, wenn Sie versuchen, eine Stellvertretung hinzuzufügen, verwenden Sie den [getdelegate-Vorgang](getdelegate-operation.md) , um alle aktuellen Berechtigungen für die Stellvertretung abzurufen, und verwenden Sie dann den [UpdateDelegate-Vorgang](updatedelegate-operation.md) , um die neuen Berechtigungen festzulegen. 
+Wenn der ErrorDelegateAlreadyExists-Antwortcode zurückgegeben wird, wenn Sie versuchen, einen Delegaten hinzuzufügen, verwenden Sie den [GetDelegate-Vorgang,](getdelegate-operation.md) um alle aktuellen Berechtigungen für den Delegaten abzurufen, und verwenden Sie dann den [UpdateDelegate-Vorgang,](updatedelegate-operation.md) um die neuen Berechtigungen festzulegen. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Hinzufügen von Stellvertretungen](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+- [Hinzufügen von Delegaten](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

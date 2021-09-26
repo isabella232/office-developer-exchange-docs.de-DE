@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CalendarFolderPermissionLevel
 api_type:
 - schema
 ms.assetid: 2a5c9381-dc2c-4fc6-b9b5-893477d0970e
-description: Das CalendarFolderPermissionLevel-Element enthält die Berechtigungen für den Standardordner Kalender. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: dcbd57da42b5e701d898c3756ce9bcc100c20af7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das CalendarFolderPermissionLevel-Element enthält die Berechtigungen für den Standardordner Calendar. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: 1e8fe706a977d32516d4ed362c0924f81cba12f3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461464"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543562"
 ---
 # <a name="calendarfolderpermissionlevel"></a>CalendarFolderPermissionLevel
 
-Das **CalendarFolderPermissionLevel** -Element enthält die Berechtigungen für den Standardordner Kalender. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **CalendarFolderPermissionLevel-Element** enthält die Berechtigungen für den Standardordner Calendar. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <CalendarFolderPermissionLevel>
@@ -46,23 +46,23 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DelegatePermissions](delegatepermissions.md) <br/> |Enthält die Einstellungen für die Stell Vertretungs Berechtigungsstufe für einen Benutzer. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[DelegatePermissions](delegatepermissions.md) <br/> |Enthält die Einstellungen für die Stellvertretungsberechtigungsstufe für einen Benutzer. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 In der folgenden Tabelle sind die Textwerte aufgeführt, die die Berechtigungsstufen darstellen.
   
-**Text Werte für Berechtigungsstufen**
+**Textwerte auf Berechtigungsebene**
 
 |**Berechtigungsstufe**|**Beschreibung**|
 |:-----|:-----|
-|Keine  <br/> |Der Stellvertreter Benutzer verfügt über keine Zugriffsberechtigungen für den Ordner Kalender.  <br/> |
-|Reviewer  <br/> |Der Stellvertreter-Benutzer kann Elemente im Kalenderordner lesen.  <br/> |
-|Ursprung  <br/> |Der Stellvertreter Benutzer kann Elemente im Kalenderordner lesen und erstellen.  <br/> |
-|Editor  <br/> |Der Stellvertreter Benutzer kann Elemente im Kalenderordner lesen, erstellen und ändern.  <br/> |
-|Benutzerdefiniert  <br/> |Der Stellvertreter Benutzer verfügt über benutzerdefinierte Zugriffsberechtigungen für den Ordner Kalender.  <br/> |
+|Keine  <br/> |Der Stellvertretungsbenutzer hat keine Zugriffsberechtigungen für den Kalenderordner.  <br/> |
+|Reviewer  <br/> |Der Stellvertretungsbenutzer kann Elemente im Kalenderordner lesen.  <br/> |
+|Ursprung  <br/> |Der Stellvertretungsbenutzer kann Elemente im Kalenderordner lesen und erstellen.  <br/> |
+|Editor  <br/> |Der Stellvertretungsbenutzer kann Elemente im Ordner "Kalender" lesen, erstellen und ändern.  <br/> |
+|Benutzerdefiniert  <br/> |Der Stellvertretungsbenutzer verfügt über benutzerdefinierte Zugriffsberechtigungen für den Kalenderordner.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -87,5 +87,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 - [EWS-XML-Elemente in Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Hinzufügen von Stellvertretungen](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+[Hinzufügen von Delegaten](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

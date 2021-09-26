@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RecurringDayTransition
 api_type:
 - schema
 ms.assetid: 1ae28d14-c2b8-4084-9e76-e2e347a884ce
-description: Das RecurringDayTransition-Element stellt einen Zeitzonenübergang dar, der jedes Jahr am gleichen Tag erfolgt.
-ms.openlocfilehash: 44c2a6ec4dbaaa52a2772cb5c35a84b14dd77f97
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das RecurringDayTransition-Element stellt einen Zeitzonenübergang dar, der jedes Jahr am selben Tag stattfindet.
+ms.openlocfilehash: 3b567e5b906ec00bd71deb1c85f8049bb6de8e3b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468467"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542883"
 ---
 # <a name="recurringdaytransition"></a>RecurringDayTransition
 
-Das **RecurringDayTransition** -Element stellt einen Zeitzonenübergang dar, der jedes Jahr am gleichen Tag erfolgt. 
+Das **RecurringDayTransition-Element** stellt einen Zeitzonenübergang dar, der jedes Jahr am selben Tag stattfindet. 
   
 ```xml
 <RecurringDayTransition>
@@ -46,24 +46,24 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[To](to.md) <br/> |Gibt den [Zeitraum](period.md) oder die [Transitions](transitionsgroup.md) an, der das Ziel des Zeit Zonen Übergangs darstellt.  <br/> |
-|[Offset](timeoffset.md) <br/> |Stellt den Offset für die Dauer der koordinierten Weltzeit (Coordinated Universal Time, UTC) für den Zeitzonenübergang dar.  <br/> |
-|[Month (Zeitzonenübergang)](month-time-zone-transition.md) <br/> |Stellt den Monat dar, in dem der Zeitzonenübergang erfolgt.  <br/> |
-|[DayOfWeek (Zeitzone)](dayofweek-timezone.md) <br/> |Stellt den Wochentag dar, an dem der Zeitzonenübergang erfolgt.  <br/> |
-|[Vorkommen (Zeitzonenübergang)](occurrence-time-zone-transition.md) <br/> |Stellt das Vorkommen des Wochentags in dem Monat dar, in dem der Zeitzonenübergang erfolgt.  <br/> |
+|[To](to.md) <br/> |Gibt den [Zeitraum](period.md) oder die [TransitionsGroup](transitionsgroup.md) an, die das Ziel des Zeitzonenübergangs ist.  <br/> |
+|[TimeOffset](timeoffset.md) <br/> |Stellt den Zeitoffset der koordinierten Weltzeit (COORDINATED Universal Time, UTC) für den Zeitzonenübergang dar.  <br/> |
+|[Monat (Zeitzonenübergang)](month-time-zone-transition.md) <br/> |Stellt den Monat dar, in dem der Zeitzonenübergang erfolgt.  <br/> |
+|[DayOfWeek (TimeZone)](dayofweek-timezone.md) <br/> |Stellt den Wochentag dar, an dem der Zeitzonenübergang stattfindet.  <br/> |
+|[Vorkommen (Zeitzonenübergang)](occurrence-time-zone-transition.md) <br/> |Stellt das Auftreten des Wochentags in dem Monat dar, in dem der Zeitzonenübergang erfolgt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Übergänge](transitions.md) <br/> |Stellt eine Auflistung von Zeit Zonen Übergängen dar.  <br/> |
-|[Transitiongroup](transitionsgroup.md) <br/> |Stellt eine Auflistung von Zeit Zonen Übergängen dar.  <br/> |
+|[Übergänge](transitions.md) <br/> |Stellt eine Auflistung von Zeitzonenübergängen dar.  <br/> |
+|[TransitionsGroup](transitionsgroup.md) <br/> |Stellt eine Auflistung von Zeitzonenübergängen dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Ein Beispiel für einen Zeitzonenübergang, der durch das [RecurringDayTransition](recurringdaytransition.md) -Element dargestellt werden kann, ist ein Übergang, der jedes Jahr am zweiten Dienstag im Februar stattfindet. 
+Ein Beispiel für einen Zeitzonenübergang, der durch das [RecurringDayTransition-Element](recurringdaytransition.md) dargestellt werden könnte, ist ein Übergang, der jedes Jahr am zweiten Dienstag des Februars stattfindet. 
   
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

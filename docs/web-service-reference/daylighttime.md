@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DaylightTime
 api_type:
 - schema
 ms.assetid: 9f551ee4-d945-477c-b981-9554b197d26d
-description: Das Daylight-Element stellt einen Offset von der Zeit relativ zur koordinierten Weltzeit (Coordinated Universal Time, UTC) dar, die durch das Bias-Element (UTC) in Regionen dargestellt wird, in denen die Sommerzeit eingehaltenwird. Dieses Element enthält auch Informationen darüber, wann der Übergang zur Sommerzeit aus der Standardzeit erfolgt.
-ms.openlocfilehash: 350fcb4ce278f423c62fcc5ecaa160eda71e4a2c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DaylightTime-Element stellt einen Offset von der Zeit relativ zur koordinierten Weltzeit (Coordinated Universal Time, UTC) dar, der durch das Bias -Element (UTC) in Regionen dargestellt wird, in denen Sommerzeit beobachtet wird. Dieses Element enthält auch Informationen darüber, wann der Übergang zur Sommerzeit von der Standardzeit erfolgt.
+ms.openlocfilehash: 95d09fe01602f2d55d1a39dc7164a3f60a328f2a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455653"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543431"
 ---
 # <a name="daylighttime"></a>DaylightTime
 
-Das **Daylight** -Element stellt einen Offset von der Zeit relativ zur koordinierten Weltzeit (Coordinated Universal Time, UTC) dar, die durch das [Bias-Element (UTC)](bias-utc.md) in Regionen dargestellt wird, in denen die Sommerzeit eingehaltenwird. Dieses Element enthält auch Informationen darüber, wann der Übergang zur Sommerzeit aus der Standardzeit erfolgt. 
+Das **DaylightTime-Element** stellt einen Offset von der Zeit relativ zur koordinierten Weltzeit (Coordinated Universal Time, UTC) dar, der durch das [Bias -Element (UTC)](bias-utc.md) in Regionen dargestellt wird, in denen Sommerzeit beobachtet wird. Dieses Element enthält auch Informationen darüber, wann der Übergang zur Sommerzeit von der Standardzeit erfolgt. 
   
-- [Zeitzone (Verfügbarkeit)](timezone-availability.md) 
+- [TimeZone (Verfügbarkeit)](timezone-availability.md) 
 - [DaylightTime](daylighttime.md)
   
 ```xml
@@ -51,22 +51,22 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Bias](bias.md) <br/> |Stellt den Offset vom UTC-Offset dar, der durch das [Bias-Element (UTC)](bias-utc.md) für Standardzeit und Sommerzeit bestimmt wird. Dieser Wert wird in Minuten angegeben.  <br/> |
-|[Time](time.md) <br/> |Stellt die Übergangszeit von Tag zu und von Standardzeit und Sommerzeit dar.  <br/> |
-|[DayOrder](dayorder.md) <br/> |Stellt das _n_th Vorkommen des Tags dar, der im [DayOfWeek-Element (TimeZone)](dayofweek-timezone.md) angegeben ist, das das Datum des Übergangs von und zur Standardzeit und zur Sommerzeit darstellt.  <br/> |
-|[Month](month.md) <br/> |Stellt den Übergangs Monat des Jahres zu und von Standardzeit und Sommerzeit dar.  <br/> |
-|[DayOfWeek (Zeitzone)](dayofweek-timezone.md) <br/> |Stellt den Wochentag dar, an dem der Übergang zu und von Standardzeit und Sommerzeit erfolgt.  <br/> |
-|[Jahr](year.md) <br/> |Dient zum Definieren einer Zeitzone, die sich je nach Jahr ändert. Dieses Element ist optional. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
+|[Bias](bias.md) <br/> |Stellt den Offset vom UTC-Offset dar, der vom [Bias -Element (UTC)](bias-utc.md) für Standardzeit und Sommerzeit identifiziert wird. Dieser Wert wird in Minuten angegeben.  <br/> |
+|[Time](time.md) <br/> |Stellt die Übergangszeit des Tages zu und von Standardzeit und Sommerzeit dar.  <br/> |
+|[DayOrder](dayorder.md) <br/> |Stellt das _n_th Vorkommen des Tags dar, der im [DayOfWeek (TimeZone)-Element](dayofweek-timezone.md) angegeben ist, das das Datum des Übergangs von und zu Standardzeit und Sommerzeit darstellt.  <br/> |
+|[Month](month.md) <br/> |Stellt den Übergangsmonat des Jahres zu und von Standardzeit und Sommerzeit dar.  <br/> |
+|[DayOfWeek (TimeZone)](dayofweek-timezone.md) <br/> |Stellt den Wochentag dar, an dem der Übergang zu und von Standardzeit und Sommerzeit erfolgt.  <br/> |
+|[Jahr](year.md) <br/> |Wird verwendet, um eine Zeitzone zu definieren, die sich je nach Jahr ändert. Dieses Element ist optional. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Zeitzone (Verfügbarkeit)](timezone-availability.md) <br/> | Enthält Elemente, die Zeitzoneninformationen identifizieren.<br/><br/>Dieses Element enthält auch Informationen zum Übergang zwischen Standardzeit und Sommerzeit.<br/><br/>`/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone` <br/><br/>`/GetUserAvailabilityRequest/TimeZone` <br/> |
+|[TimeZone (Verfügbarkeit)](timezone-availability.md) <br/> | Enthält Elemente, die Zeitzoneninformationen identifizieren.<br/><br/>Dieses Element enthält auch Informationen zum Übergang zwischen Standardzeit und Sommerzeit.<br/><br/>`/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone` <br/><br/>`/GetUserAvailabilityRequest/TimeZone` <br/> |
    
 ## <a name="example"></a>Beispiel
 
-Die folgende partielle GetUserAvailability-Anforderung stellt eine Clientanwendung an einem Speicherort dar, der die Sommerzeit erkennt.
+Die folgende partielle GetUserAvailability-Anforderung stellt eine Clientanwendung an einem Ort dar, der Sommerzeit erkennt.
   
 ```xml
 <TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
@@ -100,5 +100,5 @@ Die folgende partielle GetUserAvailability-Anforderung stellt eine Clientanwendu
 ## <a name="see-also"></a>Siehe auch
 
 - [GetUserAvailability-Vorgang](getuseravailability-operation.md)
-- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

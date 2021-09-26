@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateUserConfiguration
 api_type:
 - schema
 ms.assetid: eda73b62-6a3a-43ae-8fd9-f30892811f27
-description: Der UpdateUserConfiguration-Vorgang aktualisiert ein Benutzer Konfigurationsobjekt für einen Ordner.
-ms.openlocfilehash: 95fe6518fa30104463ec7f0aec8f786183eb513b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der UpdateUserConfiguration-Vorgang aktualisiert ein Benutzerkonfigurationsobjekt in einem Ordner.
+ms.openlocfilehash: 18caad56d3add618c4f426af824e61ce54c15bc7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468544"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541700"
 ---
 # <a name="updateuserconfiguration-operation"></a>UpdateUserConfiguration-Vorgang
 
-Der **UpdateUserConfiguration** -Vorgang aktualisiert ein Benutzer Konfigurationsobjekt für einen Ordner. 
+Der **UpdateUserConfiguration-Vorgang** aktualisiert ein Benutzerkonfigurationsobjekt in einem Ordner. 
   
-## <a name="updateuserconfiguration-request-example"></a>UpdateUserConfiguration-Anforderungs Beispiel
+## <a name="updateuserconfiguration-request-example"></a>UpdateUserConfiguration-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **UpdateUserConfiguration** -Anforderung wird gezeigt, wie Sie eine Anforderung zum Aktualisieren eines Benutzer Konfigurationsobjekts im Ordner "Entwürfe" bilden. 
+Das folgende Beispiel einer **UpdateUserConfiguration-Anforderung** zeigt, wie Sie eine Anforderung zum Aktualisieren eines Benutzerkonfigurationsobjekts im Ordner "Entwürfe" erstellen. 
   
 ### <a name="code"></a>Code
 
@@ -69,7 +69,7 @@ Im folgenden Beispiel einer **UpdateUserConfiguration** -Anforderung wird gezeig
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **UpdateUserConfiguration** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **UpdateUserConfiguration-Anforderung.** 
   
 ### <a name="code"></a>Code
 

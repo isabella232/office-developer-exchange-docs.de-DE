@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: bf614551-f5b0-4f80-bdac-628f685faee9
-description: Das DebugData-Element enthält die Debugdaten für eine Auto Ermittlungsfehler Antwort.
-ms.openlocfilehash: 79b5f4d3fa1379b7052dcd03053bc8bac6430017
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DebugData-Element enthält die Debugdaten für eine AutoErmittlungsfehlerantwort.
+ms.openlocfilehash: ff339e6e92eb8dd9d3d0c1b96c0e4f733a383dc3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526949"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543415"
 ---
 # <a name="debugdata-pox"></a>DebugData (POX)
 
-Das **DebugData** -Element enthält die Debugdaten für eine Auto Ermittlungsfehler Antwort. 
+Das **DebugData-Element** enthält die Debugdaten für eine AutoErmittlungsfehlerantwort. 
   
 - [Fehler (POX)](error-pox.md) 
 - [DebugData (POX)](debugdata-pox.md)
@@ -43,11 +43,11 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Fehler (POX)](error-pox.md) <br/> |Enthält eine AutoErmittlung-Fehlerantwort.  <br/> |
+|[Fehler (POX)](error-pox.md) <br/> |Enthält eine AutoErmittlungsfehlerantwort.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert stellt die Debugdaten für eine Auto Ermittlungsfehler Antwort dar.
+Der Textwert stellt die Debugdaten für eine AutoErmittlungsfehlerantwort dar.
   
 ## <a name="see-also"></a>Siehe auch
 

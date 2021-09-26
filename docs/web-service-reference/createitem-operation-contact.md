@@ -5,33 +5,33 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateItem
 api_type:
 - schema
 ms.assetid: 417e994b-0a17-4c24-9527-04796b80b029
-description: Der CreateItem-Vorgang wird zum Erstellen von Kontakten im Exchange-Informationsspeicher verwendet.
-ms.openlocfilehash: e1d78392b94d328cf687655cd93e6c9568f6274f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der CreateItem-Vorgang wird zum Erstellen von Kontakten im Exchange Speicher verwendet.
+ms.openlocfilehash: ced103046214830db868f4c62583e73297146d25
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457123"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545503"
 ---
 # <a name="createitem-operation-contact"></a>CreateItem-Vorgang (Kontakt)
 
-Der CreateItem-Vorgang wird zum Erstellen von Kontakten im Exchange-Informationsspeicher verwendet.
+Der CreateItem-Vorgang wird zum Erstellen von Kontakten im Exchange Speicher verwendet.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Erstellen privater Verteilerlisten wird nicht unterstützt. Alle Eigenschaften im Container [completename](completename.md) sind schreibgeschützt und können für ein Kontaktelement nicht festgelegt werden. 
+Die Erstellung privater Verteilerlisten wird nicht unterstützt. Alle Eigenschaften im [CompleteName-Container](completename.md) sind schreibgeschützt und können nicht für ein Kontaktelement festgelegt werden. 
   
-## <a name="createitem-request-example"></a>CreateItem-Anforderungs Beispiel
+## <a name="createitem-request-example"></a>CreateItem-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer gültigen CreateItem-SOAP-Anforderung wird gezeigt, wie ein Kontakt im Standardordner Kontakte erstellt wird.
+Das folgende Beispiel einer gültigen CreateItem-SOAP-Anforderung zeigt, wie Sie einen Kontakt im Standardordner "Kontakte" erstellen.
   
 ### <a name="code"></a>Code
 
@@ -84,25 +84,25 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-- [Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 - [Contact](contact.md)
     
 - [FileAs](fileas.md)
     
-- [GivenName](givenname.md)
+- [Givenname](givenname.md)
     
 - [CompanyName](companyname.md)
     
 - [EmailAddresses](emailaddresses.md)
     
-- [Eintrag (e-mailemail)](entry-emailaddress.md)
+- [Eintrag (EmailAddress)](entry-emailaddress.md)
     
 - [PhysicalAddresses](physicaladdresses.md)
     
 - [Eintrag (PhysicalAddress)](entry-physicaladdress.md)
     
-- [Straße](street.md)
+- [Street](street.md)
     
 - [City](city.md)
     
@@ -112,7 +112,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [PhoneNumbers](phonenumbers.md)
     
-- [Eingabe (Faxnummer)](entry-phonenumber.md)
+- [Eintrag (PhoneNumber)](entry-phonenumber.md)
     
 - [JobTitle](jobtitle.md)
     
@@ -156,7 +156,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die CreateItem-Anforde
 
 ### <a name="comments"></a>Comments
 
-Die Element-ID wurde verkürzt, um die Lesbarkeit beizubehalten.
+Der Elementbezeichner wurde gekürzt, um die Lesbarkeit zu gewährleisten.
   
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
@@ -172,17 +172,17 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 - [Contact](contact.md)
     
 - [ItemId](itemid.md)
     
-## <a name="invalid-createitem-request-example"></a>Ungültiges CreateItem-Anforderungs Beispiel
+## <a name="invalid-createitem-request-example"></a>Ungültiges CreateItem-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Anforderung, die gültige XML-, aber inkompatible Anweisungen enthält. Ein Kontakt kann nicht in einem Suchordner erstellt werden.
+Das folgende Beispiel zeigt eine Anforderung, die gültige XML-Anweisungen, aber inkompatible Anweisungen enthält. Ein Kontakt kann nicht in einem Suchordner erstellt werden.
   
 ### <a name="code"></a>Code
 
@@ -206,11 +206,11 @@ Das folgende Beispiel zeigt eine Anforderung, die gültige XML-, aber inkompatib
 </soap:Envelope>
 ```
 
-## <a name="createitem-contact-error-response"></a>Fehlerantwort "CreateItem" (Kontakt)
+## <a name="createitem-contact-error-response"></a>CreateItem (Contact)-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel wird eine Fehlerantwort auf eine CreateItem-Anforderung (Kontakt) angezeigt.
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine CreateItem (Contact)-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -258,7 +258,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Elemente (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PermissionLevel
 api_type:
 - schema
 ms.assetid: 87978600-3523-451e-a725-ef092c543e2a
-description: Das PermissionLevel-Element stellt die Berechtigungsstufe dar, die ein Benutzer für einen Ordner hat. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: e1e441c53b5c40c16051eb852a6b35a8af7476e2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PermissionLevel-Element stellt die Berechtigungsstufe dar, die ein Benutzer in einem Ordner hat. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: 48b8db48afe6ced137acceeade2911a044298d75
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458040"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544836"
 ---
 # <a name="permissionlevel"></a>PermissionLevel
 
-Das **PermissionLevel** -Element stellt die Berechtigungsstufe dar, die ein Benutzer für einen Ordner hat. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **PermissionLevel-Element** stellt die Berechtigungsstufe dar, die ein Benutzer in einem Ordner hat. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <PermissionLevel>None or Owner or PublishingEditor or Editor or PublishingAuthor or Author or NoneditingAuthor or Reviewer or Contributor or Custom</PermissionLevel>
@@ -48,24 +48,24 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-In der folgenden Tabelle sind die möglichen Werte für das **PermissionLevel** -Element aufgeführt. 
+In der folgenden Tabelle sind die möglichen Werte für das **PermissionLevel-Element** aufgeführt. 
   
-**PermissionLevel-Element Text Werte**
+**PermissionLevel-Elementtextwerte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Keine  <br/> |Gibt an, dass der Benutzer über keine Berechtigungen für den Ordner verfügt.  <br/> |
-|Besitzer  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen, lesen, bearbeiten und löschen und Unterordner erstellen kann. Der Benutzer ist sowohl Ordnerbesitzer als auch Ordner Kontakt.  <br/> |
-|Publishing Editor  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen, lesen, bearbeiten und löschen und Unterordner erstellen kann.  <br/> |
+|Keine  <br/> |Gibt an, dass der Benutzer keine Berechtigungen für den Ordner hat.  <br/> |
+|Besitzer  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen, lesen, bearbeiten und löschen und Unterordner erstellen kann. Der Benutzer ist sowohl Ordnerbesitzer als auch Ordnerkontakt.  <br/> |
+|PublishingEditor  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen, lesen, bearbeiten und löschen und Unterordner erstellen kann.  <br/> |
 |Editor  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen, lesen, bearbeiten und löschen kann.  <br/> |
-|PublishingAuthor  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen und lesen, nur vom Benutzer erstellte Elemente bearbeiten und löschen sowie Unterordner erstellen kann.  <br/> |
-|Ursprung  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen und lesen kann, und nur vom Benutzer erstellte Elemente bearbeiten und löschen können.  <br/> |
-|Noneditingauthorcreateitems  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen und lesen und nur vom Benutzer erstellte Elemente löschen kann.  <br/> |
+|PublishingAuthor  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen und lesen, nur vom Benutzer erstellte Elemente bearbeiten und löschen und Unterordner erstellen kann.  <br/> |
+|Ursprung  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen und lesen und nur elemente bearbeiten und löschen kann, die der Benutzer erstellt.  <br/> |
+|NoneditingAuthor  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner erstellen und lesen und nur elemente löschen kann, die der Benutzer erstellt.  <br/> |
 |Reviewer  <br/> |Gibt an, dass der Benutzer alle Elemente im Ordner lesen kann.  <br/> |
 |Contributor  <br/> |Gibt an, dass der Benutzer Elemente im Ordner erstellen kann. Der Inhalt des Ordners wird nicht angezeigt.  <br/> |
-|Benutzerdefiniert  <br/> |Gibt an, dass der Benutzer benutzerdefinierte Zugriffsberechtigungen für den Ordner besitzt.  <br/> |
+|Benutzerdefiniert  <br/> |Gibt an, dass der Benutzer über benutzerdefinierte Zugriffsberechtigungen für den Ordner verfügt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -1,27 +1,27 @@
 ---
-title: Eingabe (Faxnummer)
+title: Eintrag (PhoneNumber)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Entry
 api_type:
 - schema
 ms.assetid: e3d0a4d5-8af8-4607-aa2e-ef3111b63b55
 description: Das Entry-Element stellt eine Telefonnummer für einen Kontakt dar.
-ms.openlocfilehash: 62f7091bb750dc7ca74b1e5637a437e2cdad4f1c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f9f8f08c8d167614bfc5772d6d74ebee77234c70
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459637"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545244"
 ---
-# <a name="entry-phonenumber"></a>Eingabe (Faxnummer)
+# <a name="entry-phonenumber"></a>Eintrag (PhoneNumber)
 
-Das **Entry** -Element stellt eine Telefonnummer für einen Kontakt dar. 
+Das **Entry-Element** stellt eine Telefonnummer für einen Kontakt dar. 
   
 ```xml
 <Entry Key=""/>
@@ -36,7 +36,7 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Key** <br/> | Gibt die Telefonnummer an. Das Key-Attribut ist vom Typ **PhoneNumberKeyType**.<br/><br/> Es folgen die möglichen Werte für dieses Attribut.<br/><br/>- AssistantPhone  <br/>- BusinessFax  <br/>-Businessphone  <br/>- BusinessPhone2  <br/>-Callback  <br/>-CarPhone  <br/>- CompanyMainPhone  <br/>- HomeFax  <br/>-HomePhone  <br/>- HomePhone2  <br/>-ISDN  <br/>-MobilePhone  <br/>-OtherFax  <br/>-OtherTelephone  <br/>-Pager  <br/>- PrimaryPhone  <br/>-RadioPhone  <br/>-Telex  <br/>- TtyTddPhone  <br/> |
+|**Key** <br/> | Gibt die Telefonnummer an. Das Key-Attribut ist vom Typ **PhoneNumberKeyType**.<br/><br/> Es folgen die möglichen Werte für dieses Attribut.<br/><br/>- AssistantPhone  <br/>- BusinessFax  <br/>- BusinessPhone  <br/>- BusinessPhone2  <br/>- Rückruf  <br/>- CarPhone  <br/>- CompanyMainPhone  <br/>- HomeFax  <br/>- HomePhone  <br/>- HomePhone2  <br/>- Isdn  <br/>- MobilePhone  <br/>- OtherFax  <br/>- OtherTelephone  <br/>- Pager  <br/>- PrimaryPhone  <br/>- RadioPhone  <br/>- Telex  <br/>- TtyTddPhone  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -52,7 +52,7 @@ Keine.
 
 Ein Textwert, der eine Telefonnummer darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

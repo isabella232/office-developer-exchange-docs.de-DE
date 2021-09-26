@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - BaseOffset
 api_type:
 - schema
 ms.assetid: 0ffad7a6-8e1b-452b-9d87-8e0f6c77f0a6
-description: Das BaseOffset-Element stellt den stündlichen Offset der koordinierten Weltzeit (Coordinated Universal Time, UTC) der aktuellen Zeitzone dar.
-ms.openlocfilehash: 1e29f123dfac2e29807e0a2077d47adb14844f4e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das BaseOffset-Element stellt den stündliche Offset von koordinierter Weltzeit (Coordinated Universal Time, UTC) für die aktuelle Zeitzone dar.
+ms.openlocfilehash: e12eab618a57d3340358174de2b6b9d7bf94135a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460260"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543674"
 ---
 # <a name="baseoffset"></a>BaseOffset
 
-Das **BaseOffset** -Element stellt den stündlichen Offset der koordinierten Weltzeit (Coordinated Universal Time, UTC) der aktuellen Zeitzone dar. 
+Das **BaseOffset-Element** stellt den stündliche Offset von koordinierter Weltzeit (Coordinated Universal Time, UTC) für die aktuelle Zeitzone dar. 
   
 ```xml
 <BaseOffset/>
@@ -44,9 +44,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[MeetingTimeZone](meetingtimezone.md) <br/> |Stellt die Zeitzone des Speicherorts dar, an dem die Besprechung gehostet wird.  <br/> |
+|[MeetingTimeZone](meetingtimezone.md) <br/> |Stellt die Zeitzone des Orts dar, an dem die Besprechung gehostet wird.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

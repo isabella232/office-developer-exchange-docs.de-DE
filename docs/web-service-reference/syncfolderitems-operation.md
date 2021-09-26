@@ -5,35 +5,35 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SyncFolderItems
 api_type:
 - schema
 ms.assetid: 7f0de089-8876-47ec-a871-df118ceae75d
-description: Mit dem SyncFolderItems-Vorgang werden Elemente zwischen dem Exchange-Server und dem Client synchronisiert.
-ms.openlocfilehash: 1a28d895eda11dd43f77ec2662a60a426cfc463c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der SyncFolderItems-Vorgang synchronisiert Elemente zwischen dem Exchange-Server und dem Client.
+ms.openlocfilehash: 07915f5f9f7ae1fc6f5a743f2e0480a32cb808a7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468145"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545832"
 ---
 # <a name="syncfolderitems-operation"></a>SyncFolderItems-Vorgang
 
-Mit dem SyncFolderItems-Vorgang werden Elemente zwischen dem Exchange-Server und dem Client synchronisiert.
+Der SyncFolderItems-Vorgang synchronisiert Elemente zwischen dem Exchange-Server und dem Client.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der SyncFolderItems-Vorgang gibt maximal 512 Änderungen zurück. Nachfolgende SyncFolderItems-Anforderungen müssen durchgeführt werden, um weitere Änderungen zu erhalten. 
+Der SyncFolderItems-Vorgang gibt maximal 512 Änderungen zurück. Nachfolgende SyncFolderItems-Anforderungen müssen ausgeführt werden, um zusätzliche Änderungen zu erhalten. 
   
-SyncFolderItems ähnelt dem FindItem-Vorgang insofern, als es keine Eigenschaften wie Body oder Attachments zurückgeben kann. Wenn der SyncFolderItems-Vorgang nicht die benötigten Eigenschaften zurückgibt, können Sie den [GetItem-Vorgang](getitem-operation.md) verwenden, um einen bestimmten Eigenschaftentyp für jedes Element abzurufen, das von SyncFolderItems zurückgegeben wurde. 
+SyncFolderItems ähnelt dem FindItem-Vorgang, da keine Eigenschaften wie "Body" oder "Attachments" zurückgegeben werden können. Wenn der SyncFolderItems-Vorgang nicht die benötigten Eigenschaften zurückgibt, können Sie den [GetItem-Vorgang](getitem-operation.md) verwenden, um einen bestimmten Satz von Eigenschaften für jedes Element abzurufen, das von SyncFolderItems zurückgegeben wird. 
   
-## <a name="syncfolderitems-request-example"></a>SyncFolderItems-Anforderungs Beispiel
+## <a name="syncfolderitems-request-example"></a>SyncFolderItems-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer SyncFolderItems-Anforderung wird gezeigt, wie Elemente in einem Ordner synchronisiert werden. In diesem Beispiel wird die Synchronisierung eines Ordnerelements gezeigt, bei der es sich nicht um die erste Synchronisierung handelt, die für den Ordner "Gesendete Elemente" aufgetreten ist. Das [von "SyncState](syncstate-ex15websvcsotherref.md) -Element ist nicht in der Anforderung für den ersten Versuch, einen Client mit dem Exchange-Server zu synchronisieren, enthalten. Beim ersten Versuch, die Elemente in einer Ordnerhierarchie zu synchronisieren, werden alle Elemente im Postfach zurückgegeben, ausgenommen Elemente, die im [Ignore](ignore.md) -Element angegeben sind. Diese SyncFolderItems-Anforderung versucht, alle Änderungen an den Ordnerelementen seit der letzten Synchronisierung zu synchronisieren. Bei dieser Anforderung wird der Versuch, das eine Element zu synchronisieren, das im [Ignore](ignore.md) -Element identifiziert wird, ignoriert. 
+Das folgende Beispiel einer SyncFolderItems-Anforderung zeigt, wie Elemente in einem Ordner synchronisiert werden. Dieses Beispiel zeigt die Synchronisierung eines Ordnerelements, bei der es sich nicht um die erste Synchronisierung für den Ordner "Gesendete Elemente" handelt. Das [SyncState-Element](syncstate-ex15websvcsotherref.md) ist nicht in der Anforderung für den ersten Versuch enthalten, einen Client mit dem Exchange-Server zu synchronisieren. Beim ersten Versuch, die Elemente in einer Ordnerhierarchie zu synchronisieren, werden alle Elemente im Postfach zurückgegeben, mit Ausnahme von Elementen, die im [Ignore-Element](ignore.md) identifiziert werden. Diese SyncFolderItems-Anforderung versucht, alle Änderungen an den Ordnerelementen seit der letzten Synchronisierung zu synchronisieren. Diese Anforderung ignoriert den Versuch, das im [Ignore-Element](ignore.md) identifizierte Element zu synchronisieren. 
   
 ### <a name="code"></a>Code
 
@@ -61,7 +61,7 @@ Im folgenden Beispiel einer SyncFolderItems-Anforderung wird gezeigt, wie Elemen
 
 ### <a name="comments"></a>Comments
 
-Die Base64-codierten Daten des [von "SyncState](syncstate-ex15websvcsotherref.md) -Elements und das [ItemID](itemid.md) -Element- **ID** -Attribut wurden verkürzt, um die Lesbarkeit zu erhalten. 
+Die base64-codierten Daten des [SyncState-Elements](syncstate-ex15websvcsotherref.md) und das ItemId-Element-ID-Attribut wurden gekürzt, um die Lesbarkeit zu gewährleisten. [](itemid.md)  
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -77,7 +77,7 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-- [Von "SyncState](syncstate-ex15websvcsotherref.md)
+- [SyncState](syncstate-ex15websvcsotherref.md)
     
 - [Ignore](ignore.md)
     
@@ -144,7 +144,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die SyncFolderItems-An
 
 ### <a name="comments"></a>Comments
 
-Die Base64-codierten Daten des [von "SyncState](syncstate-ex15websvcsotherref.md) -Elements und das [ItemID](itemid.md) -Element- **ID** -Attribut wurden verkürzt, um die Lesbarkeit zu erhalten. 
+Die base64-codierten Daten des [SyncState-Elements](syncstate-ex15websvcsotherref.md) und das ItemId-Element-ID-Attribut wurden gekürzt, um die Lesbarkeit zu gewährleisten. [](itemid.md)  
   
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 
@@ -160,13 +160,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ResponseCode](responsecode.md)
     
-- [Von "SyncState](syncstate-ex15websvcsotherref.md)
+- [SyncState](syncstate-ex15websvcsotherref.md)
     
 - [IncludesLastItemInRange](includeslastiteminrange.md)
     
 - [Änderungen (Elemente)](changes-items.md)
     
-- [Erstellen (ItemSync)](create-itemsync.md)
+- [Create (ItemSync)](create-itemsync.md)
     
 - [MeetingRequest](meetingrequest.md)
     
@@ -186,9 +186,9 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Start](start.md)
     
-- [End](end-ex15websvcsotherref.md)
+- [Ende ](end-ex15websvcsotherref.md)
     
-- [Standort](location.md)
+- [Ort](location.md)
     
 - [Organisator](organizer.md)
     
@@ -198,13 +198,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
-- [Routingtype (e-mailemailtype)](routingtype-emailaddresstype.md)
+- [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
     
 ## <a name="syncfolderitems-error-response"></a>SyncFolderItems-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine SyncFolderItems-Anforderung. Dieser Fehler wurde durch ein ungültiges von "SyncState verursacht.
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine SyncFolderItems-Anforderung. Dieser Fehler wurde durch einen ungültigen SyncState verursacht.
   
 ### <a name="code"></a>Code
 
@@ -254,7 +254,7 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Von "SyncState](syncstate-ex15websvcsotherref.md)
+- [SyncState](syncstate-ex15websvcsotherref.md)
     
 - [IncludesLastItemInRange](includeslastiteminrange.md)
     

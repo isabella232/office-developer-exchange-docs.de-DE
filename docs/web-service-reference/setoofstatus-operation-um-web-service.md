@@ -1,32 +1,32 @@
 ---
-title: SetOofStatus-Vorgang (um-Webdienst)
+title: SetOofStatus-Vorgang (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetOofStatus
 api_type:
 - schema
 ms.assetid: 97c271e9-506e-43eb-89cd-46803fc47ee5
-description: Der SetOofStatus-Vorgang legt einen Wert fest, der angibt, ob die Abwesenheit (Out of Office, OOF) Begrüßung für den Benutzer wiedergegeben werden soll, der die Anforderung stellt.
-ms.openlocfilehash: 2311b6137ac25d15ad3d06668450c1d0f7ec1fad
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der SetOofStatus-Vorgang legt einen Wert fest, der angibt, ob die OOF-Begrüßung (Out of Office) für den Benutzer wiedergegeben werden soll, der die Anforderung sendet.
+ms.openlocfilehash: ce736e7d7bea39f65843923187af3ae616ae1c86
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467354"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544752"
 ---
-# <a name="setoofstatus-operation-um-web-service"></a>SetOofStatus-Vorgang (um-Webdienst)
+# <a name="setoofstatus-operation-um-web-service"></a>SetOofStatus-Vorgang (UM-Webdienst)
 
-Der SetOofStatus-Vorgang legt einen Wert fest, der angibt, ob die Abwesenheit (Out of Office, OOF) Begrüßung für den Benutzer wiedergegeben werden soll, der die Anforderung stellt.
+Der SetOofStatus-Vorgang legt einen Wert fest, der angibt, ob die OOF-Begrüßung (Out of Office) für den Benutzer wiedergegeben werden soll, der die Anforderung sendet.
   
-## <a name="setoofstatus-request-example"></a>SetOofStatus-Anforderungs Beispiel
+## <a name="setoofstatus-request-example"></a>SetOofStatus-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer SetOofStatus-Anforderung wird gezeigt, wie Sie eine Anforderung zum Aktivieren der Abwesenheits Begrüßung für ein Postfach bilden.
+Das folgende Beispiel einer SetOofStatus-Anforderung zeigt, wie Sie eine Anforderung zum Aktivieren der Out of Office-Begrüßung für ein Postfach erstellen.
   
 ### <a name="code"></a>Code
 
@@ -41,11 +41,11 @@ Im folgenden Beispiel einer SetOofStatus-Anforderung wird gezeigt, wie Sie eine 
 </soap:Envelope>
 ```
 
-## <a name="successful-setoofstatus-response-example"></a>Erfolgreiches SetOofStatus-Antwortbeispiel
+## <a name="successful-setoofstatus-response-example"></a>Beispiel für erfolgreiche SetOofStatus-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer SetOofStatus-Antwort wird eine Antwort auf die SetOofStatus-Anforderung angezeigt.
+Das folgende Beispiel einer SetOofStatus-Antwort zeigt eine Antwort auf die SetOofStatus-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -62,9 +62,9 @@ Im folgenden Beispiel einer SetOofStatus-Antwort wird eine Antwort auf die SetOo
 
 
 
-[SetOofStatus (um-Webdienst)](setoofstatus-um-web-service.md)
+[SetOofStatus (UM-Webdienst)](setoofstatus-um-web-service.md)
   
-[SetOofStatusResponse (um-Webdienst)](setoofstatusresponse-um-web-service.md)
+[SetOofStatusResponse (UM-Webdienst)](setoofstatusresponse-um-web-service.md)
   
-[Status (um-Webdienst – SetOofStatus)](status-um-web-servicesetoofstatus.md)
+[Status (UM-Webdienst – SetOofStatus)](status-um-web-servicesetoofstatus.md)
 

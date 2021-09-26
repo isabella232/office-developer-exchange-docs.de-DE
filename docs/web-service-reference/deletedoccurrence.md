@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeletedOccurrence
 api_type:
 - schema
 ms.assetid: ff24ea15-0cd7-407d-a378-73ec16451870
-description: Das DeletedOccurrence-Element stellt ein gelöschtes Vorkommen eines wiederkehrenden Kalenderelements dar.
-ms.openlocfilehash: 814a81934786963ae5e7ea3a40406834c27b64ce
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DeletedOccurrence-Element stellt ein gelöschtes Vorkommen eines Wiederkehrenden Kalenderelements dar.
+ms.openlocfilehash: 69e77f86097fe7037fc217806e4ef1b33b99c549
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457837"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542484"
 ---
 # <a name="deletedoccurrence"></a>DeletedOccurrence
 
-Das **DeletedOccurrence** -Element stellt ein gelöschtes Vorkommen eines wiederkehrenden Kalenderelements dar. 
+Das **DeletedOccurrence-Element** stellt ein gelöschtes Vorkommen eines Wiederkehrenden Kalenderelements dar. 
   
 ```xml
 <DeletedOccurrence>
@@ -42,15 +42,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Start](start.md) <br/> |Stellt die Startzeit eines gelöschten Auftretens eines wiederkehrenden Kalenderelements dar.  <br/> |
+|[Start](start.md) <br/> |Stellt die Startzeit eines gelöschten Vorkommens eines wiederkehrenden Kalenderelements dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DeletedOccurrences](deletedoccurrences.md) <br/> |Enthält ein Array von gelöschten Vorkommen eines wiederkehrenden Kalenderelements.  <br/> |
+|[DeletedOccurrences](deletedoccurrences.md) <br/> |Enthält ein Array gelöschter Vorkommen eines Terminserienkalenderelements.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

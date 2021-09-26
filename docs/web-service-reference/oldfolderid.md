@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - OldFolderId
 api_type:
 - schema
 ms.assetid: da554a97-ab87-4950-9fc4-26b1972381bb
 description: Das OldFolderId-Element enthält den ursprünglichen Bezeichner eines Ordners, der verschoben oder kopiert wurde.
-ms.openlocfilehash: a6713b9e0c47d68480724c3902086da6a8647dd7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 42260822870a0a9bac565c20447a5c29c3daccce
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458061"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541945"
 ---
 # <a name="oldfolderid"></a>OldFolderId
 
-Das **OldFolderId** -Element enthält den ursprünglichen Bezeichner eines Ordners, der verschoben oder kopiert wurde. 
+Das **OldFolderId-Element** enthält den ursprünglichen Bezeichner eines Ordners, der verschoben oder kopiert wurde. 
   
 ```xml
 <OldFolderId Id="" ChangeKey=""/>
@@ -36,8 +36,8 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**Id** <br/> |Enthält eine Zeichenfolge, die einen Ordner im Exchange-Informationsspeicher identifiziert. Dieses Attribut ist erforderlich.  <br/> |
-|**ChangeKey** <br/> |Enthält eine Zeichenfolge, die eine Version eines Ordners identifiziert, die durch das ID-Attribut identifiziert wird. Dieses Attribut ist optional. Verwenden Sie dieses Attribut, um sicherzustellen, dass die richtige Version eines Ordners verwendet wird.  <br/> |
+|**Id** <br/> |Enthält eine Zeichenfolge, die einen Ordner im Exchange Speicher identifiziert. Dieses Attribut ist erforderlich.  <br/> |
+|**ChangeKey** <br/> |Enthält eine Zeichenfolge, die eine Version eines Ordners identifiziert, der durch das Id-Attribut identifiziert wird. Dieses Attribut ist optional. Verwenden Sie dieses Attribut, um sicherzustellen, dass die richtige Version eines Ordners verwendet wird.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -47,10 +47,10 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CopiedEvent](copiedevent.md) <br/> |Stellt ein Ereignis dar, in dem ein Element oder ein Ordner kopiert wird.  <br/> |
-|[MovedEvent](movedevent.md) <br/> |Stellt ein Ereignis dar, in dem ein Element oder ein Ordner von einem übergeordneten Ordner in einen anderen übergeordneten Ordner verschoben wird.  <br/> |
+|[CopiedEvent](copiedevent.md) <br/> |Stellt ein Ereignis dar, in das ein Element oder Ordner kopiert wird.  <br/> |
+|[MovedEvent](movedevent.md) <br/> |Stellt ein Ereignis dar, bei dem ein Element oder Ordner von einem übergeordneten Ordner in einen anderen übergeordneten Ordner verschoben wird.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

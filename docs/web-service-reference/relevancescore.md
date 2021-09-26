@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 78266287-481e-43c1-b143-2cafd0063c95
 description: Das RelevanceScore-Element gibt eine ganze Zahl an, die angibt, wie relevant die zugeordnete Persona für den Client ist.
-ms.openlocfilehash: 54d0912d33a64e26ed415d8009561a32b97ce3f6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0cebd8b9954b54cb2d7b275a26fc06abc1b6cebf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457494"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542876"
 ---
 # <a name="relevancescore"></a>RelevanceScore
 
-Das **RelevanceScore** -Element gibt eine ganze Zahl an, die angibt, wie relevant die zugeordnete Persona für den Client ist. 
+Das **RelevanceScore-Element** gibt eine ganze Zahl an, die angibt, wie relevant die zugeordnete Persona für den Client ist. 
   
 ```XML
 <RelevanceScore></RelevanceScore>
 ```
 
- **Integer**
+ **Ganzzahl**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **RelevanceScore** -Elements ist die Bestimmung, wie relevant eine Person für den Client ist. Dieses Element ist schreibgeschützt. 
+Der Textwert des **RelevanceScore-Elements** ist die Bestimmung, wie relevant eine Persona für den Client ist. Dieses Element ist schreibgeschützt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

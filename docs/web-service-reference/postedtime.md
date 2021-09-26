@@ -1,27 +1,27 @@
 ---
-title: Gebucht
+title: PostedTime
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PostedTime
 api_type:
 - schema
 ms.assetid: e8b3813c-fc7e-4674-a4c6-6818c13d2bcf
-description: Das gebuchte Time-Element stellt die Uhrzeit dar, zu der ein PostItem-Element bereitgestellt wurde. Dieses Element ist schreibgeschützt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: 5fc670bfee97a46700bc4442d489696a4489f88a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das PostedTime-Element stellt den Zeitpunkt dar, zu dem ein PostItem-Objekt bereitgestellt wurde. Dieses Element ist schreibgeschützt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: 9aba5d0c8fad521e54ee4c8f9d877d17607d0dd0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459195"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543107"
 ---
-# <a name="postedtime"></a>Gebucht
+# <a name="postedtime"></a>PostedTime
 
-Das **gebuchte** Time-Element stellt die Uhrzeit dar, zu der ein [PostItem](postitem.md) -Element bereitgestellt wurde. Dieses Element ist schreibgeschützt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das  PostedTime-Element stellt den Zeitpunkt dar, zu dem ein [PostItem-Objekt](postitem.md) bereitgestellt wurde. Dieses Element ist schreibgeschützt. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <PostedTime/>
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[PostItem](postitem.md) <br/> |Stellt ein PostItem im Exchange-Informationsspeicher dar. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
+|[PostItem](postitem.md) <br/> |Stellt ein PostItem im Exchange Speicher dar. Dieses Element wurde in Exchange 2007 SP1 eingeführt.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist ein DateTime-Wert, der darstellt, wann ein **PostItem** gepostet wurde. Diese Eigenschaft ist schreibgeschützt. 
+Der Textwert ist ein DateTime-Wert, der angibt, wann ein **PostItem-Objekt** bereitgestellt wurde. Diese Eigenschaft ist schreibgeschützt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

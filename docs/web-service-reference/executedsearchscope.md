@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExecutedSearchScope
 api_type:
 - schema
 ms.assetid: 2de5f0ad-43f2-4d38-b520-06540066564e
-description: Das ExecutedSearchScope-Element enthält den Bereich der Suche, der ausgeführt wurde, um die Suchergebnisse abzurufen.
-ms.openlocfilehash: 828fe3800b8c13a0e18c0daba6cdeab140a1c394
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ExecutedSearchScope-Element enthält den Umfang der Suche, die ausgeführt wurde, um die Suchergebnisse abzurufen.
+ms.openlocfilehash: 9b9d2d361d6a44b94d9d1e49963cfe040d97697f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456969"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545167"
 ---
 # <a name="executedsearchscope"></a>ExecutedSearchScope
 
-Das **ExecutedSearchScope** -Element enthält den Bereich der Suche, der ausgeführt wurde, um die Suchergebnisse abzurufen. 
+Das **ExecutedSearchScope-Element** enthält den Umfang der Suche, die ausgeführt wurde, um die Suchergebnisse abzurufen. 
   
 ```xml
 <ExecutedSearchScope/>
@@ -44,13 +44,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [FindMessageTrackingReport-Vorgangs](findmessagetrackingreport-operation.md) Anforderung.  <br/> |
+|[FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [FindMessageTrackingReport-Vorgangsanforderung.](findmessagetrackingreport-operation.md)  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert ist optional. Diese Informationen werden von der Clientanwendung zum effektiveren Zwischenspeichern der Ergebnisse verwendet.
+Der Textwert ist optional. Diese Informationen werden von der Clientanwendung verwendet, um die Ergebnisse effektiver zwischenzuspeichern.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

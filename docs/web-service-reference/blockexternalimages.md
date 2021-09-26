@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c754dfc-a9e9-4272-9b5f-5fe3db537e62
 description: Das BlockExternalImages-Element gibt an, ob externe Bilder in HTML-Textkörpern blockiert werden.
-ms.openlocfilehash: 73342316024ebe476a0e35f14157befc80edcf83
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 82ddb7e53f351324783fa39e3b76c9c0534b8193
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527404"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543583"
 ---
 # <a name="blockexternalimages"></a>BlockExternalImages
 
-Das **BlockExternalImages** -Element gibt an, ob externe Bilder in HTML-Textkörpern blockiert werden. 
+Das **BlockExternalImages-Element** gibt an, ob externe Bilder in HTML-Textkörpern blockiert werden. 
   
 ```XML
 <BlockExternalImages> true | false </BlockExternalImages>
@@ -40,14 +40,14 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FolderShape](foldershape.md) <br/> |Identifiziert die Ordner Eigenschaften, die in die GetFolder-, FindFolder-oder SyncFolderHierarchy-Antwort eingeschlossen werden sollen.  <br/> |
-|[ItemShape](itemshape.md) <br/> |Identifiziert die Elementeigenschaften und Inhalte, die in einer GetItem-, FindItem-oder SyncFolderItems-Antwort enthalten sein sollen.  <br/> |
+|[FolderShape](foldershape.md) <br/> |Identifies the folder properties to include in the GetFolder, FindFolder, or SyncFolderHierarchy response.  <br/> |
+|[ItemShape](itemshape.md) <br/> |Identifiziert die Elementeigenschaften und -inhalte, die in eine GetItem-, FindItem- oder SyncFolderItems-Antwort eingeschlossen werden sollen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für **BlockExternalImages** -Element gibt an, dass externe Bilder in HTML-Textkörpern blockiert werden. Der Wert **false** gibt an, dass externe Bilder zulässig sind. 
+Der Textwert **"true"** für das **BlockExternalImages-Element** gibt an, dass externe Bilder in HTML-Textkörpern blockiert werden. Der Wert **"false"** gibt an, dass externe Bilder zulässig sind. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -59,7 +59,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

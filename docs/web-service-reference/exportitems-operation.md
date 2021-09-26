@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExportItems
 api_type:
 - schema
 ms.assetid: e2846abb-0b16-4732-bbd8-038a674672f6
-description: Der Export Items-Vorgang exportiert Elemente aus einem Postfach.
-ms.openlocfilehash: 547a490a27d2414d2eda1d89cdac036a34eddccd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der ExportItems-Vorgang exportiert Elemente aus einem Postfach.
+ms.openlocfilehash: b53761f91b15053b0fb79a3c1068a50bce665a67
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526046"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542330"
 ---
 # <a name="exportitems-operation"></a>ExportItems-Vorgang
 
-Der **Export Items** -Vorgang exportiert Elemente aus einem Postfach. 
+Der **ExportItems-Vorgang** exportiert Elemente aus einem Postfach. 
   
-## <a name="exportitems-request-example"></a>Export Items-Anforderungs Beispiel
+## <a name="exportitems-request-example"></a>ExportItems-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer **Export Items** -Anforderung wird gezeigt, wie Sie eine Anforderung zum Abrufen von drei aus einem Postfach exportierten Elementen erstellen. 
+Das folgende Beispiel einer **ExportItems-Anforderung** zeigt, wie Sie eine Anforderung zum Abrufen von drei aus einem Postfach exportierten Elementen erstellen. 
   
 ### <a name="code"></a>Code
 
@@ -55,7 +55,7 @@ Im folgenden Beispiel einer **Export Items** -Anforderung wird gezeigt, wie Sie 
 
 ### <a name="comment"></a>Kommentar
 
-Die Element-IDs im Beispiel wurden verkürzt, um die Lesbarkeit zu erhalten.
+Die Elementbezeichner im Beispiel wurden gekürzt, um die Lesbarkeit zu gewährleisten.
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
@@ -65,15 +65,15 @@ In der Anforderung werden folgende Elemente verwendet:
     
 - [ExportItems](exportitems.md)
     
-- [Itemids (NonEmptyArrayOfItemIdsType)](itemids-nonemptyarrayofitemidstype.md)
+- [ItemIds (NonEmptyArrayOfItemIdsType)](itemids-nonemptyarrayofitemidstype.md)
     
 - [ItemId](itemid.md)
     
-## <a name="successful-exportitems-response-example"></a>Erfolgreiches Export Items-Antwortbeispiel
+## <a name="successful-exportitems-response-example"></a>Beispiel für erfolgreiche ExportItems-Antwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **Export Items** -Anforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **ExportItems-Anforderung.** 
   
 ### <a name="code"></a>Code
 
@@ -149,9 +149,9 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **Export Items** 
 
 ### <a name="comment"></a>Kommentar
 
-Die Element-IDs und Änderungsschlüssel im Beispiel wurden verkürzt, um die Lesbarkeit zu erhalten.
+Die Elementbezeichner und Änderungsschlüssel im Beispiel wurden gekürzt, um die Lesbarkeit zu gewährleisten.
   
-### <a name="response-elements"></a>Response-Elemente
+### <a name="response-elements"></a>Antwortelemente
 
 In der Antwort werden folgende Elemente verwendet:
   
@@ -167,13 +167,13 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [ItemId](itemid.md)
     
-- [Data (base64Binary)](data-base64binary.md)
+- [Daten (base64Binary)](data-base64binary.md)
     
-## <a name="exportitems-error-response-example"></a>Export Items-Fehlerantwort Beispiel
+## <a name="exportitems-error-response-example"></a>Beispiel für ExportItems-Fehlerantwort
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine Antwort auf die **Export Items** -Anforderung, die zwei Fehler und ein erfolgreich exportiertes Element enthält. Das erste Element im Beispiel wird erfolgreich exportiert. Das zweite Element enthält einen falschen Änderungsschlüssel. Das dritte Element stellt einen Versuch dar, ein Element aus dem falschen Postfach zu exportieren. 
+Das folgende Beispiel zeigt eine Antwort auf die **ExportItems-Anforderung,** die zwei Fehler und ein erfolgreich exportiertes Element enthält. Das erste Element im Beispiel wird erfolgreich exportiert. Das zweite Element enthält eine falsche Änderungsschlüssel. Das dritte Element stellt einen Versuch dar, ein Element aus dem falschen Postfach zu exportieren. 
   
 ### <a name="code"></a>Code
 
@@ -229,7 +229,7 @@ Das folgende Beispiel zeigt eine Antwort auf die **Export Items** -Anforderung, 
 
 ### <a name="comments"></a>Comments
 
-Die Element-IDs, Änderungsschlüssel und Daten im Beispiel wurden verkürzt, um die Lesbarkeit zu erhalten.
+Die Elementbezeichner, Änderungsschlüssel und Daten im Beispiel wurden gekürzt, um die Lesbarkeit zu gewährleisten.
   
 ### <a name="error-response-elements"></a>Fehlerantwortelemente
 
@@ -247,18 +247,18 @@ Folgende Elemente werden in der Fehlerantwort verwendet:
     
 - [ItemId](itemid.md)
     
-- [Data (base64Binary)](data-base64binary.md)
+- [Daten (base64Binary)](data-base64binary.md)
     
 - [MessageText](messagetext.md)
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Messagexml verwendet](messagexml.md)
+- [MessageXml](messagexml.md)
     
 - **Wert**
     
 > [!NOTE]
-> Das **value** -Element ist im Schema nicht vorhanden. Dieses Element ist gültig, da das [messagexml verwendet](messagexml.md) -Element, in dem das **value** -Instanzelement auftritt, alle wohlgeformten XML-Daten enthalten kann. 
+> Das **Value-Element** ist im Schema nicht vorhanden. Dieses Element ist gültig, da das [MessageXml-Element,](messagexml.md) in dem das **Value-Instanzelement** auftritt, beliebige wohlgeformte XML-Daten enthalten kann. 
   
 ## <a name="see-also"></a>Siehe auch
 

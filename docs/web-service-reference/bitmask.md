@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Bitmask
 api_type:
 - schema
 ms.assetid: fc7eeac2-555f-4cbc-8b48-26d9ed67748a
 description: Das Bitmask-Element steht eine Hexadezimal- oder Dezimalmaske dar, die während eines Schließt-Einschränkungsvorgangs verwendet wird.
-ms.openlocfilehash: f05be466d05b13f8f362afb5fc0552653a532475
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 83307fc7f5ba328c5d6f7574a8b3be1ea25595f3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458810"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543590"
 ---
 # <a name="bitmask"></a>Bitmaske
 

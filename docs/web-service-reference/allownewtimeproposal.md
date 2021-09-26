@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AllowNewTimeProposal
 api_type:
 - schema
 ms.assetid: afdb4ec9-2daf-48a1-a0bb-a7f647f212f2
-description: Das AllowNewTimeProposal-Element gibt an, ob eine neue Besprechungszeit für eine Besprechung von einem Teilnehmer vorgeschlagen werden kann.
-ms.openlocfilehash: b3f2c569bced08c66144680a4fddd6e8bac0cecf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AllowNewTimeProposal-Element gibt an, ob ein Teilnehmer eine neue Besprechungszeit für eine Besprechung vorschlagen kann.
+ms.openlocfilehash: 1acb95189e1949204a25f97a82770b88590df776
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464805"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543730"
 ---
 # <a name="allownewtimeproposal"></a>AllowNewTimeProposal
 
-Das **AllowNewTimeProposal** -Element gibt an, ob eine neue Besprechungszeit für eine Besprechung von einem Teilnehmer vorgeschlagen werden kann. 
+Das **AllowNewTimeProposal-Element** gibt an, ob ein Teilnehmer eine neue Besprechungszeit für eine Besprechung vorschlagen kann. 
   
 ```xml
 <AllowNewTimeProposal/>
@@ -49,16 +49,16 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich. Der Wert **true** gibt an, dass ein neuer Vorschlag für die Besprechungszeit erstellt werden kann. der Wert **false** gibt an, dass keine neuen Zeit Vorschläge zulässig sind. Der Organisator legt diesen Wert in der Besprechungsanfrage fest. 
+Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich. Der Wert **"true"** gibt an, dass ein neuer Vorschlag für die Besprechungszeit erstellt werden kann. Der Wert **"false"** gibt an, dass neue Zeitvorschläge nicht zulässig sind. Der Organisator legt diesen Wert in der Besprechungsanfrage fest. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die AllowNewTimeProposal-Eigenschaft ist für das Kalenderelement des Organisators schreibgeschützt. Er ist schreibgeschützt für Besprechungsanfragen und für die Kalenderelemente von Teilnehmern.
+Die AllowNewTimeProposal-Eigenschaft kann für das Kalenderelement des Organisators schreibgeschützt werden. Sie ist schreibgeschützt für Besprechungsanfragen und die Kalenderelemente der Teilnehmer.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
 > [!NOTE]
-> Exchange Webdienste unterstützt keine neuen Zeit Angebots Meldungen. Zum Abrufen von Eigenschaften, die sich auf neue Zeit Vorschlags Meldungen beziehen, verwenden Sie erweiterte Eigenschaften. 
+> Exchange Webdienste unterstützen keine neuen Zeitvorschlagsmeldungen. Verwenden Sie erweiterte Eigenschaften, um Eigenschaften abzurufen, die sich auf neue Zeitvorschlagsnachrichten beziehen. 
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

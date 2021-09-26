@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ConnectionFailureCause
 api_type:
 - schema
 ms.assetid: d2160c8a-015c-4964-b7f7-93478764a173
 description: Das ConnectionFailureCause-Element gibt den Grund für eine Trennung von einem Telefonanruf an.
-ms.openlocfilehash: 6385641eaee140a114906703232974d51d5ce344
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: de2f06ae89577b0141b8555f98dba1671a228d45
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529448"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543534"
 ---
 # <a name="connectionfailurecause"></a>ConnectionFailureCause
 
-Das **ConnectionFailureCause** -Element gibt den Grund für eine Trennung von einem Telefonanruf an. 
+Das **ConnectionFailureCause-Element** gibt den Grund für eine Trennung von einem Telefonanruf an. 
   
 ```xml
 <ConnectionFailureCause>None or UserBusy or NoAnswer or Unavailable or Other</ConnectionFailureCause>
@@ -48,19 +48,19 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-In der folgenden Tabelle sind die möglichen Werte für das **ConnectionFailureCause** -Element aufgeführt. 
+In der folgenden Tabelle sind die möglichen Werte für das **ConnectionFailureCause-Element** aufgeführt. 
   
 **ConnectionFailureCause-Elementwerte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Keine  <br/> |Der Anrufstatus ist nicht getrennt, oder der Verbindungs Grund ist unbekannt.  <br/> |
-|UserBusy  <br/> |Die angerufene Partei war besetzt.  <br/> |
-|Noanswer  <br/> |Der angerufene Teilnehmer hat nicht geantwortet.  <br/> |
-|Nicht verfügbar  <br/> |Die angerufene Partei Nummer war nicht verfügbar.  <br/> |
-|Andere  <br/> |Catch-all für andere Gründe für die Trennung.  <br/> |
+|Keine  <br/> |Der Anrufstatus wird nicht getrennt, oder der Grund für die Verbindung ist nicht bekannt.  <br/> |
+|UserBusy  <br/> |Die angerufene Partyzeile war ausgelastet.  <br/> |
+|NoAnswer  <br/> |Die angerufene Partei hat nicht reagiert.  <br/> |
+|Verfügbar  <br/> |Die nummer der angerufenen Partei war nicht verfügbar.  <br/> |
+|Sonstiges  <br/> |Catch-all for other disconnect reasons.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1a5289b7-a631-4c24-ae46-b86dd72f15f9
-description: Das OriginalDisplayName-Element enthält den ursprünglichen Anzeigenamen, der einer e-Mail-Adresse zugeordnet ist.
-ms.openlocfilehash: 8808b9b45b0e0c009ff884129631f6aabde541e7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das OriginalDisplayName-Element enthält den ursprünglichen Anzeigenamen, der einer E-Mail-Adresse zugeordnet ist.
+ms.openlocfilehash: bcb1b22115bd9e7773f3f264dbf4cc7069fed383
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462381"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544010"
 ---
 # <a name="originaldisplayname"></a>OriginalDisplayName
 
-Das **OriginalDisplayName** -Element enthält den ursprünglichen Anzeigenamen, der einer e-Mail-Adresse zugeordnet ist. 
+Das **OriginalDisplayName-Element** enthält den ursprünglichen Anzeigenamen, der einer E-Mail-Adresse zugeordnet ist. 
   
 ```XML
 <OriginalDisplayName></OriginalDisplayName>
@@ -38,13 +38,13 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[Absender](sendingas.md)  |  [Postfach](mailbox.md)  |  [E-mailemail (e-)](emailaddress-emailaddresstype.md)  |  [RoomList](roomlist.md)  |  [Actingies](actingas.md)  |  [Absender (e-mailemailtype)](sender-emailaddresstype.md)  |  [PurportedSender](purportedsender.md)  |  [Empfänger](recipient.md)  |  [FederatedDeliveryMailbox](federateddeliverymailbox.md)  |  [RecipientFilter](recipientfilter.md)  |  [Address (e-Adresstype)](address-emailaddresstype.md)  |  [ID (e-mailemailtype)](id-emailaddresstype.md)  |  [Wert (e-mailemailtype)](value-emailaddresstype.md)
+[SendingAs](sendingas.md)  |  [Postfach](mailbox.md)  |  [EmailAddress (EmailAddressType)](emailaddress-emailaddresstype.md)  |  [RoomList](roomlist.md)  |  [ActingAs](actingas.md)  |  [Absender (EmailAddressType)](sender-emailaddresstype.md)  |  [PurportedSender](purportedsender.md)  |  [Empfänger](recipient.md)  |  [FederatedDeliveryMailbox](federateddeliverymailbox.md)  |  [RecipientFilter](recipientfilter.md)  |  [Adresse (EmailAddressType)](address-emailaddresstype.md)  |  [ID (EmailAddressType)](id-emailaddresstype.md)  |  [Wert (EmailAddressType)](value-emailaddresstype.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **OriginalDisplayName** -Elements ist der ursprüngliche Anzeigename, der einer e-Mail-Adresse zugeordnet ist. 
+Der Textwert des **OriginalDisplayName-Elements** ist der ursprüngliche Anzeigename, der einer E-Mail-Adresse zugeordnet ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

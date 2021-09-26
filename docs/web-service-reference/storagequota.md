@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - StorageQuota
 api_type:
 - schema
 ms.assetid: a0ba42c9-321a-4370-b979-e02078bcb070
 description: Das StorageQuota-Element beschreibt das Speicherkontingent für den verwalteten Ordner.
-ms.openlocfilehash: c979b02c2c4df511eae96125847ed765ba3ed92c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 30c964c1f19462bf3affdcbe019d3996739c0dbd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468236"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544577"
 ---
 # <a name="storagequota"></a>StorageQuota
 
-Das **StorageQuota** -Element beschreibt das Speicherkontingent für den verwalteten Ordner. 
+Das **StorageQuota-Element** beschreibt das Speicherkontingent für den verwalteten Ordner. 
   
 ```xml
 <StorageQuota/>
@@ -50,7 +50,7 @@ Keine.
 
 Ein Textwert ist erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

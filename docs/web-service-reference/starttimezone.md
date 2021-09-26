@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - StartTimeZone
 api_type:
 - schema
 ms.assetid: d38c4dc1-4ecb-42a1-8d57-a451b16a2de2
-description: Das StartTimeZone-Element definiert die Zeitzone für die Startzeit eines CalendarItem-oder MeetingRequest-Elements.
-ms.openlocfilehash: fa88f676c0f6a7a2e934f51274942ed3bccbc789
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das StartTimeZone-Element definiert die Zeitzone für die Startzeit eines CalendarItem- oder MeetingRequest-Elements.
+ms.openlocfilehash: 720e8b98f1ff4081f8971074bbb9323cdfb3e816
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458523"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545860"
 ---
 # <a name="starttimezone"></a>StartTimeZone
 
-Das **StartTimeZone** -Element definiert die Zeitzone für die Startzeit eines [CalendarItem](calendaritem.md) -oder [MeetingRequest](meetingrequest.md)-Elements.
+Das **StartTimeZone-Element** definiert die Zeitzone für die Startzeit eines [CalendarItem-](calendaritem.md) oder [MeetingRequest-Elements.](meetingrequest.md)
   
 ```xml
 <StartTimeZone Id="" Name="">
@@ -48,9 +48,9 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Zeiten](periods.md) <br/> |Stellt ein Array von [Period](period.md) -Elementen dar, die den Zeit Offset in unterschiedlichen Phasen der Zeitzone definieren.  <br/> |
-|[TransitionsGroups](transitionsgroups.md) <br/> |Stellt ein Array von [transitiongroup](transitionsgroup.md) -Elementen dar, die Zeit zonenübergänge angeben.  <br/> |
-|[Übergänge](transitions.md) <br/> |Stellt ein Array von Zeit Zonen Übergängen dar.  <br/> |
+|[Zeiten](periods.md) <br/> |Stellt ein Array von [Period-Elementen](period.md) dar, die den Zeitversatz in verschiedenen Phasen der Zeitzone definieren.  <br/> |
+|[TransitionsGroups](transitionsgroups.md) <br/> |Stellt ein Array von [TransitionsGroup-Elementen](transitionsgroup.md) dar, die Zeitzonenübergänge angeben.  <br/> |
+|[Übergänge](transitions.md) <br/> |Stellt ein Array von Zeitzonenübergängen dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -59,9 +59,9 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 |[CalendarItem](calendaritem.md) <br/> |Stellt ein Element im Exchange-Kalender dar.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Stellt eine Besprechungsanforderung im Exchange-Informationsspeicher dar.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
