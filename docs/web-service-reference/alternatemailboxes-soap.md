@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 9a0859c5-fa23-4496-9b63-15c97818f857
-description: Das AlternateMailboxes-Element stellt eine Auflistung von alternativen Postfächern dar.
-ms.openlocfilehash: b68b0b15ad2a06d3be9e8fcbc3b9a4d61e4ee8be
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das AlternateMailboxes-Element stellt eine Auflistung alternativer Postfächer dar.
+ms.openlocfilehash: d2ba6cb22c2ee6cc4e0c5023e70a801e9f80a5a7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464840"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546742"
 ---
 # <a name="alternatemailboxes-soap"></a>AlternateMailboxes (SOAP)
 
-Das **AlternateMailboxes** -Element stellt eine Auflistung von alternativen Postfächern dar. 
+Das **AlternateMailboxes-Element** stellt eine Auflistung alternativer Postfächer dar. 
   
 ```XML
 <AlternateMailboxes>
@@ -45,7 +45,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[AlternateMailboxCollectionSetting (SOAP)](alternatemailboxcollectionsetting-soap.md) <br/> |Enthält eine Auflistung von alternativen Postfacheinstellungen.  <br/> |
+|[AlternateMailboxCollectionSetting (SOAP)](alternatemailboxcollectionsetting-soap.md) <br/> |Enthält eine Auflistung alternativer Postfacheinstellungen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
@@ -56,8 +56,8 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 

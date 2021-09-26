@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: bc632c85-ec74-4a00-baec-df5973e032fa
-description: Das EncryptionMethod-Element stellt die kryptografische Methode dar, die für die Pop-, IMAP-und SMTP-Protokolle verwendet wird.
-ms.openlocfilehash: 26236d9b08eae1bcabfd9aac59f5b01714ba9841
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das EncryptionMethod-Element stellt die kryptografische Methode dar, die für die POP-, IMAP- und SMTP-Protokolle verwendet wird.
+ms.openlocfilehash: 40b9f7736502f8def5389c1a70fddb61e38973aa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530656"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546595"
 ---
 # <a name="encryptionmethod-soap"></a>EncryptionMethod (SOAP)
 
-Das **EncryptionMethod** -Element stellt die kryptografische Methode dar, die für die Pop-, IMAP-und SMTP-Protokolle verwendet wird. 
+Das **EncryptionMethod-Element** stellt die kryptografische Methode dar, die für die POP-, IMAP- und SMTP-Protokolle verwendet wird. 
   
 ```XML
 <EncryptionMethod/>
@@ -41,19 +41,19 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ProtocolConnection (SOAP)](protocolconnection-soap.md) <br/> |Stellt die Protokollverbindung des Server-Webclients dar.  <br/> |
+|[ProtocolConnection (SOAP)](protocolconnection-soap.md) <br/> |Stellt die Protokollverbindung des Serverwebclients dar.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert für dieses Element ist die kryptografische Methode, die für das Pop-, IMAP-und SMTP-Protokoll verwendet wird.
+Der Textwert für dieses Element ist die kryptografische Methode, die für die POP-, IMAP- und SMTP-Protokolle verwendet wird.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

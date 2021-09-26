@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GlobalUniqueSenders
 api_type:
 - schema
 ms.assetid: 6bd9e9cb-19c8-45af-b211-dfb8a6003b1b
 description: Das GlobalUniqueSender-Element enthält eine Liste aller Absender von Unterhaltungselementen im Postfach.
-ms.openlocfilehash: 0e85e201017e175a9ffc6b923976020d4157d5b7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d4dd816c548e3b2f9009f6b6bc43e96fc9ccdd46
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459063"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547365"
 ---
 # <a name="globaluniquesenders"></a>GlobalUniqueSenders
 
-Das **GlobalUniqueSender** -Element enthält eine Liste aller Absender von Unterhaltungselementen im Postfach. 
+Das **GlobalUniqueSender-Element** enthält eine Liste aller Absender von Unterhaltungselementen im Postfach. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -50,7 +50,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[String](string.md) <br/> |Enthält einen einzelnen Unterhaltungs Absender.  <br/> |
+|[String](string.md) <br/> |Enthält einen einzelnen Unterhaltungssender.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -62,7 +62,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

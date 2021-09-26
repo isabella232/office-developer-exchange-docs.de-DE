@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GlobalItemIds
 api_type:
 - schema
 ms.assetid: b0f03ce0-a4c3-47de-9360-a880a3606e42
-description: Das GlobalItemIds-Element enthält die Auflistung von Element-IDs für alle Unterhaltungselemente in einem Postfach.
-ms.openlocfilehash: aa656e7f2fb78dafe5bf6013c1f7ad14e2372ba1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GlobalItemIds-Element enthält die Auflistung der Elementbezeichner für alle Unterhaltungselemente in einem Postfach.
+ms.openlocfilehash: 8422bb6824eae78f2a7c17553385a439c693e0dd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459426"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547372"
 ---
 # <a name="globalitemids"></a>GlobalItemIds
 
-Das **GlobalItemIds** -Element enthält die Auflistung von Element-IDs für alle Unterhaltungselemente in einem Postfach. 
+Das **GlobalItemIds-Element** enthält die Auflistung der Elementbezeichner für alle Unterhaltungselemente in einem Postfach. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -52,9 +52,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel eines Elements in der Exchange-Informationsspeicher.  <br/> |
-|[OccurrenceItemId](occurrenceitemid.md) <br/> |Gibt ein einzelnes Vorkommen eines wiederkehrenden Elements an.  <br/> |
-|[RecurringMasterItemId](recurringmasteritemid.md) <br/> |Identifiziert ein Serienmasterelement durch Identifizieren eines der Bezeichner des zugehörigen vorkommen Elements.  <br/> |
+|[ItemId](itemid.md) <br/> |Enthält den eindeutigen Bezeichner und den Änderungsschlüssel eines Elements im Exchange Speicher.  <br/> |
+|[OccurrenceItemId](occurrenceitemid.md) <br/> |Identifiziert ein einzelnes Vorkommen einer Terminserie.  <br/> |
+|[RecurringMasterItemId](recurringmasteritemid.md) <br/> |Identifiziert ein Serienmasterelement, indem einer seiner zugehörigen Bezeichner für vorkommende Elemente identifiziert wird.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -66,7 +66,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

@@ -5,55 +5,55 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUserAvailability
 api_type:
 - schema
 ms.assetid: 8da17226-5d3a-4525-9ffa-d83730f47bb1
-description: Hier finden Sie Informationen zum GetUserAvailability-EWS-Vorgang.
-ms.openlocfilehash: b6d03c7da65e3f30f093b7e41448abcca2330a84
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum GetUserAvailability EWS-Vorgang.
+ms.openlocfilehash: fcd222dfc98df3c12bdd6035e585f620e0a6d9f5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458222"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547504"
 ---
 # <a name="getuseravailability-operation"></a>GetUserAvailability-Vorgang
 
-Hier finden Sie Informationen zum **GetUserAvailability** -EWS-Vorgang. 
+Hier finden Sie Informationen zum **GetUserAvailability** EWS-Vorgang. 
   
-Der **GetUserAvailability** -Vorgang enthält detaillierte Informationen zur Verfügbarkeit einer Gruppe von Benutzern, Räumen und Ressourcen innerhalb eines bestimmten Zeitraums. 
+Der **Vorgang "GetUserAvailability"** enthält detaillierte Informationen zur Verfügbarkeit einer Gruppe von Benutzern, Räumen und Ressourcen innerhalb eines bestimmten Zeitraums. 
   
 ## <a name="using-the-getuseravailability-operation"></a>Verwenden des GetUserAvailability-Vorgangs
 
-Der **GetUserAvailability** -Vorgang stellt aktuelle Informationen zur Verfügbarkeit von Benutzern mit einer bestimmten Detailebene bereit. Client Anwendungen wie Outlook, Outlook Web Access, Outlook Mobile Access und andere verwenden SMTP-Adressen, um die angeforderten Benutzerinformationen zu identifizieren. 
+Der **GetUserAvailability-Vorgang** stellt aktuelle Benutzerverfügbarkeitsinformationen auf einer bestimmten Detailebene bereit. Clientanwendungen wie Outlook, Outlook Web Access, Outlook Mobile Access und andere verwenden SMTP-Adressen, um die angeforderten Benutzerinformationen zu identifizieren. 
   
-Der Verfügbarkeitsdienst erweitert Verteilerlisten, um den Frei/Gebucht-Status für jedes Mitglied der Liste abzurufen, solange die Anzahl der Postfächer in der Verteilerliste kleiner als 100 ist, was die maximale Anzahl von Identitäten ist, die der **GetUserAvailability** -Vorgang anfordern kann. Die Frei/Gebucht-Status der Mitglieder der Verteilerliste werden mit einem einzelnen Frei/Gebucht-Status für die gesamte Verteilerliste zusammengeführt. 
+Der Verfügbarkeitsdienst erweitert Verteilerlisten, um den Frei/Gebucht-Status für jedes Mitglied der Liste abzurufen, solange die Anzahl der Postfächer in der Verteilerliste kleiner als 100 ist. Dies ist die maximale Anzahl von Identitäten, die der **GetUserAvailability-Vorgang** anfordern kann. Die Frei/Gebucht-Status der Mitglieder der Verteilerliste werden in einem einzigen Frei/Gebucht-Status für die gesamte Verteilerliste zusammengeführt. 
   
-Client Anwendungsanforderungen geben den Zeitraum der Verfügbarkeitsabfrage an. Der Standardzeitraum für die angeforderten Informationen beträgt 42 Tage. Wenn der Kalender des Benutzers Termine oder Besprechungen enthält, die innerhalb und außerhalb des definierten Zeitraums für die Abfrage liegen, wird der Termin zurückgegeben. 
+Clientanwendungsanforderungen geben den Zeitraum der Verfügbarkeitsabfrage an. Der Standardzeitraum für die angeforderten Informationen beträgt 42 Tage. Wenn der Kalender des Benutzers Termine oder Besprechungen enthält, die sich innerhalb und außerhalb des definierten Zeitraums für die Abfrage befinden, wird der Termin zurückgegeben. 
   
-Die zurückgegebenen Termin-und Besprechungszeiten befinden sich in der gleichen Zeitzone wie die Clientanwendung, die die Besprechung anfordert.
+Die zurückgegebenen Termin- und Besprechungszeiten befinden sich in derselben Zeitzone wie die Clientanwendung, die die Besprechung anfordert.
   
-Der Verfügbarkeitsdienst verarbeitet die Anforderung für jeden Client. Der Dienst erweitert alle Terminserien und gibt die maximale Anzahl von Kalenderdetails zurück, die der anfordernde Client über die Berechtigung zum empfangen verfügt.
+Der Verfügbarkeitsdienst verarbeitet die Anforderung für jeden Client. Der Dienst erweitert alle Terminserien und gibt die maximale Anzahl von Kalenderdetails zurück, für die der anfordernde Client über die Berechtigung zum Empfangen verfügt.
   
 > [!NOTE]
-> Wenn das Zielpostfach nicht verfügbar ist oder nicht gefunden werden kann, wird eine **MailRecipientNotFoundException** -Ausnahme ausgelöst. Der Client erhält eine Fehlermeldung, die besagt, dass der e-Mail-Empfänger nicht im Active Directory Verzeichnisdienst oder Active Directory-Domänendienste (AD DS) gefunden wird. 
+> Wenn das Zielpostfach nicht verfügbar ist oder nicht gefunden werden kann, wird eine **MailRecipientNotFoundException-Ausnahme** ausgelöst. Der Client empfängt eine Fehlermeldung, die besagt, dass der E-Mail-Empfänger nicht im Active Directory-Verzeichnisdienst oder active Directory Domain Services (AD DS) gefunden wird. 
   
 ### <a name="getuseravailability-operation-soap-headers"></a>SOAP-Header des GetUserAvailability-Vorgangs
 
-Der **GetUserAvailability** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **GetUserAvailability-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Header**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Gibt den Benutzer an, den der Client imitiert. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
-|**TimeZoneContext** <br/> |[TimeZoneContext](timezonecontext.md) <br/> |Gibt einen SOAP-Header an, der die Zeitzone angibt, die für alle Antworten vom Server verwendet werden soll. Alle vom Server zurückgegebenen Zeiten werden in die angegebene Zeitzone konvertiert. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den der Client einen Identitätswechsel durchführt. Dieser Header gilt für eine Anforderung.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
+|**TimeZoneContext** <br/> |[TimeZoneContext](timezonecontext.md) <br/> |Gibt einen SOAP-Header an, der die Zeitzone angibt, die für alle Antworten vom Server verwendet werden soll. Alle Vom Server zurückgegebenen Zeiten werden in die angegebene Zeitzone konvertiert. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="getuseravailability-request-example-get-availability-information"></a>GetUserAvailability-Anforderungs Beispiel: Abrufen von Verfügbarkeitsinformationen
+## <a name="getuseravailability-request-example-get-availability-information"></a>GetUserAvailability-Anforderungsbeispiel: Abrufen von Verfügbarkeitsinformationen
 
-Im folgenden Beispiel einer **GetUserAvailability** -Vorgangsanforderung wird gezeigt, wie detaillierte Verfügbarkeitsinformationen für zwei Benutzer in der Pacific Time-Zeitzone abgerufen werden. 
+Das folgende Beispiel einer **GetUserAvailability-Vorgangsanforderung** zeigt, wie Detaillierte Verfügbarkeitsinformationen für zwei Benutzer in der Pacific Time-Zeitzone abgerufen werden. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -110,17 +110,17 @@ Im folgenden Beispiel einer **GetUserAvailability** -Vorgangsanforderung wird ge
 </soap:Envelope>
 ```
 
-Weitere Informationen zum Abrufen von vorgeschlagenen Besprechungen mithilfe des [SuggestionsViewOptions](suggestionsviewoptions.md) -Elements finden Sie unter dem Schema im virtuellen EWS-Verzeichnis. 
+Weitere Informationen zum Abrufen vorgeschlagener Besprechungen mithilfe des [SuggestionsViewOptions-Elements](suggestionsviewoptions.md) finden Sie im Schema im virtuellen EWS-Verzeichnis. 
   
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
     
-- [Zeitzone (Verfügbarkeit)](timezone-availability.md)
+- [TimeZone (Verfügbarkeit)](timezone-availability.md)
     
 - [Bias (UTC)](bias-utc.md)
     
-- [Standard Time](standardtime.md)
+- [StandardTime](standardtime.md)
     
 - [Bias](bias.md)
     
@@ -130,7 +130,7 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [Month](month.md)
     
-- [DayOfWeek (Zeitzone)](dayofweek-timezone.md)
+- [DayOfWeek (TimeZone)](dayofweek-timezone.md)
     
 - [DaylightTime](daylighttime.md)
     
@@ -138,9 +138,9 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [MailboxData](mailboxdata.md)
     
-- [E-Mail (e-Mail-Adresse)](email-emailaddresstype.md)
+- [E-Mail (EmailAddressType)](email-emailaddresstype.md)
     
-- [Address (Zeichenfolge)](address-string.md)
+- [Adresse (Zeichenfolge)](address-string.md)
     
 - [AttendeeType](attendeetype.md)
     
@@ -154,12 +154,12 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [EndTime](endtime.md)
     
-## <a name="successful-getuseravailability-operation-response"></a>Erfolgreiche Reaktion des GetUserAvailability-Vorgangs
+## <a name="successful-getuseravailability-operation-response"></a>Erfolgreiche GetUserAvailability-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetUserAvailability** -Vorgangsanforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetUserAvailability-Vorgangsanforderung.** 
   
 > [!NOTE]
-> Die Kalenderereignis Bezeichner wurden verkürzt, um die Lesbarkeit beizubehalten. 
+> Die Kalenderereignisbezeichner wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -303,9 +303,9 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf die **GetUserAvailabil
 </soap:Envelope>
 ```
 
-Die Verfügbarkeitsinformationen für jeden Benutzer werden in einem eindeutigen [FreeBusyResponse](freebusyresponse.md) -Element angezeigt. Die Reihenfolge der Benutzer in der **GetUserAvailability** -Vorgangsanforderung bestimmt die Reihenfolge der Verfügbarkeitsdaten für jeden Benutzer in der Antwort. 
+Die Verfügbarkeitsinformationen für jeden Benutzer werden in einem eindeutigen [FreeBusyResponse-Element](freebusyresponse.md) angezeigt. Die Reihenfolge der Benutzer in der **GetUserAvailability-Vorgangsanforderung** bestimmt die Reihenfolge der Verfügbarkeitsdaten für jeden Benutzer in der Antwort. 
   
-Wenn die Anzahl der Termine in dem in der Abfrage definierten Zeitraum größer ist als die vom Administrator festgelegte maximale Zahl, wird ein Fehler an den Client zurückgegeben. Die standardmäßige maximale Anzahl von Terminen ist 10.000 einzelne Instanzen und erweiterte Serienelemente. Diese Eigenschaft kann nur von einem Administrator konfiguriert werden.
+An den Client wird ein Fehler zurückgegeben, wenn die Anzahl der Termine in dem zeitraum, der in der Abfrage definiert ist, größer als die vom Administrator angegebene maximale Anzahl ist. Die standardmäßige maximale Anzahl von Terminen beträgt 10.000 einzelne Instanzen und erweiterte Serienelemente. Diese Eigenschaft kann nur von einem Administrator konfiguriert werden.
   
 In der Antwort werden folgende Elemente verwendet:
   
@@ -335,7 +335,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [EndTime](endtime.md)
     
-- [Busytype](busytype.md)
+- [BusyType](busytype.md)
     
 - [CalendarEventDetails](calendareventdetails.md)
     
@@ -343,25 +343,25 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Betreff (CalendarEventDetails)](subject-calendareventdetails.md)
     
-- [Speicherort (CalendarEventDetails)](location-calendareventdetails.md)
+- [Location (CalendarEventDetails)](location-calendareventdetails.md)
     
-- [Ismeeting (CalendarEventDetails)](ismeeting-calendareventdetails.md)
+- [IsMeeting (CalendarEventDetails)](ismeeting-calendareventdetails.md)
     
-- [Iswiederkehr (CalendarEventDetails)](isrecurring-calendareventdetails.md)
+- [IsRecurring (CalendarEventDetails)](isrecurring-calendareventdetails.md)
     
-- [Isexception](isexception.md)
+- [IsException](isexception.md)
     
-- [Reminder](isreminderset.md)
+- [IsReminderSet](isreminderset.md)
     
 - [IsPrivate](isprivate.md)
     
 - [WorkingHours](workinghours-ex15websvcsotherref.md)
     
-- [Zeitzone (Verfügbarkeit)](timezone-availability.md)
+- [TimeZone (Verfügbarkeit)](timezone-availability.md)
     
 - [Bias (UTC)](bias-utc.md)
     
-- [Standard Time](standardtime.md)
+- [StandardTime](standardtime.md)
     
 - [Bias](bias.md)
     
@@ -371,7 +371,7 @@ In der Antwort werden folgende Elemente verwendet:
     
 - [Month](month.md)
     
-- [DayOfWeek (Zeitzone)](dayofweek-timezone.md)
+- [DayOfWeek (TimeZone)](dayofweek-timezone.md)
     
 - [DaylightTime](daylighttime.md)
     
@@ -389,6 +389,6 @@ In der Antwort werden folgende Elemente verwendet:
 
 - [EWS-Operationen in Exchange](ews-operations-in-exchange.md)
     
-- [Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
     
 

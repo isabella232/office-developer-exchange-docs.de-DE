@@ -1,27 +1,27 @@
 ---
-title: Interne-Nr
+title: InternalId
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - InternalId
 api_type:
 - schema
 ms.assetid: c179db1a-95c9-40da-bd3f-0bed548c0325
-description: Das Internal-ID-Element stellt einen ganzzahligen Wert für die Ereignis Identifikation dar.
-ms.openlocfilehash: 66d5852e104de843911b46a225154ebd991e2220
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das InternalId-Element stellt einen ganzzahligen Wert für die Ereignisidentifikation dar.
+ms.openlocfilehash: 5a1f84fcaa599f5dc2cdf38dd3edeb3d32eb7388
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459938"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547141"
 ---
-# <a name="internalid"></a>Interne-Nr
+# <a name="internalid"></a>InternalId
 
-Das **internal** -ID-Element stellt einen ganzzahligen Wert für die Ereignis Identifikation dar. 
+Das **InternalId-Element** stellt einen ganzzahligen Wert für die Ereignisidentifikation dar. 
   
 ```XML
 <InternalId/>
@@ -50,7 +50,7 @@ Keine.
 
 Ein Textwert, der eine ganze Zahl darstellt, ist erforderlich, wenn dieses Element verwendet wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

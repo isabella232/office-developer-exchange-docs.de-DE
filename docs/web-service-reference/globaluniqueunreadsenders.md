@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GlobalUniqueUnreadSenders
 api_type:
 - schema
 ms.assetid: 490abe30-7608-407a-923b-a4b3ddbca610
-description: Das GlobalUniqueUnreadSenders-Element gibt eine Liste aller Personen an, die Nachrichten gesendet haben, die derzeit in dieser Unterhaltung für alle Ordner im Postfach ungelesen sind.
-ms.openlocfilehash: 5a26053158a262d65993dba4be90888ee97f2112
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das GlobalUniqueUnreadSenders-Element gibt eine Liste aller Personen an, die Nachrichten gesendet haben, die in dieser Unterhaltung in allen Ordnern im Postfach ungelesen sind.
+ms.openlocfilehash: 4aa886fd817cc8bda7f9a8922b8303bf304e153b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530818"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547358"
 ---
 # <a name="globaluniqueunreadsenders"></a>GlobalUniqueUnreadSenders
 
-Das **GlobalUniqueUnreadSenders** -Element gibt eine Liste aller Personen an, die Nachrichten gesendet haben, die derzeit in dieser Unterhaltung für alle Ordner im Postfach ungelesen sind. 
+Das **GlobalUniqueUnreadSenders-Element** gibt eine Liste aller Personen an, die Nachrichten gesendet haben, die in dieser Unterhaltung in allen Ordnern im Postfach ungelesen sind. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -50,7 +50,7 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[String](string.md) <br/> |Enthält einen einzelnen Unterhaltungs Absender.  <br/> |
+|[String](string.md) <br/> |Enthält einen einzelnen Unterhaltungssender.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -62,7 +62,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.Dieses Element wurde in Exchange Server 2010 Service Pack 1 (SP1) eingeführt.
   

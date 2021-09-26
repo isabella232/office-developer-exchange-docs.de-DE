@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 283322f9-8022-4e8b-a7e2-d5521cda00f4
-description: Das DisplayName-Element enthält den Anzeigenamen eines neuen Kontakts der Chatgruppe oder den Anzeigenamen einer neuen Sofortnachrichten Gruppe.
-ms.openlocfilehash: 0b1dff63583c5b449980288134fb83c0256e2e8c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DisplayName-Element enthält den Anzeigenamen eines neuen Chatgruppenkontakts oder den Anzeigenamen einer neuen Chatgruppe.
+ms.openlocfilehash: 1fc82a7472e43c31d774bbcc260bdf9c96b908c8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463664"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547526"
 ---
 # <a name="displayname-nonemptystringtype"></a>DisplayName (NonEmptyStringType)
 
-Das **DisplayName-Element enthält** den Anzeigenamen eines neuen Kontakts der Chatgruppe oder den Anzeigenamen einer neuen Sofortnachrichten Gruppe. 
+Das **DisplayName-Element** enthält den Anzeigenamen eines neuen Chatgruppenkontakts oder den Anzeigenamen einer neuen Chatgruppe. 
   
 ```XML
 <DisplayName></DisplayName>
@@ -38,13 +38,13 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-[AddDistributionGroupToImList](adddistributiongrouptoimlist.md)  |  [AddImGroup](addimgroup.md)  |  [AddNewImContactToGroup](addnewimcontacttogroup.md)  |  [Imgroup](imgroup.md)
+[AddDistributionGroupToImList](adddistributiongrouptoimlist.md)  |  [AddImGroup](addimgroup.md)  |  [AddNewImContactToGroup](addnewimcontacttogroup.md)  |  [ImGroup](imgroup.md)
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **des DisplayName-Elements ist** der Anzeigename eines neuen Kontakts der Chatgruppe oder der Anzeigename einer neuen Sofortnachrichten Gruppe. 
+Der Textwert des **DisplayName-Elements** ist der Anzeigename eines neuen Chatgruppenkontakts oder der Anzeigename einer neuen Chatgruppe. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

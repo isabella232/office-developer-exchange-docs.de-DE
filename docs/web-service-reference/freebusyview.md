@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FreeBusyView
 api_type:
 - schema
 ms.assetid: cb18434f-5f41-4e05-a5ce-d921b2721a8c
 description: Das FreeBusyView-Element enthält Verfügbarkeitsinformationen für einen bestimmten Benutzer.
-ms.openlocfilehash: e5cc3bea6b57d5c400dd9be44bf9f9aaf9e43eb9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c662e8a44118f61b4c8be642d9ac862051c3a15d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456101"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546413"
 ---
 # <a name="freebusyview"></a>FreeBusyView
 
-Das **FreeBusyView** -Element enthält Verfügbarkeitsinformationen für einen bestimmten Benutzer. 
+Das **FreeBusyView-Element** enthält Verfügbarkeitsinformationen für einen bestimmten Benutzer. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -54,8 +54,8 @@ Keine.
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[FreeBusyViewType](freebusyviewtype.md) <br/> |Stellt den Typ der angeforderten Frei/Gebucht-Informationen dar, die in der Antwort zurückgegeben werden.  <br/> |
-|[MergedFreeBusy](mergedfreebusy.md) <br/> |Enthält den zusammengeführten frei/gebucht-Datenstrom.  <br/> |
-|[CalendarEventArray](calendareventarray.md) <br/> |Enthält eine Reihe von eindeutigen Kalenderelement vorkommen, die die Verfügbarkeit des angeforderten Benutzers darstellen.  <br/> |
+|[MergedFreeBusy](mergedfreebusy.md) <br/> |Enthält den zusammengeführten Frei/Gebucht-Datenstrom.  <br/> |
+|[CalendarEventArray](calendareventarray.md) <br/> |Enthält eine Reihe eindeutiger Kalenderelementvorkommen, die die Verfügbarkeit des angeforderten Benutzers darstellen.  <br/> |
 |[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |Stellt die Zeitzoneneinstellungen und Arbeitszeiten für den angeforderten Postfachbenutzer dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
@@ -64,9 +64,9 @@ Keine.
 |:-----|:-----|
 |[FreeBusyResponse](freebusyresponse.md) <br/> |Enthält die Frei/Gebucht-Informationen für einen einzelnen Postfachbenutzer.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse` <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Alle untergeordneten Elemente werden in der Reihenfolge aufgeführt, in der Sie auftreten. Die von diesem Element bereitgestellte Detailebene hängt von den Berechtigungen ab, die dem Requestor erteilt werden.
+Alle untergeordneten Elemente werden in der Reihenfolge aufgelistet, in der sie auftreten. Die Detailebene, die von diesem Element bereitgestellt wird, hängt von den Berechtigungen ab, die dem Anforderer erteilt wurden.
   
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   
@@ -88,5 +88,5 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verze
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Verfügbarkeit von Benutzern wird abgerufen](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Abrufen der Benutzerverfügbarkeit](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

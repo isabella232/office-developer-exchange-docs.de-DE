@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Folders
 api_type:
 - schema
 ms.assetid: 8e71cb44-1df6-444a-add7-0c1363863f65
 description: Das Folders-Element enthält ein Array von Ordnern, die in Ordnervorgängen verwendet werden.
-ms.openlocfilehash: b087be0501f04390b80458458e7e7ccc24bf27bd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 77442965c9d372a2895404cf1c919be38e98abb5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530979"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546434"
 ---
 # <a name="folders"></a>Ordner
 
-Das **Folders** -Element enthält ein Array von Ordnern, die in Ordnervorgängen verwendet werden. 
+Das **Folders-Element** enthält ein Array von Ordnern, die in Ordnervorgängen verwendet werden. 
   
 ```xml
 <Folders>
@@ -67,9 +67,9 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Folder](folder.md) <br/> |Gibt einen Ordner zum Erstellen, abrufen, suchen, synchronisieren oder aktualisieren an.  <br/> |
+|[Folder](folder.md) <br/> |Identifiziert einen Ordner, der erstellt, abgerufen, gesucht, synchronisiert oder aktualisiert werden soll.  <br/> |
 |[CalendarFolder](calendarfolder.md) <br/> |Stellt einen Ordner dar, der in erster Linie Kalenderelemente enthält.  <br/> |
-|[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Ordner Kontakte in einem Postfach dar.  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |Stellt einen Kontaktordner in einem Postfach dar.  <br/> |
 |[SearchFolder](searchfolder.md) <br/> |Stellt einen in einem Postfach enthaltenen Suchordner dar.  <br/> |
 |[TasksFolder](tasksfolder.md) <br/> |Stellt einen Aufgabenordner in einem Postfach dar.  <br/> |
    
@@ -77,21 +77,21 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[CopyFolderResponseMessage](copyfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [CopyFolder-Vorgangs](copyfolder-operation.md) Anforderung.  <br/> |
-|[CreateFolder](createfolder.md) <br/> |Definiert eine Anforderung zum Erstellen eines Ordners im Exchange-Informationsspeicher.  <br/> |
-|[CreateFolderResponseMessage](createfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [CreateFolder-Vorgangs](createfolder-operation.md) Anforderung.  <br/> |
-|[CreateManagedFolderResponseMessage](createmanagedfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [CreateManagedFolder-Vorgangs](createmanagedfolder-operation.md) Anforderung.  <br/> |
-|[GetFolderResponseMessage](getfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer [GetFolder-Vorgangs](getfolder-operation.md) Anforderung.  <br/> |
-|[MoveFolderResponseMessage](movefolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer [MoveFolder-Vorgangs](movefolder-operation.md) Anforderung.  <br/> |
+|[CopyFolderResponseMessage](copyfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [CopyFolder-Vorgangsanforderung.](copyfolder-operation.md)  <br/> |
+|[CreateFolder](createfolder.md) <br/> |Definiert eine Anforderung zum Erstellen eines Ordners im Exchange Speicher.  <br/> |
+|[CreateFolderResponseMessage](createfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [CreateFolder-Vorgangsanforderung.](createfolder-operation.md)  <br/> |
+|[CreateManagedFolderResponseMessage](createmanagedfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [CreateManagedFolder-Vorgangsanforderung.](createmanagedfolder-operation.md)  <br/> |
+|[GetFolderResponseMessage](getfolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer [GetFolder-Vorgangsanforderung.](getfolder-operation.md)  <br/> |
+|[MoveFolderResponseMessage](movefolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer [MoveFolder-Vorgangsanforderung.](movefolder-operation.md)  <br/> |
 |[ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) <br/> |Gibt den Ordner an, in dem ein neuer Ordner erstellt wird.  <br/> |
-|[RootFolder (FindFolderResponseMessage)](rootfolder-findfolderresponsemessage.md) <br/> |Enthält die Ergebnisse der Suche eines einzelnen Stammordners während eines [FindFolder-Vorgangs](findfolder-operation.md).  <br/> |
-|[UpdateFolderResponseMessage](updatefolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [UpdateFolder-Vorgangs](updatefolder-operation.md) Anforderung.  <br/> |
+|[RootFolder (FindFolderResponseMessage)](rootfolder-findfolderresponsemessage.md) <br/> |Enthält die Ergebnisse der Suche in einem einzelnen Stammordner während eines [FindFolder-Vorgangs.](findfolder-operation.md)  <br/> |
+|[UpdateFolderResponseMessage](updatefolderresponsemessage.md) <br/> |Enthält den Status und das Ergebnis einer einzelnen [UpdateFolder-Vorgangsanforderung.](updatefolder-operation.md)  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element ist ein erforderliches untergeordnetes Element des [parentfolderid-Elements (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) . 
+Dieses Element ist ein erforderliches untergeordnetes Element des [ParentFolderId (TargetFolderIdType)-Elements.](parentfolderid-targetfolderidtype.md) 
   
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Microsoft Exchange Server 2010 ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

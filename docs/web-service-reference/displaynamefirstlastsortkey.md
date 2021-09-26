@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 18f8c676-0fc0-49ff-9a90-5fd43e7e7e39
-description: Das DisplayNameFirstLastSortKey-Element enthält den Sortierschlüssel für einen Anzeigenamen in der Reihenfolge der Vornamen, Nachname.
-ms.openlocfilehash: 1cc0241f5e2d0b0d02bc14011e770c95bdc1d6e8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DisplayNameFirstLastSortKey-Element enthält den Sortierschlüssel für einen Anzeigenamen in Vornamenreihenfolge.
+ms.openlocfilehash: 94528e72af8b5f4a978ee0bcf2564b250d6195b7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456206"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546630"
 ---
 # <a name="displaynamefirstlastsortkey"></a>DisplayNameFirstLastSortKey
 
-Das **DisplayNameFirstLastSortKey** -Element enthält den Sortierschlüssel für einen Anzeigenamen in der Reihenfolge der Vornamen, Nachname. 
+Das **DisplayNameFirstLastSortKey-Element** enthält den Sortierschlüssel für einen Anzeigenamen in Vornamenreihenfolge. 
   
 ```XML
 <DisplayNameFirstLastSortKey></DisplayNameFirstLastSortKey>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **DisplayNameFirstLastSortKey** -Elements ist der Sortierschlüssel für den Anzeigenamen einer Person in der Reihenfolge der Vornamen und Nachname. 
+Der Textwert des **DisplayNameFirstLastSortKey-Elements** ist der Sortierschlüssel für den Anzeigenamen einer Persona in der Reihenfolge des Vornamens und des Nachnamens. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

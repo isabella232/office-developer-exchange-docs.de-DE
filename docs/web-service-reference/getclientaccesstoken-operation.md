@@ -5,40 +5,40 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 086876cc-e22c-4e89-89f9-19e78af51217
 description: Hier finden Sie Informationen zum GetClientAccessToken-EWS-Vorgang.
-ms.openlocfilehash: 2d49d675fcedb0e7e8312a9715f095c47fcf3d77
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f5298e29bfb05bda954716680639d00acb98d4df
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462038"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546385"
 ---
 # <a name="getclientaccesstoken-operation"></a>GetClientAccessToken-Vorgang
 
-Hier finden Sie Informationen zum **GetClientAccessToken** -EWS-Vorgang. 
+Hier finden Sie Informationen zum **GetClientAccessToken-EWS-Vorgang.** 
   
-Der **GetClientAccessToken** -Vorgang ruft ein Clientzugriffs Token für eine Mail-App für Outlook ab. 
+Der **GetClientAccessToken-Vorgang** ruft ein Clientzugriffstoken für eine Mail-App für Outlook ab. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-getclientaccesstoken-operation"></a>Verwenden des GetClientAccessToken-Vorgangs
 
-Die **GetClientAccessToken** -Vorgangsanforderung umfasst zwei erforderliche Argumente: den Bezeichner der APP und den Tokentyp. Sie können den [GetAppManifests-Vorgang](getappmanifests-operation.md) verwenden, um den App-Bezeichner anzufordern. 
+Die **GetClientAccessToken-Vorgangsanforderung** verwendet zwei erforderliche Argumente: den Bezeichner der App und den Tokentyp. Sie können den [GetAppManifests-Vorgang](getappmanifests-operation.md) verwenden, um den App-Bezeichner anzufordern. 
   
 ### <a name="getclientaccesstoken-operation-soap-headers"></a>SOAP-Header des GetClientAccessToken-Vorgangs
 
-Der **GetClientAccessToken** -Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
+Der **GetClientAccessToken-Vorgang** kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Diese Kopfzeile gilt für eine Anforderung.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Diese Kopfzeile gilt für eine Antwort.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dieser Header gilt für eine Anforderung.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dieser Header gilt für eine Antwort.  <br/> |
    
-## <a name="getclientaccesstoken-operation-request-example-get-a-caller-identity-token"></a>GetClientAccessToken-Vorgangs Anforderungs Beispiel: Abrufen eines Anrufer-Identitätstokens
+## <a name="getclientaccesstoken-operation-request-example-get-a-caller-identity-token"></a>GetClientAccessToken-Vorgangsanforderungsbeispiel: Abrufen eines Aufruferidentitätstokens
 
-Im folgenden Beispiel einer **GetClientAccessToken** -Vorgangsanforderung wird gezeigt, wie ein Anrufer-Identitätstoken für eine APP abgerufen wird. 
+Das folgende Beispiel einer **GetClientAccessToken-Vorgangsanforderung** zeigt, wie Sie ein Aufruferidentitätstoken für eine App abrufen. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -62,7 +62,7 @@ Im folgenden Beispiel einer **GetClientAccessToken** -Vorgangsanforderung wird g
 
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [GetClientAccessToken](getclientaccesstoken.md)
     
@@ -72,14 +72,14 @@ Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
     
 - [ID (Zeichenfolge)](id-string.md)
     
-- [TokenType](tokentype.md)
+- [Tokentype](tokentype.md)
     
-## <a name="successful-getclientaccesstoken-operation-response"></a>Erfolgreiche Reaktion des GetClientAccessToken-Vorgangs
+## <a name="successful-getclientaccesstoken-operation-response"></a>Erfolgreiche GetClientAccessToken-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetClientAccessToken** -Vorgangsanforderung, um ein Anrufer-Identitätstoken für eine APP abzurufen. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetClientAccessToken-Vorgangsanforderung** zum Abrufen eines Aufruferidentitätstokens für eine App. 
   
 > [!NOTE]
-> Die Tokenwerte in diesem Artikel wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Die Tokenwerte in diesem Artikel wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -116,7 +116,7 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **GetClientAccess
 
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [GetClientAccessTokenResponse](getclientaccesstokenresponse.md)
     
@@ -132,13 +132,13 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 - [TokenType (ClientAccessTokenType)](tokentype-clientaccesstokentype.md)
     
-- [Tokenvalue](tokenvalue.md)
+- [TokenValue](tokenvalue.md)
     
 - [TTL (ClientAccessTokenTypeType)](ttl-clientaccesstokentypetype.md)
     
-## <a name="getclientaccesstoken-operation-error-response"></a>Fehlerantwort des GetClientAccessToken-Vorgangs
+## <a name="getclientaccesstoken-operation-error-response"></a>GetClientAccessToken-Vorgangsfehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetClientAccessToken** -Vorgangsanforderung. Dies ist eine Antwort auf eine Anforderung zum Abrufen eines Erweiterungs Rückruf Tokens ohne die entsprechenden Berechtigungen. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **GetClientAccessToken-Vorgangsanforderung.** Dies ist eine Antwort auf eine Anforderung zum Abrufen eines Erweiterungsrückruftokens ohne die entsprechenden Berechtigungen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -184,7 +184,7 @@ Der SOAP-Textkörper der Fehlerantwort enthält die folgenden Elemente:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Weitere Fehlercodes, die für EWS allgemein und spezifisch für diesen Vorgang sind, finden Sie unter [Response Code](responsecode.md).
+Weitere Fehlercodes, die für EWS generisch und für diesen Vorgang spezifisch sind, finden Sie unter [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Siehe auch
 

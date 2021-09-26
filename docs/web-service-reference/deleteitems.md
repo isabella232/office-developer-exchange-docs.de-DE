@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteItems
 api_type:
 - schema
 ms.assetid: a5898bfc-f5ae-451d-9713-3e55864c690c
-description: Das DeleteItems-Element gibt an, welche Elemente in einem Ordner ein Benutzer berechtigt ist, zu löschen. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
-ms.openlocfilehash: a0bbefc8b021d047bb2e001669c3e92a6e2536ce
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DeleteItems-Element gibt an, welche Elemente in einem Ordner ein Benutzer löschen darf. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt.
+ms.openlocfilehash: d41e44c3cc0996ab5933eafaf1087cf30d7944a3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44454407"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546672"
 ---
 # <a name="deleteitems"></a>DeleteItems
 
-Das **DeleteItems** -Element gibt an, welche Elemente in einem Ordner ein Benutzer berechtigt ist, zu löschen. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
+Das **DeleteItems-Element** gibt an, welche Elemente in einem Ordner ein Benutzer löschen darf. Dieses Element wurde in Microsoft Exchange Server 2007 Service Pack 1 (SP1) eingeführt. 
   
 ```xml
 <DeleteItems>None or Owned or All</DeleteItems>
@@ -49,17 +49,17 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-In der folgenden Tabelle sind die möglichen Werte für das **DeleteItems** -Element aufgeführt. 
+In der folgenden Tabelle sind die möglichen Werte für das **DeleteItems-Element** aufgeführt. 
   
-**DeleteItems-Element Text Werte**
+**DeleteItems-Elementtextwerte**
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |Keine  <br/> |Gibt an, dass der Benutzer nicht über die Berechtigung zum Löschen von Elementen im Ordner verfügt.  <br/> |
-|Im Besitz  <br/> |Gibt an, dass der Benutzer über die Berechtigung zum Löschen der Elemente verfügt, die der Benutzer im Ordner besitzt.  <br/> |
-|Alle  <br/> |Gibt an, dass der Benutzer berechtigt ist, alle Elemente im Ordner zu löschen.  <br/> |
+|Im besitz  <br/> |Gibt an, dass der Benutzer über die Berechtigung zum Löschen der Elemente verfügt, die der Benutzer im Ordner besitzt.  <br/> |
+|Alle  <br/> |Gibt an, dass der Benutzer über die Berechtigung zum Löschen aller Elemente im Ordner verfügt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der Microsoft Exchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

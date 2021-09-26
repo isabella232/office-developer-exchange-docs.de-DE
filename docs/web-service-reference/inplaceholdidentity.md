@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 54f45774-00a0-4392-af1b-8c5f2208a53f
-description: Das InPlaceHoldIdentity-Element gibt die Identität eines Haltestatus an, der die Postfachelemente beibehält.
-ms.openlocfilehash: a06f72e478e7dc5bd1a499dceefeb352b14d7362
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das InPlaceHoldIdentity-Element gibt die Identität eines Haltebereichs an, der die Postfachelemente beibehält.
+ms.openlocfilehash: 0a5f02b908adf49328461c6e3676dab3698879c3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466094"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547211"
 ---
 # <a name="inplaceholdidentity"></a>InPlaceHoldIdentity
 
-Das **InPlaceHoldIdentity** -Element gibt die Identität eines Haltestatus an, der die Postfachelemente beibehält. 
+Das **InPlaceHoldIdentity-Element** gibt die Identität eines Haltebereichs an, der die Postfachelemente beibehält. 
   
 ```XML
 <InPlaceHoldIdentity></InPlaceHoldIdentity>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **InPlaceHoldIdentity** -Elements ist die Mailbox-halte-ID. 
+Der Textwert des **InPlaceHoldIdentity-Elements** ist der Postfach-Aufbewahrungsbezeichner. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Kann leer sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

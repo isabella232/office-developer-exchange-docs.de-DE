@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Manager
 api_type:
 - schema
 ms.assetid: 17a72bf0-8fa6-488e-966f-bcb03155d21f
 description: Das Manager-Element stellt den Vorgesetzten eines Kontakts dar.
-ms.openlocfilehash: 978523833c857a1387ed2a27bbce2f3a0258c4ce
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fd6124b951877f33824f1aaeb6d3e642943d83f7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530902"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547119"
 ---
 # <a name="manager"></a>Manager
 
-Das **Manager-** Element stellt den Vorgesetzten eines Kontakts dar. 
+Das **Manager-Element** stellt den Vorgesetzten eines Kontakts dar. 
   
 ```xml
 <Manager/>
@@ -50,7 +50,7 @@ Keine.
 
 Wenn dieses Element verwendet wird, ist ein Textwert erforderlich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

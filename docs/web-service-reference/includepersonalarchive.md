@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b373bb1a-6b1d-4959-98a1-4c4ea62973bc
 description: Das IncludePersonalArchive-Element gibt an, ob das persönliche Archiv in die Suche einbezogen werden soll.
-ms.openlocfilehash: a25dd45bc0717af8f949d14b88793af3821ca69f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 2567475fbb2542c7d01e651f2d348f6f91d50b78
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458250"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547218"
 ---
 # <a name="includepersonalarchive"></a>IncludePersonalArchive
 
-Das **IncludePersonalArchive** -Element gibt an, ob das persönliche Archiv in die Suche einbezogen werden soll. 
+Das **IncludePersonalArchive-Element** gibt an, ob das persönliche Archiv in die Suche einbezogen werden soll. 
   
 ```XML
 <IncludePersonalArchive>true | false</IncludePersonalArchive>
@@ -40,13 +40,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md) <br/> |Gibt eine Anforderung an, nach Postfachstatistiken nach Stichwort zu suchen.  <br/> |
+|[FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md) <br/> |Gibt eine Anforderung an, nach Postfachstatistiken nach Schlüsselwort zu suchen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Textwert **true** für das **IncludePersonalArchive** -Element gibt an, dass das persönliche Archiv in die Suche einbezogen wird. Der Wert **false** gibt an, dass das persönliche Archiv nicht in die Suche einbezogen wird. 
+Der Textwert **"true"** für das **IncludePersonalArchive-Element** gibt an, dass das persönliche Archiv in der Suche enthalten ist. Der Wert **"false"** gibt an, dass das persönliche Archiv nicht in der Suche enthalten ist. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -56,7 +56,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

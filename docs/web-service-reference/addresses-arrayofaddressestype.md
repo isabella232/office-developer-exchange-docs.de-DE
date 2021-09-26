@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 711acc90-8e5b-4658-92d2-16cd441db56e
-description: Das addresses-Element gibt ein Array von Address-Elementen an.
-ms.openlocfilehash: 8b3a62e22cb7fc983fba78517fe4636797d06f5b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Addresses-Element gibt ein Array von Address-Elementen an.
+ms.openlocfilehash: a82c2df7bccf3b039f673ab8dc0716358fbd3de7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463622"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546783"
 ---
 # <a name="addresses-arrayofaddressestype"></a>Adressen (ArrayOfAddressesType)
 
-Das **addresses** -Element gibt ein Array von **Address** -Elementen an. 
+Das **Addresses-Element** gibt ein Array von **Address-Elementen** an. 
   
 ```XML
 <Addresses>
@@ -38,15 +38,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Address (ContactType)](address-contacttype.md) <br/> |Gibt die Adresse eines Kontakts an.  <br/> |
+|[Adresse (ContactType)](address-contacttype.md) <br/> |Gibt die Adresse eines Kontakts an.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Kontakt (ContactType)](contact-contacttype.md) <br/> |Gibt einen Kontakt im einheitlichen Kontaktspeicher an.  <br/> |
+|[Kontakt (ContactType)](contact-contacttype.md) <br/> |Gibt einen Kontakt im einheitlichen Kontakt-Store an.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Typschema  <br/> |
-|Überprüfungsdatei  <br/> |Types. xsd  <br/> |
+|Überprüfungsdatei  <br/> |types.xsd  <br/> |
 |Kann leer sein  <br/> ||
    
 ## <a name="see-also"></a>Siehe auch

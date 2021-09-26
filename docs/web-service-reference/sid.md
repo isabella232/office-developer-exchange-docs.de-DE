@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SID
 api_type:
 - schema
 ms.assetid: 2f33b29b-163b-4106-a74d-6fb76ec38951
-description: Das sid-Element stellt das SDDL-Formular (Security Descriptor Definition Language) der Sicherheits-ID (Security Identifier, SID) für das Konto dar, das für den Identitätswechsel oder den Stellvertretungszugriff verwendet werden soll.
-ms.openlocfilehash: 0e3f740e9a056f7c0042049d97757b5f2d3c441d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SID-Element stellt die Sicherheitsdeskriptordefinitionssprache (Security Descriptor Definition Language, SDDL) der Sicherheits-ID (SID) für das Konto dar, das für den Identitätswechsel oder Stellvertretungszugriff verwendet werden soll.
+ms.openlocfilehash: 436f284b59d5146b481a25b7b0986db4aeee67ce
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468047"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547057"
 ---
 # <a name="sid"></a>SID
 
-Das **sid** -Element stellt das SDDL-Formular (Security Descriptor Definition Language) der Sicherheits-ID (Security Identifier, SID) für das Konto dar, das für den Identitätswechsel oder den Stellvertretungszugriff verwendet werden soll. 
+Das **SID-Element** stellt die Sicherheitsdeskriptordefinitionssprache (Security Descriptor Definition Language, SDDL) der Sicherheits-ID (SID) für das Konto dar, das für den Identitätswechsel oder Stellvertretungszugriff verwendet werden soll. 
   
 ```xml
 <SID/>
@@ -44,16 +44,16 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[ConnectingSID](connectingsid.md) <br/> |Stellt ein Konto für den Identitätswechsel dar, wenn der ExchangeImpersonation-SOAP-Header verwendet wird.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
-|[UserId](userid.md) <br/> |Identifiziert einen Stellvertreter Benutzer oder einen Benutzer mit Ordnerzugriffsberechtigungen.  <br/> |
+|[ConnectingSID](connectingsid.md) <br/> |Stellt ein Konto dar, das bei Verwendung des ExchangeImpersonation-SOAP-Headers als Identitätswechsel verwendet werden soll.  <br/> Für dieses Element wird folgender XPath-Ausdruck verwendet:   <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
+|[UserId](userid.md) <br/> |Identifiziert einen Stellvertreterbenutzer oder einen Benutzer mit Ordnerzugriffsberechtigungen.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text ist eine Zeichenfolgendarstellung einer SID.
+Der Textwert ist eine Zeichenfolgendarstellung einer SID.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server mit installierter Client Zugriffs-Server Rolle ausführt.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, auf dem Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

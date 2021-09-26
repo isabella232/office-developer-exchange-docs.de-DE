@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 12ba4528-60e9-4c0a-a5b2-eed3a2cb1509
 description: Das GetUserRetentionPolicyTagsResponse-Element enthält die Antwort auf eine GetRetentionPolicyTags-Anforderung.
-ms.openlocfilehash: a8cfdc1aaaf47f3a66e541537381edf92bb024a9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 1e589c12b7ec242015b4b721933c053aa797b642
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530825"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547414"
 ---
 # <a name="getuserretentionpolicytagsresponse"></a>GetUserRetentionPolicyTagsResponse
 
-Das [GetUserRetentionPolicyTagsResponse](getuserretentionpolicytagsresponse.md) -Element enthält die Antwort auf eine **GetRetentionPolicyTags** -Anforderung. 
+Das [GetUserRetentionPolicyTagsResponse-Element](getuserretentionpolicytagsresponse.md) enthält die Antwort auf eine **GetRetentionPolicyTags-Anforderung.** 
   
 ```XML
 <GetUserRetentionPolicyTagsResponse>
@@ -40,13 +40,13 @@ Keine.
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-[MessageText](messagetext.md)  |  [Response Code](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [Messagexml verwendet](messagexml.md)  |  [RetentionPolicyTags](retentionpolicytags.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)  |  [RetentionPolicyTags](retentionpolicytags.md)
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -58,7 +58,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Überprüfungsdatei  <br/> |messages.xsd  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

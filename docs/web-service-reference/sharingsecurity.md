@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SharingSecurity
 api_type:
 - schema
 ms.assetid: d4831cac-a8f9-419a-ac42-481e34230cba
-description: Das SharingSecurity-Element wird in der Simple Object Access Protocol (SOAP) Kopfzeile für die Kalender-oder Kontaktfreigabe verwendet.
-ms.openlocfilehash: 456190079cc539c170aa96e795031071b5d9f1ad
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SharingSecurity-Element wird im SOAP-Header (Simple Object Access Protocol) für die Kalender- oder Kontaktfreigabe verwendet.
+ms.openlocfilehash: 32432f09b2e291aced8f87fb685f80069a4de3fd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466710"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547050"
 ---
 # <a name="sharingsecurity"></a>SharingSecurity
 
-Das **SharingSecurity** -Element wird in der Simple Object Access Protocol (SOAP) Kopfzeile für die Kalender-oder Kontaktfreigabe verwendet. 
+Das **SharingSecurity-Element** wird im SOAP-Header (Simple Object Access Protocol) für die Kalender- oder Kontaktfreigabe verwendet. 
   
 ```xml
 <SharingSecurity/>
@@ -44,9 +44,9 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, in dem Exchange Webdienste des Computers gehostet wird, auf dem Exchange Server ausgeführt wird, auf dem die Client Zugriffs-Server Rolle installiert ist.
+Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange Webdienste des Computers hostet, auf dem Microsoft Exchange Server ausgeführt wird, auf dem die Clientzugriffsserverrolle installiert ist.
   
 ## <a name="element-information"></a>Informationen zu Elementen
 

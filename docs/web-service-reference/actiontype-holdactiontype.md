@@ -1,23 +1,23 @@
 ---
-title: Action Type (HoldActionType)
+title: ActionType (HoldActionType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f50449b9-e73b-43c5-af96-6433bf434dce
-description: Das Action Type-Element gibt den Typ der Aktion für den Haltebereich an.
-ms.openlocfilehash: 8f2796df818dac2bd285b055aa44fbcecd0de5e6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das ActionType-Element gibt den Aktionstyp für den Haltebereich an.
+ms.openlocfilehash: 30028da4df2a53a4cd0066823872de5e586020f1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457858"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546840"
 ---
-# <a name="actiontype-holdactiontype"></a>Action Type (HoldActionType)
+# <a name="actiontype-holdactiontype"></a>ActionType (HoldActionType)
 
-Das **Action** Type-Element gibt den Typ der Aktion für den Haltebereich an. 
+Das **ActionType-Element** gibt den Aktionstyp für den Haltebereich an. 
   
 ```XML
 <ActionType> Create | Update | Remove </ActionType>
@@ -42,9 +42,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Action** Type-Elements ist der für ein Postfach festgelegte haltetyp. Der Textwert **Create** gibt an, dass ein Postfachspeicher erstellt wird. Der Textwert **Update** gibt an, dass ein Postfachspeicher aktualisiert wird. Der Textwert **Remove** gibt an, dass ein Post Fach Haltestatus entfernt wird. 
+Der Textwert des **ActionType-Elements** ist der haltebereichstyp, der für ein Postfach festgelegt ist. Der Textwert **Create** gibt an, dass ein Postfacharchiv erstellt wird. Der Textwert  Update gibt an, dass eine Postfachsperre aktualisiert wird. Der Textwert  Remove gibt an, dass eine Postfachsperre entfernt wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
@@ -57,6 +57,6 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Name des Schemas  <br/> |Schematypen  <br/> |
 |Überprüfungsdatei  <br/> |Types.xsd  <br/> |
-|Kann leer sein  <br/> |False  <br/> |
+|Kann leer sein  <br/> |false  <br/> |
    
 

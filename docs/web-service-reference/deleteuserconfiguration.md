@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteUserConfiguration
 api_type:
 - schema
 ms.assetid: 91b18b6a-d904-476c-996d-b041e859da1e
-description: Das DeleteUserConfiguration-Element stellt eine Anforderung zum Löschen eines Benutzer Konfigurationsobjekts dar.
-ms.openlocfilehash: 04668ead48e7c321ed7e91cbbeb67c6154c02283
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das DeleteUserConfiguration-Element stellt eine Anforderung zum Löschen eines Benutzerkonfigurationsobjekts dar.
+ms.openlocfilehash: 83dc99f81cf5cc4edf72853d2fbade30b561c0f9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460757"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546658"
 ---
 # <a name="deleteuserconfiguration"></a>DeleteUserConfiguration
 
-Das **DeleteUserConfiguration** -Element stellt eine Anforderung zum Löschen eines Benutzer Konfigurationsobjekts dar. 
+Das **DeleteUserConfiguration-Element** stellt eine Anforderung zum Löschen eines Benutzerkonfigurationsobjekts dar. 
   
 ```xml
 <DeleteUserConfiguration>
@@ -42,17 +42,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[UserConfigurationName](userconfigurationname.md) <br/> |Stellt den Namen des zu löschenden Benutzer Konfigurationsobjekts dar.  <br/> |
+|[UserConfigurationName](userconfigurationname.md) <br/> |Stellt den Namen des zu löschenden Benutzerkonfigurationsobjekts dar.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   
@@ -62,7 +62,7 @@ Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verze
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichtenschema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

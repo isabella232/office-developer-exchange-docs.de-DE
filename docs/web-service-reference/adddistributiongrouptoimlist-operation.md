@@ -5,27 +5,27 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5aa9bec8-71cf-4a6e-8ec8-b4965b40fd4a
-description: Hier finden Sie Informationen zum AddDistributionGroupToImList-EWS-Vorgang.
-ms.openlocfilehash: e68e21b6994af5773f5cf991d55129e1db3367ac
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Hier finden Sie Informationen zum EWS-Vorgang "AddDistributionGroupToImList".
+ms.openlocfilehash: 2dce8e903affb277f40b89859b234828d3ffd941
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463692"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546833"
 ---
 # <a name="adddistributiongrouptoimlist-operation"></a>AddDistributionGroupToImList-Vorgang
 
-Hier finden Sie Informationen zum **AddDistributionGroupToImList** -EWS-Vorgang. 
+Hier finden Sie Informationen zum EWS-Vorgang **"AddDistributionGroupToImList".** 
   
-Mit dem **AddDistributionGroupToImList** -Exchange-Webdienste Vorgang wird der Liste der Chatnachrichten (Instant Messaging) im einheitlichen Kontaktspeicher eine Verteilergruppe hinzugefügt. 
+Der EWS-Vorgang **(AddDistributionGroupToImList** Exchange Web Services) fügt der Chatliste im einheitlichen Kontakt Store eine Verteilergruppe hinzu. 
   
 Dieser Vorgang wurde in Exchange Server 2013 eingeführt.
   
 ## <a name="using-the-adddistributiongrouptoimlist-operation"></a>Verwenden des AddDistributionGroupToImList-Vorgangs
 
-Der **AddDistributionGroupToImList** -Vorgang verwendet ein einzelnes Argument, das eine Verteilergruppe identifiziert, die der Liste "Chat" hinzugefügt werden soll. Bei diesem Vorgang wird keine Verteilergruppe erstellt; die Verteilergruppe muss bereits erstellt sein. 
+Der **AddDistributionGroupToImList-Vorgang** verwendet ein einzelnes Argument, das eine Verteilergruppe identifiziert, die der Chatliste hinzugefügt werden soll. Dieser Vorgang erstellt keine Verteilergruppe; die Verteilergruppe muss bereits erstellt sein. 
   
 Dieser Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufgeführt sind.
   
@@ -34,13 +34,13 @@ Dieser Vorgang kann die SOAP-Header verwenden, die in der folgenden Tabelle aufg
 |**Headername**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**Impersonation** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifiziert den Benutzer, für den die Clientanwendung einen Identitätswechsel durchführt. Dies gilt für eine Anforderung.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur gemäß der Definition in RFC 3066, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden sollen. Dies gilt für eine Anforderung.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifiziert die Kultur, wie in RFC 3066 definiert, "Tags für die Identifizierung von Sprachen", die für den Zugriff auf das Postfach verwendet werden soll. Dies gilt für eine Anforderung.  <br/> |
 |**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Gibt die Schemaversion für die Vorgangsanforderung an. Dies gilt für eine Anforderung.  <br/> |
 |**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Gibt die Version des Servers an, der auf die Anforderung geantwortet hat. Dies gilt für eine Antwort.  <br/> |
    
-## <a name="adddistributiongrouptoimlist-operation-request-example"></a>AddDistributionGroupToImList-Vorgangsanforderung (Beispiel)
+## <a name="adddistributiongrouptoimlist-operation-request-example"></a>AddDistributionGroupToImList-Vorgangsanforderungsbeispiel
 
-Im folgenden Beispiel einer **AddDistributionGroupToImList** -Vorgangsanforderung wird gezeigt, wie der Liste "Chat" eine Verteilergruppe hinzugefügt wird. 
+Das folgende Beispiel einer **AddDistributionGroupToImList-Vorgangsanforderung** zeigt, wie Sie der Chatliste eine Verteilergruppe hinzufügen. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -59,16 +59,16 @@ Im folgenden Beispiel einer **AddDistributionGroupToImList** -Vorgangsanforderun
 </soap:Envelope>
 ```
 
-Der SOAP-Anforderungstext Körper enthält die folgenden Elemente:
+Der SOAP-Anforderungstext enthält die folgenden Elemente:
   
 - [AddDistributionGroupToImList](adddistributiongrouptoimlist.md)   
 - [SmtpAddress](smtpaddress.md)
     
-## <a name="successful-adddistributiongrouptoimlist-operation-response"></a>Erfolgreiche Reaktion des AddDistributionGroupToImList-Vorgangs
+## <a name="successful-adddistributiongrouptoimlist-operation-response"></a>Erfolgreiche AddDistributionGroupToImList-Vorgangsantwort
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **AddDistributionGroupToImList** -Vorgangsanforderung. 
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine **AddDistributionGroupToImList-Vorgangsanforderung.** 
   
-Die erfolgreiche Antwort enthält den Anzeigenamen der Verteilergruppe, die Exchange-Informationsspeicher Klasse für die Verteilergruppe und die EWS-ID der neuen Verteilergruppe.
+Die erfolgreiche Antwort enthält den Anzeigenamen der Verteilergruppe, die Exchange Speicherklasse für die Verteilergruppe und den EWS-Bezeichner der neuen Verteilergruppe.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -96,13 +96,13 @@ Die erfolgreiche Antwort enthält den Anzeigenamen der Verteilergruppe, die Exch
 </s:Envelope>
 ```
 
-Der SOAP-Antworttext Körper enthält die folgenden Elemente:
+Der SOAP-Antworttext enthält die folgenden Elemente:
   
 - [AddDistributionGroupToImListResponse](adddistributiongrouptoimlistresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-- [Imgroup](imgroup.md)
+- [ImGroup](imgroup.md)
     
 - [DisplayName (Zeichenfolge)](displayname-string.md)
     
@@ -112,7 +112,7 @@ Der SOAP-Antworttext Körper enthält die folgenden Elemente:
     
 ## <a name="adddistributiongrouptoimlist-operation-errorinvalidimdistributiongroupsmtpaddress-error-response"></a>AddDistributionGroupToImList-Vorgang ErrorInvalidImDistributionGroupSmtpAddress-Fehlerantwort
 
-Das folgende Beispiel zeigt eine Fehlerantwort auf eine **AddDistributionGroupToImList** -Vorgangsanforderung. Die folgende Fehlermeldung tritt auf, wenn ein Versuch unternommen wird, eine Verteilergruppe hinzuzufügen, die nicht in der Exchange-Informationsspeicher vorhanden ist. 
+Das folgende Beispiel zeigt eine Fehlerantwort auf eine **AddDistributionGroupToImList-Vorgangsanforderung.** Die folgende Fehlerantwort tritt auf, wenn versucht wird, eine Verteilergruppe hinzuzufügen, die im Exchange Speicher nicht vorhanden ist. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

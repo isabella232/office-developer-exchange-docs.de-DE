@@ -5,33 +5,33 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteAttachment
 api_type:
 - schema
 ms.assetid: 4d48e595-b98c-48e7-bbeb-cacf91d12a78
-description: Der DeleteAttachment--Vorgang wird verwendet, um Datei-und Element Anlagen aus einem vorhandenen Element im Exchange-Informationsspeicher zu löschen.
-ms.openlocfilehash: 1d34ce4c5ba1d955989a35dafb8ab3c5d229d505
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Der DeleteAttachment-Vorgang wird verwendet, um Datei- und Elementanlagen aus einem vorhandenen Element im Exchange Speicher zu löschen.
+ms.openlocfilehash: bd08776e1f4e75204819ef5463e297e3770a34a4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457333"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546686"
 ---
 # <a name="deleteattachment-operation"></a>DeleteAttachment-Vorgang
 
-Der DeleteAttachment--Vorgang wird verwendet, um Datei-und Element Anlagen aus einem vorhandenen Element im Exchange-Informationsspeicher zu löschen.
+Der DeleteAttachment-Vorgang wird verwendet, um Datei- und Elementanlagen aus einem vorhandenen Element im Exchange Speicher zu löschen.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mit diesem Vorgang können Sie eine oder mehrere Anlagen nach ID löschen.
   
-## <a name="deleteattachment-request-example"></a>DeleteAttachment--Anforderungs Beispiel
+## <a name="deleteattachment-request-example"></a>DeleteAttachment-Anforderungsbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Im folgenden Beispiel einer DeleteAttachment--Anforderung wird gezeigt, wie eine Elementanlage gelöscht wird.
+Das folgende Beispiel einer DeleteAttachment-Anforderung zeigt, wie eine Elementanlage gelöscht wird.
   
 ### <a name="code"></a>Code
 
@@ -54,23 +54,23 @@ Im folgenden Beispiel einer DeleteAttachment--Anforderung wird gezeigt, wie eine
 
 ### <a name="comments"></a>Comments
 
-Die Anlagen-ID wurde verkürzt, um die Lesbarkeit beizubehalten.
+Der Anlagenbezeichner wurde gekürzt, um die Lesbarkeit zu gewährleisten.
   
 ### <a name="request-elements"></a>Anfordern von Elementen
 
 In der Anforderung werden folgende Elemente verwendet:
   
-- [DeleteAttachment-](deleteattachment.md)
+- [DeleteAttachment](deleteattachment.md)
     
 - [AttachmentIds](attachmentids.md)
     
 - [AttachmentId](attachmentid.md)
     
-## <a name="deleteattachment-response-example"></a>DeleteAttachment--Antwortbeispiel
+## <a name="deleteattachment-response-example"></a>DeleteAttachment-Antwortbeispiel
 
 ### <a name="description"></a>Beschreibung
 
-Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine DeleteAttachment--Anforderung.
+Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine DeleteAttachment-Anforderung.
   
 ### <a name="code"></a>Code
 
@@ -100,12 +100,12 @@ Das folgende Beispiel zeigt eine erfolgreiche Antwort auf eine DeleteAttachment-
 
 ### <a name="comments"></a>Comments
 
-Der CreateAttachment-Vorgang gibt ein Element vom Typ AttachmentIdType zurück, das eine **RootItemId** -und **RootItemChangeKey**-Komponente enthält. Diese Attribute sind für Bezeichner in einer DeleteAttachment--Anforderung nicht zulässig. DeleteAttachment-verwendet Elemente vom Typ RequestAttachmentIdType, die diese Attribute nicht enthalten.
+Der CreateAttachment-Vorgang gibt ein Element vom Typ AttachmentIdType zurück, das eine **RootItemId** und **einen RootItemChangeKey** enthält. Diese Attribute sind für Bezeichner innerhalb einer DeleteAttachment-Anforderung nicht zulässig. DeleteAttachment verwendet Elemente vom Typ RequestAttachmentIdType, die diese Attribute nicht enthalten.
   
-Die DeleteAttachment--Antwort enthält die ID des übergeordneten Elements. Wenn Anlagen aus einem Element entfernt werden, wird der Änderungsschlüssel des Elements geändert. Der neue Element Änderungsschlüssel kann aus der DeleteAttachment--Antwort abgerufen werden.
+Die DeleteAttachment-Antwort enthält die ID des übergeordneten Elements. Wenn Anlagen aus einem Element entfernt werden, wird der Änderungsschlüssel des Elements geändert. Der neue Elementänderungsschlüssel kann aus der DeleteAttachment-Antwort abgerufen werden.
   
 > [!NOTE]
-> Die [RootItemId](rootitemid.md) -ID und ChangeKey wurden verkürzt, um die Lesbarkeit zu erhalten. 
+> Der [RootItemId-Bezeichner](rootitemid.md) und der ChangeKey wurden gekürzt, um die Lesbarkeit zu gewährleisten. 
   
 ### <a name="successful-response-elements"></a>Erfolgreiche Antwortelemente
 

@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 832a9211-d2d5-4a49-bcb3-1dc6dc3904ed
 description: Das GetUserSettingsRequest-Element stellt eine Anforderung zum Abrufen der angegebenen Einstellungen für einen oder mehrere Benutzer dar.
-ms.openlocfilehash: 353facb5d0bbf922a23b33cbaf6f9d2e7d82bd6b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: ccbcd67d4fdcb98be08acfecbf2ae066a91d65d2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530162"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547393"
 ---
 # <a name="getusersettingsrequest-soap"></a>GetUserSettingsRequest (SOAP)
 
-Das **GetUserSettingsRequest** -Element stellt eine Anforderung zum Abrufen der angegebenen Einstellungen für einen oder mehrere Benutzer dar. 
+Das **GetUserSettingsRequest-Element** stellt eine Anforderung zum Abrufen der angegebenen Einstellungen für einen oder mehrere Benutzer dar. 
   
 ```XML
 <GetUserSettingsRequest>
@@ -41,13 +41,13 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Benutzer (SOAP)](users-soap.md) <br/> |Stellt eine Auflistung von e-Mail-Adressen der Benutzer dar, für die Einstellungen abgerufen werden sollen.  <br/> |
+|[Benutzer (SOAP)](users-soap.md) <br/> |Stellt eine Auflistung von E-Mail-Adressen der Benutzer dar, für die Einstellungen abgerufen werden sollen.  <br/> |
 |[RequestedSettings (SOAP)](requestedsettings-soap.md) <br/> |Enthält die Namen der angeforderten Konfigurationseinstellungen.  <br/> |
-|[RequestedVersion (SOAP)](requestedversion-soap.md) <br/> |Gibt die spezifische Server Version an, die der Anbieter verwenden möchte.  <br/> |
+|[RequestedVersion (SOAP)](requestedversion-soap.md) <br/> |Gibt die spezifische Serverversion an, die der Anbieter verwenden möchte.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
@@ -58,8 +58,8 @@ Keine.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|Name des Schemas  <br/> |Auto Ermittlungs Schema  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Name des Schemas  <br/> |AutoErmittlungsschema  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

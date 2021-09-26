@@ -1,27 +1,27 @@
 ---
-title: Contains
+title: Enthält
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Contains
 api_type:
 - schema
 ms.assetid: 476d059d-c243-43e9-b475-319fc413ade2
-description: Das Contains-Element stellt einen Suchausdruck dar, der bestimmt, ob eine bestimmte Eigenschaft den angegebenen Konstanten Zeichenfolgenwert enthält.
-ms.openlocfilehash: 79529bd752bcbce954ae3c8b0085c203b4eb8777
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Contains-Element stellt einen Suchausdruck dar, der bestimmt, ob eine bestimmte Eigenschaft den angegebenen Konstantenzeichenfolgenwert enthält.
+ms.openlocfilehash: 6e36ede6a10c64a4aa53e68721d9edf7893c4c05
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527117"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547547"
 ---
-# <a name="contains"></a>Contains
+# <a name="contains"></a>Enthält
 
-Das **Contains** -Element stellt einen Suchausdruck dar, der bestimmt, ob eine bestimmte Eigenschaft den angegebenen Konstanten Zeichenfolgenwert enthält. 
+Das **Contains-Element** stellt einen Suchausdruck dar, der bestimmt, ob eine bestimmte Eigenschaft den angegebenen Konstantenzeichenfolgenwert enthält. 
   
 ```xml
 <Contains ContainmentMode="" ContainmentComparison="">
@@ -55,51 +55,51 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|**ContainmentMode** <br/> |Gibt die Grenzen einer Suche an.  <br/> |
+|**ContainmentMode** <br/> |Identifiziert die Grenzen einer Suche.  <br/> |
 |**ContainmentComparison** <br/> |Bestimmt, ob die Suche Fälle und Leerzeichen ignoriert.  <br/> |
    
 #### <a name="containmentmode-attribute-values"></a>ContainmentMode-Attributwerte
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Vollständig  <br/> |Der Vergleich erfolgt zwischen der vollständigen Zeichenfolge und der Konstanten. Der Eigenschaftswert und die angegebene Konstante sind exakt identisch.  <br/> |
-|Präfix visobjtype  <br/> |Der Vergleich erfolgt zwischen dem Zeichenfolgen Präfix und der Konstanten.  <br/> |
-|Teilzeichenfolge  <br/> |Der Vergleich besteht zwischen einer Teilzeichenfolge der Zeichenfolge und der Konstanten.  <br/> |
-|PrefixOnWords  <br/> |Der Vergleich besteht zwischen einem Präfix für einzelne Wörter in der Zeichenfolge und der Konstante.  <br/> |
-|ExactPhrase  <br/> |Der Vergleich beruht auf einem exakten Ausdruck in der Zeichenfolge und der Konstanten.  <br/> |
+|FullString  <br/> |Der Vergleich erfolgt zwischen der vollständigen Zeichenfolge und der Konstante. Der Eigenschaftswert und die angegebene Konstante sind genau gleich.  <br/> |
+|Präfix  <br/> |Der Vergleich erfolgt zwischen dem Zeichenfolgenpräfix und der Konstante.  <br/> |
+|Teilzeichenfolge  <br/> |Der Vergleich erfolgt zwischen einer Teilzeichenfolge der Zeichenfolge und der Konstante.  <br/> |
+|PrefixOnWords  <br/> |Der Vergleich erfolgt zwischen einem Präfix für einzelne Wörter in der Zeichenfolge und der Konstante.  <br/> |
+|ExactPhrase  <br/> |Der Vergleich erfolgt zwischen einem exakten Ausdruck in der Zeichenfolge und der Konstante.  <br/> |
    
 #### <a name="containmentcomparison-attribute-values"></a>ContainmentComparison-Attributwerte
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|Genauen  <br/> |Der Vergleich muss exakt sein.  <br/> |
+|Genaue  <br/> |Der Vergleich muss genau sein.  <br/> |
 |IgnoreCase  <br/> |Der Vergleich ignoriert die Groß-/Kleinschreibung.  <br/> |
-|IgnoreNonSpacingCharacters  <br/> |Der Vergleich ignoriert Zeichen ohne Zeilenabstand.  <br/> |
-|Weit  <br/> |Entfernt werden soll.  <br/> |
-|IgnoreCaseAndNonSpacingCharacters  <br/> |Der Vergleich ignoriert Groß-/Kleinschreibung und Zeichen ohne Zeilenabstand.  <br/> |
-|LooseAndIgnoreCase  <br/> |Entfernt werden soll.  <br/> |
-|LooseAndIgnoreNonSpace  <br/> |Entfernt werden soll.  <br/> |
-|LooseAndIgnoreCaseAndIgnoreNonSpace  <br/> |Entfernt werden soll.  <br/> |
+|IgnoreNonSpacingCharacters  <br/> |Der Vergleich ignoriert Nicht-Leerzeichen.  <br/> |
+|Weit  <br/> |Zu entfernen.  <br/> |
+|IgnoreCaseAndNonSpacingCharacters  <br/> |Der Vergleich ignoriert Groß-/Kleinschreibung und Nicht-Leerzeichen.  <br/> |
+|LooseAndIgnoreCase  <br/> |Zu entfernen.  <br/> |
+|LooseAndIgnoreNonSpace  <br/> |Zu entfernen.  <br/> |
+|LooseAndIgnoreCaseAndIgnoreNonSpace  <br/> |Zu entfernen.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifiziert häufig referenzierte Eigenschaften nach URI.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Member eines Wörterbuchs.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifiziert MAPI-Eigenschaften.  <br/> |
-|[Konstante](constant.md) <br/> |Gibt einen konstanten Wert in einer Einschränkung an.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifies frequently referenced properties by URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifiziert einzelne Mitglieder eines Wörterbuchs.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifies MAPI properties.  <br/> |
+|[Konstante](constant.md) <br/> |Identifiziert einen konstanten Wert in einer Einschränkung.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Einschränkung](restriction.md) <br/> |Stellt die Einschränkung oder Abfrage dar, die zum Filtern von Elementen oder Ordnern in FindItem/FindFolder und Suchordner Vorgängen verwendet wird.  <br/> |
+|[Restriction](restriction.md) <br/> |Stellt die Einschränkung oder Abfrage dar, die zum Filtern von Elementen oder Ordnern in FindItem/FindFolder und Suchordnervorgängen verwendet wird.  <br/> |
 |[not](not.md) <br/> |Stellt einen Suchausdruck dar, der den booleschen Wert des darin enthaltenen Suchausdrucks negiert.  <br/> |
-|[Und](and.md) <br/> |Stellt einen Suchausdruck dar, mit dem Sie einen booleschen Wert und eine Operation zwischen zwei oder mehr Suchausdrücken ausführen können. Das Ergebnis der and-Operation ist **true** , wenn alle in der enthaltenen Suchausdrücke auf **true**festgelegt sind.  <br/> |
-|[- oder -](or.md) <br/> |Stellt einen Suchausdruck dar, der eine logische OR-Anweisung für den darin enthaltenen Suchausdruck ausführt. Das [or](or.md) -Element gibt **true** zurück, wenn eines der untergeordneten Elemente **true**zurückgibt.  <br/> |
+|[Und](and.md) <br/> |Stellt einen Suchausdruck dar, mit dem Sie einen booleschen And-Vorgang zwischen zwei oder mehr Suchausdrücken ausführen können. Das Ergebnis des And-Vorgangs ist **"true",** wenn alle in "And" enthaltenen Suchausdrücke **"True"** sind.  <br/> |
+|[- oder -](or.md) <br/> |Stellt einen Suchausdruck dar, der ein logisches OR für den darin enthaltenen Suchausdruck ausführt. Das [Or-Element](or.md) gibt **"true"** zurück, wenn eines seiner untergeordneten Elemente **"true"** zurückgibt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Attribute werden verwendet, um zu bestimmen, wie die Elemente abgeglichen werden.
   

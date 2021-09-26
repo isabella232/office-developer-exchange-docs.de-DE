@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Address
 api_type:
 - schema
 ms.assetid: 518641c8-7f6f-496c-86f9-341e7c1bb44c
-description: Das Address-Element stellt eine vollständig aufgelöste e-Mail-Adresse dar.
-ms.openlocfilehash: 591bc675165ec80f69407bd8ee19d16c9ddff15a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Address-Element stellt eine vollständig aufgelöste E-Mail-Adresse dar.
+ms.openlocfilehash: ff26a8d6de1e9bf36bb8dff5bc0141974220cf90
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464903"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546812"
 ---
 # <a name="address-emailaddresstype"></a>Adresse (EmailAddressType)
 
-Das **Address** -Element stellt eine vollständig aufgelöste e-Mail-Adresse dar. 
+Das **Address-Element** stellt eine vollständig aufgelöste E-Mail-Adresse dar. 
   
 ```XML
 <Address>
@@ -56,15 +56,15 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[Element originalrecipients](originalrecipients.md) <br/> |Enthält eine Auflistung von e-Mail-Adressen, die die ursprünglichen Empfänger einer nachverfolgten Nachricht darstellen.  <br/> |
+|[OriginalRecipients](originalrecipients.md) <br/> |Enthält eine Auflistung von E-Mail-Adressen, die die ursprünglichen Empfänger einer nachverfolgten Nachricht darstellen.  <br/> |
 |[RoomLists](roomlists.md) <br/> |Enthält eine Liste der Besprechungsräume in einer Organisation.  <br/> |
-|[SentToAddresses](senttoaddresses.md) <br/> |Enthält eine Liste der e-Mail-Adressen, an die eingehende Nachrichten gesendet werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
+|[SentToAddresses](senttoaddresses.md) <br/> |Enthält eine Liste der E-Mail-Adressen, an die eingehende Nachrichten gesendet werden müssen, damit die Bedingung oder Ausnahme zutrifft.  <br/> |
    
 ## <a name="text-value"></a>Textwert
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen IIS-Verzeichnis, das Exchange-Webdienste hostet.
   

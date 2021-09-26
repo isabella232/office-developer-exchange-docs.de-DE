@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - InReplyTo
 api_type:
 - schema
 ms.assetid: 561b8941-1c26-4bbe-aa0f-b49ec8a79af5
-description: Das InReplyTo-Element stellt den Bezeichner des Elements dar, zu dem dieses Element eine Antwort ist.
-ms.openlocfilehash: 3dac4f31f1468f942e0da040a482dd272a7655da
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das InReplyTo-Element stellt den Bezeichner des Elements dar, auf das dieses Element eine Antwort ist.
+ms.openlocfilehash: 5d77501857666dc89360366cfabd744016b7aec9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467074"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547190"
 ---
 # <a name="inreplyto"></a>InReplyTo
 
-Das **InReplyTo** -Element stellt den Bezeichner des Elements dar, zu dem dieses Element eine Antwort ist. 
+Das **InReplyTo-Element** stellt den Bezeichner des Elements dar, auf das dieses Element eine Antwort ist. 
   
 ```xml
 <InReplyTo/>
@@ -58,9 +58,9 @@ Keine.
    
 ## <a name="text-value"></a>Textwert
 
-Der Wert Text stellt eine Zeichenfolge dar, die ein Element identifiziert.
+Der Textwert stellt eine Zeichenfolge dar, die ein Element identifiziert.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

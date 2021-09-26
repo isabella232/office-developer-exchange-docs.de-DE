@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bcef790d-094f-40ba-b4cf-8abd9c79cc7a
-description: Das Mailbox-ID-Element gibt einen Bezeichner für das Postfach an, auf das von der Ermittlungs Suche zugegriffen wird.
-ms.openlocfilehash: 7ec43492010dfb54f3e847d037425f9ed919559c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das MailboxId-Element gibt einen Bezeichner für das Postfach an, auf das durch die Ermittlungssuche zugegriffen wird.
+ms.openlocfilehash: 5f9d39339e9d54476efa025622d117be0f8219a5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466367"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547134"
 ---
 # <a name="mailboxid"></a>MailboxId
 
-Das **Mailbox** -ID-Element gibt einen Bezeichner für das Postfach an, auf das von der Ermittlungs Suche zugegriffen wird. 
+Das **MailboxId-Element** gibt einen Bezeichner für das Postfach an, auf das durch die Ermittlungssuche zugegriffen wird. 
   
 ```XML
 <MailboxId></MailboxId>
@@ -43,9 +43,9 @@ Keine.
   
 ## <a name="text-value"></a>Textwert
 
-Der Textwert des **Mailbox** -ID-Elements ist die Post Fach Kennung eines Postfachs, auf das für die Discovery-Suche zugegriffen wird. 
+Der Textwert des **MailboxId-Elements** ist der Postfachbezeichner eines Postfachs, auf das für die Ermittlungssuche zugegriffen wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

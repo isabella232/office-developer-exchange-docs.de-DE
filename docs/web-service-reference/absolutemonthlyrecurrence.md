@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AbsoluteMonthlyRecurrence
 api_type:
 - schema
 ms.assetid: 178fa0ae-9dfc-417f-933c-d657d31c2161
 description: Das AbsoluteMonthlyRecurrence-Element stellt ein monatliches Serienmuster dar.
-ms.openlocfilehash: 3176cd30a1cfe7b2310f960ce377ab7a277e795a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7fcc1811a7c42fc653344fb3c052adac820d6a5d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460435"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546917"
 ---
 # <a name="absolutemonthlyrecurrence"></a>AbsoluteMonthlyRecurrence
 
-Das **AbsoluteMonthlyRecurrence** -Element stellt ein monatliches Serienmuster dar. 
+Das **AbsoluteMonthlyRecurrence-Element** stellt ein monatliches Serienmuster dar. 
   
 ```xml
 <AbsoluteMonthlyRecurrence>
@@ -43,17 +43,17 @@ Keine.
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[DayOfMonth](dayofmonth.md) <br/> |Beschreibt den Tag in einem Monat, an dem ein wiederkehrendes Element auftritt. Der Wertebereich für diese Eigenschaft ist 1 bis 31. Wenn dieser Wert für einen bestimmten Monat größer ist als die Anzahl der Tage im Monat, wird der letzte Tag des Monats für diese Eigenschaft angenommen.  <br/> |
-|[Intervall](interval.md) <br/> |Definiert das Intervall zwischen zwei aufeinander folgenden wiederkehrenden Elementen. Wenn das **Interval** -Element beispielsweise den Wert 5 aufweist, tritt das wiederkehrende Element alle 5 Monate auf. Der Bereich der gültigen Werte liegt zwischen 1 und 99.  <br/> |
+|[DayOfMonth](dayofmonth.md) <br/> |Beschreibt den Tag in einem Monat, an dem ein wiederkehrendes Element auftritt. Der Wertebereich für diese Eigenschaft ist 1 bis 31. Wenn dieser Wert für einen bestimmten Monat größer als die Anzahl der Tage im Monat ist, wird der letzte Tag des Monats für diese Eigenschaft angenommen.  <br/> |
+|[Intervall](interval.md) <br/> |Definiert das Intervall zwischen zwei aufeinander folgenden wiederkehrenden Elementen. Wenn das **Interval-Element** beispielsweise den Wert 5 aufweist, tritt die Terminserie alle 5 Monate auf. Der Bereich gültiger Werte liegt zwischen 1 und 99.  <br/> |
    
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[Serie (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Enthält Serieninformationen für wiederkehrende Vorgänge.  <br/> |
-|[Serie (serietype)](recurrence-recurrencetype.md) <br/> |Enthält das Serienmuster für Kalenderelemente und Besprechungsanfragen.  <br/> |
+|[Serie (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Enthält das Serienmuster für Kalenderelemente und Besprechungsanfragen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Schema, das dieses Element beschreibt, befindet sich im virtuellen EWS-Verzeichnis des Computers, der MicrosoftExchange Server 2007 mit installierter Clientzugriff-Serverrolle ausführt.
   

@@ -1,29 +1,29 @@
 ---
-title: ID (itemidtype)
+title: ID (ItemIdType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a9909ed2-fdc5-4b1f-b7db-1f517add8eb3
-description: Das ID-Element gibt den Bezeichner eines Elements an.
-ms.openlocfilehash: bc4ffa91f9375b33e89fa4e03b2a1d6a7974dc44
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das Id-Element gibt den Bezeichner eines Elements an.
+ms.openlocfilehash: 5b153dbd62fc0231470b70087047700e8eab92cf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459321"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547267"
 ---
-# <a name="id-itemidtype"></a>ID (itemidtype)
+# <a name="id-itemidtype"></a>ID (ItemIdType)
 
-Das **ID-** Element gibt den Bezeichner eines Elements an. 
+Das **Id-Element** gibt den Bezeichner eines Elements an. 
   
 ```XML
 <Id Id="" ChangeKey=""/>
 ```
 
- **Itemidtype**
+ **ItemIdType**
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
 
 In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete Elemente erläutert.
@@ -32,8 +32,8 @@ In den folgenden Abschnitten werden Attribute, untergeordnete und übergeordnete
 
 |**Attribut**|**Beschreibung**|
 |:-----|:-----|
-|Id  <br/> |Der Textwert des **ID-** Attributs ist der Bezeichner des Elements.  <br/> |
-|ChangeKey  <br/> |Der Textwert des **ChangeKey** -Attributs ist der Änderungsschlüssel des Elements.  <br/> |
+|Id  <br/> |Der Textwert des **Id-Attributs** ist der Bezeichner des Elements.  <br/> |
+|ChangeKey  <br/> |Der Textwert des **ChangeKey-Attributs** ist der Änderungsschlüssel des Elements.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -43,7 +43,7 @@ Keine.
 
 [SearchPreviewItem](searchpreviewitem.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   

@@ -1,28 +1,28 @@
 ---
-title: SetTelephoneAccessFolderEmailResponse (um-Webdienst)
+title: SetTelephoneAccessFolderEmailResponse (UM-Webdienst)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetTelephoneAccessFolderEmailResponse
 api_type:
 - schema
 ms.assetid: 01d07114-5764-4ea7-948c-1ae95c287f0c
-description: Das SetTelephoneAccessFolderEmailResponse-Element definiert eine Antwort auf eine Anforderung des SetTelephoneAccessFolderEmail-Vorgangs (um-Webdienst).
-ms.openlocfilehash: 85f0f764b2a6a1555fb03d31fbe91bf3d6e2f701
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das SetTelephoneAccessFolderEmailResponse-Element definiert eine Antwort auf eine Anforderung des SetTelephoneAccessFolderEmail-Vorgangs (UM-Webdienst).
+ms.openlocfilehash: 38b019636e5a4f86912256c0b63cb30f8d283247
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467312"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547085"
 ---
-# <a name="settelephoneaccessfolderemailresponse-um-web-service"></a>SetTelephoneAccessFolderEmailResponse (um-Webdienst)
+# <a name="settelephoneaccessfolderemailresponse-um-web-service"></a>SetTelephoneAccessFolderEmailResponse (UM-Webdienst)
 
-Das **SetTelephoneAccessFolderEmailResponse** -Element definiert eine Antwort auf eine Anforderung des [SetTelephoneAccessFolderEmail-Vorgangs (um-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md) . 
+Das **SetTelephoneAccessFolderEmailResponse-Element** definiert eine Antwort auf eine Anforderung des [SetTelephoneAccessFolderEmail-Vorgangs (UM-Webdienst).](settelephoneaccessfolderemail-operation-um-web-service.md) 
   
-[SetTelephoneAccessFolderEmailResponse (um-Webdienst)](settelephoneaccessfolderemailresponse-um-web-service.md)
+[SetTelephoneAccessFolderEmailResponse (UM-Webdienst)](settelephoneaccessfolderemailresponse-um-web-service.md)
   
 ```xml
 <SetTelephoneAccessFolderEmailResponse />
@@ -43,7 +43,7 @@ Keine.
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-Keine.
+Keine
   
 ## <a name="text-value"></a>Textwert
 
@@ -55,12 +55,12 @@ Keine.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Name des Schemas  <br/> |Nachrichten  <br/> |
-|Überprüfungsdatei  <br/> |Messages. xsd  <br/> |
+|Überprüfungsdatei  <br/> |Messages.xsd  <br/> |
 |Leer kann sein  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[SetTelephoneAccessFolderEmail-Vorgang (um-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md)
+[SetTelephoneAccessFolderEmail-Vorgang (UM-Webdienst)](settelephoneaccessfolderemail-operation-um-web-service.md)
 

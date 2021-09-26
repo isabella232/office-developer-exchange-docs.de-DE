@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - HasAttachments
 api_type:
 - schema
 ms.assetid: 538b7a85-11d7-4daa-8458-09b540760e8b
 description: Das Element HasAttachments stellt eine Eigenschaft, die auf true festgelegt ist, wenn ein Element mindestens eine Anlage sichtbar hat oder wenn eine Unterhaltung mit mindestens ein Element enthält, die eine Anlage enthält. Diese Eigenschaft ist schreibgeschützt.
-ms.openlocfilehash: cc4e4ec0eac1c749723facc8cd780da41b0d8150
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: dea1ffdc5ae29a0bc7c585e0ebee9ed104143c53
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462922"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547288"
 ---
 # <a name="hasattachments"></a>HasAttachments
 
@@ -62,7 +62,7 @@ Keine.
 
 Ein Textwert, der einen booleschen Wert darstellt, ist erforderlich. Der Wert **true** bedeutet, dass das Element oder eine Unterhaltung mindestens eine Anlage sichtbar hat. Ein Wert **false** bedeutet, dass das Element oder die Unterhaltung keine Anlagen enthält auf, oder nur Anlagen ausgeblendet wurde. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **HasAttachments** -Eigenschaft wird von der MAPI-Eigenschaft vom Typ Boolean **AllAttachmentsHidden** berechnet. Wenn ein Element eine Anlage nicht verfügt, wird die **AllAttachmentsHidden** -Eigenschaft ist nicht vorhanden. Wenn alle Anlagen für das Element ausgeblendet sind, ist die **AllAttachmentsHidden** -Eigenschaft **true**. Die **AllAttachmentsHidden** -Eigenschaft ist **false**, wenn sie mindestens eine Anlage hat und mindestens einer der Anlagen sichtbar ist. Verwenden Sie die **AllAttachmentsHidden** MAPI-Eigenschaft für suchen, gruppieren und Sortieren von Elementen. 
   

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4cc6b414-f702-4822-bb09-9771ab462700
-description: Das FolderIds-Element enthält eine Liste der Ordner Bezeichner.
-ms.openlocfilehash: 758801f528d8b2b33c9b4344fea77f2b90592bab
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Das FolderIds-Element enthält eine Liste der Ordnerbezeichner.
+ms.openlocfilehash: 2f472e8eaf0bfe8125e75cf268db66543756bb7e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461373"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546469"
 ---
 # <a name="folderids-arrayoffolderidtype"></a>FolderIds (ArrayOfFolderIdType)
 
-Das **FolderIds** -Element enthält eine Liste der Ordner Bezeichner. 
+Das **FolderIds-Element** enthält eine Liste der Ordnerbezeichner. 
   
 ```XML
 <FolderIds>
@@ -42,7 +42,7 @@ Keine.
 
 [Persona](persona.md)
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieses Element wurde in Exchange Server 2013 eingeführt.
   
